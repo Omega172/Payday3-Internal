@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_CosmeticPen_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CosmeticPen_C;
 
 SDK_NAMESPACE_END

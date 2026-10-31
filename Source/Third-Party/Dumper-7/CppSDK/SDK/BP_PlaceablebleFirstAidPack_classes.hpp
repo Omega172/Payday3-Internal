@@ -31,10 +31,10 @@ public:
 	class UStaticMeshComponent*                   ST_EQ_Medic_Charge_1;                              // 0x06E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_PlaceablebleFirstAidPack(int32 EntryPoint);
-	void OnChargesChanged(float ChargesChangeTo, bool bDoCosmetics);
-	void OnThrown();
 	void ReceiveBeginPlay();
+	void OnThrown();
+	void OnChargesChanged(float ChargesChangeTo_OnChargesChanged, bool bDoCosmetics_OnChargesChanged);
+	void ExecuteUbergraph_BP_PlaceablebleFirstAidPack(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -50,5 +50,6 @@ public:
 		return GetDefaultObjImpl<ABP_PlaceablebleFirstAidPack_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PlaceablebleFirstAidPack_C;
 
 SDK_NAMESPACE_END

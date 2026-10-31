@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Awning_02_512_02_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Awning_02_512_02_C;
 
 SDK_NAMESPACE_END

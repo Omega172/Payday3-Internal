@@ -40,10 +40,10 @@ public:
 	TMulticastInlineDelegate<void()>              onGlassDestroyed;                                  // 0x06C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__BP_BreachableWindow_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
-	void ExecuteUbergraph_BP_IGL_BRE_NAV_ATT_2HITS(int32 EntryPoint);
-	class UStaticMeshComponent* GetTraversalDestructibleMeshComponent();
 	void OnStateChanged(ESBZGateState OldState, ESBZGateState NewState, bool bIsInitialStateChange);
+	class UStaticMeshComponent* GetTraversalDestructibleMeshComponent();
+	void ExecuteUbergraph_BP_IGL_BRE_NAV_ATT_2HITS(int32 EntryPoint);
+	void BndEvt__BP_BreachableWindow_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
 
 	class USBZPropDamageComponent* GetPropDamageComponent() const;
 
@@ -61,5 +61,6 @@ public:
 		return GetDefaultObjImpl<ABP_IGL_BRE_NAV_ATT_2HITS_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_IGL_BRE_NAV_ATT_2HITS_C;
 
 SDK_NAMESPACE_END

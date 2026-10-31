@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGA_AIStopAnTurn_C>();
 	}
 };
+DUMPER7_ASSERTS_UGA_AIStopAnTurn_C;
 
 SDK_NAMESPACE_END

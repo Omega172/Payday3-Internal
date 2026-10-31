@@ -16,167 +16,25 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.BndEvt__BP_SabotagePoint_ArmoredTruck_interactable_fix_remote_steering_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SabotagePoint_ArmoredTruck_C::BndEvt__BP_SabotagePoint_ArmoredTruck_interactable_fix_remote_steering_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SabotagePoint_ArmoredTruck_C", "BndEvt__BP_SabotagePoint_ArmoredTruck_interactable_fix_remote_steering_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_SabotagePoint_ArmoredTruck_C_BndEvt__BP_SabotagePoint_ArmoredTruck_interactable_fix_remote_steering_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.BndEvt__BP_SabotagePoint_ArmoredTruck_Interactable_Start_Escort_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SabotagePoint_ArmoredTruck_C::BndEvt__BP_SabotagePoint_ArmoredTruck_Interactable_Start_Escort_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SabotagePoint_ArmoredTruck_C", "BndEvt__BP_SabotagePoint_ArmoredTruck_Interactable_Start_Escort_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_SabotagePoint_ArmoredTruck_C_BndEvt__BP_SabotagePoint_ArmoredTruck_Interactable_Start_Escort_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.Device_Escort
+// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.Start_escort_Enable
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_SabotagePoint_ArmoredTruck_C::Device_Escort()
+void ABP_SabotagePoint_ArmoredTruck_C::Start_escort_Enable()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SabotagePoint_ArmoredTruck_C", "Device_Escort");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Start_escort_Enable", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.Device_Hacking
+// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.Start_escort_Disable
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_SabotagePoint_ArmoredTruck_C::Device_Hacking()
+void ABP_SabotagePoint_ArmoredTruck_C::Start_escort_Disable()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SabotagePoint_ArmoredTruck_C", "Device_Hacking");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.Device_sabotaged
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_SabotagePoint_ArmoredTruck_C::Device_sabotaged()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SabotagePoint_ArmoredTruck_C", "Device_sabotaged");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.Device_Standby
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_SabotagePoint_ArmoredTruck_C::Device_Standby()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SabotagePoint_ArmoredTruck_C", "Device_Standby");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.ExecuteUbergraph_BP_SabotagePoint_ArmoredTruck
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SabotagePoint_ArmoredTruck_C::ExecuteUbergraph_BP_SabotagePoint_ArmoredTruck(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SabotagePoint_ArmoredTruck_C", "ExecuteUbergraph_BP_SabotagePoint_ArmoredTruck");
-
-	Params::BP_SabotagePoint_ArmoredTruck_C_ExecuteUbergraph_BP_SabotagePoint_ArmoredTruck Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.Fix_Interactable_Disable
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_SabotagePoint_ArmoredTruck_C::Fix_Interactable_Disable()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SabotagePoint_ArmoredTruck_C", "Fix_Interactable_Disable");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.Fix_Interactable_Enable
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_SabotagePoint_ArmoredTruck_C::Fix_Interactable_Enable()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SabotagePoint_ArmoredTruck_C", "Fix_Interactable_Enable");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.OnRep_Remote_steering_remote_state
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_SabotagePoint_ArmoredTruck_C::OnRep_Remote_steering_remote_state()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SabotagePoint_ArmoredTruck_C", "OnRep_Remote_steering_remote_state");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Start_escort_Disable", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -189,10 +47,8 @@ void ABP_SabotagePoint_ArmoredTruck_C::OnRep_Remote_steering_remote_state()
 
 void ABP_SabotagePoint_ArmoredTruck_C::OnSabotaged_Event_0(bool bSabotaged)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SabotagePoint_ArmoredTruck_C", "OnSabotaged_Event_0");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSabotaged_Event_0", FnName));
 
 	Params::BP_SabotagePoint_ArmoredTruck_C_OnSabotaged_Event_0 Parms{};
 
@@ -202,31 +58,149 @@ void ABP_SabotagePoint_ArmoredTruck_C::OnSabotaged_Event_0(bool bSabotaged)
 }
 
 
-// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.Start_escort_Disable
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.OnRep_Remote_steering_remote_state
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_SabotagePoint_ArmoredTruck_C::Start_escort_Disable()
+void ABP_SabotagePoint_ArmoredTruck_C::OnRep_Remote_steering_remote_state()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SabotagePoint_ArmoredTruck_C", "Start_escort_Disable");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRep_Remote_steering_remote_state", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.Start_escort_Enable
+// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.Fix_Interactable_Enable
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_SabotagePoint_ArmoredTruck_C::Start_escort_Enable()
+void ABP_SabotagePoint_ArmoredTruck_C::Fix_Interactable_Enable()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SabotagePoint_ArmoredTruck_C", "Start_escort_Enable");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Fix_Interactable_Enable", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.Fix_Interactable_Disable
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_SabotagePoint_ArmoredTruck_C::Fix_Interactable_Disable()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Fix_Interactable_Disable", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.ExecuteUbergraph_BP_SabotagePoint_ArmoredTruck
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SabotagePoint_ArmoredTruck_C::ExecuteUbergraph_BP_SabotagePoint_ArmoredTruck(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_SabotagePoint_ArmoredTruck_C", "ExecuteUbergraph_BP_SabotagePoint_ArmoredTruck", FuncInfo);
+
+	Params::BP_SabotagePoint_ArmoredTruck_C_ExecuteUbergraph_BP_SabotagePoint_ArmoredTruck Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.Device_Standby
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_SabotagePoint_ArmoredTruck_C::Device_Standby()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Device_Standby", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.Device_sabotaged
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_SabotagePoint_ArmoredTruck_C::Device_sabotaged()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Device_sabotaged", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.Device_Hacking
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_SabotagePoint_ArmoredTruck_C::Device_Hacking()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Device_Hacking", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.Device_Escort
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_SabotagePoint_ArmoredTruck_C::Device_Escort()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Device_Escort", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.BndEvt__BP_SabotagePoint_ArmoredTruck_Interactable_Start_Escort_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SabotagePoint_ArmoredTruck_C::BndEvt__BP_SabotagePoint_ArmoredTruck_Interactable_Start_Escort_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_SabotagePoint_ArmoredTruck_Interactable_Start_Escort_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_SabotagePoint_ArmoredTruck_C_BndEvt__BP_SabotagePoint_ArmoredTruck_Interactable_Start_Escort_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.BndEvt__BP_SabotagePoint_ArmoredTruck_interactable_fix_remote_steering_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SabotagePoint_ArmoredTruck_C::BndEvt__BP_SabotagePoint_ArmoredTruck_interactable_fix_remote_steering_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_SabotagePoint_ArmoredTruck_interactable_fix_remote_steering_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_SabotagePoint_ArmoredTruck_C_BndEvt__BP_SabotagePoint_ArmoredTruck_interactable_fix_remote_steering_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

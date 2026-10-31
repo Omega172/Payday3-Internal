@@ -18,6 +18,33 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_WinchCable.BP_WinchCable_C.SetWinchUpActive
+// 0x00C0 (0x00C0 - 0x0000)
+struct BP_WinchCable_C_SetWinchUpActive final
+{
+public:
+	class ASBZAerialVehicle*                      Helicopter;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   WinchSocketName;                                   // 0x0008(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Active;                                            // 0x0014(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FComponentReference                    K2Node_MakeStruct_ComponentReference;              // 0x0018(0x0030)(HasGetValueTypeHash)
+	struct FSBZCablePointAttachment               K2Node_MakeStruct_SBZCablePointAttachment;         // 0x0048(0x0078)()
+};
+DUMPER7_ASSERTS_BP_WinchCable_C_SetWinchUpActive;
+
+// Function BP_WinchCable.BP_WinchCable_C.SetupCable
+// 0x0058 (0x0058 - 0x0000)
+struct BP_WinchCable_C_SetupCable final
+{
+public:
+	struct FVector                                FloorLocation;                                     // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_VSize_ReturnValue;                        // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_UpdateSegmentCount_InCableLength_ImplicitCast; // 0x0050(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_WinchCable_C_SetupCable;
+
 // Function BP_WinchCable.BP_WinchCable_C.ExecuteUbergraph_BP_WinchCable
 // 0x02F0 (0x02F0 - 0x0000)
 struct BP_WinchCable_C_ExecuteUbergraph_BP_WinchCable final
@@ -56,31 +83,7 @@ public:
 	struct FPlane                                 CallFunc_MakePlaneFromPointAndNormal_ReturnValue;  // 0x02A0(0x0020)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSBZCableCollisionPlane                K2Node_MakeStruct_SBZCableCollisionPlane;          // 0x02C0(0x0030)(NoDestructor)
 };
-
-// Function BP_WinchCable.BP_WinchCable_C.SetupCable
-// 0x0058 (0x0058 - 0x0000)
-struct BP_WinchCable_C_SetupCable final
-{
-public:
-	struct FVector                                FloorLocation;                                     // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_VSize_ReturnValue;                        // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_UpdateSegmentCount_InCableLength_ImplicitCast; // 0x0050(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_WinchCable.BP_WinchCable_C.SetWinchUpActive
-// 0x00C0 (0x00C0 - 0x0000)
-struct BP_WinchCable_C_SetWinchUpActive final
-{
-public:
-	class ASBZAerialVehicle*                      Helicopter;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   WinchSocketName;                                   // 0x0008(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Active;                                            // 0x0014(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FComponentReference                    K2Node_MakeStruct_ComponentReference;              // 0x0018(0x0030)(HasGetValueTypeHash)
-	struct FSBZCablePointAttachment               K2Node_MakeStruct_SBZCablePointAttachment;         // 0x0048(0x0078)()
-};
+DUMPER7_ASSERTS_BP_WinchCable_C_ExecuteUbergraph_BP_WinchCable;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

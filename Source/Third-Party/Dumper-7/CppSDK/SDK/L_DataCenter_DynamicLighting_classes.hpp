@@ -28,14 +28,14 @@ public:
 	class ABP_ReplicatedActorVisibility_C*        BP_Visibility_Before_Explosion_ExecuteUbergraph_L_DataCenter_DynamicLighting_RefProperty; // 0x03F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_L_DataCenter_DynamicLighting(int32 EntryPoint);
-	void ReceiveBeginPlay();
-	void RoomACleared();
-	void RoomBCleared();
-	void RoomCCleared();
-	void RoomDCleared();
-	void RoomECleared();
 	void WallExplodedTrigger();
+	void RoomECleared();
+	void RoomDCleared();
+	void RoomCCleared();
+	void RoomBCleared();
+	void RoomACleared();
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_L_DataCenter_DynamicLighting(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -51,5 +51,6 @@ public:
 		return GetDefaultObjImpl<AL_DataCenter_DynamicLighting_C>();
 	}
 };
+DUMPER7_ASSERTS_AL_DataCenter_DynamicLighting_C;
 
 SDK_NAMESPACE_END

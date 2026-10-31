@@ -16,26 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_FireExtinguisher_Foam.BP_FireExtinguisher_Foam_C.BP_OnExplosion
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_FireExtinguisher_Foam_C::BP_OnExplosion(bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FireExtinguisher_Foam_C", "BP_OnExplosion");
-
-	Params::BP_FireExtinguisher_Foam_C_BP_OnExplosion Parms{};
-
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_FireExtinguisher_Foam.BP_FireExtinguisher_Foam_C.ExecuteUbergraph_BP_FireExtinguisher_Foam
 // (Final, UbergraphFunction)
 // Parameters:
@@ -43,10 +23,8 @@ void ABP_FireExtinguisher_Foam_C::BP_OnExplosion(bool bDoCosmetics)
 
 void ABP_FireExtinguisher_Foam_C::ExecuteUbergraph_BP_FireExtinguisher_Foam(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FireExtinguisher_Foam_C", "ExecuteUbergraph_BP_FireExtinguisher_Foam");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_FireExtinguisher_Foam_C", "ExecuteUbergraph_BP_FireExtinguisher_Foam", FuncInfo);
 
 	Params::BP_FireExtinguisher_Foam_C_ExecuteUbergraph_BP_FireExtinguisher_Foam Parms{};
 
@@ -56,19 +34,40 @@ void ABP_FireExtinguisher_Foam_C::ExecuteUbergraph_BP_FireExtinguisher_Foam(int3
 }
 
 
-// Function BP_FireExtinguisher_Foam.BP_FireExtinguisher_Foam_C.CanAffectStealth
+// Function BP_FireExtinguisher_Foam.BP_FireExtinguisher_Foam_C.BP_OnExplosion
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bDoCosmetics_BP_OnExplosion                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_FireExtinguisher_Foam_C::BP_OnExplosion(bool bDoCosmetics_BP_OnExplosion)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnExplosion", FnName));
+
+	Params::BP_FireExtinguisher_Foam_C_BP_OnExplosion Parms{};
+
+	Parms.bDoCosmetics_BP_OnExplosion = bDoCosmetics_BP_OnExplosion;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_FireExtinguisher_Foam.BP_FireExtinguisher_Foam_C.GetSightModifier
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   Start                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   End                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-bool ABP_FireExtinguisher_Foam_C::CanAffectStealth() const
+float ABP_FireExtinguisher_Foam_C::GetSightModifier(const struct FVector& Start, const struct FVector& End) const
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetSightModifier", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FireExtinguisher_Foam_C", "CanAffectStealth");
+	Params::BP_FireExtinguisher_Foam_C_GetSightModifier Parms{};
 
-	Params::BP_FireExtinguisher_Foam_C_CanAffectStealth Parms{};
+	Parms.Start = std::move(Start);
+	Parms.End = std::move(End);
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -83,10 +82,8 @@ bool ABP_FireExtinguisher_Foam_C::CanAffectStealth() const
 
 bool ABP_FireExtinguisher_Foam_C::CanAffectTaser() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FireExtinguisher_Foam_C", "CanAffectTaser");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CanAffectTaser", FnName));
 
 	Params::BP_FireExtinguisher_Foam_C_CanAffectTaser Parms{};
 
@@ -96,24 +93,17 @@ bool ABP_FireExtinguisher_Foam_C::CanAffectTaser() const
 }
 
 
-// Function BP_FireExtinguisher_Foam.BP_FireExtinguisher_Foam_C.GetSightModifier
+// Function BP_FireExtinguisher_Foam.BP_FireExtinguisher_Foam_C.CanAffectStealth
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// const struct FVector&                   Start                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FVector&                   End                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-float ABP_FireExtinguisher_Foam_C::GetSightModifier(const struct FVector& Start, const struct FVector& End) const
+bool ABP_FireExtinguisher_Foam_C::CanAffectStealth() const
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CanAffectStealth", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FireExtinguisher_Foam_C", "GetSightModifier");
-
-	Params::BP_FireExtinguisher_Foam_C_GetSightModifier Parms{};
-
-	Parms.Start = std::move(Start);
-	Parms.End = std::move(End);
+	Params::BP_FireExtinguisher_Foam_C_CanAffectStealth Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 

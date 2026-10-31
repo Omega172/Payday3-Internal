@@ -40,10 +40,10 @@ public:
 	double                                        RotateSpeed;                                       // 0x03B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_Club_Spotlights(int32 EntryPoint);
-	void ReceiveBeginPlay();
-	void ReceiveTick(float DeltaSeconds);
 	void UserConstructionScript();
+	void ReceiveTick(float DeltaSeconds_ReceiveTick);
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_Club_Spotlights(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -59,5 +59,6 @@ public:
 		return GetDefaultObjImpl<ABP_Club_Spotlights_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Club_Spotlights_C;
 
 SDK_NAMESPACE_END

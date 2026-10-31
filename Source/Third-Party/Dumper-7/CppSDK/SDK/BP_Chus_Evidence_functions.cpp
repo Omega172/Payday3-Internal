@@ -16,26 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Chus_Evidence.BP_Chus_Evidence_C.BP_OnChangedToSecondaryType
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Chus_Evidence_C::BP_OnChangedToSecondaryType(bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Chus_Evidence_C", "BP_OnChangedToSecondaryType");
-
-	Params::BP_Chus_Evidence_C_BP_OnChangedToSecondaryType Parms{};
-
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_Chus_Evidence.BP_Chus_Evidence_C.ExecuteUbergraph_BP_Chus_Evidence
 // (Final, UbergraphFunction)
 // Parameters:
@@ -43,14 +23,30 @@ void ABP_Chus_Evidence_C::BP_OnChangedToSecondaryType(bool bDoCosmetics)
 
 void ABP_Chus_Evidence_C::ExecuteUbergraph_BP_Chus_Evidence(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Chus_Evidence_C", "ExecuteUbergraph_BP_Chus_Evidence");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Chus_Evidence_C", "ExecuteUbergraph_BP_Chus_Evidence", FuncInfo);
 
 	Params::BP_Chus_Evidence_C_ExecuteUbergraph_BP_Chus_Evidence Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Chus_Evidence.BP_Chus_Evidence_C.BP_OnChangedToSecondaryType
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    bDoCosmetics_BP_OnChangedToSecondaryType               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Chus_Evidence_C::BP_OnChangedToSecondaryType(bool bDoCosmetics_BP_OnChangedToSecondaryType)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnChangedToSecondaryType", FnName));
+
+	Params::BP_Chus_Evidence_C_BP_OnChangedToSecondaryType Parms{};
+
+	Parms.bDoCosmetics_BP_OnChangedToSecondaryType = bDoCosmetics_BP_OnChangedToSecondaryType;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

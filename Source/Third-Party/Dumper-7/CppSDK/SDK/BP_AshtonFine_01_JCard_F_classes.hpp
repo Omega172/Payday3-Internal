@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_AshtonFine_01_JCard_F_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_AshtonFine_01_JCard_F_C;
 
 SDK_NAMESPACE_END

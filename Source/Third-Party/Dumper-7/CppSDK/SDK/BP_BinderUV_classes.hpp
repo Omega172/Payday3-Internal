@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_BinderUV_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BinderUV_C;
 
 SDK_NAMESPACE_END

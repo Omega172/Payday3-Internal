@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_PlayerCameraManager_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PlayerCameraManager_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_BeamStack_01_Tarp_120_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BeamStack_01_Tarp_120_C;
 
 SDK_NAMESPACE_END

@@ -29,14 +29,14 @@ public:
 	TMulticastInlineDelegate<void()>              OnInteractionComplete;                             // 0x0380(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__BP_CarKeys_01_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_CarKeys_01_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
-	void BndEvt__BP_FOR_FingerprintReader_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_FOR_FingerprintReader_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_FOR_FingerprintReader(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void SetInteraction(bool State);
 	void UserConstructionScript();
+	void SetInteraction(bool State);
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_FOR_FingerprintReader(int32 EntryPoint);
+	void BndEvt__BP_FOR_FingerprintReader_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_FOR_FingerprintReader_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_CarKeys_01_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
+	void BndEvt__BP_CarKeys_01_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -52,5 +52,6 @@ public:
 		return GetDefaultObjImpl<ABP_FOR_FingerprintReader_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_FOR_FingerprintReader_C;
 
 SDK_NAMESPACE_END

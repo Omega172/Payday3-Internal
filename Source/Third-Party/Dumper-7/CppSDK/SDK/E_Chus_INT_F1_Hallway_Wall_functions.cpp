@@ -16,20 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function E_Chus_INT_F1_Hallway_Wall.E_Chus_INT_F1_Hallway_Wall_C.ElevatorShaftPP
-// (BlueprintCallable, BlueprintEvent)
-
-void AE_Chus_INT_F1_Hallway_Wall_C::ElevatorShaftPP()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Chus_INT_F1_Hallway_Wall_C", "ElevatorShaftPP");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function E_Chus_INT_F1_Hallway_Wall.E_Chus_INT_F1_Hallway_Wall_C.ExecuteUbergraph_E_Chus_INT_F1_Hallway_Wall
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -37,16 +23,26 @@ void AE_Chus_INT_F1_Hallway_Wall_C::ElevatorShaftPP()
 
 void AE_Chus_INT_F1_Hallway_Wall_C::ExecuteUbergraph_E_Chus_INT_F1_Hallway_Wall(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Chus_INT_F1_Hallway_Wall_C", "ExecuteUbergraph_E_Chus_INT_F1_Hallway_Wall");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "E_Chus_INT_F1_Hallway_Wall_C", "ExecuteUbergraph_E_Chus_INT_F1_Hallway_Wall", FuncInfo);
 
 	Params::E_Chus_INT_F1_Hallway_Wall_C_ExecuteUbergraph_E_Chus_INT_F1_Hallway_Wall Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function E_Chus_INT_F1_Hallway_Wall.E_Chus_INT_F1_Hallway_Wall_C.ElevatorShaftPP
+// (BlueprintCallable, BlueprintEvent)
+
+void AE_Chus_INT_F1_Hallway_Wall_C::ElevatorShaftPP()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ElevatorShaftPP", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

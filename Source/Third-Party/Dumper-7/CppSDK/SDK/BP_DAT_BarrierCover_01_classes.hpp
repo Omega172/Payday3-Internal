@@ -61,5 +61,6 @@ public:
 		return GetDefaultObjImpl<ABP_DAT_BarrierCover_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DAT_BarrierCover_01_C;
 
 SDK_NAMESPACE_END

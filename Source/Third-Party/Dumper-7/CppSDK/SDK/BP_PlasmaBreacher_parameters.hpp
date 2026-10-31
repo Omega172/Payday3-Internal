@@ -18,99 +18,54 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.addWP
-// 0x0030 (0x0030 - 0x0000)
-struct BP_PlasmaBreacher_C_addWP final
+// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.updateMarkerZone
+// 0x0210 (0x0210 - 0x0000)
+struct BP_PlasmaBreacher_C_updateMarkerZone final
 {
 public:
-	class USceneComponent*                        loc;                                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         id;                                                // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0010(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_AddLocalMarker_ReturnValue;               // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0000(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_GetActorScale3D_ReturnValue;              // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_X;                            // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Y;                            // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Z;                            // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0048(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0068(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0080(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_98[0x8];                                       // 0x0098(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x00A0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetWorldTransform_SweepHitResult;      // 0x0100(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
+DUMPER7_ASSERTS_BP_PlasmaBreacher_C_updateMarkerZone;
 
-// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BndEvt__AddCanisterInteraction_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.setMarkerVisibility
+// 0x0001 (0x0001 - 0x0000)
+struct BP_PlasmaBreacher_C_setMarkerVisibility final
+{
+public:
+	bool                                          visible;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PlasmaBreacher_C_setMarkerVisibility;
+
+// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.SetAnimationPosition
 // 0x0010 (0x0010 - 0x0000)
-struct BP_PlasmaBreacher_C_BndEvt__AddCanisterInteraction_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature final
+struct BP_PlasmaBreacher_C_SetAnimationPosition final
 {
 public:
-	const class USBZBaseInteractableComponent*    InteractableComponent;                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInNewState;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetProgressMade_ReturnValue;              // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        K2Node_VariableSet_progressionMade_ImplicitCast;   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_PlasmaBreacher_C_SetAnimationPosition;
 
-// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BndEvt__BP_PlasmaBreacher_BagTriggerVolume_K2Node_ComponentBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct BP_PlasmaBreacher_C_BndEvt__BP_PlasmaBreacher_BagTriggerVolume_K2Node_ComponentBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BndEvt__BP_PlasmaBreacher_markerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_4_SBZBinaryStateChangedSignature__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct BP_PlasmaBreacher_C_BndEvt__BP_PlasmaBreacher_markerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_4_SBZBinaryStateChangedSignature__DelegateSignature final
-{
-public:
-	bool                                          bState;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt01_K2Node_ComponentBoundEvent_3_SBZBinaryStateChangedSignature__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct BP_PlasmaBreacher_C_BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt01_K2Node_ComponentBoundEvent_3_SBZBinaryStateChangedSignature__DelegateSignature final
-{
-public:
-	bool                                          bState;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt02_K2Node_ComponentBoundEvent_5_SBZBinaryStateChangedSignature__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct BP_PlasmaBreacher_C_BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt02_K2Node_ComponentBoundEvent_5_SBZBinaryStateChangedSignature__DelegateSignature final
-{
-public:
-	bool                                          bState;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt03_K2Node_ComponentBoundEvent_6_SBZBinaryStateChangedSignature__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct BP_PlasmaBreacher_C_BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt03_K2Node_ComponentBoundEvent_6_SBZBinaryStateChangedSignature__DelegateSignature final
-{
-public:
-	bool                                          bState;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BP_OnBolted
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PlasmaBreacher_C_BP_OnBolted final
-{
-public:
-	int32                                         Amount;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         BoltIndex;                                         // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BP_OnStateChanged
-// 0x0003 (0x0003 - 0x0000)
-struct BP_PlasmaBreacher_C_BP_OnStateChanged final
-{
-public:
-	ESBZBreachingEquipmentState                   OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZBreachingEquipmentState                   NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BP_PartAdded
+// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
-struct BP_PlasmaBreacher_C_BP_PartAdded final
+struct BP_PlasmaBreacher_C_ReceiveTick final
 {
 public:
-	int32                                         Amount;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DeltaSeconds_ReceiveTick;                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_PlasmaBreacher_C_ReceiveTick;
 
 // Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.ExecuteUbergraph_BP_PlasmaBreacher
 // 0x04E0 (0x04E0 - 0x0000)
@@ -224,51 +179,111 @@ public:
 	double                                        CallFunc_FInterpTo_Constant_DeltaTime_ImplicitCast_1; // 0x04C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetLocationAtTime_Time_ImplicitCast;      // 0x04D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_PlasmaBreacher_C_ExecuteUbergraph_BP_PlasmaBreacher;
 
-// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.ReceiveTick
+// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BP_PartAdded
 // 0x0004 (0x0004 - 0x0000)
-struct BP_PlasmaBreacher_C_ReceiveTick final
+struct BP_PlasmaBreacher_C_BP_PartAdded final
 {
 public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Amount_BP_PartAdded;                               // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_PlasmaBreacher_C_BP_PartAdded;
 
-// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.SetAnimationPosition
+// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BP_OnStateChanged
+// 0x0003 (0x0003 - 0x0000)
+struct BP_PlasmaBreacher_C_BP_OnStateChanged final
+{
+public:
+	ESBZBreachingEquipmentState                   OldState_BP_OnStateChanged;                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZBreachingEquipmentState                   NewState_BP_OnStateChanged;                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_BP_OnStateChanged;                    // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PlasmaBreacher_C_BP_OnStateChanged;
+
+// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BP_OnBolted
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PlasmaBreacher_C_BP_OnBolted final
+{
+public:
+	int32                                         Amount_BP_OnBolted;                                // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         BoltIndex_BP_OnBolted;                             // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PlasmaBreacher_C_BP_OnBolted;
+
+// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt03_K2Node_ComponentBoundEvent_6_SBZBinaryStateChangedSignature__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct BP_PlasmaBreacher_C_BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt03_K2Node_ComponentBoundEvent_6_SBZBinaryStateChangedSignature__DelegateSignature final
+{
+public:
+	bool                                          bState;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PlasmaBreacher_C_BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt03_K2Node_ComponentBoundEvent_6_SBZBinaryStateChangedSignature__DelegateSignature;
+
+// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt02_K2Node_ComponentBoundEvent_5_SBZBinaryStateChangedSignature__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct BP_PlasmaBreacher_C_BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt02_K2Node_ComponentBoundEvent_5_SBZBinaryStateChangedSignature__DelegateSignature final
+{
+public:
+	bool                                          bState;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PlasmaBreacher_C_BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt02_K2Node_ComponentBoundEvent_5_SBZBinaryStateChangedSignature__DelegateSignature;
+
+// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt01_K2Node_ComponentBoundEvent_3_SBZBinaryStateChangedSignature__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct BP_PlasmaBreacher_C_BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt01_K2Node_ComponentBoundEvent_3_SBZBinaryStateChangedSignature__DelegateSignature final
+{
+public:
+	bool                                          bState;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PlasmaBreacher_C_BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt01_K2Node_ComponentBoundEvent_3_SBZBinaryStateChangedSignature__DelegateSignature;
+
+// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BndEvt__BP_PlasmaBreacher_markerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_4_SBZBinaryStateChangedSignature__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct BP_PlasmaBreacher_C_BndEvt__BP_PlasmaBreacher_markerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_4_SBZBinaryStateChangedSignature__DelegateSignature final
+{
+public:
+	bool                                          bState;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PlasmaBreacher_C_BndEvt__BP_PlasmaBreacher_markerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_4_SBZBinaryStateChangedSignature__DelegateSignature;
+
+// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BndEvt__BP_PlasmaBreacher_BagTriggerVolume_K2Node_ComponentBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct BP_PlasmaBreacher_C_BndEvt__BP_PlasmaBreacher_BagTriggerVolume_K2Node_ComponentBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_BP_PlasmaBreacher_C_BndEvt__BP_PlasmaBreacher_BagTriggerVolume_K2Node_ComponentBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BndEvt__AddCanisterInteraction_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct BP_PlasmaBreacher_C_SetAnimationPosition final
+struct BP_PlasmaBreacher_C_BndEvt__AddCanisterInteraction_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature final
 {
 public:
-	float                                         CallFunc_GetProgressMade_ReturnValue;              // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        K2Node_VariableSet_progressionMade_ImplicitCast;   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class USBZBaseInteractableComponent*    InteractableComponent;                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInNewState;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_PlasmaBreacher_C_BndEvt__AddCanisterInteraction_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature;
 
-// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.setMarkerVisibility
-// 0x0001 (0x0001 - 0x0000)
-struct BP_PlasmaBreacher_C_setMarkerVisibility final
+// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.addWP
+// 0x0030 (0x0030 - 0x0000)
+struct BP_PlasmaBreacher_C_addWP final
 {
 public:
-	bool                                          visible;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        loc;                                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         id;                                                // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0010(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_AddLocalMarker_ReturnValue;               // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.updateMarkerZone
-// 0x0210 (0x0210 - 0x0000)
-struct BP_PlasmaBreacher_C_updateMarkerZone final
-{
-public:
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0000(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_GetActorScale3D_ReturnValue;              // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_X;                            // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Y;                            // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Z;                            // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0048(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0068(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x0080(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_98[0x8];                                       // 0x0098(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x00A0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetWorldTransform_SweepHitResult;      // 0x0100(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
+DUMPER7_ASSERTS_BP_PlasmaBreacher_C_addWP;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

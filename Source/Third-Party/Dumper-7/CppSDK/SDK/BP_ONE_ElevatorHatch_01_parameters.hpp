@@ -18,35 +18,52 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_ONE_ElevatorHatch_01.BP_ONE_ElevatorHatch_01_C.BndEvt__BP_ONE_ElevatorHatch_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_ONE_ElevatorHatch_01_C_BndEvt__BP_ONE_ElevatorHatch_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
+// Function BP_ONE_ElevatorHatch_01.BP_ONE_ElevatorHatch_01_C.setInteraction
+// 0x0001 (0x0001 - 0x0000)
+struct BP_ONE_ElevatorHatch_01_C_setInteraction final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ONE_ElevatorHatch_01_C_setInteraction;
 
-// Function BP_ONE_ElevatorHatch_01.BP_ONE_ElevatorHatch_01_C.BndEvt__BP_ONE_ElevatorHatch_01_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_ONE_ElevatorHatch_01_C_BndEvt__BP_ONE_ElevatorHatch_01_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature final
+// Function BP_ONE_ElevatorHatch_01.BP_ONE_ElevatorHatch_01_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_ONE_ElevatorHatch_01_C_OnStateChanged final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bStateToChangeTo_OnStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ONE_ElevatorHatch_01_C_OnStateChanged;
 
-// Function BP_ONE_ElevatorHatch_01.BP_ONE_ElevatorHatch_01_C.BndEvt__BP_ONE_ElevatorHatch_01_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_ONE_ElevatorHatch_01_C_BndEvt__BP_ONE_ElevatorHatch_01_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature final
+// Function BP_ONE_ElevatorHatch_01.BP_ONE_ElevatorHatch_01_C.goToState
+// 0x01A8 (0x01A8 - 0x0000)
+struct BP_ONE_ElevatorHatch_01_C_goToState final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          open;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          animate;                                           // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRotator                               Temp_struct_Variable;                              // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable; // 0x002C(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class ASBZPlayerCharacter*>            CallFunc_GetAllSBZPlayerCharacters_ReturnValue;    // 0x0040(0x0010)(ReferenceParm)
+	class ASBZPlayerCharacter*                    CallFunc_Array_Get_Item;                           // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5D[0x3];                                       // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_PostAkEvent_ReturnValue;                  // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0068(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FRotator                               K2Node_Select_Default;                             // 0x0080(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult;    // 0x0098(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         CallFunc_MakeRotator_Pitch_ImplicitCast;           // 0x01A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ONE_ElevatorHatch_01_C_goToState;
 
 // Function BP_ONE_ElevatorHatch_01.BP_ONE_ElevatorHatch_01_C.ExecuteUbergraph_BP_ONE_ElevatorHatch_01
 // 0x02F8 (0x02F8 - 0x0000)
@@ -91,50 +108,40 @@ public:
 	float                                         CallFunc_MakeRotator_Pitch_ImplicitCast;           // 0x02F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_MakeRotator_Pitch_ImplicitCast_1;         // 0x02F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ONE_ElevatorHatch_01_C_ExecuteUbergraph_BP_ONE_ElevatorHatch_01;
 
-// Function BP_ONE_ElevatorHatch_01.BP_ONE_ElevatorHatch_01_C.goToState
-// 0x01A8 (0x01A8 - 0x0000)
-struct BP_ONE_ElevatorHatch_01_C_goToState final
+// Function BP_ONE_ElevatorHatch_01.BP_ONE_ElevatorHatch_01_C.BndEvt__BP_ONE_ElevatorHatch_01_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_ONE_ElevatorHatch_01_C_BndEvt__BP_ONE_ElevatorHatch_01_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature final
 {
 public:
-	bool                                          open;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          animate;                                           // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               Temp_struct_Variable;                              // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable; // 0x002C(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class ASBZPlayerCharacter*>            CallFunc_GetAllSBZPlayerCharacters_ReturnValue;    // 0x0040(0x0010)(ReferenceParm)
-	class ASBZPlayerCharacter*                    CallFunc_Array_Get_Item;                           // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5D[0x3];                                       // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_PostAkEvent_ReturnValue;                  // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0068(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FRotator                               K2Node_Select_Default;                             // 0x0080(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult;    // 0x0098(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         CallFunc_MakeRotator_Pitch_ImplicitCast;           // 0x01A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ONE_ElevatorHatch_01_C_BndEvt__BP_ONE_ElevatorHatch_01_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature;
 
-// Function BP_ONE_ElevatorHatch_01.BP_ONE_ElevatorHatch_01_C.OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_ONE_ElevatorHatch_01_C_OnStateChanged final
+// Function BP_ONE_ElevatorHatch_01.BP_ONE_ElevatorHatch_01_C.BndEvt__BP_ONE_ElevatorHatch_01_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_ONE_ElevatorHatch_01_C_BndEvt__BP_ONE_ElevatorHatch_01_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature final
 {
 public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ONE_ElevatorHatch_01_C_BndEvt__BP_ONE_ElevatorHatch_01_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature;
 
-// Function BP_ONE_ElevatorHatch_01.BP_ONE_ElevatorHatch_01_C.setInteraction
-// 0x0001 (0x0001 - 0x0000)
-struct BP_ONE_ElevatorHatch_01_C_setInteraction final
+// Function BP_ONE_ElevatorHatch_01.BP_ONE_ElevatorHatch_01_C.BndEvt__BP_ONE_ElevatorHatch_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_ONE_ElevatorHatch_01_C_BndEvt__BP_ONE_ElevatorHatch_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
 {
 public:
-	bool                                          enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ONE_ElevatorHatch_01_C_BndEvt__BP_ONE_ElevatorHatch_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

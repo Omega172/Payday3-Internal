@@ -38,24 +38,24 @@ public:
 	class ASBZDestroyGroup*                       SBZDestroyGroup_CarKeys_Detective2_ExecuteUbergraph_R_Fort_Detective_Office_RefProperty; // 0x0420(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_03_2_K2Node_ActorBoundEvent_11_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer);
-	void BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_2_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer);
-	void BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_3_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer);
-	void BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_4_K2Node_ActorBoundEvent_12_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer);
-	void BndEvt__R_Fort_ChiefPolice_Office_BP_InteractableMoneyPile_LowValue_2_K2Node_ActorBoundEvent_7_SBZBagPickedUp__DelegateSignature();
-	void BndEvt__R_Fort_Detective_Office_BP_AudioBug_Locker1_K2Node_ActorBoundEvent_1_onInteractionComplete__DelegateSignature();
-	void BndEvt__R_Fort_Detective_Office_BP_CarKeys_01_2_K2Node_ActorBoundEvent_4_onObjectPickedUp__DelegateSignature();
-	void BndEvt__R_Fort_Detective_Office_SBZPlayerTriggerVolume_PlayerNearAnderssonLocker1_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__R_Fort_Generic_Office_BP_Safe_01_2_K2Node_ActorBoundEvent_0_SBZOnMinigameDoneDelegate__DelegateSignature();
-	void DestroyDetectiveCarKey();
-	void ExecuteUbergraph_R_Fort_Detective_Office(int32 EntryPoint);
-	void PPCarKeysSafeDestroy();
-	void R_ChiefOffice_ActivateObj();
-	void R_DetectiveOffice_DistributeCarKeys();
-	void R_DetectiveOffice_DistributeRest();
-	void R_Lieutenant_DisableObjective();
-	void RemoveQuestionWaypointCarKeys();
 	void StartedAnderssonObjective();
+	void RemoveQuestionWaypointCarKeys();
+	void R_Lieutenant_DisableObjective();
+	void R_DetectiveOffice_DistributeRest();
+	void R_DetectiveOffice_DistributeCarKeys();
+	void R_ChiefOffice_ActivateObj();
+	void PPCarKeysSafeDestroy();
+	void ExecuteUbergraph_R_Fort_Detective_Office(int32 EntryPoint);
+	void DestroyDetectiveCarKey();
+	void BndEvt__R_Fort_Generic_Office_BP_Safe_01_2_K2Node_ActorBoundEvent_0_SBZOnMinigameDoneDelegate__DelegateSignature();
+	void BndEvt__R_Fort_Detective_Office_SBZPlayerTriggerVolume_PlayerNearAnderssonLocker1_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__R_Fort_Detective_Office_BP_CarKeys_01_2_K2Node_ActorBoundEvent_4_onObjectPickedUp__DelegateSignature();
+	void BndEvt__R_Fort_Detective_Office_BP_AudioBug_Locker1_K2Node_ActorBoundEvent_1_onInteractionComplete__DelegateSignature();
+	void BndEvt__R_Fort_ChiefPolice_Office_BP_InteractableMoneyPile_LowValue_2_K2Node_ActorBoundEvent_7_SBZBagPickedUp__DelegateSignature();
+	void BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_4_K2Node_ActorBoundEvent_12_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer);
+	void BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_3_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer);
+	void BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_2_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer);
+	void BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_03_2_K2Node_ActorBoundEvent_11_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer);
 
 public:
 	static class UClass* StaticClass()
@@ -71,5 +71,6 @@ public:
 		return GetDefaultObjImpl<AR_Fort_Detective_Office_C>();
 	}
 };
+DUMPER7_ASSERTS_AR_Fort_Detective_Office_C;
 
 SDK_NAMESPACE_END

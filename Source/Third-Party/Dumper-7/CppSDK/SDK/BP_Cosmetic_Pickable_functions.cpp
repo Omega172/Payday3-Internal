@@ -16,21 +16,21 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Cosmetic_Pickable.BP_Cosmetic_Pickable_C.ExecuteUbergraph_BP_Cosmetic_Pickable
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_Cosmetic_Pickable.BP_Cosmetic_Pickable_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bStateToChangeTo_OnStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Cosmetic_Pickable_C::ExecuteUbergraph_BP_Cosmetic_Pickable(int32 EntryPoint)
+void ABP_Cosmetic_Pickable_C::OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Cosmetic_Pickable_C", "ExecuteUbergraph_BP_Cosmetic_Pickable");
+	Params::BP_Cosmetic_Pickable_C_OnStateChanged Parms{};
 
-	Params::BP_Cosmetic_Pickable_C_ExecuteUbergraph_BP_Cosmetic_Pickable Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.bStateToChangeTo_OnStateChanged = bStateToChangeTo_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -44,10 +44,8 @@ void ABP_Cosmetic_Pickable_C::ExecuteUbergraph_BP_Cosmetic_Pickable(int32 EntryP
 
 void ABP_Cosmetic_Pickable_C::HandleTagActive(const struct FGameplayTag& EventTag, bool bActive)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Cosmetic_Pickable_C", "HandleTagActive");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HandleTagActive", FnName));
 
 	Params::BP_Cosmetic_Pickable_C_HandleTagActive Parms{};
 
@@ -58,23 +56,19 @@ void ABP_Cosmetic_Pickable_C::HandleTagActive(const struct FGameplayTag& EventTa
 }
 
 
-// Function BP_Cosmetic_Pickable.BP_Cosmetic_Pickable_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
+// Function BP_Cosmetic_Pickable.BP_Cosmetic_Pickable_C.ExecuteUbergraph_BP_Cosmetic_Pickable
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Cosmetic_Pickable_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
+void ABP_Cosmetic_Pickable_C::ExecuteUbergraph_BP_Cosmetic_Pickable(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Cosmetic_Pickable_C", "ExecuteUbergraph_BP_Cosmetic_Pickable", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Cosmetic_Pickable_C", "OnStateChanged");
+	Params::BP_Cosmetic_Pickable_C_ExecuteUbergraph_BP_Cosmetic_Pickable Parms{};
 
-	Params::BP_Cosmetic_Pickable_C_OnStateChanged Parms{};
-
-	Parms.bStateToChangeTo = bStateToChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

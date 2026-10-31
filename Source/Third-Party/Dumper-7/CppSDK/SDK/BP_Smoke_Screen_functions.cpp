@@ -16,85 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Smoke_Screen.BP_Smoke_Screen_C.Activate
+// Function BP_Smoke_Screen.BP_Smoke_Screen_C.Stop_Sound
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Smoke_Screen_C::Activate()
+void ABP_Smoke_Screen_C::Stop_Sound()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Smoke_Screen_C", "Activate");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Smoke_Screen.BP_Smoke_Screen_C.Deactivate
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_Smoke_Screen_C::Deactivate()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Smoke_Screen_C", "Deactivate");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Smoke_Screen.BP_Smoke_Screen_C.ExecuteUbergraph_BP_Smoke_Screen
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Smoke_Screen_C::ExecuteUbergraph_BP_Smoke_Screen(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Smoke_Screen_C", "ExecuteUbergraph_BP_Smoke_Screen");
-
-	Params::BP_Smoke_Screen_C_ExecuteUbergraph_BP_Smoke_Screen Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Smoke_Screen.BP_Smoke_Screen_C.OnActiveStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bSetActive                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Smoke_Screen_C::OnActiveStateChanged(bool bSetActive, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Smoke_Screen_C", "OnActiveStateChanged");
-
-	Params::BP_Smoke_Screen_C_OnActiveStateChanged Parms{};
-
-	Parms.bSetActive = bSetActive;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Smoke_Screen.BP_Smoke_Screen_C.Play_Sound
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_Smoke_Screen_C::Play_Sound()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Smoke_Screen_C", "Play_Sound");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Stop_Sound", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -105,24 +33,82 @@ void ABP_Smoke_Screen_C::Play_Sound()
 
 void ABP_Smoke_Screen_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Smoke_Screen_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Smoke_Screen.BP_Smoke_Screen_C.Stop_Sound
+// Function BP_Smoke_Screen.BP_Smoke_Screen_C.Play_Sound
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Smoke_Screen_C::Stop_Sound()
+void ABP_Smoke_Screen_C::Play_Sound()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Play_Sound", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Smoke_Screen_C", "Stop_Sound");
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Smoke_Screen.BP_Smoke_Screen_C.OnActiveStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bSetActive_OnActiveStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnActiveStateChanged                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Smoke_Screen_C::OnActiveStateChanged(bool bSetActive_OnActiveStateChanged, bool bDoCosmetics_OnActiveStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnActiveStateChanged", FnName));
+
+	Params::BP_Smoke_Screen_C_OnActiveStateChanged Parms{};
+
+	Parms.bSetActive_OnActiveStateChanged = bSetActive_OnActiveStateChanged;
+	Parms.bDoCosmetics_OnActiveStateChanged = bDoCosmetics_OnActiveStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Smoke_Screen.BP_Smoke_Screen_C.ExecuteUbergraph_BP_Smoke_Screen
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Smoke_Screen_C::ExecuteUbergraph_BP_Smoke_Screen(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Smoke_Screen_C", "ExecuteUbergraph_BP_Smoke_Screen", FuncInfo);
+
+	Params::BP_Smoke_Screen_C_ExecuteUbergraph_BP_Smoke_Screen Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Smoke_Screen.BP_Smoke_Screen_C.Deactivate
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_Smoke_Screen_C::Deactivate()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Deactivate", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Smoke_Screen.BP_Smoke_Screen_C.Activate
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_Smoke_Screen_C::Activate()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Activate", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<UWBP_STO_ControlScreenIdle_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_STO_ControlScreenIdle_C;
 
 SDK_NAMESPACE_END

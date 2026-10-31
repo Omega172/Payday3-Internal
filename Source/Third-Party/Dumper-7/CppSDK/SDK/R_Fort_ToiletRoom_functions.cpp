@@ -16,6 +16,18 @@
 
 SDK_NAMESPACE_START
 
+// Function R_Fort_ToiletRoom.R_Fort_ToiletRoom_C.RandomizedRoomTest_RemoteEvent1
+// (BlueprintCallable, BlueprintEvent)
+
+void AR_Fort_ToiletRoom_C::RandomizedRoomTest_RemoteEvent1()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RandomizedRoomTest_RemoteEvent1", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function R_Fort_ToiletRoom.R_Fort_ToiletRoom_C.ExecuteUbergraph_R_Fort_ToiletRoom
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,30 +35,14 @@ SDK_NAMESPACE_START
 
 void AR_Fort_ToiletRoom_C::ExecuteUbergraph_R_Fort_ToiletRoom(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Fort_ToiletRoom_C", "ExecuteUbergraph_R_Fort_ToiletRoom");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "R_Fort_ToiletRoom_C", "ExecuteUbergraph_R_Fort_ToiletRoom", FuncInfo);
 
 	Params::R_Fort_ToiletRoom_C_ExecuteUbergraph_R_Fort_ToiletRoom Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_Fort_ToiletRoom.R_Fort_ToiletRoom_C.RandomizedRoomTest_RemoteEvent1
-// (BlueprintCallable, BlueprintEvent)
-
-void AR_Fort_ToiletRoom_C::RandomizedRoomTest_RemoteEvent1()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Fort_ToiletRoom_C", "RandomizedRoomTest_RemoteEvent1");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

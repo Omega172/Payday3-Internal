@@ -29,9 +29,9 @@ public:
 	class UOverlay*                               Overlay_Selected;                                  // 0x03B8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void SetupData(const class USBZEquippablePartDataAsset* NewParam);
+	void ButtonFocusedChanged(bool bInHasFocus);
 	void ExecuteUbergraph_WBP_Inventory_Item_Button(int32 EntryPoint);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
+	void SetupData(const class USBZEquippablePartDataAsset* NewParam);
 
 public:
 	static class UClass* StaticClass()

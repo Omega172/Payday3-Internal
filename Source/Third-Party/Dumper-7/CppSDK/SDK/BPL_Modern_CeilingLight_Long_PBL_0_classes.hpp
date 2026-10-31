@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<BPL_Modern_CeilingLight_Long_PBL_0::ABPL_Modern_CeilingLight_Long_PBL_C>();
 	}
 };
+DUMPER7_ASSERTS_BPL_Modern_CeilingLight_Long_PBL_0__ABPL_Modern_CeilingLight_Long_PBL_C;
 
 SDK_NAMESPACE_END

@@ -16,35 +16,24 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_LiquidNitrogen.BP_LiquidNitrogen_C.BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_LiquidNitrogen_C_BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature final
+// Function BP_LiquidNitrogen.BP_LiquidNitrogen_C.SetInteractionEnabled
+// 0x0001 (0x0001 - 0x0000)
+struct BP_LiquidNitrogen_C_SetInteractionEnabled final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_LiquidNitrogen_C_SetInteractionEnabled;
 
-// Function BP_LiquidNitrogen.BP_LiquidNitrogen_C.BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_LiquidNitrogen_C_BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature final
+// Function BP_LiquidNitrogen.BP_LiquidNitrogen_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_LiquidNitrogen_C_OnStateChanged final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bStateToChangeTo_OnStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_LiquidNitrogen.BP_LiquidNitrogen_C.BndEvt__BP_LiquidNitrogen_SBZInteractable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_LiquidNitrogen_C_BndEvt__BP_LiquidNitrogen_SBZInteractable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_LiquidNitrogen_C_OnStateChanged;
 
 // Function BP_LiquidNitrogen.BP_LiquidNitrogen_C.ExecuteUbergraph_BP_LiquidNitrogen
 // 0x0068 (0x0068 - 0x0000)
@@ -70,23 +59,40 @@ public:
 	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable; // 0x004C(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_LiquidNitrogen_C_ExecuteUbergraph_BP_LiquidNitrogen;
 
-// Function BP_LiquidNitrogen.BP_LiquidNitrogen_C.OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_LiquidNitrogen_C_OnStateChanged final
+// Function BP_LiquidNitrogen.BP_LiquidNitrogen_C.BndEvt__BP_LiquidNitrogen_SBZInteractable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_LiquidNitrogen_C_BndEvt__BP_LiquidNitrogen_SBZInteractable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature final
 {
 public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_LiquidNitrogen_C_BndEvt__BP_LiquidNitrogen_SBZInteractable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature;
 
-// Function BP_LiquidNitrogen.BP_LiquidNitrogen_C.SetInteractionEnabled
-// 0x0001 (0x0001 - 0x0000)
-struct BP_LiquidNitrogen_C_SetInteractionEnabled final
+// Function BP_LiquidNitrogen.BP_LiquidNitrogen_C.BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_LiquidNitrogen_C_BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature final
 {
 public:
-	bool                                          State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_LiquidNitrogen_C_BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature;
+
+// Function BP_LiquidNitrogen.BP_LiquidNitrogen_C.BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_LiquidNitrogen_C_BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LiquidNitrogen_C_BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

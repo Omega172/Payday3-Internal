@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABP_CHU_INT_CourtDoor_01_SingleDoor_01_Reinforced_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CHU_INT_CourtDoor_01_SingleDoor_01_Reinforced_C;
 
 SDK_NAMESPACE_END

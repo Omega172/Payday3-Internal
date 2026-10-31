@@ -14,6 +14,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_Order_Civilian_ObserveCorpse.BP_Order_Civilian_ObserveCorpse_C.OnStartedBP
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Order_Civilian_ObserveCorpse_C_OnStartedBP final
+{
+public:
+	class APawn*                                  Pawn_OnStartedBP;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Order_Civilian_ObserveCorpse_C_OnStartedBP;
+
 // Function BP_Order_Civilian_ObserveCorpse.BP_Order_Civilian_ObserveCorpse_C.ExecuteUbergraph_BP_Order_Civilian_ObserveCorpse
 // 0x0028 (0x0028 - 0x0000)
 struct BP_Order_Civilian_ObserveCorpse_C_ExecuteUbergraph_BP_Order_Civilian_ObserveCorpse final
@@ -26,14 +35,7 @@ public:
 	class AAIController*                          K2Node_DynamicCast_AsAIController;                 // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_Order_Civilian_ObserveCorpse.BP_Order_Civilian_ObserveCorpse_C.OnStartedBP
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Order_Civilian_ObserveCorpse_C_OnStartedBP final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_Order_Civilian_ObserveCorpse_C_ExecuteUbergraph_BP_Order_Civilian_ObserveCorpse;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

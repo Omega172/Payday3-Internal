@@ -16,112 +16,168 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.addWP
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USceneComponent*                  loc                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32*                                  id                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.updateMarkerZone
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_PlasmaBreacher_C::addWP(class USceneComponent* loc, int32* id)
+void ABP_PlasmaBreacher_C::updateMarkerZone()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"updateMarkerZone", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlasmaBreacher_C", "addWP");
-
-	Params::BP_PlasmaBreacher_C_addWP Parms{};
-
-	Parms.loc = loc;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (id != nullptr)
-		*id = Parms.id;
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BndEvt__AddCanisterInteraction_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
+// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.setMarkerVisibility
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class USBZBaseInteractableComponent*InteractableComponent                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    visible                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PlasmaBreacher_C::BndEvt__AddCanisterInteraction_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
+void ABP_PlasmaBreacher_C::setMarkerVisibility(bool visible)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setMarkerVisibility", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlasmaBreacher_C", "BndEvt__AddCanisterInteraction_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature");
+	Params::BP_PlasmaBreacher_C_setMarkerVisibility Parms{};
 
-	Params::BP_PlasmaBreacher_C_BndEvt__AddCanisterInteraction_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.InteractableComponent = InteractableComponent;
-	Parms.bInNewState = bInNewState;
+	Parms.visible = visible;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BndEvt__BP_PlasmaBreacher_BagTriggerVolume_K2Node_ComponentBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.SetAnimationPosition
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_PlasmaBreacher_C::BndEvt__BP_PlasmaBreacher_BagTriggerVolume_K2Node_ComponentBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
+void ABP_PlasmaBreacher_C::SetAnimationPosition()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetAnimationPosition", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlasmaBreacher_C", "BndEvt__BP_PlasmaBreacher_BagTriggerVolume_K2Node_ComponentBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_PlasmaBreacher_C_BndEvt__BP_PlasmaBreacher_BagTriggerVolume_K2Node_ComponentBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature Parms{};
 
-	Parms.Volume = Volume;
-	Parms.Bag = Bag;
-	Parms.Handle = std::move(Handle);
+// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds_ReceiveTick                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PlasmaBreacher_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveTick", FnName));
+
+	Params::BP_PlasmaBreacher_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds_ReceiveTick = DeltaSeconds_ReceiveTick;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BndEvt__BP_PlasmaBreacher_markerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_4_SBZBinaryStateChangedSignature__DelegateSignature
+// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_PlasmaBreacher_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.ExecuteUbergraph_BP_PlasmaBreacher
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PlasmaBreacher_C::ExecuteUbergraph_BP_PlasmaBreacher(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_PlasmaBreacher_C", "ExecuteUbergraph_BP_PlasmaBreacher", FuncInfo);
+
+	Params::BP_PlasmaBreacher_C_ExecuteUbergraph_BP_PlasmaBreacher Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BP_PartAdded
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   Amount_BP_PartAdded                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PlasmaBreacher_C::BP_PartAdded(int32 Amount_BP_PartAdded)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_PartAdded", FnName));
+
+	Params::BP_PlasmaBreacher_C_BP_PartAdded Parms{};
+
+	Parms.Amount_BP_PartAdded = Amount_BP_PartAdded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BP_OnStateChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// ESBZBreachingEquipmentState             OldState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZBreachingEquipmentState             NewState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_BP_OnStateChanged                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PlasmaBreacher_C::BP_OnStateChanged(ESBZBreachingEquipmentState OldState_BP_OnStateChanged, ESBZBreachingEquipmentState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnStateChanged", FnName));
+
+	Params::BP_PlasmaBreacher_C_BP_OnStateChanged Parms{};
+
+	Parms.OldState_BP_OnStateChanged = OldState_BP_OnStateChanged;
+	Parms.NewState_BP_OnStateChanged = NewState_BP_OnStateChanged;
+	Parms.bDoCosmetics_BP_OnStateChanged = bDoCosmetics_BP_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BP_OnBolted
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   Amount_BP_OnBolted                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   BoltIndex_BP_OnBolted                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PlasmaBreacher_C::BP_OnBolted(int32 Amount_BP_OnBolted, int32 BoltIndex_BP_OnBolted)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnBolted", FnName));
+
+	Params::BP_PlasmaBreacher_C_BP_OnBolted Parms{};
+
+	Parms.Amount_BP_OnBolted = Amount_BP_OnBolted;
+	Parms.BoltIndex_BP_OnBolted = BoltIndex_BP_OnBolted;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt03_K2Node_ComponentBoundEvent_6_SBZBinaryStateChangedSignature__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // bool                                    bState                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PlasmaBreacher_C::BndEvt__BP_PlasmaBreacher_markerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_4_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics)
+void ABP_PlasmaBreacher_C::BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt03_K2Node_ComponentBoundEvent_6_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt03_K2Node_ComponentBoundEvent_6_SBZBinaryStateChangedSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlasmaBreacher_C", "BndEvt__BP_PlasmaBreacher_markerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_4_SBZBinaryStateChangedSignature__DelegateSignature");
-
-	Params::BP_PlasmaBreacher_C_BndEvt__BP_PlasmaBreacher_markerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_4_SBZBinaryStateChangedSignature__DelegateSignature Parms{};
-
-	Parms.bState = bState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt01_K2Node_ComponentBoundEvent_3_SBZBinaryStateChangedSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// bool                                    bState                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PlasmaBreacher_C::BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt01_K2Node_ComponentBoundEvent_3_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlasmaBreacher_C", "BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt01_K2Node_ComponentBoundEvent_3_SBZBinaryStateChangedSignature__DelegateSignature");
-
-	Params::BP_PlasmaBreacher_C_BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt01_K2Node_ComponentBoundEvent_3_SBZBinaryStateChangedSignature__DelegateSignature Parms{};
+	Params::BP_PlasmaBreacher_C_BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt03_K2Node_ComponentBoundEvent_6_SBZBinaryStateChangedSignature__DelegateSignature Parms{};
 
 	Parms.bState = bState;
 	Parms.bDoCosmetics = bDoCosmetics;
@@ -138,10 +194,8 @@ void ABP_PlasmaBreacher_C::BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt01_K2Node
 
 void ABP_PlasmaBreacher_C::BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt02_K2Node_ComponentBoundEvent_5_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlasmaBreacher_C", "BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt02_K2Node_ComponentBoundEvent_5_SBZBinaryStateChangedSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt02_K2Node_ComponentBoundEvent_5_SBZBinaryStateChangedSignature__DelegateSignature", FnName));
 
 	Params::BP_PlasmaBreacher_C_BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt02_K2Node_ComponentBoundEvent_5_SBZBinaryStateChangedSignature__DelegateSignature Parms{};
 
@@ -152,20 +206,18 @@ void ABP_PlasmaBreacher_C::BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt02_K2Node
 }
 
 
-// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt03_K2Node_ComponentBoundEvent_6_SBZBinaryStateChangedSignature__DelegateSignature
+// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt01_K2Node_ComponentBoundEvent_3_SBZBinaryStateChangedSignature__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // bool                                    bState                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PlasmaBreacher_C::BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt03_K2Node_ComponentBoundEvent_6_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics)
+void ABP_PlasmaBreacher_C::BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt01_K2Node_ComponentBoundEvent_3_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt01_K2Node_ComponentBoundEvent_3_SBZBinaryStateChangedSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlasmaBreacher_C", "BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt03_K2Node_ComponentBoundEvent_6_SBZBinaryStateChangedSignature__DelegateSignature");
-
-	Params::BP_PlasmaBreacher_C_BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt03_K2Node_ComponentBoundEvent_6_SBZBinaryStateChangedSignature__DelegateSignature Parms{};
+	Params::BP_PlasmaBreacher_C_BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt01_K2Node_ComponentBoundEvent_3_SBZBinaryStateChangedSignature__DelegateSignature Parms{};
 
 	Parms.bState = bState;
 	Parms.bDoCosmetics = bDoCosmetics;
@@ -174,171 +226,87 @@ void ABP_PlasmaBreacher_C::BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt03_K2Node
 }
 
 
-// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BP_OnBolted
-// (Event, Protected, BlueprintEvent)
+// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BndEvt__BP_PlasmaBreacher_markerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_4_SBZBinaryStateChangedSignature__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   Amount                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   BoltIndex                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PlasmaBreacher_C::BP_OnBolted(int32 Amount, int32 BoltIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlasmaBreacher_C", "BP_OnBolted");
-
-	Params::BP_PlasmaBreacher_C_BP_OnBolted Parms{};
-
-	Parms.Amount = Amount;
-	Parms.BoltIndex = BoltIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BP_OnStateChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// ESBZBreachingEquipmentState             OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZBreachingEquipmentState             NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bState                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PlasmaBreacher_C::BP_OnStateChanged(ESBZBreachingEquipmentState OldState, ESBZBreachingEquipmentState NewState, bool bDoCosmetics)
+void ABP_PlasmaBreacher_C::BndEvt__BP_PlasmaBreacher_markerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_4_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_PlasmaBreacher_markerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_4_SBZBinaryStateChangedSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlasmaBreacher_C", "BP_OnStateChanged");
+	Params::BP_PlasmaBreacher_C_BndEvt__BP_PlasmaBreacher_markerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_4_SBZBinaryStateChangedSignature__DelegateSignature Parms{};
 
-	Params::BP_PlasmaBreacher_C_BP_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
+	Parms.bState = bState;
 	Parms.bDoCosmetics = bDoCosmetics;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BP_PartAdded
-// (Event, Protected, BlueprintEvent)
+// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BndEvt__BP_PlasmaBreacher_BagTriggerVolume_K2Node_ComponentBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   Amount                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void ABP_PlasmaBreacher_C::BP_PartAdded(int32 Amount)
+void ABP_PlasmaBreacher_C::BndEvt__BP_PlasmaBreacher_BagTriggerVolume_K2Node_ComponentBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_PlasmaBreacher_BagTriggerVolume_K2Node_ComponentBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlasmaBreacher_C", "BP_PartAdded");
+	Params::BP_PlasmaBreacher_C_BndEvt__BP_PlasmaBreacher_BagTriggerVolume_K2Node_ComponentBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature Parms{};
 
-	Params::BP_PlasmaBreacher_C_BP_PartAdded Parms{};
-
-	Parms.Amount = Amount;
+	Parms.Volume = Volume;
+	Parms.Bag = Bag;
+	Parms.Handle = std::move(Handle);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.ExecuteUbergraph_BP_PlasmaBreacher
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.BndEvt__AddCanisterInteraction_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZBaseInteractableComponent*InteractableComponent                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PlasmaBreacher_C::ExecuteUbergraph_BP_PlasmaBreacher(int32 EntryPoint)
+void ABP_PlasmaBreacher_C::BndEvt__AddCanisterInteraction_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__AddCanisterInteraction_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlasmaBreacher_C", "ExecuteUbergraph_BP_PlasmaBreacher");
+	Params::BP_PlasmaBreacher_C_BndEvt__AddCanisterInteraction_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
 
-	Params::BP_PlasmaBreacher_C_ExecuteUbergraph_BP_PlasmaBreacher Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.InteractableComponent = InteractableComponent;
+	Parms.bInNewState = bInNewState;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_PlasmaBreacher_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlasmaBreacher_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
+// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.addWP
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USceneComponent*                  loc                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32*                                  id                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PlasmaBreacher_C::ReceiveTick(float DeltaSeconds)
+void ABP_PlasmaBreacher_C::addWP(class USceneComponent* loc, int32* id)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"addWP", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlasmaBreacher_C", "ReceiveTick");
+	Params::BP_PlasmaBreacher_C_addWP Parms{};
 
-	Params::BP_PlasmaBreacher_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
+	Parms.loc = loc;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
 
-
-// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.SetAnimationPosition
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_PlasmaBreacher_C::SetAnimationPosition()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlasmaBreacher_C", "SetAnimationPosition");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.setMarkerVisibility
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    visible                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PlasmaBreacher_C::setMarkerVisibility(bool visible)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlasmaBreacher_C", "setMarkerVisibility");
-
-	Params::BP_PlasmaBreacher_C_setMarkerVisibility Parms{};
-
-	Parms.visible = visible;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PlasmaBreacher.BP_PlasmaBreacher_C.updateMarkerZone
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_PlasmaBreacher_C::updateMarkerZone()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlasmaBreacher_C", "updateMarkerZone");
-
-	UObject::ProcessEvent(Func, nullptr);
+	if (id != nullptr)
+		*id = Parms.id;
 }
 
 

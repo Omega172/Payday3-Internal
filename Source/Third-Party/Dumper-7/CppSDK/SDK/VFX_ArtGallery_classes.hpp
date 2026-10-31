@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AVFX_ArtGallery_C>();
 	}
 };
+DUMPER7_ASSERTS_AVFX_ArtGallery_C;
 
 SDK_NAMESPACE_END

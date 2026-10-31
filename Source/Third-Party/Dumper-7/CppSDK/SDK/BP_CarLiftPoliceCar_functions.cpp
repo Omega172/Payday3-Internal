@@ -16,23 +16,69 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_CarLiftPoliceCar.BP_CarLiftPoliceCar_C.BndEvt__BP_CarKeys_01_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// const class USBZBaseInteractableComponent*InteractableComponent                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_CarLiftPoliceCar.BP_CarLiftPoliceCar_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_CarLiftPoliceCar_C::BndEvt__BP_CarKeys_01_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
+void ABP_CarLiftPoliceCar_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CarLiftPoliceCar_C", "BndEvt__BP_CarKeys_01_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_CarLiftPoliceCar_C_BndEvt__BP_CarKeys_01_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
 
-	Parms.InteractableComponent = InteractableComponent;
-	Parms.bInNewState = bInNewState;
+// Function BP_CarLiftPoliceCar.BP_CarLiftPoliceCar_C.SetInteraction
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_CarLiftPoliceCar_C::SetInteraction(bool State)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetInteraction", FnName));
+
+	Params::BP_CarLiftPoliceCar_C_SetInteraction Parms{};
+
+	Parms.State = State;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_CarLiftPoliceCar.BP_CarLiftPoliceCar_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bStateToChangeTo_OnStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_CarLiftPoliceCar_C::OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_CarLiftPoliceCar_C_OnStateChanged Parms{};
+
+	Parms.bStateToChangeTo_OnStateChanged = bStateToChangeTo_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_CarLiftPoliceCar.BP_CarLiftPoliceCar_C.ExecuteUbergraph_BP_CarLiftPoliceCar
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_CarLiftPoliceCar_C::ExecuteUbergraph_BP_CarLiftPoliceCar(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_CarLiftPoliceCar_C", "ExecuteUbergraph_BP_CarLiftPoliceCar", FuncInfo);
+
+	Params::BP_CarLiftPoliceCar_C_ExecuteUbergraph_BP_CarLiftPoliceCar Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -47,10 +93,8 @@ void ABP_CarLiftPoliceCar_C::BndEvt__BP_CarKeys_01_SBZInteractable_K2Node_Compon
 
 void ABP_CarLiftPoliceCar_C::BndEvt__BP_CarLiftPoliceCar_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CarLiftPoliceCar_C", "BndEvt__BP_CarLiftPoliceCar_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_CarLiftPoliceCar_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
 
 	Params::BP_CarLiftPoliceCar_C_BndEvt__BP_CarLiftPoliceCar_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
@@ -62,79 +106,23 @@ void ABP_CarLiftPoliceCar_C::BndEvt__BP_CarLiftPoliceCar_SBZInteractable_K2Node_
 }
 
 
-// Function BP_CarLiftPoliceCar.BP_CarLiftPoliceCar_C.ExecuteUbergraph_BP_CarLiftPoliceCar
-// (Final, UbergraphFunction)
+// Function BP_CarLiftPoliceCar.BP_CarLiftPoliceCar_C.BndEvt__BP_CarKeys_01_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZBaseInteractableComponent*InteractableComponent                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_CarLiftPoliceCar_C::ExecuteUbergraph_BP_CarLiftPoliceCar(int32 EntryPoint)
+void ABP_CarLiftPoliceCar_C::BndEvt__BP_CarKeys_01_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_CarKeys_01_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CarLiftPoliceCar_C", "ExecuteUbergraph_BP_CarLiftPoliceCar");
+	Params::BP_CarLiftPoliceCar_C_BndEvt__BP_CarKeys_01_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
 
-	Params::BP_CarLiftPoliceCar_C_ExecuteUbergraph_BP_CarLiftPoliceCar Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.InteractableComponent = InteractableComponent;
+	Parms.bInNewState = bInNewState;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_CarLiftPoliceCar.BP_CarLiftPoliceCar_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_CarLiftPoliceCar_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CarLiftPoliceCar_C", "OnStateChanged");
-
-	Params::BP_CarLiftPoliceCar_C_OnStateChanged Parms{};
-
-	Parms.bStateToChangeTo = bStateToChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_CarLiftPoliceCar.BP_CarLiftPoliceCar_C.SetInteraction
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_CarLiftPoliceCar_C::SetInteraction(bool State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CarLiftPoliceCar_C", "SetInteraction");
-
-	Params::BP_CarLiftPoliceCar_C_SetInteraction Parms{};
-
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_CarLiftPoliceCar.BP_CarLiftPoliceCar_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_CarLiftPoliceCar_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CarLiftPoliceCar_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

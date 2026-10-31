@@ -25,8 +25,8 @@ public:
 	class USBZPropDamageComponent*                SBZPropDamage;                                     // 0x0438(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_LootContainer_CardboardBox_01_C_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
 	void ExecuteUbergraph_BP_LootContainer_CardboardBox_01_C(int32 EntryPoint);
+	void BndEvt__BP_LootContainer_CardboardBox_01_C_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
 
 public:
 	static class UClass* StaticClass()
@@ -42,5 +42,6 @@ public:
 		return GetDefaultObjImpl<ABP_LootContainer_CardboardBox_01_C_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LootContainer_CardboardBox_01_C_C;
 
 SDK_NAMESPACE_END

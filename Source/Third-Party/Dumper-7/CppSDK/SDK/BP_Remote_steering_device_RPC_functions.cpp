@@ -16,167 +16,229 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.BndEvt__BP_Remote_steering_device_Interactable_Hack_Interaction_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Remote_steering_device_RPC_C::BndEvt__BP_Remote_steering_device_Interactable_Hack_Interaction_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Remote_steering_device_RPC_C", "BndEvt__BP_Remote_steering_device_Interactable_Hack_Interaction_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_Remote_steering_device_RPC_C_BndEvt__BP_Remote_steering_device_Interactable_Hack_Interaction_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.BndEvt__BP_Remote_steering_device_Interactable_Start_Hacking_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Remote_steering_device_RPC_C::BndEvt__BP_Remote_steering_device_Interactable_Start_Hacking_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Remote_steering_device_RPC_C", "BndEvt__BP_Remote_steering_device_Interactable_Start_Hacking_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_Remote_steering_device_RPC_C_BndEvt__BP_Remote_steering_device_Interactable_Start_Hacking_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.BndEvt__BP_SabotagePoint_ArmoredTruck_interactable_fix_remote_steering_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Remote_steering_device_RPC_C::BndEvt__BP_SabotagePoint_ArmoredTruck_interactable_fix_remote_steering_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Remote_steering_device_RPC_C", "BndEvt__BP_SabotagePoint_ArmoredTruck_interactable_fix_remote_steering_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_Remote_steering_device_RPC_C_BndEvt__BP_SabotagePoint_ArmoredTruck_interactable_fix_remote_steering_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.BndEvt__BP_SabotagePoint_ArmoredTruck_Interactable_Start_Escort_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Remote_steering_device_RPC_C::BndEvt__BP_SabotagePoint_ArmoredTruck_Interactable_Start_Escort_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Remote_steering_device_RPC_C", "BndEvt__BP_SabotagePoint_ArmoredTruck_Interactable_Start_Escort_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_Remote_steering_device_RPC_C_BndEvt__BP_SabotagePoint_ArmoredTruck_Interactable_Start_Escort_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Device_Hacking
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Show_Standby
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Remote_steering_device_RPC_C::Device_Hacking()
+void ABP_Remote_steering_device_RPC_C::Show_Standby()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Remote_steering_device_RPC_C", "Device_Hacking");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Show_Standby", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Device_show
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.show_Interrupt_Screen
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Remote_steering_device_RPC_C::Device_show()
+void ABP_Remote_steering_device_RPC_C::show_Interrupt_Screen()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Remote_steering_device_RPC_C", "Device_show");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"show_Interrupt_Screen", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Enable_Fix_Interaction
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Set_screen_Standby
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Remote_steering_device_RPC_C::Enable_Fix_Interaction()
+void ABP_Remote_steering_device_RPC_C::Set_screen_Standby()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Remote_steering_device_RPC_C", "Enable_Fix_Interaction");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set_screen_Standby", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Enable_hack_interaction
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Set_screen_Interrupt
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Remote_steering_device_RPC_C::Enable_hack_interaction()
+void ABP_Remote_steering_device_RPC_C::Set_screen_Interrupt()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Remote_steering_device_RPC_C", "Enable_hack_interaction");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set_screen_Interrupt", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Enable_Initiate_Interaction
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Set_screen_Hack
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Remote_steering_device_RPC_C::Enable_Initiate_Interaction()
+void ABP_Remote_steering_device_RPC_C::Set_screen_Hack()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set_screen_Hack", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Remote_steering_device_RPC_C", "Enable_Initiate_Interaction");
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Set_Screen_escort
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_Remote_steering_device_RPC_C::Set_Screen_escort()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set_Screen_escort", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.RPC_Set_Screen_Standby_Server
+// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
+
+void ABP_Remote_steering_device_RPC_C::RPC_Set_Screen_Standby_Server()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RPC_Set_Screen_Standby_Server", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.RPC_Set_Screen_Standby_Client
+// (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
+
+void ABP_Remote_steering_device_RPC_C::RPC_Set_Screen_Standby_Client()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RPC_Set_Screen_Standby_Client", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.RPC_Set_Screen_Interupt_Server
+// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
+
+void ABP_Remote_steering_device_RPC_C::RPC_Set_Screen_Interupt_Server()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RPC_Set_Screen_Interupt_Server", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.RPC_Set_Screen_Interupt_Client
+// (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
+
+void ABP_Remote_steering_device_RPC_C::RPC_Set_Screen_Interupt_Client()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RPC_Set_Screen_Interupt_Client", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.RPC_Set_Screen_Hacking_Server
+// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
+
+void ABP_Remote_steering_device_RPC_C::RPC_Set_Screen_Hacking_Server()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RPC_Set_Screen_Hacking_Server", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.RPC_Set_Screen_Hacking_Client
+// (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
+
+void ABP_Remote_steering_device_RPC_C::RPC_Set_Screen_Hacking_Client()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RPC_Set_Screen_Hacking_Client", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.RPC_Set_Screen_Escort_Server
+// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
+
+void ABP_Remote_steering_device_RPC_C::RPC_Set_Screen_Escort_Server()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RPC_Set_Screen_Escort_Server", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.RPC_Set_Screen_Escort_Client
+// (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
+
+void ABP_Remote_steering_device_RPC_C::RPC_Set_Screen_Escort_Client()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RPC_Set_Screen_Escort_Client", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.RPC_Device_show_Server
+// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
+
+void ABP_Remote_steering_device_RPC_C::RPC_Device_show_Server()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RPC_Device_show_Server", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.RPC_Device_show_client
+// (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
+
+void ABP_Remote_steering_device_RPC_C::RPC_Device_show_client()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RPC_Device_show_client", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Remove_Marker
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_Remote_steering_device_RPC_C::Remove_Marker()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Remove_Marker", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_Remote_steering_device_RPC_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.OnRep_is_visible
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_Remote_steering_device_RPC_C::OnRep_is_visible()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRep_is_visible", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -189,10 +251,8 @@ void ABP_Remote_steering_device_RPC_C::Enable_Initiate_Interaction()
 
 void ABP_Remote_steering_device_RPC_C::ExecuteUbergraph_BP_Remote_steering_device_RPC(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Remote_steering_device_RPC_C", "ExecuteUbergraph_BP_Remote_steering_device_RPC");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Remote_steering_device_RPC_C", "ExecuteUbergraph_BP_Remote_steering_device_RPC", FuncInfo);
 
 	Params::BP_Remote_steering_device_RPC_C_ExecuteUbergraph_BP_Remote_steering_device_RPC Parms{};
 
@@ -202,269 +262,151 @@ void ABP_Remote_steering_device_RPC_C::ExecuteUbergraph_BP_Remote_steering_devic
 }
 
 
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.OnRep_is_visible
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_Remote_steering_device_RPC_C::OnRep_is_visible()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Remote_steering_device_RPC_C", "OnRep_is_visible");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Remote_steering_device_RPC_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Remote_steering_device_RPC_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Remove_Marker
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Enable_Initiate_Interaction
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Remote_steering_device_RPC_C::Remove_Marker()
+void ABP_Remote_steering_device_RPC_C::Enable_Initiate_Interaction()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Remote_steering_device_RPC_C", "Remove_Marker");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Enable_Initiate_Interaction", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.RPC_Device_show_client
-// (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
-
-void ABP_Remote_steering_device_RPC_C::RPC_Device_show_client()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Remote_steering_device_RPC_C", "RPC_Device_show_client");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.RPC_Device_show_Server
-// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
-
-void ABP_Remote_steering_device_RPC_C::RPC_Device_show_Server()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Remote_steering_device_RPC_C", "RPC_Device_show_Server");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.RPC_Set_Screen_Escort_Client
-// (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
-
-void ABP_Remote_steering_device_RPC_C::RPC_Set_Screen_Escort_Client()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Remote_steering_device_RPC_C", "RPC_Set_Screen_Escort_Client");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.RPC_Set_Screen_Escort_Server
-// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
-
-void ABP_Remote_steering_device_RPC_C::RPC_Set_Screen_Escort_Server()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Remote_steering_device_RPC_C", "RPC_Set_Screen_Escort_Server");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.RPC_Set_Screen_Hacking_Client
-// (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
-
-void ABP_Remote_steering_device_RPC_C::RPC_Set_Screen_Hacking_Client()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Remote_steering_device_RPC_C", "RPC_Set_Screen_Hacking_Client");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.RPC_Set_Screen_Hacking_Server
-// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
-
-void ABP_Remote_steering_device_RPC_C::RPC_Set_Screen_Hacking_Server()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Remote_steering_device_RPC_C", "RPC_Set_Screen_Hacking_Server");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.RPC_Set_Screen_Interupt_Client
-// (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
-
-void ABP_Remote_steering_device_RPC_C::RPC_Set_Screen_Interupt_Client()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Remote_steering_device_RPC_C", "RPC_Set_Screen_Interupt_Client");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.RPC_Set_Screen_Interupt_Server
-// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
-
-void ABP_Remote_steering_device_RPC_C::RPC_Set_Screen_Interupt_Server()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Remote_steering_device_RPC_C", "RPC_Set_Screen_Interupt_Server");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.RPC_Set_Screen_Standby_Client
-// (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
-
-void ABP_Remote_steering_device_RPC_C::RPC_Set_Screen_Standby_Client()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Remote_steering_device_RPC_C", "RPC_Set_Screen_Standby_Client");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.RPC_Set_Screen_Standby_Server
-// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
-
-void ABP_Remote_steering_device_RPC_C::RPC_Set_Screen_Standby_Server()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Remote_steering_device_RPC_C", "RPC_Set_Screen_Standby_Server");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Set_Screen_escort
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Enable_hack_interaction
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Remote_steering_device_RPC_C::Set_Screen_escort()
+void ABP_Remote_steering_device_RPC_C::Enable_hack_interaction()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Remote_steering_device_RPC_C", "Set_Screen_escort");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Enable_hack_interaction", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Set_screen_Hack
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Enable_Fix_Interaction
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Remote_steering_device_RPC_C::Set_screen_Hack()
+void ABP_Remote_steering_device_RPC_C::Enable_Fix_Interaction()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Remote_steering_device_RPC_C", "Set_screen_Hack");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Enable_Fix_Interaction", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Set_screen_Interrupt
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Device_show
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Remote_steering_device_RPC_C::Set_screen_Interrupt()
+void ABP_Remote_steering_device_RPC_C::Device_show()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Remote_steering_device_RPC_C", "Set_screen_Interrupt");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Device_show", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Set_screen_Standby
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Device_Hacking
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Remote_steering_device_RPC_C::Set_screen_Standby()
+void ABP_Remote_steering_device_RPC_C::Device_Hacking()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Remote_steering_device_RPC_C", "Set_screen_Standby");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Device_Hacking", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.show_Interrupt_Screen
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.BndEvt__BP_SabotagePoint_ArmoredTruck_Interactable_Start_Escort_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Remote_steering_device_RPC_C::show_Interrupt_Screen()
+void ABP_Remote_steering_device_RPC_C::BndEvt__BP_SabotagePoint_ArmoredTruck_Interactable_Start_Escort_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_SabotagePoint_ArmoredTruck_Interactable_Start_Escort_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Remote_steering_device_RPC_C", "show_Interrupt_Screen");
+	Params::BP_Remote_steering_device_RPC_C_BndEvt__BP_SabotagePoint_ArmoredTruck_Interactable_Start_Escort_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Show_Standby
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.BndEvt__BP_SabotagePoint_ArmoredTruck_interactable_fix_remote_steering_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Remote_steering_device_RPC_C::Show_Standby()
+void ABP_Remote_steering_device_RPC_C::BndEvt__BP_SabotagePoint_ArmoredTruck_interactable_fix_remote_steering_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_SabotagePoint_ArmoredTruck_interactable_fix_remote_steering_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Remote_steering_device_RPC_C", "Show_Standby");
+	Params::BP_Remote_steering_device_RPC_C_BndEvt__BP_SabotagePoint_ArmoredTruck_interactable_fix_remote_steering_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.BndEvt__BP_Remote_steering_device_Interactable_Start_Hacking_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Remote_steering_device_RPC_C::BndEvt__BP_Remote_steering_device_Interactable_Start_Hacking_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Remote_steering_device_Interactable_Start_Hacking_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_Remote_steering_device_RPC_C_BndEvt__BP_Remote_steering_device_Interactable_Start_Hacking_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.BndEvt__BP_Remote_steering_device_Interactable_Hack_Interaction_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Remote_steering_device_RPC_C::BndEvt__BP_Remote_steering_device_Interactable_Hack_Interaction_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Remote_steering_device_Interactable_Hack_Interaction_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_Remote_steering_device_RPC_C_BndEvt__BP_Remote_steering_device_Interactable_Hack_Interaction_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

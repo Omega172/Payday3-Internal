@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_Cuttable_Skylight_Rectangular_01_ArtGallery_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Cuttable_Skylight_Rectangular_01_ArtGallery_C;
 
 SDK_NAMESPACE_END

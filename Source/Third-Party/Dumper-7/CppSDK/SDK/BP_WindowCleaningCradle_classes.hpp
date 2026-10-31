@@ -63,13 +63,13 @@ public:
 	int32                                         MarkerID;                                          // 0x0520(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_EscapeVan_SBZSecuredBagVisualize_K2Node_ComponentBoundEvent_0_SBZSecuredBagVisualizeBagAddedSignature__DelegateSignature(const class USBZBagType* BagType);
-	void BP_OnStateChanged(ESBZTimerState NewState, ESBZTimerState OldState, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_WindowCleaningCradle(int32 EntryPoint);
-	class FText GetMarkerText();
-	void ReceiveTick(float DeltaSeconds);
-	void SetPlatformLocation();
 	void ShowMarker();
+	void SetPlatformLocation();
+	void ReceiveTick(float DeltaSeconds_ReceiveTick);
+	class FText GetMarkerText();
+	void ExecuteUbergraph_BP_WindowCleaningCradle(int32 EntryPoint);
+	void BP_OnStateChanged(ESBZTimerState NewState_BP_OnStateChanged, ESBZTimerState OldState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged);
+	void BndEvt__BP_EscapeVan_SBZSecuredBagVisualize_K2Node_ComponentBoundEvent_0_SBZSecuredBagVisualizeBagAddedSignature__DelegateSignature(const class USBZBagType* BagType);
 
 public:
 	static class UClass* StaticClass()
@@ -85,5 +85,6 @@ public:
 		return GetDefaultObjImpl<ABP_WindowCleaningCradle_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_WindowCleaningCradle_C;
 
 SDK_NAMESPACE_END

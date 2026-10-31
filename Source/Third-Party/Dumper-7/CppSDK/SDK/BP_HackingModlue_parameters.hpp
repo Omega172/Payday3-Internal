@@ -21,9 +21,10 @@ SDK_PARAM_NAMESPACE_START
 struct BP_HackingModlue_C_GetHackableLocation final
 {
 public:
-	struct FVector                                ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                ReturnValue_GetHackableLocation;                   // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_HackingModlue_C_GetHackableLocation;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

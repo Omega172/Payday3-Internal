@@ -16,85 +16,31 @@
 
 SDK_NAMESPACE_START
 
-// Function E_Shiya_EXT_Street_Arch.E_Shiya_EXT_Street_Arch_C.BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT49_8_K2Node_ActorBoundEvent_0_onGlassDestroyed__DelegateSignature
-// (BlueprintEvent)
+// Function E_Shiya_EXT_Street_Arch.E_Shiya_EXT_Street_Arch_C.ExecuteUbergraph_E_Shiya_EXT_Street_Arch
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AE_Shiya_EXT_Street_Arch_C::BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT49_8_K2Node_ActorBoundEvent_0_onGlassDestroyed__DelegateSignature()
+void AE_Shiya_EXT_Street_Arch_C::ExecuteUbergraph_E_Shiya_EXT_Street_Arch(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "E_Shiya_EXT_Street_Arch_C", "ExecuteUbergraph_E_Shiya_EXT_Street_Arch", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Shiya_EXT_Street_Arch_C", "BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT49_8_K2Node_ActorBoundEvent_0_onGlassDestroyed__DelegateSignature");
+	Params::E_Shiya_EXT_Street_Arch_C_ExecuteUbergraph_E_Shiya_EXT_Street_Arch Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function E_Shiya_EXT_Street_Arch.E_Shiya_EXT_Street_Arch_C.BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT50_9_K2Node_ActorBoundEvent_3_onGlassDestroyed__DelegateSignature
+// Function E_Shiya_EXT_Street_Arch.E_Shiya_EXT_Street_Arch_C.BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT56_K2Node_ActorBoundEvent_4_onGlassDestroyed__DelegateSignature
 // (BlueprintEvent)
 
-void AE_Shiya_EXT_Street_Arch_C::BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT50_9_K2Node_ActorBoundEvent_3_onGlassDestroyed__DelegateSignature()
+void AE_Shiya_EXT_Street_Arch_C::BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT56_K2Node_ActorBoundEvent_4_onGlassDestroyed__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Shiya_EXT_Street_Arch_C", "BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT50_9_K2Node_ActorBoundEvent_3_onGlassDestroyed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function E_Shiya_EXT_Street_Arch.E_Shiya_EXT_Street_Arch_C.BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT51_16_K2Node_ActorBoundEvent_5_onGlassDestroyed__DelegateSignature
-// (BlueprintEvent)
-
-void AE_Shiya_EXT_Street_Arch_C::BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT51_16_K2Node_ActorBoundEvent_5_onGlassDestroyed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Shiya_EXT_Street_Arch_C", "BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT51_16_K2Node_ActorBoundEvent_5_onGlassDestroyed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function E_Shiya_EXT_Street_Arch.E_Shiya_EXT_Street_Arch_C.BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT52_10_K2Node_ActorBoundEvent_2_onGlassDestroyed__DelegateSignature
-// (BlueprintEvent)
-
-void AE_Shiya_EXT_Street_Arch_C::BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT52_10_K2Node_ActorBoundEvent_2_onGlassDestroyed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Shiya_EXT_Street_Arch_C", "BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT52_10_K2Node_ActorBoundEvent_2_onGlassDestroyed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function E_Shiya_EXT_Street_Arch.E_Shiya_EXT_Street_Arch_C.BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT53_11_K2Node_ActorBoundEvent_1_onGlassDestroyed__DelegateSignature
-// (BlueprintEvent)
-
-void AE_Shiya_EXT_Street_Arch_C::BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT53_11_K2Node_ActorBoundEvent_1_onGlassDestroyed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Shiya_EXT_Street_Arch_C", "BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT53_11_K2Node_ActorBoundEvent_1_onGlassDestroyed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function E_Shiya_EXT_Street_Arch.E_Shiya_EXT_Street_Arch_C.BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT54_K2Node_ActorBoundEvent_7_onGlassDestroyed__DelegateSignature
-// (BlueprintEvent)
-
-void AE_Shiya_EXT_Street_Arch_C::BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT54_K2Node_ActorBoundEvent_7_onGlassDestroyed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Shiya_EXT_Street_Arch_C", "BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT54_K2Node_ActorBoundEvent_7_onGlassDestroyed__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT56_K2Node_ActorBoundEvent_4_onGlassDestroyed__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -105,46 +51,82 @@ void AE_Shiya_EXT_Street_Arch_C::BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_
 
 void AE_Shiya_EXT_Street_Arch_C::BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT55_K2Node_ActorBoundEvent_6_onGlassDestroyed__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Shiya_EXT_Street_Arch_C", "BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT55_K2Node_ActorBoundEvent_6_onGlassDestroyed__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT55_K2Node_ActorBoundEvent_6_onGlassDestroyed__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function E_Shiya_EXT_Street_Arch.E_Shiya_EXT_Street_Arch_C.BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT56_K2Node_ActorBoundEvent_4_onGlassDestroyed__DelegateSignature
+// Function E_Shiya_EXT_Street_Arch.E_Shiya_EXT_Street_Arch_C.BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT54_K2Node_ActorBoundEvent_7_onGlassDestroyed__DelegateSignature
 // (BlueprintEvent)
 
-void AE_Shiya_EXT_Street_Arch_C::BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT56_K2Node_ActorBoundEvent_4_onGlassDestroyed__DelegateSignature()
+void AE_Shiya_EXT_Street_Arch_C::BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT54_K2Node_ActorBoundEvent_7_onGlassDestroyed__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Shiya_EXT_Street_Arch_C", "BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT56_K2Node_ActorBoundEvent_4_onGlassDestroyed__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT54_K2Node_ActorBoundEvent_7_onGlassDestroyed__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function E_Shiya_EXT_Street_Arch.E_Shiya_EXT_Street_Arch_C.ExecuteUbergraph_E_Shiya_EXT_Street_Arch
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function E_Shiya_EXT_Street_Arch.E_Shiya_EXT_Street_Arch_C.BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT53_11_K2Node_ActorBoundEvent_1_onGlassDestroyed__DelegateSignature
+// (BlueprintEvent)
 
-void AE_Shiya_EXT_Street_Arch_C::ExecuteUbergraph_E_Shiya_EXT_Street_Arch(int32 EntryPoint)
+void AE_Shiya_EXT_Street_Arch_C::BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT53_11_K2Node_ActorBoundEvent_1_onGlassDestroyed__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT53_11_K2Node_ActorBoundEvent_1_onGlassDestroyed__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Shiya_EXT_Street_Arch_C", "ExecuteUbergraph_E_Shiya_EXT_Street_Arch");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::E_Shiya_EXT_Street_Arch_C_ExecuteUbergraph_E_Shiya_EXT_Street_Arch Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+// Function E_Shiya_EXT_Street_Arch.E_Shiya_EXT_Street_Arch_C.BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT52_10_K2Node_ActorBoundEvent_2_onGlassDestroyed__DelegateSignature
+// (BlueprintEvent)
 
-	UObject::ProcessEvent(Func, &Parms);
+void AE_Shiya_EXT_Street_Arch_C::BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT52_10_K2Node_ActorBoundEvent_2_onGlassDestroyed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT52_10_K2Node_ActorBoundEvent_2_onGlassDestroyed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function E_Shiya_EXT_Street_Arch.E_Shiya_EXT_Street_Arch_C.BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT51_16_K2Node_ActorBoundEvent_5_onGlassDestroyed__DelegateSignature
+// (BlueprintEvent)
+
+void AE_Shiya_EXT_Street_Arch_C::BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT51_16_K2Node_ActorBoundEvent_5_onGlassDestroyed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT51_16_K2Node_ActorBoundEvent_5_onGlassDestroyed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function E_Shiya_EXT_Street_Arch.E_Shiya_EXT_Street_Arch_C.BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT50_9_K2Node_ActorBoundEvent_3_onGlassDestroyed__DelegateSignature
+// (BlueprintEvent)
+
+void AE_Shiya_EXT_Street_Arch_C::BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT50_9_K2Node_ActorBoundEvent_3_onGlassDestroyed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT50_9_K2Node_ActorBoundEvent_3_onGlassDestroyed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function E_Shiya_EXT_Street_Arch.E_Shiya_EXT_Street_Arch_C.BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT49_8_K2Node_ActorBoundEvent_0_onGlassDestroyed__DelegateSignature
+// (BlueprintEvent)
+
+void AE_Shiya_EXT_Street_Arch_C::BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT49_8_K2Node_ActorBoundEvent_0_onGlassDestroyed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT49_8_K2Node_ActorBoundEvent_0_onGlassDestroyed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -23,6 +23,7 @@ public:
 	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_E_Stonk_MainRoom_Prop_C_ExecuteUbergraph_E_Stonk_MainRoom_Prop;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

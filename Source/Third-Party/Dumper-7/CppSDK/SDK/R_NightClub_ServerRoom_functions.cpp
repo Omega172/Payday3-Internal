@@ -16,113 +16,61 @@
 
 SDK_NAMESPACE_START
 
-// Function R_NightClub_ServerRoom.R_NightClub_ServerRoom_C.AddTrackedPawnEyescanner
+// Function R_NightClub_ServerRoom.R_NightClub_ServerRoom_C.ShowServerRoomWP
 // (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class ASBZAICharacter*                  NPC                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AR_NightClub_ServerRoom_C::AddTrackedPawnEyescanner(class ASBZAICharacter* NPC)
+void AR_NightClub_ServerRoom_C::ShowServerRoomWP()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_NightClub_ServerRoom_C", "AddTrackedPawnEyescanner");
-
-	Params::R_NightClub_ServerRoom_C_AddTrackedPawnEyescanner Parms{};
-
-	Parms.NPC = NPC;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_NightClub_ServerRoom.R_NightClub_ServerRoom_C.BndEvt__R_NightClub_ServerRoom_BP_EyeScanner_2_K2Node_ActorBoundEvent_4_SBZOnEyeScannerStateChanged__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// ESBZEyeScannerState                     Oldstate                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZEyeScannerState                     NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AR_NightClub_ServerRoom_C::BndEvt__R_NightClub_ServerRoom_BP_EyeScanner_2_K2Node_ActorBoundEvent_4_SBZOnEyeScannerStateChanged__DelegateSignature(ESBZEyeScannerState Oldstate, ESBZEyeScannerState NewState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_NightClub_ServerRoom_C", "BndEvt__R_NightClub_ServerRoom_BP_EyeScanner_2_K2Node_ActorBoundEvent_4_SBZOnEyeScannerStateChanged__DelegateSignature");
-
-	Params::R_NightClub_ServerRoom_C_BndEvt__R_NightClub_ServerRoom_BP_EyeScanner_2_K2Node_ActorBoundEvent_4_SBZOnEyeScannerStateChanged__DelegateSignature Parms{};
-
-	Parms.Oldstate = Oldstate;
-	Parms.NewState = NewState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_NightClub_ServerRoom.R_NightClub_ServerRoom_C.BndEvt__R_NightClub_ServerRoom_BP_InteractablePainting_LowValue_2_K2Node_ActorBoundEvent_2_SBZBagPickedUp__DelegateSignature
-// (BlueprintEvent)
-
-void AR_NightClub_ServerRoom_C::BndEvt__R_NightClub_ServerRoom_BP_InteractablePainting_LowValue_2_K2Node_ActorBoundEvent_2_SBZBagPickedUp__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_NightClub_ServerRoom_C", "BndEvt__R_NightClub_ServerRoom_BP_InteractablePainting_LowValue_2_K2Node_ActorBoundEvent_2_SBZBagPickedUp__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ShowServerRoomWP", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function R_NightClub_ServerRoom.R_NightClub_ServerRoom_C.BndEvt__R_NightClub_ServerRoom_BP_InteractableStaticMeshDoor_2_K2Node_ActorBoundEvent_1_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AR_NightClub_ServerRoom_C::BndEvt__R_NightClub_ServerRoom_BP_InteractableStaticMeshDoor_2_K2Node_ActorBoundEvent_1_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_NightClub_ServerRoom_C", "BndEvt__R_NightClub_ServerRoom_BP_InteractableStaticMeshDoor_2_K2Node_ActorBoundEvent_1_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::R_NightClub_ServerRoom_C_BndEvt__R_NightClub_ServerRoom_BP_InteractableStaticMeshDoor_2_K2Node_ActorBoundEvent_1_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_NightClub_ServerRoom.R_NightClub_ServerRoom_C.BndEvt__R_NightClub_ServerRoom_SBZPlayerTriggerVolume_PlayerFoundServerRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AR_NightClub_ServerRoom_C::BndEvt__R_NightClub_ServerRoom_SBZPlayerTriggerVolume_PlayerFoundServerRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_NightClub_ServerRoom_C", "BndEvt__R_NightClub_ServerRoom_SBZPlayerTriggerVolume_PlayerFoundServerRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::R_NightClub_ServerRoom_C_BndEvt__R_NightClub_ServerRoom_SBZPlayerTriggerVolume_PlayerFoundServerRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_NightClub_ServerRoom.R_NightClub_ServerRoom_C.CloseCryptoWalletDoor
+// Function R_NightClub_ServerRoom.R_NightClub_ServerRoom_C.RemoveServerRoomWP
 // (BlueprintCallable, BlueprintEvent)
 
-void AR_NightClub_ServerRoom_C::CloseCryptoWalletDoor()
+void AR_NightClub_ServerRoom_C::RemoveServerRoomWP()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RemoveServerRoomWP", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_NightClub_ServerRoom_C", "CloseCryptoWalletDoor");
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_NightClub_ServerRoom.R_NightClub_ServerRoom_C.PlayerCutWires
+// (Net, NetServer, BlueprintCallable, BlueprintEvent)
+
+void AR_NightClub_ServerRoom_C::PlayerCutWires()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayerCutWires", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_NightClub_ServerRoom.R_NightClub_ServerRoom_C.OpenCryptoWalletDoor
+// (BlueprintCallable, BlueprintEvent)
+
+void AR_NightClub_ServerRoom_C::OpenCryptoWalletDoor()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OpenCryptoWalletDoor", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_NightClub_ServerRoom.R_NightClub_ServerRoom_C.OnRandomPlacementStarted
+// (Event, Public, BlueprintEvent)
+
+void AR_NightClub_ServerRoom_C::OnRandomPlacementStarted()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRandomPlacementStarted", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -135,10 +83,8 @@ void AR_NightClub_ServerRoom_C::CloseCryptoWalletDoor()
 
 void AR_NightClub_ServerRoom_C::ExecuteUbergraph_R_NightClub_ServerRoom(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_NightClub_ServerRoom_C", "ExecuteUbergraph_R_NightClub_ServerRoom");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "R_NightClub_ServerRoom_C", "ExecuteUbergraph_R_NightClub_ServerRoom", FuncInfo);
 
 	Params::R_NightClub_ServerRoom_C_ExecuteUbergraph_R_NightClub_ServerRoom Parms{};
 
@@ -148,73 +94,103 @@ void AR_NightClub_ServerRoom_C::ExecuteUbergraph_R_NightClub_ServerRoom(int32 En
 }
 
 
-// Function R_NightClub_ServerRoom.R_NightClub_ServerRoom_C.OnRandomPlacementStarted
-// (Event, Public, BlueprintEvent)
-
-void AR_NightClub_ServerRoom_C::OnRandomPlacementStarted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_NightClub_ServerRoom_C", "OnRandomPlacementStarted");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function R_NightClub_ServerRoom.R_NightClub_ServerRoom_C.OpenCryptoWalletDoor
+// Function R_NightClub_ServerRoom.R_NightClub_ServerRoom_C.CloseCryptoWalletDoor
 // (BlueprintCallable, BlueprintEvent)
 
-void AR_NightClub_ServerRoom_C::OpenCryptoWalletDoor()
+void AR_NightClub_ServerRoom_C::CloseCryptoWalletDoor()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_NightClub_ServerRoom_C", "OpenCryptoWalletDoor");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CloseCryptoWalletDoor", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function R_NightClub_ServerRoom.R_NightClub_ServerRoom_C.PlayerCutWires
-// (Net, NetServer, BlueprintCallable, BlueprintEvent)
+// Function R_NightClub_ServerRoom.R_NightClub_ServerRoom_C.BndEvt__R_NightClub_ServerRoom_SBZPlayerTriggerVolume_PlayerFoundServerRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AR_NightClub_ServerRoom_C::PlayerCutWires()
+void AR_NightClub_ServerRoom_C::BndEvt__R_NightClub_ServerRoom_SBZPlayerTriggerVolume_PlayerFoundServerRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_NightClub_ServerRoom_SBZPlayerTriggerVolume_PlayerFoundServerRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_NightClub_ServerRoom_C", "PlayerCutWires");
+	Params::R_NightClub_ServerRoom_C_BndEvt__R_NightClub_ServerRoom_SBZPlayerTriggerVolume_PlayerFoundServerRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function R_NightClub_ServerRoom.R_NightClub_ServerRoom_C.BndEvt__R_NightClub_ServerRoom_BP_InteractableStaticMeshDoor_2_K2Node_ActorBoundEvent_1_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AR_NightClub_ServerRoom_C::BndEvt__R_NightClub_ServerRoom_BP_InteractableStaticMeshDoor_2_K2Node_ActorBoundEvent_1_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_NightClub_ServerRoom_BP_InteractableStaticMeshDoor_2_K2Node_ActorBoundEvent_1_SBZGateStateChangedDelegate__DelegateSignature", FnName));
+
+	Params::R_NightClub_ServerRoom_C_BndEvt__R_NightClub_ServerRoom_BP_InteractableStaticMeshDoor_2_K2Node_ActorBoundEvent_1_SBZGateStateChangedDelegate__DelegateSignature Parms{};
+
+	Parms.OldState = OldState;
+	Parms.State = State;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function R_NightClub_ServerRoom.R_NightClub_ServerRoom_C.BndEvt__R_NightClub_ServerRoom_BP_InteractablePainting_LowValue_2_K2Node_ActorBoundEvent_2_SBZBagPickedUp__DelegateSignature
+// (BlueprintEvent)
+
+void AR_NightClub_ServerRoom_C::BndEvt__R_NightClub_ServerRoom_BP_InteractablePainting_LowValue_2_K2Node_ActorBoundEvent_2_SBZBagPickedUp__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_NightClub_ServerRoom_BP_InteractablePainting_LowValue_2_K2Node_ActorBoundEvent_2_SBZBagPickedUp__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function R_NightClub_ServerRoom.R_NightClub_ServerRoom_C.RemoveServerRoomWP
+// Function R_NightClub_ServerRoom.R_NightClub_ServerRoom_C.BndEvt__R_NightClub_ServerRoom_BP_EyeScanner_2_K2Node_ActorBoundEvent_4_SBZOnEyeScannerStateChanged__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+// Parameters:
+// ESBZEyeScannerState                     Oldstate                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZEyeScannerState                     NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AR_NightClub_ServerRoom_C::BndEvt__R_NightClub_ServerRoom_BP_EyeScanner_2_K2Node_ActorBoundEvent_4_SBZOnEyeScannerStateChanged__DelegateSignature(ESBZEyeScannerState Oldstate, ESBZEyeScannerState NewState)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_NightClub_ServerRoom_BP_EyeScanner_2_K2Node_ActorBoundEvent_4_SBZOnEyeScannerStateChanged__DelegateSignature", FnName));
+
+	Params::R_NightClub_ServerRoom_C_BndEvt__R_NightClub_ServerRoom_BP_EyeScanner_2_K2Node_ActorBoundEvent_4_SBZOnEyeScannerStateChanged__DelegateSignature Parms{};
+
+	Parms.Oldstate = Oldstate;
+	Parms.NewState = NewState;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function R_NightClub_ServerRoom.R_NightClub_ServerRoom_C.AddTrackedPawnEyescanner
 // (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ASBZAICharacter*                  NPC                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AR_NightClub_ServerRoom_C::RemoveServerRoomWP()
+void AR_NightClub_ServerRoom_C::AddTrackedPawnEyescanner(class ASBZAICharacter* NPC)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AddTrackedPawnEyescanner", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_NightClub_ServerRoom_C", "RemoveServerRoomWP");
+	Params::R_NightClub_ServerRoom_C_AddTrackedPawnEyescanner Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Parms.NPC = NPC;
 
-
-// Function R_NightClub_ServerRoom.R_NightClub_ServerRoom_C.ShowServerRoomWP
-// (BlueprintCallable, BlueprintEvent)
-
-void AR_NightClub_ServerRoom_C::ShowServerRoomWP()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_NightClub_ServerRoom_C", "ShowServerRoomWP");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

@@ -40,5 +40,6 @@ public:
 		return GetDefaultObjImpl<ABPL_SquareModern_128x65_Bebe_Amber_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_SquareModern_128x65_Bebe_Amber_C;
 
 SDK_NAMESPACE_END

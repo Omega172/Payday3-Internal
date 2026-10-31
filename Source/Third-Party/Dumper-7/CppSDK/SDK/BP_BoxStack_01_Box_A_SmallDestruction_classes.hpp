@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_BoxStack_01_Box_A_SmallDestruction_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BoxStack_01_Box_A_SmallDestruction_C;
 
 SDK_NAMESPACE_END

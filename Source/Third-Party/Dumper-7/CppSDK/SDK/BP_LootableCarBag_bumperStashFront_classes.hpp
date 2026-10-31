@@ -42,5 +42,6 @@ public:
 		return GetDefaultObjImpl<ABP_LootableCarBag_bumperStashFront_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LootableCarBag_bumperStashFront_C;
 
 SDK_NAMESPACE_END

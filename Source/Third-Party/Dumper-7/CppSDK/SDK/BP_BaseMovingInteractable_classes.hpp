@@ -34,11 +34,11 @@ public:
 	struct FVector                                IniitialPosition;                                  // 0x0390(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnStateChanged(bool bNewState, bool bDoCosmentics);
-	void ExecuteUbergraph_BP_BaseMovingInteractable(int32 EntryPoint);
-	void MoveTimeLine__FinishedFunc();
-	void MoveTimeLine__UpdateFunc();
 	void UserConstructionScript();
+	void MoveTimeLine__UpdateFunc();
+	void MoveTimeLine__FinishedFunc();
+	void ExecuteUbergraph_BP_BaseMovingInteractable(int32 EntryPoint);
+	void BP_OnStateChanged(bool bNewState, bool bDoCosmentics);
 
 public:
 	static class UClass* StaticClass()
@@ -54,5 +54,6 @@ public:
 		return GetDefaultObjImpl<ABP_BaseMovingInteractable_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BaseMovingInteractable_C;
 
 SDK_NAMESPACE_END

@@ -16,121 +16,37 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_DAT_ElectricBox_01.BP_DAT_ElectricBox_01_C.BndEvt__BP_DAT_ElectricBox_01_SBZInteractable_cable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// Function BP_DAT_ElectricBox_01.BP_DAT_ElectricBox_01_C.openDoor_timeline__UpdateFunc
 // (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_DAT_ElectricBox_01_C::BndEvt__BP_DAT_ElectricBox_01_SBZInteractable_cable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_DAT_ElectricBox_01_C::openDoor_timeline__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_ElectricBox_01_C", "BndEvt__BP_DAT_ElectricBox_01_SBZInteractable_cable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_DAT_ElectricBox_01_C_BndEvt__BP_DAT_ElectricBox_01_SBZInteractable_cable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_DAT_ElectricBox_01.BP_DAT_ElectricBox_01_C.BndEvt__BP_DAT_ElectricBox_01_SBZInteractable_cable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_DAT_ElectricBox_01_C::BndEvt__BP_DAT_ElectricBox_01_SBZInteractable_cable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_ElectricBox_01_C", "BndEvt__BP_DAT_ElectricBox_01_SBZInteractable_cable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_DAT_ElectricBox_01_C_BndEvt__BP_DAT_ElectricBox_01_SBZInteractable_cable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_DAT_ElectricBox_01.BP_DAT_ElectricBox_01_C.BndEvt__BP_DAT_ElectricBox_01_SBZInteractable_cable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_DAT_ElectricBox_01_C::BndEvt__BP_DAT_ElectricBox_01_SBZInteractable_cable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_ElectricBox_01_C", "BndEvt__BP_DAT_ElectricBox_01_SBZInteractable_cable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_DAT_ElectricBox_01_C_BndEvt__BP_DAT_ElectricBox_01_SBZInteractable_cable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_DAT_ElectricBox_01.BP_DAT_ElectricBox_01_C.BP_OnMiniGameSuccess
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_DAT_ElectricBox_01_C::BP_OnMiniGameSuccess(bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_ElectricBox_01_C", "BP_OnMiniGameSuccess");
-
-	Params::BP_DAT_ElectricBox_01_C_BP_OnMiniGameSuccess Parms{};
-
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_DAT_ElectricBox_01.BP_DAT_ElectricBox_01_C.disableInteraction
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_DAT_ElectricBox_01_C::disableInteraction()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_ElectricBox_01_C", "disableInteraction");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"openDoor_timeline__UpdateFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_DAT_ElectricBox_01.BP_DAT_ElectricBox_01_C.enableInteraction
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_DAT_ElectricBox_01.BP_DAT_ElectricBox_01_C.openDoor_timeline__FinishedFunc
+// (BlueprintEvent)
 
-void ABP_DAT_ElectricBox_01_C::enableInteraction()
+void ABP_DAT_ElectricBox_01_C::openDoor_timeline__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"openDoor_timeline__FinishedFunc", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_ElectricBox_01_C", "enableInteraction");
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_DAT_ElectricBox_01.BP_DAT_ElectricBox_01_C.OnRep_state
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_DAT_ElectricBox_01_C::OnRep_state()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRep_state", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -143,10 +59,8 @@ void ABP_DAT_ElectricBox_01_C::enableInteraction()
 
 void ABP_DAT_ElectricBox_01_C::ExecuteUbergraph_BP_DAT_ElectricBox_01(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_ElectricBox_01_C", "ExecuteUbergraph_BP_DAT_ElectricBox_01");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_DAT_ElectricBox_01_C", "ExecuteUbergraph_BP_DAT_ElectricBox_01", FuncInfo);
 
 	Params::BP_DAT_ElectricBox_01_C_ExecuteUbergraph_BP_DAT_ElectricBox_01 Parms{};
 
@@ -156,45 +70,111 @@ void ABP_DAT_ElectricBox_01_C::ExecuteUbergraph_BP_DAT_ElectricBox_01(int32 Entr
 }
 
 
-// Function BP_DAT_ElectricBox_01.BP_DAT_ElectricBox_01_C.OnRep_state
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_DAT_ElectricBox_01.BP_DAT_ElectricBox_01_C.enableInteraction
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_DAT_ElectricBox_01_C::OnRep_state()
+void ABP_DAT_ElectricBox_01_C::enableInteraction()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_ElectricBox_01_C", "OnRep_state");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"enableInteraction", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_DAT_ElectricBox_01.BP_DAT_ElectricBox_01_C.openDoor_timeline__FinishedFunc
-// (BlueprintEvent)
+// Function BP_DAT_ElectricBox_01.BP_DAT_ElectricBox_01_C.disableInteraction
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_DAT_ElectricBox_01_C::openDoor_timeline__FinishedFunc()
+void ABP_DAT_ElectricBox_01_C::disableInteraction()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_ElectricBox_01_C", "openDoor_timeline__FinishedFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"disableInteraction", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_DAT_ElectricBox_01.BP_DAT_ElectricBox_01_C.openDoor_timeline__UpdateFunc
-// (BlueprintEvent)
+// Function BP_DAT_ElectricBox_01.BP_DAT_ElectricBox_01_C.BP_OnMiniGameSuccess
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bDoCosmetics_BP_OnMiniGameSuccess                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_DAT_ElectricBox_01_C::openDoor_timeline__UpdateFunc()
+void ABP_DAT_ElectricBox_01_C::BP_OnMiniGameSuccess(bool bDoCosmetics_BP_OnMiniGameSuccess)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnMiniGameSuccess", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_ElectricBox_01_C", "openDoor_timeline__UpdateFunc");
+	Params::BP_DAT_ElectricBox_01_C_BP_OnMiniGameSuccess Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.bDoCosmetics_BP_OnMiniGameSuccess = bDoCosmetics_BP_OnMiniGameSuccess;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_DAT_ElectricBox_01.BP_DAT_ElectricBox_01_C.BndEvt__BP_DAT_ElectricBox_01_SBZInteractable_cable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_DAT_ElectricBox_01_C::BndEvt__BP_DAT_ElectricBox_01_SBZInteractable_cable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_DAT_ElectricBox_01_SBZInteractable_cable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_DAT_ElectricBox_01_C_BndEvt__BP_DAT_ElectricBox_01_SBZInteractable_cable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_DAT_ElectricBox_01.BP_DAT_ElectricBox_01_C.BndEvt__BP_DAT_ElectricBox_01_SBZInteractable_cable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_DAT_ElectricBox_01_C::BndEvt__BP_DAT_ElectricBox_01_SBZInteractable_cable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_DAT_ElectricBox_01_SBZInteractable_cable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_DAT_ElectricBox_01_C_BndEvt__BP_DAT_ElectricBox_01_SBZInteractable_cable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_DAT_ElectricBox_01.BP_DAT_ElectricBox_01_C.BndEvt__BP_DAT_ElectricBox_01_SBZInteractable_cable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_DAT_ElectricBox_01_C::BndEvt__BP_DAT_ElectricBox_01_SBZInteractable_cable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_DAT_ElectricBox_01_SBZInteractable_cable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_DAT_ElectricBox_01_C_BndEvt__BP_DAT_ElectricBox_01_SBZInteractable_cable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

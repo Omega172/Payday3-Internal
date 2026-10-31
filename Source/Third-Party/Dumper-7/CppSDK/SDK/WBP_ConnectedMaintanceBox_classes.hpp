@@ -37,20 +37,20 @@ public:
 	class UWidgetSwitcher*                        WidgetSwitcher_84;                                 // 0x0358(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_ConnectedMaintanceBox(int32 EntryPoint);
-	void SetCompetedText(const class FText& In);
-	void SetDisabledText(const class FText& In);
-	void SetErrorText(const class FText& In);
-	void SetFirstConnection(const class FText& InText);
-	void SetIntroText(const class FText& In);
-	void SetLastConnection(const class FText& InText);
-	void SetModelNumber(const class FText& InText);
-	void SetSymbol(int32 Index_0);
-	void showScreenCompleted();
-	void showScreenDisabled();
-	void showScreenError();
-	void showScreenIntro();
 	void showScreenMain();
+	void showScreenIntro();
+	void showScreenError();
+	void showScreenDisabled();
+	void showScreenCompleted();
+	void SetSymbol(int32 Index_0);
+	void SetModelNumber(const class FText& InText);
+	void SetLastConnection(const class FText& InText);
+	void SetIntroText(const class FText& In);
+	void SetFirstConnection(const class FText& InText);
+	void SetErrorText(const class FText& In);
+	void SetDisabledText(const class FText& In);
+	void SetCompetedText(const class FText& In);
+	void ExecuteUbergraph_WBP_ConnectedMaintanceBox(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -66,5 +66,6 @@ public:
 		return GetDefaultObjImpl<UWBP_ConnectedMaintanceBox_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_ConnectedMaintanceBox_C;
 
 SDK_NAMESPACE_END

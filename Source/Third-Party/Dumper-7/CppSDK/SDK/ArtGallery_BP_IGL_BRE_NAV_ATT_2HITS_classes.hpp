@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AArtGallery_BP_IGL_BRE_NAV_ATT_2HITS_C>();
 	}
 };
+DUMPER7_ASSERTS_AArtGallery_BP_IGL_BRE_NAV_ATT_2HITS_C;
 
 SDK_NAMESPACE_END

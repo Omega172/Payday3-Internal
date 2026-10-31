@@ -51,8 +51,8 @@ public:
 	class ABPL_OrangeLight_C*                     LGT_OrangeLights_4_ExecuteUbergraph_L_ArmoredTransport_Lighting_RefProperty; // 0x04B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_L_ArmoredTransport_Lighting(int32 EntryPoint);
 	void SetVolumetricFogLight();
+	void ExecuteUbergraph_L_ArmoredTransport_Lighting(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -68,5 +68,6 @@ public:
 		return GetDefaultObjImpl<AL_ArmoredTransport_Lighting_C>();
 	}
 };
+DUMPER7_ASSERTS_AL_ArmoredTransport_Lighting_C;
 
 SDK_NAMESPACE_END

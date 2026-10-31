@@ -25,8 +25,8 @@ public:
 	class UStaticMeshComponent*                   mesh;                                              // 0x0360(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
 	void ExecuteUbergraph_BP_SHI_whiteboardPostIt_01(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
 
 public:
 	static class UClass* StaticClass()
@@ -42,5 +42,6 @@ public:
 		return GetDefaultObjImpl<ABP_SHI_whiteboardPostIt_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SHI_whiteboardPostIt_01_C;
 
 SDK_NAMESPACE_END

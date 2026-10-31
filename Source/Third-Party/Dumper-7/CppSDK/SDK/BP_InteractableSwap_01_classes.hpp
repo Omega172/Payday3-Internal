@@ -30,8 +30,8 @@ public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0350(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_CactusPot_01_A_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 	void ExecuteUbergraph_BP_InteractableSwap_01(int32 EntryPoint);
+	void BndEvt__BP_CactusPot_01_A_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 
 public:
 	static class UClass* StaticClass()
@@ -47,5 +47,6 @@ public:
 		return GetDefaultObjImpl<ABP_InteractableSwap_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_InteractableSwap_01_C;
 
 SDK_NAMESPACE_END

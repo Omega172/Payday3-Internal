@@ -16,26 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_HiddenDeskButton.BP_HiddenDeskButton_C.BndEvt__BP_HiddenDeskButton_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_HiddenDeskButton_C_BndEvt__BP_HiddenDeskButton_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable_0;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_HiddenDeskButton.BP_HiddenDeskButton_C.BndEvt__BP_HiddenDeskButton_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_HiddenDeskButton_C_BndEvt__BP_HiddenDeskButton_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable_0;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_HiddenDeskButton.BP_HiddenDeskButton_C.ExecuteUbergraph_BP_HiddenDeskButton
 // 0x0050 (0x0050 - 0x0000)
 struct BP_HiddenDeskButton_C_ExecuteUbergraph_BP_HiddenDeskButton final
@@ -53,6 +33,29 @@ public:
 	class USBZInteractorComponent*                K2Node_ComponentBoundEvent_Interactor;             // 0x0040(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ComponentBoundEvent_bIsLocallyControlledInteractor; // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_HiddenDeskButton_C_ExecuteUbergraph_BP_HiddenDeskButton;
+
+// Function BP_HiddenDeskButton.BP_HiddenDeskButton_C.BndEvt__BP_HiddenDeskButton_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_HiddenDeskButton_C_BndEvt__BP_HiddenDeskButton_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_HiddenDeskButton_C_BndEvt__BP_HiddenDeskButton_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature;
+
+// Function BP_HiddenDeskButton.BP_HiddenDeskButton_C.BndEvt__BP_HiddenDeskButton_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_HiddenDeskButton_C_BndEvt__BP_HiddenDeskButton_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_HiddenDeskButton_C_BndEvt__BP_HiddenDeskButton_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

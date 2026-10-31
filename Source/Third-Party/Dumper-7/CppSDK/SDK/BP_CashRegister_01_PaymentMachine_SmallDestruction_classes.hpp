@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_CashRegister_01_PaymentMachine_SmallDestruction_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CashRegister_01_PaymentMachine_SmallDestruction_C;
 
 SDK_NAMESPACE_END

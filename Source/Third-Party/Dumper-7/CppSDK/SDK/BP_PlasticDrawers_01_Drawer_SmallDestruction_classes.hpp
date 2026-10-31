@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_PlasticDrawers_01_Drawer_SmallDestruction_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PlasticDrawers_01_Drawer_SmallDestruction_C;
 
 SDK_NAMESPACE_END

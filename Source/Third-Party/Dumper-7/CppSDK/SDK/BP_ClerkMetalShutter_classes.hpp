@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_ClerkMetalShutter_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ClerkMetalShutter_C;
 
 SDK_NAMESPACE_END

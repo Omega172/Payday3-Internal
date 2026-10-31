@@ -10,22 +10,22 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_WheeledVehicle_Base_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Sedan_Base.BP_Sedan_Base_C
-// 0x0000 (0x0930 - 0x0930)
+// 0x0000 (0x0A30 - 0x0A30)
 class ABP_Sedan_Base_C : public ABP_WheeledVehicle_Base_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0928(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A28(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteUbergraph_BP_Sedan_Base(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_Sedan_Base(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -41,5 +41,6 @@ public:
 		return GetDefaultObjImpl<ABP_Sedan_Base_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Sedan_Base_C;
 
 SDK_NAMESPACE_END

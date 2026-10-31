@@ -29,9 +29,9 @@ public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_MURK_VentReactor(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
 	void ReactToCloset(bool bActorsInCloset, bool bDoCosmetics);
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_MURK_VentReactor(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -47,5 +47,6 @@ public:
 		return GetDefaultObjImpl<ABP_MURK_VentReactor_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_MURK_VentReactor_C;
 
 SDK_NAMESPACE_END

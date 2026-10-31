@@ -26,9 +26,9 @@ public:
 	class ASBZDestroyGroup*                       SBZDestroyGroup_Ammo_ExecuteUbergraph_R_NightClub_SecurityRoom_RefProperty; // 0x03E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__R_NightClub_SecurityRoom_SBZPlayerTriggerVolume_PlayerInSecRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void ExecuteUbergraph_R_NightClub_SecurityRoom(int32 EntryPoint);
 	void OnRandomSublevelPlaced();
+	void ExecuteUbergraph_R_NightClub_SecurityRoom(int32 EntryPoint);
+	void BndEvt__R_NightClub_SecurityRoom_SBZPlayerTriggerVolume_PlayerInSecRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<AR_NightClub_SecurityRoom_C>();
 	}
 };
+DUMPER7_ASSERTS_AR_NightClub_SecurityRoom_C;
 
 SDK_NAMESPACE_END

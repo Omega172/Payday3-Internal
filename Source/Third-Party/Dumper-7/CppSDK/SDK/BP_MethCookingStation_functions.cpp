@@ -16,25 +16,193 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_MethCookingStation.BP_MethCookingStation_C.BndEvt__BP_MethCookingStation_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// Function BP_MethCookingStation.BP_MethCookingStation_C.WarmOff__UpdateFunc
 // (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MethCookingStation_C::BndEvt__BP_MethCookingStation_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_MethCookingStation_C::WarmOff__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"WarmOff__UpdateFunc", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MethCookingStation_C", "BndEvt__BP_MethCookingStation_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_MethCookingStation_C_BndEvt__BP_MethCookingStation_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
 
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+// Function BP_MethCookingStation.BP_MethCookingStation_C.WarmOff__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_MethCookingStation_C::WarmOff__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"WarmOff__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MethCookingStation.BP_MethCookingStation_C.Warm__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_MethCookingStation_C::Warm__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Warm__UpdateFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MethCookingStation.BP_MethCookingStation_C.Warm__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_MethCookingStation_C::Warm__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Warm__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MethCookingStation.BP_MethCookingStation_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_MethCookingStation_C::UserConstructionScript()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MethCookingStation.BP_MethCookingStation_C.TurnOn__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_MethCookingStation_C::TurnOn__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TurnOn__UpdateFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MethCookingStation.BP_MethCookingStation_C.TurnOn__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_MethCookingStation_C::TurnOn__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TurnOn__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MethCookingStation.BP_MethCookingStation_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_MethCookingStation_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MethCookingStation.BP_MethCookingStation_C.onStateChanged Server
+// (BlueprintAuthorityOnly, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESBZCookingState                        OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZCookingState                        NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MethCookingStation_C::onStateChanged_Server(ESBZCookingState OldState, ESBZCookingState NewState)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"onStateChanged Server", FnName));
+
+	Params::BP_MethCookingStation_C_onStateChanged_Server Parms{};
+
+	Parms.OldState = OldState;
+	Parms.NewState = NewState;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MethCookingStation.BP_MethCookingStation_C.ExecuteUbergraph_BP_MethCookingStation
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MethCookingStation_C::ExecuteUbergraph_BP_MethCookingStation(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_MethCookingStation_C", "ExecuteUbergraph_BP_MethCookingStation", FuncInfo);
+
+	Params::BP_MethCookingStation_C_ExecuteUbergraph_BP_MethCookingStation Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MethCookingStation.BP_MethCookingStation_C.BP_OnStaticOrderGenerated
+// (BlueprintCosmetic, Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const TArray<int32>&                    Order_BP_OnStaticOrderGenerated                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void ABP_MethCookingStation_C::BP_OnStaticOrderGenerated(const TArray<int32>& Order_BP_OnStaticOrderGenerated)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnStaticOrderGenerated", FnName));
+
+	Params::BP_MethCookingStation_C_BP_OnStaticOrderGenerated Parms{};
+
+	Parms.Order_BP_OnStaticOrderGenerated = std::move(Order_BP_OnStaticOrderGenerated);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MethCookingStation.BP_MethCookingStation_C.BP_OnStateChanged
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZCookingState                        OldState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZCookingState                        NewState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_BP_OnStateChanged                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MethCookingStation_C::BP_OnStateChanged(ESBZCookingState OldState_BP_OnStateChanged, ESBZCookingState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnStateChanged", FnName));
+
+	Params::BP_MethCookingStation_C_BP_OnStateChanged Parms{};
+
+	Parms.OldState_BP_OnStateChanged = OldState_BP_OnStateChanged;
+	Parms.NewState_BP_OnStateChanged = NewState_BP_OnStateChanged;
+	Parms.bDoCosmetics_BP_OnStateChanged = bDoCosmetics_BP_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MethCookingStation.BP_MethCookingStation_C.BP_OnIngredientAdded
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   IngredientIndex_BP_OnIngredientAdded                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MethCookingStation_C::BP_OnIngredientAdded(int32 IngredientIndex_BP_OnIngredientAdded)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnIngredientAdded", FnName));
+
+	Params::BP_MethCookingStation_C_BP_OnIngredientAdded Parms{};
+
+	Parms.IngredientIndex_BP_OnIngredientAdded = IngredientIndex_BP_OnIngredientAdded;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -49,10 +217,8 @@ void ABP_MethCookingStation_C::BndEvt__BP_MethCookingStation_InteractableCompone
 
 void ABP_MethCookingStation_C::BndEvt__BP_MethCookingStation_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MethCookingStation_C", "BndEvt__BP_MethCookingStation_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_MethCookingStation_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature", FnName));
 
 	Params::BP_MethCookingStation_C_BndEvt__BP_MethCookingStation_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature Parms{};
 
@@ -64,221 +230,25 @@ void ABP_MethCookingStation_C::BndEvt__BP_MethCookingStation_InteractableCompone
 }
 
 
-// Function BP_MethCookingStation.BP_MethCookingStation_C.BP_OnIngredientAdded
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+// Function BP_MethCookingStation.BP_MethCookingStation_C.BndEvt__BP_MethCookingStation_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   IngredientIndex                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MethCookingStation_C::BP_OnIngredientAdded(int32 IngredientIndex)
+void ABP_MethCookingStation_C::BndEvt__BP_MethCookingStation_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_MethCookingStation_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MethCookingStation_C", "BP_OnIngredientAdded");
+	Params::BP_MethCookingStation_C_BndEvt__BP_MethCookingStation_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
 
-	Params::BP_MethCookingStation_C_BP_OnIngredientAdded Parms{};
-
-	Parms.IngredientIndex = IngredientIndex;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MethCookingStation.BP_MethCookingStation_C.BP_OnStateChanged
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
-// Parameters:
-// ESBZCookingState                        OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZCookingState                        NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MethCookingStation_C::BP_OnStateChanged(ESBZCookingState OldState, ESBZCookingState NewState, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MethCookingStation_C", "BP_OnStateChanged");
-
-	Params::BP_MethCookingStation_C_BP_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MethCookingStation.BP_MethCookingStation_C.BP_OnStaticOrderGenerated
-// (BlueprintCosmetic, Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const TArray<int32>&                    Order                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void ABP_MethCookingStation_C::BP_OnStaticOrderGenerated(const TArray<int32>& Order)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MethCookingStation_C", "BP_OnStaticOrderGenerated");
-
-	Params::BP_MethCookingStation_C_BP_OnStaticOrderGenerated Parms{};
-
-	Parms.Order = std::move(Order);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MethCookingStation.BP_MethCookingStation_C.ExecuteUbergraph_BP_MethCookingStation
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MethCookingStation_C::ExecuteUbergraph_BP_MethCookingStation(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MethCookingStation_C", "ExecuteUbergraph_BP_MethCookingStation");
-
-	Params::BP_MethCookingStation_C_ExecuteUbergraph_BP_MethCookingStation Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MethCookingStation.BP_MethCookingStation_C.onStateChanged Server
-// (BlueprintAuthorityOnly, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESBZCookingState                        OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZCookingState                        NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MethCookingStation_C::onStateChanged_Server(ESBZCookingState OldState, ESBZCookingState NewState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MethCookingStation_C", "onStateChanged Server");
-
-	Params::BP_MethCookingStation_C_onStateChanged_Server Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MethCookingStation.BP_MethCookingStation_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_MethCookingStation_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MethCookingStation_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MethCookingStation.BP_MethCookingStation_C.TurnOn__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_MethCookingStation_C::TurnOn__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MethCookingStation_C", "TurnOn__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MethCookingStation.BP_MethCookingStation_C.TurnOn__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_MethCookingStation_C::TurnOn__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MethCookingStation_C", "TurnOn__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MethCookingStation.BP_MethCookingStation_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_MethCookingStation_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MethCookingStation_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MethCookingStation.BP_MethCookingStation_C.Warm__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_MethCookingStation_C::Warm__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MethCookingStation_C", "Warm__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MethCookingStation.BP_MethCookingStation_C.Warm__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_MethCookingStation_C::Warm__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MethCookingStation_C", "Warm__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MethCookingStation.BP_MethCookingStation_C.WarmOff__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_MethCookingStation_C::WarmOff__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MethCookingStation_C", "WarmOff__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MethCookingStation.BP_MethCookingStation_C.WarmOff__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_MethCookingStation_C::WarmOff__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MethCookingStation_C", "WarmOff__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

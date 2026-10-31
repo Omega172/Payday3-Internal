@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_RedRFIDTag_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_RedRFIDTag_C;
 
 SDK_NAMESPACE_END

@@ -17,15 +17,16 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_Chus_FoldingCounter.BP_Chus_FoldingCounter_C.BndEvt__BP_Chus_FoldingCounter_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_Chus_FoldingCounter_C_BndEvt__BP_Chus_FoldingCounter_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
+// Function BP_Chus_FoldingCounter.BP_Chus_FoldingCounter_C.OnStateChanged
+// 0x000C (0x000C - 0x0000)
+struct BP_Chus_FoldingCounter_C_OnStateChanged final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         OldState_OnStateChanged;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewState_OnStateChanged;                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Chus_FoldingCounter_C_OnStateChanged;
 
 // Function BP_Chus_FoldingCounter.BP_Chus_FoldingCounter_C.ExecuteUbergraph_BP_Chus_FoldingCounter
 // 0x0390 (0x0390 - 0x0000)
@@ -54,16 +55,18 @@ public:
 	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult_1;  // 0x0180(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult_2;  // 0x0288(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
+DUMPER7_ASSERTS_BP_Chus_FoldingCounter_C_ExecuteUbergraph_BP_Chus_FoldingCounter;
 
-// Function BP_Chus_FoldingCounter.BP_Chus_FoldingCounter_C.OnStateChanged
-// 0x000C (0x000C - 0x0000)
-struct BP_Chus_FoldingCounter_C_OnStateChanged final
+// Function BP_Chus_FoldingCounter.BP_Chus_FoldingCounter_C.BndEvt__BP_Chus_FoldingCounter_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_Chus_FoldingCounter_C_BndEvt__BP_Chus_FoldingCounter_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
 {
 public:
-	int32                                         OldState;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         NewState;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Chus_FoldingCounter_C_BndEvt__BP_Chus_FoldingCounter_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

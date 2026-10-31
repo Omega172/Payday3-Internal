@@ -16,25 +16,67 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_StaticInteraction.BP_StaticInteraction_C.BndEvt__Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_StaticInteraction.BP_StaticInteraction_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_StaticInteraction_C::BndEvt__Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_StaticInteraction_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_StaticInteraction_C", "BndEvt__Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_StaticInteraction_C_BndEvt__Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+// Function BP_StaticInteraction.BP_StaticInteraction_C.GetSensorOutlineComponent
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZOutlineComponent*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class USBZOutlineComponent* ABP_StaticInteraction_C::GetSensorOutlineComponent()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetSensorOutlineComponent", FnName));
+
+	Params::BP_StaticInteraction_C_GetSensorOutlineComponent Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_StaticInteraction.BP_StaticInteraction_C.GetSensorComponent
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZSensorComponent*              ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class USBZSensorComponent* ABP_StaticInteraction_C::GetSensorComponent()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetSensorComponent", FnName));
+
+	Params::BP_StaticInteraction_C_GetSensorComponent Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_StaticInteraction.BP_StaticInteraction_C.ExecuteUbergraph_BP_StaticInteraction
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_StaticInteraction_C::ExecuteUbergraph_BP_StaticInteraction(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_StaticInteraction_C", "ExecuteUbergraph_BP_StaticInteraction", FuncInfo);
+
+	Params::BP_StaticInteraction_C_ExecuteUbergraph_BP_StaticInteraction Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -48,10 +90,8 @@ void ABP_StaticInteraction_C::BndEvt__Interactable_K2Node_ComponentBoundEvent_0_
 
 void ABP_StaticInteraction_C::BndEvt__Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_StaticInteraction_C", "BndEvt__Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteractableStateChangedDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteractableStateChangedDelegate__DelegateSignature", FnName));
 
 	Params::BP_StaticInteraction_C_BndEvt__Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
 
@@ -62,77 +102,25 @@ void ABP_StaticInteraction_C::BndEvt__Interactable_K2Node_ComponentBoundEvent_1_
 }
 
 
-// Function BP_StaticInteraction.BP_StaticInteraction_C.ExecuteUbergraph_BP_StaticInteraction
-// (Final, UbergraphFunction)
+// Function BP_StaticInteraction.BP_StaticInteraction_C.BndEvt__Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_StaticInteraction_C::ExecuteUbergraph_BP_StaticInteraction(int32 EntryPoint)
+void ABP_StaticInteraction_C::BndEvt__Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_StaticInteraction_C", "ExecuteUbergraph_BP_StaticInteraction");
+	Params::BP_StaticInteraction_C_BndEvt__Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
-	Params::BP_StaticInteraction_C_ExecuteUbergraph_BP_StaticInteraction Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_StaticInteraction.BP_StaticInteraction_C.GetSensorComponent
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZSensorComponent*              ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-class USBZSensorComponent* ABP_StaticInteraction_C::GetSensorComponent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_StaticInteraction_C", "GetSensorComponent");
-
-	Params::BP_StaticInteraction_C_GetSensorComponent Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function BP_StaticInteraction.BP_StaticInteraction_C.GetSensorOutlineComponent
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZOutlineComponent*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-class USBZOutlineComponent* ABP_StaticInteraction_C::GetSensorOutlineComponent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_StaticInteraction_C", "GetSensorOutlineComponent");
-
-	Params::BP_StaticInteraction_C_GetSensorOutlineComponent Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function BP_StaticInteraction.BP_StaticInteraction_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_StaticInteraction_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_StaticInteraction_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

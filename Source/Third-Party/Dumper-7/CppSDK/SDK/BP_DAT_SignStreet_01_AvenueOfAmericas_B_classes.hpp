@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_DAT_SignStreet_01_AvenueOfAmericas_B_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DAT_SignStreet_01_AvenueOfAmericas_B_C;
 
 SDK_NAMESPACE_END

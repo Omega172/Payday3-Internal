@@ -28,8 +28,8 @@ public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_CHU_RectangularSkylight_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
 	void ExecuteUbergraph_BP_FOR_Trophy_Small_01_C(int32 EntryPoint);
+	void BndEvt__BP_CHU_RectangularSkylight_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<ABP_FOR_Trophy_Small_01_C_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_FOR_Trophy_Small_01_C_C;
 
 SDK_NAMESPACE_END

@@ -16,61 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_STO_ControlScreenInputCode.WBP_STO_ControlScreenInputCode_C.ExecuteUbergraph_WBP_STO_ControlScreenInputCode
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_STO_ControlScreenInputCode_C::ExecuteUbergraph_WBP_STO_ControlScreenInputCode(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ControlScreenInputCode_C", "ExecuteUbergraph_WBP_STO_ControlScreenInputCode");
-
-	Params::WBP_STO_ControlScreenInputCode_C_ExecuteUbergraph_WBP_STO_ControlScreenInputCode Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_STO_ControlScreenInputCode.WBP_STO_ControlScreenInputCode_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_STO_ControlScreenInputCode_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ControlScreenInputCode_C", "PreConstruct");
-
-	Params::WBP_STO_ControlScreenInputCode_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_STO_ControlScreenInputCode.WBP_STO_ControlScreenInputCode_C.setBackgroundColor
+// Function WBP_STO_ControlScreenInputCode.WBP_STO_ControlScreenInputCode_C.setCodeText
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ESBZModuleActorState                    state                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_STO_ControlScreenInputCode_C::setBackgroundColor(ESBZModuleActorState state)
+void UWBP_STO_ControlScreenInputCode_C::setCodeText(const class FText& InText)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setCodeText", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ControlScreenInputCode_C", "setBackgroundColor");
+	Params::WBP_STO_ControlScreenInputCode_C_setCodeText Parms{};
 
-	Params::WBP_STO_ControlScreenInputCode_C_setBackgroundColor Parms{};
-
-	Parms.state = state;
+	Parms.InText = std::move(InText);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -83,10 +41,8 @@ void UWBP_STO_ControlScreenInputCode_C::setBackgroundColor(ESBZModuleActorState 
 
 void UWBP_STO_ControlScreenInputCode_C::setCircuitBreakerText(const class FText& InText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ControlScreenInputCode_C", "setCircuitBreakerText");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setCircuitBreakerText", FnName));
 
 	Params::WBP_STO_ControlScreenInputCode_C_setCircuitBreakerText Parms{};
 
@@ -96,21 +52,55 @@ void UWBP_STO_ControlScreenInputCode_C::setCircuitBreakerText(const class FText&
 }
 
 
-// Function WBP_STO_ControlScreenInputCode.WBP_STO_ControlScreenInputCode_C.setCodeText
+// Function WBP_STO_ControlScreenInputCode.WBP_STO_ControlScreenInputCode_C.setBackgroundColor
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
+// ESBZModuleActorState                    state                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_STO_ControlScreenInputCode_C::setCodeText(const class FText& InText)
+void UWBP_STO_ControlScreenInputCode_C::setBackgroundColor(ESBZModuleActorState state)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setBackgroundColor", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ControlScreenInputCode_C", "setCodeText");
+	Params::WBP_STO_ControlScreenInputCode_C_setBackgroundColor Parms{};
 
-	Params::WBP_STO_ControlScreenInputCode_C_setCodeText Parms{};
+	Parms.state = state;
 
-	Parms.InText = std::move(InText);
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_STO_ControlScreenInputCode.WBP_STO_ControlScreenInputCode_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_STO_ControlScreenInputCode_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_STO_ControlScreenInputCode_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_STO_ControlScreenInputCode.WBP_STO_ControlScreenInputCode_C.ExecuteUbergraph_WBP_STO_ControlScreenInputCode
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_STO_ControlScreenInputCode_C::ExecuteUbergraph_WBP_STO_ControlScreenInputCode(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_STO_ControlScreenInputCode_C", "ExecuteUbergraph_WBP_STO_ControlScreenInputCode", FuncInfo);
+
+	Params::WBP_STO_ControlScreenInputCode_C_ExecuteUbergraph_WBP_STO_ControlScreenInputCode Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

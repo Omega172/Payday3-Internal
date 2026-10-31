@@ -16,23 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_FireExtinguisher_01_Foam.BP_FireExtinguisher_01_Foam_C.BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature
-// (BlueprintEvent)
+// Function BP_FireExtinguisher_01_Foam.BP_FireExtinguisher_01_Foam_C.ExecuteUbergraph_BP_FireExtinguisher_01_Foam
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class UActorComponent*                  Component                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bReset                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_FireExtinguisher_01_Foam_C::BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature(class UActorComponent* Component, bool bReset)
+void ABP_FireExtinguisher_01_Foam_C::ExecuteUbergraph_BP_FireExtinguisher_01_Foam(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_FireExtinguisher_01_Foam_C", "ExecuteUbergraph_BP_FireExtinguisher_01_Foam", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FireExtinguisher_01_Foam_C", "BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature");
+	Params::BP_FireExtinguisher_01_Foam_C_ExecuteUbergraph_BP_FireExtinguisher_01_Foam Parms{};
 
-	Params::BP_FireExtinguisher_01_Foam_C_BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature Parms{};
-
-	Parms.Component = Component;
-	Parms.bReset = bReset;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -41,38 +37,36 @@ void ABP_FireExtinguisher_01_Foam_C::BndEvt__BP_TestExplosiveFuelTank_NiagaraCom
 // Function BP_FireExtinguisher_01_Foam.BP_FireExtinguisher_01_Foam_C.BP_OnExplosion
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_BP_OnExplosion                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_FireExtinguisher_01_Foam_C::BP_OnExplosion(bool bDoCosmetics)
+void ABP_FireExtinguisher_01_Foam_C::BP_OnExplosion(bool bDoCosmetics_BP_OnExplosion)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FireExtinguisher_01_Foam_C", "BP_OnExplosion");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnExplosion", FnName));
 
 	Params::BP_FireExtinguisher_01_Foam_C_BP_OnExplosion Parms{};
 
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.bDoCosmetics_BP_OnExplosion = bDoCosmetics_BP_OnExplosion;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_FireExtinguisher_01_Foam.BP_FireExtinguisher_01_Foam_C.ExecuteUbergraph_BP_FireExtinguisher_01_Foam
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_FireExtinguisher_01_Foam.BP_FireExtinguisher_01_Foam_C.BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UActorComponent*                  Component                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bReset                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_FireExtinguisher_01_Foam_C::ExecuteUbergraph_BP_FireExtinguisher_01_Foam(int32 EntryPoint)
+void ABP_FireExtinguisher_01_Foam_C::BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature(class UActorComponent* Component, bool bReset)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FireExtinguisher_01_Foam_C", "ExecuteUbergraph_BP_FireExtinguisher_01_Foam");
+	Params::BP_FireExtinguisher_01_Foam_C_BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature Parms{};
 
-	Params::BP_FireExtinguisher_01_Foam_C_ExecuteUbergraph_BP_FireExtinguisher_01_Foam Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Component = Component;
+	Parms.bReset = bReset;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

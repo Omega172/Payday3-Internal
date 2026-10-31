@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AJewelryStore_C>();
 	}
 };
+DUMPER7_ASSERTS_AJewelryStore_C;
 
 SDK_NAMESPACE_END

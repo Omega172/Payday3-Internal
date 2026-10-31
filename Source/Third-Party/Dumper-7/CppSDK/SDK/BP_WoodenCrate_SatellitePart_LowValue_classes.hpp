@@ -28,10 +28,10 @@ public:
 	TArray<class AActor*>                         actorsInside;                                      // 0x0480(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 
 public:
-	void autoAddObjects(double OverlapMultiplier);
-	void ExecuteUbergraph_BP_WoodenCrate_SatellitePart_LowValue(int32 EntryPoint);
-	void ReceiveDestroyed();
 	void UserConstructionScript();
+	void ReceiveDestroyed();
+	void ExecuteUbergraph_BP_WoodenCrate_SatellitePart_LowValue(int32 EntryPoint);
+	void autoAddObjects(double OverlapMultiplier);
 
 public:
 	static class UClass* StaticClass()
@@ -47,5 +47,6 @@ public:
 		return GetDefaultObjImpl<ABP_WoodenCrate_SatellitePart_LowValue_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_WoodenCrate_SatellitePart_LowValue_C;
 
 SDK_NAMESPACE_END

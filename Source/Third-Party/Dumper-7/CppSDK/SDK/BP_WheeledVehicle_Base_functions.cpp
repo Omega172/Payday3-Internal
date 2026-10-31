@@ -20,10 +20,8 @@ SDK_NAMESPACE_START
 
 void ABP_WheeledVehicle_Base_C::SpawnPawns()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WheeledVehicle_Base_C", "SpawnPawns");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnPawns", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

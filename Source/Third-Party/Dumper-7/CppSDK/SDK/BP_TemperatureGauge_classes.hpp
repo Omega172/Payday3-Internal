@@ -34,13 +34,13 @@ public:
 	TMulticastInlineDelegate<void(bool upper)>    onLimitReached;                                    // 0x0438(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void activateGauge(bool reverse);
-	void BP_OnStateChanged(ESBZTimerState NewState, ESBZTimerState OldState, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_TemperatureGauge(int32 EntryPoint);
-	void ReceiveBeginPlay();
-	void ReceiveTick(float DeltaSeconds);
-	void updateTemperature();
 	void UserConstructionScript();
+	void updateTemperature();
+	void ReceiveTick(float DeltaSeconds_ReceiveTick);
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_TemperatureGauge(int32 EntryPoint);
+	void BP_OnStateChanged(ESBZTimerState NewState_BP_OnStateChanged, ESBZTimerState OldState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged);
+	void activateGauge(bool reverse);
 
 public:
 	static class UClass* StaticClass()
@@ -56,5 +56,6 @@ public:
 		return GetDefaultObjImpl<ABP_TemperatureGauge_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_TemperatureGauge_C;
 
 SDK_NAMESPACE_END

@@ -28,12 +28,12 @@ public:
 	class UTextBlock*                             Text_HeistName;                                    // 0x0360(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void SetSelected(bool bInIsSelected_SetSelected);
-	void SetActive(bool bIsActive);
-	void OnInitialized();
-	void OnHeistDataInitialized();
+	void ButtonHoveredChanged(bool bInIsHovered);
 	void ExecuteUbergraph_WBP_UI_Crimenet_HeistMapWidget(int32 EntryPoint);
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
+	void OnHeistDataInitialized();
+	void OnInitialized();
+	void SetActive(bool bIsActive);
+	void SetSelected(bool bInIsSelected);
 
 public:
 	static class UClass* StaticClass()

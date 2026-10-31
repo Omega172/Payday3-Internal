@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<BPL_StripLight_Warm_01::ABPL_StripLight_Warm_01_C>();
 	}
 };
+DUMPER7_ASSERTS_BPL_StripLight_Warm_01__ABPL_StripLight_Warm_01_C;
 
 SDK_NAMESPACE_END

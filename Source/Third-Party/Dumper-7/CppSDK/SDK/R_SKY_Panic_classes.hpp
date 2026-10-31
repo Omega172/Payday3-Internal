@@ -27,8 +27,8 @@ public:
 	class ASBZDestroyGroup*                       SBZDestroyGroup_MasonsArmor_ExecuteUbergraph_R_SKY_Panic_RefProperty; // 0x03E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void DestroyMasonsArmor();
 	void ExecuteUbergraph_R_SKY_Panic(int32 EntryPoint);
+	void DestroyMasonsArmor();
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<AR_SKY_Panic_C>();
 	}
 };
+DUMPER7_ASSERTS_AR_SKY_Panic_C;
 
 SDK_NAMESPACE_END

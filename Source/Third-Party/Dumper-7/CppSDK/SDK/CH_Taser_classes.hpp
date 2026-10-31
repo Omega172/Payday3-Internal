@@ -16,13 +16,13 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CH_Taser.CH_Taser_C
-// 0x0020 (0x21E0 - 0x21C0)
+// 0x0020 (0x2270 - 0x2250)
 class ACH_Taser_C final : public ACH_BaseCop_C
 {
 public:
-	class USBZAITaserSpecialComponent*            SBZAITaserSpecial;                                 // 0x21C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAITaserBattery_C*                      AITaserBattery;                                    // 0x21C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Helmet;                                            // 0x21D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZAITaserSpecialComponent*            SBZAITaserSpecial;                                 // 0x2250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAITaserBattery_C*                      AITaserBattery;                                    // 0x2258(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Helmet;                                            // 0x2260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ACH_Taser_C>();
 	}
 };
+DUMPER7_ASSERTS_ACH_Taser_C;
 
 SDK_NAMESPACE_END

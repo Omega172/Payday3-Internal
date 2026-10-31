@@ -37,12 +37,12 @@ public:
 	class ABP_InteractableJewelry_LowValue_C*     BP_InteractableJewelry_LowValue7_ExecuteUbergraph_R_Penthouse_Vault_RefProperty; // 0x0430(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__R_Penthouse_Vault_BP_Int_Door_01_SmallVault_01_0_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State);
-	void BndEvt__R_Penthouse_Vault_BP_PortableSSD_2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
-	void BndEvt__R_Penthouse_Vault_BP_Safe_01_2_K2Node_ActorBoundEvent_0_SBZOnMinigameDoneDelegate__DelegateSignature();
-	void Code_Entered();
-	void ExecuteUbergraph_R_Penthouse_Vault(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_R_Penthouse_Vault(int32 EntryPoint);
+	void Code_Entered();
+	void BndEvt__R_Penthouse_Vault_BP_Safe_01_2_K2Node_ActorBoundEvent_0_SBZOnMinigameDoneDelegate__DelegateSignature();
+	void BndEvt__R_Penthouse_Vault_BP_PortableSSD_2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
+	void BndEvt__R_Penthouse_Vault_BP_Int_Door_01_SmallVault_01_0_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State);
 
 public:
 	static class UClass* StaticClass()
@@ -58,5 +58,6 @@ public:
 		return GetDefaultObjImpl<AR_Penthouse_Vault_C>();
 	}
 };
+DUMPER7_ASSERTS_AR_Penthouse_Vault_C;
 
 SDK_NAMESPACE_END

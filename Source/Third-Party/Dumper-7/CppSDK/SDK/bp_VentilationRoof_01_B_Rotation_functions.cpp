@@ -21,10 +21,8 @@ SDK_NAMESPACE_START
 
 void Abp_VentilationRoof_01_B_Rotation_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("bp_VentilationRoof_01_B_Rotation_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

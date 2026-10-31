@@ -16,23 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function R_ArtGallery_UtilityRoom.R_ArtGallery_UtilityRoom_C.ArtGallery_UtilityRoomKeycardEvent
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Bool                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function R_ArtGallery_UtilityRoom.R_ArtGallery_UtilityRoom_C.OnRandomSublevelPlaced
+// (Event, Public, BlueprintEvent)
 
-void AR_ArtGallery_UtilityRoom_C::ArtGallery_UtilityRoomKeycardEvent(bool Bool)
+void AR_ArtGallery_UtilityRoom_C::OnRandomSublevelPlaced()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRandomSublevelPlaced", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_ArtGallery_UtilityRoom_C", "ArtGallery_UtilityRoomKeycardEvent");
-
-	Params::R_ArtGallery_UtilityRoom_C_ArtGallery_UtilityRoomKeycardEvent Parms{};
-
-	Parms.Bool = Bool;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -43,10 +35,8 @@ void AR_ArtGallery_UtilityRoom_C::ArtGallery_UtilityRoomKeycardEvent(bool Bool)
 
 void AR_ArtGallery_UtilityRoom_C::ExecuteUbergraph_R_ArtGallery_UtilityRoom(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_ArtGallery_UtilityRoom_C", "ExecuteUbergraph_R_ArtGallery_UtilityRoom");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "R_ArtGallery_UtilityRoom_C", "ExecuteUbergraph_R_ArtGallery_UtilityRoom", FuncInfo);
 
 	Params::R_ArtGallery_UtilityRoom_C_ExecuteUbergraph_R_ArtGallery_UtilityRoom Parms{};
 
@@ -56,17 +46,21 @@ void AR_ArtGallery_UtilityRoom_C::ExecuteUbergraph_R_ArtGallery_UtilityRoom(int3
 }
 
 
-// Function R_ArtGallery_UtilityRoom.R_ArtGallery_UtilityRoom_C.OnRandomSublevelPlaced
-// (Event, Public, BlueprintEvent)
+// Function R_ArtGallery_UtilityRoom.R_ArtGallery_UtilityRoom_C.ArtGallery_UtilityRoomKeycardEvent
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Bool                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AR_ArtGallery_UtilityRoom_C::OnRandomSublevelPlaced()
+void AR_ArtGallery_UtilityRoom_C::ArtGallery_UtilityRoomKeycardEvent(bool Bool)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ArtGallery_UtilityRoomKeycardEvent", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_ArtGallery_UtilityRoom_C", "OnRandomSublevelPlaced");
+	Params::R_ArtGallery_UtilityRoom_C_ArtGallery_UtilityRoomKeycardEvent Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.Bool = Bool;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

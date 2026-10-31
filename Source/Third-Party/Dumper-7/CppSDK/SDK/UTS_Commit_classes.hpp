@@ -27,10 +27,10 @@ public:
 	bool                                          Started;                                           // 0x0070(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_UTS_Commit(int32 EntryPoint);
-	void OnDeactivatedBP(EBTNodeResult NodeResult);
-	void OnDeselectedBP();
 	void OnSelectedBP();
+	void OnDeselectedBP();
+	void OnDeactivatedBP(EBTNodeResult NodeResult_OnDeactivatedBP);
+	void ExecuteUbergraph_UTS_Commit(int32 EntryPoint);
 
 	float CalcScoreBP() const;
 
@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<UUTS_Commit_C>();
 	}
 };
+DUMPER7_ASSERTS_UUTS_Commit_C;
 
 SDK_NAMESPACE_END

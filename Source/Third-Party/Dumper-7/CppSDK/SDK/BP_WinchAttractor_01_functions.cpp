@@ -16,23 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_WinchAttractor_01.BP_WinchAttractor_01_C.ExecuteUbergraph_BP_WinchAttractor_01
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_WinchAttractor_01.BP_WinchAttractor_01_C.triggerNoise
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_WinchAttractor_01_C::ExecuteUbergraph_BP_WinchAttractor_01(int32 EntryPoint)
+void ABP_WinchAttractor_01_C::triggerNoise()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"triggerNoise", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WinchAttractor_01_C", "ExecuteUbergraph_BP_WinchAttractor_01");
-
-	Params::BP_WinchAttractor_01_C_ExecuteUbergraph_BP_WinchAttractor_01 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -43,10 +35,8 @@ void ABP_WinchAttractor_01_C::ExecuteUbergraph_BP_WinchAttractor_01(int32 EntryP
 
 void ABP_WinchAttractor_01_C::triggerAttractor(bool makeNoise)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WinchAttractor_01_C", "triggerAttractor");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"triggerAttractor", FnName));
 
 	Params::BP_WinchAttractor_01_C_triggerAttractor Parms{};
 
@@ -56,17 +46,21 @@ void ABP_WinchAttractor_01_C::triggerAttractor(bool makeNoise)
 }
 
 
-// Function BP_WinchAttractor_01.BP_WinchAttractor_01_C.triggerNoise
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_WinchAttractor_01.BP_WinchAttractor_01_C.ExecuteUbergraph_BP_WinchAttractor_01
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_WinchAttractor_01_C::triggerNoise()
+void ABP_WinchAttractor_01_C::ExecuteUbergraph_BP_WinchAttractor_01(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_WinchAttractor_01_C", "ExecuteUbergraph_BP_WinchAttractor_01", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WinchAttractor_01_C", "triggerNoise");
+	Params::BP_WinchAttractor_01_C_ExecuteUbergraph_BP_WinchAttractor_01 Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

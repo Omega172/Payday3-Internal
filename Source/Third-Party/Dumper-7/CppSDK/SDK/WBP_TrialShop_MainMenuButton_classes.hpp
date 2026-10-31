@@ -26,8 +26,8 @@ public:
 	class UWidgetAnimation*                       Focus;                                             // 0x03A0(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, RepSkip, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void ButtonFocusedChanged(bool bInHasFocus);
 	void ExecuteUbergraph_WBP_TrialShop_MainMenuButton(int32 EntryPoint);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
 
 public:
 	static class UClass* StaticClass()

@@ -16,59 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_BodyDisposerDumpster.BP_BodyDisposerDumpster_C.BP_OnActorDisposed
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   NumDisposed                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_BodyDisposerDumpster.BP_BodyDisposerDumpster_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_BodyDisposerDumpster_C::BP_OnActorDisposed(int32 NumDisposed, bool bDoCosmetics)
+void ABP_BodyDisposerDumpster_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BodyDisposerDumpster_C", "BP_OnActorDisposed");
-
-	Params::BP_BodyDisposerDumpster_C_BP_OnActorDisposed Parms{};
-
-	Parms.NumDisposed = NumDisposed;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BodyDisposerDumpster.BP_BodyDisposerDumpster_C.dumpBodyOpen_finished
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_BodyDisposerDumpster_C::dumpBodyOpen_finished()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BodyDisposerDumpster_C", "dumpBodyOpen_finished");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_BodyDisposerDumpster.BP_BodyDisposerDumpster_C.dumpBodyOpen_tick
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  alpha                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BodyDisposerDumpster_C::dumpBodyOpen_tick(double alpha)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BodyDisposerDumpster_C", "dumpBodyOpen_tick");
-
-	Params::BP_BodyDisposerDumpster_C_dumpBodyOpen_tick Parms{};
-
-	Parms.alpha = alpha;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -79,10 +35,8 @@ void ABP_BodyDisposerDumpster_C::dumpBodyOpen_tick(double alpha)
 
 void ABP_BodyDisposerDumpster_C::ExecuteUbergraph_BP_BodyDisposerDumpster(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BodyDisposerDumpster_C", "ExecuteUbergraph_BP_BodyDisposerDumpster");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_BodyDisposerDumpster_C", "ExecuteUbergraph_BP_BodyDisposerDumpster", FuncInfo);
 
 	Params::BP_BodyDisposerDumpster_C_ExecuteUbergraph_BP_BodyDisposerDumpster Parms{};
 
@@ -92,17 +46,53 @@ void ABP_BodyDisposerDumpster_C::ExecuteUbergraph_BP_BodyDisposerDumpster(int32 
 }
 
 
-// Function BP_BodyDisposerDumpster.BP_BodyDisposerDumpster_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_BodyDisposerDumpster.BP_BodyDisposerDumpster_C.dumpBodyOpen_tick
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  alpha_dumpBodyOpen_tick                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BodyDisposerDumpster_C::UserConstructionScript()
+void ABP_BodyDisposerDumpster_C::dumpBodyOpen_tick(double alpha_dumpBodyOpen_tick)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"dumpBodyOpen_tick", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BodyDisposerDumpster_C", "UserConstructionScript");
+	Params::BP_BodyDisposerDumpster_C_dumpBodyOpen_tick Parms{};
+
+	Parms.alpha_dumpBodyOpen_tick = alpha_dumpBodyOpen_tick;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BodyDisposerDumpster.BP_BodyDisposerDumpster_C.dumpBodyOpen_finished
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_BodyDisposerDumpster_C::dumpBodyOpen_finished()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"dumpBodyOpen_finished", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_BodyDisposerDumpster.BP_BodyDisposerDumpster_C.BP_OnActorDisposed
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   NumDisposed_BP_OnActorDisposed                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_BP_OnActorDisposed                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BodyDisposerDumpster_C::BP_OnActorDisposed(int32 NumDisposed_BP_OnActorDisposed, bool bDoCosmetics_BP_OnActorDisposed)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnActorDisposed", FnName));
+
+	Params::BP_BodyDisposerDumpster_C_BP_OnActorDisposed Parms{};
+
+	Parms.NumDisposed_BP_OnActorDisposed = NumDisposed_BP_OnActorDisposed;
+	Parms.bDoCosmetics_BP_OnActorDisposed = bDoCosmetics_BP_OnActorDisposed;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

@@ -35,10 +35,10 @@ public:
 	class UWidgetSwitcher*                        WidgetSwitcher_0;                                  // 0x0338(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Eyescanner(int32 EntryPoint);
-	void getContainerFromState(ESBZEyeScannerState state, class UWidget** widget);
-	void setState(ESBZEyeScannerState Selection);
 	void setText(const class FText& idle, const class FText& scanning, const class FText& denied, const class FText& granted);
+	void setState(ESBZEyeScannerState Selection);
+	void getContainerFromState(ESBZEyeScannerState state, class UWidget** widget);
+	void ExecuteUbergraph_WBP_Eyescanner(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -54,5 +54,6 @@ public:
 		return GetDefaultObjImpl<UWBP_Eyescanner_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_Eyescanner_C;
 
 SDK_NAMESPACE_END

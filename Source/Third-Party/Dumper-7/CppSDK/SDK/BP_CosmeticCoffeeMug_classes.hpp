@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_CosmeticCoffeeMug_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CosmeticCoffeeMug_C;
 
 SDK_NAMESPACE_END

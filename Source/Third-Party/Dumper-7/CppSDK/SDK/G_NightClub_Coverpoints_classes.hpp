@@ -36,9 +36,9 @@ public:
 	class ASBZRoomVolume*                         SBZRoomVolume3_ExecuteUbergraph_G_NightClub_Coverpoints_RefProperty; // 0x0430(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_G_NightClub_Coverpoints(int32 EntryPoint);
-	void SetRoomsPrivate();
 	void SetRoomsSecure();
+	void SetRoomsPrivate();
+	void ExecuteUbergraph_G_NightClub_Coverpoints(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -54,5 +54,6 @@ public:
 		return GetDefaultObjImpl<AG_NightClub_Coverpoints_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_NightClub_Coverpoints_C;
 
 SDK_NAMESPACE_END

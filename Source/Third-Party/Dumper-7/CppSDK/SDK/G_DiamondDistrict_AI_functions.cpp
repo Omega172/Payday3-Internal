@@ -16,23 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function G_DiamondDistrict_AI.G_DiamondDistrict_AI_C.BndEvt__G_DiamondDistrict_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_0_SBZSplineOnEnter__DelegateSignature
-// (BlueprintEvent)
+// Function G_DiamondDistrict_AI.G_DiamondDistrict_AI_C.ExecuteUbergraph_G_DiamondDistrict_AI
+// (Final, UbergraphFunction)
 // Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_DiamondDistrict_AI_C::BndEvt__G_DiamondDistrict_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_0_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+void AG_DiamondDistrict_AI_C::ExecuteUbergraph_G_DiamondDistrict_AI(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_DiamondDistrict_AI_C", "ExecuteUbergraph_G_DiamondDistrict_AI", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_DiamondDistrict_AI_C", "BndEvt__G_DiamondDistrict_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_0_SBZSplineOnEnter__DelegateSignature");
+	Params::G_DiamondDistrict_AI_C_ExecuteUbergraph_G_DiamondDistrict_AI Parms{};
 
-	Params::G_DiamondDistrict_AI_C_BndEvt__G_DiamondDistrict_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_0_SBZSplineOnEnter__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -46,10 +42,8 @@ void AG_DiamondDistrict_AI_C::BndEvt__G_DiamondDistrict_AI_SBZTrafficSpline_Firs
 
 void AG_DiamondDistrict_AI_C::BndEvt__G_DiamondDistrict_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_1_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_DiamondDistrict_AI_C", "BndEvt__G_DiamondDistrict_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_1_SBZSplineOnEnter__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_DiamondDistrict_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_1_SBZSplineOnEnter__DelegateSignature", FnName));
 
 	Params::G_DiamondDistrict_AI_C_BndEvt__G_DiamondDistrict_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_1_SBZSplineOnEnter__DelegateSignature Parms{};
 
@@ -60,21 +54,21 @@ void AG_DiamondDistrict_AI_C::BndEvt__G_DiamondDistrict_AI_SBZTrafficSpline_Firs
 }
 
 
-// Function G_DiamondDistrict_AI.G_DiamondDistrict_AI_C.ExecuteUbergraph_G_DiamondDistrict_AI
-// (Final, UbergraphFunction)
+// Function G_DiamondDistrict_AI.G_DiamondDistrict_AI_C.BndEvt__G_DiamondDistrict_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_0_SBZSplineOnEnter__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_DiamondDistrict_AI_C::ExecuteUbergraph_G_DiamondDistrict_AI(int32 EntryPoint)
+void AG_DiamondDistrict_AI_C::BndEvt__G_DiamondDistrict_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_0_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_DiamondDistrict_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_0_SBZSplineOnEnter__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_DiamondDistrict_AI_C", "ExecuteUbergraph_G_DiamondDistrict_AI");
+	Params::G_DiamondDistrict_AI_C_BndEvt__G_DiamondDistrict_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_0_SBZSplineOnEnter__DelegateSignature Parms{};
 
-	Params::G_DiamondDistrict_AI_C_ExecuteUbergraph_G_DiamondDistrict_AI Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

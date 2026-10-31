@@ -16,35 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_DoorAlarm.BP_DoorAlarm_C.ExecuteUbergraph_BP_DoorAlarm
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_DoorAlarm.BP_DoorAlarm_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_DoorAlarm_C::ExecuteUbergraph_BP_DoorAlarm(int32 EntryPoint)
+void ABP_DoorAlarm_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DoorAlarm_C", "ExecuteUbergraph_BP_DoorAlarm");
-
-	Params::BP_DoorAlarm_C_ExecuteUbergraph_BP_DoorAlarm Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_DoorAlarm.BP_DoorAlarm_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_DoorAlarm_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DoorAlarm_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -57,10 +35,8 @@ void ABP_DoorAlarm_C::ReceiveBeginPlay()
 
 void ABP_DoorAlarm_C::SetIndicatorLightStateByInt(int32 _Disable)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DoorAlarm_C", "SetIndicatorLightStateByInt");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetIndicatorLightStateByInt", FnName));
 
 	Params::BP_DoorAlarm_C_SetIndicatorLightStateByInt Parms{};
 
@@ -70,17 +46,33 @@ void ABP_DoorAlarm_C::SetIndicatorLightStateByInt(int32 _Disable)
 }
 
 
-// Function BP_DoorAlarm.BP_DoorAlarm_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_DoorAlarm.BP_DoorAlarm_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_DoorAlarm_C::UserConstructionScript()
+void ABP_DoorAlarm_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DoorAlarm_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_DoorAlarm.BP_DoorAlarm_C.ExecuteUbergraph_BP_DoorAlarm
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_DoorAlarm_C::ExecuteUbergraph_BP_DoorAlarm(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_DoorAlarm_C", "ExecuteUbergraph_BP_DoorAlarm", FuncInfo);
+
+	Params::BP_DoorAlarm_C_ExecuteUbergraph_BP_DoorAlarm Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

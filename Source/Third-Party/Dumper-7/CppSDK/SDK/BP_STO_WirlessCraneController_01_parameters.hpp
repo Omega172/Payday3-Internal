@@ -19,103 +19,66 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_InitialSBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_InitialSBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature final
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.setVisibility
+// 0x0001 (0x0001 - 0x0000)
+struct BP_STO_WirlessCraneController_01_C_setVisibility final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          visible;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_STO_WirlessCraneController_01_C_setVisibility;
 
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.setMarker
+// 0x0048 (0x0048 - 0x0000)
+struct BP_STO_WirlessCraneController_01_C_setMarker final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class USBZMarkerDataAsset*              MarkerDataAsset;                                   // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0010(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0028(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_AddLocalMarker_ReturnValue;               // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_STO_WirlessCraneController_01_C_setMarker;
 
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature final
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.setInteractable
+// 0x0001 (0x0001 - 0x0000)
+struct BP_STO_WirlessCraneController_01_C_setInteractable final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bEnabled;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_STO_WirlessCraneController_01_C_setInteractable;
 
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_9_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_9_SBZOnInteraction__DelegateSignature final
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.onSabotagedBP
+// 0x0001 (0x0001 - 0x0000)
+struct BP_STO_WirlessCraneController_01_C_onSabotagedBP final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_STO_WirlessCraneController_01_C_onSabotagedBP;
 
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_isPlacedSBZBinaryState_K2Node_ComponentBoundEvent_8_SBZBinaryStateChangedSignature__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_isPlacedSBZBinaryState_K2Node_ComponentBoundEvent_8_SBZBinaryStateChangedSignature__DelegateSignature final
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.GetMarkerText
+// 0x0080 (0x0080 - 0x0000)
+struct BP_STO_WirlessCraneController_01_C_GetMarkerText final
 {
 public:
-	bool                                          bState;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   ReturnValue_GetMarkerText;                         // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
+	ESBZSabotagePointState                        Temp_byte_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable;                                // 0x0018(0x0010)()
+	class FText                                   Temp_text_Variable_1;                              // 0x0028(0x0010)()
+	class FText                                   Temp_text_Variable_2;                              // 0x0038(0x0010)()
+	bool                                          Temp_bool_Variable;                                // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable_3;                              // 0x0050(0x0010)()
+	class FText                                   K2Node_Select_Default;                             // 0x0060(0x0010)()
+	class FText                                   K2Node_Select_Default_1;                           // 0x0070(0x0010)()
 };
-
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_7_SBZOnInteractableStateChangedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_7_SBZOnInteractableStateChangedDelegate__DelegateSignature final
-{
-public:
-	const class USBZBaseInteractableComponent*    InteractableComponent_0;                           // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInNewState;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BP_StateChanged
-// 0x0003 (0x0003 - 0x0000)
-struct BP_STO_WirlessCraneController_01_C_BP_StateChanged final
-{
-public:
-	ESBZSabotagePointState                        OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZSabotagePointState                        NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_STO_WirlessCraneController_01_C_GetMarkerText;
 
 // Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.ExecuteUbergraph_BP_STO_WirlessCraneController_01
 // 0x0108 (0x0108 - 0x0000)
@@ -182,62 +145,115 @@ public:
 	int32                                         CallFunc_PostAkEvent_ReturnValue;                  // 0x00FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0100(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_STO_WirlessCraneController_01_C_ExecuteUbergraph_BP_STO_WirlessCraneController_01;
 
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.GetMarkerText
-// 0x0080 (0x0080 - 0x0000)
-struct BP_STO_WirlessCraneController_01_C_GetMarkerText final
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BP_StateChanged
+// 0x0003 (0x0003 - 0x0000)
+struct BP_STO_WirlessCraneController_01_C_BP_StateChanged final
 {
 public:
-	class FText                                   ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
-	ESBZSabotagePointState                        Temp_byte_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable;                                // 0x0018(0x0010)()
-	class FText                                   Temp_text_Variable_1;                              // 0x0028(0x0010)()
-	class FText                                   Temp_text_Variable_2;                              // 0x0038(0x0010)()
-	bool                                          Temp_bool_Variable;                                // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable_3;                              // 0x0050(0x0010)()
-	class FText                                   K2Node_Select_Default;                             // 0x0060(0x0010)()
-	class FText                                   K2Node_Select_Default_1;                           // 0x0070(0x0010)()
+	ESBZSabotagePointState                        OldState_BP_StateChanged;                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZSabotagePointState                        NewState_BP_StateChanged;                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_BP_StateChanged;                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_STO_WirlessCraneController_01_C_BP_StateChanged;
 
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.onSabotagedBP
-// 0x0001 (0x0001 - 0x0000)
-struct BP_STO_WirlessCraneController_01_C_onSabotagedBP final
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_7_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_7_SBZOnInteractableStateChangedDelegate__DelegateSignature final
 {
 public:
-	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class USBZBaseInteractableComponent*    InteractableComponent;                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInNewState;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_7_SBZOnInteractableStateChangedDelegate__DelegateSignature;
 
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.setInteractable
-// 0x0001 (0x0001 - 0x0000)
-struct BP_STO_WirlessCraneController_01_C_setInteractable final
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature final
 {
 public:
-	bool                                          bEnabled;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature;
 
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.setMarker
-// 0x0048 (0x0048 - 0x0000)
-struct BP_STO_WirlessCraneController_01_C_setMarker final
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature final
 {
 public:
-	const class USBZMarkerDataAsset*              MarkerDataAsset;                                   // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0010(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0028(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_AddLocalMarker_ReturnValue;               // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature;
 
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.setVisibility
-// 0x0001 (0x0001 - 0x0000)
-struct BP_STO_WirlessCraneController_01_C_setVisibility final
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
 {
 public:
-	bool                                          visible;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature;
+
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_isPlacedSBZBinaryState_K2Node_ComponentBoundEvent_8_SBZBinaryStateChangedSignature__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_isPlacedSBZBinaryState_K2Node_ComponentBoundEvent_8_SBZBinaryStateChangedSignature__DelegateSignature final
+{
+public:
+	bool                                          bState;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_isPlacedSBZBinaryState_K2Node_ComponentBoundEvent_8_SBZBinaryStateChangedSignature__DelegateSignature;
+
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_9_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_9_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_9_SBZOnInteraction__DelegateSignature;
+
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature;
+
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature;
+
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_InitialSBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_InitialSBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_InitialSBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

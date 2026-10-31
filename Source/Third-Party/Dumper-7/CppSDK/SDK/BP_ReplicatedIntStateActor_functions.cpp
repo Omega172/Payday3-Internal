@@ -16,26 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ReplicatedIntStateActor.BP_ReplicatedIntStateActor_C.ExecuteUbergraph_BP_ReplicatedIntStateActor
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ReplicatedIntStateActor_C::ExecuteUbergraph_BP_ReplicatedIntStateActor(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedIntStateActor_C", "ExecuteUbergraph_BP_ReplicatedIntStateActor");
-
-	Params::BP_ReplicatedIntStateActor_C_ExecuteUbergraph_BP_ReplicatedIntStateActor Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_ReplicatedIntStateActor.BP_ReplicatedIntStateActor_C.SetStateInt
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -44,15 +24,31 @@ void ABP_ReplicatedIntStateActor_C::ExecuteUbergraph_BP_ReplicatedIntStateActor(
 
 void ABP_ReplicatedIntStateActor_C::SetStateInt(int32 Int, bool DoCosmetics)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedIntStateActor_C", "SetStateInt");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetStateInt", FnName));
 
 	Params::BP_ReplicatedIntStateActor_C_SetStateInt Parms{};
 
 	Parms.Int = Int;
 	Parms.DoCosmetics = DoCosmetics;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ReplicatedIntStateActor.BP_ReplicatedIntStateActor_C.ExecuteUbergraph_BP_ReplicatedIntStateActor
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ReplicatedIntStateActor_C::ExecuteUbergraph_BP_ReplicatedIntStateActor(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ReplicatedIntStateActor_C", "ExecuteUbergraph_BP_ReplicatedIntStateActor", FuncInfo);
+
+	Params::BP_ReplicatedIntStateActor_C_ExecuteUbergraph_BP_ReplicatedIntStateActor Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

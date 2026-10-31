@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_Moon_Tactical_Flashbang_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_Moon_Tactical_Flashbang_C;
 
 SDK_NAMESPACE_END

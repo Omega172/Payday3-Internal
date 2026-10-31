@@ -16,21 +16,153 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.BndEvt__BP_HackableInfoComputer_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.Timeline_0__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_HackableNetworkBox_NoActiveWaypoint_C::Timeline_0__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__UpdateFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.Timeline_0__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_HackableNetworkBox_NoActiveWaypoint_C::Timeline_0__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_HackableNetworkBox_NoActiveWaypoint_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.ExecuteUbergraph_BP_HackableNetworkBox_NoActiveWaypoint
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_HackableNetworkBox_NoActiveWaypoint_C::ExecuteUbergraph_BP_HackableNetworkBox_NoActiveWaypoint(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_HackableNetworkBox_NoActiveWaypoint_C", "ExecuteUbergraph_BP_HackableNetworkBox_NoActiveWaypoint", FuncInfo);
+
+	Params::BP_HackableNetworkBox_NoActiveWaypoint_C_ExecuteUbergraph_BP_HackableNetworkBox_NoActiveWaypoint Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.BP_UpdateProgressBar
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   ProgressDone_BP_UpdateProgressBar                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_HackableNetworkBox_NoActiveWaypoint_C::BP_UpdateProgressBar(int32 ProgressDone_BP_UpdateProgressBar)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_UpdateProgressBar", FnName));
+
+	Params::BP_HackableNetworkBox_NoActiveWaypoint_C_BP_UpdateProgressBar Parms{};
+
+	Parms.ProgressDone_BP_UpdateProgressBar = ProgressDone_BP_UpdateProgressBar;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.BP_OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZHackableActorState                  OldState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZHackableActorState                  NewState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_HackableNetworkBox_NoActiveWaypoint_C::BP_OnStateChanged(ESBZHackableActorState OldState_BP_OnStateChanged, ESBZHackableActorState NewState_BP_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnStateChanged", FnName));
+
+	Params::BP_HackableNetworkBox_NoActiveWaypoint_C_BP_OnStateChanged Parms{};
+
+	Parms.OldState_BP_OnStateChanged = OldState_BP_OnStateChanged;
+	Parms.NewState_BP_OnStateChanged = NewState_BP_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.BP_OnHackingStarted
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FText&                      ProcessText_BP_OnHackingStarted                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void ABP_HackableNetworkBox_NoActiveWaypoint_C::BP_OnHackingStarted(const class FText& ProcessText_BP_OnHackingStarted)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnHackingStarted", FnName));
+
+	Params::BP_HackableNetworkBox_NoActiveWaypoint_C_BP_OnHackingStarted Parms{};
+
+	Parms.ProcessText_BP_OnHackingStarted = std::move(ProcessText_BP_OnHackingStarted);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.BP_OnHackingInfoDone_1
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_HackableNetworkBox_NoActiveWaypoint_C::BP_OnHackingInfoDone_1()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnHackingInfoDone_1", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.BP_GainedAccess
+// (Event, Protected, BlueprintEvent)
+
+void ABP_HackableNetworkBox_NoActiveWaypoint_C::BP_GainedAccess()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_GainedAccess", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_HackableNetworkBox_NoActiveWaypoint_C::BndEvt__BP_HackableInfoComputer_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_HackableNetworkBox_NoActiveWaypoint_C::BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HackableNetworkBox_NoActiveWaypoint_C", "BndEvt__BP_HackableInfoComputer_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_HackableNetworkBox_NoActiveWaypoint_C_BndEvt__BP_HackableInfoComputer_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
+	Params::BP_HackableNetworkBox_NoActiveWaypoint_C_BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature Parms{};
 
 	Parms.Interactable = Interactable;
 	Parms.Interactor = Interactor;
@@ -49,10 +181,8 @@ void ABP_HackableNetworkBox_NoActiveWaypoint_C::BndEvt__BP_HackableInfoComputer_
 
 void ABP_HackableNetworkBox_NoActiveWaypoint_C::BndEvt__BP_HackableInfoComputer_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HackableNetworkBox_NoActiveWaypoint_C", "BndEvt__BP_HackableInfoComputer_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_HackableInfoComputer_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature", FnName));
 
 	Params::BP_HackableNetworkBox_NoActiveWaypoint_C_BndEvt__BP_HackableInfoComputer_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
 
@@ -64,21 +194,19 @@ void ABP_HackableNetworkBox_NoActiveWaypoint_C::BndEvt__BP_HackableInfoComputer_
 }
 
 
-// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature
+// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.BndEvt__BP_HackableInfoComputer_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_HackableNetworkBox_NoActiveWaypoint_C::BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_HackableNetworkBox_NoActiveWaypoint_C::BndEvt__BP_HackableInfoComputer_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_HackableInfoComputer_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HackableNetworkBox_NoActiveWaypoint_C", "BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_HackableNetworkBox_NoActiveWaypoint_C_BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature Parms{};
+	Params::BP_HackableNetworkBox_NoActiveWaypoint_C_BndEvt__BP_HackableInfoComputer_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
 	Parms.Interactable = Interactable;
 	Parms.Interactor = Interactor;
@@ -88,174 +216,20 @@ void ABP_HackableNetworkBox_NoActiveWaypoint_C::BndEvt__BP_HackableNetworkBox_NC
 }
 
 
-// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.BP_GainedAccess
-// (Event, Protected, BlueprintEvent)
-
-void ABP_HackableNetworkBox_NoActiveWaypoint_C::BP_GainedAccess()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HackableNetworkBox_NoActiveWaypoint_C", "BP_GainedAccess");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.BP_OnHackingInfoDone_1
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_HackableNetworkBox_NoActiveWaypoint_C::BP_OnHackingInfoDone_1()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HackableNetworkBox_NoActiveWaypoint_C", "BP_OnHackingInfoDone_1");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.BP_OnHackingStarted
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FText&                      ProcessText                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void ABP_HackableNetworkBox_NoActiveWaypoint_C::BP_OnHackingStarted(const class FText& ProcessText)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HackableNetworkBox_NoActiveWaypoint_C", "BP_OnHackingStarted");
-
-	Params::BP_HackableNetworkBox_NoActiveWaypoint_C_BP_OnHackingStarted Parms{};
-
-	Parms.ProcessText = std::move(ProcessText);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.BP_OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// ESBZHackableActorState                  OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZHackableActorState                  NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_HackableNetworkBox_NoActiveWaypoint_C::BP_OnStateChanged(ESBZHackableActorState OldState, ESBZHackableActorState NewState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HackableNetworkBox_NoActiveWaypoint_C", "BP_OnStateChanged");
-
-	Params::BP_HackableNetworkBox_NoActiveWaypoint_C_BP_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.BP_UpdateProgressBar
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   ProgressDone                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_HackableNetworkBox_NoActiveWaypoint_C::BP_UpdateProgressBar(int32 ProgressDone)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HackableNetworkBox_NoActiveWaypoint_C", "BP_UpdateProgressBar");
-
-	Params::BP_HackableNetworkBox_NoActiveWaypoint_C_BP_UpdateProgressBar Parms{};
-
-	Parms.ProgressDone = ProgressDone;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.ExecuteUbergraph_BP_HackableNetworkBox_NoActiveWaypoint
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_HackableNetworkBox_NoActiveWaypoint_C::ExecuteUbergraph_BP_HackableNetworkBox_NoActiveWaypoint(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HackableNetworkBox_NoActiveWaypoint_C", "ExecuteUbergraph_BP_HackableNetworkBox_NoActiveWaypoint");
-
-	Params::BP_HackableNetworkBox_NoActiveWaypoint_C_ExecuteUbergraph_BP_HackableNetworkBox_NoActiveWaypoint Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_HackableNetworkBox_NoActiveWaypoint_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HackableNetworkBox_NoActiveWaypoint_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.Timeline_0__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_HackableNetworkBox_NoActiveWaypoint_C::Timeline_0__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HackableNetworkBox_NoActiveWaypoint_C", "Timeline_0__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.Timeline_0__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_HackableNetworkBox_NoActiveWaypoint_C::Timeline_0__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HackableNetworkBox_NoActiveWaypoint_C", "Timeline_0__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.VisionPredicate
 // (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// const class AActor*                     Viewer                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class AActor*                     Viewer_VisionPredicate                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue_VisionPredicate                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-bool ABP_HackableNetworkBox_NoActiveWaypoint_C::VisionPredicate(const class AActor* Viewer) const
+bool ABP_HackableNetworkBox_NoActiveWaypoint_C::VisionPredicate(const class AActor* Viewer_VisionPredicate) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HackableNetworkBox_NoActiveWaypoint_C", "VisionPredicate");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"VisionPredicate", FnName));
 
 	Params::BP_HackableNetworkBox_NoActiveWaypoint_C_VisionPredicate Parms{};
 
-	Parms.Viewer = Viewer;
+	Parms.Viewer_VisionPredicate = Viewer_VisionPredicate;
 
 	UObject::ProcessEvent(Func, &Parms);
 

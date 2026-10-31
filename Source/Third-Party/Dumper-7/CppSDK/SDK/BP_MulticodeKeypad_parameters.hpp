@@ -18,61 +18,75 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.BndEvt__BP_MulticodeKeypad_sabotageState_SBZIntState_K2Node_ComponentBoundEvent_4_SBZIntStateChangedSignature__DelegateSignature
-// 0x000C (0x000C - 0x0000)
-struct BP_MulticodeKeypad_C_BndEvt__BP_MulticodeKeypad_sabotageState_SBZIntState_K2Node_ComponentBoundEvent_4_SBZIntStateChangedSignature__DelegateSignature final
-{
-public:
-	int32                                         OldState;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         NewState;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.BndEvt__BP_MulticodeKeypadTest_activate Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.UserConstructionScript
 // 0x0018 (0x0018 - 0x0000)
-struct BP_MulticodeKeypad_C_BndEvt__BP_MulticodeKeypadTest_activate_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
+struct BP_MulticodeKeypad_C_UserConstructionScript final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTextureRenderTarget2D*                 CallFunc_GetRenderTarget_ReturnValue;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_MulticodeKeypad_C_UserConstructionScript;
 
-// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.BP_OnCodeIndexChanged
-// 0x0018 (0x0018 - 0x0000)
-struct BP_MulticodeKeypad_C_BP_OnCodeIndexChanged final
+// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.setScreenState
+// 0x0003 (0x0003 - 0x0000)
+struct BP_MulticodeKeypad_C_setScreenState final
 {
 public:
-	int32                                         CurrentIndex;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Identifier;                                        // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	bool                                          enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsServer_ReturnValue;                     // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_MulticodeKeypad_C_setScreenState;
 
-// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.BP_OnGuessedCodeChanged
-// 0x0010 (0x0010 - 0x0000)
-struct BP_MulticodeKeypad_C_BP_OnGuessedCodeChanged final
+// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.setKeyCollision
+// 0x0068 (0x0068 - 0x0000)
+struct BP_MulticodeKeypad_C_setKeyCollision final
 {
 public:
-	class FText                                   GuessedCodeText;                                   // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	bool                                          enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   Temp_name_Variable;                                // 0x0004(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Temp_name_Variable_1;                              // 0x0010(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   K2Node_Select_Default;                             // 0x0020(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECollisionEnabled                             Temp_byte_Variable;                                // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECollisionEnabled                             Temp_byte_Variable_1;                              // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2E[0x2];                                       // 0x002E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECollisionEnabled                             K2Node_Select_Default_1;                           // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UPrimitiveComponent*>            K2Node_MakeArray_Array;                            // 0x0040(0x0010)(ReferenceParm, ContainsInstancedReference)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPrimitiveComponent*                    CallFunc_Array_Get_Item;                           // 0x0058(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_MulticodeKeypad_C_setKeyCollision;
 
-// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.BP_OnKeypadFocusChanged
-// 0x0008 (0x0008 - 0x0000)
-struct BP_MulticodeKeypad_C_BP_OnKeypadFocusChanged final
+// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.onSaboPointSabotaged
+// 0x0001 (0x0001 - 0x0000)
+struct BP_MulticodeKeypad_C_onSaboPointSabotaged final
 {
 public:
-	int32                                         KeyIndex;                                          // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInNewState;                                       // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_MulticodeKeypad_C_onSaboPointSabotaged;
 
-// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.BP_OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_MulticodeKeypad_C_BP_OnStateChanged final
+// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.onHackPointInterrupted
+// 0x0001 (0x0001 - 0x0000)
+struct BP_MulticodeKeypad_C_onHackPointInterrupted final
 {
 public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZHackableActorInterruptReason              Reason;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_MulticodeKeypad_C_onHackPointInterrupted;
 
 // Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.ExecuteUbergraph_BP_MulticodeKeypad
 // 0x0360 (0x0360 - 0x0000)
@@ -189,71 +203,69 @@ public:
 	int32                                         CallFunc_PostAkEvent_ReturnValue_7;                // 0x0358(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x035C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_MulticodeKeypad_C_ExecuteUbergraph_BP_MulticodeKeypad;
 
-// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.onHackPointInterrupted
-// 0x0001 (0x0001 - 0x0000)
-struct BP_MulticodeKeypad_C_onHackPointInterrupted final
+// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.BP_OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_MulticodeKeypad_C_BP_OnStateChanged final
 {
 public:
-	ESBZHackableActorInterruptReason              Reason;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZModuleActorState                          NewState_BP_OnStateChanged;                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_BP_OnStateChanged;                    // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_MulticodeKeypad_C_BP_OnStateChanged;
 
-// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.onSaboPointSabotaged
-// 0x0001 (0x0001 - 0x0000)
-struct BP_MulticodeKeypad_C_onSaboPointSabotaged final
+// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.BP_OnKeypadFocusChanged
+// 0x0008 (0x0008 - 0x0000)
+struct BP_MulticodeKeypad_C_BP_OnKeypadFocusChanged final
 {
 public:
-	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         KeyIndex_BP_OnKeypadFocusChanged;                  // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInNewState_BP_OnKeypadFocusChanged;               // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_MulticodeKeypad_C_BP_OnKeypadFocusChanged;
 
-// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.setKeyCollision
-// 0x0068 (0x0068 - 0x0000)
-struct BP_MulticodeKeypad_C_setKeyCollision final
+// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.BP_OnGuessedCodeChanged
+// 0x0010 (0x0010 - 0x0000)
+struct BP_MulticodeKeypad_C_BP_OnGuessedCodeChanged final
 {
 public:
-	bool                                          enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   Temp_name_Variable;                                // 0x0004(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Temp_name_Variable_1;                              // 0x0010(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   K2Node_Select_Default;                             // 0x0020(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECollisionEnabled                             Temp_byte_Variable;                                // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECollisionEnabled                             Temp_byte_Variable_1;                              // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2E[0x2];                                       // 0x002E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable;                                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECollisionEnabled                             K2Node_Select_Default_1;                           // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UPrimitiveComponent*>            K2Node_MakeArray_Array;                            // 0x0040(0x0010)(ReferenceParm, ContainsInstancedReference)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPrimitiveComponent*                    CallFunc_Array_Get_Item;                           // 0x0058(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   GuessedCodeText_BP_OnGuessedCodeChanged;           // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
+DUMPER7_ASSERTS_BP_MulticodeKeypad_C_BP_OnGuessedCodeChanged;
 
-// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.setScreenState
-// 0x0003 (0x0003 - 0x0000)
-struct BP_MulticodeKeypad_C_setScreenState final
-{
-public:
-	bool                                          enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsServer_ReturnValue;                     // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.UserConstructionScript
+// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.BP_OnCodeIndexChanged
 // 0x0018 (0x0018 - 0x0000)
-struct BP_MulticodeKeypad_C_UserConstructionScript final
+struct BP_MulticodeKeypad_C_BP_OnCodeIndexChanged final
 {
 public:
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTextureRenderTarget2D*                 CallFunc_GetRenderTarget_ReturnValue;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentIndex_BP_OnCodeIndexChanged;                // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Identifier_BP_OnCodeIndexChanged;                  // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
+DUMPER7_ASSERTS_BP_MulticodeKeypad_C_BP_OnCodeIndexChanged;
+
+// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.BndEvt__BP_MulticodeKeypadTest_activate Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_MulticodeKeypad_C_BndEvt__BP_MulticodeKeypadTest_activate_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_MulticodeKeypad_C_BndEvt__BP_MulticodeKeypadTest_activate_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature;
+
+// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.BndEvt__BP_MulticodeKeypad_sabotageState_SBZIntState_K2Node_ComponentBoundEvent_4_SBZIntStateChangedSignature__DelegateSignature
+// 0x000C (0x000C - 0x0000)
+struct BP_MulticodeKeypad_C_BndEvt__BP_MulticodeKeypad_sabotageState_SBZIntState_K2Node_ComponentBoundEvent_4_SBZIntStateChangedSignature__DelegateSignature final
+{
+public:
+	int32                                         OldState;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewState;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_MulticodeKeypad_C_BndEvt__BP_MulticodeKeypad_sabotageState_SBZIntState_K2Node_ComponentBoundEvent_4_SBZIntStateChangedSignature__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

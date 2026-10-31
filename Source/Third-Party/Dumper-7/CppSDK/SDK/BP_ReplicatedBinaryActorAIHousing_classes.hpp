@@ -34,11 +34,11 @@ public:
 	TMulticastInlineDelegate<void()>              InteractionCompleted;                              // 0x03A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__BP_ReplicatedBinaryActorAIHousing_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_ReplicatedBinaryActorAIHousing(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void z__FinishedFunc();
 	void z__UpdateFunc();
+	void z__FinishedFunc();
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_ReplicatedBinaryActorAIHousing(int32 EntryPoint);
+	void BndEvt__BP_ReplicatedBinaryActorAIHousing_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -54,5 +54,6 @@ public:
 		return GetDefaultObjImpl<ABP_ReplicatedBinaryActorAIHousing_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ReplicatedBinaryActorAIHousing_C;
 
 SDK_NAMESPACE_END

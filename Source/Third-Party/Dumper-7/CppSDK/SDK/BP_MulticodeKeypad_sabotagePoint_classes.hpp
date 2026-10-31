@@ -30,13 +30,13 @@ public:
 	TMulticastInlineDelegate<void()>              onSabotageFixed;                                   // 0x0468(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__BP_MulticodeKeypad_sabotagePoint_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_MulticodeKeypad_sabotagePoint(int32 EntryPoint);
-	void onPointSabotaged(bool bSabotaged);
-	void ReceiveBeginPlay();
-	void setState(int32 state);
-	void setUISlateRenderTarget();
 	void UserConstructionScript();
+	void setUISlateRenderTarget();
+	void setState(int32 state);
+	void ReceiveBeginPlay();
+	void onPointSabotaged(bool bSabotaged);
+	void ExecuteUbergraph_BP_MulticodeKeypad_sabotagePoint(int32 EntryPoint);
+	void BndEvt__BP_MulticodeKeypad_sabotagePoint_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -52,5 +52,6 @@ public:
 		return GetDefaultObjImpl<ABP_MulticodeKeypad_sabotagePoint_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_MulticodeKeypad_sabotagePoint_C;
 
 SDK_NAMESPACE_END

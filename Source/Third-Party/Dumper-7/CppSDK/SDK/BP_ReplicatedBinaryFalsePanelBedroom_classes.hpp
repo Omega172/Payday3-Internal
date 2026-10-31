@@ -40,14 +40,14 @@ public:
 	struct FVector                                endLoc;                                            // 0x03D0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_ReplicatedBinaryFalsePanelBedroom_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_ReplicatedBinaryFalsePanelBedroom_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_ReplicatedBinaryFalsePanelBedroom(int32 EntryPoint);
-	void InteractionEnabled(bool Enabled);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void Timeline_0__FinishedFunc();
-	void Timeline_0__UpdateFunc();
 	void UserConstructionScript();
+	void Timeline_0__UpdateFunc();
+	void Timeline_0__FinishedFunc();
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void InteractionEnabled(bool Enabled);
+	void ExecuteUbergraph_BP_ReplicatedBinaryFalsePanelBedroom(int32 EntryPoint);
+	void BndEvt__BP_ReplicatedBinaryFalsePanelBedroom_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_ReplicatedBinaryFalsePanelBedroom_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -63,5 +63,6 @@ public:
 		return GetDefaultObjImpl<ABP_ReplicatedBinaryFalsePanelBedroom_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ReplicatedBinaryFalsePanelBedroom_C;
 
 SDK_NAMESPACE_END

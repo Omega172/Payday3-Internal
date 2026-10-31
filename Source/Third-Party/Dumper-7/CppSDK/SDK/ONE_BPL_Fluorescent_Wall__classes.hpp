@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<AONE_BPL_Fluorescent_Wall__C>();
 	}
 };
+DUMPER7_ASSERTS_AONE_BPL_Fluorescent_Wall__C;
 
 SDK_NAMESPACE_END

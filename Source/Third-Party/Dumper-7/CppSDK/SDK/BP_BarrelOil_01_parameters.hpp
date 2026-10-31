@@ -16,15 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_BarrelOil_01.BP_BarrelOil_01_C.BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct BP_BarrelOil_01_C_BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature final
-{
-public:
-	class UActorComponent*                        Component;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bReset;                                            // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_BarrelOil_01.BP_BarrelOil_01_C.ExecuteUbergraph_BP_BarrelOil_01
 // 0x0030 (0x0030 - 0x0000)
 struct BP_BarrelOil_01_C_ExecuteUbergraph_BP_BarrelOil_01 final
@@ -37,6 +28,17 @@ public:
 	class UActorComponent*                        K2Node_ComponentBoundEvent_Component;              // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ComponentBoundEvent_bReset;                 // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_BarrelOil_01_C_ExecuteUbergraph_BP_BarrelOil_01;
+
+// Function BP_BarrelOil_01.BP_BarrelOil_01_C.BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct BP_BarrelOil_01_C_BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature final
+{
+public:
+	class UActorComponent*                        Component;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bReset;                                            // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BarrelOil_01_C_BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

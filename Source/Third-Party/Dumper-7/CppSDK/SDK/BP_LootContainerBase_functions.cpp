@@ -16,49 +16,123 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_LootContainerBase.BP_LootContainerBase_C.BndEvt__BP_LootContainerBase_currentVariation_SBZIntState_K2Node_ComponentBoundEvent_1_SBZIntStateChangedSignature__DelegateSignature
-// (BlueprintEvent)
+// Function BP_LootContainerBase.BP_LootContainerBase_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_LootContainerBase_C::UserConstructionScript()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_LootContainerBase.BP_LootContainerBase_C.setMesh
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   index                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LootContainerBase_C::setMesh(int32 index)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setMesh", FnName));
+
+	Params::BP_LootContainerBase_C_setMesh Parms{};
+
+	Parms.index = index;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_LootContainerBase.BP_LootContainerBase_C.setLoot
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LootContainerBase_C::setLoot(bool enabled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setLoot", FnName));
+
+	Params::BP_LootContainerBase_C_setLoot Parms{};
+
+	Parms.enabled = enabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_LootContainerBase.BP_LootContainerBase_C.setInteraction
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LootContainerBase_C::setInteraction(bool enabled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setInteraction", FnName));
+
+	Params::BP_LootContainerBase_C_setInteraction Parms{};
+
+	Parms.enabled = enabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_LootContainerBase.BP_LootContainerBase_C.setIndex
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   index                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LootContainerBase_C::setIndex(int32 index)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setIndex", FnName));
+
+	Params::BP_LootContainerBase_C_setIndex Parms{};
+
+	Parms.index = index;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_LootContainerBase.BP_LootContainerBase_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LootContainerBase_C::BndEvt__BP_LootContainerBase_currentVariation_SBZIntState_K2Node_ComponentBoundEvent_1_SBZIntStateChangedSignature__DelegateSignature(int32 OldState, int32 NewState, bool bDoCosmetics)
+void ABP_LootContainerBase_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LootContainerBase_C", "BndEvt__BP_LootContainerBase_currentVariation_SBZIntState_K2Node_ComponentBoundEvent_1_SBZIntStateChangedSignature__DelegateSignature");
+	Params::BP_LootContainerBase_C_OnStateChanged Parms{};
 
-	Params::BP_LootContainerBase_C_BndEvt__BP_LootContainerBase_currentVariation_SBZIntState_K2Node_ComponentBoundEvent_1_SBZIntStateChangedSignature__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
+	Parms.bStateToChangeTo = bStateToChangeTo;
 	Parms.bDoCosmetics = bDoCosmetics;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_LootContainerBase.BP_LootContainerBase_C.BndEvt__BP_LootContainerBase_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
+// Function BP_LootContainerBase.BP_LootContainerBase_C.ExecuteUbergraph_BP_LootContainerBase
+// (Final, UbergraphFunction)
 // Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LootContainerBase_C::BndEvt__BP_LootContainerBase_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_LootContainerBase_C::ExecuteUbergraph_BP_LootContainerBase(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_LootContainerBase_C", "ExecuteUbergraph_BP_LootContainerBase", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LootContainerBase_C", "BndEvt__BP_LootContainerBase_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature");
+	Params::BP_LootContainerBase_C_ExecuteUbergraph_BP_LootContainerBase Parms{};
 
-	Params::BP_LootContainerBase_C_BndEvt__BP_LootContainerBase_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -73,10 +147,8 @@ void ABP_LootContainerBase_C::BndEvt__BP_LootContainerBase_SBZInteractable_K2Nod
 
 void ABP_LootContainerBase_C::BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LootContainerBase_C", "BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
 
 	Params::BP_LootContainerBase_C_BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
@@ -88,139 +160,47 @@ void ABP_LootContainerBase_C::BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_
 }
 
 
-// Function BP_LootContainerBase.BP_LootContainerBase_C.ExecuteUbergraph_BP_LootContainerBase
-// (Final, UbergraphFunction)
+// Function BP_LootContainerBase.BP_LootContainerBase_C.BndEvt__BP_LootContainerBase_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LootContainerBase_C::ExecuteUbergraph_BP_LootContainerBase(int32 EntryPoint)
+void ABP_LootContainerBase_C::BndEvt__BP_LootContainerBase_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_LootContainerBase_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LootContainerBase_C", "ExecuteUbergraph_BP_LootContainerBase");
+	Params::BP_LootContainerBase_C_BndEvt__BP_LootContainerBase_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature Parms{};
 
-	Params::BP_LootContainerBase_C_ExecuteUbergraph_BP_LootContainerBase Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_LootContainerBase.BP_LootContainerBase_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
+// Function BP_LootContainerBase.BP_LootContainerBase_C.BndEvt__BP_LootContainerBase_currentVariation_SBZIntState_K2Node_ComponentBoundEvent_1_SBZIntStateChangedSignature__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LootContainerBase_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
+void ABP_LootContainerBase_C::BndEvt__BP_LootContainerBase_currentVariation_SBZIntState_K2Node_ComponentBoundEvent_1_SBZIntStateChangedSignature__DelegateSignature(int32 OldState, int32 NewState, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_LootContainerBase_currentVariation_SBZIntState_K2Node_ComponentBoundEvent_1_SBZIntStateChangedSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LootContainerBase_C", "OnStateChanged");
+	Params::BP_LootContainerBase_C_BndEvt__BP_LootContainerBase_currentVariation_SBZIntState_K2Node_ComponentBoundEvent_1_SBZIntStateChangedSignature__DelegateSignature Parms{};
 
-	Params::BP_LootContainerBase_C_OnStateChanged Parms{};
-
-	Parms.bStateToChangeTo = bStateToChangeTo;
+	Parms.OldState = OldState;
+	Parms.NewState = NewState;
 	Parms.bDoCosmetics = bDoCosmetics;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LootContainerBase.BP_LootContainerBase_C.setIndex
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   index                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LootContainerBase_C::setIndex(int32 index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LootContainerBase_C", "setIndex");
-
-	Params::BP_LootContainerBase_C_setIndex Parms{};
-
-	Parms.index = index;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LootContainerBase.BP_LootContainerBase_C.setInteraction
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LootContainerBase_C::setInteraction(bool enabled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LootContainerBase_C", "setInteraction");
-
-	Params::BP_LootContainerBase_C_setInteraction Parms{};
-
-	Parms.enabled = enabled;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LootContainerBase.BP_LootContainerBase_C.setLoot
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LootContainerBase_C::setLoot(bool enabled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LootContainerBase_C", "setLoot");
-
-	Params::BP_LootContainerBase_C_setLoot Parms{};
-
-	Parms.enabled = enabled;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LootContainerBase.BP_LootContainerBase_C.setMesh
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   index                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LootContainerBase_C::setMesh(int32 index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LootContainerBase_C", "setMesh");
-
-	Params::BP_LootContainerBase_C_setMesh Parms{};
-
-	Parms.index = index;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LootContainerBase.BP_LootContainerBase_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_LootContainerBase_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LootContainerBase_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

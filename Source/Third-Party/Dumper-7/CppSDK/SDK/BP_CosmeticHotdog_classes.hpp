@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_CosmeticHotdog_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CosmeticHotdog_C;
 
 SDK_NAMESPACE_END

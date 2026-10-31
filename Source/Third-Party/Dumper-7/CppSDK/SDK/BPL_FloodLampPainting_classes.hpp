@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABPL_FloodLampPainting_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_FloodLampPainting_C;
 
 SDK_NAMESPACE_END

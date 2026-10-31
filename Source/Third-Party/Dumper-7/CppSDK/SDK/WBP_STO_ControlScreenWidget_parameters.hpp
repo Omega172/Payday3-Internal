@@ -16,6 +16,33 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_STO_ControlScreenWidget.WBP_STO_ControlScreenWidget_C.setCodeText
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_STO_ControlScreenWidget_C_setCodeText final
+{
+public:
+	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_STO_ControlScreenWidget_C_setCodeText;
+
+// Function WBP_STO_ControlScreenWidget.WBP_STO_ControlScreenWidget_C.setCircuitBreakerText
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_STO_ControlScreenWidget_C_setCircuitBreakerText final
+{
+public:
+	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_STO_ControlScreenWidget_C_setCircuitBreakerText;
+
+// Function WBP_STO_ControlScreenWidget.WBP_STO_ControlScreenWidget_C.setBackgroundColor
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_STO_ControlScreenWidget_C_setBackgroundColor final
+{
+public:
+	ESBZModuleActorState                          state;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_STO_ControlScreenWidget_C_setBackgroundColor;
+
 // Function WBP_STO_ControlScreenWidget.WBP_STO_ControlScreenWidget_C.ExecuteUbergraph_WBP_STO_ControlScreenWidget
 // 0x0030 (0x0030 - 0x0000)
 struct WBP_STO_ControlScreenWidget_C_ExecuteUbergraph_WBP_STO_ControlScreenWidget final
@@ -27,30 +54,7 @@ public:
 	class FText                                   K2Node_CustomEvent_InText;                         // 0x0018(0x0010)()
 	ESBZModuleActorState                          K2Node_CustomEvent_state;                          // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function WBP_STO_ControlScreenWidget.WBP_STO_ControlScreenWidget_C.setBackgroundColor
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_STO_ControlScreenWidget_C_setBackgroundColor final
-{
-public:
-	ESBZModuleActorState                          state;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WBP_STO_ControlScreenWidget.WBP_STO_ControlScreenWidget_C.setCircuitBreakerText
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_STO_ControlScreenWidget_C_setCircuitBreakerText final
-{
-public:
-	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-
-// Function WBP_STO_ControlScreenWidget.WBP_STO_ControlScreenWidget_C.setCodeText
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_STO_ControlScreenWidget_C_setCodeText final
-{
-public:
-	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
+DUMPER7_ASSERTS_WBP_STO_ControlScreenWidget_C_ExecuteUbergraph_WBP_STO_ControlScreenWidget;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

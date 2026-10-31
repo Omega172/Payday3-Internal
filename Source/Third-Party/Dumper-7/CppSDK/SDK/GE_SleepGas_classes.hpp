@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_SleepGas_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_SleepGas_C;
 
 SDK_NAMESPACE_END

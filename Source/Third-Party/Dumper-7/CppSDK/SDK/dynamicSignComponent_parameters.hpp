@@ -25,6 +25,7 @@ public:
 	class UWBP_DynamicSign_Base_C*                K2Node_DynamicCast_AsWBP_Dynamic_Sign_Base;        // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_dynamicSignComponent_C_ExecuteUbergraph_dynamicSignComponent;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -16,20 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function G_Sky_AI.G_Sky_AI_C.ActionPhaseStarted
-// (Event, Public, BlueprintEvent)
-
-void AG_Sky_AI_C::ActionPhaseStarted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Sky_AI_C", "ActionPhaseStarted");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function G_Sky_AI.G_Sky_AI_C.ExecuteUbergraph_G_Sky_AI
 // (Final, UbergraphFunction)
 // Parameters:
@@ -37,16 +23,26 @@ void AG_Sky_AI_C::ActionPhaseStarted()
 
 void AG_Sky_AI_C::ExecuteUbergraph_G_Sky_AI(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Sky_AI_C", "ExecuteUbergraph_G_Sky_AI");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_Sky_AI_C", "ExecuteUbergraph_G_Sky_AI", FuncInfo);
 
 	Params::G_Sky_AI_C_ExecuteUbergraph_G_Sky_AI Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Sky_AI.G_Sky_AI_C.ActionPhaseStarted
+// (Event, Public, BlueprintEvent)
+
+void AG_Sky_AI_C::ActionPhaseStarted()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActionPhaseStarted", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

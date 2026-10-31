@@ -16,85 +16,53 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Cuttable_destructable_Skylight_Rectangular_01.BP_Cuttable_destructable_Skylight_Rectangular_01_C.BndEvt__BP_Cuttable_destructable_Skylight_Square_01_SBZPropDamage_K2Node_ComponentBoundEvent_2_SBZPropDamageHitsSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// class UActorComponent*                  PoolComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   Hits                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZPropDamageContext&     DamageContext                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// Function BP_Cuttable_destructable_Skylight_Rectangular_01.BP_Cuttable_destructable_Skylight_Rectangular_01_C.Timeline_0__UpdateFunc
+// (BlueprintEvent)
 
-void ABP_Cuttable_destructable_Skylight_Rectangular_01_C::BndEvt__BP_Cuttable_destructable_Skylight_Square_01_SBZPropDamage_K2Node_ComponentBoundEvent_2_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
+void ABP_Cuttable_destructable_Skylight_Rectangular_01_C::Timeline_0__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__UpdateFunc", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Cuttable_destructable_Skylight_Rectangular_01_C", "BndEvt__BP_Cuttable_destructable_Skylight_Square_01_SBZPropDamage_K2Node_ComponentBoundEvent_2_SBZPropDamageHitsSignature__DelegateSignature");
-
-	Params::BP_Cuttable_destructable_Skylight_Rectangular_01_C_BndEvt__BP_Cuttable_destructable_Skylight_Square_01_SBZPropDamage_K2Node_ComponentBoundEvent_2_SBZPropDamageHitsSignature__DelegateSignature Parms{};
-
-	Parms.PoolComponent = PoolComponent;
-	Parms.Hits = Hits;
-	Parms.bDoCosmetics = bDoCosmetics;
-	Parms.DamageContext = std::move(DamageContext);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Cuttable_destructable_Skylight_Rectangular_01.BP_Cuttable_destructable_Skylight_Rectangular_01_C.ExecuteUbergraph_BP_Cuttable_destructable_Skylight_Rectangular_01
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Cuttable_destructable_Skylight_Rectangular_01.BP_Cuttable_destructable_Skylight_Rectangular_01_C.Timeline_0__FinishedFunc
+// (BlueprintEvent)
 
-void ABP_Cuttable_destructable_Skylight_Rectangular_01_C::ExecuteUbergraph_BP_Cuttable_destructable_Skylight_Rectangular_01(int32 EntryPoint)
+void ABP_Cuttable_destructable_Skylight_Rectangular_01_C::Timeline_0__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__FinishedFunc", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Cuttable_destructable_Skylight_Rectangular_01_C", "ExecuteUbergraph_BP_Cuttable_destructable_Skylight_Rectangular_01");
-
-	Params::BP_Cuttable_destructable_Skylight_Rectangular_01_C_ExecuteUbergraph_BP_Cuttable_destructable_Skylight_Rectangular_01 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Cuttable_destructable_Skylight_Rectangular_01.BP_Cuttable_destructable_Skylight_Rectangular_01_C.GetCuttableComponent
+// Function BP_Cuttable_destructable_Skylight_Rectangular_01.BP_Cuttable_destructable_Skylight_Rectangular_01_C.OnCutCompleted
+// (Event, Public, BlueprintEvent)
+
+void ABP_Cuttable_destructable_Skylight_Rectangular_01_C::OnCutCompleted()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnCutCompleted", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Cuttable_destructable_Skylight_Rectangular_01.BP_Cuttable_destructable_Skylight_Rectangular_01_C.GetMeltingMesh
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZCuttableComponent*            ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UStaticMeshComponent*             ReturnValue_GetMeltingMesh                             (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-class USBZCuttableComponent* ABP_Cuttable_destructable_Skylight_Rectangular_01_C::GetCuttableComponent()
+class UStaticMeshComponent* ABP_Cuttable_destructable_Skylight_Rectangular_01_C::GetMeltingMesh()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetMeltingMesh", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Cuttable_destructable_Skylight_Rectangular_01_C", "GetCuttableComponent");
-
-	Params::BP_Cuttable_destructable_Skylight_Rectangular_01_C_GetCuttableComponent Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function BP_Cuttable_destructable_Skylight_Rectangular_01.BP_Cuttable_destructable_Skylight_Rectangular_01_C.GetCuttableSplineComponent
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZCuttableSplineComponent*      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-class USBZCuttableSplineComponent* ABP_Cuttable_destructable_Skylight_Rectangular_01_C::GetCuttableSplineComponent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Cuttable_destructable_Skylight_Rectangular_01_C", "GetCuttableSplineComponent");
-
-	Params::BP_Cuttable_destructable_Skylight_Rectangular_01_C_GetCuttableSplineComponent Parms{};
+	Params::BP_Cuttable_destructable_Skylight_Rectangular_01_C_GetMeltingMesh Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -107,28 +75,24 @@ class USBZCuttableSplineComponent* ABP_Cuttable_destructable_Skylight_Rectangula
 
 void ABP_Cuttable_destructable_Skylight_Rectangular_01_C::GetMaterialBillboardComponent()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Cuttable_destructable_Skylight_Rectangular_01_C", "GetMaterialBillboardComponent");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetMaterialBillboardComponent", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Cuttable_destructable_Skylight_Rectangular_01.BP_Cuttable_destructable_Skylight_Rectangular_01_C.GetMeltingMesh
+// Function BP_Cuttable_destructable_Skylight_Rectangular_01.BP_Cuttable_destructable_Skylight_Rectangular_01_C.GetCuttableSplineComponent
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UStaticMeshComponent*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZCuttableSplineComponent*      ReturnValue_GetCuttableSplineComponent                 (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-class UStaticMeshComponent* ABP_Cuttable_destructable_Skylight_Rectangular_01_C::GetMeltingMesh()
+class USBZCuttableSplineComponent* ABP_Cuttable_destructable_Skylight_Rectangular_01_C::GetCuttableSplineComponent()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetCuttableSplineComponent", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Cuttable_destructable_Skylight_Rectangular_01_C", "GetMeltingMesh");
-
-	Params::BP_Cuttable_destructable_Skylight_Rectangular_01_C_GetMeltingMesh Parms{};
+	Params::BP_Cuttable_destructable_Skylight_Rectangular_01_C_GetCuttableSplineComponent Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -136,45 +100,63 @@ class UStaticMeshComponent* ABP_Cuttable_destructable_Skylight_Rectangular_01_C:
 }
 
 
-// Function BP_Cuttable_destructable_Skylight_Rectangular_01.BP_Cuttable_destructable_Skylight_Rectangular_01_C.OnCutCompleted
-// (Event, Public, BlueprintEvent)
+// Function BP_Cuttable_destructable_Skylight_Rectangular_01.BP_Cuttable_destructable_Skylight_Rectangular_01_C.GetCuttableComponent
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZCuttableComponent*            ReturnValue_GetCuttableComponent                       (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Cuttable_destructable_Skylight_Rectangular_01_C::OnCutCompleted()
+class USBZCuttableComponent* ABP_Cuttable_destructable_Skylight_Rectangular_01_C::GetCuttableComponent()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetCuttableComponent", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Cuttable_destructable_Skylight_Rectangular_01_C", "OnCutCompleted");
+	Params::BP_Cuttable_destructable_Skylight_Rectangular_01_C_GetCuttableComponent Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 
-// Function BP_Cuttable_destructable_Skylight_Rectangular_01.BP_Cuttable_destructable_Skylight_Rectangular_01_C.Timeline_0__FinishedFunc
-// (BlueprintEvent)
+// Function BP_Cuttable_destructable_Skylight_Rectangular_01.BP_Cuttable_destructable_Skylight_Rectangular_01_C.ExecuteUbergraph_BP_Cuttable_destructable_Skylight_Rectangular_01
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Cuttable_destructable_Skylight_Rectangular_01_C::Timeline_0__FinishedFunc()
+void ABP_Cuttable_destructable_Skylight_Rectangular_01_C::ExecuteUbergraph_BP_Cuttable_destructable_Skylight_Rectangular_01(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Cuttable_destructable_Skylight_Rectangular_01_C", "ExecuteUbergraph_BP_Cuttable_destructable_Skylight_Rectangular_01", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Cuttable_destructable_Skylight_Rectangular_01_C", "Timeline_0__FinishedFunc");
+	Params::BP_Cuttable_destructable_Skylight_Rectangular_01_C_ExecuteUbergraph_BP_Cuttable_destructable_Skylight_Rectangular_01 Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_Cuttable_destructable_Skylight_Rectangular_01.BP_Cuttable_destructable_Skylight_Rectangular_01_C.Timeline_0__UpdateFunc
-// (BlueprintEvent)
+// Function BP_Cuttable_destructable_Skylight_Rectangular_01.BP_Cuttable_destructable_Skylight_Rectangular_01_C.BndEvt__BP_Cuttable_destructable_Skylight_Square_01_SBZPropDamage_K2Node_ComponentBoundEvent_2_SBZPropDamageHitsSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// class UActorComponent*                  PoolComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   Hits                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZPropDamageContext&     DamageContext                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 
-void ABP_Cuttable_destructable_Skylight_Rectangular_01_C::Timeline_0__UpdateFunc()
+void ABP_Cuttable_destructable_Skylight_Rectangular_01_C::BndEvt__BP_Cuttable_destructable_Skylight_Square_01_SBZPropDamage_K2Node_ComponentBoundEvent_2_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Cuttable_destructable_Skylight_Square_01_SBZPropDamage_K2Node_ComponentBoundEvent_2_SBZPropDamageHitsSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Cuttable_destructable_Skylight_Rectangular_01_C", "Timeline_0__UpdateFunc");
+	Params::BP_Cuttable_destructable_Skylight_Rectangular_01_C_BndEvt__BP_Cuttable_destructable_Skylight_Square_01_SBZPropDamage_K2Node_ComponentBoundEvent_2_SBZPropDamageHitsSignature__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.PoolComponent = PoolComponent;
+	Parms.Hits = Hits;
+	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.DamageContext = std::move(DamageContext);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

@@ -83,24 +83,24 @@ public:
 	class ABP_NavLink_Agility_C*                  BP_NavLink_Agility408_ExecuteUbergraph_G_SnGFO_Navlinks_RefProperty; // 0x05A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BlackScreenStarted();
-	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume10_K2Node_ActorBoundEvent_9_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume11_K2Node_ActorBoundEvent_10_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume12_K2Node_ActorBoundEvent_11_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume13_K2Node_ActorBoundEvent_12_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume14_K2Node_ActorBoundEvent_13_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume9_K2Node_ActorBoundEvent_8_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void ExecuteUbergraph_G_SnGFO_Navlinks(int32 EntryPoint);
-	void GarageOpened();
-	void OnPreplanningAssetsTagsApplied(const struct FGameplayTagContainer& PreplanningTagContainer);
-	void SpawnCrossing();
-	void SpawnGarage();
-	void SpawnSewer();
-	void SpawnSideStreet();
-	void TruckIsInAlly();
-	void TruckLoadingAreaGone();
-	void TruckSideAllyGone();
 	void TruckStreetGone();
+	void TruckSideAllyGone();
+	void TruckLoadingAreaGone();
+	void TruckIsInAlly();
+	void SpawnSideStreet();
+	void SpawnSewer();
+	void SpawnGarage();
+	void SpawnCrossing();
+	void OnPreplanningAssetsTagsApplied(const struct FGameplayTagContainer& PreplanningTagContainer_OnPreplanningAssetsTagsApplied);
+	void GarageOpened();
+	void ExecuteUbergraph_G_SnGFO_Navlinks(int32 EntryPoint);
+	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume9_K2Node_ActorBoundEvent_8_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume14_K2Node_ActorBoundEvent_13_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume13_K2Node_ActorBoundEvent_12_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume12_K2Node_ActorBoundEvent_11_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume11_K2Node_ActorBoundEvent_10_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume10_K2Node_ActorBoundEvent_9_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BlackScreenStarted();
 
 public:
 	static class UClass* StaticClass()
@@ -116,5 +116,6 @@ public:
 		return GetDefaultObjImpl<AG_SnGFO_Navlinks_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_SnGFO_Navlinks_C;
 
 SDK_NAMESPACE_END

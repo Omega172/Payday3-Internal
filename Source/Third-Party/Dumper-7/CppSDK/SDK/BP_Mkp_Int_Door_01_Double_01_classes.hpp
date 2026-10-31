@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Mkp_Int_Door_01_Double_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Mkp_Int_Door_01_Double_01_C;
 
 SDK_NAMESPACE_END

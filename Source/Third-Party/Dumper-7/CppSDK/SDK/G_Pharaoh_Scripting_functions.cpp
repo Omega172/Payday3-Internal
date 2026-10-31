@@ -16,251 +16,645 @@
 
 SDK_NAMESPACE_START
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.ActivateCombat
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.TurnOffLasers
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<class ASBZLaserGrid*>&           Array                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void AG_Pharaoh_Scripting_C::TurnOffLasers(TArray<class ASBZLaserGrid*>& Array)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TurnOffLasers", FnName));
+
+	Params::G_Pharaoh_Scripting_C_TurnOffLasers Parms{};
+
+	Parms.Array = std::move(Array);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Array = std::move(Parms.Array);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.TryActivateEscapeZone
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Pharaoh_Scripting_C::ActivateCombat()
+void AG_Pharaoh_Scripting_C::TryActivateEscapeZone()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "ActivateCombat");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TryActivateEscapeZone", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.ActivateEscortGuard
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.StartLaserPatterns
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<class ASBZLaserGrid*>&           self2                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void AG_Pharaoh_Scripting_C::StartLaserPatterns(TArray<class ASBZLaserGrid*>& self2)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StartLaserPatterns", FnName));
+
+	Params::G_Pharaoh_Scripting_C_StartLaserPatterns Parms{};
+
+	Parms.self2 = std::move(self2);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	self2 = std::move(Parms.self2);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.SpawnMatrixRoomEmployees
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Pharaoh_Scripting_C::ActivateEscortGuard()
+void AG_Pharaoh_Scripting_C::SpawnMatrixRoomEmployees()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "ActivateEscortGuard");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnMatrixRoomEmployees", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.ActivateGrenades
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.SewerVO
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Pharaoh_Scripting_C::ActivateGrenades()
+void AG_Pharaoh_Scripting_C::SewerVO()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "ActivateGrenades");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SewerVO", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.ActivateIrisScanner
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Pharaoh_Scripting_C::ActivateIrisScanner()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "ActivateIrisScanner");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.ActivateMaskUp
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Pharaoh_Scripting_C::ActivateMaskUp()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "ActivateMaskUp");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.ActivateOVKWeapons
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Pharaoh_Scripting_C::ActivateOVKWeapons()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "ActivateOVKWeapons");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.ActivateSwitchWeaponPopup
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Pharaoh_Scripting_C::ActivateSwitchWeaponPopup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "ActivateSwitchWeaponPopup");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.ActivateTieUpPopUp
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.SecureLootLoud
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   Progress                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::ActivateTieUpPopUp(class APawn* Pawn)
+void AG_Pharaoh_Scripting_C::SecureLootLoud(int32 Progress)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SecureLootLoud", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "ActivateTieUpPopUp");
+	Params::G_Pharaoh_Scripting_C_SecureLootLoud Parms{};
 
-	Params::G_Pharaoh_Scripting_C_ActivateTieUpPopUp Parms{};
-
-	Parms.Pawn = Pawn;
+	Parms.Progress = Progress;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.AssaultCounter
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.SecureLoot
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Progress                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::SecureLoot(int32 Progress)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SecureLoot", FnName));
+
+	Params::G_Pharaoh_Scripting_C_SecureLoot Parms{};
+
+	Parms.Progress = Progress;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.RemoveThrowBagPopup
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::RemoveThrowBagPopup(class FName ClosingActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RemoveThrowBagPopup", FnName));
+
+	Params::G_Pharaoh_Scripting_C_RemoveThrowBagPopup Parms{};
+
+	Parms.ClosingActionName = ClosingActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.RemoveRunKeybind2
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Pharaoh_Scripting_C::AssaultCounter()
+void AG_Pharaoh_Scripting_C::RemoveRunKeybind2()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "AssaultCounter");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RemoveRunKeybind2", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BlockGadgets
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.RemoveRunKeybind1
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Pharaoh_Scripting_C::BlockGadgets()
+void AG_Pharaoh_Scripting_C::RemoveRunKeybind1()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BlockGadgets");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RemoveRunKeybind1", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BlockMaskUp
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.RemovePlaceItemKeybind
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Pharaoh_Scripting_C::BlockMaskUp()
+void AG_Pharaoh_Scripting_C::RemovePlaceItemKeybind()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BlockMaskUp");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RemovePlaceItemKeybind", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BlockOverkillWeapon
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.RemoveOverkillWeaponPopup
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::RemoveOverkillWeaponPopup(class FName ClosingActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RemoveOverkillWeaponPopup", FnName));
+
+	Params::G_Pharaoh_Scripting_C_RemoveOverkillWeaponPopup Parms{};
+
+	Parms.ClosingActionName = ClosingActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.RemoveMarkCameraKeybind
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Pharaoh_Scripting_C::BlockOverkillWeapon()
+void AG_Pharaoh_Scripting_C::RemoveMarkCameraKeybind()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BlockOverkillWeapon");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RemoveMarkCameraKeybind", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BlockPlacables
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.RemoveHackCameraObj
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Pharaoh_Scripting_C::BlockPlacables()
+void AG_Pharaoh_Scripting_C::RemoveHackCameraObj()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BlockPlacables");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RemoveHackCameraObj", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BlockSprint
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.RemoveHackCameraKeybind
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Pharaoh_Scripting_C::BlockSprint()
+void AG_Pharaoh_Scripting_C::RemoveHackCameraKeybind()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BlockSprint");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RemoveHackCameraKeybind", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BlockSwitchWeapons
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.RemoveCrouchKeybind
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Pharaoh_Scripting_C::BlockSwitchWeapons()
+void AG_Pharaoh_Scripting_C::RemoveCrouchKeybind()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BlockSwitchWeapons");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RemoveCrouchKeybind", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BlockThrowables
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.PrepareForCombat
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Pharaoh_Scripting_C::BlockThrowables()
+void AG_Pharaoh_Scripting_C::PrepareForCombat()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BlockThrowables");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrepareForCombat", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_ONE_Scripting_SBZBagTriggerVolume_Globe_K2Node_ActorBoundEvent_151_SBZBagEnteredDelegate__DelegateSignature
-// (BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.PlayVOSpawn
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Pharaoh_Scripting_C::PlayVOSpawn()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayVOSpawn", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.PlayMatrixVO
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Pharaoh_Scripting_C::PlayMatrixVO()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayMatrixVO", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.PlayBankVO
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Pharaoh_Scripting_C::PlayBankVO()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayBankVO", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnVaultEmployeeHogtied
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ASBZAICharacter*                  Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bHogTied                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::OnVaultEmployeeHogtied(class ASBZAICharacter* Character, bool bHogTied)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnVaultEmployeeHogtied", FnName));
+
+	Params::G_Pharaoh_Scripting_C_OnVaultEmployeeHogtied Parms{};
+
+	Parms.Character = Character;
+	Parms.bHogTied = bHogTied;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnServerKeyItemTagAdded
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTag&              KeyTag_OnServerKeyItemTagAdded                         (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::OnServerKeyItemTagAdded(const struct FGameplayTag& KeyTag_OnServerKeyItemTagAdded)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnServerKeyItemTagAdded", FnName));
+
+	Params::G_Pharaoh_Scripting_C_OnServerKeyItemTagAdded Parms{};
+
+	Parms.KeyTag_OnServerKeyItemTagAdded = std::move(KeyTag_OnServerKeyItemTagAdded);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnSecurityRoomPagerAnswered
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   AnswerValue                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   MaxPagerAnswerValue                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::OnSecurityRoomPagerAnswered(int32 AnswerValue, int32 MaxPagerAnswerValue)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSecurityRoomPagerAnswered", FnName));
+
+	Params::G_Pharaoh_Scripting_C_OnSecurityRoomPagerAnswered Parms{};
+
+	Parms.AnswerValue = AnswerValue;
+	Parms.MaxPagerAnswerValue = MaxPagerAnswerValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnPreplanningAssetsTagsApplied
+// (Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTagContainer&     PreplanningTagContainer_OnPreplanningAssetsTagsApplied (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void AG_Pharaoh_Scripting_C::OnPreplanningAssetsTagsApplied(const struct FGameplayTagContainer& PreplanningTagContainer_OnPreplanningAssetsTagsApplied)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPreplanningAssetsTagsApplied", FnName));
+
+	Params::G_Pharaoh_Scripting_C_OnPreplanningAssetsTagsApplied Parms{};
+
+	Parms.PreplanningTagContainer_OnPreplanningAssetsTagsApplied = std::move(PreplanningTagContainer_OnPreplanningAssetsTagsApplied);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnPlayerInstantLootTaken
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class ASBZInstantLoot*                  InstantLoot_OnPlayerInstantLootTaken                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPlayerCharacter*              TakenByPlayer_OnPlayerInstantLootTaken                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::OnPlayerInstantLootTaken(class ASBZInstantLoot* InstantLoot_OnPlayerInstantLootTaken, class ASBZPlayerCharacter* TakenByPlayer_OnPlayerInstantLootTaken)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPlayerInstantLootTaken", FnName));
+
+	Params::G_Pharaoh_Scripting_C_OnPlayerInstantLootTaken Parms{};
+
+	Parms.InstantLoot_OnPlayerInstantLootTaken = InstantLoot_OnPlayerInstantLootTaken;
+	Parms.TakenByPlayer_OnPlayerInstantLootTaken = TakenByPlayer_OnPlayerInstantLootTaken;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnPlayerDefeatStateChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class ASBZPlayerState*                  PlayerState_OnPlayerDefeatStateChanged                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// EPD3DefeatState                         OldDefeatState_OnPlayerDefeatStateChanged              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPD3DefeatState                         DefeatState_OnPlayerDefeatStateChanged                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::OnPlayerDefeatStateChanged(class ASBZPlayerState* PlayerState_OnPlayerDefeatStateChanged, EPD3DefeatState OldDefeatState_OnPlayerDefeatStateChanged, EPD3DefeatState DefeatState_OnPlayerDefeatStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPlayerDefeatStateChanged", FnName));
+
+	Params::G_Pharaoh_Scripting_C_OnPlayerDefeatStateChanged Parms{};
+
+	Parms.PlayerState_OnPlayerDefeatStateChanged = PlayerState_OnPlayerDefeatStateChanged;
+	Parms.OldDefeatState_OnPlayerDefeatStateChanged = OldDefeatState_OnPlayerDefeatStateChanged;
+	Parms.DefeatState_OnPlayerDefeatStateChanged = DefeatState_OnPlayerDefeatStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnOverkillWeaponRequested
+// (Event, Public, BlueprintEvent)
+
+void AG_Pharaoh_Scripting_C::OnOverkillWeaponRequested()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnOverkillWeaponRequested", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnNegotiationStarted
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Pharaoh_Scripting_C::OnNegotiationStarted()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnNegotiationStarted", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnMatrixHumanShield
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ASBZAICharacter*                  Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCharacter*                    Instigator                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bHumanShield                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::OnMatrixHumanShield(class ASBZAICharacter* Character, class ASBZCharacter* Instigator, bool bHumanShield)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnMatrixHumanShield", FnName));
+
+	Params::G_Pharaoh_Scripting_C_OnMatrixHumanShield Parms{};
+
+	Parms.Character = Character;
+	Parms.Instigator = Instigator;
+	Parms.bHumanShield = bHumanShield;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnMatrixEmployeeHogtied
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ASBZAICharacter*                  Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bHogTied                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::OnMatrixEmployeeHogtied(class ASBZAICharacter* Character, bool bHogTied)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnMatrixEmployeeHogtied", FnName));
+
+	Params::G_Pharaoh_Scripting_C_OnMatrixEmployeeHogtied Parms{};
+
+	Parms.Character = Character;
+	Parms.bHogTied = bHogTied;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnLocalPlayerCarryChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsCarrying                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsHumanShield                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::OnLocalPlayerCarryChanged(bool bIsCarrying, bool bIsHumanShield)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLocalPlayerCarryChanged", FnName));
+
+	Params::G_Pharaoh_Scripting_C_OnLocalPlayerCarryChanged Parms{};
+
+	Parms.bIsCarrying = bIsCarrying;
+	Parms.bIsHumanShield = bIsHumanShield;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnKillGuardRadioAnswered
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ASBZAICharacter*                  Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsFailed                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::OnKillGuardRadioAnswered(class ASBZAICharacter* Character, bool bIsEnabled, bool bIsFailed)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnKillGuardRadioAnswered", FnName));
+
+	Params::G_Pharaoh_Scripting_C_OnKillGuardRadioAnswered Parms{};
+
+	Parms.Character = Character;
+	Parms.bIsEnabled = bIsEnabled;
+	Parms.bIsFailed = bIsFailed;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnItGuyHumanShield
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ASBZAICharacter*                  Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCharacter*                    Instigator                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bHumanShield                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::OnItGuyHumanShield(class ASBZAICharacter* Character, class ASBZCharacter* Instigator, bool bHumanShield)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnItGuyHumanShield", FnName));
+
+	Params::G_Pharaoh_Scripting_C_OnItGuyHumanShield Parms{};
+
+	Parms.Character = Character;
+	Parms.Instigator = Instigator;
+	Parms.bHumanShield = bHumanShield;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnIrisHumanShield
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ASBZAICharacter*                  Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCharacter*                    Instigator                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bHumanShield                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::OnIrisHumanShield(class ASBZAICharacter* Character, class ASBZCharacter* Instigator, bool bHumanShield)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnIrisHumanShield", FnName));
+
+	Params::G_Pharaoh_Scripting_C_OnIrisHumanShield Parms{};
+
+	Parms.Character = Character;
+	Parms.Instigator = Instigator;
+	Parms.bHumanShield = bHumanShield;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnHostage2Released
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ASBZAICharacter*                  Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::OnHostage2Released(class ASBZAICharacter* Character)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnHostage2Released", FnName));
+
+	Params::G_Pharaoh_Scripting_C_OnHostage2Released Parms{};
+
+	Parms.Character = Character;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnHostage1Released
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ASBZAICharacter*                  Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::OnHostage1Released(class ASBZAICharacter* Character)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnHostage1Released", FnName));
+
+	Params::G_Pharaoh_Scripting_C_OnHostage1Released Parms{};
+
+	Parms.Character = Character;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnEscortGuardInCombat
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESBZAIBehaviorCategory                  OldCategory                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZAIBehaviorCategory                  NewCategory                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::OnEscortGuardInCombat(ESBZAIBehaviorCategory OldCategory, ESBZAIBehaviorCategory NewCategory)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnEscortGuardInCombat", FnName));
+
+	Params::G_Pharaoh_Scripting_C_OnEscortGuardInCombat Parms{};
+
+	Parms.OldCategory = OldCategory;
+	Parms.NewCategory = NewCategory;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnCivillianHogtied
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ASBZAICharacter*                  Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bHogTied                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::OnCivillianHogtied(class ASBZAICharacter* Character, bool bHogTied)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnCivillianHogtied", FnName));
+
+	Params::G_Pharaoh_Scripting_C_OnCivillianHogtied Parms{};
+
+	Parms.Character = Character;
+	Parms.bHogTied = bHogTied;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.MoneyCartBagSecured
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void AG_Pharaoh_Scripting_C::BndEvt__G_ONE_Scripting_SBZBagTriggerVolume_Globe_K2Node_ActorBoundEvent_151_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
+void AG_Pharaoh_Scripting_C::MoneyCartBagSecured(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MoneyCartBagSecured", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_ONE_Scripting_SBZBagTriggerVolume_Globe_K2Node_ActorBoundEvent_151_SBZBagEnteredDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_ONE_Scripting_SBZBagTriggerVolume_Globe_K2Node_ActorBoundEvent_151_SBZBagEnteredDelegate__DelegateSignature Parms{};
+	Params::G_Pharaoh_Scripting_C_MoneyCartBagSecured Parms{};
 
 	Parms.Volume = Volume;
 	Parms.Bag = Bag;
@@ -270,3245 +664,507 @@ void AG_Pharaoh_Scripting_C::BndEvt__G_ONE_Scripting_SBZBagTriggerVolume_Globe_K
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_Blowtorch_2_K2Node_ActorBoundEvent_81_onPickedUp__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_Blowtorch_2_K2Node_ActorBoundEvent_81_onPickedUp__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_Blowtorch_2_K2Node_ActorBoundEvent_81_onPickedUp__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_BodyDisposerDumpster_2_K2Node_ActorBoundEvent_4_onInteracted__DelegateSignature
-// (BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.MaskOnChanged
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   numBodies                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class ASBZPlayerCharacter*        PlayerCharacter                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsMaskOn                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_BodyDisposerDumpster_2_K2Node_ActorBoundEvent_4_onInteracted__DelegateSignature(int32 numBodies)
+void AG_Pharaoh_Scripting_C::MaskOnChanged(const class ASBZPlayerCharacter* PlayerCharacter, bool bIsMaskOn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MaskOnChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_BodyDisposerDumpster_2_K2Node_ActorBoundEvent_4_onInteracted__DelegateSignature");
+	Params::G_Pharaoh_Scripting_C_MaskOnChanged Parms{};
 
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_BodyDisposerDumpster_2_K2Node_ActorBoundEvent_4_onInteracted__DelegateSignature Parms{};
-
-	Parms.numBodies = numBodies;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_DigitalKeyReader_2_K2Node_ActorBoundEvent_24_SBZModuleActorStateChangedDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// ESBZModuleActorState                    NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_DigitalKeyReader_2_K2Node_ActorBoundEvent_24_SBZModuleActorStateChangedDelegate__DelegateSignature(ESBZModuleActorState NewState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_DigitalKeyReader_2_K2Node_ActorBoundEvent_24_SBZModuleActorStateChangedDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_DigitalKeyReader_2_K2Node_ActorBoundEvent_24_SBZModuleActorStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.NewState = NewState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_EyeScanner2_K2Node_ActorBoundEvent_12_SBZOnEyeScannerStateChanged__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// ESBZEyeScannerState                     Oldstate                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZEyeScannerState                     NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_EyeScanner2_K2Node_ActorBoundEvent_12_SBZOnEyeScannerStateChanged__DelegateSignature(ESBZEyeScannerState Oldstate, ESBZEyeScannerState NewState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_EyeScanner2_K2Node_ActorBoundEvent_12_SBZOnEyeScannerStateChanged__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_EyeScanner2_K2Node_ActorBoundEvent_12_SBZOnEyeScannerStateChanged__DelegateSignature Parms{};
-
-	Parms.Oldstate = Oldstate;
-	Parms.NewState = NewState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_Generic_PC1_K2Node_ActorBoundEvent_27_SBZHackableActorDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_Generic_PC1_K2Node_ActorBoundEvent_27_SBZHackableActorDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_Generic_PC1_K2Node_ActorBoundEvent_27_SBZHackableActorDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_Generic_PC1_K2Node_ActorBoundEvent_30_SBZHackableActorDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_Generic_PC1_K2Node_ActorBoundEvent_30_SBZHackableActorDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_Generic_PC1_K2Node_ActorBoundEvent_30_SBZHackableActorDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_Int_DoubleDoor_Reinforced_Industrial_1_K2Node_ActorBoundEvent_208_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_Int_DoubleDoor_Reinforced_Industrial_1_K2Node_ActorBoundEvent_208_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_Int_DoubleDoor_Reinforced_Industrial_1_K2Node_ActorBoundEvent_208_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_Int_DoubleDoor_Reinforced_Industrial_1_K2Node_ActorBoundEvent_208_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_01_2_K2Node_ActorBoundEvent_196_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_01_2_K2Node_ActorBoundEvent_196_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_01_2_K2Node_ActorBoundEvent_196_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_01_2_K2Node_ActorBoundEvent_196_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_3_K2Node_ActorBoundEvent_200_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_3_K2Node_ActorBoundEvent_200_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_3_K2Node_ActorBoundEvent_200_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_3_K2Node_ActorBoundEvent_200_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_9_K2Node_ActorBoundEvent_202_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_9_K2Node_ActorBoundEvent_202_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_9_K2Node_ActorBoundEvent_202_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_9_K2Node_ActorBoundEvent_202_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_InteractableBreachableDoor_Wood_Office5_0_K2Node_ActorBoundEvent_18_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_InteractableBreachableDoor_Wood_Office5_0_K2Node_ActorBoundEvent_18_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_InteractableBreachableDoor_Wood_Office5_0_K2Node_ActorBoundEvent_18_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_InteractableBreachableDoor_Wood_Office5_0_K2Node_ActorBoundEvent_18_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_InteractableOpal_2_K2Node_ActorBoundEvent_38_SBZBagPickedUp__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_InteractableOpal_2_K2Node_ActorBoundEvent_38_SBZBagPickedUp__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_InteractableOpal_2_K2Node_ActorBoundEvent_38_SBZBagPickedUp__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_InteractableUnBreachableSingleDoor8_K2Node_ActorBoundEvent_21_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_InteractableUnBreachableSingleDoor8_K2Node_ActorBoundEvent_21_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_InteractableUnBreachableSingleDoor8_K2Node_ActorBoundEvent_21_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_InteractableUnBreachableSingleDoor8_K2Node_ActorBoundEvent_21_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_Keypad_K2Node_ActorBoundEvent_32_SBZOnCodeEntered__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_Keypad_K2Node_ActorBoundEvent_32_SBZOnCodeEntered__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_Keypad_K2Node_ActorBoundEvent_32_SBZOnCodeEntered__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_Keypad_K2Node_ActorBoundEvent_95_SBZOnCodeEntered__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_Keypad_K2Node_ActorBoundEvent_95_SBZOnCodeEntered__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_Keypad_K2Node_ActorBoundEvent_95_SBZOnCodeEntered__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_Lure_Radio9_K2Node_ActorBoundEvent_209_LureTriggered__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_Lure_Radio9_K2Node_ActorBoundEvent_209_LureTriggered__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_Lure_Radio9_K2Node_ActorBoundEvent_209_LureTriggered__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_PocketDrill4_5_K2Node_ActorBoundEvent_35_SBZBreachingEquipmentDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_PocketDrill4_5_K2Node_ActorBoundEvent_35_SBZBreachingEquipmentDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_PocketDrill4_5_K2Node_ActorBoundEvent_35_SBZBreachingEquipmentDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_PocketDrill4_5_K2Node_ActorBoundEvent_36_SBZBreachingEquipmentDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_PocketDrill4_5_K2Node_ActorBoundEvent_36_SBZBreachingEquipmentDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_PocketDrill4_5_K2Node_ActorBoundEvent_36_SBZBreachingEquipmentDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_PocketDrill4_5_K2Node_ActorBoundEvent_49_SBZBreachingEquipmentDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_PocketDrill4_5_K2Node_ActorBoundEvent_49_SBZBreachingEquipmentDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_PocketDrill4_5_K2Node_ActorBoundEvent_49_SBZBreachingEquipmentDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_PocketDrill4_5_K2Node_ActorBoundEvent_50_SBZBreachingEquipmentDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_PocketDrill4_5_K2Node_ActorBoundEvent_50_SBZBreachingEquipmentDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_PocketDrill4_5_K2Node_ActorBoundEvent_50_SBZBreachingEquipmentDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_PocketDrill4_5_K2Node_ActorBoundEvent_51_SBZBreachingEquipmentDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_PocketDrill4_5_K2Node_ActorBoundEvent_51_SBZBreachingEquipmentDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_PocketDrill4_5_K2Node_ActorBoundEvent_51_SBZBreachingEquipmentDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_QRPhone_2_K2Node_ActorBoundEvent_23_OnInteractedComplete__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_QRPhone_2_K2Node_ActorBoundEvent_23_OnInteractedComplete__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_QRPhone_2_K2Node_ActorBoundEvent_23_OnInteractedComplete__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_ReplicatedBinaryActor_Ventilation_2_K2Node_ActorBoundEvent_6_VentOpened__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_ReplicatedBinaryActor_Ventilation_2_K2Node_ActorBoundEvent_6_VentOpened__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_ReplicatedBinaryActor_Ventilation_2_K2Node_ActorBoundEvent_6_VentOpened__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_Safe_14_K2Node_ActorBoundEvent_37_SBZOnMinigameDoneDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_Safe_14_K2Node_ActorBoundEvent_37_SBZOnMinigameDoneDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_Safe_14_K2Node_ActorBoundEvent_37_SBZOnMinigameDoneDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera22_0_K2Node_ActorBoundEvent_3_SBZPlayerViewingChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSecurityCamera*               Camera                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsViewTarget                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocalPlayer                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera22_0_K2Node_ActorBoundEvent_3_SBZPlayerViewingChanged__DelegateSignature(class ASBZSecurityCamera* Camera, bool bIsViewTarget, bool bIsLocalPlayer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera22_0_K2Node_ActorBoundEvent_3_SBZPlayerViewingChanged__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera22_0_K2Node_ActorBoundEvent_3_SBZPlayerViewingChanged__DelegateSignature Parms{};
-
-	Parms.Camera = Camera;
-	Parms.bIsViewTarget = bIsViewTarget;
-	Parms.bIsLocalPlayer = bIsLocalPlayer;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Matrix2_K2Node_ActorBoundEvent_96_SBZPlayerViewingChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSecurityCamera*               Camera                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsViewTarget                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocalPlayer                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Matrix2_K2Node_ActorBoundEvent_96_SBZPlayerViewingChanged__DelegateSignature(class ASBZSecurityCamera* Camera, bool bIsViewTarget, bool bIsLocalPlayer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Matrix2_K2Node_ActorBoundEvent_96_SBZPlayerViewingChanged__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Matrix2_K2Node_ActorBoundEvent_96_SBZPlayerViewingChanged__DelegateSignature Parms{};
-
-	Parms.Camera = Camera;
-	Parms.bIsViewTarget = bIsViewTarget;
-	Parms.bIsLocalPlayer = bIsLocalPlayer;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Matrix3_K2Node_ActorBoundEvent_98_SBZPlayerViewingChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSecurityCamera*               Camera                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsViewTarget                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocalPlayer                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Matrix3_K2Node_ActorBoundEvent_98_SBZPlayerViewingChanged__DelegateSignature(class ASBZSecurityCamera* Camera, bool bIsViewTarget, bool bIsLocalPlayer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Matrix3_K2Node_ActorBoundEvent_98_SBZPlayerViewingChanged__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Matrix3_K2Node_ActorBoundEvent_98_SBZPlayerViewingChanged__DelegateSignature Parms{};
-
-	Parms.Camera = Camera;
-	Parms.bIsViewTarget = bIsViewTarget;
-	Parms.bIsLocalPlayer = bIsLocalPlayer;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Matrix4_K2Node_ActorBoundEvent_97_SBZPlayerViewingChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSecurityCamera*               Camera                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsViewTarget                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocalPlayer                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Matrix4_K2Node_ActorBoundEvent_97_SBZPlayerViewingChanged__DelegateSignature(class ASBZSecurityCamera* Camera, bool bIsViewTarget, bool bIsLocalPlayer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Matrix4_K2Node_ActorBoundEvent_97_SBZPlayerViewingChanged__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Matrix4_K2Node_ActorBoundEvent_97_SBZPlayerViewingChanged__DelegateSignature Parms{};
-
-	Parms.Camera = Camera;
-	Parms.bIsViewTarget = bIsViewTarget;
-	Parms.bIsLocalPlayer = bIsLocalPlayer;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Vault7_K2Node_ActorBoundEvent_88_SBZPlayerViewingChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSecurityCamera*               Camera                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsViewTarget                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocalPlayer                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Vault7_K2Node_ActorBoundEvent_88_SBZPlayerViewingChanged__DelegateSignature(class ASBZSecurityCamera* Camera, bool bIsViewTarget, bool bIsLocalPlayer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Vault7_K2Node_ActorBoundEvent_88_SBZPlayerViewingChanged__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Vault7_K2Node_ActorBoundEvent_88_SBZPlayerViewingChanged__DelegateSignature Parms{};
-
-	Parms.Camera = Camera;
-	Parms.bIsViewTarget = bIsViewTarget;
-	Parms.bIsLocalPlayer = bIsLocalPlayer;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_SecurityRoom_Matrix_2_K2Node_ActorBoundEvent_16_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_SecurityRoom_Matrix_2_K2Node_ActorBoundEvent_16_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_SecurityRoom_Matrix_2_K2Node_ActorBoundEvent_16_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_SecurityRoom_Matrix_2_K2Node_ActorBoundEvent_16_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
-
-	Parms.DeadPawn = DeadPawn;
-	Parms.Spawner = Spawner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_SecurityRoom_Matrix_2_K2Node_ActorBoundEvent_93_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_SecurityRoom_Matrix_2_K2Node_ActorBoundEvent_93_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_SecurityRoom_Matrix_2_K2Node_ActorBoundEvent_93_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_SecurityRoom_Matrix_2_K2Node_ActorBoundEvent_93_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_SewerBars_2_K2Node_ActorBoundEvent_84_SBZOnCuttableActorCutComplete__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZCuttableActor*                CuttableActor                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_SewerBars_2_K2Node_ActorBoundEvent_84_SBZOnCuttableActorCutComplete__DelegateSignature(class ASBZCuttableActor* CuttableActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_BP_SewerBars_2_K2Node_ActorBoundEvent_84_SBZOnCuttableActorCutComplete__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_SewerBars_2_K2Node_ActorBoundEvent_84_SBZOnCuttableActorCutComplete__DelegateSignature Parms{};
-
-	Parms.CuttableActor = CuttableActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZFilteredTriggerVolume_GuardLure_K2Node_ActorBoundEvent_206_SBZFilterActorDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZFilteredTriggerVolume_GuardLure_K2Node_ActorBoundEvent_206_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZFilteredTriggerVolume_GuardLure_K2Node_ActorBoundEvent_206_SBZFilterActorDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZFilteredTriggerVolume_GuardLure_K2Node_ActorBoundEvent_206_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Identifier = Identifier;
-	Parms.Actor = Actor;
-	Parms.CurrentTotalActors = CurrentTotalActors;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZLaserGrid1_K2Node_ActorBoundEvent_27_SBZOnLaserGridTriggered__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZLaserGrid*                    LaserGrid                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPlayerCharacter*              PlayerCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZLaserGrid1_K2Node_ActorBoundEvent_27_SBZOnLaserGridTriggered__DelegateSignature(class ASBZLaserGrid* LaserGrid, class ASBZPlayerCharacter* PlayerCharacter)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZLaserGrid1_K2Node_ActorBoundEvent_27_SBZOnLaserGridTriggered__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZLaserGrid1_K2Node_ActorBoundEvent_27_SBZOnLaserGridTriggered__DelegateSignature Parms{};
-
-	Parms.LaserGrid = LaserGrid;
 	Parms.PlayerCharacter = PlayerCharacter;
+	Parms.bIsMaskOn = bIsMaskOn;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_Employee5_0_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_Employee5_0_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_Employee5_0_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_Employee5_0_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_EscortGuard2_K2Node_ActorBoundEvent_222_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_EscortGuard2_K2Node_ActorBoundEvent_222_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_EscortGuard2_K2Node_ActorBoundEvent_222_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_EscortGuard2_K2Node_ActorBoundEvent_222_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_EscortGuard2_K2Node_ActorBoundEvent_223_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_EscortGuard2_K2Node_ActorBoundEvent_223_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_EscortGuard2_K2Node_ActorBoundEvent_223_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_EscortGuard2_K2Node_ActorBoundEvent_223_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
-
-	Parms.DeadPawn = DeadPawn;
-	Parms.Spawner = Spawner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_EscortGuard_K2Node_ActorBoundEvent_17_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_EscortGuard_K2Node_ActorBoundEvent_17_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_EscortGuard_K2Node_ActorBoundEvent_17_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_EscortGuard_K2Node_ActorBoundEvent_17_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_ManagerPublic2_K2Node_ActorBoundEvent_13_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_ManagerPublic2_K2Node_ActorBoundEvent_13_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_ManagerPublic2_K2Node_ActorBoundEvent_13_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_ManagerPublic2_K2Node_ActorBoundEvent_13_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_ManagerPublic2_K2Node_ActorBoundEvent_75_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_ManagerPublic2_K2Node_ActorBoundEvent_75_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_ManagerPublic2_K2Node_ActorBoundEvent_75_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_ManagerPublic2_K2Node_ActorBoundEvent_75_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
-
-	Parms.DeadPawn = DeadPawn;
-	Parms.Spawner = Spawner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist2_K2Node_ActorBoundEvent_80_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist2_K2Node_ActorBoundEvent_80_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist2_K2Node_ActorBoundEvent_80_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist2_K2Node_ActorBoundEvent_80_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
-
-	Parms.DeadPawn = DeadPawn;
-	Parms.Spawner = Spawner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist2_K2Node_ActorBoundEvent_85_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist2_K2Node_ActorBoundEvent_85_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist2_K2Node_ActorBoundEvent_85_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist2_K2Node_ActorBoundEvent_85_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist_K2Node_ActorBoundEvent_76_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist_K2Node_ActorBoundEvent_76_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist_K2Node_ActorBoundEvent_76_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist_K2Node_ActorBoundEvent_76_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist_K2Node_ActorBoundEvent_78_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist_K2Node_ActorBoundEvent_78_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist_K2Node_ActorBoundEvent_78_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist_K2Node_ActorBoundEvent_78_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
-
-	Parms.DeadPawn = DeadPawn;
-	Parms.Spawner = Spawner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_0_K2Node_ActorBoundEvent_82_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_0_K2Node_ActorBoundEvent_82_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_0_K2Node_ActorBoundEvent_82_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_0_K2Node_ActorBoundEvent_82_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
-
-	Parms.DeadPawn = DeadPawn;
-	Parms.Spawner = Spawner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_0_K2Node_ActorBoundEvent_83_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_0_K2Node_ActorBoundEvent_83_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_0_K2Node_ActorBoundEvent_83_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_0_K2Node_ActorBoundEvent_83_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_K2Node_ActorBoundEvent_42_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_K2Node_ActorBoundEvent_42_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_K2Node_ActorBoundEvent_42_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_K2Node_ActorBoundEvent_42_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
-
-	Parms.DeadPawn = DeadPawn;
-	Parms.Spawner = Spawner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_K2Node_ActorBoundEvent_43_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_K2Node_ActorBoundEvent_43_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_K2Node_ActorBoundEvent_43_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_K2Node_ActorBoundEvent_43_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerLookAtTrigger_Keypad_K2Node_ActorBoundEvent_28_SBZBooleanStateDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// bool                                    State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerLookAtTrigger_Keypad_K2Node_ActorBoundEvent_28_SBZBooleanStateDynamicDelegate__DelegateSignature(bool State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerLookAtTrigger_Keypad_K2Node_ActorBoundEvent_28_SBZBooleanStateDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerLookAtTrigger_Keypad_K2Node_ActorBoundEvent_28_SBZBooleanStateDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerLookAtTriggerVault_K2Node_ActorBoundEvent_69_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerLookAtTriggerVault_K2Node_ActorBoundEvent_69_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerLookAtTriggerVault_K2Node_ActorBoundEvent_69_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerLookAtTriggerVault_K2Node_ActorBoundEvent_69_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerStart_CheckPoint7_K2Node_ActorBoundEvent_86_SBZOnPlayerStartUsedSignature__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// class ASBZCharacter*                    SBZCharacter                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsPlayer                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerStart_CheckPoint7_K2Node_ActorBoundEvent_86_SBZOnPlayerStartUsedSignature__DelegateSignature(class ASBZCharacter* SBZCharacter, bool bIsPlayer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerStart_CheckPoint7_K2Node_ActorBoundEvent_86_SBZOnPlayerStartUsedSignature__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerStart_CheckPoint7_K2Node_ActorBoundEvent_86_SBZOnPlayerStartUsedSignature__DelegateSignature Parms{};
-
-	Parms.SBZCharacter = SBZCharacter;
-	Parms.bIsPlayer = bIsPlayer;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerStart_CheckPoint8_K2Node_ActorBoundEvent_87_SBZOnPlayerStartUsedSignature__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// class ASBZCharacter*                    SBZCharacter                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsPlayer                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerStart_CheckPoint8_K2Node_ActorBoundEvent_87_SBZOnPlayerStartUsedSignature__DelegateSignature(class ASBZCharacter* SBZCharacter, bool bIsPlayer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerStart_CheckPoint8_K2Node_ActorBoundEvent_87_SBZOnPlayerStartUsedSignature__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerStart_CheckPoint8_K2Node_ActorBoundEvent_87_SBZOnPlayerStartUsedSignature__DelegateSignature Parms{};
-
-	Parms.SBZCharacter = SBZCharacter;
-	Parms.bIsPlayer = bIsPlayer;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerStart_CheckPoint9_K2Node_ActorBoundEvent_79_SBZOnPlayerStartUsedSignature__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// class ASBZCharacter*                    SBZCharacter                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsPlayer                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerStart_CheckPoint9_K2Node_ActorBoundEvent_79_SBZOnPlayerStartUsedSignature__DelegateSignature(class ASBZCharacter* SBZCharacter, bool bIsPlayer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerStart_CheckPoint9_K2Node_ActorBoundEvent_79_SBZOnPlayerStartUsedSignature__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerStart_CheckPoint9_K2Node_ActorBoundEvent_79_SBZOnPlayerStartUsedSignature__DelegateSignature Parms{};
-
-	Parms.SBZCharacter = SBZCharacter;
-	Parms.bIsPlayer = bIsPlayer;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_1_K2Node_ActorBoundEvent_41_SBZOnSpawnGroupChosen__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZPlayerStartGroup*             PlayerStartGroup                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_1_K2Node_ActorBoundEvent_41_SBZOnSpawnGroupChosen__DelegateSignature(class ASBZPlayerStartGroup* PlayerStartGroup)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_1_K2Node_ActorBoundEvent_41_SBZOnSpawnGroupChosen__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_1_K2Node_ActorBoundEvent_41_SBZOnSpawnGroupChosen__DelegateSignature Parms{};
-
-	Parms.PlayerStartGroup = PlayerStartGroup;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint2_K2Node_ActorBoundEvent_58_SBZOnSpawnGroupChosen__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZPlayerStartGroup*             PlayerStartGroup                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint2_K2Node_ActorBoundEvent_58_SBZOnSpawnGroupChosen__DelegateSignature(class ASBZPlayerStartGroup* PlayerStartGroup)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint2_K2Node_ActorBoundEvent_58_SBZOnSpawnGroupChosen__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint2_K2Node_ActorBoundEvent_58_SBZOnSpawnGroupChosen__DelegateSignature Parms{};
-
-	Parms.PlayerStartGroup = PlayerStartGroup;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint3_K2Node_ActorBoundEvent_55_SBZOnSpawnGroupChosen__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZPlayerStartGroup*             PlayerStartGroup                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint3_K2Node_ActorBoundEvent_55_SBZOnSpawnGroupChosen__DelegateSignature(class ASBZPlayerStartGroup* PlayerStartGroup)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint3_K2Node_ActorBoundEvent_55_SBZOnSpawnGroupChosen__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint3_K2Node_ActorBoundEvent_55_SBZOnSpawnGroupChosen__DelegateSignature Parms{};
-
-	Parms.PlayerStartGroup = PlayerStartGroup;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint4_K2Node_ActorBoundEvent_100_SBZOnSpawnGroupChosen__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZPlayerStartGroup*             PlayerStartGroup                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint4_K2Node_ActorBoundEvent_100_SBZOnSpawnGroupChosen__DelegateSignature(class ASBZPlayerStartGroup* PlayerStartGroup)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint4_K2Node_ActorBoundEvent_100_SBZOnSpawnGroupChosen__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint4_K2Node_ActorBoundEvent_100_SBZOnSpawnGroupChosen__DelegateSignature Parms{};
-
-	Parms.PlayerStartGroup = PlayerStartGroup;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint5_K2Node_ActorBoundEvent_105_SBZOnSpawnGroupChosen__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZPlayerStartGroup*             PlayerStartGroup                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint5_K2Node_ActorBoundEvent_105_SBZOnSpawnGroupChosen__DelegateSignature(class ASBZPlayerStartGroup* PlayerStartGroup)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint5_K2Node_ActorBoundEvent_105_SBZOnSpawnGroupChosen__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint5_K2Node_ActorBoundEvent_105_SBZOnSpawnGroupChosen__DelegateSignature Parms{};
-
-	Parms.PlayerStartGroup = PlayerStartGroup;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint6_K2Node_ActorBoundEvent_99_SBZOnSpawnGroupChosen__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZPlayerStartGroup*             PlayerStartGroup                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint6_K2Node_ActorBoundEvent_99_SBZOnSpawnGroupChosen__DelegateSignature(class ASBZPlayerStartGroup* PlayerStartGroup)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint6_K2Node_ActorBoundEvent_99_SBZOnSpawnGroupChosen__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint6_K2Node_ActorBoundEvent_99_SBZOnSpawnGroupChosen__DelegateSignature Parms{};
-
-	Parms.PlayerStartGroup = PlayerStartGroup;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint7_K2Node_ActorBoundEvent_101_SBZOnSpawnGroupChosen__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZPlayerStartGroup*             PlayerStartGroup                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint7_K2Node_ActorBoundEvent_101_SBZOnSpawnGroupChosen__DelegateSignature(class ASBZPlayerStartGroup* PlayerStartGroup)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint7_K2Node_ActorBoundEvent_101_SBZOnSpawnGroupChosen__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint7_K2Node_ActorBoundEvent_101_SBZOnSpawnGroupChosen__DelegateSignature Parms{};
-
-	Parms.PlayerStartGroup = PlayerStartGroup;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint8_K2Node_ActorBoundEvent_102_SBZOnSpawnGroupChosen__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZPlayerStartGroup*             PlayerStartGroup                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint8_K2Node_ActorBoundEvent_102_SBZOnSpawnGroupChosen__DelegateSignature(class ASBZPlayerStartGroup* PlayerStartGroup)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint8_K2Node_ActorBoundEvent_102_SBZOnSpawnGroupChosen__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint8_K2Node_ActorBoundEvent_102_SBZOnSpawnGroupChosen__DelegateSignature Parms{};
-
-	Parms.PlayerStartGroup = PlayerStartGroup;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint9_K2Node_ActorBoundEvent_103_SBZOnSpawnGroupChosen__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZPlayerStartGroup*             PlayerStartGroup                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint9_K2Node_ActorBoundEvent_103_SBZOnSpawnGroupChosen__DelegateSignature(class ASBZPlayerStartGroup* PlayerStartGroup)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint9_K2Node_ActorBoundEvent_103_SBZOnSpawnGroupChosen__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint9_K2Node_ActorBoundEvent_103_SBZOnSpawnGroupChosen__DelegateSignature Parms{};
-
-	Parms.PlayerStartGroup = PlayerStartGroup;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume3_3_K2Node_ActorBoundEvent_15_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume3_3_K2Node_ActorBoundEvent_15_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume3_3_K2Node_ActorBoundEvent_15_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume3_3_K2Node_ActorBoundEvent_15_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank1_K2Node_ActorBoundEvent_19_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank1_K2Node_ActorBoundEvent_19_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank1_K2Node_ActorBoundEvent_19_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank1_K2Node_ActorBoundEvent_19_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank2_K2Node_ActorBoundEvent_25_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank2_K2Node_ActorBoundEvent_25_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank2_K2Node_ActorBoundEvent_25_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank2_K2Node_ActorBoundEvent_25_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank3_K2Node_ActorBoundEvent_26_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank3_K2Node_ActorBoundEvent_26_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank3_K2Node_ActorBoundEvent_26_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank3_K2Node_ActorBoundEvent_26_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank4_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank4_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank4_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank4_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_BoilerRoom_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_BoilerRoom_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_BoilerRoom_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_BoilerRoom_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_CameraPuzzle1_K2Node_ActorBoundEvent_210_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_CameraPuzzle1_K2Node_ActorBoundEvent_210_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_CameraPuzzle1_K2Node_ActorBoundEvent_210_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_CameraPuzzle1_K2Node_ActorBoundEvent_210_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_CameraPuzzle2_K2Node_ActorBoundEvent_74_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_CameraPuzzle2_K2Node_ActorBoundEvent_74_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_CameraPuzzle2_K2Node_ActorBoundEvent_74_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_CameraPuzzle2_K2Node_ActorBoundEvent_74_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_CameraPuzzle3_K2Node_ActorBoundEvent_94_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_CameraPuzzle3_K2Node_ActorBoundEvent_94_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_CameraPuzzle3_K2Node_ActorBoundEvent_94_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_CameraPuzzle3_K2Node_ActorBoundEvent_94_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint0_K2Node_ActorBoundEvent_53_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint0_K2Node_ActorBoundEvent_53_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint0_K2Node_ActorBoundEvent_53_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint0_K2Node_ActorBoundEvent_53_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint1_K2Node_ActorBoundEvent_54_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint1_K2Node_ActorBoundEvent_54_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint1_K2Node_ActorBoundEvent_54_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint1_K2Node_ActorBoundEvent_54_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint2_K2Node_ActorBoundEvent_51_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint2_K2Node_ActorBoundEvent_51_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint2_K2Node_ActorBoundEvent_51_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint2_K2Node_ActorBoundEvent_51_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint3_K2Node_ActorBoundEvent_59_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint3_K2Node_ActorBoundEvent_59_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint3_K2Node_ActorBoundEvent_59_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint3_K2Node_ActorBoundEvent_59_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint4_K2Node_ActorBoundEvent_56_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint4_K2Node_ActorBoundEvent_56_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint4_K2Node_ActorBoundEvent_56_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint4_K2Node_ActorBoundEvent_56_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint5_K2Node_ActorBoundEvent_60_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint5_K2Node_ActorBoundEvent_60_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint5_K2Node_ActorBoundEvent_60_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint5_K2Node_ActorBoundEvent_60_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint6_K2Node_ActorBoundEvent_57_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint6_K2Node_ActorBoundEvent_57_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint6_K2Node_ActorBoundEvent_57_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint6_K2Node_ActorBoundEvent_57_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint7_K2Node_ActorBoundEvent_61_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint7_K2Node_ActorBoundEvent_61_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint7_K2Node_ActorBoundEvent_61_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint7_K2Node_ActorBoundEvent_61_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint8_K2Node_ActorBoundEvent_62_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint8_K2Node_ActorBoundEvent_62_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint8_K2Node_ActorBoundEvent_62_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint8_K2Node_ActorBoundEvent_62_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint9_K2Node_ActorBoundEvent_63_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint9_K2Node_ActorBoundEvent_63_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint9_K2Node_ActorBoundEvent_63_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint9_K2Node_ActorBoundEvent_63_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Drill_K2Node_ActorBoundEvent_22_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Drill_K2Node_ActorBoundEvent_22_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Drill_K2Node_ActorBoundEvent_22_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Drill_K2Node_ActorBoundEvent_22_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_EndlessAssault_K2Node_ActorBoundEvent_90_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_EndlessAssault_K2Node_ActorBoundEvent_90_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_EndlessAssault_K2Node_ActorBoundEvent_90_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_EndlessAssault_K2Node_ActorBoundEvent_90_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_EscortDestination2_K2Node_ActorBoundEvent_216_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_EscortDestination2_K2Node_ActorBoundEvent_216_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_EscortDestination2_K2Node_ActorBoundEvent_216_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_EscortDestination2_K2Node_ActorBoundEvent_216_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_EscortDestination_K2Node_ActorBoundEvent_205_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_EscortDestination_K2Node_ActorBoundEvent_205_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_EscortDestination_K2Node_ActorBoundEvent_205_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_EscortDestination_K2Node_ActorBoundEvent_205_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GarageBasement2_K2Node_ActorBoundEvent_204_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GarageBasement2_K2Node_ActorBoundEvent_204_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GarageBasement2_K2Node_ActorBoundEvent_204_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GarageBasement2_K2Node_ActorBoundEvent_204_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GarageBasementGuards_K2Node_ActorBoundEvent_225_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GarageBasementGuards_K2Node_ActorBoundEvent_225_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GarageBasementGuards_K2Node_ActorBoundEvent_225_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GarageBasementGuards_K2Node_ActorBoundEvent_225_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE0_K2Node_ActorBoundEvent_31_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE0_K2Node_ActorBoundEvent_31_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE0_K2Node_ActorBoundEvent_31_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE0_K2Node_ActorBoundEvent_31_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE0_K2Node_ActorBoundEvent_33_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE0_K2Node_ActorBoundEvent_33_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE0_K2Node_ActorBoundEvent_33_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE0_K2Node_ActorBoundEvent_33_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE1_K2Node_ActorBoundEvent_44_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE1_K2Node_ActorBoundEvent_44_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE1_K2Node_ActorBoundEvent_44_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE1_K2Node_ActorBoundEvent_44_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE2_K2Node_ActorBoundEvent_64_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE2_K2Node_ActorBoundEvent_64_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE2_K2Node_ActorBoundEvent_64_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE2_K2Node_ActorBoundEvent_64_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE3_1_K2Node_ActorBoundEvent_66_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE3_1_K2Node_ActorBoundEvent_66_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE3_1_K2Node_ActorBoundEvent_66_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE3_1_K2Node_ActorBoundEvent_66_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE4_K2Node_ActorBoundEvent_67_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE4_K2Node_ActorBoundEvent_67_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE4_K2Node_ActorBoundEvent_67_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE4_K2Node_ActorBoundEvent_67_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE5_K2Node_ActorBoundEvent_68_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE5_K2Node_ActorBoundEvent_68_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE5_K2Node_ActorBoundEvent_68_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE5_K2Node_ActorBoundEvent_68_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE6_K2Node_ActorBoundEvent_70_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE6_K2Node_ActorBoundEvent_70_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE6_K2Node_ActorBoundEvent_70_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE6_K2Node_ActorBoundEvent_70_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE7_K2Node_ActorBoundEvent_71_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE7_K2Node_ActorBoundEvent_71_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE7_K2Node_ActorBoundEvent_71_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE7_K2Node_ActorBoundEvent_71_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE8_K2Node_ActorBoundEvent_72_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE8_K2Node_ActorBoundEvent_72_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE8_K2Node_ActorBoundEvent_72_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE8_K2Node_ActorBoundEvent_72_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE9_6_K2Node_ActorBoundEvent_73_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE9_6_K2Node_ActorBoundEvent_73_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE9_6_K2Node_ActorBoundEvent_73_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE9_6_K2Node_ActorBoundEvent_73_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GotoGarageBasement_K2Node_ActorBoundEvent_203_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GotoGarageBasement_K2Node_ActorBoundEvent_203_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GotoGarageBasement_K2Node_ActorBoundEvent_203_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GotoGarageBasement_K2Node_ActorBoundEvent_203_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_IrisScanner2_K2Node_ActorBoundEvent_11_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_IrisScanner2_K2Node_ActorBoundEvent_11_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_IrisScanner2_K2Node_ActorBoundEvent_11_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_IrisScanner2_K2Node_ActorBoundEvent_11_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_IrisScanner_K2Node_ActorBoundEvent_8_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_IrisScanner_K2Node_ActorBoundEvent_8_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_IrisScanner_K2Node_ActorBoundEvent_8_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_IrisScanner_K2Node_ActorBoundEvent_8_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_KillGuard_K2Node_ActorBoundEvent_221_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_KillGuard_K2Node_ActorBoundEvent_221_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_KillGuard_K2Node_ActorBoundEvent_221_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_KillGuard_K2Node_ActorBoundEvent_221_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_LEaveVault_K2Node_ActorBoundEvent_48_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_LEaveVault_K2Node_ActorBoundEvent_48_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_LEaveVault_K2Node_ActorBoundEvent_48_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_LEaveVault_K2Node_ActorBoundEvent_48_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Lobby1_K2Node_ActorBoundEvent_39_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Lobby1_K2Node_ActorBoundEvent_39_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Lobby1_K2Node_ActorBoundEvent_39_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Lobby1_K2Node_ActorBoundEvent_39_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Lobby2_K2Node_ActorBoundEvent_40_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Lobby2_K2Node_ActorBoundEvent_40_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Lobby2_K2Node_ActorBoundEvent_40_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Lobby2_K2Node_ActorBoundEvent_40_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Lockpicking_K2Node_ActorBoundEvent_162_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Lockpicking_K2Node_ActorBoundEvent_162_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Lockpicking_K2Node_ActorBoundEvent_162_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Lockpicking_K2Node_ActorBoundEvent_162_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_LureActivation_K2Node_ActorBoundEvent_207_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_LureActivation_K2Node_ActorBoundEvent_207_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_LureActivation_K2Node_ActorBoundEvent_207_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_LureActivation_K2Node_ActorBoundEvent_207_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_MarkingTooltip_K2Node_ActorBoundEvent_212_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_MarkingTooltip_K2Node_ActorBoundEvent_212_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_MarkingTooltip_K2Node_ActorBoundEvent_212_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_MarkingTooltip_K2Node_ActorBoundEvent_212_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_MatrixSecurity_K2Node_ActorBoundEvent_46_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_MatrixSecurity_K2Node_ActorBoundEvent_46_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_MatrixSecurity_K2Node_ActorBoundEvent_46_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_MatrixSecurity_K2Node_ActorBoundEvent_46_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro2_K2Node_ActorBoundEvent_219_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro2_K2Node_ActorBoundEvent_219_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro2_K2Node_ActorBoundEvent_219_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro2_K2Node_ActorBoundEvent_219_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro3_K2Node_ActorBoundEvent_220_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro3_K2Node_ActorBoundEvent_220_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro3_K2Node_ActorBoundEvent_220_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro3_K2Node_ActorBoundEvent_220_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro4_K2Node_ActorBoundEvent_224_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro4_K2Node_ActorBoundEvent_224_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro4_K2Node_ActorBoundEvent_224_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro4_K2Node_ActorBoundEvent_224_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro4_K2Node_ActorBoundEvent_45_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro4_K2Node_ActorBoundEvent_45_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro4_K2Node_ActorBoundEvent_45_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro4_K2Node_ActorBoundEvent_45_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro6_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro6_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro6_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro6_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_MetroMaskUp_K2Node_ActorBoundEvent_89_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.LootValueFilter
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          BagType                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_MetroMaskUp_K2Node_ActorBoundEvent_89_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Pharaoh_Scripting_C::LootValueFilter(class UObject* BagType)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_MetroMaskUp_K2Node_ActorBoundEvent_89_SBZPawnDynamicDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"LootValueFilter", FnName));
 
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_MetroMaskUp_K2Node_ActorBoundEvent_89_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+	Params::G_Pharaoh_Scripting_C_LootValueFilter Parms{};
 
-	Parms.Pawn = Pawn;
+	Parms.BagType = BagType;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_OVKWeapon_K2Node_ActorBoundEvent_92_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.LootBagHandle
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZSecuredBagVisualizeComponent* Target                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZBagHandle&             BagHandle                                              (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_OVKWeapon_K2Node_ActorBoundEvent_92_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Pharaoh_Scripting_C::LootBagHandle(class USBZSecuredBagVisualizeComponent* Target, const struct FSBZBagHandle& BagHandle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_OVKWeapon_K2Node_ActorBoundEvent_92_SBZPawnDynamicDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"LootBagHandle", FnName));
 
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_OVKWeapon_K2Node_ActorBoundEvent_92_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+	Params::G_Pharaoh_Scripting_C_LootBagHandle Parms{};
 
-	Parms.Pawn = Pawn;
+	Parms.Target = Target;
+	Parms.BagHandle = std::move(BagHandle);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_ReachMatrixRoom_K2Node_ActorBoundEvent_77_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.InsideManPushLiveAction
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           SpecificActionComponentOwner                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_ReachMatrixRoom_K2Node_ActorBoundEvent_77_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Pharaoh_Scripting_C::InsideManPushLiveAction(class AActor* SpecificActionComponentOwner)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_ReachMatrixRoom_K2Node_ActorBoundEvent_77_SBZPawnDynamicDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InsideManPushLiveAction", FnName));
 
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_ReachMatrixRoom_K2Node_ActorBoundEvent_77_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+	Params::G_Pharaoh_Scripting_C_InsideManPushLiveAction Parms{};
 
-	Parms.Pawn = Pawn;
+	Parms.SpecificActionComponentOwner = SpecificActionComponentOwner;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_RunTooltip2_K2Node_ActorBoundEvent_164_SBZPawnDynamicDelegate__DelegateSignature
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.InpActEvt_UI_OpenChat_K2Node_InputActionEvent_0
 // (BlueprintEvent)
 // Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_RunTooltip2_K2Node_ActorBoundEvent_164_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Pharaoh_Scripting_C::InpActEvt_UI_OpenChat_K2Node_InputActionEvent_0(const struct FKey& Key)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InpActEvt_UI_OpenChat_K2Node_InputActionEvent_0", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_RunTooltip2_K2Node_ActorBoundEvent_164_SBZPawnDynamicDelegate__DelegateSignature");
+	Params::G_Pharaoh_Scripting_C_InpActEvt_UI_OpenChat_K2Node_InputActionEvent_0 Parms{};
 
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_RunTooltip2_K2Node_ActorBoundEvent_164_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+	Parms.Key = std::move(Key);
 
-	Parms.Pawn = Pawn;
-
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_RunTooltip_K2Node_ActorBoundEvent_163_SBZPawnDynamicDelegate__DelegateSignature
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.InpActEvt_Shout_K2Node_InputActionEvent_3
 // (BlueprintEvent)
 // Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_RunTooltip_K2Node_ActorBoundEvent_163_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Pharaoh_Scripting_C::InpActEvt_Shout_K2Node_InputActionEvent_3(const struct FKey& Key)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_RunTooltip_K2Node_ActorBoundEvent_163_SBZPawnDynamicDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InpActEvt_Shout_K2Node_InputActionEvent_3", FnName));
 
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_RunTooltip_K2Node_ActorBoundEvent_163_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+	Params::G_Pharaoh_Scripting_C_InpActEvt_Shout_K2Node_InputActionEvent_3 Parms{};
 
-	Parms.Pawn = Pawn;
+	Parms.Key = std::move(Key);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_safe_K2Node_ActorBoundEvent_52_SBZPawnDynamicDelegate__DelegateSignature
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.InpActEvt_Run_K2Node_InputActionEvent_1
 // (BlueprintEvent)
 // Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_safe_K2Node_ActorBoundEvent_52_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Pharaoh_Scripting_C::InpActEvt_Run_K2Node_InputActionEvent_1(const struct FKey& Key)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InpActEvt_Run_K2Node_InputActionEvent_1", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_safe_K2Node_ActorBoundEvent_52_SBZPawnDynamicDelegate__DelegateSignature");
+	Params::G_Pharaoh_Scripting_C_InpActEvt_Run_K2Node_InputActionEvent_1 Parms{};
 
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_safe_K2Node_ActorBoundEvent_52_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+	Parms.Key = std::move(Key);
 
-	Parms.Pawn = Pawn;
-
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer1_K2Node_ActorBoundEvent_213_SBZPawnDynamicDelegate__DelegateSignature
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.InpActEvt_RequestOverkillWeapon_K2Node_InputActionEvent_8
 // (BlueprintEvent)
 // Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer1_K2Node_ActorBoundEvent_213_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Pharaoh_Scripting_C::InpActEvt_RequestOverkillWeapon_K2Node_InputActionEvent_8(const struct FKey& Key)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer1_K2Node_ActorBoundEvent_213_SBZPawnDynamicDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InpActEvt_RequestOverkillWeapon_K2Node_InputActionEvent_8", FnName));
 
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer1_K2Node_ActorBoundEvent_213_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+	Params::G_Pharaoh_Scripting_C_InpActEvt_RequestOverkillWeapon_K2Node_InputActionEvent_8 Parms{};
 
-	Parms.Pawn = Pawn;
+	Parms.Key = std::move(Key);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer2_K2Node_ActorBoundEvent_214_SBZPawnDynamicDelegate__DelegateSignature
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.InpActEvt_PlaceItem_K2Node_InputActionEvent_9
 // (BlueprintEvent)
 // Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer2_K2Node_ActorBoundEvent_214_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Pharaoh_Scripting_C::InpActEvt_PlaceItem_K2Node_InputActionEvent_9(const struct FKey& Key)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InpActEvt_PlaceItem_K2Node_InputActionEvent_9", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer2_K2Node_ActorBoundEvent_214_SBZPawnDynamicDelegate__DelegateSignature");
+	Params::G_Pharaoh_Scripting_C_InpActEvt_PlaceItem_K2Node_InputActionEvent_9 Parms{};
 
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer2_K2Node_ActorBoundEvent_214_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+	Parms.Key = std::move(Key);
 
-	Parms.Pawn = Pawn;
-
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer3_K2Node_ActorBoundEvent_215_SBZPawnDynamicDelegate__DelegateSignature
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.InpActEvt_HUDOverlay_K2Node_InputActionEvent_2
 // (BlueprintEvent)
 // Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer3_K2Node_ActorBoundEvent_215_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Pharaoh_Scripting_C::InpActEvt_HUDOverlay_K2Node_InputActionEvent_2(const struct FKey& Key)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer3_K2Node_ActorBoundEvent_215_SBZPawnDynamicDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InpActEvt_HUDOverlay_K2Node_InputActionEvent_2", FnName));
 
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer3_K2Node_ActorBoundEvent_215_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+	Params::G_Pharaoh_Scripting_C_InpActEvt_HUDOverlay_K2Node_InputActionEvent_2 Parms{};
 
-	Parms.Pawn = Pawn;
+	Parms.Key = std::move(Key);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer4_K2Node_ActorBoundEvent_217_SBZPawnDynamicDelegate__DelegateSignature
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.InpActEvt_EquipSecondaryWeapon_K2Node_InputActionEvent_4
 // (BlueprintEvent)
 // Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer4_K2Node_ActorBoundEvent_217_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Pharaoh_Scripting_C::InpActEvt_EquipSecondaryWeapon_K2Node_InputActionEvent_4(const struct FKey& Key)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InpActEvt_EquipSecondaryWeapon_K2Node_InputActionEvent_4", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer4_K2Node_ActorBoundEvent_217_SBZPawnDynamicDelegate__DelegateSignature");
+	Params::G_Pharaoh_Scripting_C_InpActEvt_EquipSecondaryWeapon_K2Node_InputActionEvent_4 Parms{};
 
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer4_K2Node_ActorBoundEvent_217_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+	Parms.Key = std::move(Key);
 
-	Parms.Pawn = Pawn;
-
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer5_K2Node_ActorBoundEvent_218_SBZPawnDynamicDelegate__DelegateSignature
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.InpActEvt_EquipPrimaryWeapon_K2Node_InputActionEvent_5
 // (BlueprintEvent)
 // Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer5_K2Node_ActorBoundEvent_218_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Pharaoh_Scripting_C::InpActEvt_EquipPrimaryWeapon_K2Node_InputActionEvent_5(const struct FKey& Key)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer5_K2Node_ActorBoundEvent_218_SBZPawnDynamicDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InpActEvt_EquipPrimaryWeapon_K2Node_InputActionEvent_5", FnName));
 
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer5_K2Node_ActorBoundEvent_218_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+	Params::G_Pharaoh_Scripting_C_InpActEvt_EquipPrimaryWeapon_K2Node_InputActionEvent_5 Parms{};
 
-	Parms.Pawn = Pawn;
+	Parms.Key = std::move(Key);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer6_K2Node_ActorBoundEvent_104_SBZPawnDynamicDelegate__DelegateSignature
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.InpActEvt_EquipPreviousWeapon_K2Node_InputActionEvent_6
 // (BlueprintEvent)
 // Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer6_K2Node_ActorBoundEvent_104_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Pharaoh_Scripting_C::InpActEvt_EquipPreviousWeapon_K2Node_InputActionEvent_6(const struct FKey& Key)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InpActEvt_EquipPreviousWeapon_K2Node_InputActionEvent_6", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer6_K2Node_ActorBoundEvent_104_SBZPawnDynamicDelegate__DelegateSignature");
+	Params::G_Pharaoh_Scripting_C_InpActEvt_EquipPreviousWeapon_K2Node_InputActionEvent_6 Parms{};
 
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer6_K2Node_ActorBoundEvent_104_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+	Parms.Key = std::move(Key);
 
-	Parms.Pawn = Pawn;
-
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Staircase2_K2Node_ActorBoundEvent_199_SBZPawnDynamicDelegate__DelegateSignature
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.InpActEvt_EquipNextWeapon_K2Node_InputActionEvent_7
 // (BlueprintEvent)
 // Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Staircase2_K2Node_ActorBoundEvent_199_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Pharaoh_Scripting_C::InpActEvt_EquipNextWeapon_K2Node_InputActionEvent_7(const struct FKey& Key)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Staircase2_K2Node_ActorBoundEvent_199_SBZPawnDynamicDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InpActEvt_EquipNextWeapon_K2Node_InputActionEvent_7", FnName));
 
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Staircase2_K2Node_ActorBoundEvent_199_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+	Params::G_Pharaoh_Scripting_C_InpActEvt_EquipNextWeapon_K2Node_InputActionEvent_7 Parms{};
 
-	Parms.Pawn = Pawn;
+	Parms.Key = std::move(Key);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Stairwell_K2Node_ActorBoundEvent_14_SBZPawnDynamicDelegate__DelegateSignature
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.InpActEvt_Crouch_K2Node_InputActionEvent_11
 // (BlueprintEvent)
 // Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Stairwell_K2Node_ActorBoundEvent_14_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Pharaoh_Scripting_C::InpActEvt_Crouch_K2Node_InputActionEvent_11(const struct FKey& Key)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InpActEvt_Crouch_K2Node_InputActionEvent_11", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Stairwell_K2Node_ActorBoundEvent_14_SBZPawnDynamicDelegate__DelegateSignature");
+	Params::G_Pharaoh_Scripting_C_InpActEvt_Crouch_K2Node_InputActionEvent_11 Parms{};
 
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Stairwell_K2Node_ActorBoundEvent_14_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+	Parms.Key = std::move(Key);
 
-	Parms.Pawn = Pawn;
-
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Starcase1_K2Node_ActorBoundEvent_191_ActorBeginOverlapSignature__DelegateSignature
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.InpActEvt_Crouch_K2Node_InputActionEvent_10
 // (BlueprintEvent)
 // Parameters:
-// class AActor*                           OverlappedActor                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Starcase1_K2Node_ActorBoundEvent_191_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor)
+void AG_Pharaoh_Scripting_C::InpActEvt_Crouch_K2Node_InputActionEvent_10(const struct FKey& Key)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Starcase1_K2Node_ActorBoundEvent_191_ActorBeginOverlapSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InpActEvt_Crouch_K2Node_InputActionEvent_10", FnName));
 
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Starcase1_K2Node_ActorBoundEvent_191_ActorBeginOverlapSignature__DelegateSignature Parms{};
+	Params::G_Pharaoh_Scripting_C_InpActEvt_Crouch_K2Node_InputActionEvent_10 Parms{};
 
-	Parms.OverlappedActor = OverlappedActor;
-	Parms.OtherActor = OtherActor;
+	Parms.Key = std::move(Key);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Starcase2_K2Node_ActorBoundEvent_195_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.IncreaseSuspense
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   Amount                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Starcase2_K2Node_ActorBoundEvent_195_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Pharaoh_Scripting_C::IncreaseSuspense(int32 Amount)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Starcase2_K2Node_ActorBoundEvent_195_SBZPawnDynamicDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IncreaseSuspense", FnName));
 
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Starcase2_K2Node_ActorBoundEvent_195_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+	Params::G_Pharaoh_Scripting_C_IncreaseSuspense Parms{};
 
-	Parms.Pawn = Pawn;
+	Parms.Amount = Amount;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Vault_K2Node_ActorBoundEvent_47_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.HeistStateChanged
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// EPD3HeistState                          OldHeistState_HeistStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPD3HeistState                          CurrentHeistState_HeistStateChanged                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Vault_K2Node_ActorBoundEvent_47_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Pharaoh_Scripting_C::HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Vault_K2Node_ActorBoundEvent_47_SBZPawnDynamicDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HeistStateChanged", FnName));
 
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Vault_K2Node_ActorBoundEvent_47_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+	Params::G_Pharaoh_Scripting_C_HeistStateChanged Parms{};
 
-	Parms.Pawn = Pawn;
+	Parms.OldHeistState_HeistStateChanged = OldHeistState_HeistStateChanged;
+	Parms.CurrentHeistState_HeistStateChanged = CurrentHeistState_HeistStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Vent_K2Node_ActorBoundEvent_7_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.GuardInCombat
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// ESBZAIBehaviorCategory                  OldCategory                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZAIBehaviorCategory                  NewCategory                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Vent_K2Node_ActorBoundEvent_7_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Pharaoh_Scripting_C::GuardInCombat(ESBZAIBehaviorCategory OldCategory, ESBZAIBehaviorCategory NewCategory)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Vent_K2Node_ActorBoundEvent_7_SBZPawnDynamicDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GuardInCombat", FnName));
 
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Vent_K2Node_ActorBoundEvent_7_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+	Params::G_Pharaoh_Scripting_C_GuardInCombat Parms{};
 
-	Parms.Pawn = Pawn;
+	Parms.OldCategory = OldCategory;
+	Parms.NewCategory = NewCategory;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_WoodenDoors_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.GetMarkerText
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
 
-void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_WoodenDoors_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+class FText AG_Pharaoh_Scripting_C::GetMarkerText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_WoodenDoors_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetMarkerText", FnName));
 
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_WoodenDoors_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+	Params::G_Pharaoh_Scripting_C_GetMarkerText Parms{};
 
-	Parms.Pawn = Pawn;
-
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void AG_Pharaoh_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature");
 
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature Parms{};
-
-	Parms.Volume = Volume;
-	Parms.Bag = Bag;
-	Parms.Handle = std::move(Handle);
-
-	UObject::ProcessEvent(Func, &Parms);
+	return Parms.ReturnValue;
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZPlayerEscapeVolume1_K2Node_ActorBoundEvent_9_SBZEscapeTimerDelegate__DelegateSignature
-// (BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.FirstResponse
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Pharaoh_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_SBZPlayerEscapeVolume1_K2Node_ActorBoundEvent_9_SBZEscapeTimerDelegate__DelegateSignature()
+void AG_Pharaoh_Scripting_C::FirstResponse()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_ScriptTemplate_Scripting_SBZPlayerEscapeVolume1_K2Node_ActorBoundEvent_9_SBZEscapeTimerDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"FirstResponse", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.ExecuteUbergraph_G_Pharaoh_Scripting
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Pharaoh_Scripting_C::ExecuteUbergraph_G_Pharaoh_Scripting(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_Pharaoh_Scripting_C", "ExecuteUbergraph_G_Pharaoh_Scripting", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature");
+	Params::G_Pharaoh_Scripting_C_ExecuteUbergraph_G_Pharaoh_Scripting Parms{};
 
-	Params::G_Pharaoh_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CameraGuardKilled
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.EscortGuardBehavior
 // (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESBZAIBehaviorCategory                  OldCategory                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZAIBehaviorCategory                  NewCategory                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::CameraGuardKilled()
+void AG_Pharaoh_Scripting_C::EscortGuardBehavior(ESBZAIBehaviorCategory OldCategory, ESBZAIBehaviorCategory NewCategory)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EscortGuardBehavior", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "CameraGuardKilled");
+	Params::G_Pharaoh_Scripting_C_EscortGuardBehavior Parms{};
+
+	Parms.OldCategory = OldCategory;
+	Parms.NewCategory = NewCategory;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.EnableInteractionOxygenTanks
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<class ABP_BreachingEquipmentFuelTank_C*>&Array                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void AG_Pharaoh_Scripting_C::EnableInteractionOxygenTanks(TArray<class ABP_BreachingEquipmentFuelTank_C*>& Array)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EnableInteractionOxygenTanks", FnName));
+
+	Params::G_Pharaoh_Scripting_C_EnableInteractionOxygenTanks Parms{};
+
+	Parms.Array = std::move(Array);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Array = std::move(Parms.Array);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.EnableInteractionInServerRoomForOxygenTanks
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AG_Pharaoh_Scripting_C::EnableInteractionInServerRoomForOxygenTanks()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EnableInteractionInServerRoomForOxygenTanks", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseCamerasPopUp
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.EnableInteractionInServerRoomForBreachingBags
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void AG_Pharaoh_Scripting_C::CloseCamerasPopUp(class FName ClosingActionName)
+void AG_Pharaoh_Scripting_C::EnableInteractionInServerRoomForBreachingBags()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "CloseCamerasPopUp");
-
-	Params::G_Pharaoh_Scripting_C_CloseCamerasPopUp Parms{};
-
-	Parms.ClosingActionName = ClosingActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseDefendDrillPopUp
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::CloseDefendDrillPopUp(class FName ClosingActionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "CloseDefendDrillPopUp");
-
-	Params::G_Pharaoh_Scripting_C_CloseDefendDrillPopUp Parms{};
-
-	Parms.ClosingActionName = ClosingActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseEscortPopUp
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::CloseEscortPopUp(class FName ClosingActionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "CloseEscortPopUp");
-
-	Params::G_Pharaoh_Scripting_C_CloseEscortPopUp Parms{};
-
-	Parms.ClosingActionName = ClosingActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseHackCameraPopUp
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::CloseHackCameraPopUp(class FName ClosingActionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "CloseHackCameraPopUp");
-
-	Params::G_Pharaoh_Scripting_C_CloseHackCameraPopUp Parms{};
-
-	Parms.ClosingActionName = ClosingActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseHideBodyPopUp
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::CloseHideBodyPopUp(class FName ClosingActionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "CloseHideBodyPopUp");
-
-	Params::G_Pharaoh_Scripting_C_CloseHideBodyPopUp Parms{};
-
-	Parms.ClosingActionName = ClosingActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseIncorrectCodePopup
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::CloseIncorrectCodePopup(class FName ClosingActionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "CloseIncorrectCodePopup");
-
-	Params::G_Pharaoh_Scripting_C_CloseIncorrectCodePopup Parms{};
-
-	Parms.ClosingActionName = ClosingActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseIrisScannerPopUp
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::CloseIrisScannerPopUp(class FName ClosingActionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "CloseIrisScannerPopUp");
-
-	Params::G_Pharaoh_Scripting_C_CloseIrisScannerPopUp Parms{};
-
-	Parms.ClosingActionName = ClosingActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseKeypadPopUp
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::CloseKeypadPopUp(class FName ClosingActionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "CloseKeypadPopUp");
-
-	Params::G_Pharaoh_Scripting_C_CloseKeypadPopUp Parms{};
-
-	Parms.ClosingActionName = ClosingActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseLockpickingPopup
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::CloseLockpickingPopup(class FName ClosingActionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "CloseLockpickingPopup");
-
-	Params::G_Pharaoh_Scripting_C_CloseLockpickingPopup Parms{};
-
-	Parms.ClosingActionName = ClosingActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseLurePopUp
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::CloseLurePopUp(class FName ClosingActionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "CloseLurePopUp");
-
-	Params::G_Pharaoh_Scripting_C_CloseLurePopUp Parms{};
-
-	Parms.ClosingActionName = ClosingActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseMaskUpPopUp
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::CloseMaskUpPopUp(class FName ClosingActionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "CloseMaskUpPopUp");
-
-	Params::G_Pharaoh_Scripting_C_CloseMaskUpPopUp Parms{};
-
-	Parms.ClosingActionName = ClosingActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseNegotiationPopUp
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::CloseNegotiationPopUp(class FName ClosingActionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "CloseNegotiationPopUp");
-
-	Params::G_Pharaoh_Scripting_C_CloseNegotiationPopUp Parms{};
-
-	Parms.ClosingActionName = ClosingActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseObjectiveNotification
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Pharaoh_Scripting_C::CloseObjectiveNotification()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "CloseObjectiveNotification");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EnableInteractionInServerRoomForBreachingBags", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseObjectivesPopup
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.EnableInteractionBreachingBags
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<class ABP_BreachingEquipmentBagGenerator_C*>&Array                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void AG_Pharaoh_Scripting_C::CloseObjectivesPopup(class FName ClosingActionName)
+void AG_Pharaoh_Scripting_C::EnableInteractionBreachingBags(TArray<class ABP_BreachingEquipmentBagGenerator_C*>& Array)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EnableInteractionBreachingBags", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "CloseObjectivesPopup");
+	Params::G_Pharaoh_Scripting_C_EnableInteractionBreachingBags Parms{};
 
-	Params::G_Pharaoh_Scripting_C_CloseObjectivesPopup Parms{};
-
-	Parms.ClosingActionName = ClosingActionName;
+	Parms.Array = std::move(Array);
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	Array = std::move(Parms.Array);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseRadiosPopUp
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::CloseRadiosPopUp(class FName ClosingActionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "CloseRadiosPopUp");
-
-	Params::G_Pharaoh_Scripting_C_CloseRadiosPopUp Parms{};
-
-	Parms.ClosingActionName = ClosingActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseSafePopUp
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::CloseSafePopUp(class FName ClosingActionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "CloseSafePopUp");
-
-	Params::G_Pharaoh_Scripting_C_CloseSafePopUp Parms{};
-
-	Parms.ClosingActionName = ClosingActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseSecurityLevelsPopUp
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::CloseSecurityLevelsPopUp(class FName ClosingActionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "CloseSecurityLevelsPopUp");
-
-	Params::G_Pharaoh_Scripting_C_CloseSecurityLevelsPopUp Parms{};
-
-	Parms.ClosingActionName = ClosingActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseSecurityRoom1PopUp
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::CloseSecurityRoom1PopUp(class FName ClosingActionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "CloseSecurityRoom1PopUp");
-
-	Params::G_Pharaoh_Scripting_C_CloseSecurityRoom1PopUp Parms{};
-
-	Parms.ClosingActionName = ClosingActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseSecurityRoom2PopUp
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::CloseSecurityRoom2PopUp(class FName ClosingActionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "CloseSecurityRoom2PopUp");
-
-	Params::G_Pharaoh_Scripting_C_CloseSecurityRoom2PopUp Parms{};
-
-	Parms.ClosingActionName = ClosingActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseShootDoorPopUp
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::CloseShootDoorPopUp(class FName ClosingActionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "CloseShootDoorPopUp");
-
-	Params::G_Pharaoh_Scripting_C_CloseShootDoorPopUp Parms{};
-
-	Parms.ClosingActionName = ClosingActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseShootPopUp
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::CloseShootPopUp(class FName ClosingActionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "CloseShootPopUp");
-
-	Params::G_Pharaoh_Scripting_C_CloseShootPopUp Parms{};
-
-	Parms.ClosingActionName = ClosingActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseTieCivPopUp
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::CloseTieCivPopUp(class FName ClosingActionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "CloseTieCivPopUp");
-
-	Params::G_Pharaoh_Scripting_C_CloseTieCivPopUp Parms{};
-
-	Parms.ClosingActionName = ClosingActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseTieUpPopUp
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.EmployeeKilled
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Pharaoh_Scripting_C::CloseTieUpPopUp()
+void AG_Pharaoh_Scripting_C::EmployeeKilled()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "CloseTieUpPopUp");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EmployeeKilled", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseWeaponsPopUp
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::CloseWeaponsPopUp(class FName ClosingActionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "CloseWeaponsPopUp");
-
-	Params::G_Pharaoh_Scripting_C_CloseWeaponsPopUp Parms{};
-
-	Parms.ClosingActionName = ClosingActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.ControlCounter
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.DisableIrisScannerEvent
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Pharaoh_Scripting_C::ControlCounter()
+void AG_Pharaoh_Scripting_C::DisableIrisScannerEvent()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "ControlCounter");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.ControlledDestroy
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   HowMany                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const class FString&                    Indexs                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// TArray<class AActor*>&                  ArrayOfAssets                                          (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void AG_Pharaoh_Scripting_C::ControlledDestroy(int32 HowMany, const class FString& Indexs, TArray<class AActor*>& ArrayOfAssets)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "ControlledDestroy");
-
-	Params::G_Pharaoh_Scripting_C_ControlledDestroy Parms{};
-
-	Parms.HowMany = HowMany;
-	Parms.Indexs = std::move(Indexs);
-	Parms.ArrayOfAssets = std::move(ArrayOfAssets);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	ArrayOfAssets = std::move(Parms.ArrayOfAssets);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CountMaxLoot
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Pharaoh_Scripting_C::CountMaxLoot()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "CountMaxLoot");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DisableIrisScannerEvent", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -3527,10 +1183,8 @@ void AG_Pharaoh_Scripting_C::CountMaxLoot()
 
 void AG_Pharaoh_Scripting_C::DifficultyChanceBranch(double ChanceNormal, double ChanceHard, double ChanceVeryHard, double ChanceOverkill, int32 MixedSeed, ESBZDifficulty* NewParam, bool* NewParam1)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "DifficultyChanceBranch");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DifficultyChanceBranch", FnName));
 
 	Params::G_Pharaoh_Scripting_C_DifficultyChanceBranch Parms{};
 
@@ -3550,585 +1204,529 @@ void AG_Pharaoh_Scripting_C::DifficultyChanceBranch(double ChanceNormal, double 
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.DisableIrisScannerEvent
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CountMaxLoot
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Pharaoh_Scripting_C::DisableIrisScannerEvent()
+void AG_Pharaoh_Scripting_C::CountMaxLoot()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "DisableIrisScannerEvent");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CountMaxLoot", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.EmployeeKilled
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.ControlledDestroy
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   HowMany                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    Indexs                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// TArray<class AActor*>&                  ArrayOfAssets                                          (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void AG_Pharaoh_Scripting_C::ControlledDestroy(int32 HowMany, const class FString& Indexs, TArray<class AActor*>& ArrayOfAssets)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ControlledDestroy", FnName));
+
+	Params::G_Pharaoh_Scripting_C_ControlledDestroy Parms{};
+
+	Parms.HowMany = HowMany;
+	Parms.Indexs = std::move(Indexs);
+	Parms.ArrayOfAssets = std::move(ArrayOfAssets);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	ArrayOfAssets = std::move(Parms.ArrayOfAssets);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.ControlCounter
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Pharaoh_Scripting_C::EmployeeKilled()
+void AG_Pharaoh_Scripting_C::ControlCounter()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "EmployeeKilled");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ControlCounter", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.EnableInteractionBreachingBags
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseWeaponsPopUp
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TArray<class ABP_BreachingEquipmentBagGenerator_C*>&Array                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::EnableInteractionBreachingBags(TArray<class ABP_BreachingEquipmentBagGenerator_C*>& Array)
+void AG_Pharaoh_Scripting_C::CloseWeaponsPopUp(class FName ClosingActionName)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CloseWeaponsPopUp", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "EnableInteractionBreachingBags");
+	Params::G_Pharaoh_Scripting_C_CloseWeaponsPopUp Parms{};
 
-	Params::G_Pharaoh_Scripting_C_EnableInteractionBreachingBags Parms{};
-
-	Parms.Array = std::move(Array);
+	Parms.ClosingActionName = ClosingActionName;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	Array = std::move(Parms.Array);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.EnableInteractionInServerRoomForBreachingBags
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseTieUpPopUp
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Pharaoh_Scripting_C::EnableInteractionInServerRoomForBreachingBags()
+void AG_Pharaoh_Scripting_C::CloseTieUpPopUp()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "EnableInteractionInServerRoomForBreachingBags");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CloseTieUpPopUp", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.EnableInteractionInServerRoomForOxygenTanks
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseTieCivPopUp
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::EnableInteractionInServerRoomForOxygenTanks()
+void AG_Pharaoh_Scripting_C::CloseTieCivPopUp(class FName ClosingActionName)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CloseTieCivPopUp", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "EnableInteractionInServerRoomForOxygenTanks");
+	Params::G_Pharaoh_Scripting_C_CloseTieCivPopUp Parms{};
+
+	Parms.ClosingActionName = ClosingActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseShootPopUp
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::CloseShootPopUp(class FName ClosingActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CloseShootPopUp", FnName));
+
+	Params::G_Pharaoh_Scripting_C_CloseShootPopUp Parms{};
+
+	Parms.ClosingActionName = ClosingActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseShootDoorPopUp
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::CloseShootDoorPopUp(class FName ClosingActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CloseShootDoorPopUp", FnName));
+
+	Params::G_Pharaoh_Scripting_C_CloseShootDoorPopUp Parms{};
+
+	Parms.ClosingActionName = ClosingActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseSecurityRoom2PopUp
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::CloseSecurityRoom2PopUp(class FName ClosingActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CloseSecurityRoom2PopUp", FnName));
+
+	Params::G_Pharaoh_Scripting_C_CloseSecurityRoom2PopUp Parms{};
+
+	Parms.ClosingActionName = ClosingActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseSecurityRoom1PopUp
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::CloseSecurityRoom1PopUp(class FName ClosingActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CloseSecurityRoom1PopUp", FnName));
+
+	Params::G_Pharaoh_Scripting_C_CloseSecurityRoom1PopUp Parms{};
+
+	Parms.ClosingActionName = ClosingActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseSecurityLevelsPopUp
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::CloseSecurityLevelsPopUp(class FName ClosingActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CloseSecurityLevelsPopUp", FnName));
+
+	Params::G_Pharaoh_Scripting_C_CloseSecurityLevelsPopUp Parms{};
+
+	Parms.ClosingActionName = ClosingActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseSafePopUp
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::CloseSafePopUp(class FName ClosingActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CloseSafePopUp", FnName));
+
+	Params::G_Pharaoh_Scripting_C_CloseSafePopUp Parms{};
+
+	Parms.ClosingActionName = ClosingActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseRadiosPopUp
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::CloseRadiosPopUp(class FName ClosingActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CloseRadiosPopUp", FnName));
+
+	Params::G_Pharaoh_Scripting_C_CloseRadiosPopUp Parms{};
+
+	Parms.ClosingActionName = ClosingActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseObjectivesPopup
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::CloseObjectivesPopup(class FName ClosingActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CloseObjectivesPopup", FnName));
+
+	Params::G_Pharaoh_Scripting_C_CloseObjectivesPopup Parms{};
+
+	Parms.ClosingActionName = ClosingActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseObjectiveNotification
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Pharaoh_Scripting_C::CloseObjectiveNotification()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CloseObjectiveNotification", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.EnableInteractionOxygenTanks
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<class ABP_BreachingEquipmentFuelTank_C*>&Array                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void AG_Pharaoh_Scripting_C::EnableInteractionOxygenTanks(TArray<class ABP_BreachingEquipmentFuelTank_C*>& Array)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "EnableInteractionOxygenTanks");
-
-	Params::G_Pharaoh_Scripting_C_EnableInteractionOxygenTanks Parms{};
-
-	Parms.Array = std::move(Array);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Array = std::move(Parms.Array);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.EscortGuardBehavior
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseNegotiationPopUp
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ESBZAIBehaviorCategory                  OldCategory                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZAIBehaviorCategory                  NewCategory                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::EscortGuardBehavior(ESBZAIBehaviorCategory OldCategory, ESBZAIBehaviorCategory NewCategory)
+void AG_Pharaoh_Scripting_C::CloseNegotiationPopUp(class FName ClosingActionName)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CloseNegotiationPopUp", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "EscortGuardBehavior");
+	Params::G_Pharaoh_Scripting_C_CloseNegotiationPopUp Parms{};
 
-	Params::G_Pharaoh_Scripting_C_EscortGuardBehavior Parms{};
-
-	Parms.OldCategory = OldCategory;
-	Parms.NewCategory = NewCategory;
+	Parms.ClosingActionName = ClosingActionName;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.ExecuteUbergraph_G_Pharaoh_Scripting
-// (Final, UbergraphFunction, HasDefaults)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseMaskUpPopUp
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::ExecuteUbergraph_G_Pharaoh_Scripting(int32 EntryPoint)
+void AG_Pharaoh_Scripting_C::CloseMaskUpPopUp(class FName ClosingActionName)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CloseMaskUpPopUp", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "ExecuteUbergraph_G_Pharaoh_Scripting");
+	Params::G_Pharaoh_Scripting_C_CloseMaskUpPopUp Parms{};
 
-	Params::G_Pharaoh_Scripting_C_ExecuteUbergraph_G_Pharaoh_Scripting Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.ClosingActionName = ClosingActionName;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.FirstResponse
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseLurePopUp
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::CloseLurePopUp(class FName ClosingActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CloseLurePopUp", FnName));
+
+	Params::G_Pharaoh_Scripting_C_CloseLurePopUp Parms{};
+
+	Parms.ClosingActionName = ClosingActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseLockpickingPopup
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::CloseLockpickingPopup(class FName ClosingActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CloseLockpickingPopup", FnName));
+
+	Params::G_Pharaoh_Scripting_C_CloseLockpickingPopup Parms{};
+
+	Parms.ClosingActionName = ClosingActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseKeypadPopUp
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::CloseKeypadPopUp(class FName ClosingActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CloseKeypadPopUp", FnName));
+
+	Params::G_Pharaoh_Scripting_C_CloseKeypadPopUp Parms{};
+
+	Parms.ClosingActionName = ClosingActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseIrisScannerPopUp
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::CloseIrisScannerPopUp(class FName ClosingActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CloseIrisScannerPopUp", FnName));
+
+	Params::G_Pharaoh_Scripting_C_CloseIrisScannerPopUp Parms{};
+
+	Parms.ClosingActionName = ClosingActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseIncorrectCodePopup
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::CloseIncorrectCodePopup(class FName ClosingActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CloseIncorrectCodePopup", FnName));
+
+	Params::G_Pharaoh_Scripting_C_CloseIncorrectCodePopup Parms{};
+
+	Parms.ClosingActionName = ClosingActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseHideBodyPopUp
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::CloseHideBodyPopUp(class FName ClosingActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CloseHideBodyPopUp", FnName));
+
+	Params::G_Pharaoh_Scripting_C_CloseHideBodyPopUp Parms{};
+
+	Parms.ClosingActionName = ClosingActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseHackCameraPopUp
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::CloseHackCameraPopUp(class FName ClosingActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CloseHackCameraPopUp", FnName));
+
+	Params::G_Pharaoh_Scripting_C_CloseHackCameraPopUp Parms{};
+
+	Parms.ClosingActionName = ClosingActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseEscortPopUp
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::CloseEscortPopUp(class FName ClosingActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CloseEscortPopUp", FnName));
+
+	Params::G_Pharaoh_Scripting_C_CloseEscortPopUp Parms{};
+
+	Parms.ClosingActionName = ClosingActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseDefendDrillPopUp
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::CloseDefendDrillPopUp(class FName ClosingActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CloseDefendDrillPopUp", FnName));
+
+	Params::G_Pharaoh_Scripting_C_CloseDefendDrillPopUp Parms{};
+
+	Parms.ClosingActionName = ClosingActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CloseCamerasPopUp
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::CloseCamerasPopUp(class FName ClosingActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CloseCamerasPopUp", FnName));
+
+	Params::G_Pharaoh_Scripting_C_CloseCamerasPopUp Parms{};
+
+	Parms.ClosingActionName = ClosingActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.CameraGuardKilled
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Pharaoh_Scripting_C::FirstResponse()
+void AG_Pharaoh_Scripting_C::CameraGuardKilled()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "FirstResponse");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CameraGuardKilled", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.GetMarkerText
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-class FText AG_Pharaoh_Scripting_C::GetMarkerText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "GetMarkerText");
-
-	Params::G_Pharaoh_Scripting_C_GetMarkerText Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.GuardInCombat
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESBZAIBehaviorCategory                  OldCategory                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZAIBehaviorCategory                  NewCategory                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::GuardInCombat(ESBZAIBehaviorCategory OldCategory, ESBZAIBehaviorCategory NewCategory)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "GuardInCombat");
-
-	Params::G_Pharaoh_Scripting_C_GuardInCombat Parms{};
-
-	Parms.OldCategory = OldCategory;
-	Parms.NewCategory = NewCategory;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.HeistStateChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// EPD3HeistState                          OldHeistState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPD3HeistState                          CurrentHeistState_0                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "HeistStateChanged");
-
-	Params::G_Pharaoh_Scripting_C_HeistStateChanged Parms{};
-
-	Parms.OldHeistState = OldHeistState;
-	Parms.CurrentHeistState_0 = CurrentHeistState_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.IncreaseSuspense
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Amount                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::IncreaseSuspense(int32 Amount)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "IncreaseSuspense");
-
-	Params::G_Pharaoh_Scripting_C_IncreaseSuspense Parms{};
-
-	Parms.Amount = Amount;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.InpActEvt_Crouch_K2Node_InputActionEvent_10
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::InpActEvt_Crouch_K2Node_InputActionEvent_10(const struct FKey& Key)
+void AG_Pharaoh_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "InpActEvt_Crouch_K2Node_InputActionEvent_10");
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
-	Params::G_Pharaoh_Scripting_C_InpActEvt_Crouch_K2Node_InputActionEvent_10 Parms{};
-
-	Parms.Key = std::move(Key);
+	Parms.Pawn = Pawn;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.InpActEvt_Crouch_K2Node_InputActionEvent_11
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZPlayerEscapeVolume1_K2Node_ActorBoundEvent_9_SBZEscapeTimerDelegate__DelegateSignature
 // (BlueprintEvent)
-// Parameters:
-// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::InpActEvt_Crouch_K2Node_InputActionEvent_11(const struct FKey& Key)
+void AG_Pharaoh_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_SBZPlayerEscapeVolume1_K2Node_ActorBoundEvent_9_SBZEscapeTimerDelegate__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ScriptTemplate_Scripting_SBZPlayerEscapeVolume1_K2Node_ActorBoundEvent_9_SBZEscapeTimerDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "InpActEvt_Crouch_K2Node_InputActionEvent_11");
-
-	Params::G_Pharaoh_Scripting_C_InpActEvt_Crouch_K2Node_InputActionEvent_11 Parms{};
-
-	Parms.Key = std::move(Key);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.InpActEvt_EquipNextWeapon_K2Node_InputActionEvent_7
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature
 // (BlueprintEvent)
-// Parameters:
-// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::InpActEvt_EquipNextWeapon_K2Node_InputActionEvent_7(const struct FKey& Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "InpActEvt_EquipNextWeapon_K2Node_InputActionEvent_7");
-
-	Params::G_Pharaoh_Scripting_C_InpActEvt_EquipNextWeapon_K2Node_InputActionEvent_7 Parms{};
-
-	Parms.Key = std::move(Key);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.InpActEvt_EquipPreviousWeapon_K2Node_InputActionEvent_6
-// (BlueprintEvent)
-// Parameters:
-// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::InpActEvt_EquipPreviousWeapon_K2Node_InputActionEvent_6(const struct FKey& Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "InpActEvt_EquipPreviousWeapon_K2Node_InputActionEvent_6");
-
-	Params::G_Pharaoh_Scripting_C_InpActEvt_EquipPreviousWeapon_K2Node_InputActionEvent_6 Parms{};
-
-	Parms.Key = std::move(Key);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.InpActEvt_EquipPrimaryWeapon_K2Node_InputActionEvent_5
-// (BlueprintEvent)
-// Parameters:
-// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::InpActEvt_EquipPrimaryWeapon_K2Node_InputActionEvent_5(const struct FKey& Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "InpActEvt_EquipPrimaryWeapon_K2Node_InputActionEvent_5");
-
-	Params::G_Pharaoh_Scripting_C_InpActEvt_EquipPrimaryWeapon_K2Node_InputActionEvent_5 Parms{};
-
-	Parms.Key = std::move(Key);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.InpActEvt_EquipSecondaryWeapon_K2Node_InputActionEvent_4
-// (BlueprintEvent)
-// Parameters:
-// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::InpActEvt_EquipSecondaryWeapon_K2Node_InputActionEvent_4(const struct FKey& Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "InpActEvt_EquipSecondaryWeapon_K2Node_InputActionEvent_4");
-
-	Params::G_Pharaoh_Scripting_C_InpActEvt_EquipSecondaryWeapon_K2Node_InputActionEvent_4 Parms{};
-
-	Parms.Key = std::move(Key);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.InpActEvt_HUDOverlay_K2Node_InputActionEvent_2
-// (BlueprintEvent)
-// Parameters:
-// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::InpActEvt_HUDOverlay_K2Node_InputActionEvent_2(const struct FKey& Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "InpActEvt_HUDOverlay_K2Node_InputActionEvent_2");
-
-	Params::G_Pharaoh_Scripting_C_InpActEvt_HUDOverlay_K2Node_InputActionEvent_2 Parms{};
-
-	Parms.Key = std::move(Key);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.InpActEvt_PlaceItem_K2Node_InputActionEvent_9
-// (BlueprintEvent)
-// Parameters:
-// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::InpActEvt_PlaceItem_K2Node_InputActionEvent_9(const struct FKey& Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "InpActEvt_PlaceItem_K2Node_InputActionEvent_9");
-
-	Params::G_Pharaoh_Scripting_C_InpActEvt_PlaceItem_K2Node_InputActionEvent_9 Parms{};
-
-	Parms.Key = std::move(Key);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.InpActEvt_RequestOverkillWeapon_K2Node_InputActionEvent_8
-// (BlueprintEvent)
-// Parameters:
-// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::InpActEvt_RequestOverkillWeapon_K2Node_InputActionEvent_8(const struct FKey& Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "InpActEvt_RequestOverkillWeapon_K2Node_InputActionEvent_8");
-
-	Params::G_Pharaoh_Scripting_C_InpActEvt_RequestOverkillWeapon_K2Node_InputActionEvent_8 Parms{};
-
-	Parms.Key = std::move(Key);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.InpActEvt_Run_K2Node_InputActionEvent_1
-// (BlueprintEvent)
-// Parameters:
-// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::InpActEvt_Run_K2Node_InputActionEvent_1(const struct FKey& Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "InpActEvt_Run_K2Node_InputActionEvent_1");
-
-	Params::G_Pharaoh_Scripting_C_InpActEvt_Run_K2Node_InputActionEvent_1 Parms{};
-
-	Parms.Key = std::move(Key);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.InpActEvt_Shout_K2Node_InputActionEvent_3
-// (BlueprintEvent)
-// Parameters:
-// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::InpActEvt_Shout_K2Node_InputActionEvent_3(const struct FKey& Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "InpActEvt_Shout_K2Node_InputActionEvent_3");
-
-	Params::G_Pharaoh_Scripting_C_InpActEvt_Shout_K2Node_InputActionEvent_3 Parms{};
-
-	Parms.Key = std::move(Key);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.InpActEvt_UI_OpenChat_K2Node_InputActionEvent_0
-// (BlueprintEvent)
-// Parameters:
-// const struct FKey&                      Key                                                    (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::InpActEvt_UI_OpenChat_K2Node_InputActionEvent_0(const struct FKey& Key)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "InpActEvt_UI_OpenChat_K2Node_InputActionEvent_0");
-
-	Params::G_Pharaoh_Scripting_C_InpActEvt_UI_OpenChat_K2Node_InputActionEvent_0 Parms{};
-
-	Parms.Key = std::move(Key);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.InsideManPushLiveAction
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           SpecificActionComponentOwner                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::InsideManPushLiveAction(class AActor* SpecificActionComponentOwner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "InsideManPushLiveAction");
-
-	Params::G_Pharaoh_Scripting_C_InsideManPushLiveAction Parms{};
-
-	Parms.SpecificActionComponentOwner = SpecificActionComponentOwner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.LootBagHandle
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZSecuredBagVisualizeComponent* Target                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZBagHandle&             BagHandle                                              (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void AG_Pharaoh_Scripting_C::LootBagHandle(class USBZSecuredBagVisualizeComponent* Target, const struct FSBZBagHandle& BagHandle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "LootBagHandle");
-
-	Params::G_Pharaoh_Scripting_C_LootBagHandle Parms{};
-
-	Parms.Target = Target;
-	Parms.BagHandle = std::move(BagHandle);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.LootValueFilter
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          BagType                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::LootValueFilter(class UObject* BagType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "LootValueFilter");
-
-	Params::G_Pharaoh_Scripting_C_LootValueFilter Parms{};
-
-	Parms.BagType = BagType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.MaskOnChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class ASBZPlayerCharacter*        PlayerCharacter                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsMaskOn                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Pharaoh_Scripting_C::MaskOnChanged(const class ASBZPlayerCharacter* PlayerCharacter, bool bIsMaskOn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "MaskOnChanged");
-
-	Params::G_Pharaoh_Scripting_C_MaskOnChanged Parms{};
-
-	Parms.PlayerCharacter = PlayerCharacter;
-	Parms.bIsMaskOn = bIsMaskOn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.MoneyCartBagSecured
-// (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void AG_Pharaoh_Scripting_C::MoneyCartBagSecured(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
+void AG_Pharaoh_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "MoneyCartBagSecured");
-
-	Params::G_Pharaoh_Scripting_C_MoneyCartBagSecured Parms{};
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature Parms{};
 
 	Parms.Volume = Volume;
 	Parms.Bag = Bag;
@@ -4138,691 +1736,2589 @@ void AG_Pharaoh_Scripting_C::MoneyCartBagSecured(class ASBZBagTriggerVolume* Vol
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnCivillianHogtied
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_WoodenDoors_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// class ASBZAICharacter*                  Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    bHogTied                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::OnCivillianHogtied(class ASBZAICharacter* Character, bool bHogTied)
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_WoodenDoors_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_WoodenDoors_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "OnCivillianHogtied");
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_WoodenDoors_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
-	Params::G_Pharaoh_Scripting_C_OnCivillianHogtied Parms{};
-
-	Parms.Character = Character;
-	Parms.bHogTied = bHogTied;
+	Parms.Pawn = Pawn;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnEscortGuardInCombat
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Vent_K2Node_ActorBoundEvent_7_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// ESBZAIBehaviorCategory                  OldCategory                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZAIBehaviorCategory                  NewCategory                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::OnEscortGuardInCombat(ESBZAIBehaviorCategory OldCategory, ESBZAIBehaviorCategory NewCategory)
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Vent_K2Node_ActorBoundEvent_7_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Vent_K2Node_ActorBoundEvent_7_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "OnEscortGuardInCombat");
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Vent_K2Node_ActorBoundEvent_7_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
-	Params::G_Pharaoh_Scripting_C_OnEscortGuardInCombat Parms{};
-
-	Parms.OldCategory = OldCategory;
-	Parms.NewCategory = NewCategory;
+	Parms.Pawn = Pawn;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnHostage1Released
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Vault_K2Node_ActorBoundEvent_47_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// class ASBZAICharacter*                  Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::OnHostage1Released(class ASBZAICharacter* Character)
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Vault_K2Node_ActorBoundEvent_47_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Vault_K2Node_ActorBoundEvent_47_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "OnHostage1Released");
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Vault_K2Node_ActorBoundEvent_47_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
-	Params::G_Pharaoh_Scripting_C_OnHostage1Released Parms{};
-
-	Parms.Character = Character;
+	Parms.Pawn = Pawn;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnHostage2Released
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Starcase2_K2Node_ActorBoundEvent_195_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// class ASBZAICharacter*                  Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::OnHostage2Released(class ASBZAICharacter* Character)
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Starcase2_K2Node_ActorBoundEvent_195_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Starcase2_K2Node_ActorBoundEvent_195_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "OnHostage2Released");
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Starcase2_K2Node_ActorBoundEvent_195_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
-	Params::G_Pharaoh_Scripting_C_OnHostage2Released Parms{};
-
-	Parms.Character = Character;
+	Parms.Pawn = Pawn;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnIrisHumanShield
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Starcase1_K2Node_ActorBoundEvent_191_ActorBeginOverlapSignature__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// class ASBZAICharacter*                  Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCharacter*                    Instigator_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    bHumanShield                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OverlappedActor                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::OnIrisHumanShield(class ASBZAICharacter* Character, class ASBZCharacter* Instigator_0, bool bHumanShield)
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Starcase1_K2Node_ActorBoundEvent_191_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Starcase1_K2Node_ActorBoundEvent_191_ActorBeginOverlapSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "OnIrisHumanShield");
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Starcase1_K2Node_ActorBoundEvent_191_ActorBeginOverlapSignature__DelegateSignature Parms{};
 
-	Params::G_Pharaoh_Scripting_C_OnIrisHumanShield Parms{};
-
-	Parms.Character = Character;
-	Parms.Instigator_0 = Instigator_0;
-	Parms.bHumanShield = bHumanShield;
+	Parms.OverlappedActor = OverlappedActor;
+	Parms.OtherActor = OtherActor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnItGuyHumanShield
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Stairwell_K2Node_ActorBoundEvent_14_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// class ASBZAICharacter*                  Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCharacter*                    Instigator_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    bHumanShield                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::OnItGuyHumanShield(class ASBZAICharacter* Character, class ASBZCharacter* Instigator_0, bool bHumanShield)
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Stairwell_K2Node_ActorBoundEvent_14_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Stairwell_K2Node_ActorBoundEvent_14_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "OnItGuyHumanShield");
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Stairwell_K2Node_ActorBoundEvent_14_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
-	Params::G_Pharaoh_Scripting_C_OnItGuyHumanShield Parms{};
-
-	Parms.Character = Character;
-	Parms.Instigator_0 = Instigator_0;
-	Parms.bHumanShield = bHumanShield;
+	Parms.Pawn = Pawn;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnKillGuardRadioAnswered
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Staircase2_K2Node_ActorBoundEvent_199_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// class ASBZAICharacter*                  Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsFailed                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::OnKillGuardRadioAnswered(class ASBZAICharacter* Character, bool bIsEnabled, bool bIsFailed)
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Staircase2_K2Node_ActorBoundEvent_199_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Staircase2_K2Node_ActorBoundEvent_199_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "OnKillGuardRadioAnswered");
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Staircase2_K2Node_ActorBoundEvent_199_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
-	Params::G_Pharaoh_Scripting_C_OnKillGuardRadioAnswered Parms{};
-
-	Parms.Character = Character;
-	Parms.bIsEnabled = bIsEnabled;
-	Parms.bIsFailed = bIsFailed;
+	Parms.Pawn = Pawn;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnLocalPlayerCarryChanged
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer6_K2Node_ActorBoundEvent_104_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// bool                                    bIsCarrying                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsHumanShield                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::OnLocalPlayerCarryChanged(bool bIsCarrying, bool bIsHumanShield)
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer6_K2Node_ActorBoundEvent_104_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer6_K2Node_ActorBoundEvent_104_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "OnLocalPlayerCarryChanged");
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer6_K2Node_ActorBoundEvent_104_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
-	Params::G_Pharaoh_Scripting_C_OnLocalPlayerCarryChanged Parms{};
-
-	Parms.bIsCarrying = bIsCarrying;
-	Parms.bIsHumanShield = bIsHumanShield;
+	Parms.Pawn = Pawn;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnMatrixEmployeeHogtied
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer5_K2Node_ActorBoundEvent_218_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// class ASBZAICharacter*                  Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    bHogTied                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::OnMatrixEmployeeHogtied(class ASBZAICharacter* Character, bool bHogTied)
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer5_K2Node_ActorBoundEvent_218_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer5_K2Node_ActorBoundEvent_218_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "OnMatrixEmployeeHogtied");
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer5_K2Node_ActorBoundEvent_218_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
-	Params::G_Pharaoh_Scripting_C_OnMatrixEmployeeHogtied Parms{};
-
-	Parms.Character = Character;
-	Parms.bHogTied = bHogTied;
+	Parms.Pawn = Pawn;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnMatrixHumanShield
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer4_K2Node_ActorBoundEvent_217_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// class ASBZAICharacter*                  Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCharacter*                    Instigator_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    bHumanShield                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::OnMatrixHumanShield(class ASBZAICharacter* Character, class ASBZCharacter* Instigator_0, bool bHumanShield)
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer4_K2Node_ActorBoundEvent_217_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer4_K2Node_ActorBoundEvent_217_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "OnMatrixHumanShield");
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer4_K2Node_ActorBoundEvent_217_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
-	Params::G_Pharaoh_Scripting_C_OnMatrixHumanShield Parms{};
-
-	Parms.Character = Character;
-	Parms.Instigator_0 = Instigator_0;
-	Parms.bHumanShield = bHumanShield;
+	Parms.Pawn = Pawn;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnNegotiationStarted
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer3_K2Node_ActorBoundEvent_215_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::OnNegotiationStarted()
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer3_K2Node_ActorBoundEvent_215_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer3_K2Node_ActorBoundEvent_215_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "OnNegotiationStarted");
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer3_K2Node_ActorBoundEvent_215_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer2_K2Node_ActorBoundEvent_214_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer2_K2Node_ActorBoundEvent_214_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer2_K2Node_ActorBoundEvent_214_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer2_K2Node_ActorBoundEvent_214_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer1_K2Node_ActorBoundEvent_213_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer1_K2Node_ActorBoundEvent_213_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer1_K2Node_ActorBoundEvent_213_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Sewer1_K2Node_ActorBoundEvent_213_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_safe_K2Node_ActorBoundEvent_52_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_safe_K2Node_ActorBoundEvent_52_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_safe_K2Node_ActorBoundEvent_52_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_safe_K2Node_ActorBoundEvent_52_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_RunTooltip_K2Node_ActorBoundEvent_163_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_RunTooltip_K2Node_ActorBoundEvent_163_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_RunTooltip_K2Node_ActorBoundEvent_163_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_RunTooltip_K2Node_ActorBoundEvent_163_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_RunTooltip2_K2Node_ActorBoundEvent_164_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_RunTooltip2_K2Node_ActorBoundEvent_164_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_RunTooltip2_K2Node_ActorBoundEvent_164_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_RunTooltip2_K2Node_ActorBoundEvent_164_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_ReachMatrixRoom_K2Node_ActorBoundEvent_77_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_ReachMatrixRoom_K2Node_ActorBoundEvent_77_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_ReachMatrixRoom_K2Node_ActorBoundEvent_77_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_ReachMatrixRoom_K2Node_ActorBoundEvent_77_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_OVKWeapon_K2Node_ActorBoundEvent_92_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_OVKWeapon_K2Node_ActorBoundEvent_92_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_OVKWeapon_K2Node_ActorBoundEvent_92_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_OVKWeapon_K2Node_ActorBoundEvent_92_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_MetroMaskUp_K2Node_ActorBoundEvent_89_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_MetroMaskUp_K2Node_ActorBoundEvent_89_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_MetroMaskUp_K2Node_ActorBoundEvent_89_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_MetroMaskUp_K2Node_ActorBoundEvent_89_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro6_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro6_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro6_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro6_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro4_K2Node_ActorBoundEvent_45_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro4_K2Node_ActorBoundEvent_45_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro4_K2Node_ActorBoundEvent_45_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro4_K2Node_ActorBoundEvent_45_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro4_K2Node_ActorBoundEvent_224_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro4_K2Node_ActorBoundEvent_224_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro4_K2Node_ActorBoundEvent_224_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro4_K2Node_ActorBoundEvent_224_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro3_K2Node_ActorBoundEvent_220_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro3_K2Node_ActorBoundEvent_220_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro3_K2Node_ActorBoundEvent_220_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro3_K2Node_ActorBoundEvent_220_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro2_K2Node_ActorBoundEvent_219_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro2_K2Node_ActorBoundEvent_219_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro2_K2Node_ActorBoundEvent_219_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Metro2_K2Node_ActorBoundEvent_219_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_MatrixSecurity_K2Node_ActorBoundEvent_46_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_MatrixSecurity_K2Node_ActorBoundEvent_46_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_MatrixSecurity_K2Node_ActorBoundEvent_46_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_MatrixSecurity_K2Node_ActorBoundEvent_46_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_MarkingTooltip_K2Node_ActorBoundEvent_212_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_MarkingTooltip_K2Node_ActorBoundEvent_212_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_MarkingTooltip_K2Node_ActorBoundEvent_212_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_MarkingTooltip_K2Node_ActorBoundEvent_212_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_LureActivation_K2Node_ActorBoundEvent_207_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_LureActivation_K2Node_ActorBoundEvent_207_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_LureActivation_K2Node_ActorBoundEvent_207_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_LureActivation_K2Node_ActorBoundEvent_207_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Lockpicking_K2Node_ActorBoundEvent_162_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Lockpicking_K2Node_ActorBoundEvent_162_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Lockpicking_K2Node_ActorBoundEvent_162_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Lockpicking_K2Node_ActorBoundEvent_162_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Lobby2_K2Node_ActorBoundEvent_40_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Lobby2_K2Node_ActorBoundEvent_40_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Lobby2_K2Node_ActorBoundEvent_40_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Lobby2_K2Node_ActorBoundEvent_40_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Lobby1_K2Node_ActorBoundEvent_39_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Lobby1_K2Node_ActorBoundEvent_39_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Lobby1_K2Node_ActorBoundEvent_39_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Lobby1_K2Node_ActorBoundEvent_39_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_KillGuard_K2Node_ActorBoundEvent_221_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_KillGuard_K2Node_ActorBoundEvent_221_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_KillGuard_K2Node_ActorBoundEvent_221_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_KillGuard_K2Node_ActorBoundEvent_221_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_IrisScanner_K2Node_ActorBoundEvent_8_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_IrisScanner_K2Node_ActorBoundEvent_8_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_IrisScanner_K2Node_ActorBoundEvent_8_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_IrisScanner_K2Node_ActorBoundEvent_8_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_IrisScanner2_K2Node_ActorBoundEvent_11_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_IrisScanner2_K2Node_ActorBoundEvent_11_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_IrisScanner2_K2Node_ActorBoundEvent_11_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_IrisScanner2_K2Node_ActorBoundEvent_11_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GotoGarageBasement_K2Node_ActorBoundEvent_203_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GotoGarageBasement_K2Node_ActorBoundEvent_203_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GotoGarageBasement_K2Node_ActorBoundEvent_203_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GotoGarageBasement_K2Node_ActorBoundEvent_203_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE9_6_K2Node_ActorBoundEvent_73_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE9_6_K2Node_ActorBoundEvent_73_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE9_6_K2Node_ActorBoundEvent_73_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE9_6_K2Node_ActorBoundEvent_73_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE8_K2Node_ActorBoundEvent_72_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE8_K2Node_ActorBoundEvent_72_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE8_K2Node_ActorBoundEvent_72_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE8_K2Node_ActorBoundEvent_72_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE7_K2Node_ActorBoundEvent_71_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE7_K2Node_ActorBoundEvent_71_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE7_K2Node_ActorBoundEvent_71_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE7_K2Node_ActorBoundEvent_71_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE6_K2Node_ActorBoundEvent_70_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE6_K2Node_ActorBoundEvent_70_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE6_K2Node_ActorBoundEvent_70_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE6_K2Node_ActorBoundEvent_70_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE5_K2Node_ActorBoundEvent_68_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE5_K2Node_ActorBoundEvent_68_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE5_K2Node_ActorBoundEvent_68_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE5_K2Node_ActorBoundEvent_68_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE4_K2Node_ActorBoundEvent_67_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE4_K2Node_ActorBoundEvent_67_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE4_K2Node_ActorBoundEvent_67_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE4_K2Node_ActorBoundEvent_67_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE3_1_K2Node_ActorBoundEvent_66_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE3_1_K2Node_ActorBoundEvent_66_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE3_1_K2Node_ActorBoundEvent_66_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE3_1_K2Node_ActorBoundEvent_66_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE2_K2Node_ActorBoundEvent_64_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE2_K2Node_ActorBoundEvent_64_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE2_K2Node_ActorBoundEvent_64_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE2_K2Node_ActorBoundEvent_64_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE1_K2Node_ActorBoundEvent_44_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE1_K2Node_ActorBoundEvent_44_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE1_K2Node_ActorBoundEvent_44_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE1_K2Node_ActorBoundEvent_44_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE0_K2Node_ActorBoundEvent_33_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE0_K2Node_ActorBoundEvent_33_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE0_K2Node_ActorBoundEvent_33_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE0_K2Node_ActorBoundEvent_33_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE0_K2Node_ActorBoundEvent_31_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE0_K2Node_ActorBoundEvent_31_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE0_K2Node_ActorBoundEvent_31_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GE0_K2Node_ActorBoundEvent_31_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GarageBasementGuards_K2Node_ActorBoundEvent_225_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GarageBasementGuards_K2Node_ActorBoundEvent_225_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GarageBasementGuards_K2Node_ActorBoundEvent_225_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GarageBasementGuards_K2Node_ActorBoundEvent_225_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GarageBasement2_K2Node_ActorBoundEvent_204_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GarageBasement2_K2Node_ActorBoundEvent_204_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GarageBasement2_K2Node_ActorBoundEvent_204_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_GarageBasement2_K2Node_ActorBoundEvent_204_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_EscortDestination_K2Node_ActorBoundEvent_205_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_EscortDestination_K2Node_ActorBoundEvent_205_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_EscortDestination_K2Node_ActorBoundEvent_205_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_EscortDestination_K2Node_ActorBoundEvent_205_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_EscortDestination2_K2Node_ActorBoundEvent_216_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_EscortDestination2_K2Node_ActorBoundEvent_216_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_EscortDestination2_K2Node_ActorBoundEvent_216_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_EscortDestination2_K2Node_ActorBoundEvent_216_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_EndlessAssault_K2Node_ActorBoundEvent_90_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_EndlessAssault_K2Node_ActorBoundEvent_90_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_EndlessAssault_K2Node_ActorBoundEvent_90_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_EndlessAssault_K2Node_ActorBoundEvent_90_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Drill_K2Node_ActorBoundEvent_22_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Drill_K2Node_ActorBoundEvent_22_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Drill_K2Node_ActorBoundEvent_22_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Drill_K2Node_ActorBoundEvent_22_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint9_K2Node_ActorBoundEvent_63_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint9_K2Node_ActorBoundEvent_63_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint9_K2Node_ActorBoundEvent_63_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint9_K2Node_ActorBoundEvent_63_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint8_K2Node_ActorBoundEvent_62_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint8_K2Node_ActorBoundEvent_62_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint8_K2Node_ActorBoundEvent_62_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint8_K2Node_ActorBoundEvent_62_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint7_K2Node_ActorBoundEvent_61_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint7_K2Node_ActorBoundEvent_61_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint7_K2Node_ActorBoundEvent_61_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint7_K2Node_ActorBoundEvent_61_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint6_K2Node_ActorBoundEvent_57_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint6_K2Node_ActorBoundEvent_57_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint6_K2Node_ActorBoundEvent_57_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint6_K2Node_ActorBoundEvent_57_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint5_K2Node_ActorBoundEvent_60_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint5_K2Node_ActorBoundEvent_60_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint5_K2Node_ActorBoundEvent_60_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint5_K2Node_ActorBoundEvent_60_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint4_K2Node_ActorBoundEvent_56_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint4_K2Node_ActorBoundEvent_56_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint4_K2Node_ActorBoundEvent_56_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint4_K2Node_ActorBoundEvent_56_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint3_K2Node_ActorBoundEvent_59_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint3_K2Node_ActorBoundEvent_59_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint3_K2Node_ActorBoundEvent_59_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint3_K2Node_ActorBoundEvent_59_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint2_K2Node_ActorBoundEvent_51_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint2_K2Node_ActorBoundEvent_51_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint2_K2Node_ActorBoundEvent_51_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint2_K2Node_ActorBoundEvent_51_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint1_K2Node_ActorBoundEvent_54_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint1_K2Node_ActorBoundEvent_54_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint1_K2Node_ActorBoundEvent_54_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint1_K2Node_ActorBoundEvent_54_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint0_K2Node_ActorBoundEvent_53_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint0_K2Node_ActorBoundEvent_53_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint0_K2Node_ActorBoundEvent_53_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Checkpoint0_K2Node_ActorBoundEvent_53_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_CameraPuzzle3_K2Node_ActorBoundEvent_94_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_CameraPuzzle3_K2Node_ActorBoundEvent_94_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_CameraPuzzle3_K2Node_ActorBoundEvent_94_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_CameraPuzzle3_K2Node_ActorBoundEvent_94_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_CameraPuzzle2_K2Node_ActorBoundEvent_74_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_CameraPuzzle2_K2Node_ActorBoundEvent_74_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_CameraPuzzle2_K2Node_ActorBoundEvent_74_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_CameraPuzzle2_K2Node_ActorBoundEvent_74_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_CameraPuzzle1_K2Node_ActorBoundEvent_210_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_CameraPuzzle1_K2Node_ActorBoundEvent_210_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_CameraPuzzle1_K2Node_ActorBoundEvent_210_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_CameraPuzzle1_K2Node_ActorBoundEvent_210_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_BoilerRoom_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_BoilerRoom_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_BoilerRoom_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_BoilerRoom_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank4_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank4_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank4_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank4_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank3_K2Node_ActorBoundEvent_26_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank3_K2Node_ActorBoundEvent_26_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank3_K2Node_ActorBoundEvent_26_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank3_K2Node_ActorBoundEvent_26_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank2_K2Node_ActorBoundEvent_25_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank2_K2Node_ActorBoundEvent_25_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank2_K2Node_ActorBoundEvent_25_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank2_K2Node_ActorBoundEvent_25_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank1_K2Node_ActorBoundEvent_19_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank1_K2Node_ActorBoundEvent_19_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank1_K2Node_ActorBoundEvent_19_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume_Bank1_K2Node_ActorBoundEvent_19_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume3_3_K2Node_ActorBoundEvent_15_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume3_3_K2Node_ActorBoundEvent_15_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume3_3_K2Node_ActorBoundEvent_15_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerTriggerVolume3_3_K2Node_ActorBoundEvent_15_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint9_K2Node_ActorBoundEvent_103_SBZOnSpawnGroupChosen__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZPlayerStartGroup*             PlayerStartGroup                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint9_K2Node_ActorBoundEvent_103_SBZOnSpawnGroupChosen__DelegateSignature(class ASBZPlayerStartGroup* PlayerStartGroup)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint9_K2Node_ActorBoundEvent_103_SBZOnSpawnGroupChosen__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint9_K2Node_ActorBoundEvent_103_SBZOnSpawnGroupChosen__DelegateSignature Parms{};
+
+	Parms.PlayerStartGroup = PlayerStartGroup;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint8_K2Node_ActorBoundEvent_102_SBZOnSpawnGroupChosen__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZPlayerStartGroup*             PlayerStartGroup                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint8_K2Node_ActorBoundEvent_102_SBZOnSpawnGroupChosen__DelegateSignature(class ASBZPlayerStartGroup* PlayerStartGroup)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint8_K2Node_ActorBoundEvent_102_SBZOnSpawnGroupChosen__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint8_K2Node_ActorBoundEvent_102_SBZOnSpawnGroupChosen__DelegateSignature Parms{};
+
+	Parms.PlayerStartGroup = PlayerStartGroup;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint7_K2Node_ActorBoundEvent_101_SBZOnSpawnGroupChosen__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZPlayerStartGroup*             PlayerStartGroup                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint7_K2Node_ActorBoundEvent_101_SBZOnSpawnGroupChosen__DelegateSignature(class ASBZPlayerStartGroup* PlayerStartGroup)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint7_K2Node_ActorBoundEvent_101_SBZOnSpawnGroupChosen__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint7_K2Node_ActorBoundEvent_101_SBZOnSpawnGroupChosen__DelegateSignature Parms{};
+
+	Parms.PlayerStartGroup = PlayerStartGroup;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint6_K2Node_ActorBoundEvent_99_SBZOnSpawnGroupChosen__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZPlayerStartGroup*             PlayerStartGroup                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint6_K2Node_ActorBoundEvent_99_SBZOnSpawnGroupChosen__DelegateSignature(class ASBZPlayerStartGroup* PlayerStartGroup)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint6_K2Node_ActorBoundEvent_99_SBZOnSpawnGroupChosen__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint6_K2Node_ActorBoundEvent_99_SBZOnSpawnGroupChosen__DelegateSignature Parms{};
+
+	Parms.PlayerStartGroup = PlayerStartGroup;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint5_K2Node_ActorBoundEvent_105_SBZOnSpawnGroupChosen__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZPlayerStartGroup*             PlayerStartGroup                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint5_K2Node_ActorBoundEvent_105_SBZOnSpawnGroupChosen__DelegateSignature(class ASBZPlayerStartGroup* PlayerStartGroup)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint5_K2Node_ActorBoundEvent_105_SBZOnSpawnGroupChosen__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint5_K2Node_ActorBoundEvent_105_SBZOnSpawnGroupChosen__DelegateSignature Parms{};
+
+	Parms.PlayerStartGroup = PlayerStartGroup;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint4_K2Node_ActorBoundEvent_100_SBZOnSpawnGroupChosen__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZPlayerStartGroup*             PlayerStartGroup                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint4_K2Node_ActorBoundEvent_100_SBZOnSpawnGroupChosen__DelegateSignature(class ASBZPlayerStartGroup* PlayerStartGroup)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint4_K2Node_ActorBoundEvent_100_SBZOnSpawnGroupChosen__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint4_K2Node_ActorBoundEvent_100_SBZOnSpawnGroupChosen__DelegateSignature Parms{};
+
+	Parms.PlayerStartGroup = PlayerStartGroup;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint3_K2Node_ActorBoundEvent_55_SBZOnSpawnGroupChosen__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZPlayerStartGroup*             PlayerStartGroup                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint3_K2Node_ActorBoundEvent_55_SBZOnSpawnGroupChosen__DelegateSignature(class ASBZPlayerStartGroup* PlayerStartGroup)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint3_K2Node_ActorBoundEvent_55_SBZOnSpawnGroupChosen__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint3_K2Node_ActorBoundEvent_55_SBZOnSpawnGroupChosen__DelegateSignature Parms{};
+
+	Parms.PlayerStartGroup = PlayerStartGroup;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint2_K2Node_ActorBoundEvent_58_SBZOnSpawnGroupChosen__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZPlayerStartGroup*             PlayerStartGroup                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint2_K2Node_ActorBoundEvent_58_SBZOnSpawnGroupChosen__DelegateSignature(class ASBZPlayerStartGroup* PlayerStartGroup)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint2_K2Node_ActorBoundEvent_58_SBZOnSpawnGroupChosen__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_Checkpoint2_K2Node_ActorBoundEvent_58_SBZOnSpawnGroupChosen__DelegateSignature Parms{};
+
+	Parms.PlayerStartGroup = PlayerStartGroup;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_1_K2Node_ActorBoundEvent_41_SBZOnSpawnGroupChosen__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZPlayerStartGroup*             PlayerStartGroup                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_1_K2Node_ActorBoundEvent_41_SBZOnSpawnGroupChosen__DelegateSignature(class ASBZPlayerStartGroup* PlayerStartGroup)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_1_K2Node_ActorBoundEvent_41_SBZOnSpawnGroupChosen__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerStartGroup_1_K2Node_ActorBoundEvent_41_SBZOnSpawnGroupChosen__DelegateSignature Parms{};
+
+	Parms.PlayerStartGroup = PlayerStartGroup;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerStart_CheckPoint9_K2Node_ActorBoundEvent_79_SBZOnPlayerStartUsedSignature__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+// Parameters:
+// class ASBZCharacter*                    SBZCharacter                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsPlayer                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerStart_CheckPoint9_K2Node_ActorBoundEvent_79_SBZOnPlayerStartUsedSignature__DelegateSignature(class ASBZCharacter* SBZCharacter, bool bIsPlayer)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerStart_CheckPoint9_K2Node_ActorBoundEvent_79_SBZOnPlayerStartUsedSignature__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerStart_CheckPoint9_K2Node_ActorBoundEvent_79_SBZOnPlayerStartUsedSignature__DelegateSignature Parms{};
+
+	Parms.SBZCharacter = SBZCharacter;
+	Parms.bIsPlayer = bIsPlayer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerStart_CheckPoint8_K2Node_ActorBoundEvent_87_SBZOnPlayerStartUsedSignature__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+// Parameters:
+// class ASBZCharacter*                    SBZCharacter                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsPlayer                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerStart_CheckPoint8_K2Node_ActorBoundEvent_87_SBZOnPlayerStartUsedSignature__DelegateSignature(class ASBZCharacter* SBZCharacter, bool bIsPlayer)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerStart_CheckPoint8_K2Node_ActorBoundEvent_87_SBZOnPlayerStartUsedSignature__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerStart_CheckPoint8_K2Node_ActorBoundEvent_87_SBZOnPlayerStartUsedSignature__DelegateSignature Parms{};
+
+	Parms.SBZCharacter = SBZCharacter;
+	Parms.bIsPlayer = bIsPlayer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerStart_CheckPoint7_K2Node_ActorBoundEvent_86_SBZOnPlayerStartUsedSignature__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+// Parameters:
+// class ASBZCharacter*                    SBZCharacter                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsPlayer                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerStart_CheckPoint7_K2Node_ActorBoundEvent_86_SBZOnPlayerStartUsedSignature__DelegateSignature(class ASBZCharacter* SBZCharacter, bool bIsPlayer)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerStart_CheckPoint7_K2Node_ActorBoundEvent_86_SBZOnPlayerStartUsedSignature__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerStart_CheckPoint7_K2Node_ActorBoundEvent_86_SBZOnPlayerStartUsedSignature__DelegateSignature Parms{};
+
+	Parms.SBZCharacter = SBZCharacter;
+	Parms.bIsPlayer = bIsPlayer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerLookAtTriggerVault_K2Node_ActorBoundEvent_69_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerLookAtTriggerVault_K2Node_ActorBoundEvent_69_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerLookAtTriggerVault_K2Node_ActorBoundEvent_69_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerLookAtTriggerVault_K2Node_ActorBoundEvent_69_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPlayerLookAtTrigger_Keypad_K2Node_ActorBoundEvent_28_SBZBooleanStateDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// bool                                    State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPlayerLookAtTrigger_Keypad_K2Node_ActorBoundEvent_28_SBZBooleanStateDynamicDelegate__DelegateSignature(bool State)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPlayerLookAtTrigger_Keypad_K2Node_ActorBoundEvent_28_SBZBooleanStateDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPlayerLookAtTrigger_Keypad_K2Node_ActorBoundEvent_28_SBZBooleanStateDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.State = State;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_K2Node_ActorBoundEvent_43_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_K2Node_ActorBoundEvent_43_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_K2Node_ActorBoundEvent_43_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_K2Node_ActorBoundEvent_43_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_K2Node_ActorBoundEvent_42_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_K2Node_ActorBoundEvent_42_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_K2Node_ActorBoundEvent_42_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_K2Node_ActorBoundEvent_42_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
+
+	Parms.DeadPawn = DeadPawn;
+	Parms.Spawner = Spawner;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_0_K2Node_ActorBoundEvent_83_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_0_K2Node_ActorBoundEvent_83_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_0_K2Node_ActorBoundEvent_83_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_0_K2Node_ActorBoundEvent_83_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_0_K2Node_ActorBoundEvent_82_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_0_K2Node_ActorBoundEvent_82_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_0_K2Node_ActorBoundEvent_82_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_VaultEmployee2_0_K2Node_ActorBoundEvent_82_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
+
+	Parms.DeadPawn = DeadPawn;
+	Parms.Spawner = Spawner;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist_K2Node_ActorBoundEvent_78_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist_K2Node_ActorBoundEvent_78_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist_K2Node_ActorBoundEvent_78_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist_K2Node_ActorBoundEvent_78_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
+
+	Parms.DeadPawn = DeadPawn;
+	Parms.Spawner = Spawner;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist_K2Node_ActorBoundEvent_76_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist_K2Node_ActorBoundEvent_76_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist_K2Node_ActorBoundEvent_76_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist_K2Node_ActorBoundEvent_76_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist2_K2Node_ActorBoundEvent_85_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist2_K2Node_ActorBoundEvent_85_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist2_K2Node_ActorBoundEvent_85_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist2_K2Node_ActorBoundEvent_85_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist2_K2Node_ActorBoundEvent_80_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist2_K2Node_ActorBoundEvent_80_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist2_K2Node_ActorBoundEvent_80_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_MatrixReceptionist2_K2Node_ActorBoundEvent_80_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
+
+	Parms.DeadPawn = DeadPawn;
+	Parms.Spawner = Spawner;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_ManagerPublic2_K2Node_ActorBoundEvent_75_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_ManagerPublic2_K2Node_ActorBoundEvent_75_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_ManagerPublic2_K2Node_ActorBoundEvent_75_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_ManagerPublic2_K2Node_ActorBoundEvent_75_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
+
+	Parms.DeadPawn = DeadPawn;
+	Parms.Spawner = Spawner;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_ManagerPublic2_K2Node_ActorBoundEvent_13_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_ManagerPublic2_K2Node_ActorBoundEvent_13_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_ManagerPublic2_K2Node_ActorBoundEvent_13_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_ManagerPublic2_K2Node_ActorBoundEvent_13_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_EscortGuard_K2Node_ActorBoundEvent_17_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_EscortGuard_K2Node_ActorBoundEvent_17_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_EscortGuard_K2Node_ActorBoundEvent_17_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_EscortGuard_K2Node_ActorBoundEvent_17_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_EscortGuard2_K2Node_ActorBoundEvent_223_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_EscortGuard2_K2Node_ActorBoundEvent_223_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_EscortGuard2_K2Node_ActorBoundEvent_223_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_EscortGuard2_K2Node_ActorBoundEvent_223_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
+
+	Parms.DeadPawn = DeadPawn;
+	Parms.Spawner = Spawner;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_EscortGuard2_K2Node_ActorBoundEvent_222_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_EscortGuard2_K2Node_ActorBoundEvent_222_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_EscortGuard2_K2Node_ActorBoundEvent_222_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_EscortGuard2_K2Node_ActorBoundEvent_222_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_Employee5_0_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_Employee5_0_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_Employee5_0_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZPawnSpawnPredefined_Employee5_0_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZLaserGrid1_K2Node_ActorBoundEvent_27_SBZOnLaserGridTriggered__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZLaserGrid*                    LaserGrid                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPlayerCharacter*              PlayerCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZLaserGrid1_K2Node_ActorBoundEvent_27_SBZOnLaserGridTriggered__DelegateSignature(class ASBZLaserGrid* LaserGrid, class ASBZPlayerCharacter* PlayerCharacter)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZLaserGrid1_K2Node_ActorBoundEvent_27_SBZOnLaserGridTriggered__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZLaserGrid1_K2Node_ActorBoundEvent_27_SBZOnLaserGridTriggered__DelegateSignature Parms{};
+
+	Parms.LaserGrid = LaserGrid;
+	Parms.PlayerCharacter = PlayerCharacter;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_SBZFilteredTriggerVolume_GuardLure_K2Node_ActorBoundEvent_206_SBZFilterActorDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_SBZFilteredTriggerVolume_GuardLure_K2Node_ActorBoundEvent_206_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_SBZFilteredTriggerVolume_GuardLure_K2Node_ActorBoundEvent_206_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_SBZFilteredTriggerVolume_GuardLure_K2Node_ActorBoundEvent_206_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Identifier = Identifier;
+	Parms.Actor = Actor;
+	Parms.CurrentTotalActors = CurrentTotalActors;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_SewerBars_2_K2Node_ActorBoundEvent_84_SBZOnCuttableActorCutComplete__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZCuttableActor*                CuttableActor                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_SewerBars_2_K2Node_ActorBoundEvent_84_SBZOnCuttableActorCutComplete__DelegateSignature(class ASBZCuttableActor* CuttableActor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_SewerBars_2_K2Node_ActorBoundEvent_84_SBZOnCuttableActorCutComplete__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_SewerBars_2_K2Node_ActorBoundEvent_84_SBZOnCuttableActorCutComplete__DelegateSignature Parms{};
+
+	Parms.CuttableActor = CuttableActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_SecurityRoom_Matrix_2_K2Node_ActorBoundEvent_93_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_SecurityRoom_Matrix_2_K2Node_ActorBoundEvent_93_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_SecurityRoom_Matrix_2_K2Node_ActorBoundEvent_93_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_SecurityRoom_Matrix_2_K2Node_ActorBoundEvent_93_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_SecurityRoom_Matrix_2_K2Node_ActorBoundEvent_16_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_SecurityRoom_Matrix_2_K2Node_ActorBoundEvent_16_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_SecurityRoom_Matrix_2_K2Node_ActorBoundEvent_16_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_SecurityRoom_Matrix_2_K2Node_ActorBoundEvent_16_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
+
+	Parms.DeadPawn = DeadPawn;
+	Parms.Spawner = Spawner;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Vault7_K2Node_ActorBoundEvent_88_SBZPlayerViewingChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSecurityCamera*               Camera                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsViewTarget                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocalPlayer                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Vault7_K2Node_ActorBoundEvent_88_SBZPlayerViewingChanged__DelegateSignature(class ASBZSecurityCamera* Camera, bool bIsViewTarget, bool bIsLocalPlayer)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Vault7_K2Node_ActorBoundEvent_88_SBZPlayerViewingChanged__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Vault7_K2Node_ActorBoundEvent_88_SBZPlayerViewingChanged__DelegateSignature Parms{};
+
+	Parms.Camera = Camera;
+	Parms.bIsViewTarget = bIsViewTarget;
+	Parms.bIsLocalPlayer = bIsLocalPlayer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Matrix4_K2Node_ActorBoundEvent_97_SBZPlayerViewingChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSecurityCamera*               Camera                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsViewTarget                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocalPlayer                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Matrix4_K2Node_ActorBoundEvent_97_SBZPlayerViewingChanged__DelegateSignature(class ASBZSecurityCamera* Camera, bool bIsViewTarget, bool bIsLocalPlayer)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Matrix4_K2Node_ActorBoundEvent_97_SBZPlayerViewingChanged__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Matrix4_K2Node_ActorBoundEvent_97_SBZPlayerViewingChanged__DelegateSignature Parms{};
+
+	Parms.Camera = Camera;
+	Parms.bIsViewTarget = bIsViewTarget;
+	Parms.bIsLocalPlayer = bIsLocalPlayer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Matrix3_K2Node_ActorBoundEvent_98_SBZPlayerViewingChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSecurityCamera*               Camera                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsViewTarget                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocalPlayer                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Matrix3_K2Node_ActorBoundEvent_98_SBZPlayerViewingChanged__DelegateSignature(class ASBZSecurityCamera* Camera, bool bIsViewTarget, bool bIsLocalPlayer)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Matrix3_K2Node_ActorBoundEvent_98_SBZPlayerViewingChanged__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Matrix3_K2Node_ActorBoundEvent_98_SBZPlayerViewingChanged__DelegateSignature Parms{};
+
+	Parms.Camera = Camera;
+	Parms.bIsViewTarget = bIsViewTarget;
+	Parms.bIsLocalPlayer = bIsLocalPlayer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Matrix2_K2Node_ActorBoundEvent_96_SBZPlayerViewingChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSecurityCamera*               Camera                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsViewTarget                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocalPlayer                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Matrix2_K2Node_ActorBoundEvent_96_SBZPlayerViewingChanged__DelegateSignature(class ASBZSecurityCamera* Camera, bool bIsViewTarget, bool bIsLocalPlayer)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Matrix2_K2Node_ActorBoundEvent_96_SBZPlayerViewingChanged__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera_Matrix2_K2Node_ActorBoundEvent_96_SBZPlayerViewingChanged__DelegateSignature Parms{};
+
+	Parms.Camera = Camera;
+	Parms.bIsViewTarget = bIsViewTarget;
+	Parms.bIsLocalPlayer = bIsLocalPlayer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera22_0_K2Node_ActorBoundEvent_3_SBZPlayerViewingChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSecurityCamera*               Camera                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsViewTarget                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocalPlayer                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera22_0_K2Node_ActorBoundEvent_3_SBZPlayerViewingChanged__DelegateSignature(class ASBZSecurityCamera* Camera, bool bIsViewTarget, bool bIsLocalPlayer)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera22_0_K2Node_ActorBoundEvent_3_SBZPlayerViewingChanged__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_SecurityCamera22_0_K2Node_ActorBoundEvent_3_SBZPlayerViewingChanged__DelegateSignature Parms{};
+
+	Parms.Camera = Camera;
+	Parms.bIsViewTarget = bIsViewTarget;
+	Parms.bIsLocalPlayer = bIsLocalPlayer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_Safe_14_K2Node_ActorBoundEvent_37_SBZOnMinigameDoneDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_Safe_14_K2Node_ActorBoundEvent_37_SBZOnMinigameDoneDelegate__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_Safe_14_K2Node_ActorBoundEvent_37_SBZOnMinigameDoneDelegate__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnOverkillWeaponRequested
-// (Event, Public, BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_ReplicatedBinaryActor_Ventilation_2_K2Node_ActorBoundEvent_6_VentOpened__DelegateSignature
+// (BlueprintEvent)
 
-void AG_Pharaoh_Scripting_C::OnOverkillWeaponRequested()
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_ReplicatedBinaryActor_Ventilation_2_K2Node_ActorBoundEvent_6_VentOpened__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "OnOverkillWeaponRequested");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_ReplicatedBinaryActor_Ventilation_2_K2Node_ActorBoundEvent_6_VentOpened__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnPlayerDefeatStateChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class ASBZPlayerState*                  PlayerState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// EPD3DefeatState                         OldDefeatState                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPD3DefeatState                         DefeatState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_QRPhone_2_K2Node_ActorBoundEvent_23_OnInteractedComplete__DelegateSignature
+// (BlueprintEvent)
 
-void AG_Pharaoh_Scripting_C::OnPlayerDefeatStateChanged(class ASBZPlayerState* PlayerState, EPD3DefeatState OldDefeatState, EPD3DefeatState DefeatState)
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_QRPhone_2_K2Node_ActorBoundEvent_23_OnInteractedComplete__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_QRPhone_2_K2Node_ActorBoundEvent_23_OnInteractedComplete__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "OnPlayerDefeatStateChanged");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::G_Pharaoh_Scripting_C_OnPlayerDefeatStateChanged Parms{};
 
-	Parms.PlayerState = PlayerState;
-	Parms.OldDefeatState = OldDefeatState;
-	Parms.DefeatState = DefeatState;
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_PocketDrill4_5_K2Node_ActorBoundEvent_51_SBZBreachingEquipmentDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_PocketDrill4_5_K2Node_ActorBoundEvent_51_SBZBreachingEquipmentDelegate__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_PocketDrill4_5_K2Node_ActorBoundEvent_51_SBZBreachingEquipmentDelegate__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_PocketDrill4_5_K2Node_ActorBoundEvent_50_SBZBreachingEquipmentDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_PocketDrill4_5_K2Node_ActorBoundEvent_50_SBZBreachingEquipmentDelegate__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_PocketDrill4_5_K2Node_ActorBoundEvent_50_SBZBreachingEquipmentDelegate__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_PocketDrill4_5_K2Node_ActorBoundEvent_49_SBZBreachingEquipmentDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_PocketDrill4_5_K2Node_ActorBoundEvent_49_SBZBreachingEquipmentDelegate__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_PocketDrill4_5_K2Node_ActorBoundEvent_49_SBZBreachingEquipmentDelegate__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_PocketDrill4_5_K2Node_ActorBoundEvent_36_SBZBreachingEquipmentDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_PocketDrill4_5_K2Node_ActorBoundEvent_36_SBZBreachingEquipmentDelegate__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_PocketDrill4_5_K2Node_ActorBoundEvent_36_SBZBreachingEquipmentDelegate__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_PocketDrill4_5_K2Node_ActorBoundEvent_35_SBZBreachingEquipmentDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_PocketDrill4_5_K2Node_ActorBoundEvent_35_SBZBreachingEquipmentDelegate__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_PocketDrill4_5_K2Node_ActorBoundEvent_35_SBZBreachingEquipmentDelegate__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_Lure_Radio9_K2Node_ActorBoundEvent_209_LureTriggered__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_Lure_Radio9_K2Node_ActorBoundEvent_209_LureTriggered__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_Lure_Radio9_K2Node_ActorBoundEvent_209_LureTriggered__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_Keypad_K2Node_ActorBoundEvent_95_SBZOnCodeEntered__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_Keypad_K2Node_ActorBoundEvent_95_SBZOnCodeEntered__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_Keypad_K2Node_ActorBoundEvent_95_SBZOnCodeEntered__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_Keypad_K2Node_ActorBoundEvent_32_SBZOnCodeEntered__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_Keypad_K2Node_ActorBoundEvent_32_SBZOnCodeEntered__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_Keypad_K2Node_ActorBoundEvent_32_SBZOnCodeEntered__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_InteractableUnBreachableSingleDoor8_K2Node_ActorBoundEvent_21_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_InteractableUnBreachableSingleDoor8_K2Node_ActorBoundEvent_21_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_InteractableUnBreachableSingleDoor8_K2Node_ActorBoundEvent_21_SBZGateStateChangedDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_InteractableUnBreachableSingleDoor8_K2Node_ActorBoundEvent_21_SBZGateStateChangedDelegate__DelegateSignature Parms{};
+
+	Parms.OldState = OldState;
+	Parms.State = State;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnPlayerInstantLootTaken
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_InteractableOpal_2_K2Node_ActorBoundEvent_38_SBZBagPickedUp__DelegateSignature
+// (BlueprintEvent)
 
-void AG_Pharaoh_Scripting_C::OnPlayerInstantLootTaken(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_InteractableOpal_2_K2Node_ActorBoundEvent_38_SBZBagPickedUp__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_InteractableOpal_2_K2Node_ActorBoundEvent_38_SBZBagPickedUp__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "OnPlayerInstantLootTaken");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::G_Pharaoh_Scripting_C_OnPlayerInstantLootTaken Parms{};
 
-	Parms.InstantLoot = InstantLoot;
-	Parms.TakenByPlayer = TakenByPlayer;
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_InteractableBreachableDoor_Wood_Office5_0_K2Node_ActorBoundEvent_18_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_InteractableBreachableDoor_Wood_Office5_0_K2Node_ActorBoundEvent_18_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_InteractableBreachableDoor_Wood_Office5_0_K2Node_ActorBoundEvent_18_SBZGateStateChangedDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_InteractableBreachableDoor_Wood_Office5_0_K2Node_ActorBoundEvent_18_SBZGateStateChangedDelegate__DelegateSignature Parms{};
+
+	Parms.OldState = OldState;
+	Parms.State = State;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnPreplanningAssetsTagsApplied
-// (Event, Public, HasOutParams, BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_9_K2Node_ActorBoundEvent_202_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// const struct FGameplayTagContainer&     PreplanningTagContainer                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::OnPreplanningAssetsTagsApplied(const struct FGameplayTagContainer& PreplanningTagContainer)
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_9_K2Node_ActorBoundEvent_202_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_9_K2Node_ActorBoundEvent_202_SBZGateStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "OnPreplanningAssetsTagsApplied");
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_9_K2Node_ActorBoundEvent_202_SBZGateStateChangedDelegate__DelegateSignature Parms{};
 
-	Params::G_Pharaoh_Scripting_C_OnPreplanningAssetsTagsApplied Parms{};
-
-	Parms.PreplanningTagContainer = std::move(PreplanningTagContainer);
+	Parms.OldState = OldState;
+	Parms.State = State;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnSecurityRoomPagerAnswered
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_3_K2Node_ActorBoundEvent_200_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   AnswerValue                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   MaxPagerAnswerValue                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::OnSecurityRoomPagerAnswered(int32 AnswerValue, int32 MaxPagerAnswerValue)
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_3_K2Node_ActorBoundEvent_200_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_3_K2Node_ActorBoundEvent_200_SBZGateStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "OnSecurityRoomPagerAnswered");
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_3_K2Node_ActorBoundEvent_200_SBZGateStateChangedDelegate__DelegateSignature Parms{};
 
-	Params::G_Pharaoh_Scripting_C_OnSecurityRoomPagerAnswered Parms{};
-
-	Parms.AnswerValue = AnswerValue;
-	Parms.MaxPagerAnswerValue = MaxPagerAnswerValue;
+	Parms.OldState = OldState;
+	Parms.State = State;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnServerKeyItemTagAdded
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_01_2_K2Node_ActorBoundEvent_196_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// const struct FGameplayTag&              KeyTag                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::OnServerKeyItemTagAdded(const struct FGameplayTag& KeyTag)
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_01_2_K2Node_ActorBoundEvent_196_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_01_2_K2Node_ActorBoundEvent_196_SBZGateStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "OnServerKeyItemTagAdded");
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_01_2_K2Node_ActorBoundEvent_196_SBZGateStateChangedDelegate__DelegateSignature Parms{};
 
-	Params::G_Pharaoh_Scripting_C_OnServerKeyItemTagAdded Parms{};
-
-	Parms.KeyTag = std::move(KeyTag);
+	Parms.OldState = OldState;
+	Parms.State = State;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.OnVaultEmployeeHogtied
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_Int_DoubleDoor_Reinforced_Industrial_1_K2Node_ActorBoundEvent_208_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// class ASBZAICharacter*                  Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    bHogTied                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::OnVaultEmployeeHogtied(class ASBZAICharacter* Character, bool bHogTied)
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_Int_DoubleDoor_Reinforced_Industrial_1_K2Node_ActorBoundEvent_208_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_Int_DoubleDoor_Reinforced_Industrial_1_K2Node_ActorBoundEvent_208_SBZGateStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "OnVaultEmployeeHogtied");
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_Int_DoubleDoor_Reinforced_Industrial_1_K2Node_ActorBoundEvent_208_SBZGateStateChangedDelegate__DelegateSignature Parms{};
 
-	Params::G_Pharaoh_Scripting_C_OnVaultEmployeeHogtied Parms{};
-
-	Parms.Character = Character;
-	Parms.bHogTied = bHogTied;
+	Parms.OldState = OldState;
+	Parms.State = State;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.PlayBankVO
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_Generic_PC1_K2Node_ActorBoundEvent_30_SBZHackableActorDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
 
-void AG_Pharaoh_Scripting_C::PlayBankVO()
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_Generic_PC1_K2Node_ActorBoundEvent_30_SBZHackableActorDelegate__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "PlayBankVO");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_Generic_PC1_K2Node_ActorBoundEvent_30_SBZHackableActorDelegate__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.PlayMatrixVO
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_Generic_PC1_K2Node_ActorBoundEvent_27_SBZHackableActorDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
 
-void AG_Pharaoh_Scripting_C::PlayMatrixVO()
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_Generic_PC1_K2Node_ActorBoundEvent_27_SBZHackableActorDelegate__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "PlayMatrixVO");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_Generic_PC1_K2Node_ActorBoundEvent_27_SBZHackableActorDelegate__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.PlayVOSpawn
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Pharaoh_Scripting_C::PlayVOSpawn()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "PlayVOSpawn");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.PrepareForCombat
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Pharaoh_Scripting_C::PrepareForCombat()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "PrepareForCombat");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.RemoveCrouchKeybind
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Pharaoh_Scripting_C::RemoveCrouchKeybind()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "RemoveCrouchKeybind");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.RemoveHackCameraKeybind
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Pharaoh_Scripting_C::RemoveHackCameraKeybind()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "RemoveHackCameraKeybind");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.RemoveMarkCameraKeybind
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Pharaoh_Scripting_C::RemoveMarkCameraKeybind()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "RemoveMarkCameraKeybind");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.RemoveOverkillWeaponPopup
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_EyeScanner2_K2Node_ActorBoundEvent_12_SBZOnEyeScannerStateChanged__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
 // Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZEyeScannerState                     Oldstate                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZEyeScannerState                     NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::RemoveOverkillWeaponPopup(class FName ClosingActionName)
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_EyeScanner2_K2Node_ActorBoundEvent_12_SBZOnEyeScannerStateChanged__DelegateSignature(ESBZEyeScannerState Oldstate, ESBZEyeScannerState NewState)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_EyeScanner2_K2Node_ActorBoundEvent_12_SBZOnEyeScannerStateChanged__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "RemoveOverkillWeaponPopup");
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_EyeScanner2_K2Node_ActorBoundEvent_12_SBZOnEyeScannerStateChanged__DelegateSignature Parms{};
 
-	Params::G_Pharaoh_Scripting_C_RemoveOverkillWeaponPopup Parms{};
-
-	Parms.ClosingActionName = ClosingActionName;
+	Parms.Oldstate = Oldstate;
+	Parms.NewState = NewState;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.RemovePlaceItemKeybind
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Pharaoh_Scripting_C::RemovePlaceItemKeybind()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "RemovePlaceItemKeybind");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.RemoveRunKeybind1
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Pharaoh_Scripting_C::RemoveRunKeybind1()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "RemoveRunKeybind1");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.RemoveRunKeybind2
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Pharaoh_Scripting_C::RemoveRunKeybind2()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "RemoveRunKeybind2");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.RemoveThrowBagPopup
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_DigitalKeyReader_2_K2Node_ActorBoundEvent_24_SBZModuleActorStateChangedDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
 // Parameters:
-// class FName                             ClosingActionName                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZModuleActorState                    NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::RemoveThrowBagPopup(class FName ClosingActionName)
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_DigitalKeyReader_2_K2Node_ActorBoundEvent_24_SBZModuleActorStateChangedDelegate__DelegateSignature(ESBZModuleActorState NewState)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_DigitalKeyReader_2_K2Node_ActorBoundEvent_24_SBZModuleActorStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "RemoveThrowBagPopup");
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_DigitalKeyReader_2_K2Node_ActorBoundEvent_24_SBZModuleActorStateChangedDelegate__DelegateSignature Parms{};
 
-	Params::G_Pharaoh_Scripting_C_RemoveThrowBagPopup Parms{};
-
-	Parms.ClosingActionName = ClosingActionName;
+	Parms.NewState = NewState;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.SecureLoot
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_BodyDisposerDumpster_2_K2Node_ActorBoundEvent_4_onInteracted__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   Progress                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   numBodies                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_Scripting_C::SecureLoot(int32 Progress)
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_BodyDisposerDumpster_2_K2Node_ActorBoundEvent_4_onInteracted__DelegateSignature(int32 numBodies)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_BodyDisposerDumpster_2_K2Node_ActorBoundEvent_4_onInteracted__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "SecureLoot");
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_Pharaoh_Scripting_BP_BodyDisposerDumpster_2_K2Node_ActorBoundEvent_4_onInteracted__DelegateSignature Parms{};
 
-	Params::G_Pharaoh_Scripting_C_SecureLoot Parms{};
-
-	Parms.Progress = Progress;
+	Parms.numBodies = numBodies;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.SecureLootLoud
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Progress                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_Pharaoh_Scripting_BP_Blowtorch_2_K2Node_ActorBoundEvent_81_onPickedUp__DelegateSignature
+// (BlueprintEvent)
 
-void AG_Pharaoh_Scripting_C::SecureLootLoud(int32 Progress)
+void AG_Pharaoh_Scripting_C::BndEvt__G_Pharaoh_Scripting_BP_Blowtorch_2_K2Node_ActorBoundEvent_81_onPickedUp__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "SecureLootLoud");
-
-	Params::G_Pharaoh_Scripting_C_SecureLootLoud Parms{};
-
-	Parms.Progress = Progress;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.SewerVO
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Pharaoh_Scripting_C::SewerVO()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "SewerVO");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Pharaoh_Scripting_BP_Blowtorch_2_K2Node_ActorBoundEvent_81_onPickedUp__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.SpawnMatrixRoomEmployees
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BndEvt__G_ONE_Scripting_SBZBagTriggerVolume_Globe_K2Node_ActorBoundEvent_151_SBZBagEnteredDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void AG_Pharaoh_Scripting_C::BndEvt__G_ONE_Scripting_SBZBagTriggerVolume_Globe_K2Node_ActorBoundEvent_151_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ONE_Scripting_SBZBagTriggerVolume_Globe_K2Node_ActorBoundEvent_151_SBZBagEnteredDelegate__DelegateSignature", FnName));
+
+	Params::G_Pharaoh_Scripting_C_BndEvt__G_ONE_Scripting_SBZBagTriggerVolume_Globe_K2Node_ActorBoundEvent_151_SBZBagEnteredDelegate__DelegateSignature Parms{};
+
+	Parms.Volume = Volume;
+	Parms.Bag = Bag;
+	Parms.Handle = std::move(Handle);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BlockThrowables
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Pharaoh_Scripting_C::SpawnMatrixRoomEmployees()
+void AG_Pharaoh_Scripting_C::BlockThrowables()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "SpawnMatrixRoomEmployees");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BlockThrowables", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.StartLaserPatterns
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<class ASBZLaserGrid*>&           self2                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void AG_Pharaoh_Scripting_C::StartLaserPatterns(TArray<class ASBZLaserGrid*>& self2)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "StartLaserPatterns");
-
-	Params::G_Pharaoh_Scripting_C_StartLaserPatterns Parms{};
-
-	Parms.self2 = std::move(self2);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	self2 = std::move(Parms.self2);
-}
-
-
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.TryActivateEscapeZone
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BlockSwitchWeapons
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Pharaoh_Scripting_C::TryActivateEscapeZone()
+void AG_Pharaoh_Scripting_C::BlockSwitchWeapons()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "TryActivateEscapeZone");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BlockSwitchWeapons", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.TurnOffLasers
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<class ASBZLaserGrid*>&           Array                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BlockSprint
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Pharaoh_Scripting_C::TurnOffLasers(TArray<class ASBZLaserGrid*>& Array)
+void AG_Pharaoh_Scripting_C::BlockSprint()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BlockSprint", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_Scripting_C", "TurnOffLasers");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::G_Pharaoh_Scripting_C_TurnOffLasers Parms{};
 
-	Parms.Array = std::move(Array);
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BlockPlacables
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Pharaoh_Scripting_C::BlockPlacables()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BlockPlacables", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BlockOverkillWeapon
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Pharaoh_Scripting_C::BlockOverkillWeapon()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BlockOverkillWeapon", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BlockMaskUp
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Pharaoh_Scripting_C::BlockMaskUp()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BlockMaskUp", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.BlockGadgets
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Pharaoh_Scripting_C::BlockGadgets()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BlockGadgets", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.AssaultCounter
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Pharaoh_Scripting_C::AssaultCounter()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AssaultCounter", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.ActivateTieUpPopUp
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Pharaoh_Scripting_C::ActivateTieUpPopUp(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateTieUpPopUp", FnName));
+
+	Params::G_Pharaoh_Scripting_C_ActivateTieUpPopUp Parms{};
+
+	Parms.Pawn = Pawn;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
 
-	Array = std::move(Parms.Array);
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.ActivateSwitchWeaponPopup
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Pharaoh_Scripting_C::ActivateSwitchWeaponPopup()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateSwitchWeaponPopup", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.ActivateOVKWeapons
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Pharaoh_Scripting_C::ActivateOVKWeapons()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateOVKWeapons", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.ActivateMaskUp
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Pharaoh_Scripting_C::ActivateMaskUp()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateMaskUp", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.ActivateIrisScanner
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Pharaoh_Scripting_C::ActivateIrisScanner()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateIrisScanner", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.ActivateGrenades
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Pharaoh_Scripting_C::ActivateGrenades()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateGrenades", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.ActivateEscortGuard
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Pharaoh_Scripting_C::ActivateEscortGuard()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateEscortGuard", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Pharaoh_Scripting.G_Pharaoh_Scripting_C.ActivateCombat
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Pharaoh_Scripting_C::ActivateCombat()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateCombat", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

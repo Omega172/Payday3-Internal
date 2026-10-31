@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_DJEquipment_01_Mixer_C_SCR_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DJEquipment_01_Mixer_C_SCR_C;
 
 SDK_NAMESPACE_END

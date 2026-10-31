@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Utensil_01_Ladle_SmallDestruction_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Utensil_01_Ladle_SmallDestruction_C;
 
 SDK_NAMESPACE_END

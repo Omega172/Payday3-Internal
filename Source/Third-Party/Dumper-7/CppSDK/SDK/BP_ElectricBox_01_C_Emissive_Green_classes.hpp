@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_ElectricBox_01_C_Emissive_Green_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ElectricBox_01_C_Emissive_Green_C;
 
 SDK_NAMESPACE_END

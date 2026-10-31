@@ -16,6 +16,18 @@
 
 SDK_NAMESPACE_START
 
+// Function Cookie.Cookie_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ACookie_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function Cookie.Cookie_C.ExecuteUbergraph_Cookie
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,30 +35,14 @@ SDK_NAMESPACE_START
 
 void ACookie_C::ExecuteUbergraph_Cookie(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cookie_C", "ExecuteUbergraph_Cookie");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "Cookie_C", "ExecuteUbergraph_Cookie", FuncInfo);
 
 	Params::Cookie_C_ExecuteUbergraph_Cookie Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Cookie.Cookie_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ACookie_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Cookie_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

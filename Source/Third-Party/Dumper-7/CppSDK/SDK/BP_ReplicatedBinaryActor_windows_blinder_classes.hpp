@@ -37,15 +37,15 @@ public:
 	bool                                          Is_self_breakable;                                 // 0x03B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_ReplicatedBinaryActor_windows_blinder_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_ReplicatedBinaryActor_windows_blinder_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
-	void ExecuteUbergraph_BP_ReplicatedBinaryActor_windows_blinder(int32 EntryPoint);
-	void Hide();
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void Play_FX();
-	void Set_Interactable_Disable();
-	void Set_Interactable_Enable();
 	void UserConstructionScript();
+	void Set_Interactable_Enable();
+	void Set_Interactable_Disable();
+	void Play_FX();
+	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
+	void Hide();
+	void ExecuteUbergraph_BP_ReplicatedBinaryActor_windows_blinder(int32 EntryPoint);
+	void BndEvt__BP_ReplicatedBinaryActor_windows_blinder_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
+	void BndEvt__BP_ReplicatedBinaryActor_windows_blinder_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -61,5 +61,6 @@ public:
 		return GetDefaultObjImpl<ABP_ReplicatedBinaryActor_windows_blinder_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ReplicatedBinaryActor_windows_blinder_C;
 
 SDK_NAMESPACE_END

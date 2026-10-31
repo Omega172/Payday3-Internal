@@ -26,7 +26,7 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UComboBoxString*                        ComboBox_Item;                                     // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UComboBoxString*                        ComboBox_Type;                                     // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void(ESBZEquippableLoadoutSlot Category, int32 SlotIndex)> OnSlotChanged; // 0x0308(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(ESBZEquippableLoadoutSlot Category, int32 SlotIndex_0)> OnSlotChanged; // 0x0308(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TArray<ESBZEquippableLoadoutSlot>             TypeOptions;                                       // 0x0318(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	ESBZEquippableLoadoutSlot                     ItemCategory;                                      // 0x0328(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_329[0x3];                                      // 0x0329(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -34,14 +34,14 @@ public:
 	bool                                          bSkipCallback;                                     // 0x0330(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SlotToListIndex(int32 InIndex, int32* OutIndex);
-	void SetInitial(ESBZEquippableLoadoutSlot ItemCategory, int32 SlotIndex);
-	void RefreshItemComboBox();
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnSlotChanged_Event(ESBZEquippableLoadoutSlot Category, int32 SlotIndex);
-	void ExecuteUbergraph_WBP_ModSlotDebug(int32 EntryPoint);
-	void BndEvt__WBP_ModSlotScreen_ComboBox_Type_K2Node_ComponentBoundEvent_2_OnSelectionChangedEvent__DelegateSignature(const class FString& SelectedItem, ESelectInfo SelectionType);
 	void BndEvt__WBP_ModSlotScreen_ComboBox_Item_K2Node_ComponentBoundEvent_1_OnSelectionChangedEvent__DelegateSignature(const class FString& SelectedItem, ESelectInfo SelectionType);
+	void BndEvt__WBP_ModSlotScreen_ComboBox_Type_K2Node_ComponentBoundEvent_2_OnSelectionChangedEvent__DelegateSignature(const class FString& SelectedItem, ESelectInfo SelectionType);
+	void ExecuteUbergraph_WBP_ModSlotDebug(int32 EntryPoint);
+	void OnSlotChanged_Event(ESBZEquippableLoadoutSlot Category, int32 SlotIndex_0);
+	void PreConstruct(bool IsDesignTime);
+	void RefreshItemComboBox();
+	void SetInitial(ESBZEquippableLoadoutSlot ItemCategory_0, int32 SlotIndex_0);
+	void SlotToListIndex(int32 InIndex, int32* OutIndex);
 
 public:
 	static class UClass* StaticClass()

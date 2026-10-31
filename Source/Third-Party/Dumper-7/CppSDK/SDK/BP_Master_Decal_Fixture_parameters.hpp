@@ -14,21 +14,23 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_Master_Decal_Fixture.BP_Master_Decal_Fixture_C.<<PrevMaterial
+// Function BP_Master_Decal_Fixture.BP_Master_Decal_Fixture_C.NextMesh>>
 // 0x0004 (0x0004 - 0x0000)
-struct BP_Master_Decal_Fixture_C___PrevMaterial final
+struct BP_Master_Decal_Fixture_C_NextMesh__ final
 {
 public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Master_Decal_Fixture_C_NextMesh__;
 
-// Function BP_Master_Decal_Fixture.BP_Master_Decal_Fixture_C.<<PrevMesh
+// Function BP_Master_Decal_Fixture.BP_Master_Decal_Fixture_C.NextMaterial>>
 // 0x0004 (0x0004 - 0x0000)
-struct BP_Master_Decal_Fixture_C___PrevMesh final
+struct BP_Master_Decal_Fixture_C_NextMaterial__ final
 {
 public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Master_Decal_Fixture_C_NextMaterial__;
 
 // Function BP_Master_Decal_Fixture.BP_Master_Decal_Fixture_C.Build
 // 0x0078 (0x0078 - 0x0000)
@@ -58,22 +60,25 @@ public:
 	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInterface*                     CallFunc_Array_Get_Item_1;                         // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Master_Decal_Fixture_C_Build;
 
-// Function BP_Master_Decal_Fixture.BP_Master_Decal_Fixture_C.NextMaterial>>
+// Function BP_Master_Decal_Fixture.BP_Master_Decal_Fixture_C.<<PrevMesh
 // 0x0004 (0x0004 - 0x0000)
-struct BP_Master_Decal_Fixture_C_NextMaterial__ final
+struct BP_Master_Decal_Fixture_C___PrevMesh final
 {
 public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Master_Decal_Fixture_C___PrevMesh;
 
-// Function BP_Master_Decal_Fixture.BP_Master_Decal_Fixture_C.NextMesh>>
+// Function BP_Master_Decal_Fixture.BP_Master_Decal_Fixture_C.<<PrevMaterial
 // 0x0004 (0x0004 - 0x0000)
-struct BP_Master_Decal_Fixture_C_NextMesh__ final
+struct BP_Master_Decal_Fixture_C___PrevMaterial final
 {
 public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Master_Decal_Fixture_C___PrevMaterial;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

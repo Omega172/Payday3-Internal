@@ -17,93 +17,24 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function G_Dema_AI.G_Dema_AI_C.BndEvt__G_Dema_AI_SBZDestroyGroup_CameraCorridorFork_K2Node_ActorBoundEvent_5_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Dema_AI_C_BndEvt__G_Dema_AI_SBZDestroyGroup_CameraCorridorFork_K2Node_ActorBoundEvent_5_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
-{
-public:
-	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-
-// Function G_Dema_AI.G_Dema_AI_C.BndEvt__G_Dema_AI_SBZDestroyGroup_CameraLounge2_K2Node_ActorBoundEvent_6_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Dema_AI_C_BndEvt__G_Dema_AI_SBZDestroyGroup_CameraLounge2_K2Node_ActorBoundEvent_6_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
-{
-public:
-	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-
-// Function G_Dema_AI.G_Dema_AI_C.BndEvt__G_Dema_AI_SBZDestroyGroup_CameraToystore1_K2Node_ActorBoundEvent_4_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Dema_AI_C_BndEvt__G_Dema_AI_SBZDestroyGroup_CameraToystore1_K2Node_ActorBoundEvent_4_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
-{
-public:
-	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-
-// Function G_Dema_AI.G_Dema_AI_C.BndEvt__G_Dema_AI_SBZDestroyGroup_CameraToystore2_K2Node_ActorBoundEvent_2_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Dema_AI_C_BndEvt__G_Dema_AI_SBZDestroyGroup_CameraToystore2_K2Node_ActorBoundEvent_2_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
-{
-public:
-	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-
-// Function G_Dema_AI.G_Dema_AI_C.BndEvt__G_Dema_PP4_SBZPawnSpawnPredefined_LeadGuard_Gunstore_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Dema_AI_C_BndEvt__G_Dema_PP4_SBZPawnSpawnPredefined_LeadGuard_Gunstore_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_AI.G_Dema_AI_C.BndEvt__G_Dema_PP4_SBZPawnSpawnPredefined_LeadGuard_Toystore_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Dema_AI_C_BndEvt__G_Dema_PP4_SBZPawnSpawnPredefined_LeadGuard_Toystore_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_AI.G_Dema_AI_C.BndEvt__G_ScriptTemplate_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_0_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Dema_AI_C_BndEvt__G_ScriptTemplate_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_0_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_AI.G_Dema_AI_C.BndEvt__G_ScriptTemplate_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_1_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Dema_AI_C_BndEvt__G_ScriptTemplate_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_1_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_AI.G_Dema_AI_C.EnteredArmory
-// 0x0001 (0x0001 - 0x0000)
-struct G_Dema_AI_C_EnteredArmory final
-{
-public:
-	bool                                          Entered;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_AI.G_Dema_AI_C.EscapeSelected
+// Function G_Dema_AI.G_Dema_AI_C.MainLootLocationPicked
 // 0x0004 (0x0004 - 0x0000)
-struct G_Dema_AI_C_EscapeSelected final
+struct G_Dema_AI_C_MainLootLocationPicked final
 {
 public:
-	int32                                         EscapeIndex;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         LootLocationInt;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Dema_AI_C_MainLootLocationPicked;
+
+// Function G_Dema_AI.G_Dema_AI_C.HeistStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct G_Dema_AI_C_HeistStateChanged final
+{
+public:
+	EPD3HeistState                                OldHeistState_HeistStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CurrentHeistState_HeistStateChanged;               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_AI_C_HeistStateChanged;
 
 // Function G_Dema_AI.G_Dema_AI_C.ExecuteUbergraph_G_Dema_AI
 // 0x0600 (0x0600 - 0x0000)
@@ -270,23 +201,105 @@ public:
 	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_16;              // 0x05E0(0x0010)(ReferenceParm)
 	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_16;         // 0x05F0(0x0010)(ReferenceParm)
 };
+DUMPER7_ASSERTS_G_Dema_AI_C_ExecuteUbergraph_G_Dema_AI;
 
-// Function G_Dema_AI.G_Dema_AI_C.HeistStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct G_Dema_AI_C_HeistStateChanged final
-{
-public:
-	EPD3HeistState                                OldHeistState;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CurrentHeistState;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_AI.G_Dema_AI_C.MainLootLocationPicked
+// Function G_Dema_AI.G_Dema_AI_C.EscapeSelected
 // 0x0004 (0x0004 - 0x0000)
-struct G_Dema_AI_C_MainLootLocationPicked final
+struct G_Dema_AI_C_EscapeSelected final
 {
 public:
-	int32                                         LootLocationInt;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EscapeIndex;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Dema_AI_C_EscapeSelected;
+
+// Function G_Dema_AI.G_Dema_AI_C.EnteredArmory
+// 0x0001 (0x0001 - 0x0000)
+struct G_Dema_AI_C_EnteredArmory final
+{
+public:
+	bool                                          Entered;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_AI_C_EnteredArmory;
+
+// Function G_Dema_AI.G_Dema_AI_C.BndEvt__G_ScriptTemplate_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_1_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Dema_AI_C_BndEvt__G_ScriptTemplate_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_1_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_AI_C_BndEvt__G_ScriptTemplate_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_1_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Dema_AI.G_Dema_AI_C.BndEvt__G_ScriptTemplate_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_0_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Dema_AI_C_BndEvt__G_ScriptTemplate_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_0_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_AI_C_BndEvt__G_ScriptTemplate_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_0_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Dema_AI.G_Dema_AI_C.BndEvt__G_Dema_PP4_SBZPawnSpawnPredefined_LeadGuard_Toystore_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Dema_AI_C_BndEvt__G_Dema_PP4_SBZPawnSpawnPredefined_LeadGuard_Toystore_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_AI_C_BndEvt__G_Dema_PP4_SBZPawnSpawnPredefined_LeadGuard_Toystore_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Dema_AI.G_Dema_AI_C.BndEvt__G_Dema_PP4_SBZPawnSpawnPredefined_LeadGuard_Gunstore_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Dema_AI_C_BndEvt__G_Dema_PP4_SBZPawnSpawnPredefined_LeadGuard_Gunstore_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_AI_C_BndEvt__G_Dema_PP4_SBZPawnSpawnPredefined_LeadGuard_Gunstore_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Dema_AI.G_Dema_AI_C.BndEvt__G_Dema_AI_SBZDestroyGroup_CameraToystore2_K2Node_ActorBoundEvent_2_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Dema_AI_C_BndEvt__G_Dema_AI_SBZDestroyGroup_CameraToystore2_K2Node_ActorBoundEvent_2_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
+{
+public:
+	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_G_Dema_AI_C_BndEvt__G_Dema_AI_SBZDestroyGroup_CameraToystore2_K2Node_ActorBoundEvent_2_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature;
+
+// Function G_Dema_AI.G_Dema_AI_C.BndEvt__G_Dema_AI_SBZDestroyGroup_CameraToystore1_K2Node_ActorBoundEvent_4_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Dema_AI_C_BndEvt__G_Dema_AI_SBZDestroyGroup_CameraToystore1_K2Node_ActorBoundEvent_4_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
+{
+public:
+	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_G_Dema_AI_C_BndEvt__G_Dema_AI_SBZDestroyGroup_CameraToystore1_K2Node_ActorBoundEvent_4_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature;
+
+// Function G_Dema_AI.G_Dema_AI_C.BndEvt__G_Dema_AI_SBZDestroyGroup_CameraLounge2_K2Node_ActorBoundEvent_6_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Dema_AI_C_BndEvt__G_Dema_AI_SBZDestroyGroup_CameraLounge2_K2Node_ActorBoundEvent_6_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
+{
+public:
+	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_G_Dema_AI_C_BndEvt__G_Dema_AI_SBZDestroyGroup_CameraLounge2_K2Node_ActorBoundEvent_6_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature;
+
+// Function G_Dema_AI.G_Dema_AI_C.BndEvt__G_Dema_AI_SBZDestroyGroup_CameraCorridorFork_K2Node_ActorBoundEvent_5_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Dema_AI_C_BndEvt__G_Dema_AI_SBZDestroyGroup_CameraCorridorFork_K2Node_ActorBoundEvent_5_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
+{
+public:
+	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_G_Dema_AI_C_BndEvt__G_Dema_AI_SBZDestroyGroup_CameraCorridorFork_K2Node_ActorBoundEvent_5_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

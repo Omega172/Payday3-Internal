@@ -17,6 +17,16 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_Chus_Microwave.BP_Chus_Microwave_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_Chus_Microwave_C_OnStateChanged final
+{
+public:
+	bool                                          bStateToChangeTo_OnStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Chus_Microwave_C_OnStateChanged;
+
 // Function BP_Chus_Microwave.BP_Chus_Microwave_C.ExecuteUbergraph_BP_Chus_Microwave
 // 0x0070 (0x0070 - 0x0000)
 struct BP_Chus_Microwave_C_ExecuteUbergraph_BP_Chus_Microwave final
@@ -41,15 +51,7 @@ public:
 	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_Chus_Microwave.BP_Chus_Microwave_C.OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_Chus_Microwave_C_OnStateChanged final
-{
-public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_Chus_Microwave_C_ExecuteUbergraph_BP_Chus_Microwave;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -16,73 +16,97 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.UpdateBundleContent
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_Blackmarket_BundleItemButton_C::UpdateBundleContent()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateBundleContent", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.ButtonDisabledChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInIsDisabled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Blackmarket_BundleItemButton_C::PreConstruct(bool IsDesignTime_PreConstruct)
+void UWBP_Blackmarket_BundleItemButton_C::ButtonDisabledChanged(bool bInIsDisabled)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonDisabledChanged", FnName));
 
-	Params::WBP_Blackmarket_BundleItemButton_C_PreConstruct Parms{};
+	Params::WBP_Blackmarket_BundleItemButton_C_ButtonDisabledChanged Parms{};
 
-	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+	Parms.bInIsDisabled = bInIsDisabled;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.OnPlayerStoreItemDataIntialized
+// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Blackmarket_BundleItemButton_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+
+	Params::WBP_Blackmarket_BundleItemButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Blackmarket_BundleItemButton_C::ButtonHoveredChanged(bool bInIsHovered)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonHoveredChanged", FnName));
+
+	Params::WBP_Blackmarket_BundleItemButton_C_ButtonHoveredChanged Parms{};
+
+	Parms.bInIsHovered = bInIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.ButtonSelected
 // (Event, Protected, BlueprintEvent)
 
-void UWBP_Blackmarket_BundleItemButton_C::OnPlayerStoreItemDataIntialized()
+void UWBP_Blackmarket_BundleItemButton_C::ButtonSelected()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPlayerStoreItemDataIntialized", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonSelected", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.OnOpenDLCFirstPartyStore
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.DisabledButtonSelected
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_Blackmarket_BundleItemButton_C::OnOpenDLCFirstPartyStore()
+void UWBP_Blackmarket_BundleItemButton_C::DisabledButtonSelected()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnOpenDLCFirstPartyStore", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DisabledButtonSelected", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.OnLoaded_85D615774D5635E8A7E0DF83CC3F53B3
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.ExecuteUbergraph_WBP_Blackmarket_BundleItemButton
+// (Final, UbergraphFunction)
 // Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Blackmarket_BundleItemButton_C::OnLoaded_85D615774D5635E8A7E0DF83CC3F53B3(class UObject* Loaded)
+void UWBP_Blackmarket_BundleItemButton_C::ExecuteUbergraph_WBP_Blackmarket_BundleItemButton(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLoaded_85D615774D5635E8A7E0DF83CC3F53B3", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_Blackmarket_BundleItemButton_C", "ExecuteUbergraph_WBP_Blackmarket_BundleItemButton", FuncInfo);
 
-	Params::WBP_Blackmarket_BundleItemButton_C_OnLoaded_85D615774D5635E8A7E0DF83CC3F53B3 Parms{};
+	Params::WBP_Blackmarket_BundleItemButton_C_ExecuteUbergraph_WBP_Blackmarket_BundleItemButton Parms{};
 
-	Parms.Loaded = Loaded;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -106,99 +130,75 @@ void UWBP_Blackmarket_BundleItemButton_C::OnFocused(bool bIsFocused)
 }
 
 
-// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.ExecuteUbergraph_WBP_Blackmarket_BundleItemButton
-// (Final, UbergraphFunction)
+// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.OnLoaded_85D615774D5635E8A7E0DF83CC3F53B3
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Blackmarket_BundleItemButton_C::ExecuteUbergraph_WBP_Blackmarket_BundleItemButton(int32 EntryPoint)
+void UWBP_Blackmarket_BundleItemButton_C::OnLoaded_85D615774D5635E8A7E0DF83CC3F53B3(class UObject* Loaded)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_Blackmarket_BundleItemButton_C", "ExecuteUbergraph_WBP_Blackmarket_BundleItemButton", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLoaded_85D615774D5635E8A7E0DF83CC3F53B3", FnName));
 
-	Params::WBP_Blackmarket_BundleItemButton_C_ExecuteUbergraph_WBP_Blackmarket_BundleItemButton Parms{};
+	Params::WBP_Blackmarket_BundleItemButton_C_OnLoaded_85D615774D5635E8A7E0DF83CC3F53B3 Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Loaded = Loaded;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.DisabledButtonSelected
-// (Event, Protected, BlueprintEvent)
+// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.OnOpenDLCFirstPartyStore
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Blackmarket_BundleItemButton_C::DisabledButtonSelected()
+void UWBP_Blackmarket_BundleItemButton_C::OnOpenDLCFirstPartyStore()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DisabledButtonSelected", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnOpenDLCFirstPartyStore", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.ButtonSelected
+// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.OnPlayerStoreItemDataIntialized
 // (Event, Protected, BlueprintEvent)
 
-void UWBP_Blackmarket_BundleItemButton_C::ButtonSelected()
+void UWBP_Blackmarket_BundleItemButton_C::OnPlayerStoreItemDataIntialized()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonSelected", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPlayerStoreItemDataIntialized", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsHovered_ButtonHoveredChanged                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Blackmarket_BundleItemButton_C::ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged)
+void UWBP_Blackmarket_BundleItemButton_C::PreConstruct(bool IsDesignTime)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonHoveredChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
 
-	Params::WBP_Blackmarket_BundleItemButton_C_ButtonHoveredChanged Parms{};
+	Params::WBP_Blackmarket_BundleItemButton_C_PreConstruct Parms{};
 
-	Parms.bInIsHovered_ButtonHoveredChanged = bInIsHovered_ButtonHoveredChanged;
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus_ButtonFocusedChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.UpdateBundleContent
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Blackmarket_BundleItemButton_C::ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged)
+void UWBP_Blackmarket_BundleItemButton_C::UpdateBundleContent()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateBundleContent", FnName));
 
-	Params::WBP_Blackmarket_BundleItemButton_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus_ButtonFocusedChanged = bInHasFocus_ButtonFocusedChanged;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.ButtonDisabledChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsDisabled_ButtonDisabledChanged                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Blackmarket_BundleItemButton_C::ButtonDisabledChanged(bool bInIsDisabled_ButtonDisabledChanged)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonDisabledChanged", FnName));
-
-	Params::WBP_Blackmarket_BundleItemButton_C_ButtonDisabledChanged Parms{};
-
-	Parms.bInIsDisabled_ButtonDisabledChanged = bInIsDisabled_ButtonDisabledChanged;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_BlockSprint_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_BlockSprint_C;
 
 SDK_NAMESPACE_END

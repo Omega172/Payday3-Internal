@@ -19,23 +19,53 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_WindowCleaningCradle.BP_WindowCleaningCradle_C.BndEvt__BP_EscapeVan_SBZSecuredBagVisualize_K2Node_ComponentBoundEvent_0_SBZSecuredBagVisualizeBagAddedSignature__DelegateSignature
+// Function BP_WindowCleaningCradle.BP_WindowCleaningCradle_C.ShowMarker
 // 0x0008 (0x0008 - 0x0000)
-struct BP_WindowCleaningCradle_C_BndEvt__BP_EscapeVan_SBZSecuredBagVisualize_K2Node_ComponentBoundEvent_0_SBZSecuredBagVisualizeBagAddedSignature__DelegateSignature final
+struct BP_WindowCleaningCradle_C_ShowMarker final
 {
 public:
-	const class USBZBagType*                      BagType;                                           // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_AddLocalMarker_ReturnValue;               // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_WindowCleaningCradle_C_ShowMarker;
 
-// Function BP_WindowCleaningCradle.BP_WindowCleaningCradle_C.BP_OnStateChanged
-// 0x0003 (0x0003 - 0x0000)
-struct BP_WindowCleaningCradle_C_BP_OnStateChanged final
+// Function BP_WindowCleaningCradle.BP_WindowCleaningCradle_C.SetPlatformLocation
+// 0x0128 (0x0128 - 0x0000)
+struct BP_WindowCleaningCradle_C_SetPlatformLocation final
 {
 public:
-	ESBZTimerState                                NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZTimerState                                OldState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetProgressMade_ReturnValue;              // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_VLerp_ReturnValue;                        // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0020(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
+DUMPER7_ASSERTS_BP_WindowCleaningCradle_C_SetPlatformLocation;
+
+// Function BP_WindowCleaningCradle.BP_WindowCleaningCradle_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_WindowCleaningCradle_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds_ReceiveTick;                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_WindowCleaningCradle_C_ReceiveTick;
+
+// Function BP_WindowCleaningCradle.BP_WindowCleaningCradle_C.GetMarkerText
+// 0x0078 (0x0078 - 0x0000)
+struct BP_WindowCleaningCradle_C_GetMarkerText final
+{
+public:
+	class FText                                   ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
+	ESBZTimerState                                Temp_byte_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable;                                // 0x0018(0x0010)()
+	class FText                                   Temp_text_Variable_1;                              // 0x0028(0x0010)()
+	class FText                                   Temp_text_Variable_2;                              // 0x0038(0x0010)()
+	class FText                                   Temp_text_Variable_3;                              // 0x0048(0x0010)()
+	class FText                                   Temp_text_Variable_4;                              // 0x0058(0x0010)()
+	class FText                                   K2Node_Select_Default;                             // 0x0068(0x0010)()
+};
+DUMPER7_ASSERTS_BP_WindowCleaningCradle_C_GetMarkerText;
 
 // Function BP_WindowCleaningCradle.BP_WindowCleaningCradle_C.ExecuteUbergraph_BP_WindowCleaningCradle
 // 0x0060 (0x0060 - 0x0000)
@@ -57,50 +87,27 @@ public:
 	int32                                         CallFunc_PostAkEvent_ReturnValue_1;                // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_PostAkEvent_ReturnValue_2;                // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_WindowCleaningCradle_C_ExecuteUbergraph_BP_WindowCleaningCradle;
 
-// Function BP_WindowCleaningCradle.BP_WindowCleaningCradle_C.GetMarkerText
-// 0x0078 (0x0078 - 0x0000)
-struct BP_WindowCleaningCradle_C_GetMarkerText final
+// Function BP_WindowCleaningCradle.BP_WindowCleaningCradle_C.BP_OnStateChanged
+// 0x0003 (0x0003 - 0x0000)
+struct BP_WindowCleaningCradle_C_BP_OnStateChanged final
 {
 public:
-	class FText                                   ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
-	ESBZTimerState                                Temp_byte_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable;                                // 0x0018(0x0010)()
-	class FText                                   Temp_text_Variable_1;                              // 0x0028(0x0010)()
-	class FText                                   Temp_text_Variable_2;                              // 0x0038(0x0010)()
-	class FText                                   Temp_text_Variable_3;                              // 0x0048(0x0010)()
-	class FText                                   Temp_text_Variable_4;                              // 0x0058(0x0010)()
-	class FText                                   K2Node_Select_Default;                             // 0x0068(0x0010)()
+	ESBZTimerState                                NewState_BP_OnStateChanged;                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZTimerState                                OldState_BP_OnStateChanged;                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_BP_OnStateChanged;                    // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_WindowCleaningCradle_C_BP_OnStateChanged;
 
-// Function BP_WindowCleaningCradle.BP_WindowCleaningCradle_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_WindowCleaningCradle_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_WindowCleaningCradle.BP_WindowCleaningCradle_C.SetPlatformLocation
-// 0x0128 (0x0128 - 0x0000)
-struct BP_WindowCleaningCradle_C_SetPlatformLocation final
-{
-public:
-	float                                         CallFunc_GetProgressMade_ReturnValue;              // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_VLerp_ReturnValue;                        // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0020(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
-
-// Function BP_WindowCleaningCradle.BP_WindowCleaningCradle_C.ShowMarker
+// Function BP_WindowCleaningCradle.BP_WindowCleaningCradle_C.BndEvt__BP_EscapeVan_SBZSecuredBagVisualize_K2Node_ComponentBoundEvent_0_SBZSecuredBagVisualizeBagAddedSignature__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct BP_WindowCleaningCradle_C_ShowMarker final
+struct BP_WindowCleaningCradle_C_BndEvt__BP_EscapeVan_SBZSecuredBagVisualize_K2Node_ComponentBoundEvent_0_SBZSecuredBagVisualizeBagAddedSignature__DelegateSignature final
 {
 public:
-	int32                                         CallFunc_AddLocalMarker_ReturnValue;               // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class USBZBagType*                      BagType;                                           // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_WindowCleaningCradle_C_BndEvt__BP_EscapeVan_SBZSecuredBagVisualize_K2Node_ComponentBoundEvent_0_SBZSecuredBagVisualizeBagAddedSignature__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -31,6 +31,7 @@ public:
 	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_2; // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_3; // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_M_local_Volume_fog_C_UserConstructionScript;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

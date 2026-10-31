@@ -32,12 +32,12 @@ public:
 	TArray<class UStaticMeshComponent*>           lootMeshes;                                        // 0x03D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void BndEvt__BP_LootableCarBagBase_Interactable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
-	void BP_OnChangedToSecondaryType(bool bDoCosmetics);
-	void ExecuteUbergraph_BP_LootableCarBagBase(int32 EntryPoint);
-	void ReceiveBeginPlay();
-	void setLootVisibility(bool visible);
 	void UserConstructionScript();
+	void setLootVisibility(bool visible);
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_LootableCarBagBase(int32 EntryPoint);
+	void BP_OnChangedToSecondaryType(bool bDoCosmetics);
+	void BndEvt__BP_LootableCarBagBase_Interactable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
 
 public:
 	static class UClass* StaticClass()
@@ -53,5 +53,6 @@ public:
 		return GetDefaultObjImpl<ABP_LootableCarBagBase_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LootableCarBagBase_C;
 
 SDK_NAMESPACE_END

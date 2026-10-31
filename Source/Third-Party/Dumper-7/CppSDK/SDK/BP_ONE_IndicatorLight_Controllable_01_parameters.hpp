@@ -16,35 +16,23 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_ONE_IndicatorLight_Controllable_01.BP_ONE_IndicatorLight_Controllable_01_C.ExecuteUbergraph_BP_ONE_IndicatorLight_Controllable_01
-// 0x0078 (0x0078 - 0x0000)
-struct BP_ONE_IndicatorLight_Controllable_01_C_ExecuteUbergraph_BP_ONE_IndicatorLight_Controllable_01 final
+// Function BP_ONE_IndicatorLight_Controllable_01.BP_ONE_IndicatorLight_Controllable_01_C.UserConstructionScript
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ONE_IndicatorLight_Controllable_01_C_UserConstructionScript final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_OldState;                             // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_NewState;                             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bDoCosmetics;                         // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0038(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Conv_IntToString_ReturnValue_1;           // 0x0048(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 CallFunc_Concat_StrStr_ReturnValue_3;              // 0x0068(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ONE_IndicatorLight_Controllable_01_C_UserConstructionScript;
 
-// Function BP_ONE_IndicatorLight_Controllable_01.BP_ONE_IndicatorLight_Controllable_01_C.OnStateChanged
-// 0x000C (0x000C - 0x0000)
-struct BP_ONE_IndicatorLight_Controllable_01_C_OnStateChanged final
+// Function BP_ONE_IndicatorLight_Controllable_01.BP_ONE_IndicatorLight_Controllable_01_C.setLightState
+// 0x0004 (0x0004 - 0x0000)
+struct BP_ONE_IndicatorLight_Controllable_01_C_setLightState final
 {
 public:
-	int32                                         OldState;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         NewState;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         state;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ONE_IndicatorLight_Controllable_01_C_setLightState;
 
 // Function BP_ONE_IndicatorLight_Controllable_01.BP_ONE_IndicatorLight_Controllable_01_C.setLight
 // 0x0068 (0x0068 - 0x0000)
@@ -68,22 +56,39 @@ public:
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetIntensity_NewIntensity_ImplicitCast;   // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ONE_IndicatorLight_Controllable_01_C_setLight;
 
-// Function BP_ONE_IndicatorLight_Controllable_01.BP_ONE_IndicatorLight_Controllable_01_C.setLightState
-// 0x0004 (0x0004 - 0x0000)
-struct BP_ONE_IndicatorLight_Controllable_01_C_setLightState final
+// Function BP_ONE_IndicatorLight_Controllable_01.BP_ONE_IndicatorLight_Controllable_01_C.OnStateChanged
+// 0x000C (0x000C - 0x0000)
+struct BP_ONE_IndicatorLight_Controllable_01_C_OnStateChanged final
 {
 public:
-	int32                                         state;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         OldState_OnStateChanged;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewState_OnStateChanged;                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ONE_IndicatorLight_Controllable_01_C_OnStateChanged;
 
-// Function BP_ONE_IndicatorLight_Controllable_01.BP_ONE_IndicatorLight_Controllable_01_C.UserConstructionScript
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ONE_IndicatorLight_Controllable_01_C_UserConstructionScript final
+// Function BP_ONE_IndicatorLight_Controllable_01.BP_ONE_IndicatorLight_Controllable_01_C.ExecuteUbergraph_BP_ONE_IndicatorLight_Controllable_01
+// 0x0078 (0x0078 - 0x0000)
+struct BP_ONE_IndicatorLight_Controllable_01_C_ExecuteUbergraph_BP_ONE_IndicatorLight_Controllable_01 final
 {
 public:
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_OldState;                             // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_NewState;                             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bDoCosmetics;                         // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0038(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue_1;           // 0x0048(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_3;              // 0x0068(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ONE_IndicatorLight_Controllable_01_C_ExecuteUbergraph_BP_ONE_IndicatorLight_Controllable_01;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

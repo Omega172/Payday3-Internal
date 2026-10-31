@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_InstantLoot_Base_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -27,8 +27,8 @@ public:
 	class UStaticMeshComponent*                   Bust;                                              // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void OnLooted(bool bDoCosmetics_OnLooted);
 	void ExecuteUbergraph_BP_InstantLoot_NecklaceBust(int32 EntryPoint);
-	void OnLooted(bool bDoCosmetics);
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<ABP_InstantLoot_NecklaceBust_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_InstantLoot_NecklaceBust_C;
 
 SDK_NAMESPACE_END

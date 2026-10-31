@@ -17,18 +17,18 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Van_FBI.BP_Van_FBI_C
-// 0x0020 (0x0A30 - 0x0A10)
+// 0x0020 (0x0B30 - 0x0B10)
 class ABP_Van_FBI_C final : public ASBZAIFBIVan
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A10(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UStaticMeshComponent*                   AntennaBase;                                       // 0x0A18(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   FBIVan_Dish_Light;                                 // 0x0A20(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   MeshP_FBIVan_Lights;                               // 0x0A28(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B10(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UStaticMeshComponent*                   AntennaBase;                                       // 0x0B18(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   FBIVan_Dish_Light;                                 // 0x0B20(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   MeshP_FBIVan_Lights;                               // 0x0B28(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_Van_FBI_PropDamageComponent_K2Node_ComponentBoundEvent_0_SBZPropDamageHealthSignature__DelegateSignature(class UActorComponent* PoolComponent, float Health, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
 	void ExecuteUbergraph_BP_Van_FBI(int32 EntryPoint);
+	void BndEvt__BP_Van_FBI_PropDamageComponent_K2Node_ComponentBoundEvent_0_SBZPropDamageHealthSignature__DelegateSignature(class UActorComponent* PoolComponent, float Health, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<ABP_Van_FBI_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Van_FBI_C;
 
 SDK_NAMESPACE_END

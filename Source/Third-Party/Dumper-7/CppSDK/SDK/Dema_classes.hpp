@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ADema_C>();
 	}
 };
+DUMPER7_ASSERTS_ADema_C;
 
 SDK_NAMESPACE_END

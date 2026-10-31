@@ -14,6 +14,33 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WidgetPanel.WidgetPanel_C.RotateRight
+// 0x0008 (0x0008 - 0x0000)
+struct WidgetPanel_C_RotateRight final
+{
+public:
+	class UWBP_TurnStuff_C*                       NewParam;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WidgetPanel_C_RotateRight;
+
+// Function WidgetPanel.WidgetPanel_C.RotateLeft
+// 0x0008 (0x0008 - 0x0000)
+struct WidgetPanel_C_RotateLeft final
+{
+public:
+	class UWBP_TurnStuff_C*                       NewParam;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WidgetPanel_C_RotateLeft;
+
+// Function WidgetPanel.WidgetPanel_C.ResetRotation
+// 0x0008 (0x0008 - 0x0000)
+struct WidgetPanel_C_ResetRotation final
+{
+public:
+	double                                        Angle;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WidgetPanel_C_ResetRotation;
+
 // Function WidgetPanel.WidgetPanel_C.ExecuteUbergraph_WidgetPanel
 // 0x0250 (0x0250 - 0x0000)
 struct WidgetPanel_C_ExecuteUbergraph_WidgetPanel final
@@ -130,30 +157,7 @@ public:
 	float                                         CallFunc_CreatePlayAnimationTimeRangeProxyObject_EndAtTime_ImplicitCast_3; // 0x0248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_CreatePlayAnimationTimeRangeProxyObject_PlaybackSpeed_ImplicitCast; // 0x024C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function WidgetPanel.WidgetPanel_C.ResetRotation
-// 0x0008 (0x0008 - 0x0000)
-struct WidgetPanel_C_ResetRotation final
-{
-public:
-	double                                        Angle;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WidgetPanel.WidgetPanel_C.RotateLeft
-// 0x0008 (0x0008 - 0x0000)
-struct WidgetPanel_C_RotateLeft final
-{
-public:
-	class UWBP_TurnStuff_C*                       NewParam;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WidgetPanel.WidgetPanel_C.RotateRight
-// 0x0008 (0x0008 - 0x0000)
-struct WidgetPanel_C_RotateRight final
-{
-public:
-	class UWBP_TurnStuff_C*                       NewParam;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_WidgetPanel_C_ExecuteUbergraph_WidgetPanel;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

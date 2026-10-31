@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_BagPlaceholder.BP_BagPlaceholder_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bStateToChangeTo_OnStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BagPlaceholder_C::OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_BagPlaceholder_C_OnStateChanged Parms{};
+
+	Parms.bStateToChangeTo_OnStateChanged = bStateToChangeTo_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_BagPlaceholder.BP_BagPlaceholder_C.ExecuteUbergraph_BP_BagPlaceholder
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,36 +43,12 @@ SDK_NAMESPACE_START
 
 void ABP_BagPlaceholder_C::ExecuteUbergraph_BP_BagPlaceholder(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BagPlaceholder_C", "ExecuteUbergraph_BP_BagPlaceholder");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_BagPlaceholder_C", "ExecuteUbergraph_BP_BagPlaceholder", FuncInfo);
 
 	Params::BP_BagPlaceholder_C_ExecuteUbergraph_BP_BagPlaceholder Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BagPlaceholder.BP_BagPlaceholder_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BagPlaceholder_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BagPlaceholder_C", "OnStateChanged");
-
-	Params::BP_BagPlaceholder_C_OnStateChanged Parms{};
-
-	Parms.bStateToChangeTo = bStateToChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

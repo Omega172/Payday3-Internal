@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_ONE_SmallDestructionParticle_03.BP_ONE_SmallDestructionParticle_03_C.ExecuteUbergraph_BP_ONE_SmallDestructionParticle_03
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ONE_SmallDestructionParticle_03_C::ExecuteUbergraph_BP_ONE_SmallDestructionParticle_03(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ONE_SmallDestructionParticle_03_C", "ExecuteUbergraph_BP_ONE_SmallDestructionParticle_03", FuncInfo);
+
+	Params::BP_ONE_SmallDestructionParticle_03_C_ExecuteUbergraph_BP_ONE_SmallDestructionParticle_03 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_ONE_SmallDestructionParticle_03.BP_ONE_SmallDestructionParticle_03_C.BndEvt__BP_CactusPot_01_A_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -24,35 +42,13 @@ SDK_NAMESPACE_START
 
 void ABP_ONE_SmallDestructionParticle_03_C::BndEvt__BP_CactusPot_01_A_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ONE_SmallDestructionParticle_03_C", "BndEvt__BP_CactusPot_01_A_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_CactusPot_01_A_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature", FnName));
 
 	Params::BP_ONE_SmallDestructionParticle_03_C_BndEvt__BP_CactusPot_01_A_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature Parms{};
 
 	Parms.Type = Type;
 	Parms.HitContext = std::move(HitContext);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ONE_SmallDestructionParticle_03.BP_ONE_SmallDestructionParticle_03_C.ExecuteUbergraph_BP_ONE_SmallDestructionParticle_03
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ONE_SmallDestructionParticle_03_C::ExecuteUbergraph_BP_ONE_SmallDestructionParticle_03(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ONE_SmallDestructionParticle_03_C", "ExecuteUbergraph_BP_ONE_SmallDestructionParticle_03");
-
-	Params::BP_ONE_SmallDestructionParticle_03_C_ExecuteUbergraph_BP_ONE_SmallDestructionParticle_03 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

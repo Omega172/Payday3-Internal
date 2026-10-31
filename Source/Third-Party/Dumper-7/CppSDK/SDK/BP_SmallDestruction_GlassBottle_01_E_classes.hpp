@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "BP_SmallDestruction_GlassBottle_01_G_classes.hpp"
 #include "Engine_structs.hpp"
+#include "BP_SmallDestruction_GlassBottle_01_G_classes.hpp"
 #include "Starbreeze_structs.hpp"
 
 
@@ -25,8 +25,8 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_SmallDestruction_GlassBottle_01_E_C; // 0x0370(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void BndEvt__BP_GlassBottle_SmallDestruction_GlassBottle_01_E_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 	void ExecuteUbergraph_BP_SmallDestruction_GlassBottle_01_E(int32 EntryPoint);
+	void BndEvt__BP_GlassBottle_SmallDestruction_GlassBottle_01_E_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 
 public:
 	static class UClass* StaticClass()
@@ -42,5 +42,6 @@ public:
 		return GetDefaultObjImpl<ABP_SmallDestruction_GlassBottle_01_E_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SmallDestruction_GlassBottle_01_E_C;
 
 SDK_NAMESPACE_END

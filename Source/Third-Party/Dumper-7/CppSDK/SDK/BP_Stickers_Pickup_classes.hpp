@@ -31,12 +31,12 @@ public:
 	int32                                         Marker;                                            // 0x0388(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_PortableSSD_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_Stickers_Pickup_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
-	void ExecuteUbergraph_BP_Stickers_Pickup(int32 EntryPoint);
-	class FText GetMarkerText();
-	void On_Disable_Interaction();
 	void On_Enable_Interaction();
+	void On_Disable_Interaction();
+	class FText GetMarkerText();
+	void ExecuteUbergraph_BP_Stickers_Pickup(int32 EntryPoint);
+	void BndEvt__BP_Stickers_Pickup_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
+	void BndEvt__BP_PortableSSD_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -52,5 +52,6 @@ public:
 		return GetDefaultObjImpl<ABP_Stickers_Pickup_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Stickers_Pickup_C;
 
 SDK_NAMESPACE_END

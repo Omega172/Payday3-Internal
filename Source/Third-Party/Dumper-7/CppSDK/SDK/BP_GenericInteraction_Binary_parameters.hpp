@@ -14,35 +14,33 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_GenericInteraction_Binary.BP_GenericInteraction_Binary_C.BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_GenericInteraction_Binary_C_BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature final
+// Function BP_GenericInteraction_Binary.BP_GenericInteraction_Binary_C.UserConstructionScript
+// 0x0001 (0x0001 - 0x0000)
+struct BP_GenericInteraction_Binary_C_UserConstructionScript final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_GenericInteraction_Binary_C_UserConstructionScript;
 
-// Function BP_GenericInteraction_Binary.BP_GenericInteraction_Binary_C.BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_GenericInteraction_Binary_C_BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature final
+// Function BP_GenericInteraction_Binary.BP_GenericInteraction_Binary_C.SetInteractive
+// 0x0001 (0x0001 - 0x0000)
+struct BP_GenericInteraction_Binary_C_SetInteractive final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bEnabled;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_GenericInteraction_Binary_C_SetInteractive;
 
-// Function BP_GenericInteraction_Binary.BP_GenericInteraction_Binary_C.BndEvt__SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_GenericInteraction_Binary_C_BndEvt__SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
+// Function BP_GenericInteraction_Binary.BP_GenericInteraction_Binary_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_GenericInteraction_Binary_C_OnStateChanged final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bStateToChangeTo_OnStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_GenericInteraction_Binary_C_OnStateChanged;
 
 // Function BP_GenericInteraction_Binary.BP_GenericInteraction_Binary_C.ExecuteUbergraph_BP_GenericInteraction_Binary
 // 0x0050 (0x0050 - 0x0000)
@@ -70,31 +68,40 @@ public:
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue_1;          // 0x004A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_GenericInteraction_Binary_C_ExecuteUbergraph_BP_GenericInteraction_Binary;
 
-// Function BP_GenericInteraction_Binary.BP_GenericInteraction_Binary_C.OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_GenericInteraction_Binary_C_OnStateChanged final
+// Function BP_GenericInteraction_Binary.BP_GenericInteraction_Binary_C.BndEvt__SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_GenericInteraction_Binary_C_BndEvt__SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
 {
 public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_GenericInteraction_Binary_C_BndEvt__SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature;
 
-// Function BP_GenericInteraction_Binary.BP_GenericInteraction_Binary_C.SetInteractive
-// 0x0001 (0x0001 - 0x0000)
-struct BP_GenericInteraction_Binary_C_SetInteractive final
+// Function BP_GenericInteraction_Binary.BP_GenericInteraction_Binary_C.BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_GenericInteraction_Binary_C_BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature final
 {
 public:
-	bool                                          bEnabled;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_GenericInteraction_Binary_C_BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature;
 
-// Function BP_GenericInteraction_Binary.BP_GenericInteraction_Binary_C.UserConstructionScript
-// 0x0001 (0x0001 - 0x0000)
-struct BP_GenericInteraction_Binary_C_UserConstructionScript final
+// Function BP_GenericInteraction_Binary.BP_GenericInteraction_Binary_C.BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_GenericInteraction_Binary_C_BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature final
 {
 public:
-	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_GenericInteraction_Binary_C_BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

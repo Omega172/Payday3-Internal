@@ -16,31 +16,55 @@
 
 SDK_NAMESPACE_START
 
-// Function Portal_culling.Portal_culling_C.BndEvt__Portal_culling_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bFromSweep                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FHitResult&                SweepResult                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// Function Portal_culling.Portal_culling_C.shower
+// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
 
-void APortal_culling_C::BndEvt__Portal_culling_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
+void APortal_culling_C::shower()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"shower", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("Portal_culling_C", "BndEvt__Portal_culling_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::Portal_culling_C_BndEvt__Portal_culling_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
-	Parms.OverlappedComponent = OverlappedComponent;
-	Parms.OtherActor = OtherActor;
-	Parms.OtherComp = OtherComp;
-	Parms.OtherBodyIndex = OtherBodyIndex;
-	Parms.bFromSweep = bFromSweep;
-	Parms.SweepResult = std::move(SweepResult);
+// Function Portal_culling.Portal_culling_C.hidder
+// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
+
+void APortal_culling_C::hidder()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"hidder", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Portal_culling.Portal_culling_C.feeder
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void APortal_culling_C::feeder()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"feeder", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Portal_culling.Portal_culling_C.ExecuteUbergraph_Portal_culling
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APortal_culling_C::ExecuteUbergraph_Portal_culling(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "Portal_culling_C", "ExecuteUbergraph_Portal_culling", FuncInfo);
+
+	Params::Portal_culling_C_ExecuteUbergraph_Portal_culling Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -56,10 +80,8 @@ void APortal_culling_C::BndEvt__Portal_culling_Box_K2Node_ComponentBoundEvent_0_
 
 void APortal_culling_C::BndEvt__Portal_culling_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Portal_culling_C", "BndEvt__Portal_culling_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__Portal_culling_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature", FnName));
 
 	Params::Portal_culling_C_BndEvt__Portal_culling_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature Parms{};
 
@@ -72,65 +94,31 @@ void APortal_culling_C::BndEvt__Portal_culling_Box_K2Node_ComponentBoundEvent_1_
 }
 
 
-// Function Portal_culling.Portal_culling_C.ExecuteUbergraph_Portal_culling
-// (Final, UbergraphFunction, HasDefaults)
+// Function Portal_culling.Portal_culling_C.BndEvt__Portal_culling_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bFromSweep                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FHitResult&                SweepResult                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void APortal_culling_C::ExecuteUbergraph_Portal_culling(int32 EntryPoint)
+void APortal_culling_C::BndEvt__Portal_culling_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__Portal_culling_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("Portal_culling_C", "ExecuteUbergraph_Portal_culling");
+	Params::Portal_culling_C_BndEvt__Portal_culling_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
-	Params::Portal_culling_C_ExecuteUbergraph_Portal_culling Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.OverlappedComponent = OverlappedComponent;
+	Parms.OtherActor = OtherActor;
+	Parms.OtherComp = OtherComp;
+	Parms.OtherBodyIndex = OtherBodyIndex;
+	Parms.bFromSweep = bFromSweep;
+	Parms.SweepResult = std::move(SweepResult);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Portal_culling.Portal_culling_C.feeder
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void APortal_culling_C::feeder()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Portal_culling_C", "feeder");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Portal_culling.Portal_culling_C.hidder
-// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
-
-void APortal_culling_C::hidder()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Portal_culling_C", "hidder");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Portal_culling.Portal_culling_C.shower
-// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
-
-void APortal_culling_C::shower()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Portal_culling_C", "shower");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

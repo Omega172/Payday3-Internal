@@ -16,57 +16,77 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_LA_Civ_Cosmetic_TriggeredBase.BP_LA_Civ_Cosmetic_TriggeredBase_C.BndEvt__BP_LA_Civ_Cosmetic_TalkToPlayer_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
+// Function BP_LA_Civ_Cosmetic_TriggeredBase.BP_LA_Civ_Cosmetic_TriggeredBase_C.TriggerLA
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bFromSweep                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FHitResult&                SweepResult                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZLifeActionSlot*               LASlot                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LA_Civ_Cosmetic_TriggeredBase_C::BndEvt__BP_LA_Civ_Cosmetic_TalkToPlayer_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
+void ABP_LA_Civ_Cosmetic_TriggeredBase_C::TriggerLA(class ASBZCharacter* Character, class USBZLifeActionSlot* LASlot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TriggerLA", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_Civ_Cosmetic_TriggeredBase_C", "BndEvt__BP_LA_Civ_Cosmetic_TalkToPlayer_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+	Params::BP_LA_Civ_Cosmetic_TriggeredBase_C_TriggerLA Parms{};
 
-	Params::BP_LA_Civ_Cosmetic_TriggeredBase_C_BndEvt__BP_LA_Civ_Cosmetic_TalkToPlayer_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature Parms{};
-
-	Parms.OverlappedComponent = OverlappedComponent;
-	Parms.OtherActor = OtherActor;
-	Parms.OtherComp = OtherComp;
-	Parms.OtherBodyIndex = OtherBodyIndex;
-	Parms.bFromSweep = bFromSweep;
-	Parms.SweepResult = std::move(SweepResult);
+	Parms.Character = Character;
+	Parms.LASlot = LASlot;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_LA_Civ_Cosmetic_TriggeredBase.BP_LA_Civ_Cosmetic_TriggeredBase_C.BndEvt__BP_LA_Civ_Cosmetic_TalkToPlayer_ExitTrigger_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature
-// (BlueprintEvent)
+// Function BP_LA_Civ_Cosmetic_TriggeredBase.BP_LA_Civ_Cosmetic_TriggeredBase_C.StopLA
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZLifeActionSlot*               LASlot                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LA_Civ_Cosmetic_TriggeredBase_C::BndEvt__BP_LA_Civ_Cosmetic_TalkToPlayer_ExitTrigger_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+void ABP_LA_Civ_Cosmetic_TriggeredBase_C::StopLA(class ASBZCharacter* Character, class USBZLifeActionSlot* LASlot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StopLA", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_Civ_Cosmetic_TriggeredBase_C", "BndEvt__BP_LA_Civ_Cosmetic_TalkToPlayer_ExitTrigger_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature");
+	Params::BP_LA_Civ_Cosmetic_TriggeredBase_C_StopLA Parms{};
 
-	Params::BP_LA_Civ_Cosmetic_TriggeredBase_C_BndEvt__BP_LA_Civ_Cosmetic_TalkToPlayer_ExitTrigger_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature Parms{};
+	Parms.Character = Character;
+	Parms.LASlot = LASlot;
 
-	Parms.OverlappedComponent = OverlappedComponent;
-	Parms.OtherActor = OtherActor;
-	Parms.OtherComp = OtherComp;
-	Parms.OtherBodyIndex = OtherBodyIndex;
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_LA_Civ_Cosmetic_TriggeredBase.BP_LA_Civ_Cosmetic_TriggeredBase_C.SetTriggerState
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Enable                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LA_Civ_Cosmetic_TriggeredBase_C::SetTriggerState(bool Enable)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetTriggerState", FnName));
+
+	Params::BP_LA_Civ_Cosmetic_TriggeredBase_C_SetTriggerState Parms{};
+
+	Parms.Enable = Enable;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_LA_Civ_Cosmetic_TriggeredBase.BP_LA_Civ_Cosmetic_TriggeredBase_C.ExecuteUbergraph_BP_LA_Civ_Cosmetic_TriggeredBase
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LA_Civ_Cosmetic_TriggeredBase_C::ExecuteUbergraph_BP_LA_Civ_Cosmetic_TriggeredBase(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_LA_Civ_Cosmetic_TriggeredBase_C", "ExecuteUbergraph_BP_LA_Civ_Cosmetic_TriggeredBase", FuncInfo);
+
+	Params::BP_LA_Civ_Cosmetic_TriggeredBase_C_ExecuteUbergraph_BP_LA_Civ_Cosmetic_TriggeredBase Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -82,10 +102,8 @@ void ABP_LA_Civ_Cosmetic_TriggeredBase_C::BndEvt__BP_LA_Civ_Cosmetic_TalkToPlaye
 
 void ABP_LA_Civ_Cosmetic_TriggeredBase_C::BndEvt__BP_LA_Civ_Cosmetic_TalkToPlayer_SBZLifeAction_K2Node_ComponentBoundEvent_3_SBZLifeActionStopEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot, ESBZLifeActionStopReason Result)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_Civ_Cosmetic_TriggeredBase_C", "BndEvt__BP_LA_Civ_Cosmetic_TalkToPlayer_SBZLifeAction_K2Node_ComponentBoundEvent_3_SBZLifeActionStopEventDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_LA_Civ_Cosmetic_TalkToPlayer_SBZLifeAction_K2Node_ComponentBoundEvent_3_SBZLifeActionStopEventDelegate__DelegateSignature", FnName));
 
 	Params::BP_LA_Civ_Cosmetic_TriggeredBase_C_BndEvt__BP_LA_Civ_Cosmetic_TalkToPlayer_SBZLifeAction_K2Node_ComponentBoundEvent_3_SBZLifeActionStopEventDelegate__DelegateSignature Parms{};
 
@@ -98,85 +116,53 @@ void ABP_LA_Civ_Cosmetic_TriggeredBase_C::BndEvt__BP_LA_Civ_Cosmetic_TalkToPlaye
 }
 
 
-// Function BP_LA_Civ_Cosmetic_TriggeredBase.BP_LA_Civ_Cosmetic_TriggeredBase_C.ExecuteUbergraph_BP_LA_Civ_Cosmetic_TriggeredBase
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_LA_Civ_Cosmetic_TriggeredBase.BP_LA_Civ_Cosmetic_TriggeredBase_C.BndEvt__BP_LA_Civ_Cosmetic_TalkToPlayer_ExitTrigger_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LA_Civ_Cosmetic_TriggeredBase_C::ExecuteUbergraph_BP_LA_Civ_Cosmetic_TriggeredBase(int32 EntryPoint)
+void ABP_LA_Civ_Cosmetic_TriggeredBase_C::BndEvt__BP_LA_Civ_Cosmetic_TalkToPlayer_ExitTrigger_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_LA_Civ_Cosmetic_TalkToPlayer_ExitTrigger_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_Civ_Cosmetic_TriggeredBase_C", "ExecuteUbergraph_BP_LA_Civ_Cosmetic_TriggeredBase");
+	Params::BP_LA_Civ_Cosmetic_TriggeredBase_C_BndEvt__BP_LA_Civ_Cosmetic_TalkToPlayer_ExitTrigger_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature Parms{};
 
-	Params::BP_LA_Civ_Cosmetic_TriggeredBase_C_ExecuteUbergraph_BP_LA_Civ_Cosmetic_TriggeredBase Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.OverlappedComponent = OverlappedComponent;
+	Parms.OtherActor = OtherActor;
+	Parms.OtherComp = OtherComp;
+	Parms.OtherBodyIndex = OtherBodyIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_LA_Civ_Cosmetic_TriggeredBase.BP_LA_Civ_Cosmetic_TriggeredBase_C.SetTriggerState
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_LA_Civ_Cosmetic_TriggeredBase.BP_LA_Civ_Cosmetic_TriggeredBase_C.BndEvt__BP_LA_Civ_Cosmetic_TalkToPlayer_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
 // Parameters:
-// bool                                    Enable                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bFromSweep                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FHitResult&                SweepResult                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void ABP_LA_Civ_Cosmetic_TriggeredBase_C::SetTriggerState(bool Enable)
+void ABP_LA_Civ_Cosmetic_TriggeredBase_C::BndEvt__BP_LA_Civ_Cosmetic_TalkToPlayer_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_LA_Civ_Cosmetic_TalkToPlayer_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_Civ_Cosmetic_TriggeredBase_C", "SetTriggerState");
+	Params::BP_LA_Civ_Cosmetic_TriggeredBase_C_BndEvt__BP_LA_Civ_Cosmetic_TalkToPlayer_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
-	Params::BP_LA_Civ_Cosmetic_TriggeredBase_C_SetTriggerState Parms{};
-
-	Parms.Enable = Enable;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LA_Civ_Cosmetic_TriggeredBase.BP_LA_Civ_Cosmetic_TriggeredBase_C.StopLA
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZLifeActionSlot*               LASlot                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LA_Civ_Cosmetic_TriggeredBase_C::StopLA(class ASBZCharacter* Character, class USBZLifeActionSlot* LASlot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_Civ_Cosmetic_TriggeredBase_C", "StopLA");
-
-	Params::BP_LA_Civ_Cosmetic_TriggeredBase_C_StopLA Parms{};
-
-	Parms.Character = Character;
-	Parms.LASlot = LASlot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LA_Civ_Cosmetic_TriggeredBase.BP_LA_Civ_Cosmetic_TriggeredBase_C.TriggerLA
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZLifeActionSlot*               LASlot                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LA_Civ_Cosmetic_TriggeredBase_C::TriggerLA(class ASBZCharacter* Character, class USBZLifeActionSlot* LASlot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_Civ_Cosmetic_TriggeredBase_C", "TriggerLA");
-
-	Params::BP_LA_Civ_Cosmetic_TriggeredBase_C_TriggerLA Parms{};
-
-	Parms.Character = Character;
-	Parms.LASlot = LASlot;
+	Parms.OverlappedComponent = OverlappedComponent;
+	Parms.OtherActor = OtherActor;
+	Parms.OtherComp = OtherComp;
+	Parms.OtherBodyIndex = OtherBodyIndex;
+	Parms.bFromSweep = bFromSweep;
+	Parms.SweepResult = std::move(SweepResult);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

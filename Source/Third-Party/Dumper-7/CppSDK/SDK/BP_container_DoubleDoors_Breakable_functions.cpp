@@ -16,59 +16,27 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_container_DoubleDoors_Breakable.BP_container_DoubleDoors_Breakable_C.blowUp
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_container_DoubleDoors_Breakable.BP_container_DoubleDoors_Breakable_C.open_blownUp__UpdateFunc
+// (BlueprintEvent)
 
-void ABP_container_DoubleDoors_Breakable_C::blowUp()
+void ABP_container_DoubleDoors_Breakable_C::open_blownUp__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_container_DoubleDoors_Breakable_C", "blowUp");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"open_blownUp__UpdateFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_container_DoubleDoors_Breakable.BP_container_DoubleDoors_Breakable_C.BndEvt__BP_container_cooled_Double_doors_blownUp_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature
+// Function BP_container_DoubleDoors_Breakable.BP_container_DoubleDoors_Breakable_C.open_blownUp__FinishedFunc
 // (BlueprintEvent)
-// Parameters:
-// bool                                    bState                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_container_DoubleDoors_Breakable_C::BndEvt__BP_container_cooled_Double_doors_blownUp_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics)
+void ABP_container_DoubleDoors_Breakable_C::open_blownUp__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"open_blownUp__FinishedFunc", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_container_DoubleDoors_Breakable_C", "BndEvt__BP_container_cooled_Double_doors_blownUp_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature");
-
-	Params::BP_container_DoubleDoors_Breakable_C_BndEvt__BP_container_cooled_Double_doors_blownUp_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature Parms{};
-
-	Parms.bState = bState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_container_DoubleDoors_Breakable.BP_container_DoubleDoors_Breakable_C.ExecuteUbergraph_BP_container_DoubleDoors_Breakable
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_container_DoubleDoors_Breakable_C::ExecuteUbergraph_BP_container_DoubleDoors_Breakable(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_container_DoubleDoors_Breakable_C", "ExecuteUbergraph_BP_container_DoubleDoors_Breakable");
-
-	Params::BP_container_DoubleDoors_Breakable_C_ExecuteUbergraph_BP_container_DoubleDoors_Breakable Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -81,10 +49,8 @@ void ABP_container_DoubleDoors_Breakable_C::ExecuteUbergraph_BP_container_Double
 
 void ABP_container_DoubleDoors_Breakable_C::OnStateChanged(ESBZGateState OldState, ESBZGateState NewState, bool bIsInitialStateChange)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_container_DoubleDoors_Breakable_C", "OnStateChanged");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
 	Params::BP_container_DoubleDoors_Breakable_C_OnStateChanged Parms{};
 
@@ -96,29 +62,51 @@ void ABP_container_DoubleDoors_Breakable_C::OnStateChanged(ESBZGateState OldStat
 }
 
 
-// Function BP_container_DoubleDoors_Breakable.BP_container_DoubleDoors_Breakable_C.open_blownUp__FinishedFunc
-// (BlueprintEvent)
+// Function BP_container_DoubleDoors_Breakable.BP_container_DoubleDoors_Breakable_C.ExecuteUbergraph_BP_container_DoubleDoors_Breakable
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_container_DoubleDoors_Breakable_C::open_blownUp__FinishedFunc()
+void ABP_container_DoubleDoors_Breakable_C::ExecuteUbergraph_BP_container_DoubleDoors_Breakable(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_container_DoubleDoors_Breakable_C", "ExecuteUbergraph_BP_container_DoubleDoors_Breakable", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_container_DoubleDoors_Breakable_C", "open_blownUp__FinishedFunc");
+	Params::BP_container_DoubleDoors_Breakable_C_ExecuteUbergraph_BP_container_DoubleDoors_Breakable Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_container_DoubleDoors_Breakable.BP_container_DoubleDoors_Breakable_C.open_blownUp__UpdateFunc
+// Function BP_container_DoubleDoors_Breakable.BP_container_DoubleDoors_Breakable_C.BndEvt__BP_container_cooled_Double_doors_blownUp_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature
 // (BlueprintEvent)
+// Parameters:
+// bool                                    bState                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_container_DoubleDoors_Breakable_C::open_blownUp__UpdateFunc()
+void ABP_container_DoubleDoors_Breakable_C::BndEvt__BP_container_cooled_Double_doors_blownUp_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_container_cooled_Double_doors_blownUp_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_container_DoubleDoors_Breakable_C", "open_blownUp__UpdateFunc");
+	Params::BP_container_DoubleDoors_Breakable_C_BndEvt__BP_container_cooled_Double_doors_blownUp_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature Parms{};
+
+	Parms.bState = bState;
+	Parms.bDoCosmetics = bDoCosmetics;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_container_DoubleDoors_Breakable.BP_container_DoubleDoors_Breakable_C.blowUp
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_container_DoubleDoors_Breakable_C::blowUp()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"blowUp", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

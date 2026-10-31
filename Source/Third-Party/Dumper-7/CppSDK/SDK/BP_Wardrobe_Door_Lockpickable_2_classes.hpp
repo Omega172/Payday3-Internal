@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Starbreeze_classes.hpp"
 #include "AkAudio_structs.hpp"
 
@@ -19,29 +19,29 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Wardrobe_Door_Lockpickable_2.BP_Wardrobe_Door_Lockpickable_2_C
-// 0x0088 (0x0410 - 0x0388)
+// 0x0088 (0x0418 - 0x0390)
 class ABP_Wardrobe_Door_Lockpickable_2_C final : public ASBZMiniGameActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0388(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBoxComponent*                          Collision;                                         // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   StaticMesh_1;                                      // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        LootLocation;                                      // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAkComponent*                           Ak;                                                // 0x03A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         Timeline_0_NewTrack_0_D683014C457DE26DD4F74AB20B31005D; // 0x03B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Timeline_0__Direction_D683014C457DE26DD4F74AB20B31005D; // 0x03B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3B5[0x3];                                      // 0x03B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     Timeline_0;                                        // 0x03B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TMap<class USceneComponent*, struct FTransform> SpawnComponentTransformMap;                      // 0x03C0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0390(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UBoxComponent*                          Collision;                                         // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   StaticMesh_1;                                      // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        LootLocation;                                      // 0x03A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAkComponent*                           Ak;                                                // 0x03B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         Timeline_0_NewTrack_0_D683014C457DE26DD4F74AB20B31005D; // 0x03B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Timeline_0__Direction_D683014C457DE26DD4F74AB20B31005D; // 0x03BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3BD[0x3];                                      // 0x03BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     Timeline_0;                                        // 0x03C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TMap<class USceneComponent*, struct FTransform> SpawnComponentTransformMap;                      // 0x03C8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void BP_OnMiniGameSuccess(bool bDoCosmetics);
-	void ExecuteUbergraph_BP_Wardrobe_Door_Lockpickable_2(int32 EntryPoint);
-	void OnActorSpawned(class AActor* SpawnedActor, class USceneComponent* AttachParent);
-	void PopulateSpawnInformationMap(TMap<class USceneComponent*, struct FTransform>* InOutSpawnDataMap);
-	void Timeline_0__FinishedFunc();
-	void Timeline_0__UpdateFunc();
 	void UserConstructionScript();
+	void Timeline_0__UpdateFunc();
+	void Timeline_0__FinishedFunc();
+	void PopulateSpawnInformationMap(TMap<class USceneComponent*, struct FTransform>* InOutSpawnDataMap);
+	void OnActorSpawned(class AActor* SpawnedActor, class USceneComponent* AttachParent);
+	void ExecuteUbergraph_BP_Wardrobe_Door_Lockpickable_2(int32 EntryPoint);
+	void BP_OnMiniGameSuccess(bool bDoCosmetics_BP_OnMiniGameSuccess);
 
 public:
 	static class UClass* StaticClass()
@@ -57,5 +57,6 @@ public:
 		return GetDefaultObjImpl<ABP_Wardrobe_Door_Lockpickable_2_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Wardrobe_Door_Lockpickable_2_C;
 
 SDK_NAMESPACE_END

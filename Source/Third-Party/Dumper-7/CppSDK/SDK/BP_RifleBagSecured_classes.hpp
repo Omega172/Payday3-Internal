@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_RifleBagSecured_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_RifleBagSecured_C;
 
 SDK_NAMESPACE_END

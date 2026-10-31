@@ -15,6 +15,13 @@
 
 SDK_NAMESPACE_START
 
+// ScriptStruct ABP_Charm_Base_Flat.ABP_Charm_Base_Flat_C.AnimBlueprintGeneratedMutableData
+// 0x0000 (0x0001 - 0x0001)
+struct ABP_Charm_Base_Flat::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
+{
+};
+DUMPER7_ASSERTS_ABP_Charm_Base_Flat__FAnimBlueprintGeneratedMutableData;
+
 // ScriptStruct ABP_Charm_Base_Flat.ABP_Charm_Base_Flat_C.AnimBlueprintGeneratedConstantData
 // 0x0187 (0x0188 - 0x0001)
 struct ABP_Charm_Base_Flat::FAnimBlueprintGeneratedConstantData final : public FAnimBlueprintConstantData
@@ -31,11 +38,6 @@ public:
 	struct FAnimNodeExposedValueHandler_PropertyAccess AnimGraphNode_RigidBody;                      // 0x0118(0x0038)()
 	struct FAnimNodeExposedValueHandler_PropertyAccess AnimGraphNode_ComponentToLocalSpace;          // 0x0150(0x0038)()
 };
-
-// ScriptStruct ABP_Charm_Base_Flat.ABP_Charm_Base_Flat_C.AnimBlueprintGeneratedMutableData
-// 0x0000 (0x0001 - 0x0001)
-struct ABP_Charm_Base_Flat::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
-{
-};
+DUMPER7_ASSERTS_ABP_Charm_Base_Flat__FAnimBlueprintGeneratedConstantData;
 
 SDK_NAMESPACE_END

@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_LGT_FloodLight_Paintings_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LGT_FloodLight_Paintings_C;
 
 SDK_NAMESPACE_END

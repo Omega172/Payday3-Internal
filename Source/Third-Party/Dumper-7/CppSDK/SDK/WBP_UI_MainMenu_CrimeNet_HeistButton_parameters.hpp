@@ -18,79 +18,37 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_MainMenu_CrimeNet_HeistButton.WBP_UI_MainMenu_CrimeNet_HeistButton_C.RefreshVisual
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_UI_MainMenu_CrimeNet_HeistButton_C_RefreshVisual final
-{
-public:
-	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsHovered_ReturnValue;                    // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_HeistButton_C_RefreshVisual;
-
-// Function WBP_UI_MainMenu_CrimeNet_HeistButton.WBP_UI_MainMenu_CrimeNet_HeistButton_C.PreConstruct
+// Function WBP_UI_MainMenu_CrimeNet_HeistButton.WBP_UI_MainMenu_CrimeNet_HeistButton_C.ButtonFocusedChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_MainMenu_CrimeNet_HeistButton_C_PreConstruct final
+struct WBP_UI_MainMenu_CrimeNet_HeistButton_C_ButtonFocusedChanged final
 {
 public:
-	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_HeistButton_C_PreConstruct;
+DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_HeistButton_C_ButtonFocusedChanged;
 
-// Function WBP_UI_MainMenu_CrimeNet_HeistButton.WBP_UI_MainMenu_CrimeNet_HeistButton_C.OnHoverVisuals
-// 0x0005 (0x0005 - 0x0000)
-struct WBP_UI_MainMenu_CrimeNet_HeistButton_C_OnHoverVisuals final
-{
-public:
-	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_HeistButton_C_OnHoverVisuals;
-
-// Function WBP_UI_MainMenu_CrimeNet_HeistButton.WBP_UI_MainMenu_CrimeNet_HeistButton_C.OnFocusedVisuals
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_UI_MainMenu_CrimeNet_HeistButton_C_OnFocusedVisuals final
-{
-public:
-	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           CallFunc_SelectColor_ReturnValue_1;                // 0x0014(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0024(0x0014)()
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_HeistButton_C_OnFocusedVisuals;
-
-// Function WBP_UI_MainMenu_CrimeNet_HeistButton.WBP_UI_MainMenu_CrimeNet_HeistButton_C.OnDisabledVisuals
+// Function WBP_UI_MainMenu_CrimeNet_HeistButton.WBP_UI_MainMenu_CrimeNet_HeistButton_C.ButtonHoveredChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_MainMenu_CrimeNet_HeistButton_C_OnDisabledVisuals final
+struct WBP_UI_MainMenu_CrimeNet_HeistButton_C_ButtonHoveredChanged final
 {
 public:
-	bool                                          bIsDisabled;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_HeistButton_C_OnDisabledVisuals;
+DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_HeistButton_C_ButtonHoveredChanged;
 
-// Function WBP_UI_MainMenu_CrimeNet_HeistButton.WBP_UI_MainMenu_CrimeNet_HeistButton_C.InitializeLevelData
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_UI_MainMenu_CrimeNet_HeistButton_C_InitializeLevelData final
+// Function WBP_UI_MainMenu_CrimeNet_HeistButton.WBP_UI_MainMenu_CrimeNet_HeistButton_C.ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_HeistButton
+// 0x001C (0x001C - 0x0000)
+struct WBP_UI_MainMenu_CrimeNet_HeistButton_C_ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_HeistButton final
 {
 public:
-	struct FSoftObjectPath                        InLevelPath;                                       // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	class UPD3HeistDataAsset*                     CallFunc_GetHeistDataFromLevelPath_ReturnValue;    // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Get_Level_Name_OutLevelName;              // 0x0030(0x0010)()
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInHasFocus;                          // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           CallFunc_GetGlobalColor_ReturnValue;               // 0x0008(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bInIsHovered;                         // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_HeistButton_C_InitializeLevelData;
-
-// Function WBP_UI_MainMenu_CrimeNet_HeistButton.WBP_UI_MainMenu_CrimeNet_HeistButton_C.GetHeistData
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_MainMenu_CrimeNet_HeistButton_C_GetHeistData final
-{
-public:
-	class UPD3HeistDataAsset*                     NewParam;                                          // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_HeistButton_C_GetHeistData;
+DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_HeistButton_C_ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_HeistButton;
 
 // Function WBP_UI_MainMenu_CrimeNet_HeistButton.WBP_UI_MainMenu_CrimeNet_HeistButton_C.Get Level Name
 // 0x0060 (0x0060 - 0x0000)
@@ -109,37 +67,79 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_HeistButton_C_Get_Level_Name;
 
-// Function WBP_UI_MainMenu_CrimeNet_HeistButton.WBP_UI_MainMenu_CrimeNet_HeistButton_C.ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_HeistButton
-// 0x001C (0x001C - 0x0000)
-struct WBP_UI_MainMenu_CrimeNet_HeistButton_C_ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_HeistButton final
+// Function WBP_UI_MainMenu_CrimeNet_HeistButton.WBP_UI_MainMenu_CrimeNet_HeistButton_C.GetHeistData
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_MainMenu_CrimeNet_HeistButton_C_GetHeistData final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInHasFocus;                          // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           CallFunc_GetGlobalColor_ReturnValue;               // 0x0008(0x0010)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bInIsHovered;                         // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPD3HeistDataAsset*                     NewParam;                                          // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_HeistButton_C_ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_HeistButton;
+DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_HeistButton_C_GetHeistData;
 
-// Function WBP_UI_MainMenu_CrimeNet_HeistButton.WBP_UI_MainMenu_CrimeNet_HeistButton_C.ButtonHoveredChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_MainMenu_CrimeNet_HeistButton_C_ButtonHoveredChanged final
+// Function WBP_UI_MainMenu_CrimeNet_HeistButton.WBP_UI_MainMenu_CrimeNet_HeistButton_C.InitializeLevelData
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_UI_MainMenu_CrimeNet_HeistButton_C_InitializeLevelData final
 {
 public:
-	bool                                          bInIsHovered_ButtonHoveredChanged;                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSoftObjectPath                        InLevelPath;                                       // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class UPD3HeistDataAsset*                     CallFunc_GetHeistDataFromLevelPath_ReturnValue;    // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Get_Level_Name_OutLevelName;              // 0x0030(0x0010)()
 };
-DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_HeistButton_C_ButtonHoveredChanged;
+DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_HeistButton_C_InitializeLevelData;
 
-// Function WBP_UI_MainMenu_CrimeNet_HeistButton.WBP_UI_MainMenu_CrimeNet_HeistButton_C.ButtonFocusedChanged
+// Function WBP_UI_MainMenu_CrimeNet_HeistButton.WBP_UI_MainMenu_CrimeNet_HeistButton_C.OnDisabledVisuals
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_MainMenu_CrimeNet_HeistButton_C_ButtonFocusedChanged final
+struct WBP_UI_MainMenu_CrimeNet_HeistButton_C_OnDisabledVisuals final
 {
 public:
-	bool                                          bInHasFocus_ButtonFocusedChanged;                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsDisabled_0;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_HeistButton_C_ButtonFocusedChanged;
+DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_HeistButton_C_OnDisabledVisuals;
+
+// Function WBP_UI_MainMenu_CrimeNet_HeistButton.WBP_UI_MainMenu_CrimeNet_HeistButton_C.OnFocusedVisuals
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_UI_MainMenu_CrimeNet_HeistButton_C_OnFocusedVisuals final
+{
+public:
+	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue;                  // 0x0004(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           CallFunc_SelectColor_ReturnValue_1;                // 0x0014(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0024(0x0014)()
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_HeistButton_C_OnFocusedVisuals;
+
+// Function WBP_UI_MainMenu_CrimeNet_HeistButton.WBP_UI_MainMenu_CrimeNet_HeistButton_C.OnHoverVisuals
+// 0x0005 (0x0005 - 0x0000)
+struct WBP_UI_MainMenu_CrimeNet_HeistButton_C_OnHoverVisuals final
+{
+public:
+	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_HeistButton_C_OnHoverVisuals;
+
+// Function WBP_UI_MainMenu_CrimeNet_HeistButton.WBP_UI_MainMenu_CrimeNet_HeistButton_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_MainMenu_CrimeNet_HeistButton_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_HeistButton_C_PreConstruct;
+
+// Function WBP_UI_MainMenu_CrimeNet_HeistButton.WBP_UI_MainMenu_CrimeNet_HeistButton_C.RefreshVisual
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_UI_MainMenu_CrimeNet_HeistButton_C_RefreshVisual final
+{
+public:
+	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsHovered_ReturnValue;                    // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_HeistButton_C_RefreshVisual;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -16,25 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_HackingMinigameActor_DisplayCase.BP_HackingMinigameActor_DisplayCase_C.BP_OnEnabledStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bEnabled                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_HackingMinigameActor_DisplayCase.BP_HackingMinigameActor_DisplayCase_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_HackingMinigameActor_DisplayCase_C::BP_OnEnabledStateChanged(bool bEnabled, bool bDoCosmetics)
+void ABP_HackingMinigameActor_DisplayCase_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HackingMinigameActor_DisplayCase_C", "BP_OnEnabledStateChanged");
-
-	Params::BP_HackingMinigameActor_DisplayCase_C_BP_OnEnabledStateChanged Parms{};
-
-	Parms.bEnabled = bEnabled;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -45,10 +35,8 @@ void ABP_HackingMinigameActor_DisplayCase_C::BP_OnEnabledStateChanged(bool bEnab
 
 void ABP_HackingMinigameActor_DisplayCase_C::ExecuteUbergraph_BP_HackingMinigameActor_DisplayCase(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HackingMinigameActor_DisplayCase_C", "ExecuteUbergraph_BP_HackingMinigameActor_DisplayCase");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_HackingMinigameActor_DisplayCase_C", "ExecuteUbergraph_BP_HackingMinigameActor_DisplayCase", FuncInfo);
 
 	Params::BP_HackingMinigameActor_DisplayCase_C_ExecuteUbergraph_BP_HackingMinigameActor_DisplayCase Parms{};
 
@@ -58,17 +46,23 @@ void ABP_HackingMinigameActor_DisplayCase_C::ExecuteUbergraph_BP_HackingMinigame
 }
 
 
-// Function BP_HackingMinigameActor_DisplayCase.BP_HackingMinigameActor_DisplayCase_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_HackingMinigameActor_DisplayCase.BP_HackingMinigameActor_DisplayCase_C.BP_OnEnabledStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bEnabled_BP_OnEnabledStateChanged                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_BP_OnEnabledStateChanged                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_HackingMinigameActor_DisplayCase_C::UserConstructionScript()
+void ABP_HackingMinigameActor_DisplayCase_C::BP_OnEnabledStateChanged(bool bEnabled_BP_OnEnabledStateChanged, bool bDoCosmetics_BP_OnEnabledStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnEnabledStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HackingMinigameActor_DisplayCase_C", "UserConstructionScript");
+	Params::BP_HackingMinigameActor_DisplayCase_C_BP_OnEnabledStateChanged Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.bEnabled_BP_OnEnabledStateChanged = bEnabled_BP_OnEnabledStateChanged;
+	Parms.bDoCosmetics_BP_OnEnabledStateChanged = bDoCosmetics_BP_OnEnabledStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

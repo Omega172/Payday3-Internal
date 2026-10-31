@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AR_Chus_SecurityRoom_North_C>();
 	}
 };
+DUMPER7_ASSERTS_AR_Chus_SecurityRoom_North_C;
 
 SDK_NAMESPACE_END

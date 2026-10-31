@@ -17,26 +17,25 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_Lure_Sign.BP_Lure_Sign_C.BndEvt__BP_Lure_Radio_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_Lure_Sign_C_BndEvt__BP_Lure_Radio_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
+// Function BP_Lure_Sign.BP_Lure_Sign_C.UserConstructionScript
+// 0x0020 (0x0020 - 0x0000)
+struct BP_Lure_Sign_C_UserConstructionScript final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0000(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Lure_Sign_C_UserConstructionScript;
 
-// Function BP_Lure_Sign.BP_Lure_Sign_C.copyMeshCustomPrimitiveDataToLight
-// 0x0010 (0x0010 - 0x0000)
-struct BP_Lure_Sign_C_copyMeshCustomPrimitiveDataToLight final
+// Function BP_Lure_Sign.BP_Lure_Sign_C.OnActiveStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_Lure_Sign_C_OnActiveStateChanged final
 {
 public:
-	int32                                         Temp_int_Variable;                                 // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetDefaultCustomPrimitiveDataFloat_ReturnValue; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsActive_OnActiveStateChanged;                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnActiveStateChanged;                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Lure_Sign_C_OnActiveStateChanged;
 
 // Function BP_Lure_Sign.BP_Lure_Sign_C.ExecuteUbergraph_BP_Lure_Sign
 // 0x0068 (0x0068 - 0x0000)
@@ -58,24 +57,30 @@ public:
 	int32                                         CallFunc_PostEvent_ReturnValue_1;                  // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_PostEvent_ReturnValue_2;                  // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Lure_Sign_C_ExecuteUbergraph_BP_Lure_Sign;
 
-// Function BP_Lure_Sign.BP_Lure_Sign_C.OnActiveStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_Lure_Sign_C_OnActiveStateChanged final
+// Function BP_Lure_Sign.BP_Lure_Sign_C.copyMeshCustomPrimitiveDataToLight
+// 0x0010 (0x0010 - 0x0000)
+struct BP_Lure_Sign_C_copyMeshCustomPrimitiveDataToLight final
 {
 public:
-	bool                                          bIsActive;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetDefaultCustomPrimitiveDataFloat_ReturnValue; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Lure_Sign_C_copyMeshCustomPrimitiveDataToLight;
 
-// Function BP_Lure_Sign.BP_Lure_Sign_C.UserConstructionScript
-// 0x0020 (0x0020 - 0x0000)
-struct BP_Lure_Sign_C_UserConstructionScript final
+// Function BP_Lure_Sign.BP_Lure_Sign_C.BndEvt__BP_Lure_Radio_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_Lure_Sign_C_BndEvt__BP_Lure_Radio_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
 {
 public:
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0000(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Lure_Sign_C_BndEvt__BP_Lure_Radio_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

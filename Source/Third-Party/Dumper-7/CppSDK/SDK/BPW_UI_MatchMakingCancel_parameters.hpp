@@ -16,6 +16,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BPW_UI_MatchMakingCancel.BPW_UI_MatchMakingCancel_C.ButtonHoveredChanged
+// 0x0001 (0x0001 - 0x0000)
+struct BPW_UI_MatchMakingCancel_C_ButtonHoveredChanged final
+{
+public:
+	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BPW_UI_MatchMakingCancel_C_ButtonHoveredChanged;
+
 // Function BPW_UI_MatchMakingCancel.BPW_UI_MatchMakingCancel_C.ExecuteUbergraph_BPW_UI_MatchMakingCancel
 // 0x0020 (0x0020 - 0x0000)
 struct BPW_UI_MatchMakingCancel_C_ExecuteUbergraph_BPW_UI_MatchMakingCancel final
@@ -31,15 +40,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationTimeRange_ReturnValue_1;     // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_BPW_UI_MatchMakingCancel_C_ExecuteUbergraph_BPW_UI_MatchMakingCancel;
-
-// Function BPW_UI_MatchMakingCancel.BPW_UI_MatchMakingCancel_C.ButtonHoveredChanged
-// 0x0001 (0x0001 - 0x0000)
-struct BPW_UI_MatchMakingCancel_C_ButtonHoveredChanged final
-{
-public:
-	bool                                          bInIsHovered_ButtonHoveredChanged;                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_BPW_UI_MatchMakingCancel_C_ButtonHoveredChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

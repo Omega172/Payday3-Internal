@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_VendingMachine_01_ZeroSweet_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_VendingMachine_01_ZeroSweet_C;
 
 SDK_NAMESPACE_END

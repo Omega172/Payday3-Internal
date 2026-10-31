@@ -54,23 +54,23 @@ public:
 	struct FVector                                buttonStartLocation;                               // 0x04B8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void animButton_timeline__FinishedFunc();
-	void animButton_timeline__UpdateFunc();
-	void BndEvt__BP_CarLift_02_flipCar_SBZBinaryState_K2Node_ComponentBoundEvent_3_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
-	void BndEvt__BP_CarLift_02_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_CarLift_02_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_CarLift_02_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_CarLift_02_targetUpPosition_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
-	void BP_OnStateChanged(ESBZTimerState NewState, ESBZTimerState OldState, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_CarLift_02(int32 EntryPoint);
-	void onLiftTimerDone();
-	void ReceiveBeginPlay();
-	void ReceiveTick(float DeltaSeconds);
-	void setCarRotation(bool flipped);
-	void SetInteraction(bool enabled);
-	void SetLiftLocation();
-	void setLiftState(bool lowered);
 	void UserConstructionScript();
+	void setLiftState(bool lowered);
+	void SetLiftLocation();
+	void SetInteraction(bool enabled);
+	void setCarRotation(bool flipped);
+	void ReceiveTick(float DeltaSeconds_ReceiveTick);
+	void ReceiveBeginPlay();
+	void onLiftTimerDone();
+	void ExecuteUbergraph_BP_CarLift_02(int32 EntryPoint);
+	void BP_OnStateChanged(ESBZTimerState NewState_BP_OnStateChanged, ESBZTimerState OldState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged);
+	void BndEvt__BP_CarLift_02_targetUpPosition_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
+	void BndEvt__BP_CarLift_02_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_CarLift_02_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_CarLift_02_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_CarLift_02_flipCar_SBZBinaryState_K2Node_ComponentBoundEvent_3_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
+	void animButton_timeline__UpdateFunc();
+	void animButton_timeline__FinishedFunc();
 
 public:
 	static class UClass* StaticClass()
@@ -86,5 +86,6 @@ public:
 		return GetDefaultObjImpl<ABP_CarLift_02_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CarLift_02_C;
 
 SDK_NAMESPACE_END

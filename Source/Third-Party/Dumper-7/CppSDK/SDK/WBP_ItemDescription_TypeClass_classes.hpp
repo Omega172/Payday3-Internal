@@ -26,9 +26,9 @@ public:
 	class FText                                   PreviewText_TypeClass;                             // 0x0300(0x0010)(Edit, BlueprintVisible)
 
 public:
-	void SetText_TypeClass(const class FText& Text);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
 	void ExecuteUbergraph_WBP_ItemDescription_TypeClass(int32 EntryPoint);
+	void PreConstruct(bool IsDesignTime);
+	void SetText_TypeClass(const class FText& Text);
 
 public:
 	static class UClass* StaticClass()

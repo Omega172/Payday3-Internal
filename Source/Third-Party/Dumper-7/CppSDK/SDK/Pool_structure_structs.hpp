@@ -23,5 +23,6 @@ public:
 	TArray<class AActor*>                         pool_8_2120F9E0474EF3FDE09D4FA10B9BF60A;           // 0x0000(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate)
 	Etraffic_light_status                         Status_7_EE879D5A49686EB170DB1CAD8D28E311;         // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_FPool_structure;
 
 SDK_NAMESPACE_END

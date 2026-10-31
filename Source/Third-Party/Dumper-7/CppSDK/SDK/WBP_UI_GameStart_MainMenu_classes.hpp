@@ -50,10 +50,10 @@ public:
 
 public:
 	void ExecuteUbergraph_WBP_UI_GameStart_MainMenu(int32 EntryPoint);
-	void OnLostStackFocused();
-	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
-	void OnRemovedFromStack();
 	void OnAddedToStack();
+	void OnGainedStackFocused(const class FName& PreviousValue);
+	void OnLostStackFocused();
+	void OnRemovedFromStack();
 
 public:
 	static class UClass* StaticClass()

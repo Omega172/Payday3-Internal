@@ -16,47 +16,21 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_KeycardBase.BP_KeycardBase_C.BndEvt__Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
+// Function BP_KeycardBase.BP_KeycardBase_C.GetSensorOutlineComponent
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZOutlineComponent*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_KeycardBase_C::BndEvt__Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+class USBZOutlineComponent* ABP_KeycardBase_C::GetSensorOutlineComponent()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetSensorOutlineComponent", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_KeycardBase_C", "BndEvt__Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_KeycardBase_C_BndEvt__Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+	Params::BP_KeycardBase_C_GetSensorOutlineComponent Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
-}
 
-
-// Function BP_KeycardBase.BP_KeycardBase_C.ExecuteUbergraph_BP_KeycardBase
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_KeycardBase_C::ExecuteUbergraph_BP_KeycardBase(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_KeycardBase_C", "ExecuteUbergraph_BP_KeycardBase");
-
-	Params::BP_KeycardBase_C_ExecuteUbergraph_BP_KeycardBase Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	return Parms.ReturnValue;
 }
 
 
@@ -67,10 +41,8 @@ void ABP_KeycardBase_C::ExecuteUbergraph_BP_KeycardBase(int32 EntryPoint)
 
 class USBZSensorComponent* ABP_KeycardBase_C::GetSensorComponent()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_KeycardBase_C", "GetSensorComponent");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetSensorComponent", FnName));
 
 	Params::BP_KeycardBase_C_GetSensorComponent Parms{};
 
@@ -80,23 +52,43 @@ class USBZSensorComponent* ABP_KeycardBase_C::GetSensorComponent()
 }
 
 
-// Function BP_KeycardBase.BP_KeycardBase_C.GetSensorOutlineComponent
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function BP_KeycardBase.BP_KeycardBase_C.ExecuteUbergraph_BP_KeycardBase
+// (Final, UbergraphFunction)
 // Parameters:
-// class USBZOutlineComponent*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-class USBZOutlineComponent* ABP_KeycardBase_C::GetSensorOutlineComponent()
+void ABP_KeycardBase_C::ExecuteUbergraph_BP_KeycardBase(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_KeycardBase_C", "ExecuteUbergraph_BP_KeycardBase", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_KeycardBase_C", "GetSensorOutlineComponent");
+	Params::BP_KeycardBase_C_ExecuteUbergraph_BP_KeycardBase Parms{};
 
-	Params::BP_KeycardBase_C_GetSensorOutlineComponent Parms{};
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
 
-	return Parms.ReturnValue;
+
+// Function BP_KeycardBase.BP_KeycardBase_C.BndEvt__Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_KeycardBase_C::BndEvt__Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_KeycardBase_C_BndEvt__Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable_0 = Interactable_0;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

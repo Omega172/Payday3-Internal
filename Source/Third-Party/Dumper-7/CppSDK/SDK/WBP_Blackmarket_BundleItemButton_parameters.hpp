@@ -16,35 +16,32 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.PreConstruct
+// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.ButtonDisabledChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_Blackmarket_BundleItemButton_C_PreConstruct final
+struct WBP_Blackmarket_BundleItemButton_C_ButtonDisabledChanged final
 {
 public:
-	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInIsDisabled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Blackmarket_BundleItemButton_C_PreConstruct;
+DUMPER7_ASSERTS_WBP_Blackmarket_BundleItemButton_C_ButtonDisabledChanged;
 
-// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.OnLoaded_85D615774D5635E8A7E0DF83CC3F53B3
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Blackmarket_BundleItemButton_C_OnLoaded_85D615774D5635E8A7E0DF83CC3F53B3 final
+// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.ButtonFocusedChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Blackmarket_BundleItemButton_C_ButtonFocusedChanged final
 {
 public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Blackmarket_BundleItemButton_C_OnLoaded_85D615774D5635E8A7E0DF83CC3F53B3;
+DUMPER7_ASSERTS_WBP_Blackmarket_BundleItemButton_C_ButtonFocusedChanged;
 
-// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.OnFocused
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_Blackmarket_BundleItemButton_C_OnFocused final
+// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.ButtonHoveredChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Blackmarket_BundleItemButton_C_ButtonHoveredChanged final
 {
 public:
-	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Blackmarket_BundleItemButton_C_OnFocused;
+DUMPER7_ASSERTS_WBP_Blackmarket_BundleItemButton_C_ButtonHoveredChanged;
 
 // Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.ExecuteUbergraph_WBP_Blackmarket_BundleItemButton
 // 0x0058 (0x0058 - 0x0000)
@@ -71,32 +68,35 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Blackmarket_BundleItemButton_C_ExecuteUbergraph_WBP_Blackmarket_BundleItemButton;
 
-// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.ButtonHoveredChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Blackmarket_BundleItemButton_C_ButtonHoveredChanged final
+// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.OnFocused
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_Blackmarket_BundleItemButton_C_OnFocused final
 {
 public:
-	bool                                          bInIsHovered_ButtonHoveredChanged;                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Blackmarket_BundleItemButton_C_ButtonHoveredChanged;
+DUMPER7_ASSERTS_WBP_Blackmarket_BundleItemButton_C_OnFocused;
 
-// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.ButtonFocusedChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Blackmarket_BundleItemButton_C_ButtonFocusedChanged final
+// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.OnLoaded_85D615774D5635E8A7E0DF83CC3F53B3
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Blackmarket_BundleItemButton_C_OnLoaded_85D615774D5635E8A7E0DF83CC3F53B3 final
 {
 public:
-	bool                                          bInHasFocus_ButtonFocusedChanged;                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Blackmarket_BundleItemButton_C_ButtonFocusedChanged;
+DUMPER7_ASSERTS_WBP_Blackmarket_BundleItemButton_C_OnLoaded_85D615774D5635E8A7E0DF83CC3F53B3;
 
-// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.ButtonDisabledChanged
+// Function WBP_Blackmarket_BundleItemButton.WBP_Blackmarket_BundleItemButton_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_Blackmarket_BundleItemButton_C_ButtonDisabledChanged final
+struct WBP_Blackmarket_BundleItemButton_C_PreConstruct final
 {
 public:
-	bool                                          bInIsDisabled_ButtonDisabledChanged;               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Blackmarket_BundleItemButton_C_ButtonDisabledChanged;
+DUMPER7_ASSERTS_WBP_Blackmarket_BundleItemButton_C_PreConstruct;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

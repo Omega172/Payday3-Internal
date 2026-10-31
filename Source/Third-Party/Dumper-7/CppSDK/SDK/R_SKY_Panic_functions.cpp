@@ -16,20 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function R_SKY_Panic.R_SKY_Panic_C.DestroyMasonsArmor
-// (BlueprintCallable, BlueprintEvent)
-
-void AR_SKY_Panic_C::DestroyMasonsArmor()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_SKY_Panic_C", "DestroyMasonsArmor");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function R_SKY_Panic.R_SKY_Panic_C.ExecuteUbergraph_R_SKY_Panic
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -37,16 +23,26 @@ void AR_SKY_Panic_C::DestroyMasonsArmor()
 
 void AR_SKY_Panic_C::ExecuteUbergraph_R_SKY_Panic(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_SKY_Panic_C", "ExecuteUbergraph_R_SKY_Panic");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "R_SKY_Panic_C", "ExecuteUbergraph_R_SKY_Panic", FuncInfo);
 
 	Params::R_SKY_Panic_C_ExecuteUbergraph_R_SKY_Panic Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function R_SKY_Panic.R_SKY_Panic_C.DestroyMasonsArmor
+// (BlueprintCallable, BlueprintEvent)
+
+void AR_SKY_Panic_C::DestroyMasonsArmor()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DestroyMasonsArmor", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

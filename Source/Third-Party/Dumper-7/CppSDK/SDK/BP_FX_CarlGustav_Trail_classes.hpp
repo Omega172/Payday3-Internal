@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_FX_CarlGustav_Trail_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_FX_CarlGustav_Trail_C;
 
 SDK_NAMESPACE_END

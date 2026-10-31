@@ -19,18 +19,16 @@ SDK_NAMESPACE_START
 // Function BUST_BPL_WallLampIndustrial_01_PBL.BUST_BPL_WallLampIndustrial_01_PBL_C.SetStateFunction
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// Enum_LampStages                         States_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Enum_LampStages                         States                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABUST_BPL_WallLampIndustrial_01_PBL_C::SetStateFunction(Enum_LampStages States_0)
+void ABUST_BPL_WallLampIndustrial_01_PBL_C::SetStateFunction(Enum_LampStages States)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BUST_BPL_WallLampIndustrial_01_PBL_C", "SetStateFunction");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetStateFunction", FnName));
 
 	Params::BUST_BPL_WallLampIndustrial_01_PBL_C_SetStateFunction Parms{};
 
-	Parms.States_0 = States_0;
+	Parms.States = States;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

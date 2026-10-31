@@ -17,15 +17,29 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_Chus_Toggle_Button.BP_Chus_Toggle_Button_C.BndEvt__BP_Chus_Toggle_Button_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_Chus_Toggle_Button_C_BndEvt__BP_Chus_Toggle_Button_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
+// Function BP_Chus_Toggle_Button.BP_Chus_Toggle_Button_C.UserConstructionScript
+// 0x0180 (0x0180 - 0x0000)
+struct BP_Chus_Toggle_Button_C_UserConstructionScript final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0010(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetWorldTransform_SweepHitResult;      // 0x0070(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_1; // 0x017C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Chus_Toggle_Button_C_UserConstructionScript;
+
+// Function BP_Chus_Toggle_Button.BP_Chus_Toggle_Button_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_Chus_Toggle_Button_C_OnStateChanged final
+{
+public:
+	bool                                          bStateToChangeTo_OnStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Chus_Toggle_Button_C_OnStateChanged;
 
 // Function BP_Chus_Toggle_Button.BP_Chus_Toggle_Button_C.ExecuteUbergraph_BP_Chus_Toggle_Button
 // 0x0030 (0x0030 - 0x0000)
@@ -45,28 +59,18 @@ public:
 	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_1; // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Chus_Toggle_Button_C_ExecuteUbergraph_BP_Chus_Toggle_Button;
 
-// Function BP_Chus_Toggle_Button.BP_Chus_Toggle_Button_C.OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_Chus_Toggle_Button_C_OnStateChanged final
+// Function BP_Chus_Toggle_Button.BP_Chus_Toggle_Button_C.BndEvt__BP_Chus_Toggle_Button_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_Chus_Toggle_Button_C_BndEvt__BP_Chus_Toggle_Button_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
 {
 public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_Chus_Toggle_Button.BP_Chus_Toggle_Button_C.UserConstructionScript
-// 0x0180 (0x0180 - 0x0000)
-struct BP_Chus_Toggle_Button_C_UserConstructionScript final
-{
-public:
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0010(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetWorldTransform_SweepHitResult;      // 0x0070(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_1; // 0x017C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_Chus_Toggle_Button_C_BndEvt__BP_Chus_Toggle_Button_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

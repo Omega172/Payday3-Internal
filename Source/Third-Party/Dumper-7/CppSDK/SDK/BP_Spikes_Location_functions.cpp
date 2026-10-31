@@ -16,112 +16,27 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Spikes_Location.BP_Spikes_Location_C.BndEvt__BP_IntTesting_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Spikes_Location.BP_Spikes_Location_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Spikes_Location_C::BndEvt__BP_IntTesting_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_Spikes_Location_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Spikes_Location_C", "BndEvt__BP_IntTesting_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_Spikes_Location_C_BndEvt__BP_IntTesting_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Spikes_Location.BP_Spikes_Location_C.ExecuteUbergraph_BP_Spikes_Location
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Spikes_Location.BP_Spikes_Location_C.Show Ghost
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Spikes_Location_C::ExecuteUbergraph_BP_Spikes_Location(int32 EntryPoint)
+void ABP_Spikes_Location_C::Show_Ghost()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Show Ghost", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Spikes_Location_C", "ExecuteUbergraph_BP_Spikes_Location");
-
-	Params::BP_Spikes_Location_C_ExecuteUbergraph_BP_Spikes_Location Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Spikes_Location.BP_Spikes_Location_C.GetMarkerText
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-class FText ABP_Spikes_Location_C::GetMarkerText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Spikes_Location_C", "GetMarkerText");
-
-	Params::BP_Spikes_Location_C_GetMarkerText Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function BP_Spikes_Location.BP_Spikes_Location_C.GetState
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32*                                  State_0                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Spikes_Location_C::GetState(int32* State_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Spikes_Location_C", "GetState");
-
-	Params::BP_Spikes_Location_C_GetState Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (State_0 != nullptr)
-		*State_0 = Parms.State_0;
-}
-
-
-// Function BP_Spikes_Location.BP_Spikes_Location_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Spikes_Location_C::OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Spikes_Location_C", "OnStateChanged");
-
-	Params::BP_Spikes_Location_C_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -133,10 +48,8 @@ void ABP_Spikes_Location_C::OnStateChanged(int32 OldState, int32 NewState, bool 
 
 void ABP_Spikes_Location_C::setMarker(const class USBZMarkerDataAsset* marker, const struct FVector& location)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Spikes_Location_C", "setMarker");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setMarker", FnName));
 
 	Params::BP_Spikes_Location_C_setMarker Parms{};
 
@@ -147,31 +60,102 @@ void ABP_Spikes_Location_C::setMarker(const class USBZMarkerDataAsset* marker, c
 }
 
 
-// Function BP_Spikes_Location.BP_Spikes_Location_C.Show Ghost
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_Spikes_Location.BP_Spikes_Location_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   OldState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Spikes_Location_C::Show_Ghost()
+void ABP_Spikes_Location_C::OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Spikes_Location_C", "Show Ghost");
+	Params::BP_Spikes_Location_C_OnStateChanged Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.OldState_OnStateChanged = OldState_OnStateChanged;
+	Parms.NewState_OnStateChanged = NewState_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_Spikes_Location.BP_Spikes_Location_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_Spikes_Location.BP_Spikes_Location_C.GetState
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32*                                  State                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Spikes_Location_C::UserConstructionScript()
+void ABP_Spikes_Location_C::GetState(int32* State)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetState", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Spikes_Location_C", "UserConstructionScript");
+	Params::BP_Spikes_Location_C_GetState Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (State != nullptr)
+		*State = Parms.State;
+}
+
+
+// Function BP_Spikes_Location.BP_Spikes_Location_C.GetMarkerText
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+class FText ABP_Spikes_Location_C::GetMarkerText()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetMarkerText", FnName));
+
+	Params::BP_Spikes_Location_C_GetMarkerText Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_Spikes_Location.BP_Spikes_Location_C.ExecuteUbergraph_BP_Spikes_Location
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Spikes_Location_C::ExecuteUbergraph_BP_Spikes_Location(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Spikes_Location_C", "ExecuteUbergraph_BP_Spikes_Location", FuncInfo);
+
+	Params::BP_Spikes_Location_C_ExecuteUbergraph_BP_Spikes_Location Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Spikes_Location.BP_Spikes_Location_C.BndEvt__BP_IntTesting_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Spikes_Location_C::BndEvt__BP_IntTesting_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_IntTesting_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_Spikes_Location_C_BndEvt__BP_IntTesting_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

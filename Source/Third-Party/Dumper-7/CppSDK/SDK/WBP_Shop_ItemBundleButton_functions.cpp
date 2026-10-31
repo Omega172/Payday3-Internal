@@ -16,37 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_Shop_ItemBundleButton.WBP_Shop_ItemBundleButton_C.OnUpdateOwnershipStatus
+// Function WBP_Shop_ItemBundleButton.WBP_Shop_ItemBundleButton_C.ButtonFocusedChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bIsOwned_OnUpdateOwnershipStatus                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Shop_ItemBundleButton_C::OnUpdateOwnershipStatus(bool bIsOwned_OnUpdateOwnershipStatus)
+void UWBP_Shop_ItemBundleButton_C::ButtonFocusedChanged(bool bInHasFocus)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnUpdateOwnershipStatus", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
 
-	Params::WBP_Shop_ItemBundleButton_C_OnUpdateOwnershipStatus Parms{};
+	Params::WBP_Shop_ItemBundleButton_C_ButtonFocusedChanged Parms{};
 
-	Parms.bIsOwned_OnUpdateOwnershipStatus = bIsOwned_OnUpdateOwnershipStatus;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Shop_ItemBundleButton.WBP_Shop_ItemBundleButton_C.OnShowItemBundle
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bIsNew_OnShowItemBundle                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Shop_ItemBundleButton_C::OnShowItemBundle(bool bIsNew_OnShowItemBundle)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnShowItemBundle", FnName));
-
-	Params::WBP_Shop_ItemBundleButton_C_OnShowItemBundle Parms{};
-
-	Parms.bIsNew_OnShowItemBundle = bIsNew_OnShowItemBundle;
+	Parms.bInHasFocus = bInHasFocus;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -70,19 +52,37 @@ void UWBP_Shop_ItemBundleButton_C::ExecuteUbergraph_WBP_Shop_ItemBundleButton(in
 }
 
 
-// Function WBP_Shop_ItemBundleButton.WBP_Shop_ItemBundleButton_C.ButtonFocusedChanged
+// Function WBP_Shop_ItemBundleButton.WBP_Shop_ItemBundleButton_C.OnShowItemBundle
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bInHasFocus_ButtonFocusedChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsNew                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Shop_ItemBundleButton_C::ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged)
+void UWBP_Shop_ItemBundleButton_C::OnShowItemBundle(bool bIsNew)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnShowItemBundle", FnName));
 
-	Params::WBP_Shop_ItemBundleButton_C_ButtonFocusedChanged Parms{};
+	Params::WBP_Shop_ItemBundleButton_C_OnShowItemBundle Parms{};
 
-	Parms.bInHasFocus_ButtonFocusedChanged = bInHasFocus_ButtonFocusedChanged;
+	Parms.bIsNew = bIsNew;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Shop_ItemBundleButton.WBP_Shop_ItemBundleButton_C.OnUpdateOwnershipStatus
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsOwned                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Shop_ItemBundleButton_C::OnUpdateOwnershipStatus(bool bIsOwned)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnUpdateOwnershipStatus", FnName));
+
+	Params::WBP_Shop_ItemBundleButton_C_OnUpdateOwnershipStatus Parms{};
+
+	Parms.bIsOwned = bIsOwned;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

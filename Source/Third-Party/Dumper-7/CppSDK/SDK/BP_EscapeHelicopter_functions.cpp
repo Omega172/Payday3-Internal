@@ -16,105 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_EscapeHelicopter.BP_EscapeHelicopter_C.CheckDistanceToGround
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USceneComponent*                  GeoTracking                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// struct FVector*                         Location                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double*                                 DistanceToGround                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_EscapeHelicopter.BP_EscapeHelicopter_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_EscapeHelicopter_C::CheckDistanceToGround(class USceneComponent* GeoTracking, struct FVector* Location, double* DistanceToGround)
+void ABP_EscapeHelicopter_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeHelicopter_C", "CheckDistanceToGround");
-
-	Params::BP_EscapeHelicopter_C_CheckDistanceToGround Parms{};
-
-	Parms.GeoTracking = GeoTracking;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Location != nullptr)
-		*Location = std::move(Parms.Location);
-
-	if (DistanceToGround != nullptr)
-		*DistanceToGround = Parms.DistanceToGround;
-}
-
-
-// Function BP_EscapeHelicopter.BP_EscapeHelicopter_C.CustomEvent_0
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class ASBZAerialVehicle*                Vehicle                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_EscapeHelicopter_C::CustomEvent_0(class ASBZAerialVehicle* Vehicle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeHelicopter_C", "CustomEvent_0");
-
-	Params::BP_EscapeHelicopter_C_CustomEvent_0 Parms{};
-
-	Parms.Vehicle = Vehicle;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_EscapeHelicopter.BP_EscapeHelicopter_C.CustomEvent_1
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class ASBZAerialVehicle*                Vehicle                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class FName                             State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_EscapeHelicopter_C::CustomEvent_1(class ASBZAerialVehicle* Vehicle, class FName State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeHelicopter_C", "CustomEvent_1");
-
-	Params::BP_EscapeHelicopter_C_CustomEvent_1 Parms{};
-
-	Parms.Vehicle = Vehicle;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_EscapeHelicopter.BP_EscapeHelicopter_C.ExecuteUbergraph_BP_EscapeHelicopter
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_EscapeHelicopter_C::ExecuteUbergraph_BP_EscapeHelicopter(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeHelicopter_C", "ExecuteUbergraph_BP_EscapeHelicopter");
-
-	Params::BP_EscapeHelicopter_C_ExecuteUbergraph_BP_EscapeHelicopter Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_EscapeHelicopter.BP_EscapeHelicopter_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_EscapeHelicopter_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeHelicopter_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -128,10 +36,8 @@ void ABP_EscapeHelicopter_C::ReceiveBeginPlay()
 
 void ABP_EscapeHelicopter_C::ReceiveOnDoorStateChanged(ESBZAerialVehicleDoor Door, bool bIsDoorOpen)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeHelicopter_C", "ReceiveOnDoorStateChanged");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveOnDoorStateChanged", FnName));
 
 	Params::BP_EscapeHelicopter_C_ReceiveOnDoorStateChanged Parms{};
 
@@ -142,17 +48,97 @@ void ABP_EscapeHelicopter_C::ReceiveOnDoorStateChanged(ESBZAerialVehicleDoor Doo
 }
 
 
-// Function BP_EscapeHelicopter.BP_EscapeHelicopter_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_EscapeHelicopter.BP_EscapeHelicopter_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_EscapeHelicopter_C::UserConstructionScript()
+void ABP_EscapeHelicopter_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeHelicopter_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_EscapeHelicopter.BP_EscapeHelicopter_C.ExecuteUbergraph_BP_EscapeHelicopter
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_EscapeHelicopter_C::ExecuteUbergraph_BP_EscapeHelicopter(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_EscapeHelicopter_C", "ExecuteUbergraph_BP_EscapeHelicopter", FuncInfo);
+
+	Params::BP_EscapeHelicopter_C_ExecuteUbergraph_BP_EscapeHelicopter Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_EscapeHelicopter.BP_EscapeHelicopter_C.CustomEvent_1
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ASBZAerialVehicle*                Vehicle                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class FName                             State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_EscapeHelicopter_C::CustomEvent_1(class ASBZAerialVehicle* Vehicle, class FName State)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CustomEvent_1", FnName));
+
+	Params::BP_EscapeHelicopter_C_CustomEvent_1 Parms{};
+
+	Parms.Vehicle = Vehicle;
+	Parms.State = State;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_EscapeHelicopter.BP_EscapeHelicopter_C.CustomEvent_0
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ASBZAerialVehicle*                Vehicle                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_EscapeHelicopter_C::CustomEvent_0(class ASBZAerialVehicle* Vehicle)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CustomEvent_0", FnName));
+
+	Params::BP_EscapeHelicopter_C_CustomEvent_0 Parms{};
+
+	Parms.Vehicle = Vehicle;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_EscapeHelicopter.BP_EscapeHelicopter_C.CheckDistanceToGround
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USceneComponent*                  GeoTracking                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// struct FVector*                         Location                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double*                                 DistanceToGround                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_EscapeHelicopter_C::CheckDistanceToGround(class USceneComponent* GeoTracking, struct FVector* Location, double* DistanceToGround)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CheckDistanceToGround", FnName));
+
+	Params::BP_EscapeHelicopter_C_CheckDistanceToGround Parms{};
+
+	Parms.GeoTracking = GeoTracking;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Location != nullptr)
+		*Location = std::move(Parms.Location);
+
+	if (DistanceToGround != nullptr)
+		*DistanceToGround = Parms.DistanceToGround;
 }
 
 

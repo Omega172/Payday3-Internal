@@ -16,17 +16,21 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_CivilianInsiderController.BP_CivilianInsiderController_C.BP_OnCurrentEnemyAssigned
-// (Event, Public, BlueprintEvent)
+// Function BP_CivilianInsiderController.BP_CivilianInsiderController_C.ReceivePossess
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class APawn*                            PossessedPawn_ReceivePossess                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_CivilianInsiderController_C::BP_OnCurrentEnemyAssigned()
+void ABP_CivilianInsiderController_C::ReceivePossess(class APawn* PossessedPawn_ReceivePossess)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceivePossess", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CivilianInsiderController_C", "BP_OnCurrentEnemyAssigned");
+	Params::BP_CivilianInsiderController_C_ReceivePossess Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.PossessedPawn_ReceivePossess = PossessedPawn_ReceivePossess;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -37,10 +41,8 @@ void ABP_CivilianInsiderController_C::BP_OnCurrentEnemyAssigned()
 
 void ABP_CivilianInsiderController_C::ExecuteUbergraph_BP_CivilianInsiderController(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CivilianInsiderController_C", "ExecuteUbergraph_BP_CivilianInsiderController");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_CivilianInsiderController_C", "ExecuteUbergraph_BP_CivilianInsiderController", FuncInfo);
 
 	Params::BP_CivilianInsiderController_C_ExecuteUbergraph_BP_CivilianInsiderController Parms{};
 
@@ -50,23 +52,15 @@ void ABP_CivilianInsiderController_C::ExecuteUbergraph_BP_CivilianInsiderControl
 }
 
 
-// Function BP_CivilianInsiderController.BP_CivilianInsiderController_C.ReceivePossess
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class APawn*                            PossessedPawn                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function BP_CivilianInsiderController.BP_CivilianInsiderController_C.BP_OnCurrentEnemyAssigned
+// (Event, Public, BlueprintEvent)
 
-void ABP_CivilianInsiderController_C::ReceivePossess(class APawn* PossessedPawn)
+void ABP_CivilianInsiderController_C::BP_OnCurrentEnemyAssigned()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnCurrentEnemyAssigned", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CivilianInsiderController_C", "ReceivePossess");
-
-	Params::BP_CivilianInsiderController_C_ReceivePossess Parms{};
-
-	Parms.PossessedPawn = PossessedPawn;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -25,8 +25,8 @@ public:
 	class UBoxComponent*                          Box;                                               // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Set_Interaction_Disabled();
 	void Set_Interaction_Enabled();
+	void Set_Interaction_Disabled();
 
 public:
 	static class UClass* StaticClass()
@@ -42,5 +42,6 @@ public:
 		return GetDefaultObjImpl<ABP_STO_InstantLoot_HockeyStatue_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_STO_InstantLoot_HockeyStatue_C;
 
 SDK_NAMESPACE_END

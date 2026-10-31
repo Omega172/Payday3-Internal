@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABP_SatelliteDishBagWorldItem_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SatelliteDishBagWorldItem_C;
 
 SDK_NAMESPACE_END

@@ -16,85 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Moon_Gun.BP_Moon_Gun_C.BP_OnKill_Client
-// (Event, Protected, BlueprintEvent)
+// Function BP_Moon_Gun.BP_Moon_Gun_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Moon_Gun_C::BP_OnKill_Client()
+void ABP_Moon_Gun_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Moon_Gun_C", "BP_OnKill_Client");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Moon_Gun.BP_Moon_Gun_C.ExecuteUbergraph_BP_Moon_Gun
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Moon_Gun_C::ExecuteUbergraph_BP_Moon_Gun(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Moon_Gun_C", "ExecuteUbergraph_BP_Moon_Gun");
-
-	Params::BP_Moon_Gun_C_ExecuteUbergraph_BP_Moon_Gun Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Moon_Gun.BP_Moon_Gun_C.TickExec_51BB4EA443607F8BF71EA7893F95BCE5
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class UDelegateTimer*             Timer                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// float                                   ElapsedTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   TimeSinceLast                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Moon_Gun_C::TickExec_51BB4EA443607F8BF71EA7893F95BCE5(const class UDelegateTimer* Timer, float ElapsedTime, float TimeSinceLast)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Moon_Gun_C", "TickExec_51BB4EA443607F8BF71EA7893F95BCE5");
-
-	Params::BP_Moon_Gun_C_TickExec_51BB4EA443607F8BF71EA7893F95BCE5 Parms{};
-
-	Parms.Timer = Timer;
-	Parms.ElapsedTime = ElapsedTime;
-	Parms.TimeSinceLast = TimeSinceLast;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Moon_Gun.BP_Moon_Gun_C.TickExec_8EDFF4314BB4D040A4F521AAA5A56326
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class UDelegateTimer*             Timer                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// float                                   ElapsedTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   TimeSinceLast                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Moon_Gun_C::TickExec_8EDFF4314BB4D040A4F521AAA5A56326(const class UDelegateTimer* Timer, float ElapsedTime, float TimeSinceLast)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Moon_Gun_C", "TickExec_8EDFF4314BB4D040A4F521AAA5A56326");
-
-	Params::BP_Moon_Gun_C_TickExec_8EDFF4314BB4D040A4F521AAA5A56326 Parms{};
-
-	Parms.Timer = Timer;
-	Parms.ElapsedTime = ElapsedTime;
-	Parms.TimeSinceLast = TimeSinceLast;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -109,10 +39,8 @@ void ABP_Moon_Gun_C::TickExec_8EDFF4314BB4D040A4F521AAA5A56326(const class UDele
 
 void ABP_Moon_Gun_C::UpdateDeath(double ElapsedTimeSinceDeath, double LinearForce, double AngularForce, double Duration, const struct FVector& RandomVector)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Moon_Gun_C", "UpdateDeath");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateDeath", FnName));
 
 	Params::BP_Moon_Gun_C_UpdateDeath Parms{};
 
@@ -126,15 +54,75 @@ void ABP_Moon_Gun_C::UpdateDeath(double ElapsedTimeSinceDeath, double LinearForc
 }
 
 
-// Function BP_Moon_Gun.BP_Moon_Gun_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_Moon_Gun.BP_Moon_Gun_C.TickExec_8EDFF4314BB4D040A4F521AAA5A56326
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class UDelegateTimer*             Timer                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                                   ElapsedTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   TimeSinceLast                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Moon_Gun_C::UserConstructionScript()
+void ABP_Moon_Gun_C::TickExec_8EDFF4314BB4D040A4F521AAA5A56326(const class UDelegateTimer* Timer, float ElapsedTime, float TimeSinceLast)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TickExec_8EDFF4314BB4D040A4F521AAA5A56326", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Moon_Gun_C", "UserConstructionScript");
+	Params::BP_Moon_Gun_C_TickExec_8EDFF4314BB4D040A4F521AAA5A56326 Parms{};
+
+	Parms.Timer = Timer;
+	Parms.ElapsedTime = ElapsedTime;
+	Parms.TimeSinceLast = TimeSinceLast;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Moon_Gun.BP_Moon_Gun_C.TickExec_51BB4EA443607F8BF71EA7893F95BCE5
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class UDelegateTimer*             Timer                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                                   ElapsedTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   TimeSinceLast                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Moon_Gun_C::TickExec_51BB4EA443607F8BF71EA7893F95BCE5(const class UDelegateTimer* Timer, float ElapsedTime, float TimeSinceLast)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TickExec_51BB4EA443607F8BF71EA7893F95BCE5", FnName));
+
+	Params::BP_Moon_Gun_C_TickExec_51BB4EA443607F8BF71EA7893F95BCE5 Parms{};
+
+	Parms.Timer = Timer;
+	Parms.ElapsedTime = ElapsedTime;
+	Parms.TimeSinceLast = TimeSinceLast;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Moon_Gun.BP_Moon_Gun_C.ExecuteUbergraph_BP_Moon_Gun
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Moon_Gun_C::ExecuteUbergraph_BP_Moon_Gun(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Moon_Gun_C", "ExecuteUbergraph_BP_Moon_Gun", FuncInfo);
+
+	Params::BP_Moon_Gun_C_ExecuteUbergraph_BP_Moon_Gun Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Moon_Gun.BP_Moon_Gun_C.BP_OnKill_Client
+// (Event, Protected, BlueprintEvent)
+
+void ABP_Moon_Gun_C::BP_OnKill_Client()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnKill_Client", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

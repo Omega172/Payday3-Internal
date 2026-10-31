@@ -23,7 +23,7 @@ public:
 	class UTextBlock*                             Text;                                              // 0x02F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void SetText(const class FText& Text_0);
+	void SetText(const class FText& Text);
 
 public:
 	static class UClass* StaticClass()
@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<UWBP_TVScreenFirstDay_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_TVScreenFirstDay_C;
 
 SDK_NAMESPACE_END

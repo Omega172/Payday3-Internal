@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_ConstructionTarp_01_Ceiling_1024_384_A_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ConstructionTarp_01_Ceiling_1024_384_A_C;
 
 SDK_NAMESPACE_END

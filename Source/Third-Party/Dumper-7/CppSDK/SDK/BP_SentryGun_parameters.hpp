@@ -14,6 +14,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_SentryGun.BP_SentryGun_C.OnOverheatDamageTaken
+// 0x0004 (0x0004 - 0x0000)
+struct BP_SentryGun_C_OnOverheatDamageTaken final
+{
+public:
+	float                                         InHealth_OnOverheatDamageTaken;                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SentryGun_C_OnOverheatDamageTaken;
+
 // Function BP_SentryGun.BP_SentryGun_C.ExecuteUbergraph_BP_SentryGun
 // 0x0038 (0x0038 - 0x0000)
 struct BP_SentryGun_C_ExecuteUbergraph_BP_SentryGun final
@@ -30,14 +39,7 @@ public:
 	double                                        CallFunc_Less_DoubleDouble_A_ImplicitCast;         // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetVariableFloat_InValue_ImplicitCast;    // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_SentryGun.BP_SentryGun_C.OnOverheatDamageTaken
-// 0x0004 (0x0004 - 0x0000)
-struct BP_SentryGun_C_OnOverheatDamageTaken final
-{
-public:
-	float                                         InHealth;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_SentryGun_C_ExecuteUbergraph_BP_SentryGun;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -17,16 +17,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_FOR_Winch.BP_FOR_Winch_C.BP_OnStateChanged
-// 0x0003 (0x0003 - 0x0000)
-struct BP_FOR_Winch_C_BP_OnStateChanged final
-{
-public:
-	ESBZBreachingEquipmentState                   OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZBreachingEquipmentState                   NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_FOR_Winch.BP_FOR_Winch_C.ExecuteUbergraph_BP_FOR_Winch
 // 0x0030 (0x0030 - 0x0000)
 struct BP_FOR_Winch_C_ExecuteUbergraph_BP_FOR_Winch final
@@ -41,6 +31,18 @@ public:
 	class UNiagaraComponent*                      CallFunc_SpawnSystemAtLocation_ReturnValue;        // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_FOR_Winch_C_ExecuteUbergraph_BP_FOR_Winch;
+
+// Function BP_FOR_Winch.BP_FOR_Winch_C.BP_OnStateChanged
+// 0x0003 (0x0003 - 0x0000)
+struct BP_FOR_Winch_C_BP_OnStateChanged final
+{
+public:
+	ESBZBreachingEquipmentState                   OldState_BP_OnStateChanged;                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZBreachingEquipmentState                   NewState_BP_OnStateChanged;                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_BP_OnStateChanged;                    // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FOR_Winch_C_BP_OnStateChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

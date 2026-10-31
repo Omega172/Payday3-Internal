@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_BlockMaskOn_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_BlockMaskOn_C;
 
 SDK_NAMESPACE_END

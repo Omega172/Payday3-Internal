@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_CosmticBroom_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CosmticBroom_C;
 
 SDK_NAMESPACE_END

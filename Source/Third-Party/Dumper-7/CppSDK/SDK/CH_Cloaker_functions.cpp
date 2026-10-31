@@ -16,51 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function CH_Cloaker.CH_Cloaker_C.BP_OnHeistStateChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// EPD3HeistState                          OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPD3HeistState                          NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function CH_Cloaker.CH_Cloaker_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ACH_Cloaker_C::BP_OnHeistStateChanged(EPD3HeistState OldState, EPD3HeistState NewState)
+void ACH_Cloaker_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CH_Cloaker_C", "BP_OnHeistStateChanged");
-
-	Params::CH_Cloaker_C_BP_OnHeistStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function CH_Cloaker.CH_Cloaker_C.BP_OnKill
-// (Event, Public, BlueprintEvent)
-
-void ACH_Cloaker_C::BP_OnKill()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CH_Cloaker_C", "BP_OnKill");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function CH_Cloaker.CH_Cloaker_C.BP_OnTagReactionPlayed
-// (Event, Public, BlueprintEvent)
-
-void ACH_Cloaker_C::BP_OnTagReactionPlayed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CH_Cloaker_C", "BP_OnTagReactionPlayed");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -73,10 +35,8 @@ void ACH_Cloaker_C::BP_OnTagReactionPlayed()
 
 void ACH_Cloaker_C::ExecuteUbergraph_CH_Cloaker(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CH_Cloaker_C", "ExecuteUbergraph_CH_Cloaker");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "CH_Cloaker_C", "ExecuteUbergraph_CH_Cloaker", FuncInfo);
 
 	Params::CH_Cloaker_C_ExecuteUbergraph_CH_Cloaker Parms{};
 
@@ -86,17 +46,47 @@ void ACH_Cloaker_C::ExecuteUbergraph_CH_Cloaker(int32 EntryPoint)
 }
 
 
-// Function CH_Cloaker.CH_Cloaker_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function CH_Cloaker.CH_Cloaker_C.BP_OnTagReactionPlayed
+// (Event, Public, BlueprintEvent)
 
-void ACH_Cloaker_C::ReceiveBeginPlay()
+void ACH_Cloaker_C::BP_OnTagReactionPlayed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CH_Cloaker_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnTagReactionPlayed", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function CH_Cloaker.CH_Cloaker_C.BP_OnKill
+// (Event, Public, BlueprintEvent)
+
+void ACH_Cloaker_C::BP_OnKill()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnKill", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function CH_Cloaker.CH_Cloaker_C.BP_OnHeistStateChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EPD3HeistState                          OldState_BP_OnHeistStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPD3HeistState                          NewState_BP_OnHeistStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACH_Cloaker_C::BP_OnHeistStateChanged(EPD3HeistState OldState_BP_OnHeistStateChanged, EPD3HeistState NewState_BP_OnHeistStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnHeistStateChanged", FnName));
+
+	Params::CH_Cloaker_C_BP_OnHeistStateChanged Parms{};
+
+	Parms.OldState_BP_OnHeistStateChanged = OldState_BP_OnHeistStateChanged;
+	Parms.NewState_BP_OnHeistStateChanged = NewState_BP_OnHeistStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

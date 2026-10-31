@@ -39,14 +39,14 @@ public:
 	class ACameraActor*                           PlayerCharacterCamera_SetActiveCamera_MERGED_RefProperty; // 0x03E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void TickRotation(double DeltaTime);
-	void SetActiveCamera(class FName NewValue, class FName PreviousValue);
-	void ReceiveTick(float DeltaSeconds_ReceiveTick);
-	void ReceiveBeginPlay();
-	void Matchmaking_Music();
-	void MainMenu_Music();
-	void Lobby_Music();
 	void ExecuteUbergraph_MainMenu(int32 EntryPoint);
+	void Lobby_Music();
+	void MainMenu_Music();
+	void Matchmaking_Music();
+	void ReceiveBeginPlay();
+	void ReceiveTick(float DeltaSeconds);
+	void SetActiveCamera(class FName NewValue, class FName PreviousValue);
+	void TickRotation(double DeltaTime);
 
 public:
 	static class UClass* StaticClass()

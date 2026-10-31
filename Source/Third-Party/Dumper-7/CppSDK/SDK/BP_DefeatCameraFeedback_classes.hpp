@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UBP_DefeatCameraFeedback_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_DefeatCameraFeedback_C;
 
 SDK_NAMESPACE_END

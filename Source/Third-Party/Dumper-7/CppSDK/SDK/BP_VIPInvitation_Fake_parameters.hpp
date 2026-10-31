@@ -16,6 +16,33 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_VIPInvitation_Fake.BP_VIPInvitation_Fake_C.ReceiveEndPlay
+// 0x0001 (0x0001 - 0x0000)
+struct BP_VIPInvitation_Fake_C_ReceiveEndPlay final
+{
+public:
+	EEndPlayReason                                EndPlayReason_ReceiveEndPlay;                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_VIPInvitation_Fake_C_ReceiveEndPlay;
+
+// Function BP_VIPInvitation_Fake.BP_VIPInvitation_Fake_C.GetSensorOutlineComponent
+// 0x0008 (0x0008 - 0x0000)
+struct BP_VIPInvitation_Fake_C_GetSensorOutlineComponent final
+{
+public:
+	class USBZOutlineComponent*                   ReturnValue_GetSensorOutlineComponent;             // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_VIPInvitation_Fake_C_GetSensorOutlineComponent;
+
+// Function BP_VIPInvitation_Fake.BP_VIPInvitation_Fake_C.GetSensorComponent
+// 0x0008 (0x0008 - 0x0000)
+struct BP_VIPInvitation_Fake_C_GetSensorComponent final
+{
+public:
+	class USBZSensorComponent*                    ReturnValue_GetSensorComponent;                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_VIPInvitation_Fake_C_GetSensorComponent;
+
 // Function BP_VIPInvitation_Fake.BP_VIPInvitation_Fake_C.ExecuteUbergraph_BP_VIPInvitation_Fake
 // 0x0008 (0x0008 - 0x0000)
 struct BP_VIPInvitation_Fake_C_ExecuteUbergraph_BP_VIPInvitation_Fake final
@@ -24,30 +51,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EEndPlayReason                                K2Node_Event_EndPlayReason;                        // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_VIPInvitation_Fake.BP_VIPInvitation_Fake_C.GetSensorComponent
-// 0x0008 (0x0008 - 0x0000)
-struct BP_VIPInvitation_Fake_C_GetSensorComponent final
-{
-public:
-	class USBZSensorComponent*                    ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_VIPInvitation_Fake.BP_VIPInvitation_Fake_C.GetSensorOutlineComponent
-// 0x0008 (0x0008 - 0x0000)
-struct BP_VIPInvitation_Fake_C_GetSensorOutlineComponent final
-{
-public:
-	class USBZOutlineComponent*                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_VIPInvitation_Fake.BP_VIPInvitation_Fake_C.ReceiveEndPlay
-// 0x0001 (0x0001 - 0x0000)
-struct BP_VIPInvitation_Fake_C_ReceiveEndPlay final
-{
-public:
-	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_VIPInvitation_Fake_C_ExecuteUbergraph_BP_VIPInvitation_Fake;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

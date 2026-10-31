@@ -44,17 +44,17 @@ public:
 	bool                                          GloveValid;                                        // 0x0481(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetGloveNameColor(const struct FLinearColor& DesiredColor);
-	void SetActiveGloveSlot(bool bIsActiveGloveSlot_SetActiveGloveSlot);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnInitialized();
-	void OnHover(bool bIsHovered);
-	void OnGloveSlotInitialized();
-	void OnFocused(bool bIsFocused);
-	void InitializeGloveVisuals();
-	void ExecuteUbergraph_WBP_UI_Inventory_GloveSlotButton(int32 EntryPoint);
+	void ButtonFocusedChanged(bool bInHasFocus);
 	void CanCustomize(bool* bCanCustomize);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
+	void ExecuteUbergraph_WBP_UI_Inventory_GloveSlotButton(int32 EntryPoint);
+	void InitializeGloveVisuals();
+	void OnFocused(bool bIsFocused);
+	void OnGloveSlotInitialized();
+	void OnHover(bool bIsHovered);
+	void OnInitialized();
+	void PreConstruct(bool IsDesignTime);
+	void SetActiveGloveSlot(bool bIsActiveGloveSlot);
+	void SetGloveNameColor(const struct FLinearColor& DesiredColor);
 
 public:
 	static class UClass* StaticClass()

@@ -16,67 +16,103 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_DyePack.BP_DyePack_C.BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// const class USBZBaseInteractableComponent*InteractableComponent_0                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_DyePack.BP_DyePack_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_DyePack_C::BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent_0, bool bInNewState)
+void ABP_DyePack_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DyePack_C", "BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_DyePack_C_BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
 
-	Parms.InteractableComponent_0 = InteractableComponent_0;
-	Parms.bInNewState = bInNewState;
+// Function BP_DyePack.BP_DyePack_C.ExecuteUbergraph_BP_DyePack
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_DyePack_C::ExecuteUbergraph_BP_DyePack(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_DyePack_C", "ExecuteUbergraph_BP_DyePack", FuncInfo);
+
+	Params::BP_DyePack_C_ExecuteUbergraph_BP_DyePack Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_DyePack.BP_DyePack_C.BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// Function BP_DyePack.BP_DyePack_C.BP_OnECMJammedChanged
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsJammed_BP_OnECMJammedChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_DyePack_C::BP_OnECMJammedChanged(bool bIsJammed_BP_OnECMJammedChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnECMJammedChanged", FnName));
+
+	Params::BP_DyePack_C_BP_OnECMJammedChanged Parms{};
+
+	Parms.bIsJammed_BP_OnECMJammedChanged = bIsJammed_BP_OnECMJammedChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_DyePack.BP_DyePack_C.BP_OnBagConverted
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+
+void ABP_DyePack_C::BP_OnBagConverted()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnBagConverted", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_DyePack.BP_DyePack_C.BndEvt__BP_DyePack_PropDamageComponent_K2Node_ComponentBoundEvent_2_SBZPropDamageHitsSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// class UActorComponent*                  PoolComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   Hits                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZPropDamageContext&     DamageContext                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+
+void ABP_DyePack_C::BndEvt__BP_DyePack_PropDamageComponent_K2Node_ComponentBoundEvent_2_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_DyePack_PropDamageComponent_K2Node_ComponentBoundEvent_2_SBZPropDamageHitsSignature__DelegateSignature", FnName));
+
+	Params::BP_DyePack_C_BndEvt__BP_DyePack_PropDamageComponent_K2Node_ComponentBoundEvent_2_SBZPropDamageHitsSignature__DelegateSignature Parms{};
+
+	Parms.PoolComponent = PoolComponent;
+	Parms.Hits = Hits;
+	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.DamageContext = std::move(DamageContext);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_DyePack.BP_DyePack_C.BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_DyePack_C::BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_DyePack_C::BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DyePack_C", "BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_DyePack_C_BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_DyePack.BP_DyePack_C.BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_DyePack_C::BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DyePack_C", "BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_DyePack_C_BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature Parms{};
+	Params::BP_DyePack_C_BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature Parms{};
 
 	Parms.Interactable = Interactable;
 	Parms.Interactor = Interactor;
@@ -95,10 +131,8 @@ void ABP_DyePack_C::BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBou
 
 void ABP_DyePack_C::BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DyePack_C", "BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature", FnName));
 
 	Params::BP_DyePack_C_BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature Parms{};
 
@@ -110,21 +144,19 @@ void ABP_DyePack_C::BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBou
 }
 
 
-// Function BP_DyePack.BP_DyePack_C.BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature
+// Function BP_DyePack.BP_DyePack_C.BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_DyePack_C::BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_DyePack_C::BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DyePack_C", "BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_DyePack_C_BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature Parms{};
+	Params::BP_DyePack_C_BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature Parms{};
 
 	Parms.Interactable = Interactable;
 	Parms.Interactor = Interactor;
@@ -134,55 +166,43 @@ void ABP_DyePack_C::BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBou
 }
 
 
-// Function BP_DyePack.BP_DyePack_C.BP_OnBagConverted
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
-
-void ABP_DyePack_C::BP_OnBagConverted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DyePack_C", "BP_OnBagConverted");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_DyePack.BP_DyePack_C.BP_OnECMJammedChanged
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+// Function BP_DyePack.BP_DyePack_C.BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// bool                                    bIsJammed                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_DyePack_C::BP_OnECMJammedChanged(bool bIsJammed)
+void ABP_DyePack_C::BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DyePack_C", "BP_OnECMJammedChanged");
+	Params::BP_DyePack_C_BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
 
-	Params::BP_DyePack_C_BP_OnECMJammedChanged Parms{};
-
-	Parms.bIsJammed = bIsJammed;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_DyePack.BP_DyePack_C.ExecuteUbergraph_BP_DyePack
-// (Final, UbergraphFunction)
+// Function BP_DyePack.BP_DyePack_C.BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZBaseInteractableComponent*InteractableComponent                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_DyePack_C::ExecuteUbergraph_BP_DyePack(int32 EntryPoint)
+void ABP_DyePack_C::BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DyePack_C", "ExecuteUbergraph_BP_DyePack");
+	Params::BP_DyePack_C_BndEvt__BP_DieBack_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
 
-	Params::BP_DyePack_C_ExecuteUbergraph_BP_DyePack Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.InteractableComponent = InteractableComponent;
+	Parms.bInNewState = bInNewState;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

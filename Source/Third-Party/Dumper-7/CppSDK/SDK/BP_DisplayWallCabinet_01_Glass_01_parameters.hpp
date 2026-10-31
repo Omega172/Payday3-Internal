@@ -19,34 +19,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_DisplayWallCabinet_01_Glass_01.BP_DisplayWallCabinet_01_Glass_01_C.BndEvt__BP_DisplayWallCabinet_01_Glass_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_DisplayWallCabinet_01_Glass_01_C_BndEvt__BP_DisplayWallCabinet_01_Glass_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_DisplayWallCabinet_01_Glass_01.BP_DisplayWallCabinet_01_Glass_01_C.BP_OnCuttingEnabledChanged
-// 0x0001 (0x0001 - 0x0000)
-struct BP_DisplayWallCabinet_01_Glass_01_C_BP_OnCuttingEnabledChanged final
-{
-public:
-	bool                                          bCuttingEnabled;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_DisplayWallCabinet_01_Glass_01.BP_DisplayWallCabinet_01_Glass_01_C.BP_OnStateChanged
-// 0x0003 (0x0003 - 0x0000)
-struct BP_DisplayWallCabinet_01_Glass_01_C_BP_OnStateChanged final
-{
-public:
-	ESBZDisplayCaseState                          OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZDisplayCaseState                          NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_DisplayWallCabinet_01_Glass_01.BP_DisplayWallCabinet_01_Glass_01_C.ExecuteUbergraph_BP_DisplayWallCabinet_01_Glass_01
 // 0x0180 (0x0180 - 0x0000)
 struct BP_DisplayWallCabinet_01_Glass_01_C_ExecuteUbergraph_BP_DisplayWallCabinet_01_Glass_01 final
@@ -73,6 +45,38 @@ public:
 	uint8                                         Pad_179[0x3];                                      // 0x0179(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_PostEvent_ReturnValue_1;                  // 0x017C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_DisplayWallCabinet_01_Glass_01_C_ExecuteUbergraph_BP_DisplayWallCabinet_01_Glass_01;
+
+// Function BP_DisplayWallCabinet_01_Glass_01.BP_DisplayWallCabinet_01_Glass_01_C.BP_OnStateChanged
+// 0x0003 (0x0003 - 0x0000)
+struct BP_DisplayWallCabinet_01_Glass_01_C_BP_OnStateChanged final
+{
+public:
+	ESBZDisplayCaseState                          OldState_BP_OnStateChanged;                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZDisplayCaseState                          NewState_BP_OnStateChanged;                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_BP_OnStateChanged;                    // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_DisplayWallCabinet_01_Glass_01_C_BP_OnStateChanged;
+
+// Function BP_DisplayWallCabinet_01_Glass_01.BP_DisplayWallCabinet_01_Glass_01_C.BP_OnCuttingEnabledChanged
+// 0x0001 (0x0001 - 0x0000)
+struct BP_DisplayWallCabinet_01_Glass_01_C_BP_OnCuttingEnabledChanged final
+{
+public:
+	bool                                          bCuttingEnabled_BP_OnCuttingEnabledChanged;        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_DisplayWallCabinet_01_Glass_01_C_BP_OnCuttingEnabledChanged;
+
+// Function BP_DisplayWallCabinet_01_Glass_01.BP_DisplayWallCabinet_01_Glass_01_C.BndEvt__BP_DisplayWallCabinet_01_Glass_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_DisplayWallCabinet_01_Glass_01_C_BndEvt__BP_DisplayWallCabinet_01_Glass_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_DisplayWallCabinet_01_Glass_01_C_BndEvt__BP_DisplayWallCabinet_01_Glass_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

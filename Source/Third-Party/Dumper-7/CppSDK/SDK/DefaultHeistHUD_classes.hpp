@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ADefaultHeistHUD_C>();
 	}
 };
+DUMPER7_ASSERTS_ADefaultHeistHUD_C;
 
 SDK_NAMESPACE_END

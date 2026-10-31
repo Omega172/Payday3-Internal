@@ -49,9 +49,9 @@ public:
 	int32                                         HitAmount;                                         // 0x0420(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
 	void ExecuteUbergraph_BP_ReplicatedBinaryActor_Skylight(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
+	void BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
 
 public:
 	static class UClass* StaticClass()
@@ -67,5 +67,6 @@ public:
 		return GetDefaultObjImpl<ABP_ReplicatedBinaryActor_Skylight_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ReplicatedBinaryActor_Skylight_C;
 
 SDK_NAMESPACE_END

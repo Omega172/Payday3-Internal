@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AF1_Entrance_01_Glass_05_breakable_C>();
 	}
 };
+DUMPER7_ASSERTS_AF1_Entrance_01_Glass_05_breakable_C;
 
 SDK_NAMESPACE_END

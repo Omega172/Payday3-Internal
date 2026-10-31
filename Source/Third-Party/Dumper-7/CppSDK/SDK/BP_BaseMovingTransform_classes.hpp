@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Starbreeze_classes.hpp"
 #include "AkAudio_structs.hpp"
 
@@ -41,11 +41,11 @@ public:
 	class UAkAudioEvent*                          akEvent;                                           // 0x0460(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_BaseMovingTransform(int32 EntryPoint);
-	void MoveTimeLine__FinishedFunc();
-	void MoveTimeLine__UpdateFunc();
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
 	void UserConstructionScript();
+	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
+	void MoveTimeLine__UpdateFunc();
+	void MoveTimeLine__FinishedFunc();
+	void ExecuteUbergraph_BP_BaseMovingTransform(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -62,5 +62,6 @@ public:
 	}
 };
 #pragma pack(pop)
+DUMPER7_ASSERTS_ABP_BaseMovingTransform_C;
 
 SDK_NAMESPACE_END

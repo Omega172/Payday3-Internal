@@ -39,17 +39,17 @@ public:
 	double                                        overrideOpenAngle;                                 // 0x03C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_7_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
-	void BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZPropDamage_K2Node_ComponentBoundEvent_4_SBZPropDamageHitsRejectSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, int32 ChangedHits);
-	void BndEvt__BP_ReplicatedBinaryActorVent_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_ReplicatedBinaryActor_Ventilation(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void rotateAroundAxis(const struct FVector2D& pivot, const struct FVector2D& point, double angle, struct FVector2D* rotatedPoint);
 	void rotateDoorCollisionAroundBase(double InputPin);
+	void rotateAroundAxis(const struct FVector2D& pivot, const struct FVector2D& point, double angle, struct FVector2D* rotatedPoint);
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_ReplicatedBinaryActor_Ventilation(int32 EntryPoint);
+	void BndEvt__BP_ReplicatedBinaryActorVent_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZPropDamage_K2Node_ComponentBoundEvent_4_SBZPropDamageHitsRejectSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, int32 ChangedHits);
+	void BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
+	void BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_7_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -65,5 +65,6 @@ public:
 		return GetDefaultObjImpl<ABP_ReplicatedBinaryActor_Ventilation_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ReplicatedBinaryActor_Ventilation_C;
 
 SDK_NAMESPACE_END

@@ -24,8 +24,8 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteUbergraph_BP_NiagaraWwiseActor_Cockroaches(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_NiagaraWwiseActor_Cockroaches(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -41,5 +41,6 @@ public:
 		return GetDefaultObjImpl<ABP_NiagaraWwiseActor_Cockroaches_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_NiagaraWwiseActor_Cockroaches_C;
 
 SDK_NAMESPACE_END

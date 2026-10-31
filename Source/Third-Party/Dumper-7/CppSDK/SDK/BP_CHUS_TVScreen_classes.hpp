@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "Enum_TVScreenStates_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
-#include "Enum_TVScreenStates_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -64,15 +64,15 @@ public:
 	int32                                         Damage_taken;                                      // 0x0478(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_CHUS_TVScreen_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
-	void DefaultText();
-	void ExecuteUbergraph_BP_CHUS_TVScreen(int32 EntryPoint);
-	void FirstDay();
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void ReceiveBeginPlay();
-	void SecondDay();
-	void SetStateFunction(Enum_TVScreenStates State_0);
 	void UserConstructionScript();
+	void SetStateFunction(Enum_TVScreenStates State);
+	void SecondDay();
+	void ReceiveBeginPlay();
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void FirstDay();
+	void ExecuteUbergraph_BP_CHUS_TVScreen(int32 EntryPoint);
+	void DefaultText();
+	void BndEvt__BP_CHUS_TVScreen_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 
 public:
 	static class UClass* StaticClass()
@@ -88,5 +88,6 @@ public:
 		return GetDefaultObjImpl<ABP_CHUS_TVScreen_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CHUS_TVScreen_C;
 
 SDK_NAMESPACE_END

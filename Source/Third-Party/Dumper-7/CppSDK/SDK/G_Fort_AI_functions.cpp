@@ -16,468 +16,752 @@
 
 SDK_NAMESPACE_START
 
-// Function G_Fort_AI.G_Fort_AI_C.ActionPhaseStarted
-// (Event, Public, BlueprintEvent)
-
-void AG_Fort_AI_C::ActionPhaseStarted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "ActionPhaseStarted");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.ActivateSWATHelicopter
+// Function G_Fort_AI.G_Fort_AI_C.WinchPullingDone
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Fort_AI_C::ActivateSWATHelicopter()
+void AG_Fort_AI_C::WinchPullingDone()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "ActivateSWATHelicopter");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"WinchPullingDone", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_AI.G_Fort_AI_C.BlackScreenStarted
+// Function G_Fort_AI.G_Fort_AI_C.WhatLockerHasSoap
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::WhatLockerHasSoap()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"WhatLockerHasSoap", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.SpawnTalkingCops
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::SpawnTalkingCops()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnTalkingCops", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.SpawnGuards
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::SpawnGuards()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnGuards", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.SpawnEmployees
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::SpawnEmployees()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnEmployees", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.SpawnCivillians
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::SpawnCivillians()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnCivillians", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.ShowPPCarKeylocations
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::ShowPPCarKeylocations()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ShowPPCarKeylocations", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.SetRandomRoom4Secure
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::SetRandomRoom4Secure()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetRandomRoom4Secure", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.SetRandomRoom3Secure
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::SetRandomRoom3Secure()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetRandomRoom3Secure", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.SetRandomRoom2Secure
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::SetRandomRoom2Secure()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetRandomRoom2Secure", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.SetRandomRoom1Secure
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::SetRandomRoom1Secure()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetRandomRoom1Secure", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.ServerRoomIs4
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::ServerRoomIs4()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ServerRoomIs4", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.ServerRoomIs3
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::ServerRoomIs3()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ServerRoomIs3", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.ServerRoomIs2
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::ServerRoomIs2()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ServerRoomIs2", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.ServerRoomIs1
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::ServerRoomIs1()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ServerRoomIs1", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.SecurityRoomOffice
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::SecurityRoomOffice()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SecurityRoomOffice", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.PickedGate2
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::PickedGate2()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PickedGate2", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.PickedGate1
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::PickedGate1()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PickedGate1", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.OnPreplanningAssetsTagsApplied
+// (Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTagContainer&     PreplanningTagContainer_OnPreplanningAssetsTagsApplied (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void AG_Fort_AI_C::OnPreplanningAssetsTagsApplied(const struct FGameplayTagContainer& PreplanningTagContainer_OnPreplanningAssetsTagsApplied)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPreplanningAssetsTagsApplied", FnName));
+
+	Params::G_Fort_AI_C_OnPreplanningAssetsTagsApplied Parms{};
+
+	Parms.PreplanningTagContainer_OnPreplanningAssetsTagsApplied = std::move(PreplanningTagContainer_OnPreplanningAssetsTagsApplied);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.NegoationOver
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::NegoationOver()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"NegoationOver", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.LieutenantRoomSpawn3
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::LieutenantRoomSpawn3()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"LieutenantRoomSpawn3", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.LieutenantRoomSpawn2
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::LieutenantRoomSpawn2()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"LieutenantRoomSpawn2", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.LieutenantRoomSpawn1
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::LieutenantRoomSpawn1()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"LieutenantRoomSpawn1", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.LieutenantCarIs3
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::LieutenantCarIs3()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"LieutenantCarIs3", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.LieutenantCarIs2
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::LieutenantCarIs2()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"LieutenantCarIs2", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.LieutenantCarIs1
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::LieutenantCarIs1()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"LieutenantCarIs1", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.Key'sInCar
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::Key_sInCar()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Key'sInCar", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.KeptJeremy5
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::KeptJeremy5()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"KeptJeremy5", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.KeptJeremy4
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::KeptJeremy4()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"KeptJeremy4", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.KeptJeremy3
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::KeptJeremy3()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"KeptJeremy3", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.KeptJeremy2
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::KeptJeremy2()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"KeptJeremy2", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.KeptJeremy1
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::KeptJeremy1()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"KeptJeremy1", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.KeptClearance4
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::KeptClearance4()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"KeptClearance4", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.KeptClearance3
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::KeptClearance3()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"KeptClearance3", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.KeptClearance2
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::KeptClearance2()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"KeptClearance2", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.KeptClearance1
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::KeptClearance1()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"KeptClearance1", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.HeistStateChanged
 // (Event, Public, BlueprintEvent)
+// Parameters:
+// EPD3HeistState                          OldHeistState_HeistStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPD3HeistState                          CurrentHeistState_HeistStateChanged                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Fort_AI_C::BlackScreenStarted()
+void AG_Fort_AI_C::HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HeistStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BlackScreenStarted");
+	Params::G_Fort_AI_C_HeistStateChanged Parms{};
+
+	Parms.OldHeistState_HeistStateChanged = OldHeistState_HeistStateChanged;
+	Parms.CurrentHeistState_HeistStateChanged = CurrentHeistState_HeistStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.ExecuteUbergraph_G_Fort_AI
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Fort_AI_C::ExecuteUbergraph_G_Fort_AI(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_Fort_AI_C", "ExecuteUbergraph_G_Fort_AI", FuncInfo);
+
+	Params::G_Fort_AI_C_ExecuteUbergraph_G_Fort_AI Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.EscapeGarage1
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::EscapeGarage1()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EscapeGarage1", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_BP_cardboardBox_PPKey1_K2Node_ActorBoundEvent_27_onOpened__DelegateSignature
-// (BlueprintEvent)
+// Function G_Fort_AI.G_Fort_AI_C.EnableServerDrill
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Fort_AI_C::BndEvt__G_Fort_AI_BP_cardboardBox_PPKey1_K2Node_ActorBoundEvent_27_onOpened__DelegateSignature()
+void AG_Fort_AI_C::EnableServerDrill()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__G_Fort_AI_BP_cardboardBox_PPKey1_K2Node_ActorBoundEvent_27_onOpened__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EnableServerDrill", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_BP_cardboardBox_PPKey2_K2Node_ActorBoundEvent_25_onOpened__DelegateSignature
-// (BlueprintEvent)
+// Function G_Fort_AI.G_Fort_AI_C.EnablePPCarkeyBox
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Fort_AI_C::BndEvt__G_Fort_AI_BP_cardboardBox_PPKey2_K2Node_ActorBoundEvent_25_onOpened__DelegateSignature()
+void AG_Fort_AI_C::EnablePPCarkeyBox()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__G_Fort_AI_BP_cardboardBox_PPKey2_K2Node_ActorBoundEvent_25_onOpened__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EnablePPCarkeyBox", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_BP_cardboardBox_PPKey3_K2Node_ActorBoundEvent_28_onOpened__DelegateSignature
-// (BlueprintEvent)
+// Function G_Fort_AI.G_Fort_AI_C.EnablePoliceRoofSpawns
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Fort_AI_C::BndEvt__G_Fort_AI_BP_cardboardBox_PPKey3_K2Node_ActorBoundEvent_28_onOpened__DelegateSignature()
+void AG_Fort_AI_C::EnablePoliceRoofSpawns()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__G_Fort_AI_BP_cardboardBox_PPKey3_K2Node_ActorBoundEvent_28_onOpened__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EnablePoliceRoofSpawns", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_BP_CarKeysBox_1_K2Node_ActorBoundEvent_29_onObjectPickedUp__DelegateSignature
-// (BlueprintEvent)
+// Function G_Fort_AI.G_Fort_AI_C.EnableElevatorSpawns
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Fort_AI_C::BndEvt__G_Fort_AI_BP_CarKeysBox_1_K2Node_ActorBoundEvent_29_onObjectPickedUp__DelegateSignature()
+void AG_Fort_AI_C::EnableElevatorSpawns()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__G_Fort_AI_BP_CarKeysBox_1_K2Node_ActorBoundEvent_29_onObjectPickedUp__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EnableElevatorSpawns", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_BP_CarKeysBox_2_K2Node_ActorBoundEvent_30_onObjectPickedUp__DelegateSignature
-// (BlueprintEvent)
+// Function G_Fort_AI.G_Fort_AI_C.EnableDonutEvent
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Fort_AI_C::BndEvt__G_Fort_AI_BP_CarKeysBox_2_K2Node_ActorBoundEvent_30_onObjectPickedUp__DelegateSignature()
+void AG_Fort_AI_C::EnableDonutEvent()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__G_Fort_AI_BP_CarKeysBox_2_K2Node_ActorBoundEvent_30_onObjectPickedUp__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EnableDonutEvent", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_BP_CarKeysBox_3_K2Node_ActorBoundEvent_31_onObjectPickedUp__DelegateSignature
-// (BlueprintEvent)
+// Function G_Fort_AI.G_Fort_AI_C.DonutLocation_SetInteractionOn
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Fort_AI_C::BndEvt__G_Fort_AI_BP_CarKeysBox_3_K2Node_ActorBoundEvent_31_onObjectPickedUp__DelegateSignature()
+void AG_Fort_AI_C::DonutLocation_SetInteractionOn()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__G_Fort_AI_BP_CarKeysBox_3_K2Node_ActorBoundEvent_31_onObjectPickedUp__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DonutLocation_SetInteractionOn", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_BP_PocketDrill_1_K2Node_ActorBoundEvent_20_SBZBreachingEquipmentDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
+// Function G_Fort_AI.G_Fort_AI_C.DonutLocation_SetInteractionOff
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Fort_AI_C::BndEvt__G_Fort_AI_BP_PocketDrill_1_K2Node_ActorBoundEvent_20_SBZBreachingEquipmentDelegate__DelegateSignature()
+void AG_Fort_AI_C::DonutLocation_SetInteractionOff()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__G_Fort_AI_BP_PocketDrill_1_K2Node_ActorBoundEvent_20_SBZBreachingEquipmentDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DonutLocation_SetInteractionOff", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_BP_PocketDrill_2_K2Node_ActorBoundEvent_21_SBZBreachingEquipmentDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
+// Function G_Fort_AI.G_Fort_AI_C.DonutEaten
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ASBZPowerUp*                      PowerUp                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Fort_AI_C::BndEvt__G_Fort_AI_BP_PocketDrill_2_K2Node_ActorBoundEvent_21_SBZBreachingEquipmentDelegate__DelegateSignature()
+void AG_Fort_AI_C::DonutEaten(class ASBZPowerUp* PowerUp)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DonutEaten", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__G_Fort_AI_BP_PocketDrill_2_K2Node_ActorBoundEvent_21_SBZBreachingEquipmentDelegate__DelegateSignature");
+	Params::G_Fort_AI_C_DonutEaten Parms{};
+
+	Parms.PowerUp = PowerUp;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.DepoGatesOpen
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_AI_C::DepoGatesOpen()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DepoGatesOpen", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_BP_PocketDrill_3_K2Node_ActorBoundEvent_22_SBZBreachingEquipmentDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
+// Function G_Fort_AI.G_Fort_AI_C.DepoGatesClosed
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Fort_AI_C::BndEvt__G_Fort_AI_BP_PocketDrill_3_K2Node_ActorBoundEvent_22_SBZBreachingEquipmentDelegate__DelegateSignature()
+void AG_Fort_AI_C::DepoGatesClosed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__G_Fort_AI_BP_PocketDrill_3_K2Node_ActorBoundEvent_22_SBZBreachingEquipmentDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DepoGatesClosed", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_BP_PocketDrill_4_K2Node_ActorBoundEvent_23_SBZBreachingEquipmentDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
+// Function G_Fort_AI.G_Fort_AI_C.DebugPP
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Fort_AI_C::BndEvt__G_Fort_AI_BP_PocketDrill_4_K2Node_ActorBoundEvent_23_SBZBreachingEquipmentDelegate__DelegateSignature()
+void AG_Fort_AI_C::DebugPP()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__G_Fort_AI_BP_PocketDrill_4_K2Node_ActorBoundEvent_23_SBZBreachingEquipmentDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DebugPP", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_BP_PowerUpDonutBox_3_K2Node_ActorBoundEvent_17_SBZPowerUpChargesStateDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// ESBZPowerUpChargesState                 OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZPowerUpChargesState                 NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function G_Fort_AI.G_Fort_AI_C.ChangeLeadGuardRoute3
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Fort_AI_C::BndEvt__G_Fort_AI_BP_PowerUpDonutBox_3_K2Node_ActorBoundEvent_17_SBZPowerUpChargesStateDelegate__DelegateSignature(ESBZPowerUpChargesState OldState, ESBZPowerUpChargesState NewState)
+void AG_Fort_AI_C::ChangeLeadGuardRoute3()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ChangeLeadGuardRoute3", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__G_Fort_AI_BP_PowerUpDonutBox_3_K2Node_ActorBoundEvent_17_SBZPowerUpChargesStateDelegate__DelegateSignature");
-
-	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_BP_PowerUpDonutBox_3_K2Node_ActorBoundEvent_17_SBZPowerUpChargesStateDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZFilteredTrigger_Challenge2_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function G_Fort_AI.G_Fort_AI_C.ChangeLeadGuardRoute2
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZFilteredTrigger_Challenge2_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+void AG_Fort_AI_C::ChangeLeadGuardRoute2()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ChangeLeadGuardRoute2", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__G_Fort_AI_SBZFilteredTrigger_Challenge2_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature");
-
-	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZFilteredTrigger_Challenge2_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Identifier = Identifier;
-	Parms.Actor = Actor;
-	Parms.CurrentTotalActors = CurrentTotalActors;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Employee16_K2Node_ActorBoundEvent_26_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function G_Fort_AI.G_Fort_AI_C.ChangeLeadGuardRoute1
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Employee16_K2Node_ActorBoundEvent_26_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+void AG_Fort_AI_C::ChangeLeadGuardRoute1()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ChangeLeadGuardRoute1", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Employee16_K2Node_ActorBoundEvent_26_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Employee16_K2Node_ActorBoundEvent_26_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Employee17_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function G_Fort_AI.G_Fort_AI_C.CarDoorOpen
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Employee17_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+void AG_Fort_AI_C::CarDoorOpen()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CarDoorOpen", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Employee17_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Employee17_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard11_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function G_Fort_AI.G_Fort_AI_C.CaptainDealtWith
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard11_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+void AG_Fort_AI_C::CaptainDealtWith()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CaptainDealtWith", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard11_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard11_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard12_K2Node_ActorBoundEvent_7_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function G_Fort_AI.G_Fort_AI_C.CallSwatVans
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard12_K2Node_ActorBoundEvent_7_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+void AG_Fort_AI_C::CallSwatVans()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CallSwatVans", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard12_K2Node_ActorBoundEvent_7_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard12_K2Node_ActorBoundEvent_7_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard4_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function G_Fort_AI.G_Fort_AI_C.BreachGarage2
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard4_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+void AG_Fort_AI_C::BreachGarage2()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BreachGarage2", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard4_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard4_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard5_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function G_Fort_AI.G_Fort_AI_C.BreachGarage1
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard5_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+void AG_Fort_AI_C::BreachGarage1()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BreachGarage1", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard5_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard5_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard6_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function G_Fort_AI.G_Fort_AI_C.BreachEvidenceRoom
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard6_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+void AG_Fort_AI_C::BreachEvidenceRoom()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BreachEvidenceRoom", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard6_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard6_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard7_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard7_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard7_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard7_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_LeadGuard2_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_LeadGuard2_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_LeadGuard2_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_LeadGuard2_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPlayerTriggerVolume_Test2_K2Node_ActorBoundEvent_19_ActorBeginOverlapSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class AActor*                           OverlappedActor                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZPlayerTriggerVolume_Test2_K2Node_ActorBoundEvent_19_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__G_Fort_AI_SBZPlayerTriggerVolume_Test2_K2Node_ActorBoundEvent_19_ActorBeginOverlapSignature__DelegateSignature");
-
-	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPlayerTriggerVolume_Test2_K2Node_ActorBoundEvent_19_ActorBeginOverlapSignature__DelegateSignature Parms{};
-
-	Parms.OverlappedActor = OverlappedActor;
-	Parms.OtherActor = OtherActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_14_SBZSplineOnEndReached__DelegateSignature
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_43_SBZSplineOnEnter__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_14_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+void AG_Fort_AI_C::BndEvt__SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_43_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_43_SBZSplineOnEnter__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_14_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_14_SBZSplineOnEndReached__DelegateSignature Parms{};
+	Params::G_Fort_AI_C_BndEvt__SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_43_SBZSplineOnEnter__DelegateSignature Parms{};
 
 	Parms.Spline = Spline;
 	Parms.Actor = Actor;
@@ -486,130 +770,18 @@ void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders1_K2Node_Ac
 }
 
 
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_15_SBZSplineOnEndReached__DelegateSignature
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_42_SBZSplineOnEnter__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_15_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+void AG_Fort_AI_C::BndEvt__SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_42_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_42_SBZSplineOnEnter__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_15_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_15_SBZSplineOnEndReached__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_0_SBZSplineOnEnter__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_0_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_0_SBZSplineOnEnter__DelegateSignature");
-
-	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_0_SBZSplineOnEnter__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_16_SBZSplineOnEndReached__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_16_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_16_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_16_SBZSplineOnEndReached__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart1_K2Node_ActorBoundEvent_11_SBZSplineOnEndReached__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart1_K2Node_ActorBoundEvent_11_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart1_K2Node_ActorBoundEvent_11_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart1_K2Node_ActorBoundEvent_11_SBZSplineOnEndReached__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart2_K2Node_ActorBoundEvent_12_SBZSplineOnEndReached__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart2_K2Node_ActorBoundEvent_12_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart2_K2Node_ActorBoundEvent_12_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart2_K2Node_ActorBoundEvent_12_SBZSplineOnEndReached__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart3_K2Node_ActorBoundEvent_13_SBZSplineOnEndReached__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart3_K2Node_ActorBoundEvent_13_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart3_K2Node_ActorBoundEvent_13_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart3_K2Node_ActorBoundEvent_13_SBZSplineOnEndReached__DelegateSignature Parms{};
+	Params::G_Fort_AI_C_BndEvt__SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_42_SBZSplineOnEnter__DelegateSignature Parms{};
 
 	Parms.Spline = Spline;
 	Parms.Actor = Actor;
@@ -626,10 +798,8 @@ void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart3_K2Node
 
 void AG_Fort_AI_C::BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
 
 	Params::G_Fort_AI_C_BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
 
@@ -640,20 +810,18 @@ void AG_Fort_AI_C::BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_Lea
 }
 
 
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_42_SBZSplineOnEnter__DelegateSignature
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart3_K2Node_ActorBoundEvent_13_SBZSplineOnEndReached__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Fort_AI_C::BndEvt__SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_42_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart3_K2Node_ActorBoundEvent_13_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart3_K2Node_ActorBoundEvent_13_SBZSplineOnEndReached__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_42_SBZSplineOnEnter__DelegateSignature");
-
-	Params::G_Fort_AI_C_BndEvt__SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_42_SBZSplineOnEnter__DelegateSignature Parms{};
+	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart3_K2Node_ActorBoundEvent_13_SBZSplineOnEndReached__DelegateSignature Parms{};
 
 	Parms.Spline = Spline;
 	Parms.Actor = Actor;
@@ -662,20 +830,18 @@ void AG_Fort_AI_C::BndEvt__SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEv
 }
 
 
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_43_SBZSplineOnEnter__DelegateSignature
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart2_K2Node_ActorBoundEvent_12_SBZSplineOnEndReached__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Fort_AI_C::BndEvt__SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_43_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart2_K2Node_ActorBoundEvent_12_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart2_K2Node_ActorBoundEvent_12_SBZSplineOnEndReached__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BndEvt__SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_43_SBZSplineOnEnter__DelegateSignature");
-
-	Params::G_Fort_AI_C_BndEvt__SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_43_SBZSplineOnEnter__DelegateSignature Parms{};
+	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart2_K2Node_ActorBoundEvent_12_SBZSplineOnEndReached__DelegateSignature Parms{};
 
 	Parms.Spline = Spline;
 	Parms.Actor = Actor;
@@ -684,853 +850,499 @@ void AG_Fort_AI_C::BndEvt__SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEv
 }
 
 
-// Function G_Fort_AI.G_Fort_AI_C.BreachEvidenceRoom
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::BreachEvidenceRoom()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BreachEvidenceRoom");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.BreachGarage1
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::BreachGarage1()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BreachGarage1");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.BreachGarage2
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::BreachGarage2()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "BreachGarage2");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.CallSwatVans
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::CallSwatVans()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "CallSwatVans");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.CaptainDealtWith
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::CaptainDealtWith()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "CaptainDealtWith");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.CarDoorOpen
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::CarDoorOpen()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "CarDoorOpen");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.ChangeLeadGuardRoute1
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::ChangeLeadGuardRoute1()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "ChangeLeadGuardRoute1");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.ChangeLeadGuardRoute2
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::ChangeLeadGuardRoute2()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "ChangeLeadGuardRoute2");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.ChangeLeadGuardRoute3
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::ChangeLeadGuardRoute3()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "ChangeLeadGuardRoute3");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.DebugPP
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::DebugPP()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "DebugPP");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.DepoGatesClosed
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::DepoGatesClosed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "DepoGatesClosed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.DepoGatesOpen
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::DepoGatesOpen()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "DepoGatesOpen");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.DonutEaten
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart1_K2Node_ActorBoundEvent_11_SBZSplineOnEndReached__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// class ASBZPowerUp*                      PowerUp                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Fort_AI_C::DonutEaten(class ASBZPowerUp* PowerUp)
+void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart1_K2Node_ActorBoundEvent_11_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart1_K2Node_ActorBoundEvent_11_SBZSplineOnEndReached__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "DonutEaten");
+	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart1_K2Node_ActorBoundEvent_11_SBZSplineOnEndReached__DelegateSignature Parms{};
 
-	Params::G_Fort_AI_C_DonutEaten Parms{};
-
-	Parms.PowerUp = PowerUp;
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Fort_AI.G_Fort_AI_C.DonutLocation_SetInteractionOff
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::DonutLocation_SetInteractionOff()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "DonutLocation_SetInteractionOff");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.DonutLocation_SetInteractionOn
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::DonutLocation_SetInteractionOn()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "DonutLocation_SetInteractionOn");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.EnableDonutEvent
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::EnableDonutEvent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "EnableDonutEvent");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.EnableElevatorSpawns
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::EnableElevatorSpawns()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "EnableElevatorSpawns");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.EnablePoliceRoofSpawns
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::EnablePoliceRoofSpawns()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "EnablePoliceRoofSpawns");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.EnablePPCarkeyBox
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::EnablePPCarkeyBox()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "EnablePPCarkeyBox");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.EnableServerDrill
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::EnableServerDrill()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "EnableServerDrill");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.EscapeGarage1
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::EscapeGarage1()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "EscapeGarage1");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.ExecuteUbergraph_G_Fort_AI
-// (Final, UbergraphFunction, HasDefaults)
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_16_SBZSplineOnEndReached__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Fort_AI_C::ExecuteUbergraph_G_Fort_AI(int32 EntryPoint)
+void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_16_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_16_SBZSplineOnEndReached__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "ExecuteUbergraph_G_Fort_AI");
+	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_16_SBZSplineOnEndReached__DelegateSignature Parms{};
 
-	Params::G_Fort_AI_C_ExecuteUbergraph_G_Fort_AI Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Fort_AI.G_Fort_AI_C.HeistStateChanged
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_0_SBZSplineOnEnter__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_0_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_0_SBZSplineOnEnter__DelegateSignature", FnName));
+
+	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_0_SBZSplineOnEnter__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_15_SBZSplineOnEndReached__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_15_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_15_SBZSplineOnEndReached__DelegateSignature", FnName));
+
+	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_15_SBZSplineOnEndReached__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_14_SBZSplineOnEndReached__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_14_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_14_SBZSplineOnEndReached__DelegateSignature", FnName));
+
+	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_14_SBZSplineOnEndReached__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPlayerTriggerVolume_Test2_K2Node_ActorBoundEvent_19_ActorBeginOverlapSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class AActor*                           OverlappedActor                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZPlayerTriggerVolume_Test2_K2Node_ActorBoundEvent_19_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_AI_SBZPlayerTriggerVolume_Test2_K2Node_ActorBoundEvent_19_ActorBeginOverlapSignature__DelegateSignature", FnName));
+
+	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPlayerTriggerVolume_Test2_K2Node_ActorBoundEvent_19_ActorBeginOverlapSignature__DelegateSignature Parms{};
+
+	Parms.OverlappedActor = OverlappedActor;
+	Parms.OtherActor = OtherActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_LeadGuard2_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_LeadGuard2_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_LeadGuard2_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_LeadGuard2_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard7_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard7_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard7_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard7_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard6_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard6_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard6_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard6_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard5_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard5_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard5_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard5_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard4_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard4_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard4_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard4_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard12_K2Node_ActorBoundEvent_7_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard12_K2Node_ActorBoundEvent_7_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard12_K2Node_ActorBoundEvent_7_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard12_K2Node_ActorBoundEvent_7_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard11_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard11_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard11_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard11_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Employee17_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Employee17_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Employee17_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Employee17_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Employee16_K2Node_ActorBoundEvent_26_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Employee16_K2Node_ActorBoundEvent_26_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Employee16_K2Node_ActorBoundEvent_26_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Employee16_K2Node_ActorBoundEvent_26_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZFilteredTrigger_Challenge2_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Fort_AI_C::BndEvt__G_Fort_AI_SBZFilteredTrigger_Challenge2_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_AI_SBZFilteredTrigger_Challenge2_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_SBZFilteredTrigger_Challenge2_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Identifier = Identifier;
+	Parms.Actor = Actor;
+	Parms.CurrentTotalActors = CurrentTotalActors;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_BP_PowerUpDonutBox_3_K2Node_ActorBoundEvent_17_SBZPowerUpChargesStateDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+// Parameters:
+// ESBZPowerUpChargesState                 OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZPowerUpChargesState                 NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Fort_AI_C::BndEvt__G_Fort_AI_BP_PowerUpDonutBox_3_K2Node_ActorBoundEvent_17_SBZPowerUpChargesStateDelegate__DelegateSignature(ESBZPowerUpChargesState OldState, ESBZPowerUpChargesState NewState)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_AI_BP_PowerUpDonutBox_3_K2Node_ActorBoundEvent_17_SBZPowerUpChargesStateDelegate__DelegateSignature", FnName));
+
+	Params::G_Fort_AI_C_BndEvt__G_Fort_AI_BP_PowerUpDonutBox_3_K2Node_ActorBoundEvent_17_SBZPowerUpChargesStateDelegate__DelegateSignature Parms{};
+
+	Parms.OldState = OldState;
+	Parms.NewState = NewState;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_BP_PocketDrill_4_K2Node_ActorBoundEvent_23_SBZBreachingEquipmentDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+
+void AG_Fort_AI_C::BndEvt__G_Fort_AI_BP_PocketDrill_4_K2Node_ActorBoundEvent_23_SBZBreachingEquipmentDelegate__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_AI_BP_PocketDrill_4_K2Node_ActorBoundEvent_23_SBZBreachingEquipmentDelegate__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_BP_PocketDrill_3_K2Node_ActorBoundEvent_22_SBZBreachingEquipmentDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+
+void AG_Fort_AI_C::BndEvt__G_Fort_AI_BP_PocketDrill_3_K2Node_ActorBoundEvent_22_SBZBreachingEquipmentDelegate__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_AI_BP_PocketDrill_3_K2Node_ActorBoundEvent_22_SBZBreachingEquipmentDelegate__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_BP_PocketDrill_2_K2Node_ActorBoundEvent_21_SBZBreachingEquipmentDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+
+void AG_Fort_AI_C::BndEvt__G_Fort_AI_BP_PocketDrill_2_K2Node_ActorBoundEvent_21_SBZBreachingEquipmentDelegate__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_AI_BP_PocketDrill_2_K2Node_ActorBoundEvent_21_SBZBreachingEquipmentDelegate__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_BP_PocketDrill_1_K2Node_ActorBoundEvent_20_SBZBreachingEquipmentDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+
+void AG_Fort_AI_C::BndEvt__G_Fort_AI_BP_PocketDrill_1_K2Node_ActorBoundEvent_20_SBZBreachingEquipmentDelegate__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_AI_BP_PocketDrill_1_K2Node_ActorBoundEvent_20_SBZBreachingEquipmentDelegate__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_BP_CarKeysBox_3_K2Node_ActorBoundEvent_31_onObjectPickedUp__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Fort_AI_C::BndEvt__G_Fort_AI_BP_CarKeysBox_3_K2Node_ActorBoundEvent_31_onObjectPickedUp__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_AI_BP_CarKeysBox_3_K2Node_ActorBoundEvent_31_onObjectPickedUp__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_BP_CarKeysBox_2_K2Node_ActorBoundEvent_30_onObjectPickedUp__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Fort_AI_C::BndEvt__G_Fort_AI_BP_CarKeysBox_2_K2Node_ActorBoundEvent_30_onObjectPickedUp__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_AI_BP_CarKeysBox_2_K2Node_ActorBoundEvent_30_onObjectPickedUp__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_BP_CarKeysBox_1_K2Node_ActorBoundEvent_29_onObjectPickedUp__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Fort_AI_C::BndEvt__G_Fort_AI_BP_CarKeysBox_1_K2Node_ActorBoundEvent_29_onObjectPickedUp__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_AI_BP_CarKeysBox_1_K2Node_ActorBoundEvent_29_onObjectPickedUp__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_BP_cardboardBox_PPKey3_K2Node_ActorBoundEvent_28_onOpened__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Fort_AI_C::BndEvt__G_Fort_AI_BP_cardboardBox_PPKey3_K2Node_ActorBoundEvent_28_onOpened__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_AI_BP_cardboardBox_PPKey3_K2Node_ActorBoundEvent_28_onOpened__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_BP_cardboardBox_PPKey2_K2Node_ActorBoundEvent_25_onOpened__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Fort_AI_C::BndEvt__G_Fort_AI_BP_cardboardBox_PPKey2_K2Node_ActorBoundEvent_25_onOpened__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_AI_BP_cardboardBox_PPKey2_K2Node_ActorBoundEvent_25_onOpened__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_BP_cardboardBox_PPKey1_K2Node_ActorBoundEvent_27_onOpened__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Fort_AI_C::BndEvt__G_Fort_AI_BP_cardboardBox_PPKey1_K2Node_ActorBoundEvent_27_onOpened__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_AI_BP_cardboardBox_PPKey1_K2Node_ActorBoundEvent_27_onOpened__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_AI.G_Fort_AI_C.BlackScreenStarted
 // (Event, Public, BlueprintEvent)
-// Parameters:
-// EPD3HeistState                          OldHeistState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPD3HeistState                          CurrentHeistState                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Fort_AI_C::HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState)
+void AG_Fort_AI_C::BlackScreenStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "HeistStateChanged");
-
-	Params::G_Fort_AI_C_HeistStateChanged Parms{};
-
-	Parms.OldHeistState = OldHeistState;
-	Parms.CurrentHeistState = CurrentHeistState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.KeptClearance1
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::KeptClearance1()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "KeptClearance1");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BlackScreenStarted", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_AI.G_Fort_AI_C.KeptClearance2
+// Function G_Fort_AI.G_Fort_AI_C.ActivateSWATHelicopter
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Fort_AI_C::KeptClearance2()
+void AG_Fort_AI_C::ActivateSWATHelicopter()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "KeptClearance2");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateSWATHelicopter", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_AI.G_Fort_AI_C.KeptClearance3
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Fort_AI.G_Fort_AI_C.ActionPhaseStarted
+// (Event, Public, BlueprintEvent)
 
-void AG_Fort_AI_C::KeptClearance3()
+void AG_Fort_AI_C::ActionPhaseStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "KeptClearance3");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.KeptClearance4
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::KeptClearance4()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "KeptClearance4");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.KeptJeremy1
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::KeptJeremy1()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "KeptJeremy1");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.KeptJeremy2
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::KeptJeremy2()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "KeptJeremy2");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.KeptJeremy3
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::KeptJeremy3()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "KeptJeremy3");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.KeptJeremy4
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::KeptJeremy4()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "KeptJeremy4");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.KeptJeremy5
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::KeptJeremy5()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "KeptJeremy5");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.Key'sInCar
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::Key_sInCar()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "Key'sInCar");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.LieutenantCarIs1
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::LieutenantCarIs1()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "LieutenantCarIs1");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.LieutenantCarIs2
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::LieutenantCarIs2()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "LieutenantCarIs2");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.LieutenantCarIs3
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::LieutenantCarIs3()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "LieutenantCarIs3");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.LieutenantRoomSpawn1
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::LieutenantRoomSpawn1()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "LieutenantRoomSpawn1");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.LieutenantRoomSpawn2
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::LieutenantRoomSpawn2()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "LieutenantRoomSpawn2");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.LieutenantRoomSpawn3
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::LieutenantRoomSpawn3()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "LieutenantRoomSpawn3");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.NegoationOver
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::NegoationOver()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "NegoationOver");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.OnPreplanningAssetsTagsApplied
-// (Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FGameplayTagContainer&     PreplanningTagContainer                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void AG_Fort_AI_C::OnPreplanningAssetsTagsApplied(const struct FGameplayTagContainer& PreplanningTagContainer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "OnPreplanningAssetsTagsApplied");
-
-	Params::G_Fort_AI_C_OnPreplanningAssetsTagsApplied Parms{};
-
-	Parms.PreplanningTagContainer = std::move(PreplanningTagContainer);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.PickedGate1
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::PickedGate1()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "PickedGate1");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.PickedGate2
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::PickedGate2()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "PickedGate2");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.SecurityRoomOffice
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::SecurityRoomOffice()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "SecurityRoomOffice");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.ServerRoomIs1
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::ServerRoomIs1()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "ServerRoomIs1");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.ServerRoomIs2
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::ServerRoomIs2()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "ServerRoomIs2");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.ServerRoomIs3
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::ServerRoomIs3()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "ServerRoomIs3");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.ServerRoomIs4
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::ServerRoomIs4()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "ServerRoomIs4");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.SetRandomRoom1Secure
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::SetRandomRoom1Secure()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "SetRandomRoom1Secure");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.SetRandomRoom2Secure
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::SetRandomRoom2Secure()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "SetRandomRoom2Secure");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.SetRandomRoom3Secure
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::SetRandomRoom3Secure()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "SetRandomRoom3Secure");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.SetRandomRoom4Secure
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::SetRandomRoom4Secure()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "SetRandomRoom4Secure");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.ShowPPCarKeylocations
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::ShowPPCarKeylocations()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "ShowPPCarKeylocations");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.SpawnCivillians
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::SpawnCivillians()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "SpawnCivillians");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.SpawnEmployees
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::SpawnEmployees()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "SpawnEmployees");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.SpawnGuards
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::SpawnGuards()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "SpawnGuards");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.SpawnTalkingCops
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::SpawnTalkingCops()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "SpawnTalkingCops");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.WhatLockerHasSoap
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::WhatLockerHasSoap()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "WhatLockerHasSoap");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_AI.G_Fort_AI_C.WinchPullingDone
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_AI_C::WinchPullingDone()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_AI_C", "WinchPullingDone");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActionPhaseStarted", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

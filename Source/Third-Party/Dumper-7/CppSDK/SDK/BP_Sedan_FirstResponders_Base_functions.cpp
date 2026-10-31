@@ -16,37 +16,51 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Sedan_FirstResponders_Base.BP_Sedan_FirstResponders_Base_C.BndEvt__BP_Sedan_FirstResponders_Base_SplineFollowingComponent_K2Node_ComponentBoundEvent_0_SBZVehicleOnStarted__DelegateSignature
-// (BlueprintEvent)
+// Function BP_Sedan_FirstResponders_Base.BP_Sedan_FirstResponders_Base_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_Sedan_FirstResponders_Base_C::BndEvt__BP_Sedan_FirstResponders_Base_SplineFollowingComponent_K2Node_ComponentBoundEvent_0_SBZVehicleOnStarted__DelegateSignature()
+void ABP_Sedan_FirstResponders_Base_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Sedan_FirstResponders_Base_C", "BndEvt__BP_Sedan_FirstResponders_Base_SplineFollowingComponent_K2Node_ComponentBoundEvent_0_SBZVehicleOnStarted__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Sedan_FirstResponders_Base.BP_Sedan_FirstResponders_Base_C.CustomEvent_1
+// Function BP_Sedan_FirstResponders_Base.BP_Sedan_FirstResponders_Base_C.On End Of Spline
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZWheeledVehicle*               Vehicle                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Sedan_FirstResponders_Base_C::CustomEvent_1(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+void ABP_Sedan_FirstResponders_Base_C::On_End_Of_Spline(class ASBZWheeledVehicle* Vehicle, class ASBZSpline* Spline)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"On End Of Spline", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Sedan_FirstResponders_Base_C", "CustomEvent_1");
+	Params::BP_Sedan_FirstResponders_Base_C_On_End_Of_Spline Parms{};
 
-	Params::BP_Sedan_FirstResponders_Base_C_CustomEvent_1 Parms{};
+	Parms.Vehicle = Vehicle;
+	Parms.Spline = Spline;
 
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Sedan_FirstResponders_Base.BP_Sedan_FirstResponders_Base_C.ExecuteUbergraph_BP_Sedan_FirstResponders_Base
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Sedan_FirstResponders_Base_C::ExecuteUbergraph_BP_Sedan_FirstResponders_Base(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Sedan_FirstResponders_Base_C", "ExecuteUbergraph_BP_Sedan_FirstResponders_Base", FuncInfo);
+
+	Params::BP_Sedan_FirstResponders_Base_C_ExecuteUbergraph_BP_Sedan_FirstResponders_Base Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -60,10 +74,8 @@ void ABP_Sedan_FirstResponders_Base_C::CustomEvent_1(class APawn* SpawnedPawn, c
 
 void ABP_Sedan_FirstResponders_Base_C::CustomEvent_2(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Sedan_FirstResponders_Base_C", "CustomEvent_2");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CustomEvent_2", FnName));
 
 	Params::BP_Sedan_FirstResponders_Base_C_CustomEvent_2 Parms{};
 
@@ -74,57 +86,33 @@ void ABP_Sedan_FirstResponders_Base_C::CustomEvent_2(class APawn* SpawnedPawn, c
 }
 
 
-// Function BP_Sedan_FirstResponders_Base.BP_Sedan_FirstResponders_Base_C.ExecuteUbergraph_BP_Sedan_FirstResponders_Base
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Sedan_FirstResponders_Base_C::ExecuteUbergraph_BP_Sedan_FirstResponders_Base(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Sedan_FirstResponders_Base_C", "ExecuteUbergraph_BP_Sedan_FirstResponders_Base");
-
-	Params::BP_Sedan_FirstResponders_Base_C_ExecuteUbergraph_BP_Sedan_FirstResponders_Base Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Sedan_FirstResponders_Base.BP_Sedan_FirstResponders_Base_C.On End Of Spline
+// Function BP_Sedan_FirstResponders_Base.BP_Sedan_FirstResponders_Base_C.CustomEvent_1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class ASBZWheeledVehicle*               Vehicle                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Sedan_FirstResponders_Base_C::On_End_Of_Spline(class ASBZWheeledVehicle* Vehicle, class ASBZSpline* Spline)
+void ABP_Sedan_FirstResponders_Base_C::CustomEvent_1(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CustomEvent_1", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Sedan_FirstResponders_Base_C", "On End Of Spline");
+	Params::BP_Sedan_FirstResponders_Base_C_CustomEvent_1 Parms{};
 
-	Params::BP_Sedan_FirstResponders_Base_C_On_End_Of_Spline Parms{};
-
-	Parms.Vehicle = Vehicle;
-	Parms.Spline = Spline;
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_Sedan_FirstResponders_Base.BP_Sedan_FirstResponders_Base_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_Sedan_FirstResponders_Base.BP_Sedan_FirstResponders_Base_C.BndEvt__BP_Sedan_FirstResponders_Base_SplineFollowingComponent_K2Node_ComponentBoundEvent_0_SBZVehicleOnStarted__DelegateSignature
+// (BlueprintEvent)
 
-void ABP_Sedan_FirstResponders_Base_C::ReceiveBeginPlay()
+void ABP_Sedan_FirstResponders_Base_C::BndEvt__BP_Sedan_FirstResponders_Base_SplineFollowingComponent_K2Node_ComponentBoundEvent_0_SBZVehicleOnStarted__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Sedan_FirstResponders_Base_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Sedan_FirstResponders_Base_SplineFollowingComponent_K2Node_ComponentBoundEvent_0_SBZVehicleOnStarted__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

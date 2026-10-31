@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AVFX_Murk_C>();
 	}
 };
+DUMPER7_ASSERTS_AVFX_Murk_C;
 
 SDK_NAMESPACE_END

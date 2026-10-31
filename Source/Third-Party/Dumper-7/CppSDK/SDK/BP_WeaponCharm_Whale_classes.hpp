@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_WeaponCharm_Whale_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_WeaponCharm_Whale_C;
 
 SDK_NAMESPACE_END

@@ -16,77 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function G_FirstPlayable_Coverpoints.G_FirstPlayable_Coverpoints_C.ExecuteUbergraph_G_FirstPlayable_Coverpoints
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_FirstPlayable_Coverpoints_C::ExecuteUbergraph_G_FirstPlayable_Coverpoints(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_FirstPlayable_Coverpoints_C", "ExecuteUbergraph_G_FirstPlayable_Coverpoints");
-
-	Params::G_FirstPlayable_Coverpoints_C_ExecuteUbergraph_G_FirstPlayable_Coverpoints Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_FirstPlayable_Coverpoints.G_FirstPlayable_Coverpoints_C.Sharke_ClosetIsLeft
+// Function G_FirstPlayable_Coverpoints.G_FirstPlayable_Coverpoints_C.Sharke_ServerIsRight
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_FirstPlayable_Coverpoints_C::Sharke_ClosetIsLeft()
+void AG_FirstPlayable_Coverpoints_C::Sharke_ServerIsRight()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_FirstPlayable_Coverpoints_C", "Sharke_ClosetIsLeft");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_FirstPlayable_Coverpoints.G_FirstPlayable_Coverpoints_C.Sharke_ClosetIsRight
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_FirstPlayable_Coverpoints_C::Sharke_ClosetIsRight()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_FirstPlayable_Coverpoints_C", "Sharke_ClosetIsRight");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_FirstPlayable_Coverpoints.G_FirstPlayable_Coverpoints_C.Sharke_ITIsLeft
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_FirstPlayable_Coverpoints_C::Sharke_ITIsLeft()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_FirstPlayable_Coverpoints_C", "Sharke_ITIsLeft");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_FirstPlayable_Coverpoints.G_FirstPlayable_Coverpoints_C.Sharke_ITIsRight
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_FirstPlayable_Coverpoints_C::Sharke_ITIsRight()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_FirstPlayable_Coverpoints_C", "Sharke_ITIsRight");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Sharke_ServerIsRight", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,26 +33,76 @@ void AG_FirstPlayable_Coverpoints_C::Sharke_ITIsRight()
 
 void AG_FirstPlayable_Coverpoints_C::Sharke_ServerIsLeft()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_FirstPlayable_Coverpoints_C", "Sharke_ServerIsLeft");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Sharke_ServerIsLeft", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_FirstPlayable_Coverpoints.G_FirstPlayable_Coverpoints_C.Sharke_ServerIsRight
+// Function G_FirstPlayable_Coverpoints.G_FirstPlayable_Coverpoints_C.Sharke_ITIsRight
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_FirstPlayable_Coverpoints_C::Sharke_ServerIsRight()
+void AG_FirstPlayable_Coverpoints_C::Sharke_ITIsRight()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_FirstPlayable_Coverpoints_C", "Sharke_ServerIsRight");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Sharke_ITIsRight", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_FirstPlayable_Coverpoints.G_FirstPlayable_Coverpoints_C.Sharke_ITIsLeft
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_FirstPlayable_Coverpoints_C::Sharke_ITIsLeft()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Sharke_ITIsLeft", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_FirstPlayable_Coverpoints.G_FirstPlayable_Coverpoints_C.Sharke_ClosetIsRight
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_FirstPlayable_Coverpoints_C::Sharke_ClosetIsRight()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Sharke_ClosetIsRight", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_FirstPlayable_Coverpoints.G_FirstPlayable_Coverpoints_C.Sharke_ClosetIsLeft
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_FirstPlayable_Coverpoints_C::Sharke_ClosetIsLeft()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Sharke_ClosetIsLeft", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_FirstPlayable_Coverpoints.G_FirstPlayable_Coverpoints_C.ExecuteUbergraph_G_FirstPlayable_Coverpoints
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_FirstPlayable_Coverpoints_C::ExecuteUbergraph_G_FirstPlayable_Coverpoints(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_FirstPlayable_Coverpoints_C", "ExecuteUbergraph_G_FirstPlayable_Coverpoints", FuncInfo);
+
+	Params::G_FirstPlayable_Coverpoints_C_ExecuteUbergraph_G_FirstPlayable_Coverpoints Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

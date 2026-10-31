@@ -33,10 +33,10 @@ public:
 	bool                                          isOn;                                              // 0x0368(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BPL_Red_WallLampIndustrial_Bulb_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
-	void ExecuteUbergraph_BP_LGT_IndustrialLight_Controllable(int32 EntryPoint);
-	void setLight(bool on);
 	void UserConstructionScript();
+	void setLight(bool on);
+	void ExecuteUbergraph_BP_LGT_IndustrialLight_Controllable(int32 EntryPoint);
+	void BndEvt__BPL_Red_WallLampIndustrial_Bulb_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 
 public:
 	static class UClass* StaticClass()
@@ -52,5 +52,6 @@ public:
 		return GetDefaultObjImpl<ABP_LGT_IndustrialLight_Controllable_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LGT_IndustrialLight_Controllable_C;
 
 SDK_NAMESPACE_END

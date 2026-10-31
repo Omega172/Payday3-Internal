@@ -31,10 +31,10 @@ public:
 	class UNiagaraSystem*                         End_Play_Niagara_System;                           // 0x03D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_SingleBagGeneratorBase_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_SingleBagGeneratorBase(int32 EntryPoint);
-	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
 	void setBinaryState(bool state, bool doCosmetics);
+	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+	void ExecuteUbergraph_BP_SingleBagGeneratorBase(int32 EntryPoint);
+	void BndEvt__BP_SingleBagGeneratorBase_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -50,5 +50,6 @@ public:
 		return GetDefaultObjImpl<ABP_SingleBagGeneratorBase_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SingleBagGeneratorBase_C;
 
 SDK_NAMESPACE_END

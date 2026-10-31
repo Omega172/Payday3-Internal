@@ -16,115 +16,17 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Inventory_SuitCustomization.WBP_UI_Inventory_SuitCustomization_C.RefreshVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Inventory_SuitCustomization_C::RefreshVisuals()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RefreshVisuals", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Inventory_SuitCustomization.WBP_UI_Inventory_SuitCustomization_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Inventory_SuitCustomization_C::OnLostStackFocused()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Inventory_SuitCustomization.WBP_UI_Inventory_SuitCustomization_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FName&                      PreviousValue_OnGainedStackFocused                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_SuitCustomization_C::OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
-
-	Params::WBP_UI_Inventory_SuitCustomization_C_OnGainedStackFocused Parms{};
-
-	Parms.PreviousValue_OnGainedStackFocused = PreviousValue_OnGainedStackFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_SuitCustomization.WBP_UI_Inventory_SuitCustomization_C.OnControlsReferenceClicked
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_SuitCustomization_C::OnControlsReferenceClicked(class FName ActionName)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnControlsReferenceClicked", FnName));
-
-	Params::WBP_UI_Inventory_SuitCustomization_C_OnControlsReferenceClicked Parms{};
-
-	Parms.ActionName = ActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_SuitCustomization.WBP_UI_Inventory_SuitCustomization_C.ExecuteUbergraph_WBP_UI_Inventory_SuitCustomization
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_SuitCustomization_C::ExecuteUbergraph_WBP_UI_Inventory_SuitCustomization(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Inventory_SuitCustomization_C", "ExecuteUbergraph_WBP_UI_Inventory_SuitCustomization", FuncInfo);
-
-	Params::WBP_UI_Inventory_SuitCustomization_C_ExecuteUbergraph_WBP_UI_Inventory_SuitCustomization Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_SuitCustomization.WBP_UI_Inventory_SuitCustomization_C.BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Material_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_SuitCustomization_C::BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Material_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Material_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature", FnName));
-
-	Params::WBP_UI_Inventory_SuitCustomization_C_BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Material_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled = bIsEnabled;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_SuitCustomization.WBP_UI_Inventory_SuitCustomization_C.BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Material_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
+// Function WBP_UI_Inventory_SuitCustomization.WBP_UI_Inventory_SuitCustomization_C.BndEvt__WBP_UI_Inventory_SuitCustomization_Button_LowerBody_Colour_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Inventory_SuitCustomization_C::BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Material_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+void UWBP_UI_Inventory_SuitCustomization_C::BndEvt__WBP_UI_Inventory_SuitCustomization_Button_LowerBody_Colour_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Material_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Inventory_SuitCustomization_Button_LowerBody_Colour_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature", FnName));
 
-	Params::WBP_UI_Inventory_SuitCustomization_C_BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Material_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature Parms{};
+	Params::WBP_UI_Inventory_SuitCustomization_C_BndEvt__WBP_UI_Inventory_SuitCustomization_Button_LowerBody_Colour_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
@@ -132,59 +34,21 @@ void UWBP_UI_Inventory_SuitCustomization_C::BndEvt__WBP_UI_Inventory_SuitCustomi
 }
 
 
-// Function WBP_UI_Inventory_SuitCustomization.WBP_UI_Inventory_SuitCustomization_C.BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Colour_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature
+// Function WBP_UI_Inventory_SuitCustomization.WBP_UI_Inventory_SuitCustomization_C.BndEvt__WBP_UI_Inventory_SuitCustomization_Button_LowerBody_Colour_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Inventory_SuitCustomization_C::BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Colour_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled)
+void UWBP_UI_Inventory_SuitCustomization_C::BndEvt__WBP_UI_Inventory_SuitCustomization_Button_LowerBody_Colour_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Colour_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Inventory_SuitCustomization_Button_LowerBody_Colour_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature", FnName));
 
-	Params::WBP_UI_Inventory_SuitCustomization_C_BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Colour_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled = bIsEnabled;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_SuitCustomization.WBP_UI_Inventory_SuitCustomization_C.BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Colour_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_SuitCustomization_C::BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Colour_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Colour_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature", FnName));
-
-	Params::WBP_UI_Inventory_SuitCustomization_C_BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Colour_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature Parms{};
+	Params::WBP_UI_Inventory_SuitCustomization_C_BndEvt__WBP_UI_Inventory_SuitCustomization_Button_LowerBody_Colour_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature Parms{};
 
 	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_SuitCustomization.WBP_UI_Inventory_SuitCustomization_C.BndEvt__WBP_UI_Inventory_SuitCustomization_Button_LowerBody_Material_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_SuitCustomization_C::BndEvt__WBP_UI_Inventory_SuitCustomization_Button_LowerBody_Material_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Inventory_SuitCustomization_Button_LowerBody_Material_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature", FnName));
-
-	Params::WBP_UI_Inventory_SuitCustomization_C_BndEvt__WBP_UI_Inventory_SuitCustomization_Button_LowerBody_Material_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled = bIsEnabled;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -208,41 +72,177 @@ void UWBP_UI_Inventory_SuitCustomization_C::BndEvt__WBP_UI_Inventory_SuitCustomi
 }
 
 
-// Function WBP_UI_Inventory_SuitCustomization.WBP_UI_Inventory_SuitCustomization_C.BndEvt__WBP_UI_Inventory_SuitCustomization_Button_LowerBody_Colour_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature
+// Function WBP_UI_Inventory_SuitCustomization.WBP_UI_Inventory_SuitCustomization_C.BndEvt__WBP_UI_Inventory_SuitCustomization_Button_LowerBody_Material_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Inventory_SuitCustomization_C::BndEvt__WBP_UI_Inventory_SuitCustomization_Button_LowerBody_Colour_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled)
+void UWBP_UI_Inventory_SuitCustomization_C::BndEvt__WBP_UI_Inventory_SuitCustomization_Button_LowerBody_Material_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Inventory_SuitCustomization_Button_LowerBody_Colour_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Inventory_SuitCustomization_Button_LowerBody_Material_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature", FnName));
 
-	Params::WBP_UI_Inventory_SuitCustomization_C_BndEvt__WBP_UI_Inventory_SuitCustomization_Button_LowerBody_Colour_K2Node_ComponentBoundEvent_4_OnMenuButtonStateChanged__DelegateSignature Parms{};
+	Params::WBP_UI_Inventory_SuitCustomization_C_BndEvt__WBP_UI_Inventory_SuitCustomization_Button_LowerBody_Material_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature Parms{};
 
 	Parms.Button = Button;
-	Parms.bIsEnabled = bIsEnabled;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Inventory_SuitCustomization.WBP_UI_Inventory_SuitCustomization_C.BndEvt__WBP_UI_Inventory_SuitCustomization_Button_LowerBody_Colour_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
+// Function WBP_UI_Inventory_SuitCustomization.WBP_UI_Inventory_SuitCustomization_C.BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Colour_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Inventory_SuitCustomization_C::BndEvt__WBP_UI_Inventory_SuitCustomization_Button_LowerBody_Colour_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+void UWBP_UI_Inventory_SuitCustomization_C::BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Colour_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Inventory_SuitCustomization_Button_LowerBody_Colour_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Colour_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature", FnName));
 
-	Params::WBP_UI_Inventory_SuitCustomization_C_BndEvt__WBP_UI_Inventory_SuitCustomization_Button_LowerBody_Colour_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature Parms{};
+	Params::WBP_UI_Inventory_SuitCustomization_C_BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Colour_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature Parms{};
 
 	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_SuitCustomization.WBP_UI_Inventory_SuitCustomization_C.BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Colour_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_SuitCustomization_C::BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Colour_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Colour_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature", FnName));
+
+	Params::WBP_UI_Inventory_SuitCustomization_C_BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Colour_K2Node_ComponentBoundEvent_6_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_SuitCustomization.WBP_UI_Inventory_SuitCustomization_C.BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Material_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_SuitCustomization_C::BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Material_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Material_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature", FnName));
+
+	Params::WBP_UI_Inventory_SuitCustomization_C_BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Material_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_SuitCustomization.WBP_UI_Inventory_SuitCustomization_C.BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Material_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_SuitCustomization_C::BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Material_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Material_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature", FnName));
+
+	Params::WBP_UI_Inventory_SuitCustomization_C_BndEvt__WBP_UI_Inventory_SuitCustomization_Button_UpperBody_Material_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_SuitCustomization.WBP_UI_Inventory_SuitCustomization_C.ExecuteUbergraph_WBP_UI_Inventory_SuitCustomization
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_SuitCustomization_C::ExecuteUbergraph_WBP_UI_Inventory_SuitCustomization(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Inventory_SuitCustomization_C", "ExecuteUbergraph_WBP_UI_Inventory_SuitCustomization", FuncInfo);
+
+	Params::WBP_UI_Inventory_SuitCustomization_C_ExecuteUbergraph_WBP_UI_Inventory_SuitCustomization Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_SuitCustomization.WBP_UI_Inventory_SuitCustomization_C.OnControlsReferenceClicked
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_SuitCustomization_C::OnControlsReferenceClicked(class FName ActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnControlsReferenceClicked", FnName));
+
+	Params::WBP_UI_Inventory_SuitCustomization_C_OnControlsReferenceClicked Parms{};
+
+	Parms.ActionName = ActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_SuitCustomization.WBP_UI_Inventory_SuitCustomization_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_SuitCustomization_C::OnGainedStackFocused(const class FName& PreviousValue)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
+
+	Params::WBP_UI_Inventory_SuitCustomization_C_OnGainedStackFocused Parms{};
+
+	Parms.PreviousValue = PreviousValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_SuitCustomization.WBP_UI_Inventory_SuitCustomization_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_Inventory_SuitCustomization_C::OnLostStackFocused()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Inventory_SuitCustomization.WBP_UI_Inventory_SuitCustomization_C.RefreshVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Inventory_SuitCustomization_C::RefreshVisuals()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RefreshVisuals", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

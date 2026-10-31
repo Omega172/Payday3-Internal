@@ -82,8 +82,8 @@ public:
 	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_LiveAction4_ExecuteUbergraph_G_ArtGallery_LivingWorld_RefProperty; // 0x05A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BlackScreenStarted();
 	void ExecuteUbergraph_G_ArtGallery_LivingWorld(int32 EntryPoint);
+	void BlackScreenStarted();
 
 public:
 	static class UClass* StaticClass()
@@ -99,5 +99,6 @@ public:
 		return GetDefaultObjImpl<AG_ArtGallery_LivingWorld_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_ArtGallery_LivingWorld_C;
 
 SDK_NAMESPACE_END

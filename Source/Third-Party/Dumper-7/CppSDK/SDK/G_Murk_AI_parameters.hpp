@@ -17,6 +17,16 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function G_Murk_AI.G_Murk_AI_C.HeistStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct G_Murk_AI_C_HeistStateChanged final
+{
+public:
+	EPD3HeistState                                OldHeistState_HeistStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CurrentHeistState_HeistStateChanged;               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Murk_AI_C_HeistStateChanged;
+
 // Function G_Murk_AI.G_Murk_AI_C.ExecuteUbergraph_G_Murk_AI
 // 0x0058 (0x0058 - 0x0000)
 struct G_Murk_AI_C_ExecuteUbergraph_G_Murk_AI final
@@ -51,15 +61,7 @@ public:
 	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         SBZK2Node_RandomExecutionSequence_1_RngBitMask;    // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function G_Murk_AI.G_Murk_AI_C.HeistStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct G_Murk_AI_C_HeistStateChanged final
-{
-public:
-	EPD3HeistState                                OldHeistState;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CurrentHeistState;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_G_Murk_AI_C_ExecuteUbergraph_G_Murk_AI;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

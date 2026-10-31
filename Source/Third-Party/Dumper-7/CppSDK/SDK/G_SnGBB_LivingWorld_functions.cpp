@@ -16,29 +16,37 @@
 
 SDK_NAMESPACE_START
 
-// Function G_SnGBB_LivingWorld.G_SnGBB_LivingWorld_C.BankLobbySpawns
+// Function G_SnGBB_LivingWorld.G_SnGBB_LivingWorld_C.SpawnWalkersStreet
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_SnGBB_LivingWorld_C::BankLobbySpawns()
+void AG_SnGBB_LivingWorld_C::SpawnWalkersStreet()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_LivingWorld_C", "BankLobbySpawns");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnWalkersStreet", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_SnGBB_LivingWorld.G_SnGBB_LivingWorld_C.BlackScreenStarted
-// (Event, Public, BlueprintEvent)
+// Function G_SnGBB_LivingWorld.G_SnGBB_LivingWorld_C.SpawnParkingLifeActions
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_SnGBB_LivingWorld_C::BlackScreenStarted()
+void AG_SnGBB_LivingWorld_C::SpawnParkingLifeActions()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnParkingLifeActions", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_LivingWorld_C", "BlackScreenStarted");
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGBB_LivingWorld.G_SnGBB_LivingWorld_C.SpawnLifeActionsStreet
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGBB_LivingWorld_C::SpawnLifeActionsStreet()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnLifeActionsStreet", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -51,10 +59,8 @@ void AG_SnGBB_LivingWorld_C::BlackScreenStarted()
 
 void AG_SnGBB_LivingWorld_C::ExecuteUbergraph_G_SnGBB_LivingWorld(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_LivingWorld_C", "ExecuteUbergraph_G_SnGBB_LivingWorld");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_SnGBB_LivingWorld_C", "ExecuteUbergraph_G_SnGBB_LivingWorld", FuncInfo);
 
 	Params::G_SnGBB_LivingWorld_C_ExecuteUbergraph_G_SnGBB_LivingWorld Parms{};
 
@@ -64,43 +70,25 @@ void AG_SnGBB_LivingWorld_C::ExecuteUbergraph_G_SnGBB_LivingWorld(int32 EntryPoi
 }
 
 
-// Function G_SnGBB_LivingWorld.G_SnGBB_LivingWorld_C.SpawnLifeActionsStreet
-// (BlueprintCallable, BlueprintEvent)
+// Function G_SnGBB_LivingWorld.G_SnGBB_LivingWorld_C.BlackScreenStarted
+// (Event, Public, BlueprintEvent)
 
-void AG_SnGBB_LivingWorld_C::SpawnLifeActionsStreet()
+void AG_SnGBB_LivingWorld_C::BlackScreenStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_LivingWorld_C", "SpawnLifeActionsStreet");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BlackScreenStarted", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_SnGBB_LivingWorld.G_SnGBB_LivingWorld_C.SpawnParkingLifeActions
+// Function G_SnGBB_LivingWorld.G_SnGBB_LivingWorld_C.BankLobbySpawns
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_SnGBB_LivingWorld_C::SpawnParkingLifeActions()
+void AG_SnGBB_LivingWorld_C::BankLobbySpawns()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_LivingWorld_C", "SpawnParkingLifeActions");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGBB_LivingWorld.G_SnGBB_LivingWorld_C.SpawnWalkersStreet
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGBB_LivingWorld_C::SpawnWalkersStreet()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_LivingWorld_C", "SpawnWalkersStreet");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BankLobbySpawns", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

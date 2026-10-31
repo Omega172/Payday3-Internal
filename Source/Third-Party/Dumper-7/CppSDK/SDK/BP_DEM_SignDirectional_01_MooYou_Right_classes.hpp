@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_DEM_SignDirectional_01_MooYou_Right_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DEM_SignDirectional_01_MooYou_Right_C;
 
 SDK_NAMESPACE_END

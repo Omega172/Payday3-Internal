@@ -51,23 +51,23 @@ public:
 	double                                        AmountOfHealthPerTic;                              // 0x0430(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnArmorChanged(float OldArmor);
-	void BP_OnArmorHardnessChanged(float OldArmorHardness);
-	void BP_OnArmorMaxChanged(float OldArmorMax);
-	bool BP_OnFadeOutChanged(bool bInIsFadeOut);
-	void BP_OnHealthChanged(float OldHealth);
-	void BP_OnHealthMaxChanged(float OldHealthMax);
-	void BP_SetData(const struct FSBZMarkerRuntime& Data);
-	void CheckAndUpdateDelayedTimer(const struct FTimerHandle& InHandle, TDelegate<void()> InUpdateEvent, struct FTimerHandle* OutHandle);
-	void ExecuteUbergraph_WBP_AIDamageStatusMarker(int32 EntryPoint);
-	double GetNormalizedValue(double A, double InMax);
-	void SetMaterialParam(class UImage* InImage, class FName InParamName, double InValue);
-	void Setup();
-	void UpdateArmor(double OldArmor, bool bIsSetup);
-	void UpdateArmorHardness();
-	void UpdateDelayedArmor();
-	void UpdateDelayedHealth();
 	void UpdateHealth(double OldHealth, bool bIsSetup);
+	void UpdateDelayedHealth();
+	void UpdateDelayedArmor();
+	void UpdateArmorHardness();
+	void UpdateArmor(double OldArmor, bool bIsSetup);
+	void Setup();
+	void SetMaterialParam(class UImage* InImage, class FName InParamName, double InValue);
+	double GetNormalizedValue(double A, double InMax);
+	void ExecuteUbergraph_WBP_AIDamageStatusMarker(int32 EntryPoint);
+	void CheckAndUpdateDelayedTimer(const struct FTimerHandle& InHandle, TDelegate<void()> InUpdateEvent, struct FTimerHandle* OutHandle);
+	void BP_SetData(const struct FSBZMarkerRuntime& Data_BP_SetData);
+	void BP_OnHealthMaxChanged(float OldHealthMax_BP_OnHealthMaxChanged);
+	void BP_OnHealthChanged(float OldHealth_BP_OnHealthChanged);
+	bool BP_OnFadeOutChanged(bool bInIsFadeOut_BP_OnFadeOutChanged);
+	void BP_OnArmorMaxChanged(float OldArmorMax_BP_OnArmorMaxChanged);
+	void BP_OnArmorHardnessChanged(float OldArmorHardness_BP_OnArmorHardnessChanged);
+	void BP_OnArmorChanged(float OldArmor_BP_OnArmorChanged);
 
 public:
 	static class UClass* StaticClass()
@@ -83,5 +83,6 @@ public:
 		return GetDefaultObjImpl<UWBP_AIDamageStatusMarker_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_AIDamageStatusMarker_C;
 
 SDK_NAMESPACE_END

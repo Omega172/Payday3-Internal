@@ -16,23 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function G_NightClub_Coverpoints.G_NightClub_Coverpoints_C.ExecuteUbergraph_G_NightClub_Coverpoints
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function G_NightClub_Coverpoints.G_NightClub_Coverpoints_C.SetRoomsSecure
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_NightClub_Coverpoints_C::ExecuteUbergraph_G_NightClub_Coverpoints(int32 EntryPoint)
+void AG_NightClub_Coverpoints_C::SetRoomsSecure()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetRoomsSecure", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NightClub_Coverpoints_C", "ExecuteUbergraph_G_NightClub_Coverpoints");
-
-	Params::G_NightClub_Coverpoints_C_ExecuteUbergraph_G_NightClub_Coverpoints Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -41,26 +33,28 @@ void AG_NightClub_Coverpoints_C::ExecuteUbergraph_G_NightClub_Coverpoints(int32 
 
 void AG_NightClub_Coverpoints_C::SetRoomsPrivate()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NightClub_Coverpoints_C", "SetRoomsPrivate");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetRoomsPrivate", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_NightClub_Coverpoints.G_NightClub_Coverpoints_C.SetRoomsSecure
-// (BlueprintCallable, BlueprintEvent)
+// Function G_NightClub_Coverpoints.G_NightClub_Coverpoints_C.ExecuteUbergraph_G_NightClub_Coverpoints
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_NightClub_Coverpoints_C::SetRoomsSecure()
+void AG_NightClub_Coverpoints_C::ExecuteUbergraph_G_NightClub_Coverpoints(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_NightClub_Coverpoints_C", "ExecuteUbergraph_G_NightClub_Coverpoints", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NightClub_Coverpoints_C", "SetRoomsSecure");
+	Params::G_NightClub_Coverpoints_C_ExecuteUbergraph_G_NightClub_Coverpoints Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

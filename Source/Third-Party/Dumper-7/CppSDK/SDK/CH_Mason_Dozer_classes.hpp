@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CH_Mason_Dozer.CH_Mason_Dozer_C
-// 0x0000 (0x21E0 - 0x21E0)
+// 0x0000 (0x2270 - 0x2270)
 class ACH_Mason_Dozer_C final : public ACH_Dozer_C
 {
 public:
@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ACH_Mason_Dozer_C>();
 	}
 };
+DUMPER7_ASSERTS_ACH_Mason_Dozer_C;
 
 SDK_NAMESPACE_END

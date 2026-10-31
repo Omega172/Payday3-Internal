@@ -19,29 +19,22 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_Grand_Piano_01.BP_Grand_Piano_01_C.BndEvt__BP_Grand_Piano_01_keys_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature
-// 0x0030 (0x0030 - 0x0000)
-struct BP_Grand_Piano_01_C_BndEvt__BP_Grand_Piano_01_keys_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature final
+// Function BP_Grand_Piano_01.BP_Grand_Piano_01_C.remapLerp
+// 0x0078 (0x0078 - 0x0000)
+struct BP_Grand_Piano_01_C_remapLerp final
 {
 public:
-	class UActorComponent*                        PoolComponent;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         Hits;                                              // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZPropDamageContext                  DamageContext;                                     // 0x0010(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+	struct FRotator                               startRot;                                          // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	double                                        alpha;                                             // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        InRangeA;                                          // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        InRangeB;                                          // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               rot;                                               // 0x0030(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	double                                        CallFunc_MapRangeUnclamped_ReturnValue;            // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_FClamp_ReturnValue;                       // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               CallFunc_RLerp_ReturnValue;                        // 0x0058(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	float                                         CallFunc_RLerp_Alpha_ImplicitCast;                 // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_Grand_Piano_01.BP_Grand_Piano_01_C.BndEvt__BP_Grand_Piano_01_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature
-// 0x0030 (0x0030 - 0x0000)
-struct BP_Grand_Piano_01_C_BndEvt__BP_Grand_Piano_01_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature final
-{
-public:
-	class UActorComponent*                        PoolComponent;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         Hits;                                              // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZPropDamageContext                  DamageContext;                                     // 0x0010(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
-};
+DUMPER7_ASSERTS_BP_Grand_Piano_01_C_remapLerp;
 
 // Function BP_Grand_Piano_01.BP_Grand_Piano_01_C.ExecuteUbergraph_BP_Grand_Piano_01
 // 0x03F8 (0x03F8 - 0x0000)
@@ -75,22 +68,33 @@ public:
 	double                                        CallFunc_remapLerp_alpha_ImplicitCast;             // 0x03E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_remapLerp_alpha_ImplicitCast_1;           // 0x03F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Grand_Piano_01_C_ExecuteUbergraph_BP_Grand_Piano_01;
 
-// Function BP_Grand_Piano_01.BP_Grand_Piano_01_C.remapLerp
-// 0x0078 (0x0078 - 0x0000)
-struct BP_Grand_Piano_01_C_remapLerp final
+// Function BP_Grand_Piano_01.BP_Grand_Piano_01_C.BndEvt__BP_Grand_Piano_01_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature
+// 0x0030 (0x0030 - 0x0000)
+struct BP_Grand_Piano_01_C_BndEvt__BP_Grand_Piano_01_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature final
 {
 public:
-	struct FRotator                               startRot;                                          // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	double                                        alpha;                                             // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        InRangeA;                                          // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        InRangeB;                                          // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               rot;                                               // 0x0030(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	double                                        CallFunc_MapRangeUnclamped_ReturnValue;            // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_FClamp_ReturnValue;                       // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               CallFunc_RLerp_ReturnValue;                        // 0x0058(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	float                                         CallFunc_RLerp_Alpha_ImplicitCast;                 // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UActorComponent*                        PoolComponent;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         Hits;                                              // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZPropDamageContext                  DamageContext;                                     // 0x0010(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 };
+DUMPER7_ASSERTS_BP_Grand_Piano_01_C_BndEvt__BP_Grand_Piano_01_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature;
+
+// Function BP_Grand_Piano_01.BP_Grand_Piano_01_C.BndEvt__BP_Grand_Piano_01_keys_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature
+// 0x0030 (0x0030 - 0x0000)
+struct BP_Grand_Piano_01_C_BndEvt__BP_Grand_Piano_01_keys_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature final
+{
+public:
+	class UActorComponent*                        PoolComponent;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         Hits;                                              // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZPropDamageContext                  DamageContext;                                     // 0x0010(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+};
+DUMPER7_ASSERTS_BP_Grand_Piano_01_C_BndEvt__BP_Grand_Piano_01_keys_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

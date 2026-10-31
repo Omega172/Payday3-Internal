@@ -32,14 +32,14 @@ public:
 	double                                        lid01_startOpen;                                   // 0x0510(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BP_OnActorDisposed(int32 NumDisposed, bool bDoCosmetics);
-	void dumpBodyOpen_finished();
-	void dumpBodyOpen_tick(double alpha);
-	void easeRemapedAlpha(double alpha, double alphaRangeA, double alphaRangeB, double targetA, double targetB, bool muteTargetA, double* Result);
-	void ExecuteUbergraph_BP_BodyDisposerCrate(int32 EntryPoint);
 	void UserConstructionScript();
+	void ExecuteUbergraph_BP_BodyDisposerCrate(int32 EntryPoint);
+	void easeRemapedAlpha(double alpha, double alphaRangeA, double alphaRangeB, double targetA, double targetB, bool muteTargetA, double* Result);
+	void dumpBodyOpen_tick(double alpha_dumpBodyOpen_tick);
+	void dumpBodyOpen_finished();
+	void BP_OnActorDisposed(int32 NumDisposed_BP_OnActorDisposed, bool bDoCosmetics_BP_OnActorDisposed);
+	void BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature, class USBZInteractorComponent* Interactor_BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature, bool bIsLocallyControlledInteractor_BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature);
+	void BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature, class USBZInteractorComponent* Interactor_BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature, bool bIsLocallyControlledInteractor_BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature);
 
 public:
 	static class UClass* StaticClass()
@@ -55,5 +55,6 @@ public:
 		return GetDefaultObjImpl<ABP_BodyDisposerCrate_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BodyDisposerCrate_C;
 
 SDK_NAMESPACE_END

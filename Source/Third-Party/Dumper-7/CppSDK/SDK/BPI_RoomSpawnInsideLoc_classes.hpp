@@ -16,9 +16,12 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BPI_RoomSpawnInsideLoc.BPI_RoomSpawnInsideLoc_C
-// 0x0000 (0x0000 - 0x0000)
-class IBPI_RoomSpawnInsideLoc_C final
+// 0x0008 (0x0008 - 0x0000)
+class IBPI_RoomSpawnInsideLoc_C
 {
+public:
+	void*                                         VTable;                                            // 0x0000(0x0008)(NOT AUTO-GENERATED PROPERTY)
+
 public:
 	void SpawnItemInContainer(class UClass* WhatShould_Spawn, class ABP_RoomSpawnController_C* RoomControllerRef, class AActor** SpawnedActor);
 
@@ -45,5 +48,6 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
+DUMPER7_ASSERTS_IBPI_RoomSpawnInsideLoc_C;
 
 SDK_NAMESPACE_END

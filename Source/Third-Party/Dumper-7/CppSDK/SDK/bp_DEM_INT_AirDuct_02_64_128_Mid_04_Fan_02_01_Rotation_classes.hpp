@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<ABP_DEM_INT_AirDuct_02_64_128_Mid_04_Fan_02_01_Rotation_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DEM_INT_AirDuct_02_64_128_Mid_04_Fan_02_01_Rotation_C;
 
 SDK_NAMESPACE_END

@@ -38,6 +38,7 @@ public:
 	int32                                         CallFunc_RandomInteger_ReturnValue_2;              // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValueOnMaterials_ParameterValue_ImplicitCast; // 0x003C(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_CH_BaseCivilian_C_ExecuteUbergraph_CH_BaseCivilian;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_Construction_02_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Construction_02_C;
 
 SDK_NAMESPACE_END

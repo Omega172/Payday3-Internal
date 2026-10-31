@@ -16,41 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function C_Dema_IntroOutro.C_Dema_IntroOutro_C.ExecuteUbergraph_C_Dema_IntroOutro
-// (Final, UbergraphFunction)
+// Function C_Dema_IntroOutro.C_Dema_IntroOutro_C.SpawnSelected
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   SpawnInt                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AC_Dema_IntroOutro_C::ExecuteUbergraph_C_Dema_IntroOutro(int32 EntryPoint)
+void AC_Dema_IntroOutro_C::SpawnSelected(int32 SpawnInt)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnSelected", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_Dema_IntroOutro_C", "ExecuteUbergraph_C_Dema_IntroOutro");
+	Params::C_Dema_IntroOutro_C_SpawnSelected Parms{};
 
-	Params::C_Dema_IntroOutro_C_ExecuteUbergraph_C_Dema_IntroOutro Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function C_Dema_IntroOutro.C_Dema_IntroOutro_C.IntroSequenceChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    bIsStarted                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AC_Dema_IntroOutro_C::IntroSequenceChanged(bool bIsStarted)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_Dema_IntroOutro_C", "IntroSequenceChanged");
-
-	Params::C_Dema_IntroOutro_C_IntroSequenceChanged Parms{};
-
-	Parms.bIsStarted = bIsStarted;
+	Parms.SpawnInt = SpawnInt;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -61,30 +39,44 @@ void AC_Dema_IntroOutro_C::IntroSequenceChanged(bool bIsStarted)
 
 void AC_Dema_IntroOutro_C::OnIntroFinished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_Dema_IntroOutro_C", "OnIntroFinished");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnIntroFinished", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function C_Dema_IntroOutro.C_Dema_IntroOutro_C.SpawnSelected
-// (BlueprintCallable, BlueprintEvent)
+// Function C_Dema_IntroOutro.C_Dema_IntroOutro_C.IntroSequenceChanged
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   SpawnInt                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsStarted_IntroSequenceChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AC_Dema_IntroOutro_C::SpawnSelected(int32 SpawnInt)
+void AC_Dema_IntroOutro_C::IntroSequenceChanged(bool bIsStarted_IntroSequenceChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IntroSequenceChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_Dema_IntroOutro_C", "SpawnSelected");
+	Params::C_Dema_IntroOutro_C_IntroSequenceChanged Parms{};
 
-	Params::C_Dema_IntroOutro_C_SpawnSelected Parms{};
+	Parms.bIsStarted_IntroSequenceChanged = bIsStarted_IntroSequenceChanged;
 
-	Parms.SpawnInt = SpawnInt;
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function C_Dema_IntroOutro.C_Dema_IntroOutro_C.ExecuteUbergraph_C_Dema_IntroOutro
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AC_Dema_IntroOutro_C::ExecuteUbergraph_C_Dema_IntroOutro(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "C_Dema_IntroOutro_C", "ExecuteUbergraph_C_Dema_IntroOutro", FuncInfo);
+
+	Params::C_Dema_IntroOutro_C_ExecuteUbergraph_C_Dema_IntroOutro Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

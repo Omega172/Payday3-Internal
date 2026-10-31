@@ -16,45 +16,47 @@
 
 SDK_NAMESPACE_START
 
-// Function R_Bebe_ToiletRoom.R_Bebe_ToiletRoom_C.BranchBank_Kitchen
+// Function R_Bebe_ToiletRoom.R_Bebe_ToiletRoom_C.RandomizedRoomTest_RemoteEvent1
 // (BlueprintCallable, BlueprintEvent)
 
-void AR_Bebe_ToiletRoom_C::BranchBank_Kitchen()
+void AR_Bebe_ToiletRoom_C::RandomizedRoomTest_RemoteEvent1()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Bebe_ToiletRoom_C", "BranchBank_Kitchen");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RandomizedRoomTest_RemoteEvent1", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function R_Bebe_ToiletRoom.R_Bebe_ToiletRoom_C.BranchBank_Roof
-// (BlueprintCallable, BlueprintEvent)
+// Function R_Bebe_ToiletRoom.R_Bebe_ToiletRoom_C.OnRandomPlacementStarted
+// (Event, Public, BlueprintEvent)
 
-void AR_Bebe_ToiletRoom_C::BranchBank_Roof()
+void AR_Bebe_ToiletRoom_C::OnRandomPlacementStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Bebe_ToiletRoom_C", "BranchBank_Roof");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRandomPlacementStarted", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function R_Bebe_ToiletRoom.R_Bebe_ToiletRoom_C.BranchBank_Stairs
-// (BlueprintCallable, BlueprintEvent)
+// Function R_Bebe_ToiletRoom.R_Bebe_ToiletRoom_C.HeistStateChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EPD3HeistState                          OldHeistState_HeistStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPD3HeistState                          CurrentHeistState_HeistStateChanged                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AR_Bebe_ToiletRoom_C::BranchBank_Stairs()
+void AR_Bebe_ToiletRoom_C::HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HeistStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Bebe_ToiletRoom_C", "BranchBank_Stairs");
+	Params::R_Bebe_ToiletRoom_C_HeistStateChanged Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.OldHeistState_HeistStateChanged = OldHeistState_HeistStateChanged;
+	Parms.CurrentHeistState_HeistStateChanged = CurrentHeistState_HeistStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -65,10 +67,8 @@ void AR_Bebe_ToiletRoom_C::BranchBank_Stairs()
 
 void AR_Bebe_ToiletRoom_C::ExecuteUbergraph_R_Bebe_ToiletRoom(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Bebe_ToiletRoom_C", "ExecuteUbergraph_R_Bebe_ToiletRoom");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "R_Bebe_ToiletRoom_C", "ExecuteUbergraph_R_Bebe_ToiletRoom", FuncInfo);
 
 	Params::R_Bebe_ToiletRoom_C_ExecuteUbergraph_R_Bebe_ToiletRoom Parms{};
 
@@ -78,51 +78,37 @@ void AR_Bebe_ToiletRoom_C::ExecuteUbergraph_R_Bebe_ToiletRoom(int32 EntryPoint)
 }
 
 
-// Function R_Bebe_ToiletRoom.R_Bebe_ToiletRoom_C.HeistStateChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// EPD3HeistState                          OldHeistState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPD3HeistState                          CurrentHeistState                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function R_Bebe_ToiletRoom.R_Bebe_ToiletRoom_C.BranchBank_Stairs
+// (BlueprintCallable, BlueprintEvent)
 
-void AR_Bebe_ToiletRoom_C::HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState)
+void AR_Bebe_ToiletRoom_C::BranchBank_Stairs()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Bebe_ToiletRoom_C", "HeistStateChanged");
-
-	Params::R_Bebe_ToiletRoom_C_HeistStateChanged Parms{};
-
-	Parms.OldHeistState = OldHeistState;
-	Parms.CurrentHeistState = CurrentHeistState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_Bebe_ToiletRoom.R_Bebe_ToiletRoom_C.OnRandomPlacementStarted
-// (Event, Public, BlueprintEvent)
-
-void AR_Bebe_ToiletRoom_C::OnRandomPlacementStarted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Bebe_ToiletRoom_C", "OnRandomPlacementStarted");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BranchBank_Stairs", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function R_Bebe_ToiletRoom.R_Bebe_ToiletRoom_C.RandomizedRoomTest_RemoteEvent1
+// Function R_Bebe_ToiletRoom.R_Bebe_ToiletRoom_C.BranchBank_Roof
 // (BlueprintCallable, BlueprintEvent)
 
-void AR_Bebe_ToiletRoom_C::RandomizedRoomTest_RemoteEvent1()
+void AR_Bebe_ToiletRoom_C::BranchBank_Roof()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BranchBank_Roof", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Bebe_ToiletRoom_C", "RandomizedRoomTest_RemoteEvent1");
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_Bebe_ToiletRoom.R_Bebe_ToiletRoom_C.BranchBank_Kitchen
+// (BlueprintCallable, BlueprintEvent)
+
+void AR_Bebe_ToiletRoom_C::BranchBank_Kitchen()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BranchBank_Kitchen", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

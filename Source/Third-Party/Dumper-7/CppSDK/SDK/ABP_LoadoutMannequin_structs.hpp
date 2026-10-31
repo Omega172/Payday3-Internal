@@ -16,9 +16,10 @@
 SDK_NAMESPACE_START
 
 // ScriptStruct ABP_LoadoutMannequin.ABP_LoadoutMannequin_C.AnimBlueprintGeneratedConstantData
-// 0x0000 (0x0420 - 0x0420)
+// 0x0000 (0x04D0 - 0x04D0)
 struct ABP_LoadoutMannequin::FAnimBlueprintGeneratedConstantData final : public ABP_PlayerMenu::FAnimBlueprintGeneratedConstantData
 {
 };
+DUMPER7_ASSERTS_ABP_LoadoutMannequin__FAnimBlueprintGeneratedConstantData;
 
 SDK_NAMESPACE_END

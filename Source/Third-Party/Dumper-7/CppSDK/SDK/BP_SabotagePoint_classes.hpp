@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_SabotagePoint_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SabotagePoint_C;
 
 SDK_NAMESPACE_END

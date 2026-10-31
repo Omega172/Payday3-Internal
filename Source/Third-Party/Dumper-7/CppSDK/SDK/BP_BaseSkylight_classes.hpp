@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "BP_AttractorDestructionBase_classes.hpp"
 #include "AkAudio_structs.hpp"
 
@@ -43,10 +43,10 @@ public:
 	class UAkAudioEvent*                          GlassFloorImpactSFX;                               // 0x0430(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__NewBlueprint_PropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
-	void destroyGlass();
-	void ExecuteUbergraph_BP_BaseSkylight(int32 EntryPoint);
 	void UserConstructionScript();
+	void ExecuteUbergraph_BP_BaseSkylight(int32 EntryPoint);
+	void destroyGlass();
+	void BndEvt__NewBlueprint_PropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
 
 public:
 	static class UClass* StaticClass()
@@ -62,5 +62,6 @@ public:
 		return GetDefaultObjImpl<ABP_BaseSkylight_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BaseSkylight_C;
 
 SDK_NAMESPACE_END

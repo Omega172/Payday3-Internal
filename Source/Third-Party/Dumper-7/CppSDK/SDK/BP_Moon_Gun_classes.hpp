@@ -32,12 +32,12 @@ public:
 	struct FVector                                RandomDeathVector;                                 // 0x0C98(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnKill_Client();
-	void ExecuteUbergraph_BP_Moon_Gun(int32 EntryPoint);
-	void TickExec_51BB4EA443607F8BF71EA7893F95BCE5(const class UDelegateTimer* Timer, float ElapsedTime, float TimeSinceLast);
-	void TickExec_8EDFF4314BB4D040A4F521AAA5A56326(const class UDelegateTimer* Timer, float ElapsedTime, float TimeSinceLast);
-	void UpdateDeath(double ElapsedTimeSinceDeath, double LinearForce, double AngularForce, double Duration, const struct FVector& RandomVector);
 	void UserConstructionScript();
+	void UpdateDeath(double ElapsedTimeSinceDeath, double LinearForce, double AngularForce, double Duration, const struct FVector& RandomVector);
+	void TickExec_8EDFF4314BB4D040A4F521AAA5A56326(const class UDelegateTimer* Timer, float ElapsedTime, float TimeSinceLast);
+	void TickExec_51BB4EA443607F8BF71EA7893F95BCE5(const class UDelegateTimer* Timer, float ElapsedTime, float TimeSinceLast);
+	void ExecuteUbergraph_BP_Moon_Gun(int32 EntryPoint);
+	void BP_OnKill_Client();
 
 public:
 	static class UClass* StaticClass()
@@ -53,5 +53,6 @@ public:
 		return GetDefaultObjImpl<ABP_Moon_Gun_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Moon_Gun_C;
 
 SDK_NAMESPACE_END

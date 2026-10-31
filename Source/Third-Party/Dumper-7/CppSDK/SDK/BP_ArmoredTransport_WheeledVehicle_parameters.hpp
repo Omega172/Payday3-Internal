@@ -17,14 +17,41 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_ArmoredTransport_WheeledVehicle.BP_ArmoredTransport_WheeledVehicle_C.BndEvt__BP_ArmoredTransport_WheeledVehicle_engineSound_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct BP_ArmoredTransport_WheeledVehicle_C_BndEvt__BP_ArmoredTransport_WheeledVehicle_engineSound_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature final
+// Function BP_ArmoredTransport_WheeledVehicle.BP_ArmoredTransport_WheeledVehicle_C.UserConstructionScript
+// 0x0020 (0x0020 - 0x0000)
+struct BP_ArmoredTransport_WheeledVehicle_C_UserConstructionScript final
 {
 public:
-	bool                                          bState;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CallFunc_Array_Get_Item;                           // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_AttachToActor_ReturnValue;             // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ArmoredTransport_WheeledVehicle_C_UserConstructionScript;
+
+// Function BP_ArmoredTransport_WheeledVehicle.BP_ArmoredTransport_WheeledVehicle_C.setEngineSound
+// 0x0001 (0x0001 - 0x0000)
+struct BP_ArmoredTransport_WheeledVehicle_C_setEngineSound final
+{
+public:
+	bool                                          enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ArmoredTransport_WheeledVehicle_C_setEngineSound;
+
+// Function BP_ArmoredTransport_WheeledVehicle.BP_ArmoredTransport_WheeledVehicle_C.setBackDoors
+// 0x0002 (0x0002 - 0x0000)
+struct BP_ArmoredTransport_WheeledVehicle_C_setBackDoors final
+{
+public:
+	ESBZVehicleDoorState                          doorState;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          breached;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ArmoredTransport_WheeledVehicle_C_setBackDoors;
 
 // Function BP_ArmoredTransport_WheeledVehicle.BP_ArmoredTransport_WheeledVehicle_C.ExecuteUbergraph_BP_ArmoredTransport_WheeledVehicle
 // 0x0048 (0x0048 - 0x0000)
@@ -47,39 +74,17 @@ public:
 	uint8                                         Pad_42[0x2];                                       // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_PostAkEvent_ReturnValue;                  // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ArmoredTransport_WheeledVehicle_C_ExecuteUbergraph_BP_ArmoredTransport_WheeledVehicle;
 
-// Function BP_ArmoredTransport_WheeledVehicle.BP_ArmoredTransport_WheeledVehicle_C.setBackDoors
+// Function BP_ArmoredTransport_WheeledVehicle.BP_ArmoredTransport_WheeledVehicle_C.BndEvt__BP_ArmoredTransport_WheeledVehicle_engineSound_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature
 // 0x0002 (0x0002 - 0x0000)
-struct BP_ArmoredTransport_WheeledVehicle_C_setBackDoors final
+struct BP_ArmoredTransport_WheeledVehicle_C_BndEvt__BP_ArmoredTransport_WheeledVehicle_engineSound_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature final
 {
 public:
-	ESBZVehicleDoorState                          doorState;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          breached;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bState;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_ArmoredTransport_WheeledVehicle.BP_ArmoredTransport_WheeledVehicle_C.setEngineSound
-// 0x0001 (0x0001 - 0x0000)
-struct BP_ArmoredTransport_WheeledVehicle_C_setEngineSound final
-{
-public:
-	bool                                          enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_ArmoredTransport_WheeledVehicle.BP_ArmoredTransport_WheeledVehicle_C.UserConstructionScript
-// 0x0020 (0x0020 - 0x0000)
-struct BP_ArmoredTransport_WheeledVehicle_C_UserConstructionScript final
-{
-public:
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CallFunc_Array_Get_Item;                           // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_AttachToActor_ReturnValue;             // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_ArmoredTransport_WheeledVehicle_C_BndEvt__BP_ArmoredTransport_WheeledVehicle_engineSound_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

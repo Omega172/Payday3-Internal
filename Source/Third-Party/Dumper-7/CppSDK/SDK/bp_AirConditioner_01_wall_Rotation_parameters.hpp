@@ -23,6 +23,7 @@ public:
 	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_1; // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_2; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_bp_AirConditioner_01_wall_Rotation_C_UserConstructionScript;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -16,39 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_targetSheet.BP_targetSheet_C.BndEvt__BP_targetSheet_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_targetSheet.BP_targetSheet_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_targetSheet_C::BndEvt__BP_targetSheet_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_targetSheet_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_targetSheet_C", "BndEvt__BP_targetSheet_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_targetSheet_C_BndEvt__BP_targetSheet_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_targetSheet.BP_targetSheet_C.clearTargets
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_targetSheet_C::clearTargets()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_targetSheet_C", "clearTargets");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -61,10 +35,8 @@ void ABP_targetSheet_C::clearTargets()
 
 void ABP_targetSheet_C::ExecuteUbergraph_BP_targetSheet(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_targetSheet_C", "ExecuteUbergraph_BP_targetSheet");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_targetSheet_C", "ExecuteUbergraph_BP_targetSheet", FuncInfo);
 
 	Params::BP_targetSheet_C_ExecuteUbergraph_BP_targetSheet Parms{};
 
@@ -74,17 +46,37 @@ void ABP_targetSheet_C::ExecuteUbergraph_BP_targetSheet(int32 EntryPoint)
 }
 
 
-// Function BP_targetSheet.BP_targetSheet_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_targetSheet.BP_targetSheet_C.clearTargets
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_targetSheet_C::UserConstructionScript()
+void ABP_targetSheet_C::clearTargets()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_targetSheet_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"clearTargets", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_targetSheet.BP_targetSheet_C.BndEvt__BP_targetSheet_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_targetSheet_C::BndEvt__BP_targetSheet_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_targetSheet_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_targetSheet_C_BndEvt__BP_targetSheet_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

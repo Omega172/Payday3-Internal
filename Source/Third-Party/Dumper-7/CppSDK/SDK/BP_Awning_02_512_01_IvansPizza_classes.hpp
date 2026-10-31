@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Awning_02_512_01_IvansPizza_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Awning_02_512_01_IvansPizza_C;
 
 SDK_NAMESPACE_END

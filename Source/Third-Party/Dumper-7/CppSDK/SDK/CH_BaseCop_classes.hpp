@@ -16,12 +16,12 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CH_BaseCop.CH_BaseCop_C
-// 0x0010 (0x21C0 - 0x21B0)
+// 0x0010 (0x2250 - 0x2240)
 class ACH_BaseCop_C : public ACH_BaseHumanAI_C
 {
 public:
-	class UAIPerceptionStimuliSourceComponent*    AIPerceptionStimuliSource;                         // 0x21B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USBZEventReactionComponent*             SBZEventReaction;                                  // 0x21B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAIPerceptionStimuliSourceComponent*    AIPerceptionStimuliSource;                         // 0x2240(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZEventReactionComponent*             SBZEventReaction;                                  // 0x2248(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ACH_BaseCop_C>();
 	}
 };
+DUMPER7_ASSERTS_ACH_BaseCop_C;
 
 SDK_NAMESPACE_END

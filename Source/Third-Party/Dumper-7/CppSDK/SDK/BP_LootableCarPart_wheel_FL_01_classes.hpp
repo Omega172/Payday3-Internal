@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_LootableCarPart_wheel_FL_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LootableCarPart_wheel_FL_01_C;
 
 SDK_NAMESPACE_END

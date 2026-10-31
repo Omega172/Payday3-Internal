@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
 
@@ -63,22 +63,22 @@ public:
 	int32                                         CurrentShakeTier;                                  // 0x04D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AxisUpdateTimer();
-	void BP_OnXAxisChanged(float Value);
-	void ExecuteUbergraph_WBP_QOL_SafeCrackMinigame(int32 EntryPoint);
-	void GenerateCorrectNumber();
-	void MiniGameStateChanged(EPD3MiniGameState NewState);
-	void OnInitialized();
-	void OnMouseAxisInput();
-	void OnNumberUpdated();
-	void OnOwningMiniGameComponent(class USBZMiniGameComponent* MiniGameComponet);
-	void OnSelectNumber();
-	void OnSubmitInput();
-	void RotateDown();
-	void RotateUp();
-	void SetAnimState(int32 NewShakeTier);
-	void UpdateDirectionHintVisibility();
 	void UpdateNumberColors();
+	void UpdateDirectionHintVisibility();
+	void SetAnimState(int32 NewShakeTier);
+	void RotateUp();
+	void RotateDown();
+	void OnSubmitInput();
+	void OnSelectNumber();
+	void OnOwningMiniGameComponent(class USBZMiniGameComponent* MiniGameComponet);
+	void OnNumberUpdated();
+	void OnMouseAxisInput();
+	void OnInitialized();
+	void MiniGameStateChanged(EPD3MiniGameState NewState);
+	void GenerateCorrectNumber();
+	void ExecuteUbergraph_WBP_QOL_SafeCrackMinigame(int32 EntryPoint);
+	void BP_OnXAxisChanged(float Value);
+	void AxisUpdateTimer();
 
 public:
 	static class UClass* StaticClass()
@@ -94,5 +94,6 @@ public:
 		return GetDefaultObjImpl<UWBP_QOL_SafeCrackMinigame_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_QOL_SafeCrackMinigame_C;
 
 SDK_NAMESPACE_END

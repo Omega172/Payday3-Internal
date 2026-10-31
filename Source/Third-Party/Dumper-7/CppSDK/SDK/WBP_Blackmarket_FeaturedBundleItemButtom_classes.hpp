@@ -49,15 +49,15 @@ public:
 	TSoftObjectPtr<class UTexture2D>              PreviewTexture;                                    // 0x0730(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 
 public:
-	void UpdateBundleContent();
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnPlayerStoreItemDataIntialized();
-	void OnOpenDLCFirstPartyStore();
-	void OnLoaded_AFB5B50A45B42D40D13E3EB4173D4487(class UObject* Loaded);
-	void OnFocused(bool bIsFocused);
-	void ExecuteUbergraph_WBP_Blackmarket_FeaturedBundleItemButtom(int32 EntryPoint);
+	void ButtonFocusedChanged(bool bInHasFocus);
 	void ButtonSelected();
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
+	void ExecuteUbergraph_WBP_Blackmarket_FeaturedBundleItemButtom(int32 EntryPoint);
+	void OnFocused(bool bIsFocused);
+	void OnLoaded_AFB5B50A45B42D40D13E3EB4173D4487(class UObject* Loaded);
+	void OnOpenDLCFirstPartyStore();
+	void OnPlayerStoreItemDataIntialized();
+	void PreConstruct(bool IsDesignTime);
+	void UpdateBundleContent();
 
 public:
 	static class UClass* StaticClass()

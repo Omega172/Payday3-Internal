@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABP_VendingMachine_Base_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_VendingMachine_Base_C;
 
 SDK_NAMESPACE_END

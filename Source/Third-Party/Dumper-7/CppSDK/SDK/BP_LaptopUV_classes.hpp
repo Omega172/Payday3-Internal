@@ -37,13 +37,13 @@ public:
 	class ABP_UVLightPlayer_C*                    UVLight;                                           // 0x03C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_CarKeys_01_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_CarKeys_01_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
-	void BndEvt__BP_LaptopUV_Collision_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
-	void BndEvt__BP_LaptopUV_Collision_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
-	void ExecuteUbergraph_BP_LaptopUV(int32 EntryPoint);
-	void SetInteraction(bool State);
 	void UserConstructionScript();
+	void SetInteraction(bool State);
+	void ExecuteUbergraph_BP_LaptopUV(int32 EntryPoint);
+	void BndEvt__BP_LaptopUV_Collision_K2Node_ComponentBoundEvent_5_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+	void BndEvt__BP_LaptopUV_Collision_K2Node_ComponentBoundEvent_3_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
+	void BndEvt__BP_CarKeys_01_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
+	void BndEvt__BP_CarKeys_01_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -59,5 +59,6 @@ public:
 		return GetDefaultObjImpl<ABP_LaptopUV_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LaptopUV_C;
 
 SDK_NAMESPACE_END

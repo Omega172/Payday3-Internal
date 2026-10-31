@@ -46,40 +46,40 @@ public:
 	ESBZHackableActorState                        state;                                             // 0x0658(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Active();
-	void BndEvt__BP_CircuitBreakerStonk_SBZBinaryState_K2Node_ComponentBoundEvent_7_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
-	void BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_8_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_CircuitBreakerStonk_screenOn_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
-	void BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BP_GainedAccess();
-	void BP_OnHackingStarted(const class FText& ProcessText);
-	void BP_OnStateChanged(ESBZHackableActorState OldState, ESBZHackableActorState NewState);
-	void BP_UpdateProgressBar(int32 ProgressDone);
-	void DoorOpen__FinishedFunc();
-	void DoorOpen__UpdateFunc();
-	void ExecuteUbergraph_BP_CircuitBreakerStonk(int32 EntryPoint);
-	void GainAcccess();
-	class FText GetMarkerText();
-	void Hacking();
-	void HackingProgress(int32 Progression);
-	void HackingTimer(const class FText& Process_Text);
-	void Innactive();
-	void InteractionHatch(bool Enable);
-	void ReceiveBeginPlay();
-	void RemoveMarker();
-	void Sabotaged();
-	void setInteraction(bool enabled);
-	void ShowMarker();
-	void turnScreenOff();
-	void Unlocked();
-	void UpdateCodeViewer(const TArray<int32>& GeneratedCodes, const int32 TrueCodeIndex);
-	void UpdateIdentifier(const class FText& InIdentifier);
 	void UserConstructionScript();
+	void UpdateIdentifier(const class FText& InIdentifier_UpdateIdentifier);
+	void UpdateCodeViewer(const TArray<int32>& GeneratedCodes_UpdateCodeViewer, const int32 TrueCodeIndex_UpdateCodeViewer);
+	void Unlocked();
+	void turnScreenOff();
+	void ShowMarker();
+	void setInteraction(bool enabled);
+	void Sabotaged();
+	void RemoveMarker();
+	void ReceiveBeginPlay();
+	void InteractionHatch(bool Enable);
+	void Innactive();
+	void HackingTimer(const class FText& Process_Text);
+	void HackingProgress(int32 Progression);
+	void Hacking();
+	class FText GetMarkerText();
+	void GainAcccess();
+	void ExecuteUbergraph_BP_CircuitBreakerStonk(int32 EntryPoint);
+	void DoorOpen__UpdateFunc();
+	void DoorOpen__FinishedFunc();
+	void BP_UpdateProgressBar(int32 ProgressDone_BP_UpdateProgressBar);
+	void BP_OnStateChanged(ESBZHackableActorState OldState_BP_OnStateChanged, ESBZHackableActorState NewState_BP_OnStateChanged);
+	void BP_OnHackingStarted(const class FText& ProcessText_BP_OnHackingStarted);
+	void BP_GainedAccess();
+	void BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_CircuitBreakerStonk_screenOn_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
+	void BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_8_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_CircuitBreakerStonk_SBZBinaryState_K2Node_ComponentBoundEvent_7_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
+	void Active();
 
-	bool VisionPredicate(const class AActor* Viewer) const;
+	bool VisionPredicate(const class AActor* Viewer_VisionPredicate) const;
 
 public:
 	static class UClass* StaticClass()
@@ -95,5 +95,6 @@ public:
 		return GetDefaultObjImpl<ABP_CircuitBreakerStonk_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CircuitBreakerStonk_C;
 
 SDK_NAMESPACE_END

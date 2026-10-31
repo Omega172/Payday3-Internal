@@ -19,7 +19,7 @@ SDK_PARAM_NAMESPACE_START
 struct UTS_LastAgilityTime_C_CalcScoreBP final
 {
 public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         ReturnValue_CalcScoreBP;                           // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ASBZAIBaseCharacter*                    K2Node_DynamicCast_AsSBZAIBase_Character;          // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -33,6 +33,7 @@ public:
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_FClamp_Value_ImplicitCast;                // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_UTS_LastAgilityTime_C_CalcScoreBP;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

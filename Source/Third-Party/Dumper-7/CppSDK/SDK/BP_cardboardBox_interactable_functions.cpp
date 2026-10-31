@@ -16,174 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.BndEvt__BP_cardboardBox_interactable_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_cardboardBox_interactable_C::BndEvt__BP_cardboardBox_interactable_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_cardboardBox_interactable_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_cardboardBox_interactable_C", "BndEvt__BP_cardboardBox_interactable_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_cardboardBox_interactable_C_BndEvt__BP_cardboardBox_interactable_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.ExecuteUbergraph_BP_cardboardBox_interactable
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_cardboardBox_interactable_C::ExecuteUbergraph_BP_cardboardBox_interactable(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_cardboardBox_interactable_C", "ExecuteUbergraph_BP_cardboardBox_interactable");
-
-	Params::BP_cardboardBox_interactable_C_ExecuteUbergraph_BP_cardboardBox_interactable Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.lidOpen_anim__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_cardboardBox_interactable_C::lidOpen_anim__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_cardboardBox_interactable_C", "lidOpen_anim__FinishedFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.lidOpen_anim__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_cardboardBox_interactable_C::lidOpen_anim__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_cardboardBox_interactable_C", "lidOpen_anim__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.OnActorSpawned
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           SpawnedActor                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USceneComponent*                  AttachParent                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void ABP_cardboardBox_interactable_C::OnActorSpawned(class AActor* SpawnedActor, class USceneComponent* AttachParent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_cardboardBox_interactable_C", "OnActorSpawned");
-
-	Params::BP_cardboardBox_interactable_C_OnActorSpawned Parms{};
-
-	Parms.SpawnedActor = SpawnedActor;
-	Parms.AttachParent = AttachParent;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_cardboardBox_interactable_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_cardboardBox_interactable_C", "OnStateChanged");
-
-	Params::BP_cardboardBox_interactable_C_OnStateChanged Parms{};
-
-	Parms.bStateToChangeTo = bStateToChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.PopulateSpawnInformationMap
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TMap<class USceneComponent*, struct FTransform>*InOutSpawnDataMap                                      (Parm, OutParm, ContainsInstancedReference)
-
-void ABP_cardboardBox_interactable_C::PopulateSpawnInformationMap(TMap<class USceneComponent*, struct FTransform>* InOutSpawnDataMap)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_cardboardBox_interactable_C", "PopulateSpawnInformationMap");
-
-	Params::BP_cardboardBox_interactable_C_PopulateSpawnInformationMap Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (InOutSpawnDataMap != nullptr)
-		*InOutSpawnDataMap = std::move(Parms.InOutSpawnDataMap);
-}
-
-
-// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_cardboardBox_interactable_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_cardboardBox_interactable_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.setInteractable
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_cardboardBox_interactable_C::setInteractable(bool interactable)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_cardboardBox_interactable_C", "setInteractable");
-
-	Params::BP_cardboardBox_interactable_C_setInteractable Parms{};
-
-	Parms.interactable = interactable;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -196,10 +37,8 @@ void ABP_cardboardBox_interactable_C::setInteractable(bool interactable)
 
 void ABP_cardboardBox_interactable_C::SpawnItemInContainer(class UClass* WhatShould_Spawn, class ABP_RoomSpawnController_C* RoomControllerRef, class AActor** SpawnedActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_cardboardBox_interactable_C", "SpawnItemInContainer");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnItemInContainer", FnName));
 
 	Params::BP_cardboardBox_interactable_C_SpawnItemInContainer Parms{};
 
@@ -213,17 +52,156 @@ void ABP_cardboardBox_interactable_C::SpawnItemInContainer(class UClass* WhatSho
 }
 
 
-// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.setInteractable
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_cardboardBox_interactable_C::UserConstructionScript()
+void ABP_cardboardBox_interactable_C::setInteractable(bool interactable)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setInteractable", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_cardboardBox_interactable_C", "UserConstructionScript");
+	Params::BP_cardboardBox_interactable_C_setInteractable Parms{};
+
+	Parms.interactable = interactable;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_cardboardBox_interactable_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.PopulateSpawnInformationMap
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TMap<class USceneComponent*, struct FTransform>*InOutSpawnDataMap                                      (Parm, OutParm, ContainsInstancedReference)
+
+void ABP_cardboardBox_interactable_C::PopulateSpawnInformationMap(TMap<class USceneComponent*, struct FTransform>* InOutSpawnDataMap)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PopulateSpawnInformationMap", FnName));
+
+	Params::BP_cardboardBox_interactable_C_PopulateSpawnInformationMap Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (InOutSpawnDataMap != nullptr)
+		*InOutSpawnDataMap = std::move(Parms.InOutSpawnDataMap);
+}
+
+
+// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bStateToChangeTo_OnStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_cardboardBox_interactable_C::OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_cardboardBox_interactable_C_OnStateChanged Parms{};
+
+	Parms.bStateToChangeTo_OnStateChanged = bStateToChangeTo_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.OnActorSpawned
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           SpawnedActor                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USceneComponent*                  AttachParent                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void ABP_cardboardBox_interactable_C::OnActorSpawned(class AActor* SpawnedActor, class USceneComponent* AttachParent)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnActorSpawned", FnName));
+
+	Params::BP_cardboardBox_interactable_C_OnActorSpawned Parms{};
+
+	Parms.SpawnedActor = SpawnedActor;
+	Parms.AttachParent = AttachParent;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.lidOpen_anim__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_cardboardBox_interactable_C::lidOpen_anim__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"lidOpen_anim__UpdateFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.lidOpen_anim__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_cardboardBox_interactable_C::lidOpen_anim__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"lidOpen_anim__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.ExecuteUbergraph_BP_cardboardBox_interactable
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_cardboardBox_interactable_C::ExecuteUbergraph_BP_cardboardBox_interactable(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_cardboardBox_interactable_C", "ExecuteUbergraph_BP_cardboardBox_interactable", FuncInfo);
+
+	Params::BP_cardboardBox_interactable_C_ExecuteUbergraph_BP_cardboardBox_interactable Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.BndEvt__BP_cardboardBox_interactable_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_cardboardBox_interactable_C::BndEvt__BP_cardboardBox_interactable_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_cardboardBox_interactable_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_cardboardBox_interactable_C_BndEvt__BP_cardboardBox_interactable_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

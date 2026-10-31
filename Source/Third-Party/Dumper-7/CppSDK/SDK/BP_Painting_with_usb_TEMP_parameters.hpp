@@ -16,34 +16,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_Painting_with_usb_TEMP.BP_Painting_with_usb_TEMP_C.BndEvt__BP_Painting_with_usb_Interactable_pick_up_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_Painting_with_usb_TEMP_C_BndEvt__BP_Painting_with_usb_Interactable_pick_up_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
+// Function BP_Painting_with_usb_TEMP.BP_Painting_with_usb_TEMP_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_Painting_with_usb_TEMP_C_OnStateChanged final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bStateToChangeTo_OnStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_Painting_with_usb_TEMP.BP_Painting_with_usb_TEMP_C.BndEvt__BP_Painting_with_usb_Interactable_pick_up_K2Node_ComponentBoundEvent_3_SBZOnInteractableStateChangedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct BP_Painting_with_usb_TEMP_C_BndEvt__BP_Painting_with_usb_Interactable_pick_up_K2Node_ComponentBoundEvent_3_SBZOnInteractableStateChangedDelegate__DelegateSignature final
-{
-public:
-	const class USBZBaseInteractableComponent*    InteractableComponent;                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInNewState;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_Painting_with_usb_TEMP.BP_Painting_with_usb_TEMP_C.BndEvt__BP_Painting_with_usb_TEMP_Interactable_USB_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_Painting_with_usb_TEMP_C_BndEvt__BP_Painting_with_usb_TEMP_Interactable_USB_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_Painting_with_usb_TEMP_C_OnStateChanged;
 
 // Function BP_Painting_with_usb_TEMP.BP_Painting_with_usb_TEMP_C.ExecuteUbergraph_BP_Painting_with_usb_TEMP
 // 0x0080 (0x0080 - 0x0000)
@@ -75,15 +56,39 @@ public:
 	double                                        CallFunc_Greater_DoubleDouble_A_ImplicitCast;      // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Less_DoubleDouble_A_ImplicitCast;         // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Painting_with_usb_TEMP_C_ExecuteUbergraph_BP_Painting_with_usb_TEMP;
 
-// Function BP_Painting_with_usb_TEMP.BP_Painting_with_usb_TEMP_C.OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_Painting_with_usb_TEMP_C_OnStateChanged final
+// Function BP_Painting_with_usb_TEMP.BP_Painting_with_usb_TEMP_C.BndEvt__BP_Painting_with_usb_TEMP_Interactable_USB_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_Painting_with_usb_TEMP_C_BndEvt__BP_Painting_with_usb_TEMP_Interactable_USB_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature final
 {
 public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Painting_with_usb_TEMP_C_BndEvt__BP_Painting_with_usb_TEMP_Interactable_USB_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature;
+
+// Function BP_Painting_with_usb_TEMP.BP_Painting_with_usb_TEMP_C.BndEvt__BP_Painting_with_usb_Interactable_pick_up_K2Node_ComponentBoundEvent_3_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct BP_Painting_with_usb_TEMP_C_BndEvt__BP_Painting_with_usb_Interactable_pick_up_K2Node_ComponentBoundEvent_3_SBZOnInteractableStateChangedDelegate__DelegateSignature final
+{
+public:
+	const class USBZBaseInteractableComponent*    InteractableComponent;                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInNewState;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Painting_with_usb_TEMP_C_BndEvt__BP_Painting_with_usb_Interactable_pick_up_K2Node_ComponentBoundEvent_3_SBZOnInteractableStateChangedDelegate__DelegateSignature;
+
+// Function BP_Painting_with_usb_TEMP.BP_Painting_with_usb_TEMP_C.BndEvt__BP_Painting_with_usb_Interactable_pick_up_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_Painting_with_usb_TEMP_C_BndEvt__BP_Painting_with_usb_Interactable_pick_up_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Painting_with_usb_TEMP_C_BndEvt__BP_Painting_with_usb_Interactable_pick_up_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -29,8 +29,8 @@ public:
 	int32                                         Particle_Count;                                    // 0x03C8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__NewBlueprint_PropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
 	void ExecuteUbergraph_BP_penthouse_PH_DisplayPillar_G_02(int32 EntryPoint);
+	void BndEvt__NewBlueprint_PropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
 
 public:
 	static class UClass* StaticClass()
@@ -46,5 +46,6 @@ public:
 		return GetDefaultObjImpl<ABP_penthouse_PH_DisplayPillar_G_02_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_penthouse_PH_DisplayPillar_G_02_C;
 
 SDK_NAMESPACE_END

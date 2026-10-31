@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AVFX_NightClub_C>();
 	}
 };
+DUMPER7_ASSERTS_AVFX_NightClub_C;
 
 SDK_NAMESPACE_END

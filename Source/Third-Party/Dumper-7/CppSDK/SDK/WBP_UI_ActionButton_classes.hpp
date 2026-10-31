@@ -34,14 +34,14 @@ public:
 	TMulticastInlineDelegate<void()>              ButtonSelected;                                    // 0x0390(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void UpdateHover(bool bIsMouseOver);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnMouseLeave(const struct FPointerEvent& MouseEvent_OnMouseLeave);
-	void OnMouseEnter(const struct FGeometry& MyGeometry_OnMouseEnter, const struct FPointerEvent& MouseEvent_OnMouseEnter);
-	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry_OnMouseButtonDown, const struct FPointerEvent& MouseEvent_OnMouseButtonDown);
-	void OnInitialized();
-	void InitializeWidgetVisuals();
 	void ExecuteUbergraph_WBP_UI_ActionButton(int32 EntryPoint);
+	void InitializeWidgetVisuals();
+	void OnInitialized();
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void OnMouseLeave(const struct FPointerEvent& MouseEvent);
+	void PreConstruct(bool IsDesignTime);
+	void UpdateHover(bool bIsMouseOver);
 
 public:
 	static class UClass* StaticClass()

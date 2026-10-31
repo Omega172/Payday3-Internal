@@ -33,8 +33,8 @@ public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0360(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BPL_WallLampBar_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 	void ExecuteUbergraph_ONE_BPL_WallLampBar(int32 EntryPoint);
+	void BndEvt__BPL_WallLampBar_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 
 public:
 	static class UClass* StaticClass()
@@ -50,5 +50,6 @@ public:
 		return GetDefaultObjImpl<AONE_BPL_WallLampBar_C>();
 	}
 };
+DUMPER7_ASSERTS_AONE_BPL_WallLampBar_C;
 
 SDK_NAMESPACE_END

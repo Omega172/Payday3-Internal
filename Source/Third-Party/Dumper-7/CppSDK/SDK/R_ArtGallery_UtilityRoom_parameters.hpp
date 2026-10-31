@@ -14,14 +14,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function R_ArtGallery_UtilityRoom.R_ArtGallery_UtilityRoom_C.ArtGallery_UtilityRoomKeycardEvent
-// 0x0001 (0x0001 - 0x0000)
-struct R_ArtGallery_UtilityRoom_C_ArtGallery_UtilityRoomKeycardEvent final
-{
-public:
-	bool                                          Bool;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function R_ArtGallery_UtilityRoom.R_ArtGallery_UtilityRoom_C.ExecuteUbergraph_R_ArtGallery_UtilityRoom
 // 0x0028 (0x0028 - 0x0000)
 struct R_ArtGallery_UtilityRoom_C_ExecuteUbergraph_R_ArtGallery_UtilityRoom final
@@ -33,6 +25,16 @@ public:
 	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors;                 // 0x0008(0x0010)(ReferenceParm)
 	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors;            // 0x0018(0x0010)(ReferenceParm)
 };
+DUMPER7_ASSERTS_R_ArtGallery_UtilityRoom_C_ExecuteUbergraph_R_ArtGallery_UtilityRoom;
+
+// Function R_ArtGallery_UtilityRoom.R_ArtGallery_UtilityRoom_C.ArtGallery_UtilityRoomKeycardEvent
+// 0x0001 (0x0001 - 0x0000)
+struct R_ArtGallery_UtilityRoom_C_ArtGallery_UtilityRoomKeycardEvent final
+{
+public:
+	bool                                          Bool;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_ArtGallery_UtilityRoom_C_ArtGallery_UtilityRoomKeycardEvent;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

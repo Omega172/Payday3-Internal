@@ -61,5 +61,6 @@ public:
 		return GetDefaultObjImpl<ABP_Master_Cloth_Fixture_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Master_Cloth_Fixture_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_VendingMachine_01_SlamTen_red_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_VendingMachine_01_SlamTen_red_C;
 
 SDK_NAMESPACE_END

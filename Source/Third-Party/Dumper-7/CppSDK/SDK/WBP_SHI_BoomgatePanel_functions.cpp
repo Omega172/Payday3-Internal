@@ -16,41 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_SHI_BoomgatePanel.WBP_SHI_BoomgatePanel_C.ExecuteUbergraph_WBP_SHI_BoomgatePanel
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_SHI_BoomgatePanel_C::ExecuteUbergraph_WBP_SHI_BoomgatePanel(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SHI_BoomgatePanel_C", "ExecuteUbergraph_WBP_SHI_BoomgatePanel");
-
-	Params::WBP_SHI_BoomgatePanel_C_ExecuteUbergraph_WBP_SHI_BoomgatePanel Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_SHI_BoomgatePanel.WBP_SHI_BoomgatePanel_C.setLogo
+// Function WBP_SHI_BoomgatePanel.WBP_SHI_BoomgatePanel_C.setTitle
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      RoomName                                               (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_SHI_BoomgatePanel_C::setLogo(class UTexture2D* Texture)
+void UWBP_SHI_BoomgatePanel_C::setTitle(const class FText& RoomName)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setTitle", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SHI_BoomgatePanel_C", "setLogo");
+	Params::WBP_SHI_BoomgatePanel_C_setTitle Parms{};
 
-	Params::WBP_SHI_BoomgatePanel_C_setLogo Parms{};
-
-	Parms.Texture = Texture;
+	Parms.RoomName = std::move(RoomName);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -63,10 +41,8 @@ void UWBP_SHI_BoomgatePanel_C::setLogo(class UTexture2D* Texture)
 
 void UWBP_SHI_BoomgatePanel_C::setState(bool open)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SHI_BoomgatePanel_C", "setState");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setState", FnName));
 
 	Params::WBP_SHI_BoomgatePanel_C_setState Parms{};
 
@@ -76,21 +52,37 @@ void UWBP_SHI_BoomgatePanel_C::setState(bool open)
 }
 
 
-// Function WBP_SHI_BoomgatePanel.WBP_SHI_BoomgatePanel_C.setTitle
+// Function WBP_SHI_BoomgatePanel.WBP_SHI_BoomgatePanel_C.setLogo
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FText&                      RoomName                                               (BlueprintVisible, BlueprintReadOnly, Parm)
+// class UTexture2D*                       Texture                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_SHI_BoomgatePanel_C::setTitle(const class FText& RoomName)
+void UWBP_SHI_BoomgatePanel_C::setLogo(class UTexture2D* Texture)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setLogo", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_SHI_BoomgatePanel_C", "setTitle");
+	Params::WBP_SHI_BoomgatePanel_C_setLogo Parms{};
 
-	Params::WBP_SHI_BoomgatePanel_C_setTitle Parms{};
+	Parms.Texture = Texture;
 
-	Parms.RoomName = std::move(RoomName);
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_SHI_BoomgatePanel.WBP_SHI_BoomgatePanel_C.ExecuteUbergraph_WBP_SHI_BoomgatePanel
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_SHI_BoomgatePanel_C::ExecuteUbergraph_WBP_SHI_BoomgatePanel(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_SHI_BoomgatePanel_C", "ExecuteUbergraph_WBP_SHI_BoomgatePanel", FuncInfo);
+
+	Params::WBP_SHI_BoomgatePanel_C_ExecuteUbergraph_WBP_SHI_BoomgatePanel Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

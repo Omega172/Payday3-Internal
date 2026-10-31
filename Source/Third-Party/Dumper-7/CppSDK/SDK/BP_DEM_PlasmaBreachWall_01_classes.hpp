@@ -42,15 +42,15 @@ public:
 	bool                                          binaryReactorState;                                // 0x03F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_DEM_PlasmaBreachWall_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
-	void BndEvt__BP_DEM_PlasmaBreachWall_01_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_DEM_PlasmaBreachWall_01(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void ReceiveBeginPlay();
-	void setBinaryState(bool state, bool doCosmetics);
-	void setHeatLevel(double heatLevel);
-	void setInteraction(bool enabled);
 	void setProgression(double progression);
+	void setInteraction(bool enabled);
+	void setHeatLevel(double heatLevel);
+	void setBinaryState(bool state, bool doCosmetics);
+	void ReceiveBeginPlay();
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_DEM_PlasmaBreachWall_01(int32 EntryPoint);
+	void BndEvt__BP_DEM_PlasmaBreachWall_01_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_DEM_PlasmaBreachWall_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
 
 public:
 	static class UClass* StaticClass()
@@ -66,5 +66,6 @@ public:
 		return GetDefaultObjImpl<ABP_DEM_PlasmaBreachWall_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DEM_PlasmaBreachWall_01_C;
 
 SDK_NAMESPACE_END

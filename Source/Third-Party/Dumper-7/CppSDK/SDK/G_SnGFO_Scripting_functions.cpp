@@ -16,2476 +16,195 @@
 
 SDK_NAMESPACE_START
 
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActionPhaseStarted
-// (Event, Public, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::ActionPhaseStarted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "ActionPhaseStarted");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateEndlessAssault
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.StartTimerForLiftUpHint
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_SnGFO_Scripting_C::ActivateEndlessAssault()
+void AG_SnGFO_Scripting_C::StartTimerForLiftUpHint()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "ActivateEndlessAssault");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StartTimerForLiftUpHint", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateFirstObjective
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.StartTimerForLiftDownHint
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_SnGFO_Scripting_C::ActivateFirstObjective()
+void AG_SnGFO_Scripting_C::StartTimerForLiftDownHint()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "ActivateFirstObjective");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StartTimerForLiftDownHint", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateGetToTheTruck
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.StartLevelProgerssionTimer
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_SnGFO_Scripting_C::ActivateGetToTheTruck()
+void AG_SnGFO_Scripting_C::StartLevelProgerssionTimer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "ActivateGetToTheTruck");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StartLevelProgerssionTimer", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateLoudEscape
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.StartCountdownForEscapeVanDriveIn
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_SnGFO_Scripting_C::ActivateLoudEscape()
+void AG_SnGFO_Scripting_C::StartCountdownForEscapeVanDriveIn()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "ActivateLoudEscape");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StartCountdownForEscapeVanDriveIn", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateLoudGameplayElements
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ShowWaypointOnCars
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_SnGFO_Scripting_C::ActivateLoudGameplayElements()
+void AG_SnGFO_Scripting_C::ShowWaypointOnCars()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "ActivateLoudGameplayElements");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ShowWaypointOnCars", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateLoudSecure
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.SetVanWaitTime
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_SnGFO_Scripting_C::ActivateLoudSecure()
+void AG_SnGFO_Scripting_C::SetVanWaitTime()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "ActivateLoudSecure");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetVanWaitTime", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateMilestone2
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.SetStealthEscapeVan
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_SnGFO_Scripting_C::ActivateMilestone2()
+void AG_SnGFO_Scripting_C::SetStealthEscapeVan()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "ActivateMilestone2");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetStealthEscapeVan", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateMilestone3
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::ActivateMilestone3()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "ActivateMilestone3");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateRedDoorEscape
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::ActivateRedDoorEscape()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "ActivateRedDoorEscape");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateRedDoorSecureLoot
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::ActivateRedDoorSecureLoot()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "ActivateRedDoorSecureLoot");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateSecureLoot
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::ActivateSecureLoot()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "ActivateSecureLoot");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateSewerEscape
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::ActivateSewerEscape()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "ActivateSewerEscape");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateSewerSecureLoot
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::ActivateSewerSecureLoot()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "ActivateSewerSecureLoot");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateSideEntranceEscape
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::ActivateSideEntranceEscape()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "ActivateSideEntranceEscape");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateSideEntranceSecureLoot
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::ActivateSideEntranceSecureLoot()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "ActivateSideEntranceSecureLoot");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateStealthEscape
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::ActivateStealthEscape()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "ActivateStealthEscape");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateStreetEscape
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::ActivateStreetEscape()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "ActivateStreetEscape");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateStreetSecureLoot
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::ActivateStreetSecureLoot()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "ActivateStreetSecureLoot");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateWaitForEscapeVan
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::ActivateWaitForEscapeVan()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "ActivateWaitForEscapeVan");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.Alarm
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::Alarm()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "Alarm");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.Assault
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::Assault()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "Assault");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BindCarLifts
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BindCarLifts()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BindCarLifts");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BindLootCars
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BindLootCars()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BindLootCars");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BlackScreenStarted
-// (Event, Public, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BlackScreenStarted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BlackScreenStarted");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_CableGeneratorSabotage1_K2Node_ActorBoundEvent_1_onGeneratorStarted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_CableGeneratorSabotage1_K2Node_ActorBoundEvent_1_onGeneratorStarted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_Fort_Scripting_BP_CableGeneratorSabotage1_K2Node_ActorBoundEvent_1_onGeneratorStarted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_CableGeneratorSabotage2_K2Node_ActorBoundEvent_3_onGeneratorStarted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_CableGeneratorSabotage2_K2Node_ActorBoundEvent_3_onGeneratorStarted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_Fort_Scripting_BP_CableGeneratorSabotage2_K2Node_ActorBoundEvent_3_onGeneratorStarted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_CableGeneratorSabotage3_K2Node_ActorBoundEvent_4_onGeneratorStarted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_CableGeneratorSabotage3_K2Node_ActorBoundEvent_4_onGeneratorStarted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_Fort_Scripting_BP_CableGeneratorSabotage3_K2Node_ActorBoundEvent_4_onGeneratorStarted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_FlipSwitch_SabotagePoint1_K2Node_ActorBoundEvent_104_SBZSabotagePointDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.SetSecureLootZone
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bEnabled                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ASBZWaypoint*                     Waypoint                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZBagTriggerVolume*             BagTriggerVolume                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPlayerTriggerVolume*          VoiceVolume                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_FlipSwitch_SabotagePoint1_K2Node_ActorBoundEvent_104_SBZSabotagePointDelegate__DelegateSignature(bool bSabotaged)
+void AG_SnGFO_Scripting_C::SetSecureLootZone(bool bEnabled, class ASBZWaypoint* Waypoint, class ASBZBagTriggerVolume* BagTriggerVolume, class ASBZPlayerTriggerVolume* VoiceVolume)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetSecureLootZone", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_Fort_Scripting_BP_FlipSwitch_SabotagePoint1_K2Node_ActorBoundEvent_104_SBZSabotagePointDelegate__DelegateSignature");
+	Params::G_SnGFO_Scripting_C_SetSecureLootZone Parms{};
 
-	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_FlipSwitch_SabotagePoint1_K2Node_ActorBoundEvent_104_SBZSabotagePointDelegate__DelegateSignature Parms{};
-
-	Parms.bSabotaged = bSabotaged;
+	Parms.bEnabled = bEnabled;
+	Parms.Waypoint = Waypoint;
+	Parms.BagTriggerVolume = BagTriggerVolume;
+	Parms.VoiceVolume = VoiceVolume;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_FlipSwitch_SabotagePoint2_K2Node_ActorBoundEvent_131_SBZSabotagePointDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_FlipSwitch_SabotagePoint2_K2Node_ActorBoundEvent_131_SBZSabotagePointDelegate__DelegateSignature(bool bSabotaged)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_Fort_Scripting_BP_FlipSwitch_SabotagePoint2_K2Node_ActorBoundEvent_131_SBZSabotagePointDelegate__DelegateSignature");
-
-	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_FlipSwitch_SabotagePoint2_K2Node_ActorBoundEvent_131_SBZSabotagePointDelegate__DelegateSignature Parms{};
-
-	Parms.bSabotaged = bSabotaged;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_FOR_CableCarPark_01_RolledCable1_K2Node_ActorBoundEvent_182_onObjectPickedUp__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_FOR_CableCarPark_01_RolledCable1_K2Node_ActorBoundEvent_182_onObjectPickedUp__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_Fort_Scripting_BP_FOR_CableCarPark_01_RolledCable1_K2Node_ActorBoundEvent_182_onObjectPickedUp__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_FOR_CableCarPark_01_RolledCable2_K2Node_ActorBoundEvent_183_onObjectPickedUp__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_FOR_CableCarPark_01_RolledCable2_K2Node_ActorBoundEvent_183_onObjectPickedUp__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_Fort_Scripting_BP_FOR_CableCarPark_01_RolledCable2_K2Node_ActorBoundEvent_183_onObjectPickedUp__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_FOR_CableCarPark_01_RolledCable3_K2Node_ActorBoundEvent_184_onObjectPickedUp__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_FOR_CableCarPark_01_RolledCable3_K2Node_ActorBoundEvent_184_onObjectPickedUp__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_Fort_Scripting_BP_FOR_CableCarPark_01_RolledCable3_K2Node_ActorBoundEvent_184_onObjectPickedUp__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_Int_SingleDoor_Reinforced_Garage2_K2Node_ActorBoundEvent_113_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_Int_SingleDoor_Reinforced_Garage2_K2Node_ActorBoundEvent_113_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_Fort_Scripting_BP_Int_SingleDoor_Reinforced_Garage2_K2Node_ActorBoundEvent_113_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_Int_SingleDoor_Reinforced_Garage2_K2Node_ActorBoundEvent_113_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_openable_Van_Police1_K2Node_ActorBoundEvent_70_onOpened__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_openable_Van_Police1_K2Node_ActorBoundEvent_70_onOpened__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_Fort_Scripting_BP_openable_Van_Police1_K2Node_ActorBoundEvent_70_onOpened__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_openable_Van_Police2_K2Node_ActorBoundEvent_128_onOpened__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_openable_Van_Police2_K2Node_ActorBoundEvent_128_onOpened__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_Fort_Scripting_BP_openable_Van_Police2_K2Node_ActorBoundEvent_128_onOpened__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_openable_Van_Police2_K2Node_ActorBoundEvent_155_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_openable_Van_Police2_K2Node_ActorBoundEvent_155_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_Fort_Scripting_BP_openable_Van_Police2_K2Node_ActorBoundEvent_155_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_openable_Van_Police2_K2Node_ActorBoundEvent_155_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_openable_Van_Police3_K2Node_ActorBoundEvent_129_onOpened__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_openable_Van_Police3_K2Node_ActorBoundEvent_129_onOpened__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_Fort_Scripting_BP_openable_Van_Police3_K2Node_ActorBoundEvent_129_onOpened__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_openable_Van_Police3_K2Node_ActorBoundEvent_156_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_openable_Van_Police3_K2Node_ActorBoundEvent_156_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_Fort_Scripting_BP_openable_Van_Police3_K2Node_ActorBoundEvent_156_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_openable_Van_Police3_K2Node_ActorBoundEvent_156_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_openable_Van_Police4_K2Node_ActorBoundEvent_157_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_openable_Van_Police4_K2Node_ActorBoundEvent_157_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_Fort_Scripting_BP_openable_Van_Police4_K2Node_ActorBoundEvent_157_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_openable_Van_Police4_K2Node_ActorBoundEvent_157_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_openable_Van_Police4_K2Node_ActorBoundEvent_197_onOpened__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_openable_Van_Police4_K2Node_ActorBoundEvent_197_onOpened__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_Fort_Scripting_BP_openable_Van_Police4_K2Node_ActorBoundEvent_197_onOpened__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_openable_Van_Police_2_K2Node_ActorBoundEvent_88_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_openable_Van_Police_2_K2Node_ActorBoundEvent_88_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_Fort_Scripting_BP_openable_Van_Police_2_K2Node_ActorBoundEvent_88_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_openable_Van_Police_2_K2Node_ActorBoundEvent_88_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator2_K2Node_ActorBoundEvent_137_SBZSabotagePointDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator2_K2Node_ActorBoundEvent_137_SBZSabotagePointDelegate__DelegateSignature(bool bSabotaged)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator2_K2Node_ActorBoundEvent_137_SBZSabotagePointDelegate__DelegateSignature");
-
-	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator2_K2Node_ActorBoundEvent_137_SBZSabotagePointDelegate__DelegateSignature Parms{};
-
-	Parms.bSabotaged = bSabotaged;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator3_K2Node_ActorBoundEvent_138_SBZSabotagePointDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator3_K2Node_ActorBoundEvent_138_SBZSabotagePointDelegate__DelegateSignature(bool bSabotaged)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator3_K2Node_ActorBoundEvent_138_SBZSabotagePointDelegate__DelegateSignature");
-
-	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator3_K2Node_ActorBoundEvent_138_SBZSabotagePointDelegate__DelegateSignature Parms{};
-
-	Parms.bSabotaged = bSabotaged;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator_K2Node_ActorBoundEvent_119_SBZSabotagePointDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator_K2Node_ActorBoundEvent_119_SBZSabotagePointDelegate__DelegateSignature(bool bSabotaged)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator_K2Node_ActorBoundEvent_119_SBZSabotagePointDelegate__DelegateSignature");
-
-	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator_K2Node_ActorBoundEvent_119_SBZSabotagePointDelegate__DelegateSignature Parms{};
-
-	Parms.bSabotaged = bSabotaged;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZBagTriggerVolume_Stealth2_2_K2Node_ActorBoundEvent_46_SBZBagEnteredDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_SBZBagTriggerVolume_Stealth2_2_K2Node_ActorBoundEvent_46_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_Fort_Scripting_SBZBagTriggerVolume_Stealth2_2_K2Node_ActorBoundEvent_46_SBZBagEnteredDelegate__DelegateSignature");
-
-	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZBagTriggerVolume_Stealth2_2_K2Node_ActorBoundEvent_46_SBZBagEnteredDelegate__DelegateSignature Parms{};
-
-	Parms.Volume = Volume;
-	Parms.Bag = Bag;
-	Parms.Handle = std::move(Handle);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZObjective_ReStartGenerator_K2Node_ActorBoundEvent_124_SBZOnObjective__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_SBZObjective_ReStartGenerator_K2Node_ActorBoundEvent_124_SBZOnObjective__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_Fort_Scripting_SBZObjective_ReStartGenerator_K2Node_ActorBoundEvent_124_SBZOnObjective__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZPlayerEscapeVolume_Escape_StealthGate_K2Node_ActorBoundEvent_80_SBZEscapeTimerDelegate__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_SBZPlayerEscapeVolume_Escape_StealthGate_K2Node_ActorBoundEvent_80_SBZEscapeTimerDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_Fort_Scripting_SBZPlayerEscapeVolume_Escape_StealthGate_K2Node_ActorBoundEvent_80_SBZEscapeTimerDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZPlayerStartGroup1_K2Node_ActorBoundEvent_6_SBZOnSpawnGroupChosen__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZPlayerStartGroup*             PlayerStartGroup                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_SBZPlayerStartGroup1_K2Node_ActorBoundEvent_6_SBZOnSpawnGroupChosen__DelegateSignature(class ASBZPlayerStartGroup* PlayerStartGroup)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_Fort_Scripting_SBZPlayerStartGroup1_K2Node_ActorBoundEvent_6_SBZOnSpawnGroupChosen__DelegateSignature");
-
-	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerStartGroup1_K2Node_ActorBoundEvent_6_SBZOnSpawnGroupChosen__DelegateSignature Parms{};
-
-	Parms.PlayerStartGroup = PlayerStartGroup;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZPlayerStartGroup2_5_K2Node_ActorBoundEvent_7_SBZOnSpawnGroupChosen__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZPlayerStartGroup*             PlayerStartGroup                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_SBZPlayerStartGroup2_5_K2Node_ActorBoundEvent_7_SBZOnSpawnGroupChosen__DelegateSignature(class ASBZPlayerStartGroup* PlayerStartGroup)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_Fort_Scripting_SBZPlayerStartGroup2_5_K2Node_ActorBoundEvent_7_SBZOnSpawnGroupChosen__DelegateSignature");
-
-	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerStartGroup2_5_K2Node_ActorBoundEvent_7_SBZOnSpawnGroupChosen__DelegateSignature Parms{};
-
-	Parms.PlayerStartGroup = PlayerStartGroup;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZPlayerStartGroup4_K2Node_ActorBoundEvent_57_SBZOnSpawnGroupChosen__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZPlayerStartGroup*             PlayerStartGroup                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_SBZPlayerStartGroup4_K2Node_ActorBoundEvent_57_SBZOnSpawnGroupChosen__DelegateSignature(class ASBZPlayerStartGroup* PlayerStartGroup)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_Fort_Scripting_SBZPlayerStartGroup4_K2Node_ActorBoundEvent_57_SBZOnSpawnGroupChosen__DelegateSignature");
-
-	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerStartGroup4_K2Node_ActorBoundEvent_57_SBZOnSpawnGroupChosen__DelegateSignature Parms{};
-
-	Parms.PlayerStartGroup = PlayerStartGroup;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthSewer_K2Node_ActorBoundEvent_49_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthSewer_K2Node_ActorBoundEvent_49_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_Fort_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthSewer_K2Node_ActorBoundEvent_49_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthSewer_K2Node_ActorBoundEvent_49_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_146_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_146_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_146_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_146_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_EnteredDepot_K2Node_ActorBoundEvent_43_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_EnteredDepot_K2Node_ActorBoundEvent_43_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_EnteredDepot_K2Node_ActorBoundEvent_43_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_EnteredDepot_K2Node_ActorBoundEvent_43_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_PlayerInsideGarage_K2Node_ActorBoundEvent_132_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_PlayerInsideGarage_K2Node_ActorBoundEvent_132_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_PlayerInsideGarage_K2Node_ActorBoundEvent_132_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_PlayerInsideGarage_K2Node_ActorBoundEvent_132_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZTrafficSpline_StealthEscape_DriveIn1_K2Node_ActorBoundEvent_47_SBZSplineOnEndReached__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_SBZTrafficSpline_StealthEscape_DriveIn1_K2Node_ActorBoundEvent_47_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_Fort_Scripting_SBZTrafficSpline_StealthEscape_DriveIn1_K2Node_ActorBoundEvent_47_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZTrafficSpline_StealthEscape_DriveIn1_K2Node_ActorBoundEvent_47_SBZSplineOnEndReached__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature");
-
-	Params::G_SnGFO_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature Parms{};
-
-	Parms.Volume = Volume;
-	Parms.Bag = Bag;
-	Parms.Handle = std::move(Handle);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZPlayerEscapeVolume1_K2Node_ActorBoundEvent_9_SBZEscapeTimerDelegate__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_SBZPlayerEscapeVolume1_K2Node_ActorBoundEvent_9_SBZEscapeTimerDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_ScriptTemplate_Scripting_SBZPlayerEscapeVolume1_K2Node_ActorBoundEvent_9_SBZEscapeTimerDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_SnGFO_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_BP_InteractableCocaine_LowValue2_8_K2Node_ActorBoundEvent_5_SBZBagPickedUp__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_BP_InteractableCocaine_LowValue2_8_K2Node_ActorBoundEvent_5_SBZBagPickedUp__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_SnGFO_Scripting_BP_InteractableCocaine_LowValue2_8_K2Node_ActorBoundEvent_5_SBZBagPickedUp__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_BP_InteractableCocaine_LowValue3_11_K2Node_ActorBoundEvent_11_SBZBagPickedUp__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_BP_InteractableCocaine_LowValue3_11_K2Node_ActorBoundEvent_11_SBZBagPickedUp__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_SnGFO_Scripting_BP_InteractableCocaine_LowValue3_11_K2Node_ActorBoundEvent_11_SBZBagPickedUp__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_BP_InteractableCocaine_LowValue4_14_K2Node_ActorBoundEvent_13_SBZBagPickedUp__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_BP_InteractableCocaine_LowValue4_14_K2Node_ActorBoundEvent_13_SBZBagPickedUp__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_SnGFO_Scripting_BP_InteractableCocaine_LowValue4_14_K2Node_ActorBoundEvent_13_SBZBagPickedUp__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_BP_InteractableCocaine_LowValue5_17_K2Node_ActorBoundEvent_14_SBZBagPickedUp__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_BP_InteractableCocaine_LowValue5_17_K2Node_ActorBoundEvent_14_SBZBagPickedUp__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_SnGFO_Scripting_BP_InteractableCocaine_LowValue5_17_K2Node_ActorBoundEvent_14_SBZBagPickedUp__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_BP_InteractableCocaine_LowValue_5_K2Node_ActorBoundEvent_0_SBZBagPickedUp__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_BP_InteractableCocaine_LowValue_5_K2Node_ActorBoundEvent_0_SBZBagPickedUp__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_SnGFO_Scripting_BP_InteractableCocaine_LowValue_5_K2Node_ActorBoundEvent_0_SBZBagPickedUp__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZBagTriggerVolume_SideEntrance_K2Node_ActorBoundEvent_12_SBZBagEnteredDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZBagTriggerVolume_SideEntrance_K2Node_ActorBoundEvent_12_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_SnGFO_Scripting_SBZBagTriggerVolume_SideEntrance_K2Node_ActorBoundEvent_12_SBZBagEnteredDelegate__DelegateSignature");
-
-	Params::G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZBagTriggerVolume_SideEntrance_K2Node_ActorBoundEvent_12_SBZBagEnteredDelegate__DelegateSignature Parms{};
-
-	Parms.Volume = Volume;
-	Parms.Bag = Bag;
-	Parms.Handle = std::move(Handle);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZBagTriggerVolume_Street_K2Node_ActorBoundEvent_30_SBZBagEnteredDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZBagTriggerVolume_Street_K2Node_ActorBoundEvent_30_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_SnGFO_Scripting_SBZBagTriggerVolume_Street_K2Node_ActorBoundEvent_30_SBZBagEnteredDelegate__DelegateSignature");
-
-	Params::G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZBagTriggerVolume_Street_K2Node_ActorBoundEvent_30_SBZBagEnteredDelegate__DelegateSignature Parms{};
-
-	Parms.Volume = Volume;
-	Parms.Bag = Bag;
-	Parms.Handle = std::move(Handle);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZObjective_FindCars_K2Node_ActorBoundEvent_6_SBZOnObjective__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZObjective_FindCars_K2Node_ActorBoundEvent_6_SBZOnObjective__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_SnGFO_Scripting_SBZObjective_FindCars_K2Node_ActorBoundEvent_6_SBZOnObjective__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZObjective_GetToTheSecurityTruck_K2Node_ActorBoundEvent_7_SBZOnObjective__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZObjective_GetToTheSecurityTruck_K2Node_ActorBoundEvent_7_SBZOnObjective__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_SnGFO_Scripting_SBZObjective_GetToTheSecurityTruck_K2Node_ActorBoundEvent_7_SBZOnObjective__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZObjective_Hold_Position_LoudDuringSecure2_K2Node_ActorBoundEvent_76_SBZOnObjective__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZObjective_Hold_Position_LoudDuringSecure2_K2Node_ActorBoundEvent_76_SBZOnObjective__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_SnGFO_Scripting_SBZObjective_Hold_Position_LoudDuringSecure2_K2Node_ActorBoundEvent_76_SBZOnObjective__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZObjective_LookIntoGarage_K2Node_ActorBoundEvent_224_SBZOnObjective__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZObjective_LookIntoGarage_K2Node_ActorBoundEvent_224_SBZOnObjective__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_SnGFO_Scripting_SBZObjective_LookIntoGarage_K2Node_ActorBoundEvent_224_SBZOnObjective__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZObjective_OpenTheTruck_K2Node_ActorBoundEvent_36_SBZOnObjective__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZObjective_OpenTheTruck_K2Node_ActorBoundEvent_36_SBZOnObjective__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_SnGFO_Scripting_SBZObjective_OpenTheTruck_K2Node_ActorBoundEvent_36_SBZOnObjective__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZObjective_SearchTheCars_K2Node_ActorBoundEvent_75_SBZOnObjective__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZObjective_SearchTheCars_K2Node_ActorBoundEvent_75_SBZOnObjective__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_SnGFO_Scripting_SBZObjective_SearchTheCars_K2Node_ActorBoundEvent_75_SBZOnObjective__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZObjective_StealInstantLoot_K2Node_ActorBoundEvent_37_SBZOnObjective__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZObjective_StealInstantLoot_K2Node_ActorBoundEvent_37_SBZOnObjective__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_SnGFO_Scripting_SBZObjective_StealInstantLoot_K2Node_ActorBoundEvent_37_SBZOnObjective__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZObjective_StealSecureMoney2_K2Node_ActorBoundEvent_77_SBZOnObjective__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZObjective_StealSecureMoney2_K2Node_ActorBoundEvent_77_SBZOnObjective__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_SnGFO_Scripting_SBZObjective_StealSecureMoney2_K2Node_ActorBoundEvent_77_SBZOnObjective__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZPlayerEscapeVolume_StealthSideEntrance_K2Node_ActorBoundEvent_10_SBZEscapeTimerDelegate__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZPlayerEscapeVolume_StealthSideEntrance_K2Node_ActorBoundEvent_10_SBZEscapeTimerDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_SnGFO_Scripting_SBZPlayerEscapeVolume_StealthSideEntrance_K2Node_ActorBoundEvent_10_SBZEscapeTimerDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZPlayerEscapeVolume_Street_K2Node_ActorBoundEvent_31_SBZEscapeTimerDelegate__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZPlayerEscapeVolume_Street_K2Node_ActorBoundEvent_31_SBZEscapeTimerDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_SnGFO_Scripting_SBZPlayerEscapeVolume_Street_K2Node_ActorBoundEvent_31_SBZEscapeTimerDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthGate2_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthGate2_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_SnGFO_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthGate2_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthGate2_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthSideEntrance_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthSideEntrance_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_SnGFO_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthSideEntrance_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthSideEntrance_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_EnteredGarage_K2Node_ActorBoundEvent_222_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_EnteredGarage_K2Node_ActorBoundEvent_222_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_EnteredGarage_K2Node_ActorBoundEvent_222_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_EnteredGarage_K2Node_ActorBoundEvent_222_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_GetToSecurityTruck_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_GetToSecurityTruck_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_GetToSecurityTruck_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_GetToSecurityTruck_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_PlayerOnStreet_K2Node_ActorBoundEvent_26_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_PlayerOnStreet_K2Node_ActorBoundEvent_26_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_PlayerOnStreet_K2Node_ActorBoundEvent_26_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_PlayerOnStreet_K2Node_ActorBoundEvent_26_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZTrafficSpline_Escape_DriveInStreet_K2Node_ActorBoundEvent_42_SBZSplineOnEndReached__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZTrafficSpline_Escape_DriveInStreet_K2Node_ActorBoundEvent_42_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BndEvt__G_SnGFO_Scripting_SBZTrafficSpline_Escape_DriveInStreet_K2Node_ActorBoundEvent_42_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZTrafficSpline_Escape_DriveInStreet_K2Node_ActorBoundEvent_42_SBZSplineOnEndReached__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BreachedEvidenceDoor
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::BreachedEvidenceDoor()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "BreachedEvidenceDoor");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.CarFirstInteraction
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::CarFirstInteraction()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "CarFirstInteraction");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.CarHiddenAreaUncovered
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::CarHiddenAreaUncovered()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "CarHiddenAreaUncovered");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.CarLiftInteracted
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::CarLiftInteracted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "CarLiftInteracted");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.CarLootPickedUp
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::CarLootPickedUp()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "CarLootPickedUp");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.CloseSewerVanDoors
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::CloseSewerVanDoors()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "CloseSewerVanDoors");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.CloseSideEntranceVanDoors
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::CloseSideEntranceVanDoors()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "CloseSideEntranceVanDoors");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.CompletedCablePlacement
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::CompletedCablePlacement()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "CompletedCablePlacement");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.CountMaxLoot
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::CountMaxLoot()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "CountMaxLoot");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.CountPickedUpCarLoot
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::CountPickedUpCarLoot()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "CountPickedUpCarLoot");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.DeactivateRedDoorEscape
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::DeactivateRedDoorEscape()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "DeactivateRedDoorEscape");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.DeactivateRedDoorSecure
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::DeactivateRedDoorSecure()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "DeactivateRedDoorSecure");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.DeactivateSewerEscape
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::DeactivateSewerEscape()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "DeactivateSewerEscape");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.DeactivateSewerSecureLoot
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::DeactivateSewerSecureLoot()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "DeactivateSewerSecureLoot");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.DeactivateSideEntranceEscape
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::DeactivateSideEntranceEscape()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "DeactivateSideEntranceEscape");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.DeactivateSideEntranceSecureLoot
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::DeactivateSideEntranceSecureLoot()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "DeactivateSideEntranceSecureLoot");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.DeactivateStreetEscape
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::DeactivateStreetEscape()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "DeactivateStreetEscape");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.DeactivateStreetSecure
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::DeactivateStreetSecure()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "DeactivateStreetSecure");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.DestroyOutsideLoot
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::DestroyOutsideLoot()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "DestroyOutsideLoot");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.DisableCarDownLookAtTriggers
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::DisableCarDownLookAtTriggers()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "DisableCarDownLookAtTriggers");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.DisableCarOutsideLookAtTriggers
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::DisableCarOutsideLookAtTriggers()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "DisableCarOutsideLookAtTriggers");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.DisableCarUpLookAtTriggers
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::DisableCarUpLookAtTriggers()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "DisableCarUpLookAtTriggers");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.DisableOutlineCaptain
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::DisableOutlineCaptain()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "DisableOutlineCaptain");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.DriveAwayStealthGetaway
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::DriveAwayStealthGetaway()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "DriveAwayStealthGetaway");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.DriveInLoudGetaway
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::DriveInLoudGetaway()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "DriveInLoudGetaway");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.EnableOutlineCaptain
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::EnableOutlineCaptain()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "EnableOutlineCaptain");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ExecuteUbergraph_G_SnGFO_Scripting
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::ExecuteUbergraph_G_SnGFO_Scripting(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "ExecuteUbergraph_G_SnGFO_Scripting");
-
-	Params::G_SnGFO_Scripting_C_ExecuteUbergraph_G_SnGFO_Scripting Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.FindCarReminderCountdown
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::FindCarReminderCountdown()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "FindCarReminderCountdown");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.FoundStashedLoot
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::FoundStashedLoot()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "FoundStashedLoot");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.GetCarLootSocktets
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::GetCarLootSocktets()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "GetCarLootSocktets");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.GetRandomPart
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.SetSearchedPart
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// E_LootableCarPart*                      Part                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ABP_LootableCar_01_C*             Car                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    fullySearched                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    removeLoot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   lootSuccessfullyRemoved                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_SnGFO_Scripting_C::GetRandomPart(E_LootableCarPart* Part)
+void AG_SnGFO_Scripting_C::SetSearchedPart(class ABP_LootableCar_01_C* Car, bool fullySearched, bool removeLoot, bool* lootSuccessfullyRemoved)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetSearchedPart", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "GetRandomPart");
+	Params::G_SnGFO_Scripting_C_SetSearchedPart Parms{};
 
-	Params::G_SnGFO_Scripting_C_GetRandomPart Parms{};
+	Parms.Car = Car;
+	Parms.fullySearched = fullySearched;
+	Parms.removeLoot = removeLoot;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Part != nullptr)
-		*Part = Parms.Part;
+	if (lootSuccessfullyRemoved != nullptr)
+		*lootSuccessfullyRemoved = Parms.lootSuccessfullyRemoved;
 }
 
 
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.HeistStateChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// EPD3HeistState                          OldHeistState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPD3HeistState                          CurrentHeistState_0                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "HeistStateChanged");
-
-	Params::G_SnGFO_Scripting_C_HeistStateChanged Parms{};
-
-	Parms.OldHeistState = OldHeistState;
-	Parms.CurrentHeistState_0 = CurrentHeistState_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.LevelProgressionTimerCountdown
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.SetLootInCars
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_SnGFO_Scripting_C::LevelProgressionTimerCountdown()
+void AG_SnGFO_Scripting_C::SetLootInCars()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "LevelProgressionTimerCountdown");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetLootInCars", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.LiftHintCountdown
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.SetLookAtTriggerForSearchedCar
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_SnGFO_Scripting_C::LiftHintCountdown()
+void AG_SnGFO_Scripting_C::SetLookAtTriggerForSearchedCar()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "LiftHintCountdown");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetLookAtTriggerForSearchedCar", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.LootBagHandle
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZSecuredBagVisualizeComponent* Target                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZBagHandle&             BagHandle                                              (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void AG_SnGFO_Scripting_C::LootBagHandle(class USBZSecuredBagVisualizeComponent* Target, const struct FSBZBagHandle& BagHandle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "LootBagHandle");
-
-	Params::G_SnGFO_Scripting_C_LootBagHandle Parms{};
-
-	Parms.Target = Target;
-	Parms.BagHandle = std::move(BagHandle);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.LootValueFilter
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZBagType*                      BagType                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::LootValueFilter(class USBZBagType* BagType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "LootValueFilter");
-
-	Params::G_SnGFO_Scripting_C_LootValueFilter Parms{};
-
-	Parms.BagType = BagType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.Negotiation
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.SetIfCarsOnlyInGarage
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_SnGFO_Scripting_C::Negotiation()
+void AG_SnGFO_Scripting_C::SetIfCarsOnlyInGarage()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "Negotiation");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetIfCarsOnlyInGarage", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.OnAllRandomizedRoomsPlaced
-// (Event, Public, BlueprintEvent)
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.SetForVehiclesWithLootScenario
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_SnGFO_Scripting_C::OnAllRandomizedRoomsPlaced()
+void AG_SnGFO_Scripting_C::SetForVehiclesWithLootScenario()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "OnAllRandomizedRoomsPlaced");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetForVehiclesWithLootScenario", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.OnLevelModifiersApplied
-// (Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// ESBZDifficulty                          InDifficulty                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const TArray<ESBZSecurityCompany>&      InCompanies                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void AG_SnGFO_Scripting_C::OnLevelModifiersApplied(ESBZDifficulty InDifficulty, const TArray<ESBZSecurityCompany>& InCompanies)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "OnLevelModifiersApplied");
-
-	Params::G_SnGFO_Scripting_C_OnLevelModifiersApplied Parms{};
-
-	Parms.InDifficulty = InDifficulty;
-	Parms.InCompanies = std::move(InCompanies);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.OnOverkillWeaponRequested
-// (Event, Public, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::OnOverkillWeaponRequested()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "OnOverkillWeaponRequested");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.OnPlayerInstantLootTaken
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::OnPlayerInstantLootTaken(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "OnPlayerInstantLootTaken");
-
-	Params::G_SnGFO_Scripting_C_OnPlayerInstantLootTaken Parms{};
-
-	Parms.InstantLoot = InstantLoot;
-	Parms.TakenByPlayer = TakenByPlayer;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.OnPlayerPickedUpBag
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FSBZBagHandle&             BagHandle                                              (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void AG_SnGFO_Scripting_C::OnPlayerPickedUpBag(const struct FSBZBagHandle& BagHandle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "OnPlayerPickedUpBag");
-
-	Params::G_SnGFO_Scripting_C_OnPlayerPickedUpBag Parms{};
-
-	Parms.BagHandle = std::move(BagHandle);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.OnPreplanningAssetsTagsApplied
-// (Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FGameplayTagContainer&     PreplanningTagContainer                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void AG_SnGFO_Scripting_C::OnPreplanningAssetsTagsApplied(const struct FGameplayTagContainer& PreplanningTagContainer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "OnPreplanningAssetsTagsApplied");
-
-	Params::G_SnGFO_Scripting_C_OnPreplanningAssetsTagsApplied Parms{};
-
-	Parms.PreplanningTagContainer = std::move(PreplanningTagContainer);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.OnRandomPlacementStarted
-// (Event, Public, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::OnRandomPlacementStarted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "OnRandomPlacementStarted");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.OpenGateVanDoors
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.SetForSecurityTruckScenario
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_SnGFO_Scripting_C::OpenGateVanDoors()
+void AG_SnGFO_Scripting_C::SetForSecurityTruckScenario()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "OpenGateVanDoors");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.OpenMainGate
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::OpenMainGate()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "OpenMainGate");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.OpenSewerVanDoors
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::OpenSewerVanDoors()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "OpenSewerVanDoors");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.OpenSideEntranceVanDoors
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::OpenSideEntranceVanDoors()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "OpenSideEntranceVanDoors");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.PickCarForSearch
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::PickCarForSearch()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "PickCarForSearch");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.PickLootCars
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::PickLootCars()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "PickLootCars");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.PlayCarFoundVoiceLine
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::PlayCarFoundVoiceLine()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "PlayCarFoundVoiceLine");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.PlayerLookedAtLootCarInGarage
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::PlayerLookedAtLootCarInGarage(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "PlayerLookedAtLootCarInGarage");
-
-	Params::G_SnGFO_Scripting_C_PlayerLookedAtLootCarInGarage Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.PlayerLookedAtLootCarInGarageLowered
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::PlayerLookedAtLootCarInGarageLowered(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "PlayerLookedAtLootCarInGarageLowered");
-
-	Params::G_SnGFO_Scripting_C_PlayerLookedAtLootCarInGarageLowered Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.PlayerLookedAtLootCarOutside
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::PlayerLookedAtLootCarOutside(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "PlayerLookedAtLootCarOutside");
-
-	Params::G_SnGFO_Scripting_C_PlayerLookedAtLootCarOutside Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.PlayerLookedAtSearchedCar
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Scripting_C::PlayerLookedAtSearchedCar(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "PlayerLookedAtSearchedCar");
-
-	Params::G_SnGFO_Scripting_C_PlayerLookedAtSearchedCar Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.PlayLiftDownVoiceLine
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::PlayLiftDownVoiceLine()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "PlayLiftDownVoiceLine");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.PlayLiftUpVoiceLine
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::PlayLiftUpVoiceLine()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "PlayLiftUpVoiceLine");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.PlayVOCountLootBags
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::PlayVOCountLootBags()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "PlayVOCountLootBags");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.PreplanningGenericItems
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::PreplanningGenericItems()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "PreplanningGenericItems");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.RandomizeAmmo
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::RandomizeAmmo()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "RandomizeAmmo");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.RandomizeBollardControl
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::RandomizeBollardControl()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "RandomizeBollardControl");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.RandomizeCarSearchState
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::RandomizeCarSearchState()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "RandomizeCarSearchState");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.RandomizeGarageDoors
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::RandomizeGarageDoors()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "RandomizeGarageDoors");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.RandomizeGateEscapeLoud
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::RandomizeGateEscapeLoud()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "RandomizeGateEscapeLoud");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.RandomizeGeneratorLocation
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::RandomizeGeneratorLocation()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "RandomizeGeneratorLocation");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.RandomizeLiftStates
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::RandomizeLiftStates()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "RandomizeLiftStates");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.RandomizeLootCars
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::RandomizeLootCars()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "RandomizeLootCars");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.RandomizePoliceOffice
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::RandomizePoliceOffice()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "RandomizePoliceOffice");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.RandomizeSmallRooms
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::RandomizeSmallRooms()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "RandomizeSmallRooms");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.RandomizeTruck
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::RandomizeTruck()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "RandomizeTruck");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ReminderIfPlayerDidntFindCar
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::ReminderIfPlayerDidntFindCar()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "ReminderIfPlayerDidntFindCar");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ReminderToSearchTheCar
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::ReminderToSearchTheCar()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "ReminderToSearchTheCar");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.RemoveLeftoverCars
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::RemoveLeftoverCars()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "RemoveLeftoverCars");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.SearchTheCarReminderCountdown
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Scripting_C::SearchTheCarReminderCountdown()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "SearchTheCarReminderCountdown");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetForSecurityTruckScenario", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -2501,10 +220,8 @@ void AG_SnGFO_Scripting_C::SearchTheCarReminderCountdown()
 
 void AG_SnGFO_Scripting_C::SetEscapeZone(bool bEnabled, class ASBZWaypoint* Waypoint, class ASBZReplicatedBinaryStateActor* MarkerZone, class ASBZPlayerTriggerVolume* EscapeVolume)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "SetEscapeZone");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetEscapeZone", FnName));
 
 	Params::G_SnGFO_Scripting_C_SetEscapeZone Parms{};
 
@@ -2517,223 +234,2152 @@ void AG_SnGFO_Scripting_C::SetEscapeZone(bool bEnabled, class ASBZWaypoint* Wayp
 }
 
 
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.SetForSecurityTruckScenario
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.SearchTheCarReminderCountdown
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_SnGFO_Scripting_C::SetForSecurityTruckScenario()
+void AG_SnGFO_Scripting_C::SearchTheCarReminderCountdown()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "SetForSecurityTruckScenario");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SearchTheCarReminderCountdown", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.SetForVehiclesWithLootScenario
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.RemoveLeftoverCars
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_SnGFO_Scripting_C::SetForVehiclesWithLootScenario()
+void AG_SnGFO_Scripting_C::RemoveLeftoverCars()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "SetForVehiclesWithLootScenario");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RemoveLeftoverCars", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.SetIfCarsOnlyInGarage
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ReminderToSearchTheCar
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_SnGFO_Scripting_C::SetIfCarsOnlyInGarage()
+void AG_SnGFO_Scripting_C::ReminderToSearchTheCar()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "SetIfCarsOnlyInGarage");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReminderToSearchTheCar", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.SetLookAtTriggerForSearchedCar
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ReminderIfPlayerDidntFindCar
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_SnGFO_Scripting_C::SetLookAtTriggerForSearchedCar()
+void AG_SnGFO_Scripting_C::ReminderIfPlayerDidntFindCar()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "SetLookAtTriggerForSearchedCar");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReminderIfPlayerDidntFindCar", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.SetLootInCars
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.RandomizeTruck
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_SnGFO_Scripting_C::SetLootInCars()
+void AG_SnGFO_Scripting_C::RandomizeTruck()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "SetLootInCars");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RandomizeTruck", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.SetSearchedPart
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.RandomizeSmallRooms
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::RandomizeSmallRooms()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RandomizeSmallRooms", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.RandomizePoliceOffice
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::RandomizePoliceOffice()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RandomizePoliceOffice", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.RandomizeLootCars
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::RandomizeLootCars()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RandomizeLootCars", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.RandomizeLiftStates
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::RandomizeLiftStates()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RandomizeLiftStates", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.RandomizeGeneratorLocation
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::RandomizeGeneratorLocation()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RandomizeGeneratorLocation", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.RandomizeGateEscapeLoud
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::RandomizeGateEscapeLoud()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RandomizeGateEscapeLoud", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.RandomizeGarageDoors
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::RandomizeGarageDoors()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RandomizeGarageDoors", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.RandomizeCarSearchState
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::RandomizeCarSearchState()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RandomizeCarSearchState", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.RandomizeBollardControl
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::RandomizeBollardControl()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RandomizeBollardControl", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.RandomizeAmmo
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::RandomizeAmmo()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RandomizeAmmo", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.PreplanningGenericItems
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::PreplanningGenericItems()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreplanningGenericItems", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.PlayLiftUpVoiceLine
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::PlayLiftUpVoiceLine()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayLiftUpVoiceLine", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.PlayLiftDownVoiceLine
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::PlayLiftDownVoiceLine()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayLiftDownVoiceLine", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.PlayerLookedAtSearchedCar
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::PlayerLookedAtSearchedCar(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayerLookedAtSearchedCar", FnName));
+
+	Params::G_SnGFO_Scripting_C_PlayerLookedAtSearchedCar Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.PlayerLookedAtLootCarOutside
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::PlayerLookedAtLootCarOutside(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayerLookedAtLootCarOutside", FnName));
+
+	Params::G_SnGFO_Scripting_C_PlayerLookedAtLootCarOutside Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.PlayerLookedAtLootCarInGarageLowered
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::PlayerLookedAtLootCarInGarageLowered(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayerLookedAtLootCarInGarageLowered", FnName));
+
+	Params::G_SnGFO_Scripting_C_PlayerLookedAtLootCarInGarageLowered Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.PlayerLookedAtLootCarInGarage
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::PlayerLookedAtLootCarInGarage(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayerLookedAtLootCarInGarage", FnName));
+
+	Params::G_SnGFO_Scripting_C_PlayerLookedAtLootCarInGarage Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.PlayCarFoundVoiceLine
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::PlayCarFoundVoiceLine()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayCarFoundVoiceLine", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.PickLootCars
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::PickLootCars()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PickLootCars", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.PickCarForSearch
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::PickCarForSearch()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PickCarForSearch", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.OpenSideEntranceVanDoors
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::OpenSideEntranceVanDoors()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OpenSideEntranceVanDoors", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.OpenSewerVanDoors
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::OpenSewerVanDoors()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OpenSewerVanDoors", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.OpenMainGate
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::OpenMainGate()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OpenMainGate", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.OpenGateVanDoors
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::OpenGateVanDoors()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OpenGateVanDoors", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.OnRandomPlacementStarted
+// (Event, Public, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::OnRandomPlacementStarted()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRandomPlacementStarted", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.OnPreplanningAssetsTagsApplied
+// (Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTagContainer&     PreplanningTagContainer_OnPreplanningAssetsTagsApplied (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void AG_SnGFO_Scripting_C::OnPreplanningAssetsTagsApplied(const struct FGameplayTagContainer& PreplanningTagContainer_OnPreplanningAssetsTagsApplied)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPreplanningAssetsTagsApplied", FnName));
+
+	Params::G_SnGFO_Scripting_C_OnPreplanningAssetsTagsApplied Parms{};
+
+	Parms.PreplanningTagContainer_OnPreplanningAssetsTagsApplied = std::move(PreplanningTagContainer_OnPreplanningAssetsTagsApplied);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.OnPlayerPickedUpBag
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FSBZBagHandle&             BagHandle_OnPlayerPickedUpBag                          (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void AG_SnGFO_Scripting_C::OnPlayerPickedUpBag(const struct FSBZBagHandle& BagHandle_OnPlayerPickedUpBag)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPlayerPickedUpBag", FnName));
+
+	Params::G_SnGFO_Scripting_C_OnPlayerPickedUpBag Parms{};
+
+	Parms.BagHandle_OnPlayerPickedUpBag = std::move(BagHandle_OnPlayerPickedUpBag);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.OnPlayerInstantLootTaken
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class ASBZInstantLoot*                  InstantLoot_OnPlayerInstantLootTaken                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPlayerCharacter*              TakenByPlayer_OnPlayerInstantLootTaken                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::OnPlayerInstantLootTaken(class ASBZInstantLoot* InstantLoot_OnPlayerInstantLootTaken, class ASBZPlayerCharacter* TakenByPlayer_OnPlayerInstantLootTaken)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPlayerInstantLootTaken", FnName));
+
+	Params::G_SnGFO_Scripting_C_OnPlayerInstantLootTaken Parms{};
+
+	Parms.InstantLoot_OnPlayerInstantLootTaken = InstantLoot_OnPlayerInstantLootTaken;
+	Parms.TakenByPlayer_OnPlayerInstantLootTaken = TakenByPlayer_OnPlayerInstantLootTaken;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.OnOverkillWeaponRequested
+// (Event, Public, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::OnOverkillWeaponRequested()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnOverkillWeaponRequested", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.OnLevelModifiersApplied
+// (Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// ESBZDifficulty                          InDifficulty_OnLevelModifiersApplied                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const TArray<ESBZSecurityCompany>&      InCompanies_OnLevelModifiersApplied                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void AG_SnGFO_Scripting_C::OnLevelModifiersApplied(ESBZDifficulty InDifficulty_OnLevelModifiersApplied, const TArray<ESBZSecurityCompany>& InCompanies_OnLevelModifiersApplied)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLevelModifiersApplied", FnName));
+
+	Params::G_SnGFO_Scripting_C_OnLevelModifiersApplied Parms{};
+
+	Parms.InDifficulty_OnLevelModifiersApplied = InDifficulty_OnLevelModifiersApplied;
+	Parms.InCompanies_OnLevelModifiersApplied = std::move(InCompanies_OnLevelModifiersApplied);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.OnAllRandomizedRoomsPlaced
+// (Event, Public, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::OnAllRandomizedRoomsPlaced()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnAllRandomizedRoomsPlaced", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.Negotiation
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::Negotiation()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Negotiation", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.LootValueFilter
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZBagType*                      BagType                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::LootValueFilter(class USBZBagType* BagType)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"LootValueFilter", FnName));
+
+	Params::G_SnGFO_Scripting_C_LootValueFilter Parms{};
+
+	Parms.BagType = BagType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.LootBagHandle
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZSecuredBagVisualizeComponent* Target                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZBagHandle&             BagHandle                                              (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void AG_SnGFO_Scripting_C::LootBagHandle(class USBZSecuredBagVisualizeComponent* Target, const struct FSBZBagHandle& BagHandle)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"LootBagHandle", FnName));
+
+	Params::G_SnGFO_Scripting_C_LootBagHandle Parms{};
+
+	Parms.Target = Target;
+	Parms.BagHandle = std::move(BagHandle);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.LiftHintCountdown
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::LiftHintCountdown()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"LiftHintCountdown", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.LevelProgressionTimerCountdown
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::LevelProgressionTimerCountdown()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"LevelProgressionTimerCountdown", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.HeistStateChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EPD3HeistState                          OldHeistState_HeistStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPD3HeistState                          CurrentHeistState_HeistStateChanged                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HeistStateChanged", FnName));
+
+	Params::G_SnGFO_Scripting_C_HeistStateChanged Parms{};
+
+	Parms.OldHeistState_HeistStateChanged = OldHeistState_HeistStateChanged;
+	Parms.CurrentHeistState_HeistStateChanged = CurrentHeistState_HeistStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.GetRandomPart
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class ABP_LootableCar_01_C*             Car                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    fullySearched                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    removeLoot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   lootSuccessfullyRemoved                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// E_LootableCarPart*                      Part                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_SnGFO_Scripting_C::SetSearchedPart(class ABP_LootableCar_01_C* Car, bool fullySearched, bool removeLoot, bool* lootSuccessfullyRemoved)
+void AG_SnGFO_Scripting_C::GetRandomPart(E_LootableCarPart* Part)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetRandomPart", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "SetSearchedPart");
-
-	Params::G_SnGFO_Scripting_C_SetSearchedPart Parms{};
-
-	Parms.Car = Car;
-	Parms.fullySearched = fullySearched;
-	Parms.removeLoot = removeLoot;
+	Params::G_SnGFO_Scripting_C_GetRandomPart Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (lootSuccessfullyRemoved != nullptr)
-		*lootSuccessfullyRemoved = Parms.lootSuccessfullyRemoved;
+	if (Part != nullptr)
+		*Part = Parms.Part;
 }
 
 
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.SetSecureLootZone
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.GetCarLootSocktets
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::GetCarLootSocktets()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetCarLootSocktets", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.FoundStashedLoot
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::FoundStashedLoot()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"FoundStashedLoot", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.FindCarReminderCountdown
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::FindCarReminderCountdown()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"FindCarReminderCountdown", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ExecuteUbergraph_G_SnGFO_Scripting
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// bool                                    bEnabled                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class ASBZWaypoint*                     Waypoint                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZBagTriggerVolume*             BagTriggerVolume                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPlayerTriggerVolume*          VoiceVolume                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_SnGFO_Scripting_C::SetSecureLootZone(bool bEnabled, class ASBZWaypoint* Waypoint, class ASBZBagTriggerVolume* BagTriggerVolume, class ASBZPlayerTriggerVolume* VoiceVolume)
+void AG_SnGFO_Scripting_C::ExecuteUbergraph_G_SnGFO_Scripting(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_SnGFO_Scripting_C", "ExecuteUbergraph_G_SnGFO_Scripting", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "SetSecureLootZone");
+	Params::G_SnGFO_Scripting_C_ExecuteUbergraph_G_SnGFO_Scripting Parms{};
 
-	Params::G_SnGFO_Scripting_C_SetSecureLootZone Parms{};
-
-	Parms.bEnabled = bEnabled;
-	Parms.Waypoint = Waypoint;
-	Parms.BagTriggerVolume = BagTriggerVolume;
-	Parms.VoiceVolume = VoiceVolume;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.SetStealthEscapeVan
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.EnableOutlineCaptain
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_SnGFO_Scripting_C::SetStealthEscapeVan()
+void AG_SnGFO_Scripting_C::EnableOutlineCaptain()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "SetStealthEscapeVan");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EnableOutlineCaptain", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.SetVanWaitTime
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.DriveInLoudGetaway
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_SnGFO_Scripting_C::SetVanWaitTime()
+void AG_SnGFO_Scripting_C::DriveInLoudGetaway()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "SetVanWaitTime");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DriveInLoudGetaway", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ShowWaypointOnCars
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.DriveAwayStealthGetaway
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_SnGFO_Scripting_C::ShowWaypointOnCars()
+void AG_SnGFO_Scripting_C::DriveAwayStealthGetaway()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "ShowWaypointOnCars");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DriveAwayStealthGetaway", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.StartCountdownForEscapeVanDriveIn
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.DisableOutlineCaptain
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_SnGFO_Scripting_C::StartCountdownForEscapeVanDriveIn()
+void AG_SnGFO_Scripting_C::DisableOutlineCaptain()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "StartCountdownForEscapeVanDriveIn");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DisableOutlineCaptain", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.StartLevelProgerssionTimer
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.DisableCarUpLookAtTriggers
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_SnGFO_Scripting_C::StartLevelProgerssionTimer()
+void AG_SnGFO_Scripting_C::DisableCarUpLookAtTriggers()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "StartLevelProgerssionTimer");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DisableCarUpLookAtTriggers", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.StartTimerForLiftDownHint
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.DisableCarOutsideLookAtTriggers
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_SnGFO_Scripting_C::StartTimerForLiftDownHint()
+void AG_SnGFO_Scripting_C::DisableCarOutsideLookAtTriggers()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "StartTimerForLiftDownHint");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DisableCarOutsideLookAtTriggers", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.StartTimerForLiftUpHint
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.DisableCarDownLookAtTriggers
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_SnGFO_Scripting_C::StartTimerForLiftUpHint()
+void AG_SnGFO_Scripting_C::DisableCarDownLookAtTriggers()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DisableCarDownLookAtTriggers", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Scripting_C", "StartTimerForLiftUpHint");
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.DestroyOutsideLoot
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::DestroyOutsideLoot()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DestroyOutsideLoot", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.DeactivateStreetSecure
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::DeactivateStreetSecure()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DeactivateStreetSecure", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.DeactivateStreetEscape
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::DeactivateStreetEscape()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DeactivateStreetEscape", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.DeactivateSideEntranceSecureLoot
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::DeactivateSideEntranceSecureLoot()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DeactivateSideEntranceSecureLoot", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.DeactivateSideEntranceEscape
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::DeactivateSideEntranceEscape()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DeactivateSideEntranceEscape", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.DeactivateSewerSecureLoot
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::DeactivateSewerSecureLoot()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DeactivateSewerSecureLoot", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.DeactivateSewerEscape
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::DeactivateSewerEscape()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DeactivateSewerEscape", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.DeactivateRedDoorSecure
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::DeactivateRedDoorSecure()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DeactivateRedDoorSecure", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.DeactivateRedDoorEscape
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::DeactivateRedDoorEscape()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DeactivateRedDoorEscape", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.CountPickedUpCarLoot
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::CountPickedUpCarLoot()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CountPickedUpCarLoot", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.CountMaxLoot
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::CountMaxLoot()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CountMaxLoot", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.CompletedCablePlacement
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::CompletedCablePlacement()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CompletedCablePlacement", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.CloseSideEntranceVanDoors
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::CloseSideEntranceVanDoors()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CloseSideEntranceVanDoors", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.CloseSewerVanDoors
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::CloseSewerVanDoors()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CloseSewerVanDoors", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.CarLootPickedUp
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::CarLootPickedUp()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CarLootPickedUp", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.CarLiftInteracted
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::CarLiftInteracted()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CarLiftInteracted", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.CarHiddenAreaUncovered
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::CarHiddenAreaUncovered()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CarHiddenAreaUncovered", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.CarFirstInteraction
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::CarFirstInteraction()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CarFirstInteraction", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BreachedEvidenceDoor
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BreachedEvidenceDoor()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BreachedEvidenceDoor", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZTrafficSpline_Escape_DriveInStreet_K2Node_ActorBoundEvent_42_SBZSplineOnEndReached__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZTrafficSpline_Escape_DriveInStreet_K2Node_ActorBoundEvent_42_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_SnGFO_Scripting_SBZTrafficSpline_Escape_DriveInStreet_K2Node_ActorBoundEvent_42_SBZSplineOnEndReached__DelegateSignature", FnName));
+
+	Params::G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZTrafficSpline_Escape_DriveInStreet_K2Node_ActorBoundEvent_42_SBZSplineOnEndReached__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_PlayerOnStreet_K2Node_ActorBoundEvent_26_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_PlayerOnStreet_K2Node_ActorBoundEvent_26_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_PlayerOnStreet_K2Node_ActorBoundEvent_26_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_PlayerOnStreet_K2Node_ActorBoundEvent_26_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_GetToSecurityTruck_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_GetToSecurityTruck_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_GetToSecurityTruck_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_GetToSecurityTruck_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_EnteredGarage_K2Node_ActorBoundEvent_222_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_EnteredGarage_K2Node_ActorBoundEvent_222_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_EnteredGarage_K2Node_ActorBoundEvent_222_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_EnteredGarage_K2Node_ActorBoundEvent_222_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthSideEntrance_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthSideEntrance_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_SnGFO_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthSideEntrance_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthSideEntrance_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthGate2_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthGate2_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_SnGFO_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthGate2_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthGate2_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZPlayerEscapeVolume_Street_K2Node_ActorBoundEvent_31_SBZEscapeTimerDelegate__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZPlayerEscapeVolume_Street_K2Node_ActorBoundEvent_31_SBZEscapeTimerDelegate__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_SnGFO_Scripting_SBZPlayerEscapeVolume_Street_K2Node_ActorBoundEvent_31_SBZEscapeTimerDelegate__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZPlayerEscapeVolume_StealthSideEntrance_K2Node_ActorBoundEvent_10_SBZEscapeTimerDelegate__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZPlayerEscapeVolume_StealthSideEntrance_K2Node_ActorBoundEvent_10_SBZEscapeTimerDelegate__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_SnGFO_Scripting_SBZPlayerEscapeVolume_StealthSideEntrance_K2Node_ActorBoundEvent_10_SBZEscapeTimerDelegate__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZObjective_StealSecureMoney2_K2Node_ActorBoundEvent_77_SBZOnObjective__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZObjective_StealSecureMoney2_K2Node_ActorBoundEvent_77_SBZOnObjective__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_SnGFO_Scripting_SBZObjective_StealSecureMoney2_K2Node_ActorBoundEvent_77_SBZOnObjective__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZObjective_StealInstantLoot_K2Node_ActorBoundEvent_37_SBZOnObjective__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZObjective_StealInstantLoot_K2Node_ActorBoundEvent_37_SBZOnObjective__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_SnGFO_Scripting_SBZObjective_StealInstantLoot_K2Node_ActorBoundEvent_37_SBZOnObjective__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZObjective_SearchTheCars_K2Node_ActorBoundEvent_75_SBZOnObjective__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZObjective_SearchTheCars_K2Node_ActorBoundEvent_75_SBZOnObjective__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_SnGFO_Scripting_SBZObjective_SearchTheCars_K2Node_ActorBoundEvent_75_SBZOnObjective__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZObjective_OpenTheTruck_K2Node_ActorBoundEvent_36_SBZOnObjective__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZObjective_OpenTheTruck_K2Node_ActorBoundEvent_36_SBZOnObjective__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_SnGFO_Scripting_SBZObjective_OpenTheTruck_K2Node_ActorBoundEvent_36_SBZOnObjective__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZObjective_LookIntoGarage_K2Node_ActorBoundEvent_224_SBZOnObjective__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZObjective_LookIntoGarage_K2Node_ActorBoundEvent_224_SBZOnObjective__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_SnGFO_Scripting_SBZObjective_LookIntoGarage_K2Node_ActorBoundEvent_224_SBZOnObjective__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZObjective_Hold_Position_LoudDuringSecure2_K2Node_ActorBoundEvent_76_SBZOnObjective__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZObjective_Hold_Position_LoudDuringSecure2_K2Node_ActorBoundEvent_76_SBZOnObjective__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_SnGFO_Scripting_SBZObjective_Hold_Position_LoudDuringSecure2_K2Node_ActorBoundEvent_76_SBZOnObjective__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZObjective_GetToTheSecurityTruck_K2Node_ActorBoundEvent_7_SBZOnObjective__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZObjective_GetToTheSecurityTruck_K2Node_ActorBoundEvent_7_SBZOnObjective__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_SnGFO_Scripting_SBZObjective_GetToTheSecurityTruck_K2Node_ActorBoundEvent_7_SBZOnObjective__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZObjective_FindCars_K2Node_ActorBoundEvent_6_SBZOnObjective__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZObjective_FindCars_K2Node_ActorBoundEvent_6_SBZOnObjective__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_SnGFO_Scripting_SBZObjective_FindCars_K2Node_ActorBoundEvent_6_SBZOnObjective__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZBagTriggerVolume_Street_K2Node_ActorBoundEvent_30_SBZBagEnteredDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZBagTriggerVolume_Street_K2Node_ActorBoundEvent_30_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_SnGFO_Scripting_SBZBagTriggerVolume_Street_K2Node_ActorBoundEvent_30_SBZBagEnteredDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZBagTriggerVolume_Street_K2Node_ActorBoundEvent_30_SBZBagEnteredDelegate__DelegateSignature Parms{};
+
+	Parms.Volume = Volume;
+	Parms.Bag = Bag;
+	Parms.Handle = std::move(Handle);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZBagTriggerVolume_SideEntrance_K2Node_ActorBoundEvent_12_SBZBagEnteredDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_SBZBagTriggerVolume_SideEntrance_K2Node_ActorBoundEvent_12_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_SnGFO_Scripting_SBZBagTriggerVolume_SideEntrance_K2Node_ActorBoundEvent_12_SBZBagEnteredDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZBagTriggerVolume_SideEntrance_K2Node_ActorBoundEvent_12_SBZBagEnteredDelegate__DelegateSignature Parms{};
+
+	Parms.Volume = Volume;
+	Parms.Bag = Bag;
+	Parms.Handle = std::move(Handle);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_BP_InteractableCocaine_LowValue_5_K2Node_ActorBoundEvent_0_SBZBagPickedUp__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_BP_InteractableCocaine_LowValue_5_K2Node_ActorBoundEvent_0_SBZBagPickedUp__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_SnGFO_Scripting_BP_InteractableCocaine_LowValue_5_K2Node_ActorBoundEvent_0_SBZBagPickedUp__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_BP_InteractableCocaine_LowValue5_17_K2Node_ActorBoundEvent_14_SBZBagPickedUp__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_BP_InteractableCocaine_LowValue5_17_K2Node_ActorBoundEvent_14_SBZBagPickedUp__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_SnGFO_Scripting_BP_InteractableCocaine_LowValue5_17_K2Node_ActorBoundEvent_14_SBZBagPickedUp__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_BP_InteractableCocaine_LowValue4_14_K2Node_ActorBoundEvent_13_SBZBagPickedUp__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_BP_InteractableCocaine_LowValue4_14_K2Node_ActorBoundEvent_13_SBZBagPickedUp__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_SnGFO_Scripting_BP_InteractableCocaine_LowValue4_14_K2Node_ActorBoundEvent_13_SBZBagPickedUp__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_BP_InteractableCocaine_LowValue3_11_K2Node_ActorBoundEvent_11_SBZBagPickedUp__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_BP_InteractableCocaine_LowValue3_11_K2Node_ActorBoundEvent_11_SBZBagPickedUp__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_SnGFO_Scripting_BP_InteractableCocaine_LowValue3_11_K2Node_ActorBoundEvent_11_SBZBagPickedUp__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_BP_InteractableCocaine_LowValue2_8_K2Node_ActorBoundEvent_5_SBZBagPickedUp__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_SnGFO_Scripting_BP_InteractableCocaine_LowValue2_8_K2Node_ActorBoundEvent_5_SBZBagPickedUp__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_SnGFO_Scripting_BP_InteractableCocaine_LowValue2_8_K2Node_ActorBoundEvent_5_SBZBagPickedUp__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGFO_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZPlayerEscapeVolume1_K2Node_ActorBoundEvent_9_SBZEscapeTimerDelegate__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_SBZPlayerEscapeVolume1_K2Node_ActorBoundEvent_9_SBZEscapeTimerDelegate__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ScriptTemplate_Scripting_SBZPlayerEscapeVolume1_K2Node_ActorBoundEvent_9_SBZEscapeTimerDelegate__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGFO_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature Parms{};
+
+	Parms.Volume = Volume;
+	Parms.Bag = Bag;
+	Parms.Handle = std::move(Handle);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZTrafficSpline_StealthEscape_DriveIn1_K2Node_ActorBoundEvent_47_SBZSplineOnEndReached__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_SBZTrafficSpline_StealthEscape_DriveIn1_K2Node_ActorBoundEvent_47_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Scripting_SBZTrafficSpline_StealthEscape_DriveIn1_K2Node_ActorBoundEvent_47_SBZSplineOnEndReached__DelegateSignature", FnName));
+
+	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZTrafficSpline_StealthEscape_DriveIn1_K2Node_ActorBoundEvent_47_SBZSplineOnEndReached__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_PlayerInsideGarage_K2Node_ActorBoundEvent_132_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_PlayerInsideGarage_K2Node_ActorBoundEvent_132_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_PlayerInsideGarage_K2Node_ActorBoundEvent_132_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_PlayerInsideGarage_K2Node_ActorBoundEvent_132_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_EnteredDepot_K2Node_ActorBoundEvent_43_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_EnteredDepot_K2Node_ActorBoundEvent_43_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_EnteredDepot_K2Node_ActorBoundEvent_43_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_EnteredDepot_K2Node_ActorBoundEvent_43_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_146_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_146_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_146_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_146_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthSewer_K2Node_ActorBoundEvent_49_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthSewer_K2Node_ActorBoundEvent_49_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthSewer_K2Node_ActorBoundEvent_49_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthSewer_K2Node_ActorBoundEvent_49_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZPlayerStartGroup4_K2Node_ActorBoundEvent_57_SBZOnSpawnGroupChosen__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZPlayerStartGroup*             PlayerStartGroup                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_SBZPlayerStartGroup4_K2Node_ActorBoundEvent_57_SBZOnSpawnGroupChosen__DelegateSignature(class ASBZPlayerStartGroup* PlayerStartGroup)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Scripting_SBZPlayerStartGroup4_K2Node_ActorBoundEvent_57_SBZOnSpawnGroupChosen__DelegateSignature", FnName));
+
+	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerStartGroup4_K2Node_ActorBoundEvent_57_SBZOnSpawnGroupChosen__DelegateSignature Parms{};
+
+	Parms.PlayerStartGroup = PlayerStartGroup;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZPlayerStartGroup2_5_K2Node_ActorBoundEvent_7_SBZOnSpawnGroupChosen__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZPlayerStartGroup*             PlayerStartGroup                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_SBZPlayerStartGroup2_5_K2Node_ActorBoundEvent_7_SBZOnSpawnGroupChosen__DelegateSignature(class ASBZPlayerStartGroup* PlayerStartGroup)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Scripting_SBZPlayerStartGroup2_5_K2Node_ActorBoundEvent_7_SBZOnSpawnGroupChosen__DelegateSignature", FnName));
+
+	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerStartGroup2_5_K2Node_ActorBoundEvent_7_SBZOnSpawnGroupChosen__DelegateSignature Parms{};
+
+	Parms.PlayerStartGroup = PlayerStartGroup;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZPlayerStartGroup1_K2Node_ActorBoundEvent_6_SBZOnSpawnGroupChosen__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZPlayerStartGroup*             PlayerStartGroup                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_SBZPlayerStartGroup1_K2Node_ActorBoundEvent_6_SBZOnSpawnGroupChosen__DelegateSignature(class ASBZPlayerStartGroup* PlayerStartGroup)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Scripting_SBZPlayerStartGroup1_K2Node_ActorBoundEvent_6_SBZOnSpawnGroupChosen__DelegateSignature", FnName));
+
+	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerStartGroup1_K2Node_ActorBoundEvent_6_SBZOnSpawnGroupChosen__DelegateSignature Parms{};
+
+	Parms.PlayerStartGroup = PlayerStartGroup;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZPlayerEscapeVolume_Escape_StealthGate_K2Node_ActorBoundEvent_80_SBZEscapeTimerDelegate__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_SBZPlayerEscapeVolume_Escape_StealthGate_K2Node_ActorBoundEvent_80_SBZEscapeTimerDelegate__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Scripting_SBZPlayerEscapeVolume_Escape_StealthGate_K2Node_ActorBoundEvent_80_SBZEscapeTimerDelegate__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZObjective_ReStartGenerator_K2Node_ActorBoundEvent_124_SBZOnObjective__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_SBZObjective_ReStartGenerator_K2Node_ActorBoundEvent_124_SBZOnObjective__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Scripting_SBZObjective_ReStartGenerator_K2Node_ActorBoundEvent_124_SBZOnObjective__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZBagTriggerVolume_Stealth2_2_K2Node_ActorBoundEvent_46_SBZBagEnteredDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_SBZBagTriggerVolume_Stealth2_2_K2Node_ActorBoundEvent_46_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Scripting_SBZBagTriggerVolume_Stealth2_2_K2Node_ActorBoundEvent_46_SBZBagEnteredDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZBagTriggerVolume_Stealth2_2_K2Node_ActorBoundEvent_46_SBZBagEnteredDelegate__DelegateSignature Parms{};
+
+	Parms.Volume = Volume;
+	Parms.Bag = Bag;
+	Parms.Handle = std::move(Handle);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator_K2Node_ActorBoundEvent_119_SBZSabotagePointDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+// Parameters:
+// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator_K2Node_ActorBoundEvent_119_SBZSabotagePointDelegate__DelegateSignature(bool bSabotaged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator_K2Node_ActorBoundEvent_119_SBZSabotagePointDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator_K2Node_ActorBoundEvent_119_SBZSabotagePointDelegate__DelegateSignature Parms{};
+
+	Parms.bSabotaged = bSabotaged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator3_K2Node_ActorBoundEvent_138_SBZSabotagePointDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+// Parameters:
+// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator3_K2Node_ActorBoundEvent_138_SBZSabotagePointDelegate__DelegateSignature(bool bSabotaged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator3_K2Node_ActorBoundEvent_138_SBZSabotagePointDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator3_K2Node_ActorBoundEvent_138_SBZSabotagePointDelegate__DelegateSignature Parms{};
+
+	Parms.bSabotaged = bSabotaged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator2_K2Node_ActorBoundEvent_137_SBZSabotagePointDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+// Parameters:
+// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator2_K2Node_ActorBoundEvent_137_SBZSabotagePointDelegate__DelegateSignature(bool bSabotaged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator2_K2Node_ActorBoundEvent_137_SBZSabotagePointDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator2_K2Node_ActorBoundEvent_137_SBZSabotagePointDelegate__DelegateSignature Parms{};
+
+	Parms.bSabotaged = bSabotaged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_openable_Van_Police_2_K2Node_ActorBoundEvent_88_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_openable_Van_Police_2_K2Node_ActorBoundEvent_88_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Scripting_BP_openable_Van_Police_2_K2Node_ActorBoundEvent_88_SBZGateStateChangedDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_openable_Van_Police_2_K2Node_ActorBoundEvent_88_SBZGateStateChangedDelegate__DelegateSignature Parms{};
+
+	Parms.OldState = OldState;
+	Parms.State = State;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_openable_Van_Police4_K2Node_ActorBoundEvent_197_onOpened__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_openable_Van_Police4_K2Node_ActorBoundEvent_197_onOpened__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Scripting_BP_openable_Van_Police4_K2Node_ActorBoundEvent_197_onOpened__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_openable_Van_Police4_K2Node_ActorBoundEvent_157_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_openable_Van_Police4_K2Node_ActorBoundEvent_157_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Scripting_BP_openable_Van_Police4_K2Node_ActorBoundEvent_157_SBZGateStateChangedDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_openable_Van_Police4_K2Node_ActorBoundEvent_157_SBZGateStateChangedDelegate__DelegateSignature Parms{};
+
+	Parms.OldState = OldState;
+	Parms.State = State;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_openable_Van_Police3_K2Node_ActorBoundEvent_156_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_openable_Van_Police3_K2Node_ActorBoundEvent_156_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Scripting_BP_openable_Van_Police3_K2Node_ActorBoundEvent_156_SBZGateStateChangedDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_openable_Van_Police3_K2Node_ActorBoundEvent_156_SBZGateStateChangedDelegate__DelegateSignature Parms{};
+
+	Parms.OldState = OldState;
+	Parms.State = State;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_openable_Van_Police3_K2Node_ActorBoundEvent_129_onOpened__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_openable_Van_Police3_K2Node_ActorBoundEvent_129_onOpened__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Scripting_BP_openable_Van_Police3_K2Node_ActorBoundEvent_129_onOpened__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_openable_Van_Police2_K2Node_ActorBoundEvent_155_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_openable_Van_Police2_K2Node_ActorBoundEvent_155_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Scripting_BP_openable_Van_Police2_K2Node_ActorBoundEvent_155_SBZGateStateChangedDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_openable_Van_Police2_K2Node_ActorBoundEvent_155_SBZGateStateChangedDelegate__DelegateSignature Parms{};
+
+	Parms.OldState = OldState;
+	Parms.State = State;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_openable_Van_Police2_K2Node_ActorBoundEvent_128_onOpened__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_openable_Van_Police2_K2Node_ActorBoundEvent_128_onOpened__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Scripting_BP_openable_Van_Police2_K2Node_ActorBoundEvent_128_onOpened__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_openable_Van_Police1_K2Node_ActorBoundEvent_70_onOpened__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_openable_Van_Police1_K2Node_ActorBoundEvent_70_onOpened__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Scripting_BP_openable_Van_Police1_K2Node_ActorBoundEvent_70_onOpened__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_Int_SingleDoor_Reinforced_Garage2_K2Node_ActorBoundEvent_113_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_Int_SingleDoor_Reinforced_Garage2_K2Node_ActorBoundEvent_113_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Scripting_BP_Int_SingleDoor_Reinforced_Garage2_K2Node_ActorBoundEvent_113_SBZGateStateChangedDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_Int_SingleDoor_Reinforced_Garage2_K2Node_ActorBoundEvent_113_SBZGateStateChangedDelegate__DelegateSignature Parms{};
+
+	Parms.OldState = OldState;
+	Parms.State = State;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_FOR_CableCarPark_01_RolledCable3_K2Node_ActorBoundEvent_184_onObjectPickedUp__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_FOR_CableCarPark_01_RolledCable3_K2Node_ActorBoundEvent_184_onObjectPickedUp__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Scripting_BP_FOR_CableCarPark_01_RolledCable3_K2Node_ActorBoundEvent_184_onObjectPickedUp__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_FOR_CableCarPark_01_RolledCable2_K2Node_ActorBoundEvent_183_onObjectPickedUp__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_FOR_CableCarPark_01_RolledCable2_K2Node_ActorBoundEvent_183_onObjectPickedUp__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Scripting_BP_FOR_CableCarPark_01_RolledCable2_K2Node_ActorBoundEvent_183_onObjectPickedUp__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_FOR_CableCarPark_01_RolledCable1_K2Node_ActorBoundEvent_182_onObjectPickedUp__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_FOR_CableCarPark_01_RolledCable1_K2Node_ActorBoundEvent_182_onObjectPickedUp__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Scripting_BP_FOR_CableCarPark_01_RolledCable1_K2Node_ActorBoundEvent_182_onObjectPickedUp__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_FlipSwitch_SabotagePoint2_K2Node_ActorBoundEvent_131_SBZSabotagePointDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+// Parameters:
+// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_FlipSwitch_SabotagePoint2_K2Node_ActorBoundEvent_131_SBZSabotagePointDelegate__DelegateSignature(bool bSabotaged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Scripting_BP_FlipSwitch_SabotagePoint2_K2Node_ActorBoundEvent_131_SBZSabotagePointDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_FlipSwitch_SabotagePoint2_K2Node_ActorBoundEvent_131_SBZSabotagePointDelegate__DelegateSignature Parms{};
+
+	Parms.bSabotaged = bSabotaged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_FlipSwitch_SabotagePoint1_K2Node_ActorBoundEvent_104_SBZSabotagePointDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+// Parameters:
+// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_FlipSwitch_SabotagePoint1_K2Node_ActorBoundEvent_104_SBZSabotagePointDelegate__DelegateSignature(bool bSabotaged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Scripting_BP_FlipSwitch_SabotagePoint1_K2Node_ActorBoundEvent_104_SBZSabotagePointDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_FlipSwitch_SabotagePoint1_K2Node_ActorBoundEvent_104_SBZSabotagePointDelegate__DelegateSignature Parms{};
+
+	Parms.bSabotaged = bSabotaged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_CableGeneratorSabotage3_K2Node_ActorBoundEvent_4_onGeneratorStarted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_CableGeneratorSabotage3_K2Node_ActorBoundEvent_4_onGeneratorStarted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Scripting_BP_CableGeneratorSabotage3_K2Node_ActorBoundEvent_4_onGeneratorStarted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_CableGeneratorSabotage2_K2Node_ActorBoundEvent_3_onGeneratorStarted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_CableGeneratorSabotage2_K2Node_ActorBoundEvent_3_onGeneratorStarted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Scripting_BP_CableGeneratorSabotage2_K2Node_ActorBoundEvent_3_onGeneratorStarted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_CableGeneratorSabotage1_K2Node_ActorBoundEvent_1_onGeneratorStarted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BndEvt__G_Fort_Scripting_BP_CableGeneratorSabotage1_K2Node_ActorBoundEvent_1_onGeneratorStarted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Scripting_BP_CableGeneratorSabotage1_K2Node_ActorBoundEvent_1_onGeneratorStarted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BlackScreenStarted
+// (Event, Public, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BlackScreenStarted()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BlackScreenStarted", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BindLootCars
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BindLootCars()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BindLootCars", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BindCarLifts
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::BindCarLifts()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BindCarLifts", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.Assault
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::Assault()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Assault", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.Alarm
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::Alarm()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Alarm", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateWaitForEscapeVan
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::ActivateWaitForEscapeVan()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateWaitForEscapeVan", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateStreetSecureLoot
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::ActivateStreetSecureLoot()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateStreetSecureLoot", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateStreetEscape
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::ActivateStreetEscape()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateStreetEscape", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateStealthEscape
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::ActivateStealthEscape()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateStealthEscape", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateSideEntranceSecureLoot
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::ActivateSideEntranceSecureLoot()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateSideEntranceSecureLoot", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateSideEntranceEscape
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::ActivateSideEntranceEscape()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateSideEntranceEscape", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateSewerSecureLoot
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::ActivateSewerSecureLoot()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateSewerSecureLoot", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateSewerEscape
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::ActivateSewerEscape()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateSewerEscape", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateSecureLoot
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::ActivateSecureLoot()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateSecureLoot", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateRedDoorSecureLoot
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::ActivateRedDoorSecureLoot()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateRedDoorSecureLoot", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateRedDoorEscape
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::ActivateRedDoorEscape()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateRedDoorEscape", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateMilestone3
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::ActivateMilestone3()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateMilestone3", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateMilestone2
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::ActivateMilestone2()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateMilestone2", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateLoudSecure
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::ActivateLoudSecure()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateLoudSecure", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateLoudGameplayElements
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::ActivateLoudGameplayElements()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateLoudGameplayElements", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateLoudEscape
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::ActivateLoudEscape()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateLoudEscape", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateGetToTheTruck
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::ActivateGetToTheTruck()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateGetToTheTruck", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateFirstObjective
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::ActivateFirstObjective()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateFirstObjective", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActivateEndlessAssault
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::ActivateEndlessAssault()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateEndlessAssault", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ActionPhaseStarted
+// (Event, Public, BlueprintEvent)
+
+void AG_SnGFO_Scripting_C::ActionPhaseStarted()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActionPhaseStarted", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

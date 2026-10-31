@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ABPL_Penthouse_ToiletModern_Wall_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_Penthouse_ToiletModern_Wall_C;
 
 SDK_NAMESPACE_END

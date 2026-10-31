@@ -33,10 +33,10 @@ public:
 	class UTimelineComponent*                     OpenSidewaysTimeline;                              // 0x0528(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnStateChanged(ESBZDisplayCaseState OldState, ESBZDisplayCaseState NewState, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_SmallJewelryDisplayCase_Hanging(int32 EntryPoint);
-	void OpenSidewaysTimeline__FinishedFunc();
 	void OpenSidewaysTimeline__UpdateFunc();
+	void OpenSidewaysTimeline__FinishedFunc();
+	void ExecuteUbergraph_BP_SmallJewelryDisplayCase_Hanging(int32 EntryPoint);
+	void BP_OnStateChanged(ESBZDisplayCaseState OldState_BP_OnStateChanged, ESBZDisplayCaseState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged);
 
 public:
 	static class UClass* StaticClass()
@@ -52,5 +52,6 @@ public:
 		return GetDefaultObjImpl<ABP_SmallJewelryDisplayCase_Hanging_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SmallJewelryDisplayCase_Hanging_C;
 
 SDK_NAMESPACE_END

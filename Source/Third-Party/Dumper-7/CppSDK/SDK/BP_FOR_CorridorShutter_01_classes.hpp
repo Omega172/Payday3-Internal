@@ -40,14 +40,14 @@ public:
 	TArray<class ABP_LGT_IndustrialLight_Controllable_C*> lights;                                    // 0x03D8(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate)
 
 public:
-	void bindPressurePlate(bool bind);
-	void ExecuteUbergraph_BP_FOR_CorridorShutter_01(int32 EntryPoint);
-	void getAnimationTimeOffset(double* gameTimeInSecondsOffset);
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void onWeightChanged(bool bIsOverLimit, bool bHasChanged, int32 OldCount, int32 NewCount);
-	void ReceiveBeginPlay();
+	void SetStateFunction(ESBZVehicleDoorState State);
 	void setBroken();
-	void SetStateFunction(ESBZVehicleDoorState State_0);
+	void ReceiveBeginPlay();
+	void onWeightChanged(bool bIsOverLimit, bool bHasChanged, int32 OldCount, int32 NewCount);
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void getAnimationTimeOffset(double* gameTimeInSecondsOffset);
+	void ExecuteUbergraph_BP_FOR_CorridorShutter_01(int32 EntryPoint);
+	void bindPressurePlate(bool bind);
 
 public:
 	static class UClass* StaticClass()
@@ -63,5 +63,6 @@ public:
 		return GetDefaultObjImpl<ABP_FOR_CorridorShutter_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_FOR_CorridorShutter_01_C;
 
 SDK_NAMESPACE_END

@@ -14,14 +14,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_CinematicCharacter_Base.BP_CinematicCharacter_Base_C.ExecuteUbergraph_BP_CinematicCharacter_Base
-// 0x0004 (0x0004 - 0x0000)
-struct BP_CinematicCharacter_Base_C_ExecuteUbergraph_BP_CinematicCharacter_Base final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_CinematicCharacter_Base.BP_CinematicCharacter_Base_C.UserConstructionScript
 // 0x0003 (0x0003 - 0x0000)
 struct BP_CinematicCharacter_Base_C_UserConstructionScript final
@@ -31,6 +23,16 @@ public:
 	bool                                          CallFunc_K2_AttachToComponent_ReturnValue_1;       // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_AttachToComponent_ReturnValue_2;       // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_CinematicCharacter_Base_C_UserConstructionScript;
+
+// Function BP_CinematicCharacter_Base.BP_CinematicCharacter_Base_C.ExecuteUbergraph_BP_CinematicCharacter_Base
+// 0x0004 (0x0004 - 0x0000)
+struct BP_CinematicCharacter_Base_C_ExecuteUbergraph_BP_CinematicCharacter_Base final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_CinematicCharacter_Base_C_ExecuteUbergraph_BP_CinematicCharacter_Base;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

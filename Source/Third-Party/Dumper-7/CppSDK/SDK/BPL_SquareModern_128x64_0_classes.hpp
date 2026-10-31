@@ -40,5 +40,6 @@ public:
 		return GetDefaultObjImpl<BPL_SquareModern_128x64_0::ABPL_SquareModern_128x64_C>();
 	}
 };
+DUMPER7_ASSERTS_BPL_SquareModern_128x64_0__ABPL_SquareModern_128x64_C;
 
 SDK_NAMESPACE_END

@@ -44,14 +44,14 @@ public:
 	ESBZDisplayCaseState                          DisplayState;                                      // 0x0560(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnGlassBroken(bool bDoCosmetics);
-	void BP_OnStateChanged(ESBZDisplayCaseState OldState, ESBZDisplayCaseState NewState, bool bDoCosmetics);
-	void EnableLockdown(bool bInEnabled);
-	void ExecuteUbergraph_BP_JewelryDisplayCase_Movable(int32 EntryPoint);
-	void LockDownTimeline__FinishedFunc();
-	void LockDownTimeline__UpdateFunc();
-	void OpenClose_Timeline__FinishedFunc();
 	void OpenClose_Timeline__UpdateFunc();
+	void OpenClose_Timeline__FinishedFunc();
+	void LockDownTimeline__UpdateFunc();
+	void LockDownTimeline__FinishedFunc();
+	void ExecuteUbergraph_BP_JewelryDisplayCase_Movable(int32 EntryPoint);
+	void EnableLockdown(bool bInEnabled);
+	void BP_OnStateChanged(ESBZDisplayCaseState OldState_BP_OnStateChanged, ESBZDisplayCaseState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged);
+	void BP_OnGlassBroken(bool bDoCosmetics_BP_OnGlassBroken);
 
 public:
 	static class UClass* StaticClass()
@@ -67,5 +67,6 @@ public:
 		return GetDefaultObjImpl<ABP_JewelryDisplayCase_Movable_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_JewelryDisplayCase_Movable_C;
 
 SDK_NAMESPACE_END

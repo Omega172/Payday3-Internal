@@ -28,6 +28,7 @@ public:
 	class FText                                   Temp_text_Variable_4;                              // 0x0048(0x0010)(ConstParm)
 	class FText                                   Temp_text_Variable_5;                              // 0x0058(0x0010)(ConstParm)
 };
+DUMPER7_ASSERTS_G_FirstPlayable_Coverpoints_C_ExecuteUbergraph_G_FirstPlayable_Coverpoints;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_ToastNoInteraction_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ToastNoInteraction_C;
 
 SDK_NAMESPACE_END

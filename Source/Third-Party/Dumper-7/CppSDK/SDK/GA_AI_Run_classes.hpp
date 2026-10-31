@@ -24,9 +24,9 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteUbergraph_GA_AI_Run(int32 EntryPoint);
-	void K2_ActivateAbility();
 	void K2_OnEndAbility(bool bWasCancelled);
+	void K2_ActivateAbility();
+	void ExecuteUbergraph_GA_AI_Run(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -42,5 +42,6 @@ public:
 		return GetDefaultObjImpl<UGA_AI_Run_C>();
 	}
 };
+DUMPER7_ASSERTS_UGA_AI_Run_C;
 
 SDK_NAMESPACE_END

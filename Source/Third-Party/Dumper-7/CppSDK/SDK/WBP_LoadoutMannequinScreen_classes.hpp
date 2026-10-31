@@ -25,9 +25,9 @@ public:
 	class UTextBlock*                             TextBlock_23;                                      // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Construct();
-	void ExecuteUbergraph_WBP_LoadoutMannequinScreen(int32 EntryPoint);
 	void setText(const class FText& InText);
+	void ExecuteUbergraph_WBP_LoadoutMannequinScreen(int32 EntryPoint);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()
@@ -43,5 +43,6 @@ public:
 		return GetDefaultObjImpl<UWBP_LoadoutMannequinScreen_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_LoadoutMannequinScreen_C;
 
 SDK_NAMESPACE_END

@@ -16,46 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_DynamicSign_Interior_01.WBP_DynamicSign_Interior_01_C.ExecuteUbergraph_WBP_DynamicSign_Interior_01
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_DynamicSign_Interior_01_C::ExecuteUbergraph_WBP_DynamicSign_Interior_01(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DynamicSign_Interior_01_C", "ExecuteUbergraph_WBP_DynamicSign_Interior_01");
-
-	Params::WBP_DynamicSign_Interior_01_C_ExecuteUbergraph_WBP_DynamicSign_Interior_01 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_DynamicSign_Interior_01.WBP_DynamicSign_Interior_01_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_DynamicSign_Interior_01_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DynamicSign_Interior_01_C", "PreConstruct");
-
-	Params::WBP_DynamicSign_Interior_01_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_DynamicSign_Interior_01.WBP_DynamicSign_Interior_01_C.setText
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -64,15 +24,49 @@ void UWBP_DynamicSign_Interior_01_C::PreConstruct(bool IsDesignTime)
 
 void UWBP_DynamicSign_Interior_01_C::setText(const class FText& primary, const class FText& secondary)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DynamicSign_Interior_01_C", "setText");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setText", FnName));
 
 	Params::WBP_DynamicSign_Interior_01_C_setText Parms{};
 
 	Parms.primary = std::move(primary);
 	Parms.secondary = std::move(secondary);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_DynamicSign_Interior_01.WBP_DynamicSign_Interior_01_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DynamicSign_Interior_01_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_DynamicSign_Interior_01_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_DynamicSign_Interior_01.WBP_DynamicSign_Interior_01_C.ExecuteUbergraph_WBP_DynamicSign_Interior_01
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DynamicSign_Interior_01_C::ExecuteUbergraph_WBP_DynamicSign_Interior_01(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_DynamicSign_Interior_01_C", "ExecuteUbergraph_WBP_DynamicSign_Interior_01", FuncInfo);
+
+	Params::WBP_DynamicSign_Interior_01_C_ExecuteUbergraph_WBP_DynamicSign_Interior_01 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

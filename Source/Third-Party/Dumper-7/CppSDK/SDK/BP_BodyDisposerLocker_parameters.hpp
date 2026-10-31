@@ -17,62 +17,14 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_BodyDisposerLocker.BP_BodyDisposerLocker_C.BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_BodyDisposerLocker_C_BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
+// Function BP_BodyDisposerLocker.BP_BodyDisposerLocker_C.UserConstructionScript
+// 0x0060 (0x0060 - 0x0000)
+struct BP_BodyDisposerLocker_C_UserConstructionScript final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_GetRelativeTransform_ReturnValue;         // 0x0000(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_BodyDisposerLocker.BP_BodyDisposerLocker_C.BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_BodyDisposerLocker_C_BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_BodyDisposerLocker.BP_BodyDisposerLocker_C.BP_OnActorDisposed
-// 0x0008 (0x0008 - 0x0000)
-struct BP_BodyDisposerLocker_C_BP_OnActorDisposed final
-{
-public:
-	int32                                         NumDisposed;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_BodyDisposerLocker.BP_BodyDisposerLocker_C.dumpBodyOpen_tick
-// 0x0008 (0x0008 - 0x0000)
-struct BP_BodyDisposerLocker_C_dumpBodyOpen_tick final
-{
-public:
-	double                                        alpha;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_BodyDisposerLocker.BP_BodyDisposerLocker_C.easeRemapedAlpha
-// 0x0058 (0x0058 - 0x0000)
-struct BP_BodyDisposerLocker_C_easeRemapedAlpha final
-{
-public:
-	double                                        alpha;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        alphaRangeA;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        alphaRangeB;                                       // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        targetA;                                           // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        targetB;                                           // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          muteTargetA;                                       // 0x0028(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        Result;                                            // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_MapRangeClamped_ReturnValue;              // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        K2Node_Select_Default;                             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Ease_ReturnValue;                         // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_BodyDisposerLocker_C_UserConstructionScript;
 
 // Function BP_BodyDisposerLocker.BP_BodyDisposerLocker_C.ExecuteUbergraph_BP_BodyDisposerLocker
 // 0x02C0 (0x02C0 - 0x0000)
@@ -99,14 +51,69 @@ public:
 	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult;   // 0x00B0(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult_1; // 0x01B8(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
+DUMPER7_ASSERTS_BP_BodyDisposerLocker_C_ExecuteUbergraph_BP_BodyDisposerLocker;
 
-// Function BP_BodyDisposerLocker.BP_BodyDisposerLocker_C.UserConstructionScript
-// 0x0060 (0x0060 - 0x0000)
-struct BP_BodyDisposerLocker_C_UserConstructionScript final
+// Function BP_BodyDisposerLocker.BP_BodyDisposerLocker_C.easeRemapedAlpha
+// 0x0058 (0x0058 - 0x0000)
+struct BP_BodyDisposerLocker_C_easeRemapedAlpha final
 {
 public:
-	struct FTransform                             CallFunc_GetRelativeTransform_ReturnValue;         // 0x0000(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        alpha;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        alphaRangeA;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        alphaRangeB;                                       // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        targetA;                                           // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        targetB;                                           // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          muteTargetA;                                       // 0x0028(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        Result;                                            // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_MapRangeClamped_ReturnValue;              // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        K2Node_Select_Default;                             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Ease_ReturnValue;                         // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_BodyDisposerLocker_C_easeRemapedAlpha;
+
+// Function BP_BodyDisposerLocker.BP_BodyDisposerLocker_C.dumpBodyOpen_tick
+// 0x0008 (0x0008 - 0x0000)
+struct BP_BodyDisposerLocker_C_dumpBodyOpen_tick final
+{
+public:
+	double                                        alpha_dumpBodyOpen_tick;                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BodyDisposerLocker_C_dumpBodyOpen_tick;
+
+// Function BP_BodyDisposerLocker.BP_BodyDisposerLocker_C.BP_OnActorDisposed
+// 0x0008 (0x0008 - 0x0000)
+struct BP_BodyDisposerLocker_C_BP_OnActorDisposed final
+{
+public:
+	int32                                         NumDisposed_BP_OnActorDisposed;                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_BP_OnActorDisposed;                   // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BodyDisposerLocker_C_BP_OnActorDisposed;
+
+// Function BP_BodyDisposerLocker.BP_BodyDisposerLocker_C.BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_BodyDisposerLocker_C_BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable_BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature; // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor_BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature; // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor_BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature; // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BodyDisposerLocker_C_BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature;
+
+// Function BP_BodyDisposerLocker.BP_BodyDisposerLocker_C.BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_BodyDisposerLocker_C_BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable_BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature; // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor_BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature; // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor_BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature; // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BodyDisposerLocker_C_BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

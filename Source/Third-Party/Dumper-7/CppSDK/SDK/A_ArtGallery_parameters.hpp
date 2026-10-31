@@ -17,6 +17,16 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function A_ArtGallery.A_ArtGallery_C.HeistStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct A_ArtGallery_C_HeistStateChanged final
+{
+public:
+	EPD3HeistState                                OldHeistState_HeistStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CurrentHeistState_HeistStateChanged;               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_A_ArtGallery_C_HeistStateChanged;
+
 // Function A_ArtGallery.A_ArtGallery_C.ExecuteUbergraph_A_ArtGallery
 // 0x00C8 (0x00C8 - 0x0000)
 struct A_ArtGallery_C_ExecuteUbergraph_A_ArtGallery final
@@ -44,15 +54,7 @@ public:
 	int32                                         CallFunc_PostEvent_ReturnValue_6;                  // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_PostEvent_ReturnValue_7;                  // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function A_ArtGallery.A_ArtGallery_C.HeistStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct A_ArtGallery_C_HeistStateChanged final
-{
-public:
-	EPD3HeistState                                OldHeistState;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CurrentHeistState;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_A_ArtGallery_C_ExecuteUbergraph_A_ArtGallery;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

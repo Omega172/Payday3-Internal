@@ -47,5 +47,6 @@ public:
 		return GetDefaultObjImpl<AM_local_Volume_fog_C>();
 	}
 };
+DUMPER7_ASSERTS_AM_local_Volume_fog_C;
 
 SDK_NAMESPACE_END

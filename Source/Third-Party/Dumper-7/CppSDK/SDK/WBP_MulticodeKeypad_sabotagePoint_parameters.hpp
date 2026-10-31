@@ -17,6 +17,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_MulticodeKeypad_sabotagePoint.WBP_MulticodeKeypad_sabotagePoint_C.setState
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_MulticodeKeypad_sabotagePoint_C_setState final
+{
+public:
+	int32                                         state;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MulticodeKeypad_sabotagePoint_C_setState;
+
 // Function WBP_MulticodeKeypad_sabotagePoint.WBP_MulticodeKeypad_sabotagePoint_C.ExecuteUbergraph_WBP_MulticodeKeypad_sabotagePoint
 // 0x00A8 (0x00A8 - 0x0000)
 struct WBP_MulticodeKeypad_sabotagePoint_C_ExecuteUbergraph_WBP_MulticodeKeypad_sabotagePoint final
@@ -37,14 +46,7 @@ public:
 	struct FLinearColor                           K2Node_Select_Default_1;                           // 0x0084(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0094(0x0014)()
 };
-
-// Function WBP_MulticodeKeypad_sabotagePoint.WBP_MulticodeKeypad_sabotagePoint_C.setState
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_MulticodeKeypad_sabotagePoint_C_setState final
-{
-public:
-	int32                                         state;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_WBP_MulticodeKeypad_sabotagePoint_C_ExecuteUbergraph_WBP_MulticodeKeypad_sabotagePoint;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

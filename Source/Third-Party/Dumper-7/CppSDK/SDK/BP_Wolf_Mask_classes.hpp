@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Wolf_Mask.BP_Wolf_Mask_C
-// 0x0000 (0x03C8 - 0x03C8)
+// 0x0000 (0x03D8 - 0x03D8)
 class ABP_Wolf_Mask_C final : public ASBZMask
 {
 public:
@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Wolf_Mask_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Wolf_Mask_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Painting_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Painting_C;
 
 SDK_NAMESPACE_END

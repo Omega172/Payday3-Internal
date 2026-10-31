@@ -16,41 +16,45 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_RoomSpawnController.BP_RoomSpawnController_C.BindRedCardEvent
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class ABP_RedKeycard_C*                 CardRef                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function BP_RoomSpawnController.BP_RoomSpawnController_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_RoomSpawnController_C::BindRedCardEvent(class ABP_RedKeycard_C* CardRef)
+void ABP_RoomSpawnController_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RoomSpawnController_C", "BindRedCardEvent");
-
-	Params::BP_RoomSpawnController_C_BindRedCardEvent Parms{};
-
-	Parms.CardRef = CardRef;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_RoomSpawnController.BP_RoomSpawnController_C.ExecuteUbergraph_BP_RoomSpawnController
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_RoomSpawnController.BP_RoomSpawnController_C.SpawnRedCardInRoom
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_RoomSpawnController_C::ExecuteUbergraph_BP_RoomSpawnController(int32 EntryPoint)
+void ABP_RoomSpawnController_C::SpawnRedCardInRoom()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnRedCardInRoom", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RoomSpawnController_C", "ExecuteUbergraph_BP_RoomSpawnController");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_RoomSpawnController_C_ExecuteUbergraph_BP_RoomSpawnController Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+// Function BP_RoomSpawnController.BP_RoomSpawnController_C.OnCardPickupEvent
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void ABP_RoomSpawnController_C::OnCardPickupEvent(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnCardPickupEvent", FnName));
+
+	Params::BP_RoomSpawnController_C_OnCardPickupEvent Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -64,10 +68,8 @@ void ABP_RoomSpawnController_C::ExecuteUbergraph_BP_RoomSpawnController(int32 En
 
 void ABP_RoomSpawnController_C::NewFunction_0(TArray<class AActor*>& Array, class UClass* WhatShould_Spawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RoomSpawnController_C", "NewFunction_0");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"NewFunction_0", FnName));
 
 	Params::BP_RoomSpawnController_C_NewFunction_0 Parms{};
 
@@ -80,53 +82,39 @@ void ABP_RoomSpawnController_C::NewFunction_0(TArray<class AActor*>& Array, clas
 }
 
 
-// Function BP_RoomSpawnController.BP_RoomSpawnController_C.OnCardPickupEvent
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_RoomSpawnController.BP_RoomSpawnController_C.ExecuteUbergraph_BP_RoomSpawnController
+// (Final, UbergraphFunction)
 // Parameters:
-// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_RoomSpawnController_C::OnCardPickupEvent(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
+void ABP_RoomSpawnController_C::ExecuteUbergraph_BP_RoomSpawnController(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_RoomSpawnController_C", "ExecuteUbergraph_BP_RoomSpawnController", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RoomSpawnController_C", "OnCardPickupEvent");
+	Params::BP_RoomSpawnController_C_ExecuteUbergraph_BP_RoomSpawnController Parms{};
 
-	Params::BP_RoomSpawnController_C_OnCardPickupEvent Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_RoomSpawnController.BP_RoomSpawnController_C.SpawnRedCardInRoom
+// Function BP_RoomSpawnController.BP_RoomSpawnController_C.BindRedCardEvent
 // (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ABP_RedKeycard_C*                 CardRef                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_RoomSpawnController_C::SpawnRedCardInRoom()
+void ABP_RoomSpawnController_C::BindRedCardEvent(class ABP_RedKeycard_C* CardRef)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BindRedCardEvent", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RoomSpawnController_C", "SpawnRedCardInRoom");
+	Params::BP_RoomSpawnController_C_BindRedCardEvent Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Parms.CardRef = CardRef;
 
-
-// Function BP_RoomSpawnController.BP_RoomSpawnController_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_RoomSpawnController_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RoomSpawnController_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

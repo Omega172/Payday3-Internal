@@ -18,22 +18,14 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_Throwable_Flashbang.BP_Throwable_Flashbang_C.BndEvt__BP_Throwable_Flashbang_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature
-// 0x0120 (0x0120 - 0x0000)
-struct BP_Throwable_Flashbang_C_BndEvt__BP_Throwable_Flashbang_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature final
+// Function BP_Throwable_Flashbang.BP_Throwable_Flashbang_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_Throwable_Flashbang_C_ReceiveTick final
 {
 public:
-	struct FHitResult                             ImpactResult;                                      // 0x0000(0x0108)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                ImpactVelocity;                                    // 0x0108(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_Throwable_Flashbang.BP_Throwable_Flashbang_C.BndEvt__BP_Throwable_Flashbang_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature
-// 0x0108 (0x0108 - 0x0000)
-struct BP_Throwable_Flashbang_C_BndEvt__BP_Throwable_Flashbang_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature final
-{
-public:
-	struct FHitResult                             ImpactResult;                                      // 0x0000(0x0108)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
+DUMPER7_ASSERTS_BP_Throwable_Flashbang_C_ReceiveTick;
 
 // Function BP_Throwable_Flashbang.BP_Throwable_Flashbang_C.ExecuteUbergraph_BP_Throwable_Flashbang
 // 0x03E0 (0x03E0 - 0x0000)
@@ -65,14 +57,26 @@ public:
 	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x03DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_IsClosed_Variable;                       // 0x03DD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Throwable_Flashbang_C_ExecuteUbergraph_BP_Throwable_Flashbang;
 
-// Function BP_Throwable_Flashbang.BP_Throwable_Flashbang_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_Throwable_Flashbang_C_ReceiveTick final
+// Function BP_Throwable_Flashbang.BP_Throwable_Flashbang_C.BndEvt__BP_Throwable_Flashbang_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature
+// 0x0108 (0x0108 - 0x0000)
+struct BP_Throwable_Flashbang_C_BndEvt__BP_Throwable_Flashbang_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature final
 {
 public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             ImpactResult;                                      // 0x0000(0x0108)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
+DUMPER7_ASSERTS_BP_Throwable_Flashbang_C_BndEvt__BP_Throwable_Flashbang_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature;
+
+// Function BP_Throwable_Flashbang.BP_Throwable_Flashbang_C.BndEvt__BP_Throwable_Flashbang_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature
+// 0x0120 (0x0120 - 0x0000)
+struct BP_Throwable_Flashbang_C_BndEvt__BP_Throwable_Flashbang_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature final
+{
+public:
+	struct FHitResult                             ImpactResult;                                      // 0x0000(0x0108)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                ImpactVelocity;                                    // 0x0108(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Throwable_Flashbang_C_BndEvt__BP_Throwable_Flashbang_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

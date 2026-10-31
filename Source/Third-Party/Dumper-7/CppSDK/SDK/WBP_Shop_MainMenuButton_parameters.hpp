@@ -16,6 +16,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_Shop_MainMenuButton.WBP_Shop_MainMenuButton_C.ButtonFocusedChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Shop_MainMenuButton_C_ButtonFocusedChanged final
+{
+public:
+	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Shop_MainMenuButton_C_ButtonFocusedChanged;
+
 // Function WBP_Shop_MainMenuButton.WBP_Shop_MainMenuButton_C.ExecuteUbergraph_WBP_Shop_MainMenuButton
 // 0x0020 (0x0020 - 0x0000)
 struct WBP_Shop_MainMenuButton_C_ExecuteUbergraph_WBP_Shop_MainMenuButton final
@@ -32,15 +41,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Shop_MainMenuButton_C_ExecuteUbergraph_WBP_Shop_MainMenuButton;
-
-// Function WBP_Shop_MainMenuButton.WBP_Shop_MainMenuButton_C.ButtonFocusedChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Shop_MainMenuButton_C_ButtonFocusedChanged final
-{
-public:
-	bool                                          bInHasFocus_ButtonFocusedChanged;                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Shop_MainMenuButton_C_ButtonFocusedChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

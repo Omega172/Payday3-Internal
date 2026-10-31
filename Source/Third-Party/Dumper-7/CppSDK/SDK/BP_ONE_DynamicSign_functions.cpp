@@ -16,61 +16,53 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ONE_DynamicSign.BP_ONE_DynamicSign_C.ExecuteUbergraph_BP_ONE_DynamicSign
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ONE_DynamicSign.BP_ONE_DynamicSign_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_ONE_DynamicSign_C::ExecuteUbergraph_BP_ONE_DynamicSign(int32 EntryPoint)
+void ABP_ONE_DynamicSign_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ONE_DynamicSign_C", "ExecuteUbergraph_BP_ONE_DynamicSign");
-
-	Params::BP_ONE_DynamicSign_C_ExecuteUbergraph_BP_ONE_DynamicSign Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ONE_DynamicSign.BP_ONE_DynamicSign_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ONE_DynamicSign_C::OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ONE_DynamicSign_C", "OnStateChanged");
-
-	Params::BP_ONE_DynamicSign_C_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ONE_DynamicSign.BP_ONE_DynamicSign_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_ONE_DynamicSign_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ONE_DynamicSign_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ONE_DynamicSign.BP_ONE_DynamicSign_C.setup
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_ONE_DynamicSign_C::setup()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setup", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ONE_DynamicSign.BP_ONE_DynamicSign_C.setColor
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FLinearColor&              primary                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              secondary                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              textTint                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  roughnessText                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  metallicText                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ONE_DynamicSign_C::setColor(const struct FLinearColor& primary, const struct FLinearColor& secondary, const struct FLinearColor& textTint, double roughnessText, double metallicText)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setColor", FnName));
+
+	Params::BP_ONE_DynamicSign_C_setColor Parms{};
+
+	Parms.primary = std::move(primary);
+	Parms.secondary = std::move(secondary);
+	Parms.textTint = std::move(textTint);
+	Parms.roughnessText = roughnessText;
+	Parms.metallicText = metallicText;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -81,10 +73,8 @@ void ABP_ONE_DynamicSign_C::ReceiveBeginPlay()
 
 void ABP_ONE_DynamicSign_C::Set_Text(int32 NewState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ONE_DynamicSign_C", "Set Text");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set Text", FnName));
 
 	Params::BP_ONE_DynamicSign_C_Set_Text Parms{};
 
@@ -94,59 +84,55 @@ void ABP_ONE_DynamicSign_C::Set_Text(int32 NewState)
 }
 
 
-// Function BP_ONE_DynamicSign.BP_ONE_DynamicSign_C.setColor
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FLinearColor&              primary                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FLinearColor&              secondary                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FLinearColor&              textTint_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  roughnessText_0                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  metallicText_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ONE_DynamicSign.BP_ONE_DynamicSign_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_ONE_DynamicSign_C::setColor(const struct FLinearColor& primary, const struct FLinearColor& secondary, const struct FLinearColor& textTint_0, double roughnessText_0, double metallicText_0)
+void ABP_ONE_DynamicSign_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ONE_DynamicSign_C", "setColor");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_ONE_DynamicSign_C_setColor Parms{};
 
-	Parms.primary = std::move(primary);
-	Parms.secondary = std::move(secondary);
-	Parms.textTint_0 = std::move(textTint_0);
-	Parms.roughnessText_0 = roughnessText_0;
-	Parms.metallicText_0 = metallicText_0;
+// Function BP_ONE_DynamicSign.BP_ONE_DynamicSign_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   OldState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ONE_DynamicSign_C::OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_ONE_DynamicSign_C_OnStateChanged Parms{};
+
+	Parms.OldState_OnStateChanged = OldState_OnStateChanged;
+	Parms.NewState_OnStateChanged = NewState_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_ONE_DynamicSign.BP_ONE_DynamicSign_C.setup
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_ONE_DynamicSign.BP_ONE_DynamicSign_C.ExecuteUbergraph_BP_ONE_DynamicSign
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ONE_DynamicSign_C::setup()
+void ABP_ONE_DynamicSign_C::ExecuteUbergraph_BP_ONE_DynamicSign(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ONE_DynamicSign_C", "ExecuteUbergraph_BP_ONE_DynamicSign", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ONE_DynamicSign_C", "setup");
+	Params::BP_ONE_DynamicSign_C_ExecuteUbergraph_BP_ONE_DynamicSign Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Parms.EntryPoint = EntryPoint;
 
-
-// Function BP_ONE_DynamicSign.BP_ONE_DynamicSign_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_ONE_DynamicSign_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ONE_DynamicSign_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

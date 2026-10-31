@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "AkAudio_structs.hpp"
 #include "BP_Master_Light_Fixture_classes.hpp"
 #include "Starbreeze_structs.hpp"
-#include "AkAudio_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -32,9 +32,9 @@ public:
 	double                                        Moth_SpawnProbability;                             // 0x0468(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_LGT_WallLampIndustrial_01_B_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
-	void ExecuteUbergraph_BP_LGT_WallLampIndustrial_01_B(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_LGT_WallLampIndustrial_01_B(int32 EntryPoint);
+	void BndEvt__BP_LGT_WallLampIndustrial_01_B_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 
 public:
 	static class UClass* StaticClass()
@@ -50,5 +50,6 @@ public:
 		return GetDefaultObjImpl<ABP_LGT_WallLampIndustrial_01_B_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LGT_WallLampIndustrial_01_B_C;
 
 SDK_NAMESPACE_END

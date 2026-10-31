@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ABP_ZiplineBag_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ZiplineBag_C;
 
 SDK_NAMESPACE_END

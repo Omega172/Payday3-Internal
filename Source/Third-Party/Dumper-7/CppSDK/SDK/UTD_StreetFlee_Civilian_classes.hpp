@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UUTD_StreetFlee_Civilian_C>();
 	}
 };
+DUMPER7_ASSERTS_UUTD_StreetFlee_Civilian_C;
 
 SDK_NAMESPACE_END

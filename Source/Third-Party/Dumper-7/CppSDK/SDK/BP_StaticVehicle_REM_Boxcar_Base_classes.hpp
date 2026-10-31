@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_StaticVehicle_REM_Boxcar_Base_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_StaticVehicle_REM_Boxcar_Base_C;
 
 SDK_NAMESPACE_END

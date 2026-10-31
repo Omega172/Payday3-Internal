@@ -16,23 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_RedKeycard.BP_RedKeycard_C.GetSensorComponent
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZSensorComponent*              ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function BP_RedKeycard.BP_RedKeycard_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-class USBZSensorComponent* ABP_RedKeycard_C::GetSensorComponent()
+void ABP_RedKeycard_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RedKeycard_C", "GetSensorComponent");
-
-	Params::BP_RedKeycard_C_GetSensorComponent Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -43,10 +35,8 @@ class USBZSensorComponent* ABP_RedKeycard_C::GetSensorComponent()
 
 class USBZOutlineComponent* ABP_RedKeycard_C::GetSensorOutlineComponent()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RedKeycard_C", "GetSensorOutlineComponent");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetSensorOutlineComponent", FnName));
 
 	Params::BP_RedKeycard_C_GetSensorOutlineComponent Parms{};
 
@@ -56,17 +46,21 @@ class USBZOutlineComponent* ABP_RedKeycard_C::GetSensorOutlineComponent()
 }
 
 
-// Function BP_RedKeycard.BP_RedKeycard_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_RedKeycard.BP_RedKeycard_C.GetSensorComponent
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZSensorComponent*              ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_RedKeycard_C::UserConstructionScript()
+class USBZSensorComponent* ABP_RedKeycard_C::GetSensorComponent()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetSensorComponent", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RedKeycard_C", "UserConstructionScript");
+	Params::BP_RedKeycard_C_GetSensorComponent Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 

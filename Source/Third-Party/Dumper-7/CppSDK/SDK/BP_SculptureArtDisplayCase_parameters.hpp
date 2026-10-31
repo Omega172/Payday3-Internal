@@ -18,15 +18,17 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_SculptureArtDisplayCase.BP_SculptureArtDisplayCase_C.BP_OnStateChanged
-// 0x0003 (0x0003 - 0x0000)
-struct BP_SculptureArtDisplayCase_C_BP_OnStateChanged final
+// Function BP_SculptureArtDisplayCase.BP_SculptureArtDisplayCase_C.UserConstructionScript
+// 0x0010 (0x0010 - 0x0000)
+struct BP_SculptureArtDisplayCase_C_UserConstructionScript final
 {
 public:
-	ESBZDisplayCaseState                          OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZDisplayCaseState                          NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_R;                             // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_G;                             // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_B;                             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_A;                             // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_SculptureArtDisplayCase_C_UserConstructionScript;
 
 // Function BP_SculptureArtDisplayCase.BP_SculptureArtDisplayCase_C.ExecuteUbergraph_BP_SculptureArtDisplayCase
 // 0x0160 (0x0160 - 0x0000)
@@ -48,17 +50,18 @@ public:
 	int32                                         CallFunc_PostEvent_ReturnValue_1;                  // 0x0154(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_PostEvent_ReturnValue_2;                  // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_SculptureArtDisplayCase_C_ExecuteUbergraph_BP_SculptureArtDisplayCase;
 
-// Function BP_SculptureArtDisplayCase.BP_SculptureArtDisplayCase_C.UserConstructionScript
-// 0x0010 (0x0010 - 0x0000)
-struct BP_SculptureArtDisplayCase_C_UserConstructionScript final
+// Function BP_SculptureArtDisplayCase.BP_SculptureArtDisplayCase_C.BP_OnStateChanged
+// 0x0003 (0x0003 - 0x0000)
+struct BP_SculptureArtDisplayCase_C_BP_OnStateChanged final
 {
 public:
-	float                                         CallFunc_BreakColor_R;                             // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_G;                             // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_B;                             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_A;                             // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZDisplayCaseState                          OldState_BP_OnStateChanged;                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZDisplayCaseState                          NewState_BP_OnStateChanged;                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_BP_OnStateChanged;                    // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_SculptureArtDisplayCase_C_BP_OnStateChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

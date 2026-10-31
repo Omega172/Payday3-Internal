@@ -30,13 +30,13 @@ public:
 	class ASBZRoomVolume*                         SBZRoomVolume_SecRoomClosetLeft_ExecuteUbergraph_G_FirstPlayable_Coverpoints_RefProperty; // 0x0400(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_G_FirstPlayable_Coverpoints(int32 EntryPoint);
-	void Sharke_ClosetIsLeft();
-	void Sharke_ClosetIsRight();
-	void Sharke_ITIsLeft();
-	void Sharke_ITIsRight();
-	void Sharke_ServerIsLeft();
 	void Sharke_ServerIsRight();
+	void Sharke_ServerIsLeft();
+	void Sharke_ITIsRight();
+	void Sharke_ITIsLeft();
+	void Sharke_ClosetIsRight();
+	void Sharke_ClosetIsLeft();
+	void ExecuteUbergraph_G_FirstPlayable_Coverpoints(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -52,5 +52,6 @@ public:
 		return GetDefaultObjImpl<AG_FirstPlayable_Coverpoints_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_FirstPlayable_Coverpoints_C;
 
 SDK_NAMESPACE_END

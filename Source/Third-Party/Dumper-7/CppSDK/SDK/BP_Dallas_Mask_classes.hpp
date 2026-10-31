@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Dallas_Mask.BP_Dallas_Mask_C
-// 0x0000 (0x03C8 - 0x03C8)
+// 0x0000 (0x03D8 - 0x03D8)
 class ABP_Dallas_Mask_C final : public ASBZMask
 {
 public:
@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Dallas_Mask_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Dallas_Mask_C;
 
 SDK_NAMESPACE_END

@@ -12,9 +12,9 @@
 
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "doorStateSimple_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
-#include "doorStateSimple_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -40,11 +40,11 @@ public:
 	bool                                          oneOff;                                            // 0x0728(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_container_Double_doors_LeftOnly(int32 EntryPoint);
-	void getDoorSimpleState(ESBZGateState state, EdoorStateSimple* simpleState);
-	void OnStateChanged(ESBZGateState OldState, ESBZGateState NewState, bool bIsInitialStateChange);
-	void Open__FinishedFunc();
 	void Open__UpdateFunc();
+	void Open__FinishedFunc();
+	void OnStateChanged(ESBZGateState OldState_OnStateChanged, ESBZGateState NewState_OnStateChanged, bool bIsInitialStateChange_OnStateChanged);
+	void getDoorSimpleState(ESBZGateState state, EdoorStateSimple* simpleState);
+	void ExecuteUbergraph_BP_container_Double_doors_LeftOnly(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -60,5 +60,6 @@ public:
 		return GetDefaultObjImpl<ABP_container_Double_doors_LeftOnly_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_container_Double_doors_LeftOnly_C;
 
 SDK_NAMESPACE_END

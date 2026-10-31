@@ -26,8 +26,8 @@ public:
 	double                                        BinFloat;                                          // 0x0368(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void UpdatePool(ESBZTrafficLightStatus Status_UpdatePool, const TArray<class UStaticMeshComponent*>& Pool_UpdatePool, const TArray<class USBZAmbientSoundComponent*>& PedestrianSoundEmitters_UpdatePool);
 	void ExecuteUbergraph_PD3TrafficLightBase(int32 EntryPoint);
-	void UpdatePool(ESBZTrafficLightStatus Status, const TArray<class UStaticMeshComponent*>& Pool, const TArray<class USBZAmbientSoundComponent*>& PedestrianSoundEmitters);
 
 public:
 	static class UClass* StaticClass()
@@ -43,5 +43,6 @@ public:
 		return GetDefaultObjImpl<APD3TrafficLightBase_C>();
 	}
 };
+DUMPER7_ASSERTS_APD3TrafficLightBase_C;
 
 SDK_NAMESPACE_END

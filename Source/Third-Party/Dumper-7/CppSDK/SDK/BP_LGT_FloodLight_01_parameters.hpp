@@ -11,10 +11,29 @@
 #include "Basic.hpp"
 
 #include "Starbreeze_structs.hpp"
+#include "AkAudio_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
+
+// Function BP_LGT_FloodLight_01.BP_LGT_FloodLight_01_C.ExecuteUbergraph_BP_LGT_FloodLight_01
+// 0x00C0 (0x00C0 - 0x0000)
+struct BP_LGT_FloodLight_01_C_ExecuteUbergraph_BP_LGT_FloodLight_01 final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable; // 0x0004(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZCosmeticDestructionType                   K2Node_ComponentBoundEvent_Type;                   // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZCosmeticDestructionContext         K2Node_ComponentBoundEvent_HitContext;             // 0x0020(0x0060)(ConstParm, NoDestructor)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0080(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0098(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      CallFunc_SpawnSystemAtLocation_ReturnValue;        // 0x00B0(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LGT_FloodLight_01_C_ExecuteUbergraph_BP_LGT_FloodLight_01;
 
 // Function BP_LGT_FloodLight_01.BP_LGT_FloodLight_01_C.BndEvt__BP_LGT_FloodLight_01_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
 // 0x0068 (0x0068 - 0x0000)
@@ -25,20 +44,7 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSBZCosmeticDestructionContext         HitContext;                                        // 0x0008(0x0060)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-
-// Function BP_LGT_FloodLight_01.BP_LGT_FloodLight_01_C.ExecuteUbergraph_BP_LGT_FloodLight_01
-// 0x0080 (0x0080 - 0x0000)
-struct BP_LGT_FloodLight_01_C_ExecuteUbergraph_BP_LGT_FloodLight_01 final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_RandomFloatInRange_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZCosmeticDestructionType                   K2Node_ComponentBoundEvent_Type;                   // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZCosmeticDestructionContext         K2Node_ComponentBoundEvent_HitContext;             // 0x0018(0x0060)(ConstParm, NoDestructor)
-	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_LGT_FloodLight_01_C_BndEvt__BP_LGT_FloodLight_01_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

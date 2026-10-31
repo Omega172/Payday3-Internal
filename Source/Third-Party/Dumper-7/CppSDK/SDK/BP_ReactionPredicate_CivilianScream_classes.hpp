@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UBP_ReactionPredicate_CivilianScream_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_ReactionPredicate_CivilianScream_C;
 
 SDK_NAMESPACE_END

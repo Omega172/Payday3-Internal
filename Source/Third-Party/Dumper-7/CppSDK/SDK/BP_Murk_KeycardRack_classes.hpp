@@ -38,18 +38,18 @@ public:
 	bool                                          showLookAt;                                        // 0x03EC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void addMarker(const class USBZMarkerDataAsset* MarkerDataAsset);
-	void autoAddObjects();
-	void BndEvt__BP_Murk_KeycardRack_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
-	void BndEvt__BP_Murk_SSDServerRack_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
-	void ExecuteUbergraph_BP_Murk_KeycardRack(int32 EntryPoint);
-	class FText GetMarkerText();
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void ReceiveBeginPlay();
-	void ReceiveDestroyed();
-	void setLargeOutline(bool visible);
-	void setOutline(bool visible);
 	void UserConstructionScript();
+	void setOutline(bool visible);
+	void setLargeOutline(bool visible);
+	void ReceiveDestroyed();
+	void ReceiveBeginPlay();
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	class FText GetMarkerText();
+	void ExecuteUbergraph_BP_Murk_KeycardRack(int32 EntryPoint);
+	void BndEvt__BP_Murk_SSDServerRack_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
+	void BndEvt__BP_Murk_KeycardRack_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
+	void autoAddObjects();
+	void addMarker(const class USBZMarkerDataAsset* MarkerDataAsset);
 
 public:
 	static class UClass* StaticClass()
@@ -65,5 +65,6 @@ public:
 		return GetDefaultObjImpl<ABP_Murk_KeycardRack_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Murk_KeycardRack_C;
 
 SDK_NAMESPACE_END

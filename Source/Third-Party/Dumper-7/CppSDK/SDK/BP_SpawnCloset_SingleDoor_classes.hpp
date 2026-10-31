@@ -19,42 +19,43 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_SpawnCloset_SingleDoor.BP_SpawnCloset_SingleDoor_C
-// 0x00C8 (0x0420 - 0x0358)
+// 0x00D0 (0x0428 - 0x0358)
 class ABP_SpawnCloset_SingleDoor_C final : public ASBZReplicatedBinaryStateActor
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0358(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBoxComponent*                          RealestDoorClosed;                                 // 0x0360(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          RealestDoorOpen;                                   // 0x0368(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Handle;                                            // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   DoorRight;                                         // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        Hinge;                                             // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Frame;                                             // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAkComponent*                           Ak;                                                // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        Scene;                                             // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         OpenTimeline_OpenAlpha_ED0389AE448D0F1474B52E8F8BB9F900; // 0x03A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            OpenTimeline__Direction_ED0389AE448D0F1474B52E8F8BB9F900; // 0x03A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3A5[0x3];                                      // 0x03A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     OpenTimeline;                                      // 0x03A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                DoorRightOpenOffset;                               // 0x03B0(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                DoorRightOriginalLocation;                         // 0x03C8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 ClosedNavAreaClass;                                // 0x03E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 OpenNavAreaClass;                                  // 0x03E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               Closed;                                            // 0x03F0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	struct FRotator                               Open;                                              // 0x0408(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	class USBZAcousticPortalConnectorComponent*   SBZAcousticPortalConnector;                        // 0x0360(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          RealestDoorClosed;                                 // 0x0368(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          RealestDoorOpen;                                   // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Handle;                                            // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   DoorRight;                                         // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        Hinge;                                             // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Frame;                                             // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAkComponent*                           Ak;                                                // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        Scene;                                             // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         OpenTimeline_OpenAlpha_ED0389AE448D0F1474B52E8F8BB9F900; // 0x03A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            OpenTimeline__Direction_ED0389AE448D0F1474B52E8F8BB9F900; // 0x03AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3AD[0x3];                                      // 0x03AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     OpenTimeline;                                      // 0x03B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                DoorRightOpenOffset;                               // 0x03B8(0x0018)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                DoorRightOriginalLocation;                         // 0x03D0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 ClosedNavAreaClass;                                // 0x03E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 OpenNavAreaClass;                                  // 0x03F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               Closed;                                            // 0x03F8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FRotator                               Open;                                              // 0x0410(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	struct FRotator DoorPositionInterp(const struct FRotator& Original, const struct FRotator& Offset, double Alpha);
-	void ExecuteUbergraph_BP_SpawnCloset_SingleDoor(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void Open_Doors_No_Cosmetics(bool bOpen);
-	void OpenDoors_Internal(bool bOpen);
-	void OpenTimeline__FinishedFunc();
-	void OpenTimeline__SwitchDoor__EventFunc();
-	void OpenTimeline__UpdateFunc();
-	void ReactToCloset(bool bActorsInCloset, bool bDoCosmetics);
-	void Set_Relative_Position_Interp(class USceneComponent* Component, const struct FRotator& Original, const struct FRotator& Offset, double Alpha);
 	void setNav(bool open);
+	void Set_Relative_Position_Interp(class USceneComponent* Component, const struct FRotator& Original, const struct FRotator& Offset, double Alpha);
+	void ReactToCloset(bool bActorsInCloset, bool bDoCosmetics);
+	void OpenTimeline__UpdateFunc();
+	void OpenTimeline__SwitchDoor__EventFunc();
+	void OpenTimeline__FinishedFunc();
+	void OpenDoors_Internal(bool bOpen);
+	void Open_Doors_No_Cosmetics(bool bOpen);
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_SpawnCloset_SingleDoor(int32 EntryPoint);
+	struct FRotator DoorPositionInterp(const struct FRotator& Original, const struct FRotator& Offset, double Alpha);
 
 public:
 	static class UClass* StaticClass()
@@ -70,5 +71,6 @@ public:
 		return GetDefaultObjImpl<ABP_SpawnCloset_SingleDoor_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SpawnCloset_SingleDoor_C;
 
 SDK_NAMESPACE_END

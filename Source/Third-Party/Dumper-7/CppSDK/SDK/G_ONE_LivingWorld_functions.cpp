@@ -16,64 +16,58 @@
 
 SDK_NAMESPACE_START
 
-// Function G_ONE_LivingWorld.G_ONE_LivingWorld_C.BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined167_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
+// Function G_ONE_LivingWorld.G_ONE_LivingWorld_C.PushLiveAction
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           SpecificActionComponentOwner                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          Owner                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   MixedSeed                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_ONE_LivingWorld_C::BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined167_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+void AG_ONE_LivingWorld_C::PushLiveAction(class AActor* SpecificActionComponentOwner, class UObject* Owner, int32 MixedSeed)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PushLiveAction", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ONE_LivingWorld_C", "BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined167_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature");
+	Params::G_ONE_LivingWorld_C_PushLiveAction Parms{};
 
-	Params::G_ONE_LivingWorld_C_BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined167_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
+	Parms.SpecificActionComponentOwner = SpecificActionComponentOwner;
+	Parms.Owner = Owner;
+	Parms.MixedSeed = MixedSeed;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_ONE_LivingWorld.G_ONE_LivingWorld_C.BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined169_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
+// Function G_ONE_LivingWorld.G_ONE_LivingWorld_C.ExecuteUbergraph_G_ONE_LivingWorld
+// (Final, UbergraphFunction)
 // Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_ONE_LivingWorld_C::BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined169_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+void AG_ONE_LivingWorld_C::ExecuteUbergraph_G_ONE_LivingWorld(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_ONE_LivingWorld_C", "ExecuteUbergraph_G_ONE_LivingWorld", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ONE_LivingWorld_C", "BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined169_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature");
+	Params::G_ONE_LivingWorld_C_ExecuteUbergraph_G_ONE_LivingWorld Parms{};
 
-	Params::G_ONE_LivingWorld_C_BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined169_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_ONE_LivingWorld.G_ONE_LivingWorld_C.BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined171_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// Function G_ONE_LivingWorld.G_ONE_LivingWorld_C.BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined_LifeAction43_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_ONE_LivingWorld_C::BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined171_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+void AG_ONE_LivingWorld_C::BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined_LifeAction43_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined_LifeAction43_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ONE_LivingWorld_C", "BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined171_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_ONE_LivingWorld_C_BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined171_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+	Params::G_ONE_LivingWorld_C_BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined_LifeAction43_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
 
 	Parms.SpawnedPawn = SpawnedPawn;
 	Parms.Spawnedloot = Spawnedloot;
@@ -90,10 +84,8 @@ void AG_ONE_LivingWorld_C::BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined171_K
 
 void AG_ONE_LivingWorld_C::BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined_LifeAction15_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ONE_LivingWorld_C", "BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined_LifeAction15_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined_LifeAction15_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
 
 	Params::G_ONE_LivingWorld_C_BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined_LifeAction15_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
 
@@ -104,20 +96,18 @@ void AG_ONE_LivingWorld_C::BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined_Life
 }
 
 
-// Function G_ONE_LivingWorld.G_ONE_LivingWorld_C.BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined_LifeAction43_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// Function G_ONE_LivingWorld.G_ONE_LivingWorld_C.BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined171_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_ONE_LivingWorld_C::BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined_LifeAction43_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+void AG_ONE_LivingWorld_C::BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined171_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined171_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ONE_LivingWorld_C", "BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined_LifeAction43_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_ONE_LivingWorld_C_BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined_LifeAction43_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+	Params::G_ONE_LivingWorld_C_BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined171_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
 
 	Parms.SpawnedPawn = SpawnedPawn;
 	Parms.Spawnedloot = Spawnedloot;
@@ -126,45 +116,41 @@ void AG_ONE_LivingWorld_C::BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined_Life
 }
 
 
-// Function G_ONE_LivingWorld.G_ONE_LivingWorld_C.ExecuteUbergraph_G_ONE_LivingWorld
-// (Final, UbergraphFunction)
+// Function G_ONE_LivingWorld.G_ONE_LivingWorld_C.BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined169_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_ONE_LivingWorld_C::ExecuteUbergraph_G_ONE_LivingWorld(int32 EntryPoint)
+void AG_ONE_LivingWorld_C::BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined169_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined169_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ONE_LivingWorld_C", "ExecuteUbergraph_G_ONE_LivingWorld");
+	Params::G_ONE_LivingWorld_C_BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined169_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
 
-	Params::G_ONE_LivingWorld_C_ExecuteUbergraph_G_ONE_LivingWorld Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_ONE_LivingWorld.G_ONE_LivingWorld_C.PushLiveAction
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function G_ONE_LivingWorld.G_ONE_LivingWorld_C.BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined167_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// class AActor*                           SpecificActionComponentOwner                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UObject*                          Owner_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   MixedSeed                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_ONE_LivingWorld_C::PushLiveAction(class AActor* SpecificActionComponentOwner, class UObject* Owner_0, int32 MixedSeed)
+void AG_ONE_LivingWorld_C::BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined167_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined167_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ONE_LivingWorld_C", "PushLiveAction");
+	Params::G_ONE_LivingWorld_C_BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined167_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
 
-	Params::G_ONE_LivingWorld_C_PushLiveAction Parms{};
-
-	Parms.SpecificActionComponentOwner = SpecificActionComponentOwner;
-	Parms.Owner_0 = Owner_0;
-	Parms.MixedSeed = MixedSeed;
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

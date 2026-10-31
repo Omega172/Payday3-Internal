@@ -42,5 +42,6 @@ public:
 		return GetDefaultObjImpl<ABPL_TrafficCone_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_TrafficCone_C;
 
 SDK_NAMESPACE_END

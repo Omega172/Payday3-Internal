@@ -16,59 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_SmallArtDisplayCase.BP_SmallArtDisplayCase_C.BP_OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// ESBZDisplayCaseState                    OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZDisplayCaseState                    NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_SmallArtDisplayCase.BP_SmallArtDisplayCase_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_SmallArtDisplayCase_C::BP_OnStateChanged(ESBZDisplayCaseState OldState, ESBZDisplayCaseState NewState, bool bDoCosmetics)
+void ABP_SmallArtDisplayCase_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SmallArtDisplayCase_C", "BP_OnStateChanged");
-
-	Params::BP_SmallArtDisplayCase_C_BP_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SmallArtDisplayCase.BP_SmallArtDisplayCase_C.ExecuteUbergraph_BP_SmallArtDisplayCase
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SmallArtDisplayCase_C::ExecuteUbergraph_BP_SmallArtDisplayCase(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SmallArtDisplayCase_C", "ExecuteUbergraph_BP_SmallArtDisplayCase");
-
-	Params::BP_SmallArtDisplayCase_C_ExecuteUbergraph_BP_SmallArtDisplayCase Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SmallArtDisplayCase.BP_SmallArtDisplayCase_C.Timeline_0__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_SmallArtDisplayCase_C::Timeline_0__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SmallArtDisplayCase_C", "Timeline_0__FinishedFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -79,26 +33,62 @@ void ABP_SmallArtDisplayCase_C::Timeline_0__FinishedFunc()
 
 void ABP_SmallArtDisplayCase_C::Timeline_0__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SmallArtDisplayCase_C", "Timeline_0__UpdateFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__UpdateFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_SmallArtDisplayCase.BP_SmallArtDisplayCase_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_SmallArtDisplayCase.BP_SmallArtDisplayCase_C.Timeline_0__FinishedFunc
+// (BlueprintEvent)
 
-void ABP_SmallArtDisplayCase_C::UserConstructionScript()
+void ABP_SmallArtDisplayCase_C::Timeline_0__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SmallArtDisplayCase_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__FinishedFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SmallArtDisplayCase.BP_SmallArtDisplayCase_C.ExecuteUbergraph_BP_SmallArtDisplayCase
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SmallArtDisplayCase_C::ExecuteUbergraph_BP_SmallArtDisplayCase(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_SmallArtDisplayCase_C", "ExecuteUbergraph_BP_SmallArtDisplayCase", FuncInfo);
+
+	Params::BP_SmallArtDisplayCase_C_ExecuteUbergraph_BP_SmallArtDisplayCase Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SmallArtDisplayCase.BP_SmallArtDisplayCase_C.BP_OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZDisplayCaseState                    OldState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZDisplayCaseState                    NewState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_BP_OnStateChanged                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SmallArtDisplayCase_C::BP_OnStateChanged(ESBZDisplayCaseState OldState_BP_OnStateChanged, ESBZDisplayCaseState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnStateChanged", FnName));
+
+	Params::BP_SmallArtDisplayCase_C_BP_OnStateChanged Parms{};
+
+	Parms.OldState_BP_OnStateChanged = OldState_BP_OnStateChanged;
+	Parms.NewState_BP_OnStateChanged = NewState_BP_OnStateChanged;
+	Parms.bDoCosmetics_BP_OnStateChanged = bDoCosmetics_BP_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

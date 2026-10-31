@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_CosmeticPickupPlank_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CosmeticPickupPlank_C;
 
 SDK_NAMESPACE_END

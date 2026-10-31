@@ -16,37 +16,23 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ReplicatedBinaryActor_bollard.BP_ReplicatedBinaryActor_bollard_C.ExecuteUbergraph_BP_ReplicatedBinaryActor_bollard
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_ReplicatedBinaryActor_bollard.BP_ReplicatedBinaryActor_bollard_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bStateToChangeTo_OnStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ReplicatedBinaryActor_bollard_C::ExecuteUbergraph_BP_ReplicatedBinaryActor_bollard(int32 EntryPoint)
+void ABP_ReplicatedBinaryActor_bollard_C::OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_bollard_C", "ExecuteUbergraph_BP_ReplicatedBinaryActor_bollard");
+	Params::BP_ReplicatedBinaryActor_bollard_C_OnStateChanged Parms{};
 
-	Params::BP_ReplicatedBinaryActor_bollard_C_ExecuteUbergraph_BP_ReplicatedBinaryActor_bollard Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.bStateToChangeTo_OnStateChanged = bStateToChangeTo_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ReplicatedBinaryActor_bollard.BP_ReplicatedBinaryActor_bollard_C.MoveBollard__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_ReplicatedBinaryActor_bollard_C::MoveBollard__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_bollard_C", "MoveBollard__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -55,32 +41,38 @@ void ABP_ReplicatedBinaryActor_bollard_C::MoveBollard__FinishedFunc()
 
 void ABP_ReplicatedBinaryActor_bollard_C::MoveBollard__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_bollard_C", "MoveBollard__UpdateFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MoveBollard__UpdateFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ReplicatedBinaryActor_bollard.BP_ReplicatedBinaryActor_bollard_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ReplicatedBinaryActor_bollard.BP_ReplicatedBinaryActor_bollard_C.MoveBollard__FinishedFunc
+// (BlueprintEvent)
 
-void ABP_ReplicatedBinaryActor_bollard_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
+void ABP_ReplicatedBinaryActor_bollard_C::MoveBollard__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MoveBollard__FinishedFunc", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_bollard_C", "OnStateChanged");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_ReplicatedBinaryActor_bollard_C_OnStateChanged Parms{};
 
-	Parms.bStateToChangeTo = bStateToChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
+// Function BP_ReplicatedBinaryActor_bollard.BP_ReplicatedBinaryActor_bollard_C.ExecuteUbergraph_BP_ReplicatedBinaryActor_bollard
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ReplicatedBinaryActor_bollard_C::ExecuteUbergraph_BP_ReplicatedBinaryActor_bollard(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ReplicatedBinaryActor_bollard_C", "ExecuteUbergraph_BP_ReplicatedBinaryActor_bollard", FuncInfo);
+
+	Params::BP_ReplicatedBinaryActor_bollard_C_ExecuteUbergraph_BP_ReplicatedBinaryActor_bollard Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

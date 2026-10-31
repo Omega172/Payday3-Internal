@@ -41,5 +41,6 @@ public:
 		return GetDefaultObjImpl<ABP_LGT_MainMenu_Fluorescent_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LGT_MainMenu_Fluorescent_01_C;
 
 SDK_NAMESPACE_END

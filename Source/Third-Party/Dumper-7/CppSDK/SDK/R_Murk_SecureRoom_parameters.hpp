@@ -16,14 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function R_Murk_SecureRoom.R_Murk_SecureRoom_C.BndEvt__R_Murk_SecureRoom_SBZPlayerTriggerVolume_PlayerInsideControlRoom_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct R_Murk_SecureRoom_C_BndEvt__R_Murk_SecureRoom_SBZPlayerTriggerVolume_PlayerInsideControlRoom_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function R_Murk_SecureRoom.R_Murk_SecureRoom_C.ExecuteUbergraph_R_Murk_SecureRoom
 // 0x0018 (0x0018 - 0x0000)
 struct R_Murk_SecureRoom_C_ExecuteUbergraph_R_Murk_SecureRoom final
@@ -38,6 +30,16 @@ public:
 	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins;              // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_R_Murk_SecureRoom_C_ExecuteUbergraph_R_Murk_SecureRoom;
+
+// Function R_Murk_SecureRoom.R_Murk_SecureRoom_C.BndEvt__R_Murk_SecureRoom_SBZPlayerTriggerVolume_PlayerInsideControlRoom_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct R_Murk_SecureRoom_C_BndEvt__R_Murk_SecureRoom_SBZPlayerTriggerVolume_PlayerInsideControlRoom_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_Murk_SecureRoom_C_BndEvt__R_Murk_SecureRoom_SBZPlayerTriggerVolume_PlayerInsideControlRoom_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

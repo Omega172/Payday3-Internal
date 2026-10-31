@@ -16,23 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_AudioMeshBase.BP_AudioMeshBase_C.ExecuteUbergraph_BP_AudioMeshBase
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_AudioMeshBase.BP_AudioMeshBase_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_AudioMeshBase_C::ExecuteUbergraph_BP_AudioMeshBase(int32 EntryPoint)
+void ABP_AudioMeshBase_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AudioMeshBase_C", "ExecuteUbergraph_BP_AudioMeshBase");
-
-	Params::BP_AudioMeshBase_C_ExecuteUbergraph_BP_AudioMeshBase Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -41,26 +33,28 @@ void ABP_AudioMeshBase_C::ExecuteUbergraph_BP_AudioMeshBase(int32 EntryPoint)
 
 void ABP_AudioMeshBase_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AudioMeshBase_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_AudioMeshBase.BP_AudioMeshBase_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_AudioMeshBase.BP_AudioMeshBase_C.ExecuteUbergraph_BP_AudioMeshBase
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_AudioMeshBase_C::UserConstructionScript()
+void ABP_AudioMeshBase_C::ExecuteUbergraph_BP_AudioMeshBase(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_AudioMeshBase_C", "ExecuteUbergraph_BP_AudioMeshBase", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AudioMeshBase_C", "UserConstructionScript");
+	Params::BP_AudioMeshBase_C_ExecuteUbergraph_BP_AudioMeshBase Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

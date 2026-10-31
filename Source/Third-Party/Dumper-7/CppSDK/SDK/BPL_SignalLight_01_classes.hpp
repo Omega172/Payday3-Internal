@@ -43,5 +43,6 @@ public:
 		return GetDefaultObjImpl<ABPL_SignalLight_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_SignalLight_01_C;
 
 SDK_NAMESPACE_END

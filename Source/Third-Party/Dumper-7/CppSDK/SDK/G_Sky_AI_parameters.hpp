@@ -23,6 +23,7 @@ public:
 	int32                                         CallFunc_GetRandomIntegerFromStreamMixed_ReturnValue; // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Sky_AI_C_ExecuteUbergraph_G_Sky_AI;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

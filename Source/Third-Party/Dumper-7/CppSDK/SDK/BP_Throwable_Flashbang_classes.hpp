@@ -18,23 +18,23 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Throwable_Flashbang.BP_Throwable_Flashbang_C
-// 0x0020 (0x8F30 - 0x8F10)
+// 0x0020 (0x0790 - 0x0770)
 #pragma pack(push, 0x1)
 class SDK_ALIGN(0x10) ABP_Throwable_Flashbang_C : public ASBZFlashBangGrenade
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x8F10(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UAkComponent*                           flash_bang_impact;                                 // 0x8F18(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Mesh_Lever;                                        // 0x8F20(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0770(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UAkComponent*                           flash_bang_impact;                                 // 0x0778(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Mesh_Lever;                                        // 0x0780(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_Throwable_Flashbang_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity);
-	void BndEvt__BP_Throwable_Flashbang_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature(const struct FHitResult& ImpactResult);
-	void ExecuteUbergraph_BP_Throwable_Flashbang(int32 EntryPoint);
-	void OnArmed();
-	void ReceiveTick(float DeltaSeconds);
-	void StartRandomRot();
 	void StopRandomRot();
+	void StartRandomRot();
+	void ReceiveTick(float DeltaSeconds);
+	void OnArmed();
+	void ExecuteUbergraph_BP_Throwable_Flashbang(int32 EntryPoint);
+	void BndEvt__BP_Throwable_Flashbang_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature(const struct FHitResult& ImpactResult);
+	void BndEvt__BP_Throwable_Flashbang_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity);
 
 public:
 	static class UClass* StaticClass()
@@ -51,5 +51,6 @@ public:
 	}
 };
 #pragma pack(pop)
+DUMPER7_ASSERTS_ABP_Throwable_Flashbang_C;
 
 SDK_NAMESPACE_END

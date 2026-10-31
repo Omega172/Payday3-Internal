@@ -20,7 +20,7 @@ SDK_NAMESPACE_START
 class AG_Pharaoh_LivingWorld_C final : public ASBZLevelScriptActor
 {
 public:
-	void PushLiveAction(class AActor* SpecificActionComponentOwner, class UObject* Owner_0, int32 MixedSeed);
+	void PushLiveAction(class AActor* SpecificActionComponentOwner, class UObject* Owner, int32 MixedSeed);
 
 public:
 	static class UClass* StaticClass()
@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<AG_Pharaoh_LivingWorld_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_Pharaoh_LivingWorld_C;
 
 SDK_NAMESPACE_END

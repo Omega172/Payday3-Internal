@@ -19,14 +19,12 @@ SDK_NAMESPACE_START
 // Function BP_IW_BRE_CUT_OPE_NAV_ATT_ArtGallery.BP_IW_BRE_CUT_OPE_NAV_ATT_ArtGallery_C.GetTraversalDestructibleMeshComponent
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UStaticMeshComponent*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UStaticMeshComponent*             ReturnValue_GetTraversalDestructibleMeshComponent      (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 class UStaticMeshComponent* ABP_IW_BRE_CUT_OPE_NAV_ATT_ArtGallery_C::GetTraversalDestructibleMeshComponent()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_IW_BRE_CUT_OPE_NAV_ATT_ArtGallery_C", "GetTraversalDestructibleMeshComponent");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetTraversalDestructibleMeshComponent", FnName));
 
 	Params::BP_IW_BRE_CUT_OPE_NAV_ATT_ArtGallery_C_GetTraversalDestructibleMeshComponent Parms{};
 
@@ -39,14 +37,12 @@ class UStaticMeshComponent* ABP_IW_BRE_CUT_OPE_NAV_ATT_ArtGallery_C::GetTraversa
 // Function BP_IW_BRE_CUT_OPE_NAV_ATT_ArtGallery.BP_IW_BRE_CUT_OPE_NAV_ATT_ArtGallery_C.GetPropDamageComponent
 // (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// class USBZPropDamageComponent*          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZPropDamageComponent*          ReturnValue_GetPropDamageComponent                     (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 class USBZPropDamageComponent* ABP_IW_BRE_CUT_OPE_NAV_ATT_ArtGallery_C::GetPropDamageComponent() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_IW_BRE_CUT_OPE_NAV_ATT_ArtGallery_C", "GetPropDamageComponent");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetPropDamageComponent", FnName));
 
 	Params::BP_IW_BRE_CUT_OPE_NAV_ATT_ArtGallery_C_GetPropDamageComponent Parms{};
 

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_RangedWeapon_Shotgun_Origin12_AI_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_RangedWeapon_Shotgun_Origin12_AI_C;
 
 SDK_NAMESPACE_END

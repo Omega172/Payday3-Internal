@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "CoreUObject_structs.hpp"
 #include "AkAudio_structs.hpp"
 
 
@@ -35,10 +35,10 @@ public:
 	TArray<int32>                                 meshPosIndex;                                      // 0x0380(0x0010)(Edit, BlueprintVisible)
 
 public:
-	void ExecuteUbergraph_BP_AmbientAudioMultiplePos_base(int32 EntryPoint);
-	void getWorldPositions(TArray<struct FTransform>* worldPositions);
-	void ReceiveBeginPlay();
 	void UserConstructionScript();
+	void ReceiveBeginPlay();
+	void getWorldPositions(TArray<struct FTransform>* worldPositions);
+	void ExecuteUbergraph_BP_AmbientAudioMultiplePos_base(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -54,5 +54,6 @@ public:
 		return GetDefaultObjImpl<ABP_AmbientAudioMultiplePos_base_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_AmbientAudioMultiplePos_base_C;
 
 SDK_NAMESPACE_END

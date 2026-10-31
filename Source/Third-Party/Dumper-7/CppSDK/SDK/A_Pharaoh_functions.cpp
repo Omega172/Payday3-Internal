@@ -16,20 +16,48 @@
 
 SDK_NAMESPACE_START
 
-// Function A_Pharaoh.A_Pharaoh_C.BndEvt__A_Pharaoh_TriggerVolume_Siren_K2Node_ActorBoundEvent_2_ActorBeginOverlapSignature__DelegateSignature
+// Function A_Pharaoh.A_Pharaoh_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AA_Pharaoh_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function A_Pharaoh.A_Pharaoh_C.ExecuteUbergraph_A_Pharaoh
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AA_Pharaoh_C::ExecuteUbergraph_A_Pharaoh(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "A_Pharaoh_C", "ExecuteUbergraph_A_Pharaoh", FuncInfo);
+
+	Params::A_Pharaoh_C_ExecuteUbergraph_A_Pharaoh Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function A_Pharaoh.A_Pharaoh_C.BndEvt__A_Pharaoh_TriggerVolume_Train_STOP_K2Node_ActorBoundEvent_1_ActorBeginOverlapSignature__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class AActor*                           OverlappedActor                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AA_Pharaoh_C::BndEvt__A_Pharaoh_TriggerVolume_Siren_K2Node_ActorBoundEvent_2_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor)
+void AA_Pharaoh_C::BndEvt__A_Pharaoh_TriggerVolume_Train_STOP_K2Node_ActorBoundEvent_1_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__A_Pharaoh_TriggerVolume_Train_STOP_K2Node_ActorBoundEvent_1_ActorBeginOverlapSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Pharaoh_C", "BndEvt__A_Pharaoh_TriggerVolume_Siren_K2Node_ActorBoundEvent_2_ActorBeginOverlapSignature__DelegateSignature");
-
-	Params::A_Pharaoh_C_BndEvt__A_Pharaoh_TriggerVolume_Siren_K2Node_ActorBoundEvent_2_ActorBeginOverlapSignature__DelegateSignature Parms{};
+	Params::A_Pharaoh_C_BndEvt__A_Pharaoh_TriggerVolume_Train_STOP_K2Node_ActorBoundEvent_1_ActorBeginOverlapSignature__DelegateSignature Parms{};
 
 	Parms.OverlappedActor = OverlappedActor;
 	Parms.OtherActor = OtherActor;
@@ -46,10 +74,8 @@ void AA_Pharaoh_C::BndEvt__A_Pharaoh_TriggerVolume_Siren_K2Node_ActorBoundEvent_
 
 void AA_Pharaoh_C::BndEvt__A_Pharaoh_TriggerVolume_Train_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Pharaoh_C", "BndEvt__A_Pharaoh_TriggerVolume_Train_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__A_Pharaoh_TriggerVolume_Train_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature", FnName));
 
 	Params::A_Pharaoh_C_BndEvt__A_Pharaoh_TriggerVolume_Train_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature Parms{};
 
@@ -60,59 +86,23 @@ void AA_Pharaoh_C::BndEvt__A_Pharaoh_TriggerVolume_Train_K2Node_ActorBoundEvent_
 }
 
 
-// Function A_Pharaoh.A_Pharaoh_C.BndEvt__A_Pharaoh_TriggerVolume_Train_STOP_K2Node_ActorBoundEvent_1_ActorBeginOverlapSignature__DelegateSignature
+// Function A_Pharaoh.A_Pharaoh_C.BndEvt__A_Pharaoh_TriggerVolume_Siren_K2Node_ActorBoundEvent_2_ActorBeginOverlapSignature__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class AActor*                           OverlappedActor                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AA_Pharaoh_C::BndEvt__A_Pharaoh_TriggerVolume_Train_STOP_K2Node_ActorBoundEvent_1_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor)
+void AA_Pharaoh_C::BndEvt__A_Pharaoh_TriggerVolume_Siren_K2Node_ActorBoundEvent_2_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__A_Pharaoh_TriggerVolume_Siren_K2Node_ActorBoundEvent_2_ActorBeginOverlapSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Pharaoh_C", "BndEvt__A_Pharaoh_TriggerVolume_Train_STOP_K2Node_ActorBoundEvent_1_ActorBeginOverlapSignature__DelegateSignature");
-
-	Params::A_Pharaoh_C_BndEvt__A_Pharaoh_TriggerVolume_Train_STOP_K2Node_ActorBoundEvent_1_ActorBeginOverlapSignature__DelegateSignature Parms{};
+	Params::A_Pharaoh_C_BndEvt__A_Pharaoh_TriggerVolume_Siren_K2Node_ActorBoundEvent_2_ActorBeginOverlapSignature__DelegateSignature Parms{};
 
 	Parms.OverlappedActor = OverlappedActor;
 	Parms.OtherActor = OtherActor;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function A_Pharaoh.A_Pharaoh_C.ExecuteUbergraph_A_Pharaoh
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AA_Pharaoh_C::ExecuteUbergraph_A_Pharaoh(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Pharaoh_C", "ExecuteUbergraph_A_Pharaoh");
-
-	Params::A_Pharaoh_C_ExecuteUbergraph_A_Pharaoh Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function A_Pharaoh.A_Pharaoh_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AA_Pharaoh_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Pharaoh_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

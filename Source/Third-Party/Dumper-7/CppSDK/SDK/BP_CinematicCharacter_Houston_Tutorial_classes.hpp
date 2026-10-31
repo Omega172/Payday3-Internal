@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_CinematicCharacter_Houston_Tutorial_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CinematicCharacter_Houston_Tutorial_C;
 
 SDK_NAMESPACE_END

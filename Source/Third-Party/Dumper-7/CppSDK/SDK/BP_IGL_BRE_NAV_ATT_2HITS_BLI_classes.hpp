@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "BPS_GlassHit_VFXData_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
 
@@ -41,9 +41,9 @@ public:
 	TMulticastInlineDelegate<void()>              onGlassDestroyed;                                  // 0x06D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__BP_BreachableWindow_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
-	void ExecuteUbergraph_BP_IGL_BRE_NAV_ATT_2HITS_BLI(int32 EntryPoint);
 	void OnStateChanged(ESBZGateState OldState, ESBZGateState NewState, bool bIsInitialStateChange);
+	void ExecuteUbergraph_BP_IGL_BRE_NAV_ATT_2HITS_BLI(int32 EntryPoint);
+	void BndEvt__BP_BreachableWindow_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
 
 	class USBZPropDamageComponent* GetPropDamageComponent() const;
 
@@ -61,5 +61,6 @@ public:
 		return GetDefaultObjImpl<ABP_IGL_BRE_NAV_ATT_2HITS_BLI_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_IGL_BRE_NAV_ATT_2HITS_BLI_C;
 
 SDK_NAMESPACE_END

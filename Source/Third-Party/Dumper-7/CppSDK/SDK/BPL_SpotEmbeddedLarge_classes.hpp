@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ABPL_SpotEmbeddedLarge_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_SpotEmbeddedLarge_C;
 
 SDK_NAMESPACE_END

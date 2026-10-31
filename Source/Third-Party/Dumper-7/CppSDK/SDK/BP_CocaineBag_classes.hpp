@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_CocaineBag_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CocaineBag_C;
 
 SDK_NAMESPACE_END

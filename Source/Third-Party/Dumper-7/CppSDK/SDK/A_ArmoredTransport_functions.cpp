@@ -16,15 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function A_ArmoredTransport.A_ArmoredTransport_C.ActionPhaseStarted
-// (Event, Public, BlueprintEvent)
+// Function A_ArmoredTransport.A_ArmoredTransport_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void AA_ArmoredTransport_C::ActionPhaseStarted()
+void AA_ArmoredTransport_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_ArmoredTransport_C", "ActionPhaseStarted");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +35,8 @@ void AA_ArmoredTransport_C::ActionPhaseStarted()
 
 void AA_ArmoredTransport_C::ExecuteUbergraph_A_ArmoredTransport(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_ArmoredTransport_C", "ExecuteUbergraph_A_ArmoredTransport");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "A_ArmoredTransport_C", "ExecuteUbergraph_A_ArmoredTransport", FuncInfo);
 
 	Params::A_ArmoredTransport_C_ExecuteUbergraph_A_ArmoredTransport Parms{};
 
@@ -50,15 +46,13 @@ void AA_ArmoredTransport_C::ExecuteUbergraph_A_ArmoredTransport(int32 EntryPoint
 }
 
 
-// Function A_ArmoredTransport.A_ArmoredTransport_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function A_ArmoredTransport.A_ArmoredTransport_C.ActionPhaseStarted
+// (Event, Public, BlueprintEvent)
 
-void AA_ArmoredTransport_C::ReceiveBeginPlay()
+void AA_ArmoredTransport_C::ActionPhaseStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_ArmoredTransport_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActionPhaseStarted", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

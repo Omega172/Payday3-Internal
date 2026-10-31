@@ -26,8 +26,8 @@ public:
 	class UTextBlock*                             STATE;                                             // 0x0308(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void SetCodeText(const class FText& InText);
 	void SetState(const class FText& InText);
+	void SetCodeText(const class FText& InText);
 
 public:
 	static class UClass* StaticClass()
@@ -43,5 +43,6 @@ public:
 		return GetDefaultObjImpl<UWBP_CableBox_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_CableBox_C;
 
 SDK_NAMESPACE_END

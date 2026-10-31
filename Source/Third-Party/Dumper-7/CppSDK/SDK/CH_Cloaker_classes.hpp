@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CH_BaseCop_classes.hpp"
 #include "Engine_structs.hpp"
+#include "CH_BaseCop_classes.hpp"
 #include "Starbreeze_structs.hpp"
 #include "AkAudio_structs.hpp"
 
@@ -19,19 +19,19 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CH_Cloaker.CH_Cloaker_C
-// 0x0010 (0x21D0 - 0x21C0)
+// 0x0010 (0x2260 - 0x2250)
 class ACH_Cloaker_C final : public ACH_BaseCop_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x21C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UNiagaraComponent*                      Niagara;                                           // 0x21C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x2250(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UNiagaraComponent*                      Niagara;                                           // 0x2258(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnHeistStateChanged(EPD3HeistState OldState, EPD3HeistState NewState);
-	void BP_OnKill();
-	void BP_OnTagReactionPlayed();
-	void ExecuteUbergraph_CH_Cloaker(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_CH_Cloaker(int32 EntryPoint);
+	void BP_OnTagReactionPlayed();
+	void BP_OnKill();
+	void BP_OnHeistStateChanged(EPD3HeistState OldState_BP_OnHeistStateChanged, EPD3HeistState NewState_BP_OnHeistStateChanged);
 
 public:
 	static class UClass* StaticClass()
@@ -47,5 +47,6 @@ public:
 		return GetDefaultObjImpl<ACH_Cloaker_C>();
 	}
 };
+DUMPER7_ASSERTS_ACH_Cloaker_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_LGT_TrafficModern_01_B_Red_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LGT_TrafficModern_01_B_Red_C;
 
 SDK_NAMESPACE_END

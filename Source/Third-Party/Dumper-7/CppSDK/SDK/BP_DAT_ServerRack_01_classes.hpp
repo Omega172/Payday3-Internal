@@ -28,12 +28,12 @@ public:
 	TArray<class ABP_InteractableDataCenterServer_C*> servers;                                       // 0x0358(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, ExposeOnSpawn)
 
 public:
-	void autoAddServers();
-	void ExecuteUbergraph_BP_DAT_ServerRack_01(int32 EntryPoint);
-	void onServerPickedUp(class ABP_InteractableDataCenterServer_C* server);
-	void onStateChanged(bool state, bool doCosmetics);
-	void UserConstructionScript();
 	void validateServers();
+	void UserConstructionScript();
+	void onStateChanged(bool state, bool doCosmetics);
+	void onServerPickedUp(class ABP_InteractableDataCenterServer_C* server);
+	void ExecuteUbergraph_BP_DAT_ServerRack_01(int32 EntryPoint);
+	void autoAddServers();
 
 public:
 	static class UClass* StaticClass()
@@ -49,5 +49,6 @@ public:
 		return GetDefaultObjImpl<ABP_DAT_ServerRack_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DAT_ServerRack_01_C;
 
 SDK_NAMESPACE_END

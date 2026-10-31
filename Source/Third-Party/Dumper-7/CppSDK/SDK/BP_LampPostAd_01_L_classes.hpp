@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_LampPostAd_01_L_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LampPostAd_01_L_C;
 
 SDK_NAMESPACE_END

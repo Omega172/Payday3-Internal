@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<ABP_DesktopComputer_02_Assembled_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DesktopComputer_02_Assembled_C;
 
 SDK_NAMESPACE_END

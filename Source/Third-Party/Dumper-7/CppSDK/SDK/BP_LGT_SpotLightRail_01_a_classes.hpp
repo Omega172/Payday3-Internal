@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_LGT_SpotLightRail_01_a_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LGT_SpotLightRail_01_a_C;
 
 SDK_NAMESPACE_END

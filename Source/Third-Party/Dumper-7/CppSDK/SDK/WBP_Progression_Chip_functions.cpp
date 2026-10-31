@@ -16,6 +16,42 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_Progression_Chip.WBP_Progression_Chip_C.ExecuteUbergraph_WBP_Progression_Chip
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Progression_Chip_C::ExecuteUbergraph_WBP_Progression_Chip(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_Progression_Chip_C", "ExecuteUbergraph_WBP_Progression_Chip", FuncInfo);
+
+	Params::WBP_Progression_Chip_C_ExecuteUbergraph_WBP_Progression_Chip Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Progression_Chip.WBP_Progression_Chip_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Progression_Chip_C::PreConstruct(bool IsDesignTime)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_Progression_Chip_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_Progression_Chip.WBP_Progression_Chip_C.UpdateProgression
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -31,42 +67,6 @@ void UWBP_Progression_Chip_C::UpdateProgression(int32 Current, int32 Total)
 
 	Parms.Current = Current;
 	Parms.Total = Total;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Progression_Chip.WBP_Progression_Chip_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Progression_Chip_C::PreConstruct(bool IsDesignTime_PreConstruct)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_Progression_Chip_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Progression_Chip.WBP_Progression_Chip_C.ExecuteUbergraph_WBP_Progression_Chip
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Progression_Chip_C::ExecuteUbergraph_WBP_Progression_Chip(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_Progression_Chip_C", "ExecuteUbergraph_WBP_Progression_Chip", FuncInfo);
-
-	Params::WBP_Progression_Chip_C_ExecuteUbergraph_WBP_Progression_Chip Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -16,466 +16,582 @@
 
 SDK_NAMESPACE_START
 
-// Function G_Stonk_AI.G_Stonk_AI_C.ActionPhaseStarted
+// Function G_Stonk_AI.G_Stonk_AI_C.UpperElevatorRemoved3
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::UpperElevatorRemoved3()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpperElevatorRemoved3", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.UpperElevatorRemoved2
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::UpperElevatorRemoved2()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpperElevatorRemoved2", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.UpperElevatorRemoved1
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::UpperElevatorRemoved1()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpperElevatorRemoved1", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.StonkUpperElevatorOpen3
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::StonkUpperElevatorOpen3()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StonkUpperElevatorOpen3", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.StonkUpperElevatorOpen2
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::StonkUpperElevatorOpen2()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StonkUpperElevatorOpen2", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.StonkUpperElevatorOpen1
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::StonkUpperElevatorOpen1()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StonkUpperElevatorOpen1", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.StonkMoveCrane
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::StonkMoveCrane()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StonkMoveCrane", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.StonkEMPTriggered
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::StonkEMPTriggered()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StonkEMPTriggered", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.StonkControllRoom2
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::StonkControllRoom2()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StonkControllRoom2", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.StonkControllRoom1
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::StonkControllRoom1()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StonkControllRoom1", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.SpawnOverkillWPRoof
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::SpawnOverkillWPRoof()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnOverkillWPRoof", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.SpawnCivControllRoom2
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::SpawnCivControllRoom2()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnCivControllRoom2", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.SpawnCivControllRoom1
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::SpawnCivControllRoom1()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnCivControllRoom1", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.Spawn SwatEscape
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::Spawn_SwatEscape()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Spawn SwatEscape", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.SleepingGasPlaced
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::SleepingGasPlaced()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SleepingGasPlaced", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.PPSpawnExchangeFloor
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::PPSpawnExchangeFloor()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PPSpawnExchangeFloor", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.PPSecurityShuttersDown
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::PPSecurityShuttersDown()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PPSecurityShuttersDown", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.PPLessCivillians
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::PPLessCivillians()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PPLessCivillians", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.PlayersBackOnRoof
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::PlayersBackOnRoof()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayersBackOnRoof", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.OnServerKeyItemTagAdded
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTag&              KeyTag_OnServerKeyItemTagAdded                         (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+
+void AG_Stonk_AI_C::OnServerKeyItemTagAdded(const struct FGameplayTag& KeyTag_OnServerKeyItemTagAdded)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnServerKeyItemTagAdded", FnName));
+
+	Params::G_Stonk_AI_C_OnServerKeyItemTagAdded Parms{};
+
+	Parms.KeyTag_OnServerKeyItemTagAdded = std::move(KeyTag_OnServerKeyItemTagAdded);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.OnOverkillWeaponRequested
 // (Event, Public, BlueprintEvent)
 
-void AG_Stonk_AI_C::ActionPhaseStarted()
+void AG_Stonk_AI_C::OnOverkillWeaponRequested()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "ActionPhaseStarted");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnOverkillWeaponRequested", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Stonk_AI.G_Stonk_AI_C.ActivateSniperHeli
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::ActivateSniperHeli()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "ActivateSniperHeli");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.ActivateSWATSHeli
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::ActivateSWATSHeli()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "ActivateSWATSHeli");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.AUDIO_Alarms_Triggered
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::AUDIO_Alarms_Triggered()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "AUDIO_Alarms_Triggered");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BlackScreenStarted
+// Function G_Stonk_AI.G_Stonk_AI_C.HeistStateChanged
 // (Event, Public, BlueprintEvent)
+// Parameters:
+// EPD3HeistState                          OldHeistState_HeistStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPD3HeistState                          CurrentHeistState_HeistStateChanged                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Stonk_AI_C::BlackScreenStarted()
+void AG_Stonk_AI_C::HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HeistStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "BlackScreenStarted");
+	Params::G_Stonk_AI_C_HeistStateChanged Parms{};
+
+	Parms.OldHeistState_HeistStateChanged = OldHeistState_HeistStateChanged;
+	Parms.CurrentHeistState_HeistStateChanged = CurrentHeistState_HeistStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.GlassBreak7
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::GlassBreak7()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GlassBreak7", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZOVKBagTriggerVolume_OVKDrop_K2Node_ActorBoundEvent_16_SBZBagEnteredDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// Function G_Stonk_AI.G_Stonk_AI_C.GlassBreak6
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZOVKBagTriggerVolume_OVKDrop_K2Node_ActorBoundEvent_16_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
+void AG_Stonk_AI_C::GlassBreak6()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GlassBreak6", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "BndEvt__G_Stonk_AI_SBZOVKBagTriggerVolume_OVKDrop_K2Node_ActorBoundEvent_16_SBZBagEnteredDelegate__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZOVKBagTriggerVolume_OVKDrop_K2Node_ActorBoundEvent_16_SBZBagEnteredDelegate__DelegateSignature Parms{};
 
-	Parms.Volume = Volume;
-	Parms.Bag = Bag;
-	Parms.Handle = std::move(Handle);
+// Function G_Stonk_AI.G_Stonk_AI_C.GlassBreak5
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::GlassBreak5()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GlassBreak5", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.GlassBreak4
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::GlassBreak4()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GlassBreak4", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.GlassBreak3
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::GlassBreak3()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GlassBreak3", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.GlassBreak2
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::GlassBreak2()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GlassBreak2", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.GlassBreak
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::GlassBreak()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GlassBreak", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.FindOfficeOBJActive
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::FindOfficeOBJActive()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"FindOfficeOBJActive", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.ExecuteUbergraph_G_Stonk_AI
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Stonk_AI_C::ExecuteUbergraph_G_Stonk_AI(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_Stonk_AI_C", "ExecuteUbergraph_G_Stonk_AI", FuncInfo);
+
+	Params::G_Stonk_AI_C_ExecuteUbergraph_G_Stonk_AI Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined183_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// Function G_Stonk_AI.G_Stonk_AI_C.EnableOutlineCardHolder
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::EnableOutlineCardHolder()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EnableOutlineCardHolder", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.EnableEntranceDropSpawns
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::EnableEntranceDropSpawns()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EnableEntranceDropSpawns", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.EnableElevatorSpawns
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::EnableElevatorSpawns()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EnableElevatorSpawns", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.DisableOutlineCardHolder
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::DisableOutlineCardHolder()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DisableOutlineCardHolder", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.DestroyQRPhones
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::DestroyQRPhones()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DestroyQRPhones", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BottomElevatorRemoved3
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::BottomElevatorRemoved3()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BottomElevatorRemoved3", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BottomElevatorRemoved2
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::BottomElevatorRemoved2()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BottomElevatorRemoved2", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BottomElevatorRemoved1
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Stonk_AI_C::BottomElevatorRemoved1()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BottomElevatorRemoved1", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZTrafficSpline_FirstResponders4_K2Node_ActorBoundEvent_4_SBZSplineOnEnter__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined183_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZTrafficSpline_FirstResponders4_K2Node_ActorBoundEvent_4_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Stonk_AI_SBZTrafficSpline_FirstResponders4_K2Node_ActorBoundEvent_4_SBZSplineOnEnter__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined183_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature");
+	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZTrafficSpline_FirstResponders4_K2Node_ActorBoundEvent_4_SBZSplineOnEnter__DelegateSignature Parms{};
 
-	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined183_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined192_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_1_SBZSplineOnEnter__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined192_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_1_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Stonk_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_1_SBZSplineOnEnter__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined192_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature");
+	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_1_SBZSplineOnEnter__DelegateSignature Parms{};
 
-	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined192_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined193_K2Node_ActorBoundEvent_18_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPlayerTriggerVolume_EnableCloaker_K2Node_ActorBoundEvent_11_SBZPawnDynamicDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined193_K2Node_ActorBoundEvent_18_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPlayerTriggerVolume_EnableCloaker_K2Node_ActorBoundEvent_11_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Stonk_AI_SBZPlayerTriggerVolume_EnableCloaker_K2Node_ActorBoundEvent_11_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined193_K2Node_ActorBoundEvent_18_SBZSpawnRequestCompletedDelegate__DelegateSignature");
+	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPlayerTriggerVolume_EnableCloaker_K2Node_ActorBoundEvent_11_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
-	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined193_K2Node_ActorBoundEvent_18_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
+	Parms.Pawn = Pawn;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined194_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPlayerTriggerVolume_EnableCloaker2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined194_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPlayerTriggerVolume_EnableCloaker2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Stonk_AI_SBZPlayerTriggerVolume_EnableCloaker2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined194_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature");
+	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPlayerTriggerVolume_EnableCloaker2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
-	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined194_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
+	Parms.Pawn = Pawn;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined195_K2Node_ActorBoundEvent_23_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRmanFloor3_K2Node_ActorBoundEvent_13_SBZSpawnRequestCompletedDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined195_K2Node_ActorBoundEvent_23_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRmanFloor3_K2Node_ActorBoundEvent_13_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRmanFloor3_K2Node_ActorBoundEvent_13_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined195_K2Node_ActorBoundEvent_23_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined195_K2Node_ActorBoundEvent_23_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined196_K2Node_ActorBoundEvent_22_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined196_K2Node_ActorBoundEvent_22_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined196_K2Node_ActorBoundEvent_22_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined196_K2Node_ActorBoundEvent_22_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined197_K2Node_ActorBoundEvent_21_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined197_K2Node_ActorBoundEvent_21_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined197_K2Node_ActorBoundEvent_21_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined197_K2Node_ActorBoundEvent_21_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined198_K2Node_ActorBoundEvent_24_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined198_K2Node_ActorBoundEvent_24_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined198_K2Node_ActorBoundEvent_24_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined198_K2Node_ActorBoundEvent_24_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined199_K2Node_ActorBoundEvent_25_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined199_K2Node_ActorBoundEvent_25_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined199_K2Node_ActorBoundEvent_25_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined199_K2Node_ActorBoundEvent_25_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardCorridor2_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardCorridor2_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardCorridor2_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardCorridor2_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardCorridor3_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardCorridor3_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardCorridor3_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardCorridor3_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardRoof5_K2Node_ActorBoundEvent_14_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardRoof5_K2Node_ActorBoundEvent_14_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardRoof5_K2Node_ActorBoundEvent_14_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardRoof5_K2Node_ActorBoundEvent_14_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_keycardman11_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_keycardman11_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_keycardman11_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_keycardman11_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_keycardman12_K2Node_ActorBoundEvent_7_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_keycardman12_K2Node_ActorBoundEvent_7_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_keycardman12_K2Node_ActorBoundEvent_7_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_keycardman12_K2Node_ActorBoundEvent_7_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_Keycardman22_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_Keycardman22_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_Keycardman22_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_Keycardman22_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRMan11_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRMan11_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRMan11_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRMan11_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRmanFloor3_K2Node_ActorBoundEvent_13_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
 
 	Parms.SpawnedPawn = SpawnedPawn;
 	Parms.Spawnedloot = Spawnedloot;
@@ -492,10 +608,8 @@ void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRMan11_K2Node_Act
 
 void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRMan12_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRMan12_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRMan12_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
 
 	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRMan12_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
 
@@ -506,20 +620,18 @@ void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRMan12_K2Node_Act
 }
 
 
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRmanFloor3_K2Node_ActorBoundEvent_13_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRMan11_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRmanFloor3_K2Node_ActorBoundEvent_13_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRMan11_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRMan11_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRmanFloor3_K2Node_ActorBoundEvent_13_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRmanFloor3_K2Node_ActorBoundEvent_13_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRMan11_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
 
 	Parms.SpawnedPawn = SpawnedPawn;
 	Parms.Spawnedloot = Spawnedloot;
@@ -528,651 +640,403 @@ void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRmanFloor3_K2Node
 }
 
 
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPlayerTriggerVolume_EnableCloaker2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPlayerTriggerVolume_EnableCloaker2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "BndEvt__G_Stonk_AI_SBZPlayerTriggerVolume_EnableCloaker2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature");
+	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
 
-	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPlayerTriggerVolume_EnableCloaker2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPlayerTriggerVolume_EnableCloaker_K2Node_ActorBoundEvent_11_SBZPawnDynamicDelegate__DelegateSignature
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_Keycardman22_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPlayerTriggerVolume_EnableCloaker_K2Node_ActorBoundEvent_11_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_Keycardman22_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_Keycardman22_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "BndEvt__G_Stonk_AI_SBZPlayerTriggerVolume_EnableCloaker_K2Node_ActorBoundEvent_11_SBZPawnDynamicDelegate__DelegateSignature");
+	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_Keycardman22_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
 
-	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPlayerTriggerVolume_EnableCloaker_K2Node_ActorBoundEvent_11_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_1_SBZSplineOnEnter__DelegateSignature
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_keycardman12_K2Node_ActorBoundEvent_7_SBZSpawnRequestCompletedDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_1_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_keycardman12_K2Node_ActorBoundEvent_7_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_keycardman12_K2Node_ActorBoundEvent_7_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "BndEvt__G_Stonk_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_1_SBZSplineOnEnter__DelegateSignature");
+	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_keycardman12_K2Node_ActorBoundEvent_7_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
 
-	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_1_SBZSplineOnEnter__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZTrafficSpline_FirstResponders4_K2Node_ActorBoundEvent_4_SBZSplineOnEnter__DelegateSignature
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_keycardman11_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZTrafficSpline_FirstResponders4_K2Node_ActorBoundEvent_4_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_keycardman11_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_keycardman11_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "BndEvt__G_Stonk_AI_SBZTrafficSpline_FirstResponders4_K2Node_ActorBoundEvent_4_SBZSplineOnEnter__DelegateSignature");
+	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_keycardman11_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
 
-	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZTrafficSpline_FirstResponders4_K2Node_ActorBoundEvent_4_SBZSplineOnEnter__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Stonk_AI.G_Stonk_AI_C.BottomElevatorRemoved1
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::BottomElevatorRemoved1()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "BottomElevatorRemoved1");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BottomElevatorRemoved2
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::BottomElevatorRemoved2()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "BottomElevatorRemoved2");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BottomElevatorRemoved3
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::BottomElevatorRemoved3()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "BottomElevatorRemoved3");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.DestroyQRPhones
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::DestroyQRPhones()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "DestroyQRPhones");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.DisableOutlineCardHolder
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::DisableOutlineCardHolder()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "DisableOutlineCardHolder");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.EnableElevatorSpawns
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::EnableElevatorSpawns()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "EnableElevatorSpawns");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.EnableEntranceDropSpawns
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::EnableEntranceDropSpawns()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "EnableEntranceDropSpawns");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.EnableOutlineCardHolder
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::EnableOutlineCardHolder()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "EnableOutlineCardHolder");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.ExecuteUbergraph_G_Stonk_AI
-// (Final, UbergraphFunction, HasDefaults)
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardRoof5_K2Node_ActorBoundEvent_14_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Stonk_AI_C::ExecuteUbergraph_G_Stonk_AI(int32 EntryPoint)
+void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardRoof5_K2Node_ActorBoundEvent_14_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardRoof5_K2Node_ActorBoundEvent_14_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "ExecuteUbergraph_G_Stonk_AI");
+	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardRoof5_K2Node_ActorBoundEvent_14_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
 
-	Params::G_Stonk_AI_C_ExecuteUbergraph_G_Stonk_AI Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Stonk_AI.G_Stonk_AI_C.FindOfficeOBJActive
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::FindOfficeOBJActive()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "FindOfficeOBJActive");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.GlassBreak
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::GlassBreak()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "GlassBreak");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.GlassBreak2
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::GlassBreak2()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "GlassBreak2");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.GlassBreak3
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::GlassBreak3()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "GlassBreak3");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.GlassBreak4
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::GlassBreak4()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "GlassBreak4");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.GlassBreak5
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::GlassBreak5()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "GlassBreak5");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.GlassBreak6
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::GlassBreak6()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "GlassBreak6");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.GlassBreak7
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::GlassBreak7()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "GlassBreak7");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.HeistStateChanged
-// (Event, Public, BlueprintEvent)
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardCorridor3_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// EPD3HeistState                          OldHeistState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPD3HeistState                          CurrentHeistState                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Stonk_AI_C::HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState)
+void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardCorridor3_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardCorridor3_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "HeistStateChanged");
+	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardCorridor3_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
 
-	Params::G_Stonk_AI_C_HeistStateChanged Parms{};
-
-	Parms.OldHeistState = OldHeistState;
-	Parms.CurrentHeistState = CurrentHeistState;
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Stonk_AI.G_Stonk_AI_C.OnOverkillWeaponRequested
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardCorridor2_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardCorridor2_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardCorridor2_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardCorridor2_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined199_K2Node_ActorBoundEvent_25_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined199_K2Node_ActorBoundEvent_25_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined199_K2Node_ActorBoundEvent_25_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined199_K2Node_ActorBoundEvent_25_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined198_K2Node_ActorBoundEvent_24_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined198_K2Node_ActorBoundEvent_24_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined198_K2Node_ActorBoundEvent_24_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined198_K2Node_ActorBoundEvent_24_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined197_K2Node_ActorBoundEvent_21_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined197_K2Node_ActorBoundEvent_21_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined197_K2Node_ActorBoundEvent_21_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined197_K2Node_ActorBoundEvent_21_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined196_K2Node_ActorBoundEvent_22_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined196_K2Node_ActorBoundEvent_22_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined196_K2Node_ActorBoundEvent_22_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined196_K2Node_ActorBoundEvent_22_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined195_K2Node_ActorBoundEvent_23_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined195_K2Node_ActorBoundEvent_23_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined195_K2Node_ActorBoundEvent_23_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined195_K2Node_ActorBoundEvent_23_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined194_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined194_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined194_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined194_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined193_K2Node_ActorBoundEvent_18_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined193_K2Node_ActorBoundEvent_18_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined193_K2Node_ActorBoundEvent_18_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined193_K2Node_ActorBoundEvent_18_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined192_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined192_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined192_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined192_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined183_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined183_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined183_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined183_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZOVKBagTriggerVolume_OVKDrop_K2Node_ActorBoundEvent_16_SBZBagEnteredDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void AG_Stonk_AI_C::BndEvt__G_Stonk_AI_SBZOVKBagTriggerVolume_OVKDrop_K2Node_ActorBoundEvent_16_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Stonk_AI_SBZOVKBagTriggerVolume_OVKDrop_K2Node_ActorBoundEvent_16_SBZBagEnteredDelegate__DelegateSignature", FnName));
+
+	Params::G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZOVKBagTriggerVolume_OVKDrop_K2Node_ActorBoundEvent_16_SBZBagEnteredDelegate__DelegateSignature Parms{};
+
+	Parms.Volume = Volume;
+	Parms.Bag = Bag;
+	Parms.Handle = std::move(Handle);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BlackScreenStarted
 // (Event, Public, BlueprintEvent)
 
-void AG_Stonk_AI_C::OnOverkillWeaponRequested()
+void AG_Stonk_AI_C::BlackScreenStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "OnOverkillWeaponRequested");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BlackScreenStarted", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Stonk_AI.G_Stonk_AI_C.OnServerKeyItemTagAdded
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FGameplayTag&              KeyTag                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-
-void AG_Stonk_AI_C::OnServerKeyItemTagAdded(const struct FGameplayTag& KeyTag)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "OnServerKeyItemTagAdded");
-
-	Params::G_Stonk_AI_C_OnServerKeyItemTagAdded Parms{};
-
-	Parms.KeyTag = std::move(KeyTag);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.PlayersBackOnRoof
+// Function G_Stonk_AI.G_Stonk_AI_C.AUDIO_Alarms_Triggered
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Stonk_AI_C::PlayersBackOnRoof()
+void AG_Stonk_AI_C::AUDIO_Alarms_Triggered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "PlayersBackOnRoof");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AUDIO_Alarms_Triggered", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Stonk_AI.G_Stonk_AI_C.PPLessCivillians
+// Function G_Stonk_AI.G_Stonk_AI_C.ActivateSWATSHeli
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Stonk_AI_C::PPLessCivillians()
+void AG_Stonk_AI_C::ActivateSWATSHeli()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "PPLessCivillians");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateSWATSHeli", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Stonk_AI.G_Stonk_AI_C.PPSecurityShuttersDown
+// Function G_Stonk_AI.G_Stonk_AI_C.ActivateSniperHeli
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Stonk_AI_C::PPSecurityShuttersDown()
+void AG_Stonk_AI_C::ActivateSniperHeli()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "PPSecurityShuttersDown");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateSniperHeli", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Stonk_AI.G_Stonk_AI_C.PPSpawnExchangeFloor
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Stonk_AI.G_Stonk_AI_C.ActionPhaseStarted
+// (Event, Public, BlueprintEvent)
 
-void AG_Stonk_AI_C::PPSpawnExchangeFloor()
+void AG_Stonk_AI_C::ActionPhaseStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "PPSpawnExchangeFloor");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.SleepingGasPlaced
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::SleepingGasPlaced()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "SleepingGasPlaced");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.Spawn SwatEscape
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::Spawn_SwatEscape()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "Spawn SwatEscape");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.SpawnCivControllRoom1
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::SpawnCivControllRoom1()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "SpawnCivControllRoom1");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.SpawnCivControllRoom2
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::SpawnCivControllRoom2()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "SpawnCivControllRoom2");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.SpawnOverkillWPRoof
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::SpawnOverkillWPRoof()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "SpawnOverkillWPRoof");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.StonkControllRoom1
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::StonkControllRoom1()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "StonkControllRoom1");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.StonkControllRoom2
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::StonkControllRoom2()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "StonkControllRoom2");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.StonkEMPTriggered
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::StonkEMPTriggered()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "StonkEMPTriggered");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.StonkMoveCrane
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::StonkMoveCrane()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "StonkMoveCrane");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.StonkUpperElevatorOpen1
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::StonkUpperElevatorOpen1()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "StonkUpperElevatorOpen1");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.StonkUpperElevatorOpen2
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::StonkUpperElevatorOpen2()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "StonkUpperElevatorOpen2");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.StonkUpperElevatorOpen3
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::StonkUpperElevatorOpen3()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "StonkUpperElevatorOpen3");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.UpperElevatorRemoved1
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::UpperElevatorRemoved1()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "UpperElevatorRemoved1");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.UpperElevatorRemoved2
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::UpperElevatorRemoved2()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "UpperElevatorRemoved2");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Stonk_AI.G_Stonk_AI_C.UpperElevatorRemoved3
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Stonk_AI_C::UpperElevatorRemoved3()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_AI_C", "UpperElevatorRemoved3");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActionPhaseStarted", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

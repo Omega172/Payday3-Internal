@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_CautionTape_01_Plank_B_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CautionTape_01_Plank_B_C;
 
 SDK_NAMESPACE_END

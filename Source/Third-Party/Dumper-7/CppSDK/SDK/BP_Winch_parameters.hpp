@@ -19,52 +19,36 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_Winch.BP_Winch_C.addMarkerToComponent
-// 0x0028 (0x0028 - 0x0000)
-struct BP_Winch_C_addMarkerToComponent final
+// Function BP_Winch.BP_Winch_C.UserConstructionScript
+// 0x0018 (0x0018 - 0x0000)
+struct BP_Winch_C_UserConstructionScript final
 {
 public:
-	class USceneComponent*                        Component;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	const class USBZMarkerDataAsset*              MarkerDataAsset;                                   // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0010(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_Winch.BP_Winch_C.BP_OnStateChanged
-// 0x0003 (0x0003 - 0x0000)
-struct BP_Winch_C_BP_OnStateChanged final
-{
-public:
-	ESBZBreachingEquipmentState                   OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZBreachingEquipmentState                   NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_Winch.BP_Winch_C.BP_OnWinchStateChanged
-// 0x0003 (0x0003 - 0x0000)
-struct BP_Winch_C_BP_OnWinchStateChanged final
-{
-public:
-	ESBZWinchState                                OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZWinchState                                NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_Winch.BP_Winch_C.checkProgressionEvents
-// 0x0030 (0x0030 - 0x0000)
-struct BP_Winch_C_checkProgressionEvents final
-{
-public:
-	float                                         CallFunc_GetProgressMade_ReturnValue;              // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_VariableSet_CableLength_ImplicitCast;       // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Array_Get_Item;                           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Array_Get_Item_1;                         // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue;    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_GreaterEqual_DoubleDouble_A_ImplicitCast; // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<float>                                 CallFunc_SortFloatArrayDirectly_FloatArray_ImplicitCast; // 0x0008(0x0010)(ReferenceParm)
 };
+DUMPER7_ASSERTS_BP_Winch_C_UserConstructionScript;
+
+// Function BP_Winch.BP_Winch_C.SetHookInteractionEnabled
+// 0x0002 (0x0002 - 0x0000)
+struct BP_Winch_C_SetHookInteractionEnabled final
+{
+public:
+	bool                                          bInEnabled;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Winch_C_SetHookInteractionEnabled;
+
+// Function BP_Winch.BP_Winch_C.setCableAndHookVisibilityState
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Winch_C_setCableAndHookVisibilityState final
+{
+public:
+	int32                                         state;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Winch_C_setCableAndHookVisibilityState;
 
 // Function BP_Winch.BP_Winch_C.ExecuteUbergraph_BP_Winch
 // 0x0350 (0x0350 - 0x0000)
@@ -115,34 +99,58 @@ public:
 	double                                        CallFunc_Lerp_Alpha_ImplicitCast;                  // 0x0340(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_VariableSet_CableLength_ImplicitCast;       // 0x0348(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Winch_C_ExecuteUbergraph_BP_Winch;
 
-// Function BP_Winch.BP_Winch_C.setCableAndHookVisibilityState
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Winch_C_setCableAndHookVisibilityState final
+// Function BP_Winch.BP_Winch_C.checkProgressionEvents
+// 0x0030 (0x0030 - 0x0000)
+struct BP_Winch_C_checkProgressionEvents final
 {
 public:
-	int32                                         state;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_Winch.BP_Winch_C.SetHookInteractionEnabled
-// 0x0002 (0x0002 - 0x0000)
-struct BP_Winch_C_SetHookInteractionEnabled final
-{
-public:
-	bool                                          bInEnabled;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_Winch.BP_Winch_C.UserConstructionScript
-// 0x0018 (0x0018 - 0x0000)
-struct BP_Winch_C_UserConstructionScript final
-{
-public:
-	float                                         K2Node_VariableSet_CableLength_ImplicitCast;       // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetProgressMade_ReturnValue;              // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<float>                                 CallFunc_SortFloatArrayDirectly_FloatArray_ImplicitCast; // 0x0008(0x0010)(ReferenceParm)
+	double                                        CallFunc_Array_Get_Item;                           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Array_Get_Item_1;                         // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue;    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_GreaterEqual_DoubleDouble_A_ImplicitCast; // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Winch_C_checkProgressionEvents;
+
+// Function BP_Winch.BP_Winch_C.BP_OnWinchStateChanged
+// 0x0003 (0x0003 - 0x0000)
+struct BP_Winch_C_BP_OnWinchStateChanged final
+{
+public:
+	ESBZWinchState                                OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZWinchState                                NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Winch_C_BP_OnWinchStateChanged;
+
+// Function BP_Winch.BP_Winch_C.BP_OnStateChanged
+// 0x0003 (0x0003 - 0x0000)
+struct BP_Winch_C_BP_OnStateChanged final
+{
+public:
+	ESBZBreachingEquipmentState                   OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZBreachingEquipmentState                   NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Winch_C_BP_OnStateChanged;
+
+// Function BP_Winch.BP_Winch_C.addMarkerToComponent
+// 0x0028 (0x0028 - 0x0000)
+struct BP_Winch_C_addMarkerToComponent final
+{
+public:
+	class USceneComponent*                        Component;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	const class USBZMarkerDataAsset*              MarkerDataAsset;                                   // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0010(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Winch_C_addMarkerToComponent;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

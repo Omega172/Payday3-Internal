@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "GameplayTags_structs.hpp"
 #include "Engine_structs.hpp"
+#include "GameplayTags_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "CoreUObject_structs.hpp"
 
@@ -19,129 +19,12 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function LA_WinchUpFromHelicopter.LA_WinchUpFromHelicopter_C.BndEvt__LA_WinchUp_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct LA_WinchUpFromHelicopter_C_BndEvt__LA_WinchUp_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature final
-{
-public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function LA_WinchUpFromHelicopter.LA_WinchUpFromHelicopter_C.BndEvt__LA_WinchUp_SBZLifeAction_K2Node_ComponentBoundEvent_2_SBZLifeActionStopEventDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct LA_WinchUpFromHelicopter_C_BndEvt__LA_WinchUp_SBZLifeAction_K2Node_ComponentBoundEvent_2_SBZLifeActionStopEventDelegate__DelegateSignature final
-{
-public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	ESBZLifeActionStopReason                      Result;                                            // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function LA_WinchUpFromHelicopter.LA_WinchUpFromHelicopter_C.BndEvt__LA_WinchUp_SBZLifeActionSlot_K2Node_ComponentBoundEvent_0_SBZLifeActionTagEventDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct LA_WinchUpFromHelicopter_C_BndEvt__LA_WinchUp_SBZLifeActionSlot_K2Node_ComponentBoundEvent_0_SBZLifeActionTagEventDelegate__DelegateSignature final
-{
-public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           Tag;                                               // 0x0010(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
-	bool                                          bActive;                                           // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function LA_WinchUpFromHelicopter.LA_WinchUpFromHelicopter_C.BndEvt__LA_WinchUpFromHelicopter_SBZLifeAction_K2Node_ComponentBoundEvent_4_SBZLifeActionEventDelegate__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct LA_WinchUpFromHelicopter_C_BndEvt__LA_WinchUpFromHelicopter_SBZLifeAction_K2Node_ComponentBoundEvent_4_SBZLifeActionEventDelegate__DelegateSignature final
-{
-public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function LA_WinchUpFromHelicopter.LA_WinchUpFromHelicopter_C.ExecuteUbergraph_LA_WinchUpFromHelicopter
-// 0x0148 (0x0148 - 0x0000)
-struct LA_WinchUpFromHelicopter_C_ExecuteUbergraph_LA_WinchUpFromHelicopter final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZCharacter*                          K2Node_ComponentBoundEvent_Character;              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionInstance*                 K2Node_ComponentBoundEvent_ActionInstance;         // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     K2Node_ComponentBoundEvent_ActionSlot;             // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class ASBZCharacter*                          K2Node_ComponentBoundEvent_Character_3;            // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     K2Node_ComponentBoundEvent_ActionSlot_3;           // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           K2Node_ComponentBoundEvent_Tag;                    // 0x0030(0x000C)(ConstParm, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bActive;                // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x003D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_GameplayTag_ReturnValue;       // 0x003E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x003F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ASBZCharacter*                          K2Node_ComponentBoundEvent_Character_2;            // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionInstance*                 K2Node_ComponentBoundEvent_ActionInstance_2;       // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     K2Node_ComponentBoundEvent_ActionSlot_2;           // 0x0050(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class ASBZCharacter*                          K2Node_ComponentBoundEvent_Character_1;            // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionInstance*                 K2Node_ComponentBoundEvent_ActionInstance_1;       // 0x0060(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     K2Node_ComponentBoundEvent_ActionSlot_1;           // 0x0068(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	ESBZLifeActionStopReason                      K2Node_ComponentBoundEvent_Result;                 // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZCharacter*                          CallFunc_GetCharacter_ReturnValue;                 // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_82[0x6];                                       // 0x0082(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZCharacter*                          CallFunc_GetCharacter_ReturnValue_1;               // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0090(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_X;                            // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Y;                            // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Z;                            // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x00C0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x00CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x00CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_CE[0x2];                                       // 0x00CE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x00D0(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E4[0x4];                                       // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x00E8(0x0008)(NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasAuthority_ReturnValue_1;               // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x00F8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_X_1;                          // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Y_1;                          // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_BreakVector_Z_1;                          // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           CallFunc_MakeLiteralGameplayTag_ReturnValue;       // 0x0128(0x000C)(NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue;    // 0x0134(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasAuthority_ReturnValue_2;               // 0x0135(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_136[0x2];                                      // 0x0136(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTag                           CallFunc_MakeLiteralGameplayTag_ReturnValue_1;     // 0x0138(0x000C)(NoDestructor, HasGetValueTypeHash)
-};
-
-// Function LA_WinchUpFromHelicopter.LA_WinchUpFromHelicopter_C.HandleCableAttachment
-// 0x00F0 (0x00F0 - 0x0000)
-struct LA_WinchUpFromHelicopter_C_HandleCableAttachment final
-{
-public:
-	bool                                          Active;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZCharacter*                          Character;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           EventTag;                                          // 0x0010(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FComponentReference                    K2Node_MakeStruct_ComponentReference;              // 0x0020(0x0030)(HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Contains_ReturnValue;                 // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CallFunc_Map_Find_Value;                           // 0x0054(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZCablePointAttachment               K2Node_MakeStruct_SBZCablePointAttachment;         // 0x0068(0x0078)()
-	class FName                                   CallFunc_Map_Find_Value_1;                         // 0x00E0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x00EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function LA_WinchUpFromHelicopter.LA_WinchUpFromHelicopter_C.OnHelicopterArrived
 // 0x0580 (0x0580 - 0x0000)
 struct LA_WinchUpFromHelicopter_C_OnHelicopterArrived final
 {
 public:
-	class ASBZAerialVehicle*                      Helicopter_0;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZAerialVehicle*                      Helicopter;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             WinchTransform;                                    // 0x0010(0x0060)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        HelicopterFloorDist;                               // 0x0070(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -197,6 +80,130 @@ public:
 	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult;       // 0x0470(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_K2_SetActorLocation_ReturnValue;          // 0x0578(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_LA_WinchUpFromHelicopter_C_OnHelicopterArrived;
+
+// Function LA_WinchUpFromHelicopter.LA_WinchUpFromHelicopter_C.HandleCableAttachment
+// 0x00F0 (0x00F0 - 0x0000)
+struct LA_WinchUpFromHelicopter_C_HandleCableAttachment final
+{
+public:
+	bool                                          Active;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZCharacter*                          Character;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           EventTag;                                          // 0x0010(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FComponentReference                    K2Node_MakeStruct_ComponentReference;              // 0x0020(0x0030)(HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Contains_ReturnValue;                 // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   CallFunc_Map_Find_Value;                           // 0x0054(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZCablePointAttachment               K2Node_MakeStruct_SBZCablePointAttachment;         // 0x0068(0x0078)()
+	class FName                                   CallFunc_Map_Find_Value_1;                         // 0x00E0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x00EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LA_WinchUpFromHelicopter_C_HandleCableAttachment;
+
+// Function LA_WinchUpFromHelicopter.LA_WinchUpFromHelicopter_C.ExecuteUbergraph_LA_WinchUpFromHelicopter
+// 0x0148 (0x0148 - 0x0000)
+struct LA_WinchUpFromHelicopter_C_ExecuteUbergraph_LA_WinchUpFromHelicopter final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZCharacter*                          K2Node_ComponentBoundEvent_Character;              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionInstance*                 K2Node_ComponentBoundEvent_ActionInstance;         // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     K2Node_ComponentBoundEvent_ActionSlot;             // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class ASBZCharacter*                          K2Node_ComponentBoundEvent_Character_3;            // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     K2Node_ComponentBoundEvent_ActionSlot_3;           // 0x0028(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           K2Node_ComponentBoundEvent_Tag;                    // 0x0030(0x000C)(ConstParm, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bActive;                // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x003D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_GameplayTag_ReturnValue;       // 0x003E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x003F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ASBZCharacter*                          K2Node_ComponentBoundEvent_Character_2;            // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionInstance*                 K2Node_ComponentBoundEvent_ActionInstance_2;       // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     K2Node_ComponentBoundEvent_ActionSlot_2;           // 0x0050(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class ASBZCharacter*                          K2Node_ComponentBoundEvent_Character_1;            // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionInstance*                 K2Node_ComponentBoundEvent_ActionInstance_1;       // 0x0060(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     K2Node_ComponentBoundEvent_ActionSlot_1;           // 0x0068(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	ESBZLifeActionStopReason                      K2Node_ComponentBoundEvent_Result;                 // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZCharacter*                          CallFunc_GetCharacter_ReturnValue;                 // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_82[0x6];                                       // 0x0082(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZCharacter*                          CallFunc_GetCharacter_ReturnValue_1;               // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0090(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_X;                            // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Y;                            // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Z;                            // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x00C0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x00CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x00CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_CE[0x2];                                       // 0x00CE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x00D0(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E4[0x4];                                       // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x00E8(0x0008)(NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasAuthority_ReturnValue_1;               // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F1[0x7];                                       // 0x00F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetSocketLocation_ReturnValue;            // 0x00F8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_X_1;                          // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Y_1;                          // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_BreakVector_Z_1;                          // 0x0120(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           CallFunc_MakeLiteralGameplayTag_ReturnValue;       // 0x0128(0x000C)(NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue;    // 0x0134(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasAuthority_ReturnValue_2;               // 0x0135(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_136[0x2];                                      // 0x0136(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTag                           CallFunc_MakeLiteralGameplayTag_ReturnValue_1;     // 0x0138(0x000C)(NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LA_WinchUpFromHelicopter_C_ExecuteUbergraph_LA_WinchUpFromHelicopter;
+
+// Function LA_WinchUpFromHelicopter.LA_WinchUpFromHelicopter_C.BndEvt__LA_WinchUpFromHelicopter_SBZLifeAction_K2Node_ComponentBoundEvent_4_SBZLifeActionEventDelegate__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct LA_WinchUpFromHelicopter_C_BndEvt__LA_WinchUpFromHelicopter_SBZLifeAction_K2Node_ComponentBoundEvent_4_SBZLifeActionEventDelegate__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LA_WinchUpFromHelicopter_C_BndEvt__LA_WinchUpFromHelicopter_SBZLifeAction_K2Node_ComponentBoundEvent_4_SBZLifeActionEventDelegate__DelegateSignature;
+
+// Function LA_WinchUpFromHelicopter.LA_WinchUpFromHelicopter_C.BndEvt__LA_WinchUp_SBZLifeActionSlot_K2Node_ComponentBoundEvent_0_SBZLifeActionTagEventDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct LA_WinchUpFromHelicopter_C_BndEvt__LA_WinchUp_SBZLifeActionSlot_K2Node_ComponentBoundEvent_0_SBZLifeActionTagEventDelegate__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           Tag;                                               // 0x0010(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+	bool                                          bActive;                                           // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LA_WinchUpFromHelicopter_C_BndEvt__LA_WinchUp_SBZLifeActionSlot_K2Node_ComponentBoundEvent_0_SBZLifeActionTagEventDelegate__DelegateSignature;
+
+// Function LA_WinchUpFromHelicopter.LA_WinchUpFromHelicopter_C.BndEvt__LA_WinchUp_SBZLifeAction_K2Node_ComponentBoundEvent_2_SBZLifeActionStopEventDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct LA_WinchUpFromHelicopter_C_BndEvt__LA_WinchUp_SBZLifeAction_K2Node_ComponentBoundEvent_2_SBZLifeActionStopEventDelegate__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	ESBZLifeActionStopReason                      Result;                                            // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LA_WinchUpFromHelicopter_C_BndEvt__LA_WinchUp_SBZLifeAction_K2Node_ComponentBoundEvent_2_SBZLifeActionStopEventDelegate__DelegateSignature;
+
+// Function LA_WinchUpFromHelicopter.LA_WinchUpFromHelicopter_C.BndEvt__LA_WinchUp_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct LA_WinchUpFromHelicopter_C_BndEvt__LA_WinchUp_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_LA_WinchUpFromHelicopter_C_BndEvt__LA_WinchUp_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

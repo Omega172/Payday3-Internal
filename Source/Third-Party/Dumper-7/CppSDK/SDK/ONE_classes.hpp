@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AONE_C>();
 	}
 };
+DUMPER7_ASSERTS_AONE_C;
 
 SDK_NAMESPACE_END

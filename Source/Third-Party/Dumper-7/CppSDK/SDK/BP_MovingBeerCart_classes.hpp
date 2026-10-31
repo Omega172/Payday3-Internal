@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_BaseMovingInteractable_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -28,8 +28,8 @@ public:
 	class UStaticMeshComponent*                   StaticMesh_1;                                      // 0x03C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_MovingBeerCart(int32 EntryPoint);
 	void OnStateChanged_1(bool bStateToChangeTo, bool bDoCosmetics);
+	void ExecuteUbergraph_BP_MovingBeerCart(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<ABP_MovingBeerCart_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_MovingBeerCart_C;
 
 SDK_NAMESPACE_END

@@ -23,5 +23,6 @@ public:
 	class FText                                   SecondaryInformation_13_5C0372EF487A8081BB05A19C496E48F4; // 0x0018(0x0010)(Edit, BlueprintVisible)
 	class FText                                   AdditionalInformation_14_9469D7E54EA3821AA87C92B6B46C82C7; // 0x0028(0x0010)(Edit, BlueprintVisible)
 };
+DUMPER7_ASSERTS_FStruct_NameLocationAndSpawn;
 
 SDK_NAMESPACE_END

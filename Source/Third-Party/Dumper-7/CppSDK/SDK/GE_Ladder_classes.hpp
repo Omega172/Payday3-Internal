@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_Ladder_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_Ladder_C;
 
 SDK_NAMESPACE_END

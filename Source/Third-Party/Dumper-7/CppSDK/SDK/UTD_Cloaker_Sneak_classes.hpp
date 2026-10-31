@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UUTD_Cloaker_Sneak_C>();
 	}
 };
+DUMPER7_ASSERTS_UUTD_Cloaker_Sneak_C;
 
 SDK_NAMESPACE_END

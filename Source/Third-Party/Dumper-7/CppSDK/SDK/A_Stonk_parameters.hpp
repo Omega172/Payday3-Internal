@@ -17,6 +17,16 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function A_Stonk.A_Stonk_C.HeistStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct A_Stonk_C_HeistStateChanged final
+{
+public:
+	EPD3HeistState                                OldHeistState_HeistStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CurrentHeistState_HeistStateChanged;               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_A_Stonk_C_HeistStateChanged;
+
 // Function A_Stonk.A_Stonk_C.ExecuteUbergraph_A_Stonk
 // 0x00BC (0x00BC - 0x0000)
 struct A_Stonk_C_ExecuteUbergraph_A_Stonk final
@@ -49,15 +59,7 @@ public:
 	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable_6; // 0x00A4(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_PostEvent_ReturnValue_6;                  // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function A_Stonk.A_Stonk_C.HeistStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct A_Stonk_C_HeistStateChanged final
-{
-public:
-	EPD3HeistState                                OldHeistState;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CurrentHeistState;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_A_Stonk_C_ExecuteUbergraph_A_Stonk;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

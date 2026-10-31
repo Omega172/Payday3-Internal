@@ -17,19 +17,19 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_ThrowableKnife.BP_ThrowableKnife_C
-// 0x0020 (0x8EF0 - 0x8ED0)
+// 0x0020 (0x0740 - 0x0720)
 class ABP_ThrowableKnife_C final : public ASBZThrowableKnife
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x8ED0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USBZNiagaraWwiseComponentNonOpt*        SBZNiagaraWwiseComponentNonOpt_RegularEffect;      // 0x8ED8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USBZNiagaraWwiseComponentNonOpt*        SBZNiagaraWwiseComponentNonOpt;                    // 0x8EE0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USBZOutlineComponent*                   SBZOutline;                                        // 0x8EE8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0720(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USBZNiagaraWwiseComponentNonOpt*        SBZNiagaraWwiseComponentNonOpt_RegularEffect;      // 0x0728(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZNiagaraWwiseComponentNonOpt*        SBZNiagaraWwiseComponentNonOpt;                    // 0x0730(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZOutlineComponent*                   SBZOutline;                                        // 0x0738(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_ThrowableKnife_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity);
-	void ExecuteUbergraph_BP_ThrowableKnife(int32 EntryPoint);
 	void OnThrow();
+	void ExecuteUbergraph_BP_ThrowableKnife(int32 EntryPoint);
+	void BndEvt__BP_ThrowableKnife_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity);
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<ABP_ThrowableKnife_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ThrowableKnife_C;
 
 SDK_NAMESPACE_END

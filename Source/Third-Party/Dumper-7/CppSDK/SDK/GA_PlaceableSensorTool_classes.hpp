@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGA_PlaceableSensorTool_C>();
 	}
 };
+DUMPER7_ASSERTS_UGA_PlaceableSensorTool_C;
 
 SDK_NAMESPACE_END

@@ -189,5 +189,6 @@ public:
 		return GetDefaultObjImpl<APF_Int_FI_Restaurant_01_HungryBob_C>();
 	}
 };
+DUMPER7_ASSERTS_APF_Int_FI_Restaurant_01_HungryBob_C;
 
 SDK_NAMESPACE_END

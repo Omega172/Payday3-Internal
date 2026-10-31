@@ -41,5 +41,6 @@ public:
 		return GetDefaultObjImpl<ABPL_Green_WallLampIndustrial_Bulb_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_Green_WallLampIndustrial_Bulb_C;
 
 SDK_NAMESPACE_END

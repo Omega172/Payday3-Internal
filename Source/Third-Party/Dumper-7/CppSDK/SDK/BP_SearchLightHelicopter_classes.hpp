@@ -11,36 +11,35 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "Starbreeze_classes.hpp"
+#include "BP_BaseHelicopter_classes.hpp"
 
 
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_SearchLightHelicopter.BP_SearchLightHelicopter_C
-// 0x0050 (0x07E0 - 0x0790)
-class ABP_SearchLightHelicopter_C final : public ASBZAerialVehicle
+// 0x0050 (0x0950 - 0x0900)
+class ABP_SearchLightHelicopter_C final : public ABP_BaseHelicopter_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0790(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USpotLightComponent*                    SpotLight;                                         // 0x0798(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      Niagara;                                           // 0x07A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        Raycast_Locator;                                   // 0x07A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      FX_Vehicle_Downwash;                               // 0x07B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         SearchLight_x_93ECD3C34423EF06356B80B5553FEAC7;    // 0x07B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            SearchLight__Direction_93ECD3C34423EF06356B80B5553FEAC7; // 0x07BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7BD[0x3];                                      // 0x07BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     SearchLight;                                       // 0x07C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	double                                        MinYaw;                                            // 0x07C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        MaxYaw;                                            // 0x07D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        LightLenght;                                       // 0x07D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_SearchLightHelicopter_C;         // 0x0900(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USpotLightComponent*                    SpotLight;                                         // 0x0908(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      Niagara;                                           // 0x0910(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        Raycast_Locator_0;                                 // 0x0918(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      FX_Vehicle_Downwash_0;                             // 0x0920(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         SearchLight_x_93ECD3C34423EF06356B80B5553FEAC7;    // 0x0928(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            SearchLight__Direction_93ECD3C34423EF06356B80B5553FEAC7; // 0x092C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_92D[0x3];                                      // 0x092D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     SearchLight;                                       // 0x0930(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	double                                        MinYaw;                                            // 0x0938(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        MaxYaw;                                            // 0x0940(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        LightLenght;                                       // 0x0948(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void CheckDistanceToGround(class USceneComponent* GeoTracking, struct FVector* Location, double* DistanceToGround);
-	void ExecuteUbergraph_BP_SearchLightHelicopter(int32 EntryPoint);
-	void ReceiveBeginPlay();
-	void SearchLight__FinishedFunc();
-	void SearchLight__UpdateFunc();
 	void UserConstructionScript();
+	void SearchLight__UpdateFunc();
+	void SearchLight__FinishedFunc();
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_SearchLightHelicopter(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -56,5 +55,6 @@ public:
 		return GetDefaultObjImpl<ABP_SearchLightHelicopter_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SearchLightHelicopter_C;
 
 SDK_NAMESPACE_END

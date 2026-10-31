@@ -16,21 +16,126 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Signalflare.BP_Signalflare_C.BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
+// Function BP_Signalflare.BP_Signalflare_C.setHidden
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_Signalflare_C::setHidden()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setHidden", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Signalflare.BP_Signalflare_C.Set Interactive And Ghost Mesh
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_Signalflare_C::Set_Interactive_And_Ghost_Mesh()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set Interactive And Ghost Mesh", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Signalflare.BP_Signalflare_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_Signalflare_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Signalflare.BP_Signalflare_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   OldState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Signalflare_C::OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_Signalflare_C_OnStateChanged Parms{};
+
+	Parms.OldState_OnStateChanged = OldState_OnStateChanged;
+	Parms.NewState_OnStateChanged = NewState_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Signalflare.BP_Signalflare_C.onFlareBurnedOut
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void ABP_Signalflare_C::onFlareBurnedOut()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"onFlareBurnedOut", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Signalflare.BP_Signalflare_C.GetState
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32*                                  State                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Signalflare_C::GetState(int32* State)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetState", FnName));
+
+	Params::BP_Signalflare_C_GetState Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (State != nullptr)
+		*State = Parms.State;
+}
+
+
+// Function BP_Signalflare.BP_Signalflare_C.ExecuteUbergraph_BP_Signalflare
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Signalflare_C::ExecuteUbergraph_BP_Signalflare(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Signalflare_C", "ExecuteUbergraph_BP_Signalflare", FuncInfo);
+
+	Params::BP_Signalflare_C_ExecuteUbergraph_BP_Signalflare Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Signalflare.BP_Signalflare_C.BndEvt__SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Signalflare_C::BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_Signalflare_C::BndEvt__SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Signalflare_C", "BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_Signalflare_C_BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature Parms{};
+	Params::BP_Signalflare_C_BndEvt__SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
 	Parms.Interactable = Interactable;
 	Parms.Interactor = Interactor;
@@ -49,10 +154,8 @@ void ABP_Signalflare_C::BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2N
 
 void ABP_Signalflare_C::BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Signalflare_C", "BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature", FnName));
 
 	Params::BP_Signalflare_C_BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature Parms{};
 
@@ -64,148 +167,25 @@ void ABP_Signalflare_C::BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2N
 }
 
 
-// Function BP_Signalflare.BP_Signalflare_C.BndEvt__SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// Function BP_Signalflare.BP_Signalflare_C.BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Signalflare_C::BndEvt__SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_Signalflare_C::BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Signalflare_C", "BndEvt__SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_Signalflare_C_BndEvt__SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
+	Params::BP_Signalflare_C_BndEvt__BP_GenericInteraction_Binary_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature Parms{};
 
 	Parms.Interactable = Interactable;
 	Parms.Interactor = Interactor;
 	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Signalflare.BP_Signalflare_C.ExecuteUbergraph_BP_Signalflare
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Signalflare_C::ExecuteUbergraph_BP_Signalflare(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Signalflare_C", "ExecuteUbergraph_BP_Signalflare");
-
-	Params::BP_Signalflare_C_ExecuteUbergraph_BP_Signalflare Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Signalflare.BP_Signalflare_C.GetState
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32*                                  State_0                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Signalflare_C::GetState(int32* State_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Signalflare_C", "GetState");
-
-	Params::BP_Signalflare_C_GetState Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (State_0 != nullptr)
-		*State_0 = Parms.State_0;
-}
-
-
-// Function BP_Signalflare.BP_Signalflare_C.onFlareBurnedOut
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void ABP_Signalflare_C::onFlareBurnedOut()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Signalflare_C", "onFlareBurnedOut");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Signalflare.BP_Signalflare_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Signalflare_C::OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Signalflare_C", "OnStateChanged");
-
-	Params::BP_Signalflare_C_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Signalflare.BP_Signalflare_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Signalflare_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Signalflare_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Signalflare.BP_Signalflare_C.Set Interactive And Ghost Mesh
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_Signalflare_C::Set_Interactive_And_Ghost_Mesh()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Signalflare_C", "Set Interactive And Ghost Mesh");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Signalflare.BP_Signalflare_C.setHidden
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_Signalflare_C::setHidden()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Signalflare_C", "setHidden");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

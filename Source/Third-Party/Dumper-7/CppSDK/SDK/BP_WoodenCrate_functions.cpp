@@ -16,47 +16,143 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_WoodenCrate.BP_WoodenCrate_C.BndEvt__BP_ReplicatedBinaryActorVent_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_WoodenCrate.BP_WoodenCrate_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_WoodenCrate_C::BndEvt__BP_ReplicatedBinaryActorVent_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_WoodenCrate_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WoodenCrate_C", "BndEvt__BP_ReplicatedBinaryActorVent_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_WoodenCrate_C_BndEvt__BP_ReplicatedBinaryActorVent_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature Parms{};
 
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+// Function BP_WoodenCrate.BP_WoodenCrate_C.setMarking
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    visible                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_WoodenCrate_C::setMarking(bool visible)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setMarking", FnName));
+
+	Params::BP_WoodenCrate_C_setMarking Parms{};
+
+	Parms.visible = visible;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_WoodenCrate.BP_WoodenCrate_C.BndEvt__BP_WoodenCrate_marked_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature
-// (BlueprintEvent)
+// Function BP_WoodenCrate.BP_WoodenCrate_C.setBinaryState
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bState_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    state                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    doCosmetics                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_WoodenCrate_C::setBinaryState(bool state, bool doCosmetics)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setBinaryState", FnName));
+
+	Params::BP_WoodenCrate_C_setBinaryState Parms{};
+
+	Parms.state = state;
+	Parms.doCosmetics = doCosmetics;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_WoodenCrate.BP_WoodenCrate_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_WoodenCrate_C::BndEvt__BP_WoodenCrate_marked_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature(bool bState_0, bool bDoCosmetics)
+void ABP_WoodenCrate_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WoodenCrate_C", "BndEvt__BP_WoodenCrate_marked_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature");
+	Params::BP_WoodenCrate_C_OnStateChanged Parms{};
 
-	Params::BP_WoodenCrate_C_BndEvt__BP_WoodenCrate_marked_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature Parms{};
-
-	Parms.bState_0 = bState_0;
+	Parms.bStateToChangeTo = bStateToChangeTo;
 	Parms.bDoCosmetics = bDoCosmetics;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_WoodenCrate.BP_WoodenCrate_C.OnPreTakeDamage
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const TArray<struct FHitResult>&        HitResultArray                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+// float                                   DamagePerHit                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Distance                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZWeaponFireData*         FireData                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                                   DamageMultiplier                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   CriticalDamageMultiplier                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_WoodenCrate_C::OnPreTakeDamage(const TArray<struct FHitResult>& HitResultArray, float DamagePerHit, float Distance, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPreTakeDamage", FnName));
+
+	Params::BP_WoodenCrate_C_OnPreTakeDamage Parms{};
+
+	Parms.HitResultArray = std::move(HitResultArray);
+	Parms.DamagePerHit = DamagePerHit;
+	Parms.Distance = Distance;
+	Parms.FireData = FireData;
+	Parms.DamageMultiplier = DamageMultiplier;
+	Parms.CriticalDamageMultiplier = CriticalDamageMultiplier;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_WoodenCrate.BP_WoodenCrate_C.OnPostTakenDamageEvent
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const TArray<struct FHitResult>&        HitResultArray                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+// const struct FSBZDamageEvent&           DamageEvent                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const class USBZWeaponFireData*         FireData                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                                   DamageMultiplier                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   CriticalDamageMultiplier                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_WoodenCrate_C::OnPostTakenDamageEvent(const TArray<struct FHitResult>& HitResultArray, const struct FSBZDamageEvent& DamageEvent, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPostTakenDamageEvent", FnName));
+
+	Params::BP_WoodenCrate_C_OnPostTakenDamageEvent Parms{};
+
+	Parms.HitResultArray = std::move(HitResultArray);
+	Parms.DamageEvent = std::move(DamageEvent);
+	Parms.FireData = FireData;
+	Parms.DamageMultiplier = DamageMultiplier;
+	Parms.CriticalDamageMultiplier = CriticalDamageMultiplier;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_WoodenCrate.BP_WoodenCrate_C.ExecuteUbergraph_BP_WoodenCrate
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_WoodenCrate_C::ExecuteUbergraph_BP_WoodenCrate(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_WoodenCrate_C", "ExecuteUbergraph_BP_WoodenCrate", FuncInfo);
+
+	Params::BP_WoodenCrate_C_ExecuteUbergraph_BP_WoodenCrate Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -72,10 +168,8 @@ void ABP_WoodenCrate_C::BndEvt__BP_WoodenCrate_marked_SBZBinaryState_K2Node_Comp
 
 void ABP_WoodenCrate_C::BndEvt__BP_WoodenCrate_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WoodenCrate_C", "BndEvt__BP_WoodenCrate_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_WoodenCrate_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature", FnName));
 
 	Params::BP_WoodenCrate_C_BndEvt__BP_WoodenCrate_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature Parms{};
 
@@ -88,101 +182,235 @@ void ABP_WoodenCrate_C::BndEvt__BP_WoodenCrate_SBZPropDamage_K2Node_ComponentBou
 }
 
 
-// Function BP_WoodenCrate.BP_WoodenCrate_C.ExecuteUbergraph_BP_WoodenCrate
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_WoodenCrate.BP_WoodenCrate_C.BndEvt__BP_WoodenCrate_marked_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_WoodenCrate_C::ExecuteUbergraph_BP_WoodenCrate(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WoodenCrate_C", "ExecuteUbergraph_BP_WoodenCrate");
-
-	Params::BP_WoodenCrate_C_ExecuteUbergraph_BP_WoodenCrate Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_WoodenCrate.BP_WoodenCrate_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bState_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_WoodenCrate_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
+void ABP_WoodenCrate_C::BndEvt__BP_WoodenCrate_marked_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature(bool bState_0, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_WoodenCrate_marked_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WoodenCrate_C", "OnStateChanged");
+	Params::BP_WoodenCrate_C_BndEvt__BP_WoodenCrate_marked_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature Parms{};
 
-	Params::BP_WoodenCrate_C_OnStateChanged Parms{};
-
-	Parms.bStateToChangeTo = bStateToChangeTo;
+	Parms.bState_0 = bState_0;
 	Parms.bDoCosmetics = bDoCosmetics;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_WoodenCrate.BP_WoodenCrate_C.setBinaryState
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_WoodenCrate.BP_WoodenCrate_C.BndEvt__BP_ReplicatedBinaryActorVent_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// bool                                    state                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    doCosmetics                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_WoodenCrate_C::setBinaryState(bool state, bool doCosmetics)
+void ABP_WoodenCrate_C::BndEvt__BP_ReplicatedBinaryActorVent_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ReplicatedBinaryActorVent_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WoodenCrate_C", "setBinaryState");
+	Params::BP_WoodenCrate_C_BndEvt__BP_ReplicatedBinaryActorVent_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature Parms{};
 
-	Params::BP_WoodenCrate_C_setBinaryState Parms{};
-
-	Parms.state = state;
-	Parms.doCosmetics = doCosmetics;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_WoodenCrate.BP_WoodenCrate_C.setMarking
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_WoodenCrate.BP_WoodenCrate_C.IsLockpickActor
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// bool                                    visible                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_WoodenCrate_C::setMarking(bool visible)
+bool ABP_WoodenCrate_C::IsLockpickActor() const
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsLockpickActor", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WoodenCrate_C", "setMarking");
-
-	Params::BP_WoodenCrate_C_setMarking Parms{};
-
-	Parms.visible = visible;
+	Params::BP_WoodenCrate_C_IsLockpickActor Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 
-// Function BP_WoodenCrate.BP_WoodenCrate_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_WoodenCrate.BP_WoodenCrate_C.IsDamageTypeAllowed
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// const class USBZInteractorComponent*    Interactor                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTagContainer&     InDamageTypeTags                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// bool                                    bIsSawPropDamageOnly                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_WoodenCrate_C::UserConstructionScript()
+bool ABP_WoodenCrate_C::IsDamageTypeAllowed(const class USBZInteractorComponent* Interactor, const struct FGameplayTagContainer& InDamageTypeTags, bool bIsSawPropDamageOnly) const
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsDamageTypeAllowed", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WoodenCrate_C", "UserConstructionScript");
+	Params::BP_WoodenCrate_C_IsDamageTypeAllowed Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.Interactor = Interactor;
+	Parms.InDamageTypeTags = std::move(InDamageTypeTags);
+	Parms.bIsSawPropDamageOnly = bIsSawPropDamageOnly;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_WoodenCrate.BP_WoodenCrate_C.IsDamageEventBroadcastMerged
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// const TArray<struct FHitResult>&        HitResultArray                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+// const struct FSBZDamageEvent&           DamageEvent                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const class USBZWeaponFireData*         FireData                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                                   DamageMultiplier                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   CriticalDamageMultiplier                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool ABP_WoodenCrate_C::IsDamageEventBroadcastMerged(const TArray<struct FHitResult>& HitResultArray, const struct FSBZDamageEvent& DamageEvent, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier) const
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsDamageEventBroadcastMerged", FnName));
+
+	Params::BP_WoodenCrate_C_IsDamageEventBroadcastMerged Parms{};
+
+	Parms.HitResultArray = std::move(HitResultArray);
+	Parms.DamageEvent = std::move(DamageEvent);
+	Parms.FireData = FireData;
+	Parms.DamageMultiplier = DamageMultiplier;
+	Parms.CriticalDamageMultiplier = CriticalDamageMultiplier;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_WoodenCrate.BP_WoodenCrate_C.IsDamageEventBroadcastKillshot
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// const struct FHitResult&                HitResult                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FSBZDamageEvent&           DamageEvent                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const class USBZWeaponFireData*         FireData                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                                   DamageMultiplier                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   CriticalDamageMultiplier                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool ABP_WoodenCrate_C::IsDamageEventBroadcastKillshot(const struct FHitResult& HitResult, const struct FSBZDamageEvent& DamageEvent, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier) const
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsDamageEventBroadcastKillshot", FnName));
+
+	Params::BP_WoodenCrate_C_IsDamageEventBroadcastKillshot Parms{};
+
+	Parms.HitResult = std::move(HitResult);
+	Parms.DamageEvent = std::move(DamageEvent);
+	Parms.FireData = FireData;
+	Parms.DamageMultiplier = DamageMultiplier;
+	Parms.CriticalDamageMultiplier = CriticalDamageMultiplier;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_WoodenCrate.BP_WoodenCrate_C.IsDamageEventBroadcastHitMarkerSoundAllowed
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// const struct FHitResult&                HitResult                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FSBZDamageEvent&           DamageEvent                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const class USBZWeaponFireData*         FireData                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                                   DamageMultiplier                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   CriticalDamageMultiplier                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool ABP_WoodenCrate_C::IsDamageEventBroadcastHitMarkerSoundAllowed(const struct FHitResult& HitResult, const struct FSBZDamageEvent& DamageEvent, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier) const
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsDamageEventBroadcastHitMarkerSoundAllowed", FnName));
+
+	Params::BP_WoodenCrate_C_IsDamageEventBroadcastHitMarkerSoundAllowed Parms{};
+
+	Parms.HitResult = std::move(HitResult);
+	Parms.DamageEvent = std::move(DamageEvent);
+	Parms.FireData = FireData;
+	Parms.DamageMultiplier = DamageMultiplier;
+	Parms.CriticalDamageMultiplier = CriticalDamageMultiplier;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_WoodenCrate.BP_WoodenCrate_C.IsDamageEventBroadcastEnabled
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// const TArray<struct FHitResult>&        HitResultArray                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+// float                                   DamagePerHit                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   Distance                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZWeaponFireData*         FireData                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                                   DamageMultiplier                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   CriticalDamageMultiplier                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool ABP_WoodenCrate_C::IsDamageEventBroadcastEnabled(const TArray<struct FHitResult>& HitResultArray, float DamagePerHit, float Distance, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier) const
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsDamageEventBroadcastEnabled", FnName));
+
+	Params::BP_WoodenCrate_C_IsDamageEventBroadcastEnabled Parms{};
+
+	Parms.HitResultArray = std::move(HitResultArray);
+	Parms.DamagePerHit = DamagePerHit;
+	Parms.Distance = Distance;
+	Parms.FireData = FireData;
+	Parms.DamageMultiplier = DamageMultiplier;
+	Parms.CriticalDamageMultiplier = CriticalDamageMultiplier;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_WoodenCrate.BP_WoodenCrate_C.IsDamageEventBroadcastCritical
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// const struct FHitResult&                HitResult                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FSBZDamageEvent&           DamageEvent                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const class USBZWeaponFireData*         FireData                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                                   DamageMultiplier                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   CriticalDamageMultiplier                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool ABP_WoodenCrate_C::IsDamageEventBroadcastCritical(const struct FHitResult& HitResult, const struct FSBZDamageEvent& DamageEvent, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier) const
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsDamageEventBroadcastCritical", FnName));
+
+	Params::BP_WoodenCrate_C_IsDamageEventBroadcastCritical Parms{};
+
+	Parms.HitResult = std::move(HitResult);
+	Parms.DamageEvent = std::move(DamageEvent);
+	Parms.FireData = FireData;
+	Parms.DamageMultiplier = DamageMultiplier;
+	Parms.CriticalDamageMultiplier = CriticalDamageMultiplier;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 

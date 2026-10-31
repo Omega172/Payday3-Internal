@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGA_HitByVehicle_C>();
 	}
 };
+DUMPER7_ASSERTS_UGA_HitByVehicle_C;
 
 SDK_NAMESPACE_END

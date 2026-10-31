@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_CombinedBagWorldItem_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CombinedBagWorldItem_C;
 
 SDK_NAMESPACE_END

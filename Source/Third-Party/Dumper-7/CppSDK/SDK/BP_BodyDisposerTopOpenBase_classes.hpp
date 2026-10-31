@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 #include "BP_BodyDisposerBase_classes.hpp"
 
 
@@ -35,15 +35,15 @@ public:
 	bool                                          previewObstacleAnimGhosts;                         // 0x05C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnActorDisposed(int32 NumDisposed, bool bDoCosmetics);
-	void easeRemapedAlpha(double alpha, double alphaRangeA, double alphaRangeB, double targetA, double targetB, bool muteTargetA, double* Result);
-	void ExecuteUbergraph_BP_BodyDisposerTopOpenBase(int32 EntryPoint);
-	void obstacle_timeline__FinishedFunc();
-	void obstacle_timeline__UpdateFunc();
-	void obstacleFinished();
-	void obstacleTick(double Alpha);
-	void ReceiveBeginPlay();
 	void UserConstructionScript();
+	void ReceiveBeginPlay();
+	void obstacleTick(double Alpha);
+	void obstacleFinished();
+	void obstacle_timeline__UpdateFunc();
+	void obstacle_timeline__FinishedFunc();
+	void ExecuteUbergraph_BP_BodyDisposerTopOpenBase(int32 EntryPoint);
+	void easeRemapedAlpha(double alpha, double alphaRangeA, double alphaRangeB, double targetA, double targetB, bool muteTargetA, double* Result);
+	void BP_OnActorDisposed(int32 NumDisposed, bool bDoCosmetics);
 
 public:
 	static class UClass* StaticClass()
@@ -60,5 +60,6 @@ public:
 	}
 };
 #pragma pack(pop)
+DUMPER7_ASSERTS_ABP_BodyDisposerTopOpenBase_C;
 
 SDK_NAMESPACE_END

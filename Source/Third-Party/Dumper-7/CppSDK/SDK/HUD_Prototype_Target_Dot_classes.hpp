@@ -27,8 +27,8 @@ public:
 	float                                         lifeTime;                                          // 0x0308(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
-	void Construct();
 	void ExecuteUbergraph_HUD_Prototype_Target_Dot(int32 EntryPoint);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<UHUD_Prototype_Target_Dot_C>();
 	}
 };
+DUMPER7_ASSERTS_UHUD_Prototype_Target_Dot_C;
 
 SDK_NAMESPACE_END

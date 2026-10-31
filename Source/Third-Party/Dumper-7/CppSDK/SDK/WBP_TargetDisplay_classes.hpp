@@ -34,15 +34,15 @@ public:
 	TArray<struct FTimerHandle>                   clearDamageTimers;                                 // 0x0348(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void CalculatePosition(double Z, double X, double* X_Cord, double* Y_Cord);
-	void clearTargetDots();
-	void DrawTarget(double Damage, const struct FHitResult& HitInfo, const struct FVector& CalculatedHitLocation, double CalculatedHitDistance);
-	void ExecuteUbergraph_WBP_TargetDisplay(int32 EntryPoint);
-	void PrototypeDisplayDrawTarget(const struct FVector& CalculatedHitLocation);
-	void setDistance(int32 distance);
-	void setTargetID(const class FText& InText);
-	void sumFloatInArray(TArray<double>& Array, double* sum);
 	void updateDamage(double damage);
+	void sumFloatInArray(TArray<double>& Array, double* sum);
+	void setTargetID(const class FText& InText);
+	void setDistance(int32 distance);
+	void PrototypeDisplayDrawTarget(const struct FVector& CalculatedHitLocation);
+	void ExecuteUbergraph_WBP_TargetDisplay(int32 EntryPoint);
+	void DrawTarget(double Damage, const struct FHitResult& HitInfo, const struct FVector& CalculatedHitLocation, double CalculatedHitDistance);
+	void clearTargetDots();
+	void CalculatePosition(double Z, double X, double* X_Cord, double* Y_Cord);
 
 public:
 	static class UClass* StaticClass()
@@ -58,5 +58,6 @@ public:
 		return GetDefaultObjImpl<UWBP_TargetDisplay_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_TargetDisplay_C;
 
 SDK_NAMESPACE_END

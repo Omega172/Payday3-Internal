@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_ATM_01_SCR.BP_ATM_01_SCR_C.ExecuteUbergraph_BP_ATM_01_SCR
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ATM_01_SCR_C::ExecuteUbergraph_BP_ATM_01_SCR(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ATM_01_SCR_C", "ExecuteUbergraph_BP_ATM_01_SCR", FuncInfo);
+
+	Params::BP_ATM_01_SCR_C_ExecuteUbergraph_BP_ATM_01_SCR Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_ATM_01_SCR.BP_ATM_01_SCR_C.BndEvt__BP_ATM_01_SCR_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -24,35 +42,13 @@ SDK_NAMESPACE_START
 
 void ABP_ATM_01_SCR_C::BndEvt__BP_ATM_01_SCR_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ATM_01_SCR_C", "BndEvt__BP_ATM_01_SCR_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ATM_01_SCR_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature", FnName));
 
 	Params::BP_ATM_01_SCR_C_BndEvt__BP_ATM_01_SCR_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature Parms{};
 
 	Parms.Type = Type;
 	Parms.HitContext = std::move(HitContext);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ATM_01_SCR.BP_ATM_01_SCR_C.ExecuteUbergraph_BP_ATM_01_SCR
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ATM_01_SCR_C::ExecuteUbergraph_BP_ATM_01_SCR(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ATM_01_SCR_C", "ExecuteUbergraph_BP_ATM_01_SCR");
-
-	Params::BP_ATM_01_SCR_C_ExecuteUbergraph_BP_ATM_01_SCR Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -16,6 +16,18 @@
 
 SDK_NAMESPACE_START
 
+// Function R_FirstPlayable_ServerRoom.R_FirstPlayable_ServerRoom_C.OnRandomSublevelPlaced
+// (Event, Public, BlueprintEvent)
+
+void AR_FirstPlayable_ServerRoom_C::OnRandomSublevelPlaced()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRandomSublevelPlaced", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function R_FirstPlayable_ServerRoom.R_FirstPlayable_ServerRoom_C.ExecuteUbergraph_R_FirstPlayable_ServerRoom
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,30 +35,14 @@ SDK_NAMESPACE_START
 
 void AR_FirstPlayable_ServerRoom_C::ExecuteUbergraph_R_FirstPlayable_ServerRoom(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_FirstPlayable_ServerRoom_C", "ExecuteUbergraph_R_FirstPlayable_ServerRoom");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "R_FirstPlayable_ServerRoom_C", "ExecuteUbergraph_R_FirstPlayable_ServerRoom", FuncInfo);
 
 	Params::R_FirstPlayable_ServerRoom_C_ExecuteUbergraph_R_FirstPlayable_ServerRoom Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_FirstPlayable_ServerRoom.R_FirstPlayable_ServerRoom_C.OnRandomSublevelPlaced
-// (Event, Public, BlueprintEvent)
-
-void AR_FirstPlayable_ServerRoom_C::OnRandomSublevelPlaced()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_FirstPlayable_ServerRoom_C", "OnRandomSublevelPlaced");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

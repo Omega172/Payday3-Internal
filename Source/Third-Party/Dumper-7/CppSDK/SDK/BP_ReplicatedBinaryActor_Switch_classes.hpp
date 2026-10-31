@@ -35,14 +35,14 @@ public:
 	int32                                         LEDInt;                                            // 0x03B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_ReplicatedBinaryActor_Switch_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_ReplicatedBinaryActor_Switch(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void ReceiveBeginPlay();
-	void SetA();
-	void SetB();
-	void SetC();
 	void UserConstructionScript();
+	void SetC();
+	void SetB();
+	void SetA();
+	void ReceiveBeginPlay();
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_ReplicatedBinaryActor_Switch(int32 EntryPoint);
+	void BndEvt__BP_ReplicatedBinaryActor_Switch_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -58,5 +58,6 @@ public:
 		return GetDefaultObjImpl<ABP_ReplicatedBinaryActor_Switch_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ReplicatedBinaryActor_Switch_C;
 
 SDK_NAMESPACE_END

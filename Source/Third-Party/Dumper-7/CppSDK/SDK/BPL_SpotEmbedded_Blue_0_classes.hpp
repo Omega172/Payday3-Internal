@@ -18,21 +18,22 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BPL_SpotEmbedded_Blue.BPL_SpotEmbedded_Blue_C
-// 0x0038 (0x0360 - 0x0328)
+// 0x0040 (0x0368 - 0x0328)
 class BPL_SpotEmbedded_Blue_0::ABPL_SpotEmbedded_Blue_C final : public AActor
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0328(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class USBZCosmeticDestructionComponent*       SBZCosmeticDestruction;                            // 0x0330(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UNiagaraComponent*                      FX_SparkBurst_M;                                   // 0x0338(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPointLightComponent*                   SmoothAmbiant;                                     // 0x0340(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USpotLightComponent*                    Uplight;                                           // 0x0348(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   LGT_DeskLamp_02;                                   // 0x0350(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0358(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USpotLightComponent*                    DynamicFOg;                                        // 0x0340(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPointLightComponent*                   SmoothAmbiant;                                     // 0x0348(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USpotLightComponent*                    Uplight;                                           // 0x0350(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   LGT_DeskLamp_02;                                   // 0x0358(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0360(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BPL_SpotEmbedded_Blue_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 	void ExecuteUbergraph_BPL_SpotEmbedded_Blue(int32 EntryPoint);
+	void BndEvt__BPL_SpotEmbedded_Blue_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 
 public:
 	static class UClass* StaticClass()
@@ -48,5 +49,6 @@ public:
 		return GetDefaultObjImpl<BPL_SpotEmbedded_Blue_0::ABPL_SpotEmbedded_Blue_C>();
 	}
 };
+DUMPER7_ASSERTS_BPL_SpotEmbedded_Blue_0__ABPL_SpotEmbedded_Blue_C;
 
 SDK_NAMESPACE_END

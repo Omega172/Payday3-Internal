@@ -38,14 +38,14 @@ public:
 	bool                                          bAlreadyFocused;                                   // 0x0448(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnUpdateOwnershipStatus(bool bIsOwned_OnUpdateOwnershipStatus);
-	void OnShow(bool bIsLast_OnShow, bool bCanBeInspected_OnShow, bool bIsVendorPermission_OnShow);
-	void OnFocusChanged(bool bInHasFocus);
-	void ExecuteUbergraph_WBP_Shop_PurchasePopupItem(int32 EntryPoint);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
-	void BndEvt__WBP_Shop_PurchasePopupItem_InspectActionInput_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature();
 	void BndEvt__WBP_Shop_PurchasePopupItem_InspectActionInput_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature();
+	void BndEvt__WBP_Shop_PurchasePopupItem_InspectActionInput_K2Node_ComponentBoundEvent_1_OnButtonClicked__DelegateSignature();
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ExecuteUbergraph_WBP_Shop_PurchasePopupItem(int32 EntryPoint);
+	void OnFocusChanged(bool bInHasFocus);
+	void OnShow(bool bIsLast, bool bCanBeInspected, bool bIsVendorPermission);
+	void OnUpdateOwnershipStatus(bool bIsOwned);
+	void PreConstruct(bool IsDesignTime);
 
 public:
 	static class UClass* StaticClass()

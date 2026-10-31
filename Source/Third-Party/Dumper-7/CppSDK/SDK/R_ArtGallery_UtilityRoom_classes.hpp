@@ -25,9 +25,9 @@ public:
 	class ASBZDestroyGroup*                       SBZDestroyGroup_1_ExecuteUbergraph_R_ArtGallery_UtilityRoom_RefProperty; // 0x03D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ArtGallery_UtilityRoomKeycardEvent(bool Bool);
-	void ExecuteUbergraph_R_ArtGallery_UtilityRoom(int32 EntryPoint);
 	void OnRandomSublevelPlaced();
+	void ExecuteUbergraph_R_ArtGallery_UtilityRoom(int32 EntryPoint);
+	void ArtGallery_UtilityRoomKeycardEvent(bool Bool);
 
 public:
 	static class UClass* StaticClass()
@@ -43,5 +43,6 @@ public:
 		return GetDefaultObjImpl<AR_ArtGallery_UtilityRoom_C>();
 	}
 };
+DUMPER7_ASSERTS_AR_ArtGallery_UtilityRoom_C;
 
 SDK_NAMESPACE_END

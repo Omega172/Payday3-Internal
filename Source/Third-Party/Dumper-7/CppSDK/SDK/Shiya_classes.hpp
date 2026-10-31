@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AShiya_C>();
 	}
 };
+DUMPER7_ASSERTS_AShiya_C;
 
 SDK_NAMESPACE_END

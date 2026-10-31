@@ -38,9 +38,9 @@ public:
 	bool                                          ReactToWind;                                       // 0x0388(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_Cable_Dangling(int32 EntryPoint);
-	void ReceiveAnyDamage(float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser);
 	void ReceiveBeginPlay();
+	void ReceiveAnyDamage(float Damage_ReceiveAnyDamage, const class UDamageType* DamageType_ReceiveAnyDamage, class AController* InstigatedBy_ReceiveAnyDamage, class AActor* DamageCauser_ReceiveAnyDamage);
+	void ExecuteUbergraph_BP_Cable_Dangling(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -56,5 +56,6 @@ public:
 		return GetDefaultObjImpl<ABP_Cable_Dangling_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Cable_Dangling_C;
 
 SDK_NAMESPACE_END

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Starbreeze_classes.hpp"
 #include "AkAudio_structs.hpp"
 
@@ -38,12 +38,12 @@ public:
 	bool                                          playOnLoad;                                        // 0x03F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_VASystemBase(int32 EntryPoint);
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void setAudioState(int32 NewState);
-	void setEmissiveLight(bool enabled);
-	void toggleEmissiveLight();
 	void UserConstructionScript();
+	void toggleEmissiveLight();
+	void setEmissiveLight(bool enabled);
+	void setAudioState(int32 NewState);
+	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
+	void ExecuteUbergraph_BP_VASystemBase(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -59,5 +59,6 @@ public:
 		return GetDefaultObjImpl<ABP_VASystemBase_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_VASystemBase_C;
 
 SDK_NAMESPACE_END

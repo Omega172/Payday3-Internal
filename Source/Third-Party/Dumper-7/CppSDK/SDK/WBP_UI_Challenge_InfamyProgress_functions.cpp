@@ -16,57 +16,21 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Challenge_InfamyProgress.WBP_UI_Challenge_InfamyProgress_C.Set Infamy Visuals
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Challenge_InfamyProgress_C::Set_Infamy_Visuals()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set Infamy Visuals", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Challenge_InfamyProgress.WBP_UI_Challenge_InfamyProgress_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_Challenge_InfamyProgress.WBP_UI_Challenge_InfamyProgress_C.ExecuteUbergraph_WBP_UI_Challenge_InfamyProgress
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Challenge_InfamyProgress_C::PreConstruct(bool IsDesignTime_PreConstruct)
+void UWBP_UI_Challenge_InfamyProgress_C::ExecuteUbergraph_WBP_UI_Challenge_InfamyProgress(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Challenge_InfamyProgress_C", "ExecuteUbergraph_WBP_UI_Challenge_InfamyProgress", FuncInfo);
 
-	Params::WBP_UI_Challenge_InfamyProgress_C_PreConstruct Parms{};
+	Params::WBP_UI_Challenge_InfamyProgress_C_ExecuteUbergraph_WBP_UI_Challenge_InfamyProgress Parms{};
 
-	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Challenge_InfamyProgress.WBP_UI_Challenge_InfamyProgress_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Challenge_InfamyProgress_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Challenge_InfamyProgress.WBP_UI_Challenge_InfamyProgress_C.OnInfamyValuesRefreshed
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Challenge_InfamyProgress_C::OnInfamyValuesRefreshed()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInfamyValuesRefreshed", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -88,21 +52,57 @@ struct FSlateBrush UWBP_UI_Challenge_InfamyProgress_C::Get_Image_ProgressBar_Bru
 }
 
 
-// Function WBP_UI_Challenge_InfamyProgress.WBP_UI_Challenge_InfamyProgress_C.ExecuteUbergraph_WBP_UI_Challenge_InfamyProgress
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_Challenge_InfamyProgress.WBP_UI_Challenge_InfamyProgress_C.OnInfamyValuesRefreshed
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_UI_Challenge_InfamyProgress_C::ExecuteUbergraph_WBP_UI_Challenge_InfamyProgress(int32 EntryPoint)
+void UWBP_UI_Challenge_InfamyProgress_C::OnInfamyValuesRefreshed()
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Challenge_InfamyProgress_C", "ExecuteUbergraph_WBP_UI_Challenge_InfamyProgress", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInfamyValuesRefreshed", FnName));
 
-	Params::WBP_UI_Challenge_InfamyProgress_C_ExecuteUbergraph_WBP_UI_Challenge_InfamyProgress Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function WBP_UI_Challenge_InfamyProgress.WBP_UI_Challenge_InfamyProgress_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Challenge_InfamyProgress_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Challenge_InfamyProgress.WBP_UI_Challenge_InfamyProgress_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Challenge_InfamyProgress_C::PreConstruct(bool IsDesignTime)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_UI_Challenge_InfamyProgress_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Challenge_InfamyProgress.WBP_UI_Challenge_InfamyProgress_C.Set Infamy Visuals
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Challenge_InfamyProgress_C::Set_Infamy_Visuals()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set Infamy Visuals", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

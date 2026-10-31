@@ -16,25 +16,37 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_InstantLoot_CatFigure_01_Matryoshka.BP_InstantLoot_CatFigure_01_Matryoshka_C.BndEvt__BP_InstantLoot_CatFigure_01_Matryoshka_openMatryoshka_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
+// Function BP_InstantLoot_CatFigure_01_Matryoshka.BP_InstantLoot_CatFigure_01_Matryoshka_C.OnLooted
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnLooted                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_InstantLoot_CatFigure_01_Matryoshka_C::BndEvt__BP_InstantLoot_CatFigure_01_Matryoshka_openMatryoshka_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_InstantLoot_CatFigure_01_Matryoshka_C::OnLooted(bool bDoCosmetics_OnLooted)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLooted", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InstantLoot_CatFigure_01_Matryoshka_C", "BndEvt__BP_InstantLoot_CatFigure_01_Matryoshka_openMatryoshka_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
+	Params::BP_InstantLoot_CatFigure_01_Matryoshka_C_OnLooted Parms{};
 
-	Params::BP_InstantLoot_CatFigure_01_Matryoshka_C_BndEvt__BP_InstantLoot_CatFigure_01_Matryoshka_openMatryoshka_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
+	Parms.bDoCosmetics_OnLooted = bDoCosmetics_OnLooted;
 
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_InstantLoot_CatFigure_01_Matryoshka.BP_InstantLoot_CatFigure_01_Matryoshka_C.ExecuteUbergraph_BP_InstantLoot_CatFigure_01_Matryoshka
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_InstantLoot_CatFigure_01_Matryoshka_C::ExecuteUbergraph_BP_InstantLoot_CatFigure_01_Matryoshka(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_InstantLoot_CatFigure_01_Matryoshka_C", "ExecuteUbergraph_BP_InstantLoot_CatFigure_01_Matryoshka", FuncInfo);
+
+	Params::BP_InstantLoot_CatFigure_01_Matryoshka_C_ExecuteUbergraph_BP_InstantLoot_CatFigure_01_Matryoshka Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -49,10 +61,8 @@ void ABP_InstantLoot_CatFigure_01_Matryoshka_C::BndEvt__BP_InstantLoot_CatFigure
 
 void ABP_InstantLoot_CatFigure_01_Matryoshka_C::BndEvt__BP_InstantLoot_CatFigure_01_Matryoshka_SBZIntState_K2Node_ComponentBoundEvent_0_SBZIntStateChangedSignature__DelegateSignature(int32 OldState, int32 NewState, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InstantLoot_CatFigure_01_Matryoshka_C", "BndEvt__BP_InstantLoot_CatFigure_01_Matryoshka_SBZIntState_K2Node_ComponentBoundEvent_0_SBZIntStateChangedSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_InstantLoot_CatFigure_01_Matryoshka_SBZIntState_K2Node_ComponentBoundEvent_0_SBZIntStateChangedSignature__DelegateSignature", FnName));
 
 	Params::BP_InstantLoot_CatFigure_01_Matryoshka_C_BndEvt__BP_InstantLoot_CatFigure_01_Matryoshka_SBZIntState_K2Node_ComponentBoundEvent_0_SBZIntStateChangedSignature__DelegateSignature Parms{};
 
@@ -64,41 +74,23 @@ void ABP_InstantLoot_CatFigure_01_Matryoshka_C::BndEvt__BP_InstantLoot_CatFigure
 }
 
 
-// Function BP_InstantLoot_CatFigure_01_Matryoshka.BP_InstantLoot_CatFigure_01_Matryoshka_C.ExecuteUbergraph_BP_InstantLoot_CatFigure_01_Matryoshka
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_InstantLoot_CatFigure_01_Matryoshka.BP_InstantLoot_CatFigure_01_Matryoshka_C.BndEvt__BP_InstantLoot_CatFigure_01_Matryoshka_openMatryoshka_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_InstantLoot_CatFigure_01_Matryoshka_C::ExecuteUbergraph_BP_InstantLoot_CatFigure_01_Matryoshka(int32 EntryPoint)
+void ABP_InstantLoot_CatFigure_01_Matryoshka_C::BndEvt__BP_InstantLoot_CatFigure_01_Matryoshka_openMatryoshka_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_InstantLoot_CatFigure_01_Matryoshka_openMatryoshka_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InstantLoot_CatFigure_01_Matryoshka_C", "ExecuteUbergraph_BP_InstantLoot_CatFigure_01_Matryoshka");
+	Params::BP_InstantLoot_CatFigure_01_Matryoshka_C_BndEvt__BP_InstantLoot_CatFigure_01_Matryoshka_openMatryoshka_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
 
-	Params::BP_InstantLoot_CatFigure_01_Matryoshka_C_ExecuteUbergraph_BP_InstantLoot_CatFigure_01_Matryoshka Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_InstantLoot_CatFigure_01_Matryoshka.BP_InstantLoot_CatFigure_01_Matryoshka_C.OnLooted
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_InstantLoot_CatFigure_01_Matryoshka_C::OnLooted(bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InstantLoot_CatFigure_01_Matryoshka_C", "OnLooted");
-
-	Params::BP_InstantLoot_CatFigure_01_Matryoshka_C_OnLooted Parms{};
-
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

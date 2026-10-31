@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UBP_SubduedCameraFeedback_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_SubduedCameraFeedback_C;
 
 SDK_NAMESPACE_END

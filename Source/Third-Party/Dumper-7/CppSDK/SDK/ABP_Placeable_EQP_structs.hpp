@@ -15,6 +15,13 @@
 
 SDK_NAMESPACE_START
 
+// ScriptStruct ABP_Placeable_EQP.ABP_Placeable_EQP_C.AnimBlueprintGeneratedMutableData
+// 0x0000 (0x0001 - 0x0001)
+struct ABP_Placeable_EQP::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
+{
+};
+DUMPER7_ASSERTS_ABP_Placeable_EQP__FAnimBlueprintGeneratedMutableData;
+
 // ScriptStruct ABP_Placeable_EQP.ABP_Placeable_EQP_C.AnimBlueprintGeneratedConstantData
 // 0x01BF (0x01C0 - 0x0001)
 struct ABP_Placeable_EQP::FAnimBlueprintGeneratedConstantData final : public FAnimBlueprintConstantData
@@ -39,11 +46,6 @@ public:
 	struct FAnimNodeExposedValueHandler_PropertyAccess AnimGraphNode_Slot;                           // 0x0150(0x0038)()
 	struct FAnimNodeExposedValueHandler_PropertyAccess AnimGraphNode_SequencePlayer;                 // 0x0188(0x0038)()
 };
-
-// ScriptStruct ABP_Placeable_EQP.ABP_Placeable_EQP_C.AnimBlueprintGeneratedMutableData
-// 0x0000 (0x0001 - 0x0001)
-struct ABP_Placeable_EQP::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
-{
-};
+DUMPER7_ASSERTS_ABP_Placeable_EQP__FAnimBlueprintGeneratedConstantData;
 
 SDK_NAMESPACE_END

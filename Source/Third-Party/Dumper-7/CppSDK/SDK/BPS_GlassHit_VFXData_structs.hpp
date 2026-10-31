@@ -26,5 +26,6 @@ public:
 	struct FVector                                ParticleLocation_15_D761755545D4F9BD88B3B5BD3D78A0CD; // 0x0018(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   HitMesh_14_36431E4C4C212184D68E75ADE7AAF5E7;       // 0x0030(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_FBPS_GlassHit_VFXData;
 
 SDK_NAMESPACE_END

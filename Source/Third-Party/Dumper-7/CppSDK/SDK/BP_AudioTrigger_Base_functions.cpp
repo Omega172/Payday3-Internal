@@ -16,21 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_AudioTrigger_Base.BP_AudioTrigger_Base_C.ExecuteUbergraph_BP_AudioTrigger_Base
-// (Final, UbergraphFunction)
+// Function BP_AudioTrigger_Base.BP_AudioTrigger_Base_C.ReceiveActorEndOverlap
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_AudioTrigger_Base_C::ExecuteUbergraph_BP_AudioTrigger_Base(int32 EntryPoint)
+void ABP_AudioTrigger_Base_C::ReceiveActorEndOverlap(class AActor* OtherActor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveActorEndOverlap", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AudioTrigger_Base_C", "ExecuteUbergraph_BP_AudioTrigger_Base");
+	Params::BP_AudioTrigger_Base_C_ReceiveActorEndOverlap Parms{};
 
-	Params::BP_AudioTrigger_Base_C_ExecuteUbergraph_BP_AudioTrigger_Base Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.OtherActor = OtherActor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -43,10 +41,8 @@ void ABP_AudioTrigger_Base_C::ExecuteUbergraph_BP_AudioTrigger_Base(int32 EntryP
 
 void ABP_AudioTrigger_Base_C::ReceiveActorBeginOverlap(class AActor* OtherActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AudioTrigger_Base_C", "ReceiveActorBeginOverlap");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveActorBeginOverlap", FnName));
 
 	Params::BP_AudioTrigger_Base_C_ReceiveActorBeginOverlap Parms{};
 
@@ -56,21 +52,19 @@ void ABP_AudioTrigger_Base_C::ReceiveActorBeginOverlap(class AActor* OtherActor)
 }
 
 
-// Function BP_AudioTrigger_Base.BP_AudioTrigger_Base_C.ReceiveActorEndOverlap
-// (Event, Public, BlueprintEvent)
+// Function BP_AudioTrigger_Base.BP_AudioTrigger_Base_C.ExecuteUbergraph_BP_AudioTrigger_Base
+// (Final, UbergraphFunction)
 // Parameters:
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_AudioTrigger_Base_C::ReceiveActorEndOverlap(class AActor* OtherActor)
+void ABP_AudioTrigger_Base_C::ExecuteUbergraph_BP_AudioTrigger_Base(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_AudioTrigger_Base_C", "ExecuteUbergraph_BP_AudioTrigger_Base", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AudioTrigger_Base_C", "ReceiveActorEndOverlap");
+	Params::BP_AudioTrigger_Base_C_ExecuteUbergraph_BP_AudioTrigger_Base Parms{};
 
-	Params::BP_AudioTrigger_Base_C_ReceiveActorEndOverlap Parms{};
-
-	Parms.OtherActor = OtherActor;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

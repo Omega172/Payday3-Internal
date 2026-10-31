@@ -16,40 +16,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_ReplicatedBinaryActorWhiskeyBottlePlace.BP_ReplicatedBinaryActorWhiskeyBottlePlace_C.BndEvt__BP_ReplicatedBinaryActorWhiskeyBottle_Sphere_1_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature
-// 0x0128 (0x0128 - 0x0000)
-struct BP_ReplicatedBinaryActorWhiskeyBottlePlace_C_BndEvt__BP_ReplicatedBinaryActorWhiskeyBottle_Sphere_1_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature final
+// Function BP_ReplicatedBinaryActorWhiskeyBottlePlace.BP_ReplicatedBinaryActorWhiskeyBottlePlace_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_ReplicatedBinaryActorWhiskeyBottlePlace_C_OnStateChanged final
 {
 public:
-	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             SweepResult;                                       // 0x0020(0x0108)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          bStateToChangeTo_OnStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_ReplicatedBinaryActorWhiskeyBottlePlace.BP_ReplicatedBinaryActorWhiskeyBottlePlace_C.BndEvt__BP_ReplicatedBinaryActorWhiskeyBottle_Sphere_1_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct BP_ReplicatedBinaryActorWhiskeyBottlePlace_C_BndEvt__BP_ReplicatedBinaryActorWhiskeyBottle_Sphere_1_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature final
-{
-public:
-	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_ReplicatedBinaryActorWhiskeyBottlePlace.BP_ReplicatedBinaryActorWhiskeyBottlePlace_C.BndEvt__BP_ReplicatedBinaryActorWhiskeyGlass_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_ReplicatedBinaryActorWhiskeyBottlePlace_C_BndEvt__BP_ReplicatedBinaryActorWhiskeyGlass_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_ReplicatedBinaryActorWhiskeyBottlePlace_C_OnStateChanged;
 
 // Function BP_ReplicatedBinaryActorWhiskeyBottlePlace.BP_ReplicatedBinaryActorWhiskeyBottlePlace_C.ExecuteUbergraph_BP_ReplicatedBinaryActorWhiskeyBottlePlace
 // 0x0168 (0x0168 - 0x0000)
@@ -76,15 +51,45 @@ public:
 	class UPrimitiveComponent*                    K2Node_ComponentBoundEvent_OtherComp;              // 0x0158(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_ComponentBoundEvent_OtherBodyIndex;         // 0x0160(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ReplicatedBinaryActorWhiskeyBottlePlace_C_ExecuteUbergraph_BP_ReplicatedBinaryActorWhiskeyBottlePlace;
 
-// Function BP_ReplicatedBinaryActorWhiskeyBottlePlace.BP_ReplicatedBinaryActorWhiskeyBottlePlace_C.OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_ReplicatedBinaryActorWhiskeyBottlePlace_C_OnStateChanged final
+// Function BP_ReplicatedBinaryActorWhiskeyBottlePlace.BP_ReplicatedBinaryActorWhiskeyBottlePlace_C.BndEvt__BP_ReplicatedBinaryActorWhiskeyGlass_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_ReplicatedBinaryActorWhiskeyBottlePlace_C_BndEvt__BP_ReplicatedBinaryActorWhiskeyGlass_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
 {
 public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ReplicatedBinaryActorWhiskeyBottlePlace_C_BndEvt__BP_ReplicatedBinaryActorWhiskeyGlass_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature;
+
+// Function BP_ReplicatedBinaryActorWhiskeyBottlePlace.BP_ReplicatedBinaryActorWhiskeyBottlePlace_C.BndEvt__BP_ReplicatedBinaryActorWhiskeyBottle_Sphere_1_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct BP_ReplicatedBinaryActorWhiskeyBottlePlace_C_BndEvt__BP_ReplicatedBinaryActorWhiskeyBottle_Sphere_1_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature final
+{
+public:
+	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ReplicatedBinaryActorWhiskeyBottlePlace_C_BndEvt__BP_ReplicatedBinaryActorWhiskeyBottle_Sphere_1_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature;
+
+// Function BP_ReplicatedBinaryActorWhiskeyBottlePlace.BP_ReplicatedBinaryActorWhiskeyBottlePlace_C.BndEvt__BP_ReplicatedBinaryActorWhiskeyBottle_Sphere_1_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature
+// 0x0128 (0x0128 - 0x0000)
+struct BP_ReplicatedBinaryActorWhiskeyBottlePlace_C_BndEvt__BP_ReplicatedBinaryActorWhiskeyBottle_Sphere_1_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature final
+{
+public:
+	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             SweepResult;                                       // 0x0020(0x0108)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+DUMPER7_ASSERTS_BP_ReplicatedBinaryActorWhiskeyBottlePlace_C_BndEvt__BP_ReplicatedBinaryActorWhiskeyBottle_Sphere_1_K2Node_ComponentBoundEvent_1_ComponentBeginOverlapSignature__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

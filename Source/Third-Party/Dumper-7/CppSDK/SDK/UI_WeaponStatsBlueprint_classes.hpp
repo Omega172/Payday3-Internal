@@ -20,12 +20,12 @@ SDK_NAMESPACE_START
 class UUI_WeaponStatsBlueprint_C final : public USBZUIWeaponStatsBlueprint
 {
 public:
-	void GetStabilityValueArray(const class USBZRangedWeaponData* RangedWeaponData_GetStabilityValueArray, TArray<float>* OutValueArray_GetStabilityValueArray) const;
-	void GetRecoilValueArray(const class USBZRangedWeaponData* RangedWeaponData_GetRecoilValueArray, TArray<float>* OutValueArray_GetRecoilValueArray) const;
-	void GetHandlingValueArray(const class USBZRangedWeaponData* RangedWeaponData_GetHandlingValueArray, TArray<float>* OutValueArray_GetHandlingValueArray) const;
-	void GetFireRateValueArray(const class USBZRangedWeaponData* RangedWeaponData_GetFireRateValueArray, TArray<float>* OutValueArray_GetFireRateValueArray) const;
-	void GetDamageValueArray(const class USBZRangedWeaponData* RangedWeaponData_GetDamageValueArray, TArray<float>* OutValueArray_GetDamageValueArray) const;
-	void GetAccuracyValueArray(const class USBZRangedWeaponData* RangedWeaponData_GetAccuracyValueArray, TArray<float>* OutValueArray_GetAccuracyValueArray) const;
+	void GetAccuracyValueArray(const class USBZRangedWeaponData* RangedWeaponData, TArray<float>* OutValueArray) const;
+	void GetDamageValueArray(const class USBZRangedWeaponData* RangedWeaponData, TArray<float>* OutValueArray) const;
+	void GetFireRateValueArray(const class USBZRangedWeaponData* RangedWeaponData, TArray<float>* OutValueArray) const;
+	void GetHandlingValueArray(const class USBZRangedWeaponData* RangedWeaponData, TArray<float>* OutValueArray) const;
+	void GetRecoilValueArray(const class USBZRangedWeaponData* RangedWeaponData, TArray<float>* OutValueArray) const;
+	void GetStabilityValueArray(const class USBZRangedWeaponData* RangedWeaponData, TArray<float>* OutValueArray) const;
 
 public:
 	static class UClass* StaticClass()

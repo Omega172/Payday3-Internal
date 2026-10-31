@@ -19,7 +19,7 @@ SDK_PARAM_NAMESPACE_START
 struct BP_FOR_CableCarPark_01_RolledCable_C_GetMarkerText final
 {
 public:
-	class FText                                   ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
+	class FText                                   ReturnValue_GetMarkerText;                         // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
 	int32                                         Temp_int_Variable;                                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Temp_text_Variable;                                // 0x0018(0x0010)()
@@ -30,6 +30,7 @@ public:
 	class FText                                   Temp_text_Variable_5;                              // 0x0068(0x0010)()
 	class FText                                   K2Node_Select_Default;                             // 0x0078(0x0010)()
 };
+DUMPER7_ASSERTS_BP_FOR_CableCarPark_01_RolledCable_C_GetMarkerText;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UVanFrontWheel_C>();
 	}
 };
+DUMPER7_ASSERTS_UVanFrontWheel_C;
 
 SDK_NAMESPACE_END

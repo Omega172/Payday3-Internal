@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UUTD_RepositionDefensive_Secondary_C>();
 	}
 };
+DUMPER7_ASSERTS_UUTD_RepositionDefensive_Secondary_C;
 
 SDK_NAMESPACE_END

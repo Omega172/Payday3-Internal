@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_LGT_SpotEmbedded_02.BP_LGT_SpotEmbedded_02_C.ExecuteUbergraph_BP_LGT_SpotEmbedded_02
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LGT_SpotEmbedded_02_C::ExecuteUbergraph_BP_LGT_SpotEmbedded_02(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_LGT_SpotEmbedded_02_C", "ExecuteUbergraph_BP_LGT_SpotEmbedded_02", FuncInfo);
+
+	Params::BP_LGT_SpotEmbedded_02_C_ExecuteUbergraph_BP_LGT_SpotEmbedded_02 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_LGT_SpotEmbedded_02.BP_LGT_SpotEmbedded_02_C.BndEvt__BP_LGT_SpotEmbedded_02_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -24,35 +42,13 @@ SDK_NAMESPACE_START
 
 void ABP_LGT_SpotEmbedded_02_C::BndEvt__BP_LGT_SpotEmbedded_02_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LGT_SpotEmbedded_02_C", "BndEvt__BP_LGT_SpotEmbedded_02_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_LGT_SpotEmbedded_02_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature", FnName));
 
 	Params::BP_LGT_SpotEmbedded_02_C_BndEvt__BP_LGT_SpotEmbedded_02_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature Parms{};
 
 	Parms.Type = Type;
 	Parms.HitContext = std::move(HitContext);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LGT_SpotEmbedded_02.BP_LGT_SpotEmbedded_02_C.ExecuteUbergraph_BP_LGT_SpotEmbedded_02
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LGT_SpotEmbedded_02_C::ExecuteUbergraph_BP_LGT_SpotEmbedded_02(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LGT_SpotEmbedded_02_C", "ExecuteUbergraph_BP_LGT_SpotEmbedded_02");
-
-	Params::BP_LGT_SpotEmbedded_02_C_ExecuteUbergraph_BP_LGT_SpotEmbedded_02 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -18,16 +18,16 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_PlaceableTripMine.BP_PlaceableTripMine_C
-// 0x0010 (0x0770 - 0x0760)
+// 0x0010 (0x0780 - 0x0770)
 class ABP_PlaceableTripMine_C final : public ASBZPlaceableTripMine
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0760(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBoxComponent*                          Interactable_Collision;                            // 0x0768(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0770(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UBoxComponent*                          Interactable_Collision;                            // 0x0778(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_PlaceableTripMine(int32 EntryPoint);
 	void OnActivated();
+	void ExecuteUbergraph_BP_PlaceableTripMine(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -43,5 +43,6 @@ public:
 		return GetDefaultObjImpl<ABP_PlaceableTripMine_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PlaceableTripMine_C;
 
 SDK_NAMESPACE_END

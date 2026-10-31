@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_ZonehackPoint_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ZonehackPoint_C;
 
 SDK_NAMESPACE_END

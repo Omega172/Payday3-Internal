@@ -16,99 +16,25 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ArmoredTransport.BP_ArmoredTransport_C.BndEvt__BP_ArmoredTransport_SplineFollowingComponent_K2Node_ComponentBoundEvent_2_SBZVehicleOnStarted__DelegateSignature
-// (BlueprintEvent)
+// Function BP_ArmoredTransport.BP_ArmoredTransport_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_ArmoredTransport_C::BndEvt__BP_ArmoredTransport_SplineFollowingComponent_K2Node_ComponentBoundEvent_2_SBZVehicleOnStarted__DelegateSignature()
+void ABP_ArmoredTransport_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ArmoredTransport_C", "BndEvt__BP_ArmoredTransport_SplineFollowingComponent_K2Node_ComponentBoundEvent_2_SBZVehicleOnStarted__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ArmoredTransport.BP_ArmoredTransport_C.BP_OnEscortModeChanged
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bEnabled                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ArmoredTransport.BP_ArmoredTransport_C.Open_Rear_Doors
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_ArmoredTransport_C::BP_OnEscortModeChanged(bool bEnabled, bool bDoCosmetics)
+void ABP_ArmoredTransport_C::Open_Rear_Doors()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ArmoredTransport_C", "BP_OnEscortModeChanged");
-
-	Params::BP_ArmoredTransport_C_BP_OnEscortModeChanged Parms{};
-
-	Parms.bEnabled = bEnabled;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ArmoredTransport.BP_ArmoredTransport_C.BP_OnEscortSizePreplanningApplied
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
-
-void ABP_ArmoredTransport_C::BP_OnEscortSizePreplanningApplied()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ArmoredTransport_C", "BP_OnEscortSizePreplanningApplied");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ArmoredTransport.BP_ArmoredTransport_C.BP_OnPlayersInEscortChanged
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
-// Parameters:
-// const int32                             PlayersEscorting                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ArmoredTransport_C::BP_OnPlayersInEscortChanged(const int32 PlayersEscorting)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ArmoredTransport_C", "BP_OnPlayersInEscortChanged");
-
-	Params::BP_ArmoredTransport_C_BP_OnPlayersInEscortChanged Parms{};
-
-	Parms.PlayersEscorting = PlayersEscorting;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ArmoredTransport.BP_ArmoredTransport_C.EscortZoneTimeline__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_ArmoredTransport_C::EscortZoneTimeline__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ArmoredTransport_C", "EscortZoneTimeline__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ArmoredTransport.BP_ArmoredTransport_C.EscortZoneTimeline__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_ArmoredTransport_C::EscortZoneTimeline__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ArmoredTransport_C", "EscortZoneTimeline__UpdateFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Open_Rear_Doors", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -121,10 +47,8 @@ void ABP_ArmoredTransport_C::EscortZoneTimeline__UpdateFunc()
 
 void ABP_ArmoredTransport_C::ExecuteUbergraph_BP_ArmoredTransport(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ArmoredTransport_C", "ExecuteUbergraph_BP_ArmoredTransport");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ArmoredTransport_C", "ExecuteUbergraph_BP_ArmoredTransport", FuncInfo);
 
 	Params::BP_ArmoredTransport_C_ExecuteUbergraph_BP_ArmoredTransport Parms{};
 
@@ -134,29 +58,87 @@ void ABP_ArmoredTransport_C::ExecuteUbergraph_BP_ArmoredTransport(int32 EntryPoi
 }
 
 
-// Function BP_ArmoredTransport.BP_ArmoredTransport_C.Open_Rear_Doors
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_ArmoredTransport.BP_ArmoredTransport_C.EscortZoneTimeline__UpdateFunc
+// (BlueprintEvent)
 
-void ABP_ArmoredTransport_C::Open_Rear_Doors()
+void ABP_ArmoredTransport_C::EscortZoneTimeline__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ArmoredTransport_C", "Open_Rear_Doors");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EscortZoneTimeline__UpdateFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ArmoredTransport.BP_ArmoredTransport_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_ArmoredTransport.BP_ArmoredTransport_C.EscortZoneTimeline__FinishedFunc
+// (BlueprintEvent)
 
-void ABP_ArmoredTransport_C::ReceiveBeginPlay()
+void ABP_ArmoredTransport_C::EscortZoneTimeline__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EscortZoneTimeline__FinishedFunc", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ArmoredTransport_C", "ReceiveBeginPlay");
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ArmoredTransport.BP_ArmoredTransport_C.BP_OnPlayersInEscortChanged
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+// Parameters:
+// const int32                             PlayersEscorting_BP_OnPlayersInEscortChanged           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ArmoredTransport_C::BP_OnPlayersInEscortChanged(const int32 PlayersEscorting_BP_OnPlayersInEscortChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnPlayersInEscortChanged", FnName));
+
+	Params::BP_ArmoredTransport_C_BP_OnPlayersInEscortChanged Parms{};
+
+	Parms.PlayersEscorting_BP_OnPlayersInEscortChanged = PlayersEscorting_BP_OnPlayersInEscortChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ArmoredTransport.BP_ArmoredTransport_C.BP_OnEscortSizePreplanningApplied
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+
+void ABP_ArmoredTransport_C::BP_OnEscortSizePreplanningApplied()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnEscortSizePreplanningApplied", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ArmoredTransport.BP_ArmoredTransport_C.BP_OnEscortModeChanged
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bEnabled_BP_OnEscortModeChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_BP_OnEscortModeChanged                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ArmoredTransport_C::BP_OnEscortModeChanged(bool bEnabled_BP_OnEscortModeChanged, bool bDoCosmetics_BP_OnEscortModeChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnEscortModeChanged", FnName));
+
+	Params::BP_ArmoredTransport_C_BP_OnEscortModeChanged Parms{};
+
+	Parms.bEnabled_BP_OnEscortModeChanged = bEnabled_BP_OnEscortModeChanged;
+	Parms.bDoCosmetics_BP_OnEscortModeChanged = bDoCosmetics_BP_OnEscortModeChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ArmoredTransport.BP_ArmoredTransport_C.BndEvt__BP_ArmoredTransport_SplineFollowingComponent_K2Node_ComponentBoundEvent_2_SBZVehicleOnStarted__DelegateSignature
+// (BlueprintEvent)
+
+void ABP_ArmoredTransport_C::BndEvt__BP_ArmoredTransport_SplineFollowingComponent_K2Node_ComponentBoundEvent_2_SBZVehicleOnStarted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ArmoredTransport_SplineFollowingComponent_K2Node_ComponentBoundEvent_2_SBZVehicleOnStarted__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

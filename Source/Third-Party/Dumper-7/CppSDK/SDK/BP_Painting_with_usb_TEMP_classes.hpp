@@ -43,14 +43,14 @@ public:
 	bool                                          Do_Cosmetics;                                      // 0x03F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_Painting_with_usb_Interactable_pick_up_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_Painting_with_usb_Interactable_pick_up_K2Node_ComponentBoundEvent_3_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
-	void BndEvt__BP_Painting_with_usb_TEMP_Interactable_USB_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_Painting_with_usb_TEMP(int32 EntryPoint);
-	void OnRep_Do_Cosmetics();
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void Timeline_0__FinishedFunc();
 	void Timeline_0__UpdateFunc();
+	void Timeline_0__FinishedFunc();
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void OnRep_Do_Cosmetics();
+	void ExecuteUbergraph_BP_Painting_with_usb_TEMP(int32 EntryPoint);
+	void BndEvt__BP_Painting_with_usb_TEMP_Interactable_USB_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_Painting_with_usb_Interactable_pick_up_K2Node_ComponentBoundEvent_3_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
+	void BndEvt__BP_Painting_with_usb_Interactable_pick_up_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -66,5 +66,6 @@ public:
 		return GetDefaultObjImpl<ABP_Painting_with_usb_TEMP_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Painting_with_usb_TEMP_C;
 
 SDK_NAMESPACE_END

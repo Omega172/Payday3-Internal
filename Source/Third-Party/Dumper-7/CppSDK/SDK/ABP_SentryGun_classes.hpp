@@ -38,7 +38,7 @@ public:
 	double                                        SinVal;                                            // 0x0868(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnimGraph(struct FPoseLink* AnimGraph_0);
+	void AnimGraph(struct FPoseLink* AnimGraph);
 
 public:
 	static class UClass* StaticClass()
@@ -54,5 +54,6 @@ public:
 		return GetDefaultObjImpl<UABP_SentryGun_C>();
 	}
 };
+DUMPER7_ASSERTS_UABP_SentryGun_C;
 
 SDK_NAMESPACE_END

@@ -16,63 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_BoBl_mask.BP_BoBl_mask_C.ExecuteUbergraph_BP_BoBl_mask
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_BoBl_mask.BP_BoBl_mask_C.VFXProgress
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_BoBl_mask_C::ExecuteUbergraph_BP_BoBl_mask(int32 EntryPoint)
+void ABP_BoBl_mask_C::VFXProgress()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BoBl_mask_C", "ExecuteUbergraph_BP_BoBl_mask");
-
-	Params::BP_BoBl_mask_C_ExecuteUbergraph_BP_BoBl_mask Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BoBl_mask.BP_BoBl_mask_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_BoBl_mask_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BoBl_mask_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_BoBl_mask.BP_BoBl_mask_C.TimelineProgress__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_BoBl_mask_C::TimelineProgress__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BoBl_mask_C", "TimelineProgress__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_BoBl_mask.BP_BoBl_mask_C.TimelineProgress__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_BoBl_mask_C::TimelineProgress__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BoBl_mask_C", "TimelineProgress__UpdateFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"VFXProgress", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -83,26 +33,64 @@ void ABP_BoBl_mask_C::TimelineProgress__UpdateFunc()
 
 void ABP_BoBl_mask_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BoBl_mask_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_BoBl_mask.BP_BoBl_mask_C.VFXProgress
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_BoBl_mask.BP_BoBl_mask_C.TimelineProgress__UpdateFunc
+// (BlueprintEvent)
 
-void ABP_BoBl_mask_C::VFXProgress()
+void ABP_BoBl_mask_C::TimelineProgress__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BoBl_mask_C", "VFXProgress");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TimelineProgress__UpdateFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_BoBl_mask.BP_BoBl_mask_C.TimelineProgress__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_BoBl_mask_C::TimelineProgress__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TimelineProgress__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_BoBl_mask.BP_BoBl_mask_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_BoBl_mask_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_BoBl_mask.BP_BoBl_mask_C.ExecuteUbergraph_BP_BoBl_mask
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BoBl_mask_C::ExecuteUbergraph_BP_BoBl_mask(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_BoBl_mask_C", "ExecuteUbergraph_BP_BoBl_mask", FuncInfo);
+
+	Params::BP_BoBl_mask_C_ExecuteUbergraph_BP_BoBl_mask Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

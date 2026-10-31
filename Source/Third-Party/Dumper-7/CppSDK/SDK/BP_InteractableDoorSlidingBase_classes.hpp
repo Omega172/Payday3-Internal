@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "Starbreeze_structs.hpp"
 #include "BP_interactableDoor_Base_classes.hpp"
+#include "CoreUObject_structs.hpp"
 #include "doorStateSimple_structs.hpp"
+#include "Starbreeze_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -32,10 +32,10 @@ public:
 	struct FVector                                initialDoorRelativeLocation;                       // 0x0710(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_InteractableDoorSlidingBase(int32 EntryPoint);
-	void initToValidPosition(ESBZGateState oldState);
-	void onOpenAnimUpdateTick(double alpha);
 	void UserConstructionScript();
+	void onOpenAnimUpdateTick(double alpha);
+	void initToValidPosition(ESBZGateState oldState);
+	void ExecuteUbergraph_BP_InteractableDoorSlidingBase(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -51,5 +51,6 @@ public:
 		return GetDefaultObjImpl<ABP_InteractableDoorSlidingBase_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_InteractableDoorSlidingBase_C;
 
 SDK_NAMESPACE_END

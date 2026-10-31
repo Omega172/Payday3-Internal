@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<BPL_Fluorescent_Wall_::ABPL_Fluorescent_Wall__C>();
 	}
 };
+DUMPER7_ASSERTS_BPL_Fluorescent_Wall___ABPL_Fluorescent_Wall__C;
 
 SDK_NAMESPACE_END

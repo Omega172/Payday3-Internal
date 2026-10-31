@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UCS_ContainerDrop_C>();
 	}
 };
+DUMPER7_ASSERTS_UCS_ContainerDrop_C;
 
 SDK_NAMESPACE_END

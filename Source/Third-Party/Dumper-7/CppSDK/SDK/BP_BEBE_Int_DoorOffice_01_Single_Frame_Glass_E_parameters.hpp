@@ -21,6 +21,7 @@ struct BP_BEBE_Int_DoorOffice_01_Single_Frame_Glass_E_C_ExecuteUbergraph_BP_BEBE
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_BEBE_Int_DoorOffice_01_Single_Frame_Glass_E_C_ExecuteUbergraph_BP_BEBE_Int_DoorOffice_01_Single_Frame_Glass_E;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

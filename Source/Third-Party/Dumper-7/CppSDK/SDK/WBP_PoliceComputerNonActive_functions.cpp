@@ -16,20 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_PoliceComputerNonActive.WBP_PoliceComputerNonActive_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_PoliceComputerNonActive_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PoliceComputerNonActive_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_PoliceComputerNonActive.WBP_PoliceComputerNonActive_C.ExecuteUbergraph_WBP_PoliceComputerNonActive
 // (Final, UbergraphFunction)
 // Parameters:
@@ -37,16 +23,26 @@ void UWBP_PoliceComputerNonActive_C::Construct()
 
 void UWBP_PoliceComputerNonActive_C::ExecuteUbergraph_WBP_PoliceComputerNonActive(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PoliceComputerNonActive_C", "ExecuteUbergraph_WBP_PoliceComputerNonActive");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_PoliceComputerNonActive_C", "ExecuteUbergraph_WBP_PoliceComputerNonActive", FuncInfo);
 
 	Params::WBP_PoliceComputerNonActive_C_ExecuteUbergraph_WBP_PoliceComputerNonActive Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PoliceComputerNonActive.WBP_PoliceComputerNonActive_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_PoliceComputerNonActive_C::Construct()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

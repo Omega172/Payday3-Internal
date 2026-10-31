@@ -16,45 +16,21 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_SingleBagGeneratorBase.BP_SingleBagGeneratorBase_C.BndEvt__BP_SingleBagGeneratorBase_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
+// Function BP_SingleBagGeneratorBase.BP_SingleBagGeneratorBase_C.setBinaryState
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    state                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    doCosmetics                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SingleBagGeneratorBase_C::BndEvt__BP_SingleBagGeneratorBase_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_SingleBagGeneratorBase_C::setBinaryState(bool state, bool doCosmetics)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setBinaryState", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SingleBagGeneratorBase_C", "BndEvt__BP_SingleBagGeneratorBase_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
+	Params::BP_SingleBagGeneratorBase_C_setBinaryState Parms{};
 
-	Params::BP_SingleBagGeneratorBase_C_BndEvt__BP_SingleBagGeneratorBase_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SingleBagGeneratorBase.BP_SingleBagGeneratorBase_C.ExecuteUbergraph_BP_SingleBagGeneratorBase
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SingleBagGeneratorBase_C::ExecuteUbergraph_BP_SingleBagGeneratorBase(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SingleBagGeneratorBase_C", "ExecuteUbergraph_BP_SingleBagGeneratorBase");
-
-	Params::BP_SingleBagGeneratorBase_C_ExecuteUbergraph_BP_SingleBagGeneratorBase Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.state = state;
+	Parms.doCosmetics = doCosmetics;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -67,10 +43,8 @@ void ABP_SingleBagGeneratorBase_C::ExecuteUbergraph_BP_SingleBagGeneratorBase(in
 
 void ABP_SingleBagGeneratorBase_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SingleBagGeneratorBase_C", "ReceiveEndPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveEndPlay", FnName));
 
 	Params::BP_SingleBagGeneratorBase_C_ReceiveEndPlay Parms{};
 
@@ -80,23 +54,41 @@ void ABP_SingleBagGeneratorBase_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
 }
 
 
-// Function BP_SingleBagGeneratorBase.BP_SingleBagGeneratorBase_C.setBinaryState
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_SingleBagGeneratorBase.BP_SingleBagGeneratorBase_C.ExecuteUbergraph_BP_SingleBagGeneratorBase
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// bool                                    state                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    doCosmetics                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SingleBagGeneratorBase_C::setBinaryState(bool state, bool doCosmetics)
+void ABP_SingleBagGeneratorBase_C::ExecuteUbergraph_BP_SingleBagGeneratorBase(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_SingleBagGeneratorBase_C", "ExecuteUbergraph_BP_SingleBagGeneratorBase", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SingleBagGeneratorBase_C", "setBinaryState");
+	Params::BP_SingleBagGeneratorBase_C_ExecuteUbergraph_BP_SingleBagGeneratorBase Parms{};
 
-	Params::BP_SingleBagGeneratorBase_C_setBinaryState Parms{};
+	Parms.EntryPoint = EntryPoint;
 
-	Parms.state = state;
-	Parms.doCosmetics = doCosmetics;
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SingleBagGeneratorBase.BP_SingleBagGeneratorBase_C.BndEvt__BP_SingleBagGeneratorBase_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SingleBagGeneratorBase_C::BndEvt__BP_SingleBagGeneratorBase_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_SingleBagGeneratorBase_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_SingleBagGeneratorBase_C_BndEvt__BP_SingleBagGeneratorBase_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable_0 = Interactable_0;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

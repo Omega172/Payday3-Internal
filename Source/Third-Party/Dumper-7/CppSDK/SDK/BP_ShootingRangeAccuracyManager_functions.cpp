@@ -16,177 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ShootingRangeAccuracyManager.BP_ShootingRangeAccuracyManager_C.BndEvt__BP_ShootingRangeAccuracyManager_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ShootingRangeAccuracyManager.BP_ShootingRangeAccuracyManager_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_ShootingRangeAccuracyManager_C::BndEvt__BP_ShootingRangeAccuracyManager_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_ShootingRangeAccuracyManager_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeAccuracyManager_C", "BndEvt__BP_ShootingRangeAccuracyManager_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_ShootingRangeAccuracyManager_C_BndEvt__BP_ShootingRangeAccuracyManager_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ShootingRangeAccuracyManager.BP_ShootingRangeAccuracyManager_C.ExecuteUbergraph_BP_ShootingRangeAccuracyManager
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ShootingRangeAccuracyManager_C::ExecuteUbergraph_BP_ShootingRangeAccuracyManager(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeAccuracyManager_C", "ExecuteUbergraph_BP_ShootingRangeAccuracyManager");
-
-	Params::BP_ShootingRangeAccuracyManager_C_ExecuteUbergraph_BP_ShootingRangeAccuracyManager Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ShootingRangeAccuracyManager.BP_ShootingRangeAccuracyManager_C.MoveMovingTarget__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_ShootingRangeAccuracyManager_C::MoveMovingTarget__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeAccuracyManager_C", "MoveMovingTarget__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ShootingRangeAccuracyManager.BP_ShootingRangeAccuracyManager_C.MoveMovingTarget__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_ShootingRangeAccuracyManager_C::MoveMovingTarget__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeAccuracyManager_C", "MoveMovingTarget__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ShootingRangeAccuracyManager.BP_ShootingRangeAccuracyManager_C.MULTI_AddScore
-// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Score_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ShootingRangeAccuracyManager_C::MULTI_AddScore(int32 Score_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeAccuracyManager_C", "MULTI_AddScore");
-
-	Params::BP_ShootingRangeAccuracyManager_C_MULTI_AddScore Parms{};
-
-	Parms.Score_0 = Score_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ShootingRangeAccuracyManager.BP_ShootingRangeAccuracyManager_C.MULTI_CountDeciseconds
-// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
-
-void ABP_ShootingRangeAccuracyManager_C::MULTI_CountDeciseconds()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeAccuracyManager_C", "MULTI_CountDeciseconds");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ShootingRangeAccuracyManager.BP_ShootingRangeAccuracyManager_C.MULTI_CountSeconds
-// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
-
-void ABP_ShootingRangeAccuracyManager_C::MULTI_CountSeconds()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeAccuracyManager_C", "MULTI_CountSeconds");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ShootingRangeAccuracyManager.BP_ShootingRangeAccuracyManager_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_ShootingRangeAccuracyManager_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeAccuracyManager_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ShootingRangeAccuracyManager.BP_ShootingRangeAccuracyManager_C.SERVER_ResetChallenge
-// (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
-
-void ABP_ShootingRangeAccuracyManager_C::SERVER_ResetChallenge()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeAccuracyManager_C", "SERVER_ResetChallenge");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ShootingRangeAccuracyManager.BP_ShootingRangeAccuracyManager_C.SERVER_RunDeciseconds
-// (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
-
-void ABP_ShootingRangeAccuracyManager_C::SERVER_RunDeciseconds()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeAccuracyManager_C", "SERVER_RunDeciseconds");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ShootingRangeAccuracyManager.BP_ShootingRangeAccuracyManager_C.SERVER_RunSeconds
-// (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
-
-void ABP_ShootingRangeAccuracyManager_C::SERVER_RunSeconds()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeAccuracyManager_C", "SERVER_RunSeconds");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -197,26 +33,164 @@ void ABP_ShootingRangeAccuracyManager_C::SERVER_RunSeconds()
 
 void ABP_ShootingRangeAccuracyManager_C::SERVER_StartChallenge()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeAccuracyManager_C", "SERVER_StartChallenge");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SERVER_StartChallenge", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ShootingRangeAccuracyManager.BP_ShootingRangeAccuracyManager_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_ShootingRangeAccuracyManager.BP_ShootingRangeAccuracyManager_C.SERVER_RunSeconds
+// (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
 
-void ABP_ShootingRangeAccuracyManager_C::UserConstructionScript()
+void ABP_ShootingRangeAccuracyManager_C::SERVER_RunSeconds()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeAccuracyManager_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SERVER_RunSeconds", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ShootingRangeAccuracyManager.BP_ShootingRangeAccuracyManager_C.SERVER_RunDeciseconds
+// (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
+
+void ABP_ShootingRangeAccuracyManager_C::SERVER_RunDeciseconds()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SERVER_RunDeciseconds", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ShootingRangeAccuracyManager.BP_ShootingRangeAccuracyManager_C.SERVER_ResetChallenge
+// (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
+
+void ABP_ShootingRangeAccuracyManager_C::SERVER_ResetChallenge()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SERVER_ResetChallenge", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ShootingRangeAccuracyManager.BP_ShootingRangeAccuracyManager_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_ShootingRangeAccuracyManager_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ShootingRangeAccuracyManager.BP_ShootingRangeAccuracyManager_C.MULTI_CountSeconds
+// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
+
+void ABP_ShootingRangeAccuracyManager_C::MULTI_CountSeconds()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MULTI_CountSeconds", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ShootingRangeAccuracyManager.BP_ShootingRangeAccuracyManager_C.MULTI_CountDeciseconds
+// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
+
+void ABP_ShootingRangeAccuracyManager_C::MULTI_CountDeciseconds()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MULTI_CountDeciseconds", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ShootingRangeAccuracyManager.BP_ShootingRangeAccuracyManager_C.MULTI_AddScore
+// (Net, NetReliable, NetMulticast, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Score                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ShootingRangeAccuracyManager_C::MULTI_AddScore(int32 Score)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MULTI_AddScore", FnName));
+
+	Params::BP_ShootingRangeAccuracyManager_C_MULTI_AddScore Parms{};
+
+	Parms.Score = Score;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ShootingRangeAccuracyManager.BP_ShootingRangeAccuracyManager_C.MoveMovingTarget__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_ShootingRangeAccuracyManager_C::MoveMovingTarget__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MoveMovingTarget__UpdateFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ShootingRangeAccuracyManager.BP_ShootingRangeAccuracyManager_C.MoveMovingTarget__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_ShootingRangeAccuracyManager_C::MoveMovingTarget__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MoveMovingTarget__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ShootingRangeAccuracyManager.BP_ShootingRangeAccuracyManager_C.ExecuteUbergraph_BP_ShootingRangeAccuracyManager
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ShootingRangeAccuracyManager_C::ExecuteUbergraph_BP_ShootingRangeAccuracyManager(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ShootingRangeAccuracyManager_C", "ExecuteUbergraph_BP_ShootingRangeAccuracyManager", FuncInfo);
+
+	Params::BP_ShootingRangeAccuracyManager_C_ExecuteUbergraph_BP_ShootingRangeAccuracyManager Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ShootingRangeAccuracyManager.BP_ShootingRangeAccuracyManager_C.BndEvt__BP_ShootingRangeAccuracyManager_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ShootingRangeAccuracyManager_C::BndEvt__BP_ShootingRangeAccuracyManager_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ShootingRangeAccuracyManager_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_ShootingRangeAccuracyManager_C_BndEvt__BP_ShootingRangeAccuracyManager_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

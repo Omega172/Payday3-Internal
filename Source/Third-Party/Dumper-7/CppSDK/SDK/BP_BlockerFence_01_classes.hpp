@@ -40,13 +40,14 @@ public:
 	double                                        Wind_Strength_Pixel_Shader;                        // 0x03D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_BlockerFence_01_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_BlockerFence_01_SBZPropDamage_K2Node_ComponentBoundEvent_2_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
-	void BndEvt__BP_MobileTrafficSignal_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent_0, bool bInNewState);
-	void BP_OnStateChanged(bool bNewState, bool bDoCosmentics);
-	void ExecuteUbergraph_BP_BlockerFence_01(int32 EntryPoint);
-	class FText GetMarkerText();
 	void UserConstructionScript();
+	void ReceiveBeginPlay();
+	class FText GetMarkerText();
+	void ExecuteUbergraph_BP_BlockerFence_01(int32 EntryPoint);
+	void BP_OnStateChanged(bool bNewState_BP_OnStateChanged, bool bDoCosmentics_BP_OnStateChanged);
+	void BndEvt__BP_MobileTrafficSignal_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
+	void BndEvt__BP_BlockerFence_01_SBZPropDamage_K2Node_ComponentBoundEvent_2_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
+	void BndEvt__BP_BlockerFence_01_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -62,5 +63,6 @@ public:
 		return GetDefaultObjImpl<ABP_BlockerFence_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BlockerFence_01_C;
 
 SDK_NAMESPACE_END

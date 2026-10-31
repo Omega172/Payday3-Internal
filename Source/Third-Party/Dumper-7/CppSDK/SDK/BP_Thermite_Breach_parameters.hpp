@@ -17,6 +17,25 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_Thermite_Breach.BP_Thermite_Breach_C.UserConstructionScript
+// 0x0004 (0x0004 - 0x0000)
+struct BP_Thermite_Breach_C_UserConstructionScript final
+{
+public:
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Thermite_Breach_C_UserConstructionScript;
+
+// Function BP_Thermite_Breach.BP_Thermite_Breach_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_Thermite_Breach_C_OnStateChanged final
+{
+public:
+	bool                                          bStateToChangeTo_OnStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Thermite_Breach_C_OnStateChanged;
+
 // Function BP_Thermite_Breach.BP_Thermite_Breach_C.ExecuteUbergraph_BP_Thermite_Breach
 // 0x0080 (0x0080 - 0x0000)
 struct BP_Thermite_Breach_C_ExecuteUbergraph_BP_Thermite_Breach final
@@ -36,23 +55,7 @@ public:
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0060(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UNiagaraComponent*                      CallFunc_SpawnSystemAtLocation_ReturnValue_1;      // 0x0078(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_Thermite_Breach.BP_Thermite_Breach_C.OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_Thermite_Breach_C_OnStateChanged final
-{
-public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_Thermite_Breach.BP_Thermite_Breach_C.UserConstructionScript
-// 0x0004 (0x0004 - 0x0000)
-struct BP_Thermite_Breach_C_UserConstructionScript final
-{
-public:
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_Thermite_Breach_C_ExecuteUbergraph_BP_Thermite_Breach;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

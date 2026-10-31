@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_HeistGameMode_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_HeistGameMode_C;
 
 SDK_NAMESPACE_END

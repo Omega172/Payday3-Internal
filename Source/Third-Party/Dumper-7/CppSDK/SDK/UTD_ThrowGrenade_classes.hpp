@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UUTD_ThrowGrenade_C>();
 	}
 };
+DUMPER7_ASSERTS_UUTD_ThrowGrenade_C;
 
 SDK_NAMESPACE_END

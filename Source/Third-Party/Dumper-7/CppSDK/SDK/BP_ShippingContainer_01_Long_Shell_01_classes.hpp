@@ -31,9 +31,9 @@ public:
 	class UStaticMesh*                            secondaryDecalMesh;                                // 0x0358(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_ShippingContainer_01_Long_Shell_01(int32 EntryPoint);
-	void setBinaryState(bool state, bool doCosmetics);
 	void UserConstructionScript();
+	void setBinaryState(bool state, bool doCosmetics);
+	void ExecuteUbergraph_BP_ShippingContainer_01_Long_Shell_01(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -49,5 +49,6 @@ public:
 		return GetDefaultObjImpl<ABP_ShippingContainer_01_Long_Shell_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ShippingContainer_01_Long_Shell_01_C;
 
 SDK_NAMESPACE_END

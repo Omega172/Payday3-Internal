@@ -16,88 +16,45 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_FOR_CorridorShutter_01.BP_FOR_CorridorShutter_01_C.bindPressurePlate
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function BP_FOR_CorridorShutter_01.BP_FOR_CorridorShutter_01_C.SetStateFunction
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bind                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZVehicleDoorState                    State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_FOR_CorridorShutter_01_C::bindPressurePlate(bool bind)
+void ABP_FOR_CorridorShutter_01_C::SetStateFunction(ESBZVehicleDoorState State)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetStateFunction", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FOR_CorridorShutter_01_C", "bindPressurePlate");
+	Params::BP_FOR_CorridorShutter_01_C_SetStateFunction Parms{};
 
-	Params::BP_FOR_CorridorShutter_01_C_bindPressurePlate Parms{};
-
-	Parms.bind = bind;
+	Parms.State = State;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_FOR_CorridorShutter_01.BP_FOR_CorridorShutter_01_C.ExecuteUbergraph_BP_FOR_CorridorShutter_01
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_FOR_CorridorShutter_01.BP_FOR_CorridorShutter_01_C.setBroken
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_FOR_CorridorShutter_01_C::ExecuteUbergraph_BP_FOR_CorridorShutter_01(int32 EntryPoint)
+void ABP_FOR_CorridorShutter_01_C::setBroken()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setBroken", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FOR_CorridorShutter_01_C", "ExecuteUbergraph_BP_FOR_CorridorShutter_01");
-
-	Params::BP_FOR_CorridorShutter_01_C_ExecuteUbergraph_BP_FOR_CorridorShutter_01 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_FOR_CorridorShutter_01.BP_FOR_CorridorShutter_01_C.getAnimationTimeOffset
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// double*                                 gameTimeInSecondsOffset                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_FOR_CorridorShutter_01_C::getAnimationTimeOffset(double* gameTimeInSecondsOffset)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FOR_CorridorShutter_01_C", "getAnimationTimeOffset");
-
-	Params::BP_FOR_CorridorShutter_01_C_getAnimationTimeOffset Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (gameTimeInSecondsOffset != nullptr)
-		*gameTimeInSecondsOffset = Parms.gameTimeInSecondsOffset;
-}
-
-
-// Function BP_FOR_CorridorShutter_01.BP_FOR_CorridorShutter_01_C.OnStateChanged
+// Function BP_FOR_CorridorShutter_01.BP_FOR_CorridorShutter_01_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_FOR_CorridorShutter_01_C::OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics)
+void ABP_FOR_CorridorShutter_01_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FOR_CorridorShutter_01_C", "OnStateChanged");
-
-	Params::BP_FOR_CorridorShutter_01_C_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -111,10 +68,8 @@ void ABP_FOR_CorridorShutter_01_C::OnStateChanged(int32 OldState, int32 NewState
 
 void ABP_FOR_CorridorShutter_01_C::onWeightChanged(bool bIsOverLimit, bool bHasChanged, int32 OldCount, int32 NewCount)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FOR_CorridorShutter_01_C", "onWeightChanged");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"onWeightChanged", FnName));
 
 	Params::BP_FOR_CorridorShutter_01_C_onWeightChanged Parms{};
 
@@ -127,49 +82,78 @@ void ABP_FOR_CorridorShutter_01_C::onWeightChanged(bool bIsOverLimit, bool bHasC
 }
 
 
-// Function BP_FOR_CorridorShutter_01.BP_FOR_CorridorShutter_01_C.ReceiveBeginPlay
+// Function BP_FOR_CorridorShutter_01.BP_FOR_CorridorShutter_01_C.OnStateChanged
 // (Event, Protected, BlueprintEvent)
-
-void ABP_FOR_CorridorShutter_01_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FOR_CorridorShutter_01_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_FOR_CorridorShutter_01.BP_FOR_CorridorShutter_01_C.setBroken
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_FOR_CorridorShutter_01_C::setBroken()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FOR_CorridorShutter_01_C", "setBroken");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_FOR_CorridorShutter_01.BP_FOR_CorridorShutter_01_C.SetStateFunction
-// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ESBZVehicleDoorState                    State_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   OldState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_FOR_CorridorShutter_01_C::SetStateFunction(ESBZVehicleDoorState State_0)
+void ABP_FOR_CorridorShutter_01_C::OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FOR_CorridorShutter_01_C", "SetStateFunction");
+	Params::BP_FOR_CorridorShutter_01_C_OnStateChanged Parms{};
 
-	Params::BP_FOR_CorridorShutter_01_C_SetStateFunction Parms{};
+	Parms.OldState_OnStateChanged = OldState_OnStateChanged;
+	Parms.NewState_OnStateChanged = NewState_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
 
-	Parms.State_0 = State_0;
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_FOR_CorridorShutter_01.BP_FOR_CorridorShutter_01_C.getAnimationTimeOffset
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// double*                                 gameTimeInSecondsOffset                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_FOR_CorridorShutter_01_C::getAnimationTimeOffset(double* gameTimeInSecondsOffset)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"getAnimationTimeOffset", FnName));
+
+	Params::BP_FOR_CorridorShutter_01_C_getAnimationTimeOffset Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (gameTimeInSecondsOffset != nullptr)
+		*gameTimeInSecondsOffset = Parms.gameTimeInSecondsOffset;
+}
+
+
+// Function BP_FOR_CorridorShutter_01.BP_FOR_CorridorShutter_01_C.ExecuteUbergraph_BP_FOR_CorridorShutter_01
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_FOR_CorridorShutter_01_C::ExecuteUbergraph_BP_FOR_CorridorShutter_01(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_FOR_CorridorShutter_01_C", "ExecuteUbergraph_BP_FOR_CorridorShutter_01", FuncInfo);
+
+	Params::BP_FOR_CorridorShutter_01_C_ExecuteUbergraph_BP_FOR_CorridorShutter_01 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_FOR_CorridorShutter_01.BP_FOR_CorridorShutter_01_C.bindPressurePlate
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bind                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_FOR_CorridorShutter_01_C::bindPressurePlate(bool bind)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"bindPressurePlate", FnName));
+
+	Params::BP_FOR_CorridorShutter_01_C_bindPressurePlate Parms{};
+
+	Parms.bind = bind;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

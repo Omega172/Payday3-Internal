@@ -24,8 +24,8 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ActionPhaseStarted();
 	void ExecuteUbergraph_E_FirstPlayable_Ext_Bank_Prop_optimisation_test(int32 EntryPoint);
+	void ActionPhaseStarted();
 
 public:
 	static class UClass* StaticClass()
@@ -41,5 +41,6 @@ public:
 		return GetDefaultObjImpl<AE_FirstPlayable_Ext_Bank_Prop_optimisation_test_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_FirstPlayable_Ext_Bank_Prop_optimisation_test_C;
 
 SDK_NAMESPACE_END

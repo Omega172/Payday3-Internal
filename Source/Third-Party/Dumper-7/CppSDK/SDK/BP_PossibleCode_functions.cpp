@@ -16,21 +16,23 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_PossibleCode.BP_PossibleCode_C.ExecuteUbergraph_BP_PossibleCode
-// (Final, UbergraphFunction)
+// Function BP_PossibleCode.BP_PossibleCode_C.ShowCode
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   TrueCode                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   RandomCode                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bShowTrueCode                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PossibleCode_C::ExecuteUbergraph_BP_PossibleCode(int32 EntryPoint)
+void ABP_PossibleCode_C::ShowCode(int32 TrueCode, int32 RandomCode, bool bShowTrueCode)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ShowCode", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PossibleCode_C", "ExecuteUbergraph_BP_PossibleCode");
+	Params::BP_PossibleCode_C_ShowCode Parms{};
 
-	Params::BP_PossibleCode_C_ExecuteUbergraph_BP_PossibleCode Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.TrueCode = TrueCode;
+	Parms.RandomCode = RandomCode;
+	Parms.bShowTrueCode = bShowTrueCode;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -41,34 +43,26 @@ void ABP_PossibleCode_C::ExecuteUbergraph_BP_PossibleCode(int32 EntryPoint)
 
 void ABP_PossibleCode_C::OnRep_CodePacket()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PossibleCode_C", "OnRep_CodePacket");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRep_CodePacket", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_PossibleCode.BP_PossibleCode_C.ShowCode
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_PossibleCode.BP_PossibleCode_C.ExecuteUbergraph_BP_PossibleCode
+// (Final, UbergraphFunction)
 // Parameters:
-// int32                                   TrueCode                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   RandomCode                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bShowTrueCode                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PossibleCode_C::ShowCode(int32 TrueCode, int32 RandomCode, bool bShowTrueCode)
+void ABP_PossibleCode_C::ExecuteUbergraph_BP_PossibleCode(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_PossibleCode_C", "ExecuteUbergraph_BP_PossibleCode", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PossibleCode_C", "ShowCode");
+	Params::BP_PossibleCode_C_ExecuteUbergraph_BP_PossibleCode Parms{};
 
-	Params::BP_PossibleCode_C_ShowCode Parms{};
-
-	Parms.TrueCode = TrueCode;
-	Parms.RandomCode = RandomCode;
-	Parms.bShowTrueCode = bShowTrueCode;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

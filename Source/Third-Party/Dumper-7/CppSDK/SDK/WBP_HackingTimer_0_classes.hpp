@@ -46,5 +46,6 @@ public:
 		return GetDefaultObjImpl<WBP_HackingTimer_0::UWBP_HackingTimer_C>();
 	}
 };
+DUMPER7_ASSERTS_WBP_HackingTimer_0__UWBP_HackingTimer_C;
 
 SDK_NAMESPACE_END

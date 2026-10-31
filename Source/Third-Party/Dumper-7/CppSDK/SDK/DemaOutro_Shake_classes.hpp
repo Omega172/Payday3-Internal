@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UDemaOutro_Shake_C>();
 	}
 };
+DUMPER7_ASSERTS_UDemaOutro_Shake_C;
 
 SDK_NAMESPACE_END

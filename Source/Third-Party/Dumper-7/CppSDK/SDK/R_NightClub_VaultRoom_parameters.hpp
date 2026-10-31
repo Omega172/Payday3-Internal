@@ -16,23 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function R_NightClub_VaultRoom.R_NightClub_VaultRoom_C.BndEvt__R_NightClub_VaultRoom_BP_Int_Door_01_SmallVault_01_2_K2Node_ActorBoundEvent_4_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct R_NightClub_VaultRoom_C_BndEvt__R_NightClub_VaultRoom_BP_Int_Door_01_SmallVault_01_2_K2Node_ActorBoundEvent_4_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_NightClub_VaultRoom.R_NightClub_VaultRoom_C.BndEvt__R_NightClub_VaultRoom_SBZPlayerTriggerVolume_PlayerFoundVaultRoom_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct R_NightClub_VaultRoom_C_BndEvt__R_NightClub_VaultRoom_SBZPlayerTriggerVolume_PlayerFoundVaultRoom_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function R_NightClub_VaultRoom.R_NightClub_VaultRoom_C.ExecuteUbergraph_R_NightClub_VaultRoom
 // 0x0028 (0x0028 - 0x0000)
 struct R_NightClub_VaultRoom_C_ExecuteUbergraph_R_NightClub_VaultRoom final
@@ -58,6 +41,26 @@ public:
 	ESBZGateState                                 K2Node_ActorBoundEvent_State;                      // 0x0026(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0027(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_R_NightClub_VaultRoom_C_ExecuteUbergraph_R_NightClub_VaultRoom;
+
+// Function R_NightClub_VaultRoom.R_NightClub_VaultRoom_C.BndEvt__R_NightClub_VaultRoom_SBZPlayerTriggerVolume_PlayerFoundVaultRoom_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct R_NightClub_VaultRoom_C_BndEvt__R_NightClub_VaultRoom_SBZPlayerTriggerVolume_PlayerFoundVaultRoom_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_NightClub_VaultRoom_C_BndEvt__R_NightClub_VaultRoom_SBZPlayerTriggerVolume_PlayerFoundVaultRoom_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function R_NightClub_VaultRoom.R_NightClub_VaultRoom_C.BndEvt__R_NightClub_VaultRoom_BP_Int_Door_01_SmallVault_01_2_K2Node_ActorBoundEvent_4_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct R_NightClub_VaultRoom_C_BndEvt__R_NightClub_VaultRoom_BP_Int_Door_01_SmallVault_01_2_K2Node_ActorBoundEvent_4_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_NightClub_VaultRoom_C_BndEvt__R_NightClub_VaultRoom_BP_Int_Door_01_SmallVault_01_2_K2Node_ActorBoundEvent_4_SBZGateStateChangedDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

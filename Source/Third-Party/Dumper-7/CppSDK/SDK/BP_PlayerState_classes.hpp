@@ -16,11 +16,11 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_PlayerState.BP_PlayerState_C
-// 0x0008 (0x1A18 - 0x1A10)
+// 0x0008 (0x1A80 - 0x1A78)
 class ABP_PlayerState_C final : public ASBZPlayerState
 {
 public:
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x1A10(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x1A78(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_PlayerState_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PlayerState_C;
 
 SDK_NAMESPACE_END

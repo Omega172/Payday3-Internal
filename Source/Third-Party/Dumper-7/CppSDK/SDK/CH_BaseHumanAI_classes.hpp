@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CH_BaseHumanAI.CH_BaseHumanAI_C
-// 0x0000 (0x21B0 - 0x21B0)
+// 0x0000 (0x2240 - 0x2240)
 class ACH_BaseHumanAI_C : public ASBZAICharacter
 {
 public:
@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ACH_BaseHumanAI_C>();
 	}
 };
+DUMPER7_ASSERTS_ACH_BaseHumanAI_C;
 
 SDK_NAMESPACE_END

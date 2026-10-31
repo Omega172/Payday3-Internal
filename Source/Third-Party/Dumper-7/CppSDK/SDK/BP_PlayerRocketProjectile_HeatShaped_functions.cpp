@@ -16,27 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_PlayerRocketProjectile_HeatShaped.BP_PlayerRocketProjectile_HeatShaped_C.BP_OnDetonationCosmetics
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// class UNiagaraComponent*                DetonationEffectComponent                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// const struct FVector&                   ExplosionLocation                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FVector&                   ExplosionImpactNormal                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_PlayerRocketProjectile_HeatShaped.BP_PlayerRocketProjectile_HeatShaped_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_PlayerRocketProjectile_HeatShaped_C::BP_OnDetonationCosmetics(class UNiagaraComponent* DetonationEffectComponent, const struct FVector& ExplosionLocation, const struct FVector& ExplosionImpactNormal)
+void ABP_PlayerRocketProjectile_HeatShaped_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlayerRocketProjectile_HeatShaped_C", "BP_OnDetonationCosmetics");
-
-	Params::BP_PlayerRocketProjectile_HeatShaped_C_BP_OnDetonationCosmetics Parms{};
-
-	Parms.DetonationEffectComponent = DetonationEffectComponent;
-	Parms.ExplosionLocation = std::move(ExplosionLocation);
-	Parms.ExplosionImpactNormal = std::move(ExplosionImpactNormal);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -47,10 +35,8 @@ void ABP_PlayerRocketProjectile_HeatShaped_C::BP_OnDetonationCosmetics(class UNi
 
 void ABP_PlayerRocketProjectile_HeatShaped_C::ExecuteUbergraph_BP_PlayerRocketProjectile_HeatShaped(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlayerRocketProjectile_HeatShaped_C", "ExecuteUbergraph_BP_PlayerRocketProjectile_HeatShaped");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_PlayerRocketProjectile_HeatShaped_C", "ExecuteUbergraph_BP_PlayerRocketProjectile_HeatShaped", FuncInfo);
 
 	Params::BP_PlayerRocketProjectile_HeatShaped_C_ExecuteUbergraph_BP_PlayerRocketProjectile_HeatShaped Parms{};
 
@@ -60,17 +46,25 @@ void ABP_PlayerRocketProjectile_HeatShaped_C::ExecuteUbergraph_BP_PlayerRocketPr
 }
 
 
-// Function BP_PlayerRocketProjectile_HeatShaped.BP_PlayerRocketProjectile_HeatShaped_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_PlayerRocketProjectile_HeatShaped.BP_PlayerRocketProjectile_HeatShaped_C.BP_OnDetonationCosmetics
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// class UNiagaraComponent*                DetonationEffectComponent_BP_OnDetonationCosmetics     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   ExplosionLocation_BP_OnDetonationCosmetics             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   ExplosionImpactNormal_BP_OnDetonationCosmetics         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PlayerRocketProjectile_HeatShaped_C::ReceiveBeginPlay()
+void ABP_PlayerRocketProjectile_HeatShaped_C::BP_OnDetonationCosmetics(class UNiagaraComponent* DetonationEffectComponent_BP_OnDetonationCosmetics, const struct FVector& ExplosionLocation_BP_OnDetonationCosmetics, const struct FVector& ExplosionImpactNormal_BP_OnDetonationCosmetics)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnDetonationCosmetics", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlayerRocketProjectile_HeatShaped_C", "ReceiveBeginPlay");
+	Params::BP_PlayerRocketProjectile_HeatShaped_C_BP_OnDetonationCosmetics Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.DetonationEffectComponent_BP_OnDetonationCosmetics = DetonationEffectComponent_BP_OnDetonationCosmetics;
+	Parms.ExplosionLocation_BP_OnDetonationCosmetics = std::move(ExplosionLocation_BP_OnDetonationCosmetics);
+	Parms.ExplosionImpactNormal_BP_OnDetonationCosmetics = std::move(ExplosionImpactNormal_BP_OnDetonationCosmetics);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

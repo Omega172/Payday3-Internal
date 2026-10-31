@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CH_Delivery_boy_01.CH_Delivery_boy_01_C
-// 0x0000 (0x2200 - 0x2200)
+// 0x0000 (0x2290 - 0x2290)
 class ACH_Delivery_boy_01_C final : public ACH_BaseRegularCivilian_C
 {
 public:
@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ACH_Delivery_boy_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ACH_Delivery_boy_01_C;
 
 SDK_NAMESPACE_END

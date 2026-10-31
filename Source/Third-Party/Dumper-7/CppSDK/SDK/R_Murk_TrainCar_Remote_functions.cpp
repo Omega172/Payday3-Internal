@@ -16,159 +16,25 @@
 
 SDK_NAMESPACE_START
 
-// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.BndEvt__R_Station_TrainCar_Remote_BP_InteractableSatellitePrototype_2_K2Node_ActorBoundEvent_5_SBZBagPickedUp__DelegateSignature
-// (BlueprintEvent)
+// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void AR_Murk_TrainCar_Remote_C::BndEvt__R_Station_TrainCar_Remote_BP_InteractableSatellitePrototype_2_K2Node_ActorBoundEvent_5_SBZBagPickedUp__DelegateSignature()
+void AR_Murk_TrainCar_Remote_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Remote_C", "BndEvt__R_Station_TrainCar_Remote_BP_InteractableSatellitePrototype_2_K2Node_ActorBoundEvent_5_SBZBagPickedUp__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.BndEvt__R_Station_TrainCar_Remote_SBZLaserGrid_Vault2_K2Node_ActorBoundEvent_4_SBZOnLaserGridTriggered__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZLaserGrid*                    LaserGrid                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPlayerCharacter*              PlayerCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AR_Murk_TrainCar_Remote_C::BndEvt__R_Station_TrainCar_Remote_SBZLaserGrid_Vault2_K2Node_ActorBoundEvent_4_SBZOnLaserGridTriggered__DelegateSignature(class ASBZLaserGrid* LaserGrid, class ASBZPlayerCharacter* PlayerCharacter)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Remote_C", "BndEvt__R_Station_TrainCar_Remote_SBZLaserGrid_Vault2_K2Node_ActorBoundEvent_4_SBZOnLaserGridTriggered__DelegateSignature");
-
-	Params::R_Murk_TrainCar_Remote_C_BndEvt__R_Station_TrainCar_Remote_SBZLaserGrid_Vault2_K2Node_ActorBoundEvent_4_SBZOnLaserGridTriggered__DelegateSignature Parms{};
-
-	Parms.LaserGrid = LaserGrid;
-	Parms.PlayerCharacter = PlayerCharacter;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.BndEvt__R_Station_TrainCar_Remote_SBZPlayerTriggerVolume_PlayerInsideRemote_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AR_Murk_TrainCar_Remote_C::BndEvt__R_Station_TrainCar_Remote_SBZPlayerTriggerVolume_PlayerInsideRemote_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Remote_C", "BndEvt__R_Station_TrainCar_Remote_SBZPlayerTriggerVolume_PlayerInsideRemote_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::R_Murk_TrainCar_Remote_C_BndEvt__R_Station_TrainCar_Remote_SBZPlayerTriggerVolume_PlayerInsideRemote_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.BndEvt__R_Station_TrainCar_Remote_SBZPlayerTriggerVolume_PlayerInsideTrainCar_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AR_Murk_TrainCar_Remote_C::BndEvt__R_Station_TrainCar_Remote_SBZPlayerTriggerVolume_PlayerInsideTrainCar_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Remote_C", "BndEvt__R_Station_TrainCar_Remote_SBZPlayerTriggerVolume_PlayerInsideTrainCar_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::R_Murk_TrainCar_Remote_C_BndEvt__R_Station_TrainCar_Remote_SBZPlayerTriggerVolume_PlayerInsideTrainCar_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.CloseRemoteDoor
+// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.OpenRemoteDoor
 // (BlueprintCallable, BlueprintEvent)
 
-void AR_Murk_TrainCar_Remote_C::CloseRemoteDoor()
+void AR_Murk_TrainCar_Remote_C::OpenRemoteDoor()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Remote_C", "CloseRemoteDoor");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.DestroyAllMainLoot
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AR_Murk_TrainCar_Remote_C::DestroyAllMainLoot(int32 Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Remote_C", "DestroyAllMainLoot");
-
-	Params::R_Murk_TrainCar_Remote_C_DestroyAllMainLoot Parms{};
-
-	Parms.Value = Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.DestroyOptionalLoot
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AR_Murk_TrainCar_Remote_C::DestroyOptionalLoot(int32 Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Remote_C", "DestroyOptionalLoot");
-
-	Params::R_Murk_TrainCar_Remote_C_DestroyOptionalLoot Parms{};
-
-	Parms.Value = Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.Event_AddUnlockWaypoint_Code
-// (BlueprintCallable, BlueprintEvent)
-
-void AR_Murk_TrainCar_Remote_C::Event_AddUnlockWaypoint_Code()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Remote_C", "Event_AddUnlockWaypoint_Code");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.Event_RemoveUnlockWaypoint_Code
-// (BlueprintCallable, BlueprintEvent)
-
-void AR_Murk_TrainCar_Remote_C::Event_RemoveUnlockWaypoint_Code()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Remote_C", "Event_RemoveUnlockWaypoint_Code");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OpenRemoteDoor", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -181,10 +47,8 @@ void AR_Murk_TrainCar_Remote_C::Event_RemoveUnlockWaypoint_Code()
 
 void AR_Murk_TrainCar_Remote_C::ExecuteUbergraph_R_Murk_TrainCar_Remote(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Remote_C", "ExecuteUbergraph_R_Murk_TrainCar_Remote");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "R_Murk_TrainCar_Remote_C", "ExecuteUbergraph_R_Murk_TrainCar_Remote", FuncInfo);
 
 	Params::R_Murk_TrainCar_Remote_C_ExecuteUbergraph_R_Murk_TrainCar_Remote Parms{};
 
@@ -194,29 +58,141 @@ void AR_Murk_TrainCar_Remote_C::ExecuteUbergraph_R_Murk_TrainCar_Remote(int32 En
 }
 
 
-// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.OpenRemoteDoor
+// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.Event_RemoveUnlockWaypoint_Code
 // (BlueprintCallable, BlueprintEvent)
 
-void AR_Murk_TrainCar_Remote_C::OpenRemoteDoor()
+void AR_Murk_TrainCar_Remote_C::Event_RemoveUnlockWaypoint_Code()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Remote_C", "OpenRemoteDoor");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Event_RemoveUnlockWaypoint_Code", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.Event_AddUnlockWaypoint_Code
+// (BlueprintCallable, BlueprintEvent)
 
-void AR_Murk_TrainCar_Remote_C::ReceiveBeginPlay()
+void AR_Murk_TrainCar_Remote_C::Event_AddUnlockWaypoint_Code()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Event_AddUnlockWaypoint_Code", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Remote_C", "ReceiveBeginPlay");
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.DestroyOptionalLoot
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AR_Murk_TrainCar_Remote_C::DestroyOptionalLoot(int32 Value)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DestroyOptionalLoot", FnName));
+
+	Params::R_Murk_TrainCar_Remote_C_DestroyOptionalLoot Parms{};
+
+	Parms.Value = Value;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.DestroyAllMainLoot
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AR_Murk_TrainCar_Remote_C::DestroyAllMainLoot(int32 Value)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DestroyAllMainLoot", FnName));
+
+	Params::R_Murk_TrainCar_Remote_C_DestroyAllMainLoot Parms{};
+
+	Parms.Value = Value;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.CloseRemoteDoor
+// (BlueprintCallable, BlueprintEvent)
+
+void AR_Murk_TrainCar_Remote_C::CloseRemoteDoor()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CloseRemoteDoor", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.BndEvt__R_Station_TrainCar_Remote_SBZPlayerTriggerVolume_PlayerInsideTrainCar_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AR_Murk_TrainCar_Remote_C::BndEvt__R_Station_TrainCar_Remote_SBZPlayerTriggerVolume_PlayerInsideTrainCar_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Station_TrainCar_Remote_SBZPlayerTriggerVolume_PlayerInsideTrainCar_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::R_Murk_TrainCar_Remote_C_BndEvt__R_Station_TrainCar_Remote_SBZPlayerTriggerVolume_PlayerInsideTrainCar_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.BndEvt__R_Station_TrainCar_Remote_SBZPlayerTriggerVolume_PlayerInsideRemote_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AR_Murk_TrainCar_Remote_C::BndEvt__R_Station_TrainCar_Remote_SBZPlayerTriggerVolume_PlayerInsideRemote_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Station_TrainCar_Remote_SBZPlayerTriggerVolume_PlayerInsideRemote_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::R_Murk_TrainCar_Remote_C_BndEvt__R_Station_TrainCar_Remote_SBZPlayerTriggerVolume_PlayerInsideRemote_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.BndEvt__R_Station_TrainCar_Remote_SBZLaserGrid_Vault2_K2Node_ActorBoundEvent_4_SBZOnLaserGridTriggered__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZLaserGrid*                    LaserGrid                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPlayerCharacter*              PlayerCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AR_Murk_TrainCar_Remote_C::BndEvt__R_Station_TrainCar_Remote_SBZLaserGrid_Vault2_K2Node_ActorBoundEvent_4_SBZOnLaserGridTriggered__DelegateSignature(class ASBZLaserGrid* LaserGrid, class ASBZPlayerCharacter* PlayerCharacter)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Station_TrainCar_Remote_SBZLaserGrid_Vault2_K2Node_ActorBoundEvent_4_SBZOnLaserGridTriggered__DelegateSignature", FnName));
+
+	Params::R_Murk_TrainCar_Remote_C_BndEvt__R_Station_TrainCar_Remote_SBZLaserGrid_Vault2_K2Node_ActorBoundEvent_4_SBZOnLaserGridTriggered__DelegateSignature Parms{};
+
+	Parms.LaserGrid = LaserGrid;
+	Parms.PlayerCharacter = PlayerCharacter;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.BndEvt__R_Station_TrainCar_Remote_BP_InteractableSatellitePrototype_2_K2Node_ActorBoundEvent_5_SBZBagPickedUp__DelegateSignature
+// (BlueprintEvent)
+
+void AR_Murk_TrainCar_Remote_C::BndEvt__R_Station_TrainCar_Remote_BP_InteractableSatellitePrototype_2_K2Node_ActorBoundEvent_5_SBZBagPickedUp__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Station_TrainCar_Remote_BP_InteractableSatellitePrototype_2_K2Node_ActorBoundEvent_5_SBZBagPickedUp__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

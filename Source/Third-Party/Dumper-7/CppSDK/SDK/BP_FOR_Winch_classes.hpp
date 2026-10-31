@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_Winch_classes.hpp"
+#include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
 
 
@@ -30,9 +30,9 @@ public:
 	class UStaticMeshComponent*                   Sheaves_01;                                        // 0x0698(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnStateChanged(ESBZBreachingEquipmentState OldState, ESBZBreachingEquipmentState NewState, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_FOR_Winch(int32 EntryPoint);
 	void RestartWinch();
+	void ExecuteUbergraph_BP_FOR_Winch(int32 EntryPoint);
+	void BP_OnStateChanged(ESBZBreachingEquipmentState OldState_BP_OnStateChanged, ESBZBreachingEquipmentState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged);
 
 public:
 	static class UClass* StaticClass()
@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<ABP_FOR_Winch_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_FOR_Winch_C;
 
 SDK_NAMESPACE_END

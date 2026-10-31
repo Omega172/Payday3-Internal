@@ -40,5 +40,6 @@ public:
 		return GetDefaultObjImpl<BPL_Fluorescent_Hanging_02_0::ABPL_Fluorescent_Hanging_02_C>();
 	}
 };
+DUMPER7_ASSERTS_BPL_Fluorescent_Hanging_02_0__ABPL_Fluorescent_Hanging_02_C;
 
 SDK_NAMESPACE_END

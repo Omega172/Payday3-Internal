@@ -18,15 +18,76 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.BndEvt__BP_cardboardBox_interactable_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_cardboardBox_interactable_C_BndEvt__BP_cardboardBox_interactable_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
+// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.UserConstructionScript
+// 0x01A0 (0x01A0 - 0x0000)
+struct BP_cardboardBox_interactable_C_UserConstructionScript final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0010(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class USceneComponent*, struct FTransform> K2Node_MakeMap_Map;                              // 0x0078(0x0050)(ContainsInstancedReference)
+	uint8                                         Pad_C8[0x8];                                       // 0x00C8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_Array_Get_Item;                           // 0x00D0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   CallFunc_AddComponent_ReturnValue;                 // 0x0130(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x013C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_13D[0x3];                                      // 0x013D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_GetRelativeTransform_ReturnValue;         // 0x0140(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_cardboardBox_interactable_C_UserConstructionScript;
+
+// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.SpawnItemInContainer
+// 0x0018 (0x0018 - 0x0000)
+struct BP_cardboardBox_interactable_C_SpawnItemInContainer final
+{
+public:
+	class UClass*                                 WhatShould_Spawn;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_RoomSpawnController_C*              RoomControllerRef;                                 // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 SpawnedActor;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_cardboardBox_interactable_C_SpawnItemInContainer;
+
+// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.setInteractable
+// 0x0001 (0x0001 - 0x0000)
+struct BP_cardboardBox_interactable_C_setInteractable final
+{
+public:
+	bool                                          interactable;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_cardboardBox_interactable_C_setInteractable;
+
+// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.PopulateSpawnInformationMap
+// 0x0050 (0x0050 - 0x0000)
+struct BP_cardboardBox_interactable_C_PopulateSpawnInformationMap final
+{
+public:
+	TMap<class USceneComponent*, struct FTransform> InOutSpawnDataMap;                               // 0x0000(0x0050)(Parm, OutParm, ContainsInstancedReference)
+};
+DUMPER7_ASSERTS_BP_cardboardBox_interactable_C_PopulateSpawnInformationMap;
+
+// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_cardboardBox_interactable_C_OnStateChanged final
+{
+public:
+	bool                                          bStateToChangeTo_OnStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_cardboardBox_interactable_C_OnStateChanged;
+
+// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.OnActorSpawned
+// 0x0010 (0x0010 - 0x0000)
+struct BP_cardboardBox_interactable_C_OnActorSpawned final
+{
+public:
+	class AActor*                                 SpawnedActor;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        AttachParent;                                      // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_cardboardBox_interactable_C_OnActorSpawned;
 
 // Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.ExecuteUbergraph_BP_cardboardBox_interactable
 // 0x0550 (0x0550 - 0x0000)
@@ -91,71 +152,18 @@ public:
 	double                                        CallFunc_MapRangeClamped_Value_ImplicitCast;       // 0x0540(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_TLerp_Alpha_ImplicitCast;                 // 0x0548(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_cardboardBox_interactable_C_ExecuteUbergraph_BP_cardboardBox_interactable;
 
-// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.OnActorSpawned
-// 0x0010 (0x0010 - 0x0000)
-struct BP_cardboardBox_interactable_C_OnActorSpawned final
-{
-public:
-	class AActor*                                 SpawnedActor;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        AttachParent;                                      // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_cardboardBox_interactable_C_OnStateChanged final
-{
-public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.PopulateSpawnInformationMap
-// 0x0050 (0x0050 - 0x0000)
-struct BP_cardboardBox_interactable_C_PopulateSpawnInformationMap final
-{
-public:
-	TMap<class USceneComponent*, struct FTransform> InOutSpawnDataMap;                               // 0x0000(0x0050)(Parm, OutParm, ContainsInstancedReference)
-};
-
-// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.setInteractable
-// 0x0001 (0x0001 - 0x0000)
-struct BP_cardboardBox_interactable_C_setInteractable final
-{
-public:
-	bool                                          interactable;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.SpawnItemInContainer
+// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.BndEvt__BP_cardboardBox_interactable_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
 // 0x0018 (0x0018 - 0x0000)
-struct BP_cardboardBox_interactable_C_SpawnItemInContainer final
+struct BP_cardboardBox_interactable_C_BndEvt__BP_cardboardBox_interactable_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
 {
 public:
-	class UClass*                                 WhatShould_Spawn;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_RoomSpawnController_C*              RoomControllerRef;                                 // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 SpawnedActor;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_cardboardBox_interactable.BP_cardboardBox_interactable_C.UserConstructionScript
-// 0x01A0 (0x01A0 - 0x0000)
-struct BP_cardboardBox_interactable_C_UserConstructionScript final
-{
-public:
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0010(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<class USceneComponent*, struct FTransform> K2Node_MakeMap_Map;                              // 0x0078(0x0050)(ContainsInstancedReference)
-	uint8                                         Pad_C8[0x8];                                       // 0x00C8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_Array_Get_Item;                           // 0x00D0(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   CallFunc_AddComponent_ReturnValue;                 // 0x0130(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x013C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_13D[0x3];                                      // 0x013D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_GetRelativeTransform_ReturnValue;         // 0x0140(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_cardboardBox_interactable_C_BndEvt__BP_cardboardBox_interactable_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

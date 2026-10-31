@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AM_ONE_Architecture_Vault_C>();
 	}
 };
+DUMPER7_ASSERTS_AM_ONE_Architecture_Vault_C;
 
 SDK_NAMESPACE_END

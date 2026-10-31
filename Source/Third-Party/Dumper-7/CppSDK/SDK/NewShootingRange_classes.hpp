@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ANewShootingRange_C>();
 	}
 };
+DUMPER7_ASSERTS_ANewShootingRange_C;
 
 SDK_NAMESPACE_END

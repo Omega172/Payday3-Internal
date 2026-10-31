@@ -29,10 +29,10 @@ public:
 	class ASBZAmbientSound*                       SBZAmbientSound_MainAICore_ExecuteUbergraph_A_DataCenter_RefProperty; // 0x03E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AIShutdownStart();
-	void ExecuteUbergraph_A_DataCenter(int32 EntryPoint);
-	void HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState);
 	void ReceiveBeginPlay();
+	void HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged);
+	void ExecuteUbergraph_A_DataCenter(int32 EntryPoint);
+	void AIShutdownStart();
 
 public:
 	static class UClass* StaticClass()
@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<AA_DataCenter_C>();
 	}
 };
+DUMPER7_ASSERTS_AA_DataCenter_C;
 
 SDK_NAMESPACE_END

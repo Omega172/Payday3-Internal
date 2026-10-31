@@ -18,273 +18,92 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.UpdateSelectedItem
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_ItemInventoryScreen_C_UpdateSelectedItem final
-{
-public:
-	bool                                          PrioritizeEquipped;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_UpdateSelectedItem;
-
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.PrePush_EB4572904A1FF447AB18B0B97620150E
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.BndEvt__WBP_ItemInventoryScreen_NewButton_Cosmetics_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_ItemInventoryScreen_C_PrePush_EB4572904A1FF447AB18B0B97620150E final
+struct WBP_ItemInventoryScreen_C_BndEvt__WBP_ItemInventoryScreen_NewButton_Cosmetics_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_PrePush_EB4572904A1FF447AB18B0B97620150E;
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_BndEvt__WBP_ItemInventoryScreen_NewButton_Cosmetics_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature;
 
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.PrePush_E95DE80C48FA87786EF5048D085FED4C
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.BndEvt__WBP_ItemInventoryScreen_NewButton_Customize_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_ItemInventoryScreen_C_PrePush_E95DE80C48FA87786EF5048D085FED4C final
+struct WBP_ItemInventoryScreen_C_BndEvt__WBP_ItemInventoryScreen_NewButton_Customize_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_PrePush_E95DE80C48FA87786EF5048D085FED4C;
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_BndEvt__WBP_ItemInventoryScreen_NewButton_Customize_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature;
 
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.PrePush_BF69DD8640C11BCDD33B9684CE63FBA7
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.BndEvt__WBP_ItemInventoryScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_ItemInventoryScreen_C_PrePush_BF69DD8640C11BCDD33B9684CE63FBA7 final
+struct WBP_ItemInventoryScreen_C_BndEvt__WBP_ItemInventoryScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_PrePush_BF69DD8640C11BCDD33B9684CE63FBA7;
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_BndEvt__WBP_ItemInventoryScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature;
 
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.PrePush_B78C6D19499C91674E07B0ADD5D3ABB0
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.BndEvt__WBP_ItemInventoryScreen_NewButton_Variant_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_ItemInventoryScreen_C_PrePush_B78C6D19499C91674E07B0ADD5D3ABB0 final
+struct WBP_ItemInventoryScreen_C_BndEvt__WBP_ItemInventoryScreen_NewButton_Variant_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_PrePush_B78C6D19499C91674E07B0ADD5D3ABB0;
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_BndEvt__WBP_ItemInventoryScreen_NewButton_Variant_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature;
 
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.PrePush_B62CADED4AA4FB28ACE0E0995E3E65DE
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.BndEvt__WBP_UI_ItemInventoryScreen_NEW_ListView_K2Node_ComponentBoundEvent_3_OnListItemSelectionChangedDynamic__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_ItemInventoryScreen_C_BndEvt__WBP_UI_ItemInventoryScreen_NEW_ListView_K2Node_ComponentBoundEvent_3_OnListItemSelectionChangedDynamic__DelegateSignature final
+{
+public:
+	class UObject*                                Item;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsSelected;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_BndEvt__WBP_UI_ItemInventoryScreen_NEW_ListView_K2Node_ComponentBoundEvent_3_OnListItemSelectionChangedDynamic__DelegateSignature;
+
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.BndEvt__WBP_UI_ItemInventoryScreen_NEW_Navbar_SubCategory_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_ItemInventoryScreen_C_BndEvt__WBP_UI_ItemInventoryScreen_NEW_Navbar_SubCategory_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature final
+{
+public:
+	int32                                         NewIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_BndEvt__WBP_UI_ItemInventoryScreen_NEW_Navbar_SubCategory_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature;
+
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.BP_OnItemDoubleClicked
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_ItemInventoryScreen_C_PrePush_B62CADED4AA4FB28ACE0E0995E3E65DE final
+struct WBP_ItemInventoryScreen_C_BP_OnItemDoubleClicked final
 {
 public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Item;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_PrePush_B62CADED4AA4FB28ACE0E0995E3E65DE;
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_BP_OnItemDoubleClicked;
 
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.PrePush_847D919B458E1CF0F906F39561A0364C
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ItemInventoryScreen_C_PrePush_847D919B458E1CF0F906F39561A0364C final
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.CategoryFromIndex
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_ItemInventoryScreen_C_CategoryFromIndex final
 {
 public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInventoryCategoryData*              CategoryData;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewParam;                                          // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           Tag;                                               // 0x000C(0x000C)(Parm, OutParm, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTag                           CallFunc_NewToOldWeaponTagTranslation_WeaponTag;   // 0x001C(0x000C)(NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_PrePush_847D919B458E1CF0F906F39561A0364C;
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_CategoryFromIndex;
 
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.PrePush_0BF9C64F40F297435FEF5984772AF24E
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ItemInventoryScreen_C_PrePush_0BF9C64F40F297435FEF5984772AF24E final
-{
-public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_PrePush_0BF9C64F40F297435FEF5984772AF24E;
-
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.PostPush_EB4572904A1FF447AB18B0B97620150E
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ItemInventoryScreen_C_PostPush_EB4572904A1FF447AB18B0B97620150E final
-{
-public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_PostPush_EB4572904A1FF447AB18B0B97620150E;
-
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.PostPush_E95DE80C48FA87786EF5048D085FED4C
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ItemInventoryScreen_C_PostPush_E95DE80C48FA87786EF5048D085FED4C final
-{
-public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_PostPush_E95DE80C48FA87786EF5048D085FED4C;
-
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.PostPush_BF69DD8640C11BCDD33B9684CE63FBA7
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ItemInventoryScreen_C_PostPush_BF69DD8640C11BCDD33B9684CE63FBA7 final
-{
-public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_PostPush_BF69DD8640C11BCDD33B9684CE63FBA7;
-
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.PostPush_B78C6D19499C91674E07B0ADD5D3ABB0
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ItemInventoryScreen_C_PostPush_B78C6D19499C91674E07B0ADD5D3ABB0 final
-{
-public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_PostPush_B78C6D19499C91674E07B0ADD5D3ABB0;
-
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.PostPush_B62CADED4AA4FB28ACE0E0995E3E65DE
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ItemInventoryScreen_C_PostPush_B62CADED4AA4FB28ACE0E0995E3E65DE final
-{
-public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_PostPush_B62CADED4AA4FB28ACE0E0995E3E65DE;
-
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.PostPush_847D919B458E1CF0F906F39561A0364C
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ItemInventoryScreen_C_PostPush_847D919B458E1CF0F906F39561A0364C final
-{
-public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_PostPush_847D919B458E1CF0F906F39561A0364C;
-
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.PostPush_0BF9C64F40F297435FEF5984772AF24E
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ItemInventoryScreen_C_PostPush_0BF9C64F40F297435FEF5984772AF24E final
-{
-public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_PostPush_0BF9C64F40F297435FEF5984772AF24E;
-
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.OnGainedStackFocused
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.CustomEvent_1
 // 0x000C (0x000C - 0x0000)
-struct WBP_ItemInventoryScreen_C_OnGainedStackFocused final
+struct WBP_ItemInventoryScreen_C_CustomEvent_1 final
 {
 public:
-	class FName                                   PreviousValue_OnGainedStackFocused;                // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_OnGainedStackFocused;
-
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.OldToNewWeaponTagTranslation
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_ItemInventoryScreen_C_OldToNewWeaponTagTranslation final
-{
-public:
-	struct FGameplayTag                           WeaponTag;                                         // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           MetaWeaponTag;                                     // 0x000C(0x000C)(Parm, OutParm, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           NewLocalVar_0;                                     // 0x0018(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
-	bool                                          GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess;   // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess_1; // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0026(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_OldToNewWeaponTagTranslation;
-
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.NewToOldWeaponTagTranslation
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_ItemInventoryScreen_C_NewToOldWeaponTagTranslation final
-{
-public:
-	struct FGameplayTag                           MetaWeaponTag;                                     // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           WeaponTag;                                         // 0x000C(0x000C)(Parm, OutParm, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           NewLocalVar_0;                                     // 0x0018(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
-	bool                                          GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess;   // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_NewToOldWeaponTagTranslation;
-
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.IndexOfCategory
-// 0x0070 (0x0070 - 0x0000)
-struct WBP_ItemInventoryScreen_C_IndexOfCategory final
-{
-public:
-	class USBZInventoryCategoryData*              CategoryData;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           SubCategoryTag;                                    // 0x0008(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-	int32                                         Index_0;                                           // 0x0014(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           NewLocalVar_0;                                     // 0x0018(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZInventorySubCategory               CallFunc_Array_Get_Item;                           // 0x0030(0x0020)()
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTag                           CallFunc_OldToNewWeaponTagTranslation_MetaWeaponTag; // 0x005C(0x000C)(NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_GameplayTag_ReturnValue;       // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_IndexOfCategory;
-
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.GoToVendor
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ItemInventoryScreen_C_GoToVendor final
-{
-public:
-	class USBZInventoryBaseData*                  ItemData;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_GoToVendor;
-
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.Go To Crimebond
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ItemInventoryScreen_C_Go_To_Crimebond final
-{
-public:
-	class USBZInventoryBaseData*                  ItemData;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_Go_To_Crimebond;
-
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.GetWeaponFamilyTag
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_ItemInventoryScreen_C_GetWeaponFamilyTag final
-{
-public:
-	class USBZInventoryItemDecorator*             ItemDeco;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           Family;                                            // 0x0008(0x000C)(Parm, OutParm, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZBaseWeaponData*                     K2Node_DynamicCast_AsSBZBase_Weapon_Data;          // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZWeaponPresetConfigData*             K2Node_DynamicCast_AsSBZWeapon_Preset_Config_Data; // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZBaseWeaponData*                     K2Node_DynamicCast_AsSBZBase_Weapon_Data_1;        // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_GetWeaponFamilyTag;
-
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.GetSelectedItem
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_ItemInventoryScreen_C_GetSelectedItem final
-{
-public:
-	class UObject*                                ReturnValue1;                                      // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UObject*                                CallFunc_BP_GetSelectedItem_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetIndexForItem_ReturnValue;              // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_GetSelectedItem;
-
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.FetchCategoryTexts
-// 0x0070 (0x0070 - 0x0000)
-struct WBP_ItemInventoryScreen_C_FetchCategoryTexts final
-{
-public:
-	class USBZInventoryCategoryData*              CategoryData;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class FText>                           CategoryTexts;                                     // 0x0008(0x0010)(Parm, OutParm)
-	TArray<class FText>                           L_NavigationButtonNames;                           // 0x0018(0x0010)(Edit, BlueprintVisible)
-	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZInventorySubCategory               CallFunc_Array_Get_Item;                           // 0x0040(0x0020)()
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_61[0x3];                                       // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_FetchCategoryTexts;
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_CustomEvent_1;
 
 // Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.ExecuteUbergraph_WBP_ItemInventoryScreen
 // 0x0C90 (0x0C90 - 0x0000)
@@ -610,92 +429,273 @@ public:
 };
 DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_ExecuteUbergraph_WBP_ItemInventoryScreen;
 
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.CustomEvent_1
-// 0x000C (0x000C - 0x0000)
-struct WBP_ItemInventoryScreen_C_CustomEvent_1 final
-{
-public:
-	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_CustomEvent_1;
-
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.CategoryFromIndex
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_ItemInventoryScreen_C_CategoryFromIndex final
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.FetchCategoryTexts
+// 0x0070 (0x0070 - 0x0000)
+struct WBP_ItemInventoryScreen_C_FetchCategoryTexts final
 {
 public:
 	class USBZInventoryCategoryData*              CategoryData;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         NewParam;                                          // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           Tag;                                               // 0x000C(0x000C)(Parm, OutParm, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGameplayTag                           CallFunc_NewToOldWeaponTagTranslation_WeaponTag;   // 0x001C(0x000C)(NoDestructor, HasGetValueTypeHash)
+	TArray<class FText>                           CategoryTexts;                                     // 0x0008(0x0010)(Parm, OutParm)
+	TArray<class FText>                           L_NavigationButtonNames;                           // 0x0018(0x0010)(Edit, BlueprintVisible)
+	bool                                          Temp_bool_True_if_break_was_hit_Variable;          // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZInventorySubCategory               CallFunc_Array_Get_Item;                           // 0x0040(0x0020)()
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_61[0x3];                                       // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_CategoryFromIndex;
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_FetchCategoryTexts;
 
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.BP_OnItemDoubleClicked
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.GetSelectedItem
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_ItemInventoryScreen_C_GetSelectedItem final
+{
+public:
+	class UObject*                                ReturnValue1;                                      // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UObject*                                CallFunc_BP_GetSelectedItem_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetIndexForItem_ReturnValue;              // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_GetSelectedItem;
+
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.GetWeaponFamilyTag
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_ItemInventoryScreen_C_GetWeaponFamilyTag final
+{
+public:
+	class USBZInventoryItemDecorator*             ItemDeco;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           Family;                                            // 0x0008(0x000C)(Parm, OutParm, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZBaseWeaponData*                     K2Node_DynamicCast_AsSBZBase_Weapon_Data;          // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZWeaponPresetConfigData*             K2Node_DynamicCast_AsSBZWeapon_Preset_Config_Data; // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZBaseWeaponData*                     K2Node_DynamicCast_AsSBZBase_Weapon_Data_1;        // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_GetWeaponFamilyTag;
+
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.Go To Crimebond
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_ItemInventoryScreen_C_BP_OnItemDoubleClicked final
+struct WBP_ItemInventoryScreen_C_Go_To_Crimebond final
 {
 public:
-	class UObject*                                Item;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInventoryBaseData*                  ItemData;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_BP_OnItemDoubleClicked;
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_Go_To_Crimebond;
 
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.BndEvt__WBP_UI_ItemInventoryScreen_NEW_Navbar_SubCategory_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_ItemInventoryScreen_C_BndEvt__WBP_UI_ItemInventoryScreen_NEW_Navbar_SubCategory_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature final
-{
-public:
-	int32                                         NewIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_BndEvt__WBP_UI_ItemInventoryScreen_NEW_Navbar_SubCategory_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature;
-
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.BndEvt__WBP_UI_ItemInventoryScreen_NEW_ListView_K2Node_ComponentBoundEvent_3_OnListItemSelectionChangedDynamic__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_ItemInventoryScreen_C_BndEvt__WBP_UI_ItemInventoryScreen_NEW_ListView_K2Node_ComponentBoundEvent_3_OnListItemSelectionChangedDynamic__DelegateSignature final
-{
-public:
-	class UObject*                                Item;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsSelected;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_BndEvt__WBP_UI_ItemInventoryScreen_NEW_ListView_K2Node_ComponentBoundEvent_3_OnListItemSelectionChangedDynamic__DelegateSignature;
-
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.BndEvt__WBP_ItemInventoryScreen_NewButton_Variant_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.GoToVendor
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_ItemInventoryScreen_C_BndEvt__WBP_ItemInventoryScreen_NewButton_Variant_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature final
+struct WBP_ItemInventoryScreen_C_GoToVendor final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInventoryBaseData*                  ItemData;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_BndEvt__WBP_ItemInventoryScreen_NewButton_Variant_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_GoToVendor;
 
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.BndEvt__WBP_ItemInventoryScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ItemInventoryScreen_C_BndEvt__WBP_ItemInventoryScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature final
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.IndexOfCategory
+// 0x0070 (0x0070 - 0x0000)
+struct WBP_ItemInventoryScreen_C_IndexOfCategory final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInventoryCategoryData*              CategoryData;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           SubCategoryTag;                                    // 0x0008(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	int32                                         Index_0;                                           // 0x0014(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           NewLocalVar_0;                                     // 0x0018(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZInventorySubCategory               CallFunc_Array_Get_Item;                           // 0x0030(0x0020)()
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_59[0x3];                                       // 0x0059(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTag                           CallFunc_OldToNewWeaponTagTranslation_MetaWeaponTag; // 0x005C(0x000C)(NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_GameplayTag_ReturnValue;       // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_BndEvt__WBP_ItemInventoryScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_13_OnMenuButtonSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_IndexOfCategory;
 
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.BndEvt__WBP_ItemInventoryScreen_NewButton_Customize_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ItemInventoryScreen_C_BndEvt__WBP_ItemInventoryScreen_NewButton_Customize_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature final
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.NewToOldWeaponTagTranslation
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_ItemInventoryScreen_C_NewToOldWeaponTagTranslation final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           MetaWeaponTag;                                     // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           WeaponTag;                                         // 0x000C(0x000C)(Parm, OutParm, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           NewLocalVar_0;                                     // 0x0018(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
+	bool                                          GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess;   // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_BndEvt__WBP_ItemInventoryScreen_NewButton_Customize_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_NewToOldWeaponTagTranslation;
 
-// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.BndEvt__WBP_ItemInventoryScreen_NewButton_Cosmetics_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ItemInventoryScreen_C_BndEvt__WBP_ItemInventoryScreen_NewButton_Cosmetics_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature final
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.OldToNewWeaponTagTranslation
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_ItemInventoryScreen_C_OldToNewWeaponTagTranslation final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           WeaponTag;                                         // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           MetaWeaponTag;                                     // 0x000C(0x000C)(Parm, OutParm, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           NewLocalVar_0;                                     // 0x0018(0x000C)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
+	bool                                          GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess;   // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess_1; // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0026(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_BndEvt__WBP_ItemInventoryScreen_NewButton_Cosmetics_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_OldToNewWeaponTagTranslation;
+
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.OnGainedStackFocused
+// 0x000C (0x000C - 0x0000)
+struct WBP_ItemInventoryScreen_C_OnGainedStackFocused final
+{
+public:
+	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_OnGainedStackFocused;
+
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.PostPush_0BF9C64F40F297435FEF5984772AF24E
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ItemInventoryScreen_C_PostPush_0BF9C64F40F297435FEF5984772AF24E final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_PostPush_0BF9C64F40F297435FEF5984772AF24E;
+
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.PostPush_847D919B458E1CF0F906F39561A0364C
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ItemInventoryScreen_C_PostPush_847D919B458E1CF0F906F39561A0364C final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_PostPush_847D919B458E1CF0F906F39561A0364C;
+
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.PostPush_B62CADED4AA4FB28ACE0E0995E3E65DE
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ItemInventoryScreen_C_PostPush_B62CADED4AA4FB28ACE0E0995E3E65DE final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_PostPush_B62CADED4AA4FB28ACE0E0995E3E65DE;
+
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.PostPush_B78C6D19499C91674E07B0ADD5D3ABB0
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ItemInventoryScreen_C_PostPush_B78C6D19499C91674E07B0ADD5D3ABB0 final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_PostPush_B78C6D19499C91674E07B0ADD5D3ABB0;
+
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.PostPush_BF69DD8640C11BCDD33B9684CE63FBA7
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ItemInventoryScreen_C_PostPush_BF69DD8640C11BCDD33B9684CE63FBA7 final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_PostPush_BF69DD8640C11BCDD33B9684CE63FBA7;
+
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.PostPush_E95DE80C48FA87786EF5048D085FED4C
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ItemInventoryScreen_C_PostPush_E95DE80C48FA87786EF5048D085FED4C final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_PostPush_E95DE80C48FA87786EF5048D085FED4C;
+
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.PostPush_EB4572904A1FF447AB18B0B97620150E
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ItemInventoryScreen_C_PostPush_EB4572904A1FF447AB18B0B97620150E final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_PostPush_EB4572904A1FF447AB18B0B97620150E;
+
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.PrePush_0BF9C64F40F297435FEF5984772AF24E
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ItemInventoryScreen_C_PrePush_0BF9C64F40F297435FEF5984772AF24E final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_PrePush_0BF9C64F40F297435FEF5984772AF24E;
+
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.PrePush_847D919B458E1CF0F906F39561A0364C
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ItemInventoryScreen_C_PrePush_847D919B458E1CF0F906F39561A0364C final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_PrePush_847D919B458E1CF0F906F39561A0364C;
+
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.PrePush_B62CADED4AA4FB28ACE0E0995E3E65DE
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ItemInventoryScreen_C_PrePush_B62CADED4AA4FB28ACE0E0995E3E65DE final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_PrePush_B62CADED4AA4FB28ACE0E0995E3E65DE;
+
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.PrePush_B78C6D19499C91674E07B0ADD5D3ABB0
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ItemInventoryScreen_C_PrePush_B78C6D19499C91674E07B0ADD5D3ABB0 final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_PrePush_B78C6D19499C91674E07B0ADD5D3ABB0;
+
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.PrePush_BF69DD8640C11BCDD33B9684CE63FBA7
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ItemInventoryScreen_C_PrePush_BF69DD8640C11BCDD33B9684CE63FBA7 final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_PrePush_BF69DD8640C11BCDD33B9684CE63FBA7;
+
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.PrePush_E95DE80C48FA87786EF5048D085FED4C
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ItemInventoryScreen_C_PrePush_E95DE80C48FA87786EF5048D085FED4C final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_PrePush_E95DE80C48FA87786EF5048D085FED4C;
+
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.PrePush_EB4572904A1FF447AB18B0B97620150E
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ItemInventoryScreen_C_PrePush_EB4572904A1FF447AB18B0B97620150E final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_PrePush_EB4572904A1FF447AB18B0B97620150E;
+
+// Function WBP_ItemInventoryScreen.WBP_ItemInventoryScreen_C.UpdateSelectedItem
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_ItemInventoryScreen_C_UpdateSelectedItem final
+{
+public:
+	bool                                          PrioritizeEquipped;                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ItemInventoryScreen_C_UpdateSelectedItem;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

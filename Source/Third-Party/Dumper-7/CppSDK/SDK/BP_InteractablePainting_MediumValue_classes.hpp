@@ -28,11 +28,11 @@ public:
 	bool                                          IsSecret;                                          // 0x03F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_InteractablePainting_MediumValue_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_InteractablePainting_MediumValue(int32 EntryPoint);
-	void OnRep_RenderOutlines();
-	void SetAsSecret(bool IsSecret_0);
 	void UserConstructionScript();
+	void SetAsSecret(bool IsSecret);
+	void OnRep_RenderOutlines();
+	void ExecuteUbergraph_BP_InteractablePainting_MediumValue(int32 EntryPoint);
+	void BndEvt__BP_InteractablePainting_MediumValue_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<ABP_InteractablePainting_MediumValue_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_InteractablePainting_MediumValue_C;
 
 SDK_NAMESPACE_END

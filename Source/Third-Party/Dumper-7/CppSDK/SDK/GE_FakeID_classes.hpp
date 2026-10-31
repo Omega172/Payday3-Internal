@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_FakeID_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_FakeID_C;
 
 SDK_NAMESPACE_END

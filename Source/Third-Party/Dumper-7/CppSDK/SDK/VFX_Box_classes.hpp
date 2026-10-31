@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AVFX_Box_C>();
 	}
 };
+DUMPER7_ASSERTS_AVFX_Box_C;
 
 SDK_NAMESPACE_END

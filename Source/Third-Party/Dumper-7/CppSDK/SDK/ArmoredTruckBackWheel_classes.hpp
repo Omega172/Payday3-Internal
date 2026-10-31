@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UArmoredTruckBackWheel_C>();
 	}
 };
+DUMPER7_ASSERTS_UArmoredTruckBackWheel_C;
 
 SDK_NAMESPACE_END

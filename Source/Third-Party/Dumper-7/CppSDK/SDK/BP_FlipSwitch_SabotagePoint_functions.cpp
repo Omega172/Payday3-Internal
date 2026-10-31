@@ -16,23 +16,55 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_FlipSwitch_SabotagePoint.BP_FlipSwitch_SabotagePoint_C.BndEvt__BP_ElevatorDoor_ControlPanel_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// const class USBZBaseInteractableComponent*InteractableComponent_0                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_FlipSwitch_SabotagePoint.BP_FlipSwitch_SabotagePoint_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_FlipSwitch_SabotagePoint_C::BndEvt__BP_ElevatorDoor_ControlPanel_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent_0, bool bInNewState)
+void ABP_FlipSwitch_SabotagePoint_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FlipSwitch_SabotagePoint_C", "BndEvt__BP_ElevatorDoor_ControlPanel_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_FlipSwitch_SabotagePoint_C_BndEvt__BP_ElevatorDoor_ControlPanel_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
 
-	Parms.InteractableComponent_0 = InteractableComponent_0;
-	Parms.bInNewState = bInNewState;
+// Function BP_FlipSwitch_SabotagePoint.BP_FlipSwitch_SabotagePoint_C.PlayTurnOn
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void ABP_FlipSwitch_SabotagePoint_C::PlayTurnOn()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayTurnOn", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_FlipSwitch_SabotagePoint.BP_FlipSwitch_SabotagePoint_C.PlayTurnOff
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void ABP_FlipSwitch_SabotagePoint_C::PlayTurnOff()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayTurnOff", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_FlipSwitch_SabotagePoint.BP_FlipSwitch_SabotagePoint_C.ExecuteUbergraph_BP_FlipSwitch_SabotagePoint
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_FlipSwitch_SabotagePoint_C::ExecuteUbergraph_BP_FlipSwitch_SabotagePoint(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_FlipSwitch_SabotagePoint_C", "ExecuteUbergraph_BP_FlipSwitch_SabotagePoint", FuncInfo);
+
+	Params::BP_FlipSwitch_SabotagePoint_C_ExecuteUbergraph_BP_FlipSwitch_SabotagePoint Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -47,10 +79,8 @@ void ABP_FlipSwitch_SabotagePoint_C::BndEvt__BP_ElevatorDoor_ControlPanel_Intera
 
 void ABP_FlipSwitch_SabotagePoint_C::BndEvt__BP_FlipSwitch_SabotagePoint_initial_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FlipSwitch_SabotagePoint_C", "BndEvt__BP_FlipSwitch_SabotagePoint_initial_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_FlipSwitch_SabotagePoint_initial_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
 
 	Params::BP_FlipSwitch_SabotagePoint_C_BndEvt__BP_FlipSwitch_SabotagePoint_initial_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
@@ -62,65 +92,23 @@ void ABP_FlipSwitch_SabotagePoint_C::BndEvt__BP_FlipSwitch_SabotagePoint_initial
 }
 
 
-// Function BP_FlipSwitch_SabotagePoint.BP_FlipSwitch_SabotagePoint_C.ExecuteUbergraph_BP_FlipSwitch_SabotagePoint
-// (Final, UbergraphFunction)
+// Function BP_FlipSwitch_SabotagePoint.BP_FlipSwitch_SabotagePoint_C.BndEvt__BP_ElevatorDoor_ControlPanel_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZBaseInteractableComponent*InteractableComponent                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_FlipSwitch_SabotagePoint_C::ExecuteUbergraph_BP_FlipSwitch_SabotagePoint(int32 EntryPoint)
+void ABP_FlipSwitch_SabotagePoint_C::BndEvt__BP_ElevatorDoor_ControlPanel_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ElevatorDoor_ControlPanel_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FlipSwitch_SabotagePoint_C", "ExecuteUbergraph_BP_FlipSwitch_SabotagePoint");
+	Params::BP_FlipSwitch_SabotagePoint_C_BndEvt__BP_ElevatorDoor_ControlPanel_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
 
-	Params::BP_FlipSwitch_SabotagePoint_C_ExecuteUbergraph_BP_FlipSwitch_SabotagePoint Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.InteractableComponent = InteractableComponent;
+	Parms.bInNewState = bInNewState;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_FlipSwitch_SabotagePoint.BP_FlipSwitch_SabotagePoint_C.PlayTurnOff
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void ABP_FlipSwitch_SabotagePoint_C::PlayTurnOff()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FlipSwitch_SabotagePoint_C", "PlayTurnOff");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_FlipSwitch_SabotagePoint.BP_FlipSwitch_SabotagePoint_C.PlayTurnOn
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void ABP_FlipSwitch_SabotagePoint_C::PlayTurnOn()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FlipSwitch_SabotagePoint_C", "PlayTurnOn");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_FlipSwitch_SabotagePoint.BP_FlipSwitch_SabotagePoint_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_FlipSwitch_SabotagePoint_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FlipSwitch_SabotagePoint_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

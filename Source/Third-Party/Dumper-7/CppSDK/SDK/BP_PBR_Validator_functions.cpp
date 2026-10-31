@@ -16,15 +16,37 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_PBR_Validator.BP_PBR_Validator_C.AlbedoChecker
+// Function BP_PBR_Validator.BP_PBR_Validator_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_PBR_Validator_C::UserConstructionScript()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_PBR_Validator.BP_PBR_Validator_C.RoughnessChecker
 // (BlueprintCallable, BlueprintEvent)
 
-void ABP_PBR_Validator_C::AlbedoChecker()
+void ABP_PBR_Validator_C::RoughnessChecker()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RoughnessChecker", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PBR_Validator_C", "AlbedoChecker");
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_PBR_Validator.BP_PBR_Validator_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_PBR_Validator_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +59,8 @@ void ABP_PBR_Validator_C::AlbedoChecker()
 
 void ABP_PBR_Validator_C::ExecuteUbergraph_BP_PBR_Validator(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PBR_Validator_C", "ExecuteUbergraph_BP_PBR_Validator");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_PBR_Validator_C", "ExecuteUbergraph_BP_PBR_Validator", FuncInfo);
 
 	Params::BP_PBR_Validator_C_ExecuteUbergraph_BP_PBR_Validator Parms{};
 
@@ -50,43 +70,13 @@ void ABP_PBR_Validator_C::ExecuteUbergraph_BP_PBR_Validator(int32 EntryPoint)
 }
 
 
-// Function BP_PBR_Validator.BP_PBR_Validator_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_PBR_Validator_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PBR_Validator_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_PBR_Validator.BP_PBR_Validator_C.RoughnessChecker
+// Function BP_PBR_Validator.BP_PBR_Validator_C.AlbedoChecker
 // (BlueprintCallable, BlueprintEvent)
 
-void ABP_PBR_Validator_C::RoughnessChecker()
+void ABP_PBR_Validator_C::AlbedoChecker()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PBR_Validator_C", "RoughnessChecker");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_PBR_Validator.BP_PBR_Validator_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_PBR_Validator_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PBR_Validator_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AlbedoChecker", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

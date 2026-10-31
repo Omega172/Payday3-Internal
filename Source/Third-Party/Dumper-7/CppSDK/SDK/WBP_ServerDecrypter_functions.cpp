@@ -16,41 +16,21 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_ServerDecrypter.WBP_ServerDecrypter_C.setMachineRunning
+// Function WBP_ServerDecrypter.WBP_ServerDecrypter_C.setText
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      top                                                    (BlueprintVisible, BlueprintReadOnly, Parm)
+// const class FText&                      bottom                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_ServerDecrypter_C::setMachineRunning(bool State)
+void UWBP_ServerDecrypter_C::setText(const class FText& top, const class FText& bottom)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setText", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerDecrypter_C", "setMachineRunning");
+	Params::WBP_ServerDecrypter_C_setText Parms{};
 
-	Params::WBP_ServerDecrypter_C_setMachineRunning Parms{};
-
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerDecrypter.WBP_ServerDecrypter_C.setProgress
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  progress                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ServerDecrypter_C::setProgress(double progress)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerDecrypter_C", "setProgress");
-
-	Params::WBP_ServerDecrypter_C_setProgress Parms{};
-
-	Parms.progress = progress;
+	Parms.top = std::move(top);
+	Parms.bottom = std::move(bottom);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -63,10 +43,8 @@ void UWBP_ServerDecrypter_C::setProgress(double progress)
 
 void UWBP_ServerDecrypter_C::setProgressbarVisibility(bool visible)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerDecrypter_C", "setProgressbarVisibility");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setProgressbarVisibility", FnName));
 
 	Params::WBP_ServerDecrypter_C_setProgressbarVisibility Parms{};
 
@@ -76,23 +54,37 @@ void UWBP_ServerDecrypter_C::setProgressbarVisibility(bool visible)
 }
 
 
-// Function WBP_ServerDecrypter.WBP_ServerDecrypter_C.setText
+// Function WBP_ServerDecrypter.WBP_ServerDecrypter_C.setProgress
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FText&                      top                                                    (BlueprintVisible, BlueprintReadOnly, Parm)
-// const class FText&                      bottom                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
+// double                                  progress                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerDecrypter_C::setText(const class FText& top, const class FText& bottom)
+void UWBP_ServerDecrypter_C::setProgress(double progress)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setProgress", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerDecrypter_C", "setText");
+	Params::WBP_ServerDecrypter_C_setProgress Parms{};
 
-	Params::WBP_ServerDecrypter_C_setText Parms{};
+	Parms.progress = progress;
 
-	Parms.top = std::move(top);
-	Parms.bottom = std::move(bottom);
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerDecrypter.WBP_ServerDecrypter_C.setMachineRunning
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerDecrypter_C::setMachineRunning(bool State)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setMachineRunning", FnName));
+
+	Params::WBP_ServerDecrypter_C_setMachineRunning Parms{};
+
+	Parms.State = State;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

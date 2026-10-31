@@ -17,36 +17,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_CocainePile_01.BP_CocainePile_01_C.BndEvt__BP_CocainePile_01_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_CocainePile_01_C_BndEvt__BP_CocainePile_01_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_CocainePile_01.BP_CocainePile_01_C.BndEvt__BP_CocainePile_01_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_3_SBZCosmeticDestructionComponenteSignature__DelegateSignature
-// 0x0068 (0x0068 - 0x0000)
-struct BP_CocainePile_01_C_BndEvt__BP_CocainePile_01_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_3_SBZCosmeticDestructionComponenteSignature__DelegateSignature final
-{
-public:
-	ESBZCosmeticDestructionType                   Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZCosmeticDestructionContext         HitContext;                                        // 0x0008(0x0060)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
-};
-
-// Function BP_CocainePile_01.BP_CocainePile_01_C.BndEvt__BP_CocainePile_01_SBZIntState_K2Node_ComponentBoundEvent_0_SBZIntStateChangedSignature__DelegateSignature
-// 0x000C (0x000C - 0x0000)
-struct BP_CocainePile_01_C_BndEvt__BP_CocainePile_01_SBZIntState_K2Node_ComponentBoundEvent_0_SBZIntStateChangedSignature__DelegateSignature final
-{
-public:
-	int32                                         OldState;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         NewState;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_CocainePile_01.BP_CocainePile_01_C.ExecuteUbergraph_BP_CocainePile_01
 // 0x00E8 (0x00E8 - 0x0000)
 struct BP_CocainePile_01_C_ExecuteUbergraph_BP_CocainePile_01 final
@@ -76,6 +46,40 @@ public:
 	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x00E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_CocainePile_01_C_ExecuteUbergraph_BP_CocainePile_01;
+
+// Function BP_CocainePile_01.BP_CocainePile_01_C.BndEvt__BP_CocainePile_01_SBZIntState_K2Node_ComponentBoundEvent_0_SBZIntStateChangedSignature__DelegateSignature
+// 0x000C (0x000C - 0x0000)
+struct BP_CocainePile_01_C_BndEvt__BP_CocainePile_01_SBZIntState_K2Node_ComponentBoundEvent_0_SBZIntStateChangedSignature__DelegateSignature final
+{
+public:
+	int32                                         OldState;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewState;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_CocainePile_01_C_BndEvt__BP_CocainePile_01_SBZIntState_K2Node_ComponentBoundEvent_0_SBZIntStateChangedSignature__DelegateSignature;
+
+// Function BP_CocainePile_01.BP_CocainePile_01_C.BndEvt__BP_CocainePile_01_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_3_SBZCosmeticDestructionComponenteSignature__DelegateSignature
+// 0x0068 (0x0068 - 0x0000)
+struct BP_CocainePile_01_C_BndEvt__BP_CocainePile_01_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_3_SBZCosmeticDestructionComponenteSignature__DelegateSignature final
+{
+public:
+	ESBZCosmeticDestructionType                   Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZCosmeticDestructionContext         HitContext;                                        // 0x0008(0x0060)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+};
+DUMPER7_ASSERTS_BP_CocainePile_01_C_BndEvt__BP_CocainePile_01_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_3_SBZCosmeticDestructionComponenteSignature__DelegateSignature;
+
+// Function BP_CocainePile_01.BP_CocainePile_01_C.BndEvt__BP_CocainePile_01_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_CocainePile_01_C_BndEvt__BP_CocainePile_01_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_CocainePile_01_C_BndEvt__BP_CocainePile_01_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UBP_SquadOrder_Sabotage_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_SquadOrder_Sabotage_C;
 
 SDK_NAMESPACE_END

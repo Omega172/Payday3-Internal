@@ -24,6 +24,7 @@ public:
 	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors;                 // 0x0008(0x0010)(ReferenceParm)
 	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors;            // 0x0018(0x0010)(ReferenceParm)
 };
+DUMPER7_ASSERTS_E_Chus_INT_F1_Hallway_Wall_C_ExecuteUbergraph_E_Chus_INT_F1_Hallway_Wall;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

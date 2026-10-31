@@ -14,6 +14,16 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_FOR_SewerLid_01.BP_FOR_SewerLid_01_C.setOpened
+// 0x0002 (0x0002 - 0x0000)
+struct BP_FOR_SewerLid_01_C_setOpened final
+{
+public:
+	bool                                          opened;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          animate;                                           // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FOR_SewerLid_01_C_setOpened;
+
 // Function BP_FOR_SewerLid_01.BP_FOR_SewerLid_01_C.ExecuteUbergraph_BP_FOR_SewerLid_01
 // 0x0008 (0x0008 - 0x0000)
 struct BP_FOR_SewerLid_01_C_ExecuteUbergraph_BP_FOR_SewerLid_01 final
@@ -23,15 +33,7 @@ public:
 	bool                                          K2Node_CustomEvent_opened;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_animate;                        // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_FOR_SewerLid_01.BP_FOR_SewerLid_01_C.setOpened
-// 0x0002 (0x0002 - 0x0000)
-struct BP_FOR_SewerLid_01_C_setOpened final
-{
-public:
-	bool                                          opened;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          animate;                                           // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_FOR_SewerLid_01_C_ExecuteUbergraph_BP_FOR_SewerLid_01;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -25,8 +25,8 @@ public:
 	class ASBZDestroyGroup*                       SBZDestroyGroup_ElevatorShaft_2_ExecuteUbergraph_E_Chus_INT_F1_Hallway_Wall_RefProperty; // 0x03D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ElevatorShaftPP();
 	void ExecuteUbergraph_E_Chus_INT_F1_Hallway_Wall(int32 EntryPoint);
+	void ElevatorShaftPP();
 
 public:
 	static class UClass* StaticClass()
@@ -42,5 +42,6 @@ public:
 		return GetDefaultObjImpl<AE_Chus_INT_F1_Hallway_Wall_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_Chus_INT_F1_Hallway_Wall_C;
 
 SDK_NAMESPACE_END

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Starbreeze_classes.hpp"
 #include "Enum_LampStages_structs.hpp"
+#include "Starbreeze_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -28,7 +28,7 @@ public:
 	Enum_LampStages                               States;                                            // 0x0390(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetStateFunction(Enum_LampStages State_0);
+	void SetStateFunction(Enum_LampStages State);
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<ABUST_BPL_Hallogen_Pannel_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABUST_BPL_Hallogen_Pannel_01_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_ParkingLot_SecurityPost_01_Glass_04_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ParkingLot_SecurityPost_01_Glass_04_C;
 
 SDK_NAMESPACE_END

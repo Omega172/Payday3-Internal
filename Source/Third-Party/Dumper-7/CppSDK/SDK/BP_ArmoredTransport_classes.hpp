@@ -18,35 +18,35 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_ArmoredTransport.BP_ArmoredTransport_C
-// 0x0060 (0x0AA0 - 0x0A40)
+// 0x0060 (0x0BA0 - 0x0B40)
 class ABP_ArmoredTransport_C final : public ASBZSabotagableVehicle
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A40(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBoxComponent*                          Box;                                               // 0x0A48(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAkComponent*                           Ak;                                                // 0x0A50(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   BagBlocker;                                        // 0x0A58(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      Niagara_Escort;                                    // 0x0A60(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Connector;                                         // 0x0A68(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         EscortZoneTimeline_Time_4FF6FD4E4E8434986C720FBB955BE364; // 0x0A70(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            EscortZoneTimeline__Direction_4FF6FD4E4E8434986C720FBB955BE364; // 0x0A74(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A75[0x3];                                      // 0x0A75(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     EscortZoneTimeline;                                // 0x0A78(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class ABP_ArmoredTransport_underbelly_hatch_C* UnderBelly_Hatch_Reference;                       // 0x0A80(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
-	class ABP_armored_Transport_Wires_C*          Wire_Reference;                                    // 0x0A88(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
-	class ABP_Remote_steering_device_RPC_C*       Remote_steering_device;                            // 0x0A90(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
-	class USBZVehicleSplineFollowingComponent*    SplineFollowComp;                                  // 0x0A98(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0B40(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UBoxComponent*                          Box;                                               // 0x0B48(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAkComponent*                           Ak;                                                // 0x0B50(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   BagBlocker;                                        // 0x0B58(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      Niagara_Escort;                                    // 0x0B60(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Connector;                                         // 0x0B68(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         EscortZoneTimeline_Time_4FF6FD4E4E8434986C720FBB955BE364; // 0x0B70(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            EscortZoneTimeline__Direction_4FF6FD4E4E8434986C720FBB955BE364; // 0x0B74(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B75[0x3];                                      // 0x0B75(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     EscortZoneTimeline;                                // 0x0B78(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class ABP_ArmoredTransport_underbelly_hatch_C* UnderBelly_Hatch_Reference;                       // 0x0B80(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
+	class ABP_armored_Transport_Wires_C*          Wire_Reference;                                    // 0x0B88(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
+	class ABP_Remote_steering_device_RPC_C*       Remote_steering_device;                            // 0x0B90(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
+	class USBZVehicleSplineFollowingComponent*    SplineFollowComp;                                  // 0x0B98(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_ArmoredTransport_SplineFollowingComponent_K2Node_ComponentBoundEvent_2_SBZVehicleOnStarted__DelegateSignature();
-	void BP_OnEscortModeChanged(bool bEnabled, bool bDoCosmetics);
-	void BP_OnEscortSizePreplanningApplied();
-	void BP_OnPlayersInEscortChanged(const int32 PlayersEscorting);
-	void EscortZoneTimeline__FinishedFunc();
-	void EscortZoneTimeline__UpdateFunc();
-	void ExecuteUbergraph_BP_ArmoredTransport(int32 EntryPoint);
-	void Open_Rear_Doors();
 	void ReceiveBeginPlay();
+	void Open_Rear_Doors();
+	void ExecuteUbergraph_BP_ArmoredTransport(int32 EntryPoint);
+	void EscortZoneTimeline__UpdateFunc();
+	void EscortZoneTimeline__FinishedFunc();
+	void BP_OnPlayersInEscortChanged(const int32 PlayersEscorting_BP_OnPlayersInEscortChanged);
+	void BP_OnEscortSizePreplanningApplied();
+	void BP_OnEscortModeChanged(bool bEnabled_BP_OnEscortModeChanged, bool bDoCosmetics_BP_OnEscortModeChanged);
+	void BndEvt__BP_ArmoredTransport_SplineFollowingComponent_K2Node_ComponentBoundEvent_2_SBZVehicleOnStarted__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()
@@ -62,5 +62,6 @@ public:
 		return GetDefaultObjImpl<ABP_ArmoredTransport_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ArmoredTransport_C;
 
 SDK_NAMESPACE_END

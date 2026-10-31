@@ -19,406 +19,43 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function G_Chus_AI.G_Chus_AI_C.BasementMetalDetectorOffline
-// 0x0001 (0x0001 - 0x0000)
-struct G_Chus_AI_C_BasementMetalDetectorOffline final
+// Function G_Chus_AI.G_Chus_AI_C.ToggleEscortSpawns
+// 0x0004 (0x0004 - 0x0000)
+struct G_Chus_AI_C_ToggleEscortSpawns final
 {
 public:
-	bool                                          BasementPathOpenForEscort;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EscortPathInt;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Chus_AI_C_ToggleEscortSpawns;
 
-// Function G_Chus_AI.G_Chus_AI_C.BlueKeycardTaken
+// Function G_Chus_AI.G_Chus_AI_C.SecondaryBlueKeycardTaken
 // 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BlueKeycardTaken final
+struct G_Chus_AI_C_SecondaryBlueKeycardTaken final
 {
 public:
 	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Chus_AI_C_SecondaryBlueKeycardTaken;
 
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell2_K2Node_ActorBoundEvent_11_ActionStarted__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell2_K2Node_ActorBoundEvent_11_ActionStarted__DelegateSignature final
+// Function G_Chus_AI.G_Chus_AI_C.OnServerKeyItemTagAdded
+// 0x000C (0x000C - 0x0000)
+struct G_Chus_AI_C_OnServerKeyItemTagAdded final
 {
 public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           KeyTag_OnServerKeyItemTagAdded;                    // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Chus_AI_C_OnServerKeyItemTagAdded;
 
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell3_K2Node_ActorBoundEvent_13_ActionStarted__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell3_K2Node_ActorBoundEvent_13_ActionStarted__DelegateSignature final
-{
-public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell4_K2Node_ActorBoundEvent_14_ActionStarted__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell4_K2Node_ActorBoundEvent_14_ActionStarted__DelegateSignature final
-{
-public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell1_K2Node_ActorBoundEvent_4_ActionStarted__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell1_K2Node_ActorBoundEvent_4_ActionStarted__DelegateSignature final
-{
-public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell2_K2Node_ActorBoundEvent_7_ActionStarted__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell2_K2Node_ActorBoundEvent_7_ActionStarted__DelegateSignature final
-{
-public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell3_K2Node_ActorBoundEvent_8_ActionStarted__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell3_K2Node_ActorBoundEvent_8_ActionStarted__DelegateSignature final
-{
-public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell4_K2Node_ActorBoundEvent_9_ActionStarted__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell4_K2Node_ActorBoundEvent_9_ActionStarted__DelegateSignature final
-{
-public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonGaragewait2_K2Node_ActorBoundEvent_36_ActionStarted__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonGaragewait2_K2Node_ActorBoundEvent_36_ActionStarted__DelegateSignature final
-{
-public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonMetalDetector2_K2Node_ActorBoundEvent_24_ActionStarted__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonMetalDetector2_K2Node_ActorBoundEvent_24_ActionStarted__DelegateSignature final
-{
-public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonMetalDetector_K2Node_ActorBoundEvent_25_ActionStarted__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonMetalDetector_K2Node_ActorBoundEvent_25_ActionStarted__DelegateSignature final
-{
-public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell10_K2Node_ActorBoundEvent_3_ActionStarted__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell10_K2Node_ActorBoundEvent_3_ActionStarted__DelegateSignature final
-{
-public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell5_K2Node_ActorBoundEvent_10_ActionStarted__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell5_K2Node_ActorBoundEvent_10_ActionStarted__DelegateSignature final
-{
-public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell7_2_K2Node_ActorBoundEvent_0_ActionStarted__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell7_2_K2Node_ActorBoundEvent_0_ActionStarted__DelegateSignature final
-{
-public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell8_K2Node_ActorBoundEvent_1_ActionStarted__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell8_K2Node_ActorBoundEvent_1_ActionStarted__DelegateSignature final
-{
-public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell9_K2Node_ActorBoundEvent_2_ActionStarted__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell9_K2Node_ActorBoundEvent_2_ActionStarted__DelegateSignature final
-{
-public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_PowerUpDonutBox2_K2Node_ActorBoundEvent_15_SBZPowerUpChargesStateDelegate__DelegateSignature
+// Function G_Chus_AI.G_Chus_AI_C.HeistStateChanged
 // 0x0002 (0x0002 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_PowerUpDonutBox2_K2Node_ActorBoundEvent_15_SBZPowerUpChargesStateDelegate__DelegateSignature final
+struct G_Chus_AI_C_HeistStateChanged final
 {
 public:
-	ESBZPowerUpChargesState                       OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZPowerUpChargesState                       NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                OldHeistState_HeistStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CurrentHeistState_HeistStateChanged;               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZFilteredTriggerVolume_EscortStealthVolume1_K2Node_ActorBoundEvent_18_SBZFilterDesiredCountDynamicDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZFilteredTriggerVolume_EscortStealthVolume1_K2Node_ActorBoundEvent_18_SBZFilterDesiredCountDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bHasDesiredCount;                                  // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZFilteredTriggerVolume_EscortStealthVolume2_K2Node_ActorBoundEvent_37_SBZFilterDesiredCountDynamicDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZFilteredTriggerVolume_EscortStealthVolume2_K2Node_ActorBoundEvent_37_SBZFilterDesiredCountDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bHasDesiredCount;                                  // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellGuard_K2Node_ActorBoundEvent_16_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellGuard_K2Node_ActorBoundEvent_16_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  DeadPawn;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                Spawner;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellGuard_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellGuard_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellHouston_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellHouston_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Civilian24_K2Node_ActorBoundEvent_28_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Civilian24_K2Node_ActorBoundEvent_28_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard2_1_K2Node_ActorBoundEvent_38_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard2_1_K2Node_ActorBoundEvent_38_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard3_3_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard3_3_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard5_0_K2Node_ActorBoundEvent_32_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard5_0_K2Node_ActorBoundEvent_32_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard9_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard9_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard9_K2Node_ActorBoundEvent_26_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard9_K2Node_ActorBoundEvent_26_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  DeadPawn;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                Spawner;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard_MetalDetector4_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard_MetalDetector4_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard_MetalDetector4_K2Node_ActorBoundEvent_17_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard_MetalDetector4_K2Node_ActorBoundEvent_17_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  DeadPawn;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                Spawner;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew10_K2Node_ActorBoundEvent_39_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew10_K2Node_ActorBoundEvent_39_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew1_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew1_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew2_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew2_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew3_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew3_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew4_K2Node_ActorBoundEvent_34_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew4_K2Node_ActorBoundEvent_34_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew5_K2Node_ActorBoundEvent_35_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew5_K2Node_ActorBoundEvent_35_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew6_K2Node_ActorBoundEvent_36_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew6_K2Node_ActorBoundEvent_36_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew7_K2Node_ActorBoundEvent_31_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew7_K2Node_ActorBoundEvent_31_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew8_K2Node_ActorBoundEvent_32_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew8_K2Node_ActorBoundEvent_32_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew9_K2Node_ActorBoundEvent_40_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew9_K2Node_ActorBoundEvent_40_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPlayerTriggerVolume9_2_K2Node_ActorBoundEvent_41_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPlayerTriggerVolume9_2_K2Node_ActorBoundEvent_41_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.CellGuardSpawned
-// 0x0008 (0x0008 - 0x0000)
-struct G_Chus_AI_C_CellGuardSpawned final
-{
-public:
-	class APawn*                                  NewParam;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_AI.G_Chus_AI_C.CounterOpened
-// 0x0001 (0x0001 - 0x0000)
-struct G_Chus_AI_C_CounterOpened final
-{
-public:
-	bool                                          CounterOpened_0;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_G_Chus_AI_C_HeistStateChanged;
 
 // Function G_Chus_AI.G_Chus_AI_C.ExecuteUbergraph_G_Chus_AI
 // 0x18B8 (0x18B8 - 0x0000)
@@ -953,40 +590,453 @@ public:
 	class USBZAIActionData_LifeAction*            CallFunc_CreateActionData_ReturnValue_33;          // 0x18A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class USBZAIAction*                           CallFunc_PushAction_ReturnValue_33;                // 0x18B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Chus_AI_C_ExecuteUbergraph_G_Chus_AI;
 
-// Function G_Chus_AI.G_Chus_AI_C.HeistStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct G_Chus_AI_C_HeistStateChanged final
+// Function G_Chus_AI.G_Chus_AI_C.CounterOpened
+// 0x0001 (0x0001 - 0x0000)
+struct G_Chus_AI_C_CounterOpened final
 {
 public:
-	EPD3HeistState                                OldHeistState;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CurrentHeistState;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CounterOpened;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Chus_AI_C_CounterOpened;
 
-// Function G_Chus_AI.G_Chus_AI_C.OnServerKeyItemTagAdded
-// 0x000C (0x000C - 0x0000)
-struct G_Chus_AI_C_OnServerKeyItemTagAdded final
+// Function G_Chus_AI.G_Chus_AI_C.CellGuardSpawned
+// 0x0008 (0x0008 - 0x0000)
+struct G_Chus_AI_C_CellGuardSpawned final
 {
 public:
-	struct FGameplayTag                           KeyTag;                                            // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  NewParam;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Chus_AI_C_CellGuardSpawned;
 
-// Function G_Chus_AI.G_Chus_AI_C.SecondaryBlueKeycardTaken
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct G_Chus_AI_C_SecondaryBlueKeycardTaken final
+struct G_Chus_AI_C_BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPlayerTriggerVolume9_2_K2Node_ActorBoundEvent_41_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPlayerTriggerVolume9_2_K2Node_ActorBoundEvent_41_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPlayerTriggerVolume9_2_K2Node_ActorBoundEvent_41_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew9_K2Node_ActorBoundEvent_40_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew9_K2Node_ActorBoundEvent_40_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew9_K2Node_ActorBoundEvent_40_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew8_K2Node_ActorBoundEvent_32_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew8_K2Node_ActorBoundEvent_32_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew8_K2Node_ActorBoundEvent_32_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew7_K2Node_ActorBoundEvent_31_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew7_K2Node_ActorBoundEvent_31_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew7_K2Node_ActorBoundEvent_31_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew6_K2Node_ActorBoundEvent_36_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew6_K2Node_ActorBoundEvent_36_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew6_K2Node_ActorBoundEvent_36_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew5_K2Node_ActorBoundEvent_35_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew5_K2Node_ActorBoundEvent_35_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew5_K2Node_ActorBoundEvent_35_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew4_K2Node_ActorBoundEvent_34_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew4_K2Node_ActorBoundEvent_34_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew4_K2Node_ActorBoundEvent_34_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew3_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew3_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew3_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew2_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew2_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew2_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew1_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew1_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew1_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew10_K2Node_ActorBoundEvent_39_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew10_K2Node_ActorBoundEvent_39_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew10_K2Node_ActorBoundEvent_39_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard_MetalDetector4_K2Node_ActorBoundEvent_17_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard_MetalDetector4_K2Node_ActorBoundEvent_17_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  DeadPawn;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                Spawner;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard_MetalDetector4_K2Node_ActorBoundEvent_17_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard_MetalDetector4_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard_MetalDetector4_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard_MetalDetector4_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard9_K2Node_ActorBoundEvent_26_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard9_K2Node_ActorBoundEvent_26_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  DeadPawn;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                Spawner;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard9_K2Node_ActorBoundEvent_26_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard9_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard9_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard9_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard5_0_K2Node_ActorBoundEvent_32_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard5_0_K2Node_ActorBoundEvent_32_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard5_0_K2Node_ActorBoundEvent_32_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard3_3_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard3_3_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard3_3_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard2_1_K2Node_ActorBoundEvent_38_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard2_1_K2Node_ActorBoundEvent_38_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard2_1_K2Node_ActorBoundEvent_38_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Civilian24_K2Node_ActorBoundEvent_28_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Civilian24_K2Node_ActorBoundEvent_28_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Civilian24_K2Node_ActorBoundEvent_28_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellHouston_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellHouston_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellHouston_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellGuard_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellGuard_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellGuard_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellGuard_K2Node_ActorBoundEvent_16_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellGuard_K2Node_ActorBoundEvent_16_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  DeadPawn;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                Spawner;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellGuard_K2Node_ActorBoundEvent_16_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZFilteredTriggerVolume_EscortStealthVolume2_K2Node_ActorBoundEvent_37_SBZFilterDesiredCountDynamicDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZFilteredTriggerVolume_EscortStealthVolume2_K2Node_ActorBoundEvent_37_SBZFilterDesiredCountDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bHasDesiredCount;                                  // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_SBZFilteredTriggerVolume_EscortStealthVolume2_K2Node_ActorBoundEvent_37_SBZFilterDesiredCountDynamicDelegate__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZFilteredTriggerVolume_EscortStealthVolume1_K2Node_ActorBoundEvent_18_SBZFilterDesiredCountDynamicDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_SBZFilteredTriggerVolume_EscortStealthVolume1_K2Node_ActorBoundEvent_18_SBZFilterDesiredCountDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bHasDesiredCount;                                  // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_SBZFilteredTriggerVolume_EscortStealthVolume1_K2Node_ActorBoundEvent_18_SBZFilterDesiredCountDynamicDelegate__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_PowerUpDonutBox2_K2Node_ActorBoundEvent_15_SBZPowerUpChargesStateDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_PowerUpDonutBox2_K2Node_ActorBoundEvent_15_SBZPowerUpChargesStateDelegate__DelegateSignature final
+{
+public:
+	ESBZPowerUpChargesState                       OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZPowerUpChargesState                       NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_BP_PowerUpDonutBox2_K2Node_ActorBoundEvent_15_SBZPowerUpChargesStateDelegate__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell9_K2Node_ActorBoundEvent_2_ActionStarted__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell9_K2Node_ActorBoundEvent_2_ActionStarted__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell9_K2Node_ActorBoundEvent_2_ActionStarted__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell8_K2Node_ActorBoundEvent_1_ActionStarted__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell8_K2Node_ActorBoundEvent_1_ActionStarted__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell8_K2Node_ActorBoundEvent_1_ActionStarted__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell7_2_K2Node_ActorBoundEvent_0_ActionStarted__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell7_2_K2Node_ActorBoundEvent_0_ActionStarted__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell7_2_K2Node_ActorBoundEvent_0_ActionStarted__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell5_K2Node_ActorBoundEvent_10_ActionStarted__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell5_K2Node_ActorBoundEvent_10_ActionStarted__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell5_K2Node_ActorBoundEvent_10_ActionStarted__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell10_K2Node_ActorBoundEvent_3_ActionStarted__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell10_K2Node_ActorBoundEvent_3_ActionStarted__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell10_K2Node_ActorBoundEvent_3_ActionStarted__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonMetalDetector_K2Node_ActorBoundEvent_25_ActionStarted__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonMetalDetector_K2Node_ActorBoundEvent_25_ActionStarted__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonMetalDetector_K2Node_ActorBoundEvent_25_ActionStarted__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonMetalDetector2_K2Node_ActorBoundEvent_24_ActionStarted__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonMetalDetector2_K2Node_ActorBoundEvent_24_ActionStarted__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonMetalDetector2_K2Node_ActorBoundEvent_24_ActionStarted__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonGaragewait2_K2Node_ActorBoundEvent_36_ActionStarted__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonGaragewait2_K2Node_ActorBoundEvent_36_ActionStarted__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonGaragewait2_K2Node_ActorBoundEvent_36_ActionStarted__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell4_K2Node_ActorBoundEvent_9_ActionStarted__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell4_K2Node_ActorBoundEvent_9_ActionStarted__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell4_K2Node_ActorBoundEvent_9_ActionStarted__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell3_K2Node_ActorBoundEvent_8_ActionStarted__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell3_K2Node_ActorBoundEvent_8_ActionStarted__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell3_K2Node_ActorBoundEvent_8_ActionStarted__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell2_K2Node_ActorBoundEvent_7_ActionStarted__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell2_K2Node_ActorBoundEvent_7_ActionStarted__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell2_K2Node_ActorBoundEvent_7_ActionStarted__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell1_K2Node_ActorBoundEvent_4_ActionStarted__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell1_K2Node_ActorBoundEvent_4_ActionStarted__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell1_K2Node_ActorBoundEvent_4_ActionStarted__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell4_K2Node_ActorBoundEvent_14_ActionStarted__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell4_K2Node_ActorBoundEvent_14_ActionStarted__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell4_K2Node_ActorBoundEvent_14_ActionStarted__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell3_K2Node_ActorBoundEvent_13_ActionStarted__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell3_K2Node_ActorBoundEvent_13_ActionStarted__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell3_K2Node_ActorBoundEvent_13_ActionStarted__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell2_K2Node_ActorBoundEvent_11_ActionStarted__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell2_K2Node_ActorBoundEvent_11_ActionStarted__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell2_K2Node_ActorBoundEvent_11_ActionStarted__DelegateSignature;
+
+// Function G_Chus_AI.G_Chus_AI_C.BlueKeycardTaken
+// 0x0010 (0x0010 - 0x0000)
+struct G_Chus_AI_C_BlueKeycardTaken final
 {
 public:
 	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Chus_AI_C_BlueKeycardTaken;
 
-// Function G_Chus_AI.G_Chus_AI_C.ToggleEscortSpawns
-// 0x0004 (0x0004 - 0x0000)
-struct G_Chus_AI_C_ToggleEscortSpawns final
+// Function G_Chus_AI.G_Chus_AI_C.BasementMetalDetectorOffline
+// 0x0001 (0x0001 - 0x0000)
+struct G_Chus_AI_C_BasementMetalDetectorOffline final
 {
 public:
-	int32                                         EscortPathInt;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          BasementPathOpenForEscort;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Chus_AI_C_BasementMetalDetectorOffline;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

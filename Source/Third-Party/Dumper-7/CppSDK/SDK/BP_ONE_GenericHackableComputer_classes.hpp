@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "BP_GenericHackableComputer_classes.hpp"
 #include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
-#include "BP_GenericHackableComputer_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -27,12 +27,12 @@ public:
 	struct FSBZHackableDisplayText                displayTextLoud;                                   // 0x0638(0x0040)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void BndEvt__BP_ONE_GenericHackableComputer_isLoudState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
-	void BP_OnHackingStarted(const class FText& ProcessText);
-	void BP_OnStateChanged(ESBZHackableActorState OldState, ESBZHackableActorState NewState);
-	void ExecuteUbergraph_BP_ONE_GenericHackableComputer(int32 EntryPoint);
-	void goLoud();
 	void K2_OnReset();
+	void goLoud();
+	void ExecuteUbergraph_BP_ONE_GenericHackableComputer(int32 EntryPoint);
+	void BP_OnStateChanged(ESBZHackableActorState OldState_BP_OnStateChanged, ESBZHackableActorState NewState_BP_OnStateChanged);
+	void BP_OnHackingStarted(const class FText& ProcessText_BP_OnHackingStarted);
+	void BndEvt__BP_ONE_GenericHackableComputer_isLoudState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
 
 public:
 	static class UClass* StaticClass()
@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<ABP_ONE_GenericHackableComputer_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ONE_GenericHackableComputer_C;
 
 SDK_NAMESPACE_END

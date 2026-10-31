@@ -29,9 +29,9 @@ public:
 	bool                                          UsePercentage;                                     // 0x0318(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
-	void UpdateProgression(int32 Current, int32 Total);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
 	void ExecuteUbergraph_WBP_Progression_Chip(int32 EntryPoint);
+	void PreConstruct(bool IsDesignTime);
+	void UpdateProgression(int32 Current, int32 Total);
 
 public:
 	static class UClass* StaticClass()

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<USuvBackWheel_C>();
 	}
 };
+DUMPER7_ASSERTS_USuvBackWheel_C;
 
 SDK_NAMESPACE_END

@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<UWBP_StonkComplete_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_StonkComplete_C;
 
 SDK_NAMESPACE_END

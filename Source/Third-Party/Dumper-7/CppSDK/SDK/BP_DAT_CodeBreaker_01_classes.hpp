@@ -42,20 +42,20 @@ public:
 	struct FVector4                               ColorComplete;                                     // 0x0420(0x0020)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_DAT_CodeBreaker_01_SBZInteractableTake_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_ReplicatedBinaryActorVent_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void DisableMarker();
-	void ExecuteUbergraph_BP_DAT_CodeBreaker_01(int32 EntryPoint);
-	class FText GetMarkerText();
-	void GetState(int32* State_0);
-	void GhostState();
-	void InactiveState();
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void SetDisplayColor(int32 State_0, bool Flickering);
-	void setMeshVisibility(bool visible, bool isGhostMesh);
-	void ShowMarker();
-	void TurnOffState();
 	void TurnOnState();
+	void TurnOffState();
+	void ShowMarker();
+	void setMeshVisibility(bool visible, bool isGhostMesh);
+	void SetDisplayColor(int32 State, bool Flickering);
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void InactiveState();
+	void GhostState();
+	void GetState(int32* State);
+	class FText GetMarkerText();
+	void ExecuteUbergraph_BP_DAT_CodeBreaker_01(int32 EntryPoint);
+	void DisableMarker();
+	void BndEvt__BP_ReplicatedBinaryActorVent_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_DAT_CodeBreaker_01_SBZInteractableTake_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -71,5 +71,6 @@ public:
 		return GetDefaultObjImpl<ABP_DAT_CodeBreaker_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DAT_CodeBreaker_01_C;
 
 SDK_NAMESPACE_END

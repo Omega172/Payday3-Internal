@@ -61,5 +61,6 @@ public:
 		return GetDefaultObjImpl<ABP_MobilePhone_01_SmallDestruction_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_MobilePhone_01_SmallDestruction_C;
 
 SDK_NAMESPACE_END

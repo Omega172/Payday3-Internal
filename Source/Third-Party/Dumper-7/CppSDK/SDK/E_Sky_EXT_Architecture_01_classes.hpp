@@ -25,8 +25,8 @@ public:
 	class ABP_PenthouseHP_03_C*                   BP_LobbyWindow_01_NAV79_ExecuteUbergraph_E_Sky_EXT_Architecture_01_RefProperty; // 0x03D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BreakBedroomWindow();
 	void ExecuteUbergraph_E_Sky_EXT_Architecture_01(int32 EntryPoint);
+	void BreakBedroomWindow();
 
 public:
 	static class UClass* StaticClass()
@@ -42,5 +42,6 @@ public:
 		return GetDefaultObjImpl<AE_Sky_EXT_Architecture_01_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_Sky_EXT_Architecture_01_C;
 
 SDK_NAMESPACE_END

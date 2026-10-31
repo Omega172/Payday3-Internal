@@ -30,8 +30,8 @@ public:
 	class UMaterialInterface*                     Flicker_Material;                                  // 0x0358(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_LGT_ArtCielingLamp_a_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
 	void ExecuteUbergraph_BPL_NeonTube_Little_Blue(int32 EntryPoint);
+	void BndEvt__BP_LGT_ArtCielingLamp_a_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
 
 public:
 	static class UClass* StaticClass()
@@ -47,5 +47,6 @@ public:
 		return GetDefaultObjImpl<ABPL_NeonTube_Little_Blue_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_NeonTube_Little_Blue_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AE_ArmoredTransport_Ext_BDFWest_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_ArmoredTransport_Ext_BDFWest_C;
 
 SDK_NAMESPACE_END

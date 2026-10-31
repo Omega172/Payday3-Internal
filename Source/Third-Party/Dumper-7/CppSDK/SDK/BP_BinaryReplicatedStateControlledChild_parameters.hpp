@@ -14,6 +14,16 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_BinaryReplicatedStateControlledChild.BP_BinaryReplicatedStateControlledChild_C.onStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_BinaryReplicatedStateControlledChild_C_onStateChanged final
+{
+public:
+	bool                                          state;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          doCosmetics;                                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BinaryReplicatedStateControlledChild_C_onStateChanged;
+
 // Function BP_BinaryReplicatedStateControlledChild.BP_BinaryReplicatedStateControlledChild_C.ExecuteUbergraph_BP_BinaryReplicatedStateControlledChild
 // 0x0008 (0x0008 - 0x0000)
 struct BP_BinaryReplicatedStateControlledChild_C_ExecuteUbergraph_BP_BinaryReplicatedStateControlledChild final
@@ -23,15 +33,7 @@ public:
 	bool                                          K2Node_CustomEvent_state;                          // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_doCosmetics;                    // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_BinaryReplicatedStateControlledChild.BP_BinaryReplicatedStateControlledChild_C.onStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_BinaryReplicatedStateControlledChild_C_onStateChanged final
-{
-public:
-	bool                                          state;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          doCosmetics;                                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_BinaryReplicatedStateControlledChild_C_ExecuteUbergraph_BP_BinaryReplicatedStateControlledChild;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

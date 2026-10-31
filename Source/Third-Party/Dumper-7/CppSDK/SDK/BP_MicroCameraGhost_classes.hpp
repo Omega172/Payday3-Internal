@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_MicroCameraGhost_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_MicroCameraGhost_C;
 
 SDK_NAMESPACE_END

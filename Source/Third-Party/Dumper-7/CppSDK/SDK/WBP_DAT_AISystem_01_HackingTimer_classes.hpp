@@ -33,8 +33,8 @@ public:
 	class UImage*                                 Logo;                                              // 0x0338(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_DAT_AISystem_01_HackingTimer(int32 EntryPoint);
 	void setProgress(int32 InputPin);
+	void ExecuteUbergraph_WBP_DAT_AISystem_01_HackingTimer(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -50,5 +50,6 @@ public:
 		return GetDefaultObjImpl<UWBP_DAT_AISystem_01_HackingTimer_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_DAT_AISystem_01_HackingTimer_C;
 
 SDK_NAMESPACE_END

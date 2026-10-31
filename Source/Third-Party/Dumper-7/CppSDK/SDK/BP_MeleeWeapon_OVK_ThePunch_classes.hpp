@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_MeleeWeapon_OVK_ThePunch_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_MeleeWeapon_OVK_ThePunch_C;
 
 SDK_NAMESPACE_END

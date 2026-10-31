@@ -16,24 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Tool_Base_Ghost.BP_Tool_Base_Ghost_C.OnGhostToolStateChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// ESBZPlacementState                      NewPlacementState                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Tool_Base_Ghost_C::OnGhostToolStateChanged(ESBZPlacementState NewPlacementState)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGhostToolStateChanged", FnName));
-
-	Params::BP_Tool_Base_Ghost_C_OnGhostToolStateChanged Parms{};
-
-	Parms.NewPlacementState = NewPlacementState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_Tool_Base_Ghost.BP_Tool_Base_Ghost_C.ExecuteUbergraph_BP_Tool_Base_Ghost
 // (Final, UbergraphFunction)
 // Parameters:
@@ -47,6 +29,24 @@ void ABP_Tool_Base_Ghost_C::ExecuteUbergraph_BP_Tool_Base_Ghost(int32 EntryPoint
 	Params::BP_Tool_Base_Ghost_C_ExecuteUbergraph_BP_Tool_Base_Ghost Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Tool_Base_Ghost.BP_Tool_Base_Ghost_C.OnGhostToolStateChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// ESBZPlacementState                      NewPlacementState                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Tool_Base_Ghost_C::OnGhostToolStateChanged(ESBZPlacementState NewPlacementState)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGhostToolStateChanged", FnName));
+
+	Params::BP_Tool_Base_Ghost_C_OnGhostToolStateChanged Parms{};
+
+	Parms.NewPlacementState = NewPlacementState;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

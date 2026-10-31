@@ -18,6 +18,31 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_BaseMovingTransform.BP_BaseMovingTransform_C.UserConstructionScript
+// 0x01E0 (0x01E0 - 0x0000)
+struct BP_BaseMovingTransform_C_UserConstructionScript final
+{
+public:
+	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_GetRelativeTransform_ReturnValue;         // 0x0010(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             K2Node_Select_Default;                             // 0x0070(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult;   // 0x00D0(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	float                                         CallFunc_SetPlayRate_NewRate_ImplicitCast;         // 0x01D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BaseMovingTransform_C_UserConstructionScript;
+
+// Function BP_BaseMovingTransform.BP_BaseMovingTransform_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_BaseMovingTransform_C_OnStateChanged final
+{
+public:
+	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BaseMovingTransform_C_OnStateChanged;
+
 // Function BP_BaseMovingTransform.BP_BaseMovingTransform_C.ExecuteUbergraph_BP_BaseMovingTransform
 // 0x0300 (0x0300 - 0x0000)
 struct BP_BaseMovingTransform_C_ExecuteUbergraph_BP_BaseMovingTransform final
@@ -37,29 +62,7 @@ public:
 	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult_1; // 0x01F0(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	int32                                         CallFunc_PostAkEvent_ReturnValue;                  // 0x02F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_BaseMovingTransform.BP_BaseMovingTransform_C.OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_BaseMovingTransform_C_OnStateChanged final
-{
-public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_BaseMovingTransform.BP_BaseMovingTransform_C.UserConstructionScript
-// 0x01E0 (0x01E0 - 0x0000)
-struct BP_BaseMovingTransform_C_UserConstructionScript final
-{
-public:
-	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_GetRelativeTransform_ReturnValue;         // 0x0010(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             K2Node_Select_Default;                             // 0x0070(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult;   // 0x00D0(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	float                                         CallFunc_SetPlayRate_NewRate_ImplicitCast;         // 0x01D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_BaseMovingTransform_C_ExecuteUbergraph_BP_BaseMovingTransform;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

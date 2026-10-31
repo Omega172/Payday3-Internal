@@ -16,23 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function PF_LGT_TrafficModern_01.PF_LGT_TrafficModern_01_C.ExecuteUbergraph_PF_LGT_TrafficModern_01
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function PF_LGT_TrafficModern_01.PF_LGT_TrafficModern_01_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void APF_LGT_TrafficModern_01_C::ExecuteUbergraph_PF_LGT_TrafficModern_01(int32 EntryPoint)
+void APF_LGT_TrafficModern_01_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("PF_LGT_TrafficModern_01_C", "ExecuteUbergraph_PF_LGT_TrafficModern_01");
-
-	Params::PF_LGT_TrafficModern_01_C_ExecuteUbergraph_PF_LGT_TrafficModern_01 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -41,26 +33,28 @@ void APF_LGT_TrafficModern_01_C::ExecuteUbergraph_PF_LGT_TrafficModern_01(int32 
 
 void APF_LGT_TrafficModern_01_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PF_LGT_TrafficModern_01_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function PF_LGT_TrafficModern_01.PF_LGT_TrafficModern_01_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function PF_LGT_TrafficModern_01.PF_LGT_TrafficModern_01_C.ExecuteUbergraph_PF_LGT_TrafficModern_01
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APF_LGT_TrafficModern_01_C::UserConstructionScript()
+void APF_LGT_TrafficModern_01_C::ExecuteUbergraph_PF_LGT_TrafficModern_01(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "PF_LGT_TrafficModern_01_C", "ExecuteUbergraph_PF_LGT_TrafficModern_01", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("PF_LGT_TrafficModern_01_C", "UserConstructionScript");
+	Params::PF_LGT_TrafficModern_01_C_ExecuteUbergraph_PF_LGT_TrafficModern_01 Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

@@ -35,10 +35,10 @@ public:
 	class APD3HeistGameState*                     PD3HeistGameState;                                 // 0x0B28(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnStateChanged(ESBZCameraState OldState, ESBZCameraState NewState, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_MovingMotionSensor_Drone(int32 EntryPoint);
-	void onHeistsStateChanged(EPD3HeistState OldState, EPD3HeistState NewState);
 	void ReceiveBeginPlay();
+	void onHeistsStateChanged(EPD3HeistState OldState, EPD3HeistState NewState);
+	void ExecuteUbergraph_BP_MovingMotionSensor_Drone(int32 EntryPoint);
+	void BP_OnStateChanged(ESBZCameraState OldState_BP_OnStateChanged, ESBZCameraState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged);
 
 public:
 	static class UClass* StaticClass()
@@ -54,5 +54,6 @@ public:
 		return GetDefaultObjImpl<ABP_MovingMotionSensor_Drone_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_MovingMotionSensor_Drone_C;
 
 SDK_NAMESPACE_END

@@ -10,16 +10,16 @@
 
 #include "Basic.hpp"
 
+#include "Engine_structs.hpp"
+#include "LevelSequence_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
-#include "LevelSequence_structs.hpp"
-#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass C_Pharaoh_IntroOutro.C_Pharaoh_IntroOutro_C
-// 0x02D8 (0x06A8 - 0x03D0)
+// 0x02E8 (0x06B8 - 0x03D0)
 class AC_Pharaoh_IntroOutro_C final : public ASBZLevelScriptActor
 {
 public:
@@ -28,19 +28,19 @@ public:
 	struct FLevelSequenceCameraSettings           Selection_0;                                       // 0x03D9(0x0002)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	uint8                                         Pad_3DB[0x1];                                      // 0x03DB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Outro_Variation;                                   // 0x03DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSBZEndMissionResultData               Outro_Variation_0;                                 // 0x03E0(0x02B0)(Edit, BlueprintVisible, DisableEditOnInstance)
-	int32                                         Outro_Variation_1;                                 // 0x0690(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_694[0x4];                                      // 0x0694(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ALevelSequenceActor*                    SequenceMaster_Pharaoh_Intro_10_ExecuteUbergraph_C_Pharaoh_IntroOutro_RefProperty; // 0x0698(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ALevelSequenceActor*                    SequenceMaster_Pharaoh_Outro_01_0_ExecuteUbergraph_C_Pharaoh_IntroOutro_RefProperty; // 0x06A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZEndMissionResultData               Outro_Variation_0;                                 // 0x03E0(0x02C0)(Edit, BlueprintVisible, DisableEditOnInstance)
+	int32                                         Outro_Variation_1;                                 // 0x06A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6A4[0x4];                                      // 0x06A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ALevelSequenceActor*                    SequenceMaster_Pharaoh_Intro_10_ExecuteUbergraph_C_Pharaoh_IntroOutro_RefProperty; // 0x06A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ALevelSequenceActor*                    SequenceMaster_Pharaoh_Outro_01_0_ExecuteUbergraph_C_Pharaoh_IntroOutro_RefProperty; // 0x06B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__C_Pharaoh_IntroOutro_SBZPlayerTriggerVolume2_2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void ExecuteUbergraph_C_Pharaoh_IntroOutro(int32 EntryPoint);
-	void IntroSequenceChanged(bool bIsStarted);
-	void OnIntroFinished();
+	void OutroSequenceStarted(const int32 OutroVariation_OutroSequenceStarted);
 	void OnOutroFinished();
-	void OutroSequenceStarted(const int32 OutroVariation);
+	void OnIntroFinished();
+	void IntroSequenceChanged(bool bIsStarted_IntroSequenceChanged);
+	void ExecuteUbergraph_C_Pharaoh_IntroOutro(int32 EntryPoint);
+	void BndEvt__C_Pharaoh_IntroOutro_SBZPlayerTriggerVolume2_2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
 
 public:
 	static class UClass* StaticClass()
@@ -56,5 +56,6 @@ public:
 		return GetDefaultObjImpl<AC_Pharaoh_IntroOutro_C>();
 	}
 };
+DUMPER7_ASSERTS_AC_Pharaoh_IntroOutro_C;
 
 SDK_NAMESPACE_END

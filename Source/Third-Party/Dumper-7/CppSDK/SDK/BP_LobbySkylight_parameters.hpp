@@ -16,6 +16,16 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_LobbySkylight.BP_LobbySkylight_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_LobbySkylight_C_OnStateChanged final
+{
+public:
+	bool                                          bStateToChangeTo_OnStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LobbySkylight_C_OnStateChanged;
+
 // Function BP_LobbySkylight.BP_LobbySkylight_C.ExecuteUbergraph_BP_LobbySkylight
 // 0x0020 (0x0020 - 0x0000)
 struct BP_LobbySkylight_C_ExecuteUbergraph_BP_LobbySkylight final
@@ -28,15 +38,7 @@ public:
 	uint8                                         Pad_1A[0x2];                                       // 0x001A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_PostAkEvent_ReturnValue;                  // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_LobbySkylight.BP_LobbySkylight_C.OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_LobbySkylight_C_OnStateChanged final
-{
-public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_LobbySkylight_C_ExecuteUbergraph_BP_LobbySkylight;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

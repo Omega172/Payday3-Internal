@@ -24,11 +24,11 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteUbergraph_G_SnGFO_Coverpoints(int32 EntryPoint);
-	void SetRandomRoom1Secure();
-	void SetRandomRoom2Secure();
-	void SetRandomRoom3Secure();
 	void SetRandomRoom4Secure();
+	void SetRandomRoom3Secure();
+	void SetRandomRoom2Secure();
+	void SetRandomRoom1Secure();
+	void ExecuteUbergraph_G_SnGFO_Coverpoints(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<AG_SnGFO_Coverpoints_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_SnGFO_Coverpoints_C;
 
 SDK_NAMESPACE_END

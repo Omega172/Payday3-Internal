@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_REM_Door_Boxcar_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_REM_Door_Boxcar_C;
 
 SDK_NAMESPACE_END

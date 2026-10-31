@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_RangedWeapon_SMG_Commando_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_RangedWeapon_SMG_Commando_C;
 
 SDK_NAMESPACE_END

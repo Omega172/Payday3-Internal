@@ -27,16 +27,16 @@ public:
 	bool                                          Is_Active;                                         // 0x0348(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Change_room_state(int32 Room_index, bool is_Active);
-	void ExecuteUbergraph_BP_ServerroomLight_State(int32 EntryPoint);
-	void ReceiveBeginPlay();
-	void Room_A_state_changed();
-	void Room_B_state_changed();
-	void Room_C_state_changed();
-	void Room_D_state_changed();
-	void Room_E_state_changed();
-	void Switch_ALL_room_states(bool Is_active_);
 	void UserConstructionScript();
+	void Switch_ALL_room_states(bool Is_active_);
+	void Room_E_state_changed();
+	void Room_D_state_changed();
+	void Room_C_state_changed();
+	void Room_B_state_changed();
+	void Room_A_state_changed();
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_ServerroomLight_State(int32 EntryPoint);
+	void Change_room_state(int32 Room_index, bool is_Active);
 
 public:
 	static class UClass* StaticClass()
@@ -52,5 +52,6 @@ public:
 		return GetDefaultObjImpl<ABP_ServerroomLight_State_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ServerroomLight_State_C;
 
 SDK_NAMESPACE_END

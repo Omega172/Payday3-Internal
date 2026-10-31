@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_PlaceableSentry_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PlaceableSentry_C;
 
 SDK_NAMESPACE_END

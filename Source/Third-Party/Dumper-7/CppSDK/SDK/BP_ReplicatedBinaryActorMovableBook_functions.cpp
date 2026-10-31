@@ -16,63 +16,111 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ReplicatedBinaryActorMovableBook.BP_ReplicatedBinaryActorMovableBook_C.BndEvt__BP_ReplicatedBinaryActorMovableBook_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// Function BP_ReplicatedBinaryActorMovableBook.BP_ReplicatedBinaryActorMovableBook_C.Swithc__UpdateFunc
 // (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ReplicatedBinaryActorMovableBook_C::BndEvt__BP_ReplicatedBinaryActorMovableBook_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_ReplicatedBinaryActorMovableBook_C::Swithc__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Swithc__UpdateFunc", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActorMovableBook_C", "BndEvt__BP_ReplicatedBinaryActorMovableBook_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_ReplicatedBinaryActorMovableBook_C_BndEvt__BP_ReplicatedBinaryActorMovableBook_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ReplicatedBinaryActorMovableBook.BP_ReplicatedBinaryActorMovableBook_C.BndEvt__BP_ReplicatedBinaryMovableBook_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// Function BP_ReplicatedBinaryActorMovableBook.BP_ReplicatedBinaryActorMovableBook_C.Swithc__FinishedFunc
 // (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ReplicatedBinaryActorMovableBook_C::BndEvt__BP_ReplicatedBinaryMovableBook_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_ReplicatedBinaryActorMovableBook_C::Swithc__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Swithc__FinishedFunc", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActorMovableBook_C", "BndEvt__BP_ReplicatedBinaryMovableBook_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_ReplicatedBinaryActorMovableBook_C_BndEvt__BP_ReplicatedBinaryMovableBook_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ReplicatedBinaryActorMovableBook.BP_ReplicatedBinaryActorMovableBook_C.Disable
+// Function BP_ReplicatedBinaryActorMovableBook.BP_ReplicatedBinaryActorMovableBook_C.Siwtch__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_ReplicatedBinaryActorMovableBook_C::Siwtch__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Siwtch__UpdateFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ReplicatedBinaryActorMovableBook.BP_ReplicatedBinaryActorMovableBook_C.Siwtch__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_ReplicatedBinaryActorMovableBook_C::Siwtch__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Siwtch__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ReplicatedBinaryActorMovableBook.BP_ReplicatedBinaryActorMovableBook_C.SetIsHiddenSwitch
 // (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const bool                              IsSwitch                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ReplicatedBinaryActorMovableBook_C::Disable()
+void ABP_ReplicatedBinaryActorMovableBook_C::SetIsHiddenSwitch(const bool IsSwitch)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetIsHiddenSwitch", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActorMovableBook_C", "Disable");
+	Params::BP_ReplicatedBinaryActorMovableBook_C_SetIsHiddenSwitch Parms{};
+
+	Parms.IsSwitch = IsSwitch;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ReplicatedBinaryActorMovableBook.BP_ReplicatedBinaryActorMovableBook_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bStateToChangeTo_OnStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ReplicatedBinaryActorMovableBook_C::OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_ReplicatedBinaryActorMovableBook_C_OnStateChanged Parms{};
+
+	Parms.bStateToChangeTo_OnStateChanged = bStateToChangeTo_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ReplicatedBinaryActorMovableBook.BP_ReplicatedBinaryActorMovableBook_C.FalseBook__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_ReplicatedBinaryActorMovableBook_C::FalseBook__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"FalseBook__UpdateFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ReplicatedBinaryActorMovableBook.BP_ReplicatedBinaryActorMovableBook_C.FalseBook__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_ReplicatedBinaryActorMovableBook_C::FalseBook__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"FalseBook__FinishedFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -85,10 +133,8 @@ void ABP_ReplicatedBinaryActorMovableBook_C::Disable()
 
 void ABP_ReplicatedBinaryActorMovableBook_C::ExecuteUbergraph_BP_ReplicatedBinaryActorMovableBook(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActorMovableBook_C", "ExecuteUbergraph_BP_ReplicatedBinaryActorMovableBook");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ReplicatedBinaryActorMovableBook_C", "ExecuteUbergraph_BP_ReplicatedBinaryActorMovableBook", FuncInfo);
 
 	Params::BP_ReplicatedBinaryActorMovableBook_C_ExecuteUbergraph_BP_ReplicatedBinaryActorMovableBook Parms{};
 
@@ -98,129 +144,59 @@ void ABP_ReplicatedBinaryActorMovableBook_C::ExecuteUbergraph_BP_ReplicatedBinar
 }
 
 
-// Function BP_ReplicatedBinaryActorMovableBook.BP_ReplicatedBinaryActorMovableBook_C.FalseBook__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_ReplicatedBinaryActorMovableBook_C::FalseBook__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActorMovableBook_C", "FalseBook__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ReplicatedBinaryActorMovableBook.BP_ReplicatedBinaryActorMovableBook_C.FalseBook__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_ReplicatedBinaryActorMovableBook_C::FalseBook__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActorMovableBook_C", "FalseBook__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ReplicatedBinaryActorMovableBook.BP_ReplicatedBinaryActorMovableBook_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ReplicatedBinaryActorMovableBook_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActorMovableBook_C", "OnStateChanged");
-
-	Params::BP_ReplicatedBinaryActorMovableBook_C_OnStateChanged Parms{};
-
-	Parms.bStateToChangeTo = bStateToChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ReplicatedBinaryActorMovableBook.BP_ReplicatedBinaryActorMovableBook_C.SetIsHiddenSwitch
+// Function BP_ReplicatedBinaryActorMovableBook.BP_ReplicatedBinaryActorMovableBook_C.Disable
 // (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const bool                              IsSwitch                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ReplicatedBinaryActorMovableBook_C::SetIsHiddenSwitch(const bool IsSwitch)
+void ABP_ReplicatedBinaryActorMovableBook_C::Disable()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Disable", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActorMovableBook_C", "SetIsHiddenSwitch");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_ReplicatedBinaryActorMovableBook_C_SetIsHiddenSwitch Parms{};
 
-	Parms.IsSwitch = IsSwitch;
+// Function BP_ReplicatedBinaryActorMovableBook.BP_ReplicatedBinaryActorMovableBook_C.BndEvt__BP_ReplicatedBinaryMovableBook_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ReplicatedBinaryActorMovableBook_C::BndEvt__BP_ReplicatedBinaryMovableBook_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ReplicatedBinaryMovableBook_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_ReplicatedBinaryActorMovableBook_C_BndEvt__BP_ReplicatedBinaryMovableBook_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_ReplicatedBinaryActorMovableBook.BP_ReplicatedBinaryActorMovableBook_C.Siwtch__FinishedFunc
+// Function BP_ReplicatedBinaryActorMovableBook.BP_ReplicatedBinaryActorMovableBook_C.BndEvt__BP_ReplicatedBinaryActorMovableBook_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ReplicatedBinaryActorMovableBook_C::Siwtch__FinishedFunc()
+void ABP_ReplicatedBinaryActorMovableBook_C::BndEvt__BP_ReplicatedBinaryActorMovableBook_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ReplicatedBinaryActorMovableBook_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActorMovableBook_C", "Siwtch__FinishedFunc");
+	Params::BP_ReplicatedBinaryActorMovableBook_C_BndEvt__BP_ReplicatedBinaryActorMovableBook_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
-
-// Function BP_ReplicatedBinaryActorMovableBook.BP_ReplicatedBinaryActorMovableBook_C.Siwtch__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_ReplicatedBinaryActorMovableBook_C::Siwtch__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActorMovableBook_C", "Siwtch__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ReplicatedBinaryActorMovableBook.BP_ReplicatedBinaryActorMovableBook_C.Swithc__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_ReplicatedBinaryActorMovableBook_C::Swithc__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActorMovableBook_C", "Swithc__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ReplicatedBinaryActorMovableBook.BP_ReplicatedBinaryActorMovableBook_C.Swithc__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_ReplicatedBinaryActorMovableBook_C::Swithc__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActorMovableBook_C", "Swithc__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

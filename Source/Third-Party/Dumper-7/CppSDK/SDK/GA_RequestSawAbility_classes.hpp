@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGA_RequestSawAbility_C>();
 	}
 };
+DUMPER7_ASSERTS_UGA_RequestSawAbility_C;
 
 SDK_NAMESPACE_END

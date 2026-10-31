@@ -16,25 +16,81 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_HiddenHatch.BP_HiddenHatch_C.BndEvt__BP_HiddenHatch_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// Function BP_HiddenHatch.BP_HiddenHatch_C.Y__UpdateFunc
 // (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_HiddenHatch_C::BndEvt__BP_HiddenHatch_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_HiddenHatch_C::Y__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Y__UpdateFunc", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HiddenHatch_C", "BndEvt__BP_HiddenHatch_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_HiddenHatch_C_BndEvt__BP_HiddenHatch_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+// Function BP_HiddenHatch.BP_HiddenHatch_C.Y__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_HiddenHatch_C::Y__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Y__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_HiddenHatch.BP_HiddenHatch_C.SetInteractionEnabled
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const bool                              Enabled                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_HiddenHatch_C::SetInteractionEnabled(const bool Enabled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetInteractionEnabled", FnName));
+
+	Params::BP_HiddenHatch_C_SetInteractionEnabled Parms{};
+
+	Parms.Enabled = Enabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_HiddenHatch.BP_HiddenHatch_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bStateToChangeTo_OnStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_HiddenHatch_C::OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_HiddenHatch_C_OnStateChanged Parms{};
+
+	Parms.bStateToChangeTo_OnStateChanged = bStateToChangeTo_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_HiddenHatch.BP_HiddenHatch_C.ExecuteUbergraph_BP_HiddenHatch
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_HiddenHatch_C::ExecuteUbergraph_BP_HiddenHatch(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_HiddenHatch_C", "ExecuteUbergraph_BP_HiddenHatch", FuncInfo);
+
+	Params::BP_HiddenHatch_C_ExecuteUbergraph_BP_HiddenHatch Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -49,10 +105,8 @@ void ABP_HiddenHatch_C::BndEvt__BP_HiddenHatch_SBZInteractable_K2Node_ComponentB
 
 void ABP_HiddenHatch_C::BndEvt__BP_HiddenHatch_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HiddenHatch_C", "BndEvt__BP_HiddenHatch_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_HiddenHatch_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature", FnName));
 
 	Params::BP_HiddenHatch_C_BndEvt__BP_HiddenHatch_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
 
@@ -64,93 +118,25 @@ void ABP_HiddenHatch_C::BndEvt__BP_HiddenHatch_SBZInteractable_K2Node_ComponentB
 }
 
 
-// Function BP_HiddenHatch.BP_HiddenHatch_C.ExecuteUbergraph_BP_HiddenHatch
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_HiddenHatch_C::ExecuteUbergraph_BP_HiddenHatch(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HiddenHatch_C", "ExecuteUbergraph_BP_HiddenHatch");
-
-	Params::BP_HiddenHatch_C_ExecuteUbergraph_BP_HiddenHatch Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_HiddenHatch.BP_HiddenHatch_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_HiddenHatch_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HiddenHatch_C", "OnStateChanged");
-
-	Params::BP_HiddenHatch_C_OnStateChanged Parms{};
-
-	Parms.bStateToChangeTo = bStateToChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_HiddenHatch.BP_HiddenHatch_C.SetInteractionEnabled
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const bool                              Enabled                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_HiddenHatch_C::SetInteractionEnabled(const bool Enabled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HiddenHatch_C", "SetInteractionEnabled");
-
-	Params::BP_HiddenHatch_C_SetInteractionEnabled Parms{};
-
-	Parms.Enabled = Enabled;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_HiddenHatch.BP_HiddenHatch_C.Y__FinishedFunc
+// Function BP_HiddenHatch.BP_HiddenHatch_C.BndEvt__BP_HiddenHatch_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_HiddenHatch_C::Y__FinishedFunc()
+void ABP_HiddenHatch_C::BndEvt__BP_HiddenHatch_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_HiddenHatch_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HiddenHatch_C", "Y__FinishedFunc");
+	Params::BP_HiddenHatch_C_BndEvt__BP_HiddenHatch_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
-
-// Function BP_HiddenHatch.BP_HiddenHatch_C.Y__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_HiddenHatch_C::Y__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HiddenHatch_C", "Y__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

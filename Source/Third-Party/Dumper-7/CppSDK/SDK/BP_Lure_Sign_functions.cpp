@@ -16,41 +16,47 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Lure_Sign.BP_Lure_Sign_C.BndEvt__BP_Lure_Radio_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Lure_Sign.BP_Lure_Sign_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Lure_Sign_C::BndEvt__BP_Lure_Radio_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_Lure_Sign_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Lure_Sign_C", "BndEvt__BP_Lure_Radio_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_Lure_Sign_C_BndEvt__BP_Lure_Radio_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Lure_Sign.BP_Lure_Sign_C.copyMeshCustomPrimitiveDataToLight
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_Lure_Sign.BP_Lure_Sign_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_Lure_Sign_C::copyMeshCustomPrimitiveDataToLight()
+void ABP_Lure_Sign_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Lure_Sign_C", "copyMeshCustomPrimitiveDataToLight");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Lure_Sign.BP_Lure_Sign_C.OnActiveStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsActive_OnActiveStateChanged                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnActiveStateChanged                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Lure_Sign_C::OnActiveStateChanged(bool bIsActive_OnActiveStateChanged, bool bDoCosmetics_OnActiveStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnActiveStateChanged", FnName));
+
+	Params::BP_Lure_Sign_C_OnActiveStateChanged Parms{};
+
+	Parms.bIsActive_OnActiveStateChanged = bIsActive_OnActiveStateChanged;
+	Parms.bDoCosmetics_OnActiveStateChanged = bDoCosmetics_OnActiveStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -61,10 +67,8 @@ void ABP_Lure_Sign_C::copyMeshCustomPrimitiveDataToLight()
 
 void ABP_Lure_Sign_C::ExecuteUbergraph_BP_Lure_Sign(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Lure_Sign_C", "ExecuteUbergraph_BP_Lure_Sign");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Lure_Sign_C", "ExecuteUbergraph_BP_Lure_Sign", FuncInfo);
 
 	Params::BP_Lure_Sign_C_ExecuteUbergraph_BP_Lure_Sign Parms{};
 
@@ -74,53 +78,37 @@ void ABP_Lure_Sign_C::ExecuteUbergraph_BP_Lure_Sign(int32 EntryPoint)
 }
 
 
-// Function BP_Lure_Sign.BP_Lure_Sign_C.OnActiveStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bIsActive                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Lure_Sign.BP_Lure_Sign_C.copyMeshCustomPrimitiveDataToLight
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Lure_Sign_C::OnActiveStateChanged(bool bIsActive, bool bDoCosmetics)
+void ABP_Lure_Sign_C::copyMeshCustomPrimitiveDataToLight()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"copyMeshCustomPrimitiveDataToLight", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Lure_Sign_C", "OnActiveStateChanged");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_Lure_Sign_C_OnActiveStateChanged Parms{};
 
-	Parms.bIsActive = bIsActive;
-	Parms.bDoCosmetics = bDoCosmetics;
+// Function BP_Lure_Sign.BP_Lure_Sign_C.BndEvt__BP_Lure_Radio_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Lure_Sign_C::BndEvt__BP_Lure_Radio_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Lure_Radio_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_Lure_Sign_C_BndEvt__BP_Lure_Radio_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Lure_Sign.BP_Lure_Sign_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Lure_Sign_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Lure_Sign_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Lure_Sign.BP_Lure_Sign_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_Lure_Sign_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Lure_Sign_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

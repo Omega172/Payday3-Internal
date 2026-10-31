@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_Sentry_Fire.GA_Sentry_Fire_C
-// 0x0000 (0x8CC8 - 0x8CC8)
+// 0x0000 (0x0528 - 0x0528)
 class UGA_Sentry_Fire_C final : public USBZSentryGunRangedWeaponAbility
 {
 public:
@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGA_Sentry_Fire_C>();
 	}
 };
+DUMPER7_ASSERTS_UGA_Sentry_Fire_C;
 
 SDK_NAMESPACE_END

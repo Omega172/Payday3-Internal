@@ -31,18 +31,18 @@ public:
 	class USBZModularPartSlotBase*                WeaponStickerSlot;                                 // 0x0420(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetVisualsForInspect();
-	void OnNotifyEnd_A165E7FC40F3743584AB39B8F67756E1(class FName NotifyName);
-	void OnNotifyBegin_A165E7FC40F3743584AB39B8F67756E1(class FName NotifyName);
-	void OnLostStackFocused();
-	void OnLoaded_BCC49D6440060E030B1348B2BC9D612B(class UObject* Loaded);
-	void OnInterrupted_A165E7FC40F3743584AB39B8F67756E1(class FName NotifyName);
-	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
-	void OnControlReferenceClicked(class FName ActionName);
-	void OnCompleted_A165E7FC40F3743584AB39B8F67756E1(class FName NotifyName);
-	void OnBlendOut_A165E7FC40F3743584AB39B8F67756E1(class FName NotifyName);
+	bool CanInspectItem(const class USBZInventoryBaseData* InInspectData);
 	void ExecuteUbergraph_WBP_UI_Blackmarket_Inspect(int32 EntryPoint);
-	bool CanInspectItem(const class USBZInventoryBaseData* InInspectData_CanInspectItem);
+	void OnBlendOut_A165E7FC40F3743584AB39B8F67756E1(class FName NotifyName);
+	void OnCompleted_A165E7FC40F3743584AB39B8F67756E1(class FName NotifyName);
+	void OnControlReferenceClicked(class FName ActionName);
+	void OnGainedStackFocused(const class FName& PreviousValue);
+	void OnInterrupted_A165E7FC40F3743584AB39B8F67756E1(class FName NotifyName);
+	void OnLoaded_BCC49D6440060E030B1348B2BC9D612B(class UObject* Loaded);
+	void OnLostStackFocused();
+	void OnNotifyBegin_A165E7FC40F3743584AB39B8F67756E1(class FName NotifyName);
+	void OnNotifyEnd_A165E7FC40F3743584AB39B8F67756E1(class FName NotifyName);
+	void SetVisualsForInspect();
 
 public:
 	static class UClass* StaticClass()

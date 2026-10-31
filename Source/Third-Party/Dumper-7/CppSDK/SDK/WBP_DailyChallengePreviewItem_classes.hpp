@@ -35,9 +35,9 @@ public:
 	struct FSBZChallengeData                      ChallengeData;                                     // 0x0340(0x00A8)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void UpdateProgress(int32 InCurrentVal, int32 InMaxValue);
-	void InitItem(const struct FSBZChallengeData& InData);
 	void ExecuteUbergraph_WBP_DailyChallengePreviewItem(int32 EntryPoint);
+	void InitItem(const struct FSBZChallengeData& InData);
+	void UpdateProgress(int32 InCurrentVal, int32 InMaxValue);
 
 public:
 	static class UClass* StaticClass()

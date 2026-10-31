@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_MethBag_PureSecured_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_MethBag_PureSecured_C;
 
 SDK_NAMESPACE_END

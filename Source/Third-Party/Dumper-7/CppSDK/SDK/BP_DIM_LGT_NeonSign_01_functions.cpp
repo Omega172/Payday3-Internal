@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_DIM_LGT_NeonSign_01.BP_DIM_LGT_NeonSign_01_C.ExecuteUbergraph_BP_DIM_LGT_NeonSign_01
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_DIM_LGT_NeonSign_01_C::ExecuteUbergraph_BP_DIM_LGT_NeonSign_01(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_DIM_LGT_NeonSign_01_C", "ExecuteUbergraph_BP_DIM_LGT_NeonSign_01", FuncInfo);
+
+	Params::BP_DIM_LGT_NeonSign_01_C_ExecuteUbergraph_BP_DIM_LGT_NeonSign_01 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_DIM_LGT_NeonSign_01.BP_DIM_LGT_NeonSign_01_C.BndEvt__BP_LGT_ArtCielingLamp_a_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -26,10 +44,8 @@ SDK_NAMESPACE_START
 
 void ABP_DIM_LGT_NeonSign_01_C::BndEvt__BP_LGT_ArtCielingLamp_a_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DIM_LGT_NeonSign_01_C", "BndEvt__BP_LGT_ArtCielingLamp_a_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_LGT_ArtCielingLamp_a_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature", FnName));
 
 	Params::BP_DIM_LGT_NeonSign_01_C_BndEvt__BP_LGT_ArtCielingLamp_a_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature Parms{};
 
@@ -37,26 +53,6 @@ void ABP_DIM_LGT_NeonSign_01_C::BndEvt__BP_LGT_ArtCielingLamp_a_02_SBZPropDamage
 	Parms.Hits = Hits;
 	Parms.bDoCosmetics = bDoCosmetics;
 	Parms.DamageContext = std::move(DamageContext);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_DIM_LGT_NeonSign_01.BP_DIM_LGT_NeonSign_01_C.ExecuteUbergraph_BP_DIM_LGT_NeonSign_01
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_DIM_LGT_NeonSign_01_C::ExecuteUbergraph_BP_DIM_LGT_NeonSign_01(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DIM_LGT_NeonSign_01_C", "ExecuteUbergraph_BP_DIM_LGT_NeonSign_01");
-
-	Params::BP_DIM_LGT_NeonSign_01_C_ExecuteUbergraph_BP_DIM_LGT_NeonSign_01 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

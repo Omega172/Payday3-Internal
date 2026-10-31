@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ACHU_BPL_QueueMachine_01_TicketMachine_C>();
 	}
 };
+DUMPER7_ASSERTS_ACHU_BPL_QueueMachine_01_TicketMachine_C;
 
 SDK_NAMESPACE_END

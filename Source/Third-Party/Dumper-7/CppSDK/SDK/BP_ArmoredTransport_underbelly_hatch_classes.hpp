@@ -32,11 +32,11 @@ public:
 	int32                                         Marker_ID;                                         // 0x0398(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_ArmoredTransport_underbelly_hatchUnredeNewBlueprint_hatch_interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_ArmoredTransport_underbelly_hatch(int32 EntryPoint);
-	void Interaction_Disable();
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
 	void Interaction_Enable();
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
+	void Interaction_Disable();
+	void ExecuteUbergraph_BP_ArmoredTransport_underbelly_hatch(int32 EntryPoint);
+	void BndEvt__BP_ArmoredTransport_underbelly_hatchUnredeNewBlueprint_hatch_interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -52,5 +52,6 @@ public:
 		return GetDefaultObjImpl<ABP_ArmoredTransport_underbelly_hatch_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ArmoredTransport_underbelly_hatch_C;
 
 SDK_NAMESPACE_END

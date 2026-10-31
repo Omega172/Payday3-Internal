@@ -24,8 +24,8 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03D8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void BP_OnZiplineAttachmentChanged(bool bIsAttached);
 	void ExecuteUbergraph_BP_BaseEquipmentBag(int32 EntryPoint);
+	void BP_OnZiplineAttachmentChanged(bool bIsAttached);
 
 public:
 	static class UClass* StaticClass()
@@ -41,5 +41,6 @@ public:
 		return GetDefaultObjImpl<ABP_BaseEquipmentBag_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BaseEquipmentBag_C;
 
 SDK_NAMESPACE_END

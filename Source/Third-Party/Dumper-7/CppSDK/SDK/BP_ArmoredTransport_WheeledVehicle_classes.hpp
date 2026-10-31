@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_WheeledVehicle_Base_classes.hpp"
+#include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "AkAudio_structs.hpp"
 
@@ -19,25 +19,25 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_ArmoredTransport_WheeledVehicle.BP_ArmoredTransport_WheeledVehicle_C
-// 0x0040 (0x0970 - 0x0930)
+// 0x0040 (0x0A70 - 0x0A30)
 #pragma pack(push, 0x1)
 class SDK_ALIGN(0x10) ABP_ArmoredTransport_WheeledVehicle_C : public ABP_WheeledVehicle_Base_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0928(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USceneComponent*                        drill_attachPoint;                                 // 0x0930(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USBZBinaryStateComponent*               engineSound_SBZBinaryState;                        // 0x0938(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAkComponent*                           Ak;                                                // 0x0940(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Connector;                                         // 0x0948(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         attachActors;                                      // 0x0950(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate)
-	class ASBZPocketDrill*                        attachDrill;                                       // 0x0960(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A28(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USceneComponent*                        drill_attachPoint;                                 // 0x0A30(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZBinaryStateComponent*               engineSound_SBZBinaryState;                        // 0x0A38(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAkComponent*                           Ak;                                                // 0x0A40(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Connector;                                         // 0x0A48(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         attachActors;                                      // 0x0A50(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate)
+	class ASBZPocketDrill*                        attachDrill;                                       // 0x0A60(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_ArmoredTransport_WheeledVehicle_engineSound_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_ArmoredTransport_WheeledVehicle(int32 EntryPoint);
-	void setBackDoors(ESBZVehicleDoorState doorState, bool breached);
-	void setEngineSound(bool enabled);
 	void UserConstructionScript();
+	void setEngineSound(bool enabled);
+	void setBackDoors(ESBZVehicleDoorState doorState, bool breached);
+	void ExecuteUbergraph_BP_ArmoredTransport_WheeledVehicle(int32 EntryPoint);
+	void BndEvt__BP_ArmoredTransport_WheeledVehicle_engineSound_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
 
 public:
 	static class UClass* StaticClass()
@@ -54,5 +54,6 @@ public:
 	}
 };
 #pragma pack(pop)
+DUMPER7_ASSERTS_ABP_ArmoredTransport_WheeledVehicle_C;
 
 SDK_NAMESPACE_END

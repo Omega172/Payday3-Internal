@@ -16,22 +16,20 @@
 
 SDK_NAMESPACE_START
 
-// Function Lib_Message.Lib_Message_C.GMessage_Error
+// Function Lib_Message.Lib_Message_C.GMessage_Warning
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FString&                    B                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    InString                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ULib_Message_C::GMessage_Error(const class FString& B, class UObject* __WorldContext)
+void ULib_Message_C::GMessage_Warning(const class FString& InString, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GMessage_Warning", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("Lib_Message_C", "GMessage_Error");
+	Params::Lib_Message_C_GMessage_Warning Parms{};
 
-	Params::Lib_Message_C_GMessage_Error Parms{};
-
-	Parms.B = std::move(B);
+	Parms.InString = std::move(InString);
 	Parms.__WorldContext = __WorldContext;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -46,10 +44,8 @@ void ULib_Message_C::GMessage_Error(const class FString& B, class UObject* __Wor
 
 void ULib_Message_C::GMessage_Success(const class FString& B, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Lib_Message_C", "GMessage_Success");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GMessage_Success", FnName));
 
 	Params::Lib_Message_C_GMessage_Success Parms{};
 
@@ -60,22 +56,20 @@ void ULib_Message_C::GMessage_Success(const class FString& B, class UObject* __W
 }
 
 
-// Function Lib_Message.Lib_Message_C.GMessage_Warning
+// Function Lib_Message.Lib_Message_C.GMessage_Error
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FString&                    InString                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    B                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ULib_Message_C::GMessage_Warning(const class FString& InString, class UObject* __WorldContext)
+void ULib_Message_C::GMessage_Error(const class FString& B, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GMessage_Error", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("Lib_Message_C", "GMessage_Warning");
+	Params::Lib_Message_C_GMessage_Error Parms{};
 
-	Params::Lib_Message_C_GMessage_Warning Parms{};
-
-	Parms.InString = std::move(InString);
+	Parms.B = std::move(B);
 	Parms.__WorldContext = __WorldContext;
 
 	UObject::ProcessEvent(Func, &Parms);

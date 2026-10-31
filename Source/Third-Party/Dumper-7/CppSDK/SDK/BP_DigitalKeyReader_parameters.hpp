@@ -11,31 +11,12 @@
 #include "Basic.hpp"
 
 #include "Starbreeze_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "AkAudio_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
-
-// Function BP_DigitalKeyReader.BP_DigitalKeyReader_C.BndEvt__BP_DigitalKeyReader_InteractableComponent_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_DigitalKeyReader_C_BndEvt__BP_DigitalKeyReader_InteractableComponent_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_DigitalKeyReader.BP_DigitalKeyReader_C.BP_OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_DigitalKeyReader_C_BP_OnStateChanged final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
 
 // Function BP_DigitalKeyReader.BP_DigitalKeyReader_C.ExecuteUbergraph_BP_DigitalKeyReader
 // 0x0070 (0x0070 - 0x0000)
@@ -57,6 +38,28 @@ public:
 	struct FVector4                               CallFunc_MakeVector4_ReturnValue;                  // 0x0040(0x0020)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_DigitalKeyReader_C_ExecuteUbergraph_BP_DigitalKeyReader;
+
+// Function BP_DigitalKeyReader.BP_DigitalKeyReader_C.BP_OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_DigitalKeyReader_C_BP_OnStateChanged final
+{
+public:
+	ESBZModuleActorState                          NewState_BP_OnStateChanged;                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_BP_OnStateChanged;                    // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_DigitalKeyReader_C_BP_OnStateChanged;
+
+// Function BP_DigitalKeyReader.BP_DigitalKeyReader_C.BndEvt__BP_DigitalKeyReader_InteractableComponent_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_DigitalKeyReader_C_BndEvt__BP_DigitalKeyReader_InteractableComponent_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_DigitalKeyReader_C_BndEvt__BP_DigitalKeyReader_InteractableComponent_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

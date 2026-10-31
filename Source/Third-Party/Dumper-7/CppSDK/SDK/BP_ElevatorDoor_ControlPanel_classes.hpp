@@ -34,17 +34,17 @@ public:
 	int32                                         localMarkerID;                                     // 0x03A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_ElevatorDoor_ControlPanel_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_ElevatorDoor_ControlPanel_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_ElevatorDoor_ControlPanel_WaypointSBZBinaryState_K2Node_ComponentBoundEvent_2_SBZBinaryStateChangedSignature__DelegateSignature(bool bState_0, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_ElevatorDoor_ControlPanel(int32 EntryPoint);
-	class FText GetMarkerText();
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void PlayTurnOff();
-	void PlayTurnOn();
-	void SetInteractionEnable(bool Interaction_Enabled, bool waypointEnabled);
-	void SetMarker(const class USBZMarkerDataAsset* MarkerDataAsset);
 	void UserConstructionScript();
+	void SetMarker(const class USBZMarkerDataAsset* MarkerDataAsset);
+	void SetInteractionEnable(bool Interaction_Enabled, bool waypointEnabled);
+	void PlayTurnOn();
+	void PlayTurnOff();
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	class FText GetMarkerText();
+	void ExecuteUbergraph_BP_ElevatorDoor_ControlPanel(int32 EntryPoint);
+	void BndEvt__BP_ElevatorDoor_ControlPanel_WaypointSBZBinaryState_K2Node_ComponentBoundEvent_2_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
+	void BndEvt__BP_ElevatorDoor_ControlPanel_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_ElevatorDoor_ControlPanel_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -60,5 +60,6 @@ public:
 		return GetDefaultObjImpl<ABP_ElevatorDoor_ControlPanel_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ElevatorDoor_ControlPanel_C;
 
 SDK_NAMESPACE_END

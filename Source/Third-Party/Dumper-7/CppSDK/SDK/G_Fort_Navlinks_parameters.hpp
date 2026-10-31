@@ -17,219 +17,23 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline3_K2Node_ActorBoundEvent_25_SBZBagEnteredDelegate__DelegateSignature
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.OnPreplanningAssetsTagsApplied
 // 0x0020 (0x0020 - 0x0000)
-struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline3_K2Node_ActorBoundEvent_25_SBZBagEnteredDelegate__DelegateSignature final
+struct G_Fort_Navlinks_C_OnPreplanningAssetsTagsApplied final
 {
 public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FGameplayTagContainer                  PreplanningTagContainer_OnPreplanningAssetsTagsApplied; // 0x0000(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
+DUMPER7_ASSERTS_G_Fort_Navlinks_C_OnPreplanningAssetsTagsApplied;
 
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline4_K2Node_ActorBoundEvent_26_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline4_K2Node_ActorBoundEvent_26_SBZBagEnteredDelegate__DelegateSignature final
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.OnPlayersCarryBagChanged
+// 0x0010 (0x0010 - 0x0000)
+struct G_Fort_Navlinks_C_OnPlayersCarryBagChanged final
 {
 public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FSBZPlayersCarryBagChangedEvent        Data_OnPlayersCarryBagChanged;                     // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline5_K2Node_ActorBoundEvent_16_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline5_K2Node_ActorBoundEvent_16_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline6_K2Node_ActorBoundEvent_17_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline6_K2Node_ActorBoundEvent_17_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume10_K2Node_ActorBoundEvent_9_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume10_K2Node_ActorBoundEvent_9_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume11_K2Node_ActorBoundEvent_10_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume11_K2Node_ActorBoundEvent_10_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume12_K2Node_ActorBoundEvent_11_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume12_K2Node_ActorBoundEvent_11_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume13_K2Node_ActorBoundEvent_12_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume13_K2Node_ActorBoundEvent_12_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume14_K2Node_ActorBoundEvent_13_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume14_K2Node_ActorBoundEvent_13_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume2_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume2_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume3_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume3_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume4_K2Node_ActorBoundEvent_3_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume4_K2Node_ActorBoundEvent_3_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume5_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume5_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume6_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume6_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume7_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume7_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume8_K2Node_ActorBoundEvent_7_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume8_K2Node_ActorBoundEvent_7_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume9_K2Node_ActorBoundEvent_8_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume9_K2Node_ActorBoundEvent_8_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume_1_K2Node_ActorBoundEvent_0_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume_1_K2Node_ActorBoundEvent_0_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Fort_Navlinks_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Fort_Navlinks_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
+DUMPER7_ASSERTS_G_Fort_Navlinks_C_OnPlayersCarryBagChanged;
 
 // Function G_Fort_Navlinks.G_Fort_Navlinks_C.ExecuteUbergraph_G_Fort_Navlinks
 // 0x03D8 (0x03D8 - 0x0000)
@@ -365,22 +169,241 @@ public:
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x03D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x03D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Fort_Navlinks_C_ExecuteUbergraph_G_Fort_Navlinks;
 
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.OnPlayersCarryBagChanged
-// 0x0010 (0x0010 - 0x0000)
-struct G_Fort_Navlinks_C_OnPlayersCarryBagChanged final
-{
-public:
-	struct FSBZPlayersCarryBagChangedEvent        Data;                                              // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
-};
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.OnPreplanningAssetsTagsApplied
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature
 // 0x0020 (0x0020 - 0x0000)
-struct G_Fort_Navlinks_C_OnPreplanningAssetsTagsApplied final
+struct G_Fort_Navlinks_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature final
 {
 public:
-	struct FGameplayTagContainer                  PreplanningTagContainer;                           // 0x0000(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
+DUMPER7_ASSERTS_G_Fort_Navlinks_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Fort_Navlinks_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Fort_Navlinks_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume_1_K2Node_ActorBoundEvent_0_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume_1_K2Node_ActorBoundEvent_0_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume_1_K2Node_ActorBoundEvent_0_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume9_K2Node_ActorBoundEvent_8_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume9_K2Node_ActorBoundEvent_8_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume9_K2Node_ActorBoundEvent_8_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume8_K2Node_ActorBoundEvent_7_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume8_K2Node_ActorBoundEvent_7_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume8_K2Node_ActorBoundEvent_7_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume7_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume7_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume7_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume6_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume6_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume6_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume5_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume5_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume5_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume4_K2Node_ActorBoundEvent_3_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume4_K2Node_ActorBoundEvent_3_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume4_K2Node_ActorBoundEvent_3_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume3_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume3_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume3_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume2_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume2_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume2_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume14_K2Node_ActorBoundEvent_13_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume14_K2Node_ActorBoundEvent_13_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume14_K2Node_ActorBoundEvent_13_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume13_K2Node_ActorBoundEvent_12_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume13_K2Node_ActorBoundEvent_12_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume13_K2Node_ActorBoundEvent_12_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume12_K2Node_ActorBoundEvent_11_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume12_K2Node_ActorBoundEvent_11_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume12_K2Node_ActorBoundEvent_11_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume11_K2Node_ActorBoundEvent_10_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume11_K2Node_ActorBoundEvent_10_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume11_K2Node_ActorBoundEvent_10_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume10_K2Node_ActorBoundEvent_9_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume10_K2Node_ActorBoundEvent_9_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume10_K2Node_ActorBoundEvent_9_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline6_K2Node_ActorBoundEvent_17_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline6_K2Node_ActorBoundEvent_17_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline6_K2Node_ActorBoundEvent_17_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline5_K2Node_ActorBoundEvent_16_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline5_K2Node_ActorBoundEvent_16_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline5_K2Node_ActorBoundEvent_16_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline4_K2Node_ActorBoundEvent_26_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline4_K2Node_ActorBoundEvent_26_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline4_K2Node_ActorBoundEvent_26_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline3_K2Node_ActorBoundEvent_25_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline3_K2Node_ActorBoundEvent_25_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline3_K2Node_ActorBoundEvent_25_SBZBagEnteredDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

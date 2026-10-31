@@ -18,6 +18,31 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_SHI_FenceGate_01.BP_SHI_FenceGate_01_C.UserConstructionScript
+// 0x0260 (0x0260 - 0x0000)
+struct BP_SHI_FenceGate_01_C_UserConstructionScript final
+{
+public:
+	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                Temp_struct_Variable;                              // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                K2Node_Select_Default;                             // 0x0020(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0050(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult_1;  // 0x0158(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+DUMPER7_ASSERTS_BP_SHI_FenceGate_01_C_UserConstructionScript;
+
+// Function BP_SHI_FenceGate_01.BP_SHI_FenceGate_01_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_SHI_FenceGate_01_C_OnStateChanged final
+{
+public:
+	bool                                          bStateToChangeTo_OnStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SHI_FenceGate_01_C_OnStateChanged;
+
 // Function BP_SHI_FenceGate_01.BP_SHI_FenceGate_01_C.ExecuteUbergraph_BP_SHI_FenceGate_01
 // 0x0280 (0x0280 - 0x0000)
 struct BP_SHI_FenceGate_01_C_ExecuteUbergraph_BP_SHI_FenceGate_01 final
@@ -37,29 +62,7 @@ public:
 	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult_1;  // 0x0170(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x0278(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_SHI_FenceGate_01.BP_SHI_FenceGate_01_C.OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_SHI_FenceGate_01_C_OnStateChanged final
-{
-public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_SHI_FenceGate_01.BP_SHI_FenceGate_01_C.UserConstructionScript
-// 0x0260 (0x0260 - 0x0000)
-struct BP_SHI_FenceGate_01_C_UserConstructionScript final
-{
-public:
-	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                Temp_struct_Variable;                              // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                K2Node_Select_Default;                             // 0x0020(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0050(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult_1;  // 0x0158(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
+DUMPER7_ASSERTS_BP_SHI_FenceGate_01_C_ExecuteUbergraph_BP_SHI_FenceGate_01;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

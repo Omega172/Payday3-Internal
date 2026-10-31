@@ -17,24 +17,25 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_CarriedHackablePhone.BP_CarriedHackablePhone_C.BP_OnHackStarted
-// 0x0001 (0x0001 - 0x0000)
-struct BP_CarriedHackablePhone_C_BP_OnHackStarted final
+// Function BP_CarriedHackablePhone.BP_CarriedHackablePhone_C.UserConstructionScript
+// 0x0070 (0x0070 - 0x0000)
+struct BP_CarriedHackablePhone_C_UserConstructionScript final
 {
 public:
-	bool                                          bIsLocallyControlled;                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_R;                             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_G;                             // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_B;                             // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_BreakColor_A;                             // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_18[0x8];                                       // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector4                               CallFunc_MakeVector4_ReturnValue;                  // 0x0020(0x0020)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_MakeVector4_X_ImplicitCast;               // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_MakeVector4_Y_ImplicitCast;               // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_MakeVector4_Z_ImplicitCast;               // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_MakeVector4_W_ImplicitCast;               // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_CarriedHackablePhone.BP_CarriedHackablePhone_C.BP_OnPlayerInRangeChecked
-// 0x0008 (0x0008 - 0x0000)
-struct BP_CarriedHackablePhone_C_BP_OnPlayerInRangeChecked final
-{
-public:
-	bool                                          bInRange;                                          // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bWasInRange;                                       // 0x0001(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Progress;                                          // 0x0004(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_CarriedHackablePhone_C_UserConstructionScript;
 
 // Function BP_CarriedHackablePhone.BP_CarriedHackablePhone_C.ExecuteUbergraph_BP_CarriedHackablePhone
 // 0x0070 (0x0070 - 0x0000)
@@ -59,25 +60,28 @@ public:
 	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetVariableFloat_InValue_ImplicitCast;    // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_CarriedHackablePhone_C_ExecuteUbergraph_BP_CarriedHackablePhone;
 
-// Function BP_CarriedHackablePhone.BP_CarriedHackablePhone_C.UserConstructionScript
-// 0x0070 (0x0070 - 0x0000)
-struct BP_CarriedHackablePhone_C_UserConstructionScript final
+// Function BP_CarriedHackablePhone.BP_CarriedHackablePhone_C.BP_OnPlayerInRangeChecked
+// 0x0008 (0x0008 - 0x0000)
+struct BP_CarriedHackablePhone_C_BP_OnPlayerInRangeChecked final
 {
 public:
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_R;                             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_G;                             // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_B;                             // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_BreakColor_A;                             // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_18[0x8];                                       // 0x0018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector4                               CallFunc_MakeVector4_ReturnValue;                  // 0x0020(0x0020)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_MakeVector4_X_ImplicitCast;               // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_MakeVector4_Y_ImplicitCast;               // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_MakeVector4_Z_ImplicitCast;               // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_MakeVector4_W_ImplicitCast;               // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInRange_BP_OnPlayerInRangeChecked;                // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bWasInRange_BP_OnPlayerInRangeChecked;             // 0x0001(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Progress_BP_OnPlayerInRangeChecked;                // 0x0004(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_CarriedHackablePhone_C_BP_OnPlayerInRangeChecked;
+
+// Function BP_CarriedHackablePhone.BP_CarriedHackablePhone_C.BP_OnHackStarted
+// 0x0001 (0x0001 - 0x0000)
+struct BP_CarriedHackablePhone_C_BP_OnHackStarted final
+{
+public:
+	bool                                          bIsLocallyControlled_BP_OnHackStarted;             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_CarriedHackablePhone_C_BP_OnHackStarted;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

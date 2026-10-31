@@ -19,321 +19,83 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function G_Dema_Toystore.G_Dema_Toystore_C.ArmoryLoudPuzzlePicked
+// Function G_Dema_Toystore.G_Dema_Toystore_C.SetToystoreStoreAvailable
+// 0x0001 (0x0001 - 0x0000)
+struct G_Dema_Toystore_C_SetToystoreStoreAvailable final
+{
+public:
+	bool                                          StoreAvailable;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_SetToystoreStoreAvailable;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.SetEscape
+// 0x0001 (0x0001 - 0x0000)
+struct G_Dema_Toystore_C_SetEscape final
+{
+public:
+	bool                                          EscapeDecided;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_SetEscape;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.SaveLocationText
+// 0x0028 (0x0028 - 0x0000)
+struct G_Dema_Toystore_C_SaveLocationText final
+{
+public:
+	class ASBZDestroyGroup*                       TeddyBearDestroyGroup;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_1;    // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_2;    // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_3;    // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_4;    // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_5;    // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue_2;                  // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue_3;                  // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue_4;                  // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue_5;                  // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_SaveLocationText;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.QRHackingStarted
+// 0x0010 (0x0010 - 0x0000)
+struct G_Dema_Toystore_C_QRHackingStarted final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_QRHackingStarted;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.MainLootLocationPicked
 // 0x0004 (0x0004 - 0x0000)
-struct G_Dema_Toystore_C_ArmoryLoudPuzzlePicked final
+struct G_Dema_Toystore_C_MainLootLocationPicked final
 {
 public:
-	int32                                         ArmoryLoudPuzzleInt;                               // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         LootLocationInt;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Dema_Toystore_C_MainLootLocationPicked;
 
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_AccessPoint1_K2Node_ActorBoundEvent_49_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_AccessPoint1_K2Node_ActorBoundEvent_49_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_AccessPoint3_K2Node_ActorBoundEvent_29_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_AccessPoint3_K2Node_ActorBoundEvent_29_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_AccessPoint4_K2Node_ActorBoundEvent_30_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_AccessPoint4_K2Node_ActorBoundEvent_30_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_AccessPoint5_K2Node_ActorBoundEvent_36_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_AccessPoint5_K2Node_ActorBoundEvent_36_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_AccessPoint6_K2Node_ActorBoundEvent_37_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_AccessPoint6_K2Node_ActorBoundEvent_37_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore1_K2Node_ActorBoundEvent_174_SBZOnCompleteDelegate__DelegateSignature
+// Function G_Dema_Toystore.G_Dema_Toystore_C.MainGoalIdentified
 // 0x0001 (0x0001 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore1_K2Node_ActorBoundEvent_174_SBZOnCompleteDelegate__DelegateSignature final
+struct G_Dema_Toystore_C_MainGoalIdentified final
 {
 public:
-	bool                                          bWasSuccess;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ManifestFound;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Dema_Toystore_C_MainGoalIdentified;
 
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore1_K2Node_ActorBoundEvent_51_ActorDestroyedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore1_K2Node_ActorBoundEvent_51_ActorDestroyedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore2_K2Node_ActorBoundEvent_175_SBZOnCompleteDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore2_K2Node_ActorBoundEvent_175_SBZOnCompleteDelegate__DelegateSignature final
-{
-public:
-	bool                                          bWasSuccess;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore2_K2Node_ActorBoundEvent_53_ActorDestroyedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore2_K2Node_ActorBoundEvent_53_ActorDestroyedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore3_K2Node_ActorBoundEvent_172_ActorDestroyedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore3_K2Node_ActorBoundEvent_172_ActorDestroyedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore3_K2Node_ActorBoundEvent_176_SBZOnCompleteDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore3_K2Node_ActorBoundEvent_176_SBZOnCompleteDelegate__DelegateSignature final
-{
-public:
-	bool                                          bWasSuccess;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore4_K2Node_ActorBoundEvent_177_SBZOnCompleteDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore4_K2Node_ActorBoundEvent_177_SBZOnCompleteDelegate__DelegateSignature final
-{
-public:
-	bool                                          bWasSuccess;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore4_K2Node_ActorBoundEvent_56_ActorDestroyedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore4_K2Node_ActorBoundEvent_56_ActorDestroyedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore5_K2Node_ActorBoundEvent_178_SBZOnCompleteDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore5_K2Node_ActorBoundEvent_178_SBZOnCompleteDelegate__DelegateSignature final
-{
-public:
-	bool                                          bWasSuccess;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore5_K2Node_ActorBoundEvent_52_ActorDestroyedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore5_K2Node_ActorBoundEvent_52_ActorDestroyedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_ConnectedMaintenanceBox_Toystore_K2Node_ActorBoundEvent_7_SBZMaintenanceBoxBoolDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedMaintenanceBox_Toystore_K2Node_ActorBoundEvent_7_SBZMaintenanceBoxBoolDelegate__DelegateSignature final
-{
-public:
-	bool                                          bSuccessful;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_DigitalKeyReader_Toystore1_K2Node_ActorBoundEvent_21_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_DigitalKeyReader_Toystore1_K2Node_ActorBoundEvent_21_SBZModuleActorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_DigitalKeyReader_Toystore2_K2Node_ActorBoundEvent_22_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_DigitalKeyReader_Toystore2_K2Node_ActorBoundEvent_22_SBZModuleActorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_GenericHackableComputer_TeddystoreCodes_K2Node_ActorBoundEvent_5_SBZHackableActorInterruptedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_GenericHackableComputer_TeddystoreCodes_K2Node_ActorBoundEvent_5_SBZHackableActorInterruptedDelegate__DelegateSignature final
-{
-public:
-	ESBZHackableActorInterruptReason              Reason;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_PortableSSD2_K2Node_ActorBoundEvent_25_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_PortableSSD2_K2Node_ActorBoundEvent_25_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_SHI_INT_Door_Single_Reinforced_10_K2Node_ActorBoundEvent_158_SBZGateStateChangedDelegate__DelegateSignature
+// Function G_Dema_Toystore.G_Dema_Toystore_C.HeistStateChanged
 // 0x0002 (0x0002 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_SHI_INT_Door_Single_Reinforced_10_K2Node_ActorBoundEvent_158_SBZGateStateChangedDelegate__DelegateSignature final
+struct G_Dema_Toystore_C_HeistStateChanged final
 {
 public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                OldHeistState_HeistStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CurrentHeistState_HeistStateChanged;               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_SHI_INT_Door_Single_Reinforced_12_K2Node_ActorBoundEvent_20_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_SHI_INT_Door_Single_Reinforced_12_K2Node_ActorBoundEvent_20_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_SHI_INT_Door_Single_Reinforced_16_K2Node_ActorBoundEvent_160_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_SHI_INT_Door_Single_Reinforced_16_K2Node_ActorBoundEvent_160_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_SBZPawnSpawnPredefined_Employee4_K2Node_ActorBoundEvent_17_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_SBZPawnSpawnPredefined_Employee4_K2Node_ActorBoundEvent_17_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_SBZPawnSpawnPredefined_Employee4_K2Node_ActorBoundEvent_20_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_SBZPawnSpawnPredefined_Employee4_K2Node_ActorBoundEvent_20_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  DeadPawn;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                Spawner;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_SBZPlayerLookAtTrigger_1_K2Node_ActorBoundEvent_14_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_SBZPlayerLookAtTrigger_1_K2Node_ActorBoundEvent_14_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_3_K2Node_ActorBoundEvent_49_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_3_K2Node_ActorBoundEvent_49_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_EmptyClothingStore_K2Node_ActorBoundEvent_45_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_EmptyClothingStore_K2Node_ActorBoundEvent_45_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_EmptyClothingStore_K2Node_ActorBoundEvent_47_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_EmptyClothingStore_K2Node_ActorBoundEvent_47_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_Toystore_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_Toystore_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_Toystore_Loud_K2Node_ActorBoundEvent_31_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_Toystore_Loud_K2Node_ActorBoundEvent_31_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_ToystoreShelfArea_K2Node_ActorBoundEvent_24_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_ToystoreShelfArea_K2Node_ActorBoundEvent_24_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_ToystoreStorage_K2Node_ActorBoundEvent_6_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_ToystoreStorage_K2Node_ActorBoundEvent_6_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.CheckRouterInteractable
-// 0x0070 (0x0070 - 0x0000)
-struct G_Dema_Toystore_C_CheckRouterInteractable final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class ASBZInteractionActor*>           Interactables;                                     // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	class ASBZInteractionActor*                   ActiveInteractable;                                // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class ASBZWaypoint*>                   InteractablesWPs;                                  // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	bool                                          IsSameInteractable;                                // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZInteractionActor*                   InteractedActor;                                   // 0x0038(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZWaypoint*                           CallFunc_Array_Get_Item;                           // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0055(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_56[0x2];                                       // 0x0056(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZInteractionActor*                   CallFunc_Array_Get_Item_1;                         // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_1;    // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.DisableActiveStore
-// 0x0004 (0x0004 - 0x0000)
-struct G_Dema_Toystore_C_DisableActiveStore final
-{
-public:
-	int32                                         ActiveStore;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_HeistStateChanged;
 
 // Function G_Dema_Toystore.G_Dema_Toystore_C.ExecuteUbergraph_G_Dema_Toystore
 // 0x0DF8 (0x0DF8 - 0x0000)
@@ -977,77 +739,359 @@ public:
 	uint8                                         Pad_DF1[0x3];                                      // 0x0DF1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x0DF4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Dema_Toystore_C_ExecuteUbergraph_G_Dema_Toystore;
 
-// Function G_Dema_Toystore.G_Dema_Toystore_C.HeistStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct G_Dema_Toystore_C_HeistStateChanged final
-{
-public:
-	EPD3HeistState                                OldHeistState;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CurrentHeistState;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.MainGoalIdentified
-// 0x0001 (0x0001 - 0x0000)
-struct G_Dema_Toystore_C_MainGoalIdentified final
-{
-public:
-	bool                                          ManifestFound_0;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.MainLootLocationPicked
+// Function G_Dema_Toystore.G_Dema_Toystore_C.DisableActiveStore
 // 0x0004 (0x0004 - 0x0000)
-struct G_Dema_Toystore_C_MainLootLocationPicked final
+struct G_Dema_Toystore_C_DisableActiveStore final
 {
 public:
-	int32                                         LootLocationInt;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         ActiveStore;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Dema_Toystore_C_DisableActiveStore;
 
-// Function G_Dema_Toystore.G_Dema_Toystore_C.QRHackingStarted
+// Function G_Dema_Toystore.G_Dema_Toystore_C.CheckRouterInteractable
+// 0x0070 (0x0070 - 0x0000)
+struct G_Dema_Toystore_C_CheckRouterInteractable final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class ASBZInteractionActor*>           Interactables;                                     // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class ASBZInteractionActor*                   ActiveInteractable;                                // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class ASBZWaypoint*>                   InteractablesWPs;                                  // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	bool                                          IsSameInteractable;                                // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZInteractionActor*                   InteractedActor;                                   // 0x0038(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZWaypoint*                           CallFunc_Array_Get_Item;                           // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0055(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_56[0x2];                                       // 0x0056(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZInteractionActor*                   CallFunc_Array_Get_Item_1;                         // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_1;    // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_CheckRouterInteractable;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_ToystoreStorage_K2Node_ActorBoundEvent_6_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_ToystoreStorage_K2Node_ActorBoundEvent_6_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_ToystoreStorage_K2Node_ActorBoundEvent_6_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_ToystoreShelfArea_K2Node_ActorBoundEvent_24_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_ToystoreShelfArea_K2Node_ActorBoundEvent_24_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_ToystoreShelfArea_K2Node_ActorBoundEvent_24_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_Toystore_Loud_K2Node_ActorBoundEvent_31_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_Toystore_Loud_K2Node_ActorBoundEvent_31_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_Toystore_Loud_K2Node_ActorBoundEvent_31_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_Toystore_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_Toystore_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_Toystore_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_EmptyClothingStore_K2Node_ActorBoundEvent_47_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_EmptyClothingStore_K2Node_ActorBoundEvent_47_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_EmptyClothingStore_K2Node_ActorBoundEvent_47_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_EmptyClothingStore_K2Node_ActorBoundEvent_45_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_EmptyClothingStore_K2Node_ActorBoundEvent_45_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_EmptyClothingStore_K2Node_ActorBoundEvent_45_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_3_K2Node_ActorBoundEvent_49_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_3_K2Node_ActorBoundEvent_49_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_SBZPlayerTriggerVolume_3_K2Node_ActorBoundEvent_49_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_SBZPlayerLookAtTrigger_1_K2Node_ActorBoundEvent_14_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_SBZPlayerLookAtTrigger_1_K2Node_ActorBoundEvent_14_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_SBZPlayerLookAtTrigger_1_K2Node_ActorBoundEvent_14_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_SBZPawnSpawnPredefined_Employee4_K2Node_ActorBoundEvent_20_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct G_Dema_Toystore_C_QRHackingStarted final
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_SBZPawnSpawnPredefined_Employee4_K2Node_ActorBoundEvent_20_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  DeadPawn;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                Spawner;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_SBZPawnSpawnPredefined_Employee4_K2Node_ActorBoundEvent_20_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_SBZPawnSpawnPredefined_Employee4_K2Node_ActorBoundEvent_17_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_SBZPawnSpawnPredefined_Employee4_K2Node_ActorBoundEvent_17_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_SBZPawnSpawnPredefined_Employee4_K2Node_ActorBoundEvent_17_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_SHI_INT_Door_Single_Reinforced_16_K2Node_ActorBoundEvent_160_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_SHI_INT_Door_Single_Reinforced_16_K2Node_ActorBoundEvent_160_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_SHI_INT_Door_Single_Reinforced_16_K2Node_ActorBoundEvent_160_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_SHI_INT_Door_Single_Reinforced_12_K2Node_ActorBoundEvent_20_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_SHI_INT_Door_Single_Reinforced_12_K2Node_ActorBoundEvent_20_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_SHI_INT_Door_Single_Reinforced_12_K2Node_ActorBoundEvent_20_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_SHI_INT_Door_Single_Reinforced_10_K2Node_ActorBoundEvent_158_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_SHI_INT_Door_Single_Reinforced_10_K2Node_ActorBoundEvent_158_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_SHI_INT_Door_Single_Reinforced_10_K2Node_ActorBoundEvent_158_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_PortableSSD2_K2Node_ActorBoundEvent_25_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_PortableSSD2_K2Node_ActorBoundEvent_25_SBZActorOnInteraction__DelegateSignature final
 {
 public:
 	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_PortableSSD2_K2Node_ActorBoundEvent_25_SBZActorOnInteraction__DelegateSignature;
 
-// Function G_Dema_Toystore.G_Dema_Toystore_C.SaveLocationText
-// 0x0028 (0x0028 - 0x0000)
-struct G_Dema_Toystore_C_SaveLocationText final
-{
-public:
-	class ASBZDestroyGroup*                       TeddyBearDestroyGroup;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_1;    // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_2;    // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_3;    // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_4;    // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_5;    // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_1;                  // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_2;                  // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_3;                  // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_4;                  // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue_5;                  // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Toystore.G_Dema_Toystore_C.SetEscape
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_GenericHackableComputer_TeddystoreCodes_K2Node_ActorBoundEvent_5_SBZHackableActorInterruptedDelegate__DelegateSignature
 // 0x0001 (0x0001 - 0x0000)
-struct G_Dema_Toystore_C_SetEscape final
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_GenericHackableComputer_TeddystoreCodes_K2Node_ActorBoundEvent_5_SBZHackableActorInterruptedDelegate__DelegateSignature final
 {
 public:
-	bool                                          EscapeDecided_0;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZHackableActorInterruptReason              Reason;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_GenericHackableComputer_TeddystoreCodes_K2Node_ActorBoundEvent_5_SBZHackableActorInterruptedDelegate__DelegateSignature;
 
-// Function G_Dema_Toystore.G_Dema_Toystore_C.SetToystoreStoreAvailable
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_DigitalKeyReader_Toystore2_K2Node_ActorBoundEvent_22_SBZModuleActorStateChangedDelegate__DelegateSignature
 // 0x0001 (0x0001 - 0x0000)
-struct G_Dema_Toystore_C_SetToystoreStoreAvailable final
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_DigitalKeyReader_Toystore2_K2Node_ActorBoundEvent_22_SBZModuleActorStateChangedDelegate__DelegateSignature final
 {
 public:
-	bool                                          StoreAvailable_0;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_DigitalKeyReader_Toystore2_K2Node_ActorBoundEvent_22_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_DigitalKeyReader_Toystore1_K2Node_ActorBoundEvent_21_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_DigitalKeyReader_Toystore1_K2Node_ActorBoundEvent_21_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_DigitalKeyReader_Toystore1_K2Node_ActorBoundEvent_21_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_ConnectedMaintenanceBox_Toystore_K2Node_ActorBoundEvent_7_SBZMaintenanceBoxBoolDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedMaintenanceBox_Toystore_K2Node_ActorBoundEvent_7_SBZMaintenanceBoxBoolDelegate__DelegateSignature final
+{
+public:
+	bool                                          bSuccessful;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedMaintenanceBox_Toystore_K2Node_ActorBoundEvent_7_SBZMaintenanceBoxBoolDelegate__DelegateSignature;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore5_K2Node_ActorBoundEvent_52_ActorDestroyedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore5_K2Node_ActorBoundEvent_52_ActorDestroyedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore5_K2Node_ActorBoundEvent_52_ActorDestroyedSignature__DelegateSignature;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore5_K2Node_ActorBoundEvent_178_SBZOnCompleteDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore5_K2Node_ActorBoundEvent_178_SBZOnCompleteDelegate__DelegateSignature final
+{
+public:
+	bool                                          bWasSuccess;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore5_K2Node_ActorBoundEvent_178_SBZOnCompleteDelegate__DelegateSignature;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore4_K2Node_ActorBoundEvent_56_ActorDestroyedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore4_K2Node_ActorBoundEvent_56_ActorDestroyedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore4_K2Node_ActorBoundEvent_56_ActorDestroyedSignature__DelegateSignature;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore4_K2Node_ActorBoundEvent_177_SBZOnCompleteDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore4_K2Node_ActorBoundEvent_177_SBZOnCompleteDelegate__DelegateSignature final
+{
+public:
+	bool                                          bWasSuccess;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore4_K2Node_ActorBoundEvent_177_SBZOnCompleteDelegate__DelegateSignature;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore3_K2Node_ActorBoundEvent_176_SBZOnCompleteDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore3_K2Node_ActorBoundEvent_176_SBZOnCompleteDelegate__DelegateSignature final
+{
+public:
+	bool                                          bWasSuccess;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore3_K2Node_ActorBoundEvent_176_SBZOnCompleteDelegate__DelegateSignature;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore3_K2Node_ActorBoundEvent_172_ActorDestroyedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore3_K2Node_ActorBoundEvent_172_ActorDestroyedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore3_K2Node_ActorBoundEvent_172_ActorDestroyedSignature__DelegateSignature;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore2_K2Node_ActorBoundEvent_53_ActorDestroyedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore2_K2Node_ActorBoundEvent_53_ActorDestroyedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore2_K2Node_ActorBoundEvent_53_ActorDestroyedSignature__DelegateSignature;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore2_K2Node_ActorBoundEvent_175_SBZOnCompleteDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore2_K2Node_ActorBoundEvent_175_SBZOnCompleteDelegate__DelegateSignature final
+{
+public:
+	bool                                          bWasSuccess;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore2_K2Node_ActorBoundEvent_175_SBZOnCompleteDelegate__DelegateSignature;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore1_K2Node_ActorBoundEvent_51_ActorDestroyedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore1_K2Node_ActorBoundEvent_51_ActorDestroyedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore1_K2Node_ActorBoundEvent_51_ActorDestroyedSignature__DelegateSignature;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore1_K2Node_ActorBoundEvent_174_SBZOnCompleteDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore1_K2Node_ActorBoundEvent_174_SBZOnCompleteDelegate__DelegateSignature final
+{
+public:
+	bool                                          bWasSuccess;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_ConnectedCableBox_ToyStore1_K2Node_ActorBoundEvent_174_SBZOnCompleteDelegate__DelegateSignature;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_AccessPoint6_K2Node_ActorBoundEvent_37_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_AccessPoint6_K2Node_ActorBoundEvent_37_SBZActorOnInteraction__DelegateSignature final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_AccessPoint6_K2Node_ActorBoundEvent_37_SBZActorOnInteraction__DelegateSignature;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_AccessPoint5_K2Node_ActorBoundEvent_36_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_AccessPoint5_K2Node_ActorBoundEvent_36_SBZActorOnInteraction__DelegateSignature final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_AccessPoint5_K2Node_ActorBoundEvent_36_SBZActorOnInteraction__DelegateSignature;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_AccessPoint4_K2Node_ActorBoundEvent_30_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_AccessPoint4_K2Node_ActorBoundEvent_30_SBZActorOnInteraction__DelegateSignature final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_AccessPoint4_K2Node_ActorBoundEvent_30_SBZActorOnInteraction__DelegateSignature;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_AccessPoint3_K2Node_ActorBoundEvent_29_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_AccessPoint3_K2Node_ActorBoundEvent_29_SBZActorOnInteraction__DelegateSignature final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_AccessPoint3_K2Node_ActorBoundEvent_29_SBZActorOnInteraction__DelegateSignature;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.BndEvt__G_Dema_Toystore_BP_AccessPoint1_K2Node_ActorBoundEvent_49_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_AccessPoint1_K2Node_ActorBoundEvent_49_SBZActorOnInteraction__DelegateSignature final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_BndEvt__G_Dema_Toystore_BP_AccessPoint1_K2Node_ActorBoundEvent_49_SBZActorOnInteraction__DelegateSignature;
+
+// Function G_Dema_Toystore.G_Dema_Toystore_C.ArmoryLoudPuzzlePicked
+// 0x0004 (0x0004 - 0x0000)
+struct G_Dema_Toystore_C_ArmoryLoudPuzzlePicked final
+{
+public:
+	int32                                         ArmoryLoudPuzzleInt;                               // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Toystore_C_ArmoryLoudPuzzlePicked;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

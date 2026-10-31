@@ -14,6 +14,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_DAT_AISystem_01_HackingTimer.WBP_DAT_AISystem_01_HackingTimer_C.setProgress
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_DAT_AISystem_01_HackingTimer_C_setProgress final
+{
+public:
+	int32                                         InputPin;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_DAT_AISystem_01_HackingTimer_C_setProgress;
+
 // Function WBP_DAT_AISystem_01_HackingTimer.WBP_DAT_AISystem_01_HackingTimer_C.ExecuteUbergraph_WBP_DAT_AISystem_01_HackingTimer
 // 0x0030 (0x0030 - 0x0000)
 struct WBP_DAT_AISystem_01_HackingTimer_C_ExecuteUbergraph_WBP_DAT_AISystem_01_HackingTimer final
@@ -26,14 +35,7 @@ public:
 	double                                        CallFunc_Divide_DoubleDouble_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetPercent_InPercent_ImplicitCast;        // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function WBP_DAT_AISystem_01_HackingTimer.WBP_DAT_AISystem_01_HackingTimer_C.setProgress
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_DAT_AISystem_01_HackingTimer_C_setProgress final
-{
-public:
-	int32                                         InputPin;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_WBP_DAT_AISystem_01_HackingTimer_C_ExecuteUbergraph_WBP_DAT_AISystem_01_HackingTimer;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

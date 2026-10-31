@@ -16,21 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function SBZWeaponCustomiaztionSlotButton.SBZWeaponCustomiaztionSlotButton_C.Setup
-// (BlueprintCallable, BlueprintEvent)
+// Function SBZWeaponCustomiaztionSlotButton.SBZWeaponCustomiaztionSlotButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// const class USBZModularPartSlotBase*    ModularSlot                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const class USBZModularPartDataAsset*   EquippedPart                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USBZWeaponCustomiaztionSlotButton_C::Setup(const class USBZModularPartSlotBase* ModularSlot, const class USBZModularPartDataAsset* EquippedPart)
+void USBZWeaponCustomiaztionSlotButton_C::ButtonFocusedChanged(bool bInHasFocus)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Setup", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
 
-	Params::SBZWeaponCustomiaztionSlotButton_C_Setup Parms{};
+	Params::SBZWeaponCustomiaztionSlotButton_C_ButtonFocusedChanged Parms{};
 
-	Parms.ModularSlot = ModularSlot;
-	Parms.EquippedPart = EquippedPart;
+	Parms.bInHasFocus = bInHasFocus;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -54,19 +52,21 @@ void USBZWeaponCustomiaztionSlotButton_C::ExecuteUbergraph_SBZWeaponCustomiaztio
 }
 
 
-// Function SBZWeaponCustomiaztionSlotButton.SBZWeaponCustomiaztionSlotButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
+// Function SBZWeaponCustomiaztionSlotButton.SBZWeaponCustomiaztionSlotButton_C.Setup
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInHasFocus_ButtonFocusedChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZModularPartSlotBase*    ModularSlot                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const class USBZModularPartDataAsset*   EquippedPart                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void USBZWeaponCustomiaztionSlotButton_C::ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged)
+void USBZWeaponCustomiaztionSlotButton_C::Setup(const class USBZModularPartSlotBase* ModularSlot, const class USBZModularPartDataAsset* EquippedPart)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Setup", FnName));
 
-	Params::SBZWeaponCustomiaztionSlotButton_C_ButtonFocusedChanged Parms{};
+	Params::SBZWeaponCustomiaztionSlotButton_C_Setup Parms{};
 
-	Parms.bInHasFocus_ButtonFocusedChanged = bInHasFocus_ButtonFocusedChanged;
+	Parms.ModularSlot = ModularSlot;
+	Parms.EquippedPart = EquippedPart;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

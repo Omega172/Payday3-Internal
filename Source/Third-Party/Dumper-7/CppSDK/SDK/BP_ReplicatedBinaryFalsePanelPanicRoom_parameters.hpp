@@ -17,6 +17,16 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_ReplicatedBinaryFalsePanelPanicRoom.BP_ReplicatedBinaryFalsePanelPanicRoom_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_ReplicatedBinaryFalsePanelPanicRoom_C_OnStateChanged final
+{
+public:
+	bool                                          bStateToChangeTo_OnStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ReplicatedBinaryFalsePanelPanicRoom_C_OnStateChanged;
+
 // Function BP_ReplicatedBinaryFalsePanelPanicRoom.BP_ReplicatedBinaryFalsePanelPanicRoom_C.ExecuteUbergraph_BP_ReplicatedBinaryFalsePanelPanicRoom
 // 0x0340 (0x0340 - 0x0000)
 struct BP_ReplicatedBinaryFalsePanelPanicRoom_C_ExecuteUbergraph_BP_ReplicatedBinaryFalsePanelPanicRoom final
@@ -34,15 +44,7 @@ public:
 	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult_1;  // 0x0130(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult_2;  // 0x0238(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-
-// Function BP_ReplicatedBinaryFalsePanelPanicRoom.BP_ReplicatedBinaryFalsePanelPanicRoom_C.OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_ReplicatedBinaryFalsePanelPanicRoom_C_OnStateChanged final
-{
-public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_ReplicatedBinaryFalsePanelPanicRoom_C_ExecuteUbergraph_BP_ReplicatedBinaryFalsePanelPanicRoom;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

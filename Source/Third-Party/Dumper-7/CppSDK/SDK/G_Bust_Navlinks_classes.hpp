@@ -24,8 +24,8 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void CrackHouseEntered();
 	void ExecuteUbergraph_G_Bust_Navlinks(int32 EntryPoint);
+	void CrackHouseEntered();
 
 public:
 	static class UClass* StaticClass()
@@ -41,5 +41,6 @@ public:
 		return GetDefaultObjImpl<AG_Bust_Navlinks_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_Bust_Navlinks_C;
 
 SDK_NAMESPACE_END

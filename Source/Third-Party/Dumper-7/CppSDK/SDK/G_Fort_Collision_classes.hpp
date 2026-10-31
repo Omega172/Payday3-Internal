@@ -34,16 +34,16 @@ public:
 	class ABP_ToggleableBagCollision_C*           BP_ToggableBagCollisionP2_ExecuteUbergraph_G_Fort_Collision_RefProperty; // 0x0418(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport2_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport3_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport4_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void EscapeArrivedAtSewer();
-	void EscapeGarage1();
-	void EscapeGarage2();
-	void ExecuteUbergraph_G_Fort_Collision(int32 EntryPoint);
-	void HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState);
 	void teleport_bag();
+	void HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged);
+	void ExecuteUbergraph_G_Fort_Collision(int32 EntryPoint);
+	void EscapeGarage2();
+	void EscapeGarage1();
+	void EscapeArrivedAtSewer();
+	void BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport4_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport3_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport2_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
 
 public:
 	static class UClass* StaticClass()
@@ -59,5 +59,6 @@ public:
 		return GetDefaultObjImpl<AG_Fort_Collision_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_Fort_Collision_C;
 
 SDK_NAMESPACE_END

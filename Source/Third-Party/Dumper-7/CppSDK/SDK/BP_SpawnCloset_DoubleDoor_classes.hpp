@@ -48,17 +48,17 @@ public:
 	struct FRotator                               Open;                                              // 0x0428(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	struct FRotator DoorPositionInterp(const struct FRotator& Original, const struct FRotator& Offset, double Alpha);
-	void ExecuteUbergraph_BP_SpawnCloset_DoubleDoor(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void Open_Doors_No_Cosmetics(bool bOpen);
-	void OpenDoors_Internal(bool bOpen);
-	void OpenTimeline__FinishedFunc();
-	void OpenTimeline__SwitchDoor__EventFunc();
-	void OpenTimeline__UpdateFunc();
-	void ReactToCloset(bool bActorsInCloset, bool bDoCosmetics);
-	void Set_Relative_Position_Interp(class USceneComponent* Component, const struct FRotator& Original, const struct FRotator& Offset, double Alpha);
 	void setNav(bool open);
+	void Set_Relative_Position_Interp(class USceneComponent* Component, const struct FRotator& Original, const struct FRotator& Offset, double Alpha);
+	void ReactToCloset(bool bActorsInCloset, bool bDoCosmetics);
+	void OpenTimeline__UpdateFunc();
+	void OpenTimeline__SwitchDoor__EventFunc();
+	void OpenTimeline__FinishedFunc();
+	void OpenDoors_Internal(bool bOpen);
+	void Open_Doors_No_Cosmetics(bool bOpen);
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_SpawnCloset_DoubleDoor(int32 EntryPoint);
+	struct FRotator DoorPositionInterp(const struct FRotator& Original, const struct FRotator& Offset, double Alpha);
 
 public:
 	static class UClass* StaticClass()
@@ -74,5 +74,6 @@ public:
 		return GetDefaultObjImpl<ABP_SpawnCloset_DoubleDoor_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SpawnCloset_DoubleDoor_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Placeable_Weapon_Drop_OVK_Level_Secret_Static_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Placeable_Weapon_Drop_OVK_Level_Secret_Static_C;
 
 SDK_NAMESPACE_END

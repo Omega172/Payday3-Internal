@@ -16,6 +16,38 @@
 
 SDK_NAMESPACE_START
 
+// Function A_SnGFO.A_SnGFO_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AA_SnGFO_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function A_SnGFO.A_SnGFO_C.HeistStateChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EPD3HeistState                          OldHeistState_HeistStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPD3HeistState                          CurrentHeistState_HeistStateChanged                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AA_SnGFO_C::HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HeistStateChanged", FnName));
+
+	Params::A_SnGFO_C_HeistStateChanged Parms{};
+
+	Parms.OldHeistState_HeistStateChanged = OldHeistState_HeistStateChanged;
+	Parms.CurrentHeistState_HeistStateChanged = CurrentHeistState_HeistStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function A_SnGFO.A_SnGFO_C.ExecuteUbergraph_A_SnGFO
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,52 +55,14 @@ SDK_NAMESPACE_START
 
 void AA_SnGFO_C::ExecuteUbergraph_A_SnGFO(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_SnGFO_C", "ExecuteUbergraph_A_SnGFO");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "A_SnGFO_C", "ExecuteUbergraph_A_SnGFO", FuncInfo);
 
 	Params::A_SnGFO_C_ExecuteUbergraph_A_SnGFO Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function A_SnGFO.A_SnGFO_C.HeistStateChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// EPD3HeistState                          OldHeistState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPD3HeistState                          CurrentHeistState                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AA_SnGFO_C::HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_SnGFO_C", "HeistStateChanged");
-
-	Params::A_SnGFO_C_HeistStateChanged Parms{};
-
-	Parms.OldHeistState = OldHeistState;
-	Parms.CurrentHeistState = CurrentHeistState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function A_SnGFO.A_SnGFO_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AA_SnGFO_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_SnGFO_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

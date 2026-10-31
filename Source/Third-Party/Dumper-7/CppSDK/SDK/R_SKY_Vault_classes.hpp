@@ -43,16 +43,16 @@ public:
 	class ABP_InstantLoot_NecklaceBust_C*         BP_InstantLoot_NecklaceBust3_8_ExecuteUbergraph_R_SKY_Vault_RefProperty; // 0x0460(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__R_Penthouse_Vault_BP_Int_Door_01_SmallVault_01_0_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State);
-	void BndEvt__R_Penthouse_Vault_BP_PortableSSD2_4_K2Node_ActorBoundEvent_4_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
-	void BndEvt__R_Penthouse_Vault_BP_PortableSSD_2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
-	void BndEvt__R_Penthouse_Vault_BP_Safe_01_2_K2Node_ActorBoundEvent_0_SBZOnMinigameDoneDelegate__DelegateSignature();
-	void BndEvt__R_Penthouse_Vault_SBZDestroyGroup_1_K2Node_ActorBoundEvent_3_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors);
-	void BndEvt__R_SKY_Vault_BP_InstantLoot_NecklaceBust2_K2Node_ActorBoundEvent_5_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer);
-	void BndEvt__R_SKY_Vault_BP_InstantLoot_NecklaceBust3_8_K2Node_ActorBoundEvent_6_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer);
-	void Code_Entered();
-	void ExecuteUbergraph_R_SKY_Vault(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_R_SKY_Vault(int32 EntryPoint);
+	void Code_Entered();
+	void BndEvt__R_SKY_Vault_BP_InstantLoot_NecklaceBust3_8_K2Node_ActorBoundEvent_6_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer);
+	void BndEvt__R_SKY_Vault_BP_InstantLoot_NecklaceBust2_K2Node_ActorBoundEvent_5_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer);
+	void BndEvt__R_Penthouse_Vault_SBZDestroyGroup_1_K2Node_ActorBoundEvent_3_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors);
+	void BndEvt__R_Penthouse_Vault_BP_Safe_01_2_K2Node_ActorBoundEvent_0_SBZOnMinigameDoneDelegate__DelegateSignature();
+	void BndEvt__R_Penthouse_Vault_BP_PortableSSD_2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
+	void BndEvt__R_Penthouse_Vault_BP_PortableSSD2_4_K2Node_ActorBoundEvent_4_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
+	void BndEvt__R_Penthouse_Vault_BP_Int_Door_01_SmallVault_01_0_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State);
 
 public:
 	static class UClass* StaticClass()
@@ -68,5 +68,6 @@ public:
 		return GetDefaultObjImpl<AR_SKY_Vault_C>();
 	}
 };
+DUMPER7_ASSERTS_AR_SKY_Vault_C;
 
 SDK_NAMESPACE_END

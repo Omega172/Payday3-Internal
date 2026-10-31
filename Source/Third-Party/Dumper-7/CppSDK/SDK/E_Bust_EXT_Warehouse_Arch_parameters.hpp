@@ -14,50 +14,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function E_Bust_EXT_Warehouse_Arch.E_Bust_EXT_Warehouse_Arch_C.BndEvt__E_Bust_EXT_Warehouse_Arch_SBZFilteredTriggerVolume_BreakGlass3_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct E_Bust_EXT_Warehouse_Arch_C_BndEvt__E_Bust_EXT_Warehouse_Arch_SBZFilteredTriggerVolume_BreakGlass3_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function E_Bust_EXT_Warehouse_Arch.E_Bust_EXT_Warehouse_Arch_C.BndEvt__E_Bust_EXT_Warehouse_Arch_SBZFilteredTriggerVolume_BreakGlass4_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct E_Bust_EXT_Warehouse_Arch_C_BndEvt__E_Bust_EXT_Warehouse_Arch_SBZFilteredTriggerVolume_BreakGlass4_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function E_Bust_EXT_Warehouse_Arch.E_Bust_EXT_Warehouse_Arch_C.BndEvt__E_Bust_EXT_Warehouse_Arch_SBZFilteredTriggerVolume_BreakGlass5_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct E_Bust_EXT_Warehouse_Arch_C_BndEvt__E_Bust_EXT_Warehouse_Arch_SBZFilteredTriggerVolume_BreakGlass5_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function E_Bust_EXT_Warehouse_Arch.E_Bust_EXT_Warehouse_Arch_C.BndEvt__E_Bust_EXT_Warehouse_Arch_SBZFilteredTriggerVolume_BreakGlass6_K2Node_ActorBoundEvent_7_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct E_Bust_EXT_Warehouse_Arch_C_BndEvt__E_Bust_EXT_Warehouse_Arch_SBZFilteredTriggerVolume_BreakGlass6_K2Node_ActorBoundEvent_7_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function E_Bust_EXT_Warehouse_Arch.E_Bust_EXT_Warehouse_Arch_C.ExecuteUbergraph_E_Bust_EXT_Warehouse_Arch
 // 0x0070 (0x0070 - 0x0000)
 struct E_Bust_EXT_Warehouse_Arch_C_ExecuteUbergraph_E_Bust_EXT_Warehouse_Arch final
@@ -82,6 +38,55 @@ public:
 	class AActor*                                 K2Node_ActorBoundEvent_Actor_1;                    // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_ActorBoundEvent_CurrentTotalActors_1;       // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_E_Bust_EXT_Warehouse_Arch_C_ExecuteUbergraph_E_Bust_EXT_Warehouse_Arch;
+
+// Function E_Bust_EXT_Warehouse_Arch.E_Bust_EXT_Warehouse_Arch_C.BndEvt__E_Bust_EXT_Warehouse_Arch_SBZFilteredTriggerVolume_BreakGlass6_K2Node_ActorBoundEvent_7_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct E_Bust_EXT_Warehouse_Arch_C_BndEvt__E_Bust_EXT_Warehouse_Arch_SBZFilteredTriggerVolume_BreakGlass6_K2Node_ActorBoundEvent_7_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_E_Bust_EXT_Warehouse_Arch_C_BndEvt__E_Bust_EXT_Warehouse_Arch_SBZFilteredTriggerVolume_BreakGlass6_K2Node_ActorBoundEvent_7_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function E_Bust_EXT_Warehouse_Arch.E_Bust_EXT_Warehouse_Arch_C.BndEvt__E_Bust_EXT_Warehouse_Arch_SBZFilteredTriggerVolume_BreakGlass5_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct E_Bust_EXT_Warehouse_Arch_C_BndEvt__E_Bust_EXT_Warehouse_Arch_SBZFilteredTriggerVolume_BreakGlass5_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_E_Bust_EXT_Warehouse_Arch_C_BndEvt__E_Bust_EXT_Warehouse_Arch_SBZFilteredTriggerVolume_BreakGlass5_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function E_Bust_EXT_Warehouse_Arch.E_Bust_EXT_Warehouse_Arch_C.BndEvt__E_Bust_EXT_Warehouse_Arch_SBZFilteredTriggerVolume_BreakGlass4_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct E_Bust_EXT_Warehouse_Arch_C_BndEvt__E_Bust_EXT_Warehouse_Arch_SBZFilteredTriggerVolume_BreakGlass4_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_E_Bust_EXT_Warehouse_Arch_C_BndEvt__E_Bust_EXT_Warehouse_Arch_SBZFilteredTriggerVolume_BreakGlass4_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function E_Bust_EXT_Warehouse_Arch.E_Bust_EXT_Warehouse_Arch_C.BndEvt__E_Bust_EXT_Warehouse_Arch_SBZFilteredTriggerVolume_BreakGlass3_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct E_Bust_EXT_Warehouse_Arch_C_BndEvt__E_Bust_EXT_Warehouse_Arch_SBZFilteredTriggerVolume_BreakGlass3_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_E_Bust_EXT_Warehouse_Arch_C_BndEvt__E_Bust_EXT_Warehouse_Arch_SBZFilteredTriggerVolume_BreakGlass3_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_BlockThrowables_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_BlockThrowables_C;
 
 SDK_NAMESPACE_END

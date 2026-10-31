@@ -16,37 +16,27 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_CarriedBlueKeycard.BP_CarriedBlueKeycard_C.GetSensorComponent
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZSensorComponent*              ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function BP_CarriedBlueKeycard.BP_CarriedBlueKeycard_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-class USBZSensorComponent* ABP_CarriedBlueKeycard_C::GetSensorComponent()
+void ABP_CarriedBlueKeycard_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CarriedBlueKeycard_C", "GetSensorComponent");
-
-	Params::BP_CarriedBlueKeycard_C_GetSensorComponent Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
 // Function BP_CarriedBlueKeycard.BP_CarriedBlueKeycard_C.GetSensorOutlineComponent
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZOutlineComponent*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZOutlineComponent*             ReturnValue_GetSensorOutlineComponent                  (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 class USBZOutlineComponent* ABP_CarriedBlueKeycard_C::GetSensorOutlineComponent()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CarriedBlueKeycard_C", "GetSensorOutlineComponent");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetSensorOutlineComponent", FnName));
 
 	Params::BP_CarriedBlueKeycard_C_GetSensorOutlineComponent Parms{};
 
@@ -56,17 +46,21 @@ class USBZOutlineComponent* ABP_CarriedBlueKeycard_C::GetSensorOutlineComponent(
 }
 
 
-// Function BP_CarriedBlueKeycard.BP_CarriedBlueKeycard_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_CarriedBlueKeycard.BP_CarriedBlueKeycard_C.GetSensorComponent
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZSensorComponent*              ReturnValue_GetSensorComponent                         (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_CarriedBlueKeycard_C::UserConstructionScript()
+class USBZSensorComponent* ABP_CarriedBlueKeycard_C::GetSensorComponent()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetSensorComponent", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CarriedBlueKeycard_C", "UserConstructionScript");
+	Params::BP_CarriedBlueKeycard_C_GetSensorComponent Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 

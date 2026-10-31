@@ -16,26 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_Tablet.BP_Tablet_C.BP_OnReactorStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_Tablet_C_BP_OnReactorStateChanged final
-{
-public:
-	ESBZEventReactorState                         NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_Tablet.BP_Tablet_C.ExecuteUbergraph_BP_Tablet
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Tablet_C_ExecuteUbergraph_BP_Tablet final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZEventReactorState                         K2Node_Event_NewState;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bDoCosmetics;                         // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_Tablet.BP_Tablet_C.setGlitching
 // 0x0028 (0x0028 - 0x0000)
 struct BP_Tablet_C_setGlitching final
@@ -48,6 +28,29 @@ public:
 	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_1; // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_2; // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Tablet_C_setGlitching;
+
+// Function BP_Tablet.BP_Tablet_C.ExecuteUbergraph_BP_Tablet
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Tablet_C_ExecuteUbergraph_BP_Tablet final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZEventReactorState                         K2Node_Event_NewState;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bDoCosmetics;                         // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Tablet_C_ExecuteUbergraph_BP_Tablet;
+
+// Function BP_Tablet.BP_Tablet_C.BP_OnReactorStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_Tablet_C_BP_OnReactorStateChanged final
+{
+public:
+	ESBZEventReactorState                         NewState_BP_OnReactorStateChanged;                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_BP_OnReactorStateChanged;             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Tablet_C_BP_OnReactorStateChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

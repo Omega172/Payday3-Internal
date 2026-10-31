@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_ONE_Whiteboard_01_Eraser_SmallDestruction_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ONE_Whiteboard_01_Eraser_SmallDestruction_C;
 
 SDK_NAMESPACE_END

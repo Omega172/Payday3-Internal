@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "AkAudio_structs.hpp"
 #include "BP_Winch_classes.hpp"
+#include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
+#include "AkAudio_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -30,10 +30,10 @@ public:
 	class ABP_WinchAttractor_01_C*                winchAttractor;                                    // 0x0690(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnStateChanged(ESBZBreachingEquipmentState OldState, ESBZBreachingEquipmentState NewState, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_MountableWinch_01(int32 EntryPoint);
-	void onProgressionEvent(int32 index, double progression);
 	void ReceiveBeginPlay();
+	void onProgressionEvent(int32 index, double progression);
+	void ExecuteUbergraph_BP_MountableWinch_01(int32 EntryPoint);
+	void BP_OnStateChanged(ESBZBreachingEquipmentState OldState_BP_OnStateChanged, ESBZBreachingEquipmentState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged);
 
 public:
 	static class UClass* StaticClass()
@@ -49,5 +49,6 @@ public:
 		return GetDefaultObjImpl<ABP_MountableWinch_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_MountableWinch_01_C;
 
 SDK_NAMESPACE_END

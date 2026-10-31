@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_LGT_DentalNeon_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LGT_DentalNeon_01_C;
 
 SDK_NAMESPACE_END

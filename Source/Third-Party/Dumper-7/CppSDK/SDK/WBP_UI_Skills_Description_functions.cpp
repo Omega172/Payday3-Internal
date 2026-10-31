@@ -16,44 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry_Tick                                        (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime_Tick                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Skills_Description_C::Tick(const struct FGeometry& MyGeometry_Tick, float InDeltaTime_Tick)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Tick", FnName));
-
-	Params::WBP_UI_Skills_Description_C_Tick Parms{};
-
-	Parms.MyGeometry_Tick = std::move(MyGeometry_Tick);
-	Parms.InDeltaTime_Tick = InDeltaTime_Tick;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetState
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_UI_Skills_Button_C*          SkillsButton                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Skills_Description_C::SetState(class UWBP_UI_Skills_Button_C* SkillsButton)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetState", FnName));
-
-	Params::WBP_UI_Skills_Description_C_SetState Parms{};
-
-	Parms.SkillsButton = SkillsButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetSkillProgress
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -72,37 +34,19 @@ void UWBP_UI_Skills_Description_C::SetSkillProgress(class UWBP_UI_Skills_Button_
 }
 
 
-// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetSkillInfoOld
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetState
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZSkillData*                    Skill_data                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UWBP_UI_Skills_Button_C*          SkillsButton                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Skills_Description_C::SetSkillInfoOld(class USBZSkillData* Skill_data)
+void UWBP_UI_Skills_Description_C::SetState(class UWBP_UI_Skills_Button_C* SkillsButton)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetSkillInfoOld", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetState", FnName));
 
-	Params::WBP_UI_Skills_Description_C_SetSkillInfoOld Parms{};
+	Params::WBP_UI_Skills_Description_C_SetState Parms{};
 
-	Parms.Skill_data = Skill_data;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetSkillInfo
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWBP_UI_Skills_Button_C*          SkillButton                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Skills_Description_C::SetSkillInfo(class UWBP_UI_Skills_Button_C* SkillButton)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetSkillInfo", FnName));
-
-	Params::WBP_UI_Skills_Description_C_SetSkillInfo Parms{};
-
-	Parms.SkillButton = SkillButton;
+	Parms.SkillsButton = SkillsButton;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -144,6 +88,42 @@ void UWBP_UI_Skills_Description_C::SetSkillDescription(class UWBP_UI_Skills_Butt
 }
 
 
+// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetSkillInfo
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_UI_Skills_Button_C*          SkillButton                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Skills_Description_C::SetSkillInfo(class UWBP_UI_Skills_Button_C* SkillButton)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetSkillInfo", FnName));
+
+	Params::WBP_UI_Skills_Description_C_SetSkillInfo Parms{};
+
+	Parms.SkillButton = SkillButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetSkillInfoOld
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZSkillData*                    Skill_data                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Skills_Description_C::SetSkillInfoOld(class USBZSkillData* Skill_data)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetSkillInfoOld", FnName));
+
+	Params::WBP_UI_Skills_Description_C_SetSkillInfoOld Parms{};
+
+	Parms.Skill_data = Skill_data;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.SetFocusedButton
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -157,6 +137,26 @@ void UWBP_UI_Skills_Description_C::SetFocusedButton(class UWBP_UI_Skills_Button_
 	Params::WBP_UI_Skills_Description_C_SetFocusedButton Parms{};
 
 	Parms.Skill = Skill;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Skills_Description.WBP_UI_Skills_Description_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Skills_Description_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Tick", FnName));
+
+	Params::WBP_UI_Skills_Description_C_Tick Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

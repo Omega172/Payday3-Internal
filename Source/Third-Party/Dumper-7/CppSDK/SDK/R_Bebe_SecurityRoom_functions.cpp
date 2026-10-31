@@ -16,43 +16,25 @@
 
 SDK_NAMESPACE_START
 
-// Function R_Bebe_SecurityRoom.R_Bebe_SecurityRoom_C.BranchBank_Bottom_Bkey
+// Function R_Bebe_SecurityRoom.R_Bebe_SecurityRoom_C.RandomizedRoomTest_RemoteEvent1
 // (BlueprintCallable, BlueprintEvent)
 
-void AR_Bebe_SecurityRoom_C::BranchBank_Bottom_Bkey()
+void AR_Bebe_SecurityRoom_C::RandomizedRoomTest_RemoteEvent1()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Bebe_SecurityRoom_C", "BranchBank_Bottom_Bkey");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RandomizedRoomTest_RemoteEvent1", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function R_Bebe_SecurityRoom.R_Bebe_SecurityRoom_C.BranchBank_Kitchen_Bkey
-// (BlueprintCallable, BlueprintEvent)
+// Function R_Bebe_SecurityRoom.R_Bebe_SecurityRoom_C.OnRandomSublevelPlaced
+// (Event, Public, BlueprintEvent)
 
-void AR_Bebe_SecurityRoom_C::BranchBank_Kitchen_Bkey()
+void AR_Bebe_SecurityRoom_C::OnRandomSublevelPlaced()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Bebe_SecurityRoom_C", "BranchBank_Kitchen_Bkey");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function R_Bebe_SecurityRoom.R_Bebe_SecurityRoom_C.BranchBank_Stairs_Bkey
-// (BlueprintCallable, BlueprintEvent)
-
-void AR_Bebe_SecurityRoom_C::BranchBank_Stairs_Bkey()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Bebe_SecurityRoom_C", "BranchBank_Stairs_Bkey");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRandomSublevelPlaced", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -65,10 +47,8 @@ void AR_Bebe_SecurityRoom_C::BranchBank_Stairs_Bkey()
 
 void AR_Bebe_SecurityRoom_C::ExecuteUbergraph_R_Bebe_SecurityRoom(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Bebe_SecurityRoom_C", "ExecuteUbergraph_R_Bebe_SecurityRoom");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "R_Bebe_SecurityRoom_C", "ExecuteUbergraph_R_Bebe_SecurityRoom", FuncInfo);
 
 	Params::R_Bebe_SecurityRoom_C_ExecuteUbergraph_R_Bebe_SecurityRoom Parms{};
 
@@ -78,29 +58,37 @@ void AR_Bebe_SecurityRoom_C::ExecuteUbergraph_R_Bebe_SecurityRoom(int32 EntryPoi
 }
 
 
-// Function R_Bebe_SecurityRoom.R_Bebe_SecurityRoom_C.OnRandomSublevelPlaced
-// (Event, Public, BlueprintEvent)
+// Function R_Bebe_SecurityRoom.R_Bebe_SecurityRoom_C.BranchBank_Stairs_Bkey
+// (BlueprintCallable, BlueprintEvent)
 
-void AR_Bebe_SecurityRoom_C::OnRandomSublevelPlaced()
+void AR_Bebe_SecurityRoom_C::BranchBank_Stairs_Bkey()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Bebe_SecurityRoom_C", "OnRandomSublevelPlaced");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BranchBank_Stairs_Bkey", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function R_Bebe_SecurityRoom.R_Bebe_SecurityRoom_C.RandomizedRoomTest_RemoteEvent1
+// Function R_Bebe_SecurityRoom.R_Bebe_SecurityRoom_C.BranchBank_Kitchen_Bkey
 // (BlueprintCallable, BlueprintEvent)
 
-void AR_Bebe_SecurityRoom_C::RandomizedRoomTest_RemoteEvent1()
+void AR_Bebe_SecurityRoom_C::BranchBank_Kitchen_Bkey()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BranchBank_Kitchen_Bkey", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Bebe_SecurityRoom_C", "RandomizedRoomTest_RemoteEvent1");
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_Bebe_SecurityRoom.R_Bebe_SecurityRoom_C.BranchBank_Bottom_Bkey
+// (BlueprintCallable, BlueprintEvent)
+
+void AR_Bebe_SecurityRoom_C::BranchBank_Bottom_Bkey()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BranchBank_Bottom_Bkey", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

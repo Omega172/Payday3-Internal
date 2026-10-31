@@ -16,25 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_DesktopComputer_01_Monitor.BP_DesktopComputer_01_Monitor_C.BndEvt__BP_CashRegister_01_Monitor_SmallDestruction_SBZCosmeticDestruction_1_K2Node_ComponentBoundEvent_5_SBZCosmeticDestructionComponenteSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// ESBZCosmeticDestructionType             Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZCosmeticDestructionContext&HitContext                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// Function BP_DesktopComputer_01_Monitor.BP_DesktopComputer_01_Monitor_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_DesktopComputer_01_Monitor_C::BndEvt__BP_CashRegister_01_Monitor_SmallDestruction_SBZCosmeticDestruction_1_K2Node_ComponentBoundEvent_5_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)
+void ABP_DesktopComputer_01_Monitor_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DesktopComputer_01_Monitor_C", "BndEvt__BP_CashRegister_01_Monitor_SmallDestruction_SBZCosmeticDestruction_1_K2Node_ComponentBoundEvent_5_SBZCosmeticDestructionComponenteSignature__DelegateSignature");
-
-	Params::BP_DesktopComputer_01_Monitor_C_BndEvt__BP_CashRegister_01_Monitor_SmallDestruction_SBZCosmeticDestruction_1_K2Node_ComponentBoundEvent_5_SBZCosmeticDestructionComponenteSignature__DelegateSignature Parms{};
-
-	Parms.Type = Type;
-	Parms.HitContext = std::move(HitContext);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -45,10 +35,8 @@ void ABP_DesktopComputer_01_Monitor_C::BndEvt__BP_CashRegister_01_Monitor_SmallD
 
 void ABP_DesktopComputer_01_Monitor_C::ExecuteUbergraph_BP_DesktopComputer_01_Monitor(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DesktopComputer_01_Monitor_C", "ExecuteUbergraph_BP_DesktopComputer_01_Monitor");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_DesktopComputer_01_Monitor_C", "ExecuteUbergraph_BP_DesktopComputer_01_Monitor", FuncInfo);
 
 	Params::BP_DesktopComputer_01_Monitor_C_ExecuteUbergraph_BP_DesktopComputer_01_Monitor Parms{};
 
@@ -58,17 +46,23 @@ void ABP_DesktopComputer_01_Monitor_C::ExecuteUbergraph_BP_DesktopComputer_01_Mo
 }
 
 
-// Function BP_DesktopComputer_01_Monitor.BP_DesktopComputer_01_Monitor_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_DesktopComputer_01_Monitor.BP_DesktopComputer_01_Monitor_C.BndEvt__BP_CashRegister_01_Monitor_SmallDestruction_SBZCosmeticDestruction_1_K2Node_ComponentBoundEvent_5_SBZCosmeticDestructionComponenteSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// ESBZCosmeticDestructionType             Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZCosmeticDestructionContext&HitContext                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 
-void ABP_DesktopComputer_01_Monitor_C::UserConstructionScript()
+void ABP_DesktopComputer_01_Monitor_C::BndEvt__BP_CashRegister_01_Monitor_SmallDestruction_SBZCosmeticDestruction_1_K2Node_ComponentBoundEvent_5_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_CashRegister_01_Monitor_SmallDestruction_SBZCosmeticDestruction_1_K2Node_ComponentBoundEvent_5_SBZCosmeticDestructionComponenteSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DesktopComputer_01_Monitor_C", "UserConstructionScript");
+	Params::BP_DesktopComputer_01_Monitor_C_BndEvt__BP_CashRegister_01_Monitor_SmallDestruction_SBZCosmeticDestruction_1_K2Node_ComponentBoundEvent_5_SBZCosmeticDestructionComponenteSignature__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.Type = Type;
+	Parms.HitContext = std::move(HitContext);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

@@ -24,6 +24,7 @@ public:
 	bool                                          CallFunc_SetState_ReturnValue;                     // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_SetState_ReturnValue_1;                   // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_E_Cookie_C_ExecuteUbergraph_E_Cookie;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

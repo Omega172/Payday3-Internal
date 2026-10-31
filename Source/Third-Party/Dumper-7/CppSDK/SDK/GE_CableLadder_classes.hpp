@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_CableLadder_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_CableLadder_C;
 
 SDK_NAMESPACE_END

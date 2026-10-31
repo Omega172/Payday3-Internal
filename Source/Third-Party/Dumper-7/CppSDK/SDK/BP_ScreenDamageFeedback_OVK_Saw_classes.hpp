@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UBP_ScreenDamageFeedback_OVK_Saw_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_ScreenDamageFeedback_OVK_Saw_C;
 
 SDK_NAMESPACE_END

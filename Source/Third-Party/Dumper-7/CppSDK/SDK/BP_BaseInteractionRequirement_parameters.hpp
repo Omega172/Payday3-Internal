@@ -42,6 +42,7 @@ public:
 	uint8                                         Pad_C2[0x2];                                       // 0x00C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_BaseInteractionRequirement_C_BP_CheckRequirement;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

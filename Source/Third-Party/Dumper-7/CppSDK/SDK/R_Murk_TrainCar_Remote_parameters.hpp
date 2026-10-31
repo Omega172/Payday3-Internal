@@ -16,47 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.BndEvt__R_Station_TrainCar_Remote_SBZLaserGrid_Vault2_K2Node_ActorBoundEvent_4_SBZOnLaserGridTriggered__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_Murk_TrainCar_Remote_C_BndEvt__R_Station_TrainCar_Remote_SBZLaserGrid_Vault2_K2Node_ActorBoundEvent_4_SBZOnLaserGridTriggered__DelegateSignature final
-{
-public:
-	class ASBZLaserGrid*                          LaserGrid;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    PlayerCharacter;                                   // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.BndEvt__R_Station_TrainCar_Remote_SBZPlayerTriggerVolume_PlayerInsideRemote_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct R_Murk_TrainCar_Remote_C_BndEvt__R_Station_TrainCar_Remote_SBZPlayerTriggerVolume_PlayerInsideRemote_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.BndEvt__R_Station_TrainCar_Remote_SBZPlayerTriggerVolume_PlayerInsideTrainCar_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct R_Murk_TrainCar_Remote_C_BndEvt__R_Station_TrainCar_Remote_SBZPlayerTriggerVolume_PlayerInsideTrainCar_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.DestroyAllMainLoot
-// 0x0004 (0x0004 - 0x0000)
-struct R_Murk_TrainCar_Remote_C_DestroyAllMainLoot final
-{
-public:
-	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.DestroyOptionalLoot
-// 0x0004 (0x0004 - 0x0000)
-struct R_Murk_TrainCar_Remote_C_DestroyOptionalLoot final
-{
-public:
-	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.ExecuteUbergraph_R_Murk_TrainCar_Remote
 // 0x00D0 (0x00D0 - 0x0000)
 struct R_Murk_TrainCar_Remote_C_ExecuteUbergraph_R_Murk_TrainCar_Remote final
@@ -104,6 +63,53 @@ public:
 	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins_1;            // 0x00CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x00CE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_R_Murk_TrainCar_Remote_C_ExecuteUbergraph_R_Murk_TrainCar_Remote;
+
+// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.DestroyOptionalLoot
+// 0x0004 (0x0004 - 0x0000)
+struct R_Murk_TrainCar_Remote_C_DestroyOptionalLoot final
+{
+public:
+	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_Murk_TrainCar_Remote_C_DestroyOptionalLoot;
+
+// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.DestroyAllMainLoot
+// 0x0004 (0x0004 - 0x0000)
+struct R_Murk_TrainCar_Remote_C_DestroyAllMainLoot final
+{
+public:
+	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_Murk_TrainCar_Remote_C_DestroyAllMainLoot;
+
+// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.BndEvt__R_Station_TrainCar_Remote_SBZPlayerTriggerVolume_PlayerInsideTrainCar_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct R_Murk_TrainCar_Remote_C_BndEvt__R_Station_TrainCar_Remote_SBZPlayerTriggerVolume_PlayerInsideTrainCar_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_Murk_TrainCar_Remote_C_BndEvt__R_Station_TrainCar_Remote_SBZPlayerTriggerVolume_PlayerInsideTrainCar_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.BndEvt__R_Station_TrainCar_Remote_SBZPlayerTriggerVolume_PlayerInsideRemote_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct R_Murk_TrainCar_Remote_C_BndEvt__R_Station_TrainCar_Remote_SBZPlayerTriggerVolume_PlayerInsideRemote_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_Murk_TrainCar_Remote_C_BndEvt__R_Station_TrainCar_Remote_SBZPlayerTriggerVolume_PlayerInsideRemote_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function R_Murk_TrainCar_Remote.R_Murk_TrainCar_Remote_C.BndEvt__R_Station_TrainCar_Remote_SBZLaserGrid_Vault2_K2Node_ActorBoundEvent_4_SBZOnLaserGridTriggered__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_Murk_TrainCar_Remote_C_BndEvt__R_Station_TrainCar_Remote_SBZLaserGrid_Vault2_K2Node_ActorBoundEvent_4_SBZOnLaserGridTriggered__DelegateSignature final
+{
+public:
+	class ASBZLaserGrid*                          LaserGrid;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    PlayerCharacter;                                   // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_Murk_TrainCar_Remote_C_BndEvt__R_Station_TrainCar_Remote_SBZLaserGrid_Vault2_K2Node_ActorBoundEvent_4_SBZOnLaserGridTriggered__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

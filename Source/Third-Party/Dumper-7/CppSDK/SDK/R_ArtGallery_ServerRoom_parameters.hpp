@@ -26,6 +26,7 @@ public:
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_RemoteEvent_ReturnValue;                  // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_R_ArtGallery_ServerRoom_C_ExecuteUbergraph_R_ArtGallery_ServerRoom;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

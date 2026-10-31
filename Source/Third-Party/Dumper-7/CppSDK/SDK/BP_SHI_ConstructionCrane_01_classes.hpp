@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "AkAudio_structs.hpp"
 #include "BP_STO_ConstructionCrane_01_classes.hpp"
+#include "AkAudio_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -28,9 +28,9 @@ public:
 	class UDecalComponent*                        Decal_1;                                           // 0x0538(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_SHI_ConstructionCrane_01_containerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_SHI_ConstructionCrane_01(int32 EntryPoint);
 	void setContainerVisibility(bool enabled);
+	void ExecuteUbergraph_BP_SHI_ConstructionCrane_01(int32 EntryPoint);
+	void BndEvt__BP_SHI_ConstructionCrane_01_containerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
 
 public:
 	static class UClass* StaticClass()
@@ -46,5 +46,6 @@ public:
 		return GetDefaultObjImpl<ABP_SHI_ConstructionCrane_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SHI_ConstructionCrane_01_C;
 
 SDK_NAMESPACE_END

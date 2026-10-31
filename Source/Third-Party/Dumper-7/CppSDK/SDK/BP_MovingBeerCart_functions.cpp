@@ -16,26 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_MovingBeerCart.BP_MovingBeerCart_C.ExecuteUbergraph_BP_MovingBeerCart
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MovingBeerCart_C::ExecuteUbergraph_BP_MovingBeerCart(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MovingBeerCart_C", "ExecuteUbergraph_BP_MovingBeerCart");
-
-	Params::BP_MovingBeerCart_C_ExecuteUbergraph_BP_MovingBeerCart Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_MovingBeerCart.BP_MovingBeerCart_C.OnStateChanged_1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -44,15 +24,31 @@ void ABP_MovingBeerCart_C::ExecuteUbergraph_BP_MovingBeerCart(int32 EntryPoint)
 
 void ABP_MovingBeerCart_C::OnStateChanged_1(bool bStateToChangeTo, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MovingBeerCart_C", "OnStateChanged_1");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged_1", FnName));
 
 	Params::BP_MovingBeerCart_C_OnStateChanged_1 Parms{};
 
 	Parms.bStateToChangeTo = bStateToChangeTo;
 	Parms.bDoCosmetics = bDoCosmetics;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MovingBeerCart.BP_MovingBeerCart_C.ExecuteUbergraph_BP_MovingBeerCart
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MovingBeerCart_C::ExecuteUbergraph_BP_MovingBeerCart(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_MovingBeerCart_C", "ExecuteUbergraph_BP_MovingBeerCart", FuncInfo);
+
+	Params::BP_MovingBeerCart_C_ExecuteUbergraph_BP_MovingBeerCart Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

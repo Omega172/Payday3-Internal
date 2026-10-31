@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_BaseValuableBag_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -27,8 +27,8 @@ public:
 	TArray<class UMaterialInstance*>              Materials;                                         // 0x0460(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void BP_OnDegradationChanged(const int32 DegredationLevel);
 	void ExecuteUbergraph_BP_DegradingTechBag(int32 EntryPoint);
+	void BP_OnDegradationChanged(const int32 DegredationLevel_BP_OnDegradationChanged);
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<ABP_DegradingTechBag_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DegradingTechBag_C;
 
 SDK_NAMESPACE_END

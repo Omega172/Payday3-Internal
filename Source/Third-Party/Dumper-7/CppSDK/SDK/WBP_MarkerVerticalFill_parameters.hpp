@@ -16,22 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_MarkerVerticalFill.WBP_MarkerVerticalFill_C.BP_OnDataSet
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_MarkerVerticalFill_C_BP_OnDataSet final
-{
-public:
-	const class USBZMarkerDataAsset*              InMarkerAsset;                                     // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WBP_MarkerVerticalFill.WBP_MarkerVerticalFill_C.BP_OnProgressChanged
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_MarkerVerticalFill_C_BP_OnProgressChanged final
-{
-public:
-	float                                         NewProgress;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function WBP_MarkerVerticalFill.WBP_MarkerVerticalFill_C.ExecuteUbergraph_WBP_MarkerVerticalFill
 // 0x0280 (0x0280 - 0x0000)
 struct WBP_MarkerVerticalFill_C_ExecuteUbergraph_WBP_MarkerVerticalFill final
@@ -45,6 +29,25 @@ public:
 	uint8                                         Pad_271[0x7];                                      // 0x0271(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_NearlyEqual_FloatFloat_A_ImplicitCast;    // 0x0278(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_WBP_MarkerVerticalFill_C_ExecuteUbergraph_WBP_MarkerVerticalFill;
+
+// Function WBP_MarkerVerticalFill.WBP_MarkerVerticalFill_C.BP_OnProgressChanged
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_MarkerVerticalFill_C_BP_OnProgressChanged final
+{
+public:
+	float                                         NewProgress_BP_OnProgressChanged;                  // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MarkerVerticalFill_C_BP_OnProgressChanged;
+
+// Function WBP_MarkerVerticalFill.WBP_MarkerVerticalFill_C.BP_OnDataSet
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_MarkerVerticalFill_C_BP_OnDataSet final
+{
+public:
+	const class USBZMarkerDataAsset*              InMarkerAsset_BP_OnDataSet;                        // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MarkerVerticalFill_C_BP_OnDataSet;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

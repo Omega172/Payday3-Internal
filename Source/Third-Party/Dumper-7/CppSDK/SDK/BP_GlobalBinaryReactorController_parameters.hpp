@@ -14,6 +14,28 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_GlobalBinaryReactorController.BP_GlobalBinaryReactorController_C.setBinaryState
+// 0x0008 (0x0008 - 0x0000)
+struct BP_GlobalBinaryReactorController_C_setBinaryState final
+{
+public:
+	bool                                          state;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Conv_BoolToInt_ReturnValue;               // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_GlobalBinaryReactorController_C_setBinaryState;
+
+// Function BP_GlobalBinaryReactorController.BP_GlobalBinaryReactorController_C.OnStateChanged
+// 0x000C (0x000C - 0x0000)
+struct BP_GlobalBinaryReactorController_C_OnStateChanged final
+{
+public:
+	int32                                         OldState_OnStateChanged;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewState_OnStateChanged;                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_GlobalBinaryReactorController_C_OnStateChanged;
+
 // Function BP_GlobalBinaryReactorController.BP_GlobalBinaryReactorController_C.ExecuteUbergraph_BP_GlobalBinaryReactorController
 // 0x0038 (0x0038 - 0x0000)
 struct BP_GlobalBinaryReactorController_C_ExecuteUbergraph_BP_GlobalBinaryReactorController final
@@ -31,26 +53,7 @@ public:
 	bool                                          K2Node_Event_bDoCosmetics;                         // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Conv_IntToBool_ReturnValue;               // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_GlobalBinaryReactorController.BP_GlobalBinaryReactorController_C.OnStateChanged
-// 0x000C (0x000C - 0x0000)
-struct BP_GlobalBinaryReactorController_C_OnStateChanged final
-{
-public:
-	int32                                         OldState;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         NewState;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_GlobalBinaryReactorController.BP_GlobalBinaryReactorController_C.setBinaryState
-// 0x0008 (0x0008 - 0x0000)
-struct BP_GlobalBinaryReactorController_C_setBinaryState final
-{
-public:
-	bool                                          state;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Conv_BoolToInt_ReturnValue;               // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_GlobalBinaryReactorController_C_ExecuteUbergraph_BP_GlobalBinaryReactorController;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

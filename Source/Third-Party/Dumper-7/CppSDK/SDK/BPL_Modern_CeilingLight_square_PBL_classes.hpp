@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABPL_Modern_CeilingLight_square_PBL_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_Modern_CeilingLight_square_PBL_C;
 
 SDK_NAMESPACE_END

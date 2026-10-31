@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_InteractableUnBreachableSingleDoor_classes.hpp"
+#include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
 
 
@@ -34,12 +34,12 @@ public:
 	int32                                         MarkerID;                                          // 0x0798(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_VaultDoor_Small_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_VaultDoor_Small_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_VaultDoor_Small(int32 EntryPoint);
-	void OnStateChanged(ESBZGateState OldState, ESBZGateState NewState, bool bIsInitialStateChange);
-	void Unlock__FinishedFunc();
 	void Unlock__UpdateFunc();
+	void Unlock__FinishedFunc();
+	void OnStateChanged(ESBZGateState OldState_OnStateChanged, ESBZGateState NewState_OnStateChanged, bool bIsInitialStateChange_OnStateChanged);
+	void ExecuteUbergraph_BP_VaultDoor_Small(int32 EntryPoint);
+	void BndEvt__BP_VaultDoor_Small_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_VaultDoor_Small_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -55,5 +55,6 @@ public:
 		return GetDefaultObjImpl<ABP_VaultDoor_Small_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_VaultDoor_Small_C;
 
 SDK_NAMESPACE_END

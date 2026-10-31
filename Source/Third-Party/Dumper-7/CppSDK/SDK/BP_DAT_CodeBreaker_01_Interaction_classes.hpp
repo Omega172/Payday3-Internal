@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "BP_BaseSabotagePoint_classes.hpp"
 #include "AkAudio_structs.hpp"
+#include "BP_BaseSabotagePoint_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -27,10 +27,10 @@ public:
 	TMulticastInlineDelegate<void()>              FixedSabotage;                                     // 0x0448(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__BP_ElevatorDoor_ControlPanel_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent_0, bool bInNewState);
-	void ExecuteUbergraph_BP_DAT_CodeBreaker_01_Interaction(int32 EntryPoint);
-	void TurnOff();
 	void TurnOn();
+	void TurnOff();
+	void ExecuteUbergraph_BP_DAT_CodeBreaker_01_Interaction(int32 EntryPoint);
+	void BndEvt__BP_ElevatorDoor_ControlPanel_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
 
 public:
 	static class UClass* StaticClass()
@@ -46,5 +46,6 @@ public:
 		return GetDefaultObjImpl<ABP_DAT_CodeBreaker_01_Interaction_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DAT_CodeBreaker_01_Interaction_C;
 
 SDK_NAMESPACE_END

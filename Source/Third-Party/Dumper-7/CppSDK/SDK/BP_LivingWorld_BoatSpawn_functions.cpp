@@ -16,35 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_LivingWorld_BoatSpawn.BP_LivingWorld_BoatSpawn_C.ExecuteUbergraph_BP_LivingWorld_BoatSpawn
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_LivingWorld_BoatSpawn.BP_LivingWorld_BoatSpawn_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_LivingWorld_BoatSpawn_C::ExecuteUbergraph_BP_LivingWorld_BoatSpawn(int32 EntryPoint)
+void ABP_LivingWorld_BoatSpawn_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LivingWorld_BoatSpawn_C", "ExecuteUbergraph_BP_LivingWorld_BoatSpawn");
-
-	Params::BP_LivingWorld_BoatSpawn_C_ExecuteUbergraph_BP_LivingWorld_BoatSpawn Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LivingWorld_BoatSpawn.BP_LivingWorld_BoatSpawn_C.MoveBoat__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_LivingWorld_BoatSpawn_C::MoveBoat__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LivingWorld_BoatSpawn_C", "MoveBoat__FinishedFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,26 +33,40 @@ void ABP_LivingWorld_BoatSpawn_C::MoveBoat__FinishedFunc()
 
 void ABP_LivingWorld_BoatSpawn_C::MoveBoat__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LivingWorld_BoatSpawn_C", "MoveBoat__UpdateFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MoveBoat__UpdateFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_LivingWorld_BoatSpawn.BP_LivingWorld_BoatSpawn_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_LivingWorld_BoatSpawn.BP_LivingWorld_BoatSpawn_C.MoveBoat__FinishedFunc
+// (BlueprintEvent)
 
-void ABP_LivingWorld_BoatSpawn_C::UserConstructionScript()
+void ABP_LivingWorld_BoatSpawn_C::MoveBoat__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LivingWorld_BoatSpawn_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MoveBoat__FinishedFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_LivingWorld_BoatSpawn.BP_LivingWorld_BoatSpawn_C.ExecuteUbergraph_BP_LivingWorld_BoatSpawn
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LivingWorld_BoatSpawn_C::ExecuteUbergraph_BP_LivingWorld_BoatSpawn(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_LivingWorld_BoatSpawn_C", "ExecuteUbergraph_BP_LivingWorld_BoatSpawn", FuncInfo);
+
+	Params::BP_LivingWorld_BoatSpawn_C_ExecuteUbergraph_BP_LivingWorld_BoatSpawn Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

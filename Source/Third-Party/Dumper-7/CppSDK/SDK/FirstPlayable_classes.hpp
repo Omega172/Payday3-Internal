@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AFirstPlayable_C>();
 	}
 };
+DUMPER7_ASSERTS_AFirstPlayable_C;
 
 SDK_NAMESPACE_END

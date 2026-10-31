@@ -16,6 +16,18 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_SHI_whiteboard_01.BP_SHI_whiteboard_01_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_SHI_whiteboard_01_C::UserConstructionScript()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_SHI_whiteboard_01.BP_SHI_whiteboard_01_C.setPostIts
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -32,10 +44,8 @@ SDK_NAMESPACE_START
 
 void ABP_SHI_whiteboard_01_C::setPostIts(bool DepotIn01, bool DepotIn02, bool Arrival_01, bool Arrival_02, bool Pit01, bool Pit02, bool Staging01, bool Holding01, bool Yard01, bool Yard02)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SHI_whiteboard_01_C", "setPostIts");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setPostIts", FnName));
 
 	Params::BP_SHI_whiteboard_01_C_setPostIts Parms{};
 
@@ -51,20 +61,6 @@ void ABP_SHI_whiteboard_01_C::setPostIts(bool DepotIn01, bool DepotIn02, bool Ar
 	Parms.Yard02 = Yard02;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SHI_whiteboard_01.BP_SHI_whiteboard_01_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_SHI_whiteboard_01_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SHI_whiteboard_01_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

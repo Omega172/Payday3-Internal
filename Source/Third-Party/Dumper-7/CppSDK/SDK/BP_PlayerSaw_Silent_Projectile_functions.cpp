@@ -16,23 +16,57 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_PlayerSaw_Silent_Projectile.BP_PlayerSaw_Silent_Projectile_C.BndEvt__BP_PlayerSaw_Silent_Projectile_ProjectileMovementComponent_K2Node_ComponentBoundEvent_2_OnProjectileBounceDelegate__DelegateSignature
-// (HasOutParams, BlueprintEvent)
+// Function BP_PlayerSaw_Silent_Projectile.BP_PlayerSaw_Silent_Projectile_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// const struct FHitResult&                ImpactResult                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// const struct FVector&                   ImpactVelocity                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaSeconds_ReceiveTick                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PlayerSaw_Silent_Projectile_C::BndEvt__BP_PlayerSaw_Silent_Projectile_ProjectileMovementComponent_K2Node_ComponentBoundEvent_2_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity)
+void ABP_PlayerSaw_Silent_Projectile_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveTick", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlayerSaw_Silent_Projectile_C", "BndEvt__BP_PlayerSaw_Silent_Projectile_ProjectileMovementComponent_K2Node_ComponentBoundEvent_2_OnProjectileBounceDelegate__DelegateSignature");
+	Params::BP_PlayerSaw_Silent_Projectile_C_ReceiveTick Parms{};
 
-	Params::BP_PlayerSaw_Silent_Projectile_C_BndEvt__BP_PlayerSaw_Silent_Projectile_ProjectileMovementComponent_K2Node_ComponentBoundEvent_2_OnProjectileBounceDelegate__DelegateSignature Parms{};
+	Parms.DeltaSeconds_ReceiveTick = DeltaSeconds_ReceiveTick;
 
-	Parms.ImpactResult = std::move(ImpactResult);
-	Parms.ImpactVelocity = std::move(ImpactVelocity);
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PlayerSaw_Silent_Projectile.BP_PlayerSaw_Silent_Projectile_C.ExecuteUbergraph_BP_PlayerSaw_Silent_Projectile
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PlayerSaw_Silent_Projectile_C::ExecuteUbergraph_BP_PlayerSaw_Silent_Projectile(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_PlayerSaw_Silent_Projectile_C", "ExecuteUbergraph_BP_PlayerSaw_Silent_Projectile", FuncInfo);
+
+	Params::BP_PlayerSaw_Silent_Projectile_C_ExecuteUbergraph_BP_PlayerSaw_Silent_Projectile Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PlayerSaw_Silent_Projectile.BP_PlayerSaw_Silent_Projectile_C.BndEvt__BP_PlayerSaw_Silent_Projectile_TrailEffectComponent_K2Node_ComponentBoundEvent_1_ActorComponentActivatedSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UActorComponent*                  Component                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bReset                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PlayerSaw_Silent_Projectile_C::BndEvt__BP_PlayerSaw_Silent_Projectile_TrailEffectComponent_K2Node_ComponentBoundEvent_1_ActorComponentActivatedSignature__DelegateSignature(class UActorComponent* Component, bool bReset)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_PlayerSaw_Silent_Projectile_TrailEffectComponent_K2Node_ComponentBoundEvent_1_ActorComponentActivatedSignature__DelegateSignature", FnName));
+
+	Params::BP_PlayerSaw_Silent_Projectile_C_BndEvt__BP_PlayerSaw_Silent_Projectile_TrailEffectComponent_K2Node_ComponentBoundEvent_1_ActorComponentActivatedSignature__DelegateSignature Parms{};
+
+	Parms.Component = Component;
+	Parms.bReset = bReset;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -49,10 +83,8 @@ void ABP_PlayerSaw_Silent_Projectile_C::BndEvt__BP_PlayerSaw_Silent_Projectile_P
 
 void ABP_PlayerSaw_Silent_Projectile_C::BndEvt__BP_PlayerSaw_Silent_Projectile_SphereCollision_K2Node_ComponentBoundEvent_3_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlayerSaw_Silent_Projectile_C", "BndEvt__BP_PlayerSaw_Silent_Projectile_SphereCollision_K2Node_ComponentBoundEvent_3_ComponentHitSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_PlayerSaw_Silent_Projectile_SphereCollision_K2Node_ComponentBoundEvent_3_ComponentHitSignature__DelegateSignature", FnName));
 
 	Params::BP_PlayerSaw_Silent_Projectile_C_BndEvt__BP_PlayerSaw_Silent_Projectile_SphereCollision_K2Node_ComponentBoundEvent_3_ComponentHitSignature__DelegateSignature Parms{};
 
@@ -66,63 +98,21 @@ void ABP_PlayerSaw_Silent_Projectile_C::BndEvt__BP_PlayerSaw_Silent_Projectile_S
 }
 
 
-// Function BP_PlayerSaw_Silent_Projectile.BP_PlayerSaw_Silent_Projectile_C.BndEvt__BP_PlayerSaw_Silent_Projectile_TrailEffectComponent_K2Node_ComponentBoundEvent_1_ActorComponentActivatedSignature__DelegateSignature
-// (BlueprintEvent)
+// Function BP_PlayerSaw_Silent_Projectile.BP_PlayerSaw_Silent_Projectile_C.BndEvt__BP_PlayerSaw_Silent_Projectile_ProjectileMovementComponent_K2Node_ComponentBoundEvent_2_OnProjectileBounceDelegate__DelegateSignature
+// (HasOutParams, BlueprintEvent)
 // Parameters:
-// class UActorComponent*                  Component                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bReset                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FHitResult&                ImpactResult                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FVector&                   ImpactVelocity                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PlayerSaw_Silent_Projectile_C::BndEvt__BP_PlayerSaw_Silent_Projectile_TrailEffectComponent_K2Node_ComponentBoundEvent_1_ActorComponentActivatedSignature__DelegateSignature(class UActorComponent* Component, bool bReset)
+void ABP_PlayerSaw_Silent_Projectile_C::BndEvt__BP_PlayerSaw_Silent_Projectile_ProjectileMovementComponent_K2Node_ComponentBoundEvent_2_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_PlayerSaw_Silent_Projectile_ProjectileMovementComponent_K2Node_ComponentBoundEvent_2_OnProjectileBounceDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlayerSaw_Silent_Projectile_C", "BndEvt__BP_PlayerSaw_Silent_Projectile_TrailEffectComponent_K2Node_ComponentBoundEvent_1_ActorComponentActivatedSignature__DelegateSignature");
+	Params::BP_PlayerSaw_Silent_Projectile_C_BndEvt__BP_PlayerSaw_Silent_Projectile_ProjectileMovementComponent_K2Node_ComponentBoundEvent_2_OnProjectileBounceDelegate__DelegateSignature Parms{};
 
-	Params::BP_PlayerSaw_Silent_Projectile_C_BndEvt__BP_PlayerSaw_Silent_Projectile_TrailEffectComponent_K2Node_ComponentBoundEvent_1_ActorComponentActivatedSignature__DelegateSignature Parms{};
-
-	Parms.Component = Component;
-	Parms.bReset = bReset;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PlayerSaw_Silent_Projectile.BP_PlayerSaw_Silent_Projectile_C.ExecuteUbergraph_BP_PlayerSaw_Silent_Projectile
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PlayerSaw_Silent_Projectile_C::ExecuteUbergraph_BP_PlayerSaw_Silent_Projectile(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlayerSaw_Silent_Projectile_C", "ExecuteUbergraph_BP_PlayerSaw_Silent_Projectile");
-
-	Params::BP_PlayerSaw_Silent_Projectile_C_ExecuteUbergraph_BP_PlayerSaw_Silent_Projectile Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PlayerSaw_Silent_Projectile.BP_PlayerSaw_Silent_Projectile_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PlayerSaw_Silent_Projectile_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlayerSaw_Silent_Projectile_C", "ReceiveTick");
-
-	Params::BP_PlayerSaw_Silent_Projectile_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
+	Parms.ImpactResult = std::move(ImpactResult);
+	Parms.ImpactVelocity = std::move(ImpactVelocity);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

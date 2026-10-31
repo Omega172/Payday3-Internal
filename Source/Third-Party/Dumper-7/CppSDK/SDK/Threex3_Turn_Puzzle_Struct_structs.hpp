@@ -22,5 +22,6 @@ public:
 	TArray<float>                                 End_11_A8D6F6884EAA70C896C8A9BF88AC7DF5;           // 0x0010(0x0010)(Edit, BlueprintVisible)
 	TArray<class UTexture*>                       Textures_14_B1E277234B83E7630A204685802D3E77;      // 0x0020(0x0010)(Edit, BlueprintVisible)
 };
+DUMPER7_ASSERTS_FThreex3_Turn_Puzzle_Struct;
 
 SDK_NAMESPACE_END

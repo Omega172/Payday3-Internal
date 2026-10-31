@@ -16,73 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function R_Penthouse_Vault.R_Penthouse_Vault_C.BndEvt__R_Penthouse_Vault_BP_Int_Door_01_SmallVault_01_0_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function R_Penthouse_Vault.R_Penthouse_Vault_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void AR_Penthouse_Vault_C::BndEvt__R_Penthouse_Vault_BP_Int_Door_01_SmallVault_01_0_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
+void AR_Penthouse_Vault_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Penthouse_Vault_C", "BndEvt__R_Penthouse_Vault_BP_Int_Door_01_SmallVault_01_0_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::R_Penthouse_Vault_C_BndEvt__R_Penthouse_Vault_BP_Int_Door_01_SmallVault_01_0_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_Penthouse_Vault.R_Penthouse_Vault_C.BndEvt__R_Penthouse_Vault_BP_PortableSSD_2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void AR_Penthouse_Vault_C::BndEvt__R_Penthouse_Vault_BP_PortableSSD_2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Penthouse_Vault_C", "BndEvt__R_Penthouse_Vault_BP_PortableSSD_2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature");
-
-	Params::R_Penthouse_Vault_C_BndEvt__R_Penthouse_Vault_BP_PortableSSD_2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_Penthouse_Vault.R_Penthouse_Vault_C.BndEvt__R_Penthouse_Vault_BP_Safe_01_2_K2Node_ActorBoundEvent_0_SBZOnMinigameDoneDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-
-void AR_Penthouse_Vault_C::BndEvt__R_Penthouse_Vault_BP_Safe_01_2_K2Node_ActorBoundEvent_0_SBZOnMinigameDoneDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Penthouse_Vault_C", "BndEvt__R_Penthouse_Vault_BP_Safe_01_2_K2Node_ActorBoundEvent_0_SBZOnMinigameDoneDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function R_Penthouse_Vault.R_Penthouse_Vault_C.Code_Entered
-// (BlueprintCallable, BlueprintEvent)
-
-void AR_Penthouse_Vault_C::Code_Entered()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Penthouse_Vault_C", "Code_Entered");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -95,10 +35,8 @@ void AR_Penthouse_Vault_C::Code_Entered()
 
 void AR_Penthouse_Vault_C::ExecuteUbergraph_R_Penthouse_Vault(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Penthouse_Vault_C", "ExecuteUbergraph_R_Penthouse_Vault");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "R_Penthouse_Vault_C", "ExecuteUbergraph_R_Penthouse_Vault", FuncInfo);
 
 	Params::R_Penthouse_Vault_C_ExecuteUbergraph_R_Penthouse_Vault Parms{};
 
@@ -108,17 +46,67 @@ void AR_Penthouse_Vault_C::ExecuteUbergraph_R_Penthouse_Vault(int32 EntryPoint)
 }
 
 
-// Function R_Penthouse_Vault.R_Penthouse_Vault_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function R_Penthouse_Vault.R_Penthouse_Vault_C.Code_Entered
+// (BlueprintCallable, BlueprintEvent)
 
-void AR_Penthouse_Vault_C::ReceiveBeginPlay()
+void AR_Penthouse_Vault_C::Code_Entered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Penthouse_Vault_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Code_Entered", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_Penthouse_Vault.R_Penthouse_Vault_C.BndEvt__R_Penthouse_Vault_BP_Safe_01_2_K2Node_ActorBoundEvent_0_SBZOnMinigameDoneDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+
+void AR_Penthouse_Vault_C::BndEvt__R_Penthouse_Vault_BP_Safe_01_2_K2Node_ActorBoundEvent_0_SBZOnMinigameDoneDelegate__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Penthouse_Vault_BP_Safe_01_2_K2Node_ActorBoundEvent_0_SBZOnMinigameDoneDelegate__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_Penthouse_Vault.R_Penthouse_Vault_C.BndEvt__R_Penthouse_Vault_BP_PortableSSD_2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void AR_Penthouse_Vault_C::BndEvt__R_Penthouse_Vault_BP_PortableSSD_2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Penthouse_Vault_BP_PortableSSD_2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature", FnName));
+
+	Params::R_Penthouse_Vault_C_BndEvt__R_Penthouse_Vault_BP_PortableSSD_2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function R_Penthouse_Vault.R_Penthouse_Vault_C.BndEvt__R_Penthouse_Vault_BP_Int_Door_01_SmallVault_01_0_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AR_Penthouse_Vault_C::BndEvt__R_Penthouse_Vault_BP_Int_Door_01_SmallVault_01_0_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Penthouse_Vault_BP_Int_Door_01_SmallVault_01_0_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature", FnName));
+
+	Params::R_Penthouse_Vault_C_BndEvt__R_Penthouse_Vault_BP_Int_Door_01_SmallVault_01_0_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature Parms{};
+
+	Parms.OldState = OldState;
+	Parms.State = State;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_VIPInvitation_Fake_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_VIPInvitation_Fake_C;
 
 SDK_NAMESPACE_END

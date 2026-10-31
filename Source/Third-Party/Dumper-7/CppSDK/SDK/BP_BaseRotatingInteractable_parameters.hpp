@@ -17,14 +17,16 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_BaseRotatingInteractable.BP_BaseRotatingInteractable_C.BP_OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_BaseRotatingInteractable_C_BP_OnStateChanged final
+// Function BP_BaseRotatingInteractable.BP_BaseRotatingInteractable_C.UserConstructionScript
+// 0x0228 (0x0228 - 0x0000)
+struct BP_BaseRotatingInteractable_C_UserConstructionScript final
 {
 public:
-	bool                                          bNewState;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmentics;                                     // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0000(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0018(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult_1;  // 0x0120(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
+DUMPER7_ASSERTS_BP_BaseRotatingInteractable_C_UserConstructionScript;
 
 // Function BP_BaseRotatingInteractable.BP_BaseRotatingInteractable_C.ExecuteUbergraph_BP_BaseRotatingInteractable
 // 0x0150 (0x0150 - 0x0000)
@@ -45,16 +47,17 @@ public:
 	double                                        K2Node_Select_Option_1_ImplicitCast;               // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetNewTime_NewTime_ImplicitCast;          // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_BaseRotatingInteractable_C_ExecuteUbergraph_BP_BaseRotatingInteractable;
 
-// Function BP_BaseRotatingInteractable.BP_BaseRotatingInteractable_C.UserConstructionScript
-// 0x0228 (0x0228 - 0x0000)
-struct BP_BaseRotatingInteractable_C_UserConstructionScript final
+// Function BP_BaseRotatingInteractable.BP_BaseRotatingInteractable_C.BP_OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_BaseRotatingInteractable_C_BP_OnStateChanged final
 {
 public:
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0000(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0018(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult_1;  // 0x0120(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	bool                                          bNewState;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmentics;                                     // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_BaseRotatingInteractable_C_BP_OnStateChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -33,14 +33,14 @@ public:
 	int32                                         markerID;                                          // 0x03B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_FOR_CableCarParkBase_SBZInteractableGhost_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_FOR_CableCarParkBase_SBZInteractableGhost_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_FOR_Donut_box_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_FOR_CableCarParkBase(int32 EntryPoint);
-	class FText GetMarkerText();
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void setInteraction(bool enabled);
 	void setMeshVisibility(bool visible, bool ghost);
+	void setInteraction(bool enabled);
+	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
+	class FText GetMarkerText();
+	void ExecuteUbergraph_BP_FOR_CableCarParkBase(int32 EntryPoint);
+	void BndEvt__BP_FOR_Donut_box_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_FOR_CableCarParkBase_SBZInteractableGhost_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_FOR_CableCarParkBase_SBZInteractableGhost_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -56,5 +56,6 @@ public:
 		return GetDefaultObjImpl<ABP_FOR_CableCarParkBase_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_FOR_CableCarParkBase_C;
 
 SDK_NAMESPACE_END

@@ -17,24 +17,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_JewelryDisplay_Tall.BP_JewelryDisplay_Tall_C.BP_OnGlassBroken
-// 0x0001 (0x0001 - 0x0000)
-struct BP_JewelryDisplay_Tall_C_BP_OnGlassBroken final
-{
-public:
-	bool                                          bDoCosmetics;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_JewelryDisplay_Tall.BP_JewelryDisplay_Tall_C.BP_OnStateChanged
-// 0x0003 (0x0003 - 0x0000)
-struct BP_JewelryDisplay_Tall_C_BP_OnStateChanged final
-{
-public:
-	ESBZDisplayCaseState                          OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZDisplayCaseState                          NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_JewelryDisplay_Tall.BP_JewelryDisplay_Tall_C.ExecuteUbergraph_BP_JewelryDisplay_Tall
 // 0x0048 (0x0048 - 0x0000)
 struct BP_JewelryDisplay_Tall_C_ExecuteUbergraph_BP_JewelryDisplay_Tall final
@@ -55,6 +37,27 @@ public:
 	double                                        CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_JewelryDisplay_Tall_C_ExecuteUbergraph_BP_JewelryDisplay_Tall;
+
+// Function BP_JewelryDisplay_Tall.BP_JewelryDisplay_Tall_C.BP_OnStateChanged
+// 0x0003 (0x0003 - 0x0000)
+struct BP_JewelryDisplay_Tall_C_BP_OnStateChanged final
+{
+public:
+	ESBZDisplayCaseState                          OldState_BP_OnStateChanged;                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZDisplayCaseState                          NewState_BP_OnStateChanged;                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_BP_OnStateChanged;                    // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_JewelryDisplay_Tall_C_BP_OnStateChanged;
+
+// Function BP_JewelryDisplay_Tall.BP_JewelryDisplay_Tall_C.BP_OnGlassBroken
+// 0x0001 (0x0001 - 0x0000)
+struct BP_JewelryDisplay_Tall_C_BP_OnGlassBroken final
+{
+public:
+	bool                                          bDoCosmetics_BP_OnGlassBroken;                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_JewelryDisplay_Tall_C_BP_OnGlassBroken;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

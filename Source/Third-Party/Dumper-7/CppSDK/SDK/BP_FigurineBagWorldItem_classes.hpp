@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_FigurineBagWorldItem_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_FigurineBagWorldItem_C;
 
 SDK_NAMESPACE_END

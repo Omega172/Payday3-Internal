@@ -41,5 +41,6 @@ public:
 		return GetDefaultObjImpl<ABP_InteractableOpal_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_InteractableOpal_C;
 
 SDK_NAMESPACE_END

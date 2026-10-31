@@ -18,61 +18,25 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_ModSlotDebug.WBP_ModSlotDebug_C.SlotToListIndex
-// 0x0138 (0x0138 - 0x0000)
-struct WBP_ModSlotDebug_C_SlotToListIndex final
+// Function WBP_ModSlotDebug.WBP_ModSlotDebug_C.BndEvt__WBP_ModSlotScreen_ComboBox_Item_K2Node_ComponentBoundEvent_1_OnSelectionChangedEvent__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_ModSlotDebug_C_BndEvt__WBP_ModSlotScreen_ComboBox_Item_K2Node_ComponentBoundEvent_1_OnSelectionChangedEvent__DelegateSignature final
 {
 public:
-	int32                                         InIndex;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         OutIndex;                                          // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         IndexDiff;                                         // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSBZWeaponInventorySlot>        CallFunc_GetWeaponConfigSlotsForEquippable_ReturnValue; // 0x0028(0x0010)(ConstParm, ReferenceParm)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZWeaponInventorySlot                CallFunc_Array_Get_Item;                           // 0x0040(0x00F0)()
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0134(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0135(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 SelectedItem;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	ESelectInfo                                   SelectionType;                                     // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ModSlotDebug_C_SlotToListIndex;
+DUMPER7_ASSERTS_WBP_ModSlotDebug_C_BndEvt__WBP_ModSlotScreen_ComboBox_Item_K2Node_ComponentBoundEvent_1_OnSelectionChangedEvent__DelegateSignature;
 
-// Function WBP_ModSlotDebug.WBP_ModSlotDebug_C.SetInitial
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ModSlotDebug_C_SetInitial final
+// Function WBP_ModSlotDebug.WBP_ModSlotDebug_C.BndEvt__WBP_ModSlotScreen_ComboBox_Type_K2Node_ComponentBoundEvent_2_OnSelectionChangedEvent__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_ModSlotDebug_C_BndEvt__WBP_ModSlotScreen_ComboBox_Type_K2Node_ComponentBoundEvent_2_OnSelectionChangedEvent__DelegateSignature final
 {
 public:
-	ESBZEquippableLoadoutSlot                     ItemCategory;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         SlotIndex;                                         // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 SelectedItem;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	ESelectInfo                                   SelectionType;                                     // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ModSlotDebug_C_SetInitial;
-
-// Function WBP_ModSlotDebug.WBP_ModSlotDebug_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_ModSlotDebug_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ModSlotDebug_C_PreConstruct;
-
-// Function WBP_ModSlotDebug.WBP_ModSlotDebug_C.OnSlotChanged_Event
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ModSlotDebug_C_OnSlotChanged_Event final
-{
-public:
-	ESBZEquippableLoadoutSlot                     Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         SlotIndex;                                         // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ModSlotDebug_C_OnSlotChanged_Event;
+DUMPER7_ASSERTS_WBP_ModSlotDebug_C_BndEvt__WBP_ModSlotScreen_ComboBox_Type_K2Node_ComponentBoundEvent_2_OnSelectionChangedEvent__DelegateSignature;
 
 // Function WBP_ModSlotDebug.WBP_ModSlotDebug_C.ExecuteUbergraph_WBP_ModSlotDebug
 // 0x0340 (0x0340 - 0x0000)
@@ -152,25 +116,61 @@ public:
 };
 DUMPER7_ASSERTS_WBP_ModSlotDebug_C_ExecuteUbergraph_WBP_ModSlotDebug;
 
-// Function WBP_ModSlotDebug.WBP_ModSlotDebug_C.BndEvt__WBP_ModSlotScreen_ComboBox_Type_K2Node_ComponentBoundEvent_2_OnSelectionChangedEvent__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_ModSlotDebug_C_BndEvt__WBP_ModSlotScreen_ComboBox_Type_K2Node_ComponentBoundEvent_2_OnSelectionChangedEvent__DelegateSignature final
+// Function WBP_ModSlotDebug.WBP_ModSlotDebug_C.OnSlotChanged_Event
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ModSlotDebug_C_OnSlotChanged_Event final
 {
 public:
-	class FString                                 SelectedItem;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	ESelectInfo                                   SelectionType;                                     // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZEquippableLoadoutSlot                     Category;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         SlotIndex_0;                                       // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ModSlotDebug_C_BndEvt__WBP_ModSlotScreen_ComboBox_Type_K2Node_ComponentBoundEvent_2_OnSelectionChangedEvent__DelegateSignature;
+DUMPER7_ASSERTS_WBP_ModSlotDebug_C_OnSlotChanged_Event;
 
-// Function WBP_ModSlotDebug.WBP_ModSlotDebug_C.BndEvt__WBP_ModSlotScreen_ComboBox_Item_K2Node_ComponentBoundEvent_1_OnSelectionChangedEvent__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_ModSlotDebug_C_BndEvt__WBP_ModSlotScreen_ComboBox_Item_K2Node_ComponentBoundEvent_1_OnSelectionChangedEvent__DelegateSignature final
+// Function WBP_ModSlotDebug.WBP_ModSlotDebug_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_ModSlotDebug_C_PreConstruct final
 {
 public:
-	class FString                                 SelectedItem;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	ESelectInfo                                   SelectionType;                                     // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ModSlotDebug_C_BndEvt__WBP_ModSlotScreen_ComboBox_Item_K2Node_ComponentBoundEvent_1_OnSelectionChangedEvent__DelegateSignature;
+DUMPER7_ASSERTS_WBP_ModSlotDebug_C_PreConstruct;
+
+// Function WBP_ModSlotDebug.WBP_ModSlotDebug_C.SetInitial
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ModSlotDebug_C_SetInitial final
+{
+public:
+	ESBZEquippableLoadoutSlot                     ItemCategory_0;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         SlotIndex_0;                                       // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ModSlotDebug_C_SetInitial;
+
+// Function WBP_ModSlotDebug.WBP_ModSlotDebug_C.SlotToListIndex
+// 0x0138 (0x0138 - 0x0000)
+struct WBP_ModSlotDebug_C_SlotToListIndex final
+{
+public:
+	int32                                         InIndex;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         OutIndex;                                          // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         IndexDiff;                                         // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSBZWeaponInventorySlot>        CallFunc_GetWeaponConfigSlotsForEquippable_ReturnValue; // 0x0028(0x0010)(ConstParm, ReferenceParm)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZWeaponInventorySlot                CallFunc_Array_Get_Item;                           // 0x0040(0x00F0)()
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0130(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0134(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0135(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ModSlotDebug_C_SlotToListIndex;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

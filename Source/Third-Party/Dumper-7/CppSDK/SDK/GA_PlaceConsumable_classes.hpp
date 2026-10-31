@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGA_PlaceConsumable_C>();
 	}
 };
+DUMPER7_ASSERTS_UGA_PlaceConsumable_C;
 
 SDK_NAMESPACE_END

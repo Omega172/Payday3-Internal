@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_Hacker_GlitchProtocol_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_Hacker_GlitchProtocol_C;
 
 SDK_NAMESPACE_END

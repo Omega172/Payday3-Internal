@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_int_door_01_VaultGate_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_int_door_01_VaultGate_01_C;
 
 SDK_NAMESPACE_END

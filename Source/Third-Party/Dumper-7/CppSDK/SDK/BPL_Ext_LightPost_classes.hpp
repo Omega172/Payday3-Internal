@@ -57,5 +57,6 @@ public:
 		return GetDefaultObjImpl<ABPL_Ext_LightPost_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_Ext_LightPost_C;
 
 SDK_NAMESPACE_END

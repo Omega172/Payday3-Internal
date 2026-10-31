@@ -16,17 +16,33 @@
 
 SDK_NAMESPACE_START
 
-// Function C_Sky.C_Sky_C.BlackScreenStarted
-// (Event, Public, BlueprintEvent)
+// Function C_Sky.C_Sky_C.OnIntroFinished
+// (BlueprintCallable, BlueprintEvent)
 
-void AC_Sky_C::BlackScreenStarted()
+void AC_Sky_C::OnIntroFinished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_Sky_C", "BlackScreenStarted");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnIntroFinished", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function C_Sky.C_Sky_C.IntroSequenceChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    bIsStarted_IntroSequenceChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AC_Sky_C::IntroSequenceChanged(bool bIsStarted_IntroSequenceChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IntroSequenceChanged", FnName));
+
+	Params::C_Sky_C_IntroSequenceChanged Parms{};
+
+	Parms.bIsStarted_IntroSequenceChanged = bIsStarted_IntroSequenceChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -37,10 +53,8 @@ void AC_Sky_C::BlackScreenStarted()
 
 void AC_Sky_C::ExecuteUbergraph_C_Sky(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_Sky_C", "ExecuteUbergraph_C_Sky");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "C_Sky_C", "ExecuteUbergraph_C_Sky", FuncInfo);
 
 	Params::C_Sky_C_ExecuteUbergraph_C_Sky Parms{};
 
@@ -50,35 +64,13 @@ void AC_Sky_C::ExecuteUbergraph_C_Sky(int32 EntryPoint)
 }
 
 
-// Function C_Sky.C_Sky_C.IntroSequenceChanged
+// Function C_Sky.C_Sky_C.BlackScreenStarted
 // (Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    bIsStarted                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AC_Sky_C::IntroSequenceChanged(bool bIsStarted)
+void AC_Sky_C::BlackScreenStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_Sky_C", "IntroSequenceChanged");
-
-	Params::C_Sky_C_IntroSequenceChanged Parms{};
-
-	Parms.bIsStarted = bIsStarted;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function C_Sky.C_Sky_C.OnIntroFinished
-// (BlueprintCallable, BlueprintEvent)
-
-void AC_Sky_C::OnIntroFinished()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_Sky_C", "OnIntroFinished");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BlackScreenStarted", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

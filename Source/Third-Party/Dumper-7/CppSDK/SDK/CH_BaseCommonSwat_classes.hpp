@@ -16,12 +16,12 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CH_BaseCommonSwat.CH_BaseCommonSwat_C
-// 0x0010 (0x21D0 - 0x21C0)
+// 0x0010 (0x2260 - 0x2250)
 #pragma pack(push, 0x1)
 class SDK_ALIGN(0x10) ACH_BaseCommonSwat_C : public ACH_BaseCop_C
 {
 public:
-	class USBZShoutTargetComponent*               SBZShoutTarget;                                    // 0x21C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZShoutTargetComponent*               SBZShoutTarget;                                    // 0x2250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -38,5 +38,6 @@ public:
 	}
 };
 #pragma pack(pop)
+DUMPER7_ASSERTS_ACH_BaseCommonSwat_C;
 
 SDK_NAMESPACE_END

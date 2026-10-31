@@ -14,6 +14,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function C_DiamondDistrict_IntroOutro.C_DiamondDistrict_IntroOutro_C.IntroSequenceChanged
+// 0x0001 (0x0001 - 0x0000)
+struct C_DiamondDistrict_IntroOutro_C_IntroSequenceChanged final
+{
+public:
+	bool                                          bIsStarted_IntroSequenceChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_C_DiamondDistrict_IntroOutro_C_IntroSequenceChanged;
+
 // Function C_DiamondDistrict_IntroOutro.C_DiamondDistrict_IntroOutro_C.ExecuteUbergraph_C_DiamondDistrict_IntroOutro
 // 0x0028 (0x0028 - 0x0000)
 struct C_DiamondDistrict_IntroOutro_C_ExecuteUbergraph_C_DiamondDistrict_IntroOutro final
@@ -26,14 +35,7 @@ public:
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0014(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function C_DiamondDistrict_IntroOutro.C_DiamondDistrict_IntroOutro_C.IntroSequenceChanged
-// 0x0001 (0x0001 - 0x0000)
-struct C_DiamondDistrict_IntroOutro_C_IntroSequenceChanged final
-{
-public:
-	bool                                          bIsStarted;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_C_DiamondDistrict_IntroOutro_C_ExecuteUbergraph_C_DiamondDistrict_IntroOutro;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

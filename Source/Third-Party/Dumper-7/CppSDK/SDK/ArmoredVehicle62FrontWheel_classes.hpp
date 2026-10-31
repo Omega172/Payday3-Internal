@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UArmoredVehicle62FrontWheel_C>();
 	}
 };
+DUMPER7_ASSERTS_UArmoredVehicle62FrontWheel_C;
 
 SDK_NAMESPACE_END

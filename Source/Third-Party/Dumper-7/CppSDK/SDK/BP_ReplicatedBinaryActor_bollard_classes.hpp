@@ -37,10 +37,10 @@ public:
 	struct FVector                                EndPosition;                                       // 0x03B8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_ReplicatedBinaryActor_bollard(int32 EntryPoint);
-	void MoveBollard__FinishedFunc();
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
 	void MoveBollard__UpdateFunc();
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
+	void MoveBollard__FinishedFunc();
+	void ExecuteUbergraph_BP_ReplicatedBinaryActor_bollard(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -56,5 +56,6 @@ public:
 		return GetDefaultObjImpl<ABP_ReplicatedBinaryActor_bollard_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ReplicatedBinaryActor_bollard_C;
 
 SDK_NAMESPACE_END

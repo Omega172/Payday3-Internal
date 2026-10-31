@@ -16,15 +16,43 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_JewelryMachine.WBP_JewelryMachine_C.Error
+// Function WBP_JewelryMachine.WBP_JewelryMachine_C.SetAmount
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_JewelryMachine_C::SetAmount(const class FText& InText)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetAmount", FnName));
+
+	Params::WBP_JewelryMachine_C_SetAmount Parms{};
+
+	Parms.InText = std::move(InText);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_JewelryMachine.WBP_JewelryMachine_C.Scanning
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_JewelryMachine_C::Error()
+void UWBP_JewelryMachine_C::Scanning()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Scanning", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JewelryMachine_C", "Error");
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_JewelryMachine.WBP_JewelryMachine_C.Ready
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_JewelryMachine_C::Ready()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Ready", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +65,8 @@ void UWBP_JewelryMachine_C::Error()
 
 void UWBP_JewelryMachine_C::ExecuteUbergraph_WBP_JewelryMachine(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JewelryMachine_C", "ExecuteUbergraph_WBP_JewelryMachine");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_JewelryMachine_C", "ExecuteUbergraph_WBP_JewelryMachine", FuncInfo);
 
 	Params::WBP_JewelryMachine_C_ExecuteUbergraph_WBP_JewelryMachine Parms{};
 
@@ -50,51 +76,15 @@ void UWBP_JewelryMachine_C::ExecuteUbergraph_WBP_JewelryMachine(int32 EntryPoint
 }
 
 
-// Function WBP_JewelryMachine.WBP_JewelryMachine_C.Ready
+// Function WBP_JewelryMachine.WBP_JewelryMachine_C.Error
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_JewelryMachine_C::Ready()
+void UWBP_JewelryMachine_C::Error()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JewelryMachine_C", "Ready");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Error", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_JewelryMachine.WBP_JewelryMachine_C.Scanning
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_JewelryMachine_C::Scanning()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JewelryMachine_C", "Scanning");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_JewelryMachine.WBP_JewelryMachine_C.SetAmount
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_JewelryMachine_C::SetAmount(const class FText& InText)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_JewelryMachine_C", "SetAmount");
-
-	Params::WBP_JewelryMachine_C_SetAmount Parms{};
-
-	Parms.InText = std::move(InText);
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 

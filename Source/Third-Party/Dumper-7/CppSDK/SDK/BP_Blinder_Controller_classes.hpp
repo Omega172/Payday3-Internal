@@ -28,10 +28,10 @@ public:
 	bool                                          isEnabled;                                         // 0x0378(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_Blinder_Controller_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_Blinder_Controller(int32 EntryPoint);
-	void setEnabled(bool enabled);
 	void UserConstructionScript();
+	void setEnabled(bool enabled);
+	void ExecuteUbergraph_BP_Blinder_Controller(int32 EntryPoint);
+	void BndEvt__BP_Blinder_Controller_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -47,5 +47,6 @@ public:
 		return GetDefaultObjImpl<ABP_Blinder_Controller_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Blinder_Controller_C;
 
 SDK_NAMESPACE_END

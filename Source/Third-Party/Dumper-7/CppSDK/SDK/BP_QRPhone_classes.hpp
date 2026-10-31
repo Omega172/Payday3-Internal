@@ -35,11 +35,11 @@ public:
 	double                                        Glow_Intensity;                                    // 0x03B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_QRPhone_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_QRPhone(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void SetInteractive(bool bEnabled);
 	void UserConstructionScript();
+	void SetInteractive(bool bEnabled);
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_QRPhone(int32 EntryPoint);
+	void BndEvt__BP_QRPhone_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -55,5 +55,6 @@ public:
 		return GetDefaultObjImpl<ABP_QRPhone_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_QRPhone_C;
 
 SDK_NAMESPACE_END

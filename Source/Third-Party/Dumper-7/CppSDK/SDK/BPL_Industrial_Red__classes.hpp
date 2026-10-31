@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ABPL_Industrial_Red__C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_Industrial_Red__C;
 
 SDK_NAMESPACE_END

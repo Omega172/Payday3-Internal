@@ -16,21 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_Menu_1.WBP_Menu_1_C.ExecuteUbergraph_WBP_Menu_1
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_Menu_1.WBP_Menu_1_C.SetBackFocus
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Menu_1_C::ExecuteUbergraph_WBP_Menu_1(int32 EntryPoint)
+void UWBP_Menu_1_C::SetBackFocus(bool NewParam)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetBackFocus", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_1_C", "ExecuteUbergraph_WBP_Menu_1");
+	Params::WBP_Menu_1_C_SetBackFocus Parms{};
 
-	Params::WBP_Menu_1_C_ExecuteUbergraph_WBP_Menu_1 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.NewParam = NewParam;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -43,10 +41,8 @@ void UWBP_Menu_1_C::ExecuteUbergraph_WBP_Menu_1(int32 EntryPoint)
 
 void UWBP_Menu_1_C::Set_Numbers(const class FString& NewParam)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_1_C", "Set Numbers");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set Numbers", FnName));
 
 	Params::WBP_Menu_1_C_Set_Numbers Parms{};
 
@@ -56,21 +52,19 @@ void UWBP_Menu_1_C::Set_Numbers(const class FString& NewParam)
 }
 
 
-// Function WBP_Menu_1.WBP_Menu_1_C.SetBackFocus
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Menu_1.WBP_Menu_1_C.ExecuteUbergraph_WBP_Menu_1
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// bool                                    NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Menu_1_C::SetBackFocus(bool NewParam)
+void UWBP_Menu_1_C::ExecuteUbergraph_WBP_Menu_1(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_Menu_1_C", "ExecuteUbergraph_WBP_Menu_1", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_1_C", "SetBackFocus");
+	Params::WBP_Menu_1_C_ExecuteUbergraph_WBP_Menu_1 Parms{};
 
-	Params::WBP_Menu_1_C_SetBackFocus Parms{};
-
-	Parms.NewParam = NewParam;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

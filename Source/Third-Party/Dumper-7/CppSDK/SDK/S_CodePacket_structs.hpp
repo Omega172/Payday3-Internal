@@ -23,5 +23,6 @@ public:
 	int32                                         TrueCode_4_808F400144CA3FC7ECE87FA1BFF54644;       // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         RandomCodeFromServer_6_96FFFD2842FE2B202308BD98CDE0233F; // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_FS_CodePacket;
 
 SDK_NAMESPACE_END

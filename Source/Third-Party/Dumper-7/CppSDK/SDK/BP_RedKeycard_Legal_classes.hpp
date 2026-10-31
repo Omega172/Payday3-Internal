@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_RedKeycard_Legal_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_RedKeycard_Legal_C;
 
 SDK_NAMESPACE_END

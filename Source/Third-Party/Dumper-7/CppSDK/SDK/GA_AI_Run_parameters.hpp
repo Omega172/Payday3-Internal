@@ -14,6 +14,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function GA_AI_Run.GA_AI_Run_C.K2_OnEndAbility
+// 0x0001 (0x0001 - 0x0000)
+struct GA_AI_Run_C_K2_OnEndAbility final
+{
+public:
+	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_GA_AI_Run_C_K2_OnEndAbility;
+
 // Function GA_AI_Run.GA_AI_Run_C.ExecuteUbergraph_GA_AI_Run
 // 0x0008 (0x0008 - 0x0000)
 struct GA_AI_Run_C_ExecuteUbergraph_GA_AI_Run final
@@ -22,14 +31,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bWasCancelled;                        // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function GA_AI_Run.GA_AI_Run_C.K2_OnEndAbility
-// 0x0001 (0x0001 - 0x0000)
-struct GA_AI_Run_C_K2_OnEndAbility final
-{
-public:
-	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_GA_AI_Run_C_ExecuteUbergraph_GA_AI_Run;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -16,27 +16,21 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ReplicatedBinaryActor_Skylight.BP_ReplicatedBinaryActor_Skylight_C.BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
+// Function BP_ReplicatedBinaryActor_Skylight.BP_ReplicatedBinaryActor_Skylight_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// class UActorComponent*                  PoolComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   Hits                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZPropDamageContext&     DamageContext                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// bool                                    bStateToChangeTo_OnStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ReplicatedBinaryActor_Skylight_C::BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
+void ABP_ReplicatedBinaryActor_Skylight_C::OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_Skylight_C", "BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature");
+	Params::BP_ReplicatedBinaryActor_Skylight_C_OnStateChanged Parms{};
 
-	Params::BP_ReplicatedBinaryActor_Skylight_C_BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature Parms{};
-
-	Parms.PoolComponent = PoolComponent;
-	Parms.Hits = Hits;
-	Parms.bDoCosmetics = bDoCosmetics;
-	Parms.DamageContext = std::move(DamageContext);
+	Parms.bStateToChangeTo_OnStateChanged = bStateToChangeTo_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -49,10 +43,8 @@ void ABP_ReplicatedBinaryActor_Skylight_C::BndEvt__BP_ReplicatedBinaryActor_Vent
 
 void ABP_ReplicatedBinaryActor_Skylight_C::ExecuteUbergraph_BP_ReplicatedBinaryActor_Skylight(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_Skylight_C", "ExecuteUbergraph_BP_ReplicatedBinaryActor_Skylight");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ReplicatedBinaryActor_Skylight_C", "ExecuteUbergraph_BP_ReplicatedBinaryActor_Skylight", FuncInfo);
 
 	Params::BP_ReplicatedBinaryActor_Skylight_C_ExecuteUbergraph_BP_ReplicatedBinaryActor_Skylight Parms{};
 
@@ -62,23 +54,25 @@ void ABP_ReplicatedBinaryActor_Skylight_C::ExecuteUbergraph_BP_ReplicatedBinaryA
 }
 
 
-// Function BP_ReplicatedBinaryActor_Skylight.BP_ReplicatedBinaryActor_Skylight_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
+// Function BP_ReplicatedBinaryActor_Skylight.BP_ReplicatedBinaryActor_Skylight_C.BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
 // Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UActorComponent*                  PoolComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   Hits                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZPropDamageContext&     DamageContext                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 
-void ABP_ReplicatedBinaryActor_Skylight_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
+void ABP_ReplicatedBinaryActor_Skylight_C::BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_Skylight_C", "OnStateChanged");
+	Params::BP_ReplicatedBinaryActor_Skylight_C_BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature Parms{};
 
-	Params::BP_ReplicatedBinaryActor_Skylight_C_OnStateChanged Parms{};
-
-	Parms.bStateToChangeTo = bStateToChangeTo;
+	Parms.PoolComponent = PoolComponent;
+	Parms.Hits = Hits;
 	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.DamageContext = std::move(DamageContext);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

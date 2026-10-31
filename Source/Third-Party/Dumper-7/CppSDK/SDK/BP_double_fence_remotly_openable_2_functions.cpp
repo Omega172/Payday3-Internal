@@ -16,29 +16,25 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_double_fence_remotly_openable_2.BP_double_fence_remotly_openable_2_C.Close_remotly
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_double_fence_remotly_openable_2_C::Close_remotly()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_double_fence_remotly_openable_2_C", "Close_remotly");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_double_fence_remotly_openable_2.BP_double_fence_remotly_openable_2_C.Open_remotly
 // (Public, BlueprintCallable, BlueprintEvent)
 
 void ABP_double_fence_remotly_openable_2_C::Open_remotly()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Open_remotly", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_double_fence_remotly_openable_2_C", "Open_remotly");
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_double_fence_remotly_openable_2.BP_double_fence_remotly_openable_2_C.Close_remotly
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_double_fence_remotly_openable_2_C::Close_remotly()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Close_remotly", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

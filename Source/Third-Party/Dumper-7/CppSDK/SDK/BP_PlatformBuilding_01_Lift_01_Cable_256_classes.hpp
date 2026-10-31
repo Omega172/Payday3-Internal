@@ -33,11 +33,11 @@ public:
 	ESplineMeshAxis                               Forward_Axis;                                      // 0x0369(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void calculate_mesh_bound_offset();
-	void compensate_for_scale();
-	void get_and_clamp_location_and_tangent_at_distance(double Distance, struct FVector* Location, struct FVector* Tangent);
-	int32 round_for_minimum_scaling();
 	void UserConstructionScript();
+	int32 round_for_minimum_scaling();
+	void get_and_clamp_location_and_tangent_at_distance(double Distance, struct FVector* Location, struct FVector* Tangent);
+	void compensate_for_scale();
+	void calculate_mesh_bound_offset();
 
 public:
 	static class UClass* StaticClass()
@@ -53,5 +53,6 @@ public:
 		return GetDefaultObjImpl<ABP_PlatformBuilding_01_Lift_01_Cable_256_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PlatformBuilding_01_Lift_01_Cable_256_C;
 
 SDK_NAMESPACE_END

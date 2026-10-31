@@ -16,49 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_BaseMovingTransform.BP_BaseMovingTransform_C.ExecuteUbergraph_BP_BaseMovingTransform
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_BaseMovingTransform.BP_BaseMovingTransform_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_BaseMovingTransform_C::ExecuteUbergraph_BP_BaseMovingTransform(int32 EntryPoint)
+void ABP_BaseMovingTransform_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseMovingTransform_C", "ExecuteUbergraph_BP_BaseMovingTransform");
-
-	Params::BP_BaseMovingTransform_C_ExecuteUbergraph_BP_BaseMovingTransform Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BaseMovingTransform.BP_BaseMovingTransform_C.MoveTimeLine__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_BaseMovingTransform_C::MoveTimeLine__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseMovingTransform_C", "MoveTimeLine__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_BaseMovingTransform.BP_BaseMovingTransform_C.MoveTimeLine__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_BaseMovingTransform_C::MoveTimeLine__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseMovingTransform_C", "MoveTimeLine__UpdateFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -72,10 +36,8 @@ void ABP_BaseMovingTransform_C::MoveTimeLine__UpdateFunc()
 
 void ABP_BaseMovingTransform_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseMovingTransform_C", "OnStateChanged");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
 	Params::BP_BaseMovingTransform_C_OnStateChanged Parms{};
 
@@ -86,17 +48,45 @@ void ABP_BaseMovingTransform_C::OnStateChanged(bool bStateToChangeTo, bool bDoCo
 }
 
 
-// Function BP_BaseMovingTransform.BP_BaseMovingTransform_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_BaseMovingTransform.BP_BaseMovingTransform_C.MoveTimeLine__UpdateFunc
+// (BlueprintEvent)
 
-void ABP_BaseMovingTransform_C::UserConstructionScript()
+void ABP_BaseMovingTransform_C::MoveTimeLine__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseMovingTransform_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MoveTimeLine__UpdateFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_BaseMovingTransform.BP_BaseMovingTransform_C.MoveTimeLine__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_BaseMovingTransform_C::MoveTimeLine__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MoveTimeLine__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_BaseMovingTransform.BP_BaseMovingTransform_C.ExecuteUbergraph_BP_BaseMovingTransform
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BaseMovingTransform_C::ExecuteUbergraph_BP_BaseMovingTransform(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_BaseMovingTransform_C", "ExecuteUbergraph_BP_BaseMovingTransform", FuncInfo);
+
+	Params::BP_BaseMovingTransform_C_ExecuteUbergraph_BP_BaseMovingTransform Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

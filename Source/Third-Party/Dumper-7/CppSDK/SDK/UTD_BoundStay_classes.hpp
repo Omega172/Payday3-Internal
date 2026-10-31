@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UUTD_BoundStay_C>();
 	}
 };
+DUMPER7_ASSERTS_UUTD_BoundStay_C;
 
 SDK_NAMESPACE_END

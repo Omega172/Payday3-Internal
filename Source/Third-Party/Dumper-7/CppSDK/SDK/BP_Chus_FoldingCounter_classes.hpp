@@ -36,11 +36,11 @@ public:
 	TMulticastInlineDelegate<void()>              CounterOpened;                                     // 0x03C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__BP_Chus_FoldingCounter_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_Chus_FoldingCounter(int32 EntryPoint);
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void Rotation__FinishedFunc();
 	void Rotation__UpdateFunc();
+	void Rotation__FinishedFunc();
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_Chus_FoldingCounter(int32 EntryPoint);
+	void BndEvt__BP_Chus_FoldingCounter_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -56,5 +56,6 @@ public:
 		return GetDefaultObjImpl<ABP_Chus_FoldingCounter_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Chus_FoldingCounter_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Coffecup_01_E_SmallDestruction_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Coffecup_01_E_SmallDestruction_C;
 
 SDK_NAMESPACE_END

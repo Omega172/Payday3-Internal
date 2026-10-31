@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function BTTask_Escort_ReserveLifeAction.BTTask_Escort_ReserveLifeAction_C.ReceiveExecute
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class AActor*                           OwnerActor_ReceiveExecute                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBTTask_Escort_ReserveLifeAction_C::ReceiveExecute(class AActor* OwnerActor_ReceiveExecute)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveExecute", FnName));
+
+	Params::BTTask_Escort_ReserveLifeAction_C_ReceiveExecute Parms{};
+
+	Parms.OwnerActor_ReceiveExecute = OwnerActor_ReceiveExecute;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BTTask_Escort_ReserveLifeAction.BTTask_Escort_ReserveLifeAction_C.ExecuteUbergraph_BTTask_Escort_ReserveLifeAction
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -23,34 +41,12 @@ SDK_NAMESPACE_START
 
 void UBTTask_Escort_ReserveLifeAction_C::ExecuteUbergraph_BTTask_Escort_ReserveLifeAction(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_Escort_ReserveLifeAction_C", "ExecuteUbergraph_BTTask_Escort_ReserveLifeAction");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BTTask_Escort_ReserveLifeAction_C", "ExecuteUbergraph_BTTask_Escort_ReserveLifeAction", FuncInfo);
 
 	Params::BTTask_Escort_ReserveLifeAction_C_ExecuteUbergraph_BTTask_Escort_ReserveLifeAction Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BTTask_Escort_ReserveLifeAction.BTTask_Escort_ReserveLifeAction_C.ReceiveExecute
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class AActor*                           OwnerActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UBTTask_Escort_ReserveLifeAction_C::ReceiveExecute(class AActor* OwnerActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_Escort_ReserveLifeAction_C", "ReceiveExecute");
-
-	Params::BTTask_Escort_ReserveLifeAction_C_ReceiveExecute Parms{};
-
-	Parms.OwnerActor = OwnerActor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

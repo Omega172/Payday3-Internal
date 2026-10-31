@@ -16,11 +16,11 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_HackingModlue.BP_HackingModlue_C
-// 0x0008 (0x03B8 - 0x03B0)
+// 0x0008 (0x03C0 - 0x03B8)
 class ABP_HackingModlue_C final : public ASBZHackingMinigameActor
 {
 public:
-	class USceneComponent*                        HackableLocation;                                  // 0x03B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        HackableLocation;                                  // 0x03B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	struct FVector GetHackableLocation() const;
@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ABP_HackingModlue_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_HackingModlue_C;
 
 SDK_NAMESPACE_END

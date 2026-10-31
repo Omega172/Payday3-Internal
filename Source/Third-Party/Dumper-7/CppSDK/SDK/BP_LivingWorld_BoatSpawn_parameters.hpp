@@ -17,6 +17,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_LivingWorld_BoatSpawn.BP_LivingWorld_BoatSpawn_C.UserConstructionScript
+// 0x0004 (0x0004 - 0x0000)
+struct BP_LivingWorld_BoatSpawn_C_UserConstructionScript final
+{
+public:
+	float                                         CallFunc_SetPlayRate_NewRate_ImplicitCast;         // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LivingWorld_BoatSpawn_C_UserConstructionScript;
+
 // Function BP_LivingWorld_BoatSpawn.BP_LivingWorld_BoatSpawn_C.ExecuteUbergraph_BP_LivingWorld_BoatSpawn
 // 0x0178 (0x0178 - 0x0000)
 struct BP_LivingWorld_BoatSpawn_C_ExecuteUbergraph_BP_LivingWorld_BoatSpawn final
@@ -40,14 +49,7 @@ public:
 	float                                         CallFunc_GetLocationAtDistanceAlongSpline_Distance_ImplicitCast; // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetRotationAtDistanceAlongSpline_Distance_ImplicitCast; // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_LivingWorld_BoatSpawn.BP_LivingWorld_BoatSpawn_C.UserConstructionScript
-// 0x0004 (0x0004 - 0x0000)
-struct BP_LivingWorld_BoatSpawn_C_UserConstructionScript final
-{
-public:
-	float                                         CallFunc_SetPlayRate_NewRate_ImplicitCast;         // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_LivingWorld_BoatSpawn_C_ExecuteUbergraph_BP_LivingWorld_BoatSpawn;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

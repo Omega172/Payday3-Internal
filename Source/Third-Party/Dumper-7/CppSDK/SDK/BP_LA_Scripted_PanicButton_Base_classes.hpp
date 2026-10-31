@@ -28,10 +28,10 @@ public:
 	class USBZLifeActionInstance*                 SBZLifeActionInstance;                             // 0x0340(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_LA_Scripted_PanicButton_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot);
-	void BndEvt__BP_LA_Scripted_PanicButton_SBZLifeAction_K2Node_ComponentBoundEvent_3_SBZLifeActionStopEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot, ESBZLifeActionStopReason Result);
-	void Call_Dispatcher(ESBZLifeActionStopReason Reason, class ASBZCharacter* Character);
 	void ExecuteUbergraph_BP_LA_Scripted_PanicButton_Base(int32 EntryPoint);
+	void Call_Dispatcher(ESBZLifeActionStopReason Reason, class ASBZCharacter* Character);
+	void BndEvt__BP_LA_Scripted_PanicButton_SBZLifeAction_K2Node_ComponentBoundEvent_3_SBZLifeActionStopEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot, ESBZLifeActionStopReason Result);
+	void BndEvt__BP_LA_Scripted_PanicButton_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot);
 
 public:
 	static class UClass* StaticClass()
@@ -47,5 +47,6 @@ public:
 		return GetDefaultObjImpl<ABP_LA_Scripted_PanicButton_Base_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LA_Scripted_PanicButton_Base_C;
 
 SDK_NAMESPACE_END

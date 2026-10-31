@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UBP_Order_TradeHostage_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_Order_TradeHostage_C;
 
 SDK_NAMESPACE_END

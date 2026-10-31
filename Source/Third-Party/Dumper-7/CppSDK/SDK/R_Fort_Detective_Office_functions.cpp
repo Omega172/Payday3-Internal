@@ -16,42 +16,198 @@
 
 SDK_NAMESPACE_START
 
-// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_03_2_K2Node_ActorBoundEvent_11_SBZLootedSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.StartedAnderssonObjective
+// (BlueprintCallable, BlueprintEvent)
 
-void AR_Fort_Detective_Office_C::BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_03_2_K2Node_ActorBoundEvent_11_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
+void AR_Fort_Detective_Office_C::StartedAnderssonObjective()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StartedAnderssonObjective", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Fort_Detective_Office_C", "BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_03_2_K2Node_ActorBoundEvent_11_SBZLootedSignature__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::R_Fort_Detective_Office_C_BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_03_2_K2Node_ActorBoundEvent_11_SBZLootedSignature__DelegateSignature Parms{};
 
-	Parms.InstantLoot = InstantLoot;
-	Parms.TakenByPlayer = TakenByPlayer;
+// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.RemoveQuestionWaypointCarKeys
+// (BlueprintCallable, BlueprintEvent)
+
+void AR_Fort_Detective_Office_C::RemoveQuestionWaypointCarKeys()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RemoveQuestionWaypointCarKeys", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.R_Lieutenant_DisableObjective
+// (BlueprintCallable, BlueprintEvent)
+
+void AR_Fort_Detective_Office_C::R_Lieutenant_DisableObjective()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"R_Lieutenant_DisableObjective", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.R_DetectiveOffice_DistributeRest
+// (BlueprintCallable, BlueprintEvent)
+
+void AR_Fort_Detective_Office_C::R_DetectiveOffice_DistributeRest()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"R_DetectiveOffice_DistributeRest", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.R_DetectiveOffice_DistributeCarKeys
+// (BlueprintCallable, BlueprintEvent)
+
+void AR_Fort_Detective_Office_C::R_DetectiveOffice_DistributeCarKeys()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"R_DetectiveOffice_DistributeCarKeys", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.R_ChiefOffice_ActivateObj
+// (BlueprintCallable, BlueprintEvent)
+
+void AR_Fort_Detective_Office_C::R_ChiefOffice_ActivateObj()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"R_ChiefOffice_ActivateObj", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.PPCarKeysSafeDestroy
+// (BlueprintCallable, BlueprintEvent)
+
+void AR_Fort_Detective_Office_C::PPCarKeysSafeDestroy()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PPCarKeysSafeDestroy", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.ExecuteUbergraph_R_Fort_Detective_Office
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AR_Fort_Detective_Office_C::ExecuteUbergraph_R_Fort_Detective_Office(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "R_Fort_Detective_Office_C", "ExecuteUbergraph_R_Fort_Detective_Office", FuncInfo);
+
+	Params::R_Fort_Detective_Office_C_ExecuteUbergraph_R_Fort_Detective_Office Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_2_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature
+// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.DestroyDetectiveCarKey
+// (BlueprintCallable, BlueprintEvent)
+
+void AR_Fort_Detective_Office_C::DestroyDetectiveCarKey()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DestroyDetectiveCarKey", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.BndEvt__R_Fort_Generic_Office_BP_Safe_01_2_K2Node_ActorBoundEvent_0_SBZOnMinigameDoneDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+
+void AR_Fort_Detective_Office_C::BndEvt__R_Fort_Generic_Office_BP_Safe_01_2_K2Node_ActorBoundEvent_0_SBZOnMinigameDoneDelegate__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Fort_Generic_Office_BP_Safe_01_2_K2Node_ActorBoundEvent_0_SBZOnMinigameDoneDelegate__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.BndEvt__R_Fort_Detective_Office_SBZPlayerTriggerVolume_PlayerNearAnderssonLocker1_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AR_Fort_Detective_Office_C::BndEvt__R_Fort_Detective_Office_SBZPlayerTriggerVolume_PlayerNearAnderssonLocker1_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Fort_Detective_Office_SBZPlayerTriggerVolume_PlayerNearAnderssonLocker1_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::R_Fort_Detective_Office_C_BndEvt__R_Fort_Detective_Office_SBZPlayerTriggerVolume_PlayerNearAnderssonLocker1_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.BndEvt__R_Fort_Detective_Office_BP_CarKeys_01_2_K2Node_ActorBoundEvent_4_onObjectPickedUp__DelegateSignature
+// (BlueprintEvent)
+
+void AR_Fort_Detective_Office_C::BndEvt__R_Fort_Detective_Office_BP_CarKeys_01_2_K2Node_ActorBoundEvent_4_onObjectPickedUp__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Fort_Detective_Office_BP_CarKeys_01_2_K2Node_ActorBoundEvent_4_onObjectPickedUp__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.BndEvt__R_Fort_Detective_Office_BP_AudioBug_Locker1_K2Node_ActorBoundEvent_1_onInteractionComplete__DelegateSignature
+// (BlueprintEvent)
+
+void AR_Fort_Detective_Office_C::BndEvt__R_Fort_Detective_Office_BP_AudioBug_Locker1_K2Node_ActorBoundEvent_1_onInteractionComplete__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Fort_Detective_Office_BP_AudioBug_Locker1_K2Node_ActorBoundEvent_1_onInteractionComplete__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.BndEvt__R_Fort_ChiefPolice_Office_BP_InteractableMoneyPile_LowValue_2_K2Node_ActorBoundEvent_7_SBZBagPickedUp__DelegateSignature
+// (BlueprintEvent)
+
+void AR_Fort_Detective_Office_C::BndEvt__R_Fort_ChiefPolice_Office_BP_InteractableMoneyPile_LowValue_2_K2Node_ActorBoundEvent_7_SBZBagPickedUp__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Fort_ChiefPolice_Office_BP_InteractableMoneyPile_LowValue_2_K2Node_ActorBoundEvent_7_SBZBagPickedUp__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_4_K2Node_ActorBoundEvent_12_SBZLootedSignature__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AR_Fort_Detective_Office_C::BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_2_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
+void AR_Fort_Detective_Office_C::BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_4_K2Node_ActorBoundEvent_12_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_4_K2Node_ActorBoundEvent_12_SBZLootedSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Fort_Detective_Office_C", "BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_2_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature");
-
-	Params::R_Fort_Detective_Office_C_BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_2_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature Parms{};
+	Params::R_Fort_Detective_Office_C_BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_4_K2Node_ActorBoundEvent_12_SBZLootedSignature__DelegateSignature Parms{};
 
 	Parms.InstantLoot = InstantLoot;
 	Parms.TakenByPlayer = TakenByPlayer;
@@ -68,10 +224,8 @@ void AR_Fort_Detective_Office_C::BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoo
 
 void AR_Fort_Detective_Office_C::BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_3_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Fort_Detective_Office_C", "BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_3_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_3_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature", FnName));
 
 	Params::R_Fort_Detective_Office_C_BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_3_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature Parms{};
 
@@ -82,20 +236,18 @@ void AR_Fort_Detective_Office_C::BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoo
 }
 
 
-// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_4_K2Node_ActorBoundEvent_12_SBZLootedSignature__DelegateSignature
+// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_2_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AR_Fort_Detective_Office_C::BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_4_K2Node_ActorBoundEvent_12_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
+void AR_Fort_Detective_Office_C::BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_2_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_2_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Fort_Detective_Office_C", "BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_4_K2Node_ActorBoundEvent_12_SBZLootedSignature__DelegateSignature");
-
-	Params::R_Fort_Detective_Office_C_BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_4_K2Node_ActorBoundEvent_12_SBZLootedSignature__DelegateSignature Parms{};
+	Params::R_Fort_Detective_Office_C_BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_2_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature Parms{};
 
 	Parms.InstantLoot = InstantLoot;
 	Parms.TakenByPlayer = TakenByPlayer;
@@ -104,211 +256,23 @@ void AR_Fort_Detective_Office_C::BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoo
 }
 
 
-// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.BndEvt__R_Fort_ChiefPolice_Office_BP_InteractableMoneyPile_LowValue_2_K2Node_ActorBoundEvent_7_SBZBagPickedUp__DelegateSignature
-// (BlueprintEvent)
-
-void AR_Fort_Detective_Office_C::BndEvt__R_Fort_ChiefPolice_Office_BP_InteractableMoneyPile_LowValue_2_K2Node_ActorBoundEvent_7_SBZBagPickedUp__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Fort_Detective_Office_C", "BndEvt__R_Fort_ChiefPolice_Office_BP_InteractableMoneyPile_LowValue_2_K2Node_ActorBoundEvent_7_SBZBagPickedUp__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.BndEvt__R_Fort_Detective_Office_BP_AudioBug_Locker1_K2Node_ActorBoundEvent_1_onInteractionComplete__DelegateSignature
-// (BlueprintEvent)
-
-void AR_Fort_Detective_Office_C::BndEvt__R_Fort_Detective_Office_BP_AudioBug_Locker1_K2Node_ActorBoundEvent_1_onInteractionComplete__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Fort_Detective_Office_C", "BndEvt__R_Fort_Detective_Office_BP_AudioBug_Locker1_K2Node_ActorBoundEvent_1_onInteractionComplete__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.BndEvt__R_Fort_Detective_Office_BP_CarKeys_01_2_K2Node_ActorBoundEvent_4_onObjectPickedUp__DelegateSignature
-// (BlueprintEvent)
-
-void AR_Fort_Detective_Office_C::BndEvt__R_Fort_Detective_Office_BP_CarKeys_01_2_K2Node_ActorBoundEvent_4_onObjectPickedUp__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Fort_Detective_Office_C", "BndEvt__R_Fort_Detective_Office_BP_CarKeys_01_2_K2Node_ActorBoundEvent_4_onObjectPickedUp__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.BndEvt__R_Fort_Detective_Office_SBZPlayerTriggerVolume_PlayerNearAnderssonLocker1_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
+// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_03_2_K2Node_ActorBoundEvent_11_SBZLootedSignature__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AR_Fort_Detective_Office_C::BndEvt__R_Fort_Detective_Office_SBZPlayerTriggerVolume_PlayerNearAnderssonLocker1_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AR_Fort_Detective_Office_C::BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_03_2_K2Node_ActorBoundEvent_11_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_03_2_K2Node_ActorBoundEvent_11_SBZLootedSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Fort_Detective_Office_C", "BndEvt__R_Fort_Detective_Office_SBZPlayerTriggerVolume_PlayerNearAnderssonLocker1_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature");
+	Params::R_Fort_Detective_Office_C_BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_03_2_K2Node_ActorBoundEvent_11_SBZLootedSignature__DelegateSignature Parms{};
 
-	Params::R_Fort_Detective_Office_C_BndEvt__R_Fort_Detective_Office_SBZPlayerTriggerVolume_PlayerNearAnderssonLocker1_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
+	Parms.InstantLoot = InstantLoot;
+	Parms.TakenByPlayer = TakenByPlayer;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.BndEvt__R_Fort_Generic_Office_BP_Safe_01_2_K2Node_ActorBoundEvent_0_SBZOnMinigameDoneDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-
-void AR_Fort_Detective_Office_C::BndEvt__R_Fort_Generic_Office_BP_Safe_01_2_K2Node_ActorBoundEvent_0_SBZOnMinigameDoneDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Fort_Detective_Office_C", "BndEvt__R_Fort_Generic_Office_BP_Safe_01_2_K2Node_ActorBoundEvent_0_SBZOnMinigameDoneDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.DestroyDetectiveCarKey
-// (BlueprintCallable, BlueprintEvent)
-
-void AR_Fort_Detective_Office_C::DestroyDetectiveCarKey()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Fort_Detective_Office_C", "DestroyDetectiveCarKey");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.ExecuteUbergraph_R_Fort_Detective_Office
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AR_Fort_Detective_Office_C::ExecuteUbergraph_R_Fort_Detective_Office(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Fort_Detective_Office_C", "ExecuteUbergraph_R_Fort_Detective_Office");
-
-	Params::R_Fort_Detective_Office_C_ExecuteUbergraph_R_Fort_Detective_Office Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.PPCarKeysSafeDestroy
-// (BlueprintCallable, BlueprintEvent)
-
-void AR_Fort_Detective_Office_C::PPCarKeysSafeDestroy()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Fort_Detective_Office_C", "PPCarKeysSafeDestroy");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.R_ChiefOffice_ActivateObj
-// (BlueprintCallable, BlueprintEvent)
-
-void AR_Fort_Detective_Office_C::R_ChiefOffice_ActivateObj()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Fort_Detective_Office_C", "R_ChiefOffice_ActivateObj");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.R_DetectiveOffice_DistributeCarKeys
-// (BlueprintCallable, BlueprintEvent)
-
-void AR_Fort_Detective_Office_C::R_DetectiveOffice_DistributeCarKeys()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Fort_Detective_Office_C", "R_DetectiveOffice_DistributeCarKeys");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.R_DetectiveOffice_DistributeRest
-// (BlueprintCallable, BlueprintEvent)
-
-void AR_Fort_Detective_Office_C::R_DetectiveOffice_DistributeRest()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Fort_Detective_Office_C", "R_DetectiveOffice_DistributeRest");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.R_Lieutenant_DisableObjective
-// (BlueprintCallable, BlueprintEvent)
-
-void AR_Fort_Detective_Office_C::R_Lieutenant_DisableObjective()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Fort_Detective_Office_C", "R_Lieutenant_DisableObjective");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.RemoveQuestionWaypointCarKeys
-// (BlueprintCallable, BlueprintEvent)
-
-void AR_Fort_Detective_Office_C::RemoveQuestionWaypointCarKeys()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Fort_Detective_Office_C", "RemoveQuestionWaypointCarKeys");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function R_Fort_Detective_Office.R_Fort_Detective_Office_C.StartedAnderssonObjective
-// (BlueprintCallable, BlueprintEvent)
-
-void AR_Fort_Detective_Office_C::StartedAnderssonObjective()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Fort_Detective_Office_C", "StartedAnderssonObjective");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

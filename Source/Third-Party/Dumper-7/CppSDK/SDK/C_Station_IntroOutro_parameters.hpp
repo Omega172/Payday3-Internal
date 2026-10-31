@@ -14,6 +14,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function C_Station_IntroOutro.C_Station_IntroOutro_C.IntroSequenceChanged
+// 0x0001 (0x0001 - 0x0000)
+struct C_Station_IntroOutro_C_IntroSequenceChanged final
+{
+public:
+	bool                                          bIsStarted_IntroSequenceChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_C_Station_IntroOutro_C_IntroSequenceChanged;
+
 // Function C_Station_IntroOutro.C_Station_IntroOutro_C.ExecuteUbergraph_C_Station_IntroOutro
 // 0x0028 (0x0028 - 0x0000)
 struct C_Station_IntroOutro_C_ExecuteUbergraph_C_Station_IntroOutro final
@@ -25,14 +34,7 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ULevelSequencePlayer*                   CallFunc_GetSequencePlayer_ReturnValue;            // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function C_Station_IntroOutro.C_Station_IntroOutro_C.IntroSequenceChanged
-// 0x0001 (0x0001 - 0x0000)
-struct C_Station_IntroOutro_C_IntroSequenceChanged final
-{
-public:
-	bool                                          bIsStarted;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_C_Station_IntroOutro_C_ExecuteUbergraph_C_Station_IntroOutro;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

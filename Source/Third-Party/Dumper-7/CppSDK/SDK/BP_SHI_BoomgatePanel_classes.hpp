@@ -33,13 +33,13 @@ public:
 	class UWBP_SHI_BoomgatePanel_C*               widget;                                            // 0x03C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_SHI_BoomgatePanel_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_SHI_BoomgatePanel(int32 EntryPoint);
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void ReceiveBeginPlay();
-	void setInteractionDisabled();
-	void setLocked();
 	void setScreenState(bool opened);
+	void setLocked();
+	void setInteractionDisabled();
+	void ReceiveBeginPlay();
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_SHI_BoomgatePanel(int32 EntryPoint);
+	void BndEvt__BP_SHI_BoomgatePanel_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -55,5 +55,6 @@ public:
 		return GetDefaultObjImpl<ABP_SHI_BoomgatePanel_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SHI_BoomgatePanel_C;
 
 SDK_NAMESPACE_END

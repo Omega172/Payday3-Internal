@@ -51,19 +51,19 @@ public:
 	TMulticastInlineDelegate<void()>              OnCorrectFound;                                    // 0x0440(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__BP_Authenticator_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void Complete();
-	void ExecuteUbergraph_BP_Authenticator(int32 EntryPoint);
-	void FunctionTimer();
-	void Initiate();
-	void OnRep_States();
-	void ReceiveBeginPlay();
-	void Search();
-	void SetValues();
-	void SetVisible(bool Visibility);
-	void Test();
-	void Timeline_0__FinishedFunc();
 	void Timeline_0__UpdateFunc();
+	void Timeline_0__FinishedFunc();
+	void Test();
+	void SetVisible(bool Visibility);
+	void SetValues();
+	void Search();
+	void ReceiveBeginPlay();
+	void OnRep_States();
+	void Initiate();
+	void FunctionTimer();
+	void ExecuteUbergraph_BP_Authenticator(int32 EntryPoint);
+	void Complete();
+	void BndEvt__BP_Authenticator_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -79,5 +79,6 @@ public:
 		return GetDefaultObjImpl<ABP_Authenticator_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Authenticator_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Curtain_02_Gray_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Curtain_02_Gray_C;
 
 SDK_NAMESPACE_END

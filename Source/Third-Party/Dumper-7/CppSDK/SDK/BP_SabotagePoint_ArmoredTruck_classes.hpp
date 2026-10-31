@@ -36,19 +36,19 @@ public:
 	int32                                         Marker_ID;                                         // 0x04AC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_SabotagePoint_ArmoredTruck_interactable_fix_remote_steering_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_SabotagePoint_ArmoredTruck_Interactable_Start_Escort_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void Device_Escort();
-	void Device_Hacking();
-	void Device_sabotaged();
-	void Device_Standby();
-	void ExecuteUbergraph_BP_SabotagePoint_ArmoredTruck(int32 EntryPoint);
-	void Fix_Interactable_Disable();
-	void Fix_Interactable_Enable();
-	void OnRep_Remote_steering_remote_state();
-	void OnSabotaged_Event_0(bool bSabotaged);
-	void Start_escort_Disable();
 	void Start_escort_Enable();
+	void Start_escort_Disable();
+	void OnSabotaged_Event_0(bool bSabotaged);
+	void OnRep_Remote_steering_remote_state();
+	void Fix_Interactable_Enable();
+	void Fix_Interactable_Disable();
+	void ExecuteUbergraph_BP_SabotagePoint_ArmoredTruck(int32 EntryPoint);
+	void Device_Standby();
+	void Device_sabotaged();
+	void Device_Hacking();
+	void Device_Escort();
+	void BndEvt__BP_SabotagePoint_ArmoredTruck_Interactable_Start_Escort_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_SabotagePoint_ArmoredTruck_interactable_fix_remote_steering_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -64,5 +64,6 @@ public:
 		return GetDefaultObjImpl<ABP_SabotagePoint_ArmoredTruck_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SabotagePoint_ArmoredTruck_C;
 
 SDK_NAMESPACE_END

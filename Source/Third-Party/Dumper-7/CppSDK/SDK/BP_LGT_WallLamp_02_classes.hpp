@@ -10,27 +10,17 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_Master_Light_Fixture_classes.hpp"
-#include "Starbreeze_structs.hpp"
-#include "AkAudio_structs.hpp"
 
 
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_LGT_WallLamp_02.BP_LGT_WallLamp_02_C
-// 0x0020 (0x0460 - 0x0440)
+// 0x0010 (0x0450 - 0x0440)
 class BP_LGT_WallLamp_02::ABP_LGT_WallLamp_02_C final : public ABP_Master_Light_Fixture_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0440(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UStaticMeshComponent*                   StaticMesh_1;                                      // 0x0448(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USBZCosmeticDestructionComponent*       SBZCosmeticDestruction;                            // 0x0450(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class URectLightComponent*                    RectLight;                                         // 0x0458(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-
-public:
-	void BndEvt__BP_LGT_WallLamp_02_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
-	void ExecuteUbergraph_BP_LGT_WallLamp_02(int32 EntryPoint);
+	class USpotLightComponent*                    SpotLight;                                         // 0x0440(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -46,5 +36,6 @@ public:
 		return GetDefaultObjImpl<BP_LGT_WallLamp_02::ABP_LGT_WallLamp_02_C>();
 	}
 };
+DUMPER7_ASSERTS_BP_LGT_WallLamp_02__ABP_LGT_WallLamp_02_C;
 
 SDK_NAMESPACE_END

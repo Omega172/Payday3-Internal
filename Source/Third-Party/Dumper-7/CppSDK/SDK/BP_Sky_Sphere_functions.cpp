@@ -16,15 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Sky_Sphere.BP_Sky_Sphere_C.RefreshMaterial
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_Sky_Sphere.BP_Sky_Sphere_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Sky_Sphere_C::RefreshMaterial()
+void ABP_Sky_Sphere_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Sky_Sphere_C", "RefreshMaterial");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -35,24 +33,20 @@ void ABP_Sky_Sphere_C::RefreshMaterial()
 
 void ABP_Sky_Sphere_C::UpdateSunDirection()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Sky_Sphere_C", "UpdateSunDirection");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateSunDirection", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Sky_Sphere.BP_Sky_Sphere_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_Sky_Sphere.BP_Sky_Sphere_C.RefreshMaterial
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Sky_Sphere_C::UserConstructionScript()
+void ABP_Sky_Sphere_C::RefreshMaterial()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Sky_Sphere_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RefreshMaterial", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

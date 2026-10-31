@@ -16,23 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_PlayerGrenadeProjectileCluster.BP_PlayerGrenadeProjectileCluster_C.BndEvt__BP_GrenadeProjectile_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature
-// (BlueprintEvent)
+// Function BP_PlayerGrenadeProjectileCluster.BP_PlayerGrenadeProjectileCluster_C.ExecuteUbergraph_BP_PlayerGrenadeProjectileCluster
+// (Final, UbergraphFunction)
 // Parameters:
-// class UActorComponent*                  Component                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bReset                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PlayerGrenadeProjectileCluster_C::BndEvt__BP_GrenadeProjectile_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature(class UActorComponent* Component, bool bReset)
+void ABP_PlayerGrenadeProjectileCluster_C::ExecuteUbergraph_BP_PlayerGrenadeProjectileCluster(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_PlayerGrenadeProjectileCluster_C", "ExecuteUbergraph_BP_PlayerGrenadeProjectileCluster", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlayerGrenadeProjectileCluster_C", "BndEvt__BP_GrenadeProjectile_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature");
+	Params::BP_PlayerGrenadeProjectileCluster_C_ExecuteUbergraph_BP_PlayerGrenadeProjectileCluster Parms{};
 
-	Params::BP_PlayerGrenadeProjectileCluster_C_BndEvt__BP_GrenadeProjectile_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature Parms{};
-
-	Parms.Component = Component;
-	Parms.bReset = bReset;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -45,10 +41,8 @@ void ABP_PlayerGrenadeProjectileCluster_C::BndEvt__BP_GrenadeProjectile_Projecti
 
 void ABP_PlayerGrenadeProjectileCluster_C::BndEvt__BP_GrenadeProjectile_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_ActorComponentDeactivateSignature__DelegateSignature(class UActorComponent* Component)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlayerGrenadeProjectileCluster_C", "BndEvt__BP_GrenadeProjectile_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_ActorComponentDeactivateSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_GrenadeProjectile_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_ActorComponentDeactivateSignature__DelegateSignature", FnName));
 
 	Params::BP_PlayerGrenadeProjectileCluster_C_BndEvt__BP_GrenadeProjectile_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_ActorComponentDeactivateSignature__DelegateSignature Parms{};
 
@@ -58,21 +52,21 @@ void ABP_PlayerGrenadeProjectileCluster_C::BndEvt__BP_GrenadeProjectile_Projecti
 }
 
 
-// Function BP_PlayerGrenadeProjectileCluster.BP_PlayerGrenadeProjectileCluster_C.ExecuteUbergraph_BP_PlayerGrenadeProjectileCluster
-// (Final, UbergraphFunction)
+// Function BP_PlayerGrenadeProjectileCluster.BP_PlayerGrenadeProjectileCluster_C.BndEvt__BP_GrenadeProjectile_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UActorComponent*                  Component                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bReset                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PlayerGrenadeProjectileCluster_C::ExecuteUbergraph_BP_PlayerGrenadeProjectileCluster(int32 EntryPoint)
+void ABP_PlayerGrenadeProjectileCluster_C::BndEvt__BP_GrenadeProjectile_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature(class UActorComponent* Component, bool bReset)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_GrenadeProjectile_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlayerGrenadeProjectileCluster_C", "ExecuteUbergraph_BP_PlayerGrenadeProjectileCluster");
+	Params::BP_PlayerGrenadeProjectileCluster_C_BndEvt__BP_GrenadeProjectile_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature Parms{};
 
-	Params::BP_PlayerGrenadeProjectileCluster_C_ExecuteUbergraph_BP_PlayerGrenadeProjectileCluster Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Component = Component;
+	Parms.bReset = bReset;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

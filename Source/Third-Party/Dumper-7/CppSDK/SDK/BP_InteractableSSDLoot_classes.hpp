@@ -26,12 +26,12 @@ public:
 	class UStaticMeshComponent*                   StaticMesh;                                        // 0x03E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_InteractableSSDLoot_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
-	void ExecuteUbergraph_BP_InteractableSSDLoot(int32 EntryPoint);
-	void OnRep_RenderOutlines();
-	void ReceiveBeginPlay();
-	void SetInteractable(bool bEnabled);
 	void setVisible(bool bNewVisibility);
+	void SetInteractable(bool bEnabled);
+	void ReceiveBeginPlay();
+	void OnRep_RenderOutlines();
+	void ExecuteUbergraph_BP_InteractableSSDLoot(int32 EntryPoint);
+	void BndEvt__BP_InteractableSSDLoot_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
 
 public:
 	static class UClass* StaticClass()
@@ -47,5 +47,6 @@ public:
 		return GetDefaultObjImpl<ABP_InteractableSSDLoot_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_InteractableSSDLoot_C;
 
 SDK_NAMESPACE_END

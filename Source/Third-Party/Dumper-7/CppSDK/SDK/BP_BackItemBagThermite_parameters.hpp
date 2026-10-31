@@ -16,25 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_BackItemBagThermite.BP_BackItemBagThermite_C.BP_AdjustAttachment
-// 0x0070 (0x0070 - 0x0000)
-struct BP_BackItemBagThermite_C_BP_AdjustAttachment final
-{
-public:
-	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         NewCount;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             NewStrapTransformOffset;                           // 0x0010(0x0060)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_BackItemBagThermite.BP_BackItemBagThermite_C.BP_AttachmentComplete
-// 0x0008 (0x0008 - 0x0000)
-struct BP_BackItemBagThermite_C_BP_AttachmentComplete final
-{
-public:
-	class USkeletalMeshComponent*                 ParentSkeletalMeshComponent;                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_BackItemBagThermite.BP_BackItemBagThermite_C.ExecuteUbergraph_BP_BackItemBagThermite
 // 0x00B0 (0x00B0 - 0x0000)
 struct BP_BackItemBagThermite_C_ExecuteUbergraph_BP_BackItemBagThermite final
@@ -54,6 +35,28 @@ public:
 	class UABP_TPPlayerBase_Moneybag_C*           K2Node_DynamicCast_AsABP_TPPlayer_Base_Moneybag_1; // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_BackItemBagThermite_C_ExecuteUbergraph_BP_BackItemBagThermite;
+
+// Function BP_BackItemBagThermite.BP_BackItemBagThermite_C.BP_AttachmentComplete
+// 0x0008 (0x0008 - 0x0000)
+struct BP_BackItemBagThermite_C_BP_AttachmentComplete final
+{
+public:
+	class USkeletalMeshComponent*                 ParentSkeletalMeshComponent_BP_AttachmentComplete; // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BackItemBagThermite_C_BP_AttachmentComplete;
+
+// Function BP_BackItemBagThermite.BP_BackItemBagThermite_C.BP_AdjustAttachment
+// 0x0070 (0x0070 - 0x0000)
+struct BP_BackItemBagThermite_C_BP_AdjustAttachment final
+{
+public:
+	int32                                         Index_BP_AdjustAttachment;                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewCount_BP_AdjustAttachment;                      // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_8[0x8];                                        // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             NewStrapTransformOffset_BP_AdjustAttachment;       // 0x0010(0x0060)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BackItemBagThermite_C_BP_AdjustAttachment;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

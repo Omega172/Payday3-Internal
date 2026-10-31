@@ -16,11 +16,11 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CH_SWAT_AR.CH_SWAT_AR_C
-// 0x0000 (0x21D0 - 0x21D0)
+// 0x0000 (0x2260 - 0x2260)
 class ACH_SWAT_AR_C final : public ACH_BaseCommonSwat_C
 {
 public:
-	class UStaticMeshComponent*                   Helmet;                                            // 0x21C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Helmet;                                            // 0x2258(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ACH_SWAT_AR_C>();
 	}
 };
+DUMPER7_ASSERTS_ACH_SWAT_AR_C;
 
 SDK_NAMESPACE_END

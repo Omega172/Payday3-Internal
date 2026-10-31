@@ -35,14 +35,14 @@ public:
 	TMulticastInlineDelegate<void()>              PaintingMoved;                                     // 0x03A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__BP_HiddenHatch_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_HiddenPainting(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void PlaySoundLoop();
-	void SetInteractionEnabled(const bool Enabled);
-	void UserConstructionScript();
-	void Y__FinishedFunc();
 	void Y__UpdateFunc();
+	void Y__FinishedFunc();
+	void UserConstructionScript();
+	void SetInteractionEnabled(const bool Enabled);
+	void PlaySoundLoop();
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_HiddenPainting(int32 EntryPoint);
+	void BndEvt__BP_HiddenHatch_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -58,5 +58,6 @@ public:
 		return GetDefaultObjImpl<ABP_HiddenPainting_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_HiddenPainting_C;
 
 SDK_NAMESPACE_END

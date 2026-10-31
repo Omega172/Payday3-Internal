@@ -16,109 +16,39 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.ReloadButtons
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::ReloadButtons()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReloadButtons", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::OnLostStackFocused()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnJoinStarted
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerBrowser
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// const struct FSBZOnlineSearchResult&    RemoteSessionInfo                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::OnJoinStarted(const struct FSBZOnlineSearchResult& RemoteSessionInfo)
+void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerBrowser(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnJoinStarted", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_MainMenu_CrimeNet_ServerBrowser_C", "ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerBrowser", FuncInfo);
 
-	Params::WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnJoinStarted Parms{};
+	Params::WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerBrowser Parms{};
 
-	Parms.RemoteSessionInfo = std::move(RemoteSessionInfo);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnInviteFinished
+// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnButtonFocusedChanged
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ESBZOnlineCode                          ErrorCode                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::OnInviteFinished(ESBZOnlineCode ErrorCode)
+void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::OnButtonFocusedChanged(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInviteFinished", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnButtonFocusedChanged", FnName));
 
-	Params::WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnInviteFinished Parms{};
+	Params::WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnButtonFocusedChanged Parms{};
 
-	Parms.ErrorCode = ErrorCode;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FName&                      PreviousValue_OnGainedStackFocused                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
-
-	Params::WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnGainedStackFocused Parms{};
-
-	Parms.PreviousValue_OnGainedStackFocused = PreviousValue_OnGainedStackFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnControlsReferenceClicked
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             InActionInput                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::OnControlsReferenceClicked(class FName InActionInput)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnControlsReferenceClicked", FnName));
-
-	Params::WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnControlsReferenceClicked Parms{};
-
-	Parms.InActionInput = InActionInput;
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -144,41 +74,111 @@ void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::OnComplete_EB7A1BA74C1C1AA3C504F
 }
 
 
-// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnButtonFocusedChanged
+// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnControlsReferenceClicked
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             InActionInput                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::OnButtonFocusedChanged(class USBZMenuButton* Button, bool bIsEnabled)
+void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::OnControlsReferenceClicked(class FName InActionInput)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnButtonFocusedChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnControlsReferenceClicked", FnName));
 
-	Params::WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnButtonFocusedChanged Parms{};
+	Params::WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnControlsReferenceClicked Parms{};
 
-	Parms.Button = Button;
-	Parms.bIsEnabled = bIsEnabled;
+	Parms.InActionInput = InActionInput;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerBrowser
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerBrowser(int32 EntryPoint)
+void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::OnGainedStackFocused(const class FName& PreviousValue)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_MainMenu_CrimeNet_ServerBrowser_C", "ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerBrowser", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
 
-	Params::WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerBrowser Parms{};
+	Params::WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnGainedStackFocused Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.PreviousValue = PreviousValue;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnInviteFinished
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESBZOnlineCode                          ErrorCode                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::OnInviteFinished(ESBZOnlineCode ErrorCode)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInviteFinished", FnName));
+
+	Params::WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnInviteFinished Parms{};
+
+	Parms.ErrorCode = ErrorCode;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnJoinStarted
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FSBZOnlineSearchResult&    RemoteSessionInfo                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::OnJoinStarted(const struct FSBZOnlineSearchResult& RemoteSessionInfo)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnJoinStarted", FnName));
+
+	Params::WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnJoinStarted Parms{};
+
+	Parms.RemoteSessionInfo = std::move(RemoteSessionInfo);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::OnLostStackFocused()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.ReloadButtons
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_MainMenu_CrimeNet_ServerBrowser_C::ReloadButtons()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReloadButtons", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

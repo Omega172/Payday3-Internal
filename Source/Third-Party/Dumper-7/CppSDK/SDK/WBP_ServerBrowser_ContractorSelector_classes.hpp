@@ -32,14 +32,14 @@ public:
 	TMap<class FString, TSoftObjectPtr<class UPaperSprite>> ContractorIconMap;                       // 0x03F0(0x0050)(Edit, BlueprintVisible)
 
 public:
-	void UpdateSelectionCount();
-	void SetContractorSprite(TSoftObjectPtr<class UPaperSprite> ContractorSprite);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnSelectionOptionChanged(int32 InCurrentIndex_OnSelectionOptionChanged, bool bOverrideReadOnly_OnSelectionOptionChanged);
-	void OnLoaded_51F23A4943941A9E9DE1DBB426DE1827(class UObject* Loaded);
-	void OnLoaded_0B3A176146937A1A5B15A0B11F535FAF(class UObject* Loaded);
-	class FText GetContractorName();
 	void ExecuteUbergraph_WBP_ServerBrowser_ContractorSelector(int32 EntryPoint);
+	class FText GetContractorName();
+	void OnLoaded_0B3A176146937A1A5B15A0B11F535FAF(class UObject* Loaded);
+	void OnLoaded_51F23A4943941A9E9DE1DBB426DE1827(class UObject* Loaded);
+	void OnSelectionOptionChanged(int32 InCurrentIndex, bool bOverrideReadOnly);
+	void PreConstruct(bool IsDesignTime);
+	void SetContractorSprite(TSoftObjectPtr<class UPaperSprite> ContractorSprite);
+	void UpdateSelectionCount();
 
 public:
 	static class UClass* StaticClass()

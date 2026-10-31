@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_StaticVehicle_PickupTruck_OpenTrunk_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_StaticVehicle_PickupTruck_OpenTrunk_C;
 
 SDK_NAMESPACE_END

@@ -51,5 +51,6 @@ public:
 		return GetDefaultObjImpl<ABPL_Penthouse_ModernWall_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_Penthouse_ModernWall_C;
 
 SDK_NAMESPACE_END

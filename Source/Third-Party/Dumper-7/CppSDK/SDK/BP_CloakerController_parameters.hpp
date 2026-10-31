@@ -14,6 +14,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_CloakerController.BP_CloakerController_C.ReceivePossess
+// 0x0008 (0x0008 - 0x0000)
+struct BP_CloakerController_C_ReceivePossess final
+{
+public:
+	class APawn*                                  PossessedPawn_ReceivePossess;                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_CloakerController_C_ReceivePossess;
+
 // Function BP_CloakerController.BP_CloakerController_C.ExecuteUbergraph_BP_CloakerController
 // 0x0010 (0x0010 - 0x0000)
 struct BP_CloakerController_C_ExecuteUbergraph_BP_CloakerController final
@@ -23,14 +32,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  K2Node_Event_PossessedPawn;                        // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_CloakerController.BP_CloakerController_C.ReceivePossess
-// 0x0008 (0x0008 - 0x0000)
-struct BP_CloakerController_C_ReceivePossess final
-{
-public:
-	class APawn*                                  PossessedPawn;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_CloakerController_C_ExecuteUbergraph_BP_CloakerController;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

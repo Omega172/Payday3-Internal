@@ -16,60 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function R_SKY_Vault.R_SKY_Vault_C.BndEvt__R_Penthouse_Vault_BP_Int_Door_01_SmallVault_01_0_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct R_SKY_Vault_C_BndEvt__R_Penthouse_Vault_BP_Int_Door_01_SmallVault_01_0_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_SKY_Vault.R_SKY_Vault_C.BndEvt__R_Penthouse_Vault_BP_PortableSSD2_4_K2Node_ActorBoundEvent_4_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_SKY_Vault_C_BndEvt__R_Penthouse_Vault_BP_PortableSSD2_4_K2Node_ActorBoundEvent_4_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_SKY_Vault.R_SKY_Vault_C.BndEvt__R_Penthouse_Vault_BP_PortableSSD_2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_SKY_Vault_C_BndEvt__R_Penthouse_Vault_BP_PortableSSD_2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_SKY_Vault.R_SKY_Vault_C.BndEvt__R_Penthouse_Vault_SBZDestroyGroup_1_K2Node_ActorBoundEvent_3_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct R_SKY_Vault_C_BndEvt__R_Penthouse_Vault_SBZDestroyGroup_1_K2Node_ActorBoundEvent_3_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
-{
-public:
-	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-
-// Function R_SKY_Vault.R_SKY_Vault_C.BndEvt__R_SKY_Vault_BP_InstantLoot_NecklaceBust2_K2Node_ActorBoundEvent_5_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_SKY_Vault_C_BndEvt__R_SKY_Vault_BP_InstantLoot_NecklaceBust2_K2Node_ActorBoundEvent_5_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_SKY_Vault.R_SKY_Vault_C.BndEvt__R_SKY_Vault_BP_InstantLoot_NecklaceBust3_8_K2Node_ActorBoundEvent_6_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_SKY_Vault_C_BndEvt__R_SKY_Vault_BP_InstantLoot_NecklaceBust3_8_K2Node_ActorBoundEvent_6_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function R_SKY_Vault.R_SKY_Vault_C.ExecuteUbergraph_R_SKY_Vault
 // 0x00C8 (0x00C8 - 0x0000)
 struct R_SKY_Vault_C_ExecuteUbergraph_R_SKY_Vault final
@@ -105,6 +51,67 @@ public:
 	class ASBZInstantLoot*                        K2Node_ActorBoundEvent_InstantLoot_1;              // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ASBZPlayerCharacter*                    K2Node_ActorBoundEvent_TakenByPlayer_1;            // 0x00C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_R_SKY_Vault_C_ExecuteUbergraph_R_SKY_Vault;
+
+// Function R_SKY_Vault.R_SKY_Vault_C.BndEvt__R_SKY_Vault_BP_InstantLoot_NecklaceBust3_8_K2Node_ActorBoundEvent_6_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_SKY_Vault_C_BndEvt__R_SKY_Vault_BP_InstantLoot_NecklaceBust3_8_K2Node_ActorBoundEvent_6_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_SKY_Vault_C_BndEvt__R_SKY_Vault_BP_InstantLoot_NecklaceBust3_8_K2Node_ActorBoundEvent_6_SBZLootedSignature__DelegateSignature;
+
+// Function R_SKY_Vault.R_SKY_Vault_C.BndEvt__R_SKY_Vault_BP_InstantLoot_NecklaceBust2_K2Node_ActorBoundEvent_5_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_SKY_Vault_C_BndEvt__R_SKY_Vault_BP_InstantLoot_NecklaceBust2_K2Node_ActorBoundEvent_5_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_SKY_Vault_C_BndEvt__R_SKY_Vault_BP_InstantLoot_NecklaceBust2_K2Node_ActorBoundEvent_5_SBZLootedSignature__DelegateSignature;
+
+// Function R_SKY_Vault.R_SKY_Vault_C.BndEvt__R_Penthouse_Vault_SBZDestroyGroup_1_K2Node_ActorBoundEvent_3_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct R_SKY_Vault_C_BndEvt__R_Penthouse_Vault_SBZDestroyGroup_1_K2Node_ActorBoundEvent_3_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
+{
+public:
+	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_R_SKY_Vault_C_BndEvt__R_Penthouse_Vault_SBZDestroyGroup_1_K2Node_ActorBoundEvent_3_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature;
+
+// Function R_SKY_Vault.R_SKY_Vault_C.BndEvt__R_Penthouse_Vault_BP_PortableSSD_2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_SKY_Vault_C_BndEvt__R_Penthouse_Vault_BP_PortableSSD_2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_SKY_Vault_C_BndEvt__R_Penthouse_Vault_BP_PortableSSD_2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature;
+
+// Function R_SKY_Vault.R_SKY_Vault_C.BndEvt__R_Penthouse_Vault_BP_PortableSSD2_4_K2Node_ActorBoundEvent_4_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_SKY_Vault_C_BndEvt__R_Penthouse_Vault_BP_PortableSSD2_4_K2Node_ActorBoundEvent_4_SBZActorOnInteraction__DelegateSignature final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_SKY_Vault_C_BndEvt__R_Penthouse_Vault_BP_PortableSSD2_4_K2Node_ActorBoundEvent_4_SBZActorOnInteraction__DelegateSignature;
+
+// Function R_SKY_Vault.R_SKY_Vault_C.BndEvt__R_Penthouse_Vault_BP_Int_Door_01_SmallVault_01_0_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct R_SKY_Vault_C_BndEvt__R_Penthouse_Vault_BP_Int_Door_01_SmallVault_01_0_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_SKY_Vault_C_BndEvt__R_Penthouse_Vault_BP_Int_Door_01_SmallVault_01_0_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

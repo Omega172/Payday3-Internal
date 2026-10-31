@@ -16,26 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_DAT_IGl_BRE_ATT_2HIT44.BP_DAT_IGl_BRE_ATT_2HIT44_C.BndEvt__BP_DAT_IGl_BRE_ATT_2HIT44_SBZAirNavLink_K2Node_ComponentBoundEvent_0_SBZDynamicAirNavLinkDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// const class AActor*                     NavLinkUser                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_DAT_IGl_BRE_ATT_2HIT44_C::BndEvt__BP_DAT_IGl_BRE_ATT_2HIT44_SBZAirNavLink_K2Node_ComponentBoundEvent_0_SBZDynamicAirNavLinkDelegate__DelegateSignature(const class AActor* NavLinkUser)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_IGl_BRE_ATT_2HIT44_C", "BndEvt__BP_DAT_IGl_BRE_ATT_2HIT44_SBZAirNavLink_K2Node_ComponentBoundEvent_0_SBZDynamicAirNavLinkDelegate__DelegateSignature");
-
-	Params::BP_DAT_IGl_BRE_ATT_2HIT44_C_BndEvt__BP_DAT_IGl_BRE_ATT_2HIT44_SBZAirNavLink_K2Node_ComponentBoundEvent_0_SBZDynamicAirNavLinkDelegate__DelegateSignature Parms{};
-
-	Parms.NavLinkUser = NavLinkUser;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_DAT_IGl_BRE_ATT_2HIT44.BP_DAT_IGl_BRE_ATT_2HIT44_C.ExecuteUbergraph_BP_DAT_IGl_BRE_ATT_2HIT44
 // (Final, UbergraphFunction)
 // Parameters:
@@ -43,14 +23,30 @@ void ABP_DAT_IGl_BRE_ATT_2HIT44_C::BndEvt__BP_DAT_IGl_BRE_ATT_2HIT44_SBZAirNavLi
 
 void ABP_DAT_IGl_BRE_ATT_2HIT44_C::ExecuteUbergraph_BP_DAT_IGl_BRE_ATT_2HIT44(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_IGl_BRE_ATT_2HIT44_C", "ExecuteUbergraph_BP_DAT_IGl_BRE_ATT_2HIT44");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_DAT_IGl_BRE_ATT_2HIT44_C", "ExecuteUbergraph_BP_DAT_IGl_BRE_ATT_2HIT44", FuncInfo);
 
 	Params::BP_DAT_IGl_BRE_ATT_2HIT44_C_ExecuteUbergraph_BP_DAT_IGl_BRE_ATT_2HIT44 Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_DAT_IGl_BRE_ATT_2HIT44.BP_DAT_IGl_BRE_ATT_2HIT44_C.BndEvt__BP_DAT_IGl_BRE_ATT_2HIT44_SBZAirNavLink_K2Node_ComponentBoundEvent_0_SBZDynamicAirNavLinkDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+// Parameters:
+// const class AActor*                     NavLinkUser                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_DAT_IGl_BRE_ATT_2HIT44_C::BndEvt__BP_DAT_IGl_BRE_ATT_2HIT44_SBZAirNavLink_K2Node_ComponentBoundEvent_0_SBZDynamicAirNavLinkDelegate__DelegateSignature(const class AActor* NavLinkUser)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_DAT_IGl_BRE_ATT_2HIT44_SBZAirNavLink_K2Node_ComponentBoundEvent_0_SBZDynamicAirNavLinkDelegate__DelegateSignature", FnName));
+
+	Params::BP_DAT_IGl_BRE_ATT_2HIT44_C_BndEvt__BP_DAT_IGl_BRE_ATT_2HIT44_SBZAirNavLink_K2Node_ComponentBoundEvent_0_SBZDynamicAirNavLinkDelegate__DelegateSignature Parms{};
+
+	Parms.NavLinkUser = NavLinkUser;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -29,10 +29,10 @@ public:
 	class UStaticMeshComponent*                   Table;                                             // 0x0510(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnGlassBroken(bool bDoCosmetics);
-	void BP_OnStateChanged(ESBZDisplayCaseState OldState, ESBZDisplayCaseState NewState, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_JewelryDisplay_64(int32 EntryPoint);
 	void UserConstructionScript();
+	void ExecuteUbergraph_BP_JewelryDisplay_64(int32 EntryPoint);
+	void BP_OnStateChanged(ESBZDisplayCaseState OldState_BP_OnStateChanged, ESBZDisplayCaseState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged);
+	void BP_OnGlassBroken(bool bDoCosmetics_BP_OnGlassBroken);
 
 public:
 	static class UClass* StaticClass()
@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<ABP_JewelryDisplay_64_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_JewelryDisplay_64_C;
 
 SDK_NAMESPACE_END

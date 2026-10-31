@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_TaserMine_Destroyed_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_TaserMine_Destroyed_C;
 
 SDK_NAMESPACE_END

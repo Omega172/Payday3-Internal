@@ -16,20 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function G_Bust_Navlinks.G_Bust_Navlinks_C.CrackHouseEntered
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Bust_Navlinks_C::CrackHouseEntered()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Bust_Navlinks_C", "CrackHouseEntered");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function G_Bust_Navlinks.G_Bust_Navlinks_C.ExecuteUbergraph_G_Bust_Navlinks
 // (Final, UbergraphFunction)
 // Parameters:
@@ -37,16 +23,26 @@ void AG_Bust_Navlinks_C::CrackHouseEntered()
 
 void AG_Bust_Navlinks_C::ExecuteUbergraph_G_Bust_Navlinks(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Bust_Navlinks_C", "ExecuteUbergraph_G_Bust_Navlinks");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_Bust_Navlinks_C", "ExecuteUbergraph_G_Bust_Navlinks", FuncInfo);
 
 	Params::G_Bust_Navlinks_C_ExecuteUbergraph_G_Bust_Navlinks Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Bust_Navlinks.G_Bust_Navlinks_C.CrackHouseEntered
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Bust_Navlinks_C::CrackHouseEntered()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CrackHouseEntered", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

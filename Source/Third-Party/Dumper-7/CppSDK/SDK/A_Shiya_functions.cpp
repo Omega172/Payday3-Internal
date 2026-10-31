@@ -16,333 +16,17 @@
 
 SDK_NAMESPACE_START
 
-// Function A_Shiya.A_Shiya_C.ExecuteUbergraph_A_Shiya
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AA_Shiya_C::ExecuteUbergraph_A_Shiya(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Shiya_C", "ExecuteUbergraph_A_Shiya");
-
-	Params::A_Shiya_C_ExecuteUbergraph_A_Shiya Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function A_Shiya.A_Shiya_C.PAAlarm
-// (BlueprintCallable, BlueprintEvent)
-
-void AA_Shiya_C::PAAlarm()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Shiya_C", "PAAlarm");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function A_Shiya.A_Shiya_C.PATransportAboutToLeave
-// (BlueprintCallable, BlueprintEvent)
-
-void AA_Shiya_C::PATransportAboutToLeave()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Shiya_C", "PATransportAboutToLeave");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function A_Shiya.A_Shiya_C.PATransportArrivingGarage
-// (BlueprintCallable, BlueprintEvent)
-
-void AA_Shiya_C::PATransportArrivingGarage()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Shiya_C", "PATransportArrivingGarage");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function A_Shiya.A_Shiya_C.PATransportArrivingHolding
-// (BlueprintCallable, BlueprintEvent)
-
-void AA_Shiya_C::PATransportArrivingHolding()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Shiya_C", "PATransportArrivingHolding");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function A_Shiya.A_Shiya_C.PATransportArrivingMainBuilding
-// (BlueprintCallable, BlueprintEvent)
-
-void AA_Shiya_C::PATransportArrivingMainBuilding()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Shiya_C", "PATransportArrivingMainBuilding");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function A_Shiya.A_Shiya_C.PATransportArrivingYard
-// (BlueprintCallable, BlueprintEvent)
-
-void AA_Shiya_C::PATransportArrivingYard()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Shiya_C", "PATransportArrivingYard");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function A_Shiya.A_Shiya_C.PATransportFlavor
-// (BlueprintCallable, BlueprintEvent)
-
-void AA_Shiya_C::PATransportFlavor()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Shiya_C", "PATransportFlavor");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function A_Shiya.A_Shiya_C.PATransportGuardReactToGate
-// (BlueprintCallable, BlueprintEvent)
-
-void AA_Shiya_C::PATransportGuardReactToGate()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Shiya_C", "PATransportGuardReactToGate");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function A_Shiya.A_Shiya_C.PATransportLeavingLoud
-// (BlueprintCallable, BlueprintEvent)
-
-void AA_Shiya_C::PATransportLeavingLoud()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Shiya_C", "PATransportLeavingLoud");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function A_Shiya.A_Shiya_C.PATransportPreparingToLeave
-// (BlueprintCallable, BlueprintEvent)
-
-void AA_Shiya_C::PATransportPreparingToLeave()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Shiya_C", "PATransportPreparingToLeave");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function A_Shiya.A_Shiya_C.PATransportScheduleHack
-// (BlueprintCallable, BlueprintEvent)
-
-void AA_Shiya_C::PATransportScheduleHack()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Shiya_C", "PATransportScheduleHack");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function A_Shiya.A_Shiya_C.PlayTransportAboutToLeave
+// Function A_Shiya.A_Shiya_C.PlayTransportScheduleHack
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   RandomInt                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AA_Shiya_C::PlayTransportAboutToLeave(int32 RandomInt)
+void AA_Shiya_C::PlayTransportScheduleHack(int32 RandomInt)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayTransportScheduleHack", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Shiya_C", "PlayTransportAboutToLeave");
-
-	Params::A_Shiya_C_PlayTransportAboutToLeave Parms{};
-
-	Parms.RandomInt = RandomInt;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function A_Shiya.A_Shiya_C.PlayTransportArrivingGarage
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   RandomInt                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AA_Shiya_C::PlayTransportArrivingGarage(int32 RandomInt)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Shiya_C", "PlayTransportArrivingGarage");
-
-	Params::A_Shiya_C_PlayTransportArrivingGarage Parms{};
-
-	Parms.RandomInt = RandomInt;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function A_Shiya.A_Shiya_C.PlayTransportArrivingHolding
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   RandomInt                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AA_Shiya_C::PlayTransportArrivingHolding(int32 RandomInt)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Shiya_C", "PlayTransportArrivingHolding");
-
-	Params::A_Shiya_C_PlayTransportArrivingHolding Parms{};
-
-	Parms.RandomInt = RandomInt;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function A_Shiya.A_Shiya_C.PlayTransportArrivingMainBuilding
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   RandomInt                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AA_Shiya_C::PlayTransportArrivingMainBuilding(int32 RandomInt)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Shiya_C", "PlayTransportArrivingMainBuilding");
-
-	Params::A_Shiya_C_PlayTransportArrivingMainBuilding Parms{};
-
-	Parms.RandomInt = RandomInt;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function A_Shiya.A_Shiya_C.PlayTransportArrivingYard
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   RandomInt                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AA_Shiya_C::PlayTransportArrivingYard(int32 RandomInt)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Shiya_C", "PlayTransportArrivingYard");
-
-	Params::A_Shiya_C_PlayTransportArrivingYard Parms{};
-
-	Parms.RandomInt = RandomInt;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function A_Shiya.A_Shiya_C.PlayTransportFlavor
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   RandomInt                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AA_Shiya_C::PlayTransportFlavor(int32 RandomInt)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Shiya_C", "PlayTransportFlavor");
-
-	Params::A_Shiya_C_PlayTransportFlavor Parms{};
-
-	Parms.RandomInt = RandomInt;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function A_Shiya.A_Shiya_C.PlayTransportGuardReactToGate
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   RandomInt                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AA_Shiya_C::PlayTransportGuardReactToGate(int32 RandomInt)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Shiya_C", "PlayTransportGuardReactToGate");
-
-	Params::A_Shiya_C_PlayTransportGuardReactToGate Parms{};
-
-	Parms.RandomInt = RandomInt;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function A_Shiya.A_Shiya_C.PlayTransportLeavingLoud
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   RandomInt                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AA_Shiya_C::PlayTransportLeavingLoud(int32 RandomInt)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Shiya_C", "PlayTransportLeavingLoud");
-
-	Params::A_Shiya_C_PlayTransportLeavingLoud Parms{};
+	Params::A_Shiya_C_PlayTransportScheduleHack Parms{};
 
 	Parms.RandomInt = RandomInt;
 
@@ -357,10 +41,8 @@ void AA_Shiya_C::PlayTransportLeavingLoud(int32 RandomInt)
 
 void AA_Shiya_C::PlayTransportPreparingToLeave(int32 RandomInt)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Shiya_C", "PlayTransportPreparingToLeave");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayTransportPreparingToLeave", FnName));
 
 	Params::A_Shiya_C_PlayTransportPreparingToLeave Parms{};
 
@@ -370,21 +52,295 @@ void AA_Shiya_C::PlayTransportPreparingToLeave(int32 RandomInt)
 }
 
 
-// Function A_Shiya.A_Shiya_C.PlayTransportScheduleHack
+// Function A_Shiya.A_Shiya_C.PlayTransportLeavingLoud
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                                   RandomInt                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AA_Shiya_C::PlayTransportScheduleHack(int32 RandomInt)
+void AA_Shiya_C::PlayTransportLeavingLoud(int32 RandomInt)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayTransportLeavingLoud", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Shiya_C", "PlayTransportScheduleHack");
-
-	Params::A_Shiya_C_PlayTransportScheduleHack Parms{};
+	Params::A_Shiya_C_PlayTransportLeavingLoud Parms{};
 
 	Parms.RandomInt = RandomInt;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function A_Shiya.A_Shiya_C.PlayTransportGuardReactToGate
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   RandomInt                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AA_Shiya_C::PlayTransportGuardReactToGate(int32 RandomInt)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayTransportGuardReactToGate", FnName));
+
+	Params::A_Shiya_C_PlayTransportGuardReactToGate Parms{};
+
+	Parms.RandomInt = RandomInt;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function A_Shiya.A_Shiya_C.PlayTransportFlavor
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   RandomInt                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AA_Shiya_C::PlayTransportFlavor(int32 RandomInt)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayTransportFlavor", FnName));
+
+	Params::A_Shiya_C_PlayTransportFlavor Parms{};
+
+	Parms.RandomInt = RandomInt;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function A_Shiya.A_Shiya_C.PlayTransportArrivingYard
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   RandomInt                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AA_Shiya_C::PlayTransportArrivingYard(int32 RandomInt)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayTransportArrivingYard", FnName));
+
+	Params::A_Shiya_C_PlayTransportArrivingYard Parms{};
+
+	Parms.RandomInt = RandomInt;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function A_Shiya.A_Shiya_C.PlayTransportArrivingMainBuilding
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   RandomInt                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AA_Shiya_C::PlayTransportArrivingMainBuilding(int32 RandomInt)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayTransportArrivingMainBuilding", FnName));
+
+	Params::A_Shiya_C_PlayTransportArrivingMainBuilding Parms{};
+
+	Parms.RandomInt = RandomInt;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function A_Shiya.A_Shiya_C.PlayTransportArrivingHolding
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   RandomInt                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AA_Shiya_C::PlayTransportArrivingHolding(int32 RandomInt)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayTransportArrivingHolding", FnName));
+
+	Params::A_Shiya_C_PlayTransportArrivingHolding Parms{};
+
+	Parms.RandomInt = RandomInt;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function A_Shiya.A_Shiya_C.PlayTransportArrivingGarage
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   RandomInt                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AA_Shiya_C::PlayTransportArrivingGarage(int32 RandomInt)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayTransportArrivingGarage", FnName));
+
+	Params::A_Shiya_C_PlayTransportArrivingGarage Parms{};
+
+	Parms.RandomInt = RandomInt;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function A_Shiya.A_Shiya_C.PlayTransportAboutToLeave
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   RandomInt                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AA_Shiya_C::PlayTransportAboutToLeave(int32 RandomInt)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayTransportAboutToLeave", FnName));
+
+	Params::A_Shiya_C_PlayTransportAboutToLeave Parms{};
+
+	Parms.RandomInt = RandomInt;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function A_Shiya.A_Shiya_C.PATransportScheduleHack
+// (BlueprintCallable, BlueprintEvent)
+
+void AA_Shiya_C::PATransportScheduleHack()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PATransportScheduleHack", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function A_Shiya.A_Shiya_C.PATransportPreparingToLeave
+// (BlueprintCallable, BlueprintEvent)
+
+void AA_Shiya_C::PATransportPreparingToLeave()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PATransportPreparingToLeave", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function A_Shiya.A_Shiya_C.PATransportLeavingLoud
+// (BlueprintCallable, BlueprintEvent)
+
+void AA_Shiya_C::PATransportLeavingLoud()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PATransportLeavingLoud", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function A_Shiya.A_Shiya_C.PATransportGuardReactToGate
+// (BlueprintCallable, BlueprintEvent)
+
+void AA_Shiya_C::PATransportGuardReactToGate()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PATransportGuardReactToGate", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function A_Shiya.A_Shiya_C.PATransportFlavor
+// (BlueprintCallable, BlueprintEvent)
+
+void AA_Shiya_C::PATransportFlavor()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PATransportFlavor", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function A_Shiya.A_Shiya_C.PATransportArrivingYard
+// (BlueprintCallable, BlueprintEvent)
+
+void AA_Shiya_C::PATransportArrivingYard()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PATransportArrivingYard", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function A_Shiya.A_Shiya_C.PATransportArrivingMainBuilding
+// (BlueprintCallable, BlueprintEvent)
+
+void AA_Shiya_C::PATransportArrivingMainBuilding()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PATransportArrivingMainBuilding", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function A_Shiya.A_Shiya_C.PATransportArrivingHolding
+// (BlueprintCallable, BlueprintEvent)
+
+void AA_Shiya_C::PATransportArrivingHolding()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PATransportArrivingHolding", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function A_Shiya.A_Shiya_C.PATransportArrivingGarage
+// (BlueprintCallable, BlueprintEvent)
+
+void AA_Shiya_C::PATransportArrivingGarage()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PATransportArrivingGarage", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function A_Shiya.A_Shiya_C.PATransportAboutToLeave
+// (BlueprintCallable, BlueprintEvent)
+
+void AA_Shiya_C::PATransportAboutToLeave()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PATransportAboutToLeave", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function A_Shiya.A_Shiya_C.PAAlarm
+// (BlueprintCallable, BlueprintEvent)
+
+void AA_Shiya_C::PAAlarm()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PAAlarm", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function A_Shiya.A_Shiya_C.ExecuteUbergraph_A_Shiya
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AA_Shiya_C::ExecuteUbergraph_A_Shiya(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "A_Shiya_C", "ExecuteUbergraph_A_Shiya", FuncInfo);
+
+	Params::A_Shiya_C_ExecuteUbergraph_A_Shiya Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

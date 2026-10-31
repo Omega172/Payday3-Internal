@@ -16,47 +16,147 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_TeddyMoo_pickup.BP_TeddyMoo_pickup_C.BndEvt__BP_LootContainer_CardboardBox_01_C_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// class UActorComponent*                  PoolComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   Hits                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZPropDamageContext&     DamageContext                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// Function BP_TeddyMoo_pickup.BP_TeddyMoo_pickup_C.VoRipVariations
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_TeddyMoo_pickup_C::BndEvt__BP_LootContainer_CardboardBox_01_C_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
+void ABP_TeddyMoo_pickup_C::VoRipVariations()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"VoRipVariations", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TeddyMoo_pickup_C", "BndEvt__BP_LootContainer_CardboardBox_01_C_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_TeddyMoo_pickup_C_BndEvt__BP_LootContainer_CardboardBox_01_C_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature Parms{};
 
-	Parms.PoolComponent = PoolComponent;
-	Parms.Hits = Hits;
-	Parms.bDoCosmetics = bDoCosmetics;
-	Parms.DamageContext = std::move(DamageContext);
+// Function BP_TeddyMoo_pickup.BP_TeddyMoo_pickup_C.VoGrabVariations
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_TeddyMoo_pickup_C::VoGrabVariations()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"VoGrabVariations", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_TeddyMoo_pickup.BP_TeddyMoo_pickup_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_TeddyMoo_pickup_C::UserConstructionScript()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_TeddyMoo_pickup.BP_TeddyMoo_pickup_C.shake_timeline__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_TeddyMoo_pickup_C::shake_timeline__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"shake_timeline__UpdateFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_TeddyMoo_pickup.BP_TeddyMoo_pickup_C.shake_timeline__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_TeddyMoo_pickup_C::shake_timeline__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"shake_timeline__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_TeddyMoo_pickup.BP_TeddyMoo_pickup_C.setLoot
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_TeddyMoo_pickup_C::setLoot(bool enabled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setLoot", FnName));
+
+	Params::BP_TeddyMoo_pickup_C_setLoot Parms{};
+
+	Parms.enabled = enabled;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_TeddyMoo_pickup.BP_TeddyMoo_pickup_C.BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// Function BP_TeddyMoo_pickup.BP_TeddyMoo_pickup_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_TeddyMoo_pickup_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_TeddyMoo_pickup.BP_TeddyMoo_pickup_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bStateToChangeTo_OnStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_TeddyMoo_pickup_C::OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_TeddyMoo_pickup_C_OnStateChanged Parms{};
+
+	Parms.bStateToChangeTo_OnStateChanged = bStateToChangeTo_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_TeddyMoo_pickup.BP_TeddyMoo_pickup_C.ExecuteUbergraph_BP_TeddyMoo_pickup
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_TeddyMoo_pickup_C::ExecuteUbergraph_BP_TeddyMoo_pickup(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_TeddyMoo_pickup_C", "ExecuteUbergraph_BP_TeddyMoo_pickup", FuncInfo);
+
+	Params::BP_TeddyMoo_pickup_C_ExecuteUbergraph_BP_TeddyMoo_pickup Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_TeddyMoo_pickup.BP_TeddyMoo_pickup_C.BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_TeddyMoo_pickup_C::BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_TeddyMoo_pickup_C::BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TeddyMoo_pickup_C", "BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_TeddyMoo_pickup_C_BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
+	Params::BP_TeddyMoo_pickup_C_BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature Parms{};
 
 	Parms.Interactable = Interactable;
 	Parms.Interactor = Interactor;
@@ -75,10 +175,8 @@ void ABP_TeddyMoo_pickup_C::BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_Co
 
 void ABP_TeddyMoo_pickup_C::BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TeddyMoo_pickup_C", "BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature", FnName));
 
 	Params::BP_TeddyMoo_pickup_C_BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature Parms{};
 
@@ -90,21 +188,19 @@ void ABP_TeddyMoo_pickup_C::BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_Co
 }
 
 
-// Function BP_TeddyMoo_pickup.BP_TeddyMoo_pickup_C.BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature
+// Function BP_TeddyMoo_pickup.BP_TeddyMoo_pickup_C.BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_TeddyMoo_pickup_C::BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_TeddyMoo_pickup_C::BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TeddyMoo_pickup_C", "BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_TeddyMoo_pickup_C_BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature Parms{};
+	Params::BP_TeddyMoo_pickup_C_BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
 	Parms.Interactable = Interactable;
 	Parms.Interactor = Interactor;
@@ -114,149 +210,27 @@ void ABP_TeddyMoo_pickup_C::BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_Co
 }
 
 
-// Function BP_TeddyMoo_pickup.BP_TeddyMoo_pickup_C.ExecuteUbergraph_BP_TeddyMoo_pickup
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_TeddyMoo_pickup.BP_TeddyMoo_pickup_C.BndEvt__BP_LootContainer_CardboardBox_01_C_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_TeddyMoo_pickup_C::ExecuteUbergraph_BP_TeddyMoo_pickup(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TeddyMoo_pickup_C", "ExecuteUbergraph_BP_TeddyMoo_pickup");
-
-	Params::BP_TeddyMoo_pickup_C_ExecuteUbergraph_BP_TeddyMoo_pickup Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_TeddyMoo_pickup.BP_TeddyMoo_pickup_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UActorComponent*                  PoolComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   Hits                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZPropDamageContext&     DamageContext                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 
-void ABP_TeddyMoo_pickup_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
+void ABP_TeddyMoo_pickup_C::BndEvt__BP_LootContainer_CardboardBox_01_C_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_LootContainer_CardboardBox_01_C_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TeddyMoo_pickup_C", "OnStateChanged");
+	Params::BP_TeddyMoo_pickup_C_BndEvt__BP_LootContainer_CardboardBox_01_C_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature Parms{};
 
-	Params::BP_TeddyMoo_pickup_C_OnStateChanged Parms{};
-
-	Parms.bStateToChangeTo = bStateToChangeTo;
+	Parms.PoolComponent = PoolComponent;
+	Parms.Hits = Hits;
 	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.DamageContext = std::move(DamageContext);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_TeddyMoo_pickup.BP_TeddyMoo_pickup_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_TeddyMoo_pickup_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TeddyMoo_pickup_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_TeddyMoo_pickup.BP_TeddyMoo_pickup_C.setLoot
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_TeddyMoo_pickup_C::setLoot(bool enabled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TeddyMoo_pickup_C", "setLoot");
-
-	Params::BP_TeddyMoo_pickup_C_setLoot Parms{};
-
-	Parms.enabled = enabled;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_TeddyMoo_pickup.BP_TeddyMoo_pickup_C.shake_timeline__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_TeddyMoo_pickup_C::shake_timeline__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TeddyMoo_pickup_C", "shake_timeline__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_TeddyMoo_pickup.BP_TeddyMoo_pickup_C.shake_timeline__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_TeddyMoo_pickup_C::shake_timeline__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TeddyMoo_pickup_C", "shake_timeline__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_TeddyMoo_pickup.BP_TeddyMoo_pickup_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_TeddyMoo_pickup_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TeddyMoo_pickup_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_TeddyMoo_pickup.BP_TeddyMoo_pickup_C.VoGrabVariations
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_TeddyMoo_pickup_C::VoGrabVariations()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TeddyMoo_pickup_C", "VoGrabVariations");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_TeddyMoo_pickup.BP_TeddyMoo_pickup_C.VoRipVariations
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_TeddyMoo_pickup_C::VoRipVariations()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TeddyMoo_pickup_C", "VoRipVariations");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

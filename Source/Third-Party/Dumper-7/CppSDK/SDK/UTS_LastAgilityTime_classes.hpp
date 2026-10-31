@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<UUTS_LastAgilityTime_C>();
 	}
 };
+DUMPER7_ASSERTS_UUTS_LastAgilityTime_C;
 
 SDK_NAMESPACE_END

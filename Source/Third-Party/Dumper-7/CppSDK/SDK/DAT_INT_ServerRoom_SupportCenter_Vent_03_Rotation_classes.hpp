@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<ADAT_INT_ServerRoom_SupportCenter_Vent_03_Rotation_C>();
 	}
 };
+DUMPER7_ASSERTS_ADAT_INT_ServerRoom_SupportCenter_Vent_03_Rotation_C;
 
 SDK_NAMESPACE_END

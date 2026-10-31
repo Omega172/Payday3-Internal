@@ -30,6 +30,7 @@ public:
 	class FText                                   Temp_text_Variable_5;                              // 0x0068(0x0010)()
 	class FText                                   K2Node_Select_Default;                             // 0x0078(0x0010)()
 };
+DUMPER7_ASSERTS_BP_Ladder_C_GetMarkerText;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

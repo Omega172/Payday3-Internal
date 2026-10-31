@@ -16,137 +16,61 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_STO_ConstructionCrane_01.BP_STO_ConstructionCrane_01_C.BndEvt__BP_STO_ConstructionCrane_01_SBZIntState_K2Node_ComponentBoundEvent_0_SBZIntStateChangedSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_STO_ConstructionCrane_01.BP_STO_ConstructionCrane_01_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_STO_ConstructionCrane_01_C::BndEvt__BP_STO_ConstructionCrane_01_SBZIntState_K2Node_ComponentBoundEvent_0_SBZIntStateChangedSignature__DelegateSignature(int32 OldState, int32 NewState, bool bDoCosmetics)
+void ABP_STO_ConstructionCrane_01_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_ConstructionCrane_01_C", "BndEvt__BP_STO_ConstructionCrane_01_SBZIntState_K2Node_ComponentBoundEvent_0_SBZIntStateChangedSignature__DelegateSignature");
-
-	Params::BP_STO_ConstructionCrane_01_C_BndEvt__BP_STO_ConstructionCrane_01_SBZIntState_K2Node_ComponentBoundEvent_0_SBZIntStateChangedSignature__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_STO_ConstructionCrane_01.BP_STO_ConstructionCrane_01_C.BP_OnStateChanged
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
-// Parameters:
-// ESBZTimerState                          NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZTimerState                          OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_STO_ConstructionCrane_01_C::BP_OnStateChanged(ESBZTimerState NewState, ESBZTimerState OldState, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_ConstructionCrane_01_C", "BP_OnStateChanged");
-
-	Params::BP_STO_ConstructionCrane_01_C_BP_OnStateChanged Parms{};
-
-	Parms.NewState = NewState;
-	Parms.OldState = OldState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_STO_ConstructionCrane_01.BP_STO_ConstructionCrane_01_C.ExecuteUbergraph_BP_STO_ConstructionCrane_01
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_STO_ConstructionCrane_01_C::ExecuteUbergraph_BP_STO_ConstructionCrane_01(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_ConstructionCrane_01_C", "ExecuteUbergraph_BP_STO_ConstructionCrane_01");
-
-	Params::BP_STO_ConstructionCrane_01_C_ExecuteUbergraph_BP_STO_ConstructionCrane_01 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_STO_ConstructionCrane_01.BP_STO_ConstructionCrane_01_C.GetMarkerText
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-class FText ABP_STO_ConstructionCrane_01_C::GetMarkerText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_ConstructionCrane_01_C", "GetMarkerText");
-
-	Params::BP_STO_ConstructionCrane_01_C_GetMarkerText Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function BP_STO_ConstructionCrane_01.BP_STO_ConstructionCrane_01_C.nextState
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_STO_ConstructionCrane_01_C::nextState()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_ConstructionCrane_01_C", "nextState");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_STO_ConstructionCrane_01.BP_STO_ConstructionCrane_01_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_STO_ConstructionCrane_01.BP_STO_ConstructionCrane_01_C.updateNavigation
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    canNavigate                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_STO_ConstructionCrane_01_C::ReceiveBeginPlay()
+void ABP_STO_ConstructionCrane_01_C::updateNavigation(bool canNavigate)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"updateNavigation", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_ConstructionCrane_01_C", "ReceiveBeginPlay");
+	Params::BP_STO_ConstructionCrane_01_C_updateNavigation Parms{};
+
+	Parms.canNavigate = canNavigate;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_STO_ConstructionCrane_01.BP_STO_ConstructionCrane_01_C.timerDone
+// (BlueprintAuthorityOnly, BlueprintCallable, BlueprintEvent)
+
+void ABP_STO_ConstructionCrane_01_C::timerDone()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"timerDone", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_STO_ConstructionCrane_01.BP_STO_ConstructionCrane_01_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
+// Function BP_STO_ConstructionCrane_01.BP_STO_ConstructionCrane_01_C.setMarker
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZMarkerDataAsset*        MarkerDataAsset                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_STO_ConstructionCrane_01_C::ReceiveTick(float DeltaSeconds)
+void ABP_STO_ConstructionCrane_01_C::setMarker(const class USBZMarkerDataAsset* MarkerDataAsset)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setMarker", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_ConstructionCrane_01_C", "ReceiveTick");
+	Params::BP_STO_ConstructionCrane_01_C_setMarker Parms{};
 
-	Params::BP_STO_ConstructionCrane_01_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
+	Parms.MarkerDataAsset = MarkerDataAsset;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -161,10 +85,8 @@ void ABP_STO_ConstructionCrane_01_C::ReceiveTick(float DeltaSeconds)
 
 void ABP_STO_ConstructionCrane_01_C::setCranePosition(bool useEase, int32 position, double delta)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_ConstructionCrane_01_C", "setCranePosition");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setCranePosition", FnName));
 
 	Params::BP_STO_ConstructionCrane_01_C_setCranePosition Parms{};
 
@@ -176,71 +98,125 @@ void ABP_STO_ConstructionCrane_01_C::setCranePosition(bool useEase, int32 positi
 }
 
 
-// Function BP_STO_ConstructionCrane_01.BP_STO_ConstructionCrane_01_C.setMarker
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function BP_STO_ConstructionCrane_01.BP_STO_ConstructionCrane_01_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// const class USBZMarkerDataAsset*        MarkerDataAsset                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_STO_ConstructionCrane_01_C::setMarker(const class USBZMarkerDataAsset* MarkerDataAsset)
+void ABP_STO_ConstructionCrane_01_C::ReceiveTick(float DeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveTick", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_ConstructionCrane_01_C", "setMarker");
+	Params::BP_STO_ConstructionCrane_01_C_ReceiveTick Parms{};
 
-	Params::BP_STO_ConstructionCrane_01_C_setMarker Parms{};
-
-	Parms.MarkerDataAsset = MarkerDataAsset;
+	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_STO_ConstructionCrane_01.BP_STO_ConstructionCrane_01_C.timerDone
-// (BlueprintAuthorityOnly, BlueprintCallable, BlueprintEvent)
+// Function BP_STO_ConstructionCrane_01.BP_STO_ConstructionCrane_01_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_STO_ConstructionCrane_01_C::timerDone()
+void ABP_STO_ConstructionCrane_01_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_ConstructionCrane_01_C", "timerDone");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_STO_ConstructionCrane_01.BP_STO_ConstructionCrane_01_C.updateNavigation
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    canNavigate                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_STO_ConstructionCrane_01.BP_STO_ConstructionCrane_01_C.nextState
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_STO_ConstructionCrane_01_C::updateNavigation(bool canNavigate)
+void ABP_STO_ConstructionCrane_01_C::nextState()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"nextState", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_ConstructionCrane_01_C", "updateNavigation");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_STO_ConstructionCrane_01_C_updateNavigation Parms{};
 
-	Parms.canNavigate = canNavigate;
+// Function BP_STO_ConstructionCrane_01.BP_STO_ConstructionCrane_01_C.GetMarkerText
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+class FText ABP_STO_ConstructionCrane_01_C::GetMarkerText()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetMarkerText", FnName));
+
+	Params::BP_STO_ConstructionCrane_01_C_GetMarkerText Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_STO_ConstructionCrane_01.BP_STO_ConstructionCrane_01_C.ExecuteUbergraph_BP_STO_ConstructionCrane_01
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_STO_ConstructionCrane_01_C::ExecuteUbergraph_BP_STO_ConstructionCrane_01(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_STO_ConstructionCrane_01_C", "ExecuteUbergraph_BP_STO_ConstructionCrane_01", FuncInfo);
+
+	Params::BP_STO_ConstructionCrane_01_C_ExecuteUbergraph_BP_STO_ConstructionCrane_01 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_STO_ConstructionCrane_01.BP_STO_ConstructionCrane_01_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_STO_ConstructionCrane_01.BP_STO_ConstructionCrane_01_C.BP_OnStateChanged
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZTimerState                          NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZTimerState                          OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_STO_ConstructionCrane_01_C::UserConstructionScript()
+void ABP_STO_ConstructionCrane_01_C::BP_OnStateChanged(ESBZTimerState NewState, ESBZTimerState OldState, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_ConstructionCrane_01_C", "UserConstructionScript");
+	Params::BP_STO_ConstructionCrane_01_C_BP_OnStateChanged Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.NewState = NewState;
+	Parms.OldState = OldState;
+	Parms.bDoCosmetics = bDoCosmetics;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_STO_ConstructionCrane_01.BP_STO_ConstructionCrane_01_C.BndEvt__BP_STO_ConstructionCrane_01_SBZIntState_K2Node_ComponentBoundEvent_0_SBZIntStateChangedSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_STO_ConstructionCrane_01_C::BndEvt__BP_STO_ConstructionCrane_01_SBZIntState_K2Node_ComponentBoundEvent_0_SBZIntStateChangedSignature__DelegateSignature(int32 OldState, int32 NewState, bool bDoCosmetics)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_STO_ConstructionCrane_01_SBZIntState_K2Node_ComponentBoundEvent_0_SBZIntStateChangedSignature__DelegateSignature", FnName));
+
+	Params::BP_STO_ConstructionCrane_01_C_BndEvt__BP_STO_ConstructionCrane_01_SBZIntState_K2Node_ComponentBoundEvent_0_SBZIntStateChangedSignature__DelegateSignature Parms{};
+
+	Parms.OldState = OldState;
+	Parms.NewState = NewState;
+	Parms.bDoCosmetics = bDoCosmetics;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

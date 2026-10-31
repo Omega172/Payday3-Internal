@@ -16,21 +16,37 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_CampaignContent_LoreAsset_FullImage.WBP_CampaignContent_LoreAsset_FullImage_C.ExecuteUbergraph_WBP_CampaignContent_LoreAsset_FullImage
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_CampaignContent_LoreAsset_FullImage.WBP_CampaignContent_LoreAsset_FullImage_C.SetEntryState
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZCampaignEntryState                  NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CampaignContent_LoreAsset_FullImage_C::ExecuteUbergraph_WBP_CampaignContent_LoreAsset_FullImage(int32 EntryPoint)
+void UWBP_CampaignContent_LoreAsset_FullImage_C::SetEntryState(ESBZCampaignEntryState NewState)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetEntryState", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignContent_LoreAsset_FullImage_C", "ExecuteUbergraph_WBP_CampaignContent_LoreAsset_FullImage");
+	Params::WBP_CampaignContent_LoreAsset_FullImage_C_SetEntryState Parms{};
 
-	Params::WBP_CampaignContent_LoreAsset_FullImage_C_ExecuteUbergraph_WBP_CampaignContent_LoreAsset_FullImage Parms{};
+	Parms.NewState = NewState;
 
-	Parms.EntryPoint = EntryPoint;
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CampaignContent_LoreAsset_FullImage.WBP_CampaignContent_LoreAsset_FullImage_C.SetCampaignData
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class USBZCampaignBaseEntryData*  Entry                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CampaignContent_LoreAsset_FullImage_C::SetCampaignData(const class USBZCampaignBaseEntryData* Entry)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetCampaignData", FnName));
+
+	Params::WBP_CampaignContent_LoreAsset_FullImage_C_SetCampaignData Parms{};
+
+	Parms.Entry = Entry;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -43,10 +59,8 @@ void UWBP_CampaignContent_LoreAsset_FullImage_C::ExecuteUbergraph_WBP_CampaignCo
 
 ESBZCampaignEntryState UWBP_CampaignContent_LoreAsset_FullImage_C::GetEntryState()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignContent_LoreAsset_FullImage_C", "GetEntryState");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetEntryState", FnName));
 
 	Params::WBP_CampaignContent_LoreAsset_FullImage_C_GetEntryState Parms{};
 
@@ -56,41 +70,19 @@ ESBZCampaignEntryState UWBP_CampaignContent_LoreAsset_FullImage_C::GetEntryState
 }
 
 
-// Function WBP_CampaignContent_LoreAsset_FullImage.WBP_CampaignContent_LoreAsset_FullImage_C.SetCampaignData
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_CampaignContent_LoreAsset_FullImage.WBP_CampaignContent_LoreAsset_FullImage_C.ExecuteUbergraph_WBP_CampaignContent_LoreAsset_FullImage
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// const class USBZCampaignBaseEntryData*  Entry                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CampaignContent_LoreAsset_FullImage_C::SetCampaignData(const class USBZCampaignBaseEntryData* Entry)
+void UWBP_CampaignContent_LoreAsset_FullImage_C::ExecuteUbergraph_WBP_CampaignContent_LoreAsset_FullImage(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_CampaignContent_LoreAsset_FullImage_C", "ExecuteUbergraph_WBP_CampaignContent_LoreAsset_FullImage", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignContent_LoreAsset_FullImage_C", "SetCampaignData");
+	Params::WBP_CampaignContent_LoreAsset_FullImage_C_ExecuteUbergraph_WBP_CampaignContent_LoreAsset_FullImage Parms{};
 
-	Params::WBP_CampaignContent_LoreAsset_FullImage_C_SetCampaignData Parms{};
-
-	Parms.Entry = Entry;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CampaignContent_LoreAsset_FullImage.WBP_CampaignContent_LoreAsset_FullImage_C.SetEntryState
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESBZCampaignEntryState                  NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CampaignContent_LoreAsset_FullImage_C::SetEntryState(ESBZCampaignEntryState NewState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignContent_LoreAsset_FullImage_C", "SetEntryState");
-
-	Params::WBP_CampaignContent_LoreAsset_FullImage_C_SetEntryState Parms{};
-
-	Parms.NewState = NewState;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

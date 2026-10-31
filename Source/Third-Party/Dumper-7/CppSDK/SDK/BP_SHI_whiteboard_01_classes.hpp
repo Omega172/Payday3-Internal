@@ -46,8 +46,8 @@ public:
 	TArray<class USceneComponent*>                postItSceneComponents;                             // 0x0418(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void setPostIts(bool DepotIn01, bool DepotIn02, bool Arrival_01, bool Arrival_02, bool Pit01, bool Pit02, bool Staging01, bool Holding01, bool Yard01, bool Yard02);
 	void UserConstructionScript();
+	void setPostIts(bool DepotIn01, bool DepotIn02, bool Arrival_01, bool Arrival_02, bool Pit01, bool Pit02, bool Staging01, bool Holding01, bool Yard01, bool Yard02);
 
 public:
 	static class UClass* StaticClass()
@@ -63,5 +63,6 @@ public:
 		return GetDefaultObjImpl<ABP_SHI_whiteboard_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SHI_whiteboard_01_C;
 
 SDK_NAMESPACE_END

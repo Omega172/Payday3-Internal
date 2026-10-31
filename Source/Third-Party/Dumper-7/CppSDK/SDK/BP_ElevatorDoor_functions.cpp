@@ -16,176 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ElevatorDoor.BP_ElevatorDoor_C.DoorPositionInterp
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// const struct FVector&                   Original                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FVector&                   Offset                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  Alpha                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-struct FVector ABP_ElevatorDoor_C::DoorPositionInterp(const struct FVector& Original, const struct FVector& Offset, double Alpha)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ElevatorDoor_C", "DoorPositionInterp");
-
-	Params::BP_ElevatorDoor_C_DoorPositionInterp Parms{};
-
-	Parms.Original = std::move(Original);
-	Parms.Offset = std::move(Offset);
-	Parms.Alpha = Alpha;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function BP_ElevatorDoor.BP_ElevatorDoor_C.ExecuteUbergraph_BP_ElevatorDoor
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ElevatorDoor_C::ExecuteUbergraph_BP_ElevatorDoor(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ElevatorDoor_C", "ExecuteUbergraph_BP_ElevatorDoor");
-
-	Params::BP_ElevatorDoor_C_ExecuteUbergraph_BP_ElevatorDoor Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ElevatorDoor.BP_ElevatorDoor_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ElevatorDoor_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ElevatorDoor_C", "OnStateChanged");
-
-	Params::BP_ElevatorDoor_C_OnStateChanged Parms{};
-
-	Parms.bStateToChangeTo = bStateToChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ElevatorDoor.BP_ElevatorDoor_C.Open Doors No Cosmetics
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bOpen                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ElevatorDoor_C::Open_Doors_No_Cosmetics(bool bOpen)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ElevatorDoor_C", "Open Doors No Cosmetics");
-
-	Params::BP_ElevatorDoor_C_Open_Doors_No_Cosmetics Parms{};
-
-	Parms.bOpen = bOpen;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ElevatorDoor.BP_ElevatorDoor_C.OpenDoors_Internal
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bOpen                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ElevatorDoor_C::OpenDoors_Internal(bool bOpen)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ElevatorDoor_C", "OpenDoors_Internal");
-
-	Params::BP_ElevatorDoor_C_OpenDoors_Internal Parms{};
-
-	Parms.bOpen = bOpen;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ElevatorDoor.BP_ElevatorDoor_C.OpenTimeline__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_ElevatorDoor_C::OpenTimeline__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ElevatorDoor_C", "OpenTimeline__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ElevatorDoor.BP_ElevatorDoor_C.OpenTimeline__SwitchDoor__EventFunc
-// (BlueprintEvent)
-
-void ABP_ElevatorDoor_C::OpenTimeline__SwitchDoor__EventFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ElevatorDoor_C", "OpenTimeline__SwitchDoor__EventFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ElevatorDoor.BP_ElevatorDoor_C.OpenTimeline__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_ElevatorDoor_C::OpenTimeline__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ElevatorDoor_C", "OpenTimeline__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ElevatorDoor.BP_ElevatorDoor_C.ReactToCloset
+// Function BP_ElevatorDoor.BP_ElevatorDoor_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bActorsInCloset                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ElevatorDoor_C::ReactToCloset(bool bActorsInCloset, bool bDoCosmetics)
+void ABP_ElevatorDoor_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ElevatorDoor_C", "ReactToCloset");
-
-	Params::BP_ElevatorDoor_C_ReactToCloset Parms{};
-
-	Parms.bActorsInCloset = bActorsInCloset;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -199,10 +38,8 @@ void ABP_ElevatorDoor_C::ReactToCloset(bool bActorsInCloset, bool bDoCosmetics)
 
 void ABP_ElevatorDoor_C::SetRelativePositionInterp(class USceneComponent* Component, const struct FVector& Original, const struct FVector& Offset, double Alpha)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ElevatorDoor_C", "SetRelativePositionInterp");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetRelativePositionInterp", FnName));
 
 	Params::BP_ElevatorDoor_C_SetRelativePositionInterp Parms{};
 
@@ -215,17 +52,158 @@ void ABP_ElevatorDoor_C::SetRelativePositionInterp(class USceneComponent* Compon
 }
 
 
-// Function BP_ElevatorDoor.BP_ElevatorDoor_C.UserConstructionScript
+// Function BP_ElevatorDoor.BP_ElevatorDoor_C.ReactToCloset
 // (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bActorsInCloset                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ElevatorDoor_C::UserConstructionScript()
+void ABP_ElevatorDoor_C::ReactToCloset(bool bActorsInCloset, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReactToCloset", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ElevatorDoor_C", "UserConstructionScript");
+	Params::BP_ElevatorDoor_C_ReactToCloset Parms{};
+
+	Parms.bActorsInCloset = bActorsInCloset;
+	Parms.bDoCosmetics = bDoCosmetics;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ElevatorDoor.BP_ElevatorDoor_C.OpenTimeline__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_ElevatorDoor_C::OpenTimeline__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OpenTimeline__UpdateFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ElevatorDoor.BP_ElevatorDoor_C.OpenTimeline__SwitchDoor__EventFunc
+// (BlueprintEvent)
+
+void ABP_ElevatorDoor_C::OpenTimeline__SwitchDoor__EventFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OpenTimeline__SwitchDoor__EventFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ElevatorDoor.BP_ElevatorDoor_C.OpenTimeline__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_ElevatorDoor_C::OpenTimeline__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OpenTimeline__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ElevatorDoor.BP_ElevatorDoor_C.OpenDoors_Internal
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bOpen                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ElevatorDoor_C::OpenDoors_Internal(bool bOpen)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OpenDoors_Internal", FnName));
+
+	Params::BP_ElevatorDoor_C_OpenDoors_Internal Parms{};
+
+	Parms.bOpen = bOpen;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ElevatorDoor.BP_ElevatorDoor_C.Open Doors No Cosmetics
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bOpen                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ElevatorDoor_C::Open_Doors_No_Cosmetics(bool bOpen)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Open Doors No Cosmetics", FnName));
+
+	Params::BP_ElevatorDoor_C_Open_Doors_No_Cosmetics Parms{};
+
+	Parms.bOpen = bOpen;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ElevatorDoor.BP_ElevatorDoor_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bStateToChangeTo_OnStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ElevatorDoor_C::OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_ElevatorDoor_C_OnStateChanged Parms{};
+
+	Parms.bStateToChangeTo_OnStateChanged = bStateToChangeTo_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ElevatorDoor.BP_ElevatorDoor_C.ExecuteUbergraph_BP_ElevatorDoor
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ElevatorDoor_C::ExecuteUbergraph_BP_ElevatorDoor(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ElevatorDoor_C", "ExecuteUbergraph_BP_ElevatorDoor", FuncInfo);
+
+	Params::BP_ElevatorDoor_C_ExecuteUbergraph_BP_ElevatorDoor Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ElevatorDoor.BP_ElevatorDoor_C.DoorPositionInterp
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// const struct FVector&                   Original                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   Offset                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Alpha                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+struct FVector ABP_ElevatorDoor_C::DoorPositionInterp(const struct FVector& Original, const struct FVector& Offset, double Alpha)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DoorPositionInterp", FnName));
+
+	Params::BP_ElevatorDoor_C_DoorPositionInterp Parms{};
+
+	Parms.Original = std::move(Original);
+	Parms.Offset = std::move(Offset);
+	Parms.Alpha = Alpha;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 

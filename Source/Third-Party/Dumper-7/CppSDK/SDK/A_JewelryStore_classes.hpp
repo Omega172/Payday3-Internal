@@ -45,11 +45,11 @@ public:
 	class ASBZAmbientSound*                       SBZAmbientSound_DistantSiren01_ExecuteUbergraph_A_JewelryStore_RefProperty; // 0x0468(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ActionPhaseStarted();
-	void ExecuteUbergraph_A_JewelryStore(int32 EntryPoint);
-	void HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState);
-	void Onrandomroomscomplete();
 	void ReceiveBeginPlay();
+	void Onrandomroomscomplete();
+	void HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged);
+	void ExecuteUbergraph_A_JewelryStore(int32 EntryPoint);
+	void ActionPhaseStarted();
 
 public:
 	static class UClass* StaticClass()
@@ -65,5 +65,6 @@ public:
 		return GetDefaultObjImpl<AA_JewelryStore_C>();
 	}
 };
+DUMPER7_ASSERTS_AA_JewelryStore_C;
 
 SDK_NAMESPACE_END

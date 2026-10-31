@@ -31,11 +31,11 @@ public:
 	class ASBZRoomVolume*                         SBZRoomVolume8_3_ExecuteUbergraph_G_SnGBB_Coverpoints_RefProperty; // 0x0400(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BranchBank_Kitchen();
-	void BranchBank_Roof();
-	void BranchBank_Stairs();
+	void OnLevelModifiersApplied(ESBZDifficulty InDifficulty_OnLevelModifiersApplied, const TArray<ESBZSecurityCompany>& InCompanies_OnLevelModifiersApplied);
 	void ExecuteUbergraph_G_SnGBB_Coverpoints(int32 EntryPoint);
-	void OnLevelModifiersApplied(ESBZDifficulty InDifficulty, const TArray<ESBZSecurityCompany>& InCompanies);
+	void BranchBank_Stairs();
+	void BranchBank_Roof();
+	void BranchBank_Kitchen();
 
 public:
 	static class UClass* StaticClass()
@@ -51,5 +51,6 @@ public:
 		return GetDefaultObjImpl<AG_SnGBB_Coverpoints_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_SnGBB_Coverpoints_C;
 
 SDK_NAMESPACE_END

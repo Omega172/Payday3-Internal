@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<UWBP_CoolingSystem_Interrupted_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_CoolingSystem_Interrupted_C;
 
 SDK_NAMESPACE_END

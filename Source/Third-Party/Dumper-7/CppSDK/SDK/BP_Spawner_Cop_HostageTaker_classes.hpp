@@ -26,9 +26,9 @@ public:
 	struct FGameplayTagContainer                  GrantedTags;                                       // 0x0400(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void CustomEvent_0(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
-	void ExecuteUbergraph_BP_Spawner_Cop_HostageTaker(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_Spawner_Cop_HostageTaker(int32 EntryPoint);
+	void CustomEvent_0(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<ABP_Spawner_Cop_HostageTaker_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Spawner_Cop_HostageTaker_C;
 
 SDK_NAMESPACE_END

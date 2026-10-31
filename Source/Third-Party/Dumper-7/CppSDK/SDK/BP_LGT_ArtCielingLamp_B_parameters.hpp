@@ -18,17 +18,17 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_LGT_ArtCielingLamp_B.BP_LGT_ArtCielingLamp_B_C.BndEvt__BP_LGT_ArtCielingLamp_b_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature
-// 0x0030 (0x0030 - 0x0000)
-struct BP_LGT_ArtCielingLamp_B_C_BndEvt__BP_LGT_ArtCielingLamp_b_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature final
+// Function BP_LGT_ArtCielingLamp_B.BP_LGT_ArtCielingLamp_B_C.UserConstructionScript
+// 0x0190 (0x0190 - 0x0000)
+struct BP_LGT_ArtCielingLamp_B_C_UserConstructionScript final
 {
 public:
-	class UActorComponent*                        PoolComponent;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         Hits;                                              // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZPropDamageContext                  DamageContext;                                     // 0x0010(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+	double                                        CallFunc_FMax_ReturnValue;                         // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0020(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_AddLocalTransform_SweepHitResult_UserConstructionScript; // 0x0080(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
+DUMPER7_ASSERTS_BP_LGT_ArtCielingLamp_B_C_UserConstructionScript;
 
 // Function BP_LGT_ArtCielingLamp_B.BP_LGT_ArtCielingLamp_B_C.ExecuteUbergraph_BP_LGT_ArtCielingLamp_B
 // 0x0060 (0x0060 - 0x0000)
@@ -47,17 +47,20 @@ public:
 	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSBZPropDamageContext                  K2Node_ComponentBoundEvent_DamageContext;          // 0x0040(0x0020)(ConstParm, NoDestructor)
 };
+DUMPER7_ASSERTS_BP_LGT_ArtCielingLamp_B_C_ExecuteUbergraph_BP_LGT_ArtCielingLamp_B;
 
-// Function BP_LGT_ArtCielingLamp_B.BP_LGT_ArtCielingLamp_B_C.UserConstructionScript
-// 0x0190 (0x0190 - 0x0000)
-struct BP_LGT_ArtCielingLamp_B_C_UserConstructionScript final
+// Function BP_LGT_ArtCielingLamp_B.BP_LGT_ArtCielingLamp_B_C.BndEvt__BP_LGT_ArtCielingLamp_b_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature
+// 0x0030 (0x0030 - 0x0000)
+struct BP_LGT_ArtCielingLamp_B_C_BndEvt__BP_LGT_ArtCielingLamp_b_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature final
 {
 public:
-	double                                        CallFunc_FMax_ReturnValue;                         // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0020(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_AddLocalTransform_SweepHitResult;      // 0x0080(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class UActorComponent*                        PoolComponent;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         Hits;                                              // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZPropDamageContext                  DamageContext;                                     // 0x0010(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 };
+DUMPER7_ASSERTS_BP_LGT_ArtCielingLamp_B_C_BndEvt__BP_LGT_ArtCielingLamp_b_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

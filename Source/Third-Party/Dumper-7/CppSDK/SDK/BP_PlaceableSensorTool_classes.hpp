@@ -18,17 +18,17 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_PlaceableSensorTool.BP_PlaceableSensorTool_C
-// 0x0010 (0x06D0 - 0x06C0)
+// 0x0010 (0x06E0 - 0x06D0)
 class ABP_PlaceableSensorTool_C final : public ASBZPlaceableSensorTool
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x06C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBoxComponent*                          Interactable_Collision;                            // 0x06C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x06D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UBoxComponent*                          Interactable_Collision;                            // 0x06D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_PlaceableSensorTool(int32 EntryPoint);
-	void OnActivated();
 	void OnSensorAmmoDepleted_Event_0();
+	void OnActivated();
+	void ExecuteUbergraph_BP_PlaceableSensorTool(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<ABP_PlaceableSensorTool_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PlaceableSensorTool_C;
 
 SDK_NAMESPACE_END

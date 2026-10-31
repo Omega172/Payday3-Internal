@@ -32,16 +32,16 @@ public:
 	class UWBP_InventoryBaseData_Icon_C*          Widget_Icon;                                       // 0x03D8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void SetRarityColour();
-	void PreConstruct(bool IsDesignTime);
-	void OnItemCountChanged(int32 InItemCount);
-	void OnInitialized();
-	void OnCosmeticItemDataInitialized();
-	void HoverChangedVisuals(bool bIsHovered);
-	void FocusedChangedVisuals(bool bIsFocused);
-	void ExecuteUbergraph_WBP_UI_CosmeticButton(int32 EntryPoint);
-	void ButtonHoveredChanged(bool bInIsHovered);
 	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
+	void ExecuteUbergraph_WBP_UI_CosmeticButton(int32 EntryPoint);
+	void FocusedChangedVisuals(bool bIsFocused);
+	void HoverChangedVisuals(bool bIsHovered);
+	void OnCosmeticItemDataInitialized();
+	void OnInitialized();
+	void OnItemCountChanged(int32 InItemCount);
+	void PreConstruct(bool IsDesignTime);
+	void SetRarityColour();
 
 public:
 	static class UClass* StaticClass()

@@ -16,17 +16,21 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_LoadoutMannequinScreen.WBP_LoadoutMannequinScreen_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_LoadoutMannequinScreen.WBP_LoadoutMannequinScreen_C.setText
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_LoadoutMannequinScreen_C::Construct()
+void UWBP_LoadoutMannequinScreen_C::setText(const class FText& InText)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setText", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutMannequinScreen_C", "Construct");
+	Params::WBP_LoadoutMannequinScreen_C_setText Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.InText = std::move(InText);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -37,10 +41,8 @@ void UWBP_LoadoutMannequinScreen_C::Construct()
 
 void UWBP_LoadoutMannequinScreen_C::ExecuteUbergraph_WBP_LoadoutMannequinScreen(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutMannequinScreen_C", "ExecuteUbergraph_WBP_LoadoutMannequinScreen");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_LoadoutMannequinScreen_C", "ExecuteUbergraph_WBP_LoadoutMannequinScreen", FuncInfo);
 
 	Params::WBP_LoadoutMannequinScreen_C_ExecuteUbergraph_WBP_LoadoutMannequinScreen Parms{};
 
@@ -50,23 +52,15 @@ void UWBP_LoadoutMannequinScreen_C::ExecuteUbergraph_WBP_LoadoutMannequinScreen(
 }
 
 
-// Function WBP_LoadoutMannequinScreen.WBP_LoadoutMannequinScreen_C.setText
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
+// Function WBP_LoadoutMannequinScreen.WBP_LoadoutMannequinScreen_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_LoadoutMannequinScreen_C::setText(const class FText& InText)
+void UWBP_LoadoutMannequinScreen_C::Construct()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_LoadoutMannequinScreen_C", "setText");
-
-	Params::WBP_LoadoutMannequinScreen_C_setText Parms{};
-
-	Parms.InText = std::move(InText);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

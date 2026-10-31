@@ -16,115 +16,67 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.SetIsActive
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bIsActive                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Crimenet_SecurityCompanyDetails_C::SetIsActive(bool bIsActive)
+void UWBP_UI_Crimenet_SecurityCompanyDetails_C::ButtonFocusedChanged(bool bInHasFocus)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetIsActive", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
 
-	Params::WBP_UI_Crimenet_SecurityCompanyDetails_C_SetIsActive Parms{};
+	Params::WBP_UI_Crimenet_SecurityCompanyDetails_C_ButtonFocusedChanged Parms{};
 
-	Parms.bIsActive = bIsActive;
+	Parms.bInHasFocus = bInHasFocus;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Crimenet_SecurityCompanyDetails_C::PreConstruct(bool IsDesignTime_PreConstruct)
+void UWBP_UI_Crimenet_SecurityCompanyDetails_C::ButtonHoveredChanged(bool bInIsHovered)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonHoveredChanged", FnName));
 
-	Params::WBP_UI_Crimenet_SecurityCompanyDetails_C_PreConstruct Parms{};
+	Params::WBP_UI_Crimenet_SecurityCompanyDetails_C_ButtonHoveredChanged Parms{};
 
-	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+	Parms.bInIsHovered = bInIsHovered;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.OnSelected
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.ButtonSelected
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_UI_Crimenet_SecurityCompanyDetails_C::OnSelected()
+void UWBP_UI_Crimenet_SecurityCompanyDetails_C::ButtonSelected()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSelected", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonSelected", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.OnSecurityCompaniesChanged
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.ExecuteUbergraph_WBP_UI_Crimenet_SecurityCompanyDetails
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// const TArray<ESBZSecurityCompany>&      SecurityCompanies                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Crimenet_SecurityCompanyDetails_C::OnSecurityCompaniesChanged(const TArray<ESBZSecurityCompany>& SecurityCompanies)
+void UWBP_UI_Crimenet_SecurityCompanyDetails_C::ExecuteUbergraph_WBP_UI_Crimenet_SecurityCompanyDetails(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSecurityCompaniesChanged", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Crimenet_SecurityCompanyDetails_C", "ExecuteUbergraph_WBP_UI_Crimenet_SecurityCompanyDetails", FuncInfo);
 
-	Params::WBP_UI_Crimenet_SecurityCompanyDetails_C_OnSecurityCompaniesChanged Parms{};
+	Params::WBP_UI_Crimenet_SecurityCompanyDetails_C_ExecuteUbergraph_WBP_UI_Crimenet_SecurityCompanyDetails Parms{};
 
-	Parms.SecurityCompanies = std::move(SecurityCompanies);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Crimenet_SecurityCompanyDetails_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.OnHover
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Crimenet_SecurityCompanyDetails_C::OnHover(bool bIsHovered)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnHover", FnName));
-
-	Params::WBP_UI_Crimenet_SecurityCompanyDetails_C_OnHover Parms{};
-
-	Parms.bIsHovered = bIsHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.OnFocus
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Crimenet_SecurityCompanyDetails_C::OnFocus(bool bIsFocused)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnFocus", FnName));
-
-	Params::WBP_UI_Crimenet_SecurityCompanyDetails_C_OnFocus Parms{};
-
-	Parms.bIsFocused = bIsFocused;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -148,67 +100,115 @@ void UWBP_UI_Crimenet_SecurityCompanyDetails_C::InitSecurityCompany(ESBZSecurity
 }
 
 
-// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.ExecuteUbergraph_WBP_UI_Crimenet_SecurityCompanyDetails
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.OnFocus
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Crimenet_SecurityCompanyDetails_C::ExecuteUbergraph_WBP_UI_Crimenet_SecurityCompanyDetails(int32 EntryPoint)
+void UWBP_UI_Crimenet_SecurityCompanyDetails_C::OnFocus(bool bIsFocused)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Crimenet_SecurityCompanyDetails_C", "ExecuteUbergraph_WBP_UI_Crimenet_SecurityCompanyDetails", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnFocus", FnName));
 
-	Params::WBP_UI_Crimenet_SecurityCompanyDetails_C_ExecuteUbergraph_WBP_UI_Crimenet_SecurityCompanyDetails Parms{};
+	Params::WBP_UI_Crimenet_SecurityCompanyDetails_C_OnFocus Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.bIsFocused = bIsFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.ButtonSelected
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.OnHover
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsHovered                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Crimenet_SecurityCompanyDetails_C::ButtonSelected()
+void UWBP_UI_Crimenet_SecurityCompanyDetails_C::OnHover(bool bIsHovered)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonSelected", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnHover", FnName));
+
+	Params::WBP_UI_Crimenet_SecurityCompanyDetails_C_OnHover Parms{};
+
+	Parms.bIsHovered = bIsHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Crimenet_SecurityCompanyDetails_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.OnSecurityCompaniesChanged
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsHovered_ButtonHoveredChanged                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const TArray<ESBZSecurityCompany>&      SecurityCompanies                                      (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UWBP_UI_Crimenet_SecurityCompanyDetails_C::ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged)
+void UWBP_UI_Crimenet_SecurityCompanyDetails_C::OnSecurityCompaniesChanged(const TArray<ESBZSecurityCompany>& SecurityCompanies)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonHoveredChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSecurityCompaniesChanged", FnName));
 
-	Params::WBP_UI_Crimenet_SecurityCompanyDetails_C_ButtonHoveredChanged Parms{};
+	Params::WBP_UI_Crimenet_SecurityCompanyDetails_C_OnSecurityCompaniesChanged Parms{};
 
-	Parms.bInIsHovered_ButtonHoveredChanged = bInIsHovered_ButtonHoveredChanged;
+	Parms.SecurityCompanies = std::move(SecurityCompanies);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus_ButtonFocusedChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.OnSelected
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Crimenet_SecurityCompanyDetails_C::ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged)
+void UWBP_UI_Crimenet_SecurityCompanyDetails_C::OnSelected()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSelected", FnName));
 
-	Params::WBP_UI_Crimenet_SecurityCompanyDetails_C_ButtonFocusedChanged Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.bInHasFocus_ButtonFocusedChanged = bInHasFocus_ButtonFocusedChanged;
+
+// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Crimenet_SecurityCompanyDetails_C::PreConstruct(bool IsDesignTime)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_UI_Crimenet_SecurityCompanyDetails_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Crimenet_SecurityCompanyDetails.WBP_UI_Crimenet_SecurityCompanyDetails_C.SetIsActive
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsActive                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Crimenet_SecurityCompanyDetails_C::SetIsActive(bool bIsActive)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetIsActive", FnName));
+
+	Params::WBP_UI_Crimenet_SecurityCompanyDetails_C_SetIsActive Parms{};
+
+	Parms.bIsActive = bIsActive;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

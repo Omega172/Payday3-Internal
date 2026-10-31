@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_DroneMotionSensorController_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DroneMotionSensorController_C;
 
 SDK_NAMESPACE_END

@@ -16,25 +16,107 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ConnectedMaintenanceBox.BP_ConnectedMaintenanceBox_C.BndEvt__BP_ConnectedMaintenanceBox_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// Function BP_ConnectedMaintenanceBox.BP_ConnectedMaintenanceBox_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_ConnectedMaintenanceBox_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ConnectedMaintenanceBox.BP_ConnectedMaintenanceBox_C.ExecuteUbergraph_BP_ConnectedMaintenanceBox
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ConnectedMaintenanceBox_C::ExecuteUbergraph_BP_ConnectedMaintenanceBox(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ConnectedMaintenanceBox_C", "ExecuteUbergraph_BP_ConnectedMaintenanceBox", FuncInfo);
+
+	Params::BP_ConnectedMaintenanceBox_C_ExecuteUbergraph_BP_ConnectedMaintenanceBox Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ConnectedMaintenanceBox.BP_ConnectedMaintenanceBox_C.BP_UpdateNumberOfConnectedBoxes
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// const int32                             NumberOfBoxes_BP_UpdateNumberOfConnectedBoxes          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ConnectedMaintenanceBox_C::BP_UpdateNumberOfConnectedBoxes(const int32 NumberOfBoxes_BP_UpdateNumberOfConnectedBoxes)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_UpdateNumberOfConnectedBoxes", FnName));
+
+	Params::BP_ConnectedMaintenanceBox_C_BP_UpdateNumberOfConnectedBoxes Parms{};
+
+	Parms.NumberOfBoxes_BP_UpdateNumberOfConnectedBoxes = NumberOfBoxes_BP_UpdateNumberOfConnectedBoxes;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ConnectedMaintenanceBox.BP_ConnectedMaintenanceBox_C.BP_UpdateColors
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const TArray<int32>&                    SequenceArray_BP_UpdateColors                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// int32                                   NumberOfCompleteCables_BP_UpdateColors                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ConnectedMaintenanceBox_C::BP_UpdateColors(const TArray<int32>& SequenceArray_BP_UpdateColors, int32 NumberOfCompleteCables_BP_UpdateColors)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_UpdateColors", FnName));
+
+	Params::BP_ConnectedMaintenanceBox_C_BP_UpdateColors Parms{};
+
+	Parms.SequenceArray_BP_UpdateColors = std::move(SequenceArray_BP_UpdateColors);
+	Parms.NumberOfCompleteCables_BP_UpdateColors = NumberOfCompleteCables_BP_UpdateColors;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ConnectedMaintenanceBox.BP_ConnectedMaintenanceBox_C.BP_OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZMaintenanceBoxState                 NewState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ConnectedMaintenanceBox_C::BP_OnStateChanged(ESBZMaintenanceBoxState NewState_BP_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnStateChanged", FnName));
+
+	Params::BP_ConnectedMaintenanceBox_C_BP_OnStateChanged Parms{};
+
+	Parms.NewState_BP_OnStateChanged = NewState_BP_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ConnectedMaintenanceBox.BP_ConnectedMaintenanceBox_C.BndEvt__BP_ConnectedMaintenanceBox_isDeactivated_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bState                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ConnectedMaintenanceBox_C::BndEvt__BP_ConnectedMaintenanceBox_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_ConnectedMaintenanceBox_C::BndEvt__BP_ConnectedMaintenanceBox_isDeactivated_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ConnectedMaintenanceBox_isDeactivated_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ConnectedMaintenanceBox_C", "BndEvt__BP_ConnectedMaintenanceBox_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
+	Params::BP_ConnectedMaintenanceBox_C_BndEvt__BP_ConnectedMaintenanceBox_isDeactivated_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature Parms{};
 
-	Params::BP_ConnectedMaintenanceBox_C_BndEvt__BP_ConnectedMaintenanceBox_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+	Parms.bState = bState;
+	Parms.bDoCosmetics = bDoCosmetics;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -49,10 +131,8 @@ void ABP_ConnectedMaintenanceBox_C::BndEvt__BP_ConnectedMaintenanceBox_Interacta
 
 void ABP_ConnectedMaintenanceBox_C::BndEvt__BP_ConnectedMaintenanceBox_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ConnectedMaintenanceBox_C", "BndEvt__BP_ConnectedMaintenanceBox_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ConnectedMaintenanceBox_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature", FnName));
 
 	Params::BP_ConnectedMaintenanceBox_C_BndEvt__BP_ConnectedMaintenanceBox_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature Parms{};
 
@@ -64,121 +144,25 @@ void ABP_ConnectedMaintenanceBox_C::BndEvt__BP_ConnectedMaintenanceBox_Interacta
 }
 
 
-// Function BP_ConnectedMaintenanceBox.BP_ConnectedMaintenanceBox_C.BndEvt__BP_ConnectedMaintenanceBox_isDeactivated_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature
+// Function BP_ConnectedMaintenanceBox.BP_ConnectedMaintenanceBox_C.BndEvt__BP_ConnectedMaintenanceBox_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// bool                                    bState                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ConnectedMaintenanceBox_C::BndEvt__BP_ConnectedMaintenanceBox_isDeactivated_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics)
+void ABP_ConnectedMaintenanceBox_C::BndEvt__BP_ConnectedMaintenanceBox_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ConnectedMaintenanceBox_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ConnectedMaintenanceBox_C", "BndEvt__BP_ConnectedMaintenanceBox_isDeactivated_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature");
+	Params::BP_ConnectedMaintenanceBox_C_BndEvt__BP_ConnectedMaintenanceBox_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
-	Params::BP_ConnectedMaintenanceBox_C_BndEvt__BP_ConnectedMaintenanceBox_isDeactivated_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature Parms{};
-
-	Parms.bState = bState;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ConnectedMaintenanceBox.BP_ConnectedMaintenanceBox_C.BP_OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// ESBZMaintenanceBoxState                 NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ConnectedMaintenanceBox_C::BP_OnStateChanged(ESBZMaintenanceBoxState NewState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ConnectedMaintenanceBox_C", "BP_OnStateChanged");
-
-	Params::BP_ConnectedMaintenanceBox_C_BP_OnStateChanged Parms{};
-
-	Parms.NewState = NewState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ConnectedMaintenanceBox.BP_ConnectedMaintenanceBox_C.BP_UpdateColors
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const TArray<int32>&                    SequenceArray                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// int32                                   NumberOfCompleteCables                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ConnectedMaintenanceBox_C::BP_UpdateColors(const TArray<int32>& SequenceArray, int32 NumberOfCompleteCables)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ConnectedMaintenanceBox_C", "BP_UpdateColors");
-
-	Params::BP_ConnectedMaintenanceBox_C_BP_UpdateColors Parms{};
-
-	Parms.SequenceArray = std::move(SequenceArray);
-	Parms.NumberOfCompleteCables = NumberOfCompleteCables;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ConnectedMaintenanceBox.BP_ConnectedMaintenanceBox_C.BP_UpdateNumberOfConnectedBoxes
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// const int32                             NumberOfBoxes                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ConnectedMaintenanceBox_C::BP_UpdateNumberOfConnectedBoxes(const int32 NumberOfBoxes)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ConnectedMaintenanceBox_C", "BP_UpdateNumberOfConnectedBoxes");
-
-	Params::BP_ConnectedMaintenanceBox_C_BP_UpdateNumberOfConnectedBoxes Parms{};
-
-	Parms.NumberOfBoxes = NumberOfBoxes;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ConnectedMaintenanceBox.BP_ConnectedMaintenanceBox_C.ExecuteUbergraph_BP_ConnectedMaintenanceBox
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ConnectedMaintenanceBox_C::ExecuteUbergraph_BP_ConnectedMaintenanceBox(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ConnectedMaintenanceBox_C", "ExecuteUbergraph_BP_ConnectedMaintenanceBox");
-
-	Params::BP_ConnectedMaintenanceBox_C_ExecuteUbergraph_BP_ConnectedMaintenanceBox Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ConnectedMaintenanceBox.BP_ConnectedMaintenanceBox_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_ConnectedMaintenanceBox_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ConnectedMaintenanceBox_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

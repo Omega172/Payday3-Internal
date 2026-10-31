@@ -46,13 +46,13 @@ public:
 	double                                        openAngle;                                         // 0x03F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_ONE_SecurityGate_magneticLock_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature(bool bState_0, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_ONE_SecurityGate(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void setMagneticLock(bool enabled);
-	void Timeline_Open__FinishedFunc();
-	void Timeline_Open__openNav__EventFunc();
 	void Timeline_Open__UpdateFunc();
+	void Timeline_Open__openNav__EventFunc();
+	void Timeline_Open__FinishedFunc();
+	void setMagneticLock(bool enabled);
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_ONE_SecurityGate(int32 EntryPoint);
+	void BndEvt__BP_ONE_SecurityGate_magneticLock_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
 
 public:
 	static class UClass* StaticClass()
@@ -68,5 +68,6 @@ public:
 		return GetDefaultObjImpl<ABP_ONE_SecurityGate_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ONE_SecurityGate_C;
 
 SDK_NAMESPACE_END

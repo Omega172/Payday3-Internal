@@ -16,1269 +16,1175 @@
 
 SDK_NAMESPACE_START
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.ActionPhaseStarted
-// (Event, Public, BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::ActionPhaseStarted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "ActionPhaseStarted");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.Activate Pedestrians
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::Activate_Pedestrians()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "Activate Pedestrians");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.ActivateEscapeGauntlet
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.TryEnableWheelrampWaypoints
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_ArmoredTransport_Scripting_C::ActivateEscapeGauntlet()
+void AG_ArmoredTransport_Scripting_C::TryEnableWheelrampWaypoints()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "ActivateEscapeGauntlet");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TryEnableWheelrampWaypoints", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.ActivateFirstObjective
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.TryEnableSecureZone
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_ArmoredTransport_Scripting_C::ActivateFirstObjective()
+void AG_ArmoredTransport_Scripting_C::TryEnableSecureZone()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "ActivateFirstObjective");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TryEnableSecureZone", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BlackScreenStarted
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.TryAwardTrafficControlAchievement
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::TryAwardTrafficControlAchievement()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TryAwardTrafficControlAchievement", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.StopEscortAtBarrier
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::StopEscortAtBarrier()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StopEscortAtBarrier", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.StartFailScreen
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::StartFailScreen()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StartFailScreen", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.StartEscort
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::StartEscort()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StartEscort", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.StartDriveinSwatVan
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::StartDriveinSwatVan()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StartDriveinSwatVan", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.ResumeEscort
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::ResumeEscort()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ResumeEscort", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.RandomizeWheelramps
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::RandomizeWheelramps()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RandomizeWheelramps", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.RandomizeTransportStopLocation
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::RandomizeTransportStopLocation()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RandomizeTransportStopLocation", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.RandomizeInstantLoot
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::RandomizeInstantLoot()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RandomizeInstantLoot", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.RandomizeHelicopter
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::RandomizeHelicopter()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RandomizeHelicopter", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.RandomizeGateBoxes
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::RandomizeGateBoxes()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RandomizeGateBoxes", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.RandomizeDoors
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::RandomizeDoors()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RandomizeDoors", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.RandomizeDevice
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::RandomizeDevice()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RandomizeDevice", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.Randomize Fog
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::Randomize_Fog()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Randomize Fog", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.PreparationSubsComplete
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::PreparationSubsComplete()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreparationSubsComplete", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.OnRandomPlacementStarted
 // (Event, Public, BlueprintEvent)
 
-void AG_ArmoredTransport_Scripting_C::BlackScreenStarted()
+void AG_ArmoredTransport_Scripting_C::OnRandomPlacementStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BlackScreenStarted");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRandomPlacementStarted", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_armored_Transport_Wires_2_K2Node_ActorBoundEvent_12_On_Complete_interaction__DelegateSignature
-// (BlueprintEvent)
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.OnPreplanningAssetsTagsApplied
+// (Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTagContainer&     PreplanningTagContainer_OnPreplanningAssetsTagsApplied (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_armored_Transport_Wires_2_K2Node_ActorBoundEvent_12_On_Complete_interaction__DelegateSignature()
+void AG_ArmoredTransport_Scripting_C::OnPreplanningAssetsTagsApplied(const struct FGameplayTagContainer& PreplanningTagContainer_OnPreplanningAssetsTagsApplied)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPreplanningAssetsTagsApplied", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_armored_Transport_Wires_2_K2Node_ActorBoundEvent_12_On_Complete_interaction__DelegateSignature");
+	Params::G_ArmoredTransport_Scripting_C_OnPreplanningAssetsTagsApplied Parms{};
+
+	Parms.PreplanningTagContainer_OnPreplanningAssetsTagsApplied = std::move(PreplanningTagContainer_OnPreplanningAssetsTagsApplied);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.OnPlayersCarryBagChanged
+// (Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FSBZPlayersCarryBagChangedEvent&Data_OnPlayersCarryBagChanged                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+
+void AG_ArmoredTransport_Scripting_C::OnPlayersCarryBagChanged(const struct FSBZPlayersCarryBagChangedEvent& Data_OnPlayersCarryBagChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPlayersCarryBagChanged", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_OnPlayersCarryBagChanged Parms{};
+
+	Parms.Data_OnPlayersCarryBagChanged = std::move(Data_OnPlayersCarryBagChanged);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.OnPlayerPickedUpBag
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FSBZBagHandle&             BagHandle_OnPlayerPickedUpBag                          (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void AG_ArmoredTransport_Scripting_C::OnPlayerPickedUpBag(const struct FSBZBagHandle& BagHandle_OnPlayerPickedUpBag)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPlayerPickedUpBag", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_OnPlayerPickedUpBag Parms{};
+
+	Parms.BagHandle_OnPlayerPickedUpBag = std::move(BagHandle_OnPlayerPickedUpBag);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.OnOverkillWeaponRequested
+// (Event, Public, BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::OnOverkillWeaponRequested()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnOverkillWeaponRequested", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_ArmoredTransport_K2Node_ActorBoundEvent_43_SBZOnVehicleEscortChanged__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.HeistStateChanged
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    bIsMoving                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPD3HeistState                          OldHeistState_HeistStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPD3HeistState                          CurrentHeistState_HeistStateChanged                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_ArmoredTransport_K2Node_ActorBoundEvent_43_SBZOnVehicleEscortChanged__DelegateSignature(bool bIsMoving)
+void AG_ArmoredTransport_Scripting_C::HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HeistStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_ArmoredTransport_K2Node_ActorBoundEvent_43_SBZOnVehicleEscortChanged__DelegateSignature");
+	Params::G_ArmoredTransport_Scripting_C_HeistStateChanged Parms{};
 
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_ArmoredTransport_K2Node_ActorBoundEvent_43_SBZOnVehicleEscortChanged__DelegateSignature Parms{};
-
-	Parms.bIsMoving = bIsMoving;
+	Parms.OldHeistState_HeistStateChanged = OldHeistState_HeistStateChanged;
+	Parms.CurrentHeistState_HeistStateChanged = CurrentHeistState_HeistStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_ArmoredTransport_underbelly_hatch_K2Node_ActorBoundEvent_60_Hatch_Opened__DelegateSignature
-// (BlueprintEvent)
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.ExecuteUbergraph_G_ArmoredTransport_Scripting
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_ArmoredTransport_underbelly_hatch_K2Node_ActorBoundEvent_60_Hatch_Opened__DelegateSignature()
+void AG_ArmoredTransport_Scripting_C::ExecuteUbergraph_G_ArmoredTransport_Scripting(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_ArmoredTransport_Scripting_C", "ExecuteUbergraph_G_ArmoredTransport_Scripting", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_ArmoredTransport_underbelly_hatch_K2Node_ActorBoundEvent_60_Hatch_Opened__DelegateSignature");
+	Params::G_ArmoredTransport_Scripting_C_ExecuteUbergraph_G_ArmoredTransport_Scripting Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.EnableFlare
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::EnableFlare()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EnableFlare", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_BlockerFence_01_2_K2Node_ActorBoundEvent_19_SBZOnInteractionBinaryStateDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// bool                                    BNewState                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.DisablePreparationInteractions
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_BlockerFence_01_2_K2Node_ActorBoundEvent_19_SBZOnInteractionBinaryStateDelegate__DelegateSignature(bool BNewState)
+void AG_ArmoredTransport_Scripting_C::DisablePreparationInteractions()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_BlockerFence_01_2_K2Node_ActorBoundEvent_19_SBZOnInteractionBinaryStateDelegate__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_BlockerFence_01_2_K2Node_ActorBoundEvent_19_SBZOnInteractionBinaryStateDelegate__DelegateSignature Parms{};
-
-	Parms.BNewState = BNewState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_BreachingEquipmentBagGenerator2_K2Node_ActorBoundEvent_16_SBZBagPickedUp__DelegateSignature
-// (BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_BreachingEquipmentBagGenerator2_K2Node_ActorBoundEvent_16_SBZBagPickedUp__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_BreachingEquipmentBagGenerator2_K2Node_ActorBoundEvent_16_SBZBagPickedUp__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DisablePreparationInteractions", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_BreachingEquipmentBagGenerator_2_K2Node_ActorBoundEvent_2_SBZBagPickedUp__DelegateSignature
-// (BlueprintEvent)
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.DisableAllPreparations
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_BreachingEquipmentBagGenerator_2_K2Node_ActorBoundEvent_2_SBZBagPickedUp__DelegateSignature()
+void AG_ArmoredTransport_Scripting_C::DisableAllPreparations()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_BreachingEquipmentBagGenerator_2_K2Node_ActorBoundEvent_2_SBZBagPickedUp__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DisableAllPreparations", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_BreachingEquipmentBagGenerator_Doohickey2_K2Node_ActorBoundEvent_32_SBZBagPickedUp__DelegateSignature
-// (BlueprintEvent)
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.ContinueDropTrap
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_BreachingEquipmentBagGenerator_Doohickey2_K2Node_ActorBoundEvent_32_SBZBagPickedUp__DelegateSignature()
+void AG_ArmoredTransport_Scripting_C::ContinueDropTrap()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_BreachingEquipmentBagGenerator_Doohickey2_K2Node_ActorBoundEvent_32_SBZBagPickedUp__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ContinueDropTrap", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_BreachingEquipmentBagGenerator_Doohickey3_K2Node_ActorBoundEvent_46_SBZBagPickedUp__DelegateSignature
-// (BlueprintEvent)
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.ContinueDropDevice
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_BreachingEquipmentBagGenerator_Doohickey3_K2Node_ActorBoundEvent_46_SBZBagPickedUp__DelegateSignature()
+void AG_ArmoredTransport_Scripting_C::ContinueDropDevice()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_BreachingEquipmentBagGenerator_Doohickey3_K2Node_ActorBoundEvent_46_SBZBagPickedUp__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ContinueDropDevice", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_EMPTrap_TEST_4_K2Node_ActorBoundEvent_89_OnCompleteInteraction__DelegateSignature
-// (BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_EMPTrap_TEST_4_K2Node_ActorBoundEvent_89_OnCompleteInteraction__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_EMPTrap_TEST_4_K2Node_ActorBoundEvent_89_OnCompleteInteraction__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_10_K2Node_ActorBoundEvent_108_SBZLootedSignature__DelegateSignature
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineFlyInRight_K2Node_ActorBoundEvent_66_SBZSplineOnEndReached__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_10_K2Node_ActorBoundEvent_108_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_10_K2Node_ActorBoundEvent_108_SBZLootedSignature__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_10_K2Node_ActorBoundEvent_108_SBZLootedSignature__DelegateSignature Parms{};
-
-	Parms.InstantLoot = InstantLoot;
-	Parms.TakenByPlayer = TakenByPlayer;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_11_K2Node_ActorBoundEvent_105_SBZLootedSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_11_K2Node_ActorBoundEvent_105_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_11_K2Node_ActorBoundEvent_105_SBZLootedSignature__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_11_K2Node_ActorBoundEvent_105_SBZLootedSignature__DelegateSignature Parms{};
-
-	Parms.InstantLoot = InstantLoot;
-	Parms.TakenByPlayer = TakenByPlayer;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_12_K2Node_ActorBoundEvent_107_SBZLootedSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_12_K2Node_ActorBoundEvent_107_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_12_K2Node_ActorBoundEvent_107_SBZLootedSignature__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_12_K2Node_ActorBoundEvent_107_SBZLootedSignature__DelegateSignature Parms{};
-
-	Parms.InstantLoot = InstantLoot;
-	Parms.TakenByPlayer = TakenByPlayer;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_18_K2Node_ActorBoundEvent_100_SBZLootedSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_18_K2Node_ActorBoundEvent_100_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_18_K2Node_ActorBoundEvent_100_SBZLootedSignature__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_18_K2Node_ActorBoundEvent_100_SBZLootedSignature__DelegateSignature Parms{};
-
-	Parms.InstantLoot = InstantLoot;
-	Parms.TakenByPlayer = TakenByPlayer;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_19_K2Node_ActorBoundEvent_102_SBZLootedSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_19_K2Node_ActorBoundEvent_102_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_19_K2Node_ActorBoundEvent_102_SBZLootedSignature__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_19_K2Node_ActorBoundEvent_102_SBZLootedSignature__DelegateSignature Parms{};
-
-	Parms.InstantLoot = InstantLoot;
-	Parms.TakenByPlayer = TakenByPlayer;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_20_K2Node_ActorBoundEvent_103_SBZLootedSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_20_K2Node_ActorBoundEvent_103_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_20_K2Node_ActorBoundEvent_103_SBZLootedSignature__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_20_K2Node_ActorBoundEvent_103_SBZLootedSignature__DelegateSignature Parms{};
-
-	Parms.InstantLoot = InstantLoot;
-	Parms.TakenByPlayer = TakenByPlayer;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_21_K2Node_ActorBoundEvent_97_SBZLootedSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_21_K2Node_ActorBoundEvent_97_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_21_K2Node_ActorBoundEvent_97_SBZLootedSignature__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_21_K2Node_ActorBoundEvent_97_SBZLootedSignature__DelegateSignature Parms{};
-
-	Parms.InstantLoot = InstantLoot;
-	Parms.TakenByPlayer = TakenByPlayer;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_22_K2Node_ActorBoundEvent_104_SBZLootedSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_22_K2Node_ActorBoundEvent_104_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_22_K2Node_ActorBoundEvent_104_SBZLootedSignature__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_22_K2Node_ActorBoundEvent_104_SBZLootedSignature__DelegateSignature Parms{};
-
-	Parms.InstantLoot = InstantLoot;
-	Parms.TakenByPlayer = TakenByPlayer;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_24_K2Node_ActorBoundEvent_101_SBZLootedSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_24_K2Node_ActorBoundEvent_101_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_24_K2Node_ActorBoundEvent_101_SBZLootedSignature__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_24_K2Node_ActorBoundEvent_101_SBZLootedSignature__DelegateSignature Parms{};
-
-	Parms.InstantLoot = InstantLoot;
-	Parms.TakenByPlayer = TakenByPlayer;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_5_K2Node_ActorBoundEvent_110_SBZLootedSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_5_K2Node_ActorBoundEvent_110_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_5_K2Node_ActorBoundEvent_110_SBZLootedSignature__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_5_K2Node_ActorBoundEvent_110_SBZLootedSignature__DelegateSignature Parms{};
-
-	Parms.InstantLoot = InstantLoot;
-	Parms.TakenByPlayer = TakenByPlayer;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_6_K2Node_ActorBoundEvent_109_SBZLootedSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_6_K2Node_ActorBoundEvent_109_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_6_K2Node_ActorBoundEvent_109_SBZLootedSignature__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_6_K2Node_ActorBoundEvent_109_SBZLootedSignature__DelegateSignature Parms{};
-
-	Parms.InstantLoot = InstantLoot;
-	Parms.TakenByPlayer = TakenByPlayer;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_9_K2Node_ActorBoundEvent_106_SBZLootedSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_9_K2Node_ActorBoundEvent_106_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_9_K2Node_ActorBoundEvent_106_SBZLootedSignature__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_9_K2Node_ActorBoundEvent_106_SBZLootedSignature__DelegateSignature Parms{};
-
-	Parms.InstantLoot = InstantLoot;
-	Parms.TakenByPlayer = TakenByPlayer;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MovingForklift_2_K2Node_ActorBoundEvent_1_SBZWheeledVehicleOnSplineEntered__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZWheeledVehicle*               Vehicle                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_MovingForklift_2_K2Node_ActorBoundEvent_1_SBZWheeledVehicleOnSplineEntered__DelegateSignature(class ASBZWheeledVehicle* Vehicle, class ASBZSpline* Spline)
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineFlyInRight_K2Node_ActorBoundEvent_66_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineFlyInRight_K2Node_ActorBoundEvent_66_SBZSplineOnEndReached__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_MovingForklift_2_K2Node_ActorBoundEvent_1_SBZWheeledVehicleOnSplineEntered__DelegateSignature");
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineFlyInRight_K2Node_ActorBoundEvent_66_SBZSplineOnEndReached__DelegateSignature Parms{};
 
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MovingForklift_2_K2Node_ActorBoundEvent_1_SBZWheeledVehicleOnSplineEntered__DelegateSignature Parms{};
-
-	Parms.Vehicle = Vehicle;
 	Parms.Spline = Spline;
+	Parms.Actor = Actor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MovingForklift_2_K2Node_ActorBoundEvent_59_SBZOnInteractionBinaryStateDelegate__DelegateSignature
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineFlyIn_K2Node_ActorBoundEvent_31_SBZSplineOnEndReached__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineFlyIn_K2Node_ActorBoundEvent_31_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineFlyIn_K2Node_ActorBoundEvent_31_SBZSplineOnEndReached__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineFlyIn_K2Node_ActorBoundEvent_31_SBZSplineOnEndReached__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineEscortToRamp_K2Node_ActorBoundEvent_21_SBZSplineOnEndReached__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineEscortToRamp_K2Node_ActorBoundEvent_21_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineEscortToRamp_K2Node_ActorBoundEvent_21_SBZSplineOnEndReached__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineEscortToRamp_K2Node_ActorBoundEvent_21_SBZSplineOnEndReached__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_Fail_K2Node_ActorBoundEvent_83_SBZSplineOnEndReached__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_Fail_K2Node_ActorBoundEvent_83_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_Fail_K2Node_ActorBoundEvent_83_SBZSplineOnEndReached__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_Fail_K2Node_ActorBoundEvent_83_SBZSplineOnEndReached__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_Fail_K2Node_ActorBoundEvent_14_SBZSplineOnEnter__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_Fail_K2Node_ActorBoundEvent_14_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_Fail_K2Node_ActorBoundEvent_14_SBZSplineOnEnter__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_Fail_K2Node_ActorBoundEvent_14_SBZSplineOnEnter__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortToFork_13_K2Node_ActorBoundEvent_81_SBZSplineOnEndReached__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortToFork_13_K2Node_ActorBoundEvent_81_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortToFork_13_K2Node_ActorBoundEvent_81_SBZSplineOnEndReached__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortToFork_13_K2Node_ActorBoundEvent_81_SBZSplineOnEndReached__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight3_K2Node_ActorBoundEvent_91_SBZSplineOnEnter__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight3_K2Node_ActorBoundEvent_91_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight3_K2Node_ActorBoundEvent_91_SBZSplineOnEnter__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight3_K2Node_ActorBoundEvent_91_SBZSplineOnEnter__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight2_K2Node_ActorBoundEvent_90_SBZSplineOnEndReached__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight2_K2Node_ActorBoundEvent_90_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight2_K2Node_ActorBoundEvent_90_SBZSplineOnEndReached__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight2_K2Node_ActorBoundEvent_90_SBZSplineOnEndReached__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight2_end_K2Node_ActorBoundEvent_22_SBZSplineOnEndReached__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight2_end_K2Node_ActorBoundEvent_22_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight2_end_K2Node_ActorBoundEvent_22_SBZSplineOnEndReached__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight2_end_K2Node_ActorBoundEvent_22_SBZSplineOnEndReached__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight1_K2Node_ActorBoundEvent_49_SBZSplineOnEndReached__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight1_K2Node_ActorBoundEvent_49_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight1_K2Node_ActorBoundEvent_49_SBZSplineOnEndReached__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight1_K2Node_ActorBoundEvent_49_SBZSplineOnEndReached__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight1_End_K2Node_ActorBoundEvent_23_SBZSplineOnEndReached__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight1_End_K2Node_ActorBoundEvent_23_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight1_End_K2Node_ActorBoundEvent_23_SBZSplineOnEndReached__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight1_End_K2Node_ActorBoundEvent_23_SBZSplineOnEndReached__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRamp_K2Node_ActorBoundEvent_94_SBZSplineOnEndReached__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRamp_K2Node_ActorBoundEvent_94_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRamp_K2Node_ActorBoundEvent_94_SBZSplineOnEndReached__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRamp_K2Node_ActorBoundEvent_94_SBZSplineOnEndReached__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft3_K2Node_ActorBoundEvent_92_SBZSplineOnEnter__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft3_K2Node_ActorBoundEvent_92_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft3_K2Node_ActorBoundEvent_92_SBZSplineOnEnter__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft3_K2Node_ActorBoundEvent_92_SBZSplineOnEnter__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_SoftEnd_K2Node_ActorBoundEvent_33_SBZSplineOnEnter__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_SoftEnd_K2Node_ActorBoundEvent_33_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_SoftEnd_K2Node_ActorBoundEvent_33_SBZSplineOnEnter__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_SoftEnd_K2Node_ActorBoundEvent_33_SBZSplineOnEnter__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_K2Node_ActorBoundEvent_88_SBZSplineOnEndReached__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_K2Node_ActorBoundEvent_88_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_K2Node_ActorBoundEvent_88_SBZSplineOnEndReached__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_K2Node_ActorBoundEvent_88_SBZSplineOnEndReached__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_End_K2Node_ActorBoundEvent_36_SBZSplineOnEndReached__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_End_K2Node_ActorBoundEvent_36_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_End_K2Node_ActorBoundEvent_36_SBZSplineOnEndReached__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_End_K2Node_ActorBoundEvent_36_SBZSplineOnEndReached__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_K2Node_ActorBoundEvent_87_SBZSplineOnEnter__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_K2Node_ActorBoundEvent_87_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_K2Node_ActorBoundEvent_87_SBZSplineOnEnter__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_K2Node_ActorBoundEvent_87_SBZSplineOnEnter__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_K2Node_ActorBoundEvent_20_SBZSplineOnEndReached__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_K2Node_ActorBoundEvent_20_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_K2Node_ActorBoundEvent_20_SBZSplineOnEndReached__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_K2Node_ActorBoundEvent_20_SBZSplineOnEndReached__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_End_K2Node_ActorBoundEvent_7_SBZSplineOnEndReached__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_End_K2Node_ActorBoundEvent_7_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_End_K2Node_ActorBoundEvent_7_SBZSplineOnEndReached__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_End_K2Node_ActorBoundEvent_7_SBZSplineOnEndReached__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrivalLong_K2Node_ActorBoundEvent_62_SBZSplineOnEnter__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrivalLong_K2Node_ActorBoundEvent_62_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrivalLong_K2Node_ActorBoundEvent_62_SBZSplineOnEnter__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrivalLong_K2Node_ActorBoundEvent_62_SBZSplineOnEnter__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrivalLong_End_K2Node_ActorBoundEvent_29_SBZSplineOnEndReached__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrivalLong_End_K2Node_ActorBoundEvent_29_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrivalLong_End_K2Node_ActorBoundEvent_29_SBZSplineOnEndReached__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrivalLong_End_K2Node_ActorBoundEvent_29_SBZSplineOnEndReached__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrival_K2Node_ActorBoundEvent_68_SBZSplineOnEndReached__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrival_K2Node_ActorBoundEvent_68_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrival_K2Node_ActorBoundEvent_68_SBZSplineOnEndReached__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrival_K2Node_ActorBoundEvent_68_SBZSplineOnEndReached__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_K2Node_ActorBoundEvent_50_SBZSplineOnEnter__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_K2Node_ActorBoundEvent_50_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_K2Node_ActorBoundEvent_50_SBZSplineOnEnter__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_K2Node_ActorBoundEvent_50_SBZSplineOnEnter__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_K2Node_ActorBoundEvent_13_SBZSplineOnEndReached__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_K2Node_ActorBoundEvent_13_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_K2Node_ActorBoundEvent_13_SBZSplineOnEndReached__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_K2Node_ActorBoundEvent_13_SBZSplineOnEndReached__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_End_K2Node_ActorBoundEvent_26_SBZSplineOnEndReached__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_End_K2Node_ActorBoundEvent_26_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_End_K2Node_ActorBoundEvent_26_SBZSplineOnEndReached__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_End_K2Node_ActorBoundEvent_26_SBZSplineOnEndReached__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_PlayerTeleport_K2Node_ActorBoundEvent_64_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_PlayerTeleport_K2Node_ActorBoundEvent_64_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_PlayerTeleport_K2Node_ActorBoundEvent_64_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_PlayerTeleport_K2Node_ActorBoundEvent_64_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_EveryPlayerByScaffolding_K2Node_ActorBoundEvent_17_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_EveryPlayerByScaffolding_K2Node_ActorBoundEvent_17_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_EveryPlayerByScaffolding_K2Node_ActorBoundEvent_17_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_EveryPlayerByScaffolding_K2Node_ActorBoundEvent_17_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_AtLeastOnePlayerByScaffolding_K2Node_ActorBoundEvent_24_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_AtLeastOnePlayerByScaffolding_K2Node_ActorBoundEvent_24_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_AtLeastOnePlayerByScaffolding_K2Node_ActorBoundEvent_24_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_AtLeastOnePlayerByScaffolding_K2Node_ActorBoundEvent_24_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_48_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_48_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_48_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_48_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_38_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_38_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_38_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_38_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_30_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_30_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_30_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_30_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume2_4_K2Node_ActorBoundEvent_58_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume2_4_K2Node_ActorBoundEvent_58_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume2_4_K2Node_ActorBoundEvent_58_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume2_4_K2Node_ActorBoundEvent_58_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearEscape1_0_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearEscape1_0_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearEscape1_0_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearEscape1_0_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerEscapeVolume1_K2Node_ActorBoundEvent_111_SBZEscapeTimerDelegate__DelegateSignature
+// (BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZPlayerEscapeVolume1_K2Node_ActorBoundEvent_111_SBZEscapeTimerDelegate__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZPlayerEscapeVolume1_K2Node_ActorBoundEvent_111_SBZEscapeTimerDelegate__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZObjective_SecureTheLoot_K2Node_ActorBoundEvent_53_SBZOnObjective__DelegateSignature
+// (BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZObjective_SecureTheLoot_K2Node_ActorBoundEvent_53_SBZOnObjective__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZObjective_SecureTheLoot_K2Node_ActorBoundEvent_53_SBZOnObjective__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZObjective_RoadSigns_K2Node_ActorBoundEvent_10_SBZOnObjective__DelegateSignature
+// (BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZObjective_RoadSigns_K2Node_ActorBoundEvent_10_SBZOnObjective__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZObjective_RoadSigns_K2Node_ActorBoundEvent_10_SBZOnObjective__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZObjective_OverrideDoors_K2Node_ActorBoundEvent_24_SBZOnObjective__DelegateSignature
+// (BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZObjective_OverrideDoors_K2Node_ActorBoundEvent_24_SBZOnObjective__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZObjective_OverrideDoors_K2Node_ActorBoundEvent_24_SBZOnObjective__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZObjective_Escort_K2Node_ActorBoundEvent_61_SBZOnObjective__DelegateSignature
+// (BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZObjective_Escort_K2Node_ActorBoundEvent_61_SBZOnObjective__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZObjective_Escort_K2Node_ActorBoundEvent_61_SBZOnObjective__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZObjective_Ambush_K2Node_ActorBoundEvent_15_SBZOnObjective__DelegateSignature
+// (BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZObjective_Ambush_K2Node_ActorBoundEvent_15_SBZOnObjective__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZObjective_Ambush_K2Node_ActorBoundEvent_15_SBZOnObjective__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_TransportHack_K2Node_ActorBoundEvent_80_SBZProgressionReachedDelegate__DelegateSignature
 // (BlueprintAuthorityOnly, BlueprintEvent)
 // Parameters:
-// bool                                    BNewState                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   ProgressionIndexReached                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_MovingForklift_2_K2Node_ActorBoundEvent_59_SBZOnInteractionBinaryStateDelegate__DelegateSignature(bool BNewState)
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_TransportHack_K2Node_ActorBoundEvent_80_SBZProgressionReachedDelegate__DelegateSignature(int32 ProgressionIndexReached)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_TransportHack_K2Node_ActorBoundEvent_80_SBZProgressionReachedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_MovingForklift_2_K2Node_ActorBoundEvent_59_SBZOnInteractionBinaryStateDelegate__DelegateSignature");
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_TransportHack_K2Node_ActorBoundEvent_80_SBZProgressionReachedDelegate__DelegateSignature Parms{};
 
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MovingForklift_2_K2Node_ActorBoundEvent_59_SBZOnInteractionBinaryStateDelegate__DelegateSignature Parms{};
-
-	Parms.BNewState = BNewState;
+	Parms.ProgressionIndexReached = ProgressionIndexReached;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_PocketDrill_Hatch_K2Node_ActorBoundEvent_18_SBZBreachingEquipmentDelegate__DelegateSignature
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_TransportHack_K2Node_ActorBoundEvent_79_SBZTimerDelegate__DelegateSignature
 // (BlueprintAuthorityOnly, BlueprintEvent)
 
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_PocketDrill_Hatch_K2Node_ActorBoundEvent_18_SBZBreachingEquipmentDelegate__DelegateSignature()
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_TransportHack_K2Node_ActorBoundEvent_79_SBZTimerDelegate__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_PocketDrill_Hatch_K2Node_ActorBoundEvent_18_SBZBreachingEquipmentDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_TransportHack_K2Node_ActorBoundEvent_79_SBZTimerDelegate__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_PocketDrill_Hatch_K2Node_ActorBoundEvent_19_SBZBreachingEquipmentDelegate__DelegateSignature
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_Preparations_K2Node_ActorBoundEvent_6_SBZTimerDelegate__DelegateSignature
 // (BlueprintAuthorityOnly, BlueprintEvent)
 
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_PocketDrill_Hatch_K2Node_ActorBoundEvent_19_SBZBreachingEquipmentDelegate__DelegateSignature()
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_Preparations_K2Node_ActorBoundEvent_6_SBZTimerDelegate__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_PocketDrill_Hatch_K2Node_ActorBoundEvent_19_SBZBreachingEquipmentDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_Preparations_K2Node_ActorBoundEvent_6_SBZTimerDelegate__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_Remote_steering_device_2_K2Node_ActorBoundEvent_37_On_Player_Fix_Device__DelegateSignature
-// (BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_Remote_steering_device_2_K2Node_ActorBoundEvent_37_On_Player_Fix_Device__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_Remote_steering_device_2_K2Node_ActorBoundEvent_37_On_Player_Fix_Device__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_Remote_steering_device_2_K2Node_ActorBoundEvent_3_On_Activate_Hack__DelegateSignature
-// (BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_Remote_steering_device_2_K2Node_ActorBoundEvent_3_On_Activate_Hack__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_Remote_steering_device_2_K2Node_ActorBoundEvent_3_On_Activate_Hack__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_Remote_steering_device_2_K2Node_ActorBoundEvent_8_On_Start_Escort__DelegateSignature
-// (BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_Remote_steering_device_2_K2Node_ActorBoundEvent_8_On_Start_Escort__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_Remote_steering_device_2_K2Node_ActorBoundEvent_8_On_Start_Escort__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint2_K2Node_ActorBoundEvent_47_SBZSabotagePointDelegate__DelegateSignature
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_Preparations_K2Node_ActorBoundEvent_11_SBZProgressionReachedDelegate__DelegateSignature
 // (BlueprintAuthorityOnly, BlueprintEvent)
 // Parameters:
-// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   ProgressionIndexReached                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint2_K2Node_ActorBoundEvent_47_SBZSabotagePointDelegate__DelegateSignature(bool bSabotaged)
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_Preparations_K2Node_ActorBoundEvent_11_SBZProgressionReachedDelegate__DelegateSignature(int32 ProgressionIndexReached)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_Preparations_K2Node_ActorBoundEvent_11_SBZProgressionReachedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint2_K2Node_ActorBoundEvent_47_SBZSabotagePointDelegate__DelegateSignature");
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_Preparations_K2Node_ActorBoundEvent_11_SBZProgressionReachedDelegate__DelegateSignature Parms{};
 
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint2_K2Node_ActorBoundEvent_47_SBZSabotagePointDelegate__DelegateSignature Parms{};
-
-	Parms.bSabotaged = bSabotaged;
+	Parms.ProgressionIndexReached = ProgressionIndexReached;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate1_2_K2Node_ActorBoundEvent_74_SBZSabotagePointDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate1_2_K2Node_ActorBoundEvent_74_SBZSabotagePointDelegate__DelegateSignature(bool bSabotaged)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate1_2_K2Node_ActorBoundEvent_74_SBZSabotagePointDelegate__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate1_2_K2Node_ActorBoundEvent_74_SBZSabotagePointDelegate__DelegateSignature Parms{};
-
-	Parms.bSabotaged = bSabotaged;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate1_3_K2Node_ActorBoundEvent_75_SBZSabotagePointDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate1_3_K2Node_ActorBoundEvent_75_SBZSabotagePointDelegate__DelegateSignature(bool bSabotaged)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate1_3_K2Node_ActorBoundEvent_75_SBZSabotagePointDelegate__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate1_3_K2Node_ActorBoundEvent_75_SBZSabotagePointDelegate__DelegateSignature Parms{};
-
-	Parms.bSabotaged = bSabotaged;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate2_2_K2Node_ActorBoundEvent_96_SBZSabotagePointDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate2_2_K2Node_ActorBoundEvent_96_SBZSabotagePointDelegate__DelegateSignature(bool bSabotaged)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate2_2_K2Node_ActorBoundEvent_96_SBZSabotagePointDelegate__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate2_2_K2Node_ActorBoundEvent_96_SBZSabotagePointDelegate__DelegateSignature Parms{};
-
-	Parms.bSabotaged = bSabotaged;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate2_K2Node_ActorBoundEvent_71_SBZSabotagePointDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate2_K2Node_ActorBoundEvent_71_SBZSabotagePointDelegate__DelegateSignature(bool bSabotaged)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate2_K2Node_ActorBoundEvent_71_SBZSabotagePointDelegate__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate2_K2Node_ActorBoundEvent_71_SBZSabotagePointDelegate__DelegateSignature Parms{};
-
-	Parms.bSabotaged = bSabotaged;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_Signalflare_2_K2Node_ActorBoundEvent_35_OnInteracted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_Signalflare_2_K2Node_ActorBoundEvent_35_OnInteracted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_Signalflare_2_K2Node_ActorBoundEvent_35_OnInteracted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_StaticInteraction_BollardControll1_K2Node_ActorBoundEvent_0_OnTurnOff__DelegateSignature
-// (BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_StaticInteraction_BollardControll1_K2Node_ActorBoundEvent_0_OnTurnOff__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_StaticInteraction_BollardControll1_K2Node_ActorBoundEvent_0_OnTurnOff__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_StaticInteraction_GateBox1_2_K2Node_ActorBoundEvent_65_OnTurnOff__DelegateSignature
-// (BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_StaticInteraction_GateBox1_2_K2Node_ActorBoundEvent_65_OnTurnOff__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_StaticInteraction_GateBox1_2_K2Node_ActorBoundEvent_65_OnTurnOff__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_StaticInteraction_GateBox1_3_K2Node_ActorBoundEvent_63_OnTurnOff__DelegateSignature
-// (BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_StaticInteraction_GateBox1_3_K2Node_ActorBoundEvent_63_OnTurnOff__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_StaticInteraction_GateBox1_3_K2Node_ActorBoundEvent_63_OnTurnOff__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_StaticInteraction_GateBox2_1_K2Node_ActorBoundEvent_93_OnTurnOff__DelegateSignature
-// (BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_StaticInteraction_GateBox2_1_K2Node_ActorBoundEvent_93_OnTurnOff__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_StaticInteraction_GateBox2_1_K2Node_ActorBoundEvent_93_OnTurnOff__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_StaticInteraction_GateBox2_2_K2Node_ActorBoundEvent_95_OnTurnOff__DelegateSignature
-// (BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_StaticInteraction_GateBox2_2_K2Node_ActorBoundEvent_95_OnTurnOff__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_StaticInteraction_GateBox2_2_K2Node_ActorBoundEvent_95_OnTurnOff__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location1_2_K2Node_ActorBoundEvent_42_Wheelramp_is_removed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location1_2_K2Node_ActorBoundEvent_42_Wheelramp_is_removed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location1_2_K2Node_ActorBoundEvent_42_Wheelramp_is_removed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location1_2_K2Node_ActorBoundEvent_56_Wheelramp_is_placed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location1_2_K2Node_ActorBoundEvent_56_Wheelramp_is_placed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location1_2_K2Node_ActorBoundEvent_56_Wheelramp_is_placed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location2_3_K2Node_ActorBoundEvent_41_Wheelramp_is_removed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location2_3_K2Node_ActorBoundEvent_41_Wheelramp_is_removed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location2_3_K2Node_ActorBoundEvent_41_Wheelramp_is_removed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location2_3_K2Node_ActorBoundEvent_55_Wheelramp_is_placed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location2_3_K2Node_ActorBoundEvent_55_Wheelramp_is_placed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location2_3_K2Node_ActorBoundEvent_55_Wheelramp_is_placed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location3_5_K2Node_ActorBoundEvent_44_Wheelramp_is_removed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location3_5_K2Node_ActorBoundEvent_44_Wheelramp_is_removed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location3_5_K2Node_ActorBoundEvent_44_Wheelramp_is_removed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location3_5_K2Node_ActorBoundEvent_52_Wheelramp_is_placed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location3_5_K2Node_ActorBoundEvent_52_Wheelramp_is_placed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location3_5_K2Node_ActorBoundEvent_52_Wheelramp_is_placed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location4_4_K2Node_ActorBoundEvent_45_Wheelramp_is_placed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location4_4_K2Node_ActorBoundEvent_45_Wheelramp_is_placed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location4_4_K2Node_ActorBoundEvent_45_Wheelramp_is_placed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location4_4_K2Node_ActorBoundEvent_57_Wheelramp_is_removed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location4_4_K2Node_ActorBoundEvent_57_Wheelramp_is_removed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location4_4_K2Node_ActorBoundEvent_57_Wheelramp_is_removed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup1_K2Node_ActorBoundEvent_118_Wheelramp_is_removed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup1_K2Node_ActorBoundEvent_118_Wheelramp_is_removed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup1_K2Node_ActorBoundEvent_118_Wheelramp_is_removed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup2_K2Node_ActorBoundEvent_114_Wheelramp_is_removed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup2_K2Node_ActorBoundEvent_114_Wheelramp_is_removed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup2_K2Node_ActorBoundEvent_114_Wheelramp_is_removed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup3_K2Node_ActorBoundEvent_117_Wheelramp_is_removed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup3_K2Node_ActorBoundEvent_117_Wheelramp_is_removed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup3_K2Node_ActorBoundEvent_117_Wheelramp_is_removed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup4_K2Node_ActorBoundEvent_113_Wheelramp_is_removed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup4_K2Node_ActorBoundEvent_113_Wheelramp_is_removed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup4_K2Node_ActorBoundEvent_113_Wheelramp_is_removed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup5_K2Node_ActorBoundEvent_119_Wheelramp_is_removed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup5_K2Node_ActorBoundEvent_119_Wheelramp_is_removed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup5_K2Node_ActorBoundEvent_119_Wheelramp_is_removed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup6_K2Node_ActorBoundEvent_120_Wheelramp_is_removed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup6_K2Node_ActorBoundEvent_120_Wheelramp_is_removed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup6_K2Node_ActorBoundEvent_120_Wheelramp_is_removed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup7_K2Node_ActorBoundEvent_121_Wheelramp_is_removed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup7_K2Node_ActorBoundEvent_121_Wheelramp_is_removed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup7_K2Node_ActorBoundEvent_121_Wheelramp_is_removed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup8_K2Node_ActorBoundEvent_122_Wheelramp_is_removed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup8_K2Node_ActorBoundEvent_122_Wheelramp_is_removed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup8_K2Node_ActorBoundEvent_122_Wheelramp_is_removed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_PickupPP1_K2Node_ActorBoundEvent_116_Wheelramp_is_removed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_PickupPP1_K2Node_ActorBoundEvent_116_Wheelramp_is_removed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_PickupPP1_K2Node_ActorBoundEvent_116_Wheelramp_is_removed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_PickupPP2_K2Node_ActorBoundEvent_115_Wheelramp_is_removed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_PickupPP2_K2Node_ActorBoundEvent_115_Wheelramp_is_removed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_PickupPP2_K2Node_ActorBoundEvent_115_Wheelramp_is_removed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Chute_K2Node_ActorBoundEvent_54_SBZBagEnteredDelegate__DelegateSignature
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline4_K2Node_ActorBoundEvent_77_SBZBagEnteredDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Chute_K2Node_ActorBoundEvent_54_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline4_K2Node_ActorBoundEvent_77_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline4_K2Node_ActorBoundEvent_77_SBZBagEnteredDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Chute_K2Node_ActorBoundEvent_54_SBZBagEnteredDelegate__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Chute_K2Node_ActorBoundEvent_54_SBZBagEnteredDelegate__DelegateSignature Parms{};
-
-	Parms.Volume = Volume;
-	Parms.Bag = Bag;
-	Parms.Handle = std::move(Handle);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Doohickey2_K2Node_ActorBoundEvent_69_SBZBagVolumeComplete__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Doohickey2_K2Node_ActorBoundEvent_69_SBZBagVolumeComplete__DelegateSignature(class ASBZBagTriggerVolume* Volume)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Doohickey2_K2Node_ActorBoundEvent_69_SBZBagVolumeComplete__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Doohickey2_K2Node_ActorBoundEvent_69_SBZBagVolumeComplete__DelegateSignature Parms{};
-
-	Parms.Volume = Volume;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HelicopterLeft_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HelicopterLeft_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HelicopterLeft_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HelicopterLeft_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature Parms{};
-
-	Parms.Volume = Volume;
-	Parms.Bag = Bag;
-	Parms.Handle = std::move(Handle);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HelicopterRight_K2Node_ActorBoundEvent_112_SBZBagEnteredDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HelicopterRight_K2Node_ActorBoundEvent_112_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HelicopterRight_K2Node_ActorBoundEvent_112_SBZBagEnteredDelegate__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HelicopterRight_K2Node_ActorBoundEvent_112_SBZBagEnteredDelegate__DelegateSignature Parms{};
-
-	Parms.Volume = Volume;
-	Parms.Bag = Bag;
-	Parms.Handle = std::move(Handle);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliLeftRespawn2_K2Node_ActorBoundEvent_9_SBZBagCountChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   Overlapping                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Secured                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliLeftRespawn2_K2Node_ActorBoundEvent_9_SBZBagCountChangedDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, int32 Overlapping, int32 Secured)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliLeftRespawn2_K2Node_ActorBoundEvent_9_SBZBagCountChangedDelegate__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliLeftRespawn2_K2Node_ActorBoundEvent_9_SBZBagCountChangedDelegate__DelegateSignature Parms{};
-
-	Parms.Volume = Volume;
-	Parms.Overlapping = Overlapping;
-	Parms.Secured = Secured;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliLeftRespawn_K2Node_ActorBoundEvent_25_SBZBagCountChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   Overlapping                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Secured                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliLeftRespawn_K2Node_ActorBoundEvent_25_SBZBagCountChangedDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, int32 Overlapping, int32 Secured)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliLeftRespawn_K2Node_ActorBoundEvent_25_SBZBagCountChangedDelegate__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliLeftRespawn_K2Node_ActorBoundEvent_25_SBZBagCountChangedDelegate__DelegateSignature Parms{};
-
-	Parms.Volume = Volume;
-	Parms.Overlapping = Overlapping;
-	Parms.Secured = Secured;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliRightRespawn_K2Node_ActorBoundEvent_4_SBZBagCountChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   Overlapping                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Secured                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliRightRespawn_K2Node_ActorBoundEvent_4_SBZBagCountChangedDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, int32 Overlapping, int32 Secured)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliRightRespawn_K2Node_ActorBoundEvent_4_SBZBagCountChangedDelegate__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliRightRespawn_K2Node_ActorBoundEvent_4_SBZBagCountChangedDelegate__DelegateSignature Parms{};
-
-	Parms.Volume = Volume;
-	Parms.Overlapping = Overlapping;
-	Parms.Secured = Secured;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Net_K2Node_ActorBoundEvent_0_SBZBagVolumeComplete__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Net_K2Node_ActorBoundEvent_0_SBZBagVolumeComplete__DelegateSignature(class ASBZBagTriggerVolume* Volume)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Net_K2Node_ActorBoundEvent_0_SBZBagVolumeComplete__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Net_K2Node_ActorBoundEvent_0_SBZBagVolumeComplete__DelegateSignature Parms{};
-
-	Parms.Volume = Volume;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Winch_K2Node_ActorBoundEvent_27_SBZBagVolumeComplete__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Winch_K2Node_ActorBoundEvent_27_SBZBagVolumeComplete__DelegateSignature(class ASBZBagTriggerVolume* Volume)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Winch_K2Node_ActorBoundEvent_27_SBZBagVolumeComplete__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Winch_K2Node_ActorBoundEvent_27_SBZBagVolumeComplete__DelegateSignature Parms{};
-
-	Parms.Volume = Volume;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_70_SBZBagEnteredDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_70_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_70_SBZBagEnteredDelegate__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_70_SBZBagEnteredDelegate__DelegateSignature Parms{};
-
-	Parms.Volume = Volume;
-	Parms.Bag = Bag;
-	Parms.Handle = std::move(Handle);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_73_SBZBagEnteredDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_73_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_73_SBZBagEnteredDelegate__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_73_SBZBagEnteredDelegate__DelegateSignature Parms{};
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline4_K2Node_ActorBoundEvent_77_SBZBagEnteredDelegate__DelegateSignature Parms{};
 
 	Parms.Volume = Volume;
 	Parms.Bag = Bag;
@@ -1297,10 +1203,8 @@ void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZBa
 
 void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline3_K2Node_ActorBoundEvent_76_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline3_K2Node_ActorBoundEvent_76_SBZBagEnteredDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline3_K2Node_ActorBoundEvent_76_SBZBagEnteredDelegate__DelegateSignature", FnName));
 
 	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline3_K2Node_ActorBoundEvent_76_SBZBagEnteredDelegate__DelegateSignature Parms{};
 
@@ -1312,21 +1216,19 @@ void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZBa
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline4_K2Node_ActorBoundEvent_77_SBZBagEnteredDelegate__DelegateSignature
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_73_SBZBagEnteredDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline4_K2Node_ActorBoundEvent_77_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_73_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_73_SBZBagEnteredDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline4_K2Node_ActorBoundEvent_77_SBZBagEnteredDelegate__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline4_K2Node_ActorBoundEvent_77_SBZBagEnteredDelegate__DelegateSignature Parms{};
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_73_SBZBagEnteredDelegate__DelegateSignature Parms{};
 
 	Parms.Volume = Volume;
 	Parms.Bag = Bag;
@@ -1336,1301 +1238,1105 @@ void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZBa
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_Preparations_K2Node_ActorBoundEvent_11_SBZProgressionReachedDelegate__DelegateSignature
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_70_SBZBagEnteredDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_70_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_70_SBZBagEnteredDelegate__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_70_SBZBagEnteredDelegate__DelegateSignature Parms{};
+
+	Parms.Volume = Volume;
+	Parms.Bag = Bag;
+	Parms.Handle = std::move(Handle);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Winch_K2Node_ActorBoundEvent_27_SBZBagVolumeComplete__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Winch_K2Node_ActorBoundEvent_27_SBZBagVolumeComplete__DelegateSignature(class ASBZBagTriggerVolume* Volume)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Winch_K2Node_ActorBoundEvent_27_SBZBagVolumeComplete__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Winch_K2Node_ActorBoundEvent_27_SBZBagVolumeComplete__DelegateSignature Parms{};
+
+	Parms.Volume = Volume;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Net_K2Node_ActorBoundEvent_0_SBZBagVolumeComplete__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Net_K2Node_ActorBoundEvent_0_SBZBagVolumeComplete__DelegateSignature(class ASBZBagTriggerVolume* Volume)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Net_K2Node_ActorBoundEvent_0_SBZBagVolumeComplete__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Net_K2Node_ActorBoundEvent_0_SBZBagVolumeComplete__DelegateSignature Parms{};
+
+	Parms.Volume = Volume;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliRightRespawn_K2Node_ActorBoundEvent_4_SBZBagCountChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   Overlapping                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Secured                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliRightRespawn_K2Node_ActorBoundEvent_4_SBZBagCountChangedDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, int32 Overlapping, int32 Secured)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliRightRespawn_K2Node_ActorBoundEvent_4_SBZBagCountChangedDelegate__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliRightRespawn_K2Node_ActorBoundEvent_4_SBZBagCountChangedDelegate__DelegateSignature Parms{};
+
+	Parms.Volume = Volume;
+	Parms.Overlapping = Overlapping;
+	Parms.Secured = Secured;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliLeftRespawn_K2Node_ActorBoundEvent_25_SBZBagCountChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   Overlapping                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Secured                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliLeftRespawn_K2Node_ActorBoundEvent_25_SBZBagCountChangedDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, int32 Overlapping, int32 Secured)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliLeftRespawn_K2Node_ActorBoundEvent_25_SBZBagCountChangedDelegate__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliLeftRespawn_K2Node_ActorBoundEvent_25_SBZBagCountChangedDelegate__DelegateSignature Parms{};
+
+	Parms.Volume = Volume;
+	Parms.Overlapping = Overlapping;
+	Parms.Secured = Secured;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliLeftRespawn2_K2Node_ActorBoundEvent_9_SBZBagCountChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   Overlapping                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Secured                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliLeftRespawn2_K2Node_ActorBoundEvent_9_SBZBagCountChangedDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, int32 Overlapping, int32 Secured)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliLeftRespawn2_K2Node_ActorBoundEvent_9_SBZBagCountChangedDelegate__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliLeftRespawn2_K2Node_ActorBoundEvent_9_SBZBagCountChangedDelegate__DelegateSignature Parms{};
+
+	Parms.Volume = Volume;
+	Parms.Overlapping = Overlapping;
+	Parms.Secured = Secured;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HelicopterRight_K2Node_ActorBoundEvent_112_SBZBagEnteredDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HelicopterRight_K2Node_ActorBoundEvent_112_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HelicopterRight_K2Node_ActorBoundEvent_112_SBZBagEnteredDelegate__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HelicopterRight_K2Node_ActorBoundEvent_112_SBZBagEnteredDelegate__DelegateSignature Parms{};
+
+	Parms.Volume = Volume;
+	Parms.Bag = Bag;
+	Parms.Handle = std::move(Handle);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HelicopterLeft_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HelicopterLeft_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HelicopterLeft_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HelicopterLeft_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature Parms{};
+
+	Parms.Volume = Volume;
+	Parms.Bag = Bag;
+	Parms.Handle = std::move(Handle);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Doohickey2_K2Node_ActorBoundEvent_69_SBZBagVolumeComplete__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Doohickey2_K2Node_ActorBoundEvent_69_SBZBagVolumeComplete__DelegateSignature(class ASBZBagTriggerVolume* Volume)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Doohickey2_K2Node_ActorBoundEvent_69_SBZBagVolumeComplete__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Doohickey2_K2Node_ActorBoundEvent_69_SBZBagVolumeComplete__DelegateSignature Parms{};
+
+	Parms.Volume = Volume;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Chute_K2Node_ActorBoundEvent_54_SBZBagEnteredDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Chute_K2Node_ActorBoundEvent_54_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Chute_K2Node_ActorBoundEvent_54_SBZBagEnteredDelegate__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Chute_K2Node_ActorBoundEvent_54_SBZBagEnteredDelegate__DelegateSignature Parms{};
+
+	Parms.Volume = Volume;
+	Parms.Bag = Bag;
+	Parms.Handle = std::move(Handle);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_PickupPP2_K2Node_ActorBoundEvent_115_Wheelramp_is_removed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_PickupPP2_K2Node_ActorBoundEvent_115_Wheelramp_is_removed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_PickupPP2_K2Node_ActorBoundEvent_115_Wheelramp_is_removed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_PickupPP1_K2Node_ActorBoundEvent_116_Wheelramp_is_removed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_PickupPP1_K2Node_ActorBoundEvent_116_Wheelramp_is_removed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_PickupPP1_K2Node_ActorBoundEvent_116_Wheelramp_is_removed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup8_K2Node_ActorBoundEvent_122_Wheelramp_is_removed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup8_K2Node_ActorBoundEvent_122_Wheelramp_is_removed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup8_K2Node_ActorBoundEvent_122_Wheelramp_is_removed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup7_K2Node_ActorBoundEvent_121_Wheelramp_is_removed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup7_K2Node_ActorBoundEvent_121_Wheelramp_is_removed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup7_K2Node_ActorBoundEvent_121_Wheelramp_is_removed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup6_K2Node_ActorBoundEvent_120_Wheelramp_is_removed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup6_K2Node_ActorBoundEvent_120_Wheelramp_is_removed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup6_K2Node_ActorBoundEvent_120_Wheelramp_is_removed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup5_K2Node_ActorBoundEvent_119_Wheelramp_is_removed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup5_K2Node_ActorBoundEvent_119_Wheelramp_is_removed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup5_K2Node_ActorBoundEvent_119_Wheelramp_is_removed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup4_K2Node_ActorBoundEvent_113_Wheelramp_is_removed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup4_K2Node_ActorBoundEvent_113_Wheelramp_is_removed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup4_K2Node_ActorBoundEvent_113_Wheelramp_is_removed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup3_K2Node_ActorBoundEvent_117_Wheelramp_is_removed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup3_K2Node_ActorBoundEvent_117_Wheelramp_is_removed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup3_K2Node_ActorBoundEvent_117_Wheelramp_is_removed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup2_K2Node_ActorBoundEvent_114_Wheelramp_is_removed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup2_K2Node_ActorBoundEvent_114_Wheelramp_is_removed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup2_K2Node_ActorBoundEvent_114_Wheelramp_is_removed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup1_K2Node_ActorBoundEvent_118_Wheelramp_is_removed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup1_K2Node_ActorBoundEvent_118_Wheelramp_is_removed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Pickup1_K2Node_ActorBoundEvent_118_Wheelramp_is_removed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location4_4_K2Node_ActorBoundEvent_57_Wheelramp_is_removed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location4_4_K2Node_ActorBoundEvent_57_Wheelramp_is_removed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location4_4_K2Node_ActorBoundEvent_57_Wheelramp_is_removed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location4_4_K2Node_ActorBoundEvent_45_Wheelramp_is_placed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location4_4_K2Node_ActorBoundEvent_45_Wheelramp_is_placed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location4_4_K2Node_ActorBoundEvent_45_Wheelramp_is_placed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location3_5_K2Node_ActorBoundEvent_52_Wheelramp_is_placed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location3_5_K2Node_ActorBoundEvent_52_Wheelramp_is_placed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location3_5_K2Node_ActorBoundEvent_52_Wheelramp_is_placed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location3_5_K2Node_ActorBoundEvent_44_Wheelramp_is_removed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location3_5_K2Node_ActorBoundEvent_44_Wheelramp_is_removed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location3_5_K2Node_ActorBoundEvent_44_Wheelramp_is_removed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location2_3_K2Node_ActorBoundEvent_55_Wheelramp_is_placed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location2_3_K2Node_ActorBoundEvent_55_Wheelramp_is_placed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location2_3_K2Node_ActorBoundEvent_55_Wheelramp_is_placed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location2_3_K2Node_ActorBoundEvent_41_Wheelramp_is_removed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location2_3_K2Node_ActorBoundEvent_41_Wheelramp_is_removed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location2_3_K2Node_ActorBoundEvent_41_Wheelramp_is_removed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location1_2_K2Node_ActorBoundEvent_56_Wheelramp_is_placed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location1_2_K2Node_ActorBoundEvent_56_Wheelramp_is_placed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location1_2_K2Node_ActorBoundEvent_56_Wheelramp_is_placed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location1_2_K2Node_ActorBoundEvent_42_Wheelramp_is_removed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location1_2_K2Node_ActorBoundEvent_42_Wheelramp_is_removed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_WheelRamp_interactable_Location1_2_K2Node_ActorBoundEvent_42_Wheelramp_is_removed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_StaticInteraction_GateBox2_2_K2Node_ActorBoundEvent_95_OnTurnOff__DelegateSignature
+// (BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_StaticInteraction_GateBox2_2_K2Node_ActorBoundEvent_95_OnTurnOff__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_StaticInteraction_GateBox2_2_K2Node_ActorBoundEvent_95_OnTurnOff__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_StaticInteraction_GateBox2_1_K2Node_ActorBoundEvent_93_OnTurnOff__DelegateSignature
+// (BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_StaticInteraction_GateBox2_1_K2Node_ActorBoundEvent_93_OnTurnOff__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_StaticInteraction_GateBox2_1_K2Node_ActorBoundEvent_93_OnTurnOff__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_StaticInteraction_GateBox1_3_K2Node_ActorBoundEvent_63_OnTurnOff__DelegateSignature
+// (BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_StaticInteraction_GateBox1_3_K2Node_ActorBoundEvent_63_OnTurnOff__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_StaticInteraction_GateBox1_3_K2Node_ActorBoundEvent_63_OnTurnOff__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_StaticInteraction_GateBox1_2_K2Node_ActorBoundEvent_65_OnTurnOff__DelegateSignature
+// (BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_StaticInteraction_GateBox1_2_K2Node_ActorBoundEvent_65_OnTurnOff__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_StaticInteraction_GateBox1_2_K2Node_ActorBoundEvent_65_OnTurnOff__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_StaticInteraction_BollardControll1_K2Node_ActorBoundEvent_0_OnTurnOff__DelegateSignature
+// (BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_StaticInteraction_BollardControll1_K2Node_ActorBoundEvent_0_OnTurnOff__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_StaticInteraction_BollardControll1_K2Node_ActorBoundEvent_0_OnTurnOff__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_Signalflare_2_K2Node_ActorBoundEvent_35_OnInteracted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_Signalflare_2_K2Node_ActorBoundEvent_35_OnInteracted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_Signalflare_2_K2Node_ActorBoundEvent_35_OnInteracted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate2_K2Node_ActorBoundEvent_71_SBZSabotagePointDelegate__DelegateSignature
 // (BlueprintAuthorityOnly, BlueprintEvent)
 // Parameters:
-// int32                                   ProgressionIndexReached                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_Preparations_K2Node_ActorBoundEvent_11_SBZProgressionReachedDelegate__DelegateSignature(int32 ProgressionIndexReached)
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate2_K2Node_ActorBoundEvent_71_SBZSabotagePointDelegate__DelegateSignature(bool bSabotaged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate2_K2Node_ActorBoundEvent_71_SBZSabotagePointDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_Preparations_K2Node_ActorBoundEvent_11_SBZProgressionReachedDelegate__DelegateSignature");
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate2_K2Node_ActorBoundEvent_71_SBZSabotagePointDelegate__DelegateSignature Parms{};
 
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_Preparations_K2Node_ActorBoundEvent_11_SBZProgressionReachedDelegate__DelegateSignature Parms{};
-
-	Parms.ProgressionIndexReached = ProgressionIndexReached;
+	Parms.bSabotaged = bSabotaged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_Preparations_K2Node_ActorBoundEvent_6_SBZTimerDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_Preparations_K2Node_ActorBoundEvent_6_SBZTimerDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_Preparations_K2Node_ActorBoundEvent_6_SBZTimerDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_TransportHack_K2Node_ActorBoundEvent_79_SBZTimerDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_TransportHack_K2Node_ActorBoundEvent_79_SBZTimerDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_TransportHack_K2Node_ActorBoundEvent_79_SBZTimerDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_TransportHack_K2Node_ActorBoundEvent_80_SBZProgressionReachedDelegate__DelegateSignature
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate2_2_K2Node_ActorBoundEvent_96_SBZSabotagePointDelegate__DelegateSignature
 // (BlueprintAuthorityOnly, BlueprintEvent)
 // Parameters:
-// int32                                   ProgressionIndexReached                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_TransportHack_K2Node_ActorBoundEvent_80_SBZProgressionReachedDelegate__DelegateSignature(int32 ProgressionIndexReached)
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate2_2_K2Node_ActorBoundEvent_96_SBZSabotagePointDelegate__DelegateSignature(bool bSabotaged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate2_2_K2Node_ActorBoundEvent_96_SBZSabotagePointDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_TransportHack_K2Node_ActorBoundEvent_80_SBZProgressionReachedDelegate__DelegateSignature");
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate2_2_K2Node_ActorBoundEvent_96_SBZSabotagePointDelegate__DelegateSignature Parms{};
 
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_TransportHack_K2Node_ActorBoundEvent_80_SBZProgressionReachedDelegate__DelegateSignature Parms{};
-
-	Parms.ProgressionIndexReached = ProgressionIndexReached;
+	Parms.bSabotaged = bSabotaged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZObjective_Ambush_K2Node_ActorBoundEvent_15_SBZOnObjective__DelegateSignature
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate1_3_K2Node_ActorBoundEvent_75_SBZSabotagePointDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+// Parameters:
+// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate1_3_K2Node_ActorBoundEvent_75_SBZSabotagePointDelegate__DelegateSignature(bool bSabotaged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate1_3_K2Node_ActorBoundEvent_75_SBZSabotagePointDelegate__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate1_3_K2Node_ActorBoundEvent_75_SBZSabotagePointDelegate__DelegateSignature Parms{};
+
+	Parms.bSabotaged = bSabotaged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate1_2_K2Node_ActorBoundEvent_74_SBZSabotagePointDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+// Parameters:
+// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate1_2_K2Node_ActorBoundEvent_74_SBZSabotagePointDelegate__DelegateSignature(bool bSabotaged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate1_2_K2Node_ActorBoundEvent_74_SBZSabotagePointDelegate__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate1_2_K2Node_ActorBoundEvent_74_SBZSabotagePointDelegate__DelegateSignature Parms{};
+
+	Parms.bSabotaged = bSabotaged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint2_K2Node_ActorBoundEvent_47_SBZSabotagePointDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+// Parameters:
+// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint2_K2Node_ActorBoundEvent_47_SBZSabotagePointDelegate__DelegateSignature(bool bSabotaged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint2_K2Node_ActorBoundEvent_47_SBZSabotagePointDelegate__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint2_K2Node_ActorBoundEvent_47_SBZSabotagePointDelegate__DelegateSignature Parms{};
+
+	Parms.bSabotaged = bSabotaged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_Remote_steering_device_2_K2Node_ActorBoundEvent_8_On_Start_Escort__DelegateSignature
 // (BlueprintEvent)
 
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZObjective_Ambush_K2Node_ActorBoundEvent_15_SBZOnObjective__DelegateSignature()
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_Remote_steering_device_2_K2Node_ActorBoundEvent_8_On_Start_Escort__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZObjective_Ambush_K2Node_ActorBoundEvent_15_SBZOnObjective__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_Remote_steering_device_2_K2Node_ActorBoundEvent_8_On_Start_Escort__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZObjective_Escort_K2Node_ActorBoundEvent_61_SBZOnObjective__DelegateSignature
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_Remote_steering_device_2_K2Node_ActorBoundEvent_3_On_Activate_Hack__DelegateSignature
 // (BlueprintEvent)
 
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZObjective_Escort_K2Node_ActorBoundEvent_61_SBZOnObjective__DelegateSignature()
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_Remote_steering_device_2_K2Node_ActorBoundEvent_3_On_Activate_Hack__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZObjective_Escort_K2Node_ActorBoundEvent_61_SBZOnObjective__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_Remote_steering_device_2_K2Node_ActorBoundEvent_3_On_Activate_Hack__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZObjective_OverrideDoors_K2Node_ActorBoundEvent_24_SBZOnObjective__DelegateSignature
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_Remote_steering_device_2_K2Node_ActorBoundEvent_37_On_Player_Fix_Device__DelegateSignature
 // (BlueprintEvent)
 
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZObjective_OverrideDoors_K2Node_ActorBoundEvent_24_SBZOnObjective__DelegateSignature()
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_Remote_steering_device_2_K2Node_ActorBoundEvent_37_On_Player_Fix_Device__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZObjective_OverrideDoors_K2Node_ActorBoundEvent_24_SBZOnObjective__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_Remote_steering_device_2_K2Node_ActorBoundEvent_37_On_Player_Fix_Device__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZObjective_RoadSigns_K2Node_ActorBoundEvent_10_SBZOnObjective__DelegateSignature
-// (BlueprintEvent)
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_PocketDrill_Hatch_K2Node_ActorBoundEvent_19_SBZBreachingEquipmentDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
 
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZObjective_RoadSigns_K2Node_ActorBoundEvent_10_SBZOnObjective__DelegateSignature()
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_PocketDrill_Hatch_K2Node_ActorBoundEvent_19_SBZBreachingEquipmentDelegate__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZObjective_RoadSigns_K2Node_ActorBoundEvent_10_SBZOnObjective__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_PocketDrill_Hatch_K2Node_ActorBoundEvent_19_SBZBreachingEquipmentDelegate__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZObjective_SecureTheLoot_K2Node_ActorBoundEvent_53_SBZOnObjective__DelegateSignature
-// (BlueprintEvent)
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_PocketDrill_Hatch_K2Node_ActorBoundEvent_18_SBZBreachingEquipmentDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
 
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZObjective_SecureTheLoot_K2Node_ActorBoundEvent_53_SBZOnObjective__DelegateSignature()
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_PocketDrill_Hatch_K2Node_ActorBoundEvent_18_SBZBreachingEquipmentDelegate__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZObjective_SecureTheLoot_K2Node_ActorBoundEvent_53_SBZOnObjective__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_PocketDrill_Hatch_K2Node_ActorBoundEvent_18_SBZBreachingEquipmentDelegate__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerEscapeVolume1_K2Node_ActorBoundEvent_111_SBZEscapeTimerDelegate__DelegateSignature
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MovingForklift_2_K2Node_ActorBoundEvent_59_SBZOnInteractionBinaryStateDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+// Parameters:
+// bool                                    BNewState                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_MovingForklift_2_K2Node_ActorBoundEvent_59_SBZOnInteractionBinaryStateDelegate__DelegateSignature(bool BNewState)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_MovingForklift_2_K2Node_ActorBoundEvent_59_SBZOnInteractionBinaryStateDelegate__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MovingForklift_2_K2Node_ActorBoundEvent_59_SBZOnInteractionBinaryStateDelegate__DelegateSignature Parms{};
+
+	Parms.BNewState = BNewState;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MovingForklift_2_K2Node_ActorBoundEvent_1_SBZWheeledVehicleOnSplineEntered__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZWheeledVehicle*               Vehicle                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_MovingForklift_2_K2Node_ActorBoundEvent_1_SBZWheeledVehicleOnSplineEntered__DelegateSignature(class ASBZWheeledVehicle* Vehicle, class ASBZSpline* Spline)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_MovingForklift_2_K2Node_ActorBoundEvent_1_SBZWheeledVehicleOnSplineEntered__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MovingForklift_2_K2Node_ActorBoundEvent_1_SBZWheeledVehicleOnSplineEntered__DelegateSignature Parms{};
+
+	Parms.Vehicle = Vehicle;
+	Parms.Spline = Spline;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_9_K2Node_ActorBoundEvent_106_SBZLootedSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_9_K2Node_ActorBoundEvent_106_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_9_K2Node_ActorBoundEvent_106_SBZLootedSignature__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_9_K2Node_ActorBoundEvent_106_SBZLootedSignature__DelegateSignature Parms{};
+
+	Parms.InstantLoot = InstantLoot;
+	Parms.TakenByPlayer = TakenByPlayer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_6_K2Node_ActorBoundEvent_109_SBZLootedSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_6_K2Node_ActorBoundEvent_109_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_6_K2Node_ActorBoundEvent_109_SBZLootedSignature__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_6_K2Node_ActorBoundEvent_109_SBZLootedSignature__DelegateSignature Parms{};
+
+	Parms.InstantLoot = InstantLoot;
+	Parms.TakenByPlayer = TakenByPlayer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_5_K2Node_ActorBoundEvent_110_SBZLootedSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_5_K2Node_ActorBoundEvent_110_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_5_K2Node_ActorBoundEvent_110_SBZLootedSignature__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_5_K2Node_ActorBoundEvent_110_SBZLootedSignature__DelegateSignature Parms{};
+
+	Parms.InstantLoot = InstantLoot;
+	Parms.TakenByPlayer = TakenByPlayer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_24_K2Node_ActorBoundEvent_101_SBZLootedSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_24_K2Node_ActorBoundEvent_101_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_24_K2Node_ActorBoundEvent_101_SBZLootedSignature__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_24_K2Node_ActorBoundEvent_101_SBZLootedSignature__DelegateSignature Parms{};
+
+	Parms.InstantLoot = InstantLoot;
+	Parms.TakenByPlayer = TakenByPlayer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_22_K2Node_ActorBoundEvent_104_SBZLootedSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_22_K2Node_ActorBoundEvent_104_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_22_K2Node_ActorBoundEvent_104_SBZLootedSignature__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_22_K2Node_ActorBoundEvent_104_SBZLootedSignature__DelegateSignature Parms{};
+
+	Parms.InstantLoot = InstantLoot;
+	Parms.TakenByPlayer = TakenByPlayer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_21_K2Node_ActorBoundEvent_97_SBZLootedSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_21_K2Node_ActorBoundEvent_97_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_21_K2Node_ActorBoundEvent_97_SBZLootedSignature__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_21_K2Node_ActorBoundEvent_97_SBZLootedSignature__DelegateSignature Parms{};
+
+	Parms.InstantLoot = InstantLoot;
+	Parms.TakenByPlayer = TakenByPlayer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_20_K2Node_ActorBoundEvent_103_SBZLootedSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_20_K2Node_ActorBoundEvent_103_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_20_K2Node_ActorBoundEvent_103_SBZLootedSignature__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_20_K2Node_ActorBoundEvent_103_SBZLootedSignature__DelegateSignature Parms{};
+
+	Parms.InstantLoot = InstantLoot;
+	Parms.TakenByPlayer = TakenByPlayer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_19_K2Node_ActorBoundEvent_102_SBZLootedSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_19_K2Node_ActorBoundEvent_102_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_19_K2Node_ActorBoundEvent_102_SBZLootedSignature__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_19_K2Node_ActorBoundEvent_102_SBZLootedSignature__DelegateSignature Parms{};
+
+	Parms.InstantLoot = InstantLoot;
+	Parms.TakenByPlayer = TakenByPlayer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_18_K2Node_ActorBoundEvent_100_SBZLootedSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_18_K2Node_ActorBoundEvent_100_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_18_K2Node_ActorBoundEvent_100_SBZLootedSignature__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_18_K2Node_ActorBoundEvent_100_SBZLootedSignature__DelegateSignature Parms{};
+
+	Parms.InstantLoot = InstantLoot;
+	Parms.TakenByPlayer = TakenByPlayer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_12_K2Node_ActorBoundEvent_107_SBZLootedSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_12_K2Node_ActorBoundEvent_107_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_12_K2Node_ActorBoundEvent_107_SBZLootedSignature__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_12_K2Node_ActorBoundEvent_107_SBZLootedSignature__DelegateSignature Parms{};
+
+	Parms.InstantLoot = InstantLoot;
+	Parms.TakenByPlayer = TakenByPlayer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_11_K2Node_ActorBoundEvent_105_SBZLootedSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_11_K2Node_ActorBoundEvent_105_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_11_K2Node_ActorBoundEvent_105_SBZLootedSignature__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_11_K2Node_ActorBoundEvent_105_SBZLootedSignature__DelegateSignature Parms{};
+
+	Parms.InstantLoot = InstantLoot;
+	Parms.TakenByPlayer = TakenByPlayer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_10_K2Node_ActorBoundEvent_108_SBZLootedSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_10_K2Node_ActorBoundEvent_108_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_10_K2Node_ActorBoundEvent_108_SBZLootedSignature__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_10_K2Node_ActorBoundEvent_108_SBZLootedSignature__DelegateSignature Parms{};
+
+	Parms.InstantLoot = InstantLoot;
+	Parms.TakenByPlayer = TakenByPlayer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_EMPTrap_TEST_4_K2Node_ActorBoundEvent_89_OnCompleteInteraction__DelegateSignature
 // (BlueprintEvent)
 
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZPlayerEscapeVolume1_K2Node_ActorBoundEvent_111_SBZEscapeTimerDelegate__DelegateSignature()
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_EMPTrap_TEST_4_K2Node_ActorBoundEvent_89_OnCompleteInteraction__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZPlayerEscapeVolume1_K2Node_ActorBoundEvent_111_SBZEscapeTimerDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_EMPTrap_TEST_4_K2Node_ActorBoundEvent_89_OnCompleteInteraction__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearEscape1_0_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_BreachingEquipmentBagGenerator_Doohickey3_K2Node_ActorBoundEvent_46_SBZBagPickedUp__DelegateSignature
 // (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearEscape1_0_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_BreachingEquipmentBagGenerator_Doohickey3_K2Node_ActorBoundEvent_46_SBZBagPickedUp__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearEscape1_0_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearEscape1_0_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume2_4_K2Node_ActorBoundEvent_58_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume2_4_K2Node_ActorBoundEvent_58_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume2_4_K2Node_ActorBoundEvent_58_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume2_4_K2Node_ActorBoundEvent_58_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_30_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_30_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_30_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_30_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_38_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_38_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_38_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_38_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_48_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_48_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_48_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_48_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_AtLeastOnePlayerByScaffolding_K2Node_ActorBoundEvent_24_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_AtLeastOnePlayerByScaffolding_K2Node_ActorBoundEvent_24_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_AtLeastOnePlayerByScaffolding_K2Node_ActorBoundEvent_24_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_AtLeastOnePlayerByScaffolding_K2Node_ActorBoundEvent_24_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_EveryPlayerByScaffolding_K2Node_ActorBoundEvent_17_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_EveryPlayerByScaffolding_K2Node_ActorBoundEvent_17_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_EveryPlayerByScaffolding_K2Node_ActorBoundEvent_17_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_EveryPlayerByScaffolding_K2Node_ActorBoundEvent_17_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_PlayerTeleport_K2Node_ActorBoundEvent_64_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_PlayerTeleport_K2Node_ActorBoundEvent_64_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_PlayerTeleport_K2Node_ActorBoundEvent_64_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_PlayerTeleport_K2Node_ActorBoundEvent_64_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_End_K2Node_ActorBoundEvent_26_SBZSplineOnEndReached__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_End_K2Node_ActorBoundEvent_26_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_End_K2Node_ActorBoundEvent_26_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_End_K2Node_ActorBoundEvent_26_SBZSplineOnEndReached__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_K2Node_ActorBoundEvent_13_SBZSplineOnEndReached__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_K2Node_ActorBoundEvent_13_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_K2Node_ActorBoundEvent_13_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_K2Node_ActorBoundEvent_13_SBZSplineOnEndReached__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_K2Node_ActorBoundEvent_50_SBZSplineOnEnter__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_K2Node_ActorBoundEvent_50_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_K2Node_ActorBoundEvent_50_SBZSplineOnEnter__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_K2Node_ActorBoundEvent_50_SBZSplineOnEnter__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrival_K2Node_ActorBoundEvent_68_SBZSplineOnEndReached__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrival_K2Node_ActorBoundEvent_68_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrival_K2Node_ActorBoundEvent_68_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrival_K2Node_ActorBoundEvent_68_SBZSplineOnEndReached__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrivalLong_End_K2Node_ActorBoundEvent_29_SBZSplineOnEndReached__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrivalLong_End_K2Node_ActorBoundEvent_29_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrivalLong_End_K2Node_ActorBoundEvent_29_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrivalLong_End_K2Node_ActorBoundEvent_29_SBZSplineOnEndReached__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrivalLong_K2Node_ActorBoundEvent_62_SBZSplineOnEnter__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrivalLong_K2Node_ActorBoundEvent_62_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrivalLong_K2Node_ActorBoundEvent_62_SBZSplineOnEnter__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrivalLong_K2Node_ActorBoundEvent_62_SBZSplineOnEnter__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_End_K2Node_ActorBoundEvent_7_SBZSplineOnEndReached__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_End_K2Node_ActorBoundEvent_7_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_End_K2Node_ActorBoundEvent_7_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_End_K2Node_ActorBoundEvent_7_SBZSplineOnEndReached__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_K2Node_ActorBoundEvent_20_SBZSplineOnEndReached__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_K2Node_ActorBoundEvent_20_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_K2Node_ActorBoundEvent_20_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_K2Node_ActorBoundEvent_20_SBZSplineOnEndReached__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_K2Node_ActorBoundEvent_87_SBZSplineOnEnter__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_K2Node_ActorBoundEvent_87_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_K2Node_ActorBoundEvent_87_SBZSplineOnEnter__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_K2Node_ActorBoundEvent_87_SBZSplineOnEnter__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_End_K2Node_ActorBoundEvent_36_SBZSplineOnEndReached__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_End_K2Node_ActorBoundEvent_36_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_End_K2Node_ActorBoundEvent_36_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_End_K2Node_ActorBoundEvent_36_SBZSplineOnEndReached__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_K2Node_ActorBoundEvent_88_SBZSplineOnEndReached__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_K2Node_ActorBoundEvent_88_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_K2Node_ActorBoundEvent_88_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_K2Node_ActorBoundEvent_88_SBZSplineOnEndReached__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_SoftEnd_K2Node_ActorBoundEvent_33_SBZSplineOnEnter__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_SoftEnd_K2Node_ActorBoundEvent_33_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_SoftEnd_K2Node_ActorBoundEvent_33_SBZSplineOnEnter__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_SoftEnd_K2Node_ActorBoundEvent_33_SBZSplineOnEnter__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft3_K2Node_ActorBoundEvent_92_SBZSplineOnEnter__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft3_K2Node_ActorBoundEvent_92_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft3_K2Node_ActorBoundEvent_92_SBZSplineOnEnter__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft3_K2Node_ActorBoundEvent_92_SBZSplineOnEnter__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRamp_K2Node_ActorBoundEvent_94_SBZSplineOnEndReached__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRamp_K2Node_ActorBoundEvent_94_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRamp_K2Node_ActorBoundEvent_94_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRamp_K2Node_ActorBoundEvent_94_SBZSplineOnEndReached__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight1_End_K2Node_ActorBoundEvent_23_SBZSplineOnEndReached__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight1_End_K2Node_ActorBoundEvent_23_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight1_End_K2Node_ActorBoundEvent_23_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight1_End_K2Node_ActorBoundEvent_23_SBZSplineOnEndReached__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight1_K2Node_ActorBoundEvent_49_SBZSplineOnEndReached__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight1_K2Node_ActorBoundEvent_49_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight1_K2Node_ActorBoundEvent_49_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight1_K2Node_ActorBoundEvent_49_SBZSplineOnEndReached__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight2_end_K2Node_ActorBoundEvent_22_SBZSplineOnEndReached__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight2_end_K2Node_ActorBoundEvent_22_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight2_end_K2Node_ActorBoundEvent_22_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight2_end_K2Node_ActorBoundEvent_22_SBZSplineOnEndReached__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight2_K2Node_ActorBoundEvent_90_SBZSplineOnEndReached__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight2_K2Node_ActorBoundEvent_90_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight2_K2Node_ActorBoundEvent_90_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight2_K2Node_ActorBoundEvent_90_SBZSplineOnEndReached__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight3_K2Node_ActorBoundEvent_91_SBZSplineOnEnter__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight3_K2Node_ActorBoundEvent_91_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight3_K2Node_ActorBoundEvent_91_SBZSplineOnEnter__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight3_K2Node_ActorBoundEvent_91_SBZSplineOnEnter__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortToFork_13_K2Node_ActorBoundEvent_81_SBZSplineOnEndReached__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortToFork_13_K2Node_ActorBoundEvent_81_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortToFork_13_K2Node_ActorBoundEvent_81_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortToFork_13_K2Node_ActorBoundEvent_81_SBZSplineOnEndReached__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_Fail_K2Node_ActorBoundEvent_14_SBZSplineOnEnter__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_Fail_K2Node_ActorBoundEvent_14_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_Fail_K2Node_ActorBoundEvent_14_SBZSplineOnEnter__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_Fail_K2Node_ActorBoundEvent_14_SBZSplineOnEnter__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_Fail_K2Node_ActorBoundEvent_83_SBZSplineOnEndReached__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_Fail_K2Node_ActorBoundEvent_83_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_Fail_K2Node_ActorBoundEvent_83_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_Fail_K2Node_ActorBoundEvent_83_SBZSplineOnEndReached__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineEscortToRamp_K2Node_ActorBoundEvent_21_SBZSplineOnEndReached__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineEscortToRamp_K2Node_ActorBoundEvent_21_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineEscortToRamp_K2Node_ActorBoundEvent_21_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineEscortToRamp_K2Node_ActorBoundEvent_21_SBZSplineOnEndReached__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineFlyIn_K2Node_ActorBoundEvent_31_SBZSplineOnEndReached__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineFlyIn_K2Node_ActorBoundEvent_31_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineFlyIn_K2Node_ActorBoundEvent_31_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineFlyIn_K2Node_ActorBoundEvent_31_SBZSplineOnEndReached__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineFlyInRight_K2Node_ActorBoundEvent_66_SBZSplineOnEndReached__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineFlyInRight_K2Node_ActorBoundEvent_66_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineFlyInRight_K2Node_ActorBoundEvent_66_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineFlyInRight_K2Node_ActorBoundEvent_66_SBZSplineOnEndReached__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.ContinueDropDevice
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::ContinueDropDevice()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "ContinueDropDevice");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_BreachingEquipmentBagGenerator_Doohickey3_K2Node_ActorBoundEvent_46_SBZBagPickedUp__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.ContinueDropTrap
-// (BlueprintCallable, BlueprintEvent)
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_BreachingEquipmentBagGenerator_Doohickey2_K2Node_ActorBoundEvent_32_SBZBagPickedUp__DelegateSignature
+// (BlueprintEvent)
 
-void AG_ArmoredTransport_Scripting_C::ContinueDropTrap()
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_BreachingEquipmentBagGenerator_Doohickey2_K2Node_ActorBoundEvent_32_SBZBagPickedUp__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "ContinueDropTrap");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_BreachingEquipmentBagGenerator_Doohickey2_K2Node_ActorBoundEvent_32_SBZBagPickedUp__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.DisableAllPreparations
-// (BlueprintCallable, BlueprintEvent)
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_BreachingEquipmentBagGenerator_2_K2Node_ActorBoundEvent_2_SBZBagPickedUp__DelegateSignature
+// (BlueprintEvent)
 
-void AG_ArmoredTransport_Scripting_C::DisableAllPreparations()
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_BreachingEquipmentBagGenerator_2_K2Node_ActorBoundEvent_2_SBZBagPickedUp__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "DisableAllPreparations");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_BreachingEquipmentBagGenerator_2_K2Node_ActorBoundEvent_2_SBZBagPickedUp__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.DisablePreparationInteractions
-// (BlueprintCallable, BlueprintEvent)
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_BreachingEquipmentBagGenerator2_K2Node_ActorBoundEvent_16_SBZBagPickedUp__DelegateSignature
+// (BlueprintEvent)
 
-void AG_ArmoredTransport_Scripting_C::DisablePreparationInteractions()
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_BreachingEquipmentBagGenerator2_K2Node_ActorBoundEvent_16_SBZBagPickedUp__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "DisablePreparationInteractions");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_BreachingEquipmentBagGenerator2_K2Node_ActorBoundEvent_16_SBZBagPickedUp__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.EnableFlare
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::EnableFlare()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "EnableFlare");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.ExecuteUbergraph_G_ArmoredTransport_Scripting
-// (Final, UbergraphFunction, HasDefaults)
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_BlockerFence_01_2_K2Node_ActorBoundEvent_19_SBZOnInteractionBinaryStateDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    BNewState                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_ArmoredTransport_Scripting_C::ExecuteUbergraph_G_ArmoredTransport_Scripting(int32 EntryPoint)
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_BlockerFence_01_2_K2Node_ActorBoundEvent_19_SBZOnInteractionBinaryStateDelegate__DelegateSignature(bool BNewState)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_BlockerFence_01_2_K2Node_ActorBoundEvent_19_SBZOnInteractionBinaryStateDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "ExecuteUbergraph_G_ArmoredTransport_Scripting");
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_BlockerFence_01_2_K2Node_ActorBoundEvent_19_SBZOnInteractionBinaryStateDelegate__DelegateSignature Parms{};
 
-	Params::G_ArmoredTransport_Scripting_C_ExecuteUbergraph_G_ArmoredTransport_Scripting Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.BNewState = BNewState;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.HeistStateChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// EPD3HeistState                          OldHeistState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPD3HeistState                          CurrentHeistState                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_ArmoredTransport_underbelly_hatch_K2Node_ActorBoundEvent_60_Hatch_Opened__DelegateSignature
+// (BlueprintEvent)
 
-void AG_ArmoredTransport_Scripting_C::HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState)
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_ArmoredTransport_underbelly_hatch_K2Node_ActorBoundEvent_60_Hatch_Opened__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_ArmoredTransport_underbelly_hatch_K2Node_ActorBoundEvent_60_Hatch_Opened__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "HeistStateChanged");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::G_ArmoredTransport_Scripting_C_HeistStateChanged Parms{};
 
-	Parms.OldHeistState = OldHeistState;
-	Parms.CurrentHeistState = CurrentHeistState;
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_ArmoredTransport_K2Node_ActorBoundEvent_43_SBZOnVehicleEscortChanged__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+// Parameters:
+// bool                                    bIsMoving                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_ArmoredTransport_K2Node_ActorBoundEvent_43_SBZOnVehicleEscortChanged__DelegateSignature(bool bIsMoving)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_ArmoredTransport_K2Node_ActorBoundEvent_43_SBZOnVehicleEscortChanged__DelegateSignature", FnName));
+
+	Params::G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_ArmoredTransport_K2Node_ActorBoundEvent_43_SBZOnVehicleEscortChanged__DelegateSignature Parms{};
+
+	Parms.bIsMoving = bIsMoving;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.OnOverkillWeaponRequested
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_armored_Transport_Wires_2_K2Node_ActorBoundEvent_12_On_Complete_interaction__DelegateSignature
+// (BlueprintEvent)
+
+void AG_ArmoredTransport_Scripting_C::BndEvt__G_ArmoredTransport_Scripting_BP_armored_Transport_Wires_2_K2Node_ActorBoundEvent_12_On_Complete_interaction__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ArmoredTransport_Scripting_BP_armored_Transport_Wires_2_K2Node_ActorBoundEvent_12_On_Complete_interaction__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BlackScreenStarted
 // (Event, Public, BlueprintEvent)
 
-void AG_ArmoredTransport_Scripting_C::OnOverkillWeaponRequested()
+void AG_ArmoredTransport_Scripting_C::BlackScreenStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "OnOverkillWeaponRequested");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BlackScreenStarted", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.OnPlayerPickedUpBag
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FSBZBagHandle&             BagHandle                                              (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.ActivateFirstObjective
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_ArmoredTransport_Scripting_C::OnPlayerPickedUpBag(const struct FSBZBagHandle& BagHandle)
+void AG_ArmoredTransport_Scripting_C::ActivateFirstObjective()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateFirstObjective", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "OnPlayerPickedUpBag");
-
-	Params::G_ArmoredTransport_Scripting_C_OnPlayerPickedUpBag Parms{};
-
-	Parms.BagHandle = std::move(BagHandle);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.OnPlayersCarryBagChanged
-// (Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FSBZPlayersCarryBagChangedEvent&Data                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.ActivateEscapeGauntlet
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_ArmoredTransport_Scripting_C::OnPlayersCarryBagChanged(const struct FSBZPlayersCarryBagChangedEvent& Data)
+void AG_ArmoredTransport_Scripting_C::ActivateEscapeGauntlet()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateEscapeGauntlet", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "OnPlayersCarryBagChanged");
-
-	Params::G_ArmoredTransport_Scripting_C_OnPlayersCarryBagChanged Parms{};
-
-	Parms.Data = std::move(Data);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.OnPreplanningAssetsTagsApplied
-// (Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FGameplayTagContainer&     PreplanningTagContainer                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.Activate Pedestrians
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void AG_ArmoredTransport_Scripting_C::OnPreplanningAssetsTagsApplied(const struct FGameplayTagContainer& PreplanningTagContainer)
+void AG_ArmoredTransport_Scripting_C::Activate_Pedestrians()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Activate Pedestrians", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "OnPreplanningAssetsTagsApplied");
-
-	Params::G_ArmoredTransport_Scripting_C_OnPreplanningAssetsTagsApplied Parms{};
-
-	Parms.PreplanningTagContainer = std::move(PreplanningTagContainer);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.OnRandomPlacementStarted
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.ActionPhaseStarted
 // (Event, Public, BlueprintEvent)
 
-void AG_ArmoredTransport_Scripting_C::OnRandomPlacementStarted()
+void AG_ArmoredTransport_Scripting_C::ActionPhaseStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "OnRandomPlacementStarted");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.PreparationSubsComplete
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::PreparationSubsComplete()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "PreparationSubsComplete");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.Randomize Fog
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::Randomize_Fog()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "Randomize Fog");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.RandomizeDevice
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::RandomizeDevice()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "RandomizeDevice");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.RandomizeDoors
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::RandomizeDoors()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "RandomizeDoors");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.RandomizeGateBoxes
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::RandomizeGateBoxes()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "RandomizeGateBoxes");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.RandomizeHelicopter
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::RandomizeHelicopter()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "RandomizeHelicopter");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.RandomizeInstantLoot
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::RandomizeInstantLoot()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "RandomizeInstantLoot");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.RandomizeTransportStopLocation
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::RandomizeTransportStopLocation()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "RandomizeTransportStopLocation");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.RandomizeWheelramps
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::RandomizeWheelramps()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "RandomizeWheelramps");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.ResumeEscort
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::ResumeEscort()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "ResumeEscort");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.StartDriveinSwatVan
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::StartDriveinSwatVan()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "StartDriveinSwatVan");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.StartEscort
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::StartEscort()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "StartEscort");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.StartFailScreen
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::StartFailScreen()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "StartFailScreen");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.StopEscortAtBarrier
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::StopEscortAtBarrier()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "StopEscortAtBarrier");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.TryAwardTrafficControlAchievement
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::TryAwardTrafficControlAchievement()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "TryAwardTrafficControlAchievement");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.TryEnableSecureZone
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::TryEnableSecureZone()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "TryEnableSecureZone");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.TryEnableWheelrampWaypoints
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_ArmoredTransport_Scripting_C::TryEnableWheelrampWaypoints()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArmoredTransport_Scripting_C", "TryEnableWheelrampWaypoints");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActionPhaseStarted", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

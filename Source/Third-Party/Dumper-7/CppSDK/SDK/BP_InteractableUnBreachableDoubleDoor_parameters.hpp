@@ -18,6 +18,48 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_InteractableUnBreachableDoubleDoor.BP_InteractableUnBreachableDoubleDoor_C.UserConstructionScript
+// 0x0006 (0x0006 - 0x0000)
+struct BP_InteractableUnBreachableDoubleDoor_C_UserConstructionScript final
+{
+public:
+	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECollisionEnabled                             Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECollisionEnabled                             Temp_byte_Variable_1;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECollisionEnabled                             K2Node_Select_Default;                             // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetStaticMesh_ReturnValue_1;              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_InteractableUnBreachableDoubleDoor_C_UserConstructionScript;
+
+// Function BP_InteractableUnBreachableDoubleDoor.BP_InteractableUnBreachableDoubleDoor_C.setBreachedMeshVisibility
+// 0x0001 (0x0001 - 0x0000)
+struct BP_InteractableUnBreachableDoubleDoor_C_setBreachedMeshVisibility final
+{
+public:
+	bool                                          breached;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_InteractableUnBreachableDoubleDoor_C_setBreachedMeshVisibility;
+
+// Function BP_InteractableUnBreachableDoubleDoor.BP_InteractableUnBreachableDoubleDoor_C.onOpenAnimUpdateTick
+// 0x0008 (0x0008 - 0x0000)
+struct BP_InteractableUnBreachableDoubleDoor_C_onOpenAnimUpdateTick final
+{
+public:
+	double                                        alpha;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_InteractableUnBreachableDoubleDoor_C_onOpenAnimUpdateTick;
+
+// Function BP_InteractableUnBreachableDoubleDoor.BP_InteractableUnBreachableDoubleDoor_C.onDoorBreached
+// 0x0002 (0x0002 - 0x0000)
+struct BP_InteractableUnBreachableDoubleDoor_C_onDoorBreached final
+{
+public:
+	ESBZGateState                                 oldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 newState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_InteractableUnBreachableDoubleDoor_C_onDoorBreached;
+
 // Function BP_InteractableUnBreachableDoubleDoor.BP_InteractableUnBreachableDoubleDoor_C.ExecuteUbergraph_BP_InteractableUnBreachableDoubleDoor
 // 0x0070 (0x0070 - 0x0000)
 struct BP_InteractableUnBreachableDoubleDoor_C_ExecuteUbergraph_BP_InteractableUnBreachableDoubleDoor final
@@ -58,44 +100,7 @@ public:
 	float                                         CallFunc_TickYaw_InYaw_ImplicitCast_1;             // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_InteractableUnBreachableDoubleDoor.BP_InteractableUnBreachableDoubleDoor_C.onDoorBreached
-// 0x0002 (0x0002 - 0x0000)
-struct BP_InteractableUnBreachableDoubleDoor_C_onDoorBreached final
-{
-public:
-	ESBZGateState                                 oldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 newState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_InteractableUnBreachableDoubleDoor.BP_InteractableUnBreachableDoubleDoor_C.onOpenAnimUpdateTick
-// 0x0008 (0x0008 - 0x0000)
-struct BP_InteractableUnBreachableDoubleDoor_C_onOpenAnimUpdateTick final
-{
-public:
-	double                                        alpha;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_InteractableUnBreachableDoubleDoor.BP_InteractableUnBreachableDoubleDoor_C.setBreachedMeshVisibility
-// 0x0001 (0x0001 - 0x0000)
-struct BP_InteractableUnBreachableDoubleDoor_C_setBreachedMeshVisibility final
-{
-public:
-	bool                                          breached;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_InteractableUnBreachableDoubleDoor.BP_InteractableUnBreachableDoubleDoor_C.UserConstructionScript
-// 0x0006 (0x0006 - 0x0000)
-struct BP_InteractableUnBreachableDoubleDoor_C_UserConstructionScript final
-{
-public:
-	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECollisionEnabled                             Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECollisionEnabled                             Temp_byte_Variable_1;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECollisionEnabled                             K2Node_Select_Default;                             // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue_1;              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_InteractableUnBreachableDoubleDoor_C_ExecuteUbergraph_BP_InteractableUnBreachableDoubleDoor;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

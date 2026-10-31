@@ -16,45 +16,21 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_armored_Transport_Wires.BP_armored_Transport_Wires_C.BndEvt__BP_armored_Transport_Wires_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
+// Function BP_armored_Transport_Wires.BP_armored_Transport_Wires_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bStateToChangeTo_OnStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_armored_Transport_Wires_C::BndEvt__BP_armored_Transport_Wires_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_armored_Transport_Wires_C::OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_armored_Transport_Wires_C", "BndEvt__BP_armored_Transport_Wires_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
+	Params::BP_armored_Transport_Wires_C_OnStateChanged Parms{};
 
-	Params::BP_armored_Transport_Wires_C_BndEvt__BP_armored_Transport_Wires_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_armored_Transport_Wires.BP_armored_Transport_Wires_C.ExecuteUbergraph_BP_armored_Transport_Wires
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_armored_Transport_Wires_C::ExecuteUbergraph_BP_armored_Transport_Wires(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_armored_Transport_Wires_C", "ExecuteUbergraph_BP_armored_Transport_Wires");
-
-	Params::BP_armored_Transport_Wires_C_ExecuteUbergraph_BP_armored_Transport_Wires Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.bStateToChangeTo_OnStateChanged = bStateToChangeTo_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -67,10 +43,8 @@ void ABP_armored_Transport_Wires_C::ExecuteUbergraph_BP_armored_Transport_Wires(
 
 void ABP_armored_Transport_Wires_C::Interaction_enable(bool enabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_armored_Transport_Wires_C", "Interaction_enable");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Interaction_enable", FnName));
 
 	Params::BP_armored_Transport_Wires_C_Interaction_enable Parms{};
 
@@ -80,23 +54,61 @@ void ABP_armored_Transport_Wires_C::Interaction_enable(bool enabled)
 }
 
 
-// Function BP_armored_Transport_Wires.BP_armored_Transport_Wires_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
+// Function BP_armored_Transport_Wires.BP_armored_Transport_Wires_C.ExecuteUbergraph_BP_armored_Transport_Wires
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_armored_Transport_Wires_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
+void ABP_armored_Transport_Wires_C::ExecuteUbergraph_BP_armored_Transport_Wires(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_armored_Transport_Wires_C", "ExecuteUbergraph_BP_armored_Transport_Wires", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_armored_Transport_Wires_C", "OnStateChanged");
+	Params::BP_armored_Transport_Wires_C_ExecuteUbergraph_BP_armored_Transport_Wires Parms{};
 
-	Params::BP_armored_Transport_Wires_C_OnStateChanged Parms{};
+	Parms.EntryPoint = EntryPoint;
 
-	Parms.bStateToChangeTo = bStateToChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_armored_Transport_Wires.BP_armored_Transport_Wires_C.BndEvt__BP_armored_Transport_Wires_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_armored_Transport_Wires_C::BndEvt__BP_armored_Transport_Wires_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_armored_Transport_Wires_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_armored_Transport_Wires_C_BndEvt__BP_armored_Transport_Wires_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_armored_Transport_Wires.BP_armored_Transport_Wires_C.BndEvt__BP_armored_Transport_Wires_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// const class USBZBaseInteractableComponent*InteractableComponent                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_armored_Transport_Wires_C::BndEvt__BP_armored_Transport_Wires_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_armored_Transport_Wires_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature", FnName));
+
+	Params::BP_armored_Transport_Wires_C_BndEvt__BP_armored_Transport_Wires_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
+
+	Parms.InteractableComponent = InteractableComponent;
+	Parms.bInNewState = bInNewState;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

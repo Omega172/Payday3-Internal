@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Starbreeze_classes.hpp"
 #include "AkAudio_structs.hpp"
 
@@ -19,31 +19,31 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_SafetyBox_WheeledVehicle.BP_SafetyBox_WheeledVehicle_C
-// 0x00A8 (0x0430 - 0x0388)
+// 0x00A8 (0x0438 - 0x0390)
 class ABP_SafetyBox_WheeledVehicle_C final : public ASBZMiniGameActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0388(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USBZPropDamageComponent*                SBZPropDamage;                                     // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USBZAIObjectiveComponent*               SBZAIObjective;                                    // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        LootLocation;                                      // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          Collision;                                         // 0x03A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAkComponent*                           Ak;                                                // 0x03B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	TMap<class USceneComponent*, struct FTransform> SpawnComponentTransformMap;                      // 0x03B8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	class ASBZInteractionActor*                   As_Interaction_Actor;                              // 0x0408(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class FName                                   Spawn_Socket_Name;                                 // 0x0410(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_41C[0x4];                                      // 0x041C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABP_WheeledVehicle_Base_C*              Armor_Truck;                                       // 0x0420(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
-	bool                                          DoorMoveDown_;                                     // 0x0428(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0390(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USBZPropDamageComponent*                SBZPropDamage;                                     // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZAIObjectiveComponent*               SBZAIObjective;                                    // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        LootLocation;                                      // 0x03A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          Collision;                                         // 0x03B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAkComponent*                           Ak;                                                // 0x03B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	TMap<class USceneComponent*, struct FTransform> SpawnComponentTransformMap;                      // 0x03C0(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	class ASBZInteractionActor*                   As_Interaction_Actor;                              // 0x0410(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class FName                                   Spawn_Socket_Name;                                 // 0x0418(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_424[0x4];                                      // 0x0424(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_WheeledVehicle_Base_C*              Armor_Truck;                                       // 0x0428(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
+	bool                                          DoorMoveDown_;                                     // 0x0430(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_SafetyBox_WheeledVehicle_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
-	void BP_OnMiniGameSuccess(bool bDoCosmetics);
-	void ExecuteUbergraph_BP_SafetyBox_WheeledVehicle(int32 EntryPoint);
-	void OnActorSpawned(class AActor* SpawnedActor, class USceneComponent* AttachParent);
-	void PopulateSpawnInformationMap(TMap<class USceneComponent*, struct FTransform>* InOutSpawnDataMap);
-	void Relocate();
 	void UserConstructionScript();
+	void Relocate();
+	void PopulateSpawnInformationMap(TMap<class USceneComponent*, struct FTransform>* InOutSpawnDataMap);
+	void OnActorSpawned(class AActor* SpawnedActor, class USceneComponent* AttachParent);
+	void ExecuteUbergraph_BP_SafetyBox_WheeledVehicle(int32 EntryPoint);
+	void BP_OnMiniGameSuccess(bool bDoCosmetics_BP_OnMiniGameSuccess);
+	void BndEvt__BP_SafetyBox_WheeledVehicle_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
 
 public:
 	static class UClass* StaticClass()
@@ -59,5 +59,6 @@ public:
 		return GetDefaultObjImpl<ABP_SafetyBox_WheeledVehicle_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SafetyBox_WheeledVehicle_C;
 
 SDK_NAMESPACE_END

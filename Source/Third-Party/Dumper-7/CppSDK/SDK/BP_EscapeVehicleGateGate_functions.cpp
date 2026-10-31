@@ -16,71 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_EscapeVehicleGateGate.BP_EscapeVehicleGateGate_C.ExecuteUbergraph_BP_EscapeVehicleGateGate
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_EscapeVehicleGateGate_C::ExecuteUbergraph_BP_EscapeVehicleGateGate(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeVehicleGateGate_C", "ExecuteUbergraph_BP_EscapeVehicleGateGate");
-
-	Params::BP_EscapeVehicleGateGate_C_ExecuteUbergraph_BP_EscapeVehicleGateGate Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_EscapeVehicleGateGate.BP_EscapeVehicleGateGate_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_EscapeVehicleGateGate_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeVehicleGateGate_C", "OnStateChanged");
-
-	Params::BP_EscapeVehicleGateGate_C_OnStateChanged Parms{};
-
-	Parms.bStateToChangeTo = bStateToChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_EscapeVehicleGateGate.BP_EscapeVehicleGateGate_C.Timeline_0__FinishedFunc
+// Function BP_EscapeVehicleGateGate.BP_EscapeVehicleGateGate_C.Timeline_1__UpdateFunc
 // (BlueprintEvent)
 
-void ABP_EscapeVehicleGateGate_C::Timeline_0__FinishedFunc()
+void ABP_EscapeVehicleGateGate_C::Timeline_1__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeVehicleGateGate_C", "Timeline_0__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_EscapeVehicleGateGate.BP_EscapeVehicleGateGate_C.Timeline_0__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_EscapeVehicleGateGate_C::Timeline_0__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeVehicleGateGate_C", "Timeline_0__UpdateFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_1__UpdateFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -91,26 +33,72 @@ void ABP_EscapeVehicleGateGate_C::Timeline_0__UpdateFunc()
 
 void ABP_EscapeVehicleGateGate_C::Timeline_1__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeVehicleGateGate_C", "Timeline_1__FinishedFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_1__FinishedFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_EscapeVehicleGateGate.BP_EscapeVehicleGateGate_C.Timeline_1__UpdateFunc
+// Function BP_EscapeVehicleGateGate.BP_EscapeVehicleGateGate_C.Timeline_0__UpdateFunc
 // (BlueprintEvent)
 
-void ABP_EscapeVehicleGateGate_C::Timeline_1__UpdateFunc()
+void ABP_EscapeVehicleGateGate_C::Timeline_0__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeVehicleGateGate_C", "Timeline_1__UpdateFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__UpdateFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_EscapeVehicleGateGate.BP_EscapeVehicleGateGate_C.Timeline_0__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_EscapeVehicleGateGate_C::Timeline_0__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_EscapeVehicleGateGate.BP_EscapeVehicleGateGate_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bStateToChangeTo_OnStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_EscapeVehicleGateGate_C::OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_EscapeVehicleGateGate_C_OnStateChanged Parms{};
+
+	Parms.bStateToChangeTo_OnStateChanged = bStateToChangeTo_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_EscapeVehicleGateGate.BP_EscapeVehicleGateGate_C.ExecuteUbergraph_BP_EscapeVehicleGateGate
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_EscapeVehicleGateGate_C::ExecuteUbergraph_BP_EscapeVehicleGateGate(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_EscapeVehicleGateGate_C", "ExecuteUbergraph_BP_EscapeVehicleGateGate", FuncInfo);
+
+	Params::BP_EscapeVehicleGateGate_C_ExecuteUbergraph_BP_EscapeVehicleGateGate Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

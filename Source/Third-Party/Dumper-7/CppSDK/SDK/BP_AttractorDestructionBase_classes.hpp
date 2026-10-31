@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_AttractorDestructionBase_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_AttractorDestructionBase_C;
 
 SDK_NAMESPACE_END

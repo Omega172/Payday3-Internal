@@ -16,6 +16,36 @@
 
 SDK_NAMESPACE_START
 
+// Function C_DataCenter_IntroOutro.C_DataCenter_IntroOutro_C.OnIntroFinished
+// (BlueprintCallable, BlueprintEvent)
+
+void AC_DataCenter_IntroOutro_C::OnIntroFinished()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnIntroFinished", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function C_DataCenter_IntroOutro.C_DataCenter_IntroOutro_C.IntroSequenceChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    bIsStarted_IntroSequenceChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AC_DataCenter_IntroOutro_C::IntroSequenceChanged(bool bIsStarted_IntroSequenceChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IntroSequenceChanged", FnName));
+
+	Params::C_DataCenter_IntroOutro_C_IntroSequenceChanged Parms{};
+
+	Parms.bIsStarted_IntroSequenceChanged = bIsStarted_IntroSequenceChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function C_DataCenter_IntroOutro.C_DataCenter_IntroOutro_C.ExecuteUbergraph_C_DataCenter_IntroOutro
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,50 +53,14 @@ SDK_NAMESPACE_START
 
 void AC_DataCenter_IntroOutro_C::ExecuteUbergraph_C_DataCenter_IntroOutro(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_DataCenter_IntroOutro_C", "ExecuteUbergraph_C_DataCenter_IntroOutro");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "C_DataCenter_IntroOutro_C", "ExecuteUbergraph_C_DataCenter_IntroOutro", FuncInfo);
 
 	Params::C_DataCenter_IntroOutro_C_ExecuteUbergraph_C_DataCenter_IntroOutro Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function C_DataCenter_IntroOutro.C_DataCenter_IntroOutro_C.IntroSequenceChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    bIsStarted                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AC_DataCenter_IntroOutro_C::IntroSequenceChanged(bool bIsStarted)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_DataCenter_IntroOutro_C", "IntroSequenceChanged");
-
-	Params::C_DataCenter_IntroOutro_C_IntroSequenceChanged Parms{};
-
-	Parms.bIsStarted = bIsStarted;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function C_DataCenter_IntroOutro.C_DataCenter_IntroOutro_C.OnIntroFinished
-// (BlueprintCallable, BlueprintEvent)
-
-void AC_DataCenter_IntroOutro_C::OnIntroFinished()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_DataCenter_IntroOutro_C", "OnIntroFinished");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

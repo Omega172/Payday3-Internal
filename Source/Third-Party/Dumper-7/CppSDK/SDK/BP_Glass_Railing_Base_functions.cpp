@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_Glass_Railing_Base.BP_Glass_Railing_Base_C.ExecuteUbergraph_BP_Glass_Railing_Base
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Glass_Railing_Base_C::ExecuteUbergraph_BP_Glass_Railing_Base(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Glass_Railing_Base_C", "ExecuteUbergraph_BP_Glass_Railing_Base", FuncInfo);
+
+	Params::BP_Glass_Railing_Base_C_ExecuteUbergraph_BP_Glass_Railing_Base Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_Glass_Railing_Base.BP_Glass_Railing_Base_C.BndEvt__NewBlueprint_PropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -26,10 +44,8 @@ SDK_NAMESPACE_START
 
 void ABP_Glass_Railing_Base_C::BndEvt__NewBlueprint_PropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Glass_Railing_Base_C", "BndEvt__NewBlueprint_PropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__NewBlueprint_PropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature", FnName));
 
 	Params::BP_Glass_Railing_Base_C_BndEvt__NewBlueprint_PropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature Parms{};
 
@@ -37,26 +53,6 @@ void ABP_Glass_Railing_Base_C::BndEvt__NewBlueprint_PropDamage_K2Node_ComponentB
 	Parms.Hits = Hits;
 	Parms.bDoCosmetics = bDoCosmetics;
 	Parms.DamageContext = std::move(DamageContext);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Glass_Railing_Base.BP_Glass_Railing_Base_C.ExecuteUbergraph_BP_Glass_Railing_Base
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Glass_Railing_Base_C::ExecuteUbergraph_BP_Glass_Railing_Base(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Glass_Railing_Base_C", "ExecuteUbergraph_BP_Glass_Railing_Base");
-
-	Params::BP_Glass_Railing_Base_C_ExecuteUbergraph_BP_Glass_Railing_Base Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

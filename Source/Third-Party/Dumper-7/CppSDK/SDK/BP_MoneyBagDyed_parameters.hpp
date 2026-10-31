@@ -17,6 +17,18 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_MoneyBagDyed.BP_MoneyBagDyed_C.OnActorHit_Event
+// 0x0130 (0x0130 - 0x0000)
+struct BP_MoneyBagDyed_C_OnActorHit_Event final
+{
+public:
+	class AActor*                                 SelfActor;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                NormalImpulse;                                     // 0x0010(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Hit;                                               // 0x0028(0x0108)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+DUMPER7_ASSERTS_BP_MoneyBagDyed_C_OnActorHit_Event;
+
 // Function BP_MoneyBagDyed.BP_MoneyBagDyed_C.ExecuteUbergraph_BP_MoneyBagDyed
 // 0x0170 (0x0170 - 0x0000)
 struct BP_MoneyBagDyed_C_ExecuteUbergraph_BP_MoneyBagDyed final
@@ -35,17 +47,7 @@ public:
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0150(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UNiagaraComponent*                      CallFunc_SpawnSystemAtLocation_ReturnValue;        // 0x0168(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_MoneyBagDyed.BP_MoneyBagDyed_C.OnActorHit_Event
-// 0x0130 (0x0130 - 0x0000)
-struct BP_MoneyBagDyed_C_OnActorHit_Event final
-{
-public:
-	class AActor*                                 SelfActor;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                NormalImpulse;                                     // 0x0010(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Hit;                                               // 0x0028(0x0108)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
+DUMPER7_ASSERTS_BP_MoneyBagDyed_C_ExecuteUbergraph_BP_MoneyBagDyed;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

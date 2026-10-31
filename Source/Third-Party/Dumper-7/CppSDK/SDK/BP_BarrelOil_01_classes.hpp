@@ -26,8 +26,8 @@ public:
 	class UStaticMeshComponent*                   Mesh;                                              // 0x0538(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature(class UActorComponent* Component, bool bReset);
 	void ExecuteUbergraph_BP_BarrelOil_01(int32 EntryPoint);
+	void BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature(class UActorComponent* Component, bool bReset);
 
 public:
 	static class UClass* StaticClass()
@@ -43,5 +43,6 @@ public:
 		return GetDefaultObjImpl<ABP_BarrelOil_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BarrelOil_01_C;
 
 SDK_NAMESPACE_END

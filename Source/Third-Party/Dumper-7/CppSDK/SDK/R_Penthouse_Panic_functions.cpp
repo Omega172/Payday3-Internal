@@ -16,37 +16,37 @@
 
 SDK_NAMESPACE_START
 
-// Function R_Penthouse_Panic.R_Penthouse_Panic_C.BndEvt__R_Penthouse_Panic_BP_Int_Door_01_SmallVault_2_K2Node_ActorBoundEvent_0_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function R_Penthouse_Panic.R_Penthouse_Panic_C.Unlock_PanicRoom
+// (BlueprintCallable, BlueprintEvent)
 
-void AR_Penthouse_Panic_C::BndEvt__R_Penthouse_Panic_BP_Int_Door_01_SmallVault_2_K2Node_ActorBoundEvent_0_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
+void AR_Penthouse_Panic_C::Unlock_PanicRoom()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Unlock_PanicRoom", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Penthouse_Panic_C", "BndEvt__R_Penthouse_Panic_BP_Int_Door_01_SmallVault_2_K2Node_ActorBoundEvent_0_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::R_Penthouse_Panic_C_BndEvt__R_Penthouse_Panic_BP_Int_Door_01_SmallVault_2_K2Node_ActorBoundEvent_0_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function R_Penthouse_Panic.R_Penthouse_Panic_C.Close_PanicRoom
+// Function R_Penthouse_Panic.R_Penthouse_Panic_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AR_Penthouse_Panic_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_Penthouse_Panic.R_Penthouse_Panic_C.Open_PanicRoom
 // (BlueprintCallable, BlueprintEvent)
 
-void AR_Penthouse_Panic_C::Close_PanicRoom()
+void AR_Penthouse_Panic_C::Open_PanicRoom()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Penthouse_Panic_C", "Close_PanicRoom");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Open_PanicRoom", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -59,10 +59,8 @@ void AR_Penthouse_Panic_C::Close_PanicRoom()
 
 void AR_Penthouse_Panic_C::ExecuteUbergraph_R_Penthouse_Panic(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Penthouse_Panic_C", "ExecuteUbergraph_R_Penthouse_Panic");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "R_Penthouse_Panic_C", "ExecuteUbergraph_R_Penthouse_Panic", FuncInfo);
 
 	Params::R_Penthouse_Panic_C_ExecuteUbergraph_R_Penthouse_Panic Parms{};
 
@@ -72,45 +70,35 @@ void AR_Penthouse_Panic_C::ExecuteUbergraph_R_Penthouse_Panic(int32 EntryPoint)
 }
 
 
-// Function R_Penthouse_Panic.R_Penthouse_Panic_C.Open_PanicRoom
+// Function R_Penthouse_Panic.R_Penthouse_Panic_C.Close_PanicRoom
 // (BlueprintCallable, BlueprintEvent)
 
-void AR_Penthouse_Panic_C::Open_PanicRoom()
+void AR_Penthouse_Panic_C::Close_PanicRoom()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Penthouse_Panic_C", "Open_PanicRoom");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Close_PanicRoom", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function R_Penthouse_Panic.R_Penthouse_Panic_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function R_Penthouse_Panic.R_Penthouse_Panic_C.BndEvt__R_Penthouse_Panic_BP_Int_Door_01_SmallVault_2_K2Node_ActorBoundEvent_0_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AR_Penthouse_Panic_C::ReceiveBeginPlay()
+void AR_Penthouse_Panic_C::BndEvt__R_Penthouse_Panic_BP_Int_Door_01_SmallVault_2_K2Node_ActorBoundEvent_0_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Penthouse_Panic_BP_Int_Door_01_SmallVault_2_K2Node_ActorBoundEvent_0_SBZGateStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Penthouse_Panic_C", "ReceiveBeginPlay");
+	Params::R_Penthouse_Panic_C_BndEvt__R_Penthouse_Panic_BP_Int_Door_01_SmallVault_2_K2Node_ActorBoundEvent_0_SBZGateStateChangedDelegate__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Parms.OldState = OldState;
+	Parms.State = State;
 
-
-// Function R_Penthouse_Panic.R_Penthouse_Panic_C.Unlock_PanicRoom
-// (BlueprintCallable, BlueprintEvent)
-
-void AR_Penthouse_Panic_C::Unlock_PanicRoom()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Penthouse_Panic_C", "Unlock_PanicRoom");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

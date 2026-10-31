@@ -24,10 +24,10 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_WBP_UI_CosmeticButtonSprayCanSlots_C; // 0x03E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnCosmeticItemDataInitialized();
-	void HoverChangedVisuals(bool bIsHovered);
 	void ExecuteUbergraph_WBP_UI_CosmeticButtonSprayCanSlots(int32 EntryPoint);
+	void HoverChangedVisuals(bool bIsHovered);
+	void OnCosmeticItemDataInitialized();
+	void PreConstruct(bool IsDesignTime);
 
 public:
 	static class UClass* StaticClass()

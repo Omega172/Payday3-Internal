@@ -53,6 +53,7 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0102(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0103(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_NewShootingRange_Scripting_C_ExecuteUbergraph_G_NewShootingRange_Scripting;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

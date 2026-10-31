@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_SecurityRoom_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SecurityRoom_C;
 
 SDK_NAMESPACE_END

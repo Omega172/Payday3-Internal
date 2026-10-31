@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_RFIDTagBase.BP_RFIDTagBase_C.ExecuteUbergraph_BP_RFIDTagBase
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_RFIDTagBase_C::ExecuteUbergraph_BP_RFIDTagBase(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_RFIDTagBase_C", "ExecuteUbergraph_BP_RFIDTagBase", FuncInfo);
+
+	Params::BP_RFIDTagBase_C_ExecuteUbergraph_BP_RFIDTagBase Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_RFIDTagBase.BP_RFIDTagBase_C.BndEvt__BP_RFIDTagBase_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -25,36 +43,14 @@ SDK_NAMESPACE_START
 
 void ABP_RFIDTagBase_C::BndEvt__BP_RFIDTagBase_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RFIDTagBase_C", "BndEvt__BP_RFIDTagBase_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_RFIDTagBase_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
 
 	Params::BP_RFIDTagBase_C_BndEvt__BP_RFIDTagBase_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
 	Parms.Interactable_0 = Interactable_0;
 	Parms.Interactor = Interactor;
 	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_RFIDTagBase.BP_RFIDTagBase_C.ExecuteUbergraph_BP_RFIDTagBase
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_RFIDTagBase_C::ExecuteUbergraph_BP_RFIDTagBase(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RFIDTagBase_C", "ExecuteUbergraph_BP_RFIDTagBase");
-
-	Params::BP_RFIDTagBase_C_ExecuteUbergraph_BP_RFIDTagBase Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

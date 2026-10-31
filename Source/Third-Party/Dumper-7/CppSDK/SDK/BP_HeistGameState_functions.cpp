@@ -16,26 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_HeistGameState.BP_HeistGameState_C.BP_OnHideAllOutlinesChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    bIsHidden                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_HeistGameState_C::BP_OnHideAllOutlinesChanged(bool bIsHidden)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HeistGameState_C", "BP_OnHideAllOutlinesChanged");
-
-	Params::BP_HeistGameState_C_BP_OnHideAllOutlinesChanged Parms{};
-
-	Parms.bIsHidden = bIsHidden;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_HeistGameState.BP_HeistGameState_C.ExecuteUbergraph_BP_HeistGameState
 // (Final, UbergraphFunction)
 // Parameters:
@@ -43,14 +23,30 @@ void ABP_HeistGameState_C::BP_OnHideAllOutlinesChanged(bool bIsHidden)
 
 void ABP_HeistGameState_C::ExecuteUbergraph_BP_HeistGameState(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HeistGameState_C", "ExecuteUbergraph_BP_HeistGameState");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_HeistGameState_C", "ExecuteUbergraph_BP_HeistGameState", FuncInfo);
 
 	Params::BP_HeistGameState_C_ExecuteUbergraph_BP_HeistGameState Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_HeistGameState.BP_HeistGameState_C.BP_OnHideAllOutlinesChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    bIsHidden_BP_OnHideAllOutlinesChanged                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_HeistGameState_C::BP_OnHideAllOutlinesChanged(bool bIsHidden_BP_OnHideAllOutlinesChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnHideAllOutlinesChanged", FnName));
+
+	Params::BP_HeistGameState_C_BP_OnHideAllOutlinesChanged Parms{};
+
+	Parms.bIsHidden_BP_OnHideAllOutlinesChanged = bIsHidden_BP_OnHideAllOutlinesChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

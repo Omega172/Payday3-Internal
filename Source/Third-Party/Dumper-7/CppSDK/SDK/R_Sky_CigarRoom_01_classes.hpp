@@ -28,17 +28,17 @@ public:
 	class ASBZPlayerTriggerVolume*                SBZPlayerTriggerVolume_PlayerInsideCigarRoom_ExecuteUbergraph_R_Sky_CigarRoom_01_RefProperty; // 0x03F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AddWaypointCigarRoom();
-	void BndEvt__R_Penthouse_Office_SBZSpawnLocationHandler1_K2Node_ActorBoundEvent_3_SBZSpawnLocationHandlerDelegate__DelegateSignature();
-	void BndEvt__R_Sky_CigarRoom_01_BP_RedKeycard1_K2Node_ActorBoundEvent_0_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
-	void BndEvt__R_Sky_CigarRoom_01_BP_RedKeycard2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
-	void BndEvt__R_Sky_CigarRoom_01_BP_RedKeycard3_K2Node_ActorBoundEvent_2_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
-	void BndEvt__R_Sky_CigarRoom_01_SBZDestroyGroup_1_K2Node_ActorBoundEvent_4_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors);
-	void BndEvt__R_Sky_CigarRoom_01_SBZPlayerTriggerVolume_PlayerInsideCigarRoom_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void ExecuteUbergraph_R_Sky_CigarRoom_01(int32 EntryPoint);
-	void OnRandomSublevelPlaced();
-	void ReceiveBeginPlay();
 	void RemoveWaypointCigarRoom();
+	void ReceiveBeginPlay();
+	void OnRandomSublevelPlaced();
+	void ExecuteUbergraph_R_Sky_CigarRoom_01(int32 EntryPoint);
+	void BndEvt__R_Sky_CigarRoom_01_SBZPlayerTriggerVolume_PlayerInsideCigarRoom_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__R_Sky_CigarRoom_01_SBZDestroyGroup_1_K2Node_ActorBoundEvent_4_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors);
+	void BndEvt__R_Sky_CigarRoom_01_BP_RedKeycard3_K2Node_ActorBoundEvent_2_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
+	void BndEvt__R_Sky_CigarRoom_01_BP_RedKeycard2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
+	void BndEvt__R_Sky_CigarRoom_01_BP_RedKeycard1_K2Node_ActorBoundEvent_0_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
+	void BndEvt__R_Penthouse_Office_SBZSpawnLocationHandler1_K2Node_ActorBoundEvent_3_SBZSpawnLocationHandlerDelegate__DelegateSignature();
+	void AddWaypointCigarRoom();
 
 public:
 	static class UClass* StaticClass()
@@ -54,5 +54,6 @@ public:
 		return GetDefaultObjImpl<AR_Sky_CigarRoom_01_C>();
 	}
 };
+DUMPER7_ASSERTS_AR_Sky_CigarRoom_01_C;
 
 SDK_NAMESPACE_END

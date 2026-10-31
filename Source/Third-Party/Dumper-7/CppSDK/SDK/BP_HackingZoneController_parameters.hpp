@@ -17,39 +17,9 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_HackingZoneController.BP_HackingZoneController_C.BndEvt__BP_HackingZoneController_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_HackingZoneController_C_BndEvt__BP_HackingZoneController_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_HackingZoneController.BP_HackingZoneController_C.BP_OnStateChanged
-// 0x0003 (0x0003 - 0x0000)
-struct BP_HackingZoneController_C_BP_OnStateChanged final
-{
-public:
-	ESBZTimerState                                NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZTimerState                                OldState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_HackingZoneController.BP_HackingZoneController_C.Disabled
-// 0x0018 (0x0018 - 0x0000)
-struct BP_HackingZoneController_C_Disabled final
-{
-public:
-	class UUserWidget*                            CallFunc_GetUserWidgetInitialized_ReturnValue;     // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_HackingZoneController_C*           K2Node_DynamicCast_AsWBP_Hacking_Zone_Controller;  // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_HackingZoneController.BP_HackingZoneController_C.Done
+// Function BP_HackingZoneController.BP_HackingZoneController_C.Sabotaged
 // 0x0020 (0x0020 - 0x0000)
-struct BP_HackingZoneController_C_Done final
+struct BP_HackingZoneController_C_Sabotaged final
 {
 public:
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -58,6 +28,46 @@ public:
 	class UWBP_HackingZoneController_C*           K2Node_DynamicCast_AsWBP_Hacking_Zone_Controller;  // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_HackingZoneController_C_Sabotaged;
+
+// Function BP_HackingZoneController.BP_HackingZoneController_C.Running
+// 0x0020 (0x0020 - 0x0000)
+struct BP_HackingZoneController_C_Running final
+{
+public:
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUserWidget*                            CallFunc_GetUserWidgetInitialized_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_HackingZoneController_C*           K2Node_DynamicCast_AsWBP_Hacking_Zone_Controller;  // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_HackingZoneController_C_Running;
+
+// Function BP_HackingZoneController.BP_HackingZoneController_C.Paused
+// 0x0020 (0x0020 - 0x0000)
+struct BP_HackingZoneController_C_Paused final
+{
+public:
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUserWidget*                            CallFunc_GetUserWidgetInitialized_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_HackingZoneController_C*           K2Node_DynamicCast_AsWBP_Hacking_Zone_Controller;  // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_HackingZoneController_C_Paused;
+
+// Function BP_HackingZoneController.BP_HackingZoneController_C.Inactive
+// 0x0020 (0x0020 - 0x0000)
+struct BP_HackingZoneController_C_Inactive final
+{
+public:
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUserWidget*                            CallFunc_GetUserWidgetInitialized_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_HackingZoneController_C*           K2Node_DynamicCast_AsWBP_Hacking_Zone_Controller;  // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_HackingZoneController_C_Inactive;
 
 // Function BP_HackingZoneController.BP_HackingZoneController_C.ExecuteUbergraph_BP_HackingZoneController
 // 0x0058 (0x0058 - 0x0000)
@@ -82,10 +92,11 @@ public:
 	class UWBP_HackingZoneController_C*           K2Node_DynamicCast_AsWBP_Hacking_Zone_Controller;  // 0x0048(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_HackingZoneController_C_ExecuteUbergraph_BP_HackingZoneController;
 
-// Function BP_HackingZoneController.BP_HackingZoneController_C.Inactive
+// Function BP_HackingZoneController.BP_HackingZoneController_C.Done
 // 0x0020 (0x0020 - 0x0000)
-struct BP_HackingZoneController_C_Inactive final
+struct BP_HackingZoneController_C_Done final
 {
 public:
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -94,42 +105,40 @@ public:
 	class UWBP_HackingZoneController_C*           K2Node_DynamicCast_AsWBP_Hacking_Zone_Controller;  // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_HackingZoneController_C_Done;
 
-// Function BP_HackingZoneController.BP_HackingZoneController_C.Paused
-// 0x0020 (0x0020 - 0x0000)
-struct BP_HackingZoneController_C_Paused final
+// Function BP_HackingZoneController.BP_HackingZoneController_C.Disabled
+// 0x0018 (0x0018 - 0x0000)
+struct BP_HackingZoneController_C_Disabled final
 {
 public:
-	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUserWidget*                            CallFunc_GetUserWidgetInitialized_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_HackingZoneController_C*           K2Node_DynamicCast_AsWBP_Hacking_Zone_Controller;  // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUserWidget*                            CallFunc_GetUserWidgetInitialized_ReturnValue;     // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_HackingZoneController_C*           K2Node_DynamicCast_AsWBP_Hacking_Zone_Controller;  // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_HackingZoneController_C_Disabled;
 
-// Function BP_HackingZoneController.BP_HackingZoneController_C.Running
-// 0x0020 (0x0020 - 0x0000)
-struct BP_HackingZoneController_C_Running final
+// Function BP_HackingZoneController.BP_HackingZoneController_C.BP_OnStateChanged
+// 0x0003 (0x0003 - 0x0000)
+struct BP_HackingZoneController_C_BP_OnStateChanged final
 {
 public:
-	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUserWidget*                            CallFunc_GetUserWidgetInitialized_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_HackingZoneController_C*           K2Node_DynamicCast_AsWBP_Hacking_Zone_Controller;  // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZTimerState                                NewState_BP_OnStateChanged;                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZTimerState                                OldState_BP_OnStateChanged;                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_BP_OnStateChanged;                    // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_HackingZoneController_C_BP_OnStateChanged;
 
-// Function BP_HackingZoneController.BP_HackingZoneController_C.Sabotaged
-// 0x0020 (0x0020 - 0x0000)
-struct BP_HackingZoneController_C_Sabotaged final
+// Function BP_HackingZoneController.BP_HackingZoneController_C.BndEvt__BP_HackingZoneController_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_HackingZoneController_C_BndEvt__BP_HackingZoneController_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
 {
 public:
-	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUserWidget*                            CallFunc_GetUserWidgetInitialized_ReturnValue;     // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_HackingZoneController_C*           K2Node_DynamicCast_AsWBP_Hacking_Zone_Controller;  // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_HackingZoneController_C_BndEvt__BP_HackingZoneController_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

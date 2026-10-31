@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_CosmeticPlayingCards_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CosmeticPlayingCards_C;
 
 SDK_NAMESPACE_END

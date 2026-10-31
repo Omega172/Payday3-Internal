@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ABPL_LensWorkshop_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_LensWorkshop_C;
 
 SDK_NAMESPACE_END

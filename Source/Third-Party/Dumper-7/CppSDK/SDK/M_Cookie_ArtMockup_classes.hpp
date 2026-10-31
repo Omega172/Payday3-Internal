@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AM_Cookie_ArtMockup_C>();
 	}
 };
+DUMPER7_ASSERTS_AM_Cookie_ArtMockup_C;
 
 SDK_NAMESPACE_END

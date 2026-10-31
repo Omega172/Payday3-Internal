@@ -16,111 +16,31 @@
 
 SDK_NAMESPACE_START
 
-// Function WidgetPanel.WidgetPanel_C.ExecuteUbergraph_WidgetPanel
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWidgetPanel_C::ExecuteUbergraph_WidgetPanel(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetPanel_C", "ExecuteUbergraph_WidgetPanel");
-
-	Params::WidgetPanel_C_ExecuteUbergraph_WidgetPanel Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WidgetPanel.WidgetPanel_C.Finished_56DA7E7C45AE0904DB1175BE7D4B46E4
+// Function WidgetPanel.WidgetPanel_C.StopBlink
 // (BlueprintCallable, BlueprintEvent)
 
-void UWidgetPanel_C::Finished_56DA7E7C45AE0904DB1175BE7D4B46E4()
+void UWidgetPanel_C::StopBlink()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetPanel_C", "Finished_56DA7E7C45AE0904DB1175BE7D4B46E4");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StopBlink", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WidgetPanel.WidgetPanel_C.Finished_7B946C3149FA1BC9E44D33B46F1CB58B
-// (BlueprintCallable, BlueprintEvent)
-
-void UWidgetPanel_C::Finished_7B946C3149FA1BC9E44D33B46F1CB58B()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetPanel_C", "Finished_7B946C3149FA1BC9E44D33B46F1CB58B");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WidgetPanel.WidgetPanel_C.Finished_86331D804645B60084E04BB6FBA2BB1D
-// (BlueprintCallable, BlueprintEvent)
-
-void UWidgetPanel_C::Finished_86331D804645B60084E04BB6FBA2BB1D()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetPanel_C", "Finished_86331D804645B60084E04BB6FBA2BB1D");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WidgetPanel.WidgetPanel_C.Finished_EE8205CE46CCF146B3BC2FA96BFAADC8
-// (BlueprintCallable, BlueprintEvent)
-
-void UWidgetPanel_C::Finished_EE8205CE46CCF146B3BC2FA96BFAADC8()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetPanel_C", "Finished_EE8205CE46CCF146B3BC2FA96BFAADC8");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WidgetPanel.WidgetPanel_C.PlayBlink
-// (BlueprintCallable, BlueprintEvent)
-
-void UWidgetPanel_C::PlayBlink()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetPanel_C", "PlayBlink");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WidgetPanel.WidgetPanel_C.ResetRotation
+// Function WidgetPanel.WidgetPanel_C.RotateRight
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  Angle                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UWBP_TurnStuff_C*                 NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWidgetPanel_C::ResetRotation(double Angle)
+void UWidgetPanel_C::RotateRight(class UWBP_TurnStuff_C* NewParam)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RotateRight", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetPanel_C", "ResetRotation");
+	Params::WidgetPanel_C_RotateRight Parms{};
 
-	Params::WidgetPanel_C_ResetRotation Parms{};
-
-	Parms.Angle = Angle;
+	Parms.NewParam = NewParam;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -133,10 +53,8 @@ void UWidgetPanel_C::ResetRotation(double Angle)
 
 void UWidgetPanel_C::RotateLeft(class UWBP_TurnStuff_C* NewParam)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetPanel_C", "RotateLeft");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RotateLeft", FnName));
 
 	Params::WidgetPanel_C_RotateLeft Parms{};
 
@@ -146,37 +64,99 @@ void UWidgetPanel_C::RotateLeft(class UWBP_TurnStuff_C* NewParam)
 }
 
 
-// Function WidgetPanel.WidgetPanel_C.RotateRight
+// Function WidgetPanel.WidgetPanel_C.ResetRotation
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UWBP_TurnStuff_C*                 NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// double                                  Angle                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWidgetPanel_C::RotateRight(class UWBP_TurnStuff_C* NewParam)
+void UWidgetPanel_C::ResetRotation(double Angle)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ResetRotation", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetPanel_C", "RotateRight");
+	Params::WidgetPanel_C_ResetRotation Parms{};
 
-	Params::WidgetPanel_C_RotateRight Parms{};
-
-	Parms.NewParam = NewParam;
+	Parms.Angle = Angle;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WidgetPanel.WidgetPanel_C.StopBlink
+// Function WidgetPanel.WidgetPanel_C.PlayBlink
 // (BlueprintCallable, BlueprintEvent)
 
-void UWidgetPanel_C::StopBlink()
+void UWidgetPanel_C::PlayBlink()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WidgetPanel_C", "StopBlink");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayBlink", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WidgetPanel.WidgetPanel_C.Finished_EE8205CE46CCF146B3BC2FA96BFAADC8
+// (BlueprintCallable, BlueprintEvent)
+
+void UWidgetPanel_C::Finished_EE8205CE46CCF146B3BC2FA96BFAADC8()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Finished_EE8205CE46CCF146B3BC2FA96BFAADC8", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WidgetPanel.WidgetPanel_C.Finished_86331D804645B60084E04BB6FBA2BB1D
+// (BlueprintCallable, BlueprintEvent)
+
+void UWidgetPanel_C::Finished_86331D804645B60084E04BB6FBA2BB1D()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Finished_86331D804645B60084E04BB6FBA2BB1D", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WidgetPanel.WidgetPanel_C.Finished_7B946C3149FA1BC9E44D33B46F1CB58B
+// (BlueprintCallable, BlueprintEvent)
+
+void UWidgetPanel_C::Finished_7B946C3149FA1BC9E44D33B46F1CB58B()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Finished_7B946C3149FA1BC9E44D33B46F1CB58B", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WidgetPanel.WidgetPanel_C.Finished_56DA7E7C45AE0904DB1175BE7D4B46E4
+// (BlueprintCallable, BlueprintEvent)
+
+void UWidgetPanel_C::Finished_56DA7E7C45AE0904DB1175BE7D4B46E4()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Finished_56DA7E7C45AE0904DB1175BE7D4B46E4", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WidgetPanel.WidgetPanel_C.ExecuteUbergraph_WidgetPanel
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWidgetPanel_C::ExecuteUbergraph_WidgetPanel(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WidgetPanel_C", "ExecuteUbergraph_WidgetPanel", FuncInfo);
+
+	Params::WidgetPanel_C_ExecuteUbergraph_WidgetPanel Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

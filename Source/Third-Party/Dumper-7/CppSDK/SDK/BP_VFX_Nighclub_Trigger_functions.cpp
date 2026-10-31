@@ -16,6 +16,18 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_VFX_Nighclub_Trigger.BP_VFX_Nighclub_Trigger_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_VFX_Nighclub_Trigger_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_VFX_Nighclub_Trigger.BP_VFX_Nighclub_Trigger_C.ExecuteUbergraph_BP_VFX_Nighclub_Trigger
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,30 +35,14 @@ SDK_NAMESPACE_START
 
 void ABP_VFX_Nighclub_Trigger_C::ExecuteUbergraph_BP_VFX_Nighclub_Trigger(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VFX_Nighclub_Trigger_C", "ExecuteUbergraph_BP_VFX_Nighclub_Trigger");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_VFX_Nighclub_Trigger_C", "ExecuteUbergraph_BP_VFX_Nighclub_Trigger", FuncInfo);
 
 	Params::BP_VFX_Nighclub_Trigger_C_ExecuteUbergraph_BP_VFX_Nighclub_Trigger Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_VFX_Nighclub_Trigger.BP_VFX_Nighclub_Trigger_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_VFX_Nighclub_Trigger_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VFX_Nighclub_Trigger_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

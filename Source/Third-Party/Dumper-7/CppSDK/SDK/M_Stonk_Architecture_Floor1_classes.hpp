@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AM_Stonk_Architecture_Floor1_C>();
 	}
 };
+DUMPER7_ASSERTS_AM_Stonk_Architecture_Floor1_C;
 
 SDK_NAMESPACE_END

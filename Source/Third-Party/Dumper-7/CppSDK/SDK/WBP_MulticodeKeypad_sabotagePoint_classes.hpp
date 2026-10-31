@@ -29,8 +29,8 @@ public:
 	class FText                                   Room_Name;                                         // 0x0318(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void ExecuteUbergraph_WBP_MulticodeKeypad_sabotagePoint(int32 EntryPoint);
 	void setState(int32 state);
+	void ExecuteUbergraph_WBP_MulticodeKeypad_sabotagePoint(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -46,5 +46,6 @@ public:
 		return GetDefaultObjImpl<UWBP_MulticodeKeypad_sabotagePoint_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_MulticodeKeypad_sabotagePoint_C;
 
 SDK_NAMESPACE_END

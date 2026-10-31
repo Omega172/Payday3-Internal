@@ -10,16 +10,16 @@
 
 #include "Basic.hpp"
 
-#include "Starbreeze_structs.hpp"
-#include "Starbreeze_classes.hpp"
+#include "Engine_structs.hpp"
+#include "Threex3_All_Hacking_Minigames_Struct_structs.hpp"
 #include "Fourx4_minigame_Struct_structs.hpp"
 #include "Threex3_Turn_Puzzle_Struct_structs.hpp"
-#include "Engine_structs.hpp"
-#include "AkAudio_structs.hpp"
-#include "Threex3_All_Hacking_Minigames_Struct_structs.hpp"
 #include "Fourx4_All_Hacking_Minigames_Struct_structs.hpp"
 #include "Twox2_All_Hacking_minigames_Struct_structs.hpp"
+#include "Starbreeze_structs.hpp"
+#include "Starbreeze_classes.hpp"
 #include "Twox2_Minigame_Structs_structs.hpp"
+#include "AkAudio_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -120,43 +120,43 @@ public:
 	class UAkComponent*                           Ak_Component;                                      // 0x0B30(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void A();
-	void BP_OnXAxisChanged(float Value);
-	void BP_OnYAxisChanged(float Value);
-	void CalcAnim(class UWidget* self2, bool* NewParam);
-	void CheckCorrect(TArray<double>& Array);
-	void ClockRot();
-	void CoolDown();
-	void CounterRot();
-	void D();
-	void ExecuteUbergraph_WBP_TurnStuff(int32 EntryPoint);
-	void Finished_167BD88B4F667EA7028D92A5B7AB9CE6();
-	void Finished_384C34FC4D12BC46D82645B58C23D4A3();
-	void Finished_5108EE7E40DB4963C7EA10BF93F95D06();
-	void Finished_526358C4467BB346D6980EAA6A34A585();
-	void Finished_915C53CC435C34C1E3A47F97F6282F27();
-	void Func_0(const class FString& StopFunction, const class FString& StartFunction);
-	void Index_Interacted();
-	void MiniGameStateChanged(EPD3MiniGameState NewState);
-	void NewFunction_1(const TArray<struct FTwox2_Minigame_Structs>& TargetArray);
-	void NewRound();
-	void OnMiniGameDifficulty(ESBZDifficulty HeistDifficulty, uint8 MiniGameDifficulty);
-	void OnMiniGameWidgetPlaced(class UAkComponent* AkComponent);
-	void Play_Blink();
-	void PreConstruct(bool IsDesignTime);
-	void Resume();
-	void ReverseAnim(class UWidget* self2);
-	void S();
-	void Set_Random_3x3(const TArray<struct FThreex3_Turn_Puzzle_Struct>& TargetArray);
-	void Set_Random_4x4(const TArray<struct FFourx4_minigame_Struct>& TargetArray);
-	void SetArrays();
-	void SetBoard(TArray<double>& Start, TArray<double>& End, TArray<class UTexture*>& Images);
-	void SetBoardSize();
-	void SetDifficulty(uint8 Minigame_Dif, ESBZDifficulty Heist_Dif);
-	void SetLevelsInHack();
-	void SetMarker();
-	void TimerCount();
 	void W();
+	void TimerCount();
+	void SetMarker();
+	void SetLevelsInHack();
+	void SetDifficulty(uint8 Minigame_Dif, ESBZDifficulty Heist_Dif);
+	void SetBoardSize();
+	void SetBoard(TArray<double>& Start, TArray<double>& End, TArray<class UTexture*>& Images);
+	void SetArrays();
+	void Set_Random_4x4(const TArray<struct FFourx4_minigame_Struct>& TargetArray);
+	void Set_Random_3x3(const TArray<struct FThreex3_Turn_Puzzle_Struct>& TargetArray);
+	void S();
+	void ReverseAnim(class UWidget* self2);
+	void Resume();
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void Play_Blink();
+	void OnMiniGameWidgetPlaced(class UAkComponent* AkComponent_OnMiniGameWidgetPlaced);
+	void OnMiniGameDifficulty(ESBZDifficulty HeistDifficulty_OnMiniGameDifficulty, uint8 MiniGameDifficulty_OnMiniGameDifficulty);
+	void NewRound();
+	void NewFunction_1(const TArray<struct FTwox2_Minigame_Structs>& TargetArray);
+	void MiniGameStateChanged(EPD3MiniGameState NewState_MiniGameStateChanged);
+	void Index_Interacted();
+	void Func_0(const class FString& StopFunction, const class FString& StartFunction);
+	void Finished_915C53CC435C34C1E3A47F97F6282F27();
+	void Finished_526358C4467BB346D6980EAA6A34A585();
+	void Finished_5108EE7E40DB4963C7EA10BF93F95D06();
+	void Finished_384C34FC4D12BC46D82645B58C23D4A3();
+	void Finished_167BD88B4F667EA7028D92A5B7AB9CE6();
+	void ExecuteUbergraph_WBP_TurnStuff(int32 EntryPoint);
+	void D();
+	void CounterRot();
+	void CoolDown();
+	void ClockRot();
+	void CheckCorrect(TArray<double>& Array);
+	void CalcAnim(class UWidget* self2, bool* NewParam);
+	void BP_OnYAxisChanged(float Value_BP_OnYAxisChanged);
+	void BP_OnXAxisChanged(float Value_BP_OnXAxisChanged);
+	void A();
 
 public:
 	static class UClass* StaticClass()
@@ -172,5 +172,6 @@ public:
 		return GetDefaultObjImpl<UWBP_TurnStuff_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_TurnStuff_C;
 
 SDK_NAMESPACE_END

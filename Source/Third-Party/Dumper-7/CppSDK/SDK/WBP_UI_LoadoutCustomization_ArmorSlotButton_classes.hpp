@@ -37,18 +37,18 @@ public:
 	class UWBP_InventoryBaseData_Icon_C*          Widget_Icon;                                       // 0x0468(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Set_Armor_Name_Colour(const struct FLinearColor& DesiredColour);
-	void RefreshVisuals();
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnInitialized();
-	void OnHover(bool bIsHovered);
-	void OnFocused(bool bIsFocused);
-	void OnArmorSlotInitialized();
-	void Initialize_Armor_Visuals(class USBZInventoryBaseData* InInventoryData);
-	void ExecuteUbergraph_WBP_UI_LoadoutCustomization_ArmorSlotButton(int32 EntryPoint);
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
 	void ButtonSelected();
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
+	void ExecuteUbergraph_WBP_UI_LoadoutCustomization_ArmorSlotButton(int32 EntryPoint);
+	void Initialize_Armor_Visuals(class USBZInventoryBaseData* InInventoryData);
+	void OnArmorSlotInitialized();
+	void OnFocused(bool bIsFocused);
+	void OnHover(bool bIsHovered);
+	void OnInitialized();
+	void PreConstruct(bool IsDesignTime);
+	void RefreshVisuals();
+	void Set_Armor_Name_Colour(const struct FLinearColor& DesiredColour);
 
 public:
 	static class UClass* StaticClass()

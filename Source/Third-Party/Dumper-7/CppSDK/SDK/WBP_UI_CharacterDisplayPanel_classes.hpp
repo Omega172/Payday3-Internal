@@ -27,11 +27,11 @@ public:
 	class UTextBlock*                             Text_CharacterNationality;                         // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnEmptySet();
-	void OnCharacterDataChanged(const class USBZPlayerCharacterData* InCharacterData_OnCharacterDataChanged);
-	void InitializeCharacterData(class USBZPlayerCharacterData* InCharacterData);
 	void ExecuteUbergraph_WBP_UI_CharacterDisplayPanel(int32 EntryPoint);
+	void InitializeCharacterData(class USBZPlayerCharacterData* InCharacterData);
+	void OnCharacterDataChanged(const class USBZPlayerCharacterData* InCharacterData);
+	void OnEmptySet();
+	void PreConstruct(bool IsDesignTime);
 
 public:
 	static class UClass* StaticClass()

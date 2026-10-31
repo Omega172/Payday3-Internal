@@ -37,11 +37,11 @@ public:
 	struct FVector                                groundLevel;                                       // 0x03B8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_CHU_RectangularSkylight_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
-	void destroyGlass();
-	void ExecuteUbergraph_BP_ONE_Lobby_Center_CeilingWindow_01(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
 	void UserConstructionScript();
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_ONE_Lobby_Center_CeilingWindow_01(int32 EntryPoint);
+	void destroyGlass();
+	void BndEvt__BP_CHU_RectangularSkylight_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
 
 public:
 	static class UClass* StaticClass()
@@ -57,5 +57,6 @@ public:
 		return GetDefaultObjImpl<ABP_ONE_Lobby_Center_CeilingWindow_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ONE_Lobby_Center_CeilingWindow_01_C;
 
 SDK_NAMESPACE_END

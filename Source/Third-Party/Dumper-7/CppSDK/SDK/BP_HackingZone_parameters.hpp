@@ -17,30 +17,14 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_HackingZone.BP_HackingZone_C.BP_EnabledStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_HackingZone_C_BP_EnabledStateChanged final
+// Function BP_HackingZone.BP_HackingZone_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_HackingZone_C_ReceiveTick final
 {
 public:
-	bool                                          bNewState;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DeltaSeconds_ReceiveTick;                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_HackingZone.BP_HackingZone_C.BP_OnOverlapBegin
-// 0x0001 (0x0001 - 0x0000)
-struct BP_HackingZone_C_BP_OnOverlapBegin final
-{
-public:
-	bool                                          bDoCosmetics;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_HackingZone.BP_HackingZone_C.BP_OnOverlapEnd
-// 0x0001 (0x0001 - 0x0000)
-struct BP_HackingZone_C_BP_OnOverlapEnd final
-{
-public:
-	bool                                          bDoCosmetics;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_HackingZone_C_ReceiveTick;
 
 // Function BP_HackingZone.BP_HackingZone_C.ExecuteUbergraph_BP_HackingZone
 // 0x00A8 (0x00A8 - 0x0000)
@@ -71,14 +55,35 @@ public:
 	double                                        CallFunc_SafeDivide_B_ImplicitCast;                // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetVariableFloat_InValue_ImplicitCast_1;  // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_HackingZone_C_ExecuteUbergraph_BP_HackingZone;
 
-// Function BP_HackingZone.BP_HackingZone_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_HackingZone_C_ReceiveTick final
+// Function BP_HackingZone.BP_HackingZone_C.BP_OnOverlapEnd
+// 0x0001 (0x0001 - 0x0000)
+struct BP_HackingZone_C_BP_OnOverlapEnd final
 {
 public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_BP_OnOverlapEnd;                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_HackingZone_C_BP_OnOverlapEnd;
+
+// Function BP_HackingZone.BP_HackingZone_C.BP_OnOverlapBegin
+// 0x0001 (0x0001 - 0x0000)
+struct BP_HackingZone_C_BP_OnOverlapBegin final
+{
+public:
+	bool                                          bDoCosmetics_BP_OnOverlapBegin;                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_HackingZone_C_BP_OnOverlapBegin;
+
+// Function BP_HackingZone.BP_HackingZone_C.BP_EnabledStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_HackingZone_C_BP_EnabledStateChanged final
+{
+public:
+	bool                                          bNewState_BP_EnabledStateChanged;                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_BP_EnabledStateChanged;               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_HackingZone_C_BP_EnabledStateChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

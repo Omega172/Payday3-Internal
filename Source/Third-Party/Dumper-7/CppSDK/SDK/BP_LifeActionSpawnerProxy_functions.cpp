@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_LifeActionSpawnerProxy.BP_LifeActionSpawnerProxy_C.RegisterSpawner
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ABP_LifeActionSpawner_Base_C*     Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LifeActionSpawnerProxy_C::RegisterSpawner(class ABP_LifeActionSpawner_Base_C* Spawner)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RegisterSpawner", FnName));
+
+	Params::BP_LifeActionSpawnerProxy_C_RegisterSpawner Parms{};
+
+	Parms.Spawner = Spawner;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_LifeActionSpawnerProxy.BP_LifeActionSpawnerProxy_C.AssignEventTagAction
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -25,36 +43,14 @@ SDK_NAMESPACE_START
 
 void ABP_LifeActionSpawnerProxy_C::AssignEventTagAction(const struct FGameplayTag& EventActionTag, double DelayMin, double DelayMax)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LifeActionSpawnerProxy_C", "AssignEventTagAction");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AssignEventTagAction", FnName));
 
 	Params::BP_LifeActionSpawnerProxy_C_AssignEventTagAction Parms{};
 
 	Parms.EventActionTag = std::move(EventActionTag);
 	Parms.DelayMin = DelayMin;
 	Parms.DelayMax = DelayMax;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LifeActionSpawnerProxy.BP_LifeActionSpawnerProxy_C.RegisterSpawner
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class ABP_LifeActionSpawner_Base_C*     Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LifeActionSpawnerProxy_C::RegisterSpawner(class ABP_LifeActionSpawner_Base_C* Spawner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LifeActionSpawnerProxy_C", "RegisterSpawner");
-
-	Params::BP_LifeActionSpawnerProxy_C_RegisterSpawner Parms{};
-
-	Parms.Spawner = Spawner;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

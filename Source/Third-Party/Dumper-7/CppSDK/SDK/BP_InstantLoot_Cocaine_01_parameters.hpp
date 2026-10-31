@@ -32,6 +32,7 @@ public:
 	struct FHitResult                             CallFunc_K2_AddLocalRotation_SweepHitResult;       // 0x0150(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	float                                         CallFunc_MakeRotator_Yaw_ImplicitCast;             // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_InstantLoot_Cocaine_01_C_RandomOffset;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

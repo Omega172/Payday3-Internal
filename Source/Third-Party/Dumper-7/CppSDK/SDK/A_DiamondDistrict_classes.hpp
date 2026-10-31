@@ -39,9 +39,9 @@ public:
 	class ASBZAmbientSound*                       SBZAmbientSound_Bird_39_ExecuteUbergraph_A_DiamondDistrict_RefProperty; // 0x0438(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_A_DiamondDistrict(int32 EntryPoint);
-	void HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState);
 	void ReceiveBeginPlay();
+	void HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged);
+	void ExecuteUbergraph_A_DiamondDistrict(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -57,5 +57,6 @@ public:
 		return GetDefaultObjImpl<AA_DiamondDistrict_C>();
 	}
 };
+DUMPER7_ASSERTS_AA_DiamondDistrict_C;
 
 SDK_NAMESPACE_END

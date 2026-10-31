@@ -41,5 +41,6 @@ public:
 		return GetDefaultObjImpl<ABPL_BigRedLight_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_BigRedLight_01_C;
 
 SDK_NAMESPACE_END

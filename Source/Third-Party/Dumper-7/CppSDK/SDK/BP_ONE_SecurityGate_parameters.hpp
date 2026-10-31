@@ -18,14 +18,24 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_ONE_SecurityGate.BP_ONE_SecurityGate_C.BndEvt__BP_ONE_SecurityGate_magneticLock_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct BP_ONE_SecurityGate_C_BndEvt__BP_ONE_SecurityGate_magneticLock_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature final
+// Function BP_ONE_SecurityGate.BP_ONE_SecurityGate_C.setMagneticLock
+// 0x0001 (0x0001 - 0x0000)
+struct BP_ONE_SecurityGate_C_setMagneticLock final
 {
 public:
-	bool                                          bState_0;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ONE_SecurityGate_C_setMagneticLock;
+
+// Function BP_ONE_SecurityGate.BP_ONE_SecurityGate_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_ONE_SecurityGate_C_OnStateChanged final
+{
+public:
+	bool                                          bStateToChangeTo_OnStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ONE_SecurityGate_C_OnStateChanged;
 
 // Function BP_ONE_SecurityGate.BP_ONE_SecurityGate_C.ExecuteUbergraph_BP_ONE_SecurityGate
 // 0x0538 (0x0538 - 0x0000)
@@ -74,23 +84,17 @@ public:
 	float                                         CallFunc_MakeRotator_Yaw_ImplicitCast_2;           // 0x0530(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_MakeRotator_Yaw_ImplicitCast_3;           // 0x0534(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ONE_SecurityGate_C_ExecuteUbergraph_BP_ONE_SecurityGate;
 
-// Function BP_ONE_SecurityGate.BP_ONE_SecurityGate_C.OnStateChanged
+// Function BP_ONE_SecurityGate.BP_ONE_SecurityGate_C.BndEvt__BP_ONE_SecurityGate_magneticLock_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature
 // 0x0002 (0x0002 - 0x0000)
-struct BP_ONE_SecurityGate_C_OnStateChanged final
+struct BP_ONE_SecurityGate_C_BndEvt__BP_ONE_SecurityGate_magneticLock_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature final
 {
 public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bState;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_ONE_SecurityGate.BP_ONE_SecurityGate_C.setMagneticLock
-// 0x0001 (0x0001 - 0x0000)
-struct BP_ONE_SecurityGate_C_setMagneticLock final
-{
-public:
-	bool                                          enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_ONE_SecurityGate_C_BndEvt__BP_ONE_SecurityGate_magneticLock_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

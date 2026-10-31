@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_InstantLoot_BoxJewelry_01_Necklaces_F_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_InstantLoot_BoxJewelry_01_Necklaces_F_C;
 
 SDK_NAMESPACE_END

@@ -15,6 +15,13 @@
 
 SDK_NAMESPACE_START
 
+// ScriptStruct ABP_Car_Base.ABP_Car_Base_C.AnimBlueprintGeneratedMutableData
+// 0x0000 (0x0001 - 0x0001)
+struct ABP_Car_Base::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
+{
+};
+DUMPER7_ASSERTS_ABP_Car_Base__FAnimBlueprintGeneratedMutableData;
+
 // ScriptStruct ABP_Car_Base.ABP_Car_Base_C.AnimBlueprintGeneratedConstantData
 // 0x01F7 (0x01F8 - 0x0001)
 struct ABP_Car_Base::FAnimBlueprintGeneratedConstantData final : public FAnimBlueprintConstantData
@@ -33,11 +40,6 @@ public:
 	struct FAnimNodeExposedValueHandler_PropertyAccess SBZAnimGraphNode_BuiltInAnimMontagePlayer;    // 0x0188(0x0038)()
 	struct FAnimNodeExposedValueHandler_PropertyAccess AnimGraphNode_WheelController;                // 0x01C0(0x0038)()
 };
-
-// ScriptStruct ABP_Car_Base.ABP_Car_Base_C.AnimBlueprintGeneratedMutableData
-// 0x0000 (0x0001 - 0x0001)
-struct ABP_Car_Base::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
-{
-};
+DUMPER7_ASSERTS_ABP_Car_Base__FAnimBlueprintGeneratedConstantData;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AG_ArmoredTransport_DevHelpers_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_ArmoredTransport_DevHelpers_C;
 
 SDK_NAMESPACE_END

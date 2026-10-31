@@ -41,5 +41,6 @@ public:
 		return GetDefaultObjImpl<ASHI_BPL_Industrial_03_C>();
 	}
 };
+DUMPER7_ASSERTS_ASHI_BPL_Industrial_03_C;
 
 SDK_NAMESPACE_END

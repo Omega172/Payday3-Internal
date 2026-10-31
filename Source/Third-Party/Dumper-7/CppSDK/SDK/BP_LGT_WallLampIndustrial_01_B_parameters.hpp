@@ -18,16 +18,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_LGT_WallLampIndustrial_01_B.BP_LGT_WallLampIndustrial_01_B_C.BndEvt__BP_LGT_WallLampIndustrial_01_B_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
-// 0x0068 (0x0068 - 0x0000)
-struct BP_LGT_WallLampIndustrial_01_B_C_BndEvt__BP_LGT_WallLampIndustrial_01_B_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature final
-{
-public:
-	ESBZCosmeticDestructionType                   Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZCosmeticDestructionContext         HitContext;                                        // 0x0008(0x0060)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
-};
-
 // Function BP_LGT_WallLampIndustrial_01_B.BP_LGT_WallLampIndustrial_01_B_C.ExecuteUbergraph_BP_LGT_WallLampIndustrial_01_B
 // 0x00C8 (0x00C8 - 0x0000)
 struct BP_LGT_WallLampIndustrial_01_B_C_ExecuteUbergraph_BP_LGT_WallLampIndustrial_01_B final
@@ -50,6 +40,18 @@ public:
 	double                                        CallFunc_RandomFloatInRange_ReturnValue;           // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_LGT_WallLampIndustrial_01_B_C_ExecuteUbergraph_BP_LGT_WallLampIndustrial_01_B;
+
+// Function BP_LGT_WallLampIndustrial_01_B.BP_LGT_WallLampIndustrial_01_B_C.BndEvt__BP_LGT_WallLampIndustrial_01_B_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
+// 0x0068 (0x0068 - 0x0000)
+struct BP_LGT_WallLampIndustrial_01_B_C_BndEvt__BP_LGT_WallLampIndustrial_01_B_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature final
+{
+public:
+	ESBZCosmeticDestructionType                   Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZCosmeticDestructionContext         HitContext;                                        // 0x0008(0x0060)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+};
+DUMPER7_ASSERTS_BP_LGT_WallLampIndustrial_01_B_C_BndEvt__BP_LGT_WallLampIndustrial_01_B_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

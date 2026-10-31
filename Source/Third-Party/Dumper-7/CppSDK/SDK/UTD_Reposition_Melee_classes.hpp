@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UUTD_Reposition_Melee_C>();
 	}
 };
+DUMPER7_ASSERTS_UUTD_Reposition_Melee_C;
 
 SDK_NAMESPACE_END

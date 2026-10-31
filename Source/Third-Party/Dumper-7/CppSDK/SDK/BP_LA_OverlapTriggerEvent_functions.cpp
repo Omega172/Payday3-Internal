@@ -16,57 +16,96 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_LA_OverlapTriggerEvent.BP_LA_OverlapTriggerEvent_C.BndEvt__BP_LA_Guard_Scripted_DoorGuard_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
+// Function BP_LA_OverlapTriggerEvent.BP_LA_OverlapTriggerEvent_C.SetTriggerEnable
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bFromSweep                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FHitResult&                SweepResult                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// bool                                    Enable                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LA_OverlapTriggerEvent_C::BndEvt__BP_LA_Guard_Scripted_DoorGuard_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
+void ABP_LA_OverlapTriggerEvent_C::SetTriggerEnable(bool Enable)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetTriggerEnable", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_OverlapTriggerEvent_C", "BndEvt__BP_LA_Guard_Scripted_DoorGuard_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+	Params::BP_LA_OverlapTriggerEvent_C_SetTriggerEnable Parms{};
 
-	Params::BP_LA_OverlapTriggerEvent_C_BndEvt__BP_LA_Guard_Scripted_DoorGuard_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature Parms{};
-
-	Parms.OverlappedComponent = OverlappedComponent;
-	Parms.OtherActor = OtherActor;
-	Parms.OtherComp = OtherComp;
-	Parms.OtherBodyIndex = OtherBodyIndex;
-	Parms.bFromSweep = bFromSweep;
-	Parms.SweepResult = std::move(SweepResult);
+	Parms.Enable = Enable;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_LA_OverlapTriggerEvent.BP_LA_OverlapTriggerEvent_C.BndEvt__BP_LA_Guard_Scripted_DoorGuard_ExitTrigger_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature
+// Function BP_LA_OverlapTriggerEvent.BP_LA_OverlapTriggerEvent_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LA_OverlapTriggerEvent_C::ReceiveTick(float DeltaSeconds)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveTick", FnName));
+
+	Params::BP_LA_OverlapTriggerEvent_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_LA_OverlapTriggerEvent.BP_LA_OverlapTriggerEvent_C.GetCurrentSectionName
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName*                            SectionName                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LA_OverlapTriggerEvent_C::GetCurrentSectionName(class FName* SectionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetCurrentSectionName", FnName));
+
+	Params::BP_LA_OverlapTriggerEvent_C_GetCurrentSectionName Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (SectionName != nullptr)
+		*SectionName = Parms.SectionName;
+}
+
+
+// Function BP_LA_OverlapTriggerEvent.BP_LA_OverlapTriggerEvent_C.ExecuteUbergraph_BP_LA_OverlapTriggerEvent
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LA_OverlapTriggerEvent_C::ExecuteUbergraph_BP_LA_OverlapTriggerEvent(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_LA_OverlapTriggerEvent_C", "ExecuteUbergraph_BP_LA_OverlapTriggerEvent", FuncInfo);
+
+	Params::BP_LA_OverlapTriggerEvent_C_ExecuteUbergraph_BP_LA_OverlapTriggerEvent Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_LA_OverlapTriggerEvent.BP_LA_OverlapTriggerEvent_C.BndEvt__BP_LA_OverlapTriggerEvent_SBZLifeAction_K2Node_ComponentBoundEvent_4_SBZLifeActionEventDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZLifeActionInstance*           ActionInstance                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LA_OverlapTriggerEvent_C::BndEvt__BP_LA_Guard_Scripted_DoorGuard_ExitTrigger_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+void ABP_LA_OverlapTriggerEvent_C::BndEvt__BP_LA_OverlapTriggerEvent_SBZLifeAction_K2Node_ComponentBoundEvent_4_SBZLifeActionEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_LA_OverlapTriggerEvent_SBZLifeAction_K2Node_ComponentBoundEvent_4_SBZLifeActionEventDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_OverlapTriggerEvent_C", "BndEvt__BP_LA_Guard_Scripted_DoorGuard_ExitTrigger_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature");
+	Params::BP_LA_OverlapTriggerEvent_C_BndEvt__BP_LA_OverlapTriggerEvent_SBZLifeAction_K2Node_ComponentBoundEvent_4_SBZLifeActionEventDelegate__DelegateSignature Parms{};
 
-	Params::BP_LA_OverlapTriggerEvent_C_BndEvt__BP_LA_Guard_Scripted_DoorGuard_ExitTrigger_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature Parms{};
-
-	Parms.OverlappedComponent = OverlappedComponent;
-	Parms.OtherActor = OtherActor;
-	Parms.OtherComp = OtherComp;
-	Parms.OtherBodyIndex = OtherBodyIndex;
+	Parms.Character = Character;
+	Parms.ActionInstance = ActionInstance;
+	Parms.ActionSlot = ActionSlot;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -82,10 +121,8 @@ void ABP_LA_OverlapTriggerEvent_C::BndEvt__BP_LA_Guard_Scripted_DoorGuard_ExitTr
 
 void ABP_LA_OverlapTriggerEvent_C::BndEvt__BP_LA_OverlapTriggerEvent_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionStopEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot, ESBZLifeActionStopReason Result)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_OverlapTriggerEvent_C", "BndEvt__BP_LA_OverlapTriggerEvent_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionStopEventDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_LA_OverlapTriggerEvent_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionStopEventDelegate__DelegateSignature", FnName));
 
 	Params::BP_LA_OverlapTriggerEvent_C_BndEvt__BP_LA_OverlapTriggerEvent_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionStopEventDelegate__DelegateSignature Parms{};
 
@@ -98,106 +135,53 @@ void ABP_LA_OverlapTriggerEvent_C::BndEvt__BP_LA_OverlapTriggerEvent_SBZLifeActi
 }
 
 
-// Function BP_LA_OverlapTriggerEvent.BP_LA_OverlapTriggerEvent_C.BndEvt__BP_LA_OverlapTriggerEvent_SBZLifeAction_K2Node_ComponentBoundEvent_4_SBZLifeActionEventDelegate__DelegateSignature
+// Function BP_LA_OverlapTriggerEvent.BP_LA_OverlapTriggerEvent_C.BndEvt__BP_LA_Guard_Scripted_DoorGuard_ExitTrigger_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZLifeActionInstance*           ActionInstance                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LA_OverlapTriggerEvent_C::BndEvt__BP_LA_OverlapTriggerEvent_SBZLifeAction_K2Node_ComponentBoundEvent_4_SBZLifeActionEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot)
+void ABP_LA_OverlapTriggerEvent_C::BndEvt__BP_LA_Guard_Scripted_DoorGuard_ExitTrigger_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_LA_Guard_Scripted_DoorGuard_ExitTrigger_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_OverlapTriggerEvent_C", "BndEvt__BP_LA_OverlapTriggerEvent_SBZLifeAction_K2Node_ComponentBoundEvent_4_SBZLifeActionEventDelegate__DelegateSignature");
+	Params::BP_LA_OverlapTriggerEvent_C_BndEvt__BP_LA_Guard_Scripted_DoorGuard_ExitTrigger_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature Parms{};
 
-	Params::BP_LA_OverlapTriggerEvent_C_BndEvt__BP_LA_OverlapTriggerEvent_SBZLifeAction_K2Node_ComponentBoundEvent_4_SBZLifeActionEventDelegate__DelegateSignature Parms{};
-
-	Parms.Character = Character;
-	Parms.ActionInstance = ActionInstance;
-	Parms.ActionSlot = ActionSlot;
+	Parms.OverlappedComponent = OverlappedComponent;
+	Parms.OtherActor = OtherActor;
+	Parms.OtherComp = OtherComp;
+	Parms.OtherBodyIndex = OtherBodyIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_LA_OverlapTriggerEvent.BP_LA_OverlapTriggerEvent_C.ExecuteUbergraph_BP_LA_OverlapTriggerEvent
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_LA_OverlapTriggerEvent.BP_LA_OverlapTriggerEvent_C.BndEvt__BP_LA_Guard_Scripted_DoorGuard_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bFromSweep                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FHitResult&                SweepResult                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void ABP_LA_OverlapTriggerEvent_C::ExecuteUbergraph_BP_LA_OverlapTriggerEvent(int32 EntryPoint)
+void ABP_LA_OverlapTriggerEvent_C::BndEvt__BP_LA_Guard_Scripted_DoorGuard_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_LA_Guard_Scripted_DoorGuard_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_OverlapTriggerEvent_C", "ExecuteUbergraph_BP_LA_OverlapTriggerEvent");
+	Params::BP_LA_OverlapTriggerEvent_C_BndEvt__BP_LA_Guard_Scripted_DoorGuard_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
-	Params::BP_LA_OverlapTriggerEvent_C_ExecuteUbergraph_BP_LA_OverlapTriggerEvent Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LA_OverlapTriggerEvent.BP_LA_OverlapTriggerEvent_C.GetCurrentSectionName
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName*                            SectionName                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LA_OverlapTriggerEvent_C::GetCurrentSectionName(class FName* SectionName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_OverlapTriggerEvent_C", "GetCurrentSectionName");
-
-	Params::BP_LA_OverlapTriggerEvent_C_GetCurrentSectionName Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (SectionName != nullptr)
-		*SectionName = Parms.SectionName;
-}
-
-
-// Function BP_LA_OverlapTriggerEvent.BP_LA_OverlapTriggerEvent_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LA_OverlapTriggerEvent_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_OverlapTriggerEvent_C", "ReceiveTick");
-
-	Params::BP_LA_OverlapTriggerEvent_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LA_OverlapTriggerEvent.BP_LA_OverlapTriggerEvent_C.SetTriggerEnable
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Enable                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LA_OverlapTriggerEvent_C::SetTriggerEnable(bool Enable)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_OverlapTriggerEvent_C", "SetTriggerEnable");
-
-	Params::BP_LA_OverlapTriggerEvent_C_SetTriggerEnable Parms{};
-
-	Parms.Enable = Enable;
+	Parms.OverlappedComponent = OverlappedComponent;
+	Parms.OtherActor = OtherActor;
+	Parms.OtherComp = OtherComp;
+	Parms.OtherBodyIndex = OtherBodyIndex;
+	Parms.bFromSweep = bFromSweep;
+	Parms.SweepResult = std::move(SweepResult);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

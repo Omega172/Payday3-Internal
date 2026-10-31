@@ -16,22 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function ABP_GarbageTruck.ABP_GarbageTruck_C.AnimGraph
-// 0x0010 (0x0010 - 0x0000)
-struct ABP_GarbageTruck_C_AnimGraph final
-{
-public:
-	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
-};
-
-// Function ABP_GarbageTruck.ABP_GarbageTruck_C.BlueprintUpdateAnimation
-// 0x0004 (0x0004 - 0x0000)
-struct ABP_GarbageTruck_C_BlueprintUpdateAnimation final
-{
-public:
-	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function ABP_GarbageTruck.ABP_GarbageTruck_C.ExecuteUbergraph_ABP_GarbageTruck
 // 0x0020 (0x0020 - 0x0000)
 struct ABP_GarbageTruck_C_ExecuteUbergraph_ABP_GarbageTruck final
@@ -43,6 +27,25 @@ public:
 	class ABP_EscapeGarbageTruck_C*               K2Node_DynamicCast_AsBP_Escape_Garbage_Truck;      // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_ABP_GarbageTruck_C_ExecuteUbergraph_ABP_GarbageTruck;
+
+// Function ABP_GarbageTruck.ABP_GarbageTruck_C.BlueprintUpdateAnimation
+// 0x0004 (0x0004 - 0x0000)
+struct ABP_GarbageTruck_C_BlueprintUpdateAnimation final
+{
+public:
+	float                                         DeltaTimeX_BlueprintUpdateAnimation;               // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_ABP_GarbageTruck_C_BlueprintUpdateAnimation;
+
+// Function ABP_GarbageTruck.ABP_GarbageTruck_C.AnimGraph
+// 0x0010 (0x0010 - 0x0000)
+struct ABP_GarbageTruck_C_AnimGraph final
+{
+public:
+	struct FPoseLink                              AnimGraph;                                         // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
+};
+DUMPER7_ASSERTS_ABP_GarbageTruck_C_AnimGraph;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -18,86 +18,60 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.SetStrategy
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_NewButton_Cosmetics_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_CustomizeScreen_C_SetStrategy final
+struct WBP_CustomizeScreen_C_BndEvt__WBP_CustomizeScreen_NewButton_Cosmetics_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	class USBZBaseItemStrategy*                   Strategy;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CustomizeScreen_C_SetStrategy;
+DUMPER7_ASSERTS_WBP_CustomizeScreen_C_BndEvt__WBP_CustomizeScreen_NewButton_Cosmetics_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature;
 
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.SetItemDecoration
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_NewButton_Customize_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_CustomizeScreen_C_SetItemDecoration final
+struct WBP_CustomizeScreen_C_BndEvt__WBP_CustomizeScreen_NewButton_Customize_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	class USBZInventoryItemDecorator*             ItemDeco;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CustomizeScreen_C_SetItemDecoration;
+DUMPER7_ASSERTS_WBP_CustomizeScreen_C_BndEvt__WBP_CustomizeScreen_NewButton_Customize_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature;
 
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.PrePush_5CF471434F18C94D120FAC95FECE6E48
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_10_OnMenuButtonSelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_CustomizeScreen_C_PrePush_5CF471434F18C94D120FAC95FECE6E48 final
+struct WBP_CustomizeScreen_C_BndEvt__WBP_CustomizeScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_10_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CustomizeScreen_C_PrePush_5CF471434F18C94D120FAC95FECE6E48;
+DUMPER7_ASSERTS_WBP_CustomizeScreen_C_BndEvt__WBP_CustomizeScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_10_OnMenuButtonSelected__DelegateSignature;
 
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.PostPush_5CF471434F18C94D120FAC95FECE6E48
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CustomizeScreen_C_PostPush_5CF471434F18C94D120FAC95FECE6E48 final
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_1_OnListItemSelectionChangedDynamic__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_CustomizeScreen_C_BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_1_OnListItemSelectionChangedDynamic__DelegateSignature final
 {
 public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Item;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsSelected;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CustomizeScreen_C_PostPush_5CF471434F18C94D120FAC95FECE6E48;
+DUMPER7_ASSERTS_WBP_CustomizeScreen_C_BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_1_OnListItemSelectionChangedDynamic__DelegateSignature;
 
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.OnPurchaseDone
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_2_SimpleListItemEventDynamic__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CustomizeScreen_C_BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_2_SimpleListItemEventDynamic__DelegateSignature final
+{
+public:
+	class UObject*                                Item;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CustomizeScreen_C_BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_2_SimpleListItemEventDynamic__DelegateSignature;
+
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.CustomEvent_0
 // 0x000C (0x000C - 0x0000)
-struct WBP_CustomizeScreen_C_OnPurchaseDone final
+struct WBP_CustomizeScreen_C_CustomEvent_0 final
 {
 public:
-	class FName                                   ClosingActionName;                                 // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CustomizeScreen_C_OnPurchaseDone;
-
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.OnGainedStackFocused
-// 0x000C (0x000C - 0x0000)
-struct WBP_CustomizeScreen_C_OnGainedStackFocused final
-{
-public:
-	class FName                                   PreviousValue_OnGainedStackFocused;                // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CustomizeScreen_C_OnGainedStackFocused;
-
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.ItemStrategy_OnActionExecuted
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CustomizeScreen_C_ItemStrategy_OnActionExecuted final
-{
-public:
-	ESBZItemAction                                Action;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CustomizeScreen_C_ItemStrategy_OnActionExecuted;
-
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.GetWeaponConfig
-// 0x0128 (0x0128 - 0x0000)
-struct WBP_CustomizeScreen_C_GetWeaponConfig final
-{
-public:
-	ESBZEquippableLoadoutSlot                     ItemSlot;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Index_0;                                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSBZWeaponInventorySlot                Output;                                            // 0x0008(0x00F0)(Parm, OutParm)
-	bool                                          bFound;                                            // 0x00F8(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZSaveManager*                        CallFunc_GetChecked_ReturnValue;                   // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZProgressionSaveGame*                CallFunc_GetProgressionSaveGame_ReturnValue;       // 0x0108(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FSBZWeaponInventorySlot>        CallFunc_GetWeaponInventorySlotArray_ReturnValue;  // 0x0110(0x0010)(ConstParm, ReferenceParm)
-	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CustomizeScreen_C_GetWeaponConfig;
+DUMPER7_ASSERTS_WBP_CustomizeScreen_C_CustomEvent_0;
 
 // Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.ExecuteUbergraph_WBP_CustomizeScreen
 // 0x0670 (0x0670 - 0x0000)
@@ -293,60 +267,86 @@ public:
 };
 DUMPER7_ASSERTS_WBP_CustomizeScreen_C_ExecuteUbergraph_WBP_CustomizeScreen;
 
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.CustomEvent_0
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.GetWeaponConfig
+// 0x0128 (0x0128 - 0x0000)
+struct WBP_CustomizeScreen_C_GetWeaponConfig final
+{
+public:
+	ESBZEquippableLoadoutSlot                     ItemSlot;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Index_0;                                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSBZWeaponInventorySlot                Output;                                            // 0x0008(0x00F0)(Parm, OutParm)
+	bool                                          bFound;                                            // 0x00F8(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZSaveManager*                        CallFunc_GetChecked_ReturnValue;                   // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZProgressionSaveGame*                CallFunc_GetProgressionSaveGame_ReturnValue;       // 0x0108(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FSBZWeaponInventorySlot>        CallFunc_GetWeaponInventorySlotArray_ReturnValue;  // 0x0110(0x0010)(ConstParm, ReferenceParm)
+	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CustomizeScreen_C_GetWeaponConfig;
+
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.ItemStrategy_OnActionExecuted
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CustomizeScreen_C_ItemStrategy_OnActionExecuted final
+{
+public:
+	ESBZItemAction                                Action;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CustomizeScreen_C_ItemStrategy_OnActionExecuted;
+
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.OnGainedStackFocused
 // 0x000C (0x000C - 0x0000)
-struct WBP_CustomizeScreen_C_CustomEvent_0 final
+struct WBP_CustomizeScreen_C_OnGainedStackFocused final
 {
 public:
-	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CustomizeScreen_C_CustomEvent_0;
+DUMPER7_ASSERTS_WBP_CustomizeScreen_C_OnGainedStackFocused;
 
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_2_SimpleListItemEventDynamic__DelegateSignature
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.OnPurchaseDone
+// 0x000C (0x000C - 0x0000)
+struct WBP_CustomizeScreen_C_OnPurchaseDone final
+{
+public:
+	class FName                                   ClosingActionName;                                 // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CustomizeScreen_C_OnPurchaseDone;
+
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.PostPush_5CF471434F18C94D120FAC95FECE6E48
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_CustomizeScreen_C_BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_2_SimpleListItemEventDynamic__DelegateSignature final
+struct WBP_CustomizeScreen_C_PostPush_5CF471434F18C94D120FAC95FECE6E48 final
 {
 public:
-	class UObject*                                Item;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CustomizeScreen_C_BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_2_SimpleListItemEventDynamic__DelegateSignature;
+DUMPER7_ASSERTS_WBP_CustomizeScreen_C_PostPush_5CF471434F18C94D120FAC95FECE6E48;
 
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_1_OnListItemSelectionChangedDynamic__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_CustomizeScreen_C_BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_1_OnListItemSelectionChangedDynamic__DelegateSignature final
-{
-public:
-	class UObject*                                Item;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsSelected;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CustomizeScreen_C_BndEvt__WBP_CustomizeScreen_SBZTileView_20_K2Node_ComponentBoundEvent_1_OnListItemSelectionChangedDynamic__DelegateSignature;
-
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_10_OnMenuButtonSelected__DelegateSignature
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.PrePush_5CF471434F18C94D120FAC95FECE6E48
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_CustomizeScreen_C_BndEvt__WBP_CustomizeScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_10_OnMenuButtonSelected__DelegateSignature final
+struct WBP_CustomizeScreen_C_PrePush_5CF471434F18C94D120FAC95FECE6E48 final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CustomizeScreen_C_BndEvt__WBP_CustomizeScreen_NewButton_Purchase_K2Node_ComponentBoundEvent_10_OnMenuButtonSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_CustomizeScreen_C_PrePush_5CF471434F18C94D120FAC95FECE6E48;
 
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_NewButton_Customize_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.SetItemDecoration
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_CustomizeScreen_C_BndEvt__WBP_CustomizeScreen_NewButton_Customize_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature final
+struct WBP_CustomizeScreen_C_SetItemDecoration final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInventoryItemDecorator*             ItemDeco;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CustomizeScreen_C_BndEvt__WBP_CustomizeScreen_NewButton_Customize_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_CustomizeScreen_C_SetItemDecoration;
 
-// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.BndEvt__WBP_CustomizeScreen_NewButton_Cosmetics_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature
+// Function WBP_CustomizeScreen.WBP_CustomizeScreen_C.SetStrategy
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_CustomizeScreen_C_BndEvt__WBP_CustomizeScreen_NewButton_Cosmetics_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature final
+struct WBP_CustomizeScreen_C_SetStrategy final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseItemStrategy*                   Strategy_0;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CustomizeScreen_C_BndEvt__WBP_CustomizeScreen_NewButton_Cosmetics_K2Node_ComponentBoundEvent_9_OnMenuButtonSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_CustomizeScreen_C_SetStrategy;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -16,77 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_LootableCarBagBase.BP_LootableCarBagBase_C.BndEvt__BP_LootableCarBagBase_Interactable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// const class USBZBaseInteractableComponent*InteractableComponent                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_LootableCarBagBase.BP_LootableCarBagBase_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_LootableCarBagBase_C::BndEvt__BP_LootableCarBagBase_Interactable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
+void ABP_LootableCarBagBase_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LootableCarBagBase_C", "BndEvt__BP_LootableCarBagBase_Interactable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature");
-
-	Params::BP_LootableCarBagBase_C_BndEvt__BP_LootableCarBagBase_Interactable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.InteractableComponent = InteractableComponent;
-	Parms.bInNewState = bInNewState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LootableCarBagBase.BP_LootableCarBagBase_C.BP_OnChangedToSecondaryType
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LootableCarBagBase_C::BP_OnChangedToSecondaryType(bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LootableCarBagBase_C", "BP_OnChangedToSecondaryType");
-
-	Params::BP_LootableCarBagBase_C_BP_OnChangedToSecondaryType Parms{};
-
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LootableCarBagBase.BP_LootableCarBagBase_C.ExecuteUbergraph_BP_LootableCarBagBase
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LootableCarBagBase_C::ExecuteUbergraph_BP_LootableCarBagBase(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LootableCarBagBase_C", "ExecuteUbergraph_BP_LootableCarBagBase");
-
-	Params::BP_LootableCarBagBase_C_ExecuteUbergraph_BP_LootableCarBagBase Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LootableCarBagBase.BP_LootableCarBagBase_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_LootableCarBagBase_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LootableCarBagBase_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -99,10 +35,8 @@ void ABP_LootableCarBagBase_C::ReceiveBeginPlay()
 
 void ABP_LootableCarBagBase_C::setLootVisibility(bool visible)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LootableCarBagBase_C", "setLootVisibility");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setLootVisibility", FnName));
 
 	Params::BP_LootableCarBagBase_C_setLootVisibility Parms{};
 
@@ -112,17 +46,71 @@ void ABP_LootableCarBagBase_C::setLootVisibility(bool visible)
 }
 
 
-// Function BP_LootableCarBagBase.BP_LootableCarBagBase_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_LootableCarBagBase.BP_LootableCarBagBase_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_LootableCarBagBase_C::UserConstructionScript()
+void ABP_LootableCarBagBase_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LootableCarBagBase_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_LootableCarBagBase.BP_LootableCarBagBase_C.ExecuteUbergraph_BP_LootableCarBagBase
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LootableCarBagBase_C::ExecuteUbergraph_BP_LootableCarBagBase(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_LootableCarBagBase_C", "ExecuteUbergraph_BP_LootableCarBagBase", FuncInfo);
+
+	Params::BP_LootableCarBagBase_C_ExecuteUbergraph_BP_LootableCarBagBase Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_LootableCarBagBase.BP_LootableCarBagBase_C.BP_OnChangedToSecondaryType
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LootableCarBagBase_C::BP_OnChangedToSecondaryType(bool bDoCosmetics)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnChangedToSecondaryType", FnName));
+
+	Params::BP_LootableCarBagBase_C_BP_OnChangedToSecondaryType Parms{};
+
+	Parms.bDoCosmetics = bDoCosmetics;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_LootableCarBagBase.BP_LootableCarBagBase_C.BndEvt__BP_LootableCarBagBase_Interactable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// const class USBZBaseInteractableComponent*InteractableComponent                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LootableCarBagBase_C::BndEvt__BP_LootableCarBagBase_Interactable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_LootableCarBagBase_Interactable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature", FnName));
+
+	Params::BP_LootableCarBagBase_C_BndEvt__BP_LootableCarBagBase_Interactable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
+
+	Parms.InteractableComponent = InteractableComponent;
+	Parms.bInNewState = bInNewState;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

@@ -16,11 +16,11 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Nebula_mask.BP_Nebula_mask_C
-// 0x0008 (0x03D0 - 0x03C8)
+// 0x0008 (0x03E0 - 0x03D8)
 class ABP_Nebula_mask_C final : public ASBZMask
 {
 public:
-	class UMaterialInstanceDynamic*               DynMat;                                            // 0x03C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               DynMat;                                            // 0x03D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void UserConstructionScript();
@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ABP_Nebula_mask_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Nebula_mask_C;
 
 SDK_NAMESPACE_END

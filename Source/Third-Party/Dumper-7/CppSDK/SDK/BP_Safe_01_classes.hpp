@@ -18,29 +18,29 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Safe_01.BP_Safe_01_C
-// 0x0048 (0x03D0 - 0x0388)
+// 0x0048 (0x03D8 - 0x0390)
 class ABP_Safe_01_C : public ASBZMiniGameActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0388(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USBZPropDamageComponent*                SBZPropDamage;                                     // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Safe_01_DoorHandle;                                // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Safe_01_Door;                                      // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAkComponent*                           Ak;                                                // 0x03A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         open_timeline_handleAlpha_5677811847247746596273B44F8A568C; // 0x03B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         open_timeline_doorAlpha_5677811847247746596273B44F8A568C; // 0x03B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            open_timeline__Direction_5677811847247746596273B44F8A568C; // 0x03B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3B9[0x7];                                      // 0x03B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     open_timeline;                                     // 0x03C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	double                                        openAngle;                                         // 0x03C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0390(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USBZPropDamageComponent*                SBZPropDamage;                                     // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Safe_01_DoorHandle;                                // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Safe_01_Door;                                      // 0x03A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAkComponent*                           Ak;                                                // 0x03B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         open_timeline_handleAlpha_5677811847247746596273B44F8A568C; // 0x03B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         open_timeline_doorAlpha_5677811847247746596273B44F8A568C; // 0x03BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            open_timeline__Direction_5677811847247746596273B44F8A568C; // 0x03C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3C1[0x7];                                      // 0x03C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     open_timeline;                                     // 0x03C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	double                                        openAngle;                                         // 0x03D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_Safe_01_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
-	void BP_OnMiniGameSuccess(bool bDoCosmetics);
-	void ExecuteUbergraph_BP_Safe_01(int32 EntryPoint);
-	void open_timeline__FinishedFunc();
-	void open_timeline__UpdateFunc();
 	void phaseDoor(bool shouldPhase);
+	void open_timeline__UpdateFunc();
+	void open_timeline__FinishedFunc();
+	void ExecuteUbergraph_BP_Safe_01(int32 EntryPoint);
+	void BP_OnMiniGameSuccess(bool bDoCosmetics);
+	void BndEvt__BP_Safe_01_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
 
 public:
 	static class UClass* StaticClass()
@@ -56,5 +56,6 @@ public:
 		return GetDefaultObjImpl<ABP_Safe_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Safe_01_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_PhoneTable_01_SCR_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PhoneTable_01_SCR_C;
 
 SDK_NAMESPACE_END

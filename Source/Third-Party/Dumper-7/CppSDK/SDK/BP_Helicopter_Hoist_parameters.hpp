@@ -18,6 +18,79 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_Helicopter_Hoist.BP_Helicopter_Hoist_C.UserConstructionScript
+// 0x0001 (0x0001 - 0x0000)
+struct BP_Helicopter_Hoist_C_UserConstructionScript final
+{
+public:
+	bool                                          CallFunc_ApplyVariationToSkeletal_ReturnValue;     // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Helicopter_Hoist_C_UserConstructionScript;
+
+// Function BP_Helicopter_Hoist.BP_Helicopter_Hoist_C.ReceiveOnDoorStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_Helicopter_Hoist_C_ReceiveOnDoorStateChanged final
+{
+public:
+	ESBZAerialVehicleDoor                         Door_ReceiveOnDoorStateChanged;                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsDoorOpen_ReceiveOnDoorStateChanged;             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Helicopter_Hoist_C_ReceiveOnDoorStateChanged;
+
+// Function BP_Helicopter_Hoist.BP_Helicopter_Hoist_C.ExecuteUbergraph_BP_Helicopter_Hoist
+// 0x01B8 (0x01B8 - 0x0000)
+struct BP_Helicopter_Hoist_C_ExecuteUbergraph_BP_Helicopter_Hoist final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_CheckDistanceToGround_Location;           // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_CheckDistanceToGround_DistanceToGround;   // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_MapRangeClamped_ReturnValue;              // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_CheckDistanceToGround_Location_1;         // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_CheckDistanceToGround_DistanceToGround_1; // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_DoubleDouble_ReturnValue;            // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult; // 0x0060(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class ASBZAerialVehicle*                      K2Node_CustomEvent_Vehicle_1;                      // 0x0168(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZAerialVehicleDoor                         K2Node_Event_Door;                                 // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bIsDoorOpen;                          // 0x0171(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_172[0x6];                                      // 0x0172(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAnimInstance*                          CallFunc_GetAnimInstance_ReturnValue;              // 0x0178(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ApplyVariationToSkeletal_ReturnValue;     // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_181[0x7];                                      // 0x0181(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UABP_Helicopter_C*                      K2Node_DynamicCast_AsABP_Helicopter;               // 0x0188(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_191[0x7];                                      // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZAerialVehicle*                      K2Node_CustomEvent_Vehicle;                        // 0x0198(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_CustomEvent_State;                          // 0x01A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x01AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1AD[0x3];                                      // 0x01AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_SetVariableFloat_InValue_ImplicitCast;    // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Helicopter_Hoist_C_ExecuteUbergraph_BP_Helicopter_Hoist;
+
+// Function BP_Helicopter_Hoist.BP_Helicopter_Hoist_C.CustomEvent_1
+// 0x0018 (0x0018 - 0x0000)
+struct BP_Helicopter_Hoist_C_CustomEvent_1 final
+{
+public:
+	class ASBZAerialVehicle*                      Vehicle;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   State;                                             // 0x0008(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Helicopter_Hoist_C_CustomEvent_1;
+
+// Function BP_Helicopter_Hoist.BP_Helicopter_Hoist_C.CustomEvent_0
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Helicopter_Hoist_C_CustomEvent_0 final
+{
+public:
+	class ASBZAerialVehicle*                      Vehicle;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Helicopter_Hoist_C_CustomEvent_0;
+
 // Function BP_Helicopter_Hoist.BP_Helicopter_Hoist_C.CheckDistanceToGround
 // 0x0270 (0x0270 - 0x0000)
 struct BP_Helicopter_Hoist_C_CheckDistanceToGround final
@@ -55,74 +128,7 @@ public:
 	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue_1;      // 0x0250(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_VSize_ReturnValue;                        // 0x0268(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_Helicopter_Hoist.BP_Helicopter_Hoist_C.CustomEvent_0
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Helicopter_Hoist_C_CustomEvent_0 final
-{
-public:
-	class ASBZAerialVehicle*                      Vehicle;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_Helicopter_Hoist.BP_Helicopter_Hoist_C.CustomEvent_1
-// 0x0018 (0x0018 - 0x0000)
-struct BP_Helicopter_Hoist_C_CustomEvent_1 final
-{
-public:
-	class ASBZAerialVehicle*                      Vehicle;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   State;                                             // 0x0008(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_Helicopter_Hoist.BP_Helicopter_Hoist_C.ExecuteUbergraph_BP_Helicopter_Hoist
-// 0x01B8 (0x01B8 - 0x0000)
-struct BP_Helicopter_Hoist_C_ExecuteUbergraph_BP_Helicopter_Hoist final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_CheckDistanceToGround_Location;           // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_CheckDistanceToGround_DistanceToGround;   // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_MapRangeClamped_ReturnValue;              // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_DoubleDouble_ReturnValue;         // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_CheckDistanceToGround_Location_1;         // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_CheckDistanceToGround_DistanceToGround_1; // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_DoubleDouble_ReturnValue;            // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult; // 0x0060(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class ASBZAerialVehicle*                      K2Node_CustomEvent_Vehicle_1;                      // 0x0168(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZAerialVehicleDoor                         K2Node_Event_Door;                                 // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bIsDoorOpen;                          // 0x0171(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_172[0x6];                                      // 0x0172(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAnimInstance*                          CallFunc_GetAnimInstance_ReturnValue;              // 0x0178(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ApplyVariationToSkeletal_ReturnValue;     // 0x0180(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_181[0x7];                                      // 0x0181(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UABP_Helicopter_C*                      K2Node_DynamicCast_AsABP_Helicopter;               // 0x0188(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_191[0x7];                                      // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZAerialVehicle*                      K2Node_CustomEvent_Vehicle;                        // 0x0198(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   K2Node_CustomEvent_State;                          // 0x01A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x01AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1AD[0x3];                                      // 0x01AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_SetVariableFloat_InValue_ImplicitCast;    // 0x01B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_Helicopter_Hoist.BP_Helicopter_Hoist_C.ReceiveOnDoorStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_Helicopter_Hoist_C_ReceiveOnDoorStateChanged final
-{
-public:
-	ESBZAerialVehicleDoor                         Door;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsDoorOpen;                                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_Helicopter_Hoist.BP_Helicopter_Hoist_C.UserConstructionScript
-// 0x0001 (0x0001 - 0x0000)
-struct BP_Helicopter_Hoist_C_UserConstructionScript final
-{
-public:
-	bool                                          CallFunc_ApplyVariationToSkeletal_ReturnValue;     // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_Helicopter_Hoist_C_CheckDistanceToGround;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

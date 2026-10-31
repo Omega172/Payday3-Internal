@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABP_CleanedServerBagWorldItem_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CleanedServerBagWorldItem_C;
 
 SDK_NAMESPACE_END

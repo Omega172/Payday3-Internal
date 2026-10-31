@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ADAT_INT_ServerRoom_SupportCenter_Glass_02_BP_C>();
 	}
 };
+DUMPER7_ASSERTS_ADAT_INT_ServerRoom_SupportCenter_Glass_02_BP_C;
 
 SDK_NAMESPACE_END

@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_ValidatedBag_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ValidatedBag_C;
 
 SDK_NAMESPACE_END

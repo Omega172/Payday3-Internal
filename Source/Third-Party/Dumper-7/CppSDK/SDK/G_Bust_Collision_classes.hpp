@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AG_Bust_Collision_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_Bust_Collision_C;
 
 SDK_NAMESPACE_END

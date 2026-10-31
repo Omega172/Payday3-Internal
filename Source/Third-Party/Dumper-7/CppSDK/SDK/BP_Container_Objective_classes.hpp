@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Enum_ContainerColor_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "Enum_ContainerColor_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -57,12 +57,12 @@ public:
 	class UMaterialInterface*                     secondaryMaterial;                                 // 0x0408(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_Container_Objective(int32 EntryPoint);
-	void Set_Doors_Open();
-	void SetAsLootContainer();
-	void setBinaryState(bool state, bool doCosmetics);
-	void SetIsTraversable();
 	void UserConstructionScript();
+	void SetIsTraversable();
+	void setBinaryState(bool state, bool doCosmetics);
+	void SetAsLootContainer();
+	void Set_Doors_Open();
+	void ExecuteUbergraph_BP_Container_Objective(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -78,5 +78,6 @@ public:
 		return GetDefaultObjImpl<ABP_Container_Objective_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Container_Objective_C;
 
 SDK_NAMESPACE_END

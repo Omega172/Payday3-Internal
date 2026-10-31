@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_EMPBagWorldItem_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_EMPBagWorldItem_C;
 
 SDK_NAMESPACE_END

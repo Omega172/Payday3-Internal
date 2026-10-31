@@ -17,101 +17,73 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.BndEvt__BP_Remote_steering_device_Interactable_Hack_Interaction_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_Remote_steering_device_RPC_C_BndEvt__BP_Remote_steering_device_Interactable_Hack_Interaction_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature final
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Show_Standby
+// 0x001C (0x001C - 0x0000)
+struct BP_Remote_steering_device_RPC_C_Show_Standby final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable_0;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable; // 0x0004(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Remote_steering_device_RPC_C_Show_Standby;
 
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.BndEvt__BP_Remote_steering_device_Interactable_Start_Hacking_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_Remote_steering_device_RPC_C_BndEvt__BP_Remote_steering_device_Interactable_Start_Hacking_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable_0;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.BndEvt__BP_SabotagePoint_ArmoredTruck_interactable_fix_remote_steering_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_Remote_steering_device_RPC_C_BndEvt__BP_SabotagePoint_ArmoredTruck_interactable_fix_remote_steering_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable_0;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.BndEvt__BP_SabotagePoint_ArmoredTruck_Interactable_Start_Escort_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_Remote_steering_device_RPC_C_BndEvt__BP_SabotagePoint_ArmoredTruck_Interactable_Start_Escort_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable_0;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Device_Hacking
-// 0x0058 (0x0058 - 0x0000)
-struct BP_Remote_steering_device_RPC_C_Device_Hacking final
-{
-public:
-	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable; // 0x0000(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable_1; // 0x0014(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_AddReplicatedMarker_ReturnValue;          // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_PostEvent_ReturnValue_1;                  // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Device_show
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Set_screen_Standby
 // 0x0001 (0x0001 - 0x0000)
-struct BP_Remote_steering_device_RPC_C_Device_show final
+struct BP_Remote_steering_device_RPC_C_Set_screen_Standby final
 {
 public:
 	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Remote_steering_device_RPC_C_Set_screen_Standby;
 
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Enable_Fix_Interaction
-// 0x0028 (0x0028 - 0x0000)
-struct BP_Remote_steering_device_RPC_C_Enable_Fix_Interaction final
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Set_screen_Interrupt
+// 0x0001 (0x0001 - 0x0000)
+struct BP_Remote_steering_device_RPC_C_Set_screen_Interrupt final
 {
 public:
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_AddReplicatedMarker_ReturnValue;          // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Remote_steering_device_RPC_C_Set_screen_Interrupt;
 
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Enable_hack_interaction
-// 0x0028 (0x0028 - 0x0000)
-struct BP_Remote_steering_device_RPC_C_Enable_hack_interaction final
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Set_screen_Hack
+// 0x0001 (0x0001 - 0x0000)
+struct BP_Remote_steering_device_RPC_C_Set_screen_Hack final
 {
 public:
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_AddReplicatedMarker_ReturnValue;          // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Remote_steering_device_RPC_C_Set_screen_Hack;
 
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Enable_Initiate_Interaction
-// 0x0028 (0x0028 - 0x0000)
-struct BP_Remote_steering_device_RPC_C_Enable_Initiate_Interaction final
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Set_Screen_escort
+// 0x0001 (0x0001 - 0x0000)
+struct BP_Remote_steering_device_RPC_C_Set_Screen_escort final
 {
 public:
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_AddReplicatedMarker_ReturnValue;          // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Remote_steering_device_RPC_C_Set_Screen_escort;
+
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Remove_Marker
+// 0x0002 (0x0002 - 0x0000)
+struct BP_Remote_steering_device_RPC_C_Remove_Marker final
+{
+public:
+	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Remote_steering_device_RPC_C_Remove_Marker;
+
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.OnRep_is_visible
+// 0x0018 (0x0018 - 0x0000)
+struct BP_Remote_steering_device_RPC_C_OnRep_is_visible final
+{
+public:
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable; // 0x0000(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_PostAkEvent_ReturnValue;                  // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Remote_steering_device_RPC_C_OnRep_is_visible;
 
 // Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.ExecuteUbergraph_BP_Remote_steering_device_RPC
 // 0x00D0 (0x00D0 - 0x0000)
@@ -146,67 +118,112 @@ public:
 	double                                        CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Remote_steering_device_RPC_C_ExecuteUbergraph_BP_Remote_steering_device_RPC;
 
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.OnRep_is_visible
-// 0x0018 (0x0018 - 0x0000)
-struct BP_Remote_steering_device_RPC_C_OnRep_is_visible final
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Enable_Initiate_Interaction
+// 0x0028 (0x0028 - 0x0000)
+struct BP_Remote_steering_device_RPC_C_Enable_Initiate_Interaction final
+{
+public:
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_AddReplicatedMarker_ReturnValue;          // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Remote_steering_device_RPC_C_Enable_Initiate_Interaction;
+
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Enable_hack_interaction
+// 0x0028 (0x0028 - 0x0000)
+struct BP_Remote_steering_device_RPC_C_Enable_hack_interaction final
+{
+public:
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_AddReplicatedMarker_ReturnValue;          // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Remote_steering_device_RPC_C_Enable_hack_interaction;
+
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Enable_Fix_Interaction
+// 0x0028 (0x0028 - 0x0000)
+struct BP_Remote_steering_device_RPC_C_Enable_Fix_Interaction final
+{
+public:
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0008(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_AddReplicatedMarker_ReturnValue;          // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Remote_steering_device_RPC_C_Enable_Fix_Interaction;
+
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Device_show
+// 0x0001 (0x0001 - 0x0000)
+struct BP_Remote_steering_device_RPC_C_Device_show final
+{
+public:
+	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Remote_steering_device_RPC_C_Device_show;
+
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Device_Hacking
+// 0x0058 (0x0058 - 0x0000)
+struct BP_Remote_steering_device_RPC_C_Device_Hacking final
 {
 public:
 	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable; // 0x0000(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_PostAkEvent_ReturnValue;                  // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable_1; // 0x0014(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0030(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_AddReplicatedMarker_ReturnValue;          // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_PostEvent_ReturnValue_1;                  // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Remote_steering_device_RPC_C_Device_Hacking;
 
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Remove_Marker
-// 0x0002 (0x0002 - 0x0000)
-struct BP_Remote_steering_device_RPC_C_Remove_Marker final
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.BndEvt__BP_SabotagePoint_ArmoredTruck_Interactable_Start_Escort_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_Remote_steering_device_RPC_C_BndEvt__BP_SabotagePoint_ArmoredTruck_Interactable_Start_Escort_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
 {
 public:
-	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Remote_steering_device_RPC_C_BndEvt__BP_SabotagePoint_ArmoredTruck_Interactable_Start_Escort_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature;
 
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Set_Screen_escort
-// 0x0001 (0x0001 - 0x0000)
-struct BP_Remote_steering_device_RPC_C_Set_Screen_escort final
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.BndEvt__BP_SabotagePoint_ArmoredTruck_interactable_fix_remote_steering_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_Remote_steering_device_RPC_C_BndEvt__BP_SabotagePoint_ArmoredTruck_interactable_fix_remote_steering_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
 {
 public:
-	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Remote_steering_device_RPC_C_BndEvt__BP_SabotagePoint_ArmoredTruck_interactable_fix_remote_steering_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature;
 
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Set_screen_Hack
-// 0x0001 (0x0001 - 0x0000)
-struct BP_Remote_steering_device_RPC_C_Set_screen_Hack final
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.BndEvt__BP_Remote_steering_device_Interactable_Start_Hacking_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_Remote_steering_device_RPC_C_BndEvt__BP_Remote_steering_device_Interactable_Start_Hacking_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature final
 {
 public:
-	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Remote_steering_device_RPC_C_BndEvt__BP_Remote_steering_device_Interactable_Start_Hacking_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature;
 
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Set_screen_Interrupt
-// 0x0001 (0x0001 - 0x0000)
-struct BP_Remote_steering_device_RPC_C_Set_screen_Interrupt final
+// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.BndEvt__BP_Remote_steering_device_Interactable_Hack_Interaction_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_Remote_steering_device_RPC_C_BndEvt__BP_Remote_steering_device_Interactable_Hack_Interaction_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature final
 {
 public:
-	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Set_screen_Standby
-// 0x0001 (0x0001 - 0x0000)
-struct BP_Remote_steering_device_RPC_C_Set_screen_Standby final
-{
-public:
-	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_Remote_steering_device_RPC.BP_Remote_steering_device_RPC_C.Show_Standby
-// 0x001C (0x001C - 0x0000)
-struct BP_Remote_steering_device_RPC_C_Show_Standby final
-{
-public:
-	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable; // 0x0004(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_Remote_steering_device_RPC_C_BndEvt__BP_Remote_steering_device_Interactable_Hack_Interaction_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

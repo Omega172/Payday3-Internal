@@ -16,6 +16,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function C_Dema_Outro.C_Dema_Outro_C.OutroSequenceStarted
+// 0x0004 (0x0004 - 0x0000)
+struct C_Dema_Outro_C_OutroSequenceStarted final
+{
+public:
+	int32                                         OutroVariation_OutroSequenceStarted;               // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_C_Dema_Outro_C_OutroSequenceStarted;
+
 // Function C_Dema_Outro.C_Dema_Outro_C.ExecuteUbergraph_C_Dema_Outro
 // 0x0060 (0x0060 - 0x0000)
 struct C_Dema_Outro_C_ExecuteUbergraph_C_Dema_Outro final
@@ -33,14 +42,7 @@ public:
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0048(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function C_Dema_Outro.C_Dema_Outro_C.OutroSequenceStarted
-// 0x0004 (0x0004 - 0x0000)
-struct C_Dema_Outro_C_OutroSequenceStarted final
-{
-public:
-	int32                                         OutroVariation;                                    // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_C_Dema_Outro_C_ExecuteUbergraph_C_Dema_Outro;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

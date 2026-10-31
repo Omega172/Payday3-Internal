@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Laptop_01_A_SCR_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Laptop_01_A_SCR_C;
 
 SDK_NAMESPACE_END

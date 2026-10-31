@@ -53,23 +53,23 @@ public:
 	struct FVector                                hookEndPointStartLoc;                              // 0x0430(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_FOR_VaultDoor_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_FOR_VaultDoor_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_FOR_VaultDoor_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void checkProgressionEvents();
-	void enableInteraction();
-	void ExecuteUbergraph_BP_FOR_VaultDoor(int32 EntryPoint);
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void onWinchCompleted();
-	void onWinchJammed();
-	void onWinchStarted();
-	void openDoor_timeline__FinishedFunc();
-	void openDoor_timeline__UpdateFunc();
-	void ReceiveBeginPlay();
-	void Set_Damage_State(int32 state, bool doCosmetics);
-	void spinHandle_timeline__FinishedFunc();
-	void spinHandle_timeline__UpdateFunc();
 	void UserConstructionScript();
+	void spinHandle_timeline__UpdateFunc();
+	void spinHandle_timeline__FinishedFunc();
+	void Set_Damage_State(int32 state, bool doCosmetics);
+	void ReceiveBeginPlay();
+	void openDoor_timeline__UpdateFunc();
+	void openDoor_timeline__FinishedFunc();
+	void onWinchStarted();
+	void onWinchJammed();
+	void onWinchCompleted();
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_FOR_VaultDoor(int32 EntryPoint);
+	void enableInteraction();
+	void checkProgressionEvents();
+	void BndEvt__BP_FOR_VaultDoor_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_FOR_VaultDoor_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_FOR_VaultDoor_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -85,5 +85,6 @@ public:
 		return GetDefaultObjImpl<ABP_FOR_VaultDoor_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_FOR_VaultDoor_C;
 
 SDK_NAMESPACE_END

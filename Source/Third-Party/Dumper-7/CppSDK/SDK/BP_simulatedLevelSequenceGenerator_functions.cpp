@@ -16,17 +16,47 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_simulatedLevelSequenceGenerator.BP_simulatedLevelSequenceGenerator_C.activate
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_simulatedLevelSequenceGenerator.BP_simulatedLevelSequenceGenerator_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_simulatedLevelSequenceGenerator_C::activate()
+void ABP_simulatedLevelSequenceGenerator_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_simulatedLevelSequenceGenerator_C", "activate");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_simulatedLevelSequenceGenerator.BP_simulatedLevelSequenceGenerator_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_simulatedLevelSequenceGenerator_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_simulatedLevelSequenceGenerator.BP_simulatedLevelSequenceGenerator_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bStateToChangeTo_OnStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_simulatedLevelSequenceGenerator_C::OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_simulatedLevelSequenceGenerator_C_OnStateChanged Parms{};
+
+	Parms.bStateToChangeTo_OnStateChanged = bStateToChangeTo_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -37,10 +67,8 @@ void ABP_simulatedLevelSequenceGenerator_C::activate()
 
 void ABP_simulatedLevelSequenceGenerator_C::ExecuteUbergraph_BP_simulatedLevelSequenceGenerator(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_simulatedLevelSequenceGenerator_C", "ExecuteUbergraph_BP_simulatedLevelSequenceGenerator");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_simulatedLevelSequenceGenerator_C", "ExecuteUbergraph_BP_simulatedLevelSequenceGenerator", FuncInfo);
 
 	Params::BP_simulatedLevelSequenceGenerator_C_ExecuteUbergraph_BP_simulatedLevelSequenceGenerator Parms{};
 
@@ -50,51 +78,13 @@ void ABP_simulatedLevelSequenceGenerator_C::ExecuteUbergraph_BP_simulatedLevelSe
 }
 
 
-// Function BP_simulatedLevelSequenceGenerator.BP_simulatedLevelSequenceGenerator_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_simulatedLevelSequenceGenerator.BP_simulatedLevelSequenceGenerator_C.activate
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_simulatedLevelSequenceGenerator_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
+void ABP_simulatedLevelSequenceGenerator_C::activate()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_simulatedLevelSequenceGenerator_C", "OnStateChanged");
-
-	Params::BP_simulatedLevelSequenceGenerator_C_OnStateChanged Parms{};
-
-	Parms.bStateToChangeTo = bStateToChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_simulatedLevelSequenceGenerator.BP_simulatedLevelSequenceGenerator_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_simulatedLevelSequenceGenerator_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_simulatedLevelSequenceGenerator_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_simulatedLevelSequenceGenerator.BP_simulatedLevelSequenceGenerator_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_simulatedLevelSequenceGenerator_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_simulatedLevelSequenceGenerator_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"activate", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

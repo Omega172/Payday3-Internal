@@ -16,59 +16,73 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_GateCrush.BP_GateCrush_C.ExecuteUbergraph_BP_GateCrush
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_GateCrush.BP_GateCrush_C.VAT_Destruction__UpdateFunc
+// (BlueprintEvent)
 
-void ABP_GateCrush_C::ExecuteUbergraph_BP_GateCrush(int32 EntryPoint)
+void ABP_GateCrush_C::VAT_Destruction__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"VAT_Destruction__UpdateFunc", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GateCrush_C", "ExecuteUbergraph_BP_GateCrush");
-
-	Params::BP_GateCrush_C_ExecuteUbergraph_BP_GateCrush Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_GateCrush.BP_GateCrush_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsInitialStateChange                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_GateCrush.BP_GateCrush_C.VAT_Destruction__FinishedFunc
+// (BlueprintEvent)
 
-void ABP_GateCrush_C::OnStateChanged(ESBZGateState OldState, ESBZGateState NewState, bool bIsInitialStateChange)
+void ABP_GateCrush_C::VAT_Destruction__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"VAT_Destruction__FinishedFunc", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GateCrush_C", "OnStateChanged");
-
-	Params::BP_GateCrush_C_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bIsInitialStateChange = bIsInitialStateChange;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_GateCrush.BP_GateCrush_C.RunEffectInitStateVisibility
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_GateCrush.BP_GateCrush_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_GateCrush_C::RunEffectInitStateVisibility()
+void ABP_GateCrush_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GateCrush_C", "RunEffectInitStateVisibility");
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_GateCrush.BP_GateCrush_C.TL_ContainerDrop__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_GateCrush_C::TL_ContainerDrop__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TL_ContainerDrop__UpdateFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_GateCrush.BP_GateCrush_C.TL_ContainerDrop__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_GateCrush_C::TL_ContainerDrop__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TL_ContainerDrop__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_GateCrush.BP_GateCrush_C.StopVatAndSetEndState
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_GateCrush_C::StopVatAndSetEndState()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StopVatAndSetEndState", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -82,10 +96,8 @@ void ABP_GateCrush_C::RunEffectInitStateVisibility()
 
 void ABP_GateCrush_C::setBinaryState(bool state, bool doCosmetics)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GateCrush_C", "setBinaryState");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setBinaryState", FnName));
 
 	Params::BP_GateCrush_C_setBinaryState Parms{};
 
@@ -96,87 +108,55 @@ void ABP_GateCrush_C::setBinaryState(bool state, bool doCosmetics)
 }
 
 
-// Function BP_GateCrush.BP_GateCrush_C.StopVatAndSetEndState
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_GateCrush.BP_GateCrush_C.RunEffectInitStateVisibility
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_GateCrush_C::StopVatAndSetEndState()
+void ABP_GateCrush_C::RunEffectInitStateVisibility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GateCrush_C", "StopVatAndSetEndState");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RunEffectInitStateVisibility", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_GateCrush.BP_GateCrush_C.TL_ContainerDrop__FinishedFunc
-// (BlueprintEvent)
+// Function BP_GateCrush.BP_GateCrush_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZGateState                           OldState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           NewState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsInitialStateChange_OnStateChanged                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_GateCrush_C::TL_ContainerDrop__FinishedFunc()
+void ABP_GateCrush_C::OnStateChanged(ESBZGateState OldState_OnStateChanged, ESBZGateState NewState_OnStateChanged, bool bIsInitialStateChange_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GateCrush_C", "TL_ContainerDrop__FinishedFunc");
+	Params::BP_GateCrush_C_OnStateChanged Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.OldState_OnStateChanged = OldState_OnStateChanged;
+	Parms.NewState_OnStateChanged = NewState_OnStateChanged;
+	Parms.bIsInitialStateChange_OnStateChanged = bIsInitialStateChange_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_GateCrush.BP_GateCrush_C.TL_ContainerDrop__UpdateFunc
-// (BlueprintEvent)
+// Function BP_GateCrush.BP_GateCrush_C.ExecuteUbergraph_BP_GateCrush
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_GateCrush_C::TL_ContainerDrop__UpdateFunc()
+void ABP_GateCrush_C::ExecuteUbergraph_BP_GateCrush(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_GateCrush_C", "ExecuteUbergraph_BP_GateCrush", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GateCrush_C", "TL_ContainerDrop__UpdateFunc");
+	Params::BP_GateCrush_C_ExecuteUbergraph_BP_GateCrush Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Parms.EntryPoint = EntryPoint;
 
-
-// Function BP_GateCrush.BP_GateCrush_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_GateCrush_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GateCrush_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_GateCrush.BP_GateCrush_C.VAT_Destruction__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_GateCrush_C::VAT_Destruction__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GateCrush_C", "VAT_Destruction__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_GateCrush.BP_GateCrush_C.VAT_Destruction__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_GateCrush_C::VAT_Destruction__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GateCrush_C", "VAT_Destruction__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

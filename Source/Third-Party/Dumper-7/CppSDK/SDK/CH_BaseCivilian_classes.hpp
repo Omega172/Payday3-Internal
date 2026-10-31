@@ -18,21 +18,21 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CH_BaseCivilian.CH_BaseCivilian_C
-// 0x0050 (0x2200 - 0x21B0)
+// 0x0050 (0x2290 - 0x2240)
 class ACH_BaseCivilian_C : public ACH_BaseHumanAI_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x21B0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USBZAIStimuliReactionComponent*         SBZAIStimuliReaction;                              // 0x21B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USBZEventReactionComponent*             SBZEventReaction;                                  // 0x21C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USBZShoutTargetComponent*               SBZShoutTargetComponent;                           // 0x21C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FLinearColor>                   RedZoneColors;                                     // 0x21D0(0x0010)(Edit, BlueprintVisible)
-	TArray<struct FLinearColor>                   GreenZoneColors;                                   // 0x21E0(0x0010)(Edit, BlueprintVisible)
-	TArray<struct FLinearColor>                   BlueZoneColors;                                    // 0x21F0(0x0010)(Edit, BlueprintVisible)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x2240(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USBZAIStimuliReactionComponent*         SBZAIStimuliReaction;                              // 0x2248(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZEventReactionComponent*             SBZEventReaction;                                  // 0x2250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZShoutTargetComponent*               SBZShoutTargetComponent;                           // 0x2258(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FLinearColor>                   RedZoneColors;                                     // 0x2260(0x0010)(Edit, BlueprintVisible)
+	TArray<struct FLinearColor>                   GreenZoneColors;                                   // 0x2270(0x0010)(Edit, BlueprintVisible)
+	TArray<struct FLinearColor>                   BlueZoneColors;                                    // 0x2280(0x0010)(Edit, BlueprintVisible)
 
 public:
-	void ExecuteUbergraph_CH_BaseCivilian(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_CH_BaseCivilian(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<ACH_BaseCivilian_C>();
 	}
 };
+DUMPER7_ASSERTS_ACH_BaseCivilian_C;
 
 SDK_NAMESPACE_END

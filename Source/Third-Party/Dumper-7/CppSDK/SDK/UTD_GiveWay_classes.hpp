@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UUTD_GiveWay_C>();
 	}
 };
+DUMPER7_ASSERTS_UUTD_GiveWay_C;
 
 SDK_NAMESPACE_END

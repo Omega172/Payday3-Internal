@@ -16,45 +16,23 @@
 
 SDK_NAMESPACE_START
 
-// Function G_SnGBB_Coverpoints.G_SnGBB_Coverpoints_C.BranchBank_Kitchen
-// (BlueprintCallable, BlueprintEvent)
+// Function G_SnGBB_Coverpoints.G_SnGBB_Coverpoints_C.OnLevelModifiersApplied
+// (Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// ESBZDifficulty                          InDifficulty_OnLevelModifiersApplied                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const TArray<ESBZSecurityCompany>&      InCompanies_OnLevelModifiersApplied                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void AG_SnGBB_Coverpoints_C::BranchBank_Kitchen()
+void AG_SnGBB_Coverpoints_C::OnLevelModifiersApplied(ESBZDifficulty InDifficulty_OnLevelModifiersApplied, const TArray<ESBZSecurityCompany>& InCompanies_OnLevelModifiersApplied)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLevelModifiersApplied", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Coverpoints_C", "BranchBank_Kitchen");
+	Params::G_SnGBB_Coverpoints_C_OnLevelModifiersApplied Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Parms.InDifficulty_OnLevelModifiersApplied = InDifficulty_OnLevelModifiersApplied;
+	Parms.InCompanies_OnLevelModifiersApplied = std::move(InCompanies_OnLevelModifiersApplied);
 
-
-// Function G_SnGBB_Coverpoints.G_SnGBB_Coverpoints_C.BranchBank_Roof
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGBB_Coverpoints_C::BranchBank_Roof()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Coverpoints_C", "BranchBank_Roof");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGBB_Coverpoints.G_SnGBB_Coverpoints_C.BranchBank_Stairs
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGBB_Coverpoints_C::BranchBank_Stairs()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Coverpoints_C", "BranchBank_Stairs");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -65,10 +43,8 @@ void AG_SnGBB_Coverpoints_C::BranchBank_Stairs()
 
 void AG_SnGBB_Coverpoints_C::ExecuteUbergraph_G_SnGBB_Coverpoints(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Coverpoints_C", "ExecuteUbergraph_G_SnGBB_Coverpoints");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_SnGBB_Coverpoints_C", "ExecuteUbergraph_G_SnGBB_Coverpoints", FuncInfo);
 
 	Params::G_SnGBB_Coverpoints_C_ExecuteUbergraph_G_SnGBB_Coverpoints Parms{};
 
@@ -78,25 +54,39 @@ void AG_SnGBB_Coverpoints_C::ExecuteUbergraph_G_SnGBB_Coverpoints(int32 EntryPoi
 }
 
 
-// Function G_SnGBB_Coverpoints.G_SnGBB_Coverpoints_C.OnLevelModifiersApplied
-// (Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// ESBZDifficulty                          InDifficulty                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const TArray<ESBZSecurityCompany>&      InCompanies                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// Function G_SnGBB_Coverpoints.G_SnGBB_Coverpoints_C.BranchBank_Stairs
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_SnGBB_Coverpoints_C::OnLevelModifiersApplied(ESBZDifficulty InDifficulty, const TArray<ESBZSecurityCompany>& InCompanies)
+void AG_SnGBB_Coverpoints_C::BranchBank_Stairs()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BranchBank_Stairs", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Coverpoints_C", "OnLevelModifiersApplied");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::G_SnGBB_Coverpoints_C_OnLevelModifiersApplied Parms{};
 
-	Parms.InDifficulty = InDifficulty;
-	Parms.InCompanies = std::move(InCompanies);
+// Function G_SnGBB_Coverpoints.G_SnGBB_Coverpoints_C.BranchBank_Roof
+// (BlueprintCallable, BlueprintEvent)
 
-	UObject::ProcessEvent(Func, &Parms);
+void AG_SnGBB_Coverpoints_C::BranchBank_Roof()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BranchBank_Roof", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGBB_Coverpoints.G_SnGBB_Coverpoints_C.BranchBank_Kitchen
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGBB_Coverpoints_C::BranchBank_Kitchen()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BranchBank_Kitchen", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

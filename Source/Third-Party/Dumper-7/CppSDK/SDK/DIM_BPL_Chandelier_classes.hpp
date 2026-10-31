@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ADIM_BPL_Chandelier_C>();
 	}
 };
+DUMPER7_ASSERTS_ADIM_BPL_Chandelier_C;
 
 SDK_NAMESPACE_END

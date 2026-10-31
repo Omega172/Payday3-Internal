@@ -16,59 +16,79 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_EscapeSedan.BP_EscapeSedan_C.autoOpenTrunk
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function BP_EscapeSedan.BP_EscapeSedan_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_EscapeSedan_C::autoOpenTrunk()
+void ABP_EscapeSedan_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeSedan_C", "autoOpenTrunk");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_11_SBZBagCountChangedDelegate__DelegateSignature
-// (BlueprintEvent)
+// Function BP_EscapeSedan.BP_EscapeSedan_C.ExecuteUbergraph_BP_EscapeSedan
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   Overlapping                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Secured                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_11_SBZBagCountChangedDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, int32 Overlapping, int32 Secured)
+void ABP_EscapeSedan_C::ExecuteUbergraph_BP_EscapeSedan(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_EscapeSedan_C", "ExecuteUbergraph_BP_EscapeSedan", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeSedan_C", "BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_11_SBZBagCountChangedDelegate__DelegateSignature");
+	Params::BP_EscapeSedan_C_ExecuteUbergraph_BP_EscapeSedan Parms{};
 
-	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_11_SBZBagCountChangedDelegate__DelegateSignature Parms{};
-
-	Parms.Volume = Volume;
-	Parms.Overlapping = Overlapping;
-	Parms.Secured = Secured;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature
+// Function BP_EscapeSedan.BP_EscapeSedan_C.enableCar
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_EscapeSedan_C::enableCar()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"enableCar", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_trunkTriggerVolume_K2Node_ComponentBoundEvent_6_SBZBagVolumeComplete__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_trunkTriggerVolume_K2Node_ComponentBoundEvent_6_SBZBagVolumeComplete__DelegateSignature(class ASBZBagTriggerVolume* Volume)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_EscapeSedan_trunkTriggerVolume_K2Node_ComponentBoundEvent_6_SBZBagVolumeComplete__DelegateSignature", FnName));
+
+	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_trunkTriggerVolume_K2Node_ComponentBoundEvent_6_SBZBagVolumeComplete__DelegateSignature Parms{};
+
+	Parms.Volume = Volume;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_trunkTriggerVolume_K2Node_ComponentBoundEvent_4_SBZBagEnteredDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
+void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_trunkTriggerVolume_K2Node_ComponentBoundEvent_4_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_EscapeSedan_trunkTriggerVolume_K2Node_ComponentBoundEvent_4_SBZBagEnteredDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeSedan_C", "BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature");
-
-	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature Parms{};
+	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_trunkTriggerVolume_K2Node_ComponentBoundEvent_4_SBZBagEnteredDelegate__DelegateSignature Parms{};
 
 	Parms.Volume = Volume;
 	Parms.Bag = Bag;
@@ -78,277 +98,19 @@ void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_Comp
 }
 
 
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_7_SBZBagVolumeComplete__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_7_SBZBagVolumeComplete__DelegateSignature(class ASBZBagTriggerVolume* Volume)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeSedan_C", "BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_7_SBZBagVolumeComplete__DelegateSignature");
-
-	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_7_SBZBagVolumeComplete__DelegateSignature Parms{};
-
-	Parms.Volume = Volume;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_car_SBZIntState_K2Node_ComponentBoundEvent_16_SBZIntStateChangedSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_car_SBZIntState_K2Node_ComponentBoundEvent_16_SBZIntStateChangedSignature__DelegateSignature(int32 OldState, int32 NewState, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeSedan_C", "BndEvt__BP_EscapeSedan_car_SBZIntState_K2Node_ComponentBoundEvent_16_SBZIntStateChangedSignature__DelegateSignature");
-
-	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_car_SBZIntState_K2Node_ComponentBoundEvent_16_SBZIntStateChangedSignature__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZBinaryState_backseatOpen_K2Node_ComponentBoundEvent_9_SBZBinaryStateChangedSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// bool                                    bState                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_SBZBinaryState_backseatOpen_K2Node_ComponentBoundEvent_9_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeSedan_C", "BndEvt__BP_EscapeSedan_SBZBinaryState_backseatOpen_K2Node_ComponentBoundEvent_9_SBZBinaryStateChangedSignature__DelegateSignature");
-
-	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZBinaryState_backseatOpen_K2Node_ComponentBoundEvent_9_SBZBinaryStateChangedSignature__DelegateSignature Parms{};
-
-	Parms.bState = bState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZBinaryState_trunkOpen_K2Node_ComponentBoundEvent_8_SBZBinaryStateChangedSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// bool                                    bState                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_SBZBinaryState_trunkOpen_K2Node_ComponentBoundEvent_8_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeSedan_C", "BndEvt__BP_EscapeSedan_SBZBinaryState_trunkOpen_K2Node_ComponentBoundEvent_8_SBZBinaryStateChangedSignature__DelegateSignature");
-
-	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZBinaryState_trunkOpen_K2Node_ComponentBoundEvent_8_SBZBinaryStateChangedSignature__DelegateSignature Parms{};
-
-	Parms.bState = bState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_UnlockCar_K2Node_ComponentBoundEvent_19_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_SBZInteractable_UnlockCar_K2Node_ComponentBoundEvent_19_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_EscapeSedan_SBZInteractable_UnlockCar_K2Node_ComponentBoundEvent_19_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeSedan_C", "BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeSedan_C", "BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_21_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_21_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeSedan_C", "BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_21_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_21_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_24_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_24_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeSedan_C", "BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_24_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_24_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_25_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_25_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeSedan_C", "BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_25_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_25_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeSedan_C", "BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_RearDoors_K2Node_ComponentBoundEvent_18_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_SBZInteractable_RearDoors_K2Node_ComponentBoundEvent_18_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeSedan_C", "BndEvt__BP_EscapeSedan_SBZInteractable_RearDoors_K2Node_ComponentBoundEvent_18_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_RearDoors_K2Node_ComponentBoundEvent_18_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_Trunk_K2Node_ComponentBoundEvent_17_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_SBZInteractable_Trunk_K2Node_ComponentBoundEvent_17_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeSedan_C", "BndEvt__BP_EscapeSedan_SBZInteractable_Trunk_K2Node_ComponentBoundEvent_17_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_Trunk_K2Node_ComponentBoundEvent_17_SBZOnInteraction__DelegateSignature Parms{};
+	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_UnlockCar_K2Node_ComponentBoundEvent_19_SBZOnInteraction__DelegateSignature Parms{};
 
 	Parms.Interactable = Interactable;
 	Parms.Interactor = Interactor;
@@ -367,10 +129,8 @@ void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_SBZInteractable_Trunk_K2Node_Comp
 
 void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_SBZInteractable_UnlockCar_K2Node_ComponentBoundEvent_14_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeSedan_C", "BndEvt__BP_EscapeSedan_SBZInteractable_UnlockCar_K2Node_ComponentBoundEvent_14_SBZOnInteraction__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_EscapeSedan_SBZInteractable_UnlockCar_K2Node_ComponentBoundEvent_14_SBZOnInteraction__DelegateSignature", FnName));
 
 	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_UnlockCar_K2Node_ComponentBoundEvent_14_SBZOnInteraction__DelegateSignature Parms{};
 
@@ -382,21 +142,19 @@ void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_SBZInteractable_UnlockCar_K2Node_
 }
 
 
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_UnlockCar_K2Node_ComponentBoundEvent_19_SBZOnInteraction__DelegateSignature
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_Trunk_K2Node_ComponentBoundEvent_17_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_SBZInteractable_UnlockCar_K2Node_ComponentBoundEvent_19_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_SBZInteractable_Trunk_K2Node_ComponentBoundEvent_17_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_EscapeSedan_SBZInteractable_Trunk_K2Node_ComponentBoundEvent_17_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeSedan_C", "BndEvt__BP_EscapeSedan_SBZInteractable_UnlockCar_K2Node_ComponentBoundEvent_19_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_UnlockCar_K2Node_ComponentBoundEvent_19_SBZOnInteraction__DelegateSignature Parms{};
+	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_Trunk_K2Node_ComponentBoundEvent_17_SBZOnInteraction__DelegateSignature Parms{};
 
 	Parms.Interactable = Interactable;
 	Parms.Interactor = Interactor;
@@ -406,21 +164,253 @@ void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_SBZInteractable_UnlockCar_K2Node_
 }
 
 
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_trunkTriggerVolume_K2Node_ComponentBoundEvent_4_SBZBagEnteredDelegate__DelegateSignature
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_RearDoors_K2Node_ComponentBoundEvent_18_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_SBZInteractable_RearDoors_K2Node_ComponentBoundEvent_18_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_EscapeSedan_SBZInteractable_RearDoors_K2Node_ComponentBoundEvent_18_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_RearDoors_K2Node_ComponentBoundEvent_18_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_25_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_25_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_25_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_25_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_24_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_24_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_24_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_24_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_21_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_21_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_21_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_21_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZBinaryState_trunkOpen_K2Node_ComponentBoundEvent_8_SBZBinaryStateChangedSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// bool                                    bState                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_SBZBinaryState_trunkOpen_K2Node_ComponentBoundEvent_8_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_EscapeSedan_SBZBinaryState_trunkOpen_K2Node_ComponentBoundEvent_8_SBZBinaryStateChangedSignature__DelegateSignature", FnName));
+
+	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZBinaryState_trunkOpen_K2Node_ComponentBoundEvent_8_SBZBinaryStateChangedSignature__DelegateSignature Parms{};
+
+	Parms.bState = bState;
+	Parms.bDoCosmetics = bDoCosmetics;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZBinaryState_backseatOpen_K2Node_ComponentBoundEvent_9_SBZBinaryStateChangedSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// bool                                    bState                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_SBZBinaryState_backseatOpen_K2Node_ComponentBoundEvent_9_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_EscapeSedan_SBZBinaryState_backseatOpen_K2Node_ComponentBoundEvent_9_SBZBinaryStateChangedSignature__DelegateSignature", FnName));
+
+	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZBinaryState_backseatOpen_K2Node_ComponentBoundEvent_9_SBZBinaryStateChangedSignature__DelegateSignature Parms{};
+
+	Parms.bState = bState;
+	Parms.bDoCosmetics = bDoCosmetics;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_car_SBZIntState_K2Node_ComponentBoundEvent_16_SBZIntStateChangedSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_car_SBZIntState_K2Node_ComponentBoundEvent_16_SBZIntStateChangedSignature__DelegateSignature(int32 OldState, int32 NewState, bool bDoCosmetics)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_EscapeSedan_car_SBZIntState_K2Node_ComponentBoundEvent_16_SBZIntStateChangedSignature__DelegateSignature", FnName));
+
+	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_car_SBZIntState_K2Node_ComponentBoundEvent_16_SBZIntStateChangedSignature__DelegateSignature Parms{};
+
+	Parms.OldState = OldState;
+	Parms.NewState = NewState;
+	Parms.bDoCosmetics = bDoCosmetics;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_7_SBZBagVolumeComplete__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_7_SBZBagVolumeComplete__DelegateSignature(class ASBZBagTriggerVolume* Volume)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_7_SBZBagVolumeComplete__DelegateSignature", FnName));
+
+	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_7_SBZBagVolumeComplete__DelegateSignature Parms{};
+
+	Parms.Volume = Volume;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_trunkTriggerVolume_K2Node_ComponentBoundEvent_4_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
+void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeSedan_C", "BndEvt__BP_EscapeSedan_trunkTriggerVolume_K2Node_ComponentBoundEvent_4_SBZBagEnteredDelegate__DelegateSignature");
-
-	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_trunkTriggerVolume_K2Node_ComponentBoundEvent_4_SBZBagEnteredDelegate__DelegateSignature Parms{};
+	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature Parms{};
 
 	Parms.Volume = Volume;
 	Parms.Bag = Bag;
@@ -430,69 +420,35 @@ void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_trunkTriggerVolume_K2Node_Compone
 }
 
 
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_trunkTriggerVolume_K2Node_ComponentBoundEvent_6_SBZBagVolumeComplete__DelegateSignature
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_11_SBZBagCountChangedDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   Overlapping                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Secured                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_trunkTriggerVolume_K2Node_ComponentBoundEvent_6_SBZBagVolumeComplete__DelegateSignature(class ASBZBagTriggerVolume* Volume)
+void ABP_EscapeSedan_C::BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_11_SBZBagCountChangedDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, int32 Overlapping, int32 Secured)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_11_SBZBagCountChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeSedan_C", "BndEvt__BP_EscapeSedan_trunkTriggerVolume_K2Node_ComponentBoundEvent_6_SBZBagVolumeComplete__DelegateSignature");
-
-	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_trunkTriggerVolume_K2Node_ComponentBoundEvent_6_SBZBagVolumeComplete__DelegateSignature Parms{};
+	Params::BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_11_SBZBagCountChangedDelegate__DelegateSignature Parms{};
 
 	Parms.Volume = Volume;
+	Parms.Overlapping = Overlapping;
+	Parms.Secured = Secured;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_EscapeSedan.BP_EscapeSedan_C.enableCar
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_EscapeSedan.BP_EscapeSedan_C.autoOpenTrunk
+// (Private, BlueprintCallable, BlueprintEvent)
 
-void ABP_EscapeSedan_C::enableCar()
+void ABP_EscapeSedan_C::autoOpenTrunk()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeSedan_C", "enableCar");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_EscapeSedan.BP_EscapeSedan_C.ExecuteUbergraph_BP_EscapeSedan
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_EscapeSedan_C::ExecuteUbergraph_BP_EscapeSedan(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeSedan_C", "ExecuteUbergraph_BP_EscapeSedan");
-
-	Params::BP_EscapeSedan_C_ExecuteUbergraph_BP_EscapeSedan Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_EscapeSedan.BP_EscapeSedan_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_EscapeSedan_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EscapeSedan_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"autoOpenTrunk", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

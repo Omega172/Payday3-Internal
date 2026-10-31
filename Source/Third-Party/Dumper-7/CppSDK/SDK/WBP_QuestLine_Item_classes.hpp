@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
+#include "E_Contracts_AssignmentStatus_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
 #include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "E_Contracts_AssignmentStatus_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -62,23 +62,23 @@ public:
 	struct FLinearColor                           HighlightedContractBorderColor;                    // 0x0514(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetParentMenu(class UWBP_QuestlineMenu_C* QuestLineMenu);
-	void SetCompletedVisuals(bool Completed);
-	void SetClaimedVisuals();
-	void SetChallengeStatus();
-	void SetBorderMode(bool IsFocused, ESBZQuestState QuestState, bool IsHighlighted);
-	void SetBorderFocused(bool IsFocused);
-	void SetActiveVisuals(bool IsActive);
-	void Reinitialize();
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnFocused(bool IsFocused);
-	void Initialize(const struct FSBZUIQuestData& UIQuestData);
-	void HasRewardItem(class USBZInventoryBaseData* Item, bool* HasReward);
-	void GetCompletedChallengeArray(TArray<struct FSBZUIQuestChallengeData>* CompletedChallenges);
-	void GetActiveChallengeIndex(int32* ActiveChallengeIndex);
-	void ExecuteUbergraph_WBP_QuestLine_Item(int32 EntryPoint);
+	void ButtonFocusedChanged(bool bInHasFocus);
 	void ButtonStates();
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
+	void ExecuteUbergraph_WBP_QuestLine_Item(int32 EntryPoint);
+	void GetActiveChallengeIndex(int32* ActiveChallengeIndex);
+	void GetCompletedChallengeArray(TArray<struct FSBZUIQuestChallengeData>* CompletedChallenges);
+	void HasRewardItem(class USBZInventoryBaseData* Item, bool* HasReward);
+	void Initialize(const struct FSBZUIQuestData& UIQuestData);
+	void OnFocused(bool IsFocused);
+	void PreConstruct(bool IsDesignTime);
+	void Reinitialize();
+	void SetActiveVisuals(bool IsActive);
+	void SetBorderFocused(bool IsFocused);
+	void SetBorderMode(bool IsFocused, ESBZQuestState QuestState, bool IsHighlighted);
+	void SetChallengeStatus();
+	void SetClaimedVisuals();
+	void SetCompletedVisuals(bool Completed);
+	void SetParentMenu(class UWBP_QuestlineMenu_C* QuestLineMenu_0);
 
 public:
 	static class UClass* StaticClass()

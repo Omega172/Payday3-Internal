@@ -16,6 +16,17 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_SHI_EXT_Door_Single_Reinforced_01.BP_SHI_EXT_Door_Single_Reinforced_01_C.OnStateChanged
+// 0x0003 (0x0003 - 0x0000)
+struct BP_SHI_EXT_Door_Single_Reinforced_01_C_OnStateChanged final
+{
+public:
+	ESBZGateState                                 OldState_OnStateChanged;                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 NewState_OnStateChanged;                           // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsInitialStateChange_OnStateChanged;              // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SHI_EXT_Door_Single_Reinforced_01_C_OnStateChanged;
+
 // Function BP_SHI_EXT_Door_Single_Reinforced_01.BP_SHI_EXT_Door_Single_Reinforced_01_C.ExecuteUbergraph_BP_SHI_EXT_Door_Single_Reinforced_01
 // 0x0048 (0x0048 - 0x0000)
 struct BP_SHI_EXT_Door_Single_Reinforced_01_C_ExecuteUbergraph_BP_SHI_EXT_Door_Single_Reinforced_01 final
@@ -42,16 +53,7 @@ public:
 	class ASBZPlayerCharacter*                    CallFunc_Array_Get_Item;                           // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_SHI_EXT_Door_Single_Reinforced_01.BP_SHI_EXT_Door_Single_Reinforced_01_C.OnStateChanged
-// 0x0003 (0x0003 - 0x0000)
-struct BP_SHI_EXT_Door_Single_Reinforced_01_C_OnStateChanged final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsInitialStateChange;                             // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_SHI_EXT_Door_Single_Reinforced_01_C_ExecuteUbergraph_BP_SHI_EXT_Door_Single_Reinforced_01;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

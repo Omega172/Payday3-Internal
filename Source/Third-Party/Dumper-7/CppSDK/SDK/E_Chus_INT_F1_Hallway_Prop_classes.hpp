@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AE_Chus_INT_F1_Hallway_Prop_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_Chus_INT_F1_Hallway_Prop_C;
 
 SDK_NAMESPACE_END

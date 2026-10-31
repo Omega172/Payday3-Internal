@@ -19,14 +19,12 @@ SDK_NAMESPACE_START
 // Function BP_FOR_CableCarPark_01_RolledCable.BP_FOR_CableCarPark_01_RolledCable_C.GetMarkerText
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
+// class FText                             ReturnValue_GetMarkerText                              (Parm, OutParm, ReturnParm)
 
 class FText ABP_FOR_CableCarPark_01_RolledCable_C::GetMarkerText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FOR_CableCarPark_01_RolledCable_C", "GetMarkerText");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetMarkerText", FnName));
 
 	Params::BP_FOR_CableCarPark_01_RolledCable_C_GetMarkerText Parms{};
 

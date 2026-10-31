@@ -36,6 +36,7 @@ public:
 	float                                         CallFunc_SetVolumetricScatteringIntensity_NewIntensity_ImplicitCast; // 0x0140(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetAttenuationRadius_NewRadius_ImplicitCast; // 0x0144(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_PF_LGT_StreetVictorian_01_C_UserConstructionScript;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

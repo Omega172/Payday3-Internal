@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_STO_MonitorArm_02_C.BP_STO_MonitorArm_02_C_C.ExecuteUbergraph_BP_STO_MonitorArm_02_C
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_STO_MonitorArm_02_C_C::ExecuteUbergraph_BP_STO_MonitorArm_02_C(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_STO_MonitorArm_02_C_C", "ExecuteUbergraph_BP_STO_MonitorArm_02_C", FuncInfo);
+
+	Params::BP_STO_MonitorArm_02_C_C_ExecuteUbergraph_BP_STO_MonitorArm_02_C Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_STO_MonitorArm_02_C.BP_STO_MonitorArm_02_C_C.BndEvt__BP_STO_StockScreen_01_B_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -24,35 +42,13 @@ SDK_NAMESPACE_START
 
 void ABP_STO_MonitorArm_02_C_C::BndEvt__BP_STO_StockScreen_01_B_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_MonitorArm_02_C_C", "BndEvt__BP_STO_StockScreen_01_B_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_STO_StockScreen_01_B_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature", FnName));
 
 	Params::BP_STO_MonitorArm_02_C_C_BndEvt__BP_STO_StockScreen_01_B_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature Parms{};
 
 	Parms.Type = Type;
 	Parms.HitContext = std::move(HitContext);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_STO_MonitorArm_02_C.BP_STO_MonitorArm_02_C_C.ExecuteUbergraph_BP_STO_MonitorArm_02_C
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_STO_MonitorArm_02_C_C::ExecuteUbergraph_BP_STO_MonitorArm_02_C(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_MonitorArm_02_C_C", "ExecuteUbergraph_BP_STO_MonitorArm_02_C");
-
-	Params::BP_STO_MonitorArm_02_C_C_ExecuteUbergraph_BP_STO_MonitorArm_02_C Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

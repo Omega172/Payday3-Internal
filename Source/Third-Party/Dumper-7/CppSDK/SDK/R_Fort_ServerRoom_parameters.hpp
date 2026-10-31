@@ -14,14 +14,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function R_Fort_ServerRoom.R_Fort_ServerRoom_C.BndEvt__R_Fort_ServerRoom_SBZPlayerTriggerVolume_PlayerInsideServerRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct R_Fort_ServerRoom_C_BndEvt__R_Fort_ServerRoom_SBZPlayerTriggerVolume_PlayerInsideServerRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function R_Fort_ServerRoom.R_Fort_ServerRoom_C.ExecuteUbergraph_R_Fort_ServerRoom
 // 0x0030 (0x0030 - 0x0000)
 struct R_Fort_ServerRoom_C_ExecuteUbergraph_R_Fort_ServerRoom final
@@ -39,6 +31,16 @@ public:
 	class ASBZPlayerCharacter*                    CallFunc_GetClosestPlayerToActor_PlayerCharacter_1; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetClosestPlayerToActor_Distance_1;       // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_R_Fort_ServerRoom_C_ExecuteUbergraph_R_Fort_ServerRoom;
+
+// Function R_Fort_ServerRoom.R_Fort_ServerRoom_C.BndEvt__R_Fort_ServerRoom_SBZPlayerTriggerVolume_PlayerInsideServerRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct R_Fort_ServerRoom_C_BndEvt__R_Fort_ServerRoom_SBZPlayerTriggerVolume_PlayerInsideServerRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_Fort_ServerRoom_C_BndEvt__R_Fort_ServerRoom_SBZPlayerTriggerVolume_PlayerInsideServerRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

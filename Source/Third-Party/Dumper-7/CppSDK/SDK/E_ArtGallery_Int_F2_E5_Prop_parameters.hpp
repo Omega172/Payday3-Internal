@@ -21,6 +21,7 @@ struct E_ArtGallery_Int_F2_E5_Prop_C_ExecuteUbergraph_E_ArtGallery_Int_F2_E5_Pro
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_E_ArtGallery_Int_F2_E5_Prop_C_ExecuteUbergraph_E_ArtGallery_Int_F2_E5_Prop;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

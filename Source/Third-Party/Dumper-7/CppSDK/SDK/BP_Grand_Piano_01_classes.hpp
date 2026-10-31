@@ -42,13 +42,13 @@ public:
 	struct FRotator                               lidStartRot;                                       // 0x03A8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void BndEvt__BP_Grand_Piano_01_keys_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
-	void BndEvt__BP_Grand_Piano_01_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
-	void closeLid_timeline__FinishedFunc();
-	void closeLid_timeline__UpdateFunc();
-	void ExecuteUbergraph_BP_Grand_Piano_01(int32 EntryPoint);
-	void remapLerp(const struct FRotator& startRot, double alpha, double InRangeA, double InRangeB, struct FRotator* rot);
 	void UserConstructionScript();
+	void remapLerp(const struct FRotator& startRot, double alpha, double InRangeA, double InRangeB, struct FRotator* rot);
+	void ExecuteUbergraph_BP_Grand_Piano_01(int32 EntryPoint);
+	void closeLid_timeline__UpdateFunc();
+	void closeLid_timeline__FinishedFunc();
+	void BndEvt__BP_Grand_Piano_01_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
+	void BndEvt__BP_Grand_Piano_01_keys_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
 
 public:
 	static class UClass* StaticClass()
@@ -64,5 +64,6 @@ public:
 		return GetDefaultObjImpl<ABP_Grand_Piano_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Grand_Piano_01_C;
 
 SDK_NAMESPACE_END

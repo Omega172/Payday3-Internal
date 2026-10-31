@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function UTD_ReturnToStart.UTD_ReturnToStart_C.OnDeactivatedBP
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EBTNodeResult                           NodeResult_OnDeactivatedBP                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UUTD_ReturnToStart_C::OnDeactivatedBP(EBTNodeResult NodeResult_OnDeactivatedBP)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnDeactivatedBP", FnName));
+
+	Params::UTD_ReturnToStart_C_OnDeactivatedBP Parms{};
+
+	Parms.NodeResult_OnDeactivatedBP = NodeResult_OnDeactivatedBP;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function UTD_ReturnToStart.UTD_ReturnToStart_C.ExecuteUbergraph_UTD_ReturnToStart
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,34 +41,12 @@ SDK_NAMESPACE_START
 
 void UUTD_ReturnToStart_C::ExecuteUbergraph_UTD_ReturnToStart(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UTD_ReturnToStart_C", "ExecuteUbergraph_UTD_ReturnToStart");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "UTD_ReturnToStart_C", "ExecuteUbergraph_UTD_ReturnToStart", FuncInfo);
 
 	Params::UTD_ReturnToStart_C_ExecuteUbergraph_UTD_ReturnToStart Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UTD_ReturnToStart.UTD_ReturnToStart_C.OnDeactivatedBP
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// EBTNodeResult                           NodeResult                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UUTD_ReturnToStart_C::OnDeactivatedBP(EBTNodeResult NodeResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UTD_ReturnToStart_C", "OnDeactivatedBP");
-
-	Params::UTD_ReturnToStart_C_OnDeactivatedBP Parms{};
-
-	Parms.NodeResult = NodeResult;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -14,15 +14,24 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_SSDFinished.BP_SSDFinished_C.BndEvt__BP_ConnectedSSD_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_SSDFinished_C_BndEvt__BP_ConnectedSSD_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
+// Function BP_SSDFinished.BP_SSDFinished_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_SSDFinished_C_OnStateChanged final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bStateToChangeTo_OnStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_SSDFinished_C_OnStateChanged;
+
+// Function BP_SSDFinished.BP_SSDFinished_C.GetState
+// 0x0001 (0x0001 - 0x0000)
+struct BP_SSDFinished_C_GetState final
+{
+public:
+	bool                                          State;                                             // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SSDFinished_C_GetState;
 
 // Function BP_SSDFinished.BP_SSDFinished_C.ExecuteUbergraph_BP_SSDFinished
 // 0x0020 (0x0020 - 0x0000)
@@ -38,23 +47,18 @@ public:
 	bool                                          K2Node_ComponentBoundEvent_bIsLocallyControlledInteractor; // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_SSDFinished_C_ExecuteUbergraph_BP_SSDFinished;
 
-// Function BP_SSDFinished.BP_SSDFinished_C.GetState
-// 0x0001 (0x0001 - 0x0000)
-struct BP_SSDFinished_C_GetState final
+// Function BP_SSDFinished.BP_SSDFinished_C.BndEvt__BP_ConnectedSSD_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_SSDFinished_C_BndEvt__BP_ConnectedSSD_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
 {
 public:
-	bool                                          State;                                             // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_SSDFinished.BP_SSDFinished_C.OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_SSDFinished_C_OnStateChanged final
-{
-public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_SSDFinished_C_BndEvt__BP_ConnectedSSD_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

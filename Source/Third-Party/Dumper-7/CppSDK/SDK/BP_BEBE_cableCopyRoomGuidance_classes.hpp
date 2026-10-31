@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_BEBE_cableCopyRoomGuidance_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BEBE_cableCopyRoomGuidance_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_RappellingRope_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_RappellingRope_C;
 
 SDK_NAMESPACE_END

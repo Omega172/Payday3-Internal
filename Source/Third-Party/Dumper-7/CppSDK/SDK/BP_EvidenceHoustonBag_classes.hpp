@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_EvidenceHoustonBag_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_EvidenceHoustonBag_C;
 
 SDK_NAMESPACE_END

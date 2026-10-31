@@ -16,23 +16,63 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_InteractableUnBreachableDoubleDoor.BP_InteractableUnBreachableDoubleDoor_C.ExecuteUbergraph_BP_InteractableUnBreachableDoubleDoor
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_InteractableUnBreachableDoubleDoor.BP_InteractableUnBreachableDoubleDoor_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_InteractableUnBreachableDoubleDoor_C::ExecuteUbergraph_BP_InteractableUnBreachableDoubleDoor(int32 EntryPoint)
+void ABP_InteractableUnBreachableDoubleDoor_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InteractableUnBreachableDoubleDoor_C", "ExecuteUbergraph_BP_InteractableUnBreachableDoubleDoor");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_InteractableUnBreachableDoubleDoor_C_ExecuteUbergraph_BP_InteractableUnBreachableDoubleDoor Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+// Function BP_InteractableUnBreachableDoubleDoor.BP_InteractableUnBreachableDoubleDoor_C.setBreachedMeshVisibility
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    breached                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_InteractableUnBreachableDoubleDoor_C::setBreachedMeshVisibility(bool breached)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setBreachedMeshVisibility", FnName));
+
+	Params::BP_InteractableUnBreachableDoubleDoor_C_setBreachedMeshVisibility Parms{};
+
+	Parms.breached = breached;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_InteractableUnBreachableDoubleDoor.BP_InteractableUnBreachableDoubleDoor_C.onOpenAnimUpdateTick
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  alpha                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_InteractableUnBreachableDoubleDoor_C::onOpenAnimUpdateTick(double alpha)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"onOpenAnimUpdateTick", FnName));
+
+	Params::BP_InteractableUnBreachableDoubleDoor_C_onOpenAnimUpdateTick Parms{};
+
+	Parms.alpha = alpha;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_InteractableUnBreachableDoubleDoor.BP_InteractableUnBreachableDoubleDoor_C.onOpenAnimStarted
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_InteractableUnBreachableDoubleDoor_C::onOpenAnimStarted()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"onOpenAnimStarted", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -44,10 +84,8 @@ void ABP_InteractableUnBreachableDoubleDoor_C::ExecuteUbergraph_BP_InteractableU
 
 void ABP_InteractableUnBreachableDoubleDoor_C::onDoorBreached(ESBZGateState oldState, ESBZGateState newState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InteractableUnBreachableDoubleDoor_C", "onDoorBreached");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"onDoorBreached", FnName));
 
 	Params::BP_InteractableUnBreachableDoubleDoor_C_onDoorBreached Parms{};
 
@@ -58,71 +96,21 @@ void ABP_InteractableUnBreachableDoubleDoor_C::onDoorBreached(ESBZGateState oldS
 }
 
 
-// Function BP_InteractableUnBreachableDoubleDoor.BP_InteractableUnBreachableDoubleDoor_C.onOpenAnimStarted
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_InteractableUnBreachableDoubleDoor_C::onOpenAnimStarted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InteractableUnBreachableDoubleDoor_C", "onOpenAnimStarted");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_InteractableUnBreachableDoubleDoor.BP_InteractableUnBreachableDoubleDoor_C.onOpenAnimUpdateTick
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_InteractableUnBreachableDoubleDoor.BP_InteractableUnBreachableDoubleDoor_C.ExecuteUbergraph_BP_InteractableUnBreachableDoubleDoor
+// (Final, UbergraphFunction)
 // Parameters:
-// double                                  alpha                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_InteractableUnBreachableDoubleDoor_C::onOpenAnimUpdateTick(double alpha)
+void ABP_InteractableUnBreachableDoubleDoor_C::ExecuteUbergraph_BP_InteractableUnBreachableDoubleDoor(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_InteractableUnBreachableDoubleDoor_C", "ExecuteUbergraph_BP_InteractableUnBreachableDoubleDoor", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InteractableUnBreachableDoubleDoor_C", "onOpenAnimUpdateTick");
+	Params::BP_InteractableUnBreachableDoubleDoor_C_ExecuteUbergraph_BP_InteractableUnBreachableDoubleDoor Parms{};
 
-	Params::BP_InteractableUnBreachableDoubleDoor_C_onOpenAnimUpdateTick Parms{};
-
-	Parms.alpha = alpha;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_InteractableUnBreachableDoubleDoor.BP_InteractableUnBreachableDoubleDoor_C.setBreachedMeshVisibility
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    breached                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_InteractableUnBreachableDoubleDoor_C::setBreachedMeshVisibility(bool breached)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InteractableUnBreachableDoubleDoor_C", "setBreachedMeshVisibility");
-
-	Params::BP_InteractableUnBreachableDoubleDoor_C_setBreachedMeshVisibility Parms{};
-
-	Parms.breached = breached;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_InteractableUnBreachableDoubleDoor.BP_InteractableUnBreachableDoubleDoor_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_InteractableUnBreachableDoubleDoor_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InteractableUnBreachableDoubleDoor_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

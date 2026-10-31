@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABPL_FloodLightCounter_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_FloodLightCounter_C;
 
 SDK_NAMESPACE_END

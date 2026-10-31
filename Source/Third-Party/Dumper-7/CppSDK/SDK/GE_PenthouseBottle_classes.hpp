@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_PenthouseBottle_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_PenthouseBottle_C;
 
 SDK_NAMESPACE_END

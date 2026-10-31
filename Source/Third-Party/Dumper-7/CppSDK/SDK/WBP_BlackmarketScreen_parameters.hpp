@@ -17,156 +17,52 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.UpdateBackground
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_0_OnListItemSelectionChangedDynamic__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_BlackmarketScreen_C_BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_0_OnListItemSelectionChangedDynamic__DelegateSignature final
+{
+public:
+	class UObject*                                Item;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsSelected;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_0_OnListItemSelectionChangedDynamic__DelegateSignature;
+
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_10_SimpleListItemEventDynamic__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_BlackmarketScreen_C_UpdateBackground final
+struct WBP_BlackmarketScreen_C_BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_10_SimpleListItemEventDynamic__DelegateSignature final
 {
 public:
-	class USBZBundlePackData*                     InBundlePackData;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Item;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_UpdateBackground;
+DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_10_SimpleListItemEventDynamic__DelegateSignature;
 
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.RefreshNavigation
-// 0x0038 (0x0038 - 0x0000)
-struct WBP_BlackmarketScreen_C_RefreshNavigation final
-{
-public:
-	int32                                         InputPin;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class USBZBundlePackData*>             K2Node_MakeArray_Array;                            // 0x0008(0x0010)(ReferenceParm)
-	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Max_ReturnValue;                          // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZCrimeBondManager*                   CallFunc_Get_ReturnValue;                          // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class USBZBundlePackData*>             CallFunc_GetAllBundlePackData_ReturnValue;         // 0x0028(0x0010)(ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_RefreshNavigation;
-
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PrePush_8B21FF524A80C9672955E88E86F09C9D
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_1_SimpleListItemEventDynamic__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_BlackmarketScreen_C_PrePush_8B21FF524A80C9672955E88E86F09C9D final
+struct WBP_BlackmarketScreen_C_BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_1_SimpleListItemEventDynamic__DelegateSignature final
 {
 public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Item;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_PrePush_8B21FF524A80C9672955E88E86F09C9D;
+DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_1_SimpleListItemEventDynamic__DelegateSignature;
 
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PrePush_8B21FF524A80C9672955E88E6B182AA9
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_BlackmarketScreen_C_PrePush_8B21FF524A80C9672955E88E6B182AA9 final
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_6_OnItemIsHoveredChangedDynamic__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_BlackmarketScreen_C_BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_6_OnItemIsHoveredChangedDynamic__DelegateSignature final
 {
 public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Item;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsHovered;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_PrePush_8B21FF524A80C9672955E88E6B182AA9;
+DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_6_OnItemIsHoveredChangedDynamic__DelegateSignature;
 
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PrePush_8B21FF524A80C9672955E88E172F88F1
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_BlackmarketScreen_C_PrePush_8B21FF524A80C9672955E88E172F88F1 final
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.BndEvt__WBP_CrimebondCollectionScreen_WBP_Local_Navbar_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_BlackmarketScreen_C_BndEvt__WBP_CrimebondCollectionScreen_WBP_Local_Navbar_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature final
 {
 public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_PrePush_8B21FF524A80C9672955E88E172F88F1;
-
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PrePush_81AD0A2146BDF652D694E69BE6642144
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_BlackmarketScreen_C_PrePush_81AD0A2146BDF652D694E69BE6642144 final
-{
-public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_PrePush_81AD0A2146BDF652D694E69BE6642144;
-
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PrePush_81AD0A2146BDF652D694E69B77BB3528
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_BlackmarketScreen_C_PrePush_81AD0A2146BDF652D694E69B77BB3528 final
-{
-public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_PrePush_81AD0A2146BDF652D694E69B77BB3528;
-
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PrePush_81AD0A2146BDF652D694E69B0B8C9770
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_BlackmarketScreen_C_PrePush_81AD0A2146BDF652D694E69B0B8C9770 final
-{
-public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_PrePush_81AD0A2146BDF652D694E69B0B8C9770;
-
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PostPush_8B21FF524A80C9672955E88E86F09C9D
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_BlackmarketScreen_C_PostPush_8B21FF524A80C9672955E88E86F09C9D final
-{
-public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_PostPush_8B21FF524A80C9672955E88E86F09C9D;
-
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PostPush_8B21FF524A80C9672955E88E6B182AA9
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_BlackmarketScreen_C_PostPush_8B21FF524A80C9672955E88E6B182AA9 final
-{
-public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_PostPush_8B21FF524A80C9672955E88E6B182AA9;
-
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PostPush_8B21FF524A80C9672955E88E172F88F1
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_BlackmarketScreen_C_PostPush_8B21FF524A80C9672955E88E172F88F1 final
-{
-public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_PostPush_8B21FF524A80C9672955E88E172F88F1;
-
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PostPush_81AD0A2146BDF652D694E69BE6642144
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_BlackmarketScreen_C_PostPush_81AD0A2146BDF652D694E69BE6642144 final
-{
-public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_PostPush_81AD0A2146BDF652D694E69BE6642144;
-
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PostPush_81AD0A2146BDF652D694E69B77BB3528
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_BlackmarketScreen_C_PostPush_81AD0A2146BDF652D694E69B77BB3528 final
-{
-public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_PostPush_81AD0A2146BDF652D694E69B77BB3528;
-
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PostPush_81AD0A2146BDF652D694E69B0B8C9770
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_BlackmarketScreen_C_PostPush_81AD0A2146BDF652D694E69B0B8C9770 final
-{
-public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_PostPush_81AD0A2146BDF652D694E69B0B8C9770;
-
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.OnGainedStackFocused
-// 0x000C (0x000C - 0x0000)
-struct WBP_BlackmarketScreen_C_OnGainedStackFocused final
-{
-public:
-	class FName                                   PreviousValue_OnGainedStackFocused;                // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_OnGainedStackFocused;
-
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.OnControlReferenceClicked
-// 0x000C (0x000C - 0x0000)
-struct WBP_BlackmarketScreen_C_OnControlReferenceClicked final
-{
-public:
-	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_OnControlReferenceClicked;
+DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_BndEvt__WBP_CrimebondCollectionScreen_WBP_Local_Navbar_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature;
 
 // Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.ExecuteUbergraph_WBP_BlackmarketScreen
 // 0x0530 (0x0530 - 0x0000)
@@ -348,52 +244,156 @@ public:
 };
 DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_ExecuteUbergraph_WBP_BlackmarketScreen;
 
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.BndEvt__WBP_CrimebondCollectionScreen_WBP_Local_Navbar_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_BlackmarketScreen_C_BndEvt__WBP_CrimebondCollectionScreen_WBP_Local_Navbar_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature final
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.OnControlReferenceClicked
+// 0x000C (0x000C - 0x0000)
+struct WBP_BlackmarketScreen_C_OnControlReferenceClicked final
 {
 public:
-	int32                                         NewIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_BndEvt__WBP_CrimebondCollectionScreen_WBP_Local_Navbar_K2Node_ComponentBoundEvent_4_OnIndexChanged__DelegateSignature;
+DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_OnControlReferenceClicked;
 
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_6_OnItemIsHoveredChangedDynamic__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_BlackmarketScreen_C_BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_6_OnItemIsHoveredChangedDynamic__DelegateSignature final
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.OnGainedStackFocused
+// 0x000C (0x000C - 0x0000)
+struct WBP_BlackmarketScreen_C_OnGainedStackFocused final
 {
 public:
-	class UObject*                                Item;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsHovered;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_6_OnItemIsHoveredChangedDynamic__DelegateSignature;
+DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_OnGainedStackFocused;
 
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_1_SimpleListItemEventDynamic__DelegateSignature
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PostPush_81AD0A2146BDF652D694E69B0B8C9770
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_BlackmarketScreen_C_BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_1_SimpleListItemEventDynamic__DelegateSignature final
+struct WBP_BlackmarketScreen_C_PostPush_81AD0A2146BDF652D694E69B0B8C9770 final
 {
 public:
-	class UObject*                                Item;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_1_SimpleListItemEventDynamic__DelegateSignature;
+DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_PostPush_81AD0A2146BDF652D694E69B0B8C9770;
 
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_10_SimpleListItemEventDynamic__DelegateSignature
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PostPush_81AD0A2146BDF652D694E69B77BB3528
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_BlackmarketScreen_C_BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_10_SimpleListItemEventDynamic__DelegateSignature final
+struct WBP_BlackmarketScreen_C_PostPush_81AD0A2146BDF652D694E69B77BB3528 final
 {
 public:
-	class UObject*                                Item;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_10_SimpleListItemEventDynamic__DelegateSignature;
+DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_PostPush_81AD0A2146BDF652D694E69B77BB3528;
 
-// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_0_OnListItemSelectionChangedDynamic__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_BlackmarketScreen_C_BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_0_OnListItemSelectionChangedDynamic__DelegateSignature final
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PostPush_81AD0A2146BDF652D694E69BE6642144
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_BlackmarketScreen_C_PostPush_81AD0A2146BDF652D694E69BE6642144 final
 {
 public:
-	class UObject*                                Item;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsSelected;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_BndEvt__WBP_CrimebondCollectionScreen_BundlePackItems_ListView_K2Node_ComponentBoundEvent_0_OnListItemSelectionChangedDynamic__DelegateSignature;
+DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_PostPush_81AD0A2146BDF652D694E69BE6642144;
+
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PostPush_8B21FF524A80C9672955E88E172F88F1
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_BlackmarketScreen_C_PostPush_8B21FF524A80C9672955E88E172F88F1 final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_PostPush_8B21FF524A80C9672955E88E172F88F1;
+
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PostPush_8B21FF524A80C9672955E88E6B182AA9
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_BlackmarketScreen_C_PostPush_8B21FF524A80C9672955E88E6B182AA9 final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_PostPush_8B21FF524A80C9672955E88E6B182AA9;
+
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PostPush_8B21FF524A80C9672955E88E86F09C9D
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_BlackmarketScreen_C_PostPush_8B21FF524A80C9672955E88E86F09C9D final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_PostPush_8B21FF524A80C9672955E88E86F09C9D;
+
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PrePush_81AD0A2146BDF652D694E69B0B8C9770
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_BlackmarketScreen_C_PrePush_81AD0A2146BDF652D694E69B0B8C9770 final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_PrePush_81AD0A2146BDF652D694E69B0B8C9770;
+
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PrePush_81AD0A2146BDF652D694E69B77BB3528
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_BlackmarketScreen_C_PrePush_81AD0A2146BDF652D694E69B77BB3528 final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_PrePush_81AD0A2146BDF652D694E69B77BB3528;
+
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PrePush_81AD0A2146BDF652D694E69BE6642144
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_BlackmarketScreen_C_PrePush_81AD0A2146BDF652D694E69BE6642144 final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_PrePush_81AD0A2146BDF652D694E69BE6642144;
+
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PrePush_8B21FF524A80C9672955E88E172F88F1
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_BlackmarketScreen_C_PrePush_8B21FF524A80C9672955E88E172F88F1 final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_PrePush_8B21FF524A80C9672955E88E172F88F1;
+
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PrePush_8B21FF524A80C9672955E88E6B182AA9
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_BlackmarketScreen_C_PrePush_8B21FF524A80C9672955E88E6B182AA9 final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_PrePush_8B21FF524A80C9672955E88E6B182AA9;
+
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.PrePush_8B21FF524A80C9672955E88E86F09C9D
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_BlackmarketScreen_C_PrePush_8B21FF524A80C9672955E88E86F09C9D final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_PrePush_8B21FF524A80C9672955E88E86F09C9D;
+
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.RefreshNavigation
+// 0x0038 (0x0038 - 0x0000)
+struct WBP_BlackmarketScreen_C_RefreshNavigation final
+{
+public:
+	int32                                         InputPin;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class USBZBundlePackData*>             K2Node_MakeArray_Array;                            // 0x0008(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Max_ReturnValue;                          // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZCrimeBondManager*                   CallFunc_Get_ReturnValue;                          // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class USBZBundlePackData*>             CallFunc_GetAllBundlePackData_ReturnValue;         // 0x0028(0x0010)(ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_RefreshNavigation;
+
+// Function WBP_BlackmarketScreen.WBP_BlackmarketScreen_C.UpdateBackground
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_BlackmarketScreen_C_UpdateBackground final
+{
+public:
+	class USBZBundlePackData*                     InBundlePackData;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_BlackmarketScreen_C_UpdateBackground;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

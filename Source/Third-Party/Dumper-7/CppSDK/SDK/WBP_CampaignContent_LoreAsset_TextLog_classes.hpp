@@ -47,13 +47,13 @@ public:
 	struct FTimerHandle                           FlashTimerHandle;                                  // 0x03A8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AddNextLine();
-	void DoFlashStep();
-	void ExecuteUbergraph_WBP_CampaignContent_LoreAsset_TextLog(int32 EntryPoint);
-	ESBZCampaignEntryState GetEntryState();
-	void PulseRedText();
-	void SetCampaignData(const class USBZCampaignBaseEntryData* Entry);
 	void SetEntryState(ESBZCampaignEntryState NewState);
+	void SetCampaignData(const class USBZCampaignBaseEntryData* Entry);
+	void PulseRedText();
+	ESBZCampaignEntryState GetEntryState();
+	void ExecuteUbergraph_WBP_CampaignContent_LoreAsset_TextLog(int32 EntryPoint);
+	void DoFlashStep();
+	void AddNextLine();
 
 public:
 	static class UClass* StaticClass()
@@ -69,5 +69,6 @@ public:
 		return GetDefaultObjImpl<UWBP_CampaignContent_LoreAsset_TextLog_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_CampaignContent_LoreAsset_TextLog_C;
 
 SDK_NAMESPACE_END

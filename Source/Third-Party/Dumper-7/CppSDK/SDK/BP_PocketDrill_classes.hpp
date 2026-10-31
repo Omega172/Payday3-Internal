@@ -44,10 +44,10 @@ public:
 	bool                                          useDefendMarker;                                   // 0x06E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_PocketDrill_ActivationInteraction_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BP_OnStateChanged(ESBZBreachingEquipmentState OldState, ESBZBreachingEquipmentState NewState, bool bDoCosmetics);
+	void ReceiveTick(float DeltaSeconds_ReceiveTick);
 	void ExecuteUbergraph_BP_PocketDrill(int32 EntryPoint);
-	void ReceiveTick(float DeltaSeconds);
+	void BP_OnStateChanged(ESBZBreachingEquipmentState OldState_BP_OnStateChanged, ESBZBreachingEquipmentState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged);
+	void BndEvt__BP_PocketDrill_ActivationInteraction_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 	struct FVector GetMarkerLocation() const;
 
@@ -65,5 +65,6 @@ public:
 		return GetDefaultObjImpl<ABP_PocketDrill_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PocketDrill_C;
 
 SDK_NAMESPACE_END

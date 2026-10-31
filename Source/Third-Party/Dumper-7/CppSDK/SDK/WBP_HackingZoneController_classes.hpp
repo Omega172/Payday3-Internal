@@ -31,15 +31,15 @@ public:
 	class UWBP_HackingZoneControllerRunning_C*    WBP_HackingZoneControllerRunning;                  // 0x0328(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Disabled();
-	void Done();
-	void ExecuteUbergraph_WBP_HackingZoneController(int32 EntryPoint);
-	void HideAllWidgetsButOne(class UWidget* WidgetToShow);
-	void Inactive();
-	void Paused();
-	void Running();
-	void Sabotaged();
 	void setText(const class FText& disabled, const class FText& done, const class FText& inactive, const class FText& interrupt, const class FText& paused, const class FText& running);
+	void Sabotaged();
+	void Running();
+	void Paused();
+	void Inactive();
+	void HideAllWidgetsButOne(class UWidget* WidgetToShow);
+	void ExecuteUbergraph_WBP_HackingZoneController(int32 EntryPoint);
+	void Done();
+	void Disabled();
 
 public:
 	static class UClass* StaticClass()
@@ -55,5 +55,6 @@ public:
 		return GetDefaultObjImpl<UWBP_HackingZoneController_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_HackingZoneController_C;
 
 SDK_NAMESPACE_END

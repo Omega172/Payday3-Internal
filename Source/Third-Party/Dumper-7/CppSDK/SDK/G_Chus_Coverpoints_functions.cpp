@@ -16,21 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function G_Chus_Coverpoints.G_Chus_Coverpoints_C.ExecuteUbergraph_G_Chus_Coverpoints
-// (Final, UbergraphFunction, HasDefaults)
+// Function G_Chus_Coverpoints.G_Chus_Coverpoints_C.OnPreplanningAssetsTagsApplied
+// (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTagContainer&     PreplanningTagContainer_OnPreplanningAssetsTagsApplied (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void AG_Chus_Coverpoints_C::ExecuteUbergraph_G_Chus_Coverpoints(int32 EntryPoint)
+void AG_Chus_Coverpoints_C::OnPreplanningAssetsTagsApplied(const struct FGameplayTagContainer& PreplanningTagContainer_OnPreplanningAssetsTagsApplied)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPreplanningAssetsTagsApplied", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_Coverpoints_C", "ExecuteUbergraph_G_Chus_Coverpoints");
+	Params::G_Chus_Coverpoints_C_OnPreplanningAssetsTagsApplied Parms{};
 
-	Params::G_Chus_Coverpoints_C_ExecuteUbergraph_G_Chus_Coverpoints Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.PreplanningTagContainer_OnPreplanningAssetsTagsApplied = std::move(PreplanningTagContainer_OnPreplanningAssetsTagsApplied);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -41,30 +39,26 @@ void AG_Chus_Coverpoints_C::ExecuteUbergraph_G_Chus_Coverpoints(int32 EntryPoint
 
 void AG_Chus_Coverpoints_C::MetalDetectorsDisabledToggleRoomtype()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_Coverpoints_C", "MetalDetectorsDisabledToggleRoomtype");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MetalDetectorsDisabledToggleRoomtype", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Chus_Coverpoints.G_Chus_Coverpoints_C.OnPreplanningAssetsTagsApplied
-// (Event, Public, HasOutParams, BlueprintEvent)
+// Function G_Chus_Coverpoints.G_Chus_Coverpoints_C.ExecuteUbergraph_G_Chus_Coverpoints
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// const struct FGameplayTagContainer&     PreplanningTagContainer                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Chus_Coverpoints_C::OnPreplanningAssetsTagsApplied(const struct FGameplayTagContainer& PreplanningTagContainer)
+void AG_Chus_Coverpoints_C::ExecuteUbergraph_G_Chus_Coverpoints(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_Chus_Coverpoints_C", "ExecuteUbergraph_G_Chus_Coverpoints", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_Coverpoints_C", "OnPreplanningAssetsTagsApplied");
+	Params::G_Chus_Coverpoints_C_ExecuteUbergraph_G_Chus_Coverpoints Parms{};
 
-	Params::G_Chus_Coverpoints_C_OnPreplanningAssetsTagsApplied Parms{};
-
-	Parms.PreplanningTagContainer = std::move(PreplanningTagContainer);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_StorageTrolley_01_Tray_SmallDestruction_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_StorageTrolley_01_Tray_SmallDestruction_C;
 
 SDK_NAMESPACE_END

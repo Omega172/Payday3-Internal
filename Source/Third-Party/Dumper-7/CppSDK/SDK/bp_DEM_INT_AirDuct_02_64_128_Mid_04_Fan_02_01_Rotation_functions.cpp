@@ -21,10 +21,8 @@ SDK_NAMESPACE_START
 
 void ABP_DEM_INT_AirDuct_02_64_128_Mid_04_Fan_02_01_Rotation_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DEM_INT_AirDuct_02_64_128_Mid_04_Fan_02_01_Rotation_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

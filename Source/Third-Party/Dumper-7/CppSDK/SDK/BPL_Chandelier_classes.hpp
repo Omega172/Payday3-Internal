@@ -40,5 +40,6 @@ public:
 		return GetDefaultObjImpl<ABPL_Chandelier_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_Chandelier_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AE_ArmoredTransport_Ext_VehiclePark_Prop_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_ArmoredTransport_Ext_VehiclePark_Prop_C;
 
 SDK_NAMESPACE_END

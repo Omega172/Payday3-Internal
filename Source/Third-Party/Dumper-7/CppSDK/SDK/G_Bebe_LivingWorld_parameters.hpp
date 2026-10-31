@@ -108,6 +108,7 @@ public:
 	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_55;           // 0x03C8(0x0010)()
 	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x03D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Bebe_LivingWorld_C_ExecuteUbergraph_G_Bebe_LivingWorld;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

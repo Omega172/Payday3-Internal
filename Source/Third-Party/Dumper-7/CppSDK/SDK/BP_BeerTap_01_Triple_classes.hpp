@@ -33,8 +33,8 @@ public:
 	double                                        Duration;                                          // 0x0360(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_CoffeeMachine_03_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 	void ExecuteUbergraph_BP_BeerTap_01_Triple(int32 EntryPoint);
+	void BndEvt__BP_CoffeeMachine_03_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 
 public:
 	static class UClass* StaticClass()
@@ -50,5 +50,6 @@ public:
 		return GetDefaultObjImpl<ABP_BeerTap_01_Triple_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BeerTap_01_Triple_C;
 
 SDK_NAMESPACE_END

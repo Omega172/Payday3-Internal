@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AG_Murk_Navlinks_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_Murk_Navlinks_C;
 
 SDK_NAMESPACE_END

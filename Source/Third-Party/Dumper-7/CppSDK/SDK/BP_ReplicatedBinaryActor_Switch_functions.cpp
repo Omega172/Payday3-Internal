@@ -16,25 +16,81 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ReplicatedBinaryActor_Switch.BP_ReplicatedBinaryActor_Switch_C.BndEvt__BP_ReplicatedBinaryActor_Switch_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ReplicatedBinaryActor_Switch.BP_ReplicatedBinaryActor_Switch_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_ReplicatedBinaryActor_Switch_C::BndEvt__BP_ReplicatedBinaryActor_Switch_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_ReplicatedBinaryActor_Switch_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_Switch_C", "BndEvt__BP_ReplicatedBinaryActor_Switch_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_ReplicatedBinaryActor_Switch_C_BndEvt__BP_ReplicatedBinaryActor_Switch_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+// Function BP_ReplicatedBinaryActor_Switch.BP_ReplicatedBinaryActor_Switch_C.SetC
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_ReplicatedBinaryActor_Switch_C::SetC()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetC", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ReplicatedBinaryActor_Switch.BP_ReplicatedBinaryActor_Switch_C.SetB
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_ReplicatedBinaryActor_Switch_C::SetB()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetB", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ReplicatedBinaryActor_Switch.BP_ReplicatedBinaryActor_Switch_C.SetA
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_ReplicatedBinaryActor_Switch_C::SetA()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetA", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ReplicatedBinaryActor_Switch.BP_ReplicatedBinaryActor_Switch_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_ReplicatedBinaryActor_Switch_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ReplicatedBinaryActor_Switch.BP_ReplicatedBinaryActor_Switch_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bStateToChangeTo_OnStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ReplicatedBinaryActor_Switch_C::OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_ReplicatedBinaryActor_Switch_C_OnStateChanged Parms{};
+
+	Parms.bStateToChangeTo_OnStateChanged = bStateToChangeTo_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -47,10 +103,8 @@ void ABP_ReplicatedBinaryActor_Switch_C::BndEvt__BP_ReplicatedBinaryActor_Switch
 
 void ABP_ReplicatedBinaryActor_Switch_C::ExecuteUbergraph_BP_ReplicatedBinaryActor_Switch(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_Switch_C", "ExecuteUbergraph_BP_ReplicatedBinaryActor_Switch");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ReplicatedBinaryActor_Switch_C", "ExecuteUbergraph_BP_ReplicatedBinaryActor_Switch", FuncInfo);
 
 	Params::BP_ReplicatedBinaryActor_Switch_C_ExecuteUbergraph_BP_ReplicatedBinaryActor_Switch Parms{};
 
@@ -60,95 +114,25 @@ void ABP_ReplicatedBinaryActor_Switch_C::ExecuteUbergraph_BP_ReplicatedBinaryAct
 }
 
 
-// Function BP_ReplicatedBinaryActor_Switch.BP_ReplicatedBinaryActor_Switch_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
+// Function BP_ReplicatedBinaryActor_Switch.BP_ReplicatedBinaryActor_Switch_C.BndEvt__BP_ReplicatedBinaryActor_Switch_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ReplicatedBinaryActor_Switch_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
+void ABP_ReplicatedBinaryActor_Switch_C::BndEvt__BP_ReplicatedBinaryActor_Switch_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ReplicatedBinaryActor_Switch_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_Switch_C", "OnStateChanged");
+	Params::BP_ReplicatedBinaryActor_Switch_C_BndEvt__BP_ReplicatedBinaryActor_Switch_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
-	Params::BP_ReplicatedBinaryActor_Switch_C_OnStateChanged Parms{};
-
-	Parms.bStateToChangeTo = bStateToChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ReplicatedBinaryActor_Switch.BP_ReplicatedBinaryActor_Switch_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_ReplicatedBinaryActor_Switch_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_Switch_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ReplicatedBinaryActor_Switch.BP_ReplicatedBinaryActor_Switch_C.SetA
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_ReplicatedBinaryActor_Switch_C::SetA()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_Switch_C", "SetA");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ReplicatedBinaryActor_Switch.BP_ReplicatedBinaryActor_Switch_C.SetB
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_ReplicatedBinaryActor_Switch_C::SetB()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_Switch_C", "SetB");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ReplicatedBinaryActor_Switch.BP_ReplicatedBinaryActor_Switch_C.SetC
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_ReplicatedBinaryActor_Switch_C::SetC()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_Switch_C", "SetC");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ReplicatedBinaryActor_Switch.BP_ReplicatedBinaryActor_Switch_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_ReplicatedBinaryActor_Switch_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_Switch_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

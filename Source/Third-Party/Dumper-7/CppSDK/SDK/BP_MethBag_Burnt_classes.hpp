@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABP_MethBag_Burnt_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_MethBag_Burnt_C;
 
 SDK_NAMESPACE_END

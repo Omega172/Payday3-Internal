@@ -17,6 +17,47 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_GarageDoorBase.BP_GarageDoorBase_C.UserConstructionScript
+// 0x0010 (0x0010 - 0x0000)
+struct BP_GarageDoorBase_C_UserConstructionScript final
+{
+public:
+	double                                        CallFunc_Conv_BoolToDouble_ReturnValue;            // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_GarageDoorBase_C_UserConstructionScript;
+
+// Function BP_GarageDoorBase.BP_GarageDoorBase_C.SetStateFunction
+// 0x0003 (0x0003 - 0x0000)
+struct BP_GarageDoorBase_C_SetStateFunction final
+{
+public:
+	Enum_Int_Garage_Door_States                   State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          animateOpening;                                    // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_GarageDoorBase_C_SetStateFunction;
+
+// Function BP_GarageDoorBase.BP_GarageDoorBase_C.setBinaryState
+// 0x0002 (0x0002 - 0x0000)
+struct BP_GarageDoorBase_C_setBinaryState final
+{
+public:
+	bool                                          state;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          doCosmetics;                                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_GarageDoorBase_C_setBinaryState;
+
+// Function BP_GarageDoorBase.BP_GarageDoorBase_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_GarageDoorBase_C_OnStateChanged final
+{
+public:
+	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_GarageDoorBase_C_OnStateChanged;
+
 // Function BP_GarageDoorBase.BP_GarageDoorBase_C.ExecuteUbergraph_BP_GarageDoorBase
 // 0x0058 (0x0058 - 0x0000)
 struct BP_GarageDoorBase_C_ExecuteUbergraph_BP_GarageDoorBase final
@@ -39,43 +80,7 @@ public:
 	float                                         CallFunc_SetCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetCustomPrimitiveDataFloat_Value_ImplicitCast_1; // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_GarageDoorBase.BP_GarageDoorBase_C.OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_GarageDoorBase_C_OnStateChanged final
-{
-public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_GarageDoorBase.BP_GarageDoorBase_C.setBinaryState
-// 0x0002 (0x0002 - 0x0000)
-struct BP_GarageDoorBase_C_setBinaryState final
-{
-public:
-	bool                                          state;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          doCosmetics;                                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_GarageDoorBase.BP_GarageDoorBase_C.SetStateFunction
-// 0x0003 (0x0003 - 0x0000)
-struct BP_GarageDoorBase_C_SetStateFunction final
-{
-public:
-	Enum_Int_Garage_Door_States                   State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          animateOpening;                                    // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_GarageDoorBase.BP_GarageDoorBase_C.UserConstructionScript
-// 0x0010 (0x0010 - 0x0000)
-struct BP_GarageDoorBase_C_UserConstructionScript final
-{
-public:
-	double                                        CallFunc_Conv_BoolToDouble_ReturnValue;            // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_GarageDoorBase_C_ExecuteUbergraph_BP_GarageDoorBase;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

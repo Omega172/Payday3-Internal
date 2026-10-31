@@ -16,69 +16,45 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.SetPlayerUIInfo
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FSBZLobbyCharacterInfoUi&  InCharacter                                            (BlueprintVisible, BlueprintReadOnly, Parm)
+// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.CleanWidget
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Lobby_Player_C::SetPlayerUIInfo(const struct FSBZLobbyCharacterInfoUi& InCharacter)
+void UWBP_UI_Lobby_Player_C::CleanWidget()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetPlayerUIInfo", FnName));
-
-	Params::WBP_UI_Lobby_Player_C_SetPlayerUIInfo Parms{};
-
-	Parms.InCharacter = std::move(InCharacter);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.OnMMStopped
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESBZOnlineCode                          ErrorCode                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Lobby_Player_C::OnMMStopped(ESBZOnlineCode ErrorCode)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnMMStopped", FnName));
-
-	Params::WBP_UI_Lobby_Player_C_OnMMStopped Parms{};
-
-	Parms.ErrorCode = ErrorCode;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.OnLobbyUpdate
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESBZOnlineCode                          ErrorCode                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Lobby_Player_C::OnLobbyUpdate(ESBZOnlineCode ErrorCode)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLobbyUpdate", FnName));
-
-	Params::WBP_UI_Lobby_Player_C_OnLobbyUpdate Parms{};
-
-	Parms.ErrorCode = ErrorCode;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.OnLeft
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Lobby_Player_C::OnLeft()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLeft", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CleanWidget", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Lobby_Player_C::Construct()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.ExecuteUbergraph_WBP_UI_Lobby_Player
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Lobby_Player_C::ExecuteUbergraph_WBP_UI_Lobby_Player(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Lobby_Player_C", "ExecuteUbergraph_WBP_UI_Lobby_Player", FuncInfo);
+
+	Params::WBP_UI_Lobby_Player_C_ExecuteUbergraph_WBP_UI_Lobby_Player Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -105,45 +81,69 @@ void UWBP_UI_Lobby_Player_C::GetLobbyInfo(struct FSBZLobbyCharacterInfoUi* Chara
 }
 
 
-// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.ExecuteUbergraph_WBP_UI_Lobby_Player
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.OnLeft
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Lobby_Player_C::ExecuteUbergraph_WBP_UI_Lobby_Player(int32 EntryPoint)
+void UWBP_UI_Lobby_Player_C::OnLeft()
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Lobby_Player_C", "ExecuteUbergraph_WBP_UI_Lobby_Player", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLeft", FnName));
 
-	Params::WBP_UI_Lobby_Player_C_ExecuteUbergraph_WBP_UI_Lobby_Player Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.OnLobbyUpdate
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESBZOnlineCode                          ErrorCode                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Lobby_Player_C::OnLobbyUpdate(ESBZOnlineCode ErrorCode)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLobbyUpdate", FnName));
+
+	Params::WBP_UI_Lobby_Player_C_OnLobbyUpdate Parms{};
+
+	Parms.ErrorCode = ErrorCode;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.OnMMStopped
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESBZOnlineCode                          ErrorCode                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Lobby_Player_C::Construct()
+void UWBP_UI_Lobby_Player_C::OnMMStopped(ESBZOnlineCode ErrorCode)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnMMStopped", FnName));
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_Lobby_Player_C_OnMMStopped Parms{};
+
+	Parms.ErrorCode = ErrorCode;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.CleanWidget
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Lobby_Player.WBP_UI_Lobby_Player_C.SetPlayerUIInfo
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FSBZLobbyCharacterInfoUi&  InCharacter                                            (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_UI_Lobby_Player_C::CleanWidget()
+void UWBP_UI_Lobby_Player_C::SetPlayerUIInfo(const struct FSBZLobbyCharacterInfoUi& InCharacter)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CleanWidget", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetPlayerUIInfo", FnName));
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_Lobby_Player_C_SetPlayerUIInfo Parms{};
+
+	Parms.InCharacter = std::move(InCharacter);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

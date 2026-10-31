@@ -16,163 +16,39 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_TestThermite.BP_TestThermite_C.BP_OnFlashOver
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+// Function BP_TestThermite.BP_TestThermite_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_TestThermite_C::BP_OnFlashOver()
+void ABP_TestThermite_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TestThermite_C", "BP_OnFlashOver");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_TestThermite.BP_TestThermite_C.BP_OnInterferenceChanged
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
-// Parameters:
-// const bool                              bInterfered                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_TestThermite_C::BP_OnInterferenceChanged(const bool bInterfered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TestThermite_C", "BP_OnInterferenceChanged");
-
-	Params::BP_TestThermite_C_BP_OnInterferenceChanged Parms{};
-
-	Parms.bInterfered = bInterfered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_TestThermite.BP_TestThermite_C.BP_OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// ESBZThermiteBurnState                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZThermiteBurnState                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_TestThermite_C::BP_OnStateChanged(ESBZThermiteBurnState OldState, ESBZThermiteBurnState NewState, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TestThermite_C", "BP_OnStateChanged");
-
-	Params::BP_TestThermite_C_BP_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_TestThermite.BP_TestThermite_C.BP_OnSteamExplosion
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
-
-void ABP_TestThermite_C::BP_OnSteamExplosion()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TestThermite_C", "BP_OnSteamExplosion");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_TestThermite.BP_TestThermite_C.BP_OnThermiteBagOverlapped
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bIsInitialBag                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_TestThermite_C::BP_OnThermiteBagOverlapped(bool bIsInitialBag)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TestThermite_C", "BP_OnThermiteBagOverlapped");
-
-	Params::BP_TestThermite_C_BP_OnThermiteBagOverlapped Parms{};
-
-	Parms.bIsInitialBag = bIsInitialBag;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_TestThermite.BP_TestThermite_C.ExecuteUbergraph_BP_TestThermite
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_TestThermite_C::ExecuteUbergraph_BP_TestThermite(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TestThermite_C", "ExecuteUbergraph_BP_TestThermite");
-
-	Params::BP_TestThermite_C_ExecuteUbergraph_BP_TestThermite Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_TestThermite.BP_TestThermite_C.IncreaseIntensity__FinishedFunc
+// Function BP_TestThermite.BP_TestThermite_C.StartFire__UpdateFunc
 // (BlueprintEvent)
 
-void ABP_TestThermite_C::IncreaseIntensity__FinishedFunc()
+void ABP_TestThermite_C::StartFire__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TestThermite_C", "IncreaseIntensity__FinishedFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StartFire__UpdateFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_TestThermite.BP_TestThermite_C.IncreaseIntensity__UpdateFunc
+// Function BP_TestThermite.BP_TestThermite_C.StartFire__FinishedFunc
 // (BlueprintEvent)
 
-void ABP_TestThermite_C::IncreaseIntensity__UpdateFunc()
+void ABP_TestThermite_C::StartFire__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TestThermite_C", "IncreaseIntensity__UpdateFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StartFire__FinishedFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_TestThermite.BP_TestThermite_C.OnInterferenceChanged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsInterfered_0                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_TestThermite_C::OnInterferenceChanged(bool bIsInterfered_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TestThermite_C", "OnInterferenceChanged");
-
-	Params::BP_TestThermite_C_OnInterferenceChanged Parms{};
-
-	Parms.bIsInterfered_0 = bIsInterfered_0;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -184,10 +60,8 @@ void ABP_TestThermite_C::OnInterferenceChanged(bool bIsInterfered_0)
 
 void ABP_TestThermite_C::SetCageVisiblityAndCollision(bool InVisiblity, ECollisionEnabled InCollision)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TestThermite_C", "SetCageVisiblityAndCollision");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetCageVisiblityAndCollision", FnName));
 
 	Params::BP_TestThermite_C_SetCageVisiblityAndCollision Parms{};
 
@@ -198,43 +72,143 @@ void ABP_TestThermite_C::SetCageVisiblityAndCollision(bool InVisiblity, ECollisi
 }
 
 
-// Function BP_TestThermite.BP_TestThermite_C.StartFire__FinishedFunc
+// Function BP_TestThermite.BP_TestThermite_C.OnInterferenceChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsInterfered                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_TestThermite_C::OnInterferenceChanged(bool bIsInterfered)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInterferenceChanged", FnName));
+
+	Params::BP_TestThermite_C_OnInterferenceChanged Parms{};
+
+	Parms.bIsInterfered = bIsInterfered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_TestThermite.BP_TestThermite_C.IncreaseIntensity__UpdateFunc
 // (BlueprintEvent)
 
-void ABP_TestThermite_C::StartFire__FinishedFunc()
+void ABP_TestThermite_C::IncreaseIntensity__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TestThermite_C", "StartFire__FinishedFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IncreaseIntensity__UpdateFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_TestThermite.BP_TestThermite_C.StartFire__UpdateFunc
+// Function BP_TestThermite.BP_TestThermite_C.IncreaseIntensity__FinishedFunc
 // (BlueprintEvent)
 
-void ABP_TestThermite_C::StartFire__UpdateFunc()
+void ABP_TestThermite_C::IncreaseIntensity__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TestThermite_C", "StartFire__UpdateFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IncreaseIntensity__FinishedFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_TestThermite.BP_TestThermite_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_TestThermite.BP_TestThermite_C.ExecuteUbergraph_BP_TestThermite
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_TestThermite_C::UserConstructionScript()
+void ABP_TestThermite_C::ExecuteUbergraph_BP_TestThermite(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_TestThermite_C", "ExecuteUbergraph_BP_TestThermite", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TestThermite_C", "UserConstructionScript");
+	Params::BP_TestThermite_C_ExecuteUbergraph_BP_TestThermite Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_TestThermite.BP_TestThermite_C.BP_OnThermiteBagOverlapped
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsInitialBag_BP_OnThermiteBagOverlapped               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_TestThermite_C::BP_OnThermiteBagOverlapped(bool bIsInitialBag_BP_OnThermiteBagOverlapped)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnThermiteBagOverlapped", FnName));
+
+	Params::BP_TestThermite_C_BP_OnThermiteBagOverlapped Parms{};
+
+	Parms.bIsInitialBag_BP_OnThermiteBagOverlapped = bIsInitialBag_BP_OnThermiteBagOverlapped;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_TestThermite.BP_TestThermite_C.BP_OnSteamExplosion
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+
+void ABP_TestThermite_C::BP_OnSteamExplosion()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnSteamExplosion", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_TestThermite.BP_TestThermite_C.BP_OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZThermiteBurnState                   OldState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZThermiteBurnState                   NewState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_BP_OnStateChanged                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_TestThermite_C::BP_OnStateChanged(ESBZThermiteBurnState OldState_BP_OnStateChanged, ESBZThermiteBurnState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnStateChanged", FnName));
+
+	Params::BP_TestThermite_C_BP_OnStateChanged Parms{};
+
+	Parms.OldState_BP_OnStateChanged = OldState_BP_OnStateChanged;
+	Parms.NewState_BP_OnStateChanged = NewState_BP_OnStateChanged;
+	Parms.bDoCosmetics_BP_OnStateChanged = bDoCosmetics_BP_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_TestThermite.BP_TestThermite_C.BP_OnInterferenceChanged
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+// Parameters:
+// const bool                              bInterfered_BP_OnInterferenceChanged                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_TestThermite_C::BP_OnInterferenceChanged(const bool bInterfered_BP_OnInterferenceChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnInterferenceChanged", FnName));
+
+	Params::BP_TestThermite_C_BP_OnInterferenceChanged Parms{};
+
+	Parms.bInterfered_BP_OnInterferenceChanged = bInterfered_BP_OnInterferenceChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_TestThermite.BP_TestThermite_C.BP_OnFlashOver
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+
+void ABP_TestThermite_C::BP_OnFlashOver()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnFlashOver", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -243,14 +217,12 @@ void ABP_TestThermite_C::UserConstructionScript()
 // Function BP_TestThermite.BP_TestThermite_C.GetMarkerLocation
 // (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                          ReturnValue_GetMarkerLocation                          (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 struct FVector ABP_TestThermite_C::GetMarkerLocation() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TestThermite_C", "GetMarkerLocation");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetMarkerLocation", FnName));
 
 	Params::BP_TestThermite_C_GetMarkerLocation Parms{};
 

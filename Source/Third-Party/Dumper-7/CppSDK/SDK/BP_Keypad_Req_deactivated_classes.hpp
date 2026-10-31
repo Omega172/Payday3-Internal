@@ -20,7 +20,7 @@ SDK_NAMESPACE_START
 class UBP_Keypad_Req_deactivated_C final : public USBZBaseInteractRequirement
 {
 public:
-	bool BP_CheckRequirement(const class USBZInteractorComponent* Interactor, struct FSBZInteractReqData* OutData, bool bIsSignalRequired, bool bInIsScreenInteract, bool bIsCasing, bool bIsEncumbered) const;
+	bool BP_CheckRequirement(const class USBZInteractorComponent* Interactor_BP_CheckRequirement, struct FSBZInteractReqData* OutData_BP_CheckRequirement, bool bIsSignalRequired_BP_CheckRequirement, bool bInIsScreenInteract_BP_CheckRequirement, bool bIsCasing_BP_CheckRequirement, bool bIsEncumbered_BP_CheckRequirement) const;
 
 public:
 	static class UClass* StaticClass()
@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<UBP_Keypad_Req_deactivated_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_Keypad_Req_deactivated_C;
 
 SDK_NAMESPACE_END

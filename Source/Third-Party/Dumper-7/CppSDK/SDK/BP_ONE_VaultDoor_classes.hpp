@@ -62,19 +62,19 @@ public:
 	double                                        leftDoorOpenAngle;                                 // 0x0468(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_ONE_VaultDoor_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_ONE_VaultDoor_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_ONE_VaultDoor_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_ONE_VaultDoor(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void OpenDoors_Internal(bool bOpen);
-	void setInteraction(bool bEnabled);
-	void Timeline_Open__FinishedFunc();
-	void Timeline_Open__TriggerDoorFX__EventFunc();
-	void Timeline_Open__UpdateFunc();
-	void Timeline_Wheel__FinishedFunc();
-	void Timeline_Wheel__UpdateFunc();
 	void UserConstructionScript();
+	void Timeline_Wheel__UpdateFunc();
+	void Timeline_Wheel__FinishedFunc();
+	void Timeline_Open__UpdateFunc();
+	void Timeline_Open__TriggerDoorFX__EventFunc();
+	void Timeline_Open__FinishedFunc();
+	void setInteraction(bool bEnabled);
+	void OpenDoors_Internal(bool bOpen);
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_ONE_VaultDoor(int32 EntryPoint);
+	void BndEvt__BP_ONE_VaultDoor_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_ONE_VaultDoor_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_ONE_VaultDoor_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -90,5 +90,6 @@ public:
 		return GetDefaultObjImpl<ABP_ONE_VaultDoor_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ONE_VaultDoor_C;
 
 SDK_NAMESPACE_END

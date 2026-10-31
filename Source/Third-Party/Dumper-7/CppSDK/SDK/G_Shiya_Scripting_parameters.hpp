@@ -20,1507 +20,286 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.10% Chance
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.SpawnEscortGuards
+// 0x0108 (0x0108 - 0x0000)
+struct G_Shiya_Scripting_C_SpawnEscortGuards final
+{
+public:
+	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue;              // 0x0000(0x0010)()
+	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_1;            // 0x0010(0x0010)()
+	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_2;            // 0x0020(0x0010)()
+	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins;              // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_32[0x6];                                       // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_3;            // 0x0038(0x0010)()
+	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_4;            // 0x0050(0x0010)()
+	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins_1;            // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_62[0x6];                                       // 0x0062(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_5;            // 0x0068(0x0010)()
+	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_6;            // 0x0078(0x0010)()
+	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_7;            // 0x0088(0x0010)()
+	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_8;            // 0x0098(0x0010)()
+	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_9;            // 0x00A8(0x0010)()
+	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_10;           // 0x00B8(0x0010)()
+	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins_2;            // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_11;           // 0x00D0(0x0010)()
+	bool                                          K2Node_SwitchEnum_CmpSuccess_2;                    // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E1[0x7];                                       // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_12;           // 0x00E8(0x0010)()
+	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_13;           // 0x00F8(0x0010)()
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_SpawnEscortGuards;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.SecureLoot
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_SecureLoot final
+{
+public:
+	int32                                         LootProgress;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bRareStone;                                        // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_SecureLoot;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.RandomizeTransports
+// 0x0050 (0x0050 - 0x0000)
+struct G_Shiya_Scripting_C_RandomizeTransports final
+{
+public:
+	int32                                         AmountToDestroy;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewParam;                                          // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         RandomInt;                                         // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initialized_AA9D1D2E49A60152E51FA9A5CED244C5_Variable; // 0x000C(0x0001)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Current_Value_AA9D1D2E49A60152E51FA9A5CED244C5_Variable; // 0x0010(0x0004)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_17[0x1];                                       // 0x0017(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetRandomIntegerFromStreamMixed_ReturnValue; // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZDestroyGroup*                       CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors;                 // 0x0030(0x0010)(ReferenceParm)
+	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors;            // 0x0040(0x0010)(ReferenceParm)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_RandomizeTransports;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.RandomizeRedKeycards
+// 0x0078 (0x0078 - 0x0000)
+struct G_Shiya_Scripting_C_RandomizeRedKeycards final
+{
+public:
+	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors;                 // 0x0000(0x0010)(ReferenceParm)
+	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors;            // 0x0010(0x0010)(ReferenceParm)
+	int32                                         CallFunc_GetRandomIntegerFromStreamMixed_ReturnValue; // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_1;               // 0x0028(0x0010)(ReferenceParm)
+	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_1;          // 0x0038(0x0010)(ReferenceParm)
+	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins;              // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_2;               // 0x0050(0x0010)(ReferenceParm)
+	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_2;          // 0x0060(0x0010)(ReferenceParm)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_RandomizeRedKeycards;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.Randomize Transport Locks
+// 0x0070 (0x0070 - 0x0000)
+struct G_Shiya_Scripting_C_Randomize_Transport_Locks final
+{
+public:
+	int32                                         AmountToDestroy;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         RandomInt3;                                        // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         RandomInt2;                                        // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         RandomInt;                                         // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initialized_7DB671E142BC4C07D03AACBC092107BB_Variable; // 0x0010(0x0001)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetRandomIntegerFromStreamMixed_ReturnValue; // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ABP_ArmoredTransport_WheeledVehicle_QrReader_C* CallFunc_Array_Get_Item;                   // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Current_Value_7DB671E142BC4C07D03AACBC092107BB_Variable; // 0x002C(0x0004)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetRandomIntegerFromStreamMixed_ReturnValue_1; // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue_2;            // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_45[0x3];                                       // 0x0045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZDestroyGroup*                       CallFunc_Array_Get_Item_1;                         // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors;                 // 0x0050(0x0010)(ReferenceParm)
+	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors;            // 0x0060(0x0010)(ReferenceParm)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_Randomize_Transport_Locks;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.OnServerKeyItemTagAdded
 // 0x000C (0x000C - 0x0000)
-struct G_Shiya_Scripting_C_One0__Chance final
+struct G_Shiya_Scripting_C_OnServerKeyItemTagAdded final
 {
 public:
-	bool                                          Chance;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ELowEntryExtendedStandardLibraryTrueOrFalse   Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetRandomIntegerFromStreamMixed_ReturnValue; // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ExecToBoolean_Value;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           KeyTag_OnServerKeyItemTagAdded;                    // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_OnServerKeyItemTagAdded;
 
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.25% Chance
-// 0x000C (0x000C - 0x0000)
-struct G_Shiya_Scripting_C_Two5__Chance final
-{
-public:
-	bool                                          Chance;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ELowEntryExtendedStandardLibraryTrueOrFalse   Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetRandomIntegerFromStreamMixed_ReturnValue; // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ExecToBoolean_Value;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Escape_Loud_K2Node_ActorBoundEvent_15_SBZBagEnteredDelegate__DelegateSignature
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.OnPreplanningAssetsTagsApplied
 // 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Escape_Loud_K2Node_ActorBoundEvent_15_SBZBagEnteredDelegate__DelegateSignature final
+struct G_Shiya_Scripting_C_OnPreplanningAssetsTagsApplied final
 {
 public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FGameplayTagContainer                  PreplanningTagContainer_OnPreplanningAssetsTagsApplied; // 0x0000(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_OnPreplanningAssetsTagsApplied;
 
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_ForceSpawn_Guard1_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.OnPlayerPickedUpBag
 // 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_ForceSpawn_Guard1_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+struct G_Shiya_Scripting_C_OnPlayerPickedUpBag final
 {
 public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          BagHandle_OnPlayerPickedUpBag;                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_OnPlayerPickedUpBag;
 
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.OnPlayerInstantLootTaken
 // 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+struct G_Shiya_Scripting_C_OnPlayerInstantLootTaken final
 {
 public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZInstantLoot*                        InstantLoot_OnPlayerInstantLootTaken;              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer_OnPlayerInstantLootTaken;            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_OnPlayerInstantLootTaken;
 
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZTrafficSpline_Escape_FlyIn_K2Node_ActorBoundEvent_0_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZTrafficSpline_Escape_FlyIn_K2Node_ActorBoundEvent_0_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZTrafficSpline_Escape_FlyIn_K2Node_ActorBoundEvent_13_SBZSplineOnEnter__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZTrafficSpline_Escape_FlyIn_K2Node_ActorBoundEvent_13_SBZSplineOnEnter__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZTrafficSpline_Escape_FlyOut_K2Node_ActorBoundEvent_14_SBZSplineOnEnter__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZTrafficSpline_Escape_FlyOut_K2Node_ActorBoundEvent_14_SBZSplineOnEnter__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_container_doors_EastObj10_K2Node_ActorBoundEvent_296_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_container_doors_EastObj10_K2Node_ActorBoundEvent_296_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_container_doors_EastObj6_K2Node_ActorBoundEvent_297_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_container_doors_EastObj6_K2Node_ActorBoundEvent_297_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_container_doors_EastObj7_K2Node_ActorBoundEvent_293_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_container_doors_EastObj7_K2Node_ActorBoundEvent_293_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_container_doors_EastObj8_K2Node_ActorBoundEvent_294_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_container_doors_EastObj8_K2Node_ActorBoundEvent_294_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_container_doors_EastObj9_K2Node_ActorBoundEvent_295_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_container_doors_EastObj9_K2Node_ActorBoundEvent_295_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_container_Double_doors6_0_K2Node_ActorBoundEvent_206_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_container_Double_doors6_0_K2Node_ActorBoundEvent_206_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_container_Double_doors7_2_K2Node_ActorBoundEvent_205_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_container_Double_doors7_2_K2Node_ActorBoundEvent_205_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_ext_door_01_Sliding_fence_515_K2Node_ActorBoundEvent_25_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_ext_door_01_Sliding_fence_515_K2Node_ActorBoundEvent_25_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_FlipSwitch_SabotagePoint2_K2Node_ActorBoundEvent_203_SBZSabotagePointDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_FlipSwitch_SabotagePoint2_K2Node_ActorBoundEvent_203_SBZSabotagePointDelegate__DelegateSignature final
-{
-public:
-	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_FlipSwitch_SabotagePoint_2_K2Node_ActorBoundEvent_2_SBZSabotagePointDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_FlipSwitch_SabotagePoint_2_K2Node_ActorBoundEvent_2_SBZSabotagePointDelegate__DelegateSignature final
-{
-public:
-	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_FOR_DepoSecurityFence_01_K2Node_ActorBoundEvent_199_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_FOR_DepoSecurityFence_01_K2Node_ActorBoundEvent_199_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_FOR_DepoSecurityFence_2_K2Node_ActorBoundEvent_201_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_FOR_DepoSecurityFence_2_K2Node_ActorBoundEvent_201_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_FOR_DepoSecurityFence_3_K2Node_ActorBoundEvent_198_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_FOR_DepoSecurityFence_3_K2Node_ActorBoundEvent_198_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_Int_DoubleDoor_Reinforced_Industrial_01_2_K2Node_ActorBoundEvent_197_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_Int_DoubleDoor_Reinforced_Industrial_01_2_K2Node_ActorBoundEvent_197_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_01_2_K2Node_ActorBoundEvent_177_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_01_2_K2Node_ActorBoundEvent_177_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_22_K2Node_ActorBoundEvent_86_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_22_K2Node_ActorBoundEvent_86_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_24_K2Node_ActorBoundEvent_88_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_24_K2Node_ActorBoundEvent_88_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_26_K2Node_ActorBoundEvent_91_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_26_K2Node_ActorBoundEvent_91_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_2_K2Node_ActorBoundEvent_176_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_2_K2Node_ActorBoundEvent_176_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_3_K2Node_ActorBoundEvent_180_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_3_K2Node_ActorBoundEvent_180_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_InteractablePainting10_K2Node_ActorBoundEvent_232_ActorDestroyedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting10_K2Node_ActorBoundEvent_232_ActorDestroyedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_InteractablePainting11_K2Node_ActorBoundEvent_234_ActorDestroyedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting11_K2Node_ActorBoundEvent_234_ActorDestroyedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_InteractablePainting12_K2Node_ActorBoundEvent_233_ActorDestroyedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting12_K2Node_ActorBoundEvent_233_ActorDestroyedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_InteractablePainting1_K2Node_ActorBoundEvent_222_ActorDestroyedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting1_K2Node_ActorBoundEvent_222_ActorDestroyedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_InteractablePainting2_4_K2Node_ActorBoundEvent_224_ActorDestroyedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting2_4_K2Node_ActorBoundEvent_224_ActorDestroyedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_InteractablePainting3_K2Node_ActorBoundEvent_225_ActorDestroyedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting3_K2Node_ActorBoundEvent_225_ActorDestroyedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_InteractablePainting4_K2Node_ActorBoundEvent_226_ActorDestroyedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting4_K2Node_ActorBoundEvent_226_ActorDestroyedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_InteractablePainting5_K2Node_ActorBoundEvent_227_ActorDestroyedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting5_K2Node_ActorBoundEvent_227_ActorDestroyedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_InteractablePainting6_K2Node_ActorBoundEvent_228_ActorDestroyedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting6_K2Node_ActorBoundEvent_228_ActorDestroyedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_InteractablePainting7_K2Node_ActorBoundEvent_229_ActorDestroyedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting7_K2Node_ActorBoundEvent_229_ActorDestroyedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_InteractablePainting8_K2Node_ActorBoundEvent_230_ActorDestroyedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting8_K2Node_ActorBoundEvent_230_ActorDestroyedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_InteractablePainting9_K2Node_ActorBoundEvent_231_ActorDestroyedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting9_K2Node_ActorBoundEvent_231_ActorDestroyedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_LA_Scripted_GuardGateInspectBox_K2Node_ActorBoundEvent_20_ActionStarted__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_LA_Scripted_GuardGateInspectBox_K2Node_ActorBoundEvent_20_ActionStarted__DelegateSignature final
-{
-public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_LA_Scripted_GuardGatePushButton_K2Node_ActorBoundEvent_55_ActionCompleted__DelegateSignature
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.OnLevelModifiersApplied
 // 0x0018 (0x0018 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_LA_Scripted_GuardGatePushButton_K2Node_ActorBoundEvent_55_ActionCompleted__DelegateSignature final
+struct G_Shiya_Scripting_C_OnLevelModifiersApplied final
 {
 public:
-	ESBZLifeActionStopReason                      Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZDifficulty                                InDifficulty_OnLevelModifiersApplied;              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZCharacter*                          Character;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TArray<ESBZSecurityCompany>                   InCompanies_OnLevelModifiersApplied;               // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_OnLevelModifiersApplied;
 
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_LA_Scripted_GuardInvestigateMicro_K2Node_ActorBoundEvent_181_ActionCompleted__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_LA_Scripted_GuardInvestigateMicro_K2Node_ActorBoundEvent_181_ActionCompleted__DelegateSignature final
-{
-public:
-	ESBZLifeActionStopReason                      Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZCharacter*                          Character;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_LiquidNitrogen2_K2Node_ActorBoundEvent_240_OnInteracted__DelegateSignature
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.OnGuardHogTied
 // 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_LiquidNitrogen2_K2Node_ActorBoundEvent_240_OnInteracted__DelegateSignature final
+struct G_Shiya_Scripting_C_OnGuardHogTied final
+{
+public:
+	class ASBZAICharacter*                        Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          bHogTied;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_OnGuardHogTied;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.LootValueFilter
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_LootValueFilter final
+{
+public:
+	class UObject*                                BagType;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_LootValueFilter;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.LootBagHandle
+// 0x0018 (0x0018 - 0x0000)
+struct G_Shiya_Scripting_C_LootBagHandle final
+{
+public:
+	class USBZSecuredBagVisualizeComponent*       Target;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          BagHandle;                                         // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_LootBagHandle;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.LiquidNitrogenRetrieved2
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_LiquidNitrogenRetrieved2 final
 {
 public:
 	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_LiquidNitrogenRetrieved2;
 
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_LiquidNitrogen3_0_K2Node_ActorBoundEvent_250_OnInteracted__DelegateSignature
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.LiquidNitrogenRetrieved1
 // 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_LiquidNitrogen3_0_K2Node_ActorBoundEvent_250_OnInteracted__DelegateSignature final
+struct G_Shiya_Scripting_C_LiquidNitrogenRetrieved1 final
 {
 public:
 	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_LiquidNitrogenRetrieved1;
 
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_MovingForklift3_K2Node_ActorBoundEvent_257_SBZWheeledVehicleOnSplineEntered__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_MovingForklift3_K2Node_ActorBoundEvent_257_SBZWheeledVehicleOnSplineEntered__DelegateSignature final
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.LeadGuardToOffice
+// 0x0058 (0x0058 - 0x0000)
+struct G_Shiya_Scripting_C_LeadGuardToOffice final
 {
 public:
-	class ASBZWheeledVehicle*                     Vehicle;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZSpline*                             Spline;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZLifeActionRequest                  K2Node_MakeStruct_SBZLifeActionRequest;            // 0x0008(0x0040)(NoDestructor, ContainsInstancedReference)
+	class USBZAIActionData_LifeAction*            CallFunc_CreateActionData_ReturnValue;             // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZAIAction*                           CallFunc_PushAction_ReturnValue;                   // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_LeadGuardToOffice;
 
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_MovingForklift4_1_K2Node_ActorBoundEvent_258_SBZWheeledVehicleOnSplineEntered__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_MovingForklift4_1_K2Node_ActorBoundEvent_258_SBZWheeledVehicleOnSplineEntered__DelegateSignature final
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.LeadGuardToMoneyCages
+// 0x0058 (0x0058 - 0x0000)
+struct G_Shiya_Scripting_C_LeadGuardToMoneyCages final
 {
 public:
-	class ASBZWheeledVehicle*                     Vehicle;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZSpline*                             Spline;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZLifeActionRequest                  K2Node_MakeStruct_SBZLifeActionRequest;            // 0x0008(0x0040)(NoDestructor, ContainsInstancedReference)
+	class USBZAIActionData_LifeAction*            CallFunc_CreateActionData_ReturnValue;             // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZAIAction*                           CallFunc_PushAction_ReturnValue;                   // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_LeadGuardToMoneyCages;
 
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_RedKeycardReader11_K2Node_ActorBoundEvent_223_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_RedKeycardReader11_K2Node_ActorBoundEvent_223_SBZModuleActorStateChangedDelegate__DelegateSignature final
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.LeadGuardToMainHall
+// 0x0058 (0x0058 - 0x0000)
+struct G_Shiya_Scripting_C_LeadGuardToMainHall final
 {
 public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZLifeActionRequest                  K2Node_MakeStruct_SBZLifeActionRequest;            // 0x0008(0x0040)(NoDestructor, ContainsInstancedReference)
+	class USBZAIActionData_LifeAction*            CallFunc_CreateActionData_ReturnValue;             // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZAIAction*                           CallFunc_PushAction_ReturnValue;                   // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_LeadGuardToMainHall;
 
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_RedKeycardReader13_K2Node_ActorBoundEvent_219_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_RedKeycardReader13_K2Node_ActorBoundEvent_219_SBZModuleActorStateChangedDelegate__DelegateSignature final
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.LeadGuardToGarage
+// 0x0058 (0x0058 - 0x0000)
+struct G_Shiya_Scripting_C_LeadGuardToGarage final
 {
 public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZLifeActionRequest                  K2Node_MakeStruct_SBZLifeActionRequest;            // 0x0008(0x0040)(NoDestructor, ContainsInstancedReference)
+	class USBZAIActionData_LifeAction*            CallFunc_CreateActionData_ReturnValue;             // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZAIAction*                           CallFunc_PushAction_ReturnValue;                   // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_LeadGuardToGarage;
 
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_RedKeycardReader14_K2Node_ActorBoundEvent_280_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_RedKeycardReader14_K2Node_ActorBoundEvent_280_SBZModuleActorStateChangedDelegate__DelegateSignature final
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.HeistStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct G_Shiya_Scripting_C_HeistStateChanged final
 {
 public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                OldHeistState_HeistStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CurrentHeistState_HeistStateChanged;               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_RedKeycardReader15_K2Node_ActorBoundEvent_284_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_RedKeycardReader15_K2Node_ActorBoundEvent_284_SBZModuleActorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_RedKeycardReader16_K2Node_ActorBoundEvent_127_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_RedKeycardReader16_K2Node_ActorBoundEvent_127_SBZModuleActorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_RedKeycardReader17_K2Node_ActorBoundEvent_281_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_RedKeycardReader17_K2Node_ActorBoundEvent_281_SBZModuleActorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_RedKeycardReader9_K2Node_ActorBoundEvent_220_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_RedKeycardReader9_K2Node_ActorBoundEvent_220_SBZModuleActorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_RFIDTagReaderRed3_K2Node_ActorBoundEvent_26_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_RFIDTagReaderRed3_K2Node_ActorBoundEvent_26_SBZModuleActorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_RFIDTagReaderRed6_2_K2Node_ActorBoundEvent_182_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_RFIDTagReaderRed6_2_K2Node_ActorBoundEvent_182_SBZModuleActorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_RFIDTagReaderRed7_1_K2Node_ActorBoundEvent_191_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_RFIDTagReaderRed7_1_K2Node_ActorBoundEvent_191_SBZModuleActorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_ShippingContainer_01_RedCardReaderLock2_K2Node_ActorBoundEvent_69_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_ShippingContainer_01_RedCardReaderLock2_K2Node_ActorBoundEvent_69_SBZModuleActorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_ShippingContainer_01_RedCardReaderLock3_K2Node_ActorBoundEvent_263_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_ShippingContainer_01_RedCardReaderLock3_K2Node_ActorBoundEvent_263_SBZModuleActorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_ShippingContainer_01_RedCardReaderLock4_K2Node_ActorBoundEvent_280_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_ShippingContainer_01_RedCardReaderLock4_K2Node_ActorBoundEvent_280_SBZModuleActorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_ShippingContainer_01_RedCardReaderLock5_K2Node_ActorBoundEvent_286_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_ShippingContainer_01_RedCardReaderLock5_K2Node_ActorBoundEvent_286_SBZModuleActorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_ShippingContainer_01_RedCardReaderLock_2_K2Node_ActorBoundEvent_236_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_ShippingContainer_01_RedCardReaderLock_2_K2Node_ActorBoundEvent_236_SBZModuleActorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_StaticVehicle_Van_01_2_K2Node_ActorBoundEvent_167_ActorDestroyedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_StaticVehicle_Van_01_2_K2Node_ActorBoundEvent_167_ActorDestroyedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_BagSecure_Tech2_K2Node_ActorBoundEvent_268_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_BagSecure_Tech2_K2Node_ActorBoundEvent_268_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_BagSecure_Tech3_K2Node_ActorBoundEvent_263_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_BagSecure_Tech3_K2Node_ActorBoundEvent_263_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_BagSecure_Tech4_K2Node_ActorBoundEvent_267_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_BagSecure_Tech4_K2Node_ActorBoundEvent_267_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_BagSecure_Tech4_K2Node_ActorBoundEvent_80_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_BagSecure_Tech4_K2Node_ActorBoundEvent_80_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Container_K2Node_ActorBoundEvent_142_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Container_K2Node_ActorBoundEvent_142_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Device2_K2Node_ActorBoundEvent_109_SBZBagVolumeComplete__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Device2_K2Node_ActorBoundEvent_109_SBZBagVolumeComplete__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Device2_K2Node_ActorBoundEvent_239_SBZBagVolumeComplete__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Device2_K2Node_ActorBoundEvent_239_SBZBagVolumeComplete__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_HeliCage2_0_K2Node_ActorBoundEvent_78_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_HeliCage2_0_K2Node_ActorBoundEvent_78_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_HeliCage2_K2Node_ActorBoundEvent_33_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_HeliCage2_K2Node_ActorBoundEvent_33_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_LoudCage2_K2Node_ActorBoundEvent_147_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_LoudCage2_K2Node_ActorBoundEvent_147_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_LoudCage_K2Node_ActorBoundEvent_82_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_LoudCage_K2Node_ActorBoundEvent_82_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_MainLoot_Boat3_K2Node_ActorBoundEvent_126_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_MainLoot_Boat3_K2Node_ActorBoundEvent_126_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_RefrigeratedTruck1_K2Node_ActorBoundEvent_266_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_RefrigeratedTruck1_K2Node_ActorBoundEvent_266_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_RefrigeratedTruck2_K2Node_ActorBoundEvent_275_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_RefrigeratedTruck2_K2Node_ActorBoundEvent_275_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Sewer1_K2Node_ActorBoundEvent_128_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Sewer1_K2Node_ActorBoundEvent_128_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Sewer2_K2Node_ActorBoundEvent_129_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Sewer2_K2Node_ActorBoundEvent_129_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Sewer3_K2Node_ActorBoundEvent_130_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Sewer3_K2Node_ActorBoundEvent_130_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Sewer4_K2Node_ActorBoundEvent_148_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Sewer4_K2Node_ActorBoundEvent_148_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Sewer5_K2Node_ActorBoundEvent_152_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Sewer5_K2Node_ActorBoundEvent_152_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Sewer6_K2Node_ActorBoundEvent_153_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Sewer6_K2Node_ActorBoundEvent_153_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Stealth2_K2Node_ActorBoundEvent_32_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Stealth2_K2Node_ActorBoundEvent_32_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Transport_K2Node_ActorBoundEvent_235_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Transport_K2Node_ActorBoundEvent_235_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_285_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_285_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Zipline3_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Zipline3_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport10_K2Node_ActorBoundEvent_125_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport10_K2Node_ActorBoundEvent_125_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
-{
-public:
-	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport4_K2Node_ActorBoundEvent_94_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport4_K2Node_ActorBoundEvent_94_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
-{
-public:
-	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport5_K2Node_ActorBoundEvent_95_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport5_K2Node_ActorBoundEvent_95_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
-{
-public:
-	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport6_K2Node_ActorBoundEvent_92_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport6_K2Node_ActorBoundEvent_92_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
-{
-public:
-	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport7_K2Node_ActorBoundEvent_80_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport7_K2Node_ActorBoundEvent_80_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
-{
-public:
-	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport8_K2Node_ActorBoundEvent_93_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport8_K2Node_ActorBoundEvent_93_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
-{
-public:
-	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport9_K2Node_ActorBoundEvent_124_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport9_K2Node_ActorBoundEvent_124_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
-{
-public:
-	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZDestroyGroup_RaisedTransport1_K2Node_ActorBoundEvent_121_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_RaisedTransport1_K2Node_ActorBoundEvent_121_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
-{
-public:
-	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZDestroyGroup_RaisedTransport2_K2Node_ActorBoundEvent_123_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_RaisedTransport2_K2Node_ActorBoundEvent_123_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
-{
-public:
-	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZDestroyGroup_RaisedTransportLocks1_K2Node_ActorBoundEvent_149_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_RaisedTransportLocks1_K2Node_ActorBoundEvent_149_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
-{
-public:
-	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZDestroyGroup_RaisedTransportLocks2_K2Node_ActorBoundEvent_150_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_RaisedTransportLocks2_K2Node_ActorBoundEvent_150_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
-{
-public:
-	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZFilteredTriggerVolumeExitGuard_K2Node_ActorBoundEvent_200_SBZFilterDesiredCountDynamicDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZFilteredTriggerVolumeExitGuard_K2Node_ActorBoundEvent_200_SBZFilterDesiredCountDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bHasDesiredCount;                                  // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZModifiableTimer_TransportHack_K2Node_ActorBoundEvent_245_SBZProgressionReachedDelegate__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZModifiableTimer_TransportHack_K2Node_ActorBoundEvent_245_SBZProgressionReachedDelegate__DelegateSignature final
-{
-public:
-	int32                                         ProgressionIndexReached;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPawnSpawnPredefined_GarageYard1_K2Node_ActorBoundEvent_192_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPawnSpawnPredefined_GarageYard1_K2Node_ActorBoundEvent_192_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPawnSpawnPredefined_Guard7_K2Node_ActorBoundEvent_179_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPawnSpawnPredefined_Guard7_K2Node_ActorBoundEvent_179_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPawnSpawnPredefined_Guard7_K2Node_ActorBoundEvent_184_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPawnSpawnPredefined_Guard7_K2Node_ActorBoundEvent_184_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  DeadPawn;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                Spawner;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerLookAtTrigger_Whiteboard_K2Node_ActorBoundEvent_21_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerLookAtTrigger_Whiteboard_K2Node_ActorBoundEvent_21_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerStartGroup1_K2Node_ActorBoundEvent_27_SBZOnSpawnGroupChosen__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerStartGroup1_K2Node_ActorBoundEvent_27_SBZOnSpawnGroupChosen__DelegateSignature final
-{
-public:
-	class ASBZPlayerStartGroup*                   PlayerStartGroup;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerStartGroup2_5_K2Node_ActorBoundEvent_28_SBZOnSpawnGroupChosen__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerStartGroup2_5_K2Node_ActorBoundEvent_28_SBZOnSpawnGroupChosen__DelegateSignature final
-{
-public:
-	class ASBZPlayerStartGroup*                   PlayerStartGroup;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerStartGroup3_K2Node_ActorBoundEvent_139_SBZOnSpawnGroupChosen__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerStartGroup3_K2Node_ActorBoundEvent_139_SBZOnSpawnGroupChosen__DelegateSignature final
-{
-public:
-	class ASBZPlayerStartGroup*                   PlayerStartGroup;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerStartGroup4_K2Node_ActorBoundEvent_260_SBZOnSpawnGroupChosen__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerStartGroup4_K2Node_ActorBoundEvent_260_SBZOnSpawnGroupChosen__DelegateSignature final
-{
-public:
-	class ASBZPlayerStartGroup*                   PlayerStartGroup;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerStartGroup5_K2Node_ActorBoundEvent_259_SBZOnSpawnGroupChosen__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerStartGroup5_K2Node_ActorBoundEvent_259_SBZOnSpawnGroupChosen__DelegateSignature final
-{
-public:
-	class ASBZPlayerStartGroup*                   PlayerStartGroup;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerStartGroup6_K2Node_ActorBoundEvent_112_SBZOnSpawnGroupChosen__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerStartGroup6_K2Node_ActorBoundEvent_112_SBZOnSpawnGroupChosen__DelegateSignature final
-{
-public:
-	class ASBZPlayerStartGroup*                   PlayerStartGroup;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearEscape_Stealth2_K2Node_ActorBoundEvent_31_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearEscape_Stealth2_K2Node_ActorBoundEvent_31_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_ArrivingTransportEvent_K2Node_ActorBoundEvent_308_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_ArrivingTransportEvent_K2Node_ActorBoundEvent_308_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_EnteredBuilding_K2Node_ActorBoundEvent_23_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_EnteredBuilding_K2Node_ActorBoundEvent_23_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_INsideBuilding_K2Node_ActorBoundEvent_144_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_INsideBuilding_K2Node_ActorBoundEvent_144_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_LeavingTransportEvent_K2Node_ActorBoundEvent_302_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_LeavingTransportEvent_K2Node_ActorBoundEvent_302_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_PlayerInside_0_K2Node_ActorBoundEvent_19_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_PlayerInside_0_K2Node_ActorBoundEvent_19_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_RefrigeratedContainer1_K2Node_ActorBoundEvent_303_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_RefrigeratedContainer1_K2Node_ActorBoundEvent_303_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_RefrigeratedContainer2_K2Node_ActorBoundEvent_304_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_RefrigeratedContainer2_K2Node_ActorBoundEvent_304_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_RefrigeratedContainer3_K2Node_ActorBoundEvent_305_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_RefrigeratedContainer3_K2Node_ActorBoundEvent_305_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_RefrigeratedContainer4_K2Node_ActorBoundEvent_306_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_RefrigeratedContainer4_K2Node_ActorBoundEvent_306_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_RefrigeratedContainer5_K2Node_ActorBoundEvent_307_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_RefrigeratedContainer5_K2Node_ActorBoundEvent_307_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_Whiteboard_K2Node_ActorBoundEvent_18_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_Whiteboard_K2Node_ActorBoundEvent_18_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolumeVault_K2Node_ActorBoundEvent_131_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolumeVault_K2Node_ActorBoundEvent_131_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZSpawnLocationHandler1_K2Node_ActorBoundEvent_45_SBZOnActorSpawnedDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZSpawnLocationHandler1_K2Node_ActorBoundEvent_45_SBZOnActorSpawnedDelegate__DelegateSignature final
-{
-public:
-	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_Escape_FlyIn2_K2Node_ActorBoundEvent_220_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_Escape_FlyIn2_K2Node_ActorBoundEvent_220_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortFirstBit_K2Node_ActorBoundEvent_79_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortFirstBit_K2Node_ActorBoundEvent_79_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortStreet1_K2Node_ActorBoundEvent_254_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortStreet1_K2Node_ActorBoundEvent_254_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortStreet1Load_K2Node_ActorBoundEvent_255_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortStreet1Load_K2Node_ActorBoundEvent_255_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortStreet1Reverse_1_K2Node_ActorBoundEvent_256_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortStreet1Reverse_1_K2Node_ActorBoundEvent_256_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortYard1_K2Node_ActorBoundEvent_81_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortYard1_K2Node_ActorBoundEvent_81_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortYard2_K2Node_ActorBoundEvent_251_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortYard2_K2Node_ActorBoundEvent_251_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortYard3_K2Node_ActorBoundEvent_252_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortYard3_K2Node_ActorBoundEvent_252_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_StealthEscape_Drivein2_K2Node_ActorBoundEvent_30_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_StealthEscape_Drivein2_K2Node_ActorBoundEvent_30_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_StealthEscape_Drivein_K2Node_ActorBoundEvent_29_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_StealthEscape_Drivein_K2Node_ActorBoundEvent_29_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_SWAT1_EnterOnly_K2Node_ActorBoundEvent_162_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_SWAT1_EnterOnly_K2Node_ActorBoundEvent_162_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_SWAT1_EnterOnly_K2Node_ActorBoundEvent_301_SBZSplineOnEnter__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_SWAT1_EnterOnly_K2Node_ActorBoundEvent_301_SBZSplineOnEnter__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_SWAT2_Enter_K2Node_ActorBoundEvent_160_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_SWAT2_Enter_K2Node_ActorBoundEvent_160_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_SWAT2_Enter_K2Node_ActorBoundEvent_259_SBZSplineOnEnter__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_SWAT2_Enter_K2Node_ActorBoundEvent_259_SBZSplineOnEnter__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_TransportArrival2_1_K2Node_ActorBoundEvent_168_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_TransportArrival2_1_K2Node_ActorBoundEvent_168_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_TransportArrival_K2Node_ActorBoundEvent_159_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_TransportArrival_K2Node_ActorBoundEvent_159_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_TransportBackOut_K2Node_ActorBoundEvent_173_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_TransportBackOut_K2Node_ActorBoundEvent_173_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_Transportleave_K2Node_ActorBoundEvent_114_SBZSplineOnEnter__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_Transportleave_K2Node_ActorBoundEvent_114_SBZSplineOnEnter__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_Transportleave_K2Node_ActorBoundEvent_174_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_Transportleave_K2Node_ActorBoundEvent_174_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineGarage_EscortStree3452_K2Node_ActorBoundEvent_273_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineGarage_EscortStree3452_K2Node_ActorBoundEvent_273_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineGarage_EscortYard3_K2Node_ActorBoundEvent_272_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineGarage_EscortYard3_K2Node_ActorBoundEvent_272_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineGarage_EscortYard4_K2Node_ActorBoundEvent_269_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineGarage_EscortYard4_K2Node_ActorBoundEvent_269_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_Enter2_K2Node_ActorBoundEvent_163_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_Enter2_K2Node_ActorBoundEvent_163_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_Enter_K2Node_ActorBoundEvent_161_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_Enter_K2Node_ActorBoundEvent_161_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_Escortyard2_K2Node_ActorBoundEvent_151_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_Escortyard2_K2Node_ActorBoundEvent_151_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_Leave2_0_K2Node_ActorBoundEvent_36_SBZSplineOnEnter__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_Leave2_0_K2Node_ActorBoundEvent_36_SBZSplineOnEnter__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_Leave2_0_K2Node_ActorBoundEvent_56_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_Leave2_0_K2Node_ActorBoundEvent_56_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_MainBuildingForward2_K2Node_ActorBoundEvent_188_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_MainBuildingForward2_K2Node_ActorBoundEvent_188_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_MainBuildingForward2_K2Node_ActorBoundEvent_238_SBZSplineOnEnter__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_MainBuildingForward2_K2Node_ActorBoundEvent_238_SBZSplineOnEnter__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_MainBuildingForward_K2Node_ActorBoundEvent_189_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_MainBuildingForward_K2Node_ActorBoundEvent_189_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_MainBuildingReverse_K2Node_ActorBoundEvent_187_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_MainBuildingReverse_K2Node_ActorBoundEvent_187_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_ParkMechanicGarage1_K2Node_ActorBoundEvent_166_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_ParkMechanicGarage1_K2Node_ActorBoundEvent_166_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_ParkMechanicGarage2_4_K2Node_ActorBoundEvent_164_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_ParkMechanicGarage2_4_K2Node_ActorBoundEvent_164_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_ParkMechanicYard1_K2Node_ActorBoundEvent_170_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_ParkMechanicYard1_K2Node_ActorBoundEvent_170_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_ParkMechanicYard2_K2Node_ActorBoundEvent_165_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_ParkMechanicYard2_K2Node_ActorBoundEvent_165_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_ParkYard2_K2Node_ActorBoundEvent_169_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_ParkYard2_K2Node_ActorBoundEvent_169_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_StartMainBuilding2_K2Node_ActorBoundEvent_183_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_StartMainBuilding2_K2Node_ActorBoundEvent_183_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_StartMainBuilding2_K2Node_ActorBoundEvent_237_SBZSplineOnEnter__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_StartMainBuilding2_K2Node_ActorBoundEvent_237_SBZSplineOnEnter__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_StartMainBUilding_K2Node_ActorBoundEvent_177_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_StartMainBUilding_K2Node_ActorBoundEvent_177_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_42_SBZSplineOnEnter__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_42_SBZSplineOnEnter__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_43_SBZSplineOnEnter__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_BndEvt__SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_43_SBZSplineOnEnter__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_HeistStateChanged;
 
 // Function G_Shiya_Scripting.G_Shiya_Scripting_C.ExecuteUbergraph_G_Shiya_Scripting
 // 0x4810 (0x4810 - 0x0000)
@@ -1530,8 +309,8 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor)> K2Node_CreateDelegate_OutputDelegate; // 0x0008(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor)> K2Node_CreateDelegate_OutputDelegate_1; // 0x001C(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor)> K2Node_CreateDelegate_OutputDelegate; // 0x0008(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor)> K2Node_CreateDelegate_OutputDelegate_1; // 0x001C(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0030(0x0010)(ConstParm, ReferenceParm)
 	ELowEntryExtendedStandardLibraryTrueOrFalse   Temp_byte_Variable;                                // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -4616,267 +3395,1678 @@ public:
 	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast_1;  // 0x4804(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast_2;  // 0x4808(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_ExecuteUbergraph_G_Shiya_Scripting;
 
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.HeistStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct G_Shiya_Scripting_C_HeistStateChanged final
-{
-public:
-	EPD3HeistState                                OldHeistState;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CurrentHeistState;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.LeadGuardToGarage
-// 0x0058 (0x0058 - 0x0000)
-struct G_Shiya_Scripting_C_LeadGuardToGarage final
-{
-public:
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZLifeActionRequest                  K2Node_MakeStruct_SBZLifeActionRequest;            // 0x0008(0x0040)(NoDestructor, ContainsInstancedReference)
-	class USBZAIActionData_LifeAction*            CallFunc_CreateActionData_ReturnValue;             // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZAIAction*                           CallFunc_PushAction_ReturnValue;                   // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.LeadGuardToMainHall
-// 0x0058 (0x0058 - 0x0000)
-struct G_Shiya_Scripting_C_LeadGuardToMainHall final
-{
-public:
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZLifeActionRequest                  K2Node_MakeStruct_SBZLifeActionRequest;            // 0x0008(0x0040)(NoDestructor, ContainsInstancedReference)
-	class USBZAIActionData_LifeAction*            CallFunc_CreateActionData_ReturnValue;             // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZAIAction*                           CallFunc_PushAction_ReturnValue;                   // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.LeadGuardToMoneyCages
-// 0x0058 (0x0058 - 0x0000)
-struct G_Shiya_Scripting_C_LeadGuardToMoneyCages final
-{
-public:
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZLifeActionRequest                  K2Node_MakeStruct_SBZLifeActionRequest;            // 0x0008(0x0040)(NoDestructor, ContainsInstancedReference)
-	class USBZAIActionData_LifeAction*            CallFunc_CreateActionData_ReturnValue;             // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZAIAction*                           CallFunc_PushAction_ReturnValue;                   // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.LeadGuardToOffice
-// 0x0058 (0x0058 - 0x0000)
-struct G_Shiya_Scripting_C_LeadGuardToOffice final
-{
-public:
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZLifeActionRequest                  K2Node_MakeStruct_SBZLifeActionRequest;            // 0x0008(0x0040)(NoDestructor, ContainsInstancedReference)
-	class USBZAIActionData_LifeAction*            CallFunc_CreateActionData_ReturnValue;             // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZAIAction*                           CallFunc_PushAction_ReturnValue;                   // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.LiquidNitrogenRetrieved1
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_43_SBZSplineOnEnter__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_LiquidNitrogenRetrieved1 final
+struct G_Shiya_Scripting_C_BndEvt__SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_43_SBZSplineOnEnter__DelegateSignature final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_43_SBZSplineOnEnter__DelegateSignature;
 
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.LiquidNitrogenRetrieved2
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_42_SBZSplineOnEnter__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_LiquidNitrogenRetrieved2 final
+struct G_Shiya_Scripting_C_BndEvt__SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_42_SBZSplineOnEnter__DelegateSignature final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_42_SBZSplineOnEnter__DelegateSignature;
 
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.LootBagHandle
-// 0x0018 (0x0018 - 0x0000)
-struct G_Shiya_Scripting_C_LootBagHandle final
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_StartMainBUilding_K2Node_ActorBoundEvent_177_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_StartMainBUilding_K2Node_ActorBoundEvent_177_SBZSplineOnEndReached__DelegateSignature final
 {
 public:
-	class USBZSecuredBagVisualizeComponent*       Target_0;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          BagHandle;                                         // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_StartMainBUilding_K2Node_ActorBoundEvent_177_SBZSplineOnEndReached__DelegateSignature;
 
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.LootValueFilter
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_StartMainBuilding2_K2Node_ActorBoundEvent_237_SBZSplineOnEnter__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_StartMainBuilding2_K2Node_ActorBoundEvent_237_SBZSplineOnEnter__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_StartMainBuilding2_K2Node_ActorBoundEvent_237_SBZSplineOnEnter__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_StartMainBuilding2_K2Node_ActorBoundEvent_183_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_StartMainBuilding2_K2Node_ActorBoundEvent_183_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_StartMainBuilding2_K2Node_ActorBoundEvent_183_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_ParkYard2_K2Node_ActorBoundEvent_169_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_ParkYard2_K2Node_ActorBoundEvent_169_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_ParkYard2_K2Node_ActorBoundEvent_169_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_ParkMechanicYard2_K2Node_ActorBoundEvent_165_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_ParkMechanicYard2_K2Node_ActorBoundEvent_165_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_ParkMechanicYard2_K2Node_ActorBoundEvent_165_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_ParkMechanicYard1_K2Node_ActorBoundEvent_170_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_ParkMechanicYard1_K2Node_ActorBoundEvent_170_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_ParkMechanicYard1_K2Node_ActorBoundEvent_170_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_ParkMechanicGarage2_4_K2Node_ActorBoundEvent_164_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_ParkMechanicGarage2_4_K2Node_ActorBoundEvent_164_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_ParkMechanicGarage2_4_K2Node_ActorBoundEvent_164_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_ParkMechanicGarage1_K2Node_ActorBoundEvent_166_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_ParkMechanicGarage1_K2Node_ActorBoundEvent_166_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_ParkMechanicGarage1_K2Node_ActorBoundEvent_166_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_MainBuildingReverse_K2Node_ActorBoundEvent_187_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_MainBuildingReverse_K2Node_ActorBoundEvent_187_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_MainBuildingReverse_K2Node_ActorBoundEvent_187_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_MainBuildingForward_K2Node_ActorBoundEvent_189_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_MainBuildingForward_K2Node_ActorBoundEvent_189_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_MainBuildingForward_K2Node_ActorBoundEvent_189_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_MainBuildingForward2_K2Node_ActorBoundEvent_238_SBZSplineOnEnter__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_MainBuildingForward2_K2Node_ActorBoundEvent_238_SBZSplineOnEnter__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_MainBuildingForward2_K2Node_ActorBoundEvent_238_SBZSplineOnEnter__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_MainBuildingForward2_K2Node_ActorBoundEvent_188_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_MainBuildingForward2_K2Node_ActorBoundEvent_188_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_MainBuildingForward2_K2Node_ActorBoundEvent_188_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_Leave2_0_K2Node_ActorBoundEvent_56_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_Leave2_0_K2Node_ActorBoundEvent_56_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_Leave2_0_K2Node_ActorBoundEvent_56_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_Leave2_0_K2Node_ActorBoundEvent_36_SBZSplineOnEnter__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_Leave2_0_K2Node_ActorBoundEvent_36_SBZSplineOnEnter__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_Leave2_0_K2Node_ActorBoundEvent_36_SBZSplineOnEnter__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_Escortyard2_K2Node_ActorBoundEvent_151_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_Escortyard2_K2Node_ActorBoundEvent_151_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_Escortyard2_K2Node_ActorBoundEvent_151_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_Enter_K2Node_ActorBoundEvent_161_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_Enter_K2Node_ActorBoundEvent_161_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_Enter_K2Node_ActorBoundEvent_161_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_Enter2_K2Node_ActorBoundEvent_163_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_Enter2_K2Node_ActorBoundEvent_163_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineTransport_Enter2_K2Node_ActorBoundEvent_163_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineGarage_EscortYard4_K2Node_ActorBoundEvent_269_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineGarage_EscortYard4_K2Node_ActorBoundEvent_269_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineGarage_EscortYard4_K2Node_ActorBoundEvent_269_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineGarage_EscortYard3_K2Node_ActorBoundEvent_272_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineGarage_EscortYard3_K2Node_ActorBoundEvent_272_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineGarage_EscortYard3_K2Node_ActorBoundEvent_272_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSplineGarage_EscortStree3452_K2Node_ActorBoundEvent_273_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineGarage_EscortStree3452_K2Node_ActorBoundEvent_273_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSplineGarage_EscortStree3452_K2Node_ActorBoundEvent_273_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_Transportleave_K2Node_ActorBoundEvent_174_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_Transportleave_K2Node_ActorBoundEvent_174_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_Transportleave_K2Node_ActorBoundEvent_174_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_Transportleave_K2Node_ActorBoundEvent_114_SBZSplineOnEnter__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_Transportleave_K2Node_ActorBoundEvent_114_SBZSplineOnEnter__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_Transportleave_K2Node_ActorBoundEvent_114_SBZSplineOnEnter__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_TransportBackOut_K2Node_ActorBoundEvent_173_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_TransportBackOut_K2Node_ActorBoundEvent_173_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_TransportBackOut_K2Node_ActorBoundEvent_173_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_TransportArrival_K2Node_ActorBoundEvent_159_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_TransportArrival_K2Node_ActorBoundEvent_159_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_TransportArrival_K2Node_ActorBoundEvent_159_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_TransportArrival2_1_K2Node_ActorBoundEvent_168_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_TransportArrival2_1_K2Node_ActorBoundEvent_168_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_TransportArrival2_1_K2Node_ActorBoundEvent_168_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_SWAT2_Enter_K2Node_ActorBoundEvent_259_SBZSplineOnEnter__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_SWAT2_Enter_K2Node_ActorBoundEvent_259_SBZSplineOnEnter__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_SWAT2_Enter_K2Node_ActorBoundEvent_259_SBZSplineOnEnter__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_SWAT2_Enter_K2Node_ActorBoundEvent_160_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_SWAT2_Enter_K2Node_ActorBoundEvent_160_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_SWAT2_Enter_K2Node_ActorBoundEvent_160_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_SWAT1_EnterOnly_K2Node_ActorBoundEvent_301_SBZSplineOnEnter__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_SWAT1_EnterOnly_K2Node_ActorBoundEvent_301_SBZSplineOnEnter__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_SWAT1_EnterOnly_K2Node_ActorBoundEvent_301_SBZSplineOnEnter__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_SWAT1_EnterOnly_K2Node_ActorBoundEvent_162_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_SWAT1_EnterOnly_K2Node_ActorBoundEvent_162_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_SWAT1_EnterOnly_K2Node_ActorBoundEvent_162_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_StealthEscape_Drivein_K2Node_ActorBoundEvent_29_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_StealthEscape_Drivein_K2Node_ActorBoundEvent_29_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_StealthEscape_Drivein_K2Node_ActorBoundEvent_29_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_StealthEscape_Drivein2_K2Node_ActorBoundEvent_30_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_StealthEscape_Drivein2_K2Node_ActorBoundEvent_30_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_StealthEscape_Drivein2_K2Node_ActorBoundEvent_30_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortYard3_K2Node_ActorBoundEvent_252_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortYard3_K2Node_ActorBoundEvent_252_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortYard3_K2Node_ActorBoundEvent_252_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortYard2_K2Node_ActorBoundEvent_251_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortYard2_K2Node_ActorBoundEvent_251_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortYard2_K2Node_ActorBoundEvent_251_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortYard1_K2Node_ActorBoundEvent_81_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortYard1_K2Node_ActorBoundEvent_81_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortYard1_K2Node_ActorBoundEvent_81_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortStreet1Reverse_1_K2Node_ActorBoundEvent_256_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortStreet1Reverse_1_K2Node_ActorBoundEvent_256_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortStreet1Reverse_1_K2Node_ActorBoundEvent_256_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortStreet1Load_K2Node_ActorBoundEvent_255_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortStreet1Load_K2Node_ActorBoundEvent_255_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortStreet1Load_K2Node_ActorBoundEvent_255_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortStreet1_K2Node_ActorBoundEvent_254_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortStreet1_K2Node_ActorBoundEvent_254_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortStreet1_K2Node_ActorBoundEvent_254_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortFirstBit_K2Node_ActorBoundEvent_79_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortFirstBit_K2Node_ActorBoundEvent_79_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_EscortFirstBit_K2Node_ActorBoundEvent_79_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZTrafficSpline_Escape_FlyIn2_K2Node_ActorBoundEvent_220_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_Escape_FlyIn2_K2Node_ActorBoundEvent_220_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZTrafficSpline_Escape_FlyIn2_K2Node_ActorBoundEvent_220_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZSpawnLocationHandler1_K2Node_ActorBoundEvent_45_SBZOnActorSpawnedDelegate__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_LootValueFilter final
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZSpawnLocationHandler1_K2Node_ActorBoundEvent_45_SBZOnActorSpawnedDelegate__DelegateSignature final
 {
 public:
-	class UObject*                                BagType;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZSpawnLocationHandler1_K2Node_ActorBoundEvent_45_SBZOnActorSpawnedDelegate__DelegateSignature;
 
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.OnGuardHogTied
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolumeVault_K2Node_ActorBoundEvent_131_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolumeVault_K2Node_ActorBoundEvent_131_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolumeVault_K2Node_ActorBoundEvent_131_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_Whiteboard_K2Node_ActorBoundEvent_18_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_Whiteboard_K2Node_ActorBoundEvent_18_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_Whiteboard_K2Node_ActorBoundEvent_18_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_RefrigeratedContainer5_K2Node_ActorBoundEvent_307_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_RefrigeratedContainer5_K2Node_ActorBoundEvent_307_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_RefrigeratedContainer5_K2Node_ActorBoundEvent_307_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_RefrigeratedContainer4_K2Node_ActorBoundEvent_306_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_RefrigeratedContainer4_K2Node_ActorBoundEvent_306_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_RefrigeratedContainer4_K2Node_ActorBoundEvent_306_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_RefrigeratedContainer3_K2Node_ActorBoundEvent_305_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_RefrigeratedContainer3_K2Node_ActorBoundEvent_305_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_RefrigeratedContainer3_K2Node_ActorBoundEvent_305_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_RefrigeratedContainer2_K2Node_ActorBoundEvent_304_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_RefrigeratedContainer2_K2Node_ActorBoundEvent_304_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_RefrigeratedContainer2_K2Node_ActorBoundEvent_304_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_RefrigeratedContainer1_K2Node_ActorBoundEvent_303_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_RefrigeratedContainer1_K2Node_ActorBoundEvent_303_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_RefrigeratedContainer1_K2Node_ActorBoundEvent_303_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_PlayerInside_0_K2Node_ActorBoundEvent_19_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_PlayerInside_0_K2Node_ActorBoundEvent_19_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_PlayerInside_0_K2Node_ActorBoundEvent_19_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_LeavingTransportEvent_K2Node_ActorBoundEvent_302_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_LeavingTransportEvent_K2Node_ActorBoundEvent_302_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_LeavingTransportEvent_K2Node_ActorBoundEvent_302_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_INsideBuilding_K2Node_ActorBoundEvent_144_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_INsideBuilding_K2Node_ActorBoundEvent_144_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_INsideBuilding_K2Node_ActorBoundEvent_144_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_EnteredBuilding_K2Node_ActorBoundEvent_23_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_EnteredBuilding_K2Node_ActorBoundEvent_23_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_EnteredBuilding_K2Node_ActorBoundEvent_23_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_ArrivingTransportEvent_K2Node_ActorBoundEvent_308_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_ArrivingTransportEvent_K2Node_ActorBoundEvent_308_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggerVolume_ArrivingTransportEvent_K2Node_ActorBoundEvent_308_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearEscape_Stealth2_K2Node_ActorBoundEvent_31_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearEscape_Stealth2_K2Node_ActorBoundEvent_31_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearEscape_Stealth2_K2Node_ActorBoundEvent_31_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerStartGroup6_K2Node_ActorBoundEvent_112_SBZOnSpawnGroupChosen__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerStartGroup6_K2Node_ActorBoundEvent_112_SBZOnSpawnGroupChosen__DelegateSignature final
+{
+public:
+	class ASBZPlayerStartGroup*                   PlayerStartGroup;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerStartGroup6_K2Node_ActorBoundEvent_112_SBZOnSpawnGroupChosen__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerStartGroup5_K2Node_ActorBoundEvent_259_SBZOnSpawnGroupChosen__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerStartGroup5_K2Node_ActorBoundEvent_259_SBZOnSpawnGroupChosen__DelegateSignature final
+{
+public:
+	class ASBZPlayerStartGroup*                   PlayerStartGroup;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerStartGroup5_K2Node_ActorBoundEvent_259_SBZOnSpawnGroupChosen__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerStartGroup4_K2Node_ActorBoundEvent_260_SBZOnSpawnGroupChosen__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerStartGroup4_K2Node_ActorBoundEvent_260_SBZOnSpawnGroupChosen__DelegateSignature final
+{
+public:
+	class ASBZPlayerStartGroup*                   PlayerStartGroup;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerStartGroup4_K2Node_ActorBoundEvent_260_SBZOnSpawnGroupChosen__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerStartGroup3_K2Node_ActorBoundEvent_139_SBZOnSpawnGroupChosen__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerStartGroup3_K2Node_ActorBoundEvent_139_SBZOnSpawnGroupChosen__DelegateSignature final
+{
+public:
+	class ASBZPlayerStartGroup*                   PlayerStartGroup;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerStartGroup3_K2Node_ActorBoundEvent_139_SBZOnSpawnGroupChosen__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerStartGroup2_5_K2Node_ActorBoundEvent_28_SBZOnSpawnGroupChosen__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerStartGroup2_5_K2Node_ActorBoundEvent_28_SBZOnSpawnGroupChosen__DelegateSignature final
+{
+public:
+	class ASBZPlayerStartGroup*                   PlayerStartGroup;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerStartGroup2_5_K2Node_ActorBoundEvent_28_SBZOnSpawnGroupChosen__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerStartGroup1_K2Node_ActorBoundEvent_27_SBZOnSpawnGroupChosen__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerStartGroup1_K2Node_ActorBoundEvent_27_SBZOnSpawnGroupChosen__DelegateSignature final
+{
+public:
+	class ASBZPlayerStartGroup*                   PlayerStartGroup;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerStartGroup1_K2Node_ActorBoundEvent_27_SBZOnSpawnGroupChosen__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPlayerLookAtTrigger_Whiteboard_K2Node_ActorBoundEvent_21_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerLookAtTrigger_Whiteboard_K2Node_ActorBoundEvent_21_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPlayerLookAtTrigger_Whiteboard_K2Node_ActorBoundEvent_21_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPawnSpawnPredefined_Guard7_K2Node_ActorBoundEvent_184_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_OnGuardHogTied final
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPawnSpawnPredefined_Guard7_K2Node_ActorBoundEvent_184_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature final
 {
 public:
-	class ASBZAICharacter*                        Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          bHogTied;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  DeadPawn;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                Spawner;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPawnSpawnPredefined_Guard7_K2Node_ActorBoundEvent_184_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature;
 
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.OnLevelModifiersApplied
-// 0x0018 (0x0018 - 0x0000)
-struct G_Shiya_Scripting_C_OnLevelModifiersApplied final
-{
-public:
-	ESBZDifficulty                                InDifficulty;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<ESBZSecurityCompany>                   InCompanies;                                       // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.OnPlayerInstantLootTaken
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPawnSpawnPredefined_Guard7_K2Node_ActorBoundEvent_179_SBZSpawnRequestCompletedDelegate__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_OnPlayerInstantLootTaken final
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPawnSpawnPredefined_Guard7_K2Node_ActorBoundEvent_179_SBZSpawnRequestCompletedDelegate__DelegateSignature final
 {
 public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPawnSpawnPredefined_Guard7_K2Node_ActorBoundEvent_179_SBZSpawnRequestCompletedDelegate__DelegateSignature;
 
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.OnPlayerPickedUpBag
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZPawnSpawnPredefined_GarageYard1_K2Node_ActorBoundEvent_192_SBZSpawnRequestCompletedDelegate__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct G_Shiya_Scripting_C_OnPlayerPickedUpBag final
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPawnSpawnPredefined_GarageYard1_K2Node_ActorBoundEvent_192_SBZSpawnRequestCompletedDelegate__DelegateSignature final
 {
 public:
-	struct FSBZBagHandle                          BagHandle;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZPawnSpawnPredefined_GarageYard1_K2Node_ActorBoundEvent_192_SBZSpawnRequestCompletedDelegate__DelegateSignature;
 
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.OnPreplanningAssetsTagsApplied
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZModifiableTimer_TransportHack_K2Node_ActorBoundEvent_245_SBZProgressionReachedDelegate__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZModifiableTimer_TransportHack_K2Node_ActorBoundEvent_245_SBZProgressionReachedDelegate__DelegateSignature final
+{
+public:
+	int32                                         ProgressionIndexReached;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZModifiableTimer_TransportHack_K2Node_ActorBoundEvent_245_SBZProgressionReachedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZFilteredTriggerVolumeExitGuard_K2Node_ActorBoundEvent_200_SBZFilterDesiredCountDynamicDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZFilteredTriggerVolumeExitGuard_K2Node_ActorBoundEvent_200_SBZFilterDesiredCountDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bHasDesiredCount;                                  // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZFilteredTriggerVolumeExitGuard_K2Node_ActorBoundEvent_200_SBZFilterDesiredCountDynamicDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZDestroyGroup_RaisedTransportLocks2_K2Node_ActorBoundEvent_150_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
 // 0x0020 (0x0020 - 0x0000)
-struct G_Shiya_Scripting_C_OnPreplanningAssetsTagsApplied final
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_RaisedTransportLocks2_K2Node_ActorBoundEvent_150_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
 {
 public:
-	struct FGameplayTagContainer                  PreplanningTagContainer;                           // 0x0000(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_RaisedTransportLocks2_K2Node_ActorBoundEvent_150_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature;
 
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.OnServerKeyItemTagAdded
-// 0x000C (0x000C - 0x0000)
-struct G_Shiya_Scripting_C_OnServerKeyItemTagAdded final
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZDestroyGroup_RaisedTransportLocks1_K2Node_ActorBoundEvent_149_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_RaisedTransportLocks1_K2Node_ActorBoundEvent_149_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
 {
 public:
-	struct FGameplayTag                           KeyTag;                                            // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_RaisedTransportLocks1_K2Node_ActorBoundEvent_149_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature;
 
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.Randomize Transport Locks
-// 0x0070 (0x0070 - 0x0000)
-struct G_Shiya_Scripting_C_Randomize_Transport_Locks final
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZDestroyGroup_RaisedTransport2_K2Node_ActorBoundEvent_123_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_RaisedTransport2_K2Node_ActorBoundEvent_123_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
 {
 public:
-	int32                                         AmountToDestroy;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         RandomInt3;                                        // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         RandomInt2;                                        // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         RandomInt;                                         // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initialized_7DB671E142BC4C07D03AACBC092107BB_Variable; // 0x0010(0x0001)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetRandomIntegerFromStreamMixed_ReturnValue; // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ABP_ArmoredTransport_WheeledVehicle_QrReader_C* CallFunc_Array_Get_Item;                   // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Current_Value_7DB671E142BC4C07D03AACBC092107BB_Variable; // 0x002C(0x0004)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetRandomIntegerFromStreamMixed_ReturnValue_1; // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_2;            // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45[0x3];                                       // 0x0045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZDestroyGroup*                       CallFunc_Array_Get_Item_1;                         // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors;                 // 0x0050(0x0010)(ReferenceParm)
-	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors;            // 0x0060(0x0010)(ReferenceParm)
+	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_RaisedTransport2_K2Node_ActorBoundEvent_123_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature;
 
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.RandomizeRedKeycards
-// 0x0078 (0x0078 - 0x0000)
-struct G_Shiya_Scripting_C_RandomizeRedKeycards final
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZDestroyGroup_RaisedTransport1_K2Node_ActorBoundEvent_121_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_RaisedTransport1_K2Node_ActorBoundEvent_121_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
 {
 public:
-	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors;                 // 0x0000(0x0010)(ReferenceParm)
-	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors;            // 0x0010(0x0010)(ReferenceParm)
-	int32                                         CallFunc_GetRandomIntegerFromStreamMixed_ReturnValue; // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_1;               // 0x0028(0x0010)(ReferenceParm)
-	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_1;          // 0x0038(0x0010)(ReferenceParm)
-	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins;              // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_2;               // 0x0050(0x0010)(ReferenceParm)
-	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_2;          // 0x0060(0x0010)(ReferenceParm)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_RaisedTransport1_K2Node_ActorBoundEvent_121_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature;
 
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.RandomizeTransports
-// 0x0050 (0x0050 - 0x0000)
-struct G_Shiya_Scripting_C_RandomizeTransports final
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport9_K2Node_ActorBoundEvent_124_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport9_K2Node_ActorBoundEvent_124_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
 {
 public:
-	int32                                         AmountToDestroy;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         NewParam;                                          // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         RandomInt;                                         // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initialized_AA9D1D2E49A60152E51FA9A5CED244C5_Variable; // 0x000C(0x0001)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Current_Value_AA9D1D2E49A60152E51FA9A5CED244C5_Variable; // 0x0010(0x0004)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_17[0x1];                                       // 0x0017(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetRandomIntegerFromStreamMixed_ReturnValue; // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZDestroyGroup*                       CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors;                 // 0x0030(0x0010)(ReferenceParm)
-	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors;            // 0x0040(0x0010)(ReferenceParm)
+	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport9_K2Node_ActorBoundEvent_124_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature;
 
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.SecureLoot
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport8_K2Node_ActorBoundEvent_93_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport8_K2Node_ActorBoundEvent_93_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
+{
+public:
+	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport8_K2Node_ActorBoundEvent_93_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport7_K2Node_ActorBoundEvent_80_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport7_K2Node_ActorBoundEvent_80_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
+{
+public:
+	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport7_K2Node_ActorBoundEvent_80_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport6_K2Node_ActorBoundEvent_92_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport6_K2Node_ActorBoundEvent_92_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
+{
+public:
+	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport6_K2Node_ActorBoundEvent_92_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport5_K2Node_ActorBoundEvent_95_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport5_K2Node_ActorBoundEvent_95_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
+{
+public:
+	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport5_K2Node_ActorBoundEvent_95_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport4_K2Node_ActorBoundEvent_94_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport4_K2Node_ActorBoundEvent_94_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
+{
+public:
+	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport4_K2Node_ActorBoundEvent_94_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport10_K2Node_ActorBoundEvent_125_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport10_K2Node_ActorBoundEvent_125_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
+{
+public:
+	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZDestroyGroup_ParkedTransport10_K2Node_ActorBoundEvent_125_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Zipline3_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Zipline3_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Zipline3_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_285_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_285_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_285_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Transport_K2Node_ActorBoundEvent_235_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Transport_K2Node_ActorBoundEvent_235_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Transport_K2Node_ActorBoundEvent_235_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Stealth2_K2Node_ActorBoundEvent_32_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Stealth2_K2Node_ActorBoundEvent_32_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Stealth2_K2Node_ActorBoundEvent_32_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Sewer6_K2Node_ActorBoundEvent_153_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Sewer6_K2Node_ActorBoundEvent_153_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Sewer6_K2Node_ActorBoundEvent_153_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Sewer5_K2Node_ActorBoundEvent_152_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Sewer5_K2Node_ActorBoundEvent_152_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Sewer5_K2Node_ActorBoundEvent_152_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Sewer4_K2Node_ActorBoundEvent_148_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Sewer4_K2Node_ActorBoundEvent_148_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Sewer4_K2Node_ActorBoundEvent_148_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Sewer3_K2Node_ActorBoundEvent_130_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Sewer3_K2Node_ActorBoundEvent_130_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Sewer3_K2Node_ActorBoundEvent_130_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Sewer2_K2Node_ActorBoundEvent_129_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Sewer2_K2Node_ActorBoundEvent_129_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Sewer2_K2Node_ActorBoundEvent_129_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Sewer1_K2Node_ActorBoundEvent_128_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Sewer1_K2Node_ActorBoundEvent_128_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Sewer1_K2Node_ActorBoundEvent_128_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_RefrigeratedTruck2_K2Node_ActorBoundEvent_275_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_RefrigeratedTruck2_K2Node_ActorBoundEvent_275_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_RefrigeratedTruck2_K2Node_ActorBoundEvent_275_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_RefrigeratedTruck1_K2Node_ActorBoundEvent_266_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_RefrigeratedTruck1_K2Node_ActorBoundEvent_266_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_RefrigeratedTruck1_K2Node_ActorBoundEvent_266_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_MainLoot_Boat3_K2Node_ActorBoundEvent_126_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_MainLoot_Boat3_K2Node_ActorBoundEvent_126_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_MainLoot_Boat3_K2Node_ActorBoundEvent_126_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_LoudCage_K2Node_ActorBoundEvent_82_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_LoudCage_K2Node_ActorBoundEvent_82_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_LoudCage_K2Node_ActorBoundEvent_82_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_LoudCage2_K2Node_ActorBoundEvent_147_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_LoudCage2_K2Node_ActorBoundEvent_147_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_LoudCage2_K2Node_ActorBoundEvent_147_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_HeliCage2_K2Node_ActorBoundEvent_33_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_HeliCage2_K2Node_ActorBoundEvent_33_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_HeliCage2_K2Node_ActorBoundEvent_33_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_HeliCage2_0_K2Node_ActorBoundEvent_78_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_HeliCage2_0_K2Node_ActorBoundEvent_78_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_HeliCage2_0_K2Node_ActorBoundEvent_78_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Device2_K2Node_ActorBoundEvent_239_SBZBagVolumeComplete__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct G_Shiya_Scripting_C_SecureLoot final
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Device2_K2Node_ActorBoundEvent_239_SBZBagVolumeComplete__DelegateSignature final
 {
 public:
-	int32                                         LootProgress;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bRareStone;                                        // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Device2_K2Node_ActorBoundEvent_239_SBZBagVolumeComplete__DelegateSignature;
 
-// Function G_Shiya_Scripting.G_Shiya_Scripting_C.SpawnEscortGuards
-// 0x0108 (0x0108 - 0x0000)
-struct G_Shiya_Scripting_C_SpawnEscortGuards final
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Device2_K2Node_ActorBoundEvent_109_SBZBagVolumeComplete__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Device2_K2Node_ActorBoundEvent_109_SBZBagVolumeComplete__DelegateSignature final
 {
 public:
-	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue;              // 0x0000(0x0010)()
-	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_1;            // 0x0010(0x0010)()
-	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_2;            // 0x0020(0x0010)()
-	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins;              // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_32[0x6];                                       // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_3;            // 0x0038(0x0010)()
-	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_4;            // 0x0050(0x0010)()
-	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins_1;            // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_62[0x6];                                       // 0x0062(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_5;            // 0x0068(0x0010)()
-	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_6;            // 0x0078(0x0010)()
-	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_7;            // 0x0088(0x0010)()
-	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_8;            // 0x0098(0x0010)()
-	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_9;            // 0x00A8(0x0010)()
-	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_10;           // 0x00B8(0x0010)()
-	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins_2;            // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_11;           // 0x00D0(0x0010)()
-	bool                                          K2Node_SwitchEnum_CmpSuccess_2;                    // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E1[0x7];                                       // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_12;           // 0x00E8(0x0010)()
-	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_13;           // 0x00F8(0x0010)()
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Device2_K2Node_ActorBoundEvent_109_SBZBagVolumeComplete__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Container_K2Node_ActorBoundEvent_142_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Container_K2Node_ActorBoundEvent_142_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_Container_K2Node_ActorBoundEvent_142_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_BagSecure_Tech4_K2Node_ActorBoundEvent_80_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_BagSecure_Tech4_K2Node_ActorBoundEvent_80_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_BagSecure_Tech4_K2Node_ActorBoundEvent_80_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_BagSecure_Tech4_K2Node_ActorBoundEvent_267_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_BagSecure_Tech4_K2Node_ActorBoundEvent_267_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_BagSecure_Tech4_K2Node_ActorBoundEvent_267_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_BagSecure_Tech3_K2Node_ActorBoundEvent_263_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_BagSecure_Tech3_K2Node_ActorBoundEvent_263_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_BagSecure_Tech3_K2Node_ActorBoundEvent_263_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_BagSecure_Tech2_K2Node_ActorBoundEvent_268_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_BagSecure_Tech2_K2Node_ActorBoundEvent_268_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_SBZBagTriggerVolume_BagSecure_Tech2_K2Node_ActorBoundEvent_268_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_StaticVehicle_Van_01_2_K2Node_ActorBoundEvent_167_ActorDestroyedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_StaticVehicle_Van_01_2_K2Node_ActorBoundEvent_167_ActorDestroyedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_StaticVehicle_Van_01_2_K2Node_ActorBoundEvent_167_ActorDestroyedSignature__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_ShippingContainer_01_RedCardReaderLock_2_K2Node_ActorBoundEvent_236_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_ShippingContainer_01_RedCardReaderLock_2_K2Node_ActorBoundEvent_236_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_ShippingContainer_01_RedCardReaderLock_2_K2Node_ActorBoundEvent_236_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_ShippingContainer_01_RedCardReaderLock5_K2Node_ActorBoundEvent_286_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_ShippingContainer_01_RedCardReaderLock5_K2Node_ActorBoundEvent_286_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_ShippingContainer_01_RedCardReaderLock5_K2Node_ActorBoundEvent_286_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_ShippingContainer_01_RedCardReaderLock4_K2Node_ActorBoundEvent_280_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_ShippingContainer_01_RedCardReaderLock4_K2Node_ActorBoundEvent_280_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_ShippingContainer_01_RedCardReaderLock4_K2Node_ActorBoundEvent_280_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_ShippingContainer_01_RedCardReaderLock3_K2Node_ActorBoundEvent_263_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_ShippingContainer_01_RedCardReaderLock3_K2Node_ActorBoundEvent_263_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_ShippingContainer_01_RedCardReaderLock3_K2Node_ActorBoundEvent_263_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_ShippingContainer_01_RedCardReaderLock2_K2Node_ActorBoundEvent_69_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_ShippingContainer_01_RedCardReaderLock2_K2Node_ActorBoundEvent_69_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_ShippingContainer_01_RedCardReaderLock2_K2Node_ActorBoundEvent_69_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_RFIDTagReaderRed7_1_K2Node_ActorBoundEvent_191_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_RFIDTagReaderRed7_1_K2Node_ActorBoundEvent_191_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_RFIDTagReaderRed7_1_K2Node_ActorBoundEvent_191_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_RFIDTagReaderRed6_2_K2Node_ActorBoundEvent_182_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_RFIDTagReaderRed6_2_K2Node_ActorBoundEvent_182_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_RFIDTagReaderRed6_2_K2Node_ActorBoundEvent_182_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_RFIDTagReaderRed3_K2Node_ActorBoundEvent_26_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_RFIDTagReaderRed3_K2Node_ActorBoundEvent_26_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_RFIDTagReaderRed3_K2Node_ActorBoundEvent_26_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_RedKeycardReader9_K2Node_ActorBoundEvent_220_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_RedKeycardReader9_K2Node_ActorBoundEvent_220_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_RedKeycardReader9_K2Node_ActorBoundEvent_220_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_RedKeycardReader17_K2Node_ActorBoundEvent_281_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_RedKeycardReader17_K2Node_ActorBoundEvent_281_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_RedKeycardReader17_K2Node_ActorBoundEvent_281_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_RedKeycardReader16_K2Node_ActorBoundEvent_127_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_RedKeycardReader16_K2Node_ActorBoundEvent_127_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_RedKeycardReader16_K2Node_ActorBoundEvent_127_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_RedKeycardReader15_K2Node_ActorBoundEvent_284_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_RedKeycardReader15_K2Node_ActorBoundEvent_284_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_RedKeycardReader15_K2Node_ActorBoundEvent_284_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_RedKeycardReader14_K2Node_ActorBoundEvent_280_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_RedKeycardReader14_K2Node_ActorBoundEvent_280_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_RedKeycardReader14_K2Node_ActorBoundEvent_280_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_RedKeycardReader13_K2Node_ActorBoundEvent_219_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_RedKeycardReader13_K2Node_ActorBoundEvent_219_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_RedKeycardReader13_K2Node_ActorBoundEvent_219_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_RedKeycardReader11_K2Node_ActorBoundEvent_223_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_RedKeycardReader11_K2Node_ActorBoundEvent_223_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_RedKeycardReader11_K2Node_ActorBoundEvent_223_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_MovingForklift4_1_K2Node_ActorBoundEvent_258_SBZWheeledVehicleOnSplineEntered__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_MovingForklift4_1_K2Node_ActorBoundEvent_258_SBZWheeledVehicleOnSplineEntered__DelegateSignature final
+{
+public:
+	class ASBZWheeledVehicle*                     Vehicle;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZSpline*                             Spline;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_MovingForklift4_1_K2Node_ActorBoundEvent_258_SBZWheeledVehicleOnSplineEntered__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_MovingForklift3_K2Node_ActorBoundEvent_257_SBZWheeledVehicleOnSplineEntered__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_MovingForklift3_K2Node_ActorBoundEvent_257_SBZWheeledVehicleOnSplineEntered__DelegateSignature final
+{
+public:
+	class ASBZWheeledVehicle*                     Vehicle;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZSpline*                             Spline;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_MovingForklift3_K2Node_ActorBoundEvent_257_SBZWheeledVehicleOnSplineEntered__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_LiquidNitrogen3_0_K2Node_ActorBoundEvent_250_OnInteracted__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_LiquidNitrogen3_0_K2Node_ActorBoundEvent_250_OnInteracted__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_LiquidNitrogen3_0_K2Node_ActorBoundEvent_250_OnInteracted__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_LiquidNitrogen2_K2Node_ActorBoundEvent_240_OnInteracted__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_LiquidNitrogen2_K2Node_ActorBoundEvent_240_OnInteracted__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_LiquidNitrogen2_K2Node_ActorBoundEvent_240_OnInteracted__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_LA_Scripted_GuardInvestigateMicro_K2Node_ActorBoundEvent_181_ActionCompleted__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_LA_Scripted_GuardInvestigateMicro_K2Node_ActorBoundEvent_181_ActionCompleted__DelegateSignature final
+{
+public:
+	ESBZLifeActionStopReason                      Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZCharacter*                          Character;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_LA_Scripted_GuardInvestigateMicro_K2Node_ActorBoundEvent_181_ActionCompleted__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_LA_Scripted_GuardGatePushButton_K2Node_ActorBoundEvent_55_ActionCompleted__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_LA_Scripted_GuardGatePushButton_K2Node_ActorBoundEvent_55_ActionCompleted__DelegateSignature final
+{
+public:
+	ESBZLifeActionStopReason                      Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZCharacter*                          Character;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_LA_Scripted_GuardGatePushButton_K2Node_ActorBoundEvent_55_ActionCompleted__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_LA_Scripted_GuardGateInspectBox_K2Node_ActorBoundEvent_20_ActionStarted__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_LA_Scripted_GuardGateInspectBox_K2Node_ActorBoundEvent_20_ActionStarted__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_LA_Scripted_GuardGateInspectBox_K2Node_ActorBoundEvent_20_ActionStarted__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_InteractablePainting9_K2Node_ActorBoundEvent_231_ActorDestroyedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting9_K2Node_ActorBoundEvent_231_ActorDestroyedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting9_K2Node_ActorBoundEvent_231_ActorDestroyedSignature__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_InteractablePainting8_K2Node_ActorBoundEvent_230_ActorDestroyedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting8_K2Node_ActorBoundEvent_230_ActorDestroyedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting8_K2Node_ActorBoundEvent_230_ActorDestroyedSignature__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_InteractablePainting7_K2Node_ActorBoundEvent_229_ActorDestroyedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting7_K2Node_ActorBoundEvent_229_ActorDestroyedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting7_K2Node_ActorBoundEvent_229_ActorDestroyedSignature__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_InteractablePainting6_K2Node_ActorBoundEvent_228_ActorDestroyedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting6_K2Node_ActorBoundEvent_228_ActorDestroyedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting6_K2Node_ActorBoundEvent_228_ActorDestroyedSignature__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_InteractablePainting5_K2Node_ActorBoundEvent_227_ActorDestroyedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting5_K2Node_ActorBoundEvent_227_ActorDestroyedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting5_K2Node_ActorBoundEvent_227_ActorDestroyedSignature__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_InteractablePainting4_K2Node_ActorBoundEvent_226_ActorDestroyedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting4_K2Node_ActorBoundEvent_226_ActorDestroyedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting4_K2Node_ActorBoundEvent_226_ActorDestroyedSignature__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_InteractablePainting3_K2Node_ActorBoundEvent_225_ActorDestroyedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting3_K2Node_ActorBoundEvent_225_ActorDestroyedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting3_K2Node_ActorBoundEvent_225_ActorDestroyedSignature__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_InteractablePainting2_4_K2Node_ActorBoundEvent_224_ActorDestroyedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting2_4_K2Node_ActorBoundEvent_224_ActorDestroyedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting2_4_K2Node_ActorBoundEvent_224_ActorDestroyedSignature__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_InteractablePainting1_K2Node_ActorBoundEvent_222_ActorDestroyedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting1_K2Node_ActorBoundEvent_222_ActorDestroyedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting1_K2Node_ActorBoundEvent_222_ActorDestroyedSignature__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_InteractablePainting12_K2Node_ActorBoundEvent_233_ActorDestroyedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting12_K2Node_ActorBoundEvent_233_ActorDestroyedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting12_K2Node_ActorBoundEvent_233_ActorDestroyedSignature__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_InteractablePainting11_K2Node_ActorBoundEvent_234_ActorDestroyedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting11_K2Node_ActorBoundEvent_234_ActorDestroyedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting11_K2Node_ActorBoundEvent_234_ActorDestroyedSignature__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_InteractablePainting10_K2Node_ActorBoundEvent_232_ActorDestroyedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting10_K2Node_ActorBoundEvent_232_ActorDestroyedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_InteractablePainting10_K2Node_ActorBoundEvent_232_ActorDestroyedSignature__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_3_K2Node_ActorBoundEvent_180_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_3_K2Node_ActorBoundEvent_180_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_3_K2Node_ActorBoundEvent_180_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_2_K2Node_ActorBoundEvent_176_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_2_K2Node_ActorBoundEvent_176_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_2_K2Node_ActorBoundEvent_176_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_26_K2Node_ActorBoundEvent_91_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_26_K2Node_ActorBoundEvent_91_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_26_K2Node_ActorBoundEvent_91_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_24_K2Node_ActorBoundEvent_88_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_24_K2Node_ActorBoundEvent_88_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_24_K2Node_ActorBoundEvent_88_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_22_K2Node_ActorBoundEvent_86_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_22_K2Node_ActorBoundEvent_86_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_22_K2Node_ActorBoundEvent_86_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_01_2_K2Node_ActorBoundEvent_177_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_01_2_K2Node_ActorBoundEvent_177_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_01_2_K2Node_ActorBoundEvent_177_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_Int_DoubleDoor_Reinforced_Industrial_01_2_K2Node_ActorBoundEvent_197_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_Int_DoubleDoor_Reinforced_Industrial_01_2_K2Node_ActorBoundEvent_197_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_Int_DoubleDoor_Reinforced_Industrial_01_2_K2Node_ActorBoundEvent_197_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_FOR_DepoSecurityFence_3_K2Node_ActorBoundEvent_198_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_FOR_DepoSecurityFence_3_K2Node_ActorBoundEvent_198_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_FOR_DepoSecurityFence_3_K2Node_ActorBoundEvent_198_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_FOR_DepoSecurityFence_2_K2Node_ActorBoundEvent_201_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_FOR_DepoSecurityFence_2_K2Node_ActorBoundEvent_201_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_FOR_DepoSecurityFence_2_K2Node_ActorBoundEvent_201_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_FOR_DepoSecurityFence_01_K2Node_ActorBoundEvent_199_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_FOR_DepoSecurityFence_01_K2Node_ActorBoundEvent_199_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_FOR_DepoSecurityFence_01_K2Node_ActorBoundEvent_199_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_FlipSwitch_SabotagePoint_2_K2Node_ActorBoundEvent_2_SBZSabotagePointDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_FlipSwitch_SabotagePoint_2_K2Node_ActorBoundEvent_2_SBZSabotagePointDelegate__DelegateSignature final
+{
+public:
+	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_FlipSwitch_SabotagePoint_2_K2Node_ActorBoundEvent_2_SBZSabotagePointDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_FlipSwitch_SabotagePoint2_K2Node_ActorBoundEvent_203_SBZSabotagePointDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_FlipSwitch_SabotagePoint2_K2Node_ActorBoundEvent_203_SBZSabotagePointDelegate__DelegateSignature final
+{
+public:
+	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_FlipSwitch_SabotagePoint2_K2Node_ActorBoundEvent_203_SBZSabotagePointDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_ext_door_01_Sliding_fence_515_K2Node_ActorBoundEvent_25_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_ext_door_01_Sliding_fence_515_K2Node_ActorBoundEvent_25_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_ext_door_01_Sliding_fence_515_K2Node_ActorBoundEvent_25_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_container_Double_doors7_2_K2Node_ActorBoundEvent_205_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_container_Double_doors7_2_K2Node_ActorBoundEvent_205_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_container_Double_doors7_2_K2Node_ActorBoundEvent_205_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_container_Double_doors6_0_K2Node_ActorBoundEvent_206_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_container_Double_doors6_0_K2Node_ActorBoundEvent_206_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_container_Double_doors6_0_K2Node_ActorBoundEvent_206_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_container_doors_EastObj9_K2Node_ActorBoundEvent_295_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_container_doors_EastObj9_K2Node_ActorBoundEvent_295_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_container_doors_EastObj9_K2Node_ActorBoundEvent_295_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_container_doors_EastObj8_K2Node_ActorBoundEvent_294_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_container_doors_EastObj8_K2Node_ActorBoundEvent_294_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_container_doors_EastObj8_K2Node_ActorBoundEvent_294_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_container_doors_EastObj7_K2Node_ActorBoundEvent_293_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_container_doors_EastObj7_K2Node_ActorBoundEvent_293_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_container_doors_EastObj7_K2Node_ActorBoundEvent_293_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_container_doors_EastObj6_K2Node_ActorBoundEvent_297_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_container_doors_EastObj6_K2Node_ActorBoundEvent_297_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_container_doors_EastObj6_K2Node_ActorBoundEvent_297_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_Shiya_Scripting_BP_container_doors_EastObj10_K2Node_ActorBoundEvent_296_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_container_doors_EastObj10_K2Node_ActorBoundEvent_296_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_Shiya_Scripting_BP_container_doors_EastObj10_K2Node_ActorBoundEvent_296_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZTrafficSpline_Escape_FlyOut_K2Node_ActorBoundEvent_14_SBZSplineOnEnter__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZTrafficSpline_Escape_FlyOut_K2Node_ActorBoundEvent_14_SBZSplineOnEnter__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZTrafficSpline_Escape_FlyOut_K2Node_ActorBoundEvent_14_SBZSplineOnEnter__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZTrafficSpline_Escape_FlyIn_K2Node_ActorBoundEvent_13_SBZSplineOnEnter__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZTrafficSpline_Escape_FlyIn_K2Node_ActorBoundEvent_13_SBZSplineOnEnter__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZTrafficSpline_Escape_FlyIn_K2Node_ActorBoundEvent_13_SBZSplineOnEnter__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZTrafficSpline_Escape_FlyIn_K2Node_ActorBoundEvent_0_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZTrafficSpline_Escape_FlyIn_K2Node_ActorBoundEvent_0_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZTrafficSpline_Escape_FlyIn_K2Node_ActorBoundEvent_0_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_ForceSpawn_Guard1_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_ForceSpawn_Guard1_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_ForceSpawn_Guard1_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Escape_Loud_K2Node_ActorBoundEvent_15_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Shiya_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Escape_Loud_K2Node_ActorBoundEvent_15_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Escape_Loud_K2Node_ActorBoundEvent_15_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.25% Chance
+// 0x000C (0x000C - 0x0000)
+struct G_Shiya_Scripting_C_Two5__Chance final
+{
+public:
+	bool                                          Chance;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ELowEntryExtendedStandardLibraryTrueOrFalse   Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetRandomIntegerFromStreamMixed_ReturnValue; // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ExecToBoolean_Value;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_Two5__Chance;
+
+// Function G_Shiya_Scripting.G_Shiya_Scripting_C.10% Chance
+// 0x000C (0x000C - 0x0000)
+struct G_Shiya_Scripting_C_One0__Chance final
+{
+public:
+	bool                                          Chance;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ELowEntryExtendedStandardLibraryTrueOrFalse   Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetRandomIntegerFromStreamMixed_ReturnValue; // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ExecToBoolean_Value;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Scripting_C_One0__Chance;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

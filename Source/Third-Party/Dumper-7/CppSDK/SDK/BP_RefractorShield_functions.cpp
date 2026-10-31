@@ -16,6 +16,18 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_RefractorShield.BP_RefractorShield_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_RefractorShield_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_RefractorShield.BP_RefractorShield_C.ExecuteUbergraph_BP_RefractorShield
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,30 +35,14 @@ SDK_NAMESPACE_START
 
 void ABP_RefractorShield_C::ExecuteUbergraph_BP_RefractorShield(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RefractorShield_C", "ExecuteUbergraph_BP_RefractorShield");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_RefractorShield_C", "ExecuteUbergraph_BP_RefractorShield", FuncInfo);
 
 	Params::BP_RefractorShield_C_ExecuteUbergraph_BP_RefractorShield Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_RefractorShield.BP_RefractorShield_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_RefractorShield_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RefractorShield_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

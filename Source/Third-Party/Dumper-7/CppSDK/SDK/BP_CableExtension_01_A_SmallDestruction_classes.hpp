@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_CableExtension_01_A_SmallDestruction_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CableExtension_01_A_SmallDestruction_C;
 
 SDK_NAMESPACE_END

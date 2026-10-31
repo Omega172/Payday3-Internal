@@ -33,15 +33,15 @@ public:
 	class UTimelineComponent*                     Moving;                                            // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_LiquidNitrogen_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
-	void BndEvt__BP_LiquidNitrogen_SBZInteractable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void DegradableLootInside(bool State);
-	void ExecuteUbergraph_BP_HighTechLootRack(int32 EntryPoint);
-	void Moving__FinishedFunc();
-	void Moving__UpdateFunc();
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void SetInteractionEnabled(bool State);
 	void UserConstructionScript();
+	void SetInteractionEnabled(bool State);
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void Moving__UpdateFunc();
+	void Moving__FinishedFunc();
+	void ExecuteUbergraph_BP_HighTechLootRack(int32 EntryPoint);
+	void DegradableLootInside(bool State);
+	void BndEvt__BP_LiquidNitrogen_SBZInteractable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_LiquidNitrogen_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
 
 public:
 	static class UClass* StaticClass()
@@ -57,5 +57,6 @@ public:
 		return GetDefaultObjImpl<ABP_HighTechLootRack_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_HighTechLootRack_C;
 
 SDK_NAMESPACE_END

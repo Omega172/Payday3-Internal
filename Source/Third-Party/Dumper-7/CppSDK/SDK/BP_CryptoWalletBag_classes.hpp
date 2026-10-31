@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_CryptoWalletBag_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CryptoWalletBag_C;
 
 SDK_NAMESPACE_END

@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_UVLightPlayer.BP_UVLightPlayer_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds_ReceiveTick                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_UVLightPlayer_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveTick", FnName));
+
+	Params::BP_UVLightPlayer_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds_ReceiveTick = DeltaSeconds_ReceiveTick;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_UVLightPlayer.BP_UVLightPlayer_C.ExecuteUbergraph_BP_UVLightPlayer
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,34 +41,12 @@ SDK_NAMESPACE_START
 
 void ABP_UVLightPlayer_C::ExecuteUbergraph_BP_UVLightPlayer(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UVLightPlayer_C", "ExecuteUbergraph_BP_UVLightPlayer");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_UVLightPlayer_C", "ExecuteUbergraph_BP_UVLightPlayer", FuncInfo);
 
 	Params::BP_UVLightPlayer_C_ExecuteUbergraph_BP_UVLightPlayer Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_UVLightPlayer.BP_UVLightPlayer_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_UVLightPlayer_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UVLightPlayer_C", "ReceiveTick");
-
-	Params::BP_UVLightPlayer_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

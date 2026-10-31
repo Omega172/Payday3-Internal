@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ABP_DeviceBag_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DeviceBag_C;
 
 SDK_NAMESPACE_END

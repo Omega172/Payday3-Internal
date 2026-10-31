@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Charm_Skull_Overkill_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Charm_Skull_Overkill_C;
 
 SDK_NAMESPACE_END

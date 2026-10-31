@@ -43,21 +43,21 @@ public:
 	class UWBP_InventoryBaseData_Icon_C*          Widget_Icon;                                       // 0x0500(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void SetActiveMaskSlot(bool bIsActiveMaskSlot_SetActiveMaskSlot);
-	void Set_Mask_Name_Colour(const struct FLinearColor& DesiredColour);
-	void RefreshVisuals();
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnMaskSlotInitialized();
-	void OnInitialized();
-	void OnHover(bool bIsHovered);
-	void OnFocused(bool bIsFocused);
-	void InitializeSuitVisuals();
-	class USBZInventoryBaseData* GetMaskMouldOrData();
-	void Get_Mould_Mod_Data(class USBZModularPartDataAsset** Part);
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
+	void CanCustomize(bool* CanCustomize_0);
 	void ExecuteUbergraph_WBP_UI_Inventory_MaskSlotButton(int32 EntryPoint);
-	void CanCustomize(bool* CanCustomize);
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
+	void Get_Mould_Mod_Data(class USBZModularPartDataAsset** Part);
+	class USBZInventoryBaseData* GetMaskMouldOrData();
+	void InitializeSuitVisuals();
+	void OnFocused(bool bIsFocused);
+	void OnHover(bool bIsHovered);
+	void OnInitialized();
+	void OnMaskSlotInitialized();
+	void PreConstruct(bool IsDesignTime);
+	void RefreshVisuals();
+	void Set_Mask_Name_Colour(const struct FLinearColor& DesiredColour);
+	void SetActiveMaskSlot(bool bIsActiveMaskSlot);
 
 public:
 	static class UClass* StaticClass()

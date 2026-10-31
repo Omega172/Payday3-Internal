@@ -16,25 +16,95 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_AudioBug_01.BP_AudioBug_01_C.BndEvt__BP_AudioBug_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_AudioBug_01.BP_AudioBug_01_C.setGhost
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_AudioBug_01_C::BndEvt__BP_AudioBug_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_AudioBug_01_C::setGhost()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setGhost", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AudioBug_01_C", "BndEvt__BP_AudioBug_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_AudioBug_01_C_BndEvt__BP_AudioBug_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+// Function BP_AudioBug_01.BP_AudioBug_01_C.setDisabled
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_AudioBug_01_C::setDisabled()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setDisabled", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_AudioBug_01.BP_AudioBug_01_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   OldState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_AudioBug_01_C::OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_AudioBug_01_C_OnStateChanged Parms{};
+
+	Parms.OldState_OnStateChanged = OldState_OnStateChanged;
+	Parms.NewState_OnStateChanged = NewState_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_AudioBug_01.BP_AudioBug_01_C.OnRep_showMarker
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_AudioBug_01_C::OnRep_showMarker()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRep_showMarker", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_AudioBug_01.BP_AudioBug_01_C.GetMarkerText
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+class FText ABP_AudioBug_01_C::GetMarkerText()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetMarkerText", FnName));
+
+	Params::BP_AudioBug_01_C_GetMarkerText Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_AudioBug_01.BP_AudioBug_01_C.ExecuteUbergraph_BP_AudioBug_01
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_AudioBug_01_C::ExecuteUbergraph_BP_AudioBug_01(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_AudioBug_01_C", "ExecuteUbergraph_BP_AudioBug_01", FuncInfo);
+
+	Params::BP_AudioBug_01_C_ExecuteUbergraph_BP_AudioBug_01 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -47,10 +117,8 @@ void ABP_AudioBug_01_C::BndEvt__BP_AudioBug_01_SBZInteractable_K2Node_ComponentB
 
 void ABP_AudioBug_01_C::enableMarker(bool show)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AudioBug_01_C", "enableMarker");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"enableMarker", FnName));
 
 	Params::BP_AudioBug_01_C_enableMarker Parms{};
 
@@ -60,109 +128,25 @@ void ABP_AudioBug_01_C::enableMarker(bool show)
 }
 
 
-// Function BP_AudioBug_01.BP_AudioBug_01_C.ExecuteUbergraph_BP_AudioBug_01
-// (Final, UbergraphFunction)
+// Function BP_AudioBug_01.BP_AudioBug_01_C.BndEvt__BP_AudioBug_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_AudioBug_01_C::ExecuteUbergraph_BP_AudioBug_01(int32 EntryPoint)
+void ABP_AudioBug_01_C::BndEvt__BP_AudioBug_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_AudioBug_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AudioBug_01_C", "ExecuteUbergraph_BP_AudioBug_01");
+	Params::BP_AudioBug_01_C_BndEvt__BP_AudioBug_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
-	Params::BP_AudioBug_01_C_ExecuteUbergraph_BP_AudioBug_01 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_AudioBug_01.BP_AudioBug_01_C.GetMarkerText
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-class FText ABP_AudioBug_01_C::GetMarkerText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AudioBug_01_C", "GetMarkerText");
-
-	Params::BP_AudioBug_01_C_GetMarkerText Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function BP_AudioBug_01.BP_AudioBug_01_C.OnRep_showMarker
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_AudioBug_01_C::OnRep_showMarker()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AudioBug_01_C", "OnRep_showMarker");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_AudioBug_01.BP_AudioBug_01_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_AudioBug_01_C::OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AudioBug_01_C", "OnStateChanged");
-
-	Params::BP_AudioBug_01_C_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_AudioBug_01.BP_AudioBug_01_C.setDisabled
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_AudioBug_01_C::setDisabled()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AudioBug_01_C", "setDisabled");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_AudioBug_01.BP_AudioBug_01_C.setGhost
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_AudioBug_01_C::setGhost()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AudioBug_01_C", "setGhost");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

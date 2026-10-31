@@ -16,149 +16,77 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.WBP_UI_Skills_Line_AutoGenFunc
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EUINavigation                           Navigation                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Skills_Line_C::WBP_UI_Skills_Line_AutoGenFunc(EUINavigation Navigation)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"WBP_UI_Skills_Line_AutoGenFunc", FnName));
-
-	Params::WBP_UI_Skills_Line_C_WBP_UI_Skills_Line_AutoGenFunc Parms{};
-
-	Parms.Navigation = Navigation;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.UpdateSkillLineDescription
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Skills_Line_C::UpdateSkillLineDescription()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateSkillLineDescription", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.SkillButtonFocused
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.BndEvt__WBP_UI_Skills_Line_BaseSkillButton_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
 // class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Skills_Line_C::SkillButtonFocused(class USBZMenuButton* Button, bool bIsEnabled)
+void UWBP_UI_Skills_Line_C::BndEvt__WBP_UI_Skills_Line_BaseSkillButton_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SkillButtonFocused", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Skills_Line_BaseSkillButton_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature", FnName));
 
-	Params::WBP_UI_Skills_Line_C_SkillButtonFocused Parms{};
+	Params::WBP_UI_Skills_Line_C_BndEvt__WBP_UI_Skills_Line_BaseSkillButton_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature Parms{};
 
 	Parms.Button = Button;
-	Parms.bIsEnabled = bIsEnabled;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.SetSkillLineMainAndMasteryButtons
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.BndEvt__WBP_UI_Skills_Line_MasteryButton_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Skills_Line_C::SetSkillLineMainAndMasteryButtons()
+void UWBP_UI_Skills_Line_C::BndEvt__WBP_UI_Skills_Line_MasteryButton_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetSkillLineMainAndMasteryButtons", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Skills_Line_MasteryButton_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature", FnName));
+
+	Params::WBP_UI_Skills_Line_C_BndEvt__WBP_UI_Skills_Line_MasteryButton_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.CheckLineStillFocused
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Skills_Line_C::CheckLineStillFocused()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CheckLineStillFocused", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.SetSkillLineDescriptionEnabled
+// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.CheckResearchMarker
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bInFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USBZMenuButton*                   InButton                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Skills_Line_C::SetSkillLineDescriptionEnabled(bool bInFocused, class USBZMenuButton* InButton)
+void UWBP_UI_Skills_Line_C::CheckResearchMarker()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetSkillLineDescriptionEnabled", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CheckResearchMarker", FnName));
 
-	Params::WBP_UI_Skills_Line_C_SetSkillLineDescriptionEnabled Parms{};
-
-	Parms.bInFocused = bInFocused;
-	Parms.InButton = InButton;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.SetResearched
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsResearched                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Skills_Line_C::SetResearched(bool IsResearched)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetResearched", FnName));
-
-	Params::WBP_UI_Skills_Line_C_SetResearched Parms{};
-
-	Parms.IsResearched = IsResearched;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.PreConstruct
+// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Skills_Line_C::PreConstruct(bool IsDesignTime_PreConstruct)
+void UWBP_UI_Skills_Line_C::Construct()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_UI_Skills_Line_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.OnLanguageChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FString&                    InLanguage                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void UWBP_UI_Skills_Line_C::OnLanguageChanged(const class FString& InLanguage)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLanguageChanged", FnName));
-
-	Params::WBP_UI_Skills_Line_C_OnLanguageChanged Parms{};
-
-	Parms.InLanguage = std::move(InLanguage);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.OnCultureChanged
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Skills_Line_C::OnCultureChanged()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnCultureChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -182,77 +110,149 @@ void UWBP_UI_Skills_Line_C::ExecuteUbergraph_WBP_UI_Skills_Line(int32 EntryPoint
 }
 
 
-// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.OnCultureChanged
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Skills_Line_C::Construct()
+void UWBP_UI_Skills_Line_C::OnCultureChanged()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnCultureChanged", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.CheckResearchMarker
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Skills_Line_C::CheckResearchMarker()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CheckResearchMarker", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.CheckLineStillFocused
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Skills_Line_C::CheckLineStillFocused()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CheckLineStillFocused", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.BndEvt__WBP_UI_Skills_Line_MasteryButton_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.OnLanguageChanged
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    InLanguage                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 
-void UWBP_UI_Skills_Line_C::BndEvt__WBP_UI_Skills_Line_MasteryButton_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled)
+void UWBP_UI_Skills_Line_C::OnLanguageChanged(const class FString& InLanguage)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Skills_Line_MasteryButton_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLanguageChanged", FnName));
 
-	Params::WBP_UI_Skills_Line_C_BndEvt__WBP_UI_Skills_Line_MasteryButton_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature Parms{};
+	Params::WBP_UI_Skills_Line_C_OnLanguageChanged Parms{};
 
-	Parms.Button = Button;
-	Parms.bIsEnabled = bIsEnabled;
+	Parms.InLanguage = std::move(InLanguage);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.BndEvt__WBP_UI_Skills_Line_BaseSkillButton_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Skills_Line_C::BndEvt__WBP_UI_Skills_Line_BaseSkillButton_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled)
+void UWBP_UI_Skills_Line_C::PreConstruct(bool IsDesignTime)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Skills_Line_BaseSkillButton_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
 
-	Params::WBP_UI_Skills_Line_C_BndEvt__WBP_UI_Skills_Line_BaseSkillButton_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature Parms{};
+	Params::WBP_UI_Skills_Line_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.SetResearched
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsResearched                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Skills_Line_C::SetResearched(bool IsResearched)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetResearched", FnName));
+
+	Params::WBP_UI_Skills_Line_C_SetResearched Parms{};
+
+	Parms.IsResearched = IsResearched;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.SetSkillLineDescriptionEnabled
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bInFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   InButton                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Skills_Line_C::SetSkillLineDescriptionEnabled(bool bInFocused, class USBZMenuButton* InButton)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetSkillLineDescriptionEnabled", FnName));
+
+	Params::WBP_UI_Skills_Line_C_SetSkillLineDescriptionEnabled Parms{};
+
+	Parms.bInFocused = bInFocused;
+	Parms.InButton = InButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.SetSkillLineMainAndMasteryButtons
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Skills_Line_C::SetSkillLineMainAndMasteryButtons()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetSkillLineMainAndMasteryButtons", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.SkillButtonFocused
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Skills_Line_C::SkillButtonFocused(class USBZMenuButton* Button, bool bIsEnabled_0)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SkillButtonFocused", FnName));
+
+	Params::WBP_UI_Skills_Line_C_SkillButtonFocused Parms{};
 
 	Parms.Button = Button;
-	Parms.bIsEnabled = bIsEnabled;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.UpdateSkillLineDescription
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Skills_Line_C::UpdateSkillLineDescription()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateSkillLineDescription", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.WBP_UI_Skills_Line_AutoGenFunc
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EUINavigation                           Navigation_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Skills_Line_C::WBP_UI_Skills_Line_AutoGenFunc(EUINavigation Navigation_0)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"WBP_UI_Skills_Line_AutoGenFunc", FnName));
+
+	Params::WBP_UI_Skills_Line_C_WBP_UI_Skills_Line_AutoGenFunc Parms{};
+
+	Parms.Navigation_0 = Navigation_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

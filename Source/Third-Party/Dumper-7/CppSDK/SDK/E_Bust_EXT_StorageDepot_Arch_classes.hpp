@@ -34,12 +34,12 @@ public:
 	class ABP_BUS_Skylight_01_C*                  BP_BUS_Skylight_2_ExecuteUbergraph_E_Bust_EXT_StorageDepot_Arch_RefProperty; // 0x0420(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__E_Bust_EXT_StorageDepot_Arch_BP_BUS_Skylight_2_K2Node_ActorBoundEvent_3_onWindowBroken__DelegateSignature();
-	void BndEvt__E_Bust_EXT_StorageDepot_Arch_BP_BUS_Skylight_6_K2Node_ActorBoundEvent_4_onWindowBroken__DelegateSignature();
-	void BndEvt__E_Bust_EXT_StorageDepot_Arch_SBZFilteredTriggerVolume_BreakGlass2_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__E_Bust_EXT_StorageDepot_Arch_SBZFilteredTriggerVolume_BreakGlass_K2Node_ActorBoundEvent_0_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void ExecuteUbergraph_E_Bust_EXT_StorageDepot_Arch(int32 EntryPoint);
 	void StorageEntered();
+	void ExecuteUbergraph_E_Bust_EXT_StorageDepot_Arch(int32 EntryPoint);
+	void BndEvt__E_Bust_EXT_StorageDepot_Arch_SBZFilteredTriggerVolume_BreakGlass_K2Node_ActorBoundEvent_0_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__E_Bust_EXT_StorageDepot_Arch_SBZFilteredTriggerVolume_BreakGlass2_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__E_Bust_EXT_StorageDepot_Arch_BP_BUS_Skylight_6_K2Node_ActorBoundEvent_4_onWindowBroken__DelegateSignature();
+	void BndEvt__E_Bust_EXT_StorageDepot_Arch_BP_BUS_Skylight_2_K2Node_ActorBoundEvent_3_onWindowBroken__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()
@@ -55,5 +55,6 @@ public:
 		return GetDefaultObjImpl<AE_Bust_EXT_StorageDepot_Arch_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_Bust_EXT_StorageDepot_Arch_C;
 
 SDK_NAMESPACE_END

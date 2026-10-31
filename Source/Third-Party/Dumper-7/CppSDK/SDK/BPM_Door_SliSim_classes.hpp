@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABPM_Door_SliSim_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPM_Door_SliSim_C;
 
 SDK_NAMESPACE_END

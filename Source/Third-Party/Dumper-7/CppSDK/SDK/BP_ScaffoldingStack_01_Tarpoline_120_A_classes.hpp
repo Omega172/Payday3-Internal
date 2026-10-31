@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_ScaffoldingStack_01_Tarpoline_120_A_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ScaffoldingStack_01_Tarpoline_120_A_C;
 
 SDK_NAMESPACE_END

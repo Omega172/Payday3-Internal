@@ -16,85 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_SHI_FenceGate_01.BP_SHI_FenceGate_01_C.anim_timeline__FinishedFunc
-// (BlueprintEvent)
+// Function BP_SHI_FenceGate_01.BP_SHI_FenceGate_01_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_SHI_FenceGate_01_C::anim_timeline__FinishedFunc()
+void ABP_SHI_FenceGate_01_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SHI_FenceGate_01_C", "anim_timeline__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SHI_FenceGate_01.BP_SHI_FenceGate_01_C.anim_timeline__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_SHI_FenceGate_01_C::anim_timeline__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SHI_FenceGate_01_C", "anim_timeline__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SHI_FenceGate_01.BP_SHI_FenceGate_01_C.ExecuteUbergraph_BP_SHI_FenceGate_01
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SHI_FenceGate_01_C::ExecuteUbergraph_BP_SHI_FenceGate_01(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SHI_FenceGate_01_C", "ExecuteUbergraph_BP_SHI_FenceGate_01");
-
-	Params::BP_SHI_FenceGate_01_C_ExecuteUbergraph_BP_SHI_FenceGate_01 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SHI_FenceGate_01.BP_SHI_FenceGate_01_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SHI_FenceGate_01_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SHI_FenceGate_01_C", "OnStateChanged");
-
-	Params::BP_SHI_FenceGate_01_C_OnStateChanged Parms{};
-
-	Parms.bStateToChangeTo = bStateToChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SHI_FenceGate_01.BP_SHI_FenceGate_01_C.setClosed
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_SHI_FenceGate_01_C::setClosed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SHI_FenceGate_01_C", "setClosed");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -105,24 +33,82 @@ void ABP_SHI_FenceGate_01_C::setClosed()
 
 void ABP_SHI_FenceGate_01_C::setOpen()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SHI_FenceGate_01_C", "setOpen");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setOpen", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_SHI_FenceGate_01.BP_SHI_FenceGate_01_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_SHI_FenceGate_01.BP_SHI_FenceGate_01_C.setClosed
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_SHI_FenceGate_01_C::UserConstructionScript()
+void ABP_SHI_FenceGate_01_C::setClosed()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setClosed", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SHI_FenceGate_01_C", "UserConstructionScript");
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SHI_FenceGate_01.BP_SHI_FenceGate_01_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bStateToChangeTo_OnStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SHI_FenceGate_01_C::OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_SHI_FenceGate_01_C_OnStateChanged Parms{};
+
+	Parms.bStateToChangeTo_OnStateChanged = bStateToChangeTo_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SHI_FenceGate_01.BP_SHI_FenceGate_01_C.ExecuteUbergraph_BP_SHI_FenceGate_01
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SHI_FenceGate_01_C::ExecuteUbergraph_BP_SHI_FenceGate_01(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_SHI_FenceGate_01_C", "ExecuteUbergraph_BP_SHI_FenceGate_01", FuncInfo);
+
+	Params::BP_SHI_FenceGate_01_C_ExecuteUbergraph_BP_SHI_FenceGate_01 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SHI_FenceGate_01.BP_SHI_FenceGate_01_C.anim_timeline__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_SHI_FenceGate_01_C::anim_timeline__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"anim_timeline__UpdateFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SHI_FenceGate_01.BP_SHI_FenceGate_01_C.anim_timeline__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_SHI_FenceGate_01_C::anim_timeline__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"anim_timeline__FinishedFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

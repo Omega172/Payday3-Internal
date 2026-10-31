@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AFort_C>();
 	}
 };
+DUMPER7_ASSERTS_AFort_C;
 
 SDK_NAMESPACE_END

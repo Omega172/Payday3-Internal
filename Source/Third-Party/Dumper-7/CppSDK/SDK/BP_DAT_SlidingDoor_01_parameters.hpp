@@ -17,6 +17,42 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_DAT_SlidingDoor_01.BP_DAT_SlidingDoor_01_C.UserConstructionScript
+// 0x0008 (0x0008 - 0x0000)
+struct BP_DAT_SlidingDoor_01_C_UserConstructionScript final
+{
+public:
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_DAT_SlidingDoor_01_C_UserConstructionScript;
+
+// Function BP_DAT_SlidingDoor_01.BP_DAT_SlidingDoor_01_C.setLight
+// 0x0040 (0x0040 - 0x0000)
+struct BP_DAT_SlidingDoor_01_C_setLight final
+{
+public:
+	double                                        intensity;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          unlocked;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           Temp_struct_Variable;                              // 0x000C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable_1;                            // 0x001C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           K2Node_Select_Default;                             // 0x002C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_DAT_SlidingDoor_01_C_setLight;
+
+// Function BP_DAT_SlidingDoor_01.BP_DAT_SlidingDoor_01_C.OnStateChanged
+// 0x0003 (0x0003 - 0x0000)
+struct BP_DAT_SlidingDoor_01_C_OnStateChanged final
+{
+public:
+	ESBZGateState                                 OldState_OnStateChanged;                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 NewState_OnStateChanged;                           // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsInitialStateChange_OnStateChanged;              // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_DAT_SlidingDoor_01_C_OnStateChanged;
+
 // Function BP_DAT_SlidingDoor_01.BP_DAT_SlidingDoor_01_C.ExecuteUbergraph_BP_DAT_SlidingDoor_01
 // 0x0040 (0x0040 - 0x0000)
 struct BP_DAT_SlidingDoor_01_C_ExecuteUbergraph_BP_DAT_SlidingDoor_01 final
@@ -41,39 +77,7 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_DAT_SlidingDoor_01.BP_DAT_SlidingDoor_01_C.OnStateChanged
-// 0x0003 (0x0003 - 0x0000)
-struct BP_DAT_SlidingDoor_01_C_OnStateChanged final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsInitialStateChange;                             // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_DAT_SlidingDoor_01.BP_DAT_SlidingDoor_01_C.setLight
-// 0x0040 (0x0040 - 0x0000)
-struct BP_DAT_SlidingDoor_01_C_setLight final
-{
-public:
-	double                                        intensity;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          unlocked;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           Temp_struct_Variable;                              // 0x000C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable_1;                            // 0x001C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           K2Node_Select_Default;                             // 0x002C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_DAT_SlidingDoor_01.BP_DAT_SlidingDoor_01_C.UserConstructionScript
-// 0x0008 (0x0008 - 0x0000)
-struct BP_DAT_SlidingDoor_01_C_UserConstructionScript final
-{
-public:
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_DAT_SlidingDoor_01_C_ExecuteUbergraph_BP_DAT_SlidingDoor_01;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

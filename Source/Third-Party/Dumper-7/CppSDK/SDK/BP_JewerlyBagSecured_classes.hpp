@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_JewerlyBagSecured_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_JewerlyBagSecured_C;
 
 SDK_NAMESPACE_END

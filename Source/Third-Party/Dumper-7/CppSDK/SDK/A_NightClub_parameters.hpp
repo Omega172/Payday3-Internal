@@ -17,6 +17,16 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function A_NightClub.A_NightClub_C.HeistStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct A_NightClub_C_HeistStateChanged final
+{
+public:
+	EPD3HeistState                                OldHeistState_HeistStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CurrentHeistState_HeistStateChanged;               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_A_NightClub_C_HeistStateChanged;
+
 // Function A_NightClub.A_NightClub_C.ExecuteUbergraph_A_NightClub
 // 0x00A4 (0x00A4 - 0x0000)
 struct A_NightClub_C_ExecuteUbergraph_A_NightClub final
@@ -46,15 +56,7 @@ public:
 	int32                                         CallFunc_PostEvent_ReturnValue_5;                  // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_IsClosed_Variable;                       // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function A_NightClub.A_NightClub_C.HeistStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct A_NightClub_C_HeistStateChanged final
-{
-public:
-	EPD3HeistState                                OldHeistState;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CurrentHeistState;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_A_NightClub_C_ExecuteUbergraph_A_NightClub;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

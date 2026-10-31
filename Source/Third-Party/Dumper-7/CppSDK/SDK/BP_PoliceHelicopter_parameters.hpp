@@ -16,29 +16,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_PoliceHelicopter.BP_PoliceHelicopter_C.ExecuteUbergraph_BP_PoliceHelicopter
-// 0x0060 (0x0060 - 0x0000)
-struct BP_PoliceHelicopter_C_ExecuteUbergraph_BP_PoliceHelicopter final
+// Function BP_PoliceHelicopter.BP_PoliceHelicopter_C.ReceiveOnDoorStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_PoliceHelicopter_C_ReceiveOnDoorStateChanged final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class APD3PawnSpawnGroup* SpawnGroup, class ASBZPawnSpawnBase* Spawner, class APawn* Pawn)> K2Node_CreateDelegate_OutputDelegate; // 0x0008(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ApplyVariationToSkeletal_ReturnValue;     // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class APD3PawnSpawnGroup*                     K2Node_CustomEvent_SpawnGroup;                     // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnBase*                      K2Node_CustomEvent_Spawner;                        // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  K2Node_CustomEvent_Pawn;                           // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APD3PawnSpawnGroup*                     K2Node_DynamicCast_AsPD3Pawn_Spawn_Group;          // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZAerialVehicleDoor                         K2Node_Event_Door;                                 // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bIsDoorOpen;                          // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_43[0x5];                                       // 0x0043(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAnimInstance*                          CallFunc_GetAnimInstance_ReturnValue;              // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UABP_Helicopter_C*                      K2Node_DynamicCast_AsABP_Helicopter;               // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZAerialVehicleDoor                         Door_ReceiveOnDoorStateChanged;                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsDoorOpen_ReceiveOnDoorStateChanged;             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_PoliceHelicopter_C_ReceiveOnDoorStateChanged;
 
 // Function BP_PoliceHelicopter.BP_PoliceHelicopter_C.OnPawnSpawned
 // 0x0018 (0x0018 - 0x0000)
@@ -49,15 +35,32 @@ public:
 	class ASBZPawnSpawnBase*                      Spawner;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  Pawn;                                              // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_PoliceHelicopter_C_OnPawnSpawned;
 
-// Function BP_PoliceHelicopter.BP_PoliceHelicopter_C.ReceiveOnDoorStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_PoliceHelicopter_C_ReceiveOnDoorStateChanged final
+// Function BP_PoliceHelicopter.BP_PoliceHelicopter_C.ExecuteUbergraph_BP_PoliceHelicopter
+// 0x0068 (0x0068 - 0x0000)
+struct BP_PoliceHelicopter_C_ExecuteUbergraph_BP_PoliceHelicopter final
 {
 public:
-	ESBZAerialVehicleDoor                         Door;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsDoorOpen;                                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class APD3PawnSpawnGroup* SpawnGroup, class ASBZPawnSpawnBase* Spawner, class APawn* Pawn)> K2Node_CreateDelegate_OutputDelegate; // 0x0004(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ApplyVariationToSkeletal_ReturnValue;     // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APD3PawnSpawnGroup*                     K2Node_CustomEvent_SpawnGroup;                     // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnBase*                      K2Node_CustomEvent_Spawner;                        // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  K2Node_CustomEvent_Pawn;                           // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APD3PawnSpawnGroup*                     K2Node_DynamicCast_AsPD3Pawn_Spawn_Group;          // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZAerialVehicleDoor                         K2Node_Event_Door;                                 // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bIsDoorOpen;                          // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_43[0x5];                                       // 0x0043(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAnimInstance*                          CallFunc_GetAnimInstance_ReturnValue;              // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UABP_Helicopter_C*                      K2Node_DynamicCast_AsABP_Helicopter;               // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_PoliceHelicopter_C_ExecuteUbergraph_BP_PoliceHelicopter;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

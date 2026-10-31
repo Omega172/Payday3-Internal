@@ -16,21 +16,101 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ReplicatedBinaryActor_Ventilation.BP_ReplicatedBinaryActor_Ventilation_C.BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// Function BP_ReplicatedBinaryActor_Ventilation.BP_ReplicatedBinaryActor_Ventilation_C.rotateDoorCollisionAroundBase
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  InputPin                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ReplicatedBinaryActor_Ventilation_C::rotateDoorCollisionAroundBase(double InputPin)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"rotateDoorCollisionAroundBase", FnName));
+
+	Params::BP_ReplicatedBinaryActor_Ventilation_C_rotateDoorCollisionAroundBase Parms{};
+
+	Parms.InputPin = InputPin;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ReplicatedBinaryActor_Ventilation.BP_ReplicatedBinaryActor_Ventilation_C.rotateAroundAxis
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FVector2D&                 pivot                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector2D&                 point                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  angle                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D*                       rotatedPoint                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ReplicatedBinaryActor_Ventilation_C::rotateAroundAxis(const struct FVector2D& pivot, const struct FVector2D& point, double angle, struct FVector2D* rotatedPoint)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"rotateAroundAxis", FnName));
+
+	Params::BP_ReplicatedBinaryActor_Ventilation_C_rotateAroundAxis Parms{};
+
+	Parms.pivot = std::move(pivot);
+	Parms.point = std::move(point);
+	Parms.angle = angle;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (rotatedPoint != nullptr)
+		*rotatedPoint = std::move(Parms.rotatedPoint);
+}
+
+
+// Function BP_ReplicatedBinaryActor_Ventilation.BP_ReplicatedBinaryActor_Ventilation_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bStateToChangeTo_OnStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ReplicatedBinaryActor_Ventilation_C::OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_ReplicatedBinaryActor_Ventilation_C_OnStateChanged Parms{};
+
+	Parms.bStateToChangeTo_OnStateChanged = bStateToChangeTo_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ReplicatedBinaryActor_Ventilation.BP_ReplicatedBinaryActor_Ventilation_C.ExecuteUbergraph_BP_ReplicatedBinaryActor_Ventilation
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ReplicatedBinaryActor_Ventilation_C::ExecuteUbergraph_BP_ReplicatedBinaryActor_Ventilation(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ReplicatedBinaryActor_Ventilation_C", "ExecuteUbergraph_BP_ReplicatedBinaryActor_Ventilation", FuncInfo);
+
+	Params::BP_ReplicatedBinaryActor_Ventilation_C_ExecuteUbergraph_BP_ReplicatedBinaryActor_Ventilation Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ReplicatedBinaryActor_Ventilation.BP_ReplicatedBinaryActor_Ventilation_C.BndEvt__BP_ReplicatedBinaryActorVent_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ReplicatedBinaryActor_Ventilation_C::BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_ReplicatedBinaryActor_Ventilation_C::BndEvt__BP_ReplicatedBinaryActorVent_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ReplicatedBinaryActorVent_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_Ventilation_C", "BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_ReplicatedBinaryActor_Ventilation_C_BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
+	Params::BP_ReplicatedBinaryActor_Ventilation_C_BndEvt__BP_ReplicatedBinaryActorVent_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature Parms{};
 
 	Parms.Interactable = Interactable;
 	Parms.Interactor = Interactor;
@@ -40,21 +120,65 @@ void ABP_ReplicatedBinaryActor_Ventilation_C::BndEvt__BP_ReplicatedBinaryActor_V
 }
 
 
-// Function BP_ReplicatedBinaryActor_Ventilation.BP_ReplicatedBinaryActor_Ventilation_C.BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature
+// Function BP_ReplicatedBinaryActor_Ventilation.BP_ReplicatedBinaryActor_Ventilation_C.BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZPropDamage_K2Node_ComponentBoundEvent_4_SBZPropDamageHitsRejectSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UActorComponent*                  PoolComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   Hits                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   ChangedHits                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ReplicatedBinaryActor_Ventilation_C::BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZPropDamage_K2Node_ComponentBoundEvent_4_SBZPropDamageHitsRejectSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, int32 ChangedHits)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZPropDamage_K2Node_ComponentBoundEvent_4_SBZPropDamageHitsRejectSignature__DelegateSignature", FnName));
+
+	Params::BP_ReplicatedBinaryActor_Ventilation_C_BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZPropDamage_K2Node_ComponentBoundEvent_4_SBZPropDamageHitsRejectSignature__DelegateSignature Parms{};
+
+	Parms.PoolComponent = PoolComponent;
+	Parms.Hits = Hits;
+	Parms.ChangedHits = ChangedHits;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ReplicatedBinaryActor_Ventilation.BP_ReplicatedBinaryActor_Ventilation_C.BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// class UActorComponent*                  PoolComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   Hits                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZPropDamageContext&     DamageContext                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+
+void ABP_ReplicatedBinaryActor_Ventilation_C::BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature", FnName));
+
+	Params::BP_ReplicatedBinaryActor_Ventilation_C_BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature Parms{};
+
+	Parms.PoolComponent = PoolComponent;
+	Parms.Hits = Hits;
+	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.DamageContext = std::move(DamageContext);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ReplicatedBinaryActor_Ventilation.BP_ReplicatedBinaryActor_Ventilation_C.BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_7_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ReplicatedBinaryActor_Ventilation_C::BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_ReplicatedBinaryActor_Ventilation_C::BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_7_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_7_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_Ventilation_C", "BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_ReplicatedBinaryActor_Ventilation_C_BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature Parms{};
+	Params::BP_ReplicatedBinaryActor_Ventilation_C_BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_7_SBZOnInteraction__DelegateSignature Parms{};
 
 	Parms.Interactable = Interactable;
 	Parms.Interactor = Interactor;
@@ -73,10 +197,8 @@ void ABP_ReplicatedBinaryActor_Ventilation_C::BndEvt__BP_ReplicatedBinaryActor_V
 
 void ABP_ReplicatedBinaryActor_Ventilation_C::BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_Ventilation_C", "BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature", FnName));
 
 	Params::BP_ReplicatedBinaryActor_Ventilation_C_BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature Parms{};
 
@@ -88,21 +210,19 @@ void ABP_ReplicatedBinaryActor_Ventilation_C::BndEvt__BP_ReplicatedBinaryActor_V
 }
 
 
-// Function BP_ReplicatedBinaryActor_Ventilation.BP_ReplicatedBinaryActor_Ventilation_C.BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_7_SBZOnInteraction__DelegateSignature
+// Function BP_ReplicatedBinaryActor_Ventilation.BP_ReplicatedBinaryActor_Ventilation_C.BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ReplicatedBinaryActor_Ventilation_C::BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_7_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_ReplicatedBinaryActor_Ventilation_C::BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_Ventilation_C", "BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_7_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_ReplicatedBinaryActor_Ventilation_C_BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_7_SBZOnInteraction__DelegateSignature Parms{};
+	Params::BP_ReplicatedBinaryActor_Ventilation_C_BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature Parms{};
 
 	Parms.Interactable = Interactable;
 	Parms.Interactor = Interactor;
@@ -112,165 +232,23 @@ void ABP_ReplicatedBinaryActor_Ventilation_C::BndEvt__BP_ReplicatedBinaryActor_V
 }
 
 
-// Function BP_ReplicatedBinaryActor_Ventilation.BP_ReplicatedBinaryActor_Ventilation_C.BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// class UActorComponent*                  PoolComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   Hits                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZPropDamageContext&     DamageContext                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
-
-void ABP_ReplicatedBinaryActor_Ventilation_C::BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_Ventilation_C", "BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature");
-
-	Params::BP_ReplicatedBinaryActor_Ventilation_C_BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature Parms{};
-
-	Parms.PoolComponent = PoolComponent;
-	Parms.Hits = Hits;
-	Parms.bDoCosmetics = bDoCosmetics;
-	Parms.DamageContext = std::move(DamageContext);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ReplicatedBinaryActor_Ventilation.BP_ReplicatedBinaryActor_Ventilation_C.BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZPropDamage_K2Node_ComponentBoundEvent_4_SBZPropDamageHitsRejectSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UActorComponent*                  PoolComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   Hits                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   ChangedHits                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ReplicatedBinaryActor_Ventilation_C::BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZPropDamage_K2Node_ComponentBoundEvent_4_SBZPropDamageHitsRejectSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, int32 ChangedHits)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_Ventilation_C", "BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZPropDamage_K2Node_ComponentBoundEvent_4_SBZPropDamageHitsRejectSignature__DelegateSignature");
-
-	Params::BP_ReplicatedBinaryActor_Ventilation_C_BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZPropDamage_K2Node_ComponentBoundEvent_4_SBZPropDamageHitsRejectSignature__DelegateSignature Parms{};
-
-	Parms.PoolComponent = PoolComponent;
-	Parms.Hits = Hits;
-	Parms.ChangedHits = ChangedHits;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ReplicatedBinaryActor_Ventilation.BP_ReplicatedBinaryActor_Ventilation_C.BndEvt__BP_ReplicatedBinaryActorVent_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
+// Function BP_ReplicatedBinaryActor_Ventilation.BP_ReplicatedBinaryActor_Ventilation_C.BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ReplicatedBinaryActor_Ventilation_C::BndEvt__BP_ReplicatedBinaryActorVent_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_ReplicatedBinaryActor_Ventilation_C::BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_Ventilation_C", "BndEvt__BP_ReplicatedBinaryActorVent_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_ReplicatedBinaryActor_Ventilation_C_BndEvt__BP_ReplicatedBinaryActorVent_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature Parms{};
+	Params::BP_ReplicatedBinaryActor_Ventilation_C_BndEvt__BP_ReplicatedBinaryActor_Ventilation_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
 	Parms.Interactable = Interactable;
 	Parms.Interactor = Interactor;
 	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ReplicatedBinaryActor_Ventilation.BP_ReplicatedBinaryActor_Ventilation_C.ExecuteUbergraph_BP_ReplicatedBinaryActor_Ventilation
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ReplicatedBinaryActor_Ventilation_C::ExecuteUbergraph_BP_ReplicatedBinaryActor_Ventilation(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_Ventilation_C", "ExecuteUbergraph_BP_ReplicatedBinaryActor_Ventilation");
-
-	Params::BP_ReplicatedBinaryActor_Ventilation_C_ExecuteUbergraph_BP_ReplicatedBinaryActor_Ventilation Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ReplicatedBinaryActor_Ventilation.BP_ReplicatedBinaryActor_Ventilation_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ReplicatedBinaryActor_Ventilation_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_Ventilation_C", "OnStateChanged");
-
-	Params::BP_ReplicatedBinaryActor_Ventilation_C_OnStateChanged Parms{};
-
-	Parms.bStateToChangeTo = bStateToChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ReplicatedBinaryActor_Ventilation.BP_ReplicatedBinaryActor_Ventilation_C.rotateAroundAxis
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FVector2D&                 pivot                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FVector2D&                 point                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  angle                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D*                       rotatedPoint                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ReplicatedBinaryActor_Ventilation_C::rotateAroundAxis(const struct FVector2D& pivot, const struct FVector2D& point, double angle, struct FVector2D* rotatedPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_Ventilation_C", "rotateAroundAxis");
-
-	Params::BP_ReplicatedBinaryActor_Ventilation_C_rotateAroundAxis Parms{};
-
-	Parms.pivot = std::move(pivot);
-	Parms.point = std::move(point);
-	Parms.angle = angle;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (rotatedPoint != nullptr)
-		*rotatedPoint = std::move(Parms.rotatedPoint);
-}
-
-
-// Function BP_ReplicatedBinaryActor_Ventilation.BP_ReplicatedBinaryActor_Ventilation_C.rotateDoorCollisionAroundBase
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  InputPin                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ReplicatedBinaryActor_Ventilation_C::rotateDoorCollisionAroundBase(double InputPin)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_Ventilation_C", "rotateDoorCollisionAroundBase");
-
-	Params::BP_ReplicatedBinaryActor_Ventilation_C_rotateDoorCollisionAroundBase Parms{};
-
-	Parms.InputPin = InputPin;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

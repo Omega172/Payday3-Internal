@@ -40,5 +40,6 @@ public:
 		return GetDefaultObjImpl<ABPL_StreetModern_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_StreetModern_C;
 
 SDK_NAMESPACE_END

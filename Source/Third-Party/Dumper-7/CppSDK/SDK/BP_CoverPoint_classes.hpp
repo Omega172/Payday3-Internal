@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABP_CoverPoint_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CoverPoint_C;
 
 SDK_NAMESPACE_END

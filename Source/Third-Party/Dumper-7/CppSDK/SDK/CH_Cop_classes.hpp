@@ -16,13 +16,13 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CH_Cop.CH_Cop_C
-// 0x0020 (0x21E0 - 0x21C0)
+// 0x0020 (0x2270 - 0x2250)
 class ACH_Cop_C : public ACH_BaseCop_C
 {
 public:
-	class USBZAIStimuliReactionComponent*         SBZAIStimuliReaction;                              // 0x21C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USBZShoutTargetComponent*               SBZShoutTarget;                                    // 0x21C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Hat;                                               // 0x21D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZAIStimuliReactionComponent*         SBZAIStimuliReaction;                              // 0x2250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZShoutTargetComponent*               SBZShoutTarget;                                    // 0x2258(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Hat;                                               // 0x2260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ACH_Cop_C>();
 	}
 };
+DUMPER7_ASSERTS_ACH_Cop_C;
 
 SDK_NAMESPACE_END

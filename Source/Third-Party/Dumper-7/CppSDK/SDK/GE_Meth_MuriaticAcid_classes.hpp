@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_Meth_MuriaticAcid_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_Meth_MuriaticAcid_C;
 
 SDK_NAMESPACE_END

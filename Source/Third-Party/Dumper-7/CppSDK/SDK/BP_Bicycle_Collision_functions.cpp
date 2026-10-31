@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_Bicycle_Collision.BP_Bicycle_Collision_C.ExecuteUbergraph_BP_Bicycle_Collision
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Bicycle_Collision_C::ExecuteUbergraph_BP_Bicycle_Collision(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Bicycle_Collision_C", "ExecuteUbergraph_BP_Bicycle_Collision", FuncInfo);
+
+	Params::BP_Bicycle_Collision_C_ExecuteUbergraph_BP_Bicycle_Collision Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_Bicycle_Collision.BP_Bicycle_Collision_C.BndEvt__BP_Bicycle_Collision_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -28,10 +46,8 @@ SDK_NAMESPACE_START
 
 void ABP_Bicycle_Collision_C::BndEvt__BP_Bicycle_Collision_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Bicycle_Collision_C", "BndEvt__BP_Bicycle_Collision_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Bicycle_Collision_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature", FnName));
 
 	Params::BP_Bicycle_Collision_C_BndEvt__BP_Bicycle_Collision_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
@@ -41,26 +57,6 @@ void ABP_Bicycle_Collision_C::BndEvt__BP_Bicycle_Collision_Box_K2Node_ComponentB
 	Parms.OtherBodyIndex = OtherBodyIndex;
 	Parms.bFromSweep = bFromSweep;
 	Parms.SweepResult = std::move(SweepResult);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Bicycle_Collision.BP_Bicycle_Collision_C.ExecuteUbergraph_BP_Bicycle_Collision
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Bicycle_Collision_C::ExecuteUbergraph_BP_Bicycle_Collision(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Bicycle_Collision_C", "ExecuteUbergraph_BP_Bicycle_Collision");
-
-	Params::BP_Bicycle_Collision_C_ExecuteUbergraph_BP_Bicycle_Collision Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

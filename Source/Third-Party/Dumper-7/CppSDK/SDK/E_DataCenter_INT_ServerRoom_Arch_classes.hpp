@@ -26,10 +26,10 @@ public:
 	class ABP_IGl_BRE_ATT_2HIT_C*                 BP_IGl_BRE_ATT_2HIT49_ExecuteUbergraph_E_DataCenter_INT_ServerRoom_Arch_RefProperty; // 0x03E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility14_K2Node_ActorBoundEvent_17_SBZSmartLinkReachedSignature__DelegateSignature(class AActor* MovingActor, const struct FVector& DestinationPoint);
-	void BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility25_K2Node_ActorBoundEvent_18_SBZSmartLinkReachedSignature__DelegateSignature(class AActor* MovingActor, const struct FVector& DestinationPoint);
-	void BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility9_K2Node_ActorBoundEvent_19_SBZSmartLinkReachedSignature__DelegateSignature(class AActor* MovingActor, const struct FVector& DestinationPoint);
 	void ExecuteUbergraph_E_DataCenter_INT_ServerRoom_Arch(int32 EntryPoint);
+	void BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility9_K2Node_ActorBoundEvent_19_SBZSmartLinkReachedSignature__DelegateSignature(class AActor* MovingActor, const struct FVector& DestinationPoint);
+	void BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility25_K2Node_ActorBoundEvent_18_SBZSmartLinkReachedSignature__DelegateSignature(class AActor* MovingActor, const struct FVector& DestinationPoint);
+	void BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility14_K2Node_ActorBoundEvent_17_SBZSmartLinkReachedSignature__DelegateSignature(class AActor* MovingActor, const struct FVector& DestinationPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<AE_DataCenter_INT_ServerRoom_Arch_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_DataCenter_INT_ServerRoom_Arch_C;
 
 SDK_NAMESPACE_END

@@ -18,14 +18,14 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_Throwable_GasGrenade.BP_Throwable_GasGrenade_C.BndEvt__BP_Throwable_GasGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature
-// 0x0120 (0x0120 - 0x0000)
-struct BP_Throwable_GasGrenade_C_BndEvt__BP_Throwable_GasGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature final
+// Function BP_Throwable_GasGrenade.BP_Throwable_GasGrenade_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_Throwable_GasGrenade_C_ReceiveTick final
 {
 public:
-	struct FHitResult                             ImpactResult;                                      // 0x0000(0x0108)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                ImpactVelocity;                                    // 0x0108(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DeltaSeconds_ReceiveTick;                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Throwable_GasGrenade_C_ReceiveTick;
 
 // Function BP_Throwable_GasGrenade.BP_Throwable_GasGrenade_C.ExecuteUbergraph_BP_Throwable_GasGrenade
 // 0x0178 (0x0178 - 0x0000)
@@ -50,14 +50,17 @@ public:
 	uint8                                         Pad_16C[0x4];                                      // 0x016C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UNiagaraComponent*                      CallFunc_SpawnSystemAttached_ReturnValue;          // 0x0170(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Throwable_GasGrenade_C_ExecuteUbergraph_BP_Throwable_GasGrenade;
 
-// Function BP_Throwable_GasGrenade.BP_Throwable_GasGrenade_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_Throwable_GasGrenade_C_ReceiveTick final
+// Function BP_Throwable_GasGrenade.BP_Throwable_GasGrenade_C.BndEvt__BP_Throwable_GasGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature
+// 0x0120 (0x0120 - 0x0000)
+struct BP_Throwable_GasGrenade_C_BndEvt__BP_Throwable_GasGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature final
 {
 public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             ImpactResult;                                      // 0x0000(0x0108)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                ImpactVelocity;                                    // 0x0108(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Throwable_GasGrenade_C_BndEvt__BP_Throwable_GasGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

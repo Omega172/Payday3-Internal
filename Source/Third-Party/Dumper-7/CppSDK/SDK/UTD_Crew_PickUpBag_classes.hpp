@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UUTD_Crew_PickUpBag_C>();
 	}
 };
+DUMPER7_ASSERTS_UUTD_Crew_PickUpBag_C;
 
 SDK_NAMESPACE_END

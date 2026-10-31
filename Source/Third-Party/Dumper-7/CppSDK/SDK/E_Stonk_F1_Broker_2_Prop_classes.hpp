@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AE_Stonk_F1_Broker_2_Prop_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_Stonk_F1_Broker_2_Prop_C;
 
 SDK_NAMESPACE_END

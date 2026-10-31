@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AM_Stonk_Roof_C>();
 	}
 };
+DUMPER7_ASSERTS_AM_Stonk_Roof_C;
 
 SDK_NAMESPACE_END

@@ -16,25 +16,64 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.BndEvt__BP_SabotagePoint_ArmoredTruck_interactable_fix_remote_steering_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_SabotagePoint_ArmoredTruck_C_BndEvt__BP_SabotagePoint_ArmoredTruck_interactable_fix_remote_steering_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
+// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.Start_escort_Enable
+// 0x0020 (0x0020 - 0x0000)
+struct BP_SabotagePoint_ArmoredTruck_C_Start_escort_Enable final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0000(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_AddReplicatedMarker_ReturnValue;          // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_SabotagePoint_ArmoredTruck_C_Start_escort_Enable;
 
-// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.BndEvt__BP_SabotagePoint_ArmoredTruck_Interactable_Start_Escort_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_SabotagePoint_ArmoredTruck_C_BndEvt__BP_SabotagePoint_ArmoredTruck_Interactable_Start_Escort_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
+// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.Start_escort_Disable
+// 0x0001 (0x0001 - 0x0000)
+struct BP_SabotagePoint_ArmoredTruck_C_Start_escort_Disable final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_SabotagePoint_ArmoredTruck_C_Start_escort_Disable;
+
+// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.OnSabotaged_Event_0
+// 0x0001 (0x0001 - 0x0000)
+struct BP_SabotagePoint_ArmoredTruck_C_OnSabotaged_Event_0 final
+{
+public:
+	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SabotagePoint_ArmoredTruck_C_OnSabotaged_Event_0;
+
+// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.OnRep_Remote_steering_remote_state
+// 0x0002 (0x0002 - 0x0000)
+struct BP_SabotagePoint_ArmoredTruck_C_OnRep_Remote_steering_remote_state final
+{
+public:
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SabotagePoint_ArmoredTruck_C_OnRep_Remote_steering_remote_state;
+
+// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.Fix_Interactable_Enable
+// 0x0020 (0x0020 - 0x0000)
+struct BP_SabotagePoint_ArmoredTruck_C_Fix_Interactable_Enable final
+{
+public:
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0000(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_AddReplicatedMarker_ReturnValue;          // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SabotagePoint_ArmoredTruck_C_Fix_Interactable_Enable;
+
+// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.Fix_Interactable_Disable
+// 0x0001 (0x0001 - 0x0000)
+struct BP_SabotagePoint_ArmoredTruck_C_Fix_Interactable_Disable final
+{
+public:
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SabotagePoint_ArmoredTruck_C_Fix_Interactable_Disable;
 
 // Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.ExecuteUbergraph_BP_SabotagePoint_ArmoredTruck
 // 0x0038 (0x0038 - 0x0000)
@@ -52,59 +91,29 @@ public:
 	bool                                          K2Node_ComponentBoundEvent_bIsLocallyControlledInteractor_1; // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_bSabotaged;                     // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_SabotagePoint_ArmoredTruck_C_ExecuteUbergraph_BP_SabotagePoint_ArmoredTruck;
 
-// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.Fix_Interactable_Disable
-// 0x0001 (0x0001 - 0x0000)
-struct BP_SabotagePoint_ArmoredTruck_C_Fix_Interactable_Disable final
+// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.BndEvt__BP_SabotagePoint_ArmoredTruck_Interactable_Start_Escort_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_SabotagePoint_ArmoredTruck_C_BndEvt__BP_SabotagePoint_ArmoredTruck_Interactable_Start_Escort_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
 {
 public:
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_SabotagePoint_ArmoredTruck_C_BndEvt__BP_SabotagePoint_ArmoredTruck_Interactable_Start_Escort_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature;
 
-// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.Fix_Interactable_Enable
-// 0x0020 (0x0020 - 0x0000)
-struct BP_SabotagePoint_ArmoredTruck_C_Fix_Interactable_Enable final
+// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.BndEvt__BP_SabotagePoint_ArmoredTruck_interactable_fix_remote_steering_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_SabotagePoint_ArmoredTruck_C_BndEvt__BP_SabotagePoint_ArmoredTruck_interactable_fix_remote_steering_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
 {
 public:
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0000(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_AddReplicatedMarker_ReturnValue;          // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.OnRep_Remote_steering_remote_state
-// 0x0002 (0x0002 - 0x0000)
-struct BP_SabotagePoint_ArmoredTruck_C_OnRep_Remote_steering_remote_state final
-{
-public:
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.OnSabotaged_Event_0
-// 0x0001 (0x0001 - 0x0000)
-struct BP_SabotagePoint_ArmoredTruck_C_OnSabotaged_Event_0 final
-{
-public:
-	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.Start_escort_Disable
-// 0x0001 (0x0001 - 0x0000)
-struct BP_SabotagePoint_ArmoredTruck_C_Start_escort_Disable final
-{
-public:
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_SabotagePoint_ArmoredTruck.BP_SabotagePoint_ArmoredTruck_C.Start_escort_Enable
-// 0x0020 (0x0020 - 0x0000)
-struct BP_SabotagePoint_ArmoredTruck_C_Start_escort_Enable final
-{
-public:
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0000(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_AddReplicatedMarker_ReturnValue;          // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_SabotagePoint_ArmoredTruck_C_BndEvt__BP_SabotagePoint_ArmoredTruck_interactable_fix_remote_steering_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -122,43 +122,43 @@ public:
 	class ABP_NavLink_Agility_C*                  BP_NavLink_Agility409_ExecuteUbergraph_G_Fort_Navlinks_RefProperty; // 0x06D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BlackScreenStarted();
-	void BndEvt__G_Fort_Navlinks_BP_ZiplineBag2_K2Node_ActorBoundEvent_15_SBZBagPickedUp__DelegateSignature();
-	void BndEvt__G_Fort_Navlinks_BP_ZiplineBag3_K2Node_ActorBoundEvent_14_SBZBagPickedUp__DelegateSignature();
-	void BndEvt__G_Fort_Navlinks_BP_ZiplineBag4_K2Node_ActorBoundEvent_16_SBZBagPickedUp__DelegateSignature();
-	void BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline3_K2Node_ActorBoundEvent_25_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
-	void BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline4_K2Node_ActorBoundEvent_26_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
-	void BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline5_K2Node_ActorBoundEvent_16_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
-	void BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline6_K2Node_ActorBoundEvent_17_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
-	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume10_K2Node_ActorBoundEvent_9_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume11_K2Node_ActorBoundEvent_10_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume12_K2Node_ActorBoundEvent_11_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume13_K2Node_ActorBoundEvent_12_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume14_K2Node_ActorBoundEvent_13_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume2_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume3_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume4_K2Node_ActorBoundEvent_3_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume5_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume6_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume7_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume8_K2Node_ActorBoundEvent_7_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume9_K2Node_ActorBoundEvent_8_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume_1_K2Node_ActorBoundEvent_0_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_ScriptTemplate_Scripting_BP_ZiplineBag1_K2Node_ActorBoundEvent_6_SBZBagPickedUp__DelegateSignature();
-	void BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
-	void BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
-	void ExecuteUbergraph_G_Fort_Navlinks(int32 EntryPoint);
-	void GarageOpened();
-	void OnPlayersCarryBagChanged(const struct FSBZPlayersCarryBagChangedEvent& Data);
-	void OnPreplanningAssetsTagsApplied(const struct FGameplayTagContainer& PreplanningTagContainer);
-	void SpawnCrossing();
-	void SpawnGarage();
-	void SpawnSewer();
-	void SpawnSideStreet();
-	void TruckIsInAlly();
-	void TruckLoadingAreaGone();
-	void TruckSideAllyGone();
 	void TruckStreetGone();
+	void TruckSideAllyGone();
+	void TruckLoadingAreaGone();
+	void TruckIsInAlly();
+	void SpawnSideStreet();
+	void SpawnSewer();
+	void SpawnGarage();
+	void SpawnCrossing();
+	void OnPreplanningAssetsTagsApplied(const struct FGameplayTagContainer& PreplanningTagContainer_OnPreplanningAssetsTagsApplied);
+	void OnPlayersCarryBagChanged(const struct FSBZPlayersCarryBagChangedEvent& Data_OnPlayersCarryBagChanged);
+	void GarageOpened();
+	void ExecuteUbergraph_G_Fort_Navlinks(int32 EntryPoint);
+	void BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
+	void BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
+	void BndEvt__G_ScriptTemplate_Scripting_BP_ZiplineBag1_K2Node_ActorBoundEvent_6_SBZBagPickedUp__DelegateSignature();
+	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume_1_K2Node_ActorBoundEvent_0_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume9_K2Node_ActorBoundEvent_8_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume8_K2Node_ActorBoundEvent_7_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume7_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume6_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume5_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume4_K2Node_ActorBoundEvent_3_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume3_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume2_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume14_K2Node_ActorBoundEvent_13_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume13_K2Node_ActorBoundEvent_12_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume12_K2Node_ActorBoundEvent_11_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume11_K2Node_ActorBoundEvent_10_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume10_K2Node_ActorBoundEvent_9_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline6_K2Node_ActorBoundEvent_17_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
+	void BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline5_K2Node_ActorBoundEvent_16_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
+	void BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline4_K2Node_ActorBoundEvent_26_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
+	void BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline3_K2Node_ActorBoundEvent_25_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
+	void BndEvt__G_Fort_Navlinks_BP_ZiplineBag4_K2Node_ActorBoundEvent_16_SBZBagPickedUp__DelegateSignature();
+	void BndEvt__G_Fort_Navlinks_BP_ZiplineBag3_K2Node_ActorBoundEvent_14_SBZBagPickedUp__DelegateSignature();
+	void BndEvt__G_Fort_Navlinks_BP_ZiplineBag2_K2Node_ActorBoundEvent_15_SBZBagPickedUp__DelegateSignature();
+	void BlackScreenStarted();
 
 public:
 	static class UClass* StaticClass()
@@ -174,5 +174,6 @@ public:
 		return GetDefaultObjImpl<AG_Fort_Navlinks_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_Fort_Navlinks_C;
 
 SDK_NAMESPACE_END

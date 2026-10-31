@@ -36,11 +36,11 @@ public:
 	class ASBZAmbientSound*                       SBZAmbientSound_Birds_ExecuteUbergraph_A_Pharaoh_RefProperty; // 0x0420(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__A_Pharaoh_TriggerVolume_Siren_K2Node_ActorBoundEvent_2_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor);
-	void BndEvt__A_Pharaoh_TriggerVolume_Train_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor);
-	void BndEvt__A_Pharaoh_TriggerVolume_Train_STOP_K2Node_ActorBoundEvent_1_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor);
-	void ExecuteUbergraph_A_Pharaoh(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_A_Pharaoh(int32 EntryPoint);
+	void BndEvt__A_Pharaoh_TriggerVolume_Train_STOP_K2Node_ActorBoundEvent_1_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor);
+	void BndEvt__A_Pharaoh_TriggerVolume_Train_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor);
+	void BndEvt__A_Pharaoh_TriggerVolume_Siren_K2Node_ActorBoundEvent_2_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor);
 
 public:
 	static class UClass* StaticClass()
@@ -56,5 +56,6 @@ public:
 		return GetDefaultObjImpl<AA_Pharaoh_C>();
 	}
 };
+DUMPER7_ASSERTS_AA_Pharaoh_C;
 
 SDK_NAMESPACE_END

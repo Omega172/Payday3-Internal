@@ -16,48 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_MURK_VentReactor.BP_MURK_VentReactor_C.ExecuteUbergraph_BP_MURK_VentReactor
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MURK_VentReactor_C::ExecuteUbergraph_BP_MURK_VentReactor(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MURK_VentReactor_C", "ExecuteUbergraph_BP_MURK_VentReactor");
-
-	Params::BP_MURK_VentReactor_C_ExecuteUbergraph_BP_MURK_VentReactor Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MURK_VentReactor.BP_MURK_VentReactor_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MURK_VentReactor_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MURK_VentReactor_C", "OnStateChanged");
-
-	Params::BP_MURK_VentReactor_C_OnStateChanged Parms{};
-
-	Parms.bStateToChangeTo = bStateToChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_MURK_VentReactor.BP_MURK_VentReactor_C.ReactToCloset
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -66,15 +24,51 @@ void ABP_MURK_VentReactor_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosme
 
 void ABP_MURK_VentReactor_C::ReactToCloset(bool bActorsInCloset, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MURK_VentReactor_C", "ReactToCloset");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReactToCloset", FnName));
 
 	Params::BP_MURK_VentReactor_C_ReactToCloset Parms{};
 
 	Parms.bActorsInCloset = bActorsInCloset;
 	Parms.bDoCosmetics = bDoCosmetics;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MURK_VentReactor.BP_MURK_VentReactor_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bStateToChangeTo_OnStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MURK_VentReactor_C::OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_MURK_VentReactor_C_OnStateChanged Parms{};
+
+	Parms.bStateToChangeTo_OnStateChanged = bStateToChangeTo_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MURK_VentReactor.BP_MURK_VentReactor_C.ExecuteUbergraph_BP_MURK_VentReactor
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MURK_VentReactor_C::ExecuteUbergraph_BP_MURK_VentReactor(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_MURK_VentReactor_C", "ExecuteUbergraph_BP_MURK_VentReactor", FuncInfo);
+
+	Params::BP_MURK_VentReactor_C_ExecuteUbergraph_BP_MURK_VentReactor Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

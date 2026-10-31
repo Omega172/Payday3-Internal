@@ -66,26 +66,26 @@ public:
 	struct FLinearColor                           AcedColor;                                         // 0x04BC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_UI_Skills_Button(int32 EntryPoint);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnInitialized();
-	void OnBaseSkillEquipChanged(bool bEquipped);
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
-	void ButtonAlternativeSelected();
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
-	void Init();
-	void ButtonSelected();
-	void OnLoaded_768385304A5076C4893ADC97ABC601C1(class UObject* Loaded);
-	void OnLoaded_B5E36C62476E1F58F16D1589DC03935D(class UObject* Loaded);
-	void Set_State(ESBZSkillState State);
-	void IsLocked(bool* IsLocked);
-	void SetFocused(bool Focus);
-	void Selected();
-	void Unselected();
-	void Reset();
-	void SetButtonIndex(int32 Index_0);
-	void SetResearchButtonVisiblity(bool bVisible);
 	void SetResearched(bool bResearched);
+	void SetResearchButtonVisiblity(bool bVisible);
+	void SetButtonIndex(int32 Index_0);
+	void Reset();
+	void Unselected();
+	void Selected();
+	void SetFocused(bool Focus);
+	void IsLocked(bool* IsLocked_0);
+	void Set_State(ESBZSkillState State);
+	void OnLoaded_B5E36C62476E1F58F16D1589DC03935D(class UObject* Loaded);
+	void OnLoaded_768385304A5076C4893ADC97ABC601C1(class UObject* Loaded);
+	void ButtonSelected();
+	void Init();
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonAlternativeSelected();
+	void ButtonHoveredChanged(bool bInIsHovered);
+	void OnBaseSkillEquipChanged(bool bEquipped);
+	void OnInitialized();
+	void PreConstruct(bool IsDesignTime);
+	void ExecuteUbergraph_WBP_UI_Skills_Button(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

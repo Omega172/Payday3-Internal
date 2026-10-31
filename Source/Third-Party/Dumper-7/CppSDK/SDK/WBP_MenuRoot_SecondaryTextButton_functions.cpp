@@ -16,19 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_MenuRoot_SecondaryTextButton.WBP_MenuRoot_SecondaryTextButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_MenuRoot_SecondaryTextButton.WBP_MenuRoot_SecondaryTextButton_C.ButtonFocusChanging
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MenuRoot_SecondaryTextButton_C::PreConstruct(bool IsDesignTime_PreConstruct)
+void UWBP_MenuRoot_SecondaryTextButton_C::ButtonFocusChanging(bool bInHasFocus)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusChanging", FnName));
 
-	Params::WBP_MenuRoot_SecondaryTextButton_C_PreConstruct Parms{};
+	Params::WBP_MenuRoot_SecondaryTextButton_C_ButtonFocusChanging Parms{};
 
-	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+	Parms.bInHasFocus = bInHasFocus;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -52,19 +52,19 @@ void UWBP_MenuRoot_SecondaryTextButton_C::ExecuteUbergraph_WBP_MenuRoot_Secondar
 }
 
 
-// Function WBP_MenuRoot_SecondaryTextButton.WBP_MenuRoot_SecondaryTextButton_C.ButtonFocusChanging
-// (Event, Protected, BlueprintEvent)
+// Function WBP_MenuRoot_SecondaryTextButton.WBP_MenuRoot_SecondaryTextButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    bInHasFocus_ButtonFocusChanging                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MenuRoot_SecondaryTextButton_C::ButtonFocusChanging(bool bInHasFocus_ButtonFocusChanging)
+void UWBP_MenuRoot_SecondaryTextButton_C::PreConstruct(bool IsDesignTime)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusChanging", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
 
-	Params::WBP_MenuRoot_SecondaryTextButton_C_ButtonFocusChanging Parms{};
+	Params::WBP_MenuRoot_SecondaryTextButton_C_PreConstruct Parms{};
 
-	Parms.bInHasFocus_ButtonFocusChanging = bInHasFocus_ButtonFocusChanging;
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

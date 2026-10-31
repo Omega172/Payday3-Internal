@@ -38,12 +38,12 @@ public:
 	double                                        animDistance;                                      // 0x0390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_ShootingRangeDistanceController_butt01_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void depressButton(class UPrimitiveComponent* mesh);
-	void ExecuteUbergraph_BP_ShootingRangeClearController(int32 EntryPoint);
-	void pressButton(class UPrimitiveComponent* mesh);
-	void Timeline__FinishedFunc();
 	void Timeline__UpdateFunc();
+	void Timeline__FinishedFunc();
+	void pressButton(class UPrimitiveComponent* mesh);
+	void ExecuteUbergraph_BP_ShootingRangeClearController(int32 EntryPoint);
+	void depressButton(class UPrimitiveComponent* mesh);
+	void BndEvt__BP_ShootingRangeDistanceController_butt01_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -59,5 +59,6 @@ public:
 		return GetDefaultObjImpl<ABP_ShootingRangeClearController_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ShootingRangeClearController_C;
 
 SDK_NAMESPACE_END

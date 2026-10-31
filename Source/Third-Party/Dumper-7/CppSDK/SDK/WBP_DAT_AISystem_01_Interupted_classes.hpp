@@ -28,8 +28,8 @@ public:
 	class UTextBlock*                             Proc;                                              // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_DAT_AISystem_01_Interupted(int32 EntryPoint);
 	void setProgress(int32 InputPin);
+	void ExecuteUbergraph_WBP_DAT_AISystem_01_Interupted(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<UWBP_DAT_AISystem_01_Interupted_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_DAT_AISystem_01_Interupted_C;
 
 SDK_NAMESPACE_END

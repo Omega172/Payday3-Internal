@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_ECMJammer_Preview_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ECMJammer_Preview_C;
 
 SDK_NAMESPACE_END

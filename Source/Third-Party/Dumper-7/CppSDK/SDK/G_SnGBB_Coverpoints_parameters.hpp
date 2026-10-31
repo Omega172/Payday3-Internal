@@ -16,6 +16,17 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function G_SnGBB_Coverpoints.G_SnGBB_Coverpoints_C.OnLevelModifiersApplied
+// 0x0018 (0x0018 - 0x0000)
+struct G_SnGBB_Coverpoints_C_OnLevelModifiersApplied final
+{
+public:
+	ESBZDifficulty                                InDifficulty_OnLevelModifiersApplied;              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<ESBZSecurityCompany>                   InCompanies_OnLevelModifiersApplied;               // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_G_SnGBB_Coverpoints_C_OnLevelModifiersApplied;
+
 // Function G_SnGBB_Coverpoints.G_SnGBB_Coverpoints_C.ExecuteUbergraph_G_SnGBB_Coverpoints
 // 0x0020 (0x0020 - 0x0000)
 struct G_SnGBB_Coverpoints_C_ExecuteUbergraph_G_SnGBB_Coverpoints final
@@ -29,16 +40,7 @@ public:
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function G_SnGBB_Coverpoints.G_SnGBB_Coverpoints_C.OnLevelModifiersApplied
-// 0x0018 (0x0018 - 0x0000)
-struct G_SnGBB_Coverpoints_C_OnLevelModifiersApplied final
-{
-public:
-	ESBZDifficulty                                InDifficulty;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<ESBZSecurityCompany>                   InCompanies;                                       // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
+DUMPER7_ASSERTS_G_SnGBB_Coverpoints_C_ExecuteUbergraph_G_SnGBB_Coverpoints;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

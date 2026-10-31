@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AR_Murk_TrainCar_Empty_C>();
 	}
 };
+DUMPER7_ASSERTS_AR_Murk_TrainCar_Empty_C;
 
 SDK_NAMESPACE_END

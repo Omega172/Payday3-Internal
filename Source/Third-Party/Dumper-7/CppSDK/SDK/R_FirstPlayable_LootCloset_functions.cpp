@@ -16,86 +16,36 @@
 
 SDK_NAMESPACE_START
 
-// Function R_FirstPlayable_LootCloset.R_FirstPlayable_LootCloset_C.BndEvt__G_FirstPlayable_Scripting_BP_InstantLoot_Money_17_K2Node_ActorBoundEvent_121_SBZLootedSignature__DelegateSignature
-// (BlueprintEvent)
+// Function R_FirstPlayable_LootCloset.R_FirstPlayable_LootCloset_C.ExecuteUbergraph_R_FirstPlayable_LootCloset
+// (Final, UbergraphFunction)
 // Parameters:
-// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AR_FirstPlayable_LootCloset_C::BndEvt__G_FirstPlayable_Scripting_BP_InstantLoot_Money_17_K2Node_ActorBoundEvent_121_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
+void AR_FirstPlayable_LootCloset_C::ExecuteUbergraph_R_FirstPlayable_LootCloset(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "R_FirstPlayable_LootCloset_C", "ExecuteUbergraph_R_FirstPlayable_LootCloset", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_FirstPlayable_LootCloset_C", "BndEvt__G_FirstPlayable_Scripting_BP_InstantLoot_Money_17_K2Node_ActorBoundEvent_121_SBZLootedSignature__DelegateSignature");
+	Params::R_FirstPlayable_LootCloset_C_ExecuteUbergraph_R_FirstPlayable_LootCloset Parms{};
 
-	Params::R_FirstPlayable_LootCloset_C_BndEvt__G_FirstPlayable_Scripting_BP_InstantLoot_Money_17_K2Node_ActorBoundEvent_121_SBZLootedSignature__DelegateSignature Parms{};
-
-	Parms.InstantLoot = InstantLoot;
-	Parms.TakenByPlayer = TakenByPlayer;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function R_FirstPlayable_LootCloset.R_FirstPlayable_LootCloset_C.BndEvt__G_FirstPlayable_Scripting_BP_InstantLoot_Money_21_K2Node_ActorBoundEvent_111_SBZLootedSignature__DelegateSignature
+// Function R_FirstPlayable_LootCloset.R_FirstPlayable_LootCloset_C.BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_41_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AR_FirstPlayable_LootCloset_C::BndEvt__G_FirstPlayable_Scripting_BP_InstantLoot_Money_21_K2Node_ActorBoundEvent_111_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
+void AR_FirstPlayable_LootCloset_C::BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_41_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_41_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_FirstPlayable_LootCloset_C", "BndEvt__G_FirstPlayable_Scripting_BP_InstantLoot_Money_21_K2Node_ActorBoundEvent_111_SBZLootedSignature__DelegateSignature");
-
-	Params::R_FirstPlayable_LootCloset_C_BndEvt__G_FirstPlayable_Scripting_BP_InstantLoot_Money_21_K2Node_ActorBoundEvent_111_SBZLootedSignature__DelegateSignature Parms{};
-
-	Parms.InstantLoot = InstantLoot;
-	Parms.TakenByPlayer = TakenByPlayer;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_FirstPlayable_LootCloset.R_FirstPlayable_LootCloset_C.BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_27_K2Node_ActorBoundEvent_7_SBZLootedSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AR_FirstPlayable_LootCloset_C::BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_27_K2Node_ActorBoundEvent_7_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_FirstPlayable_LootCloset_C", "BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_27_K2Node_ActorBoundEvent_7_SBZLootedSignature__DelegateSignature");
-
-	Params::R_FirstPlayable_LootCloset_C_BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_27_K2Node_ActorBoundEvent_7_SBZLootedSignature__DelegateSignature Parms{};
-
-	Parms.InstantLoot = InstantLoot;
-	Parms.TakenByPlayer = TakenByPlayer;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_FirstPlayable_LootCloset.R_FirstPlayable_LootCloset_C.BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_28_K2Node_ActorBoundEvent_6_SBZLootedSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AR_FirstPlayable_LootCloset_C::BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_28_K2Node_ActorBoundEvent_6_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_FirstPlayable_LootCloset_C", "BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_28_K2Node_ActorBoundEvent_6_SBZLootedSignature__DelegateSignature");
-
-	Params::R_FirstPlayable_LootCloset_C_BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_28_K2Node_ActorBoundEvent_6_SBZLootedSignature__DelegateSignature Parms{};
+	Params::R_FirstPlayable_LootCloset_C_BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_41_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature Parms{};
 
 	Parms.InstantLoot = InstantLoot;
 	Parms.TakenByPlayer = TakenByPlayer;
@@ -112,10 +62,8 @@ void AR_FirstPlayable_LootCloset_C::BndEvt__R_FirstPlayable_LootCloset_BP_Instan
 
 void AR_FirstPlayable_LootCloset_C::BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_29_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_FirstPlayable_LootCloset_C", "BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_29_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_29_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature", FnName));
 
 	Params::R_FirstPlayable_LootCloset_C_BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_29_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature Parms{};
 
@@ -126,20 +74,18 @@ void AR_FirstPlayable_LootCloset_C::BndEvt__R_FirstPlayable_LootCloset_BP_Instan
 }
 
 
-// Function R_FirstPlayable_LootCloset.R_FirstPlayable_LootCloset_C.BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_41_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature
+// Function R_FirstPlayable_LootCloset.R_FirstPlayable_LootCloset_C.BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_28_K2Node_ActorBoundEvent_6_SBZLootedSignature__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AR_FirstPlayable_LootCloset_C::BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_41_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
+void AR_FirstPlayable_LootCloset_C::BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_28_K2Node_ActorBoundEvent_6_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_28_K2Node_ActorBoundEvent_6_SBZLootedSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_FirstPlayable_LootCloset_C", "BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_41_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature");
-
-	Params::R_FirstPlayable_LootCloset_C_BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_41_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature Parms{};
+	Params::R_FirstPlayable_LootCloset_C_BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_28_K2Node_ActorBoundEvent_6_SBZLootedSignature__DelegateSignature Parms{};
 
 	Parms.InstantLoot = InstantLoot;
 	Parms.TakenByPlayer = TakenByPlayer;
@@ -148,21 +94,61 @@ void AR_FirstPlayable_LootCloset_C::BndEvt__R_FirstPlayable_LootCloset_BP_Instan
 }
 
 
-// Function R_FirstPlayable_LootCloset.R_FirstPlayable_LootCloset_C.ExecuteUbergraph_R_FirstPlayable_LootCloset
-// (Final, UbergraphFunction)
+// Function R_FirstPlayable_LootCloset.R_FirstPlayable_LootCloset_C.BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_27_K2Node_ActorBoundEvent_7_SBZLootedSignature__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AR_FirstPlayable_LootCloset_C::ExecuteUbergraph_R_FirstPlayable_LootCloset(int32 EntryPoint)
+void AR_FirstPlayable_LootCloset_C::BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_27_K2Node_ActorBoundEvent_7_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_27_K2Node_ActorBoundEvent_7_SBZLootedSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_FirstPlayable_LootCloset_C", "ExecuteUbergraph_R_FirstPlayable_LootCloset");
+	Params::R_FirstPlayable_LootCloset_C_BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_27_K2Node_ActorBoundEvent_7_SBZLootedSignature__DelegateSignature Parms{};
 
-	Params::R_FirstPlayable_LootCloset_C_ExecuteUbergraph_R_FirstPlayable_LootCloset Parms{};
+	Parms.InstantLoot = InstantLoot;
+	Parms.TakenByPlayer = TakenByPlayer;
 
-	Parms.EntryPoint = EntryPoint;
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function R_FirstPlayable_LootCloset.R_FirstPlayable_LootCloset_C.BndEvt__G_FirstPlayable_Scripting_BP_InstantLoot_Money_21_K2Node_ActorBoundEvent_111_SBZLootedSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AR_FirstPlayable_LootCloset_C::BndEvt__G_FirstPlayable_Scripting_BP_InstantLoot_Money_21_K2Node_ActorBoundEvent_111_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_FirstPlayable_Scripting_BP_InstantLoot_Money_21_K2Node_ActorBoundEvent_111_SBZLootedSignature__DelegateSignature", FnName));
+
+	Params::R_FirstPlayable_LootCloset_C_BndEvt__G_FirstPlayable_Scripting_BP_InstantLoot_Money_21_K2Node_ActorBoundEvent_111_SBZLootedSignature__DelegateSignature Parms{};
+
+	Parms.InstantLoot = InstantLoot;
+	Parms.TakenByPlayer = TakenByPlayer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function R_FirstPlayable_LootCloset.R_FirstPlayable_LootCloset_C.BndEvt__G_FirstPlayable_Scripting_BP_InstantLoot_Money_17_K2Node_ActorBoundEvent_121_SBZLootedSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AR_FirstPlayable_LootCloset_C::BndEvt__G_FirstPlayable_Scripting_BP_InstantLoot_Money_17_K2Node_ActorBoundEvent_121_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_FirstPlayable_Scripting_BP_InstantLoot_Money_17_K2Node_ActorBoundEvent_121_SBZLootedSignature__DelegateSignature", FnName));
+
+	Params::R_FirstPlayable_LootCloset_C_BndEvt__G_FirstPlayable_Scripting_BP_InstantLoot_Money_17_K2Node_ActorBoundEvent_121_SBZLootedSignature__DelegateSignature Parms{};
+
+	Parms.InstantLoot = InstantLoot;
+	Parms.TakenByPlayer = TakenByPlayer;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

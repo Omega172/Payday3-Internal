@@ -11,22 +11,12 @@
 #include "Basic.hpp"
 
 #include "Starbreeze_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "AkAudio_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
-
-// Function BP_MovingMotionSensor.BP_MovingMotionSensor_C.BP_OnStateChanged
-// 0x0003 (0x0003 - 0x0000)
-struct BP_MovingMotionSensor_C_BP_OnStateChanged final
-{
-public:
-	ESBZCameraState                               OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZCameraState                               NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
 
 // Function BP_MovingMotionSensor.BP_MovingMotionSensor_C.ExecuteUbergraph_BP_MovingMotionSensor
 // 0x00F0 (0x00F0 - 0x0000)
@@ -51,6 +41,18 @@ public:
 	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable; // 0x00D0(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_MovingMotionSensor_C_ExecuteUbergraph_BP_MovingMotionSensor;
+
+// Function BP_MovingMotionSensor.BP_MovingMotionSensor_C.BP_OnStateChanged
+// 0x0003 (0x0003 - 0x0000)
+struct BP_MovingMotionSensor_C_BP_OnStateChanged final
+{
+public:
+	ESBZCameraState                               OldState_BP_OnStateChanged;                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZCameraState                               NewState_BP_OnStateChanged;                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_BP_OnStateChanged;                    // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_MovingMotionSensor_C_BP_OnStateChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -33,13 +33,13 @@ public:
 	struct FRotator                               EndRotation;                                       // 0x0538(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
-	void BndEvt__BP_DisplayWallCabinet_01_Glass_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BP_OnCuttingEnabledChanged(bool bCuttingEnabled);
-	void BP_OnStateChanged(ESBZDisplayCaseState OldState, ESBZDisplayCaseState NewState, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_DisplayWallCabinet_01_Glass_01(int32 EntryPoint);
-	void OnCutCompleted();
-	void OpenSidewaysTimeline__FinishedFunc();
 	void OpenSidewaysTimeline__UpdateFunc();
+	void OpenSidewaysTimeline__FinishedFunc();
+	void OnCutCompleted();
+	void ExecuteUbergraph_BP_DisplayWallCabinet_01_Glass_01(int32 EntryPoint);
+	void BP_OnStateChanged(ESBZDisplayCaseState OldState_BP_OnStateChanged, ESBZDisplayCaseState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged);
+	void BP_OnCuttingEnabledChanged(bool bCuttingEnabled_BP_OnCuttingEnabledChanged);
+	void BndEvt__BP_DisplayWallCabinet_01_Glass_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -55,5 +55,6 @@ public:
 		return GetDefaultObjImpl<ABP_DisplayWallCabinet_01_Glass_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DisplayWallCabinet_01_Glass_01_C;
 
 SDK_NAMESPACE_END

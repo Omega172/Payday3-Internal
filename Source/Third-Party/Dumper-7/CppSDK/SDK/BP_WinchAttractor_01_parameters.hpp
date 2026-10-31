@@ -16,6 +16,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_WinchAttractor_01.BP_WinchAttractor_01_C.triggerAttractor
+// 0x0001 (0x0001 - 0x0000)
+struct BP_WinchAttractor_01_C_triggerAttractor final
+{
+public:
+	bool                                          makeNoise;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_WinchAttractor_01_C_triggerAttractor;
+
 // Function BP_WinchAttractor_01.BP_WinchAttractor_01_C.ExecuteUbergraph_BP_WinchAttractor_01
 // 0x0048 (0x0048 - 0x0000)
 struct BP_WinchAttractor_01_C_ExecuteUbergraph_BP_WinchAttractor_01 final
@@ -33,14 +42,7 @@ public:
 	class ASBZRoomVolume*                         CallFunc_GetCurrentRoom_ReturnValue;               // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_makeNoise;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_WinchAttractor_01.BP_WinchAttractor_01_C.triggerAttractor
-// 0x0001 (0x0001 - 0x0000)
-struct BP_WinchAttractor_01_C_triggerAttractor final
-{
-public:
-	bool                                          makeNoise;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_WinchAttractor_01_C_ExecuteUbergraph_BP_WinchAttractor_01;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

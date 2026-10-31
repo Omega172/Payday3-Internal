@@ -19,27 +19,27 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_ArmoredTransport_WheeledVehicle_QrReader.BP_ArmoredTransport_WheeledVehicle_QrReader_C
-// 0x0040 (0x09B0 - 0x0970)
+// 0x0040 (0x0AB0 - 0x0A70)
 class ABP_ArmoredTransport_WheeledVehicle_QrReader_C final : public ABP_ArmoredTransport_WheeledVehicle_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BP_ArmoredTransport_WheeledVehicle_QrReader_C; // 0x0968(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USceneComponent*                        hackablePanel_attachPoint_0;                       // 0x0970(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USBZIntStateComponent*                  QR_SBZIntState;                                    // 0x0978(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractableComponent*              SBZInteractable;                                   // 0x0980(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USBZOutlineComponent*                   SBZOutline;                                        // 0x0988(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   DigitalKeyLock_01;                                 // 0x0990(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void()>              OnDigitalKeyReaderComplete;                        // 0x0998(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	class ABP_HackableTabletPanel_C*              hackableTablet;                                    // 0x09A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_ArmoredTransport_WheeledVehicle_QrReader_C; // 0x0A68(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USceneComponent*                        hackablePanel_attachPoint_0;                       // 0x0A70(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZIntStateComponent*                  QR_SBZIntState;                                    // 0x0A78(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractableComponent*              SBZInteractable;                                   // 0x0A80(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZOutlineComponent*                   SBZOutline;                                        // 0x0A88(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   DigitalKeyLock_01;                                 // 0x0A90(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	TMulticastInlineDelegate<void()>              OnDigitalKeyReaderComplete;                        // 0x0A98(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	class ABP_HackableTabletPanel_C*              hackableTablet;                                    // 0x0AA8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_ArmoredTransport_WheeledVehicle_QrReader_QR_SBZIntState_K2Node_ComponentBoundEvent_1_SBZIntStateChangedSignature__DelegateSignature(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void BndEvt__BP_ArmoredTransport_WheeledVehicle_QrReader_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_ArmoredTransport_WheeledVehicle_QrReader(int32 EntryPoint);
-	void setBackDoors(ESBZVehicleDoorState doorState, bool breached);
-	void setEnabled(bool enabled);
-	void setVisibility(bool visible);
 	void UserConstructionScript();
+	void setVisibility(bool visible);
+	void setEnabled(bool enabled);
+	void setBackDoors(ESBZVehicleDoorState doorState, bool breached);
+	void ExecuteUbergraph_BP_ArmoredTransport_WheeledVehicle_QrReader(int32 EntryPoint);
+	void BndEvt__BP_ArmoredTransport_WheeledVehicle_QrReader_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_ArmoredTransport_WheeledVehicle_QrReader_QR_SBZIntState_K2Node_ComponentBoundEvent_1_SBZIntStateChangedSignature__DelegateSignature(int32 OldState, int32 NewState, bool bDoCosmetics);
 
 public:
 	static class UClass* StaticClass()
@@ -55,5 +55,6 @@ public:
 		return GetDefaultObjImpl<ABP_ArmoredTransport_WheeledVehicle_QrReader_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ArmoredTransport_WheeledVehicle_QrReader_C;
 
 SDK_NAMESPACE_END

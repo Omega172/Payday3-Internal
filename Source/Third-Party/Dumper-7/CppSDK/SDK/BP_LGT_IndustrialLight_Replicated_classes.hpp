@@ -32,10 +32,10 @@ public:
 	double                                        intensity;                                         // 0x0390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BPL_Red_WallLampIndustrial_Bulb_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
-	void ExecuteUbergraph_BP_LGT_IndustrialLight_Replicated(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
 	void UserConstructionScript();
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_LGT_IndustrialLight_Replicated(int32 EntryPoint);
+	void BndEvt__BPL_Red_WallLampIndustrial_Bulb_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 
 public:
 	static class UClass* StaticClass()
@@ -51,5 +51,6 @@ public:
 		return GetDefaultObjImpl<ABP_LGT_IndustrialLight_Replicated_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LGT_IndustrialLight_Replicated_C;
 
 SDK_NAMESPACE_END

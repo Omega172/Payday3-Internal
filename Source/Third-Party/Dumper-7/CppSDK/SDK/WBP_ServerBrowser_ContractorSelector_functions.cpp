@@ -16,105 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.UpdateSelectionCount
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_ContractorSelector_C::UpdateSelectionCount()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateSelectionCount", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.SetContractorSprite
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.ExecuteUbergraph_WBP_ServerBrowser_ContractorSelector
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// TSoftObjectPtr<class UPaperSprite>      ContractorSprite                                       (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_ContractorSelector_C::SetContractorSprite(TSoftObjectPtr<class UPaperSprite> ContractorSprite)
+void UWBP_ServerBrowser_ContractorSelector_C::ExecuteUbergraph_WBP_ServerBrowser_ContractorSelector(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetContractorSprite", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_ServerBrowser_ContractorSelector_C", "ExecuteUbergraph_WBP_ServerBrowser_ContractorSelector", FuncInfo);
 
-	Params::WBP_ServerBrowser_ContractorSelector_C_SetContractorSprite Parms{};
+	Params::WBP_ServerBrowser_ContractorSelector_C_ExecuteUbergraph_WBP_ServerBrowser_ContractorSelector Parms{};
 
-	Parms.ContractorSprite = ContractorSprite;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ServerBrowser_ContractorSelector_C::PreConstruct(bool IsDesignTime_PreConstruct)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_ServerBrowser_ContractorSelector_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.OnSelectionOptionChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   InCurrentIndex_OnSelectionOptionChanged                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bOverrideReadOnly_OnSelectionOptionChanged             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ServerBrowser_ContractorSelector_C::OnSelectionOptionChanged(int32 InCurrentIndex_OnSelectionOptionChanged, bool bOverrideReadOnly_OnSelectionOptionChanged)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSelectionOptionChanged", FnName));
-
-	Params::WBP_ServerBrowser_ContractorSelector_C_OnSelectionOptionChanged Parms{};
-
-	Parms.InCurrentIndex_OnSelectionOptionChanged = InCurrentIndex_OnSelectionOptionChanged;
-	Parms.bOverrideReadOnly_OnSelectionOptionChanged = bOverrideReadOnly_OnSelectionOptionChanged;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.OnLoaded_51F23A4943941A9E9DE1DBB426DE1827
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ServerBrowser_ContractorSelector_C::OnLoaded_51F23A4943941A9E9DE1DBB426DE1827(class UObject* Loaded)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLoaded_51F23A4943941A9E9DE1DBB426DE1827", FnName));
-
-	Params::WBP_ServerBrowser_ContractorSelector_C_OnLoaded_51F23A4943941A9E9DE1DBB426DE1827 Parms{};
-
-	Parms.Loaded = Loaded;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.OnLoaded_0B3A176146937A1A5B15A0B11F535FAF
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ServerBrowser_ContractorSelector_C::OnLoaded_0B3A176146937A1A5B15A0B11F535FAF(class UObject* Loaded)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLoaded_0B3A176146937A1A5B15A0B11F535FAF", FnName));
-
-	Params::WBP_ServerBrowser_ContractorSelector_C_OnLoaded_0B3A176146937A1A5B15A0B11F535FAF Parms{};
-
-	Parms.Loaded = Loaded;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -138,21 +52,107 @@ class FText UWBP_ServerBrowser_ContractorSelector_C::GetContractorName()
 }
 
 
-// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.ExecuteUbergraph_WBP_ServerBrowser_ContractorSelector
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.OnLoaded_0B3A176146937A1A5B15A0B11F535FAF
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_ContractorSelector_C::ExecuteUbergraph_WBP_ServerBrowser_ContractorSelector(int32 EntryPoint)
+void UWBP_ServerBrowser_ContractorSelector_C::OnLoaded_0B3A176146937A1A5B15A0B11F535FAF(class UObject* Loaded)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_ServerBrowser_ContractorSelector_C", "ExecuteUbergraph_WBP_ServerBrowser_ContractorSelector", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLoaded_0B3A176146937A1A5B15A0B11F535FAF", FnName));
 
-	Params::WBP_ServerBrowser_ContractorSelector_C_ExecuteUbergraph_WBP_ServerBrowser_ContractorSelector Parms{};
+	Params::WBP_ServerBrowser_ContractorSelector_C_OnLoaded_0B3A176146937A1A5B15A0B11F535FAF Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Loaded = Loaded;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.OnLoaded_51F23A4943941A9E9DE1DBB426DE1827
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_ContractorSelector_C::OnLoaded_51F23A4943941A9E9DE1DBB426DE1827(class UObject* Loaded)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLoaded_51F23A4943941A9E9DE1DBB426DE1827", FnName));
+
+	Params::WBP_ServerBrowser_ContractorSelector_C_OnLoaded_51F23A4943941A9E9DE1DBB426DE1827 Parms{};
+
+	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.OnSelectionOptionChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   InCurrentIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bOverrideReadOnly                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_ContractorSelector_C::OnSelectionOptionChanged(int32 InCurrentIndex, bool bOverrideReadOnly)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSelectionOptionChanged", FnName));
+
+	Params::WBP_ServerBrowser_ContractorSelector_C_OnSelectionOptionChanged Parms{};
+
+	Parms.InCurrentIndex = InCurrentIndex;
+	Parms.bOverrideReadOnly = bOverrideReadOnly;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_ContractorSelector_C::PreConstruct(bool IsDesignTime)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_ServerBrowser_ContractorSelector_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.SetContractorSprite
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TSoftObjectPtr<class UPaperSprite>      ContractorSprite                                       (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_ContractorSelector_C::SetContractorSprite(TSoftObjectPtr<class UPaperSprite> ContractorSprite)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetContractorSprite", FnName));
+
+	Params::WBP_ServerBrowser_ContractorSelector_C_SetContractorSprite Parms{};
+
+	Parms.ContractorSprite = ContractorSprite;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_ContractorSelector.WBP_ServerBrowser_ContractorSelector_C.UpdateSelectionCount
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_ServerBrowser_ContractorSelector_C::UpdateSelectionCount()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateSelectionCount", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

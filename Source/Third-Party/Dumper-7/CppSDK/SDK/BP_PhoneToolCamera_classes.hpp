@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -33,11 +33,11 @@ public:
 	struct FColor                                 Phone_Success_Color;                               // 0x0710(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_PhoneToolCamera(int32 EntryPoint);
-	void OnActivated();
-	void OnCanceled();
-	void OnReady();
 	void UserConstructionScript();
+	void OnReady();
+	void OnCanceled();
+	void OnActivated();
+	void ExecuteUbergraph_BP_PhoneToolCamera(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -53,5 +53,6 @@ public:
 		return GetDefaultObjImpl<ABP_PhoneToolCamera_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PhoneToolCamera_C;
 
 SDK_NAMESPACE_END

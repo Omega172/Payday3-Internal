@@ -17,6 +17,26 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_Club_Spotlights.BP_Club_Spotlights_C.UserConstructionScript
+// 0x000C (0x000C - 0x0000)
+struct BP_Club_Spotlights_C_UserConstructionScript final
+{
+public:
+	float                                         CallFunc_SetVolumetricScatteringIntensity_NewIntensity_ImplicitCast; // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetAttenuationRadius_NewRadius_ImplicitCast; // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetIntensity_NewIntensity_ImplicitCast;   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Club_Spotlights_C_UserConstructionScript;
+
+// Function BP_Club_Spotlights.BP_Club_Spotlights_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_Club_Spotlights_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds_ReceiveTick;                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Club_Spotlights_C_ReceiveTick;
+
 // Function BP_Club_Spotlights.BP_Club_Spotlights_C.ExecuteUbergraph_BP_Club_Spotlights
 // 0x0280 (0x0280 - 0x0000)
 struct BP_Club_Spotlights_C_ExecuteUbergraph_BP_Club_Spotlights final
@@ -61,24 +81,7 @@ public:
 	float                                         CallFunc_SetAttenuationRadius_NewRadius_ImplicitCast; // 0x0274(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetVolumetricScatteringIntensity_NewIntensity_ImplicitCast; // 0x0278(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_Club_Spotlights.BP_Club_Spotlights_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_Club_Spotlights_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_Club_Spotlights.BP_Club_Spotlights_C.UserConstructionScript
-// 0x000C (0x000C - 0x0000)
-struct BP_Club_Spotlights_C_UserConstructionScript final
-{
-public:
-	float                                         CallFunc_SetVolumetricScatteringIntensity_NewIntensity_ImplicitCast; // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetAttenuationRadius_NewRadius_ImplicitCast; // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetIntensity_NewIntensity_ImplicitCast;   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_Club_Spotlights_C_ExecuteUbergraph_BP_Club_Spotlights;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

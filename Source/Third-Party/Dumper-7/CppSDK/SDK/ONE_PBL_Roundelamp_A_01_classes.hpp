@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<AONE_PBL_Roundelamp_A_01_C>();
 	}
 };
+DUMPER7_ASSERTS_AONE_PBL_Roundelamp_A_01_C;
 
 SDK_NAMESPACE_END

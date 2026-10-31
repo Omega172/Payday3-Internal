@@ -16,41 +16,31 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_Menu_2.WBP_Menu_2_C.ExecuteUbergraph_WBP_Menu_2
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Menu_2.WBP_Menu_2_C.SetButtonGreyedOut
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_Menu_2_C::ExecuteUbergraph_WBP_Menu_2(int32 EntryPoint)
+void UWBP_Menu_2_C::SetButtonGreyedOut()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetButtonGreyedOut", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_2_C", "ExecuteUbergraph_WBP_Menu_2");
-
-	Params::WBP_Menu_2_C_ExecuteUbergraph_WBP_Menu_2 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Menu_2.WBP_Menu_2_C.SetBackFocus
+// Function WBP_Menu_2.WBP_Menu_2_C.SetButtonFocus
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    Condition                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Menu_2_C::SetBackFocus(bool NewParam)
+void UWBP_Menu_2_C::SetButtonFocus(bool Condition)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetButtonFocus", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_2_C", "SetBackFocus");
+	Params::WBP_Menu_2_C_SetButtonFocus Parms{};
 
-	Params::WBP_Menu_2_C_SetBackFocus Parms{};
-
-	Parms.NewParam = NewParam;
+	Parms.Condition = Condition;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -64,10 +54,8 @@ void UWBP_Menu_2_C::SetBackFocus(bool NewParam)
 
 void UWBP_Menu_2_C::SetButton_Text(const class FString& ButtonInfoText, const class FString& ButtonText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_2_C", "SetButton&Text");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetButton&Text", FnName));
 
 	Params::WBP_Menu_2_C_SetButton_Text Parms{};
 
@@ -78,37 +66,39 @@ void UWBP_Menu_2_C::SetButton_Text(const class FString& ButtonInfoText, const cl
 }
 
 
-// Function WBP_Menu_2.WBP_Menu_2_C.SetButtonFocus
+// Function WBP_Menu_2.WBP_Menu_2_C.SetBackFocus
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Condition                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Menu_2_C::SetButtonFocus(bool Condition)
+void UWBP_Menu_2_C::SetBackFocus(bool NewParam)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetBackFocus", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_2_C", "SetButtonFocus");
+	Params::WBP_Menu_2_C_SetBackFocus Parms{};
 
-	Params::WBP_Menu_2_C_SetButtonFocus Parms{};
-
-	Parms.Condition = Condition;
+	Parms.NewParam = NewParam;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Menu_2.WBP_Menu_2_C.SetButtonGreyedOut
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Menu_2.WBP_Menu_2_C.ExecuteUbergraph_WBP_Menu_2
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Menu_2_C::SetButtonGreyedOut()
+void UWBP_Menu_2_C::ExecuteUbergraph_WBP_Menu_2(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_Menu_2_C", "ExecuteUbergraph_WBP_Menu_2", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_2_C", "SetButtonGreyedOut");
+	Params::WBP_Menu_2_C_ExecuteUbergraph_WBP_Menu_2 Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

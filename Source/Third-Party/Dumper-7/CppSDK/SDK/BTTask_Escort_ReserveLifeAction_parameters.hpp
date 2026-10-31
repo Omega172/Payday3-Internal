@@ -17,6 +17,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BTTask_Escort_ReserveLifeAction.BTTask_Escort_ReserveLifeAction_C.ReceiveExecute
+// 0x0008 (0x0008 - 0x0000)
+struct BTTask_Escort_ReserveLifeAction_C_ReceiveExecute final
+{
+public:
+	class AActor*                                 OwnerActor_ReceiveExecute;                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BTTask_Escort_ReserveLifeAction_C_ReceiveExecute;
+
 // Function BTTask_Escort_ReserveLifeAction.BTTask_Escort_ReserveLifeAction_C.ExecuteUbergraph_BTTask_Escort_ReserveLifeAction
 // 0x0180 (0x0180 - 0x0000)
 struct BTTask_Escort_ReserveLifeAction_C_ExecuteUbergraph_BTTask_Escort_ReserveLifeAction final
@@ -54,14 +63,7 @@ public:
 	struct FRotator                               CallFunc_BreakTransform_Rotation;                  // 0x0150(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_BreakTransform_Scale;                     // 0x0168(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BTTask_Escort_ReserveLifeAction.BTTask_Escort_ReserveLifeAction_C.ReceiveExecute
-// 0x0008 (0x0008 - 0x0000)
-struct BTTask_Escort_ReserveLifeAction_C_ReceiveExecute final
-{
-public:
-	class AActor*                                 OwnerActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BTTask_Escort_ReserveLifeAction_C_ExecuteUbergraph_BTTask_Escort_ReserveLifeAction;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AVFX_Sky_C>();
 	}
 };
+DUMPER7_ASSERTS_AVFX_Sky_C;
 
 SDK_NAMESPACE_END

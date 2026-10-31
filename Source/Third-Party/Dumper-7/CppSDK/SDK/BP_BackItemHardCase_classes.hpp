@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_BackItemHardCase_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BackItemHardCase_C;
 
 SDK_NAMESPACE_END

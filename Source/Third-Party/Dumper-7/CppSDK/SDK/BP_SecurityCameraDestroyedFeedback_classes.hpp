@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UBP_SecurityCameraDestroyedFeedback_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_SecurityCameraDestroyedFeedback_C;
 
 SDK_NAMESPACE_END

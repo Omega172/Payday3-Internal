@@ -16,6 +16,18 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_LifeActionSpawnerProxy.BP_LifeActionSpawnerProxy_C.RegisterSpawner
+// 0x0010 (0x0010 - 0x0000)
+struct BP_LifeActionSpawnerProxy_C_RegisterSpawner final
+{
+public:
+	class ABP_LifeActionSpawner_Base_C*           Spawner;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LifeActionSpawnerProxy_C_RegisterSpawner;
+
 // Function BP_LifeActionSpawnerProxy.BP_LifeActionSpawnerProxy_C.AssignEventTagAction
 // 0x0040 (0x0040 - 0x0000)
 struct BP_LifeActionSpawnerProxy_C_AssignEventTagAction final
@@ -33,17 +45,7 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_LifeActionSpawnerProxy.BP_LifeActionSpawnerProxy_C.RegisterSpawner
-// 0x0010 (0x0010 - 0x0000)
-struct BP_LifeActionSpawnerProxy_C_RegisterSpawner final
-{
-public:
-	class ABP_LifeActionSpawner_Base_C*           Spawner;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_LifeActionSpawnerProxy_C_AssignEventTagAction;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

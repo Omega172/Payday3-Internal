@@ -34,13 +34,13 @@ public:
 	bool                                          AtStartpoint;                                      // 0x03C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_ReplicatedBinaryActor2_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_ReplicatedBinaryActor_Forklift(int32 EntryPoint);
-	void OnRep_AtEndpoint();
-	void OnRep_AtStartpoint();
-	void OnRep_ForkRaised();
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
 	void OnRep_Idle_at_Spawn();
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
+	void OnRep_ForkRaised();
+	void OnRep_AtStartpoint();
+	void OnRep_AtEndpoint();
+	void ExecuteUbergraph_BP_ReplicatedBinaryActor_Forklift(int32 EntryPoint);
+	void BndEvt__BP_ReplicatedBinaryActor2_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -56,5 +56,6 @@ public:
 		return GetDefaultObjImpl<ABP_ReplicatedBinaryActor_Forklift_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ReplicatedBinaryActor_Forklift_C;
 
 SDK_NAMESPACE_END

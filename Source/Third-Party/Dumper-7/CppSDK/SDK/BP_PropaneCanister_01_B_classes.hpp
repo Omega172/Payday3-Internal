@@ -27,9 +27,9 @@ public:
 	bool                                          bIsLongCanister_;                                  // 0x0540(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature(class UActorComponent* Component, bool bReset);
-	void ExecuteUbergraph_BP_PropaneCanister_01_B(int32 EntryPoint);
 	void UserConstructionScript();
+	void ExecuteUbergraph_BP_PropaneCanister_01_B(int32 EntryPoint);
+	void BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature(class UActorComponent* Component, bool bReset);
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<ABP_PropaneCanister_01_B_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PropaneCanister_01_B_C;
 
 SDK_NAMESPACE_END

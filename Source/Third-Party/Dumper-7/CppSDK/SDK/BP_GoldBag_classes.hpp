@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_GoldBag_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_GoldBag_C;
 
 SDK_NAMESPACE_END

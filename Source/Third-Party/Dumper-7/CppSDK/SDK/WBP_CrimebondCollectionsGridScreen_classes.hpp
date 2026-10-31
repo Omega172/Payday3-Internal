@@ -40,17 +40,17 @@ public:
 	bool                                          ShouldShowInfo;                                    // 0x0481(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UpdateControlReferences();
-	void UpdateAction(class USBZBundleItemDecorator* InDecorator);
-	void OnLostStackFocused();
-	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
-	void OnControlReferencedPressed(class FName ActionName);
-	void ExecuteUbergraph_WBP_CrimebondCollectionsGridScreen(int32 EntryPoint);
-	void BP_OnDecoSelected(class USBZBundleItemDecorator* Deco_BP_OnDecoSelected);
-	void BP_OnBundleApplied(const class USBZItemBundleData* InBundleData_BP_OnBundleApplied);
-	void BP_OnBuildTabs(const TArray<class FName>& BundleNames_BP_OnBuildTabs, class FName FocusedBundle_BP_OnBuildTabs);
-	void BndEvt__WBP_CrimebondCollectionsGridScreen_PurchaseCrimebond_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
 	void BndEvt__WBP_CrimebondBundleGridScreen_BundleTabs_LocalNavbar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature(int32 NewIndex);
+	void BndEvt__WBP_CrimebondCollectionsGridScreen_PurchaseCrimebond_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	void BP_OnBuildTabs(const TArray<class FName>& BundleNames, class FName FocusedBundle);
+	void BP_OnBundleApplied(const class USBZItemBundleData* InBundleData);
+	void BP_OnDecoSelected(class USBZBundleItemDecorator* Deco);
+	void ExecuteUbergraph_WBP_CrimebondCollectionsGridScreen(int32 EntryPoint);
+	void OnControlReferencedPressed(class FName ActionName);
+	void OnGainedStackFocused(const class FName& PreviousValue);
+	void OnLostStackFocused();
+	void UpdateAction(class USBZBundleItemDecorator* InDecorator);
+	void UpdateControlReferences();
 
 public:
 	static class UClass* StaticClass()

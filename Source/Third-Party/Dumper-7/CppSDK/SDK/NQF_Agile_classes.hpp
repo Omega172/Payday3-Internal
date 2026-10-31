@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UNQF_Agile_C>();
 	}
 };
+DUMPER7_ASSERTS_UNQF_Agile_C;
 
 SDK_NAMESPACE_END

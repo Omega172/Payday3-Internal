@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AE_ArtGallery_Ext_Street_Floor_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_ArtGallery_Ext_Street_Floor_C;
 
 SDK_NAMESPACE_END

@@ -16,26 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_HackingZoneControllerRunning.WBP_HackingZoneControllerRunning_C.ExecuteUbergraph_WBP_HackingZoneControllerRunning
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_HackingZoneControllerRunning_C::ExecuteUbergraph_WBP_HackingZoneControllerRunning(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HackingZoneControllerRunning_C", "ExecuteUbergraph_WBP_HackingZoneControllerRunning");
-
-	Params::WBP_HackingZoneControllerRunning_C_ExecuteUbergraph_WBP_HackingZoneControllerRunning Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_HackingZoneControllerRunning.WBP_HackingZoneControllerRunning_C.setText
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -43,14 +23,30 @@ void UWBP_HackingZoneControllerRunning_C::ExecuteUbergraph_WBP_HackingZoneContro
 
 void UWBP_HackingZoneControllerRunning_C::setText(const class FText& InText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_HackingZoneControllerRunning_C", "setText");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setText", FnName));
 
 	Params::WBP_HackingZoneControllerRunning_C_setText Parms{};
 
 	Parms.InText = std::move(InText);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_HackingZoneControllerRunning.WBP_HackingZoneControllerRunning_C.ExecuteUbergraph_WBP_HackingZoneControllerRunning
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_HackingZoneControllerRunning_C::ExecuteUbergraph_WBP_HackingZoneControllerRunning(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_HackingZoneControllerRunning_C", "ExecuteUbergraph_WBP_HackingZoneControllerRunning", FuncInfo);
+
+	Params::WBP_HackingZoneControllerRunning_C_ExecuteUbergraph_WBP_HackingZoneControllerRunning Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

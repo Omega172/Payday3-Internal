@@ -16,21 +16,37 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_BaseShutterDisplayCase.BP_BaseShutterDisplayCase_C.BP_OnGlassBroken
-// (Event, Protected, BlueprintEvent)
+// Function BP_BaseShutterDisplayCase.BP_BaseShutterDisplayCase_C.ExecuteUbergraph_BP_BaseShutterDisplayCase
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BaseShutterDisplayCase_C::BP_OnGlassBroken(bool bDoCosmetics)
+void ABP_BaseShutterDisplayCase_C::ExecuteUbergraph_BP_BaseShutterDisplayCase(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_BaseShutterDisplayCase_C", "ExecuteUbergraph_BP_BaseShutterDisplayCase", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseShutterDisplayCase_C", "BP_OnGlassBroken");
+	Params::BP_BaseShutterDisplayCase_C_ExecuteUbergraph_BP_BaseShutterDisplayCase Parms{};
 
-	Params::BP_BaseShutterDisplayCase_C_BP_OnGlassBroken Parms{};
+	Parms.EntryPoint = EntryPoint;
 
-	Parms.bDoCosmetics = bDoCosmetics;
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BaseShutterDisplayCase.BP_BaseShutterDisplayCase_C.EnableShutter
+// (Protected, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bInEnable                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BaseShutterDisplayCase_C::EnableShutter(bool bInEnable)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EnableShutter", FnName));
+
+	Params::BP_BaseShutterDisplayCase_C_EnableShutter Parms{};
+
+	Parms.bInEnable = bInEnable;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -45,10 +61,8 @@ void ABP_BaseShutterDisplayCase_C::BP_OnGlassBroken(bool bDoCosmetics)
 
 void ABP_BaseShutterDisplayCase_C::BP_OnStateChanged(ESBZDisplayCaseState OldState, ESBZDisplayCaseState NewState, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseShutterDisplayCase_C", "BP_OnStateChanged");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnStateChanged", FnName));
 
 	Params::BP_BaseShutterDisplayCase_C_BP_OnStateChanged Parms{};
 
@@ -60,41 +74,19 @@ void ABP_BaseShutterDisplayCase_C::BP_OnStateChanged(ESBZDisplayCaseState OldSta
 }
 
 
-// Function BP_BaseShutterDisplayCase.BP_BaseShutterDisplayCase_C.EnableShutter
-// (Protected, BlueprintCallable, BlueprintEvent)
+// Function BP_BaseShutterDisplayCase.BP_BaseShutterDisplayCase_C.BP_OnGlassBroken
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bInEnable                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BaseShutterDisplayCase_C::EnableShutter(bool bInEnable)
+void ABP_BaseShutterDisplayCase_C::BP_OnGlassBroken(bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnGlassBroken", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseShutterDisplayCase_C", "EnableShutter");
+	Params::BP_BaseShutterDisplayCase_C_BP_OnGlassBroken Parms{};
 
-	Params::BP_BaseShutterDisplayCase_C_EnableShutter Parms{};
-
-	Parms.bInEnable = bInEnable;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BaseShutterDisplayCase.BP_BaseShutterDisplayCase_C.ExecuteUbergraph_BP_BaseShutterDisplayCase
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BaseShutterDisplayCase_C::ExecuteUbergraph_BP_BaseShutterDisplayCase(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseShutterDisplayCase_C", "ExecuteUbergraph_BP_BaseShutterDisplayCase");
-
-	Params::BP_BaseShutterDisplayCase_C_ExecuteUbergraph_BP_BaseShutterDisplayCase Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.bDoCosmetics = bDoCosmetics;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

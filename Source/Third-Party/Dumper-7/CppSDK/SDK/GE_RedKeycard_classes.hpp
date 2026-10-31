@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_RedKeycard_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_RedKeycard_C;
 
 SDK_NAMESPACE_END

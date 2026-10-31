@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UCS_ThePunch_Enraged_C>();
 	}
 };
+DUMPER7_ASSERTS_UCS_ThePunch_Enraged_C;
 
 SDK_NAMESPACE_END

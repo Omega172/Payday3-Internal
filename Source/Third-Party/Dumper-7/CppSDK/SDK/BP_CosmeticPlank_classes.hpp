@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_CosmeticPlank_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CosmeticPlank_C;
 
 SDK_NAMESPACE_END

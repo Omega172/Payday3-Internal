@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<APharaoh_Mockup_C>();
 	}
 };
+DUMPER7_ASSERTS_APharaoh_Mockup_C;
 
 SDK_NAMESPACE_END

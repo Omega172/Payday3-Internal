@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGA_Place_TripperLaser_C>();
 	}
 };
+DUMPER7_ASSERTS_UGA_Place_TripperLaser_C;
 
 SDK_NAMESPACE_END

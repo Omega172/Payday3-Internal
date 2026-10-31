@@ -16,24 +16,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_Smoke_Screen.BP_Smoke_Screen_C.ExecuteUbergraph_BP_Smoke_Screen
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Smoke_Screen_C_ExecuteUbergraph_BP_Smoke_Screen final
+// Function BP_Smoke_Screen.BP_Smoke_Screen_C.Stop_Sound
+// 0x0018 (0x0018 - 0x0000)
+struct BP_Smoke_Screen_C_Stop_Sound final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bSetActive;                           // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bDoCosmetics;                         // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable; // 0x0000(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_PostAkEvent_ReturnValue;                  // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_Smoke_Screen.BP_Smoke_Screen_C.OnActiveStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_Smoke_Screen_C_OnActiveStateChanged final
-{
-public:
-	bool                                          bSetActive;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_Smoke_Screen_C_Stop_Sound;
 
 // Function BP_Smoke_Screen.BP_Smoke_Screen_C.Play_Sound
 // 0x0018 (0x0018 - 0x0000)
@@ -43,15 +34,28 @@ public:
 	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable; // 0x0000(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_PostAkEvent_ReturnValue;                  // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Smoke_Screen_C_Play_Sound;
 
-// Function BP_Smoke_Screen.BP_Smoke_Screen_C.Stop_Sound
-// 0x0018 (0x0018 - 0x0000)
-struct BP_Smoke_Screen_C_Stop_Sound final
+// Function BP_Smoke_Screen.BP_Smoke_Screen_C.OnActiveStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_Smoke_Screen_C_OnActiveStateChanged final
 {
 public:
-	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable; // 0x0000(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_PostAkEvent_ReturnValue;                  // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bSetActive_OnActiveStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnActiveStateChanged;                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Smoke_Screen_C_OnActiveStateChanged;
+
+// Function BP_Smoke_Screen.BP_Smoke_Screen_C.ExecuteUbergraph_BP_Smoke_Screen
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Smoke_Screen_C_ExecuteUbergraph_BP_Smoke_Screen final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bSetActive;                           // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bDoCosmetics;                         // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Smoke_Screen_C_ExecuteUbergraph_BP_Smoke_Screen;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

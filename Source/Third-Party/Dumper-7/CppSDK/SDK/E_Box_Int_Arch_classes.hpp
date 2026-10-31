@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AE_Box_Int_Arch_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_Box_Int_Arch_C;
 
 SDK_NAMESPACE_END

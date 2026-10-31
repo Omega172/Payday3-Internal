@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ASnGBB_C>();
 	}
 };
+DUMPER7_ASSERTS_ASnGBB_C;
 
 SDK_NAMESPACE_END

@@ -33,9 +33,9 @@ public:
 	bool                                          TriggerOnExit;                                     // 0x0359(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_AudioTrigger_Base(int32 EntryPoint);
-	void ReceiveActorBeginOverlap(class AActor* OtherActor);
 	void ReceiveActorEndOverlap(class AActor* OtherActor);
+	void ReceiveActorBeginOverlap(class AActor* OtherActor);
+	void ExecuteUbergraph_BP_AudioTrigger_Base(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -51,5 +51,6 @@ public:
 		return GetDefaultObjImpl<ABP_AudioTrigger_Base_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_AudioTrigger_Base_C;
 
 SDK_NAMESPACE_END

@@ -16,35 +16,23 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_MenuStart.WBP_MenuStart_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_MenuStart_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MenuStart_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_MenuStart.WBP_MenuStart_C.ExecuteUbergraph_WBP_MenuStart
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_MenuStart.WBP_MenuStart_C.SetMenuText
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      Menu1                                                  (BlueprintVisible, BlueprintReadOnly, Parm)
+// const class FText&                      Menu2                                                  (BlueprintVisible, BlueprintReadOnly, Parm)
+// const class FText&                      Menu3                                                  (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_MenuStart_C::ExecuteUbergraph_WBP_MenuStart(int32 EntryPoint)
+void UWBP_MenuStart_C::SetMenuText(const class FText& Menu1, const class FText& Menu2, const class FText& Menu3)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetMenuText", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MenuStart_C", "ExecuteUbergraph_WBP_MenuStart");
+	Params::WBP_MenuStart_C_SetMenuText Parms{};
 
-	Params::WBP_MenuStart_C_ExecuteUbergraph_WBP_MenuStart Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Menu1 = std::move(Menu1);
+	Parms.Menu2 = std::move(Menu2);
+	Parms.Menu3 = std::move(Menu3);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -58,10 +46,8 @@ void UWBP_MenuStart_C::ExecuteUbergraph_WBP_MenuStart(int32 EntryPoint)
 
 void UWBP_MenuStart_C::SetFocusOn(int32 Selection, bool NewParam)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MenuStart_C", "SetFocusOn");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetFocusOn", FnName));
 
 	Params::WBP_MenuStart_C_SetFocusOn Parms{};
 
@@ -72,27 +58,33 @@ void UWBP_MenuStart_C::SetFocusOn(int32 Selection, bool NewParam)
 }
 
 
-// Function WBP_MenuStart.WBP_MenuStart_C.SetMenuText
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_MenuStart.WBP_MenuStart_C.ExecuteUbergraph_WBP_MenuStart
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// const class FText&                      Menu1                                                  (BlueprintVisible, BlueprintReadOnly, Parm)
-// const class FText&                      Menu2                                                  (BlueprintVisible, BlueprintReadOnly, Parm)
-// const class FText&                      Menu3                                                  (BlueprintVisible, BlueprintReadOnly, Parm)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MenuStart_C::SetMenuText(const class FText& Menu1, const class FText& Menu2, const class FText& Menu3)
+void UWBP_MenuStart_C::ExecuteUbergraph_WBP_MenuStart(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_MenuStart_C", "ExecuteUbergraph_WBP_MenuStart", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MenuStart_C", "SetMenuText");
+	Params::WBP_MenuStart_C_ExecuteUbergraph_WBP_MenuStart Parms{};
 
-	Params::WBP_MenuStart_C_SetMenuText Parms{};
-
-	Parms.Menu1 = std::move(Menu1);
-	Parms.Menu2 = std::move(Menu2);
-	Parms.Menu3 = std::move(Menu3);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MenuStart.WBP_MenuStart_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_MenuStart_C::Construct()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

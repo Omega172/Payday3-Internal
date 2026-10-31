@@ -37,11 +37,11 @@ public:
 	bool                                          binaryReactorState;                                // 0x03B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_One_Step_Animated_Button_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_One_Step_Animated_Button_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_One_Step_Animated_Button(int32 EntryPoint);
-	void setBinaryState(bool state, bool doCosmetics);
 	void UserConstructionScript();
+	void setBinaryState(bool state, bool doCosmetics);
+	void ExecuteUbergraph_BP_One_Step_Animated_Button(int32 EntryPoint);
+	void BndEvt__BP_One_Step_Animated_Button_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_One_Step_Animated_Button_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -57,5 +57,6 @@ public:
 		return GetDefaultObjImpl<ABP_One_Step_Animated_Button_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_One_Step_Animated_Button_C;
 
 SDK_NAMESPACE_END

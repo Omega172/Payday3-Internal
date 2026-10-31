@@ -18,27 +18,27 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_PoliceHelicopter_Sniper.BP_PoliceHelicopter_Sniper_C
-// 0x0040 (0x07F0 - 0x07B0)
+// 0x0040 (0x0940 - 0x0900)
 class ABP_PoliceHelicopter_Sniper_C final : public ABP_BaseHelicopter_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BP_PoliceHelicopter_Sniper_C;       // 0x07A8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USBZVehicleSpawnComponent*              SBZVehicleSpawn;                                   // 0x07B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   SpawnGroupChildComp;                               // 0x07B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   Spawner4;                                          // 0x07C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class ASBZAICharacter*                        SniperCharacter;                                   // 0x07C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class USBZVariationSetData*                   VariationData;                                     // 0x07D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class FName                                   AttachSocket;                                      // 0x07D8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_PoliceHelicopter_Sniper_C;       // 0x0900(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USBZVehicleSpawnComponent*              SBZVehicleSpawn;                                   // 0x0908(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   SpawnGroupChildComp;                               // 0x0910(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   Spawner4;                                          // 0x0918(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class ASBZAICharacter*                        SniperCharacter;                                   // 0x0920(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class USBZVariationSetData*                   VariationData;                                     // 0x0928(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class FName                                   AttachSocket;                                      // 0x0930(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_PoliceHelicopter_Sniper(int32 EntryPoint);
-	void GetAttachementSocket(class FName* Socket);
-	void OnDestroyed_Event_0(class AActor* DestroyedActor);
-	void OnHeistStateChanged_Event_0(EPD3HeistState OldState, EPD3HeistState NewState);
-	void OnPawnSpawnedBP(class APD3PawnSpawnGroup* SpawnGroup, class ASBZPawnSpawnBase* Spawner, class APawn* Pawn);
-	void ReceiveBeginPlay();
+	void ReceiveOnDoorStateChanged(ESBZAerialVehicleDoor Door_ReceiveOnDoorStateChanged, bool bIsDoorOpen_ReceiveOnDoorStateChanged);
 	void ReceiveDestroyed();
-	void ReceiveOnDoorStateChanged(ESBZAerialVehicleDoor Door, bool bIsDoorOpen);
+	void ReceiveBeginPlay();
+	void OnPawnSpawnedBP(class APD3PawnSpawnGroup* SpawnGroup, class ASBZPawnSpawnBase* Spawner, class APawn* Pawn);
+	void OnHeistStateChanged_Event_0(EPD3HeistState OldState, EPD3HeistState NewState);
+	void OnDestroyed_Event_0(class AActor* DestroyedActor);
+	void GetAttachementSocket(class FName* Socket);
+	void ExecuteUbergraph_BP_PoliceHelicopter_Sniper(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -54,5 +54,6 @@ public:
 		return GetDefaultObjImpl<ABP_PoliceHelicopter_Sniper_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PoliceHelicopter_Sniper_C;
 
 SDK_NAMESPACE_END

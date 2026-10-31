@@ -16,26 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_InteractableBreachableDoor.BP_InteractableBreachableDoor_C.setBreachedMeshVisibility
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    breached_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_InteractableBreachableDoor_C::setBreachedMeshVisibility(bool breached_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InteractableBreachableDoor_C", "setBreachedMeshVisibility");
-
-	Params::BP_InteractableBreachableDoor_C_setBreachedMeshVisibility Parms{};
-
-	Parms.breached_0 = breached_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_InteractableBreachableDoor.BP_InteractableBreachableDoor_C.ExecuteUbergraph_BP_InteractableBreachableDoor
 // (Final, UbergraphFunction)
 // Parameters:
@@ -43,14 +23,30 @@ void ABP_InteractableBreachableDoor_C::setBreachedMeshVisibility(bool breached_0
 
 void ABP_InteractableBreachableDoor_C::ExecuteUbergraph_BP_InteractableBreachableDoor(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InteractableBreachableDoor_C", "ExecuteUbergraph_BP_InteractableBreachableDoor");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_InteractableBreachableDoor_C", "ExecuteUbergraph_BP_InteractableBreachableDoor", FuncInfo);
 
 	Params::BP_InteractableBreachableDoor_C_ExecuteUbergraph_BP_InteractableBreachableDoor Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_InteractableBreachableDoor.BP_InteractableBreachableDoor_C.setBreachedMeshVisibility
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    breached_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_InteractableBreachableDoor_C::setBreachedMeshVisibility(bool breached_0)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setBreachedMeshVisibility", FnName));
+
+	Params::BP_InteractableBreachableDoor_C_setBreachedMeshVisibility Parms{};
+
+	Parms.breached_0 = breached_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

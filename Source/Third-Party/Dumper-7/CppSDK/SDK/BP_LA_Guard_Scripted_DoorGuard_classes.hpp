@@ -34,9 +34,9 @@ public:
 	TArray<class AActor*>                         OverlappingActors;                                 // 0x0378(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate)
 
 public:
-	void BndEvt__BP_LA_Guard_Scripted_DoorGuard_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
-	void BndEvt__BP_LA_Guard_Scripted_DoorGuard_ExitTrigger_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 	void ExecuteUbergraph_BP_LA_Guard_Scripted_DoorGuard(int32 EntryPoint);
+	void BndEvt__BP_LA_Guard_Scripted_DoorGuard_ExitTrigger_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+	void BndEvt__BP_LA_Guard_Scripted_DoorGuard_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 
 public:
 	static class UClass* StaticClass()
@@ -52,5 +52,6 @@ public:
 		return GetDefaultObjImpl<ABP_LA_Guard_Scripted_DoorGuard_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LA_Guard_Scripted_DoorGuard_C;
 
 SDK_NAMESPACE_END

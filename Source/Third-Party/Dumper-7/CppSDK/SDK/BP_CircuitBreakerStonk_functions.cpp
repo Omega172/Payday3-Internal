@@ -16,57 +16,377 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.Active
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_CircuitBreakerStonk_C::Active()
+void ABP_CircuitBreakerStonk_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "Active");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BndEvt__BP_CircuitBreakerStonk_SBZBinaryState_K2Node_ComponentBoundEvent_7_SBZBinaryStateChangedSignature__DelegateSignature
-// (BlueprintEvent)
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.UpdateIdentifier
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bState                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      InIdentifier_UpdateIdentifier                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void ABP_CircuitBreakerStonk_C::BndEvt__BP_CircuitBreakerStonk_SBZBinaryState_K2Node_ComponentBoundEvent_7_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics)
+void ABP_CircuitBreakerStonk_C::UpdateIdentifier(const class FText& InIdentifier_UpdateIdentifier)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateIdentifier", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "BndEvt__BP_CircuitBreakerStonk_SBZBinaryState_K2Node_ComponentBoundEvent_7_SBZBinaryStateChangedSignature__DelegateSignature");
+	Params::BP_CircuitBreakerStonk_C_UpdateIdentifier Parms{};
 
-	Params::BP_CircuitBreakerStonk_C_BndEvt__BP_CircuitBreakerStonk_SBZBinaryState_K2Node_ComponentBoundEvent_7_SBZBinaryStateChangedSignature__DelegateSignature Parms{};
-
-	Parms.bState = bState;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.InIdentifier_UpdateIdentifier = std::move(InIdentifier_UpdateIdentifier);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.UpdateCodeViewer
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const TArray<int32>&                    GeneratedCodes_UpdateCodeViewer                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const int32                             TrueCodeIndex_UpdateCodeViewer                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_CircuitBreakerStonk_C::UpdateCodeViewer(const TArray<int32>& GeneratedCodes_UpdateCodeViewer, const int32 TrueCodeIndex_UpdateCodeViewer)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateCodeViewer", FnName));
+
+	Params::BP_CircuitBreakerStonk_C_UpdateCodeViewer Parms{};
+
+	Parms.GeneratedCodes_UpdateCodeViewer = std::move(GeneratedCodes_UpdateCodeViewer);
+	Parms.TrueCodeIndex_UpdateCodeViewer = TrueCodeIndex_UpdateCodeViewer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.Unlocked
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_CircuitBreakerStonk_C::Unlocked()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Unlocked", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.turnScreenOff
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_CircuitBreakerStonk_C::turnScreenOff()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"turnScreenOff", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.ShowMarker
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_CircuitBreakerStonk_C::ShowMarker()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ShowMarker", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.setInteraction
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_CircuitBreakerStonk_C::setInteraction(bool enabled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setInteraction", FnName));
+
+	Params::BP_CircuitBreakerStonk_C_setInteraction Parms{};
+
+	Parms.enabled = enabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.Sabotaged
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_CircuitBreakerStonk_C::Sabotaged()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Sabotaged", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.RemoveMarker
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_CircuitBreakerStonk_C::RemoveMarker()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RemoveMarker", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_CircuitBreakerStonk_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.InteractionHatch
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Enable                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_CircuitBreakerStonk_C::InteractionHatch(bool Enable)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InteractionHatch", FnName));
+
+	Params::BP_CircuitBreakerStonk_C_InteractionHatch Parms{};
+
+	Parms.Enable = Enable;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.Innactive
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_CircuitBreakerStonk_C::Innactive()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Innactive", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.HackingTimer
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      Process_Text                                           (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void ABP_CircuitBreakerStonk_C::HackingTimer(const class FText& Process_Text)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HackingTimer", FnName));
+
+	Params::BP_CircuitBreakerStonk_C_HackingTimer Parms{};
+
+	Parms.Process_Text = std::move(Process_Text);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.HackingProgress
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Progression                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_CircuitBreakerStonk_C::HackingProgress(int32 Progression)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HackingProgress", FnName));
+
+	Params::BP_CircuitBreakerStonk_C_HackingProgress Parms{};
+
+	Parms.Progression = Progression;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.Hacking
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_CircuitBreakerStonk_C::Hacking()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Hacking", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.GetMarkerText
+// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FText                             ReturnValue_GetMarkerText                              (Parm, OutParm, ReturnParm)
+
+class FText ABP_CircuitBreakerStonk_C::GetMarkerText()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetMarkerText", FnName));
+
+	Params::BP_CircuitBreakerStonk_C_GetMarkerText Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.GainAcccess
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_CircuitBreakerStonk_C::GainAcccess()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GainAcccess", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.ExecuteUbergraph_BP_CircuitBreakerStonk
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_CircuitBreakerStonk_C::ExecuteUbergraph_BP_CircuitBreakerStonk(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_CircuitBreakerStonk_C", "ExecuteUbergraph_BP_CircuitBreakerStonk", FuncInfo);
+
+	Params::BP_CircuitBreakerStonk_C_ExecuteUbergraph_BP_CircuitBreakerStonk Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.DoorOpen__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_CircuitBreakerStonk_C::DoorOpen__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DoorOpen__UpdateFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.DoorOpen__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_CircuitBreakerStonk_C::DoorOpen__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DoorOpen__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BP_UpdateProgressBar
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   ProgressDone_BP_UpdateProgressBar                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_CircuitBreakerStonk_C::BP_UpdateProgressBar(int32 ProgressDone_BP_UpdateProgressBar)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_UpdateProgressBar", FnName));
+
+	Params::BP_CircuitBreakerStonk_C_BP_UpdateProgressBar Parms{};
+
+	Parms.ProgressDone_BP_UpdateProgressBar = ProgressDone_BP_UpdateProgressBar;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BP_OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZHackableActorState                  OldState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZHackableActorState                  NewState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_CircuitBreakerStonk_C::BP_OnStateChanged(ESBZHackableActorState OldState_BP_OnStateChanged, ESBZHackableActorState NewState_BP_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnStateChanged", FnName));
+
+	Params::BP_CircuitBreakerStonk_C_BP_OnStateChanged Parms{};
+
+	Parms.OldState_BP_OnStateChanged = OldState_BP_OnStateChanged;
+	Parms.NewState_BP_OnStateChanged = NewState_BP_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BP_OnHackingStarted
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FText&                      ProcessText_BP_OnHackingStarted                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void ABP_CircuitBreakerStonk_C::BP_OnHackingStarted(const class FText& ProcessText_BP_OnHackingStarted)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnHackingStarted", FnName));
+
+	Params::BP_CircuitBreakerStonk_C_BP_OnHackingStarted Parms{};
+
+	Parms.ProcessText_BP_OnHackingStarted = std::move(ProcessText_BP_OnHackingStarted);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BP_GainedAccess
+// (Event, Protected, BlueprintEvent)
+
+void ABP_CircuitBreakerStonk_C::BP_GainedAccess()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_GainedAccess", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_CircuitBreakerStonk_C::BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_CircuitBreakerStonk_C::BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_CircuitBreakerStonk_C_BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature Parms{};
+	Params::BP_CircuitBreakerStonk_C_BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature Parms{};
 
 	Parms.Interactable = Interactable;
 	Parms.Interactor = Interactor;
@@ -76,21 +396,39 @@ void ABP_CircuitBreakerStonk_C::BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K
 }
 
 
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BndEvt__BP_CircuitBreakerStonk_screenOn_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// bool                                    bState                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_CircuitBreakerStonk_C::BndEvt__BP_CircuitBreakerStonk_screenOn_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_CircuitBreakerStonk_screenOn_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature", FnName));
+
+	Params::BP_CircuitBreakerStonk_C_BndEvt__BP_CircuitBreakerStonk_screenOn_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature Parms{};
+
+	Parms.bState = bState;
+	Parms.bDoCosmetics = bDoCosmetics;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_8_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_CircuitBreakerStonk_C::BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_CircuitBreakerStonk_C::BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_8_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_8_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_CircuitBreakerStonk_C_BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature Parms{};
+	Params::BP_CircuitBreakerStonk_C_BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_8_SBZOnInteraction__DelegateSignature Parms{};
 
 	Parms.Interactable = Interactable;
 	Parms.Interactor = Interactor;
@@ -109,10 +447,8 @@ void ABP_CircuitBreakerStonk_C::BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K
 
 void ABP_CircuitBreakerStonk_C::BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature", FnName));
 
 	Params::BP_CircuitBreakerStonk_C_BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature Parms{};
 
@@ -124,21 +460,19 @@ void ABP_CircuitBreakerStonk_C::BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K
 }
 
 
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_8_SBZOnInteraction__DelegateSignature
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_CircuitBreakerStonk_C::BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_8_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_CircuitBreakerStonk_C::BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_8_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_CircuitBreakerStonk_C_BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_8_SBZOnInteraction__DelegateSignature Parms{};
+	Params::BP_CircuitBreakerStonk_C_BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature Parms{};
 
 	Parms.Interactable = Interactable;
 	Parms.Interactor = Interactor;
@@ -148,20 +482,40 @@ void ABP_CircuitBreakerStonk_C::BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K
 }
 
 
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BndEvt__BP_CircuitBreakerStonk_screenOn_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_CircuitBreakerStonk_C::BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_CircuitBreakerStonk_C_BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BndEvt__BP_CircuitBreakerStonk_SBZBinaryState_K2Node_ComponentBoundEvent_7_SBZBinaryStateChangedSignature__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // bool                                    bState                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_CircuitBreakerStonk_C::BndEvt__BP_CircuitBreakerStonk_screenOn_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics)
+void ABP_CircuitBreakerStonk_C::BndEvt__BP_CircuitBreakerStonk_SBZBinaryState_K2Node_ComponentBoundEvent_7_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_CircuitBreakerStonk_SBZBinaryState_K2Node_ComponentBoundEvent_7_SBZBinaryStateChangedSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "BndEvt__BP_CircuitBreakerStonk_screenOn_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature");
-
-	Params::BP_CircuitBreakerStonk_C_BndEvt__BP_CircuitBreakerStonk_screenOn_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature Parms{};
+	Params::BP_CircuitBreakerStonk_C_BndEvt__BP_CircuitBreakerStonk_SBZBinaryState_K2Node_ComponentBoundEvent_7_SBZBinaryStateChangedSignature__DelegateSignature Parms{};
 
 	Parms.bState = bState;
 	Parms.bDoCosmetics = bDoCosmetics;
@@ -170,431 +524,13 @@ void ABP_CircuitBreakerStonk_C::BndEvt__BP_CircuitBreakerStonk_screenOn_SBZBinar
 }
 
 
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_CircuitBreakerStonk_C::BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_CircuitBreakerStonk_C_BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BP_GainedAccess
-// (Event, Protected, BlueprintEvent)
-
-void ABP_CircuitBreakerStonk_C::BP_GainedAccess()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "BP_GainedAccess");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BP_OnHackingStarted
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FText&                      ProcessText                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void ABP_CircuitBreakerStonk_C::BP_OnHackingStarted(const class FText& ProcessText)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "BP_OnHackingStarted");
-
-	Params::BP_CircuitBreakerStonk_C_BP_OnHackingStarted Parms{};
-
-	Parms.ProcessText = std::move(ProcessText);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BP_OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// ESBZHackableActorState                  OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZHackableActorState                  NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_CircuitBreakerStonk_C::BP_OnStateChanged(ESBZHackableActorState OldState, ESBZHackableActorState NewState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "BP_OnStateChanged");
-
-	Params::BP_CircuitBreakerStonk_C_BP_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BP_UpdateProgressBar
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   ProgressDone                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_CircuitBreakerStonk_C::BP_UpdateProgressBar(int32 ProgressDone)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "BP_UpdateProgressBar");
-
-	Params::BP_CircuitBreakerStonk_C_BP_UpdateProgressBar Parms{};
-
-	Parms.ProgressDone = ProgressDone;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.DoorOpen__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_CircuitBreakerStonk_C::DoorOpen__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "DoorOpen__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.DoorOpen__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_CircuitBreakerStonk_C::DoorOpen__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "DoorOpen__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.ExecuteUbergraph_BP_CircuitBreakerStonk
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_CircuitBreakerStonk_C::ExecuteUbergraph_BP_CircuitBreakerStonk(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "ExecuteUbergraph_BP_CircuitBreakerStonk");
-
-	Params::BP_CircuitBreakerStonk_C_ExecuteUbergraph_BP_CircuitBreakerStonk Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.GainAcccess
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_CircuitBreakerStonk_C::GainAcccess()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "GainAcccess");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.GetMarkerText
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-class FText ABP_CircuitBreakerStonk_C::GetMarkerText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "GetMarkerText");
-
-	Params::BP_CircuitBreakerStonk_C_GetMarkerText Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.Hacking
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.Active
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_CircuitBreakerStonk_C::Hacking()
+void ABP_CircuitBreakerStonk_C::Active()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "Hacking");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.HackingProgress
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Progression                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_CircuitBreakerStonk_C::HackingProgress(int32 Progression)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "HackingProgress");
-
-	Params::BP_CircuitBreakerStonk_C_HackingProgress Parms{};
-
-	Parms.Progression = Progression;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.HackingTimer
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      Process_Text                                           (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void ABP_CircuitBreakerStonk_C::HackingTimer(const class FText& Process_Text)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "HackingTimer");
-
-	Params::BP_CircuitBreakerStonk_C_HackingTimer Parms{};
-
-	Parms.Process_Text = std::move(Process_Text);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.Innactive
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_CircuitBreakerStonk_C::Innactive()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "Innactive");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.InteractionHatch
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Enable                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_CircuitBreakerStonk_C::InteractionHatch(bool Enable)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "InteractionHatch");
-
-	Params::BP_CircuitBreakerStonk_C_InteractionHatch Parms{};
-
-	Parms.Enable = Enable;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_CircuitBreakerStonk_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.RemoveMarker
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_CircuitBreakerStonk_C::RemoveMarker()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "RemoveMarker");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.Sabotaged
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_CircuitBreakerStonk_C::Sabotaged()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "Sabotaged");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.setInteraction
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_CircuitBreakerStonk_C::setInteraction(bool enabled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "setInteraction");
-
-	Params::BP_CircuitBreakerStonk_C_setInteraction Parms{};
-
-	Parms.enabled = enabled;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.ShowMarker
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_CircuitBreakerStonk_C::ShowMarker()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "ShowMarker");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.turnScreenOff
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_CircuitBreakerStonk_C::turnScreenOff()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "turnScreenOff");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.Unlocked
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_CircuitBreakerStonk_C::Unlocked()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "Unlocked");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.UpdateCodeViewer
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const TArray<int32>&                    GeneratedCodes                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// const int32                             TrueCodeIndex                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_CircuitBreakerStonk_C::UpdateCodeViewer(const TArray<int32>& GeneratedCodes, const int32 TrueCodeIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "UpdateCodeViewer");
-
-	Params::BP_CircuitBreakerStonk_C_UpdateCodeViewer Parms{};
-
-	Parms.GeneratedCodes = std::move(GeneratedCodes);
-	Parms.TrueCodeIndex = TrueCodeIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.UpdateIdentifier
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      InIdentifier                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void ABP_CircuitBreakerStonk_C::UpdateIdentifier(const class FText& InIdentifier)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "UpdateIdentifier");
-
-	Params::BP_CircuitBreakerStonk_C_UpdateIdentifier Parms{};
-
-	Parms.InIdentifier = std::move(InIdentifier);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_CircuitBreakerStonk_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Active", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -603,19 +539,17 @@ void ABP_CircuitBreakerStonk_C::UserConstructionScript()
 // Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.VisionPredicate
 // (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// const class AActor*                     Viewer                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class AActor*                     Viewer_VisionPredicate                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue_VisionPredicate                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-bool ABP_CircuitBreakerStonk_C::VisionPredicate(const class AActor* Viewer) const
+bool ABP_CircuitBreakerStonk_C::VisionPredicate(const class AActor* Viewer_VisionPredicate) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CircuitBreakerStonk_C", "VisionPredicate");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"VisionPredicate", FnName));
 
 	Params::BP_CircuitBreakerStonk_C_VisionPredicate Parms{};
 
-	Parms.Viewer = Viewer;
+	Parms.Viewer_VisionPredicate = Viewer_VisionPredicate;
 
 	UObject::ProcessEvent(Func, &Parms);
 

@@ -28,11 +28,11 @@ public:
 	class UWidgetSwitcher*                        WidgetSwitcher_0;                                  // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_TVScreen(int32 EntryPoint);
-	void First_Day();
-	void Second_Day();
-	void SetTextFirstDay(const class FText& Text);
 	void SetTextSecondDay(const class FText& Text);
+	void SetTextFirstDay(const class FText& Text);
+	void Second_Day();
+	void First_Day();
+	void ExecuteUbergraph_WBP_TVScreen(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<UWBP_TVScreen_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_TVScreen_C;
 
 SDK_NAMESPACE_END

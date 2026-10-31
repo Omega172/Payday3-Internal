@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<BPL_CeilingLight::ABPL_CeilingLight_C>();
 	}
 };
+DUMPER7_ASSERTS_BPL_CeilingLight__ABPL_CeilingLight_C;
 
 SDK_NAMESPACE_END

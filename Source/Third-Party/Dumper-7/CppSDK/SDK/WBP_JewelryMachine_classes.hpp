@@ -32,11 +32,11 @@ public:
 	class UWidgetSwitcher*                        WidgetSwitcher_0;                                  // 0x0330(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Error();
-	void ExecuteUbergraph_WBP_JewelryMachine(int32 EntryPoint);
-	void Ready();
-	void Scanning();
 	void SetAmount(const class FText& InText);
+	void Scanning();
+	void Ready();
+	void ExecuteUbergraph_WBP_JewelryMachine(int32 EntryPoint);
+	void Error();
 
 public:
 	static class UClass* StaticClass()
@@ -52,5 +52,6 @@ public:
 		return GetDefaultObjImpl<UWBP_JewelryMachine_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_JewelryMachine_C;
 
 SDK_NAMESPACE_END

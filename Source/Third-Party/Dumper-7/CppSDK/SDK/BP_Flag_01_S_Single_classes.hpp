@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Flag_01_S_Single_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Flag_01_S_Single_C;
 
 SDK_NAMESPACE_END

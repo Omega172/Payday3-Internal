@@ -17,14 +17,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_Throwable_SmokeGrenade.BP_Throwable_SmokeGrenade_C.BndEvt__BP_Throwable_SmokeGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_2_OnProjectileStopDelegate__DelegateSignature
-// 0x0108 (0x0108 - 0x0000)
-struct BP_Throwable_SmokeGrenade_C_BndEvt__BP_Throwable_SmokeGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_2_OnProjectileStopDelegate__DelegateSignature final
-{
-public:
-	struct FHitResult                             ImpactResult;                                      // 0x0000(0x0108)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
-
 // Function BP_Throwable_SmokeGrenade.BP_Throwable_SmokeGrenade_C.ExecuteUbergraph_BP_Throwable_SmokeGrenade
 // 0x02A0 (0x02A0 - 0x0000)
 struct BP_Throwable_SmokeGrenade_C_ExecuteUbergraph_BP_Throwable_SmokeGrenade final
@@ -48,22 +40,16 @@ public:
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0280(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABP_DB_Throwable_SmokeGrenade_Lever_C*  CallFunc_FinishSpawningActor_ReturnValue;          // 0x0298(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Throwable_SmokeGrenade_C_ExecuteUbergraph_BP_Throwable_SmokeGrenade;
 
-// Function BP_Throwable_SmokeGrenade.BP_Throwable_SmokeGrenade_C.CanAffectStealth
-// 0x0001 (0x0001 - 0x0000)
-struct BP_Throwable_SmokeGrenade_C_CanAffectStealth final
+// Function BP_Throwable_SmokeGrenade.BP_Throwable_SmokeGrenade_C.BndEvt__BP_Throwable_SmokeGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_2_OnProjectileStopDelegate__DelegateSignature
+// 0x0108 (0x0108 - 0x0000)
+struct BP_Throwable_SmokeGrenade_C_BndEvt__BP_Throwable_SmokeGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_2_OnProjectileStopDelegate__DelegateSignature final
 {
 public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             ImpactResult;                                      // 0x0000(0x0108)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-
-// Function BP_Throwable_SmokeGrenade.BP_Throwable_SmokeGrenade_C.CanAffectTaser
-// 0x0001 (0x0001 - 0x0000)
-struct BP_Throwable_SmokeGrenade_C_CanAffectTaser final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_Throwable_SmokeGrenade_C_BndEvt__BP_Throwable_SmokeGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_2_OnProjectileStopDelegate__DelegateSignature;
 
 // Function BP_Throwable_SmokeGrenade.BP_Throwable_SmokeGrenade_C.GetSightModifier
 // 0x0040 (0x0040 - 0x0000)
@@ -77,6 +63,25 @@ public:
 	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_FunctionResult_ReturnValue_ImplicitCast;    // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Throwable_SmokeGrenade_C_GetSightModifier;
+
+// Function BP_Throwable_SmokeGrenade.BP_Throwable_SmokeGrenade_C.CanAffectTaser
+// 0x0001 (0x0001 - 0x0000)
+struct BP_Throwable_SmokeGrenade_C_CanAffectTaser final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Throwable_SmokeGrenade_C_CanAffectTaser;
+
+// Function BP_Throwable_SmokeGrenade.BP_Throwable_SmokeGrenade_C.CanAffectStealth
+// 0x0001 (0x0001 - 0x0000)
+struct BP_Throwable_SmokeGrenade_C_CanAffectStealth final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Throwable_SmokeGrenade_C_CanAffectStealth;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

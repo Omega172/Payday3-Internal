@@ -16,37 +16,61 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_ServerBrowser_InspectButton.WBP_ServerBrowser_InspectButton_C.SetActionEnabled
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_ServerBrowser_InspectButton.WBP_ServerBrowser_InspectButton_C.BndEvt__WBP_ServerBrowser_InspectButton_Widget_TabBackward_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_ServerBrowser_InspectButton_C::SetActionEnabled(bool bIsEnabled)
+void UWBP_ServerBrowser_InspectButton_C::BndEvt__WBP_ServerBrowser_InspectButton_Widget_TabBackward_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetActionEnabled", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_ServerBrowser_InspectButton_Widget_TabBackward_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature", FnName));
 
-	Params::WBP_ServerBrowser_InspectButton_C_SetActionEnabled Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.bIsEnabled = bIsEnabled;
+
+// Function WBP_ServerBrowser_InspectButton.WBP_ServerBrowser_InspectButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_InspectButton_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+
+	Params::WBP_ServerBrowser_InspectButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ServerBrowser_InspectButton.WBP_ServerBrowser_InspectButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_ServerBrowser_InspectButton.WBP_ServerBrowser_InspectButton_C.ButtonSelected
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_ServerBrowser_InspectButton_C::PreConstruct(bool IsDesignTime_PreConstruct)
+void UWBP_ServerBrowser_InspectButton_C::ButtonSelected()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonSelected", FnName));
 
-	Params::WBP_ServerBrowser_InspectButton_C_PreConstruct Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+// Function WBP_ServerBrowser_InspectButton.WBP_ServerBrowser_InspectButton_C.ExecuteUbergraph_WBP_ServerBrowser_InspectButton
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_InspectButton_C::ExecuteUbergraph_WBP_ServerBrowser_InspectButton(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_ServerBrowser_InspectButton_C", "ExecuteUbergraph_WBP_ServerBrowser_InspectButton", FuncInfo);
+
+	Params::WBP_ServerBrowser_InspectButton_C_ExecuteUbergraph_WBP_ServerBrowser_InspectButton Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -70,63 +94,39 @@ void UWBP_ServerBrowser_InspectButton_C::OnFocusChanged(bool NewFocus)
 }
 
 
-// Function WBP_ServerBrowser_InspectButton.WBP_ServerBrowser_InspectButton_C.ExecuteUbergraph_WBP_ServerBrowser_InspectButton
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_ServerBrowser_InspectButton.WBP_ServerBrowser_InspectButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_InspectButton_C::ExecuteUbergraph_WBP_ServerBrowser_InspectButton(int32 EntryPoint)
+void UWBP_ServerBrowser_InspectButton_C::PreConstruct(bool IsDesignTime)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_ServerBrowser_InspectButton_C", "ExecuteUbergraph_WBP_ServerBrowser_InspectButton", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
 
-	Params::WBP_ServerBrowser_InspectButton_C_ExecuteUbergraph_WBP_ServerBrowser_InspectButton Parms{};
+	Params::WBP_ServerBrowser_InspectButton_C_PreConstruct Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ServerBrowser_InspectButton.WBP_ServerBrowser_InspectButton_C.ButtonSelected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_ServerBrowser_InspectButton_C::ButtonSelected()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonSelected", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_InspectButton.WBP_ServerBrowser_InspectButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_ServerBrowser_InspectButton.WBP_ServerBrowser_InspectButton_C.SetActionEnabled
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInHasFocus_ButtonFocusedChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_InspectButton_C::ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged)
+void UWBP_ServerBrowser_InspectButton_C::SetActionEnabled(bool bIsEnabled_0)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetActionEnabled", FnName));
 
-	Params::WBP_ServerBrowser_InspectButton_C_ButtonFocusedChanged Parms{};
+	Params::WBP_ServerBrowser_InspectButton_C_SetActionEnabled Parms{};
 
-	Parms.bInHasFocus_ButtonFocusedChanged = bInHasFocus_ButtonFocusedChanged;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_InspectButton.WBP_ServerBrowser_InspectButton_C.BndEvt__WBP_ServerBrowser_InspectButton_Widget_TabBackward_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_ServerBrowser_InspectButton_C::BndEvt__WBP_ServerBrowser_InspectButton_Widget_TabBackward_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_ServerBrowser_InspectButton_Widget_TabBackward_K2Node_ComponentBoundEvent_0_SBZOnActionChanged__DelegateSignature", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_CosmeticBox_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CosmeticBox_C;
 
 SDK_NAMESPACE_END

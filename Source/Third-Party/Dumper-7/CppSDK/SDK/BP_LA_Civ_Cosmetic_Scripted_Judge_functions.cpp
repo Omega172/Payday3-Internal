@@ -16,43 +16,61 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_LA_Civ_Cosmetic_Scripted_Judge.BP_LA_Civ_Cosmetic_Scripted_Judge_C.AnswerPhone
+// Function BP_LA_Civ_Cosmetic_Scripted_Judge.BP_LA_Civ_Cosmetic_Scripted_Judge_C.TalkPhone
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_LA_Civ_Cosmetic_Scripted_Judge_C::AnswerPhone()
+void ABP_LA_Civ_Cosmetic_Scripted_Judge_C::TalkPhone()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_Civ_Cosmetic_Scripted_Judge_C", "AnswerPhone");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TalkPhone", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_LA_Civ_Cosmetic_Scripted_Judge.BP_LA_Civ_Cosmetic_Scripted_Judge_C.BangGavel
+// Function BP_LA_Civ_Cosmetic_Scripted_Judge.BP_LA_Civ_Cosmetic_Scripted_Judge_C.Talk
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_LA_Civ_Cosmetic_Scripted_Judge_C::BangGavel()
+void ABP_LA_Civ_Cosmetic_Scripted_Judge_C::Talk()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_Civ_Cosmetic_Scripted_Judge_C", "BangGavel");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Talk", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_LA_Civ_Cosmetic_Scripted_Judge.BP_LA_Civ_Cosmetic_Scripted_Judge_C.EndPhone
+// Function BP_LA_Civ_Cosmetic_Scripted_Judge.BP_LA_Civ_Cosmetic_Scripted_Judge_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_LA_Civ_Cosmetic_Scripted_Judge_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_LA_Civ_Cosmetic_Scripted_Judge.BP_LA_Civ_Cosmetic_Scripted_Judge_C.LoopIdle
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_LA_Civ_Cosmetic_Scripted_Judge_C::EndPhone()
+void ABP_LA_Civ_Cosmetic_Scripted_Judge_C::LoopIdle()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"LoopIdle", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_Civ_Cosmetic_Scripted_Judge_C", "EndPhone");
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_LA_Civ_Cosmetic_Scripted_Judge.BP_LA_Civ_Cosmetic_Scripted_Judge_C.ListenPhone
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_LA_Civ_Cosmetic_Scripted_Judge_C::ListenPhone()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ListenPhone", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -65,10 +83,8 @@ void ABP_LA_Civ_Cosmetic_Scripted_Judge_C::EndPhone()
 
 void ABP_LA_Civ_Cosmetic_Scripted_Judge_C::ExecuteUbergraph_BP_LA_Civ_Cosmetic_Scripted_Judge(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_Civ_Cosmetic_Scripted_Judge_C", "ExecuteUbergraph_BP_LA_Civ_Cosmetic_Scripted_Judge");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_LA_Civ_Cosmetic_Scripted_Judge_C", "ExecuteUbergraph_BP_LA_Civ_Cosmetic_Scripted_Judge", FuncInfo);
 
 	Params::BP_LA_Civ_Cosmetic_Scripted_Judge_C_ExecuteUbergraph_BP_LA_Civ_Cosmetic_Scripted_Judge Parms{};
 
@@ -78,71 +94,37 @@ void ABP_LA_Civ_Cosmetic_Scripted_Judge_C::ExecuteUbergraph_BP_LA_Civ_Cosmetic_S
 }
 
 
-// Function BP_LA_Civ_Cosmetic_Scripted_Judge.BP_LA_Civ_Cosmetic_Scripted_Judge_C.ListenPhone
+// Function BP_LA_Civ_Cosmetic_Scripted_Judge.BP_LA_Civ_Cosmetic_Scripted_Judge_C.EndPhone
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_LA_Civ_Cosmetic_Scripted_Judge_C::ListenPhone()
+void ABP_LA_Civ_Cosmetic_Scripted_Judge_C::EndPhone()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_Civ_Cosmetic_Scripted_Judge_C", "ListenPhone");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EndPhone", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_LA_Civ_Cosmetic_Scripted_Judge.BP_LA_Civ_Cosmetic_Scripted_Judge_C.LoopIdle
+// Function BP_LA_Civ_Cosmetic_Scripted_Judge.BP_LA_Civ_Cosmetic_Scripted_Judge_C.BangGavel
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_LA_Civ_Cosmetic_Scripted_Judge_C::LoopIdle()
+void ABP_LA_Civ_Cosmetic_Scripted_Judge_C::BangGavel()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_Civ_Cosmetic_Scripted_Judge_C", "LoopIdle");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BangGavel", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_LA_Civ_Cosmetic_Scripted_Judge.BP_LA_Civ_Cosmetic_Scripted_Judge_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_LA_Civ_Cosmetic_Scripted_Judge_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_Civ_Cosmetic_Scripted_Judge_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_LA_Civ_Cosmetic_Scripted_Judge.BP_LA_Civ_Cosmetic_Scripted_Judge_C.Talk
+// Function BP_LA_Civ_Cosmetic_Scripted_Judge.BP_LA_Civ_Cosmetic_Scripted_Judge_C.AnswerPhone
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_LA_Civ_Cosmetic_Scripted_Judge_C::Talk()
+void ABP_LA_Civ_Cosmetic_Scripted_Judge_C::AnswerPhone()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_Civ_Cosmetic_Scripted_Judge_C", "Talk");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_LA_Civ_Cosmetic_Scripted_Judge.BP_LA_Civ_Cosmetic_Scripted_Judge_C.TalkPhone
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_LA_Civ_Cosmetic_Scripted_Judge_C::TalkPhone()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_Civ_Cosmetic_Scripted_Judge_C", "TalkPhone");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AnswerPhone", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -16,19 +16,37 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_ItemDescription_Description.WBP_ItemDescription_Description_C.SetText_Source
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_ItemDescription_Description.WBP_ItemDescription_Description_C.ExecuteUbergraph_WBP_ItemDescription_Description
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// const class FText&                      Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ItemDescription_Description_C::SetText_Source(const class FText& Text)
+void UWBP_ItemDescription_Description_C::ExecuteUbergraph_WBP_ItemDescription_Description(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_ItemDescription_Description_C", "ExecuteUbergraph_WBP_ItemDescription_Description", FuncInfo);
+
+	Params::WBP_ItemDescription_Description_C_ExecuteUbergraph_WBP_ItemDescription_Description Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ItemDescription_Description.WBP_ItemDescription_Description_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ItemDescription_Description_C::PreConstruct(bool IsDesignTime)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetText_Source", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
 
-	Params::WBP_ItemDescription_Description_C_SetText_Source Parms{};
+	Params::WBP_ItemDescription_Description_C_PreConstruct Parms{};
 
-	Parms.Text = std::move(Text);
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -52,37 +70,19 @@ void UWBP_ItemDescription_Description_C::SetText_Description(const class FText& 
 }
 
 
-// Function WBP_ItemDescription_Description.WBP_ItemDescription_Description_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_ItemDescription_Description.WBP_ItemDescription_Description_C.SetText_Source
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_ItemDescription_Description_C::PreConstruct(bool IsDesignTime_PreConstruct)
+void UWBP_ItemDescription_Description_C::SetText_Source(const class FText& Text)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetText_Source", FnName));
 
-	Params::WBP_ItemDescription_Description_C_PreConstruct Parms{};
+	Params::WBP_ItemDescription_Description_C_SetText_Source Parms{};
 
-	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ItemDescription_Description.WBP_ItemDescription_Description_C.ExecuteUbergraph_WBP_ItemDescription_Description
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ItemDescription_Description_C::ExecuteUbergraph_WBP_ItemDescription_Description(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_ItemDescription_Description_C", "ExecuteUbergraph_WBP_ItemDescription_Description", FuncInfo);
-
-	Params::WBP_ItemDescription_Description_C_ExecuteUbergraph_WBP_ItemDescription_Description Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Text = std::move(Text);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

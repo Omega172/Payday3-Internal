@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_Placeable_AmmoBag_Ghost_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Placeable_AmmoBag_Ghost_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Chus_CarriedPressBadge_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Chus_CarriedPressBadge_C;
 
 SDK_NAMESPACE_END

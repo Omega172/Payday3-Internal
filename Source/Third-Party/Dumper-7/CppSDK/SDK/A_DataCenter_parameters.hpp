@@ -17,6 +17,16 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function A_DataCenter.A_DataCenter_C.HeistStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct A_DataCenter_C_HeistStateChanged final
+{
+public:
+	EPD3HeistState                                OldHeistState_HeistStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CurrentHeistState_HeistStateChanged;               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_A_DataCenter_C_HeistStateChanged;
+
 // Function A_DataCenter.A_DataCenter_C.ExecuteUbergraph_A_DataCenter
 // 0x005C (0x005C - 0x0000)
 struct A_DataCenter_C_ExecuteUbergraph_A_DataCenter final
@@ -41,15 +51,7 @@ public:
 	int32                                         CallFunc_PostEvent_ReturnValue_1;                  // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_PostEvent_ReturnValue_2;                  // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function A_DataCenter.A_DataCenter_C.HeistStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct A_DataCenter_C_HeistStateChanged final
-{
-public:
-	EPD3HeistState                                OldHeistState;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CurrentHeistState;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_A_DataCenter_C_ExecuteUbergraph_A_DataCenter;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

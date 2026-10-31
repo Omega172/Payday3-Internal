@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_ONE_INT_Office_Window_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ONE_INT_Office_Window_01_C;
 
 SDK_NAMESPACE_END

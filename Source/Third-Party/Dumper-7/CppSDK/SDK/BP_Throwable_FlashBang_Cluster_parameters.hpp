@@ -17,15 +17,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_Throwable_FlashBang_Cluster.BP_Throwable_FlashBang_Cluster_C.BndEvt__BP_Throwable_FragGrenade_Cluster_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature
-// 0x0120 (0x0120 - 0x0000)
-struct BP_Throwable_FlashBang_Cluster_C_BndEvt__BP_Throwable_FragGrenade_Cluster_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature final
-{
-public:
-	struct FHitResult                             ImpactResult;                                      // 0x0000(0x0108)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                ImpactVelocity;                                    // 0x0108(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_Throwable_FlashBang_Cluster.BP_Throwable_FlashBang_Cluster_C.ExecuteUbergraph_BP_Throwable_FlashBang_Cluster
 // 0x0138 (0x0138 - 0x0000)
 struct BP_Throwable_FlashBang_Cluster_C_ExecuteUbergraph_BP_Throwable_FlashBang_Cluster final
@@ -42,6 +33,17 @@ public:
 	struct FHitResult                             K2Node_ComponentBoundEvent_ImpactResult;           // 0x0018(0x0108)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	struct FVector                                K2Node_ComponentBoundEvent_ImpactVelocity;         // 0x0120(0x0018)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Throwable_FlashBang_Cluster_C_ExecuteUbergraph_BP_Throwable_FlashBang_Cluster;
+
+// Function BP_Throwable_FlashBang_Cluster.BP_Throwable_FlashBang_Cluster_C.BndEvt__BP_Throwable_FragGrenade_Cluster_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature
+// 0x0120 (0x0120 - 0x0000)
+struct BP_Throwable_FlashBang_Cluster_C_BndEvt__BP_Throwable_FragGrenade_Cluster_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature final
+{
+public:
+	struct FHitResult                             ImpactResult;                                      // 0x0000(0x0108)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                ImpactVelocity;                                    // 0x0108(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Throwable_FlashBang_Cluster_C_BndEvt__BP_Throwable_FragGrenade_Cluster_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

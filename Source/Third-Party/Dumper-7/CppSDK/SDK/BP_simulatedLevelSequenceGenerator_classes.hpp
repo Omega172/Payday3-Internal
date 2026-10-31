@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Starbreeze_classes.hpp"
 
 
@@ -38,11 +38,11 @@ public:
 	double                                        linearDamping;                                     // 0x03E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void activate();
-	void ExecuteUbergraph_BP_simulatedLevelSequenceGenerator(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void ReceiveBeginPlay();
 	void UserConstructionScript();
+	void ReceiveBeginPlay();
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_simulatedLevelSequenceGenerator(int32 EntryPoint);
+	void activate();
 
 public:
 	static class UClass* StaticClass()
@@ -58,5 +58,6 @@ public:
 		return GetDefaultObjImpl<ABP_simulatedLevelSequenceGenerator_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_simulatedLevelSequenceGenerator_C;
 
 SDK_NAMESPACE_END

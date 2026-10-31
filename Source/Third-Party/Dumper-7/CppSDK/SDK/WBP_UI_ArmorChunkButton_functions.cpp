@@ -16,81 +16,51 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.SetDefaultButton
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_ArmorChunkButton_C::SetDefaultButton()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetDefaultButton", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.ArmorChunkInitialized
+// (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZArmorChunkTypeData&    InArmorChunkData                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 
-void UWBP_UI_ArmorChunkButton_C::PreConstruct(bool IsDesignTime_PreConstruct)
+void UWBP_UI_ArmorChunkButton_C::ArmorChunkInitialized(const struct FSBZArmorChunkTypeData& InArmorChunkData)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ArmorChunkInitialized", FnName));
 
-	Params::WBP_UI_ArmorChunkButton_C_PreConstruct Parms{};
+	Params::WBP_UI_ArmorChunkButton_C_ArmorChunkInitialized Parms{};
 
-	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+	Parms.InArmorChunkData = std::move(InArmorChunkData);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_ArmorChunkButton_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.OnFocusChanged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_ArmorChunkButton_C::OnFocusChanged(bool bIsFocused)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnFocusChanged", FnName));
-
-	Params::WBP_UI_ArmorChunkButton_C_OnFocusChanged Parms{};
-
-	Parms.bIsFocused = bIsFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.OnEquippedChanged
+// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.ButtonFocusedChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsEquipped_OnEquippedChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_ArmorChunkButton_C::OnEquippedChanged(bool bInIsEquipped_OnEquippedChanged)
+void UWBP_UI_ArmorChunkButton_C::ButtonFocusedChanged(bool bInHasFocus)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnEquippedChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
 
-	Params::WBP_UI_ArmorChunkButton_C_OnEquippedChanged Parms{};
+	Params::WBP_UI_ArmorChunkButton_C_ButtonFocusedChanged Parms{};
 
-	Parms.bInIsEquipped_OnEquippedChanged = bInIsEquipped_OnEquippedChanged;
+	Parms.bInHasFocus = bInHasFocus;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.DefaultButtonSet
+// (BlueprintEvent)
+
+void UWBP_UI_ArmorChunkButton_C::DefaultButtonSet()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DefaultButtonSet", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -112,51 +82,81 @@ void UWBP_UI_ArmorChunkButton_C::ExecuteUbergraph_WBP_UI_ArmorChunkButton(int32 
 }
 
 
-// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.DefaultButtonSet
-// (BlueprintEvent)
+// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.OnEquippedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsEquipped                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_ArmorChunkButton_C::DefaultButtonSet()
+void UWBP_UI_ArmorChunkButton_C::OnEquippedChanged(bool bInIsEquipped)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DefaultButtonSet", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnEquippedChanged", FnName));
+
+	Params::WBP_UI_ArmorChunkButton_C_OnEquippedChanged Parms{};
+
+	Parms.bInIsEquipped = bInIsEquipped;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.OnFocusChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ArmorChunkButton_C::OnFocusChanged(bool bIsFocused)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnFocusChanged", FnName));
+
+	Params::WBP_UI_ArmorChunkButton_C_OnFocusChanged Parms{};
+
+	Parms.bIsFocused = bIsFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_ArmorChunkButton_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                                    bInHasFocus_ButtonFocusedChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_ArmorChunkButton_C::ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged)
+void UWBP_UI_ArmorChunkButton_C::PreConstruct(bool IsDesignTime)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
 
-	Params::WBP_UI_ArmorChunkButton_C_ButtonFocusedChanged Parms{};
+	Params::WBP_UI_ArmorChunkButton_C_PreConstruct Parms{};
 
-	Parms.bInHasFocus_ButtonFocusedChanged = bInHasFocus_ButtonFocusedChanged;
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.ArmorChunkInitialized
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FSBZArmorChunkTypeData&    InArmorChunkData_ArmorChunkInitialized                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// Function WBP_UI_ArmorChunkButton.WBP_UI_ArmorChunkButton_C.SetDefaultButton
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_ArmorChunkButton_C::ArmorChunkInitialized(const struct FSBZArmorChunkTypeData& InArmorChunkData_ArmorChunkInitialized)
+void UWBP_UI_ArmorChunkButton_C::SetDefaultButton()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ArmorChunkInitialized", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetDefaultButton", FnName));
 
-	Params::WBP_UI_ArmorChunkButton_C_ArmorChunkInitialized Parms{};
-
-	Parms.InArmorChunkData_ArmorChunkInitialized = std::move(InArmorChunkData_ArmorChunkInitialized);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

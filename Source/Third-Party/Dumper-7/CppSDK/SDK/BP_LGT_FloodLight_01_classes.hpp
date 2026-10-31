@@ -11,6 +11,7 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "AkAudio_structs.hpp"
 #include "BP_Master_Light_Fixture_classes.hpp"
 #include "Starbreeze_structs.hpp"
 
@@ -23,13 +24,12 @@ class BP_LGT_FloodLight_01::ABP_LGT_FloodLight_01_C final : public ABP_Master_Li
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0440(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UNiagaraComponent*                      FX_SparkBurst_M;                                   // 0x0448(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USBZCosmeticDestructionComponent*       SBZCosmeticDestruction;                            // 0x0450(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USpotLightComponent*                    SpotLight;                                         // 0x0458(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZCosmeticDestructionComponent*       SBZCosmeticDestruction;                            // 0x0448(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USpotLightComponent*                    SpotLight;                                         // 0x0450(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_LGT_FloodLight_01_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 	void ExecuteUbergraph_BP_LGT_FloodLight_01(int32 EntryPoint);
+	void BndEvt__BP_LGT_FloodLight_01_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<BP_LGT_FloodLight_01::ABP_LGT_FloodLight_01_C>();
 	}
 };
+DUMPER7_ASSERTS_BP_LGT_FloodLight_01__ABP_LGT_FloodLight_01_C;
 
 SDK_NAMESPACE_END

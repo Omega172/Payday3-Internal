@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AE_NightClub_Int_Main_Lobby_Prop_01_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_NightClub_Int_Main_Lobby_Prop_01_C;
 
 SDK_NAMESPACE_END

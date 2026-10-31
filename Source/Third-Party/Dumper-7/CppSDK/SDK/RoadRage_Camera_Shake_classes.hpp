@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<URoadRage_Camera_Shake_C>();
 	}
 };
+DUMPER7_ASSERTS_URoadRage_Camera_Shake_C;
 
 SDK_NAMESPACE_END

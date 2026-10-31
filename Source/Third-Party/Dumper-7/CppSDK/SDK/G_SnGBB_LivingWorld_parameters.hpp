@@ -90,6 +90,7 @@ public:
 	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins_1;            // 0x02F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x02F2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_SnGBB_LivingWorld_C_ExecuteUbergraph_G_SnGBB_LivingWorld;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

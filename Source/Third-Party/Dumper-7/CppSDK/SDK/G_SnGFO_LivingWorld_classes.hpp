@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AG_SnGFO_LivingWorld_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_SnGFO_LivingWorld_C;
 
 SDK_NAMESPACE_END

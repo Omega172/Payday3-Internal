@@ -16,51 +16,23 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Tablet.BP_Tablet_C.BP_Activate
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Tablet_C::BP_Activate()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Tablet_C", "BP_Activate");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Tablet.BP_Tablet_C.BP_Deactivate
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Tablet_C::BP_Deactivate()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Tablet_C", "BP_Deactivate");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Tablet.BP_Tablet_C.BP_OnReactorStateChanged
-// (Event, Protected, BlueprintEvent)
+// Function BP_Tablet.BP_Tablet_C.setGlitching
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ESBZEventReactorState                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  isOff                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  glitchStep                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  glitchSpeed                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Tablet_C::BP_OnReactorStateChanged(ESBZEventReactorState NewState, bool bDoCosmetics)
+void ABP_Tablet_C::setGlitching(double isOff, double glitchStep, double glitchSpeed)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setGlitching", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Tablet_C", "BP_OnReactorStateChanged");
+	Params::BP_Tablet_C_setGlitching Parms{};
 
-	Params::BP_Tablet_C_BP_OnReactorStateChanged Parms{};
-
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.isOff = isOff;
+	Parms.glitchStep = glitchStep;
+	Parms.glitchSpeed = glitchSpeed;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -73,10 +45,8 @@ void ABP_Tablet_C::BP_OnReactorStateChanged(ESBZEventReactorState NewState, bool
 
 void ABP_Tablet_C::ExecuteUbergraph_BP_Tablet(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Tablet_C", "ExecuteUbergraph_BP_Tablet");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Tablet_C", "ExecuteUbergraph_BP_Tablet", FuncInfo);
 
 	Params::BP_Tablet_C_ExecuteUbergraph_BP_Tablet Parms{};
 
@@ -86,27 +56,47 @@ void ABP_Tablet_C::ExecuteUbergraph_BP_Tablet(int32 EntryPoint)
 }
 
 
-// Function BP_Tablet.BP_Tablet_C.setGlitching
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function BP_Tablet.BP_Tablet_C.BP_OnReactorStateChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// double                                  isOff                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  glitchStep                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  glitchSpeed                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZEventReactorState                   NewState_BP_OnReactorStateChanged                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_BP_OnReactorStateChanged                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Tablet_C::setGlitching(double isOff, double glitchStep, double glitchSpeed)
+void ABP_Tablet_C::BP_OnReactorStateChanged(ESBZEventReactorState NewState_BP_OnReactorStateChanged, bool bDoCosmetics_BP_OnReactorStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnReactorStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Tablet_C", "setGlitching");
+	Params::BP_Tablet_C_BP_OnReactorStateChanged Parms{};
 
-	Params::BP_Tablet_C_setGlitching Parms{};
-
-	Parms.isOff = isOff;
-	Parms.glitchStep = glitchStep;
-	Parms.glitchSpeed = glitchSpeed;
+	Parms.NewState_BP_OnReactorStateChanged = NewState_BP_OnReactorStateChanged;
+	Parms.bDoCosmetics_BP_OnReactorStateChanged = bDoCosmetics_BP_OnReactorStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Tablet.BP_Tablet_C.BP_Deactivate
+// (Event, Protected, BlueprintEvent)
+
+void ABP_Tablet_C::BP_Deactivate()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_Deactivate", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Tablet.BP_Tablet_C.BP_Activate
+// (Event, Protected, BlueprintEvent)
+
+void ABP_Tablet_C::BP_Activate()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_Activate", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

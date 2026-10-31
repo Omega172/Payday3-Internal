@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AMD_DEC_PlasterPatch_01_C>();
 	}
 };
+DUMPER7_ASSERTS_AMD_DEC_PlasterPatch_01_C;
 
 SDK_NAMESPACE_END

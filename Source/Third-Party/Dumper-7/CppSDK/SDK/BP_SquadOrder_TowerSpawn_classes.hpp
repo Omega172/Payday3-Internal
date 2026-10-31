@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UBP_SquadOrder_TowerSpawn_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_SquadOrder_TowerSpawn_C;
 
 SDK_NAMESPACE_END

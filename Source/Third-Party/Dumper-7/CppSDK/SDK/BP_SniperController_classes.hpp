@@ -24,8 +24,8 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0758(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
+	void ReceivePossess(class APawn* PossessedPawn_ReceivePossess);
 	void ExecuteUbergraph_BP_SniperController(int32 EntryPoint);
-	void ReceivePossess(class APawn* PossessedPawn);
 
 public:
 	static class UClass* StaticClass()
@@ -41,5 +41,6 @@ public:
 		return GetDefaultObjImpl<ABP_SniperController_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SniperController_C;
 
 SDK_NAMESPACE_END

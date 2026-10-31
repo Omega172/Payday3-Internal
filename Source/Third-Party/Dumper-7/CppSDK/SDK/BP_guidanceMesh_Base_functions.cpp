@@ -16,21 +16,31 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_guidanceMesh_Base.BP_guidanceMesh_Base_C.ExecuteUbergraph_BP_guidanceMesh_Base
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_guidanceMesh_Base.BP_guidanceMesh_Base_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_guidanceMesh_Base_C::ExecuteUbergraph_BP_guidanceMesh_Base(int32 EntryPoint)
+void ABP_guidanceMesh_Base_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_guidanceMesh_Base_C", "ExecuteUbergraph_BP_guidanceMesh_Base");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_guidanceMesh_Base_C_ExecuteUbergraph_BP_guidanceMesh_Base Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+// Function BP_guidanceMesh_Base.BP_guidanceMesh_Base_C.setGuidance
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    visible                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_guidanceMesh_Base_C::setGuidance(bool visible)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setGuidance", FnName));
+
+	Params::BP_guidanceMesh_Base_C_setGuidance Parms{};
+
+	Parms.visible = visible;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -45,10 +55,8 @@ void ABP_guidanceMesh_Base_C::ExecuteUbergraph_BP_guidanceMesh_Base(int32 EntryP
 
 void ABP_guidanceMesh_Base_C::OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_guidanceMesh_Base_C", "OnStateChanged");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
 	Params::BP_guidanceMesh_Base_C_OnStateChanged Parms{};
 
@@ -60,37 +68,21 @@ void ABP_guidanceMesh_Base_C::OnStateChanged(int32 OldState, int32 NewState, boo
 }
 
 
-// Function BP_guidanceMesh_Base.BP_guidanceMesh_Base_C.setGuidance
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_guidanceMesh_Base.BP_guidanceMesh_Base_C.ExecuteUbergraph_BP_guidanceMesh_Base
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    visible                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_guidanceMesh_Base_C::setGuidance(bool visible)
+void ABP_guidanceMesh_Base_C::ExecuteUbergraph_BP_guidanceMesh_Base(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_guidanceMesh_Base_C", "ExecuteUbergraph_BP_guidanceMesh_Base", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_guidanceMesh_Base_C", "setGuidance");
+	Params::BP_guidanceMesh_Base_C_ExecuteUbergraph_BP_guidanceMesh_Base Parms{};
 
-	Params::BP_guidanceMesh_Base_C_setGuidance Parms{};
-
-	Parms.visible = visible;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_guidanceMesh_Base.BP_guidanceMesh_Base_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_guidanceMesh_Base_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_guidanceMesh_Base_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

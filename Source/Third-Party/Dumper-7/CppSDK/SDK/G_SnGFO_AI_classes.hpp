@@ -92,48 +92,48 @@ public:
 	class ABP_LA_Scripted_Patrol_C*               BP_LA_Scripted_Patrol_LeadGuard4_ExecuteUbergraph_G_SnGFO_AI_RefProperty; // 0x0558(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ActionPhaseStarted();
-	void ActivateSWATHelicopter();
-	void BlackScreenStarted();
-	void BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard6_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
-	void BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard7_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
-	void BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_LeadGuard2_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
-	void BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_14_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
-	void BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_15_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
-	void BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_0_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
-	void BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_16_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
-	void BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart1_K2Node_ActorBoundEvent_11_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
-	void BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart2_K2Node_ActorBoundEvent_12_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
-	void BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart3_K2Node_ActorBoundEvent_13_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
-	void BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
-	void BndEvt__SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_42_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
-	void BndEvt__SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_43_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
-	void CallSwatVans();
-	void ChangeLeadGuardPatrol(class ASBZAICharacter* LeadGuard_0, class AActor* Specific_Action_Component_Owner);
-	void ChangeLeadGuardRoute2();
-	void ChangeLeadGuardRoute3();
-	void DepoGatesClosed();
-	void DepoGatesOpen();
-	void EnableElevatorSpawns();
-	void EnablePoliceRoofSpawns();
-	void ExecuteUbergraph_G_SnGFO_AI(int32 EntryPoint);
-	void HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState);
-	void NegoationOver();
-	void PickedGate1();
-	void PickedGate2();
-	void SecurityRoomOffice();
-	void ServerRoomIs1();
-	void ServerRoomIs2();
-	void ServerRoomIs3();
-	void ServerRoomIs4();
-	void SetRandomRoom1Secure();
-	void SetRandomRoom2Secure();
-	void SetRandomRoom3Secure();
-	void SetRandomRoom4Secure();
-	void SpawnCivillians();
-	void SpawnEmployees();
-	void SpawnGuards();
 	void SpawnTalkingCops();
+	void SpawnGuards();
+	void SpawnEmployees();
+	void SpawnCivillians();
+	void SetRandomRoom4Secure();
+	void SetRandomRoom3Secure();
+	void SetRandomRoom2Secure();
+	void SetRandomRoom1Secure();
+	void ServerRoomIs4();
+	void ServerRoomIs3();
+	void ServerRoomIs2();
+	void ServerRoomIs1();
+	void SecurityRoomOffice();
+	void PickedGate2();
+	void PickedGate1();
+	void NegoationOver();
+	void HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged);
+	void ExecuteUbergraph_G_SnGFO_AI(int32 EntryPoint);
+	void EnablePoliceRoofSpawns();
+	void EnableElevatorSpawns();
+	void DepoGatesOpen();
+	void DepoGatesClosed();
+	void ChangeLeadGuardRoute3();
+	void ChangeLeadGuardRoute2();
+	void ChangeLeadGuardPatrol(class ASBZAICharacter* LeadGuard, class AActor* Specific_Action_Component_Owner);
+	void CallSwatVans();
+	void BndEvt__SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_43_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
+	void BndEvt__SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_42_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
+	void BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
+	void BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart3_K2Node_ActorBoundEvent_13_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
+	void BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart2_K2Node_ActorBoundEvent_12_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
+	void BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart1_K2Node_ActorBoundEvent_11_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
+	void BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_16_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
+	void BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_0_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
+	void BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_15_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
+	void BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_14_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
+	void BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_LeadGuard2_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
+	void BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard7_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
+	void BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard6_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
+	void BlackScreenStarted();
+	void ActivateSWATHelicopter();
+	void ActionPhaseStarted();
 
 public:
 	static class UClass* StaticClass()
@@ -149,5 +149,6 @@ public:
 		return GetDefaultObjImpl<AG_SnGFO_AI_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_SnGFO_AI_C;
 
 SDK_NAMESPACE_END

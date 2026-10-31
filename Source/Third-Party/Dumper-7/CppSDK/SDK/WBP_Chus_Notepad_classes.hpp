@@ -24,8 +24,8 @@ public:
 	class USBZUITextBlock*                        Name_Text;                                         // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Set_Header(const class FText& Header);
 	void SetName(const class FText& Name_0);
+	void Set_Header(const class FText& Header);
 
 public:
 	static class UClass* StaticClass()
@@ -41,5 +41,6 @@ public:
 		return GetDefaultObjImpl<UWBP_Chus_Notepad_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_Chus_Notepad_C;
 
 SDK_NAMESPACE_END

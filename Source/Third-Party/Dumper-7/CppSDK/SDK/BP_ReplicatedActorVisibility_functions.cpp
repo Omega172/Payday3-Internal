@@ -16,45 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ReplicatedActorVisibility.BP_ReplicatedActorVisibility_C.ExecuteUbergraph_BP_ReplicatedActorVisibility
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ReplicatedActorVisibility.BP_ReplicatedActorVisibility_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_ReplicatedActorVisibility_C::ExecuteUbergraph_BP_ReplicatedActorVisibility(int32 EntryPoint)
+void ABP_ReplicatedActorVisibility_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedActorVisibility_C", "ExecuteUbergraph_BP_ReplicatedActorVisibility");
-
-	Params::BP_ReplicatedActorVisibility_C_ExecuteUbergraph_BP_ReplicatedActorVisibility Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ReplicatedActorVisibility.BP_ReplicatedActorVisibility_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ReplicatedActorVisibility_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedActorVisibility_C", "OnStateChanged");
-
-	Params::BP_ReplicatedActorVisibility_C_OnStateChanged Parms{};
-
-	Parms.bStateToChangeTo = bStateToChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -65,10 +35,8 @@ void ABP_ReplicatedActorVisibility_C::OnStateChanged(bool bStateToChangeTo, bool
 
 void ABP_ReplicatedActorVisibility_C::setActorVisibility(bool visible)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedActorVisibility_C", "setActorVisibility");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setActorVisibility", FnName));
 
 	Params::BP_ReplicatedActorVisibility_C_setActorVisibility Parms{};
 
@@ -78,17 +46,41 @@ void ABP_ReplicatedActorVisibility_C::setActorVisibility(bool visible)
 }
 
 
-// Function BP_ReplicatedActorVisibility.BP_ReplicatedActorVisibility_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_ReplicatedActorVisibility.BP_ReplicatedActorVisibility_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bStateToChangeTo_OnStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ReplicatedActorVisibility_C::UserConstructionScript()
+void ABP_ReplicatedActorVisibility_C::OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedActorVisibility_C", "UserConstructionScript");
+	Params::BP_ReplicatedActorVisibility_C_OnStateChanged Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.bStateToChangeTo_OnStateChanged = bStateToChangeTo_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ReplicatedActorVisibility.BP_ReplicatedActorVisibility_C.ExecuteUbergraph_BP_ReplicatedActorVisibility
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ReplicatedActorVisibility_C::ExecuteUbergraph_BP_ReplicatedActorVisibility(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ReplicatedActorVisibility_C", "ExecuteUbergraph_BP_ReplicatedActorVisibility", FuncInfo);
+
+	Params::BP_ReplicatedActorVisibility_C_ExecuteUbergraph_BP_ReplicatedActorVisibility Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

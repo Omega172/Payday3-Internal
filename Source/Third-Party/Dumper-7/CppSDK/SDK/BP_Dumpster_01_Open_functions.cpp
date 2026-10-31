@@ -16,69 +16,31 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Dumpster_01_Open.BP_Dumpster_01_Open_C.BndEvt__BP_Dumpster_01_Open_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Dumpster_01_Open.BP_Dumpster_01_Open_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Dumpster_01_Open_C::BndEvt__BP_Dumpster_01_Open_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_Dumpster_01_Open_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Dumpster_01_Open_C", "BndEvt__BP_Dumpster_01_Open_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_Dumpster_01_Open_C_BndEvt__BP_Dumpster_01_Open_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Dumpster_01_Open.BP_Dumpster_01_Open_C.ExecuteUbergraph_BP_Dumpster_01_Open
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_Dumpster_01_Open.BP_Dumpster_01_Open_C.SetStateFunction
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Enum_DumpsterStages                     State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Dumpster_01_Open_C::ExecuteUbergraph_BP_Dumpster_01_Open(int32 EntryPoint)
+void ABP_Dumpster_01_Open_C::SetStateFunction(Enum_DumpsterStages State)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetStateFunction", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Dumpster_01_Open_C", "ExecuteUbergraph_BP_Dumpster_01_Open");
+	Params::BP_Dumpster_01_Open_C_SetStateFunction Parms{};
 
-	Params::BP_Dumpster_01_Open_C_ExecuteUbergraph_BP_Dumpster_01_Open Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Dumpster_01_Open.BP_Dumpster_01_Open_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Dumpster_01_Open_C::OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Dumpster_01_Open_C", "OnStateChanged");
-
-	Params::BP_Dumpster_01_Open_C_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.State = State;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -91,10 +53,8 @@ void ABP_Dumpster_01_Open_C::OnStateChanged(int32 OldState, int32 NewState, bool
 
 void ABP_Dumpster_01_Open_C::setInteraction(bool bEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Dumpster_01_Open_C", "setInteraction");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setInteraction", FnName));
 
 	Params::BP_Dumpster_01_Open_C_setInteraction Parms{};
 
@@ -104,37 +64,65 @@ void ABP_Dumpster_01_Open_C::setInteraction(bool bEnabled)
 }
 
 
-// Function BP_Dumpster_01_Open.BP_Dumpster_01_Open_C.SetStateFunction
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_Dumpster_01_Open.BP_Dumpster_01_Open_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// Enum_DumpsterStages                     State_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   OldState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Dumpster_01_Open_C::SetStateFunction(Enum_DumpsterStages State_0)
+void ABP_Dumpster_01_Open_C::OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Dumpster_01_Open_C", "SetStateFunction");
+	Params::BP_Dumpster_01_Open_C_OnStateChanged Parms{};
 
-	Params::BP_Dumpster_01_Open_C_SetStateFunction Parms{};
-
-	Parms.State_0 = State_0;
+	Parms.OldState_OnStateChanged = OldState_OnStateChanged;
+	Parms.NewState_OnStateChanged = NewState_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_Dumpster_01_Open.BP_Dumpster_01_Open_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_Dumpster_01_Open.BP_Dumpster_01_Open_C.ExecuteUbergraph_BP_Dumpster_01_Open
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Dumpster_01_Open_C::UserConstructionScript()
+void ABP_Dumpster_01_Open_C::ExecuteUbergraph_BP_Dumpster_01_Open(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Dumpster_01_Open_C", "ExecuteUbergraph_BP_Dumpster_01_Open", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Dumpster_01_Open_C", "UserConstructionScript");
+	Params::BP_Dumpster_01_Open_C_ExecuteUbergraph_BP_Dumpster_01_Open Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Dumpster_01_Open.BP_Dumpster_01_Open_C.BndEvt__BP_Dumpster_01_Open_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Dumpster_01_Open_C::BndEvt__BP_Dumpster_01_Open_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Dumpster_01_Open_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_Dumpster_01_Open_C_BndEvt__BP_Dumpster_01_Open_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

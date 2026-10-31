@@ -17,15 +17,26 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_ShootingRangeAccuracyManager.BP_ShootingRangeAccuracyManager_C.BndEvt__BP_ShootingRangeAccuracyManager_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_ShootingRangeAccuracyManager_C_BndEvt__BP_ShootingRangeAccuracyManager_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
+// Function BP_ShootingRangeAccuracyManager.BP_ShootingRangeAccuracyManager_C.UserConstructionScript
+// 0x0040 (0x0040 - 0x0000)
+struct BP_ShootingRangeAccuracyManager_C_UserConstructionScript final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable_0;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_BuildString_Int_ReturnValue;              // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0010(0x0010)()
+	class FString                                 CallFunc_BuildString_Int_ReturnValue_1;            // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0030(0x0010)()
 };
+DUMPER7_ASSERTS_BP_ShootingRangeAccuracyManager_C_UserConstructionScript;
+
+// Function BP_ShootingRangeAccuracyManager.BP_ShootingRangeAccuracyManager_C.MULTI_AddScore
+// 0x0004 (0x0004 - 0x0000)
+struct BP_ShootingRangeAccuracyManager_C_MULTI_AddScore final
+{
+public:
+	int32                                         Score;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ShootingRangeAccuracyManager_C_MULTI_AddScore;
 
 // Function BP_ShootingRangeAccuracyManager.BP_ShootingRangeAccuracyManager_C.ExecuteUbergraph_BP_ShootingRangeAccuracyManager
 // 0x0558 (0x0558 - 0x0000)
@@ -112,25 +123,18 @@ public:
 	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult_2;     // 0x0448(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_K2_SetActorLocation_ReturnValue_2;        // 0x0550(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ShootingRangeAccuracyManager_C_ExecuteUbergraph_BP_ShootingRangeAccuracyManager;
 
-// Function BP_ShootingRangeAccuracyManager.BP_ShootingRangeAccuracyManager_C.MULTI_AddScore
-// 0x0004 (0x0004 - 0x0000)
-struct BP_ShootingRangeAccuracyManager_C_MULTI_AddScore final
+// Function BP_ShootingRangeAccuracyManager.BP_ShootingRangeAccuracyManager_C.BndEvt__BP_ShootingRangeAccuracyManager_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_ShootingRangeAccuracyManager_C_BndEvt__BP_ShootingRangeAccuracyManager_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
 {
 public:
-	int32                                         Score_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_ShootingRangeAccuracyManager.BP_ShootingRangeAccuracyManager_C.UserConstructionScript
-// 0x0040 (0x0040 - 0x0000)
-struct BP_ShootingRangeAccuracyManager_C_UserConstructionScript final
-{
-public:
-	class FString                                 CallFunc_BuildString_Int_ReturnValue;              // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0010(0x0010)()
-	class FString                                 CallFunc_BuildString_Int_ReturnValue_1;            // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0030(0x0010)()
-};
+DUMPER7_ASSERTS_BP_ShootingRangeAccuracyManager_C_BndEvt__BP_ShootingRangeAccuracyManager_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

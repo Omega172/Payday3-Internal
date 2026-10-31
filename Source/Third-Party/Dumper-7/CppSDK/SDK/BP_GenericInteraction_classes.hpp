@@ -27,8 +27,8 @@ public:
 	class UStaticMeshComponent*                   Cube;                                              // 0x0368(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 	void ExecuteUbergraph_BP_GenericInteraction(int32 EntryPoint);
+	void BndEvt__Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<ABP_GenericInteraction_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_GenericInteraction_C;
 
 SDK_NAMESPACE_END

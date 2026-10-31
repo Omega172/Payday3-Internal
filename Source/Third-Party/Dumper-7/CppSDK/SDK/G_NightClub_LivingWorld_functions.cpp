@@ -16,482 +16,60 @@
 
 SDK_NAMESPACE_START
 
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_13_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.PlayerVIP
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_13_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+void AG_NightClub_LivingWorld_C::PlayerVIP()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayerVIP", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NightClub_LivingWorld_C", "BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_13_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_13_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
 
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.ExecuteUbergraph_G_NightClub_LivingWorld
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_NightClub_LivingWorld_C::ExecuteUbergraph_G_NightClub_LivingWorld(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_NightClub_LivingWorld_C", "ExecuteUbergraph_G_NightClub_LivingWorld", FuncInfo);
+
+	Params::G_NightClub_LivingWorld_C_ExecuteUbergraph_G_NightClub_LivingWorld Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_1_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.DespawnExtras
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_1_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+void AG_NightClub_LivingWorld_C::DespawnExtras()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DespawnExtras", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NightClub_LivingWorld_C", "BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_1_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_1_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_21_K2Node_ActorBoundEvent_11_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_OutdoorPier4_K2Node_ActorBoundEvent_14_SBZSpawnRequestCompletedDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_21_K2Node_ActorBoundEvent_11_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_OutdoorPier4_K2Node_ActorBoundEvent_14_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_OutdoorPier4_K2Node_ActorBoundEvent_14_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NightClub_LivingWorld_C", "BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_21_K2Node_ActorBoundEvent_11_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_21_K2Node_ActorBoundEvent_11_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_2_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_2_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NightClub_LivingWorld_C", "BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_2_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_2_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_30_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_30_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NightClub_LivingWorld_C", "BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_30_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_30_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_35_K2Node_ActorBoundEvent_15_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_35_K2Node_ActorBoundEvent_15_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NightClub_LivingWorld_C", "BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_35_K2Node_ActorBoundEvent_15_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_35_K2Node_ActorBoundEvent_15_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_38_K2Node_ActorBoundEvent_16_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_38_K2Node_ActorBoundEvent_16_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NightClub_LivingWorld_C", "BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_38_K2Node_ActorBoundEvent_16_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_38_K2Node_ActorBoundEvent_16_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_3_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_3_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NightClub_LivingWorld_C", "BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_3_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_3_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_44_K2Node_ActorBoundEvent_24_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_44_K2Node_ActorBoundEvent_24_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NightClub_LivingWorld_C", "BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_44_K2Node_ActorBoundEvent_24_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_44_K2Node_ActorBoundEvent_24_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_45_K2Node_ActorBoundEvent_25_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_45_K2Node_ActorBoundEvent_25_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NightClub_LivingWorld_C", "BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_45_K2Node_ActorBoundEvent_25_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_45_K2Node_ActorBoundEvent_25_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_48_K2Node_ActorBoundEvent_17_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_48_K2Node_ActorBoundEvent_17_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NightClub_LivingWorld_C", "BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_48_K2Node_ActorBoundEvent_17_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_48_K2Node_ActorBoundEvent_17_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_52_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_52_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NightClub_LivingWorld_C", "BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_52_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_52_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_56_K2Node_ActorBoundEvent_18_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_56_K2Node_ActorBoundEvent_18_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NightClub_LivingWorld_C", "BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_56_K2Node_ActorBoundEvent_18_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_56_K2Node_ActorBoundEvent_18_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_58_K2Node_ActorBoundEvent_27_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_58_K2Node_ActorBoundEvent_27_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NightClub_LivingWorld_C", "BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_58_K2Node_ActorBoundEvent_27_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_58_K2Node_ActorBoundEvent_27_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_5_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_5_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NightClub_LivingWorld_C", "BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_5_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_5_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_62_K2Node_ActorBoundEvent_22_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_62_K2Node_ActorBoundEvent_22_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NightClub_LivingWorld_C", "BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_62_K2Node_ActorBoundEvent_22_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_62_K2Node_ActorBoundEvent_22_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_64_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_64_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NightClub_LivingWorld_C", "BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_64_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_64_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_69_K2Node_ActorBoundEvent_21_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_69_K2Node_ActorBoundEvent_21_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NightClub_LivingWorld_C", "BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_69_K2Node_ActorBoundEvent_21_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_69_K2Node_ActorBoundEvent_21_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_76_K2Node_ActorBoundEvent_23_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_76_K2Node_ActorBoundEvent_23_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NightClub_LivingWorld_C", "BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_76_K2Node_ActorBoundEvent_23_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_76_K2Node_ActorBoundEvent_23_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_80_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_80_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NightClub_LivingWorld_C", "BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_80_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_80_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_85_K2Node_ActorBoundEvent_28_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_85_K2Node_ActorBoundEvent_28_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NightClub_LivingWorld_C", "BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_85_K2Node_ActorBoundEvent_28_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_85_K2Node_ActorBoundEvent_28_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_93_K2Node_ActorBoundEvent_31_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_93_K2Node_ActorBoundEvent_31_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NightClub_LivingWorld_C", "BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_93_K2Node_ActorBoundEvent_31_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_93_K2Node_ActorBoundEvent_31_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_OutdoorPier4_K2Node_ActorBoundEvent_14_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
 
 	Parms.SpawnedPawn = SpawnedPawn;
 	Parms.Spawnedloot = Spawnedloot;
@@ -508,10 +86,8 @@ void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCiv
 
 void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_95_K2Node_ActorBoundEvent_30_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NightClub_LivingWorld_C", "BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_95_K2Node_ActorBoundEvent_30_SBZSpawnRequestCompletedDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_95_K2Node_ActorBoundEvent_30_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
 
 	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_95_K2Node_ActorBoundEvent_30_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
 
@@ -522,20 +98,18 @@ void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCiv
 }
 
 
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_OutdoorPier4_K2Node_ActorBoundEvent_14_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_93_K2Node_ActorBoundEvent_31_SBZSpawnRequestCompletedDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_OutdoorPier4_K2Node_ActorBoundEvent_14_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_93_K2Node_ActorBoundEvent_31_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_93_K2Node_ActorBoundEvent_31_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NightClub_LivingWorld_C", "BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_OutdoorPier4_K2Node_ActorBoundEvent_14_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_OutdoorPier4_K2Node_ActorBoundEvent_14_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_93_K2Node_ActorBoundEvent_31_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
 
 	Parms.SpawnedPawn = SpawnedPawn;
 	Parms.Spawnedloot = Spawnedloot;
@@ -544,51 +118,423 @@ void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCiv
 }
 
 
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.DespawnExtras
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_NightClub_LivingWorld_C::DespawnExtras()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NightClub_LivingWorld_C", "DespawnExtras");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.ExecuteUbergraph_G_NightClub_LivingWorld
-// (Final, UbergraphFunction, HasDefaults)
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_85_K2Node_ActorBoundEvent_28_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_NightClub_LivingWorld_C::ExecuteUbergraph_G_NightClub_LivingWorld(int32 EntryPoint)
+void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_85_K2Node_ActorBoundEvent_28_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_85_K2Node_ActorBoundEvent_28_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NightClub_LivingWorld_C", "ExecuteUbergraph_G_NightClub_LivingWorld");
+	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_85_K2Node_ActorBoundEvent_28_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
 
-	Params::G_NightClub_LivingWorld_C_ExecuteUbergraph_G_NightClub_LivingWorld Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.PlayerVIP
-// (BlueprintCallable, BlueprintEvent)
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_80_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_NightClub_LivingWorld_C::PlayerVIP()
+void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_80_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_80_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NightClub_LivingWorld_C", "PlayerVIP");
+	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_80_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_76_K2Node_ActorBoundEvent_23_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_76_K2Node_ActorBoundEvent_23_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_76_K2Node_ActorBoundEvent_23_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_76_K2Node_ActorBoundEvent_23_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_69_K2Node_ActorBoundEvent_21_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_69_K2Node_ActorBoundEvent_21_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_69_K2Node_ActorBoundEvent_21_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_69_K2Node_ActorBoundEvent_21_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_64_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_64_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_64_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_64_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_62_K2Node_ActorBoundEvent_22_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_62_K2Node_ActorBoundEvent_22_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_62_K2Node_ActorBoundEvent_22_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_62_K2Node_ActorBoundEvent_22_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_5_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_5_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_5_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_5_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_58_K2Node_ActorBoundEvent_27_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_58_K2Node_ActorBoundEvent_27_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_58_K2Node_ActorBoundEvent_27_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_58_K2Node_ActorBoundEvent_27_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_56_K2Node_ActorBoundEvent_18_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_56_K2Node_ActorBoundEvent_18_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_56_K2Node_ActorBoundEvent_18_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_56_K2Node_ActorBoundEvent_18_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_52_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_52_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_52_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_52_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_48_K2Node_ActorBoundEvent_17_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_48_K2Node_ActorBoundEvent_17_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_48_K2Node_ActorBoundEvent_17_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_48_K2Node_ActorBoundEvent_17_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_45_K2Node_ActorBoundEvent_25_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_45_K2Node_ActorBoundEvent_25_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_45_K2Node_ActorBoundEvent_25_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_45_K2Node_ActorBoundEvent_25_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_44_K2Node_ActorBoundEvent_24_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_44_K2Node_ActorBoundEvent_24_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_44_K2Node_ActorBoundEvent_24_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_44_K2Node_ActorBoundEvent_24_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_3_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_3_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_3_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_3_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_38_K2Node_ActorBoundEvent_16_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_38_K2Node_ActorBoundEvent_16_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_38_K2Node_ActorBoundEvent_16_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_38_K2Node_ActorBoundEvent_16_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_35_K2Node_ActorBoundEvent_15_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_35_K2Node_ActorBoundEvent_15_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_35_K2Node_ActorBoundEvent_15_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_35_K2Node_ActorBoundEvent_15_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_30_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_30_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_30_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_30_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_2_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_2_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_2_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_2_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_21_K2Node_ActorBoundEvent_11_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_21_K2Node_ActorBoundEvent_11_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_21_K2Node_ActorBoundEvent_11_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_21_K2Node_ActorBoundEvent_11_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_1_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_1_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_1_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_1_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_13_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_NightClub_LivingWorld_C::BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_13_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_13_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_13_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

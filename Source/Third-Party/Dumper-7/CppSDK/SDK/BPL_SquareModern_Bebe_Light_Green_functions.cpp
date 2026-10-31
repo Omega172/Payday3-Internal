@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function BPL_SquareModern_Bebe_Light_Green.BPL_SquareModern_Bebe_Light_Green_C.ExecuteUbergraph_BPL_SquareModern_Bebe_Light_Green
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABPL_SquareModern_Bebe_Light_Green_C::ExecuteUbergraph_BPL_SquareModern_Bebe_Light_Green(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BPL_SquareModern_Bebe_Light_Green_C", "ExecuteUbergraph_BPL_SquareModern_Bebe_Light_Green", FuncInfo);
+
+	Params::BPL_SquareModern_Bebe_Light_Green_C_ExecuteUbergraph_BPL_SquareModern_Bebe_Light_Green Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BPL_SquareModern_Bebe_Light_Green.BPL_SquareModern_Bebe_Light_Green_C.BndEvt__BPL_SquareModern_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -24,35 +42,13 @@ SDK_NAMESPACE_START
 
 void ABPL_SquareModern_Bebe_Light_Green_C::BndEvt__BPL_SquareModern_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPL_SquareModern_Bebe_Light_Green_C", "BndEvt__BPL_SquareModern_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BPL_SquareModern_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature", FnName));
 
 	Params::BPL_SquareModern_Bebe_Light_Green_C_BndEvt__BPL_SquareModern_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature Parms{};
 
 	Parms.Type = Type;
 	Parms.HitContext = std::move(HitContext);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BPL_SquareModern_Bebe_Light_Green.BPL_SquareModern_Bebe_Light_Green_C.ExecuteUbergraph_BPL_SquareModern_Bebe_Light_Green
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABPL_SquareModern_Bebe_Light_Green_C::ExecuteUbergraph_BPL_SquareModern_Bebe_Light_Green(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPL_SquareModern_Bebe_Light_Green_C", "ExecuteUbergraph_BPL_SquareModern_Bebe_Light_Green");
-
-	Params::BPL_SquareModern_Bebe_Light_Green_C_ExecuteUbergraph_BPL_SquareModern_Bebe_Light_Green Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

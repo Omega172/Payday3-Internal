@@ -23,10 +23,8 @@ SDK_NAMESPACE_START
 
 void IBPI_PrototypeDisplayWidget_C::PrototypeDisplayDrawTarget(const struct FVector& CalculatedHitLocation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_PrototypeDisplayWidget_C", "PrototypeDisplayDrawTarget");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(AsUObject(), GetStaticName(L"PrototypeDisplayDrawTarget", FnName));
 
 	Params::BPI_PrototypeDisplayWidget_C_PrototypeDisplayDrawTarget Parms{};
 

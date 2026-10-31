@@ -46,19 +46,19 @@ public:
 	bool                                          bHasDisplayName;                                   // 0x04D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetVisibleOverlays();
-	void SetActiveSuitSlot(bool bIsActiveSuitSlot_SetActiveSuitSlot);
-	void Set_Suit_Name_Colour(const struct FLinearColor& DesiredColour);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnSuitSlotInitialized();
-	void OnInitialized();
-	void OnHover(bool bIsHovered);
-	void OnFocused(bool bIsFocused);
-	void InitializeSuitVisuals();
-	void ExecuteUbergraph_WBP_UI_Inventory_SuitSlotButton(int32 EntryPoint);
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
 	void CanCustomize(bool* bCanCustomize);
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
+	void ExecuteUbergraph_WBP_UI_Inventory_SuitSlotButton(int32 EntryPoint);
+	void InitializeSuitVisuals();
+	void OnFocused(bool bIsFocused);
+	void OnHover(bool bIsHovered);
+	void OnInitialized();
+	void OnSuitSlotInitialized();
+	void PreConstruct(bool IsDesignTime);
+	void Set_Suit_Name_Colour(const struct FLinearColor& DesiredColour);
+	void SetActiveSuitSlot(bool bIsActiveSuitSlot);
+	void SetVisibleOverlays();
 
 public:
 	static class UClass* StaticClass()

@@ -34,17 +34,17 @@ public:
 	int32                                         ActiveIndex;                                       // 0x03F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UpdateIndex(int32 NewActiveIndex);
-	void SetCurrentProgress(int32 UnlockedLevel);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnTabUp();
-	void OnTabSelected(int32 SelectedIndex);
-	void OnTabDown();
-	void OnInitialized();
-	void GetRomanNumeral(int32 Index_0, class FText* LevelText);
-	void ExecuteUbergraph_WBP_UI_Overskill_NavBar(int32 EntryPoint);
-	void Destruct();
 	void Construct();
+	void Destruct();
+	void ExecuteUbergraph_WBP_UI_Overskill_NavBar(int32 EntryPoint);
+	void GetRomanNumeral(int32 Index_0, class FText* LevelText);
+	void OnInitialized();
+	void OnTabDown();
+	void OnTabSelected(int32 SelectedIndex);
+	void OnTabUp();
+	void PreConstruct(bool IsDesignTime);
+	void SetCurrentProgress(int32 UnlockedLevel);
+	void UpdateIndex(int32 NewActiveIndex);
 
 public:
 	static class UClass* StaticClass()

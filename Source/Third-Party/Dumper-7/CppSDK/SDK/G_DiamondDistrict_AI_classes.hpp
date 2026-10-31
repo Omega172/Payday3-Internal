@@ -24,9 +24,9 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void BndEvt__G_DiamondDistrict_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_0_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
-	void BndEvt__G_DiamondDistrict_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_1_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
 	void ExecuteUbergraph_G_DiamondDistrict_AI(int32 EntryPoint);
+	void BndEvt__G_DiamondDistrict_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_1_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
+	void BndEvt__G_DiamondDistrict_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_0_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
 
 public:
 	static class UClass* StaticClass()
@@ -42,5 +42,6 @@ public:
 		return GetDefaultObjImpl<AG_DiamondDistrict_AI_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_DiamondDistrict_AI_C;
 
 SDK_NAMESPACE_END

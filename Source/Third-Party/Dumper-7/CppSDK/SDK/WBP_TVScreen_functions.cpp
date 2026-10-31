@@ -16,51 +16,21 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_TVScreen.WBP_TVScreen_C.ExecuteUbergraph_WBP_TVScreen
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_TVScreen.WBP_TVScreen_C.SetTextSecondDay
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_TVScreen_C::ExecuteUbergraph_WBP_TVScreen(int32 EntryPoint)
+void UWBP_TVScreen_C::SetTextSecondDay(const class FText& Text)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetTextSecondDay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TVScreen_C", "ExecuteUbergraph_WBP_TVScreen");
+	Params::WBP_TVScreen_C_SetTextSecondDay Parms{};
 
-	Params::WBP_TVScreen_C_ExecuteUbergraph_WBP_TVScreen Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Text = std::move(Text);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_TVScreen.WBP_TVScreen_C.First Day
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_TVScreen_C::First_Day()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TVScreen_C", "First Day");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_TVScreen.WBP_TVScreen_C.Second Day
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_TVScreen_C::Second_Day()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TVScreen_C", "Second Day");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -71,10 +41,8 @@ void UWBP_TVScreen_C::Second_Day()
 
 void UWBP_TVScreen_C::SetTextFirstDay(const class FText& Text)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TVScreen_C", "SetTextFirstDay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetTextFirstDay", FnName));
 
 	Params::WBP_TVScreen_C_SetTextFirstDay Parms{};
 
@@ -84,21 +52,43 @@ void UWBP_TVScreen_C::SetTextFirstDay(const class FText& Text)
 }
 
 
-// Function WBP_TVScreen.WBP_TVScreen_C.SetTextSecondDay
+// Function WBP_TVScreen.WBP_TVScreen_C.Second Day
 // (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_TVScreen_C::SetTextSecondDay(const class FText& Text)
+void UWBP_TVScreen_C::Second_Day()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Second Day", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TVScreen_C", "SetTextSecondDay");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::WBP_TVScreen_C_SetTextSecondDay Parms{};
 
-	Parms.Text = std::move(Text);
+// Function WBP_TVScreen.WBP_TVScreen_C.First Day
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_TVScreen_C::First_Day()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"First Day", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_TVScreen.WBP_TVScreen_C.ExecuteUbergraph_WBP_TVScreen
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_TVScreen_C::ExecuteUbergraph_WBP_TVScreen(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_TVScreen_C", "ExecuteUbergraph_WBP_TVScreen", FuncInfo);
+
+	Params::WBP_TVScreen_C_ExecuteUbergraph_WBP_TVScreen Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

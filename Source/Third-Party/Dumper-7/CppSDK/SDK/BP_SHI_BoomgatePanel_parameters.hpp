@@ -16,15 +16,25 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_SHI_BoomgatePanel.BP_SHI_BoomgatePanel_C.BndEvt__BP_SHI_BoomgatePanel_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_SHI_BoomgatePanel_C_BndEvt__BP_SHI_BoomgatePanel_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
+// Function BP_SHI_BoomgatePanel.BP_SHI_BoomgatePanel_C.setScreenState
+// 0x0001 (0x0001 - 0x0000)
+struct BP_SHI_BoomgatePanel_C_setScreenState final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          opened;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_SHI_BoomgatePanel_C_setScreenState;
+
+// Function BP_SHI_BoomgatePanel.BP_SHI_BoomgatePanel_C.OnStateChanged
+// 0x000C (0x000C - 0x0000)
+struct BP_SHI_BoomgatePanel_C_OnStateChanged final
+{
+public:
+	int32                                         OldState_OnStateChanged;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewState_OnStateChanged;                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SHI_BoomgatePanel_C_OnStateChanged;
 
 // Function BP_SHI_BoomgatePanel.BP_SHI_BoomgatePanel_C.ExecuteUbergraph_BP_SHI_BoomgatePanel
 // 0x0078 (0x0078 - 0x0000)
@@ -64,24 +74,18 @@ public:
 	uint8                                         Pad_71[0x3];                                       // 0x0071(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_Select_Default_1;                           // 0x0074(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_SHI_BoomgatePanel_C_ExecuteUbergraph_BP_SHI_BoomgatePanel;
 
-// Function BP_SHI_BoomgatePanel.BP_SHI_BoomgatePanel_C.OnStateChanged
-// 0x000C (0x000C - 0x0000)
-struct BP_SHI_BoomgatePanel_C_OnStateChanged final
+// Function BP_SHI_BoomgatePanel.BP_SHI_BoomgatePanel_C.BndEvt__BP_SHI_BoomgatePanel_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_SHI_BoomgatePanel_C_BndEvt__BP_SHI_BoomgatePanel_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
 {
 public:
-	int32                                         OldState;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         NewState;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_SHI_BoomgatePanel.BP_SHI_BoomgatePanel_C.setScreenState
-// 0x0001 (0x0001 - 0x0000)
-struct BP_SHI_BoomgatePanel_C_setScreenState final
-{
-public:
-	bool                                          opened;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_SHI_BoomgatePanel_C_BndEvt__BP_SHI_BoomgatePanel_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

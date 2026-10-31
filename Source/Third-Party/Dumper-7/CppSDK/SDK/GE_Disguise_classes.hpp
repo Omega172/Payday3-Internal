@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_Disguise_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_Disguise_C;
 
 SDK_NAMESPACE_END

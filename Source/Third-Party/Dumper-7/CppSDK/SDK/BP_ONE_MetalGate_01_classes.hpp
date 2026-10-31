@@ -42,13 +42,13 @@ public:
 	double                                        lightIntensity;                                    // 0x03C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_ONE_MetalGate_01(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void openGate__FinishedFunc();
-	void openGate__UpdateFunc();
-	void setLight(double intensity, bool unlocked);
-	void setOpen(bool open, bool doCosmetics);
 	void UserConstructionScript();
+	void setOpen(bool open, bool doCosmetics);
+	void setLight(double intensity, bool unlocked);
+	void openGate__UpdateFunc();
+	void openGate__FinishedFunc();
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_ONE_MetalGate_01(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -64,5 +64,6 @@ public:
 		return GetDefaultObjImpl<ABP_ONE_MetalGate_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ONE_MetalGate_01_C;
 
 SDK_NAMESPACE_END

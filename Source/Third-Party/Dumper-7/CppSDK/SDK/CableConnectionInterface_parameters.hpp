@@ -16,15 +16,14 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function CableConnectionInterface.CableConnectionInterface_C.CorrectColorToCut
+// Function CableConnectionInterface.CableConnectionInterface_C.WhatCabinetIsConnected
 // 0x0010 (0x0010 - 0x0000)
-struct CableConnectionInterface_C_CorrectColorToCut final
+struct CableConnectionInterface_C_WhatCabinetIsConnected final
 {
 public:
-	ECableBox_Color_Enum                          CorrectColorToCut_0;                               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABP_SingleCableBox_C*                   NewParam;                                          // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   NewParam;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
+DUMPER7_ASSERTS_CableConnectionInterface_C_WhatCabinetIsConnected;
 
 // Function CableConnectionInterface.CableConnectionInterface_C.FinishedCable
 // 0x0001 (0x0001 - 0x0000)
@@ -33,14 +32,18 @@ struct CableConnectionInterface_C_FinishedCable final
 public:
 	bool                                          CurrentStateOfCableBox;                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_CableConnectionInterface_C_FinishedCable;
 
-// Function CableConnectionInterface.CableConnectionInterface_C.WhatCabinetIsConnected
+// Function CableConnectionInterface.CableConnectionInterface_C.CorrectColorToCut
 // 0x0010 (0x0010 - 0x0000)
-struct CableConnectionInterface_C_WhatCabinetIsConnected final
+struct CableConnectionInterface_C_CorrectColorToCut final
 {
 public:
-	class FText                                   NewParam;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+	ECableBox_Color_Enum                          CorrectColorToCut;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_SingleCableBox_C*                   NewParam;                                          // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_CableConnectionInterface_C_CorrectColorToCut;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Charm_Skull_DeathSentence_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Charm_Skull_DeathSentence_C;
 
 SDK_NAMESPACE_END

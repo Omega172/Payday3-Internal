@@ -16,25 +16,27 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Zipline.BP_Zipline_C.BP_OnZiplineEnabledChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bEnabled                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Zipline.BP_Zipline_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_Zipline_C::BP_OnZiplineEnabledChanged(bool bEnabled, bool bDoCosmetics)
+void ABP_Zipline_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Zipline_C", "BP_OnZiplineEnabledChanged");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_Zipline_C_BP_OnZiplineEnabledChanged Parms{};
 
-	Parms.bEnabled = bEnabled;
-	Parms.bDoCosmetics = bDoCosmetics;
+// Function BP_Zipline.BP_Zipline_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-	UObject::ProcessEvent(Func, &Parms);
+void ABP_Zipline_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -45,10 +47,8 @@ void ABP_Zipline_C::BP_OnZiplineEnabledChanged(bool bEnabled, bool bDoCosmetics)
 
 void ABP_Zipline_C::ExecuteUbergraph_BP_Zipline(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Zipline_C", "ExecuteUbergraph_BP_Zipline");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Zipline_C", "ExecuteUbergraph_BP_Zipline", FuncInfo);
 
 	Params::BP_Zipline_C_ExecuteUbergraph_BP_Zipline Parms{};
 
@@ -58,31 +58,23 @@ void ABP_Zipline_C::ExecuteUbergraph_BP_Zipline(int32 EntryPoint)
 }
 
 
-// Function BP_Zipline.BP_Zipline_C.ReceiveBeginPlay
+// Function BP_Zipline.BP_Zipline_C.BP_OnZiplineEnabledChanged
 // (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bEnabled_BP_OnZiplineEnabledChanged                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_BP_OnZiplineEnabledChanged                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Zipline_C::ReceiveBeginPlay()
+void ABP_Zipline_C::BP_OnZiplineEnabledChanged(bool bEnabled_BP_OnZiplineEnabledChanged, bool bDoCosmetics_BP_OnZiplineEnabledChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnZiplineEnabledChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Zipline_C", "ReceiveBeginPlay");
+	Params::BP_Zipline_C_BP_OnZiplineEnabledChanged Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Parms.bEnabled_BP_OnZiplineEnabledChanged = bEnabled_BP_OnZiplineEnabledChanged;
+	Parms.bDoCosmetics_BP_OnZiplineEnabledChanged = bDoCosmetics_BP_OnZiplineEnabledChanged;
 
-
-// Function BP_Zipline.BP_Zipline_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_Zipline_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Zipline_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

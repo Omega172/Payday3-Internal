@@ -16,117 +16,79 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.UpdateVisuals
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.BndEvt__WBP_ServerBrowser_DifficultyFilter_Button_Left_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_ServerBrowser_DifficultyFilter_C::UpdateVisuals()
+void UWBP_ServerBrowser_DifficultyFilter_C::BndEvt__WBP_ServerBrowser_DifficultyFilter_Button_Left_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateVisuals", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_ServerBrowser_DifficultyFilter_Button_Left_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.SetReadOnly
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsReadOnly                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.BndEvt__WBP_ServerBrowser_DifficultyFilter_Button_Right_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_ServerBrowser_DifficultyFilter_C::SetReadOnly(bool IsReadOnly)
+void UWBP_ServerBrowser_DifficultyFilter_C::BndEvt__WBP_ServerBrowser_DifficultyFilter_Button_Right_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetReadOnly", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_ServerBrowser_DifficultyFilter_Button_Right_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature", FnName));
 
-	Params::WBP_ServerBrowser_DifficultyFilter_C_SetReadOnly Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.IsReadOnly = IsReadOnly;
+
+// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.BuildOptionsArray
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_ServerBrowser_DifficultyFilter_C::BuildOptionsArray()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BuildOptionsArray", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_DifficultyFilter_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+
+	Params::WBP_ServerBrowser_DifficultyFilter_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.Reset
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_DifficultyFilter_C::Reset()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Reset", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.PreConstruct
+// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_DifficultyFilter_C::PreConstruct(bool IsDesignTime_PreConstruct)
+void UWBP_ServerBrowser_DifficultyFilter_C::Construct()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_ServerBrowser_DifficultyFilter_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.OnSelectionOptionChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   InCurrentIndex_OnSelectionOptionChanged                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bOverrideReadOnly_OnSelectionOptionChanged             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ServerBrowser_DifficultyFilter_C::OnSelectionOptionChanged(int32 InCurrentIndex_OnSelectionOptionChanged, bool bOverrideReadOnly_OnSelectionOptionChanged)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSelectionOptionChanged", FnName));
-
-	Params::WBP_ServerBrowser_DifficultyFilter_C_OnSelectionOptionChanged Parms{};
-
-	Parms.InCurrentIndex_OnSelectionOptionChanged = InCurrentIndex_OnSelectionOptionChanged;
-	Parms.bOverrideReadOnly_OnSelectionOptionChanged = bOverrideReadOnly_OnSelectionOptionChanged;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.OnSelectedRight
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_ServerBrowser_DifficultyFilter_C::OnSelectedRight()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSelectedRight", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.OnSelectedLeft
-// (Event, Protected, BlueprintEvent)
+// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_ServerBrowser_DifficultyFilter_C::OnSelectedLeft()
+void UWBP_ServerBrowser_DifficultyFilter_C::Destruct()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSelectedLeft", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.MakeInLine
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_DifficultyFilter_C::MakeInLine()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MakeInLine", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Destruct", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -150,79 +112,117 @@ void UWBP_ServerBrowser_DifficultyFilter_C::ExecuteUbergraph_WBP_ServerBrowser_D
 }
 
 
-// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.MakeInLine
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_ServerBrowser_DifficultyFilter_C::Destruct()
+void UWBP_ServerBrowser_DifficultyFilter_C::MakeInLine()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Destruct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MakeInLine", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.OnSelectedLeft
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_ServerBrowser_DifficultyFilter_C::Construct()
+void UWBP_ServerBrowser_DifficultyFilter_C::OnSelectedLeft()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSelectedLeft", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.ButtonFocusedChanged
+// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.OnSelectedRight
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_ServerBrowser_DifficultyFilter_C::OnSelectedRight()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSelectedRight", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.OnSelectionOptionChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bInHasFocus_ButtonFocusedChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   InCurrentIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bOverrideReadOnly                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_DifficultyFilter_C::ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged)
+void UWBP_ServerBrowser_DifficultyFilter_C::OnSelectionOptionChanged(int32 InCurrentIndex, bool bOverrideReadOnly)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSelectionOptionChanged", FnName));
 
-	Params::WBP_ServerBrowser_DifficultyFilter_C_ButtonFocusedChanged Parms{};
+	Params::WBP_ServerBrowser_DifficultyFilter_C_OnSelectionOptionChanged Parms{};
 
-	Parms.bInHasFocus_ButtonFocusedChanged = bInHasFocus_ButtonFocusedChanged;
+	Parms.InCurrentIndex = InCurrentIndex;
+	Parms.bOverrideReadOnly = bOverrideReadOnly;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.BuildOptionsArray
+// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ServerBrowser_DifficultyFilter_C::PreConstruct(bool IsDesignTime)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_ServerBrowser_DifficultyFilter_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.Reset
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_ServerBrowser_DifficultyFilter_C::BuildOptionsArray()
+void UWBP_ServerBrowser_DifficultyFilter_C::Reset()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BuildOptionsArray", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Reset", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.BndEvt__WBP_ServerBrowser_DifficultyFilter_Button_Right_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.SetReadOnly
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsReadOnly                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ServerBrowser_DifficultyFilter_C::BndEvt__WBP_ServerBrowser_DifficultyFilter_Button_Right_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature()
+void UWBP_ServerBrowser_DifficultyFilter_C::SetReadOnly(bool IsReadOnly)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_ServerBrowser_DifficultyFilter_Button_Right_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetReadOnly", FnName));
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_ServerBrowser_DifficultyFilter_C_SetReadOnly Parms{};
+
+	Parms.IsReadOnly = IsReadOnly;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.BndEvt__WBP_ServerBrowser_DifficultyFilter_Button_Left_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_ServerBrowser_DifficultyFilter.WBP_ServerBrowser_DifficultyFilter_C.UpdateVisuals
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_ServerBrowser_DifficultyFilter_C::BndEvt__WBP_ServerBrowser_DifficultyFilter_Button_Left_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature()
+void UWBP_ServerBrowser_DifficultyFilter_C::UpdateVisuals()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_ServerBrowser_DifficultyFilter_Button_Left_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateVisuals", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

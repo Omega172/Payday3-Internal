@@ -25,8 +25,8 @@ public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0330(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_BinaryReplicatedStateControlledChild(int32 EntryPoint);
 	void onStateChanged(bool state, bool doCosmetics);
+	void ExecuteUbergraph_BP_BinaryReplicatedStateControlledChild(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -42,5 +42,6 @@ public:
 		return GetDefaultObjImpl<ABP_BinaryReplicatedStateControlledChild_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BinaryReplicatedStateControlledChild_C;
 
 SDK_NAMESPACE_END

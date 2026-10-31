@@ -14,6 +14,29 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_HackingZoneController.WBP_HackingZoneController_C.setText
+// 0x0060 (0x0060 - 0x0000)
+struct WBP_HackingZoneController_C_setText final
+{
+public:
+	class FText                                   disabled;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   done;                                              // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   inactive;                                          // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   interrupt;                                         // 0x0030(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   paused;                                            // 0x0040(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   running;                                           // 0x0050(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_HackingZoneController_C_setText;
+
+// Function WBP_HackingZoneController.WBP_HackingZoneController_C.HideAllWidgetsButOne
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_HackingZoneController_C_HideAllWidgetsButOne final
+{
+public:
+	class UWidget*                                WidgetToShow;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_HackingZoneController_C_HideAllWidgetsButOne;
+
 // Function WBP_HackingZoneController.WBP_HackingZoneController_C.ExecuteUbergraph_WBP_HackingZoneController
 // 0x0070 (0x0070 - 0x0000)
 struct WBP_HackingZoneController_C_ExecuteUbergraph_WBP_HackingZoneController final
@@ -34,27 +57,7 @@ public:
 	bool                                          CallFunc_TextIsEmpty_ReturnValue_4;                // 0x006C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_TextIsEmpty_ReturnValue_5;                // 0x006D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function WBP_HackingZoneController.WBP_HackingZoneController_C.HideAllWidgetsButOne
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_HackingZoneController_C_HideAllWidgetsButOne final
-{
-public:
-	class UWidget*                                WidgetToShow;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WBP_HackingZoneController.WBP_HackingZoneController_C.setText
-// 0x0060 (0x0060 - 0x0000)
-struct WBP_HackingZoneController_C_setText final
-{
-public:
-	class FText                                   disabled;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class FText                                   done;                                              // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class FText                                   inactive;                                          // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class FText                                   interrupt;                                         // 0x0030(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class FText                                   paused;                                            // 0x0040(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class FText                                   running;                                           // 0x0050(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
+DUMPER7_ASSERTS_WBP_HackingZoneController_C_ExecuteUbergraph_WBP_HackingZoneController;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

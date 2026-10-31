@@ -28,9 +28,9 @@ public:
 	TArray<struct FVector>                        JoinablePinLocations;                              // 0x0388(0x0010)(Edit, BlueprintVisible)
 
 public:
-	void ReceiveBeginPlay();
-	void Populate_Data();
 	void ExecuteUbergraph_BP_MapPinManager(int32 EntryPoint);
+	void Populate_Data();
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()

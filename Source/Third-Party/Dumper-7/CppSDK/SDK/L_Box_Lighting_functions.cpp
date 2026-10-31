@@ -16,23 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function L_Box_Lighting.L_Box_Lighting_C.ExecuteUbergraph_L_Box_Lighting
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function L_Box_Lighting.L_Box_Lighting_C.RemoveYardContainerLights
+// (BlueprintCallable, BlueprintEvent)
 
-void AL_Box_Lighting_C::ExecuteUbergraph_L_Box_Lighting(int32 EntryPoint)
+void AL_Box_Lighting_C::RemoveYardContainerLights()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RemoveYardContainerLights", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("L_Box_Lighting_C", "ExecuteUbergraph_L_Box_Lighting");
-
-	Params::L_Box_Lighting_C_ExecuteUbergraph_L_Box_Lighting Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -41,26 +33,28 @@ void AL_Box_Lighting_C::ExecuteUbergraph_L_Box_Lighting(int32 EntryPoint)
 
 void AL_Box_Lighting_C::RemoveWarehouseContainerLights()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("L_Box_Lighting_C", "RemoveWarehouseContainerLights");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RemoveWarehouseContainerLights", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function L_Box_Lighting.L_Box_Lighting_C.RemoveYardContainerLights
-// (BlueprintCallable, BlueprintEvent)
+// Function L_Box_Lighting.L_Box_Lighting_C.ExecuteUbergraph_L_Box_Lighting
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AL_Box_Lighting_C::RemoveYardContainerLights()
+void AL_Box_Lighting_C::ExecuteUbergraph_L_Box_Lighting(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "L_Box_Lighting_C", "ExecuteUbergraph_L_Box_Lighting", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("L_Box_Lighting_C", "RemoveYardContainerLights");
+	Params::L_Box_Lighting_C_ExecuteUbergraph_L_Box_Lighting Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

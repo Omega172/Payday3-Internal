@@ -10,14 +10,41 @@
 
 #include "Basic.hpp"
 
+#include "RigVM_structs.hpp"
+#include "RigVM_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "ControlRig_structs.hpp"
 #include "ControlRig_classes.hpp"
-#include "RigVM_structs.hpp"
-#include "RigVM_classes.hpp"
 
 
 SDK_NAMESPACE_START
+
+// ControlRigBlueprintGeneratedClass CR_Moon_Assault.CR_Moon_Assault_C
+// 0x0058 (0x0B40 - 0x0AE8)
+class UCR_Moon_Assault_C final : public UControlRig
+{
+public:
+	struct FVector                                Velocity;                                          // 0x0AE8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        RestInterpolateSpeed;                              // 0x0B00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                               RotorRotation;                                     // 0x0B08(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                                HurtForce;                                         // 0x0B20(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        YawSpeed;                                          // 0x0B38(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+public:
+	static class UClass* StaticClass()
+	{
+		BP_STATIC_CLASS_IMPL("CR_Moon_Assault_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CR_Moon_Assault_C")
+	}
+	static class UCR_Moon_Assault_C* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UCR_Moon_Assault_C>();
+	}
+};
+DUMPER7_ASSERTS_UCR_Moon_Assault_C;
 
 // RigVMMemoryStorageGeneratorClass CR_Moon_Assault.RigVMMemory_Work
 // 0x14A0 (0x14D0 - 0x0030)
@@ -199,32 +226,7 @@ public:
 		return GetDefaultObjImpl<CR_Moon_Assault::URigVMMemory_Work>();
 	}
 };
-
-// ControlRigBlueprintGeneratedClass CR_Moon_Assault.CR_Moon_Assault_C
-// 0x0058 (0x0B40 - 0x0AE8)
-class UCR_Moon_Assault_C final : public UControlRig
-{
-public:
-	struct FVector                                Velocity;                                          // 0x0AE8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        RestInterpolateSpeed;                              // 0x0B00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                               RotorRotation;                                     // 0x0B08(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	struct FVector                                HurtForce;                                         // 0x0B20(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        YawSpeed;                                          // 0x0B38(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-public:
-	static class UClass* StaticClass()
-	{
-		BP_STATIC_CLASS_IMPL("CR_Moon_Assault_C")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"CR_Moon_Assault_C")
-	}
-	static class UCR_Moon_Assault_C* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UCR_Moon_Assault_C>();
-	}
-};
+DUMPER7_ASSERTS_CR_Moon_Assault__URigVMMemory_Work;
 
 // RigVMMemoryStorageGeneratorClass CR_Moon_Assault.RigVMMemory_Literal
 // 0x01F0 (0x0220 - 0x0030)
@@ -292,5 +294,6 @@ public:
 		return GetDefaultObjImpl<CR_Moon_Assault::URigVMMemory_Literal>();
 	}
 };
+DUMPER7_ASSERTS_CR_Moon_Assault__URigVMMemory_Literal;
 
 SDK_NAMESPACE_END

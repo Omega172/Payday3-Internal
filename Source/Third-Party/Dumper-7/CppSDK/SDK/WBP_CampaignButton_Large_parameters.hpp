@@ -18,70 +18,23 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_CampaignButton_Large.WBP_CampaignButton_Large_C.UpdateState
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_CampaignButton_Large_C_UpdateState final
-{
-public:
-	ESBZCampaignEntryState                        State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZCampaignEntryState                        OldState;                                          // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CampaignButton_Large_C_UpdateState;
-
-// Function WBP_CampaignButton_Large.WBP_CampaignButton_Large_C.SetSelected
+// Function WBP_CampaignButton_Large.WBP_CampaignButton_Large_C.ButtonFocusedChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_CampaignButton_Large_C_SetSelected final
+struct WBP_CampaignButton_Large_C_ButtonFocusedChanged final
 {
 public:
-	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CampaignButton_Large_C_SetSelected;
+DUMPER7_ASSERTS_WBP_CampaignButton_Large_C_ButtonFocusedChanged;
 
-// Function WBP_CampaignButton_Large.WBP_CampaignButton_Large_C.SetEntryState
+// Function WBP_CampaignButton_Large.WBP_CampaignButton_Large_C.ButtonHoveredChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_CampaignButton_Large_C_SetEntryState final
+struct WBP_CampaignButton_Large_C_ButtonHoveredChanged final
 {
 public:
-	ESBZCampaignEntryState                        NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CampaignButton_Large_C_SetEntryState;
-
-// Function WBP_CampaignButton_Large.WBP_CampaignButton_Large_C.SetCampaignData
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignButton_Large_C_SetCampaignData final
-{
-public:
-	const class USBZCampaignBaseEntryData*        Entry;                                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CampaignButton_Large_C_SetCampaignData;
-
-// Function WBP_CampaignButton_Large.WBP_CampaignButton_Large_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CampaignButton_Large_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CampaignButton_Large_C_PreConstruct;
-
-// Function WBP_CampaignButton_Large.WBP_CampaignButton_Large_C.OnStateUpdated
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_CampaignButton_Large_C_OnStateUpdated final
-{
-public:
-	ESBZCampaignEntryState                        OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZCampaignEntryState                        NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CampaignButton_Large_C_OnStateUpdated;
-
-// Function WBP_CampaignButton_Large.WBP_CampaignButton_Large_C.GetEntryState
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CampaignButton_Large_C_GetEntryState final
-{
-public:
-	ESBZCampaignEntryState                        ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CampaignButton_Large_C_GetEntryState;
+DUMPER7_ASSERTS_WBP_CampaignButton_Large_C_ButtonHoveredChanged;
 
 // Function WBP_CampaignButton_Large.WBP_CampaignButton_Large_C.ExecuteUbergraph_WBP_CampaignButton_Large
 // 0x0080 (0x0080 - 0x0000)
@@ -136,23 +89,70 @@ public:
 };
 DUMPER7_ASSERTS_WBP_CampaignButton_Large_C_ExecuteUbergraph_WBP_CampaignButton_Large;
 
-// Function WBP_CampaignButton_Large.WBP_CampaignButton_Large_C.ButtonHoveredChanged
+// Function WBP_CampaignButton_Large.WBP_CampaignButton_Large_C.GetEntryState
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_CampaignButton_Large_C_ButtonHoveredChanged final
+struct WBP_CampaignButton_Large_C_GetEntryState final
 {
 public:
-	bool                                          bInIsHovered_ButtonHoveredChanged;                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZCampaignEntryState                        ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CampaignButton_Large_C_ButtonHoveredChanged;
+DUMPER7_ASSERTS_WBP_CampaignButton_Large_C_GetEntryState;
 
-// Function WBP_CampaignButton_Large.WBP_CampaignButton_Large_C.ButtonFocusedChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CampaignButton_Large_C_ButtonFocusedChanged final
+// Function WBP_CampaignButton_Large.WBP_CampaignButton_Large_C.OnStateUpdated
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_CampaignButton_Large_C_OnStateUpdated final
 {
 public:
-	bool                                          bInHasFocus_ButtonFocusedChanged;                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZCampaignEntryState                        OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZCampaignEntryState                        NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CampaignButton_Large_C_ButtonFocusedChanged;
+DUMPER7_ASSERTS_WBP_CampaignButton_Large_C_OnStateUpdated;
+
+// Function WBP_CampaignButton_Large.WBP_CampaignButton_Large_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CampaignButton_Large_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CampaignButton_Large_C_PreConstruct;
+
+// Function WBP_CampaignButton_Large.WBP_CampaignButton_Large_C.SetCampaignData
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignButton_Large_C_SetCampaignData final
+{
+public:
+	const class USBZCampaignBaseEntryData*        Entry;                                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CampaignButton_Large_C_SetCampaignData;
+
+// Function WBP_CampaignButton_Large.WBP_CampaignButton_Large_C.SetEntryState
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CampaignButton_Large_C_SetEntryState final
+{
+public:
+	ESBZCampaignEntryState                        NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CampaignButton_Large_C_SetEntryState;
+
+// Function WBP_CampaignButton_Large.WBP_CampaignButton_Large_C.SetSelected
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CampaignButton_Large_C_SetSelected final
+{
+public:
+	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CampaignButton_Large_C_SetSelected;
+
+// Function WBP_CampaignButton_Large.WBP_CampaignButton_Large_C.UpdateState
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_CampaignButton_Large_C_UpdateState final
+{
+public:
+	ESBZCampaignEntryState                        State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZCampaignEntryState                        OldState;                                          // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CampaignButton_Large_C_UpdateState;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

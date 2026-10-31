@@ -16,177 +16,79 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.SetCarouselScrollingEnabled
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.AddItem
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    InEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TSoftObjectPtr<class UPaperSprite>      InNewsBannerSprite                                     (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 
-void UWBP_NewsBannerButton_C::SetCarouselScrollingEnabled(bool InEnable)
+void UWBP_NewsBannerButton_C::AddItem(TSoftObjectPtr<class UPaperSprite> InNewsBannerSprite)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetCarouselScrollingEnabled", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AddItem", FnName));
 
-	Params::WBP_NewsBannerButton_C_SetCarouselScrollingEnabled Parms{};
+	Params::WBP_NewsBannerButton_C_AddItem Parms{};
 
-	Parms.InEnable = InEnable;
+	Parms.InNewsBannerSprite = InNewsBannerSprite;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.PrePush_8EB9615743E868CC16B8B98168973148
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.ButtonFocusChanging
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_NewsBannerButton_C::PrePush_8EB9615743E868CC16B8B98168973148(class USBZMenuStackScreenWidget* MenuWidget)
+void UWBP_NewsBannerButton_C::ButtonFocusChanging(bool bInHasFocus)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrePush_8EB9615743E868CC16B8B98168973148", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusChanging", FnName));
 
-	Params::WBP_NewsBannerButton_C_PrePush_8EB9615743E868CC16B8B98168973148 Parms{};
+	Params::WBP_NewsBannerButton_C_ButtonFocusChanging Parms{};
 
-	Parms.MenuWidget = MenuWidget;
+	Parms.bInHasFocus = bInHasFocus;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.ButtonSelected
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_NewsBannerButton_C::PreConstruct(bool IsDesignTime_PreConstruct)
+void UWBP_NewsBannerButton_C::ButtonSelected()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_NewsBannerButton_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.PostPush_8EB9615743E868CC16B8B98168973148
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_NewsBannerButton_C::PostPush_8EB9615743E868CC16B8B98168973148(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PostPush_8EB9615743E868CC16B8B98168973148", FnName));
-
-	Params::WBP_NewsBannerButton_C_PostPush_8EB9615743E868CC16B8B98168973148 Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.OnPageChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZCarouselWidget*               CarouselWidget                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   CurrentPageIndex                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_NewsBannerButton_C::OnPageChanged(class USBZCarouselWidget* CarouselWidget, int32 CurrentPageIndex)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPageChanged", FnName));
-
-	Params::WBP_NewsBannerButton_C_OnPageChanged Parms{};
-
-	Parms.CarouselWidget = CarouselWidget;
-	Parms.CurrentPageIndex = CurrentPageIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.OnLoaded_813F0F464F27D3064999EA93F00DB390
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TSubclassOf<class UObject>              Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-
-void UWBP_NewsBannerButton_C::OnLoaded_813F0F464F27D3064999EA93F00DB390(TSubclassOf<class UObject> Loaded)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLoaded_813F0F464F27D3064999EA93F00DB390", FnName));
-
-	Params::WBP_NewsBannerButton_C_OnLoaded_813F0F464F27D3064999EA93F00DB390 Parms{};
-
-	Parms.Loaded = Loaded;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_NewsBannerButton_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonSelected", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.OnHoveredChanged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    InHovered                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_NewsBannerButton_C::OnHoveredChanged(bool InHovered)
+void UWBP_NewsBannerButton_C::Destruct()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnHoveredChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Destruct", FnName));
 
-	Params::WBP_NewsBannerButton_C_OnHoveredChanged Parms{};
-
-	Parms.InHovered = InHovered;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.OnFocusedChanged
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.ExecuteUbergraph_WBP_NewsBannerButton
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// bool                                    InFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_NewsBannerButton_C::OnFocusedChanged(bool InFocused)
+void UWBP_NewsBannerButton_C::ExecuteUbergraph_WBP_NewsBannerButton(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnFocusedChanged", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_NewsBannerButton_C", "ExecuteUbergraph_WBP_NewsBannerButton", FuncInfo);
 
-	Params::WBP_NewsBannerButton_C_OnFocusedChanged Parms{};
+	Params::WBP_NewsBannerButton_C_ExecuteUbergraph_WBP_NewsBannerButton Parms{};
 
-	Parms.InFocused = InFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.NavigateToPage
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   InNavigateIndex                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_NewsBannerButton_C::NavigateToPage(int32 InNavigateIndex)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"NavigateToPage", FnName));
-
-	Params::WBP_NewsBannerButton_C_NavigateToPage Parms{};
-
-	Parms.InNavigateIndex = InNavigateIndex;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -214,79 +116,177 @@ void UWBP_NewsBannerButton_C::InitializeNewsEntries(TArray<struct FSBZNewsDataUI
 }
 
 
-// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.ExecuteUbergraph_WBP_NewsBannerButton
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_NewsBannerButton_C::ExecuteUbergraph_WBP_NewsBannerButton(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_NewsBannerButton_C", "ExecuteUbergraph_WBP_NewsBannerButton", FuncInfo);
-
-	Params::WBP_NewsBannerButton_C_ExecuteUbergraph_WBP_NewsBannerButton Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_NewsBannerButton_C::Destruct()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Destruct", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.ButtonSelected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_NewsBannerButton_C::ButtonSelected()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonSelected", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.ButtonFocusChanging
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus_ButtonFocusChanging                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_NewsBannerButton_C::ButtonFocusChanging(bool bInHasFocus_ButtonFocusChanging)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusChanging", FnName));
-
-	Params::WBP_NewsBannerButton_C_ButtonFocusChanging Parms{};
-
-	Parms.bInHasFocus_ButtonFocusChanging = bInHasFocus_ButtonFocusChanging;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.AddItem
+// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.NavigateToPage
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// TSoftObjectPtr<class UPaperSprite>      InNewsBannerSprite                                     (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// int32                                   InNavigateIndex                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_NewsBannerButton_C::AddItem(TSoftObjectPtr<class UPaperSprite> InNewsBannerSprite)
+void UWBP_NewsBannerButton_C::NavigateToPage(int32 InNavigateIndex)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AddItem", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"NavigateToPage", FnName));
 
-	Params::WBP_NewsBannerButton_C_AddItem Parms{};
+	Params::WBP_NewsBannerButton_C_NavigateToPage Parms{};
 
-	Parms.InNewsBannerSprite = InNewsBannerSprite;
+	Parms.InNavigateIndex = InNavigateIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.OnFocusedChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    InFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_NewsBannerButton_C::OnFocusedChanged(bool InFocused)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnFocusedChanged", FnName));
+
+	Params::WBP_NewsBannerButton_C_OnFocusedChanged Parms{};
+
+	Parms.InFocused = InFocused;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.OnHoveredChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    InHovered                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_NewsBannerButton_C::OnHoveredChanged(bool InHovered)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnHoveredChanged", FnName));
+
+	Params::WBP_NewsBannerButton_C_OnHoveredChanged Parms{};
+
+	Parms.InHovered = InHovered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_NewsBannerButton_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.OnLoaded_813F0F464F27D3064999EA93F00DB390
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TSubclassOf<class UObject>              Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+
+void UWBP_NewsBannerButton_C::OnLoaded_813F0F464F27D3064999EA93F00DB390(TSubclassOf<class UObject> Loaded)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLoaded_813F0F464F27D3064999EA93F00DB390", FnName));
+
+	Params::WBP_NewsBannerButton_C_OnLoaded_813F0F464F27D3064999EA93F00DB390 Parms{};
+
+	Parms.Loaded = Loaded;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.OnPageChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZCarouselWidget*               CarouselWidget                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentPageIndex                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_NewsBannerButton_C::OnPageChanged(class USBZCarouselWidget* CarouselWidget, int32 CurrentPageIndex)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPageChanged", FnName));
+
+	Params::WBP_NewsBannerButton_C_OnPageChanged Parms{};
+
+	Parms.CarouselWidget = CarouselWidget;
+	Parms.CurrentPageIndex = CurrentPageIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.PostPush_8EB9615743E868CC16B8B98168973148
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_NewsBannerButton_C::PostPush_8EB9615743E868CC16B8B98168973148(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PostPush_8EB9615743E868CC16B8B98168973148", FnName));
+
+	Params::WBP_NewsBannerButton_C_PostPush_8EB9615743E868CC16B8B98168973148 Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_NewsBannerButton_C::PreConstruct(bool IsDesignTime)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_NewsBannerButton_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.PrePush_8EB9615743E868CC16B8B98168973148
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_NewsBannerButton_C::PrePush_8EB9615743E868CC16B8B98168973148(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrePush_8EB9615743E868CC16B8B98168973148", FnName));
+
+	Params::WBP_NewsBannerButton_C_PrePush_8EB9615743E868CC16B8B98168973148 Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_NewsBannerButton.WBP_NewsBannerButton_C.SetCarouselScrollingEnabled
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    InEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_NewsBannerButton_C::SetCarouselScrollingEnabled(bool InEnable)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetCarouselScrollingEnabled", FnName));
+
+	Params::WBP_NewsBannerButton_C_SetCarouselScrollingEnabled Parms{};
+
+	Parms.InEnable = InEnable;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AG_ArtGallery_Coverpoints_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_ArtGallery_Coverpoints_C;
 
 SDK_NAMESPACE_END

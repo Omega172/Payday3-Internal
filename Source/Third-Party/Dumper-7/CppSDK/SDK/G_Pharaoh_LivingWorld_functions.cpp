@@ -20,20 +20,18 @@ SDK_NAMESPACE_START
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AActor*                           SpecificActionComponentOwner                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UObject*                          Owner_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          Owner                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int32                                   MixedSeed                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Pharaoh_LivingWorld_C::PushLiveAction(class AActor* SpecificActionComponentOwner, class UObject* Owner_0, int32 MixedSeed)
+void AG_Pharaoh_LivingWorld_C::PushLiveAction(class AActor* SpecificActionComponentOwner, class UObject* Owner, int32 MixedSeed)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Pharaoh_LivingWorld_C", "PushLiveAction");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PushLiveAction", FnName));
 
 	Params::G_Pharaoh_LivingWorld_C_PushLiveAction Parms{};
 
 	Parms.SpecificActionComponentOwner = SpecificActionComponentOwner;
-	Parms.Owner_0 = Owner_0;
+	Parms.Owner = Owner;
 	Parms.MixedSeed = MixedSeed;
 
 	UObject::ProcessEvent(Func, &Parms);

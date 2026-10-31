@@ -19,206 +19,184 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_CleanBB_Scripting_BP_push_keep_Animated_ButtonInsideVault_K2Node_ActorBoundEvent_15_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_SnGBB_Scripting_C_BndEvt__G_CleanBB_Scripting_BP_push_keep_Animated_ButtonInsideVault_K2Node_ActorBoundEvent_15_SBZActorOnInteraction__DelegateSignature final
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.SetSecureLootZone
+// 0x0028 (0x0028 - 0x0000)
+struct G_SnGBB_Scripting_C_SetSecureLootZone final
 {
 public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          Enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZWaypoint*                           Waypoint;                                          // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagTriggerVolume*                   BagTriggerVolume;                                  // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerTriggerVolume*                VoiceVolume;                                       // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_SetSecureLootZone;
 
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_CleanBB_Scripting_BP_RedKeycardReader2_5_K2Node_ActorBoundEvent_8_SBZModuleActorStateChangedDelegate__DelegateSignature
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.SetLoudRightSecureLoot
 // 0x0001 (0x0001 - 0x0000)
-struct G_SnGBB_Scripting_C_BndEvt__G_CleanBB_Scripting_BP_RedKeycardReader2_5_K2Node_ActorBoundEvent_8_SBZModuleActorStateChangedDelegate__DelegateSignature final
+struct G_SnGBB_Scripting_C_SetLoudRightSecureLoot final
 {
 public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_SetLoudRightSecureLoot;
 
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_CleanBB_Scripting_BP_RedKeycardReader_2_K2Node_ActorBoundEvent_7_SBZModuleActorStateChangedDelegate__DelegateSignature
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.SetLoudRightEscape
 // 0x0001 (0x0001 - 0x0000)
-struct G_SnGBB_Scripting_C_BndEvt__G_CleanBB_Scripting_BP_RedKeycardReader_2_K2Node_ActorBoundEvent_7_SBZModuleActorStateChangedDelegate__DelegateSignature final
+struct G_SnGBB_Scripting_C_SetLoudRightEscape final
 {
 public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_SetLoudRightEscape;
 
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_CleanBB_Scripting_BP_SmallVaultDoor_2_K2Node_ActorBoundEvent_14_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_SnGBB_Scripting_C_BndEvt__G_CleanBB_Scripting_BP_SmallVaultDoor_2_K2Node_ActorBoundEvent_14_SBZGateStateChangedDelegate__DelegateSignature final
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.SetLoudLeftSecureLoot
+// 0x0001 (0x0001 - 0x0000)
+struct G_SnGBB_Scripting_C_SetLoudLeftSecureLoot final
 {
 public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_SetLoudLeftSecureLoot;
 
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_CleanBB_Scripting_BP_vault_gate2_K2Node_ActorBoundEvent_12_SBZActorOnInteraction__DelegateSignature
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.SetLoudLeftEscape
+// 0x0001 (0x0001 - 0x0000)
+struct G_SnGBB_Scripting_C_SetLoudLeftEscape final
+{
+public:
+	bool                                          Enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_SetLoudLeftEscape;
+
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.SetEscapeZone
+// 0x0020 (0x0020 - 0x0000)
+struct G_SnGBB_Scripting_C_SetEscapeZone final
+{
+public:
+	bool                                          Enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZWaypoint*                           Waypoint;                                          // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZReplicatedBinaryStateActor*         MarkerZone;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerTriggerVolume*                EscapeVolume;                                      // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_SetEscapeZone;
+
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.SecureLoot
+// 0x0004 (0x0004 - 0x0000)
+struct G_SnGBB_Scripting_C_SecureLoot final
+{
+public:
+	int32                                         Progress;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_SecureLoot;
+
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.RedKeycardPicked
 // 0x0010 (0x0010 - 0x0000)
-struct G_SnGBB_Scripting_C_BndEvt__G_CleanBB_Scripting_BP_vault_gate2_K2Node_ActorBoundEvent_12_SBZActorOnInteraction__DelegateSignature final
+struct G_SnGBB_Scripting_C_RedKeycardPicked final
 {
 public:
 	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_RedKeycardPicked;
 
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_CleanBB_Scripting_BP_vault_gate_K2Node_ActorBoundEvent_11_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_SnGBB_Scripting_C_BndEvt__G_CleanBB_Scripting_BP_vault_gate_K2Node_ActorBoundEvent_11_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_CleanBB_Scripting_SBZBagTriggerVolumeStealth2_K2Node_ActorBoundEvent_1_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_SnGBB_Scripting_C_BndEvt__G_CleanBB_Scripting_SBZBagTriggerVolumeStealth2_K2Node_ActorBoundEvent_1_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_CleanBB_Scripting_SBZBagTriggerVolumeStealth_K2Node_ActorBoundEvent_0_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_SnGBB_Scripting_C_BndEvt__G_CleanBB_Scripting_SBZBagTriggerVolumeStealth_K2Node_ActorBoundEvent_0_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_CleanBB_Scripting_SBZFilteredTriggerVolume_OvkWeapon1_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_SnGBB_Scripting_C_BndEvt__G_CleanBB_Scripting_SBZFilteredTriggerVolume_OvkWeapon1_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_CleanBB_Scripting_SBZPlayerTriggerVolume_StealthVanDoors1_K2Node_ActorBoundEvent_19_SBZPawnDynamicDelegate__DelegateSignature
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.PlayerEnteredBank
 // 0x0008 (0x0008 - 0x0000)
-struct G_SnGBB_Scripting_C_BndEvt__G_CleanBB_Scripting_SBZPlayerTriggerVolume_StealthVanDoors1_K2Node_ActorBoundEvent_19_SBZPawnDynamicDelegate__DelegateSignature final
+struct G_SnGBB_Scripting_C_PlayerEnteredBank final
 {
 public:
 	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_PlayerEnteredBank;
 
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_SnGBB_Scripting_BP_ConnectedMaintenance_stairs_K2Node_ActorBoundEvent_39_SBZMaintenanceBoxBoolDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_BP_ConnectedMaintenance_stairs_K2Node_ActorBoundEvent_39_SBZMaintenanceBoxBoolDelegate__DelegateSignature final
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.OnServerKeyItemTagAdded
+// 0x000C (0x000C - 0x0000)
+struct G_SnGBB_Scripting_C_OnServerKeyItemTagAdded final
 {
 public:
-	bool                                          bSuccessful;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           KeyTag_OnServerKeyItemTagAdded;                    // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_OnServerKeyItemTagAdded;
 
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_SnGBB_Scripting_BP_LifeActionTriggerVolume_Back_K2Node_ActorBoundEvent_23_SBZLifeActionStopEventDelegate__DelegateSignature
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.OnPreplanningAssetsTagsApplied
 // 0x0020 (0x0020 - 0x0000)
-struct G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_BP_LifeActionTriggerVolume_Back_K2Node_ActorBoundEvent_23_SBZLifeActionStopEventDelegate__DelegateSignature final
+struct G_SnGBB_Scripting_C_OnPreplanningAssetsTagsApplied final
 {
 public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	ESBZLifeActionStopReason                      Result;                                            // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  PreplanningTagContainer_OnPreplanningAssetsTagsApplied; // 0x0000(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_OnPreplanningAssetsTagsApplied;
 
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_SnGBB_Scripting_SBZ_loud_escapeVan2_Spline1_Reverse2_K2Node_ActorBoundEvent_41_SBZSplineOnEndReached__DelegateSignature
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.OnPlayerPickedUpBag
 // 0x0010 (0x0010 - 0x0000)
-struct G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_SBZ_loud_escapeVan2_Spline1_Reverse2_K2Node_ActorBoundEvent_41_SBZSplineOnEndReached__DelegateSignature final
+struct G_SnGBB_Scripting_C_OnPlayerPickedUpBag final
 {
 public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          BagHandle_OnPlayerPickedUpBag;                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_OnPlayerPickedUpBag;
 
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_SnGBB_Scripting_SBZ_loud_escapeVan2_Spline1_Reverse3_K2Node_ActorBoundEvent_42_SBZSplineOnEndReached__DelegateSignature
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.OnLevelModifiersApplied
+// 0x0018 (0x0018 - 0x0000)
+struct G_SnGBB_Scripting_C_OnLevelModifiersApplied final
+{
+public:
+	ESBZDifficulty                                InDifficulty_OnLevelModifiersApplied;              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<ESBZSecurityCompany>                   InCompanies_OnLevelModifiersApplied;               // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_OnLevelModifiersApplied;
+
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.LootValueFilter
+// 0x0008 (0x0008 - 0x0000)
+struct G_SnGBB_Scripting_C_LootValueFilter final
+{
+public:
+	class UObject*                                BagType;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_LootValueFilter;
+
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.LootBagHandle
+// 0x0018 (0x0018 - 0x0000)
+struct G_SnGBB_Scripting_C_LootBagHandle final
+{
+public:
+	class USBZSecuredBagVisualizeComponent*       Target;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          BagHandle;                                         // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_LootBagHandle;
+
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.HeistStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct G_SnGBB_Scripting_C_HeistStateChanged final
+{
+public:
+	EPD3HeistState                                OldHeistState_HeistStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CurrentHeistState_HeistStateChanged;               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_HeistStateChanged;
+
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.GuardSpawned
 // 0x0010 (0x0010 - 0x0000)
-struct G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_SBZ_loud_escapeVan2_Spline1_Reverse3_K2Node_ActorBoundEvent_42_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_SnGBB_Scripting_SBZBagTriggerVolume4_K2Node_ActorBoundEvent_28_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_SBZBagTriggerVolume4_K2Node_ActorBoundEvent_28_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_SnGBB_Scripting_SBZBagTriggerVolume_Right_K2Node_ActorBoundEvent_45_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_SBZBagTriggerVolume_Right_K2Node_ActorBoundEvent_45_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_SnGBB_Scripting_SBZFilteredTriggerVolume_EnemyBreach_K2Node_ActorBoundEvent_40_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_SBZFilteredTriggerVolume_EnemyBreach_K2Node_ActorBoundEvent_40_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_SnGBB_Scripting_SBZPawnSpawnPredefined_Manager1_K2Node_ActorBoundEvent_22_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_SBZPawnSpawnPredefined_Manager1_K2Node_ActorBoundEvent_22_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  DeadPawn;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                Spawner;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_SnGBB_Scripting_SBZPawnSpawnPredefined_Manager1_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_SBZPawnSpawnPredefined_Manager1_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+struct G_SnGBB_Scripting_C_GuardSpawned final
 {
 public:
 	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_GuardSpawned;
 
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_SnGBB_Scripting_SBZPlayerTrigger_AtDoorWithoutKeycard_K2Node_ActorBoundEvent_48_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_SBZPlayerTrigger_AtDoorWithoutKeycard_K2Node_ActorBoundEvent_48_SBZPawnDynamicDelegate__DelegateSignature final
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.EyeManagerHumanShield
+// 0x0018 (0x0018 - 0x0000)
+struct G_SnGBB_Scripting_C_EyeManagerHumanShield final
 {
 public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZAICharacter*                        Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCharacter*                          Instigator;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          bHumanShield;                                      // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_SnGBB_Scripting_SBZPlayerTrigger_vault_area_K2Node_ActorBoundEvent_33_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_SBZPlayerTrigger_vault_area_K2Node_ActorBoundEvent_33_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_SnGBB_Scripting_SBZPlayerTriggerVolume_Vault_K2Node_ActorBoundEvent_31_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_SBZPlayerTriggerVolume_Vault_K2Node_ActorBoundEvent_31_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_EyeManagerHumanShield;
 
 // Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.ExecuteUbergraph_G_SnGBB_Scripting
 // 0x0D60 (0x0D60 - 0x0000)
@@ -831,167 +809,230 @@ public:
 	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x0D54(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast_1;  // 0x0D58(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_ExecuteUbergraph_G_SnGBB_Scripting;
 
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.EyeManagerHumanShield
-// 0x0018 (0x0018 - 0x0000)
-struct G_SnGBB_Scripting_C_EyeManagerHumanShield final
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_SnGBB_Scripting_SBZPlayerTriggerVolume_Vault_K2Node_ActorBoundEvent_31_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_SBZPlayerTriggerVolume_Vault_K2Node_ActorBoundEvent_31_SBZPawnDynamicDelegate__DelegateSignature final
 {
 public:
-	class ASBZAICharacter*                        Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCharacter*                          Instigator_0;                                      // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          bHumanShield;                                      // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_SBZPlayerTriggerVolume_Vault_K2Node_ActorBoundEvent_31_SBZPawnDynamicDelegate__DelegateSignature;
 
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.GuardSpawned
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_SnGBB_Scripting_SBZPlayerTrigger_vault_area_K2Node_ActorBoundEvent_33_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_SBZPlayerTrigger_vault_area_K2Node_ActorBoundEvent_33_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_SBZPlayerTrigger_vault_area_K2Node_ActorBoundEvent_33_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_SnGBB_Scripting_SBZPlayerTrigger_AtDoorWithoutKeycard_K2Node_ActorBoundEvent_48_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_SBZPlayerTrigger_AtDoorWithoutKeycard_K2Node_ActorBoundEvent_48_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_SBZPlayerTrigger_AtDoorWithoutKeycard_K2Node_ActorBoundEvent_48_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_SnGBB_Scripting_SBZPawnSpawnPredefined_Manager1_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct G_SnGBB_Scripting_C_GuardSpawned final
+struct G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_SBZPawnSpawnPredefined_Manager1_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature final
 {
 public:
 	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_SBZPawnSpawnPredefined_Manager1_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature;
 
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.HeistStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct G_SnGBB_Scripting_C_HeistStateChanged final
-{
-public:
-	EPD3HeistState                                OldHeistState;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CurrentHeistState_0;                               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.LootBagHandle
-// 0x0018 (0x0018 - 0x0000)
-struct G_SnGBB_Scripting_C_LootBagHandle final
-{
-public:
-	class USBZSecuredBagVisualizeComponent*       Target;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          BagHandle;                                         // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.LootValueFilter
-// 0x0008 (0x0008 - 0x0000)
-struct G_SnGBB_Scripting_C_LootValueFilter final
-{
-public:
-	class UObject*                                BagType;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.OnLevelModifiersApplied
-// 0x0018 (0x0018 - 0x0000)
-struct G_SnGBB_Scripting_C_OnLevelModifiersApplied final
-{
-public:
-	ESBZDifficulty                                InDifficulty;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<ESBZSecurityCompany>                   InCompanies;                                       // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.OnPlayerPickedUpBag
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_SnGBB_Scripting_SBZPawnSpawnPredefined_Manager1_K2Node_ActorBoundEvent_22_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct G_SnGBB_Scripting_C_OnPlayerPickedUpBag final
+struct G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_SBZPawnSpawnPredefined_Manager1_K2Node_ActorBoundEvent_22_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature final
 {
 public:
-	struct FSBZBagHandle                          BagHandle;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	class APawn*                                  DeadPawn;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                Spawner;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_SBZPawnSpawnPredefined_Manager1_K2Node_ActorBoundEvent_22_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature;
 
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.OnPreplanningAssetsTagsApplied
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_SnGBB_Scripting_SBZFilteredTriggerVolume_EnemyBreach_K2Node_ActorBoundEvent_40_SBZFilterActorDynamicDelegate__DelegateSignature
 // 0x0020 (0x0020 - 0x0000)
-struct G_SnGBB_Scripting_C_OnPreplanningAssetsTagsApplied final
+struct G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_SBZFilteredTriggerVolume_EnemyBreach_K2Node_ActorBoundEvent_40_SBZFilterActorDynamicDelegate__DelegateSignature final
 {
 public:
-	struct FGameplayTagContainer                  PreplanningTagContainer;                           // 0x0000(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_SBZFilteredTriggerVolume_EnemyBreach_K2Node_ActorBoundEvent_40_SBZFilterActorDynamicDelegate__DelegateSignature;
 
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.OnServerKeyItemTagAdded
-// 0x000C (0x000C - 0x0000)
-struct G_SnGBB_Scripting_C_OnServerKeyItemTagAdded final
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_SnGBB_Scripting_SBZBagTriggerVolume_Right_K2Node_ActorBoundEvent_45_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_SBZBagTriggerVolume_Right_K2Node_ActorBoundEvent_45_SBZBagEnteredDelegate__DelegateSignature final
 {
 public:
-	struct FGameplayTag                           KeyTag;                                            // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_SBZBagTriggerVolume_Right_K2Node_ActorBoundEvent_45_SBZBagEnteredDelegate__DelegateSignature;
 
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.PlayerEnteredBank
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_SnGBB_Scripting_SBZBagTriggerVolume4_K2Node_ActorBoundEvent_28_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_SBZBagTriggerVolume4_K2Node_ActorBoundEvent_28_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_SBZBagTriggerVolume4_K2Node_ActorBoundEvent_28_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_SnGBB_Scripting_SBZ_loud_escapeVan2_Spline1_Reverse3_K2Node_ActorBoundEvent_42_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_SBZ_loud_escapeVan2_Spline1_Reverse3_K2Node_ActorBoundEvent_42_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_SBZ_loud_escapeVan2_Spline1_Reverse3_K2Node_ActorBoundEvent_42_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_SnGBB_Scripting_SBZ_loud_escapeVan2_Spline1_Reverse2_K2Node_ActorBoundEvent_41_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_SBZ_loud_escapeVan2_Spline1_Reverse2_K2Node_ActorBoundEvent_41_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_SBZ_loud_escapeVan2_Spline1_Reverse2_K2Node_ActorBoundEvent_41_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_SnGBB_Scripting_BP_LifeActionTriggerVolume_Back_K2Node_ActorBoundEvent_23_SBZLifeActionStopEventDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_BP_LifeActionTriggerVolume_Back_K2Node_ActorBoundEvent_23_SBZLifeActionStopEventDelegate__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	ESBZLifeActionStopReason                      Result;                                            // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_BP_LifeActionTriggerVolume_Back_K2Node_ActorBoundEvent_23_SBZLifeActionStopEventDelegate__DelegateSignature;
+
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_SnGBB_Scripting_BP_ConnectedMaintenance_stairs_K2Node_ActorBoundEvent_39_SBZMaintenanceBoxBoolDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_BP_ConnectedMaintenance_stairs_K2Node_ActorBoundEvent_39_SBZMaintenanceBoxBoolDelegate__DelegateSignature final
+{
+public:
+	bool                                          bSuccessful;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_BndEvt__G_SnGBB_Scripting_BP_ConnectedMaintenance_stairs_K2Node_ActorBoundEvent_39_SBZMaintenanceBoxBoolDelegate__DelegateSignature;
+
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_CleanBB_Scripting_SBZPlayerTriggerVolume_StealthVanDoors1_K2Node_ActorBoundEvent_19_SBZPawnDynamicDelegate__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct G_SnGBB_Scripting_C_PlayerEnteredBank final
+struct G_SnGBB_Scripting_C_BndEvt__G_CleanBB_Scripting_SBZPlayerTriggerVolume_StealthVanDoors1_K2Node_ActorBoundEvent_19_SBZPawnDynamicDelegate__DelegateSignature final
 {
 public:
 	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_BndEvt__G_CleanBB_Scripting_SBZPlayerTriggerVolume_StealthVanDoors1_K2Node_ActorBoundEvent_19_SBZPawnDynamicDelegate__DelegateSignature;
 
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.RedKeycardPicked
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_CleanBB_Scripting_SBZFilteredTriggerVolume_OvkWeapon1_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_SnGBB_Scripting_C_BndEvt__G_CleanBB_Scripting_SBZFilteredTriggerVolume_OvkWeapon1_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_BndEvt__G_CleanBB_Scripting_SBZFilteredTriggerVolume_OvkWeapon1_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_CleanBB_Scripting_SBZBagTriggerVolumeStealth_K2Node_ActorBoundEvent_0_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_SnGBB_Scripting_C_BndEvt__G_CleanBB_Scripting_SBZBagTriggerVolumeStealth_K2Node_ActorBoundEvent_0_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_BndEvt__G_CleanBB_Scripting_SBZBagTriggerVolumeStealth_K2Node_ActorBoundEvent_0_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_CleanBB_Scripting_SBZBagTriggerVolumeStealth2_K2Node_ActorBoundEvent_1_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_SnGBB_Scripting_C_BndEvt__G_CleanBB_Scripting_SBZBagTriggerVolumeStealth2_K2Node_ActorBoundEvent_1_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_BndEvt__G_CleanBB_Scripting_SBZBagTriggerVolumeStealth2_K2Node_ActorBoundEvent_1_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_CleanBB_Scripting_BP_vault_gate_K2Node_ActorBoundEvent_11_SBZActorOnInteraction__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct G_SnGBB_Scripting_C_RedKeycardPicked final
+struct G_SnGBB_Scripting_C_BndEvt__G_CleanBB_Scripting_BP_vault_gate_K2Node_ActorBoundEvent_11_SBZActorOnInteraction__DelegateSignature final
 {
 public:
 	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_BndEvt__G_CleanBB_Scripting_BP_vault_gate_K2Node_ActorBoundEvent_11_SBZActorOnInteraction__DelegateSignature;
 
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.SecureLoot
-// 0x0004 (0x0004 - 0x0000)
-struct G_SnGBB_Scripting_C_SecureLoot final
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_CleanBB_Scripting_BP_vault_gate2_K2Node_ActorBoundEvent_12_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_SnGBB_Scripting_C_BndEvt__G_CleanBB_Scripting_BP_vault_gate2_K2Node_ActorBoundEvent_12_SBZActorOnInteraction__DelegateSignature final
 {
 public:
-	int32                                         Progress;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_BndEvt__G_CleanBB_Scripting_BP_vault_gate2_K2Node_ActorBoundEvent_12_SBZActorOnInteraction__DelegateSignature;
 
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.SetEscapeZone
-// 0x0020 (0x0020 - 0x0000)
-struct G_SnGBB_Scripting_C_SetEscapeZone final
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_CleanBB_Scripting_BP_SmallVaultDoor_2_K2Node_ActorBoundEvent_14_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_SnGBB_Scripting_C_BndEvt__G_CleanBB_Scripting_BP_SmallVaultDoor_2_K2Node_ActorBoundEvent_14_SBZGateStateChangedDelegate__DelegateSignature final
 {
 public:
-	bool                                          Enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZWaypoint*                           Waypoint;                                          // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZReplicatedBinaryStateActor*         MarkerZone;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerTriggerVolume*                EscapeVolume;                                      // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_BndEvt__G_CleanBB_Scripting_BP_SmallVaultDoor_2_K2Node_ActorBoundEvent_14_SBZGateStateChangedDelegate__DelegateSignature;
 
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.SetLoudLeftEscape
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_CleanBB_Scripting_BP_RedKeycardReader_2_K2Node_ActorBoundEvent_7_SBZModuleActorStateChangedDelegate__DelegateSignature
 // 0x0001 (0x0001 - 0x0000)
-struct G_SnGBB_Scripting_C_SetLoudLeftEscape final
+struct G_SnGBB_Scripting_C_BndEvt__G_CleanBB_Scripting_BP_RedKeycardReader_2_K2Node_ActorBoundEvent_7_SBZModuleActorStateChangedDelegate__DelegateSignature final
 {
 public:
-	bool                                          Enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_BndEvt__G_CleanBB_Scripting_BP_RedKeycardReader_2_K2Node_ActorBoundEvent_7_SBZModuleActorStateChangedDelegate__DelegateSignature;
 
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.SetLoudLeftSecureLoot
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_CleanBB_Scripting_BP_RedKeycardReader2_5_K2Node_ActorBoundEvent_8_SBZModuleActorStateChangedDelegate__DelegateSignature
 // 0x0001 (0x0001 - 0x0000)
-struct G_SnGBB_Scripting_C_SetLoudLeftSecureLoot final
+struct G_SnGBB_Scripting_C_BndEvt__G_CleanBB_Scripting_BP_RedKeycardReader2_5_K2Node_ActorBoundEvent_8_SBZModuleActorStateChangedDelegate__DelegateSignature final
 {
 public:
-	bool                                          Enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_BndEvt__G_CleanBB_Scripting_BP_RedKeycardReader2_5_K2Node_ActorBoundEvent_8_SBZModuleActorStateChangedDelegate__DelegateSignature;
 
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.SetLoudRightEscape
-// 0x0001 (0x0001 - 0x0000)
-struct G_SnGBB_Scripting_C_SetLoudRightEscape final
+// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.BndEvt__G_CleanBB_Scripting_BP_push_keep_Animated_ButtonInsideVault_K2Node_ActorBoundEvent_15_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_SnGBB_Scripting_C_BndEvt__G_CleanBB_Scripting_BP_push_keep_Animated_ButtonInsideVault_K2Node_ActorBoundEvent_15_SBZActorOnInteraction__DelegateSignature final
 {
 public:
-	bool                                          Enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.SetLoudRightSecureLoot
-// 0x0001 (0x0001 - 0x0000)
-struct G_SnGBB_Scripting_C_SetLoudRightSecureLoot final
-{
-public:
-	bool                                          Enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Scripting.G_SnGBB_Scripting_C.SetSecureLootZone
-// 0x0028 (0x0028 - 0x0000)
-struct G_SnGBB_Scripting_C_SetSecureLootZone final
-{
-public:
-	bool                                          Enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZWaypoint*                           Waypoint;                                          // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagTriggerVolume*                   BagTriggerVolume;                                  // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerTriggerVolume*                VoiceVolume;                                       // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_G_SnGBB_Scripting_C_BndEvt__G_CleanBB_Scripting_BP_push_keep_Animated_ButtonInsideVault_K2Node_ActorBoundEvent_15_SBZActorOnInteraction__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -41,13 +41,13 @@ public:
 	class UStaticMeshComponent*                   Stand;                                             // 0x0740(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__AddCanisterInteraction_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
-	void BP_OnBolted(int32 Amount, int32 BoltIndex);
-	void BP_OnStateChanged(ESBZBreachingEquipmentState OldState, ESBZBreachingEquipmentState NewState, bool bDoCosmetics);
-	void BP_PartAdded(int32 Amount);
-	void ExecuteUbergraph_BP_ThermalLance(int32 EntryPoint);
-	void ReceiveBeginPlay();
 	void SetAnimationPosition();
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_ThermalLance(int32 EntryPoint);
+	void BP_PartAdded(int32 Amount_BP_PartAdded);
+	void BP_OnStateChanged(ESBZBreachingEquipmentState OldState_BP_OnStateChanged, ESBZBreachingEquipmentState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged);
+	void BP_OnBolted(int32 Amount_BP_OnBolted, int32 BoltIndex_BP_OnBolted);
+	void BndEvt__AddCanisterInteraction_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
 
 	struct FVector GetMarkerLocation() const;
 
@@ -65,5 +65,6 @@ public:
 		return GetDefaultObjImpl<ABP_ThermalLance_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ThermalLance_C;
 
 SDK_NAMESPACE_END

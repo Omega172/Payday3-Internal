@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Spawner_Civ_Hostage_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Spawner_Civ_Hostage_C;
 
 SDK_NAMESPACE_END

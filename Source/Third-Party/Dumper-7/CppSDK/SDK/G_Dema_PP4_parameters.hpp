@@ -17,126 +17,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function G_Dema_PP4.G_Dema_PP4_C.BndEvt__G_Dema_PP4_BP_FOR_FenceDoor_01_2_K2Node_ActorBoundEvent_1_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Dema_PP4_C_BndEvt__G_Dema_PP4_BP_FOR_FenceDoor_01_2_K2Node_ActorBoundEvent_1_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_PP4.G_Dema_PP4_C.BndEvt__G_Dema_PP4_BP_Int_SingleDoor_ArmoredGlass_02_K2Node_ActorBoundEvent_0_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Dema_PP4_C_BndEvt__G_Dema_PP4_BP_Int_SingleDoor_ArmoredGlass_02_K2Node_ActorBoundEvent_0_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_PP4.G_Dema_PP4_C.BndEvt__G_Dema_PP4_BP_RFIDTagBlue_PP4_Loc1_1_K2Node_ActorBoundEvent_13_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Dema_PP4_C_BndEvt__G_Dema_PP4_BP_RFIDTagBlue_PP4_Loc1_1_K2Node_ActorBoundEvent_13_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_PP4.G_Dema_PP4_C.BndEvt__G_Dema_PP4_BP_RFIDTagBlue_PP4_Loc1_2_K2Node_ActorBoundEvent_14_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Dema_PP4_C_BndEvt__G_Dema_PP4_BP_RFIDTagBlue_PP4_Loc1_2_K2Node_ActorBoundEvent_14_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_PP4.G_Dema_PP4_C.BndEvt__G_Dema_PP4_BP_RFIDTagBlue_PP4_Loc1_3_K2Node_ActorBoundEvent_15_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Dema_PP4_C_BndEvt__G_Dema_PP4_BP_RFIDTagBlue_PP4_Loc1_3_K2Node_ActorBoundEvent_15_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_PP4.G_Dema_PP4_C.BndEvt__G_Dema_PP4_BP_RFIDTagBlue_PP4_Loc2_1_K2Node_ActorBoundEvent_16_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Dema_PP4_C_BndEvt__G_Dema_PP4_BP_RFIDTagBlue_PP4_Loc2_1_K2Node_ActorBoundEvent_16_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_PP4.G_Dema_PP4_C.BndEvt__G_Dema_PP4_BP_RFIDTagBlue_PP4_Loc2_2_K2Node_ActorBoundEvent_17_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Dema_PP4_C_BndEvt__G_Dema_PP4_BP_RFIDTagBlue_PP4_Loc2_2_K2Node_ActorBoundEvent_17_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_PP4.G_Dema_PP4_C.BndEvt__G_Dema_PP4_BP_RFIDTagBlue_PP4_Loc2_3_K2Node_ActorBoundEvent_18_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Dema_PP4_C_BndEvt__G_Dema_PP4_BP_RFIDTagBlue_PP4_Loc2_3_K2Node_ActorBoundEvent_18_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_PP4.G_Dema_PP4_C.BndEvt__G_Dema_PP4_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_6_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Dema_PP4_C_BndEvt__G_Dema_PP4_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_6_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_PP4.G_Dema_PP4_C.BndEvt__G_Dema_PP4_SBZPlayerTriggerVolume_PP4_FindTeddy_Loc1_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Dema_PP4_C_BndEvt__G_Dema_PP4_SBZPlayerTriggerVolume_PP4_FindTeddy_Loc1_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_PP4.G_Dema_PP4_C.BndEvt__G_Dema_PP4_SBZPlayerTriggerVolume_PP4_FindTeddy_Loc2_4_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Dema_PP4_C_BndEvt__G_Dema_PP4_SBZPlayerTriggerVolume_PP4_FindTeddy_Loc2_4_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_PP4.G_Dema_PP4_C.BndEvt__G_Dema_PP4_SBZPlayerTriggerVolume_Voicemail_Gunstore2_K2Node_ActorBoundEvent_7_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Dema_PP4_C_BndEvt__G_Dema_PP4_SBZPlayerTriggerVolume_Voicemail_Gunstore2_K2Node_ActorBoundEvent_7_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_PP4.G_Dema_PP4_C.BndEvt__G_Dema_PP4_SBZPlayerTriggerVolume_Voicemail_Toystore_K2Node_ActorBoundEvent_8_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Dema_PP4_C_BndEvt__G_Dema_PP4_SBZPlayerTriggerVolume_Voicemail_Toystore_K2Node_ActorBoundEvent_8_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_PP4.G_Dema_PP4_C.EscapeSelected
-// 0x0004 (0x0004 - 0x0000)
-struct G_Dema_PP4_C_EscapeSelected final
-{
-public:
-	int32                                         EscapeIndex;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function G_Dema_PP4.G_Dema_PP4_C.ExecuteUbergraph_G_Dema_PP4
 // 0x04B8 (0x04B8 - 0x0000)
 struct G_Dema_PP4_C_ExecuteUbergraph_G_Dema_PP4 final
@@ -330,6 +210,141 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_3;          // 0x04B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_IsClosed_Variable_10;                    // 0x04B5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Dema_PP4_C_ExecuteUbergraph_G_Dema_PP4;
+
+// Function G_Dema_PP4.G_Dema_PP4_C.EscapeSelected
+// 0x0004 (0x0004 - 0x0000)
+struct G_Dema_PP4_C_EscapeSelected final
+{
+public:
+	int32                                         EscapeIndex;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_PP4_C_EscapeSelected;
+
+// Function G_Dema_PP4.G_Dema_PP4_C.BndEvt__G_Dema_PP4_SBZPlayerTriggerVolume_Voicemail_Toystore_K2Node_ActorBoundEvent_8_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Dema_PP4_C_BndEvt__G_Dema_PP4_SBZPlayerTriggerVolume_Voicemail_Toystore_K2Node_ActorBoundEvent_8_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_PP4_C_BndEvt__G_Dema_PP4_SBZPlayerTriggerVolume_Voicemail_Toystore_K2Node_ActorBoundEvent_8_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Dema_PP4.G_Dema_PP4_C.BndEvt__G_Dema_PP4_SBZPlayerTriggerVolume_Voicemail_Gunstore2_K2Node_ActorBoundEvent_7_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Dema_PP4_C_BndEvt__G_Dema_PP4_SBZPlayerTriggerVolume_Voicemail_Gunstore2_K2Node_ActorBoundEvent_7_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_PP4_C_BndEvt__G_Dema_PP4_SBZPlayerTriggerVolume_Voicemail_Gunstore2_K2Node_ActorBoundEvent_7_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Dema_PP4.G_Dema_PP4_C.BndEvt__G_Dema_PP4_SBZPlayerTriggerVolume_PP4_FindTeddy_Loc2_4_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Dema_PP4_C_BndEvt__G_Dema_PP4_SBZPlayerTriggerVolume_PP4_FindTeddy_Loc2_4_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_PP4_C_BndEvt__G_Dema_PP4_SBZPlayerTriggerVolume_PP4_FindTeddy_Loc2_4_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Dema_PP4.G_Dema_PP4_C.BndEvt__G_Dema_PP4_SBZPlayerTriggerVolume_PP4_FindTeddy_Loc1_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Dema_PP4_C_BndEvt__G_Dema_PP4_SBZPlayerTriggerVolume_PP4_FindTeddy_Loc1_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_PP4_C_BndEvt__G_Dema_PP4_SBZPlayerTriggerVolume_PP4_FindTeddy_Loc1_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Dema_PP4.G_Dema_PP4_C.BndEvt__G_Dema_PP4_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_6_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Dema_PP4_C_BndEvt__G_Dema_PP4_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_6_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_PP4_C_BndEvt__G_Dema_PP4_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_6_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Dema_PP4.G_Dema_PP4_C.BndEvt__G_Dema_PP4_BP_RFIDTagBlue_PP4_Loc2_3_K2Node_ActorBoundEvent_18_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Dema_PP4_C_BndEvt__G_Dema_PP4_BP_RFIDTagBlue_PP4_Loc2_3_K2Node_ActorBoundEvent_18_SBZActorOnInteraction__DelegateSignature final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_PP4_C_BndEvt__G_Dema_PP4_BP_RFIDTagBlue_PP4_Loc2_3_K2Node_ActorBoundEvent_18_SBZActorOnInteraction__DelegateSignature;
+
+// Function G_Dema_PP4.G_Dema_PP4_C.BndEvt__G_Dema_PP4_BP_RFIDTagBlue_PP4_Loc2_2_K2Node_ActorBoundEvent_17_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Dema_PP4_C_BndEvt__G_Dema_PP4_BP_RFIDTagBlue_PP4_Loc2_2_K2Node_ActorBoundEvent_17_SBZActorOnInteraction__DelegateSignature final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_PP4_C_BndEvt__G_Dema_PP4_BP_RFIDTagBlue_PP4_Loc2_2_K2Node_ActorBoundEvent_17_SBZActorOnInteraction__DelegateSignature;
+
+// Function G_Dema_PP4.G_Dema_PP4_C.BndEvt__G_Dema_PP4_BP_RFIDTagBlue_PP4_Loc2_1_K2Node_ActorBoundEvent_16_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Dema_PP4_C_BndEvt__G_Dema_PP4_BP_RFIDTagBlue_PP4_Loc2_1_K2Node_ActorBoundEvent_16_SBZActorOnInteraction__DelegateSignature final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_PP4_C_BndEvt__G_Dema_PP4_BP_RFIDTagBlue_PP4_Loc2_1_K2Node_ActorBoundEvent_16_SBZActorOnInteraction__DelegateSignature;
+
+// Function G_Dema_PP4.G_Dema_PP4_C.BndEvt__G_Dema_PP4_BP_RFIDTagBlue_PP4_Loc1_3_K2Node_ActorBoundEvent_15_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Dema_PP4_C_BndEvt__G_Dema_PP4_BP_RFIDTagBlue_PP4_Loc1_3_K2Node_ActorBoundEvent_15_SBZActorOnInteraction__DelegateSignature final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_PP4_C_BndEvt__G_Dema_PP4_BP_RFIDTagBlue_PP4_Loc1_3_K2Node_ActorBoundEvent_15_SBZActorOnInteraction__DelegateSignature;
+
+// Function G_Dema_PP4.G_Dema_PP4_C.BndEvt__G_Dema_PP4_BP_RFIDTagBlue_PP4_Loc1_2_K2Node_ActorBoundEvent_14_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Dema_PP4_C_BndEvt__G_Dema_PP4_BP_RFIDTagBlue_PP4_Loc1_2_K2Node_ActorBoundEvent_14_SBZActorOnInteraction__DelegateSignature final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_PP4_C_BndEvt__G_Dema_PP4_BP_RFIDTagBlue_PP4_Loc1_2_K2Node_ActorBoundEvent_14_SBZActorOnInteraction__DelegateSignature;
+
+// Function G_Dema_PP4.G_Dema_PP4_C.BndEvt__G_Dema_PP4_BP_RFIDTagBlue_PP4_Loc1_1_K2Node_ActorBoundEvent_13_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Dema_PP4_C_BndEvt__G_Dema_PP4_BP_RFIDTagBlue_PP4_Loc1_1_K2Node_ActorBoundEvent_13_SBZActorOnInteraction__DelegateSignature final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_PP4_C_BndEvt__G_Dema_PP4_BP_RFIDTagBlue_PP4_Loc1_1_K2Node_ActorBoundEvent_13_SBZActorOnInteraction__DelegateSignature;
+
+// Function G_Dema_PP4.G_Dema_PP4_C.BndEvt__G_Dema_PP4_BP_Int_SingleDoor_ArmoredGlass_02_K2Node_ActorBoundEvent_0_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Dema_PP4_C_BndEvt__G_Dema_PP4_BP_Int_SingleDoor_ArmoredGlass_02_K2Node_ActorBoundEvent_0_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_PP4_C_BndEvt__G_Dema_PP4_BP_Int_SingleDoor_ArmoredGlass_02_K2Node_ActorBoundEvent_0_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Dema_PP4.G_Dema_PP4_C.BndEvt__G_Dema_PP4_BP_FOR_FenceDoor_01_2_K2Node_ActorBoundEvent_1_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Dema_PP4_C_BndEvt__G_Dema_PP4_BP_FOR_FenceDoor_01_2_K2Node_ActorBoundEvent_1_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_PP4_C_BndEvt__G_Dema_PP4_BP_FOR_FenceDoor_01_2_K2Node_ActorBoundEvent_1_SBZGateStateChangedDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

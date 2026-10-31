@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Enum_LocationBase_DefaultState_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Starbreeze_classes.hpp"
 
 
@@ -41,20 +41,20 @@ public:
 	bool                                          ignorePenetratingPlayers;                          // 0x03E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void addMarker(const class USBZMarkerDataAsset* MarkerDataAsset);
-	void BndEvt__BP_LocationBase_SBZInteractableGhost_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_LocationBase_SBZInteractableObject_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_LocationBase(int32 EntryPoint);
-	class FText GetMarkerText();
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void ReceiveBeginPlay();
-	void setGhostVisible(bool addMarker_0);
-	void setInvisible();
-	void setMeshVisibility(bool visible, bool ghost);
-	void setObjectRemovable(bool addMarker_0);
-	void setObjectVisible();
-	void setStateInteractable(Enum_LocationBase_DefaultState state);
 	void UserConstructionScript();
+	void setStateInteractable(Enum_LocationBase_DefaultState state);
+	void setObjectVisible();
+	void setObjectRemovable(bool addMarker_0);
+	void setMeshVisibility(bool visible, bool ghost);
+	void setInvisible();
+	void setGhostVisible(bool addMarker_0);
+	void ReceiveBeginPlay();
+	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
+	class FText GetMarkerText();
+	void ExecuteUbergraph_BP_LocationBase(int32 EntryPoint);
+	void BndEvt__BP_LocationBase_SBZInteractableObject_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_LocationBase_SBZInteractableGhost_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void addMarker(const class USBZMarkerDataAsset* MarkerDataAsset);
 
 public:
 	static class UClass* StaticClass()
@@ -70,5 +70,6 @@ public:
 		return GetDefaultObjImpl<ABP_LocationBase_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LocationBase_C;
 
 SDK_NAMESPACE_END

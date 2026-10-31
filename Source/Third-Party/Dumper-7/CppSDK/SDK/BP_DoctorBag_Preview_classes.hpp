@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<ABP_DoctorBag_Preview_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DoctorBag_Preview_C;
 
 SDK_NAMESPACE_END

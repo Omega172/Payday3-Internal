@@ -23,6 +23,7 @@ public:
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue_1;          // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_AI_Throwable_Flashbang_C_ExecuteUbergraph_BP_AI_Throwable_Flashbang;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

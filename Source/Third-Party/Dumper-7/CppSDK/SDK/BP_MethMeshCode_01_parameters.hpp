@@ -41,6 +41,7 @@ public:
 	float                                         CallFunc_MakeRotator_Pitch_ImplicitCast;           // 0x016C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_MakeRotator_Roll_ImplicitCast;            // 0x0170(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_MethMeshCode_01_C_ExecuteUbergraph_BP_MethMeshCode_01;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

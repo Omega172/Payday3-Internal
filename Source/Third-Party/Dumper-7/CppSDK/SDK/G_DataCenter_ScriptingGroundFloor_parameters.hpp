@@ -18,512 +18,55 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_Scripting_SBZPlayerTriggerVolume_PlayerInsideBasement_K2Node_ActorBoundEvent_20_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_Scripting_SBZPlayerTriggerVolume_PlayerInsideBasement_K2Node_ActorBoundEvent_20_SBZPawnDynamicDelegate__DelegateSignature final
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.OnPreplanningAssetsTagsApplied
+// 0x0020 (0x0020 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_OnPreplanningAssetsTagsApplied final
 {
 public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  PreplanningTagContainer_OnPreplanningAssetsTagsApplied; // 0x0000(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_OnPreplanningAssetsTagsApplied;
 
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_01_2_K2Node_ActorBoundEvent_21_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_01_2_K2Node_ActorBoundEvent_21_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_2_K2Node_ActorBoundEvent_57_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_2_K2Node_ActorBoundEvent_57_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_4_K2Node_ActorBoundEvent_58_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_4_K2Node_ActorBoundEvent_58_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_5_K2Node_ActorBoundEvent_59_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_5_K2Node_ActorBoundEvent_59_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_6_K2Node_ActorBoundEvent_60_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_6_K2Node_ActorBoundEvent_60_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_7_K2Node_ActorBoundEvent_61_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_7_K2Node_ActorBoundEvent_61_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_8_K2Node_ActorBoundEvent_18_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_8_K2Node_ActorBoundEvent_18_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_9_K2Node_ActorBoundEvent_26_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_9_K2Node_ActorBoundEvent_26_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_BP_Int_DoubleDoor_Reinforced_NightClub_02_2_K2Node_ActorBoundEvent_76_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_Int_DoubleDoor_Reinforced_NightClub_02_2_K2Node_ActorBoundEvent_76_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_BP_Int_SingleDoor_Reinforced_Basement_K2Node_ActorBoundEvent_25_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_Int_SingleDoor_Reinforced_Basement_K2Node_ActorBoundEvent_25_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_BP_Int_SingleDoor_Reinforced_Industrial_5_K2Node_ActorBoundEvent_82_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_Int_SingleDoor_Reinforced_Industrial_5_K2Node_ActorBoundEvent_82_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_BP_LA_Manager_Scripted_TableButtonPress_2_K2Node_ActorBoundEvent_55_ActionCompleted__DelegateSignature
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.OnLevelModifiersApplied
 // 0x0018 (0x0018 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_LA_Manager_Scripted_TableButtonPress_2_K2Node_ActorBoundEvent_55_ActionCompleted__DelegateSignature final
+struct G_DataCenter_ScriptingGroundFloor_C_OnLevelModifiersApplied final
 {
 public:
-	ESBZLifeActionStopReason                      Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZDifficulty                                InDifficulty_OnLevelModifiersApplied;              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZCharacter*                          Character;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TArray<ESBZSecurityCompany>                   InCompanies_OnLevelModifiersApplied;               // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_OnLevelModifiersApplied;
 
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_BP_LifeActionTriggerVolume_HumanShield_Computer_K2Node_ActorBoundEvent_51_SBZLifeActionEventDelegate__DelegateSignature
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.OnHumanShieldManager
 // 0x0018 (0x0018 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_LifeActionTriggerVolume_HumanShield_Computer_K2Node_ActorBoundEvent_51_SBZLifeActionEventDelegate__DelegateSignature final
+struct G_DataCenter_ScriptingGroundFloor_C_OnHumanShieldManager final
 {
 public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class ASBZAICharacter*                        Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCharacter*                          Instigator;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          bHumanShield;                                      // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_OnHumanShieldManager;
 
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_BP_LifeActionTriggerVolume_HumanShield_Computer_K2Node_ActorBoundEvent_52_SBZLifeActionStopEventDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_LifeActionTriggerVolume_HumanShield_Computer_K2Node_ActorBoundEvent_52_SBZLifeActionStopEventDelegate__DelegateSignature final
-{
-public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	ESBZLifeActionStopReason                      Result;                                            // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_BP_SecurityRoom_2_K2Node_ActorBoundEvent_14_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_SecurityRoom_2_K2Node_ActorBoundEvent_14_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  DeadPawn;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                Spawner;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZModifiableTimer_ClearArea_K2Node_ActorBoundEvent_46_SBZProgressionReachedDelegate__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZModifiableTimer_ClearArea_K2Node_ActorBoundEvent_46_SBZProgressionReachedDelegate__DelegateSignature final
-{
-public:
-	int32                                         ProgressionIndexReached;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZModifiableTimer_Codebreaker1_K2Node_ActorBoundEvent_40_SBZProgressionReachedDelegate__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZModifiableTimer_Codebreaker1_K2Node_ActorBoundEvent_40_SBZProgressionReachedDelegate__DelegateSignature final
-{
-public:
-	int32                                         ProgressionIndexReached;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPawnSpawnPredefined_Guard2_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPawnSpawnPredefined_Guard2_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPawnSpawnPredefined_Guard3_Alt_K2Node_ActorBoundEvent_23_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPawnSpawnPredefined_Guard3_Alt_K2Node_ActorBoundEvent_23_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPawnSpawnPredefined_Guard3_WalkUp_K2Node_ActorBoundEvent_73_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPawnSpawnPredefined_Guard3_WalkUp_K2Node_ActorBoundEvent_73_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPawnSpawnPredefined_Suit2_K2Node_ActorBoundEvent_54_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPawnSpawnPredefined_Suit2_K2Node_ActorBoundEvent_54_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume2_2_K2Node_ActorBoundEvent_36_SBZPawnDynamicDelegate__DelegateSignature
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.OnEnabledAsObjectiveDelegate_Manager1
 // 0x0008 (0x0008 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume2_2_K2Node_ActorBoundEvent_36_SBZPawnDynamicDelegate__DelegateSignature final
+struct G_DataCenter_ScriptingGroundFloor_C_OnEnabledAsObjectiveDelegate_Manager1 final
 {
 public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCharacter*                          FoundBy;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_OnEnabledAsObjectiveDelegate_Manager1;
 
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume3_8_K2Node_ActorBoundEvent_81_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume3_8_K2Node_ActorBoundEvent_81_SBZPawnDynamicDelegate__DelegateSignature final
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.HeistStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_HeistStateChanged final
 {
 public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                OldHeistState_HeistStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CurrentHeistState_HeistStateChanged;               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume4_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume4_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_3_K2Node_ActorBoundEvent_69_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_3_K2Node_ActorBoundEvent_69_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_ClearArea_K2Node_ActorBoundEvent_45_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_ClearArea_K2Node_ActorBoundEvent_45_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_ClearArea_K2Node_ActorBoundEvent_50_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_ClearArea_K2Node_ActorBoundEvent_50_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent10_K2Node_ActorBoundEvent_79_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent10_K2Node_ActorBoundEvent_79_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent1_K2Node_ActorBoundEvent_73_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent1_K2Node_ActorBoundEvent_73_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent2_K2Node_ActorBoundEvent_74_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent2_K2Node_ActorBoundEvent_74_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent3_K2Node_ActorBoundEvent_75_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent3_K2Node_ActorBoundEvent_75_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent4_K2Node_ActorBoundEvent_76_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent4_K2Node_ActorBoundEvent_76_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent5_K2Node_ActorBoundEvent_77_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent5_K2Node_ActorBoundEvent_77_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent6_K2Node_ActorBoundEvent_80_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent6_K2Node_ActorBoundEvent_80_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent7_K2Node_ActorBoundEvent_81_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent7_K2Node_ActorBoundEvent_81_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent8_K2Node_ActorBoundEvent_82_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent8_K2Node_ActorBoundEvent_82_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent9_K2Node_ActorBoundEvent_83_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent9_K2Node_ActorBoundEvent_83_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerNear2ndFloor_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerNear2ndFloor_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerNearComputer_K2Node_ActorBoundEvent_53_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerNearComputer_K2Node_ActorBoundEvent_53_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerNearMetalDetector_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerNearMetalDetector_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerNearPPQRCode_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerNearPPQRCode_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_Teleport2_K2Node_ActorBoundEvent_67_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_Teleport2_K2Node_ActorBoundEvent_67_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_Teleport3_K2Node_ActorBoundEvent_68_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_Teleport3_K2Node_ActorBoundEvent_68_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolumePlayerAboveGround_K2Node_ActorBoundEvent_48_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolumePlayerAboveGround_K2Node_ActorBoundEvent_48_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolumePlayerAboveGround_K2Node_ActorBoundEvent_62_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolumePlayerAboveGround_K2Node_ActorBoundEvent_62_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZTrafficSpline_PlayerVanDriveIOut_K2Node_ActorBoundEvent_11_SBZSplineOnEnter__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZTrafficSpline_PlayerVanDriveIOut_K2Node_ActorBoundEvent_11_SBZSplineOnEnter__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZTrafficSpline_PlayerVanDriveIOut_K2Node_ActorBoundEvent_32_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZTrafficSpline_PlayerVanDriveIOut_K2Node_ActorBoundEvent_32_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_Manager1_K2Node_ActorBoundEvent_79_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_Manager1_K2Node_ActorBoundEvent_79_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_Teleport_K2Node_ActorBoundEvent_24_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_Teleport_K2Node_ActorBoundEvent_24_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Escape_Loud_K2Node_ActorBoundEvent_15_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Escape_Loud_K2Node_ActorBoundEvent_15_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_ForceSpawn_Guard1_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_ForceSpawn_Guard1_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_ScriptTemplate_Scripting_SBZTrafficSpline_Escape_FlyIn_K2Node_ActorBoundEvent_0_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_ScriptTemplate_Scripting_SBZTrafficSpline_Escape_FlyIn_K2Node_ActorBoundEvent_0_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_42_SBZSplineOnEnter__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_42_SBZSplineOnEnter__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_43_SBZSplineOnEnter__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_43_SBZSplineOnEnter__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_HeistStateChanged;
 
 // Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.ExecuteUbergraph_G_DataCenter_ScriptingGroundFloor
 // 0x1168 (0x1168 - 0x0000)
@@ -1202,51 +745,573 @@ public:
 	class APawn*                                  K2Node_ActorBoundEvent_Pawn;                       // 0x1158(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_GreaterEqual_DoubleDouble_A_ImplicitCast; // 0x1160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_ExecuteUbergraph_G_DataCenter_ScriptingGroundFloor;
 
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.HeistStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_HeistStateChanged final
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_43_SBZSplineOnEnter__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_43_SBZSplineOnEnter__DelegateSignature final
 {
 public:
-	EPD3HeistState                                OldHeistState;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CurrentHeistState;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_43_SBZSplineOnEnter__DelegateSignature;
 
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.OnEnabledAsObjectiveDelegate_Manager1
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_42_SBZSplineOnEnter__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_42_SBZSplineOnEnter__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_42_SBZSplineOnEnter__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_ScriptTemplate_Scripting_SBZTrafficSpline_Escape_FlyIn_K2Node_ActorBoundEvent_0_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_ScriptTemplate_Scripting_SBZTrafficSpline_Escape_FlyIn_K2Node_ActorBoundEvent_0_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_ScriptTemplate_Scripting_SBZTrafficSpline_Escape_FlyIn_K2Node_ActorBoundEvent_0_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_OnEnabledAsObjectiveDelegate_Manager1 final
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature final
 {
 public:
-	class ASBZCharacter*                          FoundBy;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature;
 
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.OnHumanShieldManager
-// 0x0018 (0x0018 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_OnHumanShieldManager final
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature final
 {
 public:
-	class ASBZAICharacter*                        Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCharacter*                          Instigator_0;                                      // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          bHumanShield;                                      // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature;
 
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.OnLevelModifiersApplied
-// 0x0018 (0x0018 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_OnLevelModifiersApplied final
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature final
 {
 public:
-	ESBZDifficulty                                InDifficulty;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<ESBZSecurityCompany>                   InCompanies;                                       // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature;
 
-// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.OnPreplanningAssetsTagsApplied
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_ForceSpawn_Guard1_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_ForceSpawn_Guard1_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_ForceSpawn_Guard1_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature
 // 0x0020 (0x0020 - 0x0000)
-struct G_DataCenter_ScriptingGroundFloor_C_OnPreplanningAssetsTagsApplied final
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature final
 {
 public:
-	struct FGameplayTagContainer                  PreplanningTagContainer;                           // 0x0000(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Escape_Loud_K2Node_ActorBoundEvent_15_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Escape_Loud_K2Node_ActorBoundEvent_15_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Escape_Loud_K2Node_ActorBoundEvent_15_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_Teleport_K2Node_ActorBoundEvent_24_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_Teleport_K2Node_ActorBoundEvent_24_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_Teleport_K2Node_ActorBoundEvent_24_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_Manager1_K2Node_ActorBoundEvent_79_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_Manager1_K2Node_ActorBoundEvent_79_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_Manager1_K2Node_ActorBoundEvent_79_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZTrafficSpline_PlayerVanDriveIOut_K2Node_ActorBoundEvent_32_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZTrafficSpline_PlayerVanDriveIOut_K2Node_ActorBoundEvent_32_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZTrafficSpline_PlayerVanDriveIOut_K2Node_ActorBoundEvent_32_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZTrafficSpline_PlayerVanDriveIOut_K2Node_ActorBoundEvent_11_SBZSplineOnEnter__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZTrafficSpline_PlayerVanDriveIOut_K2Node_ActorBoundEvent_11_SBZSplineOnEnter__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZTrafficSpline_PlayerVanDriveIOut_K2Node_ActorBoundEvent_11_SBZSplineOnEnter__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolumePlayerAboveGround_K2Node_ActorBoundEvent_62_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolumePlayerAboveGround_K2Node_ActorBoundEvent_62_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolumePlayerAboveGround_K2Node_ActorBoundEvent_62_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolumePlayerAboveGround_K2Node_ActorBoundEvent_48_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolumePlayerAboveGround_K2Node_ActorBoundEvent_48_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolumePlayerAboveGround_K2Node_ActorBoundEvent_48_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_Teleport3_K2Node_ActorBoundEvent_68_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_Teleport3_K2Node_ActorBoundEvent_68_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_Teleport3_K2Node_ActorBoundEvent_68_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_Teleport2_K2Node_ActorBoundEvent_67_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_Teleport2_K2Node_ActorBoundEvent_67_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_Teleport2_K2Node_ActorBoundEvent_67_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerNearPPQRCode_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerNearPPQRCode_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerNearPPQRCode_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerNearMetalDetector_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerNearMetalDetector_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerNearMetalDetector_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerNearComputer_K2Node_ActorBoundEvent_53_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerNearComputer_K2Node_ActorBoundEvent_53_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerNearComputer_K2Node_ActorBoundEvent_53_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerNear2ndFloor_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerNear2ndFloor_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerNear2ndFloor_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent9_K2Node_ActorBoundEvent_83_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent9_K2Node_ActorBoundEvent_83_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent9_K2Node_ActorBoundEvent_83_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent8_K2Node_ActorBoundEvent_82_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent8_K2Node_ActorBoundEvent_82_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent8_K2Node_ActorBoundEvent_82_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent7_K2Node_ActorBoundEvent_81_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent7_K2Node_ActorBoundEvent_81_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent7_K2Node_ActorBoundEvent_81_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent6_K2Node_ActorBoundEvent_80_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent6_K2Node_ActorBoundEvent_80_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent6_K2Node_ActorBoundEvent_80_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent5_K2Node_ActorBoundEvent_77_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent5_K2Node_ActorBoundEvent_77_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent5_K2Node_ActorBoundEvent_77_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent4_K2Node_ActorBoundEvent_76_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent4_K2Node_ActorBoundEvent_76_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent4_K2Node_ActorBoundEvent_76_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent3_K2Node_ActorBoundEvent_75_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent3_K2Node_ActorBoundEvent_75_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent3_K2Node_ActorBoundEvent_75_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent2_K2Node_ActorBoundEvent_74_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent2_K2Node_ActorBoundEvent_74_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent2_K2Node_ActorBoundEvent_74_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent1_K2Node_ActorBoundEvent_73_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent1_K2Node_ActorBoundEvent_73_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent1_K2Node_ActorBoundEvent_73_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent10_K2Node_ActorBoundEvent_79_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent10_K2Node_ActorBoundEvent_79_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_PlayerEnteredVent10_K2Node_ActorBoundEvent_79_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_ClearArea_K2Node_ActorBoundEvent_50_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_ClearArea_K2Node_ActorBoundEvent_50_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_ClearArea_K2Node_ActorBoundEvent_50_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_ClearArea_K2Node_ActorBoundEvent_45_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_ClearArea_K2Node_ActorBoundEvent_45_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_ClearArea_K2Node_ActorBoundEvent_45_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_3_K2Node_ActorBoundEvent_69_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_3_K2Node_ActorBoundEvent_69_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume_3_K2Node_ActorBoundEvent_69_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume4_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume4_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume4_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume3_8_K2Node_ActorBoundEvent_81_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume3_8_K2Node_ActorBoundEvent_81_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume3_8_K2Node_ActorBoundEvent_81_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume2_2_K2Node_ActorBoundEvent_36_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume2_2_K2Node_ActorBoundEvent_36_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPlayerTriggerVolume2_2_K2Node_ActorBoundEvent_36_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPawnSpawnPredefined_Suit2_K2Node_ActorBoundEvent_54_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPawnSpawnPredefined_Suit2_K2Node_ActorBoundEvent_54_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPawnSpawnPredefined_Suit2_K2Node_ActorBoundEvent_54_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPawnSpawnPredefined_Guard3_WalkUp_K2Node_ActorBoundEvent_73_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPawnSpawnPredefined_Guard3_WalkUp_K2Node_ActorBoundEvent_73_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPawnSpawnPredefined_Guard3_WalkUp_K2Node_ActorBoundEvent_73_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPawnSpawnPredefined_Guard3_Alt_K2Node_ActorBoundEvent_23_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPawnSpawnPredefined_Guard3_Alt_K2Node_ActorBoundEvent_23_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPawnSpawnPredefined_Guard3_Alt_K2Node_ActorBoundEvent_23_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPawnSpawnPredefined_Guard2_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPawnSpawnPredefined_Guard2_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZPawnSpawnPredefined_Guard2_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZModifiableTimer_Codebreaker1_K2Node_ActorBoundEvent_40_SBZProgressionReachedDelegate__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZModifiableTimer_Codebreaker1_K2Node_ActorBoundEvent_40_SBZProgressionReachedDelegate__DelegateSignature final
+{
+public:
+	int32                                         ProgressionIndexReached;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZModifiableTimer_Codebreaker1_K2Node_ActorBoundEvent_40_SBZProgressionReachedDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_SBZModifiableTimer_ClearArea_K2Node_ActorBoundEvent_46_SBZProgressionReachedDelegate__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZModifiableTimer_ClearArea_K2Node_ActorBoundEvent_46_SBZProgressionReachedDelegate__DelegateSignature final
+{
+public:
+	int32                                         ProgressionIndexReached;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_SBZModifiableTimer_ClearArea_K2Node_ActorBoundEvent_46_SBZProgressionReachedDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_BP_SecurityRoom_2_K2Node_ActorBoundEvent_14_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_SecurityRoom_2_K2Node_ActorBoundEvent_14_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  DeadPawn;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                Spawner;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_SecurityRoom_2_K2Node_ActorBoundEvent_14_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_BP_LifeActionTriggerVolume_HumanShield_Computer_K2Node_ActorBoundEvent_52_SBZLifeActionStopEventDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_LifeActionTriggerVolume_HumanShield_Computer_K2Node_ActorBoundEvent_52_SBZLifeActionStopEventDelegate__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	ESBZLifeActionStopReason                      Result;                                            // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_LifeActionTriggerVolume_HumanShield_Computer_K2Node_ActorBoundEvent_52_SBZLifeActionStopEventDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_BP_LifeActionTriggerVolume_HumanShield_Computer_K2Node_ActorBoundEvent_51_SBZLifeActionEventDelegate__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_LifeActionTriggerVolume_HumanShield_Computer_K2Node_ActorBoundEvent_51_SBZLifeActionEventDelegate__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_LifeActionTriggerVolume_HumanShield_Computer_K2Node_ActorBoundEvent_51_SBZLifeActionEventDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_BP_LA_Manager_Scripted_TableButtonPress_2_K2Node_ActorBoundEvent_55_ActionCompleted__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_LA_Manager_Scripted_TableButtonPress_2_K2Node_ActorBoundEvent_55_ActionCompleted__DelegateSignature final
+{
+public:
+	ESBZLifeActionStopReason                      Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZCharacter*                          Character;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_LA_Manager_Scripted_TableButtonPress_2_K2Node_ActorBoundEvent_55_ActionCompleted__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_BP_Int_SingleDoor_Reinforced_Industrial_5_K2Node_ActorBoundEvent_82_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_Int_SingleDoor_Reinforced_Industrial_5_K2Node_ActorBoundEvent_82_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_Int_SingleDoor_Reinforced_Industrial_5_K2Node_ActorBoundEvent_82_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_BP_Int_SingleDoor_Reinforced_Basement_K2Node_ActorBoundEvent_25_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_Int_SingleDoor_Reinforced_Basement_K2Node_ActorBoundEvent_25_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_Int_SingleDoor_Reinforced_Basement_K2Node_ActorBoundEvent_25_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_BP_Int_DoubleDoor_Reinforced_NightClub_02_2_K2Node_ActorBoundEvent_76_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_Int_DoubleDoor_Reinforced_NightClub_02_2_K2Node_ActorBoundEvent_76_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_Int_DoubleDoor_Reinforced_NightClub_02_2_K2Node_ActorBoundEvent_76_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_9_K2Node_ActorBoundEvent_26_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_9_K2Node_ActorBoundEvent_26_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_9_K2Node_ActorBoundEvent_26_SBZLootedSignature__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_8_K2Node_ActorBoundEvent_18_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_8_K2Node_ActorBoundEvent_18_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_8_K2Node_ActorBoundEvent_18_SBZLootedSignature__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_7_K2Node_ActorBoundEvent_61_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_7_K2Node_ActorBoundEvent_61_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_7_K2Node_ActorBoundEvent_61_SBZLootedSignature__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_6_K2Node_ActorBoundEvent_60_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_6_K2Node_ActorBoundEvent_60_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_6_K2Node_ActorBoundEvent_60_SBZLootedSignature__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_5_K2Node_ActorBoundEvent_59_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_5_K2Node_ActorBoundEvent_59_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_5_K2Node_ActorBoundEvent_59_SBZLootedSignature__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_4_K2Node_ActorBoundEvent_58_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_4_K2Node_ActorBoundEvent_58_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_4_K2Node_ActorBoundEvent_58_SBZLootedSignature__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_2_K2Node_ActorBoundEvent_57_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_2_K2Node_ActorBoundEvent_57_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_2_K2Node_ActorBoundEvent_57_SBZLootedSignature__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_01_2_K2Node_ActorBoundEvent_21_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_01_2_K2Node_ActorBoundEvent_21_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_ScriptingGroundFloor_BP_InstantLoot_Money_01_2_K2Node_ActorBoundEvent_21_SBZLootedSignature__DelegateSignature;
+
+// Function G_DataCenter_ScriptingGroundFloor.G_DataCenter_ScriptingGroundFloor_C.BndEvt__G_DataCenter_Scripting_SBZPlayerTriggerVolume_PlayerInsideBasement_K2Node_ActorBoundEvent_20_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_Scripting_SBZPlayerTriggerVolume_PlayerInsideBasement_K2Node_ActorBoundEvent_20_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DataCenter_ScriptingGroundFloor_C_BndEvt__G_DataCenter_Scripting_SBZPlayerTriggerVolume_PlayerInsideBasement_K2Node_ActorBoundEvent_20_SBZPawnDynamicDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

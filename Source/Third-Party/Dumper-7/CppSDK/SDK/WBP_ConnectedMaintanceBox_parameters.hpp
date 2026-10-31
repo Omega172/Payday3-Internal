@@ -17,73 +17,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.ExecuteUbergraph_WBP_ConnectedMaintanceBox
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_ConnectedMaintanceBox_C_ExecuteUbergraph_WBP_ConnectedMaintanceBox final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.SetCompetedText
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_ConnectedMaintanceBox_C_SetCompetedText final
-{
-public:
-	class FText                                   In;                                                // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-
-// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.SetDisabledText
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_ConnectedMaintanceBox_C_SetDisabledText final
-{
-public:
-	class FText                                   In;                                                // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-
-// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.SetErrorText
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_ConnectedMaintanceBox_C_SetErrorText final
-{
-public:
-	class FText                                   In;                                                // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-
-// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.SetFirstConnection
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_ConnectedMaintanceBox_C_SetFirstConnection final
-{
-public:
-	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-
-// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.SetIntroText
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_ConnectedMaintanceBox_C_SetIntroText final
-{
-public:
-	class FText                                   In;                                                // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-
-// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.SetLastConnection
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_ConnectedMaintanceBox_C_SetLastConnection final
-{
-public:
-	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-
-// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.SetModelNumber
-// 0x0078 (0x0078 - 0x0000)
-struct WBP_ConnectedMaintanceBox_C_SetModelNumber final
-{
-public:
-	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0010(0x0048)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0058(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0068(0x0010)()
-};
-
 // Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.SetSymbol
 // 0x0088 (0x0088 - 0x0000)
 struct WBP_ConnectedMaintanceBox_C_SetSymbol final
@@ -104,6 +37,82 @@ public:
 	class UTexture2D*                             Temp_object_Variable_3;                            // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             K2Node_Select_Default_1;                           // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_WBP_ConnectedMaintanceBox_C_SetSymbol;
+
+// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.SetModelNumber
+// 0x0078 (0x0078 - 0x0000)
+struct WBP_ConnectedMaintanceBox_C_SetModelNumber final
+{
+public:
+	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0010(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0058(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0068(0x0010)()
+};
+DUMPER7_ASSERTS_WBP_ConnectedMaintanceBox_C_SetModelNumber;
+
+// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.SetLastConnection
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_ConnectedMaintanceBox_C_SetLastConnection final
+{
+public:
+	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_ConnectedMaintanceBox_C_SetLastConnection;
+
+// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.SetIntroText
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_ConnectedMaintanceBox_C_SetIntroText final
+{
+public:
+	class FText                                   In;                                                // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_ConnectedMaintanceBox_C_SetIntroText;
+
+// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.SetFirstConnection
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_ConnectedMaintanceBox_C_SetFirstConnection final
+{
+public:
+	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_ConnectedMaintanceBox_C_SetFirstConnection;
+
+// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.SetErrorText
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_ConnectedMaintanceBox_C_SetErrorText final
+{
+public:
+	class FText                                   In;                                                // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_ConnectedMaintanceBox_C_SetErrorText;
+
+// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.SetDisabledText
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_ConnectedMaintanceBox_C_SetDisabledText final
+{
+public:
+	class FText                                   In;                                                // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_ConnectedMaintanceBox_C_SetDisabledText;
+
+// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.SetCompetedText
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_ConnectedMaintanceBox_C_SetCompetedText final
+{
+public:
+	class FText                                   In;                                                // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_ConnectedMaintanceBox_C_SetCompetedText;
+
+// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.ExecuteUbergraph_WBP_ConnectedMaintanceBox
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_ConnectedMaintanceBox_C_ExecuteUbergraph_WBP_ConnectedMaintanceBox final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ConnectedMaintanceBox_C_ExecuteUbergraph_WBP_ConnectedMaintanceBox;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

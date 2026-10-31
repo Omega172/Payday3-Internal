@@ -29,8 +29,8 @@ public:
 	double                                        StartDelay;                                        // 0x0350(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_VFX_Nighclub_Trigger(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_VFX_Nighclub_Trigger(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -46,5 +46,6 @@ public:
 		return GetDefaultObjImpl<ABP_VFX_Nighclub_Trigger_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_VFX_Nighclub_Trigger_C;
 
 SDK_NAMESPACE_END

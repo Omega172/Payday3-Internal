@@ -25,9 +25,9 @@ public:
 	class ALevelSequenceActor*                    DEMA_CAR_ESCAPEMaster_5_ExecuteUbergraph_C_Dema_Outro_RefProperty; // 0x03D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_C_Dema_Outro(int32 EntryPoint);
+	void OutroSequenceStarted(const int32 OutroVariation_OutroSequenceStarted);
 	void OnOutroFinished();
-	void OutroSequenceStarted(const int32 OutroVariation);
+	void ExecuteUbergraph_C_Dema_Outro(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -43,5 +43,6 @@ public:
 		return GetDefaultObjImpl<AC_Dema_Outro_C>();
 	}
 };
+DUMPER7_ASSERTS_AC_Dema_Outro_C;
 
 SDK_NAMESPACE_END

@@ -16,6 +16,18 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_ServerBrowserButton.WBP_ServerBrowserButton_C.ButtonSelected
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_ServerBrowserButton_C::ButtonSelected()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonSelected", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_ServerBrowserButton.WBP_ServerBrowserButton_C.ExecuteUbergraph_WBP_ServerBrowserButton
 // (Final, UbergraphFunction)
 // Parameters:
@@ -31,18 +43,6 @@ void UWBP_ServerBrowserButton_C::ExecuteUbergraph_WBP_ServerBrowserButton(int32 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ServerBrowserButton.WBP_ServerBrowserButton_C.ButtonSelected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_ServerBrowserButton_C::ButtonSelected()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonSelected", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

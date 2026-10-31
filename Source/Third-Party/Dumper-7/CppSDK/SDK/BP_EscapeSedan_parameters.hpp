@@ -17,180 +17,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_11_SBZBagCountChangedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_11_SBZBagCountChangedDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Overlapping;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Secured;                                           // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_7_SBZBagVolumeComplete__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_7_SBZBagVolumeComplete__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_car_SBZIntState_K2Node_ComponentBoundEvent_16_SBZIntStateChangedSignature__DelegateSignature
-// 0x000C (0x000C - 0x0000)
-struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_car_SBZIntState_K2Node_ComponentBoundEvent_16_SBZIntStateChangedSignature__DelegateSignature final
-{
-public:
-	int32                                         OldState;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         NewState;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZBinaryState_backseatOpen_K2Node_ComponentBoundEvent_9_SBZBinaryStateChangedSignature__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZBinaryState_backseatOpen_K2Node_ComponentBoundEvent_9_SBZBinaryStateChangedSignature__DelegateSignature final
-{
-public:
-	bool                                          bState;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZBinaryState_trunkOpen_K2Node_ComponentBoundEvent_8_SBZBinaryStateChangedSignature__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZBinaryState_trunkOpen_K2Node_ComponentBoundEvent_8_SBZBinaryStateChangedSignature__DelegateSignature final
-{
-public:
-	bool                                          bState;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_21_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_21_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_24_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_24_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_25_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_25_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_RearDoors_K2Node_ComponentBoundEvent_18_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_RearDoors_K2Node_ComponentBoundEvent_18_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_Trunk_K2Node_ComponentBoundEvent_17_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_Trunk_K2Node_ComponentBoundEvent_17_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_UnlockCar_K2Node_ComponentBoundEvent_14_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_UnlockCar_K2Node_ComponentBoundEvent_14_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_UnlockCar_K2Node_ComponentBoundEvent_19_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_UnlockCar_K2Node_ComponentBoundEvent_19_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_trunkTriggerVolume_K2Node_ComponentBoundEvent_4_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_trunkTriggerVolume_K2Node_ComponentBoundEvent_4_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_trunkTriggerVolume_K2Node_ComponentBoundEvent_6_SBZBagVolumeComplete__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_trunkTriggerVolume_K2Node_ComponentBoundEvent_6_SBZBagVolumeComplete__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_EscapeSedan.BP_EscapeSedan_C.ExecuteUbergraph_BP_EscapeSedan
 // 0x0290 (0x0290 - 0x0000)
 struct BP_EscapeSedan_C_ExecuteUbergraph_BP_EscapeSedan final
@@ -301,6 +127,199 @@ public:
 	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x0284(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Delay_Duration_ImplicitCast_1;            // 0x0288(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_EscapeSedan_C_ExecuteUbergraph_BP_EscapeSedan;
+
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_trunkTriggerVolume_K2Node_ComponentBoundEvent_6_SBZBagVolumeComplete__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_trunkTriggerVolume_K2Node_ComponentBoundEvent_6_SBZBagVolumeComplete__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_trunkTriggerVolume_K2Node_ComponentBoundEvent_6_SBZBagVolumeComplete__DelegateSignature;
+
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_trunkTriggerVolume_K2Node_ComponentBoundEvent_4_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_trunkTriggerVolume_K2Node_ComponentBoundEvent_4_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_trunkTriggerVolume_K2Node_ComponentBoundEvent_4_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_UnlockCar_K2Node_ComponentBoundEvent_19_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_UnlockCar_K2Node_ComponentBoundEvent_19_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_UnlockCar_K2Node_ComponentBoundEvent_19_SBZOnInteraction__DelegateSignature;
+
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_UnlockCar_K2Node_ComponentBoundEvent_14_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_UnlockCar_K2Node_ComponentBoundEvent_14_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_UnlockCar_K2Node_ComponentBoundEvent_14_SBZOnInteraction__DelegateSignature;
+
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_Trunk_K2Node_ComponentBoundEvent_17_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_Trunk_K2Node_ComponentBoundEvent_17_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_Trunk_K2Node_ComponentBoundEvent_17_SBZOnInteraction__DelegateSignature;
+
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_RearDoors_K2Node_ComponentBoundEvent_18_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_RearDoors_K2Node_ComponentBoundEvent_18_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_RearDoors_K2Node_ComponentBoundEvent_18_SBZOnInteraction__DelegateSignature;
+
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature;
+
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_25_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_25_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_25_SBZOnInteraction__DelegateSignature;
+
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_24_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_24_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_24_SBZOnInteraction__DelegateSignature;
+
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_21_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_21_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_21_SBZOnInteraction__DelegateSignature;
+
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature;
+
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZInteractable_FuelCap_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature;
+
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZBinaryState_trunkOpen_K2Node_ComponentBoundEvent_8_SBZBinaryStateChangedSignature__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZBinaryState_trunkOpen_K2Node_ComponentBoundEvent_8_SBZBinaryStateChangedSignature__DelegateSignature final
+{
+public:
+	bool                                          bState;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZBinaryState_trunkOpen_K2Node_ComponentBoundEvent_8_SBZBinaryStateChangedSignature__DelegateSignature;
+
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_SBZBinaryState_backseatOpen_K2Node_ComponentBoundEvent_9_SBZBinaryStateChangedSignature__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZBinaryState_backseatOpen_K2Node_ComponentBoundEvent_9_SBZBinaryStateChangedSignature__DelegateSignature final
+{
+public:
+	bool                                          bState;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_SBZBinaryState_backseatOpen_K2Node_ComponentBoundEvent_9_SBZBinaryStateChangedSignature__DelegateSignature;
+
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_car_SBZIntState_K2Node_ComponentBoundEvent_16_SBZIntStateChangedSignature__DelegateSignature
+// 0x000C (0x000C - 0x0000)
+struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_car_SBZIntState_K2Node_ComponentBoundEvent_16_SBZIntStateChangedSignature__DelegateSignature final
+{
+public:
+	int32                                         OldState;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewState;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_car_SBZIntState_K2Node_ComponentBoundEvent_16_SBZIntStateChangedSignature__DelegateSignature;
+
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_7_SBZBagVolumeComplete__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_7_SBZBagVolumeComplete__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_7_SBZBagVolumeComplete__DelegateSignature;
+
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function BP_EscapeSedan.BP_EscapeSedan_C.BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_11_SBZBagCountChangedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_11_SBZBagCountChangedDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Overlapping;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Secured;                                           // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_EscapeSedan_C_BndEvt__BP_EscapeSedan_BackseatTriggerVolume_K2Node_ComponentBoundEvent_11_SBZBagCountChangedDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

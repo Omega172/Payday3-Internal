@@ -30,10 +30,10 @@ public:
 	class UTextBlock*                             sub_text;                                          // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void setMachineRunning(bool State);
-	void setProgress(double progress);
-	void setProgressbarVisibility(bool visible);
 	void setText(const class FText& top, const class FText& bottom);
+	void setProgressbarVisibility(bool visible);
+	void setProgress(double progress);
+	void setMachineRunning(bool State);
 
 public:
 	static class UClass* StaticClass()
@@ -49,5 +49,6 @@ public:
 		return GetDefaultObjImpl<UWBP_ServerDecrypter_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_ServerDecrypter_C;
 
 SDK_NAMESPACE_END

@@ -30,8 +30,8 @@ public:
 	class UImage*                                 TitleBackground_I;                                 // 0x0328(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void OnRep_CodePacket();
 	void UpdateDisplayText(const struct FSBZHackableDisplayText& DisplayText);
+	void OnRep_CodePacket();
 
 public:
 	static class UClass* StaticClass()
@@ -47,5 +47,6 @@ public:
 		return GetDefaultObjImpl<UWBP_STO_ComputerEmail_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_STO_ComputerEmail_C;
 
 SDK_NAMESPACE_END

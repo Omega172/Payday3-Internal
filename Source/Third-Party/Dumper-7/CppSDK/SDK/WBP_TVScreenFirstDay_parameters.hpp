@@ -19,8 +19,9 @@ SDK_PARAM_NAMESPACE_START
 struct WBP_TVScreenFirstDay_C_SetText final
 {
 public:
-	class FText                                   Text_0;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   Text;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
+DUMPER7_ASSERTS_WBP_TVScreenFirstDay_C_SetText;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

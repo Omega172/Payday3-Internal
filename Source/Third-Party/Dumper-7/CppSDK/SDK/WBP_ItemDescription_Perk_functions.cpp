@@ -16,57 +16,37 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_ItemDescription_Perk.WBP_ItemDescription_Perk_C.SetText_Title
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_ItemDescription_Perk.WBP_ItemDescription_Perk_C.ExecuteUbergraph_WBP_ItemDescription_Perk
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// const class FText&                      SlotText                                               (BlueprintVisible, BlueprintReadOnly, Parm)
-// const class FText&                      PartText                                               (BlueprintVisible, BlueprintReadOnly, Parm)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ItemDescription_Perk_C::SetText_Title(const class FText& SlotText, const class FText& PartText)
+void UWBP_ItemDescription_Perk_C::ExecuteUbergraph_WBP_ItemDescription_Perk(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetText_Title", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_ItemDescription_Perk_C", "ExecuteUbergraph_WBP_ItemDescription_Perk", FuncInfo);
 
-	Params::WBP_ItemDescription_Perk_C_SetText_Title Parms{};
+	Params::WBP_ItemDescription_Perk_C_ExecuteUbergraph_WBP_ItemDescription_Perk Parms{};
 
-	Parms.SlotText = std::move(SlotText);
-	Parms.PartText = std::move(PartText);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ItemDescription_Perk.WBP_ItemDescription_Perk_C.SetText_Description
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_ItemDescription_Perk.WBP_ItemDescription_Perk_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// const class FText&                      Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ItemDescription_Perk_C::SetText_Description(const class FText& Text)
+void UWBP_ItemDescription_Perk_C::PreConstruct(bool IsDesignTime)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetText_Description", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
 
-	Params::WBP_ItemDescription_Perk_C_SetText_Description Parms{};
+	Params::WBP_ItemDescription_Perk_C_PreConstruct Parms{};
 
-	Parms.Text = std::move(Text);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ItemDescription_Perk.WBP_ItemDescription_Perk_C.SetImg_SlotIcon
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                          ResourceObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ItemDescription_Perk_C::SetImg_SlotIcon(class UObject* ResourceObject)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetImg_SlotIcon", FnName));
-
-	Params::WBP_ItemDescription_Perk_C_SetImg_SlotIcon Parms{};
-
-	Parms.ResourceObject = ResourceObject;
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -90,37 +70,57 @@ void UWBP_ItemDescription_Perk_C::SetColor_SlotIcon(const struct FLinearColor& I
 }
 
 
-// Function WBP_ItemDescription_Perk.WBP_ItemDescription_Perk_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_ItemDescription_Perk.WBP_ItemDescription_Perk_C.SetImg_SlotIcon
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          ResourceObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ItemDescription_Perk_C::PreConstruct(bool IsDesignTime_PreConstruct)
+void UWBP_ItemDescription_Perk_C::SetImg_SlotIcon(class UObject* ResourceObject)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetImg_SlotIcon", FnName));
 
-	Params::WBP_ItemDescription_Perk_C_PreConstruct Parms{};
+	Params::WBP_ItemDescription_Perk_C_SetImg_SlotIcon Parms{};
 
-	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+	Parms.ResourceObject = ResourceObject;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ItemDescription_Perk.WBP_ItemDescription_Perk_C.ExecuteUbergraph_WBP_ItemDescription_Perk
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_ItemDescription_Perk.WBP_ItemDescription_Perk_C.SetText_Description
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_ItemDescription_Perk_C::ExecuteUbergraph_WBP_ItemDescription_Perk(int32 EntryPoint)
+void UWBP_ItemDescription_Perk_C::SetText_Description(const class FText& Text)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_ItemDescription_Perk_C", "ExecuteUbergraph_WBP_ItemDescription_Perk", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetText_Description", FnName));
 
-	Params::WBP_ItemDescription_Perk_C_ExecuteUbergraph_WBP_ItemDescription_Perk Parms{};
+	Params::WBP_ItemDescription_Perk_C_SetText_Description Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Text = std::move(Text);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ItemDescription_Perk.WBP_ItemDescription_Perk_C.SetText_Title
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      SlotText                                               (BlueprintVisible, BlueprintReadOnly, Parm)
+// const class FText&                      PartText                                               (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_ItemDescription_Perk_C::SetText_Title(const class FText& SlotText, const class FText& PartText)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetText_Title", FnName));
+
+	Params::WBP_ItemDescription_Perk_C_SetText_Title Parms{};
+
+	Parms.SlotText = std::move(SlotText);
+	Parms.PartText = std::move(PartText);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

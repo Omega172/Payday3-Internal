@@ -29,9 +29,9 @@ public:
 	bool                                          VarCanistersEnabled;                               // 0x03E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_R_Bebe_StorageRoom(int32 EntryPoint);
-	void OnRandomSublevelPlaced();
 	void RandomizedRoomTest_RemoteEvent1();
+	void OnRandomSublevelPlaced();
+	void ExecuteUbergraph_R_Bebe_StorageRoom(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -47,5 +47,6 @@ public:
 		return GetDefaultObjImpl<AR_Bebe_StorageRoom_C>();
 	}
 };
+DUMPER7_ASSERTS_AR_Bebe_StorageRoom_C;
 
 SDK_NAMESPACE_END

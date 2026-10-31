@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Level_FirstAidPack_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Level_FirstAidPack_C;
 
 SDK_NAMESPACE_END

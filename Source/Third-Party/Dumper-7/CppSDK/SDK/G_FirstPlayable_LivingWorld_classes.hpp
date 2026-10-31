@@ -43,8 +43,8 @@ public:
 	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_8_ExecuteUbergraph_G_FirstPlayable_LivingWorld_RefProperty; // 0x0468(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BlackScreenStarted();
 	void ExecuteUbergraph_G_FirstPlayable_LivingWorld(int32 EntryPoint);
+	void BlackScreenStarted();
 
 public:
 	static class UClass* StaticClass()
@@ -60,5 +60,6 @@ public:
 		return GetDefaultObjImpl<AG_FirstPlayable_LivingWorld_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_FirstPlayable_LivingWorld_C;
 
 SDK_NAMESPACE_END

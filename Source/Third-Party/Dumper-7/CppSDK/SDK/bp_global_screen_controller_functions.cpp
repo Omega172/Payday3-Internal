@@ -16,26 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function bp_global_screen_controller.bp_global_screen_controller_C.ExecuteUbergraph_bp_global_screen_controller
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Abp_global_screen_controller_C::ExecuteUbergraph_bp_global_screen_controller(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("bp_global_screen_controller_C", "ExecuteUbergraph_bp_global_screen_controller");
-
-	Params::bp_global_screen_controller_C_ExecuteUbergraph_bp_global_screen_controller Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function bp_global_screen_controller.bp_global_screen_controller_C.OnStateChanged
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -45,16 +25,32 @@ void Abp_global_screen_controller_C::ExecuteUbergraph_bp_global_screen_controlle
 
 void Abp_global_screen_controller_C::OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("bp_global_screen_controller_C", "OnStateChanged");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
 	Params::bp_global_screen_controller_C_OnStateChanged Parms{};
 
 	Parms.OldState = OldState;
 	Parms.NewState = NewState;
 	Parms.bDoCosmetics = bDoCosmetics;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function bp_global_screen_controller.bp_global_screen_controller_C.ExecuteUbergraph_bp_global_screen_controller
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Abp_global_screen_controller_C::ExecuteUbergraph_bp_global_screen_controller(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "bp_global_screen_controller_C", "ExecuteUbergraph_bp_global_screen_controller", FuncInfo);
+
+	Params::bp_global_screen_controller_C_ExecuteUbergraph_bp_global_screen_controller Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

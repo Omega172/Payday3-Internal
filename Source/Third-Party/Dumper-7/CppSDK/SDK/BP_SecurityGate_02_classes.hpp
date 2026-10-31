@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_SecurityGate_02_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SecurityGate_02_C;
 
 SDK_NAMESPACE_END

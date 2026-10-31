@@ -40,14 +40,14 @@ public:
 	TArray<class FName>                           BlockingSwitches;                                  // 0x03C0(0x0010)(Edit, BlueprintVisible)
 
 public:
-	void BndEvt__BP_LA_Guard_Scripted_DoorGuard_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
-	void BndEvt__BP_LA_Guard_Scripted_DoorGuard_ExitTrigger_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
-	void BndEvt__BP_LA_OverlapTriggerEvent_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionStopEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot, ESBZLifeActionStopReason Result);
-	void BndEvt__BP_LA_OverlapTriggerEvent_SBZLifeAction_K2Node_ComponentBoundEvent_4_SBZLifeActionEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot);
-	void ExecuteUbergraph_BP_LA_OverlapTriggerEvent(int32 EntryPoint);
-	void GetCurrentSectionName(class FName* SectionName);
-	void ReceiveTick(float DeltaSeconds);
 	void SetTriggerEnable(bool Enable);
+	void ReceiveTick(float DeltaSeconds);
+	void GetCurrentSectionName(class FName* SectionName);
+	void ExecuteUbergraph_BP_LA_OverlapTriggerEvent(int32 EntryPoint);
+	void BndEvt__BP_LA_OverlapTriggerEvent_SBZLifeAction_K2Node_ComponentBoundEvent_4_SBZLifeActionEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot);
+	void BndEvt__BP_LA_OverlapTriggerEvent_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionStopEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot, ESBZLifeActionStopReason Result);
+	void BndEvt__BP_LA_Guard_Scripted_DoorGuard_ExitTrigger_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+	void BndEvt__BP_LA_Guard_Scripted_DoorGuard_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 
 public:
 	static class UClass* StaticClass()
@@ -63,5 +63,6 @@ public:
 		return GetDefaultObjImpl<ABP_LA_OverlapTriggerEvent_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LA_OverlapTriggerEvent_C;
 
 SDK_NAMESPACE_END

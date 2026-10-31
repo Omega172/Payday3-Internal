@@ -17,23 +17,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_SM_GameStart.WBP_UI_SM_GameStart_C.OnStackChanged
-// 0x001C (0x001C - 0x0000)
-struct WBP_UI_SM_GameStart_C_OnStackChanged final
+// Function WBP_UI_SM_GameStart.WBP_UI_SM_GameStart_C.BndEvt__WBP_UI_SM_GameStart_Widget_FullscreenVideo_K2Node_ComponentBoundEvent_0_SBZFullscreenVideoActiveChangedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_SM_GameStart_C_BndEvt__WBP_UI_SM_GameStart_Widget_FullscreenVideo_K2Node_ComponentBoundEvent_0_SBZFullscreenVideoActiveChangedDelegate__DelegateSignature final
 {
 public:
-	struct FSBZUIStackChangedEvent                StackEvent;                                        // 0x0000(0x001C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	class USBZFullscreenVideoWidget*              InWidget;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInIsActive;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_SM_GameStart_C_OnStackChanged;
-
-// Function WBP_UI_SM_GameStart.WBP_UI_SM_GameStart_C.OnControlReferencesVisibilityChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_SM_GameStart_C_OnControlReferencesVisibilityChanged final
-{
-public:
-	ESlateVisibility                              InVisibility;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_SM_GameStart_C_OnControlReferencesVisibilityChanged;
+DUMPER7_ASSERTS_WBP_UI_SM_GameStart_C_BndEvt__WBP_UI_SM_GameStart_Widget_FullscreenVideo_K2Node_ComponentBoundEvent_0_SBZFullscreenVideoActiveChangedDelegate__DelegateSignature;
 
 // Function WBP_UI_SM_GameStart.WBP_UI_SM_GameStart_C.ExecuteUbergraph_WBP_UI_SM_GameStart
 // 0x0180 (0x0180 - 0x0000)
@@ -97,15 +89,23 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_SM_GameStart_C_ExecuteUbergraph_WBP_UI_SM_GameStart;
 
-// Function WBP_UI_SM_GameStart.WBP_UI_SM_GameStart_C.BndEvt__WBP_UI_SM_GameStart_Widget_FullscreenVideo_K2Node_ComponentBoundEvent_0_SBZFullscreenVideoActiveChangedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_SM_GameStart_C_BndEvt__WBP_UI_SM_GameStart_Widget_FullscreenVideo_K2Node_ComponentBoundEvent_0_SBZFullscreenVideoActiveChangedDelegate__DelegateSignature final
+// Function WBP_UI_SM_GameStart.WBP_UI_SM_GameStart_C.OnControlReferencesVisibilityChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_SM_GameStart_C_OnControlReferencesVisibilityChanged final
 {
 public:
-	class USBZFullscreenVideoWidget*              InWidget;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInIsActive;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              InVisibility;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_SM_GameStart_C_BndEvt__WBP_UI_SM_GameStart_Widget_FullscreenVideo_K2Node_ComponentBoundEvent_0_SBZFullscreenVideoActiveChangedDelegate__DelegateSignature;
+DUMPER7_ASSERTS_WBP_UI_SM_GameStart_C_OnControlReferencesVisibilityChanged;
+
+// Function WBP_UI_SM_GameStart.WBP_UI_SM_GameStart_C.OnStackChanged
+// 0x001C (0x001C - 0x0000)
+struct WBP_UI_SM_GameStart_C_OnStackChanged final
+{
+public:
+	struct FSBZUIStackChangedEvent                StackEvent;                                        // 0x0000(0x001C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_UI_SM_GameStart_C_OnStackChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

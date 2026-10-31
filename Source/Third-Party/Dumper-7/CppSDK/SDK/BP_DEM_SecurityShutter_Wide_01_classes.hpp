@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_DEM_SecurityShutter_Wide_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DEM_SecurityShutter_Wide_01_C;
 
 SDK_NAMESPACE_END

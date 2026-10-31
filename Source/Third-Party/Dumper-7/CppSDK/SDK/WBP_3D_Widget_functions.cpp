@@ -16,118 +16,36 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_3D_Widget.WBP_3D_Widget_C.ExecuteUbergraph_WBP_3D_Widget
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_3D_Widget_C::ExecuteUbergraph_WBP_3D_Widget(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_3D_Widget_C", "ExecuteUbergraph_WBP_3D_Widget");
-
-	Params::WBP_3D_Widget_C_ExecuteUbergraph_WBP_3D_Widget Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_3D_Widget.WBP_3D_Widget_C.Set ButtonUsed
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_3D_Widget_C::Set_ButtonUsed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_3D_Widget_C", "Set ButtonUsed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_3D_Widget.WBP_3D_Widget_C.Set State
+// Function WBP_3D_Widget.WBP_3D_Widget_C.SetScrollUpFocus
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ECompState                              Int_0                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_3D_Widget_C::Set_State(ECompState Int_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_3D_Widget_C", "Set State");
-
-	Params::WBP_3D_Widget_C_Set_State Parms{};
-
-	Parms.Int_0 = Int_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_3D_Widget.WBP_3D_Widget_C.SetActiveButtonFocus
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Selection                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_3D_Widget_C::SetActiveButtonFocus(int32 Selection, bool NewParam)
+void UWBP_3D_Widget_C::SetScrollUpFocus(bool NewParam)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetScrollUpFocus", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_3D_Widget_C", "SetActiveButtonFocus");
+	Params::WBP_3D_Widget_C_SetScrollUpFocus Parms{};
 
-	Params::WBP_3D_Widget_C_SetActiveButtonFocus Parms{};
-
-	Parms.Selection = Selection;
 	Parms.NewParam = NewParam;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_3D_Widget.WBP_3D_Widget_C.SetArtList
+// Function WBP_3D_Widget.WBP_3D_Widget_C.SetScrollDownFocus
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FString&                    NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void UWBP_3D_Widget_C::SetArtList(const class FString& NewParam)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_3D_Widget_C", "SetArtList");
-
-	Params::WBP_3D_Widget_C_SetArtList Parms{};
-
-	Parms.NewParam = std::move(NewParam);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_3D_Widget.WBP_3D_Widget_C.SetBackButtonFocus
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Int_0                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_3D_Widget_C::SetBackButtonFocus(int32 Int_0, bool NewParam)
+void UWBP_3D_Widget_C::SetScrollDownFocus(bool NewParam)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetScrollDownFocus", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_3D_Widget_C", "SetBackButtonFocus");
+	Params::WBP_3D_Widget_C_SetScrollDownFocus Parms{};
 
-	Params::WBP_3D_Widget_C_SetBackButtonFocus Parms{};
-
-	Parms.Int_0 = Int_0;
 	Parms.NewParam = NewParam;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -142,10 +60,8 @@ void UWBP_3D_Widget_C::SetBackButtonFocus(int32 Int_0, bool NewParam)
 
 void UWBP_3D_Widget_C::SetMenuFocusOnButtons(int32 NewParam, bool NewParam2)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_3D_Widget_C", "SetMenuFocusOnButtons");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetMenuFocusOnButtons", FnName));
 
 	Params::WBP_3D_Widget_C_SetMenuFocusOnButtons Parms{};
 
@@ -156,41 +72,107 @@ void UWBP_3D_Widget_C::SetMenuFocusOnButtons(int32 NewParam, bool NewParam2)
 }
 
 
-// Function WBP_3D_Widget.WBP_3D_Widget_C.SetScrollDownFocus
+// Function WBP_3D_Widget.WBP_3D_Widget_C.SetBackButtonFocus
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
+// int32                                   Int                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_3D_Widget_C::SetScrollDownFocus(bool NewParam)
+void UWBP_3D_Widget_C::SetBackButtonFocus(int32 Int, bool NewParam)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetBackButtonFocus", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_3D_Widget_C", "SetScrollDownFocus");
+	Params::WBP_3D_Widget_C_SetBackButtonFocus Parms{};
 
-	Params::WBP_3D_Widget_C_SetScrollDownFocus Parms{};
-
+	Parms.Int = Int;
 	Parms.NewParam = NewParam;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_3D_Widget.WBP_3D_Widget_C.SetScrollUpFocus
+// Function WBP_3D_Widget.WBP_3D_Widget_C.SetArtList
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
+// const class FString&                    NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UWBP_3D_Widget_C::SetArtList(const class FString& NewParam)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetArtList", FnName));
+
+	Params::WBP_3D_Widget_C_SetArtList Parms{};
+
+	Parms.NewParam = std::move(NewParam);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_3D_Widget.WBP_3D_Widget_C.SetActiveButtonFocus
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Selection                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_3D_Widget_C::SetScrollUpFocus(bool NewParam)
+void UWBP_3D_Widget_C::SetActiveButtonFocus(int32 Selection, bool NewParam)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetActiveButtonFocus", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_3D_Widget_C", "SetScrollUpFocus");
+	Params::WBP_3D_Widget_C_SetActiveButtonFocus Parms{};
 
-	Params::WBP_3D_Widget_C_SetScrollUpFocus Parms{};
-
+	Parms.Selection = Selection;
 	Parms.NewParam = NewParam;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_3D_Widget.WBP_3D_Widget_C.Set State
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ECompState                              Int_0                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_3D_Widget_C::Set_State(ECompState Int_0)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set State", FnName));
+
+	Params::WBP_3D_Widget_C_Set_State Parms{};
+
+	Parms.Int_0 = Int_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_3D_Widget.WBP_3D_Widget_C.Set ButtonUsed
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_3D_Widget_C::Set_ButtonUsed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set ButtonUsed", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_3D_Widget.WBP_3D_Widget_C.ExecuteUbergraph_WBP_3D_Widget
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_3D_Widget_C::ExecuteUbergraph_WBP_3D_Widget(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_3D_Widget_C", "ExecuteUbergraph_WBP_3D_Widget", FuncInfo);
+
+	Params::WBP_3D_Widget_C_ExecuteUbergraph_WBP_3D_Widget Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

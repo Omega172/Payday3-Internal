@@ -41,8 +41,8 @@ public:
 	class ABP_LoadoutMannequin_C*                 BP_LoadoutMannequin_10_ExecuteUbergraph_G_NewShootingRange_Scripting_RefProperty; // 0x0428(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BlackScreenStarted();
 	void ExecuteUbergraph_G_NewShootingRange_Scripting(int32 EntryPoint);
+	void BlackScreenStarted();
 
 public:
 	static class UClass* StaticClass()
@@ -58,5 +58,6 @@ public:
 		return GetDefaultObjImpl<AG_NewShootingRange_Scripting_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_NewShootingRange_Scripting_C;
 
 SDK_NAMESPACE_END

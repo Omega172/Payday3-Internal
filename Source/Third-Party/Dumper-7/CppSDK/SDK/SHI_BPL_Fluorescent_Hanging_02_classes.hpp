@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ASHI_BPL_Fluorescent_Hanging_02_C>();
 	}
 };
+DUMPER7_ASSERTS_ASHI_BPL_Fluorescent_Hanging_02_C;
 
 SDK_NAMESPACE_END

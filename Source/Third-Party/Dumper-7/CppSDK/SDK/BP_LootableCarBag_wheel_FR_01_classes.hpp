@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<ABP_LootableCarBag_wheel_FR_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LootableCarBag_wheel_FR_01_C;
 
 SDK_NAMESPACE_END

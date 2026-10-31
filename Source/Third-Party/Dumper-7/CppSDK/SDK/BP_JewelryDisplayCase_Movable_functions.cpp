@@ -16,45 +16,67 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_JewelryDisplayCase_Movable.BP_JewelryDisplayCase_Movable_C.BP_OnGlassBroken
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_JewelryDisplayCase_Movable.BP_JewelryDisplayCase_Movable_C.OpenClose_Timeline__UpdateFunc
+// (BlueprintEvent)
 
-void ABP_JewelryDisplayCase_Movable_C::BP_OnGlassBroken(bool bDoCosmetics)
+void ABP_JewelryDisplayCase_Movable_C::OpenClose_Timeline__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OpenClose_Timeline__UpdateFunc", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_JewelryDisplayCase_Movable_C", "BP_OnGlassBroken");
-
-	Params::BP_JewelryDisplayCase_Movable_C_BP_OnGlassBroken Parms{};
-
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_JewelryDisplayCase_Movable.BP_JewelryDisplayCase_Movable_C.BP_OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// ESBZDisplayCaseState                    OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZDisplayCaseState                    NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_JewelryDisplayCase_Movable.BP_JewelryDisplayCase_Movable_C.OpenClose_Timeline__FinishedFunc
+// (BlueprintEvent)
 
-void ABP_JewelryDisplayCase_Movable_C::BP_OnStateChanged(ESBZDisplayCaseState OldState, ESBZDisplayCaseState NewState, bool bDoCosmetics)
+void ABP_JewelryDisplayCase_Movable_C::OpenClose_Timeline__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OpenClose_Timeline__FinishedFunc", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_JewelryDisplayCase_Movable_C", "BP_OnStateChanged");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_JewelryDisplayCase_Movable_C_BP_OnStateChanged Parms{};
 
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
+// Function BP_JewelryDisplayCase_Movable.BP_JewelryDisplayCase_Movable_C.LockDownTimeline__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_JewelryDisplayCase_Movable_C::LockDownTimeline__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"LockDownTimeline__UpdateFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_JewelryDisplayCase_Movable.BP_JewelryDisplayCase_Movable_C.LockDownTimeline__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_JewelryDisplayCase_Movable_C::LockDownTimeline__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"LockDownTimeline__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_JewelryDisplayCase_Movable.BP_JewelryDisplayCase_Movable_C.ExecuteUbergraph_BP_JewelryDisplayCase_Movable
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_JewelryDisplayCase_Movable_C::ExecuteUbergraph_BP_JewelryDisplayCase_Movable(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_JewelryDisplayCase_Movable_C", "ExecuteUbergraph_BP_JewelryDisplayCase_Movable", FuncInfo);
+
+	Params::BP_JewelryDisplayCase_Movable_C_ExecuteUbergraph_BP_JewelryDisplayCase_Movable Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -67,10 +89,8 @@ void ABP_JewelryDisplayCase_Movable_C::BP_OnStateChanged(ESBZDisplayCaseState Ol
 
 void ABP_JewelryDisplayCase_Movable_C::EnableLockdown(bool bInEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_JewelryDisplayCase_Movable_C", "EnableLockdown");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EnableLockdown", FnName));
 
 	Params::BP_JewelryDisplayCase_Movable_C_EnableLockdown Parms{};
 
@@ -80,79 +100,43 @@ void ABP_JewelryDisplayCase_Movable_C::EnableLockdown(bool bInEnabled)
 }
 
 
-// Function BP_JewelryDisplayCase_Movable.BP_JewelryDisplayCase_Movable_C.ExecuteUbergraph_BP_JewelryDisplayCase_Movable
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_JewelryDisplayCase_Movable.BP_JewelryDisplayCase_Movable_C.BP_OnStateChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZDisplayCaseState                    OldState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZDisplayCaseState                    NewState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_BP_OnStateChanged                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_JewelryDisplayCase_Movable_C::ExecuteUbergraph_BP_JewelryDisplayCase_Movable(int32 EntryPoint)
+void ABP_JewelryDisplayCase_Movable_C::BP_OnStateChanged(ESBZDisplayCaseState OldState_BP_OnStateChanged, ESBZDisplayCaseState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_JewelryDisplayCase_Movable_C", "ExecuteUbergraph_BP_JewelryDisplayCase_Movable");
+	Params::BP_JewelryDisplayCase_Movable_C_BP_OnStateChanged Parms{};
 
-	Params::BP_JewelryDisplayCase_Movable_C_ExecuteUbergraph_BP_JewelryDisplayCase_Movable Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.OldState_BP_OnStateChanged = OldState_BP_OnStateChanged;
+	Parms.NewState_BP_OnStateChanged = NewState_BP_OnStateChanged;
+	Parms.bDoCosmetics_BP_OnStateChanged = bDoCosmetics_BP_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_JewelryDisplayCase_Movable.BP_JewelryDisplayCase_Movable_C.LockDownTimeline__FinishedFunc
-// (BlueprintEvent)
+// Function BP_JewelryDisplayCase_Movable.BP_JewelryDisplayCase_Movable_C.BP_OnGlassBroken
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bDoCosmetics_BP_OnGlassBroken                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_JewelryDisplayCase_Movable_C::LockDownTimeline__FinishedFunc()
+void ABP_JewelryDisplayCase_Movable_C::BP_OnGlassBroken(bool bDoCosmetics_BP_OnGlassBroken)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnGlassBroken", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_JewelryDisplayCase_Movable_C", "LockDownTimeline__FinishedFunc");
+	Params::BP_JewelryDisplayCase_Movable_C_BP_OnGlassBroken Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Parms.bDoCosmetics_BP_OnGlassBroken = bDoCosmetics_BP_OnGlassBroken;
 
-
-// Function BP_JewelryDisplayCase_Movable.BP_JewelryDisplayCase_Movable_C.LockDownTimeline__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_JewelryDisplayCase_Movable_C::LockDownTimeline__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_JewelryDisplayCase_Movable_C", "LockDownTimeline__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_JewelryDisplayCase_Movable.BP_JewelryDisplayCase_Movable_C.OpenClose_Timeline__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_JewelryDisplayCase_Movable_C::OpenClose_Timeline__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_JewelryDisplayCase_Movable_C", "OpenClose_Timeline__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_JewelryDisplayCase_Movable.BP_JewelryDisplayCase_Movable_C.OpenClose_Timeline__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_JewelryDisplayCase_Movable_C::OpenClose_Timeline__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_JewelryDisplayCase_Movable_C", "OpenClose_Timeline__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

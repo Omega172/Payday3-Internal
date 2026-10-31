@@ -12,9 +12,9 @@
 
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "doorStateSimple_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
-#include "doorStateSimple_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -42,12 +42,12 @@ public:
 	bool                                          oneOff;                                            // 0x0738(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_container_Double_doors_SBZAcousticPortalConnector_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature(class UActorComponent* Component, bool bReset);
-	void ExecuteUbergraph_BP_container_Double_doorsBase(int32 EntryPoint);
-	void getDoorSimpleState(ESBZGateState state, EdoorStateSimple* simpleState);
-	void OnStateChanged(ESBZGateState OldState, ESBZGateState NewState, bool bIsInitialStateChange);
-	void Open__FinishedFunc();
 	void Open__UpdateFunc();
+	void Open__FinishedFunc();
+	void OnStateChanged(ESBZGateState OldState, ESBZGateState NewState, bool bIsInitialStateChange);
+	void getDoorSimpleState(ESBZGateState state, EdoorStateSimple* simpleState);
+	void ExecuteUbergraph_BP_container_Double_doorsBase(int32 EntryPoint);
+	void BndEvt__BP_container_Double_doors_SBZAcousticPortalConnector_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature(class UActorComponent* Component, bool bReset);
 
 public:
 	static class UClass* StaticClass()
@@ -63,5 +63,6 @@ public:
 		return GetDefaultObjImpl<ABP_container_Double_doorsBase_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_container_Double_doorsBase_C;
 
 SDK_NAMESPACE_END

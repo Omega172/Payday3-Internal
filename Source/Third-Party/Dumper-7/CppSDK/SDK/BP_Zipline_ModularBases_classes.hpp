@@ -67,13 +67,13 @@ public:
 	TMap<class USplineMeshComponent*, double>     WallHookCables;                                    // 0x0538(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void BP_OnZiplineEnabledChanged(bool bEnabled, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_Zipline_ModularBases(int32 EntryPoint);
-	void FaceComponent(class USceneComponent* PointThis, class USceneComponent* AtThis, const struct FVector& OrThis);
-	void ReceiveBeginPlay();
-	void SpanCableToWallMount(class USplineComponent* InSplineComp, class USceneComponent* InWallMount);
-	void UpdateZiplinePointVisibility(class USceneComponent* ZiplinePoint, bool InHidden, bool bPropagateToChildren);
 	void UserConstructionScript();
+	void UpdateZiplinePointVisibility(class USceneComponent* ZiplinePoint, bool InHidden, bool bPropagateToChildren);
+	void SpanCableToWallMount(class USplineComponent* InSplineComp, class USceneComponent* InWallMount);
+	void ReceiveBeginPlay();
+	void FaceComponent(class USceneComponent* PointThis, class USceneComponent* AtThis, const struct FVector& OrThis);
+	void ExecuteUbergraph_BP_Zipline_ModularBases(int32 EntryPoint);
+	void BP_OnZiplineEnabledChanged(bool bEnabled_BP_OnZiplineEnabledChanged, bool bDoCosmetics_BP_OnZiplineEnabledChanged);
 
 public:
 	static class UClass* StaticClass()
@@ -89,5 +89,6 @@ public:
 		return GetDefaultObjImpl<ABP_Zipline_ModularBases_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Zipline_ModularBases_C;
 
 SDK_NAMESPACE_END

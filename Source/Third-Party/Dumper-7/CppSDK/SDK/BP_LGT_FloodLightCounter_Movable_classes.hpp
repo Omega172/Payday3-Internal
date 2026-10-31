@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_LGT_FloodLightCounter_Movable_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LGT_FloodLightCounter_Movable_C;
 
 SDK_NAMESPACE_END

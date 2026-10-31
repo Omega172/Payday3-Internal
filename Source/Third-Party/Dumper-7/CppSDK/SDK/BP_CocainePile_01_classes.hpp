@@ -30,10 +30,10 @@ public:
 	TMulticastInlineDelegate<void(bool lastBag)>  onCocainePickedUp;                                 // 0x03B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__BP_CocainePile_01_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_CocainePile_01_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_3_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
-	void BndEvt__BP_CocainePile_01_SBZIntState_K2Node_ComponentBoundEvent_0_SBZIntStateChangedSignature__DelegateSignature(int32 OldState, int32 NewState, bool bDoCosmetics);
 	void ExecuteUbergraph_BP_CocainePile_01(int32 EntryPoint);
+	void BndEvt__BP_CocainePile_01_SBZIntState_K2Node_ComponentBoundEvent_0_SBZIntStateChangedSignature__DelegateSignature(int32 OldState, int32 NewState, bool bDoCosmetics);
+	void BndEvt__BP_CocainePile_01_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_3_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
+	void BndEvt__BP_CocainePile_01_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -49,5 +49,6 @@ public:
 		return GetDefaultObjImpl<ABP_CocainePile_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CocainePile_01_C;
 
 SDK_NAMESPACE_END

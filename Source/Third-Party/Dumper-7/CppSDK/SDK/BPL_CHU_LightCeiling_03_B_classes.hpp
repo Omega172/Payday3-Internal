@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ABPL_CHU_LightCeiling_03_B_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_CHU_LightCeiling_03_B_C;
 
 SDK_NAMESPACE_END

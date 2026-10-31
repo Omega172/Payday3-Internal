@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABP_SHI_INT_Door_Double_Reinforced_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SHI_INT_Door_Double_Reinforced_01_C;
 
 SDK_NAMESPACE_END

@@ -16,12 +16,12 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CH_CrewAI_Base.CH_CrewAI_Base_C
-// 0x0010 (0x1D60 - 0x1D50)
+// 0x0010 (0x1DF0 - 0x1DE0)
 class ACH_CrewAI_Base_C : public ASBZAICrewCharacter
 {
 public:
-	class USBZAIStimuliReactionComponent*         SBZAIStimuliReaction;                              // 0x1D50(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UAIPerceptionStimuliSourceComponent*    AIPerceptionStimuliSource;                         // 0x1D58(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZAIStimuliReactionComponent*         SBZAIStimuliReaction;                              // 0x1DE0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UAIPerceptionStimuliSourceComponent*    AIPerceptionStimuliSource;                         // 0x1DE8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ACH_CrewAI_Base_C>();
 	}
 };
+DUMPER7_ASSERTS_ACH_CrewAI_Base_C;
 
 SDK_NAMESPACE_END

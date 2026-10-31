@@ -16,65 +16,43 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_TemperatureGauge.BP_TemperatureGauge_C.activateGauge
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    reverse                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_TemperatureGauge.BP_TemperatureGauge_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_TemperatureGauge_C::activateGauge(bool reverse)
+void ABP_TemperatureGauge_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TemperatureGauge_C", "activateGauge");
-
-	Params::BP_TemperatureGauge_C_activateGauge Parms{};
-
-	Parms.reverse = reverse;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_TemperatureGauge.BP_TemperatureGauge_C.BP_OnStateChanged
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
-// Parameters:
-// ESBZTimerState                          NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZTimerState                          OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_TemperatureGauge.BP_TemperatureGauge_C.updateTemperature
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_TemperatureGauge_C::BP_OnStateChanged(ESBZTimerState NewState, ESBZTimerState OldState, bool bDoCosmetics)
+void ABP_TemperatureGauge_C::updateTemperature()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"updateTemperature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TemperatureGauge_C", "BP_OnStateChanged");
-
-	Params::BP_TemperatureGauge_C_BP_OnStateChanged Parms{};
-
-	Parms.NewState = NewState;
-	Parms.OldState = OldState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_TemperatureGauge.BP_TemperatureGauge_C.ExecuteUbergraph_BP_TemperatureGauge
-// (Final, UbergraphFunction)
+// Function BP_TemperatureGauge.BP_TemperatureGauge_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaSeconds_ReceiveTick                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_TemperatureGauge_C::ExecuteUbergraph_BP_TemperatureGauge(int32 EntryPoint)
+void ABP_TemperatureGauge_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveTick", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TemperatureGauge_C", "ExecuteUbergraph_BP_TemperatureGauge");
+	Params::BP_TemperatureGauge_C_ReceiveTick Parms{};
 
-	Params::BP_TemperatureGauge_C_ExecuteUbergraph_BP_TemperatureGauge Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.DeltaSeconds_ReceiveTick = DeltaSeconds_ReceiveTick;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -85,60 +63,68 @@ void ABP_TemperatureGauge_C::ExecuteUbergraph_BP_TemperatureGauge(int32 EntryPoi
 
 void ABP_TemperatureGauge_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TemperatureGauge_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_TemperatureGauge.BP_TemperatureGauge_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
+// Function BP_TemperatureGauge.BP_TemperatureGauge_C.ExecuteUbergraph_BP_TemperatureGauge
+// (Final, UbergraphFunction)
 // Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_TemperatureGauge_C::ReceiveTick(float DeltaSeconds)
+void ABP_TemperatureGauge_C::ExecuteUbergraph_BP_TemperatureGauge(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_TemperatureGauge_C", "ExecuteUbergraph_BP_TemperatureGauge", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TemperatureGauge_C", "ReceiveTick");
+	Params::BP_TemperatureGauge_C_ExecuteUbergraph_BP_TemperatureGauge Parms{};
 
-	Params::BP_TemperatureGauge_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_TemperatureGauge.BP_TemperatureGauge_C.updateTemperature
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_TemperatureGauge.BP_TemperatureGauge_C.BP_OnStateChanged
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZTimerState                          NewState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZTimerState                          OldState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_BP_OnStateChanged                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_TemperatureGauge_C::updateTemperature()
+void ABP_TemperatureGauge_C::BP_OnStateChanged(ESBZTimerState NewState_BP_OnStateChanged, ESBZTimerState OldState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TemperatureGauge_C", "updateTemperature");
+	Params::BP_TemperatureGauge_C_BP_OnStateChanged Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.NewState_BP_OnStateChanged = NewState_BP_OnStateChanged;
+	Parms.OldState_BP_OnStateChanged = OldState_BP_OnStateChanged;
+	Parms.bDoCosmetics_BP_OnStateChanged = bDoCosmetics_BP_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_TemperatureGauge.BP_TemperatureGauge_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_TemperatureGauge.BP_TemperatureGauge_C.activateGauge
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    reverse                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_TemperatureGauge_C::UserConstructionScript()
+void ABP_TemperatureGauge_C::activateGauge(bool reverse)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"activateGauge", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TemperatureGauge_C", "UserConstructionScript");
+	Params::BP_TemperatureGauge_C_activateGauge Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.reverse = reverse;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

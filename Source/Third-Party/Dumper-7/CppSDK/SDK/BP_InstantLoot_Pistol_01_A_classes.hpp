@@ -41,5 +41,6 @@ public:
 		return GetDefaultObjImpl<ABP_InstantLoot_Pistol_01_A_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_InstantLoot_Pistol_01_A_C;
 
 SDK_NAMESPACE_END

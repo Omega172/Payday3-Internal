@@ -16,21 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ReplicatedBinaryActor_HelicopterCage_1.BP_ReplicatedBinaryActor_HelicopterCage_1_C.ExecuteUbergraph_BP_ReplicatedBinaryActor_HelicopterCage_1
-// (Final, UbergraphFunction)
+// Function BP_ReplicatedBinaryActor_HelicopterCage_1.BP_ReplicatedBinaryActor_HelicopterCage_1_C.SetStateFunction
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Enum_HelicopterCageStates               State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ReplicatedBinaryActor_HelicopterCage_1_C::ExecuteUbergraph_BP_ReplicatedBinaryActor_HelicopterCage_1(int32 EntryPoint)
+void ABP_ReplicatedBinaryActor_HelicopterCage_1_C::SetStateFunction(Enum_HelicopterCageStates State)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetStateFunction", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_HelicopterCage_1_C", "ExecuteUbergraph_BP_ReplicatedBinaryActor_HelicopterCage_1");
+	Params::BP_ReplicatedBinaryActor_HelicopterCage_1_C_SetStateFunction Parms{};
 
-	Params::BP_ReplicatedBinaryActor_HelicopterCage_1_C_ExecuteUbergraph_BP_ReplicatedBinaryActor_HelicopterCage_1 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.State = State;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -39,42 +37,38 @@ void ABP_ReplicatedBinaryActor_HelicopterCage_1_C::ExecuteUbergraph_BP_Replicate
 // Function BP_ReplicatedBinaryActor_HelicopterCage_1.BP_ReplicatedBinaryActor_HelicopterCage_1_C.OnStateChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   OldState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ReplicatedBinaryActor_HelicopterCage_1_C::OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics)
+void ABP_ReplicatedBinaryActor_HelicopterCage_1_C::OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_HelicopterCage_1_C", "OnStateChanged");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
 	Params::BP_ReplicatedBinaryActor_HelicopterCage_1_C_OnStateChanged Parms{};
 
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.OldState_OnStateChanged = OldState_OnStateChanged;
+	Parms.NewState_OnStateChanged = NewState_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_ReplicatedBinaryActor_HelicopterCage_1.BP_ReplicatedBinaryActor_HelicopterCage_1_C.SetStateFunction
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_ReplicatedBinaryActor_HelicopterCage_1.BP_ReplicatedBinaryActor_HelicopterCage_1_C.ExecuteUbergraph_BP_ReplicatedBinaryActor_HelicopterCage_1
+// (Final, UbergraphFunction)
 // Parameters:
-// Enum_HelicopterCageStates               State_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ReplicatedBinaryActor_HelicopterCage_1_C::SetStateFunction(Enum_HelicopterCageStates State_0)
+void ABP_ReplicatedBinaryActor_HelicopterCage_1_C::ExecuteUbergraph_BP_ReplicatedBinaryActor_HelicopterCage_1(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ReplicatedBinaryActor_HelicopterCage_1_C", "ExecuteUbergraph_BP_ReplicatedBinaryActor_HelicopterCage_1", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_HelicopterCage_1_C", "SetStateFunction");
+	Params::BP_ReplicatedBinaryActor_HelicopterCage_1_C_ExecuteUbergraph_BP_ReplicatedBinaryActor_HelicopterCage_1 Parms{};
 
-	Params::BP_ReplicatedBinaryActor_HelicopterCage_1_C_SetStateFunction Parms{};
-
-	Parms.State_0 = State_0;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

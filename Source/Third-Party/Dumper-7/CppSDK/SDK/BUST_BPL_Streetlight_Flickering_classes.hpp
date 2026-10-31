@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABUST_BPL_Streetlight_Flickering_C>();
 	}
 };
+DUMPER7_ASSERTS_ABUST_BPL_Streetlight_Flickering_C;
 
 SDK_NAMESPACE_END

@@ -17,6 +17,42 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_STO_ControlScreenInputCode.WBP_STO_ControlScreenInputCode_C.setCodeText
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_STO_ControlScreenInputCode_C_setCodeText final
+{
+public:
+	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_STO_ControlScreenInputCode_C_setCodeText;
+
+// Function WBP_STO_ControlScreenInputCode.WBP_STO_ControlScreenInputCode_C.setCircuitBreakerText
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_STO_ControlScreenInputCode_C_setCircuitBreakerText final
+{
+public:
+	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_STO_ControlScreenInputCode_C_setCircuitBreakerText;
+
+// Function WBP_STO_ControlScreenInputCode.WBP_STO_ControlScreenInputCode_C.setBackgroundColor
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_STO_ControlScreenInputCode_C_setBackgroundColor final
+{
+public:
+	ESBZModuleActorState                          state;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_STO_ControlScreenInputCode_C_setBackgroundColor;
+
+// Function WBP_STO_ControlScreenInputCode.WBP_STO_ControlScreenInputCode_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_STO_ControlScreenInputCode_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_STO_ControlScreenInputCode_C_PreConstruct;
+
 // Function WBP_STO_ControlScreenInputCode.WBP_STO_ControlScreenInputCode_C.ExecuteUbergraph_WBP_STO_ControlScreenInputCode
 // 0x0110 (0x0110 - 0x0000)
 struct WBP_STO_ControlScreenInputCode_C_ExecuteUbergraph_WBP_STO_ControlScreenInputCode final
@@ -51,38 +87,7 @@ public:
 	uint8                                         Pad_FD[0x3];                                       // 0x00FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_CustomEvent_InText;                         // 0x0100(0x0010)()
 };
-
-// Function WBP_STO_ControlScreenInputCode.WBP_STO_ControlScreenInputCode_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_STO_ControlScreenInputCode_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WBP_STO_ControlScreenInputCode.WBP_STO_ControlScreenInputCode_C.setBackgroundColor
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_STO_ControlScreenInputCode_C_setBackgroundColor final
-{
-public:
-	ESBZModuleActorState                          state;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WBP_STO_ControlScreenInputCode.WBP_STO_ControlScreenInputCode_C.setCircuitBreakerText
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_STO_ControlScreenInputCode_C_setCircuitBreakerText final
-{
-public:
-	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-
-// Function WBP_STO_ControlScreenInputCode.WBP_STO_ControlScreenInputCode_C.setCodeText
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_STO_ControlScreenInputCode_C_setCodeText final
-{
-public:
-	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
+DUMPER7_ASSERTS_WBP_STO_ControlScreenInputCode_C_ExecuteUbergraph_WBP_STO_ControlScreenInputCode;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

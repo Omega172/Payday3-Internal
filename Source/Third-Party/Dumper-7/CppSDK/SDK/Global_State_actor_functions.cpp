@@ -20,10 +20,8 @@ SDK_NAMESPACE_START
 
 void AGlobal_State_actor_C::increment_State()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Global_State_actor_C", "increment_State");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"increment_State", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

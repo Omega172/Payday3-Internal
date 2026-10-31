@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AL_Datacenter_Lighting_Sunset_PBL_C>();
 	}
 };
+DUMPER7_ASSERTS_AL_Datacenter_Lighting_Sunset_PBL_C;
 
 SDK_NAMESPACE_END

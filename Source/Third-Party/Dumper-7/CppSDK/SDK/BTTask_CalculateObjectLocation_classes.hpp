@@ -27,8 +27,8 @@ public:
 	struct FBlackboardKeySelector                 ActorLocationKey;                                  // 0x00E8(0x0030)(Edit, BlueprintVisible)
 
 public:
+	void ReceiveExecuteAI(class AAIController* OwnerController_ReceiveExecuteAI, class APawn* ControlledPawn_ReceiveExecuteAI);
 	void ExecuteUbergraph_BTTask_CalculateObjectLocation(int32 EntryPoint);
-	void ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn);
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<UBTTask_CalculateObjectLocation_C>();
 	}
 };
+DUMPER7_ASSERTS_UBTTask_CalculateObjectLocation_C;
 
 SDK_NAMESPACE_END

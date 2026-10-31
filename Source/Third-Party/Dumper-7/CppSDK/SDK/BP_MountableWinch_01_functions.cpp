@@ -16,25 +16,33 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_MountableWinch_01.BP_MountableWinch_01_C.BP_OnStateChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// ESBZBreachingEquipmentState             OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZBreachingEquipmentState             NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_MountableWinch_01.BP_MountableWinch_01_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_MountableWinch_01_C::BP_OnStateChanged(ESBZBreachingEquipmentState OldState, ESBZBreachingEquipmentState NewState, bool bDoCosmetics)
+void ABP_MountableWinch_01_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MountableWinch_01_C", "BP_OnStateChanged");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_MountableWinch_01_C_BP_OnStateChanged Parms{};
 
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
+// Function BP_MountableWinch_01.BP_MountableWinch_01_C.onProgressionEvent
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   index                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  progression                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MountableWinch_01_C::onProgressionEvent(int32 index, double progression)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"onProgressionEvent", FnName));
+
+	Params::BP_MountableWinch_01_C_onProgressionEvent Parms{};
+
+	Parms.index = index;
+	Parms.progression = progression;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -47,10 +55,8 @@ void ABP_MountableWinch_01_C::BP_OnStateChanged(ESBZBreachingEquipmentState OldS
 
 void ABP_MountableWinch_01_C::ExecuteUbergraph_BP_MountableWinch_01(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MountableWinch_01_C", "ExecuteUbergraph_BP_MountableWinch_01");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_MountableWinch_01_C", "ExecuteUbergraph_BP_MountableWinch_01", FuncInfo);
 
 	Params::BP_MountableWinch_01_C_ExecuteUbergraph_BP_MountableWinch_01 Parms{};
 
@@ -60,39 +66,25 @@ void ABP_MountableWinch_01_C::ExecuteUbergraph_BP_MountableWinch_01(int32 EntryP
 }
 
 
-// Function BP_MountableWinch_01.BP_MountableWinch_01_C.onProgressionEvent
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_MountableWinch_01.BP_MountableWinch_01_C.BP_OnStateChanged
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   index                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  progression                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZBreachingEquipmentState             OldState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZBreachingEquipmentState             NewState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_BP_OnStateChanged                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MountableWinch_01_C::onProgressionEvent(int32 index, double progression)
+void ABP_MountableWinch_01_C::BP_OnStateChanged(ESBZBreachingEquipmentState OldState_BP_OnStateChanged, ESBZBreachingEquipmentState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MountableWinch_01_C", "onProgressionEvent");
+	Params::BP_MountableWinch_01_C_BP_OnStateChanged Parms{};
 
-	Params::BP_MountableWinch_01_C_onProgressionEvent Parms{};
-
-	Parms.index = index;
-	Parms.progression = progression;
+	Parms.OldState_BP_OnStateChanged = OldState_BP_OnStateChanged;
+	Parms.NewState_BP_OnStateChanged = NewState_BP_OnStateChanged;
+	Parms.bDoCosmetics_BP_OnStateChanged = bDoCosmetics_BP_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MountableWinch_01.BP_MountableWinch_01_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_MountableWinch_01_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MountableWinch_01_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

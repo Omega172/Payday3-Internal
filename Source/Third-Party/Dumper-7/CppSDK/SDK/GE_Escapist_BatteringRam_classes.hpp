@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_Escapist_BatteringRam_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_Escapist_BatteringRam_C;
 
 SDK_NAMESPACE_END

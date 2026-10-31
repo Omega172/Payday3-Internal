@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_IGl_BRE_ATT_2HIT_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -25,8 +25,8 @@ public:
 	class USBZAirNavLinkComponent*                SBZAirNavLink;                                     // 0x03F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_DAT_IGl_BRE_ATT_2HIT44_SBZAirNavLink_K2Node_ComponentBoundEvent_0_SBZDynamicAirNavLinkDelegate__DelegateSignature(const class AActor* NavLinkUser);
 	void ExecuteUbergraph_BP_DAT_IGl_BRE_ATT_2HIT44(int32 EntryPoint);
+	void BndEvt__BP_DAT_IGl_BRE_ATT_2HIT44_SBZAirNavLink_K2Node_ComponentBoundEvent_0_SBZDynamicAirNavLinkDelegate__DelegateSignature(const class AActor* NavLinkUser);
 
 public:
 	static class UClass* StaticClass()
@@ -42,5 +42,6 @@ public:
 		return GetDefaultObjImpl<ABP_DAT_IGl_BRE_ATT_2HIT44_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DAT_IGl_BRE_ATT_2HIT44_C;
 
 SDK_NAMESPACE_END

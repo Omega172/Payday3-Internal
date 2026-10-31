@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UForklift_01_BackWheel_C>();
 	}
 };
+DUMPER7_ASSERTS_UForklift_01_BackWheel_C;
 
 SDK_NAMESPACE_END

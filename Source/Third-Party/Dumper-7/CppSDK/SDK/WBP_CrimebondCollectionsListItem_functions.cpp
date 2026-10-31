@@ -16,91 +16,31 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_CrimebondCollectionsListItem.WBP_CrimebondCollectionsListItem_C.UpdateVisualState
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Selected                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_CrimebondCollectionsListItem.WBP_CrimebondCollectionsListItem_C.BP_OnEntryReleased
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_CrimebondCollectionsListItem_C::UpdateVisualState(bool Selected)
+void UWBP_CrimebondCollectionsListItem_C::BP_OnEntryReleased()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateVisualState", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnEntryReleased", FnName));
 
-	Params::WBP_CrimebondCollectionsListItem_C_UpdateVisualState Parms{};
-
-	Parms.Selected = Selected;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_CrimebondCollectionsListItem.WBP_CrimebondCollectionsListItem_C.OnListItemObjectSet
+// Function WBP_CrimebondCollectionsListItem.WBP_CrimebondCollectionsListItem_C.BP_OnItemExpansionChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// class UObject*                          ListItemObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsExpanded                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CrimebondCollectionsListItem_C::OnListItemObjectSet(class UObject* ListItemObject)
+void UWBP_CrimebondCollectionsListItem_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnListItemObjectSet", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnItemExpansionChanged", FnName));
 
-	Params::WBP_CrimebondCollectionsListItem_C_OnListItemObjectSet Parms{};
+	Params::WBP_CrimebondCollectionsListItem_C_BP_OnItemExpansionChanged Parms{};
 
-	Parms.ListItemObject = ListItemObject;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CrimebondCollectionsListItem.WBP_CrimebondCollectionsListItem_C.OnListItemEquippedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bIsEquipped                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CrimebondCollectionsListItem_C::OnListItemEquippedChanged(bool bIsEquipped)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnListItemEquippedChanged", FnName));
-
-	Params::WBP_CrimebondCollectionsListItem_C_OnListItemEquippedChanged Parms{};
-
-	Parms.bIsEquipped = bIsEquipped;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CrimebondCollectionsListItem.WBP_CrimebondCollectionsListItem_C.ExecuteUbergraph_WBP_CrimebondCollectionsListItem
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CrimebondCollectionsListItem_C::ExecuteUbergraph_WBP_CrimebondCollectionsListItem(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_CrimebondCollectionsListItem_C", "ExecuteUbergraph_WBP_CrimebondCollectionsListItem", FuncInfo);
-
-	Params::WBP_CrimebondCollectionsListItem_C_ExecuteUbergraph_WBP_CrimebondCollectionsListItem Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CrimebondCollectionsListItem.WBP_CrimebondCollectionsListItem_C.BundlePackDataSet
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZBundlePackData*               InBundlePackData                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CrimebondCollectionsListItem_C::BundlePackDataSet(class USBZBundlePackData* InBundlePackData)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BundlePackDataSet", FnName));
-
-	Params::WBP_CrimebondCollectionsListItem_C_BundlePackDataSet Parms{};
-
-	Parms.InBundlePackData = InBundlePackData;
+	Parms.bIsExpanded = bIsExpanded;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -124,33 +64,93 @@ void UWBP_CrimebondCollectionsListItem_C::BP_OnItemSelectionChanged(bool bIsSele
 }
 
 
-// Function WBP_CrimebondCollectionsListItem.WBP_CrimebondCollectionsListItem_C.BP_OnItemExpansionChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_CrimebondCollectionsListItem.WBP_CrimebondCollectionsListItem_C.BundlePackDataSet
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bIsExpanded                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBundlePackData*               InBundlePackData                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CrimebondCollectionsListItem_C::BP_OnItemExpansionChanged(bool bIsExpanded)
+void UWBP_CrimebondCollectionsListItem_C::BundlePackDataSet(class USBZBundlePackData* InBundlePackData)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnItemExpansionChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BundlePackDataSet", FnName));
 
-	Params::WBP_CrimebondCollectionsListItem_C_BP_OnItemExpansionChanged Parms{};
+	Params::WBP_CrimebondCollectionsListItem_C_BundlePackDataSet Parms{};
 
-	Parms.bIsExpanded = bIsExpanded;
+	Parms.InBundlePackData = InBundlePackData;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_CrimebondCollectionsListItem.WBP_CrimebondCollectionsListItem_C.BP_OnEntryReleased
-// (Event, Protected, BlueprintEvent)
+// Function WBP_CrimebondCollectionsListItem.WBP_CrimebondCollectionsListItem_C.ExecuteUbergraph_WBP_CrimebondCollectionsListItem
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CrimebondCollectionsListItem_C::BP_OnEntryReleased()
+void UWBP_CrimebondCollectionsListItem_C::ExecuteUbergraph_WBP_CrimebondCollectionsListItem(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_CrimebondCollectionsListItem_C", "ExecuteUbergraph_WBP_CrimebondCollectionsListItem", FuncInfo);
+
+	Params::WBP_CrimebondCollectionsListItem_C_ExecuteUbergraph_WBP_CrimebondCollectionsListItem Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CrimebondCollectionsListItem.WBP_CrimebondCollectionsListItem_C.OnListItemEquippedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsEquipped                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CrimebondCollectionsListItem_C::OnListItemEquippedChanged(bool bIsEquipped)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnEntryReleased", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnListItemEquippedChanged", FnName));
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_CrimebondCollectionsListItem_C_OnListItemEquippedChanged Parms{};
+
+	Parms.bIsEquipped = bIsEquipped;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CrimebondCollectionsListItem.WBP_CrimebondCollectionsListItem_C.OnListItemObjectSet
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class UObject*                          ListItemObject                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CrimebondCollectionsListItem_C::OnListItemObjectSet(class UObject* ListItemObject)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnListItemObjectSet", FnName));
+
+	Params::WBP_CrimebondCollectionsListItem_C_OnListItemObjectSet Parms{};
+
+	Parms.ListItemObject = ListItemObject;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CrimebondCollectionsListItem.WBP_CrimebondCollectionsListItem_C.UpdateVisualState
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Selected_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CrimebondCollectionsListItem_C::UpdateVisualState(bool Selected_0)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateVisualState", FnName));
+
+	Params::WBP_CrimebondCollectionsListItem_C_UpdateVisualState Parms{};
+
+	Parms.Selected_0 = Selected_0;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

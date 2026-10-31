@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_CautionTape_01_Door_A_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CautionTape_01_Door_A_C;
 
 SDK_NAMESPACE_END

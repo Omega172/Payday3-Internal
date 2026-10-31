@@ -16,21 +16,57 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ArmorRepairKit.BP_ArmorRepairKit_C.createChargeMeshes
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    outline                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ArmorRepairKit.BP_ArmorRepairKit_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_ArmorRepairKit_C::createChargeMeshes(bool outline)
+void ABP_ArmorRepairKit_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ArmorRepairKit_C", "createChargeMeshes");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_ArmorRepairKit_C_createChargeMeshes Parms{};
 
-	Parms.outline = outline;
+// Function BP_ArmorRepairKit.BP_ArmorRepairKit_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_ArmorRepairKit_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ArmorRepairKit.BP_ArmorRepairKit_C.OnThrown
+// (Event, Protected, BlueprintEvent)
+
+void ABP_ArmorRepairKit_C::OnThrown()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnThrown", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ArmorRepairKit.BP_ArmorRepairKit_C.OnChargesChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// float                                   ChargesChangeTo                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ArmorRepairKit_C::OnChargesChanged(float ChargesChangeTo, bool bDoCosmetics)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnChargesChanged", FnName));
+
+	Params::BP_ArmorRepairKit_C_OnChargesChanged Parms{};
+
+	Parms.ChargesChangeTo = ChargesChangeTo;
+	Parms.bDoCosmetics = bDoCosmetics;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -43,10 +79,8 @@ void ABP_ArmorRepairKit_C::createChargeMeshes(bool outline)
 
 void ABP_ArmorRepairKit_C::ExecuteUbergraph_BP_ArmorRepairKit(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ArmorRepairKit_C", "ExecuteUbergraph_BP_ArmorRepairKit");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ArmorRepairKit_C", "ExecuteUbergraph_BP_ArmorRepairKit", FuncInfo);
 
 	Params::BP_ArmorRepairKit_C_ExecuteUbergraph_BP_ArmorRepairKit Parms{};
 
@@ -56,67 +90,21 @@ void ABP_ArmorRepairKit_C::ExecuteUbergraph_BP_ArmorRepairKit(int32 EntryPoint)
 }
 
 
-// Function BP_ArmorRepairKit.BP_ArmorRepairKit_C.OnChargesChanged
-// (Event, Protected, BlueprintEvent)
+// Function BP_ArmorRepairKit.BP_ArmorRepairKit_C.createChargeMeshes
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   ChargesChangeTo                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    outline                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ArmorRepairKit_C::OnChargesChanged(float ChargesChangeTo, bool bDoCosmetics)
+void ABP_ArmorRepairKit_C::createChargeMeshes(bool outline)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"createChargeMeshes", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ArmorRepairKit_C", "OnChargesChanged");
+	Params::BP_ArmorRepairKit_C_createChargeMeshes Parms{};
 
-	Params::BP_ArmorRepairKit_C_OnChargesChanged Parms{};
-
-	Parms.ChargesChangeTo = ChargesChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.outline = outline;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ArmorRepairKit.BP_ArmorRepairKit_C.OnThrown
-// (Event, Protected, BlueprintEvent)
-
-void ABP_ArmorRepairKit_C::OnThrown()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ArmorRepairKit_C", "OnThrown");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ArmorRepairKit.BP_ArmorRepairKit_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_ArmorRepairKit_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ArmorRepairKit_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ArmorRepairKit.BP_ArmorRepairKit_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_ArmorRepairKit_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ArmorRepairKit_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

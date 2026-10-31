@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_DIM_SecurityShutter_02_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DIM_SecurityShutter_02_C;
 
 SDK_NAMESPACE_END

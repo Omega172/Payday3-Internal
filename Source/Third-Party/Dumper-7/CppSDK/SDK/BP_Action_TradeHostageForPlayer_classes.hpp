@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UBP_Action_TradeHostageForPlayer_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_Action_TradeHostageForPlayer_C;
 
 SDK_NAMESPACE_END

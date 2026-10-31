@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Starbreeze_classes.hpp"
 #include "AkAudio_structs.hpp"
 
@@ -40,9 +40,9 @@ public:
 	TMulticastInlineDelegate<void()>              BookMoved;                                         // 0x0438(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void ExecuteUbergraph_BP_LobbySkylight(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
 	void UserConstructionScript();
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_LobbySkylight(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -58,5 +58,6 @@ public:
 		return GetDefaultObjImpl<ABP_LobbySkylight_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LobbySkylight_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_PenthousePoison_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_PenthousePoison_C;
 
 SDK_NAMESPACE_END

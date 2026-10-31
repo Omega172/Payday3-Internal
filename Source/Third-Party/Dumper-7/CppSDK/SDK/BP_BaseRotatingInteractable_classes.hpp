@@ -35,11 +35,11 @@ public:
 	struct FVector                                pivotPoint;                                        // 0x0398(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnStateChanged(bool bNewState, bool bDoCosmentics);
-	void ExecuteUbergraph_BP_BaseRotatingInteractable(int32 EntryPoint);
-	void MoveTimeLine__FinishedFunc();
-	void MoveTimeLine__UpdateFunc();
 	void UserConstructionScript();
+	void MoveTimeLine__UpdateFunc();
+	void MoveTimeLine__FinishedFunc();
+	void ExecuteUbergraph_BP_BaseRotatingInteractable(int32 EntryPoint);
+	void BP_OnStateChanged(bool bNewState, bool bDoCosmentics);
 
 public:
 	static class UClass* StaticClass()
@@ -55,5 +55,6 @@ public:
 		return GetDefaultObjImpl<ABP_BaseRotatingInteractable_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BaseRotatingInteractable_C;
 
 SDK_NAMESPACE_END

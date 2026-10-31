@@ -21,6 +21,7 @@ struct BP_StaticVehicle_Helicopter_Hoist_C_UserConstructionScript final
 public:
 	bool                                          CallFunc_ApplyVariationToStatic_ReturnValue;       // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_StaticVehicle_Helicopter_Hoist_C_UserConstructionScript;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

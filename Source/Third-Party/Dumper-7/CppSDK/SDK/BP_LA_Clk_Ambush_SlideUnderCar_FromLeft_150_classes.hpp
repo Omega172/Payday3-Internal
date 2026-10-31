@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABP_LA_Clk_Ambush_SlideUnderCar_FromLeft_150_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LA_Clk_Ambush_SlideUnderCar_FromLeft_150_C;
 
 SDK_NAMESPACE_END

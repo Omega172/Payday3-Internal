@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "ABP_AICrewLinkedAnimation_structs.hpp"
+#include "Engine_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
 #include "Starbreeze_classes.hpp"
 
@@ -52,8 +52,8 @@ public:
 	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x0D78(0x0030)()
 
 public:
-	void AnimGraph(struct FPoseLink* AnimGraph_0);
-	void FullBodyAction(const struct FPoseLink& InPose, struct FPoseLink* FullBodyAction_0);
+	void FullBodyAction(const struct FPoseLink& InPose, struct FPoseLink* FullBodyAction);
+	void AnimGraph(struct FPoseLink* AnimGraph);
 
 public:
 	static class UClass* StaticClass()
@@ -69,5 +69,6 @@ public:
 		return GetDefaultObjImpl<UABP_AICrewLinkedAnimation_C>();
 	}
 };
+DUMPER7_ASSERTS_UABP_AICrewLinkedAnimation_C;
 
 SDK_NAMESPACE_END

@@ -16,600 +16,68 @@
 
 SDK_NAMESPACE_START
 
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller2_K2Node_ActorBoundEvent_8_SBZActorOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller2_K2Node_ActorBoundEvent_8_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
+void AG_SnGBB_Navlinks_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller2_K2Node_ActorBoundEvent_8_SBZActorOnInteraction__DelegateSignature");
-
-	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller2_K2Node_ActorBoundEvent_8_SBZActorOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller3_K2Node_ActorBoundEvent_9_SBZActorOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller3_K2Node_ActorBoundEvent_9_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller3_K2Node_ActorBoundEvent_9_SBZActorOnInteraction__DelegateSignature");
-
-	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller3_K2Node_ActorBoundEvent_9_SBZActorOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller4_K2Node_ActorBoundEvent_10_SBZActorOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller4_K2Node_ActorBoundEvent_10_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller4_K2Node_ActorBoundEvent_10_SBZActorOnInteraction__DelegateSignature");
-
-	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller4_K2Node_ActorBoundEvent_10_SBZActorOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller5_K2Node_ActorBoundEvent_11_SBZActorOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller5_K2Node_ActorBoundEvent_11_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller5_K2Node_ActorBoundEvent_11_SBZActorOnInteraction__DelegateSignature");
-
-	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller5_K2Node_ActorBoundEvent_11_SBZActorOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller6_K2Node_ActorBoundEvent_12_SBZActorOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller6_K2Node_ActorBoundEvent_12_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller6_K2Node_ActorBoundEvent_12_SBZActorOnInteraction__DelegateSignature");
-
-	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller6_K2Node_ActorBoundEvent_12_SBZActorOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller7_K2Node_ActorBoundEvent_13_SBZActorOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller7_K2Node_ActorBoundEvent_13_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller7_K2Node_ActorBoundEvent_13_SBZActorOnInteraction__DelegateSignature");
-
-	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller7_K2Node_ActorBoundEvent_13_SBZActorOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller_2_K2Node_ActorBoundEvent_7_SBZActorOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller_2_K2Node_ActorBoundEvent_7_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller_2_K2Node_ActorBoundEvent_7_SBZActorOnInteraction__DelegateSignature");
-
-	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller_2_K2Node_ActorBoundEvent_7_SBZActorOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_018_K2Node_ActorBoundEvent_26_SkylightBroken__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_018_K2Node_ActorBoundEvent_26_SkylightBroken__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_018_K2Node_ActorBoundEvent_26_SkylightBroken__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_0_ActorDestroyedSignature__DelegateSignature
-// (BlueprintEvent)
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.HeistStateChanged
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// class AActor*                           DestroyedActor                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// EPD3HeistState                          OldHeistState_HeistStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPD3HeistState                          CurrentHeistState_HeistStateChanged                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_0_ActorDestroyedSignature__DelegateSignature(class AActor* DestroyedActor)
+void AG_SnGBB_Navlinks_C::HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HeistStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_0_ActorDestroyedSignature__DelegateSignature");
+	Params::G_SnGBB_Navlinks_C_HeistStateChanged Parms{};
 
-	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_0_ActorDestroyedSignature__DelegateSignature Parms{};
-
-	Parms.DestroyedActor = DestroyedActor;
+	Parms.OldHeistState_HeistStateChanged = OldHeistState_HeistStateChanged;
+	Parms.CurrentHeistState_HeistStateChanged = CurrentHeistState_HeistStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_1_TakeAnyDamageSignature__DelegateSignature
-// (BlueprintEvent)
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.ExecuteUbergraph_G_SnGBB_Navlinks
+// (Final, UbergraphFunction)
 // Parameters:
-// class AActor*                           DamagedActor                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const class UDamageType*                DamageType                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AController*                      InstigatedBy                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           DamageCauser                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_1_TakeAnyDamageSignature__DelegateSignature(class AActor* DamagedActor, float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser)
+void AG_SnGBB_Navlinks_C::ExecuteUbergraph_G_SnGBB_Navlinks(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_SnGBB_Navlinks_C", "ExecuteUbergraph_G_SnGBB_Navlinks", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_1_TakeAnyDamageSignature__DelegateSignature");
+	Params::G_SnGBB_Navlinks_C_ExecuteUbergraph_G_SnGBB_Navlinks Parms{};
 
-	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_1_TakeAnyDamageSignature__DelegateSignature Parms{};
-
-	Parms.DamagedActor = DamagedActor;
-	Parms.Damage = Damage;
-	Parms.DamageType = DamageType;
-	Parms.InstigatedBy = InstigatedBy;
-	Parms.DamageCauser = DamageCauser;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_30_SkylightBroken__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_30_SkylightBroken__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_30_SkylightBroken__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_2_K2Node_ActorBoundEvent_28_SkylightBroken__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_2_K2Node_ActorBoundEvent_28_SkylightBroken__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_2_K2Node_ActorBoundEvent_28_SkylightBroken__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_4_K2Node_ActorBoundEvent_29_SkylightBroken__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_4_K2Node_ActorBoundEvent_29_SkylightBroken__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_4_K2Node_ActorBoundEvent_29_SkylightBroken__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_6_K2Node_ActorBoundEvent_27_SkylightBroken__DelegateSignature
-// (BlueprintEvent)
-
-void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_6_K2Node_ActorBoundEvent_27_SkylightBroken__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_6_K2Node_ActorBoundEvent_27_SkylightBroken__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV2_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_LobbyWindow_01_NAV2_K2Node_ActorBoundEvent_25_SBZGateStateChangedDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV2_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
+void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_LobbyWindow_01_NAV2_K2Node_ActorBoundEvent_25_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_BranchBank_Navlinks_BP_LobbyWindow_01_NAV2_K2Node_ActorBoundEvent_25_SBZGateStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV2_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV2_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV3_K2Node_ActorBoundEvent_4_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV3_K2Node_ActorBoundEvent_4_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV3_K2Node_ActorBoundEvent_4_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV3_K2Node_ActorBoundEvent_4_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV4_K2Node_ActorBoundEvent_17_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV4_K2Node_ActorBoundEvent_17_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV4_K2Node_ActorBoundEvent_17_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV4_K2Node_ActorBoundEvent_17_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV5_K2Node_ActorBoundEvent_19_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV5_K2Node_ActorBoundEvent_19_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV5_K2Node_ActorBoundEvent_19_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV5_K2Node_ActorBoundEvent_19_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV6_11_K2Node_ActorBoundEvent_21_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV6_11_K2Node_ActorBoundEvent_21_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV6_11_K2Node_ActorBoundEvent_21_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV6_11_K2Node_ActorBoundEvent_21_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV_4_K2Node_ActorBoundEvent_6_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV_4_K2Node_ActorBoundEvent_6_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV_4_K2Node_ActorBoundEvent_6_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV_4_K2Node_ActorBoundEvent_6_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B11_K2Node_ActorBoundEvent_15_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B11_K2Node_ActorBoundEvent_15_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B11_K2Node_ActorBoundEvent_15_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B11_K2Node_ActorBoundEvent_15_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B14_K2Node_ActorBoundEvent_16_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B14_K2Node_ActorBoundEvent_16_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B14_K2Node_ActorBoundEvent_16_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B14_K2Node_ActorBoundEvent_16_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B15_K2Node_ActorBoundEvent_20_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B15_K2Node_ActorBoundEvent_20_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B15_K2Node_ActorBoundEvent_20_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B15_K2Node_ActorBoundEvent_20_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV4_K2Node_ActorBoundEvent_3_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV4_K2Node_ActorBoundEvent_3_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV4_K2Node_ActorBoundEvent_3_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV4_K2Node_ActorBoundEvent_3_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV5_K2Node_ActorBoundEvent_14_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV5_K2Node_ActorBoundEvent_14_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV5_K2Node_ActorBoundEvent_14_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV5_K2Node_ActorBoundEvent_14_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV6_K2Node_ActorBoundEvent_5_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV6_K2Node_ActorBoundEvent_5_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV6_K2Node_ActorBoundEvent_5_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV6_K2Node_ActorBoundEvent_5_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV9_12_K2Node_ActorBoundEvent_22_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV9_12_K2Node_ActorBoundEvent_22_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV9_12_K2Node_ActorBoundEvent_22_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV9_12_K2Node_ActorBoundEvent_22_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_2_K2Node_ActorBoundEvent_18_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_2_K2Node_ActorBoundEvent_18_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_2_K2Node_ActorBoundEvent_18_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_2_K2Node_ActorBoundEvent_18_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_BLI2_K2Node_ActorBoundEvent_24_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_BLI2_K2Node_ActorBoundEvent_24_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_BLI2_K2Node_ActorBoundEvent_24_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_BLI2_K2Node_ActorBoundEvent_24_SBZGateStateChangedDelegate__DelegateSignature Parms{};
+	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_LobbyWindow_01_NAV2_K2Node_ActorBoundEvent_25_SBZGateStateChangedDelegate__DelegateSignature Parms{};
 
 	Parms.OldState = OldState;
 	Parms.State = State;
@@ -626,10 +94,8 @@ void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV
 
 void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_BLI3_K2Node_ActorBoundEvent_23_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_BLI3_K2Node_ActorBoundEvent_23_SBZGateStateChangedDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_BLI3_K2Node_ActorBoundEvent_23_SBZGateStateChangedDelegate__DelegateSignature", FnName));
 
 	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_BLI3_K2Node_ActorBoundEvent_23_SBZGateStateChangedDelegate__DelegateSignature Parms{};
 
@@ -640,20 +106,18 @@ void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV
 }
 
 
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_LobbyWindow_01_NAV2_K2Node_ActorBoundEvent_25_SBZGateStateChangedDelegate__DelegateSignature
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_BLI2_K2Node_ActorBoundEvent_24_SBZGateStateChangedDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_LobbyWindow_01_NAV2_K2Node_ActorBoundEvent_25_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
+void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_BLI2_K2Node_ActorBoundEvent_24_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_BLI2_K2Node_ActorBoundEvent_24_SBZGateStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "BndEvt__G_BranchBank_Navlinks_BP_LobbyWindow_01_NAV2_K2Node_ActorBoundEvent_25_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_LobbyWindow_01_NAV2_K2Node_ActorBoundEvent_25_SBZGateStateChangedDelegate__DelegateSignature Parms{};
+	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_BLI2_K2Node_ActorBoundEvent_24_SBZGateStateChangedDelegate__DelegateSignature Parms{};
 
 	Parms.OldState = OldState;
 	Parms.State = State;
@@ -662,59 +126,527 @@ void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_LobbyWindow_01_NAV2_K
 }
 
 
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.ExecuteUbergraph_G_SnGBB_Navlinks
-// (Final, UbergraphFunction)
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_2_K2Node_ActorBoundEvent_18_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_SnGBB_Navlinks_C::ExecuteUbergraph_G_SnGBB_Navlinks(int32 EntryPoint)
+void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_2_K2Node_ActorBoundEvent_18_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_2_K2Node_ActorBoundEvent_18_SBZGateStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "ExecuteUbergraph_G_SnGBB_Navlinks");
+	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_2_K2Node_ActorBoundEvent_18_SBZGateStateChangedDelegate__DelegateSignature Parms{};
 
-	Params::G_SnGBB_Navlinks_C_ExecuteUbergraph_G_SnGBB_Navlinks Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.OldState = OldState;
+	Parms.State = State;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.HeistStateChanged
-// (Event, Public, BlueprintEvent)
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV9_12_K2Node_ActorBoundEvent_22_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// EPD3HeistState                          OldHeistState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPD3HeistState                          CurrentHeistState                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_SnGBB_Navlinks_C::HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState)
+void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV9_12_K2Node_ActorBoundEvent_22_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV9_12_K2Node_ActorBoundEvent_22_SBZGateStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "HeistStateChanged");
+	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV9_12_K2Node_ActorBoundEvent_22_SBZGateStateChangedDelegate__DelegateSignature Parms{};
 
-	Params::G_SnGBB_Navlinks_C_HeistStateChanged Parms{};
-
-	Parms.OldHeistState = OldHeistState;
-	Parms.CurrentHeistState = CurrentHeistState;
+	Parms.OldState = OldState;
+	Parms.State = State;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV6_K2Node_ActorBoundEvent_5_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_SnGBB_Navlinks_C::ReceiveBeginPlay()
+void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV6_K2Node_ActorBoundEvent_5_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV6_K2Node_ActorBoundEvent_5_SBZGateStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGBB_Navlinks_C", "ReceiveBeginPlay");
+	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV6_K2Node_ActorBoundEvent_5_SBZGateStateChangedDelegate__DelegateSignature Parms{};
+
+	Parms.OldState = OldState;
+	Parms.State = State;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV5_K2Node_ActorBoundEvent_14_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV5_K2Node_ActorBoundEvent_14_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV5_K2Node_ActorBoundEvent_14_SBZGateStateChangedDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV5_K2Node_ActorBoundEvent_14_SBZGateStateChangedDelegate__DelegateSignature Parms{};
+
+	Parms.OldState = OldState;
+	Parms.State = State;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV4_K2Node_ActorBoundEvent_3_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV4_K2Node_ActorBoundEvent_3_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV4_K2Node_ActorBoundEvent_3_SBZGateStateChangedDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV4_K2Node_ActorBoundEvent_3_SBZGateStateChangedDelegate__DelegateSignature Parms{};
+
+	Parms.OldState = OldState;
+	Parms.State = State;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B15_K2Node_ActorBoundEvent_20_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B15_K2Node_ActorBoundEvent_20_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B15_K2Node_ActorBoundEvent_20_SBZGateStateChangedDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B15_K2Node_ActorBoundEvent_20_SBZGateStateChangedDelegate__DelegateSignature Parms{};
+
+	Parms.OldState = OldState;
+	Parms.State = State;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B14_K2Node_ActorBoundEvent_16_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B14_K2Node_ActorBoundEvent_16_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B14_K2Node_ActorBoundEvent_16_SBZGateStateChangedDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B14_K2Node_ActorBoundEvent_16_SBZGateStateChangedDelegate__DelegateSignature Parms{};
+
+	Parms.OldState = OldState;
+	Parms.State = State;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B11_K2Node_ActorBoundEvent_15_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B11_K2Node_ActorBoundEvent_15_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B11_K2Node_ActorBoundEvent_15_SBZGateStateChangedDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B11_K2Node_ActorBoundEvent_15_SBZGateStateChangedDelegate__DelegateSignature Parms{};
+
+	Parms.OldState = OldState;
+	Parms.State = State;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV_4_K2Node_ActorBoundEvent_6_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV_4_K2Node_ActorBoundEvent_6_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV_4_K2Node_ActorBoundEvent_6_SBZGateStateChangedDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV_4_K2Node_ActorBoundEvent_6_SBZGateStateChangedDelegate__DelegateSignature Parms{};
+
+	Parms.OldState = OldState;
+	Parms.State = State;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV6_11_K2Node_ActorBoundEvent_21_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV6_11_K2Node_ActorBoundEvent_21_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV6_11_K2Node_ActorBoundEvent_21_SBZGateStateChangedDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV6_11_K2Node_ActorBoundEvent_21_SBZGateStateChangedDelegate__DelegateSignature Parms{};
+
+	Parms.OldState = OldState;
+	Parms.State = State;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV5_K2Node_ActorBoundEvent_19_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV5_K2Node_ActorBoundEvent_19_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV5_K2Node_ActorBoundEvent_19_SBZGateStateChangedDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV5_K2Node_ActorBoundEvent_19_SBZGateStateChangedDelegate__DelegateSignature Parms{};
+
+	Parms.OldState = OldState;
+	Parms.State = State;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV4_K2Node_ActorBoundEvent_17_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV4_K2Node_ActorBoundEvent_17_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV4_K2Node_ActorBoundEvent_17_SBZGateStateChangedDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV4_K2Node_ActorBoundEvent_17_SBZGateStateChangedDelegate__DelegateSignature Parms{};
+
+	Parms.OldState = OldState;
+	Parms.State = State;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV3_K2Node_ActorBoundEvent_4_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV3_K2Node_ActorBoundEvent_4_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV3_K2Node_ActorBoundEvent_4_SBZGateStateChangedDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV3_K2Node_ActorBoundEvent_4_SBZGateStateChangedDelegate__DelegateSignature Parms{};
+
+	Parms.OldState = OldState;
+	Parms.State = State;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV2_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV2_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV2_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature", FnName));
+
+	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV2_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature Parms{};
+
+	Parms.OldState = OldState;
+	Parms.State = State;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_6_K2Node_ActorBoundEvent_27_SkylightBroken__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_6_K2Node_ActorBoundEvent_27_SkylightBroken__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_6_K2Node_ActorBoundEvent_27_SkylightBroken__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_4_K2Node_ActorBoundEvent_29_SkylightBroken__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_4_K2Node_ActorBoundEvent_29_SkylightBroken__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_4_K2Node_ActorBoundEvent_29_SkylightBroken__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_2_K2Node_ActorBoundEvent_28_SkylightBroken__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_2_K2Node_ActorBoundEvent_28_SkylightBroken__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_2_K2Node_ActorBoundEvent_28_SkylightBroken__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_30_SkylightBroken__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_30_SkylightBroken__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_30_SkylightBroken__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_1_TakeAnyDamageSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class AActor*                           DamagedActor                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class UDamageType*                DamageType                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AController*                      InstigatedBy                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           DamageCauser                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_1_TakeAnyDamageSignature__DelegateSignature(class AActor* DamagedActor, float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_1_TakeAnyDamageSignature__DelegateSignature", FnName));
+
+	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_1_TakeAnyDamageSignature__DelegateSignature Parms{};
+
+	Parms.DamagedActor = DamagedActor;
+	Parms.Damage = Damage;
+	Parms.DamageType = DamageType;
+	Parms.InstigatedBy = InstigatedBy;
+	Parms.DamageCauser = DamageCauser;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_0_ActorDestroyedSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class AActor*                           DestroyedActor                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_0_ActorDestroyedSignature__DelegateSignature(class AActor* DestroyedActor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_0_ActorDestroyedSignature__DelegateSignature", FnName));
+
+	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_0_ActorDestroyedSignature__DelegateSignature Parms{};
+
+	Parms.DestroyedActor = DestroyedActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_018_K2Node_ActorBoundEvent_26_SkylightBroken__DelegateSignature
+// (BlueprintEvent)
+
+void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_018_K2Node_ActorBoundEvent_26_SkylightBroken__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_018_K2Node_ActorBoundEvent_26_SkylightBroken__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller_2_K2Node_ActorBoundEvent_7_SBZActorOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller_2_K2Node_ActorBoundEvent_7_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller_2_K2Node_ActorBoundEvent_7_SBZActorOnInteraction__DelegateSignature", FnName));
+
+	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller_2_K2Node_ActorBoundEvent_7_SBZActorOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller7_K2Node_ActorBoundEvent_13_SBZActorOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller7_K2Node_ActorBoundEvent_13_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller7_K2Node_ActorBoundEvent_13_SBZActorOnInteraction__DelegateSignature", FnName));
+
+	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller7_K2Node_ActorBoundEvent_13_SBZActorOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller6_K2Node_ActorBoundEvent_12_SBZActorOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller6_K2Node_ActorBoundEvent_12_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller6_K2Node_ActorBoundEvent_12_SBZActorOnInteraction__DelegateSignature", FnName));
+
+	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller6_K2Node_ActorBoundEvent_12_SBZActorOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller5_K2Node_ActorBoundEvent_11_SBZActorOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller5_K2Node_ActorBoundEvent_11_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller5_K2Node_ActorBoundEvent_11_SBZActorOnInteraction__DelegateSignature", FnName));
+
+	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller5_K2Node_ActorBoundEvent_11_SBZActorOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller4_K2Node_ActorBoundEvent_10_SBZActorOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller4_K2Node_ActorBoundEvent_10_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller4_K2Node_ActorBoundEvent_10_SBZActorOnInteraction__DelegateSignature", FnName));
+
+	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller4_K2Node_ActorBoundEvent_10_SBZActorOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller3_K2Node_ActorBoundEvent_9_SBZActorOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller3_K2Node_ActorBoundEvent_9_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller3_K2Node_ActorBoundEvent_9_SBZActorOnInteraction__DelegateSignature", FnName));
+
+	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller3_K2Node_ActorBoundEvent_9_SBZActorOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller2_K2Node_ActorBoundEvent_8_SBZActorOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGBB_Navlinks_C::BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller2_K2Node_ActorBoundEvent_8_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller2_K2Node_ActorBoundEvent_8_SBZActorOnInteraction__DelegateSignature", FnName));
+
+	Params::G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller2_K2Node_ActorBoundEvent_8_SBZActorOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

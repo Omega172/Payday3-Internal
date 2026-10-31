@@ -28,11 +28,11 @@ public:
 	class ASBZRoomVolume*                         SBZRoomVolume_RandomRoom4_ExecuteUbergraph_G_Fort_Coverpoints_RefProperty; // 0x03F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_G_Fort_Coverpoints(int32 EntryPoint);
-	void SetRandomRoom1Secure();
-	void SetRandomRoom2Secure();
-	void SetRandomRoom3Secure();
 	void SetRandomRoom4Secure();
+	void SetRandomRoom3Secure();
+	void SetRandomRoom2Secure();
+	void SetRandomRoom1Secure();
+	void ExecuteUbergraph_G_Fort_Coverpoints(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<AG_Fort_Coverpoints_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_Fort_Coverpoints_C;
 
 SDK_NAMESPACE_END

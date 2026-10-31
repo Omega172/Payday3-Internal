@@ -16,24 +16,52 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_DEM_PlasmaBreachWall_01.BP_DEM_PlasmaBreachWall_01_C.BndEvt__BP_DEM_PlasmaBreachWall_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct BP_DEM_PlasmaBreachWall_01_C_BndEvt__BP_DEM_PlasmaBreachWall_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature final
+// Function BP_DEM_PlasmaBreachWall_01.BP_DEM_PlasmaBreachWall_01_C.setProgression
+// 0x0008 (0x0008 - 0x0000)
+struct BP_DEM_PlasmaBreachWall_01_C_setProgression final
 {
 public:
-	const class USBZBaseInteractableComponent*    InteractableComponent;                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInNewState;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        progression;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_DEM_PlasmaBreachWall_01_C_setProgression;
 
-// Function BP_DEM_PlasmaBreachWall_01.BP_DEM_PlasmaBreachWall_01_C.BndEvt__BP_DEM_PlasmaBreachWall_01_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_DEM_PlasmaBreachWall_01_C_BndEvt__BP_DEM_PlasmaBreachWall_01_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
+// Function BP_DEM_PlasmaBreachWall_01.BP_DEM_PlasmaBreachWall_01_C.setInteraction
+// 0x0001 (0x0001 - 0x0000)
+struct BP_DEM_PlasmaBreachWall_01_C_setInteraction final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_DEM_PlasmaBreachWall_01_C_setInteraction;
+
+// Function BP_DEM_PlasmaBreachWall_01.BP_DEM_PlasmaBreachWall_01_C.setHeatLevel
+// 0x0008 (0x0008 - 0x0000)
+struct BP_DEM_PlasmaBreachWall_01_C_setHeatLevel final
+{
+public:
+	double                                        heatLevel;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_DEM_PlasmaBreachWall_01_C_setHeatLevel;
+
+// Function BP_DEM_PlasmaBreachWall_01.BP_DEM_PlasmaBreachWall_01_C.setBinaryState
+// 0x0002 (0x0002 - 0x0000)
+struct BP_DEM_PlasmaBreachWall_01_C_setBinaryState final
+{
+public:
+	bool                                          state;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          doCosmetics;                                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_DEM_PlasmaBreachWall_01_C_setBinaryState;
+
+// Function BP_DEM_PlasmaBreachWall_01.BP_DEM_PlasmaBreachWall_01_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_DEM_PlasmaBreachWall_01_C_OnStateChanged final
+{
+public:
+	bool                                          bStateToChangeTo_OnStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_DEM_PlasmaBreachWall_01_C_OnStateChanged;
 
 // Function BP_DEM_PlasmaBreachWall_01.BP_DEM_PlasmaBreachWall_01_C.ExecuteUbergraph_BP_DEM_PlasmaBreachWall_01
 // 0x00C0 (0x00C0 - 0x0000)
@@ -95,48 +123,28 @@ public:
 	float                                         CallFunc_SetCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetCustomPrimitiveDataFloat_Value_ImplicitCast_1; // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_DEM_PlasmaBreachWall_01_C_ExecuteUbergraph_BP_DEM_PlasmaBreachWall_01;
 
-// Function BP_DEM_PlasmaBreachWall_01.BP_DEM_PlasmaBreachWall_01_C.OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_DEM_PlasmaBreachWall_01_C_OnStateChanged final
+// Function BP_DEM_PlasmaBreachWall_01.BP_DEM_PlasmaBreachWall_01_C.BndEvt__BP_DEM_PlasmaBreachWall_01_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_DEM_PlasmaBreachWall_01_C_BndEvt__BP_DEM_PlasmaBreachWall_01_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
 {
 public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_DEM_PlasmaBreachWall_01_C_BndEvt__BP_DEM_PlasmaBreachWall_01_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature;
 
-// Function BP_DEM_PlasmaBreachWall_01.BP_DEM_PlasmaBreachWall_01_C.setBinaryState
-// 0x0002 (0x0002 - 0x0000)
-struct BP_DEM_PlasmaBreachWall_01_C_setBinaryState final
+// Function BP_DEM_PlasmaBreachWall_01.BP_DEM_PlasmaBreachWall_01_C.BndEvt__BP_DEM_PlasmaBreachWall_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct BP_DEM_PlasmaBreachWall_01_C_BndEvt__BP_DEM_PlasmaBreachWall_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature final
 {
 public:
-	bool                                          state;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          doCosmetics;                                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class USBZBaseInteractableComponent*    InteractableComponent;                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInNewState;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_DEM_PlasmaBreachWall_01.BP_DEM_PlasmaBreachWall_01_C.setHeatLevel
-// 0x0008 (0x0008 - 0x0000)
-struct BP_DEM_PlasmaBreachWall_01_C_setHeatLevel final
-{
-public:
-	double                                        heatLevel;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_DEM_PlasmaBreachWall_01.BP_DEM_PlasmaBreachWall_01_C.setInteraction
-// 0x0001 (0x0001 - 0x0000)
-struct BP_DEM_PlasmaBreachWall_01_C_setInteraction final
-{
-public:
-	bool                                          enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_DEM_PlasmaBreachWall_01.BP_DEM_PlasmaBreachWall_01_C.setProgression
-// 0x0008 (0x0008 - 0x0000)
-struct BP_DEM_PlasmaBreachWall_01_C_setProgression final
-{
-public:
-	double                                        progression;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_DEM_PlasmaBreachWall_01_C_BndEvt__BP_DEM_PlasmaBreachWall_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

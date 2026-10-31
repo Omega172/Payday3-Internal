@@ -19,14 +19,12 @@ SDK_NAMESPACE_START
 // Function BP_CarKeys_01.BP_CarKeys_01_C.GetMarkerText
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
+// class FText                             ReturnValue_GetMarkerText                              (Parm, OutParm, ReturnParm)
 
 class FText ABP_CarKeys_01_C::GetMarkerText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CarKeys_01_C", "GetMarkerText");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetMarkerText", FnName));
 
 	Params::BP_CarKeys_01_C_GetMarkerText Parms{};
 

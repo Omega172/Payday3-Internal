@@ -30,9 +30,9 @@ public:
 	class UStaticMeshComponent*                   SM_ArmorRepairKitMesh;                             // 0x06D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_PlaceableArmorRepairKit(int32 EntryPoint);
-	void OnChargesChanged(float ChargesChangeTo, bool bDoCosmetics);
 	void ReceiveBeginPlay();
+	void OnChargesChanged(float ChargesChangeTo_OnChargesChanged, bool bDoCosmetics_OnChargesChanged);
+	void ExecuteUbergraph_BP_PlaceableArmorRepairKit(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<ABP_PlaceableArmorRepairKit_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PlaceableArmorRepairKit_C;
 
 SDK_NAMESPACE_END

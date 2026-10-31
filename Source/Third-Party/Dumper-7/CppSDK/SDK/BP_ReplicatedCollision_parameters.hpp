@@ -17,6 +17,26 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_ReplicatedCollision.BP_ReplicatedCollision_C.ReactToCloset
+// 0x0002 (0x0002 - 0x0000)
+struct BP_ReplicatedCollision_C_ReactToCloset final
+{
+public:
+	bool                                          bActorsInCloset;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ReplicatedCollision_C_ReactToCloset;
+
+// Function BP_ReplicatedCollision.BP_ReplicatedCollision_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_ReplicatedCollision_C_OnStateChanged final
+{
+public:
+	bool                                          bStateToChangeTo_OnStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ReplicatedCollision_C_OnStateChanged;
+
 // Function BP_ReplicatedCollision.BP_ReplicatedCollision_C.ExecuteUbergraph_BP_ReplicatedCollision
 // 0x0248 (0x0248 - 0x0000)
 struct BP_ReplicatedCollision_C_ExecuteUbergraph_BP_ReplicatedCollision final
@@ -36,24 +56,7 @@ public:
 	uint8                                         Pad_23B[0x5];                                      // 0x023B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_MakeVector_Y_ImplicitCast;                // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_ReplicatedCollision.BP_ReplicatedCollision_C.OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_ReplicatedCollision_C_OnStateChanged final
-{
-public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_ReplicatedCollision.BP_ReplicatedCollision_C.ReactToCloset
-// 0x0002 (0x0002 - 0x0000)
-struct BP_ReplicatedCollision_C_ReactToCloset final
-{
-public:
-	bool                                          bActorsInCloset;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_ReplicatedCollision_C_ExecuteUbergraph_BP_ReplicatedCollision;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

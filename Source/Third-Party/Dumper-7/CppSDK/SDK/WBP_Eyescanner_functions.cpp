@@ -16,21 +16,43 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_Eyescanner.WBP_Eyescanner_C.ExecuteUbergraph_WBP_Eyescanner
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_Eyescanner.WBP_Eyescanner_C.setText
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      idle                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
+// const class FText&                      scanning                                               (BlueprintVisible, BlueprintReadOnly, Parm)
+// const class FText&                      denied                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
+// const class FText&                      granted                                                (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_Eyescanner_C::ExecuteUbergraph_WBP_Eyescanner(int32 EntryPoint)
+void UWBP_Eyescanner_C::setText(const class FText& idle, const class FText& scanning, const class FText& denied, const class FText& granted)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setText", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Eyescanner_C", "ExecuteUbergraph_WBP_Eyescanner");
+	Params::WBP_Eyescanner_C_setText Parms{};
 
-	Params::WBP_Eyescanner_C_ExecuteUbergraph_WBP_Eyescanner Parms{};
+	Parms.idle = std::move(idle);
+	Parms.scanning = std::move(scanning);
+	Parms.denied = std::move(denied);
+	Parms.granted = std::move(granted);
 
-	Parms.EntryPoint = EntryPoint;
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Eyescanner.WBP_Eyescanner_C.setState
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESBZEyeScannerState                     Selection                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Eyescanner_C::setState(ESBZEyeScannerState Selection)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setState", FnName));
+
+	Params::WBP_Eyescanner_C_setState Parms{};
+
+	Parms.Selection = Selection;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -44,10 +66,8 @@ void UWBP_Eyescanner_C::ExecuteUbergraph_WBP_Eyescanner(int32 EntryPoint)
 
 void UWBP_Eyescanner_C::getContainerFromState(ESBZEyeScannerState state, class UWidget** widget)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Eyescanner_C", "getContainerFromState");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"getContainerFromState", FnName));
 
 	Params::WBP_Eyescanner_C_getContainerFromState Parms{};
 
@@ -60,47 +80,19 @@ void UWBP_Eyescanner_C::getContainerFromState(ESBZEyeScannerState state, class U
 }
 
 
-// Function WBP_Eyescanner.WBP_Eyescanner_C.setState
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_Eyescanner.WBP_Eyescanner_C.ExecuteUbergraph_WBP_Eyescanner
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// ESBZEyeScannerState                     Selection                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Eyescanner_C::setState(ESBZEyeScannerState Selection)
+void UWBP_Eyescanner_C::ExecuteUbergraph_WBP_Eyescanner(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_Eyescanner_C", "ExecuteUbergraph_WBP_Eyescanner", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Eyescanner_C", "setState");
+	Params::WBP_Eyescanner_C_ExecuteUbergraph_WBP_Eyescanner Parms{};
 
-	Params::WBP_Eyescanner_C_setState Parms{};
-
-	Parms.Selection = Selection;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Eyescanner.WBP_Eyescanner_C.setText
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      idle                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
-// const class FText&                      scanning                                               (BlueprintVisible, BlueprintReadOnly, Parm)
-// const class FText&                      denied                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
-// const class FText&                      granted                                                (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_Eyescanner_C::setText(const class FText& idle, const class FText& scanning, const class FText& denied, const class FText& granted)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Eyescanner_C", "setText");
-
-	Params::WBP_Eyescanner_C_setText Parms{};
-
-	Parms.idle = std::move(idle);
-	Parms.scanning = std::move(scanning);
-	Parms.denied = std::move(denied);
-	Parms.granted = std::move(granted);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -16,21 +16,31 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_InteractableDoorSlidingBase.BP_InteractableDoorSlidingBase_C.ExecuteUbergraph_BP_InteractableDoorSlidingBase
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_InteractableDoorSlidingBase.BP_InteractableDoorSlidingBase_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_InteractableDoorSlidingBase_C::ExecuteUbergraph_BP_InteractableDoorSlidingBase(int32 EntryPoint)
+void ABP_InteractableDoorSlidingBase_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InteractableDoorSlidingBase_C", "ExecuteUbergraph_BP_InteractableDoorSlidingBase");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_InteractableDoorSlidingBase_C_ExecuteUbergraph_BP_InteractableDoorSlidingBase Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+// Function BP_InteractableDoorSlidingBase.BP_InteractableDoorSlidingBase_C.onOpenAnimUpdateTick
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  alpha                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_InteractableDoorSlidingBase_C::onOpenAnimUpdateTick(double alpha)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"onOpenAnimUpdateTick", FnName));
+
+	Params::BP_InteractableDoorSlidingBase_C_onOpenAnimUpdateTick Parms{};
+
+	Parms.alpha = alpha;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -43,10 +53,8 @@ void ABP_InteractableDoorSlidingBase_C::ExecuteUbergraph_BP_InteractableDoorSlid
 
 void ABP_InteractableDoorSlidingBase_C::initToValidPosition(ESBZGateState oldState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InteractableDoorSlidingBase_C", "initToValidPosition");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"initToValidPosition", FnName));
 
 	Params::BP_InteractableDoorSlidingBase_C_initToValidPosition Parms{};
 
@@ -56,37 +64,21 @@ void ABP_InteractableDoorSlidingBase_C::initToValidPosition(ESBZGateState oldSta
 }
 
 
-// Function BP_InteractableDoorSlidingBase.BP_InteractableDoorSlidingBase_C.onOpenAnimUpdateTick
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_InteractableDoorSlidingBase.BP_InteractableDoorSlidingBase_C.ExecuteUbergraph_BP_InteractableDoorSlidingBase
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// double                                  alpha                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_InteractableDoorSlidingBase_C::onOpenAnimUpdateTick(double alpha)
+void ABP_InteractableDoorSlidingBase_C::ExecuteUbergraph_BP_InteractableDoorSlidingBase(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_InteractableDoorSlidingBase_C", "ExecuteUbergraph_BP_InteractableDoorSlidingBase", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InteractableDoorSlidingBase_C", "onOpenAnimUpdateTick");
+	Params::BP_InteractableDoorSlidingBase_C_ExecuteUbergraph_BP_InteractableDoorSlidingBase Parms{};
 
-	Params::BP_InteractableDoorSlidingBase_C_onOpenAnimUpdateTick Parms{};
-
-	Parms.alpha = alpha;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_InteractableDoorSlidingBase.BP_InteractableDoorSlidingBase_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_InteractableDoorSlidingBase_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InteractableDoorSlidingBase_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

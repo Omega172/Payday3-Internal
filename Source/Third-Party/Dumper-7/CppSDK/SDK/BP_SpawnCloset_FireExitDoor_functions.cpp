@@ -16,174 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_SpawnCloset_FireExitDoor.BP_SpawnCloset_FireExitDoor_C.DoorPositionInterp
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Function BP_SpawnCloset_FireExitDoor.BP_SpawnCloset_FireExitDoor_C.setNav
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FRotator&                  Original                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// const struct FRotator&                  Offset                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// double                                  Alpha                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FRotator                         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+// bool                                    open                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-struct FRotator ABP_SpawnCloset_FireExitDoor_C::DoorPositionInterp(const struct FRotator& Original, const struct FRotator& Offset, double Alpha)
+void ABP_SpawnCloset_FireExitDoor_C::setNav(bool open)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setNav", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SpawnCloset_FireExitDoor_C", "DoorPositionInterp");
+	Params::BP_SpawnCloset_FireExitDoor_C_setNav Parms{};
 
-	Params::BP_SpawnCloset_FireExitDoor_C_DoorPositionInterp Parms{};
-
-	Parms.Original = std::move(Original);
-	Parms.Offset = std::move(Offset);
-	Parms.Alpha = Alpha;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function BP_SpawnCloset_FireExitDoor.BP_SpawnCloset_FireExitDoor_C.ExecuteUbergraph_BP_SpawnCloset_FireExitDoor
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SpawnCloset_FireExitDoor_C::ExecuteUbergraph_BP_SpawnCloset_FireExitDoor(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SpawnCloset_FireExitDoor_C", "ExecuteUbergraph_BP_SpawnCloset_FireExitDoor");
-
-	Params::BP_SpawnCloset_FireExitDoor_C_ExecuteUbergraph_BP_SpawnCloset_FireExitDoor Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SpawnCloset_FireExitDoor.BP_SpawnCloset_FireExitDoor_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SpawnCloset_FireExitDoor_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SpawnCloset_FireExitDoor_C", "OnStateChanged");
-
-	Params::BP_SpawnCloset_FireExitDoor_C_OnStateChanged Parms{};
-
-	Parms.bStateToChangeTo = bStateToChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SpawnCloset_FireExitDoor.BP_SpawnCloset_FireExitDoor_C.Open Doors No Cosmetics
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bOpen                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SpawnCloset_FireExitDoor_C::Open_Doors_No_Cosmetics(bool bOpen)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SpawnCloset_FireExitDoor_C", "Open Doors No Cosmetics");
-
-	Params::BP_SpawnCloset_FireExitDoor_C_Open_Doors_No_Cosmetics Parms{};
-
-	Parms.bOpen = bOpen;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SpawnCloset_FireExitDoor.BP_SpawnCloset_FireExitDoor_C.OpenDoors_Internal
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bOpen                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SpawnCloset_FireExitDoor_C::OpenDoors_Internal(bool bOpen)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SpawnCloset_FireExitDoor_C", "OpenDoors_Internal");
-
-	Params::BP_SpawnCloset_FireExitDoor_C_OpenDoors_Internal Parms{};
-
-	Parms.bOpen = bOpen;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SpawnCloset_FireExitDoor.BP_SpawnCloset_FireExitDoor_C.OpenTimeline__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_SpawnCloset_FireExitDoor_C::OpenTimeline__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SpawnCloset_FireExitDoor_C", "OpenTimeline__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SpawnCloset_FireExitDoor.BP_SpawnCloset_FireExitDoor_C.OpenTimeline__SwitchDoor__EventFunc
-// (BlueprintEvent)
-
-void ABP_SpawnCloset_FireExitDoor_C::OpenTimeline__SwitchDoor__EventFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SpawnCloset_FireExitDoor_C", "OpenTimeline__SwitchDoor__EventFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SpawnCloset_FireExitDoor.BP_SpawnCloset_FireExitDoor_C.OpenTimeline__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_SpawnCloset_FireExitDoor_C::OpenTimeline__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SpawnCloset_FireExitDoor_C", "OpenTimeline__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SpawnCloset_FireExitDoor.BP_SpawnCloset_FireExitDoor_C.ReactToCloset
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bActorsInCloset                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SpawnCloset_FireExitDoor_C::ReactToCloset(bool bActorsInCloset, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SpawnCloset_FireExitDoor_C", "ReactToCloset");
-
-	Params::BP_SpawnCloset_FireExitDoor_C_ReactToCloset Parms{};
-
-	Parms.bActorsInCloset = bActorsInCloset;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.open = open;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -199,10 +44,8 @@ void ABP_SpawnCloset_FireExitDoor_C::ReactToCloset(bool bActorsInCloset, bool bD
 
 void ABP_SpawnCloset_FireExitDoor_C::Set_Relative_Position_Interp(class USceneComponent* Component, const struct FRotator& Original, const struct FRotator& Offset, double Alpha)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SpawnCloset_FireExitDoor_C", "Set Relative Position Interp");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set Relative Position Interp", FnName));
 
 	Params::BP_SpawnCloset_FireExitDoor_C_Set_Relative_Position_Interp Parms{};
 
@@ -215,23 +58,158 @@ void ABP_SpawnCloset_FireExitDoor_C::Set_Relative_Position_Interp(class USceneCo
 }
 
 
-// Function BP_SpawnCloset_FireExitDoor.BP_SpawnCloset_FireExitDoor_C.setNav
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_SpawnCloset_FireExitDoor.BP_SpawnCloset_FireExitDoor_C.ReactToCloset
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    open                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bActorsInCloset                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SpawnCloset_FireExitDoor_C::setNav(bool open)
+void ABP_SpawnCloset_FireExitDoor_C::ReactToCloset(bool bActorsInCloset, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReactToCloset", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SpawnCloset_FireExitDoor_C", "setNav");
+	Params::BP_SpawnCloset_FireExitDoor_C_ReactToCloset Parms{};
 
-	Params::BP_SpawnCloset_FireExitDoor_C_setNav Parms{};
-
-	Parms.open = open;
+	Parms.bActorsInCloset = bActorsInCloset;
+	Parms.bDoCosmetics = bDoCosmetics;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SpawnCloset_FireExitDoor.BP_SpawnCloset_FireExitDoor_C.OpenTimeline__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_SpawnCloset_FireExitDoor_C::OpenTimeline__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OpenTimeline__UpdateFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SpawnCloset_FireExitDoor.BP_SpawnCloset_FireExitDoor_C.OpenTimeline__SwitchDoor__EventFunc
+// (BlueprintEvent)
+
+void ABP_SpawnCloset_FireExitDoor_C::OpenTimeline__SwitchDoor__EventFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OpenTimeline__SwitchDoor__EventFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SpawnCloset_FireExitDoor.BP_SpawnCloset_FireExitDoor_C.OpenTimeline__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_SpawnCloset_FireExitDoor_C::OpenTimeline__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OpenTimeline__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SpawnCloset_FireExitDoor.BP_SpawnCloset_FireExitDoor_C.OpenDoors_Internal
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bOpen                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SpawnCloset_FireExitDoor_C::OpenDoors_Internal(bool bOpen)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OpenDoors_Internal", FnName));
+
+	Params::BP_SpawnCloset_FireExitDoor_C_OpenDoors_Internal Parms{};
+
+	Parms.bOpen = bOpen;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SpawnCloset_FireExitDoor.BP_SpawnCloset_FireExitDoor_C.Open Doors No Cosmetics
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bOpen                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SpawnCloset_FireExitDoor_C::Open_Doors_No_Cosmetics(bool bOpen)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Open Doors No Cosmetics", FnName));
+
+	Params::BP_SpawnCloset_FireExitDoor_C_Open_Doors_No_Cosmetics Parms{};
+
+	Parms.bOpen = bOpen;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SpawnCloset_FireExitDoor.BP_SpawnCloset_FireExitDoor_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bStateToChangeTo_OnStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SpawnCloset_FireExitDoor_C::OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_SpawnCloset_FireExitDoor_C_OnStateChanged Parms{};
+
+	Parms.bStateToChangeTo_OnStateChanged = bStateToChangeTo_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SpawnCloset_FireExitDoor.BP_SpawnCloset_FireExitDoor_C.ExecuteUbergraph_BP_SpawnCloset_FireExitDoor
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SpawnCloset_FireExitDoor_C::ExecuteUbergraph_BP_SpawnCloset_FireExitDoor(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_SpawnCloset_FireExitDoor_C", "ExecuteUbergraph_BP_SpawnCloset_FireExitDoor", FuncInfo);
+
+	Params::BP_SpawnCloset_FireExitDoor_C_ExecuteUbergraph_BP_SpawnCloset_FireExitDoor Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SpawnCloset_FireExitDoor.BP_SpawnCloset_FireExitDoor_C.DoorPositionInterp
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// const struct FRotator&                  Original                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const struct FRotator&                  Offset                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// double                                  Alpha                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FRotator                         ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+
+struct FRotator ABP_SpawnCloset_FireExitDoor_C::DoorPositionInterp(const struct FRotator& Original, const struct FRotator& Offset, double Alpha)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DoorPositionInterp", FnName));
+
+	Params::BP_SpawnCloset_FireExitDoor_C_DoorPositionInterp Parms{};
+
+	Parms.Original = std::move(Original);
+	Parms.Offset = std::move(Offset);
+	Parms.Alpha = Alpha;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 

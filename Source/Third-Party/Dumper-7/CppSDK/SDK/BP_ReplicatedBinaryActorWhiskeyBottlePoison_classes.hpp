@@ -29,11 +29,11 @@ public:
 	TMulticastInlineDelegate<void()>              WhiskeyBottlePoisoned;                             // 0x0380(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__BP_ReplicatedBinaryActorWhiskeyGlass_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void DisableInteraction();
-	void ExecuteUbergraph_BP_ReplicatedBinaryActorWhiskeyBottlePoison(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
 	void RemoveWhiskeyBottle();
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_ReplicatedBinaryActorWhiskeyBottlePoison(int32 EntryPoint);
+	void DisableInteraction();
+	void BndEvt__BP_ReplicatedBinaryActorWhiskeyGlass_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -49,5 +49,6 @@ public:
 		return GetDefaultObjImpl<ABP_ReplicatedBinaryActorWhiskeyBottlePoison_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ReplicatedBinaryActorWhiskeyBottlePoison_C;
 
 SDK_NAMESPACE_END

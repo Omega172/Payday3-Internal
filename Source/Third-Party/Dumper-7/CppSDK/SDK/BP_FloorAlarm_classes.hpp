@@ -30,10 +30,10 @@ public:
 	class ATriggerVolume*                         TriggerVolumeReference;                            // 0x0398(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_FloorAlarm_TriggerVolume_K2Node_ComponentBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor);
-	void ExecuteUbergraph_BP_FloorAlarm(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
 	void SetTemporarilyDisable();
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_FloorAlarm(int32 EntryPoint);
+	void BndEvt__BP_FloorAlarm_TriggerVolume_K2Node_ComponentBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor);
 
 public:
 	static class UClass* StaticClass()
@@ -49,5 +49,6 @@ public:
 		return GetDefaultObjImpl<ABP_FloorAlarm_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_FloorAlarm_C;
 
 SDK_NAMESPACE_END

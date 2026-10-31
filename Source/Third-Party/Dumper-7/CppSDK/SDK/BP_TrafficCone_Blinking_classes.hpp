@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_TrafficCone_Blinking_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_TrafficCone_Blinking_C;
 
 SDK_NAMESPACE_END

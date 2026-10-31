@@ -16,30 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_MapPinManager.BP_MapPinManager_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_MapPinManager_C::ReceiveBeginPlay()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MapPinManager.BP_MapPinManager_C.Populate Data
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_MapPinManager_C::Populate_Data()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Populate Data", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_MapPinManager.BP_MapPinManager_C.ExecuteUbergraph_BP_MapPinManager
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -55,6 +31,30 @@ void ABP_MapPinManager_C::ExecuteUbergraph_BP_MapPinManager(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MapPinManager.BP_MapPinManager_C.Populate Data
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_MapPinManager_C::Populate_Data()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Populate Data", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MapPinManager.BP_MapPinManager_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_MapPinManager_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

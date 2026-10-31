@@ -26,12 +26,12 @@ public:
 	double                                        SmokeSightModifier;                                // 0x05E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnExplosion(bool bDoCosmetics);
 	void ExecuteUbergraph_BP_FireExtinguisher_Foam(int32 EntryPoint);
+	void BP_OnExplosion(bool bDoCosmetics_BP_OnExplosion);
 
-	bool CanAffectStealth() const;
-	bool CanAffectTaser() const;
 	float GetSightModifier(const struct FVector& Start, const struct FVector& End) const;
+	bool CanAffectTaser() const;
+	bool CanAffectStealth() const;
 
 public:
 	static class UClass* StaticClass()
@@ -47,5 +47,6 @@ public:
 		return GetDefaultObjImpl<ABP_FireExtinguisher_Foam_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_FireExtinguisher_Foam_C;
 
 SDK_NAMESPACE_END

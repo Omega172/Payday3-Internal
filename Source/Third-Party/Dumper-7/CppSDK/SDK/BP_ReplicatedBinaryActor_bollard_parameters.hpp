@@ -17,6 +17,16 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_ReplicatedBinaryActor_bollard.BP_ReplicatedBinaryActor_bollard_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_ReplicatedBinaryActor_bollard_C_OnStateChanged final
+{
+public:
+	bool                                          bStateToChangeTo_OnStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ReplicatedBinaryActor_bollard_C_OnStateChanged;
+
 // Function BP_ReplicatedBinaryActor_bollard.BP_ReplicatedBinaryActor_bollard_C.ExecuteUbergraph_BP_ReplicatedBinaryActor_bollard
 // 0x0180 (0x0180 - 0x0000)
 struct BP_ReplicatedBinaryActor_bollard_C_ExecuteUbergraph_BP_ReplicatedBinaryActor_bollard final
@@ -45,15 +55,7 @@ public:
 	struct FHitResult                             CallFunc_K2_SetRelativeLocationAndRotation_SweepHitResult; // 0x0070(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	float                                         CallFunc_SetNewTime_NewTime_ImplicitCast;          // 0x0178(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_ReplicatedBinaryActor_bollard.BP_ReplicatedBinaryActor_bollard_C.OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_ReplicatedBinaryActor_bollard_C_OnStateChanged final
-{
-public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_ReplicatedBinaryActor_bollard_C_ExecuteUbergraph_BP_ReplicatedBinaryActor_bollard;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

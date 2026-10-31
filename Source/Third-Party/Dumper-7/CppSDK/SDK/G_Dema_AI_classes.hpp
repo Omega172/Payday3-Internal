@@ -105,31 +105,31 @@ public:
 	class ASBZDestroyGroup*                       SBZDestroyGroup_Snipers_Garage_ExecuteUbergraph_G_Dema_AI_RefProperty; // 0x0630(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ActivateSWATHelicopter();
-	void ActivateToystoreSpawns();
-	void ActiveEndlessAssault();
-	void BlackScreenStarted();
-	void BndEvt__G_Dema_AI_SBZDestroyGroup_CameraCorridorFork_K2Node_ActorBoundEvent_5_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors);
-	void BndEvt__G_Dema_AI_SBZDestroyGroup_CameraLounge2_K2Node_ActorBoundEvent_6_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors);
-	void BndEvt__G_Dema_AI_SBZDestroyGroup_CameraToystore1_K2Node_ActorBoundEvent_4_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors);
-	void BndEvt__G_Dema_AI_SBZDestroyGroup_CameraToystore2_K2Node_ActorBoundEvent_2_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors);
-	void BndEvt__G_Dema_PP4_SBZPawnSpawnPredefined_LeadGuard_Gunstore_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
-	void BndEvt__G_Dema_PP4_SBZPawnSpawnPredefined_LeadGuard_Toystore_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
-	void BndEvt__G_ScriptTemplate_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_0_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
-	void BndEvt__G_ScriptTemplate_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_1_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
-	void DryStorageOpened();
-	void EnteredArmory(bool Entered);
-	void EscapeSelected(int32 EscapeIndex);
-	void ExecuteUbergraph_G_Dema_AI(int32 EntryPoint);
-	void HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState);
-	void InitComplete();
-	void MainLootLocationPicked(int32 LootLocationInt);
-	void RandomizeSecurityRoom();
-	void SetAllStoresReachable();
-	void SetGunstoreReachable();
-	void SetToystoreReachable();
-	void SpawnLeadGuard();
 	void ToystoreEntered();
+	void SpawnLeadGuard();
+	void SetToystoreReachable();
+	void SetGunstoreReachable();
+	void SetAllStoresReachable();
+	void RandomizeSecurityRoom();
+	void MainLootLocationPicked(int32 LootLocationInt);
+	void InitComplete();
+	void HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged);
+	void ExecuteUbergraph_G_Dema_AI(int32 EntryPoint);
+	void EscapeSelected(int32 EscapeIndex);
+	void EnteredArmory(bool Entered);
+	void DryStorageOpened();
+	void BndEvt__G_ScriptTemplate_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_1_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
+	void BndEvt__G_ScriptTemplate_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_0_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
+	void BndEvt__G_Dema_PP4_SBZPawnSpawnPredefined_LeadGuard_Toystore_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
+	void BndEvt__G_Dema_PP4_SBZPawnSpawnPredefined_LeadGuard_Gunstore_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
+	void BndEvt__G_Dema_AI_SBZDestroyGroup_CameraToystore2_K2Node_ActorBoundEvent_2_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors);
+	void BndEvt__G_Dema_AI_SBZDestroyGroup_CameraToystore1_K2Node_ActorBoundEvent_4_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors);
+	void BndEvt__G_Dema_AI_SBZDestroyGroup_CameraLounge2_K2Node_ActorBoundEvent_6_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors);
+	void BndEvt__G_Dema_AI_SBZDestroyGroup_CameraCorridorFork_K2Node_ActorBoundEvent_5_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors);
+	void BlackScreenStarted();
+	void ActiveEndlessAssault();
+	void ActivateToystoreSpawns();
+	void ActivateSWATHelicopter();
 
 public:
 	static class UClass* StaticClass()
@@ -145,5 +145,6 @@ public:
 		return GetDefaultObjImpl<AG_Dema_AI_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_Dema_AI_C;
 
 SDK_NAMESPACE_END

@@ -16,23 +16,27 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_AmbientAudioMultiplePos_base.BP_AmbientAudioMultiplePos_base_C.ExecuteUbergraph_BP_AmbientAudioMultiplePos_base
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_AmbientAudioMultiplePos_base.BP_AmbientAudioMultiplePos_base_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_AmbientAudioMultiplePos_base_C::ExecuteUbergraph_BP_AmbientAudioMultiplePos_base(int32 EntryPoint)
+void ABP_AmbientAudioMultiplePos_base_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AmbientAudioMultiplePos_base_C", "ExecuteUbergraph_BP_AmbientAudioMultiplePos_base");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_AmbientAudioMultiplePos_base_C_ExecuteUbergraph_BP_AmbientAudioMultiplePos_base Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+// Function BP_AmbientAudioMultiplePos_base.BP_AmbientAudioMultiplePos_base_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-	UObject::ProcessEvent(Func, &Parms);
+void ABP_AmbientAudioMultiplePos_base_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -43,10 +47,8 @@ void ABP_AmbientAudioMultiplePos_base_C::ExecuteUbergraph_BP_AmbientAudioMultipl
 
 void ABP_AmbientAudioMultiplePos_base_C::getWorldPositions(TArray<struct FTransform>* worldPositions)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AmbientAudioMultiplePos_base_C", "getWorldPositions");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"getWorldPositions", FnName));
 
 	Params::BP_AmbientAudioMultiplePos_base_C_getWorldPositions Parms{};
 
@@ -57,31 +59,21 @@ void ABP_AmbientAudioMultiplePos_base_C::getWorldPositions(TArray<struct FTransf
 }
 
 
-// Function BP_AmbientAudioMultiplePos_base.BP_AmbientAudioMultiplePos_base_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_AmbientAudioMultiplePos_base.BP_AmbientAudioMultiplePos_base_C.ExecuteUbergraph_BP_AmbientAudioMultiplePos_base
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_AmbientAudioMultiplePos_base_C::ReceiveBeginPlay()
+void ABP_AmbientAudioMultiplePos_base_C::ExecuteUbergraph_BP_AmbientAudioMultiplePos_base(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_AmbientAudioMultiplePos_base_C", "ExecuteUbergraph_BP_AmbientAudioMultiplePos_base", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AmbientAudioMultiplePos_base_C", "ReceiveBeginPlay");
+	Params::BP_AmbientAudioMultiplePos_base_C_ExecuteUbergraph_BP_AmbientAudioMultiplePos_base Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Parms.EntryPoint = EntryPoint;
 
-
-// Function BP_AmbientAudioMultiplePos_base.BP_AmbientAudioMultiplePos_base_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_AmbientAudioMultiplePos_base_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AmbientAudioMultiplePos_base_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

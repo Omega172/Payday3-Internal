@@ -29,7 +29,7 @@ public:
 	struct FAnimNode_Slot                         AnimGraphNode_Slot;                                // 0x04B8(0x0078)()
 
 public:
-	void AnimGraph(struct FPoseLink* AnimGraph);
+	void AnimGraph(struct FPoseLink* AnimGraph_0);
 
 public:
 	static class UClass* StaticClass()

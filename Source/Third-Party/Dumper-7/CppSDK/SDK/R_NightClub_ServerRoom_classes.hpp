@@ -52,18 +52,18 @@ public:
 	class ABP_EyeScanner_C*                       BP_EyeScanner_2_ExecuteUbergraph_R_NightClub_ServerRoom_RefProperty; // 0x0488(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AddTrackedPawnEyescanner(class ASBZAICharacter* NPC);
-	void BndEvt__R_NightClub_ServerRoom_BP_EyeScanner_2_K2Node_ActorBoundEvent_4_SBZOnEyeScannerStateChanged__DelegateSignature(ESBZEyeScannerState Oldstate, ESBZEyeScannerState NewState);
-	void BndEvt__R_NightClub_ServerRoom_BP_InteractablePainting_LowValue_2_K2Node_ActorBoundEvent_2_SBZBagPickedUp__DelegateSignature();
-	void BndEvt__R_NightClub_ServerRoom_BP_InteractableStaticMeshDoor_2_K2Node_ActorBoundEvent_1_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State);
-	void BndEvt__R_NightClub_ServerRoom_SBZPlayerTriggerVolume_PlayerFoundServerRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void CloseCryptoWalletDoor();
-	void ExecuteUbergraph_R_NightClub_ServerRoom(int32 EntryPoint);
-	void OnRandomPlacementStarted();
-	void OpenCryptoWalletDoor();
-	void PlayerCutWires();
-	void RemoveServerRoomWP();
 	void ShowServerRoomWP();
+	void RemoveServerRoomWP();
+	void PlayerCutWires();
+	void OpenCryptoWalletDoor();
+	void OnRandomPlacementStarted();
+	void ExecuteUbergraph_R_NightClub_ServerRoom(int32 EntryPoint);
+	void CloseCryptoWalletDoor();
+	void BndEvt__R_NightClub_ServerRoom_SBZPlayerTriggerVolume_PlayerFoundServerRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__R_NightClub_ServerRoom_BP_InteractableStaticMeshDoor_2_K2Node_ActorBoundEvent_1_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State);
+	void BndEvt__R_NightClub_ServerRoom_BP_InteractablePainting_LowValue_2_K2Node_ActorBoundEvent_2_SBZBagPickedUp__DelegateSignature();
+	void BndEvt__R_NightClub_ServerRoom_BP_EyeScanner_2_K2Node_ActorBoundEvent_4_SBZOnEyeScannerStateChanged__DelegateSignature(ESBZEyeScannerState Oldstate, ESBZEyeScannerState NewState);
+	void AddTrackedPawnEyescanner(class ASBZAICharacter* NPC);
 
 public:
 	static class UClass* StaticClass()
@@ -79,5 +79,6 @@ public:
 		return GetDefaultObjImpl<AR_NightClub_ServerRoom_C>();
 	}
 };
+DUMPER7_ASSERTS_AR_NightClub_ServerRoom_C;
 
 SDK_NAMESPACE_END

@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_CosmeticChampagneBottle_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CosmeticChampagneBottle_C;
 
 SDK_NAMESPACE_END

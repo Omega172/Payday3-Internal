@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_GrenadeProjectile_Mamba_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_GrenadeProjectile_Mamba_C;
 
 SDK_NAMESPACE_END

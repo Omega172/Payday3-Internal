@@ -51,23 +51,23 @@ public:
 	int32                                         Available_At_Infamy_Level;                         // 0x05E4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Tick(const struct FGeometry& MyGeometry_Tick, float InDeltaTime_Tick);
-	void SetTimer();
-	void SetPrice(int64 Price, ESBZCurrencyCode Currency);
-	void SetGoldProgress();
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnTransactionProgressChanged(bool bInIsTransactionInProgress);
-	void OnTransactionInProgress(bool bIsTransactionInProgress);
-	void OnPlayerStoreItemDataIntialized();
-	void OnInitialized();
-	void OnFocused(bool bIsFocused);
-	void OnDisabled(bool bIsDisabled);
-	void InitializeItemData(class USBZInventoryBaseData* InItemData);
-	void ExecuteUbergraph_WBP_UI_MainMenu_GoldItemButton(int32 EntryPoint);
-	void DisabledButtonSelected();
+	void ButtonDisabledChanged(bool bInIsDisabled);
+	void ButtonFocusedChanged(bool bInHasFocus);
 	void Construct();
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
-	void ButtonDisabledChanged(bool bInIsDisabled_ButtonDisabledChanged);
+	void DisabledButtonSelected();
+	void ExecuteUbergraph_WBP_UI_MainMenu_GoldItemButton(int32 EntryPoint);
+	void InitializeItemData(class USBZInventoryBaseData* InItemData);
+	void OnDisabled(bool bIsDisabled_0);
+	void OnFocused(bool bIsFocused);
+	void OnInitialized();
+	void OnPlayerStoreItemDataIntialized();
+	void OnTransactionInProgress(bool bIsTransactionInProgress);
+	void OnTransactionProgressChanged(bool bInIsTransactionInProgress);
+	void PreConstruct(bool IsDesignTime);
+	void SetGoldProgress();
+	void SetPrice(int64 Price, ESBZCurrencyCode Currency);
+	void SetTimer();
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 
 public:
 	static class UClass* StaticClass()

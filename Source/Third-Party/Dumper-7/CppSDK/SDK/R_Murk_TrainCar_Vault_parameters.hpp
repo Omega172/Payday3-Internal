@@ -16,55 +16,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function R_Murk_TrainCar_Vault.R_Murk_TrainCar_Vault_C.BndEvt__R_Murk_TrainCar_Vault_BP_GenericHackableComputer_Vault_01_K2Node_ActorBoundEvent_7_SBZHackableActorInterruptedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct R_Murk_TrainCar_Vault_C_BndEvt__R_Murk_TrainCar_Vault_BP_GenericHackableComputer_Vault_01_K2Node_ActorBoundEvent_7_SBZHackableActorInterruptedDelegate__DelegateSignature final
-{
-public:
-	ESBZHackableActorInterruptReason              Reason;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_Murk_TrainCar_Vault.R_Murk_TrainCar_Vault_C.BndEvt__R_Station_TrainCar_Vault_BP_VaultDoor_Medium_2_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature
+// Function R_Murk_TrainCar_Vault.R_Murk_TrainCar_Vault_C.HeistStateChanged
 // 0x0002 (0x0002 - 0x0000)
-struct R_Murk_TrainCar_Vault_C_BndEvt__R_Station_TrainCar_Vault_BP_VaultDoor_Medium_2_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature final
+struct R_Murk_TrainCar_Vault_C_HeistStateChanged final
 {
 public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                OldHeistState_HeistStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CurrentHeistState_HeistStateChanged;               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function R_Murk_TrainCar_Vault.R_Murk_TrainCar_Vault_C.BndEvt__R_Station_TrainCar_Vault_SBZLaserGrid_Vault_K2Node_ActorBoundEvent_6_SBZOnLaserGridTriggered__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_Murk_TrainCar_Vault_C_BndEvt__R_Station_TrainCar_Vault_SBZLaserGrid_Vault_K2Node_ActorBoundEvent_6_SBZOnLaserGridTriggered__DelegateSignature final
-{
-public:
-	class ASBZLaserGrid*                          LaserGrid;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    PlayerCharacter;                                   // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_Murk_TrainCar_Vault.R_Murk_TrainCar_Vault_C.BndEvt__R_Station_TrainCar_Vault_SBZPlayerTriggerVolume_PlayerInsideTrainCar_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct R_Murk_TrainCar_Vault_C_BndEvt__R_Station_TrainCar_Vault_SBZPlayerTriggerVolume_PlayerInsideTrainCar_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_Murk_TrainCar_Vault.R_Murk_TrainCar_Vault_C.DestroyAllMainLoot
-// 0x0004 (0x0004 - 0x0000)
-struct R_Murk_TrainCar_Vault_C_DestroyAllMainLoot final
-{
-public:
-	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_Murk_TrainCar_Vault.R_Murk_TrainCar_Vault_C.DestroyOptionalLoot
-// 0x0004 (0x0004 - 0x0000)
-struct R_Murk_TrainCar_Vault_C_DestroyOptionalLoot final
-{
-public:
-	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_R_Murk_TrainCar_Vault_C_HeistStateChanged;
 
 // Function R_Murk_TrainCar_Vault.R_Murk_TrainCar_Vault_C.ExecuteUbergraph_R_Murk_TrainCar_Vault
 // 0x0130 (0x0130 - 0x0000)
@@ -138,15 +98,63 @@ public:
 	bool                                          Temp_bool_IsClosed_Variable_2;                     // 0x0129(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_SetState_ReturnValue;                     // 0x012A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_R_Murk_TrainCar_Vault_C_ExecuteUbergraph_R_Murk_TrainCar_Vault;
 
-// Function R_Murk_TrainCar_Vault.R_Murk_TrainCar_Vault_C.HeistStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct R_Murk_TrainCar_Vault_C_HeistStateChanged final
+// Function R_Murk_TrainCar_Vault.R_Murk_TrainCar_Vault_C.DestroyOptionalLoot
+// 0x0004 (0x0004 - 0x0000)
+struct R_Murk_TrainCar_Vault_C_DestroyOptionalLoot final
 {
 public:
-	EPD3HeistState                                OldHeistState;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CurrentHeistState;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_R_Murk_TrainCar_Vault_C_DestroyOptionalLoot;
+
+// Function R_Murk_TrainCar_Vault.R_Murk_TrainCar_Vault_C.DestroyAllMainLoot
+// 0x0004 (0x0004 - 0x0000)
+struct R_Murk_TrainCar_Vault_C_DestroyAllMainLoot final
+{
+public:
+	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_Murk_TrainCar_Vault_C_DestroyAllMainLoot;
+
+// Function R_Murk_TrainCar_Vault.R_Murk_TrainCar_Vault_C.BndEvt__R_Station_TrainCar_Vault_SBZPlayerTriggerVolume_PlayerInsideTrainCar_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct R_Murk_TrainCar_Vault_C_BndEvt__R_Station_TrainCar_Vault_SBZPlayerTriggerVolume_PlayerInsideTrainCar_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_Murk_TrainCar_Vault_C_BndEvt__R_Station_TrainCar_Vault_SBZPlayerTriggerVolume_PlayerInsideTrainCar_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function R_Murk_TrainCar_Vault.R_Murk_TrainCar_Vault_C.BndEvt__R_Station_TrainCar_Vault_SBZLaserGrid_Vault_K2Node_ActorBoundEvent_6_SBZOnLaserGridTriggered__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_Murk_TrainCar_Vault_C_BndEvt__R_Station_TrainCar_Vault_SBZLaserGrid_Vault_K2Node_ActorBoundEvent_6_SBZOnLaserGridTriggered__DelegateSignature final
+{
+public:
+	class ASBZLaserGrid*                          LaserGrid;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    PlayerCharacter;                                   // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_Murk_TrainCar_Vault_C_BndEvt__R_Station_TrainCar_Vault_SBZLaserGrid_Vault_K2Node_ActorBoundEvent_6_SBZOnLaserGridTriggered__DelegateSignature;
+
+// Function R_Murk_TrainCar_Vault.R_Murk_TrainCar_Vault_C.BndEvt__R_Station_TrainCar_Vault_BP_VaultDoor_Medium_2_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct R_Murk_TrainCar_Vault_C_BndEvt__R_Station_TrainCar_Vault_BP_VaultDoor_Medium_2_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_Murk_TrainCar_Vault_C_BndEvt__R_Station_TrainCar_Vault_BP_VaultDoor_Medium_2_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function R_Murk_TrainCar_Vault.R_Murk_TrainCar_Vault_C.BndEvt__R_Murk_TrainCar_Vault_BP_GenericHackableComputer_Vault_01_K2Node_ActorBoundEvent_7_SBZHackableActorInterruptedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct R_Murk_TrainCar_Vault_C_BndEvt__R_Murk_TrainCar_Vault_BP_GenericHackableComputer_Vault_01_K2Node_ActorBoundEvent_7_SBZHackableActorInterruptedDelegate__DelegateSignature final
+{
+public:
+	ESBZHackableActorInterruptReason              Reason;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_Murk_TrainCar_Vault_C_BndEvt__R_Murk_TrainCar_Vault_BP_GenericHackableComputer_Vault_01_K2Node_ActorBoundEvent_7_SBZHackableActorInterruptedDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

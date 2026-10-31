@@ -37,11 +37,11 @@ public:
 	struct FRotator                               Rotation;                                          // 0x0370(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
-	void ExecuteUbergraph_BP_AnimatedTramCabin(int32 EntryPoint);
-	void MoveObject();
-	void MoveObjectT__FinishedFunc();
-	void MoveObjectT__UpdateFunc();
 	void ReceiveBeginPlay();
+	void MoveObjectT__UpdateFunc();
+	void MoveObjectT__FinishedFunc();
+	void MoveObject();
+	void ExecuteUbergraph_BP_AnimatedTramCabin(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -57,5 +57,6 @@ public:
 		return GetDefaultObjImpl<ABP_AnimatedTramCabin_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_AnimatedTramCabin_C;
 
 SDK_NAMESPACE_END

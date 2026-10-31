@@ -16,13 +16,13 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_WheeledVehicle_Base.BP_WheeledVehicle_Base_C
-// 0x0010 (0x0930 - 0x0920)
+// 0x0010 (0x0A30 - 0x0A20)
 #pragma pack(push, 0x1)
 class SDK_ALIGN(0x10) ABP_WheeledVehicle_Base_C : public ASBZWheeledVehicle
 {
 public:
-	uint8                                         Pad_918[0x8];                                      // 0x0918(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UDecalComponent*                        AO_Decal;                                          // 0x0920(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A18[0x8];                                      // 0x0A18(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UDecalComponent*                        AO_Decal;                                          // 0x0A20(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void SpawnPawns();
@@ -42,5 +42,6 @@ public:
 	}
 };
 #pragma pack(pop)
+DUMPER7_ASSERTS_ABP_WheeledVehicle_Base_C;
 
 SDK_NAMESPACE_END

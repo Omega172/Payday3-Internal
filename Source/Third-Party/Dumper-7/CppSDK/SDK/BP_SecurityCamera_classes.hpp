@@ -53,21 +53,21 @@ public:
 	double                                        boundsForwardOffset;                               // 0x0AF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnCameraColorStateChanged(ESBZCameraColorState NewCameraColorState);
-	void BP_OnCameraDetectionChanged(bool bIsDetecting);
-	void BP_OnIndestructibleCamera();
-	void BP_OnStateChanged(ESBZCameraState OldState, ESBZCameraState NewState, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_SecurityCamera(int32 EntryPoint);
-	void getBoundsFromLocations(TArray<struct FVector>& locations, struct FVector* origin, struct FVector* extends);
-	void HighlightHackable_1(bool bInHighlight);
-	void OnRuntimeStateApplied(ESBZRuntimeState AppliedState);
-	void OnSecurityCameraVisionConeChanged();
-	void ReceiveBeginPlay();
-	void SetCameraColours(const struct FLinearColor& Target_Colour);
-	void Update_Detection_Pattern();
-	void Update_Detection_Pattern_Visuals();
-	void updateLaserConeBounds();
 	void UserConstructionScript();
+	void updateLaserConeBounds();
+	void Update_Detection_Pattern_Visuals();
+	void Update_Detection_Pattern();
+	void SetCameraColours(const struct FLinearColor& Target_Colour);
+	void ReceiveBeginPlay();
+	void OnSecurityCameraVisionConeChanged();
+	void OnRuntimeStateApplied(ESBZRuntimeState AppliedState_OnRuntimeStateApplied);
+	void HighlightHackable_1(bool bInHighlight);
+	void getBoundsFromLocations(TArray<struct FVector>& locations, struct FVector* origin, struct FVector* extends);
+	void ExecuteUbergraph_BP_SecurityCamera(int32 EntryPoint);
+	void BP_OnStateChanged(ESBZCameraState OldState_BP_OnStateChanged, ESBZCameraState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged);
+	void BP_OnIndestructibleCamera();
+	void BP_OnCameraDetectionChanged(bool bIsDetecting_BP_OnCameraDetectionChanged);
+	void BP_OnCameraColorStateChanged(ESBZCameraColorState NewCameraColorState_BP_OnCameraColorStateChanged);
 
 public:
 	static class UClass* StaticClass()
@@ -83,5 +83,6 @@ public:
 		return GetDefaultObjImpl<ABP_SecurityCamera_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SecurityCamera_C;
 
 SDK_NAMESPACE_END

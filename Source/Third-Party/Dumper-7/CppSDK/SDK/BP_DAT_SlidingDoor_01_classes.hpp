@@ -29,10 +29,10 @@ public:
 	class UMaterialInstanceDynamic*               light_DMI;                                         // 0x0778(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_DAT_SlidingDoor_01(int32 EntryPoint);
-	void OnStateChanged(ESBZGateState OldState, ESBZGateState NewState, bool bIsInitialStateChange);
-	void setLight(double intensity, bool unlocked);
 	void UserConstructionScript();
+	void setLight(double intensity, bool unlocked);
+	void OnStateChanged(ESBZGateState OldState_OnStateChanged, ESBZGateState NewState_OnStateChanged, bool bIsInitialStateChange_OnStateChanged);
+	void ExecuteUbergraph_BP_DAT_SlidingDoor_01(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<ABP_DAT_SlidingDoor_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DAT_SlidingDoor_01_C;
 
 SDK_NAMESPACE_END

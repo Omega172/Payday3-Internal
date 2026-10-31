@@ -16,23 +16,63 @@
 
 SDK_NAMESPACE_START
 
-// Function A_SnGBB.A_SnGBB_C.BndEvt__A_BranchBank_TriggerBox2_4_K2Node_ActorBoundEvent_1_ActorBeginOverlapSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class AActor*                           OverlappedActor                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function A_SnGBB.A_SnGBB_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void AA_SnGBB_C::BndEvt__A_BranchBank_TriggerBox2_4_K2Node_ActorBoundEvent_1_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor)
+void AA_SnGBB_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_SnGBB_C", "BndEvt__A_BranchBank_TriggerBox2_4_K2Node_ActorBoundEvent_1_ActorBeginOverlapSignature__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::A_SnGBB_C_BndEvt__A_BranchBank_TriggerBox2_4_K2Node_ActorBoundEvent_1_ActorBeginOverlapSignature__DelegateSignature Parms{};
 
-	Parms.OverlappedActor = OverlappedActor;
-	Parms.OtherActor = OtherActor;
+// Function A_SnGBB.A_SnGBB_C.HeistStateChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EPD3HeistState                          OldHeistState_HeistStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPD3HeistState                          CurrentHeistState_HeistStateChanged                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AA_SnGBB_C::HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HeistStateChanged", FnName));
+
+	Params::A_SnGBB_C_HeistStateChanged Parms{};
+
+	Parms.OldHeistState_HeistStateChanged = OldHeistState_HeistStateChanged;
+	Parms.CurrentHeistState_HeistStateChanged = CurrentHeistState_HeistStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function A_SnGBB.A_SnGBB_C.FirstResponders_Arrived
+// (BlueprintCallable, BlueprintEvent)
+
+void AA_SnGBB_C::FirstResponders_Arrived()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"FirstResponders_Arrived", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function A_SnGBB.A_SnGBB_C.ExecuteUbergraph_A_SnGBB
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AA_SnGBB_C::ExecuteUbergraph_A_SnGBB(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "A_SnGBB_C", "ExecuteUbergraph_A_SnGBB", FuncInfo);
+
+	Params::A_SnGBB_C_ExecuteUbergraph_A_SnGBB Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -46,10 +86,8 @@ void AA_SnGBB_C::BndEvt__A_BranchBank_TriggerBox2_4_K2Node_ActorBoundEvent_1_Act
 
 void AA_SnGBB_C::BndEvt__A_BranchBank_TriggerBox_1_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_SnGBB_C", "BndEvt__A_BranchBank_TriggerBox_1_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__A_BranchBank_TriggerBox_1_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature", FnName));
 
 	Params::A_SnGBB_C_BndEvt__A_BranchBank_TriggerBox_1_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature Parms{};
 
@@ -60,73 +98,23 @@ void AA_SnGBB_C::BndEvt__A_BranchBank_TriggerBox_1_K2Node_ActorBoundEvent_0_Acto
 }
 
 
-// Function A_SnGBB.A_SnGBB_C.ExecuteUbergraph_A_SnGBB
-// (Final, UbergraphFunction)
+// Function A_SnGBB.A_SnGBB_C.BndEvt__A_BranchBank_TriggerBox2_4_K2Node_ActorBoundEvent_1_ActorBeginOverlapSignature__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OverlappedActor                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AA_SnGBB_C::ExecuteUbergraph_A_SnGBB(int32 EntryPoint)
+void AA_SnGBB_C::BndEvt__A_BranchBank_TriggerBox2_4_K2Node_ActorBoundEvent_1_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__A_BranchBank_TriggerBox2_4_K2Node_ActorBoundEvent_1_ActorBeginOverlapSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_SnGBB_C", "ExecuteUbergraph_A_SnGBB");
+	Params::A_SnGBB_C_BndEvt__A_BranchBank_TriggerBox2_4_K2Node_ActorBoundEvent_1_ActorBeginOverlapSignature__DelegateSignature Parms{};
 
-	Params::A_SnGBB_C_ExecuteUbergraph_A_SnGBB Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.OverlappedActor = OverlappedActor;
+	Parms.OtherActor = OtherActor;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function A_SnGBB.A_SnGBB_C.FirstResponders_Arrived
-// (BlueprintCallable, BlueprintEvent)
-
-void AA_SnGBB_C::FirstResponders_Arrived()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_SnGBB_C", "FirstResponders_Arrived");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function A_SnGBB.A_SnGBB_C.HeistStateChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// EPD3HeistState                          OldHeistState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPD3HeistState                          CurrentHeistState                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AA_SnGBB_C::HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_SnGBB_C", "HeistStateChanged");
-
-	Params::A_SnGBB_C_HeistStateChanged Parms{};
-
-	Parms.OldHeistState = OldHeistState;
-	Parms.CurrentHeistState = CurrentHeistState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function A_SnGBB.A_SnGBB_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AA_SnGBB_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_SnGBB_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

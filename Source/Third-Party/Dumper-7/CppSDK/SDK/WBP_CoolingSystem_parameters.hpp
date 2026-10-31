@@ -14,6 +14,24 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_CoolingSystem.WBP_CoolingSystem_C.Progress
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CoolingSystem_C_Progress final
+{
+public:
+	double                                        Percentage;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CoolingSystem_C_Progress;
+
+// Function WBP_CoolingSystem.WBP_CoolingSystem_C.HideAllWidgetsButOne
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CoolingSystem_C_HideAllWidgetsButOne final
+{
+public:
+	class UWidget*                                WidgetToShow;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CoolingSystem_C_HideAllWidgetsButOne;
+
 // Function WBP_CoolingSystem.WBP_CoolingSystem_C.ExecuteUbergraph_WBP_CoolingSystem
 // 0x0010 (0x0010 - 0x0000)
 struct WBP_CoolingSystem_C_ExecuteUbergraph_WBP_CoolingSystem final
@@ -23,22 +41,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        K2Node_CustomEvent_Percentage;                     // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function WBP_CoolingSystem.WBP_CoolingSystem_C.HideAllWidgetsButOne
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CoolingSystem_C_HideAllWidgetsButOne final
-{
-public:
-	class UWidget*                                WidgetToShow;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WBP_CoolingSystem.WBP_CoolingSystem_C.Progress
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CoolingSystem_C_Progress final
-{
-public:
-	double                                        Percentage_0;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_WBP_CoolingSystem_C_ExecuteUbergraph_WBP_CoolingSystem;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

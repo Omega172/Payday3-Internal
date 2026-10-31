@@ -10,13 +10,33 @@
 
 #include "Basic.hpp"
 
+#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "AkAudio_structs.hpp"
-#include "CoreUObject_structs.hpp"
 
 
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
+
+// Function BP_MURK_VentReactor.BP_MURK_VentReactor_C.ReactToCloset
+// 0x0002 (0x0002 - 0x0000)
+struct BP_MURK_VentReactor_C_ReactToCloset final
+{
+public:
+	bool                                          bActorsInCloset;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_MURK_VentReactor_C_ReactToCloset;
+
+// Function BP_MURK_VentReactor.BP_MURK_VentReactor_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_MURK_VentReactor_C_OnStateChanged final
+{
+public:
+	bool                                          bStateToChangeTo_OnStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_MURK_VentReactor_C_OnStateChanged;
 
 // Function BP_MURK_VentReactor.BP_MURK_VentReactor_C.ExecuteUbergraph_BP_MURK_VentReactor
 // 0x0160 (0x0160 - 0x0000)
@@ -48,24 +68,7 @@ public:
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x0150(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ABP_DecorativeSmokeGrenade_C*           CallFunc_FinishSpawningActor_ReturnValue;          // 0x0158(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_MURK_VentReactor.BP_MURK_VentReactor_C.OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_MURK_VentReactor_C_OnStateChanged final
-{
-public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_MURK_VentReactor.BP_MURK_VentReactor_C.ReactToCloset
-// 0x0002 (0x0002 - 0x0000)
-struct BP_MURK_VentReactor_C_ReactToCloset final
-{
-public:
-	bool                                          bActorsInCloset;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_MURK_VentReactor_C_ExecuteUbergraph_BP_MURK_VentReactor;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

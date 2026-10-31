@@ -16,6 +16,71 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_PolicePCScreens.WBP_PolicePCScreens_C.UpdateUnlockDisplayText
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_PolicePCScreens_C_UpdateUnlockDisplayText final
+{
+public:
+	struct FSBZHackableDisplayText                NewDisplayText_UpdateUnlockDisplayText;            // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_PolicePCScreens_C_UpdateUnlockDisplayText;
+
+// Function WBP_PolicePCScreens.WBP_PolicePCScreens_C.UpdateSuccessText
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PolicePCScreens_C_UpdateSuccessText final
+{
+public:
+	class FText                                   InText_UpdateSuccessText;                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_PolicePCScreens_C_UpdateSuccessText;
+
+// Function WBP_PolicePCScreens.WBP_PolicePCScreens_C.updateKeypadPossibleCodes
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PolicePCScreens_C_updateKeypadPossibleCodes final
+{
+public:
+	TArray<int32>                                 codes_updateKeypadPossibleCodes;                   // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_PolicePCScreens_C_updateKeypadPossibleCodes;
+
+// Function WBP_PolicePCScreens.WBP_PolicePCScreens_C.updateInformation
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_PolicePCScreens_C_updateInformation final
+{
+public:
+	class FText                                   main_updateInformation;                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   secondary_updateInformation;                       // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   additional_updateInformation;                      // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_PolicePCScreens_C_updateInformation;
+
+// Function WBP_PolicePCScreens.WBP_PolicePCScreens_C.updateHackingTimerProcessName
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_PolicePCScreens_C_updateHackingTimerProcessName final
+{
+public:
+	class FText                                   InText_updateHackingTimerProcessName;              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_PolicePCScreens_C_updateHackingTimerProcessName;
+
+// Function WBP_PolicePCScreens.WBP_PolicePCScreens_C.updateHackingProgress
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_PolicePCScreens_C_updateHackingProgress final
+{
+public:
+	int32                                         progress_updateHackingProgress;                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_PolicePCScreens_C_updateHackingProgress;
+
+// Function WBP_PolicePCScreens.WBP_PolicePCScreens_C.UpdateEmailDisplayText
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_PolicePCScreens_C_UpdateEmailDisplayText final
+{
+public:
+	struct FSBZHackableDisplayText                DisplayText_UpdateEmailDisplayText;                // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_PolicePCScreens_C_UpdateEmailDisplayText;
+
 // Function WBP_PolicePCScreens.WBP_PolicePCScreens_C.ExecuteUbergraph_WBP_PolicePCScreens
 // 0x0118 (0x0118 - 0x0000)
 struct WBP_PolicePCScreens_C_ExecuteUbergraph_WBP_PolicePCScreens final
@@ -38,64 +103,7 @@ public:
 	class FText                                   K2Node_Event_additional;                           // 0x0100(0x0010)()
 	float                                         CallFunc_SetPercent_InPercent_ImplicitCast;        // 0x0110(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function WBP_PolicePCScreens.WBP_PolicePCScreens_C.UpdateEmailDisplayText
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_PolicePCScreens_C_UpdateEmailDisplayText final
-{
-public:
-	struct FSBZHackableDisplayText                DisplayText;                                       // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-
-// Function WBP_PolicePCScreens.WBP_PolicePCScreens_C.updateHackingProgress
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_PolicePCScreens_C_updateHackingProgress final
-{
-public:
-	int32                                         progress;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WBP_PolicePCScreens.WBP_PolicePCScreens_C.updateHackingTimerProcessName
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PolicePCScreens_C_updateHackingTimerProcessName final
-{
-public:
-	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-
-// Function WBP_PolicePCScreens.WBP_PolicePCScreens_C.updateInformation
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_PolicePCScreens_C_updateInformation final
-{
-public:
-	class FText                                   main;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class FText                                   secondary;                                         // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
-	class FText                                   additional;                                        // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-
-// Function WBP_PolicePCScreens.WBP_PolicePCScreens_C.updateKeypadPossibleCodes
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PolicePCScreens_C_updateKeypadPossibleCodes final
-{
-public:
-	TArray<int32>                                 codes;                                             // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-
-// Function WBP_PolicePCScreens.WBP_PolicePCScreens_C.UpdateSuccessText
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_PolicePCScreens_C_UpdateSuccessText final
-{
-public:
-	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-
-// Function WBP_PolicePCScreens.WBP_PolicePCScreens_C.UpdateUnlockDisplayText
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_PolicePCScreens_C_UpdateUnlockDisplayText final
-{
-public:
-	struct FSBZHackableDisplayText                NewDisplayText;                                    // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
+DUMPER7_ASSERTS_WBP_PolicePCScreens_C_ExecuteUbergraph_WBP_PolicePCScreens;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

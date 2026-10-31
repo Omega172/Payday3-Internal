@@ -40,15 +40,15 @@ public:
 	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup_Drone27_ExecuteUbergraph_G_Box_Navlinks_RefProperty; // 0x0450(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__G_CargoDock_Navlinks_SBZFilteredTriggerVolume2_K2Node_ActorBoundEvent_8_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_CargoDock_Navlinks_SBZFilteredTriggerVolume3_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_CargoDock_Navlinks_SBZFilteredTriggerVolume4_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_CargoDock_Navlinks_SBZFilteredTriggerVolume5_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_CargoDock_Navlinks_SBZFilteredTriggerVolume6_K2Node_ActorBoundEvent_3_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_CargoDock_Navlinks_SBZFilteredTriggerVolume7_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_CargoDock_Navlinks_SBZFilteredTriggerVolume8_K2Node_ActorBoundEvent_0_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_CargoDock_Navlinks_SBZFilteredTriggerVolume_1_K2Node_ActorBoundEvent_10_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
 	void ExecuteUbergraph_G_Box_Navlinks(int32 EntryPoint);
+	void BndEvt__G_CargoDock_Navlinks_SBZFilteredTriggerVolume_1_K2Node_ActorBoundEvent_10_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_CargoDock_Navlinks_SBZFilteredTriggerVolume8_K2Node_ActorBoundEvent_0_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_CargoDock_Navlinks_SBZFilteredTriggerVolume7_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_CargoDock_Navlinks_SBZFilteredTriggerVolume6_K2Node_ActorBoundEvent_3_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_CargoDock_Navlinks_SBZFilteredTriggerVolume5_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_CargoDock_Navlinks_SBZFilteredTriggerVolume4_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_CargoDock_Navlinks_SBZFilteredTriggerVolume3_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_CargoDock_Navlinks_SBZFilteredTriggerVolume2_K2Node_ActorBoundEvent_8_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
 
 public:
 	static class UClass* StaticClass()
@@ -64,5 +64,6 @@ public:
 		return GetDefaultObjImpl<AG_Box_Navlinks_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_Box_Navlinks_C;
 
 SDK_NAMESPACE_END

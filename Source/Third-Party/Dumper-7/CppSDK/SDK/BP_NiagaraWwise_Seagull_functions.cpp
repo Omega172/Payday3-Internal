@@ -16,37 +16,21 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_NiagaraWwise_Seagull.BP_NiagaraWwise_Seagull_C.ExecuteUbergraph_BP_NiagaraWwise_Seagull
-// (Final, UbergraphFunction)
+// Function BP_NiagaraWwise_Seagull.BP_NiagaraWwise_Seagull_C.ReceiveEndPlay
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EEndPlayReason                          EndPlayReason_ReceiveEndPlay                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_NiagaraWwise_Seagull_C::ExecuteUbergraph_BP_NiagaraWwise_Seagull(int32 EntryPoint)
+void ABP_NiagaraWwise_Seagull_C::ReceiveEndPlay(EEndPlayReason EndPlayReason_ReceiveEndPlay)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveEndPlay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NiagaraWwise_Seagull_C", "ExecuteUbergraph_BP_NiagaraWwise_Seagull");
+	Params::BP_NiagaraWwise_Seagull_C_ReceiveEndPlay Parms{};
 
-	Params::BP_NiagaraWwise_Seagull_C_ExecuteUbergraph_BP_NiagaraWwise_Seagull Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.EndPlayReason_ReceiveEndPlay = EndPlayReason_ReceiveEndPlay;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_NiagaraWwise_Seagull.BP_NiagaraWwise_Seagull_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_NiagaraWwise_Seagull_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NiagaraWwise_Seagull_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -55,30 +39,38 @@ void ABP_NiagaraWwise_Seagull_C::ReceiveBeginPlay()
 
 void ABP_NiagaraWwise_Seagull_C::ReceiveDestroyed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NiagaraWwise_Seagull_C", "ReceiveDestroyed");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveDestroyed", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_NiagaraWwise_Seagull.BP_NiagaraWwise_Seagull_C.ReceiveEndPlay
+// Function BP_NiagaraWwise_Seagull.BP_NiagaraWwise_Seagull_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
-// Parameters:
-// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_NiagaraWwise_Seagull_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
+void ABP_NiagaraWwise_Seagull_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NiagaraWwise_Seagull_C", "ReceiveEndPlay");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_NiagaraWwise_Seagull_C_ReceiveEndPlay Parms{};
 
-	Parms.EndPlayReason = EndPlayReason;
+// Function BP_NiagaraWwise_Seagull.BP_NiagaraWwise_Seagull_C.ExecuteUbergraph_BP_NiagaraWwise_Seagull
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_NiagaraWwise_Seagull_C::ExecuteUbergraph_BP_NiagaraWwise_Seagull(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_NiagaraWwise_Seagull_C", "ExecuteUbergraph_BP_NiagaraWwise_Seagull", FuncInfo);
+
+	Params::BP_NiagaraWwise_Seagull_C_ExecuteUbergraph_BP_NiagaraWwise_Seagull Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UBP_DamageType_OVK_HET5AOE_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_DamageType_OVK_HET5AOE_C;
 
 SDK_NAMESPACE_END

@@ -16,167 +16,181 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_crane_K2Node_ComponentBoundEvent_10_onMaxStateAlreadyReached__DelegateSignature
-// (BlueprintEvent)
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.setVisibility
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    visible                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_STO_WirlessCraneController_01_C::BndEvt__BP_STO_WirlessCraneController_01_crane_K2Node_ComponentBoundEvent_10_onMaxStateAlreadyReached__DelegateSignature()
+void ABP_STO_WirlessCraneController_01_C::setVisibility(bool visible)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setVisibility", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_WirlessCraneController_01_C", "BndEvt__BP_STO_WirlessCraneController_01_crane_K2Node_ComponentBoundEvent_10_onMaxStateAlreadyReached__DelegateSignature");
+	Params::BP_STO_WirlessCraneController_01_C_setVisibility Parms{};
+
+	Parms.visible = visible;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.setMarker
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class USBZMarkerDataAsset*        MarkerDataAsset                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_STO_WirlessCraneController_01_C::setMarker(const class USBZMarkerDataAsset* MarkerDataAsset)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setMarker", FnName));
+
+	Params::BP_STO_WirlessCraneController_01_C_setMarker Parms{};
+
+	Parms.MarkerDataAsset = MarkerDataAsset;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.setInteractable
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bEnabled                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_STO_WirlessCraneController_01_C::setInteractable(bool bEnabled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setInteractable", FnName));
+
+	Params::BP_STO_WirlessCraneController_01_C_setInteractable Parms{};
+
+	Parms.bEnabled = bEnabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_STO_WirlessCraneController_01_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_crane_K2Node_ComponentBoundEvent_3_SBZTimerDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.onSabotagedBP
+// (BlueprintAuthorityOnly, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_STO_WirlessCraneController_01_C::BndEvt__BP_STO_WirlessCraneController_01_crane_K2Node_ComponentBoundEvent_3_SBZTimerDelegate__DelegateSignature()
+void ABP_STO_WirlessCraneController_01_C::onSabotagedBP(bool bSabotaged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"onSabotagedBP", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_WirlessCraneController_01_C", "BndEvt__BP_STO_WirlessCraneController_01_crane_K2Node_ComponentBoundEvent_3_SBZTimerDelegate__DelegateSignature");
+	Params::BP_STO_WirlessCraneController_01_C_onSabotagedBP Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.bSabotaged = bSabotaged;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_InitialSBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.GetMarkerText
+// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FText                             ReturnValue_GetMarkerText                              (Parm, OutParm, ReturnParm)
+
+class FText ABP_STO_WirlessCraneController_01_C::GetMarkerText()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetMarkerText", FnName));
+
+	Params::BP_STO_WirlessCraneController_01_C_GetMarkerText Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.ExecuteUbergraph_BP_STO_WirlessCraneController_01
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_STO_WirlessCraneController_01_C::ExecuteUbergraph_BP_STO_WirlessCraneController_01(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_STO_WirlessCraneController_01_C", "ExecuteUbergraph_BP_STO_WirlessCraneController_01", FuncInfo);
+
+	Params::BP_STO_WirlessCraneController_01_C_ExecuteUbergraph_BP_STO_WirlessCraneController_01 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BP_StateChanged
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZSabotagePointState                  OldState_BP_StateChanged                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZSabotagePointState                  NewState_BP_StateChanged                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_BP_StateChanged                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_STO_WirlessCraneController_01_C::BP_StateChanged(ESBZSabotagePointState OldState_BP_StateChanged, ESBZSabotagePointState NewState_BP_StateChanged, bool bDoCosmetics_BP_StateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_StateChanged", FnName));
+
+	Params::BP_STO_WirlessCraneController_01_C_BP_StateChanged Parms{};
+
+	Parms.OldState_BP_StateChanged = OldState_BP_StateChanged;
+	Parms.NewState_BP_StateChanged = NewState_BP_StateChanged;
+	Parms.bDoCosmetics_BP_StateChanged = bDoCosmetics_BP_StateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_7_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// const class USBZBaseInteractableComponent*InteractableComponent                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_STO_WirlessCraneController_01_C::BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_7_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_7_SBZOnInteractableStateChangedDelegate__DelegateSignature", FnName));
+
+	Params::BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_7_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
+
+	Parms.InteractableComponent = InteractableComponent;
+	Parms.bInNewState = bInNewState;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_STO_WirlessCraneController_01_C::BndEvt__BP_STO_WirlessCraneController_01_InitialSBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_STO_WirlessCraneController_01_C::BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_WirlessCraneController_01_C", "BndEvt__BP_STO_WirlessCraneController_01_InitialSBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_InitialSBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_STO_WirlessCraneController_01_C::BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_WirlessCraneController_01_C", "BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_STO_WirlessCraneController_01_C::BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_WirlessCraneController_01_C", "BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_9_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_STO_WirlessCraneController_01_C::BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_9_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_WirlessCraneController_01_C", "BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_9_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_9_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_isPlacedSBZBinaryState_K2Node_ComponentBoundEvent_8_SBZBinaryStateChangedSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// bool                                    bState                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_STO_WirlessCraneController_01_C::BndEvt__BP_STO_WirlessCraneController_01_isPlacedSBZBinaryState_K2Node_ComponentBoundEvent_8_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_WirlessCraneController_01_C", "BndEvt__BP_STO_WirlessCraneController_01_isPlacedSBZBinaryState_K2Node_ComponentBoundEvent_8_SBZBinaryStateChangedSignature__DelegateSignature");
-
-	Params::BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_isPlacedSBZBinaryState_K2Node_ComponentBoundEvent_8_SBZBinaryStateChangedSignature__DelegateSignature Parms{};
-
-	Parms.bState = bState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_STO_WirlessCraneController_01_C::BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_WirlessCraneController_01_C", "BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
+	Params::BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature Parms{};
 
 	Parms.Interactable = Interactable;
 	Parms.Interactor = Interactor;
@@ -195,10 +209,8 @@ void ABP_STO_WirlessCraneController_01_C::BndEvt__BP_STO_WirlessCraneController_
 
 void ABP_STO_WirlessCraneController_01_C::BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_WirlessCraneController_01_C", "BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature", FnName));
 
 	Params::BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature Parms{};
 
@@ -210,21 +222,19 @@ void ABP_STO_WirlessCraneController_01_C::BndEvt__BP_STO_WirlessCraneController_
 }
 
 
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_STO_WirlessCraneController_01_C::BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_STO_WirlessCraneController_01_C::BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_WirlessCraneController_01_C", "BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature Parms{};
+	Params::BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
 
 	Parms.Interactable = Interactable;
 	Parms.Interactor = Interactor;
@@ -234,183 +244,135 @@ void ABP_STO_WirlessCraneController_01_C::BndEvt__BP_STO_WirlessCraneController_
 }
 
 
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_7_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_isPlacedSBZBinaryState_K2Node_ComponentBoundEvent_8_SBZBinaryStateChangedSignature__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// const class USBZBaseInteractableComponent*InteractableComponent_0                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_STO_WirlessCraneController_01_C::BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_7_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent_0, bool bInNewState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_WirlessCraneController_01_C", "BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_7_SBZOnInteractableStateChangedDelegate__DelegateSignature");
-
-	Params::BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_7_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.InteractableComponent_0 = InteractableComponent_0;
-	Parms.bInNewState = bInNewState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BP_StateChanged
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
-// Parameters:
-// ESBZSabotagePointState                  OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZSabotagePointState                  NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bState                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_STO_WirlessCraneController_01_C::BP_StateChanged(ESBZSabotagePointState OldState, ESBZSabotagePointState NewState, bool bDoCosmetics)
+void ABP_STO_WirlessCraneController_01_C::BndEvt__BP_STO_WirlessCraneController_01_isPlacedSBZBinaryState_K2Node_ComponentBoundEvent_8_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_STO_WirlessCraneController_01_isPlacedSBZBinaryState_K2Node_ComponentBoundEvent_8_SBZBinaryStateChangedSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_WirlessCraneController_01_C", "BP_StateChanged");
+	Params::BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_isPlacedSBZBinaryState_K2Node_ComponentBoundEvent_8_SBZBinaryStateChangedSignature__DelegateSignature Parms{};
 
-	Params::BP_STO_WirlessCraneController_01_C_BP_StateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
+	Parms.bState = bState;
 	Parms.bDoCosmetics = bDoCosmetics;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.ExecuteUbergraph_BP_STO_WirlessCraneController_01
-// (Final, UbergraphFunction)
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_9_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_STO_WirlessCraneController_01_C::ExecuteUbergraph_BP_STO_WirlessCraneController_01(int32 EntryPoint)
+void ABP_STO_WirlessCraneController_01_C::BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_9_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_9_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_WirlessCraneController_01_C", "ExecuteUbergraph_BP_STO_WirlessCraneController_01");
+	Params::BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_9_SBZOnInteraction__DelegateSignature Parms{};
 
-	Params::BP_STO_WirlessCraneController_01_C_ExecuteUbergraph_BP_STO_WirlessCraneController_01 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.GetMarkerText
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-class FText ABP_STO_WirlessCraneController_01_C::GetMarkerText()
+void ABP_STO_WirlessCraneController_01_C::BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_WirlessCraneController_01_C", "GetMarkerText");
+	Params::BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature Parms{};
 
-	Params::BP_STO_WirlessCraneController_01_C_GetMarkerText Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.onSabotagedBP
-// (BlueprintAuthorityOnly, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_STO_WirlessCraneController_01_C::onSabotagedBP(bool bSabotaged)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_WirlessCraneController_01_C", "onSabotagedBP");
-
-	Params::BP_STO_WirlessCraneController_01_C_onSabotagedBP Parms{};
-
-	Parms.bSabotaged = bSabotaged;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_STO_WirlessCraneController_01_C::ReceiveBeginPlay()
+void ABP_STO_WirlessCraneController_01_C::BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_WirlessCraneController_01_C", "ReceiveBeginPlay");
+	Params::BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_InitialSBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_STO_WirlessCraneController_01_C::BndEvt__BP_STO_WirlessCraneController_01_InitialSBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_STO_WirlessCraneController_01_InitialSBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_STO_WirlessCraneController_01_C_BndEvt__BP_STO_WirlessCraneController_01_InitialSBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_crane_K2Node_ComponentBoundEvent_3_SBZTimerDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+
+void ABP_STO_WirlessCraneController_01_C::BndEvt__BP_STO_WirlessCraneController_01_crane_K2Node_ComponentBoundEvent_3_SBZTimerDelegate__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_STO_WirlessCraneController_01_crane_K2Node_ComponentBoundEvent_3_SBZTimerDelegate__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.setInteractable
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bEnabled                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.BndEvt__BP_STO_WirlessCraneController_01_crane_K2Node_ComponentBoundEvent_10_onMaxStateAlreadyReached__DelegateSignature
+// (BlueprintEvent)
 
-void ABP_STO_WirlessCraneController_01_C::setInteractable(bool bEnabled)
+void ABP_STO_WirlessCraneController_01_C::BndEvt__BP_STO_WirlessCraneController_01_crane_K2Node_ComponentBoundEvent_10_onMaxStateAlreadyReached__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_STO_WirlessCraneController_01_crane_K2Node_ComponentBoundEvent_10_onMaxStateAlreadyReached__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_WirlessCraneController_01_C", "setInteractable");
-
-	Params::BP_STO_WirlessCraneController_01_C_setInteractable Parms{};
-
-	Parms.bEnabled = bEnabled;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.setMarker
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class USBZMarkerDataAsset*        MarkerDataAsset                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_STO_WirlessCraneController_01_C::setMarker(const class USBZMarkerDataAsset* MarkerDataAsset)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_WirlessCraneController_01_C", "setMarker");
-
-	Params::BP_STO_WirlessCraneController_01_C_setMarker Parms{};
-
-	Parms.MarkerDataAsset = MarkerDataAsset;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_STO_WirlessCraneController_01.BP_STO_WirlessCraneController_01_C.setVisibility
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    visible                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_STO_WirlessCraneController_01_C::setVisibility(bool visible)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_WirlessCraneController_01_C", "setVisibility");
-
-	Params::BP_STO_WirlessCraneController_01_C_setVisibility Parms{};
-
-	Parms.visible = visible;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

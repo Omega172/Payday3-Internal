@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABPL_NeonLarge_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_NeonLarge_C;
 
 SDK_NAMESPACE_END

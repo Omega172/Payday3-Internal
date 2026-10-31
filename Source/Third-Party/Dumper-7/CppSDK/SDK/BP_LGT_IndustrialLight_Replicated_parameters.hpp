@@ -16,15 +16,27 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_LGT_IndustrialLight_Replicated.BP_LGT_IndustrialLight_Replicated_C.BndEvt__BPL_Red_WallLampIndustrial_Bulb_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
-// 0x0068 (0x0068 - 0x0000)
-struct BP_LGT_IndustrialLight_Replicated_C_BndEvt__BPL_Red_WallLampIndustrial_Bulb_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature final
+// Function BP_LGT_IndustrialLight_Replicated.BP_LGT_IndustrialLight_Replicated_C.UserConstructionScript
+// 0x0020 (0x0020 - 0x0000)
+struct BP_LGT_IndustrialLight_Replicated_C_UserConstructionScript final
 {
 public:
-	ESBZCosmeticDestructionType                   Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZCosmeticDestructionContext         HitContext;                                        // 0x0008(0x0060)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<float>                                 K2Node_MakeArray_Array;                            // 0x0008(0x0010)(ConstParm, ReferenceParm)
+	float                                         K2Node_MakeArray__0__ImplicitCast;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetIntensity_NewIntensity_ImplicitCast;   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_LGT_IndustrialLight_Replicated_C_UserConstructionScript;
+
+// Function BP_LGT_IndustrialLight_Replicated.BP_LGT_IndustrialLight_Replicated_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_LGT_IndustrialLight_Replicated_C_OnStateChanged final
+{
+public:
+	bool                                          bStateToChangeTo_OnStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LGT_IndustrialLight_Replicated_C_OnStateChanged;
 
 // Function BP_LGT_IndustrialLight_Replicated.BP_LGT_IndustrialLight_Replicated_C.ExecuteUbergraph_BP_LGT_IndustrialLight_Replicated
 // 0x0090 (0x0090 - 0x0000)
@@ -45,26 +57,18 @@ public:
 	float                                         CallFunc_SetCustomPrimitiveDataFloat_Value_ImplicitCast_1; // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetIntensity_NewIntensity_ImplicitCast;   // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_LGT_IndustrialLight_Replicated_C_ExecuteUbergraph_BP_LGT_IndustrialLight_Replicated;
 
-// Function BP_LGT_IndustrialLight_Replicated.BP_LGT_IndustrialLight_Replicated_C.OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_LGT_IndustrialLight_Replicated_C_OnStateChanged final
+// Function BP_LGT_IndustrialLight_Replicated.BP_LGT_IndustrialLight_Replicated_C.BndEvt__BPL_Red_WallLampIndustrial_Bulb_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
+// 0x0068 (0x0068 - 0x0000)
+struct BP_LGT_IndustrialLight_Replicated_C_BndEvt__BPL_Red_WallLampIndustrial_Bulb_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature final
 {
 public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZCosmeticDestructionType                   Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZCosmeticDestructionContext         HitContext;                                        // 0x0008(0x0060)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-
-// Function BP_LGT_IndustrialLight_Replicated.BP_LGT_IndustrialLight_Replicated_C.UserConstructionScript
-// 0x0020 (0x0020 - 0x0000)
-struct BP_LGT_IndustrialLight_Replicated_C_UserConstructionScript final
-{
-public:
-	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<float>                                 K2Node_MakeArray_Array;                            // 0x0008(0x0010)(ConstParm, ReferenceParm)
-	float                                         K2Node_MakeArray__0__ImplicitCast;                 // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetIntensity_NewIntensity_ImplicitCast;   // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_LGT_IndustrialLight_Replicated_C_BndEvt__BPL_Red_WallLampIndustrial_Bulb_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

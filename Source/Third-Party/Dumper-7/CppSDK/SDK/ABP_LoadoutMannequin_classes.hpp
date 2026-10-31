@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // AnimBlueprintGeneratedClass ABP_LoadoutMannequin.ABP_LoadoutMannequin_C
-// 0x0000 (0x1300 - 0x1300)
+// 0x0000 (0x1610 - 0x1610)
 class UABP_LoadoutMannequin_C final : public UABP_PlayerMenu_C
 {
 public:
@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UABP_LoadoutMannequin_C>();
 	}
 };
+DUMPER7_ASSERTS_UABP_LoadoutMannequin_C;
 
 SDK_NAMESPACE_END

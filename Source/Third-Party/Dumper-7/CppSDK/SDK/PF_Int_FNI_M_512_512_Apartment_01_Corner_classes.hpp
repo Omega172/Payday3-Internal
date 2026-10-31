@@ -55,5 +55,6 @@ public:
 		return GetDefaultObjImpl<APF_Int_FNI_M_512_512_Apartment_01_Corner_C>();
 	}
 };
+DUMPER7_ASSERTS_APF_Int_FNI_M_512_512_Apartment_01_Corner_C;
 
 SDK_NAMESPACE_END

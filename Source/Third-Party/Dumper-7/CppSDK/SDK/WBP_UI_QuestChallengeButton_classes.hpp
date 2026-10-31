@@ -12,10 +12,10 @@
 
 #include "UMG_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "E_Contracts_AssignmentStatus_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Slate_structs.hpp"
 #include "Starbreeze_classes.hpp"
-#include "E_Contracts_AssignmentStatus_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -71,29 +71,29 @@ public:
 	bool                                          ContractActive;                                    // 0x05C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
-	void UpdateVisualsBasedStatus(const struct FSBZUIQuestChallengeData& InChallengeData);
-	void UpdateRewardIconDimensions(class UPaperSprite* Sprite);
-	void SetWidgetSize();
-	void SetSharedProgression();
-	void SetRewardValueVisibility(int32 InItemQuantity);
-	void SetRewardsSectionVisible(bool RewardsVisible);
-	void SetRewardIcon(class UPaperSprite* InIconSprite);
-	void SetProgressText();
-	void SetProgressMinMax(int32 InMaxValueToUse, int32 InMinValueToUse);
-	void SetProgressBarPercentage(int32 Progress, int32 TotalProgress);
-	void SetItemRewardInfo(class UPaperSprite* InIconSprite, int32 InItemQuantity);
-	void SetInfamyRewardInfo(int32 InInfamyRewardPoints);
-	void SetGoldRewardInfo(int32 InQuantity);
-	void SetCreditsRewardInfo(int32 InQuantity);
-	void SetChallengeDescription(const struct FSBZChallengeData& Challenge);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnLoaded_A75A19A9458CB2A30048B3A680327C38(class UObject* Loaded);
-	void OnChallengeDataInititalized(const struct FSBZUIQuestChallengeData& InQuestChallengeData_OnChallengeDataInititalized);
-	void IsInfamyReward(int32 InInfamyRewardPoints, bool* OutIsHasInfamyRewardPoints);
-	void ExecuteUbergraph_WBP_UI_QuestChallengeButton(int32 EntryPoint);
-	void DebugPrint(bool DebugPrints);
-	void ConvertProgressMinMaxToMeters(int32 InMaxValueToUse, int32 InMinValueToUse);
 	void Construct();
+	void ConvertProgressMinMaxToMeters(int32 InMaxValueToUse, int32 InMinValueToUse);
+	void DebugPrint(bool DebugPrints);
+	void ExecuteUbergraph_WBP_UI_QuestChallengeButton(int32 EntryPoint);
+	void IsInfamyReward(int32 InInfamyRewardPoints, bool* OutIsHasInfamyRewardPoints);
+	void OnChallengeDataInititalized(const struct FSBZUIQuestChallengeData& InQuestChallengeData);
+	void OnLoaded_A75A19A9458CB2A30048B3A680327C38(class UObject* Loaded);
+	void PreConstruct(bool IsDesignTime);
+	void SetChallengeDescription(const struct FSBZChallengeData& Challenge);
+	void SetCreditsRewardInfo(int32 InQuantity);
+	void SetGoldRewardInfo(int32 InQuantity);
+	void SetInfamyRewardInfo(int32 InInfamyRewardPoints);
+	void SetItemRewardInfo(class UPaperSprite* InIconSprite, int32 InItemQuantity);
+	void SetProgressBarPercentage(int32 Progress, int32 TotalProgress);
+	void SetProgressMinMax(int32 InMaxValueToUse, int32 InMinValueToUse);
+	void SetProgressText();
+	void SetRewardIcon(class UPaperSprite* InIconSprite);
+	void SetRewardsSectionVisible(bool RewardsVisible);
+	void SetRewardValueVisibility(int32 InItemQuantity);
+	void SetSharedProgression();
+	void SetWidgetSize();
+	void UpdateRewardIconDimensions(class UPaperSprite* Sprite);
+	void UpdateVisualsBasedStatus(const struct FSBZUIQuestChallengeData& InChallengeData);
 
 public:
 	static class UClass* StaticClass()

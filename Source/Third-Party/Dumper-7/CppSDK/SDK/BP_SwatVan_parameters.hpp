@@ -14,6 +14,16 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_SwatVan.BP_SwatVan_C.SWAT On Spline End Reached
+// 0x0010 (0x0010 - 0x0000)
+struct BP_SwatVan_C_SWAT_On_Spline_End_Reached final
+{
+public:
+	class ASBZWheeledVehicle*                     Vehicle;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZSpline*                             Spline;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SwatVan_C_SWAT_On_Spline_End_Reached;
+
 // Function BP_SwatVan.BP_SwatVan_C.ExecuteUbergraph_BP_SwatVan
 // 0x0030 (0x0030 - 0x0000)
 struct BP_SwatVan_C_ExecuteUbergraph_BP_SwatVan final
@@ -25,15 +35,7 @@ public:
 	class ASBZSpline*                             K2Node_CustomEvent_Spline;                         // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class ASBZWheeledVehicle* Vehicle, class ASBZSpline* Spline)> K2Node_CreateDelegate_OutputDelegate; // 0x0018(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_SwatVan.BP_SwatVan_C.SWAT On Spline End Reached
-// 0x0010 (0x0010 - 0x0000)
-struct BP_SwatVan_C_SWAT_On_Spline_End_Reached final
-{
-public:
-	class ASBZWheeledVehicle*                     Vehicle;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZSpline*                             Spline;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_SwatVan_C_ExecuteUbergraph_BP_SwatVan;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

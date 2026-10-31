@@ -16,42 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_Contracts_AssignmentStatusWidget.WBP_Contracts_AssignmentStatusWidget_C.SetState
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// E_Contracts_AssignmentStatus            State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Contracts_AssignmentStatusWidget_C::SetState(E_Contracts_AssignmentStatus State)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetState", FnName));
-
-	Params::WBP_Contracts_AssignmentStatusWidget_C_SetState Parms{};
-
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Contracts_AssignmentStatusWidget.WBP_Contracts_AssignmentStatusWidget_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Contracts_AssignmentStatusWidget_C::PreConstruct(bool IsDesignTime_PreConstruct)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_Contracts_AssignmentStatusWidget_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_Contracts_AssignmentStatusWidget.WBP_Contracts_AssignmentStatusWidget_C.ExecuteUbergraph_WBP_Contracts_AssignmentStatusWidget
 // (Final, UbergraphFunction)
 // Parameters:
@@ -65,6 +29,42 @@ void UWBP_Contracts_AssignmentStatusWidget_C::ExecuteUbergraph_WBP_Contracts_Ass
 	Params::WBP_Contracts_AssignmentStatusWidget_C_ExecuteUbergraph_WBP_Contracts_AssignmentStatusWidget Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Contracts_AssignmentStatusWidget.WBP_Contracts_AssignmentStatusWidget_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Contracts_AssignmentStatusWidget_C::PreConstruct(bool IsDesignTime)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_Contracts_AssignmentStatusWidget_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Contracts_AssignmentStatusWidget.WBP_Contracts_AssignmentStatusWidget_C.SetState
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// E_Contracts_AssignmentStatus            State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Contracts_AssignmentStatusWidget_C::SetState(E_Contracts_AssignmentStatus State)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetState", FnName));
+
+	Params::WBP_Contracts_AssignmentStatusWidget_C_SetState Parms{};
+
+	Parms.State = State;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

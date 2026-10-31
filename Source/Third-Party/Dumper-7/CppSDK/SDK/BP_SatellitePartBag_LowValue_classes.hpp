@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_SatellitePartBag_LowValue_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SatellitePartBag_LowValue_C;
 
 SDK_NAMESPACE_END

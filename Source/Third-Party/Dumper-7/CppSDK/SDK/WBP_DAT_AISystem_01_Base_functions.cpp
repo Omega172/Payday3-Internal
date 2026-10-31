@@ -16,91 +16,49 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_DAT_AISystem_01_Base.WBP_DAT_AISystem_01_Base_C.Active
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_DAT_AISystem_01_Base_C::Active()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DAT_AISystem_01_Base_C", "Active");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_DAT_AISystem_01_Base.WBP_DAT_AISystem_01_Base_C.Done
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_DAT_AISystem_01_Base_C::Done()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DAT_AISystem_01_Base_C", "Done");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_DAT_AISystem_01_Base.WBP_DAT_AISystem_01_Base_C.ExecuteUbergraph_WBP_DAT_AISystem_01_Base
-// (Final, UbergraphFunction)
+// Function WBP_DAT_AISystem_01_Base.WBP_DAT_AISystem_01_Base_C.UpdateUnlockDisplayText
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZHackableDisplayText&   NewDisplayText                                         (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_DAT_AISystem_01_Base_C::ExecuteUbergraph_WBP_DAT_AISystem_01_Base(int32 EntryPoint)
+void UWBP_DAT_AISystem_01_Base_C::UpdateUnlockDisplayText(const struct FSBZHackableDisplayText& NewDisplayText)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateUnlockDisplayText", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DAT_AISystem_01_Base_C", "ExecuteUbergraph_WBP_DAT_AISystem_01_Base");
+	Params::WBP_DAT_AISystem_01_Base_C_UpdateUnlockDisplayText Parms{};
 
-	Params::WBP_DAT_AISystem_01_Base_C_ExecuteUbergraph_WBP_DAT_AISystem_01_Base Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.NewDisplayText = std::move(NewDisplayText);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_DAT_AISystem_01_Base.WBP_DAT_AISystem_01_Base_C.Interupted
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_DAT_AISystem_01_Base.WBP_DAT_AISystem_01_Base_C.UpdateSuccessText
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_DAT_AISystem_01_Base_C::Interupted()
+void UWBP_DAT_AISystem_01_Base_C::UpdateSuccessText(const class FText& InText)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateSuccessText", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DAT_AISystem_01_Base_C", "Interupted");
+	Params::WBP_DAT_AISystem_01_Base_C_UpdateSuccessText Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.InText = std::move(InText);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_DAT_AISystem_01_Base.WBP_DAT_AISystem_01_Base_C.NotActive
+// Function WBP_DAT_AISystem_01_Base.WBP_DAT_AISystem_01_Base_C.Unlocked
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_DAT_AISystem_01_Base_C::NotActive()
+void UWBP_DAT_AISystem_01_Base_C::Unlocked()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DAT_AISystem_01_Base_C", "NotActive");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_DAT_AISystem_01_Base.WBP_DAT_AISystem_01_Base_C.Progressing
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_DAT_AISystem_01_Base_C::Progressing()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DAT_AISystem_01_Base_C", "Progressing");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Unlocked", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -113,10 +71,8 @@ void UWBP_DAT_AISystem_01_Base_C::Progressing()
 
 void UWBP_DAT_AISystem_01_Base_C::setProgress(int32 InputPin)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DAT_AISystem_01_Base_C", "setProgress");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setProgress", FnName));
 
 	Params::WBP_DAT_AISystem_01_Base_C_setProgress Parms{};
 
@@ -126,57 +82,81 @@ void UWBP_DAT_AISystem_01_Base_C::setProgress(int32 InputPin)
 }
 
 
-// Function WBP_DAT_AISystem_01_Base.WBP_DAT_AISystem_01_Base_C.Unlocked
+// Function WBP_DAT_AISystem_01_Base.WBP_DAT_AISystem_01_Base_C.Progressing
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_DAT_AISystem_01_Base_C::Unlocked()
+void UWBP_DAT_AISystem_01_Base_C::Progressing()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DAT_AISystem_01_Base_C", "Unlocked");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Progressing", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_DAT_AISystem_01_Base.WBP_DAT_AISystem_01_Base_C.UpdateSuccessText
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
+// Function WBP_DAT_AISystem_01_Base.WBP_DAT_AISystem_01_Base_C.NotActive
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_DAT_AISystem_01_Base_C::UpdateSuccessText(const class FText& InText)
+void UWBP_DAT_AISystem_01_Base_C::NotActive()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"NotActive", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DAT_AISystem_01_Base_C", "UpdateSuccessText");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::WBP_DAT_AISystem_01_Base_C_UpdateSuccessText Parms{};
 
-	Parms.InText = std::move(InText);
+// Function WBP_DAT_AISystem_01_Base.WBP_DAT_AISystem_01_Base_C.Interupted
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_DAT_AISystem_01_Base_C::Interupted()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Interupted", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_DAT_AISystem_01_Base.WBP_DAT_AISystem_01_Base_C.ExecuteUbergraph_WBP_DAT_AISystem_01_Base
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DAT_AISystem_01_Base_C::ExecuteUbergraph_WBP_DAT_AISystem_01_Base(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_DAT_AISystem_01_Base_C", "ExecuteUbergraph_WBP_DAT_AISystem_01_Base", FuncInfo);
+
+	Params::WBP_DAT_AISystem_01_Base_C_ExecuteUbergraph_WBP_DAT_AISystem_01_Base Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_DAT_AISystem_01_Base.WBP_DAT_AISystem_01_Base_C.UpdateUnlockDisplayText
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FSBZHackableDisplayText&   NewDisplayText                                         (BlueprintVisible, BlueprintReadOnly, Parm)
+// Function WBP_DAT_AISystem_01_Base.WBP_DAT_AISystem_01_Base_C.Done
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_DAT_AISystem_01_Base_C::UpdateUnlockDisplayText(const struct FSBZHackableDisplayText& NewDisplayText)
+void UWBP_DAT_AISystem_01_Base_C::Done()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Done", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DAT_AISystem_01_Base_C", "UpdateUnlockDisplayText");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::WBP_DAT_AISystem_01_Base_C_UpdateUnlockDisplayText Parms{};
 
-	Parms.NewDisplayText = std::move(NewDisplayText);
+// Function WBP_DAT_AISystem_01_Base.WBP_DAT_AISystem_01_Base_C.Active
+// (BlueprintCallable, BlueprintEvent)
 
-	UObject::ProcessEvent(Func, &Parms);
+void UWBP_DAT_AISystem_01_Base_C::Active()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Active", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

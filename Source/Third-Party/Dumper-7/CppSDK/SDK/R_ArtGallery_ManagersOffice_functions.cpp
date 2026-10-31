@@ -16,70 +16,226 @@
 
 SDK_NAMESPACE_START
 
-// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_BP_HiddenHatch_2_K2Node_ActorBoundEvent_3_HatchOpened__DelegateSignature
-// (BlueprintEvent)
+// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.SetUmaObjectiveActive
+// (BlueprintCallable, BlueprintEvent)
 
-void AR_ArtGallery_ManagersOffice_C::BndEvt__R_ArtGallery_ManagersOffice_BP_HiddenHatch_2_K2Node_ActorBoundEvent_3_HatchOpened__DelegateSignature()
+void AR_ArtGallery_ManagersOffice_C::SetUmaObjectiveActive()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_ArtGallery_ManagersOffice_C", "BndEvt__R_ArtGallery_ManagersOffice_BP_HiddenHatch_2_K2Node_ActorBoundEvent_3_HatchOpened__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetUmaObjectiveActive", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_BP_HiddenPainting_2_K2Node_ActorBoundEvent_6_PaintingMoved__DelegateSignature
-// (BlueprintEvent)
+// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.RobberVoUSB
+// (BlueprintCallable, BlueprintEvent)
 
-void AR_ArtGallery_ManagersOffice_C::BndEvt__R_ArtGallery_ManagersOffice_BP_HiddenPainting_2_K2Node_ActorBoundEvent_6_PaintingMoved__DelegateSignature()
+void AR_ArtGallery_ManagersOffice_C::RobberVoUSB()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_ArtGallery_ManagersOffice_C", "BndEvt__R_ArtGallery_ManagersOffice_BP_HiddenPainting_2_K2Node_ActorBoundEvent_6_PaintingMoved__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RobberVoUSB", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_02_2_K2Node_ActorBoundEvent_10_SBZLootedSignature__DelegateSignature
-// (BlueprintEvent)
+// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.RemoteDestroy
+// (BlueprintCallable, BlueprintEvent)
+
+void AR_ArtGallery_ManagersOffice_C::RemoteDestroy()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RemoteDestroy", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.RemoteDeploy
+// (BlueprintCallable, BlueprintEvent)
+
+void AR_ArtGallery_ManagersOffice_C::RemoteDeploy()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RemoteDeploy", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.RemoteAlarm
+// (BlueprintCallable, BlueprintEvent)
+
+void AR_ArtGallery_ManagersOffice_C::RemoteAlarm()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RemoteAlarm", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AR_ArtGallery_ManagersOffice_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.Loop
+// (BlueprintCallable, BlueprintEvent)
+
+void AR_ArtGallery_ManagersOffice_C::Loop()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Loop", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.Int
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   Int                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AR_ArtGallery_ManagersOffice_C::BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_02_2_K2Node_ActorBoundEvent_10_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
+void AR_ArtGallery_ManagersOffice_C::Int(int32 Int)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Int", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_ArtGallery_ManagersOffice_C", "BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_02_2_K2Node_ActorBoundEvent_10_SBZLootedSignature__DelegateSignature");
+	Params::R_ArtGallery_ManagersOffice_C_Int Parms{};
 
-	Params::R_ArtGallery_ManagersOffice_C_BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_02_2_K2Node_ActorBoundEvent_10_SBZLootedSignature__DelegateSignature Parms{};
-
-	Parms.InstantLoot = InstantLoot;
-	Parms.TakenByPlayer = TakenByPlayer;
+	Parms.Int = Int;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_03_2_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature
+// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.Find_USB
+// (BlueprintCallable, BlueprintEvent)
+
+void AR_ArtGallery_ManagersOffice_C::Find_USB()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Find_USB", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.ExecuteUbergraph_R_ArtGallery_ManagersOffice
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AR_ArtGallery_ManagersOffice_C::ExecuteUbergraph_R_ArtGallery_ManagersOffice(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "R_ArtGallery_ManagersOffice_C", "ExecuteUbergraph_R_ArtGallery_ManagersOffice", FuncInfo);
+
+	Params::R_ArtGallery_ManagersOffice_C_ExecuteUbergraph_R_ArtGallery_ManagersOffice Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class AActor*                           OverlappedActor                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AR_ArtGallery_ManagersOffice_C::BndEvt__R_ArtGallery_ManagersOffice_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_ArtGallery_ManagersOffice_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature", FnName));
+
+	Params::R_ArtGallery_ManagersOffice_C_BndEvt__R_ArtGallery_ManagersOffice_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature Parms{};
+
+	Parms.OverlappedActor = OverlappedActor;
+	Parms.OtherActor = OtherActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_BP_USBDrive_2_K2Node_ActorBoundEvent_2_USB Taken__DelegateSignature
+// (BlueprintEvent)
+
+void AR_ArtGallery_ManagersOffice_C::BndEvt__R_ArtGallery_ManagersOffice_BP_USBDrive_2_K2Node_ActorBoundEvent_2_USB_Taken__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_ArtGallery_ManagersOffice_BP_USBDrive_2_K2Node_ActorBoundEvent_2_USB Taken__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_BP_Safe_2_K2Node_ActorBoundEvent_1_SBZOnMinigameDoneDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+
+void AR_ArtGallery_ManagersOffice_C::BndEvt__R_ArtGallery_ManagersOffice_BP_Safe_2_K2Node_ActorBoundEvent_1_SBZOnMinigameDoneDelegate__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_ArtGallery_ManagersOffice_BP_Safe_2_K2Node_ActorBoundEvent_1_SBZOnMinigameDoneDelegate__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_BP_QRPhone_2_K2Node_ActorBoundEvent_4_OnInteractedComplete__DelegateSignature
+// (BlueprintEvent)
+
+void AR_ArtGallery_ManagersOffice_C::BndEvt__R_ArtGallery_ManagersOffice_BP_QRPhone_2_K2Node_ActorBoundEvent_4_OnInteractedComplete__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_ArtGallery_ManagersOffice_BP_QRPhone_2_K2Node_ActorBoundEvent_4_OnInteractedComplete__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_BP_One_Step_Animated_Button_2_K2Node_ActorBoundEvent_5_SBZActorOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void AR_ArtGallery_ManagersOffice_C::BndEvt__R_ArtGallery_ManagersOffice_BP_One_Step_Animated_Button_2_K2Node_ActorBoundEvent_5_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_ArtGallery_ManagersOffice_BP_One_Step_Animated_Button_2_K2Node_ActorBoundEvent_5_SBZActorOnInteraction__DelegateSignature", FnName));
+
+	Params::R_ArtGallery_ManagersOffice_C_BndEvt__R_ArtGallery_ManagersOffice_BP_One_Step_Animated_Button_2_K2Node_ActorBoundEvent_5_SBZActorOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_5_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AR_ArtGallery_ManagersOffice_C::BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_03_2_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
+void AR_ArtGallery_ManagersOffice_C::BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_5_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_5_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_ArtGallery_ManagersOffice_C", "BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_03_2_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature");
-
-	Params::R_ArtGallery_ManagersOffice_C_BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_03_2_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature Parms{};
+	Params::R_ArtGallery_ManagersOffice_C_BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_5_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature Parms{};
 
 	Parms.InstantLoot = InstantLoot;
 	Parms.TakenByPlayer = TakenByPlayer;
@@ -96,10 +252,8 @@ void AR_ArtGallery_ManagersOffice_C::BndEvt__R_ArtGallery_ManagersOffice_BP_Inst
 
 void AR_ArtGallery_ManagersOffice_C::BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_04_2_K2Node_ActorBoundEvent_11_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_ArtGallery_ManagersOffice_C", "BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_04_2_K2Node_ActorBoundEvent_11_SBZLootedSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_04_2_K2Node_ActorBoundEvent_11_SBZLootedSignature__DelegateSignature", FnName));
 
 	Params::R_ArtGallery_ManagersOffice_C_BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_04_2_K2Node_ActorBoundEvent_11_SBZLootedSignature__DelegateSignature Parms{};
 
@@ -110,20 +264,18 @@ void AR_ArtGallery_ManagersOffice_C::BndEvt__R_ArtGallery_ManagersOffice_BP_Inst
 }
 
 
-// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_5_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature
+// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_03_2_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AR_ArtGallery_ManagersOffice_C::BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_5_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
+void AR_ArtGallery_ManagersOffice_C::BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_03_2_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_03_2_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_ArtGallery_ManagersOffice_C", "BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_5_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature");
-
-	Params::R_ArtGallery_ManagersOffice_C_BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_5_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature Parms{};
+	Params::R_ArtGallery_ManagersOffice_C_BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_03_2_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature Parms{};
 
 	Parms.InstantLoot = InstantLoot;
 	Parms.TakenByPlayer = TakenByPlayer;
@@ -132,239 +284,45 @@ void AR_ArtGallery_ManagersOffice_C::BndEvt__R_ArtGallery_ManagersOffice_BP_Inst
 }
 
 
-// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_BP_One_Step_Animated_Button_2_K2Node_ActorBoundEvent_5_SBZActorOnInteraction__DelegateSignature
+// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_02_2_K2Node_ActorBoundEvent_10_SBZLootedSignature__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AR_ArtGallery_ManagersOffice_C::BndEvt__R_ArtGallery_ManagersOffice_BP_One_Step_Animated_Button_2_K2Node_ActorBoundEvent_5_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
+void AR_ArtGallery_ManagersOffice_C::BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_02_2_K2Node_ActorBoundEvent_10_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_02_2_K2Node_ActorBoundEvent_10_SBZLootedSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_ArtGallery_ManagersOffice_C", "BndEvt__R_ArtGallery_ManagersOffice_BP_One_Step_Animated_Button_2_K2Node_ActorBoundEvent_5_SBZActorOnInteraction__DelegateSignature");
+	Params::R_ArtGallery_ManagersOffice_C_BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_02_2_K2Node_ActorBoundEvent_10_SBZLootedSignature__DelegateSignature Parms{};
 
-	Params::R_ArtGallery_ManagersOffice_C_BndEvt__R_ArtGallery_ManagersOffice_BP_One_Step_Animated_Button_2_K2Node_ActorBoundEvent_5_SBZActorOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
+	Parms.InstantLoot = InstantLoot;
+	Parms.TakenByPlayer = TakenByPlayer;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_BP_QRPhone_2_K2Node_ActorBoundEvent_4_OnInteractedComplete__DelegateSignature
+// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_BP_HiddenPainting_2_K2Node_ActorBoundEvent_6_PaintingMoved__DelegateSignature
 // (BlueprintEvent)
 
-void AR_ArtGallery_ManagersOffice_C::BndEvt__R_ArtGallery_ManagersOffice_BP_QRPhone_2_K2Node_ActorBoundEvent_4_OnInteractedComplete__DelegateSignature()
+void AR_ArtGallery_ManagersOffice_C::BndEvt__R_ArtGallery_ManagersOffice_BP_HiddenPainting_2_K2Node_ActorBoundEvent_6_PaintingMoved__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_ArtGallery_ManagersOffice_C", "BndEvt__R_ArtGallery_ManagersOffice_BP_QRPhone_2_K2Node_ActorBoundEvent_4_OnInteractedComplete__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_ArtGallery_ManagersOffice_BP_HiddenPainting_2_K2Node_ActorBoundEvent_6_PaintingMoved__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_BP_Safe_2_K2Node_ActorBoundEvent_1_SBZOnMinigameDoneDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-
-void AR_ArtGallery_ManagersOffice_C::BndEvt__R_ArtGallery_ManagersOffice_BP_Safe_2_K2Node_ActorBoundEvent_1_SBZOnMinigameDoneDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_ArtGallery_ManagersOffice_C", "BndEvt__R_ArtGallery_ManagersOffice_BP_Safe_2_K2Node_ActorBoundEvent_1_SBZOnMinigameDoneDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_BP_USBDrive_2_K2Node_ActorBoundEvent_2_USB Taken__DelegateSignature
+// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_BP_HiddenHatch_2_K2Node_ActorBoundEvent_3_HatchOpened__DelegateSignature
 // (BlueprintEvent)
 
-void AR_ArtGallery_ManagersOffice_C::BndEvt__R_ArtGallery_ManagersOffice_BP_USBDrive_2_K2Node_ActorBoundEvent_2_USB_Taken__DelegateSignature()
+void AR_ArtGallery_ManagersOffice_C::BndEvt__R_ArtGallery_ManagersOffice_BP_HiddenHatch_2_K2Node_ActorBoundEvent_3_HatchOpened__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_ArtGallery_ManagersOffice_C", "BndEvt__R_ArtGallery_ManagersOffice_BP_USBDrive_2_K2Node_ActorBoundEvent_2_USB Taken__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class AActor*                           OverlappedActor                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AR_ArtGallery_ManagersOffice_C::BndEvt__R_ArtGallery_ManagersOffice_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_ArtGallery_ManagersOffice_C", "BndEvt__R_ArtGallery_ManagersOffice_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature");
-
-	Params::R_ArtGallery_ManagersOffice_C_BndEvt__R_ArtGallery_ManagersOffice_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature Parms{};
-
-	Parms.OverlappedActor = OverlappedActor;
-	Parms.OtherActor = OtherActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.ExecuteUbergraph_R_ArtGallery_ManagersOffice
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AR_ArtGallery_ManagersOffice_C::ExecuteUbergraph_R_ArtGallery_ManagersOffice(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_ArtGallery_ManagersOffice_C", "ExecuteUbergraph_R_ArtGallery_ManagersOffice");
-
-	Params::R_ArtGallery_ManagersOffice_C_ExecuteUbergraph_R_ArtGallery_ManagersOffice Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.Find_USB
-// (BlueprintCallable, BlueprintEvent)
-
-void AR_ArtGallery_ManagersOffice_C::Find_USB()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_ArtGallery_ManagersOffice_C", "Find_USB");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.Int
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Int_0                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AR_ArtGallery_ManagersOffice_C::Int(int32 Int_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_ArtGallery_ManagersOffice_C", "Int");
-
-	Params::R_ArtGallery_ManagersOffice_C_Int Parms{};
-
-	Parms.Int_0 = Int_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.Loop
-// (BlueprintCallable, BlueprintEvent)
-
-void AR_ArtGallery_ManagersOffice_C::Loop()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_ArtGallery_ManagersOffice_C", "Loop");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AR_ArtGallery_ManagersOffice_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_ArtGallery_ManagersOffice_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.RemoteAlarm
-// (BlueprintCallable, BlueprintEvent)
-
-void AR_ArtGallery_ManagersOffice_C::RemoteAlarm()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_ArtGallery_ManagersOffice_C", "RemoteAlarm");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.RemoteDeploy
-// (BlueprintCallable, BlueprintEvent)
-
-void AR_ArtGallery_ManagersOffice_C::RemoteDeploy()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_ArtGallery_ManagersOffice_C", "RemoteDeploy");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.RemoteDestroy
-// (BlueprintCallable, BlueprintEvent)
-
-void AR_ArtGallery_ManagersOffice_C::RemoteDestroy()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_ArtGallery_ManagersOffice_C", "RemoteDestroy");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.RobberVoUSB
-// (BlueprintCallable, BlueprintEvent)
-
-void AR_ArtGallery_ManagersOffice_C::RobberVoUSB()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_ArtGallery_ManagersOffice_C", "RobberVoUSB");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.SetUmaObjectiveActive
-// (BlueprintCallable, BlueprintEvent)
-
-void AR_ArtGallery_ManagersOffice_C::SetUmaObjectiveActive()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_ArtGallery_ManagersOffice_C", "SetUmaObjectiveActive");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_ArtGallery_ManagersOffice_BP_HiddenHatch_2_K2Node_ActorBoundEvent_3_HatchOpened__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -16,6 +16,17 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BTS_CalculateDistanceToTarget.BTS_CalculateDistanceToTarget_C.ReceiveTickAI
+// 0x0018 (0x0018 - 0x0000)
+struct BTS_CalculateDistanceToTarget_C_ReceiveTickAI final
+{
+public:
+	class AAIController*                          OwnerController_ReceiveTickAI;                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  ControlledPawn_ReceiveTickAI;                      // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         DeltaSeconds_ReceiveTickAI;                        // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BTS_CalculateDistanceToTarget_C_ReceiveTickAI;
+
 // Function BTS_CalculateDistanceToTarget.BTS_CalculateDistanceToTarget_C.ExecuteUbergraph_BTS_CalculateDistanceToTarget
 // 0x00B8 (0x00B8 - 0x0000)
 struct BTS_CalculateDistanceToTarget_C_ExecuteUbergraph_BTS_CalculateDistanceToTarget final
@@ -41,16 +52,7 @@ public:
 	double                                        CallFunc_Distance2D_ReturnValue;                   // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetBlackboardValueAsFloat_Value_ImplicitCast; // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BTS_CalculateDistanceToTarget.BTS_CalculateDistanceToTarget_C.ReceiveTickAI
-// 0x0018 (0x0018 - 0x0000)
-struct BTS_CalculateDistanceToTarget_C_ReceiveTickAI final
-{
-public:
-	class AAIController*                          OwnerController;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  ControlledPawn;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         DeltaSeconds;                                      // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BTS_CalculateDistanceToTarget_C_ExecuteUbergraph_BTS_CalculateDistanceToTarget;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

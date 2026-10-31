@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UUTD_InformPolice_C>();
 	}
 };
+DUMPER7_ASSERTS_UUTD_InformPolice_C;
 
 SDK_NAMESPACE_END

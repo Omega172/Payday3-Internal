@@ -31,11 +31,11 @@ public:
 	class UTimelineComponent*                     Timeline_0;                                        // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_ReplicatedCollision(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void ReactToCloset(bool bActorsInCloset, bool bDoCosmetics);
-	void Timeline_0__FinishedFunc();
 	void Timeline_0__UpdateFunc();
+	void Timeline_0__FinishedFunc();
+	void ReactToCloset(bool bActorsInCloset, bool bDoCosmetics);
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_ReplicatedCollision(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -51,5 +51,6 @@ public:
 		return GetDefaultObjImpl<ABP_ReplicatedCollision_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ReplicatedCollision_C;
 
 SDK_NAMESPACE_END

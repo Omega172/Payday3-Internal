@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_AI_TaserFire.GA_AI_TaserFire_C
-// 0x0000 (0x8D10 - 0x8D10)
+// 0x0000 (0x0570 - 0x0570)
 class UGA_AI_TaserFire_C final : public USBZAIFireTaserAbility
 {
 public:
@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGA_AI_TaserFire_C>();
 	}
 };
+DUMPER7_ASSERTS_UGA_AI_TaserFire_C;
 
 SDK_NAMESPACE_END

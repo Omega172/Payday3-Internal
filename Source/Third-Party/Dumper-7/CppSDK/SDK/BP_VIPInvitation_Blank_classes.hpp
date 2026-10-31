@@ -20,9 +20,9 @@ SDK_NAMESPACE_START
 class ABP_VIPInvitation_Blank_C final : public ABP_KeycardBase_C
 {
 public:
-	class USBZSensorComponent* GetSensorComponent();
-	class USBZOutlineComponent* GetSensorOutlineComponent();
 	void UserConstructionScript();
+	class USBZOutlineComponent* GetSensorOutlineComponent();
+	class USBZSensorComponent* GetSensorComponent();
 
 public:
 	static class UClass* StaticClass()
@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABP_VIPInvitation_Blank_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_VIPInvitation_Blank_C;
 
 SDK_NAMESPACE_END

@@ -16,15 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function G_Chus_LivingWorld.G_Chus_LivingWorld_C.ActionPhaseStarted
-// (Event, Public, BlueprintEvent)
+// Function G_Chus_LivingWorld.G_Chus_LivingWorld_C.Randomize_CivsClerks
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Chus_LivingWorld_C::ActionPhaseStarted()
+void AG_Chus_LivingWorld_C::Randomize_CivsClerks()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_LivingWorld_C", "ActionPhaseStarted");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Randomize_CivsClerks", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +35,8 @@ void AG_Chus_LivingWorld_C::ActionPhaseStarted()
 
 void AG_Chus_LivingWorld_C::ExecuteUbergraph_G_Chus_LivingWorld(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_LivingWorld_C", "ExecuteUbergraph_G_Chus_LivingWorld");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_Chus_LivingWorld_C", "ExecuteUbergraph_G_Chus_LivingWorld", FuncInfo);
 
 	Params::G_Chus_LivingWorld_C_ExecuteUbergraph_G_Chus_LivingWorld Parms{};
 
@@ -50,15 +46,13 @@ void AG_Chus_LivingWorld_C::ExecuteUbergraph_G_Chus_LivingWorld(int32 EntryPoint
 }
 
 
-// Function G_Chus_LivingWorld.G_Chus_LivingWorld_C.Randomize_CivsClerks
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Chus_LivingWorld.G_Chus_LivingWorld_C.ActionPhaseStarted
+// (Event, Public, BlueprintEvent)
 
-void AG_Chus_LivingWorld_C::Randomize_CivsClerks()
+void AG_Chus_LivingWorld_C::ActionPhaseStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_LivingWorld_C", "Randomize_CivsClerks");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActionPhaseStarted", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

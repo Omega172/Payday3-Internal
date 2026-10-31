@@ -17,34 +17,71 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_ElevatorDoor_ControlPanel.BP_ElevatorDoor_ControlPanel_C.BndEvt__BP_ElevatorDoor_ControlPanel_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_ElevatorDoor_ControlPanel_C_BndEvt__BP_ElevatorDoor_ControlPanel_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
+// Function BP_ElevatorDoor_ControlPanel.BP_ElevatorDoor_ControlPanel_C.SetMarker
+// 0x0078 (0x0078 - 0x0000)
+struct BP_ElevatorDoor_ControlPanel_C_SetMarker final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable_0;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class USBZMarkerDataAsset*              MarkerDataAsset;                                   // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetRightVector_ReturnValue;               // 0x0010(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0028(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0040(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0058(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_AddLocalMarker_ReturnValue;               // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ElevatorDoor_ControlPanel_C_SetMarker;
 
-// Function BP_ElevatorDoor_ControlPanel.BP_ElevatorDoor_ControlPanel_C.BndEvt__BP_ElevatorDoor_ControlPanel_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_ElevatorDoor_ControlPanel_C_BndEvt__BP_ElevatorDoor_ControlPanel_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable_0;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_ElevatorDoor_ControlPanel.BP_ElevatorDoor_ControlPanel_C.BndEvt__BP_ElevatorDoor_ControlPanel_WaypointSBZBinaryState_K2Node_ComponentBoundEvent_2_SBZBinaryStateChangedSignature__DelegateSignature
+// Function BP_ElevatorDoor_ControlPanel.BP_ElevatorDoor_ControlPanel_C.SetInteractionEnable
 // 0x0002 (0x0002 - 0x0000)
-struct BP_ElevatorDoor_ControlPanel_C_BndEvt__BP_ElevatorDoor_ControlPanel_WaypointSBZBinaryState_K2Node_ComponentBoundEvent_2_SBZBinaryStateChangedSignature__DelegateSignature final
+struct BP_ElevatorDoor_ControlPanel_C_SetInteractionEnable final
 {
 public:
-	bool                                          bState_0;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Interaction_Enabled;                               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          waypointEnabled;                                   // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ElevatorDoor_ControlPanel_C_SetInteractionEnable;
+
+// Function BP_ElevatorDoor_ControlPanel.BP_ElevatorDoor_ControlPanel_C.PlayTurnOn
+// 0x0010 (0x0010 - 0x0000)
+struct BP_ElevatorDoor_ControlPanel_C_PlayTurnOn final
+{
+public:
+	double                                        CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ElevatorDoor_ControlPanel_C_PlayTurnOn;
+
+// Function BP_ElevatorDoor_ControlPanel.BP_ElevatorDoor_ControlPanel_C.PlayTurnOff
+// 0x0010 (0x0010 - 0x0000)
+struct BP_ElevatorDoor_ControlPanel_C_PlayTurnOff final
+{
+public:
+	double                                        CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ElevatorDoor_ControlPanel_C_PlayTurnOff;
+
+// Function BP_ElevatorDoor_ControlPanel.BP_ElevatorDoor_ControlPanel_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_ElevatorDoor_ControlPanel_C_OnStateChanged final
+{
+public:
+	bool                                          bStateToChangeTo_OnStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ElevatorDoor_ControlPanel_C_OnStateChanged;
+
+// Function BP_ElevatorDoor_ControlPanel.BP_ElevatorDoor_ControlPanel_C.GetMarkerText
+// 0x0010 (0x0010 - 0x0000)
+struct BP_ElevatorDoor_ControlPanel_C_GetMarkerText final
+{
+public:
+	class FText                                   ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
+};
+DUMPER7_ASSERTS_BP_ElevatorDoor_ControlPanel_C_GetMarkerText;
 
 // Function BP_ElevatorDoor_ControlPanel.BP_ElevatorDoor_ControlPanel_C.ExecuteUbergraph_BP_ElevatorDoor_ControlPanel
 // 0x0070 (0x0070 - 0x0000)
@@ -76,66 +113,39 @@ public:
 	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	const class USBZMarkerDataAsset*              K2Node_Select_Default;                             // 0x0068(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ElevatorDoor_ControlPanel_C_ExecuteUbergraph_BP_ElevatorDoor_ControlPanel;
 
-// Function BP_ElevatorDoor_ControlPanel.BP_ElevatorDoor_ControlPanel_C.GetMarkerText
-// 0x0010 (0x0010 - 0x0000)
-struct BP_ElevatorDoor_ControlPanel_C_GetMarkerText final
-{
-public:
-	class FText                                   ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
-};
-
-// Function BP_ElevatorDoor_ControlPanel.BP_ElevatorDoor_ControlPanel_C.OnStateChanged
+// Function BP_ElevatorDoor_ControlPanel.BP_ElevatorDoor_ControlPanel_C.BndEvt__BP_ElevatorDoor_ControlPanel_WaypointSBZBinaryState_K2Node_ComponentBoundEvent_2_SBZBinaryStateChangedSignature__DelegateSignature
 // 0x0002 (0x0002 - 0x0000)
-struct BP_ElevatorDoor_ControlPanel_C_OnStateChanged final
+struct BP_ElevatorDoor_ControlPanel_C_BndEvt__BP_ElevatorDoor_ControlPanel_WaypointSBZBinaryState_K2Node_ComponentBoundEvent_2_SBZBinaryStateChangedSignature__DelegateSignature final
 {
 public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bState;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ElevatorDoor_ControlPanel_C_BndEvt__BP_ElevatorDoor_ControlPanel_WaypointSBZBinaryState_K2Node_ComponentBoundEvent_2_SBZBinaryStateChangedSignature__DelegateSignature;
 
-// Function BP_ElevatorDoor_ControlPanel.BP_ElevatorDoor_ControlPanel_C.PlayTurnOff
-// 0x0010 (0x0010 - 0x0000)
-struct BP_ElevatorDoor_ControlPanel_C_PlayTurnOff final
+// Function BP_ElevatorDoor_ControlPanel.BP_ElevatorDoor_ControlPanel_C.BndEvt__BP_ElevatorDoor_ControlPanel_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_ElevatorDoor_ControlPanel_C_BndEvt__BP_ElevatorDoor_ControlPanel_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
 {
 public:
-	double                                        CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ElevatorDoor_ControlPanel_C_BndEvt__BP_ElevatorDoor_ControlPanel_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature;
 
-// Function BP_ElevatorDoor_ControlPanel.BP_ElevatorDoor_ControlPanel_C.PlayTurnOn
-// 0x0010 (0x0010 - 0x0000)
-struct BP_ElevatorDoor_ControlPanel_C_PlayTurnOn final
+// Function BP_ElevatorDoor_ControlPanel.BP_ElevatorDoor_ControlPanel_C.BndEvt__BP_ElevatorDoor_ControlPanel_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_ElevatorDoor_ControlPanel_C_BndEvt__BP_ElevatorDoor_ControlPanel_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
 {
 public:
-	double                                        CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_ElevatorDoor_ControlPanel.BP_ElevatorDoor_ControlPanel_C.SetInteractionEnable
-// 0x0002 (0x0002 - 0x0000)
-struct BP_ElevatorDoor_ControlPanel_C_SetInteractionEnable final
-{
-public:
-	bool                                          Interaction_Enabled;                               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          waypointEnabled;                                   // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_ElevatorDoor_ControlPanel.BP_ElevatorDoor_ControlPanel_C.SetMarker
-// 0x0078 (0x0078 - 0x0000)
-struct BP_ElevatorDoor_ControlPanel_C_SetMarker final
-{
-public:
-	const class USBZMarkerDataAsset*              MarkerDataAsset;                                   // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetRightVector_ReturnValue;               // 0x0010(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x0028(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0040(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0058(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_AddLocalMarker_ReturnValue;               // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_ElevatorDoor_ControlPanel_C_BndEvt__BP_ElevatorDoor_ControlPanel_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

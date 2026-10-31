@@ -16,23 +16,57 @@
 
 SDK_NAMESPACE_START
 
-// Function R_Bebe_PowerRoom.R_Bebe_PowerRoom_C.BndEvt__R_BranchBank_PowerRoom_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_3_ActorBeginOverlapSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class AActor*                           OverlappedActor                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function R_Bebe_PowerRoom.R_Bebe_PowerRoom_C.OnRandomPlacementStarted
+// (Event, Public, BlueprintEvent)
 
-void AR_Bebe_PowerRoom_C::BndEvt__R_BranchBank_PowerRoom_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_3_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor)
+void AR_Bebe_PowerRoom_C::OnRandomPlacementStarted()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRandomPlacementStarted", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Bebe_PowerRoom_C", "BndEvt__R_BranchBank_PowerRoom_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_3_ActorBeginOverlapSignature__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::R_Bebe_PowerRoom_C_BndEvt__R_BranchBank_PowerRoom_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_3_ActorBeginOverlapSignature__DelegateSignature Parms{};
 
-	Parms.OverlappedActor = OverlappedActor;
-	Parms.OtherActor = OtherActor;
+// Function R_Bebe_PowerRoom.R_Bebe_PowerRoom_C.OBJ_Is_Thermite
+// (BlueprintCallable, BlueprintEvent)
+
+void AR_Bebe_PowerRoom_C::OBJ_Is_Thermite()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OBJ_Is_Thermite", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_Bebe_PowerRoom.R_Bebe_PowerRoom_C.OBJ_Is_Lance
+// (BlueprintCallable, BlueprintEvent)
+
+void AR_Bebe_PowerRoom_C::OBJ_Is_Lance()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OBJ_Is_Lance", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_Bebe_PowerRoom.R_Bebe_PowerRoom_C.HeistStateChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EPD3HeistState                          OldHeistState_HeistStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPD3HeistState                          CurrentHeistState_HeistStateChanged                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AR_Bebe_PowerRoom_C::HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HeistStateChanged", FnName));
+
+	Params::R_Bebe_PowerRoom_C_HeistStateChanged Parms{};
+
+	Parms.OldHeistState_HeistStateChanged = OldHeistState_HeistStateChanged;
+	Parms.CurrentHeistState_HeistStateChanged = CurrentHeistState_HeistStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -45,10 +79,8 @@ void AR_Bebe_PowerRoom_C::BndEvt__R_BranchBank_PowerRoom_SBZPlayerTriggerVolume_
 
 void AR_Bebe_PowerRoom_C::ExecuteUbergraph_R_Bebe_PowerRoom(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Bebe_PowerRoom_C", "ExecuteUbergraph_R_Bebe_PowerRoom");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "R_Bebe_PowerRoom_C", "ExecuteUbergraph_R_Bebe_PowerRoom", FuncInfo);
 
 	Params::R_Bebe_PowerRoom_C_ExecuteUbergraph_R_Bebe_PowerRoom Parms{};
 
@@ -58,67 +90,23 @@ void AR_Bebe_PowerRoom_C::ExecuteUbergraph_R_Bebe_PowerRoom(int32 EntryPoint)
 }
 
 
-// Function R_Bebe_PowerRoom.R_Bebe_PowerRoom_C.HeistStateChanged
-// (Event, Public, BlueprintEvent)
+// Function R_Bebe_PowerRoom.R_Bebe_PowerRoom_C.BndEvt__R_BranchBank_PowerRoom_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_3_ActorBeginOverlapSignature__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// EPD3HeistState                          OldHeistState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPD3HeistState                          CurrentHeistState                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OverlappedActor                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AR_Bebe_PowerRoom_C::HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState)
+void AR_Bebe_PowerRoom_C::BndEvt__R_BranchBank_PowerRoom_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_3_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_BranchBank_PowerRoom_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_3_ActorBeginOverlapSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Bebe_PowerRoom_C", "HeistStateChanged");
+	Params::R_Bebe_PowerRoom_C_BndEvt__R_BranchBank_PowerRoom_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_3_ActorBeginOverlapSignature__DelegateSignature Parms{};
 
-	Params::R_Bebe_PowerRoom_C_HeistStateChanged Parms{};
-
-	Parms.OldHeistState = OldHeistState;
-	Parms.CurrentHeistState = CurrentHeistState;
+	Parms.OverlappedActor = OverlappedActor;
+	Parms.OtherActor = OtherActor;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_Bebe_PowerRoom.R_Bebe_PowerRoom_C.OBJ_Is_Lance
-// (BlueprintCallable, BlueprintEvent)
-
-void AR_Bebe_PowerRoom_C::OBJ_Is_Lance()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Bebe_PowerRoom_C", "OBJ_Is_Lance");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function R_Bebe_PowerRoom.R_Bebe_PowerRoom_C.OBJ_Is_Thermite
-// (BlueprintCallable, BlueprintEvent)
-
-void AR_Bebe_PowerRoom_C::OBJ_Is_Thermite()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Bebe_PowerRoom_C", "OBJ_Is_Thermite");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function R_Bebe_PowerRoom.R_Bebe_PowerRoom_C.OnRandomPlacementStarted
-// (Event, Public, BlueprintEvent)
-
-void AR_Bebe_PowerRoom_C::OnRandomPlacementStarted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Bebe_PowerRoom_C", "OnRandomPlacementStarted");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

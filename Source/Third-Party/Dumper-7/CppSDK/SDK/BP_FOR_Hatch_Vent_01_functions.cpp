@@ -16,25 +16,39 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_FOR_Hatch_Vent_01.BP_FOR_Hatch_Vent_01_C.BndEvt__BP_FOR_Hatch_Vent_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
+// Function BP_FOR_Hatch_Vent_01.BP_FOR_Hatch_Vent_01_C.ExecuteUbergraph_BP_FOR_Hatch_Vent_01
+// (Final, UbergraphFunction)
 // Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_FOR_Hatch_Vent_01_C::BndEvt__BP_FOR_Hatch_Vent_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_FOR_Hatch_Vent_01_C::ExecuteUbergraph_BP_FOR_Hatch_Vent_01(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_FOR_Hatch_Vent_01_C", "ExecuteUbergraph_BP_FOR_Hatch_Vent_01", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FOR_Hatch_Vent_01_C", "BndEvt__BP_FOR_Hatch_Vent_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
+	Params::BP_FOR_Hatch_Vent_01_C_ExecuteUbergraph_BP_FOR_Hatch_Vent_01 Parms{};
 
-	Params::BP_FOR_Hatch_Vent_01_C_BndEvt__BP_FOR_Hatch_Vent_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
+	Parms.EntryPoint = EntryPoint;
 
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_FOR_Hatch_Vent_01.BP_FOR_Hatch_Vent_01_C.BP_OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bNewState_BP_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmentics_BP_OnStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_FOR_Hatch_Vent_01_C::BP_OnStateChanged(bool bNewState_BP_OnStateChanged, bool bDoCosmentics_BP_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnStateChanged", FnName));
+
+	Params::BP_FOR_Hatch_Vent_01_C_BP_OnStateChanged Parms{};
+
+	Parms.bNewState_BP_OnStateChanged = bNewState_BP_OnStateChanged;
+	Parms.bDoCosmentics_BP_OnStateChanged = bDoCosmentics_BP_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -49,10 +63,8 @@ void ABP_FOR_Hatch_Vent_01_C::BndEvt__BP_FOR_Hatch_Vent_01_InteractableComponent
 
 void ABP_FOR_Hatch_Vent_01_C::BndEvt__BP_FOR_Hatch_Vent_01_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FOR_Hatch_Vent_01_C", "BndEvt__BP_FOR_Hatch_Vent_01_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_FOR_Hatch_Vent_01_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature", FnName));
 
 	Params::BP_FOR_Hatch_Vent_01_C_BndEvt__BP_FOR_Hatch_Vent_01_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
 
@@ -64,43 +76,23 @@ void ABP_FOR_Hatch_Vent_01_C::BndEvt__BP_FOR_Hatch_Vent_01_InteractableComponent
 }
 
 
-// Function BP_FOR_Hatch_Vent_01.BP_FOR_Hatch_Vent_01_C.BP_OnStateChanged
-// (Event, Protected, BlueprintEvent)
+// Function BP_FOR_Hatch_Vent_01.BP_FOR_Hatch_Vent_01_C.BndEvt__BP_FOR_Hatch_Vent_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// bool                                    bNewState                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmentics                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_FOR_Hatch_Vent_01_C::BP_OnStateChanged(bool bNewState, bool bDoCosmentics)
+void ABP_FOR_Hatch_Vent_01_C::BndEvt__BP_FOR_Hatch_Vent_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_FOR_Hatch_Vent_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FOR_Hatch_Vent_01_C", "BP_OnStateChanged");
+	Params::BP_FOR_Hatch_Vent_01_C_BndEvt__BP_FOR_Hatch_Vent_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
-	Params::BP_FOR_Hatch_Vent_01_C_BP_OnStateChanged Parms{};
-
-	Parms.bNewState = bNewState;
-	Parms.bDoCosmentics = bDoCosmentics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_FOR_Hatch_Vent_01.BP_FOR_Hatch_Vent_01_C.ExecuteUbergraph_BP_FOR_Hatch_Vent_01
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_FOR_Hatch_Vent_01_C::ExecuteUbergraph_BP_FOR_Hatch_Vent_01(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FOR_Hatch_Vent_01_C", "ExecuteUbergraph_BP_FOR_Hatch_Vent_01");
-
-	Params::BP_FOR_Hatch_Vent_01_C_ExecuteUbergraph_BP_FOR_Hatch_Vent_01 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

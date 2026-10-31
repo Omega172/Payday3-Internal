@@ -27,9 +27,9 @@ public:
 	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0540(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature(class UActorComponent* Component, bool bReset);
-	void BP_OnExplosion(bool bDoCosmetics);
 	void ExecuteUbergraph_BP_FireExtinguisher_01_Foam(int32 EntryPoint);
+	void BP_OnExplosion(bool bDoCosmetics_BP_OnExplosion);
+	void BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature(class UActorComponent* Component, bool bReset);
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<ABP_FireExtinguisher_01_Foam_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_FireExtinguisher_01_Foam_C;
 
 SDK_NAMESPACE_END

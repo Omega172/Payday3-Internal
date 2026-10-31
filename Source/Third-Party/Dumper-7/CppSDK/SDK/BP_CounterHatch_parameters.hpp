@@ -19,54 +19,44 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_CounterHatch.BP_CounterHatch_C.BndEvt__BP_CounterHatch_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// Function BP_CounterHatch.BP_CounterHatch_C.UserConstructionScript
+// 0x00B0 (0x00B0 - 0x0000)
+struct BP_CounterHatch_C_UserConstructionScript final
+{
+public:
+	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0000(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TMap<class USceneComponent*, struct FTransform> K2Node_MakeMap_Map;                              // 0x0060(0x0050)(ContainsInstancedReference)
+};
+DUMPER7_ASSERTS_BP_CounterHatch_C_UserConstructionScript;
+
+// Function BP_CounterHatch.BP_CounterHatch_C.PopulateSpawnInformationMap
+// 0x0050 (0x0050 - 0x0000)
+struct BP_CounterHatch_C_PopulateSpawnInformationMap final
+{
+public:
+	TMap<class USceneComponent*, struct FTransform> InOutSpawnDataMap;                               // 0x0000(0x0050)(Parm, OutParm, ContainsInstancedReference)
+};
+DUMPER7_ASSERTS_BP_CounterHatch_C_PopulateSpawnInformationMap;
+
+// Function BP_CounterHatch.BP_CounterHatch_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_CounterHatch_C_OnStateChanged final
+{
+public:
+	bool                                          bStateToChangeTo_OnStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_CounterHatch_C_OnStateChanged;
+
+// Function BP_CounterHatch.BP_CounterHatch_C.OnActorSpawned
 // 0x0010 (0x0010 - 0x0000)
-struct BP_CounterHatch_C_BndEvt__BP_CounterHatch_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature final
+struct BP_CounterHatch_C_OnActorSpawned final
 {
 public:
-	const class USBZBaseInteractableComponent*    InteractableComponent;                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInNewState;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 SpawnedActor;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        AttachParent;                                      // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_CounterHatch.BP_CounterHatch_C.BndEvt__BP_CounterHatch_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_CounterHatch_C_BndEvt__BP_CounterHatch_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_CounterHatch.BP_CounterHatch_C.BndEvt__BP_CounterHatch_SBZPropDamage_K2Node_ComponentBoundEvent_3_SBZPropDamageHitsSignature__DelegateSignature
-// 0x0030 (0x0030 - 0x0000)
-struct BP_CounterHatch_C_BndEvt__BP_CounterHatch_SBZPropDamage_K2Node_ComponentBoundEvent_3_SBZPropDamageHitsSignature__DelegateSignature final
-{
-public:
-	class UActorComponent*                        PoolComponent;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         Hits;                                              // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZPropDamageContext                  DamageContext;                                     // 0x0010(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
-};
-
-// Function BP_CounterHatch.BP_CounterHatch_C.BndEvt__BP_ReplicatedBinaryActorVent_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_CounterHatch_C_BndEvt__BP_ReplicatedBinaryActorVent_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_CounterHatch.BP_CounterHatch_C.EnableInteraction
-// 0x0001 (0x0001 - 0x0000)
-struct BP_CounterHatch_C_EnableInteraction final
-{
-public:
-	bool                                          State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_CounterHatch_C_OnActorSpawned;
 
 // Function BP_CounterHatch.BP_CounterHatch_C.ExecuteUbergraph_BP_CounterHatch
 // 0x02C8 (0x02C8 - 0x0000)
@@ -108,41 +98,61 @@ public:
 	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x02C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x02C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_CounterHatch_C_ExecuteUbergraph_BP_CounterHatch;
 
-// Function BP_CounterHatch.BP_CounterHatch_C.OnActorSpawned
+// Function BP_CounterHatch.BP_CounterHatch_C.EnableInteraction
+// 0x0001 (0x0001 - 0x0000)
+struct BP_CounterHatch_C_EnableInteraction final
+{
+public:
+	bool                                          State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_CounterHatch_C_EnableInteraction;
+
+// Function BP_CounterHatch.BP_CounterHatch_C.BndEvt__BP_ReplicatedBinaryActorVent_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_CounterHatch_C_BndEvt__BP_ReplicatedBinaryActorVent_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_CounterHatch_C_BndEvt__BP_ReplicatedBinaryActorVent_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature;
+
+// Function BP_CounterHatch.BP_CounterHatch_C.BndEvt__BP_CounterHatch_SBZPropDamage_K2Node_ComponentBoundEvent_3_SBZPropDamageHitsSignature__DelegateSignature
+// 0x0030 (0x0030 - 0x0000)
+struct BP_CounterHatch_C_BndEvt__BP_CounterHatch_SBZPropDamage_K2Node_ComponentBoundEvent_3_SBZPropDamageHitsSignature__DelegateSignature final
+{
+public:
+	class UActorComponent*                        PoolComponent;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         Hits;                                              // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZPropDamageContext                  DamageContext;                                     // 0x0010(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+};
+DUMPER7_ASSERTS_BP_CounterHatch_C_BndEvt__BP_CounterHatch_SBZPropDamage_K2Node_ComponentBoundEvent_3_SBZPropDamageHitsSignature__DelegateSignature;
+
+// Function BP_CounterHatch.BP_CounterHatch_C.BndEvt__BP_CounterHatch_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_CounterHatch_C_BndEvt__BP_CounterHatch_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_CounterHatch_C_BndEvt__BP_CounterHatch_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature;
+
+// Function BP_CounterHatch.BP_CounterHatch_C.BndEvt__BP_CounterHatch_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct BP_CounterHatch_C_OnActorSpawned final
+struct BP_CounterHatch_C_BndEvt__BP_CounterHatch_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature final
 {
 public:
-	class AActor*                                 SpawnedActor;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        AttachParent;                                      // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	const class USBZBaseInteractableComponent*    InteractableComponent;                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInNewState;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_CounterHatch.BP_CounterHatch_C.OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_CounterHatch_C_OnStateChanged final
-{
-public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_CounterHatch.BP_CounterHatch_C.PopulateSpawnInformationMap
-// 0x0050 (0x0050 - 0x0000)
-struct BP_CounterHatch_C_PopulateSpawnInformationMap final
-{
-public:
-	TMap<class USceneComponent*, struct FTransform> InOutSpawnDataMap;                               // 0x0000(0x0050)(Parm, OutParm, ContainsInstancedReference)
-};
-
-// Function BP_CounterHatch.BP_CounterHatch_C.UserConstructionScript
-// 0x00B0 (0x00B0 - 0x0000)
-struct BP_CounterHatch_C_UserConstructionScript final
-{
-public:
-	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0000(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TMap<class USceneComponent*, struct FTransform> K2Node_MakeMap_Map;                              // 0x0060(0x0050)(ContainsInstancedReference)
-};
+DUMPER7_ASSERTS_BP_CounterHatch_C_BndEvt__BP_CounterHatch_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

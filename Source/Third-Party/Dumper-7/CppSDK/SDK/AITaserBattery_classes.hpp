@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UAITaserBattery_C>();
 	}
 };
+DUMPER7_ASSERTS_UAITaserBattery_C;
 
 SDK_NAMESPACE_END

@@ -16,35 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ContainerLarge.BP_ContainerLarge_C.ExecuteUbergraph_BP_ContainerLarge
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ContainerLarge.BP_ContainerLarge_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_ContainerLarge_C::ExecuteUbergraph_BP_ContainerLarge(int32 EntryPoint)
+void ABP_ContainerLarge_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ContainerLarge_C", "ExecuteUbergraph_BP_ContainerLarge");
-
-	Params::BP_ContainerLarge_C_ExecuteUbergraph_BP_ContainerLarge Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ContainerLarge.BP_ContainerLarge_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_ContainerLarge_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ContainerLarge_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,26 +33,40 @@ void ABP_ContainerLarge_C::ReceiveBeginPlay()
 
 void ABP_ContainerLarge_C::SetIsTraversable()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ContainerLarge_C", "SetIsTraversable");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetIsTraversable", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ContainerLarge.BP_ContainerLarge_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_ContainerLarge.BP_ContainerLarge_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_ContainerLarge_C::UserConstructionScript()
+void ABP_ContainerLarge_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ContainerLarge_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ContainerLarge.BP_ContainerLarge_C.ExecuteUbergraph_BP_ContainerLarge
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ContainerLarge_C::ExecuteUbergraph_BP_ContainerLarge(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ContainerLarge_C", "ExecuteUbergraph_BP_ContainerLarge", FuncInfo);
+
+	Params::BP_ContainerLarge_C_ExecuteUbergraph_BP_ContainerLarge Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

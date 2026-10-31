@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABP_LA_Crew_Lean_R_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LA_Crew_Lean_R_C;
 
 SDK_NAMESPACE_END

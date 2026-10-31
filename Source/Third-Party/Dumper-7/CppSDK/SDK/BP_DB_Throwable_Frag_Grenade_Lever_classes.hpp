@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_DB_Throwable_Frag_Grenade_Lever_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DB_Throwable_Frag_Grenade_Lever_C;
 
 SDK_NAMESPACE_END

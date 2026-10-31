@@ -16,27 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_FOR_Winch.BP_FOR_Winch_C.BP_OnStateChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// ESBZBreachingEquipmentState             OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZBreachingEquipmentState             NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_FOR_Winch.BP_FOR_Winch_C.RestartWinch
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_FOR_Winch_C::BP_OnStateChanged(ESBZBreachingEquipmentState OldState, ESBZBreachingEquipmentState NewState, bool bDoCosmetics)
+void ABP_FOR_Winch_C::RestartWinch()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RestartWinch", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FOR_Winch_C", "BP_OnStateChanged");
-
-	Params::BP_FOR_Winch_C_BP_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -47,10 +35,8 @@ void ABP_FOR_Winch_C::BP_OnStateChanged(ESBZBreachingEquipmentState OldState, ES
 
 void ABP_FOR_Winch_C::ExecuteUbergraph_BP_FOR_Winch(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FOR_Winch_C", "ExecuteUbergraph_BP_FOR_Winch");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_FOR_Winch_C", "ExecuteUbergraph_BP_FOR_Winch", FuncInfo);
 
 	Params::BP_FOR_Winch_C_ExecuteUbergraph_BP_FOR_Winch Parms{};
 
@@ -60,17 +46,25 @@ void ABP_FOR_Winch_C::ExecuteUbergraph_BP_FOR_Winch(int32 EntryPoint)
 }
 
 
-// Function BP_FOR_Winch.BP_FOR_Winch_C.RestartWinch
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_FOR_Winch.BP_FOR_Winch_C.BP_OnStateChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// ESBZBreachingEquipmentState             OldState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZBreachingEquipmentState             NewState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_BP_OnStateChanged                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_FOR_Winch_C::RestartWinch()
+void ABP_FOR_Winch_C::BP_OnStateChanged(ESBZBreachingEquipmentState OldState_BP_OnStateChanged, ESBZBreachingEquipmentState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FOR_Winch_C", "RestartWinch");
+	Params::BP_FOR_Winch_C_BP_OnStateChanged Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.OldState_BP_OnStateChanged = OldState_BP_OnStateChanged;
+	Parms.NewState_BP_OnStateChanged = NewState_BP_OnStateChanged;
+	Parms.bDoCosmetics_BP_OnStateChanged = bDoCosmetics_BP_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

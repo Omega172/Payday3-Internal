@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "GameplayTags_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "GameplayTags_structs.hpp"
 #include "Starbreeze_classes.hpp"
 
 
@@ -50,15 +50,15 @@ public:
 	struct FVector                                ParticleLocation;                                  // 0x0480(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_Cuttable_destructable_Skylight_Square_01_SBZPropDamage_K2Node_ComponentBoundEvent_2_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
-	void ExecuteUbergraph_BP_Cuttable_destructable_Skylight_Rectangular_01(int32 EntryPoint);
-	class USBZCuttableComponent* GetCuttableComponent();
-	class USBZCuttableSplineComponent* GetCuttableSplineComponent();
-	void GetMaterialBillboardComponent();
-	class UStaticMeshComponent* GetMeltingMesh();
-	void OnCutCompleted();
-	void Timeline_0__FinishedFunc();
 	void Timeline_0__UpdateFunc();
+	void Timeline_0__FinishedFunc();
+	void OnCutCompleted();
+	class UStaticMeshComponent* GetMeltingMesh();
+	void GetMaterialBillboardComponent();
+	class USBZCuttableSplineComponent* GetCuttableSplineComponent();
+	class USBZCuttableComponent* GetCuttableComponent();
+	void ExecuteUbergraph_BP_Cuttable_destructable_Skylight_Rectangular_01(int32 EntryPoint);
+	void BndEvt__BP_Cuttable_destructable_Skylight_Square_01_SBZPropDamage_K2Node_ComponentBoundEvent_2_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
 
 public:
 	static class UClass* StaticClass()
@@ -74,5 +74,6 @@ public:
 		return GetDefaultObjImpl<ABP_Cuttable_destructable_Skylight_Rectangular_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Cuttable_destructable_Skylight_Rectangular_01_C;
 
 SDK_NAMESPACE_END

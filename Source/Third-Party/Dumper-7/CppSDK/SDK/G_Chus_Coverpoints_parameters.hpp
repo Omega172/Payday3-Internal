@@ -16,6 +16,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function G_Chus_Coverpoints.G_Chus_Coverpoints_C.OnPreplanningAssetsTagsApplied
+// 0x0020 (0x0020 - 0x0000)
+struct G_Chus_Coverpoints_C_OnPreplanningAssetsTagsApplied final
+{
+public:
+	struct FGameplayTagContainer                  PreplanningTagContainer_OnPreplanningAssetsTagsApplied; // 0x0000(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_G_Chus_Coverpoints_C_OnPreplanningAssetsTagsApplied;
+
 // Function G_Chus_Coverpoints.G_Chus_Coverpoints_C.ExecuteUbergraph_G_Chus_Coverpoints
 // 0x0038 (0x0038 - 0x0000)
 struct G_Chus_Coverpoints_C_ExecuteUbergraph_G_Chus_Coverpoints final
@@ -26,14 +35,7 @@ public:
 	struct FGameplayTagContainer                  K2Node_Event_PreplanningTagContainer;              // 0x0010(0x0020)(ConstParm)
 	bool                                          CallFunc_HasPreplanningTag_ReturnValue;            // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function G_Chus_Coverpoints.G_Chus_Coverpoints_C.OnPreplanningAssetsTagsApplied
-// 0x0020 (0x0020 - 0x0000)
-struct G_Chus_Coverpoints_C_OnPreplanningAssetsTagsApplied final
-{
-public:
-	struct FGameplayTagContainer                  PreplanningTagContainer;                           // 0x0000(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
+DUMPER7_ASSERTS_G_Chus_Coverpoints_C_ExecuteUbergraph_G_Chus_Coverpoints;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

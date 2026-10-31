@@ -14,6 +14,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_Liberty_mask.BP_Liberty_mask_C.UserConstructionScript
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Liberty_mask_C_UserConstructionScript final
+{
+public:
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Liberty_mask_C_UserConstructionScript;
+
 // Function BP_Liberty_mask.BP_Liberty_mask_C.ExecuteUbergraph_BP_Liberty_mask
 // 0x0008 (0x0008 - 0x0000)
 struct BP_Liberty_mask_C_ExecuteUbergraph_BP_Liberty_mask final
@@ -22,14 +31,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_Liberty_mask.BP_Liberty_mask_C.UserConstructionScript
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Liberty_mask_C_UserConstructionScript final
-{
-public:
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_Liberty_mask_C_ExecuteUbergraph_BP_Liberty_mask;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

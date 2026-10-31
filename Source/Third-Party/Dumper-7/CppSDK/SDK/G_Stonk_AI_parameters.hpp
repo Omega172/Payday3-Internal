@@ -17,220 +17,24 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZOVKBagTriggerVolume_OVKDrop_K2Node_ActorBoundEvent_16_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZOVKBagTriggerVolume_OVKDrop_K2Node_ActorBoundEvent_16_SBZBagEnteredDelegate__DelegateSignature final
+// Function G_Stonk_AI.G_Stonk_AI_C.OnServerKeyItemTagAdded
+// 0x000C (0x000C - 0x0000)
+struct G_Stonk_AI_C_OnServerKeyItemTagAdded final
 {
 public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FGameplayTag                           KeyTag_OnServerKeyItemTagAdded;                    // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Stonk_AI_C_OnServerKeyItemTagAdded;
 
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined183_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined183_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+// Function G_Stonk_AI.G_Stonk_AI_C.HeistStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct G_Stonk_AI_C_HeistStateChanged final
 {
 public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                OldHeistState_HeistStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CurrentHeistState_HeistStateChanged;               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined192_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined192_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined193_K2Node_ActorBoundEvent_18_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined193_K2Node_ActorBoundEvent_18_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined194_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined194_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined195_K2Node_ActorBoundEvent_23_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined195_K2Node_ActorBoundEvent_23_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined196_K2Node_ActorBoundEvent_22_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined196_K2Node_ActorBoundEvent_22_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined197_K2Node_ActorBoundEvent_21_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined197_K2Node_ActorBoundEvent_21_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined198_K2Node_ActorBoundEvent_24_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined198_K2Node_ActorBoundEvent_24_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined199_K2Node_ActorBoundEvent_25_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined199_K2Node_ActorBoundEvent_25_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardCorridor2_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardCorridor2_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardCorridor3_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardCorridor3_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardRoof5_K2Node_ActorBoundEvent_14_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardRoof5_K2Node_ActorBoundEvent_14_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_keycardman11_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_keycardman11_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_keycardman12_K2Node_ActorBoundEvent_7_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_keycardman12_K2Node_ActorBoundEvent_7_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_Keycardman22_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_Keycardman22_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRMan11_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRMan11_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRMan12_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRMan12_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRmanFloor3_K2Node_ActorBoundEvent_13_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRmanFloor3_K2Node_ActorBoundEvent_13_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPlayerTriggerVolume_EnableCloaker2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPlayerTriggerVolume_EnableCloaker2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPlayerTriggerVolume_EnableCloaker_K2Node_ActorBoundEvent_11_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPlayerTriggerVolume_EnableCloaker_K2Node_ActorBoundEvent_11_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_1_SBZSplineOnEnter__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_1_SBZSplineOnEnter__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZTrafficSpline_FirstResponders4_K2Node_ActorBoundEvent_4_SBZSplineOnEnter__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZTrafficSpline_FirstResponders4_K2Node_ActorBoundEvent_4_SBZSplineOnEnter__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_G_Stonk_AI_C_HeistStateChanged;
 
 // Function G_Stonk_AI.G_Stonk_AI_C.ExecuteUbergraph_G_Stonk_AI
 // 0x09B8 (0x09B8 - 0x0000)
@@ -497,23 +301,246 @@ public:
 	class APawn*                                  K2Node_ActorBoundEvent_Pawn;                       // 0x0990(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTagContainer                  Temp_struct_Variable_8;                            // 0x0998(0x0020)(ConstParm)
 };
+DUMPER7_ASSERTS_G_Stonk_AI_C_ExecuteUbergraph_G_Stonk_AI;
 
-// Function G_Stonk_AI.G_Stonk_AI_C.HeistStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct G_Stonk_AI_C_HeistStateChanged final
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZTrafficSpline_FirstResponders4_K2Node_ActorBoundEvent_4_SBZSplineOnEnter__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZTrafficSpline_FirstResponders4_K2Node_ActorBoundEvent_4_SBZSplineOnEnter__DelegateSignature final
 {
 public:
-	EPD3HeistState                                OldHeistState;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CurrentHeistState;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZTrafficSpline_FirstResponders4_K2Node_ActorBoundEvent_4_SBZSplineOnEnter__DelegateSignature;
 
-// Function G_Stonk_AI.G_Stonk_AI_C.OnServerKeyItemTagAdded
-// 0x000C (0x000C - 0x0000)
-struct G_Stonk_AI_C_OnServerKeyItemTagAdded final
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_1_SBZSplineOnEnter__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_1_SBZSplineOnEnter__DelegateSignature final
 {
 public:
-	struct FGameplayTag                           KeyTag;                                            // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_1_SBZSplineOnEnter__DelegateSignature;
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPlayerTriggerVolume_EnableCloaker_K2Node_ActorBoundEvent_11_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPlayerTriggerVolume_EnableCloaker_K2Node_ActorBoundEvent_11_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPlayerTriggerVolume_EnableCloaker_K2Node_ActorBoundEvent_11_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPlayerTriggerVolume_EnableCloaker2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPlayerTriggerVolume_EnableCloaker2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPlayerTriggerVolume_EnableCloaker2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRmanFloor3_K2Node_ActorBoundEvent_13_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRmanFloor3_K2Node_ActorBoundEvent_13_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRmanFloor3_K2Node_ActorBoundEvent_13_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRMan12_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRMan12_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRMan12_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRMan11_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRMan11_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_QRMan11_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_Keycardman22_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_Keycardman22_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_Keycardman22_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_keycardman12_K2Node_ActorBoundEvent_7_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_keycardman12_K2Node_ActorBoundEvent_7_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_keycardman12_K2Node_ActorBoundEvent_7_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_keycardman11_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_keycardman11_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_keycardman11_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardRoof5_K2Node_ActorBoundEvent_14_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardRoof5_K2Node_ActorBoundEvent_14_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardRoof5_K2Node_ActorBoundEvent_14_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardCorridor3_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardCorridor3_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardCorridor3_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardCorridor2_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardCorridor2_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined_GuardCorridor2_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined199_K2Node_ActorBoundEvent_25_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined199_K2Node_ActorBoundEvent_25_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined199_K2Node_ActorBoundEvent_25_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined198_K2Node_ActorBoundEvent_24_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined198_K2Node_ActorBoundEvent_24_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined198_K2Node_ActorBoundEvent_24_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined197_K2Node_ActorBoundEvent_21_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined197_K2Node_ActorBoundEvent_21_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined197_K2Node_ActorBoundEvent_21_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined196_K2Node_ActorBoundEvent_22_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined196_K2Node_ActorBoundEvent_22_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined196_K2Node_ActorBoundEvent_22_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined195_K2Node_ActorBoundEvent_23_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined195_K2Node_ActorBoundEvent_23_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined195_K2Node_ActorBoundEvent_23_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined194_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined194_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined194_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined193_K2Node_ActorBoundEvent_18_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined193_K2Node_ActorBoundEvent_18_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined193_K2Node_ActorBoundEvent_18_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined192_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined192_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined192_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined183_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined183_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZPawnSpawnPredefined183_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_AI.G_Stonk_AI_C.BndEvt__G_Stonk_AI_SBZOVKBagTriggerVolume_OVKDrop_K2Node_ActorBoundEvent_16_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZOVKBagTriggerVolume_OVKDrop_K2Node_ActorBoundEvent_16_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Stonk_AI_C_BndEvt__G_Stonk_AI_SBZOVKBagTriggerVolume_OVKDrop_K2Node_ActorBoundEvent_16_SBZBagEnteredDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -18,60 +18,23 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_ChallengeCategory_PanelButton.WBP_UI_ChallengeCategory_PanelButton_C.PreConstruct
+// Function WBP_UI_ChallengeCategory_PanelButton.WBP_UI_ChallengeCategory_PanelButton_C.ButtonFocusedChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_ChallengeCategory_PanelButton_C_PreConstruct final
+struct WBP_UI_ChallengeCategory_PanelButton_C_ButtonFocusedChanged final
 {
 public:
-	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_ChallengeCategory_PanelButton_C_PreConstruct;
+DUMPER7_ASSERTS_WBP_UI_ChallengeCategory_PanelButton_C_ButtonFocusedChanged;
 
-// Function WBP_UI_ChallengeCategory_PanelButton.WBP_UI_ChallengeCategory_PanelButton_C.OnHoveredVisuals
+// Function WBP_UI_ChallengeCategory_PanelButton.WBP_UI_ChallengeCategory_PanelButton_C.ButtonHoveredChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_ChallengeCategory_PanelButton_C_OnHoveredVisuals final
+struct WBP_UI_ChallengeCategory_PanelButton_C_ButtonHoveredChanged final
 {
 public:
-	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_ChallengeCategory_PanelButton_C_OnHoveredVisuals;
-
-// Function WBP_UI_ChallengeCategory_PanelButton.WBP_UI_ChallengeCategory_PanelButton_C.OnFocusedVisual
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_UI_ChallengeCategory_PanelButton_C_OnFocusedVisual final
-{
-public:
-	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue_1; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_ChallengeCategory_PanelButton_C_OnFocusedVisual;
-
-// Function WBP_UI_ChallengeCategory_PanelButton.WBP_UI_ChallengeCategory_PanelButton_C.OnChallengeCategoryDataInititalized
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_ChallengeCategory_PanelButton_C_OnChallengeCategoryDataInititalized final
-{
-public:
-	class USBZChallengeCategoryData*              InCategoryData_OnChallengeCategoryDataInititalized; // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_ChallengeCategory_PanelButton_C_OnChallengeCategoryDataInititalized;
-
-// Function WBP_UI_ChallengeCategory_PanelButton.WBP_UI_ChallengeCategory_PanelButton_C.OnChallengeCategoryCountRefreshed
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_ChallengeCategory_PanelButton_C_OnChallengeCategoryCountRefreshed final
-{
-public:
-	int32                                         TotalCount_OnChallengeCategoryCountRefreshed;      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CompletedCount_OnChallengeCategoryCountRefreshed;  // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_ChallengeCategory_PanelButton_C_OnChallengeCategoryCountRefreshed;
+DUMPER7_ASSERTS_WBP_UI_ChallengeCategory_PanelButton_C_ButtonHoveredChanged;
 
 // Function WBP_UI_ChallengeCategory_PanelButton.WBP_UI_ChallengeCategory_PanelButton_C.ExecuteUbergraph_WBP_UI_ChallengeCategory_PanelButton
 // 0x0110 (0x0110 - 0x0000)
@@ -106,23 +69,60 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_ChallengeCategory_PanelButton_C_ExecuteUbergraph_WBP_UI_ChallengeCategory_PanelButton;
 
-// Function WBP_UI_ChallengeCategory_PanelButton.WBP_UI_ChallengeCategory_PanelButton_C.ButtonHoveredChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_ChallengeCategory_PanelButton_C_ButtonHoveredChanged final
+// Function WBP_UI_ChallengeCategory_PanelButton.WBP_UI_ChallengeCategory_PanelButton_C.OnChallengeCategoryCountRefreshed
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_ChallengeCategory_PanelButton_C_OnChallengeCategoryCountRefreshed final
 {
 public:
-	bool                                          bInIsHovered_ButtonHoveredChanged;                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         TotalCount;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CompletedCount;                                    // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_ChallengeCategory_PanelButton_C_ButtonHoveredChanged;
+DUMPER7_ASSERTS_WBP_UI_ChallengeCategory_PanelButton_C_OnChallengeCategoryCountRefreshed;
 
-// Function WBP_UI_ChallengeCategory_PanelButton.WBP_UI_ChallengeCategory_PanelButton_C.ButtonFocusedChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_ChallengeCategory_PanelButton_C_ButtonFocusedChanged final
+// Function WBP_UI_ChallengeCategory_PanelButton.WBP_UI_ChallengeCategory_PanelButton_C.OnChallengeCategoryDataInititalized
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_ChallengeCategory_PanelButton_C_OnChallengeCategoryDataInititalized final
 {
 public:
-	bool                                          bInHasFocus_ButtonFocusedChanged;                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZChallengeCategoryData*              InCategoryData;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_ChallengeCategory_PanelButton_C_ButtonFocusedChanged;
+DUMPER7_ASSERTS_WBP_UI_ChallengeCategory_PanelButton_C_OnChallengeCategoryDataInititalized;
+
+// Function WBP_UI_ChallengeCategory_PanelButton.WBP_UI_ChallengeCategory_PanelButton_C.OnFocusedVisual
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_UI_ChallengeCategory_PanelButton_C_OnFocusedVisual final
+{
+public:
+	bool                                          bIsFocused;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue_1; // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_ChallengeCategory_PanelButton_C_OnFocusedVisual;
+
+// Function WBP_UI_ChallengeCategory_PanelButton.WBP_UI_ChallengeCategory_PanelButton_C.OnHoveredVisuals
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_ChallengeCategory_PanelButton_C_OnHoveredVisuals final
+{
+public:
+	bool                                          bIsHovered;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_ChallengeCategory_PanelButton_C_OnHoveredVisuals;
+
+// Function WBP_UI_ChallengeCategory_PanelButton.WBP_UI_ChallengeCategory_PanelButton_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_ChallengeCategory_PanelButton_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_ChallengeCategory_PanelButton_C_PreConstruct;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

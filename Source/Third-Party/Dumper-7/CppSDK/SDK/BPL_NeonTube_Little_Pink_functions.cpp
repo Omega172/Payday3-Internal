@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function BPL_NeonTube_Little_Pink.BPL_NeonTube_Little_Pink_C.ExecuteUbergraph_BPL_NeonTube_Little_Pink
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABPL_NeonTube_Little_Pink_C::ExecuteUbergraph_BPL_NeonTube_Little_Pink(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BPL_NeonTube_Little_Pink_C", "ExecuteUbergraph_BPL_NeonTube_Little_Pink", FuncInfo);
+
+	Params::BPL_NeonTube_Little_Pink_C_ExecuteUbergraph_BPL_NeonTube_Little_Pink Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BPL_NeonTube_Little_Pink.BPL_NeonTube_Little_Pink_C.BndEvt__BP_LGT_ArtCielingLamp_a_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -26,10 +44,8 @@ SDK_NAMESPACE_START
 
 void ABPL_NeonTube_Little_Pink_C::BndEvt__BP_LGT_ArtCielingLamp_a_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPL_NeonTube_Little_Pink_C", "BndEvt__BP_LGT_ArtCielingLamp_a_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_LGT_ArtCielingLamp_a_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature", FnName));
 
 	Params::BPL_NeonTube_Little_Pink_C_BndEvt__BP_LGT_ArtCielingLamp_a_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature Parms{};
 
@@ -37,26 +53,6 @@ void ABPL_NeonTube_Little_Pink_C::BndEvt__BP_LGT_ArtCielingLamp_a_02_SBZPropDama
 	Parms.Hits = Hits;
 	Parms.bDoCosmetics = bDoCosmetics;
 	Parms.DamageContext = std::move(DamageContext);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BPL_NeonTube_Little_Pink.BPL_NeonTube_Little_Pink_C.ExecuteUbergraph_BPL_NeonTube_Little_Pink
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABPL_NeonTube_Little_Pink_C::ExecuteUbergraph_BPL_NeonTube_Little_Pink(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPL_NeonTube_Little_Pink_C", "ExecuteUbergraph_BPL_NeonTube_Little_Pink");
-
-	Params::BPL_NeonTube_Little_Pink_C_ExecuteUbergraph_BPL_NeonTube_Little_Pink Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

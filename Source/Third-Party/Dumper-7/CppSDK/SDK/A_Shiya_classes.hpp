@@ -40,28 +40,28 @@ public:
 	class ABP_SHI_VASystem_C*                     BP_SHI_VASystem_4_PlayTransportGuardReactToGate_MERGED_RefProperty; // 0x0448(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_A_Shiya(int32 EntryPoint);
-	void PAAlarm();
-	void PATransportAboutToLeave();
-	void PATransportArrivingGarage();
-	void PATransportArrivingHolding();
-	void PATransportArrivingMainBuilding();
-	void PATransportArrivingYard();
-	void PATransportFlavor();
-	void PATransportGuardReactToGate();
-	void PATransportLeavingLoud();
-	void PATransportPreparingToLeave();
-	void PATransportScheduleHack();
-	void PlayTransportAboutToLeave(int32 RandomInt);
-	void PlayTransportArrivingGarage(int32 RandomInt);
-	void PlayTransportArrivingHolding(int32 RandomInt);
-	void PlayTransportArrivingMainBuilding(int32 RandomInt);
-	void PlayTransportArrivingYard(int32 RandomInt);
-	void PlayTransportFlavor(int32 RandomInt);
-	void PlayTransportGuardReactToGate(int32 RandomInt);
-	void PlayTransportLeavingLoud(int32 RandomInt);
-	void PlayTransportPreparingToLeave(int32 RandomInt);
 	void PlayTransportScheduleHack(int32 RandomInt);
+	void PlayTransportPreparingToLeave(int32 RandomInt);
+	void PlayTransportLeavingLoud(int32 RandomInt);
+	void PlayTransportGuardReactToGate(int32 RandomInt);
+	void PlayTransportFlavor(int32 RandomInt);
+	void PlayTransportArrivingYard(int32 RandomInt);
+	void PlayTransportArrivingMainBuilding(int32 RandomInt);
+	void PlayTransportArrivingHolding(int32 RandomInt);
+	void PlayTransportArrivingGarage(int32 RandomInt);
+	void PlayTransportAboutToLeave(int32 RandomInt);
+	void PATransportScheduleHack();
+	void PATransportPreparingToLeave();
+	void PATransportLeavingLoud();
+	void PATransportGuardReactToGate();
+	void PATransportFlavor();
+	void PATransportArrivingYard();
+	void PATransportArrivingMainBuilding();
+	void PATransportArrivingHolding();
+	void PATransportArrivingGarage();
+	void PATransportAboutToLeave();
+	void PAAlarm();
+	void ExecuteUbergraph_A_Shiya(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -77,5 +77,6 @@ public:
 		return GetDefaultObjImpl<AA_Shiya_C>();
 	}
 };
+DUMPER7_ASSERTS_AA_Shiya_C;
 
 SDK_NAMESPACE_END

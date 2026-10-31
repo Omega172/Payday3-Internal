@@ -16,25 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_Chus_EvidenceScreen.WBP_Chus_EvidenceScreen_C.setCompleted
+// Function WBP_Chus_EvidenceScreen.WBP_Chus_EvidenceScreen_C.setProgress
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FText&                      case_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
-// const class FText&                      defendant                                              (BlueprintVisible, BlueprintReadOnly, Parm)
-// const class FText&                      evidence                                               (BlueprintVisible, BlueprintReadOnly, Parm)
+// double                                  progress                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Chus_EvidenceScreen_C::setCompleted(const class FText& case_0, const class FText& defendant, const class FText& evidence)
+void UWBP_Chus_EvidenceScreen_C::setProgress(double progress)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setProgress", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Chus_EvidenceScreen_C", "setCompleted");
+	Params::WBP_Chus_EvidenceScreen_C_setProgress Parms{};
 
-	Params::WBP_Chus_EvidenceScreen_C_setCompleted Parms{};
-
-	Parms.case_0 = std::move(case_0);
-	Parms.defendant = std::move(defendant);
-	Parms.evidence = std::move(evidence);
+	Parms.progress = progress;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -47,10 +41,8 @@ void UWBP_Chus_EvidenceScreen_C::setCompleted(const class FText& case_0, const c
 
 void UWBP_Chus_EvidenceScreen_C::setIdle(const class FText& idleText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Chus_EvidenceScreen_C", "setIdle");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setIdle", FnName));
 
 	Params::WBP_Chus_EvidenceScreen_C_setIdle Parms{};
 
@@ -60,21 +52,23 @@ void UWBP_Chus_EvidenceScreen_C::setIdle(const class FText& idleText)
 }
 
 
-// Function WBP_Chus_EvidenceScreen.WBP_Chus_EvidenceScreen_C.setProgress
+// Function WBP_Chus_EvidenceScreen.WBP_Chus_EvidenceScreen_C.setCompleted
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  progress                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      case_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
+// const class FText&                      defendant                                              (BlueprintVisible, BlueprintReadOnly, Parm)
+// const class FText&                      evidence                                               (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_Chus_EvidenceScreen_C::setProgress(double progress)
+void UWBP_Chus_EvidenceScreen_C::setCompleted(const class FText& case_0, const class FText& defendant, const class FText& evidence)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setCompleted", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Chus_EvidenceScreen_C", "setProgress");
+	Params::WBP_Chus_EvidenceScreen_C_setCompleted Parms{};
 
-	Params::WBP_Chus_EvidenceScreen_C_setProgress Parms{};
-
-	Parms.progress = progress;
+	Parms.case_0 = std::move(case_0);
+	Parms.defendant = std::move(defendant);
+	Parms.evidence = std::move(evidence);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AMurk_C>();
 	}
 };
+DUMPER7_ASSERTS_AMurk_C;
 
 SDK_NAMESPACE_END

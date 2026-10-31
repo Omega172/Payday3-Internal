@@ -54,5 +54,6 @@ public:
 		return GetDefaultObjImpl<UWBP_CompleteNameInfo_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_CompleteNameInfo_C;
 
 SDK_NAMESPACE_END

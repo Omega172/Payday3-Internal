@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UUTD_CloakerCharge_C>();
 	}
 };
+DUMPER7_ASSERTS_UUTD_CloakerCharge_C;
 
 SDK_NAMESPACE_END

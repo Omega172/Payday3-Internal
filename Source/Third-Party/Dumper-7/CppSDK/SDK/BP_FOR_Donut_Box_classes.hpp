@@ -29,12 +29,12 @@ public:
 	TMulticastInlineDelegate<void()>              onPickedUp;                                        // 0x0398(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__BP_FOR_Donut_Box_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_FOR_Donut_Box(int32 EntryPoint);
-	void Hide_Donut_Box();
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void ReceiveBeginPlay();
 	void Show_Donut_Box();
+	void ReceiveBeginPlay();
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void Hide_Donut_Box();
+	void ExecuteUbergraph_BP_FOR_Donut_Box(int32 EntryPoint);
+	void BndEvt__BP_FOR_Donut_Box_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -50,5 +50,6 @@ public:
 		return GetDefaultObjImpl<ABP_FOR_Donut_Box_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_FOR_Donut_Box_C;
 
 SDK_NAMESPACE_END

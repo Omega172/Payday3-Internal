@@ -32,10 +32,10 @@ public:
 	class FText                                   Room_Name;                                         // 0x0330(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void ExecuteUbergraph_WBP_InteractableControlPanel(int32 EntryPoint);
-	void SetClosed();
-	void SetOpen();
 	void SetRoom(const class FText& RoomName);
+	void SetOpen();
+	void SetClosed();
+	void ExecuteUbergraph_WBP_InteractableControlPanel(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -51,5 +51,6 @@ public:
 		return GetDefaultObjImpl<UWBP_InteractableControlPanel_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_InteractableControlPanel_C;
 
 SDK_NAMESPACE_END

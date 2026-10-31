@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "AkAudio_structs.hpp"
 #include "E_ShootingRangeTargetDistances_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Starbreeze_classes.hpp"
+#include "AkAudio_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -58,30 +58,32 @@ public:
 	struct FRandomStream                          RStream;                                           // 0x044C(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor)
 
 public:
-	void clearTarget();
-	void DrawExplosionHitOnSlave(double damage);
-	void DrawHitOnSlave(double Damage, const struct FVector& impactPoint);
-	void ExecuteUbergraph_BP_ShootingRangeTarget(int32 EntryPoint);
-	double FloatPrecision(double Float, int32 Decimal_Precision);
-	void getWidget(class UWBP_TargetDisplay_C** widget_0);
-	void HitDebugDraw(const struct FVector& Hit_Location, double Hit_Damage, double Hit_Distance);
-	void OnPostTakenDamageEvent(const TArray<struct FHitResult>& HitResultArray, const struct FSBZDamageEvent& DamageEvent, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier);
-	void OnPreTakeDamage(const TArray<struct FHitResult>& HitResultArray, float DamagePerHit, float Distance, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier);
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void ReceiveBeginPlay();
-	void ReceiveTick(float DeltaSeconds);
-	void ResetTarget();
-	void setDistance(E_ShootingRangeTargetDistances distance, bool doCosmetics);
-	void updateDistance(double distance);
-	void updateTargetRange(E_ShootingRangeTargetDistances distance);
 	void UserConstructionScript();
+	void updateTargetRange(E_ShootingRangeTargetDistances distance);
+	void updateDistance(double distance);
+	void setDistance(E_ShootingRangeTargetDistances distance, bool doCosmetics);
+	void ResetTarget();
+	void ReceiveTick(float DeltaSeconds_ReceiveTick);
+	void ReceiveBeginPlay();
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void OnPreTakeDamage(const TArray<struct FHitResult>& HitResultArray, float DamagePerHit, float Distance, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier);
+	void OnPostTakenDamageEvent(const TArray<struct FHitResult>& HitResultArray, const struct FSBZDamageEvent& DamageEvent, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier);
+	void HitDebugDraw(const struct FVector& Hit_Location, double Hit_Damage, double Hit_Distance);
+	void getWidget(class UWBP_TargetDisplay_C** widget);
+	double FloatPrecision(double Float, int32 Decimal_Precision);
+	void ExecuteUbergraph_BP_ShootingRangeTarget(int32 EntryPoint);
+	void DrawHitOnSlave(double Damage, const struct FVector& impactPoint);
+	void DrawExplosionHitOnSlave(double damage);
+	void clearTarget();
 
-	void IsArrayWithinDistance(TArray<struct FHitResult>& HitResultArray, const double WithinDistance, bool* IsWithin) const;
-	bool IsDamageEventBroadcastCritical(const struct FHitResult& HitResult, const struct FSBZDamageEvent& DamageEvent, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier) const;
-	bool IsDamageEventBroadcastEnabled(const TArray<struct FHitResult>& HitResultArray, float DamagePerHit, float Distance, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier) const;
-	bool IsDamageEventBroadcastHitMarkerSoundAllowed(const struct FHitResult& HitResult, const struct FSBZDamageEvent& DamageEvent, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier) const;
-	bool IsDamageEventBroadcastKillshot(const struct FHitResult& HitResult, const struct FSBZDamageEvent& DamageEvent, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier) const;
+	bool IsLockpickActor() const;
+	bool IsDamageTypeAllowed(const class USBZInteractorComponent* Interactor, const struct FGameplayTagContainer& InDamageTypeTags, bool bIsSawPropDamageOnly) const;
 	bool IsDamageEventBroadcastMerged(const TArray<struct FHitResult>& HitResultArray, const struct FSBZDamageEvent& DamageEvent, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier) const;
+	bool IsDamageEventBroadcastKillshot(const struct FHitResult& HitResult, const struct FSBZDamageEvent& DamageEvent, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier) const;
+	bool IsDamageEventBroadcastHitMarkerSoundAllowed(const struct FHitResult& HitResult, const struct FSBZDamageEvent& DamageEvent, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier) const;
+	bool IsDamageEventBroadcastEnabled(const TArray<struct FHitResult>& HitResultArray, float DamagePerHit, float Distance, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier) const;
+	bool IsDamageEventBroadcastCritical(const struct FHitResult& HitResult, const struct FSBZDamageEvent& DamageEvent, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier) const;
+	void IsArrayWithinDistance(TArray<struct FHitResult>& HitResultArray, const double WithinDistance, bool* IsWithin) const;
 
 public:
 	static class UClass* StaticClass()
@@ -97,5 +99,6 @@ public:
 		return GetDefaultObjImpl<ABP_ShootingRangeTarget_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ShootingRangeTarget_C;
 
 SDK_NAMESPACE_END

@@ -17,6 +17,33 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_CampaignContent_LoreAsset_FullImage.WBP_CampaignContent_LoreAsset_FullImage_C.SetEntryState
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CampaignContent_LoreAsset_FullImage_C_SetEntryState final
+{
+public:
+	ESBZCampaignEntryState                        NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CampaignContent_LoreAsset_FullImage_C_SetEntryState;
+
+// Function WBP_CampaignContent_LoreAsset_FullImage.WBP_CampaignContent_LoreAsset_FullImage_C.SetCampaignData
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignContent_LoreAsset_FullImage_C_SetCampaignData final
+{
+public:
+	const class USBZCampaignBaseEntryData*        Entry;                                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CampaignContent_LoreAsset_FullImage_C_SetCampaignData;
+
+// Function WBP_CampaignContent_LoreAsset_FullImage.WBP_CampaignContent_LoreAsset_FullImage_C.GetEntryState
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CampaignContent_LoreAsset_FullImage_C_GetEntryState final
+{
+public:
+	ESBZCampaignEntryState                        ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CampaignContent_LoreAsset_FullImage_C_GetEntryState;
+
 // Function WBP_CampaignContent_LoreAsset_FullImage.WBP_CampaignContent_LoreAsset_FullImage_C.ExecuteUbergraph_WBP_CampaignContent_LoreAsset_FullImage
 // 0x0090 (0x0090 - 0x0000)
 struct WBP_CampaignContent_LoreAsset_FullImage_C_ExecuteUbergraph_WBP_CampaignContent_LoreAsset_FullImage final
@@ -36,30 +63,7 @@ public:
 	class UTexture2D*                             K2Node_DynamicCast_AsTexture_2D;                   // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function WBP_CampaignContent_LoreAsset_FullImage.WBP_CampaignContent_LoreAsset_FullImage_C.GetEntryState
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CampaignContent_LoreAsset_FullImage_C_GetEntryState final
-{
-public:
-	ESBZCampaignEntryState                        ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WBP_CampaignContent_LoreAsset_FullImage.WBP_CampaignContent_LoreAsset_FullImage_C.SetCampaignData
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignContent_LoreAsset_FullImage_C_SetCampaignData final
-{
-public:
-	const class USBZCampaignBaseEntryData*        Entry;                                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WBP_CampaignContent_LoreAsset_FullImage.WBP_CampaignContent_LoreAsset_FullImage_C.SetEntryState
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CampaignContent_LoreAsset_FullImage_C_SetEntryState final
-{
-public:
-	ESBZCampaignEntryState                        NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_WBP_CampaignContent_LoreAsset_FullImage_C_ExecuteUbergraph_WBP_CampaignContent_LoreAsset_FullImage;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

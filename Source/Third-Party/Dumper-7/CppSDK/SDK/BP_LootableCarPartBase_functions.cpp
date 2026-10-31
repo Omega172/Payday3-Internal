@@ -16,39 +16,155 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_LootableCarPartBase.BP_LootableCarPartBase_C.BndEvt__BP_LootableCarPartBase_bagGenerator_K2Node_ComponentBoundEvent_0_SBZBagPickedUp__DelegateSignature
-// (BlueprintEvent)
+// Function BP_LootableCarPartBase.BP_LootableCarPartBase_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_LootableCarPartBase_C::BndEvt__BP_LootableCarPartBase_bagGenerator_K2Node_ComponentBoundEvent_0_SBZBagPickedUp__DelegateSignature()
+void ABP_LootableCarPartBase_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LootableCarPartBase_C", "BndEvt__BP_LootableCarPartBase_bagGenerator_K2Node_ComponentBoundEvent_0_SBZBagPickedUp__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_LootableCarPartBase.BP_LootableCarPartBase_C.BndEvt__BP_LootableCarPartBase_initialOpen_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
+// Function BP_LootableCarPartBase.BP_LootableCarPartBase_C.updatePartState
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    doCosmetics                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LootableCarPartBase_C::BndEvt__BP_LootableCarPartBase_initialOpen_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_LootableCarPartBase_C::updatePartState(bool doCosmetics)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"updatePartState", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LootableCarPartBase_C", "BndEvt__BP_LootableCarPartBase_initialOpen_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature");
+	Params::BP_LootableCarPartBase_C_updatePartState Parms{};
 
-	Params::BP_LootableCarPartBase_C_BndEvt__BP_LootableCarPartBase_initialOpen_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature Parms{};
+	Parms.doCosmetics = doCosmetics;
 
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_LootableCarPartBase.BP_LootableCarPartBase_C.setLootable
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    lootable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LootableCarPartBase_C::setLootable(bool lootable)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setLootable", FnName));
+
+	Params::BP_LootableCarPartBase_C_setLootable Parms{};
+
+	Parms.lootable = lootable;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_LootableCarPartBase.BP_LootableCarPartBase_C.setInteraction
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LootableCarPartBase_C::setInteraction(bool enabled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setInteraction", FnName));
+
+	Params::BP_LootableCarPartBase_C_setInteraction Parms{};
+
+	Parms.enabled = enabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_LootableCarPartBase.BP_LootableCarPartBase_C.searchPart
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    fullySearched                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    removeLoot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   lootSuccessfullyRemoved                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LootableCarPartBase_C::searchPart(bool fullySearched, bool removeLoot, bool* lootSuccessfullyRemoved)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"searchPart", FnName));
+
+	Params::BP_LootableCarPartBase_C_searchPart Parms{};
+
+	Parms.fullySearched = fullySearched;
+	Parms.removeLoot = removeLoot;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (lootSuccessfullyRemoved != nullptr)
+		*lootSuccessfullyRemoved = Parms.lootSuccessfullyRemoved;
+}
+
+
+// Function BP_LootableCarPartBase.BP_LootableCarPartBase_C.open_timeline__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_LootableCarPartBase_C::open_timeline__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"open_timeline__UpdateFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_LootableCarPartBase.BP_LootableCarPartBase_C.open_timeline__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_LootableCarPartBase_C::open_timeline__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"open_timeline__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_LootableCarPartBase.BP_LootableCarPartBase_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LootableCarPartBase_C::OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_LootableCarPartBase_C_OnStateChanged Parms{};
+
+	Parms.OldState = OldState;
+	Parms.NewState = NewState;
+	Parms.bDoCosmetics = bDoCosmetics;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_LootableCarPartBase.BP_LootableCarPartBase_C.ExecuteUbergraph_BP_LootableCarPartBase
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LootableCarPartBase_C::ExecuteUbergraph_BP_LootableCarPartBase(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_LootableCarPartBase_C", "ExecuteUbergraph_BP_LootableCarPartBase", FuncInfo);
+
+	Params::BP_LootableCarPartBase_C_ExecuteUbergraph_BP_LootableCarPartBase Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -63,10 +179,8 @@ void ABP_LootableCarPartBase_C::BndEvt__BP_LootableCarPartBase_initialOpen_SBZIn
 
 void ABP_LootableCarPartBase_C::BndEvt__BP_LootableCarPartBase_removePart_SBZInteractable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LootableCarPartBase_C", "BndEvt__BP_LootableCarPartBase_removePart_SBZInteractable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_LootableCarPartBase_removePart_SBZInteractable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature", FnName));
 
 	Params::BP_LootableCarPartBase_C_BndEvt__BP_LootableCarPartBase_removePart_SBZInteractable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature Parms{};
 
@@ -78,173 +192,35 @@ void ABP_LootableCarPartBase_C::BndEvt__BP_LootableCarPartBase_removePart_SBZInt
 }
 
 
-// Function BP_LootableCarPartBase.BP_LootableCarPartBase_C.ExecuteUbergraph_BP_LootableCarPartBase
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_LootableCarPartBase.BP_LootableCarPartBase_C.BndEvt__BP_LootableCarPartBase_initialOpen_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LootableCarPartBase_C::ExecuteUbergraph_BP_LootableCarPartBase(int32 EntryPoint)
+void ABP_LootableCarPartBase_C::BndEvt__BP_LootableCarPartBase_initialOpen_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_LootableCarPartBase_initialOpen_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LootableCarPartBase_C", "ExecuteUbergraph_BP_LootableCarPartBase");
+	Params::BP_LootableCarPartBase_C_BndEvt__BP_LootableCarPartBase_initialOpen_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature Parms{};
 
-	Params::BP_LootableCarPartBase_C_ExecuteUbergraph_BP_LootableCarPartBase Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_LootableCarPartBase.BP_LootableCarPartBase_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LootableCarPartBase_C::OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LootableCarPartBase_C", "OnStateChanged");
-
-	Params::BP_LootableCarPartBase_C_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LootableCarPartBase.BP_LootableCarPartBase_C.open_timeline__FinishedFunc
+// Function BP_LootableCarPartBase.BP_LootableCarPartBase_C.BndEvt__BP_LootableCarPartBase_bagGenerator_K2Node_ComponentBoundEvent_0_SBZBagPickedUp__DelegateSignature
 // (BlueprintEvent)
 
-void ABP_LootableCarPartBase_C::open_timeline__FinishedFunc()
+void ABP_LootableCarPartBase_C::BndEvt__BP_LootableCarPartBase_bagGenerator_K2Node_ComponentBoundEvent_0_SBZBagPickedUp__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LootableCarPartBase_C", "open_timeline__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_LootableCarPartBase.BP_LootableCarPartBase_C.open_timeline__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_LootableCarPartBase_C::open_timeline__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LootableCarPartBase_C", "open_timeline__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_LootableCarPartBase.BP_LootableCarPartBase_C.searchPart
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    fullySearched                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    removeLoot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   lootSuccessfullyRemoved                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LootableCarPartBase_C::searchPart(bool fullySearched, bool removeLoot, bool* lootSuccessfullyRemoved)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LootableCarPartBase_C", "searchPart");
-
-	Params::BP_LootableCarPartBase_C_searchPart Parms{};
-
-	Parms.fullySearched = fullySearched;
-	Parms.removeLoot = removeLoot;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (lootSuccessfullyRemoved != nullptr)
-		*lootSuccessfullyRemoved = Parms.lootSuccessfullyRemoved;
-}
-
-
-// Function BP_LootableCarPartBase.BP_LootableCarPartBase_C.setInteraction
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LootableCarPartBase_C::setInteraction(bool enabled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LootableCarPartBase_C", "setInteraction");
-
-	Params::BP_LootableCarPartBase_C_setInteraction Parms{};
-
-	Parms.enabled = enabled;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LootableCarPartBase.BP_LootableCarPartBase_C.setLootable
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    lootable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LootableCarPartBase_C::setLootable(bool lootable)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LootableCarPartBase_C", "setLootable");
-
-	Params::BP_LootableCarPartBase_C_setLootable Parms{};
-
-	Parms.lootable = lootable;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LootableCarPartBase.BP_LootableCarPartBase_C.updatePartState
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    doCosmetics                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LootableCarPartBase_C::updatePartState(bool doCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LootableCarPartBase_C", "updatePartState");
-
-	Params::BP_LootableCarPartBase_C_updatePartState Parms{};
-
-	Parms.doCosmetics = doCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LootableCarPartBase.BP_LootableCarPartBase_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_LootableCarPartBase_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LootableCarPartBase_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_LootableCarPartBase_bagGenerator_K2Node_ComponentBoundEvent_0_SBZBagPickedUp__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

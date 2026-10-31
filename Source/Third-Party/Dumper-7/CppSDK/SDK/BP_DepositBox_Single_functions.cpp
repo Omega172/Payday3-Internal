@@ -16,47 +16,52 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_DepositBox_Single.BP_DepositBox_Single_C.BndEvt__BP_DepositBox_Single_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// class UActorComponent*                  PoolComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   Hits                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZPropDamageContext&     DamageContext                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// Function BP_DepositBox_Single.BP_DepositBox_Single_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_DepositBox_Single_C::BndEvt__BP_DepositBox_Single_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
+void ABP_DepositBox_Single_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DepositBox_Single_C", "BndEvt__BP_DepositBox_Single_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature");
-
-	Params::BP_DepositBox_Single_C_BndEvt__BP_DepositBox_Single_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature Parms{};
-
-	Parms.PoolComponent = PoolComponent;
-	Parms.Hits = Hits;
-	Parms.bDoCosmetics = bDoCosmetics;
-	Parms.DamageContext = std::move(DamageContext);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_DepositBox_Single.BP_DepositBox_Single_C.BP_OnMiniGameSuccess
-// (Event, Protected, BlueprintEvent)
+// Function BP_DepositBox_Single.BP_DepositBox_Single_C.PopulateSpawnInformationMap
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TMap<class USceneComponent*, struct FTransform>*InOutSpawnDataMap                                      (Parm, OutParm, ContainsInstancedReference)
 
-void ABP_DepositBox_Single_C::BP_OnMiniGameSuccess(bool bDoCosmetics)
+void ABP_DepositBox_Single_C::PopulateSpawnInformationMap(TMap<class USceneComponent*, struct FTransform>* InOutSpawnDataMap)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PopulateSpawnInformationMap", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DepositBox_Single_C", "BP_OnMiniGameSuccess");
+	Params::BP_DepositBox_Single_C_PopulateSpawnInformationMap Parms{};
 
-	Params::BP_DepositBox_Single_C_BP_OnMiniGameSuccess Parms{};
+	UObject::ProcessEvent(Func, &Parms);
 
-	Parms.bDoCosmetics = bDoCosmetics;
+	if (InOutSpawnDataMap != nullptr)
+		*InOutSpawnDataMap = std::move(Parms.InOutSpawnDataMap);
+}
+
+
+// Function BP_DepositBox_Single.BP_DepositBox_Single_C.OnActorSpawned
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           SpawnedActor                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USceneComponent*                  AttachParent                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void ABP_DepositBox_Single_C::OnActorSpawned(class AActor* SpawnedActor, class USceneComponent* AttachParent)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnActorSpawned", FnName));
+
+	Params::BP_DepositBox_Single_C_OnActorSpawned Parms{};
+
+	Parms.SpawnedActor = SpawnedActor;
+	Parms.AttachParent = AttachParent;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -69,10 +74,8 @@ void ABP_DepositBox_Single_C::BP_OnMiniGameSuccess(bool bDoCosmetics)
 
 void ABP_DepositBox_Single_C::ExecuteUbergraph_BP_DepositBox_Single(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DepositBox_Single_C", "ExecuteUbergraph_BP_DepositBox_Single");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_DepositBox_Single_C", "ExecuteUbergraph_BP_DepositBox_Single", FuncInfo);
 
 	Params::BP_DepositBox_Single_C_ExecuteUbergraph_BP_DepositBox_Single Parms{};
 
@@ -82,60 +85,45 @@ void ABP_DepositBox_Single_C::ExecuteUbergraph_BP_DepositBox_Single(int32 EntryP
 }
 
 
-// Function BP_DepositBox_Single.BP_DepositBox_Single_C.OnActorSpawned
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_DepositBox_Single.BP_DepositBox_Single_C.BP_OnMiniGameSuccess
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// class AActor*                           SpawnedActor                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USceneComponent*                  AttachParent                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_BP_OnMiniGameSuccess                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_DepositBox_Single_C::OnActorSpawned(class AActor* SpawnedActor, class USceneComponent* AttachParent)
+void ABP_DepositBox_Single_C::BP_OnMiniGameSuccess(bool bDoCosmetics_BP_OnMiniGameSuccess)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnMiniGameSuccess", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DepositBox_Single_C", "OnActorSpawned");
+	Params::BP_DepositBox_Single_C_BP_OnMiniGameSuccess Parms{};
 
-	Params::BP_DepositBox_Single_C_OnActorSpawned Parms{};
-
-	Parms.SpawnedActor = SpawnedActor;
-	Parms.AttachParent = AttachParent;
+	Parms.bDoCosmetics_BP_OnMiniGameSuccess = bDoCosmetics_BP_OnMiniGameSuccess;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_DepositBox_Single.BP_DepositBox_Single_C.PopulateSpawnInformationMap
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function BP_DepositBox_Single.BP_DepositBox_Single_C.BndEvt__BP_DepositBox_Single_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
 // Parameters:
-// TMap<class USceneComponent*, struct FTransform>*InOutSpawnDataMap                                      (Parm, OutParm, ContainsInstancedReference)
+// class UActorComponent*                  PoolComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   Hits                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZPropDamageContext&     DamageContext                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 
-void ABP_DepositBox_Single_C::PopulateSpawnInformationMap(TMap<class USceneComponent*, struct FTransform>* InOutSpawnDataMap)
+void ABP_DepositBox_Single_C::BndEvt__BP_DepositBox_Single_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_DepositBox_Single_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DepositBox_Single_C", "PopulateSpawnInformationMap");
+	Params::BP_DepositBox_Single_C_BndEvt__BP_DepositBox_Single_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature Parms{};
 
-	Params::BP_DepositBox_Single_C_PopulateSpawnInformationMap Parms{};
+	Parms.PoolComponent = PoolComponent;
+	Parms.Hits = Hits;
+	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.DamageContext = std::move(DamageContext);
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (InOutSpawnDataMap != nullptr)
-		*InOutSpawnDataMap = std::move(Parms.InOutSpawnDataMap);
-}
-
-
-// Function BP_DepositBox_Single.BP_DepositBox_Single_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_DepositBox_Single_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DepositBox_Single_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

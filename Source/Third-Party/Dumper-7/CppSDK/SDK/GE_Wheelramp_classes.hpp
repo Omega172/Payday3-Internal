@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_Wheelramp_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_Wheelramp_C;
 
 SDK_NAMESPACE_END

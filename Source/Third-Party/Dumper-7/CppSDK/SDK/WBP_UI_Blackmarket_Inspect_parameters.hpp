@@ -16,77 +16,78 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnNotifyEnd_A165E7FC40F3743584AB39B8F67756E1
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_Blackmarket_Inspect_C_OnNotifyEnd_A165E7FC40F3743584AB39B8F67756E1 final
+// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.CanInspectItem
+// 0x0160 (0x0160 - 0x0000)
+struct WBP_UI_Blackmarket_Inspect_C_CanInspectItem final
 {
 public:
-	class FName                                   NotifyName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class USBZInventoryBaseData*            InInspectData;                                     // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZWeaponPartDataAsset*          K2Node_DynamicCast_AsSBZWeapon_Part_Data_Asset;    // 0x0010(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZEmoteCallAsset*                     K2Node_DynamicCast_AsSBZEmote_Call_Asset;          // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZWeaponSkinDataAsset*          K2Node_DynamicCast_AsSBZWeapon_Skin_Data_Asset;    // 0x0030(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZWeaponPatternData*            K2Node_DynamicCast_AsSBZWeapon_Pattern_Data;       // 0x0040(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZSprayCanData*                 K2Node_DynamicCast_AsSBZSpray_Can_Data;            // 0x0050(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZWeaponStickerData*            K2Node_DynamicCast_AsSBZWeapon_Sticker_Data;       // 0x0060(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_5;                     // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZToolData*                           K2Node_DynamicCast_AsSBZTool_Data;                 // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_6;                     // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZPlaceableData*                      K2Node_DynamicCast_AsSBZPlaceable_Data;            // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_7;                     // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZThrowableData*                      K2Node_DynamicCast_AsSBZThrowable_Data;            // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_8;                     // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZArmorData*                          K2Node_DynamicCast_AsSBZArmor_Data;                // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_9;                     // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZGloveData*                          K2Node_DynamicCast_AsSBZGlove_Data;                // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_10;                    // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZSuitBaseData*                 K2Node_DynamicCast_AsSBZSuit_Base_Data;            // 0x00C0(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_11;                    // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZMaskPreconfigData*            K2Node_DynamicCast_AsSBZMask_Preconfig_Data;       // 0x00D0(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_12;                    // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZMaskVFXData*                  K2Node_DynamicCast_AsSBZMask_VFXData;              // 0x00E0(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_13;                    // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZMaskMaterialData*             K2Node_DynamicCast_AsSBZMask_Material_Data;        // 0x00F0(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_14;                    // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZMaskPatternData*              K2Node_DynamicCast_AsSBZMask_Pattern_Data;         // 0x0100(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_15;                    // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_109[0x7];                                      // 0x0109(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZMaskMouldData*                K2Node_DynamicCast_AsSBZMask_Mould_Data;           // 0x0110(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_16;                    // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_119[0x7];                                      // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMaskData*                           K2Node_DynamicCast_AsSBZMask_Data;                 // 0x0120(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_17;                    // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_129[0x7];                                      // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZWeaponPresetConfigData*             K2Node_DynamicCast_AsSBZWeapon_Preset_Config_Data; // 0x0130(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_18;                    // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_139[0x7];                                      // 0x0139(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZWeaponCharmData*              K2Node_DynamicCast_AsSBZWeapon_Charm_Data;         // 0x0140(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_19;                    // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_149[0x7];                                      // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZBaseWeaponData*                     K2Node_DynamicCast_AsSBZBase_Weapon_Data;          // 0x0150(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_20;                    // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Blackmarket_Inspect_C_OnNotifyEnd_A165E7FC40F3743584AB39B8F67756E1;
-
-// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnNotifyBegin_A165E7FC40F3743584AB39B8F67756E1
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_Blackmarket_Inspect_C_OnNotifyBegin_A165E7FC40F3743584AB39B8F67756E1 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Blackmarket_Inspect_C_OnNotifyBegin_A165E7FC40F3743584AB39B8F67756E1;
-
-// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnLoaded_BCC49D6440060E030B1348B2BC9D612B
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Blackmarket_Inspect_C_OnLoaded_BCC49D6440060E030B1348B2BC9D612B final
-{
-public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Blackmarket_Inspect_C_OnLoaded_BCC49D6440060E030B1348B2BC9D612B;
-
-// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnInterrupted_A165E7FC40F3743584AB39B8F67756E1
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_Blackmarket_Inspect_C_OnInterrupted_A165E7FC40F3743584AB39B8F67756E1 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Blackmarket_Inspect_C_OnInterrupted_A165E7FC40F3743584AB39B8F67756E1;
-
-// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnGainedStackFocused
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_Blackmarket_Inspect_C_OnGainedStackFocused final
-{
-public:
-	class FName                                   PreviousValue_OnGainedStackFocused;                // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Blackmarket_Inspect_C_OnGainedStackFocused;
-
-// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnControlReferenceClicked
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_Blackmarket_Inspect_C_OnControlReferenceClicked final
-{
-public:
-	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Blackmarket_Inspect_C_OnControlReferenceClicked;
-
-// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnCompleted_A165E7FC40F3743584AB39B8F67756E1
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_Blackmarket_Inspect_C_OnCompleted_A165E7FC40F3743584AB39B8F67756E1 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Blackmarket_Inspect_C_OnCompleted_A165E7FC40F3743584AB39B8F67756E1;
-
-// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnBlendOut_A165E7FC40F3743584AB39B8F67756E1
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_Blackmarket_Inspect_C_OnBlendOut_A165E7FC40F3743584AB39B8F67756E1 final
-{
-public:
-	class FName                                   NotifyName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Blackmarket_Inspect_C_OnBlendOut_A165E7FC40F3743584AB39B8F67756E1;
+DUMPER7_ASSERTS_WBP_UI_Blackmarket_Inspect_C_CanInspectItem;
 
 // Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.ExecuteUbergraph_WBP_UI_Blackmarket_Inspect
 // 0x1D08 (0x1D08 - 0x0000)
@@ -483,78 +484,77 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_Blackmarket_Inspect_C_ExecuteUbergraph_WBP_UI_Blackmarket_Inspect;
 
-// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.CanInspectItem
-// 0x0160 (0x0160 - 0x0000)
-struct WBP_UI_Blackmarket_Inspect_C_CanInspectItem final
+// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnBlendOut_A165E7FC40F3743584AB39B8F67756E1
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_Blackmarket_Inspect_C_OnBlendOut_A165E7FC40F3743584AB39B8F67756E1 final
 {
 public:
-	const class USBZInventoryBaseData*            InInspectData_CanInspectItem;                      // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          ReturnValue_CanInspectItem;                        // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZWeaponPartDataAsset*          K2Node_DynamicCast_AsSBZWeapon_Part_Data_Asset;    // 0x0010(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZEmoteCallAsset*                     K2Node_DynamicCast_AsSBZEmote_Call_Asset;          // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZWeaponSkinDataAsset*          K2Node_DynamicCast_AsSBZWeapon_Skin_Data_Asset;    // 0x0030(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZWeaponPatternData*            K2Node_DynamicCast_AsSBZWeapon_Pattern_Data;       // 0x0040(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZSprayCanData*                 K2Node_DynamicCast_AsSBZSpray_Can_Data;            // 0x0050(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZWeaponStickerData*            K2Node_DynamicCast_AsSBZWeapon_Sticker_Data;       // 0x0060(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_5;                     // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZToolData*                           K2Node_DynamicCast_AsSBZTool_Data;                 // 0x0070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_6;                     // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZPlaceableData*                      K2Node_DynamicCast_AsSBZPlaceable_Data;            // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_7;                     // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZThrowableData*                      K2Node_DynamicCast_AsSBZThrowable_Data;            // 0x0090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_8;                     // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_99[0x7];                                       // 0x0099(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZArmorData*                          K2Node_DynamicCast_AsSBZArmor_Data;                // 0x00A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_9;                     // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A9[0x7];                                       // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZGloveData*                          K2Node_DynamicCast_AsSBZGlove_Data;                // 0x00B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_10;                    // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZSuitBaseData*                 K2Node_DynamicCast_AsSBZSuit_Base_Data;            // 0x00C0(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_11;                    // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZMaskPreconfigData*            K2Node_DynamicCast_AsSBZMask_Preconfig_Data;       // 0x00D0(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_12;                    // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZMaskVFXData*                  K2Node_DynamicCast_AsSBZMask_VFXData;              // 0x00E0(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_13;                    // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZMaskMaterialData*             K2Node_DynamicCast_AsSBZMask_Material_Data;        // 0x00F0(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_14;                    // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZMaskPatternData*              K2Node_DynamicCast_AsSBZMask_Pattern_Data;         // 0x0100(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_15;                    // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_109[0x7];                                      // 0x0109(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZMaskMouldData*                K2Node_DynamicCast_AsSBZMask_Mould_Data;           // 0x0110(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_16;                    // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_119[0x7];                                      // 0x0119(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMaskData*                           K2Node_DynamicCast_AsSBZMask_Data;                 // 0x0120(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_17;                    // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_129[0x7];                                      // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZWeaponPresetConfigData*             K2Node_DynamicCast_AsSBZWeapon_Preset_Config_Data; // 0x0130(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_18;                    // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_139[0x7];                                      // 0x0139(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZWeaponCharmData*              K2Node_DynamicCast_AsSBZWeapon_Charm_Data;         // 0x0140(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_19;                    // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_149[0x7];                                      // 0x0149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZBaseWeaponData*                     K2Node_DynamicCast_AsSBZBase_Weapon_Data;          // 0x0150(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_20;                    // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   NotifyName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Blackmarket_Inspect_C_CanInspectItem;
+DUMPER7_ASSERTS_WBP_UI_Blackmarket_Inspect_C_OnBlendOut_A165E7FC40F3743584AB39B8F67756E1;
+
+// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnCompleted_A165E7FC40F3743584AB39B8F67756E1
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_Blackmarket_Inspect_C_OnCompleted_A165E7FC40F3743584AB39B8F67756E1 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Blackmarket_Inspect_C_OnCompleted_A165E7FC40F3743584AB39B8F67756E1;
+
+// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnControlReferenceClicked
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_Blackmarket_Inspect_C_OnControlReferenceClicked final
+{
+public:
+	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Blackmarket_Inspect_C_OnControlReferenceClicked;
+
+// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnGainedStackFocused
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_Blackmarket_Inspect_C_OnGainedStackFocused final
+{
+public:
+	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Blackmarket_Inspect_C_OnGainedStackFocused;
+
+// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnInterrupted_A165E7FC40F3743584AB39B8F67756E1
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_Blackmarket_Inspect_C_OnInterrupted_A165E7FC40F3743584AB39B8F67756E1 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Blackmarket_Inspect_C_OnInterrupted_A165E7FC40F3743584AB39B8F67756E1;
+
+// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnLoaded_BCC49D6440060E030B1348B2BC9D612B
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_Blackmarket_Inspect_C_OnLoaded_BCC49D6440060E030B1348B2BC9D612B final
+{
+public:
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Blackmarket_Inspect_C_OnLoaded_BCC49D6440060E030B1348B2BC9D612B;
+
+// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnNotifyBegin_A165E7FC40F3743584AB39B8F67756E1
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_Blackmarket_Inspect_C_OnNotifyBegin_A165E7FC40F3743584AB39B8F67756E1 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Blackmarket_Inspect_C_OnNotifyBegin_A165E7FC40F3743584AB39B8F67756E1;
+
+// Function WBP_UI_Blackmarket_Inspect.WBP_UI_Blackmarket_Inspect_C.OnNotifyEnd_A165E7FC40F3743584AB39B8F67756E1
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_Blackmarket_Inspect_C_OnNotifyEnd_A165E7FC40F3743584AB39B8F67756E1 final
+{
+public:
+	class FName                                   NotifyName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Blackmarket_Inspect_C_OnNotifyEnd_A165E7FC40F3743584AB39B8F67756E1;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

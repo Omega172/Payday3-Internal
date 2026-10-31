@@ -18,25 +18,25 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_SwatVan_Spawner.BP_SwatVan_Spawner_C
-// 0x0050 (0x0980 - 0x0930)
+// 0x0050 (0x0A80 - 0x0A30)
 class ABP_SwatVan_Spawner_C final : public ABP_SwatVan_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BP_SwatVan_Spawner_C;               // 0x0930(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UChildActorComponent*                   Spawn_5;                                           // 0x0938(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   Spawn_4;                                           // 0x0940(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   Spawn_2;                                           // 0x0948(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   Spawn_3;                                           // 0x0950(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   Spawn1;                                            // 0x0958(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   Spawn2;                                            // 0x0960(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   SpawnGroup;                                        // 0x0968(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USBZVehicleSpawnComponent*              SBZVehicleSpawn;                                   // 0x0970(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                Spawners;                                          // 0x0978(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_SwatVan_Spawner_C;               // 0x0A30(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UChildActorComponent*                   Spawn_5;                                           // 0x0A38(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   Spawn_4;                                           // 0x0A40(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   Spawn_2;                                           // 0x0A48(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   Spawn_3;                                           // 0x0A50(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   Spawn1;                                            // 0x0A58(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   Spawn2;                                            // 0x0A60(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   SpawnGroup;                                        // 0x0A68(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZVehicleSpawnComponent*              SBZVehicleSpawn;                                   // 0x0A70(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                Spawners;                                          // 0x0A78(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_SwatVan_Spawner(int32 EntryPoint);
-	void PawnSpawned(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
 	void ReceiveBeginPlay();
+	void PawnSpawned(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
+	void ExecuteUbergraph_BP_SwatVan_Spawner(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -52,5 +52,6 @@ public:
 		return GetDefaultObjImpl<ABP_SwatVan_Spawner_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SwatVan_Spawner_C;
 
 SDK_NAMESPACE_END

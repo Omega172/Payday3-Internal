@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_MicroCamera_Preview_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_MicroCamera_Preview_C;
 
 SDK_NAMESPACE_END

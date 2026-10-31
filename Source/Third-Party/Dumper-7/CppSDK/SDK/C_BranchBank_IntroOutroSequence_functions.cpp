@@ -16,6 +16,36 @@
 
 SDK_NAMESPACE_START
 
+// Function C_BranchBank_IntroOutroSequence.C_BranchBank_IntroOutroSequence_C.OnIntroFinished
+// (BlueprintCallable, BlueprintEvent)
+
+void AC_BranchBank_IntroOutroSequence_C::OnIntroFinished()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnIntroFinished", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function C_BranchBank_IntroOutroSequence.C_BranchBank_IntroOutroSequence_C.IntroSequenceChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    bIsStarted_IntroSequenceChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AC_BranchBank_IntroOutroSequence_C::IntroSequenceChanged(bool bIsStarted_IntroSequenceChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IntroSequenceChanged", FnName));
+
+	Params::C_BranchBank_IntroOutroSequence_C_IntroSequenceChanged Parms{};
+
+	Parms.bIsStarted_IntroSequenceChanged = bIsStarted_IntroSequenceChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function C_BranchBank_IntroOutroSequence.C_BranchBank_IntroOutroSequence_C.ExecuteUbergraph_C_BranchBank_IntroOutroSequence
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,50 +53,14 @@ SDK_NAMESPACE_START
 
 void AC_BranchBank_IntroOutroSequence_C::ExecuteUbergraph_C_BranchBank_IntroOutroSequence(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_BranchBank_IntroOutroSequence_C", "ExecuteUbergraph_C_BranchBank_IntroOutroSequence");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "C_BranchBank_IntroOutroSequence_C", "ExecuteUbergraph_C_BranchBank_IntroOutroSequence", FuncInfo);
 
 	Params::C_BranchBank_IntroOutroSequence_C_ExecuteUbergraph_C_BranchBank_IntroOutroSequence Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function C_BranchBank_IntroOutroSequence.C_BranchBank_IntroOutroSequence_C.IntroSequenceChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    bIsStarted                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AC_BranchBank_IntroOutroSequence_C::IntroSequenceChanged(bool bIsStarted)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_BranchBank_IntroOutroSequence_C", "IntroSequenceChanged");
-
-	Params::C_BranchBank_IntroOutroSequence_C_IntroSequenceChanged Parms{};
-
-	Parms.bIsStarted = bIsStarted;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function C_BranchBank_IntroOutroSequence.C_BranchBank_IntroOutroSequence_C.OnIntroFinished
-// (BlueprintCallable, BlueprintEvent)
-
-void AC_BranchBank_IntroOutroSequence_C::OnIntroFinished()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_BranchBank_IntroOutroSequence_C", "OnIntroFinished");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

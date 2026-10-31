@@ -16,83 +16,100 @@
 
 SDK_NAMESPACE_START
 
-// Function AKSplineEmitter_CLOSEDLOOP.AKSplineEmitter_CLOSEDLOOP_C.AKSE_Player_Spawned
-// (BlueprintCallable, BlueprintEvent)
+// Function AKSplineEmitter_CLOSEDLOOP.AKSplineEmitter_CLOSEDLOOP_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void AAKSplineEmitter_CLOSEDLOOP_C::AKSE_Player_Spawned()
+void AAKSplineEmitter_CLOSEDLOOP_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AKSplineEmitter_CLOSEDLOOP_C", "AKSE_Player_Spawned");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function AKSplineEmitter_CLOSEDLOOP.AKSplineEmitter_CLOSEDLOOP_C.ExecuteUbergraph_AKSplineEmitter_CLOSEDLOOP
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function AKSplineEmitter_CLOSEDLOOP.AKSplineEmitter_CLOSEDLOOP_C.UpdateEmitterLocationProxy
+// (BlueprintCallable, BlueprintEvent)
 
-void AAKSplineEmitter_CLOSEDLOOP_C::ExecuteUbergraph_AKSplineEmitter_CLOSEDLOOP(int32 EntryPoint)
+void AAKSplineEmitter_CLOSEDLOOP_C::UpdateEmitterLocationProxy()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateEmitterLocationProxy", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("AKSplineEmitter_CLOSEDLOOP_C", "ExecuteUbergraph_AKSplineEmitter_CLOSEDLOOP");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::AKSplineEmitter_CLOSEDLOOP_C_ExecuteUbergraph_AKSplineEmitter_CLOSEDLOOP Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+// Function AKSplineEmitter_CLOSEDLOOP.AKSplineEmitter_CLOSEDLOOP_C.Update Emitter Slowly
+// (BlueprintCallable, BlueprintEvent)
+
+void AAKSplineEmitter_CLOSEDLOOP_C::Update_Emitter_Slowly()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Update Emitter Slowly", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AKSplineEmitter_CLOSEDLOOP.AKSplineEmitter_CLOSEDLOOP_C.Set AK State
+// (BlueprintCallable, BlueprintEvent)
+
+void AAKSplineEmitter_CLOSEDLOOP_C::Set_AK_State()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set AK State", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AKSplineEmitter_CLOSEDLOOP.AKSplineEmitter_CLOSEDLOOP_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds_ReceiveTick                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AAKSplineEmitter_CLOSEDLOOP_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveTick", FnName));
+
+	Params::AKSplineEmitter_CLOSEDLOOP_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds_ReceiveTick = DeltaSeconds_ReceiveTick;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function AKSplineEmitter_CLOSEDLOOP.AKSplineEmitter_CLOSEDLOOP_C.GetControlledPawnLocation
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class APawn**                           ControlledPawnReference                                (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// struct FVector*                         ControlledPawnLocation                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function AKSplineEmitter_CLOSEDLOOP.AKSplineEmitter_CLOSEDLOOP_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void AAKSplineEmitter_CLOSEDLOOP_C::GetControlledPawnLocation(class APawn** ControlledPawnReference, struct FVector* ControlledPawnLocation)
+void AAKSplineEmitter_CLOSEDLOOP_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("AKSplineEmitter_CLOSEDLOOP_C", "GetControlledPawnLocation");
-
-	Params::AKSplineEmitter_CLOSEDLOOP_C_GetControlledPawnLocation Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (ControlledPawnReference != nullptr)
-		*ControlledPawnReference = Parms.ControlledPawnReference;
-
-	if (ControlledPawnLocation != nullptr)
-		*ControlledPawnLocation = std::move(Parms.ControlledPawnLocation);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function AKSplineEmitter_CLOSEDLOOP.AKSplineEmitter_CLOSEDLOOP_C.GetDistanceToPlayerFromClosestSplinePoint
+// Function AKSplineEmitter_CLOSEDLOOP.AKSplineEmitter_CLOSEDLOOP_C.GetPlayerControllerCameraRotation
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// double*                                 DistanceToPlayerFromClosestSplinePoint                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FRotator*                        PlayerControllerCameraRotation                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void AAKSplineEmitter_CLOSEDLOOP_C::GetDistanceToPlayerFromClosestSplinePoint(double* DistanceToPlayerFromClosestSplinePoint)
+void AAKSplineEmitter_CLOSEDLOOP_C::GetPlayerControllerCameraRotation(struct FRotator* PlayerControllerCameraRotation)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetPlayerControllerCameraRotation", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("AKSplineEmitter_CLOSEDLOOP_C", "GetDistanceToPlayerFromClosestSplinePoint");
-
-	Params::AKSplineEmitter_CLOSEDLOOP_C_GetDistanceToPlayerFromClosestSplinePoint Parms{};
+	Params::AKSplineEmitter_CLOSEDLOOP_C_GetPlayerControllerCameraRotation Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (DistanceToPlayerFromClosestSplinePoint != nullptr)
-		*DistanceToPlayerFromClosestSplinePoint = Parms.DistanceToPlayerFromClosestSplinePoint;
+	if (PlayerControllerCameraRotation != nullptr)
+		*PlayerControllerCameraRotation = std::move(Parms.PlayerControllerCameraRotation);
 }
 
 
@@ -104,10 +121,8 @@ void AAKSplineEmitter_CLOSEDLOOP_C::GetDistanceToPlayerFromClosestSplinePoint(do
 
 void AAKSplineEmitter_CLOSEDLOOP_C::GetIsInsideSpline(bool* IsInsideSpline_, bool* IsInsideSplineChanged_)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AKSplineEmitter_CLOSEDLOOP_C", "GetIsInsideSpline");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetIsInsideSpline", FnName));
 
 	Params::AKSplineEmitter_CLOSEDLOOP_C_GetIsInsideSpline Parms{};
 
@@ -121,112 +136,73 @@ void AAKSplineEmitter_CLOSEDLOOP_C::GetIsInsideSpline(bool* IsInsideSpline_, boo
 }
 
 
-// Function AKSplineEmitter_CLOSEDLOOP.AKSplineEmitter_CLOSEDLOOP_C.GetPlayerControllerCameraRotation
+// Function AKSplineEmitter_CLOSEDLOOP.AKSplineEmitter_CLOSEDLOOP_C.GetDistanceToPlayerFromClosestSplinePoint
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FRotator*                        PlayerControllerCameraRotation                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// double*                                 DistanceToPlayerFromClosestSplinePoint                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AAKSplineEmitter_CLOSEDLOOP_C::GetPlayerControllerCameraRotation(struct FRotator* PlayerControllerCameraRotation)
+void AAKSplineEmitter_CLOSEDLOOP_C::GetDistanceToPlayerFromClosestSplinePoint(double* DistanceToPlayerFromClosestSplinePoint)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetDistanceToPlayerFromClosestSplinePoint", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("AKSplineEmitter_CLOSEDLOOP_C", "GetPlayerControllerCameraRotation");
-
-	Params::AKSplineEmitter_CLOSEDLOOP_C_GetPlayerControllerCameraRotation Parms{};
+	Params::AKSplineEmitter_CLOSEDLOOP_C_GetDistanceToPlayerFromClosestSplinePoint Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (PlayerControllerCameraRotation != nullptr)
-		*PlayerControllerCameraRotation = std::move(Parms.PlayerControllerCameraRotation);
+	if (DistanceToPlayerFromClosestSplinePoint != nullptr)
+		*DistanceToPlayerFromClosestSplinePoint = Parms.DistanceToPlayerFromClosestSplinePoint;
 }
 
 
-// Function AKSplineEmitter_CLOSEDLOOP.AKSplineEmitter_CLOSEDLOOP_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AAKSplineEmitter_CLOSEDLOOP_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AKSplineEmitter_CLOSEDLOOP_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AKSplineEmitter_CLOSEDLOOP.AKSplineEmitter_CLOSEDLOOP_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
+// Function AKSplineEmitter_CLOSEDLOOP.AKSplineEmitter_CLOSEDLOOP_C.GetControlledPawnLocation
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APawn**                           ControlledPawnReference                                (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FVector*                         ControlledPawnLocation                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AAKSplineEmitter_CLOSEDLOOP_C::ReceiveTick(float DeltaSeconds)
+void AAKSplineEmitter_CLOSEDLOOP_C::GetControlledPawnLocation(class APawn** ControlledPawnReference, struct FVector* ControlledPawnLocation)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetControlledPawnLocation", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("AKSplineEmitter_CLOSEDLOOP_C", "ReceiveTick");
+	Params::AKSplineEmitter_CLOSEDLOOP_C_GetControlledPawnLocation Parms{};
 
-	Params::AKSplineEmitter_CLOSEDLOOP_C_ReceiveTick Parms{};
+	UObject::ProcessEvent(Func, &Parms);
 
-	Parms.DeltaSeconds = DeltaSeconds;
+	if (ControlledPawnReference != nullptr)
+		*ControlledPawnReference = Parms.ControlledPawnReference;
+
+	if (ControlledPawnLocation != nullptr)
+		*ControlledPawnLocation = std::move(Parms.ControlledPawnLocation);
+}
+
+
+// Function AKSplineEmitter_CLOSEDLOOP.AKSplineEmitter_CLOSEDLOOP_C.ExecuteUbergraph_AKSplineEmitter_CLOSEDLOOP
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AAKSplineEmitter_CLOSEDLOOP_C::ExecuteUbergraph_AKSplineEmitter_CLOSEDLOOP(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "AKSplineEmitter_CLOSEDLOOP_C", "ExecuteUbergraph_AKSplineEmitter_CLOSEDLOOP", FuncInfo);
+
+	Params::AKSplineEmitter_CLOSEDLOOP_C_ExecuteUbergraph_AKSplineEmitter_CLOSEDLOOP Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function AKSplineEmitter_CLOSEDLOOP.AKSplineEmitter_CLOSEDLOOP_C.Set AK State
+// Function AKSplineEmitter_CLOSEDLOOP.AKSplineEmitter_CLOSEDLOOP_C.AKSE_Player_Spawned
 // (BlueprintCallable, BlueprintEvent)
 
-void AAKSplineEmitter_CLOSEDLOOP_C::Set_AK_State()
+void AAKSplineEmitter_CLOSEDLOOP_C::AKSE_Player_Spawned()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AKSplineEmitter_CLOSEDLOOP_C", "Set AK State");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AKSplineEmitter_CLOSEDLOOP.AKSplineEmitter_CLOSEDLOOP_C.Update Emitter Slowly
-// (BlueprintCallable, BlueprintEvent)
-
-void AAKSplineEmitter_CLOSEDLOOP_C::Update_Emitter_Slowly()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AKSplineEmitter_CLOSEDLOOP_C", "Update Emitter Slowly");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AKSplineEmitter_CLOSEDLOOP.AKSplineEmitter_CLOSEDLOOP_C.UpdateEmitterLocationProxy
-// (BlueprintCallable, BlueprintEvent)
-
-void AAKSplineEmitter_CLOSEDLOOP_C::UpdateEmitterLocationProxy()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AKSplineEmitter_CLOSEDLOOP_C", "UpdateEmitterLocationProxy");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AKSplineEmitter_CLOSEDLOOP.AKSplineEmitter_CLOSEDLOOP_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void AAKSplineEmitter_CLOSEDLOOP_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AKSplineEmitter_CLOSEDLOOP_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AKSE_Player_Spawned", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

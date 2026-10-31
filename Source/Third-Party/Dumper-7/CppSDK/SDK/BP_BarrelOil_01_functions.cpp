@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_BarrelOil_01.BP_BarrelOil_01_C.ExecuteUbergraph_BP_BarrelOil_01
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BarrelOil_01_C::ExecuteUbergraph_BP_BarrelOil_01(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_BarrelOil_01_C", "ExecuteUbergraph_BP_BarrelOil_01", FuncInfo);
+
+	Params::BP_BarrelOil_01_C_ExecuteUbergraph_BP_BarrelOil_01 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_BarrelOil_01.BP_BarrelOil_01_C.BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -24,35 +42,13 @@ SDK_NAMESPACE_START
 
 void ABP_BarrelOil_01_C::BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature(class UActorComponent* Component, bool bReset)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BarrelOil_01_C", "BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature", FnName));
 
 	Params::BP_BarrelOil_01_C_BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature Parms{};
 
 	Parms.Component = Component;
 	Parms.bReset = bReset;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BarrelOil_01.BP_BarrelOil_01_C.ExecuteUbergraph_BP_BarrelOil_01
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BarrelOil_01_C::ExecuteUbergraph_BP_BarrelOil_01(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BarrelOil_01_C", "ExecuteUbergraph_BP_BarrelOil_01");
-
-	Params::BP_BarrelOil_01_C_ExecuteUbergraph_BP_BarrelOil_01 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

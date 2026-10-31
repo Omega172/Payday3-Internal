@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UNQF_Escort_GoToPoint_C>();
 	}
 };
+DUMPER7_ASSERTS_UNQF_Escort_GoToPoint_C;
 
 SDK_NAMESPACE_END

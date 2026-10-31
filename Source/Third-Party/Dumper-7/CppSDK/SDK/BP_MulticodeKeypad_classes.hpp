@@ -57,23 +57,23 @@ public:
 	int32                                         lastSabotageState;                                 // 0x05E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void activatePanel();
-	void bindSaboPoints();
-	void BndEvt__BP_MulticodeKeypad_sabotageState_SBZIntState_K2Node_ComponentBoundEvent_4_SBZIntStateChangedSignature__DelegateSignature(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void BndEvt__BP_MulticodeKeypadTest_activate_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BP_OnCodeIndexChanged(int32 CurrentIndex, const class FText& Identifier);
-	void BP_OnGuessedCodeChanged(const class FText& GuessedCodeText);
-	void BP_OnKeypadFocusChanged(const int32 KeyIndex, bool bInNewState);
-	void BP_OnStateChanged(ESBZModuleActorState NewState, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_MulticodeKeypad(int32 EntryPoint);
-	void onHackPointInterrupted(ESBZHackableActorInterruptReason Reason);
-	void onHackPointResumed();
-	void onSaboPointSabotaged(bool bSabotaged);
-	void ReceiveBeginPlay();
-	void setKeyCollision(bool enabled);
-	void setScreenState(bool enabled);
-	void setUISlateRenderTarget();
 	void UserConstructionScript();
+	void setUISlateRenderTarget();
+	void setScreenState(bool enabled);
+	void setKeyCollision(bool enabled);
+	void ReceiveBeginPlay();
+	void onSaboPointSabotaged(bool bSabotaged);
+	void onHackPointResumed();
+	void onHackPointInterrupted(ESBZHackableActorInterruptReason Reason);
+	void ExecuteUbergraph_BP_MulticodeKeypad(int32 EntryPoint);
+	void BP_OnStateChanged(ESBZModuleActorState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged);
+	void BP_OnKeypadFocusChanged(const int32 KeyIndex_BP_OnKeypadFocusChanged, bool bInNewState_BP_OnKeypadFocusChanged);
+	void BP_OnGuessedCodeChanged(const class FText& GuessedCodeText_BP_OnGuessedCodeChanged);
+	void BP_OnCodeIndexChanged(int32 CurrentIndex_BP_OnCodeIndexChanged, const class FText& Identifier_BP_OnCodeIndexChanged);
+	void BndEvt__BP_MulticodeKeypadTest_activate_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_MulticodeKeypad_sabotageState_SBZIntState_K2Node_ComponentBoundEvent_4_SBZIntStateChangedSignature__DelegateSignature(int32 OldState, int32 NewState, bool bDoCosmetics);
+	void bindSaboPoints();
+	void activatePanel();
 
 public:
 	static class UClass* StaticClass()
@@ -89,5 +89,6 @@ public:
 		return GetDefaultObjImpl<ABP_MulticodeKeypad_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_MulticodeKeypad_C;
 
 SDK_NAMESPACE_END

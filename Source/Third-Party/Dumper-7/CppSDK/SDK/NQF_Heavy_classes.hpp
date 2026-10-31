@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UNQF_Heavy_C>();
 	}
 };
+DUMPER7_ASSERTS_UNQF_Heavy_C;
 
 SDK_NAMESPACE_END

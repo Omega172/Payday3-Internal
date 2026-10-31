@@ -16,21 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_SewerBars.BP_SewerBars_C.ExecuteUbergraph_BP_SewerBars
-// (Final, UbergraphFunction)
+// Function BP_SewerBars.BP_SewerBars_C.setInteraction
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bEnabled                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SewerBars_C::ExecuteUbergraph_BP_SewerBars(int32 EntryPoint)
+void ABP_SewerBars_C::setInteraction(bool bEnabled)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setInteraction", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SewerBars_C", "ExecuteUbergraph_BP_SewerBars");
+	Params::BP_SewerBars_C_setInteraction Parms{};
 
-	Params::BP_SewerBars_C_ExecuteUbergraph_BP_SewerBars Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.bEnabled = bEnabled;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -41,30 +39,26 @@ void ABP_SewerBars_C::ExecuteUbergraph_BP_SewerBars(int32 EntryPoint)
 
 void ABP_SewerBars_C::OnCutCompleted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SewerBars_C", "OnCutCompleted");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnCutCompleted", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_SewerBars.BP_SewerBars_C.setInteraction
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_SewerBars.BP_SewerBars_C.ExecuteUbergraph_BP_SewerBars
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    bEnabled                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SewerBars_C::setInteraction(bool bEnabled)
+void ABP_SewerBars_C::ExecuteUbergraph_BP_SewerBars(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_SewerBars_C", "ExecuteUbergraph_BP_SewerBars", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SewerBars_C", "setInteraction");
+	Params::BP_SewerBars_C_ExecuteUbergraph_BP_SewerBars Parms{};
 
-	Params::BP_SewerBars_C_setInteraction Parms{};
-
-	Parms.bEnabled = bEnabled;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

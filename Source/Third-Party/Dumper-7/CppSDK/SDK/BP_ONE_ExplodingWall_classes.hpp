@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_BaseExplodingWall_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -31,10 +31,10 @@ public:
 	class USBZRoomConnectorComponent*             SBZRoomConnector;                                  // 0x05F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnExplosion(bool bDoCosmetics);
-	void ExecuteUbergraph_BP_ONE_ExplodingWall(int32 EntryPoint);
+	void spawnExplosionVFX(bool doCosmetics_spawnExplosionVFX);
 	void ReceiveBeginPlay();
-	void spawnExplosionVFX(bool doCosmetics);
+	void ExecuteUbergraph_BP_ONE_ExplodingWall(int32 EntryPoint);
+	void BP_OnExplosion(bool bDoCosmetics_BP_OnExplosion);
 
 public:
 	static class UClass* StaticClass()
@@ -50,5 +50,6 @@ public:
 		return GetDefaultObjImpl<ABP_ONE_ExplodingWall_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ONE_ExplodingWall_C;
 
 SDK_NAMESPACE_END

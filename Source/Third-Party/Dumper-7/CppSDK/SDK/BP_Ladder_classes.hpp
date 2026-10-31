@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_Ladder_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Ladder_C;
 
 SDK_NAMESPACE_END

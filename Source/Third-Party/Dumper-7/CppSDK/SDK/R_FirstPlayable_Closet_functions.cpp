@@ -16,108 +16,96 @@
 
 SDK_NAMESPACE_START
 
-// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.BndEvt__BP_LanceFuelTank1_K2Node_ActorBoundEvent_1_OnAckCompleteInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void AR_FirstPlayable_Closet_C::BndEvt__BP_LanceFuelTank1_K2Node_ActorBoundEvent_1_OnAckCompleteInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor)
+void AR_FirstPlayable_Closet_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_FirstPlayable_Closet_C", "BndEvt__BP_LanceFuelTank1_K2Node_ActorBoundEvent_1_OnAckCompleteInteraction__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::R_FirstPlayable_Closet_C_BndEvt__BP_LanceFuelTank1_K2Node_ActorBoundEvent_1_OnAckCompleteInteraction__DelegateSignature Parms{};
 
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
+// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.OnRandomPlacementStarted
+// (Event, Public, BlueprintEvent)
+
+void AR_FirstPlayable_Closet_C::OnRandomPlacementStarted()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRandomPlacementStarted", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.FirstPlayable_Closet_ShowCanisters
+// (BlueprintCallable, BlueprintEvent)
+
+void AR_FirstPlayable_Closet_C::FirstPlayable_Closet_ShowCanisters()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"FirstPlayable_Closet_ShowCanisters", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.FirstPlayable_Closet_RemoveWaypoint
+// (BlueprintCallable, BlueprintEvent)
+
+void AR_FirstPlayable_Closet_C::FirstPlayable_Closet_RemoveWaypoint()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"FirstPlayable_Closet_RemoveWaypoint", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.FirstPlayable_Closet_ActivateWaypoint
+// (BlueprintCallable, BlueprintEvent)
+
+void AR_FirstPlayable_Closet_C::FirstPlayable_Closet_ActivateWaypoint()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"FirstPlayable_Closet_ActivateWaypoint", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.ExecuteUbergraph_R_FirstPlayable_Closet
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AR_FirstPlayable_Closet_C::ExecuteUbergraph_R_FirstPlayable_Closet(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "R_FirstPlayable_Closet_C", "ExecuteUbergraph_R_FirstPlayable_Closet", FuncInfo);
+
+	Params::R_FirstPlayable_Closet_C_ExecuteUbergraph_R_FirstPlayable_Closet Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.BndEvt__BP_LanceFuelTank2_K2Node_ActorBoundEvent_2_OnAckCompleteInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void AR_FirstPlayable_Closet_C::BndEvt__BP_LanceFuelTank2_K2Node_ActorBoundEvent_2_OnAckCompleteInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_FirstPlayable_Closet_C", "BndEvt__BP_LanceFuelTank2_K2Node_ActorBoundEvent_2_OnAckCompleteInteraction__DelegateSignature");
-
-	Params::R_FirstPlayable_Closet_C_BndEvt__BP_LanceFuelTank2_K2Node_ActorBoundEvent_2_OnAckCompleteInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.BndEvt__BP_LanceFuelTank3_K2Node_ActorBoundEvent_3_OnAckCompleteInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void AR_FirstPlayable_Closet_C::BndEvt__BP_LanceFuelTank3_K2Node_ActorBoundEvent_3_OnAckCompleteInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_FirstPlayable_Closet_C", "BndEvt__BP_LanceFuelTank3_K2Node_ActorBoundEvent_3_OnAckCompleteInteraction__DelegateSignature");
-
-	Params::R_FirstPlayable_Closet_C_BndEvt__BP_LanceFuelTank3_K2Node_ActorBoundEvent_3_OnAckCompleteInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.BndEvt__BP_LanceFuelTank4_K2Node_ActorBoundEvent_4_OnAckCompleteInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void AR_FirstPlayable_Closet_C::BndEvt__BP_LanceFuelTank4_K2Node_ActorBoundEvent_4_OnAckCompleteInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_FirstPlayable_Closet_C", "BndEvt__BP_LanceFuelTank4_K2Node_ActorBoundEvent_4_OnAckCompleteInteraction__DelegateSignature");
-
-	Params::R_FirstPlayable_Closet_C_BndEvt__BP_LanceFuelTank4_K2Node_ActorBoundEvent_4_OnAckCompleteInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.BndEvt__R_FirstPlayable_Closet_BP_Locker_02_2_K2Node_ActorBoundEvent_0_SBZGateStateChangedDelegate__DelegateSignature
+// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.BndEvt__R_FirstPlayable_Closet_BP_Locker_5_K2Node_ActorBoundEvent_7_SBZGateStateChangedDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AR_FirstPlayable_Closet_C::BndEvt__R_FirstPlayable_Closet_BP_Locker_02_2_K2Node_ActorBoundEvent_0_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
+void AR_FirstPlayable_Closet_C::BndEvt__R_FirstPlayable_Closet_BP_Locker_5_K2Node_ActorBoundEvent_7_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_FirstPlayable_Closet_BP_Locker_5_K2Node_ActorBoundEvent_7_SBZGateStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_FirstPlayable_Closet_C", "BndEvt__R_FirstPlayable_Closet_BP_Locker_02_2_K2Node_ActorBoundEvent_0_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::R_FirstPlayable_Closet_C_BndEvt__R_FirstPlayable_Closet_BP_Locker_02_2_K2Node_ActorBoundEvent_0_SBZGateStateChangedDelegate__DelegateSignature Parms{};
+	Params::R_FirstPlayable_Closet_C_BndEvt__R_FirstPlayable_Closet_BP_Locker_5_K2Node_ActorBoundEvent_7_SBZGateStateChangedDelegate__DelegateSignature Parms{};
 
 	Parms.OldState = OldState;
 	Parms.State = State;
@@ -134,10 +122,8 @@ void AR_FirstPlayable_Closet_C::BndEvt__R_FirstPlayable_Closet_BP_Locker_02_2_K2
 
 void AR_FirstPlayable_Closet_C::BndEvt__R_FirstPlayable_Closet_BP_Locker_3_K2Node_ActorBoundEvent_6_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_FirstPlayable_Closet_C", "BndEvt__R_FirstPlayable_Closet_BP_Locker_3_K2Node_ActorBoundEvent_6_SBZGateStateChangedDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_FirstPlayable_Closet_BP_Locker_3_K2Node_ActorBoundEvent_6_SBZGateStateChangedDelegate__DelegateSignature", FnName));
 
 	Params::R_FirstPlayable_Closet_C_BndEvt__R_FirstPlayable_Closet_BP_Locker_3_K2Node_ActorBoundEvent_6_SBZGateStateChangedDelegate__DelegateSignature Parms{};
 
@@ -148,20 +134,18 @@ void AR_FirstPlayable_Closet_C::BndEvt__R_FirstPlayable_Closet_BP_Locker_3_K2Nod
 }
 
 
-// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.BndEvt__R_FirstPlayable_Closet_BP_Locker_5_K2Node_ActorBoundEvent_7_SBZGateStateChangedDelegate__DelegateSignature
+// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.BndEvt__R_FirstPlayable_Closet_BP_Locker_02_2_K2Node_ActorBoundEvent_0_SBZGateStateChangedDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AR_FirstPlayable_Closet_C::BndEvt__R_FirstPlayable_Closet_BP_Locker_5_K2Node_ActorBoundEvent_7_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
+void AR_FirstPlayable_Closet_C::BndEvt__R_FirstPlayable_Closet_BP_Locker_02_2_K2Node_ActorBoundEvent_0_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_FirstPlayable_Closet_BP_Locker_02_2_K2Node_ActorBoundEvent_0_SBZGateStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_FirstPlayable_Closet_C", "BndEvt__R_FirstPlayable_Closet_BP_Locker_5_K2Node_ActorBoundEvent_7_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::R_FirstPlayable_Closet_C_BndEvt__R_FirstPlayable_Closet_BP_Locker_5_K2Node_ActorBoundEvent_7_SBZGateStateChangedDelegate__DelegateSignature Parms{};
+	Params::R_FirstPlayable_Closet_C_BndEvt__R_FirstPlayable_Closet_BP_Locker_02_2_K2Node_ActorBoundEvent_0_SBZGateStateChangedDelegate__DelegateSignature Parms{};
 
 	Parms.OldState = OldState;
 	Parms.State = State;
@@ -170,93 +154,83 @@ void AR_FirstPlayable_Closet_C::BndEvt__R_FirstPlayable_Closet_BP_Locker_5_K2Nod
 }
 
 
-// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.ExecuteUbergraph_R_FirstPlayable_Closet
-// (Final, UbergraphFunction, HasDefaults)
+// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.BndEvt__BP_LanceFuelTank4_K2Node_ActorBoundEvent_4_OnAckCompleteInteraction__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void AR_FirstPlayable_Closet_C::ExecuteUbergraph_R_FirstPlayable_Closet(int32 EntryPoint)
+void AR_FirstPlayable_Closet_C::BndEvt__BP_LanceFuelTank4_K2Node_ActorBoundEvent_4_OnAckCompleteInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_LanceFuelTank4_K2Node_ActorBoundEvent_4_OnAckCompleteInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_FirstPlayable_Closet_C", "ExecuteUbergraph_R_FirstPlayable_Closet");
+	Params::R_FirstPlayable_Closet_C_BndEvt__BP_LanceFuelTank4_K2Node_ActorBoundEvent_4_OnAckCompleteInteraction__DelegateSignature Parms{};
 
-	Params::R_FirstPlayable_Closet_C_ExecuteUbergraph_R_FirstPlayable_Closet Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.FirstPlayable_Closet_ActivateWaypoint
-// (BlueprintCallable, BlueprintEvent)
+// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.BndEvt__BP_LanceFuelTank3_K2Node_ActorBoundEvent_3_OnAckCompleteInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void AR_FirstPlayable_Closet_C::FirstPlayable_Closet_ActivateWaypoint()
+void AR_FirstPlayable_Closet_C::BndEvt__BP_LanceFuelTank3_K2Node_ActorBoundEvent_3_OnAckCompleteInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_LanceFuelTank3_K2Node_ActorBoundEvent_3_OnAckCompleteInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_FirstPlayable_Closet_C", "FirstPlayable_Closet_ActivateWaypoint");
+	Params::R_FirstPlayable_Closet_C_BndEvt__BP_LanceFuelTank3_K2Node_ActorBoundEvent_3_OnAckCompleteInteraction__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.FirstPlayable_Closet_RemoveWaypoint
-// (BlueprintCallable, BlueprintEvent)
+// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.BndEvt__BP_LanceFuelTank2_K2Node_ActorBoundEvent_2_OnAckCompleteInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void AR_FirstPlayable_Closet_C::FirstPlayable_Closet_RemoveWaypoint()
+void AR_FirstPlayable_Closet_C::BndEvt__BP_LanceFuelTank2_K2Node_ActorBoundEvent_2_OnAckCompleteInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_LanceFuelTank2_K2Node_ActorBoundEvent_2_OnAckCompleteInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_FirstPlayable_Closet_C", "FirstPlayable_Closet_RemoveWaypoint");
+	Params::R_FirstPlayable_Closet_C_BndEvt__BP_LanceFuelTank2_K2Node_ActorBoundEvent_2_OnAckCompleteInteraction__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.FirstPlayable_Closet_ShowCanisters
-// (BlueprintCallable, BlueprintEvent)
+// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.BndEvt__BP_LanceFuelTank1_K2Node_ActorBoundEvent_1_OnAckCompleteInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void AR_FirstPlayable_Closet_C::FirstPlayable_Closet_ShowCanisters()
+void AR_FirstPlayable_Closet_C::BndEvt__BP_LanceFuelTank1_K2Node_ActorBoundEvent_1_OnAckCompleteInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_LanceFuelTank1_K2Node_ActorBoundEvent_1_OnAckCompleteInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_FirstPlayable_Closet_C", "FirstPlayable_Closet_ShowCanisters");
+	Params::R_FirstPlayable_Closet_C_BndEvt__BP_LanceFuelTank1_K2Node_ActorBoundEvent_1_OnAckCompleteInteraction__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
 
-
-// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.OnRandomPlacementStarted
-// (Event, Public, BlueprintEvent)
-
-void AR_FirstPlayable_Closet_C::OnRandomPlacementStarted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_FirstPlayable_Closet_C", "OnRandomPlacementStarted");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AR_FirstPlayable_Closet_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_FirstPlayable_Closet_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

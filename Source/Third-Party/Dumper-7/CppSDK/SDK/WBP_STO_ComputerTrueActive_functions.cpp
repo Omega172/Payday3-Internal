@@ -16,20 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_STO_ComputerTrueActive.WBP_STO_ComputerTrueActive_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_STO_ComputerTrueActive_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ComputerTrueActive_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_STO_ComputerTrueActive.WBP_STO_ComputerTrueActive_C.ExecuteUbergraph_WBP_STO_ComputerTrueActive
 // (Final, UbergraphFunction)
 // Parameters:
@@ -37,16 +23,26 @@ void UWBP_STO_ComputerTrueActive_C::Construct()
 
 void UWBP_STO_ComputerTrueActive_C::ExecuteUbergraph_WBP_STO_ComputerTrueActive(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ComputerTrueActive_C", "ExecuteUbergraph_WBP_STO_ComputerTrueActive");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_STO_ComputerTrueActive_C", "ExecuteUbergraph_WBP_STO_ComputerTrueActive", FuncInfo);
 
 	Params::WBP_STO_ComputerTrueActive_C_ExecuteUbergraph_WBP_STO_ComputerTrueActive Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_STO_ComputerTrueActive.WBP_STO_ComputerTrueActive_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_STO_ComputerTrueActive_C::Construct()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -16,21 +16,31 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Club_Spotlights.BP_Club_Spotlights_C.ExecuteUbergraph_BP_Club_Spotlights
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Club_Spotlights.BP_Club_Spotlights_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Club_Spotlights_C::ExecuteUbergraph_BP_Club_Spotlights(int32 EntryPoint)
+void ABP_Club_Spotlights_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Club_Spotlights_C", "ExecuteUbergraph_BP_Club_Spotlights");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_Club_Spotlights_C_ExecuteUbergraph_BP_Club_Spotlights Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+// Function BP_Club_Spotlights.BP_Club_Spotlights_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds_ReceiveTick                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Club_Spotlights_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveTick", FnName));
+
+	Params::BP_Club_Spotlights_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds_ReceiveTick = DeltaSeconds_ReceiveTick;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -41,46 +51,28 @@ void ABP_Club_Spotlights_C::ExecuteUbergraph_BP_Club_Spotlights(int32 EntryPoint
 
 void ABP_Club_Spotlights_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Club_Spotlights_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Club_Spotlights.BP_Club_Spotlights_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
+// Function BP_Club_Spotlights.BP_Club_Spotlights_C.ExecuteUbergraph_BP_Club_Spotlights
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Club_Spotlights_C::ReceiveTick(float DeltaSeconds)
+void ABP_Club_Spotlights_C::ExecuteUbergraph_BP_Club_Spotlights(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Club_Spotlights_C", "ExecuteUbergraph_BP_Club_Spotlights", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Club_Spotlights_C", "ReceiveTick");
+	Params::BP_Club_Spotlights_C_ExecuteUbergraph_BP_Club_Spotlights Parms{};
 
-	Params::BP_Club_Spotlights_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Club_Spotlights.BP_Club_Spotlights_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_Club_Spotlights_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Club_Spotlights_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

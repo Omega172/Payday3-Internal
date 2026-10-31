@@ -21,10 +21,8 @@ SDK_NAMESPACE_START
 
 void APF_Int_FI_Restaurant_01_HungryBob_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PF_Int_FI_Restaurant_01_HungryBob_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

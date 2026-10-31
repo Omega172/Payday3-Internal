@@ -45,12 +45,12 @@ public:
 	class ASBZAmbientSound*                       SBZAmbientSound_DistantSiren_01_16_ExecuteUbergraph_A_SnGBB_RefProperty; // 0x0460(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__A_BranchBank_TriggerBox2_4_K2Node_ActorBoundEvent_1_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor);
-	void BndEvt__A_BranchBank_TriggerBox_1_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor);
-	void ExecuteUbergraph_A_SnGBB(int32 EntryPoint);
-	void FirstResponders_Arrived();
-	void HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState);
 	void ReceiveBeginPlay();
+	void HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged);
+	void FirstResponders_Arrived();
+	void ExecuteUbergraph_A_SnGBB(int32 EntryPoint);
+	void BndEvt__A_BranchBank_TriggerBox_1_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor);
+	void BndEvt__A_BranchBank_TriggerBox2_4_K2Node_ActorBoundEvent_1_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor);
 
 public:
 	static class UClass* StaticClass()
@@ -66,5 +66,6 @@ public:
 		return GetDefaultObjImpl<AA_SnGBB_C>();
 	}
 };
+DUMPER7_ASSERTS_AA_SnGBB_C;
 
 SDK_NAMESPACE_END

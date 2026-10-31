@@ -43,5 +43,6 @@ public:
 		return GetDefaultObjImpl<ABP_InteractableSatellitePrototype_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_InteractableSatellitePrototype_C;
 
 SDK_NAMESPACE_END

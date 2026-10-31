@@ -31,5 +31,6 @@ public:
 	struct FThreex3_Turn_Puzzle_Struct            Threex3_PuzzleType_9_34_B8BB89234B43ABEC6E5FB6AF8A4C925A; // 0x0180(0x0030)(Edit, BlueprintVisible, ContainsInstancedReference, HasGetValueTypeHash)
 	struct FThreex3_Turn_Puzzle_Struct            Threex3_PuzzleType_10_35_09450CC7469D82A12EBE42B1B6B63993; // 0x01B0(0x0030)(Edit, BlueprintVisible, ContainsInstancedReference, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_FThreex3_All_Hacking_Minigames_Struct;
 
 SDK_NAMESPACE_END

@@ -23,10 +23,8 @@ SDK_NAMESPACE_START
 
 class FText ABP_Ladder_C::GetMarkerText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Ladder_C", "GetMarkerText");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetMarkerText", FnName));
 
 	Params::BP_Ladder_C_GetMarkerText Parms{};
 

@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "E_TeddyMoo_Mesh_structs.hpp"
 #include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "E_TeddyMoo_Variations_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "E_TeddyMoo_Mesh_structs.hpp"
 #include "Starbreeze_classes.hpp"
 #include "AkAudio_structs.hpp"
 
@@ -48,19 +48,19 @@ public:
 	class UAkAudioEvent*                          TeddyMooGrab;                                      // 0x0420(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_LootContainer_CardboardBox_01_C_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
-	void BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_TeddyMoo_pickup(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void ReceiveBeginPlay();
-	void setLoot(bool enabled);
-	void shake_timeline__FinishedFunc();
-	void shake_timeline__UpdateFunc();
-	void UserConstructionScript();
-	void VoGrabVariations();
 	void VoRipVariations();
+	void VoGrabVariations();
+	void UserConstructionScript();
+	void shake_timeline__UpdateFunc();
+	void shake_timeline__FinishedFunc();
+	void setLoot(bool enabled);
+	void ReceiveBeginPlay();
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_TeddyMoo_pickup(int32 EntryPoint);
+	void BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_LootContainer_CardboardBox_01_C_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
 
 public:
 	static class UClass* StaticClass()
@@ -76,5 +76,6 @@ public:
 		return GetDefaultObjImpl<ABP_TeddyMoo_pickup_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_TeddyMoo_pickup_C;
 
 SDK_NAMESPACE_END

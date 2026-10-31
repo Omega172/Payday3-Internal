@@ -16,6 +16,18 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_BEBE_Int_DoorOffice_01_Single_Frame_Glass_E.BP_BEBE_Int_DoorOffice_01_Single_Frame_Glass_E_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_BEBE_Int_DoorOffice_01_Single_Frame_Glass_E_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_BEBE_Int_DoorOffice_01_Single_Frame_Glass_E.BP_BEBE_Int_DoorOffice_01_Single_Frame_Glass_E_C.ExecuteUbergraph_BP_BEBE_Int_DoorOffice_01_Single_Frame_Glass_E
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,30 +35,14 @@ SDK_NAMESPACE_START
 
 void ABP_BEBE_Int_DoorOffice_01_Single_Frame_Glass_E_C::ExecuteUbergraph_BP_BEBE_Int_DoorOffice_01_Single_Frame_Glass_E(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BEBE_Int_DoorOffice_01_Single_Frame_Glass_E_C", "ExecuteUbergraph_BP_BEBE_Int_DoorOffice_01_Single_Frame_Glass_E");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_BEBE_Int_DoorOffice_01_Single_Frame_Glass_E_C", "ExecuteUbergraph_BP_BEBE_Int_DoorOffice_01_Single_Frame_Glass_E", FuncInfo);
 
 	Params::BP_BEBE_Int_DoorOffice_01_Single_Frame_Glass_E_C_ExecuteUbergraph_BP_BEBE_Int_DoorOffice_01_Single_Frame_Glass_E Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BEBE_Int_DoorOffice_01_Single_Frame_Glass_E.BP_BEBE_Int_DoorOffice_01_Single_Frame_Glass_E_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_BEBE_Int_DoorOffice_01_Single_Frame_Glass_E_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BEBE_Int_DoorOffice_01_Single_Frame_Glass_E_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

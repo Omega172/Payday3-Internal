@@ -16,6 +16,18 @@
 
 SDK_NAMESPACE_START
 
+// Function A_ONE.A_ONE_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AA_ONE_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function A_ONE.A_ONE_C.ExecuteUbergraph_A_ONE
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,30 +35,14 @@ SDK_NAMESPACE_START
 
 void AA_ONE_C::ExecuteUbergraph_A_ONE(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_ONE_C", "ExecuteUbergraph_A_ONE");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "A_ONE_C", "ExecuteUbergraph_A_ONE", FuncInfo);
 
 	Params::A_ONE_C_ExecuteUbergraph_A_ONE Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function A_ONE.A_ONE_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AA_ONE_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_ONE_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

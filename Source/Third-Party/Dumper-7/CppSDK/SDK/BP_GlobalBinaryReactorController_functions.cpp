@@ -16,21 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_GlobalBinaryReactorController.BP_GlobalBinaryReactorController_C.ExecuteUbergraph_BP_GlobalBinaryReactorController
-// (Final, UbergraphFunction)
+// Function BP_GlobalBinaryReactorController.BP_GlobalBinaryReactorController_C.setBinaryState
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    state                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_GlobalBinaryReactorController_C::ExecuteUbergraph_BP_GlobalBinaryReactorController(int32 EntryPoint)
+void ABP_GlobalBinaryReactorController_C::setBinaryState(bool state)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setBinaryState", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GlobalBinaryReactorController_C", "ExecuteUbergraph_BP_GlobalBinaryReactorController");
+	Params::BP_GlobalBinaryReactorController_C_setBinaryState Parms{};
 
-	Params::BP_GlobalBinaryReactorController_C_ExecuteUbergraph_BP_GlobalBinaryReactorController Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.state = state;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -39,42 +37,38 @@ void ABP_GlobalBinaryReactorController_C::ExecuteUbergraph_BP_GlobalBinaryReacto
 // Function BP_GlobalBinaryReactorController.BP_GlobalBinaryReactorController_C.OnStateChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   OldState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_GlobalBinaryReactorController_C::OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics)
+void ABP_GlobalBinaryReactorController_C::OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GlobalBinaryReactorController_C", "OnStateChanged");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
 	Params::BP_GlobalBinaryReactorController_C_OnStateChanged Parms{};
 
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.OldState_OnStateChanged = OldState_OnStateChanged;
+	Parms.NewState_OnStateChanged = NewState_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_GlobalBinaryReactorController.BP_GlobalBinaryReactorController_C.setBinaryState
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_GlobalBinaryReactorController.BP_GlobalBinaryReactorController_C.ExecuteUbergraph_BP_GlobalBinaryReactorController
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    state                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_GlobalBinaryReactorController_C::setBinaryState(bool state)
+void ABP_GlobalBinaryReactorController_C::ExecuteUbergraph_BP_GlobalBinaryReactorController(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_GlobalBinaryReactorController_C", "ExecuteUbergraph_BP_GlobalBinaryReactorController", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GlobalBinaryReactorController_C", "setBinaryState");
+	Params::BP_GlobalBinaryReactorController_C_ExecuteUbergraph_BP_GlobalBinaryReactorController Parms{};
 
-	Params::BP_GlobalBinaryReactorController_C_setBinaryState Parms{};
-
-	Parms.state = state;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

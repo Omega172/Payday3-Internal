@@ -40,5 +40,6 @@ public:
 		return GetDefaultObjImpl<ABP_InteractableJewelry_HighValue_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_InteractableJewelry_HighValue_C;
 
 SDK_NAMESPACE_END

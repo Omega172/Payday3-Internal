@@ -16,24 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.OnPopUpButtonPressed
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_Widget_SM_Matchmaking_C_OnPopUpButtonPressed final
-{
-public:
-	class FName                                   ClosingActionName;                                 // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_SM_Matchmaking_C_OnPopUpButtonPressed;
-
-// Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.GoToLobby
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Widget_SM_Matchmaking_C_GoToLobby final
-{
-public:
-	class USBZGameStateMachine*                   CallFunc_GetGameStateMachine_ReturnValue;          // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_SM_Matchmaking_C_GoToLobby;
-
 // Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.ExecuteUbergraph_WBP_UI_Widget_SM_Matchmaking
 // 0x0110 (0x0110 - 0x0000)
 struct WBP_UI_Widget_SM_Matchmaking_C_ExecuteUbergraph_WBP_UI_Widget_SM_Matchmaking final
@@ -64,6 +46,24 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_8;            // 0x00F8(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_SM_Matchmaking_C_ExecuteUbergraph_WBP_UI_Widget_SM_Matchmaking;
+
+// Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.GoToLobby
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_Widget_SM_Matchmaking_C_GoToLobby final
+{
+public:
+	class USBZGameStateMachine*                   CallFunc_GetGameStateMachine_ReturnValue;          // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_SM_Matchmaking_C_GoToLobby;
+
+// Function WBP_UI_Widget_SM_Matchmaking.WBP_UI_Widget_SM_Matchmaking_C.OnPopUpButtonPressed
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_Widget_SM_Matchmaking_C_OnPopUpButtonPressed final
+{
+public:
+	class FName                                   ClosingActionName;                                 // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_SM_Matchmaking_C_OnPopUpButtonPressed;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

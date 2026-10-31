@@ -16,175 +16,857 @@
 
 SDK_NAMESPACE_START
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.ActionPhaseStarted
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.TryActivateSecureZone
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::TryActivateSecureZone()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TryActivateSecureZone", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.TryActivateEscapeZone
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::TryActivateEscapeZone()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TryActivateEscapeZone", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.SwatApproaching
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::SwatApproaching()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SwatApproaching", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.StartIngredientsVO
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::StartIngredientsVO()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StartIngredientsVO", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.StartDiffecultyPogression
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::StartDiffecultyPogression()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StartDiffecultyPogression", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.Start_sniper_spawn
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::Start_sniper_spawn()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Start_sniper_spawn", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.SignalFlare
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::SignalFlare()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SignalFlare", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.SetStayTimeForVan
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::SetStayTimeForVan()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetStayTimeForVan", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.SecureMeth
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::SecureMeth()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SecureMeth", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.RestartVanEntering
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::RestartVanEntering()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RestartVanEntering", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.ReStartsSecureLoot
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::ReStartsSecureLoot()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReStartsSecureLoot", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.ResetUnpackZones
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::ResetUnpackZones()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ResetUnpackZones", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.ResetStayTimeForVan
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::ResetStayTimeForVan()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ResetStayTimeForVan", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.ResetFlareList
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::ResetFlareList()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ResetFlareList", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.ResetFlareCount
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::ResetFlareCount()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ResetFlareCount", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.ResetDroppedIngredientCount
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::ResetDroppedIngredientCount()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ResetDroppedIngredientCount", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.ReminderToEscape
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::ReminderToEscape()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReminderToEscape", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.RandomizeAmmo
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::RandomizeAmmo()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RandomizeAmmo", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.Randomize Meth Lab Location
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::Randomize_Meth_Lab_Location()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Randomize Meth Lab Location", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.PPVanShallNotLeave
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::PPVanShallNotLeave()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PPVanShallNotLeave", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.PPDebugMeth
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::PPDebugMeth()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PPDebugMeth", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.PPDebugHostages
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::PPDebugHostages()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PPDebugHostages", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.PPDebugHelicopter
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::PPDebugHelicopter()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PPDebugHelicopter", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.PowerboxRandomization
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::PowerboxRandomization()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PowerboxRandomization", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.PlayVOCountLootBags
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::PlayVOCountLootBags()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayVOCountLootBags", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.PlayersIdleForTooLong
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::PlayersIdleForTooLong()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayersIdleForTooLong", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.PlankPlaced
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::PlankPlaced()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlankPlaced", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.OnRandomPlacementStarted
 // (Event, Public, BlueprintEvent)
 
-void AG_Cookie_Scripting_C::ActionPhaseStarted()
+void AG_Cookie_Scripting_C::OnRandomPlacementStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "ActionPhaseStarted");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRandomPlacementStarted", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.ActivateEndlessAssault
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.OnPreplanningAssetsTagsApplied
+// (Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTagContainer&     PreplanningTagContainer_OnPreplanningAssetsTagsApplied (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void AG_Cookie_Scripting_C::OnPreplanningAssetsTagsApplied(const struct FGameplayTagContainer& PreplanningTagContainer_OnPreplanningAssetsTagsApplied)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPreplanningAssetsTagsApplied", FnName));
+
+	Params::G_Cookie_Scripting_C_OnPreplanningAssetsTagsApplied Parms{};
+
+	Parms.PreplanningTagContainer_OnPreplanningAssetsTagsApplied = std::move(PreplanningTagContainer_OnPreplanningAssetsTagsApplied);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.OnPlayersCarryBagChanged
+// (Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FSBZPlayersCarryBagChangedEvent&Data_OnPlayersCarryBagChanged                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+
+void AG_Cookie_Scripting_C::OnPlayersCarryBagChanged(const struct FSBZPlayersCarryBagChangedEvent& Data_OnPlayersCarryBagChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPlayersCarryBagChanged", FnName));
+
+	Params::G_Cookie_Scripting_C_OnPlayersCarryBagChanged Parms{};
+
+	Parms.Data_OnPlayersCarryBagChanged = std::move(Data_OnPlayersCarryBagChanged);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.OnPlayerPickedUpBag
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FSBZBagHandle&             BagHandle_OnPlayerPickedUpBag                          (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void AG_Cookie_Scripting_C::OnPlayerPickedUpBag(const struct FSBZBagHandle& BagHandle_OnPlayerPickedUpBag)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPlayerPickedUpBag", FnName));
+
+	Params::G_Cookie_Scripting_C_OnPlayerPickedUpBag Parms{};
+
+	Parms.BagHandle_OnPlayerPickedUpBag = std::move(BagHandle_OnPlayerPickedUpBag);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.OBJCountBags
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Cookie_Scripting_C::ActivateEndlessAssault()
+void AG_Cookie_Scripting_C::OBJCountBags()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "ActivateEndlessAssault");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OBJCountBags", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.ActivateFirstObjective
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.MissionState
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Cookie_Scripting_C::ActivateFirstObjective()
+void AG_Cookie_Scripting_C::MissionState()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "ActivateFirstObjective");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MissionState", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.ActivateSignalFlare
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.MethReadyAndCooking
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Cookie_Scripting_C::ActivateSignalFlare()
+void AG_Cookie_Scripting_C::MethReadyAndCooking()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "ActivateSignalFlare");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MethReadyAndCooking", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.ActivateSWATHelicopter
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.MaxBagBeenCooked
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Cookie_Scripting_C::ActivateSWATHelicopter()
+void AG_Cookie_Scripting_C::MaxBagBeenCooked()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "ActivateSWATHelicopter");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MaxBagBeenCooked", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.ActivateVanDriveIn
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.MakeRandomArray
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Max                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::MakeRandomArray(int32 Max)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MakeRandomArray", FnName));
+
+	Params::G_Cookie_Scripting_C_MakeRandomArray Parms{};
+
+	Parms.Max = Max;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.Lights_On
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Cookie_Scripting_C::ActivateVanDriveIn()
+void AG_Cookie_Scripting_C::Lights_On()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "ActivateVanDriveIn");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Lights_On", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.AssaultTriggered
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.Lights_Off
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Cookie_Scripting_C::AssaultTriggered()
+void AG_Cookie_Scripting_C::Lights_Off()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "AssaultTriggered");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Lights_Off", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Cookie_Scripting_BP_ZiplineBag1_K2Node_ActorBoundEvent_109_SBZBagPickedUp__DelegateSignature
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.IngredientUsed1
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::IngredientUsed1()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IngredientUsed1", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.IngredientReminder
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::IngredientReminder()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IngredientReminder", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.HeistStateChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EPD3HeistState                          OldHeistState_HeistStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPD3HeistState                          CurrentHeistState_HeistStateChanged                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HeistStateChanged", FnName));
+
+	Params::G_Cookie_Scripting_C_HeistStateChanged Parms{};
+
+	Parms.OldHeistState_HeistStateChanged = OldHeistState_HeistStateChanged;
+	Parms.CurrentHeistState_HeistStateChanged = CurrentHeistState_HeistStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.GreedVO
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::GreedVO()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GreedVO", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.GetRandomNonRepeatingInt
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Max                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32*                                  RandomInteger                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::GetRandomNonRepeatingInt(int32 Max, int32* RandomInteger)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetRandomNonRepeatingInt", FnName));
+
+	Params::G_Cookie_Scripting_C_GetRandomNonRepeatingInt Parms{};
+
+	Parms.Max = Max;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (RandomInteger != nullptr)
+		*RandomInteger = Parms.RandomInteger;
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.FristVanArrival
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::FristVanArrival()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"FristVanArrival", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.ExecuteUbergraph_G_Cookie_Scripting
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::ExecuteUbergraph_G_Cookie_Scripting(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_Cookie_Scripting_C", "ExecuteUbergraph_G_Cookie_Scripting", FuncInfo);
+
+	Params::G_Cookie_Scripting_C_ExecuteUbergraph_G_Cookie_Scripting Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.EnableMethlab
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::EnableMethlab()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EnableMethlab", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.DriveAwayGetaway
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::DriveAwayGetaway()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DriveAwayGetaway", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.CountMaxLoot
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::CountMaxLoot()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CountMaxLoot", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.Cooked6BagsEnableField
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::Cooked6BagsEnableField()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Cooked6BagsEnableField", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.ChooseFlarePosition
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::ChooseFlarePosition()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ChooseFlarePosition", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.CallBackVan
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Cookie_Scripting_C::CallBackVan()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CallBackVan", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZTrafficSplineUpperExit_K2Node_ActorBoundEvent_32_SBZSplineOnEnter__DelegateSignature
 // (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Cookie_Scripting_BP_ZiplineBag1_K2Node_ActorBoundEvent_109_SBZBagPickedUp__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Cookie_Scripting_BP_ZiplineBag1_K2Node_ActorBoundEvent_109_SBZBagPickedUp__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Cookie_Scripting_SBZDestroyGroup_0_K2Node_ActorBoundEvent_113_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
-// (HasOutParams, BlueprintEvent)
 // Parameters:
-// const TArray<class AActor*>&            KeptActors                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// const TArray<class AActor*>&            DestroyedActors                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Cookie_Scripting_C::BndEvt__G_Cookie_Scripting_SBZDestroyGroup_0_K2Node_ActorBoundEvent_113_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors)
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZTrafficSplineUpperExit_K2Node_ActorBoundEvent_32_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZTrafficSplineUpperExit_K2Node_ActorBoundEvent_32_SBZSplineOnEnter__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Cookie_Scripting_SBZDestroyGroup_0_K2Node_ActorBoundEvent_113_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature");
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZTrafficSplineUpperExit_K2Node_ActorBoundEvent_32_SBZSplineOnEnter__DelegateSignature Parms{};
 
-	Params::G_Cookie_Scripting_C_BndEvt__G_Cookie_Scripting_SBZDestroyGroup_0_K2Node_ActorBoundEvent_113_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.KeptActors = std::move(KeptActors);
-	Parms.DestroyedActors = std::move(DestroyedActors);
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Cookie_Scripting_SBZDestroyGroup_10_K2Node_ActorBoundEvent_112_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
-// (HasOutParams, BlueprintEvent)
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZTrafficSplineSwatHelicopterStart2_K2Node_ActorBoundEvent_47_SBZSplineOnEndReached__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// const TArray<class AActor*>&            KeptActors                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// const TArray<class AActor*>&            DestroyedActors                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Cookie_Scripting_C::BndEvt__G_Cookie_Scripting_SBZDestroyGroup_10_K2Node_ActorBoundEvent_112_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors)
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZTrafficSplineSwatHelicopterStart2_K2Node_ActorBoundEvent_47_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZTrafficSplineSwatHelicopterStart2_K2Node_ActorBoundEvent_47_SBZSplineOnEndReached__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Cookie_Scripting_SBZDestroyGroup_10_K2Node_ActorBoundEvent_112_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature");
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZTrafficSplineSwatHelicopterStart2_K2Node_ActorBoundEvent_47_SBZSplineOnEndReached__DelegateSignature Parms{};
 
-	Params::G_Cookie_Scripting_C_BndEvt__G_Cookie_Scripting_SBZDestroyGroup_10_K2Node_ActorBoundEvent_112_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.KeptActors = std::move(KeptActors);
-	Parms.DestroyedActors = std::move(DestroyedActors);
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Cookie_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_94_SBZPawnDynamicDelegate__DelegateSignature
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZTrafficSplineSwatHelicopterStart1_K2Node_ActorBoundEvent_45_SBZSplineOnEndReached__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZTrafficSplineSwatHelicopterStart1_K2Node_ActorBoundEvent_45_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZTrafficSplineSwatHelicopterStart1_K2Node_ActorBoundEvent_45_SBZSplineOnEndReached__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZTrafficSplineSwatHelicopterStart1_K2Node_ActorBoundEvent_45_SBZSplineOnEndReached__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZTrafficSpline_LowerExit_K2Node_ActorBoundEvent_14_SBZSplineOnEnter__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZTrafficSpline_LowerExit_K2Node_ActorBoundEvent_14_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZTrafficSpline_LowerExit_K2Node_ActorBoundEvent_14_SBZSplineOnEnter__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZTrafficSpline_LowerExit_K2Node_ActorBoundEvent_14_SBZSplineOnEnter__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZTrafficSpline_EscapeUpper_K2Node_ActorBoundEvent_24_SBZSplineOnEnter__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZTrafficSpline_EscapeUpper_K2Node_ActorBoundEvent_24_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZTrafficSpline_EscapeUpper_K2Node_ActorBoundEvent_24_SBZSplineOnEnter__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZTrafficSpline_EscapeUpper_K2Node_ActorBoundEvent_24_SBZSplineOnEnter__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_K2Node_ActorBoundEvent_4_SBZSplineOnEnter__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_K2Node_ActorBoundEvent_4_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_K2Node_ActorBoundEvent_4_SBZSplineOnEnter__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_K2Node_ActorBoundEvent_4_SBZSplineOnEnter__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_FlyIn_K2Node_ActorBoundEvent_1_SBZSplineOnEndReached__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_FlyIn_K2Node_ActorBoundEvent_1_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_FlyIn_K2Node_ActorBoundEvent_1_SBZSplineOnEndReached__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_FlyIn_K2Node_ActorBoundEvent_1_SBZSplineOnEndReached__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_FlyIn_3_K2Node_ActorBoundEvent_46_SBZSplineOnEndReached__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_FlyIn_3_K2Node_ActorBoundEvent_46_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_FlyIn_3_K2Node_ActorBoundEvent_46_SBZSplineOnEndReached__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_FlyIn_3_K2Node_ActorBoundEvent_46_SBZSplineOnEndReached__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_FlyIn_2_K2Node_ActorBoundEvent_44_SBZSplineOnEndReached__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_FlyIn_2_K2Node_ActorBoundEvent_44_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_FlyIn_2_K2Node_ActorBoundEvent_44_SBZSplineOnEndReached__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_FlyIn_2_K2Node_ActorBoundEvent_44_SBZSplineOnEndReached__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_PlayerTeleport_K2Node_ActorBoundEvent_65_SBZPawnDynamicDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Cookie_Scripting_C::BndEvt__G_Cookie_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_94_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_PlayerTeleport_K2Node_ActorBoundEvent_65_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_PlayerTeleport_K2Node_ActorBoundEvent_65_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Cookie_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_94_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Cookie_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_94_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_PlayerTeleport_K2Node_ActorBoundEvent_65_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
 	Parms.Pawn = Pawn;
 
@@ -192,147 +874,17 @@ void AG_Cookie_Scripting_C::BndEvt__G_Cookie_Scripting_SBZPlayerTriggerVolume_1_
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_BP_Signalflare_Crossroad_K2Node_ActorBoundEvent_17_OnInteracted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_BP_Signalflare_Crossroad_K2Node_ActorBoundEvent_17_OnInteracted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_ScriptTemplate_Scripting_BP_Signalflare_Crossroad_K2Node_ActorBoundEvent_17_OnInteracted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Escape_Loud_K2Node_ActorBoundEvent_15_SBZBagEnteredDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void AG_Cookie_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Escape_Loud_K2Node_ActorBoundEvent_15_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Escape_Loud_K2Node_ActorBoundEvent_15_SBZBagEnteredDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Escape_Loud_K2Node_ActorBoundEvent_15_SBZBagEnteredDelegate__DelegateSignature Parms{};
-
-	Parms.Volume = Volume;
-	Parms.Bag = Bag;
-	Parms.Handle = std::move(Handle);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void AG_Cookie_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature Parms{};
-
-	Parms.Volume = Volume;
-	Parms.Bag = Bag;
-	Parms.Handle = std::move(Handle);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void AG_Cookie_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature Parms{};
-
-	Parms.Volume = Volume;
-	Parms.Bag = Bag;
-	Parms.Handle = std::move(Handle);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZObjective_FirstObj_K2Node_ActorBoundEvent_3_SBZOnObjective__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_SBZObjective_FirstObj_K2Node_ActorBoundEvent_3_SBZOnObjective__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_ScriptTemplate_Scripting_SBZObjective_FirstObj_K2Node_ActorBoundEvent_3_SBZOnObjective__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZObjective_SecureTheLoot_K2Node_ActorBoundEvent_11_SBZOnObjective__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_SBZObjective_SecureTheLoot_K2Node_ActorBoundEvent_11_SBZOnObjective__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_ScriptTemplate_Scripting_SBZObjective_SecureTheLoot_K2Node_ActorBoundEvent_11_SBZOnObjective__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZPlayerEscapeVolume_Escape_Loud1_K2Node_ActorBoundEvent_16_SBZEscapeTimerDelegate__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_SBZPlayerEscapeVolume_Escape_Loud1_K2Node_ActorBoundEvent_16_SBZEscapeTimerDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_ScriptTemplate_Scripting_SBZPlayerEscapeVolume_Escape_Loud1_K2Node_ActorBoundEvent_16_SBZEscapeTimerDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_PlayerTeleport2_K2Node_ActorBoundEvent_66_SBZPawnDynamicDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Cookie_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_PlayerTeleport2_K2Node_ActorBoundEvent_66_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_PlayerTeleport2_K2Node_ActorBoundEvent_66_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_PlayerTeleport2_K2Node_ActorBoundEvent_66_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
 	Parms.Pawn = Pawn;
 
@@ -340,19 +892,17 @@ void AG_Cookie_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggere
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_Kitchen_K2Node_ActorBoundEvent_18_SBZPawnDynamicDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Cookie_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_Kitchen_K2Node_ActorBoundEvent_18_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_Kitchen_K2Node_ActorBoundEvent_18_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_Kitchen_K2Node_ActorBoundEvent_18_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
 	Parms.Pawn = Pawn;
 
@@ -360,2539 +910,285 @@ void AG_Cookie_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggerV
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_10_K2Node_ActorBoundEvent_111_Barricade_destroyed__DelegateSignature
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_Cellar_K2Node_ActorBoundEvent_19_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_Cellar_K2Node_ActorBoundEvent_19_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_Cellar_K2Node_ActorBoundEvent_19_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_Cellar_K2Node_ActorBoundEvent_19_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearEscape_Loud2_K2Node_ActorBoundEvent_31_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearEscape_Loud2_K2Node_ActorBoundEvent_31_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearEscape_Loud2_K2Node_ActorBoundEvent_31_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearEscape_Loud2_K2Node_ActorBoundEvent_31_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZPlayerTrigger_ShadeCopsPrepared_K2Node_ActorBoundEvent_10_ActorBeginOverlapSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class AActor*                           OverlappedActor                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerTrigger_ShadeCopsPrepared_K2Node_ActorBoundEvent_10_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZPlayerTrigger_ShadeCopsPrepared_K2Node_ActorBoundEvent_10_ActorBeginOverlapSignature__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZPlayerTrigger_ShadeCopsPrepared_K2Node_ActorBoundEvent_10_ActorBeginOverlapSignature__DelegateSignature Parms{};
+
+	Parms.OverlappedActor = OverlappedActor;
+	Parms.OtherActor = OtherActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZPlayerTrigger_MaxBagsDebugTrigger_K2Node_ActorBoundEvent_62_ActorBeginOverlapSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class AActor*                           OverlappedActor                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerTrigger_MaxBagsDebugTrigger_K2Node_ActorBoundEvent_62_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZPlayerTrigger_MaxBagsDebugTrigger_K2Node_ActorBoundEvent_62_ActorBeginOverlapSignature__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZPlayerTrigger_MaxBagsDebugTrigger_K2Node_ActorBoundEvent_62_ActorBeginOverlapSignature__DelegateSignature Parms{};
+
+	Parms.OverlappedActor = OverlappedActor;
+	Parms.OtherActor = OtherActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZPlayerTrigger_Light_on_K2Node_ActorBoundEvent_76_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerTrigger_Light_on_K2Node_ActorBoundEvent_76_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZPlayerTrigger_Light_on_K2Node_ActorBoundEvent_76_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZPlayerTrigger_Light_on_K2Node_ActorBoundEvent_76_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZPlayerTrigger_Light_off_K2Node_ActorBoundEvent_79_ActorBeginOverlapSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class AActor*                           OverlappedActor                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerTrigger_Light_off_K2Node_ActorBoundEvent_79_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZPlayerTrigger_Light_off_K2Node_ActorBoundEvent_79_ActorBeginOverlapSignature__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZPlayerTrigger_Light_off_K2Node_ActorBoundEvent_79_ActorBeginOverlapSignature__DelegateSignature Parms{};
+
+	Parms.OverlappedActor = OverlappedActor;
+	Parms.OtherActor = OtherActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZPlayerTrigger_HelicopterDebugTrigger_K2Node_ActorBoundEvent_33_ActorBeginOverlapSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class AActor*                           OverlappedActor                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerTrigger_HelicopterDebugTrigger_K2Node_ActorBoundEvent_33_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZPlayerTrigger_HelicopterDebugTrigger_K2Node_ActorBoundEvent_33_ActorBeginOverlapSignature__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZPlayerTrigger_HelicopterDebugTrigger_K2Node_ActorBoundEvent_33_ActorBeginOverlapSignature__DelegateSignature Parms{};
+
+	Parms.OverlappedActor = OverlappedActor;
+	Parms.OtherActor = OtherActor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZPlayerTrigger_HelicopterDebugTrigger2_K2Node_ActorBoundEvent_38_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerTrigger_HelicopterDebugTrigger2_K2Node_ActorBoundEvent_38_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZPlayerTrigger_HelicopterDebugTrigger2_K2Node_ActorBoundEvent_38_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZPlayerTrigger_HelicopterDebugTrigger2_K2Node_ActorBoundEvent_38_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZPlayerTrigger_debugTrigger_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerTrigger_debugTrigger_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZPlayerTrigger_debugTrigger_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZPlayerTrigger_debugTrigger_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZPlayerStartGroup3_7_K2Node_ActorBoundEvent_22_SBZOnSpawnGroupChosen__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZPlayerStartGroup*             PlayerStartGroup                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerStartGroup3_7_K2Node_ActorBoundEvent_22_SBZOnSpawnGroupChosen__DelegateSignature(class ASBZPlayerStartGroup* PlayerStartGroup)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZPlayerStartGroup3_7_K2Node_ActorBoundEvent_22_SBZOnSpawnGroupChosen__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZPlayerStartGroup3_7_K2Node_ActorBoundEvent_22_SBZOnSpawnGroupChosen__DelegateSignature Parms{};
+
+	Parms.PlayerStartGroup = PlayerStartGroup;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZPlayerStartGroup2_5_K2Node_ActorBoundEvent_21_SBZOnSpawnGroupChosen__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZPlayerStartGroup*             PlayerStartGroup                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerStartGroup2_5_K2Node_ActorBoundEvent_21_SBZOnSpawnGroupChosen__DelegateSignature(class ASBZPlayerStartGroup* PlayerStartGroup)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZPlayerStartGroup2_5_K2Node_ActorBoundEvent_21_SBZOnSpawnGroupChosen__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZPlayerStartGroup2_5_K2Node_ActorBoundEvent_21_SBZOnSpawnGroupChosen__DelegateSignature Parms{};
+
+	Parms.PlayerStartGroup = PlayerStartGroup;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZPlayerEscapeVolume_Escape_Loud2_K2Node_ActorBoundEvent_67_SBZEscapeTimerDelegate__DelegateSignature
 // (BlueprintEvent)
 
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_10_K2Node_ActorBoundEvent_111_Barricade_destroyed__DelegateSignature()
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerEscapeVolume_Escape_Loud2_K2Node_ActorBoundEvent_67_SBZEscapeTimerDelegate__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_10_K2Node_ActorBoundEvent_111_Barricade_destroyed__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZPlayerEscapeVolume_Escape_Loud2_K2Node_ActorBoundEvent_67_SBZEscapeTimerDelegate__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_10_K2Node_ActorBoundEvent_93_Barricade_placed__DelegateSignature
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZObjective_MIssionFailedBAgCounter_K2Node_ActorBoundEvent_64_SBZOnObjective__DelegateSignature
 // (BlueprintEvent)
 
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_10_K2Node_ActorBoundEvent_93_Barricade_placed__DelegateSignature()
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZObjective_MIssionFailedBAgCounter_K2Node_ActorBoundEvent_64_SBZOnObjective__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_10_K2Node_ActorBoundEvent_93_Barricade_placed__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZObjective_MIssionFailedBAgCounter_K2Node_ActorBoundEvent_64_SBZOnObjective__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_11_K2Node_ActorBoundEvent_95_Barricade_placed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_11_K2Node_ActorBoundEvent_95_Barricade_placed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_11_K2Node_ActorBoundEvent_95_Barricade_placed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_11_K2Node_ActorBoundEvent_96_Barricade_destroyed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_11_K2Node_ActorBoundEvent_96_Barricade_destroyed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_11_K2Node_ActorBoundEvent_96_Barricade_destroyed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_12_K2Node_ActorBoundEvent_97_Barricade_placed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_12_K2Node_ActorBoundEvent_97_Barricade_placed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_12_K2Node_ActorBoundEvent_97_Barricade_placed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_12_K2Node_ActorBoundEvent_98_Barricade_destroyed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_12_K2Node_ActorBoundEvent_98_Barricade_destroyed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_12_K2Node_ActorBoundEvent_98_Barricade_destroyed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_13_K2Node_ActorBoundEvent_100_Barricade_destroyed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_13_K2Node_ActorBoundEvent_100_Barricade_destroyed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_13_K2Node_ActorBoundEvent_100_Barricade_destroyed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_13_K2Node_ActorBoundEvent_99_Barricade_placed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_13_K2Node_ActorBoundEvent_99_Barricade_placed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_13_K2Node_ActorBoundEvent_99_Barricade_placed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_16_K2Node_ActorBoundEvent_101_Barricade_placed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_16_K2Node_ActorBoundEvent_101_Barricade_placed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_16_K2Node_ActorBoundEvent_101_Barricade_placed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_16_K2Node_ActorBoundEvent_86_Barricade_destroyed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_16_K2Node_ActorBoundEvent_86_Barricade_destroyed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_16_K2Node_ActorBoundEvent_86_Barricade_destroyed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_17_K2Node_ActorBoundEvent_104_Barricade_destroyed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_17_K2Node_ActorBoundEvent_104_Barricade_destroyed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_17_K2Node_ActorBoundEvent_104_Barricade_destroyed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_17_K2Node_ActorBoundEvent_105_Barricade_placed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_17_K2Node_ActorBoundEvent_105_Barricade_placed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_17_K2Node_ActorBoundEvent_105_Barricade_placed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_18_K2Node_ActorBoundEvent_102_Barricade_destroyed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_18_K2Node_ActorBoundEvent_102_Barricade_destroyed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_18_K2Node_ActorBoundEvent_102_Barricade_destroyed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_18_K2Node_ActorBoundEvent_103_Barricade_placed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_18_K2Node_ActorBoundEvent_103_Barricade_placed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_18_K2Node_ActorBoundEvent_103_Barricade_placed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_1_K2Node_ActorBoundEvent_70_Barricade_placed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_1_K2Node_ActorBoundEvent_70_Barricade_placed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_1_K2Node_ActorBoundEvent_70_Barricade_placed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_1_K2Node_ActorBoundEvent_71_Barricade_destroyed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_1_K2Node_ActorBoundEvent_71_Barricade_destroyed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_1_K2Node_ActorBoundEvent_71_Barricade_destroyed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_21_K2Node_ActorBoundEvent_106_Barricade_placed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_21_K2Node_ActorBoundEvent_106_Barricade_placed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_21_K2Node_ActorBoundEvent_106_Barricade_placed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_21_K2Node_ActorBoundEvent_107_Barricade_destroyed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_21_K2Node_ActorBoundEvent_107_Barricade_destroyed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_21_K2Node_ActorBoundEvent_107_Barricade_destroyed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_2_K2Node_ActorBoundEvent_68_Barricade_destroyed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_2_K2Node_ActorBoundEvent_68_Barricade_destroyed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_2_K2Node_ActorBoundEvent_68_Barricade_destroyed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_2_K2Node_ActorBoundEvent_69_Barricade_placed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_2_K2Node_ActorBoundEvent_69_Barricade_placed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_2_K2Node_ActorBoundEvent_69_Barricade_placed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_3_K2Node_ActorBoundEvent_72_Barricade_destroyed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_3_K2Node_ActorBoundEvent_72_Barricade_destroyed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_3_K2Node_ActorBoundEvent_72_Barricade_destroyed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_3_K2Node_ActorBoundEvent_73_Barricade_placed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_3_K2Node_ActorBoundEvent_73_Barricade_placed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_3_K2Node_ActorBoundEvent_73_Barricade_placed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_4_K2Node_ActorBoundEvent_76_Barricade_destroyed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_4_K2Node_ActorBoundEvent_76_Barricade_destroyed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_4_K2Node_ActorBoundEvent_76_Barricade_destroyed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_4_K2Node_ActorBoundEvent_77_Barricade_placed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_4_K2Node_ActorBoundEvent_77_Barricade_placed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_4_K2Node_ActorBoundEvent_77_Barricade_placed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_5_K2Node_ActorBoundEvent_74_Barricade_destroyed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_5_K2Node_ActorBoundEvent_74_Barricade_destroyed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_5_K2Node_ActorBoundEvent_74_Barricade_destroyed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_5_K2Node_ActorBoundEvent_75_Barricade_placed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_5_K2Node_ActorBoundEvent_75_Barricade_placed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_5_K2Node_ActorBoundEvent_75_Barricade_placed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_7_K2Node_ActorBoundEvent_87_Barricade_placed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_7_K2Node_ActorBoundEvent_87_Barricade_placed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_7_K2Node_ActorBoundEvent_87_Barricade_placed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_7_K2Node_ActorBoundEvent_88_Barricade_destroyed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_7_K2Node_ActorBoundEvent_88_Barricade_destroyed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_7_K2Node_ActorBoundEvent_88_Barricade_destroyed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_8_K2Node_ActorBoundEvent_89_Barricade_placed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_8_K2Node_ActorBoundEvent_89_Barricade_placed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_8_K2Node_ActorBoundEvent_89_Barricade_placed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_8_K2Node_ActorBoundEvent_90_Barricade_destroyed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_8_K2Node_ActorBoundEvent_90_Barricade_destroyed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_8_K2Node_ActorBoundEvent_90_Barricade_destroyed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_9_K2Node_ActorBoundEvent_91_Barricade_placed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_9_K2Node_ActorBoundEvent_91_Barricade_placed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_9_K2Node_ActorBoundEvent_91_Barricade_placed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_9_K2Node_ActorBoundEvent_92_Barricade_destroyed__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_9_K2Node_ActorBoundEvent_92_Barricade_destroyed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_Bp_barricade_9_K2Node_ActorBoundEvent_92_Barricade_destroyed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_2_K2Node_ActorBoundEvent_0_SBZSabotagePointDelegate__DelegateSignature
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZModifiableTimer_390sec_K2Node_ActorBoundEvent_39_SBZTimerDelegate__DelegateSignature
 // (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_2_K2Node_ActorBoundEvent_0_SBZSabotagePointDelegate__DelegateSignature(bool bSabotaged)
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZModifiableTimer_390sec_K2Node_ActorBoundEvent_39_SBZTimerDelegate__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZModifiableTimer_390sec_K2Node_ActorBoundEvent_39_SBZTimerDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_2_K2Node_ActorBoundEvent_0_SBZSabotagePointDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_2_K2Node_ActorBoundEvent_0_SBZSabotagePointDelegate__DelegateSignature Parms{};
-
-	Parms.bSabotaged = bSabotaged;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights2_K2Node_ActorBoundEvent_25_SBZSabotagePointDelegate__DelegateSignature
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZModifiableTimer_360sec_K2Node_ActorBoundEvent_40_SBZTimerDelegate__DelegateSignature
 // (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights2_K2Node_ActorBoundEvent_25_SBZSabotagePointDelegate__DelegateSignature(bool bSabotaged)
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZModifiableTimer_360sec_K2Node_ActorBoundEvent_40_SBZTimerDelegate__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZModifiableTimer_360sec_K2Node_ActorBoundEvent_40_SBZTimerDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights2_K2Node_ActorBoundEvent_25_SBZSabotagePointDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights2_K2Node_ActorBoundEvent_25_SBZSabotagePointDelegate__DelegateSignature Parms{};
-
-	Parms.bSabotaged = bSabotaged;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights3_K2Node_ActorBoundEvent_26_SBZSabotagePointDelegate__DelegateSignature
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZModifiableTimer_30sec_K2Node_ActorBoundEvent_37_SBZTimerDelegate__DelegateSignature
 // (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights3_K2Node_ActorBoundEvent_26_SBZSabotagePointDelegate__DelegateSignature(bool bSabotaged)
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZModifiableTimer_30sec_K2Node_ActorBoundEvent_37_SBZTimerDelegate__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZModifiableTimer_30sec_K2Node_ActorBoundEvent_37_SBZTimerDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights3_K2Node_ActorBoundEvent_26_SBZSabotagePointDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights3_K2Node_ActorBoundEvent_26_SBZSabotagePointDelegate__DelegateSignature Parms{};
-
-	Parms.bSabotaged = bSabotaged;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights4_K2Node_ActorBoundEvent_27_SBZSabotagePointDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights4_K2Node_ActorBoundEvent_27_SBZSabotagePointDelegate__DelegateSignature(bool bSabotaged)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights4_K2Node_ActorBoundEvent_27_SBZSabotagePointDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights4_K2Node_ActorBoundEvent_27_SBZSabotagePointDelegate__DelegateSignature Parms{};
-
-	Parms.bSabotaged = bSabotaged;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights5_K2Node_ActorBoundEvent_28_SBZSabotagePointDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights5_K2Node_ActorBoundEvent_28_SBZSabotagePointDelegate__DelegateSignature(bool bSabotaged)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights5_K2Node_ActorBoundEvent_28_SBZSabotagePointDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights5_K2Node_ActorBoundEvent_28_SBZSabotagePointDelegate__DelegateSignature Parms{};
-
-	Parms.bSabotaged = bSabotaged;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_IW_BRE_OPE_NAV_ATT7_K2Node_ActorBoundEvent_110_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_IW_BRE_OPE_NAV_ATT7_K2Node_ActorBoundEvent_110_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_IW_BRE_OPE_NAV_ATT7_K2Node_ActorBoundEvent_110_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_IW_BRE_OPE_NAV_ATT7_K2Node_ActorBoundEvent_110_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_IW_BRE_OPE_NAV_ATT8_K2Node_ActorBoundEvent_108_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_IW_BRE_OPE_NAV_ATT8_K2Node_ActorBoundEvent_108_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_IW_BRE_OPE_NAV_ATT8_K2Node_ActorBoundEvent_108_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_IW_BRE_OPE_NAV_ATT8_K2Node_ActorBoundEvent_108_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda2_9_K2Node_ActorBoundEvent_61_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda2_9_K2Node_ActorBoundEvent_61_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda2_9_K2Node_ActorBoundEvent_61_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda3_K2Node_ActorBoundEvent_62_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda3_K2Node_ActorBoundEvent_62_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda3_K2Node_ActorBoundEvent_62_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda4_K2Node_ActorBoundEvent_63_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda4_K2Node_ActorBoundEvent_63_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda4_K2Node_ActorBoundEvent_63_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda5_K2Node_ActorBoundEvent_64_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda5_K2Node_ActorBoundEvent_64_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda5_K2Node_ActorBoundEvent_64_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda6_K2Node_ActorBoundEvent_65_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda6_K2Node_ActorBoundEvent_65_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda6_K2Node_ActorBoundEvent_65_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda7_K2Node_ActorBoundEvent_66_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda7_K2Node_ActorBoundEvent_66_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda7_K2Node_ActorBoundEvent_66_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda8_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda8_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda8_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda9_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda9_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda9_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda_6_K2Node_ActorBoundEvent_60_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda_6_K2Node_ActorBoundEvent_60_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda_6_K2Node_ActorBoundEvent_60_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride2_9_K2Node_ActorBoundEvent_45_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride2_9_K2Node_ActorBoundEvent_45_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride2_9_K2Node_ActorBoundEvent_45_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride3_K2Node_ActorBoundEvent_46_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride3_K2Node_ActorBoundEvent_46_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride3_K2Node_ActorBoundEvent_46_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride4_K2Node_ActorBoundEvent_47_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride4_K2Node_ActorBoundEvent_47_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride4_K2Node_ActorBoundEvent_47_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride5_K2Node_ActorBoundEvent_48_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride5_K2Node_ActorBoundEvent_48_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride5_K2Node_ActorBoundEvent_48_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride6_K2Node_ActorBoundEvent_49_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride6_K2Node_ActorBoundEvent_49_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride6_K2Node_ActorBoundEvent_49_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride7_K2Node_ActorBoundEvent_50_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride7_K2Node_ActorBoundEvent_50_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride7_K2Node_ActorBoundEvent_50_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride8_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride8_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride8_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride9_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride9_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride9_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride_6_K2Node_ActorBoundEvent_44_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride_6_K2Node_ActorBoundEvent_44_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride_6_K2Node_ActorBoundEvent_44_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid2_9_K2Node_ActorBoundEvent_77_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid2_9_K2Node_ActorBoundEvent_77_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid2_9_K2Node_ActorBoundEvent_77_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid3_K2Node_ActorBoundEvent_78_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid3_K2Node_ActorBoundEvent_78_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid3_K2Node_ActorBoundEvent_78_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid4_K2Node_ActorBoundEvent_79_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid4_K2Node_ActorBoundEvent_79_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid4_K2Node_ActorBoundEvent_79_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid5_K2Node_ActorBoundEvent_80_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid5_K2Node_ActorBoundEvent_80_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid5_K2Node_ActorBoundEvent_80_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid6_K2Node_ActorBoundEvent_81_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid6_K2Node_ActorBoundEvent_81_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid6_K2Node_ActorBoundEvent_81_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid7_K2Node_ActorBoundEvent_82_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid7_K2Node_ActorBoundEvent_82_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid7_K2Node_ActorBoundEvent_82_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid8_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid8_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid8_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid9_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid9_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid9_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid_6_K2Node_ActorBoundEvent_76_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid_6_K2Node_ActorBoundEvent_76_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid_6_K2Node_ActorBoundEvent_76_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_MethCookingStation2_K2Node_ActorBoundEvent_51_SBZCookingStationStateDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// ESBZCookingState                        OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZCookingState                        NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_MethCookingStation2_K2Node_ActorBoundEvent_51_SBZCookingStationStateDelegate__DelegateSignature(ESBZCookingState OldState, ESBZCookingState NewState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_MethCookingStation2_K2Node_ActorBoundEvent_51_SBZCookingStationStateDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_MethCookingStation2_K2Node_ActorBoundEvent_51_SBZCookingStationStateDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_MethCookingStation2_K2Node_ActorBoundEvent_53_SBZMultiBagGeneratorDelegate__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_MethCookingStation2_K2Node_ActorBoundEvent_53_SBZMultiBagGeneratorDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_MethCookingStation2_K2Node_ActorBoundEvent_53_SBZMultiBagGeneratorDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_MethCookingStation2_K2Node_ActorBoundEvent_56_SBZCookingStationIngredientDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// int32                                   NewIngredientIndex                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_MethCookingStation2_K2Node_ActorBoundEvent_56_SBZCookingStationIngredientDelegate__DelegateSignature(int32 NewIngredientIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_MethCookingStation2_K2Node_ActorBoundEvent_56_SBZCookingStationIngredientDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_MethCookingStation2_K2Node_ActorBoundEvent_56_SBZCookingStationIngredientDelegate__DelegateSignature Parms{};
-
-	Parms.NewIngredientIndex = NewIngredientIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_MethCookingStation2_K2Node_ActorBoundEvent_60_SBZCookingStationIngredientAddedDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// bool                                    bIsCorrect                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_MethCookingStation2_K2Node_ActorBoundEvent_60_SBZCookingStationIngredientAddedDelegate__DelegateSignature(bool bIsCorrect)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_MethCookingStation2_K2Node_ActorBoundEvent_60_SBZCookingStationIngredientAddedDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_MethCookingStation2_K2Node_ActorBoundEvent_60_SBZCookingStationIngredientAddedDelegate__DelegateSignature Parms{};
-
-	Parms.bIsCorrect = bIsCorrect;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_MethCookingStation3_6_K2Node_ActorBoundEvent_40_SBZCookingStationStateDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// ESBZCookingState                        OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZCookingState                        NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_MethCookingStation3_6_K2Node_ActorBoundEvent_40_SBZCookingStationStateDelegate__DelegateSignature(ESBZCookingState OldState, ESBZCookingState NewState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_MethCookingStation3_6_K2Node_ActorBoundEvent_40_SBZCookingStationStateDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_MethCookingStation3_6_K2Node_ActorBoundEvent_40_SBZCookingStationStateDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_MethCookingStation3_6_K2Node_ActorBoundEvent_54_SBZMultiBagGeneratorDelegate__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_MethCookingStation3_6_K2Node_ActorBoundEvent_54_SBZMultiBagGeneratorDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_MethCookingStation3_6_K2Node_ActorBoundEvent_54_SBZMultiBagGeneratorDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_MethCookingStation3_6_K2Node_ActorBoundEvent_57_SBZCookingStationIngredientDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// int32                                   NewIngredientIndex                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_MethCookingStation3_6_K2Node_ActorBoundEvent_57_SBZCookingStationIngredientDelegate__DelegateSignature(int32 NewIngredientIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_MethCookingStation3_6_K2Node_ActorBoundEvent_57_SBZCookingStationIngredientDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_MethCookingStation3_6_K2Node_ActorBoundEvent_57_SBZCookingStationIngredientDelegate__DelegateSignature Parms{};
-
-	Parms.NewIngredientIndex = NewIngredientIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_MethCookingStation3_6_K2Node_ActorBoundEvent_61_SBZCookingStationIngredientAddedDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// bool                                    bIsCorrect                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_MethCookingStation3_6_K2Node_ActorBoundEvent_61_SBZCookingStationIngredientAddedDelegate__DelegateSignature(bool bIsCorrect)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_MethCookingStation3_6_K2Node_ActorBoundEvent_61_SBZCookingStationIngredientAddedDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_MethCookingStation3_6_K2Node_ActorBoundEvent_61_SBZCookingStationIngredientAddedDelegate__DelegateSignature Parms{};
-
-	Parms.bIsCorrect = bIsCorrect;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_MethCookingStation_2_K2Node_ActorBoundEvent_37_SBZCookingStationIngredientAddedDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// bool                                    bIsCorrect                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_MethCookingStation_2_K2Node_ActorBoundEvent_37_SBZCookingStationIngredientAddedDelegate__DelegateSignature(bool bIsCorrect)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_MethCookingStation_2_K2Node_ActorBoundEvent_37_SBZCookingStationIngredientAddedDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_MethCookingStation_2_K2Node_ActorBoundEvent_37_SBZCookingStationIngredientAddedDelegate__DelegateSignature Parms{};
-
-	Parms.bIsCorrect = bIsCorrect;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_MethCookingStation_2_K2Node_ActorBoundEvent_39_SBZCookingStationStateDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// ESBZCookingState                        OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZCookingState                        NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_MethCookingStation_2_K2Node_ActorBoundEvent_39_SBZCookingStationStateDelegate__DelegateSignature(ESBZCookingState OldState, ESBZCookingState NewState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_MethCookingStation_2_K2Node_ActorBoundEvent_39_SBZCookingStationStateDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_MethCookingStation_2_K2Node_ActorBoundEvent_39_SBZCookingStationStateDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_MethCookingStation_2_K2Node_ActorBoundEvent_52_SBZMultiBagGeneratorDelegate__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_MethCookingStation_2_K2Node_ActorBoundEvent_52_SBZMultiBagGeneratorDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_MethCookingStation_2_K2Node_ActorBoundEvent_52_SBZMultiBagGeneratorDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_MethCookingStation_2_K2Node_ActorBoundEvent_55_SBZCookingStationIngredientDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// int32                                   NewIngredientIndex                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_MethCookingStation_2_K2Node_ActorBoundEvent_55_SBZCookingStationIngredientDelegate__DelegateSignature(int32 NewIngredientIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_MethCookingStation_2_K2Node_ActorBoundEvent_55_SBZCookingStationIngredientDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_MethCookingStation_2_K2Node_ActorBoundEvent_55_SBZCookingStationIngredientDelegate__DelegateSignature Parms{};
-
-	Parms.NewIngredientIndex = NewIngredientIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Plankspile2_K2Node_ActorBoundEvent_80_SBZActorOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Plankspile2_K2Node_ActorBoundEvent_80_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Plankspile2_K2Node_ActorBoundEvent_80_SBZActorOnInteraction__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Plankspile2_K2Node_ActorBoundEvent_80_SBZActorOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Plankspile3_K2Node_ActorBoundEvent_81_SBZActorOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Plankspile3_K2Node_ActorBoundEvent_81_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Plankspile3_K2Node_ActorBoundEvent_81_SBZActorOnInteraction__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Plankspile3_K2Node_ActorBoundEvent_81_SBZActorOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Plankspile4_K2Node_ActorBoundEvent_82_SBZActorOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Plankspile4_K2Node_ActorBoundEvent_82_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Plankspile4_K2Node_ActorBoundEvent_82_SBZActorOnInteraction__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Plankspile4_K2Node_ActorBoundEvent_82_SBZActorOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Plankspile5_K2Node_ActorBoundEvent_83_SBZActorOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Plankspile5_K2Node_ActorBoundEvent_83_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Plankspile5_K2Node_ActorBoundEvent_83_SBZActorOnInteraction__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Plankspile5_K2Node_ActorBoundEvent_83_SBZActorOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Plankspile6_K2Node_ActorBoundEvent_84_SBZActorOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Plankspile6_K2Node_ActorBoundEvent_84_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Plankspile6_K2Node_ActorBoundEvent_84_SBZActorOnInteraction__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Plankspile6_K2Node_ActorBoundEvent_84_SBZActorOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Plankspile7_K2Node_ActorBoundEvent_85_SBZActorOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Plankspile7_K2Node_ActorBoundEvent_85_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Plankspile7_K2Node_ActorBoundEvent_85_SBZActorOnInteraction__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Plankspile7_K2Node_ActorBoundEvent_85_SBZActorOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Plankspile_2_K2Node_ActorBoundEvent_63_SBZActorOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Plankspile_2_K2Node_ActorBoundEvent_63_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Plankspile_2_K2Node_ActorBoundEvent_63_SBZActorOnInteraction__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Plankspile_2_K2Node_ActorBoundEvent_63_SBZActorOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaBasment2_K2Node_ActorBoundEvent_68_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaBasment2_K2Node_ActorBoundEvent_68_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaBasment2_K2Node_ActorBoundEvent_68_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaBasment3_K2Node_ActorBoundEvent_69_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaBasment3_K2Node_ActorBoundEvent_69_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaBasment3_K2Node_ActorBoundEvent_69_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaBasment4_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaBasment4_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaBasment4_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaBasment_K2Node_ActorBoundEvent_67_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaBasment_K2Node_ActorBoundEvent_67_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaBasment_K2Node_ActorBoundEvent_67_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaKitchen2_K2Node_ActorBoundEvent_71_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaKitchen2_K2Node_ActorBoundEvent_71_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaKitchen2_K2Node_ActorBoundEvent_71_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaKitchen3_K2Node_ActorBoundEvent_72_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaKitchen3_K2Node_ActorBoundEvent_72_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaKitchen3_K2Node_ActorBoundEvent_72_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaKitchen4_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaKitchen4_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaKitchen4_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaKitchen_K2Node_ActorBoundEvent_70_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaKitchen_K2Node_ActorBoundEvent_70_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaKitchen_K2Node_ActorBoundEvent_70_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaUpper2_K2Node_ActorBoundEvent_74_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaUpper2_K2Node_ActorBoundEvent_74_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaUpper2_K2Node_ActorBoundEvent_74_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaUpper3_K2Node_ActorBoundEvent_75_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaUpper3_K2Node_ActorBoundEvent_75_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaUpper3_K2Node_ActorBoundEvent_75_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaUpper4_K2Node_ActorBoundEvent_2_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaUpper4_K2Node_ActorBoundEvent_2_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaUpper4_K2Node_ActorBoundEvent_2_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaUpper_K2Node_ActorBoundEvent_73_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaUpper_K2Node_ActorBoundEvent_73_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaUpper_K2Node_ActorBoundEvent_73_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_Basment2_K2Node_ActorBoundEvent_52_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_Basment2_K2Node_ActorBoundEvent_52_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_Basment2_K2Node_ActorBoundEvent_52_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_Basment3_K2Node_ActorBoundEvent_53_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_Basment3_K2Node_ActorBoundEvent_53_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_Basment3_K2Node_ActorBoundEvent_53_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_Basment4_K2Node_ActorBoundEvent_2_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_Basment4_K2Node_ActorBoundEvent_2_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_Basment4_K2Node_ActorBoundEvent_2_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BAsment_K2Node_ActorBoundEvent_51_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BAsment_K2Node_ActorBoundEvent_51_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BAsment_K2Node_ActorBoundEvent_51_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentKitchen2_K2Node_ActorBoundEvent_55_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentKitchen2_K2Node_ActorBoundEvent_55_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentKitchen2_K2Node_ActorBoundEvent_55_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentKitchen3_K2Node_ActorBoundEvent_56_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentKitchen3_K2Node_ActorBoundEvent_56_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentKitchen3_K2Node_ActorBoundEvent_56_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentKitchen4_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentKitchen4_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentKitchen4_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentKitchen_K2Node_ActorBoundEvent_54_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentKitchen_K2Node_ActorBoundEvent_54_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentKitchen_K2Node_ActorBoundEvent_54_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentUpper2_K2Node_ActorBoundEvent_58_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentUpper2_K2Node_ActorBoundEvent_58_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentUpper2_K2Node_ActorBoundEvent_58_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentUpper3_K2Node_ActorBoundEvent_59_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentUpper3_K2Node_ActorBoundEvent_59_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentUpper3_K2Node_ActorBoundEvent_59_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentUpper4_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentUpper4_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentUpper4_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentUpper_K2Node_ActorBoundEvent_57_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentUpper_K2Node_ActorBoundEvent_57_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentUpper_K2Node_ActorBoundEvent_57_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Basment2_K2Node_ActorBoundEvent_84_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Basment2_K2Node_ActorBoundEvent_84_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Basment2_K2Node_ActorBoundEvent_84_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Basment3_K2Node_ActorBoundEvent_85_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Basment3_K2Node_ActorBoundEvent_85_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Basment3_K2Node_ActorBoundEvent_85_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Basment4_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Basment4_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Basment4_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Basment_K2Node_ActorBoundEvent_83_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Basment_K2Node_ActorBoundEvent_83_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Basment_K2Node_ActorBoundEvent_83_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Kitchen2_K2Node_ActorBoundEvent_87_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Kitchen2_K2Node_ActorBoundEvent_87_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Kitchen2_K2Node_ActorBoundEvent_87_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Kitchen3_K2Node_ActorBoundEvent_88_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Kitchen3_K2Node_ActorBoundEvent_88_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Kitchen3_K2Node_ActorBoundEvent_88_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Kitchen4_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Kitchen4_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Kitchen4_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Kitchen_K2Node_ActorBoundEvent_86_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Kitchen_K2Node_ActorBoundEvent_86_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Kitchen_K2Node_ActorBoundEvent_86_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Upper2_K2Node_ActorBoundEvent_90_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Upper2_K2Node_ActorBoundEvent_90_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Upper2_K2Node_ActorBoundEvent_90_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Upper3_K2Node_ActorBoundEvent_91_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Upper3_K2Node_ActorBoundEvent_91_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Upper3_K2Node_ActorBoundEvent_91_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Upper4_K2Node_ActorBoundEvent_2_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Upper4_K2Node_ActorBoundEvent_2_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Upper4_K2Node_ActorBoundEvent_2_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Upper_K2Node_ActorBoundEvent_89_onInteractionCompleted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Upper_K2Node_ActorBoundEvent_89_onInteractionCompleted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Upper_K2Node_ActorBoundEvent_89_onInteractionCompleted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Signalflare2_K2Node_ActorBoundEvent_36_OnInteracted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Signalflare2_K2Node_ActorBoundEvent_36_OnInteracted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Signalflare2_K2Node_ActorBoundEvent_36_OnInteracted__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Signalflare3_K2Node_ActorBoundEvent_41_OnInteracted__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Signalflare3_K2Node_ActorBoundEvent_41_OnInteracted__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Signalflare3_K2Node_ActorBoundEvent_41_OnInteracted__DelegateSignature");
-
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage2_K2Node_ActorBoundEvent_2_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage2_K2Node_ActorBoundEvent_2_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage2_K2Node_ActorBoundEvent_2_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage2_K2Node_ActorBoundEvent_2_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
-
-	Parms.DeadPawn = DeadPawn;
-	Parms.Spawner = Spawner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage3_K2Node_ActorBoundEvent_3_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage3_K2Node_ActorBoundEvent_3_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage3_K2Node_ActorBoundEvent_3_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage3_K2Node_ActorBoundEvent_3_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
-
-	Parms.DeadPawn = DeadPawn;
-	Parms.Spawner = Spawner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage4_K2Node_ActorBoundEvent_4_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage4_K2Node_ActorBoundEvent_4_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage4_K2Node_ActorBoundEvent_4_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage4_K2Node_ActorBoundEvent_4_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
-
-	Parms.DeadPawn = DeadPawn;
-	Parms.Spawner = Spawner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage5_K2Node_ActorBoundEvent_5_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage5_K2Node_ActorBoundEvent_5_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage5_K2Node_ActorBoundEvent_5_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage5_K2Node_ActorBoundEvent_5_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
-
-	Parms.DeadPawn = DeadPawn;
-	Parms.Spawner = Spawner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage6_K2Node_ActorBoundEvent_0_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage6_K2Node_ActorBoundEvent_0_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage6_K2Node_ActorBoundEvent_0_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage6_K2Node_ActorBoundEvent_0_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
-
-	Parms.DeadPawn = DeadPawn;
-	Parms.Spawner = Spawner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_2_K2Node_ActorBoundEvent_1_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_2_K2Node_ActorBoundEvent_1_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_2_K2Node_ActorBoundEvent_1_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_2_K2Node_ActorBoundEvent_1_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
-
-	Parms.DeadPawn = DeadPawn;
-	Parms.Spawner = Spawner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_1_K2Node_ActorBoundEvent_1_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_1_K2Node_ActorBoundEvent_1_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_1_K2Node_ActorBoundEvent_1_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_1_K2Node_ActorBoundEvent_1_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
-
-	Parms.DeadPawn = DeadPawn;
-	Parms.Spawner = Spawner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_2_K2Node_ActorBoundEvent_2_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_2_K2Node_ActorBoundEvent_2_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_2_K2Node_ActorBoundEvent_2_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_2_K2Node_ActorBoundEvent_2_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
-
-	Parms.DeadPawn = DeadPawn;
-	Parms.Spawner = Spawner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_3_K2Node_ActorBoundEvent_3_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_3_K2Node_ActorBoundEvent_3_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_3_K2Node_ActorBoundEvent_3_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_3_K2Node_ActorBoundEvent_3_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
-
-	Parms.DeadPawn = DeadPawn;
-	Parms.Spawner = Spawner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_4_K2Node_ActorBoundEvent_0_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_4_K2Node_ActorBoundEvent_0_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_4_K2Node_ActorBoundEvent_0_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_4_K2Node_ActorBoundEvent_0_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
-
-	Parms.DeadPawn = DeadPawn;
-	Parms.Spawner = Spawner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker2_K2Node_ActorBoundEvent_9_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker2_K2Node_ActorBoundEvent_9_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker2_K2Node_ActorBoundEvent_9_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker2_K2Node_ActorBoundEvent_9_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
-
-	Parms.DeadPawn = DeadPawn;
-	Parms.Spawner = Spawner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker3_K2Node_ActorBoundEvent_10_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker3_K2Node_ActorBoundEvent_10_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker3_K2Node_ActorBoundEvent_10_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker3_K2Node_ActorBoundEvent_10_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
-
-	Parms.DeadPawn = DeadPawn;
-	Parms.Spawner = Spawner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker4_K2Node_ActorBoundEvent_11_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker4_K2Node_ActorBoundEvent_11_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker4_K2Node_ActorBoundEvent_11_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker4_K2Node_ActorBoundEvent_11_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
-
-	Parms.DeadPawn = DeadPawn;
-	Parms.Spawner = Spawner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker5_K2Node_ActorBoundEvent_12_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker5_K2Node_ActorBoundEvent_12_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker5_K2Node_ActorBoundEvent_12_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker5_K2Node_ActorBoundEvent_12_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
-
-	Parms.DeadPawn = DeadPawn;
-	Parms.Spawner = Spawner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker6_K2Node_ActorBoundEvent_13_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker6_K2Node_ActorBoundEvent_13_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker6_K2Node_ActorBoundEvent_13_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker6_K2Node_ActorBoundEvent_13_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
-
-	Parms.DeadPawn = DeadPawn;
-	Parms.Spawner = Spawner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker7_K2Node_ActorBoundEvent_14_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker7_K2Node_ActorBoundEvent_14_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker7_K2Node_ActorBoundEvent_14_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker7_K2Node_ActorBoundEvent_14_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
-
-	Parms.DeadPawn = DeadPawn;
-	Parms.Spawner = Spawner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker8_K2Node_ActorBoundEvent_15_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker8_K2Node_ActorBoundEvent_15_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker8_K2Node_ActorBoundEvent_15_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker8_K2Node_ActorBoundEvent_15_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
-
-	Parms.DeadPawn = DeadPawn;
-	Parms.Spawner = Spawner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker9_K2Node_ActorBoundEvent_7_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker9_K2Node_ActorBoundEvent_7_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker9_K2Node_ActorBoundEvent_7_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker9_K2Node_ActorBoundEvent_7_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
-
-	Parms.DeadPawn = DeadPawn;
-	Parms.Spawner = Spawner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker_2_K2Node_ActorBoundEvent_8_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker_2_K2Node_ActorBoundEvent_8_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker_2_K2Node_ActorBoundEvent_8_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker_2_K2Node_ActorBoundEvent_8_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
-
-	Parms.DeadPawn = DeadPawn;
-	Parms.Spawner = Spawner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZBagTriggerVolume_Loud2_K2Node_ActorBoundEvent_30_SBZBagEnteredDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZBagTriggerVolume_Loud2_K2Node_ActorBoundEvent_30_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZBagTriggerVolume_Loud2_K2Node_ActorBoundEvent_30_SBZBagEnteredDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZBagTriggerVolume_Loud2_K2Node_ActorBoundEvent_30_SBZBagEnteredDelegate__DelegateSignature Parms{};
-
-	Parms.Volume = Volume;
-	Parms.Bag = Bag;
-	Parms.Handle = std::move(Handle);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZBagTriggerVolumeBasment_K2Node_ActorBoundEvent_23_SBZBagEnteredDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZBagTriggerVolumeBasment_K2Node_ActorBoundEvent_23_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZBagTriggerVolumeBasment_K2Node_ActorBoundEvent_23_SBZBagEnteredDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZBagTriggerVolumeBasment_K2Node_ActorBoundEvent_23_SBZBagEnteredDelegate__DelegateSignature Parms{};
-
-	Parms.Volume = Volume;
-	Parms.Bag = Bag;
-	Parms.Handle = std::move(Handle);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZBagTriggerVolumeKitchen_K2Node_ActorBoundEvent_34_SBZBagEnteredDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZBagTriggerVolumeKitchen_K2Node_ActorBoundEvent_34_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZBagTriggerVolumeKitchen_K2Node_ActorBoundEvent_34_SBZBagEnteredDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZBagTriggerVolumeKitchen_K2Node_ActorBoundEvent_34_SBZBagEnteredDelegate__DelegateSignature Parms{};
-
-	Parms.Volume = Volume;
-	Parms.Bag = Bag;
-	Parms.Handle = std::move(Handle);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZBagTriggerVolumeUpperFloor_K2Node_ActorBoundEvent_35_SBZBagEnteredDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZBagTriggerVolumeUpperFloor_K2Node_ActorBoundEvent_35_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZBagTriggerVolumeUpperFloor_K2Node_ActorBoundEvent_35_SBZBagEnteredDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZBagTriggerVolumeUpperFloor_K2Node_ActorBoundEvent_35_SBZBagEnteredDelegate__DelegateSignature Parms{};
-
-	Parms.Volume = Volume;
-	Parms.Bag = Bag;
-	Parms.Handle = std::move(Handle);
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Building_K2Node_ActorBoundEvent_50_SBZFilterActorDynamicDelegate__DelegateSignature
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Stairs_K2Node_ActorBoundEvent_43_SBZFilterActorDynamicDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Building_K2Node_ActorBoundEvent_50_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Stairs_K2Node_ActorBoundEvent_43_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Stairs_K2Node_ActorBoundEvent_43_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Building_K2Node_ActorBoundEvent_50_SBZFilterActorDynamicDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Building_K2Node_ActorBoundEvent_50_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Identifier = Identifier;
-	Parms.Actor = Actor;
-	Parms.CurrentTotalActors = CurrentTotalActors;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Field_K2Node_ActorBoundEvent_42_SBZFilterActorDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Field_K2Node_ActorBoundEvent_42_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Field_K2Node_ActorBoundEvent_42_SBZFilterActorDynamicDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Field_K2Node_ActorBoundEvent_42_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Identifier = Identifier;
-	Parms.Actor = Actor;
-	Parms.CurrentTotalActors = CurrentTotalActors;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_forest_K2Node_ActorBoundEvent_20_SBZFilterActorDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_forest_K2Node_ActorBoundEvent_20_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_forest_K2Node_ActorBoundEvent_20_SBZFilterActorDynamicDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_forest_K2Node_ActorBoundEvent_20_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Identifier = Identifier;
-	Parms.Actor = Actor;
-	Parms.CurrentTotalActors = CurrentTotalActors;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Garage_K2Node_ActorBoundEvent_48_SBZFilterActorDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Garage_K2Node_ActorBoundEvent_48_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Garage_K2Node_ActorBoundEvent_48_SBZFilterActorDynamicDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Garage_K2Node_ActorBoundEvent_48_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Identifier = Identifier;
-	Parms.Actor = Actor;
-	Parms.CurrentTotalActors = CurrentTotalActors;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_lumber_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_lumber_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_lumber_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_lumber_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Identifier = Identifier;
-	Parms.Actor = Actor;
-	Parms.CurrentTotalActors = CurrentTotalActors;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Railyard_K2Node_ActorBoundEvent_13_SBZFilterActorDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Railyard_K2Node_ActorBoundEvent_13_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Railyard_K2Node_ActorBoundEvent_13_SBZFilterActorDynamicDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Railyard_K2Node_ActorBoundEvent_13_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Stairs_K2Node_ActorBoundEvent_43_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
 
 	Parms.Identifier = Identifier;
 	Parms.Actor = Actor;
@@ -2911,10 +1207,8 @@ void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_R
 
 void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Scaffholding_K2Node_ActorBoundEvent_49_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Scaffholding_K2Node_ActorBoundEvent_49_SBZFilterActorDynamicDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Scaffholding_K2Node_ActorBoundEvent_49_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
 
 	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Scaffholding_K2Node_ActorBoundEvent_49_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
 
@@ -2926,21 +1220,19 @@ void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_S
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Stairs_K2Node_ActorBoundEvent_43_SBZFilterActorDynamicDelegate__DelegateSignature
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Railyard_K2Node_ActorBoundEvent_13_SBZFilterActorDynamicDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Stairs_K2Node_ActorBoundEvent_43_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Railyard_K2Node_ActorBoundEvent_13_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Railyard_K2Node_ActorBoundEvent_13_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Stairs_K2Node_ActorBoundEvent_43_SBZFilterActorDynamicDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Stairs_K2Node_ActorBoundEvent_43_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Railyard_K2Node_ActorBoundEvent_13_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
 
 	Parms.Identifier = Identifier;
 	Parms.Actor = Actor;
@@ -2950,129 +1242,2233 @@ void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_S
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZModifiableTimer_30sec_K2Node_ActorBoundEvent_37_SBZTimerDelegate__DelegateSignature
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_lumber_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_lumber_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_lumber_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_lumber_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Identifier = Identifier;
+	Parms.Actor = Actor;
+	Parms.CurrentTotalActors = CurrentTotalActors;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Garage_K2Node_ActorBoundEvent_48_SBZFilterActorDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Garage_K2Node_ActorBoundEvent_48_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Garage_K2Node_ActorBoundEvent_48_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Garage_K2Node_ActorBoundEvent_48_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Identifier = Identifier;
+	Parms.Actor = Actor;
+	Parms.CurrentTotalActors = CurrentTotalActors;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_forest_K2Node_ActorBoundEvent_20_SBZFilterActorDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_forest_K2Node_ActorBoundEvent_20_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_forest_K2Node_ActorBoundEvent_20_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_forest_K2Node_ActorBoundEvent_20_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Identifier = Identifier;
+	Parms.Actor = Actor;
+	Parms.CurrentTotalActors = CurrentTotalActors;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Field_K2Node_ActorBoundEvent_42_SBZFilterActorDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Field_K2Node_ActorBoundEvent_42_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Field_K2Node_ActorBoundEvent_42_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Field_K2Node_ActorBoundEvent_42_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Identifier = Identifier;
+	Parms.Actor = Actor;
+	Parms.CurrentTotalActors = CurrentTotalActors;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Building_K2Node_ActorBoundEvent_50_SBZFilterActorDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Building_K2Node_ActorBoundEvent_50_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Building_K2Node_ActorBoundEvent_50_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZFilteredTriggerVolume_Building_K2Node_ActorBoundEvent_50_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Identifier = Identifier;
+	Parms.Actor = Actor;
+	Parms.CurrentTotalActors = CurrentTotalActors;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZBagTriggerVolumeUpperFloor_K2Node_ActorBoundEvent_35_SBZBagEnteredDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZBagTriggerVolumeUpperFloor_K2Node_ActorBoundEvent_35_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZBagTriggerVolumeUpperFloor_K2Node_ActorBoundEvent_35_SBZBagEnteredDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZBagTriggerVolumeUpperFloor_K2Node_ActorBoundEvent_35_SBZBagEnteredDelegate__DelegateSignature Parms{};
+
+	Parms.Volume = Volume;
+	Parms.Bag = Bag;
+	Parms.Handle = std::move(Handle);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZBagTriggerVolumeKitchen_K2Node_ActorBoundEvent_34_SBZBagEnteredDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZBagTriggerVolumeKitchen_K2Node_ActorBoundEvent_34_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZBagTriggerVolumeKitchen_K2Node_ActorBoundEvent_34_SBZBagEnteredDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZBagTriggerVolumeKitchen_K2Node_ActorBoundEvent_34_SBZBagEnteredDelegate__DelegateSignature Parms{};
+
+	Parms.Volume = Volume;
+	Parms.Bag = Bag;
+	Parms.Handle = std::move(Handle);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZBagTriggerVolumeBasment_K2Node_ActorBoundEvent_23_SBZBagEnteredDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZBagTriggerVolumeBasment_K2Node_ActorBoundEvent_23_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZBagTriggerVolumeBasment_K2Node_ActorBoundEvent_23_SBZBagEnteredDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZBagTriggerVolumeBasment_K2Node_ActorBoundEvent_23_SBZBagEnteredDelegate__DelegateSignature Parms{};
+
+	Parms.Volume = Volume;
+	Parms.Bag = Bag;
+	Parms.Handle = std::move(Handle);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZBagTriggerVolume_Loud2_K2Node_ActorBoundEvent_30_SBZBagEnteredDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZBagTriggerVolume_Loud2_K2Node_ActorBoundEvent_30_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_SBZBagTriggerVolume_Loud2_K2Node_ActorBoundEvent_30_SBZBagEnteredDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZBagTriggerVolume_Loud2_K2Node_ActorBoundEvent_30_SBZBagEnteredDelegate__DelegateSignature Parms{};
+
+	Parms.Volume = Volume;
+	Parms.Bag = Bag;
+	Parms.Handle = std::move(Handle);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker_2_K2Node_ActorBoundEvent_8_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker_2_K2Node_ActorBoundEvent_8_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker_2_K2Node_ActorBoundEvent_8_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker_2_K2Node_ActorBoundEvent_8_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
+
+	Parms.DeadPawn = DeadPawn;
+	Parms.Spawner = Spawner;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker9_K2Node_ActorBoundEvent_7_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker9_K2Node_ActorBoundEvent_7_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker9_K2Node_ActorBoundEvent_7_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker9_K2Node_ActorBoundEvent_7_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
+
+	Parms.DeadPawn = DeadPawn;
+	Parms.Spawner = Spawner;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker8_K2Node_ActorBoundEvent_15_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker8_K2Node_ActorBoundEvent_15_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker8_K2Node_ActorBoundEvent_15_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker8_K2Node_ActorBoundEvent_15_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
+
+	Parms.DeadPawn = DeadPawn;
+	Parms.Spawner = Spawner;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker7_K2Node_ActorBoundEvent_14_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker7_K2Node_ActorBoundEvent_14_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker7_K2Node_ActorBoundEvent_14_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker7_K2Node_ActorBoundEvent_14_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
+
+	Parms.DeadPawn = DeadPawn;
+	Parms.Spawner = Spawner;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker6_K2Node_ActorBoundEvent_13_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker6_K2Node_ActorBoundEvent_13_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker6_K2Node_ActorBoundEvent_13_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker6_K2Node_ActorBoundEvent_13_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
+
+	Parms.DeadPawn = DeadPawn;
+	Parms.Spawner = Spawner;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker5_K2Node_ActorBoundEvent_12_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker5_K2Node_ActorBoundEvent_12_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker5_K2Node_ActorBoundEvent_12_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker5_K2Node_ActorBoundEvent_12_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
+
+	Parms.DeadPawn = DeadPawn;
+	Parms.Spawner = Spawner;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker4_K2Node_ActorBoundEvent_11_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker4_K2Node_ActorBoundEvent_11_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker4_K2Node_ActorBoundEvent_11_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker4_K2Node_ActorBoundEvent_11_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
+
+	Parms.DeadPawn = DeadPawn;
+	Parms.Spawner = Spawner;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker3_K2Node_ActorBoundEvent_10_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker3_K2Node_ActorBoundEvent_10_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker3_K2Node_ActorBoundEvent_10_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker3_K2Node_ActorBoundEvent_10_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
+
+	Parms.DeadPawn = DeadPawn;
+	Parms.Spawner = Spawner;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker2_K2Node_ActorBoundEvent_9_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker2_K2Node_ActorBoundEvent_9_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker2_K2Node_ActorBoundEvent_9_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Cop_HostageTaker2_K2Node_ActorBoundEvent_9_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
+
+	Parms.DeadPawn = DeadPawn;
+	Parms.Spawner = Spawner;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_4_K2Node_ActorBoundEvent_0_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_4_K2Node_ActorBoundEvent_0_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_4_K2Node_ActorBoundEvent_0_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_4_K2Node_ActorBoundEvent_0_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
+
+	Parms.DeadPawn = DeadPawn;
+	Parms.Spawner = Spawner;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_3_K2Node_ActorBoundEvent_3_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_3_K2Node_ActorBoundEvent_3_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_3_K2Node_ActorBoundEvent_3_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_3_K2Node_ActorBoundEvent_3_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
+
+	Parms.DeadPawn = DeadPawn;
+	Parms.Spawner = Spawner;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_2_K2Node_ActorBoundEvent_2_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_2_K2Node_ActorBoundEvent_2_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_2_K2Node_ActorBoundEvent_2_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_2_K2Node_ActorBoundEvent_2_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
+
+	Parms.DeadPawn = DeadPawn;
+	Parms.Spawner = Spawner;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_1_K2Node_ActorBoundEvent_1_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_1_K2Node_ActorBoundEvent_1_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_1_K2Node_ActorBoundEvent_1_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_PP_1_K2Node_ActorBoundEvent_1_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
+
+	Parms.DeadPawn = DeadPawn;
+	Parms.Spawner = Spawner;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_2_K2Node_ActorBoundEvent_1_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_2_K2Node_ActorBoundEvent_1_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_2_K2Node_ActorBoundEvent_1_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage_2_K2Node_ActorBoundEvent_1_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
+
+	Parms.DeadPawn = DeadPawn;
+	Parms.Spawner = Spawner;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage6_K2Node_ActorBoundEvent_0_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage6_K2Node_ActorBoundEvent_0_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage6_K2Node_ActorBoundEvent_0_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage6_K2Node_ActorBoundEvent_0_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
+
+	Parms.DeadPawn = DeadPawn;
+	Parms.Spawner = Spawner;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage5_K2Node_ActorBoundEvent_5_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage5_K2Node_ActorBoundEvent_5_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage5_K2Node_ActorBoundEvent_5_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage5_K2Node_ActorBoundEvent_5_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
+
+	Parms.DeadPawn = DeadPawn;
+	Parms.Spawner = Spawner;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage4_K2Node_ActorBoundEvent_4_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage4_K2Node_ActorBoundEvent_4_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage4_K2Node_ActorBoundEvent_4_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage4_K2Node_ActorBoundEvent_4_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
+
+	Parms.DeadPawn = DeadPawn;
+	Parms.Spawner = Spawner;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage3_K2Node_ActorBoundEvent_3_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage3_K2Node_ActorBoundEvent_3_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage3_K2Node_ActorBoundEvent_3_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage3_K2Node_ActorBoundEvent_3_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
+
+	Parms.DeadPawn = DeadPawn;
+	Parms.Spawner = Spawner;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage2_K2Node_ActorBoundEvent_2_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage2_K2Node_ActorBoundEvent_2_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage2_K2Node_ActorBoundEvent_2_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Spawner_Civ_Hostage2_K2Node_ActorBoundEvent_2_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
+
+	Parms.DeadPawn = DeadPawn;
+	Parms.Spawner = Spawner;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Signalflare3_K2Node_ActorBoundEvent_41_OnInteracted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Signalflare3_K2Node_ActorBoundEvent_41_OnInteracted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Signalflare3_K2Node_ActorBoundEvent_41_OnInteracted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Signalflare2_K2Node_ActorBoundEvent_36_OnInteracted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Signalflare2_K2Node_ActorBoundEvent_36_OnInteracted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Signalflare2_K2Node_ActorBoundEvent_36_OnInteracted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Upper_K2Node_ActorBoundEvent_89_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Upper_K2Node_ActorBoundEvent_89_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Upper_K2Node_ActorBoundEvent_89_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Upper4_K2Node_ActorBoundEvent_2_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Upper4_K2Node_ActorBoundEvent_2_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Upper4_K2Node_ActorBoundEvent_2_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Upper3_K2Node_ActorBoundEvent_91_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Upper3_K2Node_ActorBoundEvent_91_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Upper3_K2Node_ActorBoundEvent_91_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Upper2_K2Node_ActorBoundEvent_90_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Upper2_K2Node_ActorBoundEvent_90_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Upper2_K2Node_ActorBoundEvent_90_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Kitchen_K2Node_ActorBoundEvent_86_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Kitchen_K2Node_ActorBoundEvent_86_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Kitchen_K2Node_ActorBoundEvent_86_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Kitchen4_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Kitchen4_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Kitchen4_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Kitchen3_K2Node_ActorBoundEvent_88_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Kitchen3_K2Node_ActorBoundEvent_88_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Kitchen3_K2Node_ActorBoundEvent_88_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Kitchen2_K2Node_ActorBoundEvent_87_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Kitchen2_K2Node_ActorBoundEvent_87_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Kitchen2_K2Node_ActorBoundEvent_87_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Basment_K2Node_ActorBoundEvent_83_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Basment_K2Node_ActorBoundEvent_83_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Basment_K2Node_ActorBoundEvent_83_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Basment4_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Basment4_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Basment4_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Basment3_K2Node_ActorBoundEvent_85_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Basment3_K2Node_ActorBoundEvent_85_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Basment3_K2Node_ActorBoundEvent_85_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Basment2_K2Node_ActorBoundEvent_84_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Basment2_K2Node_ActorBoundEvent_84_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_MuriaticAcid_Basment2_K2Node_ActorBoundEvent_84_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentUpper_K2Node_ActorBoundEvent_57_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentUpper_K2Node_ActorBoundEvent_57_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentUpper_K2Node_ActorBoundEvent_57_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentUpper4_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentUpper4_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentUpper4_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentUpper3_K2Node_ActorBoundEvent_59_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentUpper3_K2Node_ActorBoundEvent_59_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentUpper3_K2Node_ActorBoundEvent_59_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentUpper2_K2Node_ActorBoundEvent_58_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentUpper2_K2Node_ActorBoundEvent_58_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentUpper2_K2Node_ActorBoundEvent_58_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentKitchen_K2Node_ActorBoundEvent_54_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentKitchen_K2Node_ActorBoundEvent_54_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentKitchen_K2Node_ActorBoundEvent_54_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentKitchen4_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentKitchen4_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentKitchen4_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentKitchen3_K2Node_ActorBoundEvent_56_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentKitchen3_K2Node_ActorBoundEvent_56_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentKitchen3_K2Node_ActorBoundEvent_56_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentKitchen2_K2Node_ActorBoundEvent_55_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentKitchen2_K2Node_ActorBoundEvent_55_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BasmentKitchen2_K2Node_ActorBoundEvent_55_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BAsment_K2Node_ActorBoundEvent_51_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BAsment_K2Node_ActorBoundEvent_51_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_BAsment_K2Node_ActorBoundEvent_51_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_Basment4_K2Node_ActorBoundEvent_2_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_Basment4_K2Node_ActorBoundEvent_2_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_Basment4_K2Node_ActorBoundEvent_2_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_Basment3_K2Node_ActorBoundEvent_53_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_Basment3_K2Node_ActorBoundEvent_53_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_Basment3_K2Node_ActorBoundEvent_53_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_Basment2_K2Node_ActorBoundEvent_52_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_Basment2_K2Node_ActorBoundEvent_52_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_HydrogenChloride_Basment2_K2Node_ActorBoundEvent_52_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaUpper_K2Node_ActorBoundEvent_73_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaUpper_K2Node_ActorBoundEvent_73_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaUpper_K2Node_ActorBoundEvent_73_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaUpper4_K2Node_ActorBoundEvent_2_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaUpper4_K2Node_ActorBoundEvent_2_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaUpper4_K2Node_ActorBoundEvent_2_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaUpper3_K2Node_ActorBoundEvent_75_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaUpper3_K2Node_ActorBoundEvent_75_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaUpper3_K2Node_ActorBoundEvent_75_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaUpper2_K2Node_ActorBoundEvent_74_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaUpper2_K2Node_ActorBoundEvent_74_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaUpper2_K2Node_ActorBoundEvent_74_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaKitchen_K2Node_ActorBoundEvent_70_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaKitchen_K2Node_ActorBoundEvent_70_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaKitchen_K2Node_ActorBoundEvent_70_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaKitchen4_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaKitchen4_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaKitchen4_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaKitchen3_K2Node_ActorBoundEvent_72_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaKitchen3_K2Node_ActorBoundEvent_72_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaKitchen3_K2Node_ActorBoundEvent_72_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaKitchen2_K2Node_ActorBoundEvent_71_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaKitchen2_K2Node_ActorBoundEvent_71_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaKitchen2_K2Node_ActorBoundEvent_71_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaBasment_K2Node_ActorBoundEvent_67_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaBasment_K2Node_ActorBoundEvent_67_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaBasment_K2Node_ActorBoundEvent_67_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaBasment4_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaBasment4_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaBasment4_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaBasment3_K2Node_ActorBoundEvent_69_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaBasment3_K2Node_ActorBoundEvent_69_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaBasment3_K2Node_ActorBoundEvent_69_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaBasment2_K2Node_ActorBoundEvent_68_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaBasment2_K2Node_ActorBoundEvent_68_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Replicated_Meth_CausticSodaBasment2_K2Node_ActorBoundEvent_68_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Plankspile_2_K2Node_ActorBoundEvent_63_SBZActorOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Plankspile_2_K2Node_ActorBoundEvent_63_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Plankspile_2_K2Node_ActorBoundEvent_63_SBZActorOnInteraction__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Plankspile_2_K2Node_ActorBoundEvent_63_SBZActorOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Plankspile7_K2Node_ActorBoundEvent_85_SBZActorOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Plankspile7_K2Node_ActorBoundEvent_85_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Plankspile7_K2Node_ActorBoundEvent_85_SBZActorOnInteraction__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Plankspile7_K2Node_ActorBoundEvent_85_SBZActorOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Plankspile6_K2Node_ActorBoundEvent_84_SBZActorOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Plankspile6_K2Node_ActorBoundEvent_84_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Plankspile6_K2Node_ActorBoundEvent_84_SBZActorOnInteraction__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Plankspile6_K2Node_ActorBoundEvent_84_SBZActorOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Plankspile5_K2Node_ActorBoundEvent_83_SBZActorOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Plankspile5_K2Node_ActorBoundEvent_83_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Plankspile5_K2Node_ActorBoundEvent_83_SBZActorOnInteraction__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Plankspile5_K2Node_ActorBoundEvent_83_SBZActorOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Plankspile4_K2Node_ActorBoundEvent_82_SBZActorOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Plankspile4_K2Node_ActorBoundEvent_82_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Plankspile4_K2Node_ActorBoundEvent_82_SBZActorOnInteraction__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Plankspile4_K2Node_ActorBoundEvent_82_SBZActorOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Plankspile3_K2Node_ActorBoundEvent_81_SBZActorOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Plankspile3_K2Node_ActorBoundEvent_81_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Plankspile3_K2Node_ActorBoundEvent_81_SBZActorOnInteraction__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Plankspile3_K2Node_ActorBoundEvent_81_SBZActorOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Plankspile2_K2Node_ActorBoundEvent_80_SBZActorOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Plankspile2_K2Node_ActorBoundEvent_80_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Plankspile2_K2Node_ActorBoundEvent_80_SBZActorOnInteraction__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_Plankspile2_K2Node_ActorBoundEvent_80_SBZActorOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_MethCookingStation_2_K2Node_ActorBoundEvent_55_SBZCookingStationIngredientDelegate__DelegateSignature
 // (BlueprintAuthorityOnly, BlueprintEvent)
+// Parameters:
+// int32                                   NewIngredientIndex                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZModifiableTimer_30sec_K2Node_ActorBoundEvent_37_SBZTimerDelegate__DelegateSignature()
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_MethCookingStation_2_K2Node_ActorBoundEvent_55_SBZCookingStationIngredientDelegate__DelegateSignature(int32 NewIngredientIndex)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_MethCookingStation_2_K2Node_ActorBoundEvent_55_SBZCookingStationIngredientDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZModifiableTimer_30sec_K2Node_ActorBoundEvent_37_SBZTimerDelegate__DelegateSignature");
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_MethCookingStation_2_K2Node_ActorBoundEvent_55_SBZCookingStationIngredientDelegate__DelegateSignature Parms{};
+
+	Parms.NewIngredientIndex = NewIngredientIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_MethCookingStation_2_K2Node_ActorBoundEvent_52_SBZMultiBagGeneratorDelegate__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_MethCookingStation_2_K2Node_ActorBoundEvent_52_SBZMultiBagGeneratorDelegate__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_MethCookingStation_2_K2Node_ActorBoundEvent_52_SBZMultiBagGeneratorDelegate__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZModifiableTimer_360sec_K2Node_ActorBoundEvent_40_SBZTimerDelegate__DelegateSignature
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_MethCookingStation_2_K2Node_ActorBoundEvent_39_SBZCookingStationStateDelegate__DelegateSignature
 // (BlueprintAuthorityOnly, BlueprintEvent)
+// Parameters:
+// ESBZCookingState                        OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZCookingState                        NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZModifiableTimer_360sec_K2Node_ActorBoundEvent_40_SBZTimerDelegate__DelegateSignature()
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_MethCookingStation_2_K2Node_ActorBoundEvent_39_SBZCookingStationStateDelegate__DelegateSignature(ESBZCookingState OldState, ESBZCookingState NewState)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_MethCookingStation_2_K2Node_ActorBoundEvent_39_SBZCookingStationStateDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZModifiableTimer_360sec_K2Node_ActorBoundEvent_40_SBZTimerDelegate__DelegateSignature");
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_MethCookingStation_2_K2Node_ActorBoundEvent_39_SBZCookingStationStateDelegate__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.OldState = OldState;
+	Parms.NewState = NewState;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZModifiableTimer_390sec_K2Node_ActorBoundEvent_39_SBZTimerDelegate__DelegateSignature
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_MethCookingStation_2_K2Node_ActorBoundEvent_37_SBZCookingStationIngredientAddedDelegate__DelegateSignature
 // (BlueprintAuthorityOnly, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZModifiableTimer_390sec_K2Node_ActorBoundEvent_39_SBZTimerDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZModifiableTimer_390sec_K2Node_ActorBoundEvent_39_SBZTimerDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZObjective_MIssionFailedBAgCounter_K2Node_ActorBoundEvent_64_SBZOnObjective__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZObjective_MIssionFailedBAgCounter_K2Node_ActorBoundEvent_64_SBZOnObjective__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZObjective_MIssionFailedBAgCounter_K2Node_ActorBoundEvent_64_SBZOnObjective__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZPlayerEscapeVolume_Escape_Loud2_K2Node_ActorBoundEvent_67_SBZEscapeTimerDelegate__DelegateSignature
-// (BlueprintEvent)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerEscapeVolume_Escape_Loud2_K2Node_ActorBoundEvent_67_SBZEscapeTimerDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZPlayerEscapeVolume_Escape_Loud2_K2Node_ActorBoundEvent_67_SBZEscapeTimerDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZPlayerStartGroup2_5_K2Node_ActorBoundEvent_21_SBZOnSpawnGroupChosen__DelegateSignature
-// (BlueprintEvent)
 // Parameters:
-// class ASBZPlayerStartGroup*             PlayerStartGroup                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsCorrect                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerStartGroup2_5_K2Node_ActorBoundEvent_21_SBZOnSpawnGroupChosen__DelegateSignature(class ASBZPlayerStartGroup* PlayerStartGroup)
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_MethCookingStation_2_K2Node_ActorBoundEvent_37_SBZCookingStationIngredientAddedDelegate__DelegateSignature(bool bIsCorrect)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_MethCookingStation_2_K2Node_ActorBoundEvent_37_SBZCookingStationIngredientAddedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZPlayerStartGroup2_5_K2Node_ActorBoundEvent_21_SBZOnSpawnGroupChosen__DelegateSignature");
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_MethCookingStation_2_K2Node_ActorBoundEvent_37_SBZCookingStationIngredientAddedDelegate__DelegateSignature Parms{};
 
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZPlayerStartGroup2_5_K2Node_ActorBoundEvent_21_SBZOnSpawnGroupChosen__DelegateSignature Parms{};
-
-	Parms.PlayerStartGroup = PlayerStartGroup;
+	Parms.bIsCorrect = bIsCorrect;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZPlayerStartGroup3_7_K2Node_ActorBoundEvent_22_SBZOnSpawnGroupChosen__DelegateSignature
-// (BlueprintEvent)
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_MethCookingStation3_6_K2Node_ActorBoundEvent_61_SBZCookingStationIngredientAddedDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
 // Parameters:
-// class ASBZPlayerStartGroup*             PlayerStartGroup                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsCorrect                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerStartGroup3_7_K2Node_ActorBoundEvent_22_SBZOnSpawnGroupChosen__DelegateSignature(class ASBZPlayerStartGroup* PlayerStartGroup)
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_MethCookingStation3_6_K2Node_ActorBoundEvent_61_SBZCookingStationIngredientAddedDelegate__DelegateSignature(bool bIsCorrect)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_MethCookingStation3_6_K2Node_ActorBoundEvent_61_SBZCookingStationIngredientAddedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZPlayerStartGroup3_7_K2Node_ActorBoundEvent_22_SBZOnSpawnGroupChosen__DelegateSignature");
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_MethCookingStation3_6_K2Node_ActorBoundEvent_61_SBZCookingStationIngredientAddedDelegate__DelegateSignature Parms{};
 
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZPlayerStartGroup3_7_K2Node_ActorBoundEvent_22_SBZOnSpawnGroupChosen__DelegateSignature Parms{};
-
-	Parms.PlayerStartGroup = PlayerStartGroup;
+	Parms.bIsCorrect = bIsCorrect;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZPlayerTrigger_debugTrigger_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_MethCookingStation3_6_K2Node_ActorBoundEvent_57_SBZCookingStationIngredientDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+// Parameters:
+// int32                                   NewIngredientIndex                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_MethCookingStation3_6_K2Node_ActorBoundEvent_57_SBZCookingStationIngredientDelegate__DelegateSignature(int32 NewIngredientIndex)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_MethCookingStation3_6_K2Node_ActorBoundEvent_57_SBZCookingStationIngredientDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_MethCookingStation3_6_K2Node_ActorBoundEvent_57_SBZCookingStationIngredientDelegate__DelegateSignature Parms{};
+
+	Parms.NewIngredientIndex = NewIngredientIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_MethCookingStation3_6_K2Node_ActorBoundEvent_54_SBZMultiBagGeneratorDelegate__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_MethCookingStation3_6_K2Node_ActorBoundEvent_54_SBZMultiBagGeneratorDelegate__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_MethCookingStation3_6_K2Node_ActorBoundEvent_54_SBZMultiBagGeneratorDelegate__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_MethCookingStation3_6_K2Node_ActorBoundEvent_40_SBZCookingStationStateDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+// Parameters:
+// ESBZCookingState                        OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZCookingState                        NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_MethCookingStation3_6_K2Node_ActorBoundEvent_40_SBZCookingStationStateDelegate__DelegateSignature(ESBZCookingState OldState, ESBZCookingState NewState)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_MethCookingStation3_6_K2Node_ActorBoundEvent_40_SBZCookingStationStateDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_MethCookingStation3_6_K2Node_ActorBoundEvent_40_SBZCookingStationStateDelegate__DelegateSignature Parms{};
+
+	Parms.OldState = OldState;
+	Parms.NewState = NewState;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_MethCookingStation2_K2Node_ActorBoundEvent_60_SBZCookingStationIngredientAddedDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+// Parameters:
+// bool                                    bIsCorrect                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_MethCookingStation2_K2Node_ActorBoundEvent_60_SBZCookingStationIngredientAddedDelegate__DelegateSignature(bool bIsCorrect)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_MethCookingStation2_K2Node_ActorBoundEvent_60_SBZCookingStationIngredientAddedDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_MethCookingStation2_K2Node_ActorBoundEvent_60_SBZCookingStationIngredientAddedDelegate__DelegateSignature Parms{};
+
+	Parms.bIsCorrect = bIsCorrect;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_MethCookingStation2_K2Node_ActorBoundEvent_56_SBZCookingStationIngredientDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+// Parameters:
+// int32                                   NewIngredientIndex                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_MethCookingStation2_K2Node_ActorBoundEvent_56_SBZCookingStationIngredientDelegate__DelegateSignature(int32 NewIngredientIndex)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_MethCookingStation2_K2Node_ActorBoundEvent_56_SBZCookingStationIngredientDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_MethCookingStation2_K2Node_ActorBoundEvent_56_SBZCookingStationIngredientDelegate__DelegateSignature Parms{};
+
+	Parms.NewIngredientIndex = NewIngredientIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_MethCookingStation2_K2Node_ActorBoundEvent_53_SBZMultiBagGeneratorDelegate__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_MethCookingStation2_K2Node_ActorBoundEvent_53_SBZMultiBagGeneratorDelegate__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_MethCookingStation2_K2Node_ActorBoundEvent_53_SBZMultiBagGeneratorDelegate__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_MethCookingStation2_K2Node_ActorBoundEvent_51_SBZCookingStationStateDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+// Parameters:
+// ESBZCookingState                        OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZCookingState                        NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_MethCookingStation2_K2Node_ActorBoundEvent_51_SBZCookingStationStateDelegate__DelegateSignature(ESBZCookingState OldState, ESBZCookingState NewState)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_MethCookingStation2_K2Node_ActorBoundEvent_51_SBZCookingStationStateDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_MethCookingStation2_K2Node_ActorBoundEvent_51_SBZCookingStationStateDelegate__DelegateSignature Parms{};
+
+	Parms.OldState = OldState;
+	Parms.NewState = NewState;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid_6_K2Node_ActorBoundEvent_76_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid_6_K2Node_ActorBoundEvent_76_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid_6_K2Node_ActorBoundEvent_76_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid9_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid9_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid9_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid8_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid8_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid8_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid7_K2Node_ActorBoundEvent_82_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid7_K2Node_ActorBoundEvent_82_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid7_K2Node_ActorBoundEvent_82_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid6_K2Node_ActorBoundEvent_81_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid6_K2Node_ActorBoundEvent_81_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid6_K2Node_ActorBoundEvent_81_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid5_K2Node_ActorBoundEvent_80_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid5_K2Node_ActorBoundEvent_80_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid5_K2Node_ActorBoundEvent_80_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid4_K2Node_ActorBoundEvent_79_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid4_K2Node_ActorBoundEvent_79_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid4_K2Node_ActorBoundEvent_79_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid3_K2Node_ActorBoundEvent_78_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid3_K2Node_ActorBoundEvent_78_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid3_K2Node_ActorBoundEvent_78_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid2_9_K2Node_ActorBoundEvent_77_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid2_9_K2Node_ActorBoundEvent_77_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Meth_MuriaticAcid2_9_K2Node_ActorBoundEvent_77_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride_6_K2Node_ActorBoundEvent_44_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride_6_K2Node_ActorBoundEvent_44_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride_6_K2Node_ActorBoundEvent_44_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride9_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride9_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride9_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride8_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride8_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride8_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride7_K2Node_ActorBoundEvent_50_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride7_K2Node_ActorBoundEvent_50_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride7_K2Node_ActorBoundEvent_50_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride6_K2Node_ActorBoundEvent_49_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride6_K2Node_ActorBoundEvent_49_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride6_K2Node_ActorBoundEvent_49_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride5_K2Node_ActorBoundEvent_48_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride5_K2Node_ActorBoundEvent_48_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride5_K2Node_ActorBoundEvent_48_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride4_K2Node_ActorBoundEvent_47_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride4_K2Node_ActorBoundEvent_47_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride4_K2Node_ActorBoundEvent_47_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride3_K2Node_ActorBoundEvent_46_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride3_K2Node_ActorBoundEvent_46_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride3_K2Node_ActorBoundEvent_46_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride2_9_K2Node_ActorBoundEvent_45_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride2_9_K2Node_ActorBoundEvent_45_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Meth_HydrogenChloride2_9_K2Node_ActorBoundEvent_45_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda_6_K2Node_ActorBoundEvent_60_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda_6_K2Node_ActorBoundEvent_60_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda_6_K2Node_ActorBoundEvent_60_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda9_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda9_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda9_K2Node_ActorBoundEvent_1_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda8_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda8_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda8_K2Node_ActorBoundEvent_0_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda7_K2Node_ActorBoundEvent_66_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda7_K2Node_ActorBoundEvent_66_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda7_K2Node_ActorBoundEvent_66_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda6_K2Node_ActorBoundEvent_65_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda6_K2Node_ActorBoundEvent_65_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda6_K2Node_ActorBoundEvent_65_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda5_K2Node_ActorBoundEvent_64_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda5_K2Node_ActorBoundEvent_64_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda5_K2Node_ActorBoundEvent_64_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda4_K2Node_ActorBoundEvent_63_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda4_K2Node_ActorBoundEvent_63_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda4_K2Node_ActorBoundEvent_63_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda3_K2Node_ActorBoundEvent_62_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda3_K2Node_ActorBoundEvent_62_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda3_K2Node_ActorBoundEvent_62_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda2_9_K2Node_ActorBoundEvent_61_onInteractionCompleted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda2_9_K2Node_ActorBoundEvent_61_onInteractionCompleted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_Meth_CausticSoda2_9_K2Node_ActorBoundEvent_61_onInteractionCompleted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_IW_BRE_OPE_NAV_ATT8_K2Node_ActorBoundEvent_108_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_IW_BRE_OPE_NAV_ATT8_K2Node_ActorBoundEvent_108_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_IW_BRE_OPE_NAV_ATT8_K2Node_ActorBoundEvent_108_SBZGateStateChangedDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_IW_BRE_OPE_NAV_ATT8_K2Node_ActorBoundEvent_108_SBZGateStateChangedDelegate__DelegateSignature Parms{};
+
+	Parms.OldState = OldState;
+	Parms.State = State;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_IW_BRE_OPE_NAV_ATT7_K2Node_ActorBoundEvent_110_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_IW_BRE_OPE_NAV_ATT7_K2Node_ActorBoundEvent_110_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_IW_BRE_OPE_NAV_ATT7_K2Node_ActorBoundEvent_110_SBZGateStateChangedDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_IW_BRE_OPE_NAV_ATT7_K2Node_ActorBoundEvent_110_SBZGateStateChangedDelegate__DelegateSignature Parms{};
+
+	Parms.OldState = OldState;
+	Parms.State = State;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights5_K2Node_ActorBoundEvent_28_SBZSabotagePointDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+// Parameters:
+// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights5_K2Node_ActorBoundEvent_28_SBZSabotagePointDelegate__DelegateSignature(bool bSabotaged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights5_K2Node_ActorBoundEvent_28_SBZSabotagePointDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights5_K2Node_ActorBoundEvent_28_SBZSabotagePointDelegate__DelegateSignature Parms{};
+
+	Parms.bSabotaged = bSabotaged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights4_K2Node_ActorBoundEvent_27_SBZSabotagePointDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+// Parameters:
+// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights4_K2Node_ActorBoundEvent_27_SBZSabotagePointDelegate__DelegateSignature(bool bSabotaged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights4_K2Node_ActorBoundEvent_27_SBZSabotagePointDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights4_K2Node_ActorBoundEvent_27_SBZSabotagePointDelegate__DelegateSignature Parms{};
+
+	Parms.bSabotaged = bSabotaged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights3_K2Node_ActorBoundEvent_26_SBZSabotagePointDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+// Parameters:
+// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights3_K2Node_ActorBoundEvent_26_SBZSabotagePointDelegate__DelegateSignature(bool bSabotaged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights3_K2Node_ActorBoundEvent_26_SBZSabotagePointDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights3_K2Node_ActorBoundEvent_26_SBZSabotagePointDelegate__DelegateSignature Parms{};
+
+	Parms.bSabotaged = bSabotaged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights2_K2Node_ActorBoundEvent_25_SBZSabotagePointDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+// Parameters:
+// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights2_K2Node_ActorBoundEvent_25_SBZSabotagePointDelegate__DelegateSignature(bool bSabotaged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights2_K2Node_ActorBoundEvent_25_SBZSabotagePointDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_HouseLights2_K2Node_ActorBoundEvent_25_SBZSabotagePointDelegate__DelegateSignature Parms{};
+
+	Parms.bSabotaged = bSabotaged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_2_K2Node_ActorBoundEvent_0_SBZSabotagePointDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+// Parameters:
+// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_2_K2Node_ActorBoundEvent_0_SBZSabotagePointDelegate__DelegateSignature(bool bSabotaged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_2_K2Node_ActorBoundEvent_0_SBZSabotagePointDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_BP_FlipSwitch_SabotagePoint_2_K2Node_ActorBoundEvent_0_SBZSabotagePointDelegate__DelegateSignature Parms{};
+
+	Parms.bSabotaged = bSabotaged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_9_K2Node_ActorBoundEvent_92_Barricade_destroyed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_9_K2Node_ActorBoundEvent_92_Barricade_destroyed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_9_K2Node_ActorBoundEvent_92_Barricade_destroyed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_9_K2Node_ActorBoundEvent_91_Barricade_placed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_9_K2Node_ActorBoundEvent_91_Barricade_placed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_9_K2Node_ActorBoundEvent_91_Barricade_placed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_8_K2Node_ActorBoundEvent_90_Barricade_destroyed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_8_K2Node_ActorBoundEvent_90_Barricade_destroyed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_8_K2Node_ActorBoundEvent_90_Barricade_destroyed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_8_K2Node_ActorBoundEvent_89_Barricade_placed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_8_K2Node_ActorBoundEvent_89_Barricade_placed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_8_K2Node_ActorBoundEvent_89_Barricade_placed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_7_K2Node_ActorBoundEvent_88_Barricade_destroyed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_7_K2Node_ActorBoundEvent_88_Barricade_destroyed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_7_K2Node_ActorBoundEvent_88_Barricade_destroyed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_7_K2Node_ActorBoundEvent_87_Barricade_placed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_7_K2Node_ActorBoundEvent_87_Barricade_placed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_7_K2Node_ActorBoundEvent_87_Barricade_placed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_5_K2Node_ActorBoundEvent_75_Barricade_placed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_5_K2Node_ActorBoundEvent_75_Barricade_placed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_5_K2Node_ActorBoundEvent_75_Barricade_placed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_5_K2Node_ActorBoundEvent_74_Barricade_destroyed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_5_K2Node_ActorBoundEvent_74_Barricade_destroyed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_5_K2Node_ActorBoundEvent_74_Barricade_destroyed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_4_K2Node_ActorBoundEvent_77_Barricade_placed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_4_K2Node_ActorBoundEvent_77_Barricade_placed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_4_K2Node_ActorBoundEvent_77_Barricade_placed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_4_K2Node_ActorBoundEvent_76_Barricade_destroyed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_4_K2Node_ActorBoundEvent_76_Barricade_destroyed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_4_K2Node_ActorBoundEvent_76_Barricade_destroyed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_3_K2Node_ActorBoundEvent_73_Barricade_placed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_3_K2Node_ActorBoundEvent_73_Barricade_placed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_3_K2Node_ActorBoundEvent_73_Barricade_placed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_3_K2Node_ActorBoundEvent_72_Barricade_destroyed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_3_K2Node_ActorBoundEvent_72_Barricade_destroyed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_3_K2Node_ActorBoundEvent_72_Barricade_destroyed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_2_K2Node_ActorBoundEvent_69_Barricade_placed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_2_K2Node_ActorBoundEvent_69_Barricade_placed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_2_K2Node_ActorBoundEvent_69_Barricade_placed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_2_K2Node_ActorBoundEvent_68_Barricade_destroyed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_2_K2Node_ActorBoundEvent_68_Barricade_destroyed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_2_K2Node_ActorBoundEvent_68_Barricade_destroyed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_21_K2Node_ActorBoundEvent_107_Barricade_destroyed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_21_K2Node_ActorBoundEvent_107_Barricade_destroyed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_21_K2Node_ActorBoundEvent_107_Barricade_destroyed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_21_K2Node_ActorBoundEvent_106_Barricade_placed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_21_K2Node_ActorBoundEvent_106_Barricade_placed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_21_K2Node_ActorBoundEvent_106_Barricade_placed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_1_K2Node_ActorBoundEvent_71_Barricade_destroyed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_1_K2Node_ActorBoundEvent_71_Barricade_destroyed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_1_K2Node_ActorBoundEvent_71_Barricade_destroyed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_1_K2Node_ActorBoundEvent_70_Barricade_placed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_1_K2Node_ActorBoundEvent_70_Barricade_placed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_1_K2Node_ActorBoundEvent_70_Barricade_placed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_18_K2Node_ActorBoundEvent_103_Barricade_placed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_18_K2Node_ActorBoundEvent_103_Barricade_placed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_18_K2Node_ActorBoundEvent_103_Barricade_placed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_18_K2Node_ActorBoundEvent_102_Barricade_destroyed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_18_K2Node_ActorBoundEvent_102_Barricade_destroyed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_18_K2Node_ActorBoundEvent_102_Barricade_destroyed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_17_K2Node_ActorBoundEvent_105_Barricade_placed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_17_K2Node_ActorBoundEvent_105_Barricade_placed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_17_K2Node_ActorBoundEvent_105_Barricade_placed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_17_K2Node_ActorBoundEvent_104_Barricade_destroyed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_17_K2Node_ActorBoundEvent_104_Barricade_destroyed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_17_K2Node_ActorBoundEvent_104_Barricade_destroyed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_16_K2Node_ActorBoundEvent_86_Barricade_destroyed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_16_K2Node_ActorBoundEvent_86_Barricade_destroyed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_16_K2Node_ActorBoundEvent_86_Barricade_destroyed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_16_K2Node_ActorBoundEvent_101_Barricade_placed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_16_K2Node_ActorBoundEvent_101_Barricade_placed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_16_K2Node_ActorBoundEvent_101_Barricade_placed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_13_K2Node_ActorBoundEvent_99_Barricade_placed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_13_K2Node_ActorBoundEvent_99_Barricade_placed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_13_K2Node_ActorBoundEvent_99_Barricade_placed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_13_K2Node_ActorBoundEvent_100_Barricade_destroyed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_13_K2Node_ActorBoundEvent_100_Barricade_destroyed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_13_K2Node_ActorBoundEvent_100_Barricade_destroyed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_12_K2Node_ActorBoundEvent_98_Barricade_destroyed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_12_K2Node_ActorBoundEvent_98_Barricade_destroyed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_12_K2Node_ActorBoundEvent_98_Barricade_destroyed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_12_K2Node_ActorBoundEvent_97_Barricade_placed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_12_K2Node_ActorBoundEvent_97_Barricade_placed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_12_K2Node_ActorBoundEvent_97_Barricade_placed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_11_K2Node_ActorBoundEvent_96_Barricade_destroyed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_11_K2Node_ActorBoundEvent_96_Barricade_destroyed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_11_K2Node_ActorBoundEvent_96_Barricade_destroyed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_11_K2Node_ActorBoundEvent_95_Barricade_placed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_11_K2Node_ActorBoundEvent_95_Barricade_placed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_11_K2Node_ActorBoundEvent_95_Barricade_placed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_10_K2Node_ActorBoundEvent_93_Barricade_placed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_10_K2Node_ActorBoundEvent_93_Barricade_placed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_10_K2Node_ActorBoundEvent_93_Barricade_placed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_Bp_barricade_10_K2Node_ActorBoundEvent_111_Barricade_destroyed__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_Bp_barricade_10_K2Node_ActorBoundEvent_111_Barricade_destroyed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Villa_Scripting_Bp_barricade_10_K2Node_ActorBoundEvent_111_Barricade_destroyed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerTrigger_debugTrigger_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Cookie_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZPlayerTrigger_debugTrigger_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZPlayerTrigger_debugTrigger_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+	Params::G_Cookie_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
 	Parms.Pawn = Pawn;
 
@@ -3080,19 +3476,17 @@ void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerTrigger_debugTrig
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZPlayerTrigger_HelicopterDebugTrigger2_K2Node_ActorBoundEvent_38_SBZPawnDynamicDelegate__DelegateSignature
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerTrigger_HelicopterDebugTrigger2_K2Node_ActorBoundEvent_38_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Cookie_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZPlayerTrigger_HelicopterDebugTrigger2_K2Node_ActorBoundEvent_38_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZPlayerTrigger_HelicopterDebugTrigger2_K2Node_ActorBoundEvent_38_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+	Params::G_Cookie_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
 	Parms.Pawn = Pawn;
 
@@ -3100,63 +3494,131 @@ void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerTrigger_Helicopte
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZPlayerTrigger_HelicopterDebugTrigger_K2Node_ActorBoundEvent_33_ActorBeginOverlapSignature__DelegateSignature
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZPlayerEscapeVolume_Escape_Loud1_K2Node_ActorBoundEvent_16_SBZEscapeTimerDelegate__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_SBZPlayerEscapeVolume_Escape_Loud1_K2Node_ActorBoundEvent_16_SBZEscapeTimerDelegate__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ScriptTemplate_Scripting_SBZPlayerEscapeVolume_Escape_Loud1_K2Node_ActorBoundEvent_16_SBZEscapeTimerDelegate__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZObjective_SecureTheLoot_K2Node_ActorBoundEvent_11_SBZOnObjective__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_SBZObjective_SecureTheLoot_K2Node_ActorBoundEvent_11_SBZOnObjective__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ScriptTemplate_Scripting_SBZObjective_SecureTheLoot_K2Node_ActorBoundEvent_11_SBZOnObjective__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZObjective_FirstObj_K2Node_ActorBoundEvent_3_SBZOnObjective__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_SBZObjective_FirstObj_K2Node_ActorBoundEvent_3_SBZOnObjective__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ScriptTemplate_Scripting_SBZObjective_FirstObj_K2Node_ActorBoundEvent_3_SBZOnObjective__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class AActor*                           OverlappedActor                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerTrigger_HelicopterDebugTrigger_K2Node_ActorBoundEvent_33_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor)
+void AG_Cookie_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZPlayerTrigger_HelicopterDebugTrigger_K2Node_ActorBoundEvent_33_ActorBeginOverlapSignature__DelegateSignature");
+	Params::G_Cookie_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature Parms{};
 
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZPlayerTrigger_HelicopterDebugTrigger_K2Node_ActorBoundEvent_33_ActorBeginOverlapSignature__DelegateSignature Parms{};
-
-	Parms.OverlappedActor = OverlappedActor;
-	Parms.OtherActor = OtherActor;
+	Parms.Volume = Volume;
+	Parms.Bag = Bag;
+	Parms.Handle = std::move(Handle);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZPlayerTrigger_Light_off_K2Node_ActorBoundEvent_79_ActorBeginOverlapSignature__DelegateSignature
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class AActor*                           OverlappedActor                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerTrigger_Light_off_K2Node_ActorBoundEvent_79_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor)
+void AG_Cookie_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZPlayerTrigger_Light_off_K2Node_ActorBoundEvent_79_ActorBeginOverlapSignature__DelegateSignature");
+	Params::G_Cookie_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature Parms{};
 
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZPlayerTrigger_Light_off_K2Node_ActorBoundEvent_79_ActorBeginOverlapSignature__DelegateSignature Parms{};
-
-	Parms.OverlappedActor = OverlappedActor;
-	Parms.OtherActor = OtherActor;
+	Parms.Volume = Volume;
+	Parms.Bag = Bag;
+	Parms.Handle = std::move(Handle);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZPlayerTrigger_Light_on_K2Node_ActorBoundEvent_76_SBZPawnDynamicDelegate__DelegateSignature
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Escape_Loud_K2Node_ActorBoundEvent_15_SBZBagEnteredDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void AG_Cookie_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Escape_Loud_K2Node_ActorBoundEvent_15_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Escape_Loud_K2Node_ActorBoundEvent_15_SBZBagEnteredDelegate__DelegateSignature", FnName));
+
+	Params::G_Cookie_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Escape_Loud_K2Node_ActorBoundEvent_15_SBZBagEnteredDelegate__DelegateSignature Parms{};
+
+	Parms.Volume = Volume;
+	Parms.Bag = Bag;
+	Parms.Handle = std::move(Handle);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_BP_Signalflare_Crossroad_K2Node_ActorBoundEvent_17_OnInteracted__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Cookie_Scripting_C::BndEvt__G_ScriptTemplate_Scripting_BP_Signalflare_Crossroad_K2Node_ActorBoundEvent_17_OnInteracted__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ScriptTemplate_Scripting_BP_Signalflare_Crossroad_K2Node_ActorBoundEvent_17_OnInteracted__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Cookie_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_94_SBZPawnDynamicDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerTrigger_Light_on_K2Node_ActorBoundEvent_76_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Cookie_Scripting_C::BndEvt__G_Cookie_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_94_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Cookie_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_94_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZPlayerTrigger_Light_on_K2Node_ActorBoundEvent_76_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZPlayerTrigger_Light_on_K2Node_ActorBoundEvent_76_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+	Params::G_Cookie_Scripting_C_BndEvt__G_Cookie_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_94_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
 	Parms.Pawn = Pawn;
 
@@ -3164,1105 +3626,137 @@ void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerTrigger_Light_on_
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZPlayerTrigger_MaxBagsDebugTrigger_K2Node_ActorBoundEvent_62_ActorBeginOverlapSignature__DelegateSignature
-// (BlueprintEvent)
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Cookie_Scripting_SBZDestroyGroup_10_K2Node_ActorBoundEvent_112_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
+// (HasOutParams, BlueprintEvent)
 // Parameters:
-// class AActor*                           OverlappedActor                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const TArray<class AActor*>&            KeptActors                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const TArray<class AActor*>&            DestroyedActors                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerTrigger_MaxBagsDebugTrigger_K2Node_ActorBoundEvent_62_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor)
+void AG_Cookie_Scripting_C::BndEvt__G_Cookie_Scripting_SBZDestroyGroup_10_K2Node_ActorBoundEvent_112_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Cookie_Scripting_SBZDestroyGroup_10_K2Node_ActorBoundEvent_112_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZPlayerTrigger_MaxBagsDebugTrigger_K2Node_ActorBoundEvent_62_ActorBeginOverlapSignature__DelegateSignature");
+	Params::G_Cookie_Scripting_C_BndEvt__G_Cookie_Scripting_SBZDestroyGroup_10_K2Node_ActorBoundEvent_112_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature Parms{};
 
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZPlayerTrigger_MaxBagsDebugTrigger_K2Node_ActorBoundEvent_62_ActorBeginOverlapSignature__DelegateSignature Parms{};
-
-	Parms.OverlappedActor = OverlappedActor;
-	Parms.OtherActor = OtherActor;
+	Parms.KeptActors = std::move(KeptActors);
+	Parms.DestroyedActors = std::move(DestroyedActors);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZPlayerTrigger_ShadeCopsPrepared_K2Node_ActorBoundEvent_10_ActorBeginOverlapSignature__DelegateSignature
-// (BlueprintEvent)
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Cookie_Scripting_SBZDestroyGroup_0_K2Node_ActorBoundEvent_113_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
+// (HasOutParams, BlueprintEvent)
 // Parameters:
-// class AActor*                           OverlappedActor                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const TArray<class AActor*>&            KeptActors                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const TArray<class AActor*>&            DestroyedActors                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerTrigger_ShadeCopsPrepared_K2Node_ActorBoundEvent_10_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor)
+void AG_Cookie_Scripting_C::BndEvt__G_Cookie_Scripting_SBZDestroyGroup_0_K2Node_ActorBoundEvent_113_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Cookie_Scripting_SBZDestroyGroup_0_K2Node_ActorBoundEvent_113_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZPlayerTrigger_ShadeCopsPrepared_K2Node_ActorBoundEvent_10_ActorBeginOverlapSignature__DelegateSignature");
+	Params::G_Cookie_Scripting_C_BndEvt__G_Cookie_Scripting_SBZDestroyGroup_0_K2Node_ActorBoundEvent_113_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature Parms{};
 
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZPlayerTrigger_ShadeCopsPrepared_K2Node_ActorBoundEvent_10_ActorBeginOverlapSignature__DelegateSignature Parms{};
-
-	Parms.OverlappedActor = OverlappedActor;
-	Parms.OtherActor = OtherActor;
+	Parms.KeptActors = std::move(KeptActors);
+	Parms.DestroyedActors = std::move(DestroyedActors);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearEscape_Loud2_K2Node_ActorBoundEvent_31_SBZPawnDynamicDelegate__DelegateSignature
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Cookie_Scripting_BP_ZiplineBag1_K2Node_ActorBoundEvent_109_SBZBagPickedUp__DelegateSignature
 // (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearEscape_Loud2_K2Node_ActorBoundEvent_31_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Cookie_Scripting_C::BndEvt__G_Cookie_Scripting_BP_ZiplineBag1_K2Node_ActorBoundEvent_109_SBZBagPickedUp__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearEscape_Loud2_K2Node_ActorBoundEvent_31_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearEscape_Loud2_K2Node_ActorBoundEvent_31_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_Cellar_K2Node_ActorBoundEvent_19_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_Cellar_K2Node_ActorBoundEvent_19_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_Cellar_K2Node_ActorBoundEvent_19_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_Cellar_K2Node_ActorBoundEvent_19_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_Kitchen_K2Node_ActorBoundEvent_18_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_Kitchen_K2Node_ActorBoundEvent_18_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_Kitchen_K2Node_ActorBoundEvent_18_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_Kitchen_K2Node_ActorBoundEvent_18_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_PlayerTeleport2_K2Node_ActorBoundEvent_66_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_PlayerTeleport2_K2Node_ActorBoundEvent_66_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_PlayerTeleport2_K2Node_ActorBoundEvent_66_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_PlayerTeleport2_K2Node_ActorBoundEvent_66_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_PlayerTeleport_K2Node_ActorBoundEvent_65_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_PlayerTeleport_K2Node_ActorBoundEvent_65_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_PlayerTeleport_K2Node_ActorBoundEvent_65_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZPlayerTriggerVolume_PlayerTeleport_K2Node_ActorBoundEvent_65_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_FlyIn_2_K2Node_ActorBoundEvent_44_SBZSplineOnEndReached__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_FlyIn_2_K2Node_ActorBoundEvent_44_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_FlyIn_2_K2Node_ActorBoundEvent_44_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_FlyIn_2_K2Node_ActorBoundEvent_44_SBZSplineOnEndReached__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_FlyIn_3_K2Node_ActorBoundEvent_46_SBZSplineOnEndReached__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_FlyIn_3_K2Node_ActorBoundEvent_46_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_FlyIn_3_K2Node_ActorBoundEvent_46_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_FlyIn_3_K2Node_ActorBoundEvent_46_SBZSplineOnEndReached__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_FlyIn_K2Node_ActorBoundEvent_1_SBZSplineOnEndReached__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_FlyIn_K2Node_ActorBoundEvent_1_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_FlyIn_K2Node_ActorBoundEvent_1_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_FlyIn_K2Node_ActorBoundEvent_1_SBZSplineOnEndReached__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_K2Node_ActorBoundEvent_4_SBZSplineOnEnter__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_K2Node_ActorBoundEvent_4_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_K2Node_ActorBoundEvent_4_SBZSplineOnEnter__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZTrafficSpline_Escape_K2Node_ActorBoundEvent_4_SBZSplineOnEnter__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZTrafficSpline_EscapeUpper_K2Node_ActorBoundEvent_24_SBZSplineOnEnter__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZTrafficSpline_EscapeUpper_K2Node_ActorBoundEvent_24_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZTrafficSpline_EscapeUpper_K2Node_ActorBoundEvent_24_SBZSplineOnEnter__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZTrafficSpline_EscapeUpper_K2Node_ActorBoundEvent_24_SBZSplineOnEnter__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZTrafficSpline_LowerExit_K2Node_ActorBoundEvent_14_SBZSplineOnEnter__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZTrafficSpline_LowerExit_K2Node_ActorBoundEvent_14_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZTrafficSpline_LowerExit_K2Node_ActorBoundEvent_14_SBZSplineOnEnter__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZTrafficSpline_LowerExit_K2Node_ActorBoundEvent_14_SBZSplineOnEnter__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZTrafficSplineSwatHelicopterStart1_K2Node_ActorBoundEvent_45_SBZSplineOnEndReached__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZTrafficSplineSwatHelicopterStart1_K2Node_ActorBoundEvent_45_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZTrafficSplineSwatHelicopterStart1_K2Node_ActorBoundEvent_45_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZTrafficSplineSwatHelicopterStart1_K2Node_ActorBoundEvent_45_SBZSplineOnEndReached__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZTrafficSplineSwatHelicopterStart2_K2Node_ActorBoundEvent_47_SBZSplineOnEndReached__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZTrafficSplineSwatHelicopterStart2_K2Node_ActorBoundEvent_47_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZTrafficSplineSwatHelicopterStart2_K2Node_ActorBoundEvent_47_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZTrafficSplineSwatHelicopterStart2_K2Node_ActorBoundEvent_47_SBZSplineOnEndReached__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.BndEvt__G_Villa_Scripting_SBZTrafficSplineUpperExit_K2Node_ActorBoundEvent_32_SBZSplineOnEnter__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::BndEvt__G_Villa_Scripting_SBZTrafficSplineUpperExit_K2Node_ActorBoundEvent_32_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "BndEvt__G_Villa_Scripting_SBZTrafficSplineUpperExit_K2Node_ActorBoundEvent_32_SBZSplineOnEnter__DelegateSignature");
-
-	Params::G_Cookie_Scripting_C_BndEvt__G_Villa_Scripting_SBZTrafficSplineUpperExit_K2Node_ActorBoundEvent_32_SBZSplineOnEnter__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.CallBackVan
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::CallBackVan()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "CallBackVan");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Cookie_Scripting_BP_ZiplineBag1_K2Node_ActorBoundEvent_109_SBZBagPickedUp__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.ChooseFlarePosition
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.AssaultTriggered
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Cookie_Scripting_C::ChooseFlarePosition()
+void AG_Cookie_Scripting_C::AssaultTriggered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "ChooseFlarePosition");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AssaultTriggered", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.Cooked6BagsEnableField
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.ActivateVanDriveIn
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Cookie_Scripting_C::Cooked6BagsEnableField()
+void AG_Cookie_Scripting_C::ActivateVanDriveIn()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "Cooked6BagsEnableField");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateVanDriveIn", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.CountMaxLoot
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.ActivateSWATHelicopter
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Cookie_Scripting_C::CountMaxLoot()
+void AG_Cookie_Scripting_C::ActivateSWATHelicopter()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "CountMaxLoot");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateSWATHelicopter", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.DriveAwayGetaway
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.ActivateSignalFlare
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Cookie_Scripting_C::DriveAwayGetaway()
+void AG_Cookie_Scripting_C::ActivateSignalFlare()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "DriveAwayGetaway");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateSignalFlare", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.EnableMethlab
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.ActivateFirstObjective
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Cookie_Scripting_C::EnableMethlab()
+void AG_Cookie_Scripting_C::ActivateFirstObjective()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "EnableMethlab");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateFirstObjective", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.ExecuteUbergraph_G_Cookie_Scripting
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::ExecuteUbergraph_G_Cookie_Scripting(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "ExecuteUbergraph_G_Cookie_Scripting");
-
-	Params::G_Cookie_Scripting_C_ExecuteUbergraph_G_Cookie_Scripting Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.FristVanArrival
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.ActivateEndlessAssault
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Cookie_Scripting_C::FristVanArrival()
+void AG_Cookie_Scripting_C::ActivateEndlessAssault()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "FristVanArrival");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateEndlessAssault", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.GetRandomNonRepeatingInt
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Max                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32*                                  RandomInteger                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::GetRandomNonRepeatingInt(int32 Max, int32* RandomInteger)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "GetRandomNonRepeatingInt");
-
-	Params::G_Cookie_Scripting_C_GetRandomNonRepeatingInt Parms{};
-
-	Parms.Max = Max;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (RandomInteger != nullptr)
-		*RandomInteger = Parms.RandomInteger;
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.GreedVO
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::GreedVO()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "GreedVO");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.HeistStateChanged
+// Function G_Cookie_Scripting.G_Cookie_Scripting_C.ActionPhaseStarted
 // (Event, Public, BlueprintEvent)
-// Parameters:
-// EPD3HeistState                          OldHeistState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPD3HeistState                          CurrentHeistState                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Cookie_Scripting_C::HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState)
+void AG_Cookie_Scripting_C::ActionPhaseStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "HeistStateChanged");
-
-	Params::G_Cookie_Scripting_C_HeistStateChanged Parms{};
-
-	Parms.OldHeistState = OldHeistState;
-	Parms.CurrentHeistState = CurrentHeistState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.IngredientReminder
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::IngredientReminder()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "IngredientReminder");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.IngredientUsed1
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::IngredientUsed1()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "IngredientUsed1");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.Lights_Off
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::Lights_Off()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "Lights_Off");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.Lights_On
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::Lights_On()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "Lights_On");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.MakeRandomArray
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Max                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Cookie_Scripting_C::MakeRandomArray(int32 Max)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "MakeRandomArray");
-
-	Params::G_Cookie_Scripting_C_MakeRandomArray Parms{};
-
-	Parms.Max = Max;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.MaxBagBeenCooked
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::MaxBagBeenCooked()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "MaxBagBeenCooked");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.MethReadyAndCooking
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::MethReadyAndCooking()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "MethReadyAndCooking");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.MissionState
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::MissionState()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "MissionState");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.OBJCountBags
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::OBJCountBags()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "OBJCountBags");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.OnPlayerPickedUpBag
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FSBZBagHandle&             BagHandle                                              (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void AG_Cookie_Scripting_C::OnPlayerPickedUpBag(const struct FSBZBagHandle& BagHandle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "OnPlayerPickedUpBag");
-
-	Params::G_Cookie_Scripting_C_OnPlayerPickedUpBag Parms{};
-
-	Parms.BagHandle = std::move(BagHandle);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.OnPlayersCarryBagChanged
-// (Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FSBZPlayersCarryBagChangedEvent&Data                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
-
-void AG_Cookie_Scripting_C::OnPlayersCarryBagChanged(const struct FSBZPlayersCarryBagChangedEvent& Data)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "OnPlayersCarryBagChanged");
-
-	Params::G_Cookie_Scripting_C_OnPlayersCarryBagChanged Parms{};
-
-	Parms.Data = std::move(Data);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.OnPreplanningAssetsTagsApplied
-// (Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FGameplayTagContainer&     PreplanningTagContainer                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void AG_Cookie_Scripting_C::OnPreplanningAssetsTagsApplied(const struct FGameplayTagContainer& PreplanningTagContainer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "OnPreplanningAssetsTagsApplied");
-
-	Params::G_Cookie_Scripting_C_OnPreplanningAssetsTagsApplied Parms{};
-
-	Parms.PreplanningTagContainer = std::move(PreplanningTagContainer);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.OnRandomPlacementStarted
-// (Event, Public, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::OnRandomPlacementStarted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "OnRandomPlacementStarted");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.PlankPlaced
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::PlankPlaced()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "PlankPlaced");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.PlayersIdleForTooLong
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::PlayersIdleForTooLong()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "PlayersIdleForTooLong");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.PlayVOCountLootBags
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::PlayVOCountLootBags()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "PlayVOCountLootBags");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.PowerboxRandomization
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::PowerboxRandomization()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "PowerboxRandomization");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.PPDebugHelicopter
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::PPDebugHelicopter()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "PPDebugHelicopter");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.PPDebugHostages
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::PPDebugHostages()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "PPDebugHostages");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.PPDebugMeth
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::PPDebugMeth()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "PPDebugMeth");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.PPVanShallNotLeave
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::PPVanShallNotLeave()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "PPVanShallNotLeave");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.Randomize Meth Lab Location
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::Randomize_Meth_Lab_Location()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "Randomize Meth Lab Location");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.RandomizeAmmo
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::RandomizeAmmo()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "RandomizeAmmo");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.ReminderToEscape
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::ReminderToEscape()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "ReminderToEscape");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.ResetDroppedIngredientCount
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::ResetDroppedIngredientCount()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "ResetDroppedIngredientCount");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.ResetFlareCount
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::ResetFlareCount()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "ResetFlareCount");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.ResetFlareList
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::ResetFlareList()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "ResetFlareList");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.ResetStayTimeForVan
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::ResetStayTimeForVan()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "ResetStayTimeForVan");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.ResetUnpackZones
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::ResetUnpackZones()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "ResetUnpackZones");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.ReStartsSecureLoot
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::ReStartsSecureLoot()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "ReStartsSecureLoot");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.RestartVanEntering
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::RestartVanEntering()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "RestartVanEntering");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.SecureMeth
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::SecureMeth()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "SecureMeth");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.SetStayTimeForVan
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::SetStayTimeForVan()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "SetStayTimeForVan");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.SignalFlare
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::SignalFlare()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "SignalFlare");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.Start_sniper_spawn
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::Start_sniper_spawn()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "Start_sniper_spawn");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.StartDiffecultyPogression
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::StartDiffecultyPogression()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "StartDiffecultyPogression");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.StartIngredientsVO
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::StartIngredientsVO()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "StartIngredientsVO");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.SwatApproaching
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::SwatApproaching()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "SwatApproaching");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.TryActivateEscapeZone
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::TryActivateEscapeZone()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "TryActivateEscapeZone");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Cookie_Scripting.G_Cookie_Scripting_C.TryActivateSecureZone
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Cookie_Scripting_C::TryActivateSecureZone()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Cookie_Scripting_C", "TryActivateSecureZone");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActionPhaseStarted", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -16,6 +16,36 @@
 
 SDK_NAMESPACE_START
 
+// Function C_Penthouse.C_Penthouse_C.OnIntroFinished
+// (BlueprintCallable, BlueprintEvent)
+
+void AC_Penthouse_C::OnIntroFinished()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnIntroFinished", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function C_Penthouse.C_Penthouse_C.IntroSequenceChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    bIsStarted_IntroSequenceChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AC_Penthouse_C::IntroSequenceChanged(bool bIsStarted_IntroSequenceChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IntroSequenceChanged", FnName));
+
+	Params::C_Penthouse_C_IntroSequenceChanged Parms{};
+
+	Parms.bIsStarted_IntroSequenceChanged = bIsStarted_IntroSequenceChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function C_Penthouse.C_Penthouse_C.ExecuteUbergraph_C_Penthouse
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,50 +53,14 @@ SDK_NAMESPACE_START
 
 void AC_Penthouse_C::ExecuteUbergraph_C_Penthouse(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_Penthouse_C", "ExecuteUbergraph_C_Penthouse");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "C_Penthouse_C", "ExecuteUbergraph_C_Penthouse", FuncInfo);
 
 	Params::C_Penthouse_C_ExecuteUbergraph_C_Penthouse Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function C_Penthouse.C_Penthouse_C.IntroSequenceChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    bIsStarted                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AC_Penthouse_C::IntroSequenceChanged(bool bIsStarted)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_Penthouse_C", "IntroSequenceChanged");
-
-	Params::C_Penthouse_C_IntroSequenceChanged Parms{};
-
-	Parms.bIsStarted = bIsStarted;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function C_Penthouse.C_Penthouse_C.OnIntroFinished
-// (BlueprintCallable, BlueprintEvent)
-
-void AC_Penthouse_C::OnIntroFinished()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_Penthouse_C", "OnIntroFinished");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

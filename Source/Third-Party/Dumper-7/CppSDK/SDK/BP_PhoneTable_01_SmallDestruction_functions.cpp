@@ -16,25 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_PhoneTable_01_SmallDestruction.BP_PhoneTable_01_SmallDestruction_C.BndEvt__BP_PhoneTable_01_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// ESBZCosmeticDestructionType             Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZCosmeticDestructionContext&HitContext                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// Function BP_PhoneTable_01_SmallDestruction.BP_PhoneTable_01_SmallDestruction_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_PhoneTable_01_SmallDestruction_C::BndEvt__BP_PhoneTable_01_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)
+void ABP_PhoneTable_01_SmallDestruction_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PhoneTable_01_SmallDestruction_C", "BndEvt__BP_PhoneTable_01_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature");
-
-	Params::BP_PhoneTable_01_SmallDestruction_C_BndEvt__BP_PhoneTable_01_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature Parms{};
-
-	Parms.Type = Type;
-	Parms.HitContext = std::move(HitContext);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -45,10 +35,8 @@ void ABP_PhoneTable_01_SmallDestruction_C::BndEvt__BP_PhoneTable_01_SBZCosmeticD
 
 void ABP_PhoneTable_01_SmallDestruction_C::ExecuteUbergraph_BP_PhoneTable_01_SmallDestruction(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PhoneTable_01_SmallDestruction_C", "ExecuteUbergraph_BP_PhoneTable_01_SmallDestruction");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_PhoneTable_01_SmallDestruction_C", "ExecuteUbergraph_BP_PhoneTable_01_SmallDestruction", FuncInfo);
 
 	Params::BP_PhoneTable_01_SmallDestruction_C_ExecuteUbergraph_BP_PhoneTable_01_SmallDestruction Parms{};
 
@@ -58,17 +46,23 @@ void ABP_PhoneTable_01_SmallDestruction_C::ExecuteUbergraph_BP_PhoneTable_01_Sma
 }
 
 
-// Function BP_PhoneTable_01_SmallDestruction.BP_PhoneTable_01_SmallDestruction_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_PhoneTable_01_SmallDestruction.BP_PhoneTable_01_SmallDestruction_C.BndEvt__BP_PhoneTable_01_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// ESBZCosmeticDestructionType             Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZCosmeticDestructionContext&HitContext                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 
-void ABP_PhoneTable_01_SmallDestruction_C::ReceiveBeginPlay()
+void ABP_PhoneTable_01_SmallDestruction_C::BndEvt__BP_PhoneTable_01_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_PhoneTable_01_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PhoneTable_01_SmallDestruction_C", "ReceiveBeginPlay");
+	Params::BP_PhoneTable_01_SmallDestruction_C_BndEvt__BP_PhoneTable_01_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.Type = Type;
+	Parms.HitContext = std::move(HitContext);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

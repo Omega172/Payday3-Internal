@@ -16,6 +16,18 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_BUS_WhiteboardWidget.BP_BUS_WhiteboardWidget_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_BUS_WhiteboardWidget_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_BUS_WhiteboardWidget.BP_BUS_WhiteboardWidget_C.ExecuteUbergraph_BP_BUS_WhiteboardWidget
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,30 +35,14 @@ SDK_NAMESPACE_START
 
 void ABP_BUS_WhiteboardWidget_C::ExecuteUbergraph_BP_BUS_WhiteboardWidget(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BUS_WhiteboardWidget_C", "ExecuteUbergraph_BP_BUS_WhiteboardWidget");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_BUS_WhiteboardWidget_C", "ExecuteUbergraph_BP_BUS_WhiteboardWidget", FuncInfo);
 
 	Params::BP_BUS_WhiteboardWidget_C_ExecuteUbergraph_BP_BUS_WhiteboardWidget Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BUS_WhiteboardWidget.BP_BUS_WhiteboardWidget_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_BUS_WhiteboardWidget_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BUS_WhiteboardWidget_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

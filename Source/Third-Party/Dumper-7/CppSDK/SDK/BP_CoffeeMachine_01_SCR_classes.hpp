@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "AkAudio_structs.hpp"
 #include "bp_screen_classes.hpp"
 #include "Starbreeze_structs.hpp"
-#include "AkAudio_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -28,9 +28,9 @@ public:
 	class UNiagaraComponent*                      FX_pressure_leak;                                  // 0x0408(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_CoffeeMachine_01_SCR_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
-	void ExecuteUbergraph_BP_CoffeeMachine_01_SCR(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_CoffeeMachine_01_SCR(int32 EntryPoint);
+	void BndEvt__BP_CoffeeMachine_01_SCR_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 
 public:
 	static class UClass* StaticClass()
@@ -46,5 +46,6 @@ public:
 		return GetDefaultObjImpl<ABP_CoffeeMachine_01_SCR_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CoffeeMachine_01_SCR_C;
 
 SDK_NAMESPACE_END

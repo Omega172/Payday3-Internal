@@ -16,15 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_ServerBrowser_Popup.WBP_ServerBrowser_Popup_C.RemoveFontMaterial
-// 0x0060 (0x0060 - 0x0000)
-struct WBP_ServerBrowser_Popup_C_RemoveFontMaterial final
-{
-public:
-	struct FSlateFontInfo                         K2Node_MakeStruct_SlateFontInfo;                   // 0x0000(0x0060)(HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ServerBrowser_Popup_C_RemoveFontMaterial;
-
 // Function WBP_ServerBrowser_Popup.WBP_ServerBrowser_Popup_C.ExecuteUbergraph_WBP_ServerBrowser_Popup
 // 0x0080 (0x0080 - 0x0000)
 struct WBP_ServerBrowser_Popup_C_ExecuteUbergraph_WBP_ServerBrowser_Popup final
@@ -37,6 +28,15 @@ public:
 	struct FSlateFontInfo                         K2Node_MakeStruct_SlateFontInfo;                   // 0x0020(0x0060)(HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_ServerBrowser_Popup_C_ExecuteUbergraph_WBP_ServerBrowser_Popup;
+
+// Function WBP_ServerBrowser_Popup.WBP_ServerBrowser_Popup_C.RemoveFontMaterial
+// 0x0060 (0x0060 - 0x0000)
+struct WBP_ServerBrowser_Popup_C_RemoveFontMaterial final
+{
+public:
+	struct FSlateFontInfo                         K2Node_MakeStruct_SlateFontInfo;                   // 0x0000(0x0060)(HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ServerBrowser_Popup_C_RemoveFontMaterial;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

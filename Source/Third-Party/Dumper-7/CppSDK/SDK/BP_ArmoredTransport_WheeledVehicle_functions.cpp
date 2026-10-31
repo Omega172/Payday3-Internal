@@ -16,43 +16,31 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ArmoredTransport_WheeledVehicle.BP_ArmoredTransport_WheeledVehicle_C.BndEvt__BP_ArmoredTransport_WheeledVehicle_engineSound_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// bool                                    bState                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ArmoredTransport_WheeledVehicle.BP_ArmoredTransport_WheeledVehicle_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_ArmoredTransport_WheeledVehicle_C::BndEvt__BP_ArmoredTransport_WheeledVehicle_engineSound_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics)
+void ABP_ArmoredTransport_WheeledVehicle_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ArmoredTransport_WheeledVehicle_C", "BndEvt__BP_ArmoredTransport_WheeledVehicle_engineSound_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature");
-
-	Params::BP_ArmoredTransport_WheeledVehicle_C_BndEvt__BP_ArmoredTransport_WheeledVehicle_engineSound_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature Parms{};
-
-	Parms.bState = bState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ArmoredTransport_WheeledVehicle.BP_ArmoredTransport_WheeledVehicle_C.ExecuteUbergraph_BP_ArmoredTransport_WheeledVehicle
-// (Final, UbergraphFunction)
+// Function BP_ArmoredTransport_WheeledVehicle.BP_ArmoredTransport_WheeledVehicle_C.setEngineSound
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ArmoredTransport_WheeledVehicle_C::ExecuteUbergraph_BP_ArmoredTransport_WheeledVehicle(int32 EntryPoint)
+void ABP_ArmoredTransport_WheeledVehicle_C::setEngineSound(bool enabled)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setEngineSound", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ArmoredTransport_WheeledVehicle_C", "ExecuteUbergraph_BP_ArmoredTransport_WheeledVehicle");
+	Params::BP_ArmoredTransport_WheeledVehicle_C_setEngineSound Parms{};
 
-	Params::BP_ArmoredTransport_WheeledVehicle_C_ExecuteUbergraph_BP_ArmoredTransport_WheeledVehicle Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.enabled = enabled;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -66,10 +54,8 @@ void ABP_ArmoredTransport_WheeledVehicle_C::ExecuteUbergraph_BP_ArmoredTransport
 
 void ABP_ArmoredTransport_WheeledVehicle_C::setBackDoors(ESBZVehicleDoorState doorState, bool breached)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ArmoredTransport_WheeledVehicle_C", "setBackDoors");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setBackDoors", FnName));
 
 	Params::BP_ArmoredTransport_WheeledVehicle_C_setBackDoors Parms{};
 
@@ -80,37 +66,41 @@ void ABP_ArmoredTransport_WheeledVehicle_C::setBackDoors(ESBZVehicleDoorState do
 }
 
 
-// Function BP_ArmoredTransport_WheeledVehicle.BP_ArmoredTransport_WheeledVehicle_C.setEngineSound
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_ArmoredTransport_WheeledVehicle.BP_ArmoredTransport_WheeledVehicle_C.ExecuteUbergraph_BP_ArmoredTransport_WheeledVehicle
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ArmoredTransport_WheeledVehicle_C::setEngineSound(bool enabled)
+void ABP_ArmoredTransport_WheeledVehicle_C::ExecuteUbergraph_BP_ArmoredTransport_WheeledVehicle(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ArmoredTransport_WheeledVehicle_C", "ExecuteUbergraph_BP_ArmoredTransport_WheeledVehicle", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ArmoredTransport_WheeledVehicle_C", "setEngineSound");
+	Params::BP_ArmoredTransport_WheeledVehicle_C_ExecuteUbergraph_BP_ArmoredTransport_WheeledVehicle Parms{};
 
-	Params::BP_ArmoredTransport_WheeledVehicle_C_setEngineSound Parms{};
-
-	Parms.enabled = enabled;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_ArmoredTransport_WheeledVehicle.BP_ArmoredTransport_WheeledVehicle_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_ArmoredTransport_WheeledVehicle.BP_ArmoredTransport_WheeledVehicle_C.BndEvt__BP_ArmoredTransport_WheeledVehicle_engineSound_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// bool                                    bState                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ArmoredTransport_WheeledVehicle_C::UserConstructionScript()
+void ABP_ArmoredTransport_WheeledVehicle_C::BndEvt__BP_ArmoredTransport_WheeledVehicle_engineSound_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ArmoredTransport_WheeledVehicle_engineSound_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ArmoredTransport_WheeledVehicle_C", "UserConstructionScript");
+	Params::BP_ArmoredTransport_WheeledVehicle_C_BndEvt__BP_ArmoredTransport_WheeledVehicle_engineSound_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.bState = bState;
+	Parms.bDoCosmetics = bDoCosmetics;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

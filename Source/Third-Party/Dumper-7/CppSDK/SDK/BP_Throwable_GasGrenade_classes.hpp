@@ -18,21 +18,21 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Throwable_GasGrenade.BP_Throwable_GasGrenade_C
-// 0x0020 (0x8FC0 - 0x8FA0)
+// 0x0020 (0x0830 - 0x0810)
 class ABP_Throwable_GasGrenade_C final : public ASBZGasGrenade
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x8FA0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UAkComponent*                           grenade_gas_impact;                                // 0x8FA8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Mesh_Lever;                                        // 0x8FB0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      FX_GasTrail;                                       // 0x8FB8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0810(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UAkComponent*                           grenade_gas_impact;                                // 0x0818(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Mesh_Lever;                                        // 0x0820(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      FX_GasTrail;                                       // 0x0828(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_Throwable_GasGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity);
-	void ExecuteUbergraph_BP_Throwable_GasGrenade(int32 EntryPoint);
-	void OnThrow();
+	void ReceiveTick(float DeltaSeconds_ReceiveTick);
 	void ReceiveBeginPlay();
-	void ReceiveTick(float DeltaSeconds);
+	void OnThrow();
+	void ExecuteUbergraph_BP_Throwable_GasGrenade(int32 EntryPoint);
+	void BndEvt__BP_Throwable_GasGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity);
 
 public:
 	static class UClass* StaticClass()
@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<ABP_Throwable_GasGrenade_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Throwable_GasGrenade_C;
 
 SDK_NAMESPACE_END

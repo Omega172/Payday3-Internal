@@ -36,13 +36,13 @@ public:
 	double                                        animStartGameTime;                                 // 0x0398(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_ShutterBase(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void open_timeline__FinishedFunc();
-	void open_timeline__UpdateFunc();
-	void setShutterCollision(bool open);
-	void SetStateFunction(ESBZVehicleDoorState State, bool animateOpening);
 	void UserConstructionScript();
+	void SetStateFunction(ESBZVehicleDoorState State, bool animateOpening);
+	void setShutterCollision(bool open);
+	void open_timeline__UpdateFunc();
+	void open_timeline__FinishedFunc();
+	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
+	void ExecuteUbergraph_BP_ShutterBase(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -58,5 +58,6 @@ public:
 		return GetDefaultObjImpl<ABP_ShutterBase_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ShutterBase_C;
 
 SDK_NAMESPACE_END

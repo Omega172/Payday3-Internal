@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UBP_Squad_Order_Search_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_Squad_Order_Search_C;
 
 SDK_NAMESPACE_END

@@ -37,15 +37,15 @@ public:
 	class FText                                   Granted;                                           // 0x0430(0x0010)(Edit, BlueprintVisible)
 
 public:
-	void addMarker();
-	void addTrackedPawn(const class ASBZAICharacter*& pawn);
-	void BndEvt__BP_EyeScanner_markerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
-	void BP_OnStateChanged(ESBZEyeScannerState OldState, ESBZEyeScannerState NewState, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_EyeScanner(int32 EntryPoint);
-	class FText GetMarkerText();
-	void onAISpawned(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
-	void OnHumanShieldManager(class ASBZAICharacter* Character, class ASBZCharacter* Instigator_0, bool bHumanShield);
 	void ReceiveBeginPlay();
+	void OnHumanShieldManager(class ASBZAICharacter* Character, class ASBZCharacter* Instigator, bool bHumanShield);
+	void onAISpawned(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
+	class FText GetMarkerText();
+	void ExecuteUbergraph_BP_EyeScanner(int32 EntryPoint);
+	void BP_OnStateChanged(ESBZEyeScannerState OldState_BP_OnStateChanged, ESBZEyeScannerState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged);
+	void BndEvt__BP_EyeScanner_markerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
+	void addTrackedPawn(const class ASBZAICharacter*& pawn);
+	void addMarker();
 
 public:
 	static class UClass* StaticClass()
@@ -61,5 +61,6 @@ public:
 		return GetDefaultObjImpl<ABP_EyeScanner_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_EyeScanner_C;
 
 SDK_NAMESPACE_END

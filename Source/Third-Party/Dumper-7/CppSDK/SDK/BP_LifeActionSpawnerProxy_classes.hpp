@@ -24,8 +24,8 @@ public:
 	TArray<class ABP_LifeActionSpawner_Base_C*>   LifeActionSpawners;                                // 0x0330(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, Transient, DisableEditOnInstance)
 
 public:
-	void AssignEventTagAction(const struct FGameplayTag& EventActionTag, double DelayMin, double DelayMax);
 	void RegisterSpawner(class ABP_LifeActionSpawner_Base_C* Spawner);
+	void AssignEventTagAction(const struct FGameplayTag& EventActionTag, double DelayMin, double DelayMax);
 
 public:
 	static class UClass* StaticClass()
@@ -41,5 +41,6 @@ public:
 		return GetDefaultObjImpl<ABP_LifeActionSpawnerProxy_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LifeActionSpawnerProxy_C;
 
 SDK_NAMESPACE_END

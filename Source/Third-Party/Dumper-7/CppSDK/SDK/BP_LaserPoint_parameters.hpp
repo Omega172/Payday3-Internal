@@ -14,6 +14,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_LaserPoint.BP_LaserPoint_C.ReceiveActorBeginOverlap_1
+// 0x0008 (0x0008 - 0x0000)
+struct BP_LaserPoint_C_ReceiveActorBeginOverlap_1 final
+{
+public:
+	class AActor*                                 OtherActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LaserPoint_C_ReceiveActorBeginOverlap_1;
+
 // Function BP_LaserPoint.BP_LaserPoint_C.ExecuteUbergraph_BP_LaserPoint
 // 0x0010 (0x0010 - 0x0000)
 struct BP_LaserPoint_C_ExecuteUbergraph_BP_LaserPoint final
@@ -23,14 +32,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 K2Node_Event_OtherActor;                           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_LaserPoint.BP_LaserPoint_C.ReceiveActorBeginOverlap_1
-// 0x0008 (0x0008 - 0x0000)
-struct BP_LaserPoint_C_ReceiveActorBeginOverlap_1 final
-{
-public:
-	class AActor*                                 OtherActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_LaserPoint_C_ExecuteUbergraph_BP_LaserPoint;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

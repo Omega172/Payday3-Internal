@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_SignStreet_01_M_DeadEnd_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SignStreet_01_M_DeadEnd_C;
 
 SDK_NAMESPACE_END

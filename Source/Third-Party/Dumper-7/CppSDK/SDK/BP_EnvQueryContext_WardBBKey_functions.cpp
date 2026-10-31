@@ -16,55 +16,51 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_EnvQueryContext_WardBBKey.BP_EnvQueryContext_WardBBKey_C.ProvideActorsSet
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
-// Parameters:
-// class UObject*                          QuerierObject                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           QuerierActor                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// TArray<class AActor*>*                  ResultingActorsSet                                     (Parm, OutParm)
-
-void UBP_EnvQueryContext_WardBBKey_C::ProvideActorsSet(class UObject* QuerierObject, class AActor* QuerierActor, TArray<class AActor*>* ResultingActorsSet) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EnvQueryContext_WardBBKey_C", "ProvideActorsSet");
-
-	Params::BP_EnvQueryContext_WardBBKey_C_ProvideActorsSet Parms{};
-
-	Parms.QuerierObject = QuerierObject;
-	Parms.QuerierActor = QuerierActor;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (ResultingActorsSet != nullptr)
-		*ResultingActorsSet = std::move(Parms.ResultingActorsSet);
-}
-
-
 // Function BP_EnvQueryContext_WardBBKey.BP_EnvQueryContext_WardBBKey_C.ProvideSingleActor
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// class UObject*                          QuerierObject                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           QuerierActor                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor**                          ResultingActor                                         (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          QuerierObject_ProvideSingleActor                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           QuerierActor_ProvideSingleActor                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor**                          ResultingActor_ProvideSingleActor                      (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UBP_EnvQueryContext_WardBBKey_C::ProvideSingleActor(class UObject* QuerierObject, class AActor* QuerierActor, class AActor** ResultingActor) const
+void UBP_EnvQueryContext_WardBBKey_C::ProvideSingleActor(class UObject* QuerierObject_ProvideSingleActor, class AActor* QuerierActor_ProvideSingleActor, class AActor** ResultingActor_ProvideSingleActor) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EnvQueryContext_WardBBKey_C", "ProvideSingleActor");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ProvideSingleActor", FnName));
 
 	Params::BP_EnvQueryContext_WardBBKey_C_ProvideSingleActor Parms{};
 
-	Parms.QuerierObject = QuerierObject;
-	Parms.QuerierActor = QuerierActor;
+	Parms.QuerierObject_ProvideSingleActor = QuerierObject_ProvideSingleActor;
+	Parms.QuerierActor_ProvideSingleActor = QuerierActor_ProvideSingleActor;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (ResultingActor != nullptr)
-		*ResultingActor = Parms.ResultingActor;
+	if (ResultingActor_ProvideSingleActor != nullptr)
+		*ResultingActor_ProvideSingleActor = Parms.ResultingActor_ProvideSingleActor;
+}
+
+
+// Function BP_EnvQueryContext_WardBBKey.BP_EnvQueryContext_WardBBKey_C.ProvideActorsSet
+// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// class UObject*                          QuerierObject_ProvideActorsSet                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           QuerierActor_ProvideActorsSet                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// TArray<class AActor*>*                  ResultingActorsSet_ProvideActorsSet                    (Parm, OutParm)
+
+void UBP_EnvQueryContext_WardBBKey_C::ProvideActorsSet(class UObject* QuerierObject_ProvideActorsSet, class AActor* QuerierActor_ProvideActorsSet, TArray<class AActor*>* ResultingActorsSet_ProvideActorsSet) const
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ProvideActorsSet", FnName));
+
+	Params::BP_EnvQueryContext_WardBBKey_C_ProvideActorsSet Parms{};
+
+	Parms.QuerierObject_ProvideActorsSet = QuerierObject_ProvideActorsSet;
+	Parms.QuerierActor_ProvideActorsSet = QuerierActor_ProvideActorsSet;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ResultingActorsSet_ProvideActorsSet != nullptr)
+		*ResultingActorsSet_ProvideActorsSet = std::move(Parms.ResultingActorsSet_ProvideActorsSet);
 }
 
 

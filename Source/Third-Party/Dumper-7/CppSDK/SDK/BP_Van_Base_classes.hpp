@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Van_Base.BP_Van_Base_C
-// 0x0000 (0x0930 - 0x0930)
+// 0x0000 (0x0A30 - 0x0A30)
 class ABP_Van_Base_C : public ABP_WheeledVehicle_Base_C
 {
 public:
@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Van_Base_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Van_Base_C;
 
 SDK_NAMESPACE_END

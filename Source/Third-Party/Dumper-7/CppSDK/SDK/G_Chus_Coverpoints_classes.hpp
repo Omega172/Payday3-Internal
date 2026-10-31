@@ -27,9 +27,9 @@ public:
 	class ASBZRoomVolume*                         SBZRoomVolumeGarage_ExecuteUbergraph_G_Chus_Coverpoints_RefProperty; // 0x03E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_G_Chus_Coverpoints(int32 EntryPoint);
+	void OnPreplanningAssetsTagsApplied(const struct FGameplayTagContainer& PreplanningTagContainer_OnPreplanningAssetsTagsApplied);
 	void MetalDetectorsDisabledToggleRoomtype();
-	void OnPreplanningAssetsTagsApplied(const struct FGameplayTagContainer& PreplanningTagContainer);
+	void ExecuteUbergraph_G_Chus_Coverpoints(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<AG_Chus_Coverpoints_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_Chus_Coverpoints_C;
 
 SDK_NAMESPACE_END

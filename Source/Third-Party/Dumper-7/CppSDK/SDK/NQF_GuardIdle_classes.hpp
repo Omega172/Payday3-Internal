@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UNQF_GuardIdle_C>();
 	}
 };
+DUMPER7_ASSERTS_UNQF_GuardIdle_C;
 
 SDK_NAMESPACE_END

@@ -16,45 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ReplicatedBinaryFalsePanelPanicRoom.BP_ReplicatedBinaryFalsePanelPanicRoom_C.ExecuteUbergraph_BP_ReplicatedBinaryFalsePanelPanicRoom
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ReplicatedBinaryFalsePanelPanicRoom.BP_ReplicatedBinaryFalsePanelPanicRoom_C.Timeline_0__UpdateFunc
+// (BlueprintEvent)
 
-void ABP_ReplicatedBinaryFalsePanelPanicRoom_C::ExecuteUbergraph_BP_ReplicatedBinaryFalsePanelPanicRoom(int32 EntryPoint)
+void ABP_ReplicatedBinaryFalsePanelPanicRoom_C::Timeline_0__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__UpdateFunc", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryFalsePanelPanicRoom_C", "ExecuteUbergraph_BP_ReplicatedBinaryFalsePanelPanicRoom");
-
-	Params::BP_ReplicatedBinaryFalsePanelPanicRoom_C_ExecuteUbergraph_BP_ReplicatedBinaryFalsePanelPanicRoom Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ReplicatedBinaryFalsePanelPanicRoom.BP_ReplicatedBinaryFalsePanelPanicRoom_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ReplicatedBinaryFalsePanelPanicRoom_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryFalsePanelPanicRoom_C", "OnStateChanged");
-
-	Params::BP_ReplicatedBinaryFalsePanelPanicRoom_C_OnStateChanged Parms{};
-
-	Parms.bStateToChangeTo = bStateToChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -63,26 +33,48 @@ void ABP_ReplicatedBinaryFalsePanelPanicRoom_C::OnStateChanged(bool bStateToChan
 
 void ABP_ReplicatedBinaryFalsePanelPanicRoom_C::Timeline_0__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryFalsePanelPanicRoom_C", "Timeline_0__FinishedFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__FinishedFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ReplicatedBinaryFalsePanelPanicRoom.BP_ReplicatedBinaryFalsePanelPanicRoom_C.Timeline_0__UpdateFunc
-// (BlueprintEvent)
+// Function BP_ReplicatedBinaryFalsePanelPanicRoom.BP_ReplicatedBinaryFalsePanelPanicRoom_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bStateToChangeTo_OnStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ReplicatedBinaryFalsePanelPanicRoom_C::Timeline_0__UpdateFunc()
+void ABP_ReplicatedBinaryFalsePanelPanicRoom_C::OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryFalsePanelPanicRoom_C", "Timeline_0__UpdateFunc");
+	Params::BP_ReplicatedBinaryFalsePanelPanicRoom_C_OnStateChanged Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.bStateToChangeTo_OnStateChanged = bStateToChangeTo_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ReplicatedBinaryFalsePanelPanicRoom.BP_ReplicatedBinaryFalsePanelPanicRoom_C.ExecuteUbergraph_BP_ReplicatedBinaryFalsePanelPanicRoom
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ReplicatedBinaryFalsePanelPanicRoom_C::ExecuteUbergraph_BP_ReplicatedBinaryFalsePanelPanicRoom(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ReplicatedBinaryFalsePanelPanicRoom_C", "ExecuteUbergraph_BP_ReplicatedBinaryFalsePanelPanicRoom", FuncInfo);
+
+	Params::BP_ReplicatedBinaryFalsePanelPanicRoom_C_ExecuteUbergraph_BP_ReplicatedBinaryFalsePanelPanicRoom Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

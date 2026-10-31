@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AInt_WIN_OfficeUnit_01_320_200_breakable_C>();
 	}
 };
+DUMPER7_ASSERTS_AInt_WIN_OfficeUnit_01_320_200_breakable_C;
 
 SDK_NAMESPACE_END

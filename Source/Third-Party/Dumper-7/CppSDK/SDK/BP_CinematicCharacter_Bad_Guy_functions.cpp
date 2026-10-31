@@ -16,23 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_CinematicCharacter_Bad_Guy.BP_CinematicCharacter_Bad_Guy_C.ExecuteUbergraph_BP_CinematicCharacter_Bad_Guy
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_CinematicCharacter_Bad_Guy.BP_CinematicCharacter_Bad_Guy_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_CinematicCharacter_Bad_Guy_C::ExecuteUbergraph_BP_CinematicCharacter_Bad_Guy(int32 EntryPoint)
+void ABP_CinematicCharacter_Bad_Guy_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CinematicCharacter_Bad_Guy_C", "ExecuteUbergraph_BP_CinematicCharacter_Bad_Guy");
-
-	Params::BP_CinematicCharacter_Bad_Guy_C_ExecuteUbergraph_BP_CinematicCharacter_Bad_Guy Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -41,26 +33,28 @@ void ABP_CinematicCharacter_Bad_Guy_C::ExecuteUbergraph_BP_CinematicCharacter_Ba
 
 void ABP_CinematicCharacter_Bad_Guy_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CinematicCharacter_Bad_Guy_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_CinematicCharacter_Bad_Guy.BP_CinematicCharacter_Bad_Guy_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_CinematicCharacter_Bad_Guy.BP_CinematicCharacter_Bad_Guy_C.ExecuteUbergraph_BP_CinematicCharacter_Bad_Guy
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_CinematicCharacter_Bad_Guy_C::UserConstructionScript()
+void ABP_CinematicCharacter_Bad_Guy_C::ExecuteUbergraph_BP_CinematicCharacter_Bad_Guy(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_CinematicCharacter_Bad_Guy_C", "ExecuteUbergraph_BP_CinematicCharacter_Bad_Guy", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CinematicCharacter_Bad_Guy_C", "UserConstructionScript");
+	Params::BP_CinematicCharacter_Bad_Guy_C_ExecuteUbergraph_BP_CinematicCharacter_Bad_Guy Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

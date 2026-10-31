@@ -16,6 +16,18 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_InstantLoot_Money_01.BP_InstantLoot_Money_01_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_InstantLoot_Money_01_C::UserConstructionScript()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_InstantLoot_Money_01.BP_InstantLoot_Money_01_C.RandomOffset
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,30 +35,14 @@ SDK_NAMESPACE_START
 
 void ABP_InstantLoot_Money_01_C::RandomOffset(bool EnableOffset)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InstantLoot_Money_01_C", "RandomOffset");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RandomOffset", FnName));
 
 	Params::BP_InstantLoot_Money_01_C_RandomOffset Parms{};
 
 	Parms.EnableOffset = EnableOffset;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_InstantLoot_Money_01.BP_InstantLoot_Money_01_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_InstantLoot_Money_01_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InstantLoot_Money_01_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

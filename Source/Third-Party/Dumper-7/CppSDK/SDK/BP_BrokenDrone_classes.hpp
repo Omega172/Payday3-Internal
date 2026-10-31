@@ -27,11 +27,11 @@ public:
 	struct FTimerHandle                           InteractionStartTimerHandle;                       // 0x0450(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_BrokenDrone_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_BrokenDrone_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BP_OnZiplineAttachmentChanged(bool bIsAttached);
-	void ExecuteUbergraph_BP_BrokenDrone(int32 EntryPoint);
 	void On_Interaction_Start_Timer_Done();
+	void ExecuteUbergraph_BP_BrokenDrone(int32 EntryPoint);
+	void BP_OnZiplineAttachmentChanged(bool bIsAttached_BP_OnZiplineAttachmentChanged);
+	void BndEvt__BP_BrokenDrone_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_BrokenDrone_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -47,5 +47,6 @@ public:
 		return GetDefaultObjImpl<ABP_BrokenDrone_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BrokenDrone_C;
 
 SDK_NAMESPACE_END

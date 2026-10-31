@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_Cloaker_Melee_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Cloaker_Melee_C;
 
 SDK_NAMESPACE_END

@@ -14,24 +14,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function G_DiamondDistrict_AI.G_DiamondDistrict_AI_C.BndEvt__G_DiamondDistrict_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_0_SBZSplineOnEnter__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_DiamondDistrict_AI_C_BndEvt__G_DiamondDistrict_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_0_SBZSplineOnEnter__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_DiamondDistrict_AI.G_DiamondDistrict_AI_C.BndEvt__G_DiamondDistrict_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_1_SBZSplineOnEnter__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_DiamondDistrict_AI_C_BndEvt__G_DiamondDistrict_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_1_SBZSplineOnEnter__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function G_DiamondDistrict_AI.G_DiamondDistrict_AI_C.ExecuteUbergraph_G_DiamondDistrict_AI
 // 0x0030 (0x0030 - 0x0000)
 struct G_DiamondDistrict_AI_C_ExecuteUbergraph_G_DiamondDistrict_AI final
@@ -48,6 +30,27 @@ public:
 	class ASBZSpline*                             K2Node_ActorBoundEvent_Spline_1;                   // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 K2Node_ActorBoundEvent_Actor_1;                    // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_DiamondDistrict_AI_C_ExecuteUbergraph_G_DiamondDistrict_AI;
+
+// Function G_DiamondDistrict_AI.G_DiamondDistrict_AI_C.BndEvt__G_DiamondDistrict_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_1_SBZSplineOnEnter__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_DiamondDistrict_AI_C_BndEvt__G_DiamondDistrict_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_1_SBZSplineOnEnter__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DiamondDistrict_AI_C_BndEvt__G_DiamondDistrict_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_1_SBZSplineOnEnter__DelegateSignature;
+
+// Function G_DiamondDistrict_AI.G_DiamondDistrict_AI_C.BndEvt__G_DiamondDistrict_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_0_SBZSplineOnEnter__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_DiamondDistrict_AI_C_BndEvt__G_DiamondDistrict_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_0_SBZSplineOnEnter__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_DiamondDistrict_AI_C_BndEvt__G_DiamondDistrict_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_0_SBZSplineOnEnter__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

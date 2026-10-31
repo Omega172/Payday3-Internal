@@ -31,9 +31,9 @@ public:
 	class UWBP_UI_Crimenet_SecurityCompanyDetails_C* Widget_SecurityCompany_Senturian;               // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void UpdateSecurityCompanies();
-	void OnInitialized();
 	void ExecuteUbergraph_WBP_UI_Crimenet_SecurityCompanyDisplayPanel(int32 EntryPoint);
+	void OnInitialized();
+	void UpdateSecurityCompanies();
 
 public:
 	static class UClass* StaticClass()

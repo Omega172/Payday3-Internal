@@ -26,9 +26,9 @@ public:
 	class UActorComponent*                        InterComp;                                         // 0x03A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_AdjustAttachment(int32 Index_0, int32 NewCount, const struct FTransform& NewStrapTransformOffset);
-	void BP_AttachmentComplete(class USkeletalMeshComponent* ParentSkeletalMeshComponent);
 	void ExecuteUbergraph_BP_ValidatedBackItemBag(int32 EntryPoint);
+	void BP_AttachmentComplete(class USkeletalMeshComponent* ParentSkeletalMeshComponent_BP_AttachmentComplete);
+	void BP_AdjustAttachment(int32 Index_BP_AdjustAttachment, int32 NewCount_BP_AdjustAttachment, const struct FTransform& NewStrapTransformOffset_BP_AdjustAttachment);
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<ABP_ValidatedBackItemBag_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ValidatedBackItemBag_C;
 
 SDK_NAMESPACE_END

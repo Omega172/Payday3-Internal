@@ -16,29 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_LGT_ArtCeilingLamp_Bulb.BP_LGT_ArtCeilingLamp_Bulb_C.BndEvt__BP_LGT_ArtCielingLamp_b_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// class UActorComponent*                  PoolComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   Hits                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZPropDamageContext&     DamageContext                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// Function BP_LGT_ArtCeilingLamp_Bulb.BP_LGT_ArtCeilingLamp_Bulb_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_LGT_ArtCeilingLamp_Bulb_C::BndEvt__BP_LGT_ArtCielingLamp_b_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
+void ABP_LGT_ArtCeilingLamp_Bulb_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LGT_ArtCeilingLamp_Bulb_C", "BndEvt__BP_LGT_ArtCielingLamp_b_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature");
-
-	Params::BP_LGT_ArtCeilingLamp_Bulb_C_BndEvt__BP_LGT_ArtCielingLamp_b_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature Parms{};
-
-	Parms.PoolComponent = PoolComponent;
-	Parms.Hits = Hits;
-	Parms.bDoCosmetics = bDoCosmetics;
-	Parms.DamageContext = std::move(DamageContext);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -49,10 +35,8 @@ void ABP_LGT_ArtCeilingLamp_Bulb_C::BndEvt__BP_LGT_ArtCielingLamp_b_02_SBZPropDa
 
 void ABP_LGT_ArtCeilingLamp_Bulb_C::ExecuteUbergraph_BP_LGT_ArtCeilingLamp_Bulb(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LGT_ArtCeilingLamp_Bulb_C", "ExecuteUbergraph_BP_LGT_ArtCeilingLamp_Bulb");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_LGT_ArtCeilingLamp_Bulb_C", "ExecuteUbergraph_BP_LGT_ArtCeilingLamp_Bulb", FuncInfo);
 
 	Params::BP_LGT_ArtCeilingLamp_Bulb_C_ExecuteUbergraph_BP_LGT_ArtCeilingLamp_Bulb Parms{};
 
@@ -62,17 +46,27 @@ void ABP_LGT_ArtCeilingLamp_Bulb_C::ExecuteUbergraph_BP_LGT_ArtCeilingLamp_Bulb(
 }
 
 
-// Function BP_LGT_ArtCeilingLamp_Bulb.BP_LGT_ArtCeilingLamp_Bulb_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_LGT_ArtCeilingLamp_Bulb.BP_LGT_ArtCeilingLamp_Bulb_C.BndEvt__BP_LGT_ArtCielingLamp_b_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// class UActorComponent*                  PoolComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   Hits                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZPropDamageContext&     DamageContext                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 
-void ABP_LGT_ArtCeilingLamp_Bulb_C::UserConstructionScript()
+void ABP_LGT_ArtCeilingLamp_Bulb_C::BndEvt__BP_LGT_ArtCielingLamp_b_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_LGT_ArtCielingLamp_b_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LGT_ArtCeilingLamp_Bulb_C", "UserConstructionScript");
+	Params::BP_LGT_ArtCeilingLamp_Bulb_C_BndEvt__BP_LGT_ArtCielingLamp_b_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.PoolComponent = PoolComponent;
+	Parms.Hits = Hits;
+	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.DamageContext = std::move(DamageContext);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

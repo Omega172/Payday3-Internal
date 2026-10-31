@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AE_Murk_Ext_Constructions_Prop_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_Murk_Ext_Constructions_Prop_C;
 
 SDK_NAMESPACE_END

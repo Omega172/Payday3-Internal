@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_int_door_01_LobbyGate_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_int_door_01_LobbyGate_C;
 
 SDK_NAMESPACE_END

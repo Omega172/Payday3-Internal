@@ -16,105 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Zipline_ModularBases.BP_Zipline_ModularBases_C.BP_OnZiplineEnabledChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bEnabled                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Zipline_ModularBases.BP_Zipline_ModularBases_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_Zipline_ModularBases_C::BP_OnZiplineEnabledChanged(bool bEnabled, bool bDoCosmetics)
+void ABP_Zipline_ModularBases_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Zipline_ModularBases_C", "BP_OnZiplineEnabledChanged");
-
-	Params::BP_Zipline_ModularBases_C_BP_OnZiplineEnabledChanged Parms{};
-
-	Parms.bEnabled = bEnabled;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Zipline_ModularBases.BP_Zipline_ModularBases_C.ExecuteUbergraph_BP_Zipline_ModularBases
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Zipline_ModularBases_C::ExecuteUbergraph_BP_Zipline_ModularBases(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Zipline_ModularBases_C", "ExecuteUbergraph_BP_Zipline_ModularBases");
-
-	Params::BP_Zipline_ModularBases_C_ExecuteUbergraph_BP_Zipline_ModularBases Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Zipline_ModularBases.BP_Zipline_ModularBases_C.FaceComponent
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USceneComponent*                  PointThis                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USceneComponent*                  AtThis                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// const struct FVector&                   OrThis                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Zipline_ModularBases_C::FaceComponent(class USceneComponent* PointThis, class USceneComponent* AtThis, const struct FVector& OrThis)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Zipline_ModularBases_C", "FaceComponent");
-
-	Params::BP_Zipline_ModularBases_C_FaceComponent Parms{};
-
-	Parms.PointThis = PointThis;
-	Parms.AtThis = AtThis;
-	Parms.OrThis = std::move(OrThis);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Zipline_ModularBases.BP_Zipline_ModularBases_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Zipline_ModularBases_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Zipline_ModularBases_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Zipline_ModularBases.BP_Zipline_ModularBases_C.SpanCableToWallMount
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USplineComponent*                 InSplineComp                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USceneComponent*                  InWallMount                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Zipline_ModularBases_C::SpanCableToWallMount(class USplineComponent* InSplineComp, class USceneComponent* InWallMount)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Zipline_ModularBases_C", "SpanCableToWallMount");
-
-	Params::BP_Zipline_ModularBases_C_SpanCableToWallMount Parms{};
-
-	Parms.InSplineComp = InSplineComp;
-	Parms.InWallMount = InWallMount;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -127,10 +37,8 @@ void ABP_Zipline_ModularBases_C::SpanCableToWallMount(class USplineComponent* In
 
 void ABP_Zipline_ModularBases_C::UpdateZiplinePointVisibility(class USceneComponent* ZiplinePoint, bool InHidden, bool bPropagateToChildren)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Zipline_ModularBases_C", "UpdateZiplinePointVisibility");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateZiplinePointVisibility", FnName));
 
 	Params::BP_Zipline_ModularBases_C_UpdateZiplinePointVisibility Parms{};
 
@@ -142,17 +50,95 @@ void ABP_Zipline_ModularBases_C::UpdateZiplinePointVisibility(class USceneCompon
 }
 
 
-// Function BP_Zipline_ModularBases.BP_Zipline_ModularBases_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_Zipline_ModularBases.BP_Zipline_ModularBases_C.SpanCableToWallMount
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USplineComponent*                 InSplineComp                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USceneComponent*                  InWallMount                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Zipline_ModularBases_C::UserConstructionScript()
+void ABP_Zipline_ModularBases_C::SpanCableToWallMount(class USplineComponent* InSplineComp, class USceneComponent* InWallMount)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpanCableToWallMount", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Zipline_ModularBases_C", "UserConstructionScript");
+	Params::BP_Zipline_ModularBases_C_SpanCableToWallMount Parms{};
+
+	Parms.InSplineComp = InSplineComp;
+	Parms.InWallMount = InWallMount;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Zipline_ModularBases.BP_Zipline_ModularBases_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_Zipline_ModularBases_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Zipline_ModularBases.BP_Zipline_ModularBases_C.FaceComponent
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USceneComponent*                  PointThis                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USceneComponent*                  AtThis                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   OrThis                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Zipline_ModularBases_C::FaceComponent(class USceneComponent* PointThis, class USceneComponent* AtThis, const struct FVector& OrThis)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"FaceComponent", FnName));
+
+	Params::BP_Zipline_ModularBases_C_FaceComponent Parms{};
+
+	Parms.PointThis = PointThis;
+	Parms.AtThis = AtThis;
+	Parms.OrThis = std::move(OrThis);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Zipline_ModularBases.BP_Zipline_ModularBases_C.ExecuteUbergraph_BP_Zipline_ModularBases
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Zipline_ModularBases_C::ExecuteUbergraph_BP_Zipline_ModularBases(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Zipline_ModularBases_C", "ExecuteUbergraph_BP_Zipline_ModularBases", FuncInfo);
+
+	Params::BP_Zipline_ModularBases_C_ExecuteUbergraph_BP_Zipline_ModularBases Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Zipline_ModularBases.BP_Zipline_ModularBases_C.BP_OnZiplineEnabledChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bEnabled_BP_OnZiplineEnabledChanged                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_BP_OnZiplineEnabledChanged                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Zipline_ModularBases_C::BP_OnZiplineEnabledChanged(bool bEnabled_BP_OnZiplineEnabledChanged, bool bDoCosmetics_BP_OnZiplineEnabledChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnZiplineEnabledChanged", FnName));
+
+	Params::BP_Zipline_ModularBases_C_BP_OnZiplineEnabledChanged Parms{};
+
+	Parms.bEnabled_BP_OnZiplineEnabledChanged = bEnabled_BP_OnZiplineEnabledChanged;
+	Parms.bDoCosmetics_BP_OnZiplineEnabledChanged = bDoCosmetics_BP_OnZiplineEnabledChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

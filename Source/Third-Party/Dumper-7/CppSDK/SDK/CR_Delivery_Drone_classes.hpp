@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
+#include "RigVM_structs.hpp"
+#include "RigVM_classes.hpp"
 #include "CoreUObject_structs.hpp"
 #include "ControlRig_structs.hpp"
 #include "ControlRig_classes.hpp"
-#include "RigVM_structs.hpp"
-#include "RigVM_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -41,49 +41,7 @@ public:
 		return GetDefaultObjImpl<UCR_Delivery_Drone_C>();
 	}
 };
-
-// RigVMMemoryStorageGeneratorClass CR_Delivery_Drone.RigVMMemory_Literal
-// 0x00A8 (0x00D8 - 0x0030)
-class CR_Delivery_Drone::URigVMMemory_Literal final : public URigVMMemoryStorage
-{
-public:
-	struct FRigElementKey                         RigVMModel___RigUnit_SetTranslation_Item__Const;   // 0x0030(0x0010)(Edit, EditConst, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	ERigVMTransformSpace                          RigVMModel___RigUnit_SetTranslation_Space__Const;  // 0x0040(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	uint8                                         RigVMModel___RigUnit_SetTranslation_bInitial__Const : 1; // 0x0041(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, EditConst, NonTransactional, NoDestructor, HasGetValueTypeHash))
-	uint8                                         Pad_42[0x6];                                       // 0x0042(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                RigVMModel___MathVectorClampLength_Value__Const;   // 0x0048(0x0018)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         RigVMModel___MathFloatDiv_B__Const;                // 0x0060(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         RigVMModel___MathFloatClamp_Minimum__Const;        // 0x0064(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         RigVMModel___MathFloatClamp_Maximum__Const;        // 0x0068(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         RigVMModel___MathFloatMul_4_B__Const;              // 0x006C(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         RigVMModel___MathVectorClampLength_MaximumLength__Const; // 0x0070(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         RigVMModel___VerletIntegrateVector_Strength__Const; // 0x0074(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         RigVMModel___VerletIntegrateVector_Damp__Const;    // 0x0078(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                RigVMModel___VerletIntegrateVector_Force__Const;   // 0x0080(0x0018)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	uint8                                         RigVMModel___RigUnit_VisualDebugVectorItemSpace_bEnabled__Const : 1; // 0x0098(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, EditConst, NonTransactional, NoDestructor, HasGetValueTypeHash))
-	uint8                                         RigVMModel___RigUnit_VisualDebugVectorItemSpace_Mode__Const; // 0x0099(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9A[0x2];                                       // 0x009A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           RigVMModel___RigUnit_VisualDebugVectorItemSpace_Color__Const; // 0x009C(0x0010)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         RigVMModel___RigUnit_VisualDebugVectorItemSpace_Thickness__Const; // 0x00AC(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	struct FRigElementKey                         RigVMModel___RigUnit_VisualDebugVectorItemSpace_Space__Const; // 0x00B0(0x0010)(Edit, EditConst, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                         RigVMModel___MathVectorClampLength_1_MaximumLength__Const; // 0x00C0(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	struct FRigElementKey                         RigVMModel___RigUnit_SetTransform_1_Item__Const;   // 0x00C4(0x0010)(Edit, EditConst, NonTransactional, NoDestructor, HasGetValueTypeHash)
-
-public:
-	static class UClass* StaticClass()
-	{
-		STATIC_CLASS_IMPL_FULLNAME("RigVMMemoryStorageGeneratorClass CR_Delivery_Drone.RigVMMemory_Literal")
-	}
-	static const class FName& StaticName()
-	{
-		STATIC_NAME_IMPL(L"RigVMMemory_Literal")
-	}
-	static class CR_Delivery_Drone::URigVMMemory_Literal* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<CR_Delivery_Drone::URigVMMemory_Literal>();
-	}
-};
+DUMPER7_ASSERTS_UCR_Delivery_Drone_C;
 
 // RigVMMemoryStorageGeneratorClass CR_Delivery_Drone.RigVMMemory_Work
 // 0x0350 (0x0380 - 0x0030)
@@ -129,5 +87,50 @@ public:
 		return GetDefaultObjImpl<CR_Delivery_Drone::URigVMMemory_Work>();
 	}
 };
+DUMPER7_ASSERTS_CR_Delivery_Drone__URigVMMemory_Work;
+
+// RigVMMemoryStorageGeneratorClass CR_Delivery_Drone.RigVMMemory_Literal
+// 0x00A8 (0x00D8 - 0x0030)
+class CR_Delivery_Drone::URigVMMemory_Literal final : public URigVMMemoryStorage
+{
+public:
+	struct FRigElementKey                         RigVMModel___RigUnit_SetTranslation_Item__Const;   // 0x0030(0x0010)(Edit, EditConst, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	ERigVMTransformSpace                          RigVMModel___RigUnit_SetTranslation_Space__Const;  // 0x0040(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	uint8                                         RigVMModel___RigUnit_SetTranslation_bInitial__Const : 1; // 0x0041(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, EditConst, NonTransactional, NoDestructor, HasGetValueTypeHash))
+	uint8                                         Pad_42[0x6];                                       // 0x0042(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                RigVMModel___MathVectorClampLength_Value__Const;   // 0x0048(0x0018)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         RigVMModel___MathFloatDiv_B__Const;                // 0x0060(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         RigVMModel___MathFloatClamp_Minimum__Const;        // 0x0064(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         RigVMModel___MathFloatClamp_Maximum__Const;        // 0x0068(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         RigVMModel___MathFloatMul_4_B__Const;              // 0x006C(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         RigVMModel___MathVectorClampLength_MaximumLength__Const; // 0x0070(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         RigVMModel___VerletIntegrateVector_Strength__Const; // 0x0074(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         RigVMModel___VerletIntegrateVector_Damp__Const;    // 0x0078(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                RigVMModel___VerletIntegrateVector_Force__Const;   // 0x0080(0x0018)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	uint8                                         RigVMModel___RigUnit_VisualDebugVectorItemSpace_bEnabled__Const : 1; // 0x0098(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, EditConst, NonTransactional, NoDestructor, HasGetValueTypeHash))
+	uint8                                         RigVMModel___RigUnit_VisualDebugVectorItemSpace_Mode__Const; // 0x0099(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9A[0x2];                                       // 0x009A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           RigVMModel___RigUnit_VisualDebugVectorItemSpace_Color__Const; // 0x009C(0x0010)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         RigVMModel___RigUnit_VisualDebugVectorItemSpace_Thickness__Const; // 0x00AC(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FRigElementKey                         RigVMModel___RigUnit_VisualDebugVectorItemSpace_Space__Const; // 0x00B0(0x0010)(Edit, EditConst, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                         RigVMModel___MathVectorClampLength_1_MaximumLength__Const; // 0x00C0(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FRigElementKey                         RigVMModel___RigUnit_SetTransform_1_Item__Const;   // 0x00C4(0x0010)(Edit, EditConst, NonTransactional, NoDestructor, HasGetValueTypeHash)
+
+public:
+	static class UClass* StaticClass()
+	{
+		STATIC_CLASS_IMPL_FULLNAME("RigVMMemoryStorageGeneratorClass CR_Delivery_Drone.RigVMMemory_Literal")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RigVMMemory_Literal")
+	}
+	static class CR_Delivery_Drone::URigVMMemory_Literal* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<CR_Delivery_Drone::URigVMMemory_Literal>();
+	}
+};
+DUMPER7_ASSERTS_CR_Delivery_Drone__URigVMMemory_Literal;
 
 SDK_NAMESPACE_END

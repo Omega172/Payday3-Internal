@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_BridgeRoad_Tarp_03_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BridgeRoad_Tarp_03_C;
 
 SDK_NAMESPACE_END

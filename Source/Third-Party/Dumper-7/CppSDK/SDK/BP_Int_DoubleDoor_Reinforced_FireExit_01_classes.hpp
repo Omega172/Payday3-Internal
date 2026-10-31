@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABP_Int_DoubleDoor_Reinforced_FireExit_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Int_DoubleDoor_Reinforced_FireExit_01_C;
 
 SDK_NAMESPACE_END

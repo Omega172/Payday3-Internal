@@ -38,14 +38,14 @@ public:
 	class UMaterialInstanceDynamic*               DisTexture;                                        // 0x0448(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnHackAborted();
-	void BP_OnHackComplete();
-	void BP_OnHackStarted(bool bIsLocallyControlled);
-	void BP_OnPlayerInRangeChecked(const bool bInRange, const bool bWasInRange, const float Progress);
-	void ExecuteUbergraph_BP_CarriedHackablePhone(int32 EntryPoint);
-	void Timeline_InRange__FinishedFunc();
-	void Timeline_InRange__UpdateFunc();
 	void UserConstructionScript();
+	void Timeline_InRange__UpdateFunc();
+	void Timeline_InRange__FinishedFunc();
+	void ExecuteUbergraph_BP_CarriedHackablePhone(int32 EntryPoint);
+	void BP_OnPlayerInRangeChecked(const bool bInRange_BP_OnPlayerInRangeChecked, const bool bWasInRange_BP_OnPlayerInRangeChecked, const float Progress_BP_OnPlayerInRangeChecked);
+	void BP_OnHackStarted(bool bIsLocallyControlled_BP_OnHackStarted);
+	void BP_OnHackComplete();
+	void BP_OnHackAborted();
 
 public:
 	static class UClass* StaticClass()
@@ -61,5 +61,6 @@ public:
 		return GetDefaultObjImpl<ABP_CarriedHackablePhone_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CarriedHackablePhone_C;
 
 SDK_NAMESPACE_END

@@ -34,11 +34,11 @@ public:
 	struct FSlateFontInfo                         FontBrush;                                         // 0x0360(0x0060)(Edit, BlueprintVisible, HasGetValueTypeHash)
 
 public:
-	void SetInfamyVisuals();
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnInitialized();
-	void OnInfamyValuesRefreshed();
 	void ExecuteUbergraph_WBP_UI_InfamyCircularWidget(int32 EntryPoint);
+	void OnInfamyValuesRefreshed();
+	void OnInitialized();
+	void PreConstruct(bool IsDesignTime);
+	void SetInfamyVisuals();
 
 public:
 	static class UClass* StaticClass()

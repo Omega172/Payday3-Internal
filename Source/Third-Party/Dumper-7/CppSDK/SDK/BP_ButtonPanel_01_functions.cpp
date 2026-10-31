@@ -16,67 +16,31 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ButtonPanel_01.BP_ButtonPanel_01_C.BndEvt__BP_ButtonPanel_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ButtonPanel_01.BP_ButtonPanel_01_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_ButtonPanel_01_C::BndEvt__BP_ButtonPanel_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_ButtonPanel_01_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ButtonPanel_01_C", "BndEvt__BP_ButtonPanel_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_ButtonPanel_01_C_BndEvt__BP_ButtonPanel_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ButtonPanel_01.BP_ButtonPanel_01_C.ExecuteUbergraph_BP_ButtonPanel_01
-// (Final, UbergraphFunction)
+// Function BP_ButtonPanel_01.BP_ButtonPanel_01_C.setLights
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   state                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ButtonPanel_01_C::ExecuteUbergraph_BP_ButtonPanel_01(int32 EntryPoint)
+void ABP_ButtonPanel_01_C::setLights(int32 state)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setLights", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ButtonPanel_01_C", "ExecuteUbergraph_BP_ButtonPanel_01");
+	Params::BP_ButtonPanel_01_C_setLights Parms{};
 
-	Params::BP_ButtonPanel_01_C_ExecuteUbergraph_BP_ButtonPanel_01 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ButtonPanel_01.BP_ButtonPanel_01_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ButtonPanel_01_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ButtonPanel_01_C", "OnStateChanged");
-
-	Params::BP_ButtonPanel_01_C_OnStateChanged Parms{};
-
-	Parms.bStateToChangeTo = bStateToChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.state = state;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -89,10 +53,8 @@ void ABP_ButtonPanel_01_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmeti
 
 void ABP_ButtonPanel_01_C::setInteraction(bool enabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ButtonPanel_01_C", "setInteraction");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setInteraction", FnName));
 
 	Params::BP_ButtonPanel_01_C_setInteraction Parms{};
 
@@ -102,37 +64,63 @@ void ABP_ButtonPanel_01_C::setInteraction(bool enabled)
 }
 
 
-// Function BP_ButtonPanel_01.BP_ButtonPanel_01_C.setLights
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function BP_ButtonPanel_01.BP_ButtonPanel_01_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   state                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bStateToChangeTo_OnStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ButtonPanel_01_C::setLights(int32 state)
+void ABP_ButtonPanel_01_C::OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ButtonPanel_01_C", "setLights");
+	Params::BP_ButtonPanel_01_C_OnStateChanged Parms{};
 
-	Params::BP_ButtonPanel_01_C_setLights Parms{};
-
-	Parms.state = state;
+	Parms.bStateToChangeTo_OnStateChanged = bStateToChangeTo_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_ButtonPanel_01.BP_ButtonPanel_01_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_ButtonPanel_01.BP_ButtonPanel_01_C.ExecuteUbergraph_BP_ButtonPanel_01
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ButtonPanel_01_C::UserConstructionScript()
+void ABP_ButtonPanel_01_C::ExecuteUbergraph_BP_ButtonPanel_01(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ButtonPanel_01_C", "ExecuteUbergraph_BP_ButtonPanel_01", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ButtonPanel_01_C", "UserConstructionScript");
+	Params::BP_ButtonPanel_01_C_ExecuteUbergraph_BP_ButtonPanel_01 Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ButtonPanel_01.BP_ButtonPanel_01_C.BndEvt__BP_ButtonPanel_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ButtonPanel_01_C::BndEvt__BP_ButtonPanel_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ButtonPanel_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_ButtonPanel_01_C_BndEvt__BP_ButtonPanel_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

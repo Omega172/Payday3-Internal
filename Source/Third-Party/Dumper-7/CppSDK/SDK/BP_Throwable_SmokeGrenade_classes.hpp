@@ -17,24 +17,24 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Throwable_SmokeGrenade.BP_Throwable_SmokeGrenade_C
-// 0x0020 (0x8FC0 - 0x8FA0)
+// 0x0020 (0x0830 - 0x0810)
 class ABP_Throwable_SmokeGrenade_C final : public ASBZSmokeGrenade
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x8FA0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UStaticMeshComponent*                   Mesh_Lever;                                        // 0x8FA8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      FX_GrenadeTrail;                                   // 0x8FB0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	double                                        SmokeAccuracyMod;                                  // 0x8FB8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0810(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UStaticMeshComponent*                   Mesh_Lever;                                        // 0x0818(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      FX_GrenadeTrail;                                   // 0x0820(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	double                                        SmokeAccuracyMod;                                  // 0x0828(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_Throwable_SmokeGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_2_OnProjectileStopDelegate__DelegateSignature(const struct FHitResult& ImpactResult);
-	void ExecuteUbergraph_BP_Throwable_SmokeGrenade(int32 EntryPoint);
-	void OnArmed();
 	void OnThrow();
+	void OnArmed();
+	void ExecuteUbergraph_BP_Throwable_SmokeGrenade(int32 EntryPoint);
+	void BndEvt__BP_Throwable_SmokeGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_2_OnProjectileStopDelegate__DelegateSignature(const struct FHitResult& ImpactResult);
 
-	bool CanAffectStealth() const;
-	bool CanAffectTaser() const;
 	float GetSightModifier(const struct FVector& Start, const struct FVector& End) const;
+	bool CanAffectTaser() const;
+	bool CanAffectStealth() const;
 
 public:
 	static class UClass* StaticClass()
@@ -50,5 +50,6 @@ public:
 		return GetDefaultObjImpl<ABP_Throwable_SmokeGrenade_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Throwable_SmokeGrenade_C;
 
 SDK_NAMESPACE_END

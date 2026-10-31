@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_DIM_SignStreet_01_DiamondJewelryWay_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DIM_SignStreet_01_DiamondJewelryWay_C;
 
 SDK_NAMESPACE_END

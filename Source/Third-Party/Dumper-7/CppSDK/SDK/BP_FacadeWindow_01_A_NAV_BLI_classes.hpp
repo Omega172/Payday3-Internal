@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_FacadeWindow_01_A_NAV_BLI_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_FacadeWindow_01_A_NAV_BLI_C;
 
 SDK_NAMESPACE_END

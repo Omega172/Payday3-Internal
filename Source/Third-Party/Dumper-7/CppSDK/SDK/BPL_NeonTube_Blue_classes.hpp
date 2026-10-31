@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABPL_NeonTube_Blue_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_NeonTube_Blue_C;
 
 SDK_NAMESPACE_END

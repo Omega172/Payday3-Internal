@@ -26,8 +26,8 @@ public:
 	class USBZPropDamageComponent*                SBZPropDamage_0;                                   // 0x0760(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void OnStateChanged(ESBZGateState OldState_OnStateChanged, ESBZGateState NewState_OnStateChanged, bool bIsInitialStateChange_OnStateChanged);
 	void ExecuteUbergraph_BP_TrainCar_RemoteDoor(int32 EntryPoint);
-	void OnStateChanged(ESBZGateState OldState, ESBZGateState NewState, bool bIsInitialStateChange);
 
 public:
 	static class UClass* StaticClass()
@@ -43,5 +43,6 @@ public:
 		return GetDefaultObjImpl<ABP_TrainCar_RemoteDoor_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_TrainCar_RemoteDoor_C;
 
 SDK_NAMESPACE_END

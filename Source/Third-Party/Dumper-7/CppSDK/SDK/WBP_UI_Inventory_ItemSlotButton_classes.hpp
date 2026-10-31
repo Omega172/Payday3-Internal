@@ -46,19 +46,19 @@ public:
 	bool                                          bIsEmpty;                                          // 0x0458(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetItemNameColour(const struct FLinearColor& DesiredColour);
-	void SetArmorChunkImages(class USBZArmorData* ArmorData);
-	void SetActiveItem(bool bIsActiveItem_SetActiveItem);
-	void RefreshVisuals();
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnItemDataInitialized();
-	void OnInitialized();
-	void OnHover(bool bIsHovered);
-	void OnFocused(bool bIsFocused);
-	void InitializeItemVisuals(class USBZInventoryBaseData* InInventoryData);
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
 	void ExecuteUbergraph_WBP_UI_Inventory_ItemSlotButton(int32 EntryPoint);
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
+	void InitializeItemVisuals(class USBZInventoryBaseData* InInventoryData);
+	void OnFocused(bool bIsFocused);
+	void OnHover(bool bIsHovered);
+	void OnInitialized();
+	void OnItemDataInitialized();
+	void PreConstruct(bool IsDesignTime);
+	void RefreshVisuals();
+	void SetActiveItem(bool bIsActiveItem);
+	void SetArmorChunkImages(class USBZArmorData* ArmorData);
+	void SetItemNameColour(const struct FLinearColor& DesiredColour);
 
 public:
 	static class UClass* StaticClass()

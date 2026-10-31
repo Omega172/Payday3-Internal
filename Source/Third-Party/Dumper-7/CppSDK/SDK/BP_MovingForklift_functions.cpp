@@ -16,25 +16,39 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_MovingForklift.BP_MovingForklift_C.BndEvt__BP_MovingForklift_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
+// Function BP_MovingForklift.BP_MovingForklift_C.On Spline End Reach
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ASBZWheeledVehicle*               Vehicle                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MovingForklift_C::BndEvt__BP_MovingForklift_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_MovingForklift_C::On_Spline_End_Reach(class ASBZWheeledVehicle* Vehicle, class ASBZSpline* Spline)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"On Spline End Reach", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MovingForklift_C", "BndEvt__BP_MovingForklift_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
+	Params::BP_MovingForklift_C_On_Spline_End_Reach Parms{};
 
-	Params::BP_MovingForklift_C_BndEvt__BP_MovingForklift_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
+	Parms.Vehicle = Vehicle;
+	Parms.Spline = Spline;
 
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MovingForklift.BP_MovingForklift_C.ExecuteUbergraph_BP_MovingForklift
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MovingForklift_C::ExecuteUbergraph_BP_MovingForklift(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_MovingForklift_C", "ExecuteUbergraph_BP_MovingForklift", FuncInfo);
+
+	Params::BP_MovingForklift_C_ExecuteUbergraph_BP_MovingForklift Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -49,10 +63,8 @@ void ABP_MovingForklift_C::BndEvt__BP_MovingForklift_SBZInteractable_K2Node_Comp
 
 void ABP_MovingForklift_C::BndEvt__BP_MovingForklift_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MovingForklift_C", "BndEvt__BP_MovingForklift_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_MovingForklift_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature", FnName));
 
 	Params::BP_MovingForklift_C_BndEvt__BP_MovingForklift_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature Parms{};
 
@@ -64,43 +76,23 @@ void ABP_MovingForklift_C::BndEvt__BP_MovingForklift_SBZInteractable_K2Node_Comp
 }
 
 
-// Function BP_MovingForklift.BP_MovingForklift_C.ExecuteUbergraph_BP_MovingForklift
-// (Final, UbergraphFunction)
+// Function BP_MovingForklift.BP_MovingForklift_C.BndEvt__BP_MovingForklift_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MovingForklift_C::ExecuteUbergraph_BP_MovingForklift(int32 EntryPoint)
+void ABP_MovingForklift_C::BndEvt__BP_MovingForklift_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_MovingForklift_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MovingForklift_C", "ExecuteUbergraph_BP_MovingForklift");
+	Params::BP_MovingForklift_C_BndEvt__BP_MovingForklift_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
-	Params::BP_MovingForklift_C_ExecuteUbergraph_BP_MovingForklift Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MovingForklift.BP_MovingForklift_C.On Spline End Reach
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class ASBZWheeledVehicle*               Vehicle                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MovingForklift_C::On_Spline_End_Reach(class ASBZWheeledVehicle* Vehicle, class ASBZSpline* Spline)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MovingForklift_C", "On Spline End Reach");
-
-	Params::BP_MovingForklift_C_On_Spline_End_Reach Parms{};
-
-	Parms.Vehicle = Vehicle;
-	Parms.Spline = Spline;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -50,17 +50,17 @@ public:
 	double                                        lidOpenAngle;                                      // 0x0430(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_MoneyCart_01_BagTriggerVolume_K2Node_ComponentBoundEvent_5_SBZBagCountChangedDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, int32 Overlapping, int32 Secured);
-	void BndEvt__BP_MoneyCart_01_LidOpen_K2Node_ComponentBoundEvent_2_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
-	void BndEvt__BP_MoneyCart_01_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_MoneyCart_01_StickerPlaced_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
-	void CalculateBagRange(int32 NewState, bool* MaxBagsReached);
-	void CloseLid();
-	void EnableInteraction(bool bEnabled);
-	void ExecuteUbergraph_BP_MoneyCart_01(int32 EntryPoint);
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void openLid_timeline__FinishedFunc();
 	void openLid_timeline__UpdateFunc();
+	void openLid_timeline__FinishedFunc();
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_MoneyCart_01(int32 EntryPoint);
+	void EnableInteraction(bool bEnabled);
+	void CloseLid();
+	void CalculateBagRange(int32 NewState, bool* MaxBagsReached);
+	void BndEvt__BP_MoneyCart_01_StickerPlaced_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
+	void BndEvt__BP_MoneyCart_01_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_MoneyCart_01_LidOpen_K2Node_ComponentBoundEvent_2_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
+	void BndEvt__BP_MoneyCart_01_BagTriggerVolume_K2Node_ComponentBoundEvent_5_SBZBagCountChangedDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, int32 Overlapping, int32 Secured);
 
 public:
 	static class UClass* StaticClass()
@@ -76,5 +76,6 @@ public:
 		return GetDefaultObjImpl<ABP_MoneyCart_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_MoneyCart_01_C;
 
 SDK_NAMESPACE_END

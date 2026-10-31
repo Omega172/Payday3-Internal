@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_DEM_SignDirectional_01_TrashCollection_Left_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DEM_SignDirectional_01_TrashCollection_Left_C;
 
 SDK_NAMESPACE_END

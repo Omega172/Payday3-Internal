@@ -33,12 +33,12 @@ public:
 	class UWBP_ItemDescriptionHeader_INvert_C*    WBP_ItemDescriptionHeader_INvert_1;                // 0x0330(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_CampaignContent_Act_Outro_WBP_InputActionButton_New_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void CustomEvent(const class USBZCampaignBaseEntryData* Entry);
-	void ExecuteUbergraph_WBP_CampaignContent_Act_OutroCampaignEnd(int32 EntryPoint);
-	ESBZCampaignEntryState GetEntryState();
-	void SetCampaignData(const class USBZCampaignBaseEntryData* Entry);
 	void SetEntryState(ESBZCampaignEntryState NewState);
+	void SetCampaignData(const class USBZCampaignBaseEntryData* Entry);
+	ESBZCampaignEntryState GetEntryState();
+	void ExecuteUbergraph_WBP_CampaignContent_Act_OutroCampaignEnd(int32 EntryPoint);
+	void CustomEvent(const class USBZCampaignBaseEntryData* Entry);
+	void BndEvt__WBP_CampaignContent_Act_Outro_WBP_InputActionButton_New_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
 
 public:
 	static class UClass* StaticClass()
@@ -54,5 +54,6 @@ public:
 		return GetDefaultObjImpl<UWBP_CampaignContent_Act_OutroCampaignEnd_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_CampaignContent_Act_OutroCampaignEnd_C;
 
 SDK_NAMESPACE_END

@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_AmmoPack_Viva_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_AmmoPack_Viva_C;
 
 SDK_NAMESPACE_END

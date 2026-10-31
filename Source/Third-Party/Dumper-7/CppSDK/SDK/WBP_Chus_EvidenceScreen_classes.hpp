@@ -33,9 +33,9 @@ public:
 	class UWidgetSwitcher*                        WidgetSwitcher_122;                                // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void setCompleted(const class FText& case_0, const class FText& defendant, const class FText& evidence);
-	void setIdle(const class FText& idleText);
 	void setProgress(double progress);
+	void setIdle(const class FText& idleText);
+	void setCompleted(const class FText& case_0, const class FText& defendant, const class FText& evidence);
 
 public:
 	static class UClass* StaticClass()
@@ -51,5 +51,6 @@ public:
 		return GetDefaultObjImpl<UWBP_Chus_EvidenceScreen_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_Chus_EvidenceScreen_C;
 
 SDK_NAMESPACE_END

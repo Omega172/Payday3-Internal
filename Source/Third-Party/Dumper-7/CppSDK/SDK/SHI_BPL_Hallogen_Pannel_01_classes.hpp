@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "Starbreeze_classes.hpp"
 #include "Enum_LampStages_structs.hpp"
+#include "Starbreeze_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -29,9 +29,9 @@ public:
 	Enum_LampStages                               States;                                            // 0x0390(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void SetStateFunction(Enum_LampStages State);
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
 	void ExecuteUbergraph_SHI_BPL_Hallogen_Pannel_01(int32 EntryPoint);
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void SetStateFunction(Enum_LampStages State_0);
 
 public:
 	static class UClass* StaticClass()
@@ -47,5 +47,6 @@ public:
 		return GetDefaultObjImpl<ASHI_BPL_Hallogen_Pannel_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ASHI_BPL_Hallogen_Pannel_01_C;
 
 SDK_NAMESPACE_END

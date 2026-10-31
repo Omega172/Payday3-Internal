@@ -16,14 +16,14 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_SHI_ConstructionCrane_01.BP_SHI_ConstructionCrane_01_C.BndEvt__BP_SHI_ConstructionCrane_01_containerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct BP_SHI_ConstructionCrane_01_C_BndEvt__BP_SHI_ConstructionCrane_01_containerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature final
+// Function BP_SHI_ConstructionCrane_01.BP_SHI_ConstructionCrane_01_C.setContainerVisibility
+// 0x0001 (0x0001 - 0x0000)
+struct BP_SHI_ConstructionCrane_01_C_setContainerVisibility final
 {
 public:
-	bool                                          bState;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_SHI_ConstructionCrane_01_C_setContainerVisibility;
 
 // Function BP_SHI_ConstructionCrane_01.BP_SHI_ConstructionCrane_01_C.ExecuteUbergraph_BP_SHI_ConstructionCrane_01
 // 0x0020 (0x0020 - 0x0000)
@@ -37,14 +37,17 @@ public:
 	bool                                          K2Node_ComponentBoundEvent_bDoCosmetics;           // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_SHI_ConstructionCrane_01_C_ExecuteUbergraph_BP_SHI_ConstructionCrane_01;
 
-// Function BP_SHI_ConstructionCrane_01.BP_SHI_ConstructionCrane_01_C.setContainerVisibility
-// 0x0001 (0x0001 - 0x0000)
-struct BP_SHI_ConstructionCrane_01_C_setContainerVisibility final
+// Function BP_SHI_ConstructionCrane_01.BP_SHI_ConstructionCrane_01_C.BndEvt__BP_SHI_ConstructionCrane_01_containerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct BP_SHI_ConstructionCrane_01_C_BndEvt__BP_SHI_ConstructionCrane_01_containerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature final
 {
 public:
-	bool                                          enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bState;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_SHI_ConstructionCrane_01_C_BndEvt__BP_SHI_ConstructionCrane_01_containerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

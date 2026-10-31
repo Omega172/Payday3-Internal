@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<AONE_BPL_DeskLamp_A_C>();
 	}
 };
+DUMPER7_ASSERTS_AONE_BPL_DeskLamp_A_C;
 
 SDK_NAMESPACE_END

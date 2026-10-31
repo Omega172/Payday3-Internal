@@ -28,9 +28,9 @@ public:
 	class USBZUITextBlock*                        Text_WeaponLevel;                                  // 0x03F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void OnNewWeaponData();
-	void OnDataEmpty();
 	void ExecuteUbergraph_WBP_UI_WeaponProgressionWidget(int32 EntryPoint);
+	void OnDataEmpty();
+	void OnNewWeaponData();
 
 public:
 	static class UClass* StaticClass()

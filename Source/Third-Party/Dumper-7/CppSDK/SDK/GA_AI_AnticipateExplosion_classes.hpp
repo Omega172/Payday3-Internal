@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGA_AI_AnticipateExplosion_C>();
 	}
 };
+DUMPER7_ASSERTS_UGA_AI_AnticipateExplosion_C;
 
 SDK_NAMESPACE_END

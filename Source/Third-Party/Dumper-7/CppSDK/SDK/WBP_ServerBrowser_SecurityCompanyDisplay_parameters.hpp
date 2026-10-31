@@ -18,6 +18,26 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_ServerBrowser_SecurityCompanyDisplay.WBP_ServerBrowser_SecurityCompanyDisplay_C.ExecuteUbergraph_WBP_ServerBrowser_SecurityCompanyDisplay
+// 0x0088 (0x0088 - 0x0000)
+struct WBP_ServerBrowser_SecurityCompanyDisplay_C_ExecuteUbergraph_WBP_ServerBrowser_SecurityCompanyDisplay final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0004(0x0014)()
+	const class UPD3SecurityCompanyDataAsset*     CallFunc_GetSecurityCompany_ReturnValue;           // 0x0018(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class ISlateTextureAtlasInterface> CallFunc_SetBrushFromAtlasInterface_AtlasRegion_CastInput; // 0x0028(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0038(0x0014)()
+	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class ISlateTextureAtlasInterface> CallFunc_SetBrushFromAtlasInterface_AtlasRegion_CastInput_1; // 0x0050(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	struct FSlateColor                            K2Node_MakeStruct_SlateColor_2;                    // 0x0060(0x0014)()
+	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TScriptInterface<class ISlateTextureAtlasInterface> CallFunc_SetBrushFromAtlasInterface_AtlasRegion_CastInput_2; // 0x0078(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ServerBrowser_SecurityCompanyDisplay_C_ExecuteUbergraph_WBP_ServerBrowser_SecurityCompanyDisplay;
+
 // Function WBP_ServerBrowser_SecurityCompanyDisplay.WBP_ServerBrowser_SecurityCompanyDisplay_C.SetCompanyNameAndDescription
 // 0x00B8 (0x00B8 - 0x0000)
 struct WBP_ServerBrowser_SecurityCompanyDisplay_C_SetCompanyNameAndDescription final
@@ -44,26 +64,6 @@ public:
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00A0(0x0014)()
 };
 DUMPER7_ASSERTS_WBP_ServerBrowser_SecurityCompanyDisplay_C_SetCompanyNameAndDescription;
-
-// Function WBP_ServerBrowser_SecurityCompanyDisplay.WBP_ServerBrowser_SecurityCompanyDisplay_C.ExecuteUbergraph_WBP_ServerBrowser_SecurityCompanyDisplay
-// 0x0088 (0x0088 - 0x0000)
-struct WBP_ServerBrowser_SecurityCompanyDisplay_C_ExecuteUbergraph_WBP_ServerBrowser_SecurityCompanyDisplay final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0004(0x0014)()
-	const class UPD3SecurityCompanyDataAsset*     CallFunc_GetSecurityCompany_ReturnValue;           // 0x0018(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class ISlateTextureAtlasInterface> CallFunc_SetBrushFromAtlasInterface_AtlasRegion_CastInput; // 0x0028(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0038(0x0014)()
-	uint8                                         Pad_4C[0x4];                                       // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class ISlateTextureAtlasInterface> CallFunc_SetBrushFromAtlasInterface_AtlasRegion_CastInput_1; // 0x0050(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	struct FSlateColor                            K2Node_MakeStruct_SlateColor_2;                    // 0x0060(0x0014)()
-	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class ISlateTextureAtlasInterface> CallFunc_SetBrushFromAtlasInterface_AtlasRegion_CastInput_2; // 0x0078(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ServerBrowser_SecurityCompanyDisplay_C_ExecuteUbergraph_WBP_ServerBrowser_SecurityCompanyDisplay;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

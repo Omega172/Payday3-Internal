@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ADIM_BPL_StripLight_Little_Red_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ADIM_BPL_StripLight_Little_Red_01_C;
 
 SDK_NAMESPACE_END

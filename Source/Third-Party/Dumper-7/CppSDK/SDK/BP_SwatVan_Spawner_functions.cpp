@@ -16,23 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_SwatVan_Spawner.BP_SwatVan_Spawner_C.ExecuteUbergraph_BP_SwatVan_Spawner
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_SwatVan_Spawner.BP_SwatVan_Spawner_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_SwatVan_Spawner_C::ExecuteUbergraph_BP_SwatVan_Spawner(int32 EntryPoint)
+void ABP_SwatVan_Spawner_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SwatVan_Spawner_C", "ExecuteUbergraph_BP_SwatVan_Spawner");
-
-	Params::BP_SwatVan_Spawner_C_ExecuteUbergraph_BP_SwatVan_Spawner Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -44,10 +36,8 @@ void ABP_SwatVan_Spawner_C::ExecuteUbergraph_BP_SwatVan_Spawner(int32 EntryPoint
 
 void ABP_SwatVan_Spawner_C::PawnSpawned(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SwatVan_Spawner_C", "PawnSpawned");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PawnSpawned", FnName));
 
 	Params::BP_SwatVan_Spawner_C_PawnSpawned Parms{};
 
@@ -58,17 +48,21 @@ void ABP_SwatVan_Spawner_C::PawnSpawned(class APawn* SpawnedPawn, class ASBZCarr
 }
 
 
-// Function BP_SwatVan_Spawner.BP_SwatVan_Spawner_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_SwatVan_Spawner.BP_SwatVan_Spawner_C.ExecuteUbergraph_BP_SwatVan_Spawner
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SwatVan_Spawner_C::ReceiveBeginPlay()
+void ABP_SwatVan_Spawner_C::ExecuteUbergraph_BP_SwatVan_Spawner(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_SwatVan_Spawner_C", "ExecuteUbergraph_BP_SwatVan_Spawner", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SwatVan_Spawner_C", "ReceiveBeginPlay");
+	Params::BP_SwatVan_Spawner_C_ExecuteUbergraph_BP_SwatVan_Spawner Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

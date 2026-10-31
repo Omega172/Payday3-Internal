@@ -28,9 +28,9 @@ public:
 	class UWBP_InventoryBaseData_Icon_C*          WBP_InventoryBaseData_Icon;                        // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void SetAndDisplayText(const class FText& InText);
-	void SetAndDisplayIcon(const class USBZInventoryBaseData* InItem);
 	void ExecuteUbergraph_WBP_UI_Inventory_ModGridIcon(int32 EntryPoint);
+	void SetAndDisplayIcon(const class USBZInventoryBaseData* InItem);
+	void SetAndDisplayText(const class FText& InText);
 
 public:
 	static class UClass* StaticClass()

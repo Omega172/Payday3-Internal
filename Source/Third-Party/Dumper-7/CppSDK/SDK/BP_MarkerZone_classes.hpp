@@ -34,8 +34,8 @@ public:
 	class AActor*                                 Target;                                            // 0x03A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_MarkerZone(int32 EntryPoint);
 	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
+	void ExecuteUbergraph_BP_MarkerZone(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -51,5 +51,6 @@ public:
 		return GetDefaultObjImpl<ABP_MarkerZone_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_MarkerZone_C;
 
 SDK_NAMESPACE_END

@@ -43,5 +43,6 @@ public:
 		return GetDefaultObjImpl<Abp_AirConditioner_01_wall_Rotation_C>();
 	}
 };
+DUMPER7_ASSERTS_Abp_AirConditioner_01_wall_Rotation_C;
 
 SDK_NAMESPACE_END

@@ -14,6 +14,17 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function bp_global_screen_controller.bp_global_screen_controller_C.OnStateChanged
+// 0x000C (0x000C - 0x0000)
+struct bp_global_screen_controller_C_OnStateChanged final
+{
+public:
+	int32                                         OldState;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewState;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_bp_global_screen_controller_C_OnStateChanged;
+
 // Function bp_global_screen_controller.bp_global_screen_controller_C.ExecuteUbergraph_bp_global_screen_controller
 // 0x0070 (0x0070 - 0x0000)
 struct bp_global_screen_controller_C_ExecuteUbergraph_bp_global_screen_controller final
@@ -47,16 +58,7 @@ public:
 	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_1; // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function bp_global_screen_controller.bp_global_screen_controller_C.OnStateChanged
-// 0x000C (0x000C - 0x0000)
-struct bp_global_screen_controller_C_OnStateChanged final
-{
-public:
-	int32                                         OldState;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         NewState;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_bp_global_screen_controller_C_ExecuteUbergraph_bp_global_screen_controller;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

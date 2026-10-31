@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ANightClub_C>();
 	}
 };
+DUMPER7_ASSERTS_ANightClub_C;
 
 SDK_NAMESPACE_END

@@ -37,13 +37,13 @@ public:
 	class ASBZCharacter*                          Seller;                                            // 0x0388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_LA_Civ_Cosmetic_JewelryStore_SBZLifeAction_K2Node_ComponentBoundEvent_0_SBZLifeActionEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot);
-	void BndEvt__BP_LA_Civ_Cosmetic_JewelryStore_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot);
-	void BndEvt__BP_LA_Civ_Cosmetic_JewelryStore_SBZLifeAction_K2Node_ComponentBoundEvent_2_SBZLifeActionStopEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot, ESBZLifeActionStopReason Result);
-	void ExecuteUbergraph_BP_LA_Civ_Cosmetic_DIDI_MediumStore(int32 EntryPoint);
-	void FindOccupiedBuyInstance(class USBZLifeActionInstance** BuyInstance);
-	void IsSellerWaiting(bool* Waiting);
 	void SellerGoBackWaiting();
+	void IsSellerWaiting(bool* Waiting);
+	void FindOccupiedBuyInstance(class USBZLifeActionInstance** BuyInstance);
+	void ExecuteUbergraph_BP_LA_Civ_Cosmetic_DIDI_MediumStore(int32 EntryPoint);
+	void BndEvt__BP_LA_Civ_Cosmetic_JewelryStore_SBZLifeAction_K2Node_ComponentBoundEvent_2_SBZLifeActionStopEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot, ESBZLifeActionStopReason Result);
+	void BndEvt__BP_LA_Civ_Cosmetic_JewelryStore_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot);
+	void BndEvt__BP_LA_Civ_Cosmetic_JewelryStore_SBZLifeAction_K2Node_ComponentBoundEvent_0_SBZLifeActionEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot);
 
 public:
 	static class UClass* StaticClass()
@@ -59,5 +59,6 @@ public:
 		return GetDefaultObjImpl<ABP_LA_Civ_Cosmetic_DIDI_MediumStore_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LA_Civ_Cosmetic_DIDI_MediumStore_C;
 
 SDK_NAMESPACE_END

@@ -16,129 +16,17 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_Menu_3.WBP_Menu_3_C.Email Test
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Code                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FS_EmailStructure&         CodeEmail                                              (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-
-void UWBP_Menu_3_C::Email_Test(int32 Code, const struct FS_EmailStructure& CodeEmail)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_3_C", "Email Test");
-
-	Params::WBP_Menu_3_C_Email_Test Parms{};
-
-	Parms.Code = Code;
-	Parms.CodeEmail = std::move(CodeEmail);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Menu_3.WBP_Menu_3_C.ExecuteUbergraph_WBP_Menu_3
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Menu_3_C::ExecuteUbergraph_WBP_Menu_3(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_3_C", "ExecuteUbergraph_WBP_Menu_3");
-
-	Params::WBP_Menu_3_C_ExecuteUbergraph_WBP_Menu_3 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Menu_3.WBP_Menu_3_C.Scroll Down Func
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  A                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double*                                 New_Scroll_Offset_0                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Menu_3_C::Scroll_Down_Func(double A, double* New_Scroll_Offset_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_3_C", "Scroll Down Func");
-
-	Params::WBP_Menu_3_C_Scroll_Down_Func Parms{};
-
-	Parms.A = A;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (New_Scroll_Offset_0 != nullptr)
-		*New_Scroll_Offset_0 = Parms.New_Scroll_Offset_0;
-}
-
-
-// Function WBP_Menu_3.WBP_Menu_3_C.ScrollUpFunc
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  A                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double*                                 New_Scroll_Offset_0                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Menu_3_C::ScrollUpFunc(double A, double* New_Scroll_Offset_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_3_C", "ScrollUpFunc");
-
-	Params::WBP_Menu_3_C_ScrollUpFunc Parms{};
-
-	Parms.A = A;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (New_Scroll_Offset_0 != nullptr)
-		*New_Scroll_Offset_0 = Parms.New_Scroll_Offset_0;
-}
-
-
-// Function WBP_Menu_3.WBP_Menu_3_C.Set FocusUp
+// Function WBP_Menu_3.WBP_Menu_3_C.SetFocusDown
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Menu_3_C::Set_FocusUp(bool NewParam)
+void UWBP_Menu_3_C::SetFocusDown(bool NewParam)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetFocusDown", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_3_C", "Set FocusUp");
-
-	Params::WBP_Menu_3_C_Set_FocusUp Parms{};
-
-	Parms.NewParam = NewParam;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Menu_3.WBP_Menu_3_C.SetBackFocus
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Menu_3_C::SetBackFocus(bool NewParam)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_3_C", "SetBackFocus");
-
-	Params::WBP_Menu_3_C_SetBackFocus Parms{};
+	Params::WBP_Menu_3_C_SetFocusDown Parms{};
 
 	Parms.NewParam = NewParam;
 
@@ -153,10 +41,8 @@ void UWBP_Menu_3_C::SetBackFocus(bool NewParam)
 
 void UWBP_Menu_3_C::SetEmails(TArray<struct FS_EmailStructure>& Emails)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_3_C", "SetEmails");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetEmails", FnName));
 
 	Params::WBP_Menu_3_C_SetEmails Parms{};
 
@@ -168,21 +54,119 @@ void UWBP_Menu_3_C::SetEmails(TArray<struct FS_EmailStructure>& Emails)
 }
 
 
-// Function WBP_Menu_3.WBP_Menu_3_C.SetFocusDown
+// Function WBP_Menu_3.WBP_Menu_3_C.SetBackFocus
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Menu_3_C::SetFocusDown(bool NewParam)
+void UWBP_Menu_3_C::SetBackFocus(bool NewParam)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetBackFocus", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Menu_3_C", "SetFocusDown");
-
-	Params::WBP_Menu_3_C_SetFocusDown Parms{};
+	Params::WBP_Menu_3_C_SetBackFocus Parms{};
 
 	Parms.NewParam = NewParam;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Menu_3.WBP_Menu_3_C.Set FocusUp
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Menu_3_C::Set_FocusUp(bool NewParam)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set FocusUp", FnName));
+
+	Params::WBP_Menu_3_C_Set_FocusUp Parms{};
+
+	Parms.NewParam = NewParam;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Menu_3.WBP_Menu_3_C.ScrollUpFunc
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  A                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double*                                 New_Scroll_Offset                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Menu_3_C::ScrollUpFunc(double A, double* New_Scroll_Offset)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ScrollUpFunc", FnName));
+
+	Params::WBP_Menu_3_C_ScrollUpFunc Parms{};
+
+	Parms.A = A;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (New_Scroll_Offset != nullptr)
+		*New_Scroll_Offset = Parms.New_Scroll_Offset;
+}
+
+
+// Function WBP_Menu_3.WBP_Menu_3_C.Scroll Down Func
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  A                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double*                                 New_Scroll_Offset                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Menu_3_C::Scroll_Down_Func(double A, double* New_Scroll_Offset)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Scroll Down Func", FnName));
+
+	Params::WBP_Menu_3_C_Scroll_Down_Func Parms{};
+
+	Parms.A = A;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (New_Scroll_Offset != nullptr)
+		*New_Scroll_Offset = Parms.New_Scroll_Offset;
+}
+
+
+// Function WBP_Menu_3.WBP_Menu_3_C.ExecuteUbergraph_WBP_Menu_3
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Menu_3_C::ExecuteUbergraph_WBP_Menu_3(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_Menu_3_C", "ExecuteUbergraph_WBP_Menu_3", FuncInfo);
+
+	Params::WBP_Menu_3_C_ExecuteUbergraph_WBP_Menu_3 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Menu_3.WBP_Menu_3_C.Email Test
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Code                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FS_EmailStructure&         CodeEmail                                              (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+
+void UWBP_Menu_3_C::Email_Test(int32 Code, const struct FS_EmailStructure& CodeEmail)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Email Test", FnName));
+
+	Params::WBP_Menu_3_C_Email_Test Parms{};
+
+	Parms.Code = Code;
+	Parms.CodeEmail = std::move(CodeEmail);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

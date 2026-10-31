@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AG_Cookie_Navlinks_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_Cookie_Navlinks_C;
 
 SDK_NAMESPACE_END

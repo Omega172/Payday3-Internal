@@ -16,6 +16,30 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_PossibleCode.BP_PossibleCode_C.ShowCode
+// 0x000C (0x000C - 0x0000)
+struct BP_PossibleCode_C_ShowCode final
+{
+public:
+	int32                                         TrueCode;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         RandomCode;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bShowTrueCode;                                     // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PossibleCode_C_ShowCode;
+
+// Function BP_PossibleCode.BP_PossibleCode_C.OnRep_CodePacket
+// 0x0028 (0x0028 - 0x0000)
+struct BP_PossibleCode_C_OnRep_CodePacket final
+{
+public:
+	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWBP_KeypadUVLightPossibleCode_C*       CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UUserWidget*                            CallFunc_GetUserWidgetObject_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_KeypadUVLightPossibleCode_C*       K2Node_DynamicCast_AsWBP_Keypad_UVLight_Possible_Code; // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PossibleCode_C_OnRep_CodePacket;
+
 // Function BP_PossibleCode.BP_PossibleCode_C.ExecuteUbergraph_BP_PossibleCode
 // 0x001C (0x001C - 0x0000)
 struct BP_PossibleCode_C_ExecuteUbergraph_BP_PossibleCode final
@@ -29,28 +53,7 @@ public:
 	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FS_CodePacket                          K2Node_MakeStruct_S_CodePacket;                    // 0x0010(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_PossibleCode.BP_PossibleCode_C.OnRep_CodePacket
-// 0x0028 (0x0028 - 0x0000)
-struct BP_PossibleCode_C_OnRep_CodePacket final
-{
-public:
-	class APlayerController*                      CallFunc_GetLocalPlayerController_ReturnValue;     // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWBP_KeypadUVLightPossibleCode_C*       CallFunc_Create_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UUserWidget*                            CallFunc_GetUserWidgetObject_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_KeypadUVLightPossibleCode_C*       K2Node_DynamicCast_AsWBP_Keypad_UVLight_Possible_Code; // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_PossibleCode.BP_PossibleCode_C.ShowCode
-// 0x000C (0x000C - 0x0000)
-struct BP_PossibleCode_C_ShowCode final
-{
-public:
-	int32                                         TrueCode;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         RandomCode;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bShowTrueCode;                                     // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_PossibleCode_C_ExecuteUbergraph_BP_PossibleCode;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

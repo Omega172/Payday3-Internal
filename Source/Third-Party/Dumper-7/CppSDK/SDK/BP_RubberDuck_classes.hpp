@@ -33,11 +33,11 @@ public:
 	class UTimelineComponent*                     interact_timeline;                                 // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_RubberDuck_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_RubberDuck_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_RubberDuck(int32 EntryPoint);
-	void interact_timeline__FinishedFunc();
 	void interact_timeline__UpdateFunc();
+	void interact_timeline__FinishedFunc();
+	void ExecuteUbergraph_BP_RubberDuck(int32 EntryPoint);
+	void BndEvt__BP_RubberDuck_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_RubberDuck_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -53,5 +53,6 @@ public:
 		return GetDefaultObjImpl<ABP_RubberDuck_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_RubberDuck_C;
 
 SDK_NAMESPACE_END

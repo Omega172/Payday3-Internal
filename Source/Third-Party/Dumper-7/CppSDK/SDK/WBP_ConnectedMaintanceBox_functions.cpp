@@ -16,99 +16,113 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.ExecuteUbergraph_WBP_ConnectedMaintanceBox
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.showScreenMain
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_ConnectedMaintanceBox_C::ExecuteUbergraph_WBP_ConnectedMaintanceBox(int32 EntryPoint)
+void UWBP_ConnectedMaintanceBox_C::showScreenMain()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"showScreenMain", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ConnectedMaintanceBox_C", "ExecuteUbergraph_WBP_ConnectedMaintanceBox");
-
-	Params::WBP_ConnectedMaintanceBox_C_ExecuteUbergraph_WBP_ConnectedMaintanceBox Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.SetCompetedText
+// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.showScreenIntro
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_ConnectedMaintanceBox_C::showScreenIntro()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"showScreenIntro", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.showScreenError
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_ConnectedMaintanceBox_C::showScreenError()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"showScreenError", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.showScreenDisabled
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_ConnectedMaintanceBox_C::showScreenDisabled()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"showScreenDisabled", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.showScreenCompleted
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_ConnectedMaintanceBox_C::showScreenCompleted()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"showScreenCompleted", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.SetSymbol
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FText&                      In                                                     (BlueprintVisible, BlueprintReadOnly, Parm)
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ConnectedMaintanceBox_C::SetCompetedText(const class FText& In)
+void UWBP_ConnectedMaintanceBox_C::SetSymbol(int32 Index_0)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetSymbol", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ConnectedMaintanceBox_C", "SetCompetedText");
+	Params::WBP_ConnectedMaintanceBox_C_SetSymbol Parms{};
 
-	Params::WBP_ConnectedMaintanceBox_C_SetCompetedText Parms{};
-
-	Parms.In = std::move(In);
+	Parms.Index_0 = Index_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.SetDisabledText
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.SetModelNumber
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FText&                      In                                                     (BlueprintVisible, BlueprintReadOnly, Parm)
+// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_ConnectedMaintanceBox_C::SetDisabledText(const class FText& In)
+void UWBP_ConnectedMaintanceBox_C::SetModelNumber(const class FText& InText)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetModelNumber", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ConnectedMaintanceBox_C", "SetDisabledText");
+	Params::WBP_ConnectedMaintanceBox_C_SetModelNumber Parms{};
 
-	Params::WBP_ConnectedMaintanceBox_C_SetDisabledText Parms{};
-
-	Parms.In = std::move(In);
+	Parms.InText = std::move(InText);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.SetErrorText
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      In                                                     (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_ConnectedMaintanceBox_C::SetErrorText(const class FText& In)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ConnectedMaintanceBox_C", "SetErrorText");
-
-	Params::WBP_ConnectedMaintanceBox_C_SetErrorText Parms{};
-
-	Parms.In = std::move(In);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.SetFirstConnection
+// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.SetLastConnection
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_ConnectedMaintanceBox_C::SetFirstConnection(const class FText& InText)
+void UWBP_ConnectedMaintanceBox_C::SetLastConnection(const class FText& InText)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetLastConnection", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ConnectedMaintanceBox_C", "SetFirstConnection");
-
-	Params::WBP_ConnectedMaintanceBox_C_SetFirstConnection Parms{};
+	Params::WBP_ConnectedMaintanceBox_C_SetLastConnection Parms{};
 
 	Parms.InText = std::move(InText);
 
@@ -123,10 +137,8 @@ void UWBP_ConnectedMaintanceBox_C::SetFirstConnection(const class FText& InText)
 
 void UWBP_ConnectedMaintanceBox_C::SetIntroText(const class FText& In)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ConnectedMaintanceBox_C", "SetIntroText");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetIntroText", FnName));
 
 	Params::WBP_ConnectedMaintanceBox_C_SetIntroText Parms{};
 
@@ -136,19 +148,17 @@ void UWBP_ConnectedMaintanceBox_C::SetIntroText(const class FText& In)
 }
 
 
-// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.SetLastConnection
+// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.SetFirstConnection
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_ConnectedMaintanceBox_C::SetLastConnection(const class FText& InText)
+void UWBP_ConnectedMaintanceBox_C::SetFirstConnection(const class FText& InText)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetFirstConnection", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ConnectedMaintanceBox_C", "SetLastConnection");
-
-	Params::WBP_ConnectedMaintanceBox_C_SetLastConnection Parms{};
+	Params::WBP_ConnectedMaintanceBox_C_SetFirstConnection Parms{};
 
 	Parms.InText = std::move(InText);
 
@@ -156,113 +166,75 @@ void UWBP_ConnectedMaintanceBox_C::SetLastConnection(const class FText& InText)
 }
 
 
-// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.SetModelNumber
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_ConnectedMaintanceBox_C::SetModelNumber(const class FText& InText)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ConnectedMaintanceBox_C", "SetModelNumber");
-
-	Params::WBP_ConnectedMaintanceBox_C_SetModelNumber Parms{};
-
-	Parms.InText = std::move(InText);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.SetSymbol
+// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.SetErrorText
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      In                                                     (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_ConnectedMaintanceBox_C::SetSymbol(int32 Index_0)
+void UWBP_ConnectedMaintanceBox_C::SetErrorText(const class FText& In)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetErrorText", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ConnectedMaintanceBox_C", "SetSymbol");
+	Params::WBP_ConnectedMaintanceBox_C_SetErrorText Parms{};
 
-	Params::WBP_ConnectedMaintanceBox_C_SetSymbol Parms{};
-
-	Parms.Index_0 = Index_0;
+	Parms.In = std::move(In);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.showScreenCompleted
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.SetDisabledText
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      In                                                     (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_ConnectedMaintanceBox_C::showScreenCompleted()
+void UWBP_ConnectedMaintanceBox_C::SetDisabledText(const class FText& In)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetDisabledText", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ConnectedMaintanceBox_C", "showScreenCompleted");
+	Params::WBP_ConnectedMaintanceBox_C_SetDisabledText Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.In = std::move(In);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.showScreenDisabled
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.SetCompetedText
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      In                                                     (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_ConnectedMaintanceBox_C::showScreenDisabled()
+void UWBP_ConnectedMaintanceBox_C::SetCompetedText(const class FText& In)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetCompetedText", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ConnectedMaintanceBox_C", "showScreenDisabled");
+	Params::WBP_ConnectedMaintanceBox_C_SetCompetedText Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.In = std::move(In);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.showScreenError
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.ExecuteUbergraph_WBP_ConnectedMaintanceBox
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_ConnectedMaintanceBox_C::showScreenError()
+void UWBP_ConnectedMaintanceBox_C::ExecuteUbergraph_WBP_ConnectedMaintanceBox(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_ConnectedMaintanceBox_C", "ExecuteUbergraph_WBP_ConnectedMaintanceBox", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ConnectedMaintanceBox_C", "showScreenError");
+	Params::WBP_ConnectedMaintanceBox_C_ExecuteUbergraph_WBP_ConnectedMaintanceBox Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Parms.EntryPoint = EntryPoint;
 
-
-// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.showScreenIntro
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_ConnectedMaintanceBox_C::showScreenIntro()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ConnectedMaintanceBox_C", "showScreenIntro");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ConnectedMaintanceBox.WBP_ConnectedMaintanceBox_C.showScreenMain
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_ConnectedMaintanceBox_C::showScreenMain()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ConnectedMaintanceBox_C", "showScreenMain");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

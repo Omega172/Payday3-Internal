@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_BackItemFigurineBag_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BackItemFigurineBag_C;
 
 SDK_NAMESPACE_END

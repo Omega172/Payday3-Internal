@@ -28,8 +28,8 @@ public:
 	class USpotLightComponent*                    SpotLight;                                         // 0x0458(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_LGT_FloodLight_01_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 	void ExecuteUbergraph_BP_LGT_FloodLight_01(int32 EntryPoint);
+	void BndEvt__BP_LGT_FloodLight_01_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<BP_LGT_FloodLight_01_0::ABP_LGT_FloodLight_01_C>();
 	}
 };
+DUMPER7_ASSERTS_BP_LGT_FloodLight_01_0__ABP_LGT_FloodLight_01_C;
 
 SDK_NAMESPACE_END

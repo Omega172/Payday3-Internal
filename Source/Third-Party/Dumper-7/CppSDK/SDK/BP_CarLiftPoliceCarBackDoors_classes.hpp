@@ -36,11 +36,11 @@ public:
 	class UTimelineComponent*                     Open;                                              // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_CarLiftPoliceCarBackDoors_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent_0, bool bInNewState);
-	void BP_OnStateChanged(bool bNewState, bool bDoCosmentics);
-	void ExecuteUbergraph_BP_CarLiftPoliceCarBackDoors(int32 EntryPoint);
-	void Open__FinishedFunc();
 	void Open__UpdateFunc();
+	void Open__FinishedFunc();
+	void ExecuteUbergraph_BP_CarLiftPoliceCarBackDoors(int32 EntryPoint);
+	void BP_OnStateChanged(bool bNewState_BP_OnStateChanged, bool bDoCosmentics_BP_OnStateChanged);
+	void BndEvt__BP_CarLiftPoliceCarBackDoors_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
 
 public:
 	static class UClass* StaticClass()
@@ -56,5 +56,6 @@ public:
 		return GetDefaultObjImpl<ABP_CarLiftPoliceCarBackDoors_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CarLiftPoliceCarBackDoors_C;
 
 SDK_NAMESPACE_END

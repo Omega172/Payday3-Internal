@@ -25,8 +25,8 @@ public:
 	class UBorder*                                safeZone_Border;                                   // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Construct();
 	void ExecuteUbergraph_WBP_BUS_Whiteboard_01(int32 EntryPoint);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()
@@ -42,5 +42,6 @@ public:
 		return GetDefaultObjImpl<UWBP_BUS_Whiteboard_01_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_BUS_Whiteboard_01_C;
 
 SDK_NAMESPACE_END

@@ -32,18 +32,18 @@ public:
 	TMulticastInlineDelegate<void(class UObject* FocusedButton)> ButtonFocusedEvent;                 // 0x03D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void UpdateEmoteButton();
-	void Tick(const struct FGeometry& MyGeometry_Tick, float InDeltaTime_Tick);
-	void RefreshVisuals();
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnInitialized();
-	void OnHover(bool bIsHovered);
-	void OnFocused(bool bIsFocused);
-	void ExecuteUbergraph_WBP_UI_Inventory_LoadoutEmotesButton(int32 EntryPoint);
-	void Create_Emote_Icons_Button();
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
 	void Construct();
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
+	void Create_Emote_Icons_Button();
+	void ExecuteUbergraph_WBP_UI_Inventory_LoadoutEmotesButton(int32 EntryPoint);
+	void OnFocused(bool bIsFocused);
+	void OnHover(bool bIsHovered);
+	void OnInitialized();
+	void PreConstruct(bool IsDesignTime);
+	void RefreshVisuals();
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void UpdateEmoteButton();
 
 public:
 	static class UClass* StaticClass()

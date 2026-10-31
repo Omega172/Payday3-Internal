@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UUTD_Sniper_RepositionOffensive_C>();
 	}
 };
+DUMPER7_ASSERTS_UUTD_Sniper_RepositionOffensive_C;
 
 SDK_NAMESPACE_END

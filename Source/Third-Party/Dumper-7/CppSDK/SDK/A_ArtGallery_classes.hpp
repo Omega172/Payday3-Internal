@@ -34,10 +34,10 @@ public:
 	class AAkSplineEmitter_C*                     AkSplineEmitter_2_ExecuteUbergraph_A_ArtGallery_RefProperty; // 0x0410(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ActionPhaseStarted();
-	void ExecuteUbergraph_A_ArtGallery(int32 EntryPoint);
-	void HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState);
 	void ReceiveBeginPlay();
+	void HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged);
+	void ExecuteUbergraph_A_ArtGallery(int32 EntryPoint);
+	void ActionPhaseStarted();
 
 public:
 	static class UClass* StaticClass()
@@ -53,5 +53,6 @@ public:
 		return GetDefaultObjImpl<AA_ArtGallery_C>();
 	}
 };
+DUMPER7_ASSERTS_AA_ArtGallery_C;
 
 SDK_NAMESPACE_END

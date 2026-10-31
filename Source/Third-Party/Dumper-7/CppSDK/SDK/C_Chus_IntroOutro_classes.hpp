@@ -25,9 +25,9 @@ public:
 	class ALevelSequenceActor*                    Chus_Master_8_ExecuteUbergraph_C_Chus_IntroOutro_RefProperty; // 0x03D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_C_Chus_IntroOutro(int32 EntryPoint);
-	void IntroSequenceChanged(bool bIsStarted);
 	void OnIntroFinished();
+	void IntroSequenceChanged(bool bIsStarted_IntroSequenceChanged);
+	void ExecuteUbergraph_C_Chus_IntroOutro(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -43,5 +43,6 @@ public:
 		return GetDefaultObjImpl<AC_Chus_IntroOutro_C>();
 	}
 };
+DUMPER7_ASSERTS_AC_Chus_IntroOutro_C;
 
 SDK_NAMESPACE_END

@@ -23,6 +23,7 @@ struct BPI_PrototypeDisplayWidget_C_PrototypeDisplayDrawTarget final
 public:
 	struct FVector                                CalculatedHitLocation;                             // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BPI_PrototypeDisplayWidget_C_PrototypeDisplayDrawTarget;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -19,31 +19,40 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_TestThermite.BP_TestThermite_C.BP_OnInterferenceChanged
-// 0x0001 (0x0001 - 0x0000)
-struct BP_TestThermite_C_BP_OnInterferenceChanged final
+// Function BP_TestThermite.BP_TestThermite_C.SetCageVisiblityAndCollision
+// 0x0068 (0x0068 - 0x0000)
+struct BP_TestThermite_C_SetCageVisiblityAndCollision final
 {
 public:
-	bool                                          bInterfered;                                       // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          InVisiblity;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECollisionEnabled                             InCollision;                                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UNavArea>                   Temp_class_Variable;                               // 0x0008(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UNavArea>                   Temp_class_Variable_1;                             // 0x0020(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	TArray<class ASBZPlayerCharacter*>            CallFunc_GetAllSBZPlayerCharacters_ReturnValue;    // 0x0028(0x0010)(ReferenceParm)
+	class ASBZPlayerCharacter*                    CallFunc_Array_Get_Item;                           // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_46[0x2];                                       // 0x0046(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable; // 0x0048(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TSubclassOf<class UNavArea>                   K2Node_Select_Default;                             // 0x0060(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_TestThermite_C_SetCageVisiblityAndCollision;
 
-// Function BP_TestThermite.BP_TestThermite_C.BP_OnStateChanged
-// 0x0003 (0x0003 - 0x0000)
-struct BP_TestThermite_C_BP_OnStateChanged final
-{
-public:
-	ESBZThermiteBurnState                         OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZThermiteBurnState                         NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_TestThermite.BP_TestThermite_C.BP_OnThermiteBagOverlapped
+// Function BP_TestThermite.BP_TestThermite_C.OnInterferenceChanged
 // 0x0001 (0x0001 - 0x0000)
-struct BP_TestThermite_C_BP_OnThermiteBagOverlapped final
+struct BP_TestThermite_C_OnInterferenceChanged final
 {
 public:
-	bool                                          bIsInitialBag;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsInterfered;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_TestThermite_C_OnInterferenceChanged;
 
 // Function BP_TestThermite.BP_TestThermite_C.ExecuteUbergraph_BP_TestThermite
 // 0x0300 (0x0300 - 0x0000)
@@ -111,48 +120,46 @@ public:
 	uint8                                         Pad_2F5[0x3];                                      // 0x02F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_PostEvent_ReturnValue_6;                  // 0x02F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_TestThermite_C_ExecuteUbergraph_BP_TestThermite;
 
-// Function BP_TestThermite.BP_TestThermite_C.OnInterferenceChanged
+// Function BP_TestThermite.BP_TestThermite_C.BP_OnThermiteBagOverlapped
 // 0x0001 (0x0001 - 0x0000)
-struct BP_TestThermite_C_OnInterferenceChanged final
+struct BP_TestThermite_C_BP_OnThermiteBagOverlapped final
 {
 public:
-	bool                                          bIsInterfered_0;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsInitialBag_BP_OnThermiteBagOverlapped;          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_TestThermite_C_BP_OnThermiteBagOverlapped;
 
-// Function BP_TestThermite.BP_TestThermite_C.SetCageVisiblityAndCollision
-// 0x0068 (0x0068 - 0x0000)
-struct BP_TestThermite_C_SetCageVisiblityAndCollision final
+// Function BP_TestThermite.BP_TestThermite_C.BP_OnStateChanged
+// 0x0003 (0x0003 - 0x0000)
+struct BP_TestThermite_C_BP_OnStateChanged final
 {
 public:
-	bool                                          InVisiblity;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECollisionEnabled                             InCollision;                                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UNavArea>                   Temp_class_Variable;                               // 0x0008(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UNavArea>                   Temp_class_Variable_1;                             // 0x0020(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	TArray<class ASBZPlayerCharacter*>            CallFunc_GetAllSBZPlayerCharacters_ReturnValue;    // 0x0028(0x0010)(ReferenceParm)
-	class ASBZPlayerCharacter*                    CallFunc_Array_Get_Item;                           // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_46[0x2];                                       // 0x0046(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable; // 0x0048(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TSubclassOf<class UNavArea>                   K2Node_Select_Default;                             // 0x0060(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	ESBZThermiteBurnState                         OldState_BP_OnStateChanged;                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZThermiteBurnState                         NewState_BP_OnStateChanged;                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_BP_OnStateChanged;                    // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_TestThermite_C_BP_OnStateChanged;
+
+// Function BP_TestThermite.BP_TestThermite_C.BP_OnInterferenceChanged
+// 0x0001 (0x0001 - 0x0000)
+struct BP_TestThermite_C_BP_OnInterferenceChanged final
+{
+public:
+	bool                                          bInterfered_BP_OnInterferenceChanged;              // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_TestThermite_C_BP_OnInterferenceChanged;
 
 // Function BP_TestThermite.BP_TestThermite_C.GetMarkerLocation
 // 0x0030 (0x0030 - 0x0000)
 struct BP_TestThermite_C_GetMarkerLocation final
 {
 public:
-	struct FVector                                ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                ReturnValue_GetMarkerLocation;                     // 0x0000(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0018(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_TestThermite_C_GetMarkerLocation;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

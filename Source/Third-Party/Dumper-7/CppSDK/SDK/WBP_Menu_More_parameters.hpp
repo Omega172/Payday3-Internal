@@ -17,110 +17,238 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_Menu_More.WBP_Menu_More_C.UpdateFocusedButton
+// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_Button_HeistSelection_1_K2Node_ComponentBoundEvent_17_OnMenuButtonStateChanged__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_Menu_More_C_UpdateFocusedButton final
+struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_Button_HeistSelection_1_K2Node_ComponentBoundEvent_17_OnMenuButtonStateChanged__DelegateSignature final
 {
 public:
-	class USBZMenuButton*                         InButton;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          Enabled;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Menu_More_C_UpdateFocusedButton;
+DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_Button_HeistSelection_1_K2Node_ComponentBoundEvent_17_OnMenuButtonStateChanged__DelegateSignature;
 
-// Function WBP_Menu_More.WBP_Menu_More_C.PrePush_F6C4FB394FB5FB0EC9832F88D3A1503C
+// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_Button_HeistSelection_1_K2Node_ComponentBoundEvent_18_OnMenuButtonSelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_Menu_More_C_PrePush_F6C4FB394FB5FB0EC9832F88D3A1503C final
+struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_Button_HeistSelection_1_K2Node_ComponentBoundEvent_18_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Menu_More_C_PrePush_F6C4FB394FB5FB0EC9832F88D3A1503C;
+DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_Button_HeistSelection_1_K2Node_ComponentBoundEvent_18_OnMenuButtonSelected__DelegateSignature;
 
-// Function WBP_Menu_More.WBP_Menu_More_C.PrePush_982A004F4BB192F51C3480A6CD7EC4B9
+// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_Debug_Campaign_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_Menu_More_C_PrePush_982A004F4BB192F51C3480A6CD7EC4B9 final
+struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_Debug_Campaign_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Menu_More_C_PrePush_982A004F4BB192F51C3480A6CD7EC4B9;
+DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_Debug_Campaign_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature;
 
-// Function WBP_Menu_More.WBP_Menu_More_C.PostPush_F6C4FB394FB5FB0EC9832F88D3A1503C
+// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_Debug_ChangeMatchmakingGroupButton_K2Node_ComponentBoundEvent_19_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_Debug_ChangeMatchmakingGroupButton_K2Node_ComponentBoundEvent_19_OnMenuButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_Debug_ChangeMatchmakingGroupButton_K2Node_ComponentBoundEvent_19_OnMenuButtonStateChanged__DelegateSignature;
+
+// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_Debug_ChangeMatchmakingGroupButton_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_Menu_More_C_PostPush_F6C4FB394FB5FB0EC9832F88D3A1503C final
+struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_Debug_ChangeMatchmakingGroupButton_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Menu_More_C_PostPush_F6C4FB394FB5FB0EC9832F88D3A1503C;
+DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_Debug_ChangeMatchmakingGroupButton_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature;
 
-// Function WBP_Menu_More.WBP_Menu_More_C.PostPush_982A004F4BB192F51C3480A6CD7EC4B9
+// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_Debug_NewMods_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_Menu_More_C_PostPush_982A004F4BB192F51C3480A6CD7EC4B9 final
+struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_Debug_NewMods_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Menu_More_C_PostPush_982A004F4BB192F51C3480A6CD7EC4B9;
+DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_Debug_NewMods_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature;
 
-// Function WBP_Menu_More.WBP_Menu_More_C.OnSuccess_D5F41EB84ACB2B95A6FF13B1BF87DAA8
+// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_Debug_OldMods_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_Menu_More_C_OnSuccess_D5F41EB84ACB2B95A6FF13B1BF87DAA8 final
+struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_Debug_OldMods_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	class APlayerController*                      PlayerController;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Menu_More_C_OnSuccess_D5F41EB84ACB2B95A6FF13B1BF87DAA8;
+DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_Debug_OldMods_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature;
 
-// Function WBP_Menu_More.WBP_Menu_More_C.OnQuitConfirmed
-// 0x000C (0x000C - 0x0000)
-struct WBP_Menu_More_C_OnQuitConfirmed final
+// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_Debug_SoloModeOldHeistSelect_K2Node_ComponentBoundEvent_22_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_Debug_SoloModeOldHeistSelect_K2Node_ComponentBoundEvent_22_OnMenuButtonStateChanged__DelegateSignature final
 {
 public:
-	class FName                                   ClosingActionName;                                 // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Menu_More_C_OnQuitConfirmed;
+DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_Debug_SoloModeOldHeistSelect_K2Node_ComponentBoundEvent_22_OnMenuButtonStateChanged__DelegateSignature;
 
-// Function WBP_Menu_More.WBP_Menu_More_C.OnHeadlessLinkPopupInput
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_Menu_More_C_OnHeadlessLinkPopupInput final
-{
-public:
-	class FName                                   ClosingActionName;                                 // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZGameStateMachine*                   CallFunc_GetGameStateMachine_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Menu_More_C_OnHeadlessLinkPopupInput;
-
-// Function WBP_Menu_More.WBP_Menu_More_C.OnGainedStackFocused
-// 0x000C (0x000C - 0x0000)
-struct WBP_Menu_More_C_OnGainedStackFocused final
-{
-public:
-	class FName                                   PreviousValue_OnGainedStackFocused;                // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Menu_More_C_OnGainedStackFocused;
-
-// Function WBP_Menu_More.WBP_Menu_More_C.OnFailure_D5F41EB84ACB2B95A6FF13B1BF87DAA8
+// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_Debug_SoloModeOldHeistSelect_K2Node_ComponentBoundEvent_23_OnMenuButtonSelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_Menu_More_C_OnFailure_D5F41EB84ACB2B95A6FF13B1BF87DAA8 final
+struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_Debug_SoloModeOldHeistSelect_K2Node_ComponentBoundEvent_23_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	class APlayerController*                      PlayerController;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Menu_More_C_OnFailure_D5F41EB84ACB2B95A6FF13B1BF87DAA8;
+DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_Debug_SoloModeOldHeistSelect_K2Node_ComponentBoundEvent_23_OnMenuButtonSelected__DelegateSignature;
 
-// Function WBP_Menu_More.WBP_Menu_More_C.OnControlReferencePressed
-// 0x000C (0x000C - 0x0000)
-struct WBP_Menu_More_C_OnControlReferencePressed final
+// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_EndUserButton_K2Node_ComponentBoundEvent_13_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_EndUserButton_K2Node_ComponentBoundEvent_13_OnMenuButtonStateChanged__DelegateSignature final
 {
 public:
-	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Menu_More_C_OnControlReferencePressed;
+DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_EndUserButton_K2Node_ComponentBoundEvent_13_OnMenuButtonStateChanged__DelegateSignature;
+
+// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_EndUserButton_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_EndUserButton_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_EndUserButton_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_LinkedNebulaButton_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_LinkedNebulaButton_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_LinkedNebulaButton_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature;
+
+// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_LinkedNebulaButton_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_LinkedNebulaButton_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_LinkedNebulaButton_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_LinkNebulaButton_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_LinkNebulaButton_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_LinkNebulaButton_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_LinkNebulaButton_K2Node_ComponentBoundEvent_20_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_LinkNebulaButton_K2Node_ComponentBoundEvent_20_OnMenuButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_LinkNebulaButton_K2Node_ComponentBoundEvent_20_OnMenuButtonStateChanged__DelegateSignature;
+
+// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_ProfileButton_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_ProfileButton_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_ProfileButton_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature;
+
+// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_ProfileButton_K2Node_ComponentBoundEvent_16_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_ProfileButton_K2Node_ComponentBoundEvent_16_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_ProfileButton_K2Node_ComponentBoundEvent_16_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_QuitGameButton_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_QuitGameButton_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_QuitGameButton_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature;
+
+// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_QuitGameButton_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_QuitGameButton_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_QuitGameButton_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_SettingsButton_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_SettingsButton_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_SettingsButton_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature;
+
+// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_SettingsButton_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_SettingsButton_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_SettingsButton_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_WBP_UI_TextButton_1_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_WBP_UI_TextButton_1_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_WBP_UI_TextButton_1_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature;
+
+// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_WBP_UI_TextButton_1_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_WBP_UI_TextButton_1_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_WBP_UI_TextButton_1_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_Menu_More.WBP_Menu_More_C.CreateHeadlessLinkPopup
+// 0x0118 (0x0118 - 0x0000)
+struct WBP_Menu_More_C_CreateHeadlessLinkPopup final
+{
+public:
+	TDelegate<void(class FName ClosingActionName)> K2Node_CreateDelegate_OutputDelegate;             // 0x0000(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x0018(0x0038)()
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_1;     // 0x0050(0x0038)()
+	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x0090(0x0010)(ReferenceParm)
+	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x00A0(0x0028)()
+	struct FSBZUIPopupData                        K2Node_MakeStruct_SBZUIPopupData;                  // 0x00C8(0x0050)(ContainsInstancedReference)
+};
+DUMPER7_ASSERTS_WBP_Menu_More_C_CreateHeadlessLinkPopup;
 
 // Function WBP_Menu_More.WBP_Menu_More_C.ExecuteUbergraph_WBP_Menu_More
 // 0x0768 (0x0768 - 0x0000)
@@ -338,238 +466,110 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Menu_More_C_ExecuteUbergraph_WBP_Menu_More;
 
-// Function WBP_Menu_More.WBP_Menu_More_C.CreateHeadlessLinkPopup
-// 0x0118 (0x0118 - 0x0000)
-struct WBP_Menu_More_C_CreateHeadlessLinkPopup final
+// Function WBP_Menu_More.WBP_Menu_More_C.OnControlReferencePressed
+// 0x000C (0x000C - 0x0000)
+struct WBP_Menu_More_C_OnControlReferencePressed final
 {
 public:
-	TDelegate<void(class FName ClosingActionName)> K2Node_CreateDelegate_OutputDelegate;             // 0x0000(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x0018(0x0038)()
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_1;     // 0x0050(0x0038)()
-	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x0090(0x0010)(ReferenceParm)
-	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x00A0(0x0028)()
-	struct FSBZUIPopupData                        K2Node_MakeStruct_SBZUIPopupData;                  // 0x00C8(0x0050)(ContainsInstancedReference)
+	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Menu_More_C_CreateHeadlessLinkPopup;
+DUMPER7_ASSERTS_WBP_Menu_More_C_OnControlReferencePressed;
 
-// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_WBP_UI_TextButton_1_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
+// Function WBP_Menu_More.WBP_Menu_More_C.OnFailure_D5F41EB84ACB2B95A6FF13B1BF87DAA8
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_WBP_UI_TextButton_1_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature final
+struct WBP_Menu_More_C_OnFailure_D5F41EB84ACB2B95A6FF13B1BF87DAA8 final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      PlayerController;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_WBP_UI_TextButton_1_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_Menu_More_C_OnFailure_D5F41EB84ACB2B95A6FF13B1BF87DAA8;
 
-// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_WBP_UI_TextButton_1_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature
+// Function WBP_Menu_More.WBP_Menu_More_C.OnGainedStackFocused
+// 0x000C (0x000C - 0x0000)
+struct WBP_Menu_More_C_OnGainedStackFocused final
+{
+public:
+	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Menu_More_C_OnGainedStackFocused;
+
+// Function WBP_Menu_More.WBP_Menu_More_C.OnHeadlessLinkPopupInput
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_Menu_More_C_OnHeadlessLinkPopupInput final
+{
+public:
+	class FName                                   ClosingActionName;                                 // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZGameStateMachine*                   CallFunc_GetGameStateMachine_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Menu_More_C_OnHeadlessLinkPopupInput;
+
+// Function WBP_Menu_More.WBP_Menu_More_C.OnQuitConfirmed
+// 0x000C (0x000C - 0x0000)
+struct WBP_Menu_More_C_OnQuitConfirmed final
+{
+public:
+	class FName                                   ClosingActionName;                                 // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Menu_More_C_OnQuitConfirmed;
+
+// Function WBP_Menu_More.WBP_Menu_More_C.OnSuccess_D5F41EB84ACB2B95A6FF13B1BF87DAA8
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Menu_More_C_OnSuccess_D5F41EB84ACB2B95A6FF13B1BF87DAA8 final
+{
+public:
+	class APlayerController*                      PlayerController;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Menu_More_C_OnSuccess_D5F41EB84ACB2B95A6FF13B1BF87DAA8;
+
+// Function WBP_Menu_More.WBP_Menu_More_C.PostPush_982A004F4BB192F51C3480A6CD7EC4B9
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Menu_More_C_PostPush_982A004F4BB192F51C3480A6CD7EC4B9 final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Menu_More_C_PostPush_982A004F4BB192F51C3480A6CD7EC4B9;
+
+// Function WBP_Menu_More.WBP_Menu_More_C.PostPush_F6C4FB394FB5FB0EC9832F88D3A1503C
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Menu_More_C_PostPush_F6C4FB394FB5FB0EC9832F88D3A1503C final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Menu_More_C_PostPush_F6C4FB394FB5FB0EC9832F88D3A1503C;
+
+// Function WBP_Menu_More.WBP_Menu_More_C.PrePush_982A004F4BB192F51C3480A6CD7EC4B9
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Menu_More_C_PrePush_982A004F4BB192F51C3480A6CD7EC4B9 final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Menu_More_C_PrePush_982A004F4BB192F51C3480A6CD7EC4B9;
+
+// Function WBP_Menu_More.WBP_Menu_More_C.PrePush_F6C4FB394FB5FB0EC9832F88D3A1503C
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_Menu_More_C_PrePush_F6C4FB394FB5FB0EC9832F88D3A1503C final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Menu_More_C_PrePush_F6C4FB394FB5FB0EC9832F88D3A1503C;
+
+// Function WBP_Menu_More.WBP_Menu_More_C.UpdateFocusedButton
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_WBP_UI_TextButton_1_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature final
+struct WBP_Menu_More_C_UpdateFocusedButton final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         InButton;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          Enabled;                                           // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_WBP_UI_TextButton_1_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_SettingsButton_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_SettingsButton_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_SettingsButton_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_SettingsButton_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_SettingsButton_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_SettingsButton_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_QuitGameButton_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_QuitGameButton_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_QuitGameButton_K2Node_ComponentBoundEvent_6_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_QuitGameButton_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_QuitGameButton_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_QuitGameButton_K2Node_ComponentBoundEvent_5_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_ProfileButton_K2Node_ComponentBoundEvent_16_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_ProfileButton_K2Node_ComponentBoundEvent_16_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_ProfileButton_K2Node_ComponentBoundEvent_16_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_ProfileButton_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_ProfileButton_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_ProfileButton_K2Node_ComponentBoundEvent_15_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_LinkNebulaButton_K2Node_ComponentBoundEvent_20_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_LinkNebulaButton_K2Node_ComponentBoundEvent_20_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_LinkNebulaButton_K2Node_ComponentBoundEvent_20_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_LinkNebulaButton_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_LinkNebulaButton_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_LinkNebulaButton_K2Node_ComponentBoundEvent_19_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_LinkedNebulaButton_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_LinkedNebulaButton_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_LinkedNebulaButton_K2Node_ComponentBoundEvent_11_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_LinkedNebulaButton_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_LinkedNebulaButton_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_LinkedNebulaButton_K2Node_ComponentBoundEvent_10_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_EndUserButton_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_EndUserButton_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_EndUserButton_K2Node_ComponentBoundEvent_14_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_EndUserButton_K2Node_ComponentBoundEvent_13_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_EndUserButton_K2Node_ComponentBoundEvent_13_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_EndUserButton_K2Node_ComponentBoundEvent_13_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_Debug_SoloModeOldHeistSelect_K2Node_ComponentBoundEvent_23_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_Debug_SoloModeOldHeistSelect_K2Node_ComponentBoundEvent_23_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_Debug_SoloModeOldHeistSelect_K2Node_ComponentBoundEvent_23_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_Debug_SoloModeOldHeistSelect_K2Node_ComponentBoundEvent_22_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_Debug_SoloModeOldHeistSelect_K2Node_ComponentBoundEvent_22_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_Debug_SoloModeOldHeistSelect_K2Node_ComponentBoundEvent_22_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_Debug_OldMods_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_Debug_OldMods_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_Debug_OldMods_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_Debug_NewMods_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_Debug_NewMods_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_Debug_NewMods_K2Node_ComponentBoundEvent_5_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_Debug_ChangeMatchmakingGroupButton_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_Debug_ChangeMatchmakingGroupButton_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_Debug_ChangeMatchmakingGroupButton_K2Node_ComponentBoundEvent_20_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_Debug_ChangeMatchmakingGroupButton_K2Node_ComponentBoundEvent_19_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_Debug_ChangeMatchmakingGroupButton_K2Node_ComponentBoundEvent_19_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_Debug_ChangeMatchmakingGroupButton_K2Node_ComponentBoundEvent_19_OnMenuButtonStateChanged__DelegateSignature;
-
-// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_Debug_Campaign_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_Debug_Campaign_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_Debug_Campaign_K2Node_ComponentBoundEvent_4_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_Button_HeistSelection_1_K2Node_ComponentBoundEvent_18_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_Button_HeistSelection_1_K2Node_ComponentBoundEvent_18_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_Button_HeistSelection_1_K2Node_ComponentBoundEvent_18_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_Menu_More.WBP_Menu_More_C.BndEvt__WBP_Menu_More_Button_HeistSelection_1_K2Node_ComponentBoundEvent_17_OnMenuButtonStateChanged__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Menu_More_C_BndEvt__WBP_Menu_More_Button_HeistSelection_1_K2Node_ComponentBoundEvent_17_OnMenuButtonStateChanged__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Menu_More_C_BndEvt__WBP_Menu_More_Button_HeistSelection_1_K2Node_ComponentBoundEvent_17_OnMenuButtonStateChanged__DelegateSignature;
+DUMPER7_ASSERTS_WBP_Menu_More_C_UpdateFocusedButton;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

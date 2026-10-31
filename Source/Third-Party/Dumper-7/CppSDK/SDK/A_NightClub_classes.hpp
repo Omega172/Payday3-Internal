@@ -31,10 +31,10 @@ public:
 	class ASBZAmbientSound*                       SBZAmbientSound_Megaphone_ExecuteUbergraph_A_NightClub_RefProperty; // 0x03F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ActionPhaseStarted();
-	void ExecuteUbergraph_A_NightClub(int32 EntryPoint);
-	void HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState);
 	void ReceiveBeginPlay();
+	void HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged);
+	void ExecuteUbergraph_A_NightClub(int32 EntryPoint);
+	void ActionPhaseStarted();
 
 public:
 	static class UClass* StaticClass()
@@ -50,5 +50,6 @@ public:
 		return GetDefaultObjImpl<AA_NightClub_C>();
 	}
 };
+DUMPER7_ASSERTS_AA_NightClub_C;
 
 SDK_NAMESPACE_END

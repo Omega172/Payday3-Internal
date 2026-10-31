@@ -16,17 +16,25 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL.BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL_C.BndEvt__BP_BreachableWindow_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature
-// 0x0030 (0x0030 - 0x0000)
-struct BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL_C_BndEvt__BP_BreachableWindow_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature final
+// Function BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL.BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL_C.OnStateChanged
+// 0x0003 (0x0003 - 0x0000)
+struct BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL_C_OnStateChanged final
 {
 public:
-	class UActorComponent*                        PoolComponent;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         Hits;                                              // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZPropDamageContext                  DamageContext;                                     // 0x0010(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsInitialStateChange;                             // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL_C_OnStateChanged;
+
+// Function BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL.BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL_C.GetTraversalDestructibleMeshComponent
+// 0x0008 (0x0008 - 0x0000)
+struct BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL_C_GetTraversalDestructibleMeshComponent final
+{
+public:
+	class UStaticMeshComponent*                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL_C_GetTraversalDestructibleMeshComponent;
 
 // Function BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL.BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL_C.ExecuteUbergraph_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL
 // 0x0048 (0x0048 - 0x0000)
@@ -50,24 +58,20 @@ public:
 	struct FSBZPropDamageContext                  K2Node_ComponentBoundEvent_DamageContext;          // 0x0020(0x0020)(ConstParm, NoDestructor)
 	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL_C_ExecuteUbergraph_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL;
 
-// Function BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL.BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL_C.GetTraversalDestructibleMeshComponent
-// 0x0008 (0x0008 - 0x0000)
-struct BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL_C_GetTraversalDestructibleMeshComponent final
+// Function BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL.BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL_C.BndEvt__BP_BreachableWindow_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature
+// 0x0030 (0x0030 - 0x0000)
+struct BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL_C_BndEvt__BP_BreachableWindow_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature final
 {
 public:
-	class UStaticMeshComponent*                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UActorComponent*                        PoolComponent;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         Hits;                                              // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZPropDamageContext                  DamageContext;                                     // 0x0010(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-
-// Function BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL.BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL_C.OnStateChanged
-// 0x0003 (0x0003 - 0x0000)
-struct BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL_C_OnStateChanged final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsInitialStateChange;                             // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL_C_BndEvt__BP_BreachableWindow_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature;
 
 // Function BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL.BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL_C.GetPropDamageComponent
 // 0x0008 (0x0008 - 0x0000)
@@ -76,6 +80,7 @@ struct BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL_C_GetPropDamageComponent final
 public:
 	class USBZPropDamageComponent*                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL_C_GetPropDamageComponent;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

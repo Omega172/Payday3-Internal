@@ -16,20 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function E_FirstPlayable_Int_F0_Prop_optimisation_test.E_FirstPlayable_Int_F0_Prop_optimisation_test_C.ActionPhaseStarted
-// (Event, Public, BlueprintEvent)
-
-void AE_FirstPlayable_Int_F0_Prop_optimisation_test_C::ActionPhaseStarted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_FirstPlayable_Int_F0_Prop_optimisation_test_C", "ActionPhaseStarted");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function E_FirstPlayable_Int_F0_Prop_optimisation_test.E_FirstPlayable_Int_F0_Prop_optimisation_test_C.ExecuteUbergraph_E_FirstPlayable_Int_F0_Prop_optimisation_test
 // (Final, UbergraphFunction)
 // Parameters:
@@ -37,16 +23,26 @@ void AE_FirstPlayable_Int_F0_Prop_optimisation_test_C::ActionPhaseStarted()
 
 void AE_FirstPlayable_Int_F0_Prop_optimisation_test_C::ExecuteUbergraph_E_FirstPlayable_Int_F0_Prop_optimisation_test(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_FirstPlayable_Int_F0_Prop_optimisation_test_C", "ExecuteUbergraph_E_FirstPlayable_Int_F0_Prop_optimisation_test");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "E_FirstPlayable_Int_F0_Prop_optimisation_test_C", "ExecuteUbergraph_E_FirstPlayable_Int_F0_Prop_optimisation_test", FuncInfo);
 
 	Params::E_FirstPlayable_Int_F0_Prop_optimisation_test_C_ExecuteUbergraph_E_FirstPlayable_Int_F0_Prop_optimisation_test Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function E_FirstPlayable_Int_F0_Prop_optimisation_test.E_FirstPlayable_Int_F0_Prop_optimisation_test_C.ActionPhaseStarted
+// (Event, Public, BlueprintEvent)
+
+void AE_FirstPlayable_Int_F0_Prop_optimisation_test_C::ActionPhaseStarted()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActionPhaseStarted", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

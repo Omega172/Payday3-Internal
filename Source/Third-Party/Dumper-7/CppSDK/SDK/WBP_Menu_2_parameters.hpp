@@ -14,6 +14,34 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_Menu_2.WBP_Menu_2_C.SetButtonFocus
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Menu_2_C_SetButtonFocus final
+{
+public:
+	bool                                          Condition;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Menu_2_C_SetButtonFocus;
+
+// Function WBP_Menu_2.WBP_Menu_2_C.SetButton&Text
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_Menu_2_C_SetButton_Text final
+{
+public:
+	class FString                                 ButtonInfoText;                                    // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 ButtonText;                                        // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Menu_2_C_SetButton_Text;
+
+// Function WBP_Menu_2.WBP_Menu_2_C.SetBackFocus
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Menu_2_C_SetBackFocus final
+{
+public:
+	bool                                          NewParam;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Menu_2_C_SetBackFocus;
+
 // Function WBP_Menu_2.WBP_Menu_2_C.ExecuteUbergraph_WBP_Menu_2
 // 0x0048 (0x0048 - 0x0000)
 struct WBP_Menu_2_C_ExecuteUbergraph_WBP_Menu_2 final
@@ -28,31 +56,7 @@ public:
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0028(0x0010)()
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0038(0x0010)()
 };
-
-// Function WBP_Menu_2.WBP_Menu_2_C.SetBackFocus
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Menu_2_C_SetBackFocus final
-{
-public:
-	bool                                          NewParam;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WBP_Menu_2.WBP_Menu_2_C.SetButton&Text
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_Menu_2_C_SetButton_Text final
-{
-public:
-	class FString                                 ButtonInfoText;                                    // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	class FString                                 ButtonText;                                        // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-
-// Function WBP_Menu_2.WBP_Menu_2_C.SetButtonFocus
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Menu_2_C_SetButtonFocus final
-{
-public:
-	bool                                          Condition;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_WBP_Menu_2_C_ExecuteUbergraph_WBP_Menu_2;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

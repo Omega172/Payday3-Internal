@@ -27,8 +27,8 @@ public:
 	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0338(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BPCactusPot_01_B_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 	void ExecuteUbergraph_BPCactusPot_01_B(int32 EntryPoint);
+	void BndEvt__BPCactusPot_01_B_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<ABPCactusPot_01_B_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPCactusPot_01_B_C;
 
 SDK_NAMESPACE_END

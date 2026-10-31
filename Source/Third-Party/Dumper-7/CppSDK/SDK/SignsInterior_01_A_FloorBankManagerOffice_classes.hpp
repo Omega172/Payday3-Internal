@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ASignsInterior_01_A_FloorBankManagerOffice_C>();
 	}
 };
+DUMPER7_ASSERTS_ASignsInterior_01_A_FloorBankManagerOffice_C;
 
 SDK_NAMESPACE_END

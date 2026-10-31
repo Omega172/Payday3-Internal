@@ -16,19 +16,61 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.SetTextVisible
+// Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.CheckShouldStillBeVisible
 // (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsTextVisible                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_QuestLine_ChapterGroup_C::SetTextVisible(bool IsTextVisible)
+void UWBP_QuestLine_ChapterGroup_C::CheckShouldStillBeVisible()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetTextVisible", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CheckShouldStillBeVisible", FnName));
 
-	Params::WBP_QuestLine_ChapterGroup_C_SetTextVisible Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.IsTextVisible = IsTextVisible;
+
+// Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_QuestLine_ChapterGroup_C::Construct()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.ExecuteUbergraph_WBP_QuestLine_ChapterGroup
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_QuestLine_ChapterGroup_C::ExecuteUbergraph_WBP_QuestLine_ChapterGroup(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_QuestLine_ChapterGroup_C", "ExecuteUbergraph_WBP_QuestLine_ChapterGroup", FuncInfo);
+
+	Params::WBP_QuestLine_ChapterGroup_C_ExecuteUbergraph_WBP_QuestLine_ChapterGroup Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_QuestLine_ChapterGroup_C::PreConstruct(bool IsDesignTime)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_QuestLine_ChapterGroup_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -52,63 +94,21 @@ void UWBP_QuestLine_ChapterGroup_C::SetChapterText(const class FText& InputText)
 }
 
 
-// Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_QuestLine_ChapterGroup_C::PreConstruct(bool IsDesignTime_PreConstruct)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_QuestLine_ChapterGroup_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.ExecuteUbergraph_WBP_QuestLine_ChapterGroup
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_QuestLine_ChapterGroup_C::ExecuteUbergraph_WBP_QuestLine_ChapterGroup(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_QuestLine_ChapterGroup_C", "ExecuteUbergraph_WBP_QuestLine_ChapterGroup", FuncInfo);
-
-	Params::WBP_QuestLine_ChapterGroup_C_ExecuteUbergraph_WBP_QuestLine_ChapterGroup Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_QuestLine_ChapterGroup_C::Construct()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.CheckShouldStillBeVisible
+// Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.SetTextVisible
 // (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsTextVisible                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_QuestLine_ChapterGroup_C::CheckShouldStillBeVisible()
+void UWBP_QuestLine_ChapterGroup_C::SetTextVisible(bool IsTextVisible)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CheckShouldStillBeVisible", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetTextVisible", FnName));
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_QuestLine_ChapterGroup_C_SetTextVisible Parms{};
+
+	Parms.IsTextVisible = IsTextVisible;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

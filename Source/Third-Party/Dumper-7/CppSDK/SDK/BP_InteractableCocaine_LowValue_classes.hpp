@@ -40,5 +40,6 @@ public:
 		return GetDefaultObjImpl<ABP_InteractableCocaine_LowValue_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_InteractableCocaine_LowValue_C;
 
 SDK_NAMESPACE_END

@@ -16,14 +16,14 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_VentGasVolumeDamage.BP_VentGasVolumeDamage_C
-// 0x0000 (0x03E0 - 0x03E0)
+// 0x0000 (0x03E8 - 0x03E8)
 class ABP_VentGasVolumeDamage_C final : public ASBZVolumeDamageProp
 {
 public:
-	struct FGameplayTagContainer GetVolumeDamageAddedTagContainer() const;
-	float GetVolumeDamagePerSecond() const;
-	float GetVolumeDamageTickSeconds() const;
 	TSubclassOf<class USBZDamageType> GetVolumeDamageType() const;
+	float GetVolumeDamageTickSeconds() const;
+	float GetVolumeDamagePerSecond() const;
+	struct FGameplayTagContainer GetVolumeDamageAddedTagContainer() const;
 
 public:
 	static class UClass* StaticClass()
@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ABP_VentGasVolumeDamage_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_VentGasVolumeDamage_C;
 
 SDK_NAMESPACE_END

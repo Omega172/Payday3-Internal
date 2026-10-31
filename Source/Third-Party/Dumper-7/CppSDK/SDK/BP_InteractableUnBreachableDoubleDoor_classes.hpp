@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "Starbreeze_structs.hpp"
 #include "BP_interactableDoor_Base_classes.hpp"
+#include "Starbreeze_structs.hpp"
 #include "AkAudio_structs.hpp"
 
 
@@ -53,12 +53,12 @@ public:
 	bool                                          useFrame;                                          // 0x07B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_InteractableUnBreachableDoubleDoor(int32 EntryPoint);
-	void onDoorBreached(ESBZGateState oldState, ESBZGateState newState);
-	void onOpenAnimStarted();
-	void onOpenAnimUpdateTick(double alpha);
-	void setBreachedMeshVisibility(bool breached);
 	void UserConstructionScript();
+	void setBreachedMeshVisibility(bool breached);
+	void onOpenAnimUpdateTick(double alpha);
+	void onOpenAnimStarted();
+	void onDoorBreached(ESBZGateState oldState, ESBZGateState newState);
+	void ExecuteUbergraph_BP_InteractableUnBreachableDoubleDoor(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -75,5 +75,6 @@ public:
 	}
 };
 #pragma pack(pop)
+DUMPER7_ASSERTS_ABP_InteractableUnBreachableDoubleDoor_C;
 
 SDK_NAMESPACE_END

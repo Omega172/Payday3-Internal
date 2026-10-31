@@ -29,13 +29,13 @@ public:
 	TArray<class UAnimSequence*>                  Animations;                                        // 0x0370(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void ExecuteUbergraph_BP_CosmeticSyringe(int32 EntryPoint);
-	void GetAnimation(double Duration, class UAnimSequence** Animation);
-	void OnPooled();
-	void OnUnpooled();
-	void PlayAnimation(class UAnimSequence* Animation);
+	void ReceiveTick(float DeltaSeconds_ReceiveTick);
 	void ReceiveBeginPlay();
-	void ReceiveTick(float DeltaSeconds);
+	void PlayAnimation(class UAnimSequence* Animation);
+	void OnUnpooled();
+	void OnPooled();
+	void GetAnimation(double Duration, class UAnimSequence** Animation);
+	void ExecuteUbergraph_BP_CosmeticSyringe(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -51,5 +51,6 @@ public:
 		return GetDefaultObjImpl<ABP_CosmeticSyringe_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CosmeticSyringe_C;
 
 SDK_NAMESPACE_END

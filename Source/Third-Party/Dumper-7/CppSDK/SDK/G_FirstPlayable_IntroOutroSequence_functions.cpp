@@ -16,6 +16,36 @@
 
 SDK_NAMESPACE_START
 
+// Function G_FirstPlayable_IntroOutroSequence.G_FirstPlayable_IntroOutroSequence_C.OnIntroFinished
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_FirstPlayable_IntroOutroSequence_C::OnIntroFinished()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnIntroFinished", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_FirstPlayable_IntroOutroSequence.G_FirstPlayable_IntroOutroSequence_C.IntroSequenceChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    bIsStarted_IntroSequenceChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_FirstPlayable_IntroOutroSequence_C::IntroSequenceChanged(bool bIsStarted_IntroSequenceChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IntroSequenceChanged", FnName));
+
+	Params::G_FirstPlayable_IntroOutroSequence_C_IntroSequenceChanged Parms{};
+
+	Parms.bIsStarted_IntroSequenceChanged = bIsStarted_IntroSequenceChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function G_FirstPlayable_IntroOutroSequence.G_FirstPlayable_IntroOutroSequence_C.ExecuteUbergraph_G_FirstPlayable_IntroOutroSequence
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,50 +53,14 @@ SDK_NAMESPACE_START
 
 void AG_FirstPlayable_IntroOutroSequence_C::ExecuteUbergraph_G_FirstPlayable_IntroOutroSequence(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_FirstPlayable_IntroOutroSequence_C", "ExecuteUbergraph_G_FirstPlayable_IntroOutroSequence");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_FirstPlayable_IntroOutroSequence_C", "ExecuteUbergraph_G_FirstPlayable_IntroOutroSequence", FuncInfo);
 
 	Params::G_FirstPlayable_IntroOutroSequence_C_ExecuteUbergraph_G_FirstPlayable_IntroOutroSequence Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_FirstPlayable_IntroOutroSequence.G_FirstPlayable_IntroOutroSequence_C.IntroSequenceChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    bIsStarted                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_FirstPlayable_IntroOutroSequence_C::IntroSequenceChanged(bool bIsStarted)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_FirstPlayable_IntroOutroSequence_C", "IntroSequenceChanged");
-
-	Params::G_FirstPlayable_IntroOutroSequence_C_IntroSequenceChanged Parms{};
-
-	Parms.bIsStarted = bIsStarted;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_FirstPlayable_IntroOutroSequence.G_FirstPlayable_IntroOutroSequence_C.OnIntroFinished
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_FirstPlayable_IntroOutroSequence_C::OnIntroFinished()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_FirstPlayable_IntroOutroSequence_C", "OnIntroFinished");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

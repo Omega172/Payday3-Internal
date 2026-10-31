@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AE_Sky_Vista_01_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_Sky_Vista_01_C;
 
 SDK_NAMESPACE_END

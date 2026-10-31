@@ -16,6 +16,17 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_TrainCar_RemoteDoor.BP_TrainCar_RemoteDoor_C.OnStateChanged
+// 0x0003 (0x0003 - 0x0000)
+struct BP_TrainCar_RemoteDoor_C_OnStateChanged final
+{
+public:
+	ESBZGateState                                 OldState_OnStateChanged;                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 NewState_OnStateChanged;                           // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsInitialStateChange_OnStateChanged;              // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_TrainCar_RemoteDoor_C_OnStateChanged;
+
 // Function BP_TrainCar_RemoteDoor.BP_TrainCar_RemoteDoor_C.ExecuteUbergraph_BP_TrainCar_RemoteDoor
 // 0x0040 (0x0040 - 0x0000)
 struct BP_TrainCar_RemoteDoor_C_ExecuteUbergraph_BP_TrainCar_RemoteDoor final
@@ -36,16 +47,7 @@ public:
 	class ASBZPlayerCharacter*                    CallFunc_Array_Get_Item;                           // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_TrainCar_RemoteDoor.BP_TrainCar_RemoteDoor_C.OnStateChanged
-// 0x0003 (0x0003 - 0x0000)
-struct BP_TrainCar_RemoteDoor_C_OnStateChanged final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsInitialStateChange;                             // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_TrainCar_RemoteDoor_C_ExecuteUbergraph_BP_TrainCar_RemoteDoor;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

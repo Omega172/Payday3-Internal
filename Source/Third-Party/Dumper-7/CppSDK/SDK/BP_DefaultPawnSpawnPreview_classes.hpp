@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_DefaultPawnSpawnPreview.BP_DefaultPawnSpawnPreview_C
-// 0x0000 (0x18B0 - 0x18B0)
+// 0x0000 (0x1940 - 0x1940)
 class ABP_DefaultPawnSpawnPreview_C final : public ASBZCharacter
 {
 public:
@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_DefaultPawnSpawnPreview_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DefaultPawnSpawnPreview_C;
 
 SDK_NAMESPACE_END

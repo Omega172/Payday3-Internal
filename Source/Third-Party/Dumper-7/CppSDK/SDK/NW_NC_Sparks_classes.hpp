@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ANW_NC_Sparks_C>();
 	}
 };
+DUMPER7_ASSERTS_ANW_NC_Sparks_C;
 
 SDK_NAMESPACE_END

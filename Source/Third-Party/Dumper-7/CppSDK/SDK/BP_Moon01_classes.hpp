@@ -41,5 +41,6 @@ public:
 		return GetDefaultObjImpl<ABP_Moon01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Moon01_C;
 
 SDK_NAMESPACE_END

@@ -16,45 +16,35 @@
 
 SDK_NAMESPACE_START
 
-// Function A_Stonk.A_Stonk_C.EMP1 ACTIVATED
-// (BlueprintCallable, BlueprintEvent)
+// Function A_Stonk.A_Stonk_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void AA_Stonk_C::EMP1_ACTIVATED()
+void AA_Stonk_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Stonk_C", "EMP1 ACTIVATED");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function A_Stonk.A_Stonk_C.EMP2 ACTIVATED
-// (BlueprintCallable, BlueprintEvent)
+// Function A_Stonk.A_Stonk_C.HeistStateChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EPD3HeistState                          OldHeistState_HeistStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPD3HeistState                          CurrentHeistState_HeistStateChanged                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AA_Stonk_C::EMP2_ACTIVATED()
+void AA_Stonk_C::HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HeistStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Stonk_C", "EMP2 ACTIVATED");
+	Params::A_Stonk_C_HeistStateChanged Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Parms.OldHeistState_HeistStateChanged = OldHeistState_HeistStateChanged;
+	Parms.CurrentHeistState_HeistStateChanged = CurrentHeistState_HeistStateChanged;
 
-
-// Function A_Stonk.A_Stonk_C.EMP3 ACTIVATED
-// (BlueprintCallable, BlueprintEvent)
-
-void AA_Stonk_C::EMP3_ACTIVATED()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Stonk_C", "EMP3 ACTIVATED");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -65,10 +55,8 @@ void AA_Stonk_C::EMP3_ACTIVATED()
 
 void AA_Stonk_C::ExecuteUbergraph_A_Stonk(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Stonk_C", "ExecuteUbergraph_A_Stonk");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "A_Stonk_C", "ExecuteUbergraph_A_Stonk", FuncInfo);
 
 	Params::A_Stonk_C_ExecuteUbergraph_A_Stonk Parms{};
 
@@ -78,37 +66,37 @@ void AA_Stonk_C::ExecuteUbergraph_A_Stonk(int32 EntryPoint)
 }
 
 
-// Function A_Stonk.A_Stonk_C.HeistStateChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// EPD3HeistState                          OldHeistState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPD3HeistState                          CurrentHeistState                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function A_Stonk.A_Stonk_C.EMP3 ACTIVATED
+// (BlueprintCallable, BlueprintEvent)
 
-void AA_Stonk_C::HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState)
+void AA_Stonk_C::EMP3_ACTIVATED()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EMP3 ACTIVATED", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Stonk_C", "HeistStateChanged");
-
-	Params::A_Stonk_C_HeistStateChanged Parms{};
-
-	Parms.OldHeistState = OldHeistState;
-	Parms.CurrentHeistState = CurrentHeistState;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function A_Stonk.A_Stonk_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function A_Stonk.A_Stonk_C.EMP2 ACTIVATED
+// (BlueprintCallable, BlueprintEvent)
 
-void AA_Stonk_C::ReceiveBeginPlay()
+void AA_Stonk_C::EMP2_ACTIVATED()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EMP2 ACTIVATED", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Stonk_C", "ReceiveBeginPlay");
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function A_Stonk.A_Stonk_C.EMP1 ACTIVATED
+// (BlueprintCallable, BlueprintEvent)
+
+void AA_Stonk_C::EMP1_ACTIVATED()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EMP1 ACTIVATED", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

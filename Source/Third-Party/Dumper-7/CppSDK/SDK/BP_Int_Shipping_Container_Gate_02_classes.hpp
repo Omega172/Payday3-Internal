@@ -40,5 +40,6 @@ public:
 		return GetDefaultObjImpl<ABP_Int_Shipping_Container_Gate_02_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Int_Shipping_Container_Gate_02_C;
 
 SDK_NAMESPACE_END

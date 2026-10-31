@@ -35,8 +35,8 @@ public:
 	TArray<class UStaticMeshComponent*>           screenMeshes;                                      // 0x0398(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void setInteraction(bool bEnabled);
 	void UserConstructionScript();
+	void setInteraction(bool bEnabled);
 
 public:
 	static class UClass* StaticClass()
@@ -52,5 +52,6 @@ public:
 		return GetDefaultObjImpl<ABP_SecurityScreenLarge_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SecurityScreenLarge_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AE_Dema_INT_ToyStore_Prop_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_Dema_INT_ToyStore_Prop_C;
 
 SDK_NAMESPACE_END

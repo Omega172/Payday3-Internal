@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Station_Railways_FenceMetal_02_Tarp_256_512_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Station_Railways_FenceMetal_02_Tarp_256_512_C;
 
 SDK_NAMESPACE_END

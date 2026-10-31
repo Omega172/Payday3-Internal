@@ -16,43 +16,33 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_GarageDoorBase.BP_GarageDoorBase_C.ExecuteUbergraph_BP_GarageDoorBase
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_GarageDoorBase.BP_GarageDoorBase_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_GarageDoorBase_C::ExecuteUbergraph_BP_GarageDoorBase(int32 EntryPoint)
+void ABP_GarageDoorBase_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GarageDoorBase_C", "ExecuteUbergraph_BP_GarageDoorBase");
-
-	Params::BP_GarageDoorBase_C_ExecuteUbergraph_BP_GarageDoorBase Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_GarageDoorBase.BP_GarageDoorBase_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
+// Function BP_GarageDoorBase.BP_GarageDoorBase_C.SetStateFunction
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Enum_Int_Garage_Door_States             State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    animateOpening                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_GarageDoorBase_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
+void ABP_GarageDoorBase_C::SetStateFunction(Enum_Int_Garage_Door_States State, bool animateOpening)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetStateFunction", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GarageDoorBase_C", "OnStateChanged");
+	Params::BP_GarageDoorBase_C_SetStateFunction Parms{};
 
-	Params::BP_GarageDoorBase_C_OnStateChanged Parms{};
-
-	Parms.bStateToChangeTo = bStateToChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.State = State;
+	Parms.animateOpening = animateOpening;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -66,10 +56,8 @@ void ABP_GarageDoorBase_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmeti
 
 void ABP_GarageDoorBase_C::setBinaryState(bool state, bool doCosmetics)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GarageDoorBase_C", "setBinaryState");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setBinaryState", FnName));
 
 	Params::BP_GarageDoorBase_C_setBinaryState Parms{};
 
@@ -80,39 +68,41 @@ void ABP_GarageDoorBase_C::setBinaryState(bool state, bool doCosmetics)
 }
 
 
-// Function BP_GarageDoorBase.BP_GarageDoorBase_C.SetStateFunction
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_GarageDoorBase.BP_GarageDoorBase_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// Enum_Int_Garage_Door_States             State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    animateOpening                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_GarageDoorBase_C::SetStateFunction(Enum_Int_Garage_Door_States State, bool animateOpening)
+void ABP_GarageDoorBase_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GarageDoorBase_C", "SetStateFunction");
+	Params::BP_GarageDoorBase_C_OnStateChanged Parms{};
 
-	Params::BP_GarageDoorBase_C_SetStateFunction Parms{};
-
-	Parms.State = State;
-	Parms.animateOpening = animateOpening;
+	Parms.bStateToChangeTo = bStateToChangeTo;
+	Parms.bDoCosmetics = bDoCosmetics;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_GarageDoorBase.BP_GarageDoorBase_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_GarageDoorBase.BP_GarageDoorBase_C.ExecuteUbergraph_BP_GarageDoorBase
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_GarageDoorBase_C::UserConstructionScript()
+void ABP_GarageDoorBase_C::ExecuteUbergraph_BP_GarageDoorBase(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_GarageDoorBase_C", "ExecuteUbergraph_BP_GarageDoorBase", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GarageDoorBase_C", "UserConstructionScript");
+	Params::BP_GarageDoorBase_C_ExecuteUbergraph_BP_GarageDoorBase Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

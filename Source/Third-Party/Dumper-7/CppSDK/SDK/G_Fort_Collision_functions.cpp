@@ -16,39 +16,103 @@
 
 SDK_NAMESPACE_START
 
-// Function G_Fort_Collision.G_Fort_Collision_C.BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport2_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function G_Fort_Collision.G_Fort_Collision_C.teleport bag
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Fort_Collision_C::BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport2_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Fort_Collision_C::teleport_bag()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"teleport bag", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Collision_C", "BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport2_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::G_Fort_Collision_C_BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport2_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
-	Parms.Pawn = Pawn;
+// Function G_Fort_Collision.G_Fort_Collision_C.HeistStateChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EPD3HeistState                          OldHeistState_HeistStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPD3HeistState                          CurrentHeistState_HeistStateChanged                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Fort_Collision_C::HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HeistStateChanged", FnName));
+
+	Params::G_Fort_Collision_C_HeistStateChanged Parms{};
+
+	Parms.OldHeistState_HeistStateChanged = OldHeistState_HeistStateChanged;
+	Parms.CurrentHeistState_HeistStateChanged = CurrentHeistState_HeistStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Fort_Collision.G_Fort_Collision_C.BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport3_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature
+// Function G_Fort_Collision.G_Fort_Collision_C.ExecuteUbergraph_G_Fort_Collision
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Fort_Collision_C::ExecuteUbergraph_G_Fort_Collision(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_Fort_Collision_C", "ExecuteUbergraph_G_Fort_Collision", FuncInfo);
+
+	Params::G_Fort_Collision_C_ExecuteUbergraph_G_Fort_Collision Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_Collision.G_Fort_Collision_C.EscapeGarage2
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_Collision_C::EscapeGarage2()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EscapeGarage2", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_Collision.G_Fort_Collision_C.EscapeGarage1
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_Collision_C::EscapeGarage1()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EscapeGarage1", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_Collision.G_Fort_Collision_C.EscapeArrivedAtSewer
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_Collision_C::EscapeArrivedAtSewer()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EscapeArrivedAtSewer", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_Collision.G_Fort_Collision_C.BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Fort_Collision_C::BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport3_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Fort_Collision_C::BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Collision_C", "BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport3_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Fort_Collision_C_BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport3_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+	Params::G_Fort_Collision_C_BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
 	Parms.Pawn = Pawn;
 
@@ -63,10 +127,8 @@ void AG_Fort_Collision_C::BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_telepo
 
 void AG_Fort_Collision_C::BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport4_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Collision_C", "BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport4_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport4_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
 	Params::G_Fort_Collision_C_BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport4_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
@@ -76,19 +138,17 @@ void AG_Fort_Collision_C::BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_telepo
 }
 
 
-// Function G_Fort_Collision.G_Fort_Collision_C.BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
+// Function G_Fort_Collision.G_Fort_Collision_C.BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport3_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Fort_Collision_C::BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Fort_Collision_C::BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport3_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport3_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Collision_C", "BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Fort_Collision_C_BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+	Params::G_Fort_Collision_C_BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport3_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
 	Parms.Pawn = Pawn;
 
@@ -96,101 +156,21 @@ void AG_Fort_Collision_C::BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_telepo
 }
 
 
-// Function G_Fort_Collision.G_Fort_Collision_C.EscapeArrivedAtSewer
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_Collision_C::EscapeArrivedAtSewer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Collision_C", "EscapeArrivedAtSewer");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_Collision.G_Fort_Collision_C.EscapeGarage1
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_Collision_C::EscapeGarage1()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Collision_C", "EscapeGarage1");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_Collision.G_Fort_Collision_C.EscapeGarage2
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_Collision_C::EscapeGarage2()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Collision_C", "EscapeGarage2");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_Collision.G_Fort_Collision_C.ExecuteUbergraph_G_Fort_Collision
-// (Final, UbergraphFunction, HasDefaults)
+// Function G_Fort_Collision.G_Fort_Collision_C.BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport2_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Fort_Collision_C::ExecuteUbergraph_G_Fort_Collision(int32 EntryPoint)
+void AG_Fort_Collision_C::BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport2_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport2_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Collision_C", "ExecuteUbergraph_G_Fort_Collision");
+	Params::G_Fort_Collision_C_BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport2_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
-	Params::G_Fort_Collision_C_ExecuteUbergraph_G_Fort_Collision Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Pawn = Pawn;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Fort_Collision.G_Fort_Collision_C.HeistStateChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// EPD3HeistState                          OldHeistState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPD3HeistState                          CurrentHeistState                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Fort_Collision_C::HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Collision_C", "HeistStateChanged");
-
-	Params::G_Fort_Collision_C_HeistStateChanged Parms{};
-
-	Parms.OldHeistState = OldHeistState;
-	Parms.CurrentHeistState = CurrentHeistState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Fort_Collision.G_Fort_Collision_C.teleport bag
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_Collision_C::teleport_bag()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Collision_C", "teleport bag");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

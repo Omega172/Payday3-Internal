@@ -16,16 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BPL_SquareModern_Bebe_Light_Green.BPL_SquareModern_Bebe_Light_Green_C.BndEvt__BPL_SquareModern_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
-// 0x0068 (0x0068 - 0x0000)
-struct BPL_SquareModern_Bebe_Light_Green_C_BndEvt__BPL_SquareModern_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature final
-{
-public:
-	ESBZCosmeticDestructionType                   Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZCosmeticDestructionContext         HitContext;                                        // 0x0008(0x0060)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
-};
-
 // Function BPL_SquareModern_Bebe_Light_Green.BPL_SquareModern_Bebe_Light_Green_C.ExecuteUbergraph_BPL_SquareModern_Bebe_Light_Green
 // 0x0088 (0x0088 - 0x0000)
 struct BPL_SquareModern_Bebe_Light_Green_C_ExecuteUbergraph_BPL_SquareModern_Bebe_Light_Green final
@@ -39,6 +29,18 @@ public:
 	class UNiagaraComponent*                      CallFunc_Array_Random_OutItem;                     // 0x0078(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Random_OutIndex;                    // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BPL_SquareModern_Bebe_Light_Green_C_ExecuteUbergraph_BPL_SquareModern_Bebe_Light_Green;
+
+// Function BPL_SquareModern_Bebe_Light_Green.BPL_SquareModern_Bebe_Light_Green_C.BndEvt__BPL_SquareModern_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
+// 0x0068 (0x0068 - 0x0000)
+struct BPL_SquareModern_Bebe_Light_Green_C_BndEvt__BPL_SquareModern_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature final
+{
+public:
+	ESBZCosmeticDestructionType                   Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZCosmeticDestructionContext         HitContext;                                        // 0x0008(0x0060)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+};
+DUMPER7_ASSERTS_BPL_SquareModern_Bebe_Light_Green_C_BndEvt__BPL_SquareModern_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

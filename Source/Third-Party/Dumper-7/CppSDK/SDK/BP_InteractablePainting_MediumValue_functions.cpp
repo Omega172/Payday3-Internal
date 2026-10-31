@@ -16,45 +16,31 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_InteractablePainting_MediumValue.BP_InteractablePainting_MediumValue_C.BndEvt__BP_InteractablePainting_MediumValue_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_InteractablePainting_MediumValue.BP_InteractablePainting_MediumValue_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_InteractablePainting_MediumValue_C::BndEvt__BP_InteractablePainting_MediumValue_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_InteractablePainting_MediumValue_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InteractablePainting_MediumValue_C", "BndEvt__BP_InteractablePainting_MediumValue_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_InteractablePainting_MediumValue_C_BndEvt__BP_InteractablePainting_MediumValue_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_InteractablePainting_MediumValue.BP_InteractablePainting_MediumValue_C.ExecuteUbergraph_BP_InteractablePainting_MediumValue
-// (Final, UbergraphFunction)
+// Function BP_InteractablePainting_MediumValue.BP_InteractablePainting_MediumValue_C.SetAsSecret
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsSecret                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_InteractablePainting_MediumValue_C::ExecuteUbergraph_BP_InteractablePainting_MediumValue(int32 EntryPoint)
+void ABP_InteractablePainting_MediumValue_C::SetAsSecret(bool IsSecret)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetAsSecret", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InteractablePainting_MediumValue_C", "ExecuteUbergraph_BP_InteractablePainting_MediumValue");
+	Params::BP_InteractablePainting_MediumValue_C_SetAsSecret Parms{};
 
-	Params::BP_InteractablePainting_MediumValue_C_ExecuteUbergraph_BP_InteractablePainting_MediumValue Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.IsSecret = IsSecret;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -65,46 +51,50 @@ void ABP_InteractablePainting_MediumValue_C::ExecuteUbergraph_BP_InteractablePai
 
 void ABP_InteractablePainting_MediumValue_C::OnRep_RenderOutlines()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InteractablePainting_MediumValue_C", "OnRep_RenderOutlines");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRep_RenderOutlines", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_InteractablePainting_MediumValue.BP_InteractablePainting_MediumValue_C.SetAsSecret
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_InteractablePainting_MediumValue.BP_InteractablePainting_MediumValue_C.ExecuteUbergraph_BP_InteractablePainting_MediumValue
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    IsSecret_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_InteractablePainting_MediumValue_C::SetAsSecret(bool IsSecret_0)
+void ABP_InteractablePainting_MediumValue_C::ExecuteUbergraph_BP_InteractablePainting_MediumValue(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_InteractablePainting_MediumValue_C", "ExecuteUbergraph_BP_InteractablePainting_MediumValue", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InteractablePainting_MediumValue_C", "SetAsSecret");
+	Params::BP_InteractablePainting_MediumValue_C_ExecuteUbergraph_BP_InteractablePainting_MediumValue Parms{};
 
-	Params::BP_InteractablePainting_MediumValue_C_SetAsSecret Parms{};
-
-	Parms.IsSecret_0 = IsSecret_0;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_InteractablePainting_MediumValue.BP_InteractablePainting_MediumValue_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_InteractablePainting_MediumValue.BP_InteractablePainting_MediumValue_C.BndEvt__BP_InteractablePainting_MediumValue_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_InteractablePainting_MediumValue_C::UserConstructionScript()
+void ABP_InteractablePainting_MediumValue_C::BndEvt__BP_InteractablePainting_MediumValue_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_InteractablePainting_MediumValue_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InteractablePainting_MediumValue_C", "UserConstructionScript");
+	Params::BP_InteractablePainting_MediumValue_C_BndEvt__BP_InteractablePainting_MediumValue_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

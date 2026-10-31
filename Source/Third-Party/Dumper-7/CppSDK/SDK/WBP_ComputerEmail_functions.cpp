@@ -23,10 +23,8 @@ SDK_NAMESPACE_START
 
 void UWBP_ComputerEmail_C::UpdateDisplayText(const struct FSBZHackableDisplayText& DisplayText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ComputerEmail_C", "UpdateDisplayText");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateDisplayText", FnName));
 
 	Params::WBP_ComputerEmail_C_UpdateDisplayText Parms{};
 

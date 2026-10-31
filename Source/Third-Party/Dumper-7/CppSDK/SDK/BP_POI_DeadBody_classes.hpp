@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_POI_DeadBody_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_POI_DeadBody_C;
 
 SDK_NAMESPACE_END

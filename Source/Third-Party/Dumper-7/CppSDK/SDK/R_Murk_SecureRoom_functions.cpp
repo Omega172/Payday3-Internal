@@ -16,37 +16,21 @@
 
 SDK_NAMESPACE_START
 
-// Function R_Murk_SecureRoom.R_Murk_SecureRoom_C.BndEvt__R_Murk_SecureRoom_SBZPlayerTriggerVolume_PlayerInsideControlRoom_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
+// Function R_Murk_SecureRoom.R_Murk_SecureRoom_C.ExecuteUbergraph_R_Murk_SecureRoom
+// (Final, UbergraphFunction)
 // Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AR_Murk_SecureRoom_C::BndEvt__R_Murk_SecureRoom_SBZPlayerTriggerVolume_PlayerInsideControlRoom_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AR_Murk_SecureRoom_C::ExecuteUbergraph_R_Murk_SecureRoom(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "R_Murk_SecureRoom_C", "ExecuteUbergraph_R_Murk_SecureRoom", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_SecureRoom_C", "BndEvt__R_Murk_SecureRoom_SBZPlayerTriggerVolume_PlayerInsideControlRoom_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature");
+	Params::R_Murk_SecureRoom_C_ExecuteUbergraph_R_Murk_SecureRoom Parms{};
 
-	Params::R_Murk_SecureRoom_C_BndEvt__R_Murk_SecureRoom_SBZPlayerTriggerVolume_PlayerInsideControlRoom_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_Murk_SecureRoom.R_Murk_SecureRoom_C.Event_AddWaypoint_ControlRoom
-// (BlueprintCallable, BlueprintEvent)
-
-void AR_Murk_SecureRoom_C::Event_AddWaypoint_ControlRoom()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_SecureRoom_C", "Event_AddWaypoint_ControlRoom");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -55,30 +39,38 @@ void AR_Murk_SecureRoom_C::Event_AddWaypoint_ControlRoom()
 
 void AR_Murk_SecureRoom_C::Event_RemoveWaypoint_ControlRoom()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_SecureRoom_C", "Event_RemoveWaypoint_ControlRoom");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Event_RemoveWaypoint_ControlRoom", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function R_Murk_SecureRoom.R_Murk_SecureRoom_C.ExecuteUbergraph_R_Murk_SecureRoom
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function R_Murk_SecureRoom.R_Murk_SecureRoom_C.Event_AddWaypoint_ControlRoom
+// (BlueprintCallable, BlueprintEvent)
 
-void AR_Murk_SecureRoom_C::ExecuteUbergraph_R_Murk_SecureRoom(int32 EntryPoint)
+void AR_Murk_SecureRoom_C::Event_AddWaypoint_ControlRoom()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Event_AddWaypoint_ControlRoom", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_SecureRoom_C", "ExecuteUbergraph_R_Murk_SecureRoom");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::R_Murk_SecureRoom_C_ExecuteUbergraph_R_Murk_SecureRoom Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+// Function R_Murk_SecureRoom.R_Murk_SecureRoom_C.BndEvt__R_Murk_SecureRoom_SBZPlayerTriggerVolume_PlayerInsideControlRoom_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AR_Murk_SecureRoom_C::BndEvt__R_Murk_SecureRoom_SBZPlayerTriggerVolume_PlayerInsideControlRoom_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Murk_SecureRoom_SBZPlayerTriggerVolume_PlayerInsideControlRoom_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::R_Murk_SecureRoom_C_BndEvt__R_Murk_SecureRoom_SBZPlayerTriggerVolume_PlayerInsideControlRoom_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

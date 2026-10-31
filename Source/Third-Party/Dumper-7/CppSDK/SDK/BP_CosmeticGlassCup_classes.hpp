@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_CosmeticGlassCup_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CosmeticGlassCup_C;
 
 SDK_NAMESPACE_END

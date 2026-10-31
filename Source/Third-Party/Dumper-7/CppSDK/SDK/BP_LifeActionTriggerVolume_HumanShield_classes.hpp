@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_LifeActionTriggerVolume_HumanShield_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LifeActionTriggerVolume_HumanShield_C;
 
 SDK_NAMESPACE_END

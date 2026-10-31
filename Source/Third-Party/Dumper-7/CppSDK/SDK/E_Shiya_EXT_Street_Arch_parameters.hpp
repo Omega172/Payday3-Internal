@@ -25,6 +25,7 @@ public:
 	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_E_Shiya_EXT_Street_Arch_C_ExecuteUbergraph_E_Shiya_EXT_Street_Arch;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

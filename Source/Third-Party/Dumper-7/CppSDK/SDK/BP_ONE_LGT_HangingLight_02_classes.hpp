@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ABP_ONE_LGT_HangingLight_02_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ONE_LGT_HangingLight_02_C;
 
 SDK_NAMESPACE_END

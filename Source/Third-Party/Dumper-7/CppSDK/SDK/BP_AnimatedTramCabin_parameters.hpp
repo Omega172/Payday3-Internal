@@ -40,6 +40,7 @@ public:
 	double                                        CallFunc_Multiply_DoubleDouble_B_ImplicitCast;     // 0x03C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetTransformAtDistanceAlongSpline_Distance_ImplicitCast; // 0x03D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_AnimatedTramCabin_C_ExecuteUbergraph_BP_AnimatedTramCabin;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

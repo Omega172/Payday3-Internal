@@ -15,6 +15,13 @@
 
 SDK_NAMESPACE_START
 
+// ScriptStruct ABP_DeadBody.ABP_DeadBody_C.AnimBlueprintGeneratedMutableData
+// 0x0000 (0x0001 - 0x0001)
+struct ABP_DeadBody::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
+{
+};
+DUMPER7_ASSERTS_ABP_DeadBody__FAnimBlueprintGeneratedMutableData;
+
 // ScriptStruct ABP_DeadBody.ABP_DeadBody_C.AnimBlueprintGeneratedConstantData
 // 0x0187 (0x0188 - 0x0001)
 struct ABP_DeadBody::FAnimBlueprintGeneratedConstantData final : public FAnimBlueprintConstantData
@@ -38,11 +45,6 @@ public:
 	struct FAnimNodeExposedValueHandler_PropertyAccess AnimGraphNode_Root;                           // 0x0118(0x0038)()
 	struct FAnimNodeExposedValueHandler_PropertyAccess AnimGraphNode_SequencePlayer;                 // 0x0150(0x0038)()
 };
-
-// ScriptStruct ABP_DeadBody.ABP_DeadBody_C.AnimBlueprintGeneratedMutableData
-// 0x0000 (0x0001 - 0x0001)
-struct ABP_DeadBody::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
-{
-};
+DUMPER7_ASSERTS_ABP_DeadBody__FAnimBlueprintGeneratedConstantData;
 
 SDK_NAMESPACE_END

@@ -16,143 +16,37 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Authenticator.BP_Authenticator_C.BndEvt__BP_Authenticator_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// Function BP_Authenticator.BP_Authenticator_C.Timeline_0__UpdateFunc
 // (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Authenticator_C::BndEvt__BP_Authenticator_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_Authenticator_C::Timeline_0__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__UpdateFunc", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Authenticator_C", "BndEvt__BP_Authenticator_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_Authenticator_C_BndEvt__BP_Authenticator_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Authenticator.BP_Authenticator_C.Complete
+// Function BP_Authenticator.BP_Authenticator_C.Timeline_0__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_Authenticator_C::Timeline_0__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Authenticator.BP_Authenticator_C.Test
 // (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
 
-void ABP_Authenticator_C::Complete()
+void ABP_Authenticator_C::Test()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Authenticator_C", "Complete");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Authenticator.BP_Authenticator_C.ExecuteUbergraph_BP_Authenticator
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Authenticator_C::ExecuteUbergraph_BP_Authenticator(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Authenticator_C", "ExecuteUbergraph_BP_Authenticator");
-
-	Params::BP_Authenticator_C_ExecuteUbergraph_BP_Authenticator Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Authenticator.BP_Authenticator_C.FunctionTimer
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_Authenticator_C::FunctionTimer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Authenticator_C", "FunctionTimer");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Authenticator.BP_Authenticator_C.Initiate
-// (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
-
-void ABP_Authenticator_C::Initiate()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Authenticator_C", "Initiate");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Authenticator.BP_Authenticator_C.OnRep_States
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_Authenticator_C::OnRep_States()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Authenticator_C", "OnRep_States");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Authenticator.BP_Authenticator_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Authenticator_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Authenticator_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Authenticator.BP_Authenticator_C.Search
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_Authenticator_C::Search()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Authenticator_C", "Search");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Authenticator.BP_Authenticator_C.SetValues
-// (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
-
-void ABP_Authenticator_C::SetValues()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Authenticator_C", "SetValues");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Test", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -165,10 +59,8 @@ void ABP_Authenticator_C::SetValues()
 
 void ABP_Authenticator_C::SetVisible(bool Visibility)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Authenticator_C", "SetVisible");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetVisible", FnName));
 
 	Params::BP_Authenticator_C_SetVisible Parms{};
 
@@ -178,45 +70,127 @@ void ABP_Authenticator_C::SetVisible(bool Visibility)
 }
 
 
-// Function BP_Authenticator.BP_Authenticator_C.Test
+// Function BP_Authenticator.BP_Authenticator_C.SetValues
 // (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
 
-void ABP_Authenticator_C::Test()
+void ABP_Authenticator_C::SetValues()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Authenticator_C", "Test");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetValues", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Authenticator.BP_Authenticator_C.Timeline_0__FinishedFunc
-// (BlueprintEvent)
+// Function BP_Authenticator.BP_Authenticator_C.Search
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_Authenticator_C::Timeline_0__FinishedFunc()
+void ABP_Authenticator_C::Search()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Authenticator_C", "Timeline_0__FinishedFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Search", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Authenticator.BP_Authenticator_C.Timeline_0__UpdateFunc
-// (BlueprintEvent)
+// Function BP_Authenticator.BP_Authenticator_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_Authenticator_C::Timeline_0__UpdateFunc()
+void ABP_Authenticator_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Authenticator_C", "Timeline_0__UpdateFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Authenticator.BP_Authenticator_C.OnRep_States
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_Authenticator_C::OnRep_States()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRep_States", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Authenticator.BP_Authenticator_C.Initiate
+// (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
+
+void ABP_Authenticator_C::Initiate()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Initiate", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Authenticator.BP_Authenticator_C.FunctionTimer
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_Authenticator_C::FunctionTimer()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"FunctionTimer", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Authenticator.BP_Authenticator_C.ExecuteUbergraph_BP_Authenticator
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Authenticator_C::ExecuteUbergraph_BP_Authenticator(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Authenticator_C", "ExecuteUbergraph_BP_Authenticator", FuncInfo);
+
+	Params::BP_Authenticator_C_ExecuteUbergraph_BP_Authenticator Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Authenticator.BP_Authenticator_C.Complete
+// (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
+
+void ABP_Authenticator_C::Complete()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Complete", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Authenticator.BP_Authenticator_C.BndEvt__BP_Authenticator_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Authenticator_C::BndEvt__BP_Authenticator_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Authenticator_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_Authenticator_C_BndEvt__BP_Authenticator_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

@@ -16,6 +16,18 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_NiagaraWwiseActor_Flies.BP_NiagaraWwiseActor_Flies_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_NiagaraWwiseActor_Flies_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_NiagaraWwiseActor_Flies.BP_NiagaraWwiseActor_Flies_C.ExecuteUbergraph_BP_NiagaraWwiseActor_Flies
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,30 +35,14 @@ SDK_NAMESPACE_START
 
 void ABP_NiagaraWwiseActor_Flies_C::ExecuteUbergraph_BP_NiagaraWwiseActor_Flies(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NiagaraWwiseActor_Flies_C", "ExecuteUbergraph_BP_NiagaraWwiseActor_Flies");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_NiagaraWwiseActor_Flies_C", "ExecuteUbergraph_BP_NiagaraWwiseActor_Flies", FuncInfo);
 
 	Params::BP_NiagaraWwiseActor_Flies_C_ExecuteUbergraph_BP_NiagaraWwiseActor_Flies Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_NiagaraWwiseActor_Flies.BP_NiagaraWwiseActor_Flies_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_NiagaraWwiseActor_Flies_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_NiagaraWwiseActor_Flies_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

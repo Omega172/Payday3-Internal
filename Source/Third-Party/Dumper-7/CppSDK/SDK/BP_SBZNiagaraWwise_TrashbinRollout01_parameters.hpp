@@ -22,6 +22,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_SBZNiagaraWwise_TrashbinRollout01_C_ExecuteUbergraph_BP_SBZNiagaraWwise_TrashbinRollout01;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

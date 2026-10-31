@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UUTD_RepositionOffensive_Taser_C>();
 	}
 };
+DUMPER7_ASSERTS_UUTD_RepositionOffensive_Taser_C;
 
 SDK_NAMESPACE_END

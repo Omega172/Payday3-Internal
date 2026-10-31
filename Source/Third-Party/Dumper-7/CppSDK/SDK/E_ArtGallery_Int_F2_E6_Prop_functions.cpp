@@ -16,20 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function E_ArtGallery_Int_F2_E6_Prop.E_ArtGallery_Int_F2_E6_Prop_C.DisableFloorVisualsE6
-// (BlueprintCallable, BlueprintEvent)
-
-void AE_ArtGallery_Int_F2_E6_Prop_C::DisableFloorVisualsE6()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_ArtGallery_Int_F2_E6_Prop_C", "DisableFloorVisualsE6");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function E_ArtGallery_Int_F2_E6_Prop.E_ArtGallery_Int_F2_E6_Prop_C.ExecuteUbergraph_E_ArtGallery_Int_F2_E6_Prop
 // (Final, UbergraphFunction)
 // Parameters:
@@ -37,16 +23,26 @@ void AE_ArtGallery_Int_F2_E6_Prop_C::DisableFloorVisualsE6()
 
 void AE_ArtGallery_Int_F2_E6_Prop_C::ExecuteUbergraph_E_ArtGallery_Int_F2_E6_Prop(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_ArtGallery_Int_F2_E6_Prop_C", "ExecuteUbergraph_E_ArtGallery_Int_F2_E6_Prop");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "E_ArtGallery_Int_F2_E6_Prop_C", "ExecuteUbergraph_E_ArtGallery_Int_F2_E6_Prop", FuncInfo);
 
 	Params::E_ArtGallery_Int_F2_E6_Prop_C_ExecuteUbergraph_E_ArtGallery_Int_F2_E6_Prop Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function E_ArtGallery_Int_F2_E6_Prop.E_ArtGallery_Int_F2_E6_Prop_C.DisableFloorVisualsE6
+// (BlueprintCallable, BlueprintEvent)
+
+void AE_ArtGallery_Int_F2_E6_Prop_C::DisableFloorVisualsE6()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DisableFloorVisualsE6", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

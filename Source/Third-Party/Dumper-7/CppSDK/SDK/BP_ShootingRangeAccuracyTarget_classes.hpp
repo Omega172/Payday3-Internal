@@ -43,15 +43,15 @@ public:
 	double                                        KnockedDownMaxDuration;                            // 0x03B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_ShootingRangeAccuracyTarget(int32 EntryPoint);
-	void KnockDownTarget__FinishedFunc();
-	void KnockDownTarget__UpdateFunc();
-	void RaiseTarget__FinishedFunc();
-	void RaiseTarget__UpdateFunc();
-	void ReceivePointDamage(float Damage, const class UDamageType* DamageType, const struct FVector& HitLocation, const struct FVector& HitNormal, class UPrimitiveComponent* HitComponent, class FName BoneName, const struct FVector& ShotFromDirection, class AController* InstigatedBy, class AActor* DamageCauser, const struct FHitResult& HitInfo);
-	void SERVER_AddScore();
-	void SERVER_EnableOutline();
 	void UserConstructionScript();
+	void SERVER_EnableOutline();
+	void SERVER_AddScore();
+	void ReceivePointDamage(float Damage_ReceivePointDamage, const class UDamageType* DamageType_ReceivePointDamage, const struct FVector& HitLocation_ReceivePointDamage, const struct FVector& HitNormal_ReceivePointDamage, class UPrimitiveComponent* HitComponent_ReceivePointDamage, class FName BoneName_ReceivePointDamage, const struct FVector& ShotFromDirection_ReceivePointDamage, class AController* InstigatedBy_ReceivePointDamage, class AActor* DamageCauser_ReceivePointDamage, const struct FHitResult& HitInfo_ReceivePointDamage);
+	void RaiseTarget__UpdateFunc();
+	void RaiseTarget__FinishedFunc();
+	void KnockDownTarget__UpdateFunc();
+	void KnockDownTarget__FinishedFunc();
+	void ExecuteUbergraph_BP_ShootingRangeAccuracyTarget(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -67,5 +67,6 @@ public:
 		return GetDefaultObjImpl<ABP_ShootingRangeAccuracyTarget_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ShootingRangeAccuracyTarget_C;
 
 SDK_NAMESPACE_END

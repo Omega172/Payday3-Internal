@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AVFX_DataCenter_C>();
 	}
 };
+DUMPER7_ASSERTS_AVFX_DataCenter_C;
 
 SDK_NAMESPACE_END

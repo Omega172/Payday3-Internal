@@ -32,12 +32,12 @@ public:
 	class UWBP_InteractableControlPanel_C*        As_WBP_Interactable_Control_Panel;                 // 0x03B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_DAT_ServerRoomInteractablePanel_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_DAT_ServerRoomInteractablePanel(int32 EntryPoint);
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void ReceiveBeginPlay();
-	void setInteractionDisabled();
 	void setLocked();
+	void setInteractionDisabled();
+	void ReceiveBeginPlay();
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_DAT_ServerRoomInteractablePanel(int32 EntryPoint);
+	void BndEvt__BP_DAT_ServerRoomInteractablePanel_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -53,5 +53,6 @@ public:
 		return GetDefaultObjImpl<ABP_DAT_ServerRoomInteractablePanel_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DAT_ServerRoomInteractablePanel_C;
 
 SDK_NAMESPACE_END

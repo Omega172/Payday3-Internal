@@ -16,6 +16,25 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_DynamicSign_Interior_01.WBP_DynamicSign_Interior_01_C.setText
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_DynamicSign_Interior_01_C_setText final
+{
+public:
+	class FText                                   primary;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   secondary;                                         // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_DynamicSign_Interior_01_C_setText;
+
+// Function WBP_DynamicSign_Interior_01.WBP_DynamicSign_Interior_01_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_DynamicSign_Interior_01_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_DynamicSign_Interior_01_C_PreConstruct;
+
 // Function WBP_DynamicSign_Interior_01.WBP_DynamicSign_Interior_01_C.ExecuteUbergraph_WBP_DynamicSign_Interior_01
 // 0x0030 (0x0030 - 0x0000)
 struct WBP_DynamicSign_Interior_01_C_ExecuteUbergraph_WBP_DynamicSign_Interior_01 final
@@ -31,23 +50,7 @@ public:
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function WBP_DynamicSign_Interior_01.WBP_DynamicSign_Interior_01_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_DynamicSign_Interior_01_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WBP_DynamicSign_Interior_01.WBP_DynamicSign_Interior_01_C.setText
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_DynamicSign_Interior_01_C_setText final
-{
-public:
-	class FText                                   primary;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class FText                                   secondary;                                         // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
+DUMPER7_ASSERTS_WBP_DynamicSign_Interior_01_C_ExecuteUbergraph_WBP_DynamicSign_Interior_01;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

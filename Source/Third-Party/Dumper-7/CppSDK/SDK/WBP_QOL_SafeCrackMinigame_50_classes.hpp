@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UWBP_QOL_SafeCrackMinigame_50_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_QOL_SafeCrackMinigame_50_C;
 
 SDK_NAMESPACE_END

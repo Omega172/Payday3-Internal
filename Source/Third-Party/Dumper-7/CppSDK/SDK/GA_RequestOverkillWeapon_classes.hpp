@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGA_RequestOverkillWeapon_C>();
 	}
 };
+DUMPER7_ASSERTS_UGA_RequestOverkillWeapon_C;
 
 SDK_NAMESPACE_END

@@ -39,11 +39,11 @@ public:
 	double                                        debrisFallTimeDuration;                            // 0x03E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_Thermite_AiBreach(int32 EntryPoint);
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void setBreached();
-	void setBreaching();
 	void UserConstructionScript();
+	void setBreaching();
+	void setBreached();
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_Thermite_AiBreach(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -59,5 +59,6 @@ public:
 		return GetDefaultObjImpl<ABP_Thermite_AiBreach_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Thermite_AiBreach_C;
 
 SDK_NAMESPACE_END

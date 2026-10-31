@@ -29,8 +29,8 @@ public:
 	class USBZLifeActionInstance*                 SBZLifeActionInstance;                             // 0x0348(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_LA_Civ_Scripted_VIP_PoisonDrink_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionStopEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot, ESBZLifeActionStopReason Result);
 	void ExecuteUbergraph_BP_LA_Civ_Scripted_VIP_PoisonDrink(int32 EntryPoint);
+	void BndEvt__BP_LA_Civ_Scripted_VIP_PoisonDrink_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionStopEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot, ESBZLifeActionStopReason Result);
 
 public:
 	static class UClass* StaticClass()
@@ -46,5 +46,6 @@ public:
 		return GetDefaultObjImpl<ABP_LA_Civ_Scripted_VIP_PoisonDrink_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LA_Civ_Scripted_VIP_PoisonDrink_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_FileBox_01_Open_Empty_SmallDestruction_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_FileBox_01_Open_Empty_SmallDestruction_C;
 
 SDK_NAMESPACE_END

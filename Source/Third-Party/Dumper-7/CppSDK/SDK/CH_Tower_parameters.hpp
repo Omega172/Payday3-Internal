@@ -27,6 +27,7 @@ public:
 	int32                                         CallFunc_PostAkEvent_ReturnValue;                  // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_PostAkEvent_ReturnValue_1;                // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_CH_Tower_C_ExecuteUbergraph_CH_Tower;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

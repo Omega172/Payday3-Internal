@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_BUS_StaticVehicle_Van_01_Police_lightsOn_Open_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BUS_StaticVehicle_Van_01_Police_lightsOn_Open_C;
 
 SDK_NAMESPACE_END

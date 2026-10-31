@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CH_NC_Accountant.CH_NC_Accountant_C
-// 0x0000 (0x2200 - 0x2200)
+// 0x0000 (0x2290 - 0x2290)
 class ACH_NC_Accountant_C final : public ACH_BaseEmployeeCivilian_C
 {
 public:
@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ACH_NC_Accountant_C>();
 	}
 };
+DUMPER7_ASSERTS_ACH_NC_Accountant_C;
 
 SDK_NAMESPACE_END

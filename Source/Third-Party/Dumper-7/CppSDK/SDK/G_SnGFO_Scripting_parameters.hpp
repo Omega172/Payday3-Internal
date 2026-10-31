@@ -10,1190 +10,28 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "E_LootableCarPart_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "GameplayTags_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_FlipSwitch_SabotagePoint1_K2Node_ActorBoundEvent_104_SBZSabotagePointDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_FlipSwitch_SabotagePoint1_K2Node_ActorBoundEvent_104_SBZSabotagePointDelegate__DelegateSignature final
-{
-public:
-	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_FlipSwitch_SabotagePoint2_K2Node_ActorBoundEvent_131_SBZSabotagePointDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_FlipSwitch_SabotagePoint2_K2Node_ActorBoundEvent_131_SBZSabotagePointDelegate__DelegateSignature final
-{
-public:
-	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_Int_SingleDoor_Reinforced_Garage2_K2Node_ActorBoundEvent_113_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_Int_SingleDoor_Reinforced_Garage2_K2Node_ActorBoundEvent_113_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_openable_Van_Police2_K2Node_ActorBoundEvent_155_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_openable_Van_Police2_K2Node_ActorBoundEvent_155_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_openable_Van_Police3_K2Node_ActorBoundEvent_156_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_openable_Van_Police3_K2Node_ActorBoundEvent_156_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_openable_Van_Police4_K2Node_ActorBoundEvent_157_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_openable_Van_Police4_K2Node_ActorBoundEvent_157_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_openable_Van_Police_2_K2Node_ActorBoundEvent_88_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_openable_Van_Police_2_K2Node_ActorBoundEvent_88_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator2_K2Node_ActorBoundEvent_137_SBZSabotagePointDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator2_K2Node_ActorBoundEvent_137_SBZSabotagePointDelegate__DelegateSignature final
-{
-public:
-	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator3_K2Node_ActorBoundEvent_138_SBZSabotagePointDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator3_K2Node_ActorBoundEvent_138_SBZSabotagePointDelegate__DelegateSignature final
-{
-public:
-	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator_K2Node_ActorBoundEvent_119_SBZSabotagePointDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator_K2Node_ActorBoundEvent_119_SBZSabotagePointDelegate__DelegateSignature final
-{
-public:
-	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZBagTriggerVolume_Stealth2_2_K2Node_ActorBoundEvent_46_SBZBagEnteredDelegate__DelegateSignature
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.SetSecureLootZone
 // 0x0020 (0x0020 - 0x0000)
-struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZBagTriggerVolume_Stealth2_2_K2Node_ActorBoundEvent_46_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZPlayerStartGroup1_K2Node_ActorBoundEvent_6_SBZOnSpawnGroupChosen__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerStartGroup1_K2Node_ActorBoundEvent_6_SBZOnSpawnGroupChosen__DelegateSignature final
-{
-public:
-	class ASBZPlayerStartGroup*                   PlayerStartGroup;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZPlayerStartGroup2_5_K2Node_ActorBoundEvent_7_SBZOnSpawnGroupChosen__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerStartGroup2_5_K2Node_ActorBoundEvent_7_SBZOnSpawnGroupChosen__DelegateSignature final
-{
-public:
-	class ASBZPlayerStartGroup*                   PlayerStartGroup;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZPlayerStartGroup4_K2Node_ActorBoundEvent_57_SBZOnSpawnGroupChosen__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerStartGroup4_K2Node_ActorBoundEvent_57_SBZOnSpawnGroupChosen__DelegateSignature final
-{
-public:
-	class ASBZPlayerStartGroup*                   PlayerStartGroup;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthSewer_K2Node_ActorBoundEvent_49_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthSewer_K2Node_ActorBoundEvent_49_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_146_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_146_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_EnteredDepot_K2Node_ActorBoundEvent_43_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_EnteredDepot_K2Node_ActorBoundEvent_43_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_PlayerInsideGarage_K2Node_ActorBoundEvent_132_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_PlayerInsideGarage_K2Node_ActorBoundEvent_132_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZTrafficSpline_StealthEscape_DriveIn1_K2Node_ActorBoundEvent_47_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZTrafficSpline_StealthEscape_DriveIn1_K2Node_ActorBoundEvent_47_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_SnGFO_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_SnGFO_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZBagTriggerVolume_SideEntrance_K2Node_ActorBoundEvent_12_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZBagTriggerVolume_SideEntrance_K2Node_ActorBoundEvent_12_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZBagTriggerVolume_Street_K2Node_ActorBoundEvent_30_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZBagTriggerVolume_Street_K2Node_ActorBoundEvent_30_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthGate2_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthGate2_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthSideEntrance_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthSideEntrance_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_EnteredGarage_K2Node_ActorBoundEvent_222_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_EnteredGarage_K2Node_ActorBoundEvent_222_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_GetToSecurityTruck_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_GetToSecurityTruck_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_PlayerOnStreet_K2Node_ActorBoundEvent_26_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_PlayerOnStreet_K2Node_ActorBoundEvent_26_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZTrafficSpline_Escape_DriveInStreet_K2Node_ActorBoundEvent_42_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZTrafficSpline_Escape_DriveInStreet_K2Node_ActorBoundEvent_42_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ExecuteUbergraph_G_SnGFO_Scripting
-// 0x1780 (0x1780 - 0x0000)
-struct G_SnGFO_Scripting_C_ExecuteUbergraph_G_SnGFO_Scripting final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable;                            // 0x0004(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0018(0x0010)(ConstParm, ReferenceParm)
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_1;                          // 0x0028(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue;                   // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_1;                            // 0x0040(0x0010)(ConstParm, ReferenceParm)
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_2;                          // 0x0050(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_1;                 // 0x0064(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_65[0x3];                                       // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_2;                            // 0x0068(0x0010)(ConstParm, ReferenceParm)
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_3;                          // 0x0078(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_2;                 // 0x008C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_8D[0x3];                                       // 0x008D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_3;                            // 0x0090(0x0010)(ConstParm, ReferenceParm)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_3;                 // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A1[0x3];                                       // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x00A4(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_4;                          // 0x00B8(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_4;                            // 0x00D0(0x0010)(ConstParm, ReferenceParm)
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_5;                          // 0x00E0(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_4;                 // 0x00F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F5[0x3];                                       // 0x00F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_5;                            // 0x00F8(0x0010)(ConstParm, ReferenceParm)
-	struct FGameplayTag                           Temp_struct_Variable;                              // 0x0108(0x000C)(ConstParm, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_5;                 // 0x0114(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasPreplanningTag_ReturnValue;            // 0x0115(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_116[0x2];                                      // 0x0116(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_6;                          // 0x0118(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_12C[0x4];                                      // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_6;                            // 0x0130(0x0010)(ConstParm, ReferenceParm)
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_7;                          // 0x0140(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_6;                 // 0x0154(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_155[0x3];                                      // 0x0155(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_7;                            // 0x0158(0x0010)(ConstParm, ReferenceParm)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_7;                 // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_169[0x3];                                      // 0x0169(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x016C(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0180(0x0008)(NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0188(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           Temp_struct_Variable_1;                            // 0x019C(0x000C)(ConstParm, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_1;        // 0x01A8(0x0008)(NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           Temp_struct_Variable_2;                            // 0x01B0(0x000C)(ConstParm, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasPreplanningTag_ReturnValue_1;          // 0x01BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasPreplanningTag_ReturnValue_2;          // 0x01BD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1BE[0x2];                                      // 0x01BE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_8;                          // 0x01C0(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D4[0x4];                                      // 0x01D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_8;                            // 0x01D8(0x0010)(ConstParm, ReferenceParm)
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_9;                          // 0x01E8(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_8;                 // 0x01FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1FD[0x3];                                      // 0x01FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_9;                            // 0x0200(0x0010)(ConstParm, ReferenceParm)
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_10;                         // 0x0210(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_9;                 // 0x0224(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_225[0x3];                                      // 0x0225(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_10;                           // 0x0228(0x0010)(ConstParm, ReferenceParm)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_10;                // 0x023C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_23D[0x3];                                      // 0x023D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_11;                           // 0x0240(0x0010)(ConstParm, ReferenceParm)
-	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0250(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0251(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_252[0x2];                                      // 0x0252(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0254(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x0258(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x026C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_2;        // 0x0270(0x0008)(NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x0278(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x027C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0280(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_11;                         // 0x0284(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_11;                // 0x0298(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_299[0x7];                                      // 0x0299(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_12;                           // 0x02A0(0x0010)(ConstParm, ReferenceParm)
-	int32                                         Temp_int_Current_Value_5FA215AA4A83D34D53DCA9954F8A0CCF_Variable; // 0x02B0(0x0004)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initialized_5FA215AA4A83D34D53DCA9954F8A0CCF_Variable; // 0x02B4(0x0001)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x02B5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2B6[0x2];                                      // 0x02B6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x02B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x02BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x02C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initd_Variable_1;               // 0x02C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C5[0x3];                                      // 0x02C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_12;                         // 0x02C8(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_12;                // 0x02DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2DD[0x3];                                      // 0x02DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_13;                           // 0x02E0(0x0010)(ConstParm, ReferenceParm)
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_13;                         // 0x02F0(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x0304(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_13;                // 0x0308(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_IsClosed_Variable_1;                     // 0x0309(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_IsClosed_Variable_2;                     // 0x030A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initd_Variable_2;               // 0x030B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_3;                  // 0x030C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x0310(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_3;                   // 0x0314(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_4;                  // 0x0318(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_5;                 // 0x031C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_IsClosed_Variable_3;                     // 0x0320(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_321[0x3];                                      // 0x0321(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable_5;                  // 0x0324(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_6;                 // 0x0328(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_4;                   // 0x032C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         Temp_object_Variable_14;                           // 0x0330(0x0010)(ConstParm, ReferenceParm)
-	int32                                         Temp_int_Array_Index_Variable_5;                   // 0x0340(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_6;                  // 0x0344(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_7;                 // 0x0348(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_6;                   // 0x034C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_14;                         // 0x0350(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_14;                // 0x0364(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_IsClosed_Variable_4;                     // 0x0365(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initd_Variable_3;               // 0x0366(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_367[0x1];                                      // 0x0367(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable_7;                  // 0x0368(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_8;                 // 0x036C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initd_Variable_4;               // 0x0370(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_IsClosed_Variable_5;                     // 0x0371(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_372[0x6];                                      // 0x0372(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_15;                           // 0x0378(0x0010)(ConstParm, ReferenceParm)
-	bool                                          Temp_bool_Has_Been_Initd_Variable_5;               // 0x0388(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_389[0x7];                                      // 0x0389(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_16;                           // 0x0390(0x0010)(ConstParm, ReferenceParm)
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_15;                         // 0x03A0(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_15;                // 0x03B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_IsClosed_Variable_6;                     // 0x03B5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initd_Variable_6;               // 0x03B6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_IsClosed_Variable_7;                     // 0x03B7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initd_Variable_7;               // 0x03B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3B9[0x3];                                      // 0x03B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable_7;                   // 0x03BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initd_Variable_8;               // 0x03C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                K2Node_Event_OldHeistState;                        // 0x03C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                K2Node_Event_CurrentHeistState;                    // 0x03C2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C3[0x1];                                      // 0x03C3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_16;                         // 0x03C4(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_16;                // 0x03D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D9[0x7];                                      // 0x03D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPD3AssaultManager*                     CallFunc_Get_ReturnValue;                          // 0x03E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZGameStateMachine*                   CallFunc_GetGameStateMachine_ReturnValue;          // 0x03E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RemoteEvent_ReturnValue;                  // 0x03F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F1[0x3];                                      // 0x03F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetRandomIntegerFromLevelStream_ReturnValue; // 0x03F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x03F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F9[0x7];                                      // 0x03F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0400(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_GetTransform_ReturnValue_1;               // 0x0460(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_bOutSuccess; // 0x04C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4C1[0x7];                                      // 0x04C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ULevelStreamingDynamic*                 CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_ReturnValue; // 0x04C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_bOutSuccess_1; // 0x04D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4D1[0x7];                                      // 0x04D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ULevelStreamingDynamic*                 CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_ReturnValue_1; // 0x04D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZDifficulty                                K2Node_Event_InDifficulty;                         // 0x04E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4E1[0x7];                                      // 0x04E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<ESBZSecurityCompany>                   K2Node_Event_InCompanies;                          // 0x04E8(0x0010)(ConstParm, ReferenceParm)
-	int32                                         Temp_int_Loop_Counter_Variable_8;                  // 0x04F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4FC[0x4];                                      // 0x04FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_17;                           // 0x0500(0x0010)(ConstParm, ReferenceParm)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_9;                 // 0x0510(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_514[0x4];                                      // 0x0514(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_18;                           // 0x0518(0x0010)(ConstParm, ReferenceParm)
-	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins;              // 0x0528(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0529(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_52A[0x2];                                      // 0x052A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable_8;                   // 0x052C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTagContainer                  K2Node_Event_PreplanningTagContainer;              // 0x0530(0x0020)(ConstParm)
-	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors;                 // 0x0550(0x0010)(ReferenceParm)
-	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors;            // 0x0560(0x0010)(ReferenceParm)
-	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_1;               // 0x0570(0x0010)(ReferenceParm)
-	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_1;          // 0x0580(0x0010)(ReferenceParm)
-	bool                                          Temp_bool_IsClosed_Variable_8;                     // 0x0590(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_591[0x3];                                      // 0x0591(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_17;                         // 0x0594(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_17;                // 0x05A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5A9[0x7];                                      // 0x05A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_2;               // 0x05B0(0x0010)(ReferenceParm)
-	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_2;          // 0x05C0(0x0010)(ReferenceParm)
-	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_3;               // 0x05D0(0x0010)(ReferenceParm)
-	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_3;          // 0x05E0(0x0010)(ReferenceParm)
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_18;                         // 0x05F0(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_18;                // 0x0604(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_605[0x3];                                      // 0x0605(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_4;               // 0x0608(0x0010)(ReferenceParm)
-	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_4;          // 0x0618(0x0010)(ReferenceParm)
-	struct FSBZEndMissionRequestData              K2Node_MakeStruct_SBZEndMissionRequestData;        // 0x0628(0x0008)(NoDestructor)
-	class ASBZMissionState*                       CallFunc_GetSBZMissionState_ReturnValue;           // 0x0630(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagTriggerVolume*                   K2Node_ActorBoundEvent_Volume_3;                   // 0x0638(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            K2Node_ActorBoundEvent_Bag_3;                      // 0x0640(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          K2Node_ActorBoundEvent_Handle_3;                   // 0x0648(0x0010)(NoDestructor)
-	int32                                         Temp_int_Array_Index_Variable_9;                   // 0x0658(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_9;                  // 0x065C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_10;                // 0x0660(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_664[0x4];                                      // 0x0664(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APawn*                                  K2Node_ActorBoundEvent_Pawn_9;                     // 0x0668(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZMissionState*                       CallFunc_GetSBZMissionState_ReturnValue_1;         // 0x0670(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0678(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_679[0x7];                                      // 0x0679(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZMissionState*                       CallFunc_GetSBZMissionState_ReturnValue_2;         // 0x0680(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable_10;                 // 0x0688(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_11;                // 0x068C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         Temp_object_Variable_19;                           // 0x0690(0x0010)(ConstParm, ReferenceParm)
-	class UPD3AssaultManager*                     CallFunc_Get_ReturnValue_1;                        // 0x06A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         Temp_object_Variable_20;                           // 0x06A8(0x0010)(ConstParm, ReferenceParm)
-	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins;                 // 0x06B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue;                // 0x06B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x06BA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initd_Variable_9;               // 0x06BB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetAndDriveAerialVehicleRoute_ReturnValue; // 0x06BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetAndDriveAerialVehicleRoute_ReturnValue_1; // 0x06BD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetAndDriveAerialVehicleRoute_ReturnValue_2; // 0x06BE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6BF[0x1];                                      // 0x06BF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_19;                         // 0x06C0(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_19;                // 0x06D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6D5[0xB];                                      // 0x06D5(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_GetTransform_ReturnValue_2;               // 0x06E0(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_GetTransform_ReturnValue_3;               // 0x0740(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_bOutSuccess_2; // 0x07A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7A1[0x7];                                      // 0x07A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ULevelStreamingDynamic*                 CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_ReturnValue_2; // 0x07A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_bOutSuccess_3; // 0x07B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7B1[0x7];                                      // 0x07B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ULevelStreamingDynamic*                 CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_ReturnValue_3; // 0x07B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_GetTransform_ReturnValue_4;               // 0x07C0(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_GetTransform_ReturnValue_5;               // 0x0820(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_bOutSuccess_4; // 0x0880(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_881[0x7];                                      // 0x0881(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ULevelStreamingDynamic*                 CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_ReturnValue_4; // 0x0888(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_bOutSuccess_5; // 0x0890(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_891[0x7];                                      // 0x0891(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ULevelStreamingDynamic*                 CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_ReturnValue_5; // 0x0898(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_GetTransform_ReturnValue_6;               // 0x08A0(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_GetTransform_ReturnValue_7;               // 0x0900(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_bOutSuccess_6; // 0x0960(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_961[0x7];                                      // 0x0961(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ULevelStreamingDynamic*                 CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_ReturnValue_6; // 0x0968(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_bOutSuccess_7; // 0x0970(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_971[0x7];                                      // 0x0971(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ULevelStreamingDynamic*                 CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_ReturnValue_7; // 0x0978(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_GetTransform_ReturnValue_8;               // 0x0980(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_IsClosed_Variable_9;                     // 0x09E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_bOutSuccess_8; // 0x09E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9E2[0x6];                                      // 0x09E2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class ULevelStreamingDynamic*                 CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_ReturnValue_8; // 0x09E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_GetTransform_ReturnValue_9;               // 0x09F0(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         Temp_object_Variable_21;                           // 0x0A50(0x0010)(ConstParm, ReferenceParm)
-	bool                                          CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_bOutSuccess_9; // 0x0A60(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A61[0x7];                                      // 0x0A61(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ULevelStreamingDynamic*                 CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_ReturnValue_9; // 0x0A68(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetRandomIntegerFromLevelStream_ReturnValue_1; // 0x0A70(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess_1;                 // 0x0A74(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A75[0xB];                                      // 0x0A75(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_GetTransform_ReturnValue_10;              // 0x0A80(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_bOutSuccess_10; // 0x0AE0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_AE1[0x7];                                      // 0x0AE1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ULevelStreamingDynamic*                 CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_ReturnValue_10; // 0x0AE8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_GetTransform_ReturnValue_11;              // 0x0AF0(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x0B50(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_bOutSuccess_11; // 0x0B54(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B55[0x3];                                      // 0x0B55(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class ULevelStreamingDynamic*                 CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_ReturnValue_11; // 0x0B58(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_12;                // 0x0B60(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initd_Variable_10;              // 0x0B64(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B65[0x3];                                      // 0x0B65(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_20;                         // 0x0B68(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B7C[0x4];                                      // 0x0B7C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_22;                           // 0x0B80(0x0010)(ConstParm, ReferenceParm)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_20;                // 0x0B90(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B91[0xF];                                      // 0x0B91(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             CallFunc_GetTransform_ReturnValue_12;              // 0x0BA0(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_IsClosed_Variable_10;                    // 0x0C00(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_bOutSuccess_12; // 0x0C01(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C02[0x6];                                      // 0x0C02(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class ULevelStreamingDynamic*                 CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_ReturnValue_12; // 0x0C08(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_GetTransform_ReturnValue_13;              // 0x0C10(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_GetTransform_ReturnValue_14;              // 0x0C70(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_bOutSuccess_13; // 0x0CD0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_CD1[0x7];                                      // 0x0CD1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ULevelStreamingDynamic*                 CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_ReturnValue_13; // 0x0CD8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_bOutSuccess_14; // 0x0CE0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_CE1[0x7];                                      // 0x0CE1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ULevelStreamingDynamic*                 CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_ReturnValue_14; // 0x0CE8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Current_Value_0970BA76400E0B07B52F70BFD1C1D505_Variable; // 0x0CF0(0x0004)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_21;                         // 0x0CF4(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0D08(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_21;                // 0x0D09(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x0D0A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_2;          // 0x0D0B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_13;                // 0x0D0C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initialized_0970BA76400E0B07B52F70BFD1C1D505_Variable; // 0x0D10(0x0001)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D11[0x3];                                      // 0x0D11(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_22;                         // 0x0D14(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_22;                // 0x0D28(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initd_Variable_11;              // 0x0D29(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RemoteEvent_ReturnValue_1;                // 0x0D2A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RemoteEvent_ReturnValue_2;                // 0x0D2B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_IsClosed_Variable_11;                    // 0x0D2C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D2D[0x3];                                      // 0x0D2D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZBagTriggerVolume*                   K2Node_ActorBoundEvent_Volume_2;                   // 0x0D30(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            K2Node_ActorBoundEvent_Bag_2;                      // 0x0D38(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          K2Node_ActorBoundEvent_Handle_2;                   // 0x0D40(0x0010)(NoDestructor)
-	class ASBZSpline*                             K2Node_ActorBoundEvent_Spline_1;                   // 0x0D50(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_ActorBoundEvent_Actor_1;                    // 0x0D58(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  K2Node_ActorBoundEvent_Pawn_8;                     // 0x0D60(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_10;                  // 0x0D68(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RemoteEvent_ReturnValue_3;                // 0x0D6C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D6D[0x3];                                      // 0x0D6D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class APawn*                                  K2Node_ActorBoundEvent_Pawn_7;                     // 0x0D70(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         Temp_object_Variable_23;                           // 0x0D78(0x0010)(ConstParm, ReferenceParm)
-	bool                                          CallFunc_RemoteEvent_ReturnValue_4;                // 0x0D88(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RemoteEvent_ReturnValue_5;                // 0x0D89(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D8A[0x6];                                      // 0x0D8A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPD3AssaultManager*                     CallFunc_Get_ReturnValue_2;                        // 0x0D90(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins_1;               // 0x0D98(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue_1;              // 0x0D99(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_2;                    // 0x0D9A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 K2Node_ActorBoundEvent_OldState_4;                 // 0x0D9B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 K2Node_ActorBoundEvent_State_4;                    // 0x0D9C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D9D[0x3];                                      // 0x0D9D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable_11;                 // 0x0DA0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 K2Node_ActorBoundEvent_OldState_3;                 // 0x0DA4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 K2Node_ActorBoundEvent_State_3;                    // 0x0DA5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_DA6[0x2];                                      // 0x0DA6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_14;                // 0x0DA8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initd_Variable_12;              // 0x0DAC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_DAD[0x3];                                      // 0x0DAD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetRandomIntegerFromLevelStream_ReturnValue_2; // 0x0DB0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess_2;                 // 0x0DB4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_DB5[0x3];                                      // 0x0DB5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_23;                         // 0x0DB8(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_23;                // 0x0DCC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ActorBoundEvent_bSabotaged_4;               // 0x0DCD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_DCE[0x2];                                      // 0x0DCE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_5;               // 0x0DD0(0x0010)(ReferenceParm)
-	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_5;          // 0x0DE0(0x0010)(ReferenceParm)
-	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0DF0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_DF1[0x7];                                      // 0x0DF1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_6;               // 0x0DF8(0x0010)(ReferenceParm)
-	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_6;          // 0x0E08(0x0010)(ReferenceParm)
-	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_7;               // 0x0E18(0x0010)(ReferenceParm)
-	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_7;          // 0x0E28(0x0010)(ReferenceParm)
-	bool                                          K2Node_ActorBoundEvent_bSabotaged_3;               // 0x0E38(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ActorBoundEvent_bSabotaged_2;               // 0x0E39(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E3A[0x6];                                      // 0x0E3A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class APawn*                                  K2Node_ActorBoundEvent_Pawn_6;                     // 0x0E40(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetState_ReturnValue;                     // 0x0E48(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RemoteEvent_ReturnValue_6;                // 0x0E49(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E4A[0x6];                                      // 0x0E4A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZPlayerStartGroup*                   K2Node_ActorBoundEvent_PlayerStartGroup_2;         // 0x0E50(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerStartGroup*                   K2Node_ActorBoundEvent_PlayerStartGroup_1;         // 0x0E58(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerStartGroup*                   K2Node_ActorBoundEvent_PlayerStartGroup;           // 0x0E60(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_IsClosed_Variable_12;                    // 0x0E68(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E69[0x7];                                      // 0x0E69(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_24;                           // 0x0E70(0x0010)(ConstParm, ReferenceParm)
-	int32                                         Temp_int_Array_Index_Variable_11;                  // 0x0E80(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess_3;                 // 0x0E84(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess_4;                 // 0x0E85(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E86[0x2];                                      // 0x0E86(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_8;               // 0x0E88(0x0010)(ReferenceParm)
-	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_8;          // 0x0E98(0x0010)(ReferenceParm)
-	bool                                          K2Node_ActorBoundEvent_bSabotaged_1;               // 0x0EA8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ActorBoundEvent_bSabotaged;                 // 0x0EA9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_EAA[0x2];                                      // 0x0EAA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_24;                         // 0x0EAC(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_24;                // 0x0EC0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_EC1[0x7];                                      // 0x0EC1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_9;               // 0x0EC8(0x0010)(ReferenceParm)
-	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_9;          // 0x0ED8(0x0010)(ReferenceParm)
-	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_10;              // 0x0EE8(0x0010)(ReferenceParm)
-	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_10;         // 0x0EF8(0x0010)(ReferenceParm)
-	class APawn*                                  K2Node_ActorBoundEvent_Pawn_5;                     // 0x0F08(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_11;              // 0x0F10(0x0010)(ReferenceParm)
-	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_11;         // 0x0F20(0x0010)(ReferenceParm)
-	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x0F30(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F31[0x7];                                      // 0x0F31(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPD3AssaultManager*                     CallFunc_Get_ReturnValue_3;                        // 0x0F38(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_12;              // 0x0F40(0x0010)(ReferenceParm)
-	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_12;         // 0x0F50(0x0010)(ReferenceParm)
-	ESBZGateState                                 K2Node_ActorBoundEvent_OldState_2;                 // 0x0F60(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 K2Node_ActorBoundEvent_State_2;                    // 0x0F61(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 K2Node_ActorBoundEvent_OldState_1;                 // 0x0F62(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 K2Node_ActorBoundEvent_State_1;                    // 0x0F63(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 K2Node_ActorBoundEvent_OldState;                   // 0x0F64(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 K2Node_ActorBoundEvent_State;                      // 0x0F65(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F66[0x2];                                      // 0x0F66(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_25;                           // 0x0F68(0x0010)(ConstParm, ReferenceParm)
-	struct FSBZBagHandle                          K2Node_Event_BagHandle;                            // 0x0F78(0x0010)(NoDestructor)
-	bool                                          CallFunc_RemoteEvent_ReturnValue_7;                // 0x0F88(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RemoteEvent_ReturnValue_8;                // 0x0F89(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RemoteEvent_ReturnValue_9;                // 0x0F8A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F8B[0x1];                                      // 0x0F8B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetRandomIntegerFromLevelStream_ReturnValue_3; // 0x0F8C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess_5;                 // 0x0F90(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F91[0x7];                                      // 0x0F91(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZInstantLoot*                        K2Node_Event_InstantLoot;                          // 0x0F98(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    K2Node_Event_TakenByPlayer;                        // 0x0FA0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initd_Variable_13;              // 0x0FA8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_FA9[0x3];                                      // 0x0FA9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable_12;                 // 0x0FAC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_15;                // 0x0FB0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_IsClosed_Variable_13;                    // 0x0FB4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_RemoteEvent_ReturnValue_10;               // 0x0FB5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initd_Variable_14;              // 0x0FB6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_IsClosed_Variable_14;                    // 0x0FB7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasAuthority_ReturnValue_1;               // 0x0FB8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetEnabled_ReturnValue;                   // 0x0FB9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetEnabled_ReturnValue_1;                 // 0x0FBA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetEnabled_ReturnValue_2;                 // 0x0FBB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetRandomIntegerFromStreamMixed_ReturnValue; // 0x0FBC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess_6;                 // 0x0FC0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_FC1[0x7];                                      // 0x0FC1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APawn*                                  K2Node_ActorBoundEvent_Pawn_4;                     // 0x0FC8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetEscapeVanRoute_ReturnValue;            // 0x0FD0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZTrafficNodeExec                           CallFunc_DriveEscapeVan_Exec;                      // 0x0FD1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_3;                    // 0x0FD2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_FD3[0x1];                                      // 0x0FD3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_4;            // 0x0FD4(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZSecuredBagVisualizeComponent*       K2Node_CustomEvent_Target;                         // 0x0FE8(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          K2Node_CustomEvent_BagHandle;                      // 0x0FF0(0x0010)(NoDestructor)
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_25;                         // 0x1000(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_25;                // 0x1014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1015[0x3];                                     // 0x1015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZBagType*                            K2Node_CustomEvent_BagType;                        // 0x1018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         Temp_object_Variable_26;                           // 0x1020(0x0010)(ConstParm, ReferenceParm)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x1030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_1;    // 0x1031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_2;    // 0x1032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1033[0x1];                                     // 0x1033(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_26;                         // 0x1034(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x1048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_26;                // 0x1049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x104A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_104B[0x5];                                     // 0x104B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_27;                           // 0x1050(0x0010)(ConstParm, ReferenceParm)
-	ESBZTrafficNodeExec                           CallFunc_SetAndDriveEscapeVanRoute_Exec;           // 0x1060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_4;                    // 0x1061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1062[0x2];                                     // 0x1062(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable_13;                 // 0x1064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_16;                // 0x1068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_106C[0x4];                                     // 0x106C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APawn*                                  K2Node_ActorBoundEvent_Pawn_3;                     // 0x1070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable_12;                  // 0x1078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_107C[0x4];                                     // 0x107C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_28;                           // 0x1080(0x0010)(ConstParm, ReferenceParm)
-	bool                                          Temp_bool_Has_Been_Initialized_46231495464CF70D30A9D392B44EAA45_Variable; // 0x1090(0x0001)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x1091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1092[0x2];                                     // 0x1092(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Current_Value_46231495464CF70D30A9D392B44EAA45_Variable; // 0x1094(0x0004)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue;              // 0x1098(0x0010)()
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x10A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_10A9[0x3];                                     // 0x10A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_17;                // 0x10AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_27;                         // 0x10B0(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasAuthority_ReturnValue_2;               // 0x10C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_27;                // 0x10C5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_10C6[0x2];                                     // 0x10C6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class APawn*                                  K2Node_ActorBoundEvent_Pawn_2;                     // 0x10C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetState_ReturnValue_1;                   // 0x10D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetState_ReturnValue_2;                   // 0x10D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_10D2[0x2];                                     // 0x10D2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRandomStream                          CallFunc_GetMixedRandomStream_ReturnValue;         // 0x10D4(0x0008)(ZeroConstructor, NoDestructor)
-	bool                                          SBZK2Node_RandomExecutionSequence_CmpSuccess;      // 0x10DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_10DD[0x3];                                     // 0x10DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         SBZK2Node_RandomExecutionSequence_RngBitMask;      // 0x10E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins_1;            // 0x10E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_5;                    // 0x10E5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_10E6[0x2];                                     // 0x10E6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class APawn*                                  K2Node_ActorBoundEvent_Pawn_1;                     // 0x10E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetRandomBoolWithWeightFromStreamMixed_ReturnValue; // 0x10F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZTrafficNodeExec                           CallFunc_SetAndDriveEscapeVanRoute_Exec_1;         // 0x10F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_6;                    // 0x10F2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_10F3[0x5];                                     // 0x10F3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZBagTriggerVolume*                   K2Node_ActorBoundEvent_Volume_1;                   // 0x10F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            K2Node_ActorBoundEvent_Bag_1;                      // 0x1100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          K2Node_ActorBoundEvent_Handle_1;                   // 0x1108(0x0010)(NoDestructor)
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_28;                         // 0x1118(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_28;                // 0x112C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_112D[0x3];                                     // 0x112D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_29;                           // 0x1130(0x0010)(ConstParm, ReferenceParm)
-	bool                                          CallFunc_SetEscapeVanRoute_ReturnValue_1;          // 0x1140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetEscapeVanRoute_ReturnValue_2;          // 0x1141(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_IsClosed_Variable_15;                    // 0x1142(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1143[0x1];                                     // 0x1143(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_29;                         // 0x1144(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_29;                // 0x1158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1159[0x3];                                     // 0x1159(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_5;            // 0x115C(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_3;        // 0x1170(0x0008)(NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_4;        // 0x1178(0x0008)(NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x1180(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ASBZSpline*                             K2Node_ActorBoundEvent_Spline;                     // 0x1188(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 K2Node_ActorBoundEvent_Actor;                      // 0x1190(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZMissionState*                       CallFunc_GetSBZMissionState_ReturnValue_3;         // 0x1198(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins_2;               // 0x11A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue_2;              // 0x11A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_7;                    // 0x11A2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11A3[0x5];                                     // 0x11A3(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZMissionState*                       CallFunc_GetSBZMissionState_ReturnValue_4;         // 0x11A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZMissionState*                       CallFunc_GetSBZMissionState_ReturnValue_5;         // 0x11B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins_3;               // 0x11B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue_3;              // 0x11B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_8;                    // 0x11BA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11BB[0x5];                                     // 0x11BB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZMissionState*                       CallFunc_GetSBZMissionState_ReturnValue_6;         // 0x11C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZMissionState*                       CallFunc_GetSBZMissionState_ReturnValue_7;         // 0x11C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  K2Node_ActorBoundEvent_Pawn;                       // 0x11D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initialized_6CAEE62C499E2E583CA9A8BB44A831B4_Variable; // 0x11D8(0x0001)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins_2;            // 0x11D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_9;                    // 0x11DA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11DB[0x1];                                     // 0x11DB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Current_Value_6CAEE62C499E2E583CA9A8BB44A831B4_Variable; // 0x11DC(0x0004)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess_7;                 // 0x11E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11E1[0x3];                                     // 0x11E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_18;                // 0x11E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetEscapeVanRoute_ReturnValue_3;          // 0x11E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x11E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x11EA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_2;        // 0x11EB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetRandomBoolWithWeightFromStreamMixed_ReturnValue_1; // 0x11EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess_8;                 // 0x11ED(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11EE[0x2];                                     // 0x11EE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZBagTriggerVolume*                   K2Node_ActorBoundEvent_Volume;                     // 0x11F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            K2Node_ActorBoundEvent_Bag;                        // 0x11F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          K2Node_ActorBoundEvent_Handle;                     // 0x1200(0x0010)(NoDestructor)
-	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins_3;            // 0x1210(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_10;                   // 0x1211(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x1212(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_3;                // 0x1213(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins_4;               // 0x1214(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue_4;              // 0x1215(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_11;                   // 0x1216(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1217[0x1];                                     // 0x1217(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetRandomIntegerFromStreamMixed_ReturnValue_1; // 0x1218(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasAuthority_ReturnValue_3;               // 0x121C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_121D[0x3];                                     // 0x121D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_19;                // 0x1220(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetRandomIntegerFromLevelStream_ReturnValue_4; // 0x1224(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x1228(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initd_Variable_15;              // 0x122C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins_4;            // 0x122D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_12;                   // 0x122E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_122F[0x1];                                     // 0x122F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABP_LootableCar_01_C*                   CallFunc_Array_Get_Item;                           // 0x1230(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x1238(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_123C[0x4];                                     // 0x123C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABP_LootableCar_01_C*                   CallFunc_Array_Get_Item_1;                         // 0x1240(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x1248(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x124C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ActorHasTag_ReturnValue;                  // 0x124D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_124E[0x2];                                     // 0x124E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_6;            // 0x1250(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_7;            // 0x1264(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_8;            // 0x1278(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_128C[0x4];                                     // 0x128C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_5;        // 0x1290(0x0008)(NoDestructor, HasGetValueTypeHash)
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_9;            // 0x1298(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_IsClosed_Variable_16;                    // 0x12AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_12AD[0x3];                                     // 0x12AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZDestroyGroup*                       CallFunc_Array_Get_Item_2;                         // 0x12B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x12B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_12BC[0x4];                                     // 0x12BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_13;              // 0x12C0(0x0010)(ReferenceParm)
-	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_13;         // 0x12D0(0x0010)(ReferenceParm)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x12E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_12E1[0x7];                                     // 0x12E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_30;                           // 0x12E8(0x0010)(ConstParm, ReferenceParm)
-	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins_5;               // 0x12F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue_5;              // 0x12F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_12FA[0x2];                                     // 0x12FA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x12FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_13;                   // 0x1300(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x1301(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins_6;               // 0x1302(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue_6;              // 0x1303(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_14;                   // 0x1304(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1305[0x3];                                     // 0x1305(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZMissionState*                       CallFunc_GetSBZMissionState_ReturnValue_8;         // 0x1308(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initd_Variable_16;              // 0x1310(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1311[0x3];                                     // 0x1311(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_30;                         // 0x1314(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_LootableCarPartBase_C*              CallFunc_Array_Get_Item_3;                         // 0x1328(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_30;                // 0x1330(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1331[0x7];                                     // 0x1331(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_31;                           // 0x1338(0x0010)(ConstParm, ReferenceParm)
-	int32                                         CallFunc_GetRandomIntegerFromLevelStream_ReturnValue_5; // 0x1348(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x134C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x1350(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x1354(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1355[0x3];                                     // 0x1355(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPD3AssaultManager*                     CallFunc_Get_ReturnValue_4;                        // 0x1358(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins_5;            // 0x1360(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_15;                   // 0x1361(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins_6;            // 0x1362(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_16;                   // 0x1363(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initialized_E98E784F466BE2803B7DB5B89724DD7E_Variable; // 0x1364(0x0001)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1365[0x3];                                     // 0x1365(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABP_LootableCar_01_C*                   CallFunc_Array_Get_Item_4;                         // 0x1368(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_3;               // 0x1370(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x1374(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1375[0x3];                                     // 0x1375(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_31;                         // 0x1378(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_31;                // 0x138C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_138D[0x3];                                     // 0x138D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZDestroyGroup*                       CallFunc_Array_Get_Item_5;                         // 0x1390(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  K2Node_CustomEvent_Pawn_3;                         // 0x1398(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_14;              // 0x13A0(0x0010)(ReferenceParm)
-	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_14;         // 0x13B0(0x0010)(ReferenceParm)
-	TArray<class AActor*>                         Temp_object_Variable_32;                           // 0x13C0(0x0010)(ConstParm, ReferenceParm)
-	int32                                         Temp_int_Current_Value_E98E784F466BE2803B7DB5B89724DD7E_Variable; // 0x13D0(0x0004)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class APawn* Pawn)>            K2Node_CreateDelegate_OutputDelegate_10;           // 0x13D4(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue_20;                // 0x13E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins_7;            // 0x13EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_17;                   // 0x13ED(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_13EE[0x2];                                     // 0x13EE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_32;                         // 0x13F0(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_32;                // 0x1404(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_4;                // 0x1405(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_5;                // 0x1406(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins_7;               // 0x1407(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue_7;              // 0x1408(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_18;                   // 0x1409(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins_8;               // 0x140A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue_8;              // 0x140B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_19;                   // 0x140C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_3;          // 0x140D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins_9;               // 0x140E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue_9;              // 0x140F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_20;                   // 0x1410(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initd_Variable_17;              // 0x1411(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetRandomBoolWithWeightFromStreamMixed_ReturnValue_2; // 0x1412(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetRandomBoolWithWeightFromStreamMixed_ReturnValue_3; // 0x1413(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetRandomBoolWithWeightFromStreamMixed_ReturnValue_4; // 0x1414(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1415[0x3];                                     // 0x1415(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_33;                           // 0x1418(0x0010)(ConstParm, ReferenceParm)
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_33;                         // 0x1428(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_33;                // 0x143C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetSearchedPart_lootSuccessfullyRemoved;  // 0x143D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetSearchedPart_lootSuccessfullyRemoved_1; // 0x143E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetSearchedPart_lootSuccessfullyRemoved_2; // 0x143F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ABP_LootableCar_01_C*                   CallFunc_Array_Get_Item_6;                         // 0x1440(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_4;               // 0x1448(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_4;                // 0x144C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_144D[0x3];                                     // 0x144D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_2;            // 0x1450(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_4;          // 0x1454(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_5;          // 0x1455(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1456[0x2];                                     // 0x1456(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue_3;            // 0x1458(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_145C[0x4];                                     // 0x145C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABP_LootableCar_01_C*                   CallFunc_Array_Get_Item_7;                         // 0x1460(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_5;               // 0x1468(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_5;                // 0x146C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_146D[0x3];                                     // 0x146D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_34;                           // 0x1470(0x0010)(ConstParm, ReferenceParm)
-	class ASBZDestroyGroup*                       CallFunc_Array_Get_Item_8;                         // 0x1480(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_6;               // 0x1488(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_148C[0x4];                                     // 0x148C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_15;              // 0x1490(0x0010)(ReferenceParm)
-	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_15;         // 0x14A0(0x0010)(ReferenceParm)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_6;                // 0x14B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14B1[0x3];                                     // 0x14B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x14B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       CallFunc_Array_Get_Item_9;                         // 0x14B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x14C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14C1[0x3];                                     // 0x14C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Array_Index_Variable_13;                  // 0x14C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins_10;              // 0x14C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue_10;             // 0x14C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14CA[0x6];                                     // 0x14CA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABP_LootableCar_01_C*                   CallFunc_Array_Get_Item_10;                        // 0x14D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_21;                   // 0x14D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14D9[0x7];                                     // 0x14D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABP_LootableCarPartBase_C*              CallFunc_Array_Get_Item_11;                        // 0x14E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_7;               // 0x14E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x14EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_7;                // 0x14F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14F1[0x3];                                     // 0x14F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_34;                         // 0x14F4(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         Temp_object_Variable_35;                           // 0x1508(0x0010)(ConstParm, ReferenceParm)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_34;                // 0x1518(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1519[0x7];                                     // 0x1519(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class APawn*                                  K2Node_CustomEvent_Pawn_2;                         // 0x1520(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins_11;              // 0x1528(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue_11;             // 0x1529(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_22;                   // 0x152A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_152B[0x1];                                     // 0x152B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_35;                         // 0x152C(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_35;                // 0x1540(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1541[0x3];                                     // 0x1541(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Find_ReturnValue_1;                 // 0x1544(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class APawn* Pawn)>            K2Node_CreateDelegate_OutputDelegate_11;           // 0x1548(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_155C[0x4];                                     // 0x155C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZPlayerLookAtTrigger*                CallFunc_Array_Get_Item_12;                        // 0x1560(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Array_RemoveItem_ReturnValue_1;           // 0x1568(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins_12;              // 0x1569(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue_12;             // 0x156A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_23;                   // 0x156B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initialized_08B1CFC94A731BD635A4CFB2CFE84742_Variable; // 0x156C(0x0001)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_156D[0x3];                                     // 0x156D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZDestroyGroup*                       CallFunc_Array_Get_Item_13;                        // 0x1570(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_8;               // 0x1578(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_157C[0x4];                                     // 0x157C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_16;              // 0x1580(0x0010)(ReferenceParm)
-	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_16;         // 0x1590(0x0010)(ReferenceParm)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_8;                // 0x15A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_15A1[0x3];                                     // 0x15A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Current_Value_08B1CFC94A731BD635A4CFB2CFE84742_Variable; // 0x15A4(0x0004)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_6;          // 0x15A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_15A9[0x3];                                     // 0x15A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_21;                // 0x15AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  K2Node_CustomEvent_Pawn_1;                         // 0x15B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         Temp_object_Variable_36;                           // 0x15B8(0x0010)(ConstParm, ReferenceParm)
-	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins_13;              // 0x15C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue_13;             // 0x15C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_24;                   // 0x15CA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_15CB[0x5];                                     // 0x15CB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABP_CarLift_02_C*                       CallFunc_Array_Get_Item_14;                        // 0x15D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_9;               // 0x15D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_9;                // 0x15DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasAuthority_ReturnValue_4;               // 0x15DD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_6;                // 0x15DE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_7;                // 0x15DF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_IsClosed_Variable_17;                    // 0x15E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_15E1[0x3];                                     // 0x15E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_36;                         // 0x15E4(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_36;                // 0x15F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_15F9[0x3];                                     // 0x15F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class APawn* Pawn)>            K2Node_CreateDelegate_OutputDelegate_12;           // 0x15FC(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_CarLift_02_C*                       CallFunc_Array_Get_Item_15;                        // 0x1610(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_10;              // 0x1618(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_10;               // 0x161C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x161D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_161E[0x2];                                     // 0x161E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_37;                           // 0x1620(0x0010)(ConstParm, ReferenceParm)
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_37;                         // 0x1630(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_37;                // 0x1644(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetRandomBoolWithWeightFromLevelStream_ReturnValue; // 0x1645(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetRandomBoolWithWeightFromLevelStream_ReturnValue_1; // 0x1646(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins_14;              // 0x1647(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue_14;             // 0x1648(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_25;                   // 0x1649(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetRandomBoolWithWeightFromStreamMixed_ReturnValue_5; // 0x164A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetRandomBoolWithWeightFromLevelStream_ReturnValue_2; // 0x164B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x164C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_164D[0x3];                                     // 0x164D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FName>                           K2Node_MakeArray_Array;                            // 0x1650(0x0010)(ReferenceParm)
-	TArray<class AActor*>                         Temp_object_Variable_38;                           // 0x1660(0x0010)(ConstParm, ReferenceParm)
-	class APawn*                                  K2Node_CustomEvent_Pawn;                           // 0x1670(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class APawn* Pawn)>            K2Node_CreateDelegate_OutputDelegate_13;           // 0x1678(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins_15;              // 0x168C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue_15;             // 0x168D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_26;                   // 0x168E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_168F[0x1];                                     // 0x168F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable_1;                               // 0x1690(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1694[0x4];                                     // 0x1694(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABP_LootableCar_01_C*                   CallFunc_Array_Get_Item_16;                        // 0x1698(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_11;              // 0x16A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_11;               // 0x16A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_2;           // 0x16A5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16A6[0x2];                                     // 0x16A6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_22;                // 0x16A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_38;                         // 0x16AC(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         Temp_object_Variable_39;                           // 0x16C0(0x0010)(ConstParm, ReferenceParm)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_38;                // 0x16D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16D1[0x3];                                     // 0x16D1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_39;                         // 0x16D4(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_LootableCar_01_C*                   CallFunc_Array_Get_Item_17;                        // 0x16E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_39;                // 0x16F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ActorHasTag_ReturnValue_1;                // 0x16F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16F2[0x2];                                     // 0x16F2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Length_ReturnValue_12;              // 0x16F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class AActor*>                         Temp_object_Variable_40;                           // 0x16F8(0x0010)(ConstParm, ReferenceParm)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_12;               // 0x1708(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1709[0x7];                                     // 0x1709(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABP_LootableCar_01_C*                   CallFunc_Array_Get_Item_18;                        // 0x1710(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_13;              // 0x1718(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue_13;               // 0x171C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_ActorHasTag_ReturnValue_2;                // 0x171D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_171E[0x2];                                     // 0x171E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_40;                         // 0x1720(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1734[0x4];                                     // 0x1734(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         Temp_object_Variable_41;                           // 0x1738(0x0010)(ConstParm, ReferenceParm)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_40;                // 0x1748(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_8;                // 0x1749(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_9;                // 0x174A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_174B[0x1];                                     // 0x174B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_41;                         // 0x174C(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins_16;              // 0x1760(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue_16;             // 0x1761(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_41;                // 0x1762(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_27;                   // 0x1763(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins_8;            // 0x1764(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasAuthority_ReturnValue_5;               // 0x1765(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_28;                   // 0x1766(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins_9;            // 0x1767(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins_10;           // 0x1768(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_29;                   // 0x1769(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_30;                   // 0x176A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins_11;           // 0x176B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess_31;                   // 0x176C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_176D[0x3];                                     // 0x176D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x1770(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x1774(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.GetRandomPart
-// 0x000C (0x000C - 0x0000)
-struct G_SnGFO_Scripting_C_GetRandomPart final
-{
-public:
-	E_LootableCarPart                             Part;                                              // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	E_LootableCarPart                             NewLocalVar_0;                                     // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_GetRandomIntegerFromLevelStream_ReturnValue; // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.HeistStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct G_SnGFO_Scripting_C_HeistStateChanged final
-{
-public:
-	EPD3HeistState                                OldHeistState;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CurrentHeistState_0;                               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.LootBagHandle
-// 0x0018 (0x0018 - 0x0000)
-struct G_SnGFO_Scripting_C_LootBagHandle final
-{
-public:
-	class USBZSecuredBagVisualizeComponent*       Target;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          BagHandle;                                         // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.LootValueFilter
-// 0x0008 (0x0008 - 0x0000)
-struct G_SnGFO_Scripting_C_LootValueFilter final
-{
-public:
-	class USBZBagType*                            BagType;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.OnLevelModifiersApplied
-// 0x0018 (0x0018 - 0x0000)
-struct G_SnGFO_Scripting_C_OnLevelModifiersApplied final
-{
-public:
-	ESBZDifficulty                                InDifficulty;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<ESBZSecurityCompany>                   InCompanies;                                       // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.OnPlayerInstantLootTaken
-// 0x0010 (0x0010 - 0x0000)
-struct G_SnGFO_Scripting_C_OnPlayerInstantLootTaken final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.OnPlayerPickedUpBag
-// 0x0010 (0x0010 - 0x0000)
-struct G_SnGFO_Scripting_C_OnPlayerPickedUpBag final
-{
-public:
-	struct FSBZBagHandle                          BagHandle;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.OnPreplanningAssetsTagsApplied
-// 0x0020 (0x0020 - 0x0000)
-struct G_SnGFO_Scripting_C_OnPreplanningAssetsTagsApplied final
-{
-public:
-	struct FGameplayTagContainer                  PreplanningTagContainer;                           // 0x0000(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.PlayerLookedAtLootCarInGarage
-// 0x0008 (0x0008 - 0x0000)
-struct G_SnGFO_Scripting_C_PlayerLookedAtLootCarInGarage final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.PlayerLookedAtLootCarInGarageLowered
-// 0x0008 (0x0008 - 0x0000)
-struct G_SnGFO_Scripting_C_PlayerLookedAtLootCarInGarageLowered final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.PlayerLookedAtLootCarOutside
-// 0x0008 (0x0008 - 0x0000)
-struct G_SnGFO_Scripting_C_PlayerLookedAtLootCarOutside final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.PlayerLookedAtSearchedCar
-// 0x0008 (0x0008 - 0x0000)
-struct G_SnGFO_Scripting_C_PlayerLookedAtSearchedCar final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.SetEscapeZone
-// 0x0020 (0x0020 - 0x0000)
-struct G_SnGFO_Scripting_C_SetEscapeZone final
+struct G_SnGFO_Scripting_C_SetSecureLootZone final
 {
 public:
 	bool                                          bEnabled;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ASBZWaypoint*                           Waypoint;                                          // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZReplicatedBinaryStateActor*         MarkerZone;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerTriggerVolume*                EscapeVolume;                                      // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagTriggerVolume*                   BagTriggerVolume;                                  // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerTriggerVolume*                VoiceVolume;                                       // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_SetSecureLootZone;
 
 // Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.SetSearchedPart
 // 0x0010 (0x0010 - 0x0000)
@@ -1207,18 +45,1204 @@ public:
 	E_LootableCarPart                             CallFunc_GetRandomPart_Part;                       // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_searchPart_lootSuccessfullyRemoved;       // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_SetSearchedPart;
 
-// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.SetSecureLootZone
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.SetEscapeZone
 // 0x0020 (0x0020 - 0x0000)
-struct G_SnGFO_Scripting_C_SetSecureLootZone final
+struct G_SnGFO_Scripting_C_SetEscapeZone final
 {
 public:
 	bool                                          bEnabled;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ASBZWaypoint*                           Waypoint;                                          // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagTriggerVolume*                   BagTriggerVolume;                                  // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerTriggerVolume*                VoiceVolume;                                       // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZReplicatedBinaryStateActor*         MarkerZone;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerTriggerVolume*                EscapeVolume;                                      // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_SetEscapeZone;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.PlayerLookedAtSearchedCar
+// 0x0008 (0x0008 - 0x0000)
+struct G_SnGFO_Scripting_C_PlayerLookedAtSearchedCar final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_PlayerLookedAtSearchedCar;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.PlayerLookedAtLootCarOutside
+// 0x0008 (0x0008 - 0x0000)
+struct G_SnGFO_Scripting_C_PlayerLookedAtLootCarOutside final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_PlayerLookedAtLootCarOutside;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.PlayerLookedAtLootCarInGarageLowered
+// 0x0008 (0x0008 - 0x0000)
+struct G_SnGFO_Scripting_C_PlayerLookedAtLootCarInGarageLowered final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_PlayerLookedAtLootCarInGarageLowered;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.PlayerLookedAtLootCarInGarage
+// 0x0008 (0x0008 - 0x0000)
+struct G_SnGFO_Scripting_C_PlayerLookedAtLootCarInGarage final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_PlayerLookedAtLootCarInGarage;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.OnPreplanningAssetsTagsApplied
+// 0x0020 (0x0020 - 0x0000)
+struct G_SnGFO_Scripting_C_OnPreplanningAssetsTagsApplied final
+{
+public:
+	struct FGameplayTagContainer                  PreplanningTagContainer_OnPreplanningAssetsTagsApplied; // 0x0000(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_OnPreplanningAssetsTagsApplied;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.OnPlayerPickedUpBag
+// 0x0010 (0x0010 - 0x0000)
+struct G_SnGFO_Scripting_C_OnPlayerPickedUpBag final
+{
+public:
+	struct FSBZBagHandle                          BagHandle_OnPlayerPickedUpBag;                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_OnPlayerPickedUpBag;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.OnPlayerInstantLootTaken
+// 0x0010 (0x0010 - 0x0000)
+struct G_SnGFO_Scripting_C_OnPlayerInstantLootTaken final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot_OnPlayerInstantLootTaken;              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer_OnPlayerInstantLootTaken;            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_OnPlayerInstantLootTaken;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.OnLevelModifiersApplied
+// 0x0018 (0x0018 - 0x0000)
+struct G_SnGFO_Scripting_C_OnLevelModifiersApplied final
+{
+public:
+	ESBZDifficulty                                InDifficulty_OnLevelModifiersApplied;              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<ESBZSecurityCompany>                   InCompanies_OnLevelModifiersApplied;               // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_OnLevelModifiersApplied;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.LootValueFilter
+// 0x0008 (0x0008 - 0x0000)
+struct G_SnGFO_Scripting_C_LootValueFilter final
+{
+public:
+	class USBZBagType*                            BagType;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_LootValueFilter;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.LootBagHandle
+// 0x0018 (0x0018 - 0x0000)
+struct G_SnGFO_Scripting_C_LootBagHandle final
+{
+public:
+	class USBZSecuredBagVisualizeComponent*       Target;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          BagHandle;                                         // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_LootBagHandle;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.HeistStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct G_SnGFO_Scripting_C_HeistStateChanged final
+{
+public:
+	EPD3HeistState                                OldHeistState_HeistStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CurrentHeistState_HeistStateChanged;               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_HeistStateChanged;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.GetRandomPart
+// 0x000C (0x000C - 0x0000)
+struct G_SnGFO_Scripting_C_GetRandomPart final
+{
+public:
+	E_LootableCarPart                             Part;                                              // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	E_LootableCarPart                             NewLocalVar_0;                                     // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetRandomIntegerFromLevelStream_ReturnValue; // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_GetRandomPart;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.ExecuteUbergraph_G_SnGFO_Scripting
+// 0x1720 (0x1720 - 0x0000)
+struct G_SnGFO_Scripting_C_ExecuteUbergraph_G_SnGFO_Scripting final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable;                            // 0x0004(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         Temp_object_Variable;                              // 0x0018(0x0010)(ConstParm, ReferenceParm)
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_1;                          // 0x0028(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue;                   // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable_1;                            // 0x0040(0x0010)(ConstParm, ReferenceParm)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_1;                 // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_51[0x3];                                       // 0x0051(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0054(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_2;                          // 0x0068(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable_2;                            // 0x0080(0x0010)(ConstParm, ReferenceParm)
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_3;                          // 0x0090(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_2;                 // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A5[0x3];                                       // 0x00A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable_3;                            // 0x00A8(0x0010)(ConstParm, ReferenceParm)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_3;                 // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B9[0x3];                                       // 0x00B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_4;                          // 0x00BC(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         Temp_object_Variable_4;                            // 0x00D0(0x0010)(ConstParm, ReferenceParm)
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_5;                          // 0x00E0(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_4;                 // 0x00F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F5[0x3];                                       // 0x00F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable_5;                            // 0x00F8(0x0010)(ConstParm, ReferenceParm)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_5;                 // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_109[0x3];                                      // 0x0109(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x010C(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0120(0x0008)(NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0128(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           Temp_struct_Variable;                              // 0x013C(0x000C)(ConstParm, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_1;        // 0x0148(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           Temp_struct_Variable_1;                            // 0x0150(0x000C)(ConstParm, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasPreplanningTag_ReturnValue;            // 0x015C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasPreplanningTag_ReturnValue_1;          // 0x015D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_15E[0x2];                                      // 0x015E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_6;                          // 0x0160(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_174[0x4];                                      // 0x0174(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable_6;                            // 0x0178(0x0010)(ConstParm, ReferenceParm)
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_7;                          // 0x0188(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_6;                 // 0x019C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19D[0x3];                                      // 0x019D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable_7;                            // 0x01A0(0x0010)(ConstParm, ReferenceParm)
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_8;                          // 0x01B0(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_7;                 // 0x01C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C5[0x3];                                      // 0x01C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable_8;                            // 0x01C8(0x0010)(ConstParm, ReferenceParm)
+	struct FGameplayTag                           Temp_struct_Variable_2;                            // 0x01D8(0x000C)(ConstParm, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_8;                 // 0x01E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1E5[0x3];                                      // 0x01E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x01E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasPreplanningTag_ReturnValue_2;          // 0x01EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1ED[0x3];                                      // 0x01ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x01F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_1;                  // 0x01F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x01F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x01FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_1;                   // 0x0200(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_204[0x4];                                      // 0x0204(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable_9;                            // 0x0208(0x0010)(ConstParm, ReferenceParm)
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_9;                          // 0x0218(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_IsClosed_Variable;                       // 0x022C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x022D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_22E[0x2];                                      // 0x022E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x0230(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x0234(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_2;        // 0x0248(0x0008)(NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x0250(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_3;                  // 0x0254(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x0258(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_2;                   // 0x025C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initd_Variable_1;               // 0x0260(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_261[0x3];                                      // 0x0261(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_10;                         // 0x0264(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_IsClosed_Variable_1;                     // 0x0278(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_9;                 // 0x0279(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_27A[0x6];                                      // 0x027A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable_10;                           // 0x0280(0x0010)(ConstParm, ReferenceParm)
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_11;                         // 0x0290(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2A4[0x4];                                      // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable_11;                           // 0x02A8(0x0010)(ConstParm, ReferenceParm)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_10;                // 0x02B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initd_Variable_2;               // 0x02B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2BA[0x2];                                      // 0x02BA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable_3;                   // 0x02BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_IsClosed_Variable_2;                     // 0x02C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_IsClosed_Variable_3;                     // 0x02C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C2[0x2];                                      // 0x02C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable_4;                  // 0x02C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_4;                 // 0x02C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_4;                   // 0x02CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_12;                         // 0x02D0(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_11;                // 0x02E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2E5[0x3];                                      // 0x02E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable_5;                   // 0x02E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_5;                  // 0x02EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_5;                 // 0x02F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_6;                   // 0x02F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         Temp_object_Variable_12;                           // 0x02F8(0x0010)(ConstParm, ReferenceParm)
+	int32                                         Temp_int_Loop_Counter_Variable_6;                  // 0x0308(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_6;                 // 0x030C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_7;                  // 0x0310(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_7;                 // 0x0314(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_7;                   // 0x0318(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_13;                         // 0x031C(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_12;                // 0x0330(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_IsClosed_Variable_4;                     // 0x0331(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initd_Variable_3;               // 0x0332(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_333[0x1];                                      // 0x0333(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable_8;                  // 0x0334(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_IsClosed_Variable_5;                     // 0x0338(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_339[0x3];                                      // 0x0339(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_8;                 // 0x033C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         Temp_object_Variable_13;                           // 0x0340(0x0010)(ConstParm, ReferenceParm)
+	bool                                          Temp_bool_Has_Been_Initd_Variable_4;               // 0x0350(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_351[0x3];                                      // 0x0351(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Array_Index_Variable_8;                   // 0x0354(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_IsClosed_Variable_6;                     // 0x0358(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initd_Variable_5;               // 0x0359(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_35A[0x6];                                      // 0x035A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable_14;                           // 0x0360(0x0010)(ConstParm, ReferenceParm)
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_14;                         // 0x0370(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_IsClosed_Variable_7;                     // 0x0384(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_13;                // 0x0385(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initd_Variable_6;               // 0x0386(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0387(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         Temp_object_Variable_15;                           // 0x0388(0x0010)(ConstParm, ReferenceParm)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0398(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x0399(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_39A[0x2];                                      // 0x039A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_15;                         // 0x039C(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x03B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_14;                // 0x03B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_IsClosed_Variable_8;                     // 0x03B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initd_Variable_7;               // 0x03B3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initd_Variable_8;               // 0x03B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3B5[0x3];                                      // 0x03B5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable_9;                  // 0x03B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                K2Node_Event_OldHeistState;                        // 0x03BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                K2Node_Event_CurrentHeistState;                    // 0x03BD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3BE[0x2];                                      // 0x03BE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_9;                 // 0x03C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_16;                         // 0x03C4(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_15;                // 0x03D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3D9[0x7];                                      // 0x03D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPD3AssaultManager*                     CallFunc_Get_ReturnValue;                          // 0x03E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         Temp_object_Variable_16;                           // 0x03E8(0x0010)(ConstParm, ReferenceParm)
+	class USBZGameStateMachine*                   CallFunc_GetGameStateMachine_ReturnValue;          // 0x03F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RemoteEvent_ReturnValue;                  // 0x0400(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_401[0x3];                                      // 0x0401(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetRandomIntegerFromLevelStream_ReturnValue; // 0x0404(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0408(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_409[0x7];                                      // 0x0409(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_GetTransform_ReturnValue;                 // 0x0410(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_GetTransform_ReturnValue_1;               // 0x0470(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_bOutSuccess; // 0x04D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4D1[0x7];                                      // 0x04D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ULevelStreamingDynamic*                 CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_ReturnValue; // 0x04D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_bOutSuccess_1; // 0x04E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4E1[0x7];                                      // 0x04E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ULevelStreamingDynamic*                 CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_ReturnValue_1; // 0x04E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZDifficulty                                K2Node_Event_InDifficulty;                         // 0x04F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4F1[0x7];                                      // 0x04F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<ESBZSecurityCompany>                   K2Node_Event_InCompanies;                          // 0x04F8(0x0010)(ConstParm, ReferenceParm)
+	int32                                         Temp_int_Array_Index_Variable_9;                   // 0x0508(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins;              // 0x050C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x050D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_50E[0x2];                                      // 0x050E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGameplayTagContainer                  K2Node_Event_PreplanningTagContainer;              // 0x0510(0x0020)(ConstParm)
+	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors;                 // 0x0530(0x0010)(ReferenceParm)
+	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors;            // 0x0540(0x0010)(ReferenceParm)
+	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_1;               // 0x0550(0x0010)(ReferenceParm)
+	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_1;          // 0x0560(0x0010)(ReferenceParm)
+	bool                                          Temp_bool_IsClosed_Variable_9;                     // 0x0570(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_571[0x3];                                      // 0x0571(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_17;                         // 0x0574(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_16;                // 0x0588(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_589[0x7];                                      // 0x0589(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_2;               // 0x0590(0x0010)(ReferenceParm)
+	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_2;          // 0x05A0(0x0010)(ReferenceParm)
+	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_3;               // 0x05B0(0x0010)(ReferenceParm)
+	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_3;          // 0x05C0(0x0010)(ReferenceParm)
+	TArray<class AActor*>                         Temp_object_Variable_17;                           // 0x05D0(0x0010)(ConstParm, ReferenceParm)
+	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_4;               // 0x05E0(0x0010)(ReferenceParm)
+	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_4;          // 0x05F0(0x0010)(ReferenceParm)
+	struct FSBZEndMissionRequestData              K2Node_MakeStruct_SBZEndMissionRequestData;        // 0x0600(0x0008)(NoDestructor)
+	class ASBZMissionState*                       CallFunc_GetSBZMissionState_ReturnValue;           // 0x0608(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagTriggerVolume*                   K2Node_ActorBoundEvent_Volume_3;                   // 0x0610(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            K2Node_ActorBoundEvent_Bag_3;                      // 0x0618(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          K2Node_ActorBoundEvent_Handle_3;                   // 0x0620(0x0010)(NoDestructor)
+	class APawn*                                  K2Node_ActorBoundEvent_Pawn_9;                     // 0x0630(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_10;                 // 0x0638(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initd_Variable_9;               // 0x063C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_63D[0x3];                                      // 0x063D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_10;                // 0x0640(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_644[0x4];                                      // 0x0644(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZMissionState*                       CallFunc_GetSBZMissionState_ReturnValue_1;         // 0x0648(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x0650(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_651[0x7];                                      // 0x0651(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZMissionState*                       CallFunc_GetSBZMissionState_ReturnValue_2;         // 0x0658(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_10;                  // 0x0660(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_664[0x4];                                      // 0x0664(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable_18;                           // 0x0668(0x0010)(ConstParm, ReferenceParm)
+	class UPD3AssaultManager*                     CallFunc_Get_ReturnValue_1;                        // 0x0678(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_18;                         // 0x0680(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins;                 // 0x0694(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue;                // 0x0695(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_17;                // 0x0696(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_1;                    // 0x0697(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initd_Variable_10;              // 0x0698(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetAndDriveAerialVehicleRoute_ReturnValue; // 0x0699(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetAndDriveAerialVehicleRoute_ReturnValue_1; // 0x069A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetAndDriveAerialVehicleRoute_ReturnValue_2; // 0x069B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_69C[0x4];                                      // 0x069C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_GetTransform_ReturnValue_2;               // 0x06A0(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_GetTransform_ReturnValue_3;               // 0x0700(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_bOutSuccess_2; // 0x0760(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_761[0x7];                                      // 0x0761(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ULevelStreamingDynamic*                 CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_ReturnValue_2; // 0x0768(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_bOutSuccess_3; // 0x0770(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_771[0x7];                                      // 0x0771(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ULevelStreamingDynamic*                 CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_ReturnValue_3; // 0x0778(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_GetTransform_ReturnValue_4;               // 0x0780(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_GetTransform_ReturnValue_5;               // 0x07E0(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_bOutSuccess_4; // 0x0840(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_841[0x7];                                      // 0x0841(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ULevelStreamingDynamic*                 CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_ReturnValue_4; // 0x0848(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_bOutSuccess_5; // 0x0850(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_851[0x7];                                      // 0x0851(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ULevelStreamingDynamic*                 CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_ReturnValue_5; // 0x0858(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_GetTransform_ReturnValue_6;               // 0x0860(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_GetTransform_ReturnValue_7;               // 0x08C0(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_bOutSuccess_6; // 0x0920(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_921[0x7];                                      // 0x0921(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ULevelStreamingDynamic*                 CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_ReturnValue_6; // 0x0928(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_bOutSuccess_7; // 0x0930(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_931[0x7];                                      // 0x0931(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ULevelStreamingDynamic*                 CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_ReturnValue_7; // 0x0938(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_GetTransform_ReturnValue_8;               // 0x0940(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_bOutSuccess_8; // 0x09A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9A1[0x7];                                      // 0x09A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ULevelStreamingDynamic*                 CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_ReturnValue_8; // 0x09A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_GetTransform_ReturnValue_9;               // 0x09B0(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_IsClosed_Variable_10;                    // 0x0A10(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_bOutSuccess_9; // 0x0A11(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A12[0x6];                                      // 0x0A12(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class ULevelStreamingDynamic*                 CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_ReturnValue_9; // 0x0A18(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_19;                         // 0x0A20(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable_11;                 // 0x0A34(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_18;                // 0x0A38(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A39[0x3];                                      // 0x0A39(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_11;                // 0x0A3C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetRandomIntegerFromLevelStream_ReturnValue_1; // 0x0A40(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess_1;                 // 0x0A44(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A45[0xB];                                      // 0x0A45(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_GetTransform_ReturnValue_10;              // 0x0A50(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_bOutSuccess_10; // 0x0AB0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_AB1[0x7];                                      // 0x0AB1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ULevelStreamingDynamic*                 CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_ReturnValue_10; // 0x0AB8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_GetTransform_ReturnValue_11;              // 0x0AC0(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initd_Variable_11;              // 0x0B20(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_bOutSuccess_11; // 0x0B21(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B22[0x6];                                      // 0x0B22(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class ULevelStreamingDynamic*                 CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_ReturnValue_11; // 0x0B28(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_IsClosed_Variable_11;                    // 0x0B30(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B31[0x7];                                      // 0x0B31(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable_19;                           // 0x0B38(0x0010)(ConstParm, ReferenceParm)
+	TArray<class AActor*>                         Temp_object_Variable_20;                           // 0x0B48(0x0010)(ConstParm, ReferenceParm)
+	uint8                                         Pad_B58[0x8];                                      // 0x0B58(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             CallFunc_GetTransform_ReturnValue_12;              // 0x0B60(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_bOutSuccess_12; // 0x0BC0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_BC1[0x7];                                      // 0x0BC1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ULevelStreamingDynamic*                 CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_ReturnValue_12; // 0x0BC8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_GetTransform_ReturnValue_13;              // 0x0BD0(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_bOutSuccess_13; // 0x0C30(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C31[0x7];                                      // 0x0C31(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ULevelStreamingDynamic*                 CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_ReturnValue_13; // 0x0C38(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_GetTransform_ReturnValue_14;              // 0x0C40(0x0060)(ConstParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_11;                  // 0x0CA0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_bOutSuccess_14; // 0x0CA4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_CA5[0x3];                                      // 0x0CA5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class ULevelStreamingDynamic*                 CallFunc_SBZPlaceRandomSublevelBySoftObjectPtr_ReturnValue_14; // 0x0CA8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_20;                         // 0x0CB0(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_19;                // 0x0CC4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_CC5[0x3];                                      // 0x0CC5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable_12;                 // 0x0CC8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_12;                // 0x0CCC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RemoteEvent_ReturnValue_1;                // 0x0CD0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RemoteEvent_ReturnValue_2;                // 0x0CD1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_CD2[0x2];                                      // 0x0CD2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x0CD4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         Temp_object_Variable_21;                           // 0x0CD8(0x0010)(ConstParm, ReferenceParm)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_13;                // 0x0CE8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_CEC[0x4];                                      // 0x0CEC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZBagTriggerVolume*                   K2Node_ActorBoundEvent_Volume_2;                   // 0x0CF0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            K2Node_ActorBoundEvent_Bag_2;                      // 0x0CF8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          K2Node_ActorBoundEvent_Handle_2;                   // 0x0D00(0x0010)(NoDestructor)
+	class ASBZSpline*                             K2Node_ActorBoundEvent_Spline_1;                   // 0x0D10(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_ActorBoundEvent_Actor_1;                    // 0x0D18(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  K2Node_ActorBoundEvent_Pawn_8;                     // 0x0D20(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_21;                         // 0x0D28(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_22;                         // 0x0D3C(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_20;                // 0x0D50(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_21;                // 0x0D51(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RemoteEvent_ReturnValue_3;                // 0x0D52(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D53[0x5];                                      // 0x0D53(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class APawn*                                  K2Node_ActorBoundEvent_Pawn_7;                     // 0x0D58(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RemoteEvent_ReturnValue_4;                // 0x0D60(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RemoteEvent_ReturnValue_5;                // 0x0D61(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D62[0x6];                                      // 0x0D62(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPD3AssaultManager*                     CallFunc_Get_ReturnValue_2;                        // 0x0D68(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins_1;               // 0x0D70(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue_1;              // 0x0D71(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_2;                    // 0x0D72(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initd_Variable_12;              // 0x0D73(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_12;                  // 0x0D74(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 K2Node_ActorBoundEvent_OldState_4;                 // 0x0D78(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 K2Node_ActorBoundEvent_State_4;                    // 0x0D79(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_IsClosed_Variable_12;                    // 0x0D7A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 K2Node_ActorBoundEvent_OldState_3;                 // 0x0D7B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 K2Node_ActorBoundEvent_State_3;                    // 0x0D7C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D7D[0x3];                                      // 0x0D7D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable_22;                           // 0x0D80(0x0010)(ConstParm, ReferenceParm)
+	int32                                         CallFunc_GetRandomIntegerFromLevelStream_ReturnValue_2; // 0x0D90(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess_2;                 // 0x0D94(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ActorBoundEvent_bSabotaged_4;               // 0x0D95(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D96[0x2];                                      // 0x0D96(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_5;               // 0x0D98(0x0010)(ReferenceParm)
+	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_5;          // 0x0DA8(0x0010)(ReferenceParm)
+	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0DB8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_DB9[0x7];                                      // 0x0DB9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_6;               // 0x0DC0(0x0010)(ReferenceParm)
+	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_6;          // 0x0DD0(0x0010)(ReferenceParm)
+	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_7;               // 0x0DE0(0x0010)(ReferenceParm)
+	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_7;          // 0x0DF0(0x0010)(ReferenceParm)
+	bool                                          K2Node_ActorBoundEvent_bSabotaged_3;               // 0x0E00(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ActorBoundEvent_bSabotaged_2;               // 0x0E01(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E02[0x6];                                      // 0x0E02(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class APawn*                                  K2Node_ActorBoundEvent_Pawn_6;                     // 0x0E08(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetState_ReturnValue;                     // 0x0E10(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RemoteEvent_ReturnValue_6;                // 0x0E11(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E12[0x2];                                      // 0x0E12(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Loop_Counter_Variable_13;                 // 0x0E14(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_14;                // 0x0E18(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E1C[0x4];                                      // 0x0E1C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZPlayerStartGroup*                   K2Node_ActorBoundEvent_PlayerStartGroup_2;         // 0x0E20(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerStartGroup*                   K2Node_ActorBoundEvent_PlayerStartGroup_1;         // 0x0E28(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerStartGroup*                   K2Node_ActorBoundEvent_PlayerStartGroup;           // 0x0E30(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Current_Value_0970BA76400E0B07B52F70BFD1C1D505_Variable; // 0x0E38(0x0004)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0E3C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x0E3D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_2;          // 0x0E3E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E3F[0x1];                                      // 0x0E3F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_15;                // 0x0E40(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_23;                         // 0x0E44(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_22;                // 0x0E58(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess_3;                 // 0x0E59(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess_4;                 // 0x0E5A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ActorBoundEvent_bSabotaged_1;               // 0x0E5B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E5C[0x4];                                      // 0x0E5C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_8;               // 0x0E60(0x0010)(ReferenceParm)
+	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_8;          // 0x0E70(0x0010)(ReferenceParm)
+	bool                                          K2Node_ActorBoundEvent_bSabotaged;                 // 0x0E80(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E81[0x7];                                      // 0x0E81(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_9;               // 0x0E88(0x0010)(ReferenceParm)
+	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_9;          // 0x0E98(0x0010)(ReferenceParm)
+	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_10;              // 0x0EA8(0x0010)(ReferenceParm)
+	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_10;         // 0x0EB8(0x0010)(ReferenceParm)
+	class APawn*                                  K2Node_ActorBoundEvent_Pawn_5;                     // 0x0EC8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_11;              // 0x0ED0(0x0010)(ReferenceParm)
+	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_11;         // 0x0EE0(0x0010)(ReferenceParm)
+	bool                                          Temp_bool_Has_Been_Initialized_0970BA76400E0B07B52F70BFD1C1D505_Variable; // 0x0EF0(0x0001)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_EF1[0x7];                                      // 0x0EF1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPD3AssaultManager*                     CallFunc_Get_ReturnValue_3;                        // 0x0EF8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_12;              // 0x0F00(0x0010)(ReferenceParm)
+	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_12;         // 0x0F10(0x0010)(ReferenceParm)
+	ESBZGateState                                 K2Node_ActorBoundEvent_OldState_2;                 // 0x0F20(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 K2Node_ActorBoundEvent_State_2;                    // 0x0F21(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 K2Node_ActorBoundEvent_OldState_1;                 // 0x0F22(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 K2Node_ActorBoundEvent_State_1;                    // 0x0F23(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 K2Node_ActorBoundEvent_OldState;                   // 0x0F24(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 K2Node_ActorBoundEvent_State;                      // 0x0F25(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initd_Variable_13;              // 0x0F26(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_IsClosed_Variable_13;                    // 0x0F27(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          K2Node_Event_BagHandle;                            // 0x0F28(0x0010)(NoDestructor)
+	bool                                          CallFunc_RemoteEvent_ReturnValue_7;                // 0x0F38(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RemoteEvent_ReturnValue_8;                // 0x0F39(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RemoteEvent_ReturnValue_9;                // 0x0F3A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F3B[0x1];                                      // 0x0F3B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetRandomIntegerFromLevelStream_ReturnValue_3; // 0x0F3C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess_5;                 // 0x0F40(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F41[0x7];                                      // 0x0F41(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZInstantLoot*                        K2Node_Event_InstantLoot;                          // 0x0F48(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    K2Node_Event_TakenByPlayer;                        // 0x0F50(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasAuthority_ReturnValue;                 // 0x0F58(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_RemoteEvent_ReturnValue_10;               // 0x0F59(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initd_Variable_14;              // 0x0F5A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_IsClosed_Variable_14;                    // 0x0F5B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetEnabled_ReturnValue;                   // 0x0F5C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetEnabled_ReturnValue_1;                 // 0x0F5D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetEnabled_ReturnValue_2;                 // 0x0F5E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F5F[0x1];                                      // 0x0F5F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetRandomIntegerFromStreamMixed_ReturnValue; // 0x0F60(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess_6;                 // 0x0F64(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F65[0x3];                                      // 0x0F65(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class APawn*                                  K2Node_ActorBoundEvent_Pawn_4;                     // 0x0F68(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetEscapeVanRoute_ReturnValue;            // 0x0F70(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZTrafficNodeExec                           CallFunc_DriveEscapeVan_Exec;                      // 0x0F71(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_3;                    // 0x0F72(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F73[0x1];                                      // 0x0F73(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_4;            // 0x0F74(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZSecuredBagVisualizeComponent*       K2Node_CustomEvent_Target;                         // 0x0F88(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          K2Node_CustomEvent_BagHandle;                      // 0x0F90(0x0010)(NoDestructor)
+	class USBZBagType*                            K2Node_CustomEvent_BagType;                        // 0x0FA0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0FA8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_1;    // 0x0FA9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue_2;    // 0x0FAA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0FAB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_FAC[0x4];                                      // 0x0FAC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable_23;                           // 0x0FB0(0x0010)(ConstParm, ReferenceParm)
+	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0FC0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_FC1[0x3];                                      // 0x0FC1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_24;                         // 0x0FC4(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_23;                // 0x0FD8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_FD9[0x7];                                      // 0x0FD9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable_24;                           // 0x0FE0(0x0010)(ConstParm, ReferenceParm)
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_25;                         // 0x0FF0(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_24;                // 0x1004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZTrafficNodeExec                           CallFunc_SetAndDriveEscapeVanRoute_Exec;           // 0x1005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_4;                    // 0x1006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1007[0x1];                                     // 0x1007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class APawn*                                  K2Node_ActorBoundEvent_Pawn_3;                     // 0x1008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initd_Variable_15;              // 0x1010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initialized_6CAEE62C499E2E583CA9A8BB44A831B4_Variable; // 0x1011(0x0001)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_IsClosed_Variable_15;                    // 0x1012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1013[0x5];                                     // 0x1013(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable_25;                           // 0x1018(0x0010)(ConstParm, ReferenceParm)
+	bool                                          CallFunc_HasAuthority_ReturnValue_1;               // 0x1028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1029[0x3];                                     // 0x1029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Current_Value_6CAEE62C499E2E583CA9A8BB44A831B4_Variable; // 0x102C(0x0004)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess_7;                 // 0x1030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1031[0x3];                                     // 0x1031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_16;                // 0x1034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_26;                         // 0x1038(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_25;                // 0x104C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_3;                // 0x104D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_104E[0x2];                                     // 0x104E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue;              // 0x1050(0x0010)()
+	bool                                          CallFunc_HasAuthority_ReturnValue_2;               // 0x1060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1061[0x7];                                     // 0x1061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APawn*                                  K2Node_ActorBoundEvent_Pawn_2;                     // 0x1068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetState_ReturnValue_1;                   // 0x1070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetState_ReturnValue_2;                   // 0x1071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1072[0x2];                                     // 0x1072(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRandomStream                          CallFunc_GetMixedRandomStream_ReturnValue;         // 0x1074(0x0008)(ZeroConstructor, NoDestructor)
+	bool                                          SBZK2Node_RandomExecutionSequence_CmpSuccess;      // 0x107C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_107D[0x3];                                     // 0x107D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         SBZK2Node_RandomExecutionSequence_RngBitMask;      // 0x1080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins_1;            // 0x1084(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_5;                    // 0x1085(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1086[0x2];                                     // 0x1086(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class APawn*                                  K2Node_ActorBoundEvent_Pawn_1;                     // 0x1088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetRandomBoolWithWeightFromStreamMixed_ReturnValue; // 0x1090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZTrafficNodeExec                           CallFunc_SetAndDriveEscapeVanRoute_Exec_1;         // 0x1091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_6;                    // 0x1092(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1093[0x5];                                     // 0x1093(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZBagTriggerVolume*                   K2Node_ActorBoundEvent_Volume_1;                   // 0x1098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            K2Node_ActorBoundEvent_Bag_1;                      // 0x10A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          K2Node_ActorBoundEvent_Handle_1;                   // 0x10A8(0x0010)(NoDestructor)
+	TArray<class AActor*>                         Temp_object_Variable_26;                           // 0x10B8(0x0010)(ConstParm, ReferenceParm)
+	bool                                          CallFunc_SetEscapeVanRoute_ReturnValue_1;          // 0x10C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetEscapeVanRoute_ReturnValue_2;          // 0x10C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_10CA[0x2];                                     // 0x10CA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_27;                         // 0x10CC(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         Temp_object_Variable_27;                           // 0x10E0(0x0010)(ConstParm, ReferenceParm)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_26;                // 0x10F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_10F1[0x3];                                     // 0x10F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_28;                         // 0x10F4(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_27;                // 0x1108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1109[0x3];                                     // 0x1109(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_5;            // 0x110C(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_3;        // 0x1120(0x0008)(NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_4;        // 0x1128(0x0008)(NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Subtract_DoubleDouble_ReturnValue;        // 0x1130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ASBZSpline*                             K2Node_ActorBoundEvent_Spline;                     // 0x1138(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 K2Node_ActorBoundEvent_Actor;                      // 0x1140(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZMissionState*                       CallFunc_GetSBZMissionState_ReturnValue_3;         // 0x1148(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins_2;               // 0x1150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue_2;              // 0x1151(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_7;                    // 0x1152(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1153[0x5];                                     // 0x1153(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZMissionState*                       CallFunc_GetSBZMissionState_ReturnValue_4;         // 0x1158(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZMissionState*                       CallFunc_GetSBZMissionState_ReturnValue_5;         // 0x1160(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins_3;               // 0x1168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue_3;              // 0x1169(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_8;                    // 0x116A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_116B[0x5];                                     // 0x116B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZMissionState*                       CallFunc_GetSBZMissionState_ReturnValue_6;         // 0x1170(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZMissionState*                       CallFunc_GetSBZMissionState_ReturnValue_7;         // 0x1178(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  K2Node_ActorBoundEvent_Pawn;                       // 0x1180(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins_2;            // 0x1188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_9;                    // 0x1189(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_118A[0x2];                                     // 0x118A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable_1;                               // 0x118C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initd_Variable_16;              // 0x1190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1191[0x3];                                     // 0x1191(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_17;                // 0x1194(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetEscapeVanRoute_ReturnValue_3;          // 0x1198(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initialized_46231495464CF70D30A9D392B44EAA45_Variable; // 0x1199(0x0001)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x119A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x119B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_2;        // 0x119C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetRandomBoolWithWeightFromStreamMixed_ReturnValue_1; // 0x119D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess_8;                 // 0x119E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_119F[0x1];                                     // 0x119F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZBagTriggerVolume*                   K2Node_ActorBoundEvent_Volume;                     // 0x11A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            K2Node_ActorBoundEvent_Bag;                        // 0x11A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          K2Node_ActorBoundEvent_Handle;                     // 0x11B0(0x0010)(NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_4;                // 0x11C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_5;                // 0x11C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins_4;               // 0x11C2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue_4;              // 0x11C3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_10;                   // 0x11C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11C5[0x3];                                     // 0x11C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_GetRandomIntegerFromStreamMixed_ReturnValue_1; // 0x11C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue_18;                // 0x11CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetRandomIntegerFromLevelStream_ReturnValue_4; // 0x11D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x11D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Current_Value_46231495464CF70D30A9D392B44EAA45_Variable; // 0x11D8(0x0004)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x11DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11DD[0x3];                                     // 0x11DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_19;                // 0x11E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins_3;            // 0x11E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_11;                   // 0x11E5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11E6[0x2];                                     // 0x11E6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_LootableCar_01_C*                   CallFunc_Array_Get_Item;                           // 0x11E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x11F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11F4[0x4];                                     // 0x11F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable_28;                           // 0x11F8(0x0010)(ConstParm, ReferenceParm)
+	class ABP_LootableCar_01_C*                   CallFunc_Array_Get_Item_1;                         // 0x1208(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x1210(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x1214(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ActorHasTag_ReturnValue;                  // 0x1215(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1216[0x2];                                     // 0x1216(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_6;            // 0x1218(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasAuthority_ReturnValue_3;               // 0x122C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_122D[0x3];                                     // 0x122D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_7;            // 0x1230(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_8;            // 0x1244(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_5;        // 0x1258(0x0008)(NoDestructor, HasGetValueTypeHash)
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_9;            // 0x1260(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1274[0x4];                                     // 0x1274(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZDestroyGroup*                       CallFunc_Array_Get_Item_2;                         // 0x1278(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x1280(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1284[0x4];                                     // 0x1284(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_13;              // 0x1288(0x0010)(ReferenceParm)
+	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_13;         // 0x1298(0x0010)(ReferenceParm)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x12A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12A9[0x7];                                     // 0x12A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_LootableCar_01_C*                   CallFunc_Array_Get_Item_3;                         // 0x12B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x12B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x12BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12BD[0x3];                                     // 0x12BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_LootableCarPartBase_C*              CallFunc_Array_Get_Item_4;                         // 0x12C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_3;               // 0x12C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_29;                         // 0x12CC(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x12E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_28;                // 0x12E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins_5;               // 0x12E2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue_5;              // 0x12E3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_12;                   // 0x12E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins_6;               // 0x12E5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue_6;              // 0x12E6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12E7[0x1];                                     // 0x12E7(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZMissionState*                       CallFunc_GetSBZMissionState_ReturnValue_8;         // 0x12E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_13;                   // 0x12F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12F1[0x3];                                     // 0x12F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x12F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ABP_LootableCarPartBase_C*              CallFunc_Array_Get_Item_5;                         // 0x12F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetRandomIntegerFromLevelStream_ReturnValue_5; // 0x1300(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_LastIndex_ReturnValue;              // 0x1304(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue_1;            // 0x1308(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x130C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue_1;           // 0x130D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_130E[0x2];                                     // 0x130E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPD3AssaultManager*                     CallFunc_Get_ReturnValue_4;                        // 0x1310(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins_4;            // 0x1318(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_14;                   // 0x1319(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initd_Variable_17;              // 0x131A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_131B[0x5];                                     // 0x131B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_LootableCar_01_C*                   CallFunc_Array_Get_Item_6;                         // 0x1320(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_4;               // 0x1328(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_4;                // 0x132C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_132D[0x3];                                     // 0x132D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable_29;                           // 0x1330(0x0010)(ConstParm, ReferenceParm)
+	class APawn*                                  K2Node_CustomEvent_Pawn_3;                         // 0x1340(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       CallFunc_Array_Get_Item_7;                         // 0x1348(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_14;              // 0x1350(0x0010)(ReferenceParm)
+	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_14;         // 0x1360(0x0010)(ReferenceParm)
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_30;                         // 0x1370(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class APawn* Pawn)>            K2Node_CreateDelegate_OutputDelegate_10;           // 0x1384(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_29;                // 0x1398(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins_5;            // 0x1399(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_15;                   // 0x139A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_139B[0x5];                                     // 0x139B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable_30;                           // 0x13A0(0x0010)(ConstParm, ReferenceParm)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_6;                // 0x13B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_7;                // 0x13B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins_7;               // 0x13B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue_7;              // 0x13B3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_16;                   // 0x13B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins_8;               // 0x13B5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue_8;              // 0x13B6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_17;                   // 0x13B7(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_3;          // 0x13B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_IsClosed_Variable_16;                    // 0x13B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetRandomBoolWithWeightFromStreamMixed_ReturnValue_2; // 0x13BA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetRandomBoolWithWeightFromStreamMixed_ReturnValue_3; // 0x13BB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetRandomBoolWithWeightFromStreamMixed_ReturnValue_4; // 0x13BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_IsClosed_Variable_17;                    // 0x13BD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_13BE[0x2];                                     // 0x13BE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_31;                         // 0x13C0(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_30;                // 0x13D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_13D5[0x3];                                     // 0x13D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable_31;                           // 0x13D8(0x0010)(ConstParm, ReferenceParm)
+	bool                                          CallFunc_SetSearchedPart_lootSuccessfullyRemoved;  // 0x13E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetSearchedPart_lootSuccessfullyRemoved_1; // 0x13E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetSearchedPart_lootSuccessfullyRemoved_2; // 0x13EA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_13EB[0x5];                                     // 0x13EB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_LootableCar_01_C*                   CallFunc_Array_Get_Item_8;                         // 0x13F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_5;               // 0x13F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_5;                // 0x13FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_13FD[0x3];                                     // 0x13FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue_2;            // 0x1400(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1404[0x4];                                     // 0x1404(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_LootableCar_01_C*                   CallFunc_Array_Get_Item_9;                         // 0x1408(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_6;               // 0x1410(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_6;                // 0x1414(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1415[0x3];                                     // 0x1415(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_32;                         // 0x1418(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_31;                // 0x142C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_142D[0x3];                                     // 0x142D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZDestroyGroup*                       CallFunc_Array_Get_Item_10;                        // 0x1430(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_7;               // 0x1438(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_143C[0x4];                                     // 0x143C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_15;              // 0x1440(0x0010)(ReferenceParm)
+	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_15;         // 0x1450(0x0010)(ReferenceParm)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_7;                // 0x1460(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1461[0x3];                                     // 0x1461(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x1464(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       CallFunc_Array_Get_Item_11;                        // 0x1468(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x1470(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1471[0x7];                                     // 0x1471(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable_32;                           // 0x1478(0x0010)(ConstParm, ReferenceParm)
+	bool                                          Temp_bool_Has_Been_Initd_Variable_18;              // 0x1488(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins_9;               // 0x1489(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue_9;              // 0x148A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_18;                   // 0x148B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_33;                         // 0x148C(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         Temp_object_Variable_33;                           // 0x14A0(0x0010)(ConstParm, ReferenceParm)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_32;                // 0x14B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14B1[0x7];                                     // 0x14B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class APawn*                                  K2Node_CustomEvent_Pawn_2;                         // 0x14B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins_10;              // 0x14C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue_10;             // 0x14C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_19;                   // 0x14C2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14C3[0x1];                                     // 0x14C3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_34;                         // 0x14C4(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_33;                // 0x14D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14D9[0x3];                                     // 0x14D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Find_ReturnValue_1;                 // 0x14DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class APawn* Pawn)>            K2Node_CreateDelegate_OutputDelegate_11;           // 0x14E0(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14F4[0x4];                                     // 0x14F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZPlayerLookAtTrigger*                CallFunc_Array_Get_Item_12;                        // 0x14F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Array_RemoveItem_ReturnValue_1;           // 0x1500(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins_11;              // 0x1501(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue_11;             // 0x1502(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_20;                   // 0x1503(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_8;               // 0x1504(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initialized_08B1CFC94A731BD635A4CFB2CFE84742_Variable; // 0x1508(0x0001)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_8;                // 0x1509(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_150A[0x6];                                     // 0x150A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class APawn*                                  K2Node_CustomEvent_Pawn_1;                         // 0x1510(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         Temp_object_Variable_34;                           // 0x1518(0x0010)(ConstParm, ReferenceParm)
+	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins_12;              // 0x1528(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue_12;             // 0x1529(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_21;                   // 0x152A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_152B[0x5];                                     // 0x152B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_CarLift_02_C*                       CallFunc_Array_Get_Item_13;                        // 0x1530(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_9;               // 0x1538(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_9;                // 0x153C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_153D[0x3];                                     // 0x153D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Current_Value_08B1CFC94A731BD635A4CFB2CFE84742_Variable; // 0x1540(0x0004)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_4;          // 0x1544(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1545[0x3];                                     // 0x1545(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_20;                // 0x1548(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_8;                // 0x154C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_9;                // 0x154D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_154E[0x2];                                     // 0x154E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_35;                         // 0x1550(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class APawn* Pawn)>            K2Node_CreateDelegate_OutputDelegate_12;           // 0x1564(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_34;                // 0x1578(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasAuthority_ReturnValue_4;               // 0x1579(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_157A[0x6];                                     // 0x157A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_CarLift_02_C*                       CallFunc_Array_Get_Item_14;                        // 0x1580(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x1588(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1589[0x3];                                     // 0x1589(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue_10;              // 0x158C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         Temp_object_Variable_35;                           // 0x1590(0x0010)(ConstParm, ReferenceParm)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_10;               // 0x15A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_15A1[0x3];                                     // 0x15A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_36;                         // 0x15A4(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_35;                // 0x15B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetRandomBoolWithWeightFromLevelStream_ReturnValue; // 0x15B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetRandomBoolWithWeightFromLevelStream_ReturnValue_1; // 0x15BA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins_13;              // 0x15BB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue_13;             // 0x15BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_22;                   // 0x15BD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetRandomBoolWithWeightFromStreamMixed_ReturnValue_5; // 0x15BE(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_15BF[0x1];                                     // 0x15BF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FName>                           K2Node_MakeArray_Array;                            // 0x15C0(0x0010)(ReferenceParm)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x15D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_15D1[0x7];                                     // 0x15D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable_36;                           // 0x15D8(0x0010)(ConstParm, ReferenceParm)
+	class APawn*                                  K2Node_CustomEvent_Pawn;                           // 0x15E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(class APawn* Pawn)>            K2Node_CreateDelegate_OutputDelegate_13;           // 0x15F0(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins_14;              // 0x1604(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue_14;             // 0x1605(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_23;                   // 0x1606(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1607[0x1];                                     // 0x1607(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_37;                         // 0x1608(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_161C[0x4];                                     // 0x161C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_LootableCar_01_C*                   CallFunc_Array_Get_Item_15;                        // 0x1620(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_36;                // 0x1628(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1629[0x3];                                     // 0x1629(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue_11;              // 0x162C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_11;               // 0x1630(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1631[0x7];                                     // 0x1631(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable_37;                           // 0x1638(0x0010)(ConstParm, ReferenceParm)
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_38;                         // 0x1648(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_165C[0x4];                                     // 0x165C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_LootableCar_01_C*                   CallFunc_Array_Get_Item_16;                        // 0x1660(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_37;                // 0x1668(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ActorHasTag_ReturnValue_1;                // 0x1669(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_166A[0x2];                                     // 0x166A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Length_ReturnValue_12;              // 0x166C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class AActor*>                         Temp_object_Variable_38;                           // 0x1670(0x0010)(ConstParm, ReferenceParm)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_12;               // 0x1680(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1681[0x7];                                     // 0x1681(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_LootableCar_01_C*                   CallFunc_Array_Get_Item_17;                        // 0x1688(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_13;              // 0x1690(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue_13;               // 0x1694(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ActorHasTag_ReturnValue_2;                // 0x1695(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1696[0x2];                                     // 0x1696(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(ESBZDialogEndedReason Reason)> Temp_delegate_Variable_39;                         // 0x1698(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_16AC[0x4];                                     // 0x16AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         Temp_object_Variable_39;                           // 0x16B0(0x0010)(ConstParm, ReferenceParm)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_38;                // 0x16C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_39;                // 0x16C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_10;               // 0x16C2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_11;               // 0x16C3(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable_13;                  // 0x16C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZStealthBranch                             CallFunc_StealthBranch_OutputPins_15;              // 0x16C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CallFunc_StealthBranch_ReturnValue_15;             // 0x16C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_16CA[0x6];                                     // 0x16CA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZDestroyGroup*                       CallFunc_Array_Get_Item_18;                        // 0x16D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_24;                   // 0x16D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_16D9[0x7];                                     // 0x16D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_16;              // 0x16E0(0x0010)(ReferenceParm)
+	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_16;         // 0x16F0(0x0010)(ReferenceParm)
+	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins_6;            // 0x1700(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_IsClosed_Variable_18;                    // 0x1701(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_25;                   // 0x1702(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins_7;            // 0x1703(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins_8;            // 0x1704(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_26;                   // 0x1705(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_27;                   // 0x1706(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins_9;            // 0x1707(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess_28;                   // 0x1708(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasAuthority_ReturnValue_5;               // 0x1709(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_170A[0x2];                                     // 0x170A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x170C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x1710(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_ExecuteUbergraph_G_SnGFO_Scripting;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZTrafficSpline_Escape_DriveInStreet_K2Node_ActorBoundEvent_42_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZTrafficSpline_Escape_DriveInStreet_K2Node_ActorBoundEvent_42_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZTrafficSpline_Escape_DriveInStreet_K2Node_ActorBoundEvent_42_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_PlayerOnStreet_K2Node_ActorBoundEvent_26_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_PlayerOnStreet_K2Node_ActorBoundEvent_26_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_PlayerOnStreet_K2Node_ActorBoundEvent_26_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_GetToSecurityTruck_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_GetToSecurityTruck_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_GetToSecurityTruck_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_EnteredGarage_K2Node_ActorBoundEvent_222_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_EnteredGarage_K2Node_ActorBoundEvent_222_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZPlayerTriggerVolume_EnteredGarage_K2Node_ActorBoundEvent_222_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthSideEntrance_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthSideEntrance_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthSideEntrance_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthGate2_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthGate2_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthGate2_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZBagTriggerVolume_Street_K2Node_ActorBoundEvent_30_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZBagTriggerVolume_Street_K2Node_ActorBoundEvent_30_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZBagTriggerVolume_Street_K2Node_ActorBoundEvent_30_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_SnGFO_Scripting_SBZBagTriggerVolume_SideEntrance_K2Node_ActorBoundEvent_12_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZBagTriggerVolume_SideEntrance_K2Node_ActorBoundEvent_12_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_BndEvt__G_SnGFO_Scripting_SBZBagTriggerVolume_SideEntrance_K2Node_ActorBoundEvent_12_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_SnGFO_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_SnGFO_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZTrafficSpline_StealthEscape_DriveIn1_K2Node_ActorBoundEvent_47_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZTrafficSpline_StealthEscape_DriveIn1_K2Node_ActorBoundEvent_47_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZTrafficSpline_StealthEscape_DriveIn1_K2Node_ActorBoundEvent_47_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_PlayerInsideGarage_K2Node_ActorBoundEvent_132_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_PlayerInsideGarage_K2Node_ActorBoundEvent_132_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_PlayerInsideGarage_K2Node_ActorBoundEvent_132_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_EnteredDepot_K2Node_ActorBoundEvent_43_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_EnteredDepot_K2Node_ActorBoundEvent_43_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_EnteredDepot_K2Node_ActorBoundEvent_43_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_146_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_146_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_146_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthSewer_K2Node_ActorBoundEvent_49_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthSewer_K2Node_ActorBoundEvent_49_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthSewer_K2Node_ActorBoundEvent_49_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZPlayerStartGroup4_K2Node_ActorBoundEvent_57_SBZOnSpawnGroupChosen__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerStartGroup4_K2Node_ActorBoundEvent_57_SBZOnSpawnGroupChosen__DelegateSignature final
+{
+public:
+	class ASBZPlayerStartGroup*                   PlayerStartGroup;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerStartGroup4_K2Node_ActorBoundEvent_57_SBZOnSpawnGroupChosen__DelegateSignature;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZPlayerStartGroup2_5_K2Node_ActorBoundEvent_7_SBZOnSpawnGroupChosen__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerStartGroup2_5_K2Node_ActorBoundEvent_7_SBZOnSpawnGroupChosen__DelegateSignature final
+{
+public:
+	class ASBZPlayerStartGroup*                   PlayerStartGroup;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerStartGroup2_5_K2Node_ActorBoundEvent_7_SBZOnSpawnGroupChosen__DelegateSignature;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZPlayerStartGroup1_K2Node_ActorBoundEvent_6_SBZOnSpawnGroupChosen__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerStartGroup1_K2Node_ActorBoundEvent_6_SBZOnSpawnGroupChosen__DelegateSignature final
+{
+public:
+	class ASBZPlayerStartGroup*                   PlayerStartGroup;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZPlayerStartGroup1_K2Node_ActorBoundEvent_6_SBZOnSpawnGroupChosen__DelegateSignature;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_SBZBagTriggerVolume_Stealth2_2_K2Node_ActorBoundEvent_46_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZBagTriggerVolume_Stealth2_2_K2Node_ActorBoundEvent_46_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_SBZBagTriggerVolume_Stealth2_2_K2Node_ActorBoundEvent_46_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator_K2Node_ActorBoundEvent_119_SBZSabotagePointDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator_K2Node_ActorBoundEvent_119_SBZSabotagePointDelegate__DelegateSignature final
+{
+public:
+	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator_K2Node_ActorBoundEvent_119_SBZSabotagePointDelegate__DelegateSignature;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator3_K2Node_ActorBoundEvent_138_SBZSabotagePointDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator3_K2Node_ActorBoundEvent_138_SBZSabotagePointDelegate__DelegateSignature final
+{
+public:
+	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator3_K2Node_ActorBoundEvent_138_SBZSabotagePointDelegate__DelegateSignature;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator2_K2Node_ActorBoundEvent_137_SBZSabotagePointDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator2_K2Node_ActorBoundEvent_137_SBZSabotagePointDelegate__DelegateSignature final
+{
+public:
+	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_SabotagePoint_Generator2_K2Node_ActorBoundEvent_137_SBZSabotagePointDelegate__DelegateSignature;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_openable_Van_Police_2_K2Node_ActorBoundEvent_88_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_openable_Van_Police_2_K2Node_ActorBoundEvent_88_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_openable_Van_Police_2_K2Node_ActorBoundEvent_88_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_openable_Van_Police4_K2Node_ActorBoundEvent_157_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_openable_Van_Police4_K2Node_ActorBoundEvent_157_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_openable_Van_Police4_K2Node_ActorBoundEvent_157_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_openable_Van_Police3_K2Node_ActorBoundEvent_156_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_openable_Van_Police3_K2Node_ActorBoundEvent_156_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_openable_Van_Police3_K2Node_ActorBoundEvent_156_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_openable_Van_Police2_K2Node_ActorBoundEvent_155_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_openable_Van_Police2_K2Node_ActorBoundEvent_155_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_openable_Van_Police2_K2Node_ActorBoundEvent_155_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_Int_SingleDoor_Reinforced_Garage2_K2Node_ActorBoundEvent_113_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_Int_SingleDoor_Reinforced_Garage2_K2Node_ActorBoundEvent_113_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_Int_SingleDoor_Reinforced_Garage2_K2Node_ActorBoundEvent_113_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_FlipSwitch_SabotagePoint2_K2Node_ActorBoundEvent_131_SBZSabotagePointDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_FlipSwitch_SabotagePoint2_K2Node_ActorBoundEvent_131_SBZSabotagePointDelegate__DelegateSignature final
+{
+public:
+	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_FlipSwitch_SabotagePoint2_K2Node_ActorBoundEvent_131_SBZSabotagePointDelegate__DelegateSignature;
+
+// Function G_SnGFO_Scripting.G_SnGFO_Scripting_C.BndEvt__G_Fort_Scripting_BP_FlipSwitch_SabotagePoint1_K2Node_ActorBoundEvent_104_SBZSabotagePointDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_FlipSwitch_SabotagePoint1_K2Node_ActorBoundEvent_104_SBZSabotagePointDelegate__DelegateSignature final
+{
+public:
+	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Scripting_C_BndEvt__G_Fort_Scripting_BP_FlipSwitch_SabotagePoint1_K2Node_ActorBoundEvent_104_SBZSabotagePointDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

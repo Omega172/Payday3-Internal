@@ -17,6 +17,42 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_Eyescanner.WBP_Eyescanner_C.setText
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_Eyescanner_C_setText final
+{
+public:
+	class FText                                   idle;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   scanning;                                          // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   denied;                                            // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   granted;                                           // 0x0030(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_Eyescanner_C_setText;
+
+// Function WBP_Eyescanner.WBP_Eyescanner_C.setState
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Eyescanner_C_setState final
+{
+public:
+	ESBZEyeScannerState                           Selection;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Eyescanner_C_setState;
+
+// Function WBP_Eyescanner.WBP_Eyescanner_C.getContainerFromState
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_Eyescanner_C_getContainerFromState final
+{
+public:
+	ESBZEyeScannerState                           state;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                widget;                                            // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	ESBZEyeScannerState                           Temp_byte_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                Temp_object_Variable;                              // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                K2Node_Select_Default;                             // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Eyescanner_C_getContainerFromState;
+
 // Function WBP_Eyescanner.WBP_Eyescanner_C.ExecuteUbergraph_WBP_Eyescanner
 // 0x0058 (0x0058 - 0x0000)
 struct WBP_Eyescanner_C_ExecuteUbergraph_WBP_Eyescanner final
@@ -36,39 +72,7 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function WBP_Eyescanner.WBP_Eyescanner_C.getContainerFromState
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_Eyescanner_C_getContainerFromState final
-{
-public:
-	ESBZEyeScannerState                           state;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                widget;                                            // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	ESBZEyeScannerState                           Temp_byte_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                Temp_object_Variable;                              // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                K2Node_Select_Default;                             // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WBP_Eyescanner.WBP_Eyescanner_C.setState
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Eyescanner_C_setState final
-{
-public:
-	ESBZEyeScannerState                           Selection;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WBP_Eyescanner.WBP_Eyescanner_C.setText
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_Eyescanner_C_setText final
-{
-public:
-	class FText                                   idle;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class FText                                   scanning;                                          // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class FText                                   denied;                                            // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class FText                                   granted;                                           // 0x0030(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
+DUMPER7_ASSERTS_WBP_Eyescanner_C_ExecuteUbergraph_WBP_Eyescanner;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

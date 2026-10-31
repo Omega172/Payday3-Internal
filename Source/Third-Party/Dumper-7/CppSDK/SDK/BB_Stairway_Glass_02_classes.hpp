@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABB_Stairway_Glass_02_C>();
 	}
 };
+DUMPER7_ASSERTS_ABB_Stairway_Glass_02_C;
 
 SDK_NAMESPACE_END

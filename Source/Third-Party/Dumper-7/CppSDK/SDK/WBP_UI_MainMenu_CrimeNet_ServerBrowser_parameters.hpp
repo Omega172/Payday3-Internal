@@ -16,63 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnJoinStarted
-// 0x0210 (0x0210 - 0x0000)
-struct WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnJoinStarted final
-{
-public:
-	struct FSBZOnlineSearchResult                 RemoteSessionInfo;                                 // 0x0000(0x0210)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnJoinStarted;
-
-// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnInviteFinished
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnInviteFinished final
-{
-public:
-	ESBZOnlineCode                                ErrorCode;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnInviteFinished;
-
-// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnGainedStackFocused
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnGainedStackFocused final
-{
-public:
-	class FName                                   PreviousValue_OnGainedStackFocused;                // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnGainedStackFocused;
-
-// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnControlsReferenceClicked
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnControlsReferenceClicked final
-{
-public:
-	class FName                                   InActionInput;                                     // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnControlsReferenceClicked;
-
-// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnComplete_EB7A1BA74C1C1AA3C504FCA022A4D55A
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnComplete_EB7A1BA74C1C1AA3C504FCA022A4D55A final
-{
-public:
-	ESBZOnlineCode                                ErrorCode;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSBZOnlineSearchResult>         Results;                                           // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnComplete_EB7A1BA74C1C1AA3C504FCA022A4D55A;
-
-// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnButtonFocusedChanged
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnButtonFocusedChanged final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnButtonFocusedChanged;
-
 // Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerBrowser
 // 0x0770 (0x0770 - 0x0000)
 struct WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerBrowser final
@@ -143,6 +86,63 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0768(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_ExecuteUbergraph_WBP_UI_MainMenu_CrimeNet_ServerBrowser;
+
+// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnButtonFocusedChanged
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnButtonFocusedChanged final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnButtonFocusedChanged;
+
+// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnComplete_EB7A1BA74C1C1AA3C504FCA022A4D55A
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnComplete_EB7A1BA74C1C1AA3C504FCA022A4D55A final
+{
+public:
+	ESBZOnlineCode                                ErrorCode;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSBZOnlineSearchResult>         Results;                                           // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnComplete_EB7A1BA74C1C1AA3C504FCA022A4D55A;
+
+// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnControlsReferenceClicked
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnControlsReferenceClicked final
+{
+public:
+	class FName                                   InActionInput;                                     // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnControlsReferenceClicked;
+
+// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnGainedStackFocused
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnGainedStackFocused final
+{
+public:
+	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnGainedStackFocused;
+
+// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnInviteFinished
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnInviteFinished final
+{
+public:
+	ESBZOnlineCode                                ErrorCode;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnInviteFinished;
+
+// Function WBP_UI_MainMenu_CrimeNet_ServerBrowser.WBP_UI_MainMenu_CrimeNet_ServerBrowser_C.OnJoinStarted
+// 0x0210 (0x0210 - 0x0000)
+struct WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnJoinStarted final
+{
+public:
+	struct FSBZOnlineSearchResult                 RemoteSessionInfo;                                 // 0x0000(0x0210)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_UI_MainMenu_CrimeNet_ServerBrowser_C_OnJoinStarted;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

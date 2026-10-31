@@ -16,6 +16,72 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_3D_Widget.WBP_3D_Widget_C.SetScrollUpFocus
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_3D_Widget_C_SetScrollUpFocus final
+{
+public:
+	bool                                          NewParam;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_3D_Widget_C_SetScrollUpFocus;
+
+// Function WBP_3D_Widget.WBP_3D_Widget_C.SetScrollDownFocus
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_3D_Widget_C_SetScrollDownFocus final
+{
+public:
+	bool                                          NewParam;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_3D_Widget_C_SetScrollDownFocus;
+
+// Function WBP_3D_Widget.WBP_3D_Widget_C.SetMenuFocusOnButtons
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_3D_Widget_C_SetMenuFocusOnButtons final
+{
+public:
+	int32                                         NewParam;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          NewParam2;                                         // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_3D_Widget_C_SetMenuFocusOnButtons;
+
+// Function WBP_3D_Widget.WBP_3D_Widget_C.SetBackButtonFocus
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_3D_Widget_C_SetBackButtonFocus final
+{
+public:
+	int32                                         Int;                                               // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          NewParam;                                          // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_3D_Widget_C_SetBackButtonFocus;
+
+// Function WBP_3D_Widget.WBP_3D_Widget_C.SetArtList
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_3D_Widget_C_SetArtList final
+{
+public:
+	class FString                                 NewParam;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_3D_Widget_C_SetArtList;
+
+// Function WBP_3D_Widget.WBP_3D_Widget_C.SetActiveButtonFocus
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_3D_Widget_C_SetActiveButtonFocus final
+{
+public:
+	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          NewParam;                                          // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_3D_Widget_C_SetActiveButtonFocus;
+
+// Function WBP_3D_Widget.WBP_3D_Widget_C.Set State
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_3D_Widget_C_Set_State final
+{
+public:
+	ECompState                                    Int_0;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_3D_Widget_C_Set_State;
+
 // Function WBP_3D_Widget.WBP_3D_Widget_C.ExecuteUbergraph_WBP_3D_Widget
 // 0x0030 (0x0030 - 0x0000)
 struct WBP_3D_Widget_C_ExecuteUbergraph_WBP_3D_Widget final
@@ -39,65 +105,7 @@ public:
 	bool                                          K2Node_CustomEvent_NewParam_1;                     // 0x002E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_NewParam;                       // 0x002F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function WBP_3D_Widget.WBP_3D_Widget_C.Set State
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_3D_Widget_C_Set_State final
-{
-public:
-	ECompState                                    Int_0;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WBP_3D_Widget.WBP_3D_Widget_C.SetActiveButtonFocus
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_3D_Widget_C_SetActiveButtonFocus final
-{
-public:
-	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          NewParam;                                          // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WBP_3D_Widget.WBP_3D_Widget_C.SetArtList
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_3D_Widget_C_SetArtList final
-{
-public:
-	class FString                                 NewParam;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-
-// Function WBP_3D_Widget.WBP_3D_Widget_C.SetBackButtonFocus
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_3D_Widget_C_SetBackButtonFocus final
-{
-public:
-	int32                                         Int_0;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          NewParam;                                          // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WBP_3D_Widget.WBP_3D_Widget_C.SetMenuFocusOnButtons
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_3D_Widget_C_SetMenuFocusOnButtons final
-{
-public:
-	int32                                         NewParam;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          NewParam2;                                         // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WBP_3D_Widget.WBP_3D_Widget_C.SetScrollDownFocus
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_3D_Widget_C_SetScrollDownFocus final
-{
-public:
-	bool                                          NewParam;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WBP_3D_Widget.WBP_3D_Widget_C.SetScrollUpFocus
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_3D_Widget_C_SetScrollUpFocus final
-{
-public:
-	bool                                          NewParam;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_WBP_3D_Widget_C_ExecuteUbergraph_WBP_3D_Widget;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

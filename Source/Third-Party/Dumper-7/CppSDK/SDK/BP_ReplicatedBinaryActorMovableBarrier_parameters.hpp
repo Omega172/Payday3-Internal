@@ -16,15 +16,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_ReplicatedBinaryActorMovableBarrier.BP_ReplicatedBinaryActorMovableBarrier_C.BndEvt__BP_ReplicatedBinaryActorAIHousing_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_ReplicatedBinaryActorMovableBarrier_C_BndEvt__BP_ReplicatedBinaryActorAIHousing_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
+// Function BP_ReplicatedBinaryActorMovableBarrier.BP_ReplicatedBinaryActorMovableBarrier_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_ReplicatedBinaryActorMovableBarrier_C_OnStateChanged final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bStateToChangeTo_OnStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ReplicatedBinaryActorMovableBarrier_C_OnStateChanged;
 
 // Function BP_ReplicatedBinaryActorMovableBarrier.BP_ReplicatedBinaryActorMovableBarrier_C.ExecuteUbergraph_BP_ReplicatedBinaryActorMovableBarrier
 // 0x0128 (0x0128 - 0x0000)
@@ -41,15 +41,18 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0020(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
+DUMPER7_ASSERTS_BP_ReplicatedBinaryActorMovableBarrier_C_ExecuteUbergraph_BP_ReplicatedBinaryActorMovableBarrier;
 
-// Function BP_ReplicatedBinaryActorMovableBarrier.BP_ReplicatedBinaryActorMovableBarrier_C.OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_ReplicatedBinaryActorMovableBarrier_C_OnStateChanged final
+// Function BP_ReplicatedBinaryActorMovableBarrier.BP_ReplicatedBinaryActorMovableBarrier_C.BndEvt__BP_ReplicatedBinaryActorAIHousing_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_ReplicatedBinaryActorMovableBarrier_C_BndEvt__BP_ReplicatedBinaryActorAIHousing_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
 {
 public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ReplicatedBinaryActorMovableBarrier_C_BndEvt__BP_ReplicatedBinaryActorAIHousing_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

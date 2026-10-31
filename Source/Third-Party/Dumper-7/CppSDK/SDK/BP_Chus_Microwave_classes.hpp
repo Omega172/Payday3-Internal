@@ -35,10 +35,10 @@ public:
 	bool                                          Active;                                            // 0x03B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_Chus_Microwave(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void Sparkle_Sparkle();
 	void StopSparks();
+	void Sparkle_Sparkle();
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_Chus_Microwave(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -54,5 +54,6 @@ public:
 		return GetDefaultObjImpl<ABP_Chus_Microwave_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Chus_Microwave_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UC_RockTheCradel_CameraShake_02_C>();
 	}
 };
+DUMPER7_ASSERTS_UC_RockTheCradel_CameraShake_02_C;
 
 SDK_NAMESPACE_END

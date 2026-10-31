@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Jumbotron_01_2048_1024_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Jumbotron_01_2048_1024_01_C;
 
 SDK_NAMESPACE_END

@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABP_Roof_SkyLight_02_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Roof_SkyLight_02_C;
 
 SDK_NAMESPACE_END

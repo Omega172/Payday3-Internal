@@ -16,25 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_PortableSSD.BP_PortableSSD_C.BndEvt__BP_PortableSSD_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
+// Function BP_PortableSSD.BP_PortableSSD_C.ExecuteUbergraph_BP_PortableSSD
+// (Final, UbergraphFunction)
 // Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PortableSSD_C::BndEvt__BP_PortableSSD_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_PortableSSD_C::ExecuteUbergraph_BP_PortableSSD(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_PortableSSD_C", "ExecuteUbergraph_BP_PortableSSD", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PortableSSD_C", "BndEvt__BP_PortableSSD_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
+	Params::BP_PortableSSD_C_ExecuteUbergraph_BP_PortableSSD Parms{};
 
-	Params::BP_PortableSSD_C_BndEvt__BP_PortableSSD_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -43,20 +37,18 @@ void ABP_PortableSSD_C::BndEvt__BP_PortableSSD_Interactable_K2Node_ComponentBoun
 // Function BP_PortableSSD.BP_PortableSSD_C.BndEvt__BP_PortableSSD_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PortableSSD_C::BndEvt__BP_PortableSSD_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_PortableSSD_C::BndEvt__BP_PortableSSD_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PortableSSD_C", "BndEvt__BP_PortableSSD_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_PortableSSD_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature", FnName));
 
 	Params::BP_PortableSSD_C_BndEvt__BP_PortableSSD_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
 
-	Parms.Interactable_0 = Interactable_0;
+	Parms.Interactable = Interactable;
 	Parms.Interactor = Interactor;
 	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
@@ -64,21 +56,23 @@ void ABP_PortableSSD_C::BndEvt__BP_PortableSSD_Interactable_K2Node_ComponentBoun
 }
 
 
-// Function BP_PortableSSD.BP_PortableSSD_C.ExecuteUbergraph_BP_PortableSSD
-// (Final, UbergraphFunction)
+// Function BP_PortableSSD.BP_PortableSSD_C.BndEvt__BP_PortableSSD_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PortableSSD_C::ExecuteUbergraph_BP_PortableSSD(int32 EntryPoint)
+void ABP_PortableSSD_C::BndEvt__BP_PortableSSD_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_PortableSSD_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PortableSSD_C", "ExecuteUbergraph_BP_PortableSSD");
+	Params::BP_PortableSSD_C_BndEvt__BP_PortableSSD_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
-	Params::BP_PortableSSD_C_ExecuteUbergraph_BP_PortableSSD Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -16,6 +16,27 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BPL_DeskLamp_01_PBL.BPL_DeskLamp_01_PBL_C.SetStateFunction
+// 0x0002 (0x0002 - 0x0000)
+struct BPL_DeskLamp_01_PBL_C_SetStateFunction final
+{
+public:
+	Enum_LampStages                               State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BPL_DeskLamp_01_PBL_C_SetStateFunction;
+
+// Function BPL_DeskLamp_01_PBL.BPL_DeskLamp_01_PBL_C.OnStateChanged
+// 0x000C (0x000C - 0x0000)
+struct BPL_DeskLamp_01_PBL_C_OnStateChanged final
+{
+public:
+	int32                                         OldState_OnStateChanged;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewState_OnStateChanged;                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BPL_DeskLamp_01_PBL_C_OnStateChanged;
+
 // Function BPL_DeskLamp_01_PBL.BPL_DeskLamp_01_PBL_C.ExecuteUbergraph_BPL_DeskLamp_01_PBL
 // 0x0010 (0x0010 - 0x0000)
 struct BPL_DeskLamp_01_PBL_C_ExecuteUbergraph_BPL_DeskLamp_01_PBL final
@@ -27,25 +48,7 @@ public:
 	bool                                          K2Node_Event_bDoCosmetics;                         // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BPL_DeskLamp_01_PBL.BPL_DeskLamp_01_PBL_C.OnStateChanged
-// 0x000C (0x000C - 0x0000)
-struct BPL_DeskLamp_01_PBL_C_OnStateChanged final
-{
-public:
-	int32                                         OldState;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         NewState;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BPL_DeskLamp_01_PBL.BPL_DeskLamp_01_PBL_C.SetStateFunction
-// 0x0002 (0x0002 - 0x0000)
-struct BPL_DeskLamp_01_PBL_C_SetStateFunction final
-{
-public:
-	Enum_LampStages                               State_0;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BPL_DeskLamp_01_PBL_C_ExecuteUbergraph_BPL_DeskLamp_01_PBL;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

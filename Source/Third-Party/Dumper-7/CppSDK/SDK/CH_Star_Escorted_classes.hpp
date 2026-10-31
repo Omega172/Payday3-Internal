@@ -17,16 +17,16 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CH_Star_Escorted.CH_Star_Escorted_C
-// 0x0020 (0x21D0 - 0x21B0)
+// 0x0020 (0x2260 - 0x2240)
 class ACH_Star_Escorted_C final : public ACH_BaseHumanAI_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x21B0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class FName                                   TargetBBKey;                                       // 0x21B8(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x2240(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class FName                                   TargetBBKey;                                       // 0x2248(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_CH_Star_Escorted(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_CH_Star_Escorted(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -42,5 +42,6 @@ public:
 		return GetDefaultObjImpl<ACH_Star_Escorted_C>();
 	}
 };
+DUMPER7_ASSERTS_ACH_Star_Escorted_C;
 
 SDK_NAMESPACE_END

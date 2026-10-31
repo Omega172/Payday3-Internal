@@ -16,23 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function dynamicSignComponent.dynamicSignComponent_C.ExecuteUbergraph_dynamicSignComponent
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function dynamicSignComponent.dynamicSignComponent_C.updateWidget
+// (BlueprintCallable, BlueprintEvent)
 
-void UdynamicSignComponent_C::ExecuteUbergraph_dynamicSignComponent(int32 EntryPoint)
+void UdynamicSignComponent_C::updateWidget()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"updateWidget", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("dynamicSignComponent_C", "ExecuteUbergraph_dynamicSignComponent");
-
-	Params::dynamicSignComponent_C_ExecuteUbergraph_dynamicSignComponent Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -41,26 +33,28 @@ void UdynamicSignComponent_C::ExecuteUbergraph_dynamicSignComponent(int32 EntryP
 
 void UdynamicSignComponent_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("dynamicSignComponent_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function dynamicSignComponent.dynamicSignComponent_C.updateWidget
-// (BlueprintCallable, BlueprintEvent)
+// Function dynamicSignComponent.dynamicSignComponent_C.ExecuteUbergraph_dynamicSignComponent
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UdynamicSignComponent_C::updateWidget()
+void UdynamicSignComponent_C::ExecuteUbergraph_dynamicSignComponent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "dynamicSignComponent_C", "ExecuteUbergraph_dynamicSignComponent", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("dynamicSignComponent_C", "updateWidget");
+	Params::dynamicSignComponent_C_ExecuteUbergraph_dynamicSignComponent Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

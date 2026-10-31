@@ -16,6 +16,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_CH_dead_cook.BP_CH_dead_cook_C.UserConstructionScript
+// 0x0001 (0x0001 - 0x0000)
+struct BP_CH_dead_cook_C_UserConstructionScript final
+{
+public:
+	bool                                          CallFunc_ApplyVariationToSkeletal_ReturnValue;     // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_CH_dead_cook_C_UserConstructionScript;
+
 // Function BP_CH_dead_cook.BP_CH_dead_cook_C.SpawnVariation
 // 0x0038 (0x0038 - 0x0000)
 struct BP_CH_dead_cook_C_SpawnVariation final
@@ -26,14 +35,7 @@ public:
 	struct FVector                                Location;                                          // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                NextLocation;                                      // 0x0020(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_CH_dead_cook.BP_CH_dead_cook_C.UserConstructionScript
-// 0x0001 (0x0001 - 0x0000)
-struct BP_CH_dead_cook_C_UserConstructionScript final
-{
-public:
-	bool                                          CallFunc_ApplyVariationToSkeletal_ReturnValue;     // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_CH_dead_cook_C_SpawnVariation;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -30,10 +30,10 @@ public:
 	class FText                                   Room_Name;                                         // 0x0320(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void ExecuteUbergraph_WBP_SHI_BoomgatePanel(int32 EntryPoint);
-	void setLogo(class UTexture2D* Texture);
-	void setState(bool open);
 	void setTitle(const class FText& RoomName);
+	void setState(bool open);
+	void setLogo(class UTexture2D* Texture);
+	void ExecuteUbergraph_WBP_SHI_BoomgatePanel(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -49,5 +49,6 @@ public:
 		return GetDefaultObjImpl<UWBP_SHI_BoomgatePanel_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_SHI_BoomgatePanel_C;
 
 SDK_NAMESPACE_END

@@ -16,197 +16,171 @@
 
 SDK_NAMESPACE_START
 
-// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.BndEvt__R_Murk_TrainCar_Digital_BP_HackableNetworkBox_NoActiveWaypoint2_K2Node_ActorBoundEvent_12_SBZHackableActorDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
+// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.ResetWP
+// (BlueprintCallable, BlueprintEvent)
 
-void AR_Murk_TrainCar_Keycard_C::BndEvt__R_Murk_TrainCar_Digital_BP_HackableNetworkBox_NoActiveWaypoint2_K2Node_ActorBoundEvent_12_SBZHackableActorDelegate__DelegateSignature()
+void AR_Murk_TrainCar_Keycard_C::ResetWP()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Keycard_C", "BndEvt__R_Murk_TrainCar_Digital_BP_HackableNetworkBox_NoActiveWaypoint2_K2Node_ActorBoundEvent_12_SBZHackableActorDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ResetWP", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.BndEvt__R_Murk_TrainCar_Digital_BP_HackableNetworkBox_NoActiveWaypoint_2_K2Node_ActorBoundEvent_14_SBZHackableActorDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
+// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void AR_Murk_TrainCar_Keycard_C::BndEvt__R_Murk_TrainCar_Digital_BP_HackableNetworkBox_NoActiveWaypoint_2_K2Node_ActorBoundEvent_14_SBZHackableActorDelegate__DelegateSignature()
+void AR_Murk_TrainCar_Keycard_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Keycard_C", "BndEvt__R_Murk_TrainCar_Digital_BP_HackableNetworkBox_NoActiveWaypoint_2_K2Node_ActorBoundEvent_14_SBZHackableActorDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.BndEvt__R_Murk_TrainCar_Keycard_BP_HackableNetworkBox_NoActiveWaypoint_2_K2Node_ActorBoundEvent_0_SBZHackableActorDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
+// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.HeistStateChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EPD3HeistState                          OldHeistState_HeistStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPD3HeistState                          CurrentHeistState_HeistStateChanged                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AR_Murk_TrainCar_Keycard_C::BndEvt__R_Murk_TrainCar_Keycard_BP_HackableNetworkBox_NoActiveWaypoint_2_K2Node_ActorBoundEvent_0_SBZHackableActorDelegate__DelegateSignature()
+void AR_Murk_TrainCar_Keycard_C::HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HeistStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Keycard_C", "BndEvt__R_Murk_TrainCar_Keycard_BP_HackableNetworkBox_NoActiveWaypoint_2_K2Node_ActorBoundEvent_0_SBZHackableActorDelegate__DelegateSignature");
+	Params::R_Murk_TrainCar_Keycard_C_HeistStateChanged Parms{};
+
+	Parms.OldHeistState_HeistStateChanged = OldHeistState_HeistStateChanged;
+	Parms.CurrentHeistState_HeistStateChanged = CurrentHeistState_HeistStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.HandleLoudChange
+// (BlueprintCallable, BlueprintEvent)
+
+void AR_Murk_TrainCar_Keycard_C::HandleLoudChange()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HandleLoudChange", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.BndEvt__R_Murk_TrainCar_Keycard_BP_HackableNetworkBox_NoActiveWaypoint_2_K2Node_ActorBoundEvent_2_SBZHackableActorDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
+// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.ExecuteUbergraph_R_Murk_TrainCar_Keycard
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AR_Murk_TrainCar_Keycard_C::BndEvt__R_Murk_TrainCar_Keycard_BP_HackableNetworkBox_NoActiveWaypoint_2_K2Node_ActorBoundEvent_2_SBZHackableActorDelegate__DelegateSignature()
+void AR_Murk_TrainCar_Keycard_C::ExecuteUbergraph_R_Murk_TrainCar_Keycard(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "R_Murk_TrainCar_Keycard_C", "ExecuteUbergraph_R_Murk_TrainCar_Keycard", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Keycard_C", "BndEvt__R_Murk_TrainCar_Keycard_BP_HackableNetworkBox_NoActiveWaypoint_2_K2Node_ActorBoundEvent_2_SBZHackableActorDelegate__DelegateSignature");
+	Params::R_Murk_TrainCar_Keycard_C_ExecuteUbergraph_R_Murk_TrainCar_Keycard Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.Event_RemoveUnlockWaypoint_Keycard
+// (BlueprintCallable, BlueprintEvent)
+
+void AR_Murk_TrainCar_Keycard_C::Event_RemoveUnlockWaypoint_Keycard()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Event_RemoveUnlockWaypoint_Keycard", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.BndEvt__R_Murk_TrainCar_Keycard_BP_HackableNetworkBox_NoActiveWaypoint_2_K2Node_ActorBoundEvent_9_SBZHackableActorInterruptedDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
+// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.Event_KeycardHackSabotaged
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ESBZHackableActorInterruptReason        Reason                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AR_Murk_TrainCar_Keycard_C::BndEvt__R_Murk_TrainCar_Keycard_BP_HackableNetworkBox_NoActiveWaypoint_2_K2Node_ActorBoundEvent_9_SBZHackableActorInterruptedDelegate__DelegateSignature(ESBZHackableActorInterruptReason Reason)
+void AR_Murk_TrainCar_Keycard_C::Event_KeycardHackSabotaged(bool bSabotaged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Event_KeycardHackSabotaged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Keycard_C", "BndEvt__R_Murk_TrainCar_Keycard_BP_HackableNetworkBox_NoActiveWaypoint_2_K2Node_ActorBoundEvent_9_SBZHackableActorInterruptedDelegate__DelegateSignature");
+	Params::R_Murk_TrainCar_Keycard_C_Event_KeycardHackSabotaged Parms{};
 
-	Params::R_Murk_TrainCar_Keycard_C_BndEvt__R_Murk_TrainCar_Keycard_BP_HackableNetworkBox_NoActiveWaypoint_2_K2Node_ActorBoundEvent_9_SBZHackableActorInterruptedDelegate__DelegateSignature Parms{};
-
-	Parms.Reason = Reason;
+	Parms.bSabotaged = bSabotaged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.BndEvt__R_Station_TrainCar_Keycard_BP_InteractableSatellitePrototype_2_K2Node_ActorBoundEvent_8_SBZBagPickedUp__DelegateSignature
-// (BlueprintEvent)
+// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.Event_AddUnlockWaypoint_Keycard
+// (BlueprintCallable, BlueprintEvent)
 
-void AR_Murk_TrainCar_Keycard_C::BndEvt__R_Station_TrainCar_Keycard_BP_InteractableSatellitePrototype_2_K2Node_ActorBoundEvent_8_SBZBagPickedUp__DelegateSignature()
+void AR_Murk_TrainCar_Keycard_C::Event_AddUnlockWaypoint_Keycard()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Keycard_C", "BndEvt__R_Station_TrainCar_Keycard_BP_InteractableSatellitePrototype_2_K2Node_ActorBoundEvent_8_SBZBagPickedUp__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Event_AddUnlockWaypoint_Keycard", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.BndEvt__R_Station_TrainCar_Keycard_BP_RedKeycardReader_01_K2Node_ActorBoundEvent_4_SBZModuleActorStateChangedDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
+// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.DestroyOptionalLoot
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ESBZModuleActorState                    NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AR_Murk_TrainCar_Keycard_C::BndEvt__R_Station_TrainCar_Keycard_BP_RedKeycardReader_01_K2Node_ActorBoundEvent_4_SBZModuleActorStateChangedDelegate__DelegateSignature(ESBZModuleActorState NewState)
+void AR_Murk_TrainCar_Keycard_C::DestroyOptionalLoot(int32 Value)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DestroyOptionalLoot", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Keycard_C", "BndEvt__R_Station_TrainCar_Keycard_BP_RedKeycardReader_01_K2Node_ActorBoundEvent_4_SBZModuleActorStateChangedDelegate__DelegateSignature");
+	Params::R_Murk_TrainCar_Keycard_C_DestroyOptionalLoot Parms{};
 
-	Params::R_Murk_TrainCar_Keycard_C_BndEvt__R_Station_TrainCar_Keycard_BP_RedKeycardReader_01_K2Node_ActorBoundEvent_4_SBZModuleActorStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.NewState = NewState;
+	Parms.Value = Value;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.BndEvt__R_Station_TrainCar_Keycard_BP_RedKeycardReader_02_K2Node_ActorBoundEvent_3_SBZModuleActorStateChangedDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
+// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.DestroyAllMainLoot
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ESBZModuleActorState                    NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AR_Murk_TrainCar_Keycard_C::BndEvt__R_Station_TrainCar_Keycard_BP_RedKeycardReader_02_K2Node_ActorBoundEvent_3_SBZModuleActorStateChangedDelegate__DelegateSignature(ESBZModuleActorState NewState)
+void AR_Murk_TrainCar_Keycard_C::DestroyAllMainLoot(int32 Value)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DestroyAllMainLoot", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Keycard_C", "BndEvt__R_Station_TrainCar_Keycard_BP_RedKeycardReader_02_K2Node_ActorBoundEvent_3_SBZModuleActorStateChangedDelegate__DelegateSignature");
+	Params::R_Murk_TrainCar_Keycard_C_DestroyAllMainLoot Parms{};
 
-	Params::R_Murk_TrainCar_Keycard_C_BndEvt__R_Station_TrainCar_Keycard_BP_RedKeycardReader_02_K2Node_ActorBoundEvent_3_SBZModuleActorStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.NewState = NewState;
+	Parms.Value = Value;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.BndEvt__R_Station_TrainCar_Keycard_BP_REM_Door_Boxcar2_K2Node_ActorBoundEvent_15_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AR_Murk_TrainCar_Keycard_C::BndEvt__R_Station_TrainCar_Keycard_BP_REM_Door_Boxcar2_K2Node_ActorBoundEvent_15_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Keycard_C", "BndEvt__R_Station_TrainCar_Keycard_BP_REM_Door_Boxcar2_K2Node_ActorBoundEvent_15_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::R_Murk_TrainCar_Keycard_C_BndEvt__R_Station_TrainCar_Keycard_BP_REM_Door_Boxcar2_K2Node_ActorBoundEvent_15_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.BndEvt__R_Station_TrainCar_Keycard_BP_REM_Door_Boxcar_2_K2Node_ActorBoundEvent_14_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AR_Murk_TrainCar_Keycard_C::BndEvt__R_Station_TrainCar_Keycard_BP_REM_Door_Boxcar_2_K2Node_ActorBoundEvent_14_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Keycard_C", "BndEvt__R_Station_TrainCar_Keycard_BP_REM_Door_Boxcar_2_K2Node_ActorBoundEvent_14_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::R_Murk_TrainCar_Keycard_C_BndEvt__R_Station_TrainCar_Keycard_BP_REM_Door_Boxcar_2_K2Node_ActorBoundEvent_14_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.BndEvt__R_Station_TrainCar_Keycard_SBZLaserGrid_Vault2_K2Node_ActorBoundEvent_7_SBZOnLaserGridTriggered__DelegateSignature
+// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.BndEvt__R_Station_TrainCar_Keycard_SBZPlayerTriggerVolume_PlayerInsideTrainCar_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class ASBZLaserGrid*                    LaserGrid                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPlayerCharacter*              PlayerCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AR_Murk_TrainCar_Keycard_C::BndEvt__R_Station_TrainCar_Keycard_SBZLaserGrid_Vault2_K2Node_ActorBoundEvent_7_SBZOnLaserGridTriggered__DelegateSignature(class ASBZLaserGrid* LaserGrid, class ASBZPlayerCharacter* PlayerCharacter)
+void AR_Murk_TrainCar_Keycard_C::BndEvt__R_Station_TrainCar_Keycard_SBZPlayerTriggerVolume_PlayerInsideTrainCar_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Station_TrainCar_Keycard_SBZPlayerTriggerVolume_PlayerInsideTrainCar_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Keycard_C", "BndEvt__R_Station_TrainCar_Keycard_SBZLaserGrid_Vault2_K2Node_ActorBoundEvent_7_SBZOnLaserGridTriggered__DelegateSignature");
+	Params::R_Murk_TrainCar_Keycard_C_BndEvt__R_Station_TrainCar_Keycard_SBZPlayerTriggerVolume_PlayerInsideTrainCar_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
-	Params::R_Murk_TrainCar_Keycard_C_BndEvt__R_Station_TrainCar_Keycard_SBZLaserGrid_Vault2_K2Node_ActorBoundEvent_7_SBZOnLaserGridTriggered__DelegateSignature Parms{};
-
-	Parms.LaserGrid = LaserGrid;
-	Parms.PlayerCharacter = PlayerCharacter;
+	Parms.Pawn = Pawn;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -220,10 +194,8 @@ void AR_Murk_TrainCar_Keycard_C::BndEvt__R_Station_TrainCar_Keycard_SBZLaserGrid
 
 void AR_Murk_TrainCar_Keycard_C::BndEvt__R_Station_TrainCar_Keycard_SBZLaserGrid_Vault_K2Node_ActorBoundEvent_6_SBZOnLaserGridTriggered__DelegateSignature(class ASBZLaserGrid* LaserGrid, class ASBZPlayerCharacter* PlayerCharacter)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Keycard_C", "BndEvt__R_Station_TrainCar_Keycard_SBZLaserGrid_Vault_K2Node_ActorBoundEvent_6_SBZOnLaserGridTriggered__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Station_TrainCar_Keycard_SBZLaserGrid_Vault_K2Node_ActorBoundEvent_6_SBZOnLaserGridTriggered__DelegateSignature", FnName));
 
 	Params::R_Murk_TrainCar_Keycard_C_BndEvt__R_Station_TrainCar_Keycard_SBZLaserGrid_Vault_K2Node_ActorBoundEvent_6_SBZOnLaserGridTriggered__DelegateSignature Parms{};
 
@@ -234,193 +206,175 @@ void AR_Murk_TrainCar_Keycard_C::BndEvt__R_Station_TrainCar_Keycard_SBZLaserGrid
 }
 
 
-// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.BndEvt__R_Station_TrainCar_Keycard_SBZPlayerTriggerVolume_PlayerInsideTrainCar_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature
+// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.BndEvt__R_Station_TrainCar_Keycard_SBZLaserGrid_Vault2_K2Node_ActorBoundEvent_7_SBZOnLaserGridTriggered__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZLaserGrid*                    LaserGrid                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPlayerCharacter*              PlayerCharacter                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AR_Murk_TrainCar_Keycard_C::BndEvt__R_Station_TrainCar_Keycard_SBZPlayerTriggerVolume_PlayerInsideTrainCar_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AR_Murk_TrainCar_Keycard_C::BndEvt__R_Station_TrainCar_Keycard_SBZLaserGrid_Vault2_K2Node_ActorBoundEvent_7_SBZOnLaserGridTriggered__DelegateSignature(class ASBZLaserGrid* LaserGrid, class ASBZPlayerCharacter* PlayerCharacter)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Station_TrainCar_Keycard_SBZLaserGrid_Vault2_K2Node_ActorBoundEvent_7_SBZOnLaserGridTriggered__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Keycard_C", "BndEvt__R_Station_TrainCar_Keycard_SBZPlayerTriggerVolume_PlayerInsideTrainCar_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature");
+	Params::R_Murk_TrainCar_Keycard_C_BndEvt__R_Station_TrainCar_Keycard_SBZLaserGrid_Vault2_K2Node_ActorBoundEvent_7_SBZOnLaserGridTriggered__DelegateSignature Parms{};
 
-	Params::R_Murk_TrainCar_Keycard_C_BndEvt__R_Station_TrainCar_Keycard_SBZPlayerTriggerVolume_PlayerInsideTrainCar_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
+	Parms.LaserGrid = LaserGrid;
+	Parms.PlayerCharacter = PlayerCharacter;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.DestroyAllMainLoot
-// (BlueprintCallable, BlueprintEvent)
+// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.BndEvt__R_Station_TrainCar_Keycard_BP_REM_Door_Boxcar_2_K2Node_ActorBoundEvent_14_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AR_Murk_TrainCar_Keycard_C::DestroyAllMainLoot(int32 Value)
+void AR_Murk_TrainCar_Keycard_C::BndEvt__R_Station_TrainCar_Keycard_BP_REM_Door_Boxcar_2_K2Node_ActorBoundEvent_14_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Station_TrainCar_Keycard_BP_REM_Door_Boxcar_2_K2Node_ActorBoundEvent_14_SBZGateStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Keycard_C", "DestroyAllMainLoot");
+	Params::R_Murk_TrainCar_Keycard_C_BndEvt__R_Station_TrainCar_Keycard_BP_REM_Door_Boxcar_2_K2Node_ActorBoundEvent_14_SBZGateStateChangedDelegate__DelegateSignature Parms{};
 
-	Params::R_Murk_TrainCar_Keycard_C_DestroyAllMainLoot Parms{};
-
-	Parms.Value = Value;
+	Parms.OldState = OldState;
+	Parms.State = State;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.DestroyOptionalLoot
-// (BlueprintCallable, BlueprintEvent)
+// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.BndEvt__R_Station_TrainCar_Keycard_BP_REM_Door_Boxcar2_K2Node_ActorBoundEvent_15_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AR_Murk_TrainCar_Keycard_C::DestroyOptionalLoot(int32 Value)
+void AR_Murk_TrainCar_Keycard_C::BndEvt__R_Station_TrainCar_Keycard_BP_REM_Door_Boxcar2_K2Node_ActorBoundEvent_15_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Station_TrainCar_Keycard_BP_REM_Door_Boxcar2_K2Node_ActorBoundEvent_15_SBZGateStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Keycard_C", "DestroyOptionalLoot");
+	Params::R_Murk_TrainCar_Keycard_C_BndEvt__R_Station_TrainCar_Keycard_BP_REM_Door_Boxcar2_K2Node_ActorBoundEvent_15_SBZGateStateChangedDelegate__DelegateSignature Parms{};
 
-	Params::R_Murk_TrainCar_Keycard_C_DestroyOptionalLoot Parms{};
-
-	Parms.Value = Value;
+	Parms.OldState = OldState;
+	Parms.State = State;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.Event_AddUnlockWaypoint_Keycard
-// (BlueprintCallable, BlueprintEvent)
+// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.BndEvt__R_Station_TrainCar_Keycard_BP_RedKeycardReader_02_K2Node_ActorBoundEvent_3_SBZModuleActorStateChangedDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+// Parameters:
+// ESBZModuleActorState                    NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AR_Murk_TrainCar_Keycard_C::Event_AddUnlockWaypoint_Keycard()
+void AR_Murk_TrainCar_Keycard_C::BndEvt__R_Station_TrainCar_Keycard_BP_RedKeycardReader_02_K2Node_ActorBoundEvent_3_SBZModuleActorStateChangedDelegate__DelegateSignature(ESBZModuleActorState NewState)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Station_TrainCar_Keycard_BP_RedKeycardReader_02_K2Node_ActorBoundEvent_3_SBZModuleActorStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Keycard_C", "Event_AddUnlockWaypoint_Keycard");
+	Params::R_Murk_TrainCar_Keycard_C_BndEvt__R_Station_TrainCar_Keycard_BP_RedKeycardReader_02_K2Node_ActorBoundEvent_3_SBZModuleActorStateChangedDelegate__DelegateSignature Parms{};
+
+	Parms.NewState = NewState;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.BndEvt__R_Station_TrainCar_Keycard_BP_RedKeycardReader_01_K2Node_ActorBoundEvent_4_SBZModuleActorStateChangedDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+// Parameters:
+// ESBZModuleActorState                    NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AR_Murk_TrainCar_Keycard_C::BndEvt__R_Station_TrainCar_Keycard_BP_RedKeycardReader_01_K2Node_ActorBoundEvent_4_SBZModuleActorStateChangedDelegate__DelegateSignature(ESBZModuleActorState NewState)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Station_TrainCar_Keycard_BP_RedKeycardReader_01_K2Node_ActorBoundEvent_4_SBZModuleActorStateChangedDelegate__DelegateSignature", FnName));
+
+	Params::R_Murk_TrainCar_Keycard_C_BndEvt__R_Station_TrainCar_Keycard_BP_RedKeycardReader_01_K2Node_ActorBoundEvent_4_SBZModuleActorStateChangedDelegate__DelegateSignature Parms{};
+
+	Parms.NewState = NewState;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.BndEvt__R_Station_TrainCar_Keycard_BP_InteractableSatellitePrototype_2_K2Node_ActorBoundEvent_8_SBZBagPickedUp__DelegateSignature
+// (BlueprintEvent)
+
+void AR_Murk_TrainCar_Keycard_C::BndEvt__R_Station_TrainCar_Keycard_BP_InteractableSatellitePrototype_2_K2Node_ActorBoundEvent_8_SBZBagPickedUp__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Station_TrainCar_Keycard_BP_InteractableSatellitePrototype_2_K2Node_ActorBoundEvent_8_SBZBagPickedUp__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.Event_KeycardHackSabotaged
-// (BlueprintCallable, BlueprintEvent)
+// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.BndEvt__R_Murk_TrainCar_Keycard_BP_HackableNetworkBox_NoActiveWaypoint_2_K2Node_ActorBoundEvent_9_SBZHackableActorInterruptedDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
 // Parameters:
-// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZHackableActorInterruptReason        Reason                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AR_Murk_TrainCar_Keycard_C::Event_KeycardHackSabotaged(bool bSabotaged)
+void AR_Murk_TrainCar_Keycard_C::BndEvt__R_Murk_TrainCar_Keycard_BP_HackableNetworkBox_NoActiveWaypoint_2_K2Node_ActorBoundEvent_9_SBZHackableActorInterruptedDelegate__DelegateSignature(ESBZHackableActorInterruptReason Reason)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Murk_TrainCar_Keycard_BP_HackableNetworkBox_NoActiveWaypoint_2_K2Node_ActorBoundEvent_9_SBZHackableActorInterruptedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Keycard_C", "Event_KeycardHackSabotaged");
+	Params::R_Murk_TrainCar_Keycard_C_BndEvt__R_Murk_TrainCar_Keycard_BP_HackableNetworkBox_NoActiveWaypoint_2_K2Node_ActorBoundEvent_9_SBZHackableActorInterruptedDelegate__DelegateSignature Parms{};
 
-	Params::R_Murk_TrainCar_Keycard_C_Event_KeycardHackSabotaged Parms{};
-
-	Parms.bSabotaged = bSabotaged;
+	Parms.Reason = Reason;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.Event_RemoveUnlockWaypoint_Keycard
-// (BlueprintCallable, BlueprintEvent)
+// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.BndEvt__R_Murk_TrainCar_Keycard_BP_HackableNetworkBox_NoActiveWaypoint_2_K2Node_ActorBoundEvent_2_SBZHackableActorDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
 
-void AR_Murk_TrainCar_Keycard_C::Event_RemoveUnlockWaypoint_Keycard()
+void AR_Murk_TrainCar_Keycard_C::BndEvt__R_Murk_TrainCar_Keycard_BP_HackableNetworkBox_NoActiveWaypoint_2_K2Node_ActorBoundEvent_2_SBZHackableActorDelegate__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Keycard_C", "Event_RemoveUnlockWaypoint_Keycard");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Murk_TrainCar_Keycard_BP_HackableNetworkBox_NoActiveWaypoint_2_K2Node_ActorBoundEvent_2_SBZHackableActorDelegate__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.ExecuteUbergraph_R_Murk_TrainCar_Keycard
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.BndEvt__R_Murk_TrainCar_Keycard_BP_HackableNetworkBox_NoActiveWaypoint_2_K2Node_ActorBoundEvent_0_SBZHackableActorDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
 
-void AR_Murk_TrainCar_Keycard_C::ExecuteUbergraph_R_Murk_TrainCar_Keycard(int32 EntryPoint)
+void AR_Murk_TrainCar_Keycard_C::BndEvt__R_Murk_TrainCar_Keycard_BP_HackableNetworkBox_NoActiveWaypoint_2_K2Node_ActorBoundEvent_0_SBZHackableActorDelegate__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Keycard_C", "ExecuteUbergraph_R_Murk_TrainCar_Keycard");
-
-	Params::R_Murk_TrainCar_Keycard_C_ExecuteUbergraph_R_Murk_TrainCar_Keycard Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.HandleLoudChange
-// (BlueprintCallable, BlueprintEvent)
-
-void AR_Murk_TrainCar_Keycard_C::HandleLoudChange()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Keycard_C", "HandleLoudChange");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Murk_TrainCar_Keycard_BP_HackableNetworkBox_NoActiveWaypoint_2_K2Node_ActorBoundEvent_0_SBZHackableActorDelegate__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.HeistStateChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// EPD3HeistState                          OldHeistState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPD3HeistState                          CurrentHeistState                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.BndEvt__R_Murk_TrainCar_Digital_BP_HackableNetworkBox_NoActiveWaypoint_2_K2Node_ActorBoundEvent_14_SBZHackableActorDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
 
-void AR_Murk_TrainCar_Keycard_C::HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState)
+void AR_Murk_TrainCar_Keycard_C::BndEvt__R_Murk_TrainCar_Digital_BP_HackableNetworkBox_NoActiveWaypoint_2_K2Node_ActorBoundEvent_14_SBZHackableActorDelegate__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Keycard_C", "HeistStateChanged");
-
-	Params::R_Murk_TrainCar_Keycard_C_HeistStateChanged Parms{};
-
-	Parms.OldHeistState = OldHeistState;
-	Parms.CurrentHeistState = CurrentHeistState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AR_Murk_TrainCar_Keycard_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Keycard_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Murk_TrainCar_Digital_BP_HackableNetworkBox_NoActiveWaypoint_2_K2Node_ActorBoundEvent_14_SBZHackableActorDelegate__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.ResetWP
-// (BlueprintCallable, BlueprintEvent)
+// Function R_Murk_TrainCar_Keycard.R_Murk_TrainCar_Keycard_C.BndEvt__R_Murk_TrainCar_Digital_BP_HackableNetworkBox_NoActiveWaypoint2_K2Node_ActorBoundEvent_12_SBZHackableActorDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
 
-void AR_Murk_TrainCar_Keycard_C::ResetWP()
+void AR_Murk_TrainCar_Keycard_C::BndEvt__R_Murk_TrainCar_Digital_BP_HackableNetworkBox_NoActiveWaypoint2_K2Node_ActorBoundEvent_12_SBZHackableActorDelegate__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Murk_TrainCar_Keycard_C", "ResetWP");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Murk_TrainCar_Digital_BP_HackableNetworkBox_NoActiveWaypoint2_K2Node_ActorBoundEvent_12_SBZHackableActorDelegate__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

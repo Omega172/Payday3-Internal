@@ -16,23 +16,27 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_WoodenCrate_SatellitePart_LowValue.BP_WoodenCrate_SatellitePart_LowValue_C.autoAddObjects
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  OverlapMultiplier                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_WoodenCrate_SatellitePart_LowValue.BP_WoodenCrate_SatellitePart_LowValue_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_WoodenCrate_SatellitePart_LowValue_C::autoAddObjects(double OverlapMultiplier)
+void ABP_WoodenCrate_SatellitePart_LowValue_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WoodenCrate_SatellitePart_LowValue_C", "autoAddObjects");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_WoodenCrate_SatellitePart_LowValue_C_autoAddObjects Parms{};
 
-	Parms.OverlapMultiplier = OverlapMultiplier;
+// Function BP_WoodenCrate_SatellitePart_LowValue.BP_WoodenCrate_SatellitePart_LowValue_C.ReceiveDestroyed
+// (Event, Public, BlueprintEvent)
 
-	UObject::ProcessEvent(Func, &Parms);
+void ABP_WoodenCrate_SatellitePart_LowValue_C::ReceiveDestroyed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveDestroyed", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -43,10 +47,8 @@ void ABP_WoodenCrate_SatellitePart_LowValue_C::autoAddObjects(double OverlapMult
 
 void ABP_WoodenCrate_SatellitePart_LowValue_C::ExecuteUbergraph_BP_WoodenCrate_SatellitePart_LowValue(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WoodenCrate_SatellitePart_LowValue_C", "ExecuteUbergraph_BP_WoodenCrate_SatellitePart_LowValue");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_WoodenCrate_SatellitePart_LowValue_C", "ExecuteUbergraph_BP_WoodenCrate_SatellitePart_LowValue", FuncInfo);
 
 	Params::BP_WoodenCrate_SatellitePart_LowValue_C_ExecuteUbergraph_BP_WoodenCrate_SatellitePart_LowValue Parms{};
 
@@ -56,31 +58,21 @@ void ABP_WoodenCrate_SatellitePart_LowValue_C::ExecuteUbergraph_BP_WoodenCrate_S
 }
 
 
-// Function BP_WoodenCrate_SatellitePart_LowValue.BP_WoodenCrate_SatellitePart_LowValue_C.ReceiveDestroyed
-// (Event, Public, BlueprintEvent)
+// Function BP_WoodenCrate_SatellitePart_LowValue.BP_WoodenCrate_SatellitePart_LowValue_C.autoAddObjects
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  OverlapMultiplier                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_WoodenCrate_SatellitePart_LowValue_C::ReceiveDestroyed()
+void ABP_WoodenCrate_SatellitePart_LowValue_C::autoAddObjects(double OverlapMultiplier)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"autoAddObjects", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WoodenCrate_SatellitePart_LowValue_C", "ReceiveDestroyed");
+	Params::BP_WoodenCrate_SatellitePart_LowValue_C_autoAddObjects Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Parms.OverlapMultiplier = OverlapMultiplier;
 
-
-// Function BP_WoodenCrate_SatellitePart_LowValue.BP_WoodenCrate_SatellitePart_LowValue_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_WoodenCrate_SatellitePart_LowValue_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WoodenCrate_SatellitePart_LowValue_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

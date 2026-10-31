@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Pool_structure_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "Pool_structure_structs.hpp"
 #include "traffic_light_status_structs.hpp"
 
 
@@ -28,11 +28,11 @@ public:
 	TArray<struct FPool_structure>                Pools;                                             // 0x0338(0x0010)(Edit, BlueprintVisible)
 
 public:
-	void ExecuteUbergraph_Traffic_light_switcher(int32 EntryPoint);
-	void ReceiveTick(float DeltaSeconds);
-	void refresh_traffic_light_status();
-	void update_pool(TArray<class AActor*>& Pool, Etraffic_light_status status);
 	void UserConstructionScript();
+	void update_pool(TArray<class AActor*>& Pool, Etraffic_light_status status);
+	void refresh_traffic_light_status();
+	void ReceiveTick(float DeltaSeconds_ReceiveTick);
+	void ExecuteUbergraph_Traffic_light_switcher(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<ATraffic_light_switcher_C>();
 	}
 };
+DUMPER7_ASSERTS_ATraffic_light_switcher_C;
 
 SDK_NAMESPACE_END

@@ -41,5 +41,6 @@ public:
 		return GetDefaultObjImpl<ABP_InteractableSatellitePart_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_InteractableSatellitePart_C;
 
 SDK_NAMESPACE_END

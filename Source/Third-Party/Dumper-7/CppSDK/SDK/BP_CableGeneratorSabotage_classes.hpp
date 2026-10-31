@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "BP_BaseSabotagePoint_classes.hpp"
 #include "AkAudio_structs.hpp"
+#include "BP_BaseSabotagePoint_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -32,14 +32,14 @@ public:
 	int32                                         ghostMeshPosition;                                 // 0x0478(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_CableGeneratorSabotage_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_CableGeneratorSabotage_InteractableStartGenerator_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_CableGeneratorSabotage(int32 EntryPoint);
-	void onInterruptedServer(bool bSabotaged);
-	void onInteruptedMulticast();
-	void ReceiveBeginPlay();
-	void setInitialInteractionEnabled();
 	void UserConstructionScript();
+	void setInitialInteractionEnabled();
+	void ReceiveBeginPlay();
+	void onInteruptedMulticast();
+	void onInterruptedServer(bool bSabotaged);
+	void ExecuteUbergraph_BP_CableGeneratorSabotage(int32 EntryPoint);
+	void BndEvt__BP_CableGeneratorSabotage_InteractableStartGenerator_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_CableGeneratorSabotage_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -55,5 +55,6 @@ public:
 		return GetDefaultObjImpl<ABP_CableGeneratorSabotage_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CableGeneratorSabotage_C;
 
 SDK_NAMESPACE_END

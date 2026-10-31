@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
+#include "doorStateSimple_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
-#include "doorStateSimple_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -31,18 +31,18 @@ public:
 	bool                                          phaseThroughPlayersWhenMoving;                     // 0x06E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void setBreachedMeshVisibility(bool breached);
-	void onDoorBreached(ESBZGateState oldState, ESBZGateState newState);
-	void onOpenAnimUpdateTick(double alpha);
-	void onOpenAnimStarted();
-	void canDoorAnimate(ESBZGateState oldState, ESBZGateState newState, bool* canAnimate);
-	void getDoorSimpleState(ESBZGateState state, EdoorStateSimple* simpleState);
-	void open__FinishedFunc();
-	void open__UpdateFunc();
-	void OnStateChanged(ESBZGateState OldState, ESBZGateState NewState, bool bIsInitialStateChange);
-	void initToValidPosition(ESBZGateState oldState);
-	void onOpenAnimFinished();
 	void ExecuteUbergraph_BP_interactableDoor_Base(int32 EntryPoint);
+	void onOpenAnimFinished();
+	void initToValidPosition(ESBZGateState oldState);
+	void OnStateChanged(ESBZGateState OldState, ESBZGateState NewState, bool bIsInitialStateChange);
+	void open__UpdateFunc();
+	void open__FinishedFunc();
+	void getDoorSimpleState(ESBZGateState state, EdoorStateSimple* simpleState);
+	void canDoorAnimate(ESBZGateState oldState, ESBZGateState newState, bool* canAnimate);
+	void onOpenAnimStarted();
+	void onOpenAnimUpdateTick(double alpha);
+	void onDoorBreached(ESBZGateState oldState, ESBZGateState newState);
+	void setBreachedMeshVisibility(bool breached);
 
 public:
 	static class UClass* StaticClass()
@@ -58,5 +58,6 @@ public:
 		return GetDefaultObjImpl<ABP_interactableDoor_Base_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_interactableDoor_Base_C;
 
 SDK_NAMESPACE_END

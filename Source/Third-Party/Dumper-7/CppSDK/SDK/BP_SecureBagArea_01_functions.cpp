@@ -16,26 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_SecureBagArea_01.BP_SecureBagArea_01_C.addBagHandle
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FSBZBagHandle&             BagHandle                                              (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void ABP_SecureBagArea_01_C::addBagHandle(const struct FSBZBagHandle& BagHandle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SecureBagArea_01_C", "addBagHandle");
-
-	Params::BP_SecureBagArea_01_C_addBagHandle Parms{};
-
-	Parms.BagHandle = std::move(BagHandle);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_SecureBagArea_01.BP_SecureBagArea_01_C.ExecuteUbergraph_BP_SecureBagArea_01
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -43,14 +23,30 @@ void ABP_SecureBagArea_01_C::addBagHandle(const struct FSBZBagHandle& BagHandle)
 
 void ABP_SecureBagArea_01_C::ExecuteUbergraph_BP_SecureBagArea_01(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SecureBagArea_01_C", "ExecuteUbergraph_BP_SecureBagArea_01");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_SecureBagArea_01_C", "ExecuteUbergraph_BP_SecureBagArea_01", FuncInfo);
 
 	Params::BP_SecureBagArea_01_C_ExecuteUbergraph_BP_SecureBagArea_01 Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SecureBagArea_01.BP_SecureBagArea_01_C.addBagHandle
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FSBZBagHandle&             BagHandle                                              (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void ABP_SecureBagArea_01_C::addBagHandle(const struct FSBZBagHandle& BagHandle)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"addBagHandle", FnName));
+
+	Params::BP_SecureBagArea_01_C_addBagHandle Parms{};
+
+	Parms.BagHandle = std::move(BagHandle);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

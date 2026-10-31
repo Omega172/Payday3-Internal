@@ -16,21 +16,121 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_TogglableTrain.BP_TogglableTrain_C.ExecuteUbergraph_BP_TogglableTrain
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_TogglableTrain.BP_TogglableTrain_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_TogglableTrain_C::ExecuteUbergraph_BP_TogglableTrain(int32 EntryPoint)
+void ABP_TogglableTrain_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TogglableTrain_C", "ExecuteUbergraph_BP_TogglableTrain");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_TogglableTrain_C_ExecuteUbergraph_BP_TogglableTrain Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+// Function BP_TogglableTrain.BP_TogglableTrain_C.updateAkLocation
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_TogglableTrain_C::updateAkLocation()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"updateAkLocation", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_TogglableTrain.BP_TogglableTrain_C.train_timeline__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_TogglableTrain_C::train_timeline__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"train_timeline__UpdateFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_TogglableTrain.BP_TogglableTrain_C.train_timeline__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_TogglableTrain_C::train_timeline__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"train_timeline__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_TogglableTrain.BP_TogglableTrain_C.setEnabled
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_TogglableTrain_C::setEnabled(bool enabled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setEnabled", FnName));
+
+	Params::BP_TogglableTrain_C_setEnabled Parms{};
+
+	Parms.enabled = enabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_TogglableTrain.BP_TogglableTrain_C.setAudio
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    fast                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_TogglableTrain_C::setAudio(bool enabled, bool fast)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setAudio", FnName));
+
+	Params::BP_TogglableTrain_C_setAudio Parms{};
+
+	Parms.enabled = enabled;
+	Parms.fast = fast;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_TogglableTrain.BP_TogglableTrain_C.resetAudioEndTrigger
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_TogglableTrain_C::resetAudioEndTrigger()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"resetAudioEndTrigger", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_TogglableTrain.BP_TogglableTrain_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   OldState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_TogglableTrain_C::OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_TogglableTrain_C_OnStateChanged Parms{};
+
+	Parms.OldState_OnStateChanged = OldState_OnStateChanged;
+	Parms.NewState_OnStateChanged = NewState_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -43,10 +143,8 @@ void ABP_TogglableTrain_C::ExecuteUbergraph_BP_TogglableTrain(int32 EntryPoint)
 
 void ABP_TogglableTrain_C::GetDistanceToPlayerFromClosestSplinePoint(double* Distance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TogglableTrain_C", "GetDistanceToPlayerFromClosestSplinePoint");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetDistanceToPlayerFromClosestSplinePoint", FnName));
 
 	Params::BP_TogglableTrain_C_GetDistanceToPlayerFromClosestSplinePoint Parms{};
 
@@ -57,139 +155,21 @@ void ABP_TogglableTrain_C::GetDistanceToPlayerFromClosestSplinePoint(double* Dis
 }
 
 
-// Function BP_TogglableTrain.BP_TogglableTrain_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
+// Function BP_TogglableTrain.BP_TogglableTrain_C.ExecuteUbergraph_BP_TogglableTrain
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_TogglableTrain_C::OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics)
+void ABP_TogglableTrain_C::ExecuteUbergraph_BP_TogglableTrain(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_TogglableTrain_C", "ExecuteUbergraph_BP_TogglableTrain", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TogglableTrain_C", "OnStateChanged");
+	Params::BP_TogglableTrain_C_ExecuteUbergraph_BP_TogglableTrain Parms{};
 
-	Params::BP_TogglableTrain_C_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_TogglableTrain.BP_TogglableTrain_C.resetAudioEndTrigger
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_TogglableTrain_C::resetAudioEndTrigger()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TogglableTrain_C", "resetAudioEndTrigger");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_TogglableTrain.BP_TogglableTrain_C.setAudio
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    fast                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_TogglableTrain_C::setAudio(bool enabled, bool fast)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TogglableTrain_C", "setAudio");
-
-	Params::BP_TogglableTrain_C_setAudio Parms{};
-
-	Parms.enabled = enabled;
-	Parms.fast = fast;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_TogglableTrain.BP_TogglableTrain_C.setEnabled
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_TogglableTrain_C::setEnabled(bool enabled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TogglableTrain_C", "setEnabled");
-
-	Params::BP_TogglableTrain_C_setEnabled Parms{};
-
-	Parms.enabled = enabled;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_TogglableTrain.BP_TogglableTrain_C.train_timeline__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_TogglableTrain_C::train_timeline__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TogglableTrain_C", "train_timeline__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_TogglableTrain.BP_TogglableTrain_C.train_timeline__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_TogglableTrain_C::train_timeline__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TogglableTrain_C", "train_timeline__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_TogglableTrain.BP_TogglableTrain_C.updateAkLocation
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_TogglableTrain_C::updateAkLocation()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TogglableTrain_C", "updateAkLocation");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_TogglableTrain.BP_TogglableTrain_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_TogglableTrain_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TogglableTrain_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

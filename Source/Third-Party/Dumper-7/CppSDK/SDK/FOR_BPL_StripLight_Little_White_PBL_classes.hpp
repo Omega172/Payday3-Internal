@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<AFOR_BPL_StripLight_Little_White_PBL_C>();
 	}
 };
+DUMPER7_ASSERTS_AFOR_BPL_StripLight_Little_White_PBL_C;
 
 SDK_NAMESPACE_END

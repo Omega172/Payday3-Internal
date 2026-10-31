@@ -16,93 +16,157 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_DAT_CoolingSystem.BP_DAT_CoolingSystem_C.BndEvt__BP_DAT_CoolingSystem_InteractableComponent_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_DAT_CoolingSystem.BP_DAT_CoolingSystem_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_DAT_CoolingSystem_C::BndEvt__BP_DAT_CoolingSystem_InteractableComponent_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_DAT_CoolingSystem_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_CoolingSystem_C", "BndEvt__BP_DAT_CoolingSystem_InteractableComponent_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_DAT_CoolingSystem_C_BndEvt__BP_DAT_CoolingSystem_InteractableComponent_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature Parms{};
 
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+// Function BP_DAT_CoolingSystem.BP_DAT_CoolingSystem_C.timerUpdate
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_DAT_CoolingSystem_C::timerUpdate()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"timerUpdate", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_DAT_CoolingSystem.BP_DAT_CoolingSystem_C.Timeline_0__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_DAT_CoolingSystem_C::Timeline_0__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__UpdateFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_DAT_CoolingSystem.BP_DAT_CoolingSystem_C.Timeline_0__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_DAT_CoolingSystem_C::Timeline_0__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_DAT_CoolingSystem.BP_DAT_CoolingSystem_C.setInteractionEnabled
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bEnabled                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_DAT_CoolingSystem_C::setInteractionEnabled(bool bEnabled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setInteractionEnabled", FnName));
+
+	Params::BP_DAT_CoolingSystem_C_setInteractionEnabled Parms{};
+
+	Parms.bEnabled = bEnabled;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_DAT_CoolingSystem.BP_DAT_CoolingSystem_C.BndEvt__BP_DAT_CoolingSystem_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_DAT_CoolingSystem.BP_DAT_CoolingSystem_C.sabotaged
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_DAT_CoolingSystem_C::BndEvt__BP_DAT_CoolingSystem_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_DAT_CoolingSystem_C::sabotaged()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"sabotaged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_CoolingSystem_C", "BndEvt__BP_DAT_CoolingSystem_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_DAT_CoolingSystem_C_BndEvt__BP_DAT_CoolingSystem_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature Parms{};
 
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+// Function BP_DAT_CoolingSystem.BP_DAT_CoolingSystem_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_DAT_CoolingSystem_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_DAT_CoolingSystem.BP_DAT_CoolingSystem_C.OnRep_timerRunning
+// (HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_DAT_CoolingSystem_C::OnRep_timerRunning()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRep_timerRunning", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_DAT_CoolingSystem.BP_DAT_CoolingSystem_C.interrupted
+// (BlueprintAuthorityOnly, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_DAT_CoolingSystem_C::interrupted(bool bSabotaged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"interrupted", FnName));
+
+	Params::BP_DAT_CoolingSystem_C_interrupted Parms{};
+
+	Parms.bSabotaged = bSabotaged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_DAT_CoolingSystem.BP_DAT_CoolingSystem_C.BndEvt__BP_DAT_CoolingSystem_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
+// Function BP_DAT_CoolingSystem.BP_DAT_CoolingSystem_C.ExecuteUbergraph_BP_DAT_CoolingSystem
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_DAT_CoolingSystem_C::BndEvt__BP_DAT_CoolingSystem_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_DAT_CoolingSystem_C::ExecuteUbergraph_BP_DAT_CoolingSystem(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_DAT_CoolingSystem_C", "ExecuteUbergraph_BP_DAT_CoolingSystem", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_CoolingSystem_C", "BndEvt__BP_DAT_CoolingSystem_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
+	Params::BP_DAT_CoolingSystem_C_ExecuteUbergraph_BP_DAT_CoolingSystem Parms{};
 
-	Params::BP_DAT_CoolingSystem_C_BndEvt__BP_DAT_CoolingSystem_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_DAT_CoolingSystem.BP_DAT_CoolingSystem_C.BndEvt__BP_DAT_CoolingSystem_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
+// Function BP_DAT_CoolingSystem.BP_DAT_CoolingSystem_C.BndEvt__BP_DAT_SprinklerSabotagePoint1_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_DAT_CoolingSystem_C::BndEvt__BP_DAT_CoolingSystem_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_DAT_CoolingSystem_C::BndEvt__BP_DAT_SprinklerSabotagePoint1_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_DAT_SprinklerSabotagePoint1_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_CoolingSystem_C", "BndEvt__BP_DAT_CoolingSystem_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_DAT_CoolingSystem_C_BndEvt__BP_DAT_CoolingSystem_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature Parms{};
+	Params::BP_DAT_CoolingSystem_C_BndEvt__BP_DAT_SprinklerSabotagePoint1_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
 
 	Parms.Interactable = Interactable;
 	Parms.Interactor = Interactor;
@@ -121,10 +185,8 @@ void ABP_DAT_CoolingSystem_C::BndEvt__BP_DAT_CoolingSystem_SBZInteractable_K2Nod
 
 void ABP_DAT_CoolingSystem_C::BndEvt__BP_DAT_CoolingSystem_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_CoolingSystem_C", "BndEvt__BP_DAT_CoolingSystem_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_DAT_CoolingSystem_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature", FnName));
 
 	Params::BP_DAT_CoolingSystem_C_BndEvt__BP_DAT_CoolingSystem_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature Parms{};
 
@@ -136,21 +198,19 @@ void ABP_DAT_CoolingSystem_C::BndEvt__BP_DAT_CoolingSystem_SBZInteractable_K2Nod
 }
 
 
-// Function BP_DAT_CoolingSystem.BP_DAT_CoolingSystem_C.BndEvt__BP_DAT_SprinklerSabotagePoint1_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// Function BP_DAT_CoolingSystem.BP_DAT_CoolingSystem_C.BndEvt__BP_DAT_CoolingSystem_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_DAT_CoolingSystem_C::BndEvt__BP_DAT_SprinklerSabotagePoint1_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_DAT_CoolingSystem_C::BndEvt__BP_DAT_CoolingSystem_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_DAT_CoolingSystem_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_CoolingSystem_C", "BndEvt__BP_DAT_SprinklerSabotagePoint1_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_DAT_CoolingSystem_C_BndEvt__BP_DAT_SprinklerSabotagePoint1_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
+	Params::BP_DAT_CoolingSystem_C_BndEvt__BP_DAT_CoolingSystem_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature Parms{};
 
 	Parms.Interactable = Interactable;
 	Parms.Interactor = Interactor;
@@ -160,161 +220,69 @@ void ABP_DAT_CoolingSystem_C::BndEvt__BP_DAT_SprinklerSabotagePoint1_Interactabl
 }
 
 
-// Function BP_DAT_CoolingSystem.BP_DAT_CoolingSystem_C.ExecuteUbergraph_BP_DAT_CoolingSystem
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_DAT_CoolingSystem_C::ExecuteUbergraph_BP_DAT_CoolingSystem(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_CoolingSystem_C", "ExecuteUbergraph_BP_DAT_CoolingSystem");
-
-	Params::BP_DAT_CoolingSystem_C_ExecuteUbergraph_BP_DAT_CoolingSystem Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_DAT_CoolingSystem.BP_DAT_CoolingSystem_C.interrupted
-// (BlueprintAuthorityOnly, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_DAT_CoolingSystem_C::interrupted(bool bSabotaged)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_CoolingSystem_C", "interrupted");
-
-	Params::BP_DAT_CoolingSystem_C_interrupted Parms{};
-
-	Parms.bSabotaged = bSabotaged;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_DAT_CoolingSystem.BP_DAT_CoolingSystem_C.OnRep_timerRunning
-// (HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_DAT_CoolingSystem_C::OnRep_timerRunning()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_CoolingSystem_C", "OnRep_timerRunning");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_DAT_CoolingSystem.BP_DAT_CoolingSystem_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_DAT_CoolingSystem_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_CoolingSystem_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_DAT_CoolingSystem.BP_DAT_CoolingSystem_C.sabotaged
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_DAT_CoolingSystem_C::sabotaged()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_CoolingSystem_C", "sabotaged");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_DAT_CoolingSystem.BP_DAT_CoolingSystem_C.setInteractionEnabled
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bEnabled                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_DAT_CoolingSystem_C::setInteractionEnabled(bool bEnabled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_CoolingSystem_C", "setInteractionEnabled");
-
-	Params::BP_DAT_CoolingSystem_C_setInteractionEnabled Parms{};
-
-	Parms.bEnabled = bEnabled;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_DAT_CoolingSystem.BP_DAT_CoolingSystem_C.Timeline_0__FinishedFunc
+// Function BP_DAT_CoolingSystem.BP_DAT_CoolingSystem_C.BndEvt__BP_DAT_CoolingSystem_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_DAT_CoolingSystem_C::Timeline_0__FinishedFunc()
+void ABP_DAT_CoolingSystem_C::BndEvt__BP_DAT_CoolingSystem_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_DAT_CoolingSystem_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_CoolingSystem_C", "Timeline_0__FinishedFunc");
+	Params::BP_DAT_CoolingSystem_C_BndEvt__BP_DAT_CoolingSystem_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_DAT_CoolingSystem.BP_DAT_CoolingSystem_C.Timeline_0__UpdateFunc
+// Function BP_DAT_CoolingSystem.BP_DAT_CoolingSystem_C.BndEvt__BP_DAT_CoolingSystem_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_DAT_CoolingSystem_C::Timeline_0__UpdateFunc()
+void ABP_DAT_CoolingSystem_C::BndEvt__BP_DAT_CoolingSystem_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_DAT_CoolingSystem_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_CoolingSystem_C", "Timeline_0__UpdateFunc");
+	Params::BP_DAT_CoolingSystem_C_BndEvt__BP_DAT_CoolingSystem_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_DAT_CoolingSystem.BP_DAT_CoolingSystem_C.timerUpdate
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_DAT_CoolingSystem.BP_DAT_CoolingSystem_C.BndEvt__BP_DAT_CoolingSystem_InteractableComponent_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_DAT_CoolingSystem_C::timerUpdate()
+void ABP_DAT_CoolingSystem_C::BndEvt__BP_DAT_CoolingSystem_InteractableComponent_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_DAT_CoolingSystem_InteractableComponent_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_CoolingSystem_C", "timerUpdate");
+	Params::BP_DAT_CoolingSystem_C_BndEvt__BP_DAT_CoolingSystem_InteractableComponent_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
-
-// Function BP_DAT_CoolingSystem.BP_DAT_CoolingSystem_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_DAT_CoolingSystem_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_CoolingSystem_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

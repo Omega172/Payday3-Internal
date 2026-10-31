@@ -22,8 +22,9 @@ struct ABP_Delivery_Drone_C_AnimGraph final
 {
 public:
 	struct FPoseLink                              InPose;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-	struct FPoseLink                              AnimGraph_0;                                       // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
+	struct FPoseLink                              AnimGraph;                                         // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
+DUMPER7_ASSERTS_ABP_Delivery_Drone_C_AnimGraph;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

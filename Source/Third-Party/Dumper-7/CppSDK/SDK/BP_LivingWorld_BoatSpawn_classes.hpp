@@ -39,10 +39,10 @@ public:
 	bool                                          DisableCollisions;                                 // 0x0381(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_LivingWorld_BoatSpawn(int32 EntryPoint);
-	void MoveBoat__FinishedFunc();
-	void MoveBoat__UpdateFunc();
 	void UserConstructionScript();
+	void MoveBoat__UpdateFunc();
+	void MoveBoat__FinishedFunc();
+	void ExecuteUbergraph_BP_LivingWorld_BoatSpawn(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -58,5 +58,6 @@ public:
 		return GetDefaultObjImpl<ABP_LivingWorld_BoatSpawn_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LivingWorld_BoatSpawn_C;
 
 SDK_NAMESPACE_END

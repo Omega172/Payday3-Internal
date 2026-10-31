@@ -26,9 +26,9 @@ public:
 	class ASBZSoundEnvironment*                   AMB_EXT_Main_ExecuteUbergraph_A_ArmoredTransport_RefProperty; // 0x03E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ActionPhaseStarted();
-	void ExecuteUbergraph_A_ArmoredTransport(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_A_ArmoredTransport(int32 EntryPoint);
+	void ActionPhaseStarted();
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<AA_ArmoredTransport_C>();
 	}
 };
+DUMPER7_ASSERTS_AA_ArmoredTransport_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UBP_StaggerFeedback_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_StaggerFeedback_C;
 
 SDK_NAMESPACE_END

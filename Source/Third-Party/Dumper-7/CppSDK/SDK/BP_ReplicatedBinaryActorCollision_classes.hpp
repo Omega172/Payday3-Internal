@@ -26,8 +26,8 @@ public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0368(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
 	void ExecuteUbergraph_BP_ReplicatedBinaryActorCollision(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
 
 public:
 	static class UClass* StaticClass()
@@ -43,5 +43,6 @@ public:
 		return GetDefaultObjImpl<ABP_ReplicatedBinaryActorCollision_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ReplicatedBinaryActorCollision_C;
 
 SDK_NAMESPACE_END

@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<Abp_VentilationRoof_04_Rotation_C>();
 	}
 };
+DUMPER7_ASSERTS_Abp_VentilationRoof_04_Rotation_C;
 
 SDK_NAMESPACE_END

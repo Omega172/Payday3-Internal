@@ -20,5 +20,6 @@ struct FS_LootableCar_Variations final
 public:
 	TArray<float>                                 Data_4_426017C24B4CCCAE7F435DBE258381B3;           // 0x0000(0x0010)(Edit, BlueprintVisible)
 };
+DUMPER7_ASSERTS_FS_LootableCar_Variations;
 
 SDK_NAMESPACE_END

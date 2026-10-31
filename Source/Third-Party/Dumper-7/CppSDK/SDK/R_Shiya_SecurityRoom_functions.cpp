@@ -16,6 +16,18 @@
 
 SDK_NAMESPACE_START
 
+// Function R_Shiya_SecurityRoom.R_Shiya_SecurityRoom_C.RandomizedRoomTest_RemoteEvent1
+// (BlueprintCallable, BlueprintEvent)
+
+void AR_Shiya_SecurityRoom_C::RandomizedRoomTest_RemoteEvent1()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RandomizedRoomTest_RemoteEvent1", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function R_Shiya_SecurityRoom.R_Shiya_SecurityRoom_C.ExecuteUbergraph_R_Shiya_SecurityRoom
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,30 +35,14 @@ SDK_NAMESPACE_START
 
 void AR_Shiya_SecurityRoom_C::ExecuteUbergraph_R_Shiya_SecurityRoom(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Shiya_SecurityRoom_C", "ExecuteUbergraph_R_Shiya_SecurityRoom");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "R_Shiya_SecurityRoom_C", "ExecuteUbergraph_R_Shiya_SecurityRoom", FuncInfo);
 
 	Params::R_Shiya_SecurityRoom_C_ExecuteUbergraph_R_Shiya_SecurityRoom Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_Shiya_SecurityRoom.R_Shiya_SecurityRoom_C.RandomizedRoomTest_RemoteEvent1
-// (BlueprintCallable, BlueprintEvent)
-
-void AR_Shiya_SecurityRoom_C::RandomizedRoomTest_RemoteEvent1()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Shiya_SecurityRoom_C", "RandomizedRoomTest_RemoteEvent1");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -16,43 +16,35 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ONE_Lobby_Center_CeilingWindow_01.BP_ONE_Lobby_Center_CeilingWindow_01_C.BndEvt__BP_CHU_RectangularSkylight_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// class UActorComponent*                  PoolComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   Hits                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZPropDamageContext&     DamageContext                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// Function BP_ONE_Lobby_Center_CeilingWindow_01.BP_ONE_Lobby_Center_CeilingWindow_01_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_ONE_Lobby_Center_CeilingWindow_01_C::BndEvt__BP_CHU_RectangularSkylight_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
+void ABP_ONE_Lobby_Center_CeilingWindow_01_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ONE_Lobby_Center_CeilingWindow_01_C", "BndEvt__BP_CHU_RectangularSkylight_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature");
-
-	Params::BP_ONE_Lobby_Center_CeilingWindow_01_C_BndEvt__BP_CHU_RectangularSkylight_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature Parms{};
-
-	Parms.PoolComponent = PoolComponent;
-	Parms.Hits = Hits;
-	Parms.bDoCosmetics = bDoCosmetics;
-	Parms.DamageContext = std::move(DamageContext);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ONE_Lobby_Center_CeilingWindow_01.BP_ONE_Lobby_Center_CeilingWindow_01_C.destroyGlass
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_ONE_Lobby_Center_CeilingWindow_01.BP_ONE_Lobby_Center_CeilingWindow_01_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bStateToChangeTo_OnStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ONE_Lobby_Center_CeilingWindow_01_C::destroyGlass()
+void ABP_ONE_Lobby_Center_CeilingWindow_01_C::OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ONE_Lobby_Center_CeilingWindow_01_C", "destroyGlass");
+	Params::BP_ONE_Lobby_Center_CeilingWindow_01_C_OnStateChanged Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.bStateToChangeTo_OnStateChanged = bStateToChangeTo_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -63,10 +55,8 @@ void ABP_ONE_Lobby_Center_CeilingWindow_01_C::destroyGlass()
 
 void ABP_ONE_Lobby_Center_CeilingWindow_01_C::ExecuteUbergraph_BP_ONE_Lobby_Center_CeilingWindow_01(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ONE_Lobby_Center_CeilingWindow_01_C", "ExecuteUbergraph_BP_ONE_Lobby_Center_CeilingWindow_01");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ONE_Lobby_Center_CeilingWindow_01_C", "ExecuteUbergraph_BP_ONE_Lobby_Center_CeilingWindow_01", FuncInfo);
 
 	Params::BP_ONE_Lobby_Center_CeilingWindow_01_C_ExecuteUbergraph_BP_ONE_Lobby_Center_CeilingWindow_01 Parms{};
 
@@ -76,39 +66,39 @@ void ABP_ONE_Lobby_Center_CeilingWindow_01_C::ExecuteUbergraph_BP_ONE_Lobby_Cent
 }
 
 
-// Function BP_ONE_Lobby_Center_CeilingWindow_01.BP_ONE_Lobby_Center_CeilingWindow_01_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ONE_Lobby_Center_CeilingWindow_01.BP_ONE_Lobby_Center_CeilingWindow_01_C.destroyGlass
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_ONE_Lobby_Center_CeilingWindow_01_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
+void ABP_ONE_Lobby_Center_CeilingWindow_01_C::destroyGlass()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"destroyGlass", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ONE_Lobby_Center_CeilingWindow_01_C", "OnStateChanged");
-
-	Params::BP_ONE_Lobby_Center_CeilingWindow_01_C_OnStateChanged Parms{};
-
-	Parms.bStateToChangeTo = bStateToChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ONE_Lobby_Center_CeilingWindow_01.BP_ONE_Lobby_Center_CeilingWindow_01_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_ONE_Lobby_Center_CeilingWindow_01.BP_ONE_Lobby_Center_CeilingWindow_01_C.BndEvt__BP_CHU_RectangularSkylight_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// class UActorComponent*                  PoolComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   Hits                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZPropDamageContext&     DamageContext                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 
-void ABP_ONE_Lobby_Center_CeilingWindow_01_C::UserConstructionScript()
+void ABP_ONE_Lobby_Center_CeilingWindow_01_C::BndEvt__BP_CHU_RectangularSkylight_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_CHU_RectangularSkylight_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ONE_Lobby_Center_CeilingWindow_01_C", "UserConstructionScript");
+	Params::BP_ONE_Lobby_Center_CeilingWindow_01_C_BndEvt__BP_CHU_RectangularSkylight_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.PoolComponent = PoolComponent;
+	Parms.Hits = Hits;
+	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.DamageContext = std::move(DamageContext);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

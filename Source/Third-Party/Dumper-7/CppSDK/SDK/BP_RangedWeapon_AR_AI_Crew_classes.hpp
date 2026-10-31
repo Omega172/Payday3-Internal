@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_RangedWeapon_AR_AI_Crew_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_RangedWeapon_AR_AI_Crew_C;
 
 SDK_NAMESPACE_END

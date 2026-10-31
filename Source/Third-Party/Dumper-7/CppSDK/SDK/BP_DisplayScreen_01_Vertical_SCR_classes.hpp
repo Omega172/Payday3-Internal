@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_DisplayScreen_01_Vertical_SCR_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DisplayScreen_01_Vertical_SCR_C;
 
 SDK_NAMESPACE_END

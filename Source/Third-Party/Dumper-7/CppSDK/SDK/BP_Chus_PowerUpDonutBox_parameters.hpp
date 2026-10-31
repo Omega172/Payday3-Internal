@@ -16,25 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_Chus_PowerUpDonutBox.BP_Chus_PowerUpDonutBox_C.BndEvt__BP_TestDonutbox_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct BP_Chus_PowerUpDonutBox_C_BndEvt__BP_TestDonutbox_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature final
-{
-public:
-	const class USBZBaseInteractableComponent*    InteractableComponent_0;                           // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInNewState;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_Chus_PowerUpDonutBox.BP_Chus_PowerUpDonutBox_C.BP_OnStateChanged
-// 0x0003 (0x0003 - 0x0000)
-struct BP_Chus_PowerUpDonutBox_C_BP_OnStateChanged final
-{
-public:
-	ESBZPowerUpChargesState                       OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZPowerUpChargesState                       NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_Chus_PowerUpDonutBox.BP_Chus_PowerUpDonutBox_C.ExecuteUbergraph_BP_Chus_PowerUpDonutBox
 // 0x0020 (0x0020 - 0x0000)
 struct BP_Chus_PowerUpDonutBox_C_ExecuteUbergraph_BP_Chus_PowerUpDonutBox final
@@ -53,6 +34,28 @@ public:
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Chus_PowerUpDonutBox_C_ExecuteUbergraph_BP_Chus_PowerUpDonutBox;
+
+// Function BP_Chus_PowerUpDonutBox.BP_Chus_PowerUpDonutBox_C.BP_OnStateChanged
+// 0x0003 (0x0003 - 0x0000)
+struct BP_Chus_PowerUpDonutBox_C_BP_OnStateChanged final
+{
+public:
+	ESBZPowerUpChargesState                       OldState_BP_OnStateChanged;                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZPowerUpChargesState                       NewState_BP_OnStateChanged;                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_BP_OnStateChanged;                    // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Chus_PowerUpDonutBox_C_BP_OnStateChanged;
+
+// Function BP_Chus_PowerUpDonutBox.BP_Chus_PowerUpDonutBox_C.BndEvt__BP_TestDonutbox_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct BP_Chus_PowerUpDonutBox_C_BndEvt__BP_TestDonutbox_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature final
+{
+public:
+	const class USBZBaseInteractableComponent*    InteractableComponent;                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInNewState;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Chus_PowerUpDonutBox_C_BndEvt__BP_TestDonutbox_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

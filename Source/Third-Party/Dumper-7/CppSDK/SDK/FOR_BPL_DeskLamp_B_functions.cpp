@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function FOR_BPL_DeskLamp_B.FOR_BPL_DeskLamp_B_C.ExecuteUbergraph_FOR_BPL_DeskLamp_B
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AFOR_BPL_DeskLamp_B_C::ExecuteUbergraph_FOR_BPL_DeskLamp_B(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "FOR_BPL_DeskLamp_B_C", "ExecuteUbergraph_FOR_BPL_DeskLamp_B", FuncInfo);
+
+	Params::FOR_BPL_DeskLamp_B_C_ExecuteUbergraph_FOR_BPL_DeskLamp_B Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function FOR_BPL_DeskLamp_B.FOR_BPL_DeskLamp_B_C.BndEvt__BPL_DeskLamp_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -24,35 +42,13 @@ SDK_NAMESPACE_START
 
 void AFOR_BPL_DeskLamp_B_C::BndEvt__BPL_DeskLamp_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FOR_BPL_DeskLamp_B_C", "BndEvt__BPL_DeskLamp_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BPL_DeskLamp_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature", FnName));
 
 	Params::FOR_BPL_DeskLamp_B_C_BndEvt__BPL_DeskLamp_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature Parms{};
 
 	Parms.Type = Type;
 	Parms.HitContext = std::move(HitContext);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function FOR_BPL_DeskLamp_B.FOR_BPL_DeskLamp_B_C.ExecuteUbergraph_FOR_BPL_DeskLamp_B
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AFOR_BPL_DeskLamp_B_C::ExecuteUbergraph_FOR_BPL_DeskLamp_B(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("FOR_BPL_DeskLamp_B_C", "ExecuteUbergraph_FOR_BPL_DeskLamp_B");
-
-	Params::FOR_BPL_DeskLamp_B_C_ExecuteUbergraph_FOR_BPL_DeskLamp_B Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

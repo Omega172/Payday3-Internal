@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AM_Chus_Architecture_C>();
 	}
 };
+DUMPER7_ASSERTS_AM_Chus_Architecture_C;
 
 SDK_NAMESPACE_END

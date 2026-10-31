@@ -16,20 +16,36 @@
 
 SDK_NAMESPACE_START
 
-// Function E_DataCenter_INT_ServerRoom_Arch.E_DataCenter_INT_ServerRoom_Arch_C.BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility14_K2Node_ActorBoundEvent_17_SBZSmartLinkReachedSignature__DelegateSignature
+// Function E_DataCenter_INT_ServerRoom_Arch.E_DataCenter_INT_ServerRoom_Arch_C.ExecuteUbergraph_E_DataCenter_INT_ServerRoom_Arch
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AE_DataCenter_INT_ServerRoom_Arch_C::ExecuteUbergraph_E_DataCenter_INT_ServerRoom_Arch(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "E_DataCenter_INT_ServerRoom_Arch_C", "ExecuteUbergraph_E_DataCenter_INT_ServerRoom_Arch", FuncInfo);
+
+	Params::E_DataCenter_INT_ServerRoom_Arch_C_ExecuteUbergraph_E_DataCenter_INT_ServerRoom_Arch Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function E_DataCenter_INT_ServerRoom_Arch.E_DataCenter_INT_ServerRoom_Arch_C.BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility9_K2Node_ActorBoundEvent_19_SBZSmartLinkReachedSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
 // class AActor*                           MovingActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // const struct FVector&                   DestinationPoint                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AE_DataCenter_INT_ServerRoom_Arch_C::BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility14_K2Node_ActorBoundEvent_17_SBZSmartLinkReachedSignature__DelegateSignature(class AActor* MovingActor, const struct FVector& DestinationPoint)
+void AE_DataCenter_INT_ServerRoom_Arch_C::BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility9_K2Node_ActorBoundEvent_19_SBZSmartLinkReachedSignature__DelegateSignature(class AActor* MovingActor, const struct FVector& DestinationPoint)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility9_K2Node_ActorBoundEvent_19_SBZSmartLinkReachedSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_DataCenter_INT_ServerRoom_Arch_C", "BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility14_K2Node_ActorBoundEvent_17_SBZSmartLinkReachedSignature__DelegateSignature");
-
-	Params::E_DataCenter_INT_ServerRoom_Arch_C_BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility14_K2Node_ActorBoundEvent_17_SBZSmartLinkReachedSignature__DelegateSignature Parms{};
+	Params::E_DataCenter_INT_ServerRoom_Arch_C_BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility9_K2Node_ActorBoundEvent_19_SBZSmartLinkReachedSignature__DelegateSignature Parms{};
 
 	Parms.MovingActor = MovingActor;
 	Parms.DestinationPoint = std::move(DestinationPoint);
@@ -46,10 +62,8 @@ void AE_DataCenter_INT_ServerRoom_Arch_C::BndEvt__E_DataCenter_INT_ServerRoom_Ar
 
 void AE_DataCenter_INT_ServerRoom_Arch_C::BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility25_K2Node_ActorBoundEvent_18_SBZSmartLinkReachedSignature__DelegateSignature(class AActor* MovingActor, const struct FVector& DestinationPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_DataCenter_INT_ServerRoom_Arch_C", "BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility25_K2Node_ActorBoundEvent_18_SBZSmartLinkReachedSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility25_K2Node_ActorBoundEvent_18_SBZSmartLinkReachedSignature__DelegateSignature", FnName));
 
 	Params::E_DataCenter_INT_ServerRoom_Arch_C_BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility25_K2Node_ActorBoundEvent_18_SBZSmartLinkReachedSignature__DelegateSignature Parms{};
 
@@ -60,43 +74,21 @@ void AE_DataCenter_INT_ServerRoom_Arch_C::BndEvt__E_DataCenter_INT_ServerRoom_Ar
 }
 
 
-// Function E_DataCenter_INT_ServerRoom_Arch.E_DataCenter_INT_ServerRoom_Arch_C.BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility9_K2Node_ActorBoundEvent_19_SBZSmartLinkReachedSignature__DelegateSignature
+// Function E_DataCenter_INT_ServerRoom_Arch.E_DataCenter_INT_ServerRoom_Arch_C.BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility14_K2Node_ActorBoundEvent_17_SBZSmartLinkReachedSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
 // class AActor*                           MovingActor                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // const struct FVector&                   DestinationPoint                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AE_DataCenter_INT_ServerRoom_Arch_C::BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility9_K2Node_ActorBoundEvent_19_SBZSmartLinkReachedSignature__DelegateSignature(class AActor* MovingActor, const struct FVector& DestinationPoint)
+void AE_DataCenter_INT_ServerRoom_Arch_C::BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility14_K2Node_ActorBoundEvent_17_SBZSmartLinkReachedSignature__DelegateSignature(class AActor* MovingActor, const struct FVector& DestinationPoint)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility14_K2Node_ActorBoundEvent_17_SBZSmartLinkReachedSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_DataCenter_INT_ServerRoom_Arch_C", "BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility9_K2Node_ActorBoundEvent_19_SBZSmartLinkReachedSignature__DelegateSignature");
-
-	Params::E_DataCenter_INT_ServerRoom_Arch_C_BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility9_K2Node_ActorBoundEvent_19_SBZSmartLinkReachedSignature__DelegateSignature Parms{};
+	Params::E_DataCenter_INT_ServerRoom_Arch_C_BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility14_K2Node_ActorBoundEvent_17_SBZSmartLinkReachedSignature__DelegateSignature Parms{};
 
 	Parms.MovingActor = MovingActor;
 	Parms.DestinationPoint = std::move(DestinationPoint);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function E_DataCenter_INT_ServerRoom_Arch.E_DataCenter_INT_ServerRoom_Arch_C.ExecuteUbergraph_E_DataCenter_INT_ServerRoom_Arch
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AE_DataCenter_INT_ServerRoom_Arch_C::ExecuteUbergraph_E_DataCenter_INT_ServerRoom_Arch(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_DataCenter_INT_ServerRoom_Arch_C", "ExecuteUbergraph_E_DataCenter_INT_ServerRoom_Arch");
-
-	Params::E_DataCenter_INT_ServerRoom_Arch_C_ExecuteUbergraph_E_DataCenter_INT_ServerRoom_Arch Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

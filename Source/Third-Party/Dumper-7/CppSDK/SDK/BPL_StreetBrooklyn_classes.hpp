@@ -40,5 +40,6 @@ public:
 		return GetDefaultObjImpl<ABPL_StreetBrooklyn_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_StreetBrooklyn_C;
 
 SDK_NAMESPACE_END

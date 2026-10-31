@@ -18,7 +18,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BPL_SocketPanel.BPL_SocketPanel_C
-// 0x0038 (0x0360 - 0x0328)
+// 0x0030 (0x0358 - 0x0328)
 class BPL_SocketPanel_0::ABPL_SocketPanel_C final : public AActor
 {
 public:
@@ -26,13 +26,12 @@ public:
 	class UNiagaraComponent*                      FX_SparkBurst_M;                                   // 0x0330(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USBZCosmeticDestructionComponent*       SBZCosmeticDestruction;                            // 0x0338(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class URectLightComponent*                    RectLight;                                         // 0x0340(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPointLightComponent*                   SmoothAmbiant;                                     // 0x0348(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   LGT_DeskLamp_02;                                   // 0x0350(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0358(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   LGT_DeskLamp_02;                                   // 0x0348(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0350(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BPL_SocketPanel_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 	void ExecuteUbergraph_BPL_SocketPanel(int32 EntryPoint);
+	void BndEvt__BPL_SocketPanel_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 
 public:
 	static class UClass* StaticClass()
@@ -48,5 +47,6 @@ public:
 		return GetDefaultObjImpl<BPL_SocketPanel_0::ABPL_SocketPanel_C>();
 	}
 };
+DUMPER7_ASSERTS_BPL_SocketPanel_0__ABPL_SocketPanel_C;
 
 SDK_NAMESPACE_END

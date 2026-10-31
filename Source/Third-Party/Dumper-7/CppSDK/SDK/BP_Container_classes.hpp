@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Enum_ContainerColor_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "Enum_ContainerColor_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -35,10 +35,10 @@ public:
 	bool                                          Remove_all_doors;                                  // 0x0363(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_Container(int32 EntryPoint);
-	void ReceiveBeginPlay();
-	void SetIsTraversable();
 	void UserConstructionScript();
+	void SetIsTraversable();
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_Container(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -54,5 +54,6 @@ public:
 		return GetDefaultObjImpl<ABP_Container_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Container_C;
 
 SDK_NAMESPACE_END

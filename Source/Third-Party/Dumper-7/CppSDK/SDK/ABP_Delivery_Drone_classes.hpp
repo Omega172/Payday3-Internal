@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "ControlRig_structs.hpp"
 #include "Starbreeze_classes.hpp"
 
@@ -36,7 +36,7 @@ public:
 	struct FVector                                __CustomProperty_Velocity_5EDB93024FE086C233BEDB80FB05A585; // 0x0C10(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnimGraph(const struct FPoseLink& InPose, struct FPoseLink* AnimGraph_0);
+	void AnimGraph(const struct FPoseLink& InPose, struct FPoseLink* AnimGraph);
 
 public:
 	static class UClass* StaticClass()
@@ -52,5 +52,6 @@ public:
 		return GetDefaultObjImpl<UABP_Delivery_Drone_C>();
 	}
 };
+DUMPER7_ASSERTS_UABP_Delivery_Drone_C;
 
 SDK_NAMESPACE_END

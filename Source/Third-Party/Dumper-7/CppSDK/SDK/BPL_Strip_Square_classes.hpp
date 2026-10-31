@@ -43,5 +43,6 @@ public:
 		return GetDefaultObjImpl<ABPL_Strip_Square_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_Strip_Square_C;
 
 SDK_NAMESPACE_END

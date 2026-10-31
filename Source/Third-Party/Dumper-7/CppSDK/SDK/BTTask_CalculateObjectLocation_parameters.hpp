@@ -16,6 +16,16 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BTTask_CalculateObjectLocation.BTTask_CalculateObjectLocation_C.ReceiveExecuteAI
+// 0x0010 (0x0010 - 0x0000)
+struct BTTask_CalculateObjectLocation_C_ReceiveExecuteAI final
+{
+public:
+	class AAIController*                          OwnerController_ReceiveExecuteAI;                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  ControlledPawn_ReceiveExecuteAI;                   // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BTTask_CalculateObjectLocation_C_ReceiveExecuteAI;
+
 // Function BTTask_CalculateObjectLocation.BTTask_CalculateObjectLocation_C.ExecuteUbergraph_BTTask_CalculateObjectLocation
 // 0x0038 (0x0038 - 0x0000)
 struct BTTask_CalculateObjectLocation_C_ExecuteUbergraph_BTTask_CalculateObjectLocation final
@@ -28,15 +38,7 @@ public:
 	class AActor*                                 CallFunc_GetBlackboardValueAsActor_ReturnValue;    // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0020(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BTTask_CalculateObjectLocation.BTTask_CalculateObjectLocation_C.ReceiveExecuteAI
-// 0x0010 (0x0010 - 0x0000)
-struct BTTask_CalculateObjectLocation_C_ReceiveExecuteAI final
-{
-public:
-	class AAIController*                          OwnerController;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  ControlledPawn;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BTTask_CalculateObjectLocation_C_ExecuteUbergraph_BTTask_CalculateObjectLocation;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

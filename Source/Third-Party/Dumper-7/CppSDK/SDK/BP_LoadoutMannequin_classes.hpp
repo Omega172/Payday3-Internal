@@ -17,27 +17,27 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_LoadoutMannequin.BP_LoadoutMannequin_C
-// 0x0050 (0x08B0 - 0x0860)
+// 0x0050 (0x08C0 - 0x0870)
 class ABP_LoadoutMannequin_C final : public ASBZGameMannequinPlayerCharacter
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0860(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USBZInteractableComponent*              Interactable;                                      // 0x0868(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0870(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USBZRenderTargetWidgetComponent*        screen_SBZRenderTargetWidget;                      // 0x0878(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USBZCosmeticDestructionComponent*       SBZCosmeticDestruction;                            // 0x0880(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class Ucomponent_screen_C*                    component_screen;                                  // 0x0888(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UCapsuleComponent*                      InteractCapsule;                                   // 0x0890(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UWBP_LoadoutMannequinScreen_C*          screenWidget;                                      // 0x0898(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               screenMat;                                         // 0x08A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	int32                                         WeaponDisplayIndex;                                // 0x08A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0870(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USBZInteractableComponent*              Interactable;                                      // 0x0878(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0880(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZRenderTargetWidgetComponent*        screen_SBZRenderTargetWidget;                      // 0x0888(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZCosmeticDestructionComponent*       SBZCosmeticDestruction;                            // 0x0890(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class Ucomponent_screen_C*                    component_screen;                                  // 0x0898(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UCapsuleComponent*                      InteractCapsule;                                   // 0x08A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UWBP_LoadoutMannequinScreen_C*          screenWidget;                                      // 0x08A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               screenMat;                                         // 0x08B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	int32                                         WeaponDisplayIndex;                                // 0x08B8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_LoadoutMannequin_SBZInteractable2_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_LoadoutMannequin(int32 EntryPoint);
-	void ReceiveBeginPlay();
-	void SetLabel(const class FText& Label);
 	void UserConstructionScript();
+	void SetLabel(const class FText& Label);
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_LoadoutMannequin(int32 EntryPoint);
+	void BndEvt__BP_LoadoutMannequin_SBZInteractable2_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -53,5 +53,6 @@ public:
 		return GetDefaultObjImpl<ABP_LoadoutMannequin_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LoadoutMannequin_C;
 
 SDK_NAMESPACE_END

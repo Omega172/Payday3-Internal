@@ -21,13 +21,13 @@ SDK_PARAM_NAMESPACE_START
 struct BP_Req_genericHackableComputer_C_BP_CheckRequirement final
 {
 public:
-	const class USBZInteractorComponent*          Interactor;                                        // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FSBZInteractReqData                    OutData;                                           // 0x0008(0x0040)(Parm, OutParm)
-	bool                                          bIsSignalRequired;                                 // 0x0048(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInIsScreenInteract;                               // 0x0049(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsCasing;                                         // 0x004A(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEncumbered;                                     // 0x004B(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ReturnValue;                                       // 0x004C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class USBZInteractorComponent*          Interactor_BP_CheckRequirement;                    // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FSBZInteractReqData                    OutData_BP_CheckRequirement;                       // 0x0008(0x0040)(Parm, OutParm)
+	bool                                          bIsSignalRequired_BP_CheckRequirement;             // 0x0048(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInIsScreenInteract_BP_CheckRequirement;           // 0x0049(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsCasing_BP_CheckRequirement;                     // 0x004A(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEncumbered_BP_CheckRequirement;                 // 0x004B(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ReturnValue_BP_CheckRequirement;                   // 0x004C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4D[0x3];                                       // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSBZInteractReqData                    LocalOutData;                                      // 0x0050(0x0040)(Edit, BlueprintVisible)
 	ESBZHackableActorState                        Temp_byte_Variable;                                // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -44,6 +44,7 @@ public:
 	class FText                                   K2Node_Select_Default;                             // 0x00F8(0x0010)(ConstParm)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Req_genericHackableComputer_C_BP_CheckRequirement;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

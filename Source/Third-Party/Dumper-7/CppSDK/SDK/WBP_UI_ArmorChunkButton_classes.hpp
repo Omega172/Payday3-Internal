@@ -34,15 +34,15 @@ public:
 	class USBZUITextBlock*                        ItemName_T;                                        // 0x0450(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void SetDefaultButton();
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnInitialized();
-	void OnFocusChanged(bool bIsFocused);
-	void OnEquippedChanged(bool bInIsEquipped_OnEquippedChanged);
-	void ExecuteUbergraph_WBP_UI_ArmorChunkButton(int32 EntryPoint);
+	void ArmorChunkInitialized(const struct FSBZArmorChunkTypeData& InArmorChunkData);
+	void ButtonFocusedChanged(bool bInHasFocus);
 	void DefaultButtonSet();
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
-	void ArmorChunkInitialized(const struct FSBZArmorChunkTypeData& InArmorChunkData_ArmorChunkInitialized);
+	void ExecuteUbergraph_WBP_UI_ArmorChunkButton(int32 EntryPoint);
+	void OnEquippedChanged(bool bInIsEquipped);
+	void OnFocusChanged(bool bIsFocused);
+	void OnInitialized();
+	void PreConstruct(bool IsDesignTime);
+	void SetDefaultButton();
 
 public:
 	static class UClass* StaticClass()

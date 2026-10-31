@@ -44,9 +44,9 @@ public:
 	class UCurveLinearColor*                      Cloud_color_curve;                                 // 0x03D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void RefreshMaterial();
-	void UpdateSunDirection();
 	void UserConstructionScript();
+	void UpdateSunDirection();
+	void RefreshMaterial();
 
 public:
 	static class UClass* StaticClass()
@@ -62,5 +62,6 @@ public:
 		return GetDefaultObjImpl<ABP_Sky_Sphere_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Sky_Sphere_C;
 
 SDK_NAMESPACE_END

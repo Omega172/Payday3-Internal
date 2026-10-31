@@ -37,9 +37,9 @@ public:
 	class ASBZAmbientSound*                       SBZAmbientSound_DistantSiren_01_ExecuteUbergraph_A_Chus_RefProperty; // 0x0428(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_A_Chus(int32 EntryPoint);
-	void HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState);
 	void ReceiveBeginPlay();
+	void HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged);
+	void ExecuteUbergraph_A_Chus(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -55,5 +55,6 @@ public:
 		return GetDefaultObjImpl<AA_Chus_C>();
 	}
 };
+DUMPER7_ASSERTS_AA_Chus_C;
 
 SDK_NAMESPACE_END

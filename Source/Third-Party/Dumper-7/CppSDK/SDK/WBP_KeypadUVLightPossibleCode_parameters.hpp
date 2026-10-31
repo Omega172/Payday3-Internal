@@ -14,6 +14,17 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_KeypadUVLightPossibleCode.WBP_KeypadUVLightPossibleCode_C.SetText
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_KeypadUVLightPossibleCode_C_SetText final
+{
+public:
+	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0010)()
+};
+DUMPER7_ASSERTS_WBP_KeypadUVLightPossibleCode_C_SetText;
+
 // Function WBP_KeypadUVLightPossibleCode.WBP_KeypadUVLightPossibleCode_C.SetKeypad
 // 0x0018 (0x0018 - 0x0000)
 struct WBP_KeypadUVLightPossibleCode_C_SetKeypad final
@@ -28,16 +39,7 @@ public:
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_Select_Default;                             // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function WBP_KeypadUVLightPossibleCode.WBP_KeypadUVLightPossibleCode_C.SetText
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_KeypadUVLightPossibleCode_C_SetText final
-{
-public:
-	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0010)()
-};
+DUMPER7_ASSERTS_WBP_KeypadUVLightPossibleCode_C_SetKeypad;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

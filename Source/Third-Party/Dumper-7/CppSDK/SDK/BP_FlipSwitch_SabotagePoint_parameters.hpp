@@ -14,24 +14,25 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_FlipSwitch_SabotagePoint.BP_FlipSwitch_SabotagePoint_C.BndEvt__BP_ElevatorDoor_ControlPanel_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// Function BP_FlipSwitch_SabotagePoint.BP_FlipSwitch_SabotagePoint_C.PlayTurnOn
 // 0x0010 (0x0010 - 0x0000)
-struct BP_FlipSwitch_SabotagePoint_C_BndEvt__BP_ElevatorDoor_ControlPanel_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature final
+struct BP_FlipSwitch_SabotagePoint_C_PlayTurnOn final
 {
 public:
-	const class USBZBaseInteractableComponent*    InteractableComponent_0;                           // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInNewState;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_FlipSwitch_SabotagePoint_C_PlayTurnOn;
 
-// Function BP_FlipSwitch_SabotagePoint.BP_FlipSwitch_SabotagePoint_C.BndEvt__BP_FlipSwitch_SabotagePoint_initial_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_FlipSwitch_SabotagePoint_C_BndEvt__BP_FlipSwitch_SabotagePoint_initial_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
+// Function BP_FlipSwitch_SabotagePoint.BP_FlipSwitch_SabotagePoint_C.PlayTurnOff
+// 0x0010 (0x0010 - 0x0000)
+struct BP_FlipSwitch_SabotagePoint_C_PlayTurnOff final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_FlipSwitch_SabotagePoint_C_PlayTurnOff;
 
 // Function BP_FlipSwitch_SabotagePoint.BP_FlipSwitch_SabotagePoint_C.ExecuteUbergraph_BP_FlipSwitch_SabotagePoint
 // 0x0030 (0x0030 - 0x0000)
@@ -47,24 +48,28 @@ public:
 	class USBZInteractorComponent*                K2Node_ComponentBoundEvent_Interactor;             // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ComponentBoundEvent_bIsLocallyControlledInteractor; // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_FlipSwitch_SabotagePoint_C_ExecuteUbergraph_BP_FlipSwitch_SabotagePoint;
 
-// Function BP_FlipSwitch_SabotagePoint.BP_FlipSwitch_SabotagePoint_C.PlayTurnOff
-// 0x0010 (0x0010 - 0x0000)
-struct BP_FlipSwitch_SabotagePoint_C_PlayTurnOff final
+// Function BP_FlipSwitch_SabotagePoint.BP_FlipSwitch_SabotagePoint_C.BndEvt__BP_FlipSwitch_SabotagePoint_initial_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_FlipSwitch_SabotagePoint_C_BndEvt__BP_FlipSwitch_SabotagePoint_initial_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
 {
 public:
-	double                                        CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_FlipSwitch_SabotagePoint_C_BndEvt__BP_FlipSwitch_SabotagePoint_initial_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature;
 
-// Function BP_FlipSwitch_SabotagePoint.BP_FlipSwitch_SabotagePoint_C.PlayTurnOn
+// Function BP_FlipSwitch_SabotagePoint.BP_FlipSwitch_SabotagePoint_C.BndEvt__BP_ElevatorDoor_ControlPanel_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct BP_FlipSwitch_SabotagePoint_C_PlayTurnOn final
+struct BP_FlipSwitch_SabotagePoint_C_BndEvt__BP_ElevatorDoor_ControlPanel_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature final
 {
 public:
-	double                                        CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class USBZBaseInteractableComponent*    InteractableComponent;                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInNewState;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_FlipSwitch_SabotagePoint_C_BndEvt__BP_ElevatorDoor_ControlPanel_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

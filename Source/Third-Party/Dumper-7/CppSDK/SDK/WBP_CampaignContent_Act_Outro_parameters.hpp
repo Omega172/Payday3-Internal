@@ -18,13 +18,59 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_CampaignContent_Act_Outro.WBP_CampaignContent_Act_Outro_C.BndEvt__WBP_CampaignContent_Act_Outro_WBP_InputActionButton_New_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignContent_Act_Outro_C_BndEvt__WBP_CampaignContent_Act_Outro_WBP_InputActionButton_New_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature final
+// Function WBP_CampaignContent_Act_Outro.WBP_CampaignContent_Act_Outro_C.SetEntryState
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CampaignContent_Act_Outro_C_SetEntryState final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	ESBZCampaignEntryState                        NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_WBP_CampaignContent_Act_Outro_C_SetEntryState;
+
+// Function WBP_CampaignContent_Act_Outro.WBP_CampaignContent_Act_Outro_C.SetCampaignData
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignContent_Act_Outro_C_SetCampaignData final
+{
+public:
+	const class USBZCampaignBaseEntryData*        Entry;                                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CampaignContent_Act_Outro_C_SetCampaignData;
+
+// Function WBP_CampaignContent_Act_Outro.WBP_CampaignContent_Act_Outro_C.PushActScreen
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignContent_Act_Outro_C_PushActScreen final
+{
+public:
+	class USBZCampaignActData*                    ActData;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CampaignContent_Act_Outro_C_PushActScreen;
+
+// Function WBP_CampaignContent_Act_Outro.WBP_CampaignContent_Act_Outro_C.PrePush_3AD43A8C4EB12AA0C6DDC2A28BE3CCBF
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignContent_Act_Outro_C_PrePush_3AD43A8C4EB12AA0C6DDC2A28BE3CCBF final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CampaignContent_Act_Outro_C_PrePush_3AD43A8C4EB12AA0C6DDC2A28BE3CCBF;
+
+// Function WBP_CampaignContent_Act_Outro.WBP_CampaignContent_Act_Outro_C.PostPush_3AD43A8C4EB12AA0C6DDC2A28BE3CCBF
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignContent_Act_Outro_C_PostPush_3AD43A8C4EB12AA0C6DDC2A28BE3CCBF final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CampaignContent_Act_Outro_C_PostPush_3AD43A8C4EB12AA0C6DDC2A28BE3CCBF;
+
+// Function WBP_CampaignContent_Act_Outro.WBP_CampaignContent_Act_Outro_C.GetEntryState
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CampaignContent_Act_Outro_C_GetEntryState final
+{
+public:
+	ESBZCampaignEntryState                        ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CampaignContent_Act_Outro_C_GetEntryState;
 
 // Function WBP_CampaignContent_Act_Outro.WBP_CampaignContent_Act_Outro_C.ExecuteUbergraph_WBP_CampaignContent_Act_Outro
 // 0x01F8 (0x01F8 - 0x0000)
@@ -62,7 +108,7 @@ public:
 	uint8                                         Pad_161[0x7];                                      // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0168(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class USBZCampaignManager*                    CallFunc_GetCampaignManager_ReturnValue;           // 0x0170(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x0178(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x0178(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsActCompleted_ReturnValue;               // 0x0184(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsActCompleted_ReturnValue_1;             // 0x0185(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0186(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -76,54 +122,16 @@ public:
 	class FText                                   CallFunc_Map_Find_Value_2;                         // 0x01E0(0x0010)()
 	bool                                          CallFunc_Map_Find_ReturnValue_2;                   // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_WBP_CampaignContent_Act_Outro_C_ExecuteUbergraph_WBP_CampaignContent_Act_Outro;
 
-// Function WBP_CampaignContent_Act_Outro.WBP_CampaignContent_Act_Outro_C.GetEntryState
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CampaignContent_Act_Outro_C_GetEntryState final
-{
-public:
-	ESBZCampaignEntryState                        ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WBP_CampaignContent_Act_Outro.WBP_CampaignContent_Act_Outro_C.PostPush_3AD43A8C4EB12AA0C6DDC2A28BE3CCBF
+// Function WBP_CampaignContent_Act_Outro.WBP_CampaignContent_Act_Outro_C.BndEvt__WBP_CampaignContent_Act_Outro_WBP_InputActionButton_New_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignContent_Act_Outro_C_PostPush_3AD43A8C4EB12AA0C6DDC2A28BE3CCBF final
+struct WBP_CampaignContent_Act_Outro_C_BndEvt__WBP_CampaignContent_Act_Outro_WBP_InputActionButton_New_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function WBP_CampaignContent_Act_Outro.WBP_CampaignContent_Act_Outro_C.PrePush_3AD43A8C4EB12AA0C6DDC2A28BE3CCBF
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignContent_Act_Outro_C_PrePush_3AD43A8C4EB12AA0C6DDC2A28BE3CCBF final
-{
-public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WBP_CampaignContent_Act_Outro.WBP_CampaignContent_Act_Outro_C.PushActScreen
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignContent_Act_Outro_C_PushActScreen final
-{
-public:
-	class USBZCampaignActData*                    ActData;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WBP_CampaignContent_Act_Outro.WBP_CampaignContent_Act_Outro_C.SetCampaignData
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignContent_Act_Outro_C_SetCampaignData final
-{
-public:
-	const class USBZCampaignBaseEntryData*        Entry;                                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WBP_CampaignContent_Act_Outro.WBP_CampaignContent_Act_Outro_C.SetEntryState
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CampaignContent_Act_Outro_C_SetEntryState final
-{
-public:
-	ESBZCampaignEntryState                        NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_WBP_CampaignContent_Act_Outro_C_BndEvt__WBP_CampaignContent_Act_Outro_WBP_InputActionButton_New_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

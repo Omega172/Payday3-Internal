@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function DIM_BPL_StandingLamp.DIM_BPL_StandingLamp_C.ExecuteUbergraph_DIM_BPL_StandingLamp
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ADIM_BPL_StandingLamp_C::ExecuteUbergraph_DIM_BPL_StandingLamp(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "DIM_BPL_StandingLamp_C", "ExecuteUbergraph_DIM_BPL_StandingLamp", FuncInfo);
+
+	Params::DIM_BPL_StandingLamp_C_ExecuteUbergraph_DIM_BPL_StandingLamp Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function DIM_BPL_StandingLamp.DIM_BPL_StandingLamp_C.BndEvt__BPL_StandingLamp_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -24,35 +42,13 @@ SDK_NAMESPACE_START
 
 void ADIM_BPL_StandingLamp_C::BndEvt__BPL_StandingLamp_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DIM_BPL_StandingLamp_C", "BndEvt__BPL_StandingLamp_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BPL_StandingLamp_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature", FnName));
 
 	Params::DIM_BPL_StandingLamp_C_BndEvt__BPL_StandingLamp_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature Parms{};
 
 	Parms.Type = Type;
 	Parms.HitContext = std::move(HitContext);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function DIM_BPL_StandingLamp.DIM_BPL_StandingLamp_C.ExecuteUbergraph_DIM_BPL_StandingLamp
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ADIM_BPL_StandingLamp_C::ExecuteUbergraph_DIM_BPL_StandingLamp(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DIM_BPL_StandingLamp_C", "ExecuteUbergraph_DIM_BPL_StandingLamp");
-
-	Params::DIM_BPL_StandingLamp_C_ExecuteUbergraph_DIM_BPL_StandingLamp Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

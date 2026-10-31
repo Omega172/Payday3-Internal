@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 #include "BP_BodyDisposerTopOpenBase_classes.hpp"
 #include "AkAudio_structs.hpp"
 
@@ -38,11 +38,11 @@ public:
 	struct FTransform                             startTransform_lid02;                              // 0x0620(0x0060)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnActorDisposed(int32 NumDisposed, bool bDoCosmetics);
-	void dumpBodyOpen_finished();
-	void dumpBodyOpen_tick(double alpha);
-	void ExecuteUbergraph_BP_BodyDisposerDumpster(int32 EntryPoint);
 	void UserConstructionScript();
+	void ExecuteUbergraph_BP_BodyDisposerDumpster(int32 EntryPoint);
+	void dumpBodyOpen_tick(double alpha_dumpBodyOpen_tick);
+	void dumpBodyOpen_finished();
+	void BP_OnActorDisposed(int32 NumDisposed_BP_OnActorDisposed, bool bDoCosmetics_BP_OnActorDisposed);
 
 public:
 	static class UClass* StaticClass()
@@ -58,5 +58,6 @@ public:
 		return GetDefaultObjImpl<ABP_BodyDisposerDumpster_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BodyDisposerDumpster_C;
 
 SDK_NAMESPACE_END

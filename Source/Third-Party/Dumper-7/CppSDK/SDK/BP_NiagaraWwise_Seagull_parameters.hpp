@@ -16,6 +16,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_NiagaraWwise_Seagull.BP_NiagaraWwise_Seagull_C.ReceiveEndPlay
+// 0x0001 (0x0001 - 0x0000)
+struct BP_NiagaraWwise_Seagull_C_ReceiveEndPlay final
+{
+public:
+	EEndPlayReason                                EndPlayReason_ReceiveEndPlay;                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_NiagaraWwise_Seagull_C_ReceiveEndPlay;
+
 // Function BP_NiagaraWwise_Seagull.BP_NiagaraWwise_Seagull_C.ExecuteUbergraph_BP_NiagaraWwise_Seagull
 // 0x0008 (0x0008 - 0x0000)
 struct BP_NiagaraWwise_Seagull_C_ExecuteUbergraph_BP_NiagaraWwise_Seagull final
@@ -24,14 +33,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EEndPlayReason                                K2Node_Event_EndPlayReason;                        // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_NiagaraWwise_Seagull.BP_NiagaraWwise_Seagull_C.ReceiveEndPlay
-// 0x0001 (0x0001 - 0x0000)
-struct BP_NiagaraWwise_Seagull_C_ReceiveEndPlay final
-{
-public:
-	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_NiagaraWwise_Seagull_C_ExecuteUbergraph_BP_NiagaraWwise_Seagull;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

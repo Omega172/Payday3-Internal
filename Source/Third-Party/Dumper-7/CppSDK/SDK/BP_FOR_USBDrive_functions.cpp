@@ -16,21 +16,23 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_FOR_USBDrive.BP_FOR_USBDrive_C.ExecuteUbergraph_BP_FOR_USBDrive
-// (Final, UbergraphFunction)
+// Function BP_FOR_USBDrive.BP_FOR_USBDrive_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   OldState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_FOR_USBDrive_C::ExecuteUbergraph_BP_FOR_USBDrive(int32 EntryPoint)
+void ABP_FOR_USBDrive_C::OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FOR_USBDrive_C", "ExecuteUbergraph_BP_FOR_USBDrive");
+	Params::BP_FOR_USBDrive_C_OnStateChanged Parms{};
 
-	Params::BP_FOR_USBDrive_C_ExecuteUbergraph_BP_FOR_USBDrive Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.OldState_OnStateChanged = OldState_OnStateChanged;
+	Parms.NewState_OnStateChanged = NewState_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -39,14 +41,12 @@ void ABP_FOR_USBDrive_C::ExecuteUbergraph_BP_FOR_USBDrive(int32 EntryPoint)
 // Function BP_FOR_USBDrive.BP_FOR_USBDrive_C.GetMarkerText
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
+// class FText                             ReturnValue_GetMarkerText                              (Parm, OutParm, ReturnParm)
 
 class FText ABP_FOR_USBDrive_C::GetMarkerText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FOR_USBDrive_C", "GetMarkerText");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetMarkerText", FnName));
 
 	Params::BP_FOR_USBDrive_C_GetMarkerText Parms{};
 
@@ -56,25 +56,19 @@ class FText ABP_FOR_USBDrive_C::GetMarkerText()
 }
 
 
-// Function BP_FOR_USBDrive.BP_FOR_USBDrive_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
+// Function BP_FOR_USBDrive.BP_FOR_USBDrive_C.ExecuteUbergraph_BP_FOR_USBDrive
+// (Final, UbergraphFunction)
 // Parameters:
-// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_FOR_USBDrive_C::OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics)
+void ABP_FOR_USBDrive_C::ExecuteUbergraph_BP_FOR_USBDrive(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_FOR_USBDrive_C", "ExecuteUbergraph_BP_FOR_USBDrive", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FOR_USBDrive_C", "OnStateChanged");
+	Params::BP_FOR_USBDrive_C_ExecuteUbergraph_BP_FOR_USBDrive Parms{};
 
-	Params::BP_FOR_USBDrive_C_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -31,11 +31,11 @@ public:
 	TArray<struct FLinearColor>                   colorStates;                                       // 0x03A0(0x0010)(Edit, BlueprintVisible)
 
 public:
-	void ExecuteUbergraph_BP_ONE_IndicatorLight_Controllable_01(int32 EntryPoint);
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void setLight(double intensity, const struct FLinearColor& color);
-	void setLightState(int32 state);
 	void UserConstructionScript();
+	void setLightState(int32 state);
+	void setLight(double intensity, const struct FLinearColor& color);
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_ONE_IndicatorLight_Controllable_01(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -51,5 +51,6 @@ public:
 		return GetDefaultObjImpl<ABP_ONE_IndicatorLight_Controllable_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ONE_IndicatorLight_Controllable_01_C;
 
 SDK_NAMESPACE_END

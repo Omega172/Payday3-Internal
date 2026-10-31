@@ -16,47 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_DAT_SlidingDoor_01.BP_DAT_SlidingDoor_01_C.ExecuteUbergraph_BP_DAT_SlidingDoor_01
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_DAT_SlidingDoor_01.BP_DAT_SlidingDoor_01_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_DAT_SlidingDoor_01_C::ExecuteUbergraph_BP_DAT_SlidingDoor_01(int32 EntryPoint)
+void ABP_DAT_SlidingDoor_01_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_SlidingDoor_01_C", "ExecuteUbergraph_BP_DAT_SlidingDoor_01");
-
-	Params::BP_DAT_SlidingDoor_01_C_ExecuteUbergraph_BP_DAT_SlidingDoor_01 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_DAT_SlidingDoor_01.BP_DAT_SlidingDoor_01_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsInitialStateChange                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_DAT_SlidingDoor_01_C::OnStateChanged(ESBZGateState OldState, ESBZGateState NewState, bool bIsInitialStateChange)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_SlidingDoor_01_C", "OnStateChanged");
-
-	Params::BP_DAT_SlidingDoor_01_C_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bIsInitialStateChange = bIsInitialStateChange;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -68,10 +36,8 @@ void ABP_DAT_SlidingDoor_01_C::OnStateChanged(ESBZGateState OldState, ESBZGateSt
 
 void ABP_DAT_SlidingDoor_01_C::setLight(double intensity, bool unlocked)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_SlidingDoor_01_C", "setLight");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setLight", FnName));
 
 	Params::BP_DAT_SlidingDoor_01_C_setLight Parms{};
 
@@ -82,17 +48,43 @@ void ABP_DAT_SlidingDoor_01_C::setLight(double intensity, bool unlocked)
 }
 
 
-// Function BP_DAT_SlidingDoor_01.BP_DAT_SlidingDoor_01_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_DAT_SlidingDoor_01.BP_DAT_SlidingDoor_01_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZGateState                           OldState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           NewState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsInitialStateChange_OnStateChanged                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_DAT_SlidingDoor_01_C::UserConstructionScript()
+void ABP_DAT_SlidingDoor_01_C::OnStateChanged(ESBZGateState OldState_OnStateChanged, ESBZGateState NewState_OnStateChanged, bool bIsInitialStateChange_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_SlidingDoor_01_C", "UserConstructionScript");
+	Params::BP_DAT_SlidingDoor_01_C_OnStateChanged Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.OldState_OnStateChanged = OldState_OnStateChanged;
+	Parms.NewState_OnStateChanged = NewState_OnStateChanged;
+	Parms.bIsInitialStateChange_OnStateChanged = bIsInitialStateChange_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_DAT_SlidingDoor_01.BP_DAT_SlidingDoor_01_C.ExecuteUbergraph_BP_DAT_SlidingDoor_01
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_DAT_SlidingDoor_01_C::ExecuteUbergraph_BP_DAT_SlidingDoor_01(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_DAT_SlidingDoor_01_C", "ExecuteUbergraph_BP_DAT_SlidingDoor_01", FuncInfo);
+
+	Params::BP_DAT_SlidingDoor_01_C_ExecuteUbergraph_BP_DAT_SlidingDoor_01 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

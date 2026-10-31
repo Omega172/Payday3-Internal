@@ -16,12 +16,12 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_AmmoPickup.BP_AmmoPickup_C
-// 0x0010 (0x0380 - 0x0370)
+// 0x0010 (0x0388 - 0x0378)
 class ABP_AmmoPickup_C final : public ASBZAmmoPickup
 {
 public:
-	class USphereComponent*                       Sphere;                                            // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USphereComponent*                       Sphere;                                            // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_AmmoPickup_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_AmmoPickup_C;
 
 SDK_NAMESPACE_END

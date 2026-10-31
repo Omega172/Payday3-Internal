@@ -16,57 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_BaseRotatingInteractable.BP_BaseRotatingInteractable_C.BP_OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bNewState                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmentics                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_BaseRotatingInteractable.BP_BaseRotatingInteractable_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_BaseRotatingInteractable_C::BP_OnStateChanged(bool bNewState, bool bDoCosmentics)
+void ABP_BaseRotatingInteractable_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseRotatingInteractable_C", "BP_OnStateChanged");
-
-	Params::BP_BaseRotatingInteractable_C_BP_OnStateChanged Parms{};
-
-	Parms.bNewState = bNewState;
-	Parms.bDoCosmentics = bDoCosmentics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BaseRotatingInteractable.BP_BaseRotatingInteractable_C.ExecuteUbergraph_BP_BaseRotatingInteractable
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BaseRotatingInteractable_C::ExecuteUbergraph_BP_BaseRotatingInteractable(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseRotatingInteractable_C", "ExecuteUbergraph_BP_BaseRotatingInteractable");
-
-	Params::BP_BaseRotatingInteractable_C_ExecuteUbergraph_BP_BaseRotatingInteractable Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BaseRotatingInteractable.BP_BaseRotatingInteractable_C.MoveTimeLine__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_BaseRotatingInteractable_C::MoveTimeLine__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseRotatingInteractable_C", "MoveTimeLine__FinishedFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -77,26 +33,60 @@ void ABP_BaseRotatingInteractable_C::MoveTimeLine__FinishedFunc()
 
 void ABP_BaseRotatingInteractable_C::MoveTimeLine__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseRotatingInteractable_C", "MoveTimeLine__UpdateFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MoveTimeLine__UpdateFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_BaseRotatingInteractable.BP_BaseRotatingInteractable_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_BaseRotatingInteractable.BP_BaseRotatingInteractable_C.MoveTimeLine__FinishedFunc
+// (BlueprintEvent)
 
-void ABP_BaseRotatingInteractable_C::UserConstructionScript()
+void ABP_BaseRotatingInteractable_C::MoveTimeLine__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseRotatingInteractable_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MoveTimeLine__FinishedFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_BaseRotatingInteractable.BP_BaseRotatingInteractable_C.ExecuteUbergraph_BP_BaseRotatingInteractable
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BaseRotatingInteractable_C::ExecuteUbergraph_BP_BaseRotatingInteractable(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_BaseRotatingInteractable_C", "ExecuteUbergraph_BP_BaseRotatingInteractable", FuncInfo);
+
+	Params::BP_BaseRotatingInteractable_C_ExecuteUbergraph_BP_BaseRotatingInteractable Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BaseRotatingInteractable.BP_BaseRotatingInteractable_C.BP_OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bNewState                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmentics                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BaseRotatingInteractable_C::BP_OnStateChanged(bool bNewState, bool bDoCosmentics)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnStateChanged", FnName));
+
+	Params::BP_BaseRotatingInteractable_C_BP_OnStateChanged Parms{};
+
+	Parms.bNewState = bNewState;
+	Parms.bDoCosmentics = bDoCosmentics;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

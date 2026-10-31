@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_Jerrycan_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_Jerrycan_C;
 
 SDK_NAMESPACE_END

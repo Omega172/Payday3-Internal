@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Pen_01_Body_SmallDestruction_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Pen_01_Body_SmallDestruction_C;
 
 SDK_NAMESPACE_END

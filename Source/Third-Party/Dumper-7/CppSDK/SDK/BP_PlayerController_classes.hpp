@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_PlayerController.BP_PlayerController_C
-// 0x0000 (0x0BA0 - 0x0BA0)
+// 0x0000 (0x0BC0 - 0x0BC0)
 class ABP_PlayerController_C final : public ASBZPlayerController
 {
 public:
@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_PlayerController_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PlayerController_C;
 
 SDK_NAMESPACE_END

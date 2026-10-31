@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AOfficeWindow_01_breakable_C>();
 	}
 };
+DUMPER7_ASSERTS_AOfficeWindow_01_breakable_C;
 
 SDK_NAMESPACE_END

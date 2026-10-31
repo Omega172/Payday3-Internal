@@ -17,15 +17,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_ShippingContainer_01_CardReaderLockBase.BP_ShippingContainer_01_CardReaderLockBase_C.BP_OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_ShippingContainer_01_CardReaderLockBase_C_BP_OnStateChanged final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_ShippingContainer_01_CardReaderLockBase.BP_ShippingContainer_01_CardReaderLockBase_C.ExecuteUbergraph_BP_ShippingContainer_01_CardReaderLockBase
 // 0x0020 (0x0020 - 0x0000)
 struct BP_ShippingContainer_01_CardReaderLockBase_C_ExecuteUbergraph_BP_ShippingContainer_01_CardReaderLockBase final
@@ -39,6 +30,17 @@ public:
 	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable; // 0x0008(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ShippingContainer_01_CardReaderLockBase_C_ExecuteUbergraph_BP_ShippingContainer_01_CardReaderLockBase;
+
+// Function BP_ShippingContainer_01_CardReaderLockBase.BP_ShippingContainer_01_CardReaderLockBase_C.BP_OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_ShippingContainer_01_CardReaderLockBase_C_BP_OnStateChanged final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ShippingContainer_01_CardReaderLockBase_C_BP_OnStateChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

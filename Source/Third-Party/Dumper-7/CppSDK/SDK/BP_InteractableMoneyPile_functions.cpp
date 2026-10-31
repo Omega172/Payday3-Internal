@@ -16,26 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_InteractableMoneyPile.BP_InteractableMoneyPile_C.BP_OnChangedToSecondaryType
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_InteractableMoneyPile_C::BP_OnChangedToSecondaryType(bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InteractableMoneyPile_C", "BP_OnChangedToSecondaryType");
-
-	Params::BP_InteractableMoneyPile_C_BP_OnChangedToSecondaryType Parms{};
-
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_InteractableMoneyPile.BP_InteractableMoneyPile_C.ExecuteUbergraph_BP_InteractableMoneyPile
 // (Final, UbergraphFunction)
 // Parameters:
@@ -43,14 +23,30 @@ void ABP_InteractableMoneyPile_C::BP_OnChangedToSecondaryType(bool bDoCosmetics)
 
 void ABP_InteractableMoneyPile_C::ExecuteUbergraph_BP_InteractableMoneyPile(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InteractableMoneyPile_C", "ExecuteUbergraph_BP_InteractableMoneyPile");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_InteractableMoneyPile_C", "ExecuteUbergraph_BP_InteractableMoneyPile", FuncInfo);
 
 	Params::BP_InteractableMoneyPile_C_ExecuteUbergraph_BP_InteractableMoneyPile Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_InteractableMoneyPile.BP_InteractableMoneyPile_C.BP_OnChangedToSecondaryType
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_InteractableMoneyPile_C::BP_OnChangedToSecondaryType(bool bDoCosmetics)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnChangedToSecondaryType", FnName));
+
+	Params::BP_InteractableMoneyPile_C_BP_OnChangedToSecondaryType Parms{};
+
+	Parms.bDoCosmetics = bDoCosmetics;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABox_C>();
 	}
 };
+DUMPER7_ASSERTS_ABox_C;
 
 SDK_NAMESPACE_END

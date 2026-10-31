@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_AshtonFine_01_PosterSmall_C_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_AshtonFine_01_PosterSmall_C_C;
 
 SDK_NAMESPACE_END

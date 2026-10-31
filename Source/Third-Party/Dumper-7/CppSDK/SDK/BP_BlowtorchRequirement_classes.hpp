@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UBP_BlowtorchRequirement_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_BlowtorchRequirement_C;
 
 SDK_NAMESPACE_END

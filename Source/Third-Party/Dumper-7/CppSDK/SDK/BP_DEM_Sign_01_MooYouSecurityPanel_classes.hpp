@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_DEM_Sign_01_MooYouSecurityPanel_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DEM_Sign_01_MooYouSecurityPanel_C;
 
 SDK_NAMESPACE_END

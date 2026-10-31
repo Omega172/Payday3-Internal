@@ -28,8 +28,8 @@ public:
 	TMulticastInlineDelegate<void()>              StateChanged;                                      // 0x0388(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void ExecuteUbergraph_BP_ReplicatedIntStateActor(int32 EntryPoint);
 	void SetStateInt(int32 Int, bool DoCosmetics);
+	void ExecuteUbergraph_BP_ReplicatedIntStateActor(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<ABP_ReplicatedIntStateActor_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ReplicatedIntStateActor_C;
 
 SDK_NAMESPACE_END

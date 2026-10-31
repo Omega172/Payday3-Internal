@@ -10,66 +10,21 @@
 
 #include "Basic.hpp"
 
-#include "LowEntryExtendedStandardLibrary_structs.hpp"
 #include "Starbreeze_structs.hpp"
+#include "LowEntryExtendedStandardLibrary_structs.hpp"
 
 
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_02_2_K2Node_ActorBoundEvent_10_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_ArtGallery_ManagersOffice_C_BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_02_2_K2Node_ActorBoundEvent_10_SBZLootedSignature__DelegateSignature final
+// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.Int
+// 0x0004 (0x0004 - 0x0000)
+struct R_ArtGallery_ManagersOffice_C_Int final
 {
 public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Int;                                               // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_03_2_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_ArtGallery_ManagersOffice_C_BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_03_2_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_04_2_K2Node_ActorBoundEvent_11_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_ArtGallery_ManagersOffice_C_BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_04_2_K2Node_ActorBoundEvent_11_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_5_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_ArtGallery_ManagersOffice_C_BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_5_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_BP_One_Step_Animated_Button_2_K2Node_ActorBoundEvent_5_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_ArtGallery_ManagersOffice_C_BndEvt__R_ArtGallery_ManagersOffice_BP_One_Step_Animated_Button_2_K2Node_ActorBoundEvent_5_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_ArtGallery_ManagersOffice_C_BndEvt__R_ArtGallery_ManagersOffice_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 OverlappedActor;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_R_ArtGallery_ManagersOffice_C_Int;
 
 // Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.ExecuteUbergraph_R_ArtGallery_ManagersOffice
 // 0x00B8 (0x00B8 - 0x0000)
@@ -128,14 +83,67 @@ public:
 	ESBZDifficulty                                CallFunc_DifficultyBranch_OutputPins;              // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x00B5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_R_ArtGallery_ManagersOffice_C_ExecuteUbergraph_R_ArtGallery_ManagersOffice;
 
-// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.Int
-// 0x0004 (0x0004 - 0x0000)
-struct R_ArtGallery_ManagersOffice_C_Int final
+// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_ArtGallery_ManagersOffice_C_BndEvt__R_ArtGallery_ManagersOffice_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature final
 {
 public:
-	int32                                         Int_0;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OverlappedActor;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_R_ArtGallery_ManagersOffice_C_BndEvt__R_ArtGallery_ManagersOffice_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature;
+
+// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_BP_One_Step_Animated_Button_2_K2Node_ActorBoundEvent_5_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_ArtGallery_ManagersOffice_C_BndEvt__R_ArtGallery_ManagersOffice_BP_One_Step_Animated_Button_2_K2Node_ActorBoundEvent_5_SBZActorOnInteraction__DelegateSignature final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_ArtGallery_ManagersOffice_C_BndEvt__R_ArtGallery_ManagersOffice_BP_One_Step_Animated_Button_2_K2Node_ActorBoundEvent_5_SBZActorOnInteraction__DelegateSignature;
+
+// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_5_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_ArtGallery_ManagersOffice_C_BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_5_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_ArtGallery_ManagersOffice_C_BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_5_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature;
+
+// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_04_2_K2Node_ActorBoundEvent_11_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_ArtGallery_ManagersOffice_C_BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_04_2_K2Node_ActorBoundEvent_11_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_ArtGallery_ManagersOffice_C_BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_04_2_K2Node_ActorBoundEvent_11_SBZLootedSignature__DelegateSignature;
+
+// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_03_2_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_ArtGallery_ManagersOffice_C_BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_03_2_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_ArtGallery_ManagersOffice_C_BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_03_2_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature;
+
+// Function R_ArtGallery_ManagersOffice.R_ArtGallery_ManagersOffice_C.BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_02_2_K2Node_ActorBoundEvent_10_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_ArtGallery_ManagersOffice_C_BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_02_2_K2Node_ActorBoundEvent_10_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_ArtGallery_ManagersOffice_C_BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_02_2_K2Node_ActorBoundEvent_10_SBZLootedSignature__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

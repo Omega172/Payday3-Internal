@@ -17,53 +17,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_Throwable_FragGrenade.BP_Throwable_FragGrenade_C.BndEvt__BP_Throwable_FragGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature
-// 0x0120 (0x0120 - 0x0000)
-struct BP_Throwable_FragGrenade_C_BndEvt__BP_Throwable_FragGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature final
-{
-public:
-	struct FHitResult                             ImpactResult;                                      // 0x0000(0x0108)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                ImpactVelocity;                                    // 0x0108(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_Throwable_FragGrenade.BP_Throwable_FragGrenade_C.BndEvt__BP_Throwable_FragGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature
-// 0x0108 (0x0108 - 0x0000)
-struct BP_Throwable_FragGrenade_C_BndEvt__BP_Throwable_FragGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature final
-{
-public:
-	struct FHitResult                             ImpactResult;                                      // 0x0000(0x0108)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
-
-// Function BP_Throwable_FragGrenade.BP_Throwable_FragGrenade_C.ExecuteUbergraph_BP_Throwable_FragGrenade
-// 0x0268 (0x0268 - 0x0000)
-struct BP_Throwable_FragGrenade_C_ExecuteUbergraph_BP_Throwable_FragGrenade final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Current_Value_167B418541A9357FDBD4B1BE67ED8544_Variable; // 0x0008(0x0004)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initialized_167B418541A9357FDBD4B1BE67ED8544_Variable; // 0x000C(0x0001)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             K2Node_ComponentBoundEvent_ImpactResult;           // 0x0018(0x0108)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0120(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_129[0x7];                                      // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_GetVelocity_ReturnValue;                  // 0x0130(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             K2Node_ComponentBoundEvent_ImpactResult_1;         // 0x0148(0x0108)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                K2Node_ComponentBoundEvent_ImpactVelocity;         // 0x0250(0x0018)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_Throwable_FragGrenade.BP_Throwable_FragGrenade_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_Throwable_FragGrenade_C_ReceiveTick final
-{
-public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_Throwable_FragGrenade.BP_Throwable_FragGrenade_C.SpawnPopoffLever
 // 0x01E0 (0x01E0 - 0x0000)
 struct BP_Throwable_FragGrenade_C_SpawnPopoffLever final
@@ -88,6 +41,58 @@ public:
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x01B0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x01C8(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Throwable_FragGrenade_C_SpawnPopoffLever;
+
+// Function BP_Throwable_FragGrenade.BP_Throwable_FragGrenade_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_Throwable_FragGrenade_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Throwable_FragGrenade_C_ReceiveTick;
+
+// Function BP_Throwable_FragGrenade.BP_Throwable_FragGrenade_C.ExecuteUbergraph_BP_Throwable_FragGrenade
+// 0x0268 (0x0268 - 0x0000)
+struct BP_Throwable_FragGrenade_C_ExecuteUbergraph_BP_Throwable_FragGrenade final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Current_Value_167B418541A9357FDBD4B1BE67ED8544_Variable; // 0x0008(0x0004)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initialized_167B418541A9357FDBD4B1BE67ED8544_Variable; // 0x000C(0x0001)(ZeroConstructor, SaveGame, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             K2Node_ComponentBoundEvent_ImpactResult;           // 0x0018(0x0108)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0120(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_129[0x7];                                      // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_GetVelocity_ReturnValue;                  // 0x0130(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             K2Node_ComponentBoundEvent_ImpactResult_1;         // 0x0148(0x0108)(ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                K2Node_ComponentBoundEvent_ImpactVelocity;         // 0x0250(0x0018)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Throwable_FragGrenade_C_ExecuteUbergraph_BP_Throwable_FragGrenade;
+
+// Function BP_Throwable_FragGrenade.BP_Throwable_FragGrenade_C.BndEvt__BP_Throwable_FragGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature
+// 0x0108 (0x0108 - 0x0000)
+struct BP_Throwable_FragGrenade_C_BndEvt__BP_Throwable_FragGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature final
+{
+public:
+	struct FHitResult                             ImpactResult;                                      // 0x0000(0x0108)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+DUMPER7_ASSERTS_BP_Throwable_FragGrenade_C_BndEvt__BP_Throwable_FragGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature;
+
+// Function BP_Throwable_FragGrenade.BP_Throwable_FragGrenade_C.BndEvt__BP_Throwable_FragGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature
+// 0x0120 (0x0120 - 0x0000)
+struct BP_Throwable_FragGrenade_C_BndEvt__BP_Throwable_FragGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature final
+{
+public:
+	struct FHitResult                             ImpactResult;                                      // 0x0000(0x0108)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                ImpactVelocity;                                    // 0x0108(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Throwable_FragGrenade_C_BndEvt__BP_Throwable_FragGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

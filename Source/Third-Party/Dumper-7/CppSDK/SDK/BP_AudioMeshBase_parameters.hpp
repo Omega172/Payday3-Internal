@@ -16,6 +16,16 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_AudioMeshBase.BP_AudioMeshBase_C.UserConstructionScript
+// 0x0002 (0x0002 - 0x0000)
+struct BP_AudioMeshBase_C_UserConstructionScript final
+{
+public:
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_AudioMeshBase_C_UserConstructionScript;
+
 // Function BP_AudioMeshBase.BP_AudioMeshBase_C.ExecuteUbergraph_BP_AudioMeshBase
 // 0x003C (0x003C - 0x0000)
 struct BP_AudioMeshBase_C_ExecuteUbergraph_BP_AudioMeshBase final
@@ -30,15 +40,7 @@ public:
 	int32                                         CallFunc_PostAkEvent_ReturnValue_1;                // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_AudioMeshBase.BP_AudioMeshBase_C.UserConstructionScript
-// 0x0002 (0x0002 - 0x0000)
-struct BP_AudioMeshBase_C_UserConstructionScript final
-{
-public:
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_AudioMeshBase_C_ExecuteUbergraph_BP_AudioMeshBase;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

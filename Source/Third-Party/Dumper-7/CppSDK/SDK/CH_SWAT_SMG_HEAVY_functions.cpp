@@ -16,6 +16,18 @@
 
 SDK_NAMESPACE_START
 
+// Function CH_SWAT_SMG_HEAVY.CH_SWAT_SMG_HEAVY_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ACH_SWAT_SMG_HEAVY_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function CH_SWAT_SMG_HEAVY.CH_SWAT_SMG_HEAVY_C.ExecuteUbergraph_CH_SWAT_SMG_HEAVY
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,30 +35,14 @@ SDK_NAMESPACE_START
 
 void ACH_SWAT_SMG_HEAVY_C::ExecuteUbergraph_CH_SWAT_SMG_HEAVY(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CH_SWAT_SMG_HEAVY_C", "ExecuteUbergraph_CH_SWAT_SMG_HEAVY");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "CH_SWAT_SMG_HEAVY_C", "ExecuteUbergraph_CH_SWAT_SMG_HEAVY", FuncInfo);
 
 	Params::CH_SWAT_SMG_HEAVY_C_ExecuteUbergraph_CH_SWAT_SMG_HEAVY Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function CH_SWAT_SMG_HEAVY.CH_SWAT_SMG_HEAVY_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ACH_SWAT_SMG_HEAVY_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CH_SWAT_SMG_HEAVY_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

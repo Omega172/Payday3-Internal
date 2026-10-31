@@ -29,9 +29,9 @@ public:
 	class ALevelSequenceActor*                    C_DirtyIce_Master_02_2_ExecuteUbergraph_C_JewelryStore_IntroOutro_RefProperty; // 0x03E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_C_JewelryStore_IntroOutro(int32 EntryPoint);
-	void IntroSequenceChanged(bool bIsStarted);
 	void OnIntroFinished();
+	void IntroSequenceChanged(bool bIsStarted_IntroSequenceChanged);
+	void ExecuteUbergraph_C_JewelryStore_IntroOutro(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -47,5 +47,6 @@ public:
 		return GetDefaultObjImpl<AC_JewelryStore_IntroOutro_C>();
 	}
 };
+DUMPER7_ASSERTS_AC_JewelryStore_IntroOutro_C;
 
 SDK_NAMESPACE_END

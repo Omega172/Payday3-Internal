@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UNQF_Escort_Pickup_C>();
 	}
 };
+DUMPER7_ASSERTS_UNQF_Escort_Pickup_C;
 
 SDK_NAMESPACE_END

@@ -16,20 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function E_Sky_EXT_Architecture_01.E_Sky_EXT_Architecture_01_C.BreakBedroomWindow
-// (BlueprintCallable, BlueprintEvent)
-
-void AE_Sky_EXT_Architecture_01_C::BreakBedroomWindow()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Sky_EXT_Architecture_01_C", "BreakBedroomWindow");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function E_Sky_EXT_Architecture_01.E_Sky_EXT_Architecture_01_C.ExecuteUbergraph_E_Sky_EXT_Architecture_01
 // (Final, UbergraphFunction)
 // Parameters:
@@ -37,16 +23,26 @@ void AE_Sky_EXT_Architecture_01_C::BreakBedroomWindow()
 
 void AE_Sky_EXT_Architecture_01_C::ExecuteUbergraph_E_Sky_EXT_Architecture_01(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Sky_EXT_Architecture_01_C", "ExecuteUbergraph_E_Sky_EXT_Architecture_01");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "E_Sky_EXT_Architecture_01_C", "ExecuteUbergraph_E_Sky_EXT_Architecture_01", FuncInfo);
 
 	Params::E_Sky_EXT_Architecture_01_C_ExecuteUbergraph_E_Sky_EXT_Architecture_01 Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function E_Sky_EXT_Architecture_01.E_Sky_EXT_Architecture_01_C.BreakBedroomWindow
+// (BlueprintCallable, BlueprintEvent)
+
+void AE_Sky_EXT_Architecture_01_C::BreakBedroomWindow()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BreakBedroomWindow", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

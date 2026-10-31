@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UTouchTheSky_WindShake_C>();
 	}
 };
+DUMPER7_ASSERTS_UTouchTheSky_WindShake_C;
 
 SDK_NAMESPACE_END

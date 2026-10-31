@@ -23,6 +23,7 @@ public:
 	class ABP_RoomSpawnController_C*              RoomControllerRef;                                 // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 SpawnedActor;                                      // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BPI_RoomSpawnInsideLoc_C_SpawnItemInContainer;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

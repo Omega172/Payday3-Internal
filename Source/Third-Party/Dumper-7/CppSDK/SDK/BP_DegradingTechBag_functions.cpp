@@ -16,26 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_DegradingTechBag.BP_DegradingTechBag_C.BP_OnDegradationChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// const int32                             DegredationLevel                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_DegradingTechBag_C::BP_OnDegradationChanged(const int32 DegredationLevel)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DegradingTechBag_C", "BP_OnDegradationChanged");
-
-	Params::BP_DegradingTechBag_C_BP_OnDegradationChanged Parms{};
-
-	Parms.DegredationLevel = DegredationLevel;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_DegradingTechBag.BP_DegradingTechBag_C.ExecuteUbergraph_BP_DegradingTechBag
 // (Final, UbergraphFunction)
 // Parameters:
@@ -43,14 +23,30 @@ void ABP_DegradingTechBag_C::BP_OnDegradationChanged(const int32 DegredationLeve
 
 void ABP_DegradingTechBag_C::ExecuteUbergraph_BP_DegradingTechBag(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DegradingTechBag_C", "ExecuteUbergraph_BP_DegradingTechBag");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_DegradingTechBag_C", "ExecuteUbergraph_BP_DegradingTechBag", FuncInfo);
 
 	Params::BP_DegradingTechBag_C_ExecuteUbergraph_BP_DegradingTechBag Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_DegradingTechBag.BP_DegradingTechBag_C.BP_OnDegradationChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// const int32                             DegredationLevel_BP_OnDegradationChanged               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_DegradingTechBag_C::BP_OnDegradationChanged(const int32 DegredationLevel_BP_OnDegradationChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnDegradationChanged", FnName));
+
+	Params::BP_DegradingTechBag_C_BP_OnDegradationChanged Parms{};
+
+	Parms.DegredationLevel_BP_OnDegradationChanged = DegredationLevel_BP_OnDegradationChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -16,6 +16,16 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function G_Shiya_Navlinks.G_Shiya_Navlinks_C.HeistStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct G_Shiya_Navlinks_C_HeistStateChanged final
+{
+public:
+	EPD3HeistState                                OldHeistState_HeistStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CurrentHeistState_HeistStateChanged;               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Shiya_Navlinks_C_HeistStateChanged;
+
 // Function G_Shiya_Navlinks.G_Shiya_Navlinks_C.ExecuteUbergraph_G_Shiya_Navlinks
 // 0x0008 (0x0008 - 0x0000)
 struct G_Shiya_Navlinks_C_ExecuteUbergraph_G_Shiya_Navlinks final
@@ -26,15 +36,7 @@ public:
 	EPD3HeistState                                K2Node_Event_CurrentHeistState;                    // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function G_Shiya_Navlinks.G_Shiya_Navlinks_C.HeistStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct G_Shiya_Navlinks_C_HeistStateChanged final
-{
-public:
-	EPD3HeistState                                OldHeistState;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CurrentHeistState;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_G_Shiya_Navlinks_C_ExecuteUbergraph_G_Shiya_Navlinks;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

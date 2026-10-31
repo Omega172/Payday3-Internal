@@ -36,14 +36,14 @@ public:
 	class UWBP_ItemDescriptionHeader_INvert_C*    WBP_ItemDescriptionHeader_INvert_1;                // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void BndEvt__WBP_CampaignContent_Act_Outro_WBP_InputActionButton_New_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void ExecuteUbergraph_WBP_CampaignContent_Act_Outro(int32 EntryPoint);
-	ESBZCampaignEntryState GetEntryState();
-	void PostPush_3AD43A8C4EB12AA0C6DDC2A28BE3CCBF(class USBZMenuStackScreenWidget* MenuWidget);
-	void PrePush_3AD43A8C4EB12AA0C6DDC2A28BE3CCBF(class USBZMenuStackScreenWidget* MenuWidget);
-	void PushActScreen(class USBZCampaignActData* ActData);
-	void SetCampaignData(const class USBZCampaignBaseEntryData* Entry);
 	void SetEntryState(ESBZCampaignEntryState NewState);
+	void SetCampaignData(const class USBZCampaignBaseEntryData* Entry);
+	void PushActScreen(class USBZCampaignActData* ActData);
+	void PrePush_3AD43A8C4EB12AA0C6DDC2A28BE3CCBF(class USBZMenuStackScreenWidget* MenuWidget);
+	void PostPush_3AD43A8C4EB12AA0C6DDC2A28BE3CCBF(class USBZMenuStackScreenWidget* MenuWidget);
+	ESBZCampaignEntryState GetEntryState();
+	void ExecuteUbergraph_WBP_CampaignContent_Act_Outro(int32 EntryPoint);
+	void BndEvt__WBP_CampaignContent_Act_Outro_WBP_InputActionButton_New_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
 
 public:
 	static class UClass* StaticClass()
@@ -59,5 +59,6 @@ public:
 		return GetDefaultObjImpl<UWBP_CampaignContent_Act_Outro_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_CampaignContent_Act_Outro_C;
 
 SDK_NAMESPACE_END

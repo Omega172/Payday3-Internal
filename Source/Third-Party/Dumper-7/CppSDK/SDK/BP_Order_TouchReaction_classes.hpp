@@ -20,7 +20,7 @@ SDK_NAMESPACE_START
 class UBP_Order_TouchReaction_C final : public USBZAIOrder
 {
 public:
-	bool ExecPredicate(const class UObject* Owner) const;
+	bool ExecPredicate(const class UObject* Owner_ExecPredicate) const;
 
 public:
 	static class UClass* StaticClass()
@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<UBP_Order_TouchReaction_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_Order_TouchReaction_C;
 
 SDK_NAMESPACE_END

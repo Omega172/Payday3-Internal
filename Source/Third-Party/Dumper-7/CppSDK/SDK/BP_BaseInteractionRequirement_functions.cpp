@@ -29,10 +29,8 @@ SDK_NAMESPACE_START
 
 bool UBP_BaseInteractionRequirement_C::BP_CheckRequirement(const class USBZInteractorComponent* Interactor, struct FSBZInteractReqData* OutData, bool bIsSignalRequired, bool bInIsScreenInteract, bool bIsCasing, bool bIsEncumbered) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseInteractionRequirement_C", "BP_CheckRequirement");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_CheckRequirement", FnName));
 
 	Params::BP_BaseInteractionRequirement_C_BP_CheckRequirement Parms{};
 

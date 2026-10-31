@@ -16,15 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_GlassCup_01_B_SmallDestruction.BP_GlassCup_01_B_SmallDestruction_C.BndEvt__BP_GlassCup_01_B_SmallDestruction_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct BP_GlassCup_01_B_SmallDestruction_C_BndEvt__BP_GlassCup_01_B_SmallDestruction_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature final
-{
-public:
-	class UActorComponent*                        Component;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bReset;                                            // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_GlassCup_01_B_SmallDestruction.BP_GlassCup_01_B_SmallDestruction_C.ExecuteUbergraph_BP_GlassCup_01_B_SmallDestruction
 // 0x0030 (0x0030 - 0x0000)
 struct BP_GlassCup_01_B_SmallDestruction_C_ExecuteUbergraph_BP_GlassCup_01_B_SmallDestruction final
@@ -37,6 +28,17 @@ public:
 	class UActorComponent*                        K2Node_ComponentBoundEvent_Component;              // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ComponentBoundEvent_bReset;                 // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_GlassCup_01_B_SmallDestruction_C_ExecuteUbergraph_BP_GlassCup_01_B_SmallDestruction;
+
+// Function BP_GlassCup_01_B_SmallDestruction.BP_GlassCup_01_B_SmallDestruction_C.BndEvt__BP_GlassCup_01_B_SmallDestruction_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct BP_GlassCup_01_B_SmallDestruction_C_BndEvt__BP_GlassCup_01_B_SmallDestruction_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature final
+{
+public:
+	class UActorComponent*                        Component;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bReset;                                            // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_GlassCup_01_B_SmallDestruction_C_BndEvt__BP_GlassCup_01_B_SmallDestruction_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

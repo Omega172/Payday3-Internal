@@ -16,57 +16,45 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_VIPInvitation_Fake.BP_VIPInvitation_Fake_C.ExecuteUbergraph_BP_VIPInvitation_Fake
-// (Final, UbergraphFunction)
+// Function BP_VIPInvitation_Fake.BP_VIPInvitation_Fake_C.ReceiveEndPlay
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EEndPlayReason                          EndPlayReason_ReceiveEndPlay                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_VIPInvitation_Fake_C::ExecuteUbergraph_BP_VIPInvitation_Fake(int32 EntryPoint)
+void ABP_VIPInvitation_Fake_C::ReceiveEndPlay(EEndPlayReason EndPlayReason_ReceiveEndPlay)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveEndPlay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VIPInvitation_Fake_C", "ExecuteUbergraph_BP_VIPInvitation_Fake");
+	Params::BP_VIPInvitation_Fake_C_ReceiveEndPlay Parms{};
 
-	Params::BP_VIPInvitation_Fake_C_ExecuteUbergraph_BP_VIPInvitation_Fake Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.EndPlayReason_ReceiveEndPlay = EndPlayReason_ReceiveEndPlay;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_VIPInvitation_Fake.BP_VIPInvitation_Fake_C.GetSensorComponent
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZSensorComponent*              ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function BP_VIPInvitation_Fake.BP_VIPInvitation_Fake_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-class USBZSensorComponent* ABP_VIPInvitation_Fake_C::GetSensorComponent()
+void ABP_VIPInvitation_Fake_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VIPInvitation_Fake_C", "GetSensorComponent");
-
-	Params::BP_VIPInvitation_Fake_C_GetSensorComponent Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
 // Function BP_VIPInvitation_Fake.BP_VIPInvitation_Fake_C.GetSensorOutlineComponent
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZOutlineComponent*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZOutlineComponent*             ReturnValue_GetSensorOutlineComponent                  (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 class USBZOutlineComponent* ABP_VIPInvitation_Fake_C::GetSensorOutlineComponent()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VIPInvitation_Fake_C", "GetSensorOutlineComponent");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetSensorOutlineComponent", FnName));
 
 	Params::BP_VIPInvitation_Fake_C_GetSensorOutlineComponent Parms{};
 
@@ -76,35 +64,37 @@ class USBZOutlineComponent* ABP_VIPInvitation_Fake_C::GetSensorOutlineComponent(
 }
 
 
-// Function BP_VIPInvitation_Fake.BP_VIPInvitation_Fake_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_VIPInvitation_Fake.BP_VIPInvitation_Fake_C.GetSensorComponent
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZSensorComponent*              ReturnValue_GetSensorComponent                         (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_VIPInvitation_Fake_C::ReceiveBeginPlay()
+class USBZSensorComponent* ABP_VIPInvitation_Fake_C::GetSensorComponent()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetSensorComponent", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VIPInvitation_Fake_C", "ReceiveBeginPlay");
+	Params::BP_VIPInvitation_Fake_C_GetSensorComponent Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 
-// Function BP_VIPInvitation_Fake.BP_VIPInvitation_Fake_C.ReceiveEndPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_VIPInvitation_Fake.BP_VIPInvitation_Fake_C.ExecuteUbergraph_BP_VIPInvitation_Fake
+// (Final, UbergraphFunction)
 // Parameters:
-// EEndPlayReason                          EndPlayReason                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_VIPInvitation_Fake_C::ReceiveEndPlay(EEndPlayReason EndPlayReason)
+void ABP_VIPInvitation_Fake_C::ExecuteUbergraph_BP_VIPInvitation_Fake(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_VIPInvitation_Fake_C", "ExecuteUbergraph_BP_VIPInvitation_Fake", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VIPInvitation_Fake_C", "ReceiveEndPlay");
+	Params::BP_VIPInvitation_Fake_C_ExecuteUbergraph_BP_VIPInvitation_Fake Parms{};
 
-	Params::BP_VIPInvitation_Fake_C_ReceiveEndPlay Parms{};
-
-	Parms.EndPlayReason = EndPlayReason;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

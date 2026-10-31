@@ -30,9 +30,9 @@ public:
 	class UAkAudioEvent*                          Ak_Event;                                          // 0x0350(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_AudioMeshBase(int32 EntryPoint);
-	void ReceiveBeginPlay();
 	void UserConstructionScript();
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_AudioMeshBase(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<ABP_AudioMeshBase_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_AudioMeshBase_C;
 
 SDK_NAMESPACE_END

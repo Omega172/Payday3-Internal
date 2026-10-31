@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "BP_BaseSabotagePoint_classes.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Engine_structs.hpp"
 #include "AkAudio_structs.hpp"
+#include "BP_BaseSabotagePoint_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -38,25 +38,25 @@ public:
 	ESBZSabotagePointState                        sabotageState;                                     // 0x04A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_STO_WirlessCraneController_01_crane_K2Node_ComponentBoundEvent_10_onMaxStateAlreadyReached__DelegateSignature();
-	void BndEvt__BP_STO_WirlessCraneController_01_crane_K2Node_ComponentBoundEvent_3_SBZTimerDelegate__DelegateSignature();
-	void BndEvt__BP_STO_WirlessCraneController_01_InitialSBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_9_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_STO_WirlessCraneController_01_isPlacedSBZBinaryState_K2Node_ComponentBoundEvent_8_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
-	void BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_7_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent_0, bool bInNewState);
-	void BP_StateChanged(ESBZSabotagePointState OldState, ESBZSabotagePointState NewState, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_STO_WirlessCraneController_01(int32 EntryPoint);
-	class FText GetMarkerText();
-	void onSabotagedBP(bool bSabotaged);
-	void ReceiveBeginPlay();
-	void setInteractable(bool bEnabled);
-	void setMarker(const class USBZMarkerDataAsset* MarkerDataAsset);
 	void setVisibility(bool visible);
+	void setMarker(const class USBZMarkerDataAsset* MarkerDataAsset);
+	void setInteractable(bool bEnabled);
+	void ReceiveBeginPlay();
+	void onSabotagedBP(bool bSabotaged);
+	class FText GetMarkerText();
+	void ExecuteUbergraph_BP_STO_WirlessCraneController_01(int32 EntryPoint);
+	void BP_StateChanged(ESBZSabotagePointState OldState_BP_StateChanged, ESBZSabotagePointState NewState_BP_StateChanged, bool bDoCosmetics_BP_StateChanged);
+	void BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_7_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
+	void BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_STO_WirlessCraneController_01_StartCraneSBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_STO_WirlessCraneController_01_isPlacedSBZBinaryState_K2Node_ComponentBoundEvent_8_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
+	void BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_9_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_STO_WirlessCraneController_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_STO_WirlessCraneController_01_InitialSBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_STO_WirlessCraneController_01_crane_K2Node_ComponentBoundEvent_3_SBZTimerDelegate__DelegateSignature();
+	void BndEvt__BP_STO_WirlessCraneController_01_crane_K2Node_ComponentBoundEvent_10_onMaxStateAlreadyReached__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()
@@ -72,5 +72,6 @@ public:
 		return GetDefaultObjImpl<ABP_STO_WirlessCraneController_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_STO_WirlessCraneController_01_C;
 
 SDK_NAMESPACE_END

@@ -16,14 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_SecureBagArea_01.BP_SecureBagArea_01_C.addBagHandle
-// 0x0010 (0x0010 - 0x0000)
-struct BP_SecureBagArea_01_C_addBagHandle final
-{
-public:
-	struct FSBZBagHandle                          BagHandle;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
 // Function BP_SecureBagArea_01.BP_SecureBagArea_01_C.ExecuteUbergraph_BP_SecureBagArea_01
 // 0x0018 (0x0018 - 0x0000)
 struct BP_SecureBagArea_01_C_ExecuteUbergraph_BP_SecureBagArea_01 final
@@ -33,6 +25,16 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSBZBagHandle                          K2Node_CustomEvent_BagHandle;                      // 0x0008(0x0010)(NoDestructor)
 };
+DUMPER7_ASSERTS_BP_SecureBagArea_01_C_ExecuteUbergraph_BP_SecureBagArea_01;
+
+// Function BP_SecureBagArea_01.BP_SecureBagArea_01_C.addBagHandle
+// 0x0010 (0x0010 - 0x0000)
+struct BP_SecureBagArea_01_C_addBagHandle final
+{
+public:
+	struct FSBZBagHandle                          BagHandle;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_BP_SecureBagArea_01_C_addBagHandle;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

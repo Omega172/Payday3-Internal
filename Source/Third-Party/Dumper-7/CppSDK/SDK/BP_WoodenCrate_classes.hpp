@@ -10,9 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Starbreeze_classes.hpp"
+#include "AkAudio_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -24,36 +25,47 @@ class SDK_ALIGN(0x10) ABP_WoodenCrate_C : public ASBZReplicatedBinaryStateActor
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0358(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USBZPropDamageComponent*                SBZPropDamage;                                     // 0x0360(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USBZBinaryStateComponent*               marked_SBZBinaryState;                             // 0x0368(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USBZAIObjectiveComponent*               SBZAIObjective;                                    // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          SideCollision_05;                                  // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          SideCollision_04;                                  // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          SideCollision_03;                                  // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          SideCollision_02;                                  // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          SideCollision_01;                                  // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          Box;                                               // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBoxComponent*                          DoorCollision_01;                                  // 0x03A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USBZOutlineComponent*                   SBZOutline;                                        // 0x03B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractableComponent*              SBZInteractable;                                   // 0x03B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Mesh;                                              // 0x03C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x03C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	bool                                          SmallBox_;                                         // 0x03D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D1[0xF];                                      // 0x03D1(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkComponent*                           AMB_GEN_Wood_Crate;                                // 0x0360(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZPropDamageComponent*                SBZPropDamage;                                     // 0x0368(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZBinaryStateComponent*               marked_SBZBinaryState;                             // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZAIObjectiveComponent*               SBZAIObjective;                                    // 0x0378(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          SideCollision_05;                                  // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          SideCollision_04;                                  // 0x0388(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          SideCollision_03;                                  // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          SideCollision_02;                                  // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          SideCollision_01;                                  // 0x03A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          Box;                                               // 0x03A8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBoxComponent*                          DoorCollision_01;                                  // 0x03B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZOutlineComponent*                   SBZOutline;                                        // 0x03B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractableComponent*              SBZInteractable;                                   // 0x03C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Mesh;                                              // 0x03C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x03D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	bool                                          SmallBox_;                                         // 0x03D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3D9[0x7];                                      // 0x03D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             Boxsizer;                                          // 0x03E0(0x0060)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TMulticastInlineDelegate<void()>              onCrateOpened;                                     // 0x0440(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TArray<TScriptInterface<class IBPI_BinaryReactor_C>> binaryReactorActors;                        // 0x0450(0x0010)(Edit, BlueprintVisible)
 	bool                                          binaryReactorState;                                // 0x0460(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_ReplicatedBinaryActorVent_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_WoodenCrate_marked_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature(bool bState_0, bool bDoCosmetics);
-	void BndEvt__BP_WoodenCrate_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
-	void ExecuteUbergraph_BP_WoodenCrate(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void setBinaryState(bool state, bool doCosmetics);
-	void setMarking(bool visible);
 	void UserConstructionScript();
+	void setMarking(bool visible);
+	void setBinaryState(bool state, bool doCosmetics);
+	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
+	void OnPreTakeDamage(const TArray<struct FHitResult>& HitResultArray, float DamagePerHit, float Distance, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier);
+	void OnPostTakenDamageEvent(const TArray<struct FHitResult>& HitResultArray, const struct FSBZDamageEvent& DamageEvent, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier);
+	void ExecuteUbergraph_BP_WoodenCrate(int32 EntryPoint);
+	void BndEvt__BP_WoodenCrate_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
+	void BndEvt__BP_WoodenCrate_marked_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature(bool bState_0, bool bDoCosmetics);
+	void BndEvt__BP_ReplicatedBinaryActorVent_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+
+	bool IsLockpickActor() const;
+	bool IsDamageTypeAllowed(const class USBZInteractorComponent* Interactor, const struct FGameplayTagContainer& InDamageTypeTags, bool bIsSawPropDamageOnly) const;
+	bool IsDamageEventBroadcastMerged(const TArray<struct FHitResult>& HitResultArray, const struct FSBZDamageEvent& DamageEvent, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier) const;
+	bool IsDamageEventBroadcastKillshot(const struct FHitResult& HitResult, const struct FSBZDamageEvent& DamageEvent, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier) const;
+	bool IsDamageEventBroadcastHitMarkerSoundAllowed(const struct FHitResult& HitResult, const struct FSBZDamageEvent& DamageEvent, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier) const;
+	bool IsDamageEventBroadcastEnabled(const TArray<struct FHitResult>& HitResultArray, float DamagePerHit, float Distance, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier) const;
+	bool IsDamageEventBroadcastCritical(const struct FHitResult& HitResult, const struct FSBZDamageEvent& DamageEvent, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier) const;
 
 public:
 	static class UClass* StaticClass()
@@ -70,5 +82,6 @@ public:
 	}
 };
 #pragma pack(pop)
+DUMPER7_ASSERTS_ABP_WoodenCrate_C;
 
 SDK_NAMESPACE_END

@@ -17,6 +17,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_KeypadInteraction.WBP_KeypadInteraction_C.SetCodeText
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_KeypadInteraction_C_SetCodeText final
+{
+public:
+	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_KeypadInteraction_C_SetCodeText;
+
 // Function WBP_KeypadInteraction.WBP_KeypadInteraction_C.SetBackgroundColor
 // 0x0074 (0x0074 - 0x0000)
 struct WBP_KeypadInteraction_C_SetBackgroundColor final
@@ -33,14 +42,7 @@ public:
 	struct FLinearColor                           Temp_struct_Variable_5;                            // 0x0054(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_Select_Default;                             // 0x0064(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function WBP_KeypadInteraction.WBP_KeypadInteraction_C.SetCodeText
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_KeypadInteraction_C_SetCodeText final
-{
-public:
-	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
+DUMPER7_ASSERTS_WBP_KeypadInteraction_C_SetBackgroundColor;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

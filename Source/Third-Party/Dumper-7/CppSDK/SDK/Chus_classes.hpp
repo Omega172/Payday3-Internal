@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AChus_C>();
 	}
 };
+DUMPER7_ASSERTS_AChus_C;
 
 SDK_NAMESPACE_END

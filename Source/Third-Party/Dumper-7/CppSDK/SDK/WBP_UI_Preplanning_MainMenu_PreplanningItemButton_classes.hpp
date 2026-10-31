@@ -32,17 +32,17 @@ public:
 	bool                                          IsRemoveButton;                                    // 0x03E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetRemoveAssetButton(bool bIsRemoveAssetButton_SetRemoveAssetButton);
-	void RefreshVisuals();
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnPrePlanningItemInitialized(const class USBZPreplanningAssetData* InPreplanningData_OnPrePlanningItemInitialized);
-	void OnInitialized();
-	void OnHovered(bool bIsHovered);
-	void OnFocused(bool bIsFocused);
+	void ButtonDisabledChanged(bool bInIsDisabled);
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
 	void ExecuteUbergraph_WBP_UI_Preplanning_MainMenu_PreplanningItemButton(int32 EntryPoint);
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
-	void ButtonDisabledChanged(bool bInIsDisabled_ButtonDisabledChanged);
+	void OnFocused(bool bIsFocused);
+	void OnHovered(bool bIsHovered);
+	void OnInitialized();
+	void OnPrePlanningItemInitialized(const class USBZPreplanningAssetData* InPreplanningData);
+	void PreConstruct(bool IsDesignTime);
+	void RefreshVisuals();
+	void SetRemoveAssetButton(bool bIsRemoveAssetButton);
 
 public:
 	static class UClass* StaticClass()

@@ -16,6 +16,18 @@
 
 SDK_NAMESPACE_START
 
+// Function CH_BaseCivilian.CH_BaseCivilian_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ACH_BaseCivilian_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function CH_BaseCivilian.CH_BaseCivilian_C.ExecuteUbergraph_CH_BaseCivilian
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,30 +35,14 @@ SDK_NAMESPACE_START
 
 void ACH_BaseCivilian_C::ExecuteUbergraph_CH_BaseCivilian(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CH_BaseCivilian_C", "ExecuteUbergraph_CH_BaseCivilian");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "CH_BaseCivilian_C", "ExecuteUbergraph_CH_BaseCivilian", FuncInfo);
 
 	Params::CH_BaseCivilian_C_ExecuteUbergraph_CH_BaseCivilian Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function CH_BaseCivilian.CH_BaseCivilian_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ACH_BaseCivilian_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CH_BaseCivilian_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

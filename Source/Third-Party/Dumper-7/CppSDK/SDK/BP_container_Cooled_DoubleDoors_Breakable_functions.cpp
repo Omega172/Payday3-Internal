@@ -16,25 +16,33 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_container_Cooled_DoubleDoors_Breakable.BP_container_Cooled_DoubleDoors_Breakable_C.BndEvt__BP_container_cooled_Double_doors_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_container_Cooled_DoubleDoors_Breakable.BP_container_Cooled_DoubleDoors_Breakable_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_container_Cooled_DoubleDoors_Breakable_C::BndEvt__BP_container_cooled_Double_doors_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_container_Cooled_DoubleDoors_Breakable_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_container_Cooled_DoubleDoors_Breakable_C", "BndEvt__BP_container_cooled_Double_doors_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_container_Cooled_DoubleDoors_Breakable_C_BndEvt__BP_container_cooled_Double_doors_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+// Function BP_container_Cooled_DoubleDoors_Breakable.BP_container_Cooled_DoubleDoors_Breakable_C.setBinaryState
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    state                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    doCosmetics                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_container_Cooled_DoubleDoors_Breakable_C::setBinaryState(bool state, bool doCosmetics)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setBinaryState", FnName));
+
+	Params::BP_container_Cooled_DoubleDoors_Breakable_C_setBinaryState Parms{};
+
+	Parms.state = state;
+	Parms.doCosmetics = doCosmetics;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -47,10 +55,8 @@ void ABP_container_Cooled_DoubleDoors_Breakable_C::BndEvt__BP_container_cooled_D
 
 void ABP_container_Cooled_DoubleDoors_Breakable_C::ExecuteUbergraph_BP_container_Cooled_DoubleDoors_Breakable(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_container_Cooled_DoubleDoors_Breakable_C", "ExecuteUbergraph_BP_container_Cooled_DoubleDoors_Breakable");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_container_Cooled_DoubleDoors_Breakable_C", "ExecuteUbergraph_BP_container_Cooled_DoubleDoors_Breakable", FuncInfo);
 
 	Params::BP_container_Cooled_DoubleDoors_Breakable_C_ExecuteUbergraph_BP_container_Cooled_DoubleDoors_Breakable Parms{};
 
@@ -60,39 +66,25 @@ void ABP_container_Cooled_DoubleDoors_Breakable_C::ExecuteUbergraph_BP_container
 }
 
 
-// Function BP_container_Cooled_DoubleDoors_Breakable.BP_container_Cooled_DoubleDoors_Breakable_C.setBinaryState
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_container_Cooled_DoubleDoors_Breakable.BP_container_Cooled_DoubleDoors_Breakable_C.BndEvt__BP_container_cooled_Double_doors_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// bool                                    state                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    doCosmetics                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_container_Cooled_DoubleDoors_Breakable_C::setBinaryState(bool state, bool doCosmetics)
+void ABP_container_Cooled_DoubleDoors_Breakable_C::BndEvt__BP_container_cooled_Double_doors_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_container_cooled_Double_doors_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_container_Cooled_DoubleDoors_Breakable_C", "setBinaryState");
+	Params::BP_container_Cooled_DoubleDoors_Breakable_C_BndEvt__BP_container_cooled_Double_doors_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
-	Params::BP_container_Cooled_DoubleDoors_Breakable_C_setBinaryState Parms{};
-
-	Parms.state = state;
-	Parms.doCosmetics = doCosmetics;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_container_Cooled_DoubleDoors_Breakable.BP_container_Cooled_DoubleDoors_Breakable_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_container_Cooled_DoubleDoors_Breakable_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_container_Cooled_DoubleDoors_Breakable_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

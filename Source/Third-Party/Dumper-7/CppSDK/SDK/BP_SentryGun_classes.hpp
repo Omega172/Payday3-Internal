@@ -17,18 +17,18 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_SentryGun.BP_SentryGun_C
-// 0x0020 (0x0910 - 0x08F0)
+// 0x0020 (0x0900 - 0x08E0)
 class ABP_SentryGun_C final : public ASBZSentryGun
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UNiagaraComponent*                      FX_Sentry_Overheat;                                // 0x08F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USphereComponent*                       Interaction_Collision;                             // 0x0900(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        WeaponAttach;                                      // 0x0908(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UNiagaraComponent*                      FX_Sentry_Overheat;                                // 0x08E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USphereComponent*                       Interaction_Collision;                             // 0x08F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        WeaponAttach;                                      // 0x08F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void OnOverheatDamageTaken(float InHealth_OnOverheatDamageTaken);
 	void ExecuteUbergraph_BP_SentryGun(int32 EntryPoint);
-	void OnOverheatDamageTaken(float InHealth);
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<ABP_SentryGun_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SentryGun_C;
 
 SDK_NAMESPACE_END

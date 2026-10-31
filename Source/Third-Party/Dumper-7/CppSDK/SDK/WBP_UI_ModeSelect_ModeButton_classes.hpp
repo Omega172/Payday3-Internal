@@ -52,16 +52,16 @@ public:
 	bool                                          SoloModeButton;                                    // 0x0478(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
-	void Update_Lock_State_Based_on_Access(E_ButtonLockedState InLockedState);
-	void ShowBlackAndWhite(bool InShow);
-	void ShowAdditionalInfo();
-	void SetSpecialFocus(bool Focused);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void ExecuteUbergraph_WBP_UI_ModeSelect_ModeButton(int32 EntryPoint);
-	void Construct();
-	void ButtonFocusChanging(bool bInHasFocus_ButtonFocusChanging);
-	void ButtonDisabledChanged(bool bInIsDisabled_ButtonDisabledChanged);
 	void ButtonAlternativeSelected();
+	void ButtonDisabledChanged(bool bInIsDisabled);
+	void ButtonFocusChanging(bool bInHasFocus);
+	void Construct();
+	void ExecuteUbergraph_WBP_UI_ModeSelect_ModeButton(int32 EntryPoint);
+	void PreConstruct(bool IsDesignTime);
+	void SetSpecialFocus(bool Focused);
+	void ShowAdditionalInfo();
+	void ShowBlackAndWhite(bool InShow);
+	void Update_Lock_State_Based_on_Access(E_ButtonLockedState InLockedState);
 
 public:
 	static class UClass* StaticClass()

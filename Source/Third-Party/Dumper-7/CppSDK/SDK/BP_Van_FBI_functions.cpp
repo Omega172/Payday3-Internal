@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_Van_FBI.BP_Van_FBI_C.ExecuteUbergraph_BP_Van_FBI
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Van_FBI_C::ExecuteUbergraph_BP_Van_FBI(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Van_FBI_C", "ExecuteUbergraph_BP_Van_FBI", FuncInfo);
+
+	Params::BP_Van_FBI_C_ExecuteUbergraph_BP_Van_FBI Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_Van_FBI.BP_Van_FBI_C.BndEvt__BP_Van_FBI_PropDamageComponent_K2Node_ComponentBoundEvent_0_SBZPropDamageHealthSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -26,10 +44,8 @@ SDK_NAMESPACE_START
 
 void ABP_Van_FBI_C::BndEvt__BP_Van_FBI_PropDamageComponent_K2Node_ComponentBoundEvent_0_SBZPropDamageHealthSignature__DelegateSignature(class UActorComponent* PoolComponent, float Health, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Van_FBI_C", "BndEvt__BP_Van_FBI_PropDamageComponent_K2Node_ComponentBoundEvent_0_SBZPropDamageHealthSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Van_FBI_PropDamageComponent_K2Node_ComponentBoundEvent_0_SBZPropDamageHealthSignature__DelegateSignature", FnName));
 
 	Params::BP_Van_FBI_C_BndEvt__BP_Van_FBI_PropDamageComponent_K2Node_ComponentBoundEvent_0_SBZPropDamageHealthSignature__DelegateSignature Parms{};
 
@@ -37,26 +53,6 @@ void ABP_Van_FBI_C::BndEvt__BP_Van_FBI_PropDamageComponent_K2Node_ComponentBound
 	Parms.Health = Health;
 	Parms.bDoCosmetics = bDoCosmetics;
 	Parms.DamageContext = std::move(DamageContext);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Van_FBI.BP_Van_FBI_C.ExecuteUbergraph_BP_Van_FBI
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Van_FBI_C::ExecuteUbergraph_BP_Van_FBI(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Van_FBI_C", "ExecuteUbergraph_BP_Van_FBI");
-
-	Params::BP_Van_FBI_C_ExecuteUbergraph_BP_Van_FBI Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

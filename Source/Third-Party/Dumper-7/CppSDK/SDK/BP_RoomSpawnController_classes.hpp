@@ -32,12 +32,12 @@ public:
 	TMulticastInlineDelegate<void()>              DispatchRedCardPickup;                             // 0x0380(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BindRedCardEvent(class ABP_RedKeycard_C* CardRef);
-	void ExecuteUbergraph_BP_RoomSpawnController(int32 EntryPoint);
-	void NewFunction_0(TArray<class AActor*>& Array, class UClass* WhatShould_Spawn);
-	void OnCardPickupEvent(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
-	void SpawnRedCardInRoom();
 	void UserConstructionScript();
+	void SpawnRedCardInRoom();
+	void OnCardPickupEvent(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
+	void NewFunction_0(TArray<class AActor*>& Array, class UClass* WhatShould_Spawn);
+	void ExecuteUbergraph_BP_RoomSpawnController(int32 EntryPoint);
+	void BindRedCardEvent(class ABP_RedKeycard_C* CardRef);
 
 public:
 	static class UClass* StaticClass()
@@ -53,5 +53,6 @@ public:
 		return GetDefaultObjImpl<ABP_RoomSpawnController_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_RoomSpawnController_C;
 
 SDK_NAMESPACE_END

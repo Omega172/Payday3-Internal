@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ABPL_HangingModern_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_HangingModern_C;
 
 SDK_NAMESPACE_END

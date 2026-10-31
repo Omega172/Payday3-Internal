@@ -35,9 +35,9 @@ public:
 	class USceneComponent*                        Scene;                                             // 0x0B18(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnStateChanged(ESBZCameraState OldState, ESBZCameraState NewState, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_MovingMotionSensor(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_MovingMotionSensor(int32 EntryPoint);
+	void BP_OnStateChanged(ESBZCameraState OldState_BP_OnStateChanged, ESBZCameraState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged);
 
 public:
 	static class UClass* StaticClass()
@@ -53,5 +53,6 @@ public:
 		return GetDefaultObjImpl<ABP_MovingMotionSensor_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_MovingMotionSensor_C;
 
 SDK_NAMESPACE_END

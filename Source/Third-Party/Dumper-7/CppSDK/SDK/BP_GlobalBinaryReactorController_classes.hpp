@@ -26,9 +26,9 @@ public:
 	TArray<TScriptInterface<class IBPI_BinaryReactor_C>> binaryReactorActors;                        // 0x0390(0x0010)(Edit, BlueprintVisible)
 
 public:
-	void ExecuteUbergraph_BP_GlobalBinaryReactorController(int32 EntryPoint);
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
 	void setBinaryState(bool state);
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_GlobalBinaryReactorController(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<ABP_GlobalBinaryReactorController_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_GlobalBinaryReactorController_C;
 
 SDK_NAMESPACE_END

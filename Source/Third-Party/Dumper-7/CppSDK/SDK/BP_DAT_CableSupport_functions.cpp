@@ -16,25 +16,83 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_DAT_CableSupport.BP_DAT_CableSupport_C.BndEvt__BP_DAT_CableSupport_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_DAT_CableSupport.BP_DAT_CableSupport_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_DAT_CableSupport_C::BndEvt__BP_DAT_CableSupport_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_DAT_CableSupport_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_CableSupport_C", "BndEvt__BP_DAT_CableSupport_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_DAT_CableSupport_C_BndEvt__BP_DAT_CableSupport_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+// Function BP_DAT_CableSupport.BP_DAT_CableSupport_C.SetLocationInteractionEnabled
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_DAT_CableSupport_C::SetLocationInteractionEnabled()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetLocationInteractionEnabled", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_DAT_CableSupport.BP_DAT_CableSupport_C.SetIntState
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Int                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_DAT_CableSupport_C::SetIntState(int32 Int)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetIntState", FnName));
+
+	Params::BP_DAT_CableSupport_C_SetIntState Parms{};
+
+	Parms.Int = Int;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_DAT_CableSupport.BP_DAT_CableSupport_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   OldState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_DAT_CableSupport_C::OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_DAT_CableSupport_C_OnStateChanged Parms{};
+
+	Parms.OldState_OnStateChanged = OldState_OnStateChanged;
+	Parms.NewState_OnStateChanged = NewState_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_DAT_CableSupport.BP_DAT_CableSupport_C.ExecuteUbergraph_BP_DAT_CableSupport
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_DAT_CableSupport_C::ExecuteUbergraph_BP_DAT_CableSupport(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_DAT_CableSupport_C", "ExecuteUbergraph_BP_DAT_CableSupport", FuncInfo);
+
+	Params::BP_DAT_CableSupport_C_ExecuteUbergraph_BP_DAT_CableSupport Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -49,10 +107,8 @@ void ABP_DAT_CableSupport_C::BndEvt__BP_DAT_CableSupport_SBZInteractable_K2Node_
 
 void ABP_DAT_CableSupport_C::BndEvt__BP_DAT_CableSupport_SBZInteractable_location_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_CableSupport_C", "BndEvt__BP_DAT_CableSupport_SBZInteractable_location_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_DAT_CableSupport_SBZInteractable_location_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature", FnName));
 
 	Params::BP_DAT_CableSupport_C_BndEvt__BP_DAT_CableSupport_SBZInteractable_location_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
 
@@ -64,95 +120,25 @@ void ABP_DAT_CableSupport_C::BndEvt__BP_DAT_CableSupport_SBZInteractable_locatio
 }
 
 
-// Function BP_DAT_CableSupport.BP_DAT_CableSupport_C.ExecuteUbergraph_BP_DAT_CableSupport
-// (Final, UbergraphFunction)
+// Function BP_DAT_CableSupport.BP_DAT_CableSupport_C.BndEvt__BP_DAT_CableSupport_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_DAT_CableSupport_C::ExecuteUbergraph_BP_DAT_CableSupport(int32 EntryPoint)
+void ABP_DAT_CableSupport_C::BndEvt__BP_DAT_CableSupport_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_DAT_CableSupport_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_CableSupport_C", "ExecuteUbergraph_BP_DAT_CableSupport");
+	Params::BP_DAT_CableSupport_C_BndEvt__BP_DAT_CableSupport_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
-	Params::BP_DAT_CableSupport_C_ExecuteUbergraph_BP_DAT_CableSupport Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_DAT_CableSupport.BP_DAT_CableSupport_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_DAT_CableSupport_C::OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_CableSupport_C", "OnStateChanged");
-
-	Params::BP_DAT_CableSupport_C_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_DAT_CableSupport.BP_DAT_CableSupport_C.SetIntState
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Int                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_DAT_CableSupport_C::SetIntState(int32 Int)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_CableSupport_C", "SetIntState");
-
-	Params::BP_DAT_CableSupport_C_SetIntState Parms{};
-
-	Parms.Int = Int;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_DAT_CableSupport.BP_DAT_CableSupport_C.SetLocationInteractionEnabled
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_DAT_CableSupport_C::SetLocationInteractionEnabled()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_CableSupport_C", "SetLocationInteractionEnabled");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_DAT_CableSupport.BP_DAT_CableSupport_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_DAT_CableSupport_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_CableSupport_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABPL_LGT_VintageFacade_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_LGT_VintageFacade_01_C;
 
 SDK_NAMESPACE_END

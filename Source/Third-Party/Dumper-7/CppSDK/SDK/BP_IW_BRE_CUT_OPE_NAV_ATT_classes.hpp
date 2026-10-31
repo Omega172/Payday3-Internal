@@ -55,16 +55,16 @@ public:
 	TArray<struct FBPS_GlassHit_VFXData>          VFX;                                               // 0x0740(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void BndEvt__SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
-	void ExecuteUbergraph_BP_IW_BRE_CUT_OPE_NAV_ATT(int32 EntryPoint);
-	class USBZCuttableComponent* GetCuttableComponent();
-	class USBZCuttableSplineComponent* GetCuttableSplineComponent();
-	void GetMaterialBillboardComponent();
-	class UStaticMeshComponent* GetMeltingMesh();
-	class UNiagaraComponent* GetNiagaraComponent();
-	void OnStateChanged(ESBZGateState OldState, ESBZGateState NewState, bool bIsInitialStateChange);
-	void Open__FinishedFunc();
 	void Open__UpdateFunc();
+	void Open__FinishedFunc();
+	void OnStateChanged(ESBZGateState OldState, ESBZGateState NewState, bool bIsInitialStateChange);
+	class UNiagaraComponent* GetNiagaraComponent();
+	class UStaticMeshComponent* GetMeltingMesh();
+	void GetMaterialBillboardComponent();
+	class USBZCuttableSplineComponent* GetCuttableSplineComponent();
+	class USBZCuttableComponent* GetCuttableComponent();
+	void ExecuteUbergraph_BP_IW_BRE_CUT_OPE_NAV_ATT(int32 EntryPoint);
+	void BndEvt__SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
 
 	class USBZPropDamageComponent* GetPropDamageComponent() const;
 
@@ -82,5 +82,6 @@ public:
 		return GetDefaultObjImpl<ABP_IW_BRE_CUT_OPE_NAV_ATT_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_IW_BRE_CUT_OPE_NAV_ATT_C;
 
 SDK_NAMESPACE_END

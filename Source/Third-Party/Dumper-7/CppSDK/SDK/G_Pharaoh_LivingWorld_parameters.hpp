@@ -22,7 +22,7 @@ struct G_Pharaoh_LivingWorld_C_PushLiveAction final
 {
 public:
 	class AActor*                                 SpecificActionComponentOwner;                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                Owner_0;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Owner;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         MixedSeed;                                         // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GetRandomBoolWithWeightFromStreamMixed_ReturnValue; // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -30,6 +30,7 @@ public:
 	class USBZAIAction*                           CallFunc_PushAction_ReturnValue;                   // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FSBZLifeActionRequest                  K2Node_MakeStruct_SBZLifeActionRequest;            // 0x0028(0x0040)(NoDestructor, ContainsInstancedReference)
 };
+DUMPER7_ASSERTS_G_Pharaoh_LivingWorld_C_PushLiveAction;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -14,6 +14,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_LoadoutMannequinScreen.WBP_LoadoutMannequinScreen_C.setText
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_LoadoutMannequinScreen_C_setText final
+{
+public:
+	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_LoadoutMannequinScreen_C_setText;
+
 // Function WBP_LoadoutMannequinScreen.WBP_LoadoutMannequinScreen_C.ExecuteUbergraph_WBP_LoadoutMannequinScreen
 // 0x0018 (0x0018 - 0x0000)
 struct WBP_LoadoutMannequinScreen_C_ExecuteUbergraph_WBP_LoadoutMannequinScreen final
@@ -23,14 +32,7 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_CustomEvent_InText;                         // 0x0008(0x0010)()
 };
-
-// Function WBP_LoadoutMannequinScreen.WBP_LoadoutMannequinScreen_C.setText
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_LoadoutMannequinScreen_C_setText final
-{
-public:
-	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
+DUMPER7_ASSERTS_WBP_LoadoutMannequinScreen_C_ExecuteUbergraph_WBP_LoadoutMannequinScreen;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

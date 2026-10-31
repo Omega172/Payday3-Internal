@@ -35,10 +35,10 @@ public:
 	TMulticastInlineDelegate<void()>              WhiskeyBottlePoisoned;                             // 0x03A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void ExecuteUbergraph_BP_ReplicatedBinaryFalsePanelPanicRoom(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void Timeline_0__FinishedFunc();
 	void Timeline_0__UpdateFunc();
+	void Timeline_0__FinishedFunc();
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_ReplicatedBinaryFalsePanelPanicRoom(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -54,5 +54,6 @@ public:
 		return GetDefaultObjImpl<ABP_ReplicatedBinaryFalsePanelPanicRoom_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ReplicatedBinaryFalsePanelPanicRoom_C;
 
 SDK_NAMESPACE_END

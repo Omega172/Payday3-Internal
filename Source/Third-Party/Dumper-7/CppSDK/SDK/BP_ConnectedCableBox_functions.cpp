@@ -16,42 +16,204 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ConnectedCableBox.BP_ConnectedCableBox_C.BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_1_K2Node_ComponentBoundEvent_1_SBZOnInteractableStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// const class USBZBaseInteractableComponent*InteractableComponent                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ConnectedCableBox.BP_ConnectedCableBox_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_ConnectedCableBox_C::BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_1_K2Node_ComponentBoundEvent_1_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
+void ABP_ConnectedCableBox_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ConnectedCableBox_C", "BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_1_K2Node_ComponentBoundEvent_1_SBZOnInteractableStateChangedDelegate__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_ConnectedCableBox_C_BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_1_K2Node_ComponentBoundEvent_1_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
 
-	Parms.InteractableComponent = InteractableComponent;
-	Parms.bInNewState = bInNewState;
+// Function BP_ConnectedCableBox.BP_ConnectedCableBox_C.SwitchTimeline__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_ConnectedCableBox_C::SwitchTimeline__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SwitchTimeline__UpdateFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ConnectedCableBox.BP_ConnectedCableBox_C.SwitchTimeline__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_ConnectedCableBox_C::SwitchTimeline__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SwitchTimeline__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ConnectedCableBox.BP_ConnectedCableBox_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_ConnectedCableBox_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ConnectedCableBox.BP_ConnectedCableBox_C.focusUpdate
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    add                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   index                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ConnectedCableBox_C::focusUpdate(bool add, int32 index)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"focusUpdate", FnName));
+
+	Params::BP_ConnectedCableBox_C_focusUpdate Parms{};
+
+	Parms.add = add;
+	Parms.index = index;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_ConnectedCableBox.BP_ConnectedCableBox_C.BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_2_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// Function BP_ConnectedCableBox.BP_ConnectedCableBox_C.ExecuteUbergraph_BP_ConnectedCableBox
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ConnectedCableBox_C::ExecuteUbergraph_BP_ConnectedCableBox(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ConnectedCableBox_C", "ExecuteUbergraph_BP_ConnectedCableBox", FuncInfo);
+
+	Params::BP_ConnectedCableBox_C_ExecuteUbergraph_BP_ConnectedCableBox Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ConnectedCableBox.BP_ConnectedCableBox_C.DoorTimeline__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_ConnectedCableBox_C::DoorTimeline__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DoorTimeline__UpdateFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ConnectedCableBox.BP_ConnectedCableBox_C.DoorTimeline__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_ConnectedCableBox_C::DoorTimeline__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DoorTimeline__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ConnectedCableBox.BP_ConnectedCableBox_C.BP_UpdateModelNumber
+// (BlueprintCosmetic, Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FText&                      ModelNumberText_BP_UpdateModelNumber                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void ABP_ConnectedCableBox_C::BP_UpdateModelNumber(const class FText& ModelNumberText_BP_UpdateModelNumber)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_UpdateModelNumber", FnName));
+
+	Params::BP_ConnectedCableBox_C_BP_UpdateModelNumber Parms{};
+
+	Parms.ModelNumberText_BP_UpdateModelNumber = std::move(ModelNumberText_BP_UpdateModelNumber);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ConnectedCableBox.BP_ConnectedCableBox_C.BP_OpenDoor
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bDoCosmetics_BP_OpenDoor                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ConnectedCableBox_C::BP_OpenDoor(bool bDoCosmetics_BP_OpenDoor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OpenDoor", FnName));
+
+	Params::BP_ConnectedCableBox_C_BP_OpenDoor Parms{};
+
+	Parms.bDoCosmetics_BP_OpenDoor = bDoCosmetics_BP_OpenDoor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ConnectedCableBox.BP_ConnectedCableBox_C.BP_OnComplete
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bWasSuccess_BP_OnComplete                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ConnectedCableBox_C::BP_OnComplete(bool bWasSuccess_BP_OnComplete)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnComplete", FnName));
+
+	Params::BP_ConnectedCableBox_C_BP_OnComplete Parms{};
+
+	Parms.bWasSuccess_BP_OnComplete = bWasSuccess_BP_OnComplete;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ConnectedCableBox.BP_ConnectedCableBox_C.BP_FlipSwitch
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   Index_BP_FlipSwitch                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_BP_FlipSwitch                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bReset_BP_FlipSwitch                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ConnectedCableBox_C::BP_FlipSwitch(int32 Index_BP_FlipSwitch, bool bDoCosmetics_BP_FlipSwitch, bool bReset_BP_FlipSwitch)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_FlipSwitch", FnName));
+
+	Params::BP_ConnectedCableBox_C_BP_FlipSwitch Parms{};
+
+	Parms.Index_BP_FlipSwitch = Index_BP_FlipSwitch;
+	Parms.bDoCosmetics_BP_FlipSwitch = bDoCosmetics_BP_FlipSwitch;
+	Parms.bReset_BP_FlipSwitch = bReset_BP_FlipSwitch;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ConnectedCableBox.BP_ConnectedCableBox_C.BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_4_K2Node_ComponentBoundEvent_3_SBZOnInteractableStateChangedDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // const class USBZBaseInteractableComponent*InteractableComponent                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ConnectedCableBox_C::BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_2_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
+void ABP_ConnectedCableBox_C::BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_4_K2Node_ComponentBoundEvent_3_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_4_K2Node_ComponentBoundEvent_3_SBZOnInteractableStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ConnectedCableBox_C", "BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_2_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature");
-
-	Params::BP_ConnectedCableBox_C_BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_2_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
+	Params::BP_ConnectedCableBox_C_BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_4_K2Node_ComponentBoundEvent_3_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
 
 	Parms.InteractableComponent = InteractableComponent;
 	Parms.bInNewState = bInNewState;
@@ -68,10 +230,8 @@ void ABP_ConnectedCableBox_C::BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable
 
 void ABP_ConnectedCableBox_C::BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_3_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ConnectedCableBox_C", "BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_3_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_3_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature", FnName));
 
 	Params::BP_ConnectedCableBox_C_BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_3_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
 
@@ -82,20 +242,18 @@ void ABP_ConnectedCableBox_C::BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable
 }
 
 
-// Function BP_ConnectedCableBox.BP_ConnectedCableBox_C.BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_4_K2Node_ComponentBoundEvent_3_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// Function BP_ConnectedCableBox.BP_ConnectedCableBox_C.BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_2_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // const class USBZBaseInteractableComponent*InteractableComponent                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ConnectedCableBox_C::BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_4_K2Node_ComponentBoundEvent_3_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
+void ABP_ConnectedCableBox_C::BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_2_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_2_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ConnectedCableBox_C", "BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_4_K2Node_ComponentBoundEvent_3_SBZOnInteractableStateChangedDelegate__DelegateSignature");
-
-	Params::BP_ConnectedCableBox_C_BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_4_K2Node_ComponentBoundEvent_3_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
+	Params::BP_ConnectedCableBox_C_BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_2_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
 
 	Parms.InteractableComponent = InteractableComponent;
 	Parms.bInNewState = bInNewState;
@@ -104,213 +262,23 @@ void ABP_ConnectedCableBox_C::BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable
 }
 
 
-// Function BP_ConnectedCableBox.BP_ConnectedCableBox_C.BP_FlipSwitch
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bReset                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ConnectedCableBox_C::BP_FlipSwitch(int32 Index_0, bool bDoCosmetics, bool bReset)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ConnectedCableBox_C", "BP_FlipSwitch");
-
-	Params::BP_ConnectedCableBox_C_BP_FlipSwitch Parms{};
-
-	Parms.Index_0 = Index_0;
-	Parms.bDoCosmetics = bDoCosmetics;
-	Parms.bReset = bReset;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ConnectedCableBox.BP_ConnectedCableBox_C.BP_OnComplete
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bWasSuccess                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ConnectedCableBox_C::BP_OnComplete(bool bWasSuccess)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ConnectedCableBox_C", "BP_OnComplete");
-
-	Params::BP_ConnectedCableBox_C_BP_OnComplete Parms{};
-
-	Parms.bWasSuccess = bWasSuccess;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ConnectedCableBox.BP_ConnectedCableBox_C.BP_OpenDoor
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ConnectedCableBox_C::BP_OpenDoor(bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ConnectedCableBox_C", "BP_OpenDoor");
-
-	Params::BP_ConnectedCableBox_C_BP_OpenDoor Parms{};
-
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ConnectedCableBox.BP_ConnectedCableBox_C.BP_UpdateModelNumber
-// (BlueprintCosmetic, Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FText&                      ModelNumberText                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void ABP_ConnectedCableBox_C::BP_UpdateModelNumber(const class FText& ModelNumberText)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ConnectedCableBox_C", "BP_UpdateModelNumber");
-
-	Params::BP_ConnectedCableBox_C_BP_UpdateModelNumber Parms{};
-
-	Parms.ModelNumberText = std::move(ModelNumberText);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ConnectedCableBox.BP_ConnectedCableBox_C.DoorTimeline__FinishedFunc
+// Function BP_ConnectedCableBox.BP_ConnectedCableBox_C.BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_1_K2Node_ComponentBoundEvent_1_SBZOnInteractableStateChangedDelegate__DelegateSignature
 // (BlueprintEvent)
-
-void ABP_ConnectedCableBox_C::DoorTimeline__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ConnectedCableBox_C", "DoorTimeline__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ConnectedCableBox.BP_ConnectedCableBox_C.DoorTimeline__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_ConnectedCableBox_C::DoorTimeline__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ConnectedCableBox_C", "DoorTimeline__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ConnectedCableBox.BP_ConnectedCableBox_C.ExecuteUbergraph_BP_ConnectedCableBox
-// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZBaseInteractableComponent*InteractableComponent                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ConnectedCableBox_C::ExecuteUbergraph_BP_ConnectedCableBox(int32 EntryPoint)
+void ABP_ConnectedCableBox_C::BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_1_K2Node_ComponentBoundEvent_1_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_1_K2Node_ComponentBoundEvent_1_SBZOnInteractableStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ConnectedCableBox_C", "ExecuteUbergraph_BP_ConnectedCableBox");
+	Params::BP_ConnectedCableBox_C_BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_1_K2Node_ComponentBoundEvent_1_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
 
-	Params::BP_ConnectedCableBox_C_ExecuteUbergraph_BP_ConnectedCableBox Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.InteractableComponent = InteractableComponent;
+	Parms.bInNewState = bInNewState;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ConnectedCableBox.BP_ConnectedCableBox_C.focusUpdate
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    add                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   index                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ConnectedCableBox_C::focusUpdate(bool add, int32 index)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ConnectedCableBox_C", "focusUpdate");
-
-	Params::BP_ConnectedCableBox_C_focusUpdate Parms{};
-
-	Parms.add = add;
-	Parms.index = index;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ConnectedCableBox.BP_ConnectedCableBox_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_ConnectedCableBox_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ConnectedCableBox_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ConnectedCableBox.BP_ConnectedCableBox_C.SwitchTimeline__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_ConnectedCableBox_C::SwitchTimeline__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ConnectedCableBox_C", "SwitchTimeline__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ConnectedCableBox.BP_ConnectedCableBox_C.SwitchTimeline__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_ConnectedCableBox_C::SwitchTimeline__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ConnectedCableBox_C", "SwitchTimeline__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ConnectedCableBox.BP_ConnectedCableBox_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_ConnectedCableBox_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ConnectedCableBox_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

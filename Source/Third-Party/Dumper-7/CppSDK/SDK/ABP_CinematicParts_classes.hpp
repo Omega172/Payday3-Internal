@@ -10,15 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "AnimGraphRuntime_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "AnimGraphRuntime_structs.hpp"
 
 
 SDK_NAMESPACE_START
 
 // AnimBlueprintGeneratedClass ABP_CinematicParts.ABP_CinematicParts_C
-// 0x0CB0 (0x1080 - 0x03D0)
+// 0x0DB0 (0x1180 - 0x03D0)
 class UABP_CinematicParts_C final : public UAnimInstance
 {
 public:
@@ -28,12 +28,12 @@ public:
 	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x03E0(0x0030)()
 	struct FAnimNode_CopyPoseFromMesh             AnimGraphNode_CopyPoseFromMesh;                    // 0x0410(0x0168)(ContainsInstancedReference)
 	uint8                                         Pad_578[0x8];                                      // 0x0578(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FAnimNode_RigidBody                    AnimGraphNode_RigidBody;                           // 0x0580(0x0AA0)()
-	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace;               // 0x1020(0x0030)()
-	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace;               // 0x1050(0x0030)()
+	struct FAnimNode_RigidBody                    AnimGraphNode_RigidBody;                           // 0x0580(0x0BA0)()
+	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace;               // 0x1120(0x0030)()
+	struct FAnimNode_ConvertComponentToLocalSpace AnimGraphNode_ComponentToLocalSpace;               // 0x1150(0x0030)()
 
 public:
-	void AnimGraph(struct FPoseLink* AnimGraph_0);
+	void AnimGraph(struct FPoseLink* AnimGraph);
 
 public:
 	static class UClass* StaticClass()
@@ -49,5 +49,6 @@ public:
 		return GetDefaultObjImpl<UABP_CinematicParts_C>();
 	}
 };
+DUMPER7_ASSERTS_UABP_CinematicParts_C;
 
 SDK_NAMESPACE_END

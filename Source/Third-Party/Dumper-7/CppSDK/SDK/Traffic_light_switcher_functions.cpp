@@ -16,55 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function Traffic_light_switcher.Traffic_light_switcher_C.ExecuteUbergraph_Traffic_light_switcher
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function Traffic_light_switcher.Traffic_light_switcher_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ATraffic_light_switcher_C::ExecuteUbergraph_Traffic_light_switcher(int32 EntryPoint)
+void ATraffic_light_switcher_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Traffic_light_switcher_C", "ExecuteUbergraph_Traffic_light_switcher");
-
-	Params::Traffic_light_switcher_C_ExecuteUbergraph_Traffic_light_switcher Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Traffic_light_switcher.Traffic_light_switcher_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ATraffic_light_switcher_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Traffic_light_switcher_C", "ReceiveTick");
-
-	Params::Traffic_light_switcher_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Traffic_light_switcher.Traffic_light_switcher_C.refresh_traffic_light_status
-// (BlueprintCallable, BlueprintEvent)
-
-void ATraffic_light_switcher_C::refresh_traffic_light_status()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Traffic_light_switcher_C", "refresh_traffic_light_status");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -78,10 +36,8 @@ void ATraffic_light_switcher_C::refresh_traffic_light_status()
 
 void ATraffic_light_switcher_C::update_pool(TArray<class AActor*>& Pool, Etraffic_light_status status)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Traffic_light_switcher_C", "update_pool");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"update_pool", FnName));
 
 	Params::Traffic_light_switcher_C_update_pool Parms{};
 
@@ -94,17 +50,51 @@ void ATraffic_light_switcher_C::update_pool(TArray<class AActor*>& Pool, Etraffi
 }
 
 
-// Function Traffic_light_switcher.Traffic_light_switcher_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function Traffic_light_switcher.Traffic_light_switcher_C.refresh_traffic_light_status
+// (BlueprintCallable, BlueprintEvent)
 
-void ATraffic_light_switcher_C::UserConstructionScript()
+void ATraffic_light_switcher_C::refresh_traffic_light_status()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Traffic_light_switcher_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"refresh_traffic_light_status", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Traffic_light_switcher.Traffic_light_switcher_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds_ReceiveTick                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ATraffic_light_switcher_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveTick", FnName));
+
+	Params::Traffic_light_switcher_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds_ReceiveTick = DeltaSeconds_ReceiveTick;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Traffic_light_switcher.Traffic_light_switcher_C.ExecuteUbergraph_Traffic_light_switcher
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ATraffic_light_switcher_C::ExecuteUbergraph_Traffic_light_switcher(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "Traffic_light_switcher_C", "ExecuteUbergraph_Traffic_light_switcher", FuncInfo);
+
+	Params::Traffic_light_switcher_C_ExecuteUbergraph_Traffic_light_switcher Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

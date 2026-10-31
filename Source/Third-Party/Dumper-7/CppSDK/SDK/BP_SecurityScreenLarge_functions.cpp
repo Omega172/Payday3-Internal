@@ -16,6 +16,18 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_SecurityScreenLarge.BP_SecurityScreenLarge_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_SecurityScreenLarge_C::UserConstructionScript()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_SecurityScreenLarge.BP_SecurityScreenLarge_C.setInteraction
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -23,30 +35,14 @@ SDK_NAMESPACE_START
 
 void ABP_SecurityScreenLarge_C::setInteraction(bool bEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SecurityScreenLarge_C", "setInteraction");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setInteraction", FnName));
 
 	Params::BP_SecurityScreenLarge_C_setInteraction Parms{};
 
 	Parms.bEnabled = bEnabled;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SecurityScreenLarge.BP_SecurityScreenLarge_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_SecurityScreenLarge_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SecurityScreenLarge_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

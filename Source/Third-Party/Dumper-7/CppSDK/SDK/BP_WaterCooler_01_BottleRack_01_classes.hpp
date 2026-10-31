@@ -43,5 +43,6 @@ public:
 		return GetDefaultObjImpl<ABP_WaterCooler_01_BottleRack_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_WaterCooler_01_BottleRack_01_C;
 
 SDK_NAMESPACE_END

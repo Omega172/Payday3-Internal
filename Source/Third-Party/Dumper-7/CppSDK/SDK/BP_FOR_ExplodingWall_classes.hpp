@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "BP_BaseExplodingWall_classes.hpp"
 #include "Engine_structs.hpp"
 #include "AkAudio_structs.hpp"
-#include "BP_BaseExplodingWall_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -37,10 +37,10 @@ public:
 	TArray<class UStaticMeshComponent*>           ItemsToMove;                                       // 0x0620(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void BP_OnExplosion(bool bDoCosmetics);
-	void ExecuteUbergraph_BP_FOR_ExplodingWall(int32 EntryPoint);
+	void spawnExplosionVFX(bool doCosmetics_spawnExplosionVFX);
 	void ReceiveBeginPlay();
-	void spawnExplosionVFX(bool doCosmetics);
+	void ExecuteUbergraph_BP_FOR_ExplodingWall(int32 EntryPoint);
+	void BP_OnExplosion(bool bDoCosmetics_BP_OnExplosion);
 
 public:
 	static class UClass* StaticClass()
@@ -56,5 +56,6 @@ public:
 		return GetDefaultObjImpl<ABP_FOR_ExplodingWall_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_FOR_ExplodingWall_C;
 
 SDK_NAMESPACE_END

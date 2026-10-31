@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<USedanFrontWheel_C>();
 	}
 };
+DUMPER7_ASSERTS_USedanFrontWheel_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Binder_01_Cluster_E_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Binder_01_Cluster_E_C;
 
 SDK_NAMESPACE_END

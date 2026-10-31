@@ -18,19 +18,57 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_ElevatorDoor.BP_ElevatorDoor_C.DoorPositionInterp
-// 0x0088 (0x0088 - 0x0000)
-struct BP_ElevatorDoor_C_DoorPositionInterp final
+// Function BP_ElevatorDoor.BP_ElevatorDoor_C.SetRelativePositionInterp
+// 0x0160 (0x0160 - 0x0000)
+struct BP_ElevatorDoor_C_SetRelativePositionInterp final
 {
 public:
-	struct FVector                                Original;                                          // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Offset;                                            // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        Alpha;                                             // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                ReturnValue;                                       // 0x0038(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0050(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_VLerp_ReturnValue;                        // 0x0068(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_VLerp_Alpha_ImplicitCast;                 // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        Component;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Original;                                          // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Offset;                                            // 0x0020(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Alpha;                                             // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_DoorPositionInterp_ReturnValue;           // 0x0040(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0058(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
+DUMPER7_ASSERTS_BP_ElevatorDoor_C_SetRelativePositionInterp;
+
+// Function BP_ElevatorDoor.BP_ElevatorDoor_C.ReactToCloset
+// 0x0002 (0x0002 - 0x0000)
+struct BP_ElevatorDoor_C_ReactToCloset final
+{
+public:
+	bool                                          bActorsInCloset;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ElevatorDoor_C_ReactToCloset;
+
+// Function BP_ElevatorDoor.BP_ElevatorDoor_C.OpenDoors_Internal
+// 0x0001 (0x0001 - 0x0000)
+struct BP_ElevatorDoor_C_OpenDoors_Internal final
+{
+public:
+	bool                                          bOpen;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ElevatorDoor_C_OpenDoors_Internal;
+
+// Function BP_ElevatorDoor.BP_ElevatorDoor_C.Open Doors No Cosmetics
+// 0x0001 (0x0001 - 0x0000)
+struct BP_ElevatorDoor_C_Open_Doors_No_Cosmetics final
+{
+public:
+	bool                                          bOpen;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ElevatorDoor_C_Open_Doors_No_Cosmetics;
+
+// Function BP_ElevatorDoor.BP_ElevatorDoor_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_ElevatorDoor_C_OnStateChanged final
+{
+public:
+	bool                                          bStateToChangeTo_OnStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ElevatorDoor_C_OnStateChanged;
 
 // Function BP_ElevatorDoor.BP_ElevatorDoor_C.ExecuteUbergraph_BP_ElevatorDoor
 // 0x00A8 (0x00A8 - 0x0000)
@@ -74,53 +112,22 @@ public:
 	double                                        CallFunc_SetRelativePositionInterp_Alpha_ImplicitCast; // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_SetRelativePositionInterp_Alpha_ImplicitCast_1; // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ElevatorDoor_C_ExecuteUbergraph_BP_ElevatorDoor;
 
-// Function BP_ElevatorDoor.BP_ElevatorDoor_C.OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_ElevatorDoor_C_OnStateChanged final
+// Function BP_ElevatorDoor.BP_ElevatorDoor_C.DoorPositionInterp
+// 0x0088 (0x0088 - 0x0000)
+struct BP_ElevatorDoor_C_DoorPositionInterp final
 {
 public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Original;                                          // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                Offset;                                            // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Alpha;                                             // 0x0030(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                ReturnValue;                                       // 0x0038(0x0018)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0050(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_VLerp_ReturnValue;                        // 0x0068(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_VLerp_Alpha_ImplicitCast;                 // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_ElevatorDoor.BP_ElevatorDoor_C.Open Doors No Cosmetics
-// 0x0001 (0x0001 - 0x0000)
-struct BP_ElevatorDoor_C_Open_Doors_No_Cosmetics final
-{
-public:
-	bool                                          bOpen;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_ElevatorDoor.BP_ElevatorDoor_C.OpenDoors_Internal
-// 0x0001 (0x0001 - 0x0000)
-struct BP_ElevatorDoor_C_OpenDoors_Internal final
-{
-public:
-	bool                                          bOpen;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_ElevatorDoor.BP_ElevatorDoor_C.ReactToCloset
-// 0x0002 (0x0002 - 0x0000)
-struct BP_ElevatorDoor_C_ReactToCloset final
-{
-public:
-	bool                                          bActorsInCloset;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_ElevatorDoor.BP_ElevatorDoor_C.SetRelativePositionInterp
-// 0x0160 (0x0160 - 0x0000)
-struct BP_ElevatorDoor_C_SetRelativePositionInterp final
-{
-public:
-	class USceneComponent*                        Component;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Original;                                          // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                Offset;                                            // 0x0020(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        Alpha;                                             // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_DoorPositionInterp_ReturnValue;           // 0x0040(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0058(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
+DUMPER7_ASSERTS_BP_ElevatorDoor_C_DoorPositionInterp;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

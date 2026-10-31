@@ -19,1240 +19,73 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__DefendVolume_SBZFilteredTriggerVolume_1_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.OnPreplanningAssetsTagsApplied
 // 0x0020 (0x0020 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__DefendVolume_SBZFilteredTriggerVolume_1_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature final
+struct G_JewelryStore_Scripting_C_OnPreplanningAssetsTagsApplied final
 {
 public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  PreplanningTagContainer_OnPreplanningAssetsTagsApplied; // 0x0000(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_OnPreplanningAssetsTagsApplied;
 
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__DefendVolume_SBZFilteredTriggerVolume_1_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__DefendVolume_SBZFilteredTriggerVolume_1_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_EyeScanner_2_K2Node_ActorBoundEvent_59_SBZOnEyeScannerStateChanged__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_EyeScanner_2_K2Node_ActorBoundEvent_59_SBZOnEyeScannerStateChanged__DelegateSignature final
-{
-public:
-	ESBZEyeScannerState                           Oldstate;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZEyeScannerState                           NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox15_25_K2Node_ActorBoundEvent_144_SBZLootedSignature__DelegateSignature
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.OnPlayerPickedUpBag
 // 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox15_25_K2Node_ActorBoundEvent_144_SBZLootedSignature__DelegateSignature final
+struct G_JewelryStore_Scripting_C_OnPlayerPickedUpBag final
 {
 public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          BagHandle_OnPlayerPickedUpBag;                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_OnPlayerPickedUpBag;
 
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox16_66_K2Node_ActorBoundEvent_146_SBZLootedSignature__DelegateSignature
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.OnPlayerInstantLootTaken
 // 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox16_66_K2Node_ActorBoundEvent_146_SBZLootedSignature__DelegateSignature final
+struct G_JewelryStore_Scripting_C_OnPlayerInstantLootTaken final
 {
 public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZInstantLoot*                        InstantLoot_OnPlayerInstantLootTaken;              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer_OnPlayerInstantLootTaken;            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_OnPlayerInstantLootTaken;
 
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox17_31_K2Node_ActorBoundEvent_145_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox17_31_K2Node_ActorBoundEvent_145_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox18_68_K2Node_ActorBoundEvent_147_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox18_68_K2Node_ActorBoundEvent_147_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox20_6_K2Node_ActorBoundEvent_143_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox20_6_K2Node_ActorBoundEvent_143_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox22_10_K2Node_ActorBoundEvent_141_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox22_10_K2Node_ActorBoundEvent_141_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox23_14_K2Node_ActorBoundEvent_140_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox23_14_K2Node_ActorBoundEvent_140_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox24_K2Node_ActorBoundEvent_139_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox24_K2Node_ActorBoundEvent_139_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox25_K2Node_ActorBoundEvent_138_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox25_K2Node_ActorBoundEvent_138_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox2_64_K2Node_ActorBoundEvent_126_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox2_64_K2Node_ActorBoundEvent_126_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox30_37_K2Node_ActorBoundEvent_157_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox30_37_K2Node_ActorBoundEvent_157_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox31_39_K2Node_ActorBoundEvent_156_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox31_39_K2Node_ActorBoundEvent_156_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox32_41_K2Node_ActorBoundEvent_161_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox32_41_K2Node_ActorBoundEvent_161_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox33_46_K2Node_ActorBoundEvent_148_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox33_46_K2Node_ActorBoundEvent_148_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox34_K2Node_ActorBoundEvent_137_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox34_K2Node_ActorBoundEvent_137_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox44_K2Node_ActorBoundEvent_158_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox44_K2Node_ActorBoundEvent_158_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox45_K2Node_ActorBoundEvent_163_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox45_K2Node_ActorBoundEvent_163_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox46_K2Node_ActorBoundEvent_149_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox46_K2Node_ActorBoundEvent_149_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox47_K2Node_ActorBoundEvent_150_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox47_K2Node_ActorBoundEvent_150_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox48_K2Node_ActorBoundEvent_151_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox48_K2Node_ActorBoundEvent_151_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox49_K2Node_ActorBoundEvent_152_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox49_K2Node_ActorBoundEvent_152_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox50_K2Node_ActorBoundEvent_154_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox50_K2Node_ActorBoundEvent_154_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox51_K2Node_ActorBoundEvent_155_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox51_K2Node_ActorBoundEvent_155_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox52_54_K2Node_ActorBoundEvent_153_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox52_54_K2Node_ActorBoundEvent_153_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox53_K2Node_ActorBoundEvent_136_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox53_K2Node_ActorBoundEvent_136_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox54_K2Node_ActorBoundEvent_135_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox54_K2Node_ActorBoundEvent_135_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox55_K2Node_ActorBoundEvent_133_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox55_K2Node_ActorBoundEvent_133_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox56_K2Node_ActorBoundEvent_134_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox56_K2Node_ActorBoundEvent_134_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox57_K2Node_ActorBoundEvent_132_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox57_K2Node_ActorBoundEvent_132_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox58_K2Node_ActorBoundEvent_127_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox58_K2Node_ActorBoundEvent_127_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox_2_K2Node_ActorBoundEvent_142_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox_2_K2Node_ActorBoundEvent_142_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust16_30_K2Node_ActorBoundEvent_107_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust16_30_K2Node_ActorBoundEvent_107_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust19_7_K2Node_ActorBoundEvent_104_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust19_7_K2Node_ActorBoundEvent_104_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust23_15_K2Node_ActorBoundEvent_101_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust23_15_K2Node_ActorBoundEvent_101_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust26_11_K2Node_ActorBoundEvent_105_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust26_11_K2Node_ActorBoundEvent_105_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust27_17_K2Node_ActorBoundEvent_100_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust27_17_K2Node_ActorBoundEvent_100_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust29_K2Node_ActorBoundEvent_92_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust29_K2Node_ActorBoundEvent_92_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust2_K2Node_ActorBoundEvent_103_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust2_K2Node_ActorBoundEvent_103_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust30_20_K2Node_ActorBoundEvent_89_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust30_20_K2Node_ActorBoundEvent_89_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust31_32_K2Node_ActorBoundEvent_109_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust31_32_K2Node_ActorBoundEvent_109_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust32_K2Node_ActorBoundEvent_47_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust32_K2Node_ActorBoundEvent_47_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust33_K2Node_ActorBoundEvent_40_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust33_K2Node_ActorBoundEvent_40_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust34_34_K2Node_ActorBoundEvent_110_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust34_34_K2Node_ActorBoundEvent_110_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust49_42_K2Node_ActorBoundEvent_4_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust49_42_K2Node_ActorBoundEvent_4_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust50_44_K2Node_ActorBoundEvent_125_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust50_44_K2Node_ActorBoundEvent_125_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust51_46_K2Node_ActorBoundEvent_122_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust51_46_K2Node_ActorBoundEvent_122_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust52_38_K2Node_ActorBoundEvent_111_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust52_38_K2Node_ActorBoundEvent_111_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust53_39_K2Node_ActorBoundEvent_112_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust53_39_K2Node_ActorBoundEvent_112_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust54_40_K2Node_ActorBoundEvent_113_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust54_40_K2Node_ActorBoundEvent_113_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust55_K2Node_ActorBoundEvent_121_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust55_K2Node_ActorBoundEvent_121_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust56_K2Node_ActorBoundEvent_120_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust56_K2Node_ActorBoundEvent_120_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust57_K2Node_ActorBoundEvent_119_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust57_K2Node_ActorBoundEvent_119_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust58_K2Node_ActorBoundEvent_118_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust58_K2Node_ActorBoundEvent_118_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust59_K2Node_ActorBoundEvent_117_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust59_K2Node_ActorBoundEvent_117_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust60_K2Node_ActorBoundEvent_123_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust60_K2Node_ActorBoundEvent_123_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust61_K2Node_ActorBoundEvent_124_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust61_K2Node_ActorBoundEvent_124_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust62_K2Node_ActorBoundEvent_116_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust62_K2Node_ActorBoundEvent_116_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust63_K2Node_ActorBoundEvent_115_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust63_K2Node_ActorBoundEvent_115_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust64_K2Node_ActorBoundEvent_114_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust64_K2Node_ActorBoundEvent_114_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust_2_K2Node_ActorBoundEvent_102_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust_2_K2Node_ActorBoundEvent_102_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_Int_Door_01_SmallVault_01_2_K2Node_ActorBoundEvent_35_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_Int_Door_01_SmallVault_01_2_K2Node_ActorBoundEvent_35_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_14_K2Node_ActorBoundEvent_160_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_14_K2Node_ActorBoundEvent_160_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_BasementRight_K2Node_ActorBoundEvent_43_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_BasementRight_K2Node_ActorBoundEvent_43_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InteractableStaticMeshDoor_JewelrySmith_K2Node_ActorBoundEvent_38_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InteractableStaticMeshDoor_JewelrySmith_K2Node_ActorBoundEvent_38_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InteractableStaticMeshDoor_VIPShowroom_K2Node_ActorBoundEvent_128_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InteractableStaticMeshDoor_VIPShowroom_K2Node_ActorBoundEvent_128_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_JewelryMachine_2_K2Node_ActorBoundEvent_44_SBZOnLootProcessorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_JewelryMachine_2_K2Node_ActorBoundEvent_44_SBZOnLootProcessorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZLootProcessorState                        NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_KeypadEmployeeLeft_K2Node_ActorBoundEvent_27_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_KeypadEmployeeLeft_K2Node_ActorBoundEvent_27_SBZModuleActorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_KeypadEmployeeRight_K2Node_ActorBoundEvent_97_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_KeypadEmployeeRight_K2Node_ActorBoundEvent_97_SBZModuleActorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_KeypadGraffitiLeft_K2Node_ActorBoundEvent_46_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_KeypadGraffitiLeft_K2Node_ActorBoundEvent_46_SBZModuleActorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_KeypadGraffitiRight_K2Node_ActorBoundEvent_96_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_KeypadGraffitiRight_K2Node_ActorBoundEvent_96_SBZModuleActorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_KeypadWifiLeft_K2Node_ActorBoundEvent_75_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_KeypadWifiLeft_K2Node_ActorBoundEvent_75_SBZModuleActorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_KeypadWifiRight_K2Node_ActorBoundEvent_95_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_KeypadWifiRight_K2Node_ActorBoundEvent_95_SBZModuleActorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_LA_Manager_Phone_K2Node_ActorBoundEvent_47_ActionStarted__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LA_Manager_Phone_K2Node_ActorBoundEvent_47_ActionStarted__DelegateSignature final
-{
-public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Idle_0_K2Node_ActorBoundEvent_115_ActionCompleted__DelegateSignature
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.OnHumanShieldManager
 // 0x0018 (0x0018 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Idle_0_K2Node_ActorBoundEvent_115_ActionCompleted__DelegateSignature final
+struct G_JewelryStore_Scripting_C_OnHumanShieldManager final
 {
 public:
-	ESBZLifeActionStopReason                      Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZCharacter*                          Character;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class ASBZAICharacter*                        Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCharacter*                          Instigator;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          bHumanShield;                                      // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_OnHumanShieldManager;
 
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Idle_0_K2Node_ActorBoundEvent_3_ActionStarted__DelegateSignature
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.OnHogTiedVIPLoud
 // 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Idle_0_K2Node_ActorBoundEvent_3_ActionStarted__DelegateSignature final
+struct G_JewelryStore_Scripting_C_OnHogTiedVIPLoud final
 {
 public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class ASBZAICharacter*                        Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          bHogTied;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_OnHogTiedVIPLoud;
 
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Manager_Phonecall2_K2Node_ActorBoundEvent_71_ActionStarted__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Manager_Phonecall2_K2Node_ActorBoundEvent_71_ActionStarted__DelegateSignature final
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.OnEnabledAsObjectiveDelegate_Manager1
+// 0x0008 (0x0008 - 0x0000)
+struct G_JewelryStore_Scripting_C_OnEnabledAsObjectiveDelegate_Manager1 final
 {
 public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class ASBZCharacter*                          FoundBy;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_OnEnabledAsObjectiveDelegate_Manager1;
 
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Manager_Phonecall2_K2Node_ActorBoundEvent_80_ActionCompleted__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Manager_Phonecall2_K2Node_ActorBoundEvent_80_ActionCompleted__DelegateSignature final
-{
-public:
-	ESBZLifeActionStopReason                      Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZCharacter*                          Character;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Manager_Phonecall3_K2Node_ActorBoundEvent_73_ActionStarted__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Manager_Phonecall3_K2Node_ActorBoundEvent_73_ActionStarted__DelegateSignature final
-{
-public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Manager_Phonecall3_K2Node_ActorBoundEvent_81_ActionCompleted__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Manager_Phonecall3_K2Node_ActorBoundEvent_81_ActionCompleted__DelegateSignature final
-{
-public:
-	ESBZLifeActionStopReason                      Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZCharacter*                          Character;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Manager_Phonecall4_K2Node_ActorBoundEvent_24_ActionStarted__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Manager_Phonecall4_K2Node_ActorBoundEvent_24_ActionStarted__DelegateSignature final
-{
-public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Manager_Phonecall4_K2Node_ActorBoundEvent_28_ActionCompleted__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Manager_Phonecall4_K2Node_ActorBoundEvent_28_ActionCompleted__DelegateSignature final
-{
-public:
-	ESBZLifeActionStopReason                      Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZCharacter*                          Character;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_LifeActionTriggerVolume_HumanShield_ButtonPress_K2Node_ActorBoundEvent_70_SBZLifeActionStopEventDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LifeActionTriggerVolume_HumanShield_ButtonPress_K2Node_ActorBoundEvent_70_SBZLifeActionStopEventDelegate__DelegateSignature final
-{
-public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	ESBZLifeActionStopReason                      Result;                                            // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_LifeActionTriggerVolume_HumanShield_ButtonPress_K2Node_ActorBoundEvent_88_SBZLifeActionEventDelegate__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LifeActionTriggerVolume_HumanShield_ButtonPress_K2Node_ActorBoundEvent_88_SBZLifeActionEventDelegate__DelegateSignature final
-{
-public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_LifeActionTriggerVolume_HumanShield_ButtonPress_K2Node_ActorBoundEvent_93_SBZLifeActionStopEventDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LifeActionTriggerVolume_HumanShield_ButtonPress_K2Node_ActorBoundEvent_93_SBZLifeActionStopEventDelegate__DelegateSignature final
-{
-public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	ESBZLifeActionStopReason                      Result;                                            // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_Mkp_Int_Door_01_Double_VIPShowroom_K2Node_ActorBoundEvent_111_SBZGateStateChangedDelegate__DelegateSignature
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.HeistStateChanged
 // 0x0002 (0x0002 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_Mkp_Int_Door_01_Double_VIPShowroom_K2Node_ActorBoundEvent_111_SBZGateStateChangedDelegate__DelegateSignature final
+struct G_JewelryStore_Scripting_C_HeistStateChanged final
 {
 public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                OldHeistState_HeistStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CurrentHeistState_HeistStateChanged;               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_push_keep_Animated_Button1_2_K2Node_ActorBoundEvent_50_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_push_keep_Animated_Button1_2_K2Node_ActorBoundEvent_50_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_RedKeycardReader2_K2Node_ActorBoundEvent_41_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_RedKeycardReader2_K2Node_ActorBoundEvent_41_SBZModuleActorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZBagTriggerVolume_BagSecureRoof_K2Node_ActorBoundEvent_107_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZBagTriggerVolume_BagSecureRoof_K2Node_ActorBoundEvent_107_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZBagTriggerVolume_BagSecureStealth_1_K2Node_ActorBoundEvent_58_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZBagTriggerVolume_BagSecureStealth_1_K2Node_ActorBoundEvent_58_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZBagTriggerVolume_BagSecureStreet_K2Node_ActorBoundEvent_83_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZBagTriggerVolume_BagSecureStreet_K2Node_ActorBoundEvent_83_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZBagTriggerVolume_BagSecureWaterfront_K2Node_ActorBoundEvent_79_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZBagTriggerVolume_BagSecureWaterfront_K2Node_ActorBoundEvent_79_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZFilteredTriggerVolume_DefendCrossroad_K2Node_ActorBoundEvent_118_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZFilteredTriggerVolume_DefendCrossroad_K2Node_ActorBoundEvent_118_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZFilteredTriggerVolume_DefendCrossroad_K2Node_ActorBoundEvent_119_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZFilteredTriggerVolume_DefendCrossroad_K2Node_ActorBoundEvent_119_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_Guard1_K2Node_ActorBoundEvent_15_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_Guard1_K2Node_ActorBoundEvent_15_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_Guard3_K2Node_ActorBoundEvent_99_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_Guard3_K2Node_ActorBoundEvent_99_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_GuardLead_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_GuardLead_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_GuardRightAlley_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_GuardRightAlley_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_Manager1_K2Node_ActorBoundEvent_79_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_Manager1_K2Node_ActorBoundEvent_79_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_Manager3_K2Node_ActorBoundEvent_91_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_Manager3_K2Node_ActorBoundEvent_91_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_ManagerPublic2_2_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_ManagerPublic2_2_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_ManagerPublic2_2_K2Node_ActorBoundEvent_89_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_ManagerPublic2_2_K2Node_ActorBoundEvent_89_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  DeadPawn;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                Spawner;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_ManagerPublic3_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_ManagerPublic3_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_ManagerPublic3_K2Node_ActorBoundEvent_92_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_ManagerPublic3_K2Node_ActorBoundEvent_92_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  DeadPawn;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                Spawner;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefinedLifeAction_Manager_K2Node_ActorBoundEvent_241_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefinedLifeAction_Manager_K2Node_ActorBoundEvent_241_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  DeadPawn;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                Spawner;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerEnteredSideAlley1_K2Node_ActorBoundEvent_60_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerEnteredSideAlley1_K2Node_ActorBoundEvent_60_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerEnteredSideAlley2_K2Node_ActorBoundEvent_61_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerEnteredSideAlley2_K2Node_ActorBoundEvent_61_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerEnteredSideAlley3_K2Node_ActorBoundEvent_63_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerEnteredSideAlley3_K2Node_ActorBoundEvent_63_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerInsideBasement_K2Node_ActorBoundEvent_65_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerInsideBasement_K2Node_ActorBoundEvent_65_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerInsideVault_K2Node_ActorBoundEvent_57_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerInsideVault_K2Node_ActorBoundEvent_57_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerInsideVIPRoom1_K2Node_ActorBoundEvent_33_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerInsideVIPRoom1_K2Node_ActorBoundEvent_33_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearProcessedBag_K2Node_ActorBoundEvent_113_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearProcessedBag_K2Node_ActorBoundEvent_113_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_18_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_18_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_DevPhone_K2Node_ActorBoundEvent_40_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_DevPhone_K2Node_ActorBoundEvent_40_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_PlayerByVaultWithKeycard_K2Node_ActorBoundEvent_16_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_PlayerByVaultWithKeycard_K2Node_ActorBoundEvent_16_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_PlayerNearVanSecure_K2Node_ActorBoundEvent_17_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_PlayerNearVanSecure_K2Node_ActorBoundEvent_17_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_Teleport2_K2Node_ActorBoundEvent_86_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_Teleport2_K2Node_ActorBoundEvent_86_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_Teleport3_K2Node_ActorBoundEvent_105_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_Teleport3_K2Node_ActorBoundEvent_105_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_Teleport4_K2Node_ActorBoundEvent_104_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_Teleport4_K2Node_ActorBoundEvent_104_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_Teleport_K2Node_ActorBoundEvent_24_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_Teleport_K2Node_ActorBoundEvent_24_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZTrafficSpline_VanDriveAway_K2Node_ActorBoundEvent_224_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZTrafficSpline_VanDriveAway_K2Node_ActorBoundEvent_224_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZTrafficSplineFlyIn_K2Node_ActorBoundEvent_64_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZTrafficSplineFlyIn_K2Node_ActorBoundEvent_64_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZTrafficSplineFlyInWaterfront_K2Node_ActorBoundEvent_82_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZTrafficSplineFlyInWaterfront_K2Node_ActorBoundEvent_82_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZTrafficSplineReturnStreet_K2Node_ActorBoundEvent_69_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZTrafficSplineReturnStreet_K2Node_ActorBoundEvent_69_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_Timer_HelicopterFlyAway_90_K2Node_ActorBoundEvent_22_SBZProgressionReachedDelegate__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_Timer_HelicopterFlyAway_90_K2Node_ActorBoundEvent_22_SBZProgressionReachedDelegate__DelegateSignature final
-{
-public:
-	int32                                         ProgressionIndexReached;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_Volume_PlayerInfrontOfAlarmedGlass1_K2Node_ActorBoundEvent_21_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_Volume_PlayerInfrontOfAlarmedGlass1_K2Node_ActorBoundEvent_21_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_Volume_PlayerInfrontOfAlarmedGlass2_K2Node_ActorBoundEvent_32_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_Volume_PlayerInfrontOfAlarmedGlass2_K2Node_ActorBoundEvent_32_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_Volume_PlayerInfrontOfAlarmedGlass3_K2Node_ActorBoundEvent_42_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_Volume_PlayerInfrontOfAlarmedGlass3_K2Node_ActorBoundEvent_42_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_Volume_PlayerInsideSmithRoom_K2Node_ActorBoundEvent_37_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_Volume_PlayerInsideSmithRoom_K2Node_ActorBoundEvent_37_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_Volume_PlayerInsideStore2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_Volume_PlayerInsideStore2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_Volume_PlayerInsideStore4_K2Node_ActorBoundEvent_7_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_Volume_PlayerInsideStore4_K2Node_ActorBoundEvent_7_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_Volume_PlayerInsideStore5_K2Node_ActorBoundEvent_11_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_Volume_PlayerInsideStore5_K2Node_ActorBoundEvent_11_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_Volume_PlayerInsideStore6_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_Volume_PlayerInsideStore6_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_Volume_PlayerNearSmithRoom_K2Node_ActorBoundEvent_106_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_Volume_PlayerNearSmithRoom_K2Node_ActorBoundEvent_106_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__JewelryStoreManagerTest_BP_LA_Scripted_Phonecall_2_K2Node_ActorBoundEvent_2_ActionCompleted__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct G_JewelryStore_Scripting_C_BndEvt__JewelryStoreManagerTest_BP_LA_Scripted_Phonecall_2_K2Node_ActorBoundEvent_2_ActionCompleted__DelegateSignature final
-{
-public:
-	ESBZLifeActionStopReason                      Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZCharacter*                          Character;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_HeistStateChanged;
 
 // Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.ExecuteUbergraph_G_JewelryStore_Scripting
 // 0x2540 (0x2540 - 0x0000)
@@ -2598,67 +1431,1380 @@ public:
 	struct FGameplayTagContainer                  Temp_struct_Variable_15;                           // 0x2500(0x0020)(ConstParm)
 	struct FGameplayTagContainer                  Temp_struct_Variable_16;                           // 0x2520(0x0020)(ConstParm)
 };
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_ExecuteUbergraph_G_JewelryStore_Scripting;
 
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.HeistStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct G_JewelryStore_Scripting_C_HeistStateChanged final
-{
-public:
-	EPD3HeistState                                OldHeistState;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CurrentHeistState;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.OnEnabledAsObjectiveDelegate_Manager1
-// 0x0008 (0x0008 - 0x0000)
-struct G_JewelryStore_Scripting_C_OnEnabledAsObjectiveDelegate_Manager1 final
-{
-public:
-	class ASBZCharacter*                          FoundBy;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.OnHogTiedVIPLoud
-// 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_OnHogTiedVIPLoud final
-{
-public:
-	class ASBZAICharacter*                        Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          bHogTied;                                          // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.OnHumanShieldManager
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__JewelryStoreManagerTest_BP_LA_Scripted_Phonecall_2_K2Node_ActorBoundEvent_2_ActionCompleted__DelegateSignature
 // 0x0018 (0x0018 - 0x0000)
-struct G_JewelryStore_Scripting_C_OnHumanShieldManager final
+struct G_JewelryStore_Scripting_C_BndEvt__JewelryStoreManagerTest_BP_LA_Scripted_Phonecall_2_K2Node_ActorBoundEvent_2_ActionCompleted__DelegateSignature final
 {
 public:
-	class ASBZAICharacter*                        Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCharacter*                          Instigator_0;                                      // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          bHumanShield;                                      // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZLifeActionStopReason                      Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZCharacter*                          Character;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__JewelryStoreManagerTest_BP_LA_Scripted_Phonecall_2_K2Node_ActorBoundEvent_2_ActionCompleted__DelegateSignature;
 
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.OnPlayerInstantLootTaken
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_Volume_PlayerNearSmithRoom_K2Node_ActorBoundEvent_106_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_Volume_PlayerNearSmithRoom_K2Node_ActorBoundEvent_106_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_Volume_PlayerNearSmithRoom_K2Node_ActorBoundEvent_106_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_Volume_PlayerInsideStore6_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_Volume_PlayerInsideStore6_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_Volume_PlayerInsideStore6_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_Volume_PlayerInsideStore5_K2Node_ActorBoundEvent_11_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_Volume_PlayerInsideStore5_K2Node_ActorBoundEvent_11_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_Volume_PlayerInsideStore5_K2Node_ActorBoundEvent_11_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_Volume_PlayerInsideStore4_K2Node_ActorBoundEvent_7_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_Volume_PlayerInsideStore4_K2Node_ActorBoundEvent_7_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_Volume_PlayerInsideStore4_K2Node_ActorBoundEvent_7_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_Volume_PlayerInsideStore2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_Volume_PlayerInsideStore2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_Volume_PlayerInsideStore2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_Volume_PlayerInsideSmithRoom_K2Node_ActorBoundEvent_37_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_Volume_PlayerInsideSmithRoom_K2Node_ActorBoundEvent_37_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_Volume_PlayerInsideSmithRoom_K2Node_ActorBoundEvent_37_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_Volume_PlayerInfrontOfAlarmedGlass3_K2Node_ActorBoundEvent_42_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_Volume_PlayerInfrontOfAlarmedGlass3_K2Node_ActorBoundEvent_42_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_Volume_PlayerInfrontOfAlarmedGlass3_K2Node_ActorBoundEvent_42_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_Volume_PlayerInfrontOfAlarmedGlass2_K2Node_ActorBoundEvent_32_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_Volume_PlayerInfrontOfAlarmedGlass2_K2Node_ActorBoundEvent_32_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_Volume_PlayerInfrontOfAlarmedGlass2_K2Node_ActorBoundEvent_32_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_Volume_PlayerInfrontOfAlarmedGlass1_K2Node_ActorBoundEvent_21_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_Volume_PlayerInfrontOfAlarmedGlass1_K2Node_ActorBoundEvent_21_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_Volume_PlayerInfrontOfAlarmedGlass1_K2Node_ActorBoundEvent_21_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_Timer_HelicopterFlyAway_90_K2Node_ActorBoundEvent_22_SBZProgressionReachedDelegate__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_Timer_HelicopterFlyAway_90_K2Node_ActorBoundEvent_22_SBZProgressionReachedDelegate__DelegateSignature final
+{
+public:
+	int32                                         ProgressionIndexReached;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_Timer_HelicopterFlyAway_90_K2Node_ActorBoundEvent_22_SBZProgressionReachedDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZTrafficSplineReturnStreet_K2Node_ActorBoundEvent_69_SBZSplineOnEndReached__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_OnPlayerInstantLootTaken final
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZTrafficSplineReturnStreet_K2Node_ActorBoundEvent_69_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZTrafficSplineReturnStreet_K2Node_ActorBoundEvent_69_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZTrafficSplineFlyInWaterfront_K2Node_ActorBoundEvent_82_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZTrafficSplineFlyInWaterfront_K2Node_ActorBoundEvent_82_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZTrafficSplineFlyInWaterfront_K2Node_ActorBoundEvent_82_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZTrafficSplineFlyIn_K2Node_ActorBoundEvent_64_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZTrafficSplineFlyIn_K2Node_ActorBoundEvent_64_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZTrafficSplineFlyIn_K2Node_ActorBoundEvent_64_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZTrafficSpline_VanDriveAway_K2Node_ActorBoundEvent_224_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZTrafficSpline_VanDriveAway_K2Node_ActorBoundEvent_224_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZTrafficSpline_VanDriveAway_K2Node_ActorBoundEvent_224_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_Teleport_K2Node_ActorBoundEvent_24_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_Teleport_K2Node_ActorBoundEvent_24_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_Teleport_K2Node_ActorBoundEvent_24_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_Teleport4_K2Node_ActorBoundEvent_104_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_Teleport4_K2Node_ActorBoundEvent_104_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_Teleport4_K2Node_ActorBoundEvent_104_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_Teleport3_K2Node_ActorBoundEvent_105_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_Teleport3_K2Node_ActorBoundEvent_105_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_Teleport3_K2Node_ActorBoundEvent_105_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_Teleport2_K2Node_ActorBoundEvent_86_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_Teleport2_K2Node_ActorBoundEvent_86_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_Teleport2_K2Node_ActorBoundEvent_86_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_PlayerNearVanSecure_K2Node_ActorBoundEvent_17_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_PlayerNearVanSecure_K2Node_ActorBoundEvent_17_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_PlayerNearVanSecure_K2Node_ActorBoundEvent_17_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_PlayerByVaultWithKeycard_K2Node_ActorBoundEvent_16_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_PlayerByVaultWithKeycard_K2Node_ActorBoundEvent_16_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_PlayerByVaultWithKeycard_K2Node_ActorBoundEvent_16_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_DevPhone_K2Node_ActorBoundEvent_40_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_DevPhone_K2Node_ActorBoundEvent_40_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_DevPhone_K2Node_ActorBoundEvent_40_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_18_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_18_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_18_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearProcessedBag_K2Node_ActorBoundEvent_113_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearProcessedBag_K2Node_ActorBoundEvent_113_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearProcessedBag_K2Node_ActorBoundEvent_113_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerInsideVIPRoom1_K2Node_ActorBoundEvent_33_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerInsideVIPRoom1_K2Node_ActorBoundEvent_33_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerInsideVIPRoom1_K2Node_ActorBoundEvent_33_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerInsideVault_K2Node_ActorBoundEvent_57_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerInsideVault_K2Node_ActorBoundEvent_57_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerInsideVault_K2Node_ActorBoundEvent_57_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerInsideBasement_K2Node_ActorBoundEvent_65_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerInsideBasement_K2Node_ActorBoundEvent_65_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerInsideBasement_K2Node_ActorBoundEvent_65_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerEnteredSideAlley3_K2Node_ActorBoundEvent_63_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerEnteredSideAlley3_K2Node_ActorBoundEvent_63_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerEnteredSideAlley3_K2Node_ActorBoundEvent_63_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerEnteredSideAlley2_K2Node_ActorBoundEvent_61_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerEnteredSideAlley2_K2Node_ActorBoundEvent_61_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerEnteredSideAlley2_K2Node_ActorBoundEvent_61_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPlayerEnteredSideAlley1_K2Node_ActorBoundEvent_60_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerEnteredSideAlley1_K2Node_ActorBoundEvent_60_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPlayerEnteredSideAlley1_K2Node_ActorBoundEvent_60_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefinedLifeAction_Manager_K2Node_ActorBoundEvent_241_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefinedLifeAction_Manager_K2Node_ActorBoundEvent_241_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  DeadPawn;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                Spawner;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefinedLifeAction_Manager_K2Node_ActorBoundEvent_241_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_ManagerPublic3_K2Node_ActorBoundEvent_92_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_ManagerPublic3_K2Node_ActorBoundEvent_92_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  DeadPawn;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                Spawner;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_ManagerPublic3_K2Node_ActorBoundEvent_92_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_ManagerPublic3_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_ManagerPublic3_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_ManagerPublic3_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_ManagerPublic2_2_K2Node_ActorBoundEvent_89_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_ManagerPublic2_2_K2Node_ActorBoundEvent_89_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  DeadPawn;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                Spawner;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_ManagerPublic2_2_K2Node_ActorBoundEvent_89_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_ManagerPublic2_2_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_ManagerPublic2_2_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_ManagerPublic2_2_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_Manager3_K2Node_ActorBoundEvent_91_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_Manager3_K2Node_ActorBoundEvent_91_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_Manager3_K2Node_ActorBoundEvent_91_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_Manager1_K2Node_ActorBoundEvent_79_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_Manager1_K2Node_ActorBoundEvent_79_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_Manager1_K2Node_ActorBoundEvent_79_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_GuardRightAlley_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_GuardRightAlley_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_GuardRightAlley_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_GuardLead_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_GuardLead_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_GuardLead_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_Guard3_K2Node_ActorBoundEvent_99_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_Guard3_K2Node_ActorBoundEvent_99_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_Guard3_K2Node_ActorBoundEvent_99_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_Guard1_K2Node_ActorBoundEvent_15_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_Guard1_K2Node_ActorBoundEvent_15_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZPawnSpawnPredefined_Guard1_K2Node_ActorBoundEvent_15_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZFilteredTriggerVolume_DefendCrossroad_K2Node_ActorBoundEvent_119_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZFilteredTriggerVolume_DefendCrossroad_K2Node_ActorBoundEvent_119_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZFilteredTriggerVolume_DefendCrossroad_K2Node_ActorBoundEvent_119_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZFilteredTriggerVolume_DefendCrossroad_K2Node_ActorBoundEvent_118_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZFilteredTriggerVolume_DefendCrossroad_K2Node_ActorBoundEvent_118_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZFilteredTriggerVolume_DefendCrossroad_K2Node_ActorBoundEvent_118_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZBagTriggerVolume_BagSecureWaterfront_K2Node_ActorBoundEvent_79_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZBagTriggerVolume_BagSecureWaterfront_K2Node_ActorBoundEvent_79_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZBagTriggerVolume_BagSecureWaterfront_K2Node_ActorBoundEvent_79_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZBagTriggerVolume_BagSecureStreet_K2Node_ActorBoundEvent_83_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZBagTriggerVolume_BagSecureStreet_K2Node_ActorBoundEvent_83_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZBagTriggerVolume_BagSecureStreet_K2Node_ActorBoundEvent_83_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZBagTriggerVolume_BagSecureStealth_1_K2Node_ActorBoundEvent_58_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZBagTriggerVolume_BagSecureStealth_1_K2Node_ActorBoundEvent_58_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZBagTriggerVolume_BagSecureStealth_1_K2Node_ActorBoundEvent_58_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_SBZBagTriggerVolume_BagSecureRoof_K2Node_ActorBoundEvent_107_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZBagTriggerVolume_BagSecureRoof_K2Node_ActorBoundEvent_107_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_SBZBagTriggerVolume_BagSecureRoof_K2Node_ActorBoundEvent_107_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_RedKeycardReader2_K2Node_ActorBoundEvent_41_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_RedKeycardReader2_K2Node_ActorBoundEvent_41_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_RedKeycardReader2_K2Node_ActorBoundEvent_41_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_push_keep_Animated_Button1_2_K2Node_ActorBoundEvent_50_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_push_keep_Animated_Button1_2_K2Node_ActorBoundEvent_50_SBZActorOnInteraction__DelegateSignature final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_push_keep_Animated_Button1_2_K2Node_ActorBoundEvent_50_SBZActorOnInteraction__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_Mkp_Int_Door_01_Double_VIPShowroom_K2Node_ActorBoundEvent_111_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_Mkp_Int_Door_01_Double_VIPShowroom_K2Node_ActorBoundEvent_111_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_Mkp_Int_Door_01_Double_VIPShowroom_K2Node_ActorBoundEvent_111_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_LifeActionTriggerVolume_HumanShield_ButtonPress_K2Node_ActorBoundEvent_93_SBZLifeActionStopEventDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LifeActionTriggerVolume_HumanShield_ButtonPress_K2Node_ActorBoundEvent_93_SBZLifeActionStopEventDelegate__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	ESBZLifeActionStopReason                      Result;                                            // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LifeActionTriggerVolume_HumanShield_ButtonPress_K2Node_ActorBoundEvent_93_SBZLifeActionStopEventDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_LifeActionTriggerVolume_HumanShield_ButtonPress_K2Node_ActorBoundEvent_88_SBZLifeActionEventDelegate__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LifeActionTriggerVolume_HumanShield_ButtonPress_K2Node_ActorBoundEvent_88_SBZLifeActionEventDelegate__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LifeActionTriggerVolume_HumanShield_ButtonPress_K2Node_ActorBoundEvent_88_SBZLifeActionEventDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_LifeActionTriggerVolume_HumanShield_ButtonPress_K2Node_ActorBoundEvent_70_SBZLifeActionStopEventDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LifeActionTriggerVolume_HumanShield_ButtonPress_K2Node_ActorBoundEvent_70_SBZLifeActionStopEventDelegate__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	ESBZLifeActionStopReason                      Result;                                            // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LifeActionTriggerVolume_HumanShield_ButtonPress_K2Node_ActorBoundEvent_70_SBZLifeActionStopEventDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Manager_Phonecall4_K2Node_ActorBoundEvent_28_ActionCompleted__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Manager_Phonecall4_K2Node_ActorBoundEvent_28_ActionCompleted__DelegateSignature final
+{
+public:
+	ESBZLifeActionStopReason                      Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZCharacter*                          Character;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Manager_Phonecall4_K2Node_ActorBoundEvent_28_ActionCompleted__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Manager_Phonecall4_K2Node_ActorBoundEvent_24_ActionStarted__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Manager_Phonecall4_K2Node_ActorBoundEvent_24_ActionStarted__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Manager_Phonecall4_K2Node_ActorBoundEvent_24_ActionStarted__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Manager_Phonecall3_K2Node_ActorBoundEvent_81_ActionCompleted__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Manager_Phonecall3_K2Node_ActorBoundEvent_81_ActionCompleted__DelegateSignature final
+{
+public:
+	ESBZLifeActionStopReason                      Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZCharacter*                          Character;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Manager_Phonecall3_K2Node_ActorBoundEvent_81_ActionCompleted__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Manager_Phonecall3_K2Node_ActorBoundEvent_73_ActionStarted__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Manager_Phonecall3_K2Node_ActorBoundEvent_73_ActionStarted__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Manager_Phonecall3_K2Node_ActorBoundEvent_73_ActionStarted__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Manager_Phonecall2_K2Node_ActorBoundEvent_80_ActionCompleted__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Manager_Phonecall2_K2Node_ActorBoundEvent_80_ActionCompleted__DelegateSignature final
+{
+public:
+	ESBZLifeActionStopReason                      Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZCharacter*                          Character;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Manager_Phonecall2_K2Node_ActorBoundEvent_80_ActionCompleted__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Manager_Phonecall2_K2Node_ActorBoundEvent_71_ActionStarted__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Manager_Phonecall2_K2Node_ActorBoundEvent_71_ActionStarted__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Manager_Phonecall2_K2Node_ActorBoundEvent_71_ActionStarted__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Idle_0_K2Node_ActorBoundEvent_3_ActionStarted__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Idle_0_K2Node_ActorBoundEvent_3_ActionStarted__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Idle_0_K2Node_ActorBoundEvent_3_ActionStarted__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Idle_0_K2Node_ActorBoundEvent_115_ActionCompleted__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Idle_0_K2Node_ActorBoundEvent_115_ActionCompleted__DelegateSignature final
+{
+public:
+	ESBZLifeActionStopReason                      Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZCharacter*                          Character;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LA_Scripted_Idle_0_K2Node_ActorBoundEvent_115_ActionCompleted__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_LA_Manager_Phone_K2Node_ActorBoundEvent_47_ActionStarted__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LA_Manager_Phone_K2Node_ActorBoundEvent_47_ActionStarted__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_LA_Manager_Phone_K2Node_ActorBoundEvent_47_ActionStarted__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_KeypadWifiRight_K2Node_ActorBoundEvent_95_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_KeypadWifiRight_K2Node_ActorBoundEvent_95_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_KeypadWifiRight_K2Node_ActorBoundEvent_95_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_KeypadWifiLeft_K2Node_ActorBoundEvent_75_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_KeypadWifiLeft_K2Node_ActorBoundEvent_75_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_KeypadWifiLeft_K2Node_ActorBoundEvent_75_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_KeypadGraffitiRight_K2Node_ActorBoundEvent_96_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_KeypadGraffitiRight_K2Node_ActorBoundEvent_96_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_KeypadGraffitiRight_K2Node_ActorBoundEvent_96_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_KeypadGraffitiLeft_K2Node_ActorBoundEvent_46_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_KeypadGraffitiLeft_K2Node_ActorBoundEvent_46_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_KeypadGraffitiLeft_K2Node_ActorBoundEvent_46_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_KeypadEmployeeRight_K2Node_ActorBoundEvent_97_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_KeypadEmployeeRight_K2Node_ActorBoundEvent_97_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_KeypadEmployeeRight_K2Node_ActorBoundEvent_97_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_KeypadEmployeeLeft_K2Node_ActorBoundEvent_27_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_KeypadEmployeeLeft_K2Node_ActorBoundEvent_27_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_KeypadEmployeeLeft_K2Node_ActorBoundEvent_27_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_JewelryMachine_2_K2Node_ActorBoundEvent_44_SBZOnLootProcessorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_JewelryMachine_2_K2Node_ActorBoundEvent_44_SBZOnLootProcessorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZLootProcessorState                        NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_JewelryMachine_2_K2Node_ActorBoundEvent_44_SBZOnLootProcessorStateChangedDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InteractableStaticMeshDoor_VIPShowroom_K2Node_ActorBoundEvent_128_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InteractableStaticMeshDoor_VIPShowroom_K2Node_ActorBoundEvent_128_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InteractableStaticMeshDoor_VIPShowroom_K2Node_ActorBoundEvent_128_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InteractableStaticMeshDoor_JewelrySmith_K2Node_ActorBoundEvent_38_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InteractableStaticMeshDoor_JewelrySmith_K2Node_ActorBoundEvent_38_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InteractableStaticMeshDoor_JewelrySmith_K2Node_ActorBoundEvent_38_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_BasementRight_K2Node_ActorBoundEvent_43_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_BasementRight_K2Node_ActorBoundEvent_43_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_BasementRight_K2Node_ActorBoundEvent_43_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_14_K2Node_ActorBoundEvent_160_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_14_K2Node_ActorBoundEvent_160_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_Int_SingleDoor_Reinforced_Industrial_14_K2Node_ActorBoundEvent_160_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_Int_Door_01_SmallVault_01_2_K2Node_ActorBoundEvent_35_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_Int_Door_01_SmallVault_01_2_K2Node_ActorBoundEvent_35_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_Int_Door_01_SmallVault_01_2_K2Node_ActorBoundEvent_35_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust_2_K2Node_ActorBoundEvent_102_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust_2_K2Node_ActorBoundEvent_102_SBZLootedSignature__DelegateSignature final
 {
 public:
 	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust_2_K2Node_ActorBoundEvent_102_SBZLootedSignature__DelegateSignature;
 
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.OnPlayerPickedUpBag
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust64_K2Node_ActorBoundEvent_114_SBZLootedSignature__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct G_JewelryStore_Scripting_C_OnPlayerPickedUpBag final
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust64_K2Node_ActorBoundEvent_114_SBZLootedSignature__DelegateSignature final
 {
 public:
-	struct FSBZBagHandle                          BagHandle;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust64_K2Node_ActorBoundEvent_114_SBZLootedSignature__DelegateSignature;
 
-// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.OnPreplanningAssetsTagsApplied
-// 0x0020 (0x0020 - 0x0000)
-struct G_JewelryStore_Scripting_C_OnPreplanningAssetsTagsApplied final
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust63_K2Node_ActorBoundEvent_115_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust63_K2Node_ActorBoundEvent_115_SBZLootedSignature__DelegateSignature final
 {
 public:
-	struct FGameplayTagContainer                  PreplanningTagContainer;                           // 0x0000(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust63_K2Node_ActorBoundEvent_115_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust62_K2Node_ActorBoundEvent_116_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust62_K2Node_ActorBoundEvent_116_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust62_K2Node_ActorBoundEvent_116_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust61_K2Node_ActorBoundEvent_124_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust61_K2Node_ActorBoundEvent_124_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust61_K2Node_ActorBoundEvent_124_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust60_K2Node_ActorBoundEvent_123_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust60_K2Node_ActorBoundEvent_123_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust60_K2Node_ActorBoundEvent_123_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust59_K2Node_ActorBoundEvent_117_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust59_K2Node_ActorBoundEvent_117_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust59_K2Node_ActorBoundEvent_117_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust58_K2Node_ActorBoundEvent_118_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust58_K2Node_ActorBoundEvent_118_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust58_K2Node_ActorBoundEvent_118_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust57_K2Node_ActorBoundEvent_119_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust57_K2Node_ActorBoundEvent_119_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust57_K2Node_ActorBoundEvent_119_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust56_K2Node_ActorBoundEvent_120_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust56_K2Node_ActorBoundEvent_120_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust56_K2Node_ActorBoundEvent_120_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust55_K2Node_ActorBoundEvent_121_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust55_K2Node_ActorBoundEvent_121_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust55_K2Node_ActorBoundEvent_121_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust54_40_K2Node_ActorBoundEvent_113_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust54_40_K2Node_ActorBoundEvent_113_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust54_40_K2Node_ActorBoundEvent_113_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust53_39_K2Node_ActorBoundEvent_112_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust53_39_K2Node_ActorBoundEvent_112_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust53_39_K2Node_ActorBoundEvent_112_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust52_38_K2Node_ActorBoundEvent_111_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust52_38_K2Node_ActorBoundEvent_111_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust52_38_K2Node_ActorBoundEvent_111_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust51_46_K2Node_ActorBoundEvent_122_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust51_46_K2Node_ActorBoundEvent_122_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust51_46_K2Node_ActorBoundEvent_122_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust50_44_K2Node_ActorBoundEvent_125_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust50_44_K2Node_ActorBoundEvent_125_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust50_44_K2Node_ActorBoundEvent_125_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust49_42_K2Node_ActorBoundEvent_4_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust49_42_K2Node_ActorBoundEvent_4_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust49_42_K2Node_ActorBoundEvent_4_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust34_34_K2Node_ActorBoundEvent_110_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust34_34_K2Node_ActorBoundEvent_110_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust34_34_K2Node_ActorBoundEvent_110_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust33_K2Node_ActorBoundEvent_40_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust33_K2Node_ActorBoundEvent_40_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust33_K2Node_ActorBoundEvent_40_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust32_K2Node_ActorBoundEvent_47_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust32_K2Node_ActorBoundEvent_47_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust32_K2Node_ActorBoundEvent_47_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust31_32_K2Node_ActorBoundEvent_109_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust31_32_K2Node_ActorBoundEvent_109_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust31_32_K2Node_ActorBoundEvent_109_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust30_20_K2Node_ActorBoundEvent_89_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust30_20_K2Node_ActorBoundEvent_89_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust30_20_K2Node_ActorBoundEvent_89_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust2_K2Node_ActorBoundEvent_103_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust2_K2Node_ActorBoundEvent_103_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust2_K2Node_ActorBoundEvent_103_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust29_K2Node_ActorBoundEvent_92_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust29_K2Node_ActorBoundEvent_92_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust29_K2Node_ActorBoundEvent_92_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust27_17_K2Node_ActorBoundEvent_100_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust27_17_K2Node_ActorBoundEvent_100_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust27_17_K2Node_ActorBoundEvent_100_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust26_11_K2Node_ActorBoundEvent_105_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust26_11_K2Node_ActorBoundEvent_105_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust26_11_K2Node_ActorBoundEvent_105_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust23_15_K2Node_ActorBoundEvent_101_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust23_15_K2Node_ActorBoundEvent_101_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust23_15_K2Node_ActorBoundEvent_101_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust19_7_K2Node_ActorBoundEvent_104_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust19_7_K2Node_ActorBoundEvent_104_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust19_7_K2Node_ActorBoundEvent_104_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust16_30_K2Node_ActorBoundEvent_107_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust16_30_K2Node_ActorBoundEvent_107_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_NecklaceBust16_30_K2Node_ActorBoundEvent_107_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox_2_K2Node_ActorBoundEvent_142_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox_2_K2Node_ActorBoundEvent_142_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox_2_K2Node_ActorBoundEvent_142_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox58_K2Node_ActorBoundEvent_127_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox58_K2Node_ActorBoundEvent_127_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox58_K2Node_ActorBoundEvent_127_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox57_K2Node_ActorBoundEvent_132_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox57_K2Node_ActorBoundEvent_132_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox57_K2Node_ActorBoundEvent_132_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox56_K2Node_ActorBoundEvent_134_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox56_K2Node_ActorBoundEvent_134_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox56_K2Node_ActorBoundEvent_134_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox55_K2Node_ActorBoundEvent_133_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox55_K2Node_ActorBoundEvent_133_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox55_K2Node_ActorBoundEvent_133_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox54_K2Node_ActorBoundEvent_135_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox54_K2Node_ActorBoundEvent_135_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox54_K2Node_ActorBoundEvent_135_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox53_K2Node_ActorBoundEvent_136_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox53_K2Node_ActorBoundEvent_136_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox53_K2Node_ActorBoundEvent_136_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox52_54_K2Node_ActorBoundEvent_153_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox52_54_K2Node_ActorBoundEvent_153_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox52_54_K2Node_ActorBoundEvent_153_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox51_K2Node_ActorBoundEvent_155_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox51_K2Node_ActorBoundEvent_155_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox51_K2Node_ActorBoundEvent_155_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox50_K2Node_ActorBoundEvent_154_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox50_K2Node_ActorBoundEvent_154_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox50_K2Node_ActorBoundEvent_154_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox49_K2Node_ActorBoundEvent_152_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox49_K2Node_ActorBoundEvent_152_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox49_K2Node_ActorBoundEvent_152_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox48_K2Node_ActorBoundEvent_151_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox48_K2Node_ActorBoundEvent_151_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox48_K2Node_ActorBoundEvent_151_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox47_K2Node_ActorBoundEvent_150_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox47_K2Node_ActorBoundEvent_150_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox47_K2Node_ActorBoundEvent_150_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox46_K2Node_ActorBoundEvent_149_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox46_K2Node_ActorBoundEvent_149_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox46_K2Node_ActorBoundEvent_149_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox45_K2Node_ActorBoundEvent_163_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox45_K2Node_ActorBoundEvent_163_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox45_K2Node_ActorBoundEvent_163_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox44_K2Node_ActorBoundEvent_158_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox44_K2Node_ActorBoundEvent_158_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox44_K2Node_ActorBoundEvent_158_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox34_K2Node_ActorBoundEvent_137_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox34_K2Node_ActorBoundEvent_137_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox34_K2Node_ActorBoundEvent_137_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox33_46_K2Node_ActorBoundEvent_148_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox33_46_K2Node_ActorBoundEvent_148_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox33_46_K2Node_ActorBoundEvent_148_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox32_41_K2Node_ActorBoundEvent_161_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox32_41_K2Node_ActorBoundEvent_161_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox32_41_K2Node_ActorBoundEvent_161_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox31_39_K2Node_ActorBoundEvent_156_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox31_39_K2Node_ActorBoundEvent_156_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox31_39_K2Node_ActorBoundEvent_156_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox30_37_K2Node_ActorBoundEvent_157_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox30_37_K2Node_ActorBoundEvent_157_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox30_37_K2Node_ActorBoundEvent_157_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox2_64_K2Node_ActorBoundEvent_126_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox2_64_K2Node_ActorBoundEvent_126_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox2_64_K2Node_ActorBoundEvent_126_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox25_K2Node_ActorBoundEvent_138_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox25_K2Node_ActorBoundEvent_138_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox25_K2Node_ActorBoundEvent_138_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox24_K2Node_ActorBoundEvent_139_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox24_K2Node_ActorBoundEvent_139_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox24_K2Node_ActorBoundEvent_139_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox23_14_K2Node_ActorBoundEvent_140_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox23_14_K2Node_ActorBoundEvent_140_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox23_14_K2Node_ActorBoundEvent_140_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox22_10_K2Node_ActorBoundEvent_141_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox22_10_K2Node_ActorBoundEvent_141_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox22_10_K2Node_ActorBoundEvent_141_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox20_6_K2Node_ActorBoundEvent_143_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox20_6_K2Node_ActorBoundEvent_143_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox20_6_K2Node_ActorBoundEvent_143_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox18_68_K2Node_ActorBoundEvent_147_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox18_68_K2Node_ActorBoundEvent_147_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox18_68_K2Node_ActorBoundEvent_147_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox17_31_K2Node_ActorBoundEvent_145_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox17_31_K2Node_ActorBoundEvent_145_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox17_31_K2Node_ActorBoundEvent_145_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox16_66_K2Node_ActorBoundEvent_146_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox16_66_K2Node_ActorBoundEvent_146_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox16_66_K2Node_ActorBoundEvent_146_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox15_25_K2Node_ActorBoundEvent_144_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox15_25_K2Node_ActorBoundEvent_144_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_InstantLoot_BraceletBox15_25_K2Node_ActorBoundEvent_144_SBZLootedSignature__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__G_JewelryStore_Scripting_BP_EyeScanner_2_K2Node_ActorBoundEvent_59_SBZOnEyeScannerStateChanged__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_EyeScanner_2_K2Node_ActorBoundEvent_59_SBZOnEyeScannerStateChanged__DelegateSignature final
+{
+public:
+	ESBZEyeScannerState                           Oldstate;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZEyeScannerState                           NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__G_JewelryStore_Scripting_BP_EyeScanner_2_K2Node_ActorBoundEvent_59_SBZOnEyeScannerStateChanged__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__DefendVolume_SBZFilteredTriggerVolume_1_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__DefendVolume_SBZFilteredTriggerVolume_1_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__DefendVolume_SBZFilteredTriggerVolume_1_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function G_JewelryStore_Scripting.G_JewelryStore_Scripting_C.BndEvt__DefendVolume_SBZFilteredTriggerVolume_1_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_JewelryStore_Scripting_C_BndEvt__DefendVolume_SBZFilteredTriggerVolume_1_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_JewelryStore_Scripting_C_BndEvt__DefendVolume_SBZFilteredTriggerVolume_1_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

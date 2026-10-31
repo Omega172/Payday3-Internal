@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABPL_WarmBounceWindow_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_WarmBounceWindow_C;
 
 SDK_NAMESPACE_END

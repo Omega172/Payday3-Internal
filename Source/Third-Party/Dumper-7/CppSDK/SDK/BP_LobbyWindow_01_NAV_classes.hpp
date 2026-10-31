@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_LobbyWindow_01_NAV_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LobbyWindow_01_NAV_C;
 
 SDK_NAMESPACE_END

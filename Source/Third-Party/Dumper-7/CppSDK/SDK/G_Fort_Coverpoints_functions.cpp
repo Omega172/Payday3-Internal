@@ -16,49 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function G_Fort_Coverpoints.G_Fort_Coverpoints_C.ExecuteUbergraph_G_Fort_Coverpoints
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Fort_Coverpoints_C::ExecuteUbergraph_G_Fort_Coverpoints(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Coverpoints_C", "ExecuteUbergraph_G_Fort_Coverpoints");
-
-	Params::G_Fort_Coverpoints_C_ExecuteUbergraph_G_Fort_Coverpoints Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Fort_Coverpoints.G_Fort_Coverpoints_C.SetRandomRoom1Secure
+// Function G_Fort_Coverpoints.G_Fort_Coverpoints_C.SetRandomRoom4Secure
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Fort_Coverpoints_C::SetRandomRoom1Secure()
+void AG_Fort_Coverpoints_C::SetRandomRoom4Secure()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Coverpoints_C", "SetRandomRoom1Secure");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_Coverpoints.G_Fort_Coverpoints_C.SetRandomRoom2Secure
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_Coverpoints_C::SetRandomRoom2Secure()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Coverpoints_C", "SetRandomRoom2Secure");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetRandomRoom4Secure", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,26 +33,52 @@ void AG_Fort_Coverpoints_C::SetRandomRoom2Secure()
 
 void AG_Fort_Coverpoints_C::SetRandomRoom3Secure()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Coverpoints_C", "SetRandomRoom3Secure");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetRandomRoom3Secure", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_Coverpoints.G_Fort_Coverpoints_C.SetRandomRoom4Secure
+// Function G_Fort_Coverpoints.G_Fort_Coverpoints_C.SetRandomRoom2Secure
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Fort_Coverpoints_C::SetRandomRoom4Secure()
+void AG_Fort_Coverpoints_C::SetRandomRoom2Secure()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Coverpoints_C", "SetRandomRoom4Secure");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetRandomRoom2Secure", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_Coverpoints.G_Fort_Coverpoints_C.SetRandomRoom1Secure
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_Coverpoints_C::SetRandomRoom1Secure()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetRandomRoom1Secure", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_Coverpoints.G_Fort_Coverpoints_C.ExecuteUbergraph_G_Fort_Coverpoints
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Fort_Coverpoints_C::ExecuteUbergraph_G_Fort_Coverpoints(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_Fort_Coverpoints_C", "ExecuteUbergraph_G_Fort_Coverpoints", FuncInfo);
+
+	Params::G_Fort_Coverpoints_C_ExecuteUbergraph_G_Fort_Coverpoints Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

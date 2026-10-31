@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_Order_Civilian_CallInvestigator_ReducedProjection.BP_Order_Civilian_CallInvestigator_ReducedProjection_C.OnStartedBP
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn_OnStartedBP                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_Order_Civilian_CallInvestigator_ReducedProjection_C::OnStartedBP(class APawn* Pawn_OnStartedBP)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStartedBP", FnName));
+
+	Params::BP_Order_Civilian_CallInvestigator_ReducedProjection_C_OnStartedBP Parms{};
+
+	Parms.Pawn_OnStartedBP = Pawn_OnStartedBP;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_Order_Civilian_CallInvestigator_ReducedProjection.BP_Order_Civilian_CallInvestigator_ReducedProjection_C.ExecuteUbergraph_BP_Order_Civilian_CallInvestigator_ReducedProjection
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,10 +41,8 @@ SDK_NAMESPACE_START
 
 void UBP_Order_Civilian_CallInvestigator_ReducedProjection_C::ExecuteUbergraph_BP_Order_Civilian_CallInvestigator_ReducedProjection(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Order_Civilian_CallInvestigator_ReducedProjection_C", "ExecuteUbergraph_BP_Order_Civilian_CallInvestigator_ReducedProjection");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Order_Civilian_CallInvestigator_ReducedProjection_C", "ExecuteUbergraph_BP_Order_Civilian_CallInvestigator_ReducedProjection", FuncInfo);
 
 	Params::BP_Order_Civilian_CallInvestigator_ReducedProjection_C_ExecuteUbergraph_BP_Order_Civilian_CallInvestigator_ReducedProjection Parms{};
 
@@ -36,42 +52,20 @@ void UBP_Order_Civilian_CallInvestigator_ReducedProjection_C::ExecuteUbergraph_B
 }
 
 
-// Function BP_Order_Civilian_CallInvestigator_ReducedProjection.BP_Order_Civilian_CallInvestigator_ReducedProjection_C.OnStartedBP
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UBP_Order_Civilian_CallInvestigator_ReducedProjection_C::OnStartedBP(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Order_Civilian_CallInvestigator_ReducedProjection_C", "OnStartedBP");
-
-	Params::BP_Order_Civilian_CallInvestigator_ReducedProjection_C_OnStartedBP Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_Order_Civilian_CallInvestigator_ReducedProjection.BP_Order_Civilian_CallInvestigator_ReducedProjection_C.ExecPredicate
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// const class UObject*                    Owner                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class UObject*                    Owner_ExecPredicate                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue_ExecPredicate                              (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-bool UBP_Order_Civilian_CallInvestigator_ReducedProjection_C::ExecPredicate(const class UObject* Owner) const
+bool UBP_Order_Civilian_CallInvestigator_ReducedProjection_C::ExecPredicate(const class UObject* Owner_ExecPredicate) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Order_Civilian_CallInvestigator_ReducedProjection_C", "ExecPredicate");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ExecPredicate", FnName));
 
 	Params::BP_Order_Civilian_CallInvestigator_ReducedProjection_C_ExecPredicate Parms{};
 
-	Parms.Owner = Owner;
+	Parms.Owner_ExecPredicate = Owner_ExecPredicate;
 
 	UObject::ProcessEvent(Func, &Parms);
 

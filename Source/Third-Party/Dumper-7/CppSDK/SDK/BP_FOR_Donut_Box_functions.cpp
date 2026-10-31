@@ -16,45 +16,47 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_FOR_Donut_Box.BP_FOR_Donut_Box_C.BndEvt__BP_FOR_Donut_Box_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_FOR_Donut_Box.BP_FOR_Donut_Box_C.Show_Donut_Box
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_FOR_Donut_Box_C::BndEvt__BP_FOR_Donut_Box_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_FOR_Donut_Box_C::Show_Donut_Box()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Show_Donut_Box", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FOR_Donut_Box_C", "BndEvt__BP_FOR_Donut_Box_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_FOR_Donut_Box_C_BndEvt__BP_FOR_Donut_Box_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_FOR_Donut_Box.BP_FOR_Donut_Box_C.ExecuteUbergraph_BP_FOR_Donut_Box
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_FOR_Donut_Box.BP_FOR_Donut_Box_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_FOR_Donut_Box_C::ExecuteUbergraph_BP_FOR_Donut_Box(int32 EntryPoint)
+void ABP_FOR_Donut_Box_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FOR_Donut_Box_C", "ExecuteUbergraph_BP_FOR_Donut_Box");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_FOR_Donut_Box_C_ExecuteUbergraph_BP_FOR_Donut_Box Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+// Function BP_FOR_Donut_Box.BP_FOR_Donut_Box_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   OldState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_FOR_Donut_Box_C::OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_FOR_Donut_Box_C_OnStateChanged Parms{};
+
+	Parms.OldState_OnStateChanged = OldState_OnStateChanged;
+	Parms.NewState_OnStateChanged = NewState_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -65,64 +67,50 @@ void ABP_FOR_Donut_Box_C::ExecuteUbergraph_BP_FOR_Donut_Box(int32 EntryPoint)
 
 void ABP_FOR_Donut_Box_C::Hide_Donut_Box()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FOR_Donut_Box_C", "Hide_Donut_Box");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Hide_Donut_Box", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_FOR_Donut_Box.BP_FOR_Donut_Box_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
+// Function BP_FOR_Donut_Box.BP_FOR_Donut_Box_C.ExecuteUbergraph_BP_FOR_Donut_Box
+// (Final, UbergraphFunction)
 // Parameters:
-// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_FOR_Donut_Box_C::OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics)
+void ABP_FOR_Donut_Box_C::ExecuteUbergraph_BP_FOR_Donut_Box(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_FOR_Donut_Box_C", "ExecuteUbergraph_BP_FOR_Donut_Box", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FOR_Donut_Box_C", "OnStateChanged");
+	Params::BP_FOR_Donut_Box_C_ExecuteUbergraph_BP_FOR_Donut_Box Parms{};
 
-	Params::BP_FOR_Donut_Box_C_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_FOR_Donut_Box.BP_FOR_Donut_Box_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_FOR_Donut_Box.BP_FOR_Donut_Box_C.BndEvt__BP_FOR_Donut_Box_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_FOR_Donut_Box_C::ReceiveBeginPlay()
+void ABP_FOR_Donut_Box_C::BndEvt__BP_FOR_Donut_Box_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_FOR_Donut_Box_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FOR_Donut_Box_C", "ReceiveBeginPlay");
+	Params::BP_FOR_Donut_Box_C_BndEvt__BP_FOR_Donut_Box_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
-
-// Function BP_FOR_Donut_Box.BP_FOR_Donut_Box_C.Show_Donut_Box
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_FOR_Donut_Box_C::Show_Donut_Box()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FOR_Donut_Box_C", "Show_Donut_Box");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

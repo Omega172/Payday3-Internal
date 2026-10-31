@@ -16,121 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_CampaignContent_Act_Outro.WBP_CampaignContent_Act_Outro_C.BndEvt__WBP_CampaignContent_Act_Outro_WBP_InputActionButton_New_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_CampaignContent_Act_Outro.WBP_CampaignContent_Act_Outro_C.SetEntryState
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// ESBZCampaignEntryState                  NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CampaignContent_Act_Outro_C::BndEvt__WBP_CampaignContent_Act_Outro_WBP_InputActionButton_New_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+void UWBP_CampaignContent_Act_Outro_C::SetEntryState(ESBZCampaignEntryState NewState)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetEntryState", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignContent_Act_Outro_C", "BndEvt__WBP_CampaignContent_Act_Outro_WBP_InputActionButton_New_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature");
+	Params::WBP_CampaignContent_Act_Outro_C_SetEntryState Parms{};
 
-	Params::WBP_CampaignContent_Act_Outro_C_BndEvt__WBP_CampaignContent_Act_Outro_WBP_InputActionButton_New_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CampaignContent_Act_Outro.WBP_CampaignContent_Act_Outro_C.ExecuteUbergraph_WBP_CampaignContent_Act_Outro
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CampaignContent_Act_Outro_C::ExecuteUbergraph_WBP_CampaignContent_Act_Outro(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignContent_Act_Outro_C", "ExecuteUbergraph_WBP_CampaignContent_Act_Outro");
-
-	Params::WBP_CampaignContent_Act_Outro_C_ExecuteUbergraph_WBP_CampaignContent_Act_Outro Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CampaignContent_Act_Outro.WBP_CampaignContent_Act_Outro_C.GetEntryState
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESBZCampaignEntryState                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-ESBZCampaignEntryState UWBP_CampaignContent_Act_Outro_C::GetEntryState()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignContent_Act_Outro_C", "GetEntryState");
-
-	Params::WBP_CampaignContent_Act_Outro_C_GetEntryState Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_CampaignContent_Act_Outro.WBP_CampaignContent_Act_Outro_C.PostPush_3AD43A8C4EB12AA0C6DDC2A28BE3CCBF
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CampaignContent_Act_Outro_C::PostPush_3AD43A8C4EB12AA0C6DDC2A28BE3CCBF(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignContent_Act_Outro_C", "PostPush_3AD43A8C4EB12AA0C6DDC2A28BE3CCBF");
-
-	Params::WBP_CampaignContent_Act_Outro_C_PostPush_3AD43A8C4EB12AA0C6DDC2A28BE3CCBF Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CampaignContent_Act_Outro.WBP_CampaignContent_Act_Outro_C.PrePush_3AD43A8C4EB12AA0C6DDC2A28BE3CCBF
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CampaignContent_Act_Outro_C::PrePush_3AD43A8C4EB12AA0C6DDC2A28BE3CCBF(class USBZMenuStackScreenWidget* MenuWidget)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignContent_Act_Outro_C", "PrePush_3AD43A8C4EB12AA0C6DDC2A28BE3CCBF");
-
-	Params::WBP_CampaignContent_Act_Outro_C_PrePush_3AD43A8C4EB12AA0C6DDC2A28BE3CCBF Parms{};
-
-	Parms.MenuWidget = MenuWidget;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CampaignContent_Act_Outro.WBP_CampaignContent_Act_Outro_C.PushActScreen
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZCampaignActData*              ActData                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CampaignContent_Act_Outro_C::PushActScreen(class USBZCampaignActData* ActData)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignContent_Act_Outro_C", "PushActScreen");
-
-	Params::WBP_CampaignContent_Act_Outro_C_PushActScreen Parms{};
-
-	Parms.ActData = ActData;
+	Parms.NewState = NewState;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -143,10 +41,8 @@ void UWBP_CampaignContent_Act_Outro_C::PushActScreen(class USBZCampaignActData* 
 
 void UWBP_CampaignContent_Act_Outro_C::SetCampaignData(const class USBZCampaignBaseEntryData* Entry)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignContent_Act_Outro_C", "SetCampaignData");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetCampaignData", FnName));
 
 	Params::WBP_CampaignContent_Act_Outro_C_SetCampaignData Parms{};
 
@@ -156,21 +52,109 @@ void UWBP_CampaignContent_Act_Outro_C::SetCampaignData(const class USBZCampaignB
 }
 
 
-// Function WBP_CampaignContent_Act_Outro.WBP_CampaignContent_Act_Outro_C.SetEntryState
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_CampaignContent_Act_Outro.WBP_CampaignContent_Act_Outro_C.PushActScreen
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ESBZCampaignEntryState                  NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZCampaignActData*              ActData                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CampaignContent_Act_Outro_C::SetEntryState(ESBZCampaignEntryState NewState)
+void UWBP_CampaignContent_Act_Outro_C::PushActScreen(class USBZCampaignActData* ActData)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PushActScreen", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignContent_Act_Outro_C", "SetEntryState");
+	Params::WBP_CampaignContent_Act_Outro_C_PushActScreen Parms{};
 
-	Params::WBP_CampaignContent_Act_Outro_C_SetEntryState Parms{};
+	Parms.ActData = ActData;
 
-	Parms.NewState = NewState;
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CampaignContent_Act_Outro.WBP_CampaignContent_Act_Outro_C.PrePush_3AD43A8C4EB12AA0C6DDC2A28BE3CCBF
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CampaignContent_Act_Outro_C::PrePush_3AD43A8C4EB12AA0C6DDC2A28BE3CCBF(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PrePush_3AD43A8C4EB12AA0C6DDC2A28BE3CCBF", FnName));
+
+	Params::WBP_CampaignContent_Act_Outro_C_PrePush_3AD43A8C4EB12AA0C6DDC2A28BE3CCBF Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CampaignContent_Act_Outro.WBP_CampaignContent_Act_Outro_C.PostPush_3AD43A8C4EB12AA0C6DDC2A28BE3CCBF
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZMenuStackScreenWidget*        MenuWidget                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CampaignContent_Act_Outro_C::PostPush_3AD43A8C4EB12AA0C6DDC2A28BE3CCBF(class USBZMenuStackScreenWidget* MenuWidget)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PostPush_3AD43A8C4EB12AA0C6DDC2A28BE3CCBF", FnName));
+
+	Params::WBP_CampaignContent_Act_Outro_C_PostPush_3AD43A8C4EB12AA0C6DDC2A28BE3CCBF Parms{};
+
+	Parms.MenuWidget = MenuWidget;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CampaignContent_Act_Outro.WBP_CampaignContent_Act_Outro_C.GetEntryState
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESBZCampaignEntryState                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+ESBZCampaignEntryState UWBP_CampaignContent_Act_Outro_C::GetEntryState()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetEntryState", FnName));
+
+	Params::WBP_CampaignContent_Act_Outro_C_GetEntryState Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_CampaignContent_Act_Outro.WBP_CampaignContent_Act_Outro_C.ExecuteUbergraph_WBP_CampaignContent_Act_Outro
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CampaignContent_Act_Outro_C::ExecuteUbergraph_WBP_CampaignContent_Act_Outro(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_CampaignContent_Act_Outro_C", "ExecuteUbergraph_WBP_CampaignContent_Act_Outro", FuncInfo);
+
+	Params::WBP_CampaignContent_Act_Outro_C_ExecuteUbergraph_WBP_CampaignContent_Act_Outro Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CampaignContent_Act_Outro.WBP_CampaignContent_Act_Outro_C.BndEvt__WBP_CampaignContent_Act_Outro_WBP_InputActionButton_New_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CampaignContent_Act_Outro_C::BndEvt__WBP_CampaignContent_Act_Outro_WBP_InputActionButton_New_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CampaignContent_Act_Outro_WBP_InputActionButton_New_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature", FnName));
+
+	Params::WBP_CampaignContent_Act_Outro_C_BndEvt__WBP_CampaignContent_Act_Outro_WBP_InputActionButton_New_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature Parms{};
+
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ABP_SignExit_01_B_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SignExit_01_B_C;
 
 SDK_NAMESPACE_END

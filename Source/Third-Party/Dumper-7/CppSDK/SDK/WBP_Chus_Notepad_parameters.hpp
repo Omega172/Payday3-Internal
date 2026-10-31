@@ -14,14 +14,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_Chus_Notepad.WBP_Chus_Notepad_C.Set Header
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Chus_Notepad_C_Set_Header final
-{
-public:
-	class FText                                   Header;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-
 // Function WBP_Chus_Notepad.WBP_Chus_Notepad_C.SetName
 // 0x0010 (0x0010 - 0x0000)
 struct WBP_Chus_Notepad_C_SetName final
@@ -29,6 +21,16 @@ struct WBP_Chus_Notepad_C_SetName final
 public:
 	class FText                                   Name_0;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
+DUMPER7_ASSERTS_WBP_Chus_Notepad_C_SetName;
+
+// Function WBP_Chus_Notepad.WBP_Chus_Notepad_C.Set Header
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Chus_Notepad_C_Set_Header final
+{
+public:
+	class FText                                   Header;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_Chus_Notepad_C_Set_Header;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_HET5_AOE_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_HET5_AOE_C;
 
 SDK_NAMESPACE_END

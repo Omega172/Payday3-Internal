@@ -14,14 +14,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_SecurityScreenLarge.BP_SecurityScreenLarge_C.setInteraction
-// 0x0001 (0x0001 - 0x0000)
-struct BP_SecurityScreenLarge_C_setInteraction final
-{
-public:
-	bool                                          bEnabled;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_SecurityScreenLarge.BP_SecurityScreenLarge_C.UserConstructionScript
 // 0x0060 (0x0060 - 0x0000)
 struct BP_SecurityScreenLarge_C_UserConstructionScript final
@@ -45,6 +37,16 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_SecurityScreenLarge_C_UserConstructionScript;
+
+// Function BP_SecurityScreenLarge.BP_SecurityScreenLarge_C.setInteraction
+// 0x0001 (0x0001 - 0x0000)
+struct BP_SecurityScreenLarge_C_setInteraction final
+{
+public:
+	bool                                          bEnabled;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SecurityScreenLarge_C_setInteraction;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

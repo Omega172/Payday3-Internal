@@ -16,23 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ShockGrenade.BP_ShockGrenade_C.ExecuteUbergraph_BP_ShockGrenade
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ShockGrenade.BP_ShockGrenade_C.OnThrow
+// (Event, Protected, BlueprintEvent)
 
-void ABP_ShockGrenade_C::ExecuteUbergraph_BP_ShockGrenade(int32 EntryPoint)
+void ABP_ShockGrenade_C::OnThrow()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnThrow", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShockGrenade_C", "ExecuteUbergraph_BP_ShockGrenade");
-
-	Params::BP_ShockGrenade_C_ExecuteUbergraph_BP_ShockGrenade Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -41,26 +33,28 @@ void ABP_ShockGrenade_C::ExecuteUbergraph_BP_ShockGrenade(int32 EntryPoint)
 
 void ABP_ShockGrenade_C::OnArmed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShockGrenade_C", "OnArmed");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnArmed", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ShockGrenade.BP_ShockGrenade_C.OnThrow
-// (Event, Protected, BlueprintEvent)
+// Function BP_ShockGrenade.BP_ShockGrenade_C.ExecuteUbergraph_BP_ShockGrenade
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ShockGrenade_C::OnThrow()
+void ABP_ShockGrenade_C::ExecuteUbergraph_BP_ShockGrenade(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ShockGrenade_C", "ExecuteUbergraph_BP_ShockGrenade", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShockGrenade_C", "OnThrow");
+	Params::BP_ShockGrenade_C_ExecuteUbergraph_BP_ShockGrenade Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

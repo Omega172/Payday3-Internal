@@ -16,37 +16,45 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_CoolingSystem.WBP_CoolingSystem_C.Completed
+// Function WBP_CoolingSystem.WBP_CoolingSystem_C.Progress
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Percentage                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CoolingSystem_C::Progress(double Percentage)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Progress", FnName));
+
+	Params::WBP_CoolingSystem_C_Progress Parms{};
+
+	Parms.Percentage = Percentage;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CoolingSystem.WBP_CoolingSystem_C.NotActive
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_CoolingSystem_C::Completed()
+void UWBP_CoolingSystem_C::NotActive()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CoolingSystem_C", "Completed");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"NotActive", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_CoolingSystem.WBP_CoolingSystem_C.ExecuteUbergraph_WBP_CoolingSystem
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_CoolingSystem.WBP_CoolingSystem_C.Interrupted
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_CoolingSystem_C::ExecuteUbergraph_WBP_CoolingSystem(int32 EntryPoint)
+void UWBP_CoolingSystem_C::Interrupted()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Interrupted", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CoolingSystem_C", "ExecuteUbergraph_WBP_CoolingSystem");
-
-	Params::WBP_CoolingSystem_C_ExecuteUbergraph_WBP_CoolingSystem Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -57,10 +65,8 @@ void UWBP_CoolingSystem_C::ExecuteUbergraph_WBP_CoolingSystem(int32 EntryPoint)
 
 void UWBP_CoolingSystem_C::HideAllWidgetsButOne(class UWidget* WidgetToShow)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CoolingSystem_C", "HideAllWidgetsButOne");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HideAllWidgetsButOne", FnName));
 
 	Params::WBP_CoolingSystem_C_HideAllWidgetsButOne Parms{};
 
@@ -70,51 +76,33 @@ void UWBP_CoolingSystem_C::HideAllWidgetsButOne(class UWidget* WidgetToShow)
 }
 
 
-// Function WBP_CoolingSystem.WBP_CoolingSystem_C.Interrupted
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_CoolingSystem_C::Interrupted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CoolingSystem_C", "Interrupted");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CoolingSystem.WBP_CoolingSystem_C.NotActive
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_CoolingSystem_C::NotActive()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CoolingSystem_C", "NotActive");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CoolingSystem.WBP_CoolingSystem_C.Progress
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_CoolingSystem.WBP_CoolingSystem_C.ExecuteUbergraph_WBP_CoolingSystem
+// (Final, UbergraphFunction)
 // Parameters:
-// double                                  Percentage_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CoolingSystem_C::Progress(double Percentage_0)
+void UWBP_CoolingSystem_C::ExecuteUbergraph_WBP_CoolingSystem(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_CoolingSystem_C", "ExecuteUbergraph_WBP_CoolingSystem", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CoolingSystem_C", "Progress");
+	Params::WBP_CoolingSystem_C_ExecuteUbergraph_WBP_CoolingSystem Parms{};
 
-	Params::WBP_CoolingSystem_C_Progress Parms{};
-
-	Parms.Percentage_0 = Percentage_0;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CoolingSystem.WBP_CoolingSystem_C.Completed
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_CoolingSystem_C::Completed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Completed", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -35,14 +35,14 @@ public:
 	double                                        flashingEmissiveStrength;                          // 0x03A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_StaticInteraction_SprinklerSystem_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_StaticInteraction_SprinklerSystem_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
-	void ExecuteUbergraph_BP_StaticInteraction_SprinklerSystem(int32 EntryPoint);
-	class FText GetMarkerText();
-	void OnSabotaged(bool bSabotaged);
-	void ReceiveBeginPlay();
-	void toggleLight();
 	void UserConstructionScript();
+	void toggleLight();
+	void ReceiveBeginPlay();
+	void OnSabotaged(bool bSabotaged);
+	class FText GetMarkerText();
+	void ExecuteUbergraph_BP_StaticInteraction_SprinklerSystem(int32 EntryPoint);
+	void BndEvt__BP_StaticInteraction_SprinklerSystem_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
+	void BndEvt__BP_StaticInteraction_SprinklerSystem_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -58,5 +58,6 @@ public:
 		return GetDefaultObjImpl<ABP_StaticInteraction_SprinklerSystem_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_StaticInteraction_SprinklerSystem_C;
 
 SDK_NAMESPACE_END

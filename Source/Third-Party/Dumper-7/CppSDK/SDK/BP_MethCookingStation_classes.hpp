@@ -132,21 +132,21 @@ public:
 	struct FLinearColor                           FXColorBurned;                                     // 0x0948(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_MethCookingStation_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_MethCookingStation_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BP_OnIngredientAdded(int32 IngredientIndex);
-	void BP_OnStateChanged(ESBZCookingState OldState, ESBZCookingState NewState, bool bDoCosmetics);
-	void BP_OnStaticOrderGenerated(const TArray<int32>& Order);
-	void ExecuteUbergraph_BP_MethCookingStation(int32 EntryPoint);
-	void onStateChanged_Server(ESBZCookingState OldState, ESBZCookingState NewState);
-	void ReceiveBeginPlay();
-	void TurnOn__FinishedFunc();
-	void TurnOn__UpdateFunc();
-	void UserConstructionScript();
-	void Warm__FinishedFunc();
-	void Warm__UpdateFunc();
-	void WarmOff__FinishedFunc();
 	void WarmOff__UpdateFunc();
+	void WarmOff__FinishedFunc();
+	void Warm__UpdateFunc();
+	void Warm__FinishedFunc();
+	void UserConstructionScript();
+	void TurnOn__UpdateFunc();
+	void TurnOn__FinishedFunc();
+	void ReceiveBeginPlay();
+	void onStateChanged_Server(ESBZCookingState OldState, ESBZCookingState NewState);
+	void ExecuteUbergraph_BP_MethCookingStation(int32 EntryPoint);
+	void BP_OnStaticOrderGenerated(const TArray<int32>& Order_BP_OnStaticOrderGenerated);
+	void BP_OnStateChanged(ESBZCookingState OldState_BP_OnStateChanged, ESBZCookingState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged);
+	void BP_OnIngredientAdded(int32 IngredientIndex_BP_OnIngredientAdded);
+	void BndEvt__BP_MethCookingStation_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_MethCookingStation_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -162,5 +162,6 @@ public:
 		return GetDefaultObjImpl<ABP_MethCookingStation_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_MethCookingStation_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_PawnSpawn_DoorGuardLA_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PawnSpawn_DoorGuardLA_C;
 
 SDK_NAMESPACE_END

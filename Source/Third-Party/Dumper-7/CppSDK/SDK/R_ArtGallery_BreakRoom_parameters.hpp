@@ -16,14 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function R_ArtGallery_BreakRoom.R_ArtGallery_BreakRoom_C.ArtGallery_BreakRoomKeycardEvent
-// 0x0001 (0x0001 - 0x0000)
-struct R_ArtGallery_BreakRoom_C_ArtGallery_BreakRoomKeycardEvent final
-{
-public:
-	bool                                          GreenKeycard;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function R_ArtGallery_BreakRoom.R_ArtGallery_BreakRoom_C.ExecuteUbergraph_R_ArtGallery_BreakRoom
 // 0x0058 (0x0058 - 0x0000)
 struct R_ArtGallery_BreakRoom_C_ExecuteUbergraph_R_ArtGallery_BreakRoom final
@@ -41,6 +33,16 @@ public:
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_RemoteEvent_ReturnValue;                  // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_R_ArtGallery_BreakRoom_C_ExecuteUbergraph_R_ArtGallery_BreakRoom;
+
+// Function R_ArtGallery_BreakRoom.R_ArtGallery_BreakRoom_C.ArtGallery_BreakRoomKeycardEvent
+// 0x0001 (0x0001 - 0x0000)
+struct R_ArtGallery_BreakRoom_C_ArtGallery_BreakRoomKeycardEvent final
+{
+public:
+	bool                                          GreenKeycard;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_ArtGallery_BreakRoom_C_ArtGallery_BreakRoomKeycardEvent;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

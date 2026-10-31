@@ -34,12 +34,12 @@ public:
 	class ASBZPlayerTriggerVolume*                SBZPlayerTriggerVolume_1_ExecuteUbergraph_R_Bebe_PowerRoom_RefProperty; // 0x03E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__R_BranchBank_PowerRoom_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_3_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor);
-	void ExecuteUbergraph_R_Bebe_PowerRoom(int32 EntryPoint);
-	void HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState);
-	void OBJ_Is_Lance();
-	void OBJ_Is_Thermite();
 	void OnRandomPlacementStarted();
+	void OBJ_Is_Thermite();
+	void OBJ_Is_Lance();
+	void HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged);
+	void ExecuteUbergraph_R_Bebe_PowerRoom(int32 EntryPoint);
+	void BndEvt__R_BranchBank_PowerRoom_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_3_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor);
 
 public:
 	static class UClass* StaticClass()
@@ -55,5 +55,6 @@ public:
 		return GetDefaultObjImpl<AR_Bebe_PowerRoom_C>();
 	}
 };
+DUMPER7_ASSERTS_AR_Bebe_PowerRoom_C;
 
 SDK_NAMESPACE_END

@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_RareMineralsBag_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_RareMineralsBag_C;
 
 SDK_NAMESPACE_END

@@ -16,14 +16,14 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CH_Dozer.CH_Dozer_C
-// 0x0020 (0x21E0 - 0x21C0)
+// 0x0020 (0x2270 - 0x2250)
 class ACH_Dozer_C : public ACH_BaseCop_C
 {
 public:
-	class USphereComponent*                       Sphere_1;                                          // 0x21C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USBZDozerFacePlate*                     FacePlate;                                         // 0x21C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USphereComponent*                       Sphere;                                            // 0x21D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USBZTankAIComponent*                    SBZTankAI;                                         // 0x21D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USphereComponent*                       Sphere_1;                                          // 0x2250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZDozerFacePlate*                     FacePlate;                                         // 0x2258(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USphereComponent*                       Sphere;                                            // 0x2260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZTankAIComponent*                    SBZTankAI;                                         // 0x2268(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ACH_Dozer_C>();
 	}
 };
+DUMPER7_ASSERTS_ACH_Dozer_C;
 
 SDK_NAMESPACE_END

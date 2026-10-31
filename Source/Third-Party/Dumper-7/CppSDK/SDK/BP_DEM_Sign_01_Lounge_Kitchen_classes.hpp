@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_DEM_Sign_01_Lounge_Kitchen_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DEM_Sign_01_Lounge_Kitchen_C;
 
 SDK_NAMESPACE_END

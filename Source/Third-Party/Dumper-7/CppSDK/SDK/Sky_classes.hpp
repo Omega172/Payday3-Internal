@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ASky_C>();
 	}
 };
+DUMPER7_ASSERTS_ASky_C;
 
 SDK_NAMESPACE_END

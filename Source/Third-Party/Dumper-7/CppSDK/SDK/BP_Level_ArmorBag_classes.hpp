@@ -17,7 +17,7 @@ SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Level_ArmorBag.BP_Level_ArmorBag_C
 // 0x0000 (0x0710 - 0x0710)
-class ABP_Level_ArmorBag_C : public ABP_Placeable_ArmorBag_C
+class ABP_Level_ArmorBag_C final : public ABP_Placeable_ArmorBag_C
 {
 public:
 	static class UClass* StaticClass()
@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Level_ArmorBag_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Level_ArmorBag_C;
 
 SDK_NAMESPACE_END

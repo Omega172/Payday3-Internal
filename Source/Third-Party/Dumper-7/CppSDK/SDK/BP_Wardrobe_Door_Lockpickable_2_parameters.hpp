@@ -18,13 +18,34 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_Wardrobe_Door_Lockpickable_2.BP_Wardrobe_Door_Lockpickable_2_C.BP_OnMiniGameSuccess
-// 0x0001 (0x0001 - 0x0000)
-struct BP_Wardrobe_Door_Lockpickable_2_C_BP_OnMiniGameSuccess final
+// Function BP_Wardrobe_Door_Lockpickable_2.BP_Wardrobe_Door_Lockpickable_2_C.UserConstructionScript
+// 0x00B0 (0x00B0 - 0x0000)
+struct BP_Wardrobe_Door_Lockpickable_2_C_UserConstructionScript final
 {
 public:
-	bool                                          bDoCosmetics;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0000(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TMap<class USceneComponent*, struct FTransform> K2Node_MakeMap_Map;                              // 0x0060(0x0050)(ContainsInstancedReference)
 };
+DUMPER7_ASSERTS_BP_Wardrobe_Door_Lockpickable_2_C_UserConstructionScript;
+
+// Function BP_Wardrobe_Door_Lockpickable_2.BP_Wardrobe_Door_Lockpickable_2_C.PopulateSpawnInformationMap
+// 0x0050 (0x0050 - 0x0000)
+struct BP_Wardrobe_Door_Lockpickable_2_C_PopulateSpawnInformationMap final
+{
+public:
+	TMap<class USceneComponent*, struct FTransform> InOutSpawnDataMap;                               // 0x0000(0x0050)(Parm, OutParm, ContainsInstancedReference)
+};
+DUMPER7_ASSERTS_BP_Wardrobe_Door_Lockpickable_2_C_PopulateSpawnInformationMap;
+
+// Function BP_Wardrobe_Door_Lockpickable_2.BP_Wardrobe_Door_Lockpickable_2_C.OnActorSpawned
+// 0x0010 (0x0010 - 0x0000)
+struct BP_Wardrobe_Door_Lockpickable_2_C_OnActorSpawned final
+{
+public:
+	class AActor*                                 SpawnedActor;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        AttachParent;                                      // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Wardrobe_Door_Lockpickable_2_C_OnActorSpawned;
 
 // Function BP_Wardrobe_Door_Lockpickable_2.BP_Wardrobe_Door_Lockpickable_2_C.ExecuteUbergraph_BP_Wardrobe_Door_Lockpickable_2
 // 0x0290 (0x0290 - 0x0000)
@@ -54,32 +75,16 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0288(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x028C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Wardrobe_Door_Lockpickable_2_C_ExecuteUbergraph_BP_Wardrobe_Door_Lockpickable_2;
 
-// Function BP_Wardrobe_Door_Lockpickable_2.BP_Wardrobe_Door_Lockpickable_2_C.OnActorSpawned
-// 0x0010 (0x0010 - 0x0000)
-struct BP_Wardrobe_Door_Lockpickable_2_C_OnActorSpawned final
+// Function BP_Wardrobe_Door_Lockpickable_2.BP_Wardrobe_Door_Lockpickable_2_C.BP_OnMiniGameSuccess
+// 0x0001 (0x0001 - 0x0000)
+struct BP_Wardrobe_Door_Lockpickable_2_C_BP_OnMiniGameSuccess final
 {
 public:
-	class AActor*                                 SpawnedActor;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        AttachParent;                                      // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_BP_OnMiniGameSuccess;                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_Wardrobe_Door_Lockpickable_2.BP_Wardrobe_Door_Lockpickable_2_C.PopulateSpawnInformationMap
-// 0x0050 (0x0050 - 0x0000)
-struct BP_Wardrobe_Door_Lockpickable_2_C_PopulateSpawnInformationMap final
-{
-public:
-	TMap<class USceneComponent*, struct FTransform> InOutSpawnDataMap;                               // 0x0000(0x0050)(Parm, OutParm, ContainsInstancedReference)
-};
-
-// Function BP_Wardrobe_Door_Lockpickable_2.BP_Wardrobe_Door_Lockpickable_2_C.UserConstructionScript
-// 0x00B0 (0x00B0 - 0x0000)
-struct BP_Wardrobe_Door_Lockpickable_2_C_UserConstructionScript final
-{
-public:
-	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0000(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TMap<class USceneComponent*, struct FTransform> K2Node_MakeMap_Map;                              // 0x0060(0x0050)(ContainsInstancedReference)
-};
+DUMPER7_ASSERTS_BP_Wardrobe_Door_Lockpickable_2_C_BP_OnMiniGameSuccess;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

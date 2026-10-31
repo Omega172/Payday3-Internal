@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_CustomNetting_BridgeBorder_01_A_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CustomNetting_BridgeBorder_01_A_C;
 
 SDK_NAMESPACE_END

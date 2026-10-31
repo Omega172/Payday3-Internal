@@ -16,87 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_IGl_BRE_ATT_2HIT_Animated.BP_IGl_BRE_ATT_2HIT_Animated_C.BndEvt__BP_IGl_BRE_ATT_2HIT_Animated_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_IGl_BRE_ATT_2HIT_Animated.BP_IGl_BRE_ATT_2HIT_Animated_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_IGl_BRE_ATT_2HIT_Animated_C::BndEvt__BP_IGl_BRE_ATT_2HIT_Animated_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_IGl_BRE_ATT_2HIT_Animated_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_IGl_BRE_ATT_2HIT_Animated_C", "BndEvt__BP_IGl_BRE_ATT_2HIT_Animated_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_IGl_BRE_ATT_2HIT_Animated_C_BndEvt__BP_IGl_BRE_ATT_2HIT_Animated_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_IGl_BRE_ATT_2HIT_Animated.BP_IGl_BRE_ATT_2HIT_Animated_C.ExecuteUbergraph_BP_IGl_BRE_ATT_2HIT_Animated
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_IGl_BRE_ATT_2HIT_Animated_C::ExecuteUbergraph_BP_IGl_BRE_ATT_2HIT_Animated(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_IGl_BRE_ATT_2HIT_Animated_C", "ExecuteUbergraph_BP_IGl_BRE_ATT_2HIT_Animated");
-
-	Params::BP_IGl_BRE_ATT_2HIT_Animated_C_ExecuteUbergraph_BP_IGl_BRE_ATT_2HIT_Animated Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_IGl_BRE_ATT_2HIT_Animated.BP_IGl_BRE_ATT_2HIT_Animated_C.open_timeline__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_IGl_BRE_ATT_2HIT_Animated_C::open_timeline__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_IGl_BRE_ATT_2HIT_Animated_C", "open_timeline__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_IGl_BRE_ATT_2HIT_Animated.BP_IGl_BRE_ATT_2HIT_Animated_C.open_timeline__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_IGl_BRE_ATT_2HIT_Animated_C::open_timeline__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_IGl_BRE_ATT_2HIT_Animated_C", "open_timeline__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_IGl_BRE_ATT_2HIT_Animated.BP_IGl_BRE_ATT_2HIT_Animated_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_IGl_BRE_ATT_2HIT_Animated_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_IGl_BRE_ATT_2HIT_Animated_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -109,10 +35,8 @@ void ABP_IGl_BRE_ATT_2HIT_Animated_C::ReceiveBeginPlay()
 
 void ABP_IGl_BRE_ATT_2HIT_Animated_C::setInteraction(bool bEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_IGl_BRE_ATT_2HIT_Animated_C", "setInteraction");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setInteraction", FnName));
 
 	Params::BP_IGl_BRE_ATT_2HIT_Animated_C_setInteraction Parms{};
 
@@ -122,17 +46,79 @@ void ABP_IGl_BRE_ATT_2HIT_Animated_C::setInteraction(bool bEnabled)
 }
 
 
-// Function BP_IGl_BRE_ATT_2HIT_Animated.BP_IGl_BRE_ATT_2HIT_Animated_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_IGl_BRE_ATT_2HIT_Animated.BP_IGl_BRE_ATT_2HIT_Animated_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_IGl_BRE_ATT_2HIT_Animated_C::UserConstructionScript()
+void ABP_IGl_BRE_ATT_2HIT_Animated_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_IGl_BRE_ATT_2HIT_Animated_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_IGl_BRE_ATT_2HIT_Animated.BP_IGl_BRE_ATT_2HIT_Animated_C.open_timeline__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_IGl_BRE_ATT_2HIT_Animated_C::open_timeline__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"open_timeline__UpdateFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_IGl_BRE_ATT_2HIT_Animated.BP_IGl_BRE_ATT_2HIT_Animated_C.open_timeline__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_IGl_BRE_ATT_2HIT_Animated_C::open_timeline__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"open_timeline__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_IGl_BRE_ATT_2HIT_Animated.BP_IGl_BRE_ATT_2HIT_Animated_C.ExecuteUbergraph_BP_IGl_BRE_ATT_2HIT_Animated
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_IGl_BRE_ATT_2HIT_Animated_C::ExecuteUbergraph_BP_IGl_BRE_ATT_2HIT_Animated(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_IGl_BRE_ATT_2HIT_Animated_C", "ExecuteUbergraph_BP_IGl_BRE_ATT_2HIT_Animated", FuncInfo);
+
+	Params::BP_IGl_BRE_ATT_2HIT_Animated_C_ExecuteUbergraph_BP_IGl_BRE_ATT_2HIT_Animated Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_IGl_BRE_ATT_2HIT_Animated.BP_IGl_BRE_ATT_2HIT_Animated_C.BndEvt__BP_IGl_BRE_ATT_2HIT_Animated_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_IGl_BRE_ATT_2HIT_Animated_C::BndEvt__BP_IGl_BRE_ATT_2HIT_Animated_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_IGl_BRE_ATT_2HIT_Animated_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_IGl_BRE_ATT_2HIT_Animated_C_BndEvt__BP_IGl_BRE_ATT_2HIT_Animated_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

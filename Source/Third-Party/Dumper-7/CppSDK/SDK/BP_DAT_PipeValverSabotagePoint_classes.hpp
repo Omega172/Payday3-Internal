@@ -32,14 +32,14 @@ public:
 	TMulticastInlineDelegate<void()>              FixedSabotage;                                     // 0x0468(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__BP_DAT_CoolingSystem_InteractableComponent_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_DAT_CoolingSystem_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_DAT_SprinklerSabotagePoint1_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_DAT_PipeValverSabotagePoint(int32 EntryPoint);
-	void Interrupted(bool bSabotaged);
-	void ReceiveBeginPlay();
-	void Timeline_0__FinishedFunc();
 	void Timeline_0__UpdateFunc();
+	void Timeline_0__FinishedFunc();
+	void ReceiveBeginPlay();
+	void Interrupted(bool bSabotaged);
+	void ExecuteUbergraph_BP_DAT_PipeValverSabotagePoint(int32 EntryPoint);
+	void BndEvt__BP_DAT_SprinklerSabotagePoint1_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_DAT_CoolingSystem_InteractableComponent_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_DAT_CoolingSystem_InteractableComponent_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -55,5 +55,6 @@ public:
 		return GetDefaultObjImpl<ABP_DAT_PipeValverSabotagePoint_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DAT_PipeValverSabotagePoint_C;
 
 SDK_NAMESPACE_END

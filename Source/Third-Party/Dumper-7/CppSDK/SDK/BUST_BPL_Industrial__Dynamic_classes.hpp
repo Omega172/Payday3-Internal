@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABUST_BPL_Industrial__Dynamic_C>();
 	}
 };
+DUMPER7_ASSERTS_ABUST_BPL_Industrial__Dynamic_C;
 
 SDK_NAMESPACE_END

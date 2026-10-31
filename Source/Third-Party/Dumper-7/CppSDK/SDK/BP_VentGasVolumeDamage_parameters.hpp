@@ -16,37 +16,41 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_VentGasVolumeDamage.BP_VentGasVolumeDamage_C.GetVolumeDamageAddedTagContainer
-// 0x0020 (0x0020 - 0x0000)
-struct BP_VentGasVolumeDamage_C_GetVolumeDamageAddedTagContainer final
+// Function BP_VentGasVolumeDamage.BP_VentGasVolumeDamage_C.GetVolumeDamageType
+// 0x0008 (0x0008 - 0x0000)
+struct BP_VentGasVolumeDamage_C_GetVolumeDamageType final
 {
 public:
-	struct FGameplayTagContainer                  ReturnValue;                                       // 0x0000(0x0020)(Parm, OutParm, ReturnParm)
+	TSubclassOf<class USBZDamageType>             ReturnValue_GetVolumeDamageType;                   // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 };
-
-// Function BP_VentGasVolumeDamage.BP_VentGasVolumeDamage_C.GetVolumeDamagePerSecond
-// 0x0004 (0x0004 - 0x0000)
-struct BP_VentGasVolumeDamage_C_GetVolumeDamagePerSecond final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_VentGasVolumeDamage_C_GetVolumeDamageType;
 
 // Function BP_VentGasVolumeDamage.BP_VentGasVolumeDamage_C.GetVolumeDamageTickSeconds
 // 0x0004 (0x0004 - 0x0000)
 struct BP_VentGasVolumeDamage_C_GetVolumeDamageTickSeconds final
 {
 public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         ReturnValue_GetVolumeDamageTickSeconds;            // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_VentGasVolumeDamage_C_GetVolumeDamageTickSeconds;
 
-// Function BP_VentGasVolumeDamage.BP_VentGasVolumeDamage_C.GetVolumeDamageType
-// 0x0008 (0x0008 - 0x0000)
-struct BP_VentGasVolumeDamage_C_GetVolumeDamageType final
+// Function BP_VentGasVolumeDamage.BP_VentGasVolumeDamage_C.GetVolumeDamagePerSecond
+// 0x0004 (0x0004 - 0x0000)
+struct BP_VentGasVolumeDamage_C_GetVolumeDamagePerSecond final
 {
 public:
-	TSubclassOf<class USBZDamageType>             ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	float                                         ReturnValue_GetVolumeDamagePerSecond;              // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_VentGasVolumeDamage_C_GetVolumeDamagePerSecond;
+
+// Function BP_VentGasVolumeDamage.BP_VentGasVolumeDamage_C.GetVolumeDamageAddedTagContainer
+// 0x0020 (0x0020 - 0x0000)
+struct BP_VentGasVolumeDamage_C_GetVolumeDamageAddedTagContainer final
+{
+public:
+	struct FGameplayTagContainer                  ReturnValue_GetVolumeDamageAddedTagContainer;      // 0x0000(0x0020)(Parm, OutParm, ReturnParm)
+};
+DUMPER7_ASSERTS_BP_VentGasVolumeDamage_C_GetVolumeDamageAddedTagContainer;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

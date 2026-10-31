@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ABP_BaggableCatFigureBase_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BaggableCatFigureBase_C;
 
 SDK_NAMESPACE_END

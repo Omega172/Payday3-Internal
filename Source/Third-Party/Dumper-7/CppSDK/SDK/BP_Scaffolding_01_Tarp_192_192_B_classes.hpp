@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Scaffolding_01_Tarp_192_192_B_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Scaffolding_01_Tarp_192_192_B_C;
 
 SDK_NAMESPACE_END

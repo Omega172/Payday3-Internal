@@ -33,10 +33,10 @@ public:
 	double                                        ZiplineUnfold_Duration;                            // 0x0428(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnZiplineEnabledChanged(bool bEnabled, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_Zipline(int32 EntryPoint);
-	void ReceiveBeginPlay();
 	void UserConstructionScript();
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_Zipline(int32 EntryPoint);
+	void BP_OnZiplineEnabledChanged(bool bEnabled_BP_OnZiplineEnabledChanged, bool bDoCosmetics_BP_OnZiplineEnabledChanged);
 
 public:
 	static class UClass* StaticClass()
@@ -52,5 +52,6 @@ public:
 		return GetDefaultObjImpl<ABP_Zipline_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Zipline_C;
 
 SDK_NAMESPACE_END

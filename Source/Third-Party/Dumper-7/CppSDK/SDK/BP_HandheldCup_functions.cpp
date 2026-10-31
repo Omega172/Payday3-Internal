@@ -16,6 +16,18 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_HandheldCup.BP_HandheldCup_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_HandheldCup_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_HandheldCup.BP_HandheldCup_C.ExecuteUbergraph_BP_HandheldCup
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,30 +35,14 @@ SDK_NAMESPACE_START
 
 void ABP_HandheldCup_C::ExecuteUbergraph_BP_HandheldCup(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HandheldCup_C", "ExecuteUbergraph_BP_HandheldCup");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_HandheldCup_C", "ExecuteUbergraph_BP_HandheldCup", FuncInfo);
 
 	Params::BP_HandheldCup_C_ExecuteUbergraph_BP_HandheldCup Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_HandheldCup.BP_HandheldCup_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_HandheldCup_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HandheldCup_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -16,21 +16,31 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_LGT_NeonTubeHolders_White1.BP_LGT_NeonTubeHolders_White1_C.ExecuteUbergraph_BP_LGT_NeonTubeHolders_White1
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_LGT_NeonTubeHolders_White1.BP_LGT_NeonTubeHolders_White1_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_LGT_NeonTubeHolders_White1_C::ExecuteUbergraph_BP_LGT_NeonTubeHolders_White1(int32 EntryPoint)
+void ABP_LGT_NeonTubeHolders_White1_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LGT_NeonTubeHolders_White1_C", "ExecuteUbergraph_BP_LGT_NeonTubeHolders_White1");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_LGT_NeonTubeHolders_White1_C_ExecuteUbergraph_BP_LGT_NeonTubeHolders_White1 Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+// Function BP_LGT_NeonTubeHolders_White1.BP_LGT_NeonTubeHolders_White1_C.SetStateFunction
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// Enum_LampStages                         States                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LGT_NeonTubeHolders_White1_C::SetStateFunction(Enum_LampStages States)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetStateFunction", FnName));
+
+	Params::BP_LGT_NeonTubeHolders_White1_C_SetStateFunction Parms{};
+
+	Parms.States = States;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -39,58 +49,40 @@ void ABP_LGT_NeonTubeHolders_White1_C::ExecuteUbergraph_BP_LGT_NeonTubeHolders_W
 // Function BP_LGT_NeonTubeHolders_White1.BP_LGT_NeonTubeHolders_White1_C.OnStateChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   OldState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LGT_NeonTubeHolders_White1_C::OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics)
+void ABP_LGT_NeonTubeHolders_White1_C::OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LGT_NeonTubeHolders_White1_C", "OnStateChanged");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
 	Params::BP_LGT_NeonTubeHolders_White1_C_OnStateChanged Parms{};
 
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.OldState_OnStateChanged = OldState_OnStateChanged;
+	Parms.NewState_OnStateChanged = NewState_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_LGT_NeonTubeHolders_White1.BP_LGT_NeonTubeHolders_White1_C.SetStateFunction
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_LGT_NeonTubeHolders_White1.BP_LGT_NeonTubeHolders_White1_C.ExecuteUbergraph_BP_LGT_NeonTubeHolders_White1
+// (Final, UbergraphFunction)
 // Parameters:
-// Enum_LampStages                         States_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LGT_NeonTubeHolders_White1_C::SetStateFunction(Enum_LampStages States_0)
+void ABP_LGT_NeonTubeHolders_White1_C::ExecuteUbergraph_BP_LGT_NeonTubeHolders_White1(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_LGT_NeonTubeHolders_White1_C", "ExecuteUbergraph_BP_LGT_NeonTubeHolders_White1", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LGT_NeonTubeHolders_White1_C", "SetStateFunction");
+	Params::BP_LGT_NeonTubeHolders_White1_C_ExecuteUbergraph_BP_LGT_NeonTubeHolders_White1 Parms{};
 
-	Params::BP_LGT_NeonTubeHolders_White1_C_SetStateFunction Parms{};
-
-	Parms.States_0 = States_0;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LGT_NeonTubeHolders_White1.BP_LGT_NeonTubeHolders_White1_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_LGT_NeonTubeHolders_White1_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LGT_NeonTubeHolders_White1_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

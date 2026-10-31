@@ -16,6 +16,18 @@
 
 SDK_NAMESPACE_START
 
+// Function E_Cookie.E_Cookie_C.OnRandomPlacementStarted
+// (Event, Public, BlueprintEvent)
+
+void AE_Cookie_C::OnRandomPlacementStarted()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRandomPlacementStarted", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function E_Cookie.E_Cookie_C.ExecuteUbergraph_E_Cookie
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,30 +35,14 @@ SDK_NAMESPACE_START
 
 void AE_Cookie_C::ExecuteUbergraph_E_Cookie(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Cookie_C", "ExecuteUbergraph_E_Cookie");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "E_Cookie_C", "ExecuteUbergraph_E_Cookie", FuncInfo);
 
 	Params::E_Cookie_C_ExecuteUbergraph_E_Cookie Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function E_Cookie.E_Cookie_C.OnRandomPlacementStarted
-// (Event, Public, BlueprintEvent)
-
-void AE_Cookie_C::OnRandomPlacementStarted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Cookie_C", "OnRandomPlacementStarted");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

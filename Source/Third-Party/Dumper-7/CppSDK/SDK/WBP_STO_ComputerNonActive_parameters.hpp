@@ -21,6 +21,7 @@ struct WBP_STO_ComputerNonActive_C_ExecuteUbergraph_WBP_STO_ComputerNonActive fi
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_WBP_STO_ComputerNonActive_C_ExecuteUbergraph_WBP_STO_ComputerNonActive;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

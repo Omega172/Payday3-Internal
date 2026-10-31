@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_PortableSSD_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_PortableSSD_C;
 
 SDK_NAMESPACE_END

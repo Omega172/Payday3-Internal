@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_Car_PuddleSplash_FX.BP_Car_PuddleSplash_FX_C.ReceiveActorBeginOverlap
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class AActor*                           OtherActor_ReceiveActorBeginOverlap                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Car_PuddleSplash_FX_C::ReceiveActorBeginOverlap(class AActor* OtherActor_ReceiveActorBeginOverlap)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveActorBeginOverlap", FnName));
+
+	Params::BP_Car_PuddleSplash_FX_C_ReceiveActorBeginOverlap Parms{};
+
+	Parms.OtherActor_ReceiveActorBeginOverlap = OtherActor_ReceiveActorBeginOverlap;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_Car_PuddleSplash_FX.BP_Car_PuddleSplash_FX_C.ExecuteUbergraph_BP_Car_PuddleSplash_FX
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,34 +41,12 @@ SDK_NAMESPACE_START
 
 void ABP_Car_PuddleSplash_FX_C::ExecuteUbergraph_BP_Car_PuddleSplash_FX(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Car_PuddleSplash_FX_C", "ExecuteUbergraph_BP_Car_PuddleSplash_FX");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Car_PuddleSplash_FX_C", "ExecuteUbergraph_BP_Car_PuddleSplash_FX", FuncInfo);
 
 	Params::BP_Car_PuddleSplash_FX_C_ExecuteUbergraph_BP_Car_PuddleSplash_FX Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Car_PuddleSplash_FX.BP_Car_PuddleSplash_FX_C.ReceiveActorBeginOverlap
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Car_PuddleSplash_FX_C::ReceiveActorBeginOverlap(class AActor* OtherActor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Car_PuddleSplash_FX_C", "ReceiveActorBeginOverlap");
-
-	Params::BP_Car_PuddleSplash_FX_C_ReceiveActorBeginOverlap Parms{};
-
-	Parms.OtherActor = OtherActor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

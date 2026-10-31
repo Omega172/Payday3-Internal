@@ -40,18 +40,18 @@ public:
 	TMulticastInlineDelegate<void(bool opened)>   onHatchCompleteInteraction;                        // 0x03B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__BP_ONE_ElevatorHatch_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_ONE_ElevatorHatch_01_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_ONE_ElevatorHatch_01_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_ONE_ElevatorHatch_01(int32 EntryPoint);
-	void goToState(bool open, bool animate);
-	void interactHatch_timeline__FinishedFunc();
-	void interactHatch_timeline__UpdateFunc();
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void openHatch_timeline__FinishedFunc();
-	void openHatch_timeline__UpdateFunc();
-	void setInteraction(bool enabled);
 	void UserConstructionScript();
+	void setInteraction(bool enabled);
+	void openHatch_timeline__UpdateFunc();
+	void openHatch_timeline__FinishedFunc();
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void interactHatch_timeline__UpdateFunc();
+	void interactHatch_timeline__FinishedFunc();
+	void goToState(bool open, bool animate);
+	void ExecuteUbergraph_BP_ONE_ElevatorHatch_01(int32 EntryPoint);
+	void BndEvt__BP_ONE_ElevatorHatch_01_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_ONE_ElevatorHatch_01_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_ONE_ElevatorHatch_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -67,5 +67,6 @@ public:
 		return GetDefaultObjImpl<ABP_ONE_ElevatorHatch_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ONE_ElevatorHatch_01_C;
 
 SDK_NAMESPACE_END

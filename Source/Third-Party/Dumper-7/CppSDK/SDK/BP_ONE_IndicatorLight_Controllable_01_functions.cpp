@@ -16,45 +16,31 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ONE_IndicatorLight_Controllable_01.BP_ONE_IndicatorLight_Controllable_01_C.ExecuteUbergraph_BP_ONE_IndicatorLight_Controllable_01
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ONE_IndicatorLight_Controllable_01.BP_ONE_IndicatorLight_Controllable_01_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_ONE_IndicatorLight_Controllable_01_C::ExecuteUbergraph_BP_ONE_IndicatorLight_Controllable_01(int32 EntryPoint)
+void ABP_ONE_IndicatorLight_Controllable_01_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ONE_IndicatorLight_Controllable_01_C", "ExecuteUbergraph_BP_ONE_IndicatorLight_Controllable_01");
-
-	Params::BP_ONE_IndicatorLight_Controllable_01_C_ExecuteUbergraph_BP_ONE_IndicatorLight_Controllable_01 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ONE_IndicatorLight_Controllable_01.BP_ONE_IndicatorLight_Controllable_01_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
+// Function BP_ONE_IndicatorLight_Controllable_01.BP_ONE_IndicatorLight_Controllable_01_C.setLightState
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   state                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ONE_IndicatorLight_Controllable_01_C::OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics)
+void ABP_ONE_IndicatorLight_Controllable_01_C::setLightState(int32 state)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setLightState", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ONE_IndicatorLight_Controllable_01_C", "OnStateChanged");
+	Params::BP_ONE_IndicatorLight_Controllable_01_C_setLightState Parms{};
 
-	Params::BP_ONE_IndicatorLight_Controllable_01_C_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.state = state;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -68,10 +54,8 @@ void ABP_ONE_IndicatorLight_Controllable_01_C::OnStateChanged(int32 OldState, in
 
 void ABP_ONE_IndicatorLight_Controllable_01_C::setLight(double intensity, const struct FLinearColor& color)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ONE_IndicatorLight_Controllable_01_C", "setLight");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setLight", FnName));
 
 	Params::BP_ONE_IndicatorLight_Controllable_01_C_setLight Parms{};
 
@@ -82,37 +66,43 @@ void ABP_ONE_IndicatorLight_Controllable_01_C::setLight(double intensity, const 
 }
 
 
-// Function BP_ONE_IndicatorLight_Controllable_01.BP_ONE_IndicatorLight_Controllable_01_C.setLightState
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_ONE_IndicatorLight_Controllable_01.BP_ONE_IndicatorLight_Controllable_01_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   state                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   OldState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ONE_IndicatorLight_Controllable_01_C::setLightState(int32 state)
+void ABP_ONE_IndicatorLight_Controllable_01_C::OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ONE_IndicatorLight_Controllable_01_C", "setLightState");
+	Params::BP_ONE_IndicatorLight_Controllable_01_C_OnStateChanged Parms{};
 
-	Params::BP_ONE_IndicatorLight_Controllable_01_C_setLightState Parms{};
-
-	Parms.state = state;
+	Parms.OldState_OnStateChanged = OldState_OnStateChanged;
+	Parms.NewState_OnStateChanged = NewState_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_ONE_IndicatorLight_Controllable_01.BP_ONE_IndicatorLight_Controllable_01_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_ONE_IndicatorLight_Controllable_01.BP_ONE_IndicatorLight_Controllable_01_C.ExecuteUbergraph_BP_ONE_IndicatorLight_Controllable_01
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ONE_IndicatorLight_Controllable_01_C::UserConstructionScript()
+void ABP_ONE_IndicatorLight_Controllable_01_C::ExecuteUbergraph_BP_ONE_IndicatorLight_Controllable_01(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ONE_IndicatorLight_Controllable_01_C", "ExecuteUbergraph_BP_ONE_IndicatorLight_Controllable_01", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ONE_IndicatorLight_Controllable_01_C", "UserConstructionScript");
+	Params::BP_ONE_IndicatorLight_Controllable_01_C_ExecuteUbergraph_BP_ONE_IndicatorLight_Controllable_01 Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

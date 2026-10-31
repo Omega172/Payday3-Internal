@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function M_Shiya_Architecture.M_Shiya_Architecture_C.HeistStateChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EPD3HeistState                          OldHeistState_HeistStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPD3HeistState                          CurrentHeistState_HeistStateChanged                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AM_Shiya_Architecture_C::HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HeistStateChanged", FnName));
+
+	Params::M_Shiya_Architecture_C_HeistStateChanged Parms{};
+
+	Parms.OldHeistState_HeistStateChanged = OldHeistState_HeistStateChanged;
+	Parms.CurrentHeistState_HeistStateChanged = CurrentHeistState_HeistStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function M_Shiya_Architecture.M_Shiya_Architecture_C.ExecuteUbergraph_M_Shiya_Architecture
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,36 +43,12 @@ SDK_NAMESPACE_START
 
 void AM_Shiya_Architecture_C::ExecuteUbergraph_M_Shiya_Architecture(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("M_Shiya_Architecture_C", "ExecuteUbergraph_M_Shiya_Architecture");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "M_Shiya_Architecture_C", "ExecuteUbergraph_M_Shiya_Architecture", FuncInfo);
 
 	Params::M_Shiya_Architecture_C_ExecuteUbergraph_M_Shiya_Architecture Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function M_Shiya_Architecture.M_Shiya_Architecture_C.HeistStateChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// EPD3HeistState                          OldHeistState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPD3HeistState                          CurrentHeistState                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AM_Shiya_Architecture_C::HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("M_Shiya_Architecture_C", "HeistStateChanged");
-
-	Params::M_Shiya_Architecture_C_HeistStateChanged Parms{};
-
-	Parms.OldHeistState = OldHeistState;
-	Parms.CurrentHeistState = CurrentHeistState;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

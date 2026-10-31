@@ -35,17 +35,17 @@ public:
 	class FText                                   promptNextSlide;                                   // 0x0618(0x0010)(Edit, BlueprintVisible)
 
 public:
-	void BndEvt__BP_GenericHackableComputer_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_GenericHackableComputer_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_GenericHackableComputer_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BP_DisplayTextIndexChanged(const int32 NewIndex);
-	void BP_GainedAccess();
-	void BP_OnHackingStarted(const class FText& ProcessText);
-	void BP_OnStateChanged(ESBZHackableActorState OldState, ESBZHackableActorState NewState);
-	void BP_UpdateCustomSuccessText(const class FText& SucessText);
-	void BP_UpdateProgressBar(int32 ProgressDone);
-	void ExecuteUbergraph_BP_GenericHackableComputer(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_GenericHackableComputer(int32 EntryPoint);
+	void BP_UpdateProgressBar(int32 ProgressDone);
+	void BP_UpdateCustomSuccessText(const class FText& SucessText);
+	void BP_OnStateChanged(ESBZHackableActorState OldState, ESBZHackableActorState NewState);
+	void BP_OnHackingStarted(const class FText& ProcessText);
+	void BP_GainedAccess();
+	void BP_DisplayTextIndexChanged(const int32 NewIndex);
+	void BndEvt__BP_GenericHackableComputer_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_GenericHackableComputer_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_GenericHackableComputer_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 	bool VisionPredicate(const class AActor* Viewer) const;
 
@@ -63,5 +63,6 @@ public:
 		return GetDefaultObjImpl<ABP_GenericHackableComputer_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_GenericHackableComputer_C;
 
 SDK_NAMESPACE_END

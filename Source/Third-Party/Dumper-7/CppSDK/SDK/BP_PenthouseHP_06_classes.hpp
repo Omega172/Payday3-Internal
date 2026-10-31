@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_PenthouseHP_06_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PenthouseHP_06_C;
 
 SDK_NAMESPACE_END

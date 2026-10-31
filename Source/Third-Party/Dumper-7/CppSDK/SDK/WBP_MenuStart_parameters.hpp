@@ -14,6 +14,27 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_MenuStart.WBP_MenuStart_C.SetMenuText
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_MenuStart_C_SetMenuText final
+{
+public:
+	class FText                                   Menu1;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   Menu2;                                             // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   Menu3;                                             // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_MenuStart_C_SetMenuText;
+
+// Function WBP_MenuStart.WBP_MenuStart_C.SetFocusOn
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_MenuStart_C_SetFocusOn final
+{
+public:
+	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          NewParam;                                          // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MenuStart_C_SetFocusOn;
+
 // Function WBP_MenuStart.WBP_MenuStart_C.ExecuteUbergraph_WBP_MenuStart
 // 0x0040 (0x0040 - 0x0000)
 struct WBP_MenuStart_C_ExecuteUbergraph_WBP_MenuStart final
@@ -28,25 +49,7 @@ public:
 	class FText                                   K2Node_CustomEvent_Menu2;                          // 0x0020(0x0010)()
 	class FText                                   K2Node_CustomEvent_Menu3;                          // 0x0030(0x0010)()
 };
-
-// Function WBP_MenuStart.WBP_MenuStart_C.SetFocusOn
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_MenuStart_C_SetFocusOn final
-{
-public:
-	int32                                         Selection;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          NewParam;                                          // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WBP_MenuStart.WBP_MenuStart_C.SetMenuText
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_MenuStart_C_SetMenuText final
-{
-public:
-	class FText                                   Menu1;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class FText                                   Menu2;                                             // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class FText                                   Menu3;                                             // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
+DUMPER7_ASSERTS_WBP_MenuStart_C_ExecuteUbergraph_WBP_MenuStart;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

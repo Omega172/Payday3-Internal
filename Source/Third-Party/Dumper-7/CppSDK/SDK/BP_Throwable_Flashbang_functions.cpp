@@ -16,77 +16,25 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Throwable_Flashbang.BP_Throwable_Flashbang_C.BndEvt__BP_Throwable_Flashbang_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FHitResult&                ImpactResult                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// const struct FVector&                   ImpactVelocity                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Throwable_Flashbang.BP_Throwable_Flashbang_C.StopRandomRot
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_Throwable_Flashbang_C::BndEvt__BP_Throwable_Flashbang_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity)
+void ABP_Throwable_Flashbang_C::StopRandomRot()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StopRandomRot", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_Flashbang_C", "BndEvt__BP_Throwable_Flashbang_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature");
-
-	Params::BP_Throwable_Flashbang_C_BndEvt__BP_Throwable_Flashbang_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature Parms{};
-
-	Parms.ImpactResult = std::move(ImpactResult);
-	Parms.ImpactVelocity = std::move(ImpactVelocity);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Throwable_Flashbang.BP_Throwable_Flashbang_C.BndEvt__BP_Throwable_Flashbang_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FHitResult&                ImpactResult                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// Function BP_Throwable_Flashbang.BP_Throwable_Flashbang_C.StartRandomRot
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_Throwable_Flashbang_C::BndEvt__BP_Throwable_Flashbang_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature(const struct FHitResult& ImpactResult)
+void ABP_Throwable_Flashbang_C::StartRandomRot()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_Flashbang_C", "BndEvt__BP_Throwable_Flashbang_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature");
-
-	Params::BP_Throwable_Flashbang_C_BndEvt__BP_Throwable_Flashbang_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature Parms{};
-
-	Parms.ImpactResult = std::move(ImpactResult);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Throwable_Flashbang.BP_Throwable_Flashbang_C.ExecuteUbergraph_BP_Throwable_Flashbang
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Throwable_Flashbang_C::ExecuteUbergraph_BP_Throwable_Flashbang(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_Flashbang_C", "ExecuteUbergraph_BP_Throwable_Flashbang");
-
-	Params::BP_Throwable_Flashbang_C_ExecuteUbergraph_BP_Throwable_Flashbang Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Throwable_Flashbang.BP_Throwable_Flashbang_C.OnArmed
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Throwable_Flashbang_C::OnArmed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_Flashbang_C", "OnArmed");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StartRandomRot", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -99,10 +47,8 @@ void ABP_Throwable_Flashbang_C::OnArmed()
 
 void ABP_Throwable_Flashbang_C::ReceiveTick(float DeltaSeconds)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_Flashbang_C", "ReceiveTick");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveTick", FnName));
 
 	Params::BP_Throwable_Flashbang_C_ReceiveTick Parms{};
 
@@ -112,31 +58,71 @@ void ABP_Throwable_Flashbang_C::ReceiveTick(float DeltaSeconds)
 }
 
 
-// Function BP_Throwable_Flashbang.BP_Throwable_Flashbang_C.StartRandomRot
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_Throwable_Flashbang.BP_Throwable_Flashbang_C.OnArmed
+// (Event, Protected, BlueprintEvent)
 
-void ABP_Throwable_Flashbang_C::StartRandomRot()
+void ABP_Throwable_Flashbang_C::OnArmed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_Flashbang_C", "StartRandomRot");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnArmed", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Throwable_Flashbang.BP_Throwable_Flashbang_C.StopRandomRot
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_Throwable_Flashbang.BP_Throwable_Flashbang_C.ExecuteUbergraph_BP_Throwable_Flashbang
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Throwable_Flashbang_C::StopRandomRot()
+void ABP_Throwable_Flashbang_C::ExecuteUbergraph_BP_Throwable_Flashbang(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Throwable_Flashbang_C", "ExecuteUbergraph_BP_Throwable_Flashbang", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_Flashbang_C", "StopRandomRot");
+	Params::BP_Throwable_Flashbang_C_ExecuteUbergraph_BP_Throwable_Flashbang Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Throwable_Flashbang.BP_Throwable_Flashbang_C.BndEvt__BP_Throwable_Flashbang_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FHitResult&                ImpactResult                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+
+void ABP_Throwable_Flashbang_C::BndEvt__BP_Throwable_Flashbang_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature(const struct FHitResult& ImpactResult)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Throwable_Flashbang_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature", FnName));
+
+	Params::BP_Throwable_Flashbang_C_BndEvt__BP_Throwable_Flashbang_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature Parms{};
+
+	Parms.ImpactResult = std::move(ImpactResult);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Throwable_Flashbang.BP_Throwable_Flashbang_C.BndEvt__BP_Throwable_Flashbang_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FHitResult&                ImpactResult                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FVector&                   ImpactVelocity                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Throwable_Flashbang_C::BndEvt__BP_Throwable_Flashbang_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Throwable_Flashbang_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature", FnName));
+
+	Params::BP_Throwable_Flashbang_C_BndEvt__BP_Throwable_Flashbang_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature Parms{};
+
+	Parms.ImpactResult = std::move(ImpactResult);
+	Parms.ImpactVelocity = std::move(ImpactVelocity);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

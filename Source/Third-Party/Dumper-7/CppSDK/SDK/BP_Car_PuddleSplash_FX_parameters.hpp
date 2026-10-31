@@ -16,6 +16,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_Car_PuddleSplash_FX.BP_Car_PuddleSplash_FX_C.ReceiveActorBeginOverlap
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Car_PuddleSplash_FX_C_ReceiveActorBeginOverlap final
+{
+public:
+	class AActor*                                 OtherActor_ReceiveActorBeginOverlap;               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Car_PuddleSplash_FX_C_ReceiveActorBeginOverlap;
+
 // Function BP_Car_PuddleSplash_FX.BP_Car_PuddleSplash_FX_C.ExecuteUbergraph_BP_Car_PuddleSplash_FX
 // 0x00A0 (0x00A0 - 0x0000)
 struct BP_Car_PuddleSplash_FX_C_ExecuteUbergraph_BP_Car_PuddleSplash_FX final
@@ -37,14 +46,7 @@ public:
 	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_MakeRotator_Yaw_ImplicitCast;             // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_Car_PuddleSplash_FX.BP_Car_PuddleSplash_FX_C.ReceiveActorBeginOverlap
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Car_PuddleSplash_FX_C_ReceiveActorBeginOverlap final
-{
-public:
-	class AActor*                                 OtherActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_Car_PuddleSplash_FX_C_ExecuteUbergraph_BP_Car_PuddleSplash_FX;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

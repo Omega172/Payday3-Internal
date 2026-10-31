@@ -30,16 +30,16 @@ public:
 	class UTextBlock*                             Text_NonActiveStateDescription;                    // 0x0348(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void BP_OnRefuelingNeeded(bool bIsFuelingNeeded);
-	void BP_OnStateChanged(ESBZBreachingEquipmentState NewState);
-	void BP_OnThermalLanceSet();
-	void ExecuteUbergraph_WBP_ThermalLanceWidget(int32 EntryPoint);
-	void OnInitialized();
-	void PreConstruct(bool IsDesignTime);
-	void SetDrillActive(bool bIsActive);
-	void SetDrillingHalted(bool bIsHalted);
-	void SetDrillPercentage();
 	void SetNeedsFuel(bool bNeedsFuel);
+	void SetDrillPercentage();
+	void SetDrillingHalted(bool bIsHalted);
+	void SetDrillActive(bool bIsActive);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void OnInitialized();
+	void ExecuteUbergraph_WBP_ThermalLanceWidget(int32 EntryPoint);
+	void BP_OnThermalLanceSet();
+	void BP_OnStateChanged(ESBZBreachingEquipmentState NewState_BP_OnStateChanged);
+	void BP_OnRefuelingNeeded(bool bIsFuelingNeeded_BP_OnRefuelingNeeded);
 
 public:
 	static class UClass* StaticClass()
@@ -55,5 +55,6 @@ public:
 		return GetDefaultObjImpl<UWBP_ThermalLanceWidget_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_ThermalLanceWidget_C;
 
 SDK_NAMESPACE_END

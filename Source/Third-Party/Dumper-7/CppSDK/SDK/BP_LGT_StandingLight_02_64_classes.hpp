@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_LGT_StandingLight_02_64_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LGT_StandingLight_02_64_C;
 
 SDK_NAMESPACE_END

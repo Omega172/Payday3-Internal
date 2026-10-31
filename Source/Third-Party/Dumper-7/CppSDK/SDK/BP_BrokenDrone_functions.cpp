@@ -16,71 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_BrokenDrone.BP_BrokenDrone_C.BndEvt__BP_BrokenDrone_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_BrokenDrone.BP_BrokenDrone_C.On Interaction Start Timer Done
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_BrokenDrone_C::BndEvt__BP_BrokenDrone_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_BrokenDrone_C::On_Interaction_Start_Timer_Done()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"On Interaction Start Timer Done", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BrokenDrone_C", "BndEvt__BP_BrokenDrone_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_BrokenDrone_C_BndEvt__BP_BrokenDrone_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BrokenDrone.BP_BrokenDrone_C.BndEvt__BP_BrokenDrone_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BrokenDrone_C::BndEvt__BP_BrokenDrone_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BrokenDrone_C", "BndEvt__BP_BrokenDrone_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_BrokenDrone_C_BndEvt__BP_BrokenDrone_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BrokenDrone.BP_BrokenDrone_C.BP_OnZiplineAttachmentChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bIsAttached                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BrokenDrone_C::BP_OnZiplineAttachmentChanged(bool bIsAttached)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BrokenDrone_C", "BP_OnZiplineAttachmentChanged");
-
-	Params::BP_BrokenDrone_C_BP_OnZiplineAttachmentChanged Parms{};
-
-	Parms.bIsAttached = bIsAttached;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -91,10 +35,8 @@ void ABP_BrokenDrone_C::BP_OnZiplineAttachmentChanged(bool bIsAttached)
 
 void ABP_BrokenDrone_C::ExecuteUbergraph_BP_BrokenDrone(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BrokenDrone_C", "ExecuteUbergraph_BP_BrokenDrone");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_BrokenDrone_C", "ExecuteUbergraph_BP_BrokenDrone", FuncInfo);
 
 	Params::BP_BrokenDrone_C_ExecuteUbergraph_BP_BrokenDrone Parms{};
 
@@ -104,17 +46,65 @@ void ABP_BrokenDrone_C::ExecuteUbergraph_BP_BrokenDrone(int32 EntryPoint)
 }
 
 
-// Function BP_BrokenDrone.BP_BrokenDrone_C.On Interaction Start Timer Done
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_BrokenDrone.BP_BrokenDrone_C.BP_OnZiplineAttachmentChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bIsAttached_BP_OnZiplineAttachmentChanged              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BrokenDrone_C::On_Interaction_Start_Timer_Done()
+void ABP_BrokenDrone_C::BP_OnZiplineAttachmentChanged(bool bIsAttached_BP_OnZiplineAttachmentChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnZiplineAttachmentChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BrokenDrone_C", "On Interaction Start Timer Done");
+	Params::BP_BrokenDrone_C_BP_OnZiplineAttachmentChanged Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.bIsAttached_BP_OnZiplineAttachmentChanged = bIsAttached_BP_OnZiplineAttachmentChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BrokenDrone.BP_BrokenDrone_C.BndEvt__BP_BrokenDrone_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BrokenDrone_C::BndEvt__BP_BrokenDrone_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_BrokenDrone_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_BrokenDrone_C_BndEvt__BP_BrokenDrone_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BrokenDrone.BP_BrokenDrone_C.BndEvt__BP_BrokenDrone_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BrokenDrone_C::BndEvt__BP_BrokenDrone_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_BrokenDrone_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_BrokenDrone_C_BndEvt__BP_BrokenDrone_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

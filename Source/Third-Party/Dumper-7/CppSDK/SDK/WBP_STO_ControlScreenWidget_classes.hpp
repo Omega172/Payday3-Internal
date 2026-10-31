@@ -29,12 +29,12 @@ public:
 	class UWidgetSwitcher*                        WidgetSwitcher_0;                                  // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_STO_ControlScreenWidget(int32 EntryPoint);
-	void setActive();
-	void setBackgroundColor(ESBZModuleActorState state);
-	void setCircuitBreakerText(const class FText& InText);
-	void setCodeText(const class FText& InText);
 	void setIdle();
+	void setCodeText(const class FText& InText);
+	void setCircuitBreakerText(const class FText& InText);
+	void setBackgroundColor(ESBZModuleActorState state);
+	void setActive();
+	void ExecuteUbergraph_WBP_STO_ControlScreenWidget(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -50,5 +50,6 @@ public:
 		return GetDefaultObjImpl<UWBP_STO_ControlScreenWidget_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_STO_ControlScreenWidget_C;
 
 SDK_NAMESPACE_END

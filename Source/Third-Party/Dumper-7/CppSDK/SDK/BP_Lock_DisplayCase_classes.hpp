@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Enum_LockCollisionSize_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Starbreeze_classes.hpp"
 #include "AkAudio_structs.hpp"
 
@@ -19,18 +19,18 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Lock_DisplayCase.BP_Lock_DisplayCase_C
-// 0x0018 (0x03A0 - 0x0388)
+// 0x0018 (0x03A8 - 0x0390)
 class ABP_Lock_DisplayCase_C final : public ASBZMiniGameActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0388(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBoxComponent*                          Collision;                                         // 0x0390(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	Enum_LockCollisionSize                        Interaction_Collision_Size;                        // 0x0398(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0390(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UBoxComponent*                          Collision;                                         // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	Enum_LockCollisionSize                        Interaction_Collision_Size;                        // 0x03A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnMiniGameSuccess(bool bDoCosmetics);
-	void ExecuteUbergraph_BP_Lock_DisplayCase(int32 EntryPoint);
 	void UserConstructionScript();
+	void ExecuteUbergraph_BP_Lock_DisplayCase(int32 EntryPoint);
+	void BP_OnMiniGameSuccess(bool bDoCosmetics_BP_OnMiniGameSuccess);
 
 public:
 	static class UClass* StaticClass()
@@ -46,5 +46,6 @@ public:
 		return GetDefaultObjImpl<ABP_Lock_DisplayCase_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Lock_DisplayCase_C;
 
 SDK_NAMESPACE_END

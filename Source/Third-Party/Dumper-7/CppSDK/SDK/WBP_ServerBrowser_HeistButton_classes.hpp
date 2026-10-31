@@ -55,28 +55,28 @@ public:
 	class UMaterialInstanceDynamic*               BorderHeistDynamicMat;                             // 0x0580(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnStoryButtonVisibilityChanged(ESlateVisibility InVisibility, class USBZServerBrowserStoryModeButton* StoryButton);
-	void OnStoryButtonFocusedChanged(bool bIsFocused);
-	void OnLoaded_4E9ABC0547D2DACA5AA49CA140722AA6(class UObject* Loaded);
-	void OnHeistDataInitialized();
-	void OnFocusedChanged(bool bIsFocused);
-	void OnFocusChanged(bool bIsFocused_OnFocusChanged);
-	bool IsStoryButtonsVisibleWithMouseAndNotHovered();
-	bool IsStoryButtonsVisibleWithController();
-	void InitializeButtonVisuals();
-	void ExecuteUbergraph_WBP_ServerBrowser_HeistButton(int32 EntryPoint);
-	void DisabledButtonSelected();
-	void Construct();
-	void ButtonSelected();
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
-	void BndEvt__WBP_ServerBrowser_HeistButton_Button_OutroStory_K2Node_ComponentBoundEvent_5_OnVisibilityChangedEvent__DelegateSignature(ESlateVisibility InVisibility);
-	void BndEvt__WBP_ServerBrowser_HeistButton_Button_OutroStory_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
-	void BndEvt__WBP_ServerBrowser_HeistButton_Button_OutroStory_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_ServerBrowser_HeistButton_Button_IntroStory_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_ServerBrowser_HeistButton_Button_IntroStory_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
 	void BndEvt__WBP_ServerBrowser_HeistButton_Button_IntroStory_K2Node_ComponentBoundEvent_4_OnVisibilityChangedEvent__DelegateSignature(ESlateVisibility InVisibility);
-	void BndEvt__WBP_ServerBrowser_HeistButton_Button_IntroStory_K2Node_ComponentBoundEvent_3_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
-	void BndEvt__WBP_ServerBrowser_HeistButton_Button_IntroStory_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled);
+	void BndEvt__WBP_ServerBrowser_HeistButton_Button_OutroStory_K2Node_ComponentBoundEvent_1_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_ServerBrowser_HeistButton_Button_OutroStory_K2Node_ComponentBoundEvent_2_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void BndEvt__WBP_ServerBrowser_HeistButton_Button_OutroStory_K2Node_ComponentBoundEvent_5_OnVisibilityChangedEvent__DelegateSignature(ESlateVisibility InVisibility);
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
+	void ButtonSelected();
+	void Construct();
+	void DisabledButtonSelected();
+	void ExecuteUbergraph_WBP_ServerBrowser_HeistButton(int32 EntryPoint);
+	void InitializeButtonVisuals();
+	bool IsStoryButtonsVisibleWithController();
+	bool IsStoryButtonsVisibleWithMouseAndNotHovered();
+	void OnFocusChanged(bool bIsFocused);
+	void OnFocusedChanged(bool bIsFocused);
+	void OnHeistDataInitialized();
+	void OnLoaded_4E9ABC0547D2DACA5AA49CA140722AA6(class UObject* Loaded);
+	void OnStoryButtonFocusedChanged(bool bIsFocused);
+	void OnStoryButtonVisibilityChanged(ESlateVisibility InVisibility, class USBZServerBrowserStoryModeButton* StoryButton);
+	void PreConstruct(bool IsDesignTime);
 
 public:
 	static class UClass* StaticClass()

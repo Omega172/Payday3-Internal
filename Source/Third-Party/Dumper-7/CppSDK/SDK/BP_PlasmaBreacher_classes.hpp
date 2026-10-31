@@ -56,22 +56,22 @@ public:
 	bool                                          boltScrewedin03;                                   // 0x079E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void addWP(class USceneComponent* loc, int32* id);
-	void BndEvt__AddCanisterInteraction_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
-	void BndEvt__BP_PlasmaBreacher_BagTriggerVolume_K2Node_ComponentBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
-	void BndEvt__BP_PlasmaBreacher_markerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_4_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
-	void BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt01_K2Node_ComponentBoundEvent_3_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
-	void BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt02_K2Node_ComponentBoundEvent_5_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
-	void BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt03_K2Node_ComponentBoundEvent_6_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
-	void BP_OnBolted(int32 Amount, int32 BoltIndex);
-	void BP_OnStateChanged(ESBZBreachingEquipmentState OldState, ESBZBreachingEquipmentState NewState, bool bDoCosmetics);
-	void BP_PartAdded(int32 Amount);
-	void ExecuteUbergraph_BP_PlasmaBreacher(int32 EntryPoint);
-	void ReceiveBeginPlay();
-	void ReceiveTick(float DeltaSeconds);
-	void SetAnimationPosition();
-	void setMarkerVisibility(bool visible);
 	void updateMarkerZone();
+	void setMarkerVisibility(bool visible);
+	void SetAnimationPosition();
+	void ReceiveTick(float DeltaSeconds_ReceiveTick);
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_PlasmaBreacher(int32 EntryPoint);
+	void BP_PartAdded(int32 Amount_BP_PartAdded);
+	void BP_OnStateChanged(ESBZBreachingEquipmentState OldState_BP_OnStateChanged, ESBZBreachingEquipmentState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged);
+	void BP_OnBolted(int32 Amount_BP_OnBolted, int32 BoltIndex_BP_OnBolted);
+	void BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt03_K2Node_ComponentBoundEvent_6_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
+	void BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt02_K2Node_ComponentBoundEvent_5_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
+	void BndEvt__BP_PlasmaBreacher_SBZBinaryStateBolt01_K2Node_ComponentBoundEvent_3_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
+	void BndEvt__BP_PlasmaBreacher_markerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_4_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
+	void BndEvt__BP_PlasmaBreacher_BagTriggerVolume_K2Node_ComponentBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
+	void BndEvt__AddCanisterInteraction_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
+	void addWP(class USceneComponent* loc, int32* id);
 
 public:
 	static class UClass* StaticClass()
@@ -87,5 +87,6 @@ public:
 		return GetDefaultObjImpl<ABP_PlasmaBreacher_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PlasmaBreacher_C;
 
 SDK_NAMESPACE_END

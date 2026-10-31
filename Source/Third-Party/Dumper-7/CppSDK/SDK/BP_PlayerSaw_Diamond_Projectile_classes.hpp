@@ -18,18 +18,18 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_PlayerSaw_Diamond_Projectile.BP_PlayerSaw_Diamond_Projectile_C
-// 0x0008 (0x8DD0 - 0x8DC8)
+// 0x0008 (0x0630 - 0x0628)
 class ABP_PlayerSaw_Diamond_Projectile_C final : public ASBZPlayerSawGrenadeProjectile
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x8DC8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0628(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void BndEvt__BP_PlayerSaw_Diamond_Projectile_TrailEffectComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature(class UActorComponent* Component, bool bReset);
-	void BndEvt__BP_PlayerSaw_Silent_Projectile_ProjectileMovementComponent_K2Node_ComponentBoundEvent_2_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity);
-	void BndEvt__BP_PlayerSaw_Silent_Projectile_SphereCollision_K2Node_ComponentBoundEvent_3_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
+	void ReceiveTick(float DeltaSeconds_ReceiveTick);
 	void ExecuteUbergraph_BP_PlayerSaw_Diamond_Projectile(int32 EntryPoint);
-	void ReceiveTick(float DeltaSeconds);
+	void BndEvt__BP_PlayerSaw_Silent_Projectile_SphereCollision_K2Node_ComponentBoundEvent_3_ComponentHitSignature__DelegateSignature(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
+	void BndEvt__BP_PlayerSaw_Silent_Projectile_ProjectileMovementComponent_K2Node_ComponentBoundEvent_2_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity);
+	void BndEvt__BP_PlayerSaw_Diamond_Projectile_TrailEffectComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature(class UActorComponent* Component, bool bReset);
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<ABP_PlayerSaw_Diamond_Projectile_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PlayerSaw_Diamond_Projectile_C;
 
 SDK_NAMESPACE_END

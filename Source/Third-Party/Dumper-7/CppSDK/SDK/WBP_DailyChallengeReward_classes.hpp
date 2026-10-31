@@ -31,10 +31,10 @@ public:
 	struct FVector2D                              ImageSize;                                         // 0x0340(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void InitializeReward(const struct FSBZChallengeRewardItem& InRewardItem);
-	void InitializeInfamyReward(int32 InInfamy);
 	void ExecuteUbergraph_WBP_DailyChallengeReward(int32 EntryPoint);
+	void InitializeInfamyReward(int32 InInfamy);
+	void InitializeReward(const struct FSBZChallengeRewardItem& InRewardItem);
+	void PreConstruct(bool IsDesignTime);
 
 public:
 	static class UClass* StaticClass()

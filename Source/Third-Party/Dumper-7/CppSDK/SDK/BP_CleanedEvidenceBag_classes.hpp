@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_CleanedEvidenceBag_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CleanedEvidenceBag_C;
 
 SDK_NAMESPACE_END

@@ -16,60 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_InfamyCircularWidget.WBP_UI_InfamyCircularWidget_C.SetInfamyVisuals
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_InfamyCircularWidget_C::SetInfamyVisuals()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetInfamyVisuals", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_InfamyCircularWidget.WBP_UI_InfamyCircularWidget_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_InfamyCircularWidget_C::PreConstruct(bool IsDesignTime_PreConstruct)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_UI_InfamyCircularWidget_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_InfamyCircularWidget.WBP_UI_InfamyCircularWidget_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_InfamyCircularWidget_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_InfamyCircularWidget.WBP_UI_InfamyCircularWidget_C.OnInfamyValuesRefreshed
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_InfamyCircularWidget_C::OnInfamyValuesRefreshed()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInfamyValuesRefreshed", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_InfamyCircularWidget.WBP_UI_InfamyCircularWidget_C.ExecuteUbergraph_WBP_UI_InfamyCircularWidget
 // (Final, UbergraphFunction)
 // Parameters:
@@ -85,6 +31,60 @@ void UWBP_UI_InfamyCircularWidget_C::ExecuteUbergraph_WBP_UI_InfamyCircularWidge
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_InfamyCircularWidget.WBP_UI_InfamyCircularWidget_C.OnInfamyValuesRefreshed
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_InfamyCircularWidget_C::OnInfamyValuesRefreshed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInfamyValuesRefreshed", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_InfamyCircularWidget.WBP_UI_InfamyCircularWidget_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_InfamyCircularWidget_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_InfamyCircularWidget.WBP_UI_InfamyCircularWidget_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_InfamyCircularWidget_C::PreConstruct(bool IsDesignTime)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_UI_InfamyCircularWidget_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_InfamyCircularWidget.WBP_UI_InfamyCircularWidget_C.SetInfamyVisuals
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_InfamyCircularWidget_C::SetInfamyVisuals()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetInfamyVisuals", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

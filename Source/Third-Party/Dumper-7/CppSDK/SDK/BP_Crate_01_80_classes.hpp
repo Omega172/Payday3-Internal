@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_Crate_01_80_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Crate_01_80_C;
 
 SDK_NAMESPACE_END

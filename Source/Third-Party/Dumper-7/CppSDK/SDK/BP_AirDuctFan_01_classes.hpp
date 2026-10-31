@@ -41,13 +41,13 @@ public:
 	double                                        vibration_strength;                                // 0x03D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_AirDuctFan_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_AirDuctFan_01(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void setFanRotation(bool enabled);
-	void stopFan_timeline__FinishedFunc();
-	void stopFan_timeline__UpdateFunc();
 	void UserConstructionScript();
+	void stopFan_timeline__UpdateFunc();
+	void stopFan_timeline__FinishedFunc();
+	void setFanRotation(bool enabled);
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_AirDuctFan_01(int32 EntryPoint);
+	void BndEvt__BP_AirDuctFan_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -63,5 +63,6 @@ public:
 		return GetDefaultObjImpl<ABP_AirDuctFan_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_AirDuctFan_01_C;
 
 SDK_NAMESPACE_END

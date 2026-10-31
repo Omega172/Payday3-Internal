@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_GrenadeBelt_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_GrenadeBelt_C;
 
 SDK_NAMESPACE_END

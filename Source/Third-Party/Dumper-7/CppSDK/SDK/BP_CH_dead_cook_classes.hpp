@@ -32,8 +32,8 @@ public:
 	struct FSingleAnimationPlayData               NewVar_0;                                          // 0x0360(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void SpawnVariation(int32 Index_0, const struct FVector& Location, struct FVector* NextLocation);
 	void UserConstructionScript();
+	void SpawnVariation(int32 Index_0, const struct FVector& Location, struct FVector* NextLocation);
 
 public:
 	static class UClass* StaticClass()
@@ -49,5 +49,6 @@ public:
 		return GetDefaultObjImpl<ABP_CH_dead_cook_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CH_dead_cook_C;
 
 SDK_NAMESPACE_END

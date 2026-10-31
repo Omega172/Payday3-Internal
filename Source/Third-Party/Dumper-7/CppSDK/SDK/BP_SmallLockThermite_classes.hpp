@@ -32,11 +32,11 @@ public:
 	bool                                          Is_Complete;                                       // 0x0500(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_SmallLockThermite_IgnitionInteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_SmallLockThermite_IgnitionInteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_SmallLockThermite_IgnitionInteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BP_OnStateChanged(ESBZThermiteBurnState OldState, ESBZThermiteBurnState NewState, bool bDoCosmetics);
 	void ExecuteUbergraph_BP_SmallLockThermite(int32 EntryPoint);
+	void BP_OnStateChanged(ESBZThermiteBurnState OldState_BP_OnStateChanged, ESBZThermiteBurnState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged);
+	void BndEvt__BP_SmallLockThermite_IgnitionInteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_SmallLockThermite_IgnitionInteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_SmallLockThermite_IgnitionInteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 	struct FVector GetMarkerLocation() const;
 
@@ -54,5 +54,6 @@ public:
 		return GetDefaultObjImpl<ABP_SmallLockThermite_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SmallLockThermite_C;
 
 SDK_NAMESPACE_END

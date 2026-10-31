@@ -16,15 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_DAT_CodeBreaker_01_Interaction.BP_DAT_CodeBreaker_01_Interaction_C.BndEvt__BP_ElevatorDoor_ControlPanel_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct BP_DAT_CodeBreaker_01_Interaction_C_BndEvt__BP_ElevatorDoor_ControlPanel_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature final
-{
-public:
-	const class USBZBaseInteractableComponent*    InteractableComponent_0;                           // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInNewState;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_DAT_CodeBreaker_01_Interaction.BP_DAT_CodeBreaker_01_Interaction_C.ExecuteUbergraph_BP_DAT_CodeBreaker_01_Interaction
 // 0x0060 (0x0060 - 0x0000)
 struct BP_DAT_CodeBreaker_01_Interaction_C_ExecuteUbergraph_BP_DAT_CodeBreaker_01_Interaction final
@@ -42,6 +33,17 @@ public:
 	int32                                         CallFunc_PostEvent_ReturnValue_1;                  // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_PostEvent_ReturnValue_2;                  // 0x0058(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_DAT_CodeBreaker_01_Interaction_C_ExecuteUbergraph_BP_DAT_CodeBreaker_01_Interaction;
+
+// Function BP_DAT_CodeBreaker_01_Interaction.BP_DAT_CodeBreaker_01_Interaction_C.BndEvt__BP_ElevatorDoor_ControlPanel_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct BP_DAT_CodeBreaker_01_Interaction_C_BndEvt__BP_ElevatorDoor_ControlPanel_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature final
+{
+public:
+	const class USBZBaseInteractableComponent*    InteractableComponent;                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInNewState;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_DAT_CodeBreaker_01_Interaction_C_BndEvt__BP_ElevatorDoor_ControlPanel_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

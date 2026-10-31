@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABPL_Streetlight_Modern_03_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_Streetlight_Modern_03_C;
 
 SDK_NAMESPACE_END

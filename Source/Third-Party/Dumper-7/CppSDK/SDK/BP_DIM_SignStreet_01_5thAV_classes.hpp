@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_DIM_SignStreet_01_5thAV_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DIM_SignStreet_01_5thAV_C;
 
 SDK_NAMESPACE_END

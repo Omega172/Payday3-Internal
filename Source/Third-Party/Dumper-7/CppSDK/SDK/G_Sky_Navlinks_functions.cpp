@@ -16,26 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function G_Sky_Navlinks.G_Sky_Navlinks_C.ExecuteUbergraph_G_Sky_Navlinks
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Sky_Navlinks_C::ExecuteUbergraph_G_Sky_Navlinks(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Sky_Navlinks_C", "ExecuteUbergraph_G_Sky_Navlinks");
-
-	Params::G_Sky_Navlinks_C_ExecuteUbergraph_G_Sky_Navlinks Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function G_Sky_Navlinks.G_Sky_Navlinks_C.SetNavlinksEnabled
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -43,14 +23,30 @@ void AG_Sky_Navlinks_C::ExecuteUbergraph_G_Sky_Navlinks(int32 EntryPoint)
 
 void AG_Sky_Navlinks_C::SetNavlinksEnabled(bool Enabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Sky_Navlinks_C", "SetNavlinksEnabled");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetNavlinksEnabled", FnName));
 
 	Params::G_Sky_Navlinks_C_SetNavlinksEnabled Parms{};
 
 	Parms.Enabled = Enabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Sky_Navlinks.G_Sky_Navlinks_C.ExecuteUbergraph_G_Sky_Navlinks
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Sky_Navlinks_C::ExecuteUbergraph_G_Sky_Navlinks(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_Sky_Navlinks_C", "ExecuteUbergraph_G_Sky_Navlinks", FuncInfo);
+
+	Params::G_Sky_Navlinks_C_ExecuteUbergraph_G_Sky_Navlinks Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function STONK_BPL_FloodLight_COLD.STONK_BPL_FloodLight_COLD_C.ExecuteUbergraph_STONK_BPL_FloodLight_COLD
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ASTONK_BPL_FloodLight_COLD_C::ExecuteUbergraph_STONK_BPL_FloodLight_COLD(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "STONK_BPL_FloodLight_COLD_C", "ExecuteUbergraph_STONK_BPL_FloodLight_COLD", FuncInfo);
+
+	Params::STONK_BPL_FloodLight_COLD_C_ExecuteUbergraph_STONK_BPL_FloodLight_COLD Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function STONK_BPL_FloodLight_COLD.STONK_BPL_FloodLight_COLD_C.BndEvt__BPL_FloodLight_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -24,35 +42,13 @@ SDK_NAMESPACE_START
 
 void ASTONK_BPL_FloodLight_COLD_C::BndEvt__BPL_FloodLight_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("STONK_BPL_FloodLight_COLD_C", "BndEvt__BPL_FloodLight_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BPL_FloodLight_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature", FnName));
 
 	Params::STONK_BPL_FloodLight_COLD_C_BndEvt__BPL_FloodLight_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature Parms{};
 
 	Parms.Type = Type;
 	Parms.HitContext = std::move(HitContext);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function STONK_BPL_FloodLight_COLD.STONK_BPL_FloodLight_COLD_C.ExecuteUbergraph_STONK_BPL_FloodLight_COLD
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ASTONK_BPL_FloodLight_COLD_C::ExecuteUbergraph_STONK_BPL_FloodLight_COLD(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("STONK_BPL_FloodLight_COLD_C", "ExecuteUbergraph_STONK_BPL_FloodLight_COLD");
-
-	Params::STONK_BPL_FloodLight_COLD_C_ExecuteUbergraph_STONK_BPL_FloodLight_COLD Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

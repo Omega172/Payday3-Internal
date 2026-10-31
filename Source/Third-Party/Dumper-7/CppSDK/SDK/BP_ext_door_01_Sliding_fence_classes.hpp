@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_Ext_Door_01_Sliding_Fence_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Ext_Door_01_Sliding_Fence_C;
 
 SDK_NAMESPACE_END

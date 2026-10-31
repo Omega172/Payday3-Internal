@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ABP_BUS_BarrelMetal_01_Open_B_Fire_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BUS_BarrelMetal_01_Open_B_Fire_C;
 
 SDK_NAMESPACE_END

@@ -62,27 +62,27 @@ public:
 	bool                                          UseSmallSize;                                      // 0x0558(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
-	void UpdateVisualsBasedOnChallengeStatus(EChallengeStatusEnum InChallengeStatus);
-	void UpdateRewardIconDimensions(class UPaperSprite* Sprite);
-	void SetWidgetSize();
-	void SetRewardValueVisibility(int32 InItemQuantity);
-	void SetRewardIcon(class UPaperSprite* InIconSprite);
-	void SetProgressText();
-	void SetProgressMinMax(int32 InMaxValueToUse, int32 InMinValueToUse);
-	void SetProgressBarPercentage(int32 Progress, int32 TotalProgress);
-	void SetItemRewardInfo(class UPaperSprite* InIconSprite, int32 InItemQuantity);
-	void SetInfamyRewardInfo(int32 InInfamyRewardPoints);
-	void SetGoldRewardInfo(int32 InQuantity);
-	void SetCreditsRewardInfo(int32 InQuantity);
-	void SetChallengeName(const struct FSBZChallengeData& Challenge);
-	void SetChallengeDescription(const struct FSBZChallengeData& Challenge);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnLoaded_575B882949292613E393E8B9DEA74294(class UObject* Loaded);
-	void OnChallengeDataInititalized(const struct FSBZChallengeData& InChallengeData_OnChallengeDataInititalized);
-	void IsInfamyReward(int32 InInfamyRewardPoints, bool* OutIsHasInfamyRewardPoints);
-	void ExecuteUbergraph_WBP_UI_Challenge_PanelButton(int32 EntryPoint);
-	void ConvertProgressMinMaxToMeters(int32 InMaxValueToUse, int32 InMinValueToUse);
 	void Construct();
+	void ConvertProgressMinMaxToMeters(int32 InMaxValueToUse, int32 InMinValueToUse);
+	void ExecuteUbergraph_WBP_UI_Challenge_PanelButton(int32 EntryPoint);
+	void IsInfamyReward(int32 InInfamyRewardPoints, bool* OutIsHasInfamyRewardPoints);
+	void OnChallengeDataInititalized(const struct FSBZChallengeData& InChallengeData);
+	void OnLoaded_575B882949292613E393E8B9DEA74294(class UObject* Loaded);
+	void PreConstruct(bool IsDesignTime);
+	void SetChallengeDescription(const struct FSBZChallengeData& Challenge);
+	void SetChallengeName(const struct FSBZChallengeData& Challenge);
+	void SetCreditsRewardInfo(int32 InQuantity);
+	void SetGoldRewardInfo(int32 InQuantity);
+	void SetInfamyRewardInfo(int32 InInfamyRewardPoints);
+	void SetItemRewardInfo(class UPaperSprite* InIconSprite, int32 InItemQuantity);
+	void SetProgressBarPercentage(int32 Progress, int32 TotalProgress);
+	void SetProgressMinMax(int32 InMaxValueToUse, int32 InMinValueToUse);
+	void SetProgressText();
+	void SetRewardIcon(class UPaperSprite* InIconSprite);
+	void SetRewardValueVisibility(int32 InItemQuantity);
+	void SetWidgetSize();
+	void UpdateRewardIconDimensions(class UPaperSprite* Sprite);
+	void UpdateVisualsBasedOnChallengeStatus(EChallengeStatusEnum InChallengeStatus);
 
 public:
 	static class UClass* StaticClass()

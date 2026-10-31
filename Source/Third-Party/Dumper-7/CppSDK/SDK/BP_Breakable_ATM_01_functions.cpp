@@ -16,47 +16,153 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Breakable_ATM_01.BP_Breakable_ATM_01_C.BndEvt__BP_ATM_02_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// ESBZCosmeticDestructionType             Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZCosmeticDestructionContext&HitContext                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// Function BP_Breakable_ATM_01.BP_Breakable_ATM_01_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Breakable_ATM_01_C::BndEvt__BP_ATM_02_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)
+void ABP_Breakable_ATM_01_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Breakable_ATM_01_C", "BndEvt__BP_ATM_02_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_Breakable_ATM_01_C_BndEvt__BP_ATM_02_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature Parms{};
 
-	Parms.Type = Type;
-	Parms.HitContext = std::move(HitContext);
+// Function BP_Breakable_ATM_01.BP_Breakable_ATM_01_C.setOutline
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZBreakableMachineState               state                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Breakable_ATM_01_C::setOutline(bool enabled, ESBZBreakableMachineState state)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setOutline", FnName));
+
+	Params::BP_Breakable_ATM_01_C_setOutline Parms{};
+
+	Parms.enabled = enabled;
+	Parms.state = state;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_Breakable_ATM_01.BP_Breakable_ATM_01_C.BndEvt__BP_Breakable_ATM_01_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// Function BP_Breakable_ATM_01.BP_Breakable_ATM_01_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_Breakable_ATM_01_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Breakable_ATM_01.BP_Breakable_ATM_01_C.openDoor_timeline__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_Breakable_ATM_01_C::openDoor_timeline__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"openDoor_timeline__UpdateFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Breakable_ATM_01.BP_Breakable_ATM_01_C.openDoor_timeline__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_Breakable_ATM_01_C::openDoor_timeline__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"openDoor_timeline__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Breakable_ATM_01.BP_Breakable_ATM_01_C.openBoxes_timeline__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_Breakable_ATM_01_C::openBoxes_timeline__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"openBoxes_timeline__UpdateFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Breakable_ATM_01.BP_Breakable_ATM_01_C.openBoxes_timeline__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_Breakable_ATM_01_C::openBoxes_timeline__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"openBoxes_timeline__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Breakable_ATM_01.BP_Breakable_ATM_01_C.ExecuteUbergraph_BP_Breakable_ATM_01
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Breakable_ATM_01_C::ExecuteUbergraph_BP_Breakable_ATM_01(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Breakable_ATM_01_C", "ExecuteUbergraph_BP_Breakable_ATM_01", FuncInfo);
+
+	Params::BP_Breakable_ATM_01_C_ExecuteUbergraph_BP_Breakable_ATM_01 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Breakable_ATM_01.BP_Breakable_ATM_01_C.BP_OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZBreakableMachineState               OldState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZBreakableMachineState               NewState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_BP_OnStateChanged                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Breakable_ATM_01_C::BP_OnStateChanged(ESBZBreakableMachineState OldState_BP_OnStateChanged, ESBZBreakableMachineState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnStateChanged", FnName));
+
+	Params::BP_Breakable_ATM_01_C_BP_OnStateChanged Parms{};
+
+	Parms.OldState_BP_OnStateChanged = OldState_BP_OnStateChanged;
+	Parms.NewState_BP_OnStateChanged = NewState_BP_OnStateChanged;
+	Parms.bDoCosmetics_BP_OnStateChanged = bDoCosmetics_BP_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Breakable_ATM_01.BP_Breakable_ATM_01_C.BndEvt__BP_Breakable_ATM_01_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteractableStateChangedDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZBaseInteractableComponent*InteractableComponent                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Breakable_ATM_01_C::BndEvt__BP_Breakable_ATM_01_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_Breakable_ATM_01_C::BndEvt__BP_Breakable_ATM_01_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Breakable_ATM_01_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteractableStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Breakable_ATM_01_C", "BndEvt__BP_Breakable_ATM_01_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
+	Params::BP_Breakable_ATM_01_C_BndEvt__BP_Breakable_ATM_01_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
 
-	Params::BP_Breakable_ATM_01_C_BndEvt__BP_Breakable_ATM_01_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+	Parms.InteractableComponent = InteractableComponent;
+	Parms.bInNewState = bInNewState;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -71,10 +177,8 @@ void ABP_Breakable_ATM_01_C::BndEvt__BP_Breakable_ATM_01_InteractableComponent_K
 
 void ABP_Breakable_ATM_01_C::BndEvt__BP_Breakable_ATM_01_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Breakable_ATM_01_C", "BndEvt__BP_Breakable_ATM_01_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Breakable_ATM_01_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature", FnName));
 
 	Params::BP_Breakable_ATM_01_C_BndEvt__BP_Breakable_ATM_01_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature Parms{};
 
@@ -86,175 +190,45 @@ void ABP_Breakable_ATM_01_C::BndEvt__BP_Breakable_ATM_01_InteractableComponent_K
 }
 
 
-// Function BP_Breakable_ATM_01.BP_Breakable_ATM_01_C.BndEvt__BP_Breakable_ATM_01_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// Function BP_Breakable_ATM_01.BP_Breakable_ATM_01_C.BndEvt__BP_Breakable_ATM_01_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// const class USBZBaseInteractableComponent*InteractableComponent_0                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Breakable_ATM_01_C::BndEvt__BP_Breakable_ATM_01_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent_0, bool bInNewState)
+void ABP_Breakable_ATM_01_C::BndEvt__BP_Breakable_ATM_01_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Breakable_ATM_01_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Breakable_ATM_01_C", "BndEvt__BP_Breakable_ATM_01_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteractableStateChangedDelegate__DelegateSignature");
+	Params::BP_Breakable_ATM_01_C_BndEvt__BP_Breakable_ATM_01_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
 
-	Params::BP_Breakable_ATM_01_C_BndEvt__BP_Breakable_ATM_01_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.InteractableComponent_0 = InteractableComponent_0;
-	Parms.bInNewState = bInNewState;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_Breakable_ATM_01.BP_Breakable_ATM_01_C.BP_OnStateChanged
-// (Event, Protected, BlueprintEvent)
+// Function BP_Breakable_ATM_01.BP_Breakable_ATM_01_C.BndEvt__BP_ATM_02_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
 // Parameters:
-// ESBZBreakableMachineState               OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZBreakableMachineState               NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZCosmeticDestructionType             Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZCosmeticDestructionContext&HitContext                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 
-void ABP_Breakable_ATM_01_C::BP_OnStateChanged(ESBZBreakableMachineState OldState, ESBZBreakableMachineState NewState, bool bDoCosmetics)
+void ABP_Breakable_ATM_01_C::BndEvt__BP_ATM_02_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ATM_02_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Breakable_ATM_01_C", "BP_OnStateChanged");
+	Params::BP_Breakable_ATM_01_C_BndEvt__BP_ATM_02_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature Parms{};
 
-	Params::BP_Breakable_ATM_01_C_BP_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.Type = Type;
+	Parms.HitContext = std::move(HitContext);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Breakable_ATM_01.BP_Breakable_ATM_01_C.ExecuteUbergraph_BP_Breakable_ATM_01
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Breakable_ATM_01_C::ExecuteUbergraph_BP_Breakable_ATM_01(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Breakable_ATM_01_C", "ExecuteUbergraph_BP_Breakable_ATM_01");
-
-	Params::BP_Breakable_ATM_01_C_ExecuteUbergraph_BP_Breakable_ATM_01 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Breakable_ATM_01.BP_Breakable_ATM_01_C.openBoxes_timeline__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_Breakable_ATM_01_C::openBoxes_timeline__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Breakable_ATM_01_C", "openBoxes_timeline__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Breakable_ATM_01.BP_Breakable_ATM_01_C.openBoxes_timeline__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_Breakable_ATM_01_C::openBoxes_timeline__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Breakable_ATM_01_C", "openBoxes_timeline__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Breakable_ATM_01.BP_Breakable_ATM_01_C.openDoor_timeline__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_Breakable_ATM_01_C::openDoor_timeline__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Breakable_ATM_01_C", "openDoor_timeline__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Breakable_ATM_01.BP_Breakable_ATM_01_C.openDoor_timeline__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_Breakable_ATM_01_C::openDoor_timeline__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Breakable_ATM_01_C", "openDoor_timeline__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Breakable_ATM_01.BP_Breakable_ATM_01_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Breakable_ATM_01_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Breakable_ATM_01_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Breakable_ATM_01.BP_Breakable_ATM_01_C.setOutline
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZBreakableMachineState               state                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Breakable_ATM_01_C::setOutline(bool enabled, ESBZBreakableMachineState state)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Breakable_ATM_01_C", "setOutline");
-
-	Params::BP_Breakable_ATM_01_C_setOutline Parms{};
-
-	Parms.enabled = enabled;
-	Parms.state = state;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Breakable_ATM_01.BP_Breakable_ATM_01_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_Breakable_ATM_01_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Breakable_ATM_01_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

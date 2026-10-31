@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_BackItemZipline_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BackItemZipline_C;
 
 SDK_NAMESPACE_END

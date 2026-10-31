@@ -22,5 +22,6 @@ public:
 	TArray<float>                                 End_5_B38A85554FB36F24ECCA52A3F242A209;            // 0x0010(0x0010)(Edit, BlueprintVisible)
 	TArray<class UTexture*>                       Textures_10_5AEF012641C99C5A8866349CDACC1418;      // 0x0020(0x0010)(Edit, BlueprintVisible)
 };
+DUMPER7_ASSERTS_FTwox2_Minigame_Structs;
 
 SDK_NAMESPACE_END

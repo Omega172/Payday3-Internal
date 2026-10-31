@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ABPL_SurphazeLogo_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_SurphazeLogo_C;
 
 SDK_NAMESPACE_END

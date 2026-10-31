@@ -34,11 +34,11 @@ public:
 	class UWBP_Chus_Notepad_C*                    As_WBP_Chus_Notepad;                               // 0x03D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_Chus_Clipboard_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_Chus_Clipboard(int32 EntryPoint);
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
+	void SetStateInt(int32 State);
 	void ReceiveBeginPlay();
-	void SetStateInt(int32 State_0);
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_Chus_Clipboard(int32 EntryPoint);
+	void BndEvt__BP_Chus_Clipboard_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -54,5 +54,6 @@ public:
 		return GetDefaultObjImpl<ABP_Chus_Clipboard_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Chus_Clipboard_C;
 
 SDK_NAMESPACE_END

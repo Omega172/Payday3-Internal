@@ -17,6 +17,33 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_SHI_BoomgatePanel.WBP_SHI_BoomgatePanel_C.setTitle
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_SHI_BoomgatePanel_C_setTitle final
+{
+public:
+	class FText                                   RoomName;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_SHI_BoomgatePanel_C_setTitle;
+
+// Function WBP_SHI_BoomgatePanel.WBP_SHI_BoomgatePanel_C.setState
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_SHI_BoomgatePanel_C_setState final
+{
+public:
+	bool                                          open;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_SHI_BoomgatePanel_C_setState;
+
+// Function WBP_SHI_BoomgatePanel.WBP_SHI_BoomgatePanel_C.setLogo
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_SHI_BoomgatePanel_C_setLogo final
+{
+public:
+	class UTexture2D*                             Texture;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_SHI_BoomgatePanel_C_setLogo;
+
 // Function WBP_SHI_BoomgatePanel.WBP_SHI_BoomgatePanel_C.ExecuteUbergraph_WBP_SHI_BoomgatePanel
 // 0x00F0 (0x00F0 - 0x0000)
 struct WBP_SHI_BoomgatePanel_C_ExecuteUbergraph_WBP_SHI_BoomgatePanel final
@@ -48,30 +75,7 @@ public:
 	class FText                                   Temp_text_Variable_1;                              // 0x00D0(0x0010)()
 	class FText                                   K2Node_Select_Default_2;                           // 0x00E0(0x0010)()
 };
-
-// Function WBP_SHI_BoomgatePanel.WBP_SHI_BoomgatePanel_C.setLogo
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_SHI_BoomgatePanel_C_setLogo final
-{
-public:
-	class UTexture2D*                             Texture;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WBP_SHI_BoomgatePanel.WBP_SHI_BoomgatePanel_C.setState
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_SHI_BoomgatePanel_C_setState final
-{
-public:
-	bool                                          open;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WBP_SHI_BoomgatePanel.WBP_SHI_BoomgatePanel_C.setTitle
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_SHI_BoomgatePanel_C_setTitle final
-{
-public:
-	class FText                                   RoomName;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
+DUMPER7_ASSERTS_WBP_SHI_BoomgatePanel_C_ExecuteUbergraph_WBP_SHI_BoomgatePanel;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

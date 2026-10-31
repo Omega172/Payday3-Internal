@@ -43,21 +43,21 @@ public:
 	struct FLinearColor                           Color_Neutral;                                     // 0x04DC(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UpdateWeaponStatVisualsNew();
-	void SetWeaponStatNew_0(class UProgressBar* ProgressBarA, class UProgressBar* ProgressBarB, class UTextBlock* TextBlock, double BaseStat, double CompareStat);
-	void SetWeaponStatNew(class UProgressBar* ProgressBarBase, class UProgressBar* ProgressBarCompare, class UTextBlock* TextBlock, double BaseStat, double CompareStat);
-	void SetWeaponStat(class UProgressBar* ProgressBarA, class UProgressBar* ProgressBarB, double BaseStat, double CompareStat);
-	void SetTextStatColorAndNumber__Int_(class UTextBlock* TextWidget, int32 BaseValue, int32 CompareValue);
-	void SetTextStatColorAndNumber(class UTextBlock* TextWidget, double BaseValue, double CompareValue);
-	void SetFlipCompare(bool bFlipCompare);
-	void SetAmmoStatNew();
-	void OnUpdateVisuals();
-	void GetDamageWithFalloff(const struct FSBZEquippableConfig& SBZEquippableConfig, TArray<struct FSBZDamageDistance>* LocalDamageDistances1);
-	struct FLinearColor GetCompareColorToUse(double BaseValue, double CompareValue);
-	struct FLinearColor GetColorToUse__Int_(int32 BaseValue, int32 CompareValue);
-	void GetAverageDamageAndFireRate(const struct FSBZEquippableConfig& SBZEquippableConfig, double* Damage, double* Rounds_Per_Minute, int32* ProjectilesPerFiredRound, class FText* DamageText);
-	void ExecuteUbergraph_WBP_WeaponStatsNew(int32 EntryPoint);
 	void DamageDistToText(TArray<struct FSBZDamageDistance>& DamageDists, int32 Pellets, class FText* Text);
+	void ExecuteUbergraph_WBP_WeaponStatsNew(int32 EntryPoint);
+	void GetAverageDamageAndFireRate(const struct FSBZEquippableConfig& SBZEquippableConfig, double* Damage, double* Rounds_Per_Minute, int32* ProjectilesPerFiredRound, class FText* DamageText);
+	struct FLinearColor GetColorToUse__Int_(int32 BaseValue, int32 CompareValue);
+	struct FLinearColor GetCompareColorToUse(double BaseValue, double CompareValue);
+	void GetDamageWithFalloff(const struct FSBZEquippableConfig& SBZEquippableConfig, TArray<struct FSBZDamageDistance>* LocalDamageDistances1);
+	void OnUpdateVisuals();
+	void SetAmmoStatNew();
+	void SetFlipCompare(bool bFlipCompare_0);
+	void SetTextStatColorAndNumber(class UTextBlock* TextWidget, double BaseValue, double CompareValue);
+	void SetTextStatColorAndNumber__Int_(class UTextBlock* TextWidget, int32 BaseValue, int32 CompareValue);
+	void SetWeaponStat(class UProgressBar* ProgressBarA, class UProgressBar* ProgressBarB, double BaseStat, double CompareStat);
+	void SetWeaponStatNew(class UProgressBar* ProgressBarBase, class UProgressBar* ProgressBarCompare, class UTextBlock* TextBlock, double BaseStat, double CompareStat);
+	void SetWeaponStatNew_0(class UProgressBar* ProgressBarA, class UProgressBar* ProgressBarB, class UTextBlock* TextBlock, double BaseStat, double CompareStat);
+	void UpdateWeaponStatVisualsNew();
 
 public:
 	static class UClass* StaticClass()

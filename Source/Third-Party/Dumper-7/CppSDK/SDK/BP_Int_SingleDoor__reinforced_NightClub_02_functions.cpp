@@ -16,26 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Int_SingleDoor__reinforced_NightClub_02.BP_Int_SingleDoor__reinforced_NightClub_02_C.ExecuteUbergraph_BP_Int_SingleDoor__reinforced_NightClub_02
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Int_SingleDoor__reinforced_NightClub_02_C::ExecuteUbergraph_BP_Int_SingleDoor__reinforced_NightClub_02(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Int_SingleDoor__reinforced_NightClub_02_C", "ExecuteUbergraph_BP_Int_SingleDoor__reinforced_NightClub_02");
-
-	Params::BP_Int_SingleDoor__reinforced_NightClub_02_C_ExecuteUbergraph_BP_Int_SingleDoor__reinforced_NightClub_02 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_Int_SingleDoor__reinforced_NightClub_02.BP_Int_SingleDoor__reinforced_NightClub_02_C.ReactToCloset
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -44,15 +24,31 @@ void ABP_Int_SingleDoor__reinforced_NightClub_02_C::ExecuteUbergraph_BP_Int_Sing
 
 void ABP_Int_SingleDoor__reinforced_NightClub_02_C::ReactToCloset(bool bActorsInCloset, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Int_SingleDoor__reinforced_NightClub_02_C", "ReactToCloset");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReactToCloset", FnName));
 
 	Params::BP_Int_SingleDoor__reinforced_NightClub_02_C_ReactToCloset Parms{};
 
 	Parms.bActorsInCloset = bActorsInCloset;
 	Parms.bDoCosmetics = bDoCosmetics;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Int_SingleDoor__reinforced_NightClub_02.BP_Int_SingleDoor__reinforced_NightClub_02_C.ExecuteUbergraph_BP_Int_SingleDoor__reinforced_NightClub_02
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Int_SingleDoor__reinforced_NightClub_02_C::ExecuteUbergraph_BP_Int_SingleDoor__reinforced_NightClub_02(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Int_SingleDoor__reinforced_NightClub_02_C", "ExecuteUbergraph_BP_Int_SingleDoor__reinforced_NightClub_02", FuncInfo);
+
+	Params::BP_Int_SingleDoor__reinforced_NightClub_02_C_ExecuteUbergraph_BP_Int_SingleDoor__reinforced_NightClub_02 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

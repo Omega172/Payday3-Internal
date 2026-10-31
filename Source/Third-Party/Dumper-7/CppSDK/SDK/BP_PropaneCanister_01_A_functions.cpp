@@ -16,25 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_PropaneCanister_01_A.BP_PropaneCanister_01_A_C.BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UActorComponent*                  Component                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bReset                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_PropaneCanister_01_A.BP_PropaneCanister_01_A_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_PropaneCanister_01_A_C::BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature(class UActorComponent* Component, bool bReset)
+void ABP_PropaneCanister_01_A_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PropaneCanister_01_A_C", "BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature");
-
-	Params::BP_PropaneCanister_01_A_C_BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature Parms{};
-
-	Parms.Component = Component;
-	Parms.bReset = bReset;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -45,10 +35,8 @@ void ABP_PropaneCanister_01_A_C::BndEvt__BP_TestExplosiveFuelTank_NiagaraCompone
 
 void ABP_PropaneCanister_01_A_C::ExecuteUbergraph_BP_PropaneCanister_01_A(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PropaneCanister_01_A_C", "ExecuteUbergraph_BP_PropaneCanister_01_A");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_PropaneCanister_01_A_C", "ExecuteUbergraph_BP_PropaneCanister_01_A", FuncInfo);
 
 	Params::BP_PropaneCanister_01_A_C_ExecuteUbergraph_BP_PropaneCanister_01_A Parms{};
 
@@ -58,17 +46,23 @@ void ABP_PropaneCanister_01_A_C::ExecuteUbergraph_BP_PropaneCanister_01_A(int32 
 }
 
 
-// Function BP_PropaneCanister_01_A.BP_PropaneCanister_01_A_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_PropaneCanister_01_A.BP_PropaneCanister_01_A_C.BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UActorComponent*                  Component                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bReset                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PropaneCanister_01_A_C::UserConstructionScript()
+void ABP_PropaneCanister_01_A_C::BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature(class UActorComponent* Component, bool bReset)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PropaneCanister_01_A_C", "UserConstructionScript");
+	Params::BP_PropaneCanister_01_A_C_BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.Component = Component;
+	Parms.bReset = bReset;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

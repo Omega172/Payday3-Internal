@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<AONE_BP_WallLamp_Red_C>();
 	}
 };
+DUMPER7_ASSERTS_AONE_BP_WallLamp_Red_C;
 
 SDK_NAMESPACE_END

@@ -23,8 +23,8 @@ public:
 	class FName                                   BBKey;                                             // 0x0038(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ProvideActorsSet(class UObject* QuerierObject, class AActor* QuerierActor, TArray<class AActor*>* ResultingActorsSet) const;
-	void ProvideSingleActor(class UObject* QuerierObject, class AActor* QuerierActor, class AActor** ResultingActor) const;
+	void ProvideSingleActor(class UObject* QuerierObject_ProvideSingleActor, class AActor* QuerierActor_ProvideSingleActor, class AActor** ResultingActor_ProvideSingleActor) const;
+	void ProvideActorsSet(class UObject* QuerierObject_ProvideActorsSet, class AActor* QuerierActor_ProvideActorsSet, TArray<class AActor*>* ResultingActorsSet_ProvideActorsSet) const;
 
 public:
 	static class UClass* StaticClass()
@@ -40,5 +40,6 @@ public:
 		return GetDefaultObjImpl<UBP_EnvQueryContext_WardBBKey_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_EnvQueryContext_WardBBKey_C;
 
 SDK_NAMESPACE_END

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "Enum_Int_Garage_Door_States_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Starbreeze_classes.hpp"
-#include "Enum_Int_Garage_Door_States_structs.hpp"
 #include "AkAudio_structs.hpp"
 
 
@@ -31,11 +31,11 @@ public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0380(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_GarageDoorBase(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void setBinaryState(bool state, bool doCosmetics);
-	void SetStateFunction(Enum_Int_Garage_Door_States State, bool animateOpening);
 	void UserConstructionScript();
+	void SetStateFunction(Enum_Int_Garage_Door_States State, bool animateOpening);
+	void setBinaryState(bool state, bool doCosmetics);
+	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
+	void ExecuteUbergraph_BP_GarageDoorBase(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -51,5 +51,6 @@ public:
 		return GetDefaultObjImpl<ABP_GarageDoorBase_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_GarageDoorBase_C;
 
 SDK_NAMESPACE_END

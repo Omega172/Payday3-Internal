@@ -16,27 +16,61 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Safe_01.BP_Safe_01_C.BndEvt__BP_Safe_01_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
+// Function BP_Safe_01.BP_Safe_01_C.phaseDoor
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UActorComponent*                  PoolComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   Hits                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZPropDamageContext&     DamageContext                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// bool                                    shouldPhase                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Safe_01_C::BndEvt__BP_Safe_01_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
+void ABP_Safe_01_C::phaseDoor(bool shouldPhase)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"phaseDoor", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Safe_01_C", "BndEvt__BP_Safe_01_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature");
+	Params::BP_Safe_01_C_phaseDoor Parms{};
 
-	Params::BP_Safe_01_C_BndEvt__BP_Safe_01_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature Parms{};
+	Parms.shouldPhase = shouldPhase;
 
-	Parms.PoolComponent = PoolComponent;
-	Parms.Hits = Hits;
-	Parms.bDoCosmetics = bDoCosmetics;
-	Parms.DamageContext = std::move(DamageContext);
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Safe_01.BP_Safe_01_C.open_timeline__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_Safe_01_C::open_timeline__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"open_timeline__UpdateFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Safe_01.BP_Safe_01_C.open_timeline__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_Safe_01_C::open_timeline__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"open_timeline__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Safe_01.BP_Safe_01_C.ExecuteUbergraph_BP_Safe_01
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Safe_01_C::ExecuteUbergraph_BP_Safe_01(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Safe_01_C", "ExecuteUbergraph_BP_Safe_01", FuncInfo);
+
+	Params::BP_Safe_01_C_ExecuteUbergraph_BP_Safe_01 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -49,10 +83,8 @@ void ABP_Safe_01_C::BndEvt__BP_Safe_01_SBZPropDamage_K2Node_ComponentBoundEvent_
 
 void ABP_Safe_01_C::BP_OnMiniGameSuccess(bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Safe_01_C", "BP_OnMiniGameSuccess");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnMiniGameSuccess", FnName));
 
 	Params::BP_Safe_01_C_BP_OnMiniGameSuccess Parms{};
 
@@ -62,69 +94,25 @@ void ABP_Safe_01_C::BP_OnMiniGameSuccess(bool bDoCosmetics)
 }
 
 
-// Function BP_Safe_01.BP_Safe_01_C.ExecuteUbergraph_BP_Safe_01
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_Safe_01.BP_Safe_01_C.BndEvt__BP_Safe_01_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UActorComponent*                  PoolComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   Hits                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZPropDamageContext&     DamageContext                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 
-void ABP_Safe_01_C::ExecuteUbergraph_BP_Safe_01(int32 EntryPoint)
+void ABP_Safe_01_C::BndEvt__BP_Safe_01_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Safe_01_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Safe_01_C", "ExecuteUbergraph_BP_Safe_01");
+	Params::BP_Safe_01_C_BndEvt__BP_Safe_01_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature Parms{};
 
-	Params::BP_Safe_01_C_ExecuteUbergraph_BP_Safe_01 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Safe_01.BP_Safe_01_C.open_timeline__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_Safe_01_C::open_timeline__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Safe_01_C", "open_timeline__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Safe_01.BP_Safe_01_C.open_timeline__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_Safe_01_C::open_timeline__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Safe_01_C", "open_timeline__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Safe_01.BP_Safe_01_C.phaseDoor
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    shouldPhase                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Safe_01_C::phaseDoor(bool shouldPhase)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Safe_01_C", "phaseDoor");
-
-	Params::BP_Safe_01_C_phaseDoor Parms{};
-
-	Parms.shouldPhase = shouldPhase;
+	Parms.PoolComponent = PoolComponent;
+	Parms.Hits = Hits;
+	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.DamageContext = std::move(DamageContext);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

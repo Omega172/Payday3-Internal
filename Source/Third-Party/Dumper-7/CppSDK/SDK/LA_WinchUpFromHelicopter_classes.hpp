@@ -39,14 +39,14 @@ public:
 	TMulticastInlineDelegate<void()>              OnWinchAnimationCompleted;                         // 0x03F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__LA_WinchUp_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot);
-	void BndEvt__LA_WinchUp_SBZLifeAction_K2Node_ComponentBoundEvent_2_SBZLifeActionStopEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot, ESBZLifeActionStopReason Result);
-	void BndEvt__LA_WinchUp_SBZLifeActionSlot_K2Node_ComponentBoundEvent_0_SBZLifeActionTagEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot, const struct FGameplayTag& Tag, bool bActive);
-	void BndEvt__LA_WinchUpFromHelicopter_SBZLifeAction_K2Node_ComponentBoundEvent_4_SBZLifeActionEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot);
-	void CheckForExit();
-	void ExecuteUbergraph_LA_WinchUpFromHelicopter(int32 EntryPoint);
+	void OnHelicopterArrived(class ASBZAerialVehicle* Helicopter);
 	void HandleCableAttachment(bool Active, class ASBZCharacter* Character, const struct FGameplayTag& EventTag);
-	void OnHelicopterArrived(class ASBZAerialVehicle* Helicopter_0);
+	void ExecuteUbergraph_LA_WinchUpFromHelicopter(int32 EntryPoint);
+	void CheckForExit();
+	void BndEvt__LA_WinchUpFromHelicopter_SBZLifeAction_K2Node_ComponentBoundEvent_4_SBZLifeActionEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot);
+	void BndEvt__LA_WinchUp_SBZLifeActionSlot_K2Node_ComponentBoundEvent_0_SBZLifeActionTagEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot, const struct FGameplayTag& Tag, bool bActive);
+	void BndEvt__LA_WinchUp_SBZLifeAction_K2Node_ComponentBoundEvent_2_SBZLifeActionStopEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot, ESBZLifeActionStopReason Result);
+	void BndEvt__LA_WinchUp_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot);
 
 public:
 	static class UClass* StaticClass()
@@ -62,5 +62,6 @@ public:
 		return GetDefaultObjImpl<ALA_WinchUpFromHelicopter_C>();
 	}
 };
+DUMPER7_ASSERTS_ALA_WinchUpFromHelicopter_C;
 
 SDK_NAMESPACE_END

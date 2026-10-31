@@ -34,13 +34,13 @@ public:
 	TMulticastInlineDelegate<void()>              Interaction_interrupted;                           // 0x0398(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__BP_push_keep_Animated_Button1_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_push_keep_Animated_Button1_Interactable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__NewBlueprint_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void Disable_Interaction();
-	void Enable_Interaction();
-	void ExecuteUbergraph_BP_push_keep_Animated_Button1(int32 EntryPoint);
 	void UserConstructionScript();
+	void ExecuteUbergraph_BP_push_keep_Animated_Button1(int32 EntryPoint);
+	void Enable_Interaction();
+	void Disable_Interaction();
+	void BndEvt__NewBlueprint_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_push_keep_Animated_Button1_Interactable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_push_keep_Animated_Button1_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -56,5 +56,6 @@ public:
 		return GetDefaultObjImpl<ABP_push_keep_Animated_Button1_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_push_keep_Animated_Button1_C;
 
 SDK_NAMESPACE_END

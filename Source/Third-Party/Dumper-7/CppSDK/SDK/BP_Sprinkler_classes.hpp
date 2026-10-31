@@ -34,13 +34,13 @@ public:
 	struct FVector                                groundSplashPosition;                              // 0x03B0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Activate_sprinklers();
-	void desactivate_sprinklers();
-	void ExecuteUbergraph_BP_Sprinkler(int32 EntryPoint);
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void ReceiveBeginPlay();
-	void Sprinkler_Management(int32 state, bool doCosmetics);
 	void UserConstructionScript();
+	void Sprinkler_Management(int32 state, bool doCosmetics);
+	void ReceiveBeginPlay();
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_Sprinkler(int32 EntryPoint);
+	void desactivate_sprinklers();
+	void Activate_sprinklers();
 
 public:
 	static class UClass* StaticClass()
@@ -56,5 +56,6 @@ public:
 		return GetDefaultObjImpl<ABP_Sprinkler_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Sprinkler_C;
 
 SDK_NAMESPACE_END

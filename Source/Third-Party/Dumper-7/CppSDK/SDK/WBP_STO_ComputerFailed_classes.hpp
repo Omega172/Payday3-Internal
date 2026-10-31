@@ -43,5 +43,6 @@ public:
 		return GetDefaultObjImpl<UWBP_STO_ComputerFailed_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_STO_ComputerFailed_C;
 
 SDK_NAMESPACE_END

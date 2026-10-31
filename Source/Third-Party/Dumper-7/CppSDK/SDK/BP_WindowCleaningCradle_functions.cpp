@@ -16,65 +16,43 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_WindowCleaningCradle.BP_WindowCleaningCradle_C.BndEvt__BP_EscapeVan_SBZSecuredBagVisualize_K2Node_ComponentBoundEvent_0_SBZSecuredBagVisualizeBagAddedSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// const class USBZBagType*                BagType                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function BP_WindowCleaningCradle.BP_WindowCleaningCradle_C.ShowMarker
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_WindowCleaningCradle_C::BndEvt__BP_EscapeVan_SBZSecuredBagVisualize_K2Node_ComponentBoundEvent_0_SBZSecuredBagVisualizeBagAddedSignature__DelegateSignature(const class USBZBagType* BagType)
+void ABP_WindowCleaningCradle_C::ShowMarker()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ShowMarker", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WindowCleaningCradle_C", "BndEvt__BP_EscapeVan_SBZSecuredBagVisualize_K2Node_ComponentBoundEvent_0_SBZSecuredBagVisualizeBagAddedSignature__DelegateSignature");
-
-	Params::BP_WindowCleaningCradle_C_BndEvt__BP_EscapeVan_SBZSecuredBagVisualize_K2Node_ComponentBoundEvent_0_SBZSecuredBagVisualizeBagAddedSignature__DelegateSignature Parms{};
-
-	Parms.BagType = BagType;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_WindowCleaningCradle.BP_WindowCleaningCradle_C.BP_OnStateChanged
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
-// Parameters:
-// ESBZTimerState                          NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZTimerState                          OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_WindowCleaningCradle.BP_WindowCleaningCradle_C.SetPlatformLocation
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_WindowCleaningCradle_C::BP_OnStateChanged(ESBZTimerState NewState, ESBZTimerState OldState, bool bDoCosmetics)
+void ABP_WindowCleaningCradle_C::SetPlatformLocation()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetPlatformLocation", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WindowCleaningCradle_C", "BP_OnStateChanged");
-
-	Params::BP_WindowCleaningCradle_C_BP_OnStateChanged Parms{};
-
-	Parms.NewState = NewState;
-	Parms.OldState = OldState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_WindowCleaningCradle.BP_WindowCleaningCradle_C.ExecuteUbergraph_BP_WindowCleaningCradle
-// (Final, UbergraphFunction)
+// Function BP_WindowCleaningCradle.BP_WindowCleaningCradle_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaSeconds_ReceiveTick                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_WindowCleaningCradle_C::ExecuteUbergraph_BP_WindowCleaningCradle(int32 EntryPoint)
+void ABP_WindowCleaningCradle_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveTick", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WindowCleaningCradle_C", "ExecuteUbergraph_BP_WindowCleaningCradle");
+	Params::BP_WindowCleaningCradle_C_ReceiveTick Parms{};
 
-	Params::BP_WindowCleaningCradle_C_ExecuteUbergraph_BP_WindowCleaningCradle Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.DeltaSeconds_ReceiveTick = DeltaSeconds_ReceiveTick;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -87,10 +65,8 @@ void ABP_WindowCleaningCradle_C::ExecuteUbergraph_BP_WindowCleaningCradle(int32 
 
 class FText ABP_WindowCleaningCradle_C::GetMarkerText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WindowCleaningCradle_C", "GetMarkerText");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetMarkerText", FnName));
 
 	Params::BP_WindowCleaningCradle_C_GetMarkerText Parms{};
 
@@ -100,51 +76,61 @@ class FText ABP_WindowCleaningCradle_C::GetMarkerText()
 }
 
 
-// Function BP_WindowCleaningCradle.BP_WindowCleaningCradle_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
+// Function BP_WindowCleaningCradle.BP_WindowCleaningCradle_C.ExecuteUbergraph_BP_WindowCleaningCradle
+// (Final, UbergraphFunction)
 // Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_WindowCleaningCradle_C::ReceiveTick(float DeltaSeconds)
+void ABP_WindowCleaningCradle_C::ExecuteUbergraph_BP_WindowCleaningCradle(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_WindowCleaningCradle_C", "ExecuteUbergraph_BP_WindowCleaningCradle", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WindowCleaningCradle_C", "ReceiveTick");
+	Params::BP_WindowCleaningCradle_C_ExecuteUbergraph_BP_WindowCleaningCradle Parms{};
 
-	Params::BP_WindowCleaningCradle_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_WindowCleaningCradle.BP_WindowCleaningCradle_C.SetPlatformLocation
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_WindowCleaningCradle.BP_WindowCleaningCradle_C.BP_OnStateChanged
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZTimerState                          NewState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZTimerState                          OldState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_BP_OnStateChanged                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_WindowCleaningCradle_C::SetPlatformLocation()
+void ABP_WindowCleaningCradle_C::BP_OnStateChanged(ESBZTimerState NewState_BP_OnStateChanged, ESBZTimerState OldState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WindowCleaningCradle_C", "SetPlatformLocation");
+	Params::BP_WindowCleaningCradle_C_BP_OnStateChanged Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.NewState_BP_OnStateChanged = NewState_BP_OnStateChanged;
+	Parms.OldState_BP_OnStateChanged = OldState_BP_OnStateChanged;
+	Parms.bDoCosmetics_BP_OnStateChanged = bDoCosmetics_BP_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_WindowCleaningCradle.BP_WindowCleaningCradle_C.ShowMarker
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_WindowCleaningCradle.BP_WindowCleaningCradle_C.BndEvt__BP_EscapeVan_SBZSecuredBagVisualize_K2Node_ComponentBoundEvent_0_SBZSecuredBagVisualizeBagAddedSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// const class USBZBagType*                BagType                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_WindowCleaningCradle_C::ShowMarker()
+void ABP_WindowCleaningCradle_C::BndEvt__BP_EscapeVan_SBZSecuredBagVisualize_K2Node_ComponentBoundEvent_0_SBZSecuredBagVisualizeBagAddedSignature__DelegateSignature(const class USBZBagType* BagType)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_EscapeVan_SBZSecuredBagVisualize_K2Node_ComponentBoundEvent_0_SBZSecuredBagVisualizeBagAddedSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WindowCleaningCradle_C", "ShowMarker");
+	Params::BP_WindowCleaningCradle_C_BndEvt__BP_EscapeVan_SBZSecuredBagVisualize_K2Node_ComponentBoundEvent_0_SBZSecuredBagVisualizeBagAddedSignature__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.BagType = BagType;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

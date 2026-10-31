@@ -55,19 +55,19 @@ public:
 	class UWBP_InventoryBaseData_Icon_C*          Widget_Icon;                                       // 0x0578(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void SetWeaponTextColour(const struct FLinearColor& InColour);
-	void SetEquipped(bool bIsEquipped);
-	void SetEmpty();
-	void SetActiveWeaponSlot(bool bIsActiveWeaponSlot_SetActiveWeaponSlot);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnWeaponSlotInitialized();
-	void OnInitialized();
-	void OnHover(bool bIsHovered);
-	void OnFocused(bool bIsFocused);
-	void InitializeItem(class USBZInventoryBaseData* InInventoryData);
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
 	void ExecuteUbergraph_WBP_UI_Inventory_WeaponSlotButton(int32 EntryPoint);
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
+	void InitializeItem(class USBZInventoryBaseData* InInventoryData);
+	void OnFocused(bool bIsFocused);
+	void OnHover(bool bIsHovered);
+	void OnInitialized();
+	void OnWeaponSlotInitialized();
+	void PreConstruct(bool IsDesignTime);
+	void SetActiveWeaponSlot(bool bIsActiveWeaponSlot);
+	void SetEmpty();
+	void SetEquipped(bool bIsEquipped);
+	void SetWeaponTextColour(const struct FLinearColor& InColour);
 
 public:
 	static class UClass* StaticClass()

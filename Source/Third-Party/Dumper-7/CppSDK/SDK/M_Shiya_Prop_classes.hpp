@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AM_Shiya_Prop_C>();
 	}
 };
+DUMPER7_ASSERTS_AM_Shiya_Prop_C;
 
 SDK_NAMESPACE_END

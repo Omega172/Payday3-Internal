@@ -26,8 +26,8 @@ public:
 	class USkeletalMeshComponentBudgeted*         SkeletalMeshComponentBudgeted;                     // 0x0898(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnBagDropped();
 	void ExecuteUbergraph_BP_DeliveryDrone(int32 EntryPoint);
+	void BP_OnBagDropped();
 
 public:
 	static class UClass* StaticClass()
@@ -43,5 +43,6 @@ public:
 		return GetDefaultObjImpl<ABP_DeliveryDrone_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DeliveryDrone_C;
 
 SDK_NAMESPACE_END

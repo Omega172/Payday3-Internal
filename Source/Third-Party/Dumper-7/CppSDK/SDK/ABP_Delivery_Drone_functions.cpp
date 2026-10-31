@@ -20,14 +20,12 @@ SDK_NAMESPACE_START
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const struct FPoseLink&                 InPose                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
+// struct FPoseLink*                       AnimGraph                                              (Parm, OutParm, NoDestructor)
 
-void UABP_Delivery_Drone_C::AnimGraph(const struct FPoseLink& InPose, struct FPoseLink* AnimGraph_0)
+void UABP_Delivery_Drone_C::AnimGraph(const struct FPoseLink& InPose, struct FPoseLink* AnimGraph)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_Delivery_Drone_C", "AnimGraph");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AnimGraph", FnName));
 
 	Params::ABP_Delivery_Drone_C_AnimGraph Parms{};
 
@@ -35,8 +33,8 @@ void UABP_Delivery_Drone_C::AnimGraph(const struct FPoseLink& InPose, struct FPo
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (AnimGraph_0 != nullptr)
-		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
+	if (AnimGraph != nullptr)
+		*AnimGraph = std::move(Parms.AnimGraph);
 }
 
 

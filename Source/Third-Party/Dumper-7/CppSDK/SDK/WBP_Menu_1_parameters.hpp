@@ -14,6 +14,24 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_Menu_1.WBP_Menu_1_C.SetBackFocus
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Menu_1_C_SetBackFocus final
+{
+public:
+	bool                                          NewParam;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Menu_1_C_SetBackFocus;
+
+// Function WBP_Menu_1.WBP_Menu_1_C.Set Numbers
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Menu_1_C_Set_Numbers final
+{
+public:
+	class FString                                 NewParam;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Menu_1_C_Set_Numbers;
+
 // Function WBP_Menu_1.WBP_Menu_1_C.ExecuteUbergraph_WBP_Menu_1
 // 0x0028 (0x0028 - 0x0000)
 struct WBP_Menu_1_C_ExecuteUbergraph_WBP_Menu_1 final
@@ -25,22 +43,7 @@ public:
 	class FString                                 K2Node_CustomEvent_NewParam;                       // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0018(0x0010)()
 };
-
-// Function WBP_Menu_1.WBP_Menu_1_C.Set Numbers
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Menu_1_C_Set_Numbers final
-{
-public:
-	class FString                                 NewParam;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-};
-
-// Function WBP_Menu_1.WBP_Menu_1_C.SetBackFocus
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Menu_1_C_SetBackFocus final
-{
-public:
-	bool                                          NewParam;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_WBP_Menu_1_C_ExecuteUbergraph_WBP_Menu_1;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

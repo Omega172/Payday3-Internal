@@ -39,9 +39,9 @@ public:
 	bool                                          Toggle_Weapon_Right;                               // 0x037D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_CinematicCharacter_Bad_Guy(int32 EntryPoint);
-	void ReceiveBeginPlay();
 	void UserConstructionScript();
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_CinematicCharacter_Bad_Guy(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -57,5 +57,6 @@ public:
 		return GetDefaultObjImpl<ABP_CinematicCharacter_Bad_Guy_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CinematicCharacter_Bad_Guy_C;
 
 SDK_NAMESPACE_END

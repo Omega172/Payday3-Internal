@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_TaserBattery_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_TaserBattery_C;
 
 SDK_NAMESPACE_END

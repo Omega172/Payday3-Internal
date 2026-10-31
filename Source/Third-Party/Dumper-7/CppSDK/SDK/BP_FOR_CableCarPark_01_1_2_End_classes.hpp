@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_FOR_CableCarPark_01_1_2_End_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_FOR_CableCarPark_01_1_2_End_C;
 
 SDK_NAMESPACE_END

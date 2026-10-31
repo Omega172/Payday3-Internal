@@ -29,11 +29,11 @@ public:
 	TMulticastInlineDelegate<void()>              WhiskeyBottleTaken;                                // 0x0380(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__BP_ReplicatedBinaryActorWhiskeyGlass_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_ReplicatedBinaryActorWhiskeyBox(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void ReceiveBeginPlay();
 	void SetInteractionEnabled(bool Enabled);
+	void ReceiveBeginPlay();
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_ReplicatedBinaryActorWhiskeyBox(int32 EntryPoint);
+	void BndEvt__BP_ReplicatedBinaryActorWhiskeyGlass_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -49,5 +49,6 @@ public:
 		return GetDefaultObjImpl<ABP_ReplicatedBinaryActorWhiskeyBox_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ReplicatedBinaryActorWhiskeyBox_C;
 
 SDK_NAMESPACE_END

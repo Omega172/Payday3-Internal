@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Starbreeze_classes.hpp"
 #include "AkAudio_structs.hpp"
 
@@ -54,18 +54,18 @@ public:
 	TMulticastInlineDelegate<void()>              SwitchPulled;                                      // 0x0480(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__BP_ReplicatedBinaryActorMovableBook_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_ReplicatedBinaryMovableBook_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void Disable();
-	void ExecuteUbergraph_BP_ReplicatedBinaryActorMovableBook(int32 EntryPoint);
-	void FalseBook__FinishedFunc();
-	void FalseBook__UpdateFunc();
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void SetIsHiddenSwitch(const bool IsSwitch);
-	void Siwtch__FinishedFunc();
-	void Siwtch__UpdateFunc();
-	void Swithc__FinishedFunc();
 	void Swithc__UpdateFunc();
+	void Swithc__FinishedFunc();
+	void Siwtch__UpdateFunc();
+	void Siwtch__FinishedFunc();
+	void SetIsHiddenSwitch(const bool IsSwitch);
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void FalseBook__UpdateFunc();
+	void FalseBook__FinishedFunc();
+	void ExecuteUbergraph_BP_ReplicatedBinaryActorMovableBook(int32 EntryPoint);
+	void Disable();
+	void BndEvt__BP_ReplicatedBinaryMovableBook_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_ReplicatedBinaryActorMovableBook_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -81,5 +81,6 @@ public:
 		return GetDefaultObjImpl<ABP_ReplicatedBinaryActorMovableBook_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ReplicatedBinaryActorMovableBook_C;
 
 SDK_NAMESPACE_END

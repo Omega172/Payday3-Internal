@@ -40,5 +40,6 @@ public:
 		return GetDefaultObjImpl<ABPL_NeonTube_Ceil_Big_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_NeonTube_Ceil_Big_C;
 
 SDK_NAMESPACE_END

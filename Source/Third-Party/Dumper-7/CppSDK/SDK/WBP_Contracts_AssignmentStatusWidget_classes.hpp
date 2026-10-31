@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "E_Contracts_AssignmentStatus_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Starbreeze_classes.hpp"
 
 
@@ -34,9 +34,9 @@ public:
 	E_Contracts_AssignmentStatus                  PreviewState;                                      // 0x0338(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetState(E_Contracts_AssignmentStatus State);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
 	void ExecuteUbergraph_WBP_Contracts_AssignmentStatusWidget(int32 EntryPoint);
+	void PreConstruct(bool IsDesignTime);
+	void SetState(E_Contracts_AssignmentStatus State);
 
 public:
 	static class UClass* StaticClass()

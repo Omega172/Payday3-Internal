@@ -46,16 +46,16 @@ public:
 	bool                                          IsResearch;                                        // 0x039C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
-	void AnimateBarsAndText();
-	void Construct();
-	void ExecuteUbergraph_WBP_UI_Results_Reward_SkillProgress(int32 EntryPoint);
-	void GetExperienceValues(bool IncludeExpDiff, int32* CurrentExp, int32* TargetExp);
-	void OnLoaded_4365A4A44829CA194ACBEB912D0DDA4C(class UObject* Loaded);
-	void PlayAppearAnim();
-	void PlayLevelUpAnimation();
-	void PreConstruct(bool IsDesignTime);
-	void SequenceEvent__ENTRYPOINTWBP_UI_Results_Reward_SkillProgress();
 	void SetProgress();
+	void SequenceEvent__ENTRYPOINTWBP_UI_Results_Reward_SkillProgress();
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void PlayLevelUpAnimation();
+	void PlayAppearAnim();
+	void OnLoaded_4365A4A44829CA194ACBEB912D0DDA4C(class UObject* Loaded);
+	void GetExperienceValues(bool IncludeExpDiff, int32* CurrentExp, int32* TargetExp);
+	void ExecuteUbergraph_WBP_UI_Results_Reward_SkillProgress(int32 EntryPoint);
+	void Construct();
+	void AnimateBarsAndText();
 
 public:
 	static class UClass* StaticClass()
@@ -71,5 +71,6 @@ public:
 		return GetDefaultObjImpl<UWBP_UI_Results_Reward_SkillProgress_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_UI_Results_Reward_SkillProgress_C;
 
 SDK_NAMESPACE_END

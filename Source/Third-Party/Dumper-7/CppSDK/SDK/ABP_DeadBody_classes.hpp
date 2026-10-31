@@ -28,7 +28,7 @@ public:
 	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer;                      // 0x0410(0x0098)()
 
 public:
-	void AnimGraph(struct FPoseLink* AnimGraph_0);
+	void AnimGraph(struct FPoseLink* AnimGraph);
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<UABP_DeadBody_C>();
 	}
 };
+DUMPER7_ASSERTS_UABP_DeadBody_C;
 
 SDK_NAMESPACE_END

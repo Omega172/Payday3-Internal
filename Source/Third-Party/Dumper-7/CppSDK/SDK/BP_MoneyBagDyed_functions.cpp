@@ -16,23 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_MoneyBagDyed.BP_MoneyBagDyed_C.ExecuteUbergraph_BP_MoneyBagDyed
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_MoneyBagDyed.BP_MoneyBagDyed_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_MoneyBagDyed_C::ExecuteUbergraph_BP_MoneyBagDyed(int32 EntryPoint)
+void ABP_MoneyBagDyed_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MoneyBagDyed_C", "ExecuteUbergraph_BP_MoneyBagDyed");
-
-	Params::BP_MoneyBagDyed_C_ExecuteUbergraph_BP_MoneyBagDyed Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -46,10 +38,8 @@ void ABP_MoneyBagDyed_C::ExecuteUbergraph_BP_MoneyBagDyed(int32 EntryPoint)
 
 void ABP_MoneyBagDyed_C::OnActorHit_Event(class AActor* SelfActor, class AActor* OtherActor, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MoneyBagDyed_C", "OnActorHit_Event");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnActorHit_Event", FnName));
 
 	Params::BP_MoneyBagDyed_C_OnActorHit_Event Parms{};
 
@@ -62,17 +52,21 @@ void ABP_MoneyBagDyed_C::OnActorHit_Event(class AActor* SelfActor, class AActor*
 }
 
 
-// Function BP_MoneyBagDyed.BP_MoneyBagDyed_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_MoneyBagDyed.BP_MoneyBagDyed_C.ExecuteUbergraph_BP_MoneyBagDyed
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MoneyBagDyed_C::ReceiveBeginPlay()
+void ABP_MoneyBagDyed_C::ExecuteUbergraph_BP_MoneyBagDyed(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_MoneyBagDyed_C", "ExecuteUbergraph_BP_MoneyBagDyed", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MoneyBagDyed_C", "ReceiveBeginPlay");
+	Params::BP_MoneyBagDyed_C_ExecuteUbergraph_BP_MoneyBagDyed Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

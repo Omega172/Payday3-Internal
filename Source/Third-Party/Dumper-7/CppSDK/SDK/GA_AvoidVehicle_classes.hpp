@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGA_AvoidVehicle_C>();
 	}
 };
+DUMPER7_ASSERTS_UGA_AvoidVehicle_C;
 
 SDK_NAMESPACE_END

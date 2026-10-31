@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_GlassCup_01_B_SmallDestruction.BP_GlassCup_01_B_SmallDestruction_C.ExecuteUbergraph_BP_GlassCup_01_B_SmallDestruction
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_GlassCup_01_B_SmallDestruction_C::ExecuteUbergraph_BP_GlassCup_01_B_SmallDestruction(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_GlassCup_01_B_SmallDestruction_C", "ExecuteUbergraph_BP_GlassCup_01_B_SmallDestruction", FuncInfo);
+
+	Params::BP_GlassCup_01_B_SmallDestruction_C_ExecuteUbergraph_BP_GlassCup_01_B_SmallDestruction Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_GlassCup_01_B_SmallDestruction.BP_GlassCup_01_B_SmallDestruction_C.BndEvt__BP_GlassCup_01_B_SmallDestruction_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -24,35 +42,13 @@ SDK_NAMESPACE_START
 
 void ABP_GlassCup_01_B_SmallDestruction_C::BndEvt__BP_GlassCup_01_B_SmallDestruction_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature(class UActorComponent* Component, bool bReset)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GlassCup_01_B_SmallDestruction_C", "BndEvt__BP_GlassCup_01_B_SmallDestruction_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_GlassCup_01_B_SmallDestruction_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature", FnName));
 
 	Params::BP_GlassCup_01_B_SmallDestruction_C_BndEvt__BP_GlassCup_01_B_SmallDestruction_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature Parms{};
 
 	Parms.Component = Component;
 	Parms.bReset = bReset;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_GlassCup_01_B_SmallDestruction.BP_GlassCup_01_B_SmallDestruction_C.ExecuteUbergraph_BP_GlassCup_01_B_SmallDestruction
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_GlassCup_01_B_SmallDestruction_C::ExecuteUbergraph_BP_GlassCup_01_B_SmallDestruction(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_GlassCup_01_B_SmallDestruction_C", "ExecuteUbergraph_BP_GlassCup_01_B_SmallDestruction");
-
-	Params::BP_GlassCup_01_B_SmallDestruction_C_ExecuteUbergraph_BP_GlassCup_01_B_SmallDestruction Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

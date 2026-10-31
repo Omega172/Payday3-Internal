@@ -18,32 +18,24 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_HighTechLootRack.BP_HighTechLootRack_C.BndEvt__BP_LiquidNitrogen_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct BP_HighTechLootRack_C_BndEvt__BP_LiquidNitrogen_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature final
-{
-public:
-	const class USBZBaseInteractableComponent*    InteractableComponent;                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInNewState;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_HighTechLootRack.BP_HighTechLootRack_C.BndEvt__BP_LiquidNitrogen_SBZInteractable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_HighTechLootRack_C_BndEvt__BP_LiquidNitrogen_SBZInteractable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_HighTechLootRack.BP_HighTechLootRack_C.DegradableLootInside
+// Function BP_HighTechLootRack.BP_HighTechLootRack_C.SetInteractionEnabled
 // 0x0001 (0x0001 - 0x0000)
-struct BP_HighTechLootRack_C_DegradableLootInside final
+struct BP_HighTechLootRack_C_SetInteractionEnabled final
 {
 public:
 	bool                                          State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_HighTechLootRack_C_SetInteractionEnabled;
+
+// Function BP_HighTechLootRack.BP_HighTechLootRack_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_HighTechLootRack_C_OnStateChanged final
+{
+public:
+	bool                                          bStateToChangeTo_OnStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_HighTechLootRack_C_OnStateChanged;
 
 // Function BP_HighTechLootRack.BP_HighTechLootRack_C.ExecuteUbergraph_BP_HighTechLootRack
 // 0x0178 (0x0178 - 0x0000)
@@ -68,23 +60,37 @@ public:
 	uint8                                         Pad_169[0x7];                                      // 0x0169(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_MakeVector_Y_ImplicitCast;                // 0x0170(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_HighTechLootRack_C_ExecuteUbergraph_BP_HighTechLootRack;
 
-// Function BP_HighTechLootRack.BP_HighTechLootRack_C.OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_HighTechLootRack_C_OnStateChanged final
-{
-public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_HighTechLootRack.BP_HighTechLootRack_C.SetInteractionEnabled
+// Function BP_HighTechLootRack.BP_HighTechLootRack_C.DegradableLootInside
 // 0x0001 (0x0001 - 0x0000)
-struct BP_HighTechLootRack_C_SetInteractionEnabled final
+struct BP_HighTechLootRack_C_DegradableLootInside final
 {
 public:
 	bool                                          State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_HighTechLootRack_C_DegradableLootInside;
+
+// Function BP_HighTechLootRack.BP_HighTechLootRack_C.BndEvt__BP_LiquidNitrogen_SBZInteractable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_HighTechLootRack_C_BndEvt__BP_LiquidNitrogen_SBZInteractable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_HighTechLootRack_C_BndEvt__BP_LiquidNitrogen_SBZInteractable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature;
+
+// Function BP_HighTechLootRack.BP_HighTechLootRack_C.BndEvt__BP_LiquidNitrogen_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct BP_HighTechLootRack_C_BndEvt__BP_LiquidNitrogen_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature final
+{
+public:
+	const class USBZBaseInteractableComponent*    InteractableComponent;                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInNewState;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_HighTechLootRack_C_BndEvt__BP_LiquidNitrogen_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

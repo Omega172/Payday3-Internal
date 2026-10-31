@@ -17,15 +17,15 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Throwable_FlashBang_Cluster.BP_Throwable_FlashBang_Cluster_C
-// 0x0010 (0x8F30 - 0x8F20)
+// 0x0010 (0x0790 - 0x0780)
 class ABP_Throwable_FlashBang_Cluster_C final : public ASBZFlashBangCluster
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x8F20(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0780(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void BndEvt__BP_Throwable_FragGrenade_Cluster_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity);
 	void ExecuteUbergraph_BP_Throwable_FlashBang_Cluster(int32 EntryPoint);
+	void BndEvt__BP_Throwable_FragGrenade_Cluster_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity);
 
 public:
 	static class UClass* StaticClass()
@@ -41,5 +41,6 @@ public:
 		return GetDefaultObjImpl<ABP_Throwable_FlashBang_Cluster_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Throwable_FlashBang_Cluster_C;
 
 SDK_NAMESPACE_END

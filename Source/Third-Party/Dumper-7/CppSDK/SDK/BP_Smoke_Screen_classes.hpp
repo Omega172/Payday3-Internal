@@ -27,13 +27,13 @@ public:
 	class UNiagaraComponent*                      FX_NightClub_Smoke;                                // 0x0358(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Activate();
-	void Deactivate();
-	void ExecuteUbergraph_BP_Smoke_Screen(int32 EntryPoint);
-	void OnActiveStateChanged(bool bSetActive, bool bDoCosmetics);
-	void Play_Sound();
-	void ReceiveBeginPlay();
 	void Stop_Sound();
+	void ReceiveBeginPlay();
+	void Play_Sound();
+	void OnActiveStateChanged(bool bSetActive_OnActiveStateChanged, bool bDoCosmetics_OnActiveStateChanged);
+	void ExecuteUbergraph_BP_Smoke_Screen(int32 EntryPoint);
+	void Deactivate();
+	void Activate();
 
 public:
 	static class UClass* StaticClass()
@@ -49,5 +49,6 @@ public:
 		return GetDefaultObjImpl<ABP_Smoke_Screen_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Smoke_Screen_C;
 
 SDK_NAMESPACE_END

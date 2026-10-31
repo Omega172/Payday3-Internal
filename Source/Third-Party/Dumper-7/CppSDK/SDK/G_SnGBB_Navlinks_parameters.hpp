@@ -16,242 +16,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller2_K2Node_ActorBoundEvent_8_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller2_K2Node_ActorBoundEvent_8_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller3_K2Node_ActorBoundEvent_9_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller3_K2Node_ActorBoundEvent_9_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller4_K2Node_ActorBoundEvent_10_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller4_K2Node_ActorBoundEvent_10_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller5_K2Node_ActorBoundEvent_11_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller5_K2Node_ActorBoundEvent_11_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller6_K2Node_ActorBoundEvent_12_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller6_K2Node_ActorBoundEvent_12_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller7_K2Node_ActorBoundEvent_13_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller7_K2Node_ActorBoundEvent_13_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller_2_K2Node_ActorBoundEvent_7_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller_2_K2Node_ActorBoundEvent_7_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_0_ActorDestroyedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_0_ActorDestroyedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_1_TakeAnyDamageSignature__DelegateSignature
-// 0x0028 (0x0028 - 0x0000)
-struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_1_TakeAnyDamageSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DamagedActor;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         Damage;                                            // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	const class UDamageType*                      DamageType;                                        // 0x0010(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AController*                            InstigatedBy;                                      // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 DamageCauser;                                      // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV2_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.HeistStateChanged
 // 0x0002 (0x0002 - 0x0000)
-struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV2_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature final
+struct G_SnGBB_Navlinks_C_HeistStateChanged final
 {
 public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                OldHeistState_HeistStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CurrentHeistState_HeistStateChanged;               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV3_K2Node_ActorBoundEvent_4_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV3_K2Node_ActorBoundEvent_4_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV4_K2Node_ActorBoundEvent_17_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV4_K2Node_ActorBoundEvent_17_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV5_K2Node_ActorBoundEvent_19_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV5_K2Node_ActorBoundEvent_19_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV6_11_K2Node_ActorBoundEvent_21_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV6_11_K2Node_ActorBoundEvent_21_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV_4_K2Node_ActorBoundEvent_6_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV_4_K2Node_ActorBoundEvent_6_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B11_K2Node_ActorBoundEvent_15_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B11_K2Node_ActorBoundEvent_15_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B14_K2Node_ActorBoundEvent_16_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B14_K2Node_ActorBoundEvent_16_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B15_K2Node_ActorBoundEvent_20_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B15_K2Node_ActorBoundEvent_20_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV4_K2Node_ActorBoundEvent_3_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV4_K2Node_ActorBoundEvent_3_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV5_K2Node_ActorBoundEvent_14_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV5_K2Node_ActorBoundEvent_14_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV6_K2Node_ActorBoundEvent_5_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV6_K2Node_ActorBoundEvent_5_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV9_12_K2Node_ActorBoundEvent_22_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV9_12_K2Node_ActorBoundEvent_22_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_2_K2Node_ActorBoundEvent_18_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_2_K2Node_ActorBoundEvent_18_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_BLI2_K2Node_ActorBoundEvent_24_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_BLI2_K2Node_ActorBoundEvent_24_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_BLI3_K2Node_ActorBoundEvent_23_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_BLI3_K2Node_ActorBoundEvent_23_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_LobbyWindow_01_NAV2_K2Node_ActorBoundEvent_25_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_LobbyWindow_01_NAV2_K2Node_ActorBoundEvent_25_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_G_SnGBB_Navlinks_C_HeistStateChanged;
 
 // Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.ExecuteUbergraph_G_SnGBB_Navlinks
 // 0x0130 (0x0130 - 0x0000)
@@ -355,15 +128,270 @@ public:
 	ESBZGateState                                 K2Node_ActorBoundEvent_OldState;                   // 0x0127(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESBZGateState                                 K2Node_ActorBoundEvent_State;                      // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_SnGBB_Navlinks_C_ExecuteUbergraph_G_SnGBB_Navlinks;
 
-// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.HeistStateChanged
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_LobbyWindow_01_NAV2_K2Node_ActorBoundEvent_25_SBZGateStateChangedDelegate__DelegateSignature
 // 0x0002 (0x0002 - 0x0000)
-struct G_SnGBB_Navlinks_C_HeistStateChanged final
+struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_LobbyWindow_01_NAV2_K2Node_ActorBoundEvent_25_SBZGateStateChangedDelegate__DelegateSignature final
 {
 public:
-	EPD3HeistState                                OldHeistState;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CurrentHeistState;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_LobbyWindow_01_NAV2_K2Node_ActorBoundEvent_25_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_BLI3_K2Node_ActorBoundEvent_23_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_BLI3_K2Node_ActorBoundEvent_23_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_BLI3_K2Node_ActorBoundEvent_23_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_BLI2_K2Node_ActorBoundEvent_24_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_BLI2_K2Node_ActorBoundEvent_24_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_BLI2_K2Node_ActorBoundEvent_24_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_2_K2Node_ActorBoundEvent_18_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_2_K2Node_ActorBoundEvent_18_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV_2_K2Node_ActorBoundEvent_18_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV9_12_K2Node_ActorBoundEvent_22_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV9_12_K2Node_ActorBoundEvent_22_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV9_12_K2Node_ActorBoundEvent_22_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV6_K2Node_ActorBoundEvent_5_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV6_K2Node_ActorBoundEvent_5_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV6_K2Node_ActorBoundEvent_5_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV5_K2Node_ActorBoundEvent_14_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV5_K2Node_ActorBoundEvent_14_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV5_K2Node_ActorBoundEvent_14_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV4_K2Node_ActorBoundEvent_3_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV4_K2Node_ActorBoundEvent_3_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B_NAV4_K2Node_ActorBoundEvent_3_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B15_K2Node_ActorBoundEvent_20_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B15_K2Node_ActorBoundEvent_20_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B15_K2Node_ActorBoundEvent_20_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B14_K2Node_ActorBoundEvent_16_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B14_K2Node_ActorBoundEvent_16_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B14_K2Node_ActorBoundEvent_16_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B11_K2Node_ActorBoundEvent_15_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B11_K2Node_ActorBoundEvent_15_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_B11_K2Node_ActorBoundEvent_15_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV_4_K2Node_ActorBoundEvent_6_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV_4_K2Node_ActorBoundEvent_6_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV_4_K2Node_ActorBoundEvent_6_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV6_11_K2Node_ActorBoundEvent_21_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV6_11_K2Node_ActorBoundEvent_21_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV6_11_K2Node_ActorBoundEvent_21_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV5_K2Node_ActorBoundEvent_19_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV5_K2Node_ActorBoundEvent_19_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV5_K2Node_ActorBoundEvent_19_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV4_K2Node_ActorBoundEvent_17_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV4_K2Node_ActorBoundEvent_17_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV4_K2Node_ActorBoundEvent_17_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV3_K2Node_ActorBoundEvent_4_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV3_K2Node_ActorBoundEvent_4_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV3_K2Node_ActorBoundEvent_4_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV2_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV2_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_FacadeWindow_01_A_NAV2_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_1_TakeAnyDamageSignature__DelegateSignature
+// 0x0028 (0x0028 - 0x0000)
+struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_1_TakeAnyDamageSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DamagedActor;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         Damage;                                            // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	const class UDamageType*                      DamageType;                                        // 0x0010(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AController*                            InstigatedBy;                                      // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 DamageCauser;                                      // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_1_TakeAnyDamageSignature__DelegateSignature;
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_0_ActorDestroyedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_0_ActorDestroyedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Cuttable_destructable_Skylight_Rectangular_11_K2Node_ActorBoundEvent_0_ActorDestroyedSignature__DelegateSignature;
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller_2_K2Node_ActorBoundEvent_7_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller_2_K2Node_ActorBoundEvent_7_SBZActorOnInteraction__DelegateSignature final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller_2_K2Node_ActorBoundEvent_7_SBZActorOnInteraction__DelegateSignature;
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller7_K2Node_ActorBoundEvent_13_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller7_K2Node_ActorBoundEvent_13_SBZActorOnInteraction__DelegateSignature final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller7_K2Node_ActorBoundEvent_13_SBZActorOnInteraction__DelegateSignature;
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller6_K2Node_ActorBoundEvent_12_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller6_K2Node_ActorBoundEvent_12_SBZActorOnInteraction__DelegateSignature final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller6_K2Node_ActorBoundEvent_12_SBZActorOnInteraction__DelegateSignature;
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller5_K2Node_ActorBoundEvent_11_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller5_K2Node_ActorBoundEvent_11_SBZActorOnInteraction__DelegateSignature final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller5_K2Node_ActorBoundEvent_11_SBZActorOnInteraction__DelegateSignature;
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller4_K2Node_ActorBoundEvent_10_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller4_K2Node_ActorBoundEvent_10_SBZActorOnInteraction__DelegateSignature final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller4_K2Node_ActorBoundEvent_10_SBZActorOnInteraction__DelegateSignature;
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller3_K2Node_ActorBoundEvent_9_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller3_K2Node_ActorBoundEvent_9_SBZActorOnInteraction__DelegateSignature final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller3_K2Node_ActorBoundEvent_9_SBZActorOnInteraction__DelegateSignature;
+
+// Function G_SnGBB_Navlinks.G_SnGBB_Navlinks_C.BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller2_K2Node_ActorBoundEvent_8_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller2_K2Node_ActorBoundEvent_8_SBZActorOnInteraction__DelegateSignature final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGBB_Navlinks_C_BndEvt__G_BranchBank_Navlinks_BP_Blinders_Controller2_K2Node_ActorBoundEvent_8_SBZActorOnInteraction__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

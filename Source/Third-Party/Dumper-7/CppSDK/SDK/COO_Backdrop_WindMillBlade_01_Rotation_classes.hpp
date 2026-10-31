@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<ACOO_Backdrop_WindMillBlade_01_Rotation_C>();
 	}
 };
+DUMPER7_ASSERTS_ACOO_Backdrop_WindMillBlade_01_Rotation_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_container_Double_doors_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_container_Double_doors_C;
 
 SDK_NAMESPACE_END

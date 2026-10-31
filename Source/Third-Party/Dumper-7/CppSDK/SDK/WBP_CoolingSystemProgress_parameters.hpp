@@ -16,6 +16,34 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_CoolingSystemProgress.WBP_CoolingSystemProgress_C.Progress
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CoolingSystemProgress_C_Progress final
+{
+public:
+	double                                        Percentage;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CoolingSystemProgress_C_Progress;
+
+// Function WBP_CoolingSystemProgress.WBP_CoolingSystemProgress_C.HideAllWidgetsButOne
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CoolingSystemProgress_C_HideAllWidgetsButOne final
+{
+public:
+	class UWidget*                                WidgetToShow;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CoolingSystemProgress_C_HideAllWidgetsButOne;
+
+// Function WBP_CoolingSystemProgress.WBP_CoolingSystemProgress_C.GetPercent
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CoolingSystemProgress_C_GetPercent final
+{
+public:
+	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_FunctionResult_ReturnValue_ImplicitCast;    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CoolingSystemProgress_C_GetPercent;
+
 // Function WBP_CoolingSystemProgress.WBP_CoolingSystemProgress_C.ExecuteUbergraph_WBP_CoolingSystemProgress
 // 0x0090 (0x0090 - 0x0000)
 struct WBP_CoolingSystemProgress_C_ExecuteUbergraph_WBP_CoolingSystemProgress final
@@ -30,31 +58,7 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0070(0x0010)(ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0080(0x0010)()
 };
-
-// Function WBP_CoolingSystemProgress.WBP_CoolingSystemProgress_C.GetPercent
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CoolingSystemProgress_C_GetPercent final
-{
-public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_FunctionResult_ReturnValue_ImplicitCast;    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WBP_CoolingSystemProgress.WBP_CoolingSystemProgress_C.HideAllWidgetsButOne
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CoolingSystemProgress_C_HideAllWidgetsButOne final
-{
-public:
-	class UWidget*                                WidgetToShow;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WBP_CoolingSystemProgress.WBP_CoolingSystemProgress_C.Progress
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CoolingSystemProgress_C_Progress final
-{
-public:
-	double                                        Percentage_0;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_WBP_CoolingSystemProgress_C_ExecuteUbergraph_WBP_CoolingSystemProgress;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

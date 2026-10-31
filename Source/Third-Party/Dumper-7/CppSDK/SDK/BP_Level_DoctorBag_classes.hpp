@@ -17,7 +17,7 @@ SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Level_DoctorBag.BP_Level_DoctorBag_C
 // 0x0000 (0x0720 - 0x0720)
-class ABP_Level_DoctorBag_C : public ABP_Placeable_DoctorBag_C
+class ABP_Level_DoctorBag_C final : public ABP_Placeable_DoctorBag_C
 {
 public:
 	static class UClass* StaticClass()
@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Level_DoctorBag_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Level_DoctorBag_C;
 
 SDK_NAMESPACE_END

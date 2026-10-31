@@ -26,8 +26,8 @@ public:
 	class UStaticMeshComponent*                   StaticMesh;                                        // 0x03E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnChangedToSecondaryType(bool bDoCosmetics);
 	void ExecuteUbergraph_BP_StashedSmallThermiteBag(int32 EntryPoint);
+	void BP_OnChangedToSecondaryType(bool bDoCosmetics_BP_OnChangedToSecondaryType);
 
 public:
 	static class UClass* StaticClass()
@@ -43,5 +43,6 @@ public:
 		return GetDefaultObjImpl<ABP_StashedSmallThermiteBag_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_StashedSmallThermiteBag_C;
 
 SDK_NAMESPACE_END

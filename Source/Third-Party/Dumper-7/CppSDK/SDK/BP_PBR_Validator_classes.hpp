@@ -29,11 +29,11 @@ public:
 	struct FWeightedBlendables                    PPM_Roughness;                                     // 0x0358(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void AlbedoChecker();
-	void ExecuteUbergraph_BP_PBR_Validator(int32 EntryPoint);
-	void ReceiveBeginPlay();
-	void RoughnessChecker();
 	void UserConstructionScript();
+	void RoughnessChecker();
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_PBR_Validator(int32 EntryPoint);
+	void AlbedoChecker();
 
 public:
 	static class UClass* StaticClass()
@@ -49,5 +49,6 @@ public:
 		return GetDefaultObjImpl<ABP_PBR_Validator_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PBR_Validator_C;
 
 SDK_NAMESPACE_END

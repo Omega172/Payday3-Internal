@@ -16,23 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function L_SnGFO_Static.L_SnGFO_Static_C.ExecuteUbergraph_L_SnGFO_Static
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function L_SnGFO_Static.L_SnGFO_Static_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void AL_SnGFO_Static_C::ExecuteUbergraph_L_SnGFO_Static(int32 EntryPoint)
+void AL_SnGFO_Static_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("L_SnGFO_Static_C", "ExecuteUbergraph_L_SnGFO_Static");
-
-	Params::L_SnGFO_Static_C_ExecuteUbergraph_L_SnGFO_Static Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -41,26 +33,28 @@ void AL_SnGFO_Static_C::ExecuteUbergraph_L_SnGFO_Static(int32 EntryPoint)
 
 void AL_SnGFO_Static_C::onWallExplosion()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("L_SnGFO_Static_C", "onWallExplosion");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"onWallExplosion", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function L_SnGFO_Static.L_SnGFO_Static_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function L_SnGFO_Static.L_SnGFO_Static_C.ExecuteUbergraph_L_SnGFO_Static
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AL_SnGFO_Static_C::ReceiveBeginPlay()
+void AL_SnGFO_Static_C::ExecuteUbergraph_L_SnGFO_Static(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "L_SnGFO_Static_C", "ExecuteUbergraph_L_SnGFO_Static", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("L_SnGFO_Static_C", "ReceiveBeginPlay");
+	Params::L_SnGFO_Static_C_ExecuteUbergraph_L_SnGFO_Static Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

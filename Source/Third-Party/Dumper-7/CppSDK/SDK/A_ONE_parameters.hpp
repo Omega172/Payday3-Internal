@@ -69,6 +69,7 @@ public:
 	int32                                         CallFunc_PostEvent_ReturnValue_15;                 // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_PostEvent_ReturnValue_16;                 // 0x01AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_A_ONE_C_ExecuteUbergraph_A_ONE;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

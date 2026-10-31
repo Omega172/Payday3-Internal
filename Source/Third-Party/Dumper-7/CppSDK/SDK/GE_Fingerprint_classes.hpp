@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_Fingerprint_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_Fingerprint_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UBP_ReactionPredicate_GlobalCooldown_CrewAIMarking_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_ReactionPredicate_GlobalCooldown_CrewAIMarking_C;
 
 SDK_NAMESPACE_END

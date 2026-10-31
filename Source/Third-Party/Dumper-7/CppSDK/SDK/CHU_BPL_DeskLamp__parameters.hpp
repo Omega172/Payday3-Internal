@@ -16,16 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function CHU_BPL_DeskLamp_.CHU_BPL_DeskLamp__C.BndEvt__BPL_DeskLamp_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
-// 0x0068 (0x0068 - 0x0000)
-struct CHU_BPL_DeskLamp__C_BndEvt__BPL_DeskLamp_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature final
-{
-public:
-	ESBZCosmeticDestructionType                   Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZCosmeticDestructionContext         HitContext;                                        // 0x0008(0x0060)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
-};
-
 // Function CHU_BPL_DeskLamp_.CHU_BPL_DeskLamp__C.ExecuteUbergraph_CHU_BPL_DeskLamp_
 // 0x0068 (0x0068 - 0x0000)
 struct CHU_BPL_DeskLamp__C_ExecuteUbergraph_CHU_BPL_DeskLamp_ final
@@ -36,6 +26,18 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSBZCosmeticDestructionContext         K2Node_ComponentBoundEvent_HitContext;             // 0x0008(0x0060)(ConstParm, NoDestructor)
 };
+DUMPER7_ASSERTS_CHU_BPL_DeskLamp__C_ExecuteUbergraph_CHU_BPL_DeskLamp_;
+
+// Function CHU_BPL_DeskLamp_.CHU_BPL_DeskLamp__C.BndEvt__BPL_DeskLamp_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
+// 0x0068 (0x0068 - 0x0000)
+struct CHU_BPL_DeskLamp__C_BndEvt__BPL_DeskLamp_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature final
+{
+public:
+	ESBZCosmeticDestructionType                   Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZCosmeticDestructionContext         HitContext;                                        // 0x0008(0x0060)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+};
+DUMPER7_ASSERTS_CHU_BPL_DeskLamp__C_BndEvt__BPL_DeskLamp_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

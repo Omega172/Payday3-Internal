@@ -28,8 +28,8 @@ public:
 	class UTextBlock*                             TextTitle;                                         // 0x0318(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void OnRep_CodePacket();
 	void UpdateDisplayText(const struct FSBZHackableDisplayText& NewDisplayText);
+	void OnRep_CodePacket();
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<UWBP_DAT_AISystem_01_Unlocked_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_DAT_AISystem_01_Unlocked_C;
 
 SDK_NAMESPACE_END

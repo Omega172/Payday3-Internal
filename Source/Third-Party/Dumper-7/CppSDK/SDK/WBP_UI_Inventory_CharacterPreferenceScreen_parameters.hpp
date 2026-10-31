@@ -16,33 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_Inventory_CharacterPreferenceScreen.WBP_UI_Inventory_CharacterPreferenceScreen_C.UpdateCharacterSlotButtonControlsReference
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Inventory_CharacterPreferenceScreen_C_UpdateCharacterSlotButtonControlsReference final
-{
-public:
-	ESBZCharacterPreferenceButtonSelectionAction  SelectionAction_UpdateCharacterSlotButtonControlsReference; // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_CharacterPreferenceScreen_C_UpdateCharacterSlotButtonControlsReference;
-
-// Function WBP_UI_Inventory_CharacterPreferenceScreen.WBP_UI_Inventory_CharacterPreferenceScreen_C.OnGainedStackFocused
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_Inventory_CharacterPreferenceScreen_C_OnGainedStackFocused final
-{
-public:
-	class FName                                   PreviousValue_OnGainedStackFocused;                // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_CharacterPreferenceScreen_C_OnGainedStackFocused;
-
-// Function WBP_UI_Inventory_CharacterPreferenceScreen.WBP_UI_Inventory_CharacterPreferenceScreen_C.OnControlsReferenceClicked
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_Inventory_CharacterPreferenceScreen_C_OnControlsReferenceClicked final
-{
-public:
-	class FName                                   InActionInput;                                     // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_CharacterPreferenceScreen_C_OnControlsReferenceClicked;
-
 // Function WBP_UI_Inventory_CharacterPreferenceScreen.WBP_UI_Inventory_CharacterPreferenceScreen_C.ExecuteUbergraph_WBP_UI_Inventory_CharacterPreferenceScreen
 // 0x0348 (0x0348 - 0x0000)
 struct WBP_UI_Inventory_CharacterPreferenceScreen_C_ExecuteUbergraph_WBP_UI_Inventory_CharacterPreferenceScreen final
@@ -89,6 +62,33 @@ public:
 	bool                                          CallFunc_IsWidgetActuallyVisible_ReturnValue;      // 0x0340(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Inventory_CharacterPreferenceScreen_C_ExecuteUbergraph_WBP_UI_Inventory_CharacterPreferenceScreen;
+
+// Function WBP_UI_Inventory_CharacterPreferenceScreen.WBP_UI_Inventory_CharacterPreferenceScreen_C.OnControlsReferenceClicked
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_Inventory_CharacterPreferenceScreen_C_OnControlsReferenceClicked final
+{
+public:
+	class FName                                   InActionInput;                                     // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_CharacterPreferenceScreen_C_OnControlsReferenceClicked;
+
+// Function WBP_UI_Inventory_CharacterPreferenceScreen.WBP_UI_Inventory_CharacterPreferenceScreen_C.OnGainedStackFocused
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_Inventory_CharacterPreferenceScreen_C_OnGainedStackFocused final
+{
+public:
+	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_CharacterPreferenceScreen_C_OnGainedStackFocused;
+
+// Function WBP_UI_Inventory_CharacterPreferenceScreen.WBP_UI_Inventory_CharacterPreferenceScreen_C.UpdateCharacterSlotButtonControlsReference
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Inventory_CharacterPreferenceScreen_C_UpdateCharacterSlotButtonControlsReference final
+{
+public:
+	ESBZCharacterPreferenceButtonSelectionAction  SelectionAction;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_CharacterPreferenceScreen_C_UpdateCharacterSlotButtonControlsReference;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

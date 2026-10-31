@@ -25,8 +25,8 @@ public:
 	class USBZAIVisualDetectionComponent*         SBZAIVisualDetection;                              // 0x0760(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void ReceivePossess(class APawn* PossessedPawn_ReceivePossess);
 	void ExecuteUbergraph_BP_CopController(int32 EntryPoint);
-	void ReceivePossess(class APawn* PossessedPawn);
 
 public:
 	static class UClass* StaticClass()
@@ -42,5 +42,6 @@ public:
 		return GetDefaultObjImpl<ABP_CopController_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CopController_C;
 
 SDK_NAMESPACE_END

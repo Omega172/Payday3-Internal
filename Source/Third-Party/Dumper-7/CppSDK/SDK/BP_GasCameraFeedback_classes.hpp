@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UBP_GasCameraFeedback_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_GasCameraFeedback_C;
 
 SDK_NAMESPACE_END

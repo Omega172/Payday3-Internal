@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AE_DataCenter_INT_Lobby_Prop_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_DataCenter_INT_Lobby_Prop_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_Hacker_HackerAced_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_Hacker_HackerAced_C;
 
 SDK_NAMESPACE_END

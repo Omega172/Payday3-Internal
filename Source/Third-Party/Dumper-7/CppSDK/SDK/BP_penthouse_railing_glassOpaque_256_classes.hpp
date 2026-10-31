@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_penthouse_railing_glassOpaque_256_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_penthouse_railing_glassOpaque_256_C;
 
 SDK_NAMESPACE_END

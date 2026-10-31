@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CH_CrewAI_Wolf.CH_CrewAI_Wolf_C
-// 0x0000 (0x1D60 - 0x1D60)
+// 0x0000 (0x1DF0 - 0x1DF0)
 class ACH_CrewAI_Wolf_C final : public ACH_CrewAI_Base_C
 {
 public:
@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ACH_CrewAI_Wolf_C>();
 	}
 };
+DUMPER7_ASSERTS_ACH_CrewAI_Wolf_C;
 
 SDK_NAMESPACE_END

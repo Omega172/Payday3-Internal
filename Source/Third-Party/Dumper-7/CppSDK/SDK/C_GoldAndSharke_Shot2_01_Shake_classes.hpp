@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UC_GoldAndSharke_Shot2_01_Shake_C>();
 	}
 };
+DUMPER7_ASSERTS_UC_GoldAndSharke_Shot2_01_Shake_C;
 
 SDK_NAMESPACE_END

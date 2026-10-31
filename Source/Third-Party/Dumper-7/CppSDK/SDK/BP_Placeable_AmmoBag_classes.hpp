@@ -41,15 +41,15 @@ public:
 	bool                                          HasBeenMarked;                                     // 0x072C(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_Placeable_AmmoBag_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_Placeable_AmmoBag_Interactable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_Placeable_AmmoBag_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_ActorComponentActivatedSignature__DelegateSignature(class UActorComponent* Component, bool bReset);
-	void BndEvt__SBZShoutTarget_K2Node_ComponentBoundEvent_2_SBZShoutedAtDelegate__DelegateSignature(class USBZShoutTargetComponent* ShoutTarget, class APawn* Shouter);
-	void ExecuteUbergraph_BP_Placeable_AmmoBag(int32 EntryPoint);
-	void OnChargesChanged(float ChargesChangeTo, bool bDoCosmetics);
-	void Timeline_0__FinishedFunc();
-	void Timeline_0__UpdateFunc();
 	void UpdateCharges(double NewChargeCount);
+	void Timeline_0__UpdateFunc();
+	void Timeline_0__FinishedFunc();
+	void OnChargesChanged(float ChargesChangeTo, bool bDoCosmetics);
+	void ExecuteUbergraph_BP_Placeable_AmmoBag(int32 EntryPoint);
+	void BndEvt__SBZShoutTarget_K2Node_ComponentBoundEvent_2_SBZShoutedAtDelegate__DelegateSignature(class USBZShoutTargetComponent* ShoutTarget, class APawn* Shouter);
+	void BndEvt__BP_Placeable_AmmoBag_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_ActorComponentActivatedSignature__DelegateSignature(class UActorComponent* Component, bool bReset);
+	void BndEvt__BP_Placeable_AmmoBag_Interactable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_Placeable_AmmoBag_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -65,5 +65,6 @@ public:
 		return GetDefaultObjImpl<ABP_Placeable_AmmoBag_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Placeable_AmmoBag_C;
 
 SDK_NAMESPACE_END

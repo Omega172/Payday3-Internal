@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Equippable_ZipTie_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Equippable_ZipTie_C;
 
 SDK_NAMESPACE_END

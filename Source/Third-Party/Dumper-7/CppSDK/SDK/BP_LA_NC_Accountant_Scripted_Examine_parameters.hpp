@@ -16,27 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_LA_NC_Accountant_Scripted_Examine.BP_LA_NC_Accountant_Scripted_Examine_C.BndEvt__BP_LA_Civ_Cosmetic_Dance_SBZLifeAction_K2Node_ComponentBoundEvent_0_SBZLifeActionStopEventDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct BP_LA_NC_Accountant_Scripted_Examine_C_BndEvt__BP_LA_Civ_Cosmetic_Dance_SBZLifeAction_K2Node_ComponentBoundEvent_0_SBZLifeActionStopEventDelegate__DelegateSignature final
-{
-public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	ESBZLifeActionStopReason                      Result;                                            // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_LA_NC_Accountant_Scripted_Examine.BP_LA_NC_Accountant_Scripted_Examine_C.BndEvt__BP_LA_Manager_Scripted_TableButtonPress_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_LA_NC_Accountant_Scripted_Examine_C_BndEvt__BP_LA_Manager_Scripted_TableButtonPress_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature final
-{
-public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_LA_NC_Accountant_Scripted_Examine.BP_LA_NC_Accountant_Scripted_Examine_C.ExecuteUbergraph_BP_LA_NC_Accountant_Scripted_Examine
 // 0x0040 (0x0040 - 0x0000)
 struct BP_LA_NC_Accountant_Scripted_Examine_C_ExecuteUbergraph_BP_LA_NC_Accountant_Scripted_Examine final
@@ -52,6 +31,30 @@ public:
 	class USBZLifeActionSlot*                     K2Node_ComponentBoundEvent_ActionSlot_1;           // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	ESBZLifeActionStopReason                      K2Node_ComponentBoundEvent_Result;                 // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_LA_NC_Accountant_Scripted_Examine_C_ExecuteUbergraph_BP_LA_NC_Accountant_Scripted_Examine;
+
+// Function BP_LA_NC_Accountant_Scripted_Examine.BP_LA_NC_Accountant_Scripted_Examine_C.BndEvt__BP_LA_Manager_Scripted_TableButtonPress_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_LA_NC_Accountant_Scripted_Examine_C_BndEvt__BP_LA_Manager_Scripted_TableButtonPress_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LA_NC_Accountant_Scripted_Examine_C_BndEvt__BP_LA_Manager_Scripted_TableButtonPress_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature;
+
+// Function BP_LA_NC_Accountant_Scripted_Examine.BP_LA_NC_Accountant_Scripted_Examine_C.BndEvt__BP_LA_Civ_Cosmetic_Dance_SBZLifeAction_K2Node_ComponentBoundEvent_0_SBZLifeActionStopEventDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct BP_LA_NC_Accountant_Scripted_Examine_C_BndEvt__BP_LA_Civ_Cosmetic_Dance_SBZLifeAction_K2Node_ComponentBoundEvent_0_SBZLifeActionStopEventDelegate__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	ESBZLifeActionStopReason                      Result;                                            // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LA_NC_Accountant_Scripted_Examine_C_BndEvt__BP_LA_Civ_Cosmetic_Dance_SBZLifeAction_K2Node_ComponentBoundEvent_0_SBZLifeActionStopEventDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

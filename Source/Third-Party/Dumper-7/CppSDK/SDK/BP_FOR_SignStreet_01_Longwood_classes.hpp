@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_FOR_SignStreet_01_Longwood_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_FOR_SignStreet_01_Longwood_C;
 
 SDK_NAMESPACE_END

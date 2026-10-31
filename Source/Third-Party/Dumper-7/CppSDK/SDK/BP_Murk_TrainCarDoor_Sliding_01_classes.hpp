@@ -33,12 +33,12 @@ public:
 	class ASBZReplicatedBinaryStateActor*         LockingBar;                                        // 0x0798(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void bindPanel(class ASBZHackableActor* hackablePanel);
-	void destroyHackablePanels();
-	void ExecuteUbergraph_BP_Murk_TrainCarDoor_Sliding_01(int32 EntryPoint);
-	void HandleOpenDoorsPP(bool bIsOpenDoor_);
-	void onHackingComplete();
 	void setup(const TSoftObjectPtr<class UObject> CarLevel);
+	void onHackingComplete();
+	void HandleOpenDoorsPP(bool bIsOpenDoor_);
+	void ExecuteUbergraph_BP_Murk_TrainCarDoor_Sliding_01(int32 EntryPoint);
+	void destroyHackablePanels();
+	void bindPanel(class ASBZHackableActor* hackablePanel);
 
 public:
 	static class UClass* StaticClass()
@@ -54,5 +54,6 @@ public:
 		return GetDefaultObjImpl<ABP_Murk_TrainCarDoor_Sliding_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Murk_TrainCarDoor_Sliding_01_C;
 
 SDK_NAMESPACE_END

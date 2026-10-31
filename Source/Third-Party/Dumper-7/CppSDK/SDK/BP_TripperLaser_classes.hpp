@@ -26,13 +26,13 @@ public:
 	class UBoxComponent*                          Interactable_Collision;                            // 0x06B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnLaserTripped();
-	void BP_OnLaserUntripped();
-	void ExecuteUbergraph_BP_TripperLaser(int32 EntryPoint);
-	void OnActivated();
-	void OnReady();
-	void OnSensorAmmoDepleted();
 	void OnToolDestroyed();
+	void OnSensorAmmoDepleted();
+	void OnReady();
+	void OnActivated();
+	void ExecuteUbergraph_BP_TripperLaser(int32 EntryPoint);
+	void BP_OnLaserUntripped();
+	void BP_OnLaserTripped();
 
 public:
 	static class UClass* StaticClass()
@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<ABP_TripperLaser_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_TripperLaser_C;
 
 SDK_NAMESPACE_END

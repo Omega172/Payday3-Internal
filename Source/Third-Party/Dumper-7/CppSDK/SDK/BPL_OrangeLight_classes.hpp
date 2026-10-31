@@ -42,5 +42,6 @@ public:
 		return GetDefaultObjImpl<ABPL_OrangeLight_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_OrangeLight_C;
 
 SDK_NAMESPACE_END

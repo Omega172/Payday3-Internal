@@ -18,22 +18,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_BodyDisposerDumpster.BP_BodyDisposerDumpster_C.BP_OnActorDisposed
-// 0x0008 (0x0008 - 0x0000)
-struct BP_BodyDisposerDumpster_C_BP_OnActorDisposed final
+// Function BP_BodyDisposerDumpster.BP_BodyDisposerDumpster_C.UserConstructionScript
+// 0x00C0 (0x00C0 - 0x0000)
+struct BP_BodyDisposerDumpster_C_UserConstructionScript final
 {
 public:
-	int32                                         NumDisposed;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_GetRelativeTransform_ReturnValue;         // 0x0000(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FTransform                             CallFunc_GetRelativeTransform_ReturnValue_1;       // 0x0060(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_BodyDisposerDumpster.BP_BodyDisposerDumpster_C.dumpBodyOpen_tick
-// 0x0008 (0x0008 - 0x0000)
-struct BP_BodyDisposerDumpster_C_dumpBodyOpen_tick final
-{
-public:
-	double                                        alpha;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_BodyDisposerDumpster_C_UserConstructionScript;
 
 // Function BP_BodyDisposerDumpster.BP_BodyDisposerDumpster_C.ExecuteUbergraph_BP_BodyDisposerDumpster
 // 0x0420 (0x0420 - 0x0000)
@@ -58,15 +51,26 @@ public:
 	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult_1; // 0x0210(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult_2; // 0x0318(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
+DUMPER7_ASSERTS_BP_BodyDisposerDumpster_C_ExecuteUbergraph_BP_BodyDisposerDumpster;
 
-// Function BP_BodyDisposerDumpster.BP_BodyDisposerDumpster_C.UserConstructionScript
-// 0x00C0 (0x00C0 - 0x0000)
-struct BP_BodyDisposerDumpster_C_UserConstructionScript final
+// Function BP_BodyDisposerDumpster.BP_BodyDisposerDumpster_C.dumpBodyOpen_tick
+// 0x0008 (0x0008 - 0x0000)
+struct BP_BodyDisposerDumpster_C_dumpBodyOpen_tick final
 {
 public:
-	struct FTransform                             CallFunc_GetRelativeTransform_ReturnValue;         // 0x0000(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTransform                             CallFunc_GetRelativeTransform_ReturnValue_1;       // 0x0060(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        alpha_dumpBodyOpen_tick;                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_BodyDisposerDumpster_C_dumpBodyOpen_tick;
+
+// Function BP_BodyDisposerDumpster.BP_BodyDisposerDumpster_C.BP_OnActorDisposed
+// 0x0008 (0x0008 - 0x0000)
+struct BP_BodyDisposerDumpster_C_BP_OnActorDisposed final
+{
+public:
+	int32                                         NumDisposed_BP_OnActorDisposed;                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_BP_OnActorDisposed;                   // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BodyDisposerDumpster_C_BP_OnActorDisposed;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

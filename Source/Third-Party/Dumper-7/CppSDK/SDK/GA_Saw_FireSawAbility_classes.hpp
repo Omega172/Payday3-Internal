@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_Saw_FireSawAbility.GA_Saw_FireSawAbility_C
-// 0x0000 (0x8CD8 - 0x8CD8)
+// 0x0000 (0x0538 - 0x0538)
 class UGA_Saw_FireSawAbility_C final : public USBZPlayerFireSawRangedWeaponProjectileAbility
 {
 public:
@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGA_Saw_FireSawAbility_C>();
 	}
 };
+DUMPER7_ASSERTS_UGA_Saw_FireSawAbility_C;
 
 SDK_NAMESPACE_END

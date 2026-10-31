@@ -29,9 +29,9 @@ public:
 	bool                                          DestroyOnComplete;                                 // 0x0378(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_DataCenterSoundEvent(int32 EntryPoint);
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
 	void OnCompleted(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
+	void ExecuteUbergraph_BP_DataCenterSoundEvent(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -47,5 +47,6 @@ public:
 		return GetDefaultObjImpl<ABP_DataCenterSoundEvent_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DataCenterSoundEvent_C;
 
 SDK_NAMESPACE_END

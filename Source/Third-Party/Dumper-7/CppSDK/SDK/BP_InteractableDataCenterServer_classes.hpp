@@ -27,10 +27,10 @@ public:
 	TMulticastInlineDelegate<void(class ABP_InteractableDataCenterServer_C* server)> onInteractionComplete; // 0x03F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__BP_InteractableDataCenterServer_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_InteractableDataCenterServer(int32 EntryPoint);
-	void OnRep_RenderOutlines();
 	void setInteractable(bool interactable);
+	void OnRep_RenderOutlines();
+	void ExecuteUbergraph_BP_InteractableDataCenterServer(int32 EntryPoint);
+	void BndEvt__BP_InteractableDataCenterServer_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -46,5 +46,6 @@ public:
 		return GetDefaultObjImpl<ABP_InteractableDataCenterServer_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_InteractableDataCenterServer_C;
 
 SDK_NAMESPACE_END

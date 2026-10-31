@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_PaintingTool_01_Roller_B_SmallDestruction_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PaintingTool_01_Roller_B_SmallDestruction_C;
 
 SDK_NAMESPACE_END

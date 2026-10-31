@@ -16,23 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ReplicatedBinaryActor.BP_ReplicatedBinaryActor_C.ExecuteUbergraph_BP_ReplicatedBinaryActor
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ReplicatedBinaryActor.BP_ReplicatedBinaryActor_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_ReplicatedBinaryActor_C::ExecuteUbergraph_BP_ReplicatedBinaryActor(int32 EntryPoint)
+void ABP_ReplicatedBinaryActor_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_C", "ExecuteUbergraph_BP_ReplicatedBinaryActor");
-
-	Params::BP_ReplicatedBinaryActor_C_ExecuteUbergraph_BP_ReplicatedBinaryActor Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -44,10 +36,8 @@ void ABP_ReplicatedBinaryActor_C::ExecuteUbergraph_BP_ReplicatedBinaryActor(int3
 
 void ABP_ReplicatedBinaryActor_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_C", "OnStateChanged");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
 	Params::BP_ReplicatedBinaryActor_C_OnStateChanged Parms{};
 
@@ -58,17 +48,21 @@ void ABP_ReplicatedBinaryActor_C::OnStateChanged(bool bStateToChangeTo, bool bDo
 }
 
 
-// Function BP_ReplicatedBinaryActor.BP_ReplicatedBinaryActor_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_ReplicatedBinaryActor.BP_ReplicatedBinaryActor_C.ExecuteUbergraph_BP_ReplicatedBinaryActor
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ReplicatedBinaryActor_C::ReceiveBeginPlay()
+void ABP_ReplicatedBinaryActor_C::ExecuteUbergraph_BP_ReplicatedBinaryActor(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ReplicatedBinaryActor_C", "ExecuteUbergraph_BP_ReplicatedBinaryActor", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_C", "ReceiveBeginPlay");
+	Params::BP_ReplicatedBinaryActor_C_ExecuteUbergraph_BP_ReplicatedBinaryActor Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

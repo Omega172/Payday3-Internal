@@ -14,15 +14,14 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_InteractableDataCenterServer.BP_InteractableDataCenterServer_C.BndEvt__BP_InteractableDataCenterServer_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_InteractableDataCenterServer_C_BndEvt__BP_InteractableDataCenterServer_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
+// Function BP_InteractableDataCenterServer.BP_InteractableDataCenterServer_C.setInteractable
+// 0x0001 (0x0001 - 0x0000)
+struct BP_InteractableDataCenterServer_C_setInteractable final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable_0;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          interactable;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_InteractableDataCenterServer_C_setInteractable;
 
 // Function BP_InteractableDataCenterServer.BP_InteractableDataCenterServer_C.ExecuteUbergraph_BP_InteractableDataCenterServer
 // 0x0020 (0x0020 - 0x0000)
@@ -36,14 +35,18 @@ public:
 	bool                                          K2Node_ComponentBoundEvent_bIsLocallyControlledInteractor; // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_CustomEvent_interactable;                   // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_InteractableDataCenterServer_C_ExecuteUbergraph_BP_InteractableDataCenterServer;
 
-// Function BP_InteractableDataCenterServer.BP_InteractableDataCenterServer_C.setInteractable
-// 0x0001 (0x0001 - 0x0000)
-struct BP_InteractableDataCenterServer_C_setInteractable final
+// Function BP_InteractableDataCenterServer.BP_InteractableDataCenterServer_C.BndEvt__BP_InteractableDataCenterServer_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_InteractableDataCenterServer_C_BndEvt__BP_InteractableDataCenterServer_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
 {
 public:
-	bool                                          interactable;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_InteractableDataCenterServer_C_BndEvt__BP_InteractableDataCenterServer_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

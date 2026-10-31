@@ -30,12 +30,12 @@ public:
 	double                                        Percentage;                                        // 0x0320(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Completed();
-	void ExecuteUbergraph_WBP_CoolingSystem(int32 EntryPoint);
-	void HideAllWidgetsButOne(class UWidget* WidgetToShow);
-	void Interrupted();
+	void Progress(double Percentage);
 	void NotActive();
-	void Progress(double Percentage_0);
+	void Interrupted();
+	void HideAllWidgetsButOne(class UWidget* WidgetToShow);
+	void ExecuteUbergraph_WBP_CoolingSystem(int32 EntryPoint);
+	void Completed();
 
 public:
 	static class UClass* StaticClass()
@@ -51,5 +51,6 @@ public:
 		return GetDefaultObjImpl<UWBP_CoolingSystem_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_CoolingSystem_C;
 
 SDK_NAMESPACE_END

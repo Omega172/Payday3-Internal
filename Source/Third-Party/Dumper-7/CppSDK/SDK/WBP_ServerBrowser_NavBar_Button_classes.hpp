@@ -43,15 +43,15 @@ public:
 	bool                                          DisplaySingleTab;                                  // 0x0420(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
-	void SetHovered(bool InHovered);
-	void SetFocused(bool InFocused);
-	void SetActive(bool InActive, bool bHideUnfocused);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnInitialized();
-	void InitializeButton(const class FText& InTitle);
-	void ExecuteUbergraph_WBP_ServerBrowser_NavBar_Button(int32 EntryPoint);
+	void ButtonHoveredChanged(bool bInIsHovered);
 	void ButtonSelected();
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
+	void ExecuteUbergraph_WBP_ServerBrowser_NavBar_Button(int32 EntryPoint);
+	void InitializeButton(const class FText& InTitle);
+	void OnInitialized();
+	void PreConstruct(bool IsDesignTime);
+	void SetActive(bool InActive, bool bHideUnfocused);
+	void SetFocused(bool InFocused);
+	void SetHovered(bool InHovered);
 
 public:
 	static class UClass* StaticClass()

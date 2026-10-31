@@ -16,29 +16,73 @@
 
 SDK_NAMESPACE_START
 
-// Function L_Bust.L_Bust_C.CrackHouseDoor1Open
+// Function L_Bust.L_Bust_C.WarehouseDoorUpperBack2
 // (BlueprintCallable, BlueprintEvent)
 
-void AL_Bust_C::CrackHouseDoor1Open()
+void AL_Bust_C::WarehouseDoorUpperBack2()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("L_Bust_C", "CrackHouseDoor1Open");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"WarehouseDoorUpperBack2", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function L_Bust.L_Bust_C.CrackHouseDoor2Open
+// Function L_Bust.L_Bust_C.WarehouseDoorUpper3
 // (BlueprintCallable, BlueprintEvent)
 
-void AL_Bust_C::CrackHouseDoor2Open()
+void AL_Bust_C::WarehouseDoorUpper3()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"WarehouseDoorUpper3", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("L_Bust_C", "CrackHouseDoor2Open");
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function L_Bust.L_Bust_C.WarehouseDoorEntrance1
+// (BlueprintCallable, BlueprintEvent)
+
+void AL_Bust_C::WarehouseDoorEntrance1()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"WarehouseDoorEntrance1", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function L_Bust.L_Bust_C.StorageDoorGoods2
+// (BlueprintCallable, BlueprintEvent)
+
+void AL_Bust_C::StorageDoorGoods2()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StorageDoorGoods2", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function L_Bust.L_Bust_C.StorageDoorEntrance1
+// (BlueprintCallable, BlueprintEvent)
+
+void AL_Bust_C::StorageDoorEntrance1()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StorageDoorEntrance1", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function L_Bust.L_Bust_C.StorageDoorBack3
+// (BlueprintCallable, BlueprintEvent)
+
+void AL_Bust_C::StorageDoorBack3()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StorageDoorBack3", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -51,10 +95,8 @@ void AL_Bust_C::CrackHouseDoor2Open()
 
 void AL_Bust_C::ExecuteUbergraph_L_Bust(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("L_Bust_C", "ExecuteUbergraph_L_Bust");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "L_Bust_C", "ExecuteUbergraph_L_Bust", FuncInfo);
 
 	Params::L_Bust_C_ExecuteUbergraph_L_Bust Parms{};
 
@@ -64,85 +106,25 @@ void AL_Bust_C::ExecuteUbergraph_L_Bust(int32 EntryPoint)
 }
 
 
-// Function L_Bust.L_Bust_C.StorageDoorBack3
+// Function L_Bust.L_Bust_C.CrackHouseDoor2Open
 // (BlueprintCallable, BlueprintEvent)
 
-void AL_Bust_C::StorageDoorBack3()
+void AL_Bust_C::CrackHouseDoor2Open()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("L_Bust_C", "StorageDoorBack3");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CrackHouseDoor2Open", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function L_Bust.L_Bust_C.StorageDoorEntrance1
+// Function L_Bust.L_Bust_C.CrackHouseDoor1Open
 // (BlueprintCallable, BlueprintEvent)
 
-void AL_Bust_C::StorageDoorEntrance1()
+void AL_Bust_C::CrackHouseDoor1Open()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("L_Bust_C", "StorageDoorEntrance1");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function L_Bust.L_Bust_C.StorageDoorGoods2
-// (BlueprintCallable, BlueprintEvent)
-
-void AL_Bust_C::StorageDoorGoods2()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("L_Bust_C", "StorageDoorGoods2");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function L_Bust.L_Bust_C.WarehouseDoorEntrance1
-// (BlueprintCallable, BlueprintEvent)
-
-void AL_Bust_C::WarehouseDoorEntrance1()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("L_Bust_C", "WarehouseDoorEntrance1");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function L_Bust.L_Bust_C.WarehouseDoorUpper3
-// (BlueprintCallable, BlueprintEvent)
-
-void AL_Bust_C::WarehouseDoorUpper3()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("L_Bust_C", "WarehouseDoorUpper3");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function L_Bust.L_Bust_C.WarehouseDoorUpperBack2
-// (BlueprintCallable, BlueprintEvent)
-
-void AL_Bust_C::WarehouseDoorUpperBack2()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("L_Bust_C", "WarehouseDoorUpperBack2");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CrackHouseDoor1Open", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

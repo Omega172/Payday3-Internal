@@ -14,15 +14,34 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_MulticodeKeypad_sabotagePoint.BP_MulticodeKeypad_sabotagePoint_C.BndEvt__BP_MulticodeKeypad_sabotagePoint_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_MulticodeKeypad_sabotagePoint_C_BndEvt__BP_MulticodeKeypad_sabotagePoint_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
+// Function BP_MulticodeKeypad_sabotagePoint.BP_MulticodeKeypad_sabotagePoint_C.UserConstructionScript
+// 0x0008 (0x0008 - 0x0000)
+struct BP_MulticodeKeypad_sabotagePoint_C_UserConstructionScript final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_MulticodeKeypad_sabotagePoint_C_UserConstructionScript;
+
+// Function BP_MulticodeKeypad_sabotagePoint.BP_MulticodeKeypad_sabotagePoint_C.setState
+// 0x0008 (0x0008 - 0x0000)
+struct BP_MulticodeKeypad_sabotagePoint_C_setState final
+{
+public:
+	int32                                         state;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetEnabled_ReturnValue;                   // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_MulticodeKeypad_sabotagePoint_C_setState;
+
+// Function BP_MulticodeKeypad_sabotagePoint.BP_MulticodeKeypad_sabotagePoint_C.onPointSabotaged
+// 0x0001 (0x0001 - 0x0000)
+struct BP_MulticodeKeypad_sabotagePoint_C_onPointSabotaged final
+{
+public:
+	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_MulticodeKeypad_sabotagePoint_C_onPointSabotaged;
 
 // Function BP_MulticodeKeypad_sabotagePoint.BP_MulticodeKeypad_sabotagePoint_C.ExecuteUbergraph_BP_MulticodeKeypad_sabotagePoint
 // 0x0070 (0x0070 - 0x0000)
@@ -51,32 +70,18 @@ public:
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0069(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_MulticodeKeypad_sabotagePoint_C_ExecuteUbergraph_BP_MulticodeKeypad_sabotagePoint;
 
-// Function BP_MulticodeKeypad_sabotagePoint.BP_MulticodeKeypad_sabotagePoint_C.onPointSabotaged
-// 0x0001 (0x0001 - 0x0000)
-struct BP_MulticodeKeypad_sabotagePoint_C_onPointSabotaged final
+// Function BP_MulticodeKeypad_sabotagePoint.BP_MulticodeKeypad_sabotagePoint_C.BndEvt__BP_MulticodeKeypad_sabotagePoint_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_MulticodeKeypad_sabotagePoint_C_BndEvt__BP_MulticodeKeypad_sabotagePoint_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
 {
 public:
-	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_MulticodeKeypad_sabotagePoint.BP_MulticodeKeypad_sabotagePoint_C.setState
-// 0x0008 (0x0008 - 0x0000)
-struct BP_MulticodeKeypad_sabotagePoint_C_setState final
-{
-public:
-	int32                                         state;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetEnabled_ReturnValue;                   // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_MulticodeKeypad_sabotagePoint.BP_MulticodeKeypad_sabotagePoint_C.UserConstructionScript
-// 0x0008 (0x0008 - 0x0000)
-struct BP_MulticodeKeypad_sabotagePoint_C_UserConstructionScript final
-{
-public:
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_MulticodeKeypad_sabotagePoint_C_BndEvt__BP_MulticodeKeypad_sabotagePoint_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

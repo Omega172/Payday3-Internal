@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "BPS_GlassHit_VFXData_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL_classes.hpp"
 
 
@@ -47,5 +47,6 @@ public:
 		return GetDefaultObjImpl<ABP_IGl_BRE_ATT_2HIT_Toystore_Glass_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_IGl_BRE_ATT_2HIT_Toystore_Glass_01_C;
 
 SDK_NAMESPACE_END

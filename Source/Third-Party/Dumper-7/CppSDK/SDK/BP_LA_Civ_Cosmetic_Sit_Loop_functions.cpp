@@ -23,10 +23,8 @@ SDK_NAMESPACE_START
 
 void ABP_LA_Civ_Cosmetic_Sit_Loop_C::SwitchSection(class FName SectionName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_Civ_Cosmetic_Sit_Loop_C", "SwitchSection");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SwitchSection", FnName));
 
 	Params::BP_LA_Civ_Cosmetic_Sit_Loop_C_SwitchSection Parms{};
 

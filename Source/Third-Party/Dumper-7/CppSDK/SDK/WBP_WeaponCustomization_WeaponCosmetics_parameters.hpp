@@ -17,67 +17,23 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.SetupConfigScreen
+// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_WeaponCustomization_WeaponCosmetics_C_BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature final
+{
+public:
+	int32                                         NewIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature;
+
+// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_WeaponCustomization_WeaponCosmetics_C_SetupConfigScreen final
+struct WBP_WeaponCustomization_WeaponCosmetics_C_BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	const class USBZCosmeticsPartSlot*            CosmeticSlot;                                      // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_SetupConfigScreen;
-
-// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.SetPreviewWidgetWithValidation
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_WeaponCustomization_WeaponCosmetics_C_SetPreviewWidgetWithValidation final
-{
-public:
-	class UWBP_Inventory_Item_Button_C*           Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	const class USBZEquippablePartDataAsset*      Data;                                              // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_SetPreviewWidgetWithValidation;
-
-// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.OnTryApplyDone
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_WeaponCustomization_WeaponCosmetics_C_OnTryApplyDone final
-{
-public:
-	ESBZMetaRequestResult                         Result_OnTryApplyDone;                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_OnTryApplyDone;
-
-// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.OnButtonPressed
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_WeaponCustomization_WeaponCosmetics_C_OnButtonPressed final
-{
-public:
-	class USBZMainMenuCosmeticItemButton*         CosmeticButton;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_OnButtonPressed;
-
-// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.NeedConfig
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_WeaponCustomization_WeaponCosmetics_C_NeedConfig final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZCosmeticsPartSlot*            CallFunc_GetCosmeticSlot_ReturnValue;              // 0x0008(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZModularPartApplier*                 CallFunc_GetApplierInstance_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NeedConfig_ReturnValue;                   // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_NeedConfig;
-
-// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.GetSlotFromDataClass
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_WeaponCustomization_WeaponCosmetics_C_GetSlotFromDataClass final
-{
-public:
-	TSubclassOf<class USBZModularPartDataAsset>   SlotClass;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-	class USBZCosmeticsPartSlot*                  SlotAsset;                                         // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ClassClass_ReturnValue;        // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_GetSlotFromDataClass;
+DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature;
 
 // Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.ExecuteUbergraph_WBP_WeaponCustomization_WeaponCosmetics
 // 0x0280 (0x0280 - 0x0000)
@@ -184,23 +140,67 @@ public:
 };
 DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_ExecuteUbergraph_WBP_WeaponCustomization_WeaponCosmetics;
 
-// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_WeaponCustomization_WeaponCosmetics_C_BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature final
+// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.GetSlotFromDataClass
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_WeaponCustomization_WeaponCosmetics_C_GetSlotFromDataClass final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TSubclassOf<class USBZModularPartDataAsset>   SlotClass;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+	class USBZCosmeticsPartSlot*                  SlotAsset;                                         // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ClassClass_ReturnValue;        // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_GetSlotFromDataClass;
 
-// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_WeaponCustomization_WeaponCosmetics_C_BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature final
+// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.NeedConfig
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_WeaponCustomization_WeaponCosmetics_C_NeedConfig final
 {
 public:
-	int32                                         NewIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZCosmeticsPartSlot*            CallFunc_GetCosmeticSlot_ReturnValue;              // 0x0008(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZModularPartApplier*                 CallFunc_GetApplierInstance_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NeedConfig_ReturnValue;                   // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_BndEvt__WBP_WeaponCustomization_WeaponCosmetics_WBP_Local_Navbar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature;
+DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_NeedConfig;
+
+// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.OnButtonPressed
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_WeaponCustomization_WeaponCosmetics_C_OnButtonPressed final
+{
+public:
+	class USBZMainMenuCosmeticItemButton*         CosmeticButton;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_OnButtonPressed;
+
+// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.OnTryApplyDone
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_WeaponCustomization_WeaponCosmetics_C_OnTryApplyDone final
+{
+public:
+	ESBZMetaRequestResult                         Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_OnTryApplyDone;
+
+// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.SetPreviewWidgetWithValidation
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_WeaponCustomization_WeaponCosmetics_C_SetPreviewWidgetWithValidation final
+{
+public:
+	class UWBP_Inventory_Item_Button_C*           Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	const class USBZEquippablePartDataAsset*      Data;                                              // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_SetPreviewWidgetWithValidation;
+
+// Function WBP_WeaponCustomization_WeaponCosmetics.WBP_WeaponCustomization_WeaponCosmetics_C.SetupConfigScreen
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_WeaponCustomization_WeaponCosmetics_C_SetupConfigScreen final
+{
+public:
+	const class USBZCosmeticsPartSlot*            CosmeticSlot_0;                                    // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_WeaponCustomization_WeaponCosmetics_C_SetupConfigScreen;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

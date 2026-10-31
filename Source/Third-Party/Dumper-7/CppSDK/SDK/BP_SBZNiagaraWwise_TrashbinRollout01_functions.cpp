@@ -16,6 +16,18 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_SBZNiagaraWwise_TrashbinRollout01.BP_SBZNiagaraWwise_TrashbinRollout01_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_SBZNiagaraWwise_TrashbinRollout01_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_SBZNiagaraWwise_TrashbinRollout01.BP_SBZNiagaraWwise_TrashbinRollout01_C.ExecuteUbergraph_BP_SBZNiagaraWwise_TrashbinRollout01
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,30 +35,14 @@ SDK_NAMESPACE_START
 
 void ABP_SBZNiagaraWwise_TrashbinRollout01_C::ExecuteUbergraph_BP_SBZNiagaraWwise_TrashbinRollout01(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SBZNiagaraWwise_TrashbinRollout01_C", "ExecuteUbergraph_BP_SBZNiagaraWwise_TrashbinRollout01");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_SBZNiagaraWwise_TrashbinRollout01_C", "ExecuteUbergraph_BP_SBZNiagaraWwise_TrashbinRollout01", FuncInfo);
 
 	Params::BP_SBZNiagaraWwise_TrashbinRollout01_C_ExecuteUbergraph_BP_SBZNiagaraWwise_TrashbinRollout01 Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SBZNiagaraWwise_TrashbinRollout01.BP_SBZNiagaraWwise_TrashbinRollout01_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_SBZNiagaraWwise_TrashbinRollout01_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SBZNiagaraWwise_TrashbinRollout01_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

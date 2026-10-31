@@ -33,8 +33,8 @@ public:
 	class ASBZTrafficSpline*                      SBZTrafficSpline_HelicopterSpotlight2_ExecuteUbergraph_G_Murk_AI_RefProperty; // 0x0410(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged);
 	void ExecuteUbergraph_G_Murk_AI(int32 EntryPoint);
-	void HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState);
 
 public:
 	static class UClass* StaticClass()
@@ -50,5 +50,6 @@ public:
 		return GetDefaultObjImpl<AG_Murk_AI_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_Murk_AI_C;
 
 SDK_NAMESPACE_END

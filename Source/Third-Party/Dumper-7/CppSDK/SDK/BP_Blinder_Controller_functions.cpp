@@ -16,25 +16,31 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Blinder_Controller.BP_Blinder_Controller_C.BndEvt__BP_Blinder_Controller_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Blinder_Controller.BP_Blinder_Controller_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_Blinder_Controller_C::BndEvt__BP_Blinder_Controller_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_Blinder_Controller_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Blinder_Controller_C", "BndEvt__BP_Blinder_Controller_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_Blinder_Controller_C_BndEvt__BP_Blinder_Controller_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+// Function BP_Blinder_Controller.BP_Blinder_Controller_C.setEnabled
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Blinder_Controller_C::setEnabled(bool enabled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setEnabled", FnName));
+
+	Params::BP_Blinder_Controller_C_setEnabled Parms{};
+
+	Parms.enabled = enabled;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -47,10 +53,8 @@ void ABP_Blinder_Controller_C::BndEvt__BP_Blinder_Controller_Interactable_K2Node
 
 void ABP_Blinder_Controller_C::ExecuteUbergraph_BP_Blinder_Controller(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Blinder_Controller_C", "ExecuteUbergraph_BP_Blinder_Controller");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Blinder_Controller_C", "ExecuteUbergraph_BP_Blinder_Controller", FuncInfo);
 
 	Params::BP_Blinder_Controller_C_ExecuteUbergraph_BP_Blinder_Controller Parms{};
 
@@ -60,37 +64,25 @@ void ABP_Blinder_Controller_C::ExecuteUbergraph_BP_Blinder_Controller(int32 Entr
 }
 
 
-// Function BP_Blinder_Controller.BP_Blinder_Controller_C.setEnabled
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_Blinder_Controller.BP_Blinder_Controller_C.BndEvt__BP_Blinder_Controller_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// bool                                    enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Blinder_Controller_C::setEnabled(bool enabled)
+void ABP_Blinder_Controller_C::BndEvt__BP_Blinder_Controller_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Blinder_Controller_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Blinder_Controller_C", "setEnabled");
+	Params::BP_Blinder_Controller_C_BndEvt__BP_Blinder_Controller_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
-	Params::BP_Blinder_Controller_C_setEnabled Parms{};
-
-	Parms.enabled = enabled;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Blinder_Controller.BP_Blinder_Controller_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_Blinder_Controller_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Blinder_Controller_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

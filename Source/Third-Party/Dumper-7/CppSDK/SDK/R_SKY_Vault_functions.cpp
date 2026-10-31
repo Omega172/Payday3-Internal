@@ -16,103 +16,63 @@
 
 SDK_NAMESPACE_START
 
-// Function R_SKY_Vault.R_SKY_Vault_C.BndEvt__R_Penthouse_Vault_BP_Int_Door_01_SmallVault_01_0_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function R_SKY_Vault.R_SKY_Vault_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void AR_SKY_Vault_C::BndEvt__R_Penthouse_Vault_BP_Int_Door_01_SmallVault_01_0_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
+void AR_SKY_Vault_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_SKY_Vault_C", "BndEvt__R_Penthouse_Vault_BP_Int_Door_01_SmallVault_01_0_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature");
-
-	Params::R_SKY_Vault_C_BndEvt__R_Penthouse_Vault_BP_Int_Door_01_SmallVault_01_0_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.State = State;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_SKY_Vault.R_SKY_Vault_C.BndEvt__R_Penthouse_Vault_BP_PortableSSD2_4_K2Node_ActorBoundEvent_4_SBZActorOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void AR_SKY_Vault_C::BndEvt__R_Penthouse_Vault_BP_PortableSSD2_4_K2Node_ActorBoundEvent_4_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_SKY_Vault_C", "BndEvt__R_Penthouse_Vault_BP_PortableSSD2_4_K2Node_ActorBoundEvent_4_SBZActorOnInteraction__DelegateSignature");
-
-	Params::R_SKY_Vault_C_BndEvt__R_Penthouse_Vault_BP_PortableSSD2_4_K2Node_ActorBoundEvent_4_SBZActorOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_SKY_Vault.R_SKY_Vault_C.BndEvt__R_Penthouse_Vault_BP_PortableSSD_2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void AR_SKY_Vault_C::BndEvt__R_Penthouse_Vault_BP_PortableSSD_2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_SKY_Vault_C", "BndEvt__R_Penthouse_Vault_BP_PortableSSD_2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature");
-
-	Params::R_SKY_Vault_C_BndEvt__R_Penthouse_Vault_BP_PortableSSD_2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function R_SKY_Vault.R_SKY_Vault_C.BndEvt__R_Penthouse_Vault_BP_Safe_01_2_K2Node_ActorBoundEvent_0_SBZOnMinigameDoneDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-
-void AR_SKY_Vault_C::BndEvt__R_Penthouse_Vault_BP_Safe_01_2_K2Node_ActorBoundEvent_0_SBZOnMinigameDoneDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_SKY_Vault_C", "BndEvt__R_Penthouse_Vault_BP_Safe_01_2_K2Node_ActorBoundEvent_0_SBZOnMinigameDoneDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function R_SKY_Vault.R_SKY_Vault_C.BndEvt__R_Penthouse_Vault_SBZDestroyGroup_1_K2Node_ActorBoundEvent_3_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
-// (HasOutParams, BlueprintEvent)
+// Function R_SKY_Vault.R_SKY_Vault_C.ExecuteUbergraph_R_SKY_Vault
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// const TArray<class AActor*>&            KeptActors                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// const TArray<class AActor*>&            DestroyedActors                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AR_SKY_Vault_C::BndEvt__R_Penthouse_Vault_SBZDestroyGroup_1_K2Node_ActorBoundEvent_3_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors)
+void AR_SKY_Vault_C::ExecuteUbergraph_R_SKY_Vault(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "R_SKY_Vault_C", "ExecuteUbergraph_R_SKY_Vault", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_SKY_Vault_C", "BndEvt__R_Penthouse_Vault_SBZDestroyGroup_1_K2Node_ActorBoundEvent_3_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature");
+	Params::R_SKY_Vault_C_ExecuteUbergraph_R_SKY_Vault Parms{};
 
-	Params::R_SKY_Vault_C_BndEvt__R_Penthouse_Vault_SBZDestroyGroup_1_K2Node_ActorBoundEvent_3_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature Parms{};
+	Parms.EntryPoint = EntryPoint;
 
-	Parms.KeptActors = std::move(KeptActors);
-	Parms.DestroyedActors = std::move(DestroyedActors);
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function R_SKY_Vault.R_SKY_Vault_C.Code_Entered
+// (BlueprintCallable, BlueprintEvent)
+
+void AR_SKY_Vault_C::Code_Entered()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Code_Entered", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_SKY_Vault.R_SKY_Vault_C.BndEvt__R_SKY_Vault_BP_InstantLoot_NecklaceBust3_8_K2Node_ActorBoundEvent_6_SBZLootedSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AR_SKY_Vault_C::BndEvt__R_SKY_Vault_BP_InstantLoot_NecklaceBust3_8_K2Node_ActorBoundEvent_6_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_SKY_Vault_BP_InstantLoot_NecklaceBust3_8_K2Node_ActorBoundEvent_6_SBZLootedSignature__DelegateSignature", FnName));
+
+	Params::R_SKY_Vault_C_BndEvt__R_SKY_Vault_BP_InstantLoot_NecklaceBust3_8_K2Node_ActorBoundEvent_6_SBZLootedSignature__DelegateSignature Parms{};
+
+	Parms.InstantLoot = InstantLoot;
+	Parms.TakenByPlayer = TakenByPlayer;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -126,10 +86,8 @@ void AR_SKY_Vault_C::BndEvt__R_Penthouse_Vault_SBZDestroyGroup_1_K2Node_ActorBou
 
 void AR_SKY_Vault_C::BndEvt__R_SKY_Vault_BP_InstantLoot_NecklaceBust2_K2Node_ActorBoundEvent_5_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_SKY_Vault_C", "BndEvt__R_SKY_Vault_BP_InstantLoot_NecklaceBust2_K2Node_ActorBoundEvent_5_SBZLootedSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_SKY_Vault_BP_InstantLoot_NecklaceBust2_K2Node_ActorBoundEvent_5_SBZLootedSignature__DelegateSignature", FnName));
 
 	Params::R_SKY_Vault_C_BndEvt__R_SKY_Vault_BP_InstantLoot_NecklaceBust2_K2Node_ActorBoundEvent_5_SBZLootedSignature__DelegateSignature Parms{};
 
@@ -140,73 +98,95 @@ void AR_SKY_Vault_C::BndEvt__R_SKY_Vault_BP_InstantLoot_NecklaceBust2_K2Node_Act
 }
 
 
-// Function R_SKY_Vault.R_SKY_Vault_C.BndEvt__R_SKY_Vault_BP_InstantLoot_NecklaceBust3_8_K2Node_ActorBoundEvent_6_SBZLootedSignature__DelegateSignature
+// Function R_SKY_Vault.R_SKY_Vault_C.BndEvt__R_Penthouse_Vault_SBZDestroyGroup_1_K2Node_ActorBoundEvent_3_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// const TArray<class AActor*>&            KeptActors                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const TArray<class AActor*>&            DestroyedActors                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void AR_SKY_Vault_C::BndEvt__R_Penthouse_Vault_SBZDestroyGroup_1_K2Node_ActorBoundEvent_3_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Penthouse_Vault_SBZDestroyGroup_1_K2Node_ActorBoundEvent_3_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature", FnName));
+
+	Params::R_SKY_Vault_C_BndEvt__R_Penthouse_Vault_SBZDestroyGroup_1_K2Node_ActorBoundEvent_3_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.KeptActors = std::move(KeptActors);
+	Parms.DestroyedActors = std::move(DestroyedActors);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function R_SKY_Vault.R_SKY_Vault_C.BndEvt__R_Penthouse_Vault_BP_Safe_01_2_K2Node_ActorBoundEvent_0_SBZOnMinigameDoneDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+
+void AR_SKY_Vault_C::BndEvt__R_Penthouse_Vault_BP_Safe_01_2_K2Node_ActorBoundEvent_0_SBZOnMinigameDoneDelegate__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Penthouse_Vault_BP_Safe_01_2_K2Node_ActorBoundEvent_0_SBZOnMinigameDoneDelegate__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_SKY_Vault.R_SKY_Vault_C.BndEvt__R_Penthouse_Vault_BP_PortableSSD_2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// class ASBZInstantLoot*                  InstantLoot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPlayerCharacter*              TakenByPlayer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void AR_SKY_Vault_C::BndEvt__R_SKY_Vault_BP_InstantLoot_NecklaceBust3_8_K2Node_ActorBoundEvent_6_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer)
+void AR_SKY_Vault_C::BndEvt__R_Penthouse_Vault_BP_PortableSSD_2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Penthouse_Vault_BP_PortableSSD_2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_SKY_Vault_C", "BndEvt__R_SKY_Vault_BP_InstantLoot_NecklaceBust3_8_K2Node_ActorBoundEvent_6_SBZLootedSignature__DelegateSignature");
+	Params::R_SKY_Vault_C_BndEvt__R_Penthouse_Vault_BP_PortableSSD_2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature Parms{};
 
-	Params::R_SKY_Vault_C_BndEvt__R_SKY_Vault_BP_InstantLoot_NecklaceBust3_8_K2Node_ActorBoundEvent_6_SBZLootedSignature__DelegateSignature Parms{};
-
-	Parms.InstantLoot = InstantLoot;
-	Parms.TakenByPlayer = TakenByPlayer;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function R_SKY_Vault.R_SKY_Vault_C.Code_Entered
-// (BlueprintCallable, BlueprintEvent)
-
-void AR_SKY_Vault_C::Code_Entered()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_SKY_Vault_C", "Code_Entered");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function R_SKY_Vault.R_SKY_Vault_C.ExecuteUbergraph_R_SKY_Vault
-// (Final, UbergraphFunction, HasDefaults)
+// Function R_SKY_Vault.R_SKY_Vault_C.BndEvt__R_Penthouse_Vault_BP_PortableSSD2_4_K2Node_ActorBoundEvent_4_SBZActorOnInteraction__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void AR_SKY_Vault_C::ExecuteUbergraph_R_SKY_Vault(int32 EntryPoint)
+void AR_SKY_Vault_C::BndEvt__R_Penthouse_Vault_BP_PortableSSD2_4_K2Node_ActorBoundEvent_4_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Penthouse_Vault_BP_PortableSSD2_4_K2Node_ActorBoundEvent_4_SBZActorOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_SKY_Vault_C", "ExecuteUbergraph_R_SKY_Vault");
+	Params::R_SKY_Vault_C_BndEvt__R_Penthouse_Vault_BP_PortableSSD2_4_K2Node_ActorBoundEvent_4_SBZActorOnInteraction__DelegateSignature Parms{};
 
-	Params::R_SKY_Vault_C_ExecuteUbergraph_R_SKY_Vault Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function R_SKY_Vault.R_SKY_Vault_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function R_SKY_Vault.R_SKY_Vault_C.BndEvt__R_Penthouse_Vault_BP_Int_Door_01_SmallVault_01_0_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AR_SKY_Vault_C::ReceiveBeginPlay()
+void AR_SKY_Vault_C::BndEvt__R_Penthouse_Vault_BP_Int_Door_01_SmallVault_01_0_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Penthouse_Vault_BP_Int_Door_01_SmallVault_01_0_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_SKY_Vault_C", "ReceiveBeginPlay");
+	Params::R_SKY_Vault_C_BndEvt__R_Penthouse_Vault_BP_Int_Door_01_SmallVault_01_0_K2Node_ActorBoundEvent_2_SBZGateStateChangedDelegate__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.OldState = OldState;
+	Parms.State = State;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

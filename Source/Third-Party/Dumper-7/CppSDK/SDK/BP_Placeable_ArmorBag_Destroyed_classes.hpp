@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABP_Placeable_ArmorBag_Destroyed_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Placeable_ArmorBag_Destroyed_C;
 
 SDK_NAMESPACE_END

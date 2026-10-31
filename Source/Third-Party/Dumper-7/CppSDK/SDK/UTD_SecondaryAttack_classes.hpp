@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UUTD_SecondaryAttack_C>();
 	}
 };
+DUMPER7_ASSERTS_UUTD_SecondaryAttack_C;
 
 SDK_NAMESPACE_END

@@ -28,8 +28,8 @@ public:
 	class USBZUITextBlock*                        Text_Name;                                         // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void SetChapterData(class USBZCampaignChapterData* ChapterData);
 	void ExecuteUbergraph_WBP_FancyDivider(int32 EntryPoint);
+	void SetChapterData(class USBZCampaignChapterData* ChapterData);
 
 public:
 	static class UClass* StaticClass()

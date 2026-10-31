@@ -53,5 +53,6 @@ public:
 		return GetDefaultObjImpl<UWBP_PoliceCompleteHack_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_PoliceCompleteHack_C;
 
 SDK_NAMESPACE_END

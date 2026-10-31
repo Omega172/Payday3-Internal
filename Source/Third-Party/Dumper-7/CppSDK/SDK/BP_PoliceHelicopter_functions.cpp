@@ -16,23 +16,35 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_PoliceHelicopter.BP_PoliceHelicopter_C.ExecuteUbergraph_BP_PoliceHelicopter
-// (Final, UbergraphFunction)
+// Function BP_PoliceHelicopter.BP_PoliceHelicopter_C.ReceiveOnDoorStateChanged
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZAerialVehicleDoor                   Door_ReceiveOnDoorStateChanged                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsDoorOpen_ReceiveOnDoorStateChanged                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PoliceHelicopter_C::ExecuteUbergraph_BP_PoliceHelicopter(int32 EntryPoint)
+void ABP_PoliceHelicopter_C::ReceiveOnDoorStateChanged(ESBZAerialVehicleDoor Door_ReceiveOnDoorStateChanged, bool bIsDoorOpen_ReceiveOnDoorStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveOnDoorStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PoliceHelicopter_C", "ExecuteUbergraph_BP_PoliceHelicopter");
+	Params::BP_PoliceHelicopter_C_ReceiveOnDoorStateChanged Parms{};
 
-	Params::BP_PoliceHelicopter_C_ExecuteUbergraph_BP_PoliceHelicopter Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Door_ReceiveOnDoorStateChanged = Door_ReceiveOnDoorStateChanged;
+	Parms.bIsDoorOpen_ReceiveOnDoorStateChanged = bIsDoorOpen_ReceiveOnDoorStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PoliceHelicopter.BP_PoliceHelicopter_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_PoliceHelicopter_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -45,10 +57,8 @@ void ABP_PoliceHelicopter_C::ExecuteUbergraph_BP_PoliceHelicopter(int32 EntryPoi
 
 void ABP_PoliceHelicopter_C::OnPawnSpawned(class APD3PawnSpawnGroup* SpawnGroup, class ASBZPawnSpawnBase* Spawner, class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PoliceHelicopter_C", "OnPawnSpawned");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPawnSpawned", FnName));
 
 	Params::BP_PoliceHelicopter_C_OnPawnSpawned Parms{};
 
@@ -60,37 +70,19 @@ void ABP_PoliceHelicopter_C::OnPawnSpawned(class APD3PawnSpawnGroup* SpawnGroup,
 }
 
 
-// Function BP_PoliceHelicopter.BP_PoliceHelicopter_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_PoliceHelicopter_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PoliceHelicopter_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_PoliceHelicopter.BP_PoliceHelicopter_C.ReceiveOnDoorStateChanged
-// (Event, Public, BlueprintEvent)
+// Function BP_PoliceHelicopter.BP_PoliceHelicopter_C.ExecuteUbergraph_BP_PoliceHelicopter
+// (Final, UbergraphFunction)
 // Parameters:
-// ESBZAerialVehicleDoor                   Door                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsDoorOpen                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PoliceHelicopter_C::ReceiveOnDoorStateChanged(ESBZAerialVehicleDoor Door, bool bIsDoorOpen)
+void ABP_PoliceHelicopter_C::ExecuteUbergraph_BP_PoliceHelicopter(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_PoliceHelicopter_C", "ExecuteUbergraph_BP_PoliceHelicopter", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PoliceHelicopter_C", "ReceiveOnDoorStateChanged");
+	Params::BP_PoliceHelicopter_C_ExecuteUbergraph_BP_PoliceHelicopter Parms{};
 
-	Params::BP_PoliceHelicopter_C_ReceiveOnDoorStateChanged Parms{};
-
-	Parms.Door = Door;
-	Parms.bIsDoorOpen = bIsDoorOpen;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

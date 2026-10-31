@@ -41,5 +41,6 @@ public:
 		return GetDefaultObjImpl<ABPL_FluorescentNeonLarge_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_FluorescentNeonLarge_C;
 
 SDK_NAMESPACE_END

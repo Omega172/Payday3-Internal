@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Sedan_Civilian_02.BP_Sedan_Civilian_02_C
-// 0x0000 (0x0930 - 0x0930)
+// 0x0000 (0x0A30 - 0x0A30)
 class ABP_Sedan_Civilian_02_C final : public ABP_WheeledVehicle_Base_C
 {
 public:
@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Sedan_Civilian_02_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Sedan_Civilian_02_C;
 
 SDK_NAMESPACE_END

@@ -40,5 +40,6 @@ public:
 		return GetDefaultObjImpl<ABP_InteractablePainting_Greg_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_InteractablePainting_Greg_C;
 
 SDK_NAMESPACE_END

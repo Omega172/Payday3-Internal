@@ -42,6 +42,7 @@ public:
 	class FString                                 CallFunc_Conv_IntToString_ReturnValue_1;           // 0x0068(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	TArray<class ABPL_OrangeLight_C*>             K2Node_MakeArray_Array_1;                          // 0x0078(0x0010)(ReferenceParm)
 };
+DUMPER7_ASSERTS_L_ArmoredTransport_Lighting_C_ExecuteUbergraph_L_ArmoredTransport_Lighting;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

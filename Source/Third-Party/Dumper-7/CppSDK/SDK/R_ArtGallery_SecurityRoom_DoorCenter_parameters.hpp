@@ -27,6 +27,7 @@ public:
 	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_1;               // 0x0028(0x0010)(ReferenceParm)
 	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_1;          // 0x0038(0x0010)(ReferenceParm)
 };
+DUMPER7_ASSERTS_R_ArtGallery_SecurityRoom_DoorCenter_C_ExecuteUbergraph_R_ArtGallery_SecurityRoom_DoorCenter;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

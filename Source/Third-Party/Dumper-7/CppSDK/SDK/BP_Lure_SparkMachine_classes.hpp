@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Lure_SparkMachine_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Lure_SparkMachine_C;
 
 SDK_NAMESPACE_END

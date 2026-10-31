@@ -16,40 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_LA_Scripted_PanicButton_Base.BP_LA_Scripted_PanicButton_Base_C.BndEvt__BP_LA_Scripted_PanicButton_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_LA_Scripted_PanicButton_Base_C_BndEvt__BP_LA_Scripted_PanicButton_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature final
-{
-public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_LA_Scripted_PanicButton_Base.BP_LA_Scripted_PanicButton_Base_C.BndEvt__BP_LA_Scripted_PanicButton_SBZLifeAction_K2Node_ComponentBoundEvent_3_SBZLifeActionStopEventDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct BP_LA_Scripted_PanicButton_Base_C_BndEvt__BP_LA_Scripted_PanicButton_SBZLifeAction_K2Node_ComponentBoundEvent_3_SBZLifeActionStopEventDelegate__DelegateSignature final
-{
-public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	ESBZLifeActionStopReason                      Result;                                            // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_LA_Scripted_PanicButton_Base.BP_LA_Scripted_PanicButton_Base_C.Call Dispatcher
-// 0x0028 (0x0028 - 0x0000)
-struct BP_LA_Scripted_PanicButton_Base_C_Call_Dispatcher final
-{
-public:
-	ESBZLifeActionStopReason                      Reason;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZCharacter*                          Character;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPD3Dispatcher*                         CallFunc_GetDispatcher_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class ASBZRoomVolume*                         CallFunc_GetCurrentRoom_Implementation_ReturnValue; // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_LA_Scripted_PanicButton_Base.BP_LA_Scripted_PanicButton_Base_C.ExecuteUbergraph_BP_LA_Scripted_PanicButton_Base
 // 0x0040 (0x0040 - 0x0000)
 struct BP_LA_Scripted_PanicButton_Base_C_ExecuteUbergraph_BP_LA_Scripted_PanicButton_Base final
@@ -66,6 +32,44 @@ public:
 	class USBZLifeActionInstance*                 K2Node_ComponentBoundEvent_ActionInstance_1;       // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class USBZLifeActionSlot*                     K2Node_ComponentBoundEvent_ActionSlot_1;           // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_LA_Scripted_PanicButton_Base_C_ExecuteUbergraph_BP_LA_Scripted_PanicButton_Base;
+
+// Function BP_LA_Scripted_PanicButton_Base.BP_LA_Scripted_PanicButton_Base_C.Call Dispatcher
+// 0x0028 (0x0028 - 0x0000)
+struct BP_LA_Scripted_PanicButton_Base_C_Call_Dispatcher final
+{
+public:
+	ESBZLifeActionStopReason                      Reason;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZCharacter*                          Character;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPD3Dispatcher*                         CallFunc_GetDispatcher_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class ASBZRoomVolume*                         CallFunc_GetCurrentRoom_Implementation_ReturnValue; // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LA_Scripted_PanicButton_Base_C_Call_Dispatcher;
+
+// Function BP_LA_Scripted_PanicButton_Base.BP_LA_Scripted_PanicButton_Base_C.BndEvt__BP_LA_Scripted_PanicButton_SBZLifeAction_K2Node_ComponentBoundEvent_3_SBZLifeActionStopEventDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct BP_LA_Scripted_PanicButton_Base_C_BndEvt__BP_LA_Scripted_PanicButton_SBZLifeAction_K2Node_ComponentBoundEvent_3_SBZLifeActionStopEventDelegate__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	ESBZLifeActionStopReason                      Result;                                            // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LA_Scripted_PanicButton_Base_C_BndEvt__BP_LA_Scripted_PanicButton_SBZLifeAction_K2Node_ComponentBoundEvent_3_SBZLifeActionStopEventDelegate__DelegateSignature;
+
+// Function BP_LA_Scripted_PanicButton_Base.BP_LA_Scripted_PanicButton_Base_C.BndEvt__BP_LA_Scripted_PanicButton_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_LA_Scripted_PanicButton_Base_C_BndEvt__BP_LA_Scripted_PanicButton_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature final
+{
+public:
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LA_Scripted_PanicButton_Base_C_BndEvt__BP_LA_Scripted_PanicButton_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

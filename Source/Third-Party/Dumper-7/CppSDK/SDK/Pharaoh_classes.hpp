@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<APharaoh_C>();
 	}
 };
+DUMPER7_ASSERTS_APharaoh_C;
 
 SDK_NAMESPACE_END

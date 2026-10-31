@@ -16,63 +16,39 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Thunder.BP_Thunder_C.BeginOverlap
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function BP_Thunder.BP_Thunder_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Thunder_C::BeginOverlap(class APawn* Pawn)
+void ABP_Thunder_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Thunder_C", "BeginOverlap");
-
-	Params::BP_Thunder_C_BeginOverlap Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Thunder.BP_Thunder_C.EndOverlap
+// Function BP_Thunder.BP_Thunder_C.Thunder
 // (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Thunder_C::EndOverlap(class APawn* Pawn)
+void ABP_Thunder_C::Thunder()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Thunder", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Thunder_C", "EndOverlap");
-
-	Params::BP_Thunder_C_EndOverlap Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Thunder.BP_Thunder_C.ExecuteUbergraph_BP_Thunder
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Thunder.BP_Thunder_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_Thunder_C::ExecuteUbergraph_BP_Thunder(int32 EntryPoint)
+void ABP_Thunder_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Thunder_C", "ExecuteUbergraph_BP_Thunder");
-
-	Params::BP_Thunder_C_ExecuteUbergraph_BP_Thunder Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -84,10 +60,8 @@ void ABP_Thunder_C::ExecuteUbergraph_BP_Thunder(int32 EntryPoint)
 
 void ABP_Thunder_C::GetControlledPawnLocation(class APawn** ControlledPawnReference, struct FVector* ControlledPawnLocation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Thunder_C", "GetControlledPawnLocation");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetControlledPawnLocation", FnName));
 
 	Params::BP_Thunder_C_GetControlledPawnLocation Parms{};
 
@@ -101,45 +75,57 @@ void ABP_Thunder_C::GetControlledPawnLocation(class APawn** ControlledPawnRefere
 }
 
 
-// Function BP_Thunder.BP_Thunder_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_Thunder.BP_Thunder_C.ExecuteUbergraph_BP_Thunder
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Thunder_C::ReceiveBeginPlay()
+void ABP_Thunder_C::ExecuteUbergraph_BP_Thunder(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Thunder_C", "ExecuteUbergraph_BP_Thunder", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Thunder_C", "ReceiveBeginPlay");
+	Params::BP_Thunder_C_ExecuteUbergraph_BP_Thunder Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_Thunder.BP_Thunder_C.Thunder
+// Function BP_Thunder.BP_Thunder_C.EndOverlap
 // (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Thunder_C::Thunder()
+void ABP_Thunder_C::EndOverlap(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EndOverlap", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Thunder_C", "Thunder");
+	Params::BP_Thunder_C_EndOverlap Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_Thunder.BP_Thunder_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_Thunder.BP_Thunder_C.BeginOverlap
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Thunder_C::UserConstructionScript()
+void ABP_Thunder_C::BeginOverlap(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BeginOverlap", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Thunder_C", "UserConstructionScript");
+	Params::BP_Thunder_C_BeginOverlap Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

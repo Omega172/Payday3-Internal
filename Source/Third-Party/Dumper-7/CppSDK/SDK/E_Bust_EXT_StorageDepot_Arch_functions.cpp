@@ -16,53 +16,31 @@
 
 SDK_NAMESPACE_START
 
-// Function E_Bust_EXT_StorageDepot_Arch.E_Bust_EXT_StorageDepot_Arch_C.BndEvt__E_Bust_EXT_StorageDepot_Arch_BP_BUS_Skylight_2_K2Node_ActorBoundEvent_3_onWindowBroken__DelegateSignature
-// (BlueprintEvent)
+// Function E_Bust_EXT_StorageDepot_Arch.E_Bust_EXT_StorageDepot_Arch_C.StorageEntered
+// (BlueprintCallable, BlueprintEvent)
 
-void AE_Bust_EXT_StorageDepot_Arch_C::BndEvt__E_Bust_EXT_StorageDepot_Arch_BP_BUS_Skylight_2_K2Node_ActorBoundEvent_3_onWindowBroken__DelegateSignature()
+void AE_Bust_EXT_StorageDepot_Arch_C::StorageEntered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Bust_EXT_StorageDepot_Arch_C", "BndEvt__E_Bust_EXT_StorageDepot_Arch_BP_BUS_Skylight_2_K2Node_ActorBoundEvent_3_onWindowBroken__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StorageEntered", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function E_Bust_EXT_StorageDepot_Arch.E_Bust_EXT_StorageDepot_Arch_C.BndEvt__E_Bust_EXT_StorageDepot_Arch_BP_BUS_Skylight_6_K2Node_ActorBoundEvent_4_onWindowBroken__DelegateSignature
-// (BlueprintEvent)
-
-void AE_Bust_EXT_StorageDepot_Arch_C::BndEvt__E_Bust_EXT_StorageDepot_Arch_BP_BUS_Skylight_6_K2Node_ActorBoundEvent_4_onWindowBroken__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Bust_EXT_StorageDepot_Arch_C", "BndEvt__E_Bust_EXT_StorageDepot_Arch_BP_BUS_Skylight_6_K2Node_ActorBoundEvent_4_onWindowBroken__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function E_Bust_EXT_StorageDepot_Arch.E_Bust_EXT_StorageDepot_Arch_C.BndEvt__E_Bust_EXT_StorageDepot_Arch_SBZFilteredTriggerVolume_BreakGlass2_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
+// Function E_Bust_EXT_StorageDepot_Arch.E_Bust_EXT_StorageDepot_Arch_C.ExecuteUbergraph_E_Bust_EXT_StorageDepot_Arch
+// (Final, UbergraphFunction)
 // Parameters:
-// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AE_Bust_EXT_StorageDepot_Arch_C::BndEvt__E_Bust_EXT_StorageDepot_Arch_SBZFilteredTriggerVolume_BreakGlass2_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+void AE_Bust_EXT_StorageDepot_Arch_C::ExecuteUbergraph_E_Bust_EXT_StorageDepot_Arch(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "E_Bust_EXT_StorageDepot_Arch_C", "ExecuteUbergraph_E_Bust_EXT_StorageDepot_Arch", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Bust_EXT_StorageDepot_Arch_C", "BndEvt__E_Bust_EXT_StorageDepot_Arch_SBZFilteredTriggerVolume_BreakGlass2_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature");
+	Params::E_Bust_EXT_StorageDepot_Arch_C_ExecuteUbergraph_E_Bust_EXT_StorageDepot_Arch Parms{};
 
-	Params::E_Bust_EXT_StorageDepot_Arch_C_BndEvt__E_Bust_EXT_StorageDepot_Arch_SBZFilteredTriggerVolume_BreakGlass2_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Identifier = Identifier;
-	Parms.Actor = Actor;
-	Parms.CurrentTotalActors = CurrentTotalActors;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -77,10 +55,8 @@ void AE_Bust_EXT_StorageDepot_Arch_C::BndEvt__E_Bust_EXT_StorageDepot_Arch_SBZFi
 
 void AE_Bust_EXT_StorageDepot_Arch_C::BndEvt__E_Bust_EXT_StorageDepot_Arch_SBZFilteredTriggerVolume_BreakGlass_K2Node_ActorBoundEvent_0_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Bust_EXT_StorageDepot_Arch_C", "BndEvt__E_Bust_EXT_StorageDepot_Arch_SBZFilteredTriggerVolume_BreakGlass_K2Node_ActorBoundEvent_0_SBZFilterActorDynamicDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__E_Bust_EXT_StorageDepot_Arch_SBZFilteredTriggerVolume_BreakGlass_K2Node_ActorBoundEvent_0_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
 
 	Params::E_Bust_EXT_StorageDepot_Arch_C_BndEvt__E_Bust_EXT_StorageDepot_Arch_SBZFilteredTriggerVolume_BreakGlass_K2Node_ActorBoundEvent_0_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
 
@@ -92,35 +68,47 @@ void AE_Bust_EXT_StorageDepot_Arch_C::BndEvt__E_Bust_EXT_StorageDepot_Arch_SBZFi
 }
 
 
-// Function E_Bust_EXT_StorageDepot_Arch.E_Bust_EXT_StorageDepot_Arch_C.ExecuteUbergraph_E_Bust_EXT_StorageDepot_Arch
-// (Final, UbergraphFunction)
+// Function E_Bust_EXT_StorageDepot_Arch.E_Bust_EXT_StorageDepot_Arch_C.BndEvt__E_Bust_EXT_StorageDepot_Arch_SBZFilteredTriggerVolume_BreakGlass2_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AE_Bust_EXT_StorageDepot_Arch_C::ExecuteUbergraph_E_Bust_EXT_StorageDepot_Arch(int32 EntryPoint)
+void AE_Bust_EXT_StorageDepot_Arch_C::BndEvt__E_Bust_EXT_StorageDepot_Arch_SBZFilteredTriggerVolume_BreakGlass2_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__E_Bust_EXT_StorageDepot_Arch_SBZFilteredTriggerVolume_BreakGlass2_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Bust_EXT_StorageDepot_Arch_C", "ExecuteUbergraph_E_Bust_EXT_StorageDepot_Arch");
+	Params::E_Bust_EXT_StorageDepot_Arch_C_BndEvt__E_Bust_EXT_StorageDepot_Arch_SBZFilteredTriggerVolume_BreakGlass2_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
 
-	Params::E_Bust_EXT_StorageDepot_Arch_C_ExecuteUbergraph_E_Bust_EXT_StorageDepot_Arch Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Identifier = Identifier;
+	Parms.Actor = Actor;
+	Parms.CurrentTotalActors = CurrentTotalActors;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function E_Bust_EXT_StorageDepot_Arch.E_Bust_EXT_StorageDepot_Arch_C.StorageEntered
-// (BlueprintCallable, BlueprintEvent)
+// Function E_Bust_EXT_StorageDepot_Arch.E_Bust_EXT_StorageDepot_Arch_C.BndEvt__E_Bust_EXT_StorageDepot_Arch_BP_BUS_Skylight_6_K2Node_ActorBoundEvent_4_onWindowBroken__DelegateSignature
+// (BlueprintEvent)
 
-void AE_Bust_EXT_StorageDepot_Arch_C::StorageEntered()
+void AE_Bust_EXT_StorageDepot_Arch_C::BndEvt__E_Bust_EXT_StorageDepot_Arch_BP_BUS_Skylight_6_K2Node_ActorBoundEvent_4_onWindowBroken__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__E_Bust_EXT_StorageDepot_Arch_BP_BUS_Skylight_6_K2Node_ActorBoundEvent_4_onWindowBroken__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Bust_EXT_StorageDepot_Arch_C", "StorageEntered");
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function E_Bust_EXT_StorageDepot_Arch.E_Bust_EXT_StorageDepot_Arch_C.BndEvt__E_Bust_EXT_StorageDepot_Arch_BP_BUS_Skylight_2_K2Node_ActorBoundEvent_3_onWindowBroken__DelegateSignature
+// (BlueprintEvent)
+
+void AE_Bust_EXT_StorageDepot_Arch_C::BndEvt__E_Bust_EXT_StorageDepot_Arch_BP_BUS_Skylight_2_K2Node_ActorBoundEvent_3_onWindowBroken__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__E_Bust_EXT_StorageDepot_Arch_BP_BUS_Skylight_2_K2Node_ActorBoundEvent_3_onWindowBroken__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

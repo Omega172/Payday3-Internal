@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_BackItemSatellitePart_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BackItemSatellitePart_C;
 
 SDK_NAMESPACE_END

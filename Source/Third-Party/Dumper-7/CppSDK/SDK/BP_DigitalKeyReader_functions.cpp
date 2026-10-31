@@ -16,49 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_DigitalKeyReader.BP_DigitalKeyReader_C.BndEvt__BP_DigitalKeyReader_InteractableComponent_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_DigitalKeyReader.BP_DigitalKeyReader_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_DigitalKeyReader_C::BndEvt__BP_DigitalKeyReader_InteractableComponent_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_DigitalKeyReader_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DigitalKeyReader_C", "BndEvt__BP_DigitalKeyReader_InteractableComponent_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_DigitalKeyReader_C_BndEvt__BP_DigitalKeyReader_InteractableComponent_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_DigitalKeyReader.BP_DigitalKeyReader_C.BP_OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// ESBZModuleActorState                    NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_DigitalKeyReader_C::BP_OnStateChanged(ESBZModuleActorState NewState, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DigitalKeyReader_C", "BP_OnStateChanged");
-
-	Params::BP_DigitalKeyReader_C_BP_OnStateChanged Parms{};
-
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -69,10 +35,8 @@ void ABP_DigitalKeyReader_C::BP_OnStateChanged(ESBZModuleActorState NewState, bo
 
 void ABP_DigitalKeyReader_C::ExecuteUbergraph_BP_DigitalKeyReader(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DigitalKeyReader_C", "ExecuteUbergraph_BP_DigitalKeyReader");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_DigitalKeyReader_C", "ExecuteUbergraph_BP_DigitalKeyReader", FuncInfo);
 
 	Params::BP_DigitalKeyReader_C_ExecuteUbergraph_BP_DigitalKeyReader Parms{};
 
@@ -82,17 +46,45 @@ void ABP_DigitalKeyReader_C::ExecuteUbergraph_BP_DigitalKeyReader(int32 EntryPoi
 }
 
 
-// Function BP_DigitalKeyReader.BP_DigitalKeyReader_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_DigitalKeyReader.BP_DigitalKeyReader_C.BP_OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZModuleActorState                    NewState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_BP_OnStateChanged                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_DigitalKeyReader_C::UserConstructionScript()
+void ABP_DigitalKeyReader_C::BP_OnStateChanged(ESBZModuleActorState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DigitalKeyReader_C", "UserConstructionScript");
+	Params::BP_DigitalKeyReader_C_BP_OnStateChanged Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.NewState_BP_OnStateChanged = NewState_BP_OnStateChanged;
+	Parms.bDoCosmetics_BP_OnStateChanged = bDoCosmetics_BP_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_DigitalKeyReader.BP_DigitalKeyReader_C.BndEvt__BP_DigitalKeyReader_InteractableComponent_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_DigitalKeyReader_C::BndEvt__BP_DigitalKeyReader_InteractableComponent_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_DigitalKeyReader_InteractableComponent_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_DigitalKeyReader_C_BndEvt__BP_DigitalKeyReader_InteractableComponent_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

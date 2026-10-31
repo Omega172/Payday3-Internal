@@ -16,26 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_Chus_Notepad.WBP_Chus_Notepad_C.Set Header
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      Header                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_Chus_Notepad_C::Set_Header(const class FText& Header)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Chus_Notepad_C", "Set Header");
-
-	Params::WBP_Chus_Notepad_C_Set_Header Parms{};
-
-	Parms.Header = std::move(Header);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_Chus_Notepad.WBP_Chus_Notepad_C.SetName
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -43,14 +23,30 @@ void UWBP_Chus_Notepad_C::Set_Header(const class FText& Header)
 
 void UWBP_Chus_Notepad_C::SetName(const class FText& Name_0)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_Chus_Notepad_C", "SetName");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetName", FnName));
 
 	Params::WBP_Chus_Notepad_C_SetName Parms{};
 
 	Parms.Name_0 = std::move(Name_0);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Chus_Notepad.WBP_Chus_Notepad_C.Set Header
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      Header                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_Chus_Notepad_C::Set_Header(const class FText& Header)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set Header", FnName));
+
+	Params::WBP_Chus_Notepad_C_Set_Header Parms{};
+
+	Parms.Header = std::move(Header);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

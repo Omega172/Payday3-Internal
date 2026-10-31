@@ -35,9 +35,9 @@ public:
 	bool                                          isDestoyed;                                        // 0x03E0(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__NewBlueprint_PropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
-	void ExecuteUbergraph_BP_STO_RailingGlass_03(int32 EntryPoint);
 	class UStaticMeshComponent* GetTraversalDestructibleMeshComponent();
+	void ExecuteUbergraph_BP_STO_RailingGlass_03(int32 EntryPoint);
+	void BndEvt__NewBlueprint_PropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
 
 public:
 	static class UClass* StaticClass()
@@ -53,5 +53,6 @@ public:
 		return GetDefaultObjImpl<ABP_STO_RailingGlass_03_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_STO_RailingGlass_03_C;
 
 SDK_NAMESPACE_END

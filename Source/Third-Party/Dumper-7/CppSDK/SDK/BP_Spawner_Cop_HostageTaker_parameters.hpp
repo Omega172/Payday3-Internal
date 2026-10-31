@@ -14,15 +14,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_Spawner_Cop_HostageTaker.BP_Spawner_Cop_HostageTaker_C.CustomEvent_0
-// 0x0010 (0x0010 - 0x0000)
-struct BP_Spawner_Cop_HostageTaker_C_CustomEvent_0 final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_Spawner_Cop_HostageTaker.BP_Spawner_Cop_HostageTaker_C.ExecuteUbergraph_BP_Spawner_Cop_HostageTaker
 // 0x0038 (0x0038 - 0x0000)
 struct BP_Spawner_Cop_HostageTaker_C_ExecuteUbergraph_BP_Spawner_Cop_HostageTaker final
@@ -35,6 +26,17 @@ public:
 	class ASBZCharacter*                          K2Node_DynamicCast_AsSBZCharacter;                 // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Spawner_Cop_HostageTaker_C_ExecuteUbergraph_BP_Spawner_Cop_HostageTaker;
+
+// Function BP_Spawner_Cop_HostageTaker.BP_Spawner_Cop_HostageTaker_C.CustomEvent_0
+// 0x0010 (0x0010 - 0x0000)
+struct BP_Spawner_Cop_HostageTaker_C_CustomEvent_0 final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Spawner_Cop_HostageTaker_C_CustomEvent_0;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

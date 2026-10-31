@@ -43,17 +43,17 @@ public:
 	class UClass*                                 OpenNavAreaClass;                                  // 0x0410(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	struct FVector DoorPositionInterp(const struct FVector& Original, const struct FVector& Offset, double Alpha);
-	void ExecuteUbergraph_BP_ElevatorDoor(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void Open_Doors_No_Cosmetics(bool bOpen);
-	void OpenDoors_Internal(bool bOpen);
-	void OpenTimeline__FinishedFunc();
-	void OpenTimeline__SwitchDoor__EventFunc();
-	void OpenTimeline__UpdateFunc();
-	void ReactToCloset(bool bActorsInCloset, bool bDoCosmetics);
-	void SetRelativePositionInterp(class USceneComponent* Component, const struct FVector& Original, const struct FVector& Offset, double Alpha);
 	void UserConstructionScript();
+	void SetRelativePositionInterp(class USceneComponent* Component, const struct FVector& Original, const struct FVector& Offset, double Alpha);
+	void ReactToCloset(bool bActorsInCloset, bool bDoCosmetics);
+	void OpenTimeline__UpdateFunc();
+	void OpenTimeline__SwitchDoor__EventFunc();
+	void OpenTimeline__FinishedFunc();
+	void OpenDoors_Internal(bool bOpen);
+	void Open_Doors_No_Cosmetics(bool bOpen);
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_ElevatorDoor(int32 EntryPoint);
+	struct FVector DoorPositionInterp(const struct FVector& Original, const struct FVector& Offset, double Alpha);
 
 public:
 	static class UClass* StaticClass()
@@ -69,5 +69,6 @@ public:
 		return GetDefaultObjImpl<ABP_ElevatorDoor_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ElevatorDoor_C;
 
 SDK_NAMESPACE_END

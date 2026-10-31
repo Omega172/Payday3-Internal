@@ -45,12 +45,12 @@ public:
 	struct FLinearColor                           ColorMid;                                          // 0x0408(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_ButtonPanel_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_ButtonPanel_01(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void setInteraction(bool enabled);
-	void setLights(int32 state);
 	void UserConstructionScript();
+	void setLights(int32 state);
+	void setInteraction(bool enabled);
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_ButtonPanel_01(int32 EntryPoint);
+	void BndEvt__BP_ButtonPanel_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -66,5 +66,6 @@ public:
 		return GetDefaultObjImpl<ABP_ButtonPanel_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ButtonPanel_01_C;
 
 SDK_NAMESPACE_END

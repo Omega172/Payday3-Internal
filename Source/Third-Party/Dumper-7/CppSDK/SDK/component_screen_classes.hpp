@@ -59,36 +59,36 @@ public:
 	class USBZCosmeticDestructionComponent*       SBZCosmeticDestruction;                            // 0x0170(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_component_screen(int32 EntryPoint);
-	void onDestructionHit(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
-	void ReceiveBeginPlay();
-	void setBanding_refresh_rate(double banding_refresh_rate_0);
-	void setBanding_visibility(double banding_visibility_0);
+	void setup(class UStaticMeshComponent* meshes, class USBZCosmeticDestructionComponent* SBZCosmeticDestruction);
+	void setSwap_period(double Swap_period);
+	void setSwap_offest_by_position(bool swap_offest_by_position);
+	void setSub_texture_part_used_start_range(int32 sub_texture_part_used_start_range);
+	void setSub_texture_part_used_end_range(int32 sub_texture_part_used_end_range);
+	void setSpecularity(double Specularity);
+	void setSource_bink_media_player(class UBinkMediaPlayer* source_bink_media_player);
+	void setSide_Attenuation(double Side_Attenuation);
+	void setScreenPlaysMovie(bool Screens_plays_movie);
+	void H__0(double H_);
+	void setRoughness_Multiplier(double Roughness_Multiplier);
+	void setResolution(int32 resolution);
+	void setPixel_type(int32 Pixel_type);
+	void setNumber_of__vertical_slides_in_the_texture(double Number_of__vertical_slides_in_the_texture);
+	void setNumber_of__horizontal_slides_in_the_texture(double Number_of__horizontal_slides_in_the_texture);
+	void setMode_RGB(bool Mode_RGB);
+	void setLight_Spread(double Light_Spread);
+	void setLight_Reach(double Light_Reach);
+	void setLight_Intensity(double Light_Intensity);
+	void setLight_Angle(double Light_Angle);
+	void setIs_OFF(bool Is_OFF);
+	void setIs_Fully_destructable(bool Is_Fully_destructable);
+	void setIntensity_screen(double intensity_screen);
+	void setDiffuse_color(const struct FLinearColor& Diffuse_color);
 	void setDamageState(int32 damage);
-	void setDiffuse_color(const struct FLinearColor& Diffuse_color_0);
-	void setIntensity_screen(double intensity_screen_0);
-	void setIs_Fully_destructable(bool Is_Fully_destructable_0);
-	void setIs_OFF(bool Is_OFF_0);
-	void setLight_Angle(double Light_Angle_0);
-	void setLight_Intensity(double Light_Intensity_0);
-	void setLight_Reach(double Light_Reach_0);
-	void setLight_Spread(double Light_Spread_0);
-	void setMode_RGB(bool Mode_RGB_0);
-	void setNumber_of__horizontal_slides_in_the_texture(double Number_of__horizontal_slides_in_the_texture_0);
-	void setNumber_of__vertical_slides_in_the_texture(double Number_of__vertical_slides_in_the_texture_0);
-	void setPixel_type(int32 Pixel_type_0);
-	void setResolution(int32 resolution_0);
-	void setRoughness_Multiplier(double Roughness_Multiplier_0);
-	void H__0(double Param_H__0);
-	void setScreenPlaysMovie(bool Screens_plays_movie_0);
-	void setSide_Attenuation(double Side_Attenuation_0);
-	void setSource_bink_media_player(class UBinkMediaPlayer* source_bink_media_player_0);
-	void setSpecularity(double Specularity_0);
-	void setSub_texture_part_used_end_range(int32 sub_texture_part_used_end_range_0);
-	void setSub_texture_part_used_start_range(int32 sub_texture_part_used_start_range_0);
-	void setSwap_offest_by_position(bool swap_offest_by_position_0);
-	void setSwap_period(double Swap_period_0);
-	void setup(class UStaticMeshComponent* meshes_0, class USBZCosmeticDestructionComponent* SBZCosmeticDestruction_0);
+	void setBanding_visibility(double banding_visibility);
+	void setBanding_refresh_rate(double banding_refresh_rate);
+	void ReceiveBeginPlay();
+	void onDestructionHit(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
+	void ExecuteUbergraph_component_screen(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -104,5 +104,6 @@ public:
 		return GetDefaultObjImpl<Ucomponent_screen_C>();
 	}
 };
+DUMPER7_ASSERTS_Ucomponent_screen_C;
 
 SDK_NAMESPACE_END

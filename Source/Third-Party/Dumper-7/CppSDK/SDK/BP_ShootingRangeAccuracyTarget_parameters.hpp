@@ -17,6 +17,36 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_ShootingRangeAccuracyTarget.BP_ShootingRangeAccuracyTarget_C.UserConstructionScript
+// 0x0018 (0x0018 - 0x0000)
+struct BP_ShootingRangeAccuracyTarget_C_UserConstructionScript final
+{
+public:
+	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0010)()
+};
+DUMPER7_ASSERTS_BP_ShootingRangeAccuracyTarget_C_UserConstructionScript;
+
+// Function BP_ShootingRangeAccuracyTarget.BP_ShootingRangeAccuracyTarget_C.ReceivePointDamage
+// 0x0188 (0x0188 - 0x0000)
+struct BP_ShootingRangeAccuracyTarget_C_ReceivePointDamage final
+{
+public:
+	float                                         Damage_ReceivePointDamage;                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	const class UDamageType*                      DamageType_ReceivePointDamage;                     // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                HitLocation_ReceivePointDamage;                    // 0x0010(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                HitNormal_ReceivePointDamage;                      // 0x0028(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    HitComponent_ReceivePointDamage;                   // 0x0040(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FName                                   BoneName_ReceivePointDamage;                       // 0x0048(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                ShotFromDirection_ReceivePointDamage;              // 0x0058(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AController*                            InstigatedBy_ReceivePointDamage;                   // 0x0070(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 DamageCauser_ReceivePointDamage;                   // 0x0078(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             HitInfo_ReceivePointDamage;                        // 0x0080(0x0108)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+DUMPER7_ASSERTS_BP_ShootingRangeAccuracyTarget_C_ReceivePointDamage;
+
 // Function BP_ShootingRangeAccuracyTarget.BP_ShootingRangeAccuracyTarget_C.ExecuteUbergraph_BP_ShootingRangeAccuracyTarget
 // 0x0610 (0x0610 - 0x0000)
 struct BP_ShootingRangeAccuracyTarget_C_ExecuteUbergraph_BP_ShootingRangeAccuracyTarget final
@@ -51,34 +81,7 @@ public:
 	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult_1; // 0x0500(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x0608(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_ShootingRangeAccuracyTarget.BP_ShootingRangeAccuracyTarget_C.ReceivePointDamage
-// 0x0188 (0x0188 - 0x0000)
-struct BP_ShootingRangeAccuracyTarget_C_ReceivePointDamage final
-{
-public:
-	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	const class UDamageType*                      DamageType;                                        // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                HitLocation;                                       // 0x0010(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                HitNormal;                                         // 0x0028(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    HitComponent;                                      // 0x0040(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class FName                                   BoneName;                                          // 0x0048(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                ShotFromDirection;                                 // 0x0058(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AController*                            InstigatedBy;                                      // 0x0070(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 DamageCauser;                                      // 0x0078(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             HitInfo;                                           // 0x0080(0x0108)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
-
-// Function BP_ShootingRangeAccuracyTarget.BP_ShootingRangeAccuracyTarget_C.UserConstructionScript
-// 0x0018 (0x0018 - 0x0000)
-struct BP_ShootingRangeAccuracyTarget_C_UserConstructionScript final
-{
-public:
-	class USceneComponent*                        CallFunc_K2_GetRootComponent_ReturnValue;          // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0010)()
-};
+DUMPER7_ASSERTS_BP_ShootingRangeAccuracyTarget_C_ExecuteUbergraph_BP_ShootingRangeAccuracyTarget;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

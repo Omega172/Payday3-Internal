@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_RangedWeapon_Revolver_Justicar_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_RangedWeapon_Revolver_Justicar_C;
 
 SDK_NAMESPACE_END

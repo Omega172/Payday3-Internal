@@ -29,12 +29,12 @@ public:
 	int32                                         queueLastIndex;                                    // 0x0360(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void addMesh();
-	void ExecuteUbergraph_BP_MeshCode_01(int32 EntryPoint);
-	void getMeshesFromOrder(TArray<int32>& order, TArray<TSoftObjectPtr<class UStaticMesh>>* orderedMeshes);
-	void onAllMeshesAdded();
-	void OnLoaded_A566666B470BD3B8C78498AAD4ED15AA(class UObject* Loaded);
 	void setImageOrder(const TArray<int32>& order);
+	void OnLoaded_A566666B470BD3B8C78498AAD4ED15AA(class UObject* Loaded);
+	void onAllMeshesAdded();
+	void getMeshesFromOrder(TArray<int32>& order, TArray<TSoftObjectPtr<class UStaticMesh>>* orderedMeshes);
+	void ExecuteUbergraph_BP_MeshCode_01(int32 EntryPoint);
+	void addMesh();
 
 public:
 	static class UClass* StaticClass()
@@ -50,5 +50,6 @@ public:
 		return GetDefaultObjImpl<ABP_MeshCode_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_MeshCode_01_C;
 
 SDK_NAMESPACE_END

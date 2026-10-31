@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_ReplicatedBinaryActor_windows_blinder_01_B_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ReplicatedBinaryActor_windows_blinder_01_B_C;
 
 SDK_NAMESPACE_END

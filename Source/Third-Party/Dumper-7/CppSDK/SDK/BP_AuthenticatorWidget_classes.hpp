@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<UBP_AuthenticatorWidget_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_AuthenticatorWidget_C;
 
 SDK_NAMESPACE_END

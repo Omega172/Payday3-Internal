@@ -54,17 +54,17 @@ public:
 	bool                                          processedAllServers;                               // 0x05C8(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void animateProgressBarTimeline__FinishedFunc();
-	void animateProgressBarTimeline__UpdateFunc();
-	void BndEvt__BP_Chus_ServerDecrypter_activatedBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
-	void BP_OnBagProcessed(const class USBZBagType* OldBagType, const class USBZBagType* NewBagType);
-	void BP_OnRunningStateChanged(ESBZLootProcessorState NewState, bool bDoCosmetics, bool bIsDedicatedServer);
-	void ExecuteUbergraph_BP_Chus_ServerDecrypter(int32 EntryPoint);
-	void ReceiveBeginPlay();
-	void setNextCaseFiles();
-	void setNextServerRotation(double offset);
-	void setServerVisibility(bool visible, bool ghost, bool interactable);
 	void UserConstructionScript();
+	void setServerVisibility(bool visible, bool ghost, bool interactable);
+	void setNextServerRotation(double offset);
+	void setNextCaseFiles();
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_Chus_ServerDecrypter(int32 EntryPoint);
+	void BP_OnRunningStateChanged(ESBZLootProcessorState NewState_BP_OnRunningStateChanged, bool bDoCosmetics_BP_OnRunningStateChanged, bool bIsDedicatedServer_BP_OnRunningStateChanged);
+	void BP_OnBagProcessed(const class USBZBagType* OldBagType_BP_OnBagProcessed, const class USBZBagType* NewBagType_BP_OnBagProcessed);
+	void BndEvt__BP_Chus_ServerDecrypter_activatedBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
+	void animateProgressBarTimeline__UpdateFunc();
+	void animateProgressBarTimeline__FinishedFunc();
 
 public:
 	static class UClass* StaticClass()
@@ -80,5 +80,6 @@ public:
 		return GetDefaultObjImpl<ABP_Chus_ServerDecrypter_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Chus_ServerDecrypter_C;
 
 SDK_NAMESPACE_END

@@ -40,5 +40,6 @@ public:
 		return GetDefaultObjImpl<ABP_Chus_Gavel_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Chus_Gavel_C;
 
 SDK_NAMESPACE_END

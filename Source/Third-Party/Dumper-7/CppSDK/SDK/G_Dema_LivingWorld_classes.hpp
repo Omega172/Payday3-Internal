@@ -24,8 +24,8 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void BlackScreenStarted();
 	void ExecuteUbergraph_G_Dema_LivingWorld(int32 EntryPoint);
+	void BlackScreenStarted();
 
 public:
 	static class UClass* StaticClass()
@@ -41,5 +41,6 @@ public:
 		return GetDefaultObjImpl<AG_Dema_LivingWorld_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_Dema_LivingWorld_C;
 
 SDK_NAMESPACE_END

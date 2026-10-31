@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Moon_Tactical_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Moon_Tactical_C;
 
 SDK_NAMESPACE_END

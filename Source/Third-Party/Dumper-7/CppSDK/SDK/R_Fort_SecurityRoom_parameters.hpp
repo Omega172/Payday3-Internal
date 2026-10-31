@@ -21,6 +21,7 @@ struct R_Fort_SecurityRoom_C_ExecuteUbergraph_R_Fort_SecurityRoom final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_R_Fort_SecurityRoom_C_ExecuteUbergraph_R_Fort_SecurityRoom;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

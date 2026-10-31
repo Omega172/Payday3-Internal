@@ -40,5 +40,6 @@ public:
 		return GetDefaultObjImpl<ADIM_BPL_Fluorescent_Hanging_02_C>();
 	}
 };
+DUMPER7_ASSERTS_ADIM_BPL_Fluorescent_Hanging_02_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UNQF_Crew_Casing_C>();
 	}
 };
+DUMPER7_ASSERTS_UNQF_Crew_Casing_C;
 
 SDK_NAMESPACE_END

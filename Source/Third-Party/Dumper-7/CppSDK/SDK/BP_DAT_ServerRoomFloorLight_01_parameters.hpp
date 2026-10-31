@@ -14,24 +14,19 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_DAT_ServerRoomFloorLight_01.BP_DAT_ServerRoomFloorLight_01_C.ExecuteUbergraph_BP_DAT_ServerRoomFloorLight_01
-// 0x0008 (0x0008 - 0x0000)
-struct BP_DAT_ServerRoomFloorLight_01_C_ExecuteUbergraph_BP_DAT_ServerRoomFloorLight_01 final
+// Function BP_DAT_ServerRoomFloorLight_01.BP_DAT_ServerRoomFloorLight_01_C.UserConstructionScript
+// 0x0028 (0x0028 - 0x0000)
+struct BP_DAT_ServerRoomFloorLight_01_C_UserConstructionScript final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bStateToChangeTo;                     // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bDoCosmetics;                         // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UStaticMesh*                            Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UStaticMesh*                            Temp_object_Variable_1;                            // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UStaticMesh*                            K2Node_Select_Default;                             // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_DAT_ServerRoomFloorLight_01.BP_DAT_ServerRoomFloorLight_01_C.OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_DAT_ServerRoomFloorLight_01_C_OnStateChanged final
-{
-public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_DAT_ServerRoomFloorLight_01_C_UserConstructionScript;
 
 // Function BP_DAT_ServerRoomFloorLight_01.BP_DAT_ServerRoomFloorLight_01_C.setLightState
 // 0x0038 (0x0038 - 0x0000)
@@ -56,19 +51,28 @@ public:
 	uint8                                         Pad_32[0x2];                                       // 0x0032(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_Select_Default_2;                           // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_DAT_ServerRoomFloorLight_01_C_setLightState;
 
-// Function BP_DAT_ServerRoomFloorLight_01.BP_DAT_ServerRoomFloorLight_01_C.UserConstructionScript
-// 0x0028 (0x0028 - 0x0000)
-struct BP_DAT_ServerRoomFloorLight_01_C_UserConstructionScript final
+// Function BP_DAT_ServerRoomFloorLight_01.BP_DAT_ServerRoomFloorLight_01_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_DAT_ServerRoomFloorLight_01_C_OnStateChanged final
 {
 public:
-	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UStaticMesh*                            Temp_object_Variable;                              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UStaticMesh*                            Temp_object_Variable_1;                            // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UStaticMesh*                            K2Node_Select_Default;                             // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bStateToChangeTo_OnStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_DAT_ServerRoomFloorLight_01_C_OnStateChanged;
+
+// Function BP_DAT_ServerRoomFloorLight_01.BP_DAT_ServerRoomFloorLight_01_C.ExecuteUbergraph_BP_DAT_ServerRoomFloorLight_01
+// 0x0008 (0x0008 - 0x0000)
+struct BP_DAT_ServerRoomFloorLight_01_C_ExecuteUbergraph_BP_DAT_ServerRoomFloorLight_01 final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bStateToChangeTo;                     // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bDoCosmetics;                         // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_DAT_ServerRoomFloorLight_01_C_ExecuteUbergraph_BP_DAT_ServerRoomFloorLight_01;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

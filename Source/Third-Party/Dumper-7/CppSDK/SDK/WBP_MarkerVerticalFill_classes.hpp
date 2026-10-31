@@ -26,9 +26,9 @@ public:
 	bool                                          HasProgress;                                       // 0x0348(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnDataSet(const class USBZMarkerDataAsset* InMarkerAsset);
-	void BP_OnProgressChanged(float NewProgress);
 	void ExecuteUbergraph_WBP_MarkerVerticalFill(int32 EntryPoint);
+	void BP_OnProgressChanged(float NewProgress_BP_OnProgressChanged);
+	void BP_OnDataSet(const class USBZMarkerDataAsset* InMarkerAsset_BP_OnDataSet);
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<UWBP_MarkerVerticalFill_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_MarkerVerticalFill_C;
 
 SDK_NAMESPACE_END

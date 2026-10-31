@@ -25,9 +25,9 @@ public:
 	class ALevelSequenceActor*                    C_RoadRage_Master_01_ExecuteUbergraph_C_ArmoredTransport_RefProperty; // 0x03D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_C_ArmoredTransport(int32 EntryPoint);
-	void IntroSequenceChanged(bool bIsStarted);
 	void OnIntroFinished();
+	void IntroSequenceChanged(bool bIsStarted_IntroSequenceChanged);
+	void ExecuteUbergraph_C_ArmoredTransport(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -43,5 +43,6 @@ public:
 		return GetDefaultObjImpl<AC_ArmoredTransport_C>();
 	}
 };
+DUMPER7_ASSERTS_AC_ArmoredTransport_C;
 
 SDK_NAMESPACE_END

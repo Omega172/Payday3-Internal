@@ -16,97 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_SleepingGasCanister_Location.BP_SleepingGasCanister_Location_C.BndEvt__BP_SleepingGasCanister_Location_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_SleepingGasCanister_Location.BP_SleepingGasCanister_Location_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_SleepingGasCanister_Location_C::BndEvt__BP_SleepingGasCanister_Location_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_SleepingGasCanister_Location_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SleepingGasCanister_Location_C", "BndEvt__BP_SleepingGasCanister_Location_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_SleepingGasCanister_Location_C_BndEvt__BP_SleepingGasCanister_Location_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SleepingGasCanister_Location.BP_SleepingGasCanister_Location_C.ExecuteUbergraph_BP_SleepingGasCanister_Location
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SleepingGasCanister_Location_C::ExecuteUbergraph_BP_SleepingGasCanister_Location(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SleepingGasCanister_Location_C", "ExecuteUbergraph_BP_SleepingGasCanister_Location");
-
-	Params::BP_SleepingGasCanister_Location_C_ExecuteUbergraph_BP_SleepingGasCanister_Location Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SleepingGasCanister_Location.BP_SleepingGasCanister_Location_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SleepingGasCanister_Location_C::OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SleepingGasCanister_Location_C", "OnStateChanged");
-
-	Params::BP_SleepingGasCanister_Location_C_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SleepingGasCanister_Location.BP_SleepingGasCanister_Location_C.Set_Interaction_OFF
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_SleepingGasCanister_Location_C::Set_Interaction_OFF()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SleepingGasCanister_Location_C", "Set_Interaction_OFF");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SleepingGasCanister_Location.BP_SleepingGasCanister_Location_C.Set_Interaction_ON
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_SleepingGasCanister_Location_C::Set_Interaction_ON()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SleepingGasCanister_Location_C", "Set_Interaction_ON");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -120,10 +36,8 @@ void ABP_SleepingGasCanister_Location_C::Set_Interaction_ON()
 
 void ABP_SleepingGasCanister_Location_C::setMeshVIsibilityAndCollision(class UPrimitiveComponent* Target, bool visible)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SleepingGasCanister_Location_C", "setMeshVIsibilityAndCollision");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setMeshVIsibilityAndCollision", FnName));
 
 	Params::BP_SleepingGasCanister_Location_C_setMeshVIsibilityAndCollision Parms{};
 
@@ -134,17 +48,89 @@ void ABP_SleepingGasCanister_Location_C::setMeshVIsibilityAndCollision(class UPr
 }
 
 
-// Function BP_SleepingGasCanister_Location.BP_SleepingGasCanister_Location_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_SleepingGasCanister_Location.BP_SleepingGasCanister_Location_C.Set_Interaction_ON
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_SleepingGasCanister_Location_C::UserConstructionScript()
+void ABP_SleepingGasCanister_Location_C::Set_Interaction_ON()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SleepingGasCanister_Location_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set_Interaction_ON", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SleepingGasCanister_Location.BP_SleepingGasCanister_Location_C.Set_Interaction_OFF
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_SleepingGasCanister_Location_C::Set_Interaction_OFF()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set_Interaction_OFF", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SleepingGasCanister_Location.BP_SleepingGasCanister_Location_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   OldState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SleepingGasCanister_Location_C::OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_SleepingGasCanister_Location_C_OnStateChanged Parms{};
+
+	Parms.OldState_OnStateChanged = OldState_OnStateChanged;
+	Parms.NewState_OnStateChanged = NewState_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SleepingGasCanister_Location.BP_SleepingGasCanister_Location_C.ExecuteUbergraph_BP_SleepingGasCanister_Location
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SleepingGasCanister_Location_C::ExecuteUbergraph_BP_SleepingGasCanister_Location(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_SleepingGasCanister_Location_C", "ExecuteUbergraph_BP_SleepingGasCanister_Location", FuncInfo);
+
+	Params::BP_SleepingGasCanister_Location_C_ExecuteUbergraph_BP_SleepingGasCanister_Location Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SleepingGasCanister_Location.BP_SleepingGasCanister_Location_C.BndEvt__BP_SleepingGasCanister_Location_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SleepingGasCanister_Location_C::BndEvt__BP_SleepingGasCanister_Location_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_SleepingGasCanister_Location_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_SleepingGasCanister_Location_C_BndEvt__BP_SleepingGasCanister_Location_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

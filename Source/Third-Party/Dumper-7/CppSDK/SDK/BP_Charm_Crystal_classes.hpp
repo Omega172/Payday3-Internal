@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Charm_Crystal_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Charm_Crystal_C;
 
 SDK_NAMESPACE_END

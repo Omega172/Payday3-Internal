@@ -28,12 +28,12 @@ public:
 	TArray<class UStaticMeshComponent*>           chargeMeshes;                                      // 0x06B8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void createChargeMeshes(bool outline);
-	void ExecuteUbergraph_BP_ArmorRepairKit(int32 EntryPoint);
-	void OnChargesChanged(float ChargesChangeTo, bool bDoCosmetics);
-	void OnThrown();
-	void ReceiveBeginPlay();
 	void UserConstructionScript();
+	void ReceiveBeginPlay();
+	void OnThrown();
+	void OnChargesChanged(float ChargesChangeTo, bool bDoCosmetics);
+	void ExecuteUbergraph_BP_ArmorRepairKit(int32 EntryPoint);
+	void createChargeMeshes(bool outline);
 
 public:
 	static class UClass* StaticClass()
@@ -49,5 +49,6 @@ public:
 		return GetDefaultObjImpl<ABP_ArmorRepairKit_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ArmorRepairKit_C;
 
 SDK_NAMESPACE_END

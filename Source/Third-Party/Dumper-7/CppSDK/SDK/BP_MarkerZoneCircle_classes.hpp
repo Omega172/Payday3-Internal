@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_MarkerZoneCircle_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_MarkerZoneCircle_C;
 
 SDK_NAMESPACE_END

@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_Chus_Cell_Door_Sliding_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Chus_Cell_Door_Sliding_01_C;
 
 SDK_NAMESPACE_END

@@ -64,22 +64,22 @@ public:
 	int32                                         hasFocus;                                          // 0x04DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_1_K2Node_ComponentBoundEvent_1_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
-	void BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_2_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
-	void BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_3_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
-	void BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_4_K2Node_ComponentBoundEvent_3_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
-	void BP_FlipSwitch(int32 Index_0, bool bDoCosmetics, bool bReset);
-	void BP_OnComplete(bool bWasSuccess);
-	void BP_OpenDoor(bool bDoCosmetics);
-	void BP_UpdateModelNumber(const class FText& ModelNumberText);
-	void DoorTimeline__FinishedFunc();
-	void DoorTimeline__UpdateFunc();
-	void ExecuteUbergraph_BP_ConnectedCableBox(int32 EntryPoint);
-	void focusUpdate(bool add, int32 index);
-	void ReceiveBeginPlay();
-	void SwitchTimeline__FinishedFunc();
-	void SwitchTimeline__UpdateFunc();
 	void UserConstructionScript();
+	void SwitchTimeline__UpdateFunc();
+	void SwitchTimeline__FinishedFunc();
+	void ReceiveBeginPlay();
+	void focusUpdate(bool add, int32 index);
+	void ExecuteUbergraph_BP_ConnectedCableBox(int32 EntryPoint);
+	void DoorTimeline__UpdateFunc();
+	void DoorTimeline__FinishedFunc();
+	void BP_UpdateModelNumber(const class FText& ModelNumberText_BP_UpdateModelNumber);
+	void BP_OpenDoor(bool bDoCosmetics_BP_OpenDoor);
+	void BP_OnComplete(bool bWasSuccess_BP_OnComplete);
+	void BP_FlipSwitch(int32 Index_BP_FlipSwitch, bool bDoCosmetics_BP_FlipSwitch, bool bReset_BP_FlipSwitch);
+	void BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_4_K2Node_ComponentBoundEvent_3_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
+	void BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_3_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
+	void BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_2_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
+	void BndEvt__BP_ConnectedCableBox_SBZInteractable_Cable_1_K2Node_ComponentBoundEvent_1_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
 
 public:
 	static class UClass* StaticClass()
@@ -95,5 +95,6 @@ public:
 		return GetDefaultObjImpl<ABP_ConnectedCableBox_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ConnectedCableBox_C;
 
 SDK_NAMESPACE_END

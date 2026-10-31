@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AA_Cookie_C>();
 	}
 };
+DUMPER7_ASSERTS_AA_Cookie_C;
 
 SDK_NAMESPACE_END

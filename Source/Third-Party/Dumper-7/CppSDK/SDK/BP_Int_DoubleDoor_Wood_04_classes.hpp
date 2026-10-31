@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Int_DoubleDoor_Wood_04_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Int_DoubleDoor_Wood_04_C;
 
 SDK_NAMESPACE_END

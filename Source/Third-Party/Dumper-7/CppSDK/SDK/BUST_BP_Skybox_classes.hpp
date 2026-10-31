@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABUST_BP_Skybox_C>();
 	}
 };
+DUMPER7_ASSERTS_ABUST_BP_Skybox_C;
 
 SDK_NAMESPACE_END

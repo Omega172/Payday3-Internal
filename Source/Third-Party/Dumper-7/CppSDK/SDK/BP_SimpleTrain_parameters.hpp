@@ -45,6 +45,7 @@ public:
 	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x02E0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Delay_Duration_ImplicitCast_1;            // 0x02E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_SimpleTrain_C_ExecuteUbergraph_BP_SimpleTrain;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

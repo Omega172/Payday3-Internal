@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ADataCenter_C>();
 	}
 };
+DUMPER7_ASSERTS_ADataCenter_C;
 
 SDK_NAMESPACE_END

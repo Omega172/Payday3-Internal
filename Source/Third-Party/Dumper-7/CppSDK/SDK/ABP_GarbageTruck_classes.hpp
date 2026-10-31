@@ -48,10 +48,10 @@ public:
 	class ABP_EscapeGarbageTruck_C*               Garbage_Truck;                                     // 0x1320(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnimGraph(struct FPoseLink* AnimGraph_0);
-	void BlueprintInitializeAnimation();
-	void BlueprintUpdateAnimation(float DeltaTimeX);
 	void ExecuteUbergraph_ABP_GarbageTruck(int32 EntryPoint);
+	void BlueprintUpdateAnimation(float DeltaTimeX_BlueprintUpdateAnimation);
+	void BlueprintInitializeAnimation();
+	void AnimGraph(struct FPoseLink* AnimGraph);
 
 public:
 	static class UClass* StaticClass()
@@ -67,5 +67,6 @@ public:
 		return GetDefaultObjImpl<UABP_GarbageTruck_C>();
 	}
 };
+DUMPER7_ASSERTS_UABP_GarbageTruck_C;
 
 SDK_NAMESPACE_END

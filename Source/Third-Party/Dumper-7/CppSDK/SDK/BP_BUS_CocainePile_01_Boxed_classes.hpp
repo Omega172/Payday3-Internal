@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_BUS_CocainePile_01_Boxed_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BUS_CocainePile_01_Boxed_C;
 
 SDK_NAMESPACE_END

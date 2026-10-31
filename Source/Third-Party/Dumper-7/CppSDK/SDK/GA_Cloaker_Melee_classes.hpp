@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGA_Cloaker_Melee_C>();
 	}
 };
+DUMPER7_ASSERTS_UGA_Cloaker_Melee_C;
 
 SDK_NAMESPACE_END

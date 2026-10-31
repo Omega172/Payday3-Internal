@@ -16,26 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_FOR_SewerLid_01.BP_FOR_SewerLid_01_C.ExecuteUbergraph_BP_FOR_SewerLid_01
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_FOR_SewerLid_01_C::ExecuteUbergraph_BP_FOR_SewerLid_01(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FOR_SewerLid_01_C", "ExecuteUbergraph_BP_FOR_SewerLid_01");
-
-	Params::BP_FOR_SewerLid_01_C_ExecuteUbergraph_BP_FOR_SewerLid_01 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_FOR_SewerLid_01.BP_FOR_SewerLid_01_C.setOpened
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -44,15 +24,31 @@ void ABP_FOR_SewerLid_01_C::ExecuteUbergraph_BP_FOR_SewerLid_01(int32 EntryPoint
 
 void ABP_FOR_SewerLid_01_C::setOpened(bool opened, bool animate)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FOR_SewerLid_01_C", "setOpened");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setOpened", FnName));
 
 	Params::BP_FOR_SewerLid_01_C_setOpened Parms{};
 
 	Parms.opened = opened;
 	Parms.animate = animate;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_FOR_SewerLid_01.BP_FOR_SewerLid_01_C.ExecuteUbergraph_BP_FOR_SewerLid_01
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_FOR_SewerLid_01_C::ExecuteUbergraph_BP_FOR_SewerLid_01(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_FOR_SewerLid_01_C", "ExecuteUbergraph_BP_FOR_SewerLid_01", FuncInfo);
+
+	Params::BP_FOR_SewerLid_01_C_ExecuteUbergraph_BP_FOR_SewerLid_01 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

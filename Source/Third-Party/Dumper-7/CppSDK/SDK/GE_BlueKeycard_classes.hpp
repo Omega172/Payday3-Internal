@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_BlueKeycard_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_BlueKeycard_C;
 
 SDK_NAMESPACE_END

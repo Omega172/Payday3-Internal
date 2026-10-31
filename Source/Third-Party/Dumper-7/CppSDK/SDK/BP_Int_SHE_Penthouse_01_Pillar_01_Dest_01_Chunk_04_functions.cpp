@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_Int_SHE_Penthouse_01_Pillar_01_Dest_01_Chunk_04.BP_Int_SHE_Penthouse_01_Pillar_01_Dest_01_Chunk_04_C.ExecuteUbergraph_BP_Int_SHE_Penthouse_01_Pillar_01_Dest_01_Chunk_04
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Int_SHE_Penthouse_01_Pillar_01_Dest_01_Chunk_04_C::ExecuteUbergraph_BP_Int_SHE_Penthouse_01_Pillar_01_Dest_01_Chunk_04(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Int_SHE_Penthouse_01_Pillar_01_Dest_01_Chunk_04_C", "ExecuteUbergraph_BP_Int_SHE_Penthouse_01_Pillar_01_Dest_01_Chunk_04", FuncInfo);
+
+	Params::BP_Int_SHE_Penthouse_01_Pillar_01_Dest_01_Chunk_04_C_ExecuteUbergraph_BP_Int_SHE_Penthouse_01_Pillar_01_Dest_01_Chunk_04 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_Int_SHE_Penthouse_01_Pillar_01_Dest_01_Chunk_04.BP_Int_SHE_Penthouse_01_Pillar_01_Dest_01_Chunk_04_C.BndEvt__BP_NeoClassical_Pillar_Destructible_Chunk_01_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -24,35 +42,13 @@ SDK_NAMESPACE_START
 
 void ABP_Int_SHE_Penthouse_01_Pillar_01_Dest_01_Chunk_04_C::BndEvt__BP_NeoClassical_Pillar_Destructible_Chunk_01_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Int_SHE_Penthouse_01_Pillar_01_Dest_01_Chunk_04_C", "BndEvt__BP_NeoClassical_Pillar_Destructible_Chunk_01_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_NeoClassical_Pillar_Destructible_Chunk_01_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature", FnName));
 
 	Params::BP_Int_SHE_Penthouse_01_Pillar_01_Dest_01_Chunk_04_C_BndEvt__BP_NeoClassical_Pillar_Destructible_Chunk_01_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature Parms{};
 
 	Parms.Type = Type;
 	Parms.HitContext = std::move(HitContext);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Int_SHE_Penthouse_01_Pillar_01_Dest_01_Chunk_04.BP_Int_SHE_Penthouse_01_Pillar_01_Dest_01_Chunk_04_C.ExecuteUbergraph_BP_Int_SHE_Penthouse_01_Pillar_01_Dest_01_Chunk_04
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Int_SHE_Penthouse_01_Pillar_01_Dest_01_Chunk_04_C::ExecuteUbergraph_BP_Int_SHE_Penthouse_01_Pillar_01_Dest_01_Chunk_04(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Int_SHE_Penthouse_01_Pillar_01_Dest_01_Chunk_04_C", "ExecuteUbergraph_BP_Int_SHE_Penthouse_01_Pillar_01_Dest_01_Chunk_04");
-
-	Params::BP_Int_SHE_Penthouse_01_Pillar_01_Dest_01_Chunk_04_C_ExecuteUbergraph_BP_Int_SHE_Penthouse_01_Pillar_01_Dest_01_Chunk_04 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "BP_BackItemBagBase_classes.hpp"
 #include "Engine_structs.hpp"
+#include "BP_BackItemBagBase_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -24,8 +24,8 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_BackItem_DegradingTech_C;        // 0x03B0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void BP_OnDegradationChanged(const int32 DegredationLevel);
 	void ExecuteUbergraph_BP_BackItem_DegradingTech(int32 EntryPoint);
+	void BP_OnDegradationChanged(const int32 DegredationLevel_BP_OnDegradationChanged);
 
 public:
 	static class UClass* StaticClass()
@@ -41,5 +41,6 @@ public:
 		return GetDefaultObjImpl<ABP_BackItem_DegradingTech_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BackItem_DegradingTech_C;
 
 SDK_NAMESPACE_END

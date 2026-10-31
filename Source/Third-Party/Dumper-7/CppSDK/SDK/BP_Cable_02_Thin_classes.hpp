@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Cable_02_Thin_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Cable_02_Thin_C;
 
 SDK_NAMESPACE_END

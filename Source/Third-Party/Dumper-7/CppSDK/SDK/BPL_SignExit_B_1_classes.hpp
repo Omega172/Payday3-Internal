@@ -20,7 +20,7 @@ SDK_NAMESPACE_START
 class BPL_SignExit_B_1::ABPL_SignExit_B_C final : public AActor
 {
 public:
-	class URectLightComponent*                    RectLight;                                         // 0x0328(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPointLightComponent*                   PointLight;                                        // 0x0328(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   SignExit_01;                                       // 0x0330(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0338(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<BPL_SignExit_B_1::ABPL_SignExit_B_C>();
 	}
 };
+DUMPER7_ASSERTS_BPL_SignExit_B_1__ABPL_SignExit_B_C;
 
 SDK_NAMESPACE_END

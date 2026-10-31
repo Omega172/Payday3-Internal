@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_Blowtorch_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_Blowtorch_C;
 
 SDK_NAMESPACE_END

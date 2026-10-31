@@ -16,79 +16,25 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_KeycardReaderBase.BP_KeycardReaderBase_C.BndEvt__BP_KeycardReaderBase_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// Function BP_KeycardReaderBase.BP_KeycardReaderBase_C.Timeline_0__UpdateFunc
 // (BlueprintEvent)
-// Parameters:
-// const class USBZBaseInteractableComponent*InteractableComponent_0                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_KeycardReaderBase_C::BndEvt__BP_KeycardReaderBase_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent_0, bool bInNewState)
+void ABP_KeycardReaderBase_C::Timeline_0__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__UpdateFunc", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_KeycardReaderBase_C", "BndEvt__BP_KeycardReaderBase_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature");
-
-	Params::BP_KeycardReaderBase_C_BndEvt__BP_KeycardReaderBase_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.InteractableComponent_0 = InteractableComponent_0;
-	Parms.bInNewState = bInNewState;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_KeycardReaderBase.BP_KeycardReaderBase_C.BP_OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// ESBZModuleActorState                    NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_KeycardReaderBase.BP_KeycardReaderBase_C.Timeline_0__FinishedFunc
+// (BlueprintEvent)
 
-void ABP_KeycardReaderBase_C::BP_OnStateChanged(ESBZModuleActorState NewState, bool bDoCosmetics)
+void ABP_KeycardReaderBase_C::Timeline_0__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_KeycardReaderBase_C", "BP_OnStateChanged");
-
-	Params::BP_KeycardReaderBase_C_BP_OnStateChanged Parms{};
-
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_KeycardReaderBase.BP_KeycardReaderBase_C.ExecuteUbergraph_BP_KeycardReaderBase
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_KeycardReaderBase_C::ExecuteUbergraph_BP_KeycardReaderBase(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_KeycardReaderBase_C", "ExecuteUbergraph_BP_KeycardReaderBase");
-
-	Params::BP_KeycardReaderBase_C_ExecuteUbergraph_BP_KeycardReaderBase Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_KeycardReaderBase.BP_KeycardReaderBase_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_KeycardReaderBase_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_KeycardReaderBase_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__FinishedFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -103,10 +49,8 @@ void ABP_KeycardReaderBase_C::ReceiveBeginPlay()
 
 void ABP_KeycardReaderBase_C::SetPrimitiveAndVisability(class UPrimitiveComponent* StaticMesh_0, class USceneComponent* Text, double Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_KeycardReaderBase_C", "SetPrimitiveAndVisability");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetPrimitiveAndVisability", FnName));
 
 	Params::BP_KeycardReaderBase_C_SetPrimitiveAndVisability Parms{};
 
@@ -118,31 +62,73 @@ void ABP_KeycardReaderBase_C::SetPrimitiveAndVisability(class UPrimitiveComponen
 }
 
 
-// Function BP_KeycardReaderBase.BP_KeycardReaderBase_C.Timeline_0__FinishedFunc
-// (BlueprintEvent)
+// Function BP_KeycardReaderBase.BP_KeycardReaderBase_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_KeycardReaderBase_C::Timeline_0__FinishedFunc()
+void ABP_KeycardReaderBase_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_KeycardReaderBase_C", "Timeline_0__FinishedFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_KeycardReaderBase.BP_KeycardReaderBase_C.Timeline_0__UpdateFunc
-// (BlueprintEvent)
+// Function BP_KeycardReaderBase.BP_KeycardReaderBase_C.ExecuteUbergraph_BP_KeycardReaderBase
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_KeycardReaderBase_C::Timeline_0__UpdateFunc()
+void ABP_KeycardReaderBase_C::ExecuteUbergraph_BP_KeycardReaderBase(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_KeycardReaderBase_C", "ExecuteUbergraph_BP_KeycardReaderBase", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_KeycardReaderBase_C", "Timeline_0__UpdateFunc");
+	Params::BP_KeycardReaderBase_C_ExecuteUbergraph_BP_KeycardReaderBase Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_KeycardReaderBase.BP_KeycardReaderBase_C.BP_OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZModuleActorState                    NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_KeycardReaderBase_C::BP_OnStateChanged(ESBZModuleActorState NewState, bool bDoCosmetics)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnStateChanged", FnName));
+
+	Params::BP_KeycardReaderBase_C_BP_OnStateChanged Parms{};
+
+	Parms.NewState = NewState;
+	Parms.bDoCosmetics = bDoCosmetics;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_KeycardReaderBase.BP_KeycardReaderBase_C.BndEvt__BP_KeycardReaderBase_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// const class USBZBaseInteractableComponent*InteractableComponent_0                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_KeycardReaderBase_C::BndEvt__BP_KeycardReaderBase_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent_0, bool bInNewState)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_KeycardReaderBase_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature", FnName));
+
+	Params::BP_KeycardReaderBase_C_BndEvt__BP_KeycardReaderBase_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
+
+	Parms.InteractableComponent_0 = InteractableComponent_0;
+	Parms.bInNewState = bInNewState;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

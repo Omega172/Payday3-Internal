@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AE_JewelryStore_Ext_Alley_Prop_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_JewelryStore_Ext_Alley_Prop_C;
 
 SDK_NAMESPACE_END

@@ -16,53 +16,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function G_Chus_RobberVO.G_Chus_RobberVO_C.BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Forward1_K2Node_ActorBoundEvent_4_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Chus_RobberVO_C_BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Forward1_K2Node_ActorBoundEvent_4_SBZPawnDynamicDelegate__DelegateSignature final
+// Function G_Chus_RobberVO.G_Chus_RobberVO_C.HeistStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct G_Chus_RobberVO_C_HeistStateChanged final
 {
 public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                OldHeistState_HeistStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CurrentHeistState_HeistStateChanged;               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function G_Chus_RobberVO.G_Chus_RobberVO_C.BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Right1_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Chus_RobberVO_C_BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Right1_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_RobberVO.G_Chus_RobberVO_C.BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Upstairs1_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Chus_RobberVO_C_BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Upstairs1_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_RobberVO.G_Chus_RobberVO_C.BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume6_2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Chus_RobberVO_C_BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume6_2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_RobberVO.G_Chus_RobberVO_C.BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume7_5_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Chus_RobberVO_C_BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume7_5_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Chus_RobberVO.G_Chus_RobberVO_C.BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume8_2_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Chus_RobberVO_C_BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume8_2_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_G_Chus_RobberVO_C_HeistStateChanged;
 
 // Function G_Chus_RobberVO.G_Chus_RobberVO_C.ExecuteUbergraph_G_Chus_RobberVO
 // 0x0048 (0x0048 - 0x0000)
@@ -84,15 +46,61 @@ public:
 	class APawn*                                  K2Node_ActorBoundEvent_Pawn_1;                     // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APawn*                                  K2Node_ActorBoundEvent_Pawn;                       // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Chus_RobberVO_C_ExecuteUbergraph_G_Chus_RobberVO;
 
-// Function G_Chus_RobberVO.G_Chus_RobberVO_C.HeistStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct G_Chus_RobberVO_C_HeistStateChanged final
+// Function G_Chus_RobberVO.G_Chus_RobberVO_C.BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume8_2_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Chus_RobberVO_C_BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume8_2_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature final
 {
 public:
-	EPD3HeistState                                OldHeistState;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CurrentHeistState;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Chus_RobberVO_C_BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume8_2_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Chus_RobberVO.G_Chus_RobberVO_C.BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume7_5_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Chus_RobberVO_C_BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume7_5_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_RobberVO_C_BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume7_5_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Chus_RobberVO.G_Chus_RobberVO_C.BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume6_2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Chus_RobberVO_C_BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume6_2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_RobberVO_C_BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume6_2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Chus_RobberVO.G_Chus_RobberVO_C.BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Upstairs1_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Chus_RobberVO_C_BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Upstairs1_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_RobberVO_C_BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Upstairs1_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Chus_RobberVO.G_Chus_RobberVO_C.BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Right1_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Chus_RobberVO_C_BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Right1_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_RobberVO_C_BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Right1_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Chus_RobberVO.G_Chus_RobberVO_C.BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Forward1_K2Node_ActorBoundEvent_4_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Chus_RobberVO_C_BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Forward1_K2Node_ActorBoundEvent_4_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Chus_RobberVO_C_BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Forward1_K2Node_ActorBoundEvent_4_SBZPawnDynamicDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

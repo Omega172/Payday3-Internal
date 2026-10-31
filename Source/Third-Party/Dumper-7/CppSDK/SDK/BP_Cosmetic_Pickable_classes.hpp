@@ -26,9 +26,9 @@ public:
 	class USceneComponent*                        Root;                                              // 0x0368(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_Cosmetic_Pickable(int32 EntryPoint);
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
 	void HandleTagActive(const struct FGameplayTag& EventTag, bool bActive);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
+	void ExecuteUbergraph_BP_Cosmetic_Pickable(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<ABP_Cosmetic_Pickable_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Cosmetic_Pickable_C;
 
 SDK_NAMESPACE_END

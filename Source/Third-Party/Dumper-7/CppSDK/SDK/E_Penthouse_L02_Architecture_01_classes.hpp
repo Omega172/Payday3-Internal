@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AE_Penthouse_L02_Architecture_01_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_Penthouse_L02_Architecture_01_C;
 
 SDK_NAMESPACE_END

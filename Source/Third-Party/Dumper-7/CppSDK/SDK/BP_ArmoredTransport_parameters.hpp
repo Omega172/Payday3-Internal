@@ -10,30 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "AkAudio_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "AkAudio_structs.hpp"
 #include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
-
-// Function BP_ArmoredTransport.BP_ArmoredTransport_C.BP_OnEscortModeChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_ArmoredTransport_C_BP_OnEscortModeChanged final
-{
-public:
-	bool                                          bEnabled;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_ArmoredTransport.BP_ArmoredTransport_C.BP_OnPlayersInEscortChanged
-// 0x0004 (0x0004 - 0x0000)
-struct BP_ArmoredTransport_C_BP_OnPlayersInEscortChanged final
-{
-public:
-	int32                                         PlayersEscorting;                                  // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
 
 // Function BP_ArmoredTransport.BP_ArmoredTransport_C.ExecuteUbergraph_BP_ArmoredTransport
 // 0x04A0 (0x04A0 - 0x0000)
@@ -89,6 +72,26 @@ public:
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue_2;          // 0x049C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue_3;          // 0x049D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ArmoredTransport_C_ExecuteUbergraph_BP_ArmoredTransport;
+
+// Function BP_ArmoredTransport.BP_ArmoredTransport_C.BP_OnPlayersInEscortChanged
+// 0x0004 (0x0004 - 0x0000)
+struct BP_ArmoredTransport_C_BP_OnPlayersInEscortChanged final
+{
+public:
+	int32                                         PlayersEscorting_BP_OnPlayersInEscortChanged;      // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ArmoredTransport_C_BP_OnPlayersInEscortChanged;
+
+// Function BP_ArmoredTransport.BP_ArmoredTransport_C.BP_OnEscortModeChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_ArmoredTransport_C_BP_OnEscortModeChanged final
+{
+public:
+	bool                                          bEnabled_BP_OnEscortModeChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_BP_OnEscortModeChanged;               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ArmoredTransport_C_BP_OnEscortModeChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

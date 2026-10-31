@@ -29,9 +29,9 @@ public:
 	TArray<class UStaticMeshComponent*>           meshesToRemove;                                    // 0x0400(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void ExecuteUbergraph_BP_SewerBars(int32 EntryPoint);
-	void OnCutCompleted();
 	void setInteraction(bool bEnabled);
+	void OnCutCompleted();
+	void ExecuteUbergraph_BP_SewerBars(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -47,5 +47,6 @@ public:
 		return GetDefaultObjImpl<ABP_SewerBars_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SewerBars_C;
 
 SDK_NAMESPACE_END

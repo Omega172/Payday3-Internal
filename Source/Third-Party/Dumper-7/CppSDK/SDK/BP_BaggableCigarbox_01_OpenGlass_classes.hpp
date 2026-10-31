@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_BaggableCigarbox_01_OpenGlass_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BaggableCigarbox_01_OpenGlass_C;
 
 SDK_NAMESPACE_END

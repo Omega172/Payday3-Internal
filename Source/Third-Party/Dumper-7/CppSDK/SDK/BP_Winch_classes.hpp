@@ -49,17 +49,17 @@ public:
 	struct FRotator                               hookGrabbedOffset;                                 // 0x0658(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void addMarkerToComponent(class USceneComponent* Component, const class USBZMarkerDataAsset* MarkerDataAsset);
-	void BP_OnStateChanged(ESBZBreachingEquipmentState OldState, ESBZBreachingEquipmentState NewState, bool bDoCosmetics);
-	void BP_OnWinchStateChanged(ESBZWinchState OldState, ESBZWinchState NewState, bool bDoCosmetics);
-	void cableTension__FinishedFunc();
-	void cableTension__UpdateFunc();
-	void checkProgressionEvents();
-	void ExecuteUbergraph_BP_Winch(int32 EntryPoint);
-	void ReceiveBeginPlay();
-	void setCableAndHookVisibilityState(int32 state);
-	void SetHookInteractionEnabled(bool bInEnabled);
 	void UserConstructionScript();
+	void SetHookInteractionEnabled(bool bInEnabled);
+	void setCableAndHookVisibilityState(int32 state);
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_Winch(int32 EntryPoint);
+	void checkProgressionEvents();
+	void cableTension__UpdateFunc();
+	void cableTension__FinishedFunc();
+	void BP_OnWinchStateChanged(ESBZWinchState OldState, ESBZWinchState NewState, bool bDoCosmetics);
+	void BP_OnStateChanged(ESBZBreachingEquipmentState OldState, ESBZBreachingEquipmentState NewState, bool bDoCosmetics);
+	void addMarkerToComponent(class USceneComponent* Component, const class USBZMarkerDataAsset* MarkerDataAsset);
 
 public:
 	static class UClass* StaticClass()
@@ -75,5 +75,6 @@ public:
 		return GetDefaultObjImpl<ABP_Winch_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Winch_C;
 
 SDK_NAMESPACE_END

@@ -36,13 +36,13 @@ public:
 	TArray<double>                                Values;                                            // 0x0418(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void BndEvt__BP_KeycardReaderBase_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent_0, bool bInNewState);
-	void BP_OnStateChanged(ESBZModuleActorState NewState, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_KeycardReaderBase(int32 EntryPoint);
-	void ReceiveBeginPlay();
-	void SetPrimitiveAndVisability(class UPrimitiveComponent* StaticMesh_0, class USceneComponent* Text, double Value);
-	void Timeline_0__FinishedFunc();
 	void Timeline_0__UpdateFunc();
+	void Timeline_0__FinishedFunc();
+	void SetPrimitiveAndVisability(class UPrimitiveComponent* StaticMesh_0, class USceneComponent* Text, double Value);
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_KeycardReaderBase(int32 EntryPoint);
+	void BP_OnStateChanged(ESBZModuleActorState NewState, bool bDoCosmetics);
+	void BndEvt__BP_KeycardReaderBase_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent_0, bool bInNewState);
 
 public:
 	static class UClass* StaticClass()
@@ -58,5 +58,6 @@ public:
 		return GetDefaultObjImpl<ABP_KeycardReaderBase_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_KeycardReaderBase_C;
 
 SDK_NAMESPACE_END

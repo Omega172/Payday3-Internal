@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_ShippingContainer_01_CardReaderLockBase.BP_ShippingContainer_01_CardReaderLockBase_C.ExecuteUbergraph_BP_ShippingContainer_01_CardReaderLockBase
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ShippingContainer_01_CardReaderLockBase_C::ExecuteUbergraph_BP_ShippingContainer_01_CardReaderLockBase(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ShippingContainer_01_CardReaderLockBase_C", "ExecuteUbergraph_BP_ShippingContainer_01_CardReaderLockBase", FuncInfo);
+
+	Params::BP_ShippingContainer_01_CardReaderLockBase_C_ExecuteUbergraph_BP_ShippingContainer_01_CardReaderLockBase Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_ShippingContainer_01_CardReaderLockBase.BP_ShippingContainer_01_CardReaderLockBase_C.BP_OnStateChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -24,35 +42,13 @@ SDK_NAMESPACE_START
 
 void ABP_ShippingContainer_01_CardReaderLockBase_C::BP_OnStateChanged(ESBZModuleActorState NewState, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShippingContainer_01_CardReaderLockBase_C", "BP_OnStateChanged");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnStateChanged", FnName));
 
 	Params::BP_ShippingContainer_01_CardReaderLockBase_C_BP_OnStateChanged Parms{};
 
 	Parms.NewState = NewState;
 	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ShippingContainer_01_CardReaderLockBase.BP_ShippingContainer_01_CardReaderLockBase_C.ExecuteUbergraph_BP_ShippingContainer_01_CardReaderLockBase
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ShippingContainer_01_CardReaderLockBase_C::ExecuteUbergraph_BP_ShippingContainer_01_CardReaderLockBase(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShippingContainer_01_CardReaderLockBase_C", "ExecuteUbergraph_BP_ShippingContainer_01_CardReaderLockBase");
-
-	Params::BP_ShippingContainer_01_CardReaderLockBase_C_ExecuteUbergraph_BP_ShippingContainer_01_CardReaderLockBase Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

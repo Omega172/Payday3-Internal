@@ -24,15 +24,15 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT49_8_K2Node_ActorBoundEvent_0_onGlassDestroyed__DelegateSignature();
-	void BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT50_9_K2Node_ActorBoundEvent_3_onGlassDestroyed__DelegateSignature();
-	void BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT51_16_K2Node_ActorBoundEvent_5_onGlassDestroyed__DelegateSignature();
-	void BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT52_10_K2Node_ActorBoundEvent_2_onGlassDestroyed__DelegateSignature();
-	void BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT53_11_K2Node_ActorBoundEvent_1_onGlassDestroyed__DelegateSignature();
-	void BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT54_K2Node_ActorBoundEvent_7_onGlassDestroyed__DelegateSignature();
-	void BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT55_K2Node_ActorBoundEvent_6_onGlassDestroyed__DelegateSignature();
-	void BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT56_K2Node_ActorBoundEvent_4_onGlassDestroyed__DelegateSignature();
 	void ExecuteUbergraph_E_Shiya_EXT_Street_Arch(int32 EntryPoint);
+	void BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT56_K2Node_ActorBoundEvent_4_onGlassDestroyed__DelegateSignature();
+	void BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT55_K2Node_ActorBoundEvent_6_onGlassDestroyed__DelegateSignature();
+	void BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT54_K2Node_ActorBoundEvent_7_onGlassDestroyed__DelegateSignature();
+	void BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT53_11_K2Node_ActorBoundEvent_1_onGlassDestroyed__DelegateSignature();
+	void BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT52_10_K2Node_ActorBoundEvent_2_onGlassDestroyed__DelegateSignature();
+	void BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT51_16_K2Node_ActorBoundEvent_5_onGlassDestroyed__DelegateSignature();
+	void BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT50_9_K2Node_ActorBoundEvent_3_onGlassDestroyed__DelegateSignature();
+	void BndEvt__E_Shiya_EXT_Street_Arch_BP_IGl_BRE_ATT_2HIT49_8_K2Node_ActorBoundEvent_0_onGlassDestroyed__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()
@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<AE_Shiya_EXT_Street_Arch_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_Shiya_EXT_Street_Arch_C;
 
 SDK_NAMESPACE_END

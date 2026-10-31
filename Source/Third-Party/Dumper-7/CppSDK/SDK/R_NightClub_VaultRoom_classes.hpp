@@ -35,25 +35,25 @@ public:
 	class ASBZWaypoint*                           SBZWaypointVaultDoor_ExecuteUbergraph_R_NightClub_VaultRoom_RefProperty; // 0x0400(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__R_NightClub_VaultRoom_BP_Int_Door_01_SmallVault_01_2_K2Node_ActorBoundEvent_4_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State);
-	void BndEvt__R_NightClub_VaultRoom_BP_InteractableMoneyPile11_K2Node_ActorBoundEvent_13_SBZBagPickedUp__DelegateSignature();
-	void BndEvt__R_NightClub_VaultRoom_BP_InteractableMoneyPile3_K2Node_ActorBoundEvent_5_SBZBagPickedUp__DelegateSignature();
-	void BndEvt__R_NightClub_VaultRoom_BP_InteractableMoneyPile5_K2Node_ActorBoundEvent_1_SBZBagPickedUp__DelegateSignature();
-	void BndEvt__R_NightClub_VaultRoom_BP_InteractableMoneyPile6_K2Node_ActorBoundEvent_0_SBZBagPickedUp__DelegateSignature();
-	void BndEvt__R_NightClub_VaultRoom_BP_InteractableMoneyPile7_K2Node_ActorBoundEvent_9_SBZBagPickedUp__DelegateSignature();
-	void BndEvt__R_NightClub_VaultRoom_BP_InteractableMoneyPile_2_K2Node_ActorBoundEvent_3_SBZBagPickedUp__DelegateSignature();
-	void BndEvt__R_NightClub_VaultRoom_SBZPlayerTriggerVolume_PlayerFoundVaultRoom_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void ExecuteUbergraph_R_NightClub_VaultRoom(int32 EntryPoint);
-	void OverrideVaultDoor();
-	void ReceiveBeginPlay();
-	void RemoveVaultDoorWP();
-	void RemoveVaultLootWP();
-	void RemoveVaultRoomWP();
-	void RemoveVaultWP();
-	void ShowVaultDoorWP();
-	void ShowVaultLootWP();
-	void ShowVaultRoomWP();
 	void ShowVaultWP();
+	void ShowVaultRoomWP();
+	void ShowVaultLootWP();
+	void ShowVaultDoorWP();
+	void RemoveVaultWP();
+	void RemoveVaultRoomWP();
+	void RemoveVaultLootWP();
+	void RemoveVaultDoorWP();
+	void ReceiveBeginPlay();
+	void OverrideVaultDoor();
+	void ExecuteUbergraph_R_NightClub_VaultRoom(int32 EntryPoint);
+	void BndEvt__R_NightClub_VaultRoom_SBZPlayerTriggerVolume_PlayerFoundVaultRoom_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__R_NightClub_VaultRoom_BP_InteractableMoneyPile_2_K2Node_ActorBoundEvent_3_SBZBagPickedUp__DelegateSignature();
+	void BndEvt__R_NightClub_VaultRoom_BP_InteractableMoneyPile7_K2Node_ActorBoundEvent_9_SBZBagPickedUp__DelegateSignature();
+	void BndEvt__R_NightClub_VaultRoom_BP_InteractableMoneyPile6_K2Node_ActorBoundEvent_0_SBZBagPickedUp__DelegateSignature();
+	void BndEvt__R_NightClub_VaultRoom_BP_InteractableMoneyPile5_K2Node_ActorBoundEvent_1_SBZBagPickedUp__DelegateSignature();
+	void BndEvt__R_NightClub_VaultRoom_BP_InteractableMoneyPile3_K2Node_ActorBoundEvent_5_SBZBagPickedUp__DelegateSignature();
+	void BndEvt__R_NightClub_VaultRoom_BP_InteractableMoneyPile11_K2Node_ActorBoundEvent_13_SBZBagPickedUp__DelegateSignature();
+	void BndEvt__R_NightClub_VaultRoom_BP_Int_Door_01_SmallVault_01_2_K2Node_ActorBoundEvent_4_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State);
 
 public:
 	static class UClass* StaticClass()
@@ -69,5 +69,6 @@ public:
 		return GetDefaultObjImpl<AR_NightClub_VaultRoom_C>();
 	}
 };
+DUMPER7_ASSERTS_AR_NightClub_VaultRoom_C;
 
 SDK_NAMESPACE_END

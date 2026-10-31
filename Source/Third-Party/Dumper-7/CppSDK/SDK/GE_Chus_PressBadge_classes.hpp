@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_Chus_PressBadge_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_Chus_PressBadge_C;
 
 SDK_NAMESPACE_END

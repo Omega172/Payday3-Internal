@@ -16,25 +16,27 @@
 
 SDK_NAMESPACE_START
 
-// Function cosmetic_damage_trigger.cosmetic_damage_trigger_C.BndEvt__comsetic_damage_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// ESBZCosmeticDestructionType             Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZCosmeticDestructionContext&HitContext                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// Function cosmetic_damage_trigger.cosmetic_damage_trigger_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void Acosmetic_damage_trigger_C::BndEvt__comsetic_damage_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)
+void Acosmetic_damage_trigger_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("cosmetic_damage_trigger_C", "BndEvt__comsetic_damage_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::cosmetic_damage_trigger_C_BndEvt__comsetic_damage_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature Parms{};
 
-	Parms.Type = Type;
-	Parms.HitContext = std::move(HitContext);
+// Function cosmetic_damage_trigger.cosmetic_damage_trigger_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-	UObject::ProcessEvent(Func, &Parms);
+void Acosmetic_damage_trigger_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -45,10 +47,8 @@ void Acosmetic_damage_trigger_C::BndEvt__comsetic_damage_SBZCosmeticDestruction_
 
 void Acosmetic_damage_trigger_C::ExecuteUbergraph_cosmetic_damage_trigger(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("cosmetic_damage_trigger_C", "ExecuteUbergraph_cosmetic_damage_trigger");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "cosmetic_damage_trigger_C", "ExecuteUbergraph_cosmetic_damage_trigger", FuncInfo);
 
 	Params::cosmetic_damage_trigger_C_ExecuteUbergraph_cosmetic_damage_trigger Parms{};
 
@@ -58,31 +58,23 @@ void Acosmetic_damage_trigger_C::ExecuteUbergraph_cosmetic_damage_trigger(int32 
 }
 
 
-// Function cosmetic_damage_trigger.cosmetic_damage_trigger_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function cosmetic_damage_trigger.cosmetic_damage_trigger_C.BndEvt__comsetic_damage_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// ESBZCosmeticDestructionType             Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZCosmeticDestructionContext&HitContext                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 
-void Acosmetic_damage_trigger_C::ReceiveBeginPlay()
+void Acosmetic_damage_trigger_C::BndEvt__comsetic_damage_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__comsetic_damage_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("cosmetic_damage_trigger_C", "ReceiveBeginPlay");
+	Params::cosmetic_damage_trigger_C_BndEvt__comsetic_damage_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Parms.Type = Type;
+	Parms.HitContext = std::move(HitContext);
 
-
-// Function cosmetic_damage_trigger.cosmetic_damage_trigger_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void Acosmetic_damage_trigger_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("cosmetic_damage_trigger_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

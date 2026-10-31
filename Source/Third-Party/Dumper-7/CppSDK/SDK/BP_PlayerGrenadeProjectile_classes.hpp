@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_PlayerGrenadeProjectile.BP_PlayerGrenadeProjectile_C
-// 0x0000 (0x8DD8 - 0x8DD8)
+// 0x0000 (0x0638 - 0x0638)
 class ABP_PlayerGrenadeProjectile_C final : public ASBZPlayerMambaGrenadeProjectile
 {
 public:
@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_PlayerGrenadeProjectile_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PlayerGrenadeProjectile_C;
 
 SDK_NAMESPACE_END

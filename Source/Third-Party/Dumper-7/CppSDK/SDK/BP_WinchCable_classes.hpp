@@ -25,10 +25,10 @@ public:
 	class USBZCableComponent*                     SBZCable;                                          // 0x0330(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_WinchCable(int32 EntryPoint);
-	void ReceiveBeginPlay();
-	void SetupCable(const struct FVector& FloorLocation);
 	void SetWinchUpActive(class ASBZAerialVehicle* Helicopter, class FName WinchSocketName, bool Active);
+	void SetupCable(const struct FVector& FloorLocation);
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_WinchCable(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<ABP_WinchCable_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_WinchCable_C;
 
 SDK_NAMESPACE_END

@@ -16,39 +16,17 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_VentGasVolumeDamage.BP_VentGasVolumeDamage_C.GetVolumeDamageAddedTagContainer
+// Function BP_VentGasVolumeDamage.BP_VentGasVolumeDamage_C.GetVolumeDamageType
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// struct FGameplayTagContainer            ReturnValue                                            (Parm, OutParm, ReturnParm)
+// TSubclassOf<class USBZDamageType>       ReturnValue_GetVolumeDamageType                        (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 
-struct FGameplayTagContainer ABP_VentGasVolumeDamage_C::GetVolumeDamageAddedTagContainer() const
+TSubclassOf<class USBZDamageType> ABP_VentGasVolumeDamage_C::GetVolumeDamageType() const
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetVolumeDamageType", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VentGasVolumeDamage_C", "GetVolumeDamageAddedTagContainer");
-
-	Params::BP_VentGasVolumeDamage_C_GetVolumeDamageAddedTagContainer Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function BP_VentGasVolumeDamage.BP_VentGasVolumeDamage_C.GetVolumeDamagePerSecond
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
-// Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-float ABP_VentGasVolumeDamage_C::GetVolumeDamagePerSecond() const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VentGasVolumeDamage_C", "GetVolumeDamagePerSecond");
-
-	Params::BP_VentGasVolumeDamage_C_GetVolumeDamagePerSecond Parms{};
+	Params::BP_VentGasVolumeDamage_C_GetVolumeDamageType Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -59,14 +37,12 @@ float ABP_VentGasVolumeDamage_C::GetVolumeDamagePerSecond() const
 // Function BP_VentGasVolumeDamage.BP_VentGasVolumeDamage_C.GetVolumeDamageTickSeconds
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   ReturnValue_GetVolumeDamageTickSeconds                 (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 float ABP_VentGasVolumeDamage_C::GetVolumeDamageTickSeconds() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VentGasVolumeDamage_C", "GetVolumeDamageTickSeconds");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetVolumeDamageTickSeconds", FnName));
 
 	Params::BP_VentGasVolumeDamage_C_GetVolumeDamageTickSeconds Parms{};
 
@@ -76,19 +52,35 @@ float ABP_VentGasVolumeDamage_C::GetVolumeDamageTickSeconds() const
 }
 
 
-// Function BP_VentGasVolumeDamage.BP_VentGasVolumeDamage_C.GetVolumeDamageType
+// Function BP_VentGasVolumeDamage.BP_VentGasVolumeDamage_C.GetVolumeDamagePerSecond
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// TSubclassOf<class USBZDamageType>       ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
+// float                                   ReturnValue_GetVolumeDamagePerSecond                   (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-TSubclassOf<class USBZDamageType> ABP_VentGasVolumeDamage_C::GetVolumeDamageType() const
+float ABP_VentGasVolumeDamage_C::GetVolumeDamagePerSecond() const
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetVolumeDamagePerSecond", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VentGasVolumeDamage_C", "GetVolumeDamageType");
+	Params::BP_VentGasVolumeDamage_C_GetVolumeDamagePerSecond Parms{};
 
-	Params::BP_VentGasVolumeDamage_C_GetVolumeDamageType Parms{};
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_VentGasVolumeDamage.BP_VentGasVolumeDamage_C.GetVolumeDamageAddedTagContainer
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
+// Parameters:
+// struct FGameplayTagContainer            ReturnValue_GetVolumeDamageAddedTagContainer           (Parm, OutParm, ReturnParm)
+
+struct FGameplayTagContainer ABP_VentGasVolumeDamage_C::GetVolumeDamageAddedTagContainer() const
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetVolumeDamageAddedTagContainer", FnName));
+
+	Params::BP_VentGasVolumeDamage_C_GetVolumeDamageAddedTagContainer Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 

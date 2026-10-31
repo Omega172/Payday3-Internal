@@ -16,6 +16,26 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_Cosmetic_Pickable.BP_Cosmetic_Pickable_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_Cosmetic_Pickable_C_OnStateChanged final
+{
+public:
+	bool                                          bStateToChangeTo_OnStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Cosmetic_Pickable_C_OnStateChanged;
+
+// Function BP_Cosmetic_Pickable.BP_Cosmetic_Pickable_C.HandleTagActive
+// 0x0010 (0x0010 - 0x0000)
+struct BP_Cosmetic_Pickable_C_HandleTagActive final
+{
+public:
+	struct FGameplayTag                           EventTag;                                          // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+	bool                                          bActive;                                           // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Cosmetic_Pickable_C_HandleTagActive;
+
 // Function BP_Cosmetic_Pickable.BP_Cosmetic_Pickable_C.ExecuteUbergraph_BP_Cosmetic_Pickable
 // 0x0018 (0x0018 - 0x0000)
 struct BP_Cosmetic_Pickable_C_ExecuteUbergraph_BP_Cosmetic_Pickable final
@@ -32,24 +52,7 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_MatchesTag_ReturnValue;                   // 0x0017(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_Cosmetic_Pickable.BP_Cosmetic_Pickable_C.HandleTagActive
-// 0x0010 (0x0010 - 0x0000)
-struct BP_Cosmetic_Pickable_C_HandleTagActive final
-{
-public:
-	struct FGameplayTag                           EventTag;                                          // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor, HasGetValueTypeHash)
-	bool                                          bActive;                                           // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_Cosmetic_Pickable.BP_Cosmetic_Pickable_C.OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_Cosmetic_Pickable_C_OnStateChanged final
-{
-public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_Cosmetic_Pickable_C_ExecuteUbergraph_BP_Cosmetic_Pickable;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

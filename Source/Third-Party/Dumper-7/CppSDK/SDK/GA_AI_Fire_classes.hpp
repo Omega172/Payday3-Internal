@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass GA_AI_Fire.GA_AI_Fire_C
-// 0x0000 (0x8CE8 - 0x8CE8)
+// 0x0000 (0x0548 - 0x0548)
 class UGA_AI_Fire_C final : public USBZAIFireRangedWeaponAbility
 {
 public:
@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGA_AI_Fire_C>();
 	}
 };
+DUMPER7_ASSERTS_UGA_AI_Fire_C;
 
 SDK_NAMESPACE_END

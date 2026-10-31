@@ -21,10 +21,10 @@ SDK_NAMESPACE_START
 class UBP_HelperLibrary_C final : public UBlueprintFunctionLibrary
 {
 public:
-	static void GlassHit(class UStaticMeshComponent* HitMesh, int32 VariationIndex, double VariationSetting, class UAkAudioEvent* Sound, bool bDoCosmetics, bool bDestroyed, int32 ParticleCount, double ParticleSize, const struct FLinearColor& ParticleColor, class APawn* Instigator, class UObject* __WorldContext);
-	static void GlassHit_MultiVFX(class UStaticMeshComponent* HitMesh, int32 VariationIndex, double VariationSetting, class UAkAudioEvent* Sound, bool bDoCosmetics, bool bDestroyed, class APawn* Instigator, TArray<struct FBPS_GlassHit_VFXData>& VFX, class UObject* __WorldContext);
-	static void Set_All_Players_Ignore_Start_Penetrating(class AActor* Target, bool ShouldIgnore, class UObject* __WorldContext);
 	static void SetMeshIfValid(class UStaticMeshComponent* StaticMeshComponent, class UStaticMesh* NewStaticMesh, class UObject* __WorldContext);
+	static void Set_All_Players_Ignore_Start_Penetrating(class AActor* Target, bool ShouldIgnore, class UObject* __WorldContext);
+	static void GlassHit_MultiVFX(class UStaticMeshComponent* HitMesh, int32 VariationIndex, double VariationSetting, class UAkAudioEvent* Sound, bool bDoCosmetics, bool bDestroyed, class APawn* Instigator, TArray<struct FBPS_GlassHit_VFXData>& VFX, class UObject* __WorldContext);
+	static void GlassHit(class UStaticMeshComponent* HitMesh, int32 VariationIndex, double VariationSetting, class UAkAudioEvent* Sound, bool bDoCosmetics, bool bDestroyed, int32 ParticleCount, double ParticleSize, const struct FLinearColor& ParticleColor, class APawn* Instigator, class UObject* __WorldContext);
 
 public:
 	static class UClass* StaticClass()
@@ -40,5 +40,6 @@ public:
 		return GetDefaultObjImpl<UBP_HelperLibrary_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_HelperLibrary_C;
 
 SDK_NAMESPACE_END

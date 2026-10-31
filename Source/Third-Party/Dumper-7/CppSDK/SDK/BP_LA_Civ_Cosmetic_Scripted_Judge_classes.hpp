@@ -34,15 +34,15 @@ public:
 	class FName                                   ListenPhoneVar;                                    // 0x0390(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnswerPhone();
-	void BangGavel();
-	void EndPhone();
-	void ExecuteUbergraph_BP_LA_Civ_Cosmetic_Scripted_Judge(int32 EntryPoint);
-	void ListenPhone();
-	void LoopIdle();
-	void ReceiveBeginPlay();
-	void Talk();
 	void TalkPhone();
+	void Talk();
+	void ReceiveBeginPlay();
+	void LoopIdle();
+	void ListenPhone();
+	void ExecuteUbergraph_BP_LA_Civ_Cosmetic_Scripted_Judge(int32 EntryPoint);
+	void EndPhone();
+	void BangGavel();
+	void AnswerPhone();
 
 public:
 	static class UClass* StaticClass()
@@ -58,5 +58,6 @@ public:
 		return GetDefaultObjImpl<ABP_LA_Civ_Cosmetic_Scripted_Judge_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LA_Civ_Cosmetic_Scripted_Judge_C;
 
 SDK_NAMESPACE_END

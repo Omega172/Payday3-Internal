@@ -18,35 +18,14 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_PlayerSaw_Silent_Projectile.BP_PlayerSaw_Silent_Projectile_C.BndEvt__BP_PlayerSaw_Silent_Projectile_ProjectileMovementComponent_K2Node_ComponentBoundEvent_2_OnProjectileBounceDelegate__DelegateSignature
-// 0x0120 (0x0120 - 0x0000)
-struct BP_PlayerSaw_Silent_Projectile_C_BndEvt__BP_PlayerSaw_Silent_Projectile_ProjectileMovementComponent_K2Node_ComponentBoundEvent_2_OnProjectileBounceDelegate__DelegateSignature final
+// Function BP_PlayerSaw_Silent_Projectile.BP_PlayerSaw_Silent_Projectile_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct BP_PlayerSaw_Silent_Projectile_C_ReceiveTick final
 {
 public:
-	struct FHitResult                             ImpactResult;                                      // 0x0000(0x0108)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                                ImpactVelocity;                                    // 0x0108(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         DeltaSeconds_ReceiveTick;                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_PlayerSaw_Silent_Projectile.BP_PlayerSaw_Silent_Projectile_C.BndEvt__BP_PlayerSaw_Silent_Projectile_SphereCollision_K2Node_ComponentBoundEvent_3_ComponentHitSignature__DelegateSignature
-// 0x0138 (0x0138 - 0x0000)
-struct BP_PlayerSaw_Silent_Projectile_C_BndEvt__BP_PlayerSaw_Silent_Projectile_SphereCollision_K2Node_ComponentBoundEvent_3_ComponentHitSignature__DelegateSignature final
-{
-public:
-	class UPrimitiveComponent*                    HitComponent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                NormalImpulse;                                     // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FHitResult                             Hit;                                               // 0x0030(0x0108)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-};
-
-// Function BP_PlayerSaw_Silent_Projectile.BP_PlayerSaw_Silent_Projectile_C.BndEvt__BP_PlayerSaw_Silent_Projectile_TrailEffectComponent_K2Node_ComponentBoundEvent_1_ActorComponentActivatedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct BP_PlayerSaw_Silent_Projectile_C_BndEvt__BP_PlayerSaw_Silent_Projectile_TrailEffectComponent_K2Node_ComponentBoundEvent_1_ActorComponentActivatedSignature__DelegateSignature final
-{
-public:
-	class UActorComponent*                        Component;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bReset;                                            // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_PlayerSaw_Silent_Projectile_C_ReceiveTick;
 
 // Function BP_PlayerSaw_Silent_Projectile.BP_PlayerSaw_Silent_Projectile_C.ExecuteUbergraph_BP_PlayerSaw_Silent_Projectile
 // 0x0418 (0x0418 - 0x0000)
@@ -85,14 +64,40 @@ public:
 	uint8                                         Pad_409[0x7];                                      // 0x0409(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Multiply_DoubleDouble_A_ImplicitCast;     // 0x0410(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_PlayerSaw_Silent_Projectile_C_ExecuteUbergraph_BP_PlayerSaw_Silent_Projectile;
 
-// Function BP_PlayerSaw_Silent_Projectile.BP_PlayerSaw_Silent_Projectile_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct BP_PlayerSaw_Silent_Projectile_C_ReceiveTick final
+// Function BP_PlayerSaw_Silent_Projectile.BP_PlayerSaw_Silent_Projectile_C.BndEvt__BP_PlayerSaw_Silent_Projectile_TrailEffectComponent_K2Node_ComponentBoundEvent_1_ActorComponentActivatedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct BP_PlayerSaw_Silent_Projectile_C_BndEvt__BP_PlayerSaw_Silent_Projectile_TrailEffectComponent_K2Node_ComponentBoundEvent_1_ActorComponentActivatedSignature__DelegateSignature final
 {
 public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UActorComponent*                        Component;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bReset;                                            // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_PlayerSaw_Silent_Projectile_C_BndEvt__BP_PlayerSaw_Silent_Projectile_TrailEffectComponent_K2Node_ComponentBoundEvent_1_ActorComponentActivatedSignature__DelegateSignature;
+
+// Function BP_PlayerSaw_Silent_Projectile.BP_PlayerSaw_Silent_Projectile_C.BndEvt__BP_PlayerSaw_Silent_Projectile_SphereCollision_K2Node_ComponentBoundEvent_3_ComponentHitSignature__DelegateSignature
+// 0x0138 (0x0138 - 0x0000)
+struct BP_PlayerSaw_Silent_Projectile_C_BndEvt__BP_PlayerSaw_Silent_Projectile_SphereCollision_K2Node_ComponentBoundEvent_3_ComponentHitSignature__DelegateSignature final
+{
+public:
+	class UPrimitiveComponent*                    HitComponent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                NormalImpulse;                                     // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                             Hit;                                               // 0x0030(0x0108)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+};
+DUMPER7_ASSERTS_BP_PlayerSaw_Silent_Projectile_C_BndEvt__BP_PlayerSaw_Silent_Projectile_SphereCollision_K2Node_ComponentBoundEvent_3_ComponentHitSignature__DelegateSignature;
+
+// Function BP_PlayerSaw_Silent_Projectile.BP_PlayerSaw_Silent_Projectile_C.BndEvt__BP_PlayerSaw_Silent_Projectile_ProjectileMovementComponent_K2Node_ComponentBoundEvent_2_OnProjectileBounceDelegate__DelegateSignature
+// 0x0120 (0x0120 - 0x0000)
+struct BP_PlayerSaw_Silent_Projectile_C_BndEvt__BP_PlayerSaw_Silent_Projectile_ProjectileMovementComponent_K2Node_ComponentBoundEvent_2_OnProjectileBounceDelegate__DelegateSignature final
+{
+public:
+	struct FHitResult                             ImpactResult;                                      // 0x0000(0x0108)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                                ImpactVelocity;                                    // 0x0108(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PlayerSaw_Silent_Projectile_C_BndEvt__BP_PlayerSaw_Silent_Projectile_ProjectileMovementComponent_K2Node_ComponentBoundEvent_2_OnProjectileBounceDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

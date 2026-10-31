@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_BackItemMethBag_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BackItemMethBag_C;
 
 SDK_NAMESPACE_END

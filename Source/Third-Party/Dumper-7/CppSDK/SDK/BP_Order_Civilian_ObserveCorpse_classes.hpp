@@ -25,8 +25,8 @@ public:
 	class FName                                   TargetKey;                                         // 0x0138(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void OnStartedBP(class APawn* Pawn_OnStartedBP);
 	void ExecuteUbergraph_BP_Order_Civilian_ObserveCorpse(int32 EntryPoint);
-	void OnStartedBP(class APawn* Pawn);
 
 public:
 	static class UClass* StaticClass()
@@ -42,5 +42,6 @@ public:
 		return GetDefaultObjImpl<UBP_Order_Civilian_ObserveCorpse_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_Order_Civilian_ObserveCorpse_C;
 
 SDK_NAMESPACE_END

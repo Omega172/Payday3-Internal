@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<AFOR_BPL_DeskLamp_A_C>();
 	}
 };
+DUMPER7_ASSERTS_AFOR_BPL_DeskLamp_A_C;
 
 SDK_NAMESPACE_END

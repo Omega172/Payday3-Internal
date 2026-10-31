@@ -28,10 +28,10 @@ public:
 	class UMaterialInterface*                     secondaryMaterial;                                 // 0x0790(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_container_cooled_Double_doors_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_container_Cooled_DoubleDoors_Breakable(int32 EntryPoint);
-	void setBinaryState(bool state, bool doCosmetics);
 	void UserConstructionScript();
+	void setBinaryState(bool state, bool doCosmetics);
+	void ExecuteUbergraph_BP_container_Cooled_DoubleDoors_Breakable(int32 EntryPoint);
+	void BndEvt__BP_container_cooled_Double_doors_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -47,5 +47,6 @@ public:
 		return GetDefaultObjImpl<ABP_container_Cooled_DoubleDoors_Breakable_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_container_Cooled_DoubleDoors_Breakable_C;
 
 SDK_NAMESPACE_END

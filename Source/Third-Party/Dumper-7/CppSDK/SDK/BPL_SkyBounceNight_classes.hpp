@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABPL_SkyBounceNight_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_SkyBounceNight_C;
 
 SDK_NAMESPACE_END

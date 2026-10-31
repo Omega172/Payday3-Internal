@@ -16,27 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_Contracts_AssignmentStatusWidget.WBP_Contracts_AssignmentStatusWidget_C.SetState
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Contracts_AssignmentStatusWidget_C_SetState final
-{
-public:
-	E_Contracts_AssignmentStatus                  State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	E_Contracts_AssignmentStatus                  Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                K2Node_Select_Default;                             // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Contracts_AssignmentStatusWidget_C_SetState;
-
-// Function WBP_Contracts_AssignmentStatusWidget.WBP_Contracts_AssignmentStatusWidget_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Contracts_AssignmentStatusWidget_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Contracts_AssignmentStatusWidget_C_PreConstruct;
-
 // Function WBP_Contracts_AssignmentStatusWidget.WBP_Contracts_AssignmentStatusWidget_C.ExecuteUbergraph_WBP_Contracts_AssignmentStatusWidget
 // 0x0020 (0x0020 - 0x0000)
 struct WBP_Contracts_AssignmentStatusWidget_C_ExecuteUbergraph_WBP_Contracts_AssignmentStatusWidget final
@@ -51,6 +30,27 @@ public:
 	float                                         CallFunc_SetHeightOverride_InHeightOverride_ImplicitCast; // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_Contracts_AssignmentStatusWidget_C_ExecuteUbergraph_WBP_Contracts_AssignmentStatusWidget;
+
+// Function WBP_Contracts_AssignmentStatusWidget.WBP_Contracts_AssignmentStatusWidget_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Contracts_AssignmentStatusWidget_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Contracts_AssignmentStatusWidget_C_PreConstruct;
+
+// Function WBP_Contracts_AssignmentStatusWidget.WBP_Contracts_AssignmentStatusWidget_C.SetState
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Contracts_AssignmentStatusWidget_C_SetState final
+{
+public:
+	E_Contracts_AssignmentStatus                  State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	E_Contracts_AssignmentStatus                  Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                K2Node_Select_Default;                             // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Contracts_AssignmentStatusWidget_C_SetState;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

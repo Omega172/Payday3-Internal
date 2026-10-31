@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_Interactable_RareStone_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Interactable_RareStone_01_C;
 
 SDK_NAMESPACE_END

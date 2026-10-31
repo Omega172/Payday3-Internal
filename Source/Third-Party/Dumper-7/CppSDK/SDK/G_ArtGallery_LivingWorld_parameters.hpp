@@ -99,6 +99,7 @@ public:
 	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_56;           // 0x03A8(0x0010)()
 	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_57;           // 0x03B8(0x0010)()
 };
+DUMPER7_ASSERTS_G_ArtGallery_LivingWorld_C_ExecuteUbergraph_G_ArtGallery_LivingWorld;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

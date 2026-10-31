@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Weapon_Unequipped_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Weapon_Unequipped_C;
 
 SDK_NAMESPACE_END

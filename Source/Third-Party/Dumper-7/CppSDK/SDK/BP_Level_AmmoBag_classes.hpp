@@ -17,7 +17,7 @@ SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Level_AmmoBag.BP_Level_AmmoBag_C
 // 0x0000 (0x0730 - 0x0730)
-class ABP_Level_AmmoBag_C : public ABP_Placeable_AmmoBag_C
+class ABP_Level_AmmoBag_C final : public ABP_Placeable_AmmoBag_C
 {
 public:
 	static class UClass* StaticClass()
@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Level_AmmoBag_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Level_AmmoBag_C;
 
 SDK_NAMESPACE_END

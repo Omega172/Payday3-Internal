@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<AONE_BPL_StripLight_Little_Red_C>();
 	}
 };
+DUMPER7_ASSERTS_AONE_BPL_StripLight_Little_Red_C;
 
 SDK_NAMESPACE_END

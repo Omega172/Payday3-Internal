@@ -16,23 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function R_Bebe_StorageRoom.R_Bebe_StorageRoom_C.ExecuteUbergraph_R_Bebe_StorageRoom
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function R_Bebe_StorageRoom.R_Bebe_StorageRoom_C.RandomizedRoomTest_RemoteEvent1
+// (BlueprintCallable, BlueprintEvent)
 
-void AR_Bebe_StorageRoom_C::ExecuteUbergraph_R_Bebe_StorageRoom(int32 EntryPoint)
+void AR_Bebe_StorageRoom_C::RandomizedRoomTest_RemoteEvent1()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RandomizedRoomTest_RemoteEvent1", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Bebe_StorageRoom_C", "ExecuteUbergraph_R_Bebe_StorageRoom");
-
-	Params::R_Bebe_StorageRoom_C_ExecuteUbergraph_R_Bebe_StorageRoom Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -41,26 +33,28 @@ void AR_Bebe_StorageRoom_C::ExecuteUbergraph_R_Bebe_StorageRoom(int32 EntryPoint
 
 void AR_Bebe_StorageRoom_C::OnRandomSublevelPlaced()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Bebe_StorageRoom_C", "OnRandomSublevelPlaced");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRandomSublevelPlaced", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function R_Bebe_StorageRoom.R_Bebe_StorageRoom_C.RandomizedRoomTest_RemoteEvent1
-// (BlueprintCallable, BlueprintEvent)
+// Function R_Bebe_StorageRoom.R_Bebe_StorageRoom_C.ExecuteUbergraph_R_Bebe_StorageRoom
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AR_Bebe_StorageRoom_C::RandomizedRoomTest_RemoteEvent1()
+void AR_Bebe_StorageRoom_C::ExecuteUbergraph_R_Bebe_StorageRoom(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "R_Bebe_StorageRoom_C", "ExecuteUbergraph_R_Bebe_StorageRoom", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Bebe_StorageRoom_C", "RandomizedRoomTest_RemoteEvent1");
+	Params::R_Bebe_StorageRoom_C_ExecuteUbergraph_R_Bebe_StorageRoom Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

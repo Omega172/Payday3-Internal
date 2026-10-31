@@ -40,21 +40,21 @@ public:
 	struct FLinearColor                           Color_DisabledOverlayDefault;                      // 0x0458(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetButtonLocked();
-	void OnLoaded_8C94C37A4CF920479DF0A59BD3C0C3AE(class UObject* Loaded);
-	void OnHoverChanged(bool bIsHovered);
-	void OnHeistDataInitialized();
-	void OnFocusedChanged(bool bIsFocused);
-	void OnFocusChanged(bool bIsFocused_OnFocusChanged);
-	void OnDisabledChanged(bool InDisabled);
-	void InitializeButtonVisuals();
-	void ExecuteUbergraph_WBP_UI_CrimeNetStoryModeVideoButton(int32 EntryPoint);
-	void DisabledButtonSelected();
-	void Construct();
+	void ButtonDisabledChanged(bool bInIsDisabled);
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
 	void ButtonSelected();
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
-	void ButtonDisabledChanged(bool bInIsDisabled_ButtonDisabledChanged);
+	void Construct();
+	void DisabledButtonSelected();
+	void ExecuteUbergraph_WBP_UI_CrimeNetStoryModeVideoButton(int32 EntryPoint);
+	void InitializeButtonVisuals();
+	void OnDisabledChanged(bool InDisabled);
+	void OnFocusChanged(bool bIsFocused);
+	void OnFocusedChanged(bool bIsFocused);
+	void OnHeistDataInitialized();
+	void OnHoverChanged(bool bIsHovered);
+	void OnLoaded_8C94C37A4CF920479DF0A59BD3C0C3AE(class UObject* Loaded);
+	void SetButtonLocked();
 
 public:
 	static class UClass* StaticClass()

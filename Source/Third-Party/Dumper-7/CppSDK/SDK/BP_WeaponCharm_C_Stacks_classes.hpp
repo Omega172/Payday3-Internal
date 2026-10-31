@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_WeaponCharm_C_Stacks_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_WeaponCharm_C_Stacks_C;
 
 SDK_NAMESPACE_END

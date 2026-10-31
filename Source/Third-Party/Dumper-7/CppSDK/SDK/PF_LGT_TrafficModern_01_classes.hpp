@@ -59,9 +59,9 @@ public:
 	bool                                          Start_with_Green;                                  // 0x0437(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_PF_LGT_TrafficModern_01(int32 EntryPoint);
-	void ReceiveBeginPlay();
 	void UserConstructionScript();
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_PF_LGT_TrafficModern_01(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -77,5 +77,6 @@ public:
 		return GetDefaultObjImpl<APF_LGT_TrafficModern_01_C>();
 	}
 };
+DUMPER7_ASSERTS_APF_LGT_TrafficModern_01_C;
 
 SDK_NAMESPACE_END

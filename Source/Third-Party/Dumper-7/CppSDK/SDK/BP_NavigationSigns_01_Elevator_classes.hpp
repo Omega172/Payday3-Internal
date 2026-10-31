@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ABP_NavigationSigns_01_Elevator_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_NavigationSigns_01_Elevator_C;
 
 SDK_NAMESPACE_END

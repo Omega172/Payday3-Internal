@@ -28,7 +28,7 @@ DUMPER7_ASSERTS_ABP_PlayerMenu__FAnimBlueprintGeneratedMutableData;
 
 // ScriptStruct ABP_PlayerMenu.ABP_PlayerMenu_C.AnimBlueprintGeneratedConstantData
 // 0x04CF (0x04D0 - 0x0001)
-struct ABP_PlayerMenu::FAnimBlueprintGeneratedConstantData final : public FAnimBlueprintConstantData
+struct ABP_PlayerMenu::FAnimBlueprintGeneratedConstantData : public FAnimBlueprintConstantData
 {
 public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])

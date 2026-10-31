@@ -16,6 +16,38 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_PlaceableArmorRepairKit.BP_PlaceableArmorRepairKit_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_PlaceableArmorRepairKit_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_PlaceableArmorRepairKit.BP_PlaceableArmorRepairKit_C.OnChargesChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// float                                   ChargesChangeTo_OnChargesChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnChargesChanged                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PlaceableArmorRepairKit_C::OnChargesChanged(float ChargesChangeTo_OnChargesChanged, bool bDoCosmetics_OnChargesChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnChargesChanged", FnName));
+
+	Params::BP_PlaceableArmorRepairKit_C_OnChargesChanged Parms{};
+
+	Parms.ChargesChangeTo_OnChargesChanged = ChargesChangeTo_OnChargesChanged;
+	Parms.bDoCosmetics_OnChargesChanged = bDoCosmetics_OnChargesChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_PlaceableArmorRepairKit.BP_PlaceableArmorRepairKit_C.ExecuteUbergraph_BP_PlaceableArmorRepairKit
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,52 +55,14 @@ SDK_NAMESPACE_START
 
 void ABP_PlaceableArmorRepairKit_C::ExecuteUbergraph_BP_PlaceableArmorRepairKit(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlaceableArmorRepairKit_C", "ExecuteUbergraph_BP_PlaceableArmorRepairKit");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_PlaceableArmorRepairKit_C", "ExecuteUbergraph_BP_PlaceableArmorRepairKit", FuncInfo);
 
 	Params::BP_PlaceableArmorRepairKit_C_ExecuteUbergraph_BP_PlaceableArmorRepairKit Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PlaceableArmorRepairKit.BP_PlaceableArmorRepairKit_C.OnChargesChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// float                                   ChargesChangeTo                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PlaceableArmorRepairKit_C::OnChargesChanged(float ChargesChangeTo, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlaceableArmorRepairKit_C", "OnChargesChanged");
-
-	Params::BP_PlaceableArmorRepairKit_C_OnChargesChanged Parms{};
-
-	Parms.ChargesChangeTo = ChargesChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PlaceableArmorRepairKit.BP_PlaceableArmorRepairKit_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_PlaceableArmorRepairKit_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlaceableArmorRepairKit_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

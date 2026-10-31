@@ -16,23 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_AI_Throwable_Flashbang.BP_AI_Throwable_Flashbang_C.ExecuteUbergraph_BP_AI_Throwable_Flashbang
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_AI_Throwable_Flashbang.BP_AI_Throwable_Flashbang_C.ReceiveDestroyed
+// (Event, Public, BlueprintEvent)
 
-void ABP_AI_Throwable_Flashbang_C::ExecuteUbergraph_BP_AI_Throwable_Flashbang(int32 EntryPoint)
+void ABP_AI_Throwable_Flashbang_C::ReceiveDestroyed()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveDestroyed", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AI_Throwable_Flashbang_C", "ExecuteUbergraph_BP_AI_Throwable_Flashbang");
-
-	Params::BP_AI_Throwable_Flashbang_C_ExecuteUbergraph_BP_AI_Throwable_Flashbang Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -41,26 +33,28 @@ void ABP_AI_Throwable_Flashbang_C::ExecuteUbergraph_BP_AI_Throwable_Flashbang(in
 
 void ABP_AI_Throwable_Flashbang_C::OnThrow()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AI_Throwable_Flashbang_C", "OnThrow");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnThrow", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_AI_Throwable_Flashbang.BP_AI_Throwable_Flashbang_C.ReceiveDestroyed
-// (Event, Public, BlueprintEvent)
+// Function BP_AI_Throwable_Flashbang.BP_AI_Throwable_Flashbang_C.ExecuteUbergraph_BP_AI_Throwable_Flashbang
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_AI_Throwable_Flashbang_C::ReceiveDestroyed()
+void ABP_AI_Throwable_Flashbang_C::ExecuteUbergraph_BP_AI_Throwable_Flashbang(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_AI_Throwable_Flashbang_C", "ExecuteUbergraph_BP_AI_Throwable_Flashbang", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AI_Throwable_Flashbang_C", "ReceiveDestroyed");
+	Params::BP_AI_Throwable_Flashbang_C_ExecuteUbergraph_BP_AI_Throwable_Flashbang Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

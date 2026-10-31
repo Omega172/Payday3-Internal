@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_RangedWeapon_Sentry_Gun_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_RangedWeapon_Sentry_Gun_C;
 
 SDK_NAMESPACE_END

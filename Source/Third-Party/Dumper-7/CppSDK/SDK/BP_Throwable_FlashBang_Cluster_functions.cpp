@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_Throwable_FlashBang_Cluster.BP_Throwable_FlashBang_Cluster_C.ExecuteUbergraph_BP_Throwable_FlashBang_Cluster
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Throwable_FlashBang_Cluster_C::ExecuteUbergraph_BP_Throwable_FlashBang_Cluster(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Throwable_FlashBang_Cluster_C", "ExecuteUbergraph_BP_Throwable_FlashBang_Cluster", FuncInfo);
+
+	Params::BP_Throwable_FlashBang_Cluster_C_ExecuteUbergraph_BP_Throwable_FlashBang_Cluster Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_Throwable_FlashBang_Cluster.BP_Throwable_FlashBang_Cluster_C.BndEvt__BP_Throwable_FragGrenade_Cluster_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -24,35 +42,13 @@ SDK_NAMESPACE_START
 
 void ABP_Throwable_FlashBang_Cluster_C::BndEvt__BP_Throwable_FragGrenade_Cluster_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_FlashBang_Cluster_C", "BndEvt__BP_Throwable_FragGrenade_Cluster_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Throwable_FragGrenade_Cluster_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature", FnName));
 
 	Params::BP_Throwable_FlashBang_Cluster_C_BndEvt__BP_Throwable_FragGrenade_Cluster_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature Parms{};
 
 	Parms.ImpactResult = std::move(ImpactResult);
 	Parms.ImpactVelocity = std::move(ImpactVelocity);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Throwable_FlashBang_Cluster.BP_Throwable_FlashBang_Cluster_C.ExecuteUbergraph_BP_Throwable_FlashBang_Cluster
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Throwable_FlashBang_Cluster_C::ExecuteUbergraph_BP_Throwable_FlashBang_Cluster(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_FlashBang_Cluster_C", "ExecuteUbergraph_BP_Throwable_FlashBang_Cluster");
-
-	Params::BP_Throwable_FlashBang_Cluster_C_ExecuteUbergraph_BP_Throwable_FlashBang_Cluster Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

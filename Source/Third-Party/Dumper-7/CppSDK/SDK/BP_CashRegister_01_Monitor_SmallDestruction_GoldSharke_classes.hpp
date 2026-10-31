@@ -28,8 +28,8 @@ public:
 	bool                                          is_destructable;                                   // 0x036C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_CashRegister_01_Monitor_SmallDestruction_SBZCosmeticDestruction_1_K2Node_ComponentBoundEvent_5_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 	void ExecuteUbergraph_BP_CashRegister_01_Monitor_SmallDestruction_GoldSharke(int32 EntryPoint);
+	void BndEvt__BP_CashRegister_01_Monitor_SmallDestruction_SBZCosmeticDestruction_1_K2Node_ComponentBoundEvent_5_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<ABP_CashRegister_01_Monitor_SmallDestruction_GoldSharke_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CashRegister_01_Monitor_SmallDestruction_GoldSharke_C;
 
 SDK_NAMESPACE_END

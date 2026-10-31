@@ -45,26 +45,26 @@ public:
 	class ASBZPlayerTriggeredVoiceVolume*         SBZPlayerTriggeredVoiceVolume_WrongWayCourtroom_ExecuteUbergraph_G_Chus_RobberVO_RefProperty; // 0x0468(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Forward1_K2Node_ActorBoundEvent_4_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Right1_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Upstairs1_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume6_2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume7_5_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume8_2_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void EscortIsPath1();
-	void EscortIsPath2();
-	void ExecuteUbergraph_G_Chus_RobberVO(int32 EntryPoint);
-	void HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState);
-	void RobberVO_ActivateHackbox();
-	void RobberVO_ActivateMetalDetector();
-	void RobberVO_ActivateVent1();
-	void RobberVO_CompletedHackbox();
-	void RobberVO_DeactivateStar();
-	void RobberVO_Escort2WP11();
-	void RobberVO_Escort2WP12();
-	void RobberVO_Escort2WP3();
-	void RobberVO_Escort2WP6();
 	void RobberVO_EscortDone();
+	void RobberVO_Escort2WP6();
+	void RobberVO_Escort2WP3();
+	void RobberVO_Escort2WP12();
+	void RobberVO_Escort2WP11();
+	void RobberVO_DeactivateStar();
+	void RobberVO_CompletedHackbox();
+	void RobberVO_ActivateVent1();
+	void RobberVO_ActivateMetalDetector();
+	void RobberVO_ActivateHackbox();
+	void HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged);
+	void ExecuteUbergraph_G_Chus_RobberVO(int32 EntryPoint);
+	void EscortIsPath2();
+	void EscortIsPath1();
+	void BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume8_2_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume7_5_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume6_2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Upstairs1_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Right1_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Forward1_K2Node_ActorBoundEvent_4_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
 
 public:
 	static class UClass* StaticClass()
@@ -80,5 +80,6 @@ public:
 		return GetDefaultObjImpl<AG_Chus_RobberVO_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_Chus_RobberVO_C;
 
 SDK_NAMESPACE_END

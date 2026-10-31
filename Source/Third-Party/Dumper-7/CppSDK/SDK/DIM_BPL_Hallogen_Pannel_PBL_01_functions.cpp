@@ -16,21 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function DIM_BPL_Hallogen_Pannel_PBL_01.DIM_BPL_Hallogen_Pannel_PBL_01_C.ExecuteUbergraph_DIM_BPL_Hallogen_Pannel_PBL_01
-// (Final, UbergraphFunction)
+// Function DIM_BPL_Hallogen_Pannel_PBL_01.DIM_BPL_Hallogen_Pannel_PBL_01_C.SetStateFunction
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Enum_LampStages                         State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ADIM_BPL_Hallogen_Pannel_PBL_01_C::ExecuteUbergraph_DIM_BPL_Hallogen_Pannel_PBL_01(int32 EntryPoint)
+void ADIM_BPL_Hallogen_Pannel_PBL_01_C::SetStateFunction(Enum_LampStages State)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetStateFunction", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("DIM_BPL_Hallogen_Pannel_PBL_01_C", "ExecuteUbergraph_DIM_BPL_Hallogen_Pannel_PBL_01");
+	Params::DIM_BPL_Hallogen_Pannel_PBL_01_C_SetStateFunction Parms{};
 
-	Params::DIM_BPL_Hallogen_Pannel_PBL_01_C_ExecuteUbergraph_DIM_BPL_Hallogen_Pannel_PBL_01 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.State = State;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -39,42 +37,38 @@ void ADIM_BPL_Hallogen_Pannel_PBL_01_C::ExecuteUbergraph_DIM_BPL_Hallogen_Pannel
 // Function DIM_BPL_Hallogen_Pannel_PBL_01.DIM_BPL_Hallogen_Pannel_PBL_01_C.OnStateChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   OldState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ADIM_BPL_Hallogen_Pannel_PBL_01_C::OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics)
+void ADIM_BPL_Hallogen_Pannel_PBL_01_C::OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DIM_BPL_Hallogen_Pannel_PBL_01_C", "OnStateChanged");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
 	Params::DIM_BPL_Hallogen_Pannel_PBL_01_C_OnStateChanged Parms{};
 
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.OldState_OnStateChanged = OldState_OnStateChanged;
+	Parms.NewState_OnStateChanged = NewState_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function DIM_BPL_Hallogen_Pannel_PBL_01.DIM_BPL_Hallogen_Pannel_PBL_01_C.SetStateFunction
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function DIM_BPL_Hallogen_Pannel_PBL_01.DIM_BPL_Hallogen_Pannel_PBL_01_C.ExecuteUbergraph_DIM_BPL_Hallogen_Pannel_PBL_01
+// (Final, UbergraphFunction)
 // Parameters:
-// Enum_LampStages                         State_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ADIM_BPL_Hallogen_Pannel_PBL_01_C::SetStateFunction(Enum_LampStages State_0)
+void ADIM_BPL_Hallogen_Pannel_PBL_01_C::ExecuteUbergraph_DIM_BPL_Hallogen_Pannel_PBL_01(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "DIM_BPL_Hallogen_Pannel_PBL_01_C", "ExecuteUbergraph_DIM_BPL_Hallogen_Pannel_PBL_01", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("DIM_BPL_Hallogen_Pannel_PBL_01_C", "SetStateFunction");
+	Params::DIM_BPL_Hallogen_Pannel_PBL_01_C_ExecuteUbergraph_DIM_BPL_Hallogen_Pannel_PBL_01 Parms{};
 
-	Params::DIM_BPL_Hallogen_Pannel_PBL_01_C_SetStateFunction Parms{};
-
-	Parms.State_0 = State_0;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -32,15 +32,15 @@ public:
 	class ABUST_BPL_WallLamp_SWITCH_01_C*         BUST_BPL_Industrial_01_2_ExecuteUbergraph_L_Bust_RefProperty; // 0x0410(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void CrackHouseDoor1Open();
-	void CrackHouseDoor2Open();
-	void ExecuteUbergraph_L_Bust(int32 EntryPoint);
-	void StorageDoorBack3();
-	void StorageDoorEntrance1();
-	void StorageDoorGoods2();
-	void WarehouseDoorEntrance1();
-	void WarehouseDoorUpper3();
 	void WarehouseDoorUpperBack2();
+	void WarehouseDoorUpper3();
+	void WarehouseDoorEntrance1();
+	void StorageDoorGoods2();
+	void StorageDoorEntrance1();
+	void StorageDoorBack3();
+	void ExecuteUbergraph_L_Bust(int32 EntryPoint);
+	void CrackHouseDoor2Open();
+	void CrackHouseDoor1Open();
 
 public:
 	static class UClass* StaticClass()
@@ -56,5 +56,6 @@ public:
 		return GetDefaultObjImpl<AL_Bust_C>();
 	}
 };
+DUMPER7_ASSERTS_AL_Bust_C;
 
 SDK_NAMESPACE_END

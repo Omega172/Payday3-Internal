@@ -19,33 +19,31 @@ SDK_NAMESPACE_START
 // Function BP_CarLift_Req_clearance.BP_CarLift_Req_clearance_C.BP_CheckRequirement
 // (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// const class USBZInteractorComponent*    Interactor                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// struct FSBZInteractReqData*             OutData                                                (Parm, OutParm)
-// bool                                    bIsSignalRequired                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bInIsScreenInteract                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsCasing                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEncumbered                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZInteractorComponent*    Interactor_BP_CheckRequirement                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// struct FSBZInteractReqData*             OutData_BP_CheckRequirement                            (Parm, OutParm)
+// bool                                    bIsSignalRequired_BP_CheckRequirement                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInIsScreenInteract_BP_CheckRequirement                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsCasing_BP_CheckRequirement                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEncumbered_BP_CheckRequirement                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue_BP_CheckRequirement                        (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-bool UBP_CarLift_Req_clearance_C::BP_CheckRequirement(const class USBZInteractorComponent* Interactor, struct FSBZInteractReqData* OutData, bool bIsSignalRequired, bool bInIsScreenInteract, bool bIsCasing, bool bIsEncumbered) const
+bool UBP_CarLift_Req_clearance_C::BP_CheckRequirement(const class USBZInteractorComponent* Interactor_BP_CheckRequirement, struct FSBZInteractReqData* OutData_BP_CheckRequirement, bool bIsSignalRequired_BP_CheckRequirement, bool bInIsScreenInteract_BP_CheckRequirement, bool bIsCasing_BP_CheckRequirement, bool bIsEncumbered_BP_CheckRequirement) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CarLift_Req_clearance_C", "BP_CheckRequirement");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_CheckRequirement", FnName));
 
 	Params::BP_CarLift_Req_clearance_C_BP_CheckRequirement Parms{};
 
-	Parms.Interactor = Interactor;
-	Parms.bIsSignalRequired = bIsSignalRequired;
-	Parms.bInIsScreenInteract = bInIsScreenInteract;
-	Parms.bIsCasing = bIsCasing;
-	Parms.bIsEncumbered = bIsEncumbered;
+	Parms.Interactor_BP_CheckRequirement = Interactor_BP_CheckRequirement;
+	Parms.bIsSignalRequired_BP_CheckRequirement = bIsSignalRequired_BP_CheckRequirement;
+	Parms.bInIsScreenInteract_BP_CheckRequirement = bInIsScreenInteract_BP_CheckRequirement;
+	Parms.bIsCasing_BP_CheckRequirement = bIsCasing_BP_CheckRequirement;
+	Parms.bIsEncumbered_BP_CheckRequirement = bIsEncumbered_BP_CheckRequirement;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (OutData != nullptr)
-		*OutData = std::move(Parms.OutData);
+	if (OutData_BP_CheckRequirement != nullptr)
+		*OutData_BP_CheckRequirement = std::move(Parms.OutData_BP_CheckRequirement);
 
 	return Parms.ReturnValue;
 }

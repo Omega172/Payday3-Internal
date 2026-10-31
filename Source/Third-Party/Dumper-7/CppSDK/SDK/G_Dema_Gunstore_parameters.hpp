@@ -17,222 +17,60 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.ArmoryLoudPuzzlePicked
-// 0x0004 (0x0004 - 0x0000)
-struct G_Dema_Gunstore_C_ArmoryLoudPuzzlePicked final
-{
-public:
-	int32                                         ArmoryLoudPuzzleInt_0;                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_BP_ConnectedCableBox_Guaranteed2_1_K2Node_ActorBoundEvent_96_SBZOnCompleteDelegate__DelegateSignature
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.SetGunstoreStoreAvailable
 // 0x0001 (0x0001 - 0x0000)
-struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_BP_ConnectedCableBox_Guaranteed2_1_K2Node_ActorBoundEvent_96_SBZOnCompleteDelegate__DelegateSignature final
+struct G_Dema_Gunstore_C_SetGunstoreStoreAvailable final
 {
 public:
-	bool                                          bWasSuccess;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          StoreAvailable;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_SetGunstoreStoreAvailable;
 
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_BP_ConnectedCableBox_Guaranteed3_K2Node_ActorBoundEvent_95_SBZOnCompleteDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_BP_ConnectedCableBox_Guaranteed3_K2Node_ActorBoundEvent_95_SBZOnCompleteDelegate__DelegateSignature final
-{
-public:
-	bool                                          bWasSuccess;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_BP_ConnectedCableBox_Guaranteed4_K2Node_ActorBoundEvent_94_SBZOnCompleteDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_BP_ConnectedCableBox_Guaranteed4_K2Node_ActorBoundEvent_94_SBZOnCompleteDelegate__DelegateSignature final
-{
-public:
-	bool                                          bWasSuccess;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_BP_ConnectedCableBox_Guaranteed_K2Node_ActorBoundEvent_92_SBZOnCompleteDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_BP_ConnectedCableBox_Guaranteed_K2Node_ActorBoundEvent_92_SBZOnCompleteDelegate__DelegateSignature final
-{
-public:
-	bool                                          bWasSuccess;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_BP_ConnectedMaintenanceBox_2_K2Node_ActorBoundEvent_25_SBZMaintenanceBoxBoolDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_BP_ConnectedMaintenanceBox_2_K2Node_ActorBoundEvent_25_SBZMaintenanceBoxBoolDelegate__DelegateSignature final
-{
-public:
-	bool                                          bSuccessful;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_BP_DEM_ExplodingWall_2_K2Node_ActorBoundEvent_49_SBZOnChargesChangedDelegate__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_BP_DEM_ExplodingWall_2_K2Node_ActorBoundEvent_49_SBZOnChargesChangedDelegate__DelegateSignature final
-{
-public:
-	int32                                         NewCount;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_BP_Int_Door_01_SmallVault_2_K2Node_ActorBoundEvent_48_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_BP_Int_Door_01_SmallVault_2_K2Node_ActorBoundEvent_48_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_BP_SHI_INT_Door_Single_Reinforced_01_2_K2Node_ActorBoundEvent_37_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_BP_SHI_INT_Door_Single_Reinforced_01_2_K2Node_ActorBoundEvent_37_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_BP_SHI_INT_Door_Single_Reinforced_2_K2Node_ActorBoundEvent_38_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_BP_SHI_INT_Door_Single_Reinforced_2_K2Node_ActorBoundEvent_38_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_SBZBagTriggerVolume_LanceBags2_K2Node_ActorBoundEvent_12_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZBagTriggerVolume_LanceBags2_K2Node_ActorBoundEvent_12_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_SBZBagTriggerVolume_PlasmaCutterBags_K2Node_ActorBoundEvent_68_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZBagTriggerVolume_PlasmaCutterBags_K2Node_ActorBoundEvent_68_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_SBZModifiableTimer_ThermalLance_K2Node_ActorBoundEvent_75_SBZProgressionReachedDelegate__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZModifiableTimer_ThermalLance_K2Node_ActorBoundEvent_75_SBZProgressionReachedDelegate__DelegateSignature final
-{
-public:
-	int32                                         ProgressionIndexReached;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_SBZPawnSpawnPredefined_Gunstore_ManagerQR_K2Node_ActorBoundEvent_88_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.OnPlayersCarryBagChanged
 // 0x0010 (0x0010 - 0x0000)
-struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPawnSpawnPredefined_Gunstore_ManagerQR_K2Node_ActorBoundEvent_88_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+struct G_Dema_Gunstore_C_OnPlayersCarryBagChanged final
 {
 public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZPlayersCarryBagChangedEvent        Data_OnPlayersCarryBagChanged;                     // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 };
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_OnPlayersCarryBagChanged;
 
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_SBZPawnSpawnPredefined_Manager1_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPawnSpawnPredefined_Manager1_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_SBZPlayerLookAtTrigger_Code1_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.OnEnabledAsObjectiveDelegate_Event_0
 // 0x0008 (0x0008 - 0x0000)
-struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPlayerLookAtTrigger_Code1_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature final
+struct G_Dema_Gunstore_C_OnEnabledAsObjectiveDelegate_Event_0 final
 {
 public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCharacter*                          FoundBy;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_OnEnabledAsObjectiveDelegate_Event_0;
 
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_SBZPlayerLookAtTrigger_Code2_K2Node_ActorBoundEvent_9_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPlayerLookAtTrigger_Code2_K2Node_ActorBoundEvent_9_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_SBZPlayerLookAtTrigger_Code3_K2Node_ActorBoundEvent_17_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPlayerLookAtTrigger_Code3_K2Node_ActorBoundEvent_17_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_Armory_K2Node_ActorBoundEvent_91_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_Armory_K2Node_ActorBoundEvent_91_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_Gunstore_BackOffice_K2Node_ActorBoundEvent_89_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_Gunstore_BackOffice_K2Node_ActorBoundEvent_89_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_GunStore_K2Node_ActorBoundEvent_23_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_GunStore_K2Node_ActorBoundEvent_23_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_MetalDet_K2Node_ActorBoundEvent_99_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_MetalDet_K2Node_ActorBoundEvent_99_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_PlayerNearMetalDetector1_K2Node_ActorBoundEvent_25_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_PlayerNearMetalDetector1_K2Node_ActorBoundEvent_25_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_PlayerNearMetalDetector2_K2Node_ActorBoundEvent_23_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_PlayerNearMetalDetector2_K2Node_ActorBoundEvent_23_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_PlayerNearVentComputer_K2Node_ActorBoundEvent_19_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_PlayerNearVentComputer_K2Node_ActorBoundEvent_19_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.DisableActiveStore
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.MainLootLocationPicked
 // 0x0004 (0x0004 - 0x0000)
-struct G_Dema_Gunstore_C_DisableActiveStore final
+struct G_Dema_Gunstore_C_MainLootLocationPicked final
 {
 public:
-	int32                                         ActiveStore;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         LootLocationInt;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_MainLootLocationPicked;
+
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.MainGoalIdentified
+// 0x0001 (0x0001 - 0x0000)
+struct G_Dema_Gunstore_C_MainGoalIdentified final
+{
+public:
+	bool                                          ManifestFound;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_MainGoalIdentified;
+
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.HeistStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct G_Dema_Gunstore_C_HeistStateChanged final
+{
+public:
+	EPD3HeistState                                OldHeistState_HeistStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CurrentHeistState_HeistStateChanged;               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_HeistStateChanged;
 
 // Function G_Dema_Gunstore.G_Dema_Gunstore_C.ExecuteUbergraph_G_Dema_Gunstore
 // 0x0D78 (0x0D78 - 0x0000)
@@ -840,55 +678,250 @@ public:
 	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_30;                // 0x0D70(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0D71(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_ExecuteUbergraph_G_Dema_Gunstore;
 
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.HeistStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct G_Dema_Gunstore_C_HeistStateChanged final
-{
-public:
-	EPD3HeistState                                OldHeistState;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CurrentHeistState;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.MainGoalIdentified
-// 0x0001 (0x0001 - 0x0000)
-struct G_Dema_Gunstore_C_MainGoalIdentified final
-{
-public:
-	bool                                          ManifestFound_0;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.MainLootLocationPicked
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.DisableActiveStore
 // 0x0004 (0x0004 - 0x0000)
-struct G_Dema_Gunstore_C_MainLootLocationPicked final
+struct G_Dema_Gunstore_C_DisableActiveStore final
 {
 public:
-	int32                                         LootLocationInt;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         ActiveStore;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_DisableActiveStore;
 
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.OnEnabledAsObjectiveDelegate_Event_0
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_PlayerNearVentComputer_K2Node_ActorBoundEvent_19_SBZPawnDynamicDelegate__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct G_Dema_Gunstore_C_OnEnabledAsObjectiveDelegate_Event_0 final
+struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_PlayerNearVentComputer_K2Node_ActorBoundEvent_19_SBZPawnDynamicDelegate__DelegateSignature final
 {
 public:
-	class ASBZCharacter*                          FoundBy;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_PlayerNearVentComputer_K2Node_ActorBoundEvent_19_SBZPawnDynamicDelegate__DelegateSignature;
 
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.OnPlayersCarryBagChanged
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_PlayerNearMetalDetector2_K2Node_ActorBoundEvent_23_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_PlayerNearMetalDetector2_K2Node_ActorBoundEvent_23_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_PlayerNearMetalDetector2_K2Node_ActorBoundEvent_23_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_PlayerNearMetalDetector1_K2Node_ActorBoundEvent_25_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_PlayerNearMetalDetector1_K2Node_ActorBoundEvent_25_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_PlayerNearMetalDetector1_K2Node_ActorBoundEvent_25_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_MetalDet_K2Node_ActorBoundEvent_99_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_MetalDet_K2Node_ActorBoundEvent_99_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_MetalDet_K2Node_ActorBoundEvent_99_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_GunStore_K2Node_ActorBoundEvent_23_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_GunStore_K2Node_ActorBoundEvent_23_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_GunStore_K2Node_ActorBoundEvent_23_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_Gunstore_BackOffice_K2Node_ActorBoundEvent_89_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_Gunstore_BackOffice_K2Node_ActorBoundEvent_89_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_Gunstore_BackOffice_K2Node_ActorBoundEvent_89_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_Armory_K2Node_ActorBoundEvent_91_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_Armory_K2Node_ActorBoundEvent_91_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPlayerTriggerVolume_Armory_K2Node_ActorBoundEvent_91_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_SBZPlayerLookAtTrigger_Code3_K2Node_ActorBoundEvent_17_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPlayerLookAtTrigger_Code3_K2Node_ActorBoundEvent_17_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPlayerLookAtTrigger_Code3_K2Node_ActorBoundEvent_17_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_SBZPlayerLookAtTrigger_Code2_K2Node_ActorBoundEvent_9_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPlayerLookAtTrigger_Code2_K2Node_ActorBoundEvent_9_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPlayerLookAtTrigger_Code2_K2Node_ActorBoundEvent_9_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_SBZPlayerLookAtTrigger_Code1_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPlayerLookAtTrigger_Code1_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPlayerLookAtTrigger_Code1_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_SBZPawnSpawnPredefined_Manager1_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct G_Dema_Gunstore_C_OnPlayersCarryBagChanged final
+struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPawnSpawnPredefined_Manager1_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature final
 {
 public:
-	struct FSBZPlayersCarryBagChangedEvent        Data;                                              // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPawnSpawnPredefined_Manager1_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature;
 
-// Function G_Dema_Gunstore.G_Dema_Gunstore_C.SetGunstoreStoreAvailable
-// 0x0001 (0x0001 - 0x0000)
-struct G_Dema_Gunstore_C_SetGunstoreStoreAvailable final
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_SBZPawnSpawnPredefined_Gunstore_ManagerQR_K2Node_ActorBoundEvent_88_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPawnSpawnPredefined_Gunstore_ManagerQR_K2Node_ActorBoundEvent_88_SBZSpawnRequestCompletedDelegate__DelegateSignature final
 {
 public:
-	bool                                          StoreAvailable_0;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZPawnSpawnPredefined_Gunstore_ManagerQR_K2Node_ActorBoundEvent_88_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_SBZModifiableTimer_ThermalLance_K2Node_ActorBoundEvent_75_SBZProgressionReachedDelegate__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZModifiableTimer_ThermalLance_K2Node_ActorBoundEvent_75_SBZProgressionReachedDelegate__DelegateSignature final
+{
+public:
+	int32                                         ProgressionIndexReached;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZModifiableTimer_ThermalLance_K2Node_ActorBoundEvent_75_SBZProgressionReachedDelegate__DelegateSignature;
+
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_SBZBagTriggerVolume_PlasmaCutterBags_K2Node_ActorBoundEvent_68_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZBagTriggerVolume_PlasmaCutterBags_K2Node_ActorBoundEvent_68_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZBagTriggerVolume_PlasmaCutterBags_K2Node_ActorBoundEvent_68_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_SBZBagTriggerVolume_LanceBags2_K2Node_ActorBoundEvent_12_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZBagTriggerVolume_LanceBags2_K2Node_ActorBoundEvent_12_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_SBZBagTriggerVolume_LanceBags2_K2Node_ActorBoundEvent_12_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_BP_SHI_INT_Door_Single_Reinforced_2_K2Node_ActorBoundEvent_38_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_BP_SHI_INT_Door_Single_Reinforced_2_K2Node_ActorBoundEvent_38_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_BP_SHI_INT_Door_Single_Reinforced_2_K2Node_ActorBoundEvent_38_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_BP_SHI_INT_Door_Single_Reinforced_01_2_K2Node_ActorBoundEvent_37_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_BP_SHI_INT_Door_Single_Reinforced_01_2_K2Node_ActorBoundEvent_37_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_BP_SHI_INT_Door_Single_Reinforced_01_2_K2Node_ActorBoundEvent_37_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_BP_Int_Door_01_SmallVault_2_K2Node_ActorBoundEvent_48_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_BP_Int_Door_01_SmallVault_2_K2Node_ActorBoundEvent_48_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_BP_Int_Door_01_SmallVault_2_K2Node_ActorBoundEvent_48_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_BP_DEM_ExplodingWall_2_K2Node_ActorBoundEvent_49_SBZOnChargesChangedDelegate__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_BP_DEM_ExplodingWall_2_K2Node_ActorBoundEvent_49_SBZOnChargesChangedDelegate__DelegateSignature final
+{
+public:
+	int32                                         NewCount;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_BP_DEM_ExplodingWall_2_K2Node_ActorBoundEvent_49_SBZOnChargesChangedDelegate__DelegateSignature;
+
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_BP_ConnectedMaintenanceBox_2_K2Node_ActorBoundEvent_25_SBZMaintenanceBoxBoolDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_BP_ConnectedMaintenanceBox_2_K2Node_ActorBoundEvent_25_SBZMaintenanceBoxBoolDelegate__DelegateSignature final
+{
+public:
+	bool                                          bSuccessful;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_BP_ConnectedMaintenanceBox_2_K2Node_ActorBoundEvent_25_SBZMaintenanceBoxBoolDelegate__DelegateSignature;
+
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_BP_ConnectedCableBox_Guaranteed_K2Node_ActorBoundEvent_92_SBZOnCompleteDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_BP_ConnectedCableBox_Guaranteed_K2Node_ActorBoundEvent_92_SBZOnCompleteDelegate__DelegateSignature final
+{
+public:
+	bool                                          bWasSuccess;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_BP_ConnectedCableBox_Guaranteed_K2Node_ActorBoundEvent_92_SBZOnCompleteDelegate__DelegateSignature;
+
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_BP_ConnectedCableBox_Guaranteed4_K2Node_ActorBoundEvent_94_SBZOnCompleteDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_BP_ConnectedCableBox_Guaranteed4_K2Node_ActorBoundEvent_94_SBZOnCompleteDelegate__DelegateSignature final
+{
+public:
+	bool                                          bWasSuccess;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_BP_ConnectedCableBox_Guaranteed4_K2Node_ActorBoundEvent_94_SBZOnCompleteDelegate__DelegateSignature;
+
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_BP_ConnectedCableBox_Guaranteed3_K2Node_ActorBoundEvent_95_SBZOnCompleteDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_BP_ConnectedCableBox_Guaranteed3_K2Node_ActorBoundEvent_95_SBZOnCompleteDelegate__DelegateSignature final
+{
+public:
+	bool                                          bWasSuccess;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_BP_ConnectedCableBox_Guaranteed3_K2Node_ActorBoundEvent_95_SBZOnCompleteDelegate__DelegateSignature;
+
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.BndEvt__G_Dema_Gunstore_BP_ConnectedCableBox_Guaranteed2_1_K2Node_ActorBoundEvent_96_SBZOnCompleteDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_BP_ConnectedCableBox_Guaranteed2_1_K2Node_ActorBoundEvent_96_SBZOnCompleteDelegate__DelegateSignature final
+{
+public:
+	bool                                          bWasSuccess;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_BndEvt__G_Dema_Gunstore_BP_ConnectedCableBox_Guaranteed2_1_K2Node_ActorBoundEvent_96_SBZOnCompleteDelegate__DelegateSignature;
+
+// Function G_Dema_Gunstore.G_Dema_Gunstore_C.ArmoryLoudPuzzlePicked
+// 0x0004 (0x0004 - 0x0000)
+struct G_Dema_Gunstore_C_ArmoryLoudPuzzlePicked final
+{
+public:
+	int32                                         ArmoryLoudPuzzleInt;                               // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Dema_Gunstore_C_ArmoryLoudPuzzlePicked;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

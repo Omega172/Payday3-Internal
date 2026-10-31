@@ -18,27 +18,27 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Throwable_FragGrenade.BP_Throwable_FragGrenade_C
-// 0x0040 (0x8F60 - 0x8F20)
+// 0x0040 (0x07C0 - 0x0780)
 class ABP_Throwable_FragGrenade_C : public ASBZFragGrenade
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x8F20(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UNiagaraComponent*                      FX_GrenadeTrail;                                   // 0x8F28(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UBillboardComponent*                    DebugBillboard;                                    // 0x8F30(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Mesh_Lever;                                        // 0x8F38(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                OwnerVelocity;                                     // 0x8F40(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                 SBZ_Debris_Lever;                                  // 0x8F58(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0780(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UNiagaraComponent*                      FX_GrenadeTrail;                                   // 0x0788(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UBillboardComponent*                    DebugBillboard;                                    // 0x0790(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Mesh_Lever;                                        // 0x0798(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                OwnerVelocity;                                     // 0x07A0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                 SBZ_Debris_Lever;                                  // 0x07B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_Throwable_FragGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity);
-	void BndEvt__BP_Throwable_FragGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature(const struct FHitResult& ImpactResult);
-	void ExecuteUbergraph_BP_Throwable_FragGrenade(int32 EntryPoint);
-	void OnArmed();
-	void OnThrow();
-	void ReceiveTick(float DeltaSeconds);
-	void SpawnPopoffLever(class UClass* SBZ_Debris_Lever_0);
-	void StartRandomRot();
 	void StopRandomRot();
+	void StartRandomRot();
+	void SpawnPopoffLever(class UClass* SBZ_Debris_Lever_0);
+	void ReceiveTick(float DeltaSeconds);
+	void OnThrow();
+	void OnArmed();
+	void ExecuteUbergraph_BP_Throwable_FragGrenade(int32 EntryPoint);
+	void BndEvt__BP_Throwable_FragGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature(const struct FHitResult& ImpactResult);
+	void BndEvt__BP_Throwable_FragGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity);
 
 public:
 	static class UClass* StaticClass()
@@ -54,5 +54,6 @@ public:
 		return GetDefaultObjImpl<ABP_Throwable_FragGrenade_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Throwable_FragGrenade_C;
 
 SDK_NAMESPACE_END

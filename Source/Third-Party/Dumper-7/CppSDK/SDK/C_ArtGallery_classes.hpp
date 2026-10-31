@@ -25,9 +25,9 @@ public:
 	class ALevelSequenceActor*                    C_UnderTheSurphaze_Master_02_2_ExecuteUbergraph_C_ArtGallery_RefProperty; // 0x03D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_C_ArtGallery(int32 EntryPoint);
-	void IntroSequenceChanged(bool bIsStarted);
 	void OnIntroFinished();
+	void IntroSequenceChanged(bool bIsStarted_IntroSequenceChanged);
+	void ExecuteUbergraph_C_ArtGallery(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -43,5 +43,6 @@ public:
 		return GetDefaultObjImpl<AC_ArtGallery_C>();
 	}
 };
+DUMPER7_ASSERTS_AC_ArtGallery_C;
 
 SDK_NAMESPACE_END

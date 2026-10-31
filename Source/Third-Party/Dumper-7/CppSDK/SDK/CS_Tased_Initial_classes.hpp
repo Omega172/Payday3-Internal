@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UCS_Tased_Initial_C>();
 	}
 };
+DUMPER7_ASSERTS_UCS_Tased_Initial_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UBP_TargetFinderSorted_Civilian_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_TargetFinderSorted_Civilian_C;
 
 SDK_NAMESPACE_END

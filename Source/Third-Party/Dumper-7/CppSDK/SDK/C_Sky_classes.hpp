@@ -27,10 +27,10 @@ public:
 	class ALevelSequenceActor*                    C_Sky_Master_2_ExecuteUbergraph_C_Sky_RefProperty; // 0x03E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BlackScreenStarted();
-	void ExecuteUbergraph_C_Sky(int32 EntryPoint);
-	void IntroSequenceChanged(bool bIsStarted);
 	void OnIntroFinished();
+	void IntroSequenceChanged(bool bIsStarted_IntroSequenceChanged);
+	void ExecuteUbergraph_C_Sky(int32 EntryPoint);
+	void BlackScreenStarted();
 
 public:
 	static class UClass* StaticClass()
@@ -46,5 +46,6 @@ public:
 		return GetDefaultObjImpl<AC_Sky_C>();
 	}
 };
+DUMPER7_ASSERTS_AC_Sky_C;
 
 SDK_NAMESPACE_END

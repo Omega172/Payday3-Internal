@@ -14,15 +14,23 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_LoadoutMannequin.BP_LoadoutMannequin_C.BndEvt__BP_LoadoutMannequin_SBZInteractable2_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_LoadoutMannequin_C_BndEvt__BP_LoadoutMannequin_SBZInteractable2_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature final
+// Function BP_LoadoutMannequin.BP_LoadoutMannequin_C.UserConstructionScript
+// 0x0008 (0x0008 - 0x0000)
+struct BP_LoadoutMannequin_C_UserConstructionScript final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable_0;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_LoadoutMannequin_C_UserConstructionScript;
+
+// Function BP_LoadoutMannequin.BP_LoadoutMannequin_C.SetLabel
+// 0x0010 (0x0010 - 0x0000)
+struct BP_LoadoutMannequin_C_SetLabel final
+{
+public:
+	class FText                                   Label;                                             // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_BP_LoadoutMannequin_C_SetLabel;
 
 // Function BP_LoadoutMannequin.BP_LoadoutMannequin_C.ExecuteUbergraph_BP_LoadoutMannequin
 // 0x0058 (0x0058 - 0x0000)
@@ -46,22 +54,18 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_LoadoutMannequin_C_ExecuteUbergraph_BP_LoadoutMannequin;
 
-// Function BP_LoadoutMannequin.BP_LoadoutMannequin_C.SetLabel
-// 0x0010 (0x0010 - 0x0000)
-struct BP_LoadoutMannequin_C_SetLabel final
+// Function BP_LoadoutMannequin.BP_LoadoutMannequin_C.BndEvt__BP_LoadoutMannequin_SBZInteractable2_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_LoadoutMannequin_C_BndEvt__BP_LoadoutMannequin_SBZInteractable2_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature final
 {
 public:
-	class FText                                   Label;                                             // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_LoadoutMannequin.BP_LoadoutMannequin_C.UserConstructionScript
-// 0x0008 (0x0008 - 0x0000)
-struct BP_LoadoutMannequin_C_UserConstructionScript final
-{
-public:
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_LoadoutMannequin_C_BndEvt__BP_LoadoutMannequin_SBZInteractable2_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

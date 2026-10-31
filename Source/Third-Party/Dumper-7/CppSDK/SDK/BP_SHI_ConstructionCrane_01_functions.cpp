@@ -16,23 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_SHI_ConstructionCrane_01.BP_SHI_ConstructionCrane_01_C.BndEvt__BP_SHI_ConstructionCrane_01_containerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature
-// (BlueprintEvent)
+// Function BP_SHI_ConstructionCrane_01.BP_SHI_ConstructionCrane_01_C.setContainerVisibility
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bState                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SHI_ConstructionCrane_01_C::BndEvt__BP_SHI_ConstructionCrane_01_containerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics)
+void ABP_SHI_ConstructionCrane_01_C::setContainerVisibility(bool enabled)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setContainerVisibility", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SHI_ConstructionCrane_01_C", "BndEvt__BP_SHI_ConstructionCrane_01_containerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature");
+	Params::BP_SHI_ConstructionCrane_01_C_setContainerVisibility Parms{};
 
-	Params::BP_SHI_ConstructionCrane_01_C_BndEvt__BP_SHI_ConstructionCrane_01_containerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature Parms{};
-
-	Parms.bState = bState;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.enabled = enabled;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -45,10 +41,8 @@ void ABP_SHI_ConstructionCrane_01_C::BndEvt__BP_SHI_ConstructionCrane_01_contain
 
 void ABP_SHI_ConstructionCrane_01_C::ExecuteUbergraph_BP_SHI_ConstructionCrane_01(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SHI_ConstructionCrane_01_C", "ExecuteUbergraph_BP_SHI_ConstructionCrane_01");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_SHI_ConstructionCrane_01_C", "ExecuteUbergraph_BP_SHI_ConstructionCrane_01", FuncInfo);
 
 	Params::BP_SHI_ConstructionCrane_01_C_ExecuteUbergraph_BP_SHI_ConstructionCrane_01 Parms{};
 
@@ -58,21 +52,21 @@ void ABP_SHI_ConstructionCrane_01_C::ExecuteUbergraph_BP_SHI_ConstructionCrane_0
 }
 
 
-// Function BP_SHI_ConstructionCrane_01.BP_SHI_ConstructionCrane_01_C.setContainerVisibility
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_SHI_ConstructionCrane_01.BP_SHI_ConstructionCrane_01_C.BndEvt__BP_SHI_ConstructionCrane_01_containerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// bool                                    enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bState                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SHI_ConstructionCrane_01_C::setContainerVisibility(bool enabled)
+void ABP_SHI_ConstructionCrane_01_C::BndEvt__BP_SHI_ConstructionCrane_01_containerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_SHI_ConstructionCrane_01_containerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SHI_ConstructionCrane_01_C", "setContainerVisibility");
+	Params::BP_SHI_ConstructionCrane_01_C_BndEvt__BP_SHI_ConstructionCrane_01_containerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature Parms{};
 
-	Params::BP_SHI_ConstructionCrane_01_C_setContainerVisibility Parms{};
-
-	Parms.enabled = enabled;
+	Parms.bState = bState;
+	Parms.bDoCosmetics = bDoCosmetics;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

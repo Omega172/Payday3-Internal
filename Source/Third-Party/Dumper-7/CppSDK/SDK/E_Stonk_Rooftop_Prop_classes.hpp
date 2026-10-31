@@ -36,10 +36,10 @@ public:
 	class ASBZDestroyGroup*                       SBZDestroy_PowerRoomDeco1_ExecuteUbergraph_E_Stonk_Rooftop_Prop_RefProperty; // 0x0430(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_E_Stonk_Rooftop_Prop(int32 EntryPoint);
-	void StonkPowerRoom1();
-	void StonkPowerRoom2();
 	void StonkPowerRoom3();
+	void StonkPowerRoom2();
+	void StonkPowerRoom1();
+	void ExecuteUbergraph_E_Stonk_Rooftop_Prop(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -55,5 +55,6 @@ public:
 		return GetDefaultObjImpl<AE_Stonk_Rooftop_Prop_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_Stonk_Rooftop_Prop_C;
 
 SDK_NAMESPACE_END

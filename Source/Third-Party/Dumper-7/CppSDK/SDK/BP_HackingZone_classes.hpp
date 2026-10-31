@@ -34,13 +34,13 @@ public:
 	double                                        TimeEnabled;                                       // 0x03A0(0x0008)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_EnabledStateChanged(bool bNewState, bool bDoCosmetics);
-	void BP_OnOverlapBegin(bool bDoCosmetics);
-	void BP_OnOverlapEnd(bool bDoCosmetics);
-	void ExecuteUbergraph_BP_HackingZone(int32 EntryPoint);
-	void ReceiveTick(float DeltaSeconds);
-	void Timeline_ON__FinishedFunc();
 	void Timeline_ON__UpdateFunc();
+	void Timeline_ON__FinishedFunc();
+	void ReceiveTick(float DeltaSeconds_ReceiveTick);
+	void ExecuteUbergraph_BP_HackingZone(int32 EntryPoint);
+	void BP_OnOverlapEnd(bool bDoCosmetics_BP_OnOverlapEnd);
+	void BP_OnOverlapBegin(bool bDoCosmetics_BP_OnOverlapBegin);
+	void BP_EnabledStateChanged(bool bNewState_BP_EnabledStateChanged, bool bDoCosmetics_BP_EnabledStateChanged);
 
 public:
 	static class UClass* StaticClass()
@@ -56,5 +56,6 @@ public:
 		return GetDefaultObjImpl<ABP_HackingZone_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_HackingZone_C;
 
 SDK_NAMESPACE_END

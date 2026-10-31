@@ -16,31 +16,33 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_WoodenFence_01.BP_WoodenFence_01_C.calculate mesh bound offset
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_WoodenFence_01.BP_WoodenFence_01_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_WoodenFence_01_C::calculate_mesh_bound_offset()
+void ABP_WoodenFence_01_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WoodenFence_01_C", "calculate mesh bound offset");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_WoodenFence_01.BP_WoodenFence_01_C.compensate for scale
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_WoodenFence_01.BP_WoodenFence_01_C.round for minimum scaling
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_WoodenFence_01_C::compensate_for_scale()
+int32 ABP_WoodenFence_01_C::round_for_minimum_scaling()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"round for minimum scaling", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WoodenFence_01_C", "compensate for scale");
+	Params::BP_WoodenFence_01_C_round_for_minimum_scaling Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 
@@ -53,10 +55,8 @@ void ABP_WoodenFence_01_C::compensate_for_scale()
 
 void ABP_WoodenFence_01_C::get_and_clamp_location_and_tangent_at_distance(double Distance, struct FVector* Location, struct FVector* Tangent)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WoodenFence_01_C", "get and clamp location and tangent at distance");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"get and clamp location and tangent at distance", FnName));
 
 	Params::BP_WoodenFence_01_C_get_and_clamp_location_and_tangent_at_distance Parms{};
 
@@ -72,35 +72,25 @@ void ABP_WoodenFence_01_C::get_and_clamp_location_and_tangent_at_distance(double
 }
 
 
-// Function BP_WoodenFence_01.BP_WoodenFence_01_C.round for minimum scaling
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_WoodenFence_01.BP_WoodenFence_01_C.compensate for scale
+// (Public, BlueprintCallable, BlueprintEvent)
 
-int32 ABP_WoodenFence_01_C::round_for_minimum_scaling()
+void ABP_WoodenFence_01_C::compensate_for_scale()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"compensate for scale", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WoodenFence_01_C", "round for minimum scaling");
-
-	Params::BP_WoodenFence_01_C_round_for_minimum_scaling Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_WoodenFence_01.BP_WoodenFence_01_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_WoodenFence_01.BP_WoodenFence_01_C.calculate mesh bound offset
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_WoodenFence_01_C::UserConstructionScript()
+void ABP_WoodenFence_01_C::calculate_mesh_bound_offset()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WoodenFence_01_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"calculate mesh bound offset", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

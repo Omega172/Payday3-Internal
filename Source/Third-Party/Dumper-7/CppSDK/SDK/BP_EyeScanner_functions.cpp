@@ -16,35 +16,113 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_EyeScanner.BP_EyeScanner_C.addMarker
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function BP_EyeScanner.BP_EyeScanner_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_EyeScanner_C::addMarker()
+void ABP_EyeScanner_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EyeScanner_C", "addMarker");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_EyeScanner.BP_EyeScanner_C.addTrackedPawn
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function BP_EyeScanner.BP_EyeScanner_C.OnHumanShieldManager
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class ASBZAICharacter*&           pawn                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+// class ASBZAICharacter*                  Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCharacter*                    Instigator                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bHumanShield                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_EyeScanner_C::addTrackedPawn(const class ASBZAICharacter*& pawn)
+void ABP_EyeScanner_C::OnHumanShieldManager(class ASBZAICharacter* Character, class ASBZCharacter* Instigator, bool bHumanShield)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnHumanShieldManager", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EyeScanner_C", "addTrackedPawn");
+	Params::BP_EyeScanner_C_OnHumanShieldManager Parms{};
 
-	Params::BP_EyeScanner_C_addTrackedPawn Parms{};
+	Parms.Character = Character;
+	Parms.Instigator = Instigator;
+	Parms.bHumanShield = bHumanShield;
 
-	Parms.pawn = pawn;
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_EyeScanner.BP_EyeScanner_C.onAISpawned
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_EyeScanner_C::onAISpawned(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"onAISpawned", FnName));
+
+	Params::BP_EyeScanner_C_onAISpawned Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_EyeScanner.BP_EyeScanner_C.GetMarkerText
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+class FText ABP_EyeScanner_C::GetMarkerText()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetMarkerText", FnName));
+
+	Params::BP_EyeScanner_C_GetMarkerText Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_EyeScanner.BP_EyeScanner_C.ExecuteUbergraph_BP_EyeScanner
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_EyeScanner_C::ExecuteUbergraph_BP_EyeScanner(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_EyeScanner_C", "ExecuteUbergraph_BP_EyeScanner", FuncInfo);
+
+	Params::BP_EyeScanner_C_ExecuteUbergraph_BP_EyeScanner Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_EyeScanner.BP_EyeScanner_C.BP_OnStateChanged
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZEyeScannerState                     OldState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZEyeScannerState                     NewState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_BP_OnStateChanged                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_EyeScanner_C::BP_OnStateChanged(ESBZEyeScannerState OldState_BP_OnStateChanged, ESBZEyeScannerState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnStateChanged", FnName));
+
+	Params::BP_EyeScanner_C_BP_OnStateChanged Parms{};
+
+	Parms.OldState_BP_OnStateChanged = OldState_BP_OnStateChanged;
+	Parms.NewState_BP_OnStateChanged = NewState_BP_OnStateChanged;
+	Parms.bDoCosmetics_BP_OnStateChanged = bDoCosmetics_BP_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -58,10 +136,8 @@ void ABP_EyeScanner_C::addTrackedPawn(const class ASBZAICharacter*& pawn)
 
 void ABP_EyeScanner_C::BndEvt__BP_EyeScanner_markerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EyeScanner_C", "BndEvt__BP_EyeScanner_markerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_EyeScanner_markerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature", FnName));
 
 	Params::BP_EyeScanner_C_BndEvt__BP_EyeScanner_markerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature Parms{};
 
@@ -72,125 +148,31 @@ void ABP_EyeScanner_C::BndEvt__BP_EyeScanner_markerVisibility_SBZBinaryState_K2N
 }
 
 
-// Function BP_EyeScanner.BP_EyeScanner_C.BP_OnStateChanged
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+// Function BP_EyeScanner.BP_EyeScanner_C.addTrackedPawn
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ESBZEyeScannerState                     OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZEyeScannerState                     NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class ASBZAICharacter*&           pawn                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 
-void ABP_EyeScanner_C::BP_OnStateChanged(ESBZEyeScannerState OldState, ESBZEyeScannerState NewState, bool bDoCosmetics)
+void ABP_EyeScanner_C::addTrackedPawn(const class ASBZAICharacter*& pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"addTrackedPawn", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EyeScanner_C", "BP_OnStateChanged");
+	Params::BP_EyeScanner_C_addTrackedPawn Parms{};
 
-	Params::BP_EyeScanner_C_BP_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.pawn = pawn;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_EyeScanner.BP_EyeScanner_C.ExecuteUbergraph_BP_EyeScanner
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_EyeScanner.BP_EyeScanner_C.addMarker
+// (Private, BlueprintCallable, BlueprintEvent)
 
-void ABP_EyeScanner_C::ExecuteUbergraph_BP_EyeScanner(int32 EntryPoint)
+void ABP_EyeScanner_C::addMarker()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EyeScanner_C", "ExecuteUbergraph_BP_EyeScanner");
-
-	Params::BP_EyeScanner_C_ExecuteUbergraph_BP_EyeScanner Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_EyeScanner.BP_EyeScanner_C.GetMarkerText
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-class FText ABP_EyeScanner_C::GetMarkerText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EyeScanner_C", "GetMarkerText");
-
-	Params::BP_EyeScanner_C_GetMarkerText Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function BP_EyeScanner.BP_EyeScanner_C.onAISpawned
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_EyeScanner_C::onAISpawned(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EyeScanner_C", "onAISpawned");
-
-	Params::BP_EyeScanner_C_onAISpawned Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_EyeScanner.BP_EyeScanner_C.OnHumanShieldManager
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class ASBZAICharacter*                  Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCharacter*                    Instigator_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    bHumanShield                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_EyeScanner_C::OnHumanShieldManager(class ASBZAICharacter* Character, class ASBZCharacter* Instigator_0, bool bHumanShield)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EyeScanner_C", "OnHumanShieldManager");
-
-	Params::BP_EyeScanner_C_OnHumanShieldManager Parms{};
-
-	Parms.Character = Character;
-	Parms.Instigator_0 = Instigator_0;
-	Parms.bHumanShield = bHumanShield;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_EyeScanner.BP_EyeScanner_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_EyeScanner_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EyeScanner_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"addMarker", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

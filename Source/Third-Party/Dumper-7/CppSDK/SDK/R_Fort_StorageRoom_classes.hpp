@@ -29,8 +29,8 @@ public:
 	bool                                          VarCanistersEnabled;                               // 0x03E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_R_Fort_StorageRoom(int32 EntryPoint);
 	void RandomizedRoomTest_RemoteEvent1();
+	void ExecuteUbergraph_R_Fort_StorageRoom(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -46,5 +46,6 @@ public:
 		return GetDefaultObjImpl<AR_Fort_StorageRoom_C>();
 	}
 };
+DUMPER7_ASSERTS_AR_Fort_StorageRoom_C;
 
 SDK_NAMESPACE_END

@@ -16,117 +16,69 @@
 
 SDK_NAMESPACE_START
 
-// Function G_Stonk_Navlinks.G_Stonk_Navlinks_C.BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak2_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function G_Stonk_Navlinks.G_Stonk_Navlinks_C.PPZiplineDestroyWindows
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Stonk_Navlinks_C::BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak2_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+void AG_Stonk_Navlinks_C::PPZiplineDestroyWindows()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PPZiplineDestroyWindows", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_Navlinks_C", "BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak2_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::G_Stonk_Navlinks_C_BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak2_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
 
-	Parms.Identifier = Identifier;
-	Parms.Actor = Actor;
-	Parms.CurrentTotalActors = CurrentTotalActors;
+// Function G_Stonk_Navlinks.G_Stonk_Navlinks_C.HeistStateChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EPD3HeistState                          OldHeistState_HeistStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPD3HeistState                          CurrentHeistState_HeistStateChanged                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Stonk_Navlinks_C::HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HeistStateChanged", FnName));
+
+	Params::G_Stonk_Navlinks_C_HeistStateChanged Parms{};
+
+	Parms.OldHeistState_HeistStateChanged = OldHeistState_HeistStateChanged;
+	Parms.CurrentHeistState_HeistStateChanged = CurrentHeistState_HeistStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Stonk_Navlinks.G_Stonk_Navlinks_C.BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak3_K2Node_ActorBoundEvent_3_SBZFilterActorDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
+// Function G_Stonk_Navlinks.G_Stonk_Navlinks_C.ExecuteUbergraph_G_Stonk_Navlinks
+// (Final, UbergraphFunction)
 // Parameters:
-// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Stonk_Navlinks_C::BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak3_K2Node_ActorBoundEvent_3_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+void AG_Stonk_Navlinks_C::ExecuteUbergraph_G_Stonk_Navlinks(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_Stonk_Navlinks_C", "ExecuteUbergraph_G_Stonk_Navlinks", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_Navlinks_C", "BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak3_K2Node_ActorBoundEvent_3_SBZFilterActorDynamicDelegate__DelegateSignature");
+	Params::G_Stonk_Navlinks_C_ExecuteUbergraph_G_Stonk_Navlinks Parms{};
 
-	Params::G_Stonk_Navlinks_C_BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak3_K2Node_ActorBoundEvent_3_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Identifier = Identifier;
-	Parms.Actor = Actor;
-	Parms.CurrentTotalActors = CurrentTotalActors;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Stonk_Navlinks.G_Stonk_Navlinks_C.BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak4_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature
+// Function G_Stonk_Navlinks.G_Stonk_Navlinks_C.BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Stonk_Navlinks_C::BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak4_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+void AG_Stonk_Navlinks_C::BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_Navlinks_C", "BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak4_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature");
-
-	Params::G_Stonk_Navlinks_C_BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak4_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Identifier = Identifier;
-	Parms.Actor = Actor;
-	Parms.CurrentTotalActors = CurrentTotalActors;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Stonk_Navlinks.G_Stonk_Navlinks_C.BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak5_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Stonk_Navlinks_C::BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak5_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_Navlinks_C", "BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak5_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature");
-
-	Params::G_Stonk_Navlinks_C_BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak5_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Identifier = Identifier;
-	Parms.Actor = Actor;
-	Parms.CurrentTotalActors = CurrentTotalActors;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Stonk_Navlinks.G_Stonk_Navlinks_C.BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak6_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Stonk_Navlinks_C::BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak6_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_Navlinks_C", "BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak6_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature");
-
-	Params::G_Stonk_Navlinks_C_BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak6_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
+	Params::G_Stonk_Navlinks_C_BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
 
 	Parms.Identifier = Identifier;
 	Parms.Actor = Actor;
@@ -145,10 +97,8 @@ void AG_Stonk_Navlinks_C::BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_Glas
 
 void AG_Stonk_Navlinks_C::BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak7_K2Node_ActorBoundEvent_7_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_Navlinks_C", "BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak7_K2Node_ActorBoundEvent_7_SBZFilterActorDynamicDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak7_K2Node_ActorBoundEvent_7_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
 
 	Params::G_Stonk_Navlinks_C_BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak7_K2Node_ActorBoundEvent_7_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
 
@@ -160,21 +110,19 @@ void AG_Stonk_Navlinks_C::BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_Glas
 }
 
 
-// Function G_Stonk_Navlinks.G_Stonk_Navlinks_C.BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature
+// Function G_Stonk_Navlinks.G_Stonk_Navlinks_C.BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak6_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Stonk_Navlinks_C::BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+void AG_Stonk_Navlinks_C::BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak6_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak6_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_Navlinks_C", "BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature");
-
-	Params::G_Stonk_Navlinks_C_BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
+	Params::G_Stonk_Navlinks_C_BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak6_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
 
 	Parms.Identifier = Identifier;
 	Parms.Actor = Actor;
@@ -184,59 +132,91 @@ void AG_Stonk_Navlinks_C::BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_Glas
 }
 
 
-// Function G_Stonk_Navlinks.G_Stonk_Navlinks_C.ExecuteUbergraph_G_Stonk_Navlinks
-// (Final, UbergraphFunction)
+// Function G_Stonk_Navlinks.G_Stonk_Navlinks_C.BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak5_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Stonk_Navlinks_C::ExecuteUbergraph_G_Stonk_Navlinks(int32 EntryPoint)
+void AG_Stonk_Navlinks_C::BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak5_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak5_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_Navlinks_C", "ExecuteUbergraph_G_Stonk_Navlinks");
+	Params::G_Stonk_Navlinks_C_BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak5_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
 
-	Params::G_Stonk_Navlinks_C_ExecuteUbergraph_G_Stonk_Navlinks Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Identifier = Identifier;
+	Parms.Actor = Actor;
+	Parms.CurrentTotalActors = CurrentTotalActors;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Stonk_Navlinks.G_Stonk_Navlinks_C.HeistStateChanged
-// (Event, Public, BlueprintEvent)
+// Function G_Stonk_Navlinks.G_Stonk_Navlinks_C.BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak4_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// EPD3HeistState                          OldHeistState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPD3HeistState                          CurrentHeistState                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Stonk_Navlinks_C::HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState)
+void AG_Stonk_Navlinks_C::BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak4_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak4_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_Navlinks_C", "HeistStateChanged");
+	Params::G_Stonk_Navlinks_C_BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak4_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
 
-	Params::G_Stonk_Navlinks_C_HeistStateChanged Parms{};
-
-	Parms.OldHeistState = OldHeistState;
-	Parms.CurrentHeistState = CurrentHeistState;
+	Parms.Identifier = Identifier;
+	Parms.Actor = Actor;
+	Parms.CurrentTotalActors = CurrentTotalActors;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Stonk_Navlinks.G_Stonk_Navlinks_C.PPZiplineDestroyWindows
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Stonk_Navlinks.G_Stonk_Navlinks_C.BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak3_K2Node_ActorBoundEvent_3_SBZFilterActorDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Stonk_Navlinks_C::PPZiplineDestroyWindows()
+void AG_Stonk_Navlinks_C::BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak3_K2Node_ActorBoundEvent_3_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak3_K2Node_ActorBoundEvent_3_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Stonk_Navlinks_C", "PPZiplineDestroyWindows");
+	Params::G_Stonk_Navlinks_C_BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak3_K2Node_ActorBoundEvent_3_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.Identifier = Identifier;
+	Parms.Actor = Actor;
+	Parms.CurrentTotalActors = CurrentTotalActors;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Stonk_Navlinks.G_Stonk_Navlinks_C.BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak2_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Stonk_Navlinks_C::BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak2_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak2_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Stonk_Navlinks_C_BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak2_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Identifier = Identifier;
+	Parms.Actor = Actor;
+	Parms.CurrentTotalActors = CurrentTotalActors;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

@@ -14,25 +14,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_ServerroomLight_State.BP_ServerroomLight_State_C.Change room state
-// 0x0010 (0x0010 - 0x0000)
-struct BP_ServerroomLight_State_C_Change_room_state final
-{
-public:
-	int32                                         Room_index;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          is_Active;                                         // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABP_DAT_ServerRoomFloorLight_01_C*      CallFunc_Array_Get_Item;                           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_ServerroomLight_State.BP_ServerroomLight_State_C.ExecuteUbergraph_BP_ServerroomLight_State
-// 0x0004 (0x0004 - 0x0000)
-struct BP_ServerroomLight_State_C_ExecuteUbergraph_BP_ServerroomLight_State final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_ServerroomLight_State.BP_ServerroomLight_State_C.Switch ALL room states
 // 0x0010 (0x0010 - 0x0000)
 struct BP_ServerroomLight_State_C_Switch_ALL_room_states final
@@ -44,6 +25,28 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ServerroomLight_State_C_Switch_ALL_room_states;
+
+// Function BP_ServerroomLight_State.BP_ServerroomLight_State_C.ExecuteUbergraph_BP_ServerroomLight_State
+// 0x0004 (0x0004 - 0x0000)
+struct BP_ServerroomLight_State_C_ExecuteUbergraph_BP_ServerroomLight_State final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ServerroomLight_State_C_ExecuteUbergraph_BP_ServerroomLight_State;
+
+// Function BP_ServerroomLight_State.BP_ServerroomLight_State_C.Change room state
+// 0x0010 (0x0010 - 0x0000)
+struct BP_ServerroomLight_State_C_Change_room_state final
+{
+public:
+	int32                                         Room_index;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          is_Active;                                         // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_DAT_ServerRoomFloorLight_01_C*      CallFunc_Array_Get_Item;                           // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ServerroomLight_State_C_Change_room_state;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -16,79 +16,37 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_RFIDTagReaderBase.BP_RFIDTagReaderBase_C.BndEvt__BP_KeycardReaderBase_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// Function BP_RFIDTagReaderBase.BP_RFIDTagReaderBase_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_RFIDTagReaderBase_C::UserConstructionScript()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_RFIDTagReaderBase.BP_RFIDTagReaderBase_C.Timeline_0__UpdateFunc
 // (BlueprintEvent)
-// Parameters:
-// const class USBZBaseInteractableComponent*InteractableComponent_0                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_RFIDTagReaderBase_C::BndEvt__BP_KeycardReaderBase_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent_0, bool bInNewState)
+void ABP_RFIDTagReaderBase_C::Timeline_0__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__UpdateFunc", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RFIDTagReaderBase_C", "BndEvt__BP_KeycardReaderBase_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature");
-
-	Params::BP_RFIDTagReaderBase_C_BndEvt__BP_KeycardReaderBase_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.InteractableComponent_0 = InteractableComponent_0;
-	Parms.bInNewState = bInNewState;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_RFIDTagReaderBase.BP_RFIDTagReaderBase_C.BP_OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// ESBZModuleActorState                    NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_RFIDTagReaderBase.BP_RFIDTagReaderBase_C.Timeline_0__FinishedFunc
+// (BlueprintEvent)
 
-void ABP_RFIDTagReaderBase_C::BP_OnStateChanged(ESBZModuleActorState NewState, bool bDoCosmetics)
+void ABP_RFIDTagReaderBase_C::Timeline_0__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RFIDTagReaderBase_C", "BP_OnStateChanged");
-
-	Params::BP_RFIDTagReaderBase_C_BP_OnStateChanged Parms{};
-
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_RFIDTagReaderBase.BP_RFIDTagReaderBase_C.ExecuteUbergraph_BP_RFIDTagReaderBase
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_RFIDTagReaderBase_C::ExecuteUbergraph_BP_RFIDTagReaderBase(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RFIDTagReaderBase_C", "ExecuteUbergraph_BP_RFIDTagReaderBase");
-
-	Params::BP_RFIDTagReaderBase_C_ExecuteUbergraph_BP_RFIDTagReaderBase Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_RFIDTagReaderBase.BP_RFIDTagReaderBase_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_RFIDTagReaderBase_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RFIDTagReaderBase_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__FinishedFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -102,10 +60,8 @@ void ABP_RFIDTagReaderBase_C::ReceiveBeginPlay()
 
 void ABP_RFIDTagReaderBase_C::SetPrimitiveAndVisability(class UPrimitiveComponent* StaticMesh_0, double Value)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RFIDTagReaderBase_C", "SetPrimitiveAndVisability");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetPrimitiveAndVisability", FnName));
 
 	Params::BP_RFIDTagReaderBase_C_SetPrimitiveAndVisability Parms{};
 
@@ -116,45 +72,73 @@ void ABP_RFIDTagReaderBase_C::SetPrimitiveAndVisability(class UPrimitiveComponen
 }
 
 
-// Function BP_RFIDTagReaderBase.BP_RFIDTagReaderBase_C.Timeline_0__FinishedFunc
-// (BlueprintEvent)
+// Function BP_RFIDTagReaderBase.BP_RFIDTagReaderBase_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_RFIDTagReaderBase_C::Timeline_0__FinishedFunc()
+void ABP_RFIDTagReaderBase_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RFIDTagReaderBase_C", "Timeline_0__FinishedFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_RFIDTagReaderBase.BP_RFIDTagReaderBase_C.Timeline_0__UpdateFunc
-// (BlueprintEvent)
+// Function BP_RFIDTagReaderBase.BP_RFIDTagReaderBase_C.ExecuteUbergraph_BP_RFIDTagReaderBase
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_RFIDTagReaderBase_C::Timeline_0__UpdateFunc()
+void ABP_RFIDTagReaderBase_C::ExecuteUbergraph_BP_RFIDTagReaderBase(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_RFIDTagReaderBase_C", "ExecuteUbergraph_BP_RFIDTagReaderBase", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RFIDTagReaderBase_C", "Timeline_0__UpdateFunc");
+	Params::BP_RFIDTagReaderBase_C_ExecuteUbergraph_BP_RFIDTagReaderBase Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_RFIDTagReaderBase.BP_RFIDTagReaderBase_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_RFIDTagReaderBase.BP_RFIDTagReaderBase_C.BP_OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZModuleActorState                    NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_RFIDTagReaderBase_C::UserConstructionScript()
+void ABP_RFIDTagReaderBase_C::BP_OnStateChanged(ESBZModuleActorState NewState, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RFIDTagReaderBase_C", "UserConstructionScript");
+	Params::BP_RFIDTagReaderBase_C_BP_OnStateChanged Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.NewState = NewState;
+	Parms.bDoCosmetics = bDoCosmetics;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_RFIDTagReaderBase.BP_RFIDTagReaderBase_C.BndEvt__BP_KeycardReaderBase_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// const class USBZBaseInteractableComponent*InteractableComponent_0                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_RFIDTagReaderBase_C::BndEvt__BP_KeycardReaderBase_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent_0, bool bInNewState)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_KeycardReaderBase_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature", FnName));
+
+	Params::BP_RFIDTagReaderBase_C_BndEvt__BP_KeycardReaderBase_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
+
+	Parms.InteractableComponent_0 = InteractableComponent_0;
+	Parms.bInNewState = bInNewState;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

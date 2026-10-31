@@ -16,23 +16,27 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Escape_Armored_van.BP_Escape_Armored_van_C.BndEvt__BP_EscapeVan_SBZSecuredBagVisualize_K2Node_ComponentBoundEvent_0_SBZSecuredBagVisualizeBagAddedSignature__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// const class USBZBagType*                BagType                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function BP_Escape_Armored_van.BP_Escape_Armored_van_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Escape_Armored_van_C::BndEvt__BP_EscapeVan_SBZSecuredBagVisualize_K2Node_ComponentBoundEvent_0_SBZSecuredBagVisualizeBagAddedSignature__DelegateSignature(const class USBZBagType* BagType)
+void ABP_Escape_Armored_van_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Escape_Armored_van_C", "BndEvt__BP_EscapeVan_SBZSecuredBagVisualize_K2Node_ComponentBoundEvent_0_SBZSecuredBagVisualizeBagAddedSignature__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_Escape_Armored_van_C_BndEvt__BP_EscapeVan_SBZSecuredBagVisualize_K2Node_ComponentBoundEvent_0_SBZSecuredBagVisualizeBagAddedSignature__DelegateSignature Parms{};
 
-	Parms.BagType = BagType;
+// Function BP_Escape_Armored_van.BP_Escape_Armored_van_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-	UObject::ProcessEvent(Func, &Parms);
+void ABP_Escape_Armored_van_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -43,10 +47,8 @@ void ABP_Escape_Armored_van_C::BndEvt__BP_EscapeVan_SBZSecuredBagVisualize_K2Nod
 
 void ABP_Escape_Armored_van_C::ExecuteUbergraph_BP_Escape_Armored_van(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Escape_Armored_van_C", "ExecuteUbergraph_BP_Escape_Armored_van");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Escape_Armored_van_C", "ExecuteUbergraph_BP_Escape_Armored_van", FuncInfo);
 
 	Params::BP_Escape_Armored_van_C_ExecuteUbergraph_BP_Escape_Armored_van Parms{};
 
@@ -56,31 +58,21 @@ void ABP_Escape_Armored_van_C::ExecuteUbergraph_BP_Escape_Armored_van(int32 Entr
 }
 
 
-// Function BP_Escape_Armored_van.BP_Escape_Armored_van_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_Escape_Armored_van.BP_Escape_Armored_van_C.BndEvt__BP_EscapeVan_SBZSecuredBagVisualize_K2Node_ComponentBoundEvent_0_SBZSecuredBagVisualizeBagAddedSignature__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// const class USBZBagType*                BagType                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Escape_Armored_van_C::ReceiveBeginPlay()
+void ABP_Escape_Armored_van_C::BndEvt__BP_EscapeVan_SBZSecuredBagVisualize_K2Node_ComponentBoundEvent_0_SBZSecuredBagVisualizeBagAddedSignature__DelegateSignature(const class USBZBagType* BagType)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_EscapeVan_SBZSecuredBagVisualize_K2Node_ComponentBoundEvent_0_SBZSecuredBagVisualizeBagAddedSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Escape_Armored_van_C", "ReceiveBeginPlay");
+	Params::BP_Escape_Armored_van_C_BndEvt__BP_EscapeVan_SBZSecuredBagVisualize_K2Node_ComponentBoundEvent_0_SBZSecuredBagVisualizeBagAddedSignature__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Parms.BagType = BagType;
 
-
-// Function BP_Escape_Armored_van.BP_Escape_Armored_van_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_Escape_Armored_van_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Escape_Armored_van_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

@@ -41,5 +41,6 @@ public:
 		return GetDefaultObjImpl<ABT_Pedestal_Light_C>();
 	}
 };
+DUMPER7_ASSERTS_ABT_Pedestal_Light_C;
 
 SDK_NAMESPACE_END

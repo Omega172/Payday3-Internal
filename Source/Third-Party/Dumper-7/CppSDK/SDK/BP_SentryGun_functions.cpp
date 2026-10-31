@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_SentryGun.BP_SentryGun_C.OnOverheatDamageTaken
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// float                                   InHealth_OnOverheatDamageTaken                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SentryGun_C::OnOverheatDamageTaken(float InHealth_OnOverheatDamageTaken)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnOverheatDamageTaken", FnName));
+
+	Params::BP_SentryGun_C_OnOverheatDamageTaken Parms{};
+
+	Parms.InHealth_OnOverheatDamageTaken = InHealth_OnOverheatDamageTaken;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_SentryGun.BP_SentryGun_C.ExecuteUbergraph_BP_SentryGun
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,34 +41,12 @@ SDK_NAMESPACE_START
 
 void ABP_SentryGun_C::ExecuteUbergraph_BP_SentryGun(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SentryGun_C", "ExecuteUbergraph_BP_SentryGun");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_SentryGun_C", "ExecuteUbergraph_BP_SentryGun", FuncInfo);
 
 	Params::BP_SentryGun_C_ExecuteUbergraph_BP_SentryGun Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SentryGun.BP_SentryGun_C.OnOverheatDamageTaken
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// float                                   InHealth                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SentryGun_C::OnOverheatDamageTaken(float InHealth)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SentryGun_C", "OnOverheatDamageTaken");
-
-	Params::BP_SentryGun_C_OnOverheatDamageTaken Parms{};
-
-	Parms.InHealth = InHealth;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

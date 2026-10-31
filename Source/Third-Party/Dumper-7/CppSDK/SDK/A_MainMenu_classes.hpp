@@ -10,23 +10,15 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Starbreeze_classes.hpp"
 
 
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass A_MainMenu.A_MainMenu_C
-// 0x0008 (0x0378 - 0x0370)
+// 0x0000 (0x0370 - 0x0370)
 class AA_MainMenu_C final : public ASBZLevelScriptMainMenuActor
 {
-public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0370(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-
-public:
-	void ExecuteUbergraph_A_MainMenu(int32 EntryPoint);
-	void ReceiveBeginPlay();
-
 public:
 	static class UClass* StaticClass()
 	{
@@ -41,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AA_MainMenu_C>();
 	}
 };
+DUMPER7_ASSERTS_AA_MainMenu_C;
 
 SDK_NAMESPACE_END

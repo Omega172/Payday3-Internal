@@ -19,8 +19,9 @@ SDK_PARAM_NAMESPACE_START
 struct BP_JewelryStore_BreachableWindow_C_GetPropDamageComponent final
 {
 public:
-	class USBZPropDamageComponent*                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZPropDamageComponent*                ReturnValue_GetPropDamageComponent;                // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_JewelryStore_BreachableWindow_C_GetPropDamageComponent;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

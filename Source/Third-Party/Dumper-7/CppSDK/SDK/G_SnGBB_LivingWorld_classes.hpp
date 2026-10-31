@@ -68,12 +68,12 @@ public:
 	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_Walker2_1_ExecuteUbergraph_G_SnGBB_LivingWorld_RefProperty; // 0x0528(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BankLobbySpawns();
-	void BlackScreenStarted();
-	void ExecuteUbergraph_G_SnGBB_LivingWorld(int32 EntryPoint);
-	void SpawnLifeActionsStreet();
-	void SpawnParkingLifeActions();
 	void SpawnWalkersStreet();
+	void SpawnParkingLifeActions();
+	void SpawnLifeActionsStreet();
+	void ExecuteUbergraph_G_SnGBB_LivingWorld(int32 EntryPoint);
+	void BlackScreenStarted();
+	void BankLobbySpawns();
 
 public:
 	static class UClass* StaticClass()
@@ -89,5 +89,6 @@ public:
 		return GetDefaultObjImpl<AG_SnGBB_LivingWorld_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_SnGBB_LivingWorld_C;
 
 SDK_NAMESPACE_END

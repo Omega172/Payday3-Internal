@@ -16,112 +16,21 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_ActionButton.WBP_UI_ActionButton_C.UpdateHover
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_ActionButton.WBP_UI_ActionButton_C.ExecuteUbergraph_WBP_UI_ActionButton
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// bool                                    bIsMouseOver                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_ActionButton_C::UpdateHover(bool bIsMouseOver)
+void UWBP_UI_ActionButton_C::ExecuteUbergraph_WBP_UI_ActionButton(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateHover", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_ActionButton_C", "ExecuteUbergraph_WBP_UI_ActionButton", FuncInfo);
 
-	Params::WBP_UI_ActionButton_C_UpdateHover Parms{};
+	Params::WBP_UI_ActionButton_C_ExecuteUbergraph_WBP_UI_ActionButton Parms{};
 
-	Parms.bIsMouseOver = bIsMouseOver;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ActionButton.WBP_UI_ActionButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_ActionButton_C::PreConstruct(bool IsDesignTime_PreConstruct)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_UI_ActionButton_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ActionButton.WBP_UI_ActionButton_C.OnMouseLeave
-// (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FPointerEvent&             MouseEvent_OnMouseLeave                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_UI_ActionButton_C::OnMouseLeave(const struct FPointerEvent& MouseEvent_OnMouseLeave)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnMouseLeave", FnName));
-
-	Params::WBP_UI_ActionButton_C_OnMouseLeave Parms{};
-
-	Parms.MouseEvent_OnMouseLeave = std::move(MouseEvent_OnMouseLeave);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ActionButton.WBP_UI_ActionButton_C.OnMouseEnter
-// (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry_OnMouseEnter                                (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// const struct FPointerEvent&             MouseEvent_OnMouseEnter                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_UI_ActionButton_C::OnMouseEnter(const struct FGeometry& MyGeometry_OnMouseEnter, const struct FPointerEvent& MouseEvent_OnMouseEnter)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnMouseEnter", FnName));
-
-	Params::WBP_UI_ActionButton_C_OnMouseEnter Parms{};
-
-	Parms.MyGeometry_OnMouseEnter = std::move(MyGeometry_OnMouseEnter);
-	Parms.MouseEvent_OnMouseEnter = std::move(MouseEvent_OnMouseEnter);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ActionButton.WBP_UI_ActionButton_C.OnMouseButtonDown
-// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry_OnMouseButtonDown                           (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// const struct FPointerEvent&             MouseEvent_OnMouseButtonDown                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// struct FEventReply                      ReturnValue_OnMouseButtonDown                          (Parm, OutParm, ReturnParm)
-
-struct FEventReply UWBP_UI_ActionButton_C::OnMouseButtonDown(const struct FGeometry& MyGeometry_OnMouseButtonDown, const struct FPointerEvent& MouseEvent_OnMouseButtonDown)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnMouseButtonDown", FnName));
-
-	Params::WBP_UI_ActionButton_C_OnMouseButtonDown Parms{};
-
-	Parms.MyGeometry_OnMouseButtonDown = std::move(MyGeometry_OnMouseButtonDown);
-	Parms.MouseEvent_OnMouseButtonDown = std::move(MouseEvent_OnMouseButtonDown);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_UI_ActionButton.WBP_UI_ActionButton_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_ActionButton_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -137,19 +46,110 @@ void UWBP_UI_ActionButton_C::InitializeWidgetVisuals()
 }
 
 
-// Function WBP_UI_ActionButton.WBP_UI_ActionButton_C.ExecuteUbergraph_WBP_UI_ActionButton
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_ActionButton.WBP_UI_ActionButton_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_UI_ActionButton_C::ExecuteUbergraph_WBP_UI_ActionButton(int32 EntryPoint)
+void UWBP_UI_ActionButton_C::OnInitialized()
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_ActionButton_C", "ExecuteUbergraph_WBP_UI_ActionButton", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
 
-	Params::WBP_UI_ActionButton_C_ExecuteUbergraph_WBP_UI_ActionButton Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function WBP_UI_ActionButton.WBP_UI_ActionButton_C.OnMouseButtonDown
+// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+struct FEventReply UWBP_UI_ActionButton_C::OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnMouseButtonDown", FnName));
+
+	Params::WBP_UI_ActionButton_C_OnMouseButtonDown Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.MouseEvent = std::move(MouseEvent);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_UI_ActionButton.WBP_UI_ActionButton_C.OnMouseEnter
+// (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_UI_ActionButton_C::OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnMouseEnter", FnName));
+
+	Params::WBP_UI_ActionButton_C_OnMouseEnter Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.MouseEvent = std::move(MouseEvent);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ActionButton.WBP_UI_ActionButton_C.OnMouseLeave
+// (BlueprintCosmetic, Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_UI_ActionButton_C::OnMouseLeave(const struct FPointerEvent& MouseEvent)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnMouseLeave", FnName));
+
+	Params::WBP_UI_ActionButton_C_OnMouseLeave Parms{};
+
+	Parms.MouseEvent = std::move(MouseEvent);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ActionButton.WBP_UI_ActionButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ActionButton_C::PreConstruct(bool IsDesignTime)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_UI_ActionButton_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_ActionButton.WBP_UI_ActionButton_C.UpdateHover
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bIsMouseOver                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_ActionButton_C::UpdateHover(bool bIsMouseOver)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateHover", FnName));
+
+	Params::WBP_UI_ActionButton_C_UpdateHover Parms{};
+
+	Parms.bIsMouseOver = bIsMouseOver;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

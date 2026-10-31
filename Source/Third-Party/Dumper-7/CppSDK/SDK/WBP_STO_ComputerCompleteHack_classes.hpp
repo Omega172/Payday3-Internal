@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<UWBP_STO_ComputerCompleteHack_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_STO_ComputerCompleteHack_C;
 
 SDK_NAMESPACE_END

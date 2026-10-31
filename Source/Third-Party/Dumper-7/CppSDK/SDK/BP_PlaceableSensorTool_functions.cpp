@@ -16,23 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_PlaceableSensorTool.BP_PlaceableSensorTool_C.ExecuteUbergraph_BP_PlaceableSensorTool
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_PlaceableSensorTool.BP_PlaceableSensorTool_C.OnSensorAmmoDepleted_Event_0
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_PlaceableSensorTool_C::ExecuteUbergraph_BP_PlaceableSensorTool(int32 EntryPoint)
+void ABP_PlaceableSensorTool_C::OnSensorAmmoDepleted_Event_0()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSensorAmmoDepleted_Event_0", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlaceableSensorTool_C", "ExecuteUbergraph_BP_PlaceableSensorTool");
-
-	Params::BP_PlaceableSensorTool_C_ExecuteUbergraph_BP_PlaceableSensorTool Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -41,26 +33,28 @@ void ABP_PlaceableSensorTool_C::ExecuteUbergraph_BP_PlaceableSensorTool(int32 En
 
 void ABP_PlaceableSensorTool_C::OnActivated()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlaceableSensorTool_C", "OnActivated");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnActivated", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_PlaceableSensorTool.BP_PlaceableSensorTool_C.OnSensorAmmoDepleted_Event_0
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_PlaceableSensorTool.BP_PlaceableSensorTool_C.ExecuteUbergraph_BP_PlaceableSensorTool
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PlaceableSensorTool_C::OnSensorAmmoDepleted_Event_0()
+void ABP_PlaceableSensorTool_C::ExecuteUbergraph_BP_PlaceableSensorTool(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_PlaceableSensorTool_C", "ExecuteUbergraph_BP_PlaceableSensorTool", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlaceableSensorTool_C", "OnSensorAmmoDepleted_Event_0");
+	Params::BP_PlaceableSensorTool_C_ExecuteUbergraph_BP_PlaceableSensorTool Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

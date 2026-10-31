@@ -16,23 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ShippingContainer_01_Long_Shell_01.BP_ShippingContainer_01_Long_Shell_01_C.ExecuteUbergraph_BP_ShippingContainer_01_Long_Shell_01
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ShippingContainer_01_Long_Shell_01.BP_ShippingContainer_01_Long_Shell_01_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_ShippingContainer_01_Long_Shell_01_C::ExecuteUbergraph_BP_ShippingContainer_01_Long_Shell_01(int32 EntryPoint)
+void ABP_ShippingContainer_01_Long_Shell_01_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShippingContainer_01_Long_Shell_01_C", "ExecuteUbergraph_BP_ShippingContainer_01_Long_Shell_01");
-
-	Params::BP_ShippingContainer_01_Long_Shell_01_C_ExecuteUbergraph_BP_ShippingContainer_01_Long_Shell_01 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -44,10 +36,8 @@ void ABP_ShippingContainer_01_Long_Shell_01_C::ExecuteUbergraph_BP_ShippingConta
 
 void ABP_ShippingContainer_01_Long_Shell_01_C::setBinaryState(bool state, bool doCosmetics)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShippingContainer_01_Long_Shell_01_C", "setBinaryState");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setBinaryState", FnName));
 
 	Params::BP_ShippingContainer_01_Long_Shell_01_C_setBinaryState Parms{};
 
@@ -58,17 +48,21 @@ void ABP_ShippingContainer_01_Long_Shell_01_C::setBinaryState(bool state, bool d
 }
 
 
-// Function BP_ShippingContainer_01_Long_Shell_01.BP_ShippingContainer_01_Long_Shell_01_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_ShippingContainer_01_Long_Shell_01.BP_ShippingContainer_01_Long_Shell_01_C.ExecuteUbergraph_BP_ShippingContainer_01_Long_Shell_01
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ShippingContainer_01_Long_Shell_01_C::UserConstructionScript()
+void ABP_ShippingContainer_01_Long_Shell_01_C::ExecuteUbergraph_BP_ShippingContainer_01_Long_Shell_01(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ShippingContainer_01_Long_Shell_01_C", "ExecuteUbergraph_BP_ShippingContainer_01_Long_Shell_01", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShippingContainer_01_Long_Shell_01_C", "UserConstructionScript");
+	Params::BP_ShippingContainer_01_Long_Shell_01_C_ExecuteUbergraph_BP_ShippingContainer_01_Long_Shell_01 Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

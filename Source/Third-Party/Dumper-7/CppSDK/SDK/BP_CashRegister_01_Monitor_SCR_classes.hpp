@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_CashRegister_01_Monitor_SCR_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CashRegister_01_Monitor_SCR_C;
 
 SDK_NAMESPACE_END

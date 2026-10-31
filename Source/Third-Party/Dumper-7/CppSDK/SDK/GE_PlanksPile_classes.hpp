@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_PlanksPile_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_PlanksPile_C;
 
 SDK_NAMESPACE_END

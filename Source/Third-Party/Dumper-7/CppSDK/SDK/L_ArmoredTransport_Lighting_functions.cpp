@@ -16,6 +16,18 @@
 
 SDK_NAMESPACE_START
 
+// Function L_ArmoredTransport_Lighting.L_ArmoredTransport_Lighting_C.SetVolumetricFogLight
+// (BlueprintCallable, BlueprintEvent)
+
+void AL_ArmoredTransport_Lighting_C::SetVolumetricFogLight()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetVolumetricFogLight", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function L_ArmoredTransport_Lighting.L_ArmoredTransport_Lighting_C.ExecuteUbergraph_L_ArmoredTransport_Lighting
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -23,30 +35,14 @@ SDK_NAMESPACE_START
 
 void AL_ArmoredTransport_Lighting_C::ExecuteUbergraph_L_ArmoredTransport_Lighting(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("L_ArmoredTransport_Lighting_C", "ExecuteUbergraph_L_ArmoredTransport_Lighting");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "L_ArmoredTransport_Lighting_C", "ExecuteUbergraph_L_ArmoredTransport_Lighting", FuncInfo);
 
 	Params::L_ArmoredTransport_Lighting_C_ExecuteUbergraph_L_ArmoredTransport_Lighting Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function L_ArmoredTransport_Lighting.L_ArmoredTransport_Lighting_C.SetVolumetricFogLight
-// (BlueprintCallable, BlueprintEvent)
-
-void AL_ArmoredTransport_Lighting_C::SetVolumetricFogLight()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("L_ArmoredTransport_Lighting_C", "SetVolumetricFogLight");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

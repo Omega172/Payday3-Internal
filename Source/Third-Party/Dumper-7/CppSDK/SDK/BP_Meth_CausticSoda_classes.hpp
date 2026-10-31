@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Meth_CausticSoda_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Meth_CausticSoda_C;
 
 SDK_NAMESPACE_END

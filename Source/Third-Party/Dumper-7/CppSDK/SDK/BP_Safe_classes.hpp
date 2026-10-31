@@ -38,11 +38,11 @@ public:
 	TScriptInterface<class ICableConnectionInterface_C> NewVar_0;                                    // 0x03C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_Safe_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
-	void ExecuteUbergraph_BP_Safe(int32 EntryPoint);
-	void OnRep_Open();
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
 	void SpawnItemInContainer(class UClass* WhatShould_Spawn, class ABP_RoomSpawnController_C* RoomControllerRef, class AActor** SpawnedActor);
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void OnRep_Open();
+	void ExecuteUbergraph_BP_Safe(int32 EntryPoint);
+	void BndEvt__BP_Safe_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
 
 public:
 	static class UClass* StaticClass()
@@ -58,5 +58,6 @@ public:
 		return GetDefaultObjImpl<ABP_Safe_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Safe_C;
 
 SDK_NAMESPACE_END

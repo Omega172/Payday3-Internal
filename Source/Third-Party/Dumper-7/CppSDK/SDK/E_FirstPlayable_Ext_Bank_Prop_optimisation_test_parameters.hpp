@@ -21,6 +21,7 @@ struct E_FirstPlayable_Ext_Bank_Prop_optimisation_test_C_ExecuteUbergraph_E_Firs
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_E_FirstPlayable_Ext_Bank_Prop_optimisation_test_C_ExecuteUbergraph_E_FirstPlayable_Ext_Bank_Prop_optimisation_test;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

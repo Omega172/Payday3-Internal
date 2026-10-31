@@ -74,5 +74,6 @@ public:
 		return GetDefaultObjImpl<ABPL_ShipGantry_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_ShipGantry_C;
 
 SDK_NAMESPACE_END

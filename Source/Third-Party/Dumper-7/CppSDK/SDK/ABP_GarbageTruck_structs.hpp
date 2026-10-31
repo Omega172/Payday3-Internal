@@ -15,6 +15,13 @@
 
 SDK_NAMESPACE_START
 
+// ScriptStruct ABP_GarbageTruck.ABP_GarbageTruck_C.AnimBlueprintGeneratedMutableData
+// 0x0000 (0x0001 - 0x0001)
+struct ABP_GarbageTruck::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
+{
+};
+DUMPER7_ASSERTS_ABP_GarbageTruck__FAnimBlueprintGeneratedMutableData;
+
 // ScriptStruct ABP_GarbageTruck.ABP_GarbageTruck_C.AnimBlueprintGeneratedConstantData
 // 0x051F (0x0520 - 0x0001)
 struct ABP_GarbageTruck::FAnimBlueprintGeneratedConstantData final : public FAnimBlueprintConstantData
@@ -63,11 +70,6 @@ public:
 	struct FAnimNodeExposedValueHandler_PropertyAccess AnimGraphNode_LayeredBoneBlend;               // 0x04B0(0x0038)()
 	struct FAnimNodeExposedValueHandler_PropertyAccess AnimGraphNode_ComponentToLocalSpace;          // 0x04E8(0x0038)()
 };
-
-// ScriptStruct ABP_GarbageTruck.ABP_GarbageTruck_C.AnimBlueprintGeneratedMutableData
-// 0x0000 (0x0001 - 0x0001)
-struct ABP_GarbageTruck::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
-{
-};
+DUMPER7_ASSERTS_ABP_GarbageTruck__FAnimBlueprintGeneratedConstantData;
 
 SDK_NAMESPACE_END

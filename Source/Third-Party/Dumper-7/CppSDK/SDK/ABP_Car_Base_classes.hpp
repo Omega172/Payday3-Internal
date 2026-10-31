@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "AnimGraphRuntime_structs.hpp"
 #include "Engine_structs.hpp"
-#include "ChaosVehicles_structs.hpp"
+#include "AnimGraphRuntime_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
+#include "ChaosVehicles_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -33,7 +33,7 @@ public:
 	struct FAnimNode_WheelController              AnimGraphNode_WheelController;                     // 0x0D40(0x0100)()
 
 public:
-	void AnimGraph(struct FPoseLink* AnimGraph_0);
+	void AnimGraph(struct FPoseLink* AnimGraph);
 
 public:
 	static class UClass* StaticClass()
@@ -49,5 +49,6 @@ public:
 		return GetDefaultObjImpl<UABP_Car_Base_C>();
 	}
 };
+DUMPER7_ASSERTS_UABP_Car_Base_C;
 
 SDK_NAMESPACE_END

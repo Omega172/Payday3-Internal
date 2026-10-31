@@ -35,12 +35,12 @@ public:
 	class UMaterialInstanceDynamic*               FrameText;                                         // 0x03B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Set_Infamy_Visuals();
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnInitialized();
-	void OnInfamyValuesRefreshed();
-	struct FSlateBrush Get_Image_ProgressBar_Brush_0();
 	void ExecuteUbergraph_WBP_UI_Challenge_InfamyProgress(int32 EntryPoint);
+	struct FSlateBrush Get_Image_ProgressBar_Brush_0();
+	void OnInfamyValuesRefreshed();
+	void OnInitialized();
+	void PreConstruct(bool IsDesignTime);
+	void Set_Infamy_Visuals();
 
 public:
 	static class UClass* StaticClass()

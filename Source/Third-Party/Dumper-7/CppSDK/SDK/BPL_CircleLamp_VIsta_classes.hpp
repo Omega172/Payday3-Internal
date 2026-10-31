@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ABPL_CircleLamp_VIsta_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_CircleLamp_VIsta_C;
 
 SDK_NAMESPACE_END

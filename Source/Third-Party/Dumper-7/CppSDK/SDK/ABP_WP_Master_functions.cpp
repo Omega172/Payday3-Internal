@@ -16,21 +16,22 @@
 
 SDK_NAMESPACE_START
 
-// Function ABP_WP_Master.ABP_WP_Master_C.ExecuteUbergraph_ABP_WP_Master
-// (Final, UbergraphFunction)
+// Function ABP_WP_Master.ABP_WP_Master_C.AnimGraph
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
 
-void UABP_WP_Master_C::ExecuteUbergraph_ABP_WP_Master(int32 EntryPoint)
+void UABP_WP_Master_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "ABP_WP_Master_C", "ExecuteUbergraph_ABP_WP_Master", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AnimGraph", FnName));
 
-	Params::ABP_WP_Master_C_ExecuteUbergraph_ABP_WP_Master Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Params::ABP_WP_Master_C_AnimGraph Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	if (AnimGraph_0 != nullptr)
+		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
 }
 
 
@@ -46,22 +47,21 @@ void UABP_WP_Master_C::EvaluateGraphExposedInputs_ExecuteUbergraph_ABP_WP_Master
 }
 
 
-// Function ABP_WP_Master.ABP_WP_Master_C.AnimGraph
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function ABP_WP_Master.ABP_WP_Master_C.ExecuteUbergraph_ABP_WP_Master
+// (Final, UbergraphFunction)
 // Parameters:
-// struct FPoseLink*                       AnimGraph                                              (Parm, OutParm, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UABP_WP_Master_C::AnimGraph(struct FPoseLink* AnimGraph)
+void UABP_WP_Master_C::ExecuteUbergraph_ABP_WP_Master(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AnimGraph", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "ABP_WP_Master_C", "ExecuteUbergraph_ABP_WP_Master", FuncInfo);
 
-	Params::ABP_WP_Master_C_AnimGraph Parms{};
+	Params::ABP_WP_Master_C_ExecuteUbergraph_ABP_WP_Master Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (AnimGraph != nullptr)
-		*AnimGraph = std::move(Parms.AnimGraph);
 }
 
 

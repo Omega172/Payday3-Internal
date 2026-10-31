@@ -44,19 +44,19 @@ public:
 	bool                                          Block_player;                                      // 0x0540(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnFlashOver();
-	void BP_OnInterferenceChanged(const bool bInterfered);
-	void BP_OnStateChanged(ESBZThermiteBurnState OldState, ESBZThermiteBurnState NewState, bool bDoCosmetics);
-	void BP_OnSteamExplosion();
-	void BP_OnThermiteBagOverlapped(bool bIsInitialBag);
-	void ExecuteUbergraph_BP_TestThermite(int32 EntryPoint);
-	void IncreaseIntensity__FinishedFunc();
-	void IncreaseIntensity__UpdateFunc();
-	void OnInterferenceChanged(bool bIsInterfered_0);
-	void SetCageVisiblityAndCollision(bool InVisiblity, ECollisionEnabled InCollision);
-	void StartFire__FinishedFunc();
-	void StartFire__UpdateFunc();
 	void UserConstructionScript();
+	void StartFire__UpdateFunc();
+	void StartFire__FinishedFunc();
+	void SetCageVisiblityAndCollision(bool InVisiblity, ECollisionEnabled InCollision);
+	void OnInterferenceChanged(bool bIsInterfered);
+	void IncreaseIntensity__UpdateFunc();
+	void IncreaseIntensity__FinishedFunc();
+	void ExecuteUbergraph_BP_TestThermite(int32 EntryPoint);
+	void BP_OnThermiteBagOverlapped(bool bIsInitialBag_BP_OnThermiteBagOverlapped);
+	void BP_OnSteamExplosion();
+	void BP_OnStateChanged(ESBZThermiteBurnState OldState_BP_OnStateChanged, ESBZThermiteBurnState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged);
+	void BP_OnInterferenceChanged(const bool bInterfered_BP_OnInterferenceChanged);
+	void BP_OnFlashOver();
 
 	struct FVector GetMarkerLocation() const;
 
@@ -74,5 +74,6 @@ public:
 		return GetDefaultObjImpl<ABP_TestThermite_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_TestThermite_C;
 
 SDK_NAMESPACE_END

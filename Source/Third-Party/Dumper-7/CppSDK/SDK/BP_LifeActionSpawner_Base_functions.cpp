@@ -16,25 +16,45 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_LifeActionSpawner_Base.BP_LifeActionSpawner_Base_C.EventTagAction
+// Function BP_LifeActionSpawner_Base.BP_LifeActionSpawner_Base_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_LifeActionSpawner_Base_C::UserConstructionScript()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_LifeActionSpawner_Base.BP_LifeActionSpawner_Base_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_LifeActionSpawner_Base_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_LifeActionSpawner_Base.BP_LifeActionSpawner_Base_C.OnPawnSpawn
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FGameplayTag&              EventTag                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-// double                                  DelayMin                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  DelayMax                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LifeActionSpawner_Base_C::EventTagAction(const struct FGameplayTag& EventTag, double DelayMin, double DelayMax)
+void ABP_LifeActionSpawner_Base_C::OnPawnSpawn(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPawnSpawn", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LifeActionSpawner_Base_C", "EventTagAction");
+	Params::BP_LifeActionSpawner_Base_C_OnPawnSpawn Parms{};
 
-	Params::BP_LifeActionSpawner_Base_C_EventTagAction Parms{};
-
-	Parms.EventTag = std::move(EventTag);
-	Parms.DelayMin = DelayMin;
-	Parms.DelayMax = DelayMax;
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -47,10 +67,8 @@ void ABP_LifeActionSpawner_Base_C::EventTagAction(const struct FGameplayTag& Eve
 
 void ABP_LifeActionSpawner_Base_C::ExecuteUbergraph_BP_LifeActionSpawner_Base(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LifeActionSpawner_Base_C", "ExecuteUbergraph_BP_LifeActionSpawner_Base");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_LifeActionSpawner_Base_C", "ExecuteUbergraph_BP_LifeActionSpawner_Base", FuncInfo);
 
 	Params::BP_LifeActionSpawner_Base_C_ExecuteUbergraph_BP_LifeActionSpawner_Base Parms{};
 
@@ -60,53 +78,25 @@ void ABP_LifeActionSpawner_Base_C::ExecuteUbergraph_BP_LifeActionSpawner_Base(in
 }
 
 
-// Function BP_LifeActionSpawner_Base.BP_LifeActionSpawner_Base_C.OnPawnSpawn
+// Function BP_LifeActionSpawner_Base.BP_LifeActionSpawner_Base_C.EventTagAction
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTag&              EventTag                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// double                                  DelayMin                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  DelayMax                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LifeActionSpawner_Base_C::OnPawnSpawn(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+void ABP_LifeActionSpawner_Base_C::EventTagAction(const struct FGameplayTag& EventTag, double DelayMin, double DelayMax)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EventTagAction", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LifeActionSpawner_Base_C", "OnPawnSpawn");
+	Params::BP_LifeActionSpawner_Base_C_EventTagAction Parms{};
 
-	Params::BP_LifeActionSpawner_Base_C_OnPawnSpawn Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
+	Parms.EventTag = std::move(EventTag);
+	Parms.DelayMin = DelayMin;
+	Parms.DelayMax = DelayMax;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LifeActionSpawner_Base.BP_LifeActionSpawner_Base_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_LifeActionSpawner_Base_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LifeActionSpawner_Base_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_LifeActionSpawner_Base.BP_LifeActionSpawner_Base_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_LifeActionSpawner_Base_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LifeActionSpawner_Base_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

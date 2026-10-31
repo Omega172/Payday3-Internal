@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<Abp_BankAdvertising_01_Screen_C>();
 	}
 };
+DUMPER7_ASSERTS_Abp_BankAdvertising_01_Screen_C;
 
 SDK_NAMESPACE_END

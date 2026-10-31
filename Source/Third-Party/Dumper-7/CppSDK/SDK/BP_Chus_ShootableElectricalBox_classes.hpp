@@ -31,9 +31,9 @@ public:
 	TMulticastInlineDelegate<void()>              BoxDestroyed;                                      // 0x0388(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__BP_Chus_ShootableElectricalBox_SBZPropDamage_K2Node_ComponentBoundEvent_2_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
 	void ExecuteUbergraph_BP_Chus_ShootableElectricalBox(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
+	void BndEvt__BP_Chus_ShootableElectricalBox_SBZPropDamage_K2Node_ComponentBoundEvent_2_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
 
 public:
 	static class UClass* StaticClass()
@@ -49,5 +49,6 @@ public:
 		return GetDefaultObjImpl<ABP_Chus_ShootableElectricalBox_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Chus_ShootableElectricalBox_C;
 
 SDK_NAMESPACE_END

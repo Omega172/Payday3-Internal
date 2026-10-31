@@ -27,9 +27,9 @@ public:
 	TArray<class ABP_BinaryReplicatedStateControlledChild_C*> controlledActors;                      // 0x0370(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate)
 
 public:
-	void ExecuteUbergraph_BP_BinaryReplicatedStateController(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
 	void UserConstructionScript();
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_BinaryReplicatedStateController(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<ABP_BinaryReplicatedStateController_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BinaryReplicatedStateController_C;
 
 SDK_NAMESPACE_END

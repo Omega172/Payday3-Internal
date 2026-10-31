@@ -23,10 +23,8 @@ SDK_NAMESPACE_START
 
 void ABP_Lure_Base_C::setInteractionEnabled(bool bEnabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Lure_Base_C", "setInteractionEnabled");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setInteractionEnabled", FnName));
 
 	Params::BP_Lure_Base_C_setInteractionEnabled Parms{};
 

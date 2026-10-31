@@ -17,40 +17,16 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_ONE_MetalDoor_01.BP_ONE_MetalDoor_01_C.ExecuteUbergraph_BP_ONE_MetalDoor_01
-// 0x0008 (0x0008 - 0x0000)
-struct BP_ONE_MetalDoor_01_C_ExecuteUbergraph_BP_ONE_MetalDoor_01 final
+// Function BP_ONE_MetalDoor_01.BP_ONE_MetalDoor_01_C.UserConstructionScript
+// 0x0010 (0x0010 - 0x0000)
+struct BP_ONE_MetalDoor_01_C_UserConstructionScript final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 K2Node_Event_OldState;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 K2Node_Event_NewState;                             // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bIsInitialStateChange;                // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_isUnlocked_ReturnValue;                   // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_isUnlocked_ReturnValue;                   // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_ONE_MetalDoor_01.BP_ONE_MetalDoor_01_C.isUnlocked
-// 0x0060 (0x0060 - 0x0000)
-struct BP_ONE_MetalDoor_01_C_isUnlocked final
-{
-public:
-	ESBZGateState                                 ItemToFind;                                        // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TSet<ESBZGateState>                           K2Node_MakeSet_Set;                                // 0x0008(0x0050)(ConstParm)
-	bool                                          CallFunc_Set_Contains_ReturnValue;                 // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_ONE_MetalDoor_01.BP_ONE_MetalDoor_01_C.OnStateChanged
-// 0x0003 (0x0003 - 0x0000)
-struct BP_ONE_MetalDoor_01_C_OnStateChanged final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsInitialStateChange;                             // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_ONE_MetalDoor_01_C_UserConstructionScript;
 
 // Function BP_ONE_MetalDoor_01.BP_ONE_MetalDoor_01_C.setLight
 // 0x0040 (0x0040 - 0x0000)
@@ -66,16 +42,45 @@ public:
 	struct FLinearColor                           K2Node_Select_Default;                             // 0x002C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ONE_MetalDoor_01_C_setLight;
 
-// Function BP_ONE_MetalDoor_01.BP_ONE_MetalDoor_01_C.UserConstructionScript
-// 0x0010 (0x0010 - 0x0000)
-struct BP_ONE_MetalDoor_01_C_UserConstructionScript final
+// Function BP_ONE_MetalDoor_01.BP_ONE_MetalDoor_01_C.OnStateChanged
+// 0x0003 (0x0003 - 0x0000)
+struct BP_ONE_MetalDoor_01_C_OnStateChanged final
 {
 public:
-	bool                                          CallFunc_isUnlocked_ReturnValue;                   // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 OldState_OnStateChanged;                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 NewState_OnStateChanged;                           // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsInitialStateChange_OnStateChanged;              // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ONE_MetalDoor_01_C_OnStateChanged;
+
+// Function BP_ONE_MetalDoor_01.BP_ONE_MetalDoor_01_C.isUnlocked
+// 0x0060 (0x0060 - 0x0000)
+struct BP_ONE_MetalDoor_01_C_isUnlocked final
+{
+public:
+	ESBZGateState                                 ItemToFind;                                        // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ReturnValue;                                       // 0x0001(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	TSet<ESBZGateState>                           K2Node_MakeSet_Set;                                // 0x0008(0x0050)(ConstParm)
+	bool                                          CallFunc_Set_Contains_ReturnValue;                 // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ONE_MetalDoor_01_C_isUnlocked;
+
+// Function BP_ONE_MetalDoor_01.BP_ONE_MetalDoor_01_C.ExecuteUbergraph_BP_ONE_MetalDoor_01
+// 0x0008 (0x0008 - 0x0000)
+struct BP_ONE_MetalDoor_01_C_ExecuteUbergraph_BP_ONE_MetalDoor_01 final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 K2Node_Event_OldState;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 K2Node_Event_NewState;                             // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bIsInitialStateChange;                // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_isUnlocked_ReturnValue;                   // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ONE_MetalDoor_01_C_ExecuteUbergraph_BP_ONE_MetalDoor_01;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -30,9 +30,9 @@ public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_ReplicatedBinaryActor_DJSpeakers_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BP_OnStateChanged(bool bNewState, bool bDoCosmentics);
 	void ExecuteUbergraph_BP_ReplicatedBinaryActor_DJSpeakers(int32 EntryPoint);
+	void BP_OnStateChanged(bool bNewState_BP_OnStateChanged, bool bDoCosmentics_BP_OnStateChanged);
+	void BndEvt__BP_ReplicatedBinaryActor_DJSpeakers_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<ABP_ReplicatedBinaryActor_DJSpeakers_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ReplicatedBinaryActor_DJSpeakers_C;
 
 SDK_NAMESPACE_END

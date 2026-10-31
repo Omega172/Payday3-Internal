@@ -19,61 +19,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.BndEvt__BP_HackableInfoComputer_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_HackableNetworkBox_NoActiveWaypoint_C_BndEvt__BP_HackableInfoComputer_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.BndEvt__BP_HackableInfoComputer_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_HackableNetworkBox_NoActiveWaypoint_C_BndEvt__BP_HackableInfoComputer_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_HackableNetworkBox_NoActiveWaypoint_C_BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.BP_OnHackingStarted
-// 0x0010 (0x0010 - 0x0000)
-struct BP_HackableNetworkBox_NoActiveWaypoint_C_BP_OnHackingStarted final
-{
-public:
-	class FText                                   ProcessText;                                       // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-
-// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.BP_OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_HackableNetworkBox_NoActiveWaypoint_C_BP_OnStateChanged final
-{
-public:
-	ESBZHackableActorState                        OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZHackableActorState                        NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.BP_UpdateProgressBar
-// 0x0004 (0x0004 - 0x0000)
-struct BP_HackableNetworkBox_NoActiveWaypoint_C_BP_UpdateProgressBar final
-{
-public:
-	int32                                         ProgressDone;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.ExecuteUbergraph_BP_HackableNetworkBox_NoActiveWaypoint
 // 0x0770 (0x0770 - 0x0000)
 struct BP_HackableNetworkBox_NoActiveWaypoint_C_ExecuteUbergraph_BP_HackableNetworkBox_NoActiveWaypoint final
@@ -169,20 +114,83 @@ public:
 	int32                                         CallFunc_PostAkEvent_ReturnValue_3;                // 0x0764(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_PostAkEvent_ReturnValue_4;                // 0x0768(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_HackableNetworkBox_NoActiveWaypoint_C_ExecuteUbergraph_BP_HackableNetworkBox_NoActiveWaypoint;
+
+// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.BP_UpdateProgressBar
+// 0x0004 (0x0004 - 0x0000)
+struct BP_HackableNetworkBox_NoActiveWaypoint_C_BP_UpdateProgressBar final
+{
+public:
+	int32                                         ProgressDone_BP_UpdateProgressBar;                 // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_HackableNetworkBox_NoActiveWaypoint_C_BP_UpdateProgressBar;
+
+// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.BP_OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_HackableNetworkBox_NoActiveWaypoint_C_BP_OnStateChanged final
+{
+public:
+	ESBZHackableActorState                        OldState_BP_OnStateChanged;                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZHackableActorState                        NewState_BP_OnStateChanged;                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_HackableNetworkBox_NoActiveWaypoint_C_BP_OnStateChanged;
+
+// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.BP_OnHackingStarted
+// 0x0010 (0x0010 - 0x0000)
+struct BP_HackableNetworkBox_NoActiveWaypoint_C_BP_OnHackingStarted final
+{
+public:
+	class FText                                   ProcessText_BP_OnHackingStarted;                   // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_BP_HackableNetworkBox_NoActiveWaypoint_C_BP_OnHackingStarted;
+
+// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_HackableNetworkBox_NoActiveWaypoint_C_BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_HackableNetworkBox_NoActiveWaypoint_C_BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature;
+
+// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.BndEvt__BP_HackableInfoComputer_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_HackableNetworkBox_NoActiveWaypoint_C_BndEvt__BP_HackableInfoComputer_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_HackableNetworkBox_NoActiveWaypoint_C_BndEvt__BP_HackableInfoComputer_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature;
+
+// Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.BndEvt__BP_HackableInfoComputer_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_HackableNetworkBox_NoActiveWaypoint_C_BndEvt__BP_HackableInfoComputer_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_HackableNetworkBox_NoActiveWaypoint_C_BndEvt__BP_HackableInfoComputer_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature;
 
 // Function BP_HackableNetworkBox_NoActiveWaypoint.BP_HackableNetworkBox_NoActiveWaypoint_C.VisionPredicate
 // 0x0050 (0x0050 - 0x0000)
 struct BP_HackableNetworkBox_NoActiveWaypoint_C_VisionPredicate final
 {
 public:
-	const class AActor*                           Viewer;                                            // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class AActor*                           Viewer_VisionPredicate;                            // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          ReturnValue_VisionPredicate;                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x0010(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue_1;      // 0x0028(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Dot_VectorVector_ReturnValue;             // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_DoubleDouble_ReturnValue;            // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_HackableNetworkBox_NoActiveWaypoint_C_VisionPredicate;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

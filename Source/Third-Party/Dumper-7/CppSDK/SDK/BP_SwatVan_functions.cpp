@@ -16,15 +16,33 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_SwatVan.BP_SwatVan_C.BndEvt__BP_Sedan_FirstResponders_Base_SplineFollowingComponent_K2Node_ComponentBoundEvent_0_SBZVehicleOnStarted__DelegateSignature
-// (BlueprintEvent)
+// Function BP_SwatVan.BP_SwatVan_C.SWAT On Spline End Reached
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ASBZWheeledVehicle*               Vehicle                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SwatVan_C::BndEvt__BP_Sedan_FirstResponders_Base_SplineFollowingComponent_K2Node_ComponentBoundEvent_0_SBZVehicleOnStarted__DelegateSignature()
+void ABP_SwatVan_C::SWAT_On_Spline_End_Reached(class ASBZWheeledVehicle* Vehicle, class ASBZSpline* Spline)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SWAT On Spline End Reached", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SwatVan_C", "BndEvt__BP_Sedan_FirstResponders_Base_SplineFollowingComponent_K2Node_ComponentBoundEvent_0_SBZVehicleOnStarted__DelegateSignature");
+	Params::BP_SwatVan_C_SWAT_On_Spline_End_Reached Parms{};
+
+	Parms.Vehicle = Vehicle;
+	Parms.Spline = Spline;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SwatVan.BP_SwatVan_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_SwatVan_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +55,8 @@ void ABP_SwatVan_C::BndEvt__BP_Sedan_FirstResponders_Base_SplineFollowingCompone
 
 void ABP_SwatVan_C::ExecuteUbergraph_BP_SwatVan(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SwatVan_C", "ExecuteUbergraph_BP_SwatVan");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_SwatVan_C", "ExecuteUbergraph_BP_SwatVan", FuncInfo);
 
 	Params::BP_SwatVan_C_ExecuteUbergraph_BP_SwatVan Parms{};
 
@@ -50,39 +66,15 @@ void ABP_SwatVan_C::ExecuteUbergraph_BP_SwatVan(int32 EntryPoint)
 }
 
 
-// Function BP_SwatVan.BP_SwatVan_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_SwatVan.BP_SwatVan_C.BndEvt__BP_Sedan_FirstResponders_Base_SplineFollowingComponent_K2Node_ComponentBoundEvent_0_SBZVehicleOnStarted__DelegateSignature
+// (BlueprintEvent)
 
-void ABP_SwatVan_C::ReceiveBeginPlay()
+void ABP_SwatVan_C::BndEvt__BP_Sedan_FirstResponders_Base_SplineFollowingComponent_K2Node_ComponentBoundEvent_0_SBZVehicleOnStarted__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SwatVan_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Sedan_FirstResponders_Base_SplineFollowingComponent_K2Node_ComponentBoundEvent_0_SBZVehicleOnStarted__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SwatVan.BP_SwatVan_C.SWAT On Spline End Reached
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class ASBZWheeledVehicle*               Vehicle                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SwatVan_C::SWAT_On_Spline_End_Reached(class ASBZWheeledVehicle* Vehicle, class ASBZSpline* Spline)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SwatVan_C", "SWAT On Spline End Reached");
-
-	Params::BP_SwatVan_C_SWAT_On_Spline_End_Reached Parms{};
-
-	Parms.Vehicle = Vehicle;
-	Parms.Spline = Spline;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 

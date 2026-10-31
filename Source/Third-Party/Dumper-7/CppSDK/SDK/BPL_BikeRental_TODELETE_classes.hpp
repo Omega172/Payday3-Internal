@@ -41,5 +41,6 @@ public:
 		return GetDefaultObjImpl<ABPL_BikeRental_TODELETE_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_BikeRental_TODELETE_C;
 
 SDK_NAMESPACE_END

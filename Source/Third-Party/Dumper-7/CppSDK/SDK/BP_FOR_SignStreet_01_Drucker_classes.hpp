@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_FOR_SignStreet_01_Drucker_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_FOR_SignStreet_01_Drucker_C;
 
 SDK_NAMESPACE_END

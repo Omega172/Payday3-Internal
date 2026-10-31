@@ -46,5 +46,6 @@ public:
 		return GetDefaultObjImpl<ABP_DisplayPanel_01_SCR_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DisplayPanel_01_SCR_C;
 
 SDK_NAMESPACE_END

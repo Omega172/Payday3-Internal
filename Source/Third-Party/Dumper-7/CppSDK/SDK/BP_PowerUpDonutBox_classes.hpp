@@ -34,10 +34,10 @@ public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x03C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_TestDonutbox_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent_0, bool bInNewState);
-	void BP_OnStateChanged(ESBZPowerUpChargesState OldState, ESBZPowerUpChargesState NewState, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_PowerUpDonutBox(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_PowerUpDonutBox(int32 EntryPoint);
+	void BP_OnStateChanged(ESBZPowerUpChargesState OldState_BP_OnStateChanged, ESBZPowerUpChargesState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged);
+	void BndEvt__BP_TestDonutbox_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
 
 public:
 	static class UClass* StaticClass()
@@ -53,5 +53,6 @@ public:
 		return GetDefaultObjImpl<ABP_PowerUpDonutBox_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PowerUpDonutBox_C;
 
 SDK_NAMESPACE_END

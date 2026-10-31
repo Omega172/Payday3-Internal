@@ -16,42 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_ItemDescription_TypeClass.WBP_ItemDescription_TypeClass_C.SetText_TypeClass
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_ItemDescription_TypeClass_C::SetText_TypeClass(const class FText& Text)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetText_TypeClass", FnName));
-
-	Params::WBP_ItemDescription_TypeClass_C_SetText_TypeClass Parms{};
-
-	Parms.Text = std::move(Text);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ItemDescription_TypeClass.WBP_ItemDescription_TypeClass_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ItemDescription_TypeClass_C::PreConstruct(bool IsDesignTime_PreConstruct)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_ItemDescription_TypeClass_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_ItemDescription_TypeClass.WBP_ItemDescription_TypeClass_C.ExecuteUbergraph_WBP_ItemDescription_TypeClass
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -65,6 +29,42 @@ void UWBP_ItemDescription_TypeClass_C::ExecuteUbergraph_WBP_ItemDescription_Type
 	Params::WBP_ItemDescription_TypeClass_C_ExecuteUbergraph_WBP_ItemDescription_TypeClass Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ItemDescription_TypeClass.WBP_ItemDescription_TypeClass_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ItemDescription_TypeClass_C::PreConstruct(bool IsDesignTime)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_ItemDescription_TypeClass_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ItemDescription_TypeClass.WBP_ItemDescription_TypeClass_C.SetText_TypeClass
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_ItemDescription_TypeClass_C::SetText_TypeClass(const class FText& Text)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetText_TypeClass", FnName));
+
+	Params::WBP_ItemDescription_TypeClass_C_SetText_TypeClass Parms{};
+
+	Parms.Text = std::move(Text);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -17,17 +17,17 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_PlayerGasRocketProjectile.BP_PlayerGasRocketProjectile_C
-// 0x0010 (0x8E70 - 0x8E60)
+// 0x0010 (0x06D8 - 0x06C8)
 class ABP_PlayerGasRocketProjectile_C final : public ASBZPlayerM606GasGrenadeProjectile
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x8E60(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	double                                        ImpactVFXScale;                                    // 0x8E68(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x06C8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	double                                        ImpactVFXScale;                                    // 0x06D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnDetonationCosmetics(class UNiagaraComponent* DetonationEffectComponent, const struct FVector& ExplosionLocation, const struct FVector& ExplosionImpactNormal);
-	void ExecuteUbergraph_BP_PlayerGasRocketProjectile(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_PlayerGasRocketProjectile(int32 EntryPoint);
+	void BP_OnDetonationCosmetics(class UNiagaraComponent* DetonationEffectComponent_BP_OnDetonationCosmetics, const struct FVector& ExplosionLocation_BP_OnDetonationCosmetics, const struct FVector& ExplosionImpactNormal_BP_OnDetonationCosmetics);
 
 public:
 	static class UClass* StaticClass()
@@ -43,5 +43,6 @@ public:
 		return GetDefaultObjImpl<ABP_PlayerGasRocketProjectile_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PlayerGasRocketProjectile_C;
 
 SDK_NAMESPACE_END

@@ -19,615 +19,42 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_ArmoredTransport_K2Node_ActorBoundEvent_43_SBZOnVehicleEscortChanged__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_ArmoredTransport_K2Node_ActorBoundEvent_43_SBZOnVehicleEscortChanged__DelegateSignature final
-{
-public:
-	bool                                          bIsMoving;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_BlockerFence_01_2_K2Node_ActorBoundEvent_19_SBZOnInteractionBinaryStateDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_BlockerFence_01_2_K2Node_ActorBoundEvent_19_SBZOnInteractionBinaryStateDelegate__DelegateSignature final
-{
-public:
-	bool                                          BNewState;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_10_K2Node_ActorBoundEvent_108_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_10_K2Node_ActorBoundEvent_108_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_11_K2Node_ActorBoundEvent_105_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_11_K2Node_ActorBoundEvent_105_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_12_K2Node_ActorBoundEvent_107_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_12_K2Node_ActorBoundEvent_107_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_18_K2Node_ActorBoundEvent_100_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_18_K2Node_ActorBoundEvent_100_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_19_K2Node_ActorBoundEvent_102_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_19_K2Node_ActorBoundEvent_102_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_20_K2Node_ActorBoundEvent_103_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_20_K2Node_ActorBoundEvent_103_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_21_K2Node_ActorBoundEvent_97_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_21_K2Node_ActorBoundEvent_97_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_22_K2Node_ActorBoundEvent_104_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_22_K2Node_ActorBoundEvent_104_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_24_K2Node_ActorBoundEvent_101_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_24_K2Node_ActorBoundEvent_101_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_5_K2Node_ActorBoundEvent_110_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_5_K2Node_ActorBoundEvent_110_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_6_K2Node_ActorBoundEvent_109_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_6_K2Node_ActorBoundEvent_109_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_9_K2Node_ActorBoundEvent_106_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_9_K2Node_ActorBoundEvent_106_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MovingForklift_2_K2Node_ActorBoundEvent_1_SBZWheeledVehicleOnSplineEntered__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MovingForklift_2_K2Node_ActorBoundEvent_1_SBZWheeledVehicleOnSplineEntered__DelegateSignature final
-{
-public:
-	class ASBZWheeledVehicle*                     Vehicle;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZSpline*                             Spline;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MovingForklift_2_K2Node_ActorBoundEvent_59_SBZOnInteractionBinaryStateDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MovingForklift_2_K2Node_ActorBoundEvent_59_SBZOnInteractionBinaryStateDelegate__DelegateSignature final
-{
-public:
-	bool                                          BNewState;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint2_K2Node_ActorBoundEvent_47_SBZSabotagePointDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint2_K2Node_ActorBoundEvent_47_SBZSabotagePointDelegate__DelegateSignature final
-{
-public:
-	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate1_2_K2Node_ActorBoundEvent_74_SBZSabotagePointDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate1_2_K2Node_ActorBoundEvent_74_SBZSabotagePointDelegate__DelegateSignature final
-{
-public:
-	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate1_3_K2Node_ActorBoundEvent_75_SBZSabotagePointDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate1_3_K2Node_ActorBoundEvent_75_SBZSabotagePointDelegate__DelegateSignature final
-{
-public:
-	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate2_2_K2Node_ActorBoundEvent_96_SBZSabotagePointDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate2_2_K2Node_ActorBoundEvent_96_SBZSabotagePointDelegate__DelegateSignature final
-{
-public:
-	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate2_K2Node_ActorBoundEvent_71_SBZSabotagePointDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate2_K2Node_ActorBoundEvent_71_SBZSabotagePointDelegate__DelegateSignature final
-{
-public:
-	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Chute_K2Node_ActorBoundEvent_54_SBZBagEnteredDelegate__DelegateSignature
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.OnPreplanningAssetsTagsApplied
 // 0x0020 (0x0020 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Chute_K2Node_ActorBoundEvent_54_SBZBagEnteredDelegate__DelegateSignature final
+struct G_ArmoredTransport_Scripting_C_OnPreplanningAssetsTagsApplied final
 {
 public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FGameplayTagContainer                  PreplanningTagContainer_OnPreplanningAssetsTagsApplied; // 0x0000(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_OnPreplanningAssetsTagsApplied;
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Doohickey2_K2Node_ActorBoundEvent_69_SBZBagVolumeComplete__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Doohickey2_K2Node_ActorBoundEvent_69_SBZBagVolumeComplete__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HelicopterLeft_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HelicopterLeft_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HelicopterRight_K2Node_ActorBoundEvent_112_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HelicopterRight_K2Node_ActorBoundEvent_112_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliLeftRespawn2_K2Node_ActorBoundEvent_9_SBZBagCountChangedDelegate__DelegateSignature
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.OnPlayersCarryBagChanged
 // 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliLeftRespawn2_K2Node_ActorBoundEvent_9_SBZBagCountChangedDelegate__DelegateSignature final
+struct G_ArmoredTransport_Scripting_C_OnPlayersCarryBagChanged final
 {
 public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Overlapping;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Secured;                                           // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSBZPlayersCarryBagChangedEvent        Data_OnPlayersCarryBagChanged;                     // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 };
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_OnPlayersCarryBagChanged;
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliLeftRespawn_K2Node_ActorBoundEvent_25_SBZBagCountChangedDelegate__DelegateSignature
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.OnPlayerPickedUpBag
 // 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliLeftRespawn_K2Node_ActorBoundEvent_25_SBZBagCountChangedDelegate__DelegateSignature final
+struct G_ArmoredTransport_Scripting_C_OnPlayerPickedUpBag final
 {
 public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Overlapping;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Secured;                                           // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          BagHandle_OnPlayerPickedUpBag;                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_OnPlayerPickedUpBag;
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliRightRespawn_K2Node_ActorBoundEvent_4_SBZBagCountChangedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliRightRespawn_K2Node_ActorBoundEvent_4_SBZBagCountChangedDelegate__DelegateSignature final
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.HeistStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_HeistStateChanged final
 {
 public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Overlapping;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Secured;                                           // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                OldHeistState_HeistStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CurrentHeistState_HeistStateChanged;               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Net_K2Node_ActorBoundEvent_0_SBZBagVolumeComplete__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Net_K2Node_ActorBoundEvent_0_SBZBagVolumeComplete__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Winch_K2Node_ActorBoundEvent_27_SBZBagVolumeComplete__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Winch_K2Node_ActorBoundEvent_27_SBZBagVolumeComplete__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_70_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_70_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_73_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_73_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline3_K2Node_ActorBoundEvent_76_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline3_K2Node_ActorBoundEvent_76_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline4_K2Node_ActorBoundEvent_77_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline4_K2Node_ActorBoundEvent_77_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_Preparations_K2Node_ActorBoundEvent_11_SBZProgressionReachedDelegate__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_Preparations_K2Node_ActorBoundEvent_11_SBZProgressionReachedDelegate__DelegateSignature final
-{
-public:
-	int32                                         ProgressionIndexReached;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_TransportHack_K2Node_ActorBoundEvent_80_SBZProgressionReachedDelegate__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_TransportHack_K2Node_ActorBoundEvent_80_SBZProgressionReachedDelegate__DelegateSignature final
-{
-public:
-	int32                                         ProgressionIndexReached;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearEscape1_0_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearEscape1_0_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume2_4_K2Node_ActorBoundEvent_58_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume2_4_K2Node_ActorBoundEvent_58_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_30_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_30_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_38_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_38_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_48_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_48_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_AtLeastOnePlayerByScaffolding_K2Node_ActorBoundEvent_24_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_AtLeastOnePlayerByScaffolding_K2Node_ActorBoundEvent_24_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_EveryPlayerByScaffolding_K2Node_ActorBoundEvent_17_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_EveryPlayerByScaffolding_K2Node_ActorBoundEvent_17_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_PlayerTeleport_K2Node_ActorBoundEvent_64_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_PlayerTeleport_K2Node_ActorBoundEvent_64_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_End_K2Node_ActorBoundEvent_26_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_End_K2Node_ActorBoundEvent_26_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_K2Node_ActorBoundEvent_13_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_K2Node_ActorBoundEvent_13_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_K2Node_ActorBoundEvent_50_SBZSplineOnEnter__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_K2Node_ActorBoundEvent_50_SBZSplineOnEnter__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrival_K2Node_ActorBoundEvent_68_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrival_K2Node_ActorBoundEvent_68_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrivalLong_End_K2Node_ActorBoundEvent_29_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrivalLong_End_K2Node_ActorBoundEvent_29_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrivalLong_K2Node_ActorBoundEvent_62_SBZSplineOnEnter__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrivalLong_K2Node_ActorBoundEvent_62_SBZSplineOnEnter__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_End_K2Node_ActorBoundEvent_7_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_End_K2Node_ActorBoundEvent_7_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_K2Node_ActorBoundEvent_20_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_K2Node_ActorBoundEvent_20_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_K2Node_ActorBoundEvent_87_SBZSplineOnEnter__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_K2Node_ActorBoundEvent_87_SBZSplineOnEnter__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_End_K2Node_ActorBoundEvent_36_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_End_K2Node_ActorBoundEvent_36_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_K2Node_ActorBoundEvent_88_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_K2Node_ActorBoundEvent_88_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_SoftEnd_K2Node_ActorBoundEvent_33_SBZSplineOnEnter__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_SoftEnd_K2Node_ActorBoundEvent_33_SBZSplineOnEnter__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft3_K2Node_ActorBoundEvent_92_SBZSplineOnEnter__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft3_K2Node_ActorBoundEvent_92_SBZSplineOnEnter__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRamp_K2Node_ActorBoundEvent_94_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRamp_K2Node_ActorBoundEvent_94_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight1_End_K2Node_ActorBoundEvent_23_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight1_End_K2Node_ActorBoundEvent_23_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight1_K2Node_ActorBoundEvent_49_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight1_K2Node_ActorBoundEvent_49_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight2_end_K2Node_ActorBoundEvent_22_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight2_end_K2Node_ActorBoundEvent_22_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight2_K2Node_ActorBoundEvent_90_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight2_K2Node_ActorBoundEvent_90_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight3_K2Node_ActorBoundEvent_91_SBZSplineOnEnter__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight3_K2Node_ActorBoundEvent_91_SBZSplineOnEnter__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortToFork_13_K2Node_ActorBoundEvent_81_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortToFork_13_K2Node_ActorBoundEvent_81_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_Fail_K2Node_ActorBoundEvent_14_SBZSplineOnEnter__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_Fail_K2Node_ActorBoundEvent_14_SBZSplineOnEnter__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_Fail_K2Node_ActorBoundEvent_83_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_Fail_K2Node_ActorBoundEvent_83_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineEscortToRamp_K2Node_ActorBoundEvent_21_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineEscortToRamp_K2Node_ActorBoundEvent_21_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineFlyIn_K2Node_ActorBoundEvent_31_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineFlyIn_K2Node_ActorBoundEvent_31_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineFlyInRight_K2Node_ActorBoundEvent_66_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineFlyInRight_K2Node_ActorBoundEvent_66_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_HeistStateChanged;
 
 // Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.ExecuteUbergraph_G_ArmoredTransport_Scripting
 // 0x18B8 (0x18B8 - 0x0000)
@@ -1520,39 +947,686 @@ public:
 	TArray<class AActor*>                         Temp_object_Variable_69;                           // 0x18A0(0x0010)(ConstParm, ReferenceParm)
 	ESBZPlayDialogResult                          CallFunc_PlayDialog_ReturnValue_69;                // 0x18B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_ExecuteUbergraph_G_ArmoredTransport_Scripting;
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.HeistStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_HeistStateChanged final
-{
-public:
-	EPD3HeistState                                OldHeistState;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CurrentHeistState;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.OnPlayerPickedUpBag
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineFlyInRight_K2Node_ActorBoundEvent_66_SBZSplineOnEndReached__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_OnPlayerPickedUpBag final
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineFlyInRight_K2Node_ActorBoundEvent_66_SBZSplineOnEndReached__DelegateSignature final
 {
 public:
-	struct FSBZBagHandle                          BagHandle;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineFlyInRight_K2Node_ActorBoundEvent_66_SBZSplineOnEndReached__DelegateSignature;
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.OnPlayersCarryBagChanged
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineFlyIn_K2Node_ActorBoundEvent_31_SBZSplineOnEndReached__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_OnPlayersCarryBagChanged final
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineFlyIn_K2Node_ActorBoundEvent_31_SBZSplineOnEndReached__DelegateSignature final
 {
 public:
-	struct FSBZPlayersCarryBagChangedEvent        Data;                                              // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineFlyIn_K2Node_ActorBoundEvent_31_SBZSplineOnEndReached__DelegateSignature;
 
-// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.OnPreplanningAssetsTagsApplied
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineEscortToRamp_K2Node_ActorBoundEvent_21_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineEscortToRamp_K2Node_ActorBoundEvent_21_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSplineEscortToRamp_K2Node_ActorBoundEvent_21_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_Fail_K2Node_ActorBoundEvent_83_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_Fail_K2Node_ActorBoundEvent_83_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_Fail_K2Node_ActorBoundEvent_83_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_Fail_K2Node_ActorBoundEvent_14_SBZSplineOnEnter__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_Fail_K2Node_ActorBoundEvent_14_SBZSplineOnEnter__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_Fail_K2Node_ActorBoundEvent_14_SBZSplineOnEnter__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortToFork_13_K2Node_ActorBoundEvent_81_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortToFork_13_K2Node_ActorBoundEvent_81_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortToFork_13_K2Node_ActorBoundEvent_81_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight3_K2Node_ActorBoundEvent_91_SBZSplineOnEnter__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight3_K2Node_ActorBoundEvent_91_SBZSplineOnEnter__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight3_K2Node_ActorBoundEvent_91_SBZSplineOnEnter__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight2_K2Node_ActorBoundEvent_90_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight2_K2Node_ActorBoundEvent_90_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight2_K2Node_ActorBoundEvent_90_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight2_end_K2Node_ActorBoundEvent_22_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight2_end_K2Node_ActorBoundEvent_22_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight2_end_K2Node_ActorBoundEvent_22_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight1_K2Node_ActorBoundEvent_49_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight1_K2Node_ActorBoundEvent_49_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight1_K2Node_ActorBoundEvent_49_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight1_End_K2Node_ActorBoundEvent_23_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight1_End_K2Node_ActorBoundEvent_23_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRight1_End_K2Node_ActorBoundEvent_23_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRamp_K2Node_ActorBoundEvent_94_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRamp_K2Node_ActorBoundEvent_94_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortRamp_K2Node_ActorBoundEvent_94_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft3_K2Node_ActorBoundEvent_92_SBZSplineOnEnter__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft3_K2Node_ActorBoundEvent_92_SBZSplineOnEnter__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft3_K2Node_ActorBoundEvent_92_SBZSplineOnEnter__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_SoftEnd_K2Node_ActorBoundEvent_33_SBZSplineOnEnter__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_SoftEnd_K2Node_ActorBoundEvent_33_SBZSplineOnEnter__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_SoftEnd_K2Node_ActorBoundEvent_33_SBZSplineOnEnter__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_K2Node_ActorBoundEvent_88_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_K2Node_ActorBoundEvent_88_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_K2Node_ActorBoundEvent_88_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_End_K2Node_ActorBoundEvent_36_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_End_K2Node_ActorBoundEvent_36_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft2_End_K2Node_ActorBoundEvent_36_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_K2Node_ActorBoundEvent_87_SBZSplineOnEnter__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_K2Node_ActorBoundEvent_87_SBZSplineOnEnter__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_K2Node_ActorBoundEvent_87_SBZSplineOnEnter__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_K2Node_ActorBoundEvent_20_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_K2Node_ActorBoundEvent_20_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_K2Node_ActorBoundEvent_20_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_End_K2Node_ActorBoundEvent_7_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_End_K2Node_ActorBoundEvent_7_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_EscortLeft1_End_K2Node_ActorBoundEvent_7_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrivalLong_K2Node_ActorBoundEvent_62_SBZSplineOnEnter__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrivalLong_K2Node_ActorBoundEvent_62_SBZSplineOnEnter__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrivalLong_K2Node_ActorBoundEvent_62_SBZSplineOnEnter__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrivalLong_End_K2Node_ActorBoundEvent_29_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrivalLong_End_K2Node_ActorBoundEvent_29_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrivalLong_End_K2Node_ActorBoundEvent_29_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrival_K2Node_ActorBoundEvent_68_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrival_K2Node_ActorBoundEvent_68_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ContinueToArrival_K2Node_ActorBoundEvent_68_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_K2Node_ActorBoundEvent_50_SBZSplineOnEnter__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_K2Node_ActorBoundEvent_50_SBZSplineOnEnter__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_K2Node_ActorBoundEvent_50_SBZSplineOnEnter__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_K2Node_ActorBoundEvent_13_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_K2Node_ActorBoundEvent_13_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_K2Node_ActorBoundEvent_13_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_End_K2Node_ActorBoundEvent_26_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_End_K2Node_ActorBoundEvent_26_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZTrafficSpline_ArrivalShort_End_K2Node_ActorBoundEvent_26_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_PlayerTeleport_K2Node_ActorBoundEvent_64_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_PlayerTeleport_K2Node_ActorBoundEvent_64_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_PlayerTeleport_K2Node_ActorBoundEvent_64_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_EveryPlayerByScaffolding_K2Node_ActorBoundEvent_17_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_EveryPlayerByScaffolding_K2Node_ActorBoundEvent_17_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_EveryPlayerByScaffolding_K2Node_ActorBoundEvent_17_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_AtLeastOnePlayerByScaffolding_K2Node_ActorBoundEvent_24_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_AtLeastOnePlayerByScaffolding_K2Node_ActorBoundEvent_24_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_AtLeastOnePlayerByScaffolding_K2Node_ActorBoundEvent_24_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_48_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_48_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_48_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_38_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_38_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_38_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_30_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_30_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_30_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume2_4_K2Node_ActorBoundEvent_58_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume2_4_K2Node_ActorBoundEvent_58_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggerVolume2_4_K2Node_ActorBoundEvent_58_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearEscape1_0_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearEscape1_0_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearEscape1_0_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_TransportHack_K2Node_ActorBoundEvent_80_SBZProgressionReachedDelegate__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_TransportHack_K2Node_ActorBoundEvent_80_SBZProgressionReachedDelegate__DelegateSignature final
+{
+public:
+	int32                                         ProgressionIndexReached;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_TransportHack_K2Node_ActorBoundEvent_80_SBZProgressionReachedDelegate__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_Preparations_K2Node_ActorBoundEvent_11_SBZProgressionReachedDelegate__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_Preparations_K2Node_ActorBoundEvent_11_SBZProgressionReachedDelegate__DelegateSignature final
+{
+public:
+	int32                                         ProgressionIndexReached;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZModifiableTimer_Preparations_K2Node_ActorBoundEvent_11_SBZProgressionReachedDelegate__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline4_K2Node_ActorBoundEvent_77_SBZBagEnteredDelegate__DelegateSignature
 // 0x0020 (0x0020 - 0x0000)
-struct G_ArmoredTransport_Scripting_C_OnPreplanningAssetsTagsApplied final
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline4_K2Node_ActorBoundEvent_77_SBZBagEnteredDelegate__DelegateSignature final
 {
 public:
-	struct FGameplayTagContainer                  PreplanningTagContainer;                           // 0x0000(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline4_K2Node_ActorBoundEvent_77_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline3_K2Node_ActorBoundEvent_76_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline3_K2Node_ActorBoundEvent_76_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline3_K2Node_ActorBoundEvent_76_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_73_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_73_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_73_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_70_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_70_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_70_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Winch_K2Node_ActorBoundEvent_27_SBZBagVolumeComplete__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Winch_K2Node_ActorBoundEvent_27_SBZBagVolumeComplete__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Winch_K2Node_ActorBoundEvent_27_SBZBagVolumeComplete__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Net_K2Node_ActorBoundEvent_0_SBZBagVolumeComplete__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Net_K2Node_ActorBoundEvent_0_SBZBagVolumeComplete__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Net_K2Node_ActorBoundEvent_0_SBZBagVolumeComplete__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliRightRespawn_K2Node_ActorBoundEvent_4_SBZBagCountChangedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliRightRespawn_K2Node_ActorBoundEvent_4_SBZBagCountChangedDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Overlapping;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Secured;                                           // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliRightRespawn_K2Node_ActorBoundEvent_4_SBZBagCountChangedDelegate__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliLeftRespawn_K2Node_ActorBoundEvent_25_SBZBagCountChangedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliLeftRespawn_K2Node_ActorBoundEvent_25_SBZBagCountChangedDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Overlapping;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Secured;                                           // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliLeftRespawn_K2Node_ActorBoundEvent_25_SBZBagCountChangedDelegate__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliLeftRespawn2_K2Node_ActorBoundEvent_9_SBZBagCountChangedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliLeftRespawn2_K2Node_ActorBoundEvent_9_SBZBagCountChangedDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Overlapping;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Secured;                                           // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HeliLeftRespawn2_K2Node_ActorBoundEvent_9_SBZBagCountChangedDelegate__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HelicopterRight_K2Node_ActorBoundEvent_112_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HelicopterRight_K2Node_ActorBoundEvent_112_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HelicopterRight_K2Node_ActorBoundEvent_112_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HelicopterLeft_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HelicopterLeft_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_HelicopterLeft_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Doohickey2_K2Node_ActorBoundEvent_69_SBZBagVolumeComplete__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Doohickey2_K2Node_ActorBoundEvent_69_SBZBagVolumeComplete__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Doohickey2_K2Node_ActorBoundEvent_69_SBZBagVolumeComplete__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Chute_K2Node_ActorBoundEvent_54_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Chute_K2Node_ActorBoundEvent_54_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_SBZBagTriggerVolume_Chute_K2Node_ActorBoundEvent_54_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate2_K2Node_ActorBoundEvent_71_SBZSabotagePointDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate2_K2Node_ActorBoundEvent_71_SBZSabotagePointDelegate__DelegateSignature final
+{
+public:
+	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate2_K2Node_ActorBoundEvent_71_SBZSabotagePointDelegate__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate2_2_K2Node_ActorBoundEvent_96_SBZSabotagePointDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate2_2_K2Node_ActorBoundEvent_96_SBZSabotagePointDelegate__DelegateSignature final
+{
+public:
+	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate2_2_K2Node_ActorBoundEvent_96_SBZSabotagePointDelegate__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate1_3_K2Node_ActorBoundEvent_75_SBZSabotagePointDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate1_3_K2Node_ActorBoundEvent_75_SBZSabotagePointDelegate__DelegateSignature final
+{
+public:
+	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate1_3_K2Node_ActorBoundEvent_75_SBZSabotagePointDelegate__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate1_2_K2Node_ActorBoundEvent_74_SBZSabotagePointDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate1_2_K2Node_ActorBoundEvent_74_SBZSabotagePointDelegate__DelegateSignature final
+{
+public:
+	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint_Gate1_2_K2Node_ActorBoundEvent_74_SBZSabotagePointDelegate__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint2_K2Node_ActorBoundEvent_47_SBZSabotagePointDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint2_K2Node_ActorBoundEvent_47_SBZSabotagePointDelegate__DelegateSignature final
+{
+public:
+	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_SabotagePoint2_K2Node_ActorBoundEvent_47_SBZSabotagePointDelegate__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MovingForklift_2_K2Node_ActorBoundEvent_59_SBZOnInteractionBinaryStateDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MovingForklift_2_K2Node_ActorBoundEvent_59_SBZOnInteractionBinaryStateDelegate__DelegateSignature final
+{
+public:
+	bool                                          BNewState;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MovingForklift_2_K2Node_ActorBoundEvent_59_SBZOnInteractionBinaryStateDelegate__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MovingForklift_2_K2Node_ActorBoundEvent_1_SBZWheeledVehicleOnSplineEntered__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MovingForklift_2_K2Node_ActorBoundEvent_1_SBZWheeledVehicleOnSplineEntered__DelegateSignature final
+{
+public:
+	class ASBZWheeledVehicle*                     Vehicle;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZSpline*                             Spline;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MovingForklift_2_K2Node_ActorBoundEvent_1_SBZWheeledVehicleOnSplineEntered__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_9_K2Node_ActorBoundEvent_106_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_9_K2Node_ActorBoundEvent_106_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_9_K2Node_ActorBoundEvent_106_SBZLootedSignature__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_6_K2Node_ActorBoundEvent_109_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_6_K2Node_ActorBoundEvent_109_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_6_K2Node_ActorBoundEvent_109_SBZLootedSignature__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_5_K2Node_ActorBoundEvent_110_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_5_K2Node_ActorBoundEvent_110_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_5_K2Node_ActorBoundEvent_110_SBZLootedSignature__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_24_K2Node_ActorBoundEvent_101_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_24_K2Node_ActorBoundEvent_101_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_24_K2Node_ActorBoundEvent_101_SBZLootedSignature__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_22_K2Node_ActorBoundEvent_104_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_22_K2Node_ActorBoundEvent_104_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_22_K2Node_ActorBoundEvent_104_SBZLootedSignature__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_21_K2Node_ActorBoundEvent_97_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_21_K2Node_ActorBoundEvent_97_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_21_K2Node_ActorBoundEvent_97_SBZLootedSignature__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_20_K2Node_ActorBoundEvent_103_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_20_K2Node_ActorBoundEvent_103_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_20_K2Node_ActorBoundEvent_103_SBZLootedSignature__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_19_K2Node_ActorBoundEvent_102_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_19_K2Node_ActorBoundEvent_102_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_19_K2Node_ActorBoundEvent_102_SBZLootedSignature__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_18_K2Node_ActorBoundEvent_100_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_18_K2Node_ActorBoundEvent_100_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_18_K2Node_ActorBoundEvent_100_SBZLootedSignature__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_12_K2Node_ActorBoundEvent_107_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_12_K2Node_ActorBoundEvent_107_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_12_K2Node_ActorBoundEvent_107_SBZLootedSignature__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_11_K2Node_ActorBoundEvent_105_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_11_K2Node_ActorBoundEvent_105_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_11_K2Node_ActorBoundEvent_105_SBZLootedSignature__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_10_K2Node_ActorBoundEvent_108_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_10_K2Node_ActorBoundEvent_108_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_MoneyPile_01_Loose_10_K2Node_ActorBoundEvent_108_SBZLootedSignature__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_BlockerFence_01_2_K2Node_ActorBoundEvent_19_SBZOnInteractionBinaryStateDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_BlockerFence_01_2_K2Node_ActorBoundEvent_19_SBZOnInteractionBinaryStateDelegate__DelegateSignature final
+{
+public:
+	bool                                          BNewState;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_BlockerFence_01_2_K2Node_ActorBoundEvent_19_SBZOnInteractionBinaryStateDelegate__DelegateSignature;
+
+// Function G_ArmoredTransport_Scripting.G_ArmoredTransport_Scripting_C.BndEvt__G_ArmoredTransport_Scripting_BP_ArmoredTransport_K2Node_ActorBoundEvent_43_SBZOnVehicleEscortChanged__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_ArmoredTransport_K2Node_ActorBoundEvent_43_SBZOnVehicleEscortChanged__DelegateSignature final
+{
+public:
+	bool                                          bIsMoving;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ArmoredTransport_Scripting_C_BndEvt__G_ArmoredTransport_Scripting_BP_ArmoredTransport_K2Node_ActorBoundEvent_43_SBZOnVehicleEscortChanged__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

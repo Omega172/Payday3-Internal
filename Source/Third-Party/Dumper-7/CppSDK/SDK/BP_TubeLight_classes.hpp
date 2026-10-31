@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Starbreeze_classes.hpp"
 #include "Enum_LampStages_structs.hpp"
+#include "Starbreeze_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -43,7 +43,7 @@ public:
 	Enum_LampStages                               States;                                            // 0x03F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetStateFunction(Enum_LampStages States_0);
+	void SetStateFunction(Enum_LampStages States);
 
 public:
 	static class UClass* StaticClass()
@@ -59,5 +59,6 @@ public:
 		return GetDefaultObjImpl<ABP_TubeLight_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_TubeLight_C;
 
 SDK_NAMESPACE_END

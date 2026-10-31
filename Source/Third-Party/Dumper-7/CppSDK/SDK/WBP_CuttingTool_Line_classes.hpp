@@ -26,10 +26,10 @@ public:
 	class UProgressBar*                           ProgressBar_87;                                    // 0x0300(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_CuttingTool_Line(int32 EntryPoint);
-	void OnWidgetCut(float AtSegment);
+	void OnWidgetInitialCut(float AtSegment_OnWidgetInitialCut);
 	void OnWidgetCutCompleted();
-	void OnWidgetInitialCut(float AtSegment);
+	void OnWidgetCut(float AtSegment_OnWidgetCut);
+	void ExecuteUbergraph_WBP_CuttingTool_Line(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<UWBP_CuttingTool_Line_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_CuttingTool_Line_C;
 
 SDK_NAMESPACE_END

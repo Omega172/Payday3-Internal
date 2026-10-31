@@ -54,26 +54,26 @@ public:
 	bool                                          HasPlayerStatus;                                   // 0x04CC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4CD[0x3];                                      // 0x04CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TMulticastInlineDelegate<void()>              OnPlayerStatusRemoved;                             // 0x04D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void(const class FString& PlayerName, bool HasPlayerStatus)> OnPlayerStatusUpdating; // 0x04E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(const class FString& PlayerName, bool HasPlayerStatus_0)> OnPlayerStatusUpdating; // 0x04E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void SetPlayerUIInfo(const struct FSBZLobbyCharacterInfoUi& InCharacter);
-	void SetLobbyOwnerVisibility(const class FString& InUserID);
-	void RefreshVisual();
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnPlayerStatusRemoved_Event();
-	void OnMMStopped(ESBZOnlineCode ErrorCode);
-	void OnLobbyUpdate(ESBZOnlineCode ErrorCode);
-	void OnLobbyPlayerStatusUpdated();
-	void OnLeft();
-	void OnInitialized();
-	void OnFocusedVisuals(bool bIsFocused);
-	void OnControlsReferencePressed(class FName ActionName);
-	void GetLobbyInfo(struct FSBZLobbyCharacterInfoUi* CharacterUIInfo, bool* IsValid);
-	void ExecuteUbergraph_WBP_UI_Preplanning_MainMenu_PlayerReadyStatus(int32 EntryPoint);
-	void Construct();
+	void ButtonFocusedChanged(bool bInHasFocus);
 	void CleanWidget();
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
+	void Construct();
+	void ExecuteUbergraph_WBP_UI_Preplanning_MainMenu_PlayerReadyStatus(int32 EntryPoint);
+	void GetLobbyInfo(struct FSBZLobbyCharacterInfoUi* CharacterUIInfo, bool* IsValid);
+	void OnControlsReferencePressed(class FName ActionName);
+	void OnFocusedVisuals(bool bIsFocused);
+	void OnInitialized();
+	void OnLeft();
+	void OnLobbyPlayerStatusUpdated();
+	void OnLobbyUpdate(ESBZOnlineCode ErrorCode);
+	void OnMMStopped(ESBZOnlineCode ErrorCode);
+	void OnPlayerStatusRemoved_Event();
+	void PreConstruct(bool IsDesignTime);
+	void RefreshVisual();
+	void SetLobbyOwnerVisibility(const class FString& InUserID);
+	void SetPlayerUIInfo(const struct FSBZLobbyCharacterInfoUi& InCharacter);
 
 public:
 	static class UClass* StaticClass()

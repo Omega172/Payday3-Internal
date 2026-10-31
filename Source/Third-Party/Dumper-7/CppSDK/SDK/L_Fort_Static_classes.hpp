@@ -26,9 +26,9 @@ public:
 	class ABP_ReplicatedActorVisibility_C*        BP_ReplicatedActorVisibility_BeforeExplosion_ExecuteUbergraph_L_Fort_Static_RefProperty; // 0x03E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_L_Fort_Static(int32 EntryPoint);
-	void onWallExplosion();
 	void ReceiveBeginPlay();
+	void onWallExplosion();
+	void ExecuteUbergraph_L_Fort_Static(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<AL_Fort_Static_C>();
 	}
 };
+DUMPER7_ASSERTS_AL_Fort_Static_C;
 
 SDK_NAMESPACE_END

@@ -16,85 +16,21 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_CampaignContent_LoreAsset_TextLog.WBP_CampaignContent_LoreAsset_TextLog_C.AddNextLine
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_CampaignContent_LoreAsset_TextLog_C::AddNextLine()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignContent_LoreAsset_TextLog_C", "AddNextLine");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CampaignContent_LoreAsset_TextLog.WBP_CampaignContent_LoreAsset_TextLog_C.DoFlashStep
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_CampaignContent_LoreAsset_TextLog_C::DoFlashStep()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignContent_LoreAsset_TextLog_C", "DoFlashStep");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CampaignContent_LoreAsset_TextLog.WBP_CampaignContent_LoreAsset_TextLog_C.ExecuteUbergraph_WBP_CampaignContent_LoreAsset_TextLog
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_CampaignContent_LoreAsset_TextLog.WBP_CampaignContent_LoreAsset_TextLog_C.SetEntryState
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZCampaignEntryState                  NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CampaignContent_LoreAsset_TextLog_C::ExecuteUbergraph_WBP_CampaignContent_LoreAsset_TextLog(int32 EntryPoint)
+void UWBP_CampaignContent_LoreAsset_TextLog_C::SetEntryState(ESBZCampaignEntryState NewState)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetEntryState", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignContent_LoreAsset_TextLog_C", "ExecuteUbergraph_WBP_CampaignContent_LoreAsset_TextLog");
+	Params::WBP_CampaignContent_LoreAsset_TextLog_C_SetEntryState Parms{};
 
-	Params::WBP_CampaignContent_LoreAsset_TextLog_C_ExecuteUbergraph_WBP_CampaignContent_LoreAsset_TextLog Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.NewState = NewState;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CampaignContent_LoreAsset_TextLog.WBP_CampaignContent_LoreAsset_TextLog_C.GetEntryState
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESBZCampaignEntryState                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-ESBZCampaignEntryState UWBP_CampaignContent_LoreAsset_TextLog_C::GetEntryState()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignContent_LoreAsset_TextLog_C", "GetEntryState");
-
-	Params::WBP_CampaignContent_LoreAsset_TextLog_C_GetEntryState Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_CampaignContent_LoreAsset_TextLog.WBP_CampaignContent_LoreAsset_TextLog_C.PulseRedText
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_CampaignContent_LoreAsset_TextLog_C::PulseRedText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignContent_LoreAsset_TextLog_C", "PulseRedText");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -105,10 +41,8 @@ void UWBP_CampaignContent_LoreAsset_TextLog_C::PulseRedText()
 
 void UWBP_CampaignContent_LoreAsset_TextLog_C::SetCampaignData(const class USBZCampaignBaseEntryData* Entry)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignContent_LoreAsset_TextLog_C", "SetCampaignData");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetCampaignData", FnName));
 
 	Params::WBP_CampaignContent_LoreAsset_TextLog_C_SetCampaignData Parms{};
 
@@ -118,23 +52,75 @@ void UWBP_CampaignContent_LoreAsset_TextLog_C::SetCampaignData(const class USBZC
 }
 
 
-// Function WBP_CampaignContent_LoreAsset_TextLog.WBP_CampaignContent_LoreAsset_TextLog_C.SetEntryState
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESBZCampaignEntryState                  NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_CampaignContent_LoreAsset_TextLog.WBP_CampaignContent_LoreAsset_TextLog_C.PulseRedText
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_CampaignContent_LoreAsset_TextLog_C::SetEntryState(ESBZCampaignEntryState NewState)
+void UWBP_CampaignContent_LoreAsset_TextLog_C::PulseRedText()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PulseRedText", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CampaignContent_LoreAsset_TextLog_C", "SetEntryState");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::WBP_CampaignContent_LoreAsset_TextLog_C_SetEntryState Parms{};
 
-	Parms.NewState = NewState;
+// Function WBP_CampaignContent_LoreAsset_TextLog.WBP_CampaignContent_LoreAsset_TextLog_C.GetEntryState
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESBZCampaignEntryState                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+ESBZCampaignEntryState UWBP_CampaignContent_LoreAsset_TextLog_C::GetEntryState()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetEntryState", FnName));
+
+	Params::WBP_CampaignContent_LoreAsset_TextLog_C_GetEntryState Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_CampaignContent_LoreAsset_TextLog.WBP_CampaignContent_LoreAsset_TextLog_C.ExecuteUbergraph_WBP_CampaignContent_LoreAsset_TextLog
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CampaignContent_LoreAsset_TextLog_C::ExecuteUbergraph_WBP_CampaignContent_LoreAsset_TextLog(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_CampaignContent_LoreAsset_TextLog_C", "ExecuteUbergraph_WBP_CampaignContent_LoreAsset_TextLog", FuncInfo);
+
+	Params::WBP_CampaignContent_LoreAsset_TextLog_C_ExecuteUbergraph_WBP_CampaignContent_LoreAsset_TextLog Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CampaignContent_LoreAsset_TextLog.WBP_CampaignContent_LoreAsset_TextLog_C.DoFlashStep
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_CampaignContent_LoreAsset_TextLog_C::DoFlashStep()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DoFlashStep", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CampaignContent_LoreAsset_TextLog.WBP_CampaignContent_LoreAsset_TextLog_C.AddNextLine
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_CampaignContent_LoreAsset_TextLog_C::AddNextLine()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AddNextLine", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

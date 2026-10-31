@@ -29,12 +29,12 @@ public:
 	int32                                         MaterialIndex;                                     // 0x0360(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void __PrevMaterial();
-	void __PrevMesh();
-	void Build();
-	void NextMaterial__();
-	void NextMesh__();
 	void UserConstructionScript();
+	void NextMesh__();
+	void NextMaterial__();
+	void Build();
+	void __PrevMesh();
+	void __PrevMaterial();
 
 public:
 	static class UClass* StaticClass()
@@ -50,5 +50,6 @@ public:
 		return GetDefaultObjImpl<ABP_Master_Decal_Fixture_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Master_Decal_Fixture_C;
 
 SDK_NAMESPACE_END

@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ACHU_BPL_LightWall_Warm_B_C>();
 	}
 };
+DUMPER7_ASSERTS_ACHU_BPL_LightWall_Warm_B_C;
 
 SDK_NAMESPACE_END

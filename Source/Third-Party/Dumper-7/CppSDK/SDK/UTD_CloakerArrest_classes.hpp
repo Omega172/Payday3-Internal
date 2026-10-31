@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UUTD_CloakerArrest_C>();
 	}
 };
+DUMPER7_ASSERTS_UUTD_CloakerArrest_C;
 
 SDK_NAMESPACE_END

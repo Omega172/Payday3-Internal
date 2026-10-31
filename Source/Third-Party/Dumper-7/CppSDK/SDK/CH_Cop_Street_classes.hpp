@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CH_Cop_Street.CH_Cop_Street_C
-// 0x0000 (0x21E0 - 0x21E0)
+// 0x0000 (0x2270 - 0x2270)
 class ACH_Cop_Street_C : public ACH_Cop_C
 {
 public:
@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ACH_Cop_Street_C>();
 	}
 };
+DUMPER7_ASSERTS_ACH_Cop_Street_C;
 
 SDK_NAMESPACE_END

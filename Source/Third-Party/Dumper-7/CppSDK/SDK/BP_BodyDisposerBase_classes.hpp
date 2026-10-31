@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Starbreeze_classes.hpp"
 
 
@@ -43,17 +43,17 @@ public:
 	TMulticastInlineDelegate<void(int32 numBodies)> onInteracted;                                    // 0x04C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BP_OnActorDisposed(int32 NumDisposed, bool bDoCosmetics);
-	void dumpBodyOpen_finished();
-	void dumpBodyOpen_tick(double alpha);
-	void dumpBodyOpen_timeline__FinishedFunc();
-	void dumpBodyOpen_timeline__UpdateFunc();
-	void ExecuteUbergraph_BP_BodyDisposerBase(int32 EntryPoint);
-	void getCurrentTransform(double Alpha, const struct FTransform& startTransform_0, struct FTransform* transform);
-	void setInteraction(bool enabled);
 	void UserConstructionScript();
+	void setInteraction(bool enabled);
+	void getCurrentTransform(double Alpha, const struct FTransform& startTransform_0, struct FTransform* transform);
+	void ExecuteUbergraph_BP_BodyDisposerBase(int32 EntryPoint);
+	void dumpBodyOpen_timeline__UpdateFunc();
+	void dumpBodyOpen_timeline__FinishedFunc();
+	void dumpBodyOpen_tick(double alpha);
+	void dumpBodyOpen_finished();
+	void BP_OnActorDisposed(int32 NumDisposed, bool bDoCosmetics);
+	void BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -70,5 +70,6 @@ public:
 	}
 };
 #pragma pack(pop)
+DUMPER7_ASSERTS_ABP_BodyDisposerBase_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_FileBoxHolder_01_A_GoldSharke_SmallDestruction_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_FileBoxHolder_01_A_GoldSharke_SmallDestruction_C;
 
 SDK_NAMESPACE_END

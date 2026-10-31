@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UBP_TankAttributeSet_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_TankAttributeSet_C;
 
 SDK_NAMESPACE_END

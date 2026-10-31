@@ -18,44 +18,32 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_CrimebondCollectionsListItem.WBP_CrimebondCollectionsListItem_C.UpdateVisualState
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_CrimebondCollectionsListItem_C_UpdateVisualState final
-{
-public:
-	bool                                          Selected;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EUMGSequencePlayMode                          Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EUMGSequencePlayMode                          Temp_byte_Variable_3;                              // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_2;                              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EUMGSequencePlayMode                          K2Node_Select_Default_1;                           // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                                K2Node_Select_Default_2;                           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CrimebondCollectionsListItem_C_UpdateVisualState;
-
-// Function WBP_CrimebondCollectionsListItem.WBP_CrimebondCollectionsListItem_C.OnListItemObjectSet
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CrimebondCollectionsListItem_C_OnListItemObjectSet final
-{
-public:
-	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CrimebondCollectionsListItem_C_OnListItemObjectSet;
-
-// Function WBP_CrimebondCollectionsListItem.WBP_CrimebondCollectionsListItem_C.OnListItemEquippedChanged
+// Function WBP_CrimebondCollectionsListItem.WBP_CrimebondCollectionsListItem_C.BP_OnItemExpansionChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_CrimebondCollectionsListItem_C_OnListItemEquippedChanged final
+struct WBP_CrimebondCollectionsListItem_C_BP_OnItemExpansionChanged final
 {
 public:
-	bool                                          bIsEquipped;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsExpanded;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CrimebondCollectionsListItem_C_OnListItemEquippedChanged;
+DUMPER7_ASSERTS_WBP_CrimebondCollectionsListItem_C_BP_OnItemExpansionChanged;
+
+// Function WBP_CrimebondCollectionsListItem.WBP_CrimebondCollectionsListItem_C.BP_OnItemSelectionChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CrimebondCollectionsListItem_C_BP_OnItemSelectionChanged final
+{
+public:
+	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CrimebondCollectionsListItem_C_BP_OnItemSelectionChanged;
+
+// Function WBP_CrimebondCollectionsListItem.WBP_CrimebondCollectionsListItem_C.BundlePackDataSet
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CrimebondCollectionsListItem_C_BundlePackDataSet final
+{
+public:
+	class USBZBundlePackData*                     InBundlePackData;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CrimebondCollectionsListItem_C_BundlePackDataSet;
 
 // Function WBP_CrimebondCollectionsListItem.WBP_CrimebondCollectionsListItem_C.ExecuteUbergraph_WBP_CrimebondCollectionsListItem
 // 0x00D8 (0x00D8 - 0x0000)
@@ -90,32 +78,44 @@ public:
 };
 DUMPER7_ASSERTS_WBP_CrimebondCollectionsListItem_C_ExecuteUbergraph_WBP_CrimebondCollectionsListItem;
 
-// Function WBP_CrimebondCollectionsListItem.WBP_CrimebondCollectionsListItem_C.BundlePackDataSet
+// Function WBP_CrimebondCollectionsListItem.WBP_CrimebondCollectionsListItem_C.OnListItemEquippedChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CrimebondCollectionsListItem_C_OnListItemEquippedChanged final
+{
+public:
+	bool                                          bIsEquipped;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CrimebondCollectionsListItem_C_OnListItemEquippedChanged;
+
+// Function WBP_CrimebondCollectionsListItem.WBP_CrimebondCollectionsListItem_C.OnListItemObjectSet
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_CrimebondCollectionsListItem_C_BundlePackDataSet final
+struct WBP_CrimebondCollectionsListItem_C_OnListItemObjectSet final
 {
 public:
-	class USBZBundlePackData*                     InBundlePackData;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CrimebondCollectionsListItem_C_BundlePackDataSet;
+DUMPER7_ASSERTS_WBP_CrimebondCollectionsListItem_C_OnListItemObjectSet;
 
-// Function WBP_CrimebondCollectionsListItem.WBP_CrimebondCollectionsListItem_C.BP_OnItemSelectionChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CrimebondCollectionsListItem_C_BP_OnItemSelectionChanged final
+// Function WBP_CrimebondCollectionsListItem.WBP_CrimebondCollectionsListItem_C.UpdateVisualState
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_CrimebondCollectionsListItem_C_UpdateVisualState final
 {
 public:
-	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Selected_0;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUMGSequencePlayMode                          Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUMGSequencePlayMode                          Temp_byte_Variable_3;                              // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_2;                              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EUMGSequencePlayMode                          K2Node_Select_Default_1;                           // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                                K2Node_Select_Default_2;                           // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CrimebondCollectionsListItem_C_BP_OnItemSelectionChanged;
-
-// Function WBP_CrimebondCollectionsListItem.WBP_CrimebondCollectionsListItem_C.BP_OnItemExpansionChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CrimebondCollectionsListItem_C_BP_OnItemExpansionChanged final
-{
-public:
-	bool                                          bIsExpanded;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CrimebondCollectionsListItem_C_BP_OnItemExpansionChanged;
+DUMPER7_ASSERTS_WBP_CrimebondCollectionsListItem_C_UpdateVisualState;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

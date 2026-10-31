@@ -21,9 +21,10 @@ SDK_PARAM_NAMESPACE_START
 struct BUST_BPL_Fluorescent_Hanging_01_C_SetStateFunction final
 {
 public:
-	Enum_LampStages                               State_0;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_LampStages                               State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BUST_BPL_Fluorescent_Hanging_01_C_SetStateFunction;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

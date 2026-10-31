@@ -17,18 +17,18 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_AI_Throwable_Flashbang.BP_AI_Throwable_Flashbang_C
-// 0x0010 (0x8F40 - 0x8F30)
+// 0x0010 (0x07A0 - 0x0790)
 class ABP_AI_Throwable_Flashbang_C final : public ABP_Throwable_Flashbang_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BP_AI_Throwable_Flashbang_C;        // 0x8F28(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UNiagaraComponent*                      FX_Light;                                          // 0x8F30(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      FX_Trail;                                          // 0x8F38(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_AI_Throwable_Flashbang_C;        // 0x0788(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UNiagaraComponent*                      FX_Light;                                          // 0x0790(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      FX_Trail;                                          // 0x0798(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_AI_Throwable_Flashbang(int32 EntryPoint);
-	void OnThrow();
 	void ReceiveDestroyed();
+	void OnThrow();
+	void ExecuteUbergraph_BP_AI_Throwable_Flashbang(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<ABP_AI_Throwable_Flashbang_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_AI_Throwable_Flashbang_C;
 
 SDK_NAMESPACE_END

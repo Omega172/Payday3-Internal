@@ -14,60 +14,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function R_FirstPlayable_LootCloset.R_FirstPlayable_LootCloset_C.BndEvt__G_FirstPlayable_Scripting_BP_InstantLoot_Money_17_K2Node_ActorBoundEvent_121_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_FirstPlayable_LootCloset_C_BndEvt__G_FirstPlayable_Scripting_BP_InstantLoot_Money_17_K2Node_ActorBoundEvent_121_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_FirstPlayable_LootCloset.R_FirstPlayable_LootCloset_C.BndEvt__G_FirstPlayable_Scripting_BP_InstantLoot_Money_21_K2Node_ActorBoundEvent_111_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_FirstPlayable_LootCloset_C_BndEvt__G_FirstPlayable_Scripting_BP_InstantLoot_Money_21_K2Node_ActorBoundEvent_111_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_FirstPlayable_LootCloset.R_FirstPlayable_LootCloset_C.BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_27_K2Node_ActorBoundEvent_7_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_FirstPlayable_LootCloset_C_BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_27_K2Node_ActorBoundEvent_7_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_FirstPlayable_LootCloset.R_FirstPlayable_LootCloset_C.BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_28_K2Node_ActorBoundEvent_6_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_FirstPlayable_LootCloset_C_BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_28_K2Node_ActorBoundEvent_6_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_FirstPlayable_LootCloset.R_FirstPlayable_LootCloset_C.BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_29_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_FirstPlayable_LootCloset_C_BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_29_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_FirstPlayable_LootCloset.R_FirstPlayable_LootCloset_C.BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_41_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_FirstPlayable_LootCloset_C_BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_41_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function R_FirstPlayable_LootCloset.R_FirstPlayable_LootCloset_C.ExecuteUbergraph_R_FirstPlayable_LootCloset
 // 0x0068 (0x0068 - 0x0000)
 struct R_FirstPlayable_LootCloset_C_ExecuteUbergraph_R_FirstPlayable_LootCloset final
@@ -88,6 +34,67 @@ public:
 	class ASBZInstantLoot*                        K2Node_ActorBoundEvent_InstantLoot;                // 0x0058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ASBZPlayerCharacter*                    K2Node_ActorBoundEvent_TakenByPlayer;              // 0x0060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_R_FirstPlayable_LootCloset_C_ExecuteUbergraph_R_FirstPlayable_LootCloset;
+
+// Function R_FirstPlayable_LootCloset.R_FirstPlayable_LootCloset_C.BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_41_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_FirstPlayable_LootCloset_C_BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_41_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_FirstPlayable_LootCloset_C_BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_41_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature;
+
+// Function R_FirstPlayable_LootCloset.R_FirstPlayable_LootCloset_C.BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_29_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_FirstPlayable_LootCloset_C_BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_29_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_FirstPlayable_LootCloset_C_BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_29_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature;
+
+// Function R_FirstPlayable_LootCloset.R_FirstPlayable_LootCloset_C.BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_28_K2Node_ActorBoundEvent_6_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_FirstPlayable_LootCloset_C_BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_28_K2Node_ActorBoundEvent_6_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_FirstPlayable_LootCloset_C_BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_28_K2Node_ActorBoundEvent_6_SBZLootedSignature__DelegateSignature;
+
+// Function R_FirstPlayable_LootCloset.R_FirstPlayable_LootCloset_C.BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_27_K2Node_ActorBoundEvent_7_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_FirstPlayable_LootCloset_C_BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_27_K2Node_ActorBoundEvent_7_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_FirstPlayable_LootCloset_C_BndEvt__R_FirstPlayable_LootCloset_BP_InstantLoot_Money_27_K2Node_ActorBoundEvent_7_SBZLootedSignature__DelegateSignature;
+
+// Function R_FirstPlayable_LootCloset.R_FirstPlayable_LootCloset_C.BndEvt__G_FirstPlayable_Scripting_BP_InstantLoot_Money_21_K2Node_ActorBoundEvent_111_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_FirstPlayable_LootCloset_C_BndEvt__G_FirstPlayable_Scripting_BP_InstantLoot_Money_21_K2Node_ActorBoundEvent_111_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_FirstPlayable_LootCloset_C_BndEvt__G_FirstPlayable_Scripting_BP_InstantLoot_Money_21_K2Node_ActorBoundEvent_111_SBZLootedSignature__DelegateSignature;
+
+// Function R_FirstPlayable_LootCloset.R_FirstPlayable_LootCloset_C.BndEvt__G_FirstPlayable_Scripting_BP_InstantLoot_Money_17_K2Node_ActorBoundEvent_121_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_FirstPlayable_LootCloset_C_BndEvt__G_FirstPlayable_Scripting_BP_InstantLoot_Money_17_K2Node_ActorBoundEvent_121_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_FirstPlayable_LootCloset_C_BndEvt__G_FirstPlayable_Scripting_BP_InstantLoot_Money_17_K2Node_ActorBoundEvent_121_SBZLootedSignature__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

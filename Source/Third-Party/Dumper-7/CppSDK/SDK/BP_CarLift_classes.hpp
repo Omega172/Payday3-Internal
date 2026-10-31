@@ -47,18 +47,18 @@ public:
 	struct FVector                                buttonStartLocation;                               // 0x0488(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void animButton_timeline__FinishedFunc();
-	void animButton_timeline__UpdateFunc();
-	void BndEvt__BP_CarLift_02_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_CarLift_02_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_CarLift_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_CarLift_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
-	void BP_OnStateChanged(ESBZTimerState NewState, ESBZTimerState OldState, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_CarLift(int32 EntryPoint);
-	void ReceiveTick(float DeltaSeconds);
-	void SetInteraction(bool State);
-	void SetLiftLocation();
 	void UserConstructionScript();
+	void SetLiftLocation();
+	void SetInteraction(bool State);
+	void ReceiveTick(float DeltaSeconds_ReceiveTick);
+	void ExecuteUbergraph_BP_CarLift(int32 EntryPoint);
+	void BP_OnStateChanged(ESBZTimerState NewState_BP_OnStateChanged, ESBZTimerState OldState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged);
+	void BndEvt__BP_CarLift_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
+	void BndEvt__BP_CarLift_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_CarLift_02_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_CarLift_02_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void animButton_timeline__UpdateFunc();
+	void animButton_timeline__FinishedFunc();
 
 public:
 	static class UClass* StaticClass()
@@ -74,5 +74,6 @@ public:
 		return GetDefaultObjImpl<ABP_CarLift_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CarLift_C;
 
 SDK_NAMESPACE_END

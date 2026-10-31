@@ -18,6 +18,19 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_Cable_Dangling.BP_Cable_Dangling_C.ReceiveAnyDamage
+// 0x0020 (0x0020 - 0x0000)
+struct BP_Cable_Dangling_C_ReceiveAnyDamage final
+{
+public:
+	float                                         Damage_ReceiveAnyDamage;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	const class UDamageType*                      DamageType_ReceiveAnyDamage;                       // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AController*                            InstigatedBy_ReceiveAnyDamage;                     // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 DamageCauser_ReceiveAnyDamage;                     // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Cable_Dangling_C_ReceiveAnyDamage;
+
 // Function BP_Cable_Dangling.BP_Cable_Dangling_C.ExecuteUbergraph_BP_Cable_Dangling
 // 0x0360 (0x0360 - 0x0000)
 struct BP_Cable_Dangling_C_ExecuteUbergraph_BP_Cable_Dangling final
@@ -72,18 +85,7 @@ public:
 	float                                         CallFunc_AddDisplacementForce_DisplacementForce_ImplicitCast; // 0x0350(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_AddDisplacementForce_DisplacementForceRadius_ImplicitCast; // 0x0354(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_Cable_Dangling.BP_Cable_Dangling_C.ReceiveAnyDamage
-// 0x0020 (0x0020 - 0x0000)
-struct BP_Cable_Dangling_C_ReceiveAnyDamage final
-{
-public:
-	float                                         Damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	const class UDamageType*                      DamageType;                                        // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AController*                            InstigatedBy;                                      // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 DamageCauser;                                      // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_Cable_Dangling_C_ExecuteUbergraph_BP_Cable_Dangling;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

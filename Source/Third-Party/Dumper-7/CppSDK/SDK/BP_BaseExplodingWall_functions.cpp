@@ -16,89 +16,233 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable1_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// const class USBZBaseInteractableComponent*InteractableComponent                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_BaseExplodingWall_C::BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable1_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
+void ABP_BaseExplodingWall_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseExplodingWall_C", "BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable1_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_BaseExplodingWall_C_BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable1_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
 
-	Parms.InteractableComponent = InteractableComponent;
-	Parms.bInNewState = bInNewState;
+// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.toggleLight
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_BaseExplodingWall_C::toggleLight()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"toggleLight", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.spawnExplosionVFX
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    doCosmetics                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BaseExplodingWall_C::spawnExplosionVFX(bool doCosmetics)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"spawnExplosionVFX", FnName));
+
+	Params::BP_BaseExplodingWall_C_spawnExplosionVFX Parms{};
+
+	Parms.doCosmetics = doCosmetics;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable1_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature
+// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.setExplosivesVisibility
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    visible                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BaseExplodingWall_C::setExplosivesVisibility(bool visible)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setExplosivesVisibility", FnName));
+
+	Params::BP_BaseExplodingWall_C_setExplosivesVisibility Parms{};
+
+	Parms.visible = visible;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.setDebrisVisibility
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    visible                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BaseExplodingWall_C::setDebrisVisibility(bool visible)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setDebrisVisibility", FnName));
+
+	Params::BP_BaseExplodingWall_C_setDebrisVisibility Parms{};
+
+	Parms.visible = visible;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_BaseExplodingWall_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.onServerOnChargesChanged
+// (BlueprintAuthorityOnly, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   NewCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BaseExplodingWall_C::onServerOnChargesChanged(int32 NewCount)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"onServerOnChargesChanged", FnName));
+
+	Params::BP_BaseExplodingWall_C_onServerOnChargesChanged Parms{};
+
+	Parms.NewCount = NewCount;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.onExplosivePlaced
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UActorComponent*                  interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BaseExplodingWall_C::onExplosivePlaced(class UActorComponent* interactor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"onExplosivePlaced", FnName));
+
+	Params::BP_BaseExplodingWall_C_onExplosivePlaced Parms{};
+
+	Parms.interactor = interactor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.onAllChargesPlaced
+// (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
+
+void ABP_BaseExplodingWall_C::onAllChargesPlaced()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"onAllChargesPlaced", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.HandleInteractionStateChanged
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bNewState                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UStaticMeshComponent*             StaticMesh                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BaseExplodingWall_C::HandleInteractionStateChanged(bool bNewState, class UStaticMeshComponent* StaticMesh)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HandleInteractionStateChanged", FnName));
+
+	Params::BP_BaseExplodingWall_C_HandleInteractionStateChanged Parms{};
+
+	Parms.bNewState = bNewState;
+	Parms.StaticMesh = StaticMesh;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.ExecuteUbergraph_BP_BaseExplodingWall
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BaseExplodingWall_C::ExecuteUbergraph_BP_BaseExplodingWall(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_BaseExplodingWall_C", "ExecuteUbergraph_BP_BaseExplodingWall", FuncInfo);
+
+	Params::BP_BaseExplodingWall_C_ExecuteUbergraph_BP_BaseExplodingWall Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.BP_OnExplosion
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BaseExplodingWall_C::BP_OnExplosion(bool bDoCosmetics)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnExplosion", FnName));
+
+	Params::BP_BaseExplodingWall_C_BP_OnExplosion Parms{};
+
+	Parms.bDoCosmetics = bDoCosmetics;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.BP_EnabledChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bEnabled                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BaseExplodingWall_C::BP_EnabledChanged(bool bEnabled, bool bDoCosmetics)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_EnabledChanged", FnName));
+
+	Params::BP_BaseExplodingWall_C_BP_EnabledChanged Parms{};
+
+	Parms.bEnabled = bEnabled;
+	Parms.bDoCosmetics = bDoCosmetics;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable3_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BaseExplodingWall_C::BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable1_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_BaseExplodingWall_C::BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable3_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable3_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseExplodingWall_C", "BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable1_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_BaseExplodingWall_C_BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable1_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable2_K2Node_ComponentBoundEvent_1_SBZOnInteractableStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// const class USBZBaseInteractableComponent*InteractableComponent                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BaseExplodingWall_C::BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable2_K2Node_ComponentBoundEvent_1_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseExplodingWall_C", "BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable2_K2Node_ComponentBoundEvent_1_SBZOnInteractableStateChangedDelegate__DelegateSignature");
-
-	Params::BP_BaseExplodingWall_C_BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable2_K2Node_ComponentBoundEvent_1_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.InteractableComponent = InteractableComponent;
-	Parms.bInNewState = bInNewState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable2_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BaseExplodingWall_C::BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable2_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseExplodingWall_C", "BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable2_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_BaseExplodingWall_C_BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable2_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature Parms{};
+	Params::BP_BaseExplodingWall_C_BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable3_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature Parms{};
 
 	Parms.Interactable = Interactable;
 	Parms.Interactor = Interactor;
@@ -116,10 +260,8 @@ void ABP_BaseExplodingWall_C::BndEvt__BP_TestExplodingWall_SBZExplosiveInteracta
 
 void ABP_BaseExplodingWall_C::BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable3_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseExplodingWall_C", "BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable3_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable3_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature", FnName));
 
 	Params::BP_BaseExplodingWall_C_BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable3_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
 
@@ -130,21 +272,19 @@ void ABP_BaseExplodingWall_C::BndEvt__BP_TestExplodingWall_SBZExplosiveInteracta
 }
 
 
-// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable3_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature
+// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable2_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BaseExplodingWall_C::BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable3_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_BaseExplodingWall_C::BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable2_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable2_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseExplodingWall_C", "BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable3_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_BaseExplodingWall_C_BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable3_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature Parms{};
+	Params::BP_BaseExplodingWall_C_BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable2_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature Parms{};
 
 	Parms.Interactable = Interactable;
 	Parms.Interactor = Interactor;
@@ -154,243 +294,65 @@ void ABP_BaseExplodingWall_C::BndEvt__BP_TestExplodingWall_SBZExplosiveInteracta
 }
 
 
-// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.BP_EnabledChanged
-// (Event, Protected, BlueprintEvent)
+// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable2_K2Node_ComponentBoundEvent_1_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// bool                                    bEnabled                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZBaseInteractableComponent*InteractableComponent                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BaseExplodingWall_C::BP_EnabledChanged(bool bEnabled, bool bDoCosmetics)
+void ABP_BaseExplodingWall_C::BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable2_K2Node_ComponentBoundEvent_1_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable2_K2Node_ComponentBoundEvent_1_SBZOnInteractableStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseExplodingWall_C", "BP_EnabledChanged");
+	Params::BP_BaseExplodingWall_C_BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable2_K2Node_ComponentBoundEvent_1_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
 
-	Params::BP_BaseExplodingWall_C_BP_EnabledChanged Parms{};
-
-	Parms.bEnabled = bEnabled;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.InteractableComponent = InteractableComponent;
+	Parms.bInNewState = bInNewState;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.BP_OnExplosion
-// (Event, Protected, BlueprintEvent)
+// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable1_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BaseExplodingWall_C::BP_OnExplosion(bool bDoCosmetics)
+void ABP_BaseExplodingWall_C::BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable1_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable1_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseExplodingWall_C", "BP_OnExplosion");
+	Params::BP_BaseExplodingWall_C_BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable1_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature Parms{};
 
-	Params::BP_BaseExplodingWall_C_BP_OnExplosion Parms{};
-
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.ExecuteUbergraph_BP_BaseExplodingWall
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable1_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZBaseInteractableComponent*InteractableComponent                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BaseExplodingWall_C::ExecuteUbergraph_BP_BaseExplodingWall(int32 EntryPoint)
+void ABP_BaseExplodingWall_C::BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable1_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable1_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseExplodingWall_C", "ExecuteUbergraph_BP_BaseExplodingWall");
+	Params::BP_BaseExplodingWall_C_BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable1_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
 
-	Params::BP_BaseExplodingWall_C_ExecuteUbergraph_BP_BaseExplodingWall Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.InteractableComponent = InteractableComponent;
+	Parms.bInNewState = bInNewState;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.HandleInteractionStateChanged
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bNewState                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UStaticMeshComponent*             StaticMesh                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BaseExplodingWall_C::HandleInteractionStateChanged(bool bNewState, class UStaticMeshComponent* StaticMesh)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseExplodingWall_C", "HandleInteractionStateChanged");
-
-	Params::BP_BaseExplodingWall_C_HandleInteractionStateChanged Parms{};
-
-	Parms.bNewState = bNewState;
-	Parms.StaticMesh = StaticMesh;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.onAllChargesPlaced
-// (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
-
-void ABP_BaseExplodingWall_C::onAllChargesPlaced()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseExplodingWall_C", "onAllChargesPlaced");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.onExplosivePlaced
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UActorComponent*                  interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BaseExplodingWall_C::onExplosivePlaced(class UActorComponent* interactor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseExplodingWall_C", "onExplosivePlaced");
-
-	Params::BP_BaseExplodingWall_C_onExplosivePlaced Parms{};
-
-	Parms.interactor = interactor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.onServerOnChargesChanged
-// (BlueprintAuthorityOnly, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   NewCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BaseExplodingWall_C::onServerOnChargesChanged(int32 NewCount)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseExplodingWall_C", "onServerOnChargesChanged");
-
-	Params::BP_BaseExplodingWall_C_onServerOnChargesChanged Parms{};
-
-	Parms.NewCount = NewCount;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_BaseExplodingWall_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseExplodingWall_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.setDebrisVisibility
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    visible                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BaseExplodingWall_C::setDebrisVisibility(bool visible)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseExplodingWall_C", "setDebrisVisibility");
-
-	Params::BP_BaseExplodingWall_C_setDebrisVisibility Parms{};
-
-	Parms.visible = visible;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.setExplosivesVisibility
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    visible                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BaseExplodingWall_C::setExplosivesVisibility(bool visible)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseExplodingWall_C", "setExplosivesVisibility");
-
-	Params::BP_BaseExplodingWall_C_setExplosivesVisibility Parms{};
-
-	Parms.visible = visible;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.spawnExplosionVFX
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    doCosmetics                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BaseExplodingWall_C::spawnExplosionVFX(bool doCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseExplodingWall_C", "spawnExplosionVFX");
-
-	Params::BP_BaseExplodingWall_C_spawnExplosionVFX Parms{};
-
-	Parms.doCosmetics = doCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.toggleLight
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_BaseExplodingWall_C::toggleLight()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseExplodingWall_C", "toggleLight");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_BaseExplodingWall.BP_BaseExplodingWall_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_BaseExplodingWall_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseExplodingWall_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_CosmeticCannister_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CosmeticCannister_C;
 
 SDK_NAMESPACE_END

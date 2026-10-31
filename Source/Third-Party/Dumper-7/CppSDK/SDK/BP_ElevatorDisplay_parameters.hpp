@@ -17,6 +17,89 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_ElevatorDisplay.BP_ElevatorDisplay_C.UserConstructionScript
+// 0x0001 (0x0001 - 0x0000)
+struct BP_ElevatorDisplay_C_UserConstructionScript final
+{
+public:
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ElevatorDisplay_C_UserConstructionScript;
+
+// Function BP_ElevatorDisplay.BP_ElevatorDisplay_C.setFloor
+// 0x0028 (0x0028 - 0x0000)
+struct BP_ElevatorDisplay_C_setFloor final
+{
+public:
+	int32                                         floor;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Abs_Int_ReturnValue;                      // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0010(0x0010)()
+	struct FColor                                 K2Node_Select_Default;                             // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ElevatorDisplay_C_setFloor;
+
+// Function BP_ElevatorDisplay.BP_ElevatorDisplay_C.resume
+// 0x0001 (0x0001 - 0x0000)
+struct BP_ElevatorDisplay_C_resume final
+{
+public:
+	bool                                          CallFunc_K2_IsValidTimerHandle_ReturnValue;        // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ElevatorDisplay_C_resume;
+
+// Function BP_ElevatorDisplay.BP_ElevatorDisplay_C.pause
+// 0x0001 (0x0001 - 0x0000)
+struct BP_ElevatorDisplay_C_pause final
+{
+public:
+	bool                                          CallFunc_K2_IsTimerActiveHandle_ReturnValue;       // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ElevatorDisplay_C_pause;
+
+// Function BP_ElevatorDisplay.BP_ElevatorDisplay_C.OnStateChanged
+// 0x000C (0x000C - 0x0000)
+struct BP_ElevatorDisplay_C_OnStateChanged final
+{
+public:
+	int32                                         OldState_OnStateChanged;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewState_OnStateChanged;                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ElevatorDisplay_C_OnStateChanged;
+
+// Function BP_ElevatorDisplay.BP_ElevatorDisplay_C.goToFloor
+// 0x0030 (0x0030 - 0x0000)
+struct BP_ElevatorDisplay_C_goToFloor final
+{
+public:
+	int32                                         floor;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          instant;                                           // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_IsValidTimerHandle_ReturnValue;        // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7[0x1];                                        // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ElevatorDisplay_C_goToFloor;
+
+// Function BP_ElevatorDisplay.BP_ElevatorDisplay_C.ExecuteUbergraph_BP_ElevatorDisplay
+// 0x0010 (0x0010 - 0x0000)
+struct BP_ElevatorDisplay_C_ExecuteUbergraph_BP_ElevatorDisplay final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_OldState;                             // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Event_NewState;                             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bDoCosmetics;                         // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ElevatorDisplay_C_ExecuteUbergraph_BP_ElevatorDisplay;
+
 // Function BP_ElevatorDisplay.BP_ElevatorDisplay_C.ElevatorLoop
 // 0x0048 (0x0048 - 0x0000)
 struct BP_ElevatorDisplay_C_ElevatorLoop final
@@ -44,82 +127,7 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0045(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_2;          // 0x0046(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_ElevatorDisplay.BP_ElevatorDisplay_C.ExecuteUbergraph_BP_ElevatorDisplay
-// 0x0010 (0x0010 - 0x0000)
-struct BP_ElevatorDisplay_C_ExecuteUbergraph_BP_ElevatorDisplay final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_OldState;                             // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Event_NewState;                             // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bDoCosmetics;                         // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_ElevatorDisplay.BP_ElevatorDisplay_C.goToFloor
-// 0x0030 (0x0030 - 0x0000)
-struct BP_ElevatorDisplay_C_goToFloor final
-{
-public:
-	int32                                         floor;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          instant;                                           // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_K2_IsValidTimerHandle_ReturnValue;        // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7[0x1];                                        // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0008(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0020(0x0008)(NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_K2_SetTimerDelegate_Time_ImplicitCast;    // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_ElevatorDisplay.BP_ElevatorDisplay_C.OnStateChanged
-// 0x000C (0x000C - 0x0000)
-struct BP_ElevatorDisplay_C_OnStateChanged final
-{
-public:
-	int32                                         OldState;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         NewState;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_ElevatorDisplay.BP_ElevatorDisplay_C.pause
-// 0x0001 (0x0001 - 0x0000)
-struct BP_ElevatorDisplay_C_pause final
-{
-public:
-	bool                                          CallFunc_K2_IsTimerActiveHandle_ReturnValue;       // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_ElevatorDisplay.BP_ElevatorDisplay_C.resume
-// 0x0001 (0x0001 - 0x0000)
-struct BP_ElevatorDisplay_C_resume final
-{
-public:
-	bool                                          CallFunc_K2_IsValidTimerHandle_ReturnValue;        // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_ElevatorDisplay.BP_ElevatorDisplay_C.setFloor
-// 0x0028 (0x0028 - 0x0000)
-struct BP_ElevatorDisplay_C_setFloor final
-{
-public:
-	int32                                         floor;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Abs_Int_ReturnValue;                      // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0010(0x0010)()
-	struct FColor                                 K2Node_Select_Default;                             // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_ElevatorDisplay.BP_ElevatorDisplay_C.UserConstructionScript
-// 0x0001 (0x0001 - 0x0000)
-struct BP_ElevatorDisplay_C_UserConstructionScript final
-{
-public:
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_ElevatorDisplay_C_ElevatorLoop;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

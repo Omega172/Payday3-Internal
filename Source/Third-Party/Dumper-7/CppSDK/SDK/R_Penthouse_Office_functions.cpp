@@ -16,15 +16,25 @@
 
 SDK_NAMESPACE_START
 
-// Function R_Penthouse_Office.R_Penthouse_Office_C.BndEvt__R_Penthouse_Office_SBZSpawnLocationHandler1_K2Node_ActorBoundEvent_3_SBZSpawnLocationHandlerDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
+// Function R_Penthouse_Office.R_Penthouse_Office_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void AR_Penthouse_Office_C::BndEvt__R_Penthouse_Office_SBZSpawnLocationHandler1_K2Node_ActorBoundEvent_3_SBZSpawnLocationHandlerDelegate__DelegateSignature()
+void AR_Penthouse_Office_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Penthouse_Office_C", "BndEvt__R_Penthouse_Office_SBZSpawnLocationHandler1_K2Node_ActorBoundEvent_3_SBZSpawnLocationHandlerDelegate__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function R_Penthouse_Office.R_Penthouse_Office_C.OnRandomSublevelPlaced
+// (Event, Public, BlueprintEvent)
+
+void AR_Penthouse_Office_C::OnRandomSublevelPlaced()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRandomSublevelPlaced", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +47,8 @@ void AR_Penthouse_Office_C::BndEvt__R_Penthouse_Office_SBZSpawnLocationHandler1_
 
 void AR_Penthouse_Office_C::ExecuteUbergraph_R_Penthouse_Office(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Penthouse_Office_C", "ExecuteUbergraph_R_Penthouse_Office");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "R_Penthouse_Office_C", "ExecuteUbergraph_R_Penthouse_Office", FuncInfo);
 
 	Params::R_Penthouse_Office_C_ExecuteUbergraph_R_Penthouse_Office Parms{};
 
@@ -50,29 +58,13 @@ void AR_Penthouse_Office_C::ExecuteUbergraph_R_Penthouse_Office(int32 EntryPoint
 }
 
 
-// Function R_Penthouse_Office.R_Penthouse_Office_C.OnRandomSublevelPlaced
-// (Event, Public, BlueprintEvent)
+// Function R_Penthouse_Office.R_Penthouse_Office_C.BndEvt__R_Penthouse_Office_SBZSpawnLocationHandler1_K2Node_ActorBoundEvent_3_SBZSpawnLocationHandlerDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
 
-void AR_Penthouse_Office_C::OnRandomSublevelPlaced()
+void AR_Penthouse_Office_C::BndEvt__R_Penthouse_Office_SBZSpawnLocationHandler1_K2Node_ActorBoundEvent_3_SBZSpawnLocationHandlerDelegate__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Penthouse_Office_C", "OnRandomSublevelPlaced");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function R_Penthouse_Office.R_Penthouse_Office_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AR_Penthouse_Office_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_Penthouse_Office_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_Penthouse_Office_SBZSpawnLocationHandler1_K2Node_ActorBoundEvent_3_SBZSpawnLocationHandlerDelegate__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

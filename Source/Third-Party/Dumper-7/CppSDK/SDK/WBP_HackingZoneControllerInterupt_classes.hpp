@@ -25,8 +25,8 @@ public:
 	class UTextBlock*                             Intro;                                             // 0x02F8(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_HackingZoneControllerInterupt(int32 EntryPoint);
 	void setText(const class FText& InText);
+	void ExecuteUbergraph_WBP_HackingZoneControllerInterupt(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -42,5 +42,6 @@ public:
 		return GetDefaultObjImpl<UWBP_HackingZoneControllerInterupt_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_HackingZoneControllerInterupt_C;
 
 SDK_NAMESPACE_END

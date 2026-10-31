@@ -16,53 +16,217 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.activatePanel
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_MulticodeKeypad_C::activatePanel()
+void ABP_MulticodeKeypad_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MulticodeKeypad_C", "activatePanel");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.bindSaboPoints
+// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.setUISlateRenderTarget
 // (BlueprintCallable, BlueprintEvent)
 
-void ABP_MulticodeKeypad_C::bindSaboPoints()
+void ABP_MulticodeKeypad_C::setUISlateRenderTarget()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MulticodeKeypad_C", "bindSaboPoints");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setUISlateRenderTarget", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.BndEvt__BP_MulticodeKeypad_sabotageState_SBZIntState_K2Node_ComponentBoundEvent_4_SBZIntStateChangedSignature__DelegateSignature
-// (BlueprintEvent)
+// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.setScreenState
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MulticodeKeypad_C::BndEvt__BP_MulticodeKeypad_sabotageState_SBZIntState_K2Node_ComponentBoundEvent_4_SBZIntStateChangedSignature__DelegateSignature(int32 OldState, int32 NewState, bool bDoCosmetics)
+void ABP_MulticodeKeypad_C::setScreenState(bool enabled)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setScreenState", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MulticodeKeypad_C", "BndEvt__BP_MulticodeKeypad_sabotageState_SBZIntState_K2Node_ComponentBoundEvent_4_SBZIntStateChangedSignature__DelegateSignature");
+	Params::BP_MulticodeKeypad_C_setScreenState Parms{};
 
-	Params::BP_MulticodeKeypad_C_BndEvt__BP_MulticodeKeypad_sabotageState_SBZIntState_K2Node_ComponentBoundEvent_4_SBZIntStateChangedSignature__DelegateSignature Parms{};
+	Parms.enabled = enabled;
 
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.setKeyCollision
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MulticodeKeypad_C::setKeyCollision(bool enabled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setKeyCollision", FnName));
+
+	Params::BP_MulticodeKeypad_C_setKeyCollision Parms{};
+
+	Parms.enabled = enabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_MulticodeKeypad_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.onSaboPointSabotaged
+// (BlueprintAuthorityOnly, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MulticodeKeypad_C::onSaboPointSabotaged(bool bSabotaged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"onSaboPointSabotaged", FnName));
+
+	Params::BP_MulticodeKeypad_C_onSaboPointSabotaged Parms{};
+
+	Parms.bSabotaged = bSabotaged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.onHackPointResumed
+// (BlueprintAuthorityOnly, BlueprintCallable, BlueprintEvent)
+
+void ABP_MulticodeKeypad_C::onHackPointResumed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"onHackPointResumed", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.onHackPointInterrupted
+// (BlueprintAuthorityOnly, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESBZHackableActorInterruptReason        Reason                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MulticodeKeypad_C::onHackPointInterrupted(ESBZHackableActorInterruptReason Reason)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"onHackPointInterrupted", FnName));
+
+	Params::BP_MulticodeKeypad_C_onHackPointInterrupted Parms{};
+
+	Parms.Reason = Reason;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.ExecuteUbergraph_BP_MulticodeKeypad
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MulticodeKeypad_C::ExecuteUbergraph_BP_MulticodeKeypad(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_MulticodeKeypad_C", "ExecuteUbergraph_BP_MulticodeKeypad", FuncInfo);
+
+	Params::BP_MulticodeKeypad_C_ExecuteUbergraph_BP_MulticodeKeypad Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.BP_OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZModuleActorState                    NewState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_BP_OnStateChanged                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MulticodeKeypad_C::BP_OnStateChanged(ESBZModuleActorState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnStateChanged", FnName));
+
+	Params::BP_MulticodeKeypad_C_BP_OnStateChanged Parms{};
+
+	Parms.NewState_BP_OnStateChanged = NewState_BP_OnStateChanged;
+	Parms.bDoCosmetics_BP_OnStateChanged = bDoCosmetics_BP_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.BP_OnKeypadFocusChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// const int32                             KeyIndex_BP_OnKeypadFocusChanged                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInNewState_BP_OnKeypadFocusChanged                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MulticodeKeypad_C::BP_OnKeypadFocusChanged(const int32 KeyIndex_BP_OnKeypadFocusChanged, bool bInNewState_BP_OnKeypadFocusChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnKeypadFocusChanged", FnName));
+
+	Params::BP_MulticodeKeypad_C_BP_OnKeypadFocusChanged Parms{};
+
+	Parms.KeyIndex_BP_OnKeypadFocusChanged = KeyIndex_BP_OnKeypadFocusChanged;
+	Parms.bInNewState_BP_OnKeypadFocusChanged = bInNewState_BP_OnKeypadFocusChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.BP_OnGuessedCodeChanged
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FText&                      GuessedCodeText_BP_OnGuessedCodeChanged                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void ABP_MulticodeKeypad_C::BP_OnGuessedCodeChanged(const class FText& GuessedCodeText_BP_OnGuessedCodeChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnGuessedCodeChanged", FnName));
+
+	Params::BP_MulticodeKeypad_C_BP_OnGuessedCodeChanged Parms{};
+
+	Parms.GuessedCodeText_BP_OnGuessedCodeChanged = std::move(GuessedCodeText_BP_OnGuessedCodeChanged);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.BP_OnCodeIndexChanged
+// (BlueprintCosmetic, Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// int32                                   CurrentIndex_BP_OnCodeIndexChanged                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      Identifier_BP_OnCodeIndexChanged                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void ABP_MulticodeKeypad_C::BP_OnCodeIndexChanged(int32 CurrentIndex_BP_OnCodeIndexChanged, const class FText& Identifier_BP_OnCodeIndexChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnCodeIndexChanged", FnName));
+
+	Params::BP_MulticodeKeypad_C_BP_OnCodeIndexChanged Parms{};
+
+	Parms.CurrentIndex_BP_OnCodeIndexChanged = CurrentIndex_BP_OnCodeIndexChanged;
+	Parms.Identifier_BP_OnCodeIndexChanged = std::move(Identifier_BP_OnCodeIndexChanged);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -77,10 +241,8 @@ void ABP_MulticodeKeypad_C::BndEvt__BP_MulticodeKeypad_sabotageState_SBZIntState
 
 void ABP_MulticodeKeypad_C::BndEvt__BP_MulticodeKeypadTest_activate_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MulticodeKeypad_C", "BndEvt__BP_MulticodeKeypadTest_activate Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_MulticodeKeypadTest_activate Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature", FnName));
 
 	Params::BP_MulticodeKeypad_C_BndEvt__BP_MulticodeKeypadTest_activate_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
 
@@ -92,85 +254,21 @@ void ABP_MulticodeKeypad_C::BndEvt__BP_MulticodeKeypadTest_activate_Interactable
 }
 
 
-// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.BP_OnCodeIndexChanged
-// (BlueprintCosmetic, Event, Protected, HasOutParams, BlueprintEvent)
+// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.BndEvt__BP_MulticodeKeypad_sabotageState_SBZIntState_K2Node_ComponentBoundEvent_4_SBZIntStateChangedSignature__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   CurrentIndex                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const class FText&                      Identifier                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void ABP_MulticodeKeypad_C::BP_OnCodeIndexChanged(int32 CurrentIndex, const class FText& Identifier)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MulticodeKeypad_C", "BP_OnCodeIndexChanged");
-
-	Params::BP_MulticodeKeypad_C_BP_OnCodeIndexChanged Parms{};
-
-	Parms.CurrentIndex = CurrentIndex;
-	Parms.Identifier = std::move(Identifier);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.BP_OnGuessedCodeChanged
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FText&                      GuessedCodeText                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void ABP_MulticodeKeypad_C::BP_OnGuessedCodeChanged(const class FText& GuessedCodeText)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MulticodeKeypad_C", "BP_OnGuessedCodeChanged");
-
-	Params::BP_MulticodeKeypad_C_BP_OnGuessedCodeChanged Parms{};
-
-	Parms.GuessedCodeText = std::move(GuessedCodeText);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.BP_OnKeypadFocusChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// const int32                             KeyIndex                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MulticodeKeypad_C::BP_OnKeypadFocusChanged(const int32 KeyIndex, bool bInNewState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MulticodeKeypad_C", "BP_OnKeypadFocusChanged");
-
-	Params::BP_MulticodeKeypad_C_BP_OnKeypadFocusChanged Parms{};
-
-	Parms.KeyIndex = KeyIndex;
-	Parms.bInNewState = bInNewState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.BP_OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// ESBZModuleActorState                    NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MulticodeKeypad_C::BP_OnStateChanged(ESBZModuleActorState NewState, bool bDoCosmetics)
+void ABP_MulticodeKeypad_C::BndEvt__BP_MulticodeKeypad_sabotageState_SBZIntState_K2Node_ComponentBoundEvent_4_SBZIntStateChangedSignature__DelegateSignature(int32 OldState, int32 NewState, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_MulticodeKeypad_sabotageState_SBZIntState_K2Node_ComponentBoundEvent_4_SBZIntStateChangedSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MulticodeKeypad_C", "BP_OnStateChanged");
+	Params::BP_MulticodeKeypad_C_BndEvt__BP_MulticodeKeypad_sabotageState_SBZIntState_K2Node_ComponentBoundEvent_4_SBZIntStateChangedSignature__DelegateSignature Parms{};
 
-	Params::BP_MulticodeKeypad_C_BP_OnStateChanged Parms{};
-
+	Parms.OldState = OldState;
 	Parms.NewState = NewState;
 	Parms.bDoCosmetics = bDoCosmetics;
 
@@ -178,157 +276,25 @@ void ABP_MulticodeKeypad_C::BP_OnStateChanged(ESBZModuleActorState NewState, boo
 }
 
 
-// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.ExecuteUbergraph_BP_MulticodeKeypad
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MulticodeKeypad_C::ExecuteUbergraph_BP_MulticodeKeypad(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MulticodeKeypad_C", "ExecuteUbergraph_BP_MulticodeKeypad");
-
-	Params::BP_MulticodeKeypad_C_ExecuteUbergraph_BP_MulticodeKeypad Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.onHackPointInterrupted
-// (BlueprintAuthorityOnly, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESBZHackableActorInterruptReason        Reason                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MulticodeKeypad_C::onHackPointInterrupted(ESBZHackableActorInterruptReason Reason)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MulticodeKeypad_C", "onHackPointInterrupted");
-
-	Params::BP_MulticodeKeypad_C_onHackPointInterrupted Parms{};
-
-	Parms.Reason = Reason;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.onHackPointResumed
-// (BlueprintAuthorityOnly, BlueprintCallable, BlueprintEvent)
-
-void ABP_MulticodeKeypad_C::onHackPointResumed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MulticodeKeypad_C", "onHackPointResumed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.onSaboPointSabotaged
-// (BlueprintAuthorityOnly, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MulticodeKeypad_C::onSaboPointSabotaged(bool bSabotaged)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MulticodeKeypad_C", "onSaboPointSabotaged");
-
-	Params::BP_MulticodeKeypad_C_onSaboPointSabotaged Parms{};
-
-	Parms.bSabotaged = bSabotaged;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_MulticodeKeypad_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MulticodeKeypad_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.setKeyCollision
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MulticodeKeypad_C::setKeyCollision(bool enabled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MulticodeKeypad_C", "setKeyCollision");
-
-	Params::BP_MulticodeKeypad_C_setKeyCollision Parms{};
-
-	Parms.enabled = enabled;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.setScreenState
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_MulticodeKeypad_C::setScreenState(bool enabled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MulticodeKeypad_C", "setScreenState");
-
-	Params::BP_MulticodeKeypad_C_setScreenState Parms{};
-
-	Parms.enabled = enabled;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.setUISlateRenderTarget
+// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.bindSaboPoints
 // (BlueprintCallable, BlueprintEvent)
 
-void ABP_MulticodeKeypad_C::setUISlateRenderTarget()
+void ABP_MulticodeKeypad_C::bindSaboPoints()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MulticodeKeypad_C", "setUISlateRenderTarget");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"bindSaboPoints", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_MulticodeKeypad.BP_MulticodeKeypad_C.activatePanel
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_MulticodeKeypad_C::UserConstructionScript()
+void ABP_MulticodeKeypad_C::activatePanel()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MulticodeKeypad_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"activatePanel", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

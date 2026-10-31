@@ -33,14 +33,14 @@ public:
 	int32                                         markerID;                                          // 0x03AC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_AudioBug_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void enableMarker(bool show);
-	void ExecuteUbergraph_BP_AudioBug_01(int32 EntryPoint);
-	class FText GetMarkerText();
-	void OnRep_showMarker();
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void setDisabled();
 	void setGhost();
+	void setDisabled();
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void OnRep_showMarker();
+	class FText GetMarkerText();
+	void ExecuteUbergraph_BP_AudioBug_01(int32 EntryPoint);
+	void enableMarker(bool show);
+	void BndEvt__BP_AudioBug_01_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -56,5 +56,6 @@ public:
 		return GetDefaultObjImpl<ABP_AudioBug_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_AudioBug_01_C;
 
 SDK_NAMESPACE_END

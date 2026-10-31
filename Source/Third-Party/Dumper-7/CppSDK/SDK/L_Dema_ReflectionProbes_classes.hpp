@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AL_Dema_ReflectionProbes_C>();
 	}
 };
+DUMPER7_ASSERTS_AL_Dema_ReflectionProbes_C;
 
 SDK_NAMESPACE_END

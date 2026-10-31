@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<ABP_LootableCarBag_DoorBL_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LootableCarBag_DoorBL_C;
 
 SDK_NAMESPACE_END

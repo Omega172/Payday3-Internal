@@ -16,40 +16,44 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_HelperLibrary.BP_HelperLibrary_C.GlassHit
-// (Static, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_HelperLibrary.BP_HelperLibrary_C.SetMeshIfValid
+// (Static, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UStaticMeshComponent*             HitMesh                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   VariationIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  VariationSetting                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UAkAudioEvent*                    Sound                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDestroyed                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   ParticleCount                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  ParticleSize                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FLinearColor&              ParticleColor                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class APawn*                            Instigator                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UStaticMeshComponent*             StaticMeshComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UStaticMesh*                      NewStaticMesh                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UBP_HelperLibrary_C::GlassHit(class UStaticMeshComponent* HitMesh, int32 VariationIndex, double VariationSetting, class UAkAudioEvent* Sound, bool bDoCosmetics, bool bDestroyed, int32 ParticleCount, double ParticleSize, const struct FLinearColor& ParticleColor, class APawn* Instigator, class UObject* __WorldContext)
+void UBP_HelperLibrary_C::SetMeshIfValid(class UStaticMeshComponent* StaticMeshComponent, class UStaticMesh* NewStaticMesh, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(StaticClass(), "BP_HelperLibrary_C", "SetMeshIfValid", FuncInfo);
 
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BP_HelperLibrary_C", "GlassHit");
+	Params::BP_HelperLibrary_C_SetMeshIfValid Parms{};
 
-	Params::BP_HelperLibrary_C_GlassHit Parms{};
+	Parms.StaticMeshComponent = StaticMeshComponent;
+	Parms.NewStaticMesh = NewStaticMesh;
+	Parms.__WorldContext = __WorldContext;
 
-	Parms.HitMesh = HitMesh;
-	Parms.VariationIndex = VariationIndex;
-	Parms.VariationSetting = VariationSetting;
-	Parms.Sound = Sound;
-	Parms.bDoCosmetics = bDoCosmetics;
-	Parms.bDestroyed = bDestroyed;
-	Parms.ParticleCount = ParticleCount;
-	Parms.ParticleSize = ParticleSize;
-	Parms.ParticleColor = std::move(ParticleColor);
-	Parms.Instigator = Instigator;
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_HelperLibrary.BP_HelperLibrary_C.Set All Players Ignore Start Penetrating
+// (Static, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           Target                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    ShouldIgnore                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_HelperLibrary_C::Set_All_Players_Ignore_Start_Penetrating(class AActor* Target, bool ShouldIgnore, class UObject* __WorldContext)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(StaticClass(), "BP_HelperLibrary_C", "Set All Players Ignore Start Penetrating", FuncInfo);
+
+	Params::BP_HelperLibrary_C_Set_All_Players_Ignore_Start_Penetrating Parms{};
+
+	Parms.Target = Target;
+	Parms.ShouldIgnore = ShouldIgnore;
 	Parms.__WorldContext = __WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);
@@ -71,10 +75,8 @@ void UBP_HelperLibrary_C::GlassHit(class UStaticMeshComponent* HitMesh, int32 Va
 
 void UBP_HelperLibrary_C::GlassHit_MultiVFX(class UStaticMeshComponent* HitMesh, int32 VariationIndex, double VariationSetting, class UAkAudioEvent* Sound, bool bDoCosmetics, bool bDestroyed, class APawn* Instigator, TArray<struct FBPS_GlassHit_VFXData>& VFX, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BP_HelperLibrary_C", "GlassHit_MultiVFX");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(StaticClass(), "BP_HelperLibrary_C", "GlassHit_MultiVFX", FuncInfo);
 
 	Params::BP_HelperLibrary_C_GlassHit_MultiVFX Parms{};
 
@@ -94,48 +96,38 @@ void UBP_HelperLibrary_C::GlassHit_MultiVFX(class UStaticMeshComponent* HitMesh,
 }
 
 
-// Function BP_HelperLibrary.BP_HelperLibrary_C.Set All Players Ignore Start Penetrating
+// Function BP_HelperLibrary.BP_HelperLibrary_C.GlassHit
 // (Static, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class AActor*                           Target                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    ShouldIgnore                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UStaticMeshComponent*             HitMesh                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   VariationIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  VariationSetting                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAkAudioEvent*                    Sound                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDestroyed                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   ParticleCount                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  ParticleSize                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FLinearColor&              ParticleColor                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            Instigator                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UBP_HelperLibrary_C::Set_All_Players_Ignore_Start_Penetrating(class AActor* Target, bool ShouldIgnore, class UObject* __WorldContext)
+void UBP_HelperLibrary_C::GlassHit(class UStaticMeshComponent* HitMesh, int32 VariationIndex, double VariationSetting, class UAkAudioEvent* Sound, bool bDoCosmetics, bool bDestroyed, int32 ParticleCount, double ParticleSize, const struct FLinearColor& ParticleColor, class APawn* Instigator, class UObject* __WorldContext)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(StaticClass(), "BP_HelperLibrary_C", "GlassHit", FuncInfo);
 
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BP_HelperLibrary_C", "Set All Players Ignore Start Penetrating");
+	Params::BP_HelperLibrary_C_GlassHit Parms{};
 
-	Params::BP_HelperLibrary_C_Set_All_Players_Ignore_Start_Penetrating Parms{};
-
-	Parms.Target = Target;
-	Parms.ShouldIgnore = ShouldIgnore;
-	Parms.__WorldContext = __WorldContext;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_HelperLibrary.BP_HelperLibrary_C.SetMeshIfValid
-// (Static, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UStaticMeshComponent*             StaticMeshComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class UStaticMesh*                      NewStaticMesh                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UObject*                          __WorldContext                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UBP_HelperLibrary_C::SetMeshIfValid(class UStaticMeshComponent* StaticMeshComponent, class UStaticMesh* NewStaticMesh, class UObject* __WorldContext)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("BP_HelperLibrary_C", "SetMeshIfValid");
-
-	Params::BP_HelperLibrary_C_SetMeshIfValid Parms{};
-
-	Parms.StaticMeshComponent = StaticMeshComponent;
-	Parms.NewStaticMesh = NewStaticMesh;
+	Parms.HitMesh = HitMesh;
+	Parms.VariationIndex = VariationIndex;
+	Parms.VariationSetting = VariationSetting;
+	Parms.Sound = Sound;
+	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.bDestroyed = bDestroyed;
+	Parms.ParticleCount = ParticleCount;
+	Parms.ParticleSize = ParticleSize;
+	Parms.ParticleColor = std::move(ParticleColor);
+	Parms.Instigator = Instigator;
 	Parms.__WorldContext = __WorldContext;
 
 	GetDefaultObj()->ProcessEvent(Func, &Parms);

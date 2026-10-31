@@ -16,111 +16,39 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Inventory_SuitSlotStoreItemButton.WBP_UI_Inventory_SuitSlotStoreItemButton_C.UpdateHighlights
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Inventory_SuitSlotStoreItemButton.WBP_UI_Inventory_SuitSlotStoreItemButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    IsFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Inventory_SuitSlotStoreItemButton_C::UpdateHighlights(bool IsFocused)
+void UWBP_UI_Inventory_SuitSlotStoreItemButton_C::ButtonFocusedChanged(bool bInHasFocus)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateHighlights", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
 
-	Params::WBP_UI_Inventory_SuitSlotStoreItemButton_C_UpdateHighlights Parms{};
+	Params::WBP_UI_Inventory_SuitSlotStoreItemButton_C_ButtonFocusedChanged Parms{};
 
-	Parms.IsFocused = IsFocused;
+	Parms.bInHasFocus = bInHasFocus;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Inventory_SuitSlotStoreItemButton.WBP_UI_Inventory_SuitSlotStoreItemButton_C.Set Price
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Inventory_SuitSlotStoreItemButton.WBP_UI_Inventory_SuitSlotStoreItemButton_C.ButtonHoveredChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// int64                                   Price                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZCurrencyCode                        Currency                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInIsHovered                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Inventory_SuitSlotStoreItemButton_C::Set_Price(int64 Price, ESBZCurrencyCode Currency)
+void UWBP_UI_Inventory_SuitSlotStoreItemButton_C::ButtonHoveredChanged(bool bInIsHovered)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set Price", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonHoveredChanged", FnName));
 
-	Params::WBP_UI_Inventory_SuitSlotStoreItemButton_C_Set_Price Parms{};
+	Params::WBP_UI_Inventory_SuitSlotStoreItemButton_C_ButtonHoveredChanged Parms{};
 
-	Parms.Price = Price;
-	Parms.Currency = Currency;
+	Parms.bInIsHovered = bInIsHovered;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_SuitSlotStoreItemButton.WBP_UI_Inventory_SuitSlotStoreItemButton_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_SuitSlotStoreItemButton_C::PreConstruct(bool IsDesignTime_PreConstruct)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_UI_Inventory_SuitSlotStoreItemButton_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_SuitSlotStoreItemButton.WBP_UI_Inventory_SuitSlotStoreItemButton_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Inventory_SuitSlotStoreItemButton_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Inventory_SuitSlotStoreItemButton.WBP_UI_Inventory_SuitSlotStoreItemButton_C.OnHover
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IsHover                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_SuitSlotStoreItemButton_C::OnHover(bool IsHover)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnHover", FnName));
-
-	Params::WBP_UI_Inventory_SuitSlotStoreItemButton_C_OnHover Parms{};
-
-	Parms.IsHover = IsHover;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_SuitSlotStoreItemButton.WBP_UI_Inventory_SuitSlotStoreItemButton_C.Get Color by Currency
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESBZCurrencyCode                        Currency                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor*                    CurrencyColor                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_SuitSlotStoreItemButton_C::Get_Color_by_Currency(ESBZCurrencyCode Currency, struct FLinearColor* CurrencyColor)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Get Color by Currency", FnName));
-
-	Params::WBP_UI_Inventory_SuitSlotStoreItemButton_C_Get_Color_by_Currency Parms{};
-
-	Parms.Currency = Currency;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (CurrencyColor != nullptr)
-		*CurrencyColor = std::move(Parms.CurrencyColor);
 }
 
 
@@ -142,37 +70,109 @@ void UWBP_UI_Inventory_SuitSlotStoreItemButton_C::ExecuteUbergraph_WBP_UI_Invent
 }
 
 
-// Function WBP_UI_Inventory_SuitSlotStoreItemButton.WBP_UI_Inventory_SuitSlotStoreItemButton_C.ButtonHoveredChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_Inventory_SuitSlotStoreItemButton.WBP_UI_Inventory_SuitSlotStoreItemButton_C.Get Color by Currency
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInIsHovered_ButtonHoveredChanged                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZCurrencyCode                        Currency_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor*                    CurrencyColor                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Inventory_SuitSlotStoreItemButton_C::ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged)
+void UWBP_UI_Inventory_SuitSlotStoreItemButton_C::Get_Color_by_Currency(ESBZCurrencyCode Currency_0, struct FLinearColor* CurrencyColor)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonHoveredChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Get Color by Currency", FnName));
 
-	Params::WBP_UI_Inventory_SuitSlotStoreItemButton_C_ButtonHoveredChanged Parms{};
+	Params::WBP_UI_Inventory_SuitSlotStoreItemButton_C_Get_Color_by_Currency Parms{};
 
-	Parms.bInIsHovered_ButtonHoveredChanged = bInIsHovered_ButtonHoveredChanged;
+	Parms.Currency_0 = Currency_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (CurrencyColor != nullptr)
+		*CurrencyColor = std::move(Parms.CurrencyColor);
+}
+
+
+// Function WBP_UI_Inventory_SuitSlotStoreItemButton.WBP_UI_Inventory_SuitSlotStoreItemButton_C.OnHover
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsHover                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_SuitSlotStoreItemButton_C::OnHover(bool IsHover)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnHover", FnName));
+
+	Params::WBP_UI_Inventory_SuitSlotStoreItemButton_C_OnHover Parms{};
+
+	Parms.IsHover = IsHover;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Inventory_SuitSlotStoreItemButton.WBP_UI_Inventory_SuitSlotStoreItemButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus_ButtonFocusedChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_Inventory_SuitSlotStoreItemButton.WBP_UI_Inventory_SuitSlotStoreItemButton_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_UI_Inventory_SuitSlotStoreItemButton_C::ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged)
+void UWBP_UI_Inventory_SuitSlotStoreItemButton_C::OnInitialized()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
 
-	Params::WBP_UI_Inventory_SuitSlotStoreItemButton_C_ButtonFocusedChanged Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.bInHasFocus_ButtonFocusedChanged = bInHasFocus_ButtonFocusedChanged;
+
+// Function WBP_UI_Inventory_SuitSlotStoreItemButton.WBP_UI_Inventory_SuitSlotStoreItemButton_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_SuitSlotStoreItemButton_C::PreConstruct(bool IsDesignTime)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_UI_Inventory_SuitSlotStoreItemButton_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_SuitSlotStoreItemButton.WBP_UI_Inventory_SuitSlotStoreItemButton_C.Set Price
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int64                                   Price                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZCurrencyCode                        Currency_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_SuitSlotStoreItemButton_C::Set_Price(int64 Price, ESBZCurrencyCode Currency_0)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set Price", FnName));
+
+	Params::WBP_UI_Inventory_SuitSlotStoreItemButton_C_Set_Price Parms{};
+
+	Parms.Price = Price;
+	Parms.Currency_0 = Currency_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_SuitSlotStoreItemButton.WBP_UI_Inventory_SuitSlotStoreItemButton_C.UpdateHighlights
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IsFocused                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_SuitSlotStoreItemButton_C::UpdateHighlights(bool IsFocused)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateHighlights", FnName));
+
+	Params::WBP_UI_Inventory_SuitSlotStoreItemButton_C_UpdateHighlights Parms{};
+
+	Parms.IsFocused = IsFocused;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

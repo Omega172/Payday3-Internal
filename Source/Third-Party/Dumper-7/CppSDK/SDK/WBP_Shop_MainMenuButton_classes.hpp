@@ -28,10 +28,10 @@ public:
 	class UWBP_Shop_Notification_C*               ShopNotification;                                  // 0x03C0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ShowNewDLCNotification();
-	void HideNotification();
+	void ButtonFocusedChanged(bool bInHasFocus);
 	void ExecuteUbergraph_WBP_Shop_MainMenuButton(int32 EntryPoint);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
+	void HideNotification();
+	void ShowNewDLCNotification();
 
 public:
 	static class UClass* StaticClass()

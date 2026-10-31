@@ -16,14 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_FireExtinguisher_Foam.BP_FireExtinguisher_Foam_C.BP_OnExplosion
-// 0x0001 (0x0001 - 0x0000)
-struct BP_FireExtinguisher_Foam_C_BP_OnExplosion final
-{
-public:
-	bool                                          bDoCosmetics;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_FireExtinguisher_Foam.BP_FireExtinguisher_Foam_C.ExecuteUbergraph_BP_FireExtinguisher_Foam
 // 0x0008 (0x0008 - 0x0000)
 struct BP_FireExtinguisher_Foam_C_ExecuteUbergraph_BP_FireExtinguisher_Foam final
@@ -32,22 +24,16 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bDoCosmetics;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_FireExtinguisher_Foam_C_ExecuteUbergraph_BP_FireExtinguisher_Foam;
 
-// Function BP_FireExtinguisher_Foam.BP_FireExtinguisher_Foam_C.CanAffectStealth
+// Function BP_FireExtinguisher_Foam.BP_FireExtinguisher_Foam_C.BP_OnExplosion
 // 0x0001 (0x0001 - 0x0000)
-struct BP_FireExtinguisher_Foam_C_CanAffectStealth final
+struct BP_FireExtinguisher_Foam_C_BP_OnExplosion final
 {
 public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_BP_OnExplosion;                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_FireExtinguisher_Foam.BP_FireExtinguisher_Foam_C.CanAffectTaser
-// 0x0001 (0x0001 - 0x0000)
-struct BP_FireExtinguisher_Foam_C_CanAffectTaser final
-{
-public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_FireExtinguisher_Foam_C_BP_OnExplosion;
 
 // Function BP_FireExtinguisher_Foam.BP_FireExtinguisher_Foam_C.GetSightModifier
 // 0x0058 (0x0058 - 0x0000)
@@ -65,6 +51,25 @@ public:
 	double                                        K2Node_Select_Default;                             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_FunctionResult_ReturnValue_ImplicitCast;    // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_FireExtinguisher_Foam_C_GetSightModifier;
+
+// Function BP_FireExtinguisher_Foam.BP_FireExtinguisher_Foam_C.CanAffectTaser
+// 0x0001 (0x0001 - 0x0000)
+struct BP_FireExtinguisher_Foam_C_CanAffectTaser final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FireExtinguisher_Foam_C_CanAffectTaser;
+
+// Function BP_FireExtinguisher_Foam.BP_FireExtinguisher_Foam_C.CanAffectStealth
+// 0x0001 (0x0001 - 0x0000)
+struct BP_FireExtinguisher_Foam_C_CanAffectStealth final
+{
+public:
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FireExtinguisher_Foam_C_CanAffectStealth;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

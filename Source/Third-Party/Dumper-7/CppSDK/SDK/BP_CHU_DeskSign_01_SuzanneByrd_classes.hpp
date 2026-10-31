@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_CHU_DeskSign_01_SuzanneByrd_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CHU_DeskSign_01_SuzanneByrd_C;
 
 SDK_NAMESPACE_END

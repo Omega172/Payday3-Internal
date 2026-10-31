@@ -30,9 +30,9 @@ public:
 	TMulticastInlineDelegate<void(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot)> ActionStarted; // 0x0358(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__BP_LA_Civ_Cosmetic_Dance_SBZLifeAction_K2Node_ComponentBoundEvent_0_SBZLifeActionStopEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot, ESBZLifeActionStopReason Result);
-	void BndEvt__BP_LA_Manager_Scripted_TableButtonPress_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot);
 	void ExecuteUbergraph_BP_LA_NC_Accountant_Scripted_Examine(int32 EntryPoint);
+	void BndEvt__BP_LA_Manager_Scripted_TableButtonPress_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot);
+	void BndEvt__BP_LA_Civ_Cosmetic_Dance_SBZLifeAction_K2Node_ComponentBoundEvent_0_SBZLifeActionStopEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot, ESBZLifeActionStopReason Result);
 
 public:
 	static class UClass* StaticClass()
@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<ABP_LA_NC_Accountant_Scripted_Examine_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LA_NC_Accountant_Scripted_Examine_C;
 
 SDK_NAMESPACE_END

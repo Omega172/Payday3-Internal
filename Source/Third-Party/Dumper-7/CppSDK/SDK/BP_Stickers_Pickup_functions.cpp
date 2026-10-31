@@ -16,25 +16,61 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Stickers_Pickup.BP_Stickers_Pickup_C.BndEvt__BP_PortableSSD_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Stickers_Pickup.BP_Stickers_Pickup_C.On Enable Interaction
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Stickers_Pickup_C::BndEvt__BP_PortableSSD_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_Stickers_Pickup_C::On_Enable_Interaction()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"On Enable Interaction", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Stickers_Pickup_C", "BndEvt__BP_PortableSSD_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_Stickers_Pickup_C_BndEvt__BP_PortableSSD_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
 
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+// Function BP_Stickers_Pickup.BP_Stickers_Pickup_C.On Disable Interaction
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_Stickers_Pickup_C::On_Disable_Interaction()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"On Disable Interaction", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Stickers_Pickup.BP_Stickers_Pickup_C.GetMarkerText
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+class FText ABP_Stickers_Pickup_C::GetMarkerText()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetMarkerText", FnName));
+
+	Params::BP_Stickers_Pickup_C_GetMarkerText Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_Stickers_Pickup.BP_Stickers_Pickup_C.ExecuteUbergraph_BP_Stickers_Pickup
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Stickers_Pickup_C::ExecuteUbergraph_BP_Stickers_Pickup(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Stickers_Pickup_C", "ExecuteUbergraph_BP_Stickers_Pickup", FuncInfo);
+
+	Params::BP_Stickers_Pickup_C_ExecuteUbergraph_BP_Stickers_Pickup Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -48,10 +84,8 @@ void ABP_Stickers_Pickup_C::BndEvt__BP_PortableSSD_Interactable_K2Node_Component
 
 void ABP_Stickers_Pickup_C::BndEvt__BP_Stickers_Pickup_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Stickers_Pickup_C", "BndEvt__BP_Stickers_Pickup_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Stickers_Pickup_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature", FnName));
 
 	Params::BP_Stickers_Pickup_C_BndEvt__BP_Stickers_Pickup_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
 
@@ -62,71 +96,25 @@ void ABP_Stickers_Pickup_C::BndEvt__BP_Stickers_Pickup_Interactable_K2Node_Compo
 }
 
 
-// Function BP_Stickers_Pickup.BP_Stickers_Pickup_C.ExecuteUbergraph_BP_Stickers_Pickup
-// (Final, UbergraphFunction)
+// Function BP_Stickers_Pickup.BP_Stickers_Pickup_C.BndEvt__BP_PortableSSD_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Stickers_Pickup_C::ExecuteUbergraph_BP_Stickers_Pickup(int32 EntryPoint)
+void ABP_Stickers_Pickup_C::BndEvt__BP_PortableSSD_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_PortableSSD_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Stickers_Pickup_C", "ExecuteUbergraph_BP_Stickers_Pickup");
+	Params::BP_Stickers_Pickup_C_BndEvt__BP_PortableSSD_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
 
-	Params::BP_Stickers_Pickup_C_ExecuteUbergraph_BP_Stickers_Pickup Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Stickers_Pickup.BP_Stickers_Pickup_C.GetMarkerText
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-class FText ABP_Stickers_Pickup_C::GetMarkerText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Stickers_Pickup_C", "GetMarkerText");
-
-	Params::BP_Stickers_Pickup_C_GetMarkerText Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function BP_Stickers_Pickup.BP_Stickers_Pickup_C.On Disable Interaction
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_Stickers_Pickup_C::On_Disable_Interaction()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Stickers_Pickup_C", "On Disable Interaction");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Stickers_Pickup.BP_Stickers_Pickup_C.On Enable Interaction
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_Stickers_Pickup_C::On_Enable_Interaction()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Stickers_Pickup_C", "On Enable Interaction");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

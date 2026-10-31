@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "CompState_structs.hpp"
+#include "Engine_structs.hpp"
 #include "UMG_classes.hpp"
 
 
@@ -33,15 +33,15 @@ public:
 	ECompState                                    Int;                                               // 0x0330(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_3D_Widget(int32 EntryPoint);
-	void Set_ButtonUsed();
-	void Set_State(ECompState Int_0);
-	void SetActiveButtonFocus(int32 Selection, bool NewParam);
-	void SetArtList(const class FString& NewParam);
-	void SetBackButtonFocus(int32 Int_0, bool NewParam);
-	void SetMenuFocusOnButtons(int32 NewParam, bool NewParam2);
-	void SetScrollDownFocus(bool NewParam);
 	void SetScrollUpFocus(bool NewParam);
+	void SetScrollDownFocus(bool NewParam);
+	void SetMenuFocusOnButtons(int32 NewParam, bool NewParam2);
+	void SetBackButtonFocus(int32 Int, bool NewParam);
+	void SetArtList(const class FString& NewParam);
+	void SetActiveButtonFocus(int32 Selection, bool NewParam);
+	void Set_State(ECompState Int_0);
+	void Set_ButtonUsed();
+	void ExecuteUbergraph_WBP_3D_Widget(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -57,5 +57,6 @@ public:
 		return GetDefaultObjImpl<UWBP_3D_Widget_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_3D_Widget_C;
 
 SDK_NAMESPACE_END

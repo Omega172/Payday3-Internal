@@ -27,8 +27,8 @@ public:
 	struct FBlackboardKeySelector                 Distance_To_Enemy_key;                             // 0x00D8(0x0030)(Edit, BlueprintVisible)
 
 public:
+	void ReceiveTickAI(class AAIController* OwnerController_ReceiveTickAI, class APawn* ControlledPawn_ReceiveTickAI, float DeltaSeconds_ReceiveTickAI);
 	void ExecuteUbergraph_BTS_CalculateDistanceToTarget(int32 EntryPoint);
-	void ReceiveTickAI(class AAIController* OwnerController, class APawn* ControlledPawn, float DeltaSeconds);
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<UBTS_CalculateDistanceToTarget_C>();
 	}
 };
+DUMPER7_ASSERTS_UBTS_CalculateDistanceToTarget_C;
 
 SDK_NAMESPACE_END

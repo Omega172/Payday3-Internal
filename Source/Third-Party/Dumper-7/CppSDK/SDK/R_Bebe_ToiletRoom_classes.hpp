@@ -30,13 +30,13 @@ public:
 	bool                                          VarCanistersEnabled;                               // 0x03E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BranchBank_Kitchen();
-	void BranchBank_Roof();
-	void BranchBank_Stairs();
-	void ExecuteUbergraph_R_Bebe_ToiletRoom(int32 EntryPoint);
-	void HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState);
-	void OnRandomPlacementStarted();
 	void RandomizedRoomTest_RemoteEvent1();
+	void OnRandomPlacementStarted();
+	void HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged);
+	void ExecuteUbergraph_R_Bebe_ToiletRoom(int32 EntryPoint);
+	void BranchBank_Stairs();
+	void BranchBank_Roof();
+	void BranchBank_Kitchen();
 
 public:
 	static class UClass* StaticClass()
@@ -52,5 +52,6 @@ public:
 		return GetDefaultObjImpl<AR_Bebe_ToiletRoom_C>();
 	}
 };
+DUMPER7_ASSERTS_AR_Bebe_ToiletRoom_C;
 
 SDK_NAMESPACE_END

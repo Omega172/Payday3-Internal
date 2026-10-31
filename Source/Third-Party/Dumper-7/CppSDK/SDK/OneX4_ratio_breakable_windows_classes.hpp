@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AOneX4_ratio_breakable_windows_C>();
 	}
 };
+DUMPER7_ASSERTS_AOneX4_ratio_breakable_windows_C;
 
 SDK_NAMESPACE_END

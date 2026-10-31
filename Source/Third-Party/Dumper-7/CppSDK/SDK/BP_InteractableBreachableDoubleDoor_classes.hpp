@@ -28,8 +28,8 @@ public:
 	class USBZPropDamageComponent*                SBZPropDamage_0;                                   // 0x07D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_InteractableBreachableDoubleDoor(int32 EntryPoint);
 	void setBreachedMeshVisibility(bool breached);
+	void ExecuteUbergraph_BP_InteractableBreachableDoubleDoor(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<ABP_InteractableBreachableDoubleDoor_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_InteractableBreachableDoubleDoor_C;
 
 SDK_NAMESPACE_END

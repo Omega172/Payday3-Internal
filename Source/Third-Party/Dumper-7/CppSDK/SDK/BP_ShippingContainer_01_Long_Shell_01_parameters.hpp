@@ -14,6 +14,16 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_ShippingContainer_01_Long_Shell_01.BP_ShippingContainer_01_Long_Shell_01_C.setBinaryState
+// 0x0002 (0x0002 - 0x0000)
+struct BP_ShippingContainer_01_Long_Shell_01_C_setBinaryState final
+{
+public:
+	bool                                          state;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          doCosmetics;                                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ShippingContainer_01_Long_Shell_01_C_setBinaryState;
+
 // Function BP_ShippingContainer_01_Long_Shell_01.BP_ShippingContainer_01_Long_Shell_01_C.ExecuteUbergraph_BP_ShippingContainer_01_Long_Shell_01
 // 0x0008 (0x0008 - 0x0000)
 struct BP_ShippingContainer_01_Long_Shell_01_C_ExecuteUbergraph_BP_ShippingContainer_01_Long_Shell_01 final
@@ -24,15 +34,7 @@ public:
 	bool                                          K2Node_Event_doCosmetics;                          // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_ShippingContainer_01_Long_Shell_01.BP_ShippingContainer_01_Long_Shell_01_C.setBinaryState
-// 0x0002 (0x0002 - 0x0000)
-struct BP_ShippingContainer_01_Long_Shell_01_C_setBinaryState final
-{
-public:
-	bool                                          state;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          doCosmetics;                                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_ShippingContainer_01_Long_Shell_01_C_ExecuteUbergraph_BP_ShippingContainer_01_Long_Shell_01;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

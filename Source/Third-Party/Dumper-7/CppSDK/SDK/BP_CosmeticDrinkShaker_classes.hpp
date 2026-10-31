@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_CosmeticDrinkShaker_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CosmeticDrinkShaker_C;
 
 SDK_NAMESPACE_END

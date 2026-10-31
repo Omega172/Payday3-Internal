@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_StealthWeapon_OVK_Operator_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_StealthWeapon_OVK_Operator_C;
 
 SDK_NAMESPACE_END

@@ -49,5 +49,6 @@ public:
 		return GetDefaultObjImpl<ABPL_SpotLightRail_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_SpotLightRail_C;
 
 SDK_NAMESPACE_END

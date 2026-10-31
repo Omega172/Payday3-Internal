@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABP_LA_Civ_Cosmetic_Bartender_Loop_100cm_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LA_Civ_Cosmetic_Bartender_Loop_100cm_C;
 
 SDK_NAMESPACE_END

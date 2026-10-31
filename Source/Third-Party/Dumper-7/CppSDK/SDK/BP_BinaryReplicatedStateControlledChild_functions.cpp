@@ -16,26 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_BinaryReplicatedStateControlledChild.BP_BinaryReplicatedStateControlledChild_C.ExecuteUbergraph_BP_BinaryReplicatedStateControlledChild
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BinaryReplicatedStateControlledChild_C::ExecuteUbergraph_BP_BinaryReplicatedStateControlledChild(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BinaryReplicatedStateControlledChild_C", "ExecuteUbergraph_BP_BinaryReplicatedStateControlledChild");
-
-	Params::BP_BinaryReplicatedStateControlledChild_C_ExecuteUbergraph_BP_BinaryReplicatedStateControlledChild Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function BP_BinaryReplicatedStateControlledChild.BP_BinaryReplicatedStateControlledChild_C.onStateChanged
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -44,15 +24,31 @@ void ABP_BinaryReplicatedStateControlledChild_C::ExecuteUbergraph_BP_BinaryRepli
 
 void ABP_BinaryReplicatedStateControlledChild_C::onStateChanged(bool state, bool doCosmetics)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BinaryReplicatedStateControlledChild_C", "onStateChanged");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"onStateChanged", FnName));
 
 	Params::BP_BinaryReplicatedStateControlledChild_C_onStateChanged Parms{};
 
 	Parms.state = state;
 	Parms.doCosmetics = doCosmetics;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BinaryReplicatedStateControlledChild.BP_BinaryReplicatedStateControlledChild_C.ExecuteUbergraph_BP_BinaryReplicatedStateControlledChild
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BinaryReplicatedStateControlledChild_C::ExecuteUbergraph_BP_BinaryReplicatedStateControlledChild(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_BinaryReplicatedStateControlledChild_C", "ExecuteUbergraph_BP_BinaryReplicatedStateControlledChild", FuncInfo);
+
+	Params::BP_BinaryReplicatedStateControlledChild_C_ExecuteUbergraph_BP_BinaryReplicatedStateControlledChild Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

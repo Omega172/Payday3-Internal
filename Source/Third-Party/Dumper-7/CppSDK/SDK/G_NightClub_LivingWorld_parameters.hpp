@@ -16,222 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_13_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_13_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_1_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_1_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_21_K2Node_ActorBoundEvent_11_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_21_K2Node_ActorBoundEvent_11_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_2_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_2_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_30_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_30_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_35_K2Node_ActorBoundEvent_15_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_35_K2Node_ActorBoundEvent_15_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_38_K2Node_ActorBoundEvent_16_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_38_K2Node_ActorBoundEvent_16_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_3_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_3_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_44_K2Node_ActorBoundEvent_24_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_44_K2Node_ActorBoundEvent_24_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_45_K2Node_ActorBoundEvent_25_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_45_K2Node_ActorBoundEvent_25_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_48_K2Node_ActorBoundEvent_17_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_48_K2Node_ActorBoundEvent_17_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_52_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_52_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_56_K2Node_ActorBoundEvent_18_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_56_K2Node_ActorBoundEvent_18_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_58_K2Node_ActorBoundEvent_27_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_58_K2Node_ActorBoundEvent_27_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_5_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_5_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_62_K2Node_ActorBoundEvent_22_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_62_K2Node_ActorBoundEvent_22_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_64_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_64_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_69_K2Node_ActorBoundEvent_21_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_69_K2Node_ActorBoundEvent_21_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_76_K2Node_ActorBoundEvent_23_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_76_K2Node_ActorBoundEvent_23_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_80_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_80_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_85_K2Node_ActorBoundEvent_28_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_85_K2Node_ActorBoundEvent_28_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_93_K2Node_ActorBoundEvent_31_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_93_K2Node_ActorBoundEvent_31_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_95_K2Node_ActorBoundEvent_30_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_95_K2Node_ActorBoundEvent_30_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_OutdoorPier4_K2Node_ActorBoundEvent_14_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_OutdoorPier4_K2Node_ActorBoundEvent_14_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.ExecuteUbergraph_G_NightClub_LivingWorld
 // 0x0280 (0x0280 - 0x0000)
 struct G_NightClub_LivingWorld_C_ExecuteUbergraph_G_NightClub_LivingWorld final
@@ -333,6 +117,247 @@ public:
 	uint8                                         Pad_275[0x3];                                      // 0x0275(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x0278(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_NightClub_LivingWorld_C_ExecuteUbergraph_G_NightClub_LivingWorld;
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_OutdoorPier4_K2Node_ActorBoundEvent_14_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_OutdoorPier4_K2Node_ActorBoundEvent_14_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_OutdoorPier4_K2Node_ActorBoundEvent_14_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_95_K2Node_ActorBoundEvent_30_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_95_K2Node_ActorBoundEvent_30_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_95_K2Node_ActorBoundEvent_30_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_93_K2Node_ActorBoundEvent_31_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_93_K2Node_ActorBoundEvent_31_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_93_K2Node_ActorBoundEvent_31_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_85_K2Node_ActorBoundEvent_28_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_85_K2Node_ActorBoundEvent_28_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_85_K2Node_ActorBoundEvent_28_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_80_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_80_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_80_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_76_K2Node_ActorBoundEvent_23_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_76_K2Node_ActorBoundEvent_23_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_76_K2Node_ActorBoundEvent_23_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_69_K2Node_ActorBoundEvent_21_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_69_K2Node_ActorBoundEvent_21_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_69_K2Node_ActorBoundEvent_21_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_64_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_64_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_64_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_62_K2Node_ActorBoundEvent_22_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_62_K2Node_ActorBoundEvent_22_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_62_K2Node_ActorBoundEvent_22_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_5_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_5_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_5_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_58_K2Node_ActorBoundEvent_27_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_58_K2Node_ActorBoundEvent_27_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_58_K2Node_ActorBoundEvent_27_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_56_K2Node_ActorBoundEvent_18_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_56_K2Node_ActorBoundEvent_18_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_56_K2Node_ActorBoundEvent_18_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_52_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_52_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_52_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_48_K2Node_ActorBoundEvent_17_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_48_K2Node_ActorBoundEvent_17_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_48_K2Node_ActorBoundEvent_17_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_45_K2Node_ActorBoundEvent_25_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_45_K2Node_ActorBoundEvent_25_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_45_K2Node_ActorBoundEvent_25_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_44_K2Node_ActorBoundEvent_24_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_44_K2Node_ActorBoundEvent_24_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_44_K2Node_ActorBoundEvent_24_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_3_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_3_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_3_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_38_K2Node_ActorBoundEvent_16_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_38_K2Node_ActorBoundEvent_16_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_38_K2Node_ActorBoundEvent_16_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_35_K2Node_ActorBoundEvent_15_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_35_K2Node_ActorBoundEvent_15_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_35_K2Node_ActorBoundEvent_15_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_30_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_30_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_30_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_2_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_2_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_2_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_21_K2Node_ActorBoundEvent_11_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_21_K2Node_ActorBoundEvent_11_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_21_K2Node_ActorBoundEvent_11_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_1_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_1_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_1_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_NightClub_LivingWorld.G_NightClub_LivingWorld_C.BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_13_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_13_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_NightClub_LivingWorld_C_BndEvt__G_NightClub_LivingWorld_SBZPawnSpawnCivilian_13_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

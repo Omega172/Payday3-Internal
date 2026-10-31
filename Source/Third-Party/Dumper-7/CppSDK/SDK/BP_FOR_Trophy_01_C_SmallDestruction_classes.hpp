@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_FOR_Trophy_01_C_SmallDestruction_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_FOR_Trophy_01_C_SmallDestruction_C;
 
 SDK_NAMESPACE_END

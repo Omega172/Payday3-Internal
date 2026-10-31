@@ -16,24 +16,39 @@
 
 SDK_NAMESPACE_START
 
-// Function ABP_GarbageTruck.ABP_GarbageTruck_C.AnimGraph
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function ABP_GarbageTruck.ABP_GarbageTruck_C.ExecuteUbergraph_ABP_GarbageTruck
+// (Final, UbergraphFunction)
 // Parameters:
-// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UABP_GarbageTruck_C::AnimGraph(struct FPoseLink* AnimGraph_0)
+void UABP_GarbageTruck_C::ExecuteUbergraph_ABP_GarbageTruck(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "ABP_GarbageTruck_C", "ExecuteUbergraph_ABP_GarbageTruck", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_GarbageTruck_C", "AnimGraph");
+	Params::ABP_GarbageTruck_C_ExecuteUbergraph_ABP_GarbageTruck Parms{};
 
-	Params::ABP_GarbageTruck_C_AnimGraph Parms{};
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
 
-	if (AnimGraph_0 != nullptr)
-		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
+
+// Function ABP_GarbageTruck.ABP_GarbageTruck_C.BlueprintUpdateAnimation
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaTimeX_BlueprintUpdateAnimation                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UABP_GarbageTruck_C::BlueprintUpdateAnimation(float DeltaTimeX_BlueprintUpdateAnimation)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BlueprintUpdateAnimation", FnName));
+
+	Params::ABP_GarbageTruck_C_BlueprintUpdateAnimation Parms{};
+
+	Parms.DeltaTimeX_BlueprintUpdateAnimation = DeltaTimeX_BlueprintUpdateAnimation;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -42,52 +57,29 @@ void UABP_GarbageTruck_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 
 void UABP_GarbageTruck_C::BlueprintInitializeAnimation()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_GarbageTruck_C", "BlueprintInitializeAnimation");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BlueprintInitializeAnimation", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function ABP_GarbageTruck.ABP_GarbageTruck_C.BlueprintUpdateAnimation
-// (Event, Public, BlueprintEvent)
+// Function ABP_GarbageTruck.ABP_GarbageTruck_C.AnimGraph
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   DeltaTimeX                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FPoseLink*                       AnimGraph                                              (Parm, OutParm, NoDestructor)
 
-void UABP_GarbageTruck_C::BlueprintUpdateAnimation(float DeltaTimeX)
+void UABP_GarbageTruck_C::AnimGraph(struct FPoseLink* AnimGraph)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AnimGraph", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_GarbageTruck_C", "BlueprintUpdateAnimation");
-
-	Params::ABP_GarbageTruck_C_BlueprintUpdateAnimation Parms{};
-
-	Parms.DeltaTimeX = DeltaTimeX;
+	Params::ABP_GarbageTruck_C_AnimGraph Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
-}
 
-
-// Function ABP_GarbageTruck.ABP_GarbageTruck_C.ExecuteUbergraph_ABP_GarbageTruck
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UABP_GarbageTruck_C::ExecuteUbergraph_ABP_GarbageTruck(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_GarbageTruck_C", "ExecuteUbergraph_ABP_GarbageTruck");
-
-	Params::ABP_GarbageTruck_C_ExecuteUbergraph_ABP_GarbageTruck Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	if (AnimGraph != nullptr)
+		*AnimGraph = std::move(Parms.AnimGraph);
 }
 
 

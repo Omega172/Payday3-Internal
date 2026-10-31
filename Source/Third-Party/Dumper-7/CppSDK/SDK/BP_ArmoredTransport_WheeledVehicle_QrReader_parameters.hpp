@@ -11,32 +11,60 @@
 #include "Basic.hpp"
 
 #include "Starbreeze_structs.hpp"
-#include "AkAudio_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "AkAudio_structs.hpp"
 
 
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_ArmoredTransport_WheeledVehicle_QrReader.BP_ArmoredTransport_WheeledVehicle_QrReader_C.BndEvt__BP_ArmoredTransport_WheeledVehicle_QrReader_QR_SBZIntState_K2Node_ComponentBoundEvent_1_SBZIntStateChangedSignature__DelegateSignature
-// 0x000C (0x000C - 0x0000)
-struct BP_ArmoredTransport_WheeledVehicle_QrReader_C_BndEvt__BP_ArmoredTransport_WheeledVehicle_QrReader_QR_SBZIntState_K2Node_ComponentBoundEvent_1_SBZIntStateChangedSignature__DelegateSignature final
+// Function BP_ArmoredTransport_WheeledVehicle_QrReader.BP_ArmoredTransport_WheeledVehicle_QrReader_C.UserConstructionScript
+// 0x0001 (0x0001 - 0x0000)
+struct BP_ArmoredTransport_WheeledVehicle_QrReader_C_UserConstructionScript final
 {
 public:
-	int32                                         OldState;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         NewState;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ArmoredTransport_WheeledVehicle_QrReader_C_UserConstructionScript;
 
-// Function BP_ArmoredTransport_WheeledVehicle_QrReader.BP_ArmoredTransport_WheeledVehicle_QrReader_C.BndEvt__BP_ArmoredTransport_WheeledVehicle_QrReader_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_ArmoredTransport_WheeledVehicle_QrReader_C_BndEvt__BP_ArmoredTransport_WheeledVehicle_QrReader_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
+// Function BP_ArmoredTransport_WheeledVehicle_QrReader.BP_ArmoredTransport_WheeledVehicle_QrReader_C.setVisibility
+// 0x0010 (0x0010 - 0x0000)
+struct BP_ArmoredTransport_WheeledVehicle_QrReader_C_setVisibility final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          visible;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_1;                               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Select_Default;                             // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ArmoredTransport_WheeledVehicle_QrReader_C_setVisibility;
+
+// Function BP_ArmoredTransport_WheeledVehicle_QrReader.BP_ArmoredTransport_WheeledVehicle_QrReader_C.setEnabled
+// 0x0014 (0x0014 - 0x0000)
+struct BP_ArmoredTransport_WheeledVehicle_QrReader_C_setEnabled final
+{
+public:
+	bool                                          enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_1;                               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         K2Node_Select_Default;                             // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ArmoredTransport_WheeledVehicle_QrReader_C_setEnabled;
+
+// Function BP_ArmoredTransport_WheeledVehicle_QrReader.BP_ArmoredTransport_WheeledVehicle_QrReader_C.setBackDoors
+// 0x0002 (0x0002 - 0x0000)
+struct BP_ArmoredTransport_WheeledVehicle_QrReader_C_setBackDoors final
+{
+public:
+	ESBZVehicleDoorState                          doorState;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          breached;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ArmoredTransport_WheeledVehicle_QrReader_C_setBackDoors;
 
 // Function BP_ArmoredTransport_WheeledVehicle_QrReader.BP_ArmoredTransport_WheeledVehicle_QrReader_C.ExecuteUbergraph_BP_ArmoredTransport_WheeledVehicle_QrReader
 // 0x0070 (0x0070 - 0x0000)
@@ -64,50 +92,29 @@ public:
 	bool                                          K2Node_Event_breached;                             // 0x006A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Select_Default;                             // 0x006B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ArmoredTransport_WheeledVehicle_QrReader_C_ExecuteUbergraph_BP_ArmoredTransport_WheeledVehicle_QrReader;
 
-// Function BP_ArmoredTransport_WheeledVehicle_QrReader.BP_ArmoredTransport_WheeledVehicle_QrReader_C.setBackDoors
-// 0x0002 (0x0002 - 0x0000)
-struct BP_ArmoredTransport_WheeledVehicle_QrReader_C_setBackDoors final
+// Function BP_ArmoredTransport_WheeledVehicle_QrReader.BP_ArmoredTransport_WheeledVehicle_QrReader_C.BndEvt__BP_ArmoredTransport_WheeledVehicle_QrReader_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_ArmoredTransport_WheeledVehicle_QrReader_C_BndEvt__BP_ArmoredTransport_WheeledVehicle_QrReader_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
 {
 public:
-	ESBZVehicleDoorState                          doorState;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          breached;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ArmoredTransport_WheeledVehicle_QrReader_C_BndEvt__BP_ArmoredTransport_WheeledVehicle_QrReader_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature;
 
-// Function BP_ArmoredTransport_WheeledVehicle_QrReader.BP_ArmoredTransport_WheeledVehicle_QrReader_C.setEnabled
-// 0x0014 (0x0014 - 0x0000)
-struct BP_ArmoredTransport_WheeledVehicle_QrReader_C_setEnabled final
+// Function BP_ArmoredTransport_WheeledVehicle_QrReader.BP_ArmoredTransport_WheeledVehicle_QrReader_C.BndEvt__BP_ArmoredTransport_WheeledVehicle_QrReader_QR_SBZIntState_K2Node_ComponentBoundEvent_1_SBZIntStateChangedSignature__DelegateSignature
+// 0x000C (0x000C - 0x0000)
+struct BP_ArmoredTransport_WheeledVehicle_QrReader_C_BndEvt__BP_ArmoredTransport_WheeledVehicle_QrReader_QR_SBZIntState_K2Node_ComponentBoundEvent_1_SBZIntStateChangedSignature__DelegateSignature final
 {
 public:
-	bool                                          enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_1;                               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Select_Default;                             // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         OldState;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewState;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_ArmoredTransport_WheeledVehicle_QrReader.BP_ArmoredTransport_WheeledVehicle_QrReader_C.setVisibility
-// 0x0010 (0x0010 - 0x0000)
-struct BP_ArmoredTransport_WheeledVehicle_QrReader_C_setVisibility final
-{
-public:
-	bool                                          visible;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable;                                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_1;                               // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Select_Default;                             // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_ArmoredTransport_WheeledVehicle_QrReader.BP_ArmoredTransport_WheeledVehicle_QrReader_C.UserConstructionScript
-// 0x0001 (0x0001 - 0x0000)
-struct BP_ArmoredTransport_WheeledVehicle_QrReader_C_UserConstructionScript final
-{
-public:
-	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_ArmoredTransport_WheeledVehicle_QrReader_C_BndEvt__BP_ArmoredTransport_WheeledVehicle_QrReader_QR_SBZIntState_K2Node_ComponentBoundEvent_1_SBZIntStateChangedSignature__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

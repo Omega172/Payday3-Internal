@@ -70,23 +70,23 @@ public:
 	class USBZBundleItemDecorator*                BundleItemDecorator;                               // 0x0508(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UpdateVisuals(class USBZBundleItemDecorator* InBundleDecorator);
-	void UpdateDisplayState(class USBZBundleItemDecorator* InItemDecorator);
-	void UpdateActions(class USBZBundleItemDecorator* InBundleDecorator);
-	void TryPlayActionAnimation(bool Selected, class USBZBundleItemDecorator* InBundleDecorator);
-	void SetItemVisuals(class USBZInventoryBaseData* InInventoryData);
-	void SelectionChanged(bool IsSelected);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnMouseEnter(const struct FGeometry& MyGeometry_OnMouseEnter, const struct FPointerEvent& MouseEvent_OnMouseEnter);
-	void OnListItemObjectSet(class UObject* ListItemObject_OnListItemObjectSet);
-	void OnListItemEquippedChanged(bool bIsEquipped_OnListItemEquippedChanged);
-	void Initialize_Item(class USBZInventoryBaseData* Inventory_Data);
-	void ExecuteUbergraph_WBP_VendorButton(int32 EntryPoint);
-	void ButtonSelected();
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
-	void ButtonFocusChanging(bool bInHasFocus_ButtonFocusChanging);
-	void BP_OnItemSelectionChanged(bool bIsSelected_BP_OnItemSelectionChanged);
 	void BP_OnEntryReleased();
+	void BP_OnItemSelectionChanged(bool bIsSelected);
+	void ButtonFocusChanging(bool bInHasFocus);
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonSelected();
+	void ExecuteUbergraph_WBP_VendorButton(int32 EntryPoint);
+	void Initialize_Item(class USBZInventoryBaseData* Inventory_Data);
+	void OnListItemEquippedChanged(bool bIsEquipped);
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void PreConstruct(bool IsDesignTime);
+	void SelectionChanged(bool IsSelected);
+	void SetItemVisuals(class USBZInventoryBaseData* InInventoryData);
+	void TryPlayActionAnimation(bool Selected, class USBZBundleItemDecorator* InBundleDecorator);
+	void UpdateActions(class USBZBundleItemDecorator* InBundleDecorator);
+	void UpdateDisplayState(class USBZBundleItemDecorator* InItemDecorator);
+	void UpdateVisuals(class USBZBundleItemDecorator* InBundleDecorator);
 
 public:
 	static class UClass* StaticClass()

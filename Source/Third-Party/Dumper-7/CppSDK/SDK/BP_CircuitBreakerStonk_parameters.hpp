@@ -19,9 +19,38 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.Active
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.UserConstructionScript
+// 0x0018 (0x0018 - 0x0000)
+struct BP_CircuitBreakerStonk_C_UserConstructionScript final
+{
+public:
+	TArray<float>                                 K2Node_MakeArray_Array;                            // 0x0000(0x0010)(ConstParm, ReferenceParm)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_CircuitBreakerStonk_C_UserConstructionScript;
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.UpdateIdentifier
+// 0x0010 (0x0010 - 0x0000)
+struct BP_CircuitBreakerStonk_C_UpdateIdentifier final
+{
+public:
+	class FText                                   InIdentifier_UpdateIdentifier;                     // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_BP_CircuitBreakerStonk_C_UpdateIdentifier;
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.UpdateCodeViewer
+// 0x0018 (0x0018 - 0x0000)
+struct BP_CircuitBreakerStonk_C_UpdateCodeViewer final
+{
+public:
+	TArray<int32>                                 GeneratedCodes_UpdateCodeViewer;                   // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	int32                                         TrueCodeIndex_UpdateCodeViewer;                    // 0x0010(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_CircuitBreakerStonk_C_UpdateCodeViewer;
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.Unlocked
 // 0x0020 (0x0020 - 0x0000)
-struct BP_CircuitBreakerStonk_C_Active final
+struct BP_CircuitBreakerStonk_C_Unlocked final
 {
 public:
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -30,99 +59,167 @@ public:
 	class UWBP_ComputerBase_C*                    K2Node_DynamicCast_AsWBP_Computer_Base;            // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_CircuitBreakerStonk_C_Unlocked;
 
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BndEvt__BP_CircuitBreakerStonk_SBZBinaryState_K2Node_ComponentBoundEvent_7_SBZBinaryStateChangedSignature__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct BP_CircuitBreakerStonk_C_BndEvt__BP_CircuitBreakerStonk_SBZBinaryState_K2Node_ComponentBoundEvent_7_SBZBinaryStateChangedSignature__DelegateSignature final
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.ShowMarker
+// 0x0008 (0x0008 - 0x0000)
+struct BP_CircuitBreakerStonk_C_ShowMarker final
 {
 public:
-	bool                                          bState;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_AddLocalMarker_ReturnValue;               // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_CircuitBreakerStonk_C_ShowMarker;
 
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_CircuitBreakerStonk_C_BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature final
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.setInteraction
+// 0x0001 (0x0001 - 0x0000)
+struct BP_CircuitBreakerStonk_C_setInteraction final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_CircuitBreakerStonk_C_setInteraction;
 
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_CircuitBreakerStonk_C_BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature final
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.Sabotaged
+// 0x0050 (0x0050 - 0x0000)
+struct BP_CircuitBreakerStonk_C_Sabotaged final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable; // 0x0000(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable_1; // 0x0014(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUserWidget*                            CallFunc_GetUserWidgetObject_ReturnValue;          // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_ComputerBase_C*                    K2Node_DynamicCast_AsWBP_Computer_Base;            // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_PostEvent_ReturnValue_1;                  // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_CircuitBreakerStonk_C_Sabotaged;
 
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_CircuitBreakerStonk_C_BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature final
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.RemoveMarker
+// 0x0001 (0x0001 - 0x0000)
+struct BP_CircuitBreakerStonk_C_RemoveMarker final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_CircuitBreakerStonk_C_RemoveMarker;
 
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_8_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_CircuitBreakerStonk_C_BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_8_SBZOnInteraction__DelegateSignature final
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.InteractionHatch
+// 0x0001 (0x0001 - 0x0000)
+struct BP_CircuitBreakerStonk_C_InteractionHatch final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Enable;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_CircuitBreakerStonk_C_InteractionHatch;
 
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BndEvt__BP_CircuitBreakerStonk_screenOn_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct BP_CircuitBreakerStonk_C_BndEvt__BP_CircuitBreakerStonk_screenOn_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature final
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.Innactive
+// 0x0020 (0x0020 - 0x0000)
+struct BP_CircuitBreakerStonk_C_Innactive final
 {
 public:
-	bool                                          bState;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUserWidget*                            CallFunc_GetUserWidgetObject_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_ComputerBase_C*                    K2Node_DynamicCast_AsWBP_Computer_Base;            // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_CircuitBreakerStonk_C_Innactive;
 
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_CircuitBreakerStonk_C_BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature final
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.HackingTimer
+// 0x0048 (0x0048 - 0x0000)
+struct BP_CircuitBreakerStonk_C_HackingTimer final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Process_Text;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable; // 0x0014(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUserWidget*                            CallFunc_GetUserWidgetObject_ReturnValue;          // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_ComputerBase_C*                    K2Node_DynamicCast_AsWBP_Computer_Base;            // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_CircuitBreakerStonk_C_HackingTimer;
 
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BP_OnHackingStarted
-// 0x0010 (0x0010 - 0x0000)
-struct BP_CircuitBreakerStonk_C_BP_OnHackingStarted final
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.HackingProgress
+// 0x0020 (0x0020 - 0x0000)
+struct BP_CircuitBreakerStonk_C_HackingProgress final
 {
 public:
-	class FText                                   ProcessText;                                       // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	int32                                         Progression;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUserWidget*                            CallFunc_GetUserWidgetObject_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_ComputerBase_C*                    K2Node_DynamicCast_AsWBP_Computer_Base;            // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_CircuitBreakerStonk_C_HackingProgress;
 
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BP_OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_CircuitBreakerStonk_C_BP_OnStateChanged final
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.Hacking
+// 0x0040 (0x0040 - 0x0000)
+struct BP_CircuitBreakerStonk_C_Hacking final
 {
 public:
-	ESBZHackableActorState                        OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZHackableActorState                        NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Has_Been_Initd_Variable_1;               // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_IsClosed_Variable_1;                     // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable; // 0x0004(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUserWidget*                            CallFunc_GetUserWidgetObject_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_ComputerBase_C*                    K2Node_DynamicCast_AsWBP_Computer_Base;            // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_CircuitBreakerStonk_C_Hacking;
 
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BP_UpdateProgressBar
-// 0x0004 (0x0004 - 0x0000)
-struct BP_CircuitBreakerStonk_C_BP_UpdateProgressBar final
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.GetMarkerText
+// 0x00A8 (0x00A8 - 0x0000)
+struct BP_CircuitBreakerStonk_C_GetMarkerText final
 {
 public:
-	int32                                         ProgressDone;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   ReturnValue_GetMarkerText;                         // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
+	ESBZHackableActorState                        Temp_byte_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable;                                // 0x0018(0x0010)()
+	class FText                                   Temp_text_Variable_1;                              // 0x0028(0x0010)()
+	class FText                                   Temp_text_Variable_2;                              // 0x0038(0x0010)()
+	class FText                                   Temp_text_Variable_3;                              // 0x0048(0x0010)()
+	class FText                                   Temp_text_Variable_4;                              // 0x0058(0x0010)()
+	class FText                                   Temp_text_Variable_5;                              // 0x0068(0x0010)()
+	class FText                                   Temp_text_Variable_6;                              // 0x0078(0x0010)()
+	class FText                                   Temp_text_Variable_7;                              // 0x0088(0x0010)()
+	class FText                                   K2Node_Select_Default;                             // 0x0098(0x0010)()
 };
+DUMPER7_ASSERTS_BP_CircuitBreakerStonk_C_GetMarkerText;
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.GainAcccess
+// 0x0170 (0x0170 - 0x0000)
+struct BP_CircuitBreakerStonk_C_GainAcccess final
+{
+public:
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable; // 0x0000(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable_1; // 0x0014(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0028(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_45[0x3];                                       // 0x0045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0048(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	int32                                         CallFunc_PostEvent_ReturnValue_1;                  // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_154[0x4];                                      // 0x0154(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUserWidget*                            CallFunc_GetUserWidgetObject_ReturnValue;          // 0x0158(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_ComputerBase_C*                    K2Node_DynamicCast_AsWBP_Computer_Base;            // 0x0160(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_CircuitBreakerStonk_C_GainAcccess;
 
 // Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.ExecuteUbergraph_BP_CircuitBreakerStonk
 // 0x02D0 (0x02D0 - 0x0000)
@@ -198,207 +295,138 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x02C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_MakeVector_X_ImplicitCast;                // 0x02C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_CircuitBreakerStonk_C_ExecuteUbergraph_BP_CircuitBreakerStonk;
 
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.GainAcccess
-// 0x0170 (0x0170 - 0x0000)
-struct BP_CircuitBreakerStonk_C_GainAcccess final
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BP_UpdateProgressBar
+// 0x0004 (0x0004 - 0x0000)
+struct BP_CircuitBreakerStonk_C_BP_UpdateProgressBar final
 {
 public:
-	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable; // 0x0000(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable_1; // 0x0014(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0028(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_45[0x3];                                       // 0x0045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult;    // 0x0048(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                         CallFunc_PostEvent_ReturnValue_1;                  // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_154[0x4];                                      // 0x0154(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUserWidget*                            CallFunc_GetUserWidgetObject_ReturnValue;          // 0x0158(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_ComputerBase_C*                    K2Node_DynamicCast_AsWBP_Computer_Base;            // 0x0160(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         ProgressDone_BP_UpdateProgressBar;                 // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_CircuitBreakerStonk_C_BP_UpdateProgressBar;
 
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.GetMarkerText
-// 0x00A8 (0x00A8 - 0x0000)
-struct BP_CircuitBreakerStonk_C_GetMarkerText final
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BP_OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_CircuitBreakerStonk_C_BP_OnStateChanged final
 {
 public:
-	class FText                                   ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
-	ESBZHackableActorState                        Temp_byte_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable;                                // 0x0018(0x0010)()
-	class FText                                   Temp_text_Variable_1;                              // 0x0028(0x0010)()
-	class FText                                   Temp_text_Variable_2;                              // 0x0038(0x0010)()
-	class FText                                   Temp_text_Variable_3;                              // 0x0048(0x0010)()
-	class FText                                   Temp_text_Variable_4;                              // 0x0058(0x0010)()
-	class FText                                   Temp_text_Variable_5;                              // 0x0068(0x0010)()
-	class FText                                   Temp_text_Variable_6;                              // 0x0078(0x0010)()
-	class FText                                   Temp_text_Variable_7;                              // 0x0088(0x0010)()
-	class FText                                   K2Node_Select_Default;                             // 0x0098(0x0010)()
+	ESBZHackableActorState                        OldState_BP_OnStateChanged;                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZHackableActorState                        NewState_BP_OnStateChanged;                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_CircuitBreakerStonk_C_BP_OnStateChanged;
 
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.Hacking
-// 0x0040 (0x0040 - 0x0000)
-struct BP_CircuitBreakerStonk_C_Hacking final
-{
-public:
-	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Has_Been_Initd_Variable_1;               // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_IsClosed_Variable_1;                     // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable; // 0x0004(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUserWidget*                            CallFunc_GetUserWidgetObject_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_ComputerBase_C*                    K2Node_DynamicCast_AsWBP_Computer_Base;            // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.HackingProgress
-// 0x0020 (0x0020 - 0x0000)
-struct BP_CircuitBreakerStonk_C_HackingProgress final
-{
-public:
-	int32                                         Progression;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUserWidget*                            CallFunc_GetUserWidgetObject_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_ComputerBase_C*                    K2Node_DynamicCast_AsWBP_Computer_Base;            // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.HackingTimer
-// 0x0048 (0x0048 - 0x0000)
-struct BP_CircuitBreakerStonk_C_HackingTimer final
-{
-public:
-	class FText                                   Process_Text;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable; // 0x0014(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUserWidget*                            CallFunc_GetUserWidgetObject_ReturnValue;          // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_ComputerBase_C*                    K2Node_DynamicCast_AsWBP_Computer_Base;            // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.Innactive
-// 0x0020 (0x0020 - 0x0000)
-struct BP_CircuitBreakerStonk_C_Innactive final
-{
-public:
-	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUserWidget*                            CallFunc_GetUserWidgetObject_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_ComputerBase_C*                    K2Node_DynamicCast_AsWBP_Computer_Base;            // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.InteractionHatch
-// 0x0001 (0x0001 - 0x0000)
-struct BP_CircuitBreakerStonk_C_InteractionHatch final
-{
-public:
-	bool                                          Enable;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.RemoveMarker
-// 0x0001 (0x0001 - 0x0000)
-struct BP_CircuitBreakerStonk_C_RemoveMarker final
-{
-public:
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.Sabotaged
-// 0x0050 (0x0050 - 0x0000)
-struct BP_CircuitBreakerStonk_C_Sabotaged final
-{
-public:
-	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable; // 0x0000(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable_1; // 0x0014(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUserWidget*                            CallFunc_GetUserWidgetObject_ReturnValue;          // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_ComputerBase_C*                    K2Node_DynamicCast_AsWBP_Computer_Base;            // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_PostEvent_ReturnValue;                    // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_PostEvent_ReturnValue_1;                  // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.setInteraction
-// 0x0001 (0x0001 - 0x0000)
-struct BP_CircuitBreakerStonk_C_setInteraction final
-{
-public:
-	bool                                          enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.ShowMarker
-// 0x0008 (0x0008 - 0x0000)
-struct BP_CircuitBreakerStonk_C_ShowMarker final
-{
-public:
-	int32                                         CallFunc_AddLocalMarker_ReturnValue;               // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.Unlocked
-// 0x0020 (0x0020 - 0x0000)
-struct BP_CircuitBreakerStonk_C_Unlocked final
-{
-public:
-	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUserWidget*                            CallFunc_GetUserWidgetObject_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_ComputerBase_C*                    K2Node_DynamicCast_AsWBP_Computer_Base;            // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.UpdateCodeViewer
-// 0x0018 (0x0018 - 0x0000)
-struct BP_CircuitBreakerStonk_C_UpdateCodeViewer final
-{
-public:
-	TArray<int32>                                 GeneratedCodes;                                    // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	int32                                         TrueCodeIndex;                                     // 0x0010(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.UpdateIdentifier
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BP_OnHackingStarted
 // 0x0010 (0x0010 - 0x0000)
-struct BP_CircuitBreakerStonk_C_UpdateIdentifier final
+struct BP_CircuitBreakerStonk_C_BP_OnHackingStarted final
 {
 public:
-	class FText                                   InIdentifier;                                      // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class FText                                   ProcessText_BP_OnHackingStarted;                   // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
+DUMPER7_ASSERTS_BP_CircuitBreakerStonk_C_BP_OnHackingStarted;
 
-// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.UserConstructionScript
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature
 // 0x0018 (0x0018 - 0x0000)
-struct BP_CircuitBreakerStonk_C_UserConstructionScript final
+struct BP_CircuitBreakerStonk_C_BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature final
 {
 public:
-	TArray<float>                                 K2Node_MakeArray_Array;                            // 0x0000(0x0010)(ConstParm, ReferenceParm)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_CircuitBreakerStonk_C_BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature;
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BndEvt__BP_CircuitBreakerStonk_screenOn_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct BP_CircuitBreakerStonk_C_BndEvt__BP_CircuitBreakerStonk_screenOn_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature final
+{
+public:
+	bool                                          bState;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_CircuitBreakerStonk_C_BndEvt__BP_CircuitBreakerStonk_screenOn_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature;
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_8_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_CircuitBreakerStonk_C_BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_8_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_CircuitBreakerStonk_C_BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_8_SBZOnInteraction__DelegateSignature;
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_CircuitBreakerStonk_C_BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_CircuitBreakerStonk_C_BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature;
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_CircuitBreakerStonk_C_BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_CircuitBreakerStonk_C_BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature;
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_CircuitBreakerStonk_C_BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_CircuitBreakerStonk_C_BndEvt__BP_CircuitBreakerStonk_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature;
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.BndEvt__BP_CircuitBreakerStonk_SBZBinaryState_K2Node_ComponentBoundEvent_7_SBZBinaryStateChangedSignature__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct BP_CircuitBreakerStonk_C_BndEvt__BP_CircuitBreakerStonk_SBZBinaryState_K2Node_ComponentBoundEvent_7_SBZBinaryStateChangedSignature__DelegateSignature final
+{
+public:
+	bool                                          bState;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_CircuitBreakerStonk_C_BndEvt__BP_CircuitBreakerStonk_SBZBinaryState_K2Node_ComponentBoundEvent_7_SBZBinaryStateChangedSignature__DelegateSignature;
+
+// Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.Active
+// 0x0020 (0x0020 - 0x0000)
+struct BP_CircuitBreakerStonk_C_Active final
+{
+public:
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUserWidget*                            CallFunc_GetUserWidgetObject_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_ComputerBase_C*                    K2Node_DynamicCast_AsWBP_Computer_Base;            // 0x0010(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_CircuitBreakerStonk_C_Active;
 
 // Function BP_CircuitBreakerStonk.BP_CircuitBreakerStonk_C.VisionPredicate
 // 0x0050 (0x0050 - 0x0000)
 struct BP_CircuitBreakerStonk_C_VisionPredicate final
 {
 public:
-	const class AActor*                           Viewer;                                            // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class AActor*                           Viewer_VisionPredicate;                            // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          ReturnValue_VisionPredicate;                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue;        // 0x0010(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetActorForwardVector_ReturnValue_1;      // 0x0028(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_Dot_VectorVector_ReturnValue;             // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_DoubleDouble_ReturnValue;            // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_CircuitBreakerStonk_C_VisionPredicate;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

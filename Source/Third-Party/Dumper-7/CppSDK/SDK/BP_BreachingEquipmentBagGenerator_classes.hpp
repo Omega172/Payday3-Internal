@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABP_BreachingEquipmentBagGenerator_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BreachingEquipmentBagGenerator_C;
 
 SDK_NAMESPACE_END

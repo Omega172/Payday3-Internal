@@ -19,18 +19,16 @@ SDK_NAMESPACE_START
 // Function BUST_BPL_Fluorescent_Hanging_Green.BUST_BPL_Fluorescent_Hanging_Green_C.SetStateFunction
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// Enum_LampStages                         State_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Enum_LampStages                         State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABUST_BPL_Fluorescent_Hanging_Green_C::SetStateFunction(Enum_LampStages State_0)
+void ABUST_BPL_Fluorescent_Hanging_Green_C::SetStateFunction(Enum_LampStages State)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BUST_BPL_Fluorescent_Hanging_Green_C", "SetStateFunction");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetStateFunction", FnName));
 
 	Params::BUST_BPL_Fluorescent_Hanging_Green_C_SetStateFunction Parms{};
 
-	Parms.State_0 = State_0;
+	Parms.State = State;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

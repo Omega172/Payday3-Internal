@@ -16,13 +16,23 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function C_Pharaoh_IntroOutro.C_Pharaoh_IntroOutro_C.BndEvt__C_Pharaoh_IntroOutro_SBZPlayerTriggerVolume2_2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct C_Pharaoh_IntroOutro_C_BndEvt__C_Pharaoh_IntroOutro_SBZPlayerTriggerVolume2_2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature final
+// Function C_Pharaoh_IntroOutro.C_Pharaoh_IntroOutro_C.OutroSequenceStarted
+// 0x0004 (0x0004 - 0x0000)
+struct C_Pharaoh_IntroOutro_C_OutroSequenceStarted final
 {
 public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         OutroVariation_OutroSequenceStarted;               // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_C_Pharaoh_IntroOutro_C_OutroSequenceStarted;
+
+// Function C_Pharaoh_IntroOutro.C_Pharaoh_IntroOutro_C.IntroSequenceChanged
+// 0x0001 (0x0001 - 0x0000)
+struct C_Pharaoh_IntroOutro_C_IntroSequenceChanged final
+{
+public:
+	bool                                          bIsStarted_IntroSequenceChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_C_Pharaoh_IntroOutro_C_IntroSequenceChanged;
 
 // Function C_Pharaoh_IntroOutro.C_Pharaoh_IntroOutro_C.ExecuteUbergraph_C_Pharaoh_IntroOutro
 // 0x0070 (0x0070 - 0x0000)
@@ -46,22 +56,16 @@ public:
 	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ULevelSequencePlayer*                   CallFunc_GetSequencePlayer_ReturnValue_1;          // 0x0068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_C_Pharaoh_IntroOutro_C_ExecuteUbergraph_C_Pharaoh_IntroOutro;
 
-// Function C_Pharaoh_IntroOutro.C_Pharaoh_IntroOutro_C.IntroSequenceChanged
-// 0x0001 (0x0001 - 0x0000)
-struct C_Pharaoh_IntroOutro_C_IntroSequenceChanged final
+// Function C_Pharaoh_IntroOutro.C_Pharaoh_IntroOutro_C.BndEvt__C_Pharaoh_IntroOutro_SBZPlayerTriggerVolume2_2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct C_Pharaoh_IntroOutro_C_BndEvt__C_Pharaoh_IntroOutro_SBZPlayerTriggerVolume2_2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature final
 {
 public:
-	bool                                          bIsStarted;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function C_Pharaoh_IntroOutro.C_Pharaoh_IntroOutro_C.OutroSequenceStarted
-// 0x0004 (0x0004 - 0x0000)
-struct C_Pharaoh_IntroOutro_C_OutroSequenceStarted final
-{
-public:
-	int32                                         OutroVariation;                                    // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_C_Pharaoh_IntroOutro_C_BndEvt__C_Pharaoh_IntroOutro_SBZPlayerTriggerVolume2_2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

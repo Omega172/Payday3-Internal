@@ -17,24 +17,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_CarLiftPoliceCarBackDoors.BP_CarLiftPoliceCarBackDoors_C.BndEvt__BP_CarLiftPoliceCarBackDoors_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct BP_CarLiftPoliceCarBackDoors_C_BndEvt__BP_CarLiftPoliceCarBackDoors_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature final
-{
-public:
-	const class USBZBaseInteractableComponent*    InteractableComponent_0;                           // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInNewState;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_CarLiftPoliceCarBackDoors.BP_CarLiftPoliceCarBackDoors_C.BP_OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_CarLiftPoliceCarBackDoors_C_BP_OnStateChanged final
-{
-public:
-	bool                                          bNewState;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmentics;                                     // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_CarLiftPoliceCarBackDoors.BP_CarLiftPoliceCarBackDoors_C.ExecuteUbergraph_BP_CarLiftPoliceCarBackDoors
 // 0x02A0 (0x02A0 - 0x0000)
 struct BP_CarLiftPoliceCarBackDoors_C_ExecuteUbergraph_BP_CarLiftPoliceCarBackDoors final
@@ -64,6 +46,27 @@ public:
 	double                                        CallFunc_Multiply_DoubleDouble_A_ImplicitCast;     // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_MakeRotator_Yaw_ImplicitCast;             // 0x0298(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_CarLiftPoliceCarBackDoors_C_ExecuteUbergraph_BP_CarLiftPoliceCarBackDoors;
+
+// Function BP_CarLiftPoliceCarBackDoors.BP_CarLiftPoliceCarBackDoors_C.BP_OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_CarLiftPoliceCarBackDoors_C_BP_OnStateChanged final
+{
+public:
+	bool                                          bNewState_BP_OnStateChanged;                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmentics_BP_OnStateChanged;                   // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_CarLiftPoliceCarBackDoors_C_BP_OnStateChanged;
+
+// Function BP_CarLiftPoliceCarBackDoors.BP_CarLiftPoliceCarBackDoors_C.BndEvt__BP_CarLiftPoliceCarBackDoors_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct BP_CarLiftPoliceCarBackDoors_C_BndEvt__BP_CarLiftPoliceCarBackDoors_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature final
+{
+public:
+	const class USBZBaseInteractableComponent*    InteractableComponent;                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInNewState;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_CarLiftPoliceCarBackDoors_C_BndEvt__BP_CarLiftPoliceCarBackDoors_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -24,8 +24,8 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteUbergraph_Cookie(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_Cookie(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -41,5 +41,6 @@ public:
 		return GetDefaultObjImpl<ACookie_C>();
 	}
 };
+DUMPER7_ASSERTS_ACookie_C;
 
 SDK_NAMESPACE_END

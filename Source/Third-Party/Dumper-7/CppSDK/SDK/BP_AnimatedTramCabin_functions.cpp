@@ -16,49 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_AnimatedTramCabin.BP_AnimatedTramCabin_C.ExecuteUbergraph_BP_AnimatedTramCabin
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_AnimatedTramCabin.BP_AnimatedTramCabin_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_AnimatedTramCabin_C::ExecuteUbergraph_BP_AnimatedTramCabin(int32 EntryPoint)
+void ABP_AnimatedTramCabin_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AnimatedTramCabin_C", "ExecuteUbergraph_BP_AnimatedTramCabin");
-
-	Params::BP_AnimatedTramCabin_C_ExecuteUbergraph_BP_AnimatedTramCabin Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_AnimatedTramCabin.BP_AnimatedTramCabin_C.MoveObject
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_AnimatedTramCabin_C::MoveObject()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AnimatedTramCabin_C", "MoveObject");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_AnimatedTramCabin.BP_AnimatedTramCabin_C.MoveObjectT__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_AnimatedTramCabin_C::MoveObjectT__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AnimatedTramCabin_C", "MoveObjectT__FinishedFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,26 +33,52 @@ void ABP_AnimatedTramCabin_C::MoveObjectT__FinishedFunc()
 
 void ABP_AnimatedTramCabin_C::MoveObjectT__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AnimatedTramCabin_C", "MoveObjectT__UpdateFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MoveObjectT__UpdateFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_AnimatedTramCabin.BP_AnimatedTramCabin_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_AnimatedTramCabin.BP_AnimatedTramCabin_C.MoveObjectT__FinishedFunc
+// (BlueprintEvent)
 
-void ABP_AnimatedTramCabin_C::ReceiveBeginPlay()
+void ABP_AnimatedTramCabin_C::MoveObjectT__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_AnimatedTramCabin_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MoveObjectT__FinishedFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_AnimatedTramCabin.BP_AnimatedTramCabin_C.MoveObject
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_AnimatedTramCabin_C::MoveObject()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MoveObject", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_AnimatedTramCabin.BP_AnimatedTramCabin_C.ExecuteUbergraph_BP_AnimatedTramCabin
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_AnimatedTramCabin_C::ExecuteUbergraph_BP_AnimatedTramCabin(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_AnimatedTramCabin_C", "ExecuteUbergraph_BP_AnimatedTramCabin", FuncInfo);
+
+	Params::BP_AnimatedTramCabin_C_ExecuteUbergraph_BP_AnimatedTramCabin Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

@@ -30,10 +30,10 @@ public:
 	TMulticastInlineDelegate<void()>              OnDigitalKeyReaderComplete;                        // 0x03F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__BP_DigitalKeyReader_InteractableComponent_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BP_OnStateChanged(ESBZModuleActorState NewState, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_DigitalKeyReader(int32 EntryPoint);
 	void UserConstructionScript();
+	void ExecuteUbergraph_BP_DigitalKeyReader(int32 EntryPoint);
+	void BP_OnStateChanged(ESBZModuleActorState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged);
+	void BndEvt__BP_DigitalKeyReader_InteractableComponent_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -49,5 +49,6 @@ public:
 		return GetDefaultObjImpl<ABP_DigitalKeyReader_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DigitalKeyReader_C;
 
 SDK_NAMESPACE_END

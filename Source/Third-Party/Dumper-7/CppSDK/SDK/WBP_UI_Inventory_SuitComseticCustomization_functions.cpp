@@ -16,75 +16,41 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.OnLostStackFocused
+// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.BndEvt__WBP_UI_Inventory_SuitComseticCustomization_Widget_CosmeticPanel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMainMenuCosmeticItemButton*   CosmeticButton                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_SuitComseticCustomization_C::BndEvt__WBP_UI_Inventory_SuitComseticCustomization_Widget_CosmeticPanel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature(class USBZMainMenuCosmeticItemButton* CosmeticButton, bool bIsEnabled_0)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Inventory_SuitComseticCustomization_Widget_CosmeticPanel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature", FnName));
+
+	Params::WBP_UI_Inventory_SuitComseticCustomization_C_BndEvt__WBP_UI_Inventory_SuitComseticCustomization_Widget_CosmeticPanel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature Parms{};
+
+	Parms.CosmeticButton = CosmeticButton;
+	Parms.bIsEnabled_0 = bIsEnabled_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.EquippedItemChanged
 // (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_Inventory_SuitComseticCustomization_C::OnLostStackFocused()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_Inventory_SuitComseticCustomization_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// const class FName&                      PreviousValue_OnGainedStackFocused                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZCosmeticsDataAsset*     InEquippedItem                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Inventory_SuitComseticCustomization_C::OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused)
+void UWBP_UI_Inventory_SuitComseticCustomization_C::EquippedItemChanged(const class USBZCosmeticsDataAsset* InEquippedItem)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EquippedItemChanged", FnName));
 
-	Params::WBP_UI_Inventory_SuitComseticCustomization_C_OnGainedStackFocused Parms{};
+	Params::WBP_UI_Inventory_SuitComseticCustomization_C_EquippedItemChanged Parms{};
 
-	Parms.PreviousValue_OnGainedStackFocused = PreviousValue_OnGainedStackFocused;
+	Parms.InEquippedItem = InEquippedItem;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.OnControlsReferenceClicked
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Inventory_SuitComseticCustomization_C::OnControlsReferenceClicked(class FName ActionName)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnControlsReferenceClicked", FnName));
-
-	Params::WBP_UI_Inventory_SuitComseticCustomization_C_OnControlsReferenceClicked Parms{};
-
-	Parms.ActionName = ActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.InitializeVisuals
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Inventory_SuitComseticCustomization_C::InitializeVisuals()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeVisuals", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -106,41 +72,75 @@ void UWBP_UI_Inventory_SuitComseticCustomization_C::ExecuteUbergraph_WBP_UI_Inve
 }
 
 
-// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.EquippedItemChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// const class USBZCosmeticsDataAsset*     InEquippedItem_EquippedItemChanged                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.InitializeVisuals
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Inventory_SuitComseticCustomization_C::EquippedItemChanged(const class USBZCosmeticsDataAsset* InEquippedItem_EquippedItemChanged)
+void UWBP_UI_Inventory_SuitComseticCustomization_C::InitializeVisuals()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EquippedItemChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeVisuals", FnName));
 
-	Params::WBP_UI_Inventory_SuitComseticCustomization_C_EquippedItemChanged Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.InEquippedItem_EquippedItemChanged = InEquippedItem_EquippedItemChanged;
+
+// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.OnControlsReferenceClicked
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Inventory_SuitComseticCustomization_C::OnControlsReferenceClicked(class FName ActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnControlsReferenceClicked", FnName));
+
+	Params::WBP_UI_Inventory_SuitComseticCustomization_C_OnControlsReferenceClicked Parms{};
+
+	Parms.ActionName = ActionName;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.BndEvt__WBP_UI_Inventory_SuitComseticCustomization_Widget_CosmeticPanel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// class USBZMainMenuCosmeticItemButton*   CosmeticButton                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Inventory_SuitComseticCustomization_C::BndEvt__WBP_UI_Inventory_SuitComseticCustomization_Widget_CosmeticPanel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature(class USBZMainMenuCosmeticItemButton* CosmeticButton, bool bIsEnabled)
+void UWBP_UI_Inventory_SuitComseticCustomization_C::OnGainedStackFocused(const class FName& PreviousValue)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_Inventory_SuitComseticCustomization_Widget_CosmeticPanel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
 
-	Params::WBP_UI_Inventory_SuitComseticCustomization_C_BndEvt__WBP_UI_Inventory_SuitComseticCustomization_Widget_CosmeticPanel_K2Node_ComponentBoundEvent_0_OnCosmeticButtonStateChanged__DelegateSignature Parms{};
+	Params::WBP_UI_Inventory_SuitComseticCustomization_C_OnGainedStackFocused Parms{};
 
-	Parms.CosmeticButton = CosmeticButton;
-	Parms.bIsEnabled = bIsEnabled;
+	Parms.PreviousValue = PreviousValue;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_Inventory_SuitComseticCustomization_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Inventory_SuitComseticCustomization.WBP_UI_Inventory_SuitComseticCustomization_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_Inventory_SuitComseticCustomization_C::OnLostStackFocused()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

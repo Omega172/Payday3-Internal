@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_BlockPlacables_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_BlockPlacables_C;
 
 SDK_NAMESPACE_END

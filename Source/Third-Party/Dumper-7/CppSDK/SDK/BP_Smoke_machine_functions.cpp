@@ -16,39 +16,25 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Smoke_machine.BP_Smoke_machine_C.BndEvt__BP_Smoke_machine_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Smoke_machine.BP_Smoke_machine_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Smoke_machine_C::BndEvt__BP_Smoke_machine_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_Smoke_machine_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Smoke_machine_C", "BndEvt__BP_Smoke_machine_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_Smoke_machine_C_BndEvt__BP_Smoke_machine_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Smoke_machine.BP_Smoke_machine_C.Deactivate Smoke_Screens
+// Function BP_Smoke_machine.BP_Smoke_machine_C.Stop Smoke Machine
 // (BlueprintCallable, BlueprintEvent)
 
-void ABP_Smoke_machine_C::Deactivate_Smoke_Screens()
+void ABP_Smoke_machine_C::Stop_Smoke_Machine()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Smoke_machine_C", "Deactivate Smoke_Screens");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Stop Smoke Machine", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -61,10 +47,8 @@ void ABP_Smoke_machine_C::Deactivate_Smoke_Screens()
 
 void ABP_Smoke_machine_C::ExecuteUbergraph_BP_Smoke_machine(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Smoke_machine_C", "ExecuteUbergraph_BP_Smoke_machine");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Smoke_machine_C", "ExecuteUbergraph_BP_Smoke_machine", FuncInfo);
 
 	Params::BP_Smoke_machine_C_ExecuteUbergraph_BP_Smoke_machine Parms{};
 
@@ -74,31 +58,37 @@ void ABP_Smoke_machine_C::ExecuteUbergraph_BP_Smoke_machine(int32 EntryPoint)
 }
 
 
-// Function BP_Smoke_machine.BP_Smoke_machine_C.Stop Smoke Machine
+// Function BP_Smoke_machine.BP_Smoke_machine_C.Deactivate Smoke_Screens
 // (BlueprintCallable, BlueprintEvent)
 
-void ABP_Smoke_machine_C::Stop_Smoke_Machine()
+void ABP_Smoke_machine_C::Deactivate_Smoke_Screens()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Smoke_machine_C", "Stop Smoke Machine");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Deactivate Smoke_Screens", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Smoke_machine.BP_Smoke_machine_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_Smoke_machine.BP_Smoke_machine_C.BndEvt__BP_Smoke_machine_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Smoke_machine_C::UserConstructionScript()
+void ABP_Smoke_machine_C::BndEvt__BP_Smoke_machine_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Smoke_machine_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Smoke_machine_C", "UserConstructionScript");
+	Params::BP_Smoke_machine_C_BndEvt__BP_Smoke_machine_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

@@ -16,91 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function L_DataCenter_DynamicLighting.L_DataCenter_DynamicLighting_C.ExecuteUbergraph_L_DataCenter_DynamicLighting
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AL_DataCenter_DynamicLighting_C::ExecuteUbergraph_L_DataCenter_DynamicLighting(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("L_DataCenter_DynamicLighting_C", "ExecuteUbergraph_L_DataCenter_DynamicLighting");
-
-	Params::L_DataCenter_DynamicLighting_C_ExecuteUbergraph_L_DataCenter_DynamicLighting Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function L_DataCenter_DynamicLighting.L_DataCenter_DynamicLighting_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AL_DataCenter_DynamicLighting_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("L_DataCenter_DynamicLighting_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function L_DataCenter_DynamicLighting.L_DataCenter_DynamicLighting_C.RoomACleared
+// Function L_DataCenter_DynamicLighting.L_DataCenter_DynamicLighting_C.WallExplodedTrigger
 // (BlueprintCallable, BlueprintEvent)
 
-void AL_DataCenter_DynamicLighting_C::RoomACleared()
+void AL_DataCenter_DynamicLighting_C::WallExplodedTrigger()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("L_DataCenter_DynamicLighting_C", "RoomACleared");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function L_DataCenter_DynamicLighting.L_DataCenter_DynamicLighting_C.RoomBCleared
-// (BlueprintCallable, BlueprintEvent)
-
-void AL_DataCenter_DynamicLighting_C::RoomBCleared()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("L_DataCenter_DynamicLighting_C", "RoomBCleared");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function L_DataCenter_DynamicLighting.L_DataCenter_DynamicLighting_C.RoomCCleared
-// (BlueprintCallable, BlueprintEvent)
-
-void AL_DataCenter_DynamicLighting_C::RoomCCleared()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("L_DataCenter_DynamicLighting_C", "RoomCCleared");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function L_DataCenter_DynamicLighting.L_DataCenter_DynamicLighting_C.RoomDCleared
-// (BlueprintCallable, BlueprintEvent)
-
-void AL_DataCenter_DynamicLighting_C::RoomDCleared()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("L_DataCenter_DynamicLighting_C", "RoomDCleared");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"WallExplodedTrigger", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -111,26 +33,88 @@ void AL_DataCenter_DynamicLighting_C::RoomDCleared()
 
 void AL_DataCenter_DynamicLighting_C::RoomECleared()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("L_DataCenter_DynamicLighting_C", "RoomECleared");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RoomECleared", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function L_DataCenter_DynamicLighting.L_DataCenter_DynamicLighting_C.WallExplodedTrigger
+// Function L_DataCenter_DynamicLighting.L_DataCenter_DynamicLighting_C.RoomDCleared
 // (BlueprintCallable, BlueprintEvent)
 
-void AL_DataCenter_DynamicLighting_C::WallExplodedTrigger()
+void AL_DataCenter_DynamicLighting_C::RoomDCleared()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("L_DataCenter_DynamicLighting_C", "WallExplodedTrigger");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RoomDCleared", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function L_DataCenter_DynamicLighting.L_DataCenter_DynamicLighting_C.RoomCCleared
+// (BlueprintCallable, BlueprintEvent)
+
+void AL_DataCenter_DynamicLighting_C::RoomCCleared()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RoomCCleared", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function L_DataCenter_DynamicLighting.L_DataCenter_DynamicLighting_C.RoomBCleared
+// (BlueprintCallable, BlueprintEvent)
+
+void AL_DataCenter_DynamicLighting_C::RoomBCleared()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RoomBCleared", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function L_DataCenter_DynamicLighting.L_DataCenter_DynamicLighting_C.RoomACleared
+// (BlueprintCallable, BlueprintEvent)
+
+void AL_DataCenter_DynamicLighting_C::RoomACleared()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RoomACleared", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function L_DataCenter_DynamicLighting.L_DataCenter_DynamicLighting_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AL_DataCenter_DynamicLighting_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function L_DataCenter_DynamicLighting.L_DataCenter_DynamicLighting_C.ExecuteUbergraph_L_DataCenter_DynamicLighting
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AL_DataCenter_DynamicLighting_C::ExecuteUbergraph_L_DataCenter_DynamicLighting(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "L_DataCenter_DynamicLighting_C", "ExecuteUbergraph_L_DataCenter_DynamicLighting", FuncInfo);
+
+	Params::L_DataCenter_DynamicLighting_C_ExecuteUbergraph_L_DataCenter_DynamicLighting Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

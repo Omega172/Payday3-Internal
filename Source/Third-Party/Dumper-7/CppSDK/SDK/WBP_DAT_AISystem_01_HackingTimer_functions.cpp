@@ -16,26 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_DAT_AISystem_01_HackingTimer.WBP_DAT_AISystem_01_HackingTimer_C.ExecuteUbergraph_WBP_DAT_AISystem_01_HackingTimer
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_DAT_AISystem_01_HackingTimer_C::ExecuteUbergraph_WBP_DAT_AISystem_01_HackingTimer(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DAT_AISystem_01_HackingTimer_C", "ExecuteUbergraph_WBP_DAT_AISystem_01_HackingTimer");
-
-	Params::WBP_DAT_AISystem_01_HackingTimer_C_ExecuteUbergraph_WBP_DAT_AISystem_01_HackingTimer Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_DAT_AISystem_01_HackingTimer.WBP_DAT_AISystem_01_HackingTimer_C.setProgress
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -43,14 +23,30 @@ void UWBP_DAT_AISystem_01_HackingTimer_C::ExecuteUbergraph_WBP_DAT_AISystem_01_H
 
 void UWBP_DAT_AISystem_01_HackingTimer_C::setProgress(int32 InputPin)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DAT_AISystem_01_HackingTimer_C", "setProgress");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setProgress", FnName));
 
 	Params::WBP_DAT_AISystem_01_HackingTimer_C_setProgress Parms{};
 
 	Parms.InputPin = InputPin;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_DAT_AISystem_01_HackingTimer.WBP_DAT_AISystem_01_HackingTimer_C.ExecuteUbergraph_WBP_DAT_AISystem_01_HackingTimer
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DAT_AISystem_01_HackingTimer_C::ExecuteUbergraph_WBP_DAT_AISystem_01_HackingTimer(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_DAT_AISystem_01_HackingTimer_C", "ExecuteUbergraph_WBP_DAT_AISystem_01_HackingTimer", FuncInfo);
+
+	Params::WBP_DAT_AISystem_01_HackingTimer_C_ExecuteUbergraph_WBP_DAT_AISystem_01_HackingTimer Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

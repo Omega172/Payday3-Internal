@@ -66,33 +66,33 @@ public:
 	TMulticastInlineDelegate<void(int32 LocationArrayInt)> OnSelectedLocation;                       // 0x0498(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void Active();
-	void BndEvt__Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__NewVar_2_K2Node_ComponentBoundEvent_1_SBZOnBinaryStateChanged__DelegateSignature(class ASBZBinaryStateNode* BinaryStateNode, bool bState);
-	void BndEvt__SBZShoutTarget_K2Node_ComponentBoundEvent_2_SBZShoutedAtDelegate__DelegateSignature(class USBZShoutTargetComponent* ShoutTarget, class APawn* Shouter);
-	void Custom();
-	void Done();
-	void EnableInteractionAfterInterrupt();
-	void ExecuteUbergraph_BP_HackableComputer(int32 EntryPoint);
-	void Fail();
-	void GenericDoneFunction();
-	void Interrupt();
-	void KeyCodesFunction();
-	void KeyCodesShoutTarget();
-	void NameInfoFunction();
-	void NameInfoShoutTarget();
-	void NotActive();
-	void OnRep_CountdownTimer();
-	void OnRep_RandomHRName();
-	void OnRep_States();
-	void OnRep_TimeCountSecs();
-	void Progressing();
-	void ReceiveBeginPlay();
-	void ReceiveTick(float DeltaSeconds);
-	void Reset(double TimeToHack_0, const class FText& CurrentProcess_0, Enum_HackingResultOnDone ResultOnDone_0);
-	void SetAllWidgetTimers();
-	void SetTings();
 	void Timer();
+	void SetTings();
+	void SetAllWidgetTimers();
+	void Reset(double TimeToHack, const class FText& CurrentProcess, Enum_HackingResultOnDone ResultOnDone);
+	void ReceiveTick(float DeltaSeconds_ReceiveTick);
+	void ReceiveBeginPlay();
+	void Progressing();
+	void OnRep_TimeCountSecs();
+	void OnRep_States();
+	void OnRep_RandomHRName();
+	void OnRep_CountdownTimer();
+	void NotActive();
+	void NameInfoShoutTarget();
+	void NameInfoFunction();
+	void KeyCodesShoutTarget();
+	void KeyCodesFunction();
+	void Interrupt();
+	void GenericDoneFunction();
+	void Fail();
+	void ExecuteUbergraph_BP_HackableComputer(int32 EntryPoint);
+	void EnableInteractionAfterInterrupt();
+	void Done();
+	void Custom();
+	void BndEvt__SBZShoutTarget_K2Node_ComponentBoundEvent_2_SBZShoutedAtDelegate__DelegateSignature(class USBZShoutTargetComponent* ShoutTarget, class APawn* Shouter);
+	void BndEvt__NewVar_2_K2Node_ComponentBoundEvent_1_SBZOnBinaryStateChanged__DelegateSignature(class ASBZBinaryStateNode* BinaryStateNode, bool bState);
+	void BndEvt__Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void Active();
 
 public:
 	static class UClass* StaticClass()
@@ -108,5 +108,6 @@ public:
 		return GetDefaultObjImpl<ABP_HackableComputer_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_HackableComputer_C;
 
 SDK_NAMESPACE_END

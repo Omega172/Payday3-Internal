@@ -35,21 +35,21 @@ public:
 	double                                        openAngle;                                         // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_HackableInfoComputer_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_HackableInfoComputer_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BP_GainedAccess();
-	void BP_OnHackingInfoDone_1();
-	void BP_OnHackingStarted(const class FText& ProcessText);
-	void BP_OnStateChanged(ESBZHackableActorState OldState, ESBZHackableActorState NewState);
-	void BP_UpdateProgressBar(int32 ProgressDone);
-	void ExecuteUbergraph_BP_HackableTrainDoorPanel(int32 EntryPoint);
-	void ReceiveBeginPlay();
-	void Timeline_0__FinishedFunc();
 	void Timeline_0__UpdateFunc();
+	void Timeline_0__FinishedFunc();
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_HackableTrainDoorPanel(int32 EntryPoint);
+	void BP_UpdateProgressBar(int32 ProgressDone_BP_UpdateProgressBar);
+	void BP_OnStateChanged(ESBZHackableActorState OldState_BP_OnStateChanged, ESBZHackableActorState NewState_BP_OnStateChanged);
+	void BP_OnHackingStarted(const class FText& ProcessText_BP_OnHackingStarted);
+	void BP_OnHackingInfoDone_1();
+	void BP_GainedAccess();
+	void BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_HackableInfoComputer_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_HackableInfoComputer_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
+	bool VisionPredicate(const class AActor* Viewer_VisionPredicate) const;
 	struct FVector GetMarkerLocation() const;
-	bool VisionPredicate(const class AActor* Viewer) const;
 
 public:
 	static class UClass* StaticClass()
@@ -65,5 +65,6 @@ public:
 		return GetDefaultObjImpl<ABP_HackableTrainDoorPanel_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_HackableTrainDoorPanel_C;
 
 SDK_NAMESPACE_END

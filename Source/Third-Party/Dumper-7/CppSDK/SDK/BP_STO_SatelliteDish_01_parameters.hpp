@@ -19,73 +19,73 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.BndEvt__BP_STO_SatelliteDish_01_FirstPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_10_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_STO_SatelliteDish_01_C_BndEvt__BP_STO_SatelliteDish_01_FirstPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_10_SBZOnInteraction__DelegateSignature final
+// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.SetMarker
+// 0x0090 (0x0090 - 0x0000)
+struct BP_STO_SatelliteDish_01_C_SetMarker final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class USBZMarkerDataAsset*              MarkerDataAsset;                                   // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          aboveAsset;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        Temp_real_Variable;                                // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0020(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Temp_real_Variable_1;                              // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        K2Node_Select_Default;                             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0058(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0070(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_AddLocalMarker_ReturnValue;               // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_STO_SatelliteDish_01_C_SetMarker;
 
-// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.BndEvt__BP_STO_SatelliteDish_01_FirstPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct BP_STO_SatelliteDish_01_C_BndEvt__BP_STO_SatelliteDish_01_FirstPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature final
+// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.Set Interactable and Visible
+// 0x0001 (0x0001 - 0x0000)
+struct BP_STO_SatelliteDish_01_C_Set_Interactable_and_Visible final
 {
 public:
-	const class USBZBaseInteractableComponent*    InteractableComponent_0;                           // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInNewState;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_STO_SatelliteDish_01_C_Set_Interactable_and_Visible;
 
-// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.BndEvt__BP_STO_SatelliteDish_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_STO_SatelliteDish_01_C_BndEvt__BP_STO_SatelliteDish_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
+// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.onSabotagedBP
+// 0x0001 (0x0001 - 0x0000)
+struct BP_STO_SatelliteDish_01_C_onSabotagedBP final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_STO_SatelliteDish_01_C_onSabotagedBP;
 
-// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.BndEvt__BP_STO_SatelliteDish_01_placemenetIntState_K2Node_ComponentBoundEvent_5_SBZIntStateChangedSignature__DelegateSignature
-// 0x000C (0x000C - 0x0000)
-struct BP_STO_SatelliteDish_01_C_BndEvt__BP_STO_SatelliteDish_01_placemenetIntState_K2Node_ComponentBoundEvent_5_SBZIntStateChangedSignature__DelegateSignature final
+// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.GetMarkerText
+// 0x00C8 (0x00C8 - 0x0000)
+struct BP_STO_SatelliteDish_01_C_GetMarkerText final
 {
 public:
-	int32                                         OldState;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         NewState;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   ReturnValue_GetMarkerText;                         // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
+	ESBZSabotagePointState                        Temp_byte_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable;                                // 0x0018(0x0010)()
+	class FText                                   Temp_text_Variable_1;                              // 0x0028(0x0010)()
+	class FText                                   Temp_text_Variable_2;                              // 0x0038(0x0010)()
+	bool                                          Temp_bool_Variable;                                // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable;                                 // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Temp_text_Variable_3;                              // 0x0050(0x0010)()
+	class FText                                   Temp_text_Variable_4;                              // 0x0060(0x0010)()
+	class FText                                   Temp_text_Variable_5;                              // 0x0070(0x0010)()
+	class FText                                   Temp_text_Variable_6;                              // 0x0080(0x0010)()
+	class FText                                   K2Node_Select_Default;                             // 0x0090(0x0010)()
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_Select_Default_1;                           // 0x00A8(0x0010)()
+	class FText                                   K2Node_Select_Default_2;                           // 0x00B8(0x0010)()
 };
-
-// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.BndEvt__BP_STO_SatelliteDish_01_SecondtPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_11_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_STO_SatelliteDish_01_C_BndEvt__BP_STO_SatelliteDish_01_SecondtPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_11_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.BndEvt__BP_STO_SatelliteDish_01_SecondtPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct BP_STO_SatelliteDish_01_C_BndEvt__BP_STO_SatelliteDish_01_SecondtPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature final
-{
-public:
-	const class USBZBaseInteractableComponent*    InteractableComponent_0;                           // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInNewState;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.BP_StateChanged
-// 0x0003 (0x0003 - 0x0000)
-struct BP_STO_SatelliteDish_01_C_BP_StateChanged final
-{
-public:
-	ESBZSabotagePointState                        OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZSabotagePointState                        NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_STO_SatelliteDish_01_C_GetMarkerText;
 
 // Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.ExecuteUbergraph_BP_STO_SatelliteDish_01
 // 0x0338 (0x0338 - 0x0000)
@@ -157,70 +157,82 @@ public:
 	int32                                         CallFunc_PostAkEvent_ReturnValue_1;                // 0x022C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult_1;  // 0x0230(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
+DUMPER7_ASSERTS_BP_STO_SatelliteDish_01_C_ExecuteUbergraph_BP_STO_SatelliteDish_01;
 
-// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.GetMarkerText
-// 0x00C8 (0x00C8 - 0x0000)
-struct BP_STO_SatelliteDish_01_C_GetMarkerText final
+// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.BP_StateChanged
+// 0x0003 (0x0003 - 0x0000)
+struct BP_STO_SatelliteDish_01_C_BP_StateChanged final
 {
 public:
-	class FText                                   ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
-	ESBZSabotagePointState                        Temp_byte_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable;                                // 0x0018(0x0010)()
-	class FText                                   Temp_text_Variable_1;                              // 0x0028(0x0010)()
-	class FText                                   Temp_text_Variable_2;                              // 0x0038(0x0010)()
-	bool                                          Temp_bool_Variable;                                // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable;                                 // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   Temp_text_Variable_3;                              // 0x0050(0x0010)()
-	class FText                                   Temp_text_Variable_4;                              // 0x0060(0x0010)()
-	class FText                                   Temp_text_Variable_5;                              // 0x0070(0x0010)()
-	class FText                                   Temp_text_Variable_6;                              // 0x0080(0x0010)()
-	class FText                                   K2Node_Select_Default;                             // 0x0090(0x0010)()
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select_Default_1;                           // 0x00A8(0x0010)()
-	class FText                                   K2Node_Select_Default_2;                           // 0x00B8(0x0010)()
+	ESBZSabotagePointState                        OldState_BP_StateChanged;                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZSabotagePointState                        NewState_BP_StateChanged;                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_BP_StateChanged;                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_STO_SatelliteDish_01_C_BP_StateChanged;
 
-// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.onSabotagedBP
-// 0x0001 (0x0001 - 0x0000)
-struct BP_STO_SatelliteDish_01_C_onSabotagedBP final
+// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.BndEvt__BP_STO_SatelliteDish_01_SecondtPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct BP_STO_SatelliteDish_01_C_BndEvt__BP_STO_SatelliteDish_01_SecondtPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature final
 {
 public:
-	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class USBZBaseInteractableComponent*    InteractableComponent;                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInNewState;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_STO_SatelliteDish_01_C_BndEvt__BP_STO_SatelliteDish_01_SecondtPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature;
 
-// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.Set Interactable and Visible
-// 0x0001 (0x0001 - 0x0000)
-struct BP_STO_SatelliteDish_01_C_Set_Interactable_and_Visible final
+// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.BndEvt__BP_STO_SatelliteDish_01_SecondtPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_11_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_STO_SatelliteDish_01_C_BndEvt__BP_STO_SatelliteDish_01_SecondtPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_11_SBZOnInteraction__DelegateSignature final
 {
 public:
-	bool                                          Enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_STO_SatelliteDish_01_C_BndEvt__BP_STO_SatelliteDish_01_SecondtPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_11_SBZOnInteraction__DelegateSignature;
 
-// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.SetMarker
-// 0x0090 (0x0090 - 0x0000)
-struct BP_STO_SatelliteDish_01_C_SetMarker final
+// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.BndEvt__BP_STO_SatelliteDish_01_placemenetIntState_K2Node_ComponentBoundEvent_5_SBZIntStateChangedSignature__DelegateSignature
+// 0x000C (0x000C - 0x0000)
+struct BP_STO_SatelliteDish_01_C_BndEvt__BP_STO_SatelliteDish_01_placemenetIntState_K2Node_ComponentBoundEvent_5_SBZIntStateChangedSignature__DelegateSignature final
 {
 public:
-	const class USBZMarkerDataAsset*              MarkerDataAsset;                                   // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          aboveAsset;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        Temp_real_Variable;                                // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0020(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        Temp_real_Variable_1;                              // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        K2Node_Select_Default;                             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0058(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0070(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_AddLocalMarker_ReturnValue;               // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         OldState;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewState;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_STO_SatelliteDish_01_C_BndEvt__BP_STO_SatelliteDish_01_placemenetIntState_K2Node_ComponentBoundEvent_5_SBZIntStateChangedSignature__DelegateSignature;
+
+// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.BndEvt__BP_STO_SatelliteDish_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_STO_SatelliteDish_01_C_BndEvt__BP_STO_SatelliteDish_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_STO_SatelliteDish_01_C_BndEvt__BP_STO_SatelliteDish_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature;
+
+// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.BndEvt__BP_STO_SatelliteDish_01_FirstPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct BP_STO_SatelliteDish_01_C_BndEvt__BP_STO_SatelliteDish_01_FirstPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature final
+{
+public:
+	const class USBZBaseInteractableComponent*    InteractableComponent;                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInNewState;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_STO_SatelliteDish_01_C_BndEvt__BP_STO_SatelliteDish_01_FirstPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature;
+
+// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.BndEvt__BP_STO_SatelliteDish_01_FirstPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_10_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_STO_SatelliteDish_01_C_BndEvt__BP_STO_SatelliteDish_01_FirstPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_10_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_STO_SatelliteDish_01_C_BndEvt__BP_STO_SatelliteDish_01_FirstPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_10_SBZOnInteraction__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

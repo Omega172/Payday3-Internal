@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AG_FirstPlayable_NavLinks_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_FirstPlayable_NavLinks_C;
 
 SDK_NAMESPACE_END

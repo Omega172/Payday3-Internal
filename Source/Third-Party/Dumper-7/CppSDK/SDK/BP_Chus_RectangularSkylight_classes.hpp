@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "BP_BaseSkylight_classes.hpp"
 #include "AkAudio_structs.hpp"
+#include "BP_BaseSkylight_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -39,10 +39,10 @@ public:
 	class UNiagaraSystem*                         RainImpactFX;                                      // 0x04A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_Chus_RectangularSkylight_PropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
-	void ExecuteUbergraph_BP_Chus_RectangularSkylight(int32 EntryPoint);
-	void ReceiveBeginPlay();
 	void UserConstructionScript();
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_Chus_RectangularSkylight(int32 EntryPoint);
+	void BndEvt__BP_Chus_RectangularSkylight_PropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
 
 public:
 	static class UClass* StaticClass()
@@ -58,5 +58,6 @@ public:
 		return GetDefaultObjImpl<ABP_Chus_RectangularSkylight_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Chus_RectangularSkylight_C;
 
 SDK_NAMESPACE_END

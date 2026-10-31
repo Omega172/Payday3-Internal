@@ -56,16 +56,16 @@ public:
 	class ABP_NavLink_Agility_C*                  BP_NavLink_Agility99_ExecuteUbergraph_G_Stonk_Navlinks_RefProperty; // 0x04C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak2_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak3_K2Node_ActorBoundEvent_3_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak4_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak5_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak6_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak7_K2Node_ActorBoundEvent_7_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void ExecuteUbergraph_G_Stonk_Navlinks(int32 EntryPoint);
-	void HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState);
 	void PPZiplineDestroyWindows();
+	void HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged);
+	void ExecuteUbergraph_G_Stonk_Navlinks(int32 EntryPoint);
+	void BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak7_K2Node_ActorBoundEvent_7_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak6_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak5_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak4_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak3_K2Node_ActorBoundEvent_3_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_Stonk_Navlinks_SBZFilteredTriggerVolume_GlassBreak2_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
 
 public:
 	static class UClass* StaticClass()
@@ -81,5 +81,6 @@ public:
 		return GetDefaultObjImpl<AG_Stonk_Navlinks_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_Stonk_Navlinks_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AE_Fort_INT_F1_Arch_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_Fort_INT_F1_Arch_C;
 
 SDK_NAMESPACE_END

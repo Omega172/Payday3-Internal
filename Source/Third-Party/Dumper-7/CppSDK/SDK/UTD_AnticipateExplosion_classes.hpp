@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UUTD_AnticipateExplosion_C>();
 	}
 };
+DUMPER7_ASSERTS_UUTD_AnticipateExplosion_C;
 
 SDK_NAMESPACE_END

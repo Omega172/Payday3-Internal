@@ -16,65 +16,63 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_IW_BRE_ATT.BP_IW_BRE_ATT_C.BndEvt__SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// class UActorComponent*                  PoolComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   Hits                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZPropDamageContext&     DamageContext                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// Function BP_IW_BRE_ATT.BP_IW_BRE_ATT_C.Open__UpdateFunc
+// (BlueprintEvent)
 
-void ABP_IW_BRE_ATT_C::BndEvt__SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
+void ABP_IW_BRE_ATT_C::Open__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Open__UpdateFunc", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_IW_BRE_ATT_C", "BndEvt__SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_IW_BRE_ATT_C_BndEvt__SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature Parms{};
 
-	Parms.PoolComponent = PoolComponent;
-	Parms.Hits = Hits;
-	Parms.bDoCosmetics = bDoCosmetics;
-	Parms.DamageContext = std::move(DamageContext);
+// Function BP_IW_BRE_ATT.BP_IW_BRE_ATT_C.Open__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_IW_BRE_ATT_C::Open__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Open__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_IW_BRE_ATT.BP_IW_BRE_ATT_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZGateState                           OldState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           NewState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsInitialStateChange_OnStateChanged                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_IW_BRE_ATT_C::OnStateChanged(ESBZGateState OldState_OnStateChanged, ESBZGateState NewState_OnStateChanged, bool bIsInitialStateChange_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_IW_BRE_ATT_C_OnStateChanged Parms{};
+
+	Parms.OldState_OnStateChanged = OldState_OnStateChanged;
+	Parms.NewState_OnStateChanged = NewState_OnStateChanged;
+	Parms.bIsInitialStateChange_OnStateChanged = bIsInitialStateChange_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_IW_BRE_ATT.BP_IW_BRE_ATT_C.ExecuteUbergraph_BP_IW_BRE_ATT
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_IW_BRE_ATT_C::ExecuteUbergraph_BP_IW_BRE_ATT(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_IW_BRE_ATT_C", "ExecuteUbergraph_BP_IW_BRE_ATT");
-
-	Params::BP_IW_BRE_ATT_C_ExecuteUbergraph_BP_IW_BRE_ATT Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_IW_BRE_ATT.BP_IW_BRE_ATT_C.GetCuttableComponent
+// Function BP_IW_BRE_ATT.BP_IW_BRE_ATT_C.GetNiagaraComponent
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZCuttableComponent*            ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UNiagaraComponent*                ReturnValue_GetNiagaraComponent                        (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-class USBZCuttableComponent* ABP_IW_BRE_ATT_C::GetCuttableComponent()
+class UNiagaraComponent* ABP_IW_BRE_ATT_C::GetNiagaraComponent()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetNiagaraComponent", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_IW_BRE_ATT_C", "GetCuttableComponent");
-
-	Params::BP_IW_BRE_ATT_C_GetCuttableComponent Parms{};
+	Params::BP_IW_BRE_ATT_C_GetNiagaraComponent Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -82,19 +80,17 @@ class USBZCuttableComponent* ABP_IW_BRE_ATT_C::GetCuttableComponent()
 }
 
 
-// Function BP_IW_BRE_ATT.BP_IW_BRE_ATT_C.GetCuttableSplineComponent
+// Function BP_IW_BRE_ATT.BP_IW_BRE_ATT_C.GetMeltingMesh
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZCuttableSplineComponent*      ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UStaticMeshComponent*             ReturnValue_GetMeltingMesh                             (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-class USBZCuttableSplineComponent* ABP_IW_BRE_ATT_C::GetCuttableSplineComponent()
+class UStaticMeshComponent* ABP_IW_BRE_ATT_C::GetMeltingMesh()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetMeltingMesh", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_IW_BRE_ATT_C", "GetCuttableSplineComponent");
-
-	Params::BP_IW_BRE_ATT_C_GetCuttableSplineComponent Parms{};
+	Params::BP_IW_BRE_ATT_C_GetMeltingMesh Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -107,28 +103,24 @@ class USBZCuttableSplineComponent* ABP_IW_BRE_ATT_C::GetCuttableSplineComponent(
 
 void ABP_IW_BRE_ATT_C::GetMaterialBillboardComponent()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_IW_BRE_ATT_C", "GetMaterialBillboardComponent");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetMaterialBillboardComponent", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_IW_BRE_ATT.BP_IW_BRE_ATT_C.GetMeltingMesh
+// Function BP_IW_BRE_ATT.BP_IW_BRE_ATT_C.GetCuttableSplineComponent
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UStaticMeshComponent*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZCuttableSplineComponent*      ReturnValue_GetCuttableSplineComponent                 (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-class UStaticMeshComponent* ABP_IW_BRE_ATT_C::GetMeltingMesh()
+class USBZCuttableSplineComponent* ABP_IW_BRE_ATT_C::GetCuttableSplineComponent()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetCuttableSplineComponent", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_IW_BRE_ATT_C", "GetMeltingMesh");
-
-	Params::BP_IW_BRE_ATT_C_GetMeltingMesh Parms{};
+	Params::BP_IW_BRE_ATT_C_GetCuttableSplineComponent Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -136,19 +128,17 @@ class UStaticMeshComponent* ABP_IW_BRE_ATT_C::GetMeltingMesh()
 }
 
 
-// Function BP_IW_BRE_ATT.BP_IW_BRE_ATT_C.GetNiagaraComponent
+// Function BP_IW_BRE_ATT.BP_IW_BRE_ATT_C.GetCuttableComponent
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UNiagaraComponent*                ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZCuttableComponent*            ReturnValue_GetCuttableComponent                       (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-class UNiagaraComponent* ABP_IW_BRE_ATT_C::GetNiagaraComponent()
+class USBZCuttableComponent* ABP_IW_BRE_ATT_C::GetCuttableComponent()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetCuttableComponent", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_IW_BRE_ATT_C", "GetNiagaraComponent");
-
-	Params::BP_IW_BRE_ATT_C_GetNiagaraComponent Parms{};
+	Params::BP_IW_BRE_ATT_C_GetCuttableComponent Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -156,55 +146,45 @@ class UNiagaraComponent* ABP_IW_BRE_ATT_C::GetNiagaraComponent()
 }
 
 
-// Function BP_IW_BRE_ATT.BP_IW_BRE_ATT_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
+// Function BP_IW_BRE_ATT.BP_IW_BRE_ATT_C.ExecuteUbergraph_BP_IW_BRE_ATT
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsInitialStateChange                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_IW_BRE_ATT_C::OnStateChanged(ESBZGateState OldState, ESBZGateState NewState, bool bIsInitialStateChange)
+void ABP_IW_BRE_ATT_C::ExecuteUbergraph_BP_IW_BRE_ATT(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_IW_BRE_ATT_C", "ExecuteUbergraph_BP_IW_BRE_ATT", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_IW_BRE_ATT_C", "OnStateChanged");
+	Params::BP_IW_BRE_ATT_C_ExecuteUbergraph_BP_IW_BRE_ATT Parms{};
 
-	Params::BP_IW_BRE_ATT_C_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bIsInitialStateChange = bIsInitialStateChange;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_IW_BRE_ATT.BP_IW_BRE_ATT_C.Open__FinishedFunc
-// (BlueprintEvent)
+// Function BP_IW_BRE_ATT.BP_IW_BRE_ATT_C.BndEvt__SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// class UActorComponent*                  PoolComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   Hits                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZPropDamageContext&     DamageContext                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 
-void ABP_IW_BRE_ATT_C::Open__FinishedFunc()
+void ABP_IW_BRE_ATT_C::BndEvt__SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_IW_BRE_ATT_C", "Open__FinishedFunc");
+	Params::BP_IW_BRE_ATT_C_BndEvt__SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Parms.PoolComponent = PoolComponent;
+	Parms.Hits = Hits;
+	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.DamageContext = std::move(DamageContext);
 
-
-// Function BP_IW_BRE_ATT.BP_IW_BRE_ATT_C.Open__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_IW_BRE_ATT_C::Open__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_IW_BRE_ATT_C", "Open__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

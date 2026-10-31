@@ -16,25 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ValidatedBackItemBag.BP_ValidatedBackItemBag_C.BP_AdjustAttachment
-// (Event, Protected, HasOutParams, BlueprintEvent)
+// Function BP_ValidatedBackItemBag.BP_ValidatedBackItemBag_C.ExecuteUbergraph_BP_ValidatedBackItemBag
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewCount                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FTransform&                NewStrapTransformOffset                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ValidatedBackItemBag_C::BP_AdjustAttachment(int32 Index_0, int32 NewCount, const struct FTransform& NewStrapTransformOffset)
+void ABP_ValidatedBackItemBag_C::ExecuteUbergraph_BP_ValidatedBackItemBag(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ValidatedBackItemBag_C", "ExecuteUbergraph_BP_ValidatedBackItemBag", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ValidatedBackItemBag_C", "BP_AdjustAttachment");
+	Params::BP_ValidatedBackItemBag_C_ExecuteUbergraph_BP_ValidatedBackItemBag Parms{};
 
-	Params::BP_ValidatedBackItemBag_C_BP_AdjustAttachment Parms{};
-
-	Parms.Index_0 = Index_0;
-	Parms.NewCount = NewCount;
-	Parms.NewStrapTransformOffset = std::move(NewStrapTransformOffset);
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -43,38 +37,38 @@ void ABP_ValidatedBackItemBag_C::BP_AdjustAttachment(int32 Index_0, int32 NewCou
 // Function BP_ValidatedBackItemBag.BP_ValidatedBackItemBag_C.BP_AttachmentComplete
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// class USkeletalMeshComponent*           ParentSkeletalMeshComponent                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USkeletalMeshComponent*           ParentSkeletalMeshComponent_BP_AttachmentComplete      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ValidatedBackItemBag_C::BP_AttachmentComplete(class USkeletalMeshComponent* ParentSkeletalMeshComponent)
+void ABP_ValidatedBackItemBag_C::BP_AttachmentComplete(class USkeletalMeshComponent* ParentSkeletalMeshComponent_BP_AttachmentComplete)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ValidatedBackItemBag_C", "BP_AttachmentComplete");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_AttachmentComplete", FnName));
 
 	Params::BP_ValidatedBackItemBag_C_BP_AttachmentComplete Parms{};
 
-	Parms.ParentSkeletalMeshComponent = ParentSkeletalMeshComponent;
+	Parms.ParentSkeletalMeshComponent_BP_AttachmentComplete = ParentSkeletalMeshComponent_BP_AttachmentComplete;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_ValidatedBackItemBag.BP_ValidatedBackItemBag_C.ExecuteUbergraph_BP_ValidatedBackItemBag
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_ValidatedBackItemBag.BP_ValidatedBackItemBag_C.BP_AdjustAttachment
+// (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Index_BP_AdjustAttachment                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewCount_BP_AdjustAttachment                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FTransform&                NewStrapTransformOffset_BP_AdjustAttachment            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ValidatedBackItemBag_C::ExecuteUbergraph_BP_ValidatedBackItemBag(int32 EntryPoint)
+void ABP_ValidatedBackItemBag_C::BP_AdjustAttachment(int32 Index_BP_AdjustAttachment, int32 NewCount_BP_AdjustAttachment, const struct FTransform& NewStrapTransformOffset_BP_AdjustAttachment)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_AdjustAttachment", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ValidatedBackItemBag_C", "ExecuteUbergraph_BP_ValidatedBackItemBag");
+	Params::BP_ValidatedBackItemBag_C_BP_AdjustAttachment Parms{};
 
-	Params::BP_ValidatedBackItemBag_C_ExecuteUbergraph_BP_ValidatedBackItemBag Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Index_BP_AdjustAttachment = Index_BP_AdjustAttachment;
+	Parms.NewCount_BP_AdjustAttachment = NewCount_BP_AdjustAttachment;
+	Parms.NewStrapTransformOffset_BP_AdjustAttachment = std::move(NewStrapTransformOffset_BP_AdjustAttachment);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

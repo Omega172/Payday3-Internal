@@ -61,13 +61,13 @@ using namespace UC;
 */
 namespace Offsets
 {
-	constexpr int32 GObjects             = 0x091B5020;
-	constexpr int32 AppendString         = 0x010E8A60;
-	constexpr int32 GNames               = 0x090E1A80;
-	constexpr int32 GWorld               = 0x09349538;
-	constexpr int32 ProcessEvent         = 0x012CB2B4;
+	constexpr int32 GObjects             = 0x091B8020;
+	constexpr int32 AppendString         = 0x010E8B10;
+	constexpr int32 GNames               = 0x090E4A80;
+	constexpr int32 GWorld               = 0x0934C538;
+	constexpr int32 ProcessEvent         = 0x012CB3B4;
 	constexpr int32 ProcessEventIdx      = 0x00000050;
-	constexpr int32 FindFunctionChecked  = 0x012C3D84;
+	constexpr int32 FindFunctionChecked  = 0x012C3E84;
 }
 
 // Forward declarations because in-line forward declarations make the compiler think 'GetStaticClass()' is a class template

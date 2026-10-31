@@ -17,18 +17,18 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_HeistGameState.BP_HeistGameState_C
-// 0x0020 (0x1630 - 0x1610)
-class ABP_HeistGameState_C : public APD3HeistGameState
+// 0x0020 (0x16C8 - 0x16A8)
+class ABP_HeistGameState_C final : public APD3HeistGameState
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1610(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UPostProcessComponent*                  UI_Vignette;                                       // 0x1618(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UPostProcessComponent*                  OutlinePostProcess;                                // 0x1620(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x1628(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x16A8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UPostProcessComponent*                  UI_Vignette;                                       // 0x16B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPostProcessComponent*                  OutlinePostProcess;                                // 0x16B8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x16C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnHideAllOutlinesChanged(bool bIsHidden);
 	void ExecuteUbergraph_BP_HeistGameState(int32 EntryPoint);
+	void BP_OnHideAllOutlinesChanged(bool bIsHidden_BP_OnHideAllOutlinesChanged);
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<ABP_HeistGameState_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_HeistGameState_C;
 
 SDK_NAMESPACE_END

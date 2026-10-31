@@ -31,10 +31,10 @@ public:
 	bool                                          Indicator_as_dynamic_light;                        // 0x035C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_DoorAlarm(int32 EntryPoint);
-	void ReceiveBeginPlay();
-	void SetIndicatorLightStateByInt(int32 _Disable);
 	void UserConstructionScript();
+	void SetIndicatorLightStateByInt(int32 _Disable);
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_DoorAlarm(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -50,5 +50,6 @@ public:
 		return GetDefaultObjImpl<ABP_DoorAlarm_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DoorAlarm_C;
 
 SDK_NAMESPACE_END

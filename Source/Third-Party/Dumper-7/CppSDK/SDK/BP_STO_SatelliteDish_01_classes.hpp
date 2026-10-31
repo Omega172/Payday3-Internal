@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "BP_BaseSabotagePoint_classes.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Engine_structs.hpp"
 #include "AkAudio_structs.hpp"
+#include "BP_BaseSabotagePoint_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -45,22 +45,22 @@ public:
 	ESBZSabotagePointState                        sabotageState;                                     // 0x04D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_STO_SatelliteDish_01_FirstPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_10_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_STO_SatelliteDish_01_FirstPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent_0, bool bInNewState);
-	void BndEvt__BP_STO_SatelliteDish_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_STO_SatelliteDish_01_placemenetIntState_K2Node_ComponentBoundEvent_5_SBZIntStateChangedSignature__DelegateSignature(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void BndEvt__BP_STO_SatelliteDish_01_SecondtPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_11_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_STO_SatelliteDish_01_SecondtPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent_0, bool bInNewState);
-	void BndEvt__BP_STO_WirlessCraneController_01_crane_K2Node_ComponentBoundEvent_3_SBZTimerDelegate__DelegateSignature();
-	void BP_StateChanged(ESBZSabotagePointState OldState, ESBZSabotagePointState NewState, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_STO_SatelliteDish_01(int32 EntryPoint);
-	class FText GetMarkerText();
-	void onSabotagedBP(bool bSabotaged);
-	void Open__FinishedFunc();
-	void Open__UpdateFunc();
-	void ReceiveBeginPlay();
-	void Set_Interactable_and_Visible(bool Enabled);
 	void SetMarker(const class USBZMarkerDataAsset* MarkerDataAsset, bool aboveAsset);
+	void Set_Interactable_and_Visible(bool Enabled);
+	void ReceiveBeginPlay();
+	void Open__UpdateFunc();
+	void Open__FinishedFunc();
+	void onSabotagedBP(bool bSabotaged);
+	class FText GetMarkerText();
+	void ExecuteUbergraph_BP_STO_SatelliteDish_01(int32 EntryPoint);
+	void BP_StateChanged(ESBZSabotagePointState OldState_BP_StateChanged, ESBZSabotagePointState NewState_BP_StateChanged, bool bDoCosmetics_BP_StateChanged);
+	void BndEvt__BP_STO_WirlessCraneController_01_crane_K2Node_ComponentBoundEvent_3_SBZTimerDelegate__DelegateSignature();
+	void BndEvt__BP_STO_SatelliteDish_01_SecondtPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
+	void BndEvt__BP_STO_SatelliteDish_01_SecondtPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_11_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_STO_SatelliteDish_01_placemenetIntState_K2Node_ComponentBoundEvent_5_SBZIntStateChangedSignature__DelegateSignature(int32 OldState, int32 NewState, bool bDoCosmetics);
+	void BndEvt__BP_STO_SatelliteDish_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_STO_SatelliteDish_01_FirstPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
+	void BndEvt__BP_STO_SatelliteDish_01_FirstPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_10_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -76,5 +76,6 @@ public:
 		return GetDefaultObjImpl<ABP_STO_SatelliteDish_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_STO_SatelliteDish_01_C;
 
 SDK_NAMESPACE_END

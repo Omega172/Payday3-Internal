@@ -53,19 +53,19 @@ public:
 	struct FLinearColor                           tint;                                              // 0x0400(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_ATM_02_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
-	void BndEvt__BP_Breakable_ATM_01_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_Breakable_ATM_01_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_Breakable_ATM_01_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent_0, bool bInNewState);
-	void BP_OnStateChanged(ESBZBreakableMachineState OldState, ESBZBreakableMachineState NewState, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_Breakable_ATM_01(int32 EntryPoint);
-	void openBoxes_timeline__FinishedFunc();
-	void openBoxes_timeline__UpdateFunc();
-	void openDoor_timeline__FinishedFunc();
-	void openDoor_timeline__UpdateFunc();
-	void ReceiveBeginPlay();
-	void setOutline(bool enabled, ESBZBreakableMachineState state);
 	void UserConstructionScript();
+	void setOutline(bool enabled, ESBZBreakableMachineState state);
+	void ReceiveBeginPlay();
+	void openDoor_timeline__UpdateFunc();
+	void openDoor_timeline__FinishedFunc();
+	void openBoxes_timeline__UpdateFunc();
+	void openBoxes_timeline__FinishedFunc();
+	void ExecuteUbergraph_BP_Breakable_ATM_01(int32 EntryPoint);
+	void BP_OnStateChanged(ESBZBreakableMachineState OldState_BP_OnStateChanged, ESBZBreakableMachineState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged);
+	void BndEvt__BP_Breakable_ATM_01_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
+	void BndEvt__BP_Breakable_ATM_01_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_Breakable_ATM_01_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_ATM_02_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 
 public:
 	static class UClass* StaticClass()
@@ -81,5 +81,6 @@ public:
 		return GetDefaultObjImpl<ABP_Breakable_ATM_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Breakable_ATM_01_C;
 
 SDK_NAMESPACE_END

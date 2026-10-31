@@ -53,16 +53,16 @@ public:
 	TArray<double>                                CPDs;                                              // 0x0420(0x0010)(Edit, BlueprintVisible)
 
 public:
-	void BndEvt__BP_LootContainerBase_currentVariation_SBZIntState_K2Node_ComponentBoundEvent_1_SBZIntStateChangedSignature__DelegateSignature(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void BndEvt__BP_LootContainerBase_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_LootContainerBase(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void setIndex(int32 index);
-	void setInteraction(bool enabled);
-	void setLoot(bool enabled);
-	void setMesh(int32 index);
 	void UserConstructionScript();
+	void setMesh(int32 index);
+	void setLoot(bool enabled);
+	void setInteraction(bool enabled);
+	void setIndex(int32 index);
+	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
+	void ExecuteUbergraph_BP_LootContainerBase(int32 EntryPoint);
+	void BndEvt__BP_TeddyMoo_pickup_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_LootContainerBase_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_LootContainerBase_currentVariation_SBZIntState_K2Node_ComponentBoundEvent_1_SBZIntStateChangedSignature__DelegateSignature(int32 OldState, int32 NewState, bool bDoCosmetics);
 
 public:
 	static class UClass* StaticClass()
@@ -78,5 +78,6 @@ public:
 		return GetDefaultObjImpl<ABP_LootContainerBase_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LootContainerBase_C;
 
 SDK_NAMESPACE_END

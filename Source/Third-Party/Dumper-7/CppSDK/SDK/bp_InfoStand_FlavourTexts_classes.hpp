@@ -49,5 +49,6 @@ public:
 		return GetDefaultObjImpl<Abp_InfoStand_FlavourTexts_C>();
 	}
 };
+DUMPER7_ASSERTS_Abp_InfoStand_FlavourTexts_C;
 
 SDK_NAMESPACE_END

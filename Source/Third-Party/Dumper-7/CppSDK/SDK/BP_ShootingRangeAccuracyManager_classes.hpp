@@ -47,19 +47,19 @@ public:
 	class ABP_ShootingRangeAccuracyTarget_C*      MovingTarget;                                      // 0x03D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_ShootingRangeAccuracyManager_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_ShootingRangeAccuracyManager(int32 EntryPoint);
-	void MoveMovingTarget__FinishedFunc();
-	void MoveMovingTarget__UpdateFunc();
-	void MULTI_AddScore(int32 Score_0);
-	void MULTI_CountDeciseconds();
-	void MULTI_CountSeconds();
-	void ReceiveBeginPlay();
-	void SERVER_ResetChallenge();
-	void SERVER_RunDeciseconds();
-	void SERVER_RunSeconds();
-	void SERVER_StartChallenge();
 	void UserConstructionScript();
+	void SERVER_StartChallenge();
+	void SERVER_RunSeconds();
+	void SERVER_RunDeciseconds();
+	void SERVER_ResetChallenge();
+	void ReceiveBeginPlay();
+	void MULTI_CountSeconds();
+	void MULTI_CountDeciseconds();
+	void MULTI_AddScore(int32 Score);
+	void MoveMovingTarget__UpdateFunc();
+	void MoveMovingTarget__FinishedFunc();
+	void ExecuteUbergraph_BP_ShootingRangeAccuracyManager(int32 EntryPoint);
+	void BndEvt__BP_ShootingRangeAccuracyManager_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -75,5 +75,6 @@ public:
 		return GetDefaultObjImpl<ABP_ShootingRangeAccuracyManager_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ShootingRangeAccuracyManager_C;
 
 SDK_NAMESPACE_END

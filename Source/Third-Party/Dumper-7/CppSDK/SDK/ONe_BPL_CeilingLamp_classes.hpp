@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<AONe_BPL_CeilingLamp_C>();
 	}
 };
+DUMPER7_ASSERTS_AONe_BPL_CeilingLamp_C;
 
 SDK_NAMESPACE_END

@@ -26,11 +26,11 @@ public:
 	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0350(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_Activate();
-	void BP_Deactivate();
-	void BP_OnReactorStateChanged(ESBZEventReactorState NewState, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_Tablet(int32 EntryPoint);
 	void setGlitching(double isOff, double glitchStep, double glitchSpeed);
+	void ExecuteUbergraph_BP_Tablet(int32 EntryPoint);
+	void BP_OnReactorStateChanged(ESBZEventReactorState NewState_BP_OnReactorStateChanged, bool bDoCosmetics_BP_OnReactorStateChanged);
+	void BP_Deactivate();
+	void BP_Activate();
 
 public:
 	static class UClass* StaticClass()
@@ -46,5 +46,6 @@ public:
 		return GetDefaultObjImpl<ABP_Tablet_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Tablet_C;
 
 SDK_NAMESPACE_END

@@ -16,207 +16,25 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_QOL_SafeCrackMinigame.WBP_QOL_SafeCrackMinigame_C.AxisUpdateTimer
+// Function WBP_QOL_SafeCrackMinigame.WBP_QOL_SafeCrackMinigame_C.UpdateNumberColors
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_QOL_SafeCrackMinigame_C::UpdateNumberColors()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateNumberColors", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_QOL_SafeCrackMinigame.WBP_QOL_SafeCrackMinigame_C.UpdateDirectionHintVisibility
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_QOL_SafeCrackMinigame_C::AxisUpdateTimer()
+void UWBP_QOL_SafeCrackMinigame_C::UpdateDirectionHintVisibility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QOL_SafeCrackMinigame_C", "AxisUpdateTimer");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_QOL_SafeCrackMinigame.WBP_QOL_SafeCrackMinigame_C.BP_OnXAxisChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// float                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_QOL_SafeCrackMinigame_C::BP_OnXAxisChanged(float Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QOL_SafeCrackMinigame_C", "BP_OnXAxisChanged");
-
-	Params::WBP_QOL_SafeCrackMinigame_C_BP_OnXAxisChanged Parms{};
-
-	Parms.Value = Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_QOL_SafeCrackMinigame.WBP_QOL_SafeCrackMinigame_C.ExecuteUbergraph_WBP_QOL_SafeCrackMinigame
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_QOL_SafeCrackMinigame_C::ExecuteUbergraph_WBP_QOL_SafeCrackMinigame(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QOL_SafeCrackMinigame_C", "ExecuteUbergraph_WBP_QOL_SafeCrackMinigame");
-
-	Params::WBP_QOL_SafeCrackMinigame_C_ExecuteUbergraph_WBP_QOL_SafeCrackMinigame Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_QOL_SafeCrackMinigame.WBP_QOL_SafeCrackMinigame_C.GenerateCorrectNumber
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_QOL_SafeCrackMinigame_C::GenerateCorrectNumber()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QOL_SafeCrackMinigame_C", "GenerateCorrectNumber");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_QOL_SafeCrackMinigame.WBP_QOL_SafeCrackMinigame_C.MiniGameStateChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// EPD3MiniGameState                       NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_QOL_SafeCrackMinigame_C::MiniGameStateChanged(EPD3MiniGameState NewState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QOL_SafeCrackMinigame_C", "MiniGameStateChanged");
-
-	Params::WBP_QOL_SafeCrackMinigame_C_MiniGameStateChanged Parms{};
-
-	Parms.NewState = NewState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_QOL_SafeCrackMinigame.WBP_QOL_SafeCrackMinigame_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_QOL_SafeCrackMinigame_C::OnInitialized()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QOL_SafeCrackMinigame_C", "OnInitialized");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_QOL_SafeCrackMinigame.WBP_QOL_SafeCrackMinigame_C.OnMouseAxisInput
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_QOL_SafeCrackMinigame_C::OnMouseAxisInput()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QOL_SafeCrackMinigame_C", "OnMouseAxisInput");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_QOL_SafeCrackMinigame.WBP_QOL_SafeCrackMinigame_C.OnNumberUpdated
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_QOL_SafeCrackMinigame_C::OnNumberUpdated()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QOL_SafeCrackMinigame_C", "OnNumberUpdated");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_QOL_SafeCrackMinigame.WBP_QOL_SafeCrackMinigame_C.OnOwningMiniGameComponent
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class USBZMiniGameComponent*            MiniGameComponet                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_QOL_SafeCrackMinigame_C::OnOwningMiniGameComponent(class USBZMiniGameComponent* MiniGameComponet)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QOL_SafeCrackMinigame_C", "OnOwningMiniGameComponent");
-
-	Params::WBP_QOL_SafeCrackMinigame_C_OnOwningMiniGameComponent Parms{};
-
-	Parms.MiniGameComponet = MiniGameComponet;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_QOL_SafeCrackMinigame.WBP_QOL_SafeCrackMinigame_C.OnSelectNumber
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_QOL_SafeCrackMinigame_C::OnSelectNumber()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QOL_SafeCrackMinigame_C", "OnSelectNumber");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_QOL_SafeCrackMinigame.WBP_QOL_SafeCrackMinigame_C.OnSubmitInput
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_QOL_SafeCrackMinigame_C::OnSubmitInput()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QOL_SafeCrackMinigame_C", "OnSubmitInput");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_QOL_SafeCrackMinigame.WBP_QOL_SafeCrackMinigame_C.RotateDown
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_QOL_SafeCrackMinigame_C::RotateDown()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QOL_SafeCrackMinigame_C", "RotateDown");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_QOL_SafeCrackMinigame.WBP_QOL_SafeCrackMinigame_C.RotateUp
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_QOL_SafeCrackMinigame_C::RotateUp()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QOL_SafeCrackMinigame_C", "RotateUp");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateDirectionHintVisibility", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -229,10 +47,8 @@ void UWBP_QOL_SafeCrackMinigame_C::RotateUp()
 
 void UWBP_QOL_SafeCrackMinigame_C::SetAnimState(int32 NewShakeTier)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QOL_SafeCrackMinigame_C", "SetAnimState");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetAnimState", FnName));
 
 	Params::WBP_QOL_SafeCrackMinigame_C_SetAnimState Parms{};
 
@@ -242,29 +58,181 @@ void UWBP_QOL_SafeCrackMinigame_C::SetAnimState(int32 NewShakeTier)
 }
 
 
-// Function WBP_QOL_SafeCrackMinigame.WBP_QOL_SafeCrackMinigame_C.UpdateDirectionHintVisibility
+// Function WBP_QOL_SafeCrackMinigame.WBP_QOL_SafeCrackMinigame_C.RotateUp
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_QOL_SafeCrackMinigame_C::UpdateDirectionHintVisibility()
+void UWBP_QOL_SafeCrackMinigame_C::RotateUp()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QOL_SafeCrackMinigame_C", "UpdateDirectionHintVisibility");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RotateUp", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_QOL_SafeCrackMinigame.WBP_QOL_SafeCrackMinigame_C.UpdateNumberColors
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_QOL_SafeCrackMinigame.WBP_QOL_SafeCrackMinigame_C.RotateDown
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_QOL_SafeCrackMinigame_C::UpdateNumberColors()
+void UWBP_QOL_SafeCrackMinigame_C::RotateDown()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RotateDown", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_QOL_SafeCrackMinigame_C", "UpdateNumberColors");
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_QOL_SafeCrackMinigame.WBP_QOL_SafeCrackMinigame_C.OnSubmitInput
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_QOL_SafeCrackMinigame_C::OnSubmitInput()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSubmitInput", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_QOL_SafeCrackMinigame.WBP_QOL_SafeCrackMinigame_C.OnSelectNumber
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_QOL_SafeCrackMinigame_C::OnSelectNumber()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSelectNumber", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_QOL_SafeCrackMinigame.WBP_QOL_SafeCrackMinigame_C.OnOwningMiniGameComponent
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class USBZMiniGameComponent*            MiniGameComponet                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_QOL_SafeCrackMinigame_C::OnOwningMiniGameComponent(class USBZMiniGameComponent* MiniGameComponet)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnOwningMiniGameComponent", FnName));
+
+	Params::WBP_QOL_SafeCrackMinigame_C_OnOwningMiniGameComponent Parms{};
+
+	Parms.MiniGameComponet = MiniGameComponet;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_QOL_SafeCrackMinigame.WBP_QOL_SafeCrackMinigame_C.OnNumberUpdated
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_QOL_SafeCrackMinigame_C::OnNumberUpdated()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnNumberUpdated", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_QOL_SafeCrackMinigame.WBP_QOL_SafeCrackMinigame_C.OnMouseAxisInput
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_QOL_SafeCrackMinigame_C::OnMouseAxisInput()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnMouseAxisInput", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_QOL_SafeCrackMinigame.WBP_QOL_SafeCrackMinigame_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_QOL_SafeCrackMinigame_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_QOL_SafeCrackMinigame.WBP_QOL_SafeCrackMinigame_C.MiniGameStateChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EPD3MiniGameState                       NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_QOL_SafeCrackMinigame_C::MiniGameStateChanged(EPD3MiniGameState NewState)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MiniGameStateChanged", FnName));
+
+	Params::WBP_QOL_SafeCrackMinigame_C_MiniGameStateChanged Parms{};
+
+	Parms.NewState = NewState;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_QOL_SafeCrackMinigame.WBP_QOL_SafeCrackMinigame_C.GenerateCorrectNumber
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_QOL_SafeCrackMinigame_C::GenerateCorrectNumber()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GenerateCorrectNumber", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_QOL_SafeCrackMinigame.WBP_QOL_SafeCrackMinigame_C.ExecuteUbergraph_WBP_QOL_SafeCrackMinigame
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_QOL_SafeCrackMinigame_C::ExecuteUbergraph_WBP_QOL_SafeCrackMinigame(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_QOL_SafeCrackMinigame_C", "ExecuteUbergraph_WBP_QOL_SafeCrackMinigame", FuncInfo);
+
+	Params::WBP_QOL_SafeCrackMinigame_C_ExecuteUbergraph_WBP_QOL_SafeCrackMinigame Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_QOL_SafeCrackMinigame.WBP_QOL_SafeCrackMinigame_C.BP_OnXAxisChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// float                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_QOL_SafeCrackMinigame_C::BP_OnXAxisChanged(float Value)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnXAxisChanged", FnName));
+
+	Params::WBP_QOL_SafeCrackMinigame_C_BP_OnXAxisChanged Parms{};
+
+	Parms.Value = Value;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_QOL_SafeCrackMinigame.WBP_QOL_SafeCrackMinigame_C.AxisUpdateTimer
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_QOL_SafeCrackMinigame_C::AxisUpdateTimer()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AxisUpdateTimer", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

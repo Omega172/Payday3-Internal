@@ -49,5 +49,6 @@ public:
 		return GetDefaultObjImpl<UWBP_ComputerTrueActive_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_ComputerTrueActive_C;
 
 SDK_NAMESPACE_END

@@ -24,9 +24,9 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04F0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteUbergraph_GA_Crouch(int32 EntryPoint);
+	void K2_OnEndAbility(bool bWasCancelled_K2_OnEndAbility);
 	void K2_ActivateAbility();
-	void K2_OnEndAbility(bool bWasCancelled);
+	void ExecuteUbergraph_GA_Crouch(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -42,5 +42,6 @@ public:
 		return GetDefaultObjImpl<UGA_Crouch_C>();
 	}
 };
+DUMPER7_ASSERTS_UGA_Crouch_C;
 
 SDK_NAMESPACE_END

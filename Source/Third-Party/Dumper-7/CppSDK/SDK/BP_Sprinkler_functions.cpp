@@ -16,87 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Sprinkler.BP_Sprinkler_C.Activate_sprinklers
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_Sprinkler.BP_Sprinkler_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Sprinkler_C::Activate_sprinklers()
+void ABP_Sprinkler_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Sprinkler_C", "Activate_sprinklers");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Sprinkler.BP_Sprinkler_C.desactivate_sprinklers
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_Sprinkler_C::desactivate_sprinklers()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Sprinkler_C", "desactivate_sprinklers");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Sprinkler.BP_Sprinkler_C.ExecuteUbergraph_BP_Sprinkler
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Sprinkler_C::ExecuteUbergraph_BP_Sprinkler(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Sprinkler_C", "ExecuteUbergraph_BP_Sprinkler");
-
-	Params::BP_Sprinkler_C_ExecuteUbergraph_BP_Sprinkler Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Sprinkler.BP_Sprinkler_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Sprinkler_C::OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Sprinkler_C", "OnStateChanged");
-
-	Params::BP_Sprinkler_C_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Sprinkler.BP_Sprinkler_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Sprinkler_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Sprinkler_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -110,10 +36,8 @@ void ABP_Sprinkler_C::ReceiveBeginPlay()
 
 void ABP_Sprinkler_C::Sprinkler_Management(int32 state, bool doCosmetics)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Sprinkler_C", "Sprinkler Management");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Sprinkler Management", FnName));
 
 	Params::BP_Sprinkler_C_Sprinkler_Management Parms{};
 
@@ -124,15 +48,77 @@ void ABP_Sprinkler_C::Sprinkler_Management(int32 state, bool doCosmetics)
 }
 
 
-// Function BP_Sprinkler.BP_Sprinkler_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_Sprinkler.BP_Sprinkler_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_Sprinkler_C::UserConstructionScript()
+void ABP_Sprinkler_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Sprinkler_C", "UserConstructionScript");
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Sprinkler.BP_Sprinkler_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   OldState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Sprinkler_C::OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_Sprinkler_C_OnStateChanged Parms{};
+
+	Parms.OldState_OnStateChanged = OldState_OnStateChanged;
+	Parms.NewState_OnStateChanged = NewState_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Sprinkler.BP_Sprinkler_C.ExecuteUbergraph_BP_Sprinkler
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Sprinkler_C::ExecuteUbergraph_BP_Sprinkler(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Sprinkler_C", "ExecuteUbergraph_BP_Sprinkler", FuncInfo);
+
+	Params::BP_Sprinkler_C_ExecuteUbergraph_BP_Sprinkler Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Sprinkler.BP_Sprinkler_C.desactivate_sprinklers
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_Sprinkler_C::desactivate_sprinklers()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"desactivate_sprinklers", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Sprinkler.BP_Sprinkler_C.Activate_sprinklers
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_Sprinkler_C::Activate_sprinklers()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Activate_sprinklers", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

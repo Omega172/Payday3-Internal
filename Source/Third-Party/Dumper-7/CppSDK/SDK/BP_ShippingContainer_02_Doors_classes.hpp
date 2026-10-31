@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_ShippingContainer_02_Doors_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ShippingContainer_02_Doors_C;
 
 SDK_NAMESPACE_END

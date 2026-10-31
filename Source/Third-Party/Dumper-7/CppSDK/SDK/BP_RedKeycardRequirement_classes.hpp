@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UBP_RedKeycardRequirement_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_RedKeycardRequirement_C;
 
 SDK_NAMESPACE_END

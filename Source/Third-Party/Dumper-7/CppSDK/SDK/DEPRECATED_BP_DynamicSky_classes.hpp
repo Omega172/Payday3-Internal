@@ -63,5 +63,6 @@ public:
 		return GetDefaultObjImpl<ADEPRECATED_BP_DynamicSky_C>();
 	}
 };
+DUMPER7_ASSERTS_ADEPRECATED_BP_DynamicSky_C;
 
 SDK_NAMESPACE_END

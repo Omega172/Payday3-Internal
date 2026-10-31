@@ -14,6 +14,16 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_PlaceableArmorRepairKit.BP_PlaceableArmorRepairKit_C.OnChargesChanged
+// 0x0008 (0x0008 - 0x0000)
+struct BP_PlaceableArmorRepairKit_C_OnChargesChanged final
+{
+public:
+	float                                         ChargesChangeTo_OnChargesChanged;                  // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnChargesChanged;                     // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PlaceableArmorRepairKit_C_OnChargesChanged;
+
 // Function BP_PlaceableArmorRepairKit.BP_PlaceableArmorRepairKit_C.ExecuteUbergraph_BP_PlaceableArmorRepairKit
 // 0x000C (0x000C - 0x0000)
 struct BP_PlaceableArmorRepairKit_C_ExecuteUbergraph_BP_PlaceableArmorRepairKit final
@@ -23,15 +33,7 @@ public:
 	float                                         K2Node_Event_ChargesChangeTo;                      // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bDoCosmetics;                         // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_PlaceableArmorRepairKit.BP_PlaceableArmorRepairKit_C.OnChargesChanged
-// 0x0008 (0x0008 - 0x0000)
-struct BP_PlaceableArmorRepairKit_C_OnChargesChanged final
-{
-public:
-	float                                         ChargesChangeTo;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_PlaceableArmorRepairKit_C_ExecuteUbergraph_BP_PlaceableArmorRepairKit;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

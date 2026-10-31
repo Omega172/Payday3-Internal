@@ -25,10 +25,8 @@ SDK_NAMESPACE_START
 
 void IBPI_RoomSpawnInsideLoc_C::SpawnItemInContainer(class UClass* WhatShould_Spawn, class ABP_RoomSpawnController_C* RoomControllerRef, class AActor** SpawnedActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("BPI_RoomSpawnInsideLoc_C", "SpawnItemInContainer");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(AsUObject(), GetStaticName(L"SpawnItemInContainer", FnName));
 
 	Params::BPI_RoomSpawnInsideLoc_C_SpawnItemInContainer Parms{};
 

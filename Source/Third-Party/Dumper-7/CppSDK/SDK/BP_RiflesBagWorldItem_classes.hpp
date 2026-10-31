@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_RiflesBagWorldItem_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_RiflesBagWorldItem_C;
 
 SDK_NAMESPACE_END

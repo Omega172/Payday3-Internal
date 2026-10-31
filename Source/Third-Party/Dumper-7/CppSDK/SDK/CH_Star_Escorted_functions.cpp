@@ -16,6 +16,18 @@
 
 SDK_NAMESPACE_START
 
+// Function CH_Star_Escorted.CH_Star_Escorted_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ACH_Star_Escorted_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function CH_Star_Escorted.CH_Star_Escorted_C.ExecuteUbergraph_CH_Star_Escorted
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -23,30 +35,14 @@ SDK_NAMESPACE_START
 
 void ACH_Star_Escorted_C::ExecuteUbergraph_CH_Star_Escorted(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CH_Star_Escorted_C", "ExecuteUbergraph_CH_Star_Escorted");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "CH_Star_Escorted_C", "ExecuteUbergraph_CH_Star_Escorted", FuncInfo);
 
 	Params::CH_Star_Escorted_C_ExecuteUbergraph_CH_Star_Escorted Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function CH_Star_Escorted.CH_Star_Escorted_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ACH_Star_Escorted_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CH_Star_Escorted_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

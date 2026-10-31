@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UNQF_Ninja_C>();
 	}
 };
+DUMPER7_ASSERTS_UNQF_Ninja_C;
 
 SDK_NAMESPACE_END

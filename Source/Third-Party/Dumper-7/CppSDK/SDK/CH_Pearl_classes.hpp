@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CH_Pearl.CH_Pearl_C
-// 0x0000 (0x2870 - 0x2870)
+// 0x0000 (0x28F0 - 0x28F0)
 class ACH_Pearl_C final : public ACH_PlayerBase_C
 {
 public:
@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ACH_Pearl_C>();
 	}
 };
+DUMPER7_ASSERTS_ACH_Pearl_C;
 
 SDK_NAMESPACE_END

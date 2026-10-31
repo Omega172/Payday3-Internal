@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_FireSystem_01_Box_SmallDestruction_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_FireSystem_01_Box_SmallDestruction_C;
 
 SDK_NAMESPACE_END

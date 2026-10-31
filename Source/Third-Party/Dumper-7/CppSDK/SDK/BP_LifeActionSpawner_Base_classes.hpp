@@ -30,11 +30,11 @@ public:
 	bool                                          AutoRegisterToProxy;                               // 0x0460(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void EventTagAction(const struct FGameplayTag& EventTag, double DelayMin, double DelayMax);
-	void ExecuteUbergraph_BP_LifeActionSpawner_Base(int32 EntryPoint);
-	void OnPawnSpawn(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
-	void ReceiveBeginPlay();
 	void UserConstructionScript();
+	void ReceiveBeginPlay();
+	void OnPawnSpawn(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
+	void ExecuteUbergraph_BP_LifeActionSpawner_Base(int32 EntryPoint);
+	void EventTagAction(const struct FGameplayTag& EventTag, double DelayMin, double DelayMax);
 
 public:
 	static class UClass* StaticClass()
@@ -50,5 +50,6 @@ public:
 		return GetDefaultObjImpl<ABP_LifeActionSpawner_Base_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LifeActionSpawner_Base_C;
 
 SDK_NAMESPACE_END

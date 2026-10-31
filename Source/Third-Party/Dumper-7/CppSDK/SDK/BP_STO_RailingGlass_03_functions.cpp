@@ -16,29 +16,21 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_STO_RailingGlass_03.BP_STO_RailingGlass_03_C.BndEvt__NewBlueprint_PropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
+// Function BP_STO_RailingGlass_03.BP_STO_RailingGlass_03_C.GetTraversalDestructibleMeshComponent
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UActorComponent*                  PoolComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   Hits                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZPropDamageContext&     DamageContext                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// class UStaticMeshComponent*             ReturnValue_GetTraversalDestructibleMeshComponent      (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_STO_RailingGlass_03_C::BndEvt__NewBlueprint_PropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
+class UStaticMeshComponent* ABP_STO_RailingGlass_03_C::GetTraversalDestructibleMeshComponent()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetTraversalDestructibleMeshComponent", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_RailingGlass_03_C", "BndEvt__NewBlueprint_PropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature");
-
-	Params::BP_STO_RailingGlass_03_C_BndEvt__NewBlueprint_PropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature Parms{};
-
-	Parms.PoolComponent = PoolComponent;
-	Parms.Hits = Hits;
-	Parms.bDoCosmetics = bDoCosmetics;
-	Parms.DamageContext = std::move(DamageContext);
+	Params::BP_STO_RailingGlass_03_C_GetTraversalDestructibleMeshComponent Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 
@@ -49,10 +41,8 @@ void ABP_STO_RailingGlass_03_C::BndEvt__NewBlueprint_PropDamage_K2Node_Component
 
 void ABP_STO_RailingGlass_03_C::ExecuteUbergraph_BP_STO_RailingGlass_03(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_RailingGlass_03_C", "ExecuteUbergraph_BP_STO_RailingGlass_03");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_STO_RailingGlass_03_C", "ExecuteUbergraph_BP_STO_RailingGlass_03", FuncInfo);
 
 	Params::BP_STO_RailingGlass_03_C_ExecuteUbergraph_BP_STO_RailingGlass_03 Parms{};
 
@@ -62,23 +52,27 @@ void ABP_STO_RailingGlass_03_C::ExecuteUbergraph_BP_STO_RailingGlass_03(int32 En
 }
 
 
-// Function BP_STO_RailingGlass_03.BP_STO_RailingGlass_03_C.GetTraversalDestructibleMeshComponent
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function BP_STO_RailingGlass_03.BP_STO_RailingGlass_03_C.BndEvt__NewBlueprint_PropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
 // Parameters:
-// class UStaticMeshComponent*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UActorComponent*                  PoolComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   Hits                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZPropDamageContext&     DamageContext                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 
-class UStaticMeshComponent* ABP_STO_RailingGlass_03_C::GetTraversalDestructibleMeshComponent()
+void ABP_STO_RailingGlass_03_C::BndEvt__NewBlueprint_PropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__NewBlueprint_PropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_RailingGlass_03_C", "GetTraversalDestructibleMeshComponent");
+	Params::BP_STO_RailingGlass_03_C_BndEvt__NewBlueprint_PropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature Parms{};
 
-	Params::BP_STO_RailingGlass_03_C_GetTraversalDestructibleMeshComponent Parms{};
+	Parms.PoolComponent = PoolComponent;
+	Parms.Hits = Hits;
+	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.DamageContext = std::move(DamageContext);
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_NavigationSigns_02_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_NavigationSigns_02_C;
 
 SDK_NAMESPACE_END

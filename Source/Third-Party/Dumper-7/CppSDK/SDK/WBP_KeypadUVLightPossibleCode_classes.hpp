@@ -33,8 +33,8 @@ public:
 	class UTextBlock*                             CodeText;                                          // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void SetKeypad(int32 TrueCode, int32 RandomCode, bool ShowTrueCode);
 	void SetText(int32 Value);
+	void SetKeypad(int32 TrueCode, int32 RandomCode, bool ShowTrueCode);
 
 public:
 	static class UClass* StaticClass()
@@ -50,5 +50,6 @@ public:
 		return GetDefaultObjImpl<UWBP_KeypadUVLightPossibleCode_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_KeypadUVLightPossibleCode_C;
 
 SDK_NAMESPACE_END

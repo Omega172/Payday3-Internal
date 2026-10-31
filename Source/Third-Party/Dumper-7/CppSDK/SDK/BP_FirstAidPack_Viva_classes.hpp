@@ -28,13 +28,13 @@ public:
 	TArray<class UStaticMeshComponent*>           chargeMeshes;                                      // 0x06C8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void addOneChargeMesh(const struct FVector& Location, bool outline);
-	void createChargeMeshes(bool outline);
-	void ExecuteUbergraph_BP_FirstAidPack_Viva(int32 EntryPoint);
-	void OnChargesChanged(float ChargesChangeTo, bool bDoCosmetics);
-	void OnThrown();
-	void ReceiveBeginPlay();
 	void UserConstructionScript();
+	void ReceiveBeginPlay();
+	void OnThrown();
+	void OnChargesChanged(float ChargesChangeTo_OnChargesChanged, bool bDoCosmetics_OnChargesChanged);
+	void ExecuteUbergraph_BP_FirstAidPack_Viva(int32 EntryPoint);
+	void createChargeMeshes(bool outline);
+	void addOneChargeMesh(const struct FVector& Location, bool outline);
 
 public:
 	static class UClass* StaticClass()
@@ -50,5 +50,6 @@ public:
 		return GetDefaultObjImpl<ABP_FirstAidPack_Viva_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_FirstAidPack_Viva_C;
 
 SDK_NAMESPACE_END

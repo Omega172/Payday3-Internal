@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AVFX_FirstPlayable_C>();
 	}
 };
+DUMPER7_ASSERTS_AVFX_FirstPlayable_C;
 
 SDK_NAMESPACE_END

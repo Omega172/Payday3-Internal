@@ -30,8 +30,8 @@ public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0350(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BPL_SpotOuterAlone_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 	void ExecuteUbergraph_DIM_BPL_SpotOuterAlone_HRE(int32 EntryPoint);
+	void BndEvt__BPL_SpotOuterAlone_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 
 public:
 	static class UClass* StaticClass()
@@ -47,5 +47,6 @@ public:
 		return GetDefaultObjImpl<ADIM_BPL_SpotOuterAlone_HRE_C>();
 	}
 };
+DUMPER7_ASSERTS_ADIM_BPL_SpotOuterAlone_HRE_C;
 
 SDK_NAMESPACE_END

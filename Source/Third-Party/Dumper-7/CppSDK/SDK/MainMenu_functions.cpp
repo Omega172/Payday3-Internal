@@ -16,19 +16,85 @@
 
 SDK_NAMESPACE_START
 
-// Function MainMenu.MainMenu_C.TickRotation
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function MainMenu.MainMenu_C.ExecuteUbergraph_MainMenu
+// (Final, UbergraphFunction)
 // Parameters:
-// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AMainMenu_C::TickRotation(double DeltaTime)
+void AMainMenu_C::ExecuteUbergraph_MainMenu(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "MainMenu_C", "ExecuteUbergraph_MainMenu", FuncInfo);
+
+	Params::MainMenu_C_ExecuteUbergraph_MainMenu Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function MainMenu.MainMenu_C.Lobby_Music
+// (BlueprintCallable, BlueprintEvent)
+
+void AMainMenu_C::Lobby_Music()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TickRotation", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Lobby_Music", FnName));
 
-	Params::MainMenu_C_TickRotation Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.DeltaTime = DeltaTime;
+
+// Function MainMenu.MainMenu_C.MainMenu_Music
+// (BlueprintCallable, BlueprintEvent)
+
+void AMainMenu_C::MainMenu_Music()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MainMenu_Music", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MainMenu.MainMenu_C.Matchmaking_Music
+// (BlueprintCallable, BlueprintEvent)
+
+void AMainMenu_C::Matchmaking_Music()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Matchmaking_Music", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MainMenu.MainMenu_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AMainMenu_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MainMenu.MainMenu_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AMainMenu_C::ReceiveTick(float DeltaSeconds)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveTick", FnName));
+
+	Params::MainMenu_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -54,85 +120,19 @@ void AMainMenu_C::SetActiveCamera(class FName NewValue, class FName PreviousValu
 }
 
 
-// Function MainMenu.MainMenu_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
+// Function MainMenu.MainMenu_C.TickRotation
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   DeltaSeconds_ReceiveTick                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  DeltaTime                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AMainMenu_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
+void AMainMenu_C::TickRotation(double DeltaTime)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveTick", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TickRotation", FnName));
 
-	Params::MainMenu_C_ReceiveTick Parms{};
+	Params::MainMenu_C_TickRotation Parms{};
 
-	Parms.DeltaSeconds_ReceiveTick = DeltaSeconds_ReceiveTick;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function MainMenu.MainMenu_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AMainMenu_C::ReceiveBeginPlay()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MainMenu.MainMenu_C.Matchmaking_Music
-// (BlueprintCallable, BlueprintEvent)
-
-void AMainMenu_C::Matchmaking_Music()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Matchmaking_Music", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MainMenu.MainMenu_C.MainMenu_Music
-// (BlueprintCallable, BlueprintEvent)
-
-void AMainMenu_C::MainMenu_Music()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MainMenu_Music", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MainMenu.MainMenu_C.Lobby_Music
-// (BlueprintCallable, BlueprintEvent)
-
-void AMainMenu_C::Lobby_Music()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Lobby_Music", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MainMenu.MainMenu_C.ExecuteUbergraph_MainMenu
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AMainMenu_C::ExecuteUbergraph_MainMenu(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "MainMenu_C", "ExecuteUbergraph_MainMenu", FuncInfo);
-
-	Params::MainMenu_C_ExecuteUbergraph_MainMenu Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.DeltaTime = DeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -16,6 +16,18 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_CH_dead_cook.BP_CH_dead_cook_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_CH_dead_cook_C::UserConstructionScript()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_CH_dead_cook.BP_CH_dead_cook_C.SpawnVariation
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -25,10 +37,8 @@ SDK_NAMESPACE_START
 
 void ABP_CH_dead_cook_C::SpawnVariation(int32 Index_0, const struct FVector& Location, struct FVector* NextLocation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CH_dead_cook_C", "SpawnVariation");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnVariation", FnName));
 
 	Params::BP_CH_dead_cook_C_SpawnVariation Parms{};
 
@@ -39,20 +49,6 @@ void ABP_CH_dead_cook_C::SpawnVariation(int32 Index_0, const struct FVector& Loc
 
 	if (NextLocation != nullptr)
 		*NextLocation = std::move(Parms.NextLocation);
-}
-
-
-// Function BP_CH_dead_cook.BP_CH_dead_cook_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_CH_dead_cook_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CH_dead_cook_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -26,9 +26,9 @@ public:
 	class FText                                   secondaryText;                                     // 0x06F8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void ExecuteUbergraph_dynamicSignComponent(int32 EntryPoint);
-	void ReceiveBeginPlay();
 	void updateWidget();
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_dynamicSignComponent(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<UdynamicSignComponent_C>();
 	}
 };
+DUMPER7_ASSERTS_UdynamicSignComponent_C;
 
 SDK_NAMESPACE_END

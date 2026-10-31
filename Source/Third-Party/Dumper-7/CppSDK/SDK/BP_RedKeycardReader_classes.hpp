@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_RedKeycardReader_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_RedKeycardReader_C;
 
 SDK_NAMESPACE_END

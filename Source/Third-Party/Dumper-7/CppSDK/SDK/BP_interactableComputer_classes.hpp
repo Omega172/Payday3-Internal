@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "CompState_structs.hpp"
+#include "Engine_structs.hpp"
 #include "S_EmailStructure_structs.hpp"
 #include "Starbreeze_classes.hpp"
 
@@ -83,50 +83,50 @@ public:
 	TMulticastInlineDelegate<void()>              OnMenuTwoPressed;                                  // 0x0580(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__BP_IncteractionComponentComp_SBZInteractable_00_K2Node_ComponentBoundEvent_15_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_IncteractionComponentComp_SBZInteractable_00_K2Node_ComponentBoundEvent_16_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
-	void BndEvt__BP_IncteractionComponentComp_SBZInteractable_0_K2Node_ComponentBoundEvent_17_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
-	void BndEvt__BP_IncteractionComponentComp_SBZInteractable_1_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_IncteractionComponentComp_SBZInteractable_1_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
-	void BndEvt__BP_IncteractionComponentComp_SBZInteractable_2_K2Node_ComponentBoundEvent_5_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
-	void BndEvt__BP_IncteractionComponentComp_SBZInteractable_3_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_IncteractionComponentComp_SBZInteractable__2_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_IncteractionComponentComp_SBZInteractable_Acti_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_IncteractionComponentComp_SBZInteractable_Acti_K2Node_ComponentBoundEvent_7_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
-	void BndEvt__BP_IncteractionComponentComp_SBZInteractable_Down_K2Node_ComponentBoundEvent_9_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_IncteractionComponentComp_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_IncteractionComponentComp_SBZInteractable_Up_K2Node_ComponentBoundEvent_8_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_InteractableComputer_SBZInteractable_Down_K2Node_ComponentBoundEvent_10_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
-	void BndEvt__BP_InteractableComputer_SBZInteractable_Up_K2Node_ComponentBoundEvent_11_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
-	void BP_SetCode(class UWidgetComponent* Widget_0, const TArray<int32>& CodeArrayToShow);
-	void Click();
-	void Done();
-	void ExecuteUbergraph_BP_InteractableComputer(int32 EntryPoint);
-	void InitializeWidget(class UWidgetComponent* Widget_0);
-	void NewFunction_0(int32 New_Param_0, bool New_Param_2_0);
-	class FText NewFunction_1(const class FText& InText, int32 B, const class FText& InText1);
-	void OnRep_CompState();
-	void OnRep_Has_Been_Pressed();
-	void OnRep_NewVar_0();
-	void OnRep_Pressed_State();
-	void OnRep_Pressed_State_0();
-	void OnRep_Pressed_State_1();
-	void OnRep_ScrollOffset();
-	void OnRep_UpDownInt();
-	void ReceiveBeginPlay();
-	void RepNotifyEventListner(ECompState CompState_0);
-	void SetAllWidgetTimers();
-	void SetCollisionBoxes();
-	void SetEmails(const TArray<struct FS_EmailStructure>& EmailArray);
-	void SetLoadingValues();
-	void SetLoadingValuesAtStart();
-	void SetNumbers(const class FString& NewParam);
-	void SetTings();
-	void Start_Timer();
-	void StateChangeFunction(ECompState Selection);
-	void Timer();
-	void UpdateCodeViewer(const TArray<int32>& GeneratedCodes, const int32 TrueCodeIndex);
 	void UpdateIdentifier(const class FText& InIdentifier);
+	void UpdateCodeViewer(const TArray<int32>& GeneratedCodes, const int32 TrueCodeIndex);
+	void Timer();
+	void StateChangeFunction(ECompState Selection);
+	void Start_Timer();
+	void SetTings();
+	void SetNumbers(const class FString& NewParam);
+	void SetLoadingValuesAtStart();
+	void SetLoadingValues();
+	void SetEmails(const TArray<struct FS_EmailStructure>& EmailArray);
+	void SetCollisionBoxes();
+	void SetAllWidgetTimers();
+	void RepNotifyEventListner(ECompState CompState);
+	void ReceiveBeginPlay();
+	void OnRep_UpDownInt();
+	void OnRep_ScrollOffset();
+	void OnRep_Pressed_State_1();
+	void OnRep_Pressed_State_0();
+	void OnRep_Pressed_State();
+	void OnRep_NewVar_0();
+	void OnRep_Has_Been_Pressed();
+	void OnRep_CompState();
+	class FText NewFunction_1(const class FText& InText, int32 B, const class FText& InText1);
+	void NewFunction_0(int32 New_Param, bool New_Param_2);
+	void InitializeWidget(class UWidgetComponent* Widget);
+	void ExecuteUbergraph_BP_InteractableComputer(int32 EntryPoint);
+	void Done();
+	void Click();
+	void BP_SetCode(class UWidgetComponent* Widget, const TArray<int32>& CodeArrayToShow);
+	void BndEvt__BP_InteractableComputer_SBZInteractable_Up_K2Node_ComponentBoundEvent_11_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
+	void BndEvt__BP_InteractableComputer_SBZInteractable_Down_K2Node_ComponentBoundEvent_10_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
+	void BndEvt__BP_IncteractionComponentComp_SBZInteractable_Up_K2Node_ComponentBoundEvent_8_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_IncteractionComponentComp_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_IncteractionComponentComp_SBZInteractable_Down_K2Node_ComponentBoundEvent_9_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_IncteractionComponentComp_SBZInteractable_Acti_K2Node_ComponentBoundEvent_7_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
+	void BndEvt__BP_IncteractionComponentComp_SBZInteractable_Acti_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_IncteractionComponentComp_SBZInteractable__2_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_IncteractionComponentComp_SBZInteractable_3_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_IncteractionComponentComp_SBZInteractable_2_K2Node_ComponentBoundEvent_5_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
+	void BndEvt__BP_IncteractionComponentComp_SBZInteractable_1_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
+	void BndEvt__BP_IncteractionComponentComp_SBZInteractable_1_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_IncteractionComponentComp_SBZInteractable_0_K2Node_ComponentBoundEvent_17_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
+	void BndEvt__BP_IncteractionComponentComp_SBZInteractable_00_K2Node_ComponentBoundEvent_16_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
+	void BndEvt__BP_IncteractionComponentComp_SBZInteractable_00_K2Node_ComponentBoundEvent_15_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 	int32 GetNumberOfCodeWidgets() const;
 
@@ -144,5 +144,6 @@ public:
 		return GetDefaultObjImpl<ABP_InteractableComputer_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_InteractableComputer_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_SHI_VASystem_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SHI_VASystem_C;
 
 SDK_NAMESPACE_END

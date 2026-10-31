@@ -25,9 +25,9 @@ public:
 	class USBZAIVisualDetectionComponent*         SBZAIVisualDetection;                              // 0x0760(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnCurrentEnemyAssigned();
+	void ReceivePossess(class APawn* PossessedPawn_ReceivePossess);
 	void ExecuteUbergraph_BP_CivilianController(int32 EntryPoint);
-	void ReceivePossess(class APawn* PossessedPawn);
+	void BP_OnCurrentEnemyAssigned();
 
 public:
 	static class UClass* StaticClass()
@@ -43,5 +43,6 @@ public:
 		return GetDefaultObjImpl<ABP_CivilianController_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CivilianController_C;
 
 SDK_NAMESPACE_END

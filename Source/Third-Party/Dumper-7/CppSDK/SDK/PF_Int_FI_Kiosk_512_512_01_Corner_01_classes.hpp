@@ -55,5 +55,6 @@ public:
 		return GetDefaultObjImpl<APF_Int_FI_Kiosk_512_512_01_Corner_01_C>();
 	}
 };
+DUMPER7_ASSERTS_APF_Int_FI_Kiosk_512_512_01_Corner_01_C;
 
 SDK_NAMESPACE_END

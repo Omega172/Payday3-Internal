@@ -16,27 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_LA_NC_BodyGuard_Scripted.BP_LA_NC_BodyGuard_Scripted_C.BndEvt__BP_LA_Civ_Cosmetic_Dance_SBZLifeAction_K2Node_ComponentBoundEvent_0_SBZLifeActionStopEventDelegate__DelegateSignature
-// (BlueprintEvent)
+// Function BP_LA_NC_BodyGuard_Scripted.BP_LA_NC_BodyGuard_Scripted_C.ExecuteUbergraph_BP_LA_NC_BodyGuard_Scripted
+// (Final, UbergraphFunction)
 // Parameters:
-// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZLifeActionInstance*           ActionInstance                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// ESBZLifeActionStopReason                Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LA_NC_BodyGuard_Scripted_C::BndEvt__BP_LA_Civ_Cosmetic_Dance_SBZLifeAction_K2Node_ComponentBoundEvent_0_SBZLifeActionStopEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot, ESBZLifeActionStopReason Result)
+void ABP_LA_NC_BodyGuard_Scripted_C::ExecuteUbergraph_BP_LA_NC_BodyGuard_Scripted(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_LA_NC_BodyGuard_Scripted_C", "ExecuteUbergraph_BP_LA_NC_BodyGuard_Scripted", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_NC_BodyGuard_Scripted_C", "BndEvt__BP_LA_Civ_Cosmetic_Dance_SBZLifeAction_K2Node_ComponentBoundEvent_0_SBZLifeActionStopEventDelegate__DelegateSignature");
+	Params::BP_LA_NC_BodyGuard_Scripted_C_ExecuteUbergraph_BP_LA_NC_BodyGuard_Scripted Parms{};
 
-	Params::BP_LA_NC_BodyGuard_Scripted_C_BndEvt__BP_LA_Civ_Cosmetic_Dance_SBZLifeAction_K2Node_ComponentBoundEvent_0_SBZLifeActionStopEventDelegate__DelegateSignature Parms{};
-
-	Parms.Character = Character;
-	Parms.ActionInstance = ActionInstance;
-	Parms.ActionSlot = ActionSlot;
-	Parms.Result = Result;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -51,10 +43,8 @@ void ABP_LA_NC_BodyGuard_Scripted_C::BndEvt__BP_LA_Civ_Cosmetic_Dance_SBZLifeAct
 
 void ABP_LA_NC_BodyGuard_Scripted_C::BndEvt__BP_LA_Manager_Scripted_TableButtonPress_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_NC_BodyGuard_Scripted_C", "BndEvt__BP_LA_Manager_Scripted_TableButtonPress_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_LA_Manager_Scripted_TableButtonPress_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature", FnName));
 
 	Params::BP_LA_NC_BodyGuard_Scripted_C_BndEvt__BP_LA_Manager_Scripted_TableButtonPress_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature Parms{};
 
@@ -66,21 +56,25 @@ void ABP_LA_NC_BodyGuard_Scripted_C::BndEvt__BP_LA_Manager_Scripted_TableButtonP
 }
 
 
-// Function BP_LA_NC_BodyGuard_Scripted.BP_LA_NC_BodyGuard_Scripted_C.ExecuteUbergraph_BP_LA_NC_BodyGuard_Scripted
-// (Final, UbergraphFunction)
+// Function BP_LA_NC_BodyGuard_Scripted.BP_LA_NC_BodyGuard_Scripted_C.BndEvt__BP_LA_Civ_Cosmetic_Dance_SBZLifeAction_K2Node_ComponentBoundEvent_0_SBZLifeActionStopEventDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZLifeActionInstance*           ActionInstance                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// ESBZLifeActionStopReason                Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_LA_NC_BodyGuard_Scripted_C::ExecuteUbergraph_BP_LA_NC_BodyGuard_Scripted(int32 EntryPoint)
+void ABP_LA_NC_BodyGuard_Scripted_C::BndEvt__BP_LA_Civ_Cosmetic_Dance_SBZLifeAction_K2Node_ComponentBoundEvent_0_SBZLifeActionStopEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot, ESBZLifeActionStopReason Result)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_LA_Civ_Cosmetic_Dance_SBZLifeAction_K2Node_ComponentBoundEvent_0_SBZLifeActionStopEventDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_NC_BodyGuard_Scripted_C", "ExecuteUbergraph_BP_LA_NC_BodyGuard_Scripted");
+	Params::BP_LA_NC_BodyGuard_Scripted_C_BndEvt__BP_LA_Civ_Cosmetic_Dance_SBZLifeAction_K2Node_ComponentBoundEvent_0_SBZLifeActionStopEventDelegate__DelegateSignature Parms{};
 
-	Params::BP_LA_NC_BodyGuard_Scripted_C_ExecuteUbergraph_BP_LA_NC_BodyGuard_Scripted Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Character = Character;
+	Parms.ActionInstance = ActionInstance;
+	Parms.ActionSlot = ActionSlot;
+	Parms.Result = Result;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

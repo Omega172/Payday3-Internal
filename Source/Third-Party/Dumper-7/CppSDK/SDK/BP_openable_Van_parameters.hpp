@@ -17,14 +17,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_openable_Van.BP_openable_Van_C.BP_OnMiniGameSuccess
-// 0x0001 (0x0001 - 0x0000)
-struct BP_openable_Van_C_BP_OnMiniGameSuccess final
-{
-public:
-	bool                                          bDoCosmetics;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_openable_Van.BP_openable_Van_C.ExecuteUbergraph_BP_openable_Van
 // 0x0278 (0x0278 - 0x0000)
 struct BP_openable_Van_C_ExecuteUbergraph_BP_openable_Van final
@@ -45,6 +37,16 @@ public:
 	float                                         CallFunc_MakeRotator_Yaw_ImplicitCast;             // 0x0270(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_MakeRotator_Yaw_ImplicitCast_1;           // 0x0274(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_openable_Van_C_ExecuteUbergraph_BP_openable_Van;
+
+// Function BP_openable_Van.BP_openable_Van_C.BP_OnMiniGameSuccess
+// 0x0001 (0x0001 - 0x0000)
+struct BP_openable_Van_C_BP_OnMiniGameSuccess final
+{
+public:
+	bool                                          bDoCosmetics_BP_OnMiniGameSuccess;                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_openable_Van_C_BP_OnMiniGameSuccess;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

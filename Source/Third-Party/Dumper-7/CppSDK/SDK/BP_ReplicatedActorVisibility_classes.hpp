@@ -27,10 +27,10 @@ public:
 	TArray<class AActor*>                         actors;                                            // 0x0370(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate)
 
 public:
-	void ExecuteUbergraph_BP_ReplicatedActorVisibility(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void setActorVisibility(bool visible);
 	void UserConstructionScript();
+	void setActorVisibility(bool visible);
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_ReplicatedActorVisibility(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -46,5 +46,6 @@ public:
 		return GetDefaultObjImpl<ABP_ReplicatedActorVisibility_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ReplicatedActorVisibility_C;
 
 SDK_NAMESPACE_END

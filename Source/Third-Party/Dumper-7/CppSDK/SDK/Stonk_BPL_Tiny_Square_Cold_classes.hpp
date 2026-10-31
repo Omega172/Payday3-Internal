@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<AStonk_BPL_Tiny_Square_Cold_C>();
 	}
 };
+DUMPER7_ASSERTS_AStonk_BPL_Tiny_Square_Cold_C;
 
 SDK_NAMESPACE_END

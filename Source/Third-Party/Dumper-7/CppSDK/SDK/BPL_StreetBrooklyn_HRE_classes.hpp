@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ABPL_StreetBrooklyn_HRE_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_StreetBrooklyn_HRE_C;
 
 SDK_NAMESPACE_END

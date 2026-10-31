@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_InstantLoot_CatFigure_01Base_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_InstantLoot_CatFigure_01Base_C;
 
 SDK_NAMESPACE_END

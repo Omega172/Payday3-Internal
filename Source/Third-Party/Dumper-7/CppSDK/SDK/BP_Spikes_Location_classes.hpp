@@ -46,14 +46,14 @@ public:
 	int32                                         markerID;                                          // 0x0440(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_IntTesting_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_Spikes_Location(int32 EntryPoint);
-	class FText GetMarkerText();
-	void GetState(int32* State_0);
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void setMarker(const class USBZMarkerDataAsset* marker, const struct FVector& location);
-	void Show_Ghost();
 	void UserConstructionScript();
+	void Show_Ghost();
+	void setMarker(const class USBZMarkerDataAsset* marker, const struct FVector& location);
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void GetState(int32* State);
+	class FText GetMarkerText();
+	void ExecuteUbergraph_BP_Spikes_Location(int32 EntryPoint);
+	void BndEvt__BP_IntTesting_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -69,5 +69,6 @@ public:
 		return GetDefaultObjImpl<ABP_Spikes_Location_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Spikes_Location_C;
 
 SDK_NAMESPACE_END

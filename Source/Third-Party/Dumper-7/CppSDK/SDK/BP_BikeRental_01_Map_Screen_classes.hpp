@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ABP_BikeRental_01_Map_Screen_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BikeRental_01_Map_Screen_C;
 
 SDK_NAMESPACE_END

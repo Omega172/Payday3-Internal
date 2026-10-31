@@ -16,6 +16,26 @@
 
 SDK_NAMESPACE_START
 
+// Function BTTask_CalculateObjectLocation.BTTask_CalculateObjectLocation_C.ReceiveExecuteAI
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class AAIController*                    OwnerController_ReceiveExecuteAI                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            ControlledPawn_ReceiveExecuteAI                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBTTask_CalculateObjectLocation_C::ReceiveExecuteAI(class AAIController* OwnerController_ReceiveExecuteAI, class APawn* ControlledPawn_ReceiveExecuteAI)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveExecuteAI", FnName));
+
+	Params::BTTask_CalculateObjectLocation_C_ReceiveExecuteAI Parms{};
+
+	Parms.OwnerController_ReceiveExecuteAI = OwnerController_ReceiveExecuteAI;
+	Parms.ControlledPawn_ReceiveExecuteAI = ControlledPawn_ReceiveExecuteAI;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BTTask_CalculateObjectLocation.BTTask_CalculateObjectLocation_C.ExecuteUbergraph_BTTask_CalculateObjectLocation
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,36 +43,12 @@ SDK_NAMESPACE_START
 
 void UBTTask_CalculateObjectLocation_C::ExecuteUbergraph_BTTask_CalculateObjectLocation(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_CalculateObjectLocation_C", "ExecuteUbergraph_BTTask_CalculateObjectLocation");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BTTask_CalculateObjectLocation_C", "ExecuteUbergraph_BTTask_CalculateObjectLocation", FuncInfo);
 
 	Params::BTTask_CalculateObjectLocation_C_ExecuteUbergraph_BTTask_CalculateObjectLocation Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BTTask_CalculateObjectLocation.BTTask_CalculateObjectLocation_C.ReceiveExecuteAI
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class AAIController*                    OwnerController                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class APawn*                            ControlledPawn                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UBTTask_CalculateObjectLocation_C::ReceiveExecuteAI(class AAIController* OwnerController, class APawn* ControlledPawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BTTask_CalculateObjectLocation_C", "ReceiveExecuteAI");
-
-	Params::BTTask_CalculateObjectLocation_C_ReceiveExecuteAI Parms{};
-
-	Parms.OwnerController = OwnerController;
-	Parms.ControlledPawn = ControlledPawn;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "BPS_GlassHit_VFXData_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "BP_AttractorDestructionBase_classes.hpp"
 
 
@@ -36,8 +36,8 @@ public:
 	TArray<struct FBPS_GlassHit_VFXData>          VFX;                                               // 0x03E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void BndEvt__NewBlueprint_PropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
 	void ExecuteUbergraph_BP_IGl_BRE_ATT_2HIT_Gunstore_glass_01(int32 EntryPoint);
+	void BndEvt__NewBlueprint_PropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
 
 public:
 	static class UClass* StaticClass()
@@ -53,5 +53,6 @@ public:
 		return GetDefaultObjImpl<ABP_IGl_BRE_ATT_2HIT_Gunstore_glass_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_IGl_BRE_ATT_2HIT_Gunstore_glass_01_C;
 
 SDK_NAMESPACE_END

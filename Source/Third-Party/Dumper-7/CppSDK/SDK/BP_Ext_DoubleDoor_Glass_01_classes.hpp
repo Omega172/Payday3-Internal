@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_Ext_DoubleDoor_Glass_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Ext_DoubleDoor_Glass_01_C;
 
 SDK_NAMESPACE_END

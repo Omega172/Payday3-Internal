@@ -16,101 +16,21 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_SM_Gamestart_Debug.WBP_UI_SM_Gamestart_Debug_C.UpdateTime
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_SM_Gamestart_Debug_C::UpdateTime()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateTime", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SM_Gamestart_Debug.WBP_UI_SM_Gamestart_Debug_C.UpdateGameState
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_SM_Gamestart_Debug_C::UpdateGameState()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateGameState", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SM_Gamestart_Debug.WBP_UI_SM_Gamestart_Debug_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_SM_Gamestart_Debug.WBP_UI_SM_Gamestart_Debug_C.ExecuteUbergraph_WBP_UI_SM_Gamestart_Debug
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// const struct FGeometry&                 MyGeometry_Tick                                        (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime_Tick                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SM_Gamestart_Debug_C::Tick(const struct FGeometry& MyGeometry_Tick, float InDeltaTime_Tick)
+void UWBP_UI_SM_Gamestart_Debug_C::ExecuteUbergraph_WBP_UI_SM_Gamestart_Debug(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Tick", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_SM_Gamestart_Debug_C", "ExecuteUbergraph_WBP_UI_SM_Gamestart_Debug", FuncInfo);
 
-	Params::WBP_UI_SM_Gamestart_Debug_C_Tick Parms{};
+	Params::WBP_UI_SM_Gamestart_Debug_C_ExecuteUbergraph_WBP_UI_SM_Gamestart_Debug Parms{};
 
-	Parms.MyGeometry_Tick = std::move(MyGeometry_Tick);
-	Parms.InDeltaTime_Tick = InDeltaTime_Tick;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_SM_Gamestart_Debug.WBP_UI_SM_Gamestart_Debug_C.OnTick
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_SM_Gamestart_Debug_C::OnTick()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnTick", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SM_Gamestart_Debug.WBP_UI_SM_Gamestart_Debug_C.OnMatchmakingGroupChange
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   MMakingGroup_OnMatchmakingGroupChange                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SM_Gamestart_Debug_C::OnMatchmakingGroupChange(int32 MMakingGroup_OnMatchmakingGroupChange)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnMatchmakingGroupChange", FnName));
-
-	Params::WBP_UI_SM_Gamestart_Debug_C_OnMatchmakingGroupChange Parms{};
-
-	Parms.MMakingGroup_OnMatchmakingGroupChange = MMakingGroup_OnMatchmakingGroupChange;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_SM_Gamestart_Debug.WBP_UI_SM_Gamestart_Debug_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_SM_Gamestart_Debug_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SM_Gamestart_Debug.WBP_UI_SM_Gamestart_Debug_C.InitVersionString
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_SM_Gamestart_Debug_C::InitVersionString()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitVersionString", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -132,21 +52,101 @@ void UWBP_UI_SM_Gamestart_Debug_C::InitMatchmakingGroup(int32 inMMakingGroup)
 }
 
 
-// Function WBP_UI_SM_Gamestart_Debug.WBP_UI_SM_Gamestart_Debug_C.ExecuteUbergraph_WBP_UI_SM_Gamestart_Debug
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_SM_Gamestart_Debug.WBP_UI_SM_Gamestart_Debug_C.InitVersionString
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_SM_Gamestart_Debug_C::ExecuteUbergraph_WBP_UI_SM_Gamestart_Debug(int32 EntryPoint)
+void UWBP_UI_SM_Gamestart_Debug_C::InitVersionString()
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_SM_Gamestart_Debug_C", "ExecuteUbergraph_WBP_UI_SM_Gamestart_Debug", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitVersionString", FnName));
 
-	Params::WBP_UI_SM_Gamestart_Debug_C_ExecuteUbergraph_WBP_UI_SM_Gamestart_Debug Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.EntryPoint = EntryPoint;
+
+// Function WBP_UI_SM_Gamestart_Debug.WBP_UI_SM_Gamestart_Debug_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_SM_Gamestart_Debug_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_SM_Gamestart_Debug.WBP_UI_SM_Gamestart_Debug_C.OnMatchmakingGroupChange
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   MMakingGroup                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_SM_Gamestart_Debug_C::OnMatchmakingGroupChange(int32 MMakingGroup)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnMatchmakingGroupChange", FnName));
+
+	Params::WBP_UI_SM_Gamestart_Debug_C_OnMatchmakingGroupChange Parms{};
+
+	Parms.MMakingGroup = MMakingGroup;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_SM_Gamestart_Debug.WBP_UI_SM_Gamestart_Debug_C.OnTick
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_SM_Gamestart_Debug_C::OnTick()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnTick", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_SM_Gamestart_Debug.WBP_UI_SM_Gamestart_Debug_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_SM_Gamestart_Debug_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Tick", FnName));
+
+	Params::WBP_UI_SM_Gamestart_Debug_C_Tick Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_SM_Gamestart_Debug.WBP_UI_SM_Gamestart_Debug_C.UpdateGameState
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_SM_Gamestart_Debug_C::UpdateGameState()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateGameState", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_SM_Gamestart_Debug.WBP_UI_SM_Gamestart_Debug_C.UpdateTime
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_SM_Gamestart_Debug_C::UpdateTime()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateTime", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -26,8 +26,8 @@ public:
 	class ABP_Int_SingleDoor_Reinforced_Industrial_03_C* BP_Int_SingleDoor_Reinforced_Industrial_4_ExecuteUbergraph_E_Cookie_RefProperty; // 0x03E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_E_Cookie(int32 EntryPoint);
 	void OnRandomPlacementStarted();
+	void ExecuteUbergraph_E_Cookie(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -43,5 +43,6 @@ public:
 		return GetDefaultObjImpl<AE_Cookie_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_Cookie_C;
 
 SDK_NAMESPACE_END

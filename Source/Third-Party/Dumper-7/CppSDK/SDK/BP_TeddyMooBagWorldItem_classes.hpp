@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_TeddyMooBagWorldItem_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_TeddyMooBagWorldItem_C;
 
 SDK_NAMESPACE_END

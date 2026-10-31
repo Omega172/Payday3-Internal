@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_STO_ComputerHackingTimer.WBP_STO_ComputerHackingTimer_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_STO_ComputerHackingTimer_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_STO_ComputerHackingTimer_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_STO_ComputerHackingTimer.WBP_STO_ComputerHackingTimer_C.ExecuteUbergraph_WBP_STO_ComputerHackingTimer
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,34 +41,12 @@ SDK_NAMESPACE_START
 
 void UWBP_STO_ComputerHackingTimer_C::ExecuteUbergraph_WBP_STO_ComputerHackingTimer(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ComputerHackingTimer_C", "ExecuteUbergraph_WBP_STO_ComputerHackingTimer");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_STO_ComputerHackingTimer_C", "ExecuteUbergraph_WBP_STO_ComputerHackingTimer", FuncInfo);
 
 	Params::WBP_STO_ComputerHackingTimer_C_ExecuteUbergraph_WBP_STO_ComputerHackingTimer Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_STO_ComputerHackingTimer.WBP_STO_ComputerHackingTimer_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_STO_ComputerHackingTimer_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ComputerHackingTimer_C", "PreConstruct");
-
-	Params::WBP_STO_ComputerHackingTimer_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

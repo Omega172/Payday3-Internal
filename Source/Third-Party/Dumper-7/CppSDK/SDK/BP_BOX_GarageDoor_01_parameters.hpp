@@ -17,6 +17,16 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_BOX_GarageDoor_01.BP_BOX_GarageDoor_01_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_BOX_GarageDoor_01_C_OnStateChanged final
+{
+public:
+	bool                                          bStateToChangeTo_OnStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BOX_GarageDoor_01_C_OnStateChanged;
+
 // Function BP_BOX_GarageDoor_01.BP_BOX_GarageDoor_01_C.ExecuteUbergraph_BP_BOX_GarageDoor_01
 // 0x0140 (0x0140 - 0x0000)
 struct BP_BOX_GarageDoor_01_C_ExecuteUbergraph_BP_BOX_GarageDoor_01 final
@@ -32,15 +42,7 @@ public:
 	double                                        CallFunc_Multiply_DoubleDouble_A_ImplicitCast;     // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_MakeRotator_Roll_ImplicitCast;            // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_BOX_GarageDoor_01.BP_BOX_GarageDoor_01_C.OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_BOX_GarageDoor_01_C_OnStateChanged final
-{
-public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_BOX_GarageDoor_01_C_ExecuteUbergraph_BP_BOX_GarageDoor_01;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

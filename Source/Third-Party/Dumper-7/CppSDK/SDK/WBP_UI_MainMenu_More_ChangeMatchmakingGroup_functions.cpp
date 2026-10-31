@@ -16,67 +16,21 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_MainMenu_More_ChangeMatchmakingGroup.WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C.OnRemovedFromStack
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_MainMenu_More_ChangeMatchmakingGroup.WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C.BndEvt__EditableTextBox_Email_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FText&                      Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// ETextCommit                             CommitMethod                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_MainMenu_More_ChangeMatchmakingGroup_C::OnRemovedFromStack()
+void UWBP_UI_MainMenu_More_ChangeMatchmakingGroup_C::BndEvt__EditableTextBox_Email_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRemovedFromStack", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__EditableTextBox_Email_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature", FnName));
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C_BndEvt__EditableTextBox_Email_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature Parms{};
 
-
-// Function WBP_UI_MainMenu_More_ChangeMatchmakingGroup.WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FName&                      PreviousValue_OnGainedStackFocused                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_MainMenu_More_ChangeMatchmakingGroup_C::OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
-
-	Params::WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C_OnGainedStackFocused Parms{};
-
-	Parms.PreviousValue_OnGainedStackFocused = PreviousValue_OnGainedStackFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_More_ChangeMatchmakingGroup.WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C.ExecuteUbergraph_WBP_UI_MainMenu_More_ChangeMatchmakingGroup
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_MainMenu_More_ChangeMatchmakingGroup_C::ExecuteUbergraph_WBP_UI_MainMenu_More_ChangeMatchmakingGroup(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C", "ExecuteUbergraph_WBP_UI_MainMenu_More_ChangeMatchmakingGroup", FuncInfo);
-
-	Params::WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C_ExecuteUbergraph_WBP_UI_MainMenu_More_ChangeMatchmakingGroup Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_MainMenu_More_ChangeMatchmakingGroup.WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C.BndEvt__WBP_UI_MainMenu_More_ChangeMatchmakingGroup_Button_SetMMGroup_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_MainMenu_More_ChangeMatchmakingGroup_C::BndEvt__WBP_UI_MainMenu_More_ChangeMatchmakingGroup_Button_SetMMGroup_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_MainMenu_More_ChangeMatchmakingGroup_Button_SetMMGroup_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature", FnName));
-
-	Params::WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C_BndEvt__WBP_UI_MainMenu_More_ChangeMatchmakingGroup_Button_SetMMGroup_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature Parms{};
-
-	Parms.Button = Button;
+	Parms.Text = std::move(Text);
+	Parms.CommitMethod = CommitMethod;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -100,23 +54,69 @@ void UWBP_UI_MainMenu_More_ChangeMatchmakingGroup_C::BndEvt__WBP_UI_MainMenu_Mor
 }
 
 
-// Function WBP_UI_MainMenu_More_ChangeMatchmakingGroup.WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C.BndEvt__EditableTextBox_Email_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature
-// (HasOutParams, BlueprintEvent)
+// Function WBP_UI_MainMenu_More_ChangeMatchmakingGroup.WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C.BndEvt__WBP_UI_MainMenu_More_ChangeMatchmakingGroup_Button_SetMMGroup_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// const class FText&                      Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// ETextCommit                             CommitMethod                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_MainMenu_More_ChangeMatchmakingGroup_C::BndEvt__EditableTextBox_Email_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature(const class FText& Text, ETextCommit CommitMethod)
+void UWBP_UI_MainMenu_More_ChangeMatchmakingGroup_C::BndEvt__WBP_UI_MainMenu_More_ChangeMatchmakingGroup_Button_SetMMGroup_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__EditableTextBox_Email_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_MainMenu_More_ChangeMatchmakingGroup_Button_SetMMGroup_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature", FnName));
 
-	Params::WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C_BndEvt__EditableTextBox_Email_K2Node_ComponentBoundEvent_2_OnEditableTextBoxCommittedEvent__DelegateSignature Parms{};
+	Params::WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C_BndEvt__WBP_UI_MainMenu_More_ChangeMatchmakingGroup_Button_SetMMGroup_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature Parms{};
 
-	Parms.Text = std::move(Text);
-	Parms.CommitMethod = CommitMethod;
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_More_ChangeMatchmakingGroup.WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C.ExecuteUbergraph_WBP_UI_MainMenu_More_ChangeMatchmakingGroup
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_More_ChangeMatchmakingGroup_C::ExecuteUbergraph_WBP_UI_MainMenu_More_ChangeMatchmakingGroup(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C", "ExecuteUbergraph_WBP_UI_MainMenu_More_ChangeMatchmakingGroup", FuncInfo);
+
+	Params::WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C_ExecuteUbergraph_WBP_UI_MainMenu_More_ChangeMatchmakingGroup Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_More_ChangeMatchmakingGroup.WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_MainMenu_More_ChangeMatchmakingGroup_C::OnGainedStackFocused(const class FName& PreviousValue)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
+
+	Params::WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C_OnGainedStackFocused Parms{};
+
+	Parms.PreviousValue = PreviousValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_MainMenu_More_ChangeMatchmakingGroup.WBP_UI_MainMenu_More_ChangeMatchmakingGroup_C.OnRemovedFromStack
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_MainMenu_More_ChangeMatchmakingGroup_C::OnRemovedFromStack()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRemovedFromStack", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

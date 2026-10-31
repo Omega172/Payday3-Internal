@@ -17,53 +17,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_MainMenu_CategorySelectionScreen.WBP_MainMenu_CategorySelectionScreen_C.SetControlReference
-// 0x0100 (0x0100 - 0x0000)
-struct WBP_MainMenu_CategorySelectionScreen_C_SetControlReference final
-{
-public:
-	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable;                                // 0x0008(0x0010)()
-	class FText                                   Temp_text_Variable_1;                              // 0x0018(0x0010)()
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x0028(0x0038)()
-	TDelegate<void(class FName ActionName)>       K2Node_CreateDelegate_OutputDelegate;              // 0x0060(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select_Default;                             // 0x0078(0x0010)()
-	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_1;     // 0x0090(0x0038)()
-	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x00C8(0x0010)(ReferenceParm)
-	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x00D8(0x0028)()
-};
-DUMPER7_ASSERTS_WBP_MainMenu_CategorySelectionScreen_C_SetControlReference;
-
-// Function WBP_MainMenu_CategorySelectionScreen.WBP_MainMenu_CategorySelectionScreen_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_MainMenu_CategorySelectionScreen_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_CategorySelectionScreen_C_PreConstruct;
-
-// Function WBP_MainMenu_CategorySelectionScreen.WBP_MainMenu_CategorySelectionScreen_C.OnGainedStackFocused
-// 0x000C (0x000C - 0x0000)
-struct WBP_MainMenu_CategorySelectionScreen_C_OnGainedStackFocused final
-{
-public:
-	class FName                                   PreviousValue_OnGainedStackFocused;                // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_CategorySelectionScreen_C_OnGainedStackFocused;
-
-// Function WBP_MainMenu_CategorySelectionScreen.WBP_MainMenu_CategorySelectionScreen_C.OnControlsReferencePressed
-// 0x000C (0x000C - 0x0000)
-struct WBP_MainMenu_CategorySelectionScreen_C_OnControlsReferencePressed final
-{
-public:
-	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_MainMenu_CategorySelectionScreen_C_OnControlsReferencePressed;
-
 // Function WBP_MainMenu_CategorySelectionScreen.WBP_MainMenu_CategorySelectionScreen_C.ExecuteUbergraph_WBP_MainMenu_CategorySelectionScreen
 // 0x0108 (0x0108 - 0x0000)
 struct WBP_MainMenu_CategorySelectionScreen_C_ExecuteUbergraph_WBP_MainMenu_CategorySelectionScreen final
@@ -130,6 +83,53 @@ public:
 	bool                                          CallFunc_IsStackLocked_ReturnValue;                // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_MainMenu_CategorySelectionScreen_C_ExecuteUbergraph_WBP_MainMenu_CategorySelectionScreen;
+
+// Function WBP_MainMenu_CategorySelectionScreen.WBP_MainMenu_CategorySelectionScreen_C.OnControlsReferencePressed
+// 0x000C (0x000C - 0x0000)
+struct WBP_MainMenu_CategorySelectionScreen_C_OnControlsReferencePressed final
+{
+public:
+	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_CategorySelectionScreen_C_OnControlsReferencePressed;
+
+// Function WBP_MainMenu_CategorySelectionScreen.WBP_MainMenu_CategorySelectionScreen_C.OnGainedStackFocused
+// 0x000C (0x000C - 0x0000)
+struct WBP_MainMenu_CategorySelectionScreen_C_OnGainedStackFocused final
+{
+public:
+	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_CategorySelectionScreen_C_OnGainedStackFocused;
+
+// Function WBP_MainMenu_CategorySelectionScreen.WBP_MainMenu_CategorySelectionScreen_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_MainMenu_CategorySelectionScreen_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_MainMenu_CategorySelectionScreen_C_PreConstruct;
+
+// Function WBP_MainMenu_CategorySelectionScreen.WBP_MainMenu_CategorySelectionScreen_C.SetControlReference
+// 0x0100 (0x0100 - 0x0000)
+struct WBP_MainMenu_CategorySelectionScreen_C_SetControlReference final
+{
+public:
+	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable;                                // 0x0008(0x0010)()
+	class FText                                   Temp_text_Variable_1;                              // 0x0018(0x0010)()
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x0028(0x0038)()
+	TDelegate<void(class FName ActionName)>       K2Node_CreateDelegate_OutputDelegate;              // 0x0060(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_Select_Default;                             // 0x0078(0x0010)()
+	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_1;     // 0x0090(0x0038)()
+	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x00C8(0x0010)(ReferenceParm)
+	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x00D8(0x0028)()
+};
+DUMPER7_ASSERTS_WBP_MainMenu_CategorySelectionScreen_C_SetControlReference;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -14,25 +14,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_Widget_Debug_MainMenuVersionText_.WBP_UI_Widget_Debug_MainMenuVersionText__C.SetText
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_UI_Widget_Debug_MainMenuVersionText__C_SetText final
-{
-public:
-	class FString                                 NewParam;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0010(0x0010)()
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_Debug_MainMenuVersionText__C_SetText;
-
-// Function WBP_UI_Widget_Debug_MainMenuVersionText_.WBP_UI_Widget_Debug_MainMenuVersionText__C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Widget_Debug_MainMenuVersionText__C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_Debug_MainMenuVersionText__C_PreConstruct;
-
 // Function WBP_UI_Widget_Debug_MainMenuVersionText_.WBP_UI_Widget_Debug_MainMenuVersionText__C.ExecuteUbergraph_WBP_UI_Widget_Debug_MainMenuVersionText_
 // 0x0018 (0x0018 - 0x0000)
 struct WBP_UI_Widget_Debug_MainMenuVersionText__C_ExecuteUbergraph_WBP_UI_Widget_Debug_MainMenuVersionText_ final
@@ -44,6 +25,25 @@ public:
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0008(0x0010)()
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_Debug_MainMenuVersionText__C_ExecuteUbergraph_WBP_UI_Widget_Debug_MainMenuVersionText_;
+
+// Function WBP_UI_Widget_Debug_MainMenuVersionText_.WBP_UI_Widget_Debug_MainMenuVersionText__C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Widget_Debug_MainMenuVersionText__C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_Debug_MainMenuVersionText__C_PreConstruct;
+
+// Function WBP_UI_Widget_Debug_MainMenuVersionText_.WBP_UI_Widget_Debug_MainMenuVersionText__C.SetText
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_UI_Widget_Debug_MainMenuVersionText__C_SetText final
+{
+public:
+	class FString                                 NewParam;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0010(0x0010)()
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_Debug_MainMenuVersionText__C_SetText;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

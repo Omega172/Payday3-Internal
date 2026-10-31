@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AE_FirstPlayable_Ext_Street_Floor_optimisation_test2_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_FirstPlayable_Ext_Street_Floor_optimisation_test2_C;
 
 SDK_NAMESPACE_END

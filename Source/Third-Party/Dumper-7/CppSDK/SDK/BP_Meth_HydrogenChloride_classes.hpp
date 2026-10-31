@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Meth_HydrogenChloride_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Meth_HydrogenChloride_C;
 
 SDK_NAMESPACE_END

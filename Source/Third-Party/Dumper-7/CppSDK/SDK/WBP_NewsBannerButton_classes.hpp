@@ -49,22 +49,22 @@ public:
 	TMulticastInlineDelegate<void(int32 NewIndex)> OnCarouselPageIndexChanged;                       // 0x04E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void SetCarouselScrollingEnabled(bool InEnable);
-	void PrePush_8EB9615743E868CC16B8B98168973148(class USBZMenuStackScreenWidget* MenuWidget);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void PostPush_8EB9615743E868CC16B8B98168973148(class USBZMenuStackScreenWidget* MenuWidget);
-	void OnPageChanged(class USBZCarouselWidget* CarouselWidget, int32 CurrentPageIndex);
-	void OnLoaded_813F0F464F27D3064999EA93F00DB390(TSubclassOf<class UObject> Loaded);
-	void OnInitialized();
-	void OnHoveredChanged(bool InHovered);
-	void OnFocusedChanged(bool InFocused);
-	void NavigateToPage(int32 InNavigateIndex);
-	void InitializeNewsEntries(TArray<struct FSBZNewsDataUIEntry>& InNewsEntries, class UWBP_PageCycler_C* PageCycler);
-	void ExecuteUbergraph_WBP_NewsBannerButton(int32 EntryPoint);
-	void Destruct();
-	void ButtonSelected();
-	void ButtonFocusChanging(bool bInHasFocus_ButtonFocusChanging);
 	void AddItem(TSoftObjectPtr<class UPaperSprite> InNewsBannerSprite);
+	void ButtonFocusChanging(bool bInHasFocus);
+	void ButtonSelected();
+	void Destruct();
+	void ExecuteUbergraph_WBP_NewsBannerButton(int32 EntryPoint);
+	void InitializeNewsEntries(TArray<struct FSBZNewsDataUIEntry>& InNewsEntries, class UWBP_PageCycler_C* PageCycler);
+	void NavigateToPage(int32 InNavigateIndex);
+	void OnFocusedChanged(bool InFocused);
+	void OnHoveredChanged(bool InHovered);
+	void OnInitialized();
+	void OnLoaded_813F0F464F27D3064999EA93F00DB390(TSubclassOf<class UObject> Loaded);
+	void OnPageChanged(class USBZCarouselWidget* CarouselWidget, int32 CurrentPageIndex);
+	void PostPush_8EB9615743E868CC16B8B98168973148(class USBZMenuStackScreenWidget* MenuWidget);
+	void PreConstruct(bool IsDesignTime);
+	void PrePush_8EB9615743E868CC16B8B98168973148(class USBZMenuStackScreenWidget* MenuWidget);
+	void SetCarouselScrollingEnabled(bool InEnable);
 
 public:
 	static class UClass* StaticClass()

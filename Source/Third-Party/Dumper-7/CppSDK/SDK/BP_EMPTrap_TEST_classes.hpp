@@ -32,13 +32,13 @@ public:
 	TMulticastInlineDelegate<void()>              OnCompleteInteraction;                             // 0x03A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__BP_EMPTrap_TEST_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void EnableVisibility();
-	void ExecuteUbergraph_BP_EMPTrap_TEST(int32 EntryPoint);
-	void GetState(int32* State_0);
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void ReceiveBeginPlay();
 	void SetOffEmp();
+	void ReceiveBeginPlay();
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void GetState(int32* State);
+	void ExecuteUbergraph_BP_EMPTrap_TEST(int32 EntryPoint);
+	void EnableVisibility();
+	void BndEvt__BP_EMPTrap_TEST_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -54,5 +54,6 @@ public:
 		return GetDefaultObjImpl<ABP_EMPTrap_TEST_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_EMPTrap_TEST_C;
 
 SDK_NAMESPACE_END

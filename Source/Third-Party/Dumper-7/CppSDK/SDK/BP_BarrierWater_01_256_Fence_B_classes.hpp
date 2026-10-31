@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_BarrierWater_01_256_Fence_B_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BarrierWater_01_256_Fence_B_C;
 
 SDK_NAMESPACE_END

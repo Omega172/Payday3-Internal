@@ -24,8 +24,8 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteUbergraph_R_FirstPlayable_MiscITRoom(int32 EntryPoint);
 	void OnRandomSublevelPlaced();
+	void ExecuteUbergraph_R_FirstPlayable_MiscITRoom(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -41,5 +41,6 @@ public:
 		return GetDefaultObjImpl<AR_FirstPlayable_MiscITRoom_C>();
 	}
 };
+DUMPER7_ASSERTS_AR_FirstPlayable_MiscITRoom_C;
 
 SDK_NAMESPACE_END

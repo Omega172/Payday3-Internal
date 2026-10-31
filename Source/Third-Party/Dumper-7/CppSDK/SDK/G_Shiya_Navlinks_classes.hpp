@@ -30,8 +30,8 @@ public:
 	class ABP_NavLink_Agility_C*                  BP_NavLink_Agility124_ExecuteUbergraph_G_Shiya_Navlinks_RefProperty; // 0x03F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged);
 	void ExecuteUbergraph_G_Shiya_Navlinks(int32 EntryPoint);
-	void HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState);
 
 public:
 	static class UClass* StaticClass()
@@ -47,5 +47,6 @@ public:
 		return GetDefaultObjImpl<AG_Shiya_Navlinks_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_Shiya_Navlinks_C;
 
 SDK_NAMESPACE_END

@@ -27,12 +27,12 @@ public:
 	class ABP_FirstAidPack_C*                     BP_FirstAidPack3_ExecuteUbergraph_R_ArtGallery_BreakRoom_RefProperty; // 0x03E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ArtGallery_BreakRoomKeycardEvent(bool GreenKeycard);
-	void BndEvt__R_ArtGallery_BreakRoom_BP_GreenKeycard2_K2Node_ActorBoundEvent_1_OnInteractedComplete__DelegateSignature();
-	void BndEvt__R_ArtGallery_BreakRoom_BP_GreenKeycard3_K2Node_ActorBoundEvent_2_OnInteractedComplete__DelegateSignature();
-	void BndEvt__R_ArtGallery_BreakRoom_BP_GreenKeycard_2_K2Node_ActorBoundEvent_0_OnInteractedComplete__DelegateSignature();
-	void ExecuteUbergraph_R_ArtGallery_BreakRoom(int32 EntryPoint);
 	void OnRandomSublevelPlaced();
+	void ExecuteUbergraph_R_ArtGallery_BreakRoom(int32 EntryPoint);
+	void BndEvt__R_ArtGallery_BreakRoom_BP_GreenKeycard_2_K2Node_ActorBoundEvent_0_OnInteractedComplete__DelegateSignature();
+	void BndEvt__R_ArtGallery_BreakRoom_BP_GreenKeycard3_K2Node_ActorBoundEvent_2_OnInteractedComplete__DelegateSignature();
+	void BndEvt__R_ArtGallery_BreakRoom_BP_GreenKeycard2_K2Node_ActorBoundEvent_1_OnInteractedComplete__DelegateSignature();
+	void ArtGallery_BreakRoomKeycardEvent(bool GreenKeycard);
 
 public:
 	static class UClass* StaticClass()
@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<AR_ArtGallery_BreakRoom_C>();
 	}
 };
+DUMPER7_ASSERTS_AR_ArtGallery_BreakRoom_C;
 
 SDK_NAMESPACE_END

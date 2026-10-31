@@ -46,9 +46,9 @@ public:
 	struct FLinearColor                           Hover;                                             // 0x03A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_Menu_1(int32 EntryPoint);
-	void Set_Numbers(const class FString& NewParam);
 	void SetBackFocus(bool NewParam);
+	void Set_Numbers(const class FString& NewParam);
+	void ExecuteUbergraph_WBP_Menu_1(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -64,5 +64,6 @@ public:
 		return GetDefaultObjImpl<UWBP_Menu_1_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_Menu_1_C;
 
 SDK_NAMESPACE_END

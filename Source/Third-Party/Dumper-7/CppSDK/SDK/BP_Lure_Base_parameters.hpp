@@ -21,6 +21,7 @@ struct BP_Lure_Base_C_setInteractionEnabled final
 public:
 	bool                                          bEnabled;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Lure_Base_C_setInteractionEnabled;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -43,14 +43,14 @@ public:
 	struct FVector4                               ColorComplete;                                     // 0x0530(0x0020)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_JewelryMachine_ClaimBagInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
-	void BndEvt__BP_JewelryMachine_ClaimBagInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BP_BagCountUpdated(int32 NumOfBags);
-	void BP_OnRunningStateChanged(ESBZLootProcessorState NewState, bool bDoCosmetics, bool bIsDedicatedServer);
-	void ExecuteUbergraph_BP_JewelryMachine(int32 EntryPoint);
-	void OpenTray_Timeline__FinishedFunc();
-	void OpenTray_Timeline__UpdateFunc();
 	void SetDisplayColor(int32 State, bool Flickering);
+	void OpenTray_Timeline__UpdateFunc();
+	void OpenTray_Timeline__FinishedFunc();
+	void ExecuteUbergraph_BP_JewelryMachine(int32 EntryPoint);
+	void BP_OnRunningStateChanged(ESBZLootProcessorState NewState_BP_OnRunningStateChanged, bool bDoCosmetics_BP_OnRunningStateChanged, bool bIsDedicatedServer_BP_OnRunningStateChanged);
+	void BP_BagCountUpdated(int32 NumOfBags_BP_BagCountUpdated);
+	void BndEvt__BP_JewelryMachine_ClaimBagInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_JewelryMachine_ClaimBagInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
 
 public:
 	static class UClass* StaticClass()
@@ -66,5 +66,6 @@ public:
 		return GetDefaultObjImpl<ABP_JewelryMachine_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_JewelryMachine_C;
 
 SDK_NAMESPACE_END

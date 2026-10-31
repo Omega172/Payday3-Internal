@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_LootableCarPart_trunk_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LootableCarPart_trunk_C;
 
 SDK_NAMESPACE_END

@@ -17,54 +17,26 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_EscapeGarbageTruck.BP_EscapeGarbageTruck_C.BndEvt__BP_EscapeGarbageTruck_bagTriggerVolume_K2Node_ComponentBoundEvent_1_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct BP_EscapeGarbageTruck_C_BndEvt__BP_EscapeGarbageTruck_bagTriggerVolume_K2Node_ComponentBoundEvent_1_SBZBagEnteredDelegate__DelegateSignature final
+// Function BP_EscapeGarbageTruck.BP_EscapeGarbageTruck_C.setMarker
+// 0x000C (0x000C - 0x0000)
+struct BP_EscapeGarbageTruck_C_setMarker final
 {
 public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	bool                                          visible;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_AddLocalMarker_ReturnValue;               // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_EscapeGarbageTruck_C_setMarker;
 
-// Function BP_EscapeGarbageTruck.BP_EscapeGarbageTruck_C.BndEvt__BP_EscapeGarbageTruck_bagTriggerVolume_K2Node_ComponentBoundEvent_4_SBZBagCountChangedDelegate__DelegateSignature
+// Function BP_EscapeGarbageTruck.BP_EscapeGarbageTruck_C.GetMarkerText
 // 0x0010 (0x0010 - 0x0000)
-struct BP_EscapeGarbageTruck_C_BndEvt__BP_EscapeGarbageTruck_bagTriggerVolume_K2Node_ComponentBoundEvent_4_SBZBagCountChangedDelegate__DelegateSignature final
+struct BP_EscapeGarbageTruck_C_GetMarkerText final
 {
 public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Overlapping;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Secured;                                           // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
 };
-
-// Function BP_EscapeGarbageTruck.BP_EscapeGarbageTruck_C.BndEvt__BP_EscapeGarbageTruck_lever_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_EscapeGarbageTruck_C_BndEvt__BP_EscapeGarbageTruck_lever_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_EscapeGarbageTruck.BP_EscapeGarbageTruck_C.BndEvt__BP_EscapeGarbageTruck_lever_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct BP_EscapeGarbageTruck_C_BndEvt__BP_EscapeGarbageTruck_lever_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature final
-{
-public:
-	const class USBZBaseInteractableComponent*    InteractableComponent;                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInNewState;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_EscapeGarbageTruck.BP_EscapeGarbageTruck_C.BndEvt__BP_EscapeGarbageTruck_lever_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_EscapeGarbageTruck_C_BndEvt__BP_EscapeGarbageTruck_lever_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_EscapeGarbageTruck_C_GetMarkerText;
 
 // Function BP_EscapeGarbageTruck.BP_EscapeGarbageTruck_C.ExecuteUbergraph_BP_EscapeGarbageTruck
 // 0x00D0 (0x00D0 - 0x0000)
@@ -103,25 +75,61 @@ public:
 	int32                                         CallFunc_PostAkEvent_ReturnValue_1;                // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_PostAkEvent_ReturnValue_2;                // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_EscapeGarbageTruck_C_ExecuteUbergraph_BP_EscapeGarbageTruck;
 
-// Function BP_EscapeGarbageTruck.BP_EscapeGarbageTruck_C.GetMarkerText
+// Function BP_EscapeGarbageTruck.BP_EscapeGarbageTruck_C.BndEvt__BP_EscapeGarbageTruck_lever_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_EscapeGarbageTruck_C_BndEvt__BP_EscapeGarbageTruck_lever_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_EscapeGarbageTruck_C_BndEvt__BP_EscapeGarbageTruck_lever_SBZInteractable_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature;
+
+// Function BP_EscapeGarbageTruck.BP_EscapeGarbageTruck_C.BndEvt__BP_EscapeGarbageTruck_lever_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct BP_EscapeGarbageTruck_C_GetMarkerText final
+struct BP_EscapeGarbageTruck_C_BndEvt__BP_EscapeGarbageTruck_lever_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature final
 {
 public:
-	class FText                                   ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
+	const class USBZBaseInteractableComponent*    InteractableComponent;                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInNewState;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_EscapeGarbageTruck_C_BndEvt__BP_EscapeGarbageTruck_lever_SBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature;
 
-// Function BP_EscapeGarbageTruck.BP_EscapeGarbageTruck_C.setMarker
-// 0x000C (0x000C - 0x0000)
-struct BP_EscapeGarbageTruck_C_setMarker final
+// Function BP_EscapeGarbageTruck.BP_EscapeGarbageTruck_C.BndEvt__BP_EscapeGarbageTruck_lever_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_EscapeGarbageTruck_C_BndEvt__BP_EscapeGarbageTruck_lever_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature final
 {
 public:
-	bool                                          visible;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_AddLocalMarker_ReturnValue;               // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_EscapeGarbageTruck_C_BndEvt__BP_EscapeGarbageTruck_lever_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature;
+
+// Function BP_EscapeGarbageTruck.BP_EscapeGarbageTruck_C.BndEvt__BP_EscapeGarbageTruck_bagTriggerVolume_K2Node_ComponentBoundEvent_4_SBZBagCountChangedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct BP_EscapeGarbageTruck_C_BndEvt__BP_EscapeGarbageTruck_bagTriggerVolume_K2Node_ComponentBoundEvent_4_SBZBagCountChangedDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Overlapping;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Secured;                                           // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_EscapeGarbageTruck_C_BndEvt__BP_EscapeGarbageTruck_bagTriggerVolume_K2Node_ComponentBoundEvent_4_SBZBagCountChangedDelegate__DelegateSignature;
+
+// Function BP_EscapeGarbageTruck.BP_EscapeGarbageTruck_C.BndEvt__BP_EscapeGarbageTruck_bagTriggerVolume_K2Node_ComponentBoundEvent_1_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct BP_EscapeGarbageTruck_C_BndEvt__BP_EscapeGarbageTruck_bagTriggerVolume_K2Node_ComponentBoundEvent_1_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_BP_EscapeGarbageTruck_C_BndEvt__BP_EscapeGarbageTruck_bagTriggerVolume_K2Node_ComponentBoundEvent_1_SBZBagEnteredDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

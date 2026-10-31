@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ABPL_HangingModern_Circle_Big_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_HangingModern_Circle_Big_C;
 
 SDK_NAMESPACE_END

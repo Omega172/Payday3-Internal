@@ -30,10 +30,10 @@ public:
 	TArray<double>                                CustomPrimitiveData;                               // 0x03B0(0x0010)(Edit, BlueprintVisible)
 
 public:
-	void ExecuteUbergraph_BP_guidanceMesh_Base(int32 EntryPoint);
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void setGuidance(bool visible);
 	void UserConstructionScript();
+	void setGuidance(bool visible);
+	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
+	void ExecuteUbergraph_BP_guidanceMesh_Base(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -49,5 +49,6 @@ public:
 		return GetDefaultObjImpl<ABP_guidanceMesh_Base_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_guidanceMesh_Base_C;
 
 SDK_NAMESPACE_END

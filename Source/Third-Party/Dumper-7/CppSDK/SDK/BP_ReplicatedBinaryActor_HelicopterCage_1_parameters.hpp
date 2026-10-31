@@ -17,6 +17,26 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_ReplicatedBinaryActor_HelicopterCage_1.BP_ReplicatedBinaryActor_HelicopterCage_1_C.SetStateFunction
+// 0x0001 (0x0001 - 0x0000)
+struct BP_ReplicatedBinaryActor_HelicopterCage_1_C_SetStateFunction final
+{
+public:
+	Enum_HelicopterCageStates                     State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ReplicatedBinaryActor_HelicopterCage_1_C_SetStateFunction;
+
+// Function BP_ReplicatedBinaryActor_HelicopterCage_1.BP_ReplicatedBinaryActor_HelicopterCage_1_C.OnStateChanged
+// 0x000C (0x000C - 0x0000)
+struct BP_ReplicatedBinaryActor_HelicopterCage_1_C_OnStateChanged final
+{
+public:
+	int32                                         OldState_OnStateChanged;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewState_OnStateChanged;                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ReplicatedBinaryActor_HelicopterCage_1_C_OnStateChanged;
+
 // Function BP_ReplicatedBinaryActor_HelicopterCage_1.BP_ReplicatedBinaryActor_HelicopterCage_1_C.ExecuteUbergraph_BP_ReplicatedBinaryActor_HelicopterCage_1
 // 0x0058 (0x0058 - 0x0000)
 struct BP_ReplicatedBinaryActor_HelicopterCage_1_C_ExecuteUbergraph_BP_ReplicatedBinaryActor_HelicopterCage_1 final
@@ -35,24 +55,7 @@ public:
 	int32                                         CallFunc_PostEvent_ReturnValue_1;                  // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_PostEvent_ReturnValue_2;                  // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_ReplicatedBinaryActor_HelicopterCage_1.BP_ReplicatedBinaryActor_HelicopterCage_1_C.OnStateChanged
-// 0x000C (0x000C - 0x0000)
-struct BP_ReplicatedBinaryActor_HelicopterCage_1_C_OnStateChanged final
-{
-public:
-	int32                                         OldState;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         NewState;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_ReplicatedBinaryActor_HelicopterCage_1.BP_ReplicatedBinaryActor_HelicopterCage_1_C.SetStateFunction
-// 0x0001 (0x0001 - 0x0000)
-struct BP_ReplicatedBinaryActor_HelicopterCage_1_C_SetStateFunction final
-{
-public:
-	Enum_HelicopterCageStates                     State_0;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_ReplicatedBinaryActor_HelicopterCage_1_C_ExecuteUbergraph_BP_ReplicatedBinaryActor_HelicopterCage_1;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

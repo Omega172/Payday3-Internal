@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<UWBP_Failed_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_Failed_C;
 
 SDK_NAMESPACE_END

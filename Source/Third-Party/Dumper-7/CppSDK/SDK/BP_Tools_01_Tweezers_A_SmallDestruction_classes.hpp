@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Tools_01_Tweezers_A_SmallDestruction_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Tools_01_Tweezers_A_SmallDestruction_C;
 
 SDK_NAMESPACE_END

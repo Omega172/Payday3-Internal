@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UBP_Meth_ExplosionFeedback_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_Meth_ExplosionFeedback_C;
 
 SDK_NAMESPACE_END

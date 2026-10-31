@@ -10,22 +10,24 @@
 
 #include "Basic.hpp"
 
+#include "doorStateSimple_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "AkAudio_structs.hpp"
-#include "doorStateSimple_structs.hpp"
 
 
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_container_DoubleDoors_Breakable.BP_container_DoubleDoors_Breakable_C.BndEvt__BP_container_cooled_Double_doors_blownUp_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct BP_container_DoubleDoors_Breakable_C_BndEvt__BP_container_cooled_Double_doors_blownUp_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature final
+// Function BP_container_DoubleDoors_Breakable.BP_container_DoubleDoors_Breakable_C.OnStateChanged
+// 0x0003 (0x0003 - 0x0000)
+struct BP_container_DoubleDoors_Breakable_C_OnStateChanged final
 {
 public:
-	bool                                          bState;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsInitialStateChange;                             // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_container_DoubleDoors_Breakable_C_OnStateChanged;
 
 // Function BP_container_DoubleDoors_Breakable.BP_container_DoubleDoors_Breakable_C.ExecuteUbergraph_BP_container_DoubleDoors_Breakable
 // 0x0058 (0x0058 - 0x0000)
@@ -58,16 +60,17 @@ public:
 	float                                         CallFunc_SetYaw_InYaw_ImplicitCast_2;              // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetYaw_InYaw_ImplicitCast_3;              // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_container_DoubleDoors_Breakable_C_ExecuteUbergraph_BP_container_DoubleDoors_Breakable;
 
-// Function BP_container_DoubleDoors_Breakable.BP_container_DoubleDoors_Breakable_C.OnStateChanged
-// 0x0003 (0x0003 - 0x0000)
-struct BP_container_DoubleDoors_Breakable_C_OnStateChanged final
+// Function BP_container_DoubleDoors_Breakable.BP_container_DoubleDoors_Breakable_C.BndEvt__BP_container_cooled_Double_doors_blownUp_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct BP_container_DoubleDoors_Breakable_C_BndEvt__BP_container_cooled_Double_doors_blownUp_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature final
 {
 public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsInitialStateChange;                             // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bState;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_container_DoubleDoors_Breakable_C_BndEvt__BP_container_cooled_Double_doors_blownUp_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

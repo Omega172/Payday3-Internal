@@ -23,7 +23,7 @@ public:
 	int32                                         State;                                             // 0x0030(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	bool BP_CheckRequirement(const class USBZInteractorComponent* Interactor, struct FSBZInteractReqData* OutData, bool bIsSignalRequired, bool bInIsScreenInteract, bool bIsCasing, bool bIsEncumbered) const;
+	bool BP_CheckRequirement(const class USBZInteractorComponent* Interactor_BP_CheckRequirement, struct FSBZInteractReqData* OutData_BP_CheckRequirement, bool bIsSignalRequired_BP_CheckRequirement, bool bInIsScreenInteract_BP_CheckRequirement, bool bIsCasing_BP_CheckRequirement, bool bIsEncumbered_BP_CheckRequirement) const;
 
 public:
 	static class UClass* StaticClass()
@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<UBP_SpikesRequirement_Pickup_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_SpikesRequirement_Pickup_C;
 
 SDK_NAMESPACE_END

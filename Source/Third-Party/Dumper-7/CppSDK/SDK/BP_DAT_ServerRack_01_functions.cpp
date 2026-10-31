@@ -16,35 +16,45 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_DAT_ServerRack_01.BP_DAT_ServerRack_01_C.autoAddServers
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_DAT_ServerRack_01.BP_DAT_ServerRack_01_C.validateServers
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_DAT_ServerRack_01_C::autoAddServers()
+void ABP_DAT_ServerRack_01_C::validateServers()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_ServerRack_01_C", "autoAddServers");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"validateServers", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_DAT_ServerRack_01.BP_DAT_ServerRack_01_C.ExecuteUbergraph_BP_DAT_ServerRack_01
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_DAT_ServerRack_01.BP_DAT_ServerRack_01_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_DAT_ServerRack_01_C::ExecuteUbergraph_BP_DAT_ServerRack_01(int32 EntryPoint)
+void ABP_DAT_ServerRack_01_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_ServerRack_01_C", "ExecuteUbergraph_BP_DAT_ServerRack_01");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_DAT_ServerRack_01_C_ExecuteUbergraph_BP_DAT_ServerRack_01 Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+// Function BP_DAT_ServerRack_01.BP_DAT_ServerRack_01_C.onStateChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    state                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    doCosmetics                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_DAT_ServerRack_01_C::onStateChanged(bool state, bool doCosmetics)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"onStateChanged", FnName));
+
+	Params::BP_DAT_ServerRack_01_C_onStateChanged Parms{};
+
+	Parms.state = state;
+	Parms.doCosmetics = doCosmetics;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -57,10 +67,8 @@ void ABP_DAT_ServerRack_01_C::ExecuteUbergraph_BP_DAT_ServerRack_01(int32 EntryP
 
 void ABP_DAT_ServerRack_01_C::onServerPickedUp(class ABP_InteractableDataCenterServer_C* server)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_ServerRack_01_C", "onServerPickedUp");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"onServerPickedUp", FnName));
 
 	Params::BP_DAT_ServerRack_01_C_onServerPickedUp Parms{};
 
@@ -70,51 +78,31 @@ void ABP_DAT_ServerRack_01_C::onServerPickedUp(class ABP_InteractableDataCenterS
 }
 
 
-// Function BP_DAT_ServerRack_01.BP_DAT_ServerRack_01_C.onStateChanged
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_DAT_ServerRack_01.BP_DAT_ServerRack_01_C.ExecuteUbergraph_BP_DAT_ServerRack_01
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    state                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    doCosmetics                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_DAT_ServerRack_01_C::onStateChanged(bool state, bool doCosmetics)
+void ABP_DAT_ServerRack_01_C::ExecuteUbergraph_BP_DAT_ServerRack_01(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_DAT_ServerRack_01_C", "ExecuteUbergraph_BP_DAT_ServerRack_01", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_ServerRack_01_C", "onStateChanged");
+	Params::BP_DAT_ServerRack_01_C_ExecuteUbergraph_BP_DAT_ServerRack_01 Parms{};
 
-	Params::BP_DAT_ServerRack_01_C_onStateChanged Parms{};
-
-	Parms.state = state;
-	Parms.doCosmetics = doCosmetics;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_DAT_ServerRack_01.BP_DAT_ServerRack_01_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_DAT_ServerRack_01.BP_DAT_ServerRack_01_C.autoAddServers
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_DAT_ServerRack_01_C::UserConstructionScript()
+void ABP_DAT_ServerRack_01_C::autoAddServers()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_ServerRack_01_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_DAT_ServerRack_01.BP_DAT_ServerRack_01_C.validateServers
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_DAT_ServerRack_01_C::validateServers()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_ServerRack_01_C", "validateServers");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"autoAddServers", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

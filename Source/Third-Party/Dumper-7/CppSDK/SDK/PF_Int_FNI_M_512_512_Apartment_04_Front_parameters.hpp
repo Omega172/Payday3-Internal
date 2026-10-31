@@ -32,6 +32,7 @@ public:
 	float                                         CallFunc_SetBarnDoorLength_NewValue_ImplicitCast;  // 0x0124(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetIntensity_NewIntensity_ImplicitCast;   // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_PF_Int_FNI_M_512_512_Apartment_04_Front_C_UserConstructionScript;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

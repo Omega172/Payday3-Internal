@@ -40,5 +40,6 @@ public:
 		return GetDefaultObjImpl<AR_Murk_SecurityRoom_C>();
 	}
 };
+DUMPER7_ASSERTS_AR_Murk_SecurityRoom_C;
 
 SDK_NAMESPACE_END

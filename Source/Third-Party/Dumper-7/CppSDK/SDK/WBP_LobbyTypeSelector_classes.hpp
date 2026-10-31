@@ -37,19 +37,19 @@ public:
 	bool                                          bIsConstructed;                                    // 0x0408(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UpdateVisuals();
-	void UpdateType(ESBZOnlineJoinType InLobbyType);
-	void SetFocusVisuals(bool InIsFocused);
-	void Set_Compact(bool InIsCompact);
-	void OnSelectionOptionChanged(int32 InCurrentIndex_OnSelectionOptionChanged, bool bOverrideReadOnly_OnSelectionOptionChanged);
-	void OnSelectedRight();
-	void OnSelectedLeft();
-	void OnInitialized();
-	void ExecuteUbergraph_WBP_LobbyTypeSelector(int32 EntryPoint);
-	void Construct();
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
-	void BndEvt__WBP_UI_Menus_Options_Selector_Button_Right_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
 	void BndEvt__WBP_UI_Menus_Options_Selector_Button_Left_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature();
+	void BndEvt__WBP_UI_Menus_Options_Selector_Button_Right_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void Construct();
+	void ExecuteUbergraph_WBP_LobbyTypeSelector(int32 EntryPoint);
+	void OnInitialized();
+	void OnSelectedLeft();
+	void OnSelectedRight();
+	void OnSelectionOptionChanged(int32 InCurrentIndex, bool bOverrideReadOnly);
+	void Set_Compact(bool InIsCompact);
+	void SetFocusVisuals(bool InIsFocused);
+	void UpdateType(ESBZOnlineJoinType InLobbyType);
+	void UpdateVisuals();
 
 public:
 	static class UClass* StaticClass()

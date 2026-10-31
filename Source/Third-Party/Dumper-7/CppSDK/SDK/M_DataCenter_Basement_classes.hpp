@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AM_DataCenter_Basement_C>();
 	}
 };
+DUMPER7_ASSERTS_AM_DataCenter_Basement_C;
 
 SDK_NAMESPACE_END

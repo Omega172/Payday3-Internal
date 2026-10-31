@@ -39,14 +39,14 @@ public:
 	class UWBP_ConnectedMaintanceBox_C*           widget;                                            // 0x04C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_ConnectedMaintenanceBox_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_ConnectedMaintenanceBox_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_ConnectedMaintenanceBox_isDeactivated_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
-	void BP_OnStateChanged(ESBZMaintenanceBoxState NewState);
-	void BP_UpdateColors(const TArray<int32>& SequenceArray, int32 NumberOfCompleteCables);
-	void BP_UpdateNumberOfConnectedBoxes(const int32 NumberOfBoxes);
-	void ExecuteUbergraph_BP_ConnectedMaintenanceBox(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_ConnectedMaintenanceBox(int32 EntryPoint);
+	void BP_UpdateNumberOfConnectedBoxes(const int32 NumberOfBoxes_BP_UpdateNumberOfConnectedBoxes);
+	void BP_UpdateColors(const TArray<int32>& SequenceArray_BP_UpdateColors, int32 NumberOfCompleteCables_BP_UpdateColors);
+	void BP_OnStateChanged(ESBZMaintenanceBoxState NewState_BP_OnStateChanged);
+	void BndEvt__BP_ConnectedMaintenanceBox_isDeactivated_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
+	void BndEvt__BP_ConnectedMaintenanceBox_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_ConnectedMaintenanceBox_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -62,5 +62,6 @@ public:
 		return GetDefaultObjImpl<ABP_ConnectedMaintenanceBox_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ConnectedMaintenanceBox_C;
 
 SDK_NAMESPACE_END

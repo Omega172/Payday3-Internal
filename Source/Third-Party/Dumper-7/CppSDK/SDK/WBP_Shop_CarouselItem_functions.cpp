@@ -16,19 +16,41 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_Shop_CarouselItem.WBP_Shop_CarouselItem_C.OnUpdateOwnershipStatus
+// Function WBP_Shop_CarouselItem.WBP_Shop_CarouselItem_C.ExecuteUbergraph_WBP_Shop_CarouselItem
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Shop_CarouselItem_C::ExecuteUbergraph_WBP_Shop_CarouselItem(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_Shop_CarouselItem_C", "ExecuteUbergraph_WBP_Shop_CarouselItem", FuncInfo);
+
+	Params::WBP_Shop_CarouselItem_C_ExecuteUbergraph_WBP_Shop_CarouselItem Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Shop_CarouselItem.WBP_Shop_CarouselItem_C.OnShow
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bIsOwned_OnUpdateOwnershipStatus                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLast                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bCanBeInspected                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsVendorPermission                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Shop_CarouselItem_C::OnUpdateOwnershipStatus(bool bIsOwned_OnUpdateOwnershipStatus)
+void UWBP_Shop_CarouselItem_C::OnShow(bool bIsLast, bool bCanBeInspected, bool bIsVendorPermission)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnUpdateOwnershipStatus", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnShow", FnName));
 
-	Params::WBP_Shop_CarouselItem_C_OnUpdateOwnershipStatus Parms{};
+	Params::WBP_Shop_CarouselItem_C_OnShow Parms{};
 
-	Parms.bIsOwned_OnUpdateOwnershipStatus = bIsOwned_OnUpdateOwnershipStatus;
+	Parms.bIsLast = bIsLast;
+	Parms.bCanBeInspected = bCanBeInspected;
+	Parms.bIsVendorPermission = bIsVendorPermission;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -52,41 +74,19 @@ void UWBP_Shop_CarouselItem_C::OnUpdateImagePadding(bool bFill)
 }
 
 
-// Function WBP_Shop_CarouselItem.WBP_Shop_CarouselItem_C.OnShow
+// Function WBP_Shop_CarouselItem.WBP_Shop_CarouselItem_C.OnUpdateOwnershipStatus
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                                    bIsLast_OnShow                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bCanBeInspected_OnShow                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsVendorPermission_OnShow                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsOwned                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_Shop_CarouselItem_C::OnShow(bool bIsLast_OnShow, bool bCanBeInspected_OnShow, bool bIsVendorPermission_OnShow)
+void UWBP_Shop_CarouselItem_C::OnUpdateOwnershipStatus(bool bIsOwned)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnShow", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnUpdateOwnershipStatus", FnName));
 
-	Params::WBP_Shop_CarouselItem_C_OnShow Parms{};
+	Params::WBP_Shop_CarouselItem_C_OnUpdateOwnershipStatus Parms{};
 
-	Parms.bIsLast_OnShow = bIsLast_OnShow;
-	Parms.bCanBeInspected_OnShow = bCanBeInspected_OnShow;
-	Parms.bIsVendorPermission_OnShow = bIsVendorPermission_OnShow;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Shop_CarouselItem.WBP_Shop_CarouselItem_C.ExecuteUbergraph_WBP_Shop_CarouselItem
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Shop_CarouselItem_C::ExecuteUbergraph_WBP_Shop_CarouselItem(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_Shop_CarouselItem_C", "ExecuteUbergraph_WBP_Shop_CarouselItem", FuncInfo);
-
-	Params::WBP_Shop_CarouselItem_C_ExecuteUbergraph_WBP_Shop_CarouselItem Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.bIsOwned = bIsOwned;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

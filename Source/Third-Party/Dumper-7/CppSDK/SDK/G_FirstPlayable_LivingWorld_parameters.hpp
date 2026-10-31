@@ -45,6 +45,7 @@ public:
 	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_17;           // 0x0120(0x0010)()
 	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_18;           // 0x0130(0x0010)()
 };
+DUMPER7_ASSERTS_G_FirstPlayable_LivingWorld_C_ExecuteUbergraph_G_FirstPlayable_LivingWorld;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

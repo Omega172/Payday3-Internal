@@ -16,97 +16,61 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_PageCycler.WBP_PageCycler_C.UpdateActiveIndex
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_PageCycler.WBP_PageCycler_C.CreateAndAddPageCount
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   InNewIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PageCycler_C::UpdateActiveIndex(int32 InNewIndex)
+void UWBP_PageCycler_C::CreateAndAddPageCount(int32 Index_0)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateActiveIndex", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CreateAndAddPageCount", FnName));
 
-	Params::WBP_PageCycler_C_UpdateActiveIndex Parms{};
+	Params::WBP_PageCycler_C_CreateAndAddPageCount Parms{};
 
-	Parms.InNewIndex = InNewIndex;
+	Parms.Index_0 = Index_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PageCycler.WBP_PageCycler_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PageCycler_C::PreConstruct(bool IsDesignTime_PreConstruct)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
-
-	Params::WBP_PageCycler_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PageCycler.WBP_PageCycler_C.OnRightNavigationPressed
+// Function WBP_PageCycler.WBP_PageCycler_C.DisableActionNavigation
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_PageCycler_C::OnRightNavigationPressed()
+void UWBP_PageCycler_C::DisableActionNavigation()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRightNavigationPressed", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DisableActionNavigation", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PageCycler.WBP_PageCycler_C.OnNavItemClicked
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   InIndex                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_PageCycler_C::OnNavItemClicked(int32 InIndex)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnNavItemClicked", FnName));
-
-	Params::WBP_PageCycler_C_OnNavItemClicked Parms{};
-
-	Parms.InIndex = InIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_PageCycler.WBP_PageCycler_C.OnLeftNavigationPressed
+// Function WBP_PageCycler.WBP_PageCycler_C.EnableActionNavigation
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_PageCycler_C::OnLeftNavigationPressed()
+void UWBP_PageCycler_C::EnableActionNavigation()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLeftNavigationPressed", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EnableActionNavigation", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PageCycler.WBP_PageCycler_C.OnInputTypeChanged
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_PageCycler.WBP_PageCycler_C.ExecuteUbergraph_WBP_PageCycler
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    bKeyboardMouseInput                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PageCycler_C::OnInputTypeChanged(bool bKeyboardMouseInput)
+void UWBP_PageCycler_C::ExecuteUbergraph_WBP_PageCycler(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInputTypeChanged", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_PageCycler_C", "ExecuteUbergraph_WBP_PageCycler", FuncInfo);
 
-	Params::WBP_PageCycler_C_OnInputTypeChanged Parms{};
+	Params::WBP_PageCycler_C_ExecuteUbergraph_WBP_PageCycler Parms{};
 
-	Parms.bKeyboardMouseInput = bKeyboardMouseInput;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -130,61 +94,97 @@ void UWBP_PageCycler_C::OnAddedPage(int32 InIndex)
 }
 
 
-// Function WBP_PageCycler.WBP_PageCycler_C.ExecuteUbergraph_WBP_PageCycler
-// (Final, UbergraphFunction)
+// Function WBP_PageCycler.WBP_PageCycler_C.OnInputTypeChanged
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bKeyboardMouseInput                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PageCycler_C::ExecuteUbergraph_WBP_PageCycler(int32 EntryPoint)
+void UWBP_PageCycler_C::OnInputTypeChanged(bool bKeyboardMouseInput)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_PageCycler_C", "ExecuteUbergraph_WBP_PageCycler", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInputTypeChanged", FnName));
 
-	Params::WBP_PageCycler_C_ExecuteUbergraph_WBP_PageCycler Parms{};
+	Params::WBP_PageCycler_C_OnInputTypeChanged Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.bKeyboardMouseInput = bKeyboardMouseInput;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_PageCycler.WBP_PageCycler_C.EnableActionNavigation
+// Function WBP_PageCycler.WBP_PageCycler_C.OnLeftNavigationPressed
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_PageCycler_C::EnableActionNavigation()
+void UWBP_PageCycler_C::OnLeftNavigationPressed()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EnableActionNavigation", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLeftNavigationPressed", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_PageCycler.WBP_PageCycler_C.DisableActionNavigation
+// Function WBP_PageCycler.WBP_PageCycler_C.OnNavItemClicked
 // (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PageCycler_C::DisableActionNavigation()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DisableActionNavigation", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_PageCycler.WBP_PageCycler_C.CreateAndAddPageCount
-// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   InIndex                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PageCycler_C::CreateAndAddPageCount(int32 Index_0)
+void UWBP_PageCycler_C::OnNavItemClicked(int32 InIndex)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CreateAndAddPageCount", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnNavItemClicked", FnName));
 
-	Params::WBP_PageCycler_C_CreateAndAddPageCount Parms{};
+	Params::WBP_PageCycler_C_OnNavItemClicked Parms{};
 
-	Parms.Index_0 = Index_0;
+	Parms.InIndex = InIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PageCycler.WBP_PageCycler_C.OnRightNavigationPressed
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PageCycler_C::OnRightNavigationPressed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRightNavigationPressed", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_PageCycler.WBP_PageCycler_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PageCycler_C::PreConstruct(bool IsDesignTime)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_PageCycler_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_PageCycler.WBP_PageCycler_C.UpdateActiveIndex
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   InNewIndex                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_PageCycler_C::UpdateActiveIndex(int32 InNewIndex)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateActiveIndex", FnName));
+
+	Params::WBP_PageCycler_C_UpdateActiveIndex Parms{};
+
+	Parms.InNewIndex = InNewIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

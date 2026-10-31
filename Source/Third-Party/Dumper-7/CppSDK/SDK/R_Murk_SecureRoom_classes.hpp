@@ -33,10 +33,10 @@ public:
 	class ASBZWaypoint*                           SBZWaypoint_ControlRoom_1_ExecuteUbergraph_R_Murk_SecureRoom_RefProperty; // 0x03E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__R_Murk_SecureRoom_SBZPlayerTriggerVolume_PlayerInsideControlRoom_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void Event_AddWaypoint_ControlRoom();
-	void Event_RemoveWaypoint_ControlRoom();
 	void ExecuteUbergraph_R_Murk_SecureRoom(int32 EntryPoint);
+	void Event_RemoveWaypoint_ControlRoom();
+	void Event_AddWaypoint_ControlRoom();
+	void BndEvt__R_Murk_SecureRoom_SBZPlayerTriggerVolume_PlayerInsideControlRoom_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
 
 public:
 	static class UClass* StaticClass()
@@ -52,5 +52,6 @@ public:
 		return GetDefaultObjImpl<AR_Murk_SecureRoom_C>();
 	}
 };
+DUMPER7_ASSERTS_AR_Murk_SecureRoom_C;
 
 SDK_NAMESPACE_END

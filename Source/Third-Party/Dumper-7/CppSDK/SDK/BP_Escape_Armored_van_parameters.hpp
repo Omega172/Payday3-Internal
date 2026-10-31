@@ -14,13 +14,14 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_Escape_Armored_van.BP_Escape_Armored_van_C.BndEvt__BP_EscapeVan_SBZSecuredBagVisualize_K2Node_ComponentBoundEvent_0_SBZSecuredBagVisualizeBagAddedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Escape_Armored_van_C_BndEvt__BP_EscapeVan_SBZSecuredBagVisualize_K2Node_ComponentBoundEvent_0_SBZSecuredBagVisualizeBagAddedSignature__DelegateSignature final
+// Function BP_Escape_Armored_van.BP_Escape_Armored_van_C.UserConstructionScript
+// 0x0001 (0x0001 - 0x0000)
+struct BP_Escape_Armored_van_C_UserConstructionScript final
 {
 public:
-	const class USBZBagType*                      BagType;                                           // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_ApplyVariationToSkeletal_ReturnValue;     // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Escape_Armored_van_C_UserConstructionScript;
 
 // Function BP_Escape_Armored_van.BP_Escape_Armored_van_C.ExecuteUbergraph_BP_Escape_Armored_van
 // 0x0018 (0x0018 - 0x0000)
@@ -32,14 +33,16 @@ public:
 	const class USBZBagType*                      K2Node_ComponentBoundEvent_BagType;                // 0x0008(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_ApplyVariationToSkeletal_ReturnValue;     // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Escape_Armored_van_C_ExecuteUbergraph_BP_Escape_Armored_van;
 
-// Function BP_Escape_Armored_van.BP_Escape_Armored_van_C.UserConstructionScript
-// 0x0001 (0x0001 - 0x0000)
-struct BP_Escape_Armored_van_C_UserConstructionScript final
+// Function BP_Escape_Armored_van.BP_Escape_Armored_van_C.BndEvt__BP_EscapeVan_SBZSecuredBagVisualize_K2Node_ComponentBoundEvent_0_SBZSecuredBagVisualizeBagAddedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Escape_Armored_van_C_BndEvt__BP_EscapeVan_SBZSecuredBagVisualize_K2Node_ComponentBoundEvent_0_SBZSecuredBagVisualizeBagAddedSignature__DelegateSignature final
 {
 public:
-	bool                                          CallFunc_ApplyVariationToSkeletal_ReturnValue;     // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class USBZBagType*                      BagType;                                           // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Escape_Armored_van_C_BndEvt__BP_EscapeVan_SBZSecuredBagVisualize_K2Node_ComponentBoundEvent_0_SBZSecuredBagVisualizeBagAddedSignature__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

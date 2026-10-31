@@ -16,23 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_VIPInvitation_Blank.BP_VIPInvitation_Blank_C.GetSensorComponent
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZSensorComponent*              ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function BP_VIPInvitation_Blank.BP_VIPInvitation_Blank_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-class USBZSensorComponent* ABP_VIPInvitation_Blank_C::GetSensorComponent()
+void ABP_VIPInvitation_Blank_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VIPInvitation_Blank_C", "GetSensorComponent");
-
-	Params::BP_VIPInvitation_Blank_C_GetSensorComponent Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -43,10 +35,8 @@ class USBZSensorComponent* ABP_VIPInvitation_Blank_C::GetSensorComponent()
 
 class USBZOutlineComponent* ABP_VIPInvitation_Blank_C::GetSensorOutlineComponent()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VIPInvitation_Blank_C", "GetSensorOutlineComponent");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetSensorOutlineComponent", FnName));
 
 	Params::BP_VIPInvitation_Blank_C_GetSensorOutlineComponent Parms{};
 
@@ -56,17 +46,21 @@ class USBZOutlineComponent* ABP_VIPInvitation_Blank_C::GetSensorOutlineComponent
 }
 
 
-// Function BP_VIPInvitation_Blank.BP_VIPInvitation_Blank_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_VIPInvitation_Blank.BP_VIPInvitation_Blank_C.GetSensorComponent
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZSensorComponent*              ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_VIPInvitation_Blank_C::UserConstructionScript()
+class USBZSensorComponent* ABP_VIPInvitation_Blank_C::GetSensorComponent()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetSensorComponent", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VIPInvitation_Blank_C", "UserConstructionScript");
+	Params::BP_VIPInvitation_Blank_C_GetSensorComponent Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 

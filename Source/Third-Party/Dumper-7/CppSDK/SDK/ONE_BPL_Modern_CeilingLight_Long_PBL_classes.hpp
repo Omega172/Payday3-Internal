@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<AONE_BPL_Modern_CeilingLight_Long_PBL_C>();
 	}
 };
+DUMPER7_ASSERTS_AONE_BPL_Modern_CeilingLight_Long_PBL_C;
 
 SDK_NAMESPACE_END

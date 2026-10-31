@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABP_LA_Escort_ToCover_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LA_Escort_ToCover_C;
 
 SDK_NAMESPACE_END

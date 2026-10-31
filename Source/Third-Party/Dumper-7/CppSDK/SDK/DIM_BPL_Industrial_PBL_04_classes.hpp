@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ADIM_BPL_Industrial_PBL_04_C>();
 	}
 };
+DUMPER7_ASSERTS_ADIM_BPL_Industrial_PBL_04_C;
 
 SDK_NAMESPACE_END

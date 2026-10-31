@@ -33,17 +33,17 @@ public:
 	struct FSBZArmorConfig                        ArmorConfig;                                       // 0x03F0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void UpdateActiveButtonControlsReference();
-	void SetDefaultFocus();
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnLostStackFocused();
-	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
-	void OnControlsReferenceClicked(class FName InActionInput);
-	void OnBackPressed();
-	void OnArmorChunkSlotButtonSelected(const class USBZMainMenuArmorChunkButton* SelectedButton_OnArmorChunkSlotButtonSelected);
-	void OnArmorChunkSlotButtonEquipped(const class USBZMainMenuArmorChunkButton* EquippedButton_OnArmorChunkSlotButtonEquipped);
-	void NewArmorChunkSlotFocused(const class USBZMainMenuArmorChunkButton* NewFocusedButton_NewArmorChunkSlotFocused);
 	void ExecuteUbergraph_WBP_UI_ArmorModifierScreen(int32 EntryPoint);
+	void NewArmorChunkSlotFocused(const class USBZMainMenuArmorChunkButton* NewFocusedButton);
+	void OnArmorChunkSlotButtonEquipped(const class USBZMainMenuArmorChunkButton* EquippedButton);
+	void OnArmorChunkSlotButtonSelected(const class USBZMainMenuArmorChunkButton* SelectedButton);
+	void OnBackPressed();
+	void OnControlsReferenceClicked(class FName InActionInput);
+	void OnGainedStackFocused(const class FName& PreviousValue);
+	void OnLostStackFocused();
+	void PreConstruct(bool IsDesignTime);
+	void SetDefaultFocus();
+	void UpdateActiveButtonControlsReference();
 
 public:
 	static class UClass* StaticClass()

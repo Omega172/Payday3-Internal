@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function BPL_CeilingLamp.BPL_CeilingLamp_C.ExecuteUbergraph_BPL_CeilingLamp
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABPL_CeilingLamp_C::ExecuteUbergraph_BPL_CeilingLamp(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BPL_CeilingLamp_C", "ExecuteUbergraph_BPL_CeilingLamp", FuncInfo);
+
+	Params::BPL_CeilingLamp_C_ExecuteUbergraph_BPL_CeilingLamp Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BPL_CeilingLamp.BPL_CeilingLamp_C.BndEvt__BPL_CeilingLamp_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -24,35 +42,13 @@ SDK_NAMESPACE_START
 
 void ABPL_CeilingLamp_C::BndEvt__BPL_CeilingLamp_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPL_CeilingLamp_C", "BndEvt__BPL_CeilingLamp_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BPL_CeilingLamp_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature", FnName));
 
 	Params::BPL_CeilingLamp_C_BndEvt__BPL_CeilingLamp_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature Parms{};
 
 	Parms.Type = Type;
 	Parms.HitContext = std::move(HitContext);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BPL_CeilingLamp.BPL_CeilingLamp_C.ExecuteUbergraph_BPL_CeilingLamp
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABPL_CeilingLamp_C::ExecuteUbergraph_BPL_CeilingLamp(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPL_CeilingLamp_C", "ExecuteUbergraph_BPL_CeilingLamp");
-
-	Params::BPL_CeilingLamp_C_ExecuteUbergraph_BPL_CeilingLamp Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

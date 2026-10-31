@@ -16,41 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ONE_ExplodingWall.BP_ONE_ExplodingWall_C.BP_OnExplosion
-// (Event, Protected, BlueprintEvent)
+// Function BP_ONE_ExplodingWall.BP_ONE_ExplodingWall_C.spawnExplosionVFX
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    doCosmetics_spawnExplosionVFX                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ONE_ExplodingWall_C::BP_OnExplosion(bool bDoCosmetics)
+void ABP_ONE_ExplodingWall_C::spawnExplosionVFX(bool doCosmetics_spawnExplosionVFX)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"spawnExplosionVFX", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ONE_ExplodingWall_C", "BP_OnExplosion");
+	Params::BP_ONE_ExplodingWall_C_spawnExplosionVFX Parms{};
 
-	Params::BP_ONE_ExplodingWall_C_BP_OnExplosion Parms{};
-
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ONE_ExplodingWall.BP_ONE_ExplodingWall_C.ExecuteUbergraph_BP_ONE_ExplodingWall
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ONE_ExplodingWall_C::ExecuteUbergraph_BP_ONE_ExplodingWall(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ONE_ExplodingWall_C", "ExecuteUbergraph_BP_ONE_ExplodingWall");
-
-	Params::BP_ONE_ExplodingWall_C_ExecuteUbergraph_BP_ONE_ExplodingWall Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.doCosmetics_spawnExplosionVFX = doCosmetics_spawnExplosionVFX;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -61,30 +39,44 @@ void ABP_ONE_ExplodingWall_C::ExecuteUbergraph_BP_ONE_ExplodingWall(int32 EntryP
 
 void ABP_ONE_ExplodingWall_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ONE_ExplodingWall_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ONE_ExplodingWall.BP_ONE_ExplodingWall_C.spawnExplosionVFX
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_ONE_ExplodingWall.BP_ONE_ExplodingWall_C.ExecuteUbergraph_BP_ONE_ExplodingWall
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    doCosmetics                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ONE_ExplodingWall_C::spawnExplosionVFX(bool doCosmetics)
+void ABP_ONE_ExplodingWall_C::ExecuteUbergraph_BP_ONE_ExplodingWall(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ONE_ExplodingWall_C", "ExecuteUbergraph_BP_ONE_ExplodingWall", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ONE_ExplodingWall_C", "spawnExplosionVFX");
+	Params::BP_ONE_ExplodingWall_C_ExecuteUbergraph_BP_ONE_ExplodingWall Parms{};
 
-	Params::BP_ONE_ExplodingWall_C_spawnExplosionVFX Parms{};
+	Parms.EntryPoint = EntryPoint;
 
-	Parms.doCosmetics = doCosmetics;
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ONE_ExplodingWall.BP_ONE_ExplodingWall_C.BP_OnExplosion
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bDoCosmetics_BP_OnExplosion                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ONE_ExplodingWall_C::BP_OnExplosion(bool bDoCosmetics_BP_OnExplosion)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnExplosion", FnName));
+
+	Params::BP_ONE_ExplodingWall_C_BP_OnExplosion Parms{};
+
+	Parms.bDoCosmetics_BP_OnExplosion = bDoCosmetics_BP_OnExplosion;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

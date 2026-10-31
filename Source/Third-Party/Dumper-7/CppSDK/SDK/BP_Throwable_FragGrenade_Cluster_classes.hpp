@@ -17,17 +17,17 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Throwable_FragGrenade_Cluster.BP_Throwable_FragGrenade_Cluster_C
-// 0x0010 (0x8F40 - 0x8F30)
+// 0x0010 (0x07A0 - 0x0790)
 class ABP_Throwable_FragGrenade_Cluster_C final : public ASBZFragGrenadeCluster
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x8F30(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UNiagaraComponent*                      FX_GrenadeTrail;                                   // 0x8F38(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0790(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UNiagaraComponent*                      FX_GrenadeTrail;                                   // 0x0798(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_Throwable_FragGrenade_Cluster_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity);
-	void ExecuteUbergraph_BP_Throwable_FragGrenade_Cluster(int32 EntryPoint);
 	void OnThrow();
+	void ExecuteUbergraph_BP_Throwable_FragGrenade_Cluster(int32 EntryPoint);
+	void BndEvt__BP_Throwable_FragGrenade_Cluster_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity);
 
 public:
 	static class UClass* StaticClass()
@@ -43,5 +43,6 @@ public:
 		return GetDefaultObjImpl<ABP_Throwable_FragGrenade_Cluster_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Throwable_FragGrenade_Cluster_C;
 
 SDK_NAMESPACE_END

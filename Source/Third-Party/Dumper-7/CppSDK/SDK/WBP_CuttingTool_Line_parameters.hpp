@@ -14,6 +14,24 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_CuttingTool_Line.WBP_CuttingTool_Line_C.OnWidgetInitialCut
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_CuttingTool_Line_C_OnWidgetInitialCut final
+{
+public:
+	float                                         AtSegment_OnWidgetInitialCut;                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CuttingTool_Line_C_OnWidgetInitialCut;
+
+// Function WBP_CuttingTool_Line.WBP_CuttingTool_Line_C.OnWidgetCut
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_CuttingTool_Line_C_OnWidgetCut final
+{
+public:
+	float                                         AtSegment_OnWidgetCut;                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CuttingTool_Line_C_OnWidgetCut;
+
 // Function WBP_CuttingTool_Line.WBP_CuttingTool_Line_C.ExecuteUbergraph_WBP_CuttingTool_Line
 // 0x0028 (0x0028 - 0x0000)
 struct WBP_CuttingTool_Line_C_ExecuteUbergraph_WBP_CuttingTool_Line final
@@ -26,22 +44,7 @@ public:
 	class FString                                 CallFunc_Conv_DoubleToString_ReturnValue;          // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	double                                        CallFunc_Conv_DoubleToString_InDouble_ImplicitCast; // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function WBP_CuttingTool_Line.WBP_CuttingTool_Line_C.OnWidgetCut
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_CuttingTool_Line_C_OnWidgetCut final
-{
-public:
-	float                                         AtSegment;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WBP_CuttingTool_Line.WBP_CuttingTool_Line_C.OnWidgetInitialCut
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_CuttingTool_Line_C_OnWidgetInitialCut final
-{
-public:
-	float                                         AtSegment;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_WBP_CuttingTool_Line_C_ExecuteUbergraph_WBP_CuttingTool_Line;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

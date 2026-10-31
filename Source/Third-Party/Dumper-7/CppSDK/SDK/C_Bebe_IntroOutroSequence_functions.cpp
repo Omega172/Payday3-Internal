@@ -16,6 +16,36 @@
 
 SDK_NAMESPACE_START
 
+// Function C_Bebe_IntroOutroSequence.C_Bebe_IntroOutroSequence_C.OnIntroFinished
+// (BlueprintCallable, BlueprintEvent)
+
+void AC_Bebe_IntroOutroSequence_C::OnIntroFinished()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnIntroFinished", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function C_Bebe_IntroOutroSequence.C_Bebe_IntroOutroSequence_C.IntroSequenceChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    bIsStarted_IntroSequenceChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AC_Bebe_IntroOutroSequence_C::IntroSequenceChanged(bool bIsStarted_IntroSequenceChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IntroSequenceChanged", FnName));
+
+	Params::C_Bebe_IntroOutroSequence_C_IntroSequenceChanged Parms{};
+
+	Parms.bIsStarted_IntroSequenceChanged = bIsStarted_IntroSequenceChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function C_Bebe_IntroOutroSequence.C_Bebe_IntroOutroSequence_C.ExecuteUbergraph_C_Bebe_IntroOutroSequence
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,50 +53,14 @@ SDK_NAMESPACE_START
 
 void AC_Bebe_IntroOutroSequence_C::ExecuteUbergraph_C_Bebe_IntroOutroSequence(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_Bebe_IntroOutroSequence_C", "ExecuteUbergraph_C_Bebe_IntroOutroSequence");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "C_Bebe_IntroOutroSequence_C", "ExecuteUbergraph_C_Bebe_IntroOutroSequence", FuncInfo);
 
 	Params::C_Bebe_IntroOutroSequence_C_ExecuteUbergraph_C_Bebe_IntroOutroSequence Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function C_Bebe_IntroOutroSequence.C_Bebe_IntroOutroSequence_C.IntroSequenceChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    bIsStarted                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AC_Bebe_IntroOutroSequence_C::IntroSequenceChanged(bool bIsStarted)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_Bebe_IntroOutroSequence_C", "IntroSequenceChanged");
-
-	Params::C_Bebe_IntroOutroSequence_C_IntroSequenceChanged Parms{};
-
-	Parms.bIsStarted = bIsStarted;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function C_Bebe_IntroOutroSequence.C_Bebe_IntroOutroSequence_C.OnIntroFinished
-// (BlueprintCallable, BlueprintEvent)
-
-void AC_Bebe_IntroOutroSequence_C::OnIntroFinished()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_Bebe_IntroOutroSequence_C", "OnIntroFinished");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -18,1342 +18,53 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Escape_Loud_K2Node_ActorBoundEvent_15_SBZBagEnteredDelegate__DelegateSignature
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.OnPreplanningAssetsTagsApplied
 // 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Escape_Loud_K2Node_ActorBoundEvent_15_SBZBagEnteredDelegate__DelegateSignature final
+struct G_Stonk_Scripting_C_OnPreplanningAssetsTagsApplied final
 {
 public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FGameplayTagContainer                  PreplanningTagContainer_OnPreplanningAssetsTagsApplied; // 0x0000(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_OnPreplanningAssetsTagsApplied;
 
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature final
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.OnPlayersCarryBagChanged
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_Scripting_C_OnPlayersCarryBagChanged final
 {
 public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FSBZPlayersCarryBagChangedEvent        Data_OnPlayersCarryBagChanged;                     // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 };
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_OnPlayersCarryBagChanged;
 
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature final
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.OnPlayerPickedUpBag
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_Scripting_C_OnPlayerPickedUpBag final
 {
 public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	struct FSBZBagHandle                          BagHandle_OnPlayerPickedUpBag;                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_OnPlayerPickedUpBag;
 
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature final
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.OnLevelModifiersApplied
+// 0x0018 (0x0018 - 0x0000)
+struct G_Stonk_Scripting_C_OnLevelModifiersApplied final
 {
 public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZDifficulty                                InDifficulty_OnLevelModifiersApplied;              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<ESBZSecurityCompany>                   InCompanies_OnLevelModifiersApplied;               // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_OnLevelModifiersApplied;
 
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_Booth_CircuitBreaker_1_K2Node_ActorBoundEvent_208_SBZHackableActorInterruptedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_Booth_CircuitBreaker_1_K2Node_ActorBoundEvent_208_SBZHackableActorInterruptedDelegate__DelegateSignature final
-{
-public:
-	ESBZHackableActorInterruptReason              Reason;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_Booth_CircuitBreaker_2_K2Node_ActorBoundEvent_133_SBZHackableActorInterruptedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_Booth_CircuitBreaker_2_K2Node_ActorBoundEvent_133_SBZHackableActorInterruptedDelegate__DelegateSignature final
-{
-public:
-	ESBZHackableActorInterruptReason              Reason;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_Booth_CircuitBreaker_3_K2Node_ActorBoundEvent_107_SBZHackableActorInterruptedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_Booth_CircuitBreaker_3_K2Node_ActorBoundEvent_107_SBZHackableActorInterruptedDelegate__DelegateSignature final
-{
-public:
-	ESBZHackableActorInterruptReason              Reason;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_Booth_CircuitBreaker_4_K2Node_ActorBoundEvent_111_SBZHackableActorInterruptedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_Booth_CircuitBreaker_4_K2Node_ActorBoundEvent_111_SBZHackableActorInterruptedDelegate__DelegateSignature final
-{
-public:
-	ESBZHackableActorInterruptReason              Reason;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_Booth_CircuitBreaker_5_K2Node_ActorBoundEvent_255_SBZHackableActorInterruptedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_Booth_CircuitBreaker_5_K2Node_ActorBoundEvent_255_SBZHackableActorInterruptedDelegate__DelegateSignature final
-{
-public:
-	ESBZHackableActorInterruptReason              Reason;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_Booth_CircuitBreaker_6_K2Node_ActorBoundEvent_250_SBZHackableActorInterruptedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_Booth_CircuitBreaker_6_K2Node_ActorBoundEvent_250_SBZHackableActorInterruptedDelegate__DelegateSignature final
-{
-public:
-	ESBZHackableActorInterruptReason              Reason;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_DigitalKeyReader_Office11_K2Node_ActorBoundEvent_39_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_DigitalKeyReader_Office11_K2Node_ActorBoundEvent_39_SBZModuleActorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_DigitalKeyReader_Office12_K2Node_ActorBoundEvent_40_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_DigitalKeyReader_Office12_K2Node_ActorBoundEvent_40_SBZModuleActorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_DigitalKeyReader_Office21_K2Node_ActorBoundEvent_37_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_DigitalKeyReader_Office21_K2Node_ActorBoundEvent_37_SBZModuleActorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_DigitalKeyReader_Office22_K2Node_ActorBoundEvent_36_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_DigitalKeyReader_Office22_K2Node_ActorBoundEvent_36_SBZModuleActorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL10_12_K2Node_ActorBoundEvent_345_SBZGateStateChangedDelegate__DelegateSignature
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.HeistStateChanged
 // 0x0002 (0x0002 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL10_12_K2Node_ActorBoundEvent_345_SBZGateStateChangedDelegate__DelegateSignature final
+struct G_Stonk_Scripting_C_HeistStateChanged final
 {
 public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                OldHeistState_HeistStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CurrentHeistState_HeistStateChanged;               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL11_K2Node_ActorBoundEvent_346_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL11_K2Node_ActorBoundEvent_346_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL12_16_K2Node_ActorBoundEvent_212_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL12_16_K2Node_ActorBoundEvent_212_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL3_9_K2Node_ActorBoundEvent_338_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL3_9_K2Node_ActorBoundEvent_338_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL4_K2Node_ActorBoundEvent_339_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL4_K2Node_ActorBoundEvent_339_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL5_K2Node_ActorBoundEvent_340_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL5_K2Node_ActorBoundEvent_340_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL6_4_K2Node_ActorBoundEvent_341_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL6_4_K2Node_ActorBoundEvent_341_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL7_K2Node_ActorBoundEvent_342_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL7_K2Node_ActorBoundEvent_342_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL8_8_K2Node_ActorBoundEvent_343_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL8_8_K2Node_ActorBoundEvent_343_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL9_K2Node_ActorBoundEvent_344_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL9_K2Node_ActorBoundEvent_344_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_Int_DoubleDoor_Reinforced_Wood_02_2_K2Node_ActorBoundEvent_55_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_Int_DoubleDoor_Reinforced_Wood_02_2_K2Node_ActorBoundEvent_55_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_Int_DoubleDoor_Reinforced_Wood_3_K2Node_ActorBoundEvent_54_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_Int_DoubleDoor_Reinforced_Wood_3_K2Node_ActorBoundEvent_54_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_MulticodeKeypad_sabotagePoint1_K2Node_ActorBoundEvent_319_SBZSabotagePointDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_MulticodeKeypad_sabotagePoint1_K2Node_ActorBoundEvent_319_SBZSabotagePointDelegate__DelegateSignature final
-{
-public:
-	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_MulticodeKeypad_sabotagePoint2_K2Node_ActorBoundEvent_280_SBZSabotagePointDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_MulticodeKeypad_sabotagePoint2_K2Node_ActorBoundEvent_280_SBZSabotagePointDelegate__DelegateSignature final
-{
-public:
-	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_MulticodeKeypadTest_Booth_1_K2Node_ActorBoundEvent_174_SBZMultiCodeDelegate__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_MulticodeKeypadTest_Booth_1_K2Node_ActorBoundEvent_174_SBZMultiCodeDelegate__DelegateSignature final
-{
-public:
-	int32                                         CorrectCodesNum;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_MulticodeKeypadTest_Booth_2_K2Node_ActorBoundEvent_191_SBZMultiCodeDelegate__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_MulticodeKeypadTest_Booth_2_K2Node_ActorBoundEvent_191_SBZMultiCodeDelegate__DelegateSignature final
-{
-public:
-	int32                                         CorrectCodesNum;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_PaperStack11_K2Node_ActorBoundEvent_46_ActorDestroyedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack11_K2Node_ActorBoundEvent_46_ActorDestroyedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_PaperStack12_K2Node_ActorBoundEvent_44_ActorDestroyedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack12_K2Node_ActorBoundEvent_44_ActorDestroyedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_PaperStack13_K2Node_ActorBoundEvent_45_ActorDestroyedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack13_K2Node_ActorBoundEvent_45_ActorDestroyedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_PaperStack14_K2Node_ActorBoundEvent_10_ActorDestroyedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack14_K2Node_ActorBoundEvent_10_ActorDestroyedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_PaperStack15_K2Node_ActorBoundEvent_96_ActorDestroyedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack15_K2Node_ActorBoundEvent_96_ActorDestroyedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_PaperStack16_K2Node_ActorBoundEvent_97_ActorDestroyedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack16_K2Node_ActorBoundEvent_97_ActorDestroyedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_PaperStack21_K2Node_ActorBoundEvent_47_ActorDestroyedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack21_K2Node_ActorBoundEvent_47_ActorDestroyedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_PaperStack22_K2Node_ActorBoundEvent_49_ActorDestroyedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack22_K2Node_ActorBoundEvent_49_ActorDestroyedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_PaperStack23_K2Node_ActorBoundEvent_48_ActorDestroyedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack23_K2Node_ActorBoundEvent_48_ActorDestroyedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_PaperStack24_K2Node_ActorBoundEvent_98_ActorDestroyedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack24_K2Node_ActorBoundEvent_98_ActorDestroyedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_PaperStack25_K2Node_ActorBoundEvent_99_ActorDestroyedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack25_K2Node_ActorBoundEvent_99_ActorDestroyedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_PaperStack26_K2Node_ActorBoundEvent_100_ActorDestroyedSignature__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack26_K2Node_ActorBoundEvent_100_ActorDestroyedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_RedKeycardReader1_K2Node_ActorBoundEvent_57_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RedKeycardReader1_K2Node_ActorBoundEvent_57_SBZModuleActorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_RedKeycardReader2_5_K2Node_ActorBoundEvent_56_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RedKeycardReader2_5_K2Node_ActorBoundEvent_56_SBZModuleActorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_RFIDTagReaderRed_11_K2Node_ActorBoundEvent_261_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RFIDTagReaderRed_11_K2Node_ActorBoundEvent_261_SBZModuleActorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_RFIDTagReaderRed_12_K2Node_ActorBoundEvent_227_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RFIDTagReaderRed_12_K2Node_ActorBoundEvent_227_SBZModuleActorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_RFIDTagReaderRed_21_K2Node_ActorBoundEvent_271_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RFIDTagReaderRed_21_K2Node_ActorBoundEvent_271_SBZModuleActorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_RFIDTagReaderRed_22_K2Node_ActorBoundEvent_276_SBZModuleActorStateChangedDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RFIDTagReaderRed_22_K2Node_ActorBoundEvent_276_SBZModuleActorStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_RFIDTagRed1_K2Node_ActorBoundEvent_321_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RFIDTagRed1_K2Node_ActorBoundEvent_321_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_RFIDTagRed2_K2Node_ActorBoundEvent_324_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RFIDTagRed2_K2Node_ActorBoundEvent_324_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_RFIDTagRed3_K2Node_ActorBoundEvent_320_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RFIDTagRed3_K2Node_ActorBoundEvent_320_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_RFIDTagRed4_K2Node_ActorBoundEvent_334_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RFIDTagRed4_K2Node_ActorBoundEvent_334_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_RFIDTagRed5_K2Node_ActorBoundEvent_335_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RFIDTagRed5_K2Node_ActorBoundEvent_335_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_RFIDTagRed6_K2Node_ActorBoundEvent_336_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RFIDTagRed6_K2Node_ActorBoundEvent_336_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_STO_ConstructionCrane_01_2_K2Node_ActorBoundEvent_251_SBZProgressionReachedDelegate__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_STO_ConstructionCrane_01_2_K2Node_ActorBoundEvent_251_SBZProgressionReachedDelegate__DelegateSignature final
-{
-public:
-	int32                                         ProgressionIndexReached;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_STO_SatelliteDish_1_K2Node_ActorBoundEvent_272_SBZSabotagePointDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_STO_SatelliteDish_1_K2Node_ActorBoundEvent_272_SBZSabotagePointDelegate__DelegateSignature final
-{
-public:
-	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_STO_SatelliteDish_2_K2Node_ActorBoundEvent_273_SBZSabotagePointDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_STO_SatelliteDish_2_K2Node_ActorBoundEvent_273_SBZSabotagePointDelegate__DelegateSignature final
-{
-public:
-	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_STO_WirlessCraneController_01_2_K2Node_ActorBoundEvent_75_SBZSabotagePointDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_STO_WirlessCraneController_01_2_K2Node_ActorBoundEvent_75_SBZSabotagePointDelegate__DelegateSignature final
-{
-public:
-	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_STO_WirlessCraneController_7_K2Node_ActorBoundEvent_77_SBZSabotagePointDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_STO_WirlessCraneController_7_K2Node_ActorBoundEvent_77_SBZSabotagePointDelegate__DelegateSignature final
-{
-public:
-	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Device12_K2Node_ActorBoundEvent_228_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Device12_K2Node_ActorBoundEvent_228_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Device_K2Node_ActorBoundEvent_95_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Device_K2Node_ActorBoundEvent_95_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Dish2_1_K2Node_ActorBoundEvent_268_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Dish2_1_K2Node_ActorBoundEvent_268_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Dish2_K2Node_ActorBoundEvent_270_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Dish2_K2Node_ActorBoundEvent_270_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_ElevatorZipline2_K2Node_ActorBoundEvent_24_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_ElevatorZipline2_K2Node_ActorBoundEvent_24_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_ElevatorZipline3_K2Node_ActorBoundEvent_25_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_ElevatorZipline3_K2Node_ActorBoundEvent_25_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_EMP2_K2Node_ActorBoundEvent_112_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_EMP2_K2Node_ActorBoundEvent_112_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_EMP3_K2Node_ActorBoundEvent_110_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_EMP3_K2Node_ActorBoundEvent_110_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_EMP_K2Node_ActorBoundEvent_80_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_EMP_K2Node_ActorBoundEvent_80_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_UP_Zipline2_K2Node_ActorBoundEvent_76_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_UP_Zipline2_K2Node_ActorBoundEvent_76_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_UP_Zipline3_K2Node_ActorBoundEvent_74_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_UP_Zipline3_K2Node_ActorBoundEvent_74_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_UP_Zipline_K2Node_ActorBoundEvent_68_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_UP_Zipline_K2Node_ActorBoundEvent_68_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Zipline2GriefProtection_K2Node_ActorBoundEvent_279_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Zipline2GriefProtection_K2Node_ActorBoundEvent_279_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Zipline3_2_K2Node_ActorBoundEvent_1_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Zipline3_2_K2Node_ActorBoundEvent_1_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Zipline3GriefProtection_K2Node_ActorBoundEvent_169_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Zipline3GriefProtection_K2Node_ActorBoundEvent_169_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_ZiplineGriefProtection_K2Node_ActorBoundEvent_278_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_ZiplineGriefProtection_K2Node_ActorBoundEvent_278_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_ZiplineReuse1_K2Node_ActorBoundEvent_102_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_ZiplineReuse1_K2Node_ActorBoundEvent_102_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_ZiplineReuse2_K2Node_ActorBoundEvent_103_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_ZiplineReuse2_K2Node_ActorBoundEvent_103_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_ZiplineReuse3_K2Node_ActorBoundEvent_105_SBZBagEnteredDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_ZiplineReuse3_K2Node_ActorBoundEvent_105_SBZBagEnteredDelegate__DelegateSignature final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi12_K2Node_ActorBoundEvent_67_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi12_K2Node_ActorBoundEvent_67_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi13_K2Node_ActorBoundEvent_78_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi13_K2Node_ActorBoundEvent_78_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi14_K2Node_ActorBoundEvent_196_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi14_K2Node_ActorBoundEvent_196_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi21_K2Node_ActorBoundEvent_198_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi21_K2Node_ActorBoundEvent_198_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi22_K2Node_ActorBoundEvent_199_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi22_K2Node_ActorBoundEvent_199_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi23_K2Node_ActorBoundEvent_200_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi23_K2Node_ActorBoundEvent_200_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi24_K2Node_ActorBoundEvent_201_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi24_K2Node_ActorBoundEvent_201_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi25_K2Node_ActorBoundEvent_202_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi25_K2Node_ActorBoundEvent_202_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi32_K2Node_ActorBoundEvent_203_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi32_K2Node_ActorBoundEvent_203_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi33_K2Node_ActorBoundEvent_204_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi33_K2Node_ActorBoundEvent_204_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi34_K2Node_ActorBoundEvent_205_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi34_K2Node_ActorBoundEvent_205_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi_K2Node_ActorBoundEvent_43_SBZFilterActorDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi_K2Node_ActorBoundEvent_43_SBZFilterActorDynamicDelegate__DelegateSignature final
-{
-public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZModifiableTimer_HackBox_K2Node_ActorBoundEvent_176_SBZProgressionReachedDelegate__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZModifiableTimer_HackBox_K2Node_ActorBoundEvent_176_SBZProgressionReachedDelegate__DelegateSignature final
-{
-public:
-	int32                                         ProgressionIndexReached;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerLookAt_Elevator2_K2Node_ActorBoundEvent_171_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerLookAt_Elevator2_K2Node_ActorBoundEvent_171_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerLookAt_Elevator3_K2Node_ActorBoundEvent_301_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerLookAt_Elevator3_K2Node_ActorBoundEvent_301_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerLookAtTrigger_elevator1_K2Node_ActorBoundEvent_172_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerLookAtTrigger_elevator1_K2Node_ActorBoundEvent_172_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerStartGroup1_K2Node_ActorBoundEvent_11_SBZOnSpawnGroupChosen__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerStartGroup1_K2Node_ActorBoundEvent_11_SBZOnSpawnGroupChosen__DelegateSignature final
-{
-public:
-	class ASBZPlayerStartGroup*                   PlayerStartGroup;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerStartGroup2_K2Node_ActorBoundEvent_26_SBZOnSpawnGroupChosen__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerStartGroup2_K2Node_ActorBoundEvent_26_SBZOnSpawnGroupChosen__DelegateSignature final
-{
-public:
-	class ASBZPlayerStartGroup*                   PlayerStartGroup;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerStartGroup3_K2Node_ActorBoundEvent_42_SBZOnSpawnGroupChosen__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerStartGroup3_K2Node_ActorBoundEvent_42_SBZOnSpawnGroupChosen__DelegateSignature final
-{
-public:
-	class ASBZPlayerStartGroup*                   PlayerStartGroup;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerStartGroup_PP2_K2Node_ActorBoundEvent_274_SBZOnSpawnGroupChosen__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerStartGroup_PP2_K2Node_ActorBoundEvent_274_SBZOnSpawnGroupChosen__DelegateSignature final
-{
-public:
-	class ASBZPlayerStartGroup*                   PlayerStartGroup;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerStartGroup_PP_K2Node_ActorBoundEvent_13_SBZOnSpawnGroupChosen__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerStartGroup_PP_K2Node_ActorBoundEvent_13_SBZOnSpawnGroupChosen__DelegateSignature final
-{
-public:
-	class ASBZPlayerStartGroup*                   PlayerStartGroup;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_bokeInOffice1_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_bokeInOffice1_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_BokeInOffice2_K2Node_ActorBoundEvent_35_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_BokeInOffice2_K2Node_ActorBoundEvent_35_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_ControllRoom1_K2Node_ActorBoundEvent_53_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_ControllRoom1_K2Node_ActorBoundEvent_53_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_ControllRoom2_K2Node_ActorBoundEvent_52_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_ControllRoom2_K2Node_ActorBoundEvent_52_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_EnterControl2_4_K2Node_ActorBoundEvent_63_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_EnterControl2_4_K2Node_ActorBoundEvent_63_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_EnterControl2_K2Node_ActorBoundEvent_62_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_EnterControl2_K2Node_ActorBoundEvent_62_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_FoundBox11_K2Node_ActorBoundEvent_166_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_FoundBox11_K2Node_ActorBoundEvent_166_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_FoundBox21_K2Node_ActorBoundEvent_167_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_FoundBox21_K2Node_ActorBoundEvent_167_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_foundJordanOffice_K2Node_ActorBoundEvent_41_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_foundJordanOffice_K2Node_ActorBoundEvent_41_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_foundSwamp2_K2Node_ActorBoundEvent_58_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_foundSwamp2_K2Node_ActorBoundEvent_58_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_foundSwamp_K2Node_ActorBoundEvent_71_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_foundSwamp_K2Node_ActorBoundEvent_71_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_ObjectivesFromfloor_K2Node_ActorBoundEvent_33_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_ObjectivesFromfloor_K2Node_ActorBoundEvent_33_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_ShowWPReminder_K2Node_ActorBoundEvent_337_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_ShowWPReminder_K2Node_ActorBoundEvent_337_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_USBHint1_K2Node_ActorBoundEvent_60_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_USBHint1_K2Node_ActorBoundEvent_60_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_USBHint2_K2Node_ActorBoundEvent_314_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_USBHint2_K2Node_ActorBoundEvent_314_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_USBHint3_K2Node_ActorBoundEvent_59_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_USBHint3_K2Node_ActorBoundEvent_59_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_USBHint4_K2Node_ActorBoundEvent_315_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_USBHint4_K2Node_ActorBoundEvent_315_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_USBHint5_K2Node_ActorBoundEvent_316_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_USBHint5_K2Node_ActorBoundEvent_316_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_USBHint6_K2Node_ActorBoundEvent_317_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_USBHint6_K2Node_ActorBoundEvent_317_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume2_2_K2Node_ActorBoundEvent_122_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume2_2_K2Node_ActorBoundEvent_122_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_ActivateWP_K2Node_ActorBoundEvent_323_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_ActivateWP_K2Node_ActorBoundEvent_323_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_AllPlayersOnRoof_K2Node_ActorBoundEvent_5_SBZBooleanStateDynamicDelegate__DelegateSignature
-// 0x0001 (0x0001 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_AllPlayersOnRoof_K2Node_ActorBoundEvent_5_SBZBooleanStateDynamicDelegate__DelegateSignature final
-{
-public:
-	bool                                          State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_backRoof_K2Node_ActorBoundEvent_206_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_backRoof_K2Node_ActorBoundEvent_206_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_BottomElevator1_K2Node_ActorBoundEvent_27_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_BottomElevator1_K2Node_ActorBoundEvent_27_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_BottomElevator2_K2Node_ActorBoundEvent_28_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_BottomElevator2_K2Node_ActorBoundEvent_28_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_BottomElevator3_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_BottomElevator3_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip10_K2Node_ActorBoundEvent_292_ActorBeginOverlapSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip10_K2Node_ActorBoundEvent_292_ActorBeginOverlapSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 OverlappedActor;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip11_K2Node_ActorBoundEvent_293_ActorBeginOverlapSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip11_K2Node_ActorBoundEvent_293_ActorBeginOverlapSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 OverlappedActor;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip12_K2Node_ActorBoundEvent_294_ActorBeginOverlapSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip12_K2Node_ActorBoundEvent_294_ActorBeginOverlapSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 OverlappedActor;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip13_K2Node_ActorBoundEvent_94_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip13_K2Node_ActorBoundEvent_94_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip1_K2Node_ActorBoundEvent_21_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip1_K2Node_ActorBoundEvent_21_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip2_K2Node_ActorBoundEvent_22_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip2_K2Node_ActorBoundEvent_22_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip3_K2Node_ActorBoundEvent_23_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip3_K2Node_ActorBoundEvent_23_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip4_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip4_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip5_K2Node_ActorBoundEvent_153_ActorBeginOverlapSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip5_K2Node_ActorBoundEvent_153_ActorBeginOverlapSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 OverlappedActor;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip6_2_K2Node_ActorBoundEvent_252_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip6_2_K2Node_ActorBoundEvent_252_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip7_K2Node_ActorBoundEvent_253_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip7_K2Node_ActorBoundEvent_253_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip8_K2Node_ActorBoundEvent_254_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip8_K2Node_ActorBoundEvent_254_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip9_K2Node_ActorBoundEvent_14_ActorBeginOverlapSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip9_K2Node_ActorBoundEvent_14_ActorBeginOverlapSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 OverlappedActor;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_iFplayersExitFromWindow_K2Node_ActorBoundEvent_17_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_iFplayersExitFromWindow_K2Node_ActorBoundEvent_17_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoElevator1_K2Node_ActorBoundEvent_83_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoElevator1_K2Node_ActorBoundEvent_83_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoElevator1_Up_K2Node_ActorBoundEvent_86_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoElevator1_Up_K2Node_ActorBoundEvent_86_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoElevator2_3_K2Node_ActorBoundEvent_84_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoElevator2_3_K2Node_ActorBoundEvent_84_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoElevator2_Up_K2Node_ActorBoundEvent_87_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoElevator2_Up_K2Node_ActorBoundEvent_87_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoElevator3_5_K2Node_ActorBoundEvent_85_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoElevator3_5_K2Node_ActorBoundEvent_85_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoElevator3_Up_K2Node_ActorBoundEvent_88_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoElevator3_Up_K2Node_ActorBoundEvent_88_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoRoof_K2Node_ActorBoundEvent_89_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoRoof_K2Node_ActorBoundEvent_89_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerInside2_K2Node_ActorBoundEvent_209_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerInside2_K2Node_ActorBoundEvent_209_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerInside3_K2Node_ActorBoundEvent_210_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerInside3_K2Node_ActorBoundEvent_210_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayersOnEscapeRoof_K2Node_ActorBoundEvent_168_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayersOnEscapeRoof_K2Node_ActorBoundEvent_168_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZTickingLootManager_K2Node_ActorBoundEvent_269_SBZTickingLootFloatDelegate__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZTickingLootManager_K2Node_ActorBoundEvent_269_SBZTickingLootFloatDelegate__DelegateSignature final
-{
-public:
-	float                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZTickingLootManager_Normal_K2Node_ActorBoundEvent_318_SBZTickingLootFloatDelegate__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZTickingLootManager_Normal_K2Node_ActorBoundEvent_318_SBZTickingLootFloatDelegate__DelegateSignature final
-{
-public:
-	float                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZTrafficSpline_Escape_FlyIn_K2Node_ActorBoundEvent_91_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZTrafficSpline_Escape_FlyIn_K2Node_ActorBoundEvent_91_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZTrafficSpline_EscapeLoud_FlyIn_K2Node_ActorBoundEvent_197_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZTrafficSpline_EscapeLoud_FlyIn_K2Node_ActorBoundEvent_197_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_HeistStateChanged;
 
 // Function G_Stonk_Scripting.G_Stonk_Scripting_C.ExecuteUbergraph_G_Stonk_Scripting
 // 0x29C8 (0x29C8 - 0x0000)
@@ -3001,49 +1712,1498 @@ public:
 	double                                        CallFunc_GreaterEqual_DoubleDouble_A_ImplicitCast_2; // 0x29B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_GreaterEqual_DoubleDouble_A_ImplicitCast_3; // 0x29C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_ExecuteUbergraph_G_Stonk_Scripting;
 
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.HeistStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct G_Stonk_Scripting_C_HeistStateChanged final
-{
-public:
-	EPD3HeistState                                OldHeistState;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CurrentHeistState;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.OnLevelModifiersApplied
-// 0x0018 (0x0018 - 0x0000)
-struct G_Stonk_Scripting_C_OnLevelModifiersApplied final
-{
-public:
-	ESBZDifficulty                                InDifficulty;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<ESBZSecurityCompany>                   InCompanies;                                       // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.OnPlayerPickedUpBag
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZTrafficSpline_EscapeLoud_FlyIn_K2Node_ActorBoundEvent_197_SBZSplineOnEndReached__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_Scripting_C_OnPlayerPickedUpBag final
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZTrafficSpline_EscapeLoud_FlyIn_K2Node_ActorBoundEvent_197_SBZSplineOnEndReached__DelegateSignature final
 {
 public:
-	struct FSBZBagHandle                          BagHandle;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZTrafficSpline_EscapeLoud_FlyIn_K2Node_ActorBoundEvent_197_SBZSplineOnEndReached__DelegateSignature;
 
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.OnPlayersCarryBagChanged
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZTrafficSpline_Escape_FlyIn_K2Node_ActorBoundEvent_91_SBZSplineOnEndReached__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_Scripting_C_OnPlayersCarryBagChanged final
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZTrafficSpline_Escape_FlyIn_K2Node_ActorBoundEvent_91_SBZSplineOnEndReached__DelegateSignature final
 {
 public:
-	struct FSBZPlayersCarryBagChangedEvent        Data;                                              // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZTrafficSpline_Escape_FlyIn_K2Node_ActorBoundEvent_91_SBZSplineOnEndReached__DelegateSignature;
 
-// Function G_Stonk_Scripting.G_Stonk_Scripting_C.OnPreplanningAssetsTagsApplied
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZTickingLootManager_Normal_K2Node_ActorBoundEvent_318_SBZTickingLootFloatDelegate__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZTickingLootManager_Normal_K2Node_ActorBoundEvent_318_SBZTickingLootFloatDelegate__DelegateSignature final
+{
+public:
+	float                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZTickingLootManager_Normal_K2Node_ActorBoundEvent_318_SBZTickingLootFloatDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZTickingLootManager_K2Node_ActorBoundEvent_269_SBZTickingLootFloatDelegate__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZTickingLootManager_K2Node_ActorBoundEvent_269_SBZTickingLootFloatDelegate__DelegateSignature final
+{
+public:
+	float                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZTickingLootManager_K2Node_ActorBoundEvent_269_SBZTickingLootFloatDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayersOnEscapeRoof_K2Node_ActorBoundEvent_168_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayersOnEscapeRoof_K2Node_ActorBoundEvent_168_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayersOnEscapeRoof_K2Node_ActorBoundEvent_168_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerInside3_K2Node_ActorBoundEvent_210_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerInside3_K2Node_ActorBoundEvent_210_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerInside3_K2Node_ActorBoundEvent_210_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerInside2_K2Node_ActorBoundEvent_209_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerInside2_K2Node_ActorBoundEvent_209_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerInside2_K2Node_ActorBoundEvent_209_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoRoof_K2Node_ActorBoundEvent_89_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoRoof_K2Node_ActorBoundEvent_89_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoRoof_K2Node_ActorBoundEvent_89_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoElevator3_Up_K2Node_ActorBoundEvent_88_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoElevator3_Up_K2Node_ActorBoundEvent_88_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoElevator3_Up_K2Node_ActorBoundEvent_88_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoElevator3_5_K2Node_ActorBoundEvent_85_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoElevator3_5_K2Node_ActorBoundEvent_85_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoElevator3_5_K2Node_ActorBoundEvent_85_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoElevator2_Up_K2Node_ActorBoundEvent_87_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoElevator2_Up_K2Node_ActorBoundEvent_87_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoElevator2_Up_K2Node_ActorBoundEvent_87_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoElevator2_3_K2Node_ActorBoundEvent_84_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoElevator2_3_K2Node_ActorBoundEvent_84_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoElevator2_3_K2Node_ActorBoundEvent_84_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoElevator1_Up_K2Node_ActorBoundEvent_86_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoElevator1_Up_K2Node_ActorBoundEvent_86_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoElevator1_Up_K2Node_ActorBoundEvent_86_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoElevator1_K2Node_ActorBoundEvent_83_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoElevator1_K2Node_ActorBoundEvent_83_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_PlayerGotoElevator1_K2Node_ActorBoundEvent_83_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_iFplayersExitFromWindow_K2Node_ActorBoundEvent_17_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_iFplayersExitFromWindow_K2Node_ActorBoundEvent_17_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_iFplayersExitFromWindow_K2Node_ActorBoundEvent_17_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip9_K2Node_ActorBoundEvent_14_ActorBeginOverlapSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip9_K2Node_ActorBoundEvent_14_ActorBeginOverlapSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 OverlappedActor;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip9_K2Node_ActorBoundEvent_14_ActorBeginOverlapSignature__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip8_K2Node_ActorBoundEvent_254_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip8_K2Node_ActorBoundEvent_254_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip8_K2Node_ActorBoundEvent_254_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip7_K2Node_ActorBoundEvent_253_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip7_K2Node_ActorBoundEvent_253_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip7_K2Node_ActorBoundEvent_253_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip6_2_K2Node_ActorBoundEvent_252_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip6_2_K2Node_ActorBoundEvent_252_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip6_2_K2Node_ActorBoundEvent_252_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip5_K2Node_ActorBoundEvent_153_ActorBeginOverlapSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip5_K2Node_ActorBoundEvent_153_ActorBeginOverlapSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 OverlappedActor;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip5_K2Node_ActorBoundEvent_153_ActorBeginOverlapSignature__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip4_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip4_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip4_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip3_K2Node_ActorBoundEvent_23_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip3_K2Node_ActorBoundEvent_23_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip3_K2Node_ActorBoundEvent_23_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip2_K2Node_ActorBoundEvent_22_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip2_K2Node_ActorBoundEvent_22_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip2_K2Node_ActorBoundEvent_22_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip1_K2Node_ActorBoundEvent_21_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip1_K2Node_ActorBoundEvent_21_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip1_K2Node_ActorBoundEvent_21_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip13_K2Node_ActorBoundEvent_94_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip13_K2Node_ActorBoundEvent_94_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip13_K2Node_ActorBoundEvent_94_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip12_K2Node_ActorBoundEvent_294_ActorBeginOverlapSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip12_K2Node_ActorBoundEvent_294_ActorBeginOverlapSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 OverlappedActor;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip12_K2Node_ActorBoundEvent_294_ActorBeginOverlapSignature__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip11_K2Node_ActorBoundEvent_293_ActorBeginOverlapSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip11_K2Node_ActorBoundEvent_293_ActorBeginOverlapSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 OverlappedActor;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip11_K2Node_ActorBoundEvent_293_ActorBeginOverlapSignature__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip10_K2Node_ActorBoundEvent_292_ActorBeginOverlapSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip10_K2Node_ActorBoundEvent_292_ActorBeginOverlapSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 OverlappedActor;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_DevSkip10_K2Node_ActorBoundEvent_292_ActorBeginOverlapSignature__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_BottomElevator3_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_BottomElevator3_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_BottomElevator3_K2Node_ActorBoundEvent_29_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_BottomElevator2_K2Node_ActorBoundEvent_28_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_BottomElevator2_K2Node_ActorBoundEvent_28_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_BottomElevator2_K2Node_ActorBoundEvent_28_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_BottomElevator1_K2Node_ActorBoundEvent_27_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_BottomElevator1_K2Node_ActorBoundEvent_27_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_BottomElevator1_K2Node_ActorBoundEvent_27_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_backRoof_K2Node_ActorBoundEvent_206_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_backRoof_K2Node_ActorBoundEvent_206_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_backRoof_K2Node_ActorBoundEvent_206_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_AllPlayersOnRoof_K2Node_ActorBoundEvent_5_SBZBooleanStateDynamicDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_AllPlayersOnRoof_K2Node_ActorBoundEvent_5_SBZBooleanStateDynamicDelegate__DelegateSignature final
+{
+public:
+	bool                                          State;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_AllPlayersOnRoof_K2Node_ActorBoundEvent_5_SBZBooleanStateDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_ActivateWP_K2Node_ActorBoundEvent_323_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_ActivateWP_K2Node_ActorBoundEvent_323_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume_ActivateWP_K2Node_ActorBoundEvent_323_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume2_2_K2Node_ActorBoundEvent_122_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume2_2_K2Node_ActorBoundEvent_122_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTriggerVolume2_2_K2Node_ActorBoundEvent_122_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_USBHint6_K2Node_ActorBoundEvent_317_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_USBHint6_K2Node_ActorBoundEvent_317_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_USBHint6_K2Node_ActorBoundEvent_317_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_USBHint5_K2Node_ActorBoundEvent_316_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_USBHint5_K2Node_ActorBoundEvent_316_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_USBHint5_K2Node_ActorBoundEvent_316_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_USBHint4_K2Node_ActorBoundEvent_315_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_USBHint4_K2Node_ActorBoundEvent_315_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_USBHint4_K2Node_ActorBoundEvent_315_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_USBHint3_K2Node_ActorBoundEvent_59_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_USBHint3_K2Node_ActorBoundEvent_59_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_USBHint3_K2Node_ActorBoundEvent_59_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_USBHint2_K2Node_ActorBoundEvent_314_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_USBHint2_K2Node_ActorBoundEvent_314_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_USBHint2_K2Node_ActorBoundEvent_314_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_USBHint1_K2Node_ActorBoundEvent_60_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_USBHint1_K2Node_ActorBoundEvent_60_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_USBHint1_K2Node_ActorBoundEvent_60_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_ShowWPReminder_K2Node_ActorBoundEvent_337_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_ShowWPReminder_K2Node_ActorBoundEvent_337_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_ShowWPReminder_K2Node_ActorBoundEvent_337_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_ObjectivesFromfloor_K2Node_ActorBoundEvent_33_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_ObjectivesFromfloor_K2Node_ActorBoundEvent_33_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_ObjectivesFromfloor_K2Node_ActorBoundEvent_33_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_foundSwamp_K2Node_ActorBoundEvent_71_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_foundSwamp_K2Node_ActorBoundEvent_71_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_foundSwamp_K2Node_ActorBoundEvent_71_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_foundSwamp2_K2Node_ActorBoundEvent_58_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_foundSwamp2_K2Node_ActorBoundEvent_58_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_foundSwamp2_K2Node_ActorBoundEvent_58_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_foundJordanOffice_K2Node_ActorBoundEvent_41_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_foundJordanOffice_K2Node_ActorBoundEvent_41_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_foundJordanOffice_K2Node_ActorBoundEvent_41_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_FoundBox21_K2Node_ActorBoundEvent_167_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_FoundBox21_K2Node_ActorBoundEvent_167_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_FoundBox21_K2Node_ActorBoundEvent_167_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_FoundBox11_K2Node_ActorBoundEvent_166_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_FoundBox11_K2Node_ActorBoundEvent_166_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_FoundBox11_K2Node_ActorBoundEvent_166_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_EnterControl2_K2Node_ActorBoundEvent_62_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_EnterControl2_K2Node_ActorBoundEvent_62_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_EnterControl2_K2Node_ActorBoundEvent_62_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_EnterControl2_4_K2Node_ActorBoundEvent_63_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_EnterControl2_4_K2Node_ActorBoundEvent_63_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_EnterControl2_4_K2Node_ActorBoundEvent_63_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_ControllRoom2_K2Node_ActorBoundEvent_52_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_ControllRoom2_K2Node_ActorBoundEvent_52_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_ControllRoom2_K2Node_ActorBoundEvent_52_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_ControllRoom1_K2Node_ActorBoundEvent_53_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_ControllRoom1_K2Node_ActorBoundEvent_53_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_ControllRoom1_K2Node_ActorBoundEvent_53_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_BokeInOffice2_K2Node_ActorBoundEvent_35_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_BokeInOffice2_K2Node_ActorBoundEvent_35_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_BokeInOffice2_K2Node_ActorBoundEvent_35_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_bokeInOffice1_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_bokeInOffice1_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerTrigger_bokeInOffice1_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerStartGroup_PP_K2Node_ActorBoundEvent_13_SBZOnSpawnGroupChosen__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerStartGroup_PP_K2Node_ActorBoundEvent_13_SBZOnSpawnGroupChosen__DelegateSignature final
+{
+public:
+	class ASBZPlayerStartGroup*                   PlayerStartGroup;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerStartGroup_PP_K2Node_ActorBoundEvent_13_SBZOnSpawnGroupChosen__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerStartGroup_PP2_K2Node_ActorBoundEvent_274_SBZOnSpawnGroupChosen__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerStartGroup_PP2_K2Node_ActorBoundEvent_274_SBZOnSpawnGroupChosen__DelegateSignature final
+{
+public:
+	class ASBZPlayerStartGroup*                   PlayerStartGroup;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerStartGroup_PP2_K2Node_ActorBoundEvent_274_SBZOnSpawnGroupChosen__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerStartGroup3_K2Node_ActorBoundEvent_42_SBZOnSpawnGroupChosen__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerStartGroup3_K2Node_ActorBoundEvent_42_SBZOnSpawnGroupChosen__DelegateSignature final
+{
+public:
+	class ASBZPlayerStartGroup*                   PlayerStartGroup;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerStartGroup3_K2Node_ActorBoundEvent_42_SBZOnSpawnGroupChosen__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerStartGroup2_K2Node_ActorBoundEvent_26_SBZOnSpawnGroupChosen__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerStartGroup2_K2Node_ActorBoundEvent_26_SBZOnSpawnGroupChosen__DelegateSignature final
+{
+public:
+	class ASBZPlayerStartGroup*                   PlayerStartGroup;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerStartGroup2_K2Node_ActorBoundEvent_26_SBZOnSpawnGroupChosen__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerStartGroup1_K2Node_ActorBoundEvent_11_SBZOnSpawnGroupChosen__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerStartGroup1_K2Node_ActorBoundEvent_11_SBZOnSpawnGroupChosen__DelegateSignature final
+{
+public:
+	class ASBZPlayerStartGroup*                   PlayerStartGroup;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerStartGroup1_K2Node_ActorBoundEvent_11_SBZOnSpawnGroupChosen__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerLookAtTrigger_elevator1_K2Node_ActorBoundEvent_172_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerLookAtTrigger_elevator1_K2Node_ActorBoundEvent_172_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerLookAtTrigger_elevator1_K2Node_ActorBoundEvent_172_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerLookAt_Elevator3_K2Node_ActorBoundEvent_301_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerLookAt_Elevator3_K2Node_ActorBoundEvent_301_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerLookAt_Elevator3_K2Node_ActorBoundEvent_301_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZPlayerLookAt_Elevator2_K2Node_ActorBoundEvent_171_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerLookAt_Elevator2_K2Node_ActorBoundEvent_171_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZPlayerLookAt_Elevator2_K2Node_ActorBoundEvent_171_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZModifiableTimer_HackBox_K2Node_ActorBoundEvent_176_SBZProgressionReachedDelegate__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZModifiableTimer_HackBox_K2Node_ActorBoundEvent_176_SBZProgressionReachedDelegate__DelegateSignature final
+{
+public:
+	int32                                         ProgressionIndexReached;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZModifiableTimer_HackBox_K2Node_ActorBoundEvent_176_SBZProgressionReachedDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi_K2Node_ActorBoundEvent_43_SBZFilterActorDynamicDelegate__DelegateSignature
 // 0x0020 (0x0020 - 0x0000)
-struct G_Stonk_Scripting_C_OnPreplanningAssetsTagsApplied final
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi_K2Node_ActorBoundEvent_43_SBZFilterActorDynamicDelegate__DelegateSignature final
 {
 public:
-	struct FGameplayTagContainer                  PreplanningTagContainer;                           // 0x0000(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi_K2Node_ActorBoundEvent_43_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi34_K2Node_ActorBoundEvent_205_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi34_K2Node_ActorBoundEvent_205_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi34_K2Node_ActorBoundEvent_205_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi33_K2Node_ActorBoundEvent_204_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi33_K2Node_ActorBoundEvent_204_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi33_K2Node_ActorBoundEvent_204_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi32_K2Node_ActorBoundEvent_203_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi32_K2Node_ActorBoundEvent_203_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi32_K2Node_ActorBoundEvent_203_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi25_K2Node_ActorBoundEvent_202_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi25_K2Node_ActorBoundEvent_202_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi25_K2Node_ActorBoundEvent_202_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi24_K2Node_ActorBoundEvent_201_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi24_K2Node_ActorBoundEvent_201_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi24_K2Node_ActorBoundEvent_201_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi23_K2Node_ActorBoundEvent_200_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi23_K2Node_ActorBoundEvent_200_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi23_K2Node_ActorBoundEvent_200_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi22_K2Node_ActorBoundEvent_199_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi22_K2Node_ActorBoundEvent_199_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi22_K2Node_ActorBoundEvent_199_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi21_K2Node_ActorBoundEvent_198_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi21_K2Node_ActorBoundEvent_198_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi21_K2Node_ActorBoundEvent_198_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi14_K2Node_ActorBoundEvent_196_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi14_K2Node_ActorBoundEvent_196_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi14_K2Node_ActorBoundEvent_196_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi13_K2Node_ActorBoundEvent_78_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi13_K2Node_ActorBoundEvent_78_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi13_K2Node_ActorBoundEvent_78_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi12_K2Node_ActorBoundEvent_67_SBZFilterActorDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi12_K2Node_ActorBoundEvent_67_SBZFilterActorDynamicDelegate__DelegateSignature final
+{
+public:
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZFilteredTrigger_CrewAi12_K2Node_ActorBoundEvent_67_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_ZiplineReuse3_K2Node_ActorBoundEvent_105_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_ZiplineReuse3_K2Node_ActorBoundEvent_105_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_ZiplineReuse3_K2Node_ActorBoundEvent_105_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_ZiplineReuse2_K2Node_ActorBoundEvent_103_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_ZiplineReuse2_K2Node_ActorBoundEvent_103_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_ZiplineReuse2_K2Node_ActorBoundEvent_103_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_ZiplineReuse1_K2Node_ActorBoundEvent_102_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_ZiplineReuse1_K2Node_ActorBoundEvent_102_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_ZiplineReuse1_K2Node_ActorBoundEvent_102_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_ZiplineGriefProtection_K2Node_ActorBoundEvent_278_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_ZiplineGriefProtection_K2Node_ActorBoundEvent_278_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_ZiplineGriefProtection_K2Node_ActorBoundEvent_278_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Zipline3GriefProtection_K2Node_ActorBoundEvent_169_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Zipline3GriefProtection_K2Node_ActorBoundEvent_169_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Zipline3GriefProtection_K2Node_ActorBoundEvent_169_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Zipline3_2_K2Node_ActorBoundEvent_1_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Zipline3_2_K2Node_ActorBoundEvent_1_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Zipline3_2_K2Node_ActorBoundEvent_1_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Zipline2GriefProtection_K2Node_ActorBoundEvent_279_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Zipline2GriefProtection_K2Node_ActorBoundEvent_279_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Zipline2GriefProtection_K2Node_ActorBoundEvent_279_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_UP_Zipline_K2Node_ActorBoundEvent_68_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_UP_Zipline_K2Node_ActorBoundEvent_68_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_UP_Zipline_K2Node_ActorBoundEvent_68_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_UP_Zipline3_K2Node_ActorBoundEvent_74_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_UP_Zipline3_K2Node_ActorBoundEvent_74_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_UP_Zipline3_K2Node_ActorBoundEvent_74_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_UP_Zipline2_K2Node_ActorBoundEvent_76_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_UP_Zipline2_K2Node_ActorBoundEvent_76_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_UP_Zipline2_K2Node_ActorBoundEvent_76_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_EMP_K2Node_ActorBoundEvent_80_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_EMP_K2Node_ActorBoundEvent_80_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_EMP_K2Node_ActorBoundEvent_80_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_EMP3_K2Node_ActorBoundEvent_110_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_EMP3_K2Node_ActorBoundEvent_110_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_EMP3_K2Node_ActorBoundEvent_110_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_EMP2_K2Node_ActorBoundEvent_112_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_EMP2_K2Node_ActorBoundEvent_112_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_EMP2_K2Node_ActorBoundEvent_112_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_ElevatorZipline3_K2Node_ActorBoundEvent_25_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_ElevatorZipline3_K2Node_ActorBoundEvent_25_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_ElevatorZipline3_K2Node_ActorBoundEvent_25_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_ElevatorZipline2_K2Node_ActorBoundEvent_24_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_ElevatorZipline2_K2Node_ActorBoundEvent_24_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_ElevatorZipline2_K2Node_ActorBoundEvent_24_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Dish2_K2Node_ActorBoundEvent_270_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Dish2_K2Node_ActorBoundEvent_270_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Dish2_K2Node_ActorBoundEvent_270_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Dish2_1_K2Node_ActorBoundEvent_268_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Dish2_1_K2Node_ActorBoundEvent_268_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Dish2_1_K2Node_ActorBoundEvent_268_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Device_K2Node_ActorBoundEvent_95_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Device_K2Node_ActorBoundEvent_95_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Device_K2Node_ActorBoundEvent_95_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Device12_K2Node_ActorBoundEvent_228_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Device12_K2Node_ActorBoundEvent_228_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_SBZBagTriggerVolume_Device12_K2Node_ActorBoundEvent_228_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_STO_WirlessCraneController_7_K2Node_ActorBoundEvent_77_SBZSabotagePointDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_STO_WirlessCraneController_7_K2Node_ActorBoundEvent_77_SBZSabotagePointDelegate__DelegateSignature final
+{
+public:
+	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_STO_WirlessCraneController_7_K2Node_ActorBoundEvent_77_SBZSabotagePointDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_STO_WirlessCraneController_01_2_K2Node_ActorBoundEvent_75_SBZSabotagePointDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_STO_WirlessCraneController_01_2_K2Node_ActorBoundEvent_75_SBZSabotagePointDelegate__DelegateSignature final
+{
+public:
+	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_STO_WirlessCraneController_01_2_K2Node_ActorBoundEvent_75_SBZSabotagePointDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_STO_SatelliteDish_2_K2Node_ActorBoundEvent_273_SBZSabotagePointDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_STO_SatelliteDish_2_K2Node_ActorBoundEvent_273_SBZSabotagePointDelegate__DelegateSignature final
+{
+public:
+	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_STO_SatelliteDish_2_K2Node_ActorBoundEvent_273_SBZSabotagePointDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_STO_SatelliteDish_1_K2Node_ActorBoundEvent_272_SBZSabotagePointDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_STO_SatelliteDish_1_K2Node_ActorBoundEvent_272_SBZSabotagePointDelegate__DelegateSignature final
+{
+public:
+	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_STO_SatelliteDish_1_K2Node_ActorBoundEvent_272_SBZSabotagePointDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_STO_ConstructionCrane_01_2_K2Node_ActorBoundEvent_251_SBZProgressionReachedDelegate__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_STO_ConstructionCrane_01_2_K2Node_ActorBoundEvent_251_SBZProgressionReachedDelegate__DelegateSignature final
+{
+public:
+	int32                                         ProgressionIndexReached;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_STO_ConstructionCrane_01_2_K2Node_ActorBoundEvent_251_SBZProgressionReachedDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_RFIDTagRed6_K2Node_ActorBoundEvent_336_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RFIDTagRed6_K2Node_ActorBoundEvent_336_SBZActorOnInteraction__DelegateSignature final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RFIDTagRed6_K2Node_ActorBoundEvent_336_SBZActorOnInteraction__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_RFIDTagRed5_K2Node_ActorBoundEvent_335_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RFIDTagRed5_K2Node_ActorBoundEvent_335_SBZActorOnInteraction__DelegateSignature final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RFIDTagRed5_K2Node_ActorBoundEvent_335_SBZActorOnInteraction__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_RFIDTagRed4_K2Node_ActorBoundEvent_334_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RFIDTagRed4_K2Node_ActorBoundEvent_334_SBZActorOnInteraction__DelegateSignature final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RFIDTagRed4_K2Node_ActorBoundEvent_334_SBZActorOnInteraction__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_RFIDTagRed3_K2Node_ActorBoundEvent_320_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RFIDTagRed3_K2Node_ActorBoundEvent_320_SBZActorOnInteraction__DelegateSignature final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RFIDTagRed3_K2Node_ActorBoundEvent_320_SBZActorOnInteraction__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_RFIDTagRed2_K2Node_ActorBoundEvent_324_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RFIDTagRed2_K2Node_ActorBoundEvent_324_SBZActorOnInteraction__DelegateSignature final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RFIDTagRed2_K2Node_ActorBoundEvent_324_SBZActorOnInteraction__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_RFIDTagRed1_K2Node_ActorBoundEvent_321_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RFIDTagRed1_K2Node_ActorBoundEvent_321_SBZActorOnInteraction__DelegateSignature final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RFIDTagRed1_K2Node_ActorBoundEvent_321_SBZActorOnInteraction__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_RFIDTagReaderRed_22_K2Node_ActorBoundEvent_276_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RFIDTagReaderRed_22_K2Node_ActorBoundEvent_276_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RFIDTagReaderRed_22_K2Node_ActorBoundEvent_276_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_RFIDTagReaderRed_21_K2Node_ActorBoundEvent_271_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RFIDTagReaderRed_21_K2Node_ActorBoundEvent_271_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RFIDTagReaderRed_21_K2Node_ActorBoundEvent_271_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_RFIDTagReaderRed_12_K2Node_ActorBoundEvent_227_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RFIDTagReaderRed_12_K2Node_ActorBoundEvent_227_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RFIDTagReaderRed_12_K2Node_ActorBoundEvent_227_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_RFIDTagReaderRed_11_K2Node_ActorBoundEvent_261_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RFIDTagReaderRed_11_K2Node_ActorBoundEvent_261_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RFIDTagReaderRed_11_K2Node_ActorBoundEvent_261_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_RedKeycardReader2_5_K2Node_ActorBoundEvent_56_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RedKeycardReader2_5_K2Node_ActorBoundEvent_56_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RedKeycardReader2_5_K2Node_ActorBoundEvent_56_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_RedKeycardReader1_K2Node_ActorBoundEvent_57_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RedKeycardReader1_K2Node_ActorBoundEvent_57_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_RedKeycardReader1_K2Node_ActorBoundEvent_57_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_PaperStack26_K2Node_ActorBoundEvent_100_ActorDestroyedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack26_K2Node_ActorBoundEvent_100_ActorDestroyedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack26_K2Node_ActorBoundEvent_100_ActorDestroyedSignature__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_PaperStack25_K2Node_ActorBoundEvent_99_ActorDestroyedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack25_K2Node_ActorBoundEvent_99_ActorDestroyedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack25_K2Node_ActorBoundEvent_99_ActorDestroyedSignature__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_PaperStack24_K2Node_ActorBoundEvent_98_ActorDestroyedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack24_K2Node_ActorBoundEvent_98_ActorDestroyedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack24_K2Node_ActorBoundEvent_98_ActorDestroyedSignature__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_PaperStack23_K2Node_ActorBoundEvent_48_ActorDestroyedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack23_K2Node_ActorBoundEvent_48_ActorDestroyedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack23_K2Node_ActorBoundEvent_48_ActorDestroyedSignature__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_PaperStack22_K2Node_ActorBoundEvent_49_ActorDestroyedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack22_K2Node_ActorBoundEvent_49_ActorDestroyedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack22_K2Node_ActorBoundEvent_49_ActorDestroyedSignature__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_PaperStack21_K2Node_ActorBoundEvent_47_ActorDestroyedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack21_K2Node_ActorBoundEvent_47_ActorDestroyedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack21_K2Node_ActorBoundEvent_47_ActorDestroyedSignature__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_PaperStack16_K2Node_ActorBoundEvent_97_ActorDestroyedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack16_K2Node_ActorBoundEvent_97_ActorDestroyedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack16_K2Node_ActorBoundEvent_97_ActorDestroyedSignature__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_PaperStack15_K2Node_ActorBoundEvent_96_ActorDestroyedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack15_K2Node_ActorBoundEvent_96_ActorDestroyedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack15_K2Node_ActorBoundEvent_96_ActorDestroyedSignature__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_PaperStack14_K2Node_ActorBoundEvent_10_ActorDestroyedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack14_K2Node_ActorBoundEvent_10_ActorDestroyedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack14_K2Node_ActorBoundEvent_10_ActorDestroyedSignature__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_PaperStack13_K2Node_ActorBoundEvent_45_ActorDestroyedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack13_K2Node_ActorBoundEvent_45_ActorDestroyedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack13_K2Node_ActorBoundEvent_45_ActorDestroyedSignature__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_PaperStack12_K2Node_ActorBoundEvent_44_ActorDestroyedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack12_K2Node_ActorBoundEvent_44_ActorDestroyedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack12_K2Node_ActorBoundEvent_44_ActorDestroyedSignature__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_PaperStack11_K2Node_ActorBoundEvent_46_ActorDestroyedSignature__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack11_K2Node_ActorBoundEvent_46_ActorDestroyedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_PaperStack11_K2Node_ActorBoundEvent_46_ActorDestroyedSignature__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_MulticodeKeypadTest_Booth_2_K2Node_ActorBoundEvent_191_SBZMultiCodeDelegate__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_MulticodeKeypadTest_Booth_2_K2Node_ActorBoundEvent_191_SBZMultiCodeDelegate__DelegateSignature final
+{
+public:
+	int32                                         CorrectCodesNum;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_MulticodeKeypadTest_Booth_2_K2Node_ActorBoundEvent_191_SBZMultiCodeDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_MulticodeKeypadTest_Booth_1_K2Node_ActorBoundEvent_174_SBZMultiCodeDelegate__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_MulticodeKeypadTest_Booth_1_K2Node_ActorBoundEvent_174_SBZMultiCodeDelegate__DelegateSignature final
+{
+public:
+	int32                                         CorrectCodesNum;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_MulticodeKeypadTest_Booth_1_K2Node_ActorBoundEvent_174_SBZMultiCodeDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_MulticodeKeypad_sabotagePoint2_K2Node_ActorBoundEvent_280_SBZSabotagePointDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_MulticodeKeypad_sabotagePoint2_K2Node_ActorBoundEvent_280_SBZSabotagePointDelegate__DelegateSignature final
+{
+public:
+	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_MulticodeKeypad_sabotagePoint2_K2Node_ActorBoundEvent_280_SBZSabotagePointDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_MulticodeKeypad_sabotagePoint1_K2Node_ActorBoundEvent_319_SBZSabotagePointDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_MulticodeKeypad_sabotagePoint1_K2Node_ActorBoundEvent_319_SBZSabotagePointDelegate__DelegateSignature final
+{
+public:
+	bool                                          bSabotaged;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_MulticodeKeypad_sabotagePoint1_K2Node_ActorBoundEvent_319_SBZSabotagePointDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_Int_DoubleDoor_Reinforced_Wood_3_K2Node_ActorBoundEvent_54_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_Int_DoubleDoor_Reinforced_Wood_3_K2Node_ActorBoundEvent_54_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_Int_DoubleDoor_Reinforced_Wood_3_K2Node_ActorBoundEvent_54_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_Int_DoubleDoor_Reinforced_Wood_02_2_K2Node_ActorBoundEvent_55_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_Int_DoubleDoor_Reinforced_Wood_02_2_K2Node_ActorBoundEvent_55_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_Int_DoubleDoor_Reinforced_Wood_02_2_K2Node_ActorBoundEvent_55_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL9_K2Node_ActorBoundEvent_344_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL9_K2Node_ActorBoundEvent_344_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL9_K2Node_ActorBoundEvent_344_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL8_8_K2Node_ActorBoundEvent_343_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL8_8_K2Node_ActorBoundEvent_343_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL8_8_K2Node_ActorBoundEvent_343_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL7_K2Node_ActorBoundEvent_342_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL7_K2Node_ActorBoundEvent_342_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL7_K2Node_ActorBoundEvent_342_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL6_4_K2Node_ActorBoundEvent_341_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL6_4_K2Node_ActorBoundEvent_341_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL6_4_K2Node_ActorBoundEvent_341_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL5_K2Node_ActorBoundEvent_340_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL5_K2Node_ActorBoundEvent_340_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL5_K2Node_ActorBoundEvent_340_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL4_K2Node_ActorBoundEvent_339_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL4_K2Node_ActorBoundEvent_339_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL4_K2Node_ActorBoundEvent_339_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL3_9_K2Node_ActorBoundEvent_338_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL3_9_K2Node_ActorBoundEvent_338_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL3_9_K2Node_ActorBoundEvent_338_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL12_16_K2Node_ActorBoundEvent_212_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL12_16_K2Node_ActorBoundEvent_212_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL12_16_K2Node_ActorBoundEvent_212_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL11_K2Node_ActorBoundEvent_346_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL11_K2Node_ActorBoundEvent_346_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL11_K2Node_ActorBoundEvent_346_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL10_12_K2Node_ActorBoundEvent_345_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL10_12_K2Node_ActorBoundEvent_345_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL10_12_K2Node_ActorBoundEvent_345_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_DigitalKeyReader_Office22_K2Node_ActorBoundEvent_36_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_DigitalKeyReader_Office22_K2Node_ActorBoundEvent_36_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_DigitalKeyReader_Office22_K2Node_ActorBoundEvent_36_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_DigitalKeyReader_Office21_K2Node_ActorBoundEvent_37_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_DigitalKeyReader_Office21_K2Node_ActorBoundEvent_37_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_DigitalKeyReader_Office21_K2Node_ActorBoundEvent_37_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_DigitalKeyReader_Office12_K2Node_ActorBoundEvent_40_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_DigitalKeyReader_Office12_K2Node_ActorBoundEvent_40_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_DigitalKeyReader_Office12_K2Node_ActorBoundEvent_40_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_DigitalKeyReader_Office11_K2Node_ActorBoundEvent_39_SBZModuleActorStateChangedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_DigitalKeyReader_Office11_K2Node_ActorBoundEvent_39_SBZModuleActorStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZModuleActorState                          NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_DigitalKeyReader_Office11_K2Node_ActorBoundEvent_39_SBZModuleActorStateChangedDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_Booth_CircuitBreaker_6_K2Node_ActorBoundEvent_250_SBZHackableActorInterruptedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_Booth_CircuitBreaker_6_K2Node_ActorBoundEvent_250_SBZHackableActorInterruptedDelegate__DelegateSignature final
+{
+public:
+	ESBZHackableActorInterruptReason              Reason;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_Booth_CircuitBreaker_6_K2Node_ActorBoundEvent_250_SBZHackableActorInterruptedDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_Booth_CircuitBreaker_5_K2Node_ActorBoundEvent_255_SBZHackableActorInterruptedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_Booth_CircuitBreaker_5_K2Node_ActorBoundEvent_255_SBZHackableActorInterruptedDelegate__DelegateSignature final
+{
+public:
+	ESBZHackableActorInterruptReason              Reason;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_Booth_CircuitBreaker_5_K2Node_ActorBoundEvent_255_SBZHackableActorInterruptedDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_Booth_CircuitBreaker_4_K2Node_ActorBoundEvent_111_SBZHackableActorInterruptedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_Booth_CircuitBreaker_4_K2Node_ActorBoundEvent_111_SBZHackableActorInterruptedDelegate__DelegateSignature final
+{
+public:
+	ESBZHackableActorInterruptReason              Reason;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_Booth_CircuitBreaker_4_K2Node_ActorBoundEvent_111_SBZHackableActorInterruptedDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_Booth_CircuitBreaker_3_K2Node_ActorBoundEvent_107_SBZHackableActorInterruptedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_Booth_CircuitBreaker_3_K2Node_ActorBoundEvent_107_SBZHackableActorInterruptedDelegate__DelegateSignature final
+{
+public:
+	ESBZHackableActorInterruptReason              Reason;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_Booth_CircuitBreaker_3_K2Node_ActorBoundEvent_107_SBZHackableActorInterruptedDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_Booth_CircuitBreaker_2_K2Node_ActorBoundEvent_133_SBZHackableActorInterruptedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_Booth_CircuitBreaker_2_K2Node_ActorBoundEvent_133_SBZHackableActorInterruptedDelegate__DelegateSignature final
+{
+public:
+	ESBZHackableActorInterruptReason              Reason;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_Booth_CircuitBreaker_2_K2Node_ActorBoundEvent_133_SBZHackableActorInterruptedDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_Stonk_Scripting_BP_Booth_CircuitBreaker_1_K2Node_ActorBoundEvent_208_SBZHackableActorInterruptedDelegate__DelegateSignature
+// 0x0001 (0x0001 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_Booth_CircuitBreaker_1_K2Node_ActorBoundEvent_208_SBZHackableActorInterruptedDelegate__DelegateSignature final
+{
+public:
+	ESBZHackableActorInterruptReason              Reason;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_Stonk_Scripting_BP_Booth_CircuitBreaker_1_K2Node_ActorBoundEvent_208_SBZHackableActorInterruptedDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape2_K2Node_ActorBoundEvent_12_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature;
+
+// Function G_Stonk_Scripting.G_Stonk_Scripting_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Escape_Loud_K2Node_ActorBoundEvent_15_SBZBagEnteredDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct G_Stonk_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Escape_Loud_K2Node_ActorBoundEvent_15_SBZBagEnteredDelegate__DelegateSignature final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagItem*                            Bag;                                               // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZBagHandle                          Handle;                                            // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_G_Stonk_Scripting_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Escape_Loud_K2Node_ActorBoundEvent_15_SBZBagEnteredDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

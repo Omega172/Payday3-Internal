@@ -30,9 +30,9 @@ public:
 	E_ComputerScreens_01                          Screen;                                            // 0x036D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_CashRegister_01_Monitor_SmallDestruction_SBZCosmeticDestruction_1_K2Node_ComponentBoundEvent_5_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
-	void ExecuteUbergraph_BP_DesktopComputer_01_Monitor(int32 EntryPoint);
 	void UserConstructionScript();
+	void ExecuteUbergraph_BP_DesktopComputer_01_Monitor(int32 EntryPoint);
+	void BndEvt__BP_CashRegister_01_Monitor_SmallDestruction_SBZCosmeticDestruction_1_K2Node_ComponentBoundEvent_5_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 
 public:
 	static class UClass* StaticClass()
@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<ABP_DesktopComputer_01_Monitor_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DesktopComputer_01_Monitor_C;
 
 SDK_NAMESPACE_END

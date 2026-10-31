@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_CigarsBagSecured_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CigarsBagSecured_C;
 
 SDK_NAMESPACE_END

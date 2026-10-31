@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGA_PlaceableTripMine_C>();
 	}
 };
+DUMPER7_ASSERTS_UGA_PlaceableTripMine_C;
 
 SDK_NAMESPACE_END

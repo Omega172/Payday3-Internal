@@ -34,16 +34,16 @@ public:
 	double                                        Playback_Speed;                                    // 0x0340(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WidgetPanel(int32 EntryPoint);
-	void Finished_56DA7E7C45AE0904DB1175BE7D4B46E4();
-	void Finished_7B946C3149FA1BC9E44D33B46F1CB58B();
-	void Finished_86331D804645B60084E04BB6FBA2BB1D();
-	void Finished_EE8205CE46CCF146B3BC2FA96BFAADC8();
-	void PlayBlink();
-	void ResetRotation(double Angle);
-	void RotateLeft(class UWBP_TurnStuff_C* NewParam);
-	void RotateRight(class UWBP_TurnStuff_C* NewParam);
 	void StopBlink();
+	void RotateRight(class UWBP_TurnStuff_C* NewParam);
+	void RotateLeft(class UWBP_TurnStuff_C* NewParam);
+	void ResetRotation(double Angle);
+	void PlayBlink();
+	void Finished_EE8205CE46CCF146B3BC2FA96BFAADC8();
+	void Finished_86331D804645B60084E04BB6FBA2BB1D();
+	void Finished_7B946C3149FA1BC9E44D33B46F1CB58B();
+	void Finished_56DA7E7C45AE0904DB1175BE7D4B46E4();
+	void ExecuteUbergraph_WidgetPanel(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -59,5 +59,6 @@ public:
 		return GetDefaultObjImpl<UWidgetPanel_C>();
 	}
 };
+DUMPER7_ASSERTS_UWidgetPanel_C;
 
 SDK_NAMESPACE_END

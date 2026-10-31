@@ -16,91 +16,191 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_StonkBase.WBP_StonkBase_C.Active
+// Function WBP_StonkBase.WBP_StonkBase_C.UpdateUnlockDisplayText
 // (BlueprintCallable, BlueprintEvent)
-
-void UWBP_StonkBase_C::Active()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_StonkBase_C", "Active");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_StonkBase.WBP_StonkBase_C.Code
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_StonkBase_C::Code()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_StonkBase_C", "Code");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_StonkBase.WBP_StonkBase_C.Done
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_StonkBase_C::Done()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_StonkBase_C", "Done");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_StonkBase.WBP_StonkBase_C.Email
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_StonkBase_C::Email()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_StonkBase_C", "Email");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_StonkBase.WBP_StonkBase_C.ExecuteUbergraph_WBP_StonkBase
-// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZHackableDisplayText&   NewDisplayText_UpdateUnlockDisplayText                 (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_StonkBase_C::ExecuteUbergraph_WBP_StonkBase(int32 EntryPoint)
+void UWBP_StonkBase_C::UpdateUnlockDisplayText(const struct FSBZHackableDisplayText& NewDisplayText_UpdateUnlockDisplayText)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateUnlockDisplayText", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_StonkBase_C", "ExecuteUbergraph_WBP_StonkBase");
+	Params::WBP_StonkBase_C_UpdateUnlockDisplayText Parms{};
 
-	Params::WBP_StonkBase_C_ExecuteUbergraph_WBP_StonkBase Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.NewDisplayText_UpdateUnlockDisplayText = std::move(NewDisplayText_UpdateUnlockDisplayText);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_StonkBase.WBP_StonkBase_C.Failed
+// Function WBP_StonkBase.WBP_StonkBase_C.UpdateSuccessText
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      InText_UpdateSuccessText                               (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_StonkBase_C::UpdateSuccessText(const class FText& InText_UpdateSuccessText)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateSuccessText", FnName));
+
+	Params::WBP_StonkBase_C_UpdateSuccessText Parms{};
+
+	Parms.InText_UpdateSuccessText = std::move(InText_UpdateSuccessText);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_StonkBase.WBP_StonkBase_C.updateKeypadPossibleCodes
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const TArray<int32>&                    codes_updateKeypadPossibleCodes                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_StonkBase_C::updateKeypadPossibleCodes(const TArray<int32>& codes_updateKeypadPossibleCodes)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"updateKeypadPossibleCodes", FnName));
+
+	Params::WBP_StonkBase_C_updateKeypadPossibleCodes Parms{};
+
+	Parms.codes_updateKeypadPossibleCodes = std::move(codes_updateKeypadPossibleCodes);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_StonkBase.WBP_StonkBase_C.updateInformation
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      main_updateInformation                                 (BlueprintVisible, BlueprintReadOnly, Parm)
+// const class FText&                      secondary_updateInformation                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
+// const class FText&                      additional_updateInformation                           (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_StonkBase_C::updateInformation(const class FText& main_updateInformation, const class FText& secondary_updateInformation, const class FText& additional_updateInformation)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"updateInformation", FnName));
+
+	Params::WBP_StonkBase_C_updateInformation Parms{};
+
+	Parms.main_updateInformation = std::move(main_updateInformation);
+	Parms.secondary_updateInformation = std::move(secondary_updateInformation);
+	Parms.additional_updateInformation = std::move(additional_updateInformation);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_StonkBase.WBP_StonkBase_C.updateHackingTimerProcessName
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      InText_updateHackingTimerProcessName                   (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_StonkBase_C::updateHackingTimerProcessName(const class FText& InText_updateHackingTimerProcessName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"updateHackingTimerProcessName", FnName));
+
+	Params::WBP_StonkBase_C_updateHackingTimerProcessName Parms{};
+
+	Parms.InText_updateHackingTimerProcessName = std::move(InText_updateHackingTimerProcessName);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_StonkBase.WBP_StonkBase_C.updateHackingProgress
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   progress_updateHackingProgress                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_StonkBase_C::updateHackingProgress(int32 progress_updateHackingProgress)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"updateHackingProgress", FnName));
+
+	Params::WBP_StonkBase_C_updateHackingProgress Parms{};
+
+	Parms.progress_updateHackingProgress = progress_updateHackingProgress;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_StonkBase.WBP_StonkBase_C.UpdateEmailDisplayText
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FSBZHackableDisplayText&   DisplayText_UpdateEmailDisplayText                     (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_StonkBase_C::UpdateEmailDisplayText(const struct FSBZHackableDisplayText& DisplayText_UpdateEmailDisplayText)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateEmailDisplayText", FnName));
+
+	Params::WBP_StonkBase_C_UpdateEmailDisplayText Parms{};
+
+	Parms.DisplayText_UpdateEmailDisplayText = std::move(DisplayText_UpdateEmailDisplayText);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_StonkBase.WBP_StonkBase_C.Unlocked
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_StonkBase_C::Failed()
+void UWBP_StonkBase_C::Unlocked()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Unlocked", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_StonkBase_C", "Failed");
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_StonkBase.WBP_StonkBase_C.Progressing
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_StonkBase_C::Progressing()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Progressing", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_StonkBase.WBP_StonkBase_C.NotActive
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_StonkBase_C::NotActive()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"NotActive", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_StonkBase.WBP_StonkBase_C.Names
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_StonkBase_C::Names()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Names", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_StonkBase.WBP_StonkBase_C.Interupted
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_StonkBase_C::Interupted()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Interupted", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -113,10 +213,8 @@ void UWBP_StonkBase_C::Failed()
 
 void UWBP_StonkBase_C::HideAllWidgetsButOne(class UWidget* WidgetToShow)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_StonkBase_C", "HideAllWidgetsButOne");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HideAllWidgetsButOne", FnName));
 
 	Params::WBP_StonkBase_C_HideAllWidgetsButOne Parms{};
 
@@ -126,217 +224,81 @@ void UWBP_StonkBase_C::HideAllWidgetsButOne(class UWidget* WidgetToShow)
 }
 
 
-// Function WBP_StonkBase.WBP_StonkBase_C.Interupted
+// Function WBP_StonkBase.WBP_StonkBase_C.Failed
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_StonkBase_C::Interupted()
+void UWBP_StonkBase_C::Failed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_StonkBase_C", "Interupted");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Failed", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_StonkBase.WBP_StonkBase_C.Names
+// Function WBP_StonkBase.WBP_StonkBase_C.ExecuteUbergraph_WBP_StonkBase
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_StonkBase_C::ExecuteUbergraph_WBP_StonkBase(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_StonkBase_C", "ExecuteUbergraph_WBP_StonkBase", FuncInfo);
+
+	Params::WBP_StonkBase_C_ExecuteUbergraph_WBP_StonkBase Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_StonkBase.WBP_StonkBase_C.Email
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_StonkBase_C::Names()
+void UWBP_StonkBase_C::Email()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_StonkBase_C", "Names");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Email", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_StonkBase.WBP_StonkBase_C.NotActive
+// Function WBP_StonkBase.WBP_StonkBase_C.Done
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_StonkBase_C::NotActive()
+void UWBP_StonkBase_C::Done()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_StonkBase_C", "NotActive");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Done", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_StonkBase.WBP_StonkBase_C.Progressing
+// Function WBP_StonkBase.WBP_StonkBase_C.Code
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_StonkBase_C::Progressing()
+void UWBP_StonkBase_C::Code()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_StonkBase_C", "Progressing");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Code", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_StonkBase.WBP_StonkBase_C.Unlocked
+// Function WBP_StonkBase.WBP_StonkBase_C.Active
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_StonkBase_C::Unlocked()
+void UWBP_StonkBase_C::Active()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_StonkBase_C", "Unlocked");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Active", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_StonkBase.WBP_StonkBase_C.UpdateEmailDisplayText
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FSBZHackableDisplayText&   DisplayText                                            (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_StonkBase_C::UpdateEmailDisplayText(const struct FSBZHackableDisplayText& DisplayText)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_StonkBase_C", "UpdateEmailDisplayText");
-
-	Params::WBP_StonkBase_C_UpdateEmailDisplayText Parms{};
-
-	Parms.DisplayText = std::move(DisplayText);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_StonkBase.WBP_StonkBase_C.updateHackingProgress
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   progress                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_StonkBase_C::updateHackingProgress(int32 progress)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_StonkBase_C", "updateHackingProgress");
-
-	Params::WBP_StonkBase_C_updateHackingProgress Parms{};
-
-	Parms.progress = progress;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_StonkBase.WBP_StonkBase_C.updateHackingTimerProcessName
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_StonkBase_C::updateHackingTimerProcessName(const class FText& InText)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_StonkBase_C", "updateHackingTimerProcessName");
-
-	Params::WBP_StonkBase_C_updateHackingTimerProcessName Parms{};
-
-	Parms.InText = std::move(InText);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_StonkBase.WBP_StonkBase_C.updateInformation
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      main                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
-// const class FText&                      secondary                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm)
-// const class FText&                      additional                                             (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_StonkBase_C::updateInformation(const class FText& main, const class FText& secondary, const class FText& additional)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_StonkBase_C", "updateInformation");
-
-	Params::WBP_StonkBase_C_updateInformation Parms{};
-
-	Parms.main = std::move(main);
-	Parms.secondary = std::move(secondary);
-	Parms.additional = std::move(additional);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_StonkBase.WBP_StonkBase_C.updateKeypadPossibleCodes
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const TArray<int32>&                    codes                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_StonkBase_C::updateKeypadPossibleCodes(const TArray<int32>& codes)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_StonkBase_C", "updateKeypadPossibleCodes");
-
-	Params::WBP_StonkBase_C_updateKeypadPossibleCodes Parms{};
-
-	Parms.codes = std::move(codes);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_StonkBase.WBP_StonkBase_C.UpdateSuccessText
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_StonkBase_C::UpdateSuccessText(const class FText& InText)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_StonkBase_C", "UpdateSuccessText");
-
-	Params::WBP_StonkBase_C_UpdateSuccessText Parms{};
-
-	Parms.InText = std::move(InText);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_StonkBase.WBP_StonkBase_C.UpdateUnlockDisplayText
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FSBZHackableDisplayText&   NewDisplayText                                         (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_StonkBase_C::UpdateUnlockDisplayText(const struct FSBZHackableDisplayText& NewDisplayText)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_StonkBase_C", "UpdateUnlockDisplayText");
-
-	Params::WBP_StonkBase_C_UpdateUnlockDisplayText Parms{};
-
-	Parms.NewDisplayText = std::move(NewDisplayText);
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 

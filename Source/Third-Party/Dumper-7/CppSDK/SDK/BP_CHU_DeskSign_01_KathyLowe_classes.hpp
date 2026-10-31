@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_CHU_DeskSign_01_KathyLowe_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CHU_DeskSign_01_KathyLowe_C;
 
 SDK_NAMESPACE_END

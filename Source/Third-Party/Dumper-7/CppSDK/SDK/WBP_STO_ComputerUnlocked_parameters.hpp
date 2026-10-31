@@ -27,6 +27,7 @@ public:
 	bool                                          CallFunc_TextIsEmpty_ReturnValue_2;                // 0x0042(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_TextIsEmpty_ReturnValue_3;                // 0x0043(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_WBP_STO_ComputerUnlocked_C_UpdateDisplayText;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

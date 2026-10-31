@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UCS_Big_Explosion_C>();
 	}
 };
+DUMPER7_ASSERTS_UCS_Big_Explosion_C;
 
 SDK_NAMESPACE_END

@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<AFOR_BPL_FloodLampPainting_C>();
 	}
 };
+DUMPER7_ASSERTS_AFOR_BPL_FloodLampPainting_C;
 
 SDK_NAMESPACE_END

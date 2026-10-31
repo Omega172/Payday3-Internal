@@ -16,6 +16,44 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_ReplicatedBinaryActor_DJSpeakers.BP_ReplicatedBinaryActor_DJSpeakers_C.ExecuteUbergraph_BP_ReplicatedBinaryActor_DJSpeakers
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ReplicatedBinaryActor_DJSpeakers_C::ExecuteUbergraph_BP_ReplicatedBinaryActor_DJSpeakers(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ReplicatedBinaryActor_DJSpeakers_C", "ExecuteUbergraph_BP_ReplicatedBinaryActor_DJSpeakers", FuncInfo);
+
+	Params::BP_ReplicatedBinaryActor_DJSpeakers_C_ExecuteUbergraph_BP_ReplicatedBinaryActor_DJSpeakers Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ReplicatedBinaryActor_DJSpeakers.BP_ReplicatedBinaryActor_DJSpeakers_C.BP_OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bNewState_BP_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmentics_BP_OnStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ReplicatedBinaryActor_DJSpeakers_C::BP_OnStateChanged(bool bNewState_BP_OnStateChanged, bool bDoCosmentics_BP_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnStateChanged", FnName));
+
+	Params::BP_ReplicatedBinaryActor_DJSpeakers_C_BP_OnStateChanged Parms{};
+
+	Parms.bNewState_BP_OnStateChanged = bNewState_BP_OnStateChanged;
+	Parms.bDoCosmentics_BP_OnStateChanged = bDoCosmentics_BP_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_ReplicatedBinaryActor_DJSpeakers.BP_ReplicatedBinaryActor_DJSpeakers_C.BndEvt__BP_ReplicatedBinaryActor_DJSpeakers_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -25,58 +63,14 @@ SDK_NAMESPACE_START
 
 void ABP_ReplicatedBinaryActor_DJSpeakers_C::BndEvt__BP_ReplicatedBinaryActor_DJSpeakers_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_DJSpeakers_C", "BndEvt__BP_ReplicatedBinaryActor_DJSpeakers_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ReplicatedBinaryActor_DJSpeakers_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
 
 	Params::BP_ReplicatedBinaryActor_DJSpeakers_C_BndEvt__BP_ReplicatedBinaryActor_DJSpeakers_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
 	Parms.Interactable = Interactable;
 	Parms.Interactor = Interactor;
 	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ReplicatedBinaryActor_DJSpeakers.BP_ReplicatedBinaryActor_DJSpeakers_C.BP_OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bNewState                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmentics                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ReplicatedBinaryActor_DJSpeakers_C::BP_OnStateChanged(bool bNewState, bool bDoCosmentics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_DJSpeakers_C", "BP_OnStateChanged");
-
-	Params::BP_ReplicatedBinaryActor_DJSpeakers_C_BP_OnStateChanged Parms{};
-
-	Parms.bNewState = bNewState;
-	Parms.bDoCosmentics = bDoCosmentics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ReplicatedBinaryActor_DJSpeakers.BP_ReplicatedBinaryActor_DJSpeakers_C.ExecuteUbergraph_BP_ReplicatedBinaryActor_DJSpeakers
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ReplicatedBinaryActor_DJSpeakers_C::ExecuteUbergraph_BP_ReplicatedBinaryActor_DJSpeakers(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActor_DJSpeakers_C", "ExecuteUbergraph_BP_ReplicatedBinaryActor_DJSpeakers");
-
-	Params::BP_ReplicatedBinaryActor_DJSpeakers_C_ExecuteUbergraph_BP_ReplicatedBinaryActor_DJSpeakers Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

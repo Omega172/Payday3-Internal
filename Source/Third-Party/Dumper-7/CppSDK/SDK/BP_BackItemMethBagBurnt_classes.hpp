@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_BackItemMethBagBurnt_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BackItemMethBagBurnt_C;
 
 SDK_NAMESPACE_END

@@ -31,5 +31,6 @@ public:
 	struct FFourx4_minigame_Struct                Fourx4_Minigame_Type_9_32_6DE923E747C44DDB5D809AA7FECBA280; // 0x0180(0x0030)(Edit, BlueprintVisible, ContainsInstancedReference, HasGetValueTypeHash)
 	struct FFourx4_minigame_Struct                Fourx4_Minigame_Type_10_33_400FE8724E7BA18FDC33768C06641FBC; // 0x01B0(0x0030)(Edit, BlueprintVisible, ContainsInstancedReference, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_FFourx4_All_Hacking_Minigames_Struct;
 
 SDK_NAMESPACE_END

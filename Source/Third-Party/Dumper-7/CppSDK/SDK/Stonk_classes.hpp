@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AStonk_C>();
 	}
 };
+DUMPER7_ASSERTS_AStonk_C;
 
 SDK_NAMESPACE_END

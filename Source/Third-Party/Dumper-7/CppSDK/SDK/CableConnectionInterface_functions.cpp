@@ -16,23 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function CableConnectionInterface.CableConnectionInterface_C.CorrectColorToCut
+// Function CableConnectionInterface.CableConnectionInterface_C.WhatCabinetIsConnected
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ECableBox_Color_Enum                    CorrectColorToCut_0                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class ABP_SingleCableBox_C*             NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void ICableConnectionInterface_C::CorrectColorToCut(ECableBox_Color_Enum CorrectColorToCut_0, class ABP_SingleCableBox_C* NewParam)
+void ICableConnectionInterface_C::WhatCabinetIsConnected(const class FText& NewParam)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(AsUObject(), GetStaticName(L"WhatCabinetIsConnected", FnName));
 
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("CableConnectionInterface_C", "CorrectColorToCut");
+	Params::CableConnectionInterface_C_WhatCabinetIsConnected Parms{};
 
-	Params::CableConnectionInterface_C_CorrectColorToCut Parms{};
-
-	Parms.CorrectColorToCut_0 = CorrectColorToCut_0;
-	Parms.NewParam = NewParam;
+	Parms.NewParam = std::move(NewParam);
 
 	AsUObject()->ProcessEvent(Func, &Parms);
 }
@@ -45,10 +41,8 @@ void ICableConnectionInterface_C::CorrectColorToCut(ECableBox_Color_Enum Correct
 
 void ICableConnectionInterface_C::FinishedCable(bool CurrentStateOfCableBox)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("CableConnectionInterface_C", "FinishedCable");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(AsUObject(), GetStaticName(L"FinishedCable", FnName));
 
 	Params::CableConnectionInterface_C_FinishedCable Parms{};
 
@@ -58,21 +52,21 @@ void ICableConnectionInterface_C::FinishedCable(bool CurrentStateOfCableBox)
 }
 
 
-// Function CableConnectionInterface.CableConnectionInterface_C.WhatCabinetIsConnected
+// Function CableConnectionInterface.CableConnectionInterface_C.CorrectColorToCut
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FText&                      NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm)
+// ECableBox_Color_Enum                    CorrectColorToCut                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ABP_SingleCableBox_C*             NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ICableConnectionInterface_C::WhatCabinetIsConnected(const class FText& NewParam)
+void ICableConnectionInterface_C::CorrectColorToCut(ECableBox_Color_Enum CorrectColorToCut, class ABP_SingleCableBox_C* NewParam)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(AsUObject(), GetStaticName(L"CorrectColorToCut", FnName));
 
-	if (Func == nullptr)
-		Func = AsUObject()->Class->GetFunction("CableConnectionInterface_C", "WhatCabinetIsConnected");
+	Params::CableConnectionInterface_C_CorrectColorToCut Parms{};
 
-	Params::CableConnectionInterface_C_WhatCabinetIsConnected Parms{};
-
-	Parms.NewParam = std::move(NewParam);
+	Parms.CorrectColorToCut = CorrectColorToCut;
+	Parms.NewParam = NewParam;
 
 	AsUObject()->ProcessEvent(Func, &Parms);
 }

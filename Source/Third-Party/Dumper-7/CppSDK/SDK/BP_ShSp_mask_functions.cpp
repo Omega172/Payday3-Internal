@@ -16,23 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ShSp_mask.BP_ShSp_mask_C.ExecuteUbergraph_BP_ShSp_mask
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ShSp_mask.BP_ShSp_mask_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_ShSp_mask_C::ExecuteUbergraph_BP_ShSp_mask(int32 EntryPoint)
+void ABP_ShSp_mask_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShSp_mask_C", "ExecuteUbergraph_BP_ShSp_mask");
-
-	Params::BP_ShSp_mask_C_ExecuteUbergraph_BP_ShSp_mask Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -41,26 +33,28 @@ void ABP_ShSp_mask_C::ExecuteUbergraph_BP_ShSp_mask(int32 EntryPoint)
 
 void ABP_ShSp_mask_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShSp_mask_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ShSp_mask.BP_ShSp_mask_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_ShSp_mask.BP_ShSp_mask_C.ExecuteUbergraph_BP_ShSp_mask
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ShSp_mask_C::UserConstructionScript()
+void ABP_ShSp_mask_C::ExecuteUbergraph_BP_ShSp_mask(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ShSp_mask_C", "ExecuteUbergraph_BP_ShSp_mask", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShSp_mask_C", "UserConstructionScript");
+	Params::BP_ShSp_mask_C_ExecuteUbergraph_BP_ShSp_mask Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

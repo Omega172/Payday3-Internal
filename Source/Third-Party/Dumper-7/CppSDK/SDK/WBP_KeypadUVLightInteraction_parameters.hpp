@@ -10,22 +10,37 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "E_CodeGuessedStatus_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_KeypadUVLightInteraction.WBP_KeypadUVLightInteraction_C.ExecuteUbergraph_WBP_KeypadUVLightInteraction
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_KeypadUVLightInteraction_C_ExecuteUbergraph_WBP_KeypadUVLightInteraction final
+// Function WBP_KeypadUVLightInteraction.WBP_KeypadUVLightInteraction_C.SetKeypad
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_KeypadUVLightInteraction_C_SetKeypad final
 {
 public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ABP_KeyPad_C*                           K2Node_CustomEvent_Keypad;                         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_KeyPad_C*                           Keypad;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_WBP_KeypadUVLightInteraction_C_SetKeypad;
+
+// Function WBP_KeypadUVLightInteraction.WBP_KeypadUVLightInteraction_C.GetBrushColor_0
+// 0x0054 (0x0054 - 0x0000)
+struct WBP_KeypadUVLightInteraction_C_GetBrushColor_0 final
+{
+public:
+	struct FLinearColor                           ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable;                              // 0x0010(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable_1;                            // 0x0020(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Temp_struct_Variable_2;                            // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	E_CodeGuessedStatus                           Temp_byte_Variable;                                // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_42[0x2];                                       // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FLinearColor                           K2Node_Select_Default;                             // 0x0044(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_KeypadUVLightInteraction_C_GetBrushColor_0;
 
 // Function WBP_KeypadUVLightInteraction.WBP_KeypadUVLightInteraction_C.Get_CodeText_Text_0
 // 0x00A8 (0x00A8 - 0x0000)
@@ -58,29 +73,18 @@ public:
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0088(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0098(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_WBP_KeypadUVLightInteraction_C_Get_CodeText_Text_0;
 
-// Function WBP_KeypadUVLightInteraction.WBP_KeypadUVLightInteraction_C.GetBrushColor_0
-// 0x0054 (0x0054 - 0x0000)
-struct WBP_KeypadUVLightInteraction_C_GetBrushColor_0 final
+// Function WBP_KeypadUVLightInteraction.WBP_KeypadUVLightInteraction_C.ExecuteUbergraph_WBP_KeypadUVLightInteraction
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_KeypadUVLightInteraction_C_ExecuteUbergraph_WBP_KeypadUVLightInteraction final
 {
 public:
-	struct FLinearColor                           ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable;                              // 0x0010(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable_1;                            // 0x0020(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Temp_struct_Variable_2;                            // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	E_CodeGuessedStatus                           Temp_byte_Variable;                                // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_42[0x2];                                       // 0x0042(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FLinearColor                           K2Node_Select_Default;                             // 0x0044(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ABP_KeyPad_C*                           K2Node_CustomEvent_Keypad;                         // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function WBP_KeypadUVLightInteraction.WBP_KeypadUVLightInteraction_C.SetKeypad
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_KeypadUVLightInteraction_C_SetKeypad final
-{
-public:
-	class ABP_KeyPad_C*                           Keypad_0;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_WBP_KeypadUVLightInteraction_C_ExecuteUbergraph_WBP_KeypadUVLightInteraction;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

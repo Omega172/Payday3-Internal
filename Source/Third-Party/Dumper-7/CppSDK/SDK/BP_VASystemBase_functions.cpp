@@ -16,21 +16,61 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_VASystemBase.BP_VASystemBase_C.ExecuteUbergraph_BP_VASystemBase
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_VASystemBase.BP_VASystemBase_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_VASystemBase_C::ExecuteUbergraph_BP_VASystemBase(int32 EntryPoint)
+void ABP_VASystemBase_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VASystemBase_C", "ExecuteUbergraph_BP_VASystemBase");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_VASystemBase_C_ExecuteUbergraph_BP_VASystemBase Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+// Function BP_VASystemBase.BP_VASystemBase_C.toggleEmissiveLight
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_VASystemBase_C::toggleEmissiveLight()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"toggleEmissiveLight", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_VASystemBase.BP_VASystemBase_C.setEmissiveLight
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_VASystemBase_C::setEmissiveLight(bool enabled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setEmissiveLight", FnName));
+
+	Params::BP_VASystemBase_C_setEmissiveLight Parms{};
+
+	Parms.enabled = enabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_VASystemBase.BP_VASystemBase_C.setAudioState
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_VASystemBase_C::setAudioState(int32 NewState)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setAudioState", FnName));
+
+	Params::BP_VASystemBase_C_setAudioState Parms{};
+
+	Parms.NewState = NewState;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -45,10 +85,8 @@ void ABP_VASystemBase_C::ExecuteUbergraph_BP_VASystemBase(int32 EntryPoint)
 
 void ABP_VASystemBase_C::OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VASystemBase_C", "OnStateChanged");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
 	Params::BP_VASystemBase_C_OnStateChanged Parms{};
 
@@ -60,71 +98,21 @@ void ABP_VASystemBase_C::OnStateChanged(int32 OldState, int32 NewState, bool bDo
 }
 
 
-// Function BP_VASystemBase.BP_VASystemBase_C.setAudioState
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_VASystemBase.BP_VASystemBase_C.ExecuteUbergraph_BP_VASystemBase
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_VASystemBase_C::setAudioState(int32 NewState)
+void ABP_VASystemBase_C::ExecuteUbergraph_BP_VASystemBase(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_VASystemBase_C", "ExecuteUbergraph_BP_VASystemBase", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VASystemBase_C", "setAudioState");
+	Params::BP_VASystemBase_C_ExecuteUbergraph_BP_VASystemBase Parms{};
 
-	Params::BP_VASystemBase_C_setAudioState Parms{};
-
-	Parms.NewState = NewState;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_VASystemBase.BP_VASystemBase_C.setEmissiveLight
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_VASystemBase_C::setEmissiveLight(bool enabled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VASystemBase_C", "setEmissiveLight");
-
-	Params::BP_VASystemBase_C_setEmissiveLight Parms{};
-
-	Parms.enabled = enabled;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_VASystemBase.BP_VASystemBase_C.toggleEmissiveLight
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_VASystemBase_C::toggleEmissiveLight()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VASystemBase_C", "toggleEmissiveLight");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_VASystemBase.BP_VASystemBase_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_VASystemBase_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_VASystemBase_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

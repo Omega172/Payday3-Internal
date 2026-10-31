@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABPL_RedBounceWindow_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_RedBounceWindow_C;
 
 SDK_NAMESPACE_END

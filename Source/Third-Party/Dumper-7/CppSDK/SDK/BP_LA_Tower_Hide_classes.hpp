@@ -28,11 +28,11 @@ public:
 	class USBZLifeActionComponent*                SBZLifeAction;                                     // 0x0360(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_LA_Tower_Hide_SBZLifeAction_K2Node_ComponentBoundEvent_0_SBZLifeActionEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot);
-	void BndEvt__BP_LA_Tower_Hide_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionStopEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot, ESBZLifeActionStopReason Result);
-	void BndEvt__BP_LA_Tower_Hide_SBZLifeAction_K2Node_ComponentBoundEvent_2_SBZLifeActionEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot);
-	void BndEvt__BP_LA_Tower_Hide_SBZLifeAction_K2Node_ComponentBoundEvent_4_SBZLifeActionStopEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot, ESBZLifeActionStopReason Result);
 	void ExecuteUbergraph_BP_LA_Tower_Hide(int32 EntryPoint);
+	void BndEvt__BP_LA_Tower_Hide_SBZLifeAction_K2Node_ComponentBoundEvent_4_SBZLifeActionStopEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot, ESBZLifeActionStopReason Result);
+	void BndEvt__BP_LA_Tower_Hide_SBZLifeAction_K2Node_ComponentBoundEvent_2_SBZLifeActionEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot);
+	void BndEvt__BP_LA_Tower_Hide_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionStopEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot, ESBZLifeActionStopReason Result);
+	void BndEvt__BP_LA_Tower_Hide_SBZLifeAction_K2Node_ComponentBoundEvent_0_SBZLifeActionEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot);
 
 public:
 	static class UClass* StaticClass()
@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<ABP_LA_Tower_Hide_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LA_Tower_Hide_C;
 
 SDK_NAMESPACE_END

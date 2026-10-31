@@ -16,515 +16,81 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_TurnStuff.WBP_TurnStuff_C.A
+// Function WBP_TurnStuff.WBP_TurnStuff_C.W
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_TurnStuff_C::A()
+void UWBP_TurnStuff_C::W()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "A");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"W", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_TurnStuff.WBP_TurnStuff_C.BP_OnXAxisChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// float                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_TurnStuff_C::BP_OnXAxisChanged(float Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "BP_OnXAxisChanged");
-
-	Params::WBP_TurnStuff_C_BP_OnXAxisChanged Parms{};
-
-	Parms.Value = Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_TurnStuff.WBP_TurnStuff_C.BP_OnYAxisChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// float                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_TurnStuff_C::BP_OnYAxisChanged(float Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "BP_OnYAxisChanged");
-
-	Params::WBP_TurnStuff_C_BP_OnYAxisChanged Parms{};
-
-	Parms.Value = Value;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_TurnStuff.WBP_TurnStuff_C.CalcAnim
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWidget*                          self2                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool*                                   NewParam                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_TurnStuff_C::CalcAnim(class UWidget* self2, bool* NewParam)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "CalcAnim");
-
-	Params::WBP_TurnStuff_C_CalcAnim Parms{};
-
-	Parms.self2 = self2;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (NewParam != nullptr)
-		*NewParam = Parms.NewParam;
-}
-
-
-// Function WBP_TurnStuff.WBP_TurnStuff_C.CheckCorrect
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<double>&                         Array                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_TurnStuff_C::CheckCorrect(TArray<double>& Array)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "CheckCorrect");
-
-	Params::WBP_TurnStuff_C_CheckCorrect Parms{};
-
-	Parms.Array = std::move(Array);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Array = std::move(Parms.Array);
-}
-
-
-// Function WBP_TurnStuff.WBP_TurnStuff_C.ClockRot
+// Function WBP_TurnStuff.WBP_TurnStuff_C.TimerCount
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_TurnStuff_C::ClockRot()
+void UWBP_TurnStuff_C::TimerCount()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "ClockRot");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TimerCount", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_TurnStuff.WBP_TurnStuff_C.CoolDown
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_TurnStuff_C::CoolDown()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "CoolDown");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_TurnStuff.WBP_TurnStuff_C.CounterRot
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_TurnStuff_C::CounterRot()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "CounterRot");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_TurnStuff.WBP_TurnStuff_C.D
+// Function WBP_TurnStuff.WBP_TurnStuff_C.SetMarker
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_TurnStuff_C::D()
+void UWBP_TurnStuff_C::SetMarker()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "D");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetMarker", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_TurnStuff.WBP_TurnStuff_C.ExecuteUbergraph_WBP_TurnStuff
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_TurnStuff_C::ExecuteUbergraph_WBP_TurnStuff(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "ExecuteUbergraph_WBP_TurnStuff");
-
-	Params::WBP_TurnStuff_C_ExecuteUbergraph_WBP_TurnStuff Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_TurnStuff.WBP_TurnStuff_C.Finished_167BD88B4F667EA7028D92A5B7AB9CE6
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_TurnStuff_C::Finished_167BD88B4F667EA7028D92A5B7AB9CE6()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "Finished_167BD88B4F667EA7028D92A5B7AB9CE6");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_TurnStuff.WBP_TurnStuff_C.Finished_384C34FC4D12BC46D82645B58C23D4A3
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_TurnStuff_C::Finished_384C34FC4D12BC46D82645B58C23D4A3()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "Finished_384C34FC4D12BC46D82645B58C23D4A3");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_TurnStuff.WBP_TurnStuff_C.Finished_5108EE7E40DB4963C7EA10BF93F95D06
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_TurnStuff_C::Finished_5108EE7E40DB4963C7EA10BF93F95D06()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "Finished_5108EE7E40DB4963C7EA10BF93F95D06");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_TurnStuff.WBP_TurnStuff_C.Finished_526358C4467BB346D6980EAA6A34A585
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_TurnStuff_C::Finished_526358C4467BB346D6980EAA6A34A585()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "Finished_526358C4467BB346D6980EAA6A34A585");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_TurnStuff.WBP_TurnStuff_C.Finished_915C53CC435C34C1E3A47F97F6282F27
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_TurnStuff_C::Finished_915C53CC435C34C1E3A47F97F6282F27()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "Finished_915C53CC435C34C1E3A47F97F6282F27");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_TurnStuff.WBP_TurnStuff_C.Func
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FString&                    StopFunction                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// const class FString&                    StartFunction                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void UWBP_TurnStuff_C::Func_0(const class FString& StopFunction, const class FString& StartFunction)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "Func");
-
-	Params::WBP_TurnStuff_C_Func_0 Parms{};
-
-	Parms.StopFunction = std::move(StopFunction);
-	Parms.StartFunction = std::move(StartFunction);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_TurnStuff.WBP_TurnStuff_C.Index Interacted
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_TurnStuff_C::Index_Interacted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "Index Interacted");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_TurnStuff.WBP_TurnStuff_C.MiniGameStateChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// EPD3MiniGameState                       NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_TurnStuff_C::MiniGameStateChanged(EPD3MiniGameState NewState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "MiniGameStateChanged");
-
-	Params::WBP_TurnStuff_C_MiniGameStateChanged Parms{};
-
-	Parms.NewState = NewState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_TurnStuff.WBP_TurnStuff_C.NewFunction_1
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const TArray<struct FTwox2_Minigame_Structs>&TargetArray                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_TurnStuff_C::NewFunction_1(const TArray<struct FTwox2_Minigame_Structs>& TargetArray)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "NewFunction_1");
-
-	Params::WBP_TurnStuff_C_NewFunction_1 Parms{};
-
-	Parms.TargetArray = std::move(TargetArray);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_TurnStuff.WBP_TurnStuff_C.NewRound
+// Function WBP_TurnStuff.WBP_TurnStuff_C.SetLevelsInHack
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_TurnStuff_C::NewRound()
+void UWBP_TurnStuff_C::SetLevelsInHack()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "NewRound");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetLevelsInHack", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_TurnStuff.WBP_TurnStuff_C.OnMiniGameDifficulty
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// ESBZDifficulty                          HeistDifficulty                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// uint8                                   MiniGameDifficulty                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_TurnStuff_C::OnMiniGameDifficulty(ESBZDifficulty HeistDifficulty, uint8 MiniGameDifficulty)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "OnMiniGameDifficulty");
-
-	Params::WBP_TurnStuff_C_OnMiniGameDifficulty Parms{};
-
-	Parms.HeistDifficulty = HeistDifficulty;
-	Parms.MiniGameDifficulty = MiniGameDifficulty;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_TurnStuff.WBP_TurnStuff_C.OnMiniGameWidgetPlaced
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class UAkComponent*                     AkComponent                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_TurnStuff_C::OnMiniGameWidgetPlaced(class UAkComponent* AkComponent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "OnMiniGameWidgetPlaced");
-
-	Params::WBP_TurnStuff_C_OnMiniGameWidgetPlaced Parms{};
-
-	Parms.AkComponent = AkComponent;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_TurnStuff.WBP_TurnStuff_C.Play Blink
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_TurnStuff_C::Play_Blink()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "Play Blink");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_TurnStuff.WBP_TurnStuff_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_TurnStuff_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "PreConstruct");
-
-	Params::WBP_TurnStuff_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_TurnStuff.WBP_TurnStuff_C.Resume
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_TurnStuff_C::Resume()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "Resume");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_TurnStuff.WBP_TurnStuff_C.ReverseAnim
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWidget*                          self2                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_TurnStuff_C::ReverseAnim(class UWidget* self2)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "ReverseAnim");
-
-	Params::WBP_TurnStuff_C_ReverseAnim Parms{};
-
-	Parms.self2 = self2;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_TurnStuff.WBP_TurnStuff_C.S
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_TurnStuff_C::S()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "S");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_TurnStuff.WBP_TurnStuff_C.Set Random 3x3
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const TArray<struct FThreex3_Turn_Puzzle_Struct>&TargetArray                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-
-void UWBP_TurnStuff_C::Set_Random_3x3(const TArray<struct FThreex3_Turn_Puzzle_Struct>& TargetArray)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "Set Random 3x3");
-
-	Params::WBP_TurnStuff_C_Set_Random_3x3 Parms{};
-
-	Parms.TargetArray = std::move(TargetArray);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_TurnStuff.WBP_TurnStuff_C.Set Random 4x4
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const TArray<struct FFourx4_minigame_Struct>&TargetArray                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-
-void UWBP_TurnStuff_C::Set_Random_4x4(const TArray<struct FFourx4_minigame_Struct>& TargetArray)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "Set Random 4x4");
-
-	Params::WBP_TurnStuff_C_Set_Random_4x4 Parms{};
-
-	Parms.TargetArray = std::move(TargetArray);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_TurnStuff.WBP_TurnStuff_C.SetArrays
+// Function WBP_TurnStuff.WBP_TurnStuff_C.SetDifficulty
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// uint8                                   Minigame_Dif                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZDifficulty                          Heist_Dif                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_TurnStuff_C::SetArrays()
+void UWBP_TurnStuff_C::SetDifficulty(uint8 Minigame_Dif, ESBZDifficulty Heist_Dif)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetDifficulty", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "SetArrays");
+	Params::WBP_TurnStuff_C_SetDifficulty Parms{};
+
+	Parms.Minigame_Dif = Minigame_Dif;
+	Parms.Heist_Dif = Heist_Dif;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_TurnStuff.WBP_TurnStuff_C.SetBoardSize
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_TurnStuff_C::SetBoardSize()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetBoardSize", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -539,10 +105,8 @@ void UWBP_TurnStuff_C::SetArrays()
 
 void UWBP_TurnStuff_C::SetBoard(TArray<double>& Start, TArray<double>& End, TArray<class UTexture*>& Images)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "SetBoard");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetBoard", FnName));
 
 	Params::WBP_TurnStuff_C_SetBoard Parms{};
 
@@ -558,93 +122,455 @@ void UWBP_TurnStuff_C::SetBoard(TArray<double>& Start, TArray<double>& End, TArr
 }
 
 
-// Function WBP_TurnStuff.WBP_TurnStuff_C.SetBoardSize
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_TurnStuff.WBP_TurnStuff_C.SetArrays
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_TurnStuff_C::SetBoardSize()
+void UWBP_TurnStuff_C::SetArrays()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "SetBoardSize");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetArrays", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_TurnStuff.WBP_TurnStuff_C.SetDifficulty
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_TurnStuff.WBP_TurnStuff_C.Set Random 4x4
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// uint8                                   Minigame_Dif                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZDifficulty                          Heist_Dif                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const TArray<struct FFourx4_minigame_Struct>&TargetArray                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 
-void UWBP_TurnStuff_C::SetDifficulty(uint8 Minigame_Dif, ESBZDifficulty Heist_Dif)
+void UWBP_TurnStuff_C::Set_Random_4x4(const TArray<struct FFourx4_minigame_Struct>& TargetArray)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set Random 4x4", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "SetDifficulty");
+	Params::WBP_TurnStuff_C_Set_Random_4x4 Parms{};
 
-	Params::WBP_TurnStuff_C_SetDifficulty Parms{};
-
-	Parms.Minigame_Dif = Minigame_Dif;
-	Parms.Heist_Dif = Heist_Dif;
+	Parms.TargetArray = std::move(TargetArray);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_TurnStuff.WBP_TurnStuff_C.SetLevelsInHack
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_TurnStuff.WBP_TurnStuff_C.Set Random 3x3
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const TArray<struct FThreex3_Turn_Puzzle_Struct>&TargetArray                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 
-void UWBP_TurnStuff_C::SetLevelsInHack()
+void UWBP_TurnStuff_C::Set_Random_3x3(const TArray<struct FThreex3_Turn_Puzzle_Struct>& TargetArray)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set Random 3x3", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "SetLevelsInHack");
+	Params::WBP_TurnStuff_C_Set_Random_3x3 Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.TargetArray = std::move(TargetArray);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_TurnStuff.WBP_TurnStuff_C.SetMarker
+// Function WBP_TurnStuff.WBP_TurnStuff_C.S
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_TurnStuff_C::SetMarker()
+void UWBP_TurnStuff_C::S()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "SetMarker");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"S", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_TurnStuff.WBP_TurnStuff_C.TimerCount
+// Function WBP_TurnStuff.WBP_TurnStuff_C.ReverseAnim
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWidget*                          self2                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_TurnStuff_C::ReverseAnim(class UWidget* self2)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReverseAnim", FnName));
+
+	Params::WBP_TurnStuff_C_ReverseAnim Parms{};
+
+	Parms.self2 = self2;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_TurnStuff.WBP_TurnStuff_C.Resume
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_TurnStuff_C::TimerCount()
+void UWBP_TurnStuff_C::Resume()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "TimerCount");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Resume", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_TurnStuff.WBP_TurnStuff_C.W
+// Function WBP_TurnStuff.WBP_TurnStuff_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_TurnStuff_C::PreConstruct(bool IsDesignTime_PreConstruct)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
+
+	Params::WBP_TurnStuff_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_TurnStuff.WBP_TurnStuff_C.Play Blink
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_TurnStuff_C::Play_Blink()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Play Blink", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_TurnStuff.WBP_TurnStuff_C.OnMiniGameWidgetPlaced
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class UAkComponent*                     AkComponent_OnMiniGameWidgetPlaced                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_TurnStuff_C::OnMiniGameWidgetPlaced(class UAkComponent* AkComponent_OnMiniGameWidgetPlaced)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnMiniGameWidgetPlaced", FnName));
+
+	Params::WBP_TurnStuff_C_OnMiniGameWidgetPlaced Parms{};
+
+	Parms.AkComponent_OnMiniGameWidgetPlaced = AkComponent_OnMiniGameWidgetPlaced;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_TurnStuff.WBP_TurnStuff_C.OnMiniGameDifficulty
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// ESBZDifficulty                          HeistDifficulty_OnMiniGameDifficulty                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                                   MiniGameDifficulty_OnMiniGameDifficulty                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_TurnStuff_C::OnMiniGameDifficulty(ESBZDifficulty HeistDifficulty_OnMiniGameDifficulty, uint8 MiniGameDifficulty_OnMiniGameDifficulty)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnMiniGameDifficulty", FnName));
+
+	Params::WBP_TurnStuff_C_OnMiniGameDifficulty Parms{};
+
+	Parms.HeistDifficulty_OnMiniGameDifficulty = HeistDifficulty_OnMiniGameDifficulty;
+	Parms.MiniGameDifficulty_OnMiniGameDifficulty = MiniGameDifficulty_OnMiniGameDifficulty;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_TurnStuff.WBP_TurnStuff_C.NewRound
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_TurnStuff_C::NewRound()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"NewRound", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_TurnStuff.WBP_TurnStuff_C.NewFunction_1
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const TArray<struct FTwox2_Minigame_Structs>&TargetArray                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_TurnStuff_C::NewFunction_1(const TArray<struct FTwox2_Minigame_Structs>& TargetArray)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"NewFunction_1", FnName));
+
+	Params::WBP_TurnStuff_C_NewFunction_1 Parms{};
+
+	Parms.TargetArray = std::move(TargetArray);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_TurnStuff.WBP_TurnStuff_C.MiniGameStateChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EPD3MiniGameState                       NewState_MiniGameStateChanged                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_TurnStuff_C::MiniGameStateChanged(EPD3MiniGameState NewState_MiniGameStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MiniGameStateChanged", FnName));
+
+	Params::WBP_TurnStuff_C_MiniGameStateChanged Parms{};
+
+	Parms.NewState_MiniGameStateChanged = NewState_MiniGameStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_TurnStuff.WBP_TurnStuff_C.Index Interacted
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_TurnStuff_C::Index_Interacted()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Index Interacted", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_TurnStuff.WBP_TurnStuff_C.Func
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    StopFunction                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    StartFunction                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UWBP_TurnStuff_C::Func_0(const class FString& StopFunction, const class FString& StartFunction)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Func", FnName));
+
+	Params::WBP_TurnStuff_C_Func_0 Parms{};
+
+	Parms.StopFunction = std::move(StopFunction);
+	Parms.StartFunction = std::move(StartFunction);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_TurnStuff.WBP_TurnStuff_C.Finished_915C53CC435C34C1E3A47F97F6282F27
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_TurnStuff_C::Finished_915C53CC435C34C1E3A47F97F6282F27()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Finished_915C53CC435C34C1E3A47F97F6282F27", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_TurnStuff.WBP_TurnStuff_C.Finished_526358C4467BB346D6980EAA6A34A585
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_TurnStuff_C::Finished_526358C4467BB346D6980EAA6A34A585()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Finished_526358C4467BB346D6980EAA6A34A585", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_TurnStuff.WBP_TurnStuff_C.Finished_5108EE7E40DB4963C7EA10BF93F95D06
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_TurnStuff_C::Finished_5108EE7E40DB4963C7EA10BF93F95D06()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Finished_5108EE7E40DB4963C7EA10BF93F95D06", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_TurnStuff.WBP_TurnStuff_C.Finished_384C34FC4D12BC46D82645B58C23D4A3
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_TurnStuff_C::Finished_384C34FC4D12BC46D82645B58C23D4A3()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Finished_384C34FC4D12BC46D82645B58C23D4A3", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_TurnStuff.WBP_TurnStuff_C.Finished_167BD88B4F667EA7028D92A5B7AB9CE6
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_TurnStuff_C::Finished_167BD88B4F667EA7028D92A5B7AB9CE6()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Finished_167BD88B4F667EA7028D92A5B7AB9CE6", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_TurnStuff.WBP_TurnStuff_C.ExecuteUbergraph_WBP_TurnStuff
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_TurnStuff_C::ExecuteUbergraph_WBP_TurnStuff(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_TurnStuff_C", "ExecuteUbergraph_WBP_TurnStuff", FuncInfo);
+
+	Params::WBP_TurnStuff_C_ExecuteUbergraph_WBP_TurnStuff Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_TurnStuff.WBP_TurnStuff_C.D
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_TurnStuff_C::W()
+void UWBP_TurnStuff_C::D()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"D", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TurnStuff_C", "W");
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_TurnStuff.WBP_TurnStuff_C.CounterRot
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_TurnStuff_C::CounterRot()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CounterRot", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_TurnStuff.WBP_TurnStuff_C.CoolDown
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_TurnStuff_C::CoolDown()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CoolDown", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_TurnStuff.WBP_TurnStuff_C.ClockRot
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_TurnStuff_C::ClockRot()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ClockRot", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_TurnStuff.WBP_TurnStuff_C.CheckCorrect
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<double>&                         Array                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_TurnStuff_C::CheckCorrect(TArray<double>& Array)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CheckCorrect", FnName));
+
+	Params::WBP_TurnStuff_C_CheckCorrect Parms{};
+
+	Parms.Array = std::move(Array);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Array = std::move(Parms.Array);
+}
+
+
+// Function WBP_TurnStuff.WBP_TurnStuff_C.CalcAnim
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWidget*                          self2                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool*                                   NewParam                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_TurnStuff_C::CalcAnim(class UWidget* self2, bool* NewParam)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CalcAnim", FnName));
+
+	Params::WBP_TurnStuff_C_CalcAnim Parms{};
+
+	Parms.self2 = self2;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (NewParam != nullptr)
+		*NewParam = Parms.NewParam;
+}
+
+
+// Function WBP_TurnStuff.WBP_TurnStuff_C.BP_OnYAxisChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// float                                   Value_BP_OnYAxisChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_TurnStuff_C::BP_OnYAxisChanged(float Value_BP_OnYAxisChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnYAxisChanged", FnName));
+
+	Params::WBP_TurnStuff_C_BP_OnYAxisChanged Parms{};
+
+	Parms.Value_BP_OnYAxisChanged = Value_BP_OnYAxisChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_TurnStuff.WBP_TurnStuff_C.BP_OnXAxisChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// float                                   Value_BP_OnXAxisChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_TurnStuff_C::BP_OnXAxisChanged(float Value_BP_OnXAxisChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnXAxisChanged", FnName));
+
+	Params::WBP_TurnStuff_C_BP_OnXAxisChanged Parms{};
+
+	Parms.Value_BP_OnXAxisChanged = Value_BP_OnXAxisChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_TurnStuff.WBP_TurnStuff_C.A
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_TurnStuff_C::A()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"A", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

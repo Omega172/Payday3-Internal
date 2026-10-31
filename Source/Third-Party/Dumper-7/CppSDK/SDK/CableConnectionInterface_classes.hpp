@@ -17,13 +17,16 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CableConnectionInterface.CableConnectionInterface_C
-// 0x0000 (0x0000 - 0x0000)
-class ICableConnectionInterface_C final
+// 0x0008 (0x0008 - 0x0000)
+class ICableConnectionInterface_C
 {
 public:
-	void CorrectColorToCut(ECableBox_Color_Enum CorrectColorToCut_0, class ABP_SingleCableBox_C* NewParam);
-	void FinishedCable(bool CurrentStateOfCableBox);
+	void*                                         VTable;                                            // 0x0000(0x0008)(NOT AUTO-GENERATED PROPERTY)
+
+public:
 	void WhatCabinetIsConnected(const class FText& NewParam);
+	void FinishedCable(bool CurrentStateOfCableBox);
+	void CorrectColorToCut(ECableBox_Color_Enum CorrectColorToCut, class ABP_SingleCableBox_C* NewParam);
 
 public:
 	static class UClass* StaticClass()
@@ -48,5 +51,6 @@ public:
 		return reinterpret_cast<const UObject*>(this);
 	}
 };
+DUMPER7_ASSERTS_ICableConnectionInterface_C;
 
 SDK_NAMESPACE_END

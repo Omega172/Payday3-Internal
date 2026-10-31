@@ -41,5 +41,6 @@ public:
 		return GetDefaultObjImpl<ABPL_StreetVictorian_03_A_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_StreetVictorian_03_A_C;
 
 SDK_NAMESPACE_END

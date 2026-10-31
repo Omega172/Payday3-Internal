@@ -37,16 +37,16 @@ public:
 	class FText                                   RunningText;                                       // 0x0510(0x0010)(Edit, BlueprintVisible)
 
 public:
-	void BndEvt__BP_HackingZoneController_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BP_OnStateChanged(ESBZTimerState NewState, ESBZTimerState OldState, bool bDoCosmetics);
-	void Disabled();
-	void Done();
-	void ExecuteUbergraph_BP_HackingZoneController(int32 EntryPoint);
-	void Inactive();
-	void Paused();
-	void ReceiveBeginPlay();
-	void Running();
 	void Sabotaged();
+	void Running();
+	void ReceiveBeginPlay();
+	void Paused();
+	void Inactive();
+	void ExecuteUbergraph_BP_HackingZoneController(int32 EntryPoint);
+	void Done();
+	void Disabled();
+	void BP_OnStateChanged(ESBZTimerState NewState_BP_OnStateChanged, ESBZTimerState OldState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged);
+	void BndEvt__BP_HackingZoneController_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -62,5 +62,6 @@ public:
 		return GetDefaultObjImpl<ABP_HackingZoneController_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_HackingZoneController_C;
 
 SDK_NAMESPACE_END

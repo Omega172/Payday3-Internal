@@ -16,20 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_DAT_AISystem_01_NonActive.WBP_DAT_AISystem_01_NonActive_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_DAT_AISystem_01_NonActive_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DAT_AISystem_01_NonActive_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_DAT_AISystem_01_NonActive.WBP_DAT_AISystem_01_NonActive_C.ExecuteUbergraph_WBP_DAT_AISystem_01_NonActive
 // (Final, UbergraphFunction)
 // Parameters:
@@ -37,16 +23,26 @@ void UWBP_DAT_AISystem_01_NonActive_C::Construct()
 
 void UWBP_DAT_AISystem_01_NonActive_C::ExecuteUbergraph_WBP_DAT_AISystem_01_NonActive(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DAT_AISystem_01_NonActive_C", "ExecuteUbergraph_WBP_DAT_AISystem_01_NonActive");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_DAT_AISystem_01_NonActive_C", "ExecuteUbergraph_WBP_DAT_AISystem_01_NonActive", FuncInfo);
 
 	Params::WBP_DAT_AISystem_01_NonActive_C_ExecuteUbergraph_WBP_DAT_AISystem_01_NonActive Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_DAT_AISystem_01_NonActive.WBP_DAT_AISystem_01_NonActive_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_DAT_AISystem_01_NonActive_C::Construct()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -31,8 +31,8 @@ public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0358(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BPL_DeskLamp_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 	void ExecuteUbergraph_CHU_BPL_DeskLamp_(int32 EntryPoint);
+	void BndEvt__BPL_DeskLamp_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 
 public:
 	static class UClass* StaticClass()
@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<CHU_BPL_DeskLamp_::ACHU_BPL_DeskLamp__C>();
 	}
 };
+DUMPER7_ASSERTS_CHU_BPL_DeskLamp___ACHU_BPL_DeskLamp__C;
 
 SDK_NAMESPACE_END

@@ -16,29 +16,25 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_UV_painting_gives_Bag.BP_UV_painting_gives_Bag_C.OnRep_Is_Hidden_Painting
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_UV_painting_gives_Bag_C::OnRep_Is_Hidden_Painting()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UV_painting_gives_Bag_C", "OnRep_Is_Hidden_Painting");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_UV_painting_gives_Bag.BP_UV_painting_gives_Bag_C.UserConstructionScript
 // (Event, Public, BlueprintCallable, BlueprintEvent)
 
 void ABP_UV_painting_gives_Bag_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_UV_painting_gives_Bag_C", "UserConstructionScript");
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_UV_painting_gives_Bag.BP_UV_painting_gives_Bag_C.OnRep_Is_Hidden_Painting
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_UV_painting_gives_Bag_C::OnRep_Is_Hidden_Painting()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRep_Is_Hidden_Painting", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

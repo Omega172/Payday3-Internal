@@ -17,89 +17,41 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.ShowMaskOnly
+// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.BndEvt__WBP_UI_Player_Customization_Mask_GlobalColorButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Player_Customization_Mask_C_ShowMaskOnly final
-{
-public:
-	class ASBZCustomizationManager*               CallFunc_GetCustomizationManager_ReturnValue;      // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Player_Customization_Mask_C_ShowMaskOnly;
-
-// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.RevertBodyAndEquipped
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Player_Customization_Mask_C_RevertBodyAndEquipped final
-{
-public:
-	class ASBZCustomizationManager*               CallFunc_GetCustomizationManager_ReturnValue;      // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Player_Customization_Mask_C_RevertBodyAndEquipped;
-
-// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.OnGainedStackFocused
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_Player_Customization_Mask_C_OnGainedStackFocused final
-{
-public:
-	class FName                                   PreviousValue_OnGainedStackFocused;                // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Player_Customization_Mask_C_OnGainedStackFocused;
-
-// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.OnControlsReferenceClicked
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_Player_Customization_Mask_C_OnControlsReferenceClicked final
-{
-public:
-	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Player_Customization_Mask_C_OnControlsReferenceClicked;
-
-// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.NonPatternButtonPressed
-// 0x0088 (0x0088 - 0x0000)
-struct WBP_UI_Player_Customization_Mask_C_NonPatternButtonPressed final
+struct WBP_UI_Player_Customization_Mask_C_BndEvt__WBP_UI_Player_Customization_Mask_GlobalColorButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature final
 {
 public:
 	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZCosmeticsPartSlot*                  CosmeticPartSlot;                                  // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMainMenuCosmeticSlotButton*         K2Node_DynamicCast_AsSBZMain_Menu_Cosmetic_Slot_Button; // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable;                                // 0x0028(0x0010)()
-	class FText                                   Temp_text_Variable_1;                              // 0x0038(0x0010)()
-	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZBaseMenuWidget*                     CallFunc_GetMenuWidget_ReturnValue;                // 0x0058(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZMainMenuWidget*                     K2Node_DynamicCast_AsSBZMain_Menu_Widget;          // 0x0060(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select_Default;                             // 0x0070(0x0010)()
-	bool                                          CallFunc_DisplayMaskGenericSlotScreen_ReturnValue; // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Player_Customization_Mask_C_NonPatternButtonPressed;
+DUMPER7_ASSERTS_WBP_UI_Player_Customization_Mask_C_BndEvt__WBP_UI_Player_Customization_Mask_GlobalColorButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature;
 
-// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.ExitVerticalListNavigation
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Player_Customization_Mask_C_ExitVerticalListNavigation final
+// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.BndEvt__WBP_UI_Player_Customization_Mask_PatternButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_Player_Customization_Mask_C_BndEvt__WBP_UI_Player_Customization_Mask_PatternButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	EUINavigation                                 Navigation;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Player_Customization_Mask_C_ExitVerticalListNavigation;
+DUMPER7_ASSERTS_WBP_UI_Player_Customization_Mask_C_BndEvt__WBP_UI_Player_Customization_Mask_PatternButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature;
 
-// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.ExitApplyButtonNavigation
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Player_Customization_Mask_C_ExitApplyButtonNavigation final
+// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.BndEvt__WBP_UI_Player_Customization_Mask_VFXButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_Player_Customization_Mask_C_BndEvt__WBP_UI_Player_Customization_Mask_VFXButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	EUINavigation                                 Navigation;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Player_Customization_Mask_C_ExitApplyButtonNavigation;
+DUMPER7_ASSERTS_WBP_UI_Player_Customization_Mask_C_BndEvt__WBP_UI_Player_Customization_Mask_VFXButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature;
+
+// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.BndEvt__WBP_UI_Player_Customization_Mask_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_Player_Customization_Mask_C_BndEvt__WBP_UI_Player_Customization_Mask_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Player_Customization_Mask_C_BndEvt__WBP_UI_Player_Customization_Mask_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature;
 
 // Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.ExecuteUbergraph_WBP_UI_Player_Customization_Mask
 // 0x0138 (0x0138 - 0x0000)
@@ -131,41 +83,89 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_Player_Customization_Mask_C_ExecuteUbergraph_WBP_UI_Player_Customization_Mask;
 
-// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.BndEvt__WBP_UI_Player_Customization_Mask_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Player_Customization_Mask_C_BndEvt__WBP_UI_Player_Customization_Mask_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature final
+// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.ExitApplyButtonNavigation
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Player_Customization_Mask_C_ExitApplyButtonNavigation final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Player_Customization_Mask_C_BndEvt__WBP_UI_Player_Customization_Mask_WBP_UI_TextButton_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_UI_Player_Customization_Mask_C_ExitApplyButtonNavigation;
 
-// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.BndEvt__WBP_UI_Player_Customization_Mask_VFXButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Player_Customization_Mask_C_BndEvt__WBP_UI_Player_Customization_Mask_VFXButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature final
+// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.ExitVerticalListNavigation
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Player_Customization_Mask_C_ExitVerticalListNavigation final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	EUINavigation                                 Navigation_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Player_Customization_Mask_C_BndEvt__WBP_UI_Player_Customization_Mask_VFXButton_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_UI_Player_Customization_Mask_C_ExitVerticalListNavigation;
 
-// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.BndEvt__WBP_UI_Player_Customization_Mask_PatternButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Player_Customization_Mask_C_BndEvt__WBP_UI_Player_Customization_Mask_PatternButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature final
+// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.NonPatternButtonPressed
+// 0x0088 (0x0088 - 0x0000)
+struct WBP_UI_Player_Customization_Mask_C_NonPatternButtonPressed final
 {
 public:
 	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZCosmeticsPartSlot*                  CosmeticPartSlot;                                  // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMainMenuCosmeticSlotButton*         K2Node_DynamicCast_AsSBZMain_Menu_Cosmetic_Slot_Button; // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable;                                // 0x0028(0x0010)()
+	class FText                                   Temp_text_Variable_1;                              // 0x0038(0x0010)()
+	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_51[0x7];                                       // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZBaseMenuWidget*                     CallFunc_GetMenuWidget_ReturnValue;                // 0x0058(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMainMenuWidget*                     K2Node_DynamicCast_AsSBZMain_Menu_Widget;          // 0x0060(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_Select_Default;                             // 0x0070(0x0010)()
+	bool                                          CallFunc_DisplayMaskGenericSlotScreen_ReturnValue; // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Player_Customization_Mask_C_BndEvt__WBP_UI_Player_Customization_Mask_PatternButton_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_UI_Player_Customization_Mask_C_NonPatternButtonPressed;
 
-// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.BndEvt__WBP_UI_Player_Customization_Mask_GlobalColorButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Player_Customization_Mask_C_BndEvt__WBP_UI_Player_Customization_Mask_GlobalColorButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature final
+// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.OnControlsReferenceClicked
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_Player_Customization_Mask_C_OnControlsReferenceClicked final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Player_Customization_Mask_C_BndEvt__WBP_UI_Player_Customization_Mask_GlobalColorButton_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_UI_Player_Customization_Mask_C_OnControlsReferenceClicked;
+
+// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.OnGainedStackFocused
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_Player_Customization_Mask_C_OnGainedStackFocused final
+{
+public:
+	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Player_Customization_Mask_C_OnGainedStackFocused;
+
+// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.RevertBodyAndEquipped
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_Player_Customization_Mask_C_RevertBodyAndEquipped final
+{
+public:
+	class ASBZCustomizationManager*               CallFunc_GetCustomizationManager_ReturnValue;      // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Player_Customization_Mask_C_RevertBodyAndEquipped;
+
+// Function WBP_UI_Player_Customization_Mask.WBP_UI_Player_Customization_Mask_C.ShowMaskOnly
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_Player_Customization_Mask_C_ShowMaskOnly final
+{
+public:
+	class ASBZCustomizationManager*               CallFunc_GetCustomizationManager_ReturnValue;      // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Player_Customization_Mask_C_ShowMaskOnly;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

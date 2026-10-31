@@ -25,8 +25,8 @@ public:
 	class UStaticMeshComponent*                   glassMesh;                                         // 0x0440(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_BUS_Skylight_01_PropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
 	void ExecuteUbergraph_BP_SHI_Skylight_01(int32 EntryPoint);
+	void BndEvt__BP_BUS_Skylight_01_PropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
 
 public:
 	static class UClass* StaticClass()
@@ -42,5 +42,6 @@ public:
 		return GetDefaultObjImpl<ABP_SHI_Skylight_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SHI_Skylight_01_C;
 
 SDK_NAMESPACE_END

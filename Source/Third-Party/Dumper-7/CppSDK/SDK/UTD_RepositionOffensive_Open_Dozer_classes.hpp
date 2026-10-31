@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UUTD_RepositionOffensive_Open_Dozer_C>();
 	}
 };
+DUMPER7_ASSERTS_UUTD_RepositionOffensive_Open_Dozer_C;
 
 SDK_NAMESPACE_END

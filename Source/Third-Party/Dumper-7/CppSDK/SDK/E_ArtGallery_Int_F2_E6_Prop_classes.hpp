@@ -28,8 +28,8 @@ public:
 	class APrefabHSMIActor*                       HSMI_F2_Exhibition_E6_Platform_01_Round_03_31_ExecuteUbergraph_E_ArtGallery_Int_F2_E6_Prop_RefProperty; // 0x03F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void DisableFloorVisualsE6();
 	void ExecuteUbergraph_E_ArtGallery_Int_F2_E6_Prop(int32 EntryPoint);
+	void DisableFloorVisualsE6();
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<AE_ArtGallery_Int_F2_E6_Prop_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_ArtGallery_Int_F2_E6_Prop_C;
 
 SDK_NAMESPACE_END

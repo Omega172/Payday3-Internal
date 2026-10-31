@@ -37,11 +37,11 @@ public:
 	double                                        TextTriggerDistanceDepth;                          // 0x03A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_Prototype_LevelBoundsTrigger_PostProcessBoundsReference_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
-	void BndEvt__Trigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
-	void ExecuteUbergraph_BP_Prototype_LevelBoundsTrigger(int32 EntryPoint);
-	void ReceiveActorEndOverlap(class AActor* OtherActor);
 	void UserConstructionScript();
+	void ReceiveActorEndOverlap(class AActor* OtherActor_ReceiveActorEndOverlap);
+	void ExecuteUbergraph_BP_Prototype_LevelBoundsTrigger(int32 EntryPoint);
+	void BndEvt__Trigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
+	void BndEvt__BP_Prototype_LevelBoundsTrigger_PostProcessBoundsReference_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 
 public:
 	static class UClass* StaticClass()
@@ -57,5 +57,6 @@ public:
 		return GetDefaultObjImpl<ABP_Prototype_LevelBoundsTrigger_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Prototype_LevelBoundsTrigger_C;
 
 SDK_NAMESPACE_END

@@ -16,20 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_DAT_AISystem_01_Unlocked.WBP_DAT_AISystem_01_Unlocked_C.OnRep_CodePacket
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_DAT_AISystem_01_Unlocked_C::OnRep_CodePacket()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DAT_AISystem_01_Unlocked_C", "OnRep_CodePacket");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_DAT_AISystem_01_Unlocked.WBP_DAT_AISystem_01_Unlocked_C.UpdateDisplayText
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -37,16 +23,26 @@ void UWBP_DAT_AISystem_01_Unlocked_C::OnRep_CodePacket()
 
 void UWBP_DAT_AISystem_01_Unlocked_C::UpdateDisplayText(const struct FSBZHackableDisplayText& NewDisplayText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DAT_AISystem_01_Unlocked_C", "UpdateDisplayText");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateDisplayText", FnName));
 
 	Params::WBP_DAT_AISystem_01_Unlocked_C_UpdateDisplayText Parms{};
 
 	Parms.NewDisplayText = std::move(NewDisplayText);
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_DAT_AISystem_01_Unlocked.WBP_DAT_AISystem_01_Unlocked_C.OnRep_CodePacket
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_DAT_AISystem_01_Unlocked_C::OnRep_CodePacket()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRep_CodePacket", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

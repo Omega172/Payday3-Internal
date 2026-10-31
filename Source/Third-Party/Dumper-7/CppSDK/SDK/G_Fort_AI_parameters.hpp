@@ -17,213 +17,24 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_BP_PowerUpDonutBox_3_K2Node_ActorBoundEvent_17_SBZPowerUpChargesStateDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct G_Fort_AI_C_BndEvt__G_Fort_AI_BP_PowerUpDonutBox_3_K2Node_ActorBoundEvent_17_SBZPowerUpChargesStateDelegate__DelegateSignature final
-{
-public:
-	ESBZPowerUpChargesState                       OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZPowerUpChargesState                       NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZFilteredTrigger_Challenge2_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature
+// Function G_Fort_AI.G_Fort_AI_C.OnPreplanningAssetsTagsApplied
 // 0x0020 (0x0020 - 0x0000)
-struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZFilteredTrigger_Challenge2_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature final
+struct G_Fort_AI_C_OnPreplanningAssetsTagsApplied final
 {
 public:
-	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTagContainer                  PreplanningTagContainer_OnPreplanningAssetsTagsApplied; // 0x0000(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
+DUMPER7_ASSERTS_G_Fort_AI_C_OnPreplanningAssetsTagsApplied;
 
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Employee16_K2Node_ActorBoundEvent_26_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Employee16_K2Node_ActorBoundEvent_26_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+// Function G_Fort_AI.G_Fort_AI_C.HeistStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct G_Fort_AI_C_HeistStateChanged final
 {
 public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                OldHeistState_HeistStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CurrentHeistState_HeistStateChanged;               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Employee17_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Employee17_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard11_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard11_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard12_K2Node_ActorBoundEvent_7_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard12_K2Node_ActorBoundEvent_7_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard4_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard4_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard5_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard5_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard6_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard6_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard7_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard7_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_LeadGuard2_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_LeadGuard2_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPlayerTriggerVolume_Test2_K2Node_ActorBoundEvent_19_ActorBeginOverlapSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPlayerTriggerVolume_Test2_K2Node_ActorBoundEvent_19_ActorBeginOverlapSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 OverlappedActor;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_14_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_14_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_15_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_15_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_0_SBZSplineOnEnter__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_0_SBZSplineOnEnter__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_16_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_16_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart1_K2Node_ActorBoundEvent_11_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart1_K2Node_ActorBoundEvent_11_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart2_K2Node_ActorBoundEvent_12_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart2_K2Node_ActorBoundEvent_12_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart3_K2Node_ActorBoundEvent_13_SBZSplineOnEndReached__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart3_K2Node_ActorBoundEvent_13_SBZSplineOnEndReached__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Fort_AI_C_BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_42_SBZSplineOnEnter__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Fort_AI_C_BndEvt__SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_42_SBZSplineOnEnter__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_AI.G_Fort_AI_C.BndEvt__SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_43_SBZSplineOnEnter__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Fort_AI_C_BndEvt__SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_43_SBZSplineOnEnter__DelegateSignature final
-{
-public:
-	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Fort_AI.G_Fort_AI_C.DonutEaten
-// 0x0008 (0x0008 - 0x0000)
-struct G_Fort_AI_C_DonutEaten final
-{
-public:
-	class ASBZPowerUp*                            PowerUp;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_G_Fort_AI_C_HeistStateChanged;
 
 // Function G_Fort_AI.G_Fort_AI_C.ExecuteUbergraph_G_Fort_AI
 // 0x1478 (0x1478 - 0x0000)
@@ -745,23 +556,238 @@ public:
 	uint8                                         Pad_1452[0x6];                                     // 0x1452(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayTagContainer                  Temp_struct_Variable_22;                           // 0x1458(0x0020)(ConstParm)
 };
+DUMPER7_ASSERTS_G_Fort_AI_C_ExecuteUbergraph_G_Fort_AI;
 
-// Function G_Fort_AI.G_Fort_AI_C.HeistStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct G_Fort_AI_C_HeistStateChanged final
+// Function G_Fort_AI.G_Fort_AI_C.DonutEaten
+// 0x0008 (0x0008 - 0x0000)
+struct G_Fort_AI_C_DonutEaten final
 {
 public:
-	EPD3HeistState                                OldHeistState;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CurrentHeistState;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ASBZPowerUp*                            PowerUp;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Fort_AI_C_DonutEaten;
 
-// Function G_Fort_AI.G_Fort_AI_C.OnPreplanningAssetsTagsApplied
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_43_SBZSplineOnEnter__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Fort_AI_C_BndEvt__SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_43_SBZSplineOnEnter__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_AI_C_BndEvt__SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_43_SBZSplineOnEnter__DelegateSignature;
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_42_SBZSplineOnEnter__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Fort_AI_C_BndEvt__SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_42_SBZSplineOnEnter__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_AI_C_BndEvt__SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_42_SBZSplineOnEnter__DelegateSignature;
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Fort_AI_C_BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_AI_C_BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart3_K2Node_ActorBoundEvent_13_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart3_K2Node_ActorBoundEvent_13_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart3_K2Node_ActorBoundEvent_13_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart2_K2Node_ActorBoundEvent_12_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart2_K2Node_ActorBoundEvent_12_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart2_K2Node_ActorBoundEvent_12_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart1_K2Node_ActorBoundEvent_11_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart1_K2Node_ActorBoundEvent_11_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSplineSwatHelicopterStart1_K2Node_ActorBoundEvent_11_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_16_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_16_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_16_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_0_SBZSplineOnEnter__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_0_SBZSplineOnEnter__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders3_K2Node_ActorBoundEvent_0_SBZSplineOnEnter__DelegateSignature;
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_15_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_15_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_15_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_14_SBZSplineOnEndReached__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_14_SBZSplineOnEndReached__DelegateSignature final
+{
+public:
+	class ASBZSpline*                             Spline;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 Actor;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_AI_C_BndEvt__G_Fort_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_14_SBZSplineOnEndReached__DelegateSignature;
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPlayerTriggerVolume_Test2_K2Node_ActorBoundEvent_19_ActorBeginOverlapSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPlayerTriggerVolume_Test2_K2Node_ActorBoundEvent_19_ActorBeginOverlapSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 OverlappedActor;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPlayerTriggerVolume_Test2_K2Node_ActorBoundEvent_19_ActorBeginOverlapSignature__DelegateSignature;
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_LeadGuard2_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_LeadGuard2_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_LeadGuard2_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard7_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard7_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard7_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard6_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard6_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard6_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard5_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard5_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard5_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard4_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard4_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard4_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard12_K2Node_ActorBoundEvent_7_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard12_K2Node_ActorBoundEvent_7_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard12_K2Node_ActorBoundEvent_7_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard11_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard11_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Guard11_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Employee17_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Employee17_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Employee17_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Employee16_K2Node_ActorBoundEvent_26_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Employee16_K2Node_ActorBoundEvent_26_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_AI_C_BndEvt__G_Fort_AI_SBZPawnSpawnPredefined_Employee16_K2Node_ActorBoundEvent_26_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_SBZFilteredTrigger_Challenge2_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature
 // 0x0020 (0x0020 - 0x0000)
-struct G_Fort_AI_C_OnPreplanningAssetsTagsApplied final
+struct G_Fort_AI_C_BndEvt__G_Fort_AI_SBZFilteredTrigger_Challenge2_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature final
 {
 public:
-	struct FGameplayTagContainer                  PreplanningTagContainer;                           // 0x0000(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class FName                                   Identifier;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 Actor;                                             // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentTotalActors;                                // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Fort_AI_C_BndEvt__G_Fort_AI_SBZFilteredTrigger_Challenge2_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature;
+
+// Function G_Fort_AI.G_Fort_AI_C.BndEvt__G_Fort_AI_BP_PowerUpDonutBox_3_K2Node_ActorBoundEvent_17_SBZPowerUpChargesStateDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct G_Fort_AI_C_BndEvt__G_Fort_AI_BP_PowerUpDonutBox_3_K2Node_ActorBoundEvent_17_SBZPowerUpChargesStateDelegate__DelegateSignature final
+{
+public:
+	ESBZPowerUpChargesState                       OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZPowerUpChargesState                       NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Fort_AI_C_BndEvt__G_Fort_AI_BP_PowerUpDonutBox_3_K2Node_ActorBoundEvent_17_SBZPowerUpChargesStateDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

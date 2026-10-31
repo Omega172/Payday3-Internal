@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_MD_DEC_IndustrialSign_04_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_MD_DEC_IndustrialSign_04_C;
 
 SDK_NAMESPACE_END

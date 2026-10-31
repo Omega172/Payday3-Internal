@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ADIM_BPL_DeskLamp_A_C>();
 	}
 };
+DUMPER7_ASSERTS_ADIM_BPL_DeskLamp_A_C;
 
 SDK_NAMESPACE_END

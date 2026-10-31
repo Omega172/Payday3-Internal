@@ -16,6 +16,16 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_ReplicatedBinaryActorWhiskeyBottleItem.BP_ReplicatedBinaryActorWhiskeyBottleItem_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_ReplicatedBinaryActorWhiskeyBottleItem_C_OnStateChanged final
+{
+public:
+	bool                                          bStateToChangeTo_OnStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ReplicatedBinaryActorWhiskeyBottleItem_C_OnStateChanged;
+
 // Function BP_ReplicatedBinaryActorWhiskeyBottleItem.BP_ReplicatedBinaryActorWhiskeyBottleItem_C.ExecuteUbergraph_BP_ReplicatedBinaryActorWhiskeyBottleItem
 // 0x0020 (0x0020 - 0x0000)
 struct BP_ReplicatedBinaryActorWhiskeyBottleItem_C_ExecuteUbergraph_BP_ReplicatedBinaryActorWhiskeyBottleItem final
@@ -27,15 +37,7 @@ public:
 	bool                                          K2Node_Event_bStateToChangeTo;                     // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bDoCosmetics;                         // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_ReplicatedBinaryActorWhiskeyBottleItem.BP_ReplicatedBinaryActorWhiskeyBottleItem_C.OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_ReplicatedBinaryActorWhiskeyBottleItem_C_OnStateChanged final
-{
-public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_ReplicatedBinaryActorWhiskeyBottleItem_C_ExecuteUbergraph_BP_ReplicatedBinaryActorWhiskeyBottleItem;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

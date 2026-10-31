@@ -150,7 +150,7 @@ DUMPER7_ASSERTS_APrefabInstancingBaseActor;
 
 // Class PrefabricatorRuntime.PrefabHSMIActor
 // 0x0008 (0x0390 - 0x0388)
-class APrefabHSMIActor final : public APrefabInstancingBaseActor
+class APrefabHSMIActor : public APrefabInstancingBaseActor
 {
 public:
 	class UHierarchicalInstancedStaticMeshComponent* HierarchicalInstancedStaticMesh;                // 0x0388(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)

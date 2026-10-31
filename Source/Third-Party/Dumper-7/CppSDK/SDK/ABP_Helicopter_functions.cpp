@@ -16,42 +16,47 @@
 
 SDK_NAMESPACE_START
 
-// Function ABP_Helicopter.ABP_Helicopter_C.AnimGraph
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function ABP_Helicopter.ABP_Helicopter_C.UpdateRotorYaw
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
+// double                                  Current_Yaw                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Speed                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Delta_Time                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double*                                 New_Yaw                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UABP_Helicopter_C::AnimGraph(struct FPoseLink* AnimGraph_0)
+void UABP_Helicopter_C::UpdateRotorYaw(double Current_Yaw, double Speed, double Delta_Time, double* New_Yaw)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateRotorYaw", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_Helicopter_C", "AnimGraph");
+	Params::ABP_Helicopter_C_UpdateRotorYaw Parms{};
 
-	Params::ABP_Helicopter_C_AnimGraph Parms{};
+	Parms.Current_Yaw = Current_Yaw;
+	Parms.Speed = Speed;
+	Parms.Delta_Time = Delta_Time;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (AnimGraph_0 != nullptr)
-		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
+	if (New_Yaw != nullptr)
+		*New_Yaw = Parms.New_Yaw;
 }
 
 
-// Function ABP_Helicopter.ABP_Helicopter_C.BlueprintUpdateAnimation
-// (Event, Public, BlueprintEvent)
+// Function ABP_Helicopter.ABP_Helicopter_C.SetDoorState
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   DeltaTimeX                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZAerialVehicleDoor                   Door                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsOpen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UABP_Helicopter_C::BlueprintUpdateAnimation(float DeltaTimeX)
+void UABP_Helicopter_C::SetDoorState(ESBZAerialVehicleDoor Door, bool bIsOpen)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetDoorState", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_Helicopter_C", "BlueprintUpdateAnimation");
+	Params::ABP_Helicopter_C_SetDoorState Parms{};
 
-	Params::ABP_Helicopter_C_BlueprintUpdateAnimation Parms{};
-
-	Parms.DeltaTimeX = DeltaTimeX;
+	Parms.Door = Door;
+	Parms.bIsOpen = bIsOpen;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -64,10 +69,8 @@ void UABP_Helicopter_C::BlueprintUpdateAnimation(float DeltaTimeX)
 
 void UABP_Helicopter_C::ExecuteUbergraph_ABP_Helicopter(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_Helicopter_C", "ExecuteUbergraph_ABP_Helicopter");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "ABP_Helicopter_C", "ExecuteUbergraph_ABP_Helicopter", FuncInfo);
 
 	Params::ABP_Helicopter_C_ExecuteUbergraph_ABP_Helicopter Parms{};
 
@@ -77,53 +80,40 @@ void UABP_Helicopter_C::ExecuteUbergraph_ABP_Helicopter(int32 EntryPoint)
 }
 
 
-// Function ABP_Helicopter.ABP_Helicopter_C.SetDoorState
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function ABP_Helicopter.ABP_Helicopter_C.BlueprintUpdateAnimation
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// ESBZAerialVehicleDoor                   Door                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsOpen                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaTimeX_BlueprintUpdateAnimation                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UABP_Helicopter_C::SetDoorState(ESBZAerialVehicleDoor Door, bool bIsOpen)
+void UABP_Helicopter_C::BlueprintUpdateAnimation(float DeltaTimeX_BlueprintUpdateAnimation)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BlueprintUpdateAnimation", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_Helicopter_C", "SetDoorState");
+	Params::ABP_Helicopter_C_BlueprintUpdateAnimation Parms{};
 
-	Params::ABP_Helicopter_C_SetDoorState Parms{};
-
-	Parms.Door = Door;
-	Parms.bIsOpen = bIsOpen;
+	Parms.DeltaTimeX_BlueprintUpdateAnimation = DeltaTimeX_BlueprintUpdateAnimation;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function ABP_Helicopter.ABP_Helicopter_C.UpdateRotorYaw
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function ABP_Helicopter.ABP_Helicopter_C.AnimGraph
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  Current_Yaw                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  Speed                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  Delta_Time                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double*                                 New_Yaw                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FPoseLink*                       AnimGraph                                              (Parm, OutParm, NoDestructor)
 
-void UABP_Helicopter_C::UpdateRotorYaw(double Current_Yaw, double Speed, double Delta_Time, double* New_Yaw)
+void UABP_Helicopter_C::AnimGraph(struct FPoseLink* AnimGraph)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AnimGraph", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("ABP_Helicopter_C", "UpdateRotorYaw");
-
-	Params::ABP_Helicopter_C_UpdateRotorYaw Parms{};
-
-	Parms.Current_Yaw = Current_Yaw;
-	Parms.Speed = Speed;
-	Parms.Delta_Time = Delta_Time;
+	Params::ABP_Helicopter_C_AnimGraph Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (New_Yaw != nullptr)
-		*New_Yaw = Parms.New_Yaw;
+	if (AnimGraph != nullptr)
+		*AnimGraph = std::move(Parms.AnimGraph);
 }
 
 

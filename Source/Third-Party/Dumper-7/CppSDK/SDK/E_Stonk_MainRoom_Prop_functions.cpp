@@ -16,49 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function E_Stonk_MainRoom_Prop.E_Stonk_MainRoom_Prop_C.ExecuteUbergraph_E_Stonk_MainRoom_Prop
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AE_Stonk_MainRoom_Prop_C::ExecuteUbergraph_E_Stonk_MainRoom_Prop(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Stonk_MainRoom_Prop_C", "ExecuteUbergraph_E_Stonk_MainRoom_Prop");
-
-	Params::E_Stonk_MainRoom_Prop_C_ExecuteUbergraph_E_Stonk_MainRoom_Prop Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function E_Stonk_MainRoom_Prop.E_Stonk_MainRoom_Prop_C.StonkEMPTriggered
+// Function E_Stonk_MainRoom_Prop.E_Stonk_MainRoom_Prop_C.StonkRedFinal
 // (BlueprintCallable, BlueprintEvent)
 
-void AE_Stonk_MainRoom_Prop_C::StonkEMPTriggered()
+void AE_Stonk_MainRoom_Prop_C::StonkRedFinal()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Stonk_MainRoom_Prop_C", "StonkEMPTriggered");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function E_Stonk_MainRoom_Prop.E_Stonk_MainRoom_Prop_C.StonkRedA
-// (BlueprintCallable, BlueprintEvent)
-
-void AE_Stonk_MainRoom_Prop_C::StonkRedA()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Stonk_MainRoom_Prop_C", "StonkRedA");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StonkRedFinal", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,26 +33,52 @@ void AE_Stonk_MainRoom_Prop_C::StonkRedA()
 
 void AE_Stonk_MainRoom_Prop_C::StonkRedB()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Stonk_MainRoom_Prop_C", "StonkRedB");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StonkRedB", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function E_Stonk_MainRoom_Prop.E_Stonk_MainRoom_Prop_C.StonkRedFinal
+// Function E_Stonk_MainRoom_Prop.E_Stonk_MainRoom_Prop_C.StonkRedA
 // (BlueprintCallable, BlueprintEvent)
 
-void AE_Stonk_MainRoom_Prop_C::StonkRedFinal()
+void AE_Stonk_MainRoom_Prop_C::StonkRedA()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Stonk_MainRoom_Prop_C", "StonkRedFinal");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StonkRedA", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function E_Stonk_MainRoom_Prop.E_Stonk_MainRoom_Prop_C.StonkEMPTriggered
+// (BlueprintCallable, BlueprintEvent)
+
+void AE_Stonk_MainRoom_Prop_C::StonkEMPTriggered()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StonkEMPTriggered", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function E_Stonk_MainRoom_Prop.E_Stonk_MainRoom_Prop_C.ExecuteUbergraph_E_Stonk_MainRoom_Prop
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AE_Stonk_MainRoom_Prop_C::ExecuteUbergraph_E_Stonk_MainRoom_Prop(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "E_Stonk_MainRoom_Prop_C", "ExecuteUbergraph_E_Stonk_MainRoom_Prop", FuncInfo);
+
+	Params::E_Stonk_MainRoom_Prop_C_ExecuteUbergraph_E_Stonk_MainRoom_Prop Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

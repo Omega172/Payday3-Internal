@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_SprinklerSabotagePoint_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SprinklerSabotagePoint_C;
 
 SDK_NAMESPACE_END

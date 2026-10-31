@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<AFOR_BP_LGT_SpotEmbedded_02_C>();
 	}
 };
+DUMPER7_ASSERTS_AFOR_BP_LGT_SpotEmbedded_02_C;
 
 SDK_NAMESPACE_END

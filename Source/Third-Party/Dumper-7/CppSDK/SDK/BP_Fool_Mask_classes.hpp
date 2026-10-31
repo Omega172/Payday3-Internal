@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Fool_Mask.BP_Fool_Mask_C
-// 0x0000 (0x03C8 - 0x03C8)
+// 0x0000 (0x03D8 - 0x03D8)
 class ABP_Fool_Mask_C final : public ASBZMask
 {
 public:
@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Fool_Mask_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Fool_Mask_C;
 
 SDK_NAMESPACE_END

@@ -42,5 +42,6 @@ public:
 		return GetDefaultObjImpl<ABP_ArtGallery_Backdrop_01_Bridge_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ArtGallery_Backdrop_01_Bridge_01_C;
 
 SDK_NAMESPACE_END

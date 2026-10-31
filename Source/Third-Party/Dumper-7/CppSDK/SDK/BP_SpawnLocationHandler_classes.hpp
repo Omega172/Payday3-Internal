@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_SpawnLocationHandler_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SpawnLocationHandler_C;
 
 SDK_NAMESPACE_END

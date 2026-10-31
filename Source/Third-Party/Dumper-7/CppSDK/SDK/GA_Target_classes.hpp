@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGA_Target_C>();
 	}
 };
+DUMPER7_ASSERTS_UGA_Target_C;
 
 SDK_NAMESPACE_END

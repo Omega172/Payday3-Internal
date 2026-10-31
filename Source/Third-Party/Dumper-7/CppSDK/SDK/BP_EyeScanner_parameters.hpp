@@ -17,42 +17,35 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_EyeScanner.BP_EyeScanner_C.addMarker
-// 0x0020 (0x0020 - 0x0000)
-struct BP_EyeScanner_C_addMarker final
+// Function BP_EyeScanner.BP_EyeScanner_C.OnHumanShieldManager
+// 0x0018 (0x0018 - 0x0000)
+struct BP_EyeScanner_C_OnHumanShieldManager final
 {
 public:
-	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0000(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_AddLocalMarker_ReturnValue;               // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ASBZAICharacter*                        Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCharacter*                          Instigator;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          bHumanShield;                                      // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_EyeScanner_C_OnHumanShieldManager;
 
-// Function BP_EyeScanner.BP_EyeScanner_C.addTrackedPawn
-// 0x0008 (0x0008 - 0x0000)
-struct BP_EyeScanner_C_addTrackedPawn final
+// Function BP_EyeScanner.BP_EyeScanner_C.onAISpawned
+// 0x0010 (0x0010 - 0x0000)
+struct BP_EyeScanner_C_onAISpawned final
 {
 public:
-	const class ASBZAICharacter*                  pawn;                                              // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_EyeScanner_C_onAISpawned;
 
-// Function BP_EyeScanner.BP_EyeScanner_C.BndEvt__BP_EyeScanner_markerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct BP_EyeScanner_C_BndEvt__BP_EyeScanner_markerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature final
+// Function BP_EyeScanner.BP_EyeScanner_C.GetMarkerText
+// 0x0010 (0x0010 - 0x0000)
+struct BP_EyeScanner_C_GetMarkerText final
 {
 public:
-	bool                                          bState;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
 };
-
-// Function BP_EyeScanner.BP_EyeScanner_C.BP_OnStateChanged
-// 0x0003 (0x0003 - 0x0000)
-struct BP_EyeScanner_C_BP_OnStateChanged final
-{
-public:
-	ESBZEyeScannerState                           OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZEyeScannerState                           NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_EyeScanner_C_GetMarkerText;
 
 // Function BP_EyeScanner.BP_EyeScanner_C.ExecuteUbergraph_BP_EyeScanner
 // 0x00D0 (0x00D0 - 0x0000)
@@ -100,33 +93,48 @@ public:
 	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class ASBZAICharacter* Character, class ASBZCharacter* Instigator, bool bHumanShield)> K2Node_CreateDelegate_OutputDelegate_1; // 0x00B8(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_EyeScanner_C_ExecuteUbergraph_BP_EyeScanner;
 
-// Function BP_EyeScanner.BP_EyeScanner_C.GetMarkerText
-// 0x0010 (0x0010 - 0x0000)
-struct BP_EyeScanner_C_GetMarkerText final
+// Function BP_EyeScanner.BP_EyeScanner_C.BP_OnStateChanged
+// 0x0003 (0x0003 - 0x0000)
+struct BP_EyeScanner_C_BP_OnStateChanged final
 {
 public:
-	class FText                                   ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ReturnParm)
+	ESBZEyeScannerState                           OldState_BP_OnStateChanged;                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZEyeScannerState                           NewState_BP_OnStateChanged;                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_BP_OnStateChanged;                    // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_EyeScanner_C_BP_OnStateChanged;
 
-// Function BP_EyeScanner.BP_EyeScanner_C.onAISpawned
-// 0x0010 (0x0010 - 0x0000)
-struct BP_EyeScanner_C_onAISpawned final
+// Function BP_EyeScanner.BP_EyeScanner_C.BndEvt__BP_EyeScanner_markerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct BP_EyeScanner_C_BndEvt__BP_EyeScanner_markerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature final
 {
 public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          bState;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_EyeScanner_C_BndEvt__BP_EyeScanner_markerVisibility_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature;
 
-// Function BP_EyeScanner.BP_EyeScanner_C.OnHumanShieldManager
-// 0x0018 (0x0018 - 0x0000)
-struct BP_EyeScanner_C_OnHumanShieldManager final
+// Function BP_EyeScanner.BP_EyeScanner_C.addTrackedPawn
+// 0x0008 (0x0008 - 0x0000)
+struct BP_EyeScanner_C_addTrackedPawn final
 {
 public:
-	class ASBZAICharacter*                        Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCharacter*                          Instigator_0;                                      // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          bHumanShield;                                      // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class ASBZAICharacter*                  pawn;                                              // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_EyeScanner_C_addTrackedPawn;
+
+// Function BP_EyeScanner.BP_EyeScanner_C.addMarker
+// 0x0020 (0x0020 - 0x0000)
+struct BP_EyeScanner_C_addMarker final
+{
+public:
+	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0000(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_AddLocalMarker_ReturnValue;               // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_EyeScanner_C_addMarker;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

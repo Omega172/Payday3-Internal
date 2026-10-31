@@ -16,6 +16,18 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_PlaceableTripMine.BP_PlaceableTripMine_C.OnActivated
+// (Event, Protected, BlueprintEvent)
+
+void ABP_PlaceableTripMine_C::OnActivated()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnActivated", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_PlaceableTripMine.BP_PlaceableTripMine_C.ExecuteUbergraph_BP_PlaceableTripMine
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,30 +35,14 @@ SDK_NAMESPACE_START
 
 void ABP_PlaceableTripMine_C::ExecuteUbergraph_BP_PlaceableTripMine(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlaceableTripMine_C", "ExecuteUbergraph_BP_PlaceableTripMine");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_PlaceableTripMine_C", "ExecuteUbergraph_BP_PlaceableTripMine", FuncInfo);
 
 	Params::BP_PlaceableTripMine_C_ExecuteUbergraph_BP_PlaceableTripMine Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PlaceableTripMine.BP_PlaceableTripMine_C.OnActivated
-// (Event, Protected, BlueprintEvent)
-
-void ABP_PlaceableTripMine_C::OnActivated()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlaceableTripMine_C", "OnActivated");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

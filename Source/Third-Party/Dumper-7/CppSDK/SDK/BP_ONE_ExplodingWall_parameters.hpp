@@ -16,13 +16,14 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_ONE_ExplodingWall.BP_ONE_ExplodingWall_C.BP_OnExplosion
+// Function BP_ONE_ExplodingWall.BP_ONE_ExplodingWall_C.spawnExplosionVFX
 // 0x0001 (0x0001 - 0x0000)
-struct BP_ONE_ExplodingWall_C_BP_OnExplosion final
+struct BP_ONE_ExplodingWall_C_spawnExplosionVFX final
 {
 public:
-	bool                                          bDoCosmetics;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          doCosmetics_spawnExplosionVFX;                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ONE_ExplodingWall_C_spawnExplosionVFX;
 
 // Function BP_ONE_ExplodingWall.BP_ONE_ExplodingWall_C.ExecuteUbergraph_BP_ONE_ExplodingWall
 // 0x0040 (0x0040 - 0x0000)
@@ -40,14 +41,16 @@ public:
 	int32                                         CallFunc_ApplyCameraFeedbackToLocalPlayer_ReturnValue; // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_ApplyCameraFeedbackToLocalPlayer_ReturnValue_1; // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ONE_ExplodingWall_C_ExecuteUbergraph_BP_ONE_ExplodingWall;
 
-// Function BP_ONE_ExplodingWall.BP_ONE_ExplodingWall_C.spawnExplosionVFX
+// Function BP_ONE_ExplodingWall.BP_ONE_ExplodingWall_C.BP_OnExplosion
 // 0x0001 (0x0001 - 0x0000)
-struct BP_ONE_ExplodingWall_C_spawnExplosionVFX final
+struct BP_ONE_ExplodingWall_C_BP_OnExplosion final
 {
 public:
-	bool                                          doCosmetics;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_BP_OnExplosion;                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ONE_ExplodingWall_C_BP_OnExplosion;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

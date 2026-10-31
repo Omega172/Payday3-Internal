@@ -54,27 +54,27 @@ public:
 	bool                                          HasFocus;                                          // 0x050C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void WeaponPartProgressionInitialized(const struct FSBZWeaponPartProgressionCurrent& InWeaponPartProgression_WeaponPartProgressionInitialized);
-	void SetLockedByLevel(int32 InLockedLevel);
-	void SetLockedByDLC();
-	void SetFocused();
-	void SetDisabledFocused();
-	void SetDisabled();
-	void SetDefaultButton();
-	void SetDefault();
-	void SetCurrencyTypeAndValue(int64 InCurrencyValue, ESBZCurrencyCode InCurrencyType);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnInitialized();
-	void OnFocusChanged(bool bIsFocused);
-	void OnEquippedChanged(bool bInIsEquipped_OnEquippedChanged);
-	void OnDisabledChanged(bool InDisabled);
-	void InitItem(class USBZInventoryBaseData* InItemData);
-	void InitButtonState(const struct FSBZWeaponPartProgressionCurrent& InWeaponPartProgression);
-	void ExecuteUbergraph_WBP_UI_WeaponPartProgressionButton(int32 EntryPoint);
-	void DisabledButtonSelected();
+	void ButtonDisabledChanged(bool bInIsDisabled);
+	void ButtonFocusedChanged(bool bInHasFocus);
 	void DefaultButtonSet();
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
-	void ButtonDisabledChanged(bool bInIsDisabled_ButtonDisabledChanged);
+	void DisabledButtonSelected();
+	void ExecuteUbergraph_WBP_UI_WeaponPartProgressionButton(int32 EntryPoint);
+	void InitButtonState(const struct FSBZWeaponPartProgressionCurrent& InWeaponPartProgression);
+	void InitItem(class USBZInventoryBaseData* InItemData);
+	void OnDisabledChanged(bool InDisabled);
+	void OnEquippedChanged(bool bInIsEquipped);
+	void OnFocusChanged(bool bIsFocused);
+	void OnInitialized();
+	void PreConstruct(bool IsDesignTime);
+	void SetCurrencyTypeAndValue(int64 InCurrencyValue, ESBZCurrencyCode InCurrencyType);
+	void SetDefault();
+	void SetDefaultButton();
+	void SetDisabled();
+	void SetDisabledFocused();
+	void SetFocused();
+	void SetLockedByDLC();
+	void SetLockedByLevel(int32 InLockedLevel);
+	void WeaponPartProgressionInitialized(const struct FSBZWeaponPartProgressionCurrent& InWeaponPartProgression);
 
 public:
 	static class UClass* StaticClass()

@@ -19,9 +19,9 @@ SDK_NAMESPACE_START
 // Function ABP_Charm_Base_Taxi.ABP_Charm_Base_Taxi_C.AnimGraph
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FPoseLink*                       AnimGraph                                              (Parm, OutParm, NoDestructor)
+// struct FPoseLink*                       AnimGraph_0                                            (Parm, OutParm, NoDestructor)
 
-void UABP_Charm_Base_Taxi_C::AnimGraph(struct FPoseLink* AnimGraph)
+void UABP_Charm_Base_Taxi_C::AnimGraph(struct FPoseLink* AnimGraph_0)
 {
 	static class FName FnName;
 	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AnimGraph", FnName));
@@ -30,8 +30,8 @@ void UABP_Charm_Base_Taxi_C::AnimGraph(struct FPoseLink* AnimGraph)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (AnimGraph != nullptr)
-		*AnimGraph = std::move(Parms.AnimGraph);
+	if (AnimGraph_0 != nullptr)
+		*AnimGraph_0 = std::move(Parms.AnimGraph_0);
 }
 
 

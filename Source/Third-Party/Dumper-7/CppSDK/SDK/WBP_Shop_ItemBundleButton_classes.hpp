@@ -29,10 +29,10 @@ public:
 	bool                                          bAlreadyFocused;                                   // 0x03F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void OnUpdateOwnershipStatus(bool bIsOwned_OnUpdateOwnershipStatus);
-	void OnShowItemBundle(bool bIsNew_OnShowItemBundle);
+	void ButtonFocusedChanged(bool bInHasFocus);
 	void ExecuteUbergraph_WBP_Shop_ItemBundleButton(int32 EntryPoint);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
+	void OnShowItemBundle(bool bIsNew);
+	void OnUpdateOwnershipStatus(bool bIsOwned);
 
 public:
 	static class UClass* StaticClass()

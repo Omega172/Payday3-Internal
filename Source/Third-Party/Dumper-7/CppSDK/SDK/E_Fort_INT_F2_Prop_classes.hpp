@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AE_Fort_INT_F2_Prop_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_Fort_INT_F2_Prop_C;
 
 SDK_NAMESPACE_END

@@ -24,10 +24,10 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void BndEvt__R_Penthouse_Office_SBZSpawnLocationHandler1_K2Node_ActorBoundEvent_3_SBZSpawnLocationHandlerDelegate__DelegateSignature();
-	void ExecuteUbergraph_R_Penthouse_Office(int32 EntryPoint);
-	void OnRandomSublevelPlaced();
 	void ReceiveBeginPlay();
+	void OnRandomSublevelPlaced();
+	void ExecuteUbergraph_R_Penthouse_Office(int32 EntryPoint);
+	void BndEvt__R_Penthouse_Office_SBZSpawnLocationHandler1_K2Node_ActorBoundEvent_3_SBZSpawnLocationHandlerDelegate__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()
@@ -43,5 +43,6 @@ public:
 		return GetDefaultObjImpl<AR_Penthouse_Office_C>();
 	}
 };
+DUMPER7_ASSERTS_AR_Penthouse_Office_C;
 
 SDK_NAMESPACE_END

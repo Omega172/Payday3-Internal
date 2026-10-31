@@ -10,26 +10,26 @@
 
 #include "Basic.hpp"
 
-#include "CH_BaseCop_classes.hpp"
 #include "Engine_structs.hpp"
+#include "CH_BaseCop_classes.hpp"
 #include "AkAudio_structs.hpp"
 
 
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CH_Tower.CH_Tower_C
-// 0x0020 (0x21E0 - 0x21C0)
+// 0x0020 (0x2270 - 0x2250)
 class ACH_Tower_C final : public ACH_BaseCop_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x21C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USBZAITowerSpecialComponent*            SBZAITowerSpecial;                                 // 0x21C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Helmet;                                            // 0x21D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x2250(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USBZAITowerSpecialComponent*            SBZAITowerSpecial;                                 // 0x2258(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Helmet;                                            // 0x2260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnKill();
-	void ExecuteUbergraph_CH_Tower(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_CH_Tower(int32 EntryPoint);
+	void BP_OnKill();
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<ACH_Tower_C>();
 	}
 };
+DUMPER7_ASSERTS_ACH_Tower_C;
 
 SDK_NAMESPACE_END

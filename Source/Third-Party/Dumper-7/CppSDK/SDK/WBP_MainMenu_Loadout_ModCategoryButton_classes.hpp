@@ -34,15 +34,15 @@ public:
 	class USBZUITextBlock*                        Name_T;                                            // 0x0408(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnWeaponModCategoryDataIntialized();
-	void OnInitialized();
-	void OnHover(bool bIsHovered);
-	void OnFocusChanged(bool InIsFocused);
-	void On_Focus(bool IsFocused);
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
 	void ExecuteUbergraph_WBP_MainMenu_Loadout_ModCategoryButton(int32 EntryPoint);
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
+	void On_Focus(bool IsFocused);
+	void OnFocusChanged(bool InIsFocused);
+	void OnHover(bool bIsHovered);
+	void OnInitialized();
+	void OnWeaponModCategoryDataIntialized();
+	void PreConstruct(bool IsDesignTime);
 
 public:
 	static class UClass* StaticClass()

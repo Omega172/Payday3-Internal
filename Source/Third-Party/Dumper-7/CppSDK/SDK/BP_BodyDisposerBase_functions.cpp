@@ -16,153 +16,31 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_BodyDisposerBase.BP_BodyDisposerBase_C.BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_BodyDisposerBase.BP_BodyDisposerBase_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_BodyDisposerBase_C::BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_BodyDisposerBase_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BodyDisposerBase_C", "BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_BodyDisposerBase_C_BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BodyDisposerBase.BP_BodyDisposerBase_C.BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BodyDisposerBase_C::BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BodyDisposerBase_C", "BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_BodyDisposerBase_C_BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BodyDisposerBase.BP_BodyDisposerBase_C.BP_OnActorDisposed
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   NumDisposed                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BodyDisposerBase_C::BP_OnActorDisposed(int32 NumDisposed, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BodyDisposerBase_C", "BP_OnActorDisposed");
-
-	Params::BP_BodyDisposerBase_C_BP_OnActorDisposed Parms{};
-
-	Parms.NumDisposed = NumDisposed;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BodyDisposerBase.BP_BodyDisposerBase_C.dumpBodyOpen_finished
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_BodyDisposerBase_C::dumpBodyOpen_finished()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BodyDisposerBase_C", "dumpBodyOpen_finished");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_BodyDisposerBase.BP_BodyDisposerBase_C.dumpBodyOpen_tick
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_BodyDisposerBase.BP_BodyDisposerBase_C.setInteraction
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  alpha                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BodyDisposerBase_C::dumpBodyOpen_tick(double alpha)
+void ABP_BodyDisposerBase_C::setInteraction(bool enabled)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setInteraction", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BodyDisposerBase_C", "dumpBodyOpen_tick");
+	Params::BP_BodyDisposerBase_C_setInteraction Parms{};
 
-	Params::BP_BodyDisposerBase_C_dumpBodyOpen_tick Parms{};
-
-	Parms.alpha = alpha;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BodyDisposerBase.BP_BodyDisposerBase_C.dumpBodyOpen_timeline__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_BodyDisposerBase_C::dumpBodyOpen_timeline__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BodyDisposerBase_C", "dumpBodyOpen_timeline__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_BodyDisposerBase.BP_BodyDisposerBase_C.dumpBodyOpen_timeline__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_BodyDisposerBase_C::dumpBodyOpen_timeline__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BodyDisposerBase_C", "dumpBodyOpen_timeline__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_BodyDisposerBase.BP_BodyDisposerBase_C.ExecuteUbergraph_BP_BodyDisposerBase
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BodyDisposerBase_C::ExecuteUbergraph_BP_BodyDisposerBase(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BodyDisposerBase_C", "ExecuteUbergraph_BP_BodyDisposerBase");
-
-	Params::BP_BodyDisposerBase_C_ExecuteUbergraph_BP_BodyDisposerBase Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.enabled = enabled;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -177,10 +55,8 @@ void ABP_BodyDisposerBase_C::ExecuteUbergraph_BP_BodyDisposerBase(int32 EntryPoi
 
 void ABP_BodyDisposerBase_C::getCurrentTransform(double Alpha, const struct FTransform& startTransform_0, struct FTransform* transform)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BodyDisposerBase_C", "getCurrentTransform");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"getCurrentTransform", FnName));
 
 	Params::BP_BodyDisposerBase_C_getCurrentTransform Parms{};
 
@@ -194,37 +70,139 @@ void ABP_BodyDisposerBase_C::getCurrentTransform(double Alpha, const struct FTra
 }
 
 
-// Function BP_BodyDisposerBase.BP_BodyDisposerBase_C.setInteraction
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_BodyDisposerBase.BP_BodyDisposerBase_C.ExecuteUbergraph_BP_BodyDisposerBase
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BodyDisposerBase_C::setInteraction(bool enabled)
+void ABP_BodyDisposerBase_C::ExecuteUbergraph_BP_BodyDisposerBase(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_BodyDisposerBase_C", "ExecuteUbergraph_BP_BodyDisposerBase", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BodyDisposerBase_C", "setInteraction");
+	Params::BP_BodyDisposerBase_C_ExecuteUbergraph_BP_BodyDisposerBase Parms{};
 
-	Params::BP_BodyDisposerBase_C_setInteraction Parms{};
-
-	Parms.enabled = enabled;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_BodyDisposerBase.BP_BodyDisposerBase_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_BodyDisposerBase.BP_BodyDisposerBase_C.dumpBodyOpen_timeline__UpdateFunc
+// (BlueprintEvent)
 
-void ABP_BodyDisposerBase_C::UserConstructionScript()
+void ABP_BodyDisposerBase_C::dumpBodyOpen_timeline__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BodyDisposerBase_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"dumpBodyOpen_timeline__UpdateFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_BodyDisposerBase.BP_BodyDisposerBase_C.dumpBodyOpen_timeline__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_BodyDisposerBase_C::dumpBodyOpen_timeline__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"dumpBodyOpen_timeline__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_BodyDisposerBase.BP_BodyDisposerBase_C.dumpBodyOpen_tick
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  alpha                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BodyDisposerBase_C::dumpBodyOpen_tick(double alpha)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"dumpBodyOpen_tick", FnName));
+
+	Params::BP_BodyDisposerBase_C_dumpBodyOpen_tick Parms{};
+
+	Parms.alpha = alpha;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BodyDisposerBase.BP_BodyDisposerBase_C.dumpBodyOpen_finished
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_BodyDisposerBase_C::dumpBodyOpen_finished()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"dumpBodyOpen_finished", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_BodyDisposerBase.BP_BodyDisposerBase_C.BP_OnActorDisposed
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   NumDisposed                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BodyDisposerBase_C::BP_OnActorDisposed(int32 NumDisposed, bool bDoCosmetics)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnActorDisposed", FnName));
+
+	Params::BP_BodyDisposerBase_C_BP_OnActorDisposed Parms{};
+
+	Parms.NumDisposed = NumDisposed;
+	Parms.bDoCosmetics = bDoCosmetics;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BodyDisposerBase.BP_BodyDisposerBase_C.BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BodyDisposerBase_C::BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_BodyDisposerBase_C_BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BodyDisposerBase.BP_BodyDisposerBase_C.BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BodyDisposerBase_C::BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_BodyDisposerBase_C_BndEvt__BP_BodyDisposerDumpster_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

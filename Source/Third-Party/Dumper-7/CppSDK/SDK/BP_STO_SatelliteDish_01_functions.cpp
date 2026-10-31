@@ -16,67 +16,201 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.BndEvt__BP_STO_SatelliteDish_01_FirstPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_10_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
+// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.SetMarker
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZMarkerDataAsset*        MarkerDataAsset                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    aboveAsset                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_STO_SatelliteDish_01_C::BndEvt__BP_STO_SatelliteDish_01_FirstPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_10_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_STO_SatelliteDish_01_C::SetMarker(const class USBZMarkerDataAsset* MarkerDataAsset, bool aboveAsset)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetMarker", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_SatelliteDish_01_C", "BndEvt__BP_STO_SatelliteDish_01_FirstPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_10_SBZOnInteraction__DelegateSignature");
+	Params::BP_STO_SatelliteDish_01_C_SetMarker Parms{};
 
-	Params::BP_STO_SatelliteDish_01_C_BndEvt__BP_STO_SatelliteDish_01_FirstPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_10_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+	Parms.MarkerDataAsset = MarkerDataAsset;
+	Parms.aboveAsset = aboveAsset;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.BndEvt__BP_STO_SatelliteDish_01_FirstPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.Set Interactable and Visible
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_STO_SatelliteDish_01_C::Set_Interactable_and_Visible(bool Enabled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set Interactable and Visible", FnName));
+
+	Params::BP_STO_SatelliteDish_01_C_Set_Interactable_and_Visible Parms{};
+
+	Parms.Enabled = Enabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_STO_SatelliteDish_01_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.Open__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_STO_SatelliteDish_01_C::Open__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Open__UpdateFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.Open__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_STO_SatelliteDish_01_C::Open__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Open__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.onSabotagedBP
+// (BlueprintAuthorityOnly, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_STO_SatelliteDish_01_C::onSabotagedBP(bool bSabotaged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"onSabotagedBP", FnName));
+
+	Params::BP_STO_SatelliteDish_01_C_onSabotagedBP Parms{};
+
+	Parms.bSabotaged = bSabotaged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.GetMarkerText
+// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FText                             ReturnValue_GetMarkerText                              (Parm, OutParm, ReturnParm)
+
+class FText ABP_STO_SatelliteDish_01_C::GetMarkerText()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetMarkerText", FnName));
+
+	Params::BP_STO_SatelliteDish_01_C_GetMarkerText Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.ExecuteUbergraph_BP_STO_SatelliteDish_01
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_STO_SatelliteDish_01_C::ExecuteUbergraph_BP_STO_SatelliteDish_01(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_STO_SatelliteDish_01_C", "ExecuteUbergraph_BP_STO_SatelliteDish_01", FuncInfo);
+
+	Params::BP_STO_SatelliteDish_01_C_ExecuteUbergraph_BP_STO_SatelliteDish_01 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.BP_StateChanged
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZSabotagePointState                  OldState_BP_StateChanged                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZSabotagePointState                  NewState_BP_StateChanged                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_BP_StateChanged                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_STO_SatelliteDish_01_C::BP_StateChanged(ESBZSabotagePointState OldState_BP_StateChanged, ESBZSabotagePointState NewState_BP_StateChanged, bool bDoCosmetics_BP_StateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_StateChanged", FnName));
+
+	Params::BP_STO_SatelliteDish_01_C_BP_StateChanged Parms{};
+
+	Parms.OldState_BP_StateChanged = OldState_BP_StateChanged;
+	Parms.NewState_BP_StateChanged = NewState_BP_StateChanged;
+	Parms.bDoCosmetics_BP_StateChanged = bDoCosmetics_BP_StateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.BndEvt__BP_STO_WirlessCraneController_01_crane_K2Node_ComponentBoundEvent_3_SBZTimerDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+
+void ABP_STO_SatelliteDish_01_C::BndEvt__BP_STO_WirlessCraneController_01_crane_K2Node_ComponentBoundEvent_3_SBZTimerDelegate__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_STO_WirlessCraneController_01_crane_K2Node_ComponentBoundEvent_3_SBZTimerDelegate__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.BndEvt__BP_STO_SatelliteDish_01_SecondtPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// const class USBZBaseInteractableComponent*InteractableComponent_0                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const class USBZBaseInteractableComponent*InteractableComponent                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_STO_SatelliteDish_01_C::BndEvt__BP_STO_SatelliteDish_01_FirstPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent_0, bool bInNewState)
+void ABP_STO_SatelliteDish_01_C::BndEvt__BP_STO_SatelliteDish_01_SecondtPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_STO_SatelliteDish_01_SecondtPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_SatelliteDish_01_C", "BndEvt__BP_STO_SatelliteDish_01_FirstPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature");
+	Params::BP_STO_SatelliteDish_01_C_BndEvt__BP_STO_SatelliteDish_01_SecondtPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
 
-	Params::BP_STO_SatelliteDish_01_C_BndEvt__BP_STO_SatelliteDish_01_FirstPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.InteractableComponent_0 = InteractableComponent_0;
+	Parms.InteractableComponent = InteractableComponent;
 	Parms.bInNewState = bInNewState;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.BndEvt__BP_STO_SatelliteDish_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.BndEvt__BP_STO_SatelliteDish_01_SecondtPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_11_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_STO_SatelliteDish_01_C::BndEvt__BP_STO_SatelliteDish_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_STO_SatelliteDish_01_C::BndEvt__BP_STO_SatelliteDish_01_SecondtPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_11_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_STO_SatelliteDish_01_SecondtPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_11_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_SatelliteDish_01_C", "BndEvt__BP_STO_SatelliteDish_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_STO_SatelliteDish_01_C_BndEvt__BP_STO_SatelliteDish_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
+	Params::BP_STO_SatelliteDish_01_C_BndEvt__BP_STO_SatelliteDish_01_SecondtPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_11_SBZOnInteraction__DelegateSignature Parms{};
 
 	Parms.Interactable = Interactable;
 	Parms.Interactor = Interactor;
@@ -95,10 +229,8 @@ void ABP_STO_SatelliteDish_01_C::BndEvt__BP_STO_SatelliteDish_01_InteractableCom
 
 void ABP_STO_SatelliteDish_01_C::BndEvt__BP_STO_SatelliteDish_01_placemenetIntState_K2Node_ComponentBoundEvent_5_SBZIntStateChangedSignature__DelegateSignature(int32 OldState, int32 NewState, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_SatelliteDish_01_C", "BndEvt__BP_STO_SatelliteDish_01_placemenetIntState_K2Node_ComponentBoundEvent_5_SBZIntStateChangedSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_STO_SatelliteDish_01_placemenetIntState_K2Node_ComponentBoundEvent_5_SBZIntStateChangedSignature__DelegateSignature", FnName));
 
 	Params::BP_STO_SatelliteDish_01_C_BndEvt__BP_STO_SatelliteDish_01_placemenetIntState_K2Node_ComponentBoundEvent_5_SBZIntStateChangedSignature__DelegateSignature Parms{};
 
@@ -110,21 +242,19 @@ void ABP_STO_SatelliteDish_01_C::BndEvt__BP_STO_SatelliteDish_01_placemenetIntSt
 }
 
 
-// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.BndEvt__BP_STO_SatelliteDish_01_SecondtPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_11_SBZOnInteraction__DelegateSignature
+// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.BndEvt__BP_STO_SatelliteDish_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_STO_SatelliteDish_01_C::BndEvt__BP_STO_SatelliteDish_01_SecondtPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_11_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_STO_SatelliteDish_01_C::BndEvt__BP_STO_SatelliteDish_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_STO_SatelliteDish_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_SatelliteDish_01_C", "BndEvt__BP_STO_SatelliteDish_01_SecondtPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_11_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_STO_SatelliteDish_01_C_BndEvt__BP_STO_SatelliteDish_01_SecondtPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_11_SBZOnInteraction__DelegateSignature Parms{};
+	Params::BP_STO_SatelliteDish_01_C_BndEvt__BP_STO_SatelliteDish_01_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
 	Parms.Interactable = Interactable;
 	Parms.Interactor = Interactor;
@@ -134,205 +264,43 @@ void ABP_STO_SatelliteDish_01_C::BndEvt__BP_STO_SatelliteDish_01_SecondtPartPlac
 }
 
 
-// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.BndEvt__BP_STO_SatelliteDish_01_SecondtPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.BndEvt__BP_STO_SatelliteDish_01_FirstPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// const class USBZBaseInteractableComponent*InteractableComponent_0                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const class USBZBaseInteractableComponent*InteractableComponent                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_STO_SatelliteDish_01_C::BndEvt__BP_STO_SatelliteDish_01_SecondtPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent_0, bool bInNewState)
+void ABP_STO_SatelliteDish_01_C::BndEvt__BP_STO_SatelliteDish_01_FirstPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_STO_SatelliteDish_01_FirstPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_SatelliteDish_01_C", "BndEvt__BP_STO_SatelliteDish_01_SecondtPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature");
+	Params::BP_STO_SatelliteDish_01_C_BndEvt__BP_STO_SatelliteDish_01_FirstPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
 
-	Params::BP_STO_SatelliteDish_01_C_BndEvt__BP_STO_SatelliteDish_01_SecondtPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
-
-	Parms.InteractableComponent_0 = InteractableComponent_0;
+	Parms.InteractableComponent = InteractableComponent;
 	Parms.bInNewState = bInNewState;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.BndEvt__BP_STO_WirlessCraneController_01_crane_K2Node_ComponentBoundEvent_3_SBZTimerDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-
-void ABP_STO_SatelliteDish_01_C::BndEvt__BP_STO_WirlessCraneController_01_crane_K2Node_ComponentBoundEvent_3_SBZTimerDelegate__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_SatelliteDish_01_C", "BndEvt__BP_STO_WirlessCraneController_01_crane_K2Node_ComponentBoundEvent_3_SBZTimerDelegate__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.BP_StateChanged
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
-// Parameters:
-// ESBZSabotagePointState                  OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZSabotagePointState                  NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_STO_SatelliteDish_01_C::BP_StateChanged(ESBZSabotagePointState OldState, ESBZSabotagePointState NewState, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_SatelliteDish_01_C", "BP_StateChanged");
-
-	Params::BP_STO_SatelliteDish_01_C_BP_StateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.ExecuteUbergraph_BP_STO_SatelliteDish_01
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_STO_SatelliteDish_01_C::ExecuteUbergraph_BP_STO_SatelliteDish_01(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_SatelliteDish_01_C", "ExecuteUbergraph_BP_STO_SatelliteDish_01");
-
-	Params::BP_STO_SatelliteDish_01_C_ExecuteUbergraph_BP_STO_SatelliteDish_01 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.GetMarkerText
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-class FText ABP_STO_SatelliteDish_01_C::GetMarkerText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_SatelliteDish_01_C", "GetMarkerText");
-
-	Params::BP_STO_SatelliteDish_01_C_GetMarkerText Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.onSabotagedBP
-// (BlueprintAuthorityOnly, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bSabotaged                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_STO_SatelliteDish_01_C::onSabotagedBP(bool bSabotaged)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_SatelliteDish_01_C", "onSabotagedBP");
-
-	Params::BP_STO_SatelliteDish_01_C_onSabotagedBP Parms{};
-
-	Parms.bSabotaged = bSabotaged;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.Open__FinishedFunc
+// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.BndEvt__BP_STO_SatelliteDish_01_FirstPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_10_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
-
-void ABP_STO_SatelliteDish_01_C::Open__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_SatelliteDish_01_C", "Open__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.Open__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_STO_SatelliteDish_01_C::Open__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_SatelliteDish_01_C", "Open__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_STO_SatelliteDish_01_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_SatelliteDish_01_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.Set Interactable and Visible
-// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    Enabled                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_STO_SatelliteDish_01_C::Set_Interactable_and_Visible(bool Enabled)
+void ABP_STO_SatelliteDish_01_C::BndEvt__BP_STO_SatelliteDish_01_FirstPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_10_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_STO_SatelliteDish_01_FirstPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_10_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_SatelliteDish_01_C", "Set Interactable and Visible");
+	Params::BP_STO_SatelliteDish_01_C_BndEvt__BP_STO_SatelliteDish_01_FirstPartPlacedSBZInteractable_K2Node_ComponentBoundEvent_10_SBZOnInteraction__DelegateSignature Parms{};
 
-	Params::BP_STO_SatelliteDish_01_C_Set_Interactable_and_Visible Parms{};
-
-	Parms.Enabled = Enabled;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_STO_SatelliteDish_01.BP_STO_SatelliteDish_01_C.SetMarker
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class USBZMarkerDataAsset*        MarkerDataAsset                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    aboveAsset                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_STO_SatelliteDish_01_C::SetMarker(const class USBZMarkerDataAsset* MarkerDataAsset, bool aboveAsset)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_SatelliteDish_01_C", "SetMarker");
-
-	Params::BP_STO_SatelliteDish_01_C_SetMarker Parms{};
-
-	Parms.MarkerDataAsset = MarkerDataAsset;
-	Parms.aboveAsset = aboveAsset;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

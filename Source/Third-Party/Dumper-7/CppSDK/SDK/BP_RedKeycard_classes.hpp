@@ -23,9 +23,9 @@ public:
 	class FText                                   text;                                              // 0x0388(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	class USBZSensorComponent* GetSensorComponent();
-	class USBZOutlineComponent* GetSensorOutlineComponent();
 	void UserConstructionScript();
+	class USBZOutlineComponent* GetSensorOutlineComponent();
+	class USBZSensorComponent* GetSensorComponent();
 
 public:
 	static class UClass* StaticClass()
@@ -41,5 +41,6 @@ public:
 		return GetDefaultObjImpl<ABP_RedKeycard_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_RedKeycard_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UUTD_Escort_C>();
 	}
 };
+DUMPER7_ASSERTS_UUTD_Escort_C;
 
 SDK_NAMESPACE_END

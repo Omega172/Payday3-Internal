@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "BP_double_fence_remotly_openable_2_classes.hpp"
-#include "Starbreeze_structs.hpp"
-#include "AkAudio_structs.hpp"
 #include "doorStateSimple_structs.hpp"
+#include "Starbreeze_structs.hpp"
+#include "BP_double_fence_remotly_openable_2_classes.hpp"
+#include "AkAudio_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -81,16 +81,16 @@ public:
 	bool                                          gateCrushState;                                    // 0x08F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_GateCrush(int32 EntryPoint);
-	void OnStateChanged(ESBZGateState OldState, ESBZGateState NewState, bool bIsInitialStateChange);
-	void RunEffectInitStateVisibility();
-	void setBinaryState(bool state, bool doCosmetics);
-	void StopVatAndSetEndState();
-	void TL_ContainerDrop__FinishedFunc();
-	void TL_ContainerDrop__UpdateFunc();
-	void UserConstructionScript();
-	void VAT_Destruction__FinishedFunc();
 	void VAT_Destruction__UpdateFunc();
+	void VAT_Destruction__FinishedFunc();
+	void UserConstructionScript();
+	void TL_ContainerDrop__UpdateFunc();
+	void TL_ContainerDrop__FinishedFunc();
+	void StopVatAndSetEndState();
+	void setBinaryState(bool state, bool doCosmetics);
+	void RunEffectInitStateVisibility();
+	void OnStateChanged(ESBZGateState OldState_OnStateChanged, ESBZGateState NewState_OnStateChanged, bool bIsInitialStateChange_OnStateChanged);
+	void ExecuteUbergraph_BP_GateCrush(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -106,5 +106,6 @@ public:
 		return GetDefaultObjImpl<ABP_GateCrush_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_GateCrush_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGA_AI_LifeAction_C>();
 	}
 };
+DUMPER7_ASSERTS_UGA_AI_LifeAction_C;
 
 SDK_NAMESPACE_END

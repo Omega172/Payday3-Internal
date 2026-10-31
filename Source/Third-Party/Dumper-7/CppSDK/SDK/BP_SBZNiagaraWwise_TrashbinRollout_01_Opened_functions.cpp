@@ -12,10 +12,21 @@
 
 #include "BP_SBZNiagaraWwise_TrashbinRollout_01_Opened_classes.hpp"
 #include "BP_SBZNiagaraWwise_TrashbinRollout_01_Opened_parameters.hpp"
-#include "BP_SBZNiagaraWwise_TrashbinRollout_01_Opened_0_parameters.hpp"
 
 
 SDK_NAMESPACE_START
+
+// Function BP_SBZNiagaraWwise_TrashbinRollout_01_Opened.BP_SBZNiagaraWwise_TrashbinRollout_01_Opened_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void BP_SBZNiagaraWwise_TrashbinRollout_01_Opened::ABP_SBZNiagaraWwise_TrashbinRollout_01_Opened_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
 
 // Function BP_SBZNiagaraWwise_TrashbinRollout_01_Opened.BP_SBZNiagaraWwise_TrashbinRollout_01_Opened_C.ExecuteUbergraph_BP_SBZNiagaraWwise_TrashbinRollout_01_Opened
 // (Final, UbergraphFunction)
@@ -24,30 +35,14 @@ SDK_NAMESPACE_START
 
 void BP_SBZNiagaraWwise_TrashbinRollout_01_Opened::ABP_SBZNiagaraWwise_TrashbinRollout_01_Opened_C::ExecuteUbergraph_BP_SBZNiagaraWwise_TrashbinRollout_01_Opened(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SBZNiagaraWwise_TrashbinRollout_01_Opened_C", "ExecuteUbergraph_BP_SBZNiagaraWwise_TrashbinRollout_01_Opened");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_SBZNiagaraWwise_TrashbinRollout_01_Opened_C", "ExecuteUbergraph_BP_SBZNiagaraWwise_TrashbinRollout_01_Opened", FuncInfo);
 
 	Params::BP_SBZNiagaraWwise_TrashbinRollout_01_Opened_C_ExecuteUbergraph_BP_SBZNiagaraWwise_TrashbinRollout_01_Opened Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SBZNiagaraWwise_TrashbinRollout_01_Opened.BP_SBZNiagaraWwise_TrashbinRollout_01_Opened_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void BP_SBZNiagaraWwise_TrashbinRollout_01_Opened::ABP_SBZNiagaraWwise_TrashbinRollout_01_Opened_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SBZNiagaraWwise_TrashbinRollout_01_Opened_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

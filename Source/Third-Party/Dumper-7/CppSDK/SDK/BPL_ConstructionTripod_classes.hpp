@@ -47,5 +47,6 @@ public:
 		return GetDefaultObjImpl<ABPL_ConstructionTripod_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_ConstructionTripod_C;
 
 SDK_NAMESPACE_END

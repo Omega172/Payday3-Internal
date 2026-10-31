@@ -18,23 +18,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_FireExtinguisher_01_Foam.BP_FireExtinguisher_01_Foam_C.BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct BP_FireExtinguisher_01_Foam_C_BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature final
-{
-public:
-	class UActorComponent*                        Component;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bReset;                                            // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_FireExtinguisher_01_Foam.BP_FireExtinguisher_01_Foam_C.BP_OnExplosion
-// 0x0001 (0x0001 - 0x0000)
-struct BP_FireExtinguisher_01_Foam_C_BP_OnExplosion final
-{
-public:
-	bool                                          bDoCosmetics;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_FireExtinguisher_01_Foam.BP_FireExtinguisher_01_Foam_C.ExecuteUbergraph_BP_FireExtinguisher_01_Foam
 // 0x02C0 (0x02C0 - 0x0000)
 struct BP_FireExtinguisher_01_Foam_C_ExecuteUbergraph_BP_FireExtinguisher_01_Foam final
@@ -88,6 +71,26 @@ public:
 	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x02B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_MakeRotator_Pitch_ImplicitCast;           // 0x02B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_FireExtinguisher_01_Foam_C_ExecuteUbergraph_BP_FireExtinguisher_01_Foam;
+
+// Function BP_FireExtinguisher_01_Foam.BP_FireExtinguisher_01_Foam_C.BP_OnExplosion
+// 0x0001 (0x0001 - 0x0000)
+struct BP_FireExtinguisher_01_Foam_C_BP_OnExplosion final
+{
+public:
+	bool                                          bDoCosmetics_BP_OnExplosion;                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FireExtinguisher_01_Foam_C_BP_OnExplosion;
+
+// Function BP_FireExtinguisher_01_Foam.BP_FireExtinguisher_01_Foam_C.BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct BP_FireExtinguisher_01_Foam_C_BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature final
+{
+public:
+	class UActorComponent*                        Component;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bReset;                                            // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_FireExtinguisher_01_Foam_C_BndEvt__BP_TestExplosiveFuelTank_NiagaraComponent_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

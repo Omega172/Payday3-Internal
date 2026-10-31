@@ -16,127 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ServerroomLight_State.BP_ServerroomLight_State_C.Change room state
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Room_index                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    is_Active                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ServerroomLight_State.BP_ServerroomLight_State_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_ServerroomLight_State_C::Change_room_state(int32 Room_index, bool is_Active)
+void ABP_ServerroomLight_State_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ServerroomLight_State_C", "Change room state");
-
-	Params::BP_ServerroomLight_State_C_Change_room_state Parms{};
-
-	Parms.Room_index = Room_index;
-	Parms.is_Active = is_Active;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ServerroomLight_State.BP_ServerroomLight_State_C.ExecuteUbergraph_BP_ServerroomLight_State
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ServerroomLight_State_C::ExecuteUbergraph_BP_ServerroomLight_State(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ServerroomLight_State_C", "ExecuteUbergraph_BP_ServerroomLight_State");
-
-	Params::BP_ServerroomLight_State_C_ExecuteUbergraph_BP_ServerroomLight_State Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ServerroomLight_State.BP_ServerroomLight_State_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_ServerroomLight_State_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ServerroomLight_State_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ServerroomLight_State.BP_ServerroomLight_State_C.Room A state changed
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_ServerroomLight_State_C::Room_A_state_changed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ServerroomLight_State_C", "Room A state changed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ServerroomLight_State.BP_ServerroomLight_State_C.Room B state changed
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_ServerroomLight_State_C::Room_B_state_changed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ServerroomLight_State_C", "Room B state changed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ServerroomLight_State.BP_ServerroomLight_State_C.Room C state changed
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_ServerroomLight_State_C::Room_C_state_changed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ServerroomLight_State_C", "Room C state changed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ServerroomLight_State.BP_ServerroomLight_State_C.Room D state changed
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_ServerroomLight_State_C::Room_D_state_changed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ServerroomLight_State_C", "Room D state changed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ServerroomLight_State.BP_ServerroomLight_State_C.Room E state changed
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_ServerroomLight_State_C::Room_E_state_changed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ServerroomLight_State_C", "Room E state changed");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -149,10 +35,8 @@ void ABP_ServerroomLight_State_C::Room_E_state_changed()
 
 void ABP_ServerroomLight_State_C::Switch_ALL_room_states(bool Is_active_)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ServerroomLight_State_C", "Switch ALL room states");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Switch ALL room states", FnName));
 
 	Params::BP_ServerroomLight_State_C_Switch_ALL_room_states Parms{};
 
@@ -162,17 +46,113 @@ void ABP_ServerroomLight_State_C::Switch_ALL_room_states(bool Is_active_)
 }
 
 
-// Function BP_ServerroomLight_State.BP_ServerroomLight_State_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_ServerroomLight_State.BP_ServerroomLight_State_C.Room E state changed
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_ServerroomLight_State_C::UserConstructionScript()
+void ABP_ServerroomLight_State_C::Room_E_state_changed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ServerroomLight_State_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Room E state changed", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ServerroomLight_State.BP_ServerroomLight_State_C.Room D state changed
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_ServerroomLight_State_C::Room_D_state_changed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Room D state changed", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ServerroomLight_State.BP_ServerroomLight_State_C.Room C state changed
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_ServerroomLight_State_C::Room_C_state_changed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Room C state changed", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ServerroomLight_State.BP_ServerroomLight_State_C.Room B state changed
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_ServerroomLight_State_C::Room_B_state_changed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Room B state changed", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ServerroomLight_State.BP_ServerroomLight_State_C.Room A state changed
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_ServerroomLight_State_C::Room_A_state_changed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Room A state changed", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ServerroomLight_State.BP_ServerroomLight_State_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_ServerroomLight_State_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ServerroomLight_State.BP_ServerroomLight_State_C.ExecuteUbergraph_BP_ServerroomLight_State
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ServerroomLight_State_C::ExecuteUbergraph_BP_ServerroomLight_State(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ServerroomLight_State_C", "ExecuteUbergraph_BP_ServerroomLight_State", FuncInfo);
+
+	Params::BP_ServerroomLight_State_C_ExecuteUbergraph_BP_ServerroomLight_State Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ServerroomLight_State.BP_ServerroomLight_State_C.Change room state
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Room_index                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    is_Active                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ServerroomLight_State_C::Change_room_state(int32 Room_index, bool is_Active)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Change room state", FnName));
+
+	Params::BP_ServerroomLight_State_C_Change_room_state Parms{};
+
+	Parms.Room_index = Room_index;
+	Parms.is_Active = is_Active;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

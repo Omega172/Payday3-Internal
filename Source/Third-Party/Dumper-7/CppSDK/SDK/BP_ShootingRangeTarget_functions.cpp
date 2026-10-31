@@ -16,175 +16,133 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.clearTarget
-// (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
+// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_ShootingRangeTarget_C::clearTarget()
+void ABP_ShootingRangeTarget_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeTarget_C", "clearTarget");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.DrawExplosionHitOnSlave
+// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.updateTargetRange
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// E_ShootingRangeTargetDistances          distance                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ShootingRangeTarget_C::DrawExplosionHitOnSlave(double damage)
+void ABP_ShootingRangeTarget_C::updateTargetRange(E_ShootingRangeTargetDistances distance)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"updateTargetRange", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeTarget_C", "DrawExplosionHitOnSlave");
+	Params::BP_ShootingRangeTarget_C_updateTargetRange Parms{};
 
-	Params::BP_ShootingRangeTarget_C_DrawExplosionHitOnSlave Parms{};
-
-	Parms.damage = damage;
+	Parms.distance = distance;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.DrawHitOnSlave
+// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.updateDistance
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FVector&                   impactPoint                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  distance                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ShootingRangeTarget_C::DrawHitOnSlave(double Damage, const struct FVector& impactPoint)
+void ABP_ShootingRangeTarget_C::updateDistance(double distance)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"updateDistance", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeTarget_C", "DrawHitOnSlave");
+	Params::BP_ShootingRangeTarget_C_updateDistance Parms{};
 
-	Params::BP_ShootingRangeTarget_C_DrawHitOnSlave Parms{};
-
-	Parms.Damage = Damage;
-	Parms.impactPoint = std::move(impactPoint);
+	Parms.distance = distance;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.ExecuteUbergraph_BP_ShootingRangeTarget
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.setDistance
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// E_ShootingRangeTargetDistances          distance                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    doCosmetics                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ShootingRangeTarget_C::ExecuteUbergraph_BP_ShootingRangeTarget(int32 EntryPoint)
+void ABP_ShootingRangeTarget_C::setDistance(E_ShootingRangeTargetDistances distance, bool doCosmetics)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setDistance", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeTarget_C", "ExecuteUbergraph_BP_ShootingRangeTarget");
+	Params::BP_ShootingRangeTarget_C_setDistance Parms{};
 
-	Params::BP_ShootingRangeTarget_C_ExecuteUbergraph_BP_ShootingRangeTarget Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.distance = distance;
+	Parms.doCosmetics = doCosmetics;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.FloatPrecision
-// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Float                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Decimal_Precision                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.ResetTarget
+// (BlueprintCallable, BlueprintEvent)
 
-double ABP_ShootingRangeTarget_C::FloatPrecision(double Float, int32 Decimal_Precision)
+void ABP_ShootingRangeTarget_C::ResetTarget()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ResetTarget", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeTarget_C", "FloatPrecision");
-
-	Params::BP_ShootingRangeTarget_C_FloatPrecision Parms{};
-
-	Parms.Float = Float;
-	Parms.Decimal_Precision = Decimal_Precision;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.getWidget
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// class UWBP_TargetDisplay_C**            widget_0                                               (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaSeconds_ReceiveTick                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ShootingRangeTarget_C::getWidget(class UWBP_TargetDisplay_C** widget_0)
+void ABP_ShootingRangeTarget_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveTick", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeTarget_C", "getWidget");
+	Params::BP_ShootingRangeTarget_C_ReceiveTick Parms{};
 
-	Params::BP_ShootingRangeTarget_C_getWidget Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (widget_0 != nullptr)
-		*widget_0 = Parms.widget_0;
-}
-
-
-// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.HitDebugDraw
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FVector&                   Hit_Location                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  Hit_Damage                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  Hit_Distance                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ShootingRangeTarget_C::HitDebugDraw(const struct FVector& Hit_Location, double Hit_Damage, double Hit_Distance)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeTarget_C", "HitDebugDraw");
-
-	Params::BP_ShootingRangeTarget_C_HitDebugDraw Parms{};
-
-	Parms.Hit_Location = std::move(Hit_Location);
-	Parms.Hit_Damage = Hit_Damage;
-	Parms.Hit_Distance = Hit_Distance;
+	Parms.DeltaSeconds_ReceiveTick = DeltaSeconds_ReceiveTick;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.OnPostTakenDamageEvent
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const TArray<struct FHitResult>&        HitResultArray                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-// const struct FSBZDamageEvent&           DamageEvent                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// const class USBZWeaponFireData*         FireData                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// float                                   DamageMultiplier                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   CriticalDamageMultiplier                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_ShootingRangeTarget_C::OnPostTakenDamageEvent(const TArray<struct FHitResult>& HitResultArray, const struct FSBZDamageEvent& DamageEvent, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier)
+void ABP_ShootingRangeTarget_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeTarget_C", "OnPostTakenDamageEvent");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_ShootingRangeTarget_C_OnPostTakenDamageEvent Parms{};
 
-	Parms.HitResultArray = std::move(HitResultArray);
-	Parms.DamageEvent = std::move(DamageEvent);
-	Parms.FireData = FireData;
-	Parms.DamageMultiplier = DamageMultiplier;
-	Parms.CriticalDamageMultiplier = CriticalDamageMultiplier;
+// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   OldState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ShootingRangeTarget_C::OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_ShootingRangeTarget_C_OnStateChanged Parms{};
+
+	Parms.OldState_OnStateChanged = OldState_OnStateChanged;
+	Parms.NewState_OnStateChanged = NewState_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -202,10 +160,8 @@ void ABP_ShootingRangeTarget_C::OnPostTakenDamageEvent(const TArray<struct FHitR
 
 void ABP_ShootingRangeTarget_C::OnPreTakeDamage(const TArray<struct FHitResult>& HitResultArray, float DamagePerHit, float Distance, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeTarget_C", "OnPreTakeDamage");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPreTakeDamage", FnName));
 
 	Params::BP_ShootingRangeTarget_C_OnPreTakeDamage Parms{};
 
@@ -220,184 +176,238 @@ void ABP_ShootingRangeTarget_C::OnPreTakeDamage(const TArray<struct FHitResult>&
 }
 
 
-// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
+// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.OnPostTakenDamageEvent
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const TArray<struct FHitResult>&        HitResultArray                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+// const struct FSBZDamageEvent&           DamageEvent                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const class USBZWeaponFireData*         FireData                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                                   DamageMultiplier                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   CriticalDamageMultiplier                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ShootingRangeTarget_C::OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics)
+void ABP_ShootingRangeTarget_C::OnPostTakenDamageEvent(const TArray<struct FHitResult>& HitResultArray, const struct FSBZDamageEvent& DamageEvent, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPostTakenDamageEvent", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeTarget_C", "OnStateChanged");
-
-	Params::BP_ShootingRangeTarget_C_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_ShootingRangeTarget_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeTarget_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ShootingRangeTarget_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeTarget_C", "ReceiveTick");
-
-	Params::BP_ShootingRangeTarget_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.ResetTarget
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_ShootingRangeTarget_C::ResetTarget()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeTarget_C", "ResetTarget");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.setDistance
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// E_ShootingRangeTargetDistances          distance                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    doCosmetics                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ShootingRangeTarget_C::setDistance(E_ShootingRangeTargetDistances distance, bool doCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeTarget_C", "setDistance");
-
-	Params::BP_ShootingRangeTarget_C_setDistance Parms{};
-
-	Parms.distance = distance;
-	Parms.doCosmetics = doCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.updateDistance
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  distance                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ShootingRangeTarget_C::updateDistance(double distance)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeTarget_C", "updateDistance");
-
-	Params::BP_ShootingRangeTarget_C_updateDistance Parms{};
-
-	Parms.distance = distance;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.updateTargetRange
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// E_ShootingRangeTargetDistances          distance                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ShootingRangeTarget_C::updateTargetRange(E_ShootingRangeTargetDistances distance)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeTarget_C", "updateTargetRange");
-
-	Params::BP_ShootingRangeTarget_C_updateTargetRange Parms{};
-
-	Parms.distance = distance;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_ShootingRangeTarget_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeTarget_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.IsArrayWithinDistance
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
-// Parameters:
-// TArray<struct FHitResult>&              HitResultArray                                         (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-// const double                            WithinDistance                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   IsWithin                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ShootingRangeTarget_C::IsArrayWithinDistance(TArray<struct FHitResult>& HitResultArray, const double WithinDistance, bool* IsWithin) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeTarget_C", "IsArrayWithinDistance");
-
-	Params::BP_ShootingRangeTarget_C_IsArrayWithinDistance Parms{};
+	Params::BP_ShootingRangeTarget_C_OnPostTakenDamageEvent Parms{};
 
 	Parms.HitResultArray = std::move(HitResultArray);
-	Parms.WithinDistance = WithinDistance;
+	Parms.DamageEvent = std::move(DamageEvent);
+	Parms.FireData = FireData;
+	Parms.DamageMultiplier = DamageMultiplier;
+	Parms.CriticalDamageMultiplier = CriticalDamageMultiplier;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	HitResultArray = std::move(Parms.HitResultArray);
-
-	if (IsWithin != nullptr)
-		*IsWithin = Parms.IsWithin;
 }
 
 
-// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.IsDamageEventBroadcastCritical
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.HitDebugDraw
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FVector&                   Hit_Location                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Hit_Damage                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Hit_Distance                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ShootingRangeTarget_C::HitDebugDraw(const struct FVector& Hit_Location, double Hit_Damage, double Hit_Distance)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HitDebugDraw", FnName));
+
+	Params::BP_ShootingRangeTarget_C_HitDebugDraw Parms{};
+
+	Parms.Hit_Location = std::move(Hit_Location);
+	Parms.Hit_Damage = Hit_Damage;
+	Parms.Hit_Distance = Hit_Distance;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.getWidget
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWBP_TargetDisplay_C**            widget                                                 (Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ShootingRangeTarget_C::getWidget(class UWBP_TargetDisplay_C** widget)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"getWidget", FnName));
+
+	Params::BP_ShootingRangeTarget_C_getWidget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (widget != nullptr)
+		*widget = Parms.widget;
+}
+
+
+// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.FloatPrecision
+// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Float                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Decimal_Precision                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+double ABP_ShootingRangeTarget_C::FloatPrecision(double Float, int32 Decimal_Precision)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"FloatPrecision", FnName));
+
+	Params::BP_ShootingRangeTarget_C_FloatPrecision Parms{};
+
+	Parms.Float = Float;
+	Parms.Decimal_Precision = Decimal_Precision;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.ExecuteUbergraph_BP_ShootingRangeTarget
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ShootingRangeTarget_C::ExecuteUbergraph_BP_ShootingRangeTarget(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ShootingRangeTarget_C", "ExecuteUbergraph_BP_ShootingRangeTarget", FuncInfo);
+
+	Params::BP_ShootingRangeTarget_C_ExecuteUbergraph_BP_ShootingRangeTarget Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.DrawHitOnSlave
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   impactPoint                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ShootingRangeTarget_C::DrawHitOnSlave(double Damage, const struct FVector& impactPoint)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DrawHitOnSlave", FnName));
+
+	Params::BP_ShootingRangeTarget_C_DrawHitOnSlave Parms{};
+
+	Parms.Damage = Damage;
+	Parms.impactPoint = std::move(impactPoint);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.DrawExplosionHitOnSlave
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ShootingRangeTarget_C::DrawExplosionHitOnSlave(double damage)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DrawExplosionHitOnSlave", FnName));
+
+	Params::BP_ShootingRangeTarget_C_DrawExplosionHitOnSlave Parms{};
+
+	Parms.damage = damage;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.clearTarget
+// (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
+
+void ABP_ShootingRangeTarget_C::clearTarget()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"clearTarget", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.IsLockpickActor
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool ABP_ShootingRangeTarget_C::IsLockpickActor() const
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsLockpickActor", FnName));
+
+	Params::BP_ShootingRangeTarget_C_IsLockpickActor Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.IsDamageTypeAllowed
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// const class USBZInteractorComponent*    Interactor                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTagContainer&     InDamageTypeTags                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// bool                                    bIsSawPropDamageOnly                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool ABP_ShootingRangeTarget_C::IsDamageTypeAllowed(const class USBZInteractorComponent* Interactor, const struct FGameplayTagContainer& InDamageTypeTags, bool bIsSawPropDamageOnly) const
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsDamageTypeAllowed", FnName));
+
+	Params::BP_ShootingRangeTarget_C_IsDamageTypeAllowed Parms{};
+
+	Parms.Interactor = Interactor;
+	Parms.InDamageTypeTags = std::move(InDamageTypeTags);
+	Parms.bIsSawPropDamageOnly = bIsSawPropDamageOnly;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.IsDamageEventBroadcastMerged
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// const TArray<struct FHitResult>&        HitResultArray                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+// const struct FSBZDamageEvent&           DamageEvent                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const class USBZWeaponFireData*         FireData                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                                   DamageMultiplier                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   CriticalDamageMultiplier                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool ABP_ShootingRangeTarget_C::IsDamageEventBroadcastMerged(const TArray<struct FHitResult>& HitResultArray, const struct FSBZDamageEvent& DamageEvent, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier) const
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsDamageEventBroadcastMerged", FnName));
+
+	Params::BP_ShootingRangeTarget_C_IsDamageEventBroadcastMerged Parms{};
+
+	Parms.HitResultArray = std::move(HitResultArray);
+	Parms.DamageEvent = std::move(DamageEvent);
+	Parms.FireData = FireData;
+	Parms.DamageMultiplier = DamageMultiplier;
+	Parms.CriticalDamageMultiplier = CriticalDamageMultiplier;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.IsDamageEventBroadcastKillshot
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // const struct FHitResult&                HitResult                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // const struct FSBZDamageEvent&           DamageEvent                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
@@ -406,14 +416,41 @@ void ABP_ShootingRangeTarget_C::IsArrayWithinDistance(TArray<struct FHitResult>&
 // float                                   CriticalDamageMultiplier                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-bool ABP_ShootingRangeTarget_C::IsDamageEventBroadcastCritical(const struct FHitResult& HitResult, const struct FSBZDamageEvent& DamageEvent, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier) const
+bool ABP_ShootingRangeTarget_C::IsDamageEventBroadcastKillshot(const struct FHitResult& HitResult, const struct FSBZDamageEvent& DamageEvent, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier) const
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsDamageEventBroadcastKillshot", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeTarget_C", "IsDamageEventBroadcastCritical");
+	Params::BP_ShootingRangeTarget_C_IsDamageEventBroadcastKillshot Parms{};
 
-	Params::BP_ShootingRangeTarget_C_IsDamageEventBroadcastCritical Parms{};
+	Parms.HitResult = std::move(HitResult);
+	Parms.DamageEvent = std::move(DamageEvent);
+	Parms.FireData = FireData;
+	Parms.DamageMultiplier = DamageMultiplier;
+	Parms.CriticalDamageMultiplier = CriticalDamageMultiplier;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.IsDamageEventBroadcastHitMarkerSoundAllowed
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Parameters:
+// const struct FHitResult&                HitResult                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FSBZDamageEvent&           DamageEvent                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const class USBZWeaponFireData*         FireData                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                                   DamageMultiplier                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   CriticalDamageMultiplier                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool ABP_ShootingRangeTarget_C::IsDamageEventBroadcastHitMarkerSoundAllowed(const struct FHitResult& HitResult, const struct FSBZDamageEvent& DamageEvent, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier) const
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsDamageEventBroadcastHitMarkerSoundAllowed", FnName));
+
+	Params::BP_ShootingRangeTarget_C_IsDamageEventBroadcastHitMarkerSoundAllowed Parms{};
 
 	Parms.HitResult = std::move(HitResult);
 	Parms.DamageEvent = std::move(DamageEvent);
@@ -440,10 +477,8 @@ bool ABP_ShootingRangeTarget_C::IsDamageEventBroadcastCritical(const struct FHit
 
 bool ABP_ShootingRangeTarget_C::IsDamageEventBroadcastEnabled(const TArray<struct FHitResult>& HitResultArray, float DamagePerHit, float Distance, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeTarget_C", "IsDamageEventBroadcastEnabled");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsDamageEventBroadcastEnabled", FnName));
 
 	Params::BP_ShootingRangeTarget_C_IsDamageEventBroadcastEnabled Parms{};
 
@@ -460,8 +495,8 @@ bool ABP_ShootingRangeTarget_C::IsDamageEventBroadcastEnabled(const TArray<struc
 }
 
 
-// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.IsDamageEventBroadcastHitMarkerSoundAllowed
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.IsDamageEventBroadcastCritical
+// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // const struct FHitResult&                HitResult                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // const struct FSBZDamageEvent&           DamageEvent                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
@@ -470,14 +505,12 @@ bool ABP_ShootingRangeTarget_C::IsDamageEventBroadcastEnabled(const TArray<struc
 // float                                   CriticalDamageMultiplier                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-bool ABP_ShootingRangeTarget_C::IsDamageEventBroadcastHitMarkerSoundAllowed(const struct FHitResult& HitResult, const struct FSBZDamageEvent& DamageEvent, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier) const
+bool ABP_ShootingRangeTarget_C::IsDamageEventBroadcastCritical(const struct FHitResult& HitResult, const struct FSBZDamageEvent& DamageEvent, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier) const
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsDamageEventBroadcastCritical", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeTarget_C", "IsDamageEventBroadcastHitMarkerSoundAllowed");
-
-	Params::BP_ShootingRangeTarget_C_IsDamageEventBroadcastHitMarkerSoundAllowed Parms{};
+	Params::BP_ShootingRangeTarget_C_IsDamageEventBroadcastCritical Parms{};
 
 	Parms.HitResult = std::move(HitResult);
 	Parms.DamageEvent = std::move(DamageEvent);
@@ -491,65 +524,29 @@ bool ABP_ShootingRangeTarget_C::IsDamageEventBroadcastHitMarkerSoundAllowed(cons
 }
 
 
-// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.IsDamageEventBroadcastKillshot
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.IsArrayWithinDistance
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// const struct FHitResult&                HitResult                                              (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// const struct FSBZDamageEvent&           DamageEvent                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// const class USBZWeaponFireData*         FireData                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// float                                   DamageMultiplier                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   CriticalDamageMultiplier                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<struct FHitResult>&              HitResultArray                                         (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+// const double                            WithinDistance                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   IsWithin                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-bool ABP_ShootingRangeTarget_C::IsDamageEventBroadcastKillshot(const struct FHitResult& HitResult, const struct FSBZDamageEvent& DamageEvent, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier) const
+void ABP_ShootingRangeTarget_C::IsArrayWithinDistance(TArray<struct FHitResult>& HitResultArray, const double WithinDistance, bool* IsWithin) const
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IsArrayWithinDistance", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeTarget_C", "IsDamageEventBroadcastKillshot");
-
-	Params::BP_ShootingRangeTarget_C_IsDamageEventBroadcastKillshot Parms{};
-
-	Parms.HitResult = std::move(HitResult);
-	Parms.DamageEvent = std::move(DamageEvent);
-	Parms.FireData = FireData;
-	Parms.DamageMultiplier = DamageMultiplier;
-	Parms.CriticalDamageMultiplier = CriticalDamageMultiplier;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function BP_ShootingRangeTarget.BP_ShootingRangeTarget_C.IsDamageEventBroadcastMerged
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
-// Parameters:
-// const TArray<struct FHitResult>&        HitResultArray                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-// const struct FSBZDamageEvent&           DamageEvent                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// const class USBZWeaponFireData*         FireData                                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// float                                   DamageMultiplier                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   CriticalDamageMultiplier                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-bool ABP_ShootingRangeTarget_C::IsDamageEventBroadcastMerged(const TArray<struct FHitResult>& HitResultArray, const struct FSBZDamageEvent& DamageEvent, const class USBZWeaponFireData* FireData, float DamageMultiplier, float CriticalDamageMultiplier) const
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeTarget_C", "IsDamageEventBroadcastMerged");
-
-	Params::BP_ShootingRangeTarget_C_IsDamageEventBroadcastMerged Parms{};
+	Params::BP_ShootingRangeTarget_C_IsArrayWithinDistance Parms{};
 
 	Parms.HitResultArray = std::move(HitResultArray);
-	Parms.DamageEvent = std::move(DamageEvent);
-	Parms.FireData = FireData;
-	Parms.DamageMultiplier = DamageMultiplier;
-	Parms.CriticalDamageMultiplier = CriticalDamageMultiplier;
+	Parms.WithinDistance = WithinDistance;
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	return Parms.ReturnValue;
+	HitResultArray = std::move(Parms.HitResultArray);
+
+	if (IsWithin != nullptr)
+		*IsWithin = Parms.IsWithin;
 }
 
 

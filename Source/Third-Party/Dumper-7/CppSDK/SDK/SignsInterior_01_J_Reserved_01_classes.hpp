@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ASignsInterior_01_J_Reserved_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ASignsInterior_01_J_Reserved_01_C;
 
 SDK_NAMESPACE_END

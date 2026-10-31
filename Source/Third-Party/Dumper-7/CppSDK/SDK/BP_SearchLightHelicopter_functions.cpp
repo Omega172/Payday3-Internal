@@ -16,77 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_SearchLightHelicopter.BP_SearchLightHelicopter_C.CheckDistanceToGround
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USceneComponent*                  GeoTracking                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// struct FVector*                         Location                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double*                                 DistanceToGround                                       (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_SearchLightHelicopter.BP_SearchLightHelicopter_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_SearchLightHelicopter_C::CheckDistanceToGround(class USceneComponent* GeoTracking, struct FVector* Location, double* DistanceToGround)
+void ABP_SearchLightHelicopter_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SearchLightHelicopter_C", "CheckDistanceToGround");
-
-	Params::BP_SearchLightHelicopter_C_CheckDistanceToGround Parms{};
-
-	Parms.GeoTracking = GeoTracking;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Location != nullptr)
-		*Location = std::move(Parms.Location);
-
-	if (DistanceToGround != nullptr)
-		*DistanceToGround = Parms.DistanceToGround;
-}
-
-
-// Function BP_SearchLightHelicopter.BP_SearchLightHelicopter_C.ExecuteUbergraph_BP_SearchLightHelicopter
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SearchLightHelicopter_C::ExecuteUbergraph_BP_SearchLightHelicopter(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SearchLightHelicopter_C", "ExecuteUbergraph_BP_SearchLightHelicopter");
-
-	Params::BP_SearchLightHelicopter_C_ExecuteUbergraph_BP_SearchLightHelicopter Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SearchLightHelicopter.BP_SearchLightHelicopter_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_SearchLightHelicopter_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SearchLightHelicopter_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SearchLightHelicopter.BP_SearchLightHelicopter_C.SearchLight__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_SearchLightHelicopter_C::SearchLight__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SearchLightHelicopter_C", "SearchLight__FinishedFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -97,26 +33,52 @@ void ABP_SearchLightHelicopter_C::SearchLight__FinishedFunc()
 
 void ABP_SearchLightHelicopter_C::SearchLight__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SearchLightHelicopter_C", "SearchLight__UpdateFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SearchLight__UpdateFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_SearchLightHelicopter.BP_SearchLightHelicopter_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_SearchLightHelicopter.BP_SearchLightHelicopter_C.SearchLight__FinishedFunc
+// (BlueprintEvent)
 
-void ABP_SearchLightHelicopter_C::UserConstructionScript()
+void ABP_SearchLightHelicopter_C::SearchLight__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SearchLightHelicopter_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SearchLight__FinishedFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SearchLightHelicopter.BP_SearchLightHelicopter_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_SearchLightHelicopter_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SearchLightHelicopter.BP_SearchLightHelicopter_C.ExecuteUbergraph_BP_SearchLightHelicopter
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SearchLightHelicopter_C::ExecuteUbergraph_BP_SearchLightHelicopter(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_SearchLightHelicopter_C", "ExecuteUbergraph_BP_SearchLightHelicopter", FuncInfo);
+
+	Params::BP_SearchLightHelicopter_C_ExecuteUbergraph_BP_SearchLightHelicopter Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

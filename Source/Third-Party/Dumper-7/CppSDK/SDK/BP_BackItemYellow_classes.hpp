@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_BackItemYellow_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BackItemYellow_C;
 
 SDK_NAMESPACE_END

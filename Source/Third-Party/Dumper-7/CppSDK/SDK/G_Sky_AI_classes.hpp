@@ -30,8 +30,8 @@ public:
 	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_Civilian_Roof5_7_ExecuteUbergraph_G_Sky_AI_RefProperty; // 0x0400(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ActionPhaseStarted();
 	void ExecuteUbergraph_G_Sky_AI(int32 EntryPoint);
+	void ActionPhaseStarted();
 
 public:
 	static class UClass* StaticClass()
@@ -47,5 +47,6 @@ public:
 		return GetDefaultObjImpl<AG_Sky_AI_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_Sky_AI_C;
 
 SDK_NAMESPACE_END

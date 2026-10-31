@@ -28,9 +28,9 @@ public:
 	double                                        initialCPD0;                                       // 0x0378(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BUST_BPL_WallLamp_SWITCH_01(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
 	void UserConstructionScript();
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BUST_BPL_WallLamp_SWITCH_01(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -46,5 +46,6 @@ public:
 		return GetDefaultObjImpl<ABUST_BPL_WallLamp_SWITCH_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABUST_BPL_WallLamp_SWITCH_01_C;
 
 SDK_NAMESPACE_END

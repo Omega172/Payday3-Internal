@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_CardboardBox_01_B_Styrofoam_01_SmallDestruction_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CardboardBox_01_B_Styrofoam_01_SmallDestruction_C;
 
 SDK_NAMESPACE_END

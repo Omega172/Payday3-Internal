@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UDT_Taser_C>();
 	}
 };
+DUMPER7_ASSERTS_UDT_Taser_C;
 
 SDK_NAMESPACE_END

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "BP_InteractableUnBreachableSingleDoor_classes.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "BP_InteractableUnBreachableSingleDoor_classes.hpp"
 #include "Starbreeze_structs.hpp"
 
 
@@ -30,8 +30,8 @@ public:
 	struct FLinearColor                           ColorTint_0;                                       // 0x0780(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void OnStateChanged(ESBZGateState OldState_OnStateChanged, ESBZGateState NewState_OnStateChanged, bool bIsInitialStateChange_OnStateChanged);
 	void ExecuteUbergraph_BP_SHI_INT_Door_Single_Reinforced_01(int32 EntryPoint);
-	void OnStateChanged(ESBZGateState OldState, ESBZGateState NewState, bool bIsInitialStateChange);
 
 public:
 	static class UClass* StaticClass()
@@ -47,5 +47,6 @@ public:
 		return GetDefaultObjImpl<ABP_SHI_INT_Door_Single_Reinforced_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SHI_INT_Door_Single_Reinforced_01_C;
 
 SDK_NAMESPACE_END

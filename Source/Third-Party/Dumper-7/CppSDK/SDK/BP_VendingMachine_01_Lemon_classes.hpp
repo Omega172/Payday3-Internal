@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_VendingMachine_01_Lemon_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_VendingMachine_01_Lemon_C;
 
 SDK_NAMESPACE_END

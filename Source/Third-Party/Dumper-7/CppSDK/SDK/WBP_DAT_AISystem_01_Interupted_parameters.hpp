@@ -14,6 +14,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_DAT_AISystem_01_Interupted.WBP_DAT_AISystem_01_Interupted_C.setProgress
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_DAT_AISystem_01_Interupted_C_setProgress final
+{
+public:
+	int32                                         InputPin;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_DAT_AISystem_01_Interupted_C_setProgress;
+
 // Function WBP_DAT_AISystem_01_Interupted.WBP_DAT_AISystem_01_Interupted_C.ExecuteUbergraph_WBP_DAT_AISystem_01_Interupted
 // 0x0018 (0x0018 - 0x0000)
 struct WBP_DAT_AISystem_01_Interupted_C_ExecuteUbergraph_WBP_DAT_AISystem_01_Interupted final
@@ -23,14 +32,7 @@ public:
 	int32                                         K2Node_CustomEvent_InputPin;                       // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0010)()
 };
-
-// Function WBP_DAT_AISystem_01_Interupted.WBP_DAT_AISystem_01_Interupted_C.setProgress
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_DAT_AISystem_01_Interupted_C_setProgress final
-{
-public:
-	int32                                         InputPin;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_WBP_DAT_AISystem_01_Interupted_C_ExecuteUbergraph_WBP_DAT_AISystem_01_Interupted;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

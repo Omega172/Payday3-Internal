@@ -37,13 +37,13 @@ public:
 	double                                        resolution_multiplier;                             // 0x03F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_ONE_DynamicSign(int32 EntryPoint);
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void ReceiveBeginPlay();
-	void Set_Text(int32 NewState);
-	void setColor(const struct FLinearColor& primary, const struct FLinearColor& secondary, const struct FLinearColor& textTint_0, double roughnessText_0, double metallicText_0);
-	void setup();
 	void UserConstructionScript();
+	void setup();
+	void setColor(const struct FLinearColor& primary, const struct FLinearColor& secondary, const struct FLinearColor& textTint, double roughnessText, double metallicText);
+	void Set_Text(int32 NewState);
+	void ReceiveBeginPlay();
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_ONE_DynamicSign(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -59,5 +59,6 @@ public:
 		return GetDefaultObjImpl<ABP_ONE_DynamicSign_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ONE_DynamicSign_C;
 
 SDK_NAMESPACE_END

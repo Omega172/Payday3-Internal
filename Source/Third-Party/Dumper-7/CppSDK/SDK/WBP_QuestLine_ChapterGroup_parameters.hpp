@@ -16,18 +16,37 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.SetTextVisible
+// Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.CheckShouldStillBeVisible
 // 0x0005 (0x0005 - 0x0000)
-struct WBP_QuestLine_ChapterGroup_C_SetTextVisible final
+struct WBP_QuestLine_ChapterGroup_C_CheckShouldStillBeVisible final
 {
 public:
-	bool                                          IsTextVisible;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasAnyChildren_ReturnValue;               // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_QuestLine_ChapterGroup_C_SetTextVisible;
+DUMPER7_ASSERTS_WBP_QuestLine_ChapterGroup_C_CheckShouldStillBeVisible;
+
+// Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.ExecuteUbergraph_WBP_QuestLine_ChapterGroup
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_QuestLine_ChapterGroup_C_ExecuteUbergraph_WBP_QuestLine_ChapterGroup final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_QuestLine_ChapterGroup_C_ExecuteUbergraph_WBP_QuestLine_ChapterGroup;
+
+// Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_QuestLine_ChapterGroup_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_QuestLine_ChapterGroup_C_PreConstruct;
 
 // Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.SetChapterText
 // 0x0028 (0x0028 - 0x0000)
@@ -41,37 +60,18 @@ public:
 };
 DUMPER7_ASSERTS_WBP_QuestLine_ChapterGroup_C_SetChapterText;
 
-// Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_QuestLine_ChapterGroup_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_QuestLine_ChapterGroup_C_PreConstruct;
-
-// Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.ExecuteUbergraph_WBP_QuestLine_ChapterGroup
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_QuestLine_ChapterGroup_C_ExecuteUbergraph_WBP_QuestLine_ChapterGroup final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_QuestLine_ChapterGroup_C_ExecuteUbergraph_WBP_QuestLine_ChapterGroup;
-
-// Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.CheckShouldStillBeVisible
+// Function WBP_QuestLine_ChapterGroup.WBP_QuestLine_ChapterGroup_C.SetTextVisible
 // 0x0005 (0x0005 - 0x0000)
-struct WBP_QuestLine_ChapterGroup_C_CheckShouldStillBeVisible final
+struct WBP_QuestLine_ChapterGroup_C_SetTextVisible final
 {
 public:
-	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_HasAnyChildren_ReturnValue;               // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsTextVisible;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_QuestLine_ChapterGroup_C_CheckShouldStillBeVisible;
+DUMPER7_ASSERTS_WBP_QuestLine_ChapterGroup_C_SetTextVisible;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

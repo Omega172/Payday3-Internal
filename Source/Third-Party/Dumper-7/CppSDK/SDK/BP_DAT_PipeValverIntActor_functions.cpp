@@ -16,45 +16,65 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_DAT_PipeValverIntActor.BP_DAT_PipeValverIntActor_C.BndEvt__BP_DAT_PipeValverIntActor_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// Function BP_DAT_PipeValverIntActor.BP_DAT_PipeValverIntActor_C.Timeline_0__UpdateFunc
 // (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_DAT_PipeValverIntActor_C::BndEvt__BP_DAT_PipeValverIntActor_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_DAT_PipeValverIntActor_C::Timeline_0__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__UpdateFunc", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_PipeValverIntActor_C", "BndEvt__BP_DAT_PipeValverIntActor_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_DAT_PipeValverIntActor_C_BndEvt__BP_DAT_PipeValverIntActor_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+// Function BP_DAT_PipeValverIntActor.BP_DAT_PipeValverIntActor_C.Timeline_0__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_DAT_PipeValverIntActor_C::Timeline_0__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_DAT_PipeValverIntActor.BP_DAT_PipeValverIntActor_C.SetStateInt
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_DAT_PipeValverIntActor_C::SetStateInt(int32 NewParam)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetStateInt", FnName));
+
+	Params::BP_DAT_PipeValverIntActor_C_SetStateInt Parms{};
+
+	Parms.NewParam = NewParam;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_DAT_PipeValverIntActor.BP_DAT_PipeValverIntActor_C.ExecuteUbergraph_BP_DAT_PipeValverIntActor
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_DAT_PipeValverIntActor.BP_DAT_PipeValverIntActor_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   OldState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_DAT_PipeValverIntActor_C::ExecuteUbergraph_BP_DAT_PipeValverIntActor(int32 EntryPoint)
+void ABP_DAT_PipeValverIntActor_C::OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_PipeValverIntActor_C", "ExecuteUbergraph_BP_DAT_PipeValverIntActor");
+	Params::BP_DAT_PipeValverIntActor_C_OnStateChanged Parms{};
 
-	Params::BP_DAT_PipeValverIntActor_C_ExecuteUbergraph_BP_DAT_PipeValverIntActor Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.OldState_OnStateChanged = OldState_OnStateChanged;
+	Parms.NewState_OnStateChanged = NewState_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -67,10 +87,8 @@ void ABP_DAT_PipeValverIntActor_C::ExecuteUbergraph_BP_DAT_PipeValverIntActor(in
 
 class FText ABP_DAT_PipeValverIntActor_C::GetMarkerText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_PipeValverIntActor_C", "GetMarkerText");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetMarkerText", FnName));
 
 	Params::BP_DAT_PipeValverIntActor_C_GetMarkerText Parms{};
 
@@ -80,75 +98,43 @@ class FText ABP_DAT_PipeValverIntActor_C::GetMarkerText()
 }
 
 
-// Function BP_DAT_PipeValverIntActor.BP_DAT_PipeValverIntActor_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
+// Function BP_DAT_PipeValverIntActor.BP_DAT_PipeValverIntActor_C.ExecuteUbergraph_BP_DAT_PipeValverIntActor
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_DAT_PipeValverIntActor_C::OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics)
+void ABP_DAT_PipeValverIntActor_C::ExecuteUbergraph_BP_DAT_PipeValverIntActor(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_DAT_PipeValverIntActor_C", "ExecuteUbergraph_BP_DAT_PipeValverIntActor", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_PipeValverIntActor_C", "OnStateChanged");
+	Params::BP_DAT_PipeValverIntActor_C_ExecuteUbergraph_BP_DAT_PipeValverIntActor Parms{};
 
-	Params::BP_DAT_PipeValverIntActor_C_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_DAT_PipeValverIntActor.BP_DAT_PipeValverIntActor_C.SetStateInt
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_DAT_PipeValverIntActor.BP_DAT_PipeValverIntActor_C.BndEvt__BP_DAT_PipeValverIntActor_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_DAT_PipeValverIntActor_C::SetStateInt(int32 NewParam)
+void ABP_DAT_PipeValverIntActor_C::BndEvt__BP_DAT_PipeValverIntActor_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_DAT_PipeValverIntActor_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_PipeValverIntActor_C", "SetStateInt");
+	Params::BP_DAT_PipeValverIntActor_C_BndEvt__BP_DAT_PipeValverIntActor_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
-	Params::BP_DAT_PipeValverIntActor_C_SetStateInt Parms{};
-
-	Parms.NewParam = NewParam;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_DAT_PipeValverIntActor.BP_DAT_PipeValverIntActor_C.Timeline_0__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_DAT_PipeValverIntActor_C::Timeline_0__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_PipeValverIntActor_C", "Timeline_0__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_DAT_PipeValverIntActor.BP_DAT_PipeValverIntActor_C.Timeline_0__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_DAT_PipeValverIntActor_C::Timeline_0__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_PipeValverIntActor_C", "Timeline_0__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

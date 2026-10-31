@@ -33,20 +33,20 @@ public:
 	class UMaterialInstanceDynamic*               screenDMI;                                         // 0x0600(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_HackableInfoComputer_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_HackableInfoComputer_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_HackableTabletPanel_isPlaceable_SBZIntState_K2Node_ComponentBoundEvent_5_SBZIntStateChangedSignature__DelegateSignature(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void BP_GainedAccess();
-	void BP_OnHackingInfoDone_1();
-	void BP_OnHackingStarted(const class FText& ProcessText);
-	void BP_OnStateChanged(ESBZHackableActorState OldState, ESBZHackableActorState NewState);
-	void BP_UpdateProgressBar(int32 ProgressDone);
-	void ExecuteUbergraph_BP_HackableTabletPanel(int32 EntryPoint);
-	void ReceiveBeginPlay();
-	void setPlaceable(bool enabled);
-	void setVisibility(bool visible, bool ghost);
 	void UserConstructionScript();
+	void setVisibility(bool visible, bool ghost);
+	void setPlaceable(bool enabled);
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_HackableTabletPanel(int32 EntryPoint);
+	void BP_UpdateProgressBar(int32 ProgressDone_BP_UpdateProgressBar);
+	void BP_OnStateChanged(ESBZHackableActorState OldState_BP_OnStateChanged, ESBZHackableActorState NewState_BP_OnStateChanged);
+	void BP_OnHackingStarted(const class FText& ProcessText_BP_OnHackingStarted);
+	void BP_OnHackingInfoDone_1();
+	void BP_GainedAccess();
+	void BndEvt__BP_HackableTabletPanel_isPlaceable_SBZIntState_K2Node_ComponentBoundEvent_5_SBZIntStateChangedSignature__DelegateSignature(int32 OldState, int32 NewState, bool bDoCosmetics);
+	void BndEvt__BP_HackableNetworkBox_NC_InteractableComponent_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_HackableInfoComputer_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_HackableInfoComputer_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -62,5 +62,6 @@ public:
 		return GetDefaultObjImpl<ABP_HackableTabletPanel_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_HackableTabletPanel_C;
 
 SDK_NAMESPACE_END

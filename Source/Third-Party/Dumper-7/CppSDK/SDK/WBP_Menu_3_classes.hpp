@@ -73,14 +73,14 @@ public:
 	double                                        ScrollLength;                                      // 0x04A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Email_Test(int32 Code, const struct FS_EmailStructure& CodeEmail);
-	void ExecuteUbergraph_WBP_Menu_3(int32 EntryPoint);
-	void Scroll_Down_Func(double A, double* New_Scroll_Offset_0);
-	void ScrollUpFunc(double A, double* New_Scroll_Offset_0);
-	void Set_FocusUp(bool NewParam);
-	void SetBackFocus(bool NewParam);
-	void SetEmails(TArray<struct FS_EmailStructure>& Emails);
 	void SetFocusDown(bool NewParam);
+	void SetEmails(TArray<struct FS_EmailStructure>& Emails);
+	void SetBackFocus(bool NewParam);
+	void Set_FocusUp(bool NewParam);
+	void ScrollUpFunc(double A, double* New_Scroll_Offset);
+	void Scroll_Down_Func(double A, double* New_Scroll_Offset);
+	void ExecuteUbergraph_WBP_Menu_3(int32 EntryPoint);
+	void Email_Test(int32 Code, const struct FS_EmailStructure& CodeEmail);
 
 public:
 	static class UClass* StaticClass()
@@ -96,5 +96,6 @@ public:
 		return GetDefaultObjImpl<UWBP_Menu_3_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_Menu_3_C;
 
 SDK_NAMESPACE_END

@@ -16,14 +16,16 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BPL_FluorescentNeon.BPL_FluorescentNeon_C
-// 0x0020 (0x0348 - 0x0328)
+// 0x0030 (0x0358 - 0x0328)
 class BPL_FluorescentNeon::ABPL_FluorescentNeon_C final : public AActor
 {
 public:
-	class USpotLightComponent*                    SpotLight;                                         // 0x0328(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   LGT_Fluorescent_01_Cable;                          // 0x0330(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   LGT_DeskLamp_02;                                   // 0x0338(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0340(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPointLightComponent*                   PointLight_1;                                      // 0x0328(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USpotLightComponent*                    SpotLight;                                         // 0x0330(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UPointLightComponent*                   PointLight;                                        // 0x0338(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   LGT_Fluorescent_01_Cable;                          // 0x0340(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   LGT_DeskLamp_02;                                   // 0x0348(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0350(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -39,5 +41,6 @@ public:
 		return GetDefaultObjImpl<BPL_FluorescentNeon::ABPL_FluorescentNeon_C>();
 	}
 };
+DUMPER7_ASSERTS_BPL_FluorescentNeon__ABPL_FluorescentNeon_C;
 
 SDK_NAMESPACE_END

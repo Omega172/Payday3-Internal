@@ -16,6 +16,15 @@
 
 SDK_NAMESPACE_START
 
+// ScriptStruct ABP_Moon_Assault.ABP_Moon_Assault_C.AnimBlueprintGeneratedMutableData
+// 0x0001 (0x0002 - 0x0001)
+struct ABP_Moon_Assault::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
+{
+public:
+	bool                                          __BoolProperty;                                    // 0x0001(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_ABP_Moon_Assault__FAnimBlueprintGeneratedMutableData;
+
 // ScriptStruct ABP_Moon_Assault.ABP_Moon_Assault_C.AnimBlueprintGeneratedConstantData
 // 0x0617 (0x0618 - 0x0001)
 struct ABP_Moon_Assault::FAnimBlueprintGeneratedConstantData final : public FAnimBlueprintConstantData
@@ -72,13 +81,6 @@ public:
 	struct FAnimNodeExposedValueHandler_PropertyAccess AnimGraphNode_SequencePlayer;                 // 0x05A8(0x0038)()
 	struct FAnimNodeExposedValueHandler_PropertyAccess AnimGraphNode_ControlRig;                     // 0x05E0(0x0038)()
 };
-
-// ScriptStruct ABP_Moon_Assault.ABP_Moon_Assault_C.AnimBlueprintGeneratedMutableData
-// 0x0001 (0x0002 - 0x0001)
-struct ABP_Moon_Assault::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
-{
-public:
-	bool                                          __BoolProperty;                                    // 0x0001(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_ABP_Moon_Assault__FAnimBlueprintGeneratedConstantData;
 
 SDK_NAMESPACE_END

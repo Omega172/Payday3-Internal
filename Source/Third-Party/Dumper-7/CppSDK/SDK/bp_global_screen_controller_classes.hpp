@@ -28,8 +28,8 @@ public:
 	int32                                         End;                                               // 0x034C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_bp_global_screen_controller(int32 EntryPoint);
 	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
+	void ExecuteUbergraph_bp_global_screen_controller(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<Abp_global_screen_controller_C>();
 	}
 };
+DUMPER7_ASSERTS_Abp_global_screen_controller_C;
 
 SDK_NAMESPACE_END

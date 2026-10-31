@@ -16,23 +16,41 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Chus_Calendar.BP_Chus_Calendar_C.BndEvt__BP_Chus_Clipboard_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
+// Function BP_Chus_Calendar.BP_Chus_Calendar_C.SetStateInt
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class USBZBaseInteractableComponent*InteractableComponent                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Chus_Calendar_C::BndEvt__BP_Chus_Clipboard_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
+void ABP_Chus_Calendar_C::SetStateInt(int32 State)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetStateInt", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Chus_Calendar_C", "BndEvt__BP_Chus_Clipboard_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature");
+	Params::BP_Chus_Calendar_C_SetStateInt Parms{};
 
-	Params::BP_Chus_Calendar_C_BndEvt__BP_Chus_Clipboard_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
+	Parms.State = State;
 
-	Parms.InteractableComponent = InteractableComponent;
-	Parms.bInNewState = bInNewState;
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Chus_Calendar.BP_Chus_Calendar_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   OldState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Chus_Calendar_C::OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_Chus_Calendar_C_OnStateChanged Parms{};
+
+	Parms.OldState_OnStateChanged = OldState_OnStateChanged;
+	Parms.NewState_OnStateChanged = NewState_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -45,10 +63,8 @@ void ABP_Chus_Calendar_C::BndEvt__BP_Chus_Clipboard_SBZInteractable_K2Node_Compo
 
 void ABP_Chus_Calendar_C::ExecuteUbergraph_BP_Chus_Calendar(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Chus_Calendar_C", "ExecuteUbergraph_BP_Chus_Calendar");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Chus_Calendar_C", "ExecuteUbergraph_BP_Chus_Calendar", FuncInfo);
 
 	Params::BP_Chus_Calendar_C_ExecuteUbergraph_BP_Chus_Calendar Parms{};
 
@@ -58,45 +74,21 @@ void ABP_Chus_Calendar_C::ExecuteUbergraph_BP_Chus_Calendar(int32 EntryPoint)
 }
 
 
-// Function BP_Chus_Calendar.BP_Chus_Calendar_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
+// Function BP_Chus_Calendar.BP_Chus_Calendar_C.BndEvt__BP_Chus_Clipboard_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZBaseInteractableComponent*InteractableComponent                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Chus_Calendar_C::OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics)
+void ABP_Chus_Calendar_C::BndEvt__BP_Chus_Clipboard_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Chus_Clipboard_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Chus_Calendar_C", "OnStateChanged");
+	Params::BP_Chus_Calendar_C_BndEvt__BP_Chus_Clipboard_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
 
-	Params::BP_Chus_Calendar_C_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Chus_Calendar.BP_Chus_Calendar_C.SetStateInt
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   State_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Chus_Calendar_C::SetStateInt(int32 State_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Chus_Calendar_C", "SetStateInt");
-
-	Params::BP_Chus_Calendar_C_SetStateInt Parms{};
-
-	Parms.State_0 = State_0;
+	Parms.InteractableComponent = InteractableComponent;
+	Parms.bInNewState = bInNewState;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

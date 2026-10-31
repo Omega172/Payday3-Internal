@@ -14,6 +14,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function G_FirstPlayable_IntroOutroSequence.G_FirstPlayable_IntroOutroSequence_C.IntroSequenceChanged
+// 0x0001 (0x0001 - 0x0000)
+struct G_FirstPlayable_IntroOutroSequence_C_IntroSequenceChanged final
+{
+public:
+	bool                                          bIsStarted_IntroSequenceChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_FirstPlayable_IntroOutroSequence_C_IntroSequenceChanged;
+
 // Function G_FirstPlayable_IntroOutroSequence.G_FirstPlayable_IntroOutroSequence_C.ExecuteUbergraph_G_FirstPlayable_IntroOutroSequence
 // 0x0028 (0x0028 - 0x0000)
 struct G_FirstPlayable_IntroOutroSequence_C_ExecuteUbergraph_G_FirstPlayable_IntroOutroSequence final
@@ -24,14 +33,7 @@ public:
 	class ULevelSequencePlayer*                   CallFunc_GetSequencePlayer_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bIsStarted;                           // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function G_FirstPlayable_IntroOutroSequence.G_FirstPlayable_IntroOutroSequence_C.IntroSequenceChanged
-// 0x0001 (0x0001 - 0x0000)
-struct G_FirstPlayable_IntroOutroSequence_C_IntroSequenceChanged final
-{
-public:
-	bool                                          bIsStarted;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_G_FirstPlayable_IntroOutroSequence_C_ExecuteUbergraph_G_FirstPlayable_IntroOutroSequence;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

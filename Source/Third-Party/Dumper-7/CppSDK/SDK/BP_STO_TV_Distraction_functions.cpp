@@ -16,25 +16,59 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_STO_TV_Distraction.BP_STO_TV_Distraction_C.BndEvt__BP_STO_TV_Distraction_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_STO_TV_Distraction.BP_STO_TV_Distraction_C.turnOffScreen
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_STO_TV_Distraction_C::BndEvt__BP_STO_TV_Distraction_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_STO_TV_Distraction_C::turnOffScreen()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"turnOffScreen", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_TV_Distraction_C", "BndEvt__BP_STO_TV_Distraction_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_STO_TV_Distraction_C_BndEvt__BP_STO_TV_Distraction_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
 
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+// Function BP_STO_TV_Distraction.BP_STO_TV_Distraction_C.Set_Interaction_Enable
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_STO_TV_Distraction_C::Set_Interaction_Enable()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set_Interaction_Enable", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_STO_TV_Distraction.BP_STO_TV_Distraction_C.Set_Interaction_Disable
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_STO_TV_Distraction_C::Set_Interaction_Disable()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set_Interaction_Disable", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_STO_TV_Distraction.BP_STO_TV_Distraction_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   OldState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_STO_TV_Distraction_C::OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_STO_TV_Distraction_C_OnStateChanged Parms{};
+
+	Parms.OldState_OnStateChanged = OldState_OnStateChanged;
+	Parms.NewState_OnStateChanged = NewState_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -47,10 +81,8 @@ void ABP_STO_TV_Distraction_C::BndEvt__BP_STO_TV_Distraction_SBZInteractable_K2N
 
 void ABP_STO_TV_Distraction_C::ExecuteUbergraph_BP_STO_TV_Distraction(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_TV_Distraction_C", "ExecuteUbergraph_BP_STO_TV_Distraction");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_STO_TV_Distraction_C", "ExecuteUbergraph_BP_STO_TV_Distraction", FuncInfo);
 
 	Params::BP_STO_TV_Distraction_C_ExecuteUbergraph_BP_STO_TV_Distraction Parms{};
 
@@ -60,69 +92,25 @@ void ABP_STO_TV_Distraction_C::ExecuteUbergraph_BP_STO_TV_Distraction(int32 Entr
 }
 
 
-// Function BP_STO_TV_Distraction.BP_STO_TV_Distraction_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
+// Function BP_STO_TV_Distraction.BP_STO_TV_Distraction_C.BndEvt__BP_STO_TV_Distraction_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_STO_TV_Distraction_C::OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics)
+void ABP_STO_TV_Distraction_C::BndEvt__BP_STO_TV_Distraction_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_STO_TV_Distraction_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_TV_Distraction_C", "OnStateChanged");
+	Params::BP_STO_TV_Distraction_C_BndEvt__BP_STO_TV_Distraction_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
 
-	Params::BP_STO_TV_Distraction_C_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_STO_TV_Distraction.BP_STO_TV_Distraction_C.Set_Interaction_Disable
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_STO_TV_Distraction_C::Set_Interaction_Disable()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_TV_Distraction_C", "Set_Interaction_Disable");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_STO_TV_Distraction.BP_STO_TV_Distraction_C.Set_Interaction_Enable
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_STO_TV_Distraction_C::Set_Interaction_Enable()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_TV_Distraction_C", "Set_Interaction_Enable");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_STO_TV_Distraction.BP_STO_TV_Distraction_C.turnOffScreen
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_STO_TV_Distraction_C::turnOffScreen()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_TV_Distraction_C", "turnOffScreen");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -14,14 +14,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_BackItem_DegradingTech.BP_BackItem_DegradingTech_C.BP_OnDegradationChanged
-// 0x0004 (0x0004 - 0x0000)
-struct BP_BackItem_DegradingTech_C_BP_OnDegradationChanged final
-{
-public:
-	int32                                         DegredationLevel;                                  // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_BackItem_DegradingTech.BP_BackItem_DegradingTech_C.ExecuteUbergraph_BP_BackItem_DegradingTech
 // 0x0020 (0x0020 - 0x0000)
 struct BP_BackItem_DegradingTech_C_ExecuteUbergraph_BP_BackItem_DegradingTech final
@@ -34,6 +26,16 @@ public:
 	double                                        CallFunc_Multiply_IntFloat_ReturnValue;            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_BackItem_DegradingTech_C_ExecuteUbergraph_BP_BackItem_DegradingTech;
+
+// Function BP_BackItem_DegradingTech.BP_BackItem_DegradingTech_C.BP_OnDegradationChanged
+// 0x0004 (0x0004 - 0x0000)
+struct BP_BackItem_DegradingTech_C_BP_OnDegradationChanged final
+{
+public:
+	int32                                         DegredationLevel_BP_OnDegradationChanged;          // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BackItem_DegradingTech_C_BP_OnDegradationChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

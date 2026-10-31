@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_BreachingEquipmentFuelTank_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_BreachingEquipmentFuelTank_C;
 
 SDK_NAMESPACE_END

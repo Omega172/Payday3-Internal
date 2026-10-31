@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABP_LA_Clk_Ambush_CeilingVent_250_To_410_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LA_Clk_Ambush_CeilingVent_250_To_410_C;
 
 SDK_NAMESPACE_END

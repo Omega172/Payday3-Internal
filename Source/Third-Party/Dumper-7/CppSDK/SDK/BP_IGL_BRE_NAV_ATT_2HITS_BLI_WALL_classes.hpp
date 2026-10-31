@@ -36,10 +36,10 @@ public:
 	class ABP_ReplicatedBinaryActor_windows_blinder_C* Blinder;                                      // 0x06A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_BreachableWindow_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
-	void ExecuteUbergraph_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL(int32 EntryPoint);
-	class UStaticMeshComponent* GetTraversalDestructibleMeshComponent();
 	void OnStateChanged(ESBZGateState OldState, ESBZGateState NewState, bool bIsInitialStateChange);
+	class UStaticMeshComponent* GetTraversalDestructibleMeshComponent();
+	void ExecuteUbergraph_BP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL(int32 EntryPoint);
+	void BndEvt__BP_BreachableWindow_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
 
 	class USBZPropDamageComponent* GetPropDamageComponent() const;
 
@@ -57,5 +57,6 @@ public:
 		return GetDefaultObjImpl<ABP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_IGL_BRE_NAV_ATT_2HITS_BLI_WALL_C;
 
 SDK_NAMESPACE_END

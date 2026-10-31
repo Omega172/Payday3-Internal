@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "WBP_ComputerBase_classes.hpp"
 #include "Engine_structs.hpp"
+#include "WBP_ComputerBase_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -33,24 +33,24 @@ public:
 	class UWidgetSwitcher*                        WidgetSwitcher_0;                                  // 0x0340(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Active();
-	void Code();
-	void Done();
-	void Email();
-	void ExecuteUbergraph_WBP_STO_ComputerWidget(int32 EntryPoint);
-	void Failed();
-	void Interupted();
-	void Names();
-	void NotActive();
-	void Progressing();
-	void Unlocked();
-	void UpdateEmailDisplayText(const struct FSBZHackableDisplayText& DisplayText);
-	void updateHackingProgress(int32 progress);
-	void updateHackingTimerProcessName(const class FText& InText);
-	void updateInformation(const class FText& main, const class FText& secondary, const class FText& additional);
-	void updateKeypadPossibleCodes(const TArray<int32>& codes);
-	void UpdateSuccessText(const class FText& InText);
 	void UpdateUnlockDisplayText(const struct FSBZHackableDisplayText& NewDisplayText);
+	void UpdateSuccessText(const class FText& InText);
+	void updateKeypadPossibleCodes(const TArray<int32>& codes);
+	void updateInformation(const class FText& main, const class FText& secondary, const class FText& additional);
+	void updateHackingTimerProcessName(const class FText& InText);
+	void updateHackingProgress(int32 progress);
+	void UpdateEmailDisplayText(const struct FSBZHackableDisplayText& DisplayText);
+	void Unlocked();
+	void Progressing();
+	void NotActive();
+	void Names();
+	void Interupted();
+	void Failed();
+	void ExecuteUbergraph_WBP_STO_ComputerWidget(int32 EntryPoint);
+	void Email();
+	void Done();
+	void Code();
+	void Active();
 
 public:
 	static class UClass* StaticClass()
@@ -66,5 +66,6 @@ public:
 		return GetDefaultObjImpl<UWBP_STO_ComputerWidget_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_STO_ComputerWidget_C;
 
 SDK_NAMESPACE_END

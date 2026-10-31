@@ -29,8 +29,8 @@ public:
 	class UNiagaraComponent*                      Niagara1;                                          // 0x0418(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_STO_StockScreen_01_B_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 	void ExecuteUbergraph_BP_STO_MonitorArm_02_C(int32 EntryPoint);
+	void BndEvt__BP_STO_StockScreen_01_B_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 
 public:
 	static class UClass* StaticClass()
@@ -46,5 +46,6 @@ public:
 		return GetDefaultObjImpl<ABP_STO_MonitorArm_02_C_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_STO_MonitorArm_02_C_C;
 
 SDK_NAMESPACE_END

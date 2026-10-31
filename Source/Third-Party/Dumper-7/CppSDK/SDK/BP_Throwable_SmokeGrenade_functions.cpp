@@ -16,23 +16,27 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Throwable_SmokeGrenade.BP_Throwable_SmokeGrenade_C.BndEvt__BP_Throwable_SmokeGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_2_OnProjectileStopDelegate__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FHitResult&                ImpactResult                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// Function BP_Throwable_SmokeGrenade.BP_Throwable_SmokeGrenade_C.OnThrow
+// (Event, Protected, BlueprintEvent)
 
-void ABP_Throwable_SmokeGrenade_C::BndEvt__BP_Throwable_SmokeGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_2_OnProjectileStopDelegate__DelegateSignature(const struct FHitResult& ImpactResult)
+void ABP_Throwable_SmokeGrenade_C::OnThrow()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnThrow", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_SmokeGrenade_C", "BndEvt__BP_Throwable_SmokeGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_2_OnProjectileStopDelegate__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_Throwable_SmokeGrenade_C_BndEvt__BP_Throwable_SmokeGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_2_OnProjectileStopDelegate__DelegateSignature Parms{};
 
-	Parms.ImpactResult = std::move(ImpactResult);
+// Function BP_Throwable_SmokeGrenade.BP_Throwable_SmokeGrenade_C.OnArmed
+// (Event, Protected, BlueprintEvent)
 
-	UObject::ProcessEvent(Func, &Parms);
+void ABP_Throwable_SmokeGrenade_C::OnArmed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnArmed", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -43,10 +47,8 @@ void ABP_Throwable_SmokeGrenade_C::BndEvt__BP_Throwable_SmokeGrenade_ProjectileM
 
 void ABP_Throwable_SmokeGrenade_C::ExecuteUbergraph_BP_Throwable_SmokeGrenade(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_SmokeGrenade_C", "ExecuteUbergraph_BP_Throwable_SmokeGrenade");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Throwable_SmokeGrenade_C", "ExecuteUbergraph_BP_Throwable_SmokeGrenade", FuncInfo);
 
 	Params::BP_Throwable_SmokeGrenade_C_ExecuteUbergraph_BP_Throwable_SmokeGrenade Parms{};
 
@@ -56,47 +58,40 @@ void ABP_Throwable_SmokeGrenade_C::ExecuteUbergraph_BP_Throwable_SmokeGrenade(in
 }
 
 
-// Function BP_Throwable_SmokeGrenade.BP_Throwable_SmokeGrenade_C.OnArmed
-// (Event, Protected, BlueprintEvent)
+// Function BP_Throwable_SmokeGrenade.BP_Throwable_SmokeGrenade_C.BndEvt__BP_Throwable_SmokeGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_2_OnProjectileStopDelegate__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FHitResult&                ImpactResult                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void ABP_Throwable_SmokeGrenade_C::OnArmed()
+void ABP_Throwable_SmokeGrenade_C::BndEvt__BP_Throwable_SmokeGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_2_OnProjectileStopDelegate__DelegateSignature(const struct FHitResult& ImpactResult)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Throwable_SmokeGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_2_OnProjectileStopDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_SmokeGrenade_C", "OnArmed");
+	Params::BP_Throwable_SmokeGrenade_C_BndEvt__BP_Throwable_SmokeGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_2_OnProjectileStopDelegate__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.ImpactResult = std::move(ImpactResult);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_Throwable_SmokeGrenade.BP_Throwable_SmokeGrenade_C.OnThrow
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Throwable_SmokeGrenade_C::OnThrow()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_SmokeGrenade_C", "OnThrow");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Throwable_SmokeGrenade.BP_Throwable_SmokeGrenade_C.CanAffectStealth
+// Function BP_Throwable_SmokeGrenade.BP_Throwable_SmokeGrenade_C.GetSightModifier
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   Start                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   End                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-bool ABP_Throwable_SmokeGrenade_C::CanAffectStealth() const
+float ABP_Throwable_SmokeGrenade_C::GetSightModifier(const struct FVector& Start, const struct FVector& End) const
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetSightModifier", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_SmokeGrenade_C", "CanAffectStealth");
+	Params::BP_Throwable_SmokeGrenade_C_GetSightModifier Parms{};
 
-	Params::BP_Throwable_SmokeGrenade_C_CanAffectStealth Parms{};
+	Parms.Start = std::move(Start);
+	Parms.End = std::move(End);
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -111,10 +106,8 @@ bool ABP_Throwable_SmokeGrenade_C::CanAffectStealth() const
 
 bool ABP_Throwable_SmokeGrenade_C::CanAffectTaser() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_SmokeGrenade_C", "CanAffectTaser");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CanAffectTaser", FnName));
 
 	Params::BP_Throwable_SmokeGrenade_C_CanAffectTaser Parms{};
 
@@ -124,24 +117,17 @@ bool ABP_Throwable_SmokeGrenade_C::CanAffectTaser() const
 }
 
 
-// Function BP_Throwable_SmokeGrenade.BP_Throwable_SmokeGrenade_C.GetSightModifier
+// Function BP_Throwable_SmokeGrenade.BP_Throwable_SmokeGrenade_C.CanAffectStealth
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// const struct FVector&                   Start                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FVector&                   End                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-float ABP_Throwable_SmokeGrenade_C::GetSightModifier(const struct FVector& Start, const struct FVector& End) const
+bool ABP_Throwable_SmokeGrenade_C::CanAffectStealth() const
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CanAffectStealth", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_SmokeGrenade_C", "GetSightModifier");
-
-	Params::BP_Throwable_SmokeGrenade_C_GetSightModifier Parms{};
-
-	Parms.Start = std::move(Start);
-	Parms.End = std::move(End);
+	Params::BP_Throwable_SmokeGrenade_C_CanAffectStealth Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 

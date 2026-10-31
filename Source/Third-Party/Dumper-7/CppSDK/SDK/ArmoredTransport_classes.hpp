@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AArmoredTransport_C>();
 	}
 };
+DUMPER7_ASSERTS_AArmoredTransport_C;
 
 SDK_NAMESPACE_END

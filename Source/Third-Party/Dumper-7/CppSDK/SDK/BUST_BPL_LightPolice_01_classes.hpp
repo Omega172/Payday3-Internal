@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABUST_BPL_LightPolice_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABUST_BPL_LightPolice_01_C;
 
 SDK_NAMESPACE_END

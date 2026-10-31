@@ -16,30 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function SBZSmallCosmeticDestruction_fading.SBZSmallCosmeticDestruction_fading_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ASBZSmallCosmeticDestruction_fading_C::UserConstructionScript()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function SBZSmallCosmeticDestruction_fading.SBZSmallCosmeticDestruction_fading_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ASBZSmallCosmeticDestruction_fading_C::ReceiveBeginPlay()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function SBZSmallCosmeticDestruction_fading.SBZSmallCosmeticDestruction_fading_C.ExecuteUbergraph_SBZSmallCosmeticDestruction_fading
 // (Final, UbergraphFunction)
 // Parameters:
@@ -55,6 +31,30 @@ void ASBZSmallCosmeticDestruction_fading_C::ExecuteUbergraph_SBZSmallCosmeticDes
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function SBZSmallCosmeticDestruction_fading.SBZSmallCosmeticDestruction_fading_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ASBZSmallCosmeticDestruction_fading_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function SBZSmallCosmeticDestruction_fading.SBZSmallCosmeticDestruction_fading_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void ASBZSmallCosmeticDestruction_fading_C::UserConstructionScript()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

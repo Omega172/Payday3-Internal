@@ -16,93 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ShutterBase.BP_ShutterBase_C.ExecuteUbergraph_BP_ShutterBase
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ShutterBase.BP_ShutterBase_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_ShutterBase_C::ExecuteUbergraph_BP_ShutterBase(int32 EntryPoint)
+void ABP_ShutterBase_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShutterBase_C", "ExecuteUbergraph_BP_ShutterBase");
-
-	Params::BP_ShutterBase_C_ExecuteUbergraph_BP_ShutterBase Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ShutterBase.BP_ShutterBase_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ShutterBase_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShutterBase_C", "OnStateChanged");
-
-	Params::BP_ShutterBase_C_OnStateChanged Parms{};
-
-	Parms.bStateToChangeTo = bStateToChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ShutterBase.BP_ShutterBase_C.open_timeline__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_ShutterBase_C::open_timeline__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShutterBase_C", "open_timeline__FinishedFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ShutterBase.BP_ShutterBase_C.open_timeline__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_ShutterBase_C::open_timeline__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShutterBase_C", "open_timeline__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ShutterBase.BP_ShutterBase_C.setShutterCollision
-// (Private, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    open                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ShutterBase_C::setShutterCollision(bool open)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShutterBase_C", "setShutterCollision");
-
-	Params::BP_ShutterBase_C_setShutterCollision Parms{};
-
-	Parms.open = open;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -114,10 +36,8 @@ void ABP_ShutterBase_C::setShutterCollision(bool open)
 
 void ABP_ShutterBase_C::SetStateFunction(ESBZVehicleDoorState State, bool animateOpening)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShutterBase_C", "SetStateFunction");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetStateFunction", FnName));
 
 	Params::BP_ShutterBase_C_SetStateFunction Parms{};
 
@@ -128,17 +48,83 @@ void ABP_ShutterBase_C::SetStateFunction(ESBZVehicleDoorState State, bool animat
 }
 
 
-// Function BP_ShutterBase.BP_ShutterBase_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_ShutterBase.BP_ShutterBase_C.setShutterCollision
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    open                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ShutterBase_C::UserConstructionScript()
+void ABP_ShutterBase_C::setShutterCollision(bool open)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setShutterCollision", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShutterBase_C", "UserConstructionScript");
+	Params::BP_ShutterBase_C_setShutterCollision Parms{};
+
+	Parms.open = open;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ShutterBase.BP_ShutterBase_C.open_timeline__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_ShutterBase_C::open_timeline__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"open_timeline__UpdateFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ShutterBase.BP_ShutterBase_C.open_timeline__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_ShutterBase_C::open_timeline__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"open_timeline__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ShutterBase.BP_ShutterBase_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ShutterBase_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_ShutterBase_C_OnStateChanged Parms{};
+
+	Parms.bStateToChangeTo = bStateToChangeTo;
+	Parms.bDoCosmetics = bDoCosmetics;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ShutterBase.BP_ShutterBase_C.ExecuteUbergraph_BP_ShutterBase
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ShutterBase_C::ExecuteUbergraph_BP_ShutterBase(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ShutterBase_C", "ExecuteUbergraph_BP_ShutterBase", FuncInfo);
+
+	Params::BP_ShutterBase_C_ExecuteUbergraph_BP_ShutterBase Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

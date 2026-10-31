@@ -14,6 +14,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_InstantLoot_NecklaceBust.BP_InstantLoot_NecklaceBust_C.OnLooted
+// 0x0001 (0x0001 - 0x0000)
+struct BP_InstantLoot_NecklaceBust_C_OnLooted final
+{
+public:
+	bool                                          bDoCosmetics_OnLooted;                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_InstantLoot_NecklaceBust_C_OnLooted;
+
 // Function BP_InstantLoot_NecklaceBust.BP_InstantLoot_NecklaceBust_C.ExecuteUbergraph_BP_InstantLoot_NecklaceBust
 // 0x0008 (0x0008 - 0x0000)
 struct BP_InstantLoot_NecklaceBust_C_ExecuteUbergraph_BP_InstantLoot_NecklaceBust final
@@ -22,14 +31,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bDoCosmetics;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_InstantLoot_NecklaceBust.BP_InstantLoot_NecklaceBust_C.OnLooted
-// 0x0001 (0x0001 - 0x0000)
-struct BP_InstantLoot_NecklaceBust_C_OnLooted final
-{
-public:
-	bool                                          bDoCosmetics;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_InstantLoot_NecklaceBust_C_ExecuteUbergraph_BP_InstantLoot_NecklaceBust;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

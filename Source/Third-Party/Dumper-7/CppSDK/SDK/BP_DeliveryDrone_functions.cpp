@@ -16,20 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_DeliveryDrone.BP_DeliveryDrone_C.BP_OnBagDropped
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
-
-void ABP_DeliveryDrone_C::BP_OnBagDropped()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DeliveryDrone_C", "BP_OnBagDropped");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_DeliveryDrone.BP_DeliveryDrone_C.ExecuteUbergraph_BP_DeliveryDrone
 // (Final, UbergraphFunction)
 // Parameters:
@@ -37,16 +23,26 @@ void ABP_DeliveryDrone_C::BP_OnBagDropped()
 
 void ABP_DeliveryDrone_C::ExecuteUbergraph_BP_DeliveryDrone(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DeliveryDrone_C", "ExecuteUbergraph_BP_DeliveryDrone");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_DeliveryDrone_C", "ExecuteUbergraph_BP_DeliveryDrone", FuncInfo);
 
 	Params::BP_DeliveryDrone_C_ExecuteUbergraph_BP_DeliveryDrone Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_DeliveryDrone.BP_DeliveryDrone_C.BP_OnBagDropped
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+
+void ABP_DeliveryDrone_C::BP_OnBagDropped()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnBagDropped", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

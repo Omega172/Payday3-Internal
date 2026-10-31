@@ -14,6 +14,24 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function C_Dema_IntroOutro.C_Dema_IntroOutro_C.SpawnSelected
+// 0x0004 (0x0004 - 0x0000)
+struct C_Dema_IntroOutro_C_SpawnSelected final
+{
+public:
+	int32                                         SpawnInt;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_C_Dema_IntroOutro_C_SpawnSelected;
+
+// Function C_Dema_IntroOutro.C_Dema_IntroOutro_C.IntroSequenceChanged
+// 0x0001 (0x0001 - 0x0000)
+struct C_Dema_IntroOutro_C_IntroSequenceChanged final
+{
+public:
+	bool                                          bIsStarted_IntroSequenceChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_C_Dema_IntroOutro_C_IntroSequenceChanged;
+
 // Function C_Dema_IntroOutro.C_Dema_IntroOutro_C.ExecuteUbergraph_C_Dema_IntroOutro
 // 0x0030 (0x0030 - 0x0000)
 struct C_Dema_IntroOutro_C_ExecuteUbergraph_C_Dema_IntroOutro final
@@ -27,22 +45,7 @@ public:
 	class ULevelSequencePlayer*                   CallFunc_GetSequencePlayer_ReturnValue;            // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function C_Dema_IntroOutro.C_Dema_IntroOutro_C.IntroSequenceChanged
-// 0x0001 (0x0001 - 0x0000)
-struct C_Dema_IntroOutro_C_IntroSequenceChanged final
-{
-public:
-	bool                                          bIsStarted;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function C_Dema_IntroOutro.C_Dema_IntroOutro_C.SpawnSelected
-// 0x0004 (0x0004 - 0x0000)
-struct C_Dema_IntroOutro_C_SpawnSelected final
-{
-public:
-	int32                                         SpawnInt;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_C_Dema_IntroOutro_C_ExecuteUbergraph_C_Dema_IntroOutro;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

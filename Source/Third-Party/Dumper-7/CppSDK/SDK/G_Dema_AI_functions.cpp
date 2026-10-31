@@ -16,98 +16,286 @@
 
 SDK_NAMESPACE_START
 
-// Function G_Dema_AI.G_Dema_AI_C.ActivateSWATHelicopter
+// Function G_Dema_AI.G_Dema_AI_C.ToystoreEntered
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Dema_AI_C::ActivateSWATHelicopter()
+void AG_Dema_AI_C::ToystoreEntered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Dema_AI_C", "ActivateSWATHelicopter");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ToystoreEntered", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Dema_AI.G_Dema_AI_C.ActivateToystoreSpawns
+// Function G_Dema_AI.G_Dema_AI_C.SpawnLeadGuard
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Dema_AI_C::ActivateToystoreSpawns()
+void AG_Dema_AI_C::SpawnLeadGuard()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Dema_AI_C", "ActivateToystoreSpawns");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnLeadGuard", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Dema_AI.G_Dema_AI_C.ActiveEndlessAssault
+// Function G_Dema_AI.G_Dema_AI_C.SetToystoreReachable
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Dema_AI_C::ActiveEndlessAssault()
+void AG_Dema_AI_C::SetToystoreReachable()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Dema_AI_C", "ActiveEndlessAssault");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetToystoreReachable", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Dema_AI.G_Dema_AI_C.BlackScreenStarted
-// (Event, Public, BlueprintEvent)
+// Function G_Dema_AI.G_Dema_AI_C.SetGunstoreReachable
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Dema_AI_C::BlackScreenStarted()
+void AG_Dema_AI_C::SetGunstoreReachable()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Dema_AI_C", "BlackScreenStarted");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetGunstoreReachable", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Dema_AI.G_Dema_AI_C.BndEvt__G_Dema_AI_SBZDestroyGroup_CameraCorridorFork_K2Node_ActorBoundEvent_5_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
-// (HasOutParams, BlueprintEvent)
+// Function G_Dema_AI.G_Dema_AI_C.SetAllStoresReachable
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Dema_AI_C::SetAllStoresReachable()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetAllStoresReachable", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Dema_AI.G_Dema_AI_C.RandomizeSecurityRoom
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Dema_AI_C::RandomizeSecurityRoom()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RandomizeSecurityRoom", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Dema_AI.G_Dema_AI_C.MainLootLocationPicked
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const TArray<class AActor*>&            KeptActors                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// const TArray<class AActor*>&            DestroyedActors                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// int32                                   LootLocationInt                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Dema_AI_C::BndEvt__G_Dema_AI_SBZDestroyGroup_CameraCorridorFork_K2Node_ActorBoundEvent_5_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors)
+void AG_Dema_AI_C::MainLootLocationPicked(int32 LootLocationInt)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"MainLootLocationPicked", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Dema_AI_C", "BndEvt__G_Dema_AI_SBZDestroyGroup_CameraCorridorFork_K2Node_ActorBoundEvent_5_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature");
+	Params::G_Dema_AI_C_MainLootLocationPicked Parms{};
 
-	Params::G_Dema_AI_C_BndEvt__G_Dema_AI_SBZDestroyGroup_CameraCorridorFork_K2Node_ActorBoundEvent_5_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.KeptActors = std::move(KeptActors);
-	Parms.DestroyedActors = std::move(DestroyedActors);
+	Parms.LootLocationInt = LootLocationInt;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Dema_AI.G_Dema_AI_C.BndEvt__G_Dema_AI_SBZDestroyGroup_CameraLounge2_K2Node_ActorBoundEvent_6_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
+// Function G_Dema_AI.G_Dema_AI_C.InitComplete
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Dema_AI_C::InitComplete()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitComplete", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Dema_AI.G_Dema_AI_C.HeistStateChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EPD3HeistState                          OldHeistState_HeistStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPD3HeistState                          CurrentHeistState_HeistStateChanged                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Dema_AI_C::HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HeistStateChanged", FnName));
+
+	Params::G_Dema_AI_C_HeistStateChanged Parms{};
+
+	Parms.OldHeistState_HeistStateChanged = OldHeistState_HeistStateChanged;
+	Parms.CurrentHeistState_HeistStateChanged = CurrentHeistState_HeistStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Dema_AI.G_Dema_AI_C.ExecuteUbergraph_G_Dema_AI
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Dema_AI_C::ExecuteUbergraph_G_Dema_AI(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_Dema_AI_C", "ExecuteUbergraph_G_Dema_AI", FuncInfo);
+
+	Params::G_Dema_AI_C_ExecuteUbergraph_G_Dema_AI Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Dema_AI.G_Dema_AI_C.EscapeSelected
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   EscapeIndex                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Dema_AI_C::EscapeSelected(int32 EscapeIndex)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EscapeSelected", FnName));
+
+	Params::G_Dema_AI_C_EscapeSelected Parms{};
+
+	Parms.EscapeIndex = EscapeIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Dema_AI.G_Dema_AI_C.EnteredArmory
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Entered                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Dema_AI_C::EnteredArmory(bool Entered)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EnteredArmory", FnName));
+
+	Params::G_Dema_AI_C_EnteredArmory Parms{};
+
+	Parms.Entered = Entered;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Dema_AI.G_Dema_AI_C.DryStorageOpened
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Dema_AI_C::DryStorageOpened()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DryStorageOpened", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Dema_AI.G_Dema_AI_C.BndEvt__G_ScriptTemplate_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_1_SBZSplineOnEndReached__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Dema_AI_C::BndEvt__G_ScriptTemplate_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_1_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ScriptTemplate_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_1_SBZSplineOnEndReached__DelegateSignature", FnName));
+
+	Params::G_Dema_AI_C_BndEvt__G_ScriptTemplate_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_1_SBZSplineOnEndReached__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Dema_AI.G_Dema_AI_C.BndEvt__G_ScriptTemplate_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_0_SBZSplineOnEndReached__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Dema_AI_C::BndEvt__G_ScriptTemplate_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_0_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ScriptTemplate_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_0_SBZSplineOnEndReached__DelegateSignature", FnName));
+
+	Params::G_Dema_AI_C_BndEvt__G_ScriptTemplate_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_0_SBZSplineOnEndReached__DelegateSignature Parms{};
+
+	Parms.Spline = Spline;
+	Parms.Actor = Actor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Dema_AI.G_Dema_AI_C.BndEvt__G_Dema_PP4_SBZPawnSpawnPredefined_LeadGuard_Toystore_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Dema_AI_C::BndEvt__G_Dema_PP4_SBZPawnSpawnPredefined_LeadGuard_Toystore_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Dema_PP4_SBZPawnSpawnPredefined_LeadGuard_Toystore_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Dema_AI_C_BndEvt__G_Dema_PP4_SBZPawnSpawnPredefined_LeadGuard_Toystore_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Dema_AI.G_Dema_AI_C.BndEvt__G_Dema_PP4_SBZPawnSpawnPredefined_LeadGuard_Gunstore_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Dema_AI_C::BndEvt__G_Dema_PP4_SBZPawnSpawnPredefined_LeadGuard_Gunstore_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Dema_PP4_SBZPawnSpawnPredefined_LeadGuard_Gunstore_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Dema_AI_C_BndEvt__G_Dema_PP4_SBZPawnSpawnPredefined_LeadGuard_Gunstore_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Dema_AI.G_Dema_AI_C.BndEvt__G_Dema_AI_SBZDestroyGroup_CameraToystore2_K2Node_ActorBoundEvent_2_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
 // const TArray<class AActor*>&            KeptActors                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // const TArray<class AActor*>&            DestroyedActors                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void AG_Dema_AI_C::BndEvt__G_Dema_AI_SBZDestroyGroup_CameraLounge2_K2Node_ActorBoundEvent_6_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors)
+void AG_Dema_AI_C::BndEvt__G_Dema_AI_SBZDestroyGroup_CameraToystore2_K2Node_ActorBoundEvent_2_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Dema_AI_SBZDestroyGroup_CameraToystore2_K2Node_ActorBoundEvent_2_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Dema_AI_C", "BndEvt__G_Dema_AI_SBZDestroyGroup_CameraLounge2_K2Node_ActorBoundEvent_6_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature");
-
-	Params::G_Dema_AI_C_BndEvt__G_Dema_AI_SBZDestroyGroup_CameraLounge2_K2Node_ActorBoundEvent_6_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature Parms{};
+	Params::G_Dema_AI_C_BndEvt__G_Dema_AI_SBZDestroyGroup_CameraToystore2_K2Node_ActorBoundEvent_2_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature Parms{};
 
 	Parms.KeptActors = std::move(KeptActors);
 	Parms.DestroyedActors = std::move(DestroyedActors);
@@ -124,10 +312,8 @@ void AG_Dema_AI_C::BndEvt__G_Dema_AI_SBZDestroyGroup_CameraLounge2_K2Node_ActorB
 
 void AG_Dema_AI_C::BndEvt__G_Dema_AI_SBZDestroyGroup_CameraToystore1_K2Node_ActorBoundEvent_4_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Dema_AI_C", "BndEvt__G_Dema_AI_SBZDestroyGroup_CameraToystore1_K2Node_ActorBoundEvent_4_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Dema_AI_SBZDestroyGroup_CameraToystore1_K2Node_ActorBoundEvent_4_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature", FnName));
 
 	Params::G_Dema_AI_C_BndEvt__G_Dema_AI_SBZDestroyGroup_CameraToystore1_K2Node_ActorBoundEvent_4_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature Parms{};
 
@@ -138,20 +324,18 @@ void AG_Dema_AI_C::BndEvt__G_Dema_AI_SBZDestroyGroup_CameraToystore1_K2Node_Acto
 }
 
 
-// Function G_Dema_AI.G_Dema_AI_C.BndEvt__G_Dema_AI_SBZDestroyGroup_CameraToystore2_K2Node_ActorBoundEvent_2_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
+// Function G_Dema_AI.G_Dema_AI_C.BndEvt__G_Dema_AI_SBZDestroyGroup_CameraLounge2_K2Node_ActorBoundEvent_6_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
 // const TArray<class AActor*>&            KeptActors                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 // const TArray<class AActor*>&            DestroyedActors                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void AG_Dema_AI_C::BndEvt__G_Dema_AI_SBZDestroyGroup_CameraToystore2_K2Node_ActorBoundEvent_2_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors)
+void AG_Dema_AI_C::BndEvt__G_Dema_AI_SBZDestroyGroup_CameraLounge2_K2Node_ActorBoundEvent_6_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Dema_AI_SBZDestroyGroup_CameraLounge2_K2Node_ActorBoundEvent_6_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Dema_AI_C", "BndEvt__G_Dema_AI_SBZDestroyGroup_CameraToystore2_K2Node_ActorBoundEvent_2_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature");
-
-	Params::G_Dema_AI_C_BndEvt__G_Dema_AI_SBZDestroyGroup_CameraToystore2_K2Node_ActorBoundEvent_2_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature Parms{};
+	Params::G_Dema_AI_C_BndEvt__G_Dema_AI_SBZDestroyGroup_CameraLounge2_K2Node_ActorBoundEvent_6_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature Parms{};
 
 	Parms.KeptActors = std::move(KeptActors);
 	Parms.DestroyedActors = std::move(DestroyedActors);
@@ -160,303 +344,69 @@ void AG_Dema_AI_C::BndEvt__G_Dema_AI_SBZDestroyGroup_CameraToystore2_K2Node_Acto
 }
 
 
-// Function G_Dema_AI.G_Dema_AI_C.BndEvt__G_Dema_PP4_SBZPawnSpawnPredefined_LeadGuard_Gunstore_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
+// Function G_Dema_AI.G_Dema_AI_C.BndEvt__G_Dema_AI_SBZDestroyGroup_CameraCorridorFork_K2Node_ActorBoundEvent_5_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
+// (HasOutParams, BlueprintEvent)
 // Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const TArray<class AActor*>&            KeptActors                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const TArray<class AActor*>&            DestroyedActors                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void AG_Dema_AI_C::BndEvt__G_Dema_PP4_SBZPawnSpawnPredefined_LeadGuard_Gunstore_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+void AG_Dema_AI_C::BndEvt__G_Dema_AI_SBZDestroyGroup_CameraCorridorFork_K2Node_ActorBoundEvent_5_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Dema_AI_SBZDestroyGroup_CameraCorridorFork_K2Node_ActorBoundEvent_5_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Dema_AI_C", "BndEvt__G_Dema_PP4_SBZPawnSpawnPredefined_LeadGuard_Gunstore_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature");
+	Params::G_Dema_AI_C_BndEvt__G_Dema_AI_SBZDestroyGroup_CameraCorridorFork_K2Node_ActorBoundEvent_5_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature Parms{};
 
-	Params::G_Dema_AI_C_BndEvt__G_Dema_PP4_SBZPawnSpawnPredefined_LeadGuard_Gunstore_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
+	Parms.KeptActors = std::move(KeptActors);
+	Parms.DestroyedActors = std::move(DestroyedActors);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Dema_AI.G_Dema_AI_C.BndEvt__G_Dema_PP4_SBZPawnSpawnPredefined_LeadGuard_Toystore_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Dema_AI_C::BndEvt__G_Dema_PP4_SBZPawnSpawnPredefined_LeadGuard_Toystore_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Dema_AI_C", "BndEvt__G_Dema_PP4_SBZPawnSpawnPredefined_LeadGuard_Toystore_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Dema_AI_C_BndEvt__G_Dema_PP4_SBZPawnSpawnPredefined_LeadGuard_Toystore_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Dema_AI.G_Dema_AI_C.BndEvt__G_ScriptTemplate_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_0_SBZSplineOnEndReached__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Dema_AI_C::BndEvt__G_ScriptTemplate_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_0_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Dema_AI_C", "BndEvt__G_ScriptTemplate_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_0_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_Dema_AI_C_BndEvt__G_ScriptTemplate_AI_SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_0_SBZSplineOnEndReached__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Dema_AI.G_Dema_AI_C.BndEvt__G_ScriptTemplate_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_1_SBZSplineOnEndReached__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZSpline*                       Spline                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Dema_AI_C::BndEvt__G_ScriptTemplate_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_1_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Dema_AI_C", "BndEvt__G_ScriptTemplate_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_1_SBZSplineOnEndReached__DelegateSignature");
-
-	Params::G_Dema_AI_C_BndEvt__G_ScriptTemplate_AI_SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_1_SBZSplineOnEndReached__DelegateSignature Parms{};
-
-	Parms.Spline = Spline;
-	Parms.Actor = Actor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Dema_AI.G_Dema_AI_C.DryStorageOpened
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Dema_AI_C::DryStorageOpened()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Dema_AI_C", "DryStorageOpened");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Dema_AI.G_Dema_AI_C.EnteredArmory
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Entered                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Dema_AI_C::EnteredArmory(bool Entered)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Dema_AI_C", "EnteredArmory");
-
-	Params::G_Dema_AI_C_EnteredArmory Parms{};
-
-	Parms.Entered = Entered;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Dema_AI.G_Dema_AI_C.EscapeSelected
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   EscapeIndex                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Dema_AI_C::EscapeSelected(int32 EscapeIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Dema_AI_C", "EscapeSelected");
-
-	Params::G_Dema_AI_C_EscapeSelected Parms{};
-
-	Parms.EscapeIndex = EscapeIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Dema_AI.G_Dema_AI_C.ExecuteUbergraph_G_Dema_AI
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Dema_AI_C::ExecuteUbergraph_G_Dema_AI(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Dema_AI_C", "ExecuteUbergraph_G_Dema_AI");
-
-	Params::G_Dema_AI_C_ExecuteUbergraph_G_Dema_AI Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Dema_AI.G_Dema_AI_C.HeistStateChanged
+// Function G_Dema_AI.G_Dema_AI_C.BlackScreenStarted
 // (Event, Public, BlueprintEvent)
-// Parameters:
-// EPD3HeistState                          OldHeistState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPD3HeistState                          CurrentHeistState                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Dema_AI_C::HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState)
+void AG_Dema_AI_C::BlackScreenStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Dema_AI_C", "HeistStateChanged");
-
-	Params::G_Dema_AI_C_HeistStateChanged Parms{};
-
-	Parms.OldHeistState = OldHeistState;
-	Parms.CurrentHeistState = CurrentHeistState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Dema_AI.G_Dema_AI_C.InitComplete
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Dema_AI_C::InitComplete()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Dema_AI_C", "InitComplete");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BlackScreenStarted", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Dema_AI.G_Dema_AI_C.MainLootLocationPicked
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   LootLocationInt                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Dema_AI_C::MainLootLocationPicked(int32 LootLocationInt)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Dema_AI_C", "MainLootLocationPicked");
-
-	Params::G_Dema_AI_C_MainLootLocationPicked Parms{};
-
-	Parms.LootLocationInt = LootLocationInt;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Dema_AI.G_Dema_AI_C.RandomizeSecurityRoom
+// Function G_Dema_AI.G_Dema_AI_C.ActiveEndlessAssault
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Dema_AI_C::RandomizeSecurityRoom()
+void AG_Dema_AI_C::ActiveEndlessAssault()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Dema_AI_C", "RandomizeSecurityRoom");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActiveEndlessAssault", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Dema_AI.G_Dema_AI_C.SetAllStoresReachable
+// Function G_Dema_AI.G_Dema_AI_C.ActivateToystoreSpawns
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Dema_AI_C::SetAllStoresReachable()
+void AG_Dema_AI_C::ActivateToystoreSpawns()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Dema_AI_C", "SetAllStoresReachable");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateToystoreSpawns", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Dema_AI.G_Dema_AI_C.SetGunstoreReachable
+// Function G_Dema_AI.G_Dema_AI_C.ActivateSWATHelicopter
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Dema_AI_C::SetGunstoreReachable()
+void AG_Dema_AI_C::ActivateSWATHelicopter()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Dema_AI_C", "SetGunstoreReachable");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Dema_AI.G_Dema_AI_C.SetToystoreReachable
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Dema_AI_C::SetToystoreReachable()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Dema_AI_C", "SetToystoreReachable");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Dema_AI.G_Dema_AI_C.SpawnLeadGuard
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Dema_AI_C::SpawnLeadGuard()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Dema_AI_C", "SpawnLeadGuard");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Dema_AI.G_Dema_AI_C.ToystoreEntered
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Dema_AI_C::ToystoreEntered()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Dema_AI_C", "ToystoreEntered");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateSWATHelicopter", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

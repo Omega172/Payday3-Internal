@@ -16,63 +16,49 @@
 
 SDK_NAMESPACE_START
 
-// Function E_Bust_INT_Methlab_Arch.E_Bust_INT_Methlab_Arch_C.BndEvt__E_Bust_INT_Methlab_Arch_BP_BUS_Skylight_10_K2Node_ActorBoundEvent_0_onGlassDestroyed__DelegateSignature
-// (BlueprintEvent)
+// Function E_Bust_INT_Methlab_Arch.E_Bust_INT_Methlab_Arch_C.ExecuteUbergraph_E_Bust_INT_Methlab_Arch
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AE_Bust_INT_Methlab_Arch_C::BndEvt__E_Bust_INT_Methlab_Arch_BP_BUS_Skylight_10_K2Node_ActorBoundEvent_0_onGlassDestroyed__DelegateSignature()
+void AE_Bust_INT_Methlab_Arch_C::ExecuteUbergraph_E_Bust_INT_Methlab_Arch(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "E_Bust_INT_Methlab_Arch_C", "ExecuteUbergraph_E_Bust_INT_Methlab_Arch", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Bust_INT_Methlab_Arch_C", "BndEvt__E_Bust_INT_Methlab_Arch_BP_BUS_Skylight_10_K2Node_ActorBoundEvent_0_onGlassDestroyed__DelegateSignature");
+	Params::E_Bust_INT_Methlab_Arch_C_ExecuteUbergraph_E_Bust_INT_Methlab_Arch Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function E_Bust_INT_Methlab_Arch.E_Bust_INT_Methlab_Arch_C.CrackHouseEntered
+// (BlueprintCallable, BlueprintEvent)
+
+void AE_Bust_INT_Methlab_Arch_C::CrackHouseEntered()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CrackHouseEntered", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function E_Bust_INT_Methlab_Arch.E_Bust_INT_Methlab_Arch_C.BndEvt__E_Bust_INT_Methlab_Arch_BP_BUS_Skylight_8_K2Node_ActorBoundEvent_8_onGlassDestroyed__DelegateSignature
-// (BlueprintEvent)
-
-void AE_Bust_INT_Methlab_Arch_C::BndEvt__E_Bust_INT_Methlab_Arch_BP_BUS_Skylight_8_K2Node_ActorBoundEvent_8_onGlassDestroyed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Bust_INT_Methlab_Arch_C", "BndEvt__E_Bust_INT_Methlab_Arch_BP_BUS_Skylight_8_K2Node_ActorBoundEvent_8_onGlassDestroyed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function E_Bust_INT_Methlab_Arch.E_Bust_INT_Methlab_Arch_C.BndEvt__E_Bust_INT_Methlab_Arch_BP_BUS_Skylight_9_K2Node_ActorBoundEvent_1_onGlassDestroyed__DelegateSignature
-// (BlueprintEvent)
-
-void AE_Bust_INT_Methlab_Arch_C::BndEvt__E_Bust_INT_Methlab_Arch_BP_BUS_Skylight_9_K2Node_ActorBoundEvent_1_onGlassDestroyed__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Bust_INT_Methlab_Arch_C", "BndEvt__E_Bust_INT_Methlab_Arch_BP_BUS_Skylight_9_K2Node_ActorBoundEvent_1_onGlassDestroyed__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function E_Bust_INT_Methlab_Arch.E_Bust_INT_Methlab_Arch_C.BndEvt__E_Bust_INT_Methlab_Arch_SBZFilteredTriggerVolume_BreakGlass7_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature
+// Function E_Bust_INT_Methlab_Arch.E_Bust_INT_Methlab_Arch_C.BndEvt__E_Bust_INT_Methlab_Arch_SBZFilteredTriggerVolume_BreakGlass9_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AE_Bust_INT_Methlab_Arch_C::BndEvt__E_Bust_INT_Methlab_Arch_SBZFilteredTriggerVolume_BreakGlass7_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+void AE_Bust_INT_Methlab_Arch_C::BndEvt__E_Bust_INT_Methlab_Arch_SBZFilteredTriggerVolume_BreakGlass9_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__E_Bust_INT_Methlab_Arch_SBZFilteredTriggerVolume_BreakGlass9_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Bust_INT_Methlab_Arch_C", "BndEvt__E_Bust_INT_Methlab_Arch_SBZFilteredTriggerVolume_BreakGlass7_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature");
-
-	Params::E_Bust_INT_Methlab_Arch_C_BndEvt__E_Bust_INT_Methlab_Arch_SBZFilteredTriggerVolume_BreakGlass7_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
+	Params::E_Bust_INT_Methlab_Arch_C_BndEvt__E_Bust_INT_Methlab_Arch_SBZFilteredTriggerVolume_BreakGlass9_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
 
 	Parms.Identifier = Identifier;
 	Parms.Actor = Actor;
@@ -91,10 +77,8 @@ void AE_Bust_INT_Methlab_Arch_C::BndEvt__E_Bust_INT_Methlab_Arch_SBZFilteredTrig
 
 void AE_Bust_INT_Methlab_Arch_C::BndEvt__E_Bust_INT_Methlab_Arch_SBZFilteredTriggerVolume_BreakGlass8_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Bust_INT_Methlab_Arch_C", "BndEvt__E_Bust_INT_Methlab_Arch_SBZFilteredTriggerVolume_BreakGlass8_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__E_Bust_INT_Methlab_Arch_SBZFilteredTriggerVolume_BreakGlass8_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
 
 	Params::E_Bust_INT_Methlab_Arch_C_BndEvt__E_Bust_INT_Methlab_Arch_SBZFilteredTriggerVolume_BreakGlass8_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
 
@@ -106,21 +90,19 @@ void AE_Bust_INT_Methlab_Arch_C::BndEvt__E_Bust_INT_Methlab_Arch_SBZFilteredTrig
 }
 
 
-// Function E_Bust_INT_Methlab_Arch.E_Bust_INT_Methlab_Arch_C.BndEvt__E_Bust_INT_Methlab_Arch_SBZFilteredTriggerVolume_BreakGlass9_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature
+// Function E_Bust_INT_Methlab_Arch.E_Bust_INT_Methlab_Arch_C.BndEvt__E_Bust_INT_Methlab_Arch_SBZFilteredTriggerVolume_BreakGlass7_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AE_Bust_INT_Methlab_Arch_C::BndEvt__E_Bust_INT_Methlab_Arch_SBZFilteredTriggerVolume_BreakGlass9_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+void AE_Bust_INT_Methlab_Arch_C::BndEvt__E_Bust_INT_Methlab_Arch_SBZFilteredTriggerVolume_BreakGlass7_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__E_Bust_INT_Methlab_Arch_SBZFilteredTriggerVolume_BreakGlass7_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Bust_INT_Methlab_Arch_C", "BndEvt__E_Bust_INT_Methlab_Arch_SBZFilteredTriggerVolume_BreakGlass9_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature");
-
-	Params::E_Bust_INT_Methlab_Arch_C_BndEvt__E_Bust_INT_Methlab_Arch_SBZFilteredTriggerVolume_BreakGlass9_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
+	Params::E_Bust_INT_Methlab_Arch_C_BndEvt__E_Bust_INT_Methlab_Arch_SBZFilteredTriggerVolume_BreakGlass7_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
 
 	Parms.Identifier = Identifier;
 	Parms.Actor = Actor;
@@ -130,37 +112,39 @@ void AE_Bust_INT_Methlab_Arch_C::BndEvt__E_Bust_INT_Methlab_Arch_SBZFilteredTrig
 }
 
 
-// Function E_Bust_INT_Methlab_Arch.E_Bust_INT_Methlab_Arch_C.CrackHouseEntered
-// (BlueprintCallable, BlueprintEvent)
+// Function E_Bust_INT_Methlab_Arch.E_Bust_INT_Methlab_Arch_C.BndEvt__E_Bust_INT_Methlab_Arch_BP_BUS_Skylight_9_K2Node_ActorBoundEvent_1_onGlassDestroyed__DelegateSignature
+// (BlueprintEvent)
 
-void AE_Bust_INT_Methlab_Arch_C::CrackHouseEntered()
+void AE_Bust_INT_Methlab_Arch_C::BndEvt__E_Bust_INT_Methlab_Arch_BP_BUS_Skylight_9_K2Node_ActorBoundEvent_1_onGlassDestroyed__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Bust_INT_Methlab_Arch_C", "CrackHouseEntered");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__E_Bust_INT_Methlab_Arch_BP_BUS_Skylight_9_K2Node_ActorBoundEvent_1_onGlassDestroyed__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function E_Bust_INT_Methlab_Arch.E_Bust_INT_Methlab_Arch_C.ExecuteUbergraph_E_Bust_INT_Methlab_Arch
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function E_Bust_INT_Methlab_Arch.E_Bust_INT_Methlab_Arch_C.BndEvt__E_Bust_INT_Methlab_Arch_BP_BUS_Skylight_8_K2Node_ActorBoundEvent_8_onGlassDestroyed__DelegateSignature
+// (BlueprintEvent)
 
-void AE_Bust_INT_Methlab_Arch_C::ExecuteUbergraph_E_Bust_INT_Methlab_Arch(int32 EntryPoint)
+void AE_Bust_INT_Methlab_Arch_C::BndEvt__E_Bust_INT_Methlab_Arch_BP_BUS_Skylight_8_K2Node_ActorBoundEvent_8_onGlassDestroyed__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__E_Bust_INT_Methlab_Arch_BP_BUS_Skylight_8_K2Node_ActorBoundEvent_8_onGlassDestroyed__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Bust_INT_Methlab_Arch_C", "ExecuteUbergraph_E_Bust_INT_Methlab_Arch");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::E_Bust_INT_Methlab_Arch_C_ExecuteUbergraph_E_Bust_INT_Methlab_Arch Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+// Function E_Bust_INT_Methlab_Arch.E_Bust_INT_Methlab_Arch_C.BndEvt__E_Bust_INT_Methlab_Arch_BP_BUS_Skylight_10_K2Node_ActorBoundEvent_0_onGlassDestroyed__DelegateSignature
+// (BlueprintEvent)
 
-	UObject::ProcessEvent(Func, &Parms);
+void AE_Bust_INT_Methlab_Arch_C::BndEvt__E_Bust_INT_Methlab_Arch_BP_BUS_Skylight_10_K2Node_ActorBoundEvent_0_onGlassDestroyed__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__E_Bust_INT_Methlab_Arch_BP_BUS_Skylight_10_K2Node_ActorBoundEvent_0_onGlassDestroyed__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

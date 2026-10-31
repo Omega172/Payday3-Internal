@@ -28,8 +28,8 @@ public:
 	class UImage*                                 PasswordField;                                     // 0x0310(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Construct();
 	void ExecuteUbergraph_WBP_DAT_AISystem_01_TrueActive(int32 EntryPoint);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<UWBP_DAT_AISystem_01_TrueActive_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_DAT_AISystem_01_TrueActive_C;
 
 SDK_NAMESPACE_END

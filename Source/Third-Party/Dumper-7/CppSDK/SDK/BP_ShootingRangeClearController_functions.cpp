@@ -16,43 +16,41 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ShootingRangeClearController.BP_ShootingRangeClearController_C.BndEvt__BP_ShootingRangeDistanceController_butt01_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature
+// Function BP_ShootingRangeClearController.BP_ShootingRangeClearController_C.Timeline__UpdateFunc
 // (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ShootingRangeClearController_C::BndEvt__BP_ShootingRangeDistanceController_butt01_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_ShootingRangeClearController_C::Timeline__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline__UpdateFunc", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeClearController_C", "BndEvt__BP_ShootingRangeDistanceController_butt01_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_ShootingRangeClearController_C_BndEvt__BP_ShootingRangeDistanceController_butt01_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ShootingRangeClearController.BP_ShootingRangeClearController_C.depressButton
+// Function BP_ShootingRangeClearController.BP_ShootingRangeClearController_C.Timeline__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_ShootingRangeClearController_C::Timeline__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ShootingRangeClearController.BP_ShootingRangeClearController_C.pressButton
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UPrimitiveComponent*              mesh                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ShootingRangeClearController_C::depressButton(class UPrimitiveComponent* mesh)
+void ABP_ShootingRangeClearController_C::pressButton(class UPrimitiveComponent* mesh)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"pressButton", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeClearController_C", "depressButton");
-
-	Params::BP_ShootingRangeClearController_C_depressButton Parms{};
+	Params::BP_ShootingRangeClearController_C_pressButton Parms{};
 
 	Parms.mesh = mesh;
 
@@ -67,10 +65,8 @@ void ABP_ShootingRangeClearController_C::depressButton(class UPrimitiveComponent
 
 void ABP_ShootingRangeClearController_C::ExecuteUbergraph_BP_ShootingRangeClearController(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeClearController_C", "ExecuteUbergraph_BP_ShootingRangeClearController");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ShootingRangeClearController_C", "ExecuteUbergraph_BP_ShootingRangeClearController", FuncInfo);
 
 	Params::BP_ShootingRangeClearController_C_ExecuteUbergraph_BP_ShootingRangeClearController Parms{};
 
@@ -80,19 +76,17 @@ void ABP_ShootingRangeClearController_C::ExecuteUbergraph_BP_ShootingRangeClearC
 }
 
 
-// Function BP_ShootingRangeClearController.BP_ShootingRangeClearController_C.pressButton
+// Function BP_ShootingRangeClearController.BP_ShootingRangeClearController_C.depressButton
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UPrimitiveComponent*              mesh                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ShootingRangeClearController_C::pressButton(class UPrimitiveComponent* mesh)
+void ABP_ShootingRangeClearController_C::depressButton(class UPrimitiveComponent* mesh)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"depressButton", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeClearController_C", "pressButton");
-
-	Params::BP_ShootingRangeClearController_C_pressButton Parms{};
+	Params::BP_ShootingRangeClearController_C_depressButton Parms{};
 
 	Parms.mesh = mesh;
 
@@ -100,31 +94,25 @@ void ABP_ShootingRangeClearController_C::pressButton(class UPrimitiveComponent* 
 }
 
 
-// Function BP_ShootingRangeClearController.BP_ShootingRangeClearController_C.Timeline__FinishedFunc
+// Function BP_ShootingRangeClearController.BP_ShootingRangeClearController_C.BndEvt__BP_ShootingRangeDistanceController_butt01_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature
 // (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ShootingRangeClearController_C::Timeline__FinishedFunc()
+void ABP_ShootingRangeClearController_C::BndEvt__BP_ShootingRangeDistanceController_butt01_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ShootingRangeDistanceController_butt01_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeClearController_C", "Timeline__FinishedFunc");
+	Params::BP_ShootingRangeClearController_C_BndEvt__BP_ShootingRangeDistanceController_butt01_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
-
-// Function BP_ShootingRangeClearController.BP_ShootingRangeClearController_C.Timeline__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_ShootingRangeClearController_C::Timeline__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeClearController_C", "Timeline__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

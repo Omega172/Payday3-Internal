@@ -16,110 +16,120 @@
 
 SDK_NAMESPACE_START
 
-// Function G_Chus_AI.G_Chus_AI_C.ActionPhaseStarted
-// (Event, Public, BlueprintEvent)
-
-void AG_Chus_AI_C::ActionPhaseStarted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "ActionPhaseStarted");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.ActivateCellBlockHouston
+// Function G_Chus_AI.G_Chus_AI_C.WindowBreak_Rotunda
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Chus_AI_C::ActivateCellBlockHouston()
+void AG_Chus_AI_C::WindowBreak_Rotunda()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "ActivateCellBlockHouston");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"WindowBreak_Rotunda", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.ActivateLeadGuard
+// Function G_Chus_AI.G_Chus_AI_C.WindowBreak_Courtroom
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Chus_AI_C::ActivateLeadGuard()
+void AG_Chus_AI_C::WindowBreak_Courtroom()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "ActivateLeadGuard");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"WindowBreak_Courtroom", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.AddDonutMarker
+// Function G_Chus_AI.G_Chus_AI_C.WindowBreak_Clerk3
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Chus_AI_C::AddDonutMarker()
+void AG_Chus_AI_C::WindowBreak_Clerk3()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "AddDonutMarker");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"WindowBreak_Clerk3", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.BasementMetalDetectorOffline
+// Function G_Chus_AI.G_Chus_AI_C.WindowBreak_Clerk2
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Chus_AI_C::WindowBreak_Clerk2()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"WindowBreak_Clerk2", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.WindowBreak_Clerk1
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Chus_AI_C::WindowBreak_Clerk1()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"WindowBreak_Clerk1", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.ToggleEscortSpawns
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    BasementPathOpenForEscort                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EscortPathInt                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Chus_AI_C::BasementMetalDetectorOffline(bool BasementPathOpenForEscort)
+void AG_Chus_AI_C::ToggleEscortSpawns(int32 EscortPathInt)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ToggleEscortSpawns", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BasementMetalDetectorOffline");
+	Params::G_Chus_AI_C_ToggleEscortSpawns Parms{};
 
-	Params::G_Chus_AI_C_BasementMetalDetectorOffline Parms{};
-
-	Parms.BasementPathOpenForEscort = BasementPathOpenForEscort;
+	Parms.EscortPathInt = EscortPathInt;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.BlackScreenStarted
-// (Event, Public, BlueprintEvent)
+// Function G_Chus_AI.G_Chus_AI_C.SpawnElevatorGuardsSouthHallF2
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Chus_AI_C::BlackScreenStarted()
+void AG_Chus_AI_C::SpawnElevatorGuardsSouthHallF2()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BlackScreenStarted");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnElevatorGuardsSouthHallF2", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.BlueKeycardTaken
+// Function G_Chus_AI.G_Chus_AI_C.SpawnElevatorGuardsEastHallF2
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Chus_AI_C::SpawnElevatorGuardsEastHallF2()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnElevatorGuardsEastHallF2", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.SecondaryBlueKeycardTaken
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void AG_Chus_AI_C::BlueKeycardTaken(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
+void AG_Chus_AI_C::SecondaryBlueKeycardTaken(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SecondaryBlueKeycardTaken", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BlueKeycardTaken");
-
-	Params::G_Chus_AI_C_BlueKeycardTaken Parms{};
+	Params::G_Chus_AI_C_SecondaryBlueKeycardTaken Parms{};
 
 	Parms.Interactable = Interactable;
 	Parms.Interactor = Interactor;
@@ -128,508 +138,314 @@ void AG_Chus_AI_C::BlueKeycardTaken(class ASBZInteractionActor* Interactable, cl
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_FOR_Donut_Box2_K2Node_ActorBoundEvent_3_onPickedUp__DelegateSignature
-// (BlueprintEvent)
+// Function G_Chus_AI.G_Chus_AI_C.RemoveStealthEscortMarker
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_FOR_Donut_Box2_K2Node_ActorBoundEvent_3_onPickedUp__DelegateSignature()
+void AG_Chus_AI_C::RemoveStealthEscortMarker()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_BP_FOR_Donut_Box2_K2Node_ActorBoundEvent_3_onPickedUp__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RemoveStealthEscortMarker", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_FOR_Donut_Box3_K2Node_ActorBoundEvent_19_onPickedUp__DelegateSignature
-// (BlueprintEvent)
+// Function G_Chus_AI.G_Chus_AI_C.OnServerKeyItemTagAdded
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTag&              KeyTag_OnServerKeyItemTagAdded                         (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_FOR_Donut_Box3_K2Node_ActorBoundEvent_19_onPickedUp__DelegateSignature()
+void AG_Chus_AI_C::OnServerKeyItemTagAdded(const struct FGameplayTag& KeyTag_OnServerKeyItemTagAdded)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnServerKeyItemTagAdded", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_BP_FOR_Donut_Box3_K2Node_ActorBoundEvent_19_onPickedUp__DelegateSignature");
+	Params::G_Chus_AI_C_OnServerKeyItemTagAdded Parms{};
+
+	Parms.KeyTag_OnServerKeyItemTagAdded = std::move(KeyTag_OnServerKeyItemTagAdded);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.LeadGuardToUpperFloor
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Chus_AI_C::LeadGuardToUpperFloor()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"LeadGuardToUpperFloor", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_FOR_Donut_Box4_K2Node_ActorBoundEvent_20_onPickedUp__DelegateSignature
-// (BlueprintEvent)
+// Function G_Chus_AI.G_Chus_AI_C.LeadGuardToLowerFloor
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_FOR_Donut_Box4_K2Node_ActorBoundEvent_20_onPickedUp__DelegateSignature()
+void AG_Chus_AI_C::LeadGuardToLowerFloor()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_BP_FOR_Donut_Box4_K2Node_ActorBoundEvent_20_onPickedUp__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"LeadGuardToLowerFloor", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_FOR_Donut_Box5_K2Node_ActorBoundEvent_22_onPickedUp__DelegateSignature
-// (BlueprintEvent)
+// Function G_Chus_AI.G_Chus_AI_C.HoustonToVanStealth
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_FOR_Donut_Box5_K2Node_ActorBoundEvent_22_onPickedUp__DelegateSignature()
+void AG_Chus_AI_C::HoustonToVanStealth()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_BP_FOR_Donut_Box5_K2Node_ActorBoundEvent_22_onPickedUp__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HoustonToVanStealth", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_FOR_Donut_Box6_K2Node_ActorBoundEvent_23_onPickedUp__DelegateSignature
-// (BlueprintEvent)
+// Function G_Chus_AI.G_Chus_AI_C.HoustonToVanLoud
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_FOR_Donut_Box6_K2Node_ActorBoundEvent_23_onPickedUp__DelegateSignature()
+void AG_Chus_AI_C::HoustonToVanLoud()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_BP_FOR_Donut_Box6_K2Node_ActorBoundEvent_23_onPickedUp__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HoustonToVanLoud", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell2_K2Node_ActorBoundEvent_11_ActionStarted__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function G_Chus_AI.G_Chus_AI_C.HoustonHide
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell2_K2Node_ActorBoundEvent_11_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot)
+void AG_Chus_AI_C::HoustonHide()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HoustonHide", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell2_K2Node_ActorBoundEvent_11_ActionStarted__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell2_K2Node_ActorBoundEvent_11_ActionStarted__DelegateSignature Parms{};
 
-	Parms.Character = Character;
-	Parms.ActionSlot = ActionSlot;
+// Function G_Chus_AI.G_Chus_AI_C.HeistStateChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EPD3HeistState                          OldHeistState_HeistStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPD3HeistState                          CurrentHeistState_HeistStateChanged                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HeistStateChanged", FnName));
+
+	Params::G_Chus_AI_C_HeistStateChanged Parms{};
+
+	Parms.OldHeistState_HeistStateChanged = OldHeistState_HeistStateChanged;
+	Parms.CurrentHeistState_HeistStateChanged = CurrentHeistState_HeistStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell3_K2Node_ActorBoundEvent_13_ActionStarted__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function G_Chus_AI.G_Chus_AI_C.HeadNextToVan
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell3_K2Node_ActorBoundEvent_13_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot)
+void AG_Chus_AI_C::HeadNextToVan()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HeadNextToVan", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell3_K2Node_ActorBoundEvent_13_ActionStarted__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell3_K2Node_ActorBoundEvent_13_ActionStarted__DelegateSignature Parms{};
 
-	Parms.Character = Character;
-	Parms.ActionSlot = ActionSlot;
+// Function G_Chus_AI.G_Chus_AI_C.ExecuteUbergraph_G_Chus_AI
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::ExecuteUbergraph_G_Chus_AI(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_Chus_AI_C", "ExecuteUbergraph_G_Chus_AI", FuncInfo);
+
+	Params::G_Chus_AI_C_ExecuteUbergraph_G_Chus_AI Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell4_K2Node_ActorBoundEvent_14_ActionStarted__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function G_Chus_AI.G_Chus_AI_C.EscapeVanEnRoute
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell4_K2Node_ActorBoundEvent_14_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot)
+void AG_Chus_AI_C::EscapeVanEnRoute()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EscapeVanEnRoute", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell4_K2Node_ActorBoundEvent_14_ActionStarted__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell4_K2Node_ActorBoundEvent_14_ActionStarted__DelegateSignature Parms{};
 
-	Parms.Character = Character;
-	Parms.ActionSlot = ActionSlot;
+// Function G_Chus_AI.G_Chus_AI_C.EnableBlueKeycardWaypoint
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Chus_AI_C::EnableBlueKeycardWaypoint()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EnableBlueKeycardWaypoint", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.EnableBlueKeycardGuardOutline
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Chus_AI_C::EnableBlueKeycardGuardOutline()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EnableBlueKeycardGuardOutline", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.ElevatorShaftPP
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Chus_AI_C::ElevatorShaftPP()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ElevatorShaftPP", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.DisableHoustonOutline
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Chus_AI_C::DisableHoustonOutline()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DisableHoustonOutline", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.DisableDonutBox
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Chus_AI_C::DisableDonutBox()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DisableDonutBox", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.DisableBlueKeycardOutline
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Chus_AI_C::DisableBlueKeycardOutline()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DisableBlueKeycardOutline", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.CounterOpened
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    CounterOpened                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::CounterOpened(bool CounterOpened)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CounterOpened", FnName));
+
+	Params::G_Chus_AI_C_CounterOpened Parms{};
+
+	Parms.CounterOpened = CounterOpened;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell1_K2Node_ActorBoundEvent_4_ActionStarted__DelegateSignature
-// (BlueprintEvent)
+// Function G_Chus_AI.G_Chus_AI_C.CellGuardSpawned
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell1_K2Node_ActorBoundEvent_4_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot)
+void AG_Chus_AI_C::CellGuardSpawned(class APawn* NewParam)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CellGuardSpawned", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell1_K2Node_ActorBoundEvent_4_ActionStarted__DelegateSignature");
+	Params::G_Chus_AI_C_CellGuardSpawned Parms{};
 
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell1_K2Node_ActorBoundEvent_4_ActionStarted__DelegateSignature Parms{};
-
-	Parms.Character = Character;
-	Parms.ActionSlot = ActionSlot;
+	Parms.NewParam = NewParam;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell2_K2Node_ActorBoundEvent_7_ActionStarted__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function G_Chus_AI.G_Chus_AI_C.CallJudge
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell2_K2Node_ActorBoundEvent_7_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot)
+void AG_Chus_AI_C::CallJudge()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CallJudge", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell2_K2Node_ActorBoundEvent_7_ActionStarted__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell2_K2Node_ActorBoundEvent_7_ActionStarted__DelegateSignature Parms{};
-
-	Parms.Character = Character;
-	Parms.ActionSlot = ActionSlot;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell3_K2Node_ActorBoundEvent_8_ActionStarted__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function G_Chus_AI.G_Chus_AI_C.BP_ElevatorDoorNorthHallF2
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell3_K2Node_ActorBoundEvent_8_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot)
+void AG_Chus_AI_C::BP_ElevatorDoorNorthHallF2()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_ElevatorDoorNorthHallF2", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell3_K2Node_ActorBoundEvent_8_ActionStarted__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell3_K2Node_ActorBoundEvent_8_ActionStarted__DelegateSignature Parms{};
-
-	Parms.Character = Character;
-	Parms.ActionSlot = ActionSlot;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell4_K2Node_ActorBoundEvent_9_ActionStarted__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function G_Chus_AI.G_Chus_AI_C.BP_ElevatorDoorNorthHallF1
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell4_K2Node_ActorBoundEvent_9_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot)
+void AG_Chus_AI_C::BP_ElevatorDoorNorthHallF1()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_ElevatorDoorNorthHallF1", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell4_K2Node_ActorBoundEvent_9_ActionStarted__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell4_K2Node_ActorBoundEvent_9_ActionStarted__DelegateSignature Parms{};
-
-	Parms.Character = Character;
-	Parms.ActionSlot = ActionSlot;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonGaragewait2_K2Node_ActorBoundEvent_36_ActionStarted__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonGaragewait2_K2Node_ActorBoundEvent_36_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonGaragewait2_K2Node_ActorBoundEvent_36_ActionStarted__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonGaragewait2_K2Node_ActorBoundEvent_36_ActionStarted__DelegateSignature Parms{};
-
-	Parms.Character = Character;
-	Parms.ActionSlot = ActionSlot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonMetalDetector2_K2Node_ActorBoundEvent_24_ActionStarted__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonMetalDetector2_K2Node_ActorBoundEvent_24_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonMetalDetector2_K2Node_ActorBoundEvent_24_ActionStarted__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonMetalDetector2_K2Node_ActorBoundEvent_24_ActionStarted__DelegateSignature Parms{};
-
-	Parms.Character = Character;
-	Parms.ActionSlot = ActionSlot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonMetalDetector_K2Node_ActorBoundEvent_25_ActionStarted__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonMetalDetector_K2Node_ActorBoundEvent_25_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonMetalDetector_K2Node_ActorBoundEvent_25_ActionStarted__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonMetalDetector_K2Node_ActorBoundEvent_25_ActionStarted__DelegateSignature Parms{};
-
-	Parms.Character = Character;
-	Parms.ActionSlot = ActionSlot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell10_K2Node_ActorBoundEvent_3_ActionStarted__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell10_K2Node_ActorBoundEvent_3_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell10_K2Node_ActorBoundEvent_3_ActionStarted__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell10_K2Node_ActorBoundEvent_3_ActionStarted__DelegateSignature Parms{};
-
-	Parms.Character = Character;
-	Parms.ActionSlot = ActionSlot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell5_K2Node_ActorBoundEvent_10_ActionStarted__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell5_K2Node_ActorBoundEvent_10_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell5_K2Node_ActorBoundEvent_10_ActionStarted__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell5_K2Node_ActorBoundEvent_10_ActionStarted__DelegateSignature Parms{};
-
-	Parms.Character = Character;
-	Parms.ActionSlot = ActionSlot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell7_2_K2Node_ActorBoundEvent_0_ActionStarted__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell7_2_K2Node_ActorBoundEvent_0_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell7_2_K2Node_ActorBoundEvent_0_ActionStarted__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell7_2_K2Node_ActorBoundEvent_0_ActionStarted__DelegateSignature Parms{};
-
-	Parms.Character = Character;
-	Parms.ActionSlot = ActionSlot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell8_K2Node_ActorBoundEvent_1_ActionStarted__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell8_K2Node_ActorBoundEvent_1_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell8_K2Node_ActorBoundEvent_1_ActionStarted__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell8_K2Node_ActorBoundEvent_1_ActionStarted__DelegateSignature Parms{};
-
-	Parms.Character = Character;
-	Parms.ActionSlot = ActionSlot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell9_K2Node_ActorBoundEvent_2_ActionStarted__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell9_K2Node_ActorBoundEvent_2_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell9_K2Node_ActorBoundEvent_2_ActionStarted__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell9_K2Node_ActorBoundEvent_2_ActionStarted__DelegateSignature Parms{};
-
-	Parms.Character = Character;
-	Parms.ActionSlot = ActionSlot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_PowerUpDonutBox2_K2Node_ActorBoundEvent_15_SBZPowerUpChargesStateDelegate__DelegateSignature
-// (BlueprintAuthorityOnly, BlueprintEvent)
-// Parameters:
-// ESBZPowerUpChargesState                 OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZPowerUpChargesState                 NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_PowerUpDonutBox2_K2Node_ActorBoundEvent_15_SBZPowerUpChargesStateDelegate__DelegateSignature(ESBZPowerUpChargesState OldState, ESBZPowerUpChargesState NewState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_BP_PowerUpDonutBox2_K2Node_ActorBoundEvent_15_SBZPowerUpChargesStateDelegate__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_PowerUpDonutBox2_K2Node_ActorBoundEvent_15_SBZPowerUpChargesStateDelegate__DelegateSignature Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZFilteredTriggerVolume_EscortStealthVolume1_K2Node_ActorBoundEvent_18_SBZFilterDesiredCountDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bHasDesiredCount                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZFilteredTriggerVolume_EscortStealthVolume1_K2Node_ActorBoundEvent_18_SBZFilterDesiredCountDynamicDelegate__DelegateSignature(class FName Identifier, bool bHasDesiredCount)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_SBZFilteredTriggerVolume_EscortStealthVolume1_K2Node_ActorBoundEvent_18_SBZFilterDesiredCountDynamicDelegate__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZFilteredTriggerVolume_EscortStealthVolume1_K2Node_ActorBoundEvent_18_SBZFilterDesiredCountDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Identifier = Identifier;
-	Parms.bHasDesiredCount = bHasDesiredCount;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZFilteredTriggerVolume_EscortStealthVolume2_K2Node_ActorBoundEvent_37_SBZFilterDesiredCountDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bHasDesiredCount                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZFilteredTriggerVolume_EscortStealthVolume2_K2Node_ActorBoundEvent_37_SBZFilterDesiredCountDynamicDelegate__DelegateSignature(class FName Identifier, bool bHasDesiredCount)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_SBZFilteredTriggerVolume_EscortStealthVolume2_K2Node_ActorBoundEvent_37_SBZFilterDesiredCountDynamicDelegate__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZFilteredTriggerVolume_EscortStealthVolume2_K2Node_ActorBoundEvent_37_SBZFilterDesiredCountDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Identifier = Identifier;
-	Parms.bHasDesiredCount = bHasDesiredCount;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellGuard_K2Node_ActorBoundEvent_16_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellGuard_K2Node_ActorBoundEvent_16_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellGuard_K2Node_ActorBoundEvent_16_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellGuard_K2Node_ActorBoundEvent_16_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
-
-	Parms.DeadPawn = DeadPawn;
-	Parms.Spawner = Spawner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellGuard_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellGuard_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+void AG_Chus_AI_C::BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellGuard_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellGuard_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+	Params::G_Chus_AI_C_BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
 
 	Parms.SpawnedPawn = SpawnedPawn;
 	Parms.Spawnedloot = Spawnedloot;
@@ -638,372 +454,36 @@ void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellGuard_K2Node_Act
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellHouston_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPlayerTriggerVolume9_2_K2Node_ActorBoundEvent_41_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPlayerTriggerVolume9_2_K2Node_ActorBoundEvent_41_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_SBZPlayerTriggerVolume9_2_K2Node_ActorBoundEvent_41_SBZPawnDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPlayerTriggerVolume9_2_K2Node_ActorBoundEvent_41_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew9_K2Node_ActorBoundEvent_40_SBZSpawnRequestCompletedDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellHouston_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew9_K2Node_ActorBoundEvent_40_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew9_K2Node_ActorBoundEvent_40_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellHouston_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellHouston_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Civilian24_K2Node_ActorBoundEvent_28_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Civilian24_K2Node_ActorBoundEvent_28_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Civilian24_K2Node_ActorBoundEvent_28_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Civilian24_K2Node_ActorBoundEvent_28_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard2_1_K2Node_ActorBoundEvent_38_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard2_1_K2Node_ActorBoundEvent_38_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard2_1_K2Node_ActorBoundEvent_38_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard2_1_K2Node_ActorBoundEvent_38_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard3_3_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard3_3_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard3_3_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard3_3_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard5_0_K2Node_ActorBoundEvent_32_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard5_0_K2Node_ActorBoundEvent_32_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard5_0_K2Node_ActorBoundEvent_32_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard5_0_K2Node_ActorBoundEvent_32_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard9_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard9_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard9_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard9_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard9_K2Node_ActorBoundEvent_26_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard9_K2Node_ActorBoundEvent_26_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard9_K2Node_ActorBoundEvent_26_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard9_K2Node_ActorBoundEvent_26_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
-
-	Parms.DeadPawn = DeadPawn;
-	Parms.Spawner = Spawner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard_MetalDetector4_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard_MetalDetector4_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard_MetalDetector4_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard_MetalDetector4_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard_MetalDetector4_K2Node_ActorBoundEvent_17_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard_MetalDetector4_K2Node_ActorBoundEvent_17_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard_MetalDetector4_K2Node_ActorBoundEvent_17_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard_MetalDetector4_K2Node_ActorBoundEvent_17_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
-
-	Parms.DeadPawn = DeadPawn;
-	Parms.Spawner = Spawner;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew10_K2Node_ActorBoundEvent_39_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew10_K2Node_ActorBoundEvent_39_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew10_K2Node_ActorBoundEvent_39_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew10_K2Node_ActorBoundEvent_39_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew1_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew1_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew1_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew1_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew2_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew2_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew2_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew2_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew3_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew3_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew3_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew3_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew4_K2Node_ActorBoundEvent_34_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew4_K2Node_ActorBoundEvent_34_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew4_K2Node_ActorBoundEvent_34_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew4_K2Node_ActorBoundEvent_34_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew5_K2Node_ActorBoundEvent_35_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew5_K2Node_ActorBoundEvent_35_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew5_K2Node_ActorBoundEvent_35_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew5_K2Node_ActorBoundEvent_35_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew6_K2Node_ActorBoundEvent_36_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew6_K2Node_ActorBoundEvent_36_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew6_K2Node_ActorBoundEvent_36_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew6_K2Node_ActorBoundEvent_36_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew7_K2Node_ActorBoundEvent_31_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew7_K2Node_ActorBoundEvent_31_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew7_K2Node_ActorBoundEvent_31_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew7_K2Node_ActorBoundEvent_31_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew9_K2Node_ActorBoundEvent_40_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
 
 	Parms.SpawnedPawn = SpawnedPawn;
 	Parms.Spawnedloot = Spawnedloot;
@@ -1020,10 +500,8 @@ void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew7_K2Node_Actor
 
 void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew8_K2Node_ActorBoundEvent_32_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew8_K2Node_ActorBoundEvent_32_SBZSpawnRequestCompletedDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew8_K2Node_ActorBoundEvent_32_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
 
 	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew8_K2Node_ActorBoundEvent_32_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
 
@@ -1034,20 +512,18 @@ void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew8_K2Node_Actor
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew9_K2Node_ActorBoundEvent_40_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew7_K2Node_ActorBoundEvent_31_SBZSpawnRequestCompletedDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew9_K2Node_ActorBoundEvent_40_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew7_K2Node_ActorBoundEvent_31_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew7_K2Node_ActorBoundEvent_31_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew9_K2Node_ActorBoundEvent_40_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew9_K2Node_ActorBoundEvent_40_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew7_K2Node_ActorBoundEvent_31_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
 
 	Parms.SpawnedPawn = SpawnedPawn;
 	Parms.Spawnedloot = Spawnedloot;
@@ -1056,40 +532,18 @@ void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew9_K2Node_Actor
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPlayerTriggerVolume9_2_K2Node_ActorBoundEvent_41_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPlayerTriggerVolume9_2_K2Node_ActorBoundEvent_41_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_Chus_AI_SBZPlayerTriggerVolume9_2_K2Node_ActorBoundEvent_41_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPlayerTriggerVolume9_2_K2Node_ActorBoundEvent_41_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew6_K2Node_ActorBoundEvent_36_SBZSpawnRequestCompletedDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Chus_AI_C::BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew6_K2Node_ActorBoundEvent_36_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew6_K2Node_ActorBoundEvent_36_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature");
-
-	Params::G_Chus_AI_C_BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew6_K2Node_ActorBoundEvent_36_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
 
 	Parms.SpawnedPawn = SpawnedPawn;
 	Parms.Spawnedloot = Spawnedloot;
@@ -1098,360 +552,778 @@ void AG_Chus_AI_C::BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_Lea
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.BP_ElevatorDoorNorthHallF1
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Chus_AI_C::BP_ElevatorDoorNorthHallF1()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BP_ElevatorDoorNorthHallF1");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.BP_ElevatorDoorNorthHallF2
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Chus_AI_C::BP_ElevatorDoorNorthHallF2()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "BP_ElevatorDoorNorthHallF2");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.CallJudge
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Chus_AI_C::CallJudge()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "CallJudge");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.CellGuardSpawned
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew5_K2Node_ActorBoundEvent_35_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// class APawn*                            NewParam                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Chus_AI_C::CellGuardSpawned(class APawn* NewParam)
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew5_K2Node_ActorBoundEvent_35_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew5_K2Node_ActorBoundEvent_35_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "CellGuardSpawned");
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew5_K2Node_ActorBoundEvent_35_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
 
-	Params::G_Chus_AI_C_CellGuardSpawned Parms{};
-
-	Parms.NewParam = NewParam;
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.CounterOpened
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew4_K2Node_ActorBoundEvent_34_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// bool                                    CounterOpened_0                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Chus_AI_C::CounterOpened(bool CounterOpened_0)
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew4_K2Node_ActorBoundEvent_34_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew4_K2Node_ActorBoundEvent_34_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "CounterOpened");
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew4_K2Node_ActorBoundEvent_34_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
 
-	Params::G_Chus_AI_C_CounterOpened Parms{};
-
-	Parms.CounterOpened_0 = CounterOpened_0;
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.DisableBlueKeycardOutline
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Chus_AI_C::DisableBlueKeycardOutline()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "DisableBlueKeycardOutline");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.DisableDonutBox
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Chus_AI_C::DisableDonutBox()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "DisableDonutBox");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.DisableHoustonOutline
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Chus_AI_C::DisableHoustonOutline()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "DisableHoustonOutline");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.ElevatorShaftPP
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Chus_AI_C::ElevatorShaftPP()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "ElevatorShaftPP");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.EnableBlueKeycardGuardOutline
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Chus_AI_C::EnableBlueKeycardGuardOutline()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "EnableBlueKeycardGuardOutline");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.EnableBlueKeycardWaypoint
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Chus_AI_C::EnableBlueKeycardWaypoint()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "EnableBlueKeycardWaypoint");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.EscapeVanEnRoute
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Chus_AI_C::EscapeVanEnRoute()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "EscapeVanEnRoute");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.ExecuteUbergraph_G_Chus_AI
-// (Final, UbergraphFunction, HasDefaults)
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew3_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Chus_AI_C::ExecuteUbergraph_G_Chus_AI(int32 EntryPoint)
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew3_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew3_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "ExecuteUbergraph_G_Chus_AI");
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew3_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
 
-	Params::G_Chus_AI_C_ExecuteUbergraph_G_Chus_AI Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.HeadNextToVan
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Chus_AI_C::HeadNextToVan()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "HeadNextToVan");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.HeistStateChanged
-// (Event, Public, BlueprintEvent)
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew2_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// EPD3HeistState                          OldHeistState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPD3HeistState                          CurrentHeistState                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Chus_AI_C::HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState)
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew2_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew2_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "HeistStateChanged");
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew2_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
 
-	Params::G_Chus_AI_C_HeistStateChanged Parms{};
-
-	Parms.OldHeistState = OldHeistState;
-	Parms.CurrentHeistState = CurrentHeistState;
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.HoustonHide
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Chus_AI_C::HoustonHide()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "HoustonHide");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.HoustonToVanLoud
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Chus_AI_C::HoustonToVanLoud()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "HoustonToVanLoud");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.HoustonToVanStealth
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Chus_AI_C::HoustonToVanStealth()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "HoustonToVanStealth");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.LeadGuardToLowerFloor
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Chus_AI_C::LeadGuardToLowerFloor()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "LeadGuardToLowerFloor");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.LeadGuardToUpperFloor
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Chus_AI_C::LeadGuardToUpperFloor()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "LeadGuardToUpperFloor");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.OnServerKeyItemTagAdded
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew1_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// const struct FGameplayTag&              KeyTag                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Chus_AI_C::OnServerKeyItemTagAdded(const struct FGameplayTag& KeyTag)
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew1_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew1_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "OnServerKeyItemTagAdded");
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew1_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
 
-	Params::G_Chus_AI_C_OnServerKeyItemTagAdded Parms{};
-
-	Parms.KeyTag = std::move(KeyTag);
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.RemoveStealthEscortMarker
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew10_K2Node_ActorBoundEvent_39_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Chus_AI_C::RemoveStealthEscortMarker()
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew10_K2Node_ActorBoundEvent_39_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew10_K2Node_ActorBoundEvent_39_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "RemoveStealthEscortMarker");
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_TVCrew10_K2Node_ActorBoundEvent_39_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard_MetalDetector4_K2Node_ActorBoundEvent_17_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard_MetalDetector4_K2Node_ActorBoundEvent_17_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard_MetalDetector4_K2Node_ActorBoundEvent_17_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature", FnName));
+
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard_MetalDetector4_K2Node_ActorBoundEvent_17_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
+
+	Parms.DeadPawn = DeadPawn;
+	Parms.Spawner = Spawner;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard_MetalDetector4_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard_MetalDetector4_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard_MetalDetector4_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard_MetalDetector4_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard9_K2Node_ActorBoundEvent_26_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard9_K2Node_ActorBoundEvent_26_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard9_K2Node_ActorBoundEvent_26_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature", FnName));
+
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard9_K2Node_ActorBoundEvent_26_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
+
+	Parms.DeadPawn = DeadPawn;
+	Parms.Spawner = Spawner;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard9_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard9_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard9_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard9_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard5_0_K2Node_ActorBoundEvent_32_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard5_0_K2Node_ActorBoundEvent_32_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard5_0_K2Node_ActorBoundEvent_32_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard5_0_K2Node_ActorBoundEvent_32_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard3_3_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard3_3_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard3_3_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard3_3_K2Node_ActorBoundEvent_29_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard2_1_K2Node_ActorBoundEvent_38_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard2_1_K2Node_ActorBoundEvent_38_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard2_1_K2Node_ActorBoundEvent_38_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Guard2_1_K2Node_ActorBoundEvent_38_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Civilian24_K2Node_ActorBoundEvent_28_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Civilian24_K2Node_ActorBoundEvent_28_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Civilian24_K2Node_ActorBoundEvent_28_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_Civilian24_K2Node_ActorBoundEvent_28_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellHouston_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellHouston_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellHouston_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellHouston_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellGuard_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellGuard_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellGuard_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature", FnName));
+
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellGuard_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature Parms{};
+
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellGuard_K2Node_ActorBoundEvent_16_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            DeadPawn                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZPawnSpawnPredefined*          Spawner                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellGuard_K2Node_ActorBoundEvent_16_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellGuard_K2Node_ActorBoundEvent_16_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature", FnName));
+
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZPawnSpawnPredefined_CellGuard_K2Node_ActorBoundEvent_16_SBZKilledPawnSpawnPredefinedDelegate__DelegateSignature Parms{};
+
+	Parms.DeadPawn = DeadPawn;
+	Parms.Spawner = Spawner;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZFilteredTriggerVolume_EscortStealthVolume2_K2Node_ActorBoundEvent_37_SBZFilterDesiredCountDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bHasDesiredCount                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZFilteredTriggerVolume_EscortStealthVolume2_K2Node_ActorBoundEvent_37_SBZFilterDesiredCountDynamicDelegate__DelegateSignature(class FName Identifier, bool bHasDesiredCount)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_SBZFilteredTriggerVolume_EscortStealthVolume2_K2Node_ActorBoundEvent_37_SBZFilterDesiredCountDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZFilteredTriggerVolume_EscortStealthVolume2_K2Node_ActorBoundEvent_37_SBZFilterDesiredCountDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Identifier = Identifier;
+	Parms.bHasDesiredCount = bHasDesiredCount;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_SBZFilteredTriggerVolume_EscortStealthVolume1_K2Node_ActorBoundEvent_18_SBZFilterDesiredCountDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bHasDesiredCount                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_SBZFilteredTriggerVolume_EscortStealthVolume1_K2Node_ActorBoundEvent_18_SBZFilterDesiredCountDynamicDelegate__DelegateSignature(class FName Identifier, bool bHasDesiredCount)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_SBZFilteredTriggerVolume_EscortStealthVolume1_K2Node_ActorBoundEvent_18_SBZFilterDesiredCountDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_SBZFilteredTriggerVolume_EscortStealthVolume1_K2Node_ActorBoundEvent_18_SBZFilterDesiredCountDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Identifier = Identifier;
+	Parms.bHasDesiredCount = bHasDesiredCount;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_PowerUpDonutBox2_K2Node_ActorBoundEvent_15_SBZPowerUpChargesStateDelegate__DelegateSignature
+// (BlueprintAuthorityOnly, BlueprintEvent)
+// Parameters:
+// ESBZPowerUpChargesState                 OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZPowerUpChargesState                 NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_PowerUpDonutBox2_K2Node_ActorBoundEvent_15_SBZPowerUpChargesStateDelegate__DelegateSignature(ESBZPowerUpChargesState OldState, ESBZPowerUpChargesState NewState)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_BP_PowerUpDonutBox2_K2Node_ActorBoundEvent_15_SBZPowerUpChargesStateDelegate__DelegateSignature", FnName));
+
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_PowerUpDonutBox2_K2Node_ActorBoundEvent_15_SBZPowerUpChargesStateDelegate__DelegateSignature Parms{};
+
+	Parms.OldState = OldState;
+	Parms.NewState = NewState;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell9_K2Node_ActorBoundEvent_2_ActionStarted__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell9_K2Node_ActorBoundEvent_2_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell9_K2Node_ActorBoundEvent_2_ActionStarted__DelegateSignature", FnName));
+
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell9_K2Node_ActorBoundEvent_2_ActionStarted__DelegateSignature Parms{};
+
+	Parms.Character = Character;
+	Parms.ActionSlot = ActionSlot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell8_K2Node_ActorBoundEvent_1_ActionStarted__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell8_K2Node_ActorBoundEvent_1_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell8_K2Node_ActorBoundEvent_1_ActionStarted__DelegateSignature", FnName));
+
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell8_K2Node_ActorBoundEvent_1_ActionStarted__DelegateSignature Parms{};
+
+	Parms.Character = Character;
+	Parms.ActionSlot = ActionSlot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell7_2_K2Node_ActorBoundEvent_0_ActionStarted__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell7_2_K2Node_ActorBoundEvent_0_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell7_2_K2Node_ActorBoundEvent_0_ActionStarted__DelegateSignature", FnName));
+
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell7_2_K2Node_ActorBoundEvent_0_ActionStarted__DelegateSignature Parms{};
+
+	Parms.Character = Character;
+	Parms.ActionSlot = ActionSlot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell5_K2Node_ActorBoundEvent_10_ActionStarted__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell5_K2Node_ActorBoundEvent_10_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell5_K2Node_ActorBoundEvent_10_ActionStarted__DelegateSignature", FnName));
+
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell5_K2Node_ActorBoundEvent_10_ActionStarted__DelegateSignature Parms{};
+
+	Parms.Character = Character;
+	Parms.ActionSlot = ActionSlot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell10_K2Node_ActorBoundEvent_3_ActionStarted__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell10_K2Node_ActorBoundEvent_3_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell10_K2Node_ActorBoundEvent_3_ActionStarted__DelegateSignature", FnName));
+
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonWaitForCell10_K2Node_ActorBoundEvent_3_ActionStarted__DelegateSignature Parms{};
+
+	Parms.Character = Character;
+	Parms.ActionSlot = ActionSlot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonMetalDetector_K2Node_ActorBoundEvent_25_ActionStarted__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonMetalDetector_K2Node_ActorBoundEvent_25_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonMetalDetector_K2Node_ActorBoundEvent_25_ActionStarted__DelegateSignature", FnName));
+
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonMetalDetector_K2Node_ActorBoundEvent_25_ActionStarted__DelegateSignature Parms{};
+
+	Parms.Character = Character;
+	Parms.ActionSlot = ActionSlot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonMetalDetector2_K2Node_ActorBoundEvent_24_ActionStarted__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonMetalDetector2_K2Node_ActorBoundEvent_24_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonMetalDetector2_K2Node_ActorBoundEvent_24_ActionStarted__DelegateSignature", FnName));
+
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonMetalDetector2_K2Node_ActorBoundEvent_24_ActionStarted__DelegateSignature Parms{};
+
+	Parms.Character = Character;
+	Parms.ActionSlot = ActionSlot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonGaragewait2_K2Node_ActorBoundEvent_36_ActionStarted__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonGaragewait2_K2Node_ActorBoundEvent_36_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonGaragewait2_K2Node_ActorBoundEvent_36_ActionStarted__DelegateSignature", FnName));
+
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonGaragewait2_K2Node_ActorBoundEvent_36_ActionStarted__DelegateSignature Parms{};
+
+	Parms.Character = Character;
+	Parms.ActionSlot = ActionSlot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell4_K2Node_ActorBoundEvent_9_ActionStarted__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell4_K2Node_ActorBoundEvent_9_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell4_K2Node_ActorBoundEvent_9_ActionStarted__DelegateSignature", FnName));
+
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell4_K2Node_ActorBoundEvent_9_ActionStarted__DelegateSignature Parms{};
+
+	Parms.Character = Character;
+	Parms.ActionSlot = ActionSlot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell3_K2Node_ActorBoundEvent_8_ActionStarted__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell3_K2Node_ActorBoundEvent_8_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell3_K2Node_ActorBoundEvent_8_ActionStarted__DelegateSignature", FnName));
+
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell3_K2Node_ActorBoundEvent_8_ActionStarted__DelegateSignature Parms{};
+
+	Parms.Character = Character;
+	Parms.ActionSlot = ActionSlot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell2_K2Node_ActorBoundEvent_7_ActionStarted__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell2_K2Node_ActorBoundEvent_7_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell2_K2Node_ActorBoundEvent_7_ActionStarted__DelegateSignature", FnName));
+
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell2_K2Node_ActorBoundEvent_7_ActionStarted__DelegateSignature Parms{};
+
+	Parms.Character = Character;
+	Parms.ActionSlot = ActionSlot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell1_K2Node_ActorBoundEvent_4_ActionStarted__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell1_K2Node_ActorBoundEvent_4_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell1_K2Node_ActorBoundEvent_4_ActionStarted__DelegateSignature", FnName));
+
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_HoustonCell1_K2Node_ActorBoundEvent_4_ActionStarted__DelegateSignature Parms{};
+
+	Parms.Character = Character;
+	Parms.ActionSlot = ActionSlot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell4_K2Node_ActorBoundEvent_14_ActionStarted__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell4_K2Node_ActorBoundEvent_14_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell4_K2Node_ActorBoundEvent_14_ActionStarted__DelegateSignature", FnName));
+
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell4_K2Node_ActorBoundEvent_14_ActionStarted__DelegateSignature Parms{};
+
+	Parms.Character = Character;
+	Parms.ActionSlot = ActionSlot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell3_K2Node_ActorBoundEvent_13_ActionStarted__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell3_K2Node_ActorBoundEvent_13_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell3_K2Node_ActorBoundEvent_13_ActionStarted__DelegateSignature", FnName));
+
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell3_K2Node_ActorBoundEvent_13_ActionStarted__DelegateSignature Parms{};
+
+	Parms.Character = Character;
+	Parms.ActionSlot = ActionSlot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell2_K2Node_ActorBoundEvent_11_ActionStarted__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell2_K2Node_ActorBoundEvent_11_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell2_K2Node_ActorBoundEvent_11_ActionStarted__DelegateSignature", FnName));
+
+	Params::G_Chus_AI_C_BndEvt__G_Chus_AI_BP_LA_Scripted_GuardWaitForCell2_K2Node_ActorBoundEvent_11_ActionStarted__DelegateSignature Parms{};
+
+	Parms.Character = Character;
+	Parms.ActionSlot = ActionSlot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_FOR_Donut_Box6_K2Node_ActorBoundEvent_23_onPickedUp__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_FOR_Donut_Box6_K2Node_ActorBoundEvent_23_onPickedUp__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_BP_FOR_Donut_Box6_K2Node_ActorBoundEvent_23_onPickedUp__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.SecondaryBlueKeycardTaken
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_FOR_Donut_Box5_K2Node_ActorBoundEvent_22_onPickedUp__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_FOR_Donut_Box5_K2Node_ActorBoundEvent_22_onPickedUp__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_BP_FOR_Donut_Box5_K2Node_ActorBoundEvent_22_onPickedUp__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_FOR_Donut_Box4_K2Node_ActorBoundEvent_20_onPickedUp__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_FOR_Donut_Box4_K2Node_ActorBoundEvent_20_onPickedUp__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_BP_FOR_Donut_Box4_K2Node_ActorBoundEvent_20_onPickedUp__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_FOR_Donut_Box3_K2Node_ActorBoundEvent_19_onPickedUp__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_FOR_Donut_Box3_K2Node_ActorBoundEvent_19_onPickedUp__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_BP_FOR_Donut_Box3_K2Node_ActorBoundEvent_19_onPickedUp__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BndEvt__G_Chus_AI_BP_FOR_Donut_Box2_K2Node_ActorBoundEvent_3_onPickedUp__DelegateSignature
+// (BlueprintEvent)
+
+void AG_Chus_AI_C::BndEvt__G_Chus_AI_BP_FOR_Donut_Box2_K2Node_ActorBoundEvent_3_onPickedUp__DelegateSignature()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_AI_BP_FOR_Donut_Box2_K2Node_ActorBoundEvent_3_onPickedUp__DelegateSignature", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Chus_AI.G_Chus_AI_C.BlueKeycardTaken
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class ASBZInteractionActor*             Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void AG_Chus_AI_C::SecondaryBlueKeycardTaken(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
+void AG_Chus_AI_C::BlueKeycardTaken(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BlueKeycardTaken", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "SecondaryBlueKeycardTaken");
-
-	Params::G_Chus_AI_C_SecondaryBlueKeycardTaken Parms{};
+	Params::G_Chus_AI_C_BlueKeycardTaken Parms{};
 
 	Parms.Interactable = Interactable;
 	Parms.Interactor = Interactor;
@@ -1460,119 +1332,79 @@ void AG_Chus_AI_C::SecondaryBlueKeycardTaken(class ASBZInteractionActor* Interac
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.SpawnElevatorGuardsEastHallF2
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Chus_AI.G_Chus_AI_C.BlackScreenStarted
+// (Event, Public, BlueprintEvent)
 
-void AG_Chus_AI_C::SpawnElevatorGuardsEastHallF2()
+void AG_Chus_AI_C::BlackScreenStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "SpawnElevatorGuardsEastHallF2");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BlackScreenStarted", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.SpawnElevatorGuardsSouthHallF2
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Chus_AI_C::SpawnElevatorGuardsSouthHallF2()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "SpawnElevatorGuardsSouthHallF2");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.ToggleEscortSpawns
+// Function G_Chus_AI.G_Chus_AI_C.BasementMetalDetectorOffline
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EscortPathInt                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    BasementPathOpenForEscort                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Chus_AI_C::ToggleEscortSpawns(int32 EscortPathInt)
+void AG_Chus_AI_C::BasementMetalDetectorOffline(bool BasementPathOpenForEscort)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BasementMetalDetectorOffline", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "ToggleEscortSpawns");
+	Params::G_Chus_AI_C_BasementMetalDetectorOffline Parms{};
 
-	Params::G_Chus_AI_C_ToggleEscortSpawns Parms{};
-
-	Parms.EscortPathInt = EscortPathInt;
+	Parms.BasementPathOpenForEscort = BasementPathOpenForEscort;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.WindowBreak_Clerk1
+// Function G_Chus_AI.G_Chus_AI_C.AddDonutMarker
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Chus_AI_C::WindowBreak_Clerk1()
+void AG_Chus_AI_C::AddDonutMarker()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "WindowBreak_Clerk1");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AddDonutMarker", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.WindowBreak_Clerk2
+// Function G_Chus_AI.G_Chus_AI_C.ActivateLeadGuard
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Chus_AI_C::WindowBreak_Clerk2()
+void AG_Chus_AI_C::ActivateLeadGuard()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "WindowBreak_Clerk2");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateLeadGuard", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.WindowBreak_Clerk3
+// Function G_Chus_AI.G_Chus_AI_C.ActivateCellBlockHouston
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Chus_AI_C::WindowBreak_Clerk3()
+void AG_Chus_AI_C::ActivateCellBlockHouston()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "WindowBreak_Clerk3");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActivateCellBlockHouston", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Chus_AI.G_Chus_AI_C.WindowBreak_Courtroom
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Chus_AI.G_Chus_AI_C.ActionPhaseStarted
+// (Event, Public, BlueprintEvent)
 
-void AG_Chus_AI_C::WindowBreak_Courtroom()
+void AG_Chus_AI_C::ActionPhaseStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "WindowBreak_Courtroom");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Chus_AI.G_Chus_AI_C.WindowBreak_Rotunda
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Chus_AI_C::WindowBreak_Rotunda()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_AI_C", "WindowBreak_Rotunda");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActionPhaseStarted", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<AONE_BP_WallLamp_Blue_C>();
 	}
 };
+DUMPER7_ASSERTS_AONE_BP_WallLamp_Blue_C;
 
 SDK_NAMESPACE_END

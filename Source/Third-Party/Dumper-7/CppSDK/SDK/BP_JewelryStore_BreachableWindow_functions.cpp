@@ -19,14 +19,12 @@ SDK_NAMESPACE_START
 // Function BP_JewelryStore_BreachableWindow.BP_JewelryStore_BreachableWindow_C.GetPropDamageComponent
 // (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// class USBZPropDamageComponent*          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZPropDamageComponent*          ReturnValue_GetPropDamageComponent                     (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 class USBZPropDamageComponent* ABP_JewelryStore_BreachableWindow_C::GetPropDamageComponent() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_JewelryStore_BreachableWindow_C", "GetPropDamageComponent");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetPropDamageComponent", FnName));
 
 	Params::BP_JewelryStore_BreachableWindow_C_GetPropDamageComponent Parms{};
 

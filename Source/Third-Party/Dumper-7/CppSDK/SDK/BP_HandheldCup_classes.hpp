@@ -25,8 +25,8 @@ public:
 	TArray<class UStaticMesh*>                    CupArray;                                          // 0x0578(0x0010)(Edit, BlueprintVisible)
 
 public:
-	void ExecuteUbergraph_BP_HandheldCup(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_HandheldCup(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -42,5 +42,6 @@ public:
 		return GetDefaultObjImpl<ABP_HandheldCup_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_HandheldCup_C;
 
 SDK_NAMESPACE_END

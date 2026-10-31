@@ -36,12 +36,12 @@ public:
 	double                                        Scale_Z;                                           // 0x0450(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_Lure_Radio_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void copyMeshCustomPrimitiveDataToLight();
-	void ExecuteUbergraph_BP_Lure_Sign(int32 EntryPoint);
-	void OnActiveStateChanged(bool bIsActive, bool bDoCosmetics);
-	void ReceiveBeginPlay();
 	void UserConstructionScript();
+	void ReceiveBeginPlay();
+	void OnActiveStateChanged(bool bIsActive_OnActiveStateChanged, bool bDoCosmetics_OnActiveStateChanged);
+	void ExecuteUbergraph_BP_Lure_Sign(int32 EntryPoint);
+	void copyMeshCustomPrimitiveDataToLight();
+	void BndEvt__BP_Lure_Radio_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -57,5 +57,6 @@ public:
 		return GetDefaultObjImpl<ABP_Lure_Sign_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Lure_Sign_C;
 
 SDK_NAMESPACE_END

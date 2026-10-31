@@ -16,23 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function R_NightClub_SecurityRoom.R_NightClub_SecurityRoom_C.BndEvt__R_NightClub_SecurityRoom_SBZPlayerTriggerVolume_PlayerInSecRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function R_NightClub_SecurityRoom.R_NightClub_SecurityRoom_C.OnRandomSublevelPlaced
+// (Event, Public, BlueprintEvent)
 
-void AR_NightClub_SecurityRoom_C::BndEvt__R_NightClub_SecurityRoom_SBZPlayerTriggerVolume_PlayerInSecRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AR_NightClub_SecurityRoom_C::OnRandomSublevelPlaced()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRandomSublevelPlaced", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_NightClub_SecurityRoom_C", "BndEvt__R_NightClub_SecurityRoom_SBZPlayerTriggerVolume_PlayerInSecRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::R_NightClub_SecurityRoom_C_BndEvt__R_NightClub_SecurityRoom_SBZPlayerTriggerVolume_PlayerInSecRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -43,10 +35,8 @@ void AR_NightClub_SecurityRoom_C::BndEvt__R_NightClub_SecurityRoom_SBZPlayerTrig
 
 void AR_NightClub_SecurityRoom_C::ExecuteUbergraph_R_NightClub_SecurityRoom(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_NightClub_SecurityRoom_C", "ExecuteUbergraph_R_NightClub_SecurityRoom");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "R_NightClub_SecurityRoom_C", "ExecuteUbergraph_R_NightClub_SecurityRoom", FuncInfo);
 
 	Params::R_NightClub_SecurityRoom_C_ExecuteUbergraph_R_NightClub_SecurityRoom Parms{};
 
@@ -56,17 +46,21 @@ void AR_NightClub_SecurityRoom_C::ExecuteUbergraph_R_NightClub_SecurityRoom(int3
 }
 
 
-// Function R_NightClub_SecurityRoom.R_NightClub_SecurityRoom_C.OnRandomSublevelPlaced
-// (Event, Public, BlueprintEvent)
+// Function R_NightClub_SecurityRoom.R_NightClub_SecurityRoom_C.BndEvt__R_NightClub_SecurityRoom_SBZPlayerTriggerVolume_PlayerInSecRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AR_NightClub_SecurityRoom_C::OnRandomSublevelPlaced()
+void AR_NightClub_SecurityRoom_C::BndEvt__R_NightClub_SecurityRoom_SBZPlayerTriggerVolume_PlayerInSecRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__R_NightClub_SecurityRoom_SBZPlayerTriggerVolume_PlayerInSecRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("R_NightClub_SecurityRoom_C", "OnRandomSublevelPlaced");
+	Params::R_NightClub_SecurityRoom_C_BndEvt__R_NightClub_SecurityRoom_SBZPlayerTriggerVolume_PlayerInSecRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

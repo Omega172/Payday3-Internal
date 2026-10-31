@@ -27,10 +27,10 @@ public:
 	class ASBZRoomVolume*                         SBZRoomVolume_MaintainanceRoom_ExecuteUbergraph_G_Bebe_Coverpoints_RefProperty; // 0x03E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BranchBank_Kitchen();
-	void BranchBank_Roof();
-	void BranchBank_Stairs();
 	void ExecuteUbergraph_G_Bebe_Coverpoints(int32 EntryPoint);
+	void BranchBank_Stairs();
+	void BranchBank_Roof();
+	void BranchBank_Kitchen();
 
 public:
 	static class UClass* StaticClass()
@@ -46,5 +46,6 @@ public:
 		return GetDefaultObjImpl<AG_Bebe_Coverpoints_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_Bebe_Coverpoints_C;
 
 SDK_NAMESPACE_END

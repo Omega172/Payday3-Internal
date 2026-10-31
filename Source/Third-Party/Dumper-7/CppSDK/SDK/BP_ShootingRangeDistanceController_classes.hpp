@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "E_ShootingRangeTargetDistances_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "E_ShootingRangeTargetDistances_structs.hpp"
 #include "Starbreeze_classes.hpp"
 
 
@@ -58,15 +58,15 @@ public:
 	int32                                         oldState;                                          // 0x0480(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_ShootingRangeDistanceController(int32 EntryPoint);
-	void getButton(int32 Index_0, class UStaticMeshComponent** button, class USBZInteractableComponent** interactable, class UStaticMeshComponent** light, class USphereComponent** collision, E_ShootingRangeTargetDistances* distance);
-	int32 getIndexFromInteractable(class USBZBaseInteractableComponent* interactable);
-	void onAckCompleteInteraction(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void pushButton__FinishedFunc();
-	void pushButton__UpdateFunc();
-	void ReceiveBeginPlay();
 	void UserConstructionScript();
+	void ReceiveBeginPlay();
+	void pushButton__UpdateFunc();
+	void pushButton__FinishedFunc();
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void onAckCompleteInteraction(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	int32 getIndexFromInteractable(class USBZBaseInteractableComponent* interactable);
+	void getButton(int32 Index_0, class UStaticMeshComponent** button, class USBZInteractableComponent** interactable, class UStaticMeshComponent** light, class USphereComponent** collision, E_ShootingRangeTargetDistances* distance);
+	void ExecuteUbergraph_BP_ShootingRangeDistanceController(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -82,5 +82,6 @@ public:
 		return GetDefaultObjImpl<ABP_ShootingRangeDistanceController_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ShootingRangeDistanceController_C;
 
 SDK_NAMESPACE_END

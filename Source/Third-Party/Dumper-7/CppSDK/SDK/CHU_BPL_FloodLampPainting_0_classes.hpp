@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<CHU_BPL_FloodLampPainting_0::ACHU_BPL_FloodLampPainting_C>();
 	}
 };
+DUMPER7_ASSERTS_CHU_BPL_FloodLampPainting_0__ACHU_BPL_FloodLampPainting_C;
 
 SDK_NAMESPACE_END

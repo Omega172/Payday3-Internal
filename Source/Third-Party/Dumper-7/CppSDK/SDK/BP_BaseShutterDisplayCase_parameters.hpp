@@ -18,36 +18,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_BaseShutterDisplayCase.BP_BaseShutterDisplayCase_C.BP_OnGlassBroken
-// 0x0001 (0x0001 - 0x0000)
-struct BP_BaseShutterDisplayCase_C_BP_OnGlassBroken final
-{
-public:
-	bool                                          bDoCosmetics;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_BaseShutterDisplayCase.BP_BaseShutterDisplayCase_C.BP_OnStateChanged
-// 0x0003 (0x0003 - 0x0000)
-struct BP_BaseShutterDisplayCase_C_BP_OnStateChanged final
-{
-public:
-	ESBZDisplayCaseState                          OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZDisplayCaseState                          NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_BaseShutterDisplayCase.BP_BaseShutterDisplayCase_C.EnableShutter
-// 0x0005 (0x0005 - 0x0000)
-struct BP_BaseShutterDisplayCase_C_EnableShutter final
-{
-public:
-	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECollisionEnabled                             Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECollisionEnabled                             Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ECollisionEnabled                             K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_BaseShutterDisplayCase.BP_BaseShutterDisplayCase_C.ExecuteUbergraph_BP_BaseShutterDisplayCase
 // 0x0038 (0x0038 - 0x0000)
 struct BP_BaseShutterDisplayCase_C_ExecuteUbergraph_BP_BaseShutterDisplayCase final
@@ -67,6 +37,40 @@ public:
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0035(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bDoCosmetics;                         // 0x0036(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_BaseShutterDisplayCase_C_ExecuteUbergraph_BP_BaseShutterDisplayCase;
+
+// Function BP_BaseShutterDisplayCase.BP_BaseShutterDisplayCase_C.EnableShutter
+// 0x0005 (0x0005 - 0x0000)
+struct BP_BaseShutterDisplayCase_C_EnableShutter final
+{
+public:
+	bool                                          bInEnable;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECollisionEnabled                             Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECollisionEnabled                             Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ECollisionEnabled                             K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BaseShutterDisplayCase_C_EnableShutter;
+
+// Function BP_BaseShutterDisplayCase.BP_BaseShutterDisplayCase_C.BP_OnStateChanged
+// 0x0003 (0x0003 - 0x0000)
+struct BP_BaseShutterDisplayCase_C_BP_OnStateChanged final
+{
+public:
+	ESBZDisplayCaseState                          OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZDisplayCaseState                          NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BaseShutterDisplayCase_C_BP_OnStateChanged;
+
+// Function BP_BaseShutterDisplayCase.BP_BaseShutterDisplayCase_C.BP_OnGlassBroken
+// 0x0001 (0x0001 - 0x0000)
+struct BP_BaseShutterDisplayCase_C_BP_OnGlassBroken final
+{
+public:
+	bool                                          bDoCosmetics;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BaseShutterDisplayCase_C_BP_OnGlassBroken;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

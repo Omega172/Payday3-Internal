@@ -18,18 +18,18 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_HackingMinigameActor_DisplayCase.BP_HackingMinigameActor_DisplayCase_C
-// 0x0020 (0x03D0 - 0x03B0)
+// 0x0020 (0x03D8 - 0x03B8)
 class ABP_HackingMinigameActor_DisplayCase_C final : public ASBZHackingMinigameActor
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03B0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UMaterialInterface*                     DynMat;                                            // 0x03B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                           Color;                                             // 0x03C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03B8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UMaterialInterface*                     DynMat;                                            // 0x03C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                           Color;                                             // 0x03C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnEnabledStateChanged(bool bEnabled, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_HackingMinigameActor_DisplayCase(int32 EntryPoint);
 	void UserConstructionScript();
+	void ExecuteUbergraph_BP_HackingMinigameActor_DisplayCase(int32 EntryPoint);
+	void BP_OnEnabledStateChanged(bool bEnabled_BP_OnEnabledStateChanged, bool bDoCosmetics_BP_OnEnabledStateChanged);
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<ABP_HackingMinigameActor_DisplayCase_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_HackingMinigameActor_DisplayCase_C;
 
 SDK_NAMESPACE_END

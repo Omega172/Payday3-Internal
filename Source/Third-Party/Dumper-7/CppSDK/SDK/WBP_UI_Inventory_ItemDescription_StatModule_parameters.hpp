@@ -14,6 +14,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_UI_Inventory_ItemDescription_StatModule.WBP_UI_Inventory_ItemDescription_StatModule_C.ExecuteUbergraph_WBP_UI_Inventory_ItemDescription_StatModule
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_UI_Inventory_ItemDescription_StatModule_C_ExecuteUbergraph_WBP_UI_Inventory_ItemDescription_StatModule final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Inventory_ItemDescription_StatModule_C_ExecuteUbergraph_WBP_UI_Inventory_ItemDescription_StatModule;
+
 // Function WBP_UI_Inventory_ItemDescription_StatModule.WBP_UI_Inventory_ItemDescription_StatModule_C.SetStat
 // 0x0080 (0x0080 - 0x0000)
 struct WBP_UI_Inventory_ItemDescription_StatModule_C_SetStat final
@@ -37,15 +46,6 @@ public:
 	float                                         CallFunc_SetPercent_InPercent_ImplicitCast_1;      // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_UI_Inventory_ItemDescription_StatModule_C_SetStat;
-
-// Function WBP_UI_Inventory_ItemDescription_StatModule.WBP_UI_Inventory_ItemDescription_StatModule_C.ExecuteUbergraph_WBP_UI_Inventory_ItemDescription_StatModule
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_UI_Inventory_ItemDescription_StatModule_C_ExecuteUbergraph_WBP_UI_Inventory_ItemDescription_StatModule final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Inventory_ItemDescription_StatModule_C_ExecuteUbergraph_WBP_UI_Inventory_ItemDescription_StatModule;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

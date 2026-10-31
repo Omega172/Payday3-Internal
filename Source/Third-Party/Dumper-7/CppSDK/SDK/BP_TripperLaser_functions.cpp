@@ -16,29 +16,49 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_TripperLaser.BP_TripperLaser_C.BP_OnLaserTripped
+// Function BP_TripperLaser.BP_TripperLaser_C.OnToolDestroyed
 // (Event, Protected, BlueprintEvent)
 
-void ABP_TripperLaser_C::BP_OnLaserTripped()
+void ABP_TripperLaser_C::OnToolDestroyed()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TripperLaser_C", "BP_OnLaserTripped");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnToolDestroyed", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_TripperLaser.BP_TripperLaser_C.BP_OnLaserUntripped
+// Function BP_TripperLaser.BP_TripperLaser_C.OnSensorAmmoDepleted
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_TripperLaser_C::OnSensorAmmoDepleted()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSensorAmmoDepleted", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_TripperLaser.BP_TripperLaser_C.OnReady
 // (Event, Protected, BlueprintEvent)
 
-void ABP_TripperLaser_C::BP_OnLaserUntripped()
+void ABP_TripperLaser_C::OnReady()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnReady", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TripperLaser_C", "BP_OnLaserUntripped");
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_TripperLaser.BP_TripperLaser_C.OnActivated
+// (Event, Protected, BlueprintEvent)
+
+void ABP_TripperLaser_C::OnActivated()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnActivated", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -51,10 +71,8 @@ void ABP_TripperLaser_C::BP_OnLaserUntripped()
 
 void ABP_TripperLaser_C::ExecuteUbergraph_BP_TripperLaser(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TripperLaser_C", "ExecuteUbergraph_BP_TripperLaser");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_TripperLaser_C", "ExecuteUbergraph_BP_TripperLaser", FuncInfo);
 
 	Params::BP_TripperLaser_C_ExecuteUbergraph_BP_TripperLaser Parms{};
 
@@ -64,57 +82,25 @@ void ABP_TripperLaser_C::ExecuteUbergraph_BP_TripperLaser(int32 EntryPoint)
 }
 
 
-// Function BP_TripperLaser.BP_TripperLaser_C.OnActivated
+// Function BP_TripperLaser.BP_TripperLaser_C.BP_OnLaserUntripped
 // (Event, Protected, BlueprintEvent)
 
-void ABP_TripperLaser_C::OnActivated()
+void ABP_TripperLaser_C::BP_OnLaserUntripped()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TripperLaser_C", "OnActivated");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnLaserUntripped", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_TripperLaser.BP_TripperLaser_C.OnReady
+// Function BP_TripperLaser.BP_TripperLaser_C.BP_OnLaserTripped
 // (Event, Protected, BlueprintEvent)
 
-void ABP_TripperLaser_C::OnReady()
+void ABP_TripperLaser_C::BP_OnLaserTripped()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TripperLaser_C", "OnReady");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_TripperLaser.BP_TripperLaser_C.OnSensorAmmoDepleted
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_TripperLaser_C::OnSensorAmmoDepleted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TripperLaser_C", "OnSensorAmmoDepleted");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_TripperLaser.BP_TripperLaser_C.OnToolDestroyed
-// (Event, Protected, BlueprintEvent)
-
-void ABP_TripperLaser_C::OnToolDestroyed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TripperLaser_C", "OnToolDestroyed");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnLaserTripped", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

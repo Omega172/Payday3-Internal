@@ -35,15 +35,15 @@ public:
 	int32                                         currentMinute;                                     // 0x03A4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_ONE_TimedClock_01_timer_K2Node_ComponentBoundEvent_0_SBZTimerDelegate__DelegateSignature();
-	void ExecuteUbergraph_BP_ONE_TimedClock_01(int32 EntryPoint);
-	void getCurrentTime(int32* Hours, int32* Minutes);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void postTimerUpdate();
-	void ReceiveTick(float DeltaSeconds);
-	void setTargetTime(int32 targetHour_0, int32 targetMinute_0);
-	void setWatchHead(int32 hour, int32 minute);
 	void UserConstructionScript();
+	void setWatchHead(int32 hour, int32 minute);
+	void setTargetTime(int32 targetHour, int32 targetMinute);
+	void ReceiveTick(float DeltaSeconds_ReceiveTick);
+	void postTimerUpdate();
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void getCurrentTime(int32* Hours, int32* Minutes);
+	void ExecuteUbergraph_BP_ONE_TimedClock_01(int32 EntryPoint);
+	void BndEvt__BP_ONE_TimedClock_01_timer_K2Node_ComponentBoundEvent_0_SBZTimerDelegate__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()
@@ -59,5 +59,6 @@ public:
 		return GetDefaultObjImpl<ABP_ONE_TimedClock_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ONE_TimedClock_01_C;
 
 SDK_NAMESPACE_END

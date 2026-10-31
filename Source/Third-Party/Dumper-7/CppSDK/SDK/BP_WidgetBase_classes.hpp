@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<ABP_WidgetBase_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_WidgetBase_C;
 
 SDK_NAMESPACE_END

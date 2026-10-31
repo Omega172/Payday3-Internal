@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABPL_StripLight_Little_White_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_StripLight_Little_White_C;
 
 SDK_NAMESPACE_END

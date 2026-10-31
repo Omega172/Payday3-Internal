@@ -16,25 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Spawner_Cop_HostageTaker.BP_Spawner_Cop_HostageTaker_C.CustomEvent_0
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function BP_Spawner_Cop_HostageTaker.BP_Spawner_Cop_HostageTaker_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_Spawner_Cop_HostageTaker_C::CustomEvent_0(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
+void ABP_Spawner_Cop_HostageTaker_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Spawner_Cop_HostageTaker_C", "CustomEvent_0");
-
-	Params::BP_Spawner_Cop_HostageTaker_C_CustomEvent_0 Parms{};
-
-	Parms.SpawnedPawn = SpawnedPawn;
-	Parms.Spawnedloot = Spawnedloot;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -45,10 +35,8 @@ void ABP_Spawner_Cop_HostageTaker_C::CustomEvent_0(class APawn* SpawnedPawn, cla
 
 void ABP_Spawner_Cop_HostageTaker_C::ExecuteUbergraph_BP_Spawner_Cop_HostageTaker(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Spawner_Cop_HostageTaker_C", "ExecuteUbergraph_BP_Spawner_Cop_HostageTaker");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Spawner_Cop_HostageTaker_C", "ExecuteUbergraph_BP_Spawner_Cop_HostageTaker", FuncInfo);
 
 	Params::BP_Spawner_Cop_HostageTaker_C_ExecuteUbergraph_BP_Spawner_Cop_HostageTaker Parms{};
 
@@ -58,17 +46,23 @@ void ABP_Spawner_Cop_HostageTaker_C::ExecuteUbergraph_BP_Spawner_Cop_HostageTake
 }
 
 
-// Function BP_Spawner_Cop_HostageTaker.BP_Spawner_Cop_HostageTaker_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_Spawner_Cop_HostageTaker.BP_Spawner_Cop_HostageTaker_C.CustomEvent_0
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APawn*                            SpawnedPawn                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZCarriedStaticInteractionActor*Spawnedloot                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Spawner_Cop_HostageTaker_C::ReceiveBeginPlay()
+void ABP_Spawner_Cop_HostageTaker_C::CustomEvent_0(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CustomEvent_0", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Spawner_Cop_HostageTaker_C", "ReceiveBeginPlay");
+	Params::BP_Spawner_Cop_HostageTaker_C_CustomEvent_0 Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.SpawnedPawn = SpawnedPawn;
+	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

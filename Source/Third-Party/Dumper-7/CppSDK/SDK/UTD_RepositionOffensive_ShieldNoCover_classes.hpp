@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UUTD_RepositionOffensive_ShieldNoCover_C>();
 	}
 };
+DUMPER7_ASSERTS_UUTD_RepositionOffensive_ShieldNoCover_C;
 
 SDK_NAMESPACE_END

@@ -16,37 +16,25 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_WinchCable.BP_WinchCable_C.ExecuteUbergraph_BP_WinchCable
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_WinchCable.BP_WinchCable_C.SetWinchUpActive
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ASBZAerialVehicle*                Helicopter                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class FName                             WinchSocketName                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    Active                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_WinchCable_C::ExecuteUbergraph_BP_WinchCable(int32 EntryPoint)
+void ABP_WinchCable_C::SetWinchUpActive(class ASBZAerialVehicle* Helicopter, class FName WinchSocketName, bool Active)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetWinchUpActive", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WinchCable_C", "ExecuteUbergraph_BP_WinchCable");
+	Params::BP_WinchCable_C_SetWinchUpActive Parms{};
 
-	Params::BP_WinchCable_C_ExecuteUbergraph_BP_WinchCable Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Helicopter = Helicopter;
+	Parms.WinchSocketName = WinchSocketName;
+	Parms.Active = Active;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_WinchCable.BP_WinchCable_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_WinchCable_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WinchCable_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -57,10 +45,8 @@ void ABP_WinchCable_C::ReceiveBeginPlay()
 
 void ABP_WinchCable_C::SetupCable(const struct FVector& FloorLocation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WinchCable_C", "SetupCable");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetupCable", FnName));
 
 	Params::BP_WinchCable_C_SetupCable Parms{};
 
@@ -70,25 +56,31 @@ void ABP_WinchCable_C::SetupCable(const struct FVector& FloorLocation)
 }
 
 
-// Function BP_WinchCable.BP_WinchCable_C.SetWinchUpActive
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class ASBZAerialVehicle*                Helicopter                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class FName                             WinchSocketName                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Active                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_WinchCable.BP_WinchCable_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_WinchCable_C::SetWinchUpActive(class ASBZAerialVehicle* Helicopter, class FName WinchSocketName, bool Active)
+void ABP_WinchCable_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_WinchCable_C", "SetWinchUpActive");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_WinchCable_C_SetWinchUpActive Parms{};
 
-	Parms.Helicopter = Helicopter;
-	Parms.WinchSocketName = WinchSocketName;
-	Parms.Active = Active;
+// Function BP_WinchCable.BP_WinchCable_C.ExecuteUbergraph_BP_WinchCable
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_WinchCable_C::ExecuteUbergraph_BP_WinchCable(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_WinchCable_C", "ExecuteUbergraph_BP_WinchCable", FuncInfo);
+
+	Params::BP_WinchCable_C_ExecuteUbergraph_BP_WinchCable Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

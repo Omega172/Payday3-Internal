@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ABP_NavigationSigns_01_Restrooms_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_NavigationSigns_01_Restrooms_C;
 
 SDK_NAMESPACE_END

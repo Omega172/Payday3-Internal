@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ASHI_BPL_Fluorescent_Wall_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ASHI_BPL_Fluorescent_Wall_01_C;
 
 SDK_NAMESPACE_END

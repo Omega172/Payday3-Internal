@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ABPL_SquareModern_Little_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_SquareModern_Little_C;
 
 SDK_NAMESPACE_END

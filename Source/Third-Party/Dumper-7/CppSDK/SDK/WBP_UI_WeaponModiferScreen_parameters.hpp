@@ -19,140 +19,32 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.UpdateActiveButtonControlsReference
-// 0x0428 (0x0428 - 0x0000)
-struct WBP_UI_WeaponModiferScreen_C_UpdateActiveButtonControlsReference final
+// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.ConstructBlotSlotTexts
+// 0x0118 (0x0118 - 0x0000)
+struct WBP_UI_WeaponModiferScreen_C_ConstructBlotSlotTexts final
 {
 public:
-	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZWeaponPartApplyStatus                     Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable;                                // 0x0008(0x0010)()
-	class FText                                   Temp_text_Variable_1;                              // 0x0018(0x0010)()
-	class FText                                   Temp_text_Variable_2;                              // 0x0028(0x0010)()
-	class FText                                   Temp_text_Variable_3;                              // 0x0038(0x0010)()
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x0048(0x0038)()
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_1;     // 0x0080(0x0038)()
-	bool                                          CallFunc_IsInputTypeController_ReturnValue;        // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_2;     // 0x00C0(0x0038)()
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_3;     // 0x00F8(0x0038)()
-	bool                                          CallFunc_IsInputTypeController_ReturnValue_1;      // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_131[0x7];                                      // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_4;     // 0x0138(0x0038)()
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_5;     // 0x0170(0x0038)()
-	bool                                          CallFunc_IsInputTypeController_ReturnValue_2;      // 0x01A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1A9[0x7];                                      // 0x01A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_6;     // 0x01B0(0x0038)()
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_7;     // 0x01E8(0x0038)()
-	TDelegate<void(class FName ActionName)>       K2Node_CreateDelegate_OutputDelegate;              // 0x0220(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_234[0x4];                                      // 0x0234(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x0238(0x0010)(ReferenceParm)
-	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array_1;                          // 0x0248(0x0010)(ReferenceParm)
-	bool                                          Temp_bool_Variable_2;                              // 0x0258(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_259[0x7];                                      // 0x0259(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSBZButtonControlReference>     K2Node_Select_Default;                             // 0x0260(0x0010)(ReferenceParm)
-	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x0270(0x0028)()
-	bool                                          Temp_bool_Variable_3;                              // 0x0298(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_299[0x7];                                      // 0x0299(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_8;     // 0x02A0(0x0038)()
-	bool                                          CallFunc_IsDefaultButton_ReturnValue;              // 0x02D8(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2D9[0x7];                                      // 0x02D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array_2;                          // 0x02E0(0x0010)(ReferenceParm)
-	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array_3;                          // 0x02F0(0x0010)(ReferenceParm)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0300(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_301[0x7];                                      // 0x0301(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSBZButtonControlReference>     K2Node_Select_Default_1;                           // 0x0308(0x0010)(ReferenceParm)
-	ESBZWeaponPartApplyStatus                     CallFunc_GetPartApplyStatus_ReturnValue;           // 0x0318(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_319[0x7];                                      // 0x0319(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_9;     // 0x0320(0x0038)()
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0358(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_359[0x7];                                      // 0x0359(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select_Default_2;                           // 0x0360(0x0010)()
-	TDelegate<void(class FName ActionName)>       K2Node_CreateDelegate_OutputDelegate_1;            // 0x0370(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_384[0x4];                                      // 0x0384(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_10;    // 0x0388(0x0038)()
-	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array_4;                          // 0x03C0(0x0010)(ReferenceParm)
-	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array_5;                          // 0x03D0(0x0010)(ReferenceParm)
-	TArray<struct FSBZButtonControlReference>     K2Node_Select_Default_3;                           // 0x03E0(0x0010)(ReferenceParm)
-	TArray<struct FSBZButtonControlReference>     K2Node_Select_Default_4;                           // 0x03F0(0x0010)(ReferenceParm)
-	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference_1;    // 0x0400(0x0028)()
+	const class USBZWeaponPartDataAsset*          InWeaponPart;                                      // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   OutSlotNames;                                      // 0x0008(0x0010)(Parm, OutParm)
+	bool                                          bHasValues;                                        // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   OutText;                                           // 0x0020(0x0010)(Edit, BlueprintVisible)
+	TArray<class FText>                           CallFunc_GetBlockedSlotNamesForWeaponPart_OutSlotNames; // 0x0030(0x0010)(ReferenceParm)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Array_Get_Item;                           // 0x0048(0x0010)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0058(0x0048)(HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_AA[0x2];                                       // 0x00AA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x00B0(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00F8(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0108(0x0010)()
 };
-DUMPER7_ASSERTS_WBP_UI_WeaponModiferScreen_C_UpdateActiveButtonControlsReference;
-
-// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.SetPartPadding
-// 0x0040 (0x0040 - 0x0000)
-struct WBP_UI_WeaponModiferScreen_C_SetPartPadding final
-{
-public:
-	int32                                         Temp_int_Variable;                                 // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UHorizontalBoxSlot*                     CallFunc_SlotAsHorizontalBoxSlot_ReturnValue;      // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x002C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_WeaponModiferScreen_C_SetPartPadding;
-
-// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_WeaponModiferScreen_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_WeaponModiferScreen_C_PreConstruct;
-
-// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.OnWeaponPartButtonSelected
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_WeaponModiferScreen_C_OnWeaponPartButtonSelected final
-{
-public:
-	const class USBZMainMenuWeaponPartProgressionButton* SelectedButton_OnWeaponPartButtonSelected;  // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_WeaponModiferScreen_C_OnWeaponPartButtonSelected;
-
-// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.OnWeaponPartButtonEquipped
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_WeaponModiferScreen_C_OnWeaponPartButtonEquipped final
-{
-public:
-	const class USBZMainMenuWeaponPartProgressionButton* EquippedButton_OnWeaponPartButtonEquipped;  // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_WeaponModiferScreen_C_OnWeaponPartButtonEquipped;
-
-// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.OnGainedStackFocused
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_WeaponModiferScreen_C_OnGainedStackFocused final
-{
-public:
-	class FName                                   PreviousValue_OnGainedStackFocused;                // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_WeaponModiferScreen_C_OnGainedStackFocused;
-
-// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.OnControlsReferenceClicked
-// 0x000C (0x000C - 0x0000)
-struct WBP_UI_WeaponModiferScreen_C_OnControlsReferenceClicked final
-{
-public:
-	class FName                                   InActionInput;                                     // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_WeaponModiferScreen_C_OnControlsReferenceClicked;
-
-// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.NewWeaponPartFocused
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_WeaponModiferScreen_C_NewWeaponPartFocused final
-{
-public:
-	const class USBZMainMenuWeaponPartProgressionButton* NewFocusedButton_NewWeaponPartFocused;      // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_WeaponModiferScreen_C_NewWeaponPartFocused;
+DUMPER7_ASSERTS_WBP_UI_WeaponModiferScreen_C_ConstructBlotSlotTexts;
 
 // Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.ExecuteUbergraph_WBP_UI_WeaponModiferScreen
 // 0x0288 (0x0288 - 0x0000)
@@ -240,32 +132,140 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_WeaponModiferScreen_C_ExecuteUbergraph_WBP_UI_WeaponModiferScreen;
 
-// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.ConstructBlotSlotTexts
-// 0x0118 (0x0118 - 0x0000)
-struct WBP_UI_WeaponModiferScreen_C_ConstructBlotSlotTexts final
+// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.NewWeaponPartFocused
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_WeaponModiferScreen_C_NewWeaponPartFocused final
 {
 public:
-	const class USBZWeaponPartDataAsset*          InWeaponPart;                                      // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   OutSlotNames;                                      // 0x0008(0x0010)(Parm, OutParm)
-	bool                                          bHasValues;                                        // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   OutText;                                           // 0x0020(0x0010)(Edit, BlueprintVisible)
-	TArray<class FText>                           CallFunc_GetBlockedSlotNamesForWeaponPart_OutSlotNames; // 0x0030(0x0010)(ReferenceParm)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Array_Get_Item;                           // 0x0048(0x0010)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0058(0x0048)(HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_AA[0x2];                                       // 0x00AA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x00B0(0x0048)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00F8(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0108(0x0010)()
+	const class USBZMainMenuWeaponPartProgressionButton* NewFocusedButton;                           // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_WeaponModiferScreen_C_ConstructBlotSlotTexts;
+DUMPER7_ASSERTS_WBP_UI_WeaponModiferScreen_C_NewWeaponPartFocused;
+
+// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.OnControlsReferenceClicked
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_WeaponModiferScreen_C_OnControlsReferenceClicked final
+{
+public:
+	class FName                                   InActionInput;                                     // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_WeaponModiferScreen_C_OnControlsReferenceClicked;
+
+// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.OnGainedStackFocused
+// 0x000C (0x000C - 0x0000)
+struct WBP_UI_WeaponModiferScreen_C_OnGainedStackFocused final
+{
+public:
+	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_WeaponModiferScreen_C_OnGainedStackFocused;
+
+// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.OnWeaponPartButtonEquipped
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_WeaponModiferScreen_C_OnWeaponPartButtonEquipped final
+{
+public:
+	const class USBZMainMenuWeaponPartProgressionButton* EquippedButton;                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_WeaponModiferScreen_C_OnWeaponPartButtonEquipped;
+
+// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.OnWeaponPartButtonSelected
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_WeaponModiferScreen_C_OnWeaponPartButtonSelected final
+{
+public:
+	const class USBZMainMenuWeaponPartProgressionButton* SelectedButton;                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_WeaponModiferScreen_C_OnWeaponPartButtonSelected;
+
+// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_WeaponModiferScreen_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_WeaponModiferScreen_C_PreConstruct;
+
+// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.SetPartPadding
+// 0x0040 (0x0040 - 0x0000)
+struct WBP_UI_WeaponModiferScreen_C_SetPartPadding final
+{
+public:
+	int32                                         Temp_int_Variable;                                 // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UHorizontalBoxSlot*                     CallFunc_SlotAsHorizontalBoxSlot_ReturnValue;      // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x002C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_UI_WeaponModiferScreen_C_SetPartPadding;
+
+// Function WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C.UpdateActiveButtonControlsReference
+// 0x0428 (0x0428 - 0x0000)
+struct WBP_UI_WeaponModiferScreen_C_UpdateActiveButtonControlsReference final
+{
+public:
+	bool                                          Temp_bool_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZWeaponPartApplyStatus                     Temp_byte_Variable;                                // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable;                                // 0x0008(0x0010)()
+	class FText                                   Temp_text_Variable_1;                              // 0x0018(0x0010)()
+	class FText                                   Temp_text_Variable_2;                              // 0x0028(0x0010)()
+	class FText                                   Temp_text_Variable_3;                              // 0x0038(0x0010)()
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x0048(0x0038)()
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_1;     // 0x0080(0x0038)()
+	bool                                          CallFunc_IsInputTypeController_ReturnValue;        // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_B9[0x7];                                       // 0x00B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_2;     // 0x00C0(0x0038)()
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_3;     // 0x00F8(0x0038)()
+	bool                                          CallFunc_IsInputTypeController_ReturnValue_1;      // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_131[0x7];                                      // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_4;     // 0x0138(0x0038)()
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_5;     // 0x0170(0x0038)()
+	bool                                          CallFunc_IsInputTypeController_ReturnValue_2;      // 0x01A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1A9[0x7];                                      // 0x01A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_6;     // 0x01B0(0x0038)()
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_7;     // 0x01E8(0x0038)()
+	TDelegate<void(class FName ActionName)>       K2Node_CreateDelegate_OutputDelegate;              // 0x0220(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_234[0x4];                                      // 0x0234(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x0238(0x0010)(ReferenceParm)
+	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array_1;                          // 0x0248(0x0010)(ReferenceParm)
+	bool                                          Temp_bool_Variable_2;                              // 0x0258(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_259[0x7];                                      // 0x0259(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSBZButtonControlReference>     K2Node_Select_Default;                             // 0x0260(0x0010)(ReferenceParm)
+	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x0270(0x0028)()
+	bool                                          Temp_bool_Variable_3;                              // 0x0298(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_299[0x7];                                      // 0x0299(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_8;     // 0x02A0(0x0038)()
+	bool                                          CallFunc_IsDefaultButton_ReturnValue;              // 0x02D8(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2D9[0x7];                                      // 0x02D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array_2;                          // 0x02E0(0x0010)(ReferenceParm)
+	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array_3;                          // 0x02F0(0x0010)(ReferenceParm)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0300(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_301[0x7];                                      // 0x0301(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSBZButtonControlReference>     K2Node_Select_Default_1;                           // 0x0308(0x0010)(ReferenceParm)
+	ESBZWeaponPartApplyStatus                     CallFunc_GetPartApplyStatus_ReturnValue;           // 0x0318(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_319[0x7];                                      // 0x0319(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_9;     // 0x0320(0x0038)()
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0358(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_359[0x7];                                      // 0x0359(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_Select_Default_2;                           // 0x0360(0x0010)()
+	TDelegate<void(class FName ActionName)>       K2Node_CreateDelegate_OutputDelegate_1;            // 0x0370(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_384[0x4];                                      // 0x0384(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_10;    // 0x0388(0x0038)()
+	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array_4;                          // 0x03C0(0x0010)(ReferenceParm)
+	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array_5;                          // 0x03D0(0x0010)(ReferenceParm)
+	TArray<struct FSBZButtonControlReference>     K2Node_Select_Default_3;                           // 0x03E0(0x0010)(ReferenceParm)
+	TArray<struct FSBZButtonControlReference>     K2Node_Select_Default_4;                           // 0x03F0(0x0010)(ReferenceParm)
+	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference_1;    // 0x0400(0x0028)()
+};
+DUMPER7_ASSERTS_WBP_UI_WeaponModiferScreen_C_UpdateActiveButtonControlsReference;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

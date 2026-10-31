@@ -16,21 +16,53 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_RoomSpeakerSystemBase.BP_RoomSpeakerSystemBase_C.ExecuteUbergraph_BP_RoomSpeakerSystemBase
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_RoomSpeakerSystemBase.BP_RoomSpeakerSystemBase_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_RoomSpeakerSystemBase_C::ExecuteUbergraph_BP_RoomSpeakerSystemBase(int32 EntryPoint)
+void ABP_RoomSpeakerSystemBase_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RoomSpeakerSystemBase_C", "ExecuteUbergraph_BP_RoomSpeakerSystemBase");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_RoomSpeakerSystemBase_C_ExecuteUbergraph_BP_RoomSpeakerSystemBase Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+// Function BP_RoomSpeakerSystemBase.BP_RoomSpeakerSystemBase_C.setAudioState
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_RoomSpeakerSystemBase_C::setAudioState(int32 NewState)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setAudioState", FnName));
+
+	Params::BP_RoomSpeakerSystemBase_C_setAudioState Parms{};
+
+	Parms.NewState = NewState;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_RoomSpeakerSystemBase.BP_RoomSpeakerSystemBase_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   OldState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_RoomSpeakerSystemBase_C::OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_RoomSpeakerSystemBase_C_OnStateChanged Parms{};
+
+	Parms.OldState_OnStateChanged = OldState_OnStateChanged;
+	Parms.NewState_OnStateChanged = NewState_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -43,10 +75,8 @@ void ABP_RoomSpeakerSystemBase_C::ExecuteUbergraph_BP_RoomSpeakerSystemBase(int3
 
 void ABP_RoomSpeakerSystemBase_C::getWorldPositions(TArray<struct FTransform>* worldPositions)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RoomSpeakerSystemBase_C", "getWorldPositions");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"getWorldPositions", FnName));
 
 	Params::BP_RoomSpeakerSystemBase_C_getWorldPositions Parms{};
 
@@ -57,61 +87,21 @@ void ABP_RoomSpeakerSystemBase_C::getWorldPositions(TArray<struct FTransform>* w
 }
 
 
-// Function BP_RoomSpeakerSystemBase.BP_RoomSpeakerSystemBase_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
+// Function BP_RoomSpeakerSystemBase.BP_RoomSpeakerSystemBase_C.ExecuteUbergraph_BP_RoomSpeakerSystemBase
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_RoomSpeakerSystemBase_C::OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics)
+void ABP_RoomSpeakerSystemBase_C::ExecuteUbergraph_BP_RoomSpeakerSystemBase(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_RoomSpeakerSystemBase_C", "ExecuteUbergraph_BP_RoomSpeakerSystemBase", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RoomSpeakerSystemBase_C", "OnStateChanged");
+	Params::BP_RoomSpeakerSystemBase_C_ExecuteUbergraph_BP_RoomSpeakerSystemBase Parms{};
 
-	Params::BP_RoomSpeakerSystemBase_C_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_RoomSpeakerSystemBase.BP_RoomSpeakerSystemBase_C.setAudioState
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_RoomSpeakerSystemBase_C::setAudioState(int32 NewState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RoomSpeakerSystemBase_C", "setAudioState");
-
-	Params::BP_RoomSpeakerSystemBase_C_setAudioState Parms{};
-
-	Parms.NewState = NewState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_RoomSpeakerSystemBase.BP_RoomSpeakerSystemBase_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_RoomSpeakerSystemBase_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_RoomSpeakerSystemBase_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

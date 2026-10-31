@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "Starbreeze_classes.hpp"
 
 
@@ -37,14 +37,14 @@ public:
 	bool                                          binaryReactorState;                                // 0x03D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ElevatorLoop();
-	void ExecuteUbergraph_BP_ElevatorDisplay(int32 EntryPoint);
-	void goToFloor(int32 floor, bool instant);
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void pause();
-	void resume();
-	void setFloor(int32 floor);
 	void UserConstructionScript();
+	void setFloor(int32 floor);
+	void resume();
+	void pause();
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void goToFloor(int32 floor, bool instant);
+	void ExecuteUbergraph_BP_ElevatorDisplay(int32 EntryPoint);
+	void ElevatorLoop();
 
 public:
 	static class UClass* StaticClass()
@@ -60,5 +60,6 @@ public:
 		return GetDefaultObjImpl<ABP_ElevatorDisplay_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ElevatorDisplay_C;
 
 SDK_NAMESPACE_END

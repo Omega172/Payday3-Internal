@@ -23,6 +23,7 @@ struct WBP_ComputerEmail_C_UpdateDisplayText final
 public:
 	struct FSBZHackableDisplayText                DisplayText;                                       // 0x0000(0x0040)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
+DUMPER7_ASSERTS_WBP_ComputerEmail_C_UpdateDisplayText;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

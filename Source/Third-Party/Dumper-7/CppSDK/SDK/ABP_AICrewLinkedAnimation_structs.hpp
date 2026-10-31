@@ -15,6 +15,17 @@
 
 SDK_NAMESPACE_START
 
+// ScriptStruct ABP_AICrewLinkedAnimation.ABP_AICrewLinkedAnimation_C.AnimBlueprintGeneratedMutableData
+// 0x000B (0x000C - 0x0001)
+struct ABP_AICrewLinkedAnimation::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
+{
+public:
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         __FloatProperty;                                   // 0x0004(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         __FloatProperty_0;                                 // 0x0008(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_ABP_AICrewLinkedAnimation__FAnimBlueprintGeneratedMutableData;
+
 // ScriptStruct ABP_AICrewLinkedAnimation.ABP_AICrewLinkedAnimation_C.AnimBlueprintGeneratedConstantData
 // 0x0677 (0x0678 - 0x0001)
 struct ABP_AICrewLinkedAnimation::FAnimBlueprintGeneratedConstantData final : public FAnimBlueprintConstantData
@@ -69,15 +80,6 @@ public:
 	struct FAnimNodeExposedValueHandler_PropertyAccess AnimGraphNode_SaveCachedPose;                 // 0x0608(0x0038)()
 	struct FAnimNodeExposedValueHandler_PropertyAccess AnimGraphNode_Root;                           // 0x0640(0x0038)()
 };
-
-// ScriptStruct ABP_AICrewLinkedAnimation.ABP_AICrewLinkedAnimation_C.AnimBlueprintGeneratedMutableData
-// 0x000B (0x000C - 0x0001)
-struct ABP_AICrewLinkedAnimation::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
-{
-public:
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         __FloatProperty;                                   // 0x0004(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         __FloatProperty_0;                                 // 0x0008(0x0004)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_ABP_AICrewLinkedAnimation__FAnimBlueprintGeneratedConstantData;
 
 SDK_NAMESPACE_END

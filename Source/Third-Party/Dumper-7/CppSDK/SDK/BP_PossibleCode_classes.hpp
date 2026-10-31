@@ -30,9 +30,9 @@ public:
 	struct FS_CodePacket                          CodePacket;                                        // 0x0344(0x000C)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_PossibleCode(int32 EntryPoint);
-	void OnRep_CodePacket();
 	void ShowCode(int32 TrueCode, int32 RandomCode, bool bShowTrueCode);
+	void OnRep_CodePacket();
+	void ExecuteUbergraph_BP_PossibleCode(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<ABP_PossibleCode_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PossibleCode_C;
 
 SDK_NAMESPACE_END

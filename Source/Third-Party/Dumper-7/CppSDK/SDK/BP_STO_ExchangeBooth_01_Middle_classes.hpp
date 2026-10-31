@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_STO_ExchangeBooth_01_Middle_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_STO_ExchangeBooth_01_Middle_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Crew_Controller_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Crew_Controller_C;
 
 SDK_NAMESPACE_END

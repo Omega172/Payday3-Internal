@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_RangedWeapon_AssaultRifle_VF7S_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_RangedWeapon_AssaultRifle_VF7S_C;
 
 SDK_NAMESPACE_END

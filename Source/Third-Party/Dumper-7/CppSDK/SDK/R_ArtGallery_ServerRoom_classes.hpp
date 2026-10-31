@@ -26,10 +26,10 @@ public:
 	class ABP_FirstAidPack_C*                     BP_FirstAidPack3_ExecuteUbergraph_R_ArtGallery_ServerRoom_RefProperty; // 0x03D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__R_ArtGallery_ServerRoom_BP_GreenKeycard2_K2Node_ActorBoundEvent_1_OnInteractedComplete__DelegateSignature();
-	void BndEvt__R_ArtGallery_ServerRoom_BP_GreenKeycard_2_K2Node_ActorBoundEvent_0_OnInteractedComplete__DelegateSignature();
-	void ExecuteUbergraph_R_ArtGallery_ServerRoom(int32 EntryPoint);
 	void OnRandomSublevelPlaced();
+	void ExecuteUbergraph_R_ArtGallery_ServerRoom(int32 EntryPoint);
+	void BndEvt__R_ArtGallery_ServerRoom_BP_GreenKeycard_2_K2Node_ActorBoundEvent_0_OnInteractedComplete__DelegateSignature();
+	void BndEvt__R_ArtGallery_ServerRoom_BP_GreenKeycard2_K2Node_ActorBoundEvent_1_OnInteractedComplete__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<AR_ArtGallery_ServerRoom_C>();
 	}
 };
+DUMPER7_ASSERTS_AR_ArtGallery_ServerRoom_C;
 
 SDK_NAMESPACE_END

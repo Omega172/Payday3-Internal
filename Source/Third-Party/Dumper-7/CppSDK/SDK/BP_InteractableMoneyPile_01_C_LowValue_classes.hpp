@@ -40,5 +40,6 @@ public:
 		return GetDefaultObjImpl<ABP_InteractableMoneyPile_01_C_LowValue_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_InteractableMoneyPile_01_C_LowValue_C;
 
 SDK_NAMESPACE_END

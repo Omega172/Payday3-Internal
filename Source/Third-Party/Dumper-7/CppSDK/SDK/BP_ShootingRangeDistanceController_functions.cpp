@@ -16,23 +16,116 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ShootingRangeDistanceController.BP_ShootingRangeDistanceController_C.ExecuteUbergraph_BP_ShootingRangeDistanceController
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ShootingRangeDistanceController.BP_ShootingRangeDistanceController_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_ShootingRangeDistanceController_C::ExecuteUbergraph_BP_ShootingRangeDistanceController(int32 EntryPoint)
+void ABP_ShootingRangeDistanceController_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeDistanceController_C", "ExecuteUbergraph_BP_ShootingRangeDistanceController");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_ShootingRangeDistanceController_C_ExecuteUbergraph_BP_ShootingRangeDistanceController Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+// Function BP_ShootingRangeDistanceController.BP_ShootingRangeDistanceController_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_ShootingRangeDistanceController_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ShootingRangeDistanceController.BP_ShootingRangeDistanceController_C.pushButton__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_ShootingRangeDistanceController_C::pushButton__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"pushButton__UpdateFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ShootingRangeDistanceController.BP_ShootingRangeDistanceController_C.pushButton__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_ShootingRangeDistanceController_C::pushButton__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"pushButton__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ShootingRangeDistanceController.BP_ShootingRangeDistanceController_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   OldState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ShootingRangeDistanceController_C::OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_ShootingRangeDistanceController_C_OnStateChanged Parms{};
+
+	Parms.OldState_OnStateChanged = OldState_OnStateChanged;
+	Parms.NewState_OnStateChanged = NewState_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ShootingRangeDistanceController.BP_ShootingRangeDistanceController_C.onAckCompleteInteraction
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ShootingRangeDistanceController_C::onAckCompleteInteraction(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"onAckCompleteInteraction", FnName));
+
+	Params::BP_ShootingRangeDistanceController_C_onAckCompleteInteraction Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ShootingRangeDistanceController.BP_ShootingRangeDistanceController_C.getIndexFromInteractable
+// (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+int32 ABP_ShootingRangeDistanceController_C::getIndexFromInteractable(class USBZBaseInteractableComponent* interactable)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"getIndexFromInteractable", FnName));
+
+	Params::BP_ShootingRangeDistanceController_C_getIndexFromInteractable Parms{};
+
+	Parms.interactable = interactable;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 
@@ -48,10 +141,8 @@ void ABP_ShootingRangeDistanceController_C::ExecuteUbergraph_BP_ShootingRangeDis
 
 void ABP_ShootingRangeDistanceController_C::getButton(int32 Index_0, class UStaticMeshComponent** button, class USBZInteractableComponent** interactable, class UStaticMeshComponent** light, class USphereComponent** collision, E_ShootingRangeTargetDistances* distance)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeDistanceController_C", "getButton");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"getButton", FnName));
 
 	Params::BP_ShootingRangeDistanceController_C_getButton Parms{};
 
@@ -76,130 +167,21 @@ void ABP_ShootingRangeDistanceController_C::getButton(int32 Index_0, class UStat
 }
 
 
-// Function BP_ShootingRangeDistanceController.BP_ShootingRangeDistanceController_C.getIndexFromInteractable
-// (Private, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function BP_ShootingRangeDistanceController.BP_ShootingRangeDistanceController_C.ExecuteUbergraph_BP_ShootingRangeDistanceController
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class USBZBaseInteractableComponent*    interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-int32 ABP_ShootingRangeDistanceController_C::getIndexFromInteractable(class USBZBaseInteractableComponent* interactable)
+void ABP_ShootingRangeDistanceController_C::ExecuteUbergraph_BP_ShootingRangeDistanceController(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ShootingRangeDistanceController_C", "ExecuteUbergraph_BP_ShootingRangeDistanceController", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeDistanceController_C", "getIndexFromInteractable");
+	Params::BP_ShootingRangeDistanceController_C_ExecuteUbergraph_BP_ShootingRangeDistanceController Parms{};
 
-	Params::BP_ShootingRangeDistanceController_C_getIndexFromInteractable Parms{};
-
-	Parms.interactable = interactable;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function BP_ShootingRangeDistanceController.BP_ShootingRangeDistanceController_C.onAckCompleteInteraction
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ShootingRangeDistanceController_C::onAckCompleteInteraction(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeDistanceController_C", "onAckCompleteInteraction");
-
-	Params::BP_ShootingRangeDistanceController_C_onAckCompleteInteraction Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ShootingRangeDistanceController.BP_ShootingRangeDistanceController_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_ShootingRangeDistanceController_C::OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeDistanceController_C", "OnStateChanged");
-
-	Params::BP_ShootingRangeDistanceController_C_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ShootingRangeDistanceController.BP_ShootingRangeDistanceController_C.pushButton__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_ShootingRangeDistanceController_C::pushButton__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeDistanceController_C", "pushButton__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ShootingRangeDistanceController.BP_ShootingRangeDistanceController_C.pushButton__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_ShootingRangeDistanceController_C::pushButton__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeDistanceController_C", "pushButton__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ShootingRangeDistanceController.BP_ShootingRangeDistanceController_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_ShootingRangeDistanceController_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeDistanceController_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ShootingRangeDistanceController.BP_ShootingRangeDistanceController_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_ShootingRangeDistanceController_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeDistanceController_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

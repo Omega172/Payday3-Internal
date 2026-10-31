@@ -40,5 +40,6 @@ public:
 		return GetDefaultObjImpl<ABP_MethPure_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_MethPure_C;
 
 SDK_NAMESPACE_END

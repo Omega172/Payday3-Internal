@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_GenericHackableComputer_NoActiveWaypoint_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_GenericHackableComputer_NoActiveWaypoint_C;
 
 SDK_NAMESPACE_END

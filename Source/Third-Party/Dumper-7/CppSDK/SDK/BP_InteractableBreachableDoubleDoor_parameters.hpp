@@ -16,6 +16,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_InteractableBreachableDoubleDoor.BP_InteractableBreachableDoubleDoor_C.setBreachedMeshVisibility
+// 0x0001 (0x0001 - 0x0000)
+struct BP_InteractableBreachableDoubleDoor_C_setBreachedMeshVisibility final
+{
+public:
+	bool                                          breached;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_InteractableBreachableDoubleDoor_C_setBreachedMeshVisibility;
+
 // Function BP_InteractableBreachableDoubleDoor.BP_InteractableBreachableDoubleDoor_C.ExecuteUbergraph_BP_InteractableBreachableDoubleDoor
 // 0x000C (0x000C - 0x0000)
 struct BP_InteractableBreachableDoubleDoor_C_ExecuteUbergraph_BP_InteractableBreachableDoubleDoor final
@@ -31,14 +40,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_InteractableBreachableDoubleDoor.BP_InteractableBreachableDoubleDoor_C.setBreachedMeshVisibility
-// 0x0001 (0x0001 - 0x0000)
-struct BP_InteractableBreachableDoubleDoor_C_setBreachedMeshVisibility final
-{
-public:
-	bool                                          breached;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_InteractableBreachableDoubleDoor_C_ExecuteUbergraph_BP_InteractableBreachableDoubleDoor;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

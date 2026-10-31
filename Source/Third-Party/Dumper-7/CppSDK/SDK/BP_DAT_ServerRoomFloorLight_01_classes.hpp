@@ -29,10 +29,10 @@ public:
 	class ASBZIrradianceVolume*                   inactiveIrradianceVolume;                          // 0x0378(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_DAT_ServerRoomFloorLight_01(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void setLightState(bool state);
 	void UserConstructionScript();
+	void setLightState(bool state);
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_DAT_ServerRoomFloorLight_01(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<ABP_DAT_ServerRoomFloorLight_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DAT_ServerRoomFloorLight_01_C;
 
 SDK_NAMESPACE_END

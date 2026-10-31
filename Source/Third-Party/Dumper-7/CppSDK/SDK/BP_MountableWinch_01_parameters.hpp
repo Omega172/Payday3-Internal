@@ -18,15 +18,16 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_MountableWinch_01.BP_MountableWinch_01_C.BP_OnStateChanged
-// 0x0003 (0x0003 - 0x0000)
-struct BP_MountableWinch_01_C_BP_OnStateChanged final
+// Function BP_MountableWinch_01.BP_MountableWinch_01_C.onProgressionEvent
+// 0x0010 (0x0010 - 0x0000)
+struct BP_MountableWinch_01_C_onProgressionEvent final
 {
 public:
-	ESBZBreachingEquipmentState                   OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZBreachingEquipmentState                   NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         index;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        progression;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_MountableWinch_01_C_onProgressionEvent;
 
 // Function BP_MountableWinch_01.BP_MountableWinch_01_C.ExecuteUbergraph_BP_MountableWinch_01
 // 0x00F0 (0x00F0 - 0x0000)
@@ -68,16 +69,18 @@ public:
 	int32                                         CallFunc_PostAkEvent_ReturnValue;                  // 0x00E4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_PostAkEvent_ReturnValue_1;                // 0x00E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_MountableWinch_01_C_ExecuteUbergraph_BP_MountableWinch_01;
 
-// Function BP_MountableWinch_01.BP_MountableWinch_01_C.onProgressionEvent
-// 0x0010 (0x0010 - 0x0000)
-struct BP_MountableWinch_01_C_onProgressionEvent final
+// Function BP_MountableWinch_01.BP_MountableWinch_01_C.BP_OnStateChanged
+// 0x0003 (0x0003 - 0x0000)
+struct BP_MountableWinch_01_C_BP_OnStateChanged final
 {
 public:
-	int32                                         index;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        progression;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZBreachingEquipmentState                   OldState_BP_OnStateChanged;                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZBreachingEquipmentState                   NewState_BP_OnStateChanged;                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_BP_OnStateChanged;                    // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_MountableWinch_01_C_BP_OnStateChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

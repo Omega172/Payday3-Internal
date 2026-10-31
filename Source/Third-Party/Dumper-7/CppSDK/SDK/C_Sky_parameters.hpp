@@ -14,6 +14,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function C_Sky.C_Sky_C.IntroSequenceChanged
+// 0x0001 (0x0001 - 0x0000)
+struct C_Sky_C_IntroSequenceChanged final
+{
+public:
+	bool                                          bIsStarted_IntroSequenceChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_C_Sky_C_IntroSequenceChanged;
+
 // Function C_Sky.C_Sky_C.ExecuteUbergraph_C_Sky
 // 0x0028 (0x0028 - 0x0000)
 struct C_Sky_C_ExecuteUbergraph_C_Sky final
@@ -26,14 +35,7 @@ public:
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ULevelSequencePlayer*                   CallFunc_GetSequencePlayer_ReturnValue;            // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function C_Sky.C_Sky_C.IntroSequenceChanged
-// 0x0001 (0x0001 - 0x0000)
-struct C_Sky_C_IntroSequenceChanged final
-{
-public:
-	bool                                          bIsStarted;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_C_Sky_C_ExecuteUbergraph_C_Sky;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

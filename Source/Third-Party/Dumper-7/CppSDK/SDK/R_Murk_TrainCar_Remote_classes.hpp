@@ -36,18 +36,18 @@ public:
 	class ASBZWaypoint*                           SBZWaypoint_Code_ExecuteUbergraph_R_Murk_TrainCar_Remote_RefProperty; // 0x0418(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__R_Station_TrainCar_Remote_BP_InteractableSatellitePrototype_2_K2Node_ActorBoundEvent_5_SBZBagPickedUp__DelegateSignature();
-	void BndEvt__R_Station_TrainCar_Remote_SBZLaserGrid_Vault2_K2Node_ActorBoundEvent_4_SBZOnLaserGridTriggered__DelegateSignature(class ASBZLaserGrid* LaserGrid, class ASBZPlayerCharacter* PlayerCharacter);
-	void BndEvt__R_Station_TrainCar_Remote_SBZPlayerTriggerVolume_PlayerInsideRemote_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__R_Station_TrainCar_Remote_SBZPlayerTriggerVolume_PlayerInsideTrainCar_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void CloseRemoteDoor();
-	void DestroyAllMainLoot(int32 Value);
-	void DestroyOptionalLoot(int32 Value);
-	void Event_AddUnlockWaypoint_Code();
-	void Event_RemoveUnlockWaypoint_Code();
-	void ExecuteUbergraph_R_Murk_TrainCar_Remote(int32 EntryPoint);
-	void OpenRemoteDoor();
 	void ReceiveBeginPlay();
+	void OpenRemoteDoor();
+	void ExecuteUbergraph_R_Murk_TrainCar_Remote(int32 EntryPoint);
+	void Event_RemoveUnlockWaypoint_Code();
+	void Event_AddUnlockWaypoint_Code();
+	void DestroyOptionalLoot(int32 Value);
+	void DestroyAllMainLoot(int32 Value);
+	void CloseRemoteDoor();
+	void BndEvt__R_Station_TrainCar_Remote_SBZPlayerTriggerVolume_PlayerInsideTrainCar_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__R_Station_TrainCar_Remote_SBZPlayerTriggerVolume_PlayerInsideRemote_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__R_Station_TrainCar_Remote_SBZLaserGrid_Vault2_K2Node_ActorBoundEvent_4_SBZOnLaserGridTriggered__DelegateSignature(class ASBZLaserGrid* LaserGrid, class ASBZPlayerCharacter* PlayerCharacter);
+	void BndEvt__R_Station_TrainCar_Remote_BP_InteractableSatellitePrototype_2_K2Node_ActorBoundEvent_5_SBZBagPickedUp__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()
@@ -63,5 +63,6 @@ public:
 		return GetDefaultObjImpl<AR_Murk_TrainCar_Remote_C>();
 	}
 };
+DUMPER7_ASSERTS_AR_Murk_TrainCar_Remote_C;
 
 SDK_NAMESPACE_END

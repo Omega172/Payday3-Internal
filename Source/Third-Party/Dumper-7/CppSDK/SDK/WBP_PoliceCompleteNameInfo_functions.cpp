@@ -20,10 +20,8 @@ SDK_NAMESPACE_START
 
 void UWBP_PoliceCompleteNameInfo_C::OnRep_CodePacket()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_PoliceCompleteNameInfo_C", "OnRep_CodePacket");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRep_CodePacket", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

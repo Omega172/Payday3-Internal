@@ -32,11 +32,11 @@ public:
 	TArray<class UTextBlock*>                     codeNums;                                          // 0x0328(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void ExecuteUbergraph_WBP_STO_ControlScreenInputCode(int32 EntryPoint);
-	void PreConstruct(bool IsDesignTime);
-	void setBackgroundColor(ESBZModuleActorState state);
-	void setCircuitBreakerText(const class FText& InText);
 	void setCodeText(const class FText& InText);
+	void setCircuitBreakerText(const class FText& InText);
+	void setBackgroundColor(ESBZModuleActorState state);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void ExecuteUbergraph_WBP_STO_ControlScreenInputCode(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -52,5 +52,6 @@ public:
 		return GetDefaultObjImpl<UWBP_STO_ControlScreenInputCode_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_STO_ControlScreenInputCode_C;
 
 SDK_NAMESPACE_END

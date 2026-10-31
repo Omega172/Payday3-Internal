@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_StarEscortedController.BP_StarEscortedController_C.ReceivePossess
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class APawn*                            PossessedPawn_ReceivePossess                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_StarEscortedController_C::ReceivePossess(class APawn* PossessedPawn_ReceivePossess)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceivePossess", FnName));
+
+	Params::BP_StarEscortedController_C_ReceivePossess Parms{};
+
+	Parms.PossessedPawn_ReceivePossess = PossessedPawn_ReceivePossess;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_StarEscortedController.BP_StarEscortedController_C.ExecuteUbergraph_BP_StarEscortedController
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,34 +41,12 @@ SDK_NAMESPACE_START
 
 void ABP_StarEscortedController_C::ExecuteUbergraph_BP_StarEscortedController(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_StarEscortedController_C", "ExecuteUbergraph_BP_StarEscortedController");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_StarEscortedController_C", "ExecuteUbergraph_BP_StarEscortedController", FuncInfo);
 
 	Params::BP_StarEscortedController_C_ExecuteUbergraph_BP_StarEscortedController Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_StarEscortedController.BP_StarEscortedController_C.ReceivePossess
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class APawn*                            PossessedPawn                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_StarEscortedController_C::ReceivePossess(class APawn* PossessedPawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_StarEscortedController_C", "ReceivePossess");
-
-	Params::BP_StarEscortedController_C_ReceivePossess Parms{};
-
-	Parms.PossessedPawn = PossessedPawn;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

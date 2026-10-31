@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AE_DIM_BackdropNear_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_DIM_BackdropNear_C;
 
 SDK_NAMESPACE_END

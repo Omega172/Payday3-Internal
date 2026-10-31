@@ -19,19 +19,17 @@ SDK_NAMESPACE_START
 // Function BP_Order_TouchReaction.BP_Order_TouchReaction_C.ExecPredicate
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// const class UObject*                    Owner                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class UObject*                    Owner_ExecPredicate                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue_ExecPredicate                              (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-bool UBP_Order_TouchReaction_C::ExecPredicate(const class UObject* Owner) const
+bool UBP_Order_TouchReaction_C::ExecPredicate(const class UObject* Owner_ExecPredicate) const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Order_TouchReaction_C", "ExecPredicate");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ExecPredicate", FnName));
 
 	Params::BP_Order_TouchReaction_C_ExecPredicate Parms{};
 
-	Parms.Owner = Owner;
+	Parms.Owner_ExecPredicate = Owner_ExecPredicate;
 
 	UObject::ProcessEvent(Func, &Parms);
 

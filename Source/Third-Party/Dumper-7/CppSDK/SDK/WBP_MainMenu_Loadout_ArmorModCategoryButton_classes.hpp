@@ -29,13 +29,13 @@ public:
 	class UImage*                                 SlotIcon_I;                                        // 0x03E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnInitialized();
-	void OnFocusChanged(bool InIsFocused);
-	void OnArmorModCategoryDataIntialized();
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
 	void ExecuteUbergraph_WBP_MainMenu_Loadout_ArmorModCategoryButton(int32 EntryPoint);
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
+	void OnArmorModCategoryDataIntialized();
+	void OnFocusChanged(bool InIsFocused);
+	void OnInitialized();
+	void PreConstruct(bool IsDesignTime);
 
 public:
 	static class UClass* StaticClass()

@@ -16,6 +16,36 @@
 
 SDK_NAMESPACE_START
 
+// Function C_ArmoredTransport.C_ArmoredTransport_C.OnIntroFinished
+// (BlueprintCallable, BlueprintEvent)
+
+void AC_ArmoredTransport_C::OnIntroFinished()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnIntroFinished", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function C_ArmoredTransport.C_ArmoredTransport_C.IntroSequenceChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    bIsStarted_IntroSequenceChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AC_ArmoredTransport_C::IntroSequenceChanged(bool bIsStarted_IntroSequenceChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IntroSequenceChanged", FnName));
+
+	Params::C_ArmoredTransport_C_IntroSequenceChanged Parms{};
+
+	Parms.bIsStarted_IntroSequenceChanged = bIsStarted_IntroSequenceChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function C_ArmoredTransport.C_ArmoredTransport_C.ExecuteUbergraph_C_ArmoredTransport
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,50 +53,14 @@ SDK_NAMESPACE_START
 
 void AC_ArmoredTransport_C::ExecuteUbergraph_C_ArmoredTransport(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_ArmoredTransport_C", "ExecuteUbergraph_C_ArmoredTransport");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "C_ArmoredTransport_C", "ExecuteUbergraph_C_ArmoredTransport", FuncInfo);
 
 	Params::C_ArmoredTransport_C_ExecuteUbergraph_C_ArmoredTransport Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function C_ArmoredTransport.C_ArmoredTransport_C.IntroSequenceChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    bIsStarted                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AC_ArmoredTransport_C::IntroSequenceChanged(bool bIsStarted)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_ArmoredTransport_C", "IntroSequenceChanged");
-
-	Params::C_ArmoredTransport_C_IntroSequenceChanged Parms{};
-
-	Parms.bIsStarted = bIsStarted;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function C_ArmoredTransport.C_ArmoredTransport_C.OnIntroFinished
-// (BlueprintCallable, BlueprintEvent)
-
-void AC_ArmoredTransport_C::OnIntroFinished()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_ArmoredTransport_C", "OnIntroFinished");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

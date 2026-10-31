@@ -33,9 +33,9 @@ public:
 	ETextCasing                                   InTextCasing;                                      // 0x03D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void ButtonFocusChanging(bool bInHasFocus);
 	void ExecuteUbergraph_WBP_MenuRoot_PrimaryTextButton(int32 EntryPoint);
-	void ButtonFocusChanging(bool bInHasFocus_ButtonFocusChanging);
+	void PreConstruct(bool IsDesignTime);
 
 public:
 	static class UClass* StaticClass()

@@ -16,25 +16,21 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Lure_SparkMachine_01.BP_Lure_SparkMachine_01_C.BndEvt__BP_Lure_Radio_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
+// Function BP_Lure_SparkMachine_01.BP_Lure_SparkMachine_01_C.OnActiveStateChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsActive_OnActiveStateChanged                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnActiveStateChanged                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Lure_SparkMachine_01_C::BndEvt__BP_Lure_Radio_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_Lure_SparkMachine_01_C::OnActiveStateChanged(bool bIsActive_OnActiveStateChanged, bool bDoCosmetics_OnActiveStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnActiveStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Lure_SparkMachine_01_C", "BndEvt__BP_Lure_Radio_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
+	Params::BP_Lure_SparkMachine_01_C_OnActiveStateChanged Parms{};
 
-	Params::BP_Lure_SparkMachine_01_C_BndEvt__BP_Lure_Radio_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+	Parms.bIsActive_OnActiveStateChanged = bIsActive_OnActiveStateChanged;
+	Parms.bDoCosmetics_OnActiveStateChanged = bDoCosmetics_OnActiveStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -47,10 +43,8 @@ void ABP_Lure_SparkMachine_01_C::BndEvt__BP_Lure_Radio_InteractableComponent_K2N
 
 void ABP_Lure_SparkMachine_01_C::ExecuteUbergraph_BP_Lure_SparkMachine_01(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Lure_SparkMachine_01_C", "ExecuteUbergraph_BP_Lure_SparkMachine_01");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Lure_SparkMachine_01_C", "ExecuteUbergraph_BP_Lure_SparkMachine_01", FuncInfo);
 
 	Params::BP_Lure_SparkMachine_01_C_ExecuteUbergraph_BP_Lure_SparkMachine_01 Parms{};
 
@@ -60,23 +54,23 @@ void ABP_Lure_SparkMachine_01_C::ExecuteUbergraph_BP_Lure_SparkMachine_01(int32 
 }
 
 
-// Function BP_Lure_SparkMachine_01.BP_Lure_SparkMachine_01_C.OnActiveStateChanged
-// (Event, Protected, BlueprintEvent)
+// Function BP_Lure_SparkMachine_01.BP_Lure_SparkMachine_01_C.BndEvt__BP_Lure_Radio_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// bool                                    bIsActive                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Lure_SparkMachine_01_C::OnActiveStateChanged(bool bIsActive, bool bDoCosmetics)
+void ABP_Lure_SparkMachine_01_C::BndEvt__BP_Lure_Radio_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Lure_Radio_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Lure_SparkMachine_01_C", "OnActiveStateChanged");
+	Params::BP_Lure_SparkMachine_01_C_BndEvt__BP_Lure_Radio_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
 
-	Params::BP_Lure_SparkMachine_01_C_OnActiveStateChanged Parms{};
-
-	Parms.bIsActive = bIsActive;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

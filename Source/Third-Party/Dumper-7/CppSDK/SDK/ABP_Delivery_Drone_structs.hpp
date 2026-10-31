@@ -15,6 +15,13 @@
 
 SDK_NAMESPACE_START
 
+// ScriptStruct ABP_Delivery_Drone.ABP_Delivery_Drone_C.AnimBlueprintGeneratedMutableData
+// 0x0000 (0x0001 - 0x0001)
+struct ABP_Delivery_Drone::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
+{
+};
+DUMPER7_ASSERTS_ABP_Delivery_Drone__FAnimBlueprintGeneratedMutableData;
+
 // ScriptStruct ABP_Delivery_Drone.ABP_Delivery_Drone_C.AnimBlueprintGeneratedConstantData
 // 0x022F (0x0230 - 0x0001)
 struct ABP_Delivery_Drone::FAnimBlueprintGeneratedConstantData final : public FAnimBlueprintConstantData
@@ -34,11 +41,6 @@ public:
 	struct FAnimNodeExposedValueHandler_PropertyAccess AnimGraphNode_LocalToComponentSpace;          // 0x01C0(0x0038)()
 	struct FAnimNodeExposedValueHandler_PropertyAccess AnimGraphNode_ComponentToLocalSpace;          // 0x01F8(0x0038)()
 };
-
-// ScriptStruct ABP_Delivery_Drone.ABP_Delivery_Drone_C.AnimBlueprintGeneratedMutableData
-// 0x0000 (0x0001 - 0x0001)
-struct ABP_Delivery_Drone::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
-{
-};
+DUMPER7_ASSERTS_ABP_Delivery_Drone__FAnimBlueprintGeneratedConstantData;
 
 SDK_NAMESPACE_END

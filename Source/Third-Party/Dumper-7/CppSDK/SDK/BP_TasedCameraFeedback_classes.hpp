@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UBP_TasedCameraFeedback_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_TasedCameraFeedback_C;
 
 SDK_NAMESPACE_END

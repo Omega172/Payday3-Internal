@@ -16,23 +16,31 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_LGT_IndustrialLight_Controllable.BP_LGT_IndustrialLight_Controllable_C.BndEvt__BPL_Red_WallLampIndustrial_Bulb_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// ESBZCosmeticDestructionType             Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZCosmeticDestructionContext&HitContext                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// Function BP_LGT_IndustrialLight_Controllable.BP_LGT_IndustrialLight_Controllable_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_LGT_IndustrialLight_Controllable_C::BndEvt__BPL_Red_WallLampIndustrial_Bulb_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)
+void ABP_LGT_IndustrialLight_Controllable_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LGT_IndustrialLight_Controllable_C", "BndEvt__BPL_Red_WallLampIndustrial_Bulb_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_LGT_IndustrialLight_Controllable_C_BndEvt__BPL_Red_WallLampIndustrial_Bulb_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature Parms{};
 
-	Parms.Type = Type;
-	Parms.HitContext = std::move(HitContext);
+// Function BP_LGT_IndustrialLight_Controllable.BP_LGT_IndustrialLight_Controllable_C.setLight
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    on                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LGT_IndustrialLight_Controllable_C::setLight(bool on)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setLight", FnName));
+
+	Params::BP_LGT_IndustrialLight_Controllable_C_setLight Parms{};
+
+	Parms.on = on;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -45,10 +53,8 @@ void ABP_LGT_IndustrialLight_Controllable_C::BndEvt__BPL_Red_WallLampIndustrial_
 
 void ABP_LGT_IndustrialLight_Controllable_C::ExecuteUbergraph_BP_LGT_IndustrialLight_Controllable(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LGT_IndustrialLight_Controllable_C", "ExecuteUbergraph_BP_LGT_IndustrialLight_Controllable");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_LGT_IndustrialLight_Controllable_C", "ExecuteUbergraph_BP_LGT_IndustrialLight_Controllable", FuncInfo);
 
 	Params::BP_LGT_IndustrialLight_Controllable_C_ExecuteUbergraph_BP_LGT_IndustrialLight_Controllable Parms{};
 
@@ -58,37 +64,23 @@ void ABP_LGT_IndustrialLight_Controllable_C::ExecuteUbergraph_BP_LGT_IndustrialL
 }
 
 
-// Function BP_LGT_IndustrialLight_Controllable.BP_LGT_IndustrialLight_Controllable_C.setLight
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_LGT_IndustrialLight_Controllable.BP_LGT_IndustrialLight_Controllable_C.BndEvt__BPL_Red_WallLampIndustrial_Bulb_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
 // Parameters:
-// bool                                    on                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZCosmeticDestructionType             Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZCosmeticDestructionContext&HitContext                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 
-void ABP_LGT_IndustrialLight_Controllable_C::setLight(bool on)
+void ABP_LGT_IndustrialLight_Controllable_C::BndEvt__BPL_Red_WallLampIndustrial_Bulb_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BPL_Red_WallLampIndustrial_Bulb_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LGT_IndustrialLight_Controllable_C", "setLight");
+	Params::BP_LGT_IndustrialLight_Controllable_C_BndEvt__BPL_Red_WallLampIndustrial_Bulb_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature Parms{};
 
-	Params::BP_LGT_IndustrialLight_Controllable_C_setLight Parms{};
-
-	Parms.on = on;
+	Parms.Type = Type;
+	Parms.HitContext = std::move(HitContext);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LGT_IndustrialLight_Controllable.BP_LGT_IndustrialLight_Controllable_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_LGT_IndustrialLight_Controllable_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LGT_IndustrialLight_Controllable_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

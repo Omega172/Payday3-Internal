@@ -16,31 +16,49 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Prototype_LevelBoundsTrigger.BP_Prototype_LevelBoundsTrigger_C.BndEvt__BP_Prototype_LevelBoundsTrigger_PostProcessBoundsReference_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bFromSweep                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FHitResult&                SweepResult                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// Function BP_Prototype_LevelBoundsTrigger.BP_Prototype_LevelBoundsTrigger_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_Prototype_LevelBoundsTrigger_C::BndEvt__BP_Prototype_LevelBoundsTrigger_PostProcessBoundsReference_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
+void ABP_Prototype_LevelBoundsTrigger_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Prototype_LevelBoundsTrigger_C", "BndEvt__BP_Prototype_LevelBoundsTrigger_PostProcessBoundsReference_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_Prototype_LevelBoundsTrigger_C_BndEvt__BP_Prototype_LevelBoundsTrigger_PostProcessBoundsReference_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
-	Parms.OverlappedComponent = OverlappedComponent;
-	Parms.OtherActor = OtherActor;
-	Parms.OtherComp = OtherComp;
-	Parms.OtherBodyIndex = OtherBodyIndex;
-	Parms.bFromSweep = bFromSweep;
-	Parms.SweepResult = std::move(SweepResult);
+// Function BP_Prototype_LevelBoundsTrigger.BP_Prototype_LevelBoundsTrigger_C.ReceiveActorEndOverlap
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class AActor*                           OtherActor_ReceiveActorEndOverlap                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Prototype_LevelBoundsTrigger_C::ReceiveActorEndOverlap(class AActor* OtherActor_ReceiveActorEndOverlap)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveActorEndOverlap", FnName));
+
+	Params::BP_Prototype_LevelBoundsTrigger_C_ReceiveActorEndOverlap Parms{};
+
+	Parms.OtherActor_ReceiveActorEndOverlap = OtherActor_ReceiveActorEndOverlap;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Prototype_LevelBoundsTrigger.BP_Prototype_LevelBoundsTrigger_C.ExecuteUbergraph_BP_Prototype_LevelBoundsTrigger
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Prototype_LevelBoundsTrigger_C::ExecuteUbergraph_BP_Prototype_LevelBoundsTrigger(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Prototype_LevelBoundsTrigger_C", "ExecuteUbergraph_BP_Prototype_LevelBoundsTrigger", FuncInfo);
+
+	Params::BP_Prototype_LevelBoundsTrigger_C_ExecuteUbergraph_BP_Prototype_LevelBoundsTrigger Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -58,10 +76,8 @@ void ABP_Prototype_LevelBoundsTrigger_C::BndEvt__BP_Prototype_LevelBoundsTrigger
 
 void ABP_Prototype_LevelBoundsTrigger_C::BndEvt__Trigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Prototype_LevelBoundsTrigger_C", "BndEvt__Trigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__Trigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature", FnName));
 
 	Params::BP_Prototype_LevelBoundsTrigger_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
@@ -76,57 +92,31 @@ void ABP_Prototype_LevelBoundsTrigger_C::BndEvt__Trigger_K2Node_ComponentBoundEv
 }
 
 
-// Function BP_Prototype_LevelBoundsTrigger.BP_Prototype_LevelBoundsTrigger_C.ExecuteUbergraph_BP_Prototype_LevelBoundsTrigger
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_Prototype_LevelBoundsTrigger.BP_Prototype_LevelBoundsTrigger_C.BndEvt__BP_Prototype_LevelBoundsTrigger_PostProcessBoundsReference_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Prototype_LevelBoundsTrigger_C::ExecuteUbergraph_BP_Prototype_LevelBoundsTrigger(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Prototype_LevelBoundsTrigger_C", "ExecuteUbergraph_BP_Prototype_LevelBoundsTrigger");
-
-	Params::BP_Prototype_LevelBoundsTrigger_C_ExecuteUbergraph_BP_Prototype_LevelBoundsTrigger Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Prototype_LevelBoundsTrigger.BP_Prototype_LevelBoundsTrigger_C.ReceiveActorEndOverlap
-// (Event, Public, BlueprintEvent)
-// Parameters:
+// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bFromSweep                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FHitResult&                SweepResult                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 
-void ABP_Prototype_LevelBoundsTrigger_C::ReceiveActorEndOverlap(class AActor* OtherActor)
+void ABP_Prototype_LevelBoundsTrigger_C::BndEvt__BP_Prototype_LevelBoundsTrigger_PostProcessBoundsReference_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Prototype_LevelBoundsTrigger_PostProcessBoundsReference_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Prototype_LevelBoundsTrigger_C", "ReceiveActorEndOverlap");
+	Params::BP_Prototype_LevelBoundsTrigger_C_BndEvt__BP_Prototype_LevelBoundsTrigger_PostProcessBoundsReference_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature Parms{};
 
-	Params::BP_Prototype_LevelBoundsTrigger_C_ReceiveActorEndOverlap Parms{};
-
+	Parms.OverlappedComponent = OverlappedComponent;
 	Parms.OtherActor = OtherActor;
+	Parms.OtherComp = OtherComp;
+	Parms.OtherBodyIndex = OtherBodyIndex;
+	Parms.bFromSweep = bFromSweep;
+	Parms.SweepResult = std::move(SweepResult);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Prototype_LevelBoundsTrigger.BP_Prototype_LevelBoundsTrigger_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_Prototype_LevelBoundsTrigger_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Prototype_LevelBoundsTrigger_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

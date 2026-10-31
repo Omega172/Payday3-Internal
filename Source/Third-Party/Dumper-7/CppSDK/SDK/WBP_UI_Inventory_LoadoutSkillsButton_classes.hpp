@@ -78,16 +78,16 @@ public:
 	bool                                          RT_SkillPointsRemaining;                           // 0x0550(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void RefreshVisuals();
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnInitialized();
-	void OnHover(bool bIsHovered);
-	void OnFocused(bool bIsFocused);
-	void InitializeSkills(const TArray<int32>& EquippedSkillCategoriesCount_InitializeSkills);
-	void InitializeSkillPointsVisual(int32 SkillPointsRemaining);
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
 	void ExecuteUbergraph_WBP_UI_Inventory_LoadoutSkillsButton(int32 EntryPoint);
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
+	void InitializeSkillPointsVisual(int32 SkillPointsRemaining);
+	void InitializeSkills(const TArray<int32>& EquippedSkillCategoriesCount);
+	void OnFocused(bool bIsFocused);
+	void OnHover(bool bIsHovered);
+	void OnInitialized();
+	void PreConstruct(bool IsDesignTime);
+	void RefreshVisuals();
 
 public:
 	static class UClass* StaticClass()

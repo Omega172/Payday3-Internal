@@ -16,6 +16,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function UTD_ReturnToStart.UTD_ReturnToStart_C.OnDeactivatedBP
+// 0x0001 (0x0001 - 0x0000)
+struct UTD_ReturnToStart_C_OnDeactivatedBP final
+{
+public:
+	EBTNodeResult                                 NodeResult_OnDeactivatedBP;                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_UTD_ReturnToStart_C_OnDeactivatedBP;
+
 // Function UTD_ReturnToStart.UTD_ReturnToStart_C.ExecuteUbergraph_UTD_ReturnToStart
 // 0x0020 (0x0020 - 0x0000)
 struct UTD_ReturnToStart_C_ExecuteUbergraph_UTD_ReturnToStart final
@@ -28,14 +37,7 @@ public:
 	class ASBZAICharacter*                        K2Node_DynamicCast_AsSBZAICharacter;               // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function UTD_ReturnToStart.UTD_ReturnToStart_C.OnDeactivatedBP
-// 0x0001 (0x0001 - 0x0000)
-struct UTD_ReturnToStart_C_OnDeactivatedBP final
-{
-public:
-	EBTNodeResult                                 NodeResult;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_UTD_ReturnToStart_C_ExecuteUbergraph_UTD_ReturnToStart;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

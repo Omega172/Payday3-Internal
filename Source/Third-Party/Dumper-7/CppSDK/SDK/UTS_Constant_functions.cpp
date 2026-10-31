@@ -19,14 +19,12 @@ SDK_NAMESPACE_START
 // Function UTS_Constant.UTS_Constant_C.CalcScoreBP
 // (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   ReturnValue_CalcScoreBP                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 float UUTS_Constant_C::CalcScoreBP() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UTS_Constant_C", "CalcScoreBP");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CalcScoreBP", FnName));
 
 	Params::UTS_Constant_C_CalcScoreBP Parms{};
 

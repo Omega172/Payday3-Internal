@@ -31,12 +31,12 @@ public:
 	TArray<class AActor*>                         actorlist;                                         // 0x0350(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate)
 
 public:
-	void BndEvt__Portal_culling_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
-	void BndEvt__Portal_culling_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
-	void ExecuteUbergraph_Portal_culling(int32 EntryPoint);
-	void feeder();
-	void hidder();
 	void shower();
+	void hidder();
+	void feeder();
+	void ExecuteUbergraph_Portal_culling(int32 EntryPoint);
+	void BndEvt__Portal_culling_Box_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+	void BndEvt__Portal_culling_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 
 public:
 	static class UClass* StaticClass()
@@ -52,5 +52,6 @@ public:
 		return GetDefaultObjImpl<APortal_culling_C>();
 	}
 };
+DUMPER7_ASSERTS_APortal_culling_C;
 
 SDK_NAMESPACE_END

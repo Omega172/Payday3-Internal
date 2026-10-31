@@ -16,50 +16,21 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function G_ONE_LivingWorld.G_ONE_LivingWorld_C.BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined167_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ONE_LivingWorld_C_BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined167_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+// Function G_ONE_LivingWorld.G_ONE_LivingWorld_C.PushLiveAction
+// 0x0068 (0x0068 - 0x0000)
+struct G_ONE_LivingWorld_C_PushLiveAction final
 {
 public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 SpecificActionComponentOwner;                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Owner;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         MixedSeed;                                         // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetRandomBoolWithWeightFromStreamMixed_ReturnValue; // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZAIActionData_LifeAction*            CallFunc_CreateActionData_ReturnValue;             // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZAIAction*                           CallFunc_PushAction_ReturnValue;                   // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZLifeActionRequest                  K2Node_MakeStruct_SBZLifeActionRequest;            // 0x0028(0x0040)(NoDestructor, ContainsInstancedReference)
 };
-
-// Function G_ONE_LivingWorld.G_ONE_LivingWorld_C.BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined169_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ONE_LivingWorld_C_BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined169_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ONE_LivingWorld.G_ONE_LivingWorld_C.BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined171_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ONE_LivingWorld_C_BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined171_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ONE_LivingWorld.G_ONE_LivingWorld_C.BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined_LifeAction15_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ONE_LivingWorld_C_BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined_LifeAction15_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_ONE_LivingWorld.G_ONE_LivingWorld_C.BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined_LifeAction43_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_ONE_LivingWorld_C_BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined_LifeAction43_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_G_ONE_LivingWorld_C_PushLiveAction;
 
 // Function G_ONE_LivingWorld.G_ONE_LivingWorld_C.ExecuteUbergraph_G_ONE_LivingWorld
 // 0x0058 (0x0058 - 0x0000)
@@ -79,21 +50,57 @@ public:
 	class APawn*                                  K2Node_ActorBoundEvent_SpawnedPawn;                // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ASBZCarriedStaticInteractionActor*      K2Node_ActorBoundEvent_Spawnedloot;                // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_ONE_LivingWorld_C_ExecuteUbergraph_G_ONE_LivingWorld;
 
-// Function G_ONE_LivingWorld.G_ONE_LivingWorld_C.PushLiveAction
-// 0x0068 (0x0068 - 0x0000)
-struct G_ONE_LivingWorld_C_PushLiveAction final
+// Function G_ONE_LivingWorld.G_ONE_LivingWorld_C.BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined_LifeAction43_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ONE_LivingWorld_C_BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined_LifeAction43_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature final
 {
 public:
-	class AActor*                                 SpecificActionComponentOwner;                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UObject*                                Owner_0;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         MixedSeed;                                         // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetRandomBoolWithWeightFromStreamMixed_ReturnValue; // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZAIActionData_LifeAction*            CallFunc_CreateActionData_ReturnValue;             // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZAIAction*                           CallFunc_PushAction_ReturnValue;                   // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZLifeActionRequest                  K2Node_MakeStruct_SBZLifeActionRequest;            // 0x0028(0x0040)(NoDestructor, ContainsInstancedReference)
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_ONE_LivingWorld_C_BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined_LifeAction43_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_ONE_LivingWorld.G_ONE_LivingWorld_C.BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined_LifeAction15_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ONE_LivingWorld_C_BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined_LifeAction15_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ONE_LivingWorld_C_BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined_LifeAction15_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_ONE_LivingWorld.G_ONE_LivingWorld_C.BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined171_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ONE_LivingWorld_C_BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined171_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ONE_LivingWorld_C_BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined171_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_ONE_LivingWorld.G_ONE_LivingWorld_C.BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined169_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ONE_LivingWorld_C_BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined169_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ONE_LivingWorld_C_BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined169_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_ONE_LivingWorld.G_ONE_LivingWorld_C.BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined167_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_ONE_LivingWorld_C_BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined167_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_ONE_LivingWorld_C_BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined167_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

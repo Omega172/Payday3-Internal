@@ -16,49 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Liberty_mask.BP_Liberty_mask_C.ExecuteUbergraph_BP_Liberty_mask
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Liberty_mask.BP_Liberty_mask_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Liberty_mask_C::ExecuteUbergraph_BP_Liberty_mask(int32 EntryPoint)
+void ABP_Liberty_mask_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Liberty_mask_C", "ExecuteUbergraph_BP_Liberty_mask");
-
-	Params::BP_Liberty_mask_C_ExecuteUbergraph_BP_Liberty_mask Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Liberty_mask.BP_Liberty_mask_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Liberty_mask_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Liberty_mask_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Liberty_mask.BP_Liberty_mask_C.Timeline_0__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_Liberty_mask_C::Timeline_0__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Liberty_mask_C", "Timeline_0__FinishedFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -69,26 +33,52 @@ void ABP_Liberty_mask_C::Timeline_0__FinishedFunc()
 
 void ABP_Liberty_mask_C::Timeline_0__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Liberty_mask_C", "Timeline_0__UpdateFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__UpdateFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Liberty_mask.BP_Liberty_mask_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_Liberty_mask.BP_Liberty_mask_C.Timeline_0__FinishedFunc
+// (BlueprintEvent)
 
-void ABP_Liberty_mask_C::UserConstructionScript()
+void ABP_Liberty_mask_C::Timeline_0__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Liberty_mask_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__FinishedFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Liberty_mask.BP_Liberty_mask_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_Liberty_mask_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Liberty_mask.BP_Liberty_mask_C.ExecuteUbergraph_BP_Liberty_mask
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Liberty_mask_C::ExecuteUbergraph_BP_Liberty_mask(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Liberty_mask_C", "ExecuteUbergraph_BP_Liberty_mask", FuncInfo);
+
+	Params::BP_Liberty_mask_C_ExecuteUbergraph_BP_Liberty_mask Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

@@ -16,6 +16,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function UTS_Commit.UTS_Commit_C.OnDeactivatedBP
+// 0x0001 (0x0001 - 0x0000)
+struct UTS_Commit_C_OnDeactivatedBP final
+{
+public:
+	EBTNodeResult                                 NodeResult_OnDeactivatedBP;                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_UTS_Commit_C_OnDeactivatedBP;
+
 // Function UTS_Commit.UTS_Commit_C.ExecuteUbergraph_UTS_Commit
 // 0x0008 (0x0008 - 0x0000)
 struct UTS_Commit_C_ExecuteUbergraph_UTS_Commit final
@@ -24,23 +33,17 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EBTNodeResult                                 K2Node_Event_NodeResult;                           // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function UTS_Commit.UTS_Commit_C.OnDeactivatedBP
-// 0x0001 (0x0001 - 0x0000)
-struct UTS_Commit_C_OnDeactivatedBP final
-{
-public:
-	EBTNodeResult                                 NodeResult;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_UTS_Commit_C_ExecuteUbergraph_UTS_Commit;
 
 // Function UTS_Commit.UTS_Commit_C.CalcScoreBP
 // 0x0008 (0x0008 - 0x0000)
 struct UTS_Commit_C_CalcScoreBP final
 {
 public:
-	float                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         ReturnValue_CalcScoreBP;                           // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_FunctionResult_ReturnValue_ImplicitCast;    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_UTS_Commit_C_CalcScoreBP;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

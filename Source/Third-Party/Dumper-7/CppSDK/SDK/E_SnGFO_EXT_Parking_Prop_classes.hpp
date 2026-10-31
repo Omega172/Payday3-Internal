@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AE_SnGFO_EXT_Parking_Prop_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_SnGFO_EXT_Parking_Prop_C;
 
 SDK_NAMESPACE_END

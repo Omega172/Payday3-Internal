@@ -25,10 +25,10 @@ public:
 	class ALevelSequenceActor*                    Master_Dema_7_ExecuteUbergraph_C_Dema_IntroOutro_RefProperty; // 0x03D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_C_Dema_IntroOutro(int32 EntryPoint);
-	void IntroSequenceChanged(bool bIsStarted);
-	void OnIntroFinished();
 	void SpawnSelected(int32 SpawnInt);
+	void OnIntroFinished();
+	void IntroSequenceChanged(bool bIsStarted_IntroSequenceChanged);
+	void ExecuteUbergraph_C_Dema_IntroOutro(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<AC_Dema_IntroOutro_C>();
 	}
 };
+DUMPER7_ASSERTS_AC_Dema_IntroOutro_C;
 
 SDK_NAMESPACE_END

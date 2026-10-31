@@ -16,73 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Plankspile.BP_Plankspile_C.BndEvt__BP_Plankspile_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Plankspile_C::BndEvt__BP_Plankspile_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Plankspile_C", "BndEvt__BP_Plankspile_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_Plankspile_C_BndEvt__BP_Plankspile_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Plankspile.BP_Plankspile_C.ExecuteUbergraph_BP_Plankspile
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Plankspile_C::ExecuteUbergraph_BP_Plankspile(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Plankspile_C", "ExecuteUbergraph_BP_Plankspile");
-
-	Params::BP_Plankspile_C_ExecuteUbergraph_BP_Plankspile Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Plankspile.BP_Plankspile_C.Set Interaction OFF
+// Function BP_Plankspile.BP_Plankspile_C.Set Visibility ON
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Plankspile_C::Set_Interaction_OFF()
+void ABP_Plankspile_C::Set_Visibility_ON()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Plankspile_C", "Set Interaction OFF");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Plankspile.BP_Plankspile_C.Set Interaction ON
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_Plankspile_C::Set_Interaction_ON()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Plankspile_C", "Set Interaction ON");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set Visibility ON", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -93,26 +33,74 @@ void ABP_Plankspile_C::Set_Interaction_ON()
 
 void ABP_Plankspile_C::Set_Visibility_OFF()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Plankspile_C", "Set Visibility OFF");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set Visibility OFF", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Plankspile.BP_Plankspile_C.Set Visibility ON
+// Function BP_Plankspile.BP_Plankspile_C.Set Interaction ON
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Plankspile_C::Set_Visibility_ON()
+void ABP_Plankspile_C::Set_Interaction_ON()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Plankspile_C", "Set Visibility ON");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set Interaction ON", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Plankspile.BP_Plankspile_C.Set Interaction OFF
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_Plankspile_C::Set_Interaction_OFF()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set Interaction OFF", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Plankspile.BP_Plankspile_C.ExecuteUbergraph_BP_Plankspile
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Plankspile_C::ExecuteUbergraph_BP_Plankspile(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Plankspile_C", "ExecuteUbergraph_BP_Plankspile", FuncInfo);
+
+	Params::BP_Plankspile_C_ExecuteUbergraph_BP_Plankspile Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Plankspile.BP_Plankspile_C.BndEvt__BP_Plankspile_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Plankspile_C::BndEvt__BP_Plankspile_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Plankspile_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_Plankspile_C_BndEvt__BP_Plankspile_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

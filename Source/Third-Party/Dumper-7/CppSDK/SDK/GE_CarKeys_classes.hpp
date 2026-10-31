@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_CarKeys_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_CarKeys_C;
 
 SDK_NAMESPACE_END

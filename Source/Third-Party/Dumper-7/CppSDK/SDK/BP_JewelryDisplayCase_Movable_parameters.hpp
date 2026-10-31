@@ -19,32 +19,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_JewelryDisplayCase_Movable.BP_JewelryDisplayCase_Movable_C.BP_OnGlassBroken
-// 0x0001 (0x0001 - 0x0000)
-struct BP_JewelryDisplayCase_Movable_C_BP_OnGlassBroken final
-{
-public:
-	bool                                          bDoCosmetics;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_JewelryDisplayCase_Movable.BP_JewelryDisplayCase_Movable_C.BP_OnStateChanged
-// 0x0003 (0x0003 - 0x0000)
-struct BP_JewelryDisplayCase_Movable_C_BP_OnStateChanged final
-{
-public:
-	ESBZDisplayCaseState                          OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZDisplayCaseState                          NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_JewelryDisplayCase_Movable.BP_JewelryDisplayCase_Movable_C.EnableLockdown
-// 0x0001 (0x0001 - 0x0000)
-struct BP_JewelryDisplayCase_Movable_C_EnableLockdown final
-{
-public:
-	bool                                          bInEnabled;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_JewelryDisplayCase_Movable.BP_JewelryDisplayCase_Movable_C.ExecuteUbergraph_BP_JewelryDisplayCase_Movable
 // 0x0440 (0x0440 - 0x0000)
 struct BP_JewelryDisplayCase_Movable_C_ExecuteUbergraph_BP_JewelryDisplayCase_Movable final
@@ -95,6 +69,36 @@ public:
 	double                                        K2Node_Select_Option_0_ImplicitCast;               // 0x0430(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_MakeVector_Z_ImplicitCast_1;              // 0x0438(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_JewelryDisplayCase_Movable_C_ExecuteUbergraph_BP_JewelryDisplayCase_Movable;
+
+// Function BP_JewelryDisplayCase_Movable.BP_JewelryDisplayCase_Movable_C.EnableLockdown
+// 0x0001 (0x0001 - 0x0000)
+struct BP_JewelryDisplayCase_Movable_C_EnableLockdown final
+{
+public:
+	bool                                          bInEnabled;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_JewelryDisplayCase_Movable_C_EnableLockdown;
+
+// Function BP_JewelryDisplayCase_Movable.BP_JewelryDisplayCase_Movable_C.BP_OnStateChanged
+// 0x0003 (0x0003 - 0x0000)
+struct BP_JewelryDisplayCase_Movable_C_BP_OnStateChanged final
+{
+public:
+	ESBZDisplayCaseState                          OldState_BP_OnStateChanged;                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZDisplayCaseState                          NewState_BP_OnStateChanged;                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_BP_OnStateChanged;                    // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_JewelryDisplayCase_Movable_C_BP_OnStateChanged;
+
+// Function BP_JewelryDisplayCase_Movable.BP_JewelryDisplayCase_Movable_C.BP_OnGlassBroken
+// 0x0001 (0x0001 - 0x0000)
+struct BP_JewelryDisplayCase_Movable_C_BP_OnGlassBroken final
+{
+public:
+	bool                                          bDoCosmetics_BP_OnGlassBroken;                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_JewelryDisplayCase_Movable_C_BP_OnGlassBroken;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -24,9 +24,9 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0630(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteUbergraph_BP_LaserPoint(int32 EntryPoint);
-	void ReceiveActorBeginOverlap_1(class AActor* OtherActor);
 	void ReceiveBeginPlay();
+	void ReceiveActorBeginOverlap_1(class AActor* OtherActor);
+	void ExecuteUbergraph_BP_LaserPoint(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -42,5 +42,6 @@ public:
 		return GetDefaultObjImpl<UBP_LaserPoint_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_LaserPoint_C;
 
 SDK_NAMESPACE_END

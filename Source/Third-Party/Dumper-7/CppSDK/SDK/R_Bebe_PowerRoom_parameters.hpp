@@ -16,14 +16,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function R_Bebe_PowerRoom.R_Bebe_PowerRoom_C.BndEvt__R_BranchBank_PowerRoom_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_3_ActorBeginOverlapSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_Bebe_PowerRoom_C_BndEvt__R_BranchBank_PowerRoom_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_3_ActorBeginOverlapSignature__DelegateSignature final
+// Function R_Bebe_PowerRoom.R_Bebe_PowerRoom_C.HeistStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct R_Bebe_PowerRoom_C_HeistStateChanged final
 {
 public:
-	class AActor*                                 OverlappedActor;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                OldHeistState_HeistStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CurrentHeistState_HeistStateChanged;               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_R_Bebe_PowerRoom_C_HeistStateChanged;
 
 // Function R_Bebe_PowerRoom.R_Bebe_PowerRoom_C.ExecuteUbergraph_R_Bebe_PowerRoom
 // 0x0020 (0x0020 - 0x0000)
@@ -40,15 +41,17 @@ public:
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_R_Bebe_PowerRoom_C_ExecuteUbergraph_R_Bebe_PowerRoom;
 
-// Function R_Bebe_PowerRoom.R_Bebe_PowerRoom_C.HeistStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct R_Bebe_PowerRoom_C_HeistStateChanged final
+// Function R_Bebe_PowerRoom.R_Bebe_PowerRoom_C.BndEvt__R_BranchBank_PowerRoom_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_3_ActorBeginOverlapSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_Bebe_PowerRoom_C_BndEvt__R_BranchBank_PowerRoom_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_3_ActorBeginOverlapSignature__DelegateSignature final
 {
 public:
-	EPD3HeistState                                OldHeistState;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CurrentHeistState;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OverlappedActor;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_R_Bebe_PowerRoom_C_BndEvt__R_BranchBank_PowerRoom_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_3_ActorBeginOverlapSignature__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

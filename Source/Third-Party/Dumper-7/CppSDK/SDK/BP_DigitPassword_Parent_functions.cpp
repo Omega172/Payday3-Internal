@@ -16,25 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_DigitPassword_Parent.BP_DigitPassword_Parent_C.BP_SetCode
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWidgetComponent*                 Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// const TArray<int32>&                    CodeArrayToShow                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// Function BP_DigitPassword_Parent.BP_DigitPassword_Parent_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_DigitPassword_Parent_C::BP_SetCode(class UWidgetComponent* Widget, const TArray<int32>& CodeArrayToShow)
+void ABP_DigitPassword_Parent_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DigitPassword_Parent_C", "BP_SetCode");
-
-	Params::BP_DigitPassword_Parent_C_BP_SetCode Parms{};
-
-	Parms.Widget = Widget;
-	Parms.CodeArrayToShow = std::move(CodeArrayToShow);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -45,10 +35,8 @@ void ABP_DigitPassword_Parent_C::BP_SetCode(class UWidgetComponent* Widget, cons
 
 void ABP_DigitPassword_Parent_C::ExecuteUbergraph_BP_DigitPassword_Parent(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DigitPassword_Parent_C", "ExecuteUbergraph_BP_DigitPassword_Parent");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_DigitPassword_Parent_C", "ExecuteUbergraph_BP_DigitPassword_Parent", FuncInfo);
 
 	Params::BP_DigitPassword_Parent_C_ExecuteUbergraph_BP_DigitPassword_Parent Parms{};
 
@@ -58,17 +46,23 @@ void ABP_DigitPassword_Parent_C::ExecuteUbergraph_BP_DigitPassword_Parent(int32 
 }
 
 
-// Function BP_DigitPassword_Parent.BP_DigitPassword_Parent_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_DigitPassword_Parent.BP_DigitPassword_Parent_C.BP_SetCode
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWidgetComponent*                 Widget                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const TArray<int32>&                    CodeArrayToShow                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void ABP_DigitPassword_Parent_C::UserConstructionScript()
+void ABP_DigitPassword_Parent_C::BP_SetCode(class UWidgetComponent* Widget, const TArray<int32>& CodeArrayToShow)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_SetCode", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DigitPassword_Parent_C", "UserConstructionScript");
+	Params::BP_DigitPassword_Parent_C_BP_SetCode Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.Widget = Widget;
+	Parms.CodeArrayToShow = std::move(CodeArrayToShow);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

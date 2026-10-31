@@ -40,16 +40,16 @@ public:
 	TMulticastInlineDelegate<void(class UObject* FocusedButton)> ButtonFocusedEvent;                 // 0x0410(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void RefreshVisuals();
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnInitialized();
-	void OnHover(bool bIsHovered);
-	void OnFocused(bool bIsFocused);
-	void InitializeSkills(const TArray<int32>& EquippedSkillCategoriesCount_InitializeSkills);
-	void InitializeSkillPointsVisual(int32 SkillPointsRemaining);
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
 	void ExecuteUbergraph_WBP_UI_Inventory_LoadoutSkillsButton_New(int32 EntryPoint);
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
+	void InitializeSkillPointsVisual(int32 SkillPointsRemaining);
+	void InitializeSkills(const TArray<int32>& EquippedSkillCategoriesCount);
+	void OnFocused(bool bIsFocused);
+	void OnHover(bool bIsHovered);
+	void OnInitialized();
+	void PreConstruct(bool IsDesignTime);
+	void RefreshVisuals();
 
 public:
 	static class UClass* StaticClass()

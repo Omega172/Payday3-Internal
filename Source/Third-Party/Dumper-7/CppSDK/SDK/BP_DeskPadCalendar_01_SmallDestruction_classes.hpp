@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_DeskPadCalendar_01_SmallDestruction_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DeskPadCalendar_01_SmallDestruction_C;
 
 SDK_NAMESPACE_END

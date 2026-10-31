@@ -16,6 +16,28 @@
 
 SDK_NAMESPACE_START
 
+// Function PD3TrafficLightBase.PD3TrafficLightBase_C.UpdatePool
+// (Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// ESBZTrafficLightStatus                  Status_UpdatePool                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const TArray<class UStaticMeshComponent*>&Pool_UpdatePool                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+// const TArray<class USBZAmbientSoundComponent*>&PedestrianSoundEmitters_UpdatePool                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+
+void APD3TrafficLightBase_C::UpdatePool(ESBZTrafficLightStatus Status_UpdatePool, const TArray<class UStaticMeshComponent*>& Pool_UpdatePool, const TArray<class USBZAmbientSoundComponent*>& PedestrianSoundEmitters_UpdatePool)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdatePool", FnName));
+
+	Params::PD3TrafficLightBase_C_UpdatePool Parms{};
+
+	Parms.Status_UpdatePool = Status_UpdatePool;
+	Parms.Pool_UpdatePool = std::move(Pool_UpdatePool);
+	Parms.PedestrianSoundEmitters_UpdatePool = std::move(PedestrianSoundEmitters_UpdatePool);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function PD3TrafficLightBase.PD3TrafficLightBase_C.ExecuteUbergraph_PD3TrafficLightBase
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -23,38 +45,12 @@ SDK_NAMESPACE_START
 
 void APD3TrafficLightBase_C::ExecuteUbergraph_PD3TrafficLightBase(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PD3TrafficLightBase_C", "ExecuteUbergraph_PD3TrafficLightBase");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "PD3TrafficLightBase_C", "ExecuteUbergraph_PD3TrafficLightBase", FuncInfo);
 
 	Params::PD3TrafficLightBase_C_ExecuteUbergraph_PD3TrafficLightBase Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function PD3TrafficLightBase.PD3TrafficLightBase_C.UpdatePool
-// (Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// ESBZTrafficLightStatus                  Status                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const TArray<class UStaticMeshComponent*>&Pool                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-// const TArray<class USBZAmbientSoundComponent*>&PedestrianSoundEmitters                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-
-void APD3TrafficLightBase_C::UpdatePool(ESBZTrafficLightStatus Status, const TArray<class UStaticMeshComponent*>& Pool, const TArray<class USBZAmbientSoundComponent*>& PedestrianSoundEmitters)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PD3TrafficLightBase_C", "UpdatePool");
-
-	Params::PD3TrafficLightBase_C_UpdatePool Parms{};
-
-	Parms.Status = Status;
-	Parms.Pool = std::move(Pool);
-	Parms.PedestrianSoundEmitters = std::move(PedestrianSoundEmitters);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

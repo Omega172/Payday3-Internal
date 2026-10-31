@@ -26,9 +26,9 @@ public:
 	class USBZAIObjectiveComponent*               SBZAIObjective;                                    // 0x03F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_FOR_USBDrive(int32 EntryPoint);
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
 	class FText GetMarkerText();
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
+	void ExecuteUbergraph_BP_FOR_USBDrive(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<ABP_FOR_USBDrive_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_FOR_USBDrive_C;
 
 SDK_NAMESPACE_END

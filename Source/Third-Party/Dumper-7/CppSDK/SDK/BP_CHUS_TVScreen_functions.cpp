@@ -16,37 +16,89 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_CHUS_TVScreen.BP_CHUS_TVScreen_C.BndEvt__BP_CHUS_TVScreen_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// ESBZCosmeticDestructionType             Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZCosmeticDestructionContext&HitContext                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// Function BP_CHUS_TVScreen.BP_CHUS_TVScreen_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_CHUS_TVScreen_C::BndEvt__BP_CHUS_TVScreen_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)
+void ABP_CHUS_TVScreen_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CHUS_TVScreen_C", "BndEvt__BP_CHUS_TVScreen_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_CHUS_TVScreen_C_BndEvt__BP_CHUS_TVScreen_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature Parms{};
 
-	Parms.Type = Type;
-	Parms.HitContext = std::move(HitContext);
+// Function BP_CHUS_TVScreen.BP_CHUS_TVScreen_C.SetStateFunction
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// Enum_TVScreenStates                     State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_CHUS_TVScreen_C::SetStateFunction(Enum_TVScreenStates State)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetStateFunction", FnName));
+
+	Params::BP_CHUS_TVScreen_C_SetStateFunction Parms{};
+
+	Parms.State = State;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_CHUS_TVScreen.BP_CHUS_TVScreen_C.DefaultText
+// Function BP_CHUS_TVScreen.BP_CHUS_TVScreen_C.SecondDay
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_CHUS_TVScreen_C::DefaultText()
+void ABP_CHUS_TVScreen_C::SecondDay()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SecondDay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CHUS_TVScreen_C", "DefaultText");
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_CHUS_TVScreen.BP_CHUS_TVScreen_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_CHUS_TVScreen_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_CHUS_TVScreen.BP_CHUS_TVScreen_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   OldState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_CHUS_TVScreen_C::OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_CHUS_TVScreen_C_OnStateChanged Parms{};
+
+	Parms.OldState_OnStateChanged = OldState_OnStateChanged;
+	Parms.NewState_OnStateChanged = NewState_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_CHUS_TVScreen.BP_CHUS_TVScreen_C.FirstDay
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_CHUS_TVScreen_C::FirstDay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"FirstDay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -59,10 +111,8 @@ void ABP_CHUS_TVScreen_C::DefaultText()
 
 void ABP_CHUS_TVScreen_C::ExecuteUbergraph_BP_CHUS_TVScreen(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CHUS_TVScreen_C", "ExecuteUbergraph_BP_CHUS_TVScreen");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_CHUS_TVScreen_C", "ExecuteUbergraph_BP_CHUS_TVScreen", FuncInfo);
 
 	Params::BP_CHUS_TVScreen_C_ExecuteUbergraph_BP_CHUS_TVScreen Parms{};
 
@@ -72,103 +122,35 @@ void ABP_CHUS_TVScreen_C::ExecuteUbergraph_BP_CHUS_TVScreen(int32 EntryPoint)
 }
 
 
-// Function BP_CHUS_TVScreen.BP_CHUS_TVScreen_C.FirstDay
+// Function BP_CHUS_TVScreen.BP_CHUS_TVScreen_C.DefaultText
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_CHUS_TVScreen_C::FirstDay()
+void ABP_CHUS_TVScreen_C::DefaultText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CHUS_TVScreen_C", "FirstDay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"DefaultText", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_CHUS_TVScreen.BP_CHUS_TVScreen_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
+// Function BP_CHUS_TVScreen.BP_CHUS_TVScreen_C.BndEvt__BP_CHUS_TVScreen_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
 // Parameters:
-// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZCosmeticDestructionType             Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZCosmeticDestructionContext&HitContext                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 
-void ABP_CHUS_TVScreen_C::OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics)
+void ABP_CHUS_TVScreen_C::BndEvt__BP_CHUS_TVScreen_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_CHUS_TVScreen_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CHUS_TVScreen_C", "OnStateChanged");
+	Params::BP_CHUS_TVScreen_C_BndEvt__BP_CHUS_TVScreen_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature Parms{};
 
-	Params::BP_CHUS_TVScreen_C_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.Type = Type;
+	Parms.HitContext = std::move(HitContext);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_CHUS_TVScreen.BP_CHUS_TVScreen_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_CHUS_TVScreen_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CHUS_TVScreen_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_CHUS_TVScreen.BP_CHUS_TVScreen_C.SecondDay
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_CHUS_TVScreen_C::SecondDay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CHUS_TVScreen_C", "SecondDay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_CHUS_TVScreen.BP_CHUS_TVScreen_C.SetStateFunction
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// Enum_TVScreenStates                     State_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_CHUS_TVScreen_C::SetStateFunction(Enum_TVScreenStates State_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CHUS_TVScreen_C", "SetStateFunction");
-
-	Params::BP_CHUS_TVScreen_C_SetStateFunction Parms{};
-
-	Parms.State_0 = State_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_CHUS_TVScreen.BP_CHUS_TVScreen_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_CHUS_TVScreen_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CHUS_TVScreen_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

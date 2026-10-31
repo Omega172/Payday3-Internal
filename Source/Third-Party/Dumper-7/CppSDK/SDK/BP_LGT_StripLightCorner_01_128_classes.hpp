@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_LGT_StripLightCorner_01_128_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LGT_StripLightCorner_01_128_C;
 
 SDK_NAMESPACE_END

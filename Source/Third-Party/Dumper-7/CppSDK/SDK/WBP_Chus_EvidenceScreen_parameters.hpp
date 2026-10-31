@@ -14,24 +14,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_Chus_EvidenceScreen.WBP_Chus_EvidenceScreen_C.setCompleted
-// 0x0030 (0x0030 - 0x0000)
-struct WBP_Chus_EvidenceScreen_C_setCompleted final
-{
-public:
-	class FText                                   case_0;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class FText                                   defendant;                                         // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class FText                                   evidence;                                          // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-
-// Function WBP_Chus_EvidenceScreen.WBP_Chus_EvidenceScreen_C.setIdle
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_Chus_EvidenceScreen_C_setIdle final
-{
-public:
-	class FText                                   idleText;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-
 // Function WBP_Chus_EvidenceScreen.WBP_Chus_EvidenceScreen_C.setProgress
 // 0x0018 (0x0018 - 0x0000)
 struct WBP_Chus_EvidenceScreen_C_setProgress final
@@ -43,6 +25,27 @@ public:
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SetPercent_InPercent_ImplicitCast;        // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_WBP_Chus_EvidenceScreen_C_setProgress;
+
+// Function WBP_Chus_EvidenceScreen.WBP_Chus_EvidenceScreen_C.setIdle
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_Chus_EvidenceScreen_C_setIdle final
+{
+public:
+	class FText                                   idleText;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_Chus_EvidenceScreen_C_setIdle;
+
+// Function WBP_Chus_EvidenceScreen.WBP_Chus_EvidenceScreen_C.setCompleted
+// 0x0030 (0x0030 - 0x0000)
+struct WBP_Chus_EvidenceScreen_C_setCompleted final
+{
+public:
+	class FText                                   case_0;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   defendant;                                         // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   evidence;                                          // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_Chus_EvidenceScreen_C_setCompleted;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

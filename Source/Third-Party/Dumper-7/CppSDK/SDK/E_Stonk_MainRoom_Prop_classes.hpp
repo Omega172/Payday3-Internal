@@ -25,11 +25,11 @@ public:
 	class AGlobal_State_actor_C*                  Global_State_actor_3_ExecuteUbergraph_E_Stonk_MainRoom_Prop_RefProperty; // 0x03D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_E_Stonk_MainRoom_Prop(int32 EntryPoint);
-	void StonkEMPTriggered();
-	void StonkRedA();
-	void StonkRedB();
 	void StonkRedFinal();
+	void StonkRedB();
+	void StonkRedA();
+	void StonkEMPTriggered();
+	void ExecuteUbergraph_E_Stonk_MainRoom_Prop(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<AE_Stonk_MainRoom_Prop_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_Stonk_MainRoom_Prop_C;
 
 SDK_NAMESPACE_END

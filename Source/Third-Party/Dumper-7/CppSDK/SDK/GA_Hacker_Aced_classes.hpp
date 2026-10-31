@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGA_Hacker_Aced_C>();
 	}
 };
+DUMPER7_ASSERTS_UGA_Hacker_Aced_C;
 
 SDK_NAMESPACE_END

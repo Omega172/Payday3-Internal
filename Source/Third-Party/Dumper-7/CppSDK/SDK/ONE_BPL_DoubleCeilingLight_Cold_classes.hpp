@@ -40,5 +40,6 @@ public:
 		return GetDefaultObjImpl<AONE_BPL_DoubleCeilingLight_Cold_C>();
 	}
 };
+DUMPER7_ASSERTS_AONE_BPL_DoubleCeilingLight_Cold_C;
 
 SDK_NAMESPACE_END

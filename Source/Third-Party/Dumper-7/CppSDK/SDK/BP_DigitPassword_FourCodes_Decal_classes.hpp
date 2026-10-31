@@ -52,5 +52,6 @@ public:
 		return GetDefaultObjImpl<ABP_DigitPassword_FourCodes_Decal_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DigitPassword_FourCodes_Decal_C;
 
 SDK_NAMESPACE_END

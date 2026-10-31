@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "S_LootableCar_Variations_structs.hpp"
 #include "Engine_structs.hpp"
 #include "E_LootableCarPart_structs.hpp"
 #include "Starbreeze_classes.hpp"
-#include "S_LootableCar_Variations_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -52,24 +52,24 @@ public:
 	TArray<struct FS_LootableCar_Variations>      variations;                                        // 0x0488(0x0010)(Edit, BlueprintVisible)
 
 public:
-	void BndEvt__BP_LootableCar_01_LookAtTrigger_K2Node_ComponentBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__BP_LootableCar_01_variation_SBZIntState_K2Node_ComponentBoundEvent_2_SBZIntStateChangedSignature__DelegateSignature(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void BndEvt__BP_LootableCar_01_waypoint_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature(bool bState_0, bool bDoCosmetics);
-	void destroyUnusedLoot();
-	void ExecuteUbergraph_BP_LootableCar_01(int32 EntryPoint);
-	void firstInteraction();
-	class FText GetMarkerText();
-	void hiddenAreaUncovered();
-	void isEverythingLooted(bool* allLooted);
-	void lootPickedUp();
-	void ReceiveBeginPlay();
-	void searchPart(E_LootableCarPart part, bool fullySearched, bool removeLoot, bool* lootSuccessfullyRemoved);
-	void setInteraction(bool enabled);
-	void setLookAtTrigger(bool bEnabled);
-	void setLootablePart(E_LootableCarPart part, bool lootable, bool secondaryType);
-	void setLowerPartsInteractable(bool enabled);
-	void setWaypoint(bool enabled);
 	void UserConstructionScript();
+	void setWaypoint(bool enabled);
+	void setLowerPartsInteractable(bool enabled);
+	void setLootablePart(E_LootableCarPart part, bool lootable, bool secondaryType);
+	void setLookAtTrigger(bool bEnabled);
+	void setInteraction(bool enabled);
+	void searchPart(E_LootableCarPart part, bool fullySearched, bool removeLoot, bool* lootSuccessfullyRemoved);
+	void ReceiveBeginPlay();
+	void lootPickedUp();
+	void isEverythingLooted(bool* allLooted);
+	void hiddenAreaUncovered();
+	class FText GetMarkerText();
+	void firstInteraction();
+	void ExecuteUbergraph_BP_LootableCar_01(int32 EntryPoint);
+	void destroyUnusedLoot();
+	void BndEvt__BP_LootableCar_01_waypoint_SBZBinaryState_K2Node_ComponentBoundEvent_0_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
+	void BndEvt__BP_LootableCar_01_variation_SBZIntState_K2Node_ComponentBoundEvent_2_SBZIntStateChangedSignature__DelegateSignature(int32 OldState, int32 NewState, bool bDoCosmetics);
+	void BndEvt__BP_LootableCar_01_LookAtTrigger_K2Node_ComponentBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
 
 public:
 	static class UClass* StaticClass()
@@ -85,5 +85,6 @@ public:
 		return GetDefaultObjImpl<ABP_LootableCar_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LootableCar_01_C;
 
 SDK_NAMESPACE_END

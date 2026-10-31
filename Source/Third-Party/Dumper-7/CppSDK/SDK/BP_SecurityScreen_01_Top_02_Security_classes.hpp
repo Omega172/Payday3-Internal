@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_SecurityScreen_01_Top_02_Security_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SecurityScreen_01_Top_02_Security_C;
 
 SDK_NAMESPACE_END

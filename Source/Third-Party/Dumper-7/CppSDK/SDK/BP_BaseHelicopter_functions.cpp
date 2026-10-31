@@ -16,6 +16,62 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_BaseHelicopter.BP_BaseHelicopter_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_BaseHelicopter_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_BaseHelicopter.BP_BaseHelicopter_C.ExecuteUbergraph_BP_BaseHelicopter
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BaseHelicopter_C::ExecuteUbergraph_BP_BaseHelicopter(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_BaseHelicopter_C", "ExecuteUbergraph_BP_BaseHelicopter", FuncInfo);
+
+	Params::BP_BaseHelicopter_C_ExecuteUbergraph_BP_BaseHelicopter Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_BaseHelicopter.BP_BaseHelicopter_C.CustomEvent
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UPrimitiveComponent*              HitComponent                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   NormalImpulse                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FHitResult&                Hit                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+
+void ABP_BaseHelicopter_C::CustomEvent(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CustomEvent", FnName));
+
+	Params::BP_BaseHelicopter_C_CustomEvent Parms{};
+
+	Parms.HitComponent = HitComponent;
+	Parms.OtherActor = OtherActor;
+	Parms.OtherComp = OtherComp;
+	Parms.NormalImpulse = std::move(NormalImpulse);
+	Parms.Hit = std::move(Hit);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_BaseHelicopter.BP_BaseHelicopter_C.CheckDistanceToGround
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -25,10 +81,8 @@ SDK_NAMESPACE_START
 
 void ABP_BaseHelicopter_C::CheckDistanceToGround(class USceneComponent* GeoTracking, struct FVector* Location, double* DistanceToGround)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseHelicopter_C", "CheckDistanceToGround");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CheckDistanceToGround", FnName));
 
 	Params::BP_BaseHelicopter_C_CheckDistanceToGround Parms{};
 
@@ -44,37 +98,35 @@ void ABP_BaseHelicopter_C::CheckDistanceToGround(class USceneComponent* GeoTrack
 }
 
 
-// Function BP_BaseHelicopter.BP_BaseHelicopter_C.ExecuteUbergraph_BP_BaseHelicopter
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_BaseHelicopter.BP_BaseHelicopter_C.BP_OnKill
+// (Event, Protected, BlueprintEvent)
 
-void ABP_BaseHelicopter_C::ExecuteUbergraph_BP_BaseHelicopter(int32 EntryPoint)
+void ABP_BaseHelicopter_C::BP_OnKill()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnKill", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseHelicopter_C", "ExecuteUbergraph_BP_BaseHelicopter");
-
-	Params::BP_BaseHelicopter_C_ExecuteUbergraph_BP_BaseHelicopter Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_BaseHelicopter.BP_BaseHelicopter_C.ReceiveBeginPlay
+// Function BP_BaseHelicopter.BP_BaseHelicopter_C.BP_OnHealthChanged
 // (Event, Protected, BlueprintEvent)
+// Parameters:
+// float                                   Health                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   MaxHealth                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_BaseHelicopter_C::ReceiveBeginPlay()
+void ABP_BaseHelicopter_C::BP_OnHealthChanged(float Health, float MaxHealth)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnHealthChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BaseHelicopter_C", "ReceiveBeginPlay");
+	Params::BP_BaseHelicopter_C_BP_OnHealthChanged Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.Health = Health;
+	Parms.MaxHealth = MaxHealth;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

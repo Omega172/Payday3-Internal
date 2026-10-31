@@ -16,25 +16,45 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Throwable_GasGrenade.BP_Throwable_GasGrenade_C.BndEvt__BP_Throwable_GasGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature
-// (HasOutParams, BlueprintEvent)
+// Function BP_Throwable_GasGrenade.BP_Throwable_GasGrenade_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// const struct FHitResult&                ImpactResult                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// const struct FVector&                   ImpactVelocity                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaSeconds_ReceiveTick                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Throwable_GasGrenade_C::BndEvt__BP_Throwable_GasGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity)
+void ABP_Throwable_GasGrenade_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveTick", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_GasGrenade_C", "BndEvt__BP_Throwable_GasGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature");
+	Params::BP_Throwable_GasGrenade_C_ReceiveTick Parms{};
 
-	Params::BP_Throwable_GasGrenade_C_BndEvt__BP_Throwable_GasGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature Parms{};
-
-	Parms.ImpactResult = std::move(ImpactResult);
-	Parms.ImpactVelocity = std::move(ImpactVelocity);
+	Parms.DeltaSeconds_ReceiveTick = DeltaSeconds_ReceiveTick;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Throwable_GasGrenade.BP_Throwable_GasGrenade_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_Throwable_GasGrenade_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Throwable_GasGrenade.BP_Throwable_GasGrenade_C.OnThrow
+// (Event, Protected, BlueprintEvent)
+
+void ABP_Throwable_GasGrenade_C::OnThrow()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnThrow", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -45,10 +65,8 @@ void ABP_Throwable_GasGrenade_C::BndEvt__BP_Throwable_GasGrenade_ProjectileMovem
 
 void ABP_Throwable_GasGrenade_C::ExecuteUbergraph_BP_Throwable_GasGrenade(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_GasGrenade_C", "ExecuteUbergraph_BP_Throwable_GasGrenade");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Throwable_GasGrenade_C", "ExecuteUbergraph_BP_Throwable_GasGrenade", FuncInfo);
 
 	Params::BP_Throwable_GasGrenade_C_ExecuteUbergraph_BP_Throwable_GasGrenade Parms{};
 
@@ -58,49 +76,21 @@ void ABP_Throwable_GasGrenade_C::ExecuteUbergraph_BP_Throwable_GasGrenade(int32 
 }
 
 
-// Function BP_Throwable_GasGrenade.BP_Throwable_GasGrenade_C.OnThrow
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Throwable_GasGrenade_C::OnThrow()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_GasGrenade_C", "OnThrow");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Throwable_GasGrenade.BP_Throwable_GasGrenade_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Throwable_GasGrenade_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_GasGrenade_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Throwable_GasGrenade.BP_Throwable_GasGrenade_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
+// Function BP_Throwable_GasGrenade.BP_Throwable_GasGrenade_C.BndEvt__BP_Throwable_GasGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature
+// (HasOutParams, BlueprintEvent)
 // Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FHitResult&                ImpactResult                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FVector&                   ImpactVelocity                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Throwable_GasGrenade_C::ReceiveTick(float DeltaSeconds)
+void ABP_Throwable_GasGrenade_C::BndEvt__BP_Throwable_GasGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Throwable_GasGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_GasGrenade_C", "ReceiveTick");
+	Params::BP_Throwable_GasGrenade_C_BndEvt__BP_Throwable_GasGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature Parms{};
 
-	Params::BP_Throwable_GasGrenade_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
+	Parms.ImpactResult = std::move(ImpactResult);
+	Parms.ImpactVelocity = std::move(ImpactVelocity);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

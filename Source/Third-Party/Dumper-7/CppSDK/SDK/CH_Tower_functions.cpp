@@ -16,15 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function CH_Tower.CH_Tower_C.BP_OnKill
-// (Event, Public, BlueprintEvent)
+// Function CH_Tower.CH_Tower_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ACH_Tower_C::BP_OnKill()
+void ACH_Tower_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CH_Tower_C", "BP_OnKill");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -37,10 +35,8 @@ void ACH_Tower_C::BP_OnKill()
 
 void ACH_Tower_C::ExecuteUbergraph_CH_Tower(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CH_Tower_C", "ExecuteUbergraph_CH_Tower");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "CH_Tower_C", "ExecuteUbergraph_CH_Tower", FuncInfo);
 
 	Params::CH_Tower_C_ExecuteUbergraph_CH_Tower Parms{};
 
@@ -50,15 +46,13 @@ void ACH_Tower_C::ExecuteUbergraph_CH_Tower(int32 EntryPoint)
 }
 
 
-// Function CH_Tower.CH_Tower_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function CH_Tower.CH_Tower_C.BP_OnKill
+// (Event, Public, BlueprintEvent)
 
-void ACH_Tower_C::ReceiveBeginPlay()
+void ACH_Tower_C::BP_OnKill()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CH_Tower_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnKill", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

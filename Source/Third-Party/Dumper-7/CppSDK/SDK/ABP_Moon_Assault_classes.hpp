@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
+#include "ControlRig_structs.hpp"
 #include "ABP_Moon_Assault_structs.hpp"
+#include "Engine_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "ControlRig_structs.hpp"
 #include "Starbreeze_classes.hpp"
 
 
@@ -56,7 +56,7 @@ public:
 	struct FVector                                __CustomProperty_Velocity_0FAD52EE42BA8AE635BCF59646742C39; // 0x1428(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnimGraph(struct FPoseLink* AnimGraph_0);
+	void AnimGraph(struct FPoseLink* AnimGraph);
 
 public:
 	static class UClass* StaticClass()
@@ -72,5 +72,6 @@ public:
 		return GetDefaultObjImpl<UABP_Moon_Assault_C>();
 	}
 };
+DUMPER7_ASSERTS_UABP_Moon_Assault_C;
 
 SDK_NAMESPACE_END

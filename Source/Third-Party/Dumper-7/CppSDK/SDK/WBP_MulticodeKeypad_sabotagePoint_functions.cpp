@@ -16,26 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_MulticodeKeypad_sabotagePoint.WBP_MulticodeKeypad_sabotagePoint_C.ExecuteUbergraph_WBP_MulticodeKeypad_sabotagePoint
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_MulticodeKeypad_sabotagePoint_C::ExecuteUbergraph_WBP_MulticodeKeypad_sabotagePoint(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MulticodeKeypad_sabotagePoint_C", "ExecuteUbergraph_WBP_MulticodeKeypad_sabotagePoint");
-
-	Params::WBP_MulticodeKeypad_sabotagePoint_C_ExecuteUbergraph_WBP_MulticodeKeypad_sabotagePoint Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_MulticodeKeypad_sabotagePoint.WBP_MulticodeKeypad_sabotagePoint_C.setState
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -43,14 +23,30 @@ void UWBP_MulticodeKeypad_sabotagePoint_C::ExecuteUbergraph_WBP_MulticodeKeypad_
 
 void UWBP_MulticodeKeypad_sabotagePoint_C::setState(int32 state)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MulticodeKeypad_sabotagePoint_C", "setState");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setState", FnName));
 
 	Params::WBP_MulticodeKeypad_sabotagePoint_C_setState Parms{};
 
 	Parms.state = state;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_MulticodeKeypad_sabotagePoint.WBP_MulticodeKeypad_sabotagePoint_C.ExecuteUbergraph_WBP_MulticodeKeypad_sabotagePoint
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_MulticodeKeypad_sabotagePoint_C::ExecuteUbergraph_WBP_MulticodeKeypad_sabotagePoint(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_MulticodeKeypad_sabotagePoint_C", "ExecuteUbergraph_WBP_MulticodeKeypad_sabotagePoint", FuncInfo);
+
+	Params::WBP_MulticodeKeypad_sabotagePoint_C_ExecuteUbergraph_WBP_MulticodeKeypad_sabotagePoint Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

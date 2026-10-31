@@ -14,14 +14,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_JewelryMachine.WBP_JewelryMachine_C.ExecuteUbergraph_WBP_JewelryMachine
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_JewelryMachine_C_ExecuteUbergraph_WBP_JewelryMachine final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function WBP_JewelryMachine.WBP_JewelryMachine_C.SetAmount
 // 0x0010 (0x0010 - 0x0000)
 struct WBP_JewelryMachine_C_SetAmount final
@@ -29,6 +21,16 @@ struct WBP_JewelryMachine_C_SetAmount final
 public:
 	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
+DUMPER7_ASSERTS_WBP_JewelryMachine_C_SetAmount;
+
+// Function WBP_JewelryMachine.WBP_JewelryMachine_C.ExecuteUbergraph_WBP_JewelryMachine
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_JewelryMachine_C_ExecuteUbergraph_WBP_JewelryMachine final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_JewelryMachine_C_ExecuteUbergraph_WBP_JewelryMachine;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

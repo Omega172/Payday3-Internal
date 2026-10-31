@@ -15,6 +15,13 @@
 
 SDK_NAMESPACE_START
 
+// ScriptStruct ABP_CinematicParts.ABP_CinematicParts_C.AnimBlueprintGeneratedMutableData
+// 0x0000 (0x0001 - 0x0001)
+struct ABP_CinematicParts::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
+{
+};
+DUMPER7_ASSERTS_ABP_CinematicParts__FAnimBlueprintGeneratedMutableData;
+
 // ScriptStruct ABP_CinematicParts.ABP_CinematicParts_C.AnimBlueprintGeneratedConstantData
 // 0x01F7 (0x01F8 - 0x0001)
 struct ABP_CinematicParts::FAnimBlueprintGeneratedConstantData final : public FAnimBlueprintConstantData
@@ -33,11 +40,6 @@ public:
 	struct FAnimNodeExposedValueHandler_PropertyAccess AnimGraphNode_LocalToComponentSpace;          // 0x0188(0x0038)()
 	struct FAnimNodeExposedValueHandler_PropertyAccess AnimGraphNode_ComponentToLocalSpace;          // 0x01C0(0x0038)()
 };
-
-// ScriptStruct ABP_CinematicParts.ABP_CinematicParts_C.AnimBlueprintGeneratedMutableData
-// 0x0000 (0x0001 - 0x0001)
-struct ABP_CinematicParts::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
-{
-};
+DUMPER7_ASSERTS_ABP_CinematicParts__FAnimBlueprintGeneratedConstantData;
 
 SDK_NAMESPACE_END

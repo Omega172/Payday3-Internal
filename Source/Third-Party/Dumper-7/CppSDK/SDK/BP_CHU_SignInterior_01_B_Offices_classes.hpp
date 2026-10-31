@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_CHU_SignInterior_01_B_Offices_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CHU_SignInterior_01_B_Offices_C;
 
 SDK_NAMESPACE_END

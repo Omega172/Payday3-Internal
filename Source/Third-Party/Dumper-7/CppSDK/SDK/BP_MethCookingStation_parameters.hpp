@@ -19,51 +19,25 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_MethCookingStation.BP_MethCookingStation_C.BndEvt__BP_MethCookingStation_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// Function BP_MethCookingStation.BP_MethCookingStation_C.UserConstructionScript
 // 0x0018 (0x0018 - 0x0000)
-struct BP_MethCookingStation_C_BndEvt__BP_MethCookingStation_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
+struct BP_MethCookingStation_C_UserConstructionScript final
 {
 public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class UStaticMeshComponent*>           K2Node_MakeArray_Array;                            // 0x0000(0x0010)(ReferenceParm, ContainsInstancedReference)
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_MethCookingStation_C_UserConstructionScript;
 
-// Function BP_MethCookingStation.BP_MethCookingStation_C.BndEvt__BP_MethCookingStation_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_MethCookingStation_C_BndEvt__BP_MethCookingStation_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_MethCookingStation.BP_MethCookingStation_C.BP_OnIngredientAdded
-// 0x0004 (0x0004 - 0x0000)
-struct BP_MethCookingStation_C_BP_OnIngredientAdded final
-{
-public:
-	int32                                         IngredientIndex;                                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_MethCookingStation.BP_MethCookingStation_C.BP_OnStateChanged
-// 0x0003 (0x0003 - 0x0000)
-struct BP_MethCookingStation_C_BP_OnStateChanged final
+// Function BP_MethCookingStation.BP_MethCookingStation_C.onStateChanged Server
+// 0x0002 (0x0002 - 0x0000)
+struct BP_MethCookingStation_C_onStateChanged_Server final
 {
 public:
 	ESBZCookingState                              OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESBZCookingState                              NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_MethCookingStation.BP_MethCookingStation_C.BP_OnStaticOrderGenerated
-// 0x0010 (0x0010 - 0x0000)
-struct BP_MethCookingStation_C_BP_OnStaticOrderGenerated final
-{
-public:
-	TArray<int32>                                 Order;                                             // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
+DUMPER7_ASSERTS_BP_MethCookingStation_C_onStateChanged_Server;
 
 // Function BP_MethCookingStation.BP_MethCookingStation_C.ExecuteUbergraph_BP_MethCookingStation
 // 0x0408 (0x0408 - 0x0000)
@@ -194,24 +168,58 @@ public:
 	uint8                                         Pad_401[0x3];                                      // 0x0401(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Timeline_NewTime_ImplicitCast;              // 0x0404(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_MethCookingStation_C_ExecuteUbergraph_BP_MethCookingStation;
 
-// Function BP_MethCookingStation.BP_MethCookingStation_C.onStateChanged Server
-// 0x0002 (0x0002 - 0x0000)
-struct BP_MethCookingStation_C_onStateChanged_Server final
+// Function BP_MethCookingStation.BP_MethCookingStation_C.BP_OnStaticOrderGenerated
+// 0x0010 (0x0010 - 0x0000)
+struct BP_MethCookingStation_C_BP_OnStaticOrderGenerated final
 {
 public:
-	ESBZCookingState                              OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZCookingState                              NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<int32>                                 Order_BP_OnStaticOrderGenerated;                   // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
+DUMPER7_ASSERTS_BP_MethCookingStation_C_BP_OnStaticOrderGenerated;
 
-// Function BP_MethCookingStation.BP_MethCookingStation_C.UserConstructionScript
+// Function BP_MethCookingStation.BP_MethCookingStation_C.BP_OnStateChanged
+// 0x0003 (0x0003 - 0x0000)
+struct BP_MethCookingStation_C_BP_OnStateChanged final
+{
+public:
+	ESBZCookingState                              OldState_BP_OnStateChanged;                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZCookingState                              NewState_BP_OnStateChanged;                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_BP_OnStateChanged;                    // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_MethCookingStation_C_BP_OnStateChanged;
+
+// Function BP_MethCookingStation.BP_MethCookingStation_C.BP_OnIngredientAdded
+// 0x0004 (0x0004 - 0x0000)
+struct BP_MethCookingStation_C_BP_OnIngredientAdded final
+{
+public:
+	int32                                         IngredientIndex_BP_OnIngredientAdded;              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_MethCookingStation_C_BP_OnIngredientAdded;
+
+// Function BP_MethCookingStation.BP_MethCookingStation_C.BndEvt__BP_MethCookingStation_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
 // 0x0018 (0x0018 - 0x0000)
-struct BP_MethCookingStation_C_UserConstructionScript final
+struct BP_MethCookingStation_C_BndEvt__BP_MethCookingStation_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature final
 {
 public:
-	TArray<class UStaticMeshComponent*>           K2Node_MakeArray_Array;                            // 0x0000(0x0010)(ReferenceParm, ContainsInstancedReference)
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_MethCookingStation_C_BndEvt__BP_MethCookingStation_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature;
+
+// Function BP_MethCookingStation.BP_MethCookingStation_C.BndEvt__BP_MethCookingStation_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_MethCookingStation_C_BndEvt__BP_MethCookingStation_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsLocallyControlledInteractor;                    // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_MethCookingStation_C_BndEvt__BP_MethCookingStation_InteractableComponent_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

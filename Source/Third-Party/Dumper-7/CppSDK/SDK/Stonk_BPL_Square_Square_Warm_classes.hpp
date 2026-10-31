@@ -41,5 +41,6 @@ public:
 		return GetDefaultObjImpl<AStonk_BPL_Square_Square_Warm_C>();
 	}
 };
+DUMPER7_ASSERTS_AStonk_BPL_Square_Square_Warm_C;
 
 SDK_NAMESPACE_END

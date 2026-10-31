@@ -23,8 +23,8 @@ public:
 	bool                                          Enable_Offset;                                     // 0x0378(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void RandomOffset(bool EnableOffset);
 	void UserConstructionScript();
+	void RandomOffset(bool EnableOffset);
 
 public:
 	static class UClass* StaticClass()
@@ -40,5 +40,6 @@ public:
 		return GetDefaultObjImpl<ABP_InstantLoot_Cocaine_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_InstantLoot_Cocaine_01_C;
 
 SDK_NAMESPACE_END

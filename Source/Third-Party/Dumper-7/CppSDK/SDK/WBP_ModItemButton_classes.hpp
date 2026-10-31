@@ -32,12 +32,12 @@ public:
 	TSoftObjectPtr<class USBZInventoryBaseData>   PreviewData;                                       // 0x03F0(0x0030)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 
 public:
-	void SetSlot(const class USBZModularPartSlotBase* SlotData);
-	void SetItemData(class USBZInventoryBaseData* ItemData);
-	void SetEmpty();
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnListItemObjectSet(class UObject* ListItemObject_OnListItemObjectSet);
 	void ExecuteUbergraph_WBP_ModItemButton(int32 EntryPoint);
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void PreConstruct(bool IsDesignTime);
+	void SetEmpty();
+	void SetItemData(class USBZInventoryBaseData* ItemData);
+	void SetSlot(const class USBZModularPartSlotBase* SlotData);
 
 public:
 	static class UClass* StaticClass()

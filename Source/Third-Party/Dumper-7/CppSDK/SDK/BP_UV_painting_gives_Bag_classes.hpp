@@ -24,8 +24,8 @@ public:
 	bool                                          Is_Hidden_Painting;                                // 0x03E0(0x0001)(Edit, BlueprintVisible, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void OnRep_Is_Hidden_Painting();
 	void UserConstructionScript();
+	void OnRep_Is_Hidden_Painting();
 
 public:
 	static class UClass* StaticClass()
@@ -41,5 +41,6 @@ public:
 		return GetDefaultObjImpl<ABP_UV_painting_gives_Bag_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_UV_painting_gives_Bag_C;
 
 SDK_NAMESPACE_END

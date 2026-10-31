@@ -26,12 +26,12 @@ public:
 	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0360(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_Plankspile_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_Plankspile(int32 EntryPoint);
-	void Set_Interaction_OFF();
-	void Set_Interaction_ON();
-	void Set_Visibility_OFF();
 	void Set_Visibility_ON();
+	void Set_Visibility_OFF();
+	void Set_Interaction_ON();
+	void Set_Interaction_OFF();
+	void ExecuteUbergraph_BP_Plankspile(int32 EntryPoint);
+	void BndEvt__BP_Plankspile_Interactable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -47,5 +47,6 @@ public:
 		return GetDefaultObjImpl<ABP_Plankspile_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Plankspile_C;
 
 SDK_NAMESPACE_END

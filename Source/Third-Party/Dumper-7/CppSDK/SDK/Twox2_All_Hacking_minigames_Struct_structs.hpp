@@ -27,5 +27,6 @@ public:
 	struct FTwox2_Minigame_Structs                Twox2_Minigame_Type_5_17_B84747C944CABFA8272953992B3156E3; // 0x00C0(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	struct FTwox2_Minigame_Structs                Threex3_Minigame_Type_6_12_CD21495D43809D666BF464A363D9430F; // 0x00F0(0x0030)(Edit, BlueprintVisible, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_FTwox2_All_Hacking_minigames_Struct;
 
 SDK_NAMESPACE_END

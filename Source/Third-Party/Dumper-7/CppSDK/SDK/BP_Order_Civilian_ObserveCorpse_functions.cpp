@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_Order_Civilian_ObserveCorpse.BP_Order_Civilian_ObserveCorpse_C.OnStartedBP
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn_OnStartedBP                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UBP_Order_Civilian_ObserveCorpse_C::OnStartedBP(class APawn* Pawn_OnStartedBP)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStartedBP", FnName));
+
+	Params::BP_Order_Civilian_ObserveCorpse_C_OnStartedBP Parms{};
+
+	Parms.Pawn_OnStartedBP = Pawn_OnStartedBP;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_Order_Civilian_ObserveCorpse.BP_Order_Civilian_ObserveCorpse_C.ExecuteUbergraph_BP_Order_Civilian_ObserveCorpse
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,34 +41,12 @@ SDK_NAMESPACE_START
 
 void UBP_Order_Civilian_ObserveCorpse_C::ExecuteUbergraph_BP_Order_Civilian_ObserveCorpse(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Order_Civilian_ObserveCorpse_C", "ExecuteUbergraph_BP_Order_Civilian_ObserveCorpse");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Order_Civilian_ObserveCorpse_C", "ExecuteUbergraph_BP_Order_Civilian_ObserveCorpse", FuncInfo);
 
 	Params::BP_Order_Civilian_ObserveCorpse_C_ExecuteUbergraph_BP_Order_Civilian_ObserveCorpse Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Order_Civilian_ObserveCorpse.BP_Order_Civilian_ObserveCorpse_C.OnStartedBP
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UBP_Order_Civilian_ObserveCorpse_C::OnStartedBP(class APawn* Pawn)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Order_Civilian_ObserveCorpse_C", "OnStartedBP");
-
-	Params::BP_Order_Civilian_ObserveCorpse_C_OnStartedBP Parms{};
-
-	Parms.Pawn = Pawn;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

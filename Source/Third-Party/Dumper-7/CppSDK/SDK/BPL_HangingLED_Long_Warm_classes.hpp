@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ABPL_HangingLED_Long_Warm_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_HangingLED_Long_Warm_C;
 
 SDK_NAMESPACE_END

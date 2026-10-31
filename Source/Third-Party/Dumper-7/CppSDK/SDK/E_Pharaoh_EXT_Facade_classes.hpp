@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AE_Pharaoh_EXT_Facade_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_Pharaoh_EXT_Facade_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UBP_CoverPointManager_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_CoverPointManager_C;
 
 SDK_NAMESPACE_END

@@ -16,23 +16,33 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_LGT_IndustrialLight_Replicated.BP_LGT_IndustrialLight_Replicated_C.BndEvt__BPL_Red_WallLampIndustrial_Bulb_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// ESBZCosmeticDestructionType             Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZCosmeticDestructionContext&HitContext                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// Function BP_LGT_IndustrialLight_Replicated.BP_LGT_IndustrialLight_Replicated_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_LGT_IndustrialLight_Replicated_C::BndEvt__BPL_Red_WallLampIndustrial_Bulb_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)
+void ABP_LGT_IndustrialLight_Replicated_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LGT_IndustrialLight_Replicated_C", "BndEvt__BPL_Red_WallLampIndustrial_Bulb_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_LGT_IndustrialLight_Replicated_C_BndEvt__BPL_Red_WallLampIndustrial_Bulb_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature Parms{};
 
-	Parms.Type = Type;
-	Parms.HitContext = std::move(HitContext);
+// Function BP_LGT_IndustrialLight_Replicated.BP_LGT_IndustrialLight_Replicated_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bStateToChangeTo_OnStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LGT_IndustrialLight_Replicated_C::OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_LGT_IndustrialLight_Replicated_C_OnStateChanged Parms{};
+
+	Parms.bStateToChangeTo_OnStateChanged = bStateToChangeTo_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -45,10 +55,8 @@ void ABP_LGT_IndustrialLight_Replicated_C::BndEvt__BPL_Red_WallLampIndustrial_Bu
 
 void ABP_LGT_IndustrialLight_Replicated_C::ExecuteUbergraph_BP_LGT_IndustrialLight_Replicated(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LGT_IndustrialLight_Replicated_C", "ExecuteUbergraph_BP_LGT_IndustrialLight_Replicated");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_LGT_IndustrialLight_Replicated_C", "ExecuteUbergraph_BP_LGT_IndustrialLight_Replicated", FuncInfo);
 
 	Params::BP_LGT_IndustrialLight_Replicated_C_ExecuteUbergraph_BP_LGT_IndustrialLight_Replicated Parms{};
 
@@ -58,39 +66,23 @@ void ABP_LGT_IndustrialLight_Replicated_C::ExecuteUbergraph_BP_LGT_IndustrialLig
 }
 
 
-// Function BP_LGT_IndustrialLight_Replicated.BP_LGT_IndustrialLight_Replicated_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
+// Function BP_LGT_IndustrialLight_Replicated.BP_LGT_IndustrialLight_Replicated_C.BndEvt__BPL_Red_WallLampIndustrial_Bulb_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
 // Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZCosmeticDestructionType             Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZCosmeticDestructionContext&HitContext                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 
-void ABP_LGT_IndustrialLight_Replicated_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
+void ABP_LGT_IndustrialLight_Replicated_C::BndEvt__BPL_Red_WallLampIndustrial_Bulb_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BPL_Red_WallLampIndustrial_Bulb_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LGT_IndustrialLight_Replicated_C", "OnStateChanged");
+	Params::BP_LGT_IndustrialLight_Replicated_C_BndEvt__BPL_Red_WallLampIndustrial_Bulb_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature Parms{};
 
-	Params::BP_LGT_IndustrialLight_Replicated_C_OnStateChanged Parms{};
-
-	Parms.bStateToChangeTo = bStateToChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.Type = Type;
+	Parms.HitContext = std::move(HitContext);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LGT_IndustrialLight_Replicated.BP_LGT_IndustrialLight_Replicated_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_LGT_IndustrialLight_Replicated_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LGT_IndustrialLight_Replicated_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -46,19 +46,19 @@ public:
 	class UPD3HeistDataAsset*                     HeistData;                                         // 0x0380(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetEntryState(ESBZCampaignEntryState NewState);
-	void SetCampaignData(const class USBZCampaignBaseEntryData* Entry);
-	void OptionSelected_Event(int32 SelectionIndex);
-	void OnLoaded_D955675E4028E52F9C85458F3BCD1B38(class UObject* Loaded);
-	void OnLoaded_D55E807F4C78E9C3ADC767B18A532C82(class UObject* Loaded);
-	void OnInitialized();
-	void GetModifiers(class UPD3HeistDataAsset* HeistData, struct FSBZDifficultyConfiguration* DifficultyConfig);
-	ESBZCampaignEntryState GetEntryState();
-	void ExecuteUbergraph_WBP_CampaignContent_Heist(int32 EntryPoint);
-	bool CanStartLobby();
-	void BndEvt__WBP_CampaignContent_Heist_WBP_InputActionButton_New_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
-	void BndEvt__WBP_CampaignContent_Heist_Selector_Lobby_K2Node_ComponentBoundEvent_2_OptionSelected__DelegateSignature(int32 SelectionIndex);
 	void BndEvt__WBP_CampaignContent_Heist_Selector_Difficulty_K2Node_ComponentBoundEvent_1_OptionSelected__DelegateSignature(int32 SelectionIndex);
+	void BndEvt__WBP_CampaignContent_Heist_Selector_Lobby_K2Node_ComponentBoundEvent_2_OptionSelected__DelegateSignature(int32 SelectionIndex);
+	void BndEvt__WBP_CampaignContent_Heist_WBP_InputActionButton_New_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
+	bool CanStartLobby();
+	void ExecuteUbergraph_WBP_CampaignContent_Heist(int32 EntryPoint);
+	ESBZCampaignEntryState GetEntryState();
+	void GetModifiers(class UPD3HeistDataAsset* HeistData_0, struct FSBZDifficultyConfiguration* DifficultyConfig);
+	void OnInitialized();
+	void OnLoaded_D55E807F4C78E9C3ADC767B18A532C82(class UObject* Loaded);
+	void OnLoaded_D955675E4028E52F9C85458F3BCD1B38(class UObject* Loaded);
+	void OptionSelected_Event(int32 SelectionIndex);
+	void SetCampaignData(const class USBZCampaignBaseEntryData* Entry);
+	void SetEntryState(ESBZCampaignEntryState NewState);
 
 public:
 	static class UClass* StaticClass()

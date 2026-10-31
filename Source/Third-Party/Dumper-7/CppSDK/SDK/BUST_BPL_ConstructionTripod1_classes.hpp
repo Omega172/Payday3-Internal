@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "Starbreeze_classes.hpp"
 #include "Enum_LampStages_structs.hpp"
+#include "Starbreeze_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -35,9 +35,9 @@ public:
 	Enum_LampStages                               States;                                            // 0x03C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void SetStateFunction(Enum_LampStages States);
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
 	void ExecuteUbergraph_BUST_BPL_ConstructionTripod1(int32 EntryPoint);
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void SetStateFunction(Enum_LampStages States_0);
 
 public:
 	static class UClass* StaticClass()
@@ -53,5 +53,6 @@ public:
 		return GetDefaultObjImpl<ABUST_BPL_ConstructionTripod1_C>();
 	}
 };
+DUMPER7_ASSERTS_ABUST_BPL_ConstructionTripod1_C;
 
 SDK_NAMESPACE_END

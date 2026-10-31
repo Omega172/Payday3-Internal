@@ -10,14 +10,32 @@
 
 #include "Basic.hpp"
 
-#include "Starbreeze_structs.hpp"
 #include "doorStateSimple_structs.hpp"
+#include "Starbreeze_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
+
+// Function BP_int_door_01_doubleSliding.BP_int_door_01_doubleSliding_C.onOpenAnimUpdateTick
+// 0x0008 (0x0008 - 0x0000)
+struct BP_int_door_01_doubleSliding_C_onOpenAnimUpdateTick final
+{
+public:
+	double                                        alpha;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_int_door_01_doubleSliding_C_onOpenAnimUpdateTick;
+
+// Function BP_int_door_01_doubleSliding.BP_int_door_01_doubleSliding_C.initToValidPosition
+// 0x0001 (0x0001 - 0x0000)
+struct BP_int_door_01_doubleSliding_C_initToValidPosition final
+{
+public:
+	ESBZGateState                                 oldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_int_door_01_doubleSliding_C_initToValidPosition;
 
 // Function BP_int_door_01_doubleSliding.BP_int_door_01_doubleSliding_C.ExecuteUbergraph_BP_int_door_01_doubleSliding
 // 0x0728 (0x0728 - 0x0000)
@@ -50,22 +68,7 @@ public:
 	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult_4;  // 0x0518(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	struct FHitResult                             CallFunc_K2_SetRelativeLocation_SweepHitResult_5;  // 0x0620(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-
-// Function BP_int_door_01_doubleSliding.BP_int_door_01_doubleSliding_C.initToValidPosition
-// 0x0001 (0x0001 - 0x0000)
-struct BP_int_door_01_doubleSliding_C_initToValidPosition final
-{
-public:
-	ESBZGateState                                 oldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_int_door_01_doubleSliding.BP_int_door_01_doubleSliding_C.onOpenAnimUpdateTick
-// 0x0008 (0x0008 - 0x0000)
-struct BP_int_door_01_doubleSliding_C_onOpenAnimUpdateTick final
-{
-public:
-	double                                        alpha;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_int_door_01_doubleSliding_C_ExecuteUbergraph_BP_int_door_01_doubleSliding;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -16,33 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function E_DataCenter_INT_ServerRoom_Arch.E_DataCenter_INT_ServerRoom_Arch_C.BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility14_K2Node_ActorBoundEvent_17_SBZSmartLinkReachedSignature__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct E_DataCenter_INT_ServerRoom_Arch_C_BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility14_K2Node_ActorBoundEvent_17_SBZSmartLinkReachedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 MovingActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                DestinationPoint;                                  // 0x0008(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function E_DataCenter_INT_ServerRoom_Arch.E_DataCenter_INT_ServerRoom_Arch_C.BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility25_K2Node_ActorBoundEvent_18_SBZSmartLinkReachedSignature__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct E_DataCenter_INT_ServerRoom_Arch_C_BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility25_K2Node_ActorBoundEvent_18_SBZSmartLinkReachedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 MovingActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                DestinationPoint;                                  // 0x0008(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function E_DataCenter_INT_ServerRoom_Arch.E_DataCenter_INT_ServerRoom_Arch_C.BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility9_K2Node_ActorBoundEvent_19_SBZSmartLinkReachedSignature__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct E_DataCenter_INT_ServerRoom_Arch_C_BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility9_K2Node_ActorBoundEvent_19_SBZSmartLinkReachedSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 MovingActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                DestinationPoint;                                  // 0x0008(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function E_DataCenter_INT_ServerRoom_Arch.E_DataCenter_INT_ServerRoom_Arch_C.ExecuteUbergraph_E_DataCenter_INT_ServerRoom_Arch
 // 0x0070 (0x0070 - 0x0000)
 struct E_DataCenter_INT_ServerRoom_Arch_C_ExecuteUbergraph_E_DataCenter_INT_ServerRoom_Arch final
@@ -62,6 +35,37 @@ public:
 	class AActor*                                 K2Node_ActorBoundEvent_MovingActor;                // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                K2Node_ActorBoundEvent_DestinationPoint;           // 0x0058(0x0018)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_E_DataCenter_INT_ServerRoom_Arch_C_ExecuteUbergraph_E_DataCenter_INT_ServerRoom_Arch;
+
+// Function E_DataCenter_INT_ServerRoom_Arch.E_DataCenter_INT_ServerRoom_Arch_C.BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility9_K2Node_ActorBoundEvent_19_SBZSmartLinkReachedSignature__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct E_DataCenter_INT_ServerRoom_Arch_C_BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility9_K2Node_ActorBoundEvent_19_SBZSmartLinkReachedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 MovingActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                DestinationPoint;                                  // 0x0008(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_E_DataCenter_INT_ServerRoom_Arch_C_BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility9_K2Node_ActorBoundEvent_19_SBZSmartLinkReachedSignature__DelegateSignature;
+
+// Function E_DataCenter_INT_ServerRoom_Arch.E_DataCenter_INT_ServerRoom_Arch_C.BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility25_K2Node_ActorBoundEvent_18_SBZSmartLinkReachedSignature__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct E_DataCenter_INT_ServerRoom_Arch_C_BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility25_K2Node_ActorBoundEvent_18_SBZSmartLinkReachedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 MovingActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                DestinationPoint;                                  // 0x0008(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_E_DataCenter_INT_ServerRoom_Arch_C_BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility25_K2Node_ActorBoundEvent_18_SBZSmartLinkReachedSignature__DelegateSignature;
+
+// Function E_DataCenter_INT_ServerRoom_Arch.E_DataCenter_INT_ServerRoom_Arch_C.BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility14_K2Node_ActorBoundEvent_17_SBZSmartLinkReachedSignature__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct E_DataCenter_INT_ServerRoom_Arch_C_BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility14_K2Node_ActorBoundEvent_17_SBZSmartLinkReachedSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 MovingActor;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                DestinationPoint;                                  // 0x0008(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_E_DataCenter_INT_ServerRoom_Arch_C_BndEvt__E_DataCenter_INT_ServerRoom_Arch_BP_NavLink_Agility14_K2Node_ActorBoundEvent_17_SBZSmartLinkReachedSignature__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -17,32 +17,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function A_Bebe.A_Bebe_C.BndEvt__A_BranchBank_TriggerBox2_4_K2Node_ActorBoundEvent_1_ActorBeginOverlapSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct A_Bebe_C_BndEvt__A_BranchBank_TriggerBox2_4_K2Node_ActorBoundEvent_1_ActorBeginOverlapSignature__DelegateSignature final
+// Function A_Bebe.A_Bebe_C.HeistStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct A_Bebe_C_HeistStateChanged final
 {
 public:
-	class AActor*                                 OverlappedActor;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                OldHeistState_HeistStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CurrentHeistState_HeistStateChanged;               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function A_Bebe.A_Bebe_C.BndEvt__A_BranchBank_TriggerBox_1_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct A_Bebe_C_BndEvt__A_BranchBank_TriggerBox_1_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 OverlappedActor;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function A_Bebe.A_Bebe_C.BndEvt__A_BranchBank_TriggerBox_ES_VO_K2Node_ActorBoundEvent_2_ActorBeginOverlapSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct A_Bebe_C_BndEvt__A_BranchBank_TriggerBox_ES_VO_K2Node_ActorBoundEvent_2_ActorBeginOverlapSignature__DelegateSignature final
-{
-public:
-	class AActor*                                 OverlappedActor;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_A_Bebe_C_HeistStateChanged;
 
 // Function A_Bebe.A_Bebe_C.ExecuteUbergraph_A_Bebe
 // 0x02D0 (0x02D0 - 0x0000)
@@ -127,15 +110,37 @@ public:
 	int32                                         CallFunc_PostEvent_ReturnValue_23;                 // 0x02C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_PostEvent_ReturnValue_24;                 // 0x02C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_A_Bebe_C_ExecuteUbergraph_A_Bebe;
 
-// Function A_Bebe.A_Bebe_C.HeistStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct A_Bebe_C_HeistStateChanged final
+// Function A_Bebe.A_Bebe_C.BndEvt__A_BranchBank_TriggerBox_ES_VO_K2Node_ActorBoundEvent_2_ActorBeginOverlapSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct A_Bebe_C_BndEvt__A_BranchBank_TriggerBox_ES_VO_K2Node_ActorBoundEvent_2_ActorBeginOverlapSignature__DelegateSignature final
 {
 public:
-	EPD3HeistState                                OldHeistState;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CurrentHeistState;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OverlappedActor;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_A_Bebe_C_BndEvt__A_BranchBank_TriggerBox_ES_VO_K2Node_ActorBoundEvent_2_ActorBeginOverlapSignature__DelegateSignature;
+
+// Function A_Bebe.A_Bebe_C.BndEvt__A_BranchBank_TriggerBox_1_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct A_Bebe_C_BndEvt__A_BranchBank_TriggerBox_1_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 OverlappedActor;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_A_Bebe_C_BndEvt__A_BranchBank_TriggerBox_1_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature;
+
+// Function A_Bebe.A_Bebe_C.BndEvt__A_BranchBank_TriggerBox2_4_K2Node_ActorBoundEvent_1_ActorBeginOverlapSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct A_Bebe_C_BndEvt__A_BranchBank_TriggerBox2_4_K2Node_ActorBoundEvent_1_ActorBeginOverlapSignature__DelegateSignature final
+{
+public:
+	class AActor*                                 OverlappedActor;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_A_Bebe_C_BndEvt__A_BranchBank_TriggerBox2_4_K2Node_ActorBoundEvent_1_ActorBeginOverlapSignature__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

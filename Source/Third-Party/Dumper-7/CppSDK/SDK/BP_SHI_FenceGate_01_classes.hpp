@@ -35,13 +35,13 @@ public:
 	struct FVector                                endLocation;                                       // 0x0390(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void anim_timeline__FinishedFunc();
-	void anim_timeline__UpdateFunc();
-	void ExecuteUbergraph_BP_SHI_FenceGate_01(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void setClosed();
-	void setOpen();
 	void UserConstructionScript();
+	void setOpen();
+	void setClosed();
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_SHI_FenceGate_01(int32 EntryPoint);
+	void anim_timeline__UpdateFunc();
+	void anim_timeline__FinishedFunc();
 
 public:
 	static class UClass* StaticClass()
@@ -57,5 +57,6 @@ public:
 		return GetDefaultObjImpl<ABP_SHI_FenceGate_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SHI_FenceGate_01_C;
 
 SDK_NAMESPACE_END

@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABPL_CeilingLight_Big__C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_CeilingLight_Big__C;
 
 SDK_NAMESPACE_END

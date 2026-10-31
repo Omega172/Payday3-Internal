@@ -19,18 +19,16 @@ SDK_NAMESPACE_START
 // Function WBP_TVScreenSecondDay.WBP_TVScreenSecondDay_C.SetText
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FText&                      Text_0                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
+// const class FText&                      Text                                                   (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_TVScreenSecondDay_C::SetText(const class FText& Text_0)
+void UWBP_TVScreenSecondDay_C::SetText(const class FText& Text)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_TVScreenSecondDay_C", "SetText");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetText", FnName));
 
 	Params::WBP_TVScreenSecondDay_C_SetText Parms{};
 
-	Parms.Text_0 = std::move(Text_0);
+	Parms.Text = std::move(Text);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

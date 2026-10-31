@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_FenceNetting_01_384_A_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_FenceNetting_01_384_A_C;
 
 SDK_NAMESPACE_END

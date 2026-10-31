@@ -26,11 +26,11 @@ public:
 	int32                                         MarkerID;                                          // 0x03A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_VIPInvitation_Fake(int32 EntryPoint);
-	class USBZSensorComponent* GetSensorComponent();
-	class USBZOutlineComponent* GetSensorOutlineComponent();
+	void ReceiveEndPlay(EEndPlayReason EndPlayReason_ReceiveEndPlay);
 	void ReceiveBeginPlay();
-	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+	class USBZOutlineComponent* GetSensorOutlineComponent();
+	class USBZSensorComponent* GetSensorComponent();
+	void ExecuteUbergraph_BP_VIPInvitation_Fake(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -46,5 +46,6 @@ public:
 		return GetDefaultObjImpl<ABP_VIPInvitation_Fake_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_VIPInvitation_Fake_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_penthouse_railing_glass_corner_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_penthouse_railing_glass_corner_01_C;
 
 SDK_NAMESPACE_END

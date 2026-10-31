@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ADIM_BPL_SpotEmbedded_Cold__C>();
 	}
 };
+DUMPER7_ASSERTS_ADIM_BPL_SpotEmbedded_Cold__C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABebe_C>();
 	}
 };
+DUMPER7_ASSERTS_ABebe_C;
 
 SDK_NAMESPACE_END

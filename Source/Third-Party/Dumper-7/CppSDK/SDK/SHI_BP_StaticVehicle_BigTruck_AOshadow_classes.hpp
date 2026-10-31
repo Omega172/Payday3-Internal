@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ASHI_BP_StaticVehicle_BigTruck_AOshadow_C>();
 	}
 };
+DUMPER7_ASSERTS_ASHI_BP_StaticVehicle_BigTruck_AOshadow_C;
 
 SDK_NAMESPACE_END

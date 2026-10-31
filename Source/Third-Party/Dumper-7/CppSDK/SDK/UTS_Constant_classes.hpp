@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<UUTS_Constant_C>();
 	}
 };
+DUMPER7_ASSERTS_UUTS_Constant_C;
 
 SDK_NAMESPACE_END

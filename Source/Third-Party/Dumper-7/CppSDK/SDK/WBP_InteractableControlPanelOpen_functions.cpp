@@ -16,26 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_InteractableControlPanelOpen.WBP_InteractableControlPanelOpen_C.ExecuteUbergraph_WBP_InteractableControlPanelOpen
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_InteractableControlPanelOpen_C::ExecuteUbergraph_WBP_InteractableControlPanelOpen(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InteractableControlPanelOpen_C", "ExecuteUbergraph_WBP_InteractableControlPanelOpen");
-
-	Params::WBP_InteractableControlPanelOpen_C_ExecuteUbergraph_WBP_InteractableControlPanelOpen Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_InteractableControlPanelOpen.WBP_InteractableControlPanelOpen_C.SetRoom
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -43,14 +23,30 @@ void UWBP_InteractableControlPanelOpen_C::ExecuteUbergraph_WBP_InteractableContr
 
 void UWBP_InteractableControlPanelOpen_C::SetRoom(const class FText& RoomName)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_InteractableControlPanelOpen_C", "SetRoom");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetRoom", FnName));
 
 	Params::WBP_InteractableControlPanelOpen_C_SetRoom Parms{};
 
 	Parms.RoomName = std::move(RoomName);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_InteractableControlPanelOpen.WBP_InteractableControlPanelOpen_C.ExecuteUbergraph_WBP_InteractableControlPanelOpen
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_InteractableControlPanelOpen_C::ExecuteUbergraph_WBP_InteractableControlPanelOpen(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_InteractableControlPanelOpen_C", "ExecuteUbergraph_WBP_InteractableControlPanelOpen", FuncInfo);
+
+	Params::WBP_InteractableControlPanelOpen_C_ExecuteUbergraph_WBP_InteractableControlPanelOpen Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

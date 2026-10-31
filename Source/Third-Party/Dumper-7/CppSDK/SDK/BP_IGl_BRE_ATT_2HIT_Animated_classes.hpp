@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "BP_IGl_BRE_ATT_2HIT_classes.hpp"
 #include "CoreUObject_structs.hpp"
+#include "BP_IGl_BRE_ATT_2HIT_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -36,13 +36,13 @@ public:
 	struct FTransform                             endPos;                                            // 0x0430(0x0060)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_IGl_BRE_ATT_2HIT_Animated_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_IGl_BRE_ATT_2HIT_Animated(int32 EntryPoint);
-	void open_timeline__FinishedFunc();
-	void open_timeline__UpdateFunc();
-	void ReceiveBeginPlay();
-	void setInteraction(bool bEnabled);
 	void UserConstructionScript();
+	void setInteraction(bool bEnabled);
+	void ReceiveBeginPlay();
+	void open_timeline__UpdateFunc();
+	void open_timeline__FinishedFunc();
+	void ExecuteUbergraph_BP_IGl_BRE_ATT_2HIT_Animated(int32 EntryPoint);
+	void BndEvt__BP_IGl_BRE_ATT_2HIT_Animated_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -58,5 +58,6 @@ public:
 		return GetDefaultObjImpl<ABP_IGl_BRE_ATT_2HIT_Animated_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_IGl_BRE_ATT_2HIT_Animated_C;
 
 SDK_NAMESPACE_END

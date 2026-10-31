@@ -17,19 +17,22 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_BaseHelicopter.BP_BaseHelicopter_C
-// 0x0020 (0x07B0 - 0x0790)
-#pragma pack(push, 0x1)
-class SDK_ALIGN(0x10) ABP_BaseHelicopter_C : public ASBZAerialVehicle
+// 0x0020 (0x0900 - 0x08E0)
+class ABP_BaseHelicopter_C : public ASBZAerialVehicle
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0790(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USceneComponent*                        Raycast_Locator;                                   // 0x0798(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UNiagaraComponent*                      FX_Vehicle_Downwash;                               // 0x07A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x08E0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USceneComponent*                        Raycast_Locator;                                   // 0x08E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UNiagaraComponent*                      FX_Vehicle_Downwash;                               // 0x08F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsSmokeSpawned;                                   // 0x08F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void CheckDistanceToGround(class USceneComponent* GeoTracking, struct FVector* Location, double* DistanceToGround);
-	void ExecuteUbergraph_BP_BaseHelicopter(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_BaseHelicopter(int32 EntryPoint);
+	void CustomEvent(class UPrimitiveComponent* HitComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
+	void CheckDistanceToGround(class USceneComponent* GeoTracking, struct FVector* Location, double* DistanceToGround);
+	void BP_OnKill();
+	void BP_OnHealthChanged(float Health, float MaxHealth);
 
 public:
 	static class UClass* StaticClass()
@@ -45,6 +48,6 @@ public:
 		return GetDefaultObjImpl<ABP_BaseHelicopter_C>();
 	}
 };
-#pragma pack(pop)
+DUMPER7_ASSERTS_ABP_BaseHelicopter_C;
 
 SDK_NAMESPACE_END

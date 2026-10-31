@@ -16,11 +16,11 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass DA_PD2Promo.DA_PD2Promo_C
-// 0x0008 (0x03D0 - 0x03C8)
+// 0x0008 (0x03E0 - 0x03D8)
 class ADA_PD2Promo_C final : public ASBZMask
 {
 public:
-	class UMaterialInstanceDynamic*               DynMat;                                            // 0x03C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               DynMat;                                            // 0x03D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void UserConstructionScript();
@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ADA_PD2Promo_C>();
 	}
 };
+DUMPER7_ASSERTS_ADA_PD2Promo_C;
 
 SDK_NAMESPACE_END

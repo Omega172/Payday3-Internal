@@ -17,6 +17,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_SewerBars.BP_SewerBars_C.setInteraction
+// 0x0001 (0x0001 - 0x0000)
+struct BP_SewerBars_C_setInteraction final
+{
+public:
+	bool                                          bEnabled;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SewerBars_C_setInteraction;
+
 // Function BP_SewerBars.BP_SewerBars_C.ExecuteUbergraph_BP_SewerBars
 // 0x00C0 (0x00C0 - 0x0000)
 struct BP_SewerBars_C_ExecuteUbergraph_BP_SewerBars final
@@ -34,14 +43,7 @@ public:
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x00A0(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_PostAkEvent_ReturnValue;                  // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_SewerBars.BP_SewerBars_C.setInteraction
-// 0x0001 (0x0001 - 0x0000)
-struct BP_SewerBars_C_setInteraction final
-{
-public:
-	bool                                          bEnabled;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_SewerBars_C_ExecuteUbergraph_BP_SewerBars;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

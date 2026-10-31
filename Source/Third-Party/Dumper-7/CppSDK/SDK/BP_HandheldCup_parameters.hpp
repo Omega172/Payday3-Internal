@@ -35,6 +35,7 @@ public:
 	class UStaticMesh*                            CallFunc_Array_Get_Item;                           // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_HandheldCup_C_ExecuteUbergraph_BP_HandheldCup;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

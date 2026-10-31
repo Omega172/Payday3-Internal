@@ -16,129 +16,25 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_DAT_SecurityScanner_01_SCR.BP_DAT_SecurityScanner_01_SCR_C.BndEvt__BP_DAT_SecurityScanner_01_SCR_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bFromSweep                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FHitResult&                SweepResult                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// Function BP_DAT_SecurityScanner_01_SCR.BP_DAT_SecurityScanner_01_SCR_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_DAT_SecurityScanner_01_SCR_C::BndEvt__BP_DAT_SecurityScanner_01_SCR_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
+void ABP_DAT_SecurityScanner_01_SCR_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_SecurityScanner_01_SCR_C", "BndEvt__BP_DAT_SecurityScanner_01_SCR_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature");
-
-	Params::BP_DAT_SecurityScanner_01_SCR_C_BndEvt__BP_DAT_SecurityScanner_01_SCR_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature Parms{};
-
-	Parms.OverlappedComponent = OverlappedComponent;
-	Parms.OtherActor = OtherActor;
-	Parms.OtherComp = OtherComp;
-	Parms.OtherBodyIndex = OtherBodyIndex;
-	Parms.bFromSweep = bFromSweep;
-	Parms.SweepResult = std::move(SweepResult);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_DAT_SecurityScanner_01_SCR.BP_DAT_SecurityScanner_01_SCR_C.deactivateAlarm
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_DAT_SecurityScanner_01_SCR_C::deactivateAlarm()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_SecurityScanner_01_SCR_C", "deactivateAlarm");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_DAT_SecurityScanner_01_SCR.BP_DAT_SecurityScanner_01_SCR_C.ExecuteUbergraph_BP_DAT_SecurityScanner_01_SCR
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_DAT_SecurityScanner_01_SCR_C::ExecuteUbergraph_BP_DAT_SecurityScanner_01_SCR(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_SecurityScanner_01_SCR_C", "ExecuteUbergraph_BP_DAT_SecurityScanner_01_SCR");
-
-	Params::BP_DAT_SecurityScanner_01_SCR_C_ExecuteUbergraph_BP_DAT_SecurityScanner_01_SCR Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_DAT_SecurityScanner_01_SCR.BP_DAT_SecurityScanner_01_SCR_C.onAlarmTimedOut Event
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_DAT_SecurityScanner_01_SCR_C::onAlarmTimedOut_Event()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_SecurityScanner_01_SCR_C", "onAlarmTimedOut Event");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_DAT_SecurityScanner_01_SCR.BP_DAT_SecurityScanner_01_SCR_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_DAT_SecurityScanner_01_SCR_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_SecurityScanner_01_SCR_C", "OnStateChanged");
-
-	Params::BP_DAT_SecurityScanner_01_SCR_C_OnStateChanged Parms{};
-
-	Parms.bStateToChangeTo = bStateToChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_DAT_SecurityScanner_01_SCR.BP_DAT_SecurityScanner_01_SCR_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_DAT_SecurityScanner_01_SCR_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_SecurityScanner_01_SCR_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_DAT_SecurityScanner_01_SCR.BP_DAT_SecurityScanner_01_SCR_C.setAlarmTimedOut
+// Function BP_DAT_SecurityScanner_01_SCR.BP_DAT_SecurityScanner_01_SCR_C.TrippedAlarm
 // (Private, BlueprintCallable, BlueprintEvent)
 
-void ABP_DAT_SecurityScanner_01_SCR_C::setAlarmTimedOut()
+void ABP_DAT_SecurityScanner_01_SCR_C::TrippedAlarm()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_SecurityScanner_01_SCR_C", "setAlarmTimedOut");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TrippedAlarm", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -151,10 +47,8 @@ void ABP_DAT_SecurityScanner_01_SCR_C::setAlarmTimedOut()
 
 void ABP_DAT_SecurityScanner_01_SCR_C::setStateFunction(bool enabled)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_SecurityScanner_01_SCR_C", "setStateFunction");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setStateFunction", FnName));
 
 	Params::BP_DAT_SecurityScanner_01_SCR_C_setStateFunction Parms{};
 
@@ -164,31 +58,117 @@ void ABP_DAT_SecurityScanner_01_SCR_C::setStateFunction(bool enabled)
 }
 
 
-// Function BP_DAT_SecurityScanner_01_SCR.BP_DAT_SecurityScanner_01_SCR_C.TrippedAlarm
+// Function BP_DAT_SecurityScanner_01_SCR.BP_DAT_SecurityScanner_01_SCR_C.setAlarmTimedOut
 // (Private, BlueprintCallable, BlueprintEvent)
 
-void ABP_DAT_SecurityScanner_01_SCR_C::TrippedAlarm()
+void ABP_DAT_SecurityScanner_01_SCR_C::setAlarmTimedOut()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_SecurityScanner_01_SCR_C", "TrippedAlarm");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setAlarmTimedOut", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_DAT_SecurityScanner_01_SCR.BP_DAT_SecurityScanner_01_SCR_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_DAT_SecurityScanner_01_SCR.BP_DAT_SecurityScanner_01_SCR_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_DAT_SecurityScanner_01_SCR_C::UserConstructionScript()
+void ABP_DAT_SecurityScanner_01_SCR_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_SecurityScanner_01_SCR_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_DAT_SecurityScanner_01_SCR.BP_DAT_SecurityScanner_01_SCR_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bStateToChangeTo_OnStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_DAT_SecurityScanner_01_SCR_C::OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_DAT_SecurityScanner_01_SCR_C_OnStateChanged Parms{};
+
+	Parms.bStateToChangeTo_OnStateChanged = bStateToChangeTo_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_DAT_SecurityScanner_01_SCR.BP_DAT_SecurityScanner_01_SCR_C.onAlarmTimedOut Event
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_DAT_SecurityScanner_01_SCR_C::onAlarmTimedOut_Event()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"onAlarmTimedOut Event", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_DAT_SecurityScanner_01_SCR.BP_DAT_SecurityScanner_01_SCR_C.ExecuteUbergraph_BP_DAT_SecurityScanner_01_SCR
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_DAT_SecurityScanner_01_SCR_C::ExecuteUbergraph_BP_DAT_SecurityScanner_01_SCR(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_DAT_SecurityScanner_01_SCR_C", "ExecuteUbergraph_BP_DAT_SecurityScanner_01_SCR", FuncInfo);
+
+	Params::BP_DAT_SecurityScanner_01_SCR_C_ExecuteUbergraph_BP_DAT_SecurityScanner_01_SCR Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_DAT_SecurityScanner_01_SCR.BP_DAT_SecurityScanner_01_SCR_C.deactivateAlarm
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_DAT_SecurityScanner_01_SCR_C::deactivateAlarm()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"deactivateAlarm", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_DAT_SecurityScanner_01_SCR.BP_DAT_SecurityScanner_01_SCR_C.BndEvt__BP_DAT_SecurityScanner_01_SCR_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// class UPrimitiveComponent*              OverlappedComponent                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           OtherActor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              OtherComp                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   OtherBodyIndex                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bFromSweep                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FHitResult&                SweepResult                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+
+void ABP_DAT_SecurityScanner_01_SCR_C::BndEvt__BP_DAT_SecurityScanner_01_SCR_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_DAT_SecurityScanner_01_SCR_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature", FnName));
+
+	Params::BP_DAT_SecurityScanner_01_SCR_C_BndEvt__BP_DAT_SecurityScanner_01_SCR_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature Parms{};
+
+	Parms.OverlappedComponent = OverlappedComponent;
+	Parms.OtherActor = OtherActor;
+	Parms.OtherComp = OtherComp;
+	Parms.OtherBodyIndex = OtherBodyIndex;
+	Parms.bFromSweep = bFromSweep;
+	Parms.SweepResult = std::move(SweepResult);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

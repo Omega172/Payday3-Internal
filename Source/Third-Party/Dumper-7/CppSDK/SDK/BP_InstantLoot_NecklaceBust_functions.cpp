@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_InstantLoot_NecklaceBust.BP_InstantLoot_NecklaceBust_C.OnLooted
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    bDoCosmetics_OnLooted                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_InstantLoot_NecklaceBust_C::OnLooted(bool bDoCosmetics_OnLooted)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLooted", FnName));
+
+	Params::BP_InstantLoot_NecklaceBust_C_OnLooted Parms{};
+
+	Parms.bDoCosmetics_OnLooted = bDoCosmetics_OnLooted;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_InstantLoot_NecklaceBust.BP_InstantLoot_NecklaceBust_C.ExecuteUbergraph_BP_InstantLoot_NecklaceBust
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,34 +41,12 @@ SDK_NAMESPACE_START
 
 void ABP_InstantLoot_NecklaceBust_C::ExecuteUbergraph_BP_InstantLoot_NecklaceBust(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InstantLoot_NecklaceBust_C", "ExecuteUbergraph_BP_InstantLoot_NecklaceBust");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_InstantLoot_NecklaceBust_C", "ExecuteUbergraph_BP_InstantLoot_NecklaceBust", FuncInfo);
 
 	Params::BP_InstantLoot_NecklaceBust_C_ExecuteUbergraph_BP_InstantLoot_NecklaceBust Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_InstantLoot_NecklaceBust.BP_InstantLoot_NecklaceBust_C.OnLooted
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_InstantLoot_NecklaceBust_C::OnLooted(bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InstantLoot_NecklaceBust_C", "OnLooted");
-
-	Params::BP_InstantLoot_NecklaceBust_C_OnLooted Parms{};
-
-	Parms.bDoCosmetics = bDoCosmetics;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Level_AmmoPack_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Level_AmmoPack_C;
 
 SDK_NAMESPACE_END

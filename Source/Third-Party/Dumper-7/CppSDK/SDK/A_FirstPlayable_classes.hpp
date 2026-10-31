@@ -36,12 +36,12 @@ public:
 	class AAkAmbientSound*                        FirstResponder_MGA_VO_ExecuteUbergraph_A_FirstPlayable_RefProperty; // 0x0418(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AUDIO_Alarms_Triggered();
-	void BndEvt__A_FirstPlayable_TriggerBox_ES_VO_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor);
-	void ExecuteUbergraph_A_FirstPlayable(int32 EntryPoint);
-	void Eye_Scan_Complete();
-	void HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState);
 	void ReceiveBeginPlay();
+	void HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged);
+	void Eye_Scan_Complete();
+	void ExecuteUbergraph_A_FirstPlayable(int32 EntryPoint);
+	void BndEvt__A_FirstPlayable_TriggerBox_ES_VO_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor);
+	void AUDIO_Alarms_Triggered();
 
 public:
 	static class UClass* StaticClass()
@@ -57,5 +57,6 @@ public:
 		return GetDefaultObjImpl<AA_FirstPlayable_C>();
 	}
 };
+DUMPER7_ASSERTS_AA_FirstPlayable_C;
 
 SDK_NAMESPACE_END

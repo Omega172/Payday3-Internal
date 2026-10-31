@@ -17,14 +17,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_Container.BP_Container_C.ExecuteUbergraph_BP_Container
-// 0x0004 (0x0004 - 0x0000)
-struct BP_Container_C_ExecuteUbergraph_BP_Container final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_Container.BP_Container_C.UserConstructionScript
 // 0x0568 (0x0568 - 0x0000)
 struct BP_Container_C_UserConstructionScript final
@@ -75,6 +67,16 @@ public:
 	float                                         CallFunc_MakeRotator_Yaw_ImplicitCast_2;           // 0x0560(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_MakeRotator_Yaw_ImplicitCast_3;           // 0x0564(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Container_C_UserConstructionScript;
+
+// Function BP_Container.BP_Container_C.ExecuteUbergraph_BP_Container
+// 0x0004 (0x0004 - 0x0000)
+struct BP_Container_C_ExecuteUbergraph_BP_Container final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Container_C_ExecuteUbergraph_BP_Container;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

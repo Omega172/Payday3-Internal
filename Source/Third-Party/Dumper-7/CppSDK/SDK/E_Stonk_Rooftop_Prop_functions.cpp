@@ -16,35 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function E_Stonk_Rooftop_Prop.E_Stonk_Rooftop_Prop_C.ExecuteUbergraph_E_Stonk_Rooftop_Prop
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AE_Stonk_Rooftop_Prop_C::ExecuteUbergraph_E_Stonk_Rooftop_Prop(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Stonk_Rooftop_Prop_C", "ExecuteUbergraph_E_Stonk_Rooftop_Prop");
-
-	Params::E_Stonk_Rooftop_Prop_C_ExecuteUbergraph_E_Stonk_Rooftop_Prop Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function E_Stonk_Rooftop_Prop.E_Stonk_Rooftop_Prop_C.StonkPowerRoom1
+// Function E_Stonk_Rooftop_Prop.E_Stonk_Rooftop_Prop_C.StonkPowerRoom3
 // (BlueprintCallable, BlueprintEvent)
 
-void AE_Stonk_Rooftop_Prop_C::StonkPowerRoom1()
+void AE_Stonk_Rooftop_Prop_C::StonkPowerRoom3()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Stonk_Rooftop_Prop_C", "StonkPowerRoom1");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StonkPowerRoom3", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,26 +33,40 @@ void AE_Stonk_Rooftop_Prop_C::StonkPowerRoom1()
 
 void AE_Stonk_Rooftop_Prop_C::StonkPowerRoom2()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Stonk_Rooftop_Prop_C", "StonkPowerRoom2");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StonkPowerRoom2", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function E_Stonk_Rooftop_Prop.E_Stonk_Rooftop_Prop_C.StonkPowerRoom3
+// Function E_Stonk_Rooftop_Prop.E_Stonk_Rooftop_Prop_C.StonkPowerRoom1
 // (BlueprintCallable, BlueprintEvent)
 
-void AE_Stonk_Rooftop_Prop_C::StonkPowerRoom3()
+void AE_Stonk_Rooftop_Prop_C::StonkPowerRoom1()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("E_Stonk_Rooftop_Prop_C", "StonkPowerRoom3");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StonkPowerRoom1", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function E_Stonk_Rooftop_Prop.E_Stonk_Rooftop_Prop_C.ExecuteUbergraph_E_Stonk_Rooftop_Prop
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AE_Stonk_Rooftop_Prop_C::ExecuteUbergraph_E_Stonk_Rooftop_Prop(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "E_Stonk_Rooftop_Prop_C", "ExecuteUbergraph_E_Stonk_Rooftop_Prop", FuncInfo);
+
+	Params::E_Stonk_Rooftop_Prop_C_ExecuteUbergraph_E_Stonk_Rooftop_Prop Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

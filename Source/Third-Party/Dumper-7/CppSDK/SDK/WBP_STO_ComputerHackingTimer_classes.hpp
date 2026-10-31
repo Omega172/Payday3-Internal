@@ -32,8 +32,8 @@ public:
 	class UImage*                                 Outline;                                           // 0x0330(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
+	void PreConstruct(bool IsDesignTime_PreConstruct);
 	void ExecuteUbergraph_WBP_STO_ComputerHackingTimer(int32 EntryPoint);
-	void PreConstruct(bool IsDesignTime);
 
 public:
 	static class UClass* StaticClass()
@@ -49,5 +49,6 @@ public:
 		return GetDefaultObjImpl<UWBP_STO_ComputerHackingTimer_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_STO_ComputerHackingTimer_C;
 
 SDK_NAMESPACE_END

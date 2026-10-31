@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_PivotStaticBigTruck_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PivotStaticBigTruck_C;
 
 SDK_NAMESPACE_END

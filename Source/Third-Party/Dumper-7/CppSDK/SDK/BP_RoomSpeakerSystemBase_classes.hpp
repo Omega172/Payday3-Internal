@@ -31,11 +31,11 @@ public:
 	bool                                          playOnLoad;                                        // 0x03B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_RoomSpeakerSystemBase(int32 EntryPoint);
-	void getWorldPositions(TArray<struct FTransform>* worldPositions);
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void setAudioState(int32 NewState);
 	void UserConstructionScript();
+	void setAudioState(int32 NewState);
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void getWorldPositions(TArray<struct FTransform>* worldPositions);
+	void ExecuteUbergraph_BP_RoomSpeakerSystemBase(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -51,5 +51,6 @@ public:
 		return GetDefaultObjImpl<ABP_RoomSpeakerSystemBase_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_RoomSpeakerSystemBase_C;
 
 SDK_NAMESPACE_END

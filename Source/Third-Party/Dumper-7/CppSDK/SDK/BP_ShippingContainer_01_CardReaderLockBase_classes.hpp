@@ -28,8 +28,8 @@ public:
 	class UNiagaraComponent*                      Niagara;                                           // 0x0438(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnStateChanged(ESBZModuleActorState NewState, bool bDoCosmetics);
 	void ExecuteUbergraph_BP_ShippingContainer_01_CardReaderLockBase(int32 EntryPoint);
+	void BP_OnStateChanged(ESBZModuleActorState NewState, bool bDoCosmetics);
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<ABP_ShippingContainer_01_CardReaderLockBase_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ShippingContainer_01_CardReaderLockBase_C;
 
 SDK_NAMESPACE_END

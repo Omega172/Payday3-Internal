@@ -37,15 +37,15 @@ public:
 	ESBZCurrencyCode                              Currency;                                          // 0x03F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UpdateHighlights(bool IsFocused);
-	void Set_Price(int64 Price, ESBZCurrencyCode Currency);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnInitialized();
-	void OnHover(bool IsHover);
-	void Get_Color_by_Currency(ESBZCurrencyCode Currency, struct FLinearColor* CurrencyColor);
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
 	void ExecuteUbergraph_WBP_UI_Inventory_SuitSlotStoreItemButton(int32 EntryPoint);
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
+	void Get_Color_by_Currency(ESBZCurrencyCode Currency_0, struct FLinearColor* CurrencyColor);
+	void OnHover(bool IsHover);
+	void OnInitialized();
+	void PreConstruct(bool IsDesignTime);
+	void Set_Price(int64 Price, ESBZCurrencyCode Currency_0);
+	void UpdateHighlights(bool IsFocused);
 
 public:
 	static class UClass* StaticClass()

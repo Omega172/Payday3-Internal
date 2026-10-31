@@ -45,6 +45,7 @@ public:
 	uint8                                         Pad_D5[0x3];                                       // 0x00D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSBZPawnSpawnRequestHandle             CallFunc_SpawnPredefined_ReturnValue_11;           // 0x00D8(0x0010)()
 };
+DUMPER7_ASSERTS_G_Chus_LivingWorld_C_ExecuteUbergraph_G_Chus_LivingWorld;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

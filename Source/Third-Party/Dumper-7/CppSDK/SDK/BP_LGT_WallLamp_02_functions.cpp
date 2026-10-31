@@ -12,6 +12,7 @@
 
 #include "BP_LGT_WallLamp_02_classes.hpp"
 #include "BP_LGT_WallLamp_02_parameters.hpp"
+#include "BP_LGT_WallLamp_02_0_parameters.hpp"
 
 
 SDK_NAMESPACE_START

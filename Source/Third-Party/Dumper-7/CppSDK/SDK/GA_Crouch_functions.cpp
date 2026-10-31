@@ -16,21 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function GA_Crouch.GA_Crouch_C.ExecuteUbergraph_GA_Crouch
-// (Final, UbergraphFunction)
+// Function GA_Crouch.GA_Crouch_C.K2_OnEndAbility
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bWasCancelled_K2_OnEndAbility                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UGA_Crouch_C::ExecuteUbergraph_GA_Crouch(int32 EntryPoint)
+void UGA_Crouch_C::K2_OnEndAbility(bool bWasCancelled_K2_OnEndAbility)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"K2_OnEndAbility", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Crouch_C", "ExecuteUbergraph_GA_Crouch");
+	Params::GA_Crouch_C_K2_OnEndAbility Parms{};
 
-	Params::GA_Crouch_C_ExecuteUbergraph_GA_Crouch Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.bWasCancelled_K2_OnEndAbility = bWasCancelled_K2_OnEndAbility;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -41,30 +39,26 @@ void UGA_Crouch_C::ExecuteUbergraph_GA_Crouch(int32 EntryPoint)
 
 void UGA_Crouch_C::K2_ActivateAbility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Crouch_C", "K2_ActivateAbility");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"K2_ActivateAbility", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function GA_Crouch.GA_Crouch_C.K2_OnEndAbility
-// (Event, Protected, BlueprintEvent)
+// Function GA_Crouch.GA_Crouch_C.ExecuteUbergraph_GA_Crouch
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    bWasCancelled                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UGA_Crouch_C::K2_OnEndAbility(bool bWasCancelled)
+void UGA_Crouch_C::ExecuteUbergraph_GA_Crouch(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "GA_Crouch_C", "ExecuteUbergraph_GA_Crouch", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("GA_Crouch_C", "K2_OnEndAbility");
+	Params::GA_Crouch_C_ExecuteUbergraph_GA_Crouch Parms{};
 
-	Params::GA_Crouch_C_K2_OnEndAbility Parms{};
-
-	Parms.bWasCancelled = bWasCancelled;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

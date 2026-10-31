@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ATransitionLevel_C>();
 	}
 };
+DUMPER7_ASSERTS_ATransitionLevel_C;
 
 SDK_NAMESPACE_END

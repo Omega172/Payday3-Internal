@@ -47,5 +47,6 @@ public:
 		return GetDefaultObjImpl<ABP_DisplayScreen_01_Shelter_SCR_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DisplayScreen_01_Shelter_SCR_C;
 
 SDK_NAMESPACE_END

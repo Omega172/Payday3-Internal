@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Starbreeze_classes.hpp"
 #include "AkAudio_structs.hpp"
 
@@ -48,17 +48,17 @@ public:
 	TMap<class USceneComponent*, struct FTransform> SpawnComponentTransformMap;                      // 0x0458(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void BndEvt__BP_cardboardBox_interactable_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_cardboardBox_interactable(int32 EntryPoint);
-	void lidOpen_anim__FinishedFunc();
-	void lidOpen_anim__UpdateFunc();
-	void OnActorSpawned(class AActor* SpawnedActor, class USceneComponent* AttachParent);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void PopulateSpawnInformationMap(TMap<class USceneComponent*, struct FTransform>* InOutSpawnDataMap);
-	void ReceiveBeginPlay();
-	void setInteractable(bool interactable);
-	void SpawnItemInContainer(class UClass* WhatShould_Spawn, class ABP_RoomSpawnController_C* RoomControllerRef, class AActor** SpawnedActor);
 	void UserConstructionScript();
+	void SpawnItemInContainer(class UClass* WhatShould_Spawn, class ABP_RoomSpawnController_C* RoomControllerRef, class AActor** SpawnedActor);
+	void setInteractable(bool interactable);
+	void ReceiveBeginPlay();
+	void PopulateSpawnInformationMap(TMap<class USceneComponent*, struct FTransform>* InOutSpawnDataMap);
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void OnActorSpawned(class AActor* SpawnedActor, class USceneComponent* AttachParent);
+	void lidOpen_anim__UpdateFunc();
+	void lidOpen_anim__FinishedFunc();
+	void ExecuteUbergraph_BP_cardboardBox_interactable(int32 EntryPoint);
+	void BndEvt__BP_cardboardBox_interactable_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -74,5 +74,6 @@ public:
 		return GetDefaultObjImpl<ABP_cardboardBox_interactable_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_cardboardBox_interactable_C;
 
 SDK_NAMESPACE_END

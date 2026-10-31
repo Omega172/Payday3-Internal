@@ -80,9 +80,9 @@ public:
 	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_Walker5_7_ExecuteUbergraph_G_Bebe_LivingWorld_RefProperty; // 0x0590(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ATMsBroken();
-	void BlackScreenStarted();
 	void ExecuteUbergraph_G_Bebe_LivingWorld(int32 EntryPoint);
+	void BlackScreenStarted();
+	void ATMsBroken();
 
 public:
 	static class UClass* StaticClass()
@@ -98,5 +98,6 @@ public:
 		return GetDefaultObjImpl<AG_Bebe_LivingWorld_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_Bebe_LivingWorld_C;
 
 SDK_NAMESPACE_END

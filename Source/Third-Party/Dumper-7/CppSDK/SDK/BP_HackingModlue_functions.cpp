@@ -19,14 +19,12 @@ SDK_NAMESPACE_START
 // Function BP_HackingModlue.BP_HackingModlue_C.GetHackableLocation
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
-// struct FVector                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                          ReturnValue_GetHackableLocation                        (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 struct FVector ABP_HackingModlue_C::GetHackableLocation() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_HackingModlue_C", "GetHackableLocation");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetHackableLocation", FnName));
 
 	Params::BP_HackingModlue_C_GetHackableLocation Parms{};
 

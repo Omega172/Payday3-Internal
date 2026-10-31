@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_FakeLight_Left_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_FakeLight_Left_C;
 
 SDK_NAMESPACE_END

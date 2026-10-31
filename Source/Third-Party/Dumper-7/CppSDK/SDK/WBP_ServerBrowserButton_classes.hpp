@@ -26,8 +26,8 @@ public:
 	class UAkAudioEvent*                          Selected;                                          // 0x03A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_ServerBrowserButton(int32 EntryPoint);
 	void ButtonSelected();
+	void ExecuteUbergraph_WBP_ServerBrowserButton(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

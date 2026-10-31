@@ -43,8 +43,8 @@ public:
 	class UImage*                                 TextBlockTitle;                                    // 0x0388(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Construct();
 	void ExecuteUbergraph_WBP_PoliceComputerTrueActive(int32 EntryPoint);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()
@@ -60,5 +60,6 @@ public:
 		return GetDefaultObjImpl<UWBP_PoliceComputerTrueActive_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_PoliceComputerTrueActive_C;
 
 SDK_NAMESPACE_END

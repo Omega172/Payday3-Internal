@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_AI_Shove_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_AI_Shove_C;
 
 SDK_NAMESPACE_END

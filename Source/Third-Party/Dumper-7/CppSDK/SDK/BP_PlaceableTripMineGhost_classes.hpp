@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_PlaceableTripMineGhost_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PlaceableTripMineGhost_C;
 
 SDK_NAMESPACE_END

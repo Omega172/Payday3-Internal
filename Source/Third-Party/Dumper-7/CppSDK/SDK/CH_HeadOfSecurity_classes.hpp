@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CH_HeadOfSecurity.CH_HeadOfSecurity_C
-// 0x0000 (0x2210 - 0x2210)
+// 0x0000 (0x22A0 - 0x22A0)
 class ACH_HeadOfSecurity_C final : public ACH_SecurityGuard_C
 {
 public:
@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ACH_HeadOfSecurity_C>();
 	}
 };
+DUMPER7_ASSERTS_ACH_HeadOfSecurity_C;
 
 SDK_NAMESPACE_END

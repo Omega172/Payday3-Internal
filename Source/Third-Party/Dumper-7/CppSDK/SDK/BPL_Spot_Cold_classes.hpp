@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ABPL_Spot_Cold_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_Spot_Cold_C;
 
 SDK_NAMESPACE_END

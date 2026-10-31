@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "CableBox_Color_Enum_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Starbreeze_classes.hpp"
-#include "CableBox_Color_Enum_structs.hpp"
 #include "LowEntryExtendedStandardLibrary_structs.hpp"
 #include "AkAudio_structs.hpp"
 
@@ -60,24 +60,24 @@ public:
 	class FText                                   Text;                                              // 0x0448(0x0010)(Edit, BlueprintVisible, Net, DisableEditOnInstance, RepNotify)
 
 public:
-	void BndEvt__Interactable_K2Node_ComponentBoundEvent_10_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__SBZInteractable_Cable_1_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__SBZInteractable_Cable_2_K2Node_ComponentBoundEvent_7_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__SBZInteractable_Cable_3_K2Node_ComponentBoundEvent_8_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__SBZInteractable_Cable_4_K2Node_ComponentBoundEvent_9_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ClientGrayOut();
-	void ExecuteUbergraph_BP_SingleCableBox(int32 EntryPoint);
-	void NewFunction_0();
-	void OnRep_RandomInt();
-	void OnRep_Text();
-	void OpenDoor__FinishedFunc();
-	void OpenDoor__UpdateFunc();
-	void Randomize();
-	void ReceiveBeginPlay();
-	void RigthWireCut();
-	void SetCorrectColor();
-	void Wrong();
 	void WrongWireCut();
+	void Wrong();
+	void SetCorrectColor();
+	void RigthWireCut();
+	void ReceiveBeginPlay();
+	void Randomize();
+	void OpenDoor__UpdateFunc();
+	void OpenDoor__FinishedFunc();
+	void OnRep_Text();
+	void OnRep_RandomInt();
+	void NewFunction_0();
+	void ExecuteUbergraph_BP_SingleCableBox(int32 EntryPoint);
+	void ClientGrayOut();
+	void BndEvt__SBZInteractable_Cable_4_K2Node_ComponentBoundEvent_9_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__SBZInteractable_Cable_3_K2Node_ComponentBoundEvent_8_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__SBZInteractable_Cable_2_K2Node_ComponentBoundEvent_7_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__SBZInteractable_Cable_1_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__Interactable_K2Node_ComponentBoundEvent_10_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -93,5 +93,6 @@ public:
 		return GetDefaultObjImpl<ABP_SingleCableBox_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SingleCableBox_C;
 
 SDK_NAMESPACE_END

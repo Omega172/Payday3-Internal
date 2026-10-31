@@ -69,35 +69,35 @@ public:
 	class UWBP_QuestLine_Item_C*                  SelectedButton;                                    // 0x05C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void TrySetFocusOnGoToObjectButton(TArray<class UWBP_QuestLine_ChapterGroup_C*>& QuestLineGroup, bool* bIsSuccessful);
-	void SetupNavbar();
-	void SetQuestButtonActive(class UWBP_QuestLine_Item_C* QuestItemButton);
-	void SetGoToData();
-	void SetFocusToQuestlineButton();
-	void Set_Quest_Focused(class UWBP_QuestLine_Item_C* QuestItemButton);
-	void RemoveButtonFromChapter(class UWBP_QuestLine_Item_C* QuestLineItem);
-	void RefreshQuestButtons();
-	void RefreshMenu();
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnRewardClaimed(class UWBP_QuestLine_Item_C* ClaimedQuestItemButton);
-	void OnQuestButtonSelected(class USBZMenuButton* Button);
-	void OnQuestButtonHoverChanged(class USBZMenuButton* Button, bool bIsEnabled);
-	void OnMissionGiverSelected(int32 MissionGiverIndex);
-	void OnLostStackFocused();
-	void OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused);
-	void OnControlsReferencePressed(class FName ActionName);
-	void GoToItem();
-	void GetQuestsForCurrentMissionGiver(TArray<struct FSBZUIQuestData>* Quests);
-	void GetQuestDataForMissionGiver(class USBZMissionGiverDataAsset* MissionGiver, TArray<struct FSBZUIQuestData>* QuestDataArray);
-	void GetMissionGivers(TArray<class USBZMissionGiverDataAsset*>* MissionGivers);
-	void GetCurrentActiveMissionGiver(class USBZMissionGiverDataAsset** ActiveMissionGiver);
-	void GetControlsReferenceForQuest(const struct FSBZUIQuestData& SBZUIQuestData, TArray<struct FSBZButtonControlReference>* ControlsRefArray);
-	void ExecuteUbergraph_WBP_QuestlineMenu(int32 EntryPoint);
-	void Construct();
-	void ClearChaptersOfChildren();
-	void ClaimReward(class UWBP_QuestLine_Item_C* QuestItemButton);
-	void BndEvt__WBP_QuestlineMenu_EquippableNavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature(int32 NewIndex);
 	void AddQuestButtonToCorrectChapter(class UWBP_QuestLine_Item_C* QuestLineItem);
+	void BndEvt__WBP_QuestlineMenu_EquippableNavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature(int32 NewIndex);
+	void ClaimReward(class UWBP_QuestLine_Item_C* QuestItemButton);
+	void ClearChaptersOfChildren();
+	void Construct();
+	void ExecuteUbergraph_WBP_QuestlineMenu(int32 EntryPoint);
+	void GetControlsReferenceForQuest(const struct FSBZUIQuestData& SBZUIQuestData, TArray<struct FSBZButtonControlReference>* ControlsRefArray);
+	void GetCurrentActiveMissionGiver(class USBZMissionGiverDataAsset** ActiveMissionGiver);
+	void GetMissionGivers(TArray<class USBZMissionGiverDataAsset*>* MissionGivers);
+	void GetQuestDataForMissionGiver(class USBZMissionGiverDataAsset* MissionGiver, TArray<struct FSBZUIQuestData>* QuestDataArray);
+	void GetQuestsForCurrentMissionGiver(TArray<struct FSBZUIQuestData>* Quests);
+	void GoToItem();
+	void OnControlsReferencePressed(class FName ActionName);
+	void OnGainedStackFocused(const class FName& PreviousValue);
+	void OnLostStackFocused();
+	void OnMissionGiverSelected(int32 MissionGiverIndex);
+	void OnQuestButtonHoverChanged(class USBZMenuButton* Button, bool bIsEnabled_0);
+	void OnQuestButtonSelected(class USBZMenuButton* Button);
+	void OnRewardClaimed(class UWBP_QuestLine_Item_C* ClaimedQuestItemButton);
+	void PreConstruct(bool IsDesignTime);
+	void RefreshMenu();
+	void RefreshQuestButtons();
+	void RemoveButtonFromChapter(class UWBP_QuestLine_Item_C* QuestLineItem);
+	void Set_Quest_Focused(class UWBP_QuestLine_Item_C* QuestItemButton);
+	void SetFocusToQuestlineButton();
+	void SetGoToData();
+	void SetQuestButtonActive(class UWBP_QuestLine_Item_C* QuestItemButton);
+	void SetupNavbar();
+	void TrySetFocusOnGoToObjectButton(TArray<class UWBP_QuestLine_ChapterGroup_C*>& QuestLineGroup, bool* bIsSuccessful);
 
 public:
 	static class UClass* StaticClass()

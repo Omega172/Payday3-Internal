@@ -16,6 +16,28 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_TrainCar_RemoteDoor.BP_TrainCar_RemoteDoor_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZGateState                           OldState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           NewState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsInitialStateChange_OnStateChanged                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_TrainCar_RemoteDoor_C::OnStateChanged(ESBZGateState OldState_OnStateChanged, ESBZGateState NewState_OnStateChanged, bool bIsInitialStateChange_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_TrainCar_RemoteDoor_C_OnStateChanged Parms{};
+
+	Parms.OldState_OnStateChanged = OldState_OnStateChanged;
+	Parms.NewState_OnStateChanged = NewState_OnStateChanged;
+	Parms.bIsInitialStateChange_OnStateChanged = bIsInitialStateChange_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_TrainCar_RemoteDoor.BP_TrainCar_RemoteDoor_C.ExecuteUbergraph_BP_TrainCar_RemoteDoor
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -23,38 +45,12 @@ SDK_NAMESPACE_START
 
 void ABP_TrainCar_RemoteDoor_C::ExecuteUbergraph_BP_TrainCar_RemoteDoor(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TrainCar_RemoteDoor_C", "ExecuteUbergraph_BP_TrainCar_RemoteDoor");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_TrainCar_RemoteDoor_C", "ExecuteUbergraph_BP_TrainCar_RemoteDoor", FuncInfo);
 
 	Params::BP_TrainCar_RemoteDoor_C_ExecuteUbergraph_BP_TrainCar_RemoteDoor Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_TrainCar_RemoteDoor.BP_TrainCar_RemoteDoor_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsInitialStateChange                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_TrainCar_RemoteDoor_C::OnStateChanged(ESBZGateState OldState, ESBZGateState NewState, bool bIsInitialStateChange)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_TrainCar_RemoteDoor_C", "OnStateChanged");
-
-	Params::BP_TrainCar_RemoteDoor_C_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bIsInitialStateChange = bIsInitialStateChange;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

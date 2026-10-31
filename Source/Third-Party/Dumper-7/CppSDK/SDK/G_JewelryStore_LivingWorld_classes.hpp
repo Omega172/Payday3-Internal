@@ -25,8 +25,8 @@ public:
 	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup_CivilianStreet_Lobbyspawns_ExecuteUbergraph_G_JewelryStore_LivingWorld_RefProperty; // 0x03D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ActionPhaseStarted();
 	void ExecuteUbergraph_G_JewelryStore_LivingWorld(int32 EntryPoint);
+	void ActionPhaseStarted();
 
 public:
 	static class UClass* StaticClass()
@@ -42,5 +42,6 @@ public:
 		return GetDefaultObjImpl<AG_JewelryStore_LivingWorld_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_JewelryStore_LivingWorld_C;
 
 SDK_NAMESPACE_END

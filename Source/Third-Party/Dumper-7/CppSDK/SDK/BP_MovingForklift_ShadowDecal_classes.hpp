@@ -16,11 +16,11 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_MovingForklift_ShadowDecal.BP_MovingForklift_ShadowDecal_C
-// 0x0000 (0x0970 - 0x0970)
+// 0x0000 (0x0A70 - 0x0A70)
 class ABP_MovingForklift_ShadowDecal_C final : public ABP_MovingForklift_C
 {
 public:
-	class UDecalComponent*                        Decal;                                             // 0x0968(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UDecalComponent*                        Decal;                                             // 0x0A68(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_MovingForklift_ShadowDecal_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_MovingForklift_ShadowDecal_C;
 
 SDK_NAMESPACE_END

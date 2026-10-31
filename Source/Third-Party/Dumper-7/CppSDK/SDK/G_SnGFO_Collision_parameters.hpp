@@ -17,37 +17,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function G_SnGFO_Collision.G_SnGFO_Collision_C.BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport2_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_SnGFO_Collision_C_BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport2_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature final
+// Function G_SnGFO_Collision.G_SnGFO_Collision_C.HeistStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct G_SnGFO_Collision_C_HeistStateChanged final
 {
 public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                OldHeistState_HeistStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CurrentHeistState_HeistStateChanged;               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function G_SnGFO_Collision.G_SnGFO_Collision_C.BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport3_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_SnGFO_Collision_C_BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport3_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Collision.G_SnGFO_Collision_C.BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport4_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_SnGFO_Collision_C_BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport4_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_SnGFO_Collision.G_SnGFO_Collision_C.BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct G_SnGFO_Collision_C_BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_G_SnGFO_Collision_C_HeistStateChanged;
 
 // Function G_SnGFO_Collision.G_SnGFO_Collision_C.ExecuteUbergraph_G_SnGFO_Collision
 // 0x0130 (0x0130 - 0x0000)
@@ -82,15 +60,43 @@ public:
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_3;        // 0x0110(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_TeleportTo_ReturnValue_3;              // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_SnGFO_Collision_C_ExecuteUbergraph_G_SnGFO_Collision;
 
-// Function G_SnGFO_Collision.G_SnGFO_Collision_C.HeistStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct G_SnGFO_Collision_C_HeistStateChanged final
+// Function G_SnGFO_Collision.G_SnGFO_Collision_C.BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_SnGFO_Collision_C_BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature final
 {
 public:
-	EPD3HeistState                                OldHeistState;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CurrentHeistState;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_SnGFO_Collision_C_BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_SnGFO_Collision.G_SnGFO_Collision_C.BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport4_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_SnGFO_Collision_C_BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport4_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Collision_C_BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport4_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_SnGFO_Collision.G_SnGFO_Collision_C.BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport3_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_SnGFO_Collision_C_BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport3_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Collision_C_BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport3_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function G_SnGFO_Collision.G_SnGFO_Collision_C.BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport2_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct G_SnGFO_Collision_C_BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport2_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_SnGFO_Collision_C_BndEvt__G_Fort_Collision_SBZPlayerTriggerVolume_teleport2_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

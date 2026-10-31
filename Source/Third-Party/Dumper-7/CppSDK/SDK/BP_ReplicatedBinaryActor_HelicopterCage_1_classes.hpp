@@ -54,9 +54,9 @@ public:
 	TMulticastInlineDelegate<void()>              CageComplete;                                      // 0x0468(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
+	void SetStateFunction(Enum_HelicopterCageStates State);
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
 	void ExecuteUbergraph_BP_ReplicatedBinaryActor_HelicopterCage_1(int32 EntryPoint);
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void SetStateFunction(Enum_HelicopterCageStates State_0);
 
 public:
 	static class UClass* StaticClass()
@@ -72,5 +72,6 @@ public:
 		return GetDefaultObjImpl<ABP_ReplicatedBinaryActor_HelicopterCage_1_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ReplicatedBinaryActor_HelicopterCage_1_C;
 
 SDK_NAMESPACE_END

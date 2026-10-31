@@ -22,5 +22,6 @@ public:
 	TArray<float>                                 End_5_612F2B3C4451E5BE63302BBDA4056B91;            // 0x0010(0x0010)(Edit, BlueprintVisible)
 	TArray<class UTexture*>                       Shapes_9_275A07244DA2827E65818D899C56DF04;         // 0x0020(0x0010)(Edit, BlueprintVisible)
 };
+DUMPER7_ASSERTS_FFourx4_minigame_Struct;
 
 SDK_NAMESPACE_END

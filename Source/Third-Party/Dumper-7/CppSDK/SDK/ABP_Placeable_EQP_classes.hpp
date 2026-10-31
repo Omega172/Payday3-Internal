@@ -29,7 +29,7 @@ public:
 	struct FAnimNode_SequencePlayer               AnimGraphNode_SequencePlayer;                      // 0x0498(0x0098)()
 
 public:
-	void AnimGraph(struct FPoseLink* AnimGraph_0);
+	void AnimGraph(struct FPoseLink* AnimGraph);
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<UABP_Placeable_EQP_C>();
 	}
 };
+DUMPER7_ASSERTS_UABP_Placeable_EQP_C;
 
 SDK_NAMESPACE_END

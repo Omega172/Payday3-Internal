@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ABP_LA_Civ_Cosmetic_Sit_Laptop_Conversation_2Speakers_Loop_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LA_Civ_Cosmetic_Sit_Laptop_Conversation_2Speakers_Loop_C;
 
 SDK_NAMESPACE_END

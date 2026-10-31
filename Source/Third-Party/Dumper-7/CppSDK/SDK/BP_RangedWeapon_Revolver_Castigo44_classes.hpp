@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_RangedWeapon_Revolver_Castigo44_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_RangedWeapon_Revolver_Castigo44_C;
 
 SDK_NAMESPACE_END

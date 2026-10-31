@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UBP_SmokeCameraFeedback_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_SmokeCameraFeedback_C;
 
 SDK_NAMESPACE_END

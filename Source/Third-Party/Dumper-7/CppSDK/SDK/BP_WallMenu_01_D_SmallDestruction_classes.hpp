@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_WallMenu_01_D_SmallDestruction_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_WallMenu_01_D_SmallDestruction_C;
 
 SDK_NAMESPACE_END

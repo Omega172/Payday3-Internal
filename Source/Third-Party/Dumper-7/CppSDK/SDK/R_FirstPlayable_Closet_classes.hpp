@@ -35,19 +35,19 @@ public:
 	class ASBZDestroyGroup*                       SBZDestroyGroup_LooseCash2_ExecuteUbergraph_R_FirstPlayable_Closet_RefProperty; // 0x0410(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_LanceFuelTank1_K2Node_ActorBoundEvent_1_OnAckCompleteInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor);
-	void BndEvt__BP_LanceFuelTank2_K2Node_ActorBoundEvent_2_OnAckCompleteInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor);
-	void BndEvt__BP_LanceFuelTank3_K2Node_ActorBoundEvent_3_OnAckCompleteInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor);
-	void BndEvt__BP_LanceFuelTank4_K2Node_ActorBoundEvent_4_OnAckCompleteInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor);
-	void BndEvt__R_FirstPlayable_Closet_BP_Locker_02_2_K2Node_ActorBoundEvent_0_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State);
-	void BndEvt__R_FirstPlayable_Closet_BP_Locker_3_K2Node_ActorBoundEvent_6_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State);
-	void BndEvt__R_FirstPlayable_Closet_BP_Locker_5_K2Node_ActorBoundEvent_7_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State);
-	void ExecuteUbergraph_R_FirstPlayable_Closet(int32 EntryPoint);
-	void FirstPlayable_Closet_ActivateWaypoint();
-	void FirstPlayable_Closet_RemoveWaypoint();
-	void FirstPlayable_Closet_ShowCanisters();
-	void OnRandomPlacementStarted();
 	void ReceiveBeginPlay();
+	void OnRandomPlacementStarted();
+	void FirstPlayable_Closet_ShowCanisters();
+	void FirstPlayable_Closet_RemoveWaypoint();
+	void FirstPlayable_Closet_ActivateWaypoint();
+	void ExecuteUbergraph_R_FirstPlayable_Closet(int32 EntryPoint);
+	void BndEvt__R_FirstPlayable_Closet_BP_Locker_5_K2Node_ActorBoundEvent_7_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State);
+	void BndEvt__R_FirstPlayable_Closet_BP_Locker_3_K2Node_ActorBoundEvent_6_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State);
+	void BndEvt__R_FirstPlayable_Closet_BP_Locker_02_2_K2Node_ActorBoundEvent_0_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State);
+	void BndEvt__BP_LanceFuelTank4_K2Node_ActorBoundEvent_4_OnAckCompleteInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor);
+	void BndEvt__BP_LanceFuelTank3_K2Node_ActorBoundEvent_3_OnAckCompleteInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor);
+	void BndEvt__BP_LanceFuelTank2_K2Node_ActorBoundEvent_2_OnAckCompleteInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor);
+	void BndEvt__BP_LanceFuelTank1_K2Node_ActorBoundEvent_1_OnAckCompleteInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor);
 
 public:
 	static class UClass* StaticClass()
@@ -63,5 +63,6 @@ public:
 		return GetDefaultObjImpl<AR_FirstPlayable_Closet_C>();
 	}
 };
+DUMPER7_ASSERTS_AR_FirstPlayable_Closet_C;
 
 SDK_NAMESPACE_END

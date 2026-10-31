@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_BusinessCard_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_BusinessCard_C;
 
 SDK_NAMESPACE_END

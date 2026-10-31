@@ -16,20 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function G_ArtGallery_LivingWorld.G_ArtGallery_LivingWorld_C.BlackScreenStarted
-// (Event, Public, BlueprintEvent)
-
-void AG_ArtGallery_LivingWorld_C::BlackScreenStarted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArtGallery_LivingWorld_C", "BlackScreenStarted");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function G_ArtGallery_LivingWorld.G_ArtGallery_LivingWorld_C.ExecuteUbergraph_G_ArtGallery_LivingWorld
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -37,16 +23,26 @@ void AG_ArtGallery_LivingWorld_C::BlackScreenStarted()
 
 void AG_ArtGallery_LivingWorld_C::ExecuteUbergraph_G_ArtGallery_LivingWorld(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_ArtGallery_LivingWorld_C", "ExecuteUbergraph_G_ArtGallery_LivingWorld");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_ArtGallery_LivingWorld_C", "ExecuteUbergraph_G_ArtGallery_LivingWorld", FuncInfo);
 
 	Params::G_ArtGallery_LivingWorld_C_ExecuteUbergraph_G_ArtGallery_LivingWorld Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_ArtGallery_LivingWorld.G_ArtGallery_LivingWorld_C.BlackScreenStarted
+// (Event, Public, BlueprintEvent)
+
+void AG_ArtGallery_LivingWorld_C::BlackScreenStarted()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BlackScreenStarted", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

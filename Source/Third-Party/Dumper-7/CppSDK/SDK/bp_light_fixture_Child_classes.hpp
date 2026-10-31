@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<Abp_light_fixture_Child_C>();
 	}
 };
+DUMPER7_ASSERTS_Abp_light_fixture_Child_C;
 
 SDK_NAMESPACE_END

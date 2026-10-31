@@ -82,28 +82,28 @@ public:
 	class UMaterialInstanceDynamic*               lightWorking_DMI;                                  // 0x0698(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void animateEjectServerTimeline__FinishedFunc();
-	void animateEjectServerTimeline__UpdateFunc();
-	void animateInsertServerTimeline__FinishedFunc();
-	void animateInsertServerTimeline__UpdateFunc();
-	void animateProgressBarTimeline__FinishedFunc();
-	void animateProgressBarTimeline__UpdateFunc();
-	void BndEvt__BP_ServerDecrypter_ClaimBagInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_ServerDecrypter_ClaimCombinedBagInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BP_BagCountUpdated(int32 NumOfBags);
-	void BP_OnCombinedBagCountUpdated(int32 Count);
-	void BP_OnRunningStateChanged(ESBZLootProcessorState NewState, bool bDoCosmetics, bool bIsDedicatedServer);
-	void ejectServer(int32 slot);
-	void ExecuteUbergraph_BP_ServerDecrypter(int32 EntryPoint);
-	void forceServersFullyInserted(bool includeCombinedServer);
-	void getNumInsertedServers(int32* insertedServers);
-	void hideServer(int32 slot);
-	void insertServer(int32 slot);
-	void OnRep_serverCombinedCollected();
-	void Set_Lights(int32 amount, bool working);
-	void updateDisplay(const class FText& mainText, const class FText& descriptionText, int32 State, bool Flickering);
-	void updateServerVisibility();
 	void UserConstructionScript();
+	void updateServerVisibility();
+	void updateDisplay(const class FText& mainText, const class FText& descriptionText, int32 State, bool Flickering);
+	void Set_Lights(int32 amount, bool working);
+	void OnRep_serverCombinedCollected();
+	void insertServer(int32 slot);
+	void hideServer(int32 slot);
+	void getNumInsertedServers(int32* insertedServers);
+	void forceServersFullyInserted(bool includeCombinedServer);
+	void ExecuteUbergraph_BP_ServerDecrypter(int32 EntryPoint);
+	void ejectServer(int32 slot);
+	void BP_OnRunningStateChanged(ESBZLootProcessorState NewState_BP_OnRunningStateChanged, bool bDoCosmetics_BP_OnRunningStateChanged, bool bIsDedicatedServer_BP_OnRunningStateChanged);
+	void BP_OnCombinedBagCountUpdated(int32 Count_BP_OnCombinedBagCountUpdated);
+	void BP_BagCountUpdated(int32 NumOfBags_BP_BagCountUpdated);
+	void BndEvt__BP_ServerDecrypter_ClaimCombinedBagInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_ServerDecrypter_ClaimBagInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void animateProgressBarTimeline__UpdateFunc();
+	void animateProgressBarTimeline__FinishedFunc();
+	void animateInsertServerTimeline__UpdateFunc();
+	void animateInsertServerTimeline__FinishedFunc();
+	void animateEjectServerTimeline__UpdateFunc();
+	void animateEjectServerTimeline__FinishedFunc();
 
 public:
 	static class UClass* StaticClass()
@@ -119,5 +119,6 @@ public:
 		return GetDefaultObjImpl<ABP_ServerDecrypter_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ServerDecrypter_C;
 
 SDK_NAMESPACE_END

@@ -519,7 +519,7 @@ DUMPER7_ASSERTS_ASBZAIPointOfInterest;
 
 // Class Starbreeze.SBZAIPointOfInterestDeadBody
 // 0x0028 (0x03A0 - 0x0378)
-class ASBZAIPointOfInterestDeadBody final : public ASBZAIPointOfInterest
+class ASBZAIPointOfInterestDeadBody : public ASBZAIPointOfInterest
 {
 public:
 	class USBZLifeActionComponent*                LifeActionComponent;                               // 0x0378(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -2458,7 +2458,7 @@ DUMPER7_ASSERTS_ISBZAIVisibilityRelevant;
 
 // Class Starbreeze.SBZCoverPoint
 // 0x01C0 (0x04E8 - 0x0328)
-class ASBZCoverPoint final : public AActor, public ISBZAIVisibilityRelevant, public ISBZRoomVolumeInterface
+class ASBZCoverPoint : public AActor, public ISBZAIVisibilityRelevant, public ISBZRoomVolumeInterface
 {
 public:
 	TArray<TWeakObjectPtr<class ASBZCoverPoint>>  LinkedCoverPoints;                                 // 0x0338(0x0010)(Edit, ZeroConstructor, EditConst, UObjectWrapper, NativeAccessSpecifierPublic)
@@ -2929,7 +2929,7 @@ DUMPER7_ASSERTS_ASBZBaseDebris;
 
 // Class Starbreeze.SBZDebris
 // 0x0008 (0x0330 - 0x0328)
-class ASBZDebris final : public ASBZBaseDebris
+class ASBZDebris : public ASBZBaseDebris
 {
 public:
 	class UStaticMeshComponent*                   StaticMeshComponent;                               // 0x0328(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -3020,7 +3020,7 @@ DUMPER7_ASSERTS_ASBZCosmeticProp;
 
 // Class Starbreeze.SBZRappellingRope
 // 0x0010 (0x0358 - 0x0348)
-class ASBZRappellingRope final : public ASBZCosmeticProp
+class ASBZRappellingRope : public ASBZCosmeticProp
 {
 public:
 	class USBZRappellingRopeComponent*            RappellingRopeComponent;                           // 0x0348(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -5688,7 +5688,7 @@ public:
 DUMPER7_ASSERTS_ISBZZiplinerInterface;
 
 // Class Starbreeze.SBZCharacter
-// 0x1230 (0x1930 - 0x0700)
+// 0x1240 (0x1940 - 0x0700)
 #pragma pack(push, 0x1)
 class SDK_ALIGN(0x10) ASBZCharacter : public ACharacter, public IAbilitySystemInterface, public ISBZPawnLifetime, public MIPad::Pad<0x18, 0x720>, public IGenericTeamAgentInterface, public ISBZAIVisibilityRelevant, public IAISightTargetInterface, public ISBZVoiceComponentInterface, public ISBZRoomVolumeInterface, public IGameplayTagAssetInterface, public ISBZPawnInterface, public MIPad::Pad<0x68, 0x7C0>, public ISBZProjectileInterface, public MIPad::Pad<0x8, 0x7D0>, public ISBZTypeInterface, public ISBZZiplinerInterface
 {
@@ -5749,158 +5749,160 @@ public:
 	uint8                                         Pad_BC9[0x3];                                      // 0x0BC9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   LastReloadAnimationName;                           // 0x0BCC(0x000C)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UAnimMontage*                           LastLocalReloadMontage;                            // 0x0BD8(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TMap<class FName, class UAnimMontage*>        LastRecoilMontageBySlot;                           // 0x0BE0(0x0050)(Edit, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
-	class USBZCharacterMovementSettings*          MovementSettings;                                  // 0x0C30(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	ESBZCharacterStance                           Stance;                                            // 0x0C38(0x0001)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_C39[0x3];                                      // 0x0C39(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CompatibleStances;                                 // 0x0C3C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         MaxStartAimOffsetYawDegrees;                       // 0x0C40(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         MaxAimOffsetYawDegrees;                            // 0x0C44(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         MaxStartAimOffsetYawDegreesTargeting;              // 0x0C48(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         MaxAimOffsetYawDegreesTargeting;                   // 0x0C4C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         RemoteViewYaw;                                     // 0x0C50(0x0001)(Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_C51[0x7];                                      // 0x0C51(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZAbilitySystemComponent*             AbilitySystem;                                     // 0x0C58(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TArray<struct FSBZEquippableConfig>           EquippableConfigArray;                             // 0x0C60(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
-	TArray<struct FSBZEquippableConfig>           LoadedEquippableConfigArray;                       // 0x0C70(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
-	int32                                         CurrentEquippableIndex;                            // 0x0C80(0x0004)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         LastEquippableIndex;                               // 0x0C84(0x0004)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         LastRequiredEquippableIndex;                       // 0x0C88(0x0004)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_C8C[0x4];                                      // 0x0C8C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class ASBZEquippable*>                 EquippableArray;                                   // 0x0C90(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
-	TArray<class ASBZEquippable*>                 PendingReplicatedEquippableArray;                  // 0x0CA0(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
-	struct FSBZEquippableConfig                   CurrentEquippableConfig;                           // 0x0CB0(0x0088)(Edit, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
-	struct FSBZEquippableRuntime                  CurrentEquippableRuntime;                          // 0x0D38(0x0048)(Edit, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
-	class ASBZEquippable*                         CurrentEquippable;                                 // 0x0D80(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_D88[0x8];                                      // 0x0D88(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSBZEquippableRuntime>          EquippableRuntimeArray;                            // 0x0D90(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
-	ESBZEquipState                                EquipState;                                        // 0x0DA0(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         EquipStateAndIndex;                                // 0x0DA1(0x0001)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_DA2[0x2];                                      // 0x0DA2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   EquippableAttachementSocketName;                   // 0x0DA4(0x000C)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class UAnimInstance>              LinkedAnimationClass;                              // 0x0DB0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZBaseCharacterAnimationCollection*   AnimationCollection;                               // 0x0DB8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZFacialAnimationCollection*          FacialAnimationCollection;                         // 0x0DC0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZEmotionMapping*                     EmotionMapping;                                    // 0x0DC8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZCharacterAnimationDataTP*           AnimationData;                                     // 0x0DD0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZLifeActionAffinitytData*            DefaultLifeActionAffinityData;                     // 0x0DD8(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZLifeActionAffinitytData*            RandomizedMeshScaleLifeActionAffinityData;         // 0x0DE0(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bCanEverHaveFacialAnimation;                       // 0x0DE8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_DE9[0x7];                                      // 0x0DE9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSBZMontageSectionSwitchRequest> MontageSectionSwitchRequests;                     // 0x0DF0(0x0010)(ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
-	int32                                         TargetEquippableIndex;                             // 0x0E00(0x0004)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         InitialEquippableIndex;                            // 0x0E04(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int8                                          ForbiddenEquippableIndexCountArray[0x7];           // 0x0E08(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int8                                          EquippableVisibleCount;                            // 0x0E0F(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int8                                          EquippedCount;                                     // 0x0E10(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bIsInitialEquipped;                                // 0x0E11(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_E12[0x1E];                                     // 0x0E12(0x001E)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FGenericTeamId                         TeamId;                                            // 0x0E30(0x0001)(Net, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_E31[0x7];                                      // 0x0E31(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZCharacterVoiceComponent*            VoiceComponent;                                    // 0x0E38(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZDamageTracker*                      DamageTracker;                                     // 0x0E40(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZCharacterFootStepComponent*         FootStepComponent;                                 // 0x0E48(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZCharacterSlidingComponent*          SlidingComponent;                                  // 0x0E50(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZCharacterMantlingComponent*         MantlingComponent;                                 // 0x0E58(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZCharacterVaultingComponent*         VaultingComponent;                                 // 0x0E60(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	ESBZAIVisibilityNodeComputationFrequency      AIVisibilityNodeComputationFrequency;              // 0x0E68(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_E69[0x3];                                      // 0x0E69(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZAIVisibilityLeafNode               AIVisibilityNode;                                  // 0x0E6C(0x0010)(Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_E7C[0x4];                                      // 0x0E7C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZCharacterAbilityData*               AbilityData;                                       // 0x0E80(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FHitResult                             FloorHitLeftFoot;                                  // 0x0E88(0x0108)(Transient, IsPlainOldData, NoDestructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	struct FHitResult                             FloorHitRightFoot;                                 // 0x0F90(0x0108)(Transient, IsPlainOldData, NoDestructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	TMap<class FName, struct FSBZBoneDamageMultiplier> BoneDamageMultiplierMap;                      // 0x1098(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	class USBZTagReactionAsset*                   TagReactionAsset;                                  // 0x10E8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZTagReactionAsset*                   CurrentTagReactionAsset;                           // 0x10F0(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_10F8[0x8];                                     // 0x10F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<ESBZCharacterStance, class USBZTagReactionAsset*> TagReactionStanceMap;                     // 0x1100(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	TArray<struct FSBZTagReactionEffect>          CurrentTagReactionEffects;                         // 0x1150(0x0010)(ZeroConstructor, Transient, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	class UAnimMontage*                           LastTagReactionMontage;                            // 0x1160(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1168[0x8];                                     // 0x1168(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZHurtReaction*                       HurtReactionArray[0x18];                           // 0x1170(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FFloatInterval                         SprintForwardHurtVelocityInterval;                 // 0x1230(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1238[0x18];                                    // 0x1238(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          LandSoundEvent;                                    // 0x1250(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FSBZDropCharacterSound                 VictimDropCharacterSound;                          // 0x1258(0x0010)(Edit, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	struct FSBZDropCharacterSound                 InstigatorDropCharacterSound;                      // 0x1268(0x0010)(Edit, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	float                                         MinInteractionDurationToUnequip;                   // 0x1278(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	int32                                         CurrentThrowableIndex;                             // 0x127C(0x0004)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TArray<int32>                                 GadgetIndexArray;                                  // 0x1280(0x0010)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
-	TArray<int32>                                 GadgetMaxIndexArray;                               // 0x1290(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
-	int32                                         CurrentPlaceableIndex;                             // 0x12A0(0x0004)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_12A4[0x4];                                     // 0x12A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZCharacterInteractableComponent*     Interactable;                                      // 0x12A8(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZMeleeComponent*                     MeleeComponent;                                    // 0x12B0(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZMeleeDamageData*                    MeleeDamageData;                                   // 0x12B8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, EditConst, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
-	class USBZMeleeDamageData*                    MeleeDamageDataArray[0x2];                         // 0x12C0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
-	class AActor*                                 CurrentCarryActor;                                 // 0x12D0(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class ASBZCharacter*                          CurrentCarryInstigator;                            // 0x12D8(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class FName                                   CarryActorSocketName;                              // 0x12E0(0x000C)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_12EC[0x4];                                     // 0x12EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPhysicsAsset*                          PhysicsAssetWhenCarried;                           // 0x12F0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UPhysicsAsset*                          PhysicsAssetWhenNotCarried;                        // 0x12F8(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class UAnimInstance>              AnimClassWhenCarriedDead;                          // 0x1300(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	ESBZHumanShieldInstigatorState                HumanShieldInstigatorState;                        // 0x1308(0x0001)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1309[0x7];                                     // 0x1309(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FTransform                             OffsetWhenCarried;                                 // 0x1310(0x0060)(Edit, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FTransform                             OffsetWhenHumanShield;                             // 0x1370(0x0060)(Edit, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         HumanShieldInstigatorAcceptableRadius;             // 0x13D0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_13D4[0x4];                                     // 0x13D4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSBZHumanShieldSlotParameters>  HumanShieldSlotParameters;                         // 0x13D8(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	class USBZVoiceCommentDataAsset*              MeleeComment;                                      // 0x13E8(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UAnimMontage*                           CurrentHumanShieldInstigatorEnterMontage;          // 0x13F0(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_13F8[0xEC];                                    // 0x13F8(0x00EC)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         CarryingFromCrouchAcceptableRadius;                // 0x14E4(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_14E8[0xBC];                                    // 0x14E8(0x00BC)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Seed;                                              // 0x15A4(0x0004)(Edit, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FSBZSharedAnimBehavior                 SharedAnimBehavior;                                // 0x15A8(0x0080)(Transient, Protected, NativeAccessSpecifierProtected)
-	class AController*                            LastController;                                    // 0x1628(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FGameplayTag                           CharacterTag;                                      // 0x1630(0x000C)(Edit, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_163C[0xC];                                     // 0x163C(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZDialogBodyGesturesData*             DialogBodyGesturesData;                            // 0x1648(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1650[0x8];                                     // 0x1650(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAnimSequence*                          ForcedFacialAnimaton;                              // 0x1658(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class FText                                   CharacterName;                                     // 0x1660(0x0010)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	class ASBZMask*                               EquippedMask;                                      // 0x1670(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UPaperSprite*                           DisplayIcon;                                       // 0x1678(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UPaperSprite*                           MaskedOnDisplayIcon;                               // 0x1680(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FGameplayTagContainer                  HitImmunityGrantingTags;                           // 0x1688(0x0020)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	TSubclassOf<class UGameplayEffect>            MarkedGameplayEffectClass;                         // 0x16A8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class ASBZPlayerState*                        LastArmorConductorPlayerState;                     // 0x16B0(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         SpawnInvulnerableDuration;                         // 0x16B8(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_16BC[0x20];                                    // 0x16BC(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DestroyEquippableDelay;                            // 0x16DC(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TArray<class ASBZCosmeticProp*>               AttachedCosmeticPropArray;                         // 0x16E0(0x0010)(ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_16F0[0x98];                                    // 0x16F0(0x0098)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         HurtReactionOffset[0x18];                          // 0x1788(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	int32                                         LastAppliedHurtReactionIndex;                      // 0x17E8(0x0004)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	ESBZHurtReactionType                          CurrentHurtReactionType;                           // 0x17EC(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_17ED[0x3];                                     // 0x17ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         HurtReactionEndTime;                               // 0x17F0(0x0004)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         PredictedHurtReactionEndTime;                      // 0x17F4(0x0004)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_17F8[0x18];                                    // 0x17F8(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAnimMontage*                           CurrentMeleeMontage;                               // 0x1810(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1818[0x10];                                    // 0x1818(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class ASBZRoomVolume*>                 RoomVolumes;                                       // 0x1828(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
-	class ASBZRoomVolume*                         LastKnownRoom;                                     // 0x1838(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TArray<class FName>                           ExplosionLineTraceBoneArray;                       // 0x1840(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPrivate)
-	class FName                                   HeadBone;                                          // 0x1850(0x000C)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class FName                                   StatisticName;                                     // 0x185C(0x000C)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class FString                                 StatisticKillString;                               // 0x1868(0x0010)(Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         CarryWeightTierOffset;                             // 0x1878(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_187C[0x4];                                     // 0x187C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class ASBZThrowable*>                  ReplicatedThrowableArray;                          // 0x1880(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
-	TArray<class ASBZGrenadeProjectile*>          ReplicatedGrenadeProjectileArray;                  // 0x1890(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_18A0[0x50];                                    // 0x18A0(0x0050)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   ConsumableMontageName;                             // 0x18F0(0x000C)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         ConsumableMontageDuration;                         // 0x18FC(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class FName                                   FocalPointSocketName;                              // 0x1900(0x000C)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	int32                                         ServerMarkTagCount;                                // 0x190C(0x0004)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	int32                                         ServerHET5VoidSkillCount;                          // 0x1910(0x0004)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	int32                                         ServerHET5TanSkillCount;                           // 0x1914(0x0004)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class ASBZProjectilePredictionActor*          PredictionGhost;                                   // 0x1918(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
-	uint8                                         Pad_1920[0x8];                                     // 0x1920(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class FName                                   LastLeftCycleAnimationName;                        // 0x0BE0(0x000C)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_BEC[0x4];                                      // 0x0BEC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class FName, class UAnimMontage*>        LastRecoilMontageBySlot;                           // 0x0BF0(0x0050)(Edit, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
+	class USBZCharacterMovementSettings*          MovementSettings;                                  // 0x0C40(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	ESBZCharacterStance                           Stance;                                            // 0x0C48(0x0001)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_C49[0x3];                                      // 0x0C49(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CompatibleStances;                                 // 0x0C4C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         MaxStartAimOffsetYawDegrees;                       // 0x0C50(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         MaxAimOffsetYawDegrees;                            // 0x0C54(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         MaxStartAimOffsetYawDegreesTargeting;              // 0x0C58(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         MaxAimOffsetYawDegreesTargeting;                   // 0x0C5C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         RemoteViewYaw;                                     // 0x0C60(0x0001)(Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_C61[0x7];                                      // 0x0C61(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZAbilitySystemComponent*             AbilitySystem;                                     // 0x0C68(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TArray<struct FSBZEquippableConfig>           EquippableConfigArray;                             // 0x0C70(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
+	TArray<struct FSBZEquippableConfig>           LoadedEquippableConfigArray;                       // 0x0C80(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
+	int32                                         CurrentEquippableIndex;                            // 0x0C90(0x0004)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         LastEquippableIndex;                               // 0x0C94(0x0004)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         LastRequiredEquippableIndex;                       // 0x0C98(0x0004)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_C9C[0x4];                                      // 0x0C9C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class ASBZEquippable*>                 EquippableArray;                                   // 0x0CA0(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
+	TArray<class ASBZEquippable*>                 PendingReplicatedEquippableArray;                  // 0x0CB0(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
+	struct FSBZEquippableConfig                   CurrentEquippableConfig;                           // 0x0CC0(0x0088)(Edit, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
+	struct FSBZEquippableRuntime                  CurrentEquippableRuntime;                          // 0x0D48(0x0048)(Edit, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
+	class ASBZEquippable*                         CurrentEquippable;                                 // 0x0D90(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_D98[0x8];                                      // 0x0D98(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSBZEquippableRuntime>          EquippableRuntimeArray;                            // 0x0DA0(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
+	ESBZEquipState                                EquipState;                                        // 0x0DB0(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         EquipStateAndIndex;                                // 0x0DB1(0x0001)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_DB2[0x2];                                      // 0x0DB2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   EquippableAttachementSocketName;                   // 0x0DB4(0x000C)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class UAnimInstance>              LinkedAnimationClass;                              // 0x0DC0(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZBaseCharacterAnimationCollection*   AnimationCollection;                               // 0x0DC8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZFacialAnimationCollection*          FacialAnimationCollection;                         // 0x0DD0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZEmotionMapping*                     EmotionMapping;                                    // 0x0DD8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZCharacterAnimationDataTP*           AnimationData;                                     // 0x0DE0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZLifeActionAffinitytData*            DefaultLifeActionAffinityData;                     // 0x0DE8(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZLifeActionAffinitytData*            RandomizedMeshScaleLifeActionAffinityData;         // 0x0DF0(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bCanEverHaveFacialAnimation;                       // 0x0DF8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_DF9[0x7];                                      // 0x0DF9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSBZMontageSectionSwitchRequest> MontageSectionSwitchRequests;                     // 0x0E00(0x0010)(ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
+	int32                                         TargetEquippableIndex;                             // 0x0E10(0x0004)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         InitialEquippableIndex;                            // 0x0E14(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int8                                          ForbiddenEquippableIndexCountArray[0x7];           // 0x0E18(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int8                                          EquippableVisibleCount;                            // 0x0E1F(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int8                                          EquippedCount;                                     // 0x0E20(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bIsInitialEquipped;                                // 0x0E21(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_E22[0x1E];                                     // 0x0E22(0x001E)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FGenericTeamId                         TeamId;                                            // 0x0E40(0x0001)(Net, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_E41[0x7];                                      // 0x0E41(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZCharacterVoiceComponent*            VoiceComponent;                                    // 0x0E48(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZDamageTracker*                      DamageTracker;                                     // 0x0E50(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZCharacterFootStepComponent*         FootStepComponent;                                 // 0x0E58(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZCharacterSlidingComponent*          SlidingComponent;                                  // 0x0E60(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZCharacterMantlingComponent*         MantlingComponent;                                 // 0x0E68(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZCharacterVaultingComponent*         VaultingComponent;                                 // 0x0E70(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	ESBZAIVisibilityNodeComputationFrequency      AIVisibilityNodeComputationFrequency;              // 0x0E78(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_E79[0x3];                                      // 0x0E79(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZAIVisibilityLeafNode               AIVisibilityNode;                                  // 0x0E7C(0x0010)(Transient, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_E8C[0x4];                                      // 0x0E8C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZCharacterAbilityData*               AbilityData;                                       // 0x0E90(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FHitResult                             FloorHitLeftFoot;                                  // 0x0E98(0x0108)(Transient, IsPlainOldData, NoDestructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	struct FHitResult                             FloorHitRightFoot;                                 // 0x0FA0(0x0108)(Transient, IsPlainOldData, NoDestructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	TMap<class FName, struct FSBZBoneDamageMultiplier> BoneDamageMultiplierMap;                      // 0x10A8(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	class USBZTagReactionAsset*                   TagReactionAsset;                                  // 0x10F8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZTagReactionAsset*                   CurrentTagReactionAsset;                           // 0x1100(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1108[0x8];                                     // 0x1108(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<ESBZCharacterStance, class USBZTagReactionAsset*> TagReactionStanceMap;                     // 0x1110(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	TArray<struct FSBZTagReactionEffect>          CurrentTagReactionEffects;                         // 0x1160(0x0010)(ZeroConstructor, Transient, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	class UAnimMontage*                           LastTagReactionMontage;                            // 0x1170(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1178[0x8];                                     // 0x1178(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZHurtReaction*                       HurtReactionArray[0x18];                           // 0x1180(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FFloatInterval                         SprintForwardHurtVelocityInterval;                 // 0x1240(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1248[0x18];                                    // 0x1248(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          LandSoundEvent;                                    // 0x1260(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FSBZDropCharacterSound                 VictimDropCharacterSound;                          // 0x1268(0x0010)(Edit, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	struct FSBZDropCharacterSound                 InstigatorDropCharacterSound;                      // 0x1278(0x0010)(Edit, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	float                                         MinInteractionDurationToUnequip;                   // 0x1288(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	int32                                         CurrentThrowableIndex;                             // 0x128C(0x0004)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TArray<int32>                                 GadgetIndexArray;                                  // 0x1290(0x0010)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
+	TArray<int32>                                 GadgetMaxIndexArray;                               // 0x12A0(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, Protected, NativeAccessSpecifierProtected)
+	int32                                         CurrentPlaceableIndex;                             // 0x12B0(0x0004)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_12B4[0x4];                                     // 0x12B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZCharacterInteractableComponent*     Interactable;                                      // 0x12B8(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZMeleeComponent*                     MeleeComponent;                                    // 0x12C0(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZMeleeDamageData*                    MeleeDamageData;                                   // 0x12C8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, EditConst, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	class USBZMeleeDamageData*                    MeleeDamageDataArray[0x2];                         // 0x12D0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected, TObjectPtr)
+	class AActor*                                 CurrentCarryActor;                                 // 0x12E0(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class ASBZCharacter*                          CurrentCarryInstigator;                            // 0x12E8(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class FName                                   CarryActorSocketName;                              // 0x12F0(0x000C)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_12FC[0x4];                                     // 0x12FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPhysicsAsset*                          PhysicsAssetWhenCarried;                           // 0x1300(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UPhysicsAsset*                          PhysicsAssetWhenNotCarried;                        // 0x1308(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class UAnimInstance>              AnimClassWhenCarriedDead;                          // 0x1310(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	ESBZHumanShieldInstigatorState                HumanShieldInstigatorState;                        // 0x1318(0x0001)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1319[0x7];                                     // 0x1319(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FTransform                             OffsetWhenCarried;                                 // 0x1320(0x0060)(Edit, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FTransform                             OffsetWhenHumanShield;                             // 0x1380(0x0060)(Edit, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         HumanShieldInstigatorAcceptableRadius;             // 0x13E0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_13E4[0x4];                                     // 0x13E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSBZHumanShieldSlotParameters>  HumanShieldSlotParameters;                         // 0x13E8(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	class USBZVoiceCommentDataAsset*              MeleeComment;                                      // 0x13F8(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UAnimMontage*                           CurrentHumanShieldInstigatorEnterMontage;          // 0x1400(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1408[0xEC];                                    // 0x1408(0x00EC)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         CarryingFromCrouchAcceptableRadius;                // 0x14F4(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_14F8[0xBC];                                    // 0x14F8(0x00BC)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Seed;                                              // 0x15B4(0x0004)(Edit, Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FSBZSharedAnimBehavior                 SharedAnimBehavior;                                // 0x15B8(0x0080)(Transient, Protected, NativeAccessSpecifierProtected)
+	class AController*                            LastController;                                    // 0x1638(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FGameplayTag                           CharacterTag;                                      // 0x1640(0x000C)(Edit, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_164C[0xC];                                     // 0x164C(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZDialogBodyGesturesData*             DialogBodyGesturesData;                            // 0x1658(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1660[0x8];                                     // 0x1660(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAnimSequence*                          ForcedFacialAnimaton;                              // 0x1668(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class FText                                   CharacterName;                                     // 0x1670(0x0010)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	class ASBZMask*                               EquippedMask;                                      // 0x1680(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UPaperSprite*                           DisplayIcon;                                       // 0x1688(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UPaperSprite*                           MaskedOnDisplayIcon;                               // 0x1690(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FGameplayTagContainer                  HitImmunityGrantingTags;                           // 0x1698(0x0020)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	TSubclassOf<class UGameplayEffect>            MarkedGameplayEffectClass;                         // 0x16B8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class ASBZPlayerState*                        LastArmorConductorPlayerState;                     // 0x16C0(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         SpawnInvulnerableDuration;                         // 0x16C8(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_16CC[0x20];                                    // 0x16CC(0x0020)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DestroyEquippableDelay;                            // 0x16EC(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TArray<class ASBZCosmeticProp*>               AttachedCosmeticPropArray;                         // 0x16F0(0x0010)(ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1700[0x98];                                    // 0x1700(0x0098)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         HurtReactionOffset[0x18];                          // 0x1798(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	int32                                         LastAppliedHurtReactionIndex;                      // 0x17F8(0x0004)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	ESBZHurtReactionType                          CurrentHurtReactionType;                           // 0x17FC(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_17FD[0x3];                                     // 0x17FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         HurtReactionEndTime;                               // 0x1800(0x0004)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         PredictedHurtReactionEndTime;                      // 0x1804(0x0004)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1808[0x18];                                    // 0x1808(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAnimMontage*                           CurrentMeleeMontage;                               // 0x1820(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1828[0x10];                                    // 0x1828(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class ASBZRoomVolume*>                 RoomVolumes;                                       // 0x1838(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
+	class ASBZRoomVolume*                         LastKnownRoom;                                     // 0x1848(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TArray<class FName>                           ExplosionLineTraceBoneArray;                       // 0x1850(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPrivate)
+	class FName                                   HeadBone;                                          // 0x1860(0x000C)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class FName                                   StatisticName;                                     // 0x186C(0x000C)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class FString                                 StatisticKillString;                               // 0x1878(0x0010)(Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         CarryWeightTierOffset;                             // 0x1888(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_188C[0x4];                                     // 0x188C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class ASBZThrowable*>                  ReplicatedThrowableArray;                          // 0x1890(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
+	TArray<class ASBZGrenadeProjectile*>          ReplicatedGrenadeProjectileArray;                  // 0x18A0(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_18B0[0x50];                                    // 0x18B0(0x0050)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   ConsumableMontageName;                             // 0x1900(0x000C)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         ConsumableMontageDuration;                         // 0x190C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class FName                                   FocalPointSocketName;                              // 0x1910(0x000C)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	int32                                         ServerMarkTagCount;                                // 0x191C(0x0004)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	int32                                         ServerHET5VoidSkillCount;                          // 0x1920(0x0004)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	int32                                         ServerHET5TanSkillCount;                           // 0x1924(0x0004)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class ASBZProjectilePredictionActor*          PredictionGhost;                                   // 0x1928(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate, TObjectPtr)
+	uint8                                         Pad_1930[0x8];                                     // 0x1930(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void AddLooseGameplayTag(const struct FGameplayTag& GameplayTag, int32 Count);
@@ -7339,7 +7341,7 @@ DUMPER7_ASSERTS_ASBZDisplayCase;
 
 // Class Starbreeze.SBZDisplayCaseNotCuttable
 // 0x0000 (0x04F0 - 0x04F0)
-class ASBZDisplayCaseNotCuttable final : public ASBZDisplayCase
+class ASBZDisplayCaseNotCuttable : public ASBZDisplayCase
 {
 public:
 	static class UClass* StaticClass()
@@ -7788,7 +7790,7 @@ DUMPER7_ASSERTS_USBZAIOrder_LifeAction;
 
 // Class Starbreeze.SBZAIOrder_ActionInteract
 // 0x0010 (0x0240 - 0x0230)
-class USBZAIOrder_ActionInteract final : public USBZAIOrder_LifeAction
+class USBZAIOrder_ActionInteract : public USBZAIOrder_LifeAction
 {
 public:
 	class USBZVoiceCommentDataAsset*              OnStartedComment;                                  // 0x0230(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -8149,68 +8151,68 @@ public:
 DUMPER7_ASSERTS_ISBZGateNavAgentInterface;
 
 // Class Starbreeze.SBZAIBaseCharacter
-// 0x02E0 (0x1C10 - 0x1930)
-class ASBZAIBaseCharacter : public ASBZCharacter, public ISBZAIUtilityControlled, public ISBZGateNavAgentInterface, public MIPad::Pad<0x8, 0x1940>, public ISBZSensorInterface, public ISBZRappellingRopeInterface
+// 0x02E0 (0x1C20 - 0x1940)
+class ASBZAIBaseCharacter : public ASBZCharacter, public ISBZAIUtilityControlled, public ISBZGateNavAgentInterface, public MIPad::Pad<0x8, 0x1950>, public ISBZSensorInterface, public ISBZRappellingRopeInterface
 {
 public:
-	uint8                                         Pad_1950[0x30];                                    // 0x1950(0x0030)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZAIUtilityData*                      CombatUtilityData;                                 // 0x1980(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FGameplayTagContainer                  InvalidTargetTags;                                 // 0x1988(0x0020)(Edit, Protected, NativeAccessSpecifierProtected)
-	TSubclassOf<class UNavigationQueryFilter>     NavFilters[0x4];                                   // 0x19A8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZAbilitySystemComponent*             AbilitySystemComponent;                            // 0x19C8(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class USBZAICharacterAttributeSet> AttributeSetClass;                                // 0x19D0(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZAICharacterAttributeSet*            AttributeSet;                                      // 0x19D8(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         RemoteDesiredViewYaw;                              // 0x19E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         RemoteDesiredHeadYaw;                              // 0x19E1(0x0001)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_19E2[0x6];                                     // 0x19E2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZAIUtilityData*                      UtilityData;                                       // 0x19E8(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FGameplayTag                           TypeTag;                                           // 0x19F0(0x000C)(Edit, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_19FC[0x4];                                     // 0x19FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class AActor*                                 CurrentTarget;                                     // 0x1A00(0x0008)(Net, ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZLifeActionSlot*                     CurrentLifeActionSlot;                             // 0x1A08(0x0008)(ExportObject, Net, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZAgilityQueryParams*                 AgilityQueryParam;                                 // 0x1A10(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1A18[0x38];                                    // 0x1A18(0x0038)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZNavLinkAgilityComponent*            CurrentNavLinkAgilityComponent;                    // 0x1A50(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZAIStimuliReactionComponent*         StimuliReactionComponent;                          // 0x1A58(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FComponentReference                    ComesticPropRef;                                   // 0x1A60(0x0030)(Edit, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bCanEverDoIdleBreaker;                             // 0x1A90(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1A91[0x7];                                     // 0x1A91(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZAIInteractorComponent*              AIInteractorComponent;                             // 0x1A98(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZVoiceCommentDataAsset*              PlacementComment;                                  // 0x1AA0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class ASBZRappellingRope*                     CurrentRappellingRope;                             // 0x1AA8(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1AB0[0x8];                                     // 0x1AB0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAnimMontage*                           LastWarpedRootMotionMontage;                       // 0x1AB8(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class ASBZWheeledVehicle*                     CurVehicleObstacle;                                // 0x1AC0(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class ASBZWheeledVehicle*                     CurVehicleHit;                                     // 0x1AC8(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZStanceTransitionDataAsset*          AllowedStanceTransitionData;                       // 0x1AD0(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZAgentManager*                       AgentManager;                                      // 0x1AD8(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         DeadlyFallHeight;                                  // 0x1AE0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1AE4[0x4];                                     // 0x1AE4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZPathFocusSettings*                  PathFocusSettings;                                 // 0x1AE8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         ThrowableNearRange;                                // 0x1AF0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         bWantsCoverPose : 1;                               // 0x1AF4(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         bIsInCover : 1;                                    // 0x1AF4(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
-	uint8                                         Pad_1AF5[0x3];                                     // 0x1AF5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	uint32                                        AgentId;                                           // 0x1AF8(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FSBZAgentSettings                      AgentSettings;                                     // 0x1AFC(0x004C)(Edit, NoDestructor, NativeAccessSpecifierPrivate)
-	class USBZAICharacterMovementComponent*       AgentCharacterMovement;                            // 0x1B48(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         NeighbourDetectionRange;                           // 0x1B50(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1B54[0x4];                                     // 0x1B54(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class ASBZAIBaseCharacter*>            Neighbours;                                        // 0x1B58(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
-	struct FFloatRange                            AvoidanceRandomWeight;                             // 0x1B68(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bIsAvoidanceEnabled;                               // 0x1B78(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1B79[0x3F];                                    // 0x1B79(0x003F)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAnimMontage*                           PlayingAgilityMontage;                             // 0x1BB8(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1BC0[0x8];                                     // 0x1BC0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          bCanDoEvadeDuringPathing;                          // 0x1BC8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bCanDoEvades;                                      // 0x1BC9(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1BCA[0x6];                                     // 0x1BCA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         AdditiveBaseEyeHeightTickRate;                     // 0x1BD0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         CivilianNearRange;                                 // 0x1BD4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1BD8[0x11];                                    // 0x1BD8(0x0011)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          bIsSlowedAllowed;                                  // 0x1BE9(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1BEA[0x1E];                                    // 0x1BEA(0x001E)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZDamageStatusMarkerDataAsset*        DamageStatusMarkerAsset;                           // 0x1C08(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1960[0x30];                                    // 0x1960(0x0030)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZAIUtilityData*                      CombatUtilityData;                                 // 0x1990(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FGameplayTagContainer                  InvalidTargetTags;                                 // 0x1998(0x0020)(Edit, Protected, NativeAccessSpecifierProtected)
+	TSubclassOf<class UNavigationQueryFilter>     NavFilters[0x4];                                   // 0x19B8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZAbilitySystemComponent*             AbilitySystemComponent;                            // 0x19D8(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class USBZAICharacterAttributeSet> AttributeSetClass;                                // 0x19E0(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZAICharacterAttributeSet*            AttributeSet;                                      // 0x19E8(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         RemoteDesiredViewYaw;                              // 0x19F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         RemoteDesiredHeadYaw;                              // 0x19F1(0x0001)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_19F2[0x6];                                     // 0x19F2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZAIUtilityData*                      UtilityData;                                       // 0x19F8(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FGameplayTag                           TypeTag;                                           // 0x1A00(0x000C)(Edit, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1A0C[0x4];                                     // 0x1A0C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class AActor*                                 CurrentTarget;                                     // 0x1A10(0x0008)(Net, ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZLifeActionSlot*                     CurrentLifeActionSlot;                             // 0x1A18(0x0008)(ExportObject, Net, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZAgilityQueryParams*                 AgilityQueryParam;                                 // 0x1A20(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1A28[0x38];                                    // 0x1A28(0x0038)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZNavLinkAgilityComponent*            CurrentNavLinkAgilityComponent;                    // 0x1A60(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZAIStimuliReactionComponent*         StimuliReactionComponent;                          // 0x1A68(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FComponentReference                    ComesticPropRef;                                   // 0x1A70(0x0030)(Edit, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bCanEverDoIdleBreaker;                             // 0x1AA0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1AA1[0x7];                                     // 0x1AA1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZAIInteractorComponent*              AIInteractorComponent;                             // 0x1AA8(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZVoiceCommentDataAsset*              PlacementComment;                                  // 0x1AB0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class ASBZRappellingRope*                     CurrentRappellingRope;                             // 0x1AB8(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1AC0[0x8];                                     // 0x1AC0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAnimMontage*                           LastWarpedRootMotionMontage;                       // 0x1AC8(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class ASBZWheeledVehicle*                     CurVehicleObstacle;                                // 0x1AD0(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class ASBZWheeledVehicle*                     CurVehicleHit;                                     // 0x1AD8(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZStanceTransitionDataAsset*          AllowedStanceTransitionData;                       // 0x1AE0(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZAgentManager*                       AgentManager;                                      // 0x1AE8(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         DeadlyFallHeight;                                  // 0x1AF0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1AF4[0x4];                                     // 0x1AF4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZPathFocusSettings*                  PathFocusSettings;                                 // 0x1AF8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         ThrowableNearRange;                                // 0x1B00(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         bWantsCoverPose : 1;                               // 0x1B04(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         bIsInCover : 1;                                    // 0x1B04(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, Transient, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
+	uint8                                         Pad_1B05[0x3];                                     // 0x1B05(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint32                                        AgentId;                                           // 0x1B08(0x0004)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FSBZAgentSettings                      AgentSettings;                                     // 0x1B0C(0x004C)(Edit, NoDestructor, NativeAccessSpecifierPrivate)
+	class USBZAICharacterMovementComponent*       AgentCharacterMovement;                            // 0x1B58(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         NeighbourDetectionRange;                           // 0x1B60(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1B64[0x4];                                     // 0x1B64(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class ASBZAIBaseCharacter*>            Neighbours;                                        // 0x1B68(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
+	struct FFloatRange                            AvoidanceRandomWeight;                             // 0x1B78(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bIsAvoidanceEnabled;                               // 0x1B88(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1B89[0x3F];                                    // 0x1B89(0x003F)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAnimMontage*                           PlayingAgilityMontage;                             // 0x1BC8(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1BD0[0x8];                                     // 0x1BD0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bCanDoEvadeDuringPathing;                          // 0x1BD8(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bCanDoEvades;                                      // 0x1BD9(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1BDA[0x6];                                     // 0x1BDA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         AdditiveBaseEyeHeightTickRate;                     // 0x1BE0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         CivilianNearRange;                                 // 0x1BE4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1BE8[0x11];                                    // 0x1BE8(0x0011)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bIsSlowedAllowed;                                  // 0x1BF9(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1BFA[0x1E];                                    // 0x1BFA(0x001E)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZDamageStatusMarkerDataAsset*        DamageStatusMarkerAsset;                           // 0x1C18(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	void BP_OnTagReactionPlayed();
@@ -8347,146 +8349,146 @@ public:
 DUMPER7_ASSERTS_ISBZMarkableInterface;
 
 // Class Starbreeze.SBZAICharacter
-// 0x0620 (0x2230 - 0x1C10)
-class ASBZAICharacter final : public ASBZAIBaseCharacter, public ISBZAIVisualDetectorInterface, public ISBZMarkableInterface, public MIPad::Pad<0x38, 0x1C58>, public ISBZAutoAimInterface
+// 0x0620 (0x2240 - 0x1C20)
+class ASBZAICharacter : public ASBZAIBaseCharacter, public ISBZAIVisualDetectorInterface, public ISBZMarkableInterface, public MIPad::Pad<0x38, 0x1C68>, public ISBZAutoAimInterface
 {
 public:
-	struct FGameplayTagContainer                  BlockGoDownTagContainer;                           // 0x1C60(0x0020)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  StunTagContainer;                                  // 0x1C80(0x0020)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	struct FGameplayTagContainer                  OperatorHackedTagContainer;                        // 0x1CA0(0x0020)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	class FName                                   BulletMagnetismSocketName;                         // 0x1CC0(0x000C)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CCC[0x4];                                     // 0x1CCC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class FName>                           StickyAimSocketNameArray;                          // 0x1CD0(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1CE0[0x48];                                    // 0x1CE0(0x0048)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(ESBZAIBehaviorCategory OldCategory, ESBZAIBehaviorCategory NewCategory)> OnBehaviorCategoryChanged; // 0x1D28(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class ASBZAICharacter* Character)> OnHostageReleasedDelegate;      // 0x1D38(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class ASBZAICharacter* Character, bool bIsFollowing)> OnHostageFollowStateChanged; // 0x1D48(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class ASBZAICharacter* Character, bool bHogTied)> OnHogTiedChangedDelegate; // 0x1D58(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class ASBZAICharacter* Character, class ASBZCharacter* Instigator, bool bHumanShield)> OnHumanShieldChangedDelegate; // 0x1D68(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void()>              OnPlayerMeleeHitReceived;                          // 0x1D78(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class ASBZAICharacter* Character, bool bIsEnabled, bool bIsFailed)> OnPagerChanged; // 0x1D88(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(class ASBZCharacter* FoundBy)> OnEnabledAsObjectiveDelegate;       // 0x1D98(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintAuthorityOnly, NativeAccessSpecifierPublic)
-	float                                         DownOnGroundEyeHeight;                             // 0x1DA8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         HostageState;                                      // 0x1DAC(0x0001)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bIsSurrendered;                                    // 0x1DAD(0x0001)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	ESBZAIBehaviorCategory                        CurrentBehaviorCategory;                           // 0x1DAE(0x0001)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1DAF[0x1];                                     // 0x1DAF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZSensorComponent*                    SensorComponent;                                   // 0x1DB0(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZShoutTargetComponent*               ShoutTargetComponent;                              // 0x1DB8(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZAIEquipmentData*                    EquipmentData;                                     // 0x1DC0(0x0008)(Edit, Net, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZHumanShieldData*                    HumanShieldData;                                   // 0x1DC8(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZHumanShieldData*                    SurrenderedHumanShieldData;                        // 0x1DD0(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZAIUtilityData*                      SurrenderedUtilityData;                            // 0x1DD8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class ASBZAmmoPickup>             AmmoPickupAsset;                                   // 0x1DE0(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TArray<TSubclassOf<class ASBZPlaceableCharges>> PlaceablePickupAssetArray;                       // 0x1DE8(0x0010)(Edit, ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	float                                         PlaceableSpawnForwardOffset;                       // 0x1DF8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1DFC[0x4];                                     // 0x1DFC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<TSubclassOf<class ASBZPlaceableCharges>> TradeHostagePickupAssetArray;                    // 0x1E00(0x0010)(Edit, ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	class UActorComponent*                        AlertnessDataComponent;                            // 0x1E10(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZMarkerComponent*                    MarkerComponent;                                   // 0x1E18(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TWeakObjectPtr<class AActor>                  CurrentSuspiciousTarget;                           // 0x1E20(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZHelmetPopper*                       HelmetPopper;                                      // 0x1E28(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZSpecialAIComponent*                 SpecialType;                                       // 0x1E30(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UPhysicalAnimationComponent*            PhysicalAnimationComponent;                        // 0x1E38(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bCanRunWhileFocusing;                              // 0x1E40(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bShouldTelegraphAttack;                            // 0x1E41(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1E42[0x2];                                     // 0x1E42(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         PreferredCoverDist;                                // 0x1E44(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TMap<ESBZInteractionAction, TSubclassOf<class USBZAIAction>> InteractionActions;                 // 0x1E48(0x0050)(Edit, DisableEditOnInstance, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	class USBZOutlineAsset*                       TradeOutline;                                      // 0x1E98(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZOutlineAsset*                       ReleasedOutline;                                   // 0x1EA0(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZOutlineAsset*                       ObjectiveOutline;                                  // 0x1EA8(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZMarkerDataAsset*                    ObjectiveMarker;                                   // 0x1EB0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FVector                                ObjectiveMarkerOffset;                             // 0x1EB8(0x0018)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class FName                                   ObjectiveMarkerSocketName;                         // 0x1ED0(0x000C)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	ESBZRoomLabel                                 StartRoomLabel;                                    // 0x1EDC(0x0004)(Edit, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1EE0[0x10];                                    // 0x1EE0(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
-	uint8                                         AsObjectiveState;                                  // 0x1EF0(0x0001)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1EF1[0x7];                                     // 0x1EF1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZVariationSetData*                   VariationData;                                     // 0x1EF8(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FInt32Interval                         VariationCategoryIndexIntervals[0x3];              // 0x1F00(0x0008)(Edit, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class ASBZCharacter*                          LastInteractorCharacter;                           // 0x1F18(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         ShotBlockedDownTime;                               // 0x1F20(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         ShotBlockedBreakFollowDownDelay;                   // 0x1F24(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         ShotBlockedBreakFollowDownTimer;                   // 0x1F28(0x0004)(Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1F2C[0x14];                                    // 0x1F2C(0x0014)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         HumanShieldExitTime;                               // 0x1F40(0x0004)(Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         HumanShieldTriggerVolumeTimeout;                   // 0x1F44(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class UNavigationQueryFilter>     SurrenderedNavFilter;                              // 0x1F48(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TArray<struct FSBZTagStanceMapping>           TagToStanceMappingTable;                           // 0x1F50(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	uint8                                         DialogAllowedBehaviorCategory;                     // 0x1F60(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bTelegraphAttack;                                  // 0x1F61(0x0001)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1F62[0x6];                                     // 0x1F62(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZVoiceCommentDataAsset*              FireWeaponComment;                                 // 0x1F68(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class USBZVoiceCommentDataAsset*              OnKilledComment;                                   // 0x1F70(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class USBZVoiceCommentDataAsset*              TauntComment;                                      // 0x1F78(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class USBZVoiceCommentDataAsset*              HumanShieldTaken;                                  // 0x1F80(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class USBZVoiceCommentDataAsset*              HumanShieldReleased;                               // 0x1F88(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TSubclassOf<class ASBZAIPointOfInterestDeadBody> DeadBodyPOIClass;                               // 0x1F90(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TSubclassOf<class ASBZAIPointOfInterest>      HostagePOIClass;                                   // 0x1F98(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TSubclassOf<class ASBZAIPointOfInterest>      HumanShieldPOIClass;                               // 0x1FA0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class ASBZAIPointOfInterestDeadBody*          DeadBodyPOIInstance;                               // 0x1FA8(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class ASBZAIPointOfInterest*                  HostagePOIInstance;                                // 0x1FB0(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class ASBZAIPointOfInterest*                  HumanShieldPOIInstance;                            // 0x1FB8(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1FC0[0x14];                                    // 0x1FC0(0x0014)(Fixing Size After Last Property [ Dumper-7 ])
-	uint8                                         BitPad_1FD4_0 : 1;                                 // 0x1FD4(0x0001)(Fixing Bit-Field Size Between Bits [ Dumper-7 ])
-	uint8                                         bIsValidHumanShield : 1;                           // 0x1FD4(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         bIsPagerEnabled : 1;                               // 0x1FD4(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         bIsPagerEnabledOnce : 1;                           // 0x1FD4(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Edit, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         bIsCarriedKillInteraction : 1;                     // 0x1FD4(0x0001)(BitIndex: 0x04, PropSize: 0x0001 (Edit, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         bIsBeingHogTied : 1;                               // 0x1FD4(0x0001)(BitIndex: 0x05, PropSize: 0x0001 (Edit, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         bHasBeenHogtied : 1;                               // 0x1FD4(0x0001)(BitIndex: 0x06, PropSize: 0x0001 (Edit, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         bIsInDownOnGroundPose : 1;                         // 0x1FD4(0x0001)(BitIndex: 0x07, PropSize: 0x0001 (Edit, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         bIsPagerSnatched : 1;                              // 0x1FD5(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         bIsScramblerSignalScanSkillActive : 1;             // 0x1FD5(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         bHasGuardBehavior : 1;                             // 0x1FD5(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         bIsHogTiedOnce : 1;                                // 0x1FD5(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Edit, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         bIsDownOnGroundAllowed : 1;                        // 0x1FD5(0x0001)(BitIndex: 0x04, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         bIsHumanShieldAllowed : 1;                         // 0x1FD5(0x0001)(BitIndex: 0x05, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         bIsHumanShieldTriggerVolume : 1;                   // 0x1FD5(0x0001)(BitIndex: 0x06, PropSize: 0x0001 (Edit, Net, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
-	uint8                                         Pad_1FD6[0x2];                                     // 0x1FD6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZPlayerState*                        LastTieHandsInstigatorPlayerState;                 // 0x1FD8(0x0008)(Edit, ZeroConstructor, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class USBZDialogDataAsset*                    CurrentAnswerPagerDialog;                          // 0x1FE0(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class USBZPagerData*                          PagerData;                                         // 0x1FE8(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	int32                                         PagerTriggeredCount;                               // 0x1FF0(0x0004)(Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1FF4[0x14];                                    // 0x1FF4(0x0014)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZInteractorComponent*                PagerSnatchedInteractor;                           // 0x2008(0x0008)(Edit, ExportObject, ZeroConstructor, Transient, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TSubclassOf<class UNavigationQueryFilter>     NavQueryFilterOverride;                            // 0x2010(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2018[0x30];                                    // 0x2018(0x0030)(Fixing Size After Last Property [ Dumper-7 ])
-	uint16                                        ValidTargetDefeatStates;                           // 0x2048(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bCanShootDownedIfFired;                            // 0x204A(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_204B[0x5];                                     // 0x204B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class UGameplayEffect>            HackedGameplayEffectClass;                         // 0x2050(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class ASBZCarriedStaticInteractionActor*      AttachedLoot;                                      // 0x2058(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class ASBZLifeActionTriggerVolume*            CurrentLifeActionTriggerVolume;                    // 0x2060(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2068[0x1D];                                    // 0x2068(0x001D)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          bIsPendingPagerEnabled;                            // 0x2085(0x0001)(Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bIsPagerScrambled;                                 // 0x2086(0x0001)(Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2087[0x9];                                     // 0x2087(0x0009)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZPlayerCharacter*                    LocallyDamagedByPlayer;                            // 0x2090(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class ASBZCharacter*                          PendingMeleeDownOnGoundInstigator;                 // 0x2098(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class ASBZPlayerState*                        SurrenderInstigatorPlayerState;                    // 0x20A0(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	ESBZAICharacterVariationCategory              VariationCategory;                                 // 0x20A8(0x0001)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_20A9[0x7];                                     // 0x20A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 MarkGuard;                                         // 0x20B0(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class FString                                 MarkSpecials;                                      // 0x20C0(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class FString                                 MarkEnemy;                                         // 0x20D0(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class FString                                 StatisticsMarkEnemyCamera;                         // 0x20E0(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class FString                                 StatisticsMarkEnemyMicroCamera;                    // 0x20F0(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bCanBeSeenByThermalScope;                          // 0x2100(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2101[0x7];                                     // 0x2101(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TSet<uint64>                                  SkillPinPullerDoneSet;                             // 0x2108(0x0050)(Edit, Transient, EditConst, NativeAccessSpecifierPrivate)
-	TSet<uint64>                                  CQCSpecialistSoftAssetsDoneSet;                    // 0x2158(0x0050)(Edit, Transient, EditConst, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_21A8[0x8];                                     // 0x21A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class AController*                            KillInstigatorController;                          // 0x21B0(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FGameplayTagContainer                  BlockGoDownTagContainer;                           // 0x1C70(0x0020)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  StunTagContainer;                                  // 0x1C90(0x0020)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	struct FGameplayTagContainer                  OperatorHackedTagContainer;                        // 0x1CB0(0x0020)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	class FName                                   BulletMagnetismSocketName;                         // 0x1CD0(0x000C)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1CDC[0x4];                                     // 0x1CDC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class FName>                           StickyAimSocketNameArray;                          // 0x1CE0(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1CF0[0x48];                                    // 0x1CF0(0x0048)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(ESBZAIBehaviorCategory OldCategory, ESBZAIBehaviorCategory NewCategory)> OnBehaviorCategoryChanged; // 0x1D38(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class ASBZAICharacter* Character)> OnHostageReleasedDelegate;      // 0x1D48(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class ASBZAICharacter* Character, bool bIsFollowing)> OnHostageFollowStateChanged; // 0x1D58(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class ASBZAICharacter* Character, bool bHogTied)> OnHogTiedChangedDelegate; // 0x1D68(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class ASBZAICharacter* Character, class ASBZCharacter* Instigator, bool bHumanShield)> OnHumanShieldChangedDelegate; // 0x1D78(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void()>              OnPlayerMeleeHitReceived;                          // 0x1D88(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class ASBZAICharacter* Character, bool bIsEnabled, bool bIsFailed)> OnPagerChanged; // 0x1D98(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class ASBZCharacter* FoundBy)> OnEnabledAsObjectiveDelegate;       // 0x1DA8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintAuthorityOnly, NativeAccessSpecifierPublic)
+	float                                         DownOnGroundEyeHeight;                             // 0x1DB8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         HostageState;                                      // 0x1DBC(0x0001)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bIsSurrendered;                                    // 0x1DBD(0x0001)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	ESBZAIBehaviorCategory                        CurrentBehaviorCategory;                           // 0x1DBE(0x0001)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1DBF[0x1];                                     // 0x1DBF(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZSensorComponent*                    SensorComponent;                                   // 0x1DC0(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZShoutTargetComponent*               ShoutTargetComponent;                              // 0x1DC8(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZAIEquipmentData*                    EquipmentData;                                     // 0x1DD0(0x0008)(Edit, Net, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZHumanShieldData*                    HumanShieldData;                                   // 0x1DD8(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZHumanShieldData*                    SurrenderedHumanShieldData;                        // 0x1DE0(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZAIUtilityData*                      SurrenderedUtilityData;                            // 0x1DE8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class ASBZAmmoPickup>             AmmoPickupAsset;                                   // 0x1DF0(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TArray<TSubclassOf<class ASBZPlaceableCharges>> PlaceablePickupAssetArray;                       // 0x1DF8(0x0010)(Edit, ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	float                                         PlaceableSpawnForwardOffset;                       // 0x1E08(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1E0C[0x4];                                     // 0x1E0C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<TSubclassOf<class ASBZPlaceableCharges>> TradeHostagePickupAssetArray;                    // 0x1E10(0x0010)(Edit, ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	class UActorComponent*                        AlertnessDataComponent;                            // 0x1E20(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZMarkerComponent*                    MarkerComponent;                                   // 0x1E28(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TWeakObjectPtr<class AActor>                  CurrentSuspiciousTarget;                           // 0x1E30(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZHelmetPopper*                       HelmetPopper;                                      // 0x1E38(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZSpecialAIComponent*                 SpecialType;                                       // 0x1E40(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UPhysicalAnimationComponent*            PhysicalAnimationComponent;                        // 0x1E48(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bCanRunWhileFocusing;                              // 0x1E50(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bShouldTelegraphAttack;                            // 0x1E51(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1E52[0x2];                                     // 0x1E52(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         PreferredCoverDist;                                // 0x1E54(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TMap<ESBZInteractionAction, TSubclassOf<class USBZAIAction>> InteractionActions;                 // 0x1E58(0x0050)(Edit, DisableEditOnInstance, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	class USBZOutlineAsset*                       TradeOutline;                                      // 0x1EA8(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZOutlineAsset*                       ReleasedOutline;                                   // 0x1EB0(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZOutlineAsset*                       ObjectiveOutline;                                  // 0x1EB8(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZMarkerDataAsset*                    ObjectiveMarker;                                   // 0x1EC0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FVector                                ObjectiveMarkerOffset;                             // 0x1EC8(0x0018)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class FName                                   ObjectiveMarkerSocketName;                         // 0x1EE0(0x000C)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	ESBZRoomLabel                                 StartRoomLabel;                                    // 0x1EEC(0x0004)(Edit, ZeroConstructor, DisableEditOnTemplate, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1EF0[0x10];                                    // 0x1EF0(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         AsObjectiveState;                                  // 0x1F00(0x0001)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1F01[0x7];                                     // 0x1F01(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZVariationSetData*                   VariationData;                                     // 0x1F08(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FInt32Interval                         VariationCategoryIndexIntervals[0x3];              // 0x1F10(0x0008)(Edit, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class ASBZCharacter*                          LastInteractorCharacter;                           // 0x1F28(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         ShotBlockedDownTime;                               // 0x1F30(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         ShotBlockedBreakFollowDownDelay;                   // 0x1F34(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         ShotBlockedBreakFollowDownTimer;                   // 0x1F38(0x0004)(Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1F3C[0x14];                                    // 0x1F3C(0x0014)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         HumanShieldExitTime;                               // 0x1F50(0x0004)(Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         HumanShieldTriggerVolumeTimeout;                   // 0x1F54(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class UNavigationQueryFilter>     SurrenderedNavFilter;                              // 0x1F58(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TArray<struct FSBZTagStanceMapping>           TagToStanceMappingTable;                           // 0x1F60(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	uint8                                         DialogAllowedBehaviorCategory;                     // 0x1F70(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bTelegraphAttack;                                  // 0x1F71(0x0001)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1F72[0x6];                                     // 0x1F72(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZVoiceCommentDataAsset*              FireWeaponComment;                                 // 0x1F78(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USBZVoiceCommentDataAsset*              OnKilledComment;                                   // 0x1F80(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USBZVoiceCommentDataAsset*              TauntComment;                                      // 0x1F88(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USBZVoiceCommentDataAsset*              HumanShieldTaken;                                  // 0x1F90(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USBZVoiceCommentDataAsset*              HumanShieldReleased;                               // 0x1F98(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TSubclassOf<class ASBZAIPointOfInterestDeadBody> DeadBodyPOIClass;                               // 0x1FA0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TSubclassOf<class ASBZAIPointOfInterest>      HostagePOIClass;                                   // 0x1FA8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TSubclassOf<class ASBZAIPointOfInterest>      HumanShieldPOIClass;                               // 0x1FB0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class ASBZAIPointOfInterestDeadBody*          DeadBodyPOIInstance;                               // 0x1FB8(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class ASBZAIPointOfInterest*                  HostagePOIInstance;                                // 0x1FC0(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class ASBZAIPointOfInterest*                  HumanShieldPOIInstance;                            // 0x1FC8(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1FD0[0x14];                                    // 0x1FD0(0x0014)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         BitPad_1FE4_0 : 1;                                 // 0x1FE4(0x0001)(Fixing Bit-Field Size Between Bits [ Dumper-7 ])
+	uint8                                         bIsValidHumanShield : 1;                           // 0x1FE4(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
+	uint8                                         bIsPagerEnabled : 1;                               // 0x1FE4(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
+	uint8                                         bIsPagerEnabledOnce : 1;                           // 0x1FE4(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Edit, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
+	uint8                                         bIsCarriedKillInteraction : 1;                     // 0x1FE4(0x0001)(BitIndex: 0x04, PropSize: 0x0001 (Edit, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
+	uint8                                         bIsBeingHogTied : 1;                               // 0x1FE4(0x0001)(BitIndex: 0x05, PropSize: 0x0001 (Edit, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
+	uint8                                         bHasBeenHogtied : 1;                               // 0x1FE4(0x0001)(BitIndex: 0x06, PropSize: 0x0001 (Edit, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
+	uint8                                         bIsInDownOnGroundPose : 1;                         // 0x1FE4(0x0001)(BitIndex: 0x07, PropSize: 0x0001 (Edit, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
+	uint8                                         bIsPagerSnatched : 1;                              // 0x1FE5(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
+	uint8                                         bIsScramblerSignalScanSkillActive : 1;             // 0x1FE5(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
+	uint8                                         bHasGuardBehavior : 1;                             // 0x1FE5(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (Edit, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
+	uint8                                         bIsHogTiedOnce : 1;                                // 0x1FE5(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (Edit, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
+	uint8                                         bIsDownOnGroundAllowed : 1;                        // 0x1FE5(0x0001)(BitIndex: 0x04, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
+	uint8                                         bIsHumanShieldAllowed : 1;                         // 0x1FE5(0x0001)(BitIndex: 0x05, PropSize: 0x0001 (Edit, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
+	uint8                                         bIsHumanShieldTriggerVolume : 1;                   // 0x1FE5(0x0001)(BitIndex: 0x06, PropSize: 0x0001 (Edit, Net, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
+	uint8                                         Pad_1FE6[0x2];                                     // 0x1FE6(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZPlayerState*                        LastTieHandsInstigatorPlayerState;                 // 0x1FE8(0x0008)(Edit, ZeroConstructor, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USBZDialogDataAsset*                    CurrentAnswerPagerDialog;                          // 0x1FF0(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USBZPagerData*                          PagerData;                                         // 0x1FF8(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	int32                                         PagerTriggeredCount;                               // 0x2000(0x0004)(Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_2004[0x14];                                    // 0x2004(0x0014)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZInteractorComponent*                PagerSnatchedInteractor;                           // 0x2018(0x0008)(Edit, ExportObject, ZeroConstructor, Transient, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TSubclassOf<class UNavigationQueryFilter>     NavQueryFilterOverride;                            // 0x2020(0x0008)(ZeroConstructor, Transient, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_2028[0x30];                                    // 0x2028(0x0030)(Fixing Size After Last Property [ Dumper-7 ])
+	uint16                                        ValidTargetDefeatStates;                           // 0x2058(0x0002)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bCanShootDownedIfFired;                            // 0x205A(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_205B[0x5];                                     // 0x205B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class UGameplayEffect>            HackedGameplayEffectClass;                         // 0x2060(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class ASBZCarriedStaticInteractionActor*      AttachedLoot;                                      // 0x2068(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class ASBZLifeActionTriggerVolume*            CurrentLifeActionTriggerVolume;                    // 0x2070(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_2078[0x1D];                                    // 0x2078(0x001D)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bIsPendingPagerEnabled;                            // 0x2095(0x0001)(Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bIsPagerScrambled;                                 // 0x2096(0x0001)(Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_2097[0x9];                                     // 0x2097(0x0009)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZPlayerCharacter*                    LocallyDamagedByPlayer;                            // 0x20A0(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class ASBZCharacter*                          PendingMeleeDownOnGoundInstigator;                 // 0x20A8(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class ASBZPlayerState*                        SurrenderInstigatorPlayerState;                    // 0x20B0(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	ESBZAICharacterVariationCategory              VariationCategory;                                 // 0x20B8(0x0001)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_20B9[0x7];                                     // 0x20B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 MarkGuard;                                         // 0x20C0(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class FString                                 MarkSpecials;                                      // 0x20D0(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class FString                                 MarkEnemy;                                         // 0x20E0(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class FString                                 StatisticsMarkEnemyCamera;                         // 0x20F0(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class FString                                 StatisticsMarkEnemyMicroCamera;                    // 0x2100(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bCanBeSeenByThermalScope;                          // 0x2110(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_2111[0x7];                                     // 0x2111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TSet<uint64>                                  SkillPinPullerDoneSet;                             // 0x2118(0x0050)(Edit, Transient, EditConst, NativeAccessSpecifierPrivate)
+	TSet<uint64>                                  CQCSpecialistSoftAssetsDoneSet;                    // 0x2168(0x0050)(Edit, Transient, EditConst, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_21B8[0x8];                                     // 0x21B8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FUniqueNetIdRepl>               HackedByPlayerArray;                               // 0x21C0(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_21D0[0x8];                                     // 0x21D0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CurrentOperatorRadioSilenceCount;                  // 0x21D8(0x0004)(Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bEnablePagerAfterOperatorTimeout;                  // 0x21DC(0x0001)(Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_21DD[0x1B];                                    // 0x21DD(0x001B)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZKilledContextData                  KillContextData;                                   // 0x21F8(0x0020)(Transient, NoDestructor, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2218[0x18];                                    // 0x2218(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class AController*                            KillInstigatorController;                          // 0x21C0(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_21C8[0x8];                                     // 0x21C8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FUniqueNetIdRepl>               HackedByPlayerArray;                               // 0x21D0(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_21E0[0x8];                                     // 0x21E0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CurrentOperatorRadioSilenceCount;                  // 0x21E8(0x0004)(Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bEnablePagerAfterOperatorTimeout;                  // 0x21EC(0x0001)(Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_21ED[0x1B];                                    // 0x21ED(0x001B)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZKilledContextData                  KillContextData;                                   // 0x2208(0x0020)(Transient, NoDestructor, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_2228[0x18];                                    // 0x2228(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ClearStartLocationAndRotation();
@@ -8725,7 +8727,7 @@ DUMPER7_ASSERTS_ASBZFragGrenade;
 
 // Class Starbreeze.SBZFragGrenadeCluster
 // 0x0010 (0x0790 - 0x0780)
-class ASBZFragGrenadeCluster final : public ASBZFragGrenade
+class ASBZFragGrenadeCluster : public ASBZFragGrenade
 {
 public:
 	float                                         AdditionalRandomDelay;                             // 0x0780(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -8949,7 +8951,7 @@ DUMPER7_ASSERTS_USBZAIOrder_TacticalMoveTo;
 
 // Class Starbreeze.SBZAIOrder_Attack
 // 0x0000 (0x0258 - 0x0258)
-class USBZAIOrder_Attack final : public USBZAIOrder_TacticalMoveTo
+class USBZAIOrder_Attack : public USBZAIOrder_TacticalMoveTo
 {
 public:
 	void OnTargetDefeatStateChanged(class ASBZPlayerState* InSBZPlayerState, EPD3DefeatState OldDefeatState, EPD3DefeatState InDefeatState);
@@ -9709,7 +9711,7 @@ DUMPER7_ASSERTS_USBZAccelByteServerLifeCycle;
 
 // Class Starbreeze.SBZCuttableWidget
 // 0x0000 (0x02F0 - 0x02F0)
-class USBZCuttableWidget final : public UUserWidget
+class USBZCuttableWidget : public UUserWidget
 {
 public:
 	void OnWidgetCut(float AtSegment);
@@ -10267,7 +10269,7 @@ DUMPER7_ASSERTS_ASBZAIController;
 
 // Class Starbreeze.SBZAICrewController
 // 0x0048 (0x07A0 - 0x0758)
-class ASBZAICrewController final : public ASBZAIController
+class ASBZAICrewController : public ASBZAIController
 {
 public:
 	class ASBZAICrewState*                        CrewState;                                         // 0x0758(0x0008)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -10376,7 +10378,7 @@ DUMPER7_ASSERTS_USBZMeleeAbility;
 
 // Class Starbreeze.SBZAICloakerMeleeAbility
 // 0x0070 (0x0560 - 0x04F0)
-class USBZAICloakerMeleeAbility final : public USBZMeleeAbility
+class USBZAICloakerMeleeAbility : public USBZMeleeAbility
 {
 public:
 	float                                         HitAcceptanceRadius;                               // 0x04F0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -10731,7 +10733,7 @@ DUMPER7_ASSERTS_USBZExplosionDamageType;
 
 // Class Starbreeze.SBZSentryExplosionDamageType
 // 0x0000 (0x0090 - 0x0090)
-class USBZSentryExplosionDamageType final : public USBZExplosionDamageType
+class USBZSentryExplosionDamageType : public USBZExplosionDamageType
 {
 public:
 	static class UClass* StaticClass()
@@ -10811,7 +10813,7 @@ DUMPER7_ASSERTS_USBZActorContainerLibrary;
 
 // Class Starbreeze.SBZActorDisposer
 // 0x0030 (0x0358 - 0x0328)
-class ASBZActorDisposer final : public AActor
+class ASBZActorDisposer : public AActor
 {
 public:
 	class USBZInteractableComponent*              InteractableComponent;                             // 0x0328(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -10905,7 +10907,7 @@ DUMPER7_ASSERTS_USBZAIAction_Order;
 
 // Class Starbreeze.SBZAIAction_ThrowGrenade
 // 0x0008 (0x00F8 - 0x00F0)
-class USBZAIAction_ThrowGrenade final : public USBZAIAction_Order
+class USBZAIAction_ThrowGrenade : public USBZAIAction_Order
 {
 public:
 	uint8                                         Pad_F0[0x8];                                       // 0x00F0(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -11552,7 +11554,7 @@ DUMPER7_ASSERTS_ISBZExplosivePropInterface;
 
 // Class Starbreeze.SBZCookingStation
 // 0x0280 (0x0610 - 0x0390)
-class ASBZCookingStation final : public ASBZMultiBagGenerator, public ISBZExplosive, public MIPad::Pad<0x20, 0x3B8>, public ISBZHurtReactionDataInterface, public ISBZExplosivePropInterface
+class ASBZCookingStation : public ASBZMultiBagGenerator, public ISBZExplosive, public MIPad::Pad<0x20, 0x3B8>, public ISBZHurtReactionDataInterface, public ISBZExplosivePropInterface
 {
 public:
 	TMulticastInlineDelegate<void(int32 NewIngredientIndex)> OnRequiredIngredientChanged;            // 0x03C8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintAuthorityOnly, NativeAccessSpecifierPublic)
@@ -11743,7 +11745,7 @@ DUMPER7_ASSERTS_USBZSkillCasingSpeedFreakAced;
 
 // Class Starbreeze.SBZCoverPointManager
 // 0x00B0 (0x00E0 - 0x0030)
-class USBZCoverPointManager final : public UObject
+class USBZCoverPointManager : public UObject
 {
 public:
 	uint8                                         Pad_30[0xB0];                                      // 0x0030(0x00B0)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -12220,7 +12222,7 @@ DUMPER7_ASSERTS_USBZAICharacterLinkedAnimation;
 
 // Class Starbreeze.SBZAIArmedCharacterLinkedAnimation
 // 0x0060 (0x0500 - 0x04A0)
-class USBZAIArmedCharacterLinkedAnimation final : public USBZAICharacterLinkedAnimation
+class USBZAIArmedCharacterLinkedAnimation : public USBZAICharacterLinkedAnimation
 {
 public:
 	uint8                                         bIsInCover : 1;                                    // 0x0498(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (BlueprintVisible, BlueprintReadOnly, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
@@ -12551,7 +12553,7 @@ DUMPER7_ASSERTS_ISBZArmamentOwnerInterface;
 
 // Class Starbreeze.SBZAerialVehicle
 // 0x0510 (0x08E0 - 0x03D0)
-class ASBZAerialVehicle final : public APawn, public ISBZVehicleInterface, public ISBZPawnInterface, public MIPad::Pad<0x68, 0x448>, public ISBZArmamentOwnerInterface
+class ASBZAerialVehicle : public APawn, public ISBZVehicleInterface, public ISBZPawnInterface, public MIPad::Pad<0x68, 0x448>, public ISBZArmamentOwnerInterface
 {
 public:
 	TMulticastInlineDelegate<void(class ASBZAerialVehicle* Vehicle)> OnBeginStop;                    // 0x0450(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -12734,7 +12736,7 @@ DUMPER7_ASSERTS_USBZShiftAmmoNotifyState;
 
 // Class Starbreeze.SBZAerialVehicleAnimation
 // 0x0000 (0x0BB0 - 0x0BB0)
-class USBZAerialVehicleAnimation final : public USBZVehicleAnimation
+class USBZAerialVehicleAnimation : public USBZVehicleAnimation
 {
 public:
 	static class UClass* StaticClass()
@@ -13464,7 +13466,7 @@ DUMPER7_ASSERTS_ASBZRangedWeapon;
 
 // Class Starbreeze.SBZSawWeapon
 // 0x0000 (0x0810 - 0x0810)
-class ASBZSawWeapon final : public ASBZRangedWeapon
+class ASBZSawWeapon : public ASBZRangedWeapon
 {
 public:
 	static class UClass* StaticClass()
@@ -14296,7 +14298,7 @@ DUMPER7_ASSERTS_USBZAIFireRangedWeaponAbility;
 
 // Class Starbreeze.SBZAIFireTaserAbility
 // 0x0028 (0x0570 - 0x0548)
-class USBZAIFireTaserAbility final : public USBZAIFireRangedWeaponAbility
+class USBZAIFireTaserAbility : public USBZAIFireRangedWeaponAbility
 {
 public:
 	class ASBZPlayerCharacter*                    TasedCharacter;                                    // 0x0548(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -14614,7 +14616,7 @@ DUMPER7_ASSERTS_ASBZPlaceableArmorCharges;
 
 // Class Starbreeze.SBZArmorBag
 // 0x0000 (0x06A0 - 0x06A0)
-class ASBZArmorBag final : public ASBZPlaceableArmorCharges
+class ASBZArmorBag : public ASBZPlaceableArmorCharges
 {
 public:
 	int32                                         ArmorChunkSizePerCharge;                           // 0x0698(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -14702,7 +14704,7 @@ DUMPER7_ASSERTS_ISBZRoomConnectorInterface;
 
 // Class Starbreeze.SBZAgilityNavLink
 // 0x0080 (0x04A0 - 0x0420)
-class ASBZAgilityNavLink final : public ASBZSmartNavLink, public ISBZAgilityTrajectoryInterface, public ISBZRoomConnectorInterface
+class ASBZAgilityNavLink : public ASBZSmartNavLink, public ISBZAgilityTrajectoryInterface, public ISBZRoomConnectorInterface
 {
 public:
 	class ASBZRoomVolume*                         LeftRoom;                                          // 0x0430(0x0008)(Edit, ZeroConstructor, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -14887,7 +14889,7 @@ DUMPER7_ASSERTS_ISBZViewTargetCollectionInterface;
 
 // Class Starbreeze.SBZSecurityRoom
 // 0x00C0 (0x04B8 - 0x03F8)
-class ASBZSecurityRoom final : public ASBZPawnSpawnPredefined, public ISBZViewTargetCollectionInterface
+class ASBZSecurityRoom : public ASBZPawnSpawnPredefined, public ISBZViewTargetCollectionInterface
 {
 public:
 	uint8                                         Pad_400[0x8];                                      // 0x0400(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -15020,7 +15022,7 @@ DUMPER7_ASSERTS_USBZSkillStealthSpecOnTheRunAced;
 
 // Class Starbreeze.SBZCodeNote
 // 0x0070 (0x0398 - 0x0328)
-class ASBZCodeNote final : public AActor, public ISBZCodeViewerInterface, public ISBZObjectiveInformationInterface
+class ASBZCodeNote : public AActor, public ISBZCodeViewerInterface, public ISBZObjectiveInformationInterface
 {
 public:
 	uint8                                         Pad_338[0x18];                                     // 0x0338(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
@@ -15169,7 +15171,7 @@ DUMPER7_ASSERTS_USBZMainMenuSuitCustomization;
 
 // Class Starbreeze.SBZAgilityPawnSpawnPredefined
 // 0x0098 (0x0490 - 0x03F8)
-class ASBZAgilityPawnSpawnPredefined final : public ASBZPawnSpawnPredefined, public ISBZAgilityTrajectoryInterface, public INavLinkCustomInterface
+class ASBZAgilityPawnSpawnPredefined : public ASBZPawnSpawnPredefined, public ISBZAgilityTrajectoryInterface, public INavLinkCustomInterface
 {
 public:
 	class UAnimMontage*                           ForcedMontage;                                     // 0x0408(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -15548,7 +15550,7 @@ DUMPER7_ASSERTS_USBZAgilityTraversalQueryParams;
 
 // Class Starbreeze.SBZAILifeActionAbility
 // 0x0010 (0x04E0 - 0x04D0)
-class USBZAILifeActionAbility final : public USBZGameplayAbility
+class USBZAILifeActionAbility : public USBZGameplayAbility
 {
 public:
 	TArray<struct FSBZTagStanceMapping>           TagsToPropagateOnEndAbility;                       // 0x04D0(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
@@ -16317,7 +16319,7 @@ DUMPER7_ASSERTS_ASBZInteractableGate;
 
 // Class Starbreeze.SBZInteractableWindow
 // 0x0010 (0x0678 - 0x0668)
-class ASBZInteractableWindow final : public ASBZInteractableGate, public ISBZTraversalDestructibleInterface
+class ASBZInteractableWindow : public ASBZInteractableGate, public ISBZTraversalDestructibleInterface
 {
 public:
 	bool                                          bIsBreakableByPlayerVaulting;                      // 0x0670(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -17426,7 +17428,7 @@ DUMPER7_ASSERTS_USBZAIAction_LookAndComment;
 
 // Class Starbreeze.SBZAIOrder_GoToLure
 // 0x0000 (0x0230 - 0x0230)
-class USBZAIOrder_GoToLure final : public USBZAIOrder_LifeAction
+class USBZAIOrder_GoToLure : public USBZAIOrder_LifeAction
 {
 public:
 	static class UClass* StaticClass()
@@ -18393,7 +18395,7 @@ DUMPER7_ASSERTS_USBZPlayerSpawnAnimationAbility;
 
 // Class Starbreeze.SBZAIOrder_FollowShield
 // 0x0018 (0x0148 - 0x0130)
-class USBZAIOrder_FollowShield final : public USBZAIOrder
+class USBZAIOrder_FollowShield : public USBZAIOrder
 {
 public:
 	float                                         AvoidanceOverride;                                 // 0x0130(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -18418,7 +18420,7 @@ DUMPER7_ASSERTS_USBZAIOrder_FollowShield;
 
 // Class Starbreeze.SBZDualWieldWeapon
 // 0x00C0 (0x08D0 - 0x0810)
-class ASBZDualWieldWeapon final : public ASBZRangedWeapon
+class ASBZDualWieldWeapon : public ASBZRangedWeapon
 {
 public:
 	class FName                                   LeftGunSourceBoneName;                             // 0x0810(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -18518,7 +18520,7 @@ DUMPER7_ASSERTS_USBZSharedPartList;
 
 // Class Starbreeze.SBZConnectedMaintenanceBox
 // 0x0108 (0x0430 - 0x0328)
-class ASBZConnectedMaintenanceBox final : public AActor
+class ASBZConnectedMaintenanceBox : public AActor
 {
 public:
 	TMulticastInlineDelegate<void(bool bSuccessful)> OnMaintenanceBoxComplete;                       // 0x0328(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintAuthorityOnly, NativeAccessSpecifierPublic)
@@ -18649,7 +18651,7 @@ DUMPER7_ASSERTS_USBZMetaDataLoader;
 
 // Class Starbreeze.SBZAIAction_TouchReaction
 // 0x0078 (0x0168 - 0x00F0)
-class USBZAIAction_TouchReaction final : public USBZAIAction_Order
+class USBZAIAction_TouchReaction : public USBZAIAction_Order
 {
 public:
 	class USBZVoiceCommentDataAsset*              PrivateVoiceComment;                               // 0x00F0(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -18708,7 +18710,7 @@ DUMPER7_ASSERTS_USBZAIAgilityAbility;
 
 // Class Starbreeze.SBZAIAnticipateExplosionAbility
 // 0x0028 (0x04F8 - 0x04D0)
-class USBZAIAnticipateExplosionAbility final : public USBZGameplayAbility
+class USBZAIAnticipateExplosionAbility : public USBZGameplayAbility
 {
 public:
 	float                                         DiveRange;                                         // 0x04D0(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -19301,7 +19303,7 @@ DUMPER7_ASSERTS_USBZAttractorPredicate_MaxConcurrentUsers;
 
 // Class Starbreeze.SBZAIAttractorDestruction
 // 0x0058 (0x0380 - 0x0328)
-class ASBZAIAttractorDestruction final : public AActor, public ISBZAIAttractorInterface, public IAISightTargetInterface, public ISBZAgilityObstacleInterface, public ISBZBreakableInterface, public MIPad::Pad<0x18, 0x360>, public ISBZTraversalDestructibleInterface
+class ASBZAIAttractorDestruction : public AActor, public ISBZAIAttractorInterface, public IAISightTargetInterface, public ISBZAgilityObstacleInterface, public ISBZBreakableInterface, public MIPad::Pad<0x18, 0x360>, public ISBZTraversalDestructibleInterface
 {
 public:
 	class USBZPropDamageComponent*                PropDamage;                                        // 0x0368(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -19386,7 +19388,7 @@ DUMPER7_ASSERTS_USBZMusicManager;
 
 // Class Starbreeze.SBZAIAvoidVehicleAbility
 // 0x0010 (0x04E0 - 0x04D0)
-class USBZAIAvoidVehicleAbility final : public USBZGameplayAbility
+class USBZAIAvoidVehicleAbility : public USBZGameplayAbility
 {
 public:
 	class ASBZAIBaseCharacter*                    AICharacter;                                       // 0x04D0(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -19479,7 +19481,7 @@ DUMPER7_ASSERTS_USBZMainMenuPrePlaningLoadoutSelection;
 
 // Class Starbreeze.SBZDecorativeSmokeGrenade
 // 0x0030 (0x0358 - 0x0328)
-class ASBZDecorativeSmokeGrenade final : public AActor
+class ASBZDecorativeSmokeGrenade : public AActor
 {
 public:
 	class UMeshComponent*                         StaticMesh;                                        // 0x0328(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -19935,7 +19937,7 @@ DUMPER7_ASSERTS_ASBZPlayerStart;
 
 // Class Starbreeze.SBZAICloakerFlailAbility
 // 0x0008 (0x04F8 - 0x04F0)
-class USBZAICloakerFlailAbility final : public USBZMeleeAbility
+class USBZAICloakerFlailAbility : public USBZMeleeAbility
 {
 public:
 	class UAnimMontage*                           AbilityMontage;                                    // 0x04F0(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -20169,55 +20171,55 @@ public:
 DUMPER7_ASSERTS_ISBZAIVisualDetectionGeneratorInterface;
 
 // Class Starbreeze.SBZAICrewCharacter
-// 0x01C0 (0x1DD0 - 0x1C10)
-class ASBZAICrewCharacter final : public ASBZAIBaseCharacter, public ISBZAIVisualDetectionGeneratorInterface
+// 0x01C0 (0x1DE0 - 0x1C20)
+class ASBZAICrewCharacter : public ASBZAIBaseCharacter, public ISBZAIVisualDetectionGeneratorInterface
 {
 public:
-	class USBZAICrewEquipmentData*                EquipmentData;                                     // 0x1C18(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class UGameplayEffect>            HealthReplenishEffectClass;                        // 0x1C20(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1C28[0x8];                                     // 0x1C28(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<struct FGameplayTag, float>              TargetPriority;                                    // 0x1C30(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
-	class USBZVoiceCommentDataAsset*              CallComment;                                       // 0x1C80(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZVoiceCommentDataAsset*              HelpComment;                                       // 0x1C88(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         CPD00;                                             // 0x1C90(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         CPD01;                                             // 0x1C91(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1C92[0x6];                                     // 0x1C92(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZAICrewState*                        CrewState;                                         // 0x1C98(0x0008)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, EditConst, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	EPD3DefeatState                               DefeatState;                                       // 0x1CA0(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1CA1[0x1];                                     // 0x1CA1(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	EPD3DefeatState                               OldDefeatState;                                    // 0x1CA2(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1CA3[0xD];                                     // 0x1CA3(0x000D)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DefeatTime;                                        // 0x1CB0(0x0004)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1CB4[0x14];                                    // 0x1CB4(0x0014)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMarkerDataAsset*                    ReviveMarker;                                      // 0x1CC8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class USBZMarkerDataAsset*                    TasedMarker;                                       // 0x1CD0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class USBZMarkerDataAsset*                    CuffedMarker;                                      // 0x1CD8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class USBZMarkerDataAsset*                    SubduedMarker;                                     // 0x1CE0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1CE8[0x8];                                     // 0x1CE8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZOutlineAsset*                       DownedOutline;                                     // 0x1CF0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USBZAICrewEquipmentData*                EquipmentData;                                     // 0x1C28(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class UGameplayEffect>            HealthReplenishEffectClass;                        // 0x1C30(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1C38[0x8];                                     // 0x1C38(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<struct FGameplayTag, float>              TargetPriority;                                    // 0x1C40(0x0050)(Edit, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
+	class USBZVoiceCommentDataAsset*              CallComment;                                       // 0x1C90(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZVoiceCommentDataAsset*              HelpComment;                                       // 0x1C98(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         CPD00;                                             // 0x1CA0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         CPD01;                                             // 0x1CA1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1CA2[0x6];                                     // 0x1CA2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZAICrewState*                        CrewState;                                         // 0x1CA8(0x0008)(Edit, Net, ZeroConstructor, DisableEditOnTemplate, EditConst, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	EPD3DefeatState                               DefeatState;                                       // 0x1CB0(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1CB1[0x1];                                     // 0x1CB1(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	EPD3DefeatState                               OldDefeatState;                                    // 0x1CB2(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1CB3[0xD];                                     // 0x1CB3(0x000D)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DefeatTime;                                        // 0x1CC0(0x0004)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1CC4[0x14];                                    // 0x1CC4(0x0014)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMarkerDataAsset*                    ReviveMarker;                                      // 0x1CD8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USBZMarkerDataAsset*                    TasedMarker;                                       // 0x1CE0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USBZMarkerDataAsset*                    CuffedMarker;                                      // 0x1CE8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USBZMarkerDataAsset*                    SubduedMarker;                                     // 0x1CF0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_1CF8[0x8];                                     // 0x1CF8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZVoiceCommentDataAsset*              RevivedComment;                                    // 0x1D00(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class USBZVoiceCommentDataAsset*              UncuffedComment;                                   // 0x1D08(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class USBZDialogDataAsset*                    DownedDialog;                                      // 0x1D10(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class USBZDialogDataAsset*                    InCustodyDialog;                                   // 0x1D18(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class USBZDialogDataAsset*                    BackFromCustodyDialog;                             // 0x1D20(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class USBZDialogDataAsset*                    CuffedDialog;                                      // 0x1D28(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class USBZDialogDataAsset*                    TasedDialog;                                       // 0x1D30(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class USBZDialogDataAsset*                    SubduedDialog;                                     // 0x1D38(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class ASBZCharacter*                          CurrentWard;                                       // 0x1D40(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bIsMaskOn;                                         // 0x1D48(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bIsLoadoutLoaded;                                  // 0x1D49(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1D4A[0x16];                                    // 0x1D4A(0x0016)(Fixing Size After Last Property [ Dumper-7 ])
-	ESBZVoicePriority                             MarkingVoicePriority;                              // 0x1D60(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1D61[0x3];                                     // 0x1D61(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         MarkingDuration;                                   // 0x1D64(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class FText                                   MarkGuardStealth;                                  // 0x1D68(0x0010)(Edit, NativeAccessSpecifierPrivate)
-	class FText                                   MarkCameraStealth;                                 // 0x1D78(0x0010)(Edit, NativeAccessSpecifierPrivate)
-	struct FLinearColor                           CrewAIColor;                                       // 0x1D88(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class USBZMarkerDataAsset*                    CrewAIMarkerAsset;                                 // 0x1D98(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FVector                                CrewAIMarkerOffset;                                // 0x1DA0(0x0018)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class FName                                   CrewAIMarkerSocketName;                            // 0x1DB8(0x000C)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1DC4[0xC];                                     // 0x1DC4(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class USBZOutlineAsset*                       DownedOutline;                                     // 0x1D00(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1D08[0x8];                                     // 0x1D08(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZVoiceCommentDataAsset*              RevivedComment;                                    // 0x1D10(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USBZVoiceCommentDataAsset*              UncuffedComment;                                   // 0x1D18(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USBZDialogDataAsset*                    DownedDialog;                                      // 0x1D20(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USBZDialogDataAsset*                    InCustodyDialog;                                   // 0x1D28(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USBZDialogDataAsset*                    BackFromCustodyDialog;                             // 0x1D30(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USBZDialogDataAsset*                    CuffedDialog;                                      // 0x1D38(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USBZDialogDataAsset*                    TasedDialog;                                       // 0x1D40(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USBZDialogDataAsset*                    SubduedDialog;                                     // 0x1D48(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class ASBZCharacter*                          CurrentWard;                                       // 0x1D50(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bIsMaskOn;                                         // 0x1D58(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bIsLoadoutLoaded;                                  // 0x1D59(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1D5A[0x16];                                    // 0x1D5A(0x0016)(Fixing Size After Last Property [ Dumper-7 ])
+	ESBZVoicePriority                             MarkingVoicePriority;                              // 0x1D70(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1D71[0x3];                                     // 0x1D71(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         MarkingDuration;                                   // 0x1D74(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class FText                                   MarkGuardStealth;                                  // 0x1D78(0x0010)(Edit, NativeAccessSpecifierPrivate)
+	class FText                                   MarkCameraStealth;                                 // 0x1D88(0x0010)(Edit, NativeAccessSpecifierPrivate)
+	struct FLinearColor                           CrewAIColor;                                       // 0x1D98(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USBZMarkerDataAsset*                    CrewAIMarkerAsset;                                 // 0x1DA8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FVector                                CrewAIMarkerOffset;                                // 0x1DB0(0x0018)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class FName                                   CrewAIMarkerSocketName;                            // 0x1DC8(0x000C)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1DD4[0xC];                                     // 0x1DD4(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void Multicast_MarkCamera(class ASBZSecurityCamera* Camera);
@@ -20374,7 +20376,7 @@ DUMPER7_ASSERTS_USBZPlayerAnimationCollectionTPP;
 
 // Class Starbreeze.SBZAICrewCharacterLinkedAnimation
 // 0x0050 (0x04B0 - 0x0460)
-class USBZAICrewCharacterLinkedAnimation final : public USBZCharacterLinkedAnimation
+class USBZAICrewCharacterLinkedAnimation : public USBZCharacterLinkedAnimation
 {
 public:
 	class ASBZAICrewCharacter*                    AICrewCharacter;                                   // 0x0460(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -20720,7 +20722,7 @@ DUMPER7_ASSERTS_USBZExitPhoneAbility;
 
 // Class Starbreeze.SBZAIDeliveryDrone
 // 0x0180 (0x0890 - 0x0710)
-class ASBZAIDeliveryDrone final : public ASBZAIDroneBase, public ISBZTypeInterface, public ISBZRoomVolumeInterface, public ISBZPawnLifetime, public MIPad::Pad<0x18, 0x740>, public ISBZMarkerInfoInterface
+class ASBZAIDeliveryDrone : public ASBZAIDroneBase, public ISBZTypeInterface, public ISBZRoomVolumeInterface, public ISBZPawnLifetime, public MIPad::Pad<0x18, 0x740>, public ISBZMarkerInfoInterface
 {
 public:
 	class USBZBagType*                            OverkillWeaponBagType;                             // 0x0748(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -20804,7 +20806,7 @@ DUMPER7_ASSERTS_ISBZRuntimeInterface;
 
 // Class Starbreeze.SBZAIDrone
 // 0x0550 (0x0C60 - 0x0710)
-class ASBZAIDrone final : public ASBZAIDroneBase, public ISBZPawnInterface, public MIPad::Pad<0x68, 0x780>, public IAbilitySystemInterface, public IGenericTeamAgentInterface, public ISBZPawnLifetime, public MIPad::Pad<0x18, 0x7B0>, public ISBZProjectileInterface, public MIPad::Pad<0x8, 0x7C0>, public ISBZTypeInterface, public ISBZAIVisibilityRelevant, public ISBZRoomVolumeInterface, public IGameplayTagAssetInterface, public ISBZRuntimeInterface, public MIPad::Pad<0x60, 0x848>, public ISBZExplosive, public MIPad::Pad<0x20, 0x870>, public ISBZHurtReactionDataInterface, public ISBZVoiceComponentInterface, public ISBZAutoAimInterface, public ISBZMarkableInterface
+class ASBZAIDrone : public ASBZAIDroneBase, public ISBZPawnInterface, public MIPad::Pad<0x68, 0x780>, public IAbilitySystemInterface, public IGenericTeamAgentInterface, public ISBZPawnLifetime, public MIPad::Pad<0x18, 0x7B0>, public ISBZProjectileInterface, public MIPad::Pad<0x8, 0x7C0>, public ISBZTypeInterface, public ISBZAIVisibilityRelevant, public ISBZRoomVolumeInterface, public IGameplayTagAssetInterface, public ISBZRuntimeInterface, public MIPad::Pad<0x60, 0x848>, public ISBZExplosive, public MIPad::Pad<0x20, 0x870>, public ISBZHurtReactionDataInterface, public ISBZVoiceComponentInterface, public ISBZAutoAimInterface, public ISBZMarkableInterface
 {
 public:
 	uint8                                         Pad_890[0x50];                                     // 0x0890(0x0050)(Fixing Size After Last Property [ Dumper-7 ])
@@ -20986,7 +20988,7 @@ DUMPER7_ASSERTS_USBZEquipNextAbility;
 
 // Class Starbreeze.SBZAIDroneAnimation
 // 0x0080 (0x04B0 - 0x0430)
-class USBZAIDroneAnimation final : public USBZAIDroneBaseAnimation
+class USBZAIDroneAnimation : public USBZAIDroneBaseAnimation
 {
 public:
 	float                                         RotorMaxSpeed;                                     // 0x0430(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -21021,7 +21023,7 @@ DUMPER7_ASSERTS_USBZAIDroneAnimation;
 
 // Class Starbreeze.SBZAIDroneController
 // 0x0078 (0x04D8 - 0x0460)
-class ASBZAIDroneController final : public ASBZAIArmedPawnController
+class ASBZAIDroneController : public ASBZAIArmedPawnController
 {
 public:
 	class UBlackboardData*                        BlackboardAsset;                                   // 0x0460(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -21073,7 +21075,7 @@ DUMPER7_ASSERTS_USBZAIDroneHackSentryOverheatExecutionCalculation;
 
 // Class Starbreeze.SBZAIDrone_HackSentryAbility
 // 0x0020 (0x04F0 - 0x04D0)
-class USBZAIDrone_HackSentryAbility final : public USBZGameplayAbility
+class USBZAIDrone_HackSentryAbility : public USBZGameplayAbility
 {
 public:
 	TSubclassOf<class UGameplayEffect>            DroneSentryHackEffect;                             // 0x04D0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -21192,7 +21194,7 @@ DUMPER7_ASSERTS_USBZAIExplosiveWeakPoint;
 
 // Class Starbreeze.SBZAIFBIVan
 // 0x00F0 (0x0B10 - 0x0A20)
-class ASBZAIFBIVan final : public ASBZWheeledVehicle
+class ASBZAIFBIVan : public ASBZWheeledVehicle
 {
 public:
 	class USBZPropDamageComponent*                PropDamageComponent;                               // 0x0A18(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -21317,7 +21319,7 @@ DUMPER7_ASSERTS_USBZAIGrenadeBelt;
 
 // Class Starbreeze.SBZAIHitByVehicleAbility
 // 0x0010 (0x04E0 - 0x04D0)
-class USBZAIHitByVehicleAbility final : public USBZGameplayAbility
+class USBZAIHitByVehicleAbility : public USBZGameplayAbility
 {
 public:
 	EPD3HeistState                                MinHeistState;                                     // 0x04D0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -21803,7 +21805,7 @@ DUMPER7_ASSERTS_USBZEmotionMapping;
 
 // Class Starbreeze.SBZAIOrder_Agility
 // 0x0020 (0x0150 - 0x0130)
-class USBZAIOrder_Agility final : public USBZAIOrder
+class USBZAIOrder_Agility : public USBZAIOrder
 {
 public:
 	class ASBZAgilityNavLink*                     AgilityNavLink;                                    // 0x0130(0x0008)(Edit, ZeroConstructor, EditConst, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -22033,7 +22035,7 @@ DUMPER7_ASSERTS_USBZPlayerRunAbility;
 
 // Class Starbreeze.SBZAIOrder_FollowTarget
 // 0x0008 (0x0138 - 0x0130)
-class USBZAIOrder_FollowTarget final : public USBZAIOrder
+class USBZAIOrder_FollowTarget : public USBZAIOrder
 {
 public:
 	uint8                                         Pad_130[0x8];                                      // 0x0130(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -22062,7 +22064,7 @@ DUMPER7_ASSERTS_USBZAIOrder_FollowTarget;
 
 // Class Starbreeze.SBZAIOrder_GoToDespawn
 // 0x0000 (0x0130 - 0x0130)
-class USBZAIOrder_GoToDespawn final : public USBZAIOrder
+class USBZAIOrder_GoToDespawn : public USBZAIOrder
 {
 public:
 	static class UClass* StaticClass()
@@ -22540,7 +22542,7 @@ DUMPER7_ASSERTS_USBZLoadingScreen;
 
 // Class Starbreeze.SBZAIOrder_Rescue
 // 0x0010 (0x0268 - 0x0258)
-class USBZAIOrder_Rescue final : public USBZAIOrder_TacticalMoveTo
+class USBZAIOrder_Rescue : public USBZAIOrder_TacticalMoveTo
 {
 public:
 	class USBZVoiceCommentDataAsset*              RescueHostageComment;                              // 0x0258(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -22588,7 +22590,7 @@ DUMPER7_ASSERTS_USBZOverskillARGESRosewood;
 
 // Class Starbreeze.SBZAIOrder_Retreat
 // 0x0008 (0x0168 - 0x0160)
-class USBZAIOrder_Retreat final : public USBZAISquadOrder
+class USBZAIOrder_Retreat : public USBZAISquadOrder
 {
 public:
 	class USBZVoiceCommentDataAsset*              RetreatComment;                                    // 0x0160(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -22849,7 +22851,7 @@ DUMPER7_ASSERTS_USBZOverskillWeaponBountyHunter;
 
 // Class Starbreeze.SBZAIOrder_Search
 // 0x0010 (0x0170 - 0x0160)
-class USBZAIOrder_Search final : public USBZAISquadOrder
+class USBZAIOrder_Search : public USBZAISquadOrder
 {
 public:
 	class ASBZRoomVolume*                         RoomToSearch;                                      // 0x0160(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -22985,7 +22987,7 @@ DUMPER7_ASSERTS_USBZAIOrder_SecureBag;
 
 // Class Starbreeze.SBZAIOrder_SecurityRoom
 // 0x0030 (0x0160 - 0x0130)
-class USBZAIOrder_SecurityRoom final : public USBZAIOrder
+class USBZAIOrder_SecurityRoom : public USBZAIOrder
 {
 public:
 	class ASBZSecurityRoom*                       SecurityRoom;                                      // 0x0130(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -23070,7 +23072,7 @@ DUMPER7_ASSERTS_ASBZMannequinPlayerCharacter;
 
 // Class Starbreeze.SBZGameMannequinPlayerCharacter
 // 0x0000 (0x0870 - 0x0870)
-class ASBZGameMannequinPlayerCharacter final : public ASBZMannequinPlayerCharacter
+class ASBZGameMannequinPlayerCharacter : public ASBZMannequinPlayerCharacter
 {
 public:
 	static class UClass* StaticClass()
@@ -23199,7 +23201,7 @@ DUMPER7_ASSERTS_USBZAllowSprintHurtForwardNotifyState;
 
 // Class Starbreeze.SBZAIOrder_SquadSabotage
 // 0x0010 (0x0268 - 0x0258)
-class USBZAIOrder_SquadSabotage final : public USBZAIOrder_TacticalMoveTo
+class USBZAIOrder_SquadSabotage : public USBZAIOrder_TacticalMoveTo
 {
 public:
 	TWeakObjectPtr<class APawn>                   SabotagingMember;                                  // 0x0258(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -23223,7 +23225,7 @@ DUMPER7_ASSERTS_USBZAIOrder_SquadSabotage;
 
 // Class Starbreeze.SBZAIOrder_TowerSpawnOrder
 // 0x0000 (0x0160 - 0x0160)
-class USBZAIOrder_TowerSpawnOrder final : public USBZAISquadOrder
+class USBZAIOrder_TowerSpawnOrder : public USBZAISquadOrder
 {
 public:
 	static class UClass* StaticClass()
@@ -23612,7 +23614,7 @@ DUMPER7_ASSERTS_USBZEnvQueryTest_VisuallyDetected;
 
 // Class Starbreeze.SBZAIRefractorShield
 // 0x0048 (0x0370 - 0x0328)
-class ASBZAIRefractorShield final : public AActor
+class ASBZAIRefractorShield : public AActor
 {
 public:
 	uint8                                         Pad_328[0x10];                                     // 0x0328(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
@@ -23985,7 +23987,7 @@ DUMPER7_ASSERTS_ASBZAirNeighborTestActor;
 
 // Class Starbreeze.SBZTripper
 // 0x0020 (0x06B0 - 0x0690)
-class ASBZTripper final : public ASBZPlaceableToolBase
+class ASBZTripper : public ASBZPlaceableToolBase
 {
 public:
 	class UBoxComponent*                          BoxComponent;                                      // 0x0688(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -24351,7 +24353,7 @@ DUMPER7_ASSERTS_ASBZAmmoPickup;
 
 // Class Starbreeze.SBZThrowableKnifePickup
 // 0x0000 (0x0378 - 0x0378)
-class ASBZThrowableKnifePickup final : public ASBZAmmoPickup
+class ASBZThrowableKnifePickup : public ASBZAmmoPickup
 {
 public:
 	static class UClass* StaticClass()
@@ -24732,7 +24734,7 @@ DUMPER7_ASSERTS_ISBZDamageInstigatorInterface;
 
 // Class Starbreeze.SBZAISentryGunController
 // 0x0008 (0x0468 - 0x0460)
-class ASBZAISentryGunController final : public ASBZAIArmedPawnController, public ISBZDamageInstigatorInterface
+class ASBZAISentryGunController : public ASBZAIArmedPawnController, public ISBZDamageInstigatorInterface
 {
 public:
 
@@ -25015,7 +25017,7 @@ DUMPER7_ASSERTS_USBZAIShieldSpecialComponent;
 
 // Class Starbreeze.SBZAIShoveAbility
 // 0x0000 (0x04F0 - 0x04F0)
-class USBZAIShoveAbility final : public USBZMeleeAbility
+class USBZAIShoveAbility : public USBZMeleeAbility
 {
 public:
 	static class UClass* StaticClass()
@@ -25055,7 +25057,7 @@ DUMPER7_ASSERTS_USBZEnvQueryTest_OrderTargetAreaSquadsNum;
 
 // Class Starbreeze.SBZAISightModifierVolume
 // 0x0020 (0x0348 - 0x0328)
-class ASBZAISightModifierVolume final : public AActor, public ISBZAISightBlockerInterface
+class ASBZAISightModifierVolume : public AActor, public ISBZAISightBlockerInterface
 {
 public:
 	class UBoxComponent*                          VolumeBox;                                         // 0x0330(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -25913,7 +25915,7 @@ DUMPER7_ASSERTS_USBZAsyncAction_Timer;
 
 // Class Starbreeze.SBZCarriedHackableKey
 // 0x0080 (0x03F0 - 0x0370)
-class ASBZCarriedHackableKey final : public ASBZCarriedStaticInteractionActor
+class ASBZCarriedHackableKey : public ASBZCarriedStaticInteractionActor
 {
 public:
 	TMulticastInlineDelegate<void()>              OnComplete;                                        // 0x0370(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintAuthorityOnly, NativeAccessSpecifierPublic)
@@ -26010,7 +26012,7 @@ DUMPER7_ASSERTS_USBZReactionPredicate_HasNoEnemy;
 
 // Class Starbreeze.SBZReactionPredicate_GlobalCooldown
 // 0x0010 (0x0048 - 0x0038)
-class USBZReactionPredicate_GlobalCooldown final : public USBZReactionPredicate
+class USBZReactionPredicate_GlobalCooldown : public USBZReactionPredicate
 {
 public:
 	float                                         WaitTime;                                          // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -26131,7 +26133,7 @@ DUMPER7_ASSERTS_USBZAssetDatabaseManager;
 
 // Class Starbreeze.SBZReactionPredicate_CanScream
 // 0x0010 (0x0048 - 0x0038)
-class USBZReactionPredicate_CanScream final : public USBZReactionPredicate
+class USBZReactionPredicate_CanScream : public USBZReactionPredicate
 {
 public:
 	struct FFloatInterval                         ScreamInterval;                                    // 0x0038(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -26300,7 +26302,7 @@ DUMPER7_ASSERTS_USBZCollisionDamageExecutionCalculation;
 
 // Class Starbreeze.SBZAIStopAndTurnAbility
 // 0x0008 (0x04D8 - 0x04D0)
-class USBZAIStopAndTurnAbility final : public USBZGameplayAbility
+class USBZAIStopAndTurnAbility : public USBZGameplayAbility
 {
 public:
 	float                                         AngleThresholdRecomputePath;                       // 0x04D0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -26347,7 +26349,7 @@ DUMPER7_ASSERTS_USBZAISystem;
 
 // Class Starbreeze.SBZAITacticalFlashAbility
 // 0x0000 (0x0548 - 0x0548)
-class USBZAITacticalFlashAbility final : public USBZAIFireRangedWeaponAbility
+class USBZAITacticalFlashAbility : public USBZAIFireRangedWeaponAbility
 {
 public:
 	static class UClass* StaticClass()
@@ -26503,7 +26505,7 @@ DUMPER7_ASSERTS_USBZMaskPatternData;
 
 // Class Starbreeze.SBZAITaserBattery
 // 0x0040 (0x0720 - 0x06E0)
-class USBZAITaserBattery final : public USBZAIExplosiveWeakPoint
+class USBZAITaserBattery : public USBZAIExplosiveWeakPoint
 {
 public:
 	float                                         TaseDuration;                                      // 0x06D8(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -26533,7 +26535,7 @@ DUMPER7_ASSERTS_USBZAITaserBattery;
 
 // Class Starbreeze.SBZAITaserMine
 // 0x00A8 (0x03E0 - 0x0338)
-class ASBZAITaserMine final : public AStaticMeshActor, public ISBZExplosive, public MIPad::Pad<0x20, 0x360>, public ISBZHurtReactionDataInterface
+class ASBZAITaserMine : public AStaticMeshActor, public ISBZExplosive, public MIPad::Pad<0x20, 0x360>, public ISBZHurtReactionDataInterface
 {
 public:
 	float                                         DetectionRange;                                    // 0x0368(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -26763,7 +26765,7 @@ DUMPER7_ASSERTS_ASBZPlaceableWeaponBox;
 
 // Class Starbreeze.SBZAITaserWeapon
 // 0x0010 (0x0820 - 0x0810)
-class ASBZAITaserWeapon final : public ASBZRangedWeapon
+class ASBZAITaserWeapon : public ASBZRangedWeapon
 {
 public:
 	class USBZVoiceCommentDataAsset*              TasingComment;                                     // 0x0810(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -27018,7 +27020,7 @@ DUMPER7_ASSERTS_USBZOverloadMicroCameraAbility;
 
 // Class Starbreeze.SBZPlaceableSensorTool
 // 0x0040 (0x06D0 - 0x0690)
-class ASBZPlaceableSensorTool final : public ASBZPlaceableToolBase
+class ASBZPlaceableSensorTool : public ASBZPlaceableToolBase
 {
 public:
 	class UBoxComponent*                          BoxComponent;                                      // 0x0688(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -27054,7 +27056,7 @@ DUMPER7_ASSERTS_ASBZPlaceableSensorTool;
 
 // Class Starbreeze.SBZAIThrowItemAbility
 // 0x0000 (0x0500 - 0x0500)
-class USBZAIThrowItemAbility final : public USBZThrowItemAbility
+class USBZAIThrowItemAbility : public USBZThrowItemAbility
 {
 public:
 	static class UClass* StaticClass()
@@ -27794,7 +27796,7 @@ DUMPER7_ASSERTS_ISBZModularSlotMeshContainer;
 
 // Class Starbreeze.SBZAIUtilityDecider_Escort
 // 0x00E0 (0x0190 - 0x00B0)
-class USBZAIUtilityDecider_Escort final : public USBZAIUtilityDecider
+class USBZAIUtilityDecider_Escort : public USBZAIUtilityDecider
 {
 public:
 	struct FSBZAIEscortStateData                  EscortStates[0x6];                                 // 0x00B0(0x0018)(Edit, NoDestructor, NativeAccessSpecifierPrivate)
@@ -29411,7 +29413,7 @@ DUMPER7_ASSERTS_USBZAIUtilityScorer_WeaponPreferredRange;
 
 // Class Starbreeze.SBZConnectedCableBox
 // 0x00A0 (0x03C8 - 0x0328)
-class ASBZConnectedCableBox final : public AActor
+class ASBZConnectedCableBox : public AActor
 {
 public:
 	TMulticastInlineDelegate<void(bool bWasSuccess)> OnComplete;                                     // 0x0328(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintAuthorityOnly, NativeAccessSpecifierPublic)
@@ -30309,7 +30311,7 @@ DUMPER7_ASSERTS_ASBZSkeletalDebris;
 
 // Class Starbreeze.SBZArmorRepairKit
 // 0x0000 (0x06A0 - 0x06A0)
-class ASBZArmorRepairKit final : public ASBZPlaceableArmorCharges
+class ASBZArmorRepairKit : public ASBZPlaceableArmorCharges
 {
 public:
 	static class UClass* StaticClass()
@@ -30746,7 +30748,7 @@ DUMPER7_ASSERTS_ASBZAttractableBagItem;
 
 // Class Starbreeze.SBZAudioScreen
 // 0x0020 (0x0348 - 0x0328)
-class ASBZAudioScreen final : public AActor, public ISBZRoomVolumeInterface
+class ASBZAudioScreen : public AActor, public ISBZRoomVolumeInterface
 {
 public:
 	class UAkComponent*                           AkComponent;                                       // 0x0330(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -30783,7 +30785,7 @@ DUMPER7_ASSERTS_ASBZAudioScreen;
 
 // Class Starbreeze.SBZStaticReplicatedActor
 // 0x0000 (0x0328 - 0x0328)
-class ASBZStaticReplicatedActor final : public AActor
+class ASBZStaticReplicatedActor : public AActor
 {
 public:
 	static class UClass* StaticClass()
@@ -30926,7 +30928,7 @@ DUMPER7_ASSERTS_USBZSawDiamondBladeDamageType;
 
 // Class Starbreeze.SBZHackerAcedAbility
 // 0x0000 (0x04F8 - 0x04F8)
-class USBZHackerAcedAbility final : public USBZHackerBaseAbility
+class USBZHackerAcedAbility : public USBZHackerBaseAbility
 {
 public:
 	static class UClass* StaticClass()
@@ -33102,7 +33104,7 @@ DUMPER7_ASSERTS_ASBZPlayerAndItemTriggerVolume;
 
 // Class Starbreeze.SBZBreakableMachine
 // 0x0030 (0x0358 - 0x0328)
-class ASBZBreakableMachine final : public AActor
+class ASBZBreakableMachine : public AActor
 {
 public:
 	class USBZBreakableMachineInteractableComponent* InteractableComponent;                          // 0x0328(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -33362,7 +33364,7 @@ DUMPER7_ASSERTS_USBZRequestEquipOverkillWeaponAbility;
 
 // Class Starbreeze.SBZRequestThePunchAbility
 // 0x0000 (0x04E8 - 0x04E8)
-class USBZRequestThePunchAbility final : public USBZRequestEquipOverkillWeaponAbility
+class USBZRequestThePunchAbility : public USBZRequestEquipOverkillWeaponAbility
 {
 public:
 	static class UClass* StaticClass()
@@ -33737,7 +33739,7 @@ DUMPER7_ASSERTS_USBZLazyLoadingManager;
 
 // Class Starbreeze.SBZRequestSawAbility
 // 0x0000 (0x04E8 - 0x04E8)
-class USBZRequestSawAbility final : public USBZRequestEquipOverkillWeaponAbility
+class USBZRequestSawAbility : public USBZRequestEquipOverkillWeaponAbility
 {
 public:
 	static class UClass* StaticClass()
@@ -36845,7 +36847,7 @@ DUMPER7_ASSERTS_USBZBTTask_DozerTaunt;
 
 // Class Starbreeze.SBZSabotagableVehicle
 // 0x0120 (0x0B40 - 0x0A20)
-class ASBZSabotagableVehicle final : public ASBZWheeledVehicle
+class ASBZSabotagableVehicle : public ASBZWheeledVehicle
 {
 public:
 	TMulticastInlineDelegate<void(bool bSabotaged)> OnVehicleSabotageChanged;                        // 0x0A18(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintAuthorityOnly, NativeAccessSpecifierPublic)
@@ -36929,7 +36931,7 @@ DUMPER7_ASSERTS_USBZBTTask_DroneDespawn;
 
 // Class Starbreeze.SBZCuttableSkylightActor
 // 0x0000 (0x03E0 - 0x03E0)
-class ASBZCuttableSkylightActor final : public ASBZCuttableActor
+class ASBZCuttableSkylightActor : public ASBZCuttableActor
 {
 public:
 	static class UClass* StaticClass()
@@ -40723,7 +40725,7 @@ DUMPER7_ASSERTS_USBZNavArea_ExitableNoEnter;
 
 // Class Starbreeze.SBZStaticMeshHandheldEquippable
 // 0x0000 (0x0570 - 0x0570)
-class ASBZStaticMeshHandheldEquippable final : public ASBZHandheldEquippable
+class ASBZStaticMeshHandheldEquippable : public ASBZHandheldEquippable
 {
 public:
 	class UStaticMeshComponent* GetStaticMeshComponent();
@@ -40829,7 +40831,7 @@ DUMPER7_ASSERTS_USBZCharacterMovementSettings;
 
 // Class Starbreeze.SBZAICharacterTraverseAbility
 // 0x0000 (0x04E8 - 0x04E8)
-class USBZAICharacterTraverseAbility final : public USBZCharacterTraverseAbility
+class USBZAICharacterTraverseAbility : public USBZCharacterTraverseAbility
 {
 public:
 	static class UClass* StaticClass()
@@ -41026,7 +41028,7 @@ DUMPER7_ASSERTS_USBZCircularInteractionWidget;
 
 // Class Starbreeze.SBZNiagaraWwiseActor
 // 0x0050 (0x0378 - 0x0328)
-class ASBZNiagaraWwiseActor final : public AActor
+class ASBZNiagaraWwiseActor : public AActor
 {
 public:
 	class UAkAudioEvent*                          EventToPlayOneShot;                                // 0x0328(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -41504,7 +41506,7 @@ DUMPER7_ASSERTS_ASBZLootProcessorBase;
 
 // Class Starbreeze.SBZCombiningLootProcessor
 // 0x0048 (0x04D8 - 0x0490)
-class ASBZCombiningLootProcessor final : public ASBZLootProcessorBase
+class ASBZCombiningLootProcessor : public ASBZLootProcessorBase
 {
 public:
 	TMulticastInlineDelegate<void(bool bIsCombinedBag)> OnBagProcessed;                              // 0x0490(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintAuthorityOnly, NativeAccessSpecifierPublic)
@@ -41809,7 +41811,7 @@ DUMPER7_ASSERTS_USBZOverskillARGESCrimson;
 
 // Class Starbreeze.SBZThermalScopeWeapon
 // 0x0050 (0x0860 - 0x0810)
-class ASBZThermalScopeWeapon final : public ASBZRangedWeapon
+class ASBZThermalScopeWeapon : public ASBZRangedWeapon
 {
 public:
 	TArray<class UMaterialInstanceDynamic*>       ThermalMaterialArray;                              // 0x0810(0x0010)(ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
@@ -45178,7 +45180,7 @@ DUMPER7_ASSERTS_USBZEnvQueryGenerator_SpawnGroups;
 
 // Class Starbreeze.SBZPedestrianTrafficNavLink
 // 0x0058 (0x0478 - 0x0420)
-class ASBZPedestrianTrafficNavLink final : public ASBZSmartNavLink
+class ASBZPedestrianTrafficNavLink : public ASBZSmartNavLink
 {
 public:
 	class USBZNavLinkWaitSlotRoot*                WaitSlots;                                         // 0x0420(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -46889,7 +46891,7 @@ DUMPER7_ASSERTS_ASBZModuleActor;
 
 // Class Starbreeze.SBZKeycardReader
 // 0x0050 (0x03D8 - 0x0388)
-class ASBZKeycardReader final : public ASBZModuleActor, public ISBZAutoAimInterface
+class ASBZKeycardReader : public ASBZModuleActor, public ISBZAutoAimInterface
 {
 public:
 	class USBZInteractableComponent*              InteractableComponent;                             // 0x0390(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -47226,7 +47228,7 @@ DUMPER7_ASSERTS_ASBZExplosiveLevelProp;
 
 // Class Starbreeze.SBZLaserPoint
 // 0x0000 (0x0630 - 0x0630)
-class USBZLaserPoint final : public UStaticMeshComponent
+class USBZLaserPoint : public UStaticMeshComponent
 {
 public:
 	static class UClass* StaticClass()
@@ -47246,7 +47248,7 @@ DUMPER7_ASSERTS_USBZLaserPoint;
 
 // Class Starbreeze.SBZExplosiveChargesLevelProp
 // 0x0020 (0x04F0 - 0x04D0)
-class ASBZExplosiveChargesLevelProp final : public ASBZExplosiveLevelProp
+class ASBZExplosiveChargesLevelProp : public ASBZExplosiveLevelProp
 {
 public:
 	TMulticastInlineDelegate<void(int32 NewCount)> ServerOnChargesChanged;                           // 0x04D0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintAuthorityOnly, NativeAccessSpecifierPublic)
@@ -47479,7 +47481,7 @@ DUMPER7_ASSERTS_USBZSkillShockGrenadeElectricStunnerAced;
 
 // Class Starbreeze.SBZExplosiveTrapGas
 // 0x00A8 (0x05D8 - 0x0530)
-class ASBZExplosiveTrapGas final : public ASBZExplosiveTrap, public ISBZVolumeDamageInterface
+class ASBZExplosiveTrapGas : public ASBZExplosiveTrap, public ISBZVolumeDamageInterface
 {
 public:
 	class USphereComponent*                       SphereComponent;                                   // 0x0538(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -47538,7 +47540,7 @@ DUMPER7_ASSERTS_ASBZExplosiveTrapGas;
 
 // Class Starbreeze.SBZEyeScanner
 // 0x0088 (0x03B0 - 0x0328)
-class ASBZEyeScanner final : public AActor
+class ASBZEyeScanner : public AActor
 {
 public:
 	TMulticastInlineDelegate<void(ESBZEyeScannerState Oldstate, ESBZEyeScannerState NewState)> OnEyeScannerStateChanged; // 0x0328(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintAuthorityOnly, NativeAccessSpecifierPublic)
@@ -48499,7 +48501,7 @@ DUMPER7_ASSERTS_USBZSawImpactConfig;
 
 // Class Starbreeze.SBZFlashBangCluster
 // 0x0010 (0x0780 - 0x0770)
-class ASBZFlashBangCluster final : public ASBZFlashBangGrenade
+class ASBZFlashBangCluster : public ASBZFlashBangGrenade
 {
 public:
 	float                                         AdditionalRandomDelay;                             // 0x0770(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -49296,7 +49298,7 @@ DUMPER7_ASSERTS_USBZGamepadBindingsManager;
 
 // Class Starbreeze.SBZPlaceableSentry
 // 0x0000 (0x06A0 - 0x06A0)
-class ASBZPlaceableSentry final : public ASBZPlaceableCharges
+class ASBZPlaceableSentry : public ASBZPlaceableCharges
 {
 public:
 	TSubclassOf<class ASBZSentryGun>              SentryClassToSpawn;                                // 0x0698(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -49406,7 +49408,7 @@ DUMPER7_ASSERTS_USBZGameplayAbilityQueryLibrary;
 
 // Class Starbreeze.SBZLure
 // 0x00C8 (0x03F0 - 0x0328)
-class ASBZLure final : public AActor, public ISBZRoomVolumeInterface, public ISBZAIAttractorInterface
+class ASBZLure : public AActor, public ISBZRoomVolumeInterface, public ISBZAIAttractorInterface
 {
 public:
 	float                                         LureRange;                                         // 0x0338(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -50915,7 +50917,7 @@ DUMPER7_ASSERTS_USBZSkillEngineerTargetedFire;
 
 // Class Starbreeze.SBZSmokeGrenade
 // 0x0000 (0x0810 - 0x0810)
-class ASBZSmokeGrenade final : public ASBZGasGrenade
+class ASBZSmokeGrenade : public ASBZGasGrenade
 {
 public:
 	static class UClass* StaticClass()
@@ -51046,7 +51048,7 @@ DUMPER7_ASSERTS_USBZSkillStealthSpecConstantFlowBase;
 
 // Class Starbreeze.SBZInteractableDoor
 // 0x0060 (0x06C8 - 0x0668)
-class ASBZInteractableDoor final : public ASBZInteractableGate, public ISBZPropDamageInterface
+class ASBZInteractableDoor : public ASBZInteractableGate, public ISBZPropDamageInterface
 {
 public:
 	class ASBZRoomVolume*                         SelectedRoom;                                      // 0x0670(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -51151,7 +51153,7 @@ DUMPER7_ASSERTS_ASBZDoor;
 
 // Class Starbreeze.SBZWindow
 // 0x0010 (0x0658 - 0x0648)
-class ASBZWindow final : public ASBZGate, public ISBZTraversalDestructibleInterface
+class ASBZWindow : public ASBZGate, public ISBZTraversalDestructibleInterface
 {
 public:
 	bool                                          bIsBreakableByPlayerVaulting;                      // 0x0650(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -51467,7 +51469,7 @@ DUMPER7_ASSERTS_ASBZReplicatedIntStateActor;
 
 // Class Starbreeze.SBZGlobalLevelStateActor
 // 0x0010 (0x0380 - 0x0370)
-class ASBZGlobalLevelStateActor final : public ASBZReplicatedIntStateActor
+class ASBZGlobalLevelStateActor : public ASBZReplicatedIntStateActor
 {
 public:
 	TMulticastInlineDelegate<void(int32 OldState, int32 NewState, bool bDoCosmetics)> OnLevelStateChanged; // 0x0370(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -51696,7 +51698,7 @@ DUMPER7_ASSERTS_USBZGrantKeycardEffect;
 
 // Class Starbreeze.SBZPlayerEventReactor
 // 0x02E0 (0x0608 - 0x0328)
-class ASBZPlayerEventReactor final : public AActor
+class ASBZPlayerEventReactor : public AActor
 {
 public:
 	TArray<class ASBZAudioScreen*>                AudioScreenArray;                                  // 0x0328(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Protected, NativeAccessSpecifierProtected)
@@ -52192,7 +52194,7 @@ DUMPER7_ASSERTS_ISBZToolHackableInterface;
 
 // Class Starbreeze.SBZHackingMinigameActor
 // 0x0028 (0x03B8 - 0x0390)
-class ASBZHackingMinigameActor final : public ASBZMiniGameActor, public ISBZToolHackableInterface
+class ASBZHackingMinigameActor : public ASBZMiniGameActor, public ISBZToolHackableInterface
 {
 public:
 	class USBZHackingComponent*                   HackingComponent;                                  // 0x0398(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -52299,7 +52301,7 @@ DUMPER7_ASSERTS_USBZSkillJuggernautArmoredUpIIBase;
 
 // Class Starbreeze.SBZHackingZone
 // 0x0048 (0x0370 - 0x0328)
-class ASBZHackingZone final : public AActor
+class ASBZHackingZone : public AActor
 {
 public:
 	uint8                                         Pad_328[0x30];                                     // 0x0328(0x0030)(Fixing Size After Last Property [ Dumper-7 ])
@@ -52432,7 +52434,7 @@ DUMPER7_ASSERTS_ASBZModifiableTimer;
 
 // Class Starbreeze.SBZHackingZoneController
 // 0x00C0 (0x0498 - 0x03D8)
-class ASBZHackingZoneController final : public ASBZModifiableTimer
+class ASBZHackingZoneController : public ASBZModifiableTimer
 {
 public:
 	TMulticastInlineDelegate<void()>              OnInteractionComplete;                             // 0x03D8(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintAuthorityOnly, NativeAccessSpecifierPublic)
@@ -52651,7 +52653,7 @@ DUMPER7_ASSERTS_USBZPlaceItemAbility;
 
 // Class Starbreeze.SBZPlaceConsumableAbility
 // 0x0000 (0x0550 - 0x0550)
-class USBZPlaceConsumableAbility final : public USBZPlaceItemAbility
+class USBZPlaceConsumableAbility : public USBZPlaceItemAbility
 {
 public:
 	static class UClass* StaticClass()
@@ -52969,7 +52971,7 @@ DUMPER7_ASSERTS_ISBZSpawnStaticInteractionInterface;
 
 // Class Starbreeze.SBZHiddenStaticInteractionCollection
 // 0x0068 (0x0390 - 0x0328)
-class ASBZHiddenStaticInteractionCollection final : public AActor, public ISBZSpawnStaticInteractionInterface
+class ASBZHiddenStaticInteractionCollection : public AActor, public ISBZSpawnStaticInteractionInterface
 {
 public:
 	int32                                         NumberOfContainers;                                // 0x0330(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -53928,7 +53930,7 @@ DUMPER7_ASSERTS_USBZStopAndTurnSelectionData;
 
 // Class Starbreeze.SBZHUDBase
 // 0x0000 (0x0418 - 0x0418)
-class ASBZHUDBase final : public AHUD
+class ASBZHUDBase : public AHUD
 {
 public:
 	void DelayedHudInitizalize();
@@ -54894,7 +54896,7 @@ DUMPER7_ASSERTS_USBZInputKeyWidget;
 
 // Class Starbreeze.SBZPlayerSawGrenadeProjectile
 // 0x0000 (0x0628 - 0x0628)
-class ASBZPlayerSawGrenadeProjectile final : public ASBZGrenadeProjectile
+class ASBZPlayerSawGrenadeProjectile : public ASBZGrenadeProjectile
 {
 public:
 	static class UClass* StaticClass()
@@ -55561,7 +55563,7 @@ DUMPER7_ASSERTS_USBZInteractLootProcessorRequirement;
 
 // Class Starbreeze.SBZStaticInteractionBinaryState
 // 0x0020 (0x0348 - 0x0328)
-class ASBZStaticInteractionBinaryState final : public AActor
+class ASBZStaticInteractionBinaryState : public AActor
 {
 public:
 	TMulticastInlineDelegate<void(bool BNewState)> OnStateChanged;                                   // 0x0328(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintAuthorityOnly, NativeAccessSpecifierPublic)
@@ -55972,7 +55974,7 @@ DUMPER7_ASSERTS_USBZItemButton;
 
 // Class Starbreeze.SBZItemContainer
 // 0x0040 (0x0368 - 0x0328)
-class ASBZItemContainer final : public AActor
+class ASBZItemContainer : public AActor
 {
 public:
 	class USBZInteractableComponent*              InteractableComponent;                             // 0x0328(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -56929,7 +56931,7 @@ DUMPER7_ASSERTS_USBZQuestItemDatabase;
 
 // Class Starbreeze.SBZThermalLanceWidget
 // 0x0030 (0x0320 - 0x02F0)
-class USBZThermalLanceWidget final : public UUserWidget
+class USBZThermalLanceWidget : public UUserWidget
 {
 public:
 	class UProgressBar*                           FuelBar;                                           // 0x02F0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -57276,7 +57278,7 @@ DUMPER7_ASSERTS_USBZKeyItemData;
 
 // Class Starbreeze.SBZSentryGun
 // 0x0348 (0x08E0 - 0x0598)
-class alignas(0x10) ASBZSentryGun final : public ASBZArmedPawn, public ISBZExplosive, public MIPad::Pad<0x20, 0x5C0>, public ISBZHurtReactionDataInterface, public IAISightTargetInterface, public ISBZSpawnClosetDestructionInterface, public ISBZArmamentInterface
+class alignas(0x10) ASBZSentryGun : public ASBZArmedPawn, public ISBZExplosive, public MIPad::Pad<0x20, 0x5C0>, public ISBZHurtReactionDataInterface, public IAISightTargetInterface, public ISBZSpawnClosetDestructionInterface, public ISBZArmamentInterface
 {
 public:
 	uint8                                         Pad_5E0[0x8];                                      // 0x05E0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
@@ -57446,7 +57448,7 @@ DUMPER7_ASSERTS_ASBZKeypadBase;
 
 // Class Starbreeze.SBZKeypad
 // 0x0000 (0x04A8 - 0x04A8)
-class ASBZKeypad final : public ASBZKeypadBase
+class ASBZKeypad : public ASBZKeypadBase
 {
 public:
 	static class UClass* StaticClass()
@@ -57586,7 +57588,7 @@ DUMPER7_ASSERTS_ASBZStandaloneMaskDisplayDebug;
 
 // Class Starbreeze.SBZLaser
 // 0x0000 (0x0630 - 0x0630)
-class USBZLaser final : public UStaticMeshComponent
+class USBZLaser : public UStaticMeshComponent
 {
 public:
 	static class UClass* StaticClass()
@@ -57765,7 +57767,7 @@ DUMPER7_ASSERTS_USBZSuitPatternData;
 
 // Class Starbreeze.SBZLevelScriptActor
 // 0x00A0 (0x03D0 - 0x0330)
-class ASBZLevelScriptActor final : public ASBZLevelScriptActorBase
+class ASBZLevelScriptActor : public ASBZLevelScriptActorBase
 {
 public:
 	bool                                          bIsDestroyedAtCleanup;                             // 0x0330(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -57979,7 +57981,7 @@ DUMPER7_ASSERTS_USBZTagReactionAsset;
 
 // Class Starbreeze.SBZLifeActionTriggerVolume
 // 0x00C8 (0x03F8 - 0x0330)
-class ASBZLifeActionTriggerVolume final : public ATriggerBox
+class ASBZLifeActionTriggerVolume : public ATriggerBox
 {
 public:
 	TMulticastInlineDelegate<void(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot)> OnActionPushed; // 0x0330(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
@@ -59048,7 +59050,7 @@ DUMPER7_ASSERTS_ISBZSpawnClosetReactorInterface;
 
 // Class Starbreeze.SBZLootProcessor
 // 0x0000 (0x0490 - 0x0490)
-class ASBZLootProcessor final : public ASBZLootProcessorBase
+class ASBZLootProcessor : public ASBZLootProcessorBase
 {
 public:
 	void OnTrayOpened();
@@ -59551,7 +59553,7 @@ DUMPER7_ASSERTS_USBZMainMenuChallengeCategorySelectionScreen;
 
 // Class Starbreeze.SBZStaticVehicle
 // 0x00A0 (0x03D8 - 0x0338)
-class ASBZStaticVehicle final : public AStaticMeshActor
+class ASBZStaticVehicle : public AStaticMeshActor
 {
 public:
 	TMap<int32, struct FSBZVehicleLights>         LightsCPDGraph;                                    // 0x0338(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
@@ -60652,7 +60654,7 @@ DUMPER7_ASSERTS_USBZMainMenuMatchmakingStatusWidget;
 
 // Class Starbreeze.SBZPlayerM606GasGrenadeProjectile
 // 0x0088 (0x06C8 - 0x0640)
-class ASBZPlayerM606GasGrenadeProjectile final : public ASBZPlayerM606GrenadeProjectile, public ISBZGasDamageInterface
+class ASBZPlayerM606GasGrenadeProjectile : public ASBZPlayerM606GrenadeProjectile, public ISBZGasDamageInterface
 {
 public:
 	uint8                                         Pad_648[0x28];                                     // 0x0648(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
@@ -60833,7 +60835,7 @@ DUMPER7_ASSERTS_USBZMainMenuPrePlanningItemSelectionWidget;
 
 // Class Starbreeze.SBZPlaceMicroCameraAbility
 // 0x0000 (0x0580 - 0x0580)
-class USBZPlaceMicroCameraAbility final : public USBZPlaceToolAbility
+class USBZPlaceMicroCameraAbility : public USBZPlaceToolAbility
 {
 public:
 	static class UClass* StaticClass()
@@ -61857,7 +61859,7 @@ DUMPER7_ASSERTS_USBZSkillARSpecFocusFireAced;
 
 // Class Starbreeze.SBZDamageStatusMarkerWidget
 // 0x0028 (0x0360 - 0x0338)
-class USBZDamageStatusMarkerWidget final : public USBZMarkerWidget
+class USBZDamageStatusMarkerWidget : public USBZMarkerWidget
 {
 public:
 	float                                         Health;                                            // 0x0338(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -61937,7 +61939,7 @@ DUMPER7_ASSERTS_USBZMaskPartConfig;
 
 // Class Starbreeze.SBZPlayerFireM606RangedWeaponProjectileAbility
 // 0x0000 (0x0538 - 0x0538)
-class USBZPlayerFireM606RangedWeaponProjectileAbility final : public USBZPlayerFireRangedWeaponProjectileAbility
+class USBZPlayerFireM606RangedWeaponProjectileAbility : public USBZPlayerFireRangedWeaponProjectileAbility
 {
 public:
 	static class UClass* StaticClass()
@@ -62751,7 +62753,7 @@ DUMPER7_ASSERTS_USBZMeleeLoopStartNotify;
 
 // Class Starbreeze.SBZMeleeWeaponEffect
 // 0x0000 (0x0B30 - 0x0B30)
-class USBZMeleeWeaponEffect final : public UGameplayEffect
+class USBZMeleeWeaponEffect : public UGameplayEffect
 {
 public:
 	static class UClass* StaticClass()
@@ -62771,7 +62773,7 @@ DUMPER7_ASSERTS_USBZMeleeWeaponEffect;
 
 // Class Starbreeze.SBZPlayerCameraManager
 // 0x0220 (0x2890 - 0x2670)
-class ASBZPlayerCameraManager final : public ASBZBasePlayerCameraManager
+class ASBZPlayerCameraManager : public ASBZBasePlayerCameraManager
 {
 public:
 	class USBZPlayerCameraFeedbackComponent*      PlayerCameraFeedbackComponent;                     // 0x2668(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -62852,7 +62854,7 @@ DUMPER7_ASSERTS_USBZSkillManipulatorMasterTrader;
 
 // Class Starbreeze.SBZMeleeWeaponThePunch
 // 0x0020 (0x06C0 - 0x06A0)
-class ASBZMeleeWeaponThePunch final : public ASBZMeleeWeapon
+class ASBZMeleeWeaponThePunch : public ASBZMeleeWeapon
 {
 public:
 	class UMaterialInstanceDynamic*               BatMaterial;                                       // 0x0698(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -63223,7 +63225,7 @@ DUMPER7_ASSERTS_USBZMetaFunctionLibrary;
 
 // Class Starbreeze.SBZMicroCamera
 // 0x01F0 (0x0880 - 0x0690)
-class ASBZMicroCamera final : public ASBZPlaceableToolBase, public ISBZCameraViewInterface, public MIPad::Pad<0x40, 0x6D0>, public ISBZExplosive, public MIPad::Pad<0x20, 0x6F8>, public ISBZHurtReactionDataInterface
+class ASBZMicroCamera : public ASBZPlaceableToolBase, public ISBZCameraViewInterface, public MIPad::Pad<0x40, 0x6D0>, public ISBZExplosive, public MIPad::Pad<0x20, 0x6F8>, public ISBZHurtReactionDataInterface
 {
 public:
 	uint8                                         Pad_700[0x38];                                     // 0x0700(0x0038)(Fixing Size After Last Property [ Dumper-7 ])
@@ -63329,7 +63331,7 @@ DUMPER7_ASSERTS_USBZMiniGameData;
 
 // Class Starbreeze.SBZPocketDrill
 // 0x00F8 (0x0648 - 0x0550)
-class ASBZPocketDrill final : public ASBZBreachingEquipmentBase
+class ASBZPocketDrill : public ASBZBreachingEquipmentBase
 {
 public:
 	struct FSBZComponentSelector                  WidgetComponent;                                   // 0x0550(0x0020)(Edit, DisableEditOnInstance, NoDestructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
@@ -63862,7 +63864,7 @@ DUMPER7_ASSERTS_USBZSkillEscapistBalanced;
 
 // Class Starbreeze.SBZMoonTacticalFlashbangEffect
 // 0x0000 (0x0B38 - 0x0B38)
-class USBZMoonTacticalFlashbangEffect final : public USBZFlashbangEffect
+class USBZMoonTacticalFlashbangEffect : public USBZFlashbangEffect
 {
 public:
 	static class UClass* StaticClass()
@@ -64089,7 +64091,7 @@ DUMPER7_ASSERTS_ASBZSecurityCamera;
 
 // Class Starbreeze.SBZMovingSecurityCamera
 // 0x00B0 (0x0AD0 - 0x0A20)
-class ASBZMovingSecurityCamera final : public ASBZSecurityCamera
+class ASBZMovingSecurityCamera : public ASBZSecurityCamera
 {
 public:
 	TArray<class ASBZSpline*>                     Splines;                                           // 0x0A20(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Protected, NativeAccessSpecifierProtected)
@@ -64154,7 +64156,7 @@ DUMPER7_ASSERTS_USBZInteractAmmoBagRequirement;
 
 // Class Starbreeze.SBZMultiCodeKeypad
 // 0x0038 (0x04E0 - 0x04A8)
-class ASBZMultiCodeKeypad final : public ASBZKeypadBase
+class ASBZMultiCodeKeypad : public ASBZKeypadBase
 {
 public:
 	int32                                         NumberOfCodes;                                     // 0x04A8(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -65768,7 +65770,7 @@ DUMPER7_ASSERTS_USBZOnlineSlotsClient;
 
 // Class Starbreeze.SBZPlayerFireSawRangedWeaponProjectileAbility
 // 0x0000 (0x0538 - 0x0538)
-class USBZPlayerFireSawRangedWeaponProjectileAbility final : public USBZPlayerFireRangedWeaponProjectileAbility
+class USBZPlayerFireSawRangedWeaponProjectileAbility : public USBZPlayerFireRangedWeaponProjectileAbility
 {
 public:
 	static class UClass* StaticClass()
@@ -66101,7 +66103,7 @@ DUMPER7_ASSERTS_USBZOverskillARGESVermilion;
 
 // Class Starbreeze.SBZPlaceableWeaponBagItem
 // 0x00C0 (0x0498 - 0x03D8)
-class ASBZPlaceableWeaponBagItem final : public ASBZBagItem
+class ASBZPlaceableWeaponBagItem : public ASBZBagItem
 {
 public:
 	struct FSBZEquippableConfig                   StoredWeaponConfig;                                // 0x03D8(0x0088)(Transient, Protected, NativeAccessSpecifierProtected)
@@ -67388,7 +67390,7 @@ DUMPER7_ASSERTS_USBZOverskillWeaponLawman;
 
 // Class Starbreeze.SBZStaticInteractionActor
 // 0x0000 (0x0350 - 0x0350)
-class ASBZStaticInteractionActor final : public ASBZInteractionActor
+class ASBZStaticInteractionActor : public ASBZInteractionActor
 {
 public:
 	static class UClass* StaticClass()
@@ -67962,7 +67964,7 @@ DUMPER7_ASSERTS_USBZSkillStealthSpecJudoChopAced;
 
 // Class Starbreeze.SBZPerceptionController
 // 0x0008 (0x0460 - 0x0458)
-class ASBZPerceptionController final : public AAIController
+class ASBZPerceptionController : public AAIController
 {
 public:
 	class USBZAIVisualDetectionComponent*         VisualDetectionComponent;                          // 0x0458(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -68173,7 +68175,7 @@ DUMPER7_ASSERTS_USBZStateMachineStateNotLoggedIn;
 
 // Class Starbreeze.SBZAmmoPack
 // 0x0000 (0x06B0 - 0x06B0)
-class ASBZAmmoPack final : public ASBZAmmoBag
+class ASBZAmmoPack : public ASBZAmmoBag
 {
 public:
 	static class UClass* StaticClass()
@@ -68253,7 +68255,7 @@ DUMPER7_ASSERTS_USBZInteractFirstAidKitRequirement;
 
 // Class Starbreeze.SBZFirstAidPack
 // 0x0000 (0x06B0 - 0x06B0)
-class ASBZFirstAidPack final : public ASBZHealthPlaceable
+class ASBZFirstAidPack : public ASBZHealthPlaceable
 {
 public:
 	static class UClass* StaticClass()
@@ -68432,7 +68434,7 @@ DUMPER7_ASSERTS_USBZTextStyle;
 
 // Class Starbreeze.SBZPlaceableTripMine
 // 0x00E0 (0x0770 - 0x0690)
-class ASBZPlaceableTripMine final : public ASBZPlaceableToolBase, public ISBZExplosive, public MIPad::Pad<0x20, 0x6B0>, public ISBZHurtReactionDataInterface
+class ASBZPlaceableTripMine : public ASBZPlaceableToolBase, public ISBZExplosive, public MIPad::Pad<0x20, 0x6B0>, public ISBZHurtReactionDataInterface
 {
 public:
 	class UBoxComponent*                          BoxComponent;                                      // 0x06B8(0x0008)(Edit, ExportObject, ZeroConstructor, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -68501,7 +68503,7 @@ DUMPER7_ASSERTS_ASBZPlaceableDroppedWeapon;
 
 // Class Starbreeze.SBZThermalLance
 // 0x0100 (0x06C0 - 0x05C0)
-class ASBZThermalLance final : public ASBZHeavyBreachingEquipmentBase
+class ASBZThermalLance : public ASBZHeavyBreachingEquipmentBase
 {
 public:
 	TMulticastInlineDelegate<void()>              OnBolted;                                          // 0x05C0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintAuthorityOnly, NativeAccessSpecifierPublic)
@@ -68660,7 +68662,7 @@ DUMPER7_ASSERTS_USBZPlaceCuttableToolAbility;
 
 // Class Starbreeze.SBZPlaceSensorToolAbility
 // 0x0000 (0x0580 - 0x0580)
-class USBZPlaceSensorToolAbility final : public USBZPlaceToolAbility
+class USBZPlaceSensorToolAbility : public USBZPlaceToolAbility
 {
 public:
 	static class UClass* StaticClass()
@@ -68700,7 +68702,7 @@ DUMPER7_ASSERTS_USBZSkillSmokeGrenadeSmokeMasterAced;
 
 // Class Starbreeze.SBZPlaceTripMineAbility
 // 0x0000 (0x0580 - 0x0580)
-class USBZPlaceTripMineAbility final : public USBZPlaceToolAbility
+class USBZPlaceTripMineAbility : public USBZPlaceToolAbility
 {
 public:
 	static class UClass* StaticClass()
@@ -68720,7 +68722,7 @@ DUMPER7_ASSERTS_USBZPlaceTripMineAbility;
 
 // Class Starbreeze.SBZPlaceTripperAbility
 // 0x0000 (0x0580 - 0x0580)
-class USBZPlaceTripperAbility final : public USBZPlaceToolAbility
+class USBZPlaceTripperAbility : public USBZPlaceToolAbility
 {
 public:
 	static class UClass* StaticClass()
@@ -69360,232 +69362,232 @@ public:
 DUMPER7_ASSERTS_USBZPlayerCardContainer;
 
 // Class Starbreeze.SBZPlayerCharacter
-// 0x0F70 (0x28A0 - 0x1930)
+// 0x0F70 (0x28B0 - 0x1940)
 class ASBZPlayerCharacter : public ASBZCharacter, public ISBZAIVisualDetectionGeneratorInterface, public ISBZEquippableInspectInterface, public ISBZEmoteInterface, public ISBZEjectableByVehicleInterface
 {
 public:
-	struct FRuntimeFloatCurve                     VisualDetectionMultiplierSlide;                    // 0x1948(0x0088)(Edit, NativeAccessSpecifierPublic)
-	float                                         VisualDetectionMultiplierSprinting;                // 0x19D0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         VisualDetectionMultiplierCrouched;                 // 0x19D4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         VisualDetectionMultiplierStanding;                 // 0x19D8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19DC[0x4];                                     // 0x19DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRuntimeFloatCurve                     AlertnessMultiplierSlide;                          // 0x19E0(0x0088)(Deprecated, NativeAccessSpecifierPublic)
-	float                                         AlertnessMultiplierSprinting;                      // 0x1A68(0x0004)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AlertnessMultiplierCrouched;                       // 0x1A6C(0x0004)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         AlertnessMultiplierStanding;                       // 0x1A70(0x0004)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A74[0x4];                                     // 0x1A74(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZShoutoutComponent*                  ShoutoutComponent;                                 // 0x1A78(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USBZVoiceCommentDataAsset*              CallComment;                                       // 0x1A80(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USBZVoiceCommentDataAsset*              HelpComment;                                       // 0x1A88(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USBZVoiceCommentDataAsset*              DownedComment;                                     // 0x1A90(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class USBZVoiceCommentDataAsset*              GetDownComment;                                    // 0x1A98(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1AA0[0x90];                                    // 0x1AA0(0x0090)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(bool bIsCasing)> OnCasingChangedDynamic;                           // 0x1B30(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1B40[0xA8];                                    // 0x1B40(0x00A8)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         ShoutDownTime;                                     // 0x1BE8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         ShoutDownRange;                                    // 0x1BEC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         IntimidationRange;                                 // 0x1BF0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         OverkillWeaponVODelay;                             // 0x1BF4(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         OverkillWeaponVORate;                              // 0x1BF8(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1BFC[0x4];                                     // 0x1BFC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZFirstPersonCameraAttachment*        FPCameraAttachment;                                // 0x1C00(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZRecoilComponent*                    RecoilComponent;                                   // 0x1C08(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZAimAssistComponent*                 AimAssistComponent;                                // 0x1C10(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USkeletalMeshComponent*                 Mesh1P;                                            // 0x1C18(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USkeletalMeshComponent*                 Mesh1PBody;                                        // 0x1C20(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZCustomizableSuitMeshComponent*      Mesh1PSuit;                                        // 0x1C28(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USkeletalMeshComponent*                 Mesh1PGloves;                                      // 0x1C30(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZPlayerInteractorComponent*          Interactor;                                        // 0x1C38(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZPlayerAnimationCollectionFPP*       DefaultAnimationCollectionFPP;                     // 0x1C40(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         CasingEyeHeight;                                   // 0x1C48(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         SubduedEyeHeight;                                  // 0x1C4C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         DownedEyeHeight;                                   // 0x1C50(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         BleedoutEyeHeight;                                 // 0x1C54(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         SlideEyeHeight;                                    // 0x1C58(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         CarryTiltSpeed;                                    // 0x1C5C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         CarryTiltDegrees;                                  // 0x1C60(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         CarryAdditionalTiltDegrees;                        // 0x1C64(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class AActor>                     WhizzbyActorClass;                                 // 0x1C68(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class AActor*                                 WhizzbyActor;                                      // 0x1C70(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class USBZLocalPlayerFeedback>    LandedFeedback;                                    // 0x1C78(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class USBZLocalPlayerFeedback>    JumpedFeedback;                                    // 0x1C80(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class USBZLocalPlayerFeedback>    ArmorDepletedFeedback;                             // 0x1C88(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class USBZLocalPlayerFeedback>    ArmorChunkDepletedFeedback[0x3];                   // 0x1C90(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class USBZLocalPlayerFeedback>    ArmorReplenishedFeedback;                          // 0x1CA8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class USBZLocalPlayerFeedback>    ArmorChunkReplenishedFeedback[0x3];                // 0x1CB0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class USBZLocalPlayerFeedback>    ArmorChunkDamageFeedback[0x3];                     // 0x1CC8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class USBZLocalPlayerFeedback>    HealthDamageFeedback;                              // 0x1CE0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class USBZLocalPlayerFeedback>    SubduedDamageFeedback;                             // 0x1CE8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class USBZLocalPlayerFeedback>    DefeatFeedback;                                    // 0x1CF0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class USBZLocalPlayerFeedback>    SlideFeedback;                                     // 0x1CF8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class USBZLocalPlayerFeedback>    HumanShieldReachSlotFeedBack;                      // 0x1D00(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class USBZLocalPlayerFeedback>    TraverseFeedback;                                  // 0x1D08(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class USBZLocalPlayerFeedback>    RunFeedback;                                       // 0x1D10(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class USBZLocalPlayerFeedback>    OverHealDamageFeedback;                            // 0x1D18(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class USBZLocalPlayerFeedback>    OverHealGainedFeedback;                            // 0x1D20(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class USBZLocalPlayerFeedback>    OverHealRestoredFeedback;                          // 0x1D28(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class USBZLocalPlayerFeedback>    OverHealDepletedFeedback;                          // 0x1D30(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class USBZLocalPlayerFeedback>    ShieldFlashFeedback;                               // 0x1D38(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class USBZLocalPlayerFeedback>    OverskillDepletedFeedback;                         // 0x1D40(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class USBZLocalPlayerFeedback>    OverskillDamageFeedback;                           // 0x1D48(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class USBZLocalPlayerFeedback>    SmokeMasterFeedback;                               // 0x1D50(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FVector_NetQuantize                    DesiredAcceleration;                               // 0x1D58(0x0018)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TArray<TSubclassOf<class UCameraModifier>>    CameraModifiers;                                   // 0x1D70(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	class USBZVoiceCommentDataAsset*              RevivedComment;                                    // 0x1D80(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZVoiceCommentDataAsset*              UncuffedComment;                                   // 0x1D88(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZVoiceCommentDataAsset*              StealthMaskOnComment;                              // 0x1D90(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZVoiceCommentDataAsset*              LoudMaskOnComment;                                 // 0x1D98(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZVoiceCommentDataAsset*              LowHealthComment;                                  // 0x1DA0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         LowHealthLimit;                                    // 0x1DA8(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1DAC[0x4];                                     // 0x1DAC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZDialogDataAsset*                    DownedDialog;                                      // 0x1DB0(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZDialogDataAsset*                    InCustodyDialog;                                   // 0x1DB8(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZDialogDataAsset*                    BackFromCustodyDialog;                             // 0x1DC0(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZDialogDataAsset*                    CuffedDialog;                                      // 0x1DC8(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZDialogDataAsset*                    TasedDialog;                                       // 0x1DD0(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZDialogDataAsset*                    SubduedDialog;                                     // 0x1DD8(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint64                                        CurrentCarryNetID;                                 // 0x1DE0(0x0008)(Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1DE8[0xC];                                     // 0x1DE8(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZLockCameraData                     HumanShieldInstigatorLockCameraData;               // 0x1DF4(0x003C)(Edit, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	float                                         NormalTargetingHumanShieldMagnification;           // 0x1E30(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	float                                         OnTopTargetingHumanShieldMagnification;            // 0x1E34(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class UNiagaraComponent*                      EscortCircleEffect;                                // 0x1E38(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	bool                                          bIsInsideEscortCircle;                             // 0x1E40(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1E41[0x3];                                     // 0x1E41(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   EscortEffectColorName;                             // 0x1E44(0x000C)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FLinearColor                           EscortInsideColor;                                 // 0x1E50(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	struct FLinearColor                           EscortOutsideColor;                                // 0x1E60(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZBaseWeaponData*                     UnequippedWeaponData;                              // 0x1E70(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TSubclassOf<class ASBZZiplineMotor>           FPZiplineMotorClass;                               // 0x1E78(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	class USBZEmoteData*                          EmoteData;                                         // 0x1E80(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1E88[0x8];                                     // 0x1E88(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZPlayerAbilitySystemComponent*       PlayerAbilitySystem;                               // 0x1E90(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FGameplayTagContainer                  CancelOnDamageTagContainer;                        // 0x1E98(0x0020)(Edit, DisableEditOnInstance, NativeAccessSpecifierPrivate)
-	struct FGameplayTagContainer                  IgnoreMovementTags;                                // 0x1EB8(0x0020)(Edit, DisableEditOnInstance, NativeAccessSpecifierPrivate)
-	struct FGameplayTagContainer                  IgnoreRotationTags;                                // 0x1ED8(0x0020)(Edit, DisableEditOnInstance, NativeAccessSpecifierPrivate)
-	struct FGameplayTagContainer                  ForbidLandSlideTagContainer;                       // 0x1EF8(0x0020)(Edit, DisableEditOnInstance, NativeAccessSpecifierPrivate)
-	float                                         AbilityMoveEventMinValue;                          // 0x1F18(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         AbilityMoveEventMinDuration;                       // 0x1F1C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1F20[0x14];                                    // 0x1F20(0x0014)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         OnTopBaseFOV;                                      // 0x1F34(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1F38[0x8];                                     // 0x1F38(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class USBZAIVisualDetectionComponent*> VisualDetectors;                                   // 0x1F40(0x0010)(ExportObject, ZeroConstructor, Transient, ContainsInstancedReference, NativeAccessSpecifierPrivate)
-	TArray<struct FSBZDetectionData>              VisualDetectionData;                               // 0x1F50(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1F60[0x8];                                     // 0x1F60(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	EPD3DefeatState                               DefeatState;                                       // 0x1F68(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1F69[0x1];                                     // 0x1F69(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	EPD3DefeatState                               OldDefeatState;                                    // 0x1F6A(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1F6B[0xD];                                     // 0x1F6B(0x000D)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         DefeatTime;                                        // 0x1F78(0x0004)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1F7C[0x1C];                                    // 0x1F7C(0x001C)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMarkerDataAsset*                    ReviveMarker;                                      // 0x1F98(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class USBZMarkerDataAsset*                    TasedMarker;                                       // 0x1FA0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class USBZMarkerDataAsset*                    CuffedMarker;                                      // 0x1FA8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class USBZMarkerDataAsset*                    SubduedMarker;                                     // 0x1FB0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1FB8[0x8];                                     // 0x1FB8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TSubclassOf<class USBZSpawnReviveInvulnerableEffect> SpawnReviveInvulnerableEffect;              // 0x1FC0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FRuntimeFloatCurve                     VisualDetectionMultiplierSlide;                    // 0x1958(0x0088)(Edit, NativeAccessSpecifierPublic)
+	float                                         VisualDetectionMultiplierSprinting;                // 0x19E0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         VisualDetectionMultiplierCrouched;                 // 0x19E4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         VisualDetectionMultiplierStanding;                 // 0x19E8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_19EC[0x4];                                     // 0x19EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRuntimeFloatCurve                     AlertnessMultiplierSlide;                          // 0x19F0(0x0088)(Deprecated, NativeAccessSpecifierPublic)
+	float                                         AlertnessMultiplierSprinting;                      // 0x1A78(0x0004)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AlertnessMultiplierCrouched;                       // 0x1A7C(0x0004)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         AlertnessMultiplierStanding;                       // 0x1A80(0x0004)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1A84[0x4];                                     // 0x1A84(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZShoutoutComponent*                  ShoutoutComponent;                                 // 0x1A88(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USBZVoiceCommentDataAsset*              CallComment;                                       // 0x1A90(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USBZVoiceCommentDataAsset*              HelpComment;                                       // 0x1A98(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USBZVoiceCommentDataAsset*              DownedComment;                                     // 0x1AA0(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class USBZVoiceCommentDataAsset*              GetDownComment;                                    // 0x1AA8(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1AB0[0x90];                                    // 0x1AB0(0x0090)(Fixing Size After Last Property [ Dumper-7 ])
+	TMulticastInlineDelegate<void(bool bIsCasing)> OnCasingChangedDynamic;                           // 0x1B40(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	uint8                                         Pad_1B50[0xA8];                                    // 0x1B50(0x00A8)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         ShoutDownTime;                                     // 0x1BF8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         ShoutDownRange;                                    // 0x1BFC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         IntimidationRange;                                 // 0x1C00(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         OverkillWeaponVODelay;                             // 0x1C04(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         OverkillWeaponVORate;                              // 0x1C08(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1C0C[0x4];                                     // 0x1C0C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZFirstPersonCameraAttachment*        FPCameraAttachment;                                // 0x1C10(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZRecoilComponent*                    RecoilComponent;                                   // 0x1C18(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZAimAssistComponent*                 AimAssistComponent;                                // 0x1C20(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USkeletalMeshComponent*                 Mesh1P;                                            // 0x1C28(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USkeletalMeshComponent*                 Mesh1PBody;                                        // 0x1C30(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZCustomizableSuitMeshComponent*      Mesh1PSuit;                                        // 0x1C38(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USkeletalMeshComponent*                 Mesh1PGloves;                                      // 0x1C40(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZPlayerInteractorComponent*          Interactor;                                        // 0x1C48(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZPlayerAnimationCollectionFPP*       DefaultAnimationCollectionFPP;                     // 0x1C50(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         CasingEyeHeight;                                   // 0x1C58(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         SubduedEyeHeight;                                  // 0x1C5C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         DownedEyeHeight;                                   // 0x1C60(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         BleedoutEyeHeight;                                 // 0x1C64(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         SlideEyeHeight;                                    // 0x1C68(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         CarryTiltSpeed;                                    // 0x1C6C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         CarryTiltDegrees;                                  // 0x1C70(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         CarryAdditionalTiltDegrees;                        // 0x1C74(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class AActor>                     WhizzbyActorClass;                                 // 0x1C78(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class AActor*                                 WhizzbyActor;                                      // 0x1C80(0x0008)(ZeroConstructor, Transient, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class USBZLocalPlayerFeedback>    LandedFeedback;                                    // 0x1C88(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class USBZLocalPlayerFeedback>    JumpedFeedback;                                    // 0x1C90(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class USBZLocalPlayerFeedback>    ArmorDepletedFeedback;                             // 0x1C98(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class USBZLocalPlayerFeedback>    ArmorChunkDepletedFeedback[0x3];                   // 0x1CA0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class USBZLocalPlayerFeedback>    ArmorReplenishedFeedback;                          // 0x1CB8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class USBZLocalPlayerFeedback>    ArmorChunkReplenishedFeedback[0x3];                // 0x1CC0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class USBZLocalPlayerFeedback>    ArmorChunkDamageFeedback[0x3];                     // 0x1CD8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class USBZLocalPlayerFeedback>    HealthDamageFeedback;                              // 0x1CF0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class USBZLocalPlayerFeedback>    SubduedDamageFeedback;                             // 0x1CF8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class USBZLocalPlayerFeedback>    DefeatFeedback;                                    // 0x1D00(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class USBZLocalPlayerFeedback>    SlideFeedback;                                     // 0x1D08(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class USBZLocalPlayerFeedback>    HumanShieldReachSlotFeedBack;                      // 0x1D10(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class USBZLocalPlayerFeedback>    TraverseFeedback;                                  // 0x1D18(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class USBZLocalPlayerFeedback>    RunFeedback;                                       // 0x1D20(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class USBZLocalPlayerFeedback>    OverHealDamageFeedback;                            // 0x1D28(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class USBZLocalPlayerFeedback>    OverHealGainedFeedback;                            // 0x1D30(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class USBZLocalPlayerFeedback>    OverHealRestoredFeedback;                          // 0x1D38(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class USBZLocalPlayerFeedback>    OverHealDepletedFeedback;                          // 0x1D40(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class USBZLocalPlayerFeedback>    ShieldFlashFeedback;                               // 0x1D48(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class USBZLocalPlayerFeedback>    OverskillDepletedFeedback;                         // 0x1D50(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class USBZLocalPlayerFeedback>    OverskillDamageFeedback;                           // 0x1D58(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class USBZLocalPlayerFeedback>    SmokeMasterFeedback;                               // 0x1D60(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FVector_NetQuantize                    DesiredAcceleration;                               // 0x1D68(0x0018)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TArray<TSubclassOf<class UCameraModifier>>    CameraModifiers;                                   // 0x1D80(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	class USBZVoiceCommentDataAsset*              RevivedComment;                                    // 0x1D90(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZVoiceCommentDataAsset*              UncuffedComment;                                   // 0x1D98(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZVoiceCommentDataAsset*              StealthMaskOnComment;                              // 0x1DA0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZVoiceCommentDataAsset*              LoudMaskOnComment;                                 // 0x1DA8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZVoiceCommentDataAsset*              LowHealthComment;                                  // 0x1DB0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         LowHealthLimit;                                    // 0x1DB8(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1DBC[0x4];                                     // 0x1DBC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZDialogDataAsset*                    DownedDialog;                                      // 0x1DC0(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZDialogDataAsset*                    InCustodyDialog;                                   // 0x1DC8(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZDialogDataAsset*                    BackFromCustodyDialog;                             // 0x1DD0(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZDialogDataAsset*                    CuffedDialog;                                      // 0x1DD8(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZDialogDataAsset*                    TasedDialog;                                       // 0x1DE0(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZDialogDataAsset*                    SubduedDialog;                                     // 0x1DE8(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint64                                        CurrentCarryNetID;                                 // 0x1DF0(0x0008)(Net, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1DF8[0xC];                                     // 0x1DF8(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZLockCameraData                     HumanShieldInstigatorLockCameraData;               // 0x1E04(0x003C)(Edit, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
+	float                                         NormalTargetingHumanShieldMagnification;           // 0x1E40(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	float                                         OnTopTargetingHumanShieldMagnification;            // 0x1E44(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class UNiagaraComponent*                      EscortCircleEffect;                                // 0x1E48(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	bool                                          bIsInsideEscortCircle;                             // 0x1E50(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1E51[0x3];                                     // 0x1E51(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   EscortEffectColorName;                             // 0x1E54(0x000C)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FLinearColor                           EscortInsideColor;                                 // 0x1E60(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	struct FLinearColor                           EscortOutsideColor;                                // 0x1E70(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZBaseWeaponData*                     UnequippedWeaponData;                              // 0x1E80(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	TSubclassOf<class ASBZZiplineMotor>           FPZiplineMotorClass;                               // 0x1E88(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class USBZEmoteData*                          EmoteData;                                         // 0x1E90(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	uint8                                         Pad_1E98[0x8];                                     // 0x1E98(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZPlayerAbilitySystemComponent*       PlayerAbilitySystem;                               // 0x1EA0(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FGameplayTagContainer                  CancelOnDamageTagContainer;                        // 0x1EA8(0x0020)(Edit, DisableEditOnInstance, NativeAccessSpecifierPrivate)
+	struct FGameplayTagContainer                  IgnoreMovementTags;                                // 0x1EC8(0x0020)(Edit, DisableEditOnInstance, NativeAccessSpecifierPrivate)
+	struct FGameplayTagContainer                  IgnoreRotationTags;                                // 0x1EE8(0x0020)(Edit, DisableEditOnInstance, NativeAccessSpecifierPrivate)
+	struct FGameplayTagContainer                  ForbidLandSlideTagContainer;                       // 0x1F08(0x0020)(Edit, DisableEditOnInstance, NativeAccessSpecifierPrivate)
+	float                                         AbilityMoveEventMinValue;                          // 0x1F28(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         AbilityMoveEventMinDuration;                       // 0x1F2C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1F30[0x14];                                    // 0x1F30(0x0014)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         OnTopBaseFOV;                                      // 0x1F44(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1F48[0x8];                                     // 0x1F48(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class USBZAIVisualDetectionComponent*> VisualDetectors;                                   // 0x1F50(0x0010)(ExportObject, ZeroConstructor, Transient, ContainsInstancedReference, NativeAccessSpecifierPrivate)
+	TArray<struct FSBZDetectionData>              VisualDetectionData;                               // 0x1F60(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1F70[0x8];                                     // 0x1F70(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	EPD3DefeatState                               DefeatState;                                       // 0x1F78(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1F79[0x1];                                     // 0x1F79(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	EPD3DefeatState                               OldDefeatState;                                    // 0x1F7A(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1F7B[0xD];                                     // 0x1F7B(0x000D)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         DefeatTime;                                        // 0x1F88(0x0004)(Net, ZeroConstructor, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1F8C[0x1C];                                    // 0x1F8C(0x001C)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMarkerDataAsset*                    ReviveMarker;                                      // 0x1FA8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USBZMarkerDataAsset*                    TasedMarker;                                       // 0x1FB0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USBZMarkerDataAsset*                    CuffedMarker;                                      // 0x1FB8(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USBZMarkerDataAsset*                    SubduedMarker;                                     // 0x1FC0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_1FC8[0x8];                                     // 0x1FC8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMarkerDataAsset*                    PlayerMarkerAsset;                                 // 0x1FD0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FVector                                PlayerMarkerOffset;                                // 0x1FD8(0x0018)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class FName                                   PlayerMarkerSocketName;                            // 0x1FF0(0x000C)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1FFC[0x4];                                     // 0x1FFC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZOutlineAsset*                       DownedOutline;                                     // 0x2000(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2008[0x8];                                     // 0x2008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZPlayerState*                        SBZPlayerState;                                    // 0x2010(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class ASBZPlayerState*                        OldSBZPlayerState;                                 // 0x2018(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class USBZPlayerAttributeSet*                 PlayerAttributeSet;                                // 0x2020(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class USBZTiltCameraModifier*                 TiltCameraModifier;                                // 0x2028(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class USBZPitchLookCameraModifier*            PitchLookCameraModifier;                           // 0x2030(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class USBZHeightTransitionCameraModifier*     HeightTransitionCameraModifier;                    // 0x2038(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class USBZFloorHeightCameraSmoother*          FloorHeightCameraModifier;                         // 0x2040(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         SubduedTiltSpeed;                                  // 0x2048(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         SubduedTiltDegrees;                                // 0x204C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         DownedTiltSpeed;                                   // 0x2050(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         DownedTiltDegrees;                                 // 0x2054(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         BleedOutTiltSpeed;                                 // 0x2058(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         BleedOutTiltDegrees;                               // 0x205C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         SubduedPitchLookSpeed;                             // 0x2060(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         SubduedPitchDegrees;                               // 0x2064(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         BleedOutPitchLookSpeed;                            // 0x2068(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         BleedOutPitchDegrees;                              // 0x206C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         ReviveTiltSpeed;                                   // 0x2070(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         RequestOverkillWeaponAnimationTime;                // 0x2074(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         FirstAidKitOverHealAmount;                         // 0x2078(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_207C[0x4];                                     // 0x207C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRuntimeFloatCurve                     FallDamageCurve;                                   // 0x2080(0x0088)(Edit, DisableEditOnInstance, NativeAccessSpecifierPrivate)
-	struct FRuntimeFloatCurve                     MagnificationInputCurve;                           // 0x2108(0x0088)(Edit, DisableEditOnInstance, NativeAccessSpecifierPrivate)
-	float                                         FallingStartHeight;                                // 0x2190(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bHasTriggeredCoupDeGraceSkill;                     // 0x2194(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2195[0xB];                                     // 0x2195(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AActor*>                         CurrentFollowersArray;                             // 0x21A0(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_21B0[0x8];                                     // 0x21B0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         MiniGameDetectionMultiplier;                       // 0x21B8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         CuttingToolDetectionMultiplier;                    // 0x21BC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         GadgetDetectionMultiplier;                         // 0x21C0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         ThrowItemDetectionMultiplier;                      // 0x21C4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         EscortTutorialDetectionMultiplier;                 // 0x21C8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_21CC[0x1C];                                    // 0x21CC(0x001C)(Fixing Size After Last Property [ Dumper-7 ])
-	bool                                          bIsCurrentNavLocationValid;                        // 0x21E8(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_21E9[0x3];                                     // 0x21E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         NavLocationSaveInterval;                           // 0x21EC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         NavigationZAxisLocationOffset;                     // 0x21F0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_21F4[0x14];                                    // 0x21F4(0x0014)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class USBZToolData*>                   ModifiedToolDataArray;                             // 0x2208(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
-	class ASBZTool*                               PrimaryTool;                                       // 0x2218(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class ASBZCuttingTool*                        CuttingTool;                                       // 0x2220(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class ASBZTool*                               CurrentReplicatedPlaceableTool;                    // 0x2228(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	int32                                         SlideFeedbackID;                                   // 0x2230(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	int32                                         RunFeedbackID;                                     // 0x2234(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2238[0x8];                                     // 0x2238(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZLastAttackerData                   LastAttackerData;                                  // 0x2240(0x0018)(Transient, NativeAccessSpecifierPrivate)
-	class USBZTasedData*                          TasedData;                                         // 0x2258(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2260[0x58];                                    // 0x2260(0x0058)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZPlayerCameraManager*                CurrentCameraManager;                              // 0x22B8(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_22C0[0x8];                                     // 0x22C0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                PlayerMicroCameraOffset;                           // 0x22C8(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class FName                                   PlayerMicroCameraSocketName;                       // 0x22E0(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_22EC[0x8C];                                    // 0x22EC(0x008C)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMiniGameComponent*                  MiniGameComponent;                                 // 0x2378(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class USBZMiniGameComponent*                  CurrentMiniGameComponent;                          // 0x2380(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TArray<TWeakObjectPtr<class ASBZAICharacter>> IntimidateCiviliansWithinRangeArray;               // 0x2388(0x0010)(ZeroConstructor, Transient, UObjectWrapper, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2398[0x8];                                     // 0x2398(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFloatInterval                         IntimidateCiviliansInterval;                       // 0x23A0(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                          bIsLocalKillingHumanShield;                        // 0x23A8(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_23A9[0x3];                                     // 0x23A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         HumanShieldStartTime;                              // 0x23AC(0x0004)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_23B0[0x80];                                    // 0x23B0(0x0080)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                DropPlaceableEquippableAngularForce;               // 0x2430(0x0018)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FVector                                DropPlaceableEquippableVelocity;                   // 0x2448(0x0018)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         DropPlaceableEquippableForwardScale;               // 0x2460(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         DropPlaceableEquippableBackwardScale;              // 0x2464(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FVector                                ThrowStartOffset;                                  // 0x2468(0x0018)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2480[0x28];                                    // 0x2480(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZControlsReference                  DefeatControlsReference;                           // 0x24A8(0x0030)(Edit, NativeAccessSpecifierPrivate)
-	int32                                         DefeatControlsReferenceID;                         // 0x24D8(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         MinLandingSlideWalkToRunLerp;                      // 0x24DC(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class AActor*                                 LastCuttableActor;                                 // 0x24E0(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class AActor*                                 LastHackedActor;                                   // 0x24E8(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	struct FGameplayTag                           SpawnAnimationTag;                                 // 0x24F0(0x000C)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_24FC[0x4];                                     // 0x24FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             ClientUpdateLandHitResult;                         // 0x2500(0x0108)(Edit, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPrivate)
-	bool                                          bIsNextLandServerCorrected;                        // 0x2608(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2609[0x7F];                                    // 0x2609(0x007F)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FRuntimeFloatCurve                     PostProcessFadeInBlendCurve;                       // 0x2688(0x0088)(Edit, NativeAccessSpecifierPrivate)
-	struct FRuntimeFloatCurve                     PostProcessFadeOutBlendCurve;                      // 0x2710(0x0088)(Edit, NativeAccessSpecifierPrivate)
-	float                                         ReflectorShieldMaxBlindedDuration;                 // 0x2798(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                         ReflectorShieldCooldownTime;                       // 0x279C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_27A0[0x38];                                    // 0x27A0(0x0038)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSBZEquippableConfig>           StoredConsumableConfigArray;                       // 0x27D8(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_27E8[0x8];                                     // 0x27E8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSBZEquippableConfig>           SafeEquippableConfigArray;                         // 0x27F0(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2800[0x8];                                     // 0x2800(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UAkAudioEvent*                          ThePunchActivatedEvent;                            // 0x2808(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UAkAudioEvent*                          ThePunchEndedEvent;                                // 0x2810(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UAkAudioEvent*                          OperatorActivatedEvent;                            // 0x2818(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UAkAudioEvent*                          PlayerBreakTraversalDestructibleEvent;             // 0x2820(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2828[0x6C];                                    // 0x2828(0x006C)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         MinServerReloadStatePredictionTimeout;             // 0x2894(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2898[0x8];                                     // 0x2898(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	TSubclassOf<class USBZSpawnReviveInvulnerableEffect> SpawnReviveInvulnerableEffect;              // 0x1FD0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_1FD8[0x8];                                     // 0x1FD8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMarkerDataAsset*                    PlayerMarkerAsset;                                 // 0x1FE0(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FVector                                PlayerMarkerOffset;                                // 0x1FE8(0x0018)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class FName                                   PlayerMarkerSocketName;                            // 0x2000(0x000C)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_200C[0x4];                                     // 0x200C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZOutlineAsset*                       DownedOutline;                                     // 0x2010(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_2018[0x8];                                     // 0x2018(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZPlayerState*                        SBZPlayerState;                                    // 0x2020(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class ASBZPlayerState*                        OldSBZPlayerState;                                 // 0x2028(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USBZPlayerAttributeSet*                 PlayerAttributeSet;                                // 0x2030(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USBZTiltCameraModifier*                 TiltCameraModifier;                                // 0x2038(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USBZPitchLookCameraModifier*            PitchLookCameraModifier;                           // 0x2040(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USBZHeightTransitionCameraModifier*     HeightTransitionCameraModifier;                    // 0x2048(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USBZFloorHeightCameraSmoother*          FloorHeightCameraModifier;                         // 0x2050(0x0008)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         SubduedTiltSpeed;                                  // 0x2058(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         SubduedTiltDegrees;                                // 0x205C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         DownedTiltSpeed;                                   // 0x2060(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         DownedTiltDegrees;                                 // 0x2064(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         BleedOutTiltSpeed;                                 // 0x2068(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         BleedOutTiltDegrees;                               // 0x206C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         SubduedPitchLookSpeed;                             // 0x2070(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         SubduedPitchDegrees;                               // 0x2074(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         BleedOutPitchLookSpeed;                            // 0x2078(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         BleedOutPitchDegrees;                              // 0x207C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         ReviveTiltSpeed;                                   // 0x2080(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         RequestOverkillWeaponAnimationTime;                // 0x2084(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         FirstAidKitOverHealAmount;                         // 0x2088(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_208C[0x4];                                     // 0x208C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRuntimeFloatCurve                     FallDamageCurve;                                   // 0x2090(0x0088)(Edit, DisableEditOnInstance, NativeAccessSpecifierPrivate)
+	struct FRuntimeFloatCurve                     MagnificationInputCurve;                           // 0x2118(0x0088)(Edit, DisableEditOnInstance, NativeAccessSpecifierPrivate)
+	float                                         FallingStartHeight;                                // 0x21A0(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bHasTriggeredCoupDeGraceSkill;                     // 0x21A4(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_21A5[0xB];                                     // 0x21A5(0x000B)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class AActor*>                         CurrentFollowersArray;                             // 0x21B0(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_21C0[0x8];                                     // 0x21C0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         MiniGameDetectionMultiplier;                       // 0x21C8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         CuttingToolDetectionMultiplier;                    // 0x21CC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         GadgetDetectionMultiplier;                         // 0x21D0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         ThrowItemDetectionMultiplier;                      // 0x21D4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         EscortTutorialDetectionMultiplier;                 // 0x21D8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_21DC[0x1C];                                    // 0x21DC(0x001C)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          bIsCurrentNavLocationValid;                        // 0x21F8(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_21F9[0x3];                                     // 0x21F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         NavLocationSaveInterval;                           // 0x21FC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         NavigationZAxisLocationOffset;                     // 0x2200(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_2204[0x14];                                    // 0x2204(0x0014)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class USBZToolData*>                   ModifiedToolDataArray;                             // 0x2218(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, NativeAccessSpecifierPrivate)
+	class ASBZTool*                               PrimaryTool;                                       // 0x2228(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class ASBZCuttingTool*                        CuttingTool;                                       // 0x2230(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class ASBZTool*                               CurrentReplicatedPlaceableTool;                    // 0x2238(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	int32                                         SlideFeedbackID;                                   // 0x2240(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	int32                                         RunFeedbackID;                                     // 0x2244(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_2248[0x8];                                     // 0x2248(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZLastAttackerData                   LastAttackerData;                                  // 0x2250(0x0018)(Transient, NativeAccessSpecifierPrivate)
+	class USBZTasedData*                          TasedData;                                         // 0x2268(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_2270[0x58];                                    // 0x2270(0x0058)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZPlayerCameraManager*                CurrentCameraManager;                              // 0x22C8(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_22D0[0x8];                                     // 0x22D0(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                PlayerMicroCameraOffset;                           // 0x22D8(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class FName                                   PlayerMicroCameraSocketName;                       // 0x22F0(0x000C)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_22FC[0x8C];                                    // 0x22FC(0x008C)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMiniGameComponent*                  MiniGameComponent;                                 // 0x2388(0x0008)(Edit, ExportObject, ZeroConstructor, EditConst, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class USBZMiniGameComponent*                  CurrentMiniGameComponent;                          // 0x2390(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TArray<TWeakObjectPtr<class ASBZAICharacter>> IntimidateCiviliansWithinRangeArray;               // 0x2398(0x0010)(ZeroConstructor, Transient, UObjectWrapper, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_23A8[0x8];                                     // 0x23A8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFloatInterval                         IntimidateCiviliansInterval;                       // 0x23B0(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                          bIsLocalKillingHumanShield;                        // 0x23B8(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_23B9[0x3];                                     // 0x23B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         HumanShieldStartTime;                              // 0x23BC(0x0004)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_23C0[0x80];                                    // 0x23C0(0x0080)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                DropPlaceableEquippableAngularForce;               // 0x2440(0x0018)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FVector                                DropPlaceableEquippableVelocity;                   // 0x2458(0x0018)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         DropPlaceableEquippableForwardScale;               // 0x2470(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         DropPlaceableEquippableBackwardScale;              // 0x2474(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FVector                                ThrowStartOffset;                                  // 0x2478(0x0018)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_2490[0x28];                                    // 0x2490(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZControlsReference                  DefeatControlsReference;                           // 0x24B8(0x0030)(Edit, NativeAccessSpecifierPrivate)
+	int32                                         DefeatControlsReferenceID;                         // 0x24E8(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         MinLandingSlideWalkToRunLerp;                      // 0x24EC(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class AActor*                                 LastCuttableActor;                                 // 0x24F0(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class AActor*                                 LastHackedActor;                                   // 0x24F8(0x0008)(ZeroConstructor, Transient, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	struct FGameplayTag                           SpawnAnimationTag;                                 // 0x2500(0x000C)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_250C[0x4];                                     // 0x250C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             ClientUpdateLandHitResult;                         // 0x2510(0x0108)(Edit, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, ContainsInstancedReference, NativeAccessSpecifierPrivate)
+	bool                                          bIsNextLandServerCorrected;                        // 0x2618(0x0001)(Edit, ZeroConstructor, DisableEditOnTemplate, Transient, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_2619[0x7F];                                    // 0x2619(0x007F)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FRuntimeFloatCurve                     PostProcessFadeInBlendCurve;                       // 0x2698(0x0088)(Edit, NativeAccessSpecifierPrivate)
+	struct FRuntimeFloatCurve                     PostProcessFadeOutBlendCurve;                      // 0x2720(0x0088)(Edit, NativeAccessSpecifierPrivate)
+	float                                         ReflectorShieldMaxBlindedDuration;                 // 0x27A8(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                         ReflectorShieldCooldownTime;                       // 0x27AC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_27B0[0x38];                                    // 0x27B0(0x0038)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSBZEquippableConfig>           StoredConsumableConfigArray;                       // 0x27E8(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_27F8[0x8];                                     // 0x27F8(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSBZEquippableConfig>           SafeEquippableConfigArray;                         // 0x2800(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_2810[0x8];                                     // 0x2810(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UAkAudioEvent*                          ThePunchActivatedEvent;                            // 0x2818(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UAkAudioEvent*                          ThePunchEndedEvent;                                // 0x2820(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UAkAudioEvent*                          OperatorActivatedEvent;                            // 0x2828(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UAkAudioEvent*                          PlayerBreakTraversalDestructibleEvent;             // 0x2830(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_2838[0x6C];                                    // 0x2838(0x006C)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         MinServerReloadStatePredictionTimeout;             // 0x28A4(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_28A8[0x8];                                     // 0x28A8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	int32 ApplyCameraFeedback(struct FSBZLocalPlayerFeedbackParameters& Parameters);
@@ -69795,7 +69797,7 @@ DUMPER7_ASSERTS_USBZPlayerCrouchAbility;
 
 // Class Starbreeze.SBZPlayerEmoteCamera
 // 0x0018 (0x0410 - 0x03F8)
-class ASBZPlayerEmoteCamera final : public ASpectatorPawn
+class ASBZPlayerEmoteCamera : public ASpectatorPawn
 {
 public:
 	class USBZSpringArmComponent*                 SpringArm;                                         // 0x03F8(0x0008)(Edit, BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, EditConst, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -69949,7 +69951,7 @@ DUMPER7_ASSERTS_USBZPlayerFireDualWieldWeaponAbility;
 
 // Class Starbreeze.SBZTankAttributeSet
 // 0x0098 (0x0318 - 0x0280)
-class USBZTankAttributeSet final : public USBZAICharacterAttributeSet
+class USBZTankAttributeSet : public USBZAICharacterAttributeSet
 {
 public:
 	struct FGameplayAttributeData                 VisorArmor;                                        // 0x0280(0x0010)(BlueprintVisible, BlueprintReadOnly, Net, RepNotify, NativeAccessSpecifierPublic)
@@ -69982,7 +69984,7 @@ DUMPER7_ASSERTS_USBZTankAttributeSet;
 
 // Class Starbreeze.SBZPlayerGrenadeProjectileCluster
 // 0x0008 (0x0640 - 0x0638)
-class ASBZPlayerGrenadeProjectileCluster final : public ASBZPlayerMambaGrenadeProjectile
+class ASBZPlayerGrenadeProjectileCluster : public ASBZPlayerMambaGrenadeProjectile
 {
 public:
 	float                                         AdditionalRandomDelay;                             // 0x0638(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -70246,7 +70248,7 @@ DUMPER7_ASSERTS_ASBZPlayerLookAtTriggeredVoice;
 
 // Class Starbreeze.SBZPlayerM606HeatShapedChargeGrenadeProjectile
 // 0x0010 (0x0650 - 0x0640)
-class ASBZPlayerM606HeatShapedChargeGrenadeProjectile final : public ASBZPlayerM606GrenadeProjectile
+class ASBZPlayerM606HeatShapedChargeGrenadeProjectile : public ASBZPlayerM606GrenadeProjectile
 {
 public:
 	float                                         RegularExplosionRange;                             // 0x0640(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -70434,7 +70436,7 @@ DUMPER7_ASSERTS_USBZPlayerPickupEventConfig;
 
 // Class Starbreeze.SBZSpawnLocationHandler
 // 0x0168 (0x0490 - 0x0328)
-class alignas(0x10) ASBZSpawnLocationHandler final : public AActor
+class alignas(0x10) ASBZSpawnLocationHandler : public AActor
 {
 public:
 	TMulticastInlineDelegate<void(int32 LocationIndex)> OnLocationSelected;                          // 0x0328(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintAuthorityOnly, NativeAccessSpecifierPublic)
@@ -70565,7 +70567,7 @@ DUMPER7_ASSERTS_USBZPlayerTackleRunningAbility;
 
 // Class Starbreeze.SBZPlayerThePunchHeavyMeleeAbility
 // 0x0008 (0x0518 - 0x0510)
-class USBZPlayerThePunchHeavyMeleeAbility final : public USBZPlayerThePunchMeleeAbility
+class USBZPlayerThePunchHeavyMeleeAbility : public USBZPlayerThePunchMeleeAbility
 {
 public:
 	uint8                                         Pad_510[0x8];                                      // 0x0510(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -70860,7 +70862,7 @@ DUMPER7_ASSERTS_ASBZStateMachineDebug;
 
 // Class Starbreeze.SBZPowerUpCharges
 // 0x0028 (0x0378 - 0x0350)
-class ASBZPowerUpCharges final : public ASBZPowerUp
+class ASBZPowerUpCharges : public ASBZPowerUp
 {
 public:
 	int32                                         NumberOfCharges;                                   // 0x0350(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -71316,7 +71318,7 @@ DUMPER7_ASSERTS_USBZQueryPrivilege;
 
 // Class Starbreeze.SBZZipline
 // 0x00B8 (0x03E0 - 0x0328)
-class ASBZZipline final : public AActor
+class ASBZZipline : public AActor
 {
 public:
 	struct FVector                                NavLinkStart;                                      // 0x0328(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -71908,7 +71910,7 @@ DUMPER7_ASSERTS_USBZReloadWeaponNotify;
 
 // Class Starbreeze.SBZRenderTargetWidgetComponent
 // 0x0010 (0x06E0 - 0x06D0)
-class USBZRenderTargetWidgetComponent final : public UWidgetComponent
+class USBZRenderTargetWidgetComponent : public UWidgetComponent
 {
 public:
 	float                                         OwnerRenderTimeDelay;                              // 0x06D0(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -72086,7 +72088,7 @@ DUMPER7_ASSERTS_ASBZReplayPlayerController;
 
 // Class Starbreeze.SBZViewTargetCollectionInteraction
 // 0x0010 (0x0338 - 0x0328)
-class ASBZViewTargetCollectionInteraction final : public AActor
+class ASBZViewTargetCollectionInteraction : public AActor
 {
 public:
 	class AActor*                                 ViewTargetCollection;                              // 0x0328(0x0008)(Edit, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -72309,7 +72311,7 @@ DUMPER7_ASSERTS_USBZSkillMedicSteadyHands;
 
 // Class Starbreeze.SBZRequestOverkillWeaponAbility
 // 0x0000 (0x0510 - 0x0510)
-class USBZRequestOverkillWeaponAbility final : public USBZRequestOverkillWithPhoneAbility
+class USBZRequestOverkillWeaponAbility : public USBZRequestOverkillWithPhoneAbility
 {
 public:
 	static class UClass* StaticClass()
@@ -72329,7 +72331,7 @@ DUMPER7_ASSERTS_USBZRequestOverkillWeaponAbility;
 
 // Class Starbreeze.SBZWinch
 // 0x0058 (0x05A8 - 0x0550)
-class ASBZWinch final : public ASBZBreachingEquipmentBase
+class ASBZWinch : public ASBZBreachingEquipmentBase
 {
 public:
 	TMulticastInlineDelegate<void()>              OnWinchNeedsAdjusting;                             // 0x0550(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintAuthorityOnly, NativeAccessSpecifierPublic)
@@ -72376,7 +72378,7 @@ DUMPER7_ASSERTS_ASBZWinch;
 
 // Class Starbreeze.SBZRequestOverskillOperatorAbility
 // 0x0008 (0x0518 - 0x0510)
-class USBZRequestOverskillOperatorAbility final : public USBZRequestOverkillWithPhoneAbility
+class USBZRequestOverskillOperatorAbility : public USBZRequestOverkillWithPhoneAbility
 {
 public:
 	class USBZVoiceCommentDataAsset*              OperatorActivatedComment;                          // 0x0510(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -72620,7 +72622,7 @@ DUMPER7_ASSERTS_USBZSkillShotgunSpecShotgunObliteratorAced;
 
 // Class Starbreeze.SBZSabotagePoint
 // 0x00C8 (0x03F0 - 0x0328)
-class ASBZSabotagePoint final : public AActor, public ISBZRoomVolumeInterface, public ISBZAIActionInteractableInterface, public ISBZAIAttractorInterface, public ISBZBreakableInterface, public MIPad::Pad<0x18, 0x360>, public ISBZMarkerInfoInterface
+class ASBZSabotagePoint : public AActor, public ISBZRoomVolumeInterface, public ISBZAIActionInteractableInterface, public ISBZAIAttractorInterface, public ISBZBreakableInterface, public MIPad::Pad<0x18, 0x360>, public ISBZMarkerInfoInterface
 {
 public:
 	TMulticastInlineDelegate<void(bool bSabotaged)> OnSabotaged;                                     // 0x0368(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintAuthorityOnly, NativeAccessSpecifierPublic)
@@ -72820,7 +72822,7 @@ DUMPER7_ASSERTS_USBZSaveManager;
 
 // Class Starbreeze.SBZSawEquippedAbility
 // 0x0018 (0x04E8 - 0x04D0)
-class USBZSawEquippedAbility final : public USBZGameplayAbility
+class USBZSawEquippedAbility : public USBZGameplayAbility
 {
 public:
 	uint8                                         Pad_4D0[0x10];                                     // 0x04D0(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
@@ -73204,7 +73206,7 @@ DUMPER7_ASSERTS_USBZSkillManipulationHumanResourcesV2Aced;
 
 // Class Starbreeze.SBZSentryGunAnimation
 // 0x0080 (0x0450 - 0x03D0)
-class USBZSentryGunAnimation final : public UAnimInstance
+class USBZSentryGunAnimation : public UAnimInstance
 {
 public:
 	struct FRotator                               SentryYawOnlyRotation;                             // 0x03C8(0x0018)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
@@ -73235,7 +73237,7 @@ DUMPER7_ASSERTS_USBZSentryGunAnimation;
 
 // Class Starbreeze.SBZSentryGunRangedWeaponAbility
 // 0x0000 (0x0528 - 0x0528)
-class USBZSentryGunRangedWeaponAbility final : public USBZFireRangedWeaponAbility
+class USBZSentryGunRangedWeaponAbility : public USBZFireRangedWeaponAbility
 {
 public:
 	static class UClass* StaticClass()
@@ -74669,7 +74671,7 @@ DUMPER7_ASSERTS_USBZShieldHunkeredDownNotifyState;
 
 // Class Starbreeze.SBZVolumeDamageProp
 // 0x00C0 (0x03E8 - 0x0328)
-class ASBZVolumeDamageProp final : public AActor, public ISBZVolumeDamageInterface
+class ASBZVolumeDamageProp : public AActor, public ISBZVolumeDamageInterface
 {
 public:
 	TSoftObjectPtr<class ATriggerVolume>          VolumeSelector;                                    // 0x0330(0x0030)(Edit, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -74729,7 +74731,7 @@ DUMPER7_ASSERTS_ASBZVolumeDamageProp;
 
 // Class Starbreeze.SBZShockGrenade
 // 0x00C0 (0x0820 - 0x0760)
-class ASBZShockGrenade final : public ASBZGrenade
+class ASBZShockGrenade : public ASBZGrenade
 {
 public:
 	class UCapsuleComponent*                      CapsuleCollision;                                  // 0x0760(0x0008)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -75601,7 +75603,7 @@ DUMPER7_ASSERTS_USBZSkillAmmoSpecialistPlateUp;
 
 // Class Starbreeze.SBZVehicleWheel
 // 0x0008 (0x02F0 - 0x02E8)
-class USBZVehicleWheel final : public UChaosVehicleWheel
+class USBZVehicleWheel : public UChaosVehicleWheel
 {
 public:
 	uint8                                         Pad_2E8[0x8];                                      // 0x02E8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -77951,7 +77953,7 @@ DUMPER7_ASSERTS_USBZSkillPistolSpecPistolPocketsAced;
 
 // Class Starbreeze.SBZTrafficLights
 // 0x0038 (0x0360 - 0x0328)
-class ASBZTrafficLights final : public AActor
+class ASBZTrafficLights : public AActor
 {
 public:
 	TArray<struct FSBZTrafficLightPool>           PoolArray;                                         // 0x0328(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
@@ -80407,7 +80409,7 @@ DUMPER7_ASSERTS_USBZSurfaceTypesConfig;
 
 // Class Starbreeze.SBZSuspiciousBagItem
 // 0x0010 (0x0438 - 0x0428)
-class ASBZSuspiciousBagItem final : public ASBZAttractableBagItem
+class ASBZSuspiciousBagItem : public ASBZAttractableBagItem
 {
 public:
 	bool                                          bIsDespawnedInLoud;                                // 0x0428(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -80431,7 +80433,7 @@ DUMPER7_ASSERTS_ASBZSuspiciousBagItem;
 
 // Class Starbreeze.SBZWheeledVehicleAnimation
 // 0x0000 (0x0BB0 - 0x0BB0)
-class USBZWheeledVehicleAnimation final : public USBZVehicleAnimation
+class USBZWheeledVehicleAnimation : public USBZVehicleAnimation
 {
 public:
 	static class UClass* StaticClass()
@@ -80702,7 +80704,7 @@ DUMPER7_ASSERTS_USBZUITextBlock;
 
 // Class Starbreeze.SBZThermite
 // 0x01A8 (0x04D0 - 0x0328)
-class ASBZThermite final : public AActor, public ISBZTimedObjectiveInterface, public MIPad::Pad<0x30, 0x360>, public ISBZBreakableInterface, public MIPad::Pad<0x18, 0x380>, public ISBZMarkerInfoInterface
+class ASBZThermite : public AActor, public ISBZTimedObjectiveInterface, public MIPad::Pad<0x30, 0x360>, public ISBZBreakableInterface, public MIPad::Pad<0x18, 0x380>, public ISBZMarkerInfoInterface
 {
 public:
 	TMulticastInlineDelegate<void()>              OnThermiteComplete;                                // 0x0388(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintAuthorityOnly, NativeAccessSpecifierPublic)
@@ -80868,7 +80870,7 @@ DUMPER7_ASSERTS_ASBZThrowableKnife;
 
 // Class Starbreeze.SBZThrowableTomahawk
 // 0x0050 (0x0770 - 0x0720)
-class ASBZThrowableTomahawk final : public ASBZThrowableKnife
+class ASBZThrowableTomahawk : public ASBZThrowableKnife
 {
 public:
 	uint8                                         Pad_720[0x4];                                      // 0x0720(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -81223,7 +81225,7 @@ DUMPER7_ASSERTS_USBZTiltCameraModifier;
 
 // Class Starbreeze.SBZTimedBagConverter
 // 0x0070 (0x0398 - 0x0328)
-class ASBZTimedBagConverter final : public AActor, public ISBZBreakableInterface
+class ASBZTimedBagConverter : public AActor, public ISBZBreakableInterface
 {
 public:
 	uint8                                         Pad_330[0x18];                                     // 0x0330(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
@@ -82398,7 +82400,7 @@ DUMPER7_ASSERTS_USBZUserManager;
 
 // Class Starbreeze.SBZVantagePoint
 // 0x0008 (0x0330 - 0x0328)
-class ASBZVantagePoint final : public AActor
+class ASBZVantagePoint : public AActor
 {
 public:
 	uint8                                         Pad_328[0x8];                                      // 0x0328(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -84713,7 +84715,7 @@ DUMPER7_ASSERTS_USBZZiplineSettings;
 
 // Class Starbreeze.SBZZipTieEquippable
 // 0x0010 (0x0580 - 0x0570)
-class ASBZZipTieEquippable final : public ASBZEquippable
+class ASBZZipTieEquippable : public ASBZEquippable
 {
 public:
 	class UStaticMesh*                            BrokenMesh;                                        // 0x0570(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)

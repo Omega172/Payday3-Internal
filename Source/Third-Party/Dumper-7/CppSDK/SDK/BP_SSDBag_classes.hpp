@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_SSDBag_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SSDBag_C;
 
 SDK_NAMESPACE_END

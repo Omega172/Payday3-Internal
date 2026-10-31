@@ -17,14 +17,14 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_BaseMovingInteractable.BP_BaseMovingInteractable_C.BP_OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_BaseMovingInteractable_C_BP_OnStateChanged final
+// Function BP_BaseMovingInteractable.BP_BaseMovingInteractable_C.UserConstructionScript
+// 0x0018 (0x0018 - 0x0000)
+struct BP_BaseMovingInteractable_C_UserConstructionScript final
 {
 public:
-	bool                                          bNewState;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmentics;                                     // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0000(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_BaseMovingInteractable_C_UserConstructionScript;
 
 // Function BP_BaseMovingInteractable.BP_BaseMovingInteractable_C.ExecuteUbergraph_BP_BaseMovingInteractable
 // 0x0170 (0x0170 - 0x0000)
@@ -48,14 +48,17 @@ public:
 	double                                        K2Node_Select_Option_1_ImplicitCast;               // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetNewTime_NewTime_ImplicitCast;          // 0x0168(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_BaseMovingInteractable_C_ExecuteUbergraph_BP_BaseMovingInteractable;
 
-// Function BP_BaseMovingInteractable.BP_BaseMovingInteractable_C.UserConstructionScript
-// 0x0018 (0x0018 - 0x0000)
-struct BP_BaseMovingInteractable_C_UserConstructionScript final
+// Function BP_BaseMovingInteractable.BP_BaseMovingInteractable_C.BP_OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_BaseMovingInteractable_C_BP_OnStateChanged final
 {
 public:
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0000(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bNewState;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmentics;                                     // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_BaseMovingInteractable_C_BP_OnStateChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

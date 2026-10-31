@@ -32,16 +32,16 @@ public:
 	class UWidgetSwitcher*                        WidgetSwitcher_99;                                 // 0x0330(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Active();
-	void Done();
-	void ExecuteUbergraph_WBP_DAT_AISystem_01_Base(int32 EntryPoint);
-	void Interupted();
-	void NotActive();
-	void Progressing();
-	void setProgress(int32 InputPin);
-	void Unlocked();
-	void UpdateSuccessText(const class FText& InText);
 	void UpdateUnlockDisplayText(const struct FSBZHackableDisplayText& NewDisplayText);
+	void UpdateSuccessText(const class FText& InText);
+	void Unlocked();
+	void setProgress(int32 InputPin);
+	void Progressing();
+	void NotActive();
+	void Interupted();
+	void ExecuteUbergraph_WBP_DAT_AISystem_01_Base(int32 EntryPoint);
+	void Done();
+	void Active();
 
 public:
 	static class UClass* StaticClass()
@@ -57,5 +57,6 @@ public:
 		return GetDefaultObjImpl<UWBP_DAT_AISystem_01_Base_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_DAT_AISystem_01_Base_C;
 
 SDK_NAMESPACE_END

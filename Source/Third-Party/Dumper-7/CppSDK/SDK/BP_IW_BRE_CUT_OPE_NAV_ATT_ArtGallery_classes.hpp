@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABP_IW_BRE_CUT_OPE_NAV_ATT_ArtGallery_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_IW_BRE_CUT_OPE_NAV_ATT_ArtGallery_C;
 
 SDK_NAMESPACE_END

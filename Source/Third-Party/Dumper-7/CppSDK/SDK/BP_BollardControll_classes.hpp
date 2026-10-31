@@ -40,16 +40,16 @@ public:
 	TMulticastInlineDelegate<void()>              OnTurnOff;                                         // 0x03D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__BP_BollardControll_SBZPropDamage1_K2Node_ComponentBoundEvent_3_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
-	void BndEvt__BP_BollardControll_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
-	void BndEvt__BP_ElevatorDoor_ControlPanel_InteractableDoor_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_ElevatorDoor_ControlPanel_InteractablePowerBox_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void DoorOpened();
-	void ExecuteUbergraph_BP_BollardControll(int32 EntryPoint);
-	void On_Ack_Complete_Sound();
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void SetInteractionEnable(bool State);
 	void UserConstructionScript();
+	void SetInteractionEnable(bool State);
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void On_Ack_Complete_Sound();
+	void ExecuteUbergraph_BP_BollardControll(int32 EntryPoint);
+	void DoorOpened();
+	void BndEvt__BP_ElevatorDoor_ControlPanel_InteractablePowerBox_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_ElevatorDoor_ControlPanel_InteractableDoor_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_BollardControll_SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
+	void BndEvt__BP_BollardControll_SBZPropDamage1_K2Node_ComponentBoundEvent_3_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext);
 
 public:
 	static class UClass* StaticClass()
@@ -65,5 +65,6 @@ public:
 		return GetDefaultObjImpl<ABP_BollardControll_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BollardControll_C;
 
 SDK_NAMESPACE_END

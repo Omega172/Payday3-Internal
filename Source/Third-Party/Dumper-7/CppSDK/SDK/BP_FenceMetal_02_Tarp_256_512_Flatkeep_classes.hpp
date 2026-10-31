@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_FenceMetal_02_Tarp_256_512_Flatkeep_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_FenceMetal_02_Tarp_256_512_Flatkeep_C;
 
 SDK_NAMESPACE_END

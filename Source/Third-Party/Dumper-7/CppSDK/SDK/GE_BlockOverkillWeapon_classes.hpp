@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_BlockOverkillWeapon_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_BlockOverkillWeapon_C;
 
 SDK_NAMESPACE_END

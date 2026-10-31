@@ -30,10 +30,10 @@ public:
 	TMulticastInlineDelegate<void()>              OnOneCorrect;                                      // 0x03B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void CustomEvent_3(class ASBZBagTriggerVolume* Volume, int32 Overlapping, int32 Secured);
-	void ExecuteUbergraph_BP_ZoneKeeper(int32 EntryPoint);
-	void OnCorrect();
 	void ReceiveBeginPlay();
+	void OnCorrect();
+	void ExecuteUbergraph_BP_ZoneKeeper(int32 EntryPoint);
+	void CustomEvent_3(class ASBZBagTriggerVolume* Volume, int32 Overlapping, int32 Secured);
 
 public:
 	static class UClass* StaticClass()
@@ -49,5 +49,6 @@ public:
 		return GetDefaultObjImpl<ABP_ZoneKeeper_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ZoneKeeper_C;
 
 SDK_NAMESPACE_END

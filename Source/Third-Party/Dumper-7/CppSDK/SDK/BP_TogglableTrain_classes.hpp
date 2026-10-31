@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Starbreeze_classes.hpp"
 #include "AkAudio_structs.hpp"
 
@@ -165,16 +165,16 @@ public:
 	bool                                          alwaysHonkOnFirstPass;                             // 0x07F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_TogglableTrain(int32 EntryPoint);
-	void GetDistanceToPlayerFromClosestSplinePoint(double* Distance);
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void resetAudioEndTrigger();
-	void setAudio(bool enabled, bool fast);
-	void setEnabled(bool enabled);
-	void train_timeline__FinishedFunc();
-	void train_timeline__UpdateFunc();
-	void updateAkLocation();
 	void UserConstructionScript();
+	void updateAkLocation();
+	void train_timeline__UpdateFunc();
+	void train_timeline__FinishedFunc();
+	void setEnabled(bool enabled);
+	void setAudio(bool enabled, bool fast);
+	void resetAudioEndTrigger();
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void GetDistanceToPlayerFromClosestSplinePoint(double* Distance);
+	void ExecuteUbergraph_BP_TogglableTrain(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -190,5 +190,6 @@ public:
 		return GetDefaultObjImpl<ABP_TogglableTrain_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_TogglableTrain_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AE_Bust_EXT_Street_Arch_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_Bust_EXT_Street_Arch_C;
 
 SDK_NAMESPACE_END

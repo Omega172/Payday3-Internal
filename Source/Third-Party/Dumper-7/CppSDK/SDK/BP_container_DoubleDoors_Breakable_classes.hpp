@@ -12,9 +12,9 @@
 
 #include "Engine_structs.hpp"
 #include "BP_container_Double_doorsBase_classes.hpp"
+#include "doorStateSimple_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "AkAudio_structs.hpp"
-#include "doorStateSimple_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -35,12 +35,12 @@ public:
 	class UStaticMesh*                            doorBrokenRight;                                   // 0x0770(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void blowUp();
-	void BndEvt__BP_container_cooled_Double_doors_blownUp_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_container_DoubleDoors_Breakable(int32 EntryPoint);
-	void OnStateChanged(ESBZGateState OldState, ESBZGateState NewState, bool bIsInitialStateChange);
-	void open_blownUp__FinishedFunc();
 	void open_blownUp__UpdateFunc();
+	void open_blownUp__FinishedFunc();
+	void OnStateChanged(ESBZGateState OldState, ESBZGateState NewState, bool bIsInitialStateChange);
+	void ExecuteUbergraph_BP_container_DoubleDoors_Breakable(int32 EntryPoint);
+	void BndEvt__BP_container_cooled_Double_doors_blownUp_SBZBinaryState_K2Node_ComponentBoundEvent_1_SBZBinaryStateChangedSignature__DelegateSignature(bool bState, bool bDoCosmetics);
+	void blowUp();
 
 public:
 	static class UClass* StaticClass()
@@ -56,5 +56,6 @@ public:
 		return GetDefaultObjImpl<ABP_container_DoubleDoors_Breakable_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_container_DoubleDoors_Breakable_C;
 
 SDK_NAMESPACE_END

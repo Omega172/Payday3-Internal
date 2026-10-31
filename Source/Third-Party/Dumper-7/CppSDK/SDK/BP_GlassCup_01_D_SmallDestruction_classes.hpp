@@ -28,8 +28,8 @@ public:
 	class USBZCosmeticDestructionComponent*       SBZCosmeticDestruction;                            // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_GlassCup_01_D_SmallDestruction_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 	void ExecuteUbergraph_BP_GlassCup_01_D_SmallDestruction(int32 EntryPoint);
+	void BndEvt__BP_GlassCup_01_D_SmallDestruction_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<ABP_GlassCup_01_D_SmallDestruction_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_GlassCup_01_D_SmallDestruction_C;
 
 SDK_NAMESPACE_END

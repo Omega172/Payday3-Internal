@@ -12,9 +12,9 @@
 
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "AkAudio_structs.hpp"
 #include "BP_BaseShutterDisplayCase_classes.hpp"
 #include "Starbreeze_structs.hpp"
-#include "AkAudio_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -38,11 +38,11 @@ public:
 	bool                                          Lockdown;                                          // 0x0568(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnStateChanged(ESBZDisplayCaseState OldState, ESBZDisplayCaseState NewState, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_SmallArtDisplayCase(int32 EntryPoint);
-	void Timeline_0__FinishedFunc();
-	void Timeline_0__UpdateFunc();
 	void UserConstructionScript();
+	void Timeline_0__UpdateFunc();
+	void Timeline_0__FinishedFunc();
+	void ExecuteUbergraph_BP_SmallArtDisplayCase(int32 EntryPoint);
+	void BP_OnStateChanged(ESBZDisplayCaseState OldState_BP_OnStateChanged, ESBZDisplayCaseState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged);
 
 public:
 	static class UClass* StaticClass()
@@ -58,5 +58,6 @@ public:
 		return GetDefaultObjImpl<ABP_SmallArtDisplayCase_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SmallArtDisplayCase_C;
 
 SDK_NAMESPACE_END

@@ -25,8 +25,8 @@ public:
 	class USBZNiagaraWwiseComponent*              SBZNiagaraWwise;                                   // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_SBZNiagaraWwise_TrashbinRollout_01_Opened(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_SBZNiagaraWwise_TrashbinRollout_01_Opened(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -42,5 +42,6 @@ public:
 		return GetDefaultObjImpl<BP_SBZNiagaraWwise_TrashbinRollout_01_Opened_0::ABP_SBZNiagaraWwise_TrashbinRollout_01_Opened_C>();
 	}
 };
+DUMPER7_ASSERTS_BP_SBZNiagaraWwise_TrashbinRollout_01_Opened_0__ABP_SBZNiagaraWwise_TrashbinRollout_01_Opened_C;
 
 SDK_NAMESPACE_END

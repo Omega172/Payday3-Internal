@@ -51,18 +51,18 @@ public:
 	bool                                          AKPE_Player_Spawn;                                 // 0x0410(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_AkSplineEmitter(int32 EntryPoint);
-	void GetControlledPawnLocation(class APawn** ControlledPawnReference, struct FVector* ControlledPawnLocation);
-	void GetDistanceToPlayerFromClosestSplinePoint(double* DistanceToPlayerFromClosestSplinePoint);
-	void GetIsInsideSpline(bool* IsInsideSpline_, bool* IsInsideSplineChanged_);
-	void GetPlayerControllerCameraRotation(struct FRotator* PlayerControllerCameraRotation);
-	void Player_has_Spawned();
-	void ReceiveBeginPlay();
-	void ReceiveTick(float DeltaSeconds);
-	void Set_AK_State();
-	void Update_Emitter_Slowly();
-	void UpdateEmitterLocationProxy();
 	void UserConstructionScript();
+	void UpdateEmitterLocationProxy();
+	void Update_Emitter_Slowly();
+	void Set_AK_State();
+	void ReceiveTick(float DeltaSeconds_ReceiveTick);
+	void ReceiveBeginPlay();
+	void Player_has_Spawned();
+	void GetPlayerControllerCameraRotation(struct FRotator* PlayerControllerCameraRotation);
+	void GetIsInsideSpline(bool* IsInsideSpline_, bool* IsInsideSplineChanged_);
+	void GetDistanceToPlayerFromClosestSplinePoint(double* DistanceToPlayerFromClosestSplinePoint);
+	void GetControlledPawnLocation(class APawn** ControlledPawnReference, struct FVector* ControlledPawnLocation);
+	void ExecuteUbergraph_AkSplineEmitter(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -78,5 +78,6 @@ public:
 		return GetDefaultObjImpl<AAkSplineEmitter_C>();
 	}
 };
+DUMPER7_ASSERTS_AAkSplineEmitter_C;
 
 SDK_NAMESPACE_END

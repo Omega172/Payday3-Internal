@@ -50,16 +50,16 @@ public:
 	struct FLinearColor                           LoudColor;                                         // 0x0468(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UpdatePinVisual(int32 InPlayerCount, bool InHovered, ESBZHeistPlaystyle InHeistPlaystyle);
-	void ShowDifficultyVisual(ESBZDifficulty InDifficulty);
-	void SetupPinMaterial();
-	void SetSelected(bool bInIsSelected_SetSelected);
-	void SetActive(bool bIsActive);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnInitialized();
-	void OnHeistDataInitialized();
+	void ButtonHoveredChanged(bool bInIsHovered);
 	void ExecuteUbergraph_WBP_ServerBrowser_HeistMapWidget(int32 EntryPoint);
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
+	void OnHeistDataInitialized();
+	void OnInitialized();
+	void PreConstruct(bool IsDesignTime);
+	void SetActive(bool bIsActive);
+	void SetSelected(bool bInIsSelected);
+	void SetupPinMaterial();
+	void ShowDifficultyVisual(ESBZDifficulty InDifficulty);
+	void UpdatePinVisual(int32 InPlayerCount, bool InHovered, ESBZHeistPlaystyle InHeistPlaystyle);
 
 public:
 	static class UClass* StaticClass()

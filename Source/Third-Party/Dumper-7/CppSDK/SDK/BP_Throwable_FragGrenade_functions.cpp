@@ -16,23 +16,103 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Throwable_FragGrenade.BP_Throwable_FragGrenade_C.BndEvt__BP_Throwable_FragGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FHitResult&                ImpactResult                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// const struct FVector&                   ImpactVelocity                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Throwable_FragGrenade.BP_Throwable_FragGrenade_C.StopRandomRot
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_Throwable_FragGrenade_C::BndEvt__BP_Throwable_FragGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity)
+void ABP_Throwable_FragGrenade_C::StopRandomRot()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StopRandomRot", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_FragGrenade_C", "BndEvt__BP_Throwable_FragGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_Throwable_FragGrenade_C_BndEvt__BP_Throwable_FragGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature Parms{};
 
-	Parms.ImpactResult = std::move(ImpactResult);
-	Parms.ImpactVelocity = std::move(ImpactVelocity);
+// Function BP_Throwable_FragGrenade.BP_Throwable_FragGrenade_C.StartRandomRot
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_Throwable_FragGrenade_C::StartRandomRot()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StartRandomRot", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Throwable_FragGrenade.BP_Throwable_FragGrenade_C.SpawnPopoffLever
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UClass*                           SBZ_Debris_Lever_0                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Throwable_FragGrenade_C::SpawnPopoffLever(class UClass* SBZ_Debris_Lever_0)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnPopoffLever", FnName));
+
+	Params::BP_Throwable_FragGrenade_C_SpawnPopoffLever Parms{};
+
+	Parms.SBZ_Debris_Lever_0 = SBZ_Debris_Lever_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Throwable_FragGrenade.BP_Throwable_FragGrenade_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Throwable_FragGrenade_C::ReceiveTick(float DeltaSeconds)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveTick", FnName));
+
+	Params::BP_Throwable_FragGrenade_C_ReceiveTick Parms{};
+
+	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Throwable_FragGrenade.BP_Throwable_FragGrenade_C.OnThrow
+// (Event, Protected, BlueprintEvent)
+
+void ABP_Throwable_FragGrenade_C::OnThrow()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnThrow", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Throwable_FragGrenade.BP_Throwable_FragGrenade_C.OnArmed
+// (Event, Protected, BlueprintEvent)
+
+void ABP_Throwable_FragGrenade_C::OnArmed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnArmed", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Throwable_FragGrenade.BP_Throwable_FragGrenade_C.ExecuteUbergraph_BP_Throwable_FragGrenade
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Throwable_FragGrenade_C::ExecuteUbergraph_BP_Throwable_FragGrenade(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Throwable_FragGrenade_C", "ExecuteUbergraph_BP_Throwable_FragGrenade", FuncInfo);
+
+	Params::BP_Throwable_FragGrenade_C_ExecuteUbergraph_BP_Throwable_FragGrenade Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -45,10 +125,8 @@ void ABP_Throwable_FragGrenade_C::BndEvt__BP_Throwable_FragGrenade_ProjectileMov
 
 void ABP_Throwable_FragGrenade_C::BndEvt__BP_Throwable_FragGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature(const struct FHitResult& ImpactResult)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_FragGrenade_C", "BndEvt__BP_Throwable_FragGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Throwable_FragGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature", FnName));
 
 	Params::BP_Throwable_FragGrenade_C_BndEvt__BP_Throwable_FragGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_1_OnProjectileStopDelegate__DelegateSignature Parms{};
 
@@ -58,119 +136,23 @@ void ABP_Throwable_FragGrenade_C::BndEvt__BP_Throwable_FragGrenade_ProjectileMov
 }
 
 
-// Function BP_Throwable_FragGrenade.BP_Throwable_FragGrenade_C.ExecuteUbergraph_BP_Throwable_FragGrenade
-// (Final, UbergraphFunction, HasDefaults)
+// Function BP_Throwable_FragGrenade.BP_Throwable_FragGrenade_C.BndEvt__BP_Throwable_FragGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature
+// (HasOutParams, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FHitResult&                ImpactResult                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FVector&                   ImpactVelocity                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Throwable_FragGrenade_C::ExecuteUbergraph_BP_Throwable_FragGrenade(int32 EntryPoint)
+void ABP_Throwable_FragGrenade_C::BndEvt__BP_Throwable_FragGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Throwable_FragGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_FragGrenade_C", "ExecuteUbergraph_BP_Throwable_FragGrenade");
+	Params::BP_Throwable_FragGrenade_C_BndEvt__BP_Throwable_FragGrenade_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature Parms{};
 
-	Params::BP_Throwable_FragGrenade_C_ExecuteUbergraph_BP_Throwable_FragGrenade Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.ImpactResult = std::move(ImpactResult);
+	Parms.ImpactVelocity = std::move(ImpactVelocity);
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Throwable_FragGrenade.BP_Throwable_FragGrenade_C.OnArmed
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Throwable_FragGrenade_C::OnArmed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_FragGrenade_C", "OnArmed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Throwable_FragGrenade.BP_Throwable_FragGrenade_C.OnThrow
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Throwable_FragGrenade_C::OnThrow()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_FragGrenade_C", "OnThrow");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Throwable_FragGrenade.BP_Throwable_FragGrenade_C.ReceiveTick
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Throwable_FragGrenade_C::ReceiveTick(float DeltaSeconds)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_FragGrenade_C", "ReceiveTick");
-
-	Params::BP_Throwable_FragGrenade_C_ReceiveTick Parms{};
-
-	Parms.DeltaSeconds = DeltaSeconds;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Throwable_FragGrenade.BP_Throwable_FragGrenade_C.SpawnPopoffLever
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UClass*                           SBZ_Debris_Lever_0                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Throwable_FragGrenade_C::SpawnPopoffLever(class UClass* SBZ_Debris_Lever_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_FragGrenade_C", "SpawnPopoffLever");
-
-	Params::BP_Throwable_FragGrenade_C_SpawnPopoffLever Parms{};
-
-	Parms.SBZ_Debris_Lever_0 = SBZ_Debris_Lever_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Throwable_FragGrenade.BP_Throwable_FragGrenade_C.StartRandomRot
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_Throwable_FragGrenade_C::StartRandomRot()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_FragGrenade_C", "StartRandomRot");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Throwable_FragGrenade.BP_Throwable_FragGrenade_C.StopRandomRot
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_Throwable_FragGrenade_C::StopRandomRot()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_FragGrenade_C", "StopRandomRot");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

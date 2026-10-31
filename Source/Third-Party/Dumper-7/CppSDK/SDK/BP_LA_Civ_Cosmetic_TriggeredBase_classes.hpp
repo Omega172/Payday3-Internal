@@ -38,13 +38,13 @@ public:
 	double                                        TriggerChance_;                                    // 0x0388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_LA_Civ_Cosmetic_TalkToPlayer_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
-	void BndEvt__BP_LA_Civ_Cosmetic_TalkToPlayer_ExitTrigger_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
-	void BndEvt__BP_LA_Civ_Cosmetic_TalkToPlayer_SBZLifeAction_K2Node_ComponentBoundEvent_3_SBZLifeActionStopEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot, ESBZLifeActionStopReason Result);
-	void ExecuteUbergraph_BP_LA_Civ_Cosmetic_TriggeredBase(int32 EntryPoint);
-	void SetTriggerState(bool Enable);
-	void StopLA(class ASBZCharacter* Character, class USBZLifeActionSlot* LASlot);
 	void TriggerLA(class ASBZCharacter* Character, class USBZLifeActionSlot* LASlot);
+	void StopLA(class ASBZCharacter* Character, class USBZLifeActionSlot* LASlot);
+	void SetTriggerState(bool Enable);
+	void ExecuteUbergraph_BP_LA_Civ_Cosmetic_TriggeredBase(int32 EntryPoint);
+	void BndEvt__BP_LA_Civ_Cosmetic_TalkToPlayer_SBZLifeAction_K2Node_ComponentBoundEvent_3_SBZLifeActionStopEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot, ESBZLifeActionStopReason Result);
+	void BndEvt__BP_LA_Civ_Cosmetic_TalkToPlayer_ExitTrigger_K2Node_ComponentBoundEvent_2_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+	void BndEvt__BP_LA_Civ_Cosmetic_TalkToPlayer_Box_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 
 public:
 	static class UClass* StaticClass()
@@ -60,5 +60,6 @@ public:
 		return GetDefaultObjImpl<ABP_LA_Civ_Cosmetic_TriggeredBase_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LA_Civ_Cosmetic_TriggeredBase_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGA_PlaceMicroCamera_C>();
 	}
 };
+DUMPER7_ASSERTS_UGA_PlaceMicroCamera_C;
 
 SDK_NAMESPACE_END

@@ -17,153 +17,80 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.UpdateModInfo
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ModSlotScreen_C_UpdateModInfo final
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.AddButtonFromDeco
+// 0x0058 (0x0058 - 0x0000)
+struct WBP_ModSlotScreen_C_AddButtonFromDeco final
 {
 public:
-	class USBZInventoryBaseData*                  ItemData;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZSlotItemDecorator*                  SlotDecorator;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          bAddSlotText;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_ItemButton_C*                      ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetDisplayName_OutDisplayName;            // 0x0018(0x0010)()
+	bool                                          CallFunc_GetDisplayName_OutHasText;                // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZUITextBlock*                        CallFunc_SpawnObject_ReturnValue;                  // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UWBP_ItemButton_C*                      CallFunc_Create_ReturnValue;                       // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UOverlaySlot*                           CallFunc_AddChildToOverlay_ReturnValue;            // 0x0040(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0048(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-DUMPER7_ASSERTS_WBP_ModSlotScreen_C_UpdateModInfo;
+DUMPER7_ASSERTS_WBP_ModSlotScreen_C_AddButtonFromDeco;
 
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.SetupWeaponSlot
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.BndEvt__WBP_ModSlotScreen_Button_Goto_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_ModSlotScreen_C_SetupWeaponSlot final
-{
-public:
-	int32                                         SlotIndex;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZEquippableLoadoutSlot                     ItemCategory;                                      // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ModSlotScreen_C_SetupWeaponSlot;
-
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.PrePush_EB4572904A1FF447AB18B0B9377C564C
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ModSlotScreen_C_PrePush_EB4572904A1FF447AB18B0B9377C564C final
-{
-public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ModSlotScreen_C_PrePush_EB4572904A1FF447AB18B0B9377C564C;
-
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.PrePush_B78C6D19499C91674E07B0AD948FE8F2
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ModSlotScreen_C_PrePush_B78C6D19499C91674E07B0AD948FE8F2 final
-{
-public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ModSlotScreen_C_PrePush_B78C6D19499C91674E07B0AD948FE8F2;
-
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_ModSlotScreen_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ModSlotScreen_C_PreConstruct;
-
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.PostPush_EB4572904A1FF447AB18B0B9377C564C
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ModSlotScreen_C_PostPush_EB4572904A1FF447AB18B0B9377C564C final
-{
-public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ModSlotScreen_C_PostPush_EB4572904A1FF447AB18B0B9377C564C;
-
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.PostPush_B78C6D19499C91674E07B0AD948FE8F2
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ModSlotScreen_C_PostPush_B78C6D19499C91674E07B0AD948FE8F2 final
-{
-public:
-	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ModSlotScreen_C_PostPush_B78C6D19499C91674E07B0AD948FE8F2;
-
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.OnSlotButtonSelected_Event
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ModSlotScreen_C_OnSlotButtonSelected_Event final
+struct WBP_ModSlotScreen_C_BndEvt__WBP_ModSlotScreen_Button_Goto_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature final
 {
 public:
 	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ModSlotScreen_C_OnSlotButtonSelected_Event;
+DUMPER7_ASSERTS_WBP_ModSlotScreen_C_BndEvt__WBP_ModSlotScreen_Button_Goto_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature;
 
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.OnGainedStackFocused
-// 0x000C (0x000C - 0x0000)
-struct WBP_ModSlotScreen_C_OnGainedStackFocused final
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.BndEvt__WBP_ModSlotScreen_Button_Paint_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ModSlotScreen_C_BndEvt__WBP_ModSlotScreen_Button_Paint_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	class FName                                   PreviousValue_OnGainedStackFocused;                // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ModSlotScreen_C_OnGainedStackFocused;
+DUMPER7_ASSERTS_WBP_ModSlotScreen_C_BndEvt__WBP_ModSlotScreen_Button_Paint_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature;
 
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.OnControlsReferencePressed
-// 0x000C (0x000C - 0x0000)
-struct WBP_ModSlotScreen_C_OnControlsReferencePressed final
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_3_SimpleListItemEventDynamic__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ModSlotScreen_C_BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_3_SimpleListItemEventDynamic__DelegateSignature final
 {
 public:
-	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Item;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ModSlotScreen_C_OnControlsReferencePressed;
+DUMPER7_ASSERTS_WBP_ModSlotScreen_C_BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_3_SimpleListItemEventDynamic__DelegateSignature;
 
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.OnButtonFocusedChanged_Event
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_4_OnListItemSelectionChangedDynamic__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_ModSlotScreen_C_OnButtonFocusedChanged_Event final
+struct WBP_ModSlotScreen_C_BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_4_OnListItemSelectionChangedDynamic__DelegateSignature final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEnabled;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Item;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsSelected;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ModSlotScreen_C_OnButtonFocusedChanged_Event;
+DUMPER7_ASSERTS_WBP_ModSlotScreen_C_BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_4_OnListItemSelectionChangedDynamic__DelegateSignature;
 
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.MakeControlsReference
-// 0x0098 (0x0098 - 0x0000)
-struct WBP_ModSlotScreen_C_MakeControlsReference final
-{
-public:
-	struct FSBZButtonControlsReference            ControlsReference;                                 // 0x0000(0x0028)(Parm, OutParm)
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x0028(0x0038)()
-	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x0060(0x0010)(ReferenceParm)
-	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x0070(0x0028)()
-};
-DUMPER7_ASSERTS_WBP_ModSlotScreen_C_MakeControlsReference;
-
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.FindButtonChild
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.CreateAllMods
 // 0x0090 (0x0090 - 0x0000)
-struct WBP_ModSlotScreen_C_FindButtonChild final
+struct WBP_ModSlotScreen_C_CreateAllMods final
 {
 public:
-	class UPanelWidget*                           Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZMenuButton*                         AsSBZMenu_Button;                                  // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	TArray<class UPanelWidget*>                   K2Node_MakeArray_Array;                            // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UPanelWidget*>                   K2Node_LowEntry_LocalVariable_Value__Object;       // 0x0028(0x0010)(ReferenceParm, ContainsInstancedReference)
-	class UPanelWidget*                           CallFunc_Array_Get_Item;                           // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable;                                 // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0058(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZMenuButton*                         K2Node_DynamicCast_AsSBZMenu_Button;               // 0x0060(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPanelWidget*                           K2Node_DynamicCast_AsPanel_Widget;                 // 0x0070(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_79[0x3];                                       // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_81[0x3];                                       // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_89[0x3];                                       // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSBZEquippableConfig                   EquippableConfig;                                  // 0x0000(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	const class USBZModularPartSlotBase*          ModSlot;                                           // 0x0088(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ModSlotScreen_C_FindButtonChild;
+DUMPER7_ASSERTS_WBP_ModSlotScreen_C_CreateAllMods;
+
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.CreateAllSlots
+// 0x0088 (0x0088 - 0x0000)
+struct WBP_ModSlotScreen_C_CreateAllSlots final
+{
+public:
+	struct FSBZEquippableConfig                   EquippableConfig;                                  // 0x0000(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_WBP_ModSlotScreen_C_CreateAllSlots;
 
 // Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.ExecuteUbergraph_WBP_ModSlotScreen
 // 0x1330 (0x1330 - 0x0000)
@@ -425,80 +352,153 @@ public:
 };
 DUMPER7_ASSERTS_WBP_ModSlotScreen_C_ExecuteUbergraph_WBP_ModSlotScreen;
 
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.CreateAllSlots
-// 0x0088 (0x0088 - 0x0000)
-struct WBP_ModSlotScreen_C_CreateAllSlots final
-{
-public:
-	struct FSBZEquippableConfig                   EquippableConfig;                                  // 0x0000(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-DUMPER7_ASSERTS_WBP_ModSlotScreen_C_CreateAllSlots;
-
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.CreateAllMods
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.FindButtonChild
 // 0x0090 (0x0090 - 0x0000)
-struct WBP_ModSlotScreen_C_CreateAllMods final
+struct WBP_ModSlotScreen_C_FindButtonChild final
 {
 public:
-	struct FSBZEquippableConfig                   EquippableConfig;                                  // 0x0000(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	const class USBZModularPartSlotBase*          ModSlot;                                           // 0x0088(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPanelWidget*                           Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         AsSBZMenu_Button;                                  // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	TArray<class UPanelWidget*>                   K2Node_MakeArray_Array;                            // 0x0010(0x0010)(ReferenceParm, ContainsInstancedReference)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UPanelWidget*>                   K2Node_LowEntry_LocalVariable_Value__Object;       // 0x0028(0x0010)(ReferenceParm, ContainsInstancedReference)
+	class UPanelWidget*                           CallFunc_Array_Get_Item;                           // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Subtract_IntInt_ReturnValue;              // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWidget*                                CallFunc_GetChildAt_ReturnValue;                   // 0x0058(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         K2Node_DynamicCast_AsSBZMenu_Button;               // 0x0060(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPanelWidget*                           K2Node_DynamicCast_AsPanel_Widget;                 // 0x0070(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_79[0x3];                                       // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_81[0x3];                                       // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_89[0x3];                                       // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ModSlotScreen_C_CreateAllMods;
+DUMPER7_ASSERTS_WBP_ModSlotScreen_C_FindButtonChild;
 
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_4_OnListItemSelectionChangedDynamic__DelegateSignature
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.MakeControlsReference
+// 0x0098 (0x0098 - 0x0000)
+struct WBP_ModSlotScreen_C_MakeControlsReference final
+{
+public:
+	struct FSBZButtonControlsReference            ControlsReference;                                 // 0x0000(0x0028)(Parm, OutParm)
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x0028(0x0038)()
+	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x0060(0x0010)(ReferenceParm)
+	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x0070(0x0028)()
+};
+DUMPER7_ASSERTS_WBP_ModSlotScreen_C_MakeControlsReference;
+
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.OnButtonFocusedChanged_Event
 // 0x0010 (0x0010 - 0x0000)
-struct WBP_ModSlotScreen_C_BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_4_OnListItemSelectionChangedDynamic__DelegateSignature final
+struct WBP_ModSlotScreen_C_OnButtonFocusedChanged_Event final
 {
 public:
-	class UObject*                                Item;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsSelected;                                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ModSlotScreen_C_BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_4_OnListItemSelectionChangedDynamic__DelegateSignature;
+DUMPER7_ASSERTS_WBP_ModSlotScreen_C_OnButtonFocusedChanged_Event;
 
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_3_SimpleListItemEventDynamic__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_ModSlotScreen_C_BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_3_SimpleListItemEventDynamic__DelegateSignature final
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.OnControlsReferencePressed
+// 0x000C (0x000C - 0x0000)
+struct WBP_ModSlotScreen_C_OnControlsReferencePressed final
 {
 public:
-	class UObject*                                Item;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ModSlotScreen_C_BndEvt__WBP_ModSlotScreen_TileView_Mods_K2Node_ComponentBoundEvent_3_SimpleListItemEventDynamic__DelegateSignature;
+DUMPER7_ASSERTS_WBP_ModSlotScreen_C_OnControlsReferencePressed;
 
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.BndEvt__WBP_ModSlotScreen_Button_Paint_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.OnGainedStackFocused
+// 0x000C (0x000C - 0x0000)
+struct WBP_ModSlotScreen_C_OnGainedStackFocused final
+{
+public:
+	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ModSlotScreen_C_OnGainedStackFocused;
+
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.OnSlotButtonSelected_Event
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_ModSlotScreen_C_BndEvt__WBP_ModSlotScreen_Button_Paint_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature final
+struct WBP_ModSlotScreen_C_OnSlotButtonSelected_Event final
 {
 public:
 	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ModSlotScreen_C_BndEvt__WBP_ModSlotScreen_Button_Paint_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_ModSlotScreen_C_OnSlotButtonSelected_Event;
 
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.BndEvt__WBP_ModSlotScreen_Button_Goto_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.PostPush_B78C6D19499C91674E07B0AD948FE8F2
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_ModSlotScreen_C_BndEvt__WBP_ModSlotScreen_Button_Goto_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature final
+struct WBP_ModSlotScreen_C_PostPush_B78C6D19499C91674E07B0AD948FE8F2 final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ModSlotScreen_C_BndEvt__WBP_ModSlotScreen_Button_Goto_K2Node_ComponentBoundEvent_1_OnMenuButtonSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_ModSlotScreen_C_PostPush_B78C6D19499C91674E07B0AD948FE8F2;
 
-// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.AddButtonFromDeco
-// 0x0058 (0x0058 - 0x0000)
-struct WBP_ModSlotScreen_C_AddButtonFromDeco final
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.PostPush_EB4572904A1FF447AB18B0B9377C564C
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ModSlotScreen_C_PostPush_EB4572904A1FF447AB18B0B9377C564C final
 {
 public:
-	class USBZSlotItemDecorator*                  SlotDecorator;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          bAddSlotText;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_ItemButton_C*                      ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetDisplayName_OutDisplayName;            // 0x0018(0x0010)()
-	bool                                          CallFunc_GetDisplayName_OutHasText;                // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZUITextBlock*                        CallFunc_SpawnObject_ReturnValue;                  // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UWBP_ItemButton_C*                      CallFunc_Create_ReturnValue;                       // 0x0038(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UOverlaySlot*                           CallFunc_AddChildToOverlay_ReturnValue;            // 0x0040(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0048(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ModSlotScreen_C_AddButtonFromDeco;
+DUMPER7_ASSERTS_WBP_ModSlotScreen_C_PostPush_EB4572904A1FF447AB18B0B9377C564C;
+
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_ModSlotScreen_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ModSlotScreen_C_PreConstruct;
+
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.PrePush_B78C6D19499C91674E07B0AD948FE8F2
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ModSlotScreen_C_PrePush_B78C6D19499C91674E07B0AD948FE8F2 final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ModSlotScreen_C_PrePush_B78C6D19499C91674E07B0AD948FE8F2;
+
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.PrePush_EB4572904A1FF447AB18B0B9377C564C
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ModSlotScreen_C_PrePush_EB4572904A1FF447AB18B0B9377C564C final
+{
+public:
+	class USBZMenuStackScreenWidget*              MenuWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ModSlotScreen_C_PrePush_EB4572904A1FF447AB18B0B9377C564C;
+
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.SetupWeaponSlot
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ModSlotScreen_C_SetupWeaponSlot final
+{
+public:
+	int32                                         SlotIndex;                                         // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZEquippableLoadoutSlot                     ItemCategory_0;                                    // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ModSlotScreen_C_SetupWeaponSlot;
+
+// Function WBP_ModSlotScreen.WBP_ModSlotScreen_C.UpdateModInfo
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_ModSlotScreen_C_UpdateModInfo final
+{
+public:
+	class USBZInventoryBaseData*                  ItemData;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ModSlotScreen_C_UpdateModInfo;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_ZiplineBagWorldItem_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ZiplineBagWorldItem_C;
 
 SDK_NAMESPACE_END

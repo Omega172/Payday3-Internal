@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
 
@@ -19,7 +19,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass G_ONE_Scripting.G_ONE_Scripting_C
-// 0x1270 (0x1640 - 0x03D0)
+// 0x1298 (0x1668 - 0x03D0)
 class AG_ONE_Scripting_C final : public ASBZLevelScriptActor
 {
 public:
@@ -211,832 +211,839 @@ public:
 	double                                        InsideManIntroDelay;                               // 0x0A10(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        InsideManIntroNextObjectiveTime;                   // 0x0A18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bPickedUpUSB;                                      // 0x0A20(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_A21[0x7];                                      // 0x0A21(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZPlayerTriggerVolume*                SBZPlayerTriggerVolume_0_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0A28(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_EnterTheBank_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0A30(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardLeftWing1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0A38(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardLobby1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0A40(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardRightWing1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0A48(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AAkAmbientSound*                        AkAmbientSound_Alarm1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0A50(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_EnterTheBank_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0A58(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_Escape_Stealth1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0A60(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerEscapeVolume*                 SBZPlayerEscapeVolume_Escape_Stealth1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0A68(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_EscapeVan_C*                        BP_EscapeVan1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0A70(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_Escape_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0A78(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_MarkerZone_C*                       BP_MarkerZone_Escape_Stealth1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0A80(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_AmmoLeft_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0A88(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_AmmoRight_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0A90(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_PP_DoctorBag_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0A98(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_PP_ArmorBag_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0AA0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_PP_AmmoBag_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0AA8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_LA_Scripted_Patrol_C*               BP_LA_Scripted_Patrol_LeadGuard2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0AB0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_LeadGuard_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0AB8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_Lootdrop_Stealth1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0AC0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_EscapeHelicopter_C*                 BP_EscapeHelicopter1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0AC8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_Escape_Loud1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0AD0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerEscapeVolume*                 SBZPlayerEscapeVolume_Escape_Loud1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0AD8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_MarkerZone_C*                       BP_MarkerZone_Escape_Loud1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0AE0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_Lootdrop_Loud1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0AE8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_SecureAllOpt_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0AF0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZTrafficSpline*                      SBZTrafficSpline_HelicopterOvkWeapon1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0AF8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagSpawner*                         SBZBagSpawner_OVKBag1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B00(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_OverkillWeapon_Drop1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B08(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZTrafficSpline*                      SBZTrafficSpline_HelicopterOvkWeapon2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B10(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagSpawner*                         SBZBagSpawner_OVKBag2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B18(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_OverkillWeapon_Drop2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B20(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZTrafficSpline*                      SBZTrafficSpline_HelicopterOvkWeapon3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B28(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagSpawner*                         SBZBagSpawner_OVKBag3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B30(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_OverkillWeapon_Drop3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B38(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup_PedestrianLobbySpawns_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B40(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZTrafficSpline*                      SBZTrafficSplineSwatHelicopterStart1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B48(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZTrafficSpline*                      SBZTrafficSplineSwatHelicopterEnd1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B50(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZTrafficSpline*                      SBZTrafficSplineSwatHelicopterStart2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B58(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZTrafficSpline*                      SBZTrafficSplineSwatHelicopterEnd2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B60(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZTrafficSpline*                      SBZTrafficSplineSwatHelicopterStart3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B68(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZTrafficSpline*                      SBZTrafficSplineSwatHelicopterEnd3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B70(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_SecureTheLoot_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B78(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_ContactTheInsideMan_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B80(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_ListenToThePlan_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B88(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_EnterTheServerRoom_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B90(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_CopyFromUSBDrive_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B98(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_DisableTheMetalDetectors_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0BA0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_FindManagersOffice_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0BA8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_GenerateGateCode_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0BB0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_ReturnToInsideMan_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0BB8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_ListenNextPlan_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0BC0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_PickUpStickers_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0BC8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_MeetAtGate_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0BD0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_InsertTheGateCode_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0BD8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_Keypad_C*                           BP_Keypad_LeftWingGate_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0BE0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_ReachTheVaultArea_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0BE8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_OpenTheVault_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0BF0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_DAT_SecurityScanner_01_SCR_C*       BP_DAT_SecurityScanner_LeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0BF8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_FindSecurityComputer_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C00(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_FindBlueKeycard_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C08(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_HackSecurityComputer_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C10(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_EnableBlueKeycardReader_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C18(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_TurnTheWheel_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C20(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_BlueKeycardReader_C*                BP_BlueKeycardReader_Vault_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C28(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZModifiableTimer*                    SBZModifiableTimer_UnlockVault_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C30(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_FindTheGate_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C38(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_PickEquipmentFromVan_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C40(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_LootdropLance_RightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C48(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_MarkerZone_C*                       BP_MarkerZone_Drill_RightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C50(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_BoltTheDrill_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C58(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_StartTheDrill_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C60(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_DefendTheDrill_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C68(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_DissembleTheDrill_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C70(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_OxygenTanks_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C78(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerTriggeredVoiceVolume*         SBZPlayerTriggeredVoiceVolume_DrillEndThermal_RightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C80(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_SetupThermite_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C88(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_BurnThroughFloor_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C90(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_CollectThermite_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C98(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_PlaceThermite_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0CA0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_IgniteThermite_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0CA8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_AddMoreThermite_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0CB0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_LootdropThermite2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0CB8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_MarkerZone_C*                       BP_MarkerZone_ThermiteBag_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0CC0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_InteractThermite2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0CC8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerTriggeredVoiceVolume*         SBZPlayerTriggeredVoice_Curse2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0CD0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_TestThermite_C*                     BP_ThermiteFloorBreach_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0CD8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_FireThermite2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0CE0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZAgilityNavLink*                     Navlink_JumpDown7_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0CE8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZAgilityNavLink*                     Navlink_JumpDown6_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0CF0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZAgilityNavLink*                     Navlink_JumpDown8_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0CF8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZAgilityNavLink*                     Navlink_JumpDown5_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D00(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroy_ThermiteFloor2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D08(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_EquipmentVan_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D10(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_AssembleTheDrill_1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D18(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_BreachTheGate_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D20(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_DisableMagneticLock_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D28(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_MagneticLock_FindManagersOffice_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D30(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_MagneticLock_StartTheHack_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D38(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_MagneticLock_DefendHack_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D40(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_HoldForEquipmentDrop_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D48(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_EquipmentHelicopter_C*              BP_EquipmentHelicopter_2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D50(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZTrafficSpline*                      SBZTrafficSpline_HelicopterThermiteDropLeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D58(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagSpawner*                         SBZBagSpawner_ThermiteEquipmentLeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D60(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZFilteredTriggerVolume*              SBZFilteredTriggerVolume_ThermiteEquipmentLeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D68(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_TakeMoneyPiles_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D70(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_DropOffLoot_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D78(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_GetThroughLobby_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D80(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerTriggerVolume*                SBZPlayerTriggerVolume_ReachVaultArea_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D88(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerTriggerVolume*                SBZPlayerTriggerVolume_GetThroughTheLobby_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D90(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_BlowHoleInWall_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D98(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_PlantExplosives_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0DA0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjectivePlantExplosives_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0DA8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZModifiableTimer*                    SBZModifiableTimer_Wall_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0DB0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjectiveTakeCover_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0DB8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerTriggerVolume*                SBZPlayerTriggerVolume_3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0DC0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_EscapeRun1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0DC8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_StickStickers_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0DD0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_PlaceMoneyIntoCarts_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0DD8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerTriggerVolume*                SBZPlayerTriggerVolume_Vault_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0DE0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_GoToDoorsToGarage_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0DE8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerTriggerVolume*                SBZPlayerTriggerVolume_ManTrapCheckLeft_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0DF0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_GoToGarage_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0DF8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_GoToGarage2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E00(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_EscapeRun2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E08(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_EscapeRun3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E10(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_EscapeRun4_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E18(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_VentBars3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E20(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_VentBars2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E28(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_VentBars1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E30(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_VentBars4_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E38(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_EnterTheVault_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E40(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerEscapeVolume*                 SBZPlayerEscapeVolume_Stealth_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E48(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_MarkerZone_C*                       BP_MarkerZone_StealthEscape_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E50(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_StealthEscape_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E58(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_Escape_5_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E60(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_StealthEscape_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E68(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZTrafficSpline*                      SBZTrafficSpline_EscapeVanDriveIn_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E70(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_ReachTheEscapePoint_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E78(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_JumpInVault1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E80(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZFilteredTriggerVolume*              SBZFilteredTriggerVolume_OvkWeapon2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E88(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZFilteredTriggerVolume*              SBZFilteredTriggerVolume_OvkWeapon3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E90(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZFilteredTriggerVolume*              SBZFilteredTriggerVolume_OvkWeapon1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E98(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_GoToShortcutLeft_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0EA0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_GoToGarage1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0EA8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerTriggerVolume*                SBZPlayerTriggerVolume_GoToGarage1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0EB0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerTriggerVolume*                SBZPlayerTriggerVolume_GotoGarage2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0EB8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerTriggerVolume*                SBZPlayerTriggerVolume_EscapeRunNavigatingWithMarker3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0EC0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_DAT_SecurityScanner_01_SCR_C*       BP_DAT_SecurityScanner_RightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0EC8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerLookAtTrigger*                SBZPlayerLookAtTrigger_LeftWingGate_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0ED0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerLookAtTrigger*                SBZPlayerLookAtTrigger_RightWingGate_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0ED8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_LootdropLance_LeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0EE0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_MarkerZone_C*                       BP_MarkerZone_Drill_LeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0EE8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerTriggeredVoiceVolume*         SBZPlayerTriggeredVoiceVolume_DrillEndThermal_LeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0EF0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_Keypad_C*                           BP_Keypad_RightWingGate_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0EF8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerTriggerVolume*                SBZPlayerTriggerVolume_GoToGarageGuardSpeaks_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F00(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZTrafficSpline*                      SBZTrafficSpline_HelicopterThermiteDropRightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F08(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZFilteredTriggerVolume*              SBZFilteredTriggerVolume_ThermiteEquipmentRightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F10(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagSpawner*                         SBZBagSpawner_ThermitetBagsLeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F18(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagSpawner*                         SBZBagSpawner_ThermiteEquipmentRightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F20(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagSpawner*                         SBZBagSpawner_ThermitetBagsRightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F28(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ONE_SecurityGate_C*                 BP_ONE_SecurityGate_RightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F30(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ONE_SecurityGate_C*                 BP_ONE_SecurityGate_LeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F38(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ONE_VaultDoor_C*                    BP_ONE_VaultDoor_5_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F40(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_PocketDrill_C*                      BP_PocketDrill_2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F48(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_One_Step_Animated_Button_C*         BP_OneStepAnimatedButton_OverrideLeftWingGate_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F50(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_One_Step_Animated_Button_C*         BP_OneStepAnimatedButton_OverrideRightWingGate_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F58(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_GenericHackableComputer_C*          BP_GenericHackableComputer_MatrixRoom6_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F60(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_PocketDrill_C*                      BP_PocketDrill2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F68(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup_Enemies_EscapeOffice_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F70(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_BreachingEquipmentBagGenerator_C*   BP_BreachingEquipmentBagGenerator9_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F78(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup_3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F80(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup_1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F88(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_ThermiteEquipmentinServerRooms_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F90(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_BreachingEquipmentBagGenerator_C*   BP_BreachingEquipmentBagGenerator12_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F98(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_BreachingEquipmentBagGenerator_C*   BP_BreachingEquipmentBagGenerator15_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0FA0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_PickEquipmentFromServerRoom_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0FA8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_LA_Scripted_Patrol_C*               BP_LA_Scripted_Patrol11_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0FB0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_LA_Scripted_Patrol_C*               BP_LA_Scripted_Patrol22_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0FB8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_LA_Scripted_Patrol_C*               BP_LA_Scripted_Patrol23_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0FC0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardRightWing2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0FC8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardRightWing3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0FD0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardRightWing5_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0FD8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardLobby1stFloor1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0FE0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardLobby1stFloor3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0FE8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardLobby1stFloor2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0FF0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardLobby2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0FF8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardLobby3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardLobby4_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardLeftWing2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardRightWing4_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardMatrix1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardMatrix2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardVault2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_openable_Van_C*                     BP_openable_Van_2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagTriggerVolume*                   SBZBagTriggerVolume_Globe_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_GlobeCutHole_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_GlobeLootDrop_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_PrepareExtraction_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_GlobeSecureLoot_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_FindVent4_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_FindVent3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_FindVent2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_FindVent1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagSpawner*                         SBZBagSpawner_FavourElevatorThermiteEquipment_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagSpawner*                         SBZBagSpawner_FavourElevatorThermite_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagSpawner*                         SBZBagSpawner_FavourElevatorThermiteExtra_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_ElevatorEquipmentDrop_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x10A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup_Enemies_Vault2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x10A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ONE_MetalDoor_01_C*                 BP_ONE_MetalDoor_LeftWingHallway_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x10B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ONE_MetalDoor_01_C*                 BP_ONE_MetalDoor_RightWingHallway_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x10B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ONE_MetalDoor_01_C*                 BP_ONE_MetalDoor_16_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x10C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ONE_MetalDoor_01_C*                 BP_ONE_MetalDoor_01_12_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x10C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_DigitalKeyReader_C*                 BP_DigitalKeyReader_LeftWingOpenOffice1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x10D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_DigitalKeyReader_C*                 BP_DigitalKeyReader_LeftWingOpenOffice2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x10D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_Int_DoubleDoor_Wood_01_C*           BP_InteractableBreachableDoubleDoor_Wood_OpenOffice2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x10E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_Int_DoubleDoor_Wood_01_C*           BP_InteractableBreachableDoubleDoor_Wood_OpenOffice1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x10E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ONE_MetalGate_01_C*                 BP_ONE_MetalGate_8_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x10F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ONE_MetalGate_01_C*                 BP_ONE_MetalGate_01_5_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x10F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_Int_DoorMetalSimple_01_C*           BP_Int_DoorMetalSimple_14_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_Int_DoorMetalSimple_01_C*           BP_Int_DoorMetalSimple_16_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1108(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_Int_DoorMetalSimple_01_C*           BP_Int_DoorMetalSimple_15_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1110(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_Int_DoorMetalSimple_01_C*           BP_Int_DoorMetalSimple_17_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1118(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_Int_DoubleDoor_Reinforced_Industrial_01_C* BP_Int_DoubleDoor_Reinforced_Industrial_2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1120(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_ServerRoomVent_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1128(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_RightMetalDetectorInteractions_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1130(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_LeftMetalDetectorInteractions_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1138(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_EquipmentHelicopter_C*              BP_EquipmentHelicopter_Ovk_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1140(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_Int_SingleDoor_Reinforced_Wood_01_C* BP_Int_SingleDoor_Reinforced_Wood_01_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1148(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_LeftWingMetalDetectorController_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1150(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_RightWingMetalDetectorController_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1158(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardGarageLoot_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1160(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ONE_ExplodingWall_C*                BP_ONE_ExplodingWall_2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1168(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerTriggerVolume*                SBZPlayerTriggerVolume_ManTrapCheckRight_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1170(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_GoToShortcutRight_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1178(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_ZiplineDropLeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1180(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_MarkerZone_C*                       BP_MarkerZone_ZiplineLeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1188(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_Zipline_C*                          BP_Zipline_LeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1190(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagSpawner*                         SBZBagSpawner_ZiplineLeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1198(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZFilteredTriggerVolume*              SBZFilteredTriggerVolume_CrewSpeech_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x11A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_LA_Crew_Speech_C*                   BP_LA_Crew_Speech_2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x11A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_HoldForHelicopter_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x11B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_SetUpZipline_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x11B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_ZiplineSecureLoot_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x11C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZTrafficSpline*                      SBZTrafficSpline_HelicopterZiplineLeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x11C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagSpawner*                         SBZBagSpawner_ZiplineRightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x11D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_ZiplineLeftLootDrop_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x11D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_ZiplineEscape_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x11E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerEscapeVolume*                 SBZPlayerEscapeVolume_ZiplineLeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x11E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_ZiplineLeftWingEscape_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x11F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_MarkerZone_C*                       BP_MarkerZone_ZiplineLeftWingEscape_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x11F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_LA_Scripted_Idle_C*                 BP_LA_Scripted_Idle_KnockOnVan_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1200(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_LA_Scripted_Idle_C*                 BP_LA_Scripted_Idle_AtLeftGate_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1208(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_LA_Scripted_Idle_C*                 BP_LA_Scripted_Idle_AtRightGate_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1210(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZTrafficSpline*                      SBZTrafficSpline_HelicopterZiplineRightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1218(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_ZiplineDropRightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1220(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_MarkerZone_C*                       BP_MarkerZone_ZiplineRightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1228(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_Zipline_C*                          BP_Zipline_RightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1230(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_ZiplineRightLootDrop_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1238(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_ZiplineRightWingEscape_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1240(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerEscapeVolume*                 SBZPlayerEscapeVolume_ZiplineRightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1248(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_MarkerZone_C*                       BP_MarkerZone_ZiplineRightWingEscape_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1250(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_RFIDTagBlue_C*                      BP_RFIDTagBlue_2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1258(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_RFIDTagBlue_C*                      BP_RFIDTagBlue2_5_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1260(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_RFIDTagBlue_C*                      BP_RFIDTagBlue4_11_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1268(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_RFIDTagBlue_C*                      BP_RFIDTagBlue3_8_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1270(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagSpawner*                         SBZBagSpawner_OVKBagMatrix1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1278(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_21_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1280(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_Thermite_Breach_C*                  BP_Thermite_Breach2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1288(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardVault4_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1290(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardVault3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1298(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup9_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x12A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_Int_SingleDoor_Reinforced_Industrial_03_C* BP_Int_SingleDoor_Reinforced_Industrial_6_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x12A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_DigitalKeyReader_C*                 BP_DigitalKeyReader_CountingRoom2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x12B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_DigitalKeyReader_C*                 BP_DigitalKeyReader_CountingRoom1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x12B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_Int_SingleDoor_Reinforced_Industrial_03_C* BP_Int_SingleDoor_Reinforced_Industrial_10_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x12C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_Keypad_C*                           BP_Keypad_InVaultLeft_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x12C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_Keypad_C*                           BP_Keypad_InVaultRight_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x12D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_VentReactor_C*                      BP_VentReactor10_2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x12D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_VentReactor_C*                      BP_VentReactor13_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x12E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagSpawner*                         SBZBagSpawner_OVKBagMatrix2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x12E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_PropsInFrontDoorsStealthRoute_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x12F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_PropsInFrontOfDoorsLoudRoute_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x12F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_31_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1300(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ONE_SlidingDoor_Single_02_C*        BP_ONE_SlidingDoor_Single_02_RightManTrap1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1308(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ONE_SlidingDoor_Single_02_C*        BP_ONE_SlidingDoor_Single_02_RightManTrap2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1310(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ONE_SlidingDoor_Single_02_C*        BP_ONE_SlidingDoor_Single_02_LeftManTrap1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1318(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ONE_SlidingDoor_Single_02_C*        BP_ONE_SlidingDoor_Single_02_LeftManTrap2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1320(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZFilteredTriggerVolume*              SBZFilteredTriggerVolume_ZiplineEquipmentLeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1328(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZFilteredTriggerVolume*              SBZFilteredTriggerVolume_ZiplineEquipmentRightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1330(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup_CloakerVent19_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1338(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup_CloakerVent18_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1340(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ONE_SecurityShutter_01_C*           BP_ONE_SecurityShutter_LeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1348(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ONE_SecurityShutter_01_C*           BP_ONE_SecurityShutter_RightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1350(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ONE_IndicatorLight_Controllable_01_C* BP_ONE_IndicatorLight_Controllable_LeftManTrap_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1358(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ONE_IndicatorLight_Controllable_01_C* BP_ONE_IndicatorLight_Controllable_RightManTrap_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1360(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ONE_IndicatorLight_Controllable_01_C* BP_ONE_IndicatorLight_Controllable_RightWingGate_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1368(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ONE_IndicatorLight_Controllable_01_C* BP_ONE_IndicatorLight_Controllable_LeftWingGate_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1370(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZLaserGrid*                          SBZLaserGrid_LeftHallway6_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1378(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZLaserGrid*                          SBZLaserGrid_LeftHallway10_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1380(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZLaserGrid*                          SBZLaserGrid_LeftHallway1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1388(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZLaserGrid*                          SBZLaserGrid_LeftHallway2_15_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1390(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZLaserGrid*                          SBZLaserGrid_LeftHallway5_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1398(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZLaserGrid*                          SBZLaserGrid_LeftHallway8_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x13A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZLaserGrid*                          SBZLaserGrid_RightHallway15_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x13A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZLaserGrid*                          SBZLaserGrid_RightHallway13_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x13B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZLaserGrid*                          SBZLaserGrid_RightHallway8_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x13B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZLaserGrid*                          SBZLaserGrid_RightHallway9_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x13C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZLaserGrid*                          SBZLaserGrid_RightHallway4_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x13C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZLaserGrid*                          SBZLaserGrid_RightHallway3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x13D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZLaserGrid*                          SBZLaserGrid_RightHallway12_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x13D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZLaserGrid*                          SBZLaserGrid_RightHallway17_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x13E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZLaserGrid*                          SBZLaserGrid_RightHallway6_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x13E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZLaserGrid*                          SBZLaserGrid_RightHallway2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x13F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZLaserGrid*                          SBZLaserGrid_RightHallway1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x13F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZLaserGrid*                          SBZLaserGrid_RightHallway14_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1400(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZLaserGrid*                          SBZLaserGrid_RightHallway16_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1408(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZLaserGrid*                          SBZLaserGrid_RightHallway10_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1410(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZLaserGrid*                          SBZLaserGrid_RightHallway11_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1418(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerLookAtTrigger*                SBZPlayerLookAtTrigger_RightMetalDetectorFavor_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1420(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerLookAtTrigger*                SBZPlayerLookAtTrigger_LeftMetalDetectorFavor_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1428(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_LA_Manager_Scripted_EyeScan_C*      BP_LA_Manager_Scripted_EyeScan_Right_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1430(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_LA_Manager_Scripted_EyeScan_C*      BP_LA_Manager_Scripted_EyeScan_Left_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1438(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_LA_Civ_Cosmetic_TalkToPlayer_02_C*  BP_LA_Civ_Cosmetic_TalkToPlayer_GoodLuckRight_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1440(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_LA_Civ_Cosmetic_TalkToPlayer_02_C*  BP_LA_Civ_Cosmetic_TalkToPlayer_GoodLuckLeft_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1448(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_LeftHallwayLasersPillars_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1450(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_LeftHallwayLasersHorizontal_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1458(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_LasersRightPillar6And8_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1460(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_RightHallwayCeiling_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1468(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_LasersRightPillar5_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1470(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_LasersRightPillar7_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1478(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_RightHallwayPillars_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1480(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_LasersLobbyVent2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1488(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_LasersLobbyVent1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1490(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_LasersLobbyVent4_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1498(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_LasersLobbyVent3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x14A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_LifeAction27_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x14A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_LifeAction19_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x14B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_LifeAction20_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x14B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_LifeAction16_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x14C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_LifeAction17_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x14C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_PickUpExplosives1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x14D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ONE_IndicatorLight_Controllable_01_C* BP_ONE_IndicatorLight_Controllable_01_2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x14D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerLookAtTrigger*                SBZPlayerLookAtTrigger_Martix1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x14E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerLookAtTrigger*                SBZPlayerLookAtTrigger_Matrix2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x14E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerLookAtTrigger*                SBZPlayerLookAtTrigger_Matrix3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x14F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerLookAtTrigger*                SBZPlayerLookAtTrigger_Matrix4_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x14F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_WallExplosives_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1500(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_PP_ArmorBag2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1508(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ONE_Lobby_Center_CeilingWindow_01_C* BP_ONE_Lobby_Center_CeilingWindow_01_5_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1510(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ONE_Lobby_Center_CeilingWindow_01_C* BP_ONE_Lobby_Center_CeilingWindow_11_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1518(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ONE_Lobby_Center_CeilingWindow_01_C* BP_ONE_Lobby_Center_CeilingWindow_3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1520(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_One_Step_Animated_Button_C*         BP_One_Step_Animated_Button5_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1528(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZTrafficSpline*                      SBZTrafficSpline_StealthEscape_DriveOut_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1530(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZDestroyGroup*                       SBZDestroyGroup_GarageEscapeVan_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1538(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_DataCenterSoundEvent_C*             BP_DataCenterSoundEvent_GoodToGoRight_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1540(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_DataCenterSoundEvent_C*             BP_DataCenterSoundEvent_GoodToGoLeft_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1548(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_One_Step_Animated_Button_C*         BP_OneStepAnimatedButton_DebugOpenVaultInside_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1550(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagSpawner*                         SBZBagSpawner_FavorExtraThermitetLeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1558(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZBagSpawner*                         SBZBagSpawner_FavorExtraThermitetRightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1560(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_LeadGuard2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1568(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_LifeAction42_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1570(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_MetalDetectorsCorrectSwitches_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1578(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_LA_Civ_Cosmetic_Smoke_Loop_C*       BP_LA_Civ_Cosmetic_Smoke_Loop_2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1580(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ConnectedMaintenanceBox_C*          BP_ConnectedMaintenanceBox_RightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1588(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ConnectedMaintenanceBox_C*          BP_ConnectedMaintenanceBox_LeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1590(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup10_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1598(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup9_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x15A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup12_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x15A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup11_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x15B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup13_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x15B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup14_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x15C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          SBZObjective_SecureAllOpt2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x15C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup_Enemies_EscapeOffice1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x15D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup_Enemies_EscapeOffice2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x15D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup_Enemies_EscapeOffice3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x15E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x15E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup18_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x15F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ThermalLance_C*                     BP_ThermalLance_LeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x15F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ThermalLance_C*                     BP_ThermalLance_RightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1600(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_SwipeBlueKeycard_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1608(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ONE_ElevatorHatch_01_C*             BP_ONE_ElevatorHatch_01_2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1610(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_ElevatorDoor_C*                     BP_ElevatorDoor12_13_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1618(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ABP_BlueKeycardReader_C*                BP_BlueKeycardReader_Vault_DisableCurrentStealthObjectiveElements_MERGED_RefProperty; // 0x1620(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerTriggerVolume*                SBZPlayerTriggerVolume_ManTrapCheckLeft_DisableCurrentStealthObjectiveElements_MERGED_RefProperty; // 0x1628(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_GoToShortcutLeft_DisableCurrentStealthObjectiveElements_MERGED_RefProperty; // 0x1630(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZWaypoint*                           SBZWaypoint_SwipeBlueKeycard_DisableCurrentStealthObjectiveElements_MERGED_RefProperty; // 0x1638(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          PassedGatesIntoVault;                              // 0x0A21(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A22[0x6];                                      // 0x0A22(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZObjective*                          SBZObjective_EnterTheBank_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0A28(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardLeftWing1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0A30(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardLobby1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0A38(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardRightWing1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0A40(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AAkAmbientSound*                        AkAmbientSound_Alarm1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0A48(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_EnterTheBank_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0A50(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_Escape_Stealth1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0A58(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerEscapeVolume*                 SBZPlayerEscapeVolume_Escape_Stealth1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0A60(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_EscapeVan_C*                        BP_EscapeVan1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0A68(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_Escape_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0A70(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_MarkerZone_C*                       BP_MarkerZone_Escape_Stealth1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0A78(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_AmmoLeft_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0A80(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_AmmoRight_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0A88(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_PP_DoctorBag_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0A90(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_PP_ArmorBag_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0A98(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_PP_AmmoBag_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0AA0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_LA_Scripted_Patrol_C*               BP_LA_Scripted_Patrol_LeadGuard2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0AA8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_LeadGuard_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0AB0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_Lootdrop_Stealth1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0AB8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_EscapeHelicopter_C*                 BP_EscapeHelicopter1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0AC0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_Escape_Loud1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0AC8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerEscapeVolume*                 SBZPlayerEscapeVolume_Escape_Loud1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0AD0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_MarkerZone_C*                       BP_MarkerZone_Escape_Loud1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0AD8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_Lootdrop_Loud1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0AE0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_SecureAllOpt_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0AE8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZTrafficSpline*                      SBZTrafficSpline_HelicopterOvkWeapon1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0AF0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagSpawner*                         SBZBagSpawner_OVKBag1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0AF8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_OverkillWeapon_Drop1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B00(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZTrafficSpline*                      SBZTrafficSpline_HelicopterOvkWeapon2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B08(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagSpawner*                         SBZBagSpawner_OVKBag2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B10(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_OverkillWeapon_Drop2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B18(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZTrafficSpline*                      SBZTrafficSpline_HelicopterOvkWeapon3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B20(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagSpawner*                         SBZBagSpawner_OVKBag3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B28(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_OverkillWeapon_Drop3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B30(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup_PedestrianLobbySpawns_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B38(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZTrafficSpline*                      SBZTrafficSplineSwatHelicopterStart1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B40(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZTrafficSpline*                      SBZTrafficSplineSwatHelicopterEnd1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B48(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZTrafficSpline*                      SBZTrafficSplineSwatHelicopterStart2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B50(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZTrafficSpline*                      SBZTrafficSplineSwatHelicopterEnd2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B58(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZTrafficSpline*                      SBZTrafficSplineSwatHelicopterStart3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B60(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZTrafficSpline*                      SBZTrafficSplineSwatHelicopterEnd3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B68(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_SecureTheLoot_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B70(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_ContactTheInsideMan_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B78(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_ListenToThePlan_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B80(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_EnterTheServerRoom_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B88(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_CopyFromUSBDrive_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B90(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_DisableTheMetalDetectors_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0B98(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_FindManagersOffice_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0BA0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_GenerateGateCode_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0BA8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_ReturnToInsideMan_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0BB0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_ListenNextPlan_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0BB8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_PickUpStickers_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0BC0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_MeetAtGate_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0BC8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_InsertTheGateCode_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0BD0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_Keypad_C*                           BP_Keypad_LeftWingGate_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0BD8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_ReachTheVaultArea_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0BE0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_OpenTheVault_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0BE8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_DAT_SecurityScanner_01_SCR_C*       BP_DAT_SecurityScanner_LeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0BF0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_FindSecurityComputer_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0BF8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_FindBlueKeycard_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C00(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_HackSecurityComputer_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C08(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_EnableBlueKeycardReader_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C10(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_TurnTheWheel_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C18(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_BlueKeycardReader_C*                BP_BlueKeycardReader_Vault_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C20(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZModifiableTimer*                    SBZModifiableTimer_UnlockVault_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C28(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_FindTheGate_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C30(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_PickEquipmentFromVan_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C38(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_LootdropLance_RightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C40(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_MarkerZone_C*                       BP_MarkerZone_Drill_RightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C48(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_BoltTheDrill_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C50(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_StartTheDrill_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C58(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_DefendTheDrill_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C60(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_DissembleTheDrill_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C68(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_OxygenTanks_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C70(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerTriggeredVoiceVolume*         SBZPlayerTriggeredVoiceVolume_DrillEndThermal_RightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C78(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_SetupThermite_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C80(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_BurnThroughFloor_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C88(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_CollectThermite_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C90(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_PlaceThermite_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0C98(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_IgniteThermite_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0CA0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_AddMoreThermite_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0CA8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_LootdropThermite2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0CB0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_MarkerZone_C*                       BP_MarkerZone_ThermiteBag_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0CB8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_InteractThermite2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0CC0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerTriggeredVoiceVolume*         SBZPlayerTriggeredVoice_Curse2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0CC8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_TestThermite_C*                     BP_ThermiteFloorBreach_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0CD0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_FireThermite2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0CD8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZAgilityNavLink*                     Navlink_JumpDown7_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0CE0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZAgilityNavLink*                     Navlink_JumpDown6_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0CE8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZAgilityNavLink*                     Navlink_JumpDown8_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0CF0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZAgilityNavLink*                     Navlink_JumpDown5_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0CF8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroy_ThermiteFloor2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D00(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_EquipmentVan_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D08(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_AssembleTheDrill_1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D10(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_BreachTheGate_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D18(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_DisableMagneticLock_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D20(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_MagneticLock_FindManagersOffice_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D28(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_MagneticLock_StartTheHack_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D30(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_MagneticLock_DefendHack_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D38(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_HoldForEquipmentDrop_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D40(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_EquipmentHelicopter_C*              BP_EquipmentHelicopter_2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D48(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZTrafficSpline*                      SBZTrafficSpline_HelicopterThermiteDropLeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D50(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagSpawner*                         SBZBagSpawner_ThermiteEquipmentLeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D58(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZFilteredTriggerVolume*              SBZFilteredTriggerVolume_ThermiteEquipmentLeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D60(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_TakeMoneyPiles_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D68(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_DropOffLoot_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D70(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_GetThroughLobby_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D78(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerTriggerVolume*                SBZPlayerTriggerVolume_ReachVaultArea_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D80(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerTriggerVolume*                SBZPlayerTriggerVolume_GetThroughTheLobby_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D88(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_BlowHoleInWall_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D90(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_PlantExplosives_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0D98(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjectivePlantExplosives_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0DA0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZModifiableTimer*                    SBZModifiableTimer_Wall_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0DA8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjectiveTakeCover_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0DB0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerTriggerVolume*                SBZPlayerTriggerVolume_3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0DB8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_EscapeRun1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0DC0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_StickStickers_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0DC8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_PlaceMoneyIntoCarts_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0DD0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerTriggerVolume*                SBZPlayerTriggerVolume_Vault_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0DD8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_GoToDoorsToGarage_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0DE0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerTriggerVolume*                SBZPlayerTriggerVolume_ManTrapCheckLeft_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0DE8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_GoToGarage_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0DF0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_GoToGarage2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0DF8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_EscapeRun2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E00(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_EscapeRun3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E08(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_EscapeRun4_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E10(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_VentBars3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E18(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_VentBars2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E20(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_VentBars1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E28(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_VentBars4_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E30(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_EnterTheVault_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E38(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerEscapeVolume*                 SBZPlayerEscapeVolume_Stealth_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E40(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_MarkerZone_C*                       BP_MarkerZone_StealthEscape_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E48(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_StealthEscape_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E50(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_Escape_5_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E58(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_StealthEscape_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E60(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZTrafficSpline*                      SBZTrafficSpline_EscapeVanDriveIn_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E68(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_ReachTheEscapePoint_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E70(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_JumpInVault1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E78(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZFilteredTriggerVolume*              SBZFilteredTriggerVolume_OvkWeapon2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E80(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZFilteredTriggerVolume*              SBZFilteredTriggerVolume_OvkWeapon3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E88(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZFilteredTriggerVolume*              SBZFilteredTriggerVolume_OvkWeapon1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E90(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_GoToShortcutLeft_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0E98(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_GoToGarage1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0EA0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerTriggerVolume*                SBZPlayerTriggerVolume_GoToGarage1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0EA8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerTriggerVolume*                SBZPlayerTriggerVolume_GotoGarage2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0EB0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerTriggerVolume*                SBZPlayerTriggerVolume_EscapeRunNavigatingWithMarker3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0EB8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_DAT_SecurityScanner_01_SCR_C*       BP_DAT_SecurityScanner_RightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0EC0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerLookAtTrigger*                SBZPlayerLookAtTrigger_LeftWingGate_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0EC8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerLookAtTrigger*                SBZPlayerLookAtTrigger_RightWingGate_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0ED0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_LootdropLance_LeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0ED8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_MarkerZone_C*                       BP_MarkerZone_Drill_LeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0EE0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerTriggeredVoiceVolume*         SBZPlayerTriggeredVoiceVolume_DrillEndThermal_LeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0EE8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_Keypad_C*                           BP_Keypad_RightWingGate_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0EF0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerTriggerVolume*                SBZPlayerTriggerVolume_GoToGarageGuardSpeaks_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0EF8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZTrafficSpline*                      SBZTrafficSpline_HelicopterThermiteDropRightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F00(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZFilteredTriggerVolume*              SBZFilteredTriggerVolume_ThermiteEquipmentRightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F08(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagSpawner*                         SBZBagSpawner_ThermitetBagsLeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F10(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagSpawner*                         SBZBagSpawner_ThermiteEquipmentRightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F18(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagSpawner*                         SBZBagSpawner_ThermitetBagsRightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F20(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ONE_SecurityGate_C*                 BP_ONE_SecurityGate_RightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F28(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ONE_SecurityGate_C*                 BP_ONE_SecurityGate_LeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F30(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ONE_VaultDoor_C*                    BP_ONE_VaultDoor_5_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F38(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_PocketDrill_C*                      BP_PocketDrill_2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F40(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_One_Step_Animated_Button_C*         BP_OneStepAnimatedButton_OverrideLeftWingGate_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F48(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_One_Step_Animated_Button_C*         BP_OneStepAnimatedButton_OverrideRightWingGate_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F50(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_GenericHackableComputer_C*          BP_GenericHackableComputer_MatrixRoom6_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F58(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_PocketDrill_C*                      BP_PocketDrill2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F60(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup_Enemies_EscapeOffice_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F68(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_BreachingEquipmentBagGenerator_C*   BP_BreachingEquipmentBagGenerator9_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F70(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup_3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F78(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup_1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F80(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_ThermiteEquipmentinServerRooms_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F88(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_BreachingEquipmentBagGenerator_C*   BP_BreachingEquipmentBagGenerator12_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F90(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_BreachingEquipmentBagGenerator_C*   BP_BreachingEquipmentBagGenerator15_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0F98(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_PickEquipmentFromServerRoom_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0FA0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_LA_Scripted_Patrol_C*               BP_LA_Scripted_Patrol11_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0FA8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_LA_Scripted_Patrol_C*               BP_LA_Scripted_Patrol22_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0FB0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_LA_Scripted_Patrol_C*               BP_LA_Scripted_Patrol23_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0FB8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardRightWing2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0FC0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardRightWing3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0FC8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardRightWing5_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0FD0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardLobby1stFloor1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0FD8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardLobby1stFloor3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0FE0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardLobby1stFloor2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0FE8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardLobby2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0FF0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardLobby3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x0FF8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardLobby4_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardLeftWing2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardRightWing4_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardMatrix1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardMatrix2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardVault2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_openable_Van_C*                     BP_openable_Van_2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagTriggerVolume*                   SBZBagTriggerVolume_Globe_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_GlobeCutHole_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_GlobeLootDrop_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_PrepareExtraction_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_GlobeSecureLoot_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1058(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_FindVent4_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1060(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_FindVent3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1068(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_FindVent2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1070(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_FindVent1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagSpawner*                         SBZBagSpawner_FavourElevatorThermiteEquipment_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagSpawner*                         SBZBagSpawner_FavourElevatorThermite_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1088(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagSpawner*                         SBZBagSpawner_FavourElevatorThermiteExtra_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1090(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_ElevatorEquipmentDrop_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup_Enemies_Vault2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x10A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ONE_MetalDoor_01_C*                 BP_ONE_MetalDoor_LeftWingHallway_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x10A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ONE_MetalDoor_01_C*                 BP_ONE_MetalDoor_RightWingHallway_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x10B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ONE_MetalDoor_01_C*                 BP_ONE_MetalDoor_16_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x10B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ONE_MetalDoor_01_C*                 BP_ONE_MetalDoor_01_12_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x10C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_DigitalKeyReader_C*                 BP_DigitalKeyReader_LeftWingOpenOffice1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x10C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_DigitalKeyReader_C*                 BP_DigitalKeyReader_LeftWingOpenOffice2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x10D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_Int_DoubleDoor_Wood_01_C*           BP_InteractableBreachableDoubleDoor_Wood_OpenOffice2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x10D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_Int_DoubleDoor_Wood_01_C*           BP_InteractableBreachableDoubleDoor_Wood_OpenOffice1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x10E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ONE_MetalGate_01_C*                 BP_ONE_MetalGate_8_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x10E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ONE_MetalGate_01_C*                 BP_ONE_MetalGate_01_5_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x10F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_Int_DoorMetalSimple_01_C*           BP_Int_DoorMetalSimple_14_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x10F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_Int_DoorMetalSimple_01_C*           BP_Int_DoorMetalSimple_16_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_Int_DoorMetalSimple_01_C*           BP_Int_DoorMetalSimple_15_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1108(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_Int_DoorMetalSimple_01_C*           BP_Int_DoorMetalSimple_17_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1110(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_Int_DoubleDoor_Reinforced_Industrial_01_C* BP_Int_DoubleDoor_Reinforced_Industrial_2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1118(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_ServerRoomVent_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1120(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_RightMetalDetectorInteractions_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1128(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_LeftMetalDetectorInteractions_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1130(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_EquipmentHelicopter_C*              BP_EquipmentHelicopter_Ovk_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1138(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_Int_SingleDoor_Reinforced_Wood_01_C* BP_Int_SingleDoor_Reinforced_Wood_01_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1140(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_LeftWingMetalDetectorController_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1148(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_RightWingMetalDetectorController_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1150(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardGarageLoot_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1158(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ONE_ExplodingWall_C*                BP_ONE_ExplodingWall_2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1160(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerTriggerVolume*                SBZPlayerTriggerVolume_ManTrapCheckRight_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1168(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_GoToShortcutRight_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1170(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_ZiplineDropLeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1178(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_MarkerZone_C*                       BP_MarkerZone_ZiplineLeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1180(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_Zipline_C*                          BP_Zipline_LeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1188(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagSpawner*                         SBZBagSpawner_ZiplineLeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1190(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZFilteredTriggerVolume*              SBZFilteredTriggerVolume_CrewSpeech_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1198(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_LA_Crew_Speech_C*                   BP_LA_Crew_Speech_2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x11A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_HoldForHelicopter_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x11A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_SetUpZipline_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x11B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_ZiplineSecureLoot_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x11B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZTrafficSpline*                      SBZTrafficSpline_HelicopterZiplineLeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x11C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagSpawner*                         SBZBagSpawner_ZiplineRightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x11C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_ZiplineLeftLootDrop_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x11D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_ZiplineEscape_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x11D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerEscapeVolume*                 SBZPlayerEscapeVolume_ZiplineLeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x11E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_ZiplineLeftWingEscape_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x11E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_MarkerZone_C*                       BP_MarkerZone_ZiplineLeftWingEscape_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x11F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_LA_Scripted_Idle_C*                 BP_LA_Scripted_Idle_KnockOnVan_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x11F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_LA_Scripted_Idle_C*                 BP_LA_Scripted_Idle_AtLeftGate_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1200(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_LA_Scripted_Idle_C*                 BP_LA_Scripted_Idle_AtRightGate_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1208(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZTrafficSpline*                      SBZTrafficSpline_HelicopterZiplineRightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1210(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_ZiplineDropRightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1218(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_MarkerZone_C*                       BP_MarkerZone_ZiplineRightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1220(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_Zipline_C*                          BP_Zipline_RightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1228(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_ZiplineRightLootDrop_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1230(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_ZiplineRightWingEscape_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1238(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerEscapeVolume*                 SBZPlayerEscapeVolume_ZiplineRightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1240(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_MarkerZone_C*                       BP_MarkerZone_ZiplineRightWingEscape_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1248(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_RFIDTagBlue_C*                      BP_RFIDTagBlue_2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1250(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_RFIDTagBlue_C*                      BP_RFIDTagBlue2_5_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1258(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_RFIDTagBlue_C*                      BP_RFIDTagBlue4_11_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1260(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_RFIDTagBlue_C*                      BP_RFIDTagBlue3_8_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1268(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagSpawner*                         SBZBagSpawner_OVKBagMatrix1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1270(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_21_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1278(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_Thermite_Breach_C*                  BP_Thermite_Breach2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1280(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardVault4_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1288(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_GuardVault3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1290(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup9_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1298(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_Int_SingleDoor_Reinforced_Industrial_03_C* BP_Int_SingleDoor_Reinforced_Industrial_6_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x12A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_DigitalKeyReader_C*                 BP_DigitalKeyReader_CountingRoom2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x12A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_DigitalKeyReader_C*                 BP_DigitalKeyReader_CountingRoom1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x12B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_Int_SingleDoor_Reinforced_Industrial_03_C* BP_Int_SingleDoor_Reinforced_Industrial_10_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x12B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_Keypad_C*                           BP_Keypad_InVaultLeft_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x12C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_Keypad_C*                           BP_Keypad_InVaultRight_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x12C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_VentReactor_C*                      BP_VentReactor10_2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x12D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_VentReactor_C*                      BP_VentReactor13_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x12D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagSpawner*                         SBZBagSpawner_OVKBagMatrix2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x12E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_PropsInFrontDoorsStealthRoute_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x12E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_PropsInFrontOfDoorsLoudRoute_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x12F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_31_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x12F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ONE_SlidingDoor_Single_02_C*        BP_ONE_SlidingDoor_Single_02_RightManTrap1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1300(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ONE_SlidingDoor_Single_02_C*        BP_ONE_SlidingDoor_Single_02_RightManTrap2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1308(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ONE_SlidingDoor_Single_02_C*        BP_ONE_SlidingDoor_Single_02_LeftManTrap1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1310(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ONE_SlidingDoor_Single_02_C*        BP_ONE_SlidingDoor_Single_02_LeftManTrap2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1318(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZFilteredTriggerVolume*              SBZFilteredTriggerVolume_ZiplineEquipmentLeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1320(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZFilteredTriggerVolume*              SBZFilteredTriggerVolume_ZiplineEquipmentRightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1328(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup_CloakerVent19_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1330(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup_CloakerVent18_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1338(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ONE_SecurityShutter_01_C*           BP_ONE_SecurityShutter_LeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1340(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ONE_SecurityShutter_01_C*           BP_ONE_SecurityShutter_RightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1348(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ONE_IndicatorLight_Controllable_01_C* BP_ONE_IndicatorLight_Controllable_LeftManTrap_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1350(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ONE_IndicatorLight_Controllable_01_C* BP_ONE_IndicatorLight_Controllable_RightManTrap_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1358(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ONE_IndicatorLight_Controllable_01_C* BP_ONE_IndicatorLight_Controllable_RightWingGate_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1360(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ONE_IndicatorLight_Controllable_01_C* BP_ONE_IndicatorLight_Controllable_LeftWingGate_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1368(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZLaserGrid*                          SBZLaserGrid_LeftHallway6_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1370(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZLaserGrid*                          SBZLaserGrid_LeftHallway10_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1378(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZLaserGrid*                          SBZLaserGrid_LeftHallway1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1380(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZLaserGrid*                          SBZLaserGrid_LeftHallway2_15_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1388(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZLaserGrid*                          SBZLaserGrid_LeftHallway5_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1390(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZLaserGrid*                          SBZLaserGrid_LeftHallway8_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1398(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZLaserGrid*                          SBZLaserGrid_RightHallway15_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x13A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZLaserGrid*                          SBZLaserGrid_RightHallway13_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x13A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZLaserGrid*                          SBZLaserGrid_RightHallway8_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x13B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZLaserGrid*                          SBZLaserGrid_RightHallway9_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x13B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZLaserGrid*                          SBZLaserGrid_RightHallway4_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x13C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZLaserGrid*                          SBZLaserGrid_RightHallway3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x13C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZLaserGrid*                          SBZLaserGrid_RightHallway12_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x13D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZLaserGrid*                          SBZLaserGrid_RightHallway17_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x13D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZLaserGrid*                          SBZLaserGrid_RightHallway6_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x13E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZLaserGrid*                          SBZLaserGrid_RightHallway2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x13E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZLaserGrid*                          SBZLaserGrid_RightHallway1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x13F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZLaserGrid*                          SBZLaserGrid_RightHallway14_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x13F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZLaserGrid*                          SBZLaserGrid_RightHallway16_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1400(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZLaserGrid*                          SBZLaserGrid_RightHallway10_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1408(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZLaserGrid*                          SBZLaserGrid_RightHallway11_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1410(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerLookAtTrigger*                SBZPlayerLookAtTrigger_RightMetalDetectorFavor_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1418(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerLookAtTrigger*                SBZPlayerLookAtTrigger_LeftMetalDetectorFavor_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1420(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_LA_Manager_Scripted_EyeScan_C*      BP_LA_Manager_Scripted_EyeScan_Right_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1428(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_LA_Manager_Scripted_EyeScan_C*      BP_LA_Manager_Scripted_EyeScan_Left_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1430(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_LA_Civ_Cosmetic_TalkToPlayer_02_C*  BP_LA_Civ_Cosmetic_TalkToPlayer_GoodLuckRight_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1438(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_LA_Civ_Cosmetic_TalkToPlayer_02_C*  BP_LA_Civ_Cosmetic_TalkToPlayer_GoodLuckLeft_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1440(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_LeftHallwayLasersPillars_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1448(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_LeftHallwayLasersHorizontal_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1450(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_LasersRightPillar6And8_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1458(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_RightHallwayCeiling_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1460(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_LasersRightPillar5_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1468(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_LasersRightPillar7_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1470(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_RightHallwayPillars_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1478(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_LasersLobbyVent2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1480(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_LasersLobbyVent1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1488(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_LasersLobbyVent4_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1490(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_LasersLobbyVent3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1498(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_LifeAction27_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x14A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_LifeAction19_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x14A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_LifeAction20_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x14B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_LifeAction16_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x14B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_LifeAction17_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x14C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_PickUpExplosives1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x14C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ONE_IndicatorLight_Controllable_01_C* BP_ONE_IndicatorLight_Controllable_01_2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x14D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerLookAtTrigger*                SBZPlayerLookAtTrigger_Martix1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x14D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerLookAtTrigger*                SBZPlayerLookAtTrigger_Matrix2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x14E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerLookAtTrigger*                SBZPlayerLookAtTrigger_Matrix3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x14E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerLookAtTrigger*                SBZPlayerLookAtTrigger_Matrix4_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x14F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_WallExplosives_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x14F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_PP_ArmorBag2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1500(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ONE_Lobby_Center_CeilingWindow_01_C* BP_ONE_Lobby_Center_CeilingWindow_01_5_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1508(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ONE_Lobby_Center_CeilingWindow_01_C* BP_ONE_Lobby_Center_CeilingWindow_11_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1510(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ONE_Lobby_Center_CeilingWindow_01_C* BP_ONE_Lobby_Center_CeilingWindow_3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1518(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_One_Step_Animated_Button_C*         BP_One_Step_Animated_Button5_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1520(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZTrafficSpline*                      SBZTrafficSpline_StealthEscape_DriveOut_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1528(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZDestroyGroup*                       SBZDestroyGroup_GarageEscapeVan_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1530(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_DataCenterSoundEvent_C*             BP_DataCenterSoundEvent_GoodToGoRight_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1538(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_DataCenterSoundEvent_C*             BP_DataCenterSoundEvent_GoodToGoLeft_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1540(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_One_Step_Animated_Button_C*         BP_OneStepAnimatedButton_DebugOpenVaultInside_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1548(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagSpawner*                         SBZBagSpawner_FavorExtraThermitetLeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1550(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZBagSpawner*                         SBZBagSpawner_FavorExtraThermitetRightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1558(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_LeadGuard2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1560(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined_LifeAction42_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1568(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_MetalDetectorsCorrectSwitches_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1570(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_LA_Civ_Cosmetic_Smoke_Loop_C*       BP_LA_Civ_Cosmetic_Smoke_Loop_2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1578(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ConnectedMaintenanceBox_C*          BP_ConnectedMaintenanceBox_RightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1580(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ConnectedMaintenanceBox_C*          BP_ConnectedMaintenanceBox_LeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1588(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup10_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1590(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup9_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1598(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup12_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x15A0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup11_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x15A8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup13_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x15B0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup14_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x15B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          SBZObjective_SecureAllOpt2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x15C0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup_Enemies_EscapeOffice1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x15C8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup_Enemies_EscapeOffice2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x15D0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup_Enemies_EscapeOffice3_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x15D8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x15E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup18_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x15E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ThermalLance_C*                     BP_ThermalLance_LeftWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x15F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ThermalLance_C*                     BP_ThermalLance_RightWing_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x15F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_SwipeBlueKeycard_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1600(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ONE_ElevatorHatch_01_C*             BP_ONE_ElevatorHatch_01_2_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1608(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_ElevatorDoor_C*                     BP_ElevatorDoor12_13_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1610(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerTriggerVolume*                SBZPlayerTriggerVolume_0_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1618(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_1_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1620(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup_CloakerVent15_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1628(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup_CloakerVent14_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1630(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup_CloakerVent16_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1638(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APD3PawnSpawnGroup*                     PD3PawnSpawnGroup_CloakerVent17_ExecuteUbergraph_G_ONE_Scripting_RefProperty; // 0x1640(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ABP_BlueKeycardReader_C*                BP_BlueKeycardReader_Vault_DisableCurrentStealthObjectiveElements_MERGED_RefProperty; // 0x1648(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerTriggerVolume*                SBZPlayerTriggerVolume_ManTrapCheckLeft_DisableCurrentStealthObjectiveElements_MERGED_RefProperty; // 0x1650(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_GoToShortcutLeft_DisableCurrentStealthObjectiveElements_MERGED_RefProperty; // 0x1658(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZWaypoint*                           SBZWaypoint_SwipeBlueKeycard_DisableCurrentStealthObjectiveElements_MERGED_RefProperty; // 0x1660(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ActionPhaseStarted();
-	void ActivateBreachTheGate();
-	void ActivateContactTheInsideMan();
-	void ActivateDisableMagneticLock();
-	void ActivateDisableMetalDetectors();
-	void ActivateDropOffLoot();
-	void ActivateEndlessAssault();
-	void ActivateFindManagersOffice();
-	void ActivateFindTheGate();
-	void ActivateFirstObjective();
-	void ActivateGenerateCodeForTheGate();
-	void ActivateGetThroughLobby();
-	void ActivateGlobeSecureTheLoot();
-	void ActivateHoldForEquipmentDrop();
-	void ActivateLanceDrill();
-	void ActivateLasers();
-	void ActivateLoudGameplayElements();
-	void ActivateLoudObjective();
-	void ActivateOpenTheVault();
-	void ActivatePickEquipmentFromServerRoom();
-	void ActivatePickEquipmentFromVan();
-	void ActivatePickUpEquipment();
-	void ActivatePickUpThermite();
-	void ActivatePocketDrillOnBarDoorsInVault();
-	void ActivateReachTheVaultArea();
-	void ActivateReturnToInsideMan();
-	void ActivateSprinklers();
-	void ActivateSWATHelicopter();
-	void ActivateTakeMoneyPiles();
-	void ActivateThePlan();
-	void ActivateThermite();
-	void ActivateZiplineEscape();
-	void ActivateZiplineLoudSecure();
-	void ActivateZiplineSecureLoot();
-	void Alarm();
-	void Assault();
-	void BindOnLaserTriggered();
-	void BindOnLobbyGuards();
-	void BindOnManagersComputer();
-	void BindOnMatrixAndVaultGuards();
-	void BindOnMoneyCarts();
-	void BlackScreenStarted();
-	void BlueKeycardPickedUp(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
-	void BndEvt__G_ONE_Scripting_BP_BlueKeycard2_2_K2Node_ActorBoundEvent_56_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
-	void BndEvt__G_ONE_Scripting_BP_BlueKeycardReader_Vault_K2Node_ActorBoundEvent_54_SBZModuleActorStateChangedDelegate__DelegateSignature(ESBZModuleActorState NewState);
-	void BndEvt__G_ONE_Scripting_BP_BreachingEquipmentBagGenerator11_K2Node_ActorBoundEvent_146_SBZBagPickedUp__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_BreachingEquipmentBagGenerator14_K2Node_ActorBoundEvent_147_SBZBagPickedUp__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_BreachingEquipmentBagGenerator8_K2Node_ActorBoundEvent_11_SBZBagPickedUp__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_ConnectedCableBox_2_K2Node_ActorBoundEvent_27_SBZOnCompleteDelegate__DelegateSignature(bool bWasSuccess);
-	void BndEvt__G_ONE_Scripting_BP_ConnectedCableBox_RightWing1_K2Node_ActorBoundEvent_120_SBZOnCompleteDelegate__DelegateSignature(bool bWasSuccess);
-	void BndEvt__G_ONE_Scripting_BP_ConnectedMaintenanceBox_2_K2Node_ActorBoundEvent_25_SBZMaintenanceBoxDelegate__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_ConnectedMaintenanceBox_LeftWing_K2Node_ActorBoundEvent_118_SBZMaintenanceBoxBoolDelegate__DelegateSignature(bool bSuccessful);
-	void BndEvt__G_ONE_Scripting_BP_ConnectedMaintenanceBox_LeftWing_K2Node_ActorBoundEvent_129_SBZMaintenanceBoxDelegate__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_ConnectedMaintenanceBox_RightWing_K2Node_ActorBoundEvent_117_SBZMaintenanceBoxDelegate__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_ConnectedMaintenanceBox_RightWing_K2Node_ActorBoundEvent_119_SBZMaintenanceBoxBoolDelegate__DelegateSignature(bool bSuccessful);
-	void BndEvt__G_ONE_Scripting_BP_ConnectedMaintenanceBox_RightWing_K2Node_ActorBoundEvent_130_SBZMaintenanceBoxDelegate__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_DAT_C4Explosive_01_Pickup1_K2Node_ActorBoundEvent_152_InteractionCompleted__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_DAT_C4Explosive_01_Pickup2_K2Node_ActorBoundEvent_134_InteractionCompleted__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_DAT_C4Explosive_01_Pickup3_K2Node_ActorBoundEvent_135_InteractionCompleted__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_DAT_SecurityScanner_01_SCR_2_K2Node_ActorBoundEvent_45_onAlarmTripped__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_DAT_SecurityScanner_RightWing_K2Node_ActorBoundEvent_153_onAlarmTripped__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_DroneSpawner18_K2Node_ActorBoundEvent_113_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
-	void BndEvt__G_ONE_Scripting_BP_GenericHackableComputer_MatrixRoom6_K2Node_ActorBoundEvent_136_SBZHackableActorDelegate__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_Int_SingleDoor_Reinforced_Wood_01_K2Node_ActorBoundEvent_102_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State);
-	void BndEvt__G_ONE_Scripting_BP_Keypad_2_K2Node_ActorBoundEvent_47_SBZOnCodeEntered__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_Keypad_RightWingGate_K2Node_ActorBoundEvent_127_SBZOnCodeEntered__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_LA_Manager_Scripted_EyeScan_Left_K2Node_ActorBoundEvent_6_ActionCompleted__DelegateSignature(ESBZLifeActionStopReason Result, class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot);
-	void BndEvt__G_ONE_Scripting_BP_LA_Manager_Scripted_EyeScan_Left_K2Node_ActorBoundEvent_8_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot);
-	void BndEvt__G_ONE_Scripting_BP_LA_Manager_Scripted_EyeScan_Right_K2Node_ActorBoundEvent_114_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot);
-	void BndEvt__G_ONE_Scripting_BP_LA_Manager_Scripted_EyeScan_Right_K2Node_ActorBoundEvent_7_ActionCompleted__DelegateSignature(ESBZLifeActionStopReason Result, class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot);
-	void BndEvt__G_ONE_Scripting_BP_LA_Scripted_Idle_AtLeftGate_K2Node_ActorBoundEvent_181_ActionCompleted__DelegateSignature(ESBZLifeActionStopReason Result, class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot);
-	void BndEvt__G_ONE_Scripting_BP_LA_Scripted_Idle_AtLeftGate_K2Node_ActorBoundEvent_182_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot);
-	void BndEvt__G_ONE_Scripting_BP_LA_Scripted_Idle_AtRightGate_K2Node_ActorBoundEvent_183_ActionCompleted__DelegateSignature(ESBZLifeActionStopReason Result, class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot);
-	void BndEvt__G_ONE_Scripting_BP_LA_Scripted_Idle_AtRightGate_K2Node_ActorBoundEvent_184_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot);
-	void BndEvt__G_ONE_Scripting_BP_LA_Scripted_Idle_KnockOnVan_K2Node_ActorBoundEvent_180_ActionCompleted__DelegateSignature(ESBZLifeActionStopReason Result, class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot);
-	void BndEvt__G_ONE_Scripting_BP_MoneyCart_01_K2Node_ActorBoundEvent_165_On_Max_Bags_Reached__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_MoneyCart_02_K2Node_ActorBoundEvent_168_On_Max_Bags_Reached__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_MoneyCart_03_K2Node_ActorBoundEvent_169_On_Max_Bags_Reached__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_MoneyCart_04_K2Node_ActorBoundEvent_170_On_Max_Bags_Reached__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_MoneyCart_05_K2Node_ActorBoundEvent_171_On_Max_Bags_Reached__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_MoneyCart_06_K2Node_ActorBoundEvent_172_On_Max_Bags_Reached__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_MoneyCart_07_K2Node_ActorBoundEvent_173_On_Max_Bags_Reached__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_ONE_ElevatorHatch_01_2_K2Node_ActorBoundEvent_67_onHatchCompleteInteraction__DelegateSignature(bool opened);
-	void BndEvt__G_ONE_Scripting_BP_ONE_ExplodingWall_2_K2Node_ActorBoundEvent_157_SBZOnChargesChangedDelegate__DelegateSignature(int32 NewCount);
-	void BndEvt__G_ONE_Scripting_BP_ONE_ExplodingWall_2_K2Node_ActorBoundEvent_158_SBZExplosionDelegate__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_ONE_MetalDoor_01_12_K2Node_ActorBoundEvent_167_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State);
-	void BndEvt__G_ONE_Scripting_BP_ONE_MetalDoor_16_K2Node_ActorBoundEvent_166_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State);
-	void BndEvt__G_ONE_Scripting_BP_One_Step_Animated_Button5_K2Node_ActorBoundEvent_201_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
-	void BndEvt__G_ONE_Scripting_BP_ONE_VaultDoor_5_K2Node_ActorBoundEvent_133_OnInteractionComplete__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_ONE_VentDoor_1_K2Node_ActorBoundEvent_140_onVentOpened__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_ONE_VentDoor_3_K2Node_ActorBoundEvent_174_onVentOpened__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_ONE_VentDoor_4_K2Node_ActorBoundEvent_175_onVentOpened__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_ONE_VentDoor_7_K2Node_ActorBoundEvent_141_onVentOpened__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_OneStepAnimatedButton_DebugOpenVaultInside_K2Node_ActorBoundEvent_58_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
-	void BndEvt__G_ONE_Scripting_BP_OneStepAnimatedButton_OverrideLeftWingGate_K2Node_ActorBoundEvent_137_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
-	void BndEvt__G_ONE_Scripting_BP_OneStepAnimatedButton_OverrideRightWingGate_K2Node_ActorBoundEvent_138_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
-	void BndEvt__G_ONE_Scripting_BP_openable_Van_2_K2Node_ActorBoundEvent_83_onOpened__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_PocketDrill2_K2Node_ActorBoundEvent_139_SBZBreachingEquipmentDelegate__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_PocketDrill_2_K2Node_ActorBoundEvent_132_SBZBreachingEquipmentDelegate__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_TestThermite2_K2Node_ActorBoundEvent_74_SBZThermiteDelegate__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_TestThermite2_K2Node_ActorBoundEvent_75_SBZThermiteDelegate__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_TestThermite2_K2Node_ActorBoundEvent_77_SBZThermiteDelegate__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_TestThermite2_K2Node_ActorBoundEvent_79_SBZThermiteDelegate__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_TestThermite2_K2Node_ActorBoundEvent_82_SBZThermiteDelegate__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_ThermalLance2_K2Node_ActorBoundEvent_63_SBZBreachingEquipmentDelegate__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_ThermalLance_LeftWing_K2Node_ActorBoundEvent_122_SBZBreachingEquipmentDelegate__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_ThermalLance_LeftWing_K2Node_ActorBoundEvent_123_SBZBreachingEquipmentDelegate__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_ThermalLance_LeftWing_K2Node_ActorBoundEvent_124_SBZBreachingEquipmentDelegate__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_ThermalLance_LeftWing_K2Node_ActorBoundEvent_125_SBZBreachingEquipmentDelegate__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_ThermalLance_LeftWing_K2Node_ActorBoundEvent_126_SBZBreachingEquipmentDelegate__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_ThermalLance_RightWing_K2Node_ActorBoundEvent_65_SBZBreachingEquipmentDelegate__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_ThermalLance_RightWing_K2Node_ActorBoundEvent_69_SBZBreachingEquipmentDelegate__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_ThermalLance_RightWing_K2Node_ActorBoundEvent_70_SBZBreachingEquipmentDelegate__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_BP_ThermalLance_RightWing_K2Node_ActorBoundEvent_72_SBZBreachingEquipmentDelegate__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZBagTriggerVolume_6_K2Node_ActorBoundEvent_28_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
-	void BndEvt__G_ONE_Scripting_SBZBagTriggerVolume_DestroyLeftSkylight_K2Node_ActorBoundEvent_29_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
-	void BndEvt__G_ONE_Scripting_SBZBagTriggerVolume_Globe_K2Node_ActorBoundEvent_151_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
-	void BndEvt__G_ONE_Scripting_SBZBagTriggerVolume_LanceBags2_K2Node_ActorBoundEvent_55_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
-	void BndEvt__G_ONE_Scripting_SBZBagTriggerVolume_LanceBags_LeftWing_K2Node_ActorBoundEvent_121_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
-	void BndEvt__G_ONE_Scripting_SBZBagTriggerVolume_SecureVent_K2Node_ActorBoundEvent_91_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
-	void BndEvt__G_ONE_Scripting_SBZBagTriggerVolume_ZiplineLeftWing_3_K2Node_ActorBoundEvent_160_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
-	void BndEvt__G_ONE_Scripting_SBZBagTriggerVolume_ZiplineLeftWing_K2Node_ActorBoundEvent_68_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
-	void BndEvt__G_ONE_Scripting_SBZBagTriggerVolume_ZiplineRightWing_2_K2Node_ActorBoundEvent_186_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
-	void BndEvt__G_ONE_Scripting_SBZBagTriggerVolume_ZiplineRightWing_K2Node_ActorBoundEvent_185_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
-	void BndEvt__G_ONE_Scripting_SBZDestroyGroup_BlueKeycard_K2Node_ActorBoundEvent_101_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors);
-	void BndEvt__G_ONE_Scripting_SBZDestroyGroup_LeftWingColorCableBox_K2Node_ActorBoundEvent_80_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors);
-	void BndEvt__G_ONE_Scripting_SBZDestroyGroup_RightWingColorCableBox_K2Node_ActorBoundEvent_39_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors);
-	void BndEvt__G_ONE_Scripting_SBZDestroyGroup_SprinklerSystem_K2Node_ActorBoundEvent_112_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors);
-	void BndEvt__G_ONE_Scripting_SBZFilteredTriggerVolume3_K2Node_ActorBoundEvent_62_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_ONE_Scripting_SBZFilteredTriggerVolume_CrewSpeech_K2Node_ActorBoundEvent_161_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_ONE_Scripting_SBZFilteredTriggerVolume_OvkWeapon1_K2Node_ActorBoundEvent_21_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_ONE_Scripting_SBZFilteredTriggerVolume_OvkWeapon2_K2Node_ActorBoundEvent_23_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_ONE_Scripting_SBZFilteredTriggerVolume_OvkWeapon3_K2Node_ActorBoundEvent_81_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_ONE_Scripting_SBZFilteredTriggerVolume_ThermiteEquipmentRightWing_K2Node_ActorBoundEvent_131_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_ONE_Scripting_SBZFilteredTriggerVolume_ZiplineEquipmentLeftWing_K2Node_ActorBoundEvent_98_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_ONE_Scripting_SBZFilteredTriggerVolume_ZiplineEquipmentRightWing_K2Node_ActorBoundEvent_96_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
-	void BndEvt__G_ONE_Scripting_SBZModifiableTimer_UnlockVault_K2Node_ActorBoundEvent_53_SBZTimerDelegate__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_AssembleTheDrill_1_K2Node_ActorBoundEvent_84_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_BoltTheDrill_K2Node_ActorBoundEvent_64_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_BurnThroughFloor_K2Node_ActorBoundEvent_36_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_CollectThermite_K2Node_ActorBoundEvent_73_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_ContactTheInsideMan_K2Node_ActorBoundEvent_19_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_CopyFromUSBDrive_K2Node_ActorBoundEvent_24_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_DefendTheDrill_K2Node_ActorBoundEvent_71_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_DisableTheMetalDetectors_K2Node_ActorBoundEvent_32_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_DropOffLoot_K2Node_ActorBoundEvent_95_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_EnableBlueKeycardReader_K2Node_ActorBoundEvent_57_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_EnterTheServerRoom_K2Node_ActorBoundEvent_22_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_FindManagersOffice_K2Node_ActorBoundEvent_31_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_FindTheGate_K2Node_ActorBoundEvent_59_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_GenerateGateCode_K2Node_ActorBoundEvent_33_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_GetThroughLobby_K2Node_ActorBoundEvent_94_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_GlobeSecureLoot_K2Node_ActorBoundEvent_156_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_GoToDoorsToGarage_K2Node_ActorBoundEvent_106_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_GoToGarage_K2Node_ActorBoundEvent_108_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_HackSecurityComputer_K2Node_ActorBoundEvent_52_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_HoldForHelicopter_K2Node_ActorBoundEvent_178_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_IgniteThermite_K2Node_ActorBoundEvent_78_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_InsertTheGateCode_K2Node_ActorBoundEvent_44_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_ListenNextPlan_K2Node_ActorBoundEvent_38_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_ListenToThePlan_K2Node_ActorBoundEvent_20_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_MagneticLock_DefendHack_K2Node_ActorBoundEvent_87_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_MagneticLock_FindManagersOffice_K2Node_ActorBoundEvent_85_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_MagneticLock_StartTheHack_K2Node_ActorBoundEvent_86_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_MeetAtGate_K2Node_ActorBoundEvent_40_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_OpenTheVault_K2Node_ActorBoundEvent_50_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_PickEquipmentFromServerRoom_K2Node_ActorBoundEvent_148_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_PickEquipmentFromVan_K2Node_ActorBoundEvent_61_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_PickUpStickers_K2Node_ActorBoundEvent_41_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_PlaceMoneyIntoCarts_K2Node_ActorBoundEvent_105_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_PlaceThermite_K2Node_ActorBoundEvent_76_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_PrepareExtraction_K2Node_ActorBoundEvent_155_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_ReachTheEscapePoint_K2Node_ActorBoundEvent_111_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_ReachTheVaultArea_K2Node_ActorBoundEvent_48_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_ReturnToInsideMan_K2Node_ActorBoundEvent_37_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_SetUpZipline_K2Node_ActorBoundEvent_176_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_StartTheDrill_K2Node_ActorBoundEvent_66_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_StickStickers_K2Node_ActorBoundEvent_103_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_TakeMoneyPiles_K2Node_ActorBoundEvent_90_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjective_ZiplineSecureLoot_K2Node_ActorBoundEvent_177_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjectivePlantExplosives_K2Node_ActorBoundEvent_97_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZObjectiveTakeCover_K2Node_ActorBoundEvent_100_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZPawnSpawnPredefined_GuardGarageLoot_K2Node_ActorBoundEvent_179_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
-	void BndEvt__G_ONE_Scripting_SBZPawnSpawnPredefined_GuardRightWing5_K2Node_ActorBoundEvent_150_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
-	void BndEvt__G_ONE_Scripting_SBZPawnSpawnPredefined_LeadGuard2_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
-	void BndEvt__G_ONE_Scripting_SBZPlayerEscapeVolume_Stealth_K2Node_ActorBoundEvent_46_SBZEscapeTimerDelegate__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZPlayerEscapeVolume_ZiplineLeftWing_K2Node_ActorBoundEvent_104_SBZEscapeTimerDelegate__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZPlayerEscapeVolume_ZiplineRightWing_K2Node_ActorBoundEvent_187_SBZEscapeTimerDelegate__DelegateSignature();
-	void BndEvt__G_ONE_Scripting_SBZPlayerLookAtTrigger_1_K2Node_ActorBoundEvent_60_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerLookAtTrigger_LeftMetalDetectorFavor_K2Node_ActorBoundEvent_51_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerLookAtTrigger_LeftWingGate_K2Node_ActorBoundEvent_128_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerLookAtTrigger_Martix1_K2Node_ActorBoundEvent_154_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerLookAtTrigger_Martix1_K2Node_ActorBoundEvent_192_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerLookAtTrigger_Matrix2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerLookAtTrigger_Matrix2_K2Node_ActorBoundEvent_13_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerLookAtTrigger_Matrix3_K2Node_ActorBoundEvent_193_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerLookAtTrigger_Matrix3_K2Node_ActorBoundEvent_194_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerLookAtTrigger_Matrix4_K2Node_ActorBoundEvent_197_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerLookAtTrigger_Matrix4_K2Node_ActorBoundEvent_198_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerLookAtTrigger_RightMetalDetectorFavor_K2Node_ActorBoundEvent_188_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerLookAtTrigger_VaultMoney_K2Node_ActorBoundEvent_116_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume2_2_K2Node_ActorBoundEvent_110_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_0_K2Node_ActorBoundEvent_17_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_3_K2Node_ActorBoundEvent_99_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_ActivateThermite2_K2Node_ActorBoundEvent_88_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_EscapeForceSpawnGarage1_K2Node_ActorBoundEvent_145_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_EscapeForceSpawnOffice2_K2Node_ActorBoundEvent_144_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_EscapeForceSpawnOffice_K2Node_ActorBoundEvent_143_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_EscapeRunNavigatingWithMarker1_K2Node_ActorBoundEvent_18_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_EscapeRunNavigatingWithMarker2_K2Node_ActorBoundEvent_30_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_EscapeRunNavigatingWithMarker3_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_EscapeRunNavigatingWithMarker4_K2Node_ActorBoundEvent_35_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_GetThroughTheLobby_K2Node_ActorBoundEvent_93_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_GoToGarage1_K2Node_ActorBoundEvent_115_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_GotoGarage_K2Node_ActorBoundEvent_109_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_GoToGarageGuardSpeaks_K2Node_ActorBoundEvent_26_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_ManTrapCheck_K2Node_ActorBoundEvent_107_SBZBooleanStateDynamicDelegate__DelegateSignature(bool State);
-	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_ManTrapCheckLeft_K2Node_ActorBoundEvent_190_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_ManTrapCheckRight_K2Node_ActorBoundEvent_159_SBZBooleanStateDynamicDelegate__DelegateSignature(bool State);
-	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_ManTrapCheckRight_K2Node_ActorBoundEvent_189_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_ReachMatrixRoom_K2Node_ActorBoundEvent_149_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_ReachVaultArea_K2Node_ActorBoundEvent_49_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_TurnOffEnemySpawnerInGarageHallway_K2Node_ActorBoundEvent_14_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_Vault_K2Node_ActorBoundEvent_89_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ONE_Scripting_SBZTrafficSpline_EscapeVanDriveIn_K2Node_ActorBoundEvent_92_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
-	void BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Escape_Loud_K2Node_ActorBoundEvent_15_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
-	void BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
-	void BndEvt__G_ScriptTemplate_Scripting_SBZObjective_FirstObj_K2Node_ActorBoundEvent_3_SBZOnObjective__DelegateSignature();
-	void BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_ForceSpawn_Guard1_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
-	void BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
-	void BndEvt__G_ScriptTemplate_Scripting_SBZPlayerEscapeVolume1_K2Node_ActorBoundEvent_9_SBZEscapeTimerDelegate__DelegateSignature();
-	void BndEvt__G_ScriptTemplate_Scripting_SBZPlayerEscapeVolume_Escape_Loud1_K2Node_ActorBoundEvent_16_SBZEscapeTimerDelegate__DelegateSignature();
-	void BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void BndEvt__SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_42_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
-	void BndEvt__SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_43_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
-	void CallHelicopterWithExtraThermiteBags();
-	void ChangeLeadGuardPatrol();
-	void CheckIfCorrectVentOpen(int32 Vent);
-	void CloseMoneyCartOnLoud();
-	void CloseVaultAreaGate();
-	void CodeComputerHackComplete();
-	void CodeComputerHackStarted();
-	void ControlledDestroy(int32 HowMany, const class FString& Indexs, TArray<class AActor*>& ArrayOfAssets);
-	void CopsActivatedSprinklers(bool NewParam);
-	void CorrectVentBagEntered(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
-	void CountdownHelicopterDropsExtraThermite();
-	void CountdownInsideManWalking();
-	void CountdownListenToNextPlan();
-	void CountdownListenToThePlan();
-	void CountMaxLoot();
-	void CrewSpeech();
-	void CrewSpeechSlotStarted(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot);
-	void DeactivateLanceDrill();
-	void DeactivateSprinklers();
-	void DebugSetSignText(class ATextRenderActor* Target, const class FText& Value);
-	void DifficultyChanceBranch(double ChanceNormal, double ChanceHard, double ChanceVeryHard, double ChanceOverkill, int32 MixedSeed, ESBZDifficulty* NewParam, bool* NewParam1);
-	void DisableCurrentStealthObjectiveElements(double* DelayForVO, bool* PlayGenericLoudVO);
-	void DisableMetalDetectorOnAlarm();
-	void DisableServerRoomEquipmentCrateInteraction();
-	void DrillBagPickedUp();
-	void DrillEquipmentCrateOpened(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void DropLeftThermite();
-	void DropRightThermite();
-	void DropZiplineBag();
-	void EnableEnemySpawnsInEscapeOffice();
-	void EnableEnemySpawnsInLobbyArea(bool bEnabledForAssault);
-	void EnableInsideManVolume(bool bEnabled);
-	void EnableInteractionBreachingBags(TArray<class ABP_BreachingEquipmentBagGenerator_C*>& Array);
-	void EnableInteractionInServerRoomForBreachingBags();
-	void EnableInteractionInServerRoomForOxygenTanks();
-	void EnableInteractionOxygenTanks(TArray<class ABP_BreachingEquipmentFuelTank_C*>& Array);
-	void EnableMangaresComputer(bool bEnabled);
-	void EnableMangersOfficeVolume(bool bEnabled);
-	void EnableMoneyCartStickerInteraction(bool bEnabled);
-	void EnableSecurityComputer(bool bEnabled);
-	void EnableSecurityComputerVolume(bool bEnabled);
-	void EnableServerRoomEquipmentCrate();
-	void EnableServerRoomVolume(bool bEnabled);
-	void EnableSpawnsInMatrixRoom(bool bEnabledForAssault);
-	void EnableSpawnsInVaultArea(bool bEnabledForAssault);
-	void EnableStickerInteraction();
-	void EnableThermiteSprinklers();
-	void EnableVaultAreaVentInteraction(bool bEnabled);
-	void EnteredInsideMansOffice();
-	void EnteredInsideMansOfficeFirstTime();
-	void EnteredInsideMansOfficeSecondTime();
-	void EnteredManagersOffice();
-	void EnteredManagersOfficeLoud();
-	void EnteredManagersOfficeStealth();
-	void EnteredServerRoom();
-	void ExecuteUbergraph_G_ONE_Scripting(int32 EntryPoint);
-	void FakeIdPickedUp(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
-	void FindLootVent();
-	void FoundSecurityComputer();
-	void HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState_0);
-	void InsideManHumanShield(class ASBZAICharacter* Character, class ASBZCharacter* Instigator_0, bool bHumanShield);
-	void InsideManMeleeHit();
-	void InsideManNextPlanStarted(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot);
-	void InsideManOverlappVolume(class APawn* Pawn);
-	void InsideManPlanStarted(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot);
-	void InsideManPushLiveAction(class AActor* SpecificActionComponentOwner);
-	void InsideManTiedUp(class ASBZAICharacter* Character, bool bHogTied);
-	void KeyCodeComputerHackingComplete();
-	void KeyCodeComputerHackingStarted();
-	void KilledPawnDelegateInsideMan(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner);
-	void LaserTriggered(class ASBZLaserGrid* LaserGrid, class ASBZPlayerCharacter* PlayerCharacter);
-	void LeftHallwayLasers();
-	void LeftSideNoMetalDetectorObjective();
-	void LeftWingCableBoxComplete(bool bWasSuccess);
-	void LeftWingColorCableBoxComplete(bool bWasSuccess);
-	void LobbyGuardSpawned(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
-	void LockManagersOffice();
-	void LootBagHandle(class USBZSecuredBagVisualizeComponent* Target, const struct FSBZBagHandle& BagHandle);
-	void LootValueFilter(class UObject* BagType);
-	void MagneticComputerHackComplete();
-	void MagneticComputerHackInterrupted();
-	void MagneticComputerHackStarted();
-	void MagneticLockComputerHackingInterrupted(ESBZHackableActorInterruptReason Reason);
-	void MagneticLockSound(bool enabled);
-	void ManagersOfficeDoorStateChanged(ESBZGateState OldState, ESBZGateState State);
-	void ManagersOfficeOverlappVolume(class APawn* Pawn);
-	void MatrixAndVaultGuardSpawned(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
-	void MoneyCartBagSecured(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
-	void MoneyPilePickedUp();
-	void Negotiation();
-	void ObjectPlacedUSB();
-	void OnLevelModifiersApplied(ESBZDifficulty InDifficulty, const TArray<ESBZSecurityCompany>& InCompanies);
-	void OnOverkillWeaponRequested();
-	void OnPlayerInstantLootTaken(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer);
-	void OnPlayerPickedUpBag(const struct FSBZBagHandle& BagHandle);
-	void OnPreplanningAssetsTagsApplied(const struct FGameplayTagContainer& PreplanningTagContainer);
-	void OnRandomPlacementStarted();
-	void OnServerKeyItemTagAdded(const struct FGameplayTag& KeyTag);
-	void OpenTheGate();
-	void OxygenCrateOpened(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void OxygenTankPickedUp();
-	void PlayerActivatedSprinklers();
-	void PlayKeepCoolDialog();
-	void PrepareExtractionPoint();
-	void PrepareVentsForOverkillWeaponInMatrix();
-	void PreplanningBags();
-	void PreplanningElevatorEquipmentDrop();
-	void PreplanningExtraThermite();
-	void PreplanningFakeID();
-	void PreplanningHotDog();
-	void PreplanningMetalDetectorsDisabled();
-	void PreplanningNoMagneticLock();
-	void PreVaultLasers();
-	void RandomizeAmmo();
-	void RandomizeCountingRoomLock();
-	void RandomizeDrillEquipmentLocation();
-	void RandomizeInLobby();
-	void RandomizeInVaultArea();
-	void RandomizeInVaultLock();
-	void RandomizeLootVent();
-	void RandomizeLoudSecure();
-	void RandomizeOfficeObjective();
-	void RandomizePhones();
-	void RandomizeRFIDTags();
-	void RandomizeSecurityCameras();
-	void RandomizeSecurityCamerasPrevault();
-	void RandomizeSecurityComputer();
-	void RandomizeSecurityRoom();
-	void RandomizeServerRoom();
-	void RandomizeThermiteEquipment();
-	void RandomizeThermiteHelicopterRoute();
-	void RandomizeWhichManTrap();
-	void RandomizeWingGates();
-	void RemoveMarkerOnUSB();
-	void RemoveOxygenWaypoint();
-	void ResetSecurityComputer(ESBZHackableActorState ResetState);
-	void RightHallwayLasers();
-	void RightSideNoMetalDetectorObjective();
-	void RightWingCableBoxComplete(bool bWasSuccess);
-	void RightWingColorCableBoxComplete(bool bWasSuccess);
-	void SecureLoot(int32 Progress);
-	void SecureLootLoud(int32 Progress);
-	void SecurityComputerHackComplete();
-	void SecurityComputerHackingComplete();
-	void SecurityComputerOverlapVolume(class APawn* Pawn);
-	void ServerRoomOverlapVolume(class APawn* Pawn);
-	void SetBear();
-	void SetEnabledSprinklerSabotagePoints(bool bEnabled);
-	void SetEscapeRunDoorsLoud();
-	void SetEscapeRunDoorsStealth();
-	void SetFakeID();
-	void SetFromStealthAssaultProgression();
-	void SetInsideMan();
-	void SetInsideMansUsbAndStickers();
-	void SetLeftGateForObjective();
-	void SetLootVents();
-	void SetManagerSign();
-	void SetOfficeComputerToLoud();
-	void SetOfficeRandomization();
-	void SetOfficeVolumes();
-	void SetPropsInFrontOfSecurityRoom();
-	void SetPropsInFrontOfServerRoom();
-	void SetRightGateForObjective();
-	void SetSecurityComputerRandomization();
-	void SetSecurityRoomDoors();
-	void SetSecurityRoomRandomization();
-	void SetSecurityRoomSigns();
-	void SetServerRoomDoors();
-	void SetServerRoomRandomization();
-	void SetServerRoomSigns();
-	void SetServerRoomUSBGhost();
-	void SetupEscapeVan();
-	void SetUsbRemovable();
-	void SpawnBlueKeyCardOnGuard();
-	void SpawnCivilians();
-	void SpawnDozerInVault();
-	void SpawnedPawnDelegateInsideMan(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
-	void SpawnEmployees();
-	void SpawnGuards();
-	void SpawnGuardsInLeftWing();
-	void SpawnGuardsInLobby();
-	void SpawnGuardsInMatrix();
-	void SpawnGuardsInRightWing();
-	void SpawnGuardsInVaultArea();
-	void SpawnOverkillWeaponInMatrix();
-	void SpawnRedKeyCardOnGuard();
-	void SprinklerSabotaged(bool bSabotaged);
-	void SprinklerSystemCompleteInteraction(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
-	void StartLaserPatterns(TArray<class ASBZLaserGrid*>& self2);
-	void StickerPickedUp();
-	void StickerPlaced();
-	void SwitchToLoudObjective();
-	void ThermiteEquipmentBagPickedUp();
-	void TryActivateEscapeZone();
-	void TurnOffLasers(TArray<class ASBZLaserGrid*>& Array);
-	void UnlockCountingRoom();
-	void UnlockDoorsForAI();
-	void UnlockDoorsForInsideMan();
-	void USBIsPickedUp();
 	void ZiplineBagPickedUp();
+	void USBIsPickedUp();
+	void UnlockDoorsForInsideMan();
+	void UnlockDoorsForAI();
+	void UnlockCountingRoom();
+	void TurnOffLasers(TArray<class ASBZLaserGrid*>& Array);
+	void TryActivateEscapeZone();
+	void ThermiteEquipmentBagPickedUp();
+	void SwitchToLoudObjective();
+	void StickerPlaced();
+	void StickerPickedUp();
+	void StartLaserPatterns(TArray<class ASBZLaserGrid*>& self2);
+	void SprinklerSystemCompleteInteraction(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
+	void SprinklerSabotaged(bool bSabotaged);
+	void SpawnRedKeyCardOnGuard();
+	void SpawnOverkillWeaponInMatrix();
+	void SpawnGuardsInVaultArea();
+	void SpawnGuardsInRightWing();
+	void SpawnGuardsInMatrix();
+	void SpawnGuardsInLobby();
+	void SpawnGuardsInLeftWing();
+	void SpawnGuards();
+	void SpawnEmployees();
+	void SpawnedPawnDelegateInsideMan(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
+	void SpawnDozerInVault();
+	void SpawnCivilians();
+	void SpawnBlueKeyCardOnGuard();
+	void SetUsbRemovable();
+	void SetupEscapeVan();
+	void SetServerRoomUSBGhost();
+	void SetServerRoomSigns();
+	void SetServerRoomRandomization();
+	void SetServerRoomDoors();
+	void SetSecurityRoomSigns();
+	void SetSecurityRoomRandomization();
+	void SetSecurityRoomDoors();
+	void SetSecurityComputerRandomization();
+	void SetRightGateForObjective();
+	void SetPropsInFrontOfServerRoom();
+	void SetPropsInFrontOfSecurityRoom();
+	void SetOfficeVolumes();
+	void SetOfficeRandomization();
+	void SetOfficeComputerToLoud();
+	void SetManagerSign();
+	void SetLootVents();
+	void SetLeftGateForObjective();
+	void SetInsideMansUsbAndStickers();
+	void SetInsideMan();
+	void SetFromStealthAssaultProgression();
+	void SetFakeID();
+	void SetEscapeRunDoorsStealth();
+	void SetEscapeRunDoorsLoud();
+	void SetEnabledSprinklerSabotagePoints(bool bEnabled);
+	void SetBear();
+	void ServerRoomOverlapVolume(class APawn* Pawn);
+	void SecurityComputerOverlapVolume(class APawn* Pawn);
+	void SecurityComputerHackingComplete();
+	void SecurityComputerHackComplete();
+	void SecureLootLoud(int32 Progress);
+	void SecureLoot(int32 Progress);
+	void RightWingColorCableBoxComplete(bool bWasSuccess);
+	void RightWingCableBoxComplete(bool bWasSuccess);
+	void RightSideNoMetalDetectorObjective();
+	void RightHallwayLasers();
+	void ResetSecurityComputer(ESBZHackableActorState ResetState);
+	void RemoveOxygenWaypoint();
+	void RemoveMarkerOnUSB();
+	void RandomizeWingGates();
+	void RandomizeWhichManTrap();
+	void RandomizeThermiteHelicopterRoute();
+	void RandomizeThermiteEquipment();
+	void RandomizeServerRoom();
+	void RandomizeSecurityRoom();
+	void RandomizeSecurityComputer();
+	void RandomizeSecurityCamerasPrevault();
+	void RandomizeSecurityCameras();
+	void RandomizeRFIDTags();
+	void RandomizePhones();
+	void RandomizeOfficeObjective();
+	void RandomizeLoudSecure();
+	void RandomizeLootVent();
+	void RandomizeInVaultLock();
+	void RandomizeInVaultArea();
+	void RandomizeInLobby();
+	void RandomizeDrillEquipmentLocation();
+	void RandomizeCountingRoomLock();
+	void RandomizeAmmo();
+	void PreVaultLasers();
+	void PreplanningNoMagneticLock();
+	void PreplanningMetalDetectorsDisabled();
+	void PreplanningHotDog();
+	void PreplanningFakeID();
+	void PreplanningExtraThermite();
+	void PreplanningElevatorEquipmentDrop();
+	void PreplanningBags();
+	void PrepareVentsForOverkillWeaponInMatrix();
+	void PrepareExtractionPoint();
+	void PlayKeepCoolDialog();
+	void PlayerActivatedSprinklers();
+	void OxygenTankPickedUp();
+	void OxygenCrateOpened(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void OpenTheGate();
+	void OnServerKeyItemTagAdded(const struct FGameplayTag& KeyTag_OnServerKeyItemTagAdded);
+	void OnRandomPlacementStarted();
+	void OnPreplanningAssetsTagsApplied(const struct FGameplayTagContainer& PreplanningTagContainer_OnPreplanningAssetsTagsApplied);
+	void OnPlayerPickedUpBag(const struct FSBZBagHandle& BagHandle_OnPlayerPickedUpBag);
+	void OnPlayerInstantLootTaken(class ASBZInstantLoot* InstantLoot_OnPlayerInstantLootTaken, class ASBZPlayerCharacter* TakenByPlayer_OnPlayerInstantLootTaken);
+	void OnOverkillWeaponRequested();
+	void OnLevelModifiersApplied(ESBZDifficulty InDifficulty_OnLevelModifiersApplied, const TArray<ESBZSecurityCompany>& InCompanies_OnLevelModifiersApplied);
+	void ObjectPlacedUSB();
+	void Negotiation();
+	void MoneyPilePickedUp();
+	void MoneyCartBagSecured(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
+	void MatrixAndVaultGuardSpawned(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
+	void ManagersOfficeOverlappVolume(class APawn* Pawn);
+	void ManagersOfficeDoorStateChanged(ESBZGateState OldState, ESBZGateState State);
+	void MagneticLockSound(bool enabled);
+	void MagneticLockComputerHackingInterrupted(ESBZHackableActorInterruptReason Reason);
+	void MagneticComputerHackStarted();
+	void MagneticComputerHackInterrupted();
+	void MagneticComputerHackComplete();
+	void LootValueFilter(class UObject* BagType);
+	void LootBagHandle(class USBZSecuredBagVisualizeComponent* Target, const struct FSBZBagHandle& BagHandle);
+	void LockManagersOffice();
+	void LobbyGuardSpawned(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
+	void LeftWingColorCableBoxComplete(bool bWasSuccess);
+	void LeftWingCableBoxComplete(bool bWasSuccess);
+	void LeftSideNoMetalDetectorObjective();
+	void LeftHallwayLasers();
+	void LaserTriggered(class ASBZLaserGrid* LaserGrid, class ASBZPlayerCharacter* PlayerCharacter);
+	void KilledPawnDelegateInsideMan(class APawn* DeadPawn, class ASBZPawnSpawnPredefined* Spawner);
+	void KeyCodeComputerHackingStarted();
+	void KeyCodeComputerHackingComplete();
+	void InsideManTiedUp(class ASBZAICharacter* Character, bool bHogTied);
+	void InsideManPushLiveAction(class AActor* SpecificActionComponentOwner);
+	void InsideManPlanStarted(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot);
+	void InsideManOverlappVolume(class APawn* Pawn);
+	void InsideManNextPlanStarted(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot);
+	void InsideManMeleeHit();
+	void InsideManHumanShield(class ASBZAICharacter* Character, class ASBZCharacter* Instigator, bool bHumanShield);
+	void HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged);
+	void FoundSecurityComputer();
+	void FindLootVent();
+	void FakeIdPickedUp(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
+	void ExecuteUbergraph_G_ONE_Scripting(int32 EntryPoint);
+	void EnteredServerRoom();
+	void EnteredManagersOfficeStealth();
+	void EnteredManagersOfficeLoud();
+	void EnteredManagersOffice();
+	void EnteredInsideMansOfficeSecondTime();
+	void EnteredInsideMansOfficeFirstTime();
+	void EnteredInsideMansOffice();
+	void EnableVaultAreaVentInteraction(bool bEnabled);
+	void EnableThermiteSprinklers();
+	void EnableStickerInteraction();
+	void EnableSpawnsInVaultArea(bool bEnabledForAssault);
+	void EnableSpawnsInMatrixRoom(bool bEnabledForAssault);
+	void EnableServerRoomVolume(bool bEnabled);
+	void EnableServerRoomEquipmentCrate();
+	void EnableSecurityComputerVolume(bool bEnabled);
+	void EnableSecurityComputer(bool bEnabled);
+	void EnableMoneyCartStickerInteraction(bool bEnabled);
+	void EnableMangersOfficeVolume(bool bEnabled);
+	void EnableMangaresComputer(bool bEnabled);
+	void EnableInteractionOxygenTanks(TArray<class ABP_BreachingEquipmentFuelTank_C*>& Array);
+	void EnableInteractionInServerRoomForOxygenTanks();
+	void EnableInteractionInServerRoomForBreachingBags();
+	void EnableInteractionBreachingBags(TArray<class ABP_BreachingEquipmentBagGenerator_C*>& Array);
+	void EnableInsideManVolume(bool bEnabled);
+	void EnableEnemySpawnsInLobbyArea(bool bEnabledForAssault);
+	void EnableEnemySpawnsInEscapeOffice();
+	void DropZiplineBag();
+	void DropRightThermite();
+	void DropLeftThermite();
+	void DrillEquipmentCrateOpened(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void DrillBagPickedUp();
+	void DisableServerRoomEquipmentCrateInteraction();
+	void DisableMetalDetectorOnAlarm();
+	void DisableCurrentStealthObjectiveElements(double* DelayForVO, bool* PlayGenericLoudVO);
+	void DifficultyChanceBranch(double ChanceNormal, double ChanceHard, double ChanceVeryHard, double ChanceOverkill, int32 MixedSeed, ESBZDifficulty* NewParam, bool* NewParam1);
+	void DebugSetSignText(class ATextRenderActor* Target, const class FText& Value);
+	void DeactivateSprinklers();
+	void DeactivateLanceDrill();
+	void CrewSpeechSlotStarted(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot);
+	void CrewSpeech();
+	void CountMaxLoot();
+	void CountdownListenToThePlan();
+	void CountdownListenToNextPlan();
+	void CountdownInsideManWalking();
+	void CountdownHelicopterDropsExtraThermite();
+	void CorrectVentBagEntered(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
+	void CopsActivatedSprinklers(bool NewParam);
+	void ControlledDestroy(int32 HowMany, const class FString& Indexs, TArray<class AActor*>& ArrayOfAssets);
+	void CodeComputerHackStarted();
+	void CodeComputerHackComplete();
+	void CloseVaultAreaGate();
+	void CloseMoneyCartOnLoud();
+	void CheckIfCorrectVentOpen(int32 Vent);
+	void ChangeLeadGuardPatrol();
+	void CallHelicopterWithExtraThermiteBags();
+	void BndEvt__SBZTrafficSpline_FirstResponders2_K2Node_ActorBoundEvent_43_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
+	void BndEvt__SBZTrafficSpline_FirstResponders1_K2Node_ActorBoundEvent_42_SBZSplineOnEnter__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
+	void BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ScriptTemplate_Scripting_SBZPlayerTriggeredVoiceVolume_PlayerNearStealthEscape1_K2Node_ActorBoundEvent_10_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ScriptTemplate_Scripting_SBZPlayerEscapeVolume_Escape_Loud1_K2Node_ActorBoundEvent_16_SBZEscapeTimerDelegate__DelegateSignature();
+	void BndEvt__G_ScriptTemplate_Scripting_SBZPlayerEscapeVolume1_K2Node_ActorBoundEvent_9_SBZEscapeTimerDelegate__DelegateSignature();
+	void BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_LeadGuard_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
+	void BndEvt__G_ScriptTemplate_Scripting_SBZPawnSpawnPredefined_ForceSpawn_Guard1_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
+	void BndEvt__G_ScriptTemplate_Scripting_SBZObjective_FirstObj_K2Node_ActorBoundEvent_3_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_StealthEscape1_K2Node_ActorBoundEvent_5_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
+	void BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Escape_Loud_K2Node_ActorBoundEvent_15_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
+	void BndEvt__G_ONE_Scripting_SBZTrafficSpline_EscapeVanDriveIn_K2Node_ActorBoundEvent_92_SBZSplineOnEndReached__DelegateSignature(class ASBZSpline* Spline, class AActor* Actor);
+	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_Vault_K2Node_ActorBoundEvent_89_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_TurnOffEnemySpawnerInGarageHallway_K2Node_ActorBoundEvent_14_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_ReachVaultArea_K2Node_ActorBoundEvent_49_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_ReachMatrixRoom_K2Node_ActorBoundEvent_149_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_ManTrapCheckRight_K2Node_ActorBoundEvent_189_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_ManTrapCheckRight_K2Node_ActorBoundEvent_159_SBZBooleanStateDynamicDelegate__DelegateSignature(bool State);
+	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_ManTrapCheckLeft_K2Node_ActorBoundEvent_190_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_ManTrapCheck_K2Node_ActorBoundEvent_107_SBZBooleanStateDynamicDelegate__DelegateSignature(bool State);
+	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_GoToGarageGuardSpeaks_K2Node_ActorBoundEvent_26_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_GotoGarage_K2Node_ActorBoundEvent_109_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_GoToGarage1_K2Node_ActorBoundEvent_115_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_GetThroughTheLobby_K2Node_ActorBoundEvent_93_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_EscapeRunNavigatingWithMarker4_K2Node_ActorBoundEvent_35_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_EscapeRunNavigatingWithMarker3_K2Node_ActorBoundEvent_34_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_EscapeRunNavigatingWithMarker2_K2Node_ActorBoundEvent_30_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_EscapeRunNavigatingWithMarker1_K2Node_ActorBoundEvent_18_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_EscapeForceSpawnOffice_K2Node_ActorBoundEvent_143_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_EscapeForceSpawnOffice2_K2Node_ActorBoundEvent_144_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_EscapeForceSpawnGarage1_K2Node_ActorBoundEvent_145_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_ActivateThermite2_K2Node_ActorBoundEvent_88_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_3_K2Node_ActorBoundEvent_99_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_142_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume_0_K2Node_ActorBoundEvent_17_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerTriggerVolume2_2_K2Node_ActorBoundEvent_110_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerLookAtTrigger_VaultMoney_K2Node_ActorBoundEvent_116_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerLookAtTrigger_RightMetalDetectorFavor_K2Node_ActorBoundEvent_188_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerLookAtTrigger_Matrix4_K2Node_ActorBoundEvent_198_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerLookAtTrigger_Matrix4_K2Node_ActorBoundEvent_197_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerLookAtTrigger_Matrix3_K2Node_ActorBoundEvent_194_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerLookAtTrigger_Matrix3_K2Node_ActorBoundEvent_193_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerLookAtTrigger_Matrix2_K2Node_ActorBoundEvent_13_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerLookAtTrigger_Matrix2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerLookAtTrigger_Martix1_K2Node_ActorBoundEvent_192_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerLookAtTrigger_Martix1_K2Node_ActorBoundEvent_154_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerLookAtTrigger_LeftWingGate_K2Node_ActorBoundEvent_128_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerLookAtTrigger_LeftMetalDetectorFavor_K2Node_ActorBoundEvent_51_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerLookAtTrigger_1_K2Node_ActorBoundEvent_60_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__G_ONE_Scripting_SBZPlayerEscapeVolume_ZiplineRightWing_K2Node_ActorBoundEvent_187_SBZEscapeTimerDelegate__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZPlayerEscapeVolume_ZiplineLeftWing_K2Node_ActorBoundEvent_104_SBZEscapeTimerDelegate__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZPlayerEscapeVolume_Stealth_K2Node_ActorBoundEvent_46_SBZEscapeTimerDelegate__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZPawnSpawnPredefined_LeadGuard2_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
+	void BndEvt__G_ONE_Scripting_SBZPawnSpawnPredefined_GuardRightWing5_K2Node_ActorBoundEvent_150_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
+	void BndEvt__G_ONE_Scripting_SBZPawnSpawnPredefined_GuardGarageLoot_K2Node_ActorBoundEvent_179_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
+	void BndEvt__G_ONE_Scripting_SBZObjectiveTakeCover_K2Node_ActorBoundEvent_100_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjectivePlantExplosives_K2Node_ActorBoundEvent_97_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_ZiplineSecureLoot_K2Node_ActorBoundEvent_177_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_TakeMoneyPiles_K2Node_ActorBoundEvent_90_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_StickStickers_K2Node_ActorBoundEvent_103_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_StartTheDrill_K2Node_ActorBoundEvent_66_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_SetUpZipline_K2Node_ActorBoundEvent_176_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_ReturnToInsideMan_K2Node_ActorBoundEvent_37_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_ReachTheVaultArea_K2Node_ActorBoundEvent_48_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_ReachTheEscapePoint_K2Node_ActorBoundEvent_111_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_PrepareExtraction_K2Node_ActorBoundEvent_155_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_PlaceThermite_K2Node_ActorBoundEvent_76_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_PlaceMoneyIntoCarts_K2Node_ActorBoundEvent_105_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_PickUpStickers_K2Node_ActorBoundEvent_41_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_PickEquipmentFromVan_K2Node_ActorBoundEvent_61_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_PickEquipmentFromServerRoom_K2Node_ActorBoundEvent_148_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_OpenTheVault_K2Node_ActorBoundEvent_50_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_MeetAtGate_K2Node_ActorBoundEvent_40_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_MagneticLock_StartTheHack_K2Node_ActorBoundEvent_86_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_MagneticLock_FindManagersOffice_K2Node_ActorBoundEvent_85_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_MagneticLock_DefendHack_K2Node_ActorBoundEvent_87_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_ListenToThePlan_K2Node_ActorBoundEvent_20_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_ListenNextPlan_K2Node_ActorBoundEvent_38_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_InsertTheGateCode_K2Node_ActorBoundEvent_44_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_IgniteThermite_K2Node_ActorBoundEvent_78_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_HoldForHelicopter_K2Node_ActorBoundEvent_178_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_HackSecurityComputer_K2Node_ActorBoundEvent_52_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_GoToGarage_K2Node_ActorBoundEvent_108_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_GoToDoorsToGarage_K2Node_ActorBoundEvent_106_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_GlobeSecureLoot_K2Node_ActorBoundEvent_156_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_GetThroughLobby_K2Node_ActorBoundEvent_94_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_GenerateGateCode_K2Node_ActorBoundEvent_33_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_FindTheGate_K2Node_ActorBoundEvent_59_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_FindManagersOffice_K2Node_ActorBoundEvent_31_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_EnterTheServerRoom_K2Node_ActorBoundEvent_22_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_EnableBlueKeycardReader_K2Node_ActorBoundEvent_57_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_DropOffLoot_K2Node_ActorBoundEvent_95_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_DisableTheMetalDetectors_K2Node_ActorBoundEvent_32_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_DefendTheDrill_K2Node_ActorBoundEvent_71_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_CopyFromUSBDrive_K2Node_ActorBoundEvent_24_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_ContactTheInsideMan_K2Node_ActorBoundEvent_19_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_CollectThermite_K2Node_ActorBoundEvent_73_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_BurnThroughFloor_K2Node_ActorBoundEvent_36_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_BoltTheDrill_K2Node_ActorBoundEvent_64_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZObjective_AssembleTheDrill_1_K2Node_ActorBoundEvent_84_SBZOnObjective__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZModifiableTimer_UnlockVault_K2Node_ActorBoundEvent_53_SBZTimerDelegate__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_SBZFilteredTriggerVolume_ZiplineEquipmentRightWing_K2Node_ActorBoundEvent_96_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_ONE_Scripting_SBZFilteredTriggerVolume_ZiplineEquipmentLeftWing_K2Node_ActorBoundEvent_98_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_ONE_Scripting_SBZFilteredTriggerVolume_ThermiteEquipmentRightWing_K2Node_ActorBoundEvent_131_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_ONE_Scripting_SBZFilteredTriggerVolume_OvkWeapon3_K2Node_ActorBoundEvent_81_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_ONE_Scripting_SBZFilteredTriggerVolume_OvkWeapon2_K2Node_ActorBoundEvent_23_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_ONE_Scripting_SBZFilteredTriggerVolume_OvkWeapon1_K2Node_ActorBoundEvent_21_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_ONE_Scripting_SBZFilteredTriggerVolume_CrewSpeech_K2Node_ActorBoundEvent_161_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_ONE_Scripting_SBZFilteredTriggerVolume3_K2Node_ActorBoundEvent_62_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors);
+	void BndEvt__G_ONE_Scripting_SBZDestroyGroup_SprinklerSystem_K2Node_ActorBoundEvent_112_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors);
+	void BndEvt__G_ONE_Scripting_SBZDestroyGroup_RightWingColorCableBox_K2Node_ActorBoundEvent_39_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors);
+	void BndEvt__G_ONE_Scripting_SBZDestroyGroup_LeftWingColorCableBox_K2Node_ActorBoundEvent_80_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors);
+	void BndEvt__G_ONE_Scripting_SBZDestroyGroup_BlueKeycard_K2Node_ActorBoundEvent_101_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature(const TArray<class AActor*>& KeptActors, const TArray<class AActor*>& DestroyedActors);
+	void BndEvt__G_ONE_Scripting_SBZBagTriggerVolume_ZiplineRightWing_K2Node_ActorBoundEvent_185_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
+	void BndEvt__G_ONE_Scripting_SBZBagTriggerVolume_ZiplineRightWing_2_K2Node_ActorBoundEvent_186_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
+	void BndEvt__G_ONE_Scripting_SBZBagTriggerVolume_ZiplineLeftWing_K2Node_ActorBoundEvent_68_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
+	void BndEvt__G_ONE_Scripting_SBZBagTriggerVolume_ZiplineLeftWing_3_K2Node_ActorBoundEvent_160_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
+	void BndEvt__G_ONE_Scripting_SBZBagTriggerVolume_SecureVent_K2Node_ActorBoundEvent_91_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
+	void BndEvt__G_ONE_Scripting_SBZBagTriggerVolume_LanceBags_LeftWing_K2Node_ActorBoundEvent_121_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
+	void BndEvt__G_ONE_Scripting_SBZBagTriggerVolume_LanceBags2_K2Node_ActorBoundEvent_55_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
+	void BndEvt__G_ONE_Scripting_SBZBagTriggerVolume_Globe_K2Node_ActorBoundEvent_151_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
+	void BndEvt__G_ONE_Scripting_SBZBagTriggerVolume_DestroyLeftSkylight_K2Node_ActorBoundEvent_29_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
+	void BndEvt__G_ONE_Scripting_SBZBagTriggerVolume_6_K2Node_ActorBoundEvent_28_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle);
+	void BndEvt__G_ONE_Scripting_BP_ThermalLance_RightWing_K2Node_ActorBoundEvent_72_SBZBreachingEquipmentDelegate__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_ThermalLance_RightWing_K2Node_ActorBoundEvent_70_SBZBreachingEquipmentDelegate__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_ThermalLance_RightWing_K2Node_ActorBoundEvent_69_SBZBreachingEquipmentDelegate__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_ThermalLance_RightWing_K2Node_ActorBoundEvent_65_SBZBreachingEquipmentDelegate__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_ThermalLance_LeftWing_K2Node_ActorBoundEvent_126_SBZBreachingEquipmentDelegate__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_ThermalLance_LeftWing_K2Node_ActorBoundEvent_125_SBZBreachingEquipmentDelegate__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_ThermalLance_LeftWing_K2Node_ActorBoundEvent_124_SBZBreachingEquipmentDelegate__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_ThermalLance_LeftWing_K2Node_ActorBoundEvent_123_SBZBreachingEquipmentDelegate__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_ThermalLance_LeftWing_K2Node_ActorBoundEvent_122_SBZBreachingEquipmentDelegate__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_ThermalLance2_K2Node_ActorBoundEvent_63_SBZBreachingEquipmentDelegate__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_TestThermite2_K2Node_ActorBoundEvent_82_SBZThermiteDelegate__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_TestThermite2_K2Node_ActorBoundEvent_79_SBZThermiteDelegate__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_TestThermite2_K2Node_ActorBoundEvent_77_SBZThermiteDelegate__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_TestThermite2_K2Node_ActorBoundEvent_75_SBZThermiteDelegate__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_TestThermite2_K2Node_ActorBoundEvent_74_SBZThermiteDelegate__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_PocketDrill_2_K2Node_ActorBoundEvent_132_SBZBreachingEquipmentDelegate__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_PocketDrill2_K2Node_ActorBoundEvent_139_SBZBreachingEquipmentDelegate__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_openable_Van_2_K2Node_ActorBoundEvent_83_onOpened__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_OneStepAnimatedButton_OverrideRightWingGate_K2Node_ActorBoundEvent_138_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
+	void BndEvt__G_ONE_Scripting_BP_OneStepAnimatedButton_OverrideLeftWingGate_K2Node_ActorBoundEvent_137_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
+	void BndEvt__G_ONE_Scripting_BP_OneStepAnimatedButton_DebugOpenVaultInside_K2Node_ActorBoundEvent_58_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
+	void BndEvt__G_ONE_Scripting_BP_ONE_VentDoor_7_K2Node_ActorBoundEvent_141_onVentOpened__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_ONE_VentDoor_4_K2Node_ActorBoundEvent_175_onVentOpened__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_ONE_VentDoor_3_K2Node_ActorBoundEvent_174_onVentOpened__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_ONE_VentDoor_1_K2Node_ActorBoundEvent_140_onVentOpened__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_ONE_VaultDoor_5_K2Node_ActorBoundEvent_133_OnInteractionComplete__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_One_Step_Animated_Button5_K2Node_ActorBoundEvent_201_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
+	void BndEvt__G_ONE_Scripting_BP_ONE_MetalDoor_16_K2Node_ActorBoundEvent_166_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State);
+	void BndEvt__G_ONE_Scripting_BP_ONE_MetalDoor_01_12_K2Node_ActorBoundEvent_167_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State);
+	void BndEvt__G_ONE_Scripting_BP_ONE_ExplodingWall_2_K2Node_ActorBoundEvent_158_SBZExplosionDelegate__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_ONE_ExplodingWall_2_K2Node_ActorBoundEvent_157_SBZOnChargesChangedDelegate__DelegateSignature(int32 NewCount);
+	void BndEvt__G_ONE_Scripting_BP_ONE_ElevatorHatch_01_2_K2Node_ActorBoundEvent_67_onHatchCompleteInteraction__DelegateSignature(bool opened);
+	void BndEvt__G_ONE_Scripting_BP_MoneyCart_07_K2Node_ActorBoundEvent_173_On_Max_Bags_Reached__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_MoneyCart_06_K2Node_ActorBoundEvent_172_On_Max_Bags_Reached__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_MoneyCart_05_K2Node_ActorBoundEvent_171_On_Max_Bags_Reached__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_MoneyCart_04_K2Node_ActorBoundEvent_170_On_Max_Bags_Reached__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_MoneyCart_03_K2Node_ActorBoundEvent_169_On_Max_Bags_Reached__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_MoneyCart_02_K2Node_ActorBoundEvent_168_On_Max_Bags_Reached__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_MoneyCart_01_K2Node_ActorBoundEvent_165_On_Max_Bags_Reached__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_LA_Scripted_Idle_KnockOnVan_K2Node_ActorBoundEvent_180_ActionCompleted__DelegateSignature(ESBZLifeActionStopReason Result, class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot);
+	void BndEvt__G_ONE_Scripting_BP_LA_Scripted_Idle_AtRightGate_K2Node_ActorBoundEvent_184_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot);
+	void BndEvt__G_ONE_Scripting_BP_LA_Scripted_Idle_AtRightGate_K2Node_ActorBoundEvent_183_ActionCompleted__DelegateSignature(ESBZLifeActionStopReason Result, class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot);
+	void BndEvt__G_ONE_Scripting_BP_LA_Scripted_Idle_AtLeftGate_K2Node_ActorBoundEvent_182_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot);
+	void BndEvt__G_ONE_Scripting_BP_LA_Scripted_Idle_AtLeftGate_K2Node_ActorBoundEvent_181_ActionCompleted__DelegateSignature(ESBZLifeActionStopReason Result, class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot);
+	void BndEvt__G_ONE_Scripting_BP_LA_Manager_Scripted_EyeScan_Right_K2Node_ActorBoundEvent_7_ActionCompleted__DelegateSignature(ESBZLifeActionStopReason Result, class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot);
+	void BndEvt__G_ONE_Scripting_BP_LA_Manager_Scripted_EyeScan_Right_K2Node_ActorBoundEvent_114_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot);
+	void BndEvt__G_ONE_Scripting_BP_LA_Manager_Scripted_EyeScan_Left_K2Node_ActorBoundEvent_8_ActionStarted__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot);
+	void BndEvt__G_ONE_Scripting_BP_LA_Manager_Scripted_EyeScan_Left_K2Node_ActorBoundEvent_6_ActionCompleted__DelegateSignature(ESBZLifeActionStopReason Result, class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot);
+	void BndEvt__G_ONE_Scripting_BP_Keypad_RightWingGate_K2Node_ActorBoundEvent_127_SBZOnCodeEntered__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_Keypad_2_K2Node_ActorBoundEvent_47_SBZOnCodeEntered__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_Int_SingleDoor_Reinforced_Wood_01_K2Node_ActorBoundEvent_102_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State);
+	void BndEvt__G_ONE_Scripting_BP_GenericHackableComputer_MatrixRoom6_K2Node_ActorBoundEvent_136_SBZHackableActorDelegate__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_DroneSpawner18_K2Node_ActorBoundEvent_113_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
+	void BndEvt__G_ONE_Scripting_BP_DAT_SecurityScanner_RightWing_K2Node_ActorBoundEvent_153_onAlarmTripped__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_DAT_SecurityScanner_01_SCR_2_K2Node_ActorBoundEvent_45_onAlarmTripped__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_DAT_C4Explosive_01_Pickup3_K2Node_ActorBoundEvent_135_InteractionCompleted__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_DAT_C4Explosive_01_Pickup2_K2Node_ActorBoundEvent_134_InteractionCompleted__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_DAT_C4Explosive_01_Pickup1_K2Node_ActorBoundEvent_152_InteractionCompleted__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_ConnectedMaintenanceBox_RightWing_K2Node_ActorBoundEvent_130_SBZMaintenanceBoxDelegate__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_ConnectedMaintenanceBox_RightWing_K2Node_ActorBoundEvent_119_SBZMaintenanceBoxBoolDelegate__DelegateSignature(bool bSuccessful);
+	void BndEvt__G_ONE_Scripting_BP_ConnectedMaintenanceBox_RightWing_K2Node_ActorBoundEvent_117_SBZMaintenanceBoxDelegate__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_ConnectedMaintenanceBox_LeftWing_K2Node_ActorBoundEvent_129_SBZMaintenanceBoxDelegate__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_ConnectedMaintenanceBox_LeftWing_K2Node_ActorBoundEvent_118_SBZMaintenanceBoxBoolDelegate__DelegateSignature(bool bSuccessful);
+	void BndEvt__G_ONE_Scripting_BP_ConnectedMaintenanceBox_2_K2Node_ActorBoundEvent_25_SBZMaintenanceBoxDelegate__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_ConnectedCableBox_RightWing1_K2Node_ActorBoundEvent_120_SBZOnCompleteDelegate__DelegateSignature(bool bWasSuccess);
+	void BndEvt__G_ONE_Scripting_BP_ConnectedCableBox_2_K2Node_ActorBoundEvent_27_SBZOnCompleteDelegate__DelegateSignature(bool bWasSuccess);
+	void BndEvt__G_ONE_Scripting_BP_BreachingEquipmentBagGenerator8_K2Node_ActorBoundEvent_11_SBZBagPickedUp__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_BreachingEquipmentBagGenerator14_K2Node_ActorBoundEvent_147_SBZBagPickedUp__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_BreachingEquipmentBagGenerator11_K2Node_ActorBoundEvent_146_SBZBagPickedUp__DelegateSignature();
+	void BndEvt__G_ONE_Scripting_BP_BlueKeycardReader_Vault_K2Node_ActorBoundEvent_54_SBZModuleActorStateChangedDelegate__DelegateSignature(ESBZModuleActorState NewState);
+	void BndEvt__G_ONE_Scripting_BP_BlueKeycard2_2_K2Node_ActorBoundEvent_56_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
+	void BlueKeycardPickedUp(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
+	void BlackScreenStarted();
+	void BindOnMoneyCarts();
+	void BindOnMatrixAndVaultGuards();
+	void BindOnManagersComputer();
+	void BindOnLobbyGuards();
+	void BindOnLaserTriggered();
+	void Assault();
+	void Alarm();
+	void ActivateZiplineSecureLoot();
+	void ActivateZiplineLoudSecure();
+	void ActivateZiplineEscape();
+	void ActivateThermite();
+	void ActivateThePlan();
+	void ActivateTakeMoneyPiles();
+	void ActivateSWATHelicopter();
+	void ActivateSprinklers();
+	void ActivateReturnToInsideMan();
+	void ActivateReachTheVaultArea();
+	void ActivatePocketDrillOnBarDoorsInVault();
+	void ActivatePickUpThermite();
+	void ActivatePickUpEquipment();
+	void ActivatePickEquipmentFromVan();
+	void ActivatePickEquipmentFromServerRoom();
+	void ActivateOpenTheVault();
+	void ActivateLoudObjective();
+	void ActivateLoudGameplayElements();
+	void ActivateLasers();
+	void ActivateLanceDrill();
+	void ActivateHoldForEquipmentDrop();
+	void ActivateGlobeSecureTheLoot();
+	void ActivateGetThroughLobby();
+	void ActivateGenerateCodeForTheGate();
+	void ActivateFirstObjective();
+	void ActivateFindTheGate();
+	void ActivateFindManagersOffice();
+	void ActivateEndlessAssault();
+	void ActivateDropOffLoot();
+	void ActivateDisableMetalDetectors();
+	void ActivateDisableMagneticLock();
+	void ActivateContactTheInsideMan();
+	void ActivateBreachTheGate();
+	void ActionPhaseStarted();
 
 public:
 	static class UClass* StaticClass()
@@ -1052,5 +1059,6 @@ public:
 		return GetDefaultObjImpl<AG_ONE_Scripting_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_ONE_Scripting_C;
 
 SDK_NAMESPACE_END

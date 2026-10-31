@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_BlockSwitchlWeapons_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_BlockSwitchlWeapons_C;
 
 SDK_NAMESPACE_END

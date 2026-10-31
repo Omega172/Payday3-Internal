@@ -16,23 +16,103 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_JewelryMachine.BP_JewelryMachine_C.BndEvt__BP_JewelryMachine_ClaimBagInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
+// Function BP_JewelryMachine.BP_JewelryMachine_C.SetDisplayColor
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class USBZBaseInteractableComponent*InteractableComponent                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    Flickering                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_JewelryMachine_C::BndEvt__BP_JewelryMachine_ClaimBagInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
+void ABP_JewelryMachine_C::SetDisplayColor(int32 State, bool Flickering)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetDisplayColor", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_JewelryMachine_C", "BndEvt__BP_JewelryMachine_ClaimBagInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature");
+	Params::BP_JewelryMachine_C_SetDisplayColor Parms{};
 
-	Params::BP_JewelryMachine_C_BndEvt__BP_JewelryMachine_ClaimBagInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
+	Parms.State = State;
+	Parms.Flickering = Flickering;
 
-	Parms.InteractableComponent = InteractableComponent;
-	Parms.bInNewState = bInNewState;
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_JewelryMachine.BP_JewelryMachine_C.OpenTray_Timeline__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_JewelryMachine_C::OpenTray_Timeline__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OpenTray_Timeline__UpdateFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_JewelryMachine.BP_JewelryMachine_C.OpenTray_Timeline__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_JewelryMachine_C::OpenTray_Timeline__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OpenTray_Timeline__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_JewelryMachine.BP_JewelryMachine_C.ExecuteUbergraph_BP_JewelryMachine
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_JewelryMachine_C::ExecuteUbergraph_BP_JewelryMachine(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_JewelryMachine_C", "ExecuteUbergraph_BP_JewelryMachine", FuncInfo);
+
+	Params::BP_JewelryMachine_C_ExecuteUbergraph_BP_JewelryMachine Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_JewelryMachine.BP_JewelryMachine_C.BP_OnRunningStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZLootProcessorState                  NewState_BP_OnRunningStateChanged                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_BP_OnRunningStateChanged                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsDedicatedServer_BP_OnRunningStateChanged            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_JewelryMachine_C::BP_OnRunningStateChanged(ESBZLootProcessorState NewState_BP_OnRunningStateChanged, bool bDoCosmetics_BP_OnRunningStateChanged, bool bIsDedicatedServer_BP_OnRunningStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnRunningStateChanged", FnName));
+
+	Params::BP_JewelryMachine_C_BP_OnRunningStateChanged Parms{};
+
+	Parms.NewState_BP_OnRunningStateChanged = NewState_BP_OnRunningStateChanged;
+	Parms.bDoCosmetics_BP_OnRunningStateChanged = bDoCosmetics_BP_OnRunningStateChanged;
+	Parms.bIsDedicatedServer_BP_OnRunningStateChanged = bIsDedicatedServer_BP_OnRunningStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_JewelryMachine.BP_JewelryMachine_C.BP_BagCountUpdated
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   NumOfBags_BP_BagCountUpdated                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_JewelryMachine_C::BP_BagCountUpdated(int32 NumOfBags_BP_BagCountUpdated)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_BagCountUpdated", FnName));
+
+	Params::BP_JewelryMachine_C_BP_BagCountUpdated Parms{};
+
+	Parms.NumOfBags_BP_BagCountUpdated = NumOfBags_BP_BagCountUpdated;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -47,10 +127,8 @@ void ABP_JewelryMachine_C::BndEvt__BP_JewelryMachine_ClaimBagInteractable_K2Node
 
 void ABP_JewelryMachine_C::BndEvt__BP_JewelryMachine_ClaimBagInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_JewelryMachine_C", "BndEvt__BP_JewelryMachine_ClaimBagInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_JewelryMachine_ClaimBagInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature", FnName));
 
 	Params::BP_JewelryMachine_C_BndEvt__BP_JewelryMachine_ClaimBagInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
 
@@ -62,115 +140,21 @@ void ABP_JewelryMachine_C::BndEvt__BP_JewelryMachine_ClaimBagInteractable_K2Node
 }
 
 
-// Function BP_JewelryMachine.BP_JewelryMachine_C.BP_BagCountUpdated
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   NumOfBags                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_JewelryMachine_C::BP_BagCountUpdated(int32 NumOfBags)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_JewelryMachine_C", "BP_BagCountUpdated");
-
-	Params::BP_JewelryMachine_C_BP_BagCountUpdated Parms{};
-
-	Parms.NumOfBags = NumOfBags;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_JewelryMachine.BP_JewelryMachine_C.BP_OnRunningStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// ESBZLootProcessorState                  NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsDedicatedServer                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_JewelryMachine_C::BP_OnRunningStateChanged(ESBZLootProcessorState NewState, bool bDoCosmetics, bool bIsDedicatedServer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_JewelryMachine_C", "BP_OnRunningStateChanged");
-
-	Params::BP_JewelryMachine_C_BP_OnRunningStateChanged Parms{};
-
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
-	Parms.bIsDedicatedServer = bIsDedicatedServer;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_JewelryMachine.BP_JewelryMachine_C.ExecuteUbergraph_BP_JewelryMachine
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_JewelryMachine_C::ExecuteUbergraph_BP_JewelryMachine(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_JewelryMachine_C", "ExecuteUbergraph_BP_JewelryMachine");
-
-	Params::BP_JewelryMachine_C_ExecuteUbergraph_BP_JewelryMachine Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_JewelryMachine.BP_JewelryMachine_C.OpenTray_Timeline__FinishedFunc
+// Function BP_JewelryMachine.BP_JewelryMachine_C.BndEvt__BP_JewelryMachine_ClaimBagInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature
 // (BlueprintEvent)
-
-void ABP_JewelryMachine_C::OpenTray_Timeline__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_JewelryMachine_C", "OpenTray_Timeline__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_JewelryMachine.BP_JewelryMachine_C.OpenTray_Timeline__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_JewelryMachine_C::OpenTray_Timeline__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_JewelryMachine_C", "OpenTray_Timeline__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_JewelryMachine.BP_JewelryMachine_C.SetDisplayColor
-// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    Flickering                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZBaseInteractableComponent*InteractableComponent                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_JewelryMachine_C::SetDisplayColor(int32 State, bool Flickering)
+void ABP_JewelryMachine_C::BndEvt__BP_JewelryMachine_ClaimBagInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_JewelryMachine_ClaimBagInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_JewelryMachine_C", "SetDisplayColor");
+	Params::BP_JewelryMachine_C_BndEvt__BP_JewelryMachine_ClaimBagInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
 
-	Params::BP_JewelryMachine_C_SetDisplayColor Parms{};
-
-	Parms.State = State;
-	Parms.Flickering = Flickering;
+	Parms.InteractableComponent = InteractableComponent;
+	Parms.bInNewState = bInNewState;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -16,6 +16,18 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function PD3TrafficLightBase.PD3TrafficLightBase_C.UpdatePool
+// 0x0028 (0x0028 - 0x0000)
+struct PD3TrafficLightBase_C_UpdatePool final
+{
+public:
+	ESBZTrafficLightStatus                        Status_UpdatePool;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<class UStaticMeshComponent*>           Pool_UpdatePool;                                   // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+	TArray<class USBZAmbientSoundComponent*>      PedestrianSoundEmitters_UpdatePool;                // 0x0018(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+};
+DUMPER7_ASSERTS_PD3TrafficLightBase_C_UpdatePool;
+
 // Function PD3TrafficLightBase.PD3TrafficLightBase_C.ExecuteUbergraph_PD3TrafficLightBase
 // 0x0150 (0x0150 - 0x0000)
 struct PD3TrafficLightBase_C_ExecuteUbergraph_PD3TrafficLightBase final
@@ -72,17 +84,7 @@ public:
 	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_3; // 0x0144(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_4; // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function PD3TrafficLightBase.PD3TrafficLightBase_C.UpdatePool
-// 0x0028 (0x0028 - 0x0000)
-struct PD3TrafficLightBase_C_UpdatePool final
-{
-public:
-	ESBZTrafficLightStatus                        Status;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class UStaticMeshComponent*>           Pool;                                              // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-	TArray<class USBZAmbientSoundComponent*>      PedestrianSoundEmitters;                           // 0x0018(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-};
+DUMPER7_ASSERTS_PD3TrafficLightBase_C_ExecuteUbergraph_PD3TrafficLightBase;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

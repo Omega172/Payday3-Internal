@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<AONE_BP_Skybox_C>();
 	}
 };
+DUMPER7_ASSERTS_AONE_BP_Skybox_C;
 
 SDK_NAMESPACE_END

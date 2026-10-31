@@ -21,10 +21,8 @@ SDK_NAMESPACE_START
 
 void APF_Int_FNI_M_512_512_Apartment_04_Corner_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PF_Int_FNI_M_512_512_Apartment_04_Corner_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

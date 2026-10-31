@@ -16,23 +16,14 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_Shop_ItemBundleButton.WBP_Shop_ItemBundleButton_C.OnUpdateOwnershipStatus
+// Function WBP_Shop_ItemBundleButton.WBP_Shop_ItemBundleButton_C.ButtonFocusedChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_Shop_ItemBundleButton_C_OnUpdateOwnershipStatus final
+struct WBP_Shop_ItemBundleButton_C_ButtonFocusedChanged final
 {
 public:
-	bool                                          bIsOwned_OnUpdateOwnershipStatus;                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Shop_ItemBundleButton_C_OnUpdateOwnershipStatus;
-
-// Function WBP_Shop_ItemBundleButton.WBP_Shop_ItemBundleButton_C.OnShowItemBundle
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_Shop_ItemBundleButton_C_OnShowItemBundle final
-{
-public:
-	bool                                          bIsNew_OnShowItemBundle;                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_Shop_ItemBundleButton_C_OnShowItemBundle;
+DUMPER7_ASSERTS_WBP_Shop_ItemBundleButton_C_ButtonFocusedChanged;
 
 // Function WBP_Shop_ItemBundleButton.WBP_Shop_ItemBundleButton_C.ExecuteUbergraph_WBP_Shop_ItemBundleButton
 // 0x0030 (0x0030 - 0x0000)
@@ -62,14 +53,23 @@ public:
 };
 DUMPER7_ASSERTS_WBP_Shop_ItemBundleButton_C_ExecuteUbergraph_WBP_Shop_ItemBundleButton;
 
-// Function WBP_Shop_ItemBundleButton.WBP_Shop_ItemBundleButton_C.ButtonFocusedChanged
+// Function WBP_Shop_ItemBundleButton.WBP_Shop_ItemBundleButton_C.OnShowItemBundle
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_Shop_ItemBundleButton_C_ButtonFocusedChanged final
+struct WBP_Shop_ItemBundleButton_C_OnShowItemBundle final
 {
 public:
-	bool                                          bInHasFocus_ButtonFocusedChanged;                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsNew;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_Shop_ItemBundleButton_C_ButtonFocusedChanged;
+DUMPER7_ASSERTS_WBP_Shop_ItemBundleButton_C_OnShowItemBundle;
+
+// Function WBP_Shop_ItemBundleButton.WBP_Shop_ItemBundleButton_C.OnUpdateOwnershipStatus
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_Shop_ItemBundleButton_C_OnUpdateOwnershipStatus final
+{
+public:
+	bool                                          bIsOwned;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_Shop_ItemBundleButton_C_OnUpdateOwnershipStatus;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

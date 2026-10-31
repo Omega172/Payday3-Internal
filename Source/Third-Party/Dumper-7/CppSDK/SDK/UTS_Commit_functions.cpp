@@ -16,6 +16,48 @@
 
 SDK_NAMESPACE_START
 
+// Function UTS_Commit.UTS_Commit_C.OnSelectedBP
+// (Event, Public, BlueprintEvent)
+
+void UUTS_Commit_C::OnSelectedBP()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSelectedBP", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function UTS_Commit.UTS_Commit_C.OnDeselectedBP
+// (Event, Public, BlueprintEvent)
+
+void UUTS_Commit_C::OnDeselectedBP()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnDeselectedBP", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function UTS_Commit.UTS_Commit_C.OnDeactivatedBP
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EBTNodeResult                           NodeResult_OnDeactivatedBP                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UUTS_Commit_C::OnDeactivatedBP(EBTNodeResult NodeResult_OnDeactivatedBP)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnDeactivatedBP", FnName));
+
+	Params::UTS_Commit_C_OnDeactivatedBP Parms{};
+
+	Parms.NodeResult_OnDeactivatedBP = NodeResult_OnDeactivatedBP;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function UTS_Commit.UTS_Commit_C.ExecuteUbergraph_UTS_Commit
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,10 +65,8 @@ SDK_NAMESPACE_START
 
 void UUTS_Commit_C::ExecuteUbergraph_UTS_Commit(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UTS_Commit_C", "ExecuteUbergraph_UTS_Commit");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "UTS_Commit_C", "ExecuteUbergraph_UTS_Commit", FuncInfo);
 
 	Params::UTS_Commit_C_ExecuteUbergraph_UTS_Commit Parms{};
 
@@ -36,65 +76,15 @@ void UUTS_Commit_C::ExecuteUbergraph_UTS_Commit(int32 EntryPoint)
 }
 
 
-// Function UTS_Commit.UTS_Commit_C.OnDeactivatedBP
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// EBTNodeResult                           NodeResult                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UUTS_Commit_C::OnDeactivatedBP(EBTNodeResult NodeResult)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UTS_Commit_C", "OnDeactivatedBP");
-
-	Params::UTS_Commit_C_OnDeactivatedBP Parms{};
-
-	Parms.NodeResult = NodeResult;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function UTS_Commit.UTS_Commit_C.OnDeselectedBP
-// (Event, Public, BlueprintEvent)
-
-void UUTS_Commit_C::OnDeselectedBP()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UTS_Commit_C", "OnDeselectedBP");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function UTS_Commit.UTS_Commit_C.OnSelectedBP
-// (Event, Public, BlueprintEvent)
-
-void UUTS_Commit_C::OnSelectedBP()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UTS_Commit_C", "OnSelectedBP");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function UTS_Commit.UTS_Commit_C.CalcScoreBP
 // (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   ReturnValue_CalcScoreBP                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 float UUTS_Commit_C::CalcScoreBP() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UTS_Commit_C", "CalcScoreBP");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CalcScoreBP", FnName));
 
 	Params::UTS_Commit_C_CalcScoreBP Parms{};
 

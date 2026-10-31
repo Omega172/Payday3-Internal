@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABP_LA_Civ_Scripted_VIP_PlaceBottleLow_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LA_Civ_Scripted_VIP_PlaceBottleLow_C;
 
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_BEBE_cable_Roof_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BEBE_cable_Roof_01_C;
 
 SDK_NAMESPACE_END

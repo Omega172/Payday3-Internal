@@ -16,190 +16,111 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.BP_OnArmorChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.UpdateHealth
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   OldArmor                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  OldHealth                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsSetup                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_AIDamageStatusMarker_C::BP_OnArmorChanged(float OldArmor)
+void UWBP_AIDamageStatusMarker_C::UpdateHealth(double OldHealth, bool bIsSetup)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateHealth", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AIDamageStatusMarker_C", "BP_OnArmorChanged");
-
-	Params::WBP_AIDamageStatusMarker_C_BP_OnArmorChanged Parms{};
-
-	Parms.OldArmor = OldArmor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.BP_OnArmorHardnessChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// float                                   OldArmorHardness                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_AIDamageStatusMarker_C::BP_OnArmorHardnessChanged(float OldArmorHardness)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AIDamageStatusMarker_C", "BP_OnArmorHardnessChanged");
-
-	Params::WBP_AIDamageStatusMarker_C_BP_OnArmorHardnessChanged Parms{};
-
-	Parms.OldArmorHardness = OldArmorHardness;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.BP_OnArmorMaxChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// float                                   OldArmorMax                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_AIDamageStatusMarker_C::BP_OnArmorMaxChanged(float OldArmorMax)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AIDamageStatusMarker_C", "BP_OnArmorMaxChanged");
-
-	Params::WBP_AIDamageStatusMarker_C_BP_OnArmorMaxChanged Parms{};
-
-	Parms.OldArmorMax = OldArmorMax;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.BP_OnFadeOutChanged
-// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bInIsFadeOut                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-bool UWBP_AIDamageStatusMarker_C::BP_OnFadeOutChanged(bool bInIsFadeOut)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AIDamageStatusMarker_C", "BP_OnFadeOutChanged");
-
-	Params::WBP_AIDamageStatusMarker_C_BP_OnFadeOutChanged Parms{};
-
-	Parms.bInIsFadeOut = bInIsFadeOut;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.BP_OnHealthChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// float                                   OldHealth                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_AIDamageStatusMarker_C::BP_OnHealthChanged(float OldHealth)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AIDamageStatusMarker_C", "BP_OnHealthChanged");
-
-	Params::WBP_AIDamageStatusMarker_C_BP_OnHealthChanged Parms{};
+	Params::WBP_AIDamageStatusMarker_C_UpdateHealth Parms{};
 
 	Parms.OldHealth = OldHealth;
+	Parms.bIsSetup = bIsSetup;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.BP_OnHealthMaxChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// float                                   OldHealthMax                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.UpdateDelayedHealth
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_AIDamageStatusMarker_C::BP_OnHealthMaxChanged(float OldHealthMax)
+void UWBP_AIDamageStatusMarker_C::UpdateDelayedHealth()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateDelayedHealth", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AIDamageStatusMarker_C", "BP_OnHealthMaxChanged");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::WBP_AIDamageStatusMarker_C_BP_OnHealthMaxChanged Parms{};
 
-	Parms.OldHealthMax = OldHealthMax;
+// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.UpdateDelayedArmor
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_AIDamageStatusMarker_C::UpdateDelayedArmor()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateDelayedArmor", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.UpdateArmorHardness
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_AIDamageStatusMarker_C::UpdateArmorHardness()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateArmorHardness", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.UpdateArmor
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  OldArmor                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsSetup                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_AIDamageStatusMarker_C::UpdateArmor(double OldArmor, bool bIsSetup)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateArmor", FnName));
+
+	Params::WBP_AIDamageStatusMarker_C_UpdateArmor Parms{};
+
+	Parms.OldArmor = OldArmor;
+	Parms.bIsSetup = bIsSetup;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.BP_SetData
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FSBZMarkerRuntime&         Data                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.Setup
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_AIDamageStatusMarker_C::BP_SetData(const struct FSBZMarkerRuntime& Data)
+void UWBP_AIDamageStatusMarker_C::Setup()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Setup", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AIDamageStatusMarker_C", "BP_SetData");
-
-	Params::WBP_AIDamageStatusMarker_C_BP_SetData Parms{};
-
-	Parms.Data = std::move(Data);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.CheckAndUpdateDelayedTimer
-// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.SetMaterialParam
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FTimerHandle&              InHandle                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-// TDelegate<void()>                       InUpdateEvent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// struct FTimerHandle*                    OutHandle                                              (Parm, OutParm, NoDestructor, HasGetValueTypeHash)
+// class UImage*                           InImage                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class FName                             InParamName                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  InValue                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_AIDamageStatusMarker_C::CheckAndUpdateDelayedTimer(const struct FTimerHandle& InHandle, TDelegate<void()> InUpdateEvent, struct FTimerHandle* OutHandle)
+void UWBP_AIDamageStatusMarker_C::SetMaterialParam(class UImage* InImage, class FName InParamName, double InValue)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetMaterialParam", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AIDamageStatusMarker_C", "CheckAndUpdateDelayedTimer");
+	Params::WBP_AIDamageStatusMarker_C_SetMaterialParam Parms{};
 
-	Params::WBP_AIDamageStatusMarker_C_CheckAndUpdateDelayedTimer Parms{};
-
-	Parms.InHandle = std::move(InHandle);
-	Parms.InUpdateEvent = InUpdateEvent;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (OutHandle != nullptr)
-		*OutHandle = std::move(Parms.OutHandle);
-}
-
-
-// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.ExecuteUbergraph_WBP_AIDamageStatusMarker
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_AIDamageStatusMarker_C::ExecuteUbergraph_WBP_AIDamageStatusMarker(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AIDamageStatusMarker_C", "ExecuteUbergraph_WBP_AIDamageStatusMarker");
-
-	Params::WBP_AIDamageStatusMarker_C_ExecuteUbergraph_WBP_AIDamageStatusMarker Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.InImage = InImage;
+	Parms.InParamName = InParamName;
+	Parms.InValue = InValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -214,10 +135,8 @@ void UWBP_AIDamageStatusMarker_C::ExecuteUbergraph_WBP_AIDamageStatusMarker(int3
 
 double UWBP_AIDamageStatusMarker_C::GetNormalizedValue(double A, double InMax)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AIDamageStatusMarker_C", "GetNormalizedValue");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetNormalizedValue", FnName));
 
 	Params::WBP_AIDamageStatusMarker_C_GetNormalizedValue Parms{};
 
@@ -230,125 +149,172 @@ double UWBP_AIDamageStatusMarker_C::GetNormalizedValue(double A, double InMax)
 }
 
 
-// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.SetMaterialParam
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.ExecuteUbergraph_WBP_AIDamageStatusMarker
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class UImage*                           InImage                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class FName                             InParamName                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  InValue                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_AIDamageStatusMarker_C::SetMaterialParam(class UImage* InImage, class FName InParamName, double InValue)
+void UWBP_AIDamageStatusMarker_C::ExecuteUbergraph_WBP_AIDamageStatusMarker(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_AIDamageStatusMarker_C", "ExecuteUbergraph_WBP_AIDamageStatusMarker", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AIDamageStatusMarker_C", "SetMaterialParam");
+	Params::WBP_AIDamageStatusMarker_C_ExecuteUbergraph_WBP_AIDamageStatusMarker Parms{};
 
-	Params::WBP_AIDamageStatusMarker_C_SetMaterialParam Parms{};
-
-	Parms.InImage = InImage;
-	Parms.InParamName = InParamName;
-	Parms.InValue = InValue;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.Setup
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.CheckAndUpdateDelayedTimer
+// (Private, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FTimerHandle&              InHandle                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// TDelegate<void()>                       InUpdateEvent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FTimerHandle*                    OutHandle                                              (Parm, OutParm, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_AIDamageStatusMarker_C::Setup()
+void UWBP_AIDamageStatusMarker_C::CheckAndUpdateDelayedTimer(const struct FTimerHandle& InHandle, TDelegate<void()> InUpdateEvent, struct FTimerHandle* OutHandle)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CheckAndUpdateDelayedTimer", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AIDamageStatusMarker_C", "Setup");
+	Params::WBP_AIDamageStatusMarker_C_CheckAndUpdateDelayedTimer Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.InHandle = std::move(InHandle);
+	Parms.InUpdateEvent = InUpdateEvent;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OutHandle != nullptr)
+		*OutHandle = std::move(Parms.OutHandle);
 }
 
 
-// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.UpdateArmor
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.BP_SetData
+// (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// double                                  OldArmor                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsSetup                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZMarkerRuntime&         Data_BP_SetData                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 
-void UWBP_AIDamageStatusMarker_C::UpdateArmor(double OldArmor, bool bIsSetup)
+void UWBP_AIDamageStatusMarker_C::BP_SetData(const struct FSBZMarkerRuntime& Data_BP_SetData)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_SetData", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AIDamageStatusMarker_C", "UpdateArmor");
+	Params::WBP_AIDamageStatusMarker_C_BP_SetData Parms{};
 
-	Params::WBP_AIDamageStatusMarker_C_UpdateArmor Parms{};
-
-	Parms.OldArmor = OldArmor;
-	Parms.bIsSetup = bIsSetup;
+	Parms.Data_BP_SetData = std::move(Data_BP_SetData);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.UpdateArmorHardness
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_AIDamageStatusMarker_C::UpdateArmorHardness()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AIDamageStatusMarker_C", "UpdateArmorHardness");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.UpdateDelayedArmor
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_AIDamageStatusMarker_C::UpdateDelayedArmor()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AIDamageStatusMarker_C", "UpdateDelayedArmor");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.UpdateDelayedHealth
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_AIDamageStatusMarker_C::UpdateDelayedHealth()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AIDamageStatusMarker_C", "UpdateDelayedHealth");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.UpdateHealth
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.BP_OnHealthMaxChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// double                                  OldHealth                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsSetup                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   OldHealthMax_BP_OnHealthMaxChanged                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_AIDamageStatusMarker_C::UpdateHealth(double OldHealth, bool bIsSetup)
+void UWBP_AIDamageStatusMarker_C::BP_OnHealthMaxChanged(float OldHealthMax_BP_OnHealthMaxChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnHealthMaxChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_AIDamageStatusMarker_C", "UpdateHealth");
+	Params::WBP_AIDamageStatusMarker_C_BP_OnHealthMaxChanged Parms{};
 
-	Params::WBP_AIDamageStatusMarker_C_UpdateHealth Parms{};
+	Parms.OldHealthMax_BP_OnHealthMaxChanged = OldHealthMax_BP_OnHealthMaxChanged;
 
-	Parms.OldHealth = OldHealth;
-	Parms.bIsSetup = bIsSetup;
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.BP_OnHealthChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// float                                   OldHealth_BP_OnHealthChanged                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_AIDamageStatusMarker_C::BP_OnHealthChanged(float OldHealth_BP_OnHealthChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnHealthChanged", FnName));
+
+	Params::WBP_AIDamageStatusMarker_C_BP_OnHealthChanged Parms{};
+
+	Parms.OldHealth_BP_OnHealthChanged = OldHealth_BP_OnHealthChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.BP_OnFadeOutChanged
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bInIsFadeOut_BP_OnFadeOutChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    ReturnValue_BP_OnFadeOutChanged                        (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+bool UWBP_AIDamageStatusMarker_C::BP_OnFadeOutChanged(bool bInIsFadeOut_BP_OnFadeOutChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnFadeOutChanged", FnName));
+
+	Params::WBP_AIDamageStatusMarker_C_BP_OnFadeOutChanged Parms{};
+
+	Parms.bInIsFadeOut_BP_OnFadeOutChanged = bInIsFadeOut_BP_OnFadeOutChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.BP_OnArmorMaxChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// float                                   OldArmorMax_BP_OnArmorMaxChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_AIDamageStatusMarker_C::BP_OnArmorMaxChanged(float OldArmorMax_BP_OnArmorMaxChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnArmorMaxChanged", FnName));
+
+	Params::WBP_AIDamageStatusMarker_C_BP_OnArmorMaxChanged Parms{};
+
+	Parms.OldArmorMax_BP_OnArmorMaxChanged = OldArmorMax_BP_OnArmorMaxChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.BP_OnArmorHardnessChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// float                                   OldArmorHardness_BP_OnArmorHardnessChanged             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_AIDamageStatusMarker_C::BP_OnArmorHardnessChanged(float OldArmorHardness_BP_OnArmorHardnessChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnArmorHardnessChanged", FnName));
+
+	Params::WBP_AIDamageStatusMarker_C_BP_OnArmorHardnessChanged Parms{};
+
+	Parms.OldArmorHardness_BP_OnArmorHardnessChanged = OldArmorHardness_BP_OnArmorHardnessChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_AIDamageStatusMarker.WBP_AIDamageStatusMarker_C.BP_OnArmorChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// float                                   OldArmor_BP_OnArmorChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_AIDamageStatusMarker_C::BP_OnArmorChanged(float OldArmor_BP_OnArmorChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnArmorChanged", FnName));
+
+	Params::WBP_AIDamageStatusMarker_C_BP_OnArmorChanged Parms{};
+
+	Parms.OldArmor_BP_OnArmorChanged = OldArmor_BP_OnArmorChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -16,140 +16,69 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Locker_02.BP_Locker_02_C.BndEvt__BP_Locker_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// class UActorComponent*                  PoolComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   Hits                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZPropDamageContext&     DamageContext                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// Function BP_Locker_02.BP_Locker_02_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_Locker_02_C::BndEvt__BP_Locker_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
+void ABP_Locker_02_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Locker_02_C", "BndEvt__BP_Locker_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_Locker_02_C_BndEvt__BP_Locker_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature Parms{};
 
-	Parms.PoolComponent = PoolComponent;
-	Parms.Hits = Hits;
-	Parms.bDoCosmetics = bDoCosmetics;
-	Parms.DamageContext = std::move(DamageContext);
+// Function BP_Locker_02.BP_Locker_02_C.SpawnItemInContainer
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UClass*                           WhatShould_Spawn                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ABP_RoomSpawnController_C*        RoomControllerRef                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor**                          SpawnedActor                                           (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Locker_02_C::SpawnItemInContainer(class UClass* WhatShould_Spawn, class ABP_RoomSpawnController_C* RoomControllerRef, class AActor** SpawnedActor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnItemInContainer", FnName));
+
+	Params::BP_Locker_02_C_SpawnItemInContainer Parms{};
+
+	Parms.WhatShould_Spawn = WhatShould_Spawn;
+	Parms.RoomControllerRef = RoomControllerRef;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (SpawnedActor != nullptr)
+		*SpawnedActor = Parms.SpawnedActor;
+}
+
+
+// Function BP_Locker_02.BP_Locker_02_C.setNumber
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   number                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Locker_02_C::setNumber(int32 number)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setNumber", FnName));
+
+	Params::BP_Locker_02_C_setNumber Parms{};
+
+	Parms.number = number;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_Locker_02.BP_Locker_02_C.BP_OnMiniGameSuccess
+// Function BP_Locker_02.BP_Locker_02_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Locker_02_C::BP_OnMiniGameSuccess(bool bDoCosmetics)
+void ABP_Locker_02_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Locker_02_C", "BP_OnMiniGameSuccess");
-
-	Params::BP_Locker_02_C_BP_OnMiniGameSuccess Parms{};
-
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Locker_02.BP_Locker_02_C.ExecuteUbergraph_BP_Locker_02
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Locker_02_C::ExecuteUbergraph_BP_Locker_02(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Locker_02_C", "ExecuteUbergraph_BP_Locker_02");
-
-	Params::BP_Locker_02_C_ExecuteUbergraph_BP_Locker_02 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Locker_02.BP_Locker_02_C.OnActorSpawned
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class AActor*                           SpawnedActor                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USceneComponent*                  AttachParent                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Locker_02_C::OnActorSpawned(class AActor* SpawnedActor, class USceneComponent* AttachParent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Locker_02_C", "OnActorSpawned");
-
-	Params::BP_Locker_02_C_OnActorSpawned Parms{};
-
-	Parms.SpawnedActor = SpawnedActor;
-	Parms.AttachParent = AttachParent;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Locker_02.BP_Locker_02_C.Open__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_Locker_02_C::Open__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Locker_02_C", "Open__FinishedFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Locker_02.BP_Locker_02_C.Open__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_Locker_02_C::Open__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Locker_02_C", "Open__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Locker_02.BP_Locker_02_C.PopulateSpawnInformationMap
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TMap<class USceneComponent*, struct FTransform>*InOutSpawnDataMap                                      (Parm, OutParm, ContainsInstancedReference)
-
-void ABP_Locker_02_C::PopulateSpawnInformationMap(TMap<class USceneComponent*, struct FTransform>* InOutSpawnDataMap)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Locker_02_C", "PopulateSpawnInformationMap");
-
-	Params::BP_Locker_02_C_PopulateSpawnInformationMap Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (InOutSpawnDataMap != nullptr)
-		*InOutSpawnDataMap = std::move(Parms.InOutSpawnDataMap);
 }
 
 
@@ -162,10 +91,8 @@ void ABP_Locker_02_C::PopulateSpawnInformationMap(TMap<class USceneComponent*, s
 
 void ABP_Locker_02_C::randomizeSpawnedActorTransform(class AActor* spawnedActor, bool* valid, struct FTransform* transform)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Locker_02_C", "randomizeSpawnedActorTransform");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"randomizeSpawnedActorTransform", FnName));
 
 	Params::BP_Locker_02_C_randomizeSpawnedActorTransform Parms{};
 
@@ -181,77 +108,126 @@ void ABP_Locker_02_C::randomizeSpawnedActorTransform(class AActor* spawnedActor,
 }
 
 
-// Function BP_Locker_02.BP_Locker_02_C.ReceiveBeginPlay
+// Function BP_Locker_02.BP_Locker_02_C.PopulateSpawnInformationMap
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TMap<class USceneComponent*, struct FTransform>*InOutSpawnDataMap                                      (Parm, OutParm, ContainsInstancedReference)
+
+void ABP_Locker_02_C::PopulateSpawnInformationMap(TMap<class USceneComponent*, struct FTransform>* InOutSpawnDataMap)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PopulateSpawnInformationMap", FnName));
+
+	Params::BP_Locker_02_C_PopulateSpawnInformationMap Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (InOutSpawnDataMap != nullptr)
+		*InOutSpawnDataMap = std::move(Parms.InOutSpawnDataMap);
+}
+
+
+// Function BP_Locker_02.BP_Locker_02_C.Open__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_Locker_02_C::Open__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Open__UpdateFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Locker_02.BP_Locker_02_C.Open__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_Locker_02_C::Open__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Open__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Locker_02.BP_Locker_02_C.OnActorSpawned
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           SpawnedActor                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USceneComponent*                  AttachParent                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Locker_02_C::OnActorSpawned(class AActor* SpawnedActor, class USceneComponent* AttachParent)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnActorSpawned", FnName));
+
+	Params::BP_Locker_02_C_OnActorSpawned Parms{};
+
+	Parms.SpawnedActor = SpawnedActor;
+	Parms.AttachParent = AttachParent;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Locker_02.BP_Locker_02_C.ExecuteUbergraph_BP_Locker_02
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Locker_02_C::ExecuteUbergraph_BP_Locker_02(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Locker_02_C", "ExecuteUbergraph_BP_Locker_02", FuncInfo);
+
+	Params::BP_Locker_02_C_ExecuteUbergraph_BP_Locker_02 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Locker_02.BP_Locker_02_C.BP_OnMiniGameSuccess
 // (Event, Protected, BlueprintEvent)
-
-void ABP_Locker_02_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Locker_02_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Locker_02.BP_Locker_02_C.setNumber
-// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   number                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_BP_OnMiniGameSuccess                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Locker_02_C::setNumber(int32 number)
+void ABP_Locker_02_C::BP_OnMiniGameSuccess(bool bDoCosmetics_BP_OnMiniGameSuccess)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnMiniGameSuccess", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Locker_02_C", "setNumber");
+	Params::BP_Locker_02_C_BP_OnMiniGameSuccess Parms{};
 
-	Params::BP_Locker_02_C_setNumber Parms{};
-
-	Parms.number = number;
+	Parms.bDoCosmetics_BP_OnMiniGameSuccess = bDoCosmetics_BP_OnMiniGameSuccess;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_Locker_02.BP_Locker_02_C.SpawnItemInContainer
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function BP_Locker_02.BP_Locker_02_C.BndEvt__BP_Locker_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
 // Parameters:
-// class UClass*                           WhatShould_Spawn                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ABP_RoomSpawnController_C*        RoomControllerRef                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor**                          SpawnedActor                                           (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class UActorComponent*                  PoolComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   Hits                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZPropDamageContext&     DamageContext                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 
-void ABP_Locker_02_C::SpawnItemInContainer(class UClass* WhatShould_Spawn, class ABP_RoomSpawnController_C* RoomControllerRef, class AActor** SpawnedActor)
+void ABP_Locker_02_C::BndEvt__BP_Locker_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Locker_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Locker_02_C", "SpawnItemInContainer");
+	Params::BP_Locker_02_C_BndEvt__BP_Locker_02_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature Parms{};
 
-	Params::BP_Locker_02_C_SpawnItemInContainer Parms{};
-
-	Parms.WhatShould_Spawn = WhatShould_Spawn;
-	Parms.RoomControllerRef = RoomControllerRef;
+	Parms.PoolComponent = PoolComponent;
+	Parms.Hits = Hits;
+	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.DamageContext = std::move(DamageContext);
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (SpawnedActor != nullptr)
-		*SpawnedActor = Parms.SpawnedActor;
-}
-
-
-// Function BP_Locker_02.BP_Locker_02_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_Locker_02_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Locker_02_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

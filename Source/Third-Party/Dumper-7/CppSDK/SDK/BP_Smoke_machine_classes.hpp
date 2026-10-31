@@ -40,11 +40,11 @@ public:
 	double                                        Activity_Duration;                                 // 0x03D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_Smoke_machine_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void Deactivate_Smoke_Screens();
-	void ExecuteUbergraph_BP_Smoke_machine(int32 EntryPoint);
-	void Stop_Smoke_Machine();
 	void UserConstructionScript();
+	void Stop_Smoke_Machine();
+	void ExecuteUbergraph_BP_Smoke_machine(int32 EntryPoint);
+	void Deactivate_Smoke_Screens();
+	void BndEvt__BP_Smoke_machine_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -60,5 +60,6 @@ public:
 		return GetDefaultObjImpl<ABP_Smoke_machine_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Smoke_machine_C;
 
 SDK_NAMESPACE_END

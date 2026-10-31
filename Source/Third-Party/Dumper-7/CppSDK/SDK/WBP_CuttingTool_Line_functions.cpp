@@ -16,41 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_CuttingTool_Line.WBP_CuttingTool_Line_C.ExecuteUbergraph_WBP_CuttingTool_Line
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CuttingTool_Line_C::ExecuteUbergraph_WBP_CuttingTool_Line(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CuttingTool_Line_C", "ExecuteUbergraph_WBP_CuttingTool_Line");
-
-	Params::WBP_CuttingTool_Line_C_ExecuteUbergraph_WBP_CuttingTool_Line Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CuttingTool_Line.WBP_CuttingTool_Line_C.OnWidgetCut
+// Function WBP_CuttingTool_Line.WBP_CuttingTool_Line_C.OnWidgetInitialCut
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// float                                   AtSegment                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   AtSegment_OnWidgetInitialCut                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CuttingTool_Line_C::OnWidgetCut(float AtSegment)
+void UWBP_CuttingTool_Line_C::OnWidgetInitialCut(float AtSegment_OnWidgetInitialCut)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnWidgetInitialCut", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CuttingTool_Line_C", "OnWidgetCut");
+	Params::WBP_CuttingTool_Line_C_OnWidgetInitialCut Parms{};
 
-	Params::WBP_CuttingTool_Line_C_OnWidgetCut Parms{};
-
-	Parms.AtSegment = AtSegment;
+	Parms.AtSegment_OnWidgetInitialCut = AtSegment_OnWidgetInitialCut;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -61,30 +39,44 @@ void UWBP_CuttingTool_Line_C::OnWidgetCut(float AtSegment)
 
 void UWBP_CuttingTool_Line_C::OnWidgetCutCompleted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CuttingTool_Line_C", "OnWidgetCutCompleted");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnWidgetCutCompleted", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_CuttingTool_Line.WBP_CuttingTool_Line_C.OnWidgetInitialCut
+// Function WBP_CuttingTool_Line.WBP_CuttingTool_Line_C.OnWidgetCut
 // (Event, Public, BlueprintEvent)
 // Parameters:
-// float                                   AtSegment                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   AtSegment_OnWidgetCut                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CuttingTool_Line_C::OnWidgetInitialCut(float AtSegment)
+void UWBP_CuttingTool_Line_C::OnWidgetCut(float AtSegment_OnWidgetCut)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnWidgetCut", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CuttingTool_Line_C", "OnWidgetInitialCut");
+	Params::WBP_CuttingTool_Line_C_OnWidgetCut Parms{};
 
-	Params::WBP_CuttingTool_Line_C_OnWidgetInitialCut Parms{};
+	Parms.AtSegment_OnWidgetCut = AtSegment_OnWidgetCut;
 
-	Parms.AtSegment = AtSegment;
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CuttingTool_Line.WBP_CuttingTool_Line_C.ExecuteUbergraph_WBP_CuttingTool_Line
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CuttingTool_Line_C::ExecuteUbergraph_WBP_CuttingTool_Line(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_CuttingTool_Line_C", "ExecuteUbergraph_WBP_CuttingTool_Line", FuncInfo);
+
+	Params::WBP_CuttingTool_Line_C_ExecuteUbergraph_WBP_CuttingTool_Line Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

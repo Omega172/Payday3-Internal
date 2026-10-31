@@ -10,25 +10,25 @@
 
 #include "Basic.hpp"
 
-#include "BP_Throwable_FragGrenade_classes.hpp"
 #include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "BP_Throwable_FragGrenade_classes.hpp"
 #include "AkAudio_structs.hpp"
 
 
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Throwable_SpringGrenade.BP_Throwable_SpringGrenade_C
-// 0x0020 (0x8F80 - 0x8F60)
+// 0x0020 (0x07E0 - 0x07C0)
 class ABP_Throwable_SpringGrenade_C final : public ABP_Throwable_FragGrenade_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame_BP_Throwable_SpringGrenade_C;       // 0x8F60(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	struct FVector                                OwnerVelocity_0;                                   // 0x8F68(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame_BP_Throwable_SpringGrenade_C;       // 0x07C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FVector                                OwnerVelocity_0;                                   // 0x07C8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnJump();
 	void ExecuteUbergraph_BP_Throwable_SpringGrenade(int32 EntryPoint);
+	void BP_OnJump();
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<ABP_Throwable_SpringGrenade_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Throwable_SpringGrenade_C;
 
 SDK_NAMESPACE_END

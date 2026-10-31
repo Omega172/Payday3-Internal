@@ -16,27 +16,27 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ZoneKeeper.BP_ZoneKeeper_C.CustomEvent_3
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   Overlapping                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   Secured                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ZoneKeeper.BP_ZoneKeeper_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_ZoneKeeper_C::CustomEvent_3(class ASBZBagTriggerVolume* Volume, int32 Overlapping, int32 Secured)
+void ABP_ZoneKeeper_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ZoneKeeper_C", "CustomEvent_3");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_ZoneKeeper_C_CustomEvent_3 Parms{};
 
-	Parms.Volume = Volume;
-	Parms.Overlapping = Overlapping;
-	Parms.Secured = Secured;
+// Function BP_ZoneKeeper.BP_ZoneKeeper_C.OnCorrect
+// (BlueprintCallable, BlueprintEvent)
 
-	UObject::ProcessEvent(Func, &Parms);
+void ABP_ZoneKeeper_C::OnCorrect()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnCorrect", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -47,10 +47,8 @@ void ABP_ZoneKeeper_C::CustomEvent_3(class ASBZBagTriggerVolume* Volume, int32 O
 
 void ABP_ZoneKeeper_C::ExecuteUbergraph_BP_ZoneKeeper(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ZoneKeeper_C", "ExecuteUbergraph_BP_ZoneKeeper");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ZoneKeeper_C", "ExecuteUbergraph_BP_ZoneKeeper", FuncInfo);
 
 	Params::BP_ZoneKeeper_C_ExecuteUbergraph_BP_ZoneKeeper Parms{};
 
@@ -60,31 +58,25 @@ void ABP_ZoneKeeper_C::ExecuteUbergraph_BP_ZoneKeeper(int32 EntryPoint)
 }
 
 
-// Function BP_ZoneKeeper.BP_ZoneKeeper_C.OnCorrect
+// Function BP_ZoneKeeper.BP_ZoneKeeper_C.CustomEvent_3
 // (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   Overlapping                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   Secured                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ZoneKeeper_C::OnCorrect()
+void ABP_ZoneKeeper_C::CustomEvent_3(class ASBZBagTriggerVolume* Volume, int32 Overlapping, int32 Secured)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CustomEvent_3", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ZoneKeeper_C", "OnCorrect");
+	Params::BP_ZoneKeeper_C_CustomEvent_3 Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Parms.Volume = Volume;
+	Parms.Overlapping = Overlapping;
+	Parms.Secured = Secured;
 
-
-// Function BP_ZoneKeeper.BP_ZoneKeeper_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_ZoneKeeper_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ZoneKeeper_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

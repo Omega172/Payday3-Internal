@@ -10,24 +10,24 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_WheeledVehicle_Base_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_SwatVan.BP_SwatVan_C
-// 0x0000 (0x0930 - 0x0930)
+// 0x0000 (0x0A30 - 0x0A30)
 class ABP_SwatVan_C : public ABP_WheeledVehicle_Base_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0928(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A28(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void BndEvt__BP_Sedan_FirstResponders_Base_SplineFollowingComponent_K2Node_ComponentBoundEvent_0_SBZVehicleOnStarted__DelegateSignature();
-	void ExecuteUbergraph_BP_SwatVan(int32 EntryPoint);
-	void ReceiveBeginPlay();
 	void SWAT_On_Spline_End_Reached(class ASBZWheeledVehicle* Vehicle, class ASBZSpline* Spline);
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_SwatVan(int32 EntryPoint);
+	void BndEvt__BP_Sedan_FirstResponders_Base_SplineFollowingComponent_K2Node_ComponentBoundEvent_0_SBZVehicleOnStarted__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()
@@ -43,5 +43,6 @@ public:
 		return GetDefaultObjImpl<ABP_SwatVan_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SwatVan_C;
 
 SDK_NAMESPACE_END

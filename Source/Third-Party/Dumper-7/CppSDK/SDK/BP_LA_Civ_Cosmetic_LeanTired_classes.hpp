@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABP_LA_Civ_Cosmetic_LeanTired_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LA_Civ_Cosmetic_LeanTired_C;
 
 SDK_NAMESPACE_END

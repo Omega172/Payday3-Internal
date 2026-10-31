@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_SignStreet_01_A_EHouston_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SignStreet_01_A_EHouston_C;
 
 SDK_NAMESPACE_END

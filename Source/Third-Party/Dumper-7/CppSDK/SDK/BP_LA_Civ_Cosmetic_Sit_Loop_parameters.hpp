@@ -21,6 +21,7 @@ struct BP_LA_Civ_Cosmetic_Sit_Loop_C_SwitchSection final
 public:
 	class FName                                   SectionName;                                       // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_LA_Civ_Cosmetic_Sit_Loop_C_SwitchSection;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

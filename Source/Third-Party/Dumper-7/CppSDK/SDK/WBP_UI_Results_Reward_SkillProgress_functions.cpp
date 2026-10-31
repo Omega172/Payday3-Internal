@@ -16,49 +16,85 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Results_Reward_SkillProgress.WBP_UI_Results_Reward_SkillProgress_C.AnimateBarsAndText
+// Function WBP_UI_Results_Reward_SkillProgress.WBP_UI_Results_Reward_SkillProgress_C.SetProgress
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Results_Reward_SkillProgress_C::AnimateBarsAndText()
+void UWBP_UI_Results_Reward_SkillProgress_C::SetProgress()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_Reward_SkillProgress_C", "AnimateBarsAndText");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetProgress", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_Results_Reward_SkillProgress.WBP_UI_Results_Reward_SkillProgress_C.Construct
+// Function WBP_UI_Results_Reward_SkillProgress.WBP_UI_Results_Reward_SkillProgress_C.SequenceEvent__ENTRYPOINTWBP_UI_Results_Reward_SkillProgress
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Results_Reward_SkillProgress_C::SequenceEvent__ENTRYPOINTWBP_UI_Results_Reward_SkillProgress()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SequenceEvent__ENTRYPOINTWBP_UI_Results_Reward_SkillProgress", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Results_Reward_SkillProgress.WBP_UI_Results_Reward_SkillProgress_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime_PreConstruct                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Results_Reward_SkillProgress_C::Construct()
+void UWBP_UI_Results_Reward_SkillProgress_C::PreConstruct(bool IsDesignTime_PreConstruct)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PreConstruct", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_Reward_SkillProgress_C", "Construct");
+	Params::WBP_UI_Results_Reward_SkillProgress_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime_PreConstruct = IsDesignTime_PreConstruct;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_Results_Reward_SkillProgress.WBP_UI_Results_Reward_SkillProgress_C.PlayLevelUpAnimation
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Results_Reward_SkillProgress_C::PlayLevelUpAnimation()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayLevelUpAnimation", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_Results_Reward_SkillProgress.WBP_UI_Results_Reward_SkillProgress_C.ExecuteUbergraph_WBP_UI_Results_Reward_SkillProgress
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_UI_Results_Reward_SkillProgress.WBP_UI_Results_Reward_SkillProgress_C.PlayAppearAnim
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Results_Reward_SkillProgress_C::ExecuteUbergraph_WBP_UI_Results_Reward_SkillProgress(int32 EntryPoint)
+void UWBP_UI_Results_Reward_SkillProgress_C::PlayAppearAnim()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayAppearAnim", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_Reward_SkillProgress_C", "ExecuteUbergraph_WBP_UI_Results_Reward_SkillProgress");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::WBP_UI_Results_Reward_SkillProgress_C_ExecuteUbergraph_WBP_UI_Results_Reward_SkillProgress Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+// Function WBP_UI_Results_Reward_SkillProgress.WBP_UI_Results_Reward_SkillProgress_C.OnLoaded_4365A4A44829CA194ACBEB912D0DDA4C
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_UI_Results_Reward_SkillProgress_C::OnLoaded_4365A4A44829CA194ACBEB912D0DDA4C(class UObject* Loaded)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLoaded_4365A4A44829CA194ACBEB912D0DDA4C", FnName));
+
+	Params::WBP_UI_Results_Reward_SkillProgress_C_OnLoaded_4365A4A44829CA194ACBEB912D0DDA4C Parms{};
+
+	Parms.Loaded = Loaded;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -73,10 +109,8 @@ void UWBP_UI_Results_Reward_SkillProgress_C::ExecuteUbergraph_WBP_UI_Results_Rew
 
 void UWBP_UI_Results_Reward_SkillProgress_C::GetExperienceValues(bool IncludeExpDiff, int32* CurrentExp, int32* TargetExp)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_Reward_SkillProgress_C", "GetExperienceValues");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetExperienceValues", FnName));
 
 	Params::WBP_UI_Results_Reward_SkillProgress_C_GetExperienceValues Parms{};
 
@@ -92,97 +126,43 @@ void UWBP_UI_Results_Reward_SkillProgress_C::GetExperienceValues(bool IncludeExp
 }
 
 
-// Function WBP_UI_Results_Reward_SkillProgress.WBP_UI_Results_Reward_SkillProgress_C.OnLoaded_4365A4A44829CA194ACBEB912D0DDA4C
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_Results_Reward_SkillProgress.WBP_UI_Results_Reward_SkillProgress_C.ExecuteUbergraph_WBP_UI_Results_Reward_SkillProgress
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class UObject*                          Loaded                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Results_Reward_SkillProgress_C::OnLoaded_4365A4A44829CA194ACBEB912D0DDA4C(class UObject* Loaded)
+void UWBP_UI_Results_Reward_SkillProgress_C::ExecuteUbergraph_WBP_UI_Results_Reward_SkillProgress(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_UI_Results_Reward_SkillProgress_C", "ExecuteUbergraph_WBP_UI_Results_Reward_SkillProgress", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_Reward_SkillProgress_C", "OnLoaded_4365A4A44829CA194ACBEB912D0DDA4C");
+	Params::WBP_UI_Results_Reward_SkillProgress_C_ExecuteUbergraph_WBP_UI_Results_Reward_SkillProgress Parms{};
 
-	Params::WBP_UI_Results_Reward_SkillProgress_C_OnLoaded_4365A4A44829CA194ACBEB912D0DDA4C Parms{};
-
-	Parms.Loaded = Loaded;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_Results_Reward_SkillProgress.WBP_UI_Results_Reward_SkillProgress_C.PlayAppearAnim
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Results_Reward_SkillProgress_C::PlayAppearAnim()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_Reward_SkillProgress_C", "PlayAppearAnim");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Results_Reward_SkillProgress.WBP_UI_Results_Reward_SkillProgress_C.PlayLevelUpAnimation
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Results_Reward_SkillProgress_C::PlayLevelUpAnimation()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_Reward_SkillProgress_C", "PlayLevelUpAnimation");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Results_Reward_SkillProgress.WBP_UI_Results_Reward_SkillProgress_C.PreConstruct
+// Function WBP_UI_Results_Reward_SkillProgress.WBP_UI_Results_Reward_SkillProgress_C.Construct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Results_Reward_SkillProgress_C::PreConstruct(bool IsDesignTime)
+void UWBP_UI_Results_Reward_SkillProgress_C::Construct()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_Reward_SkillProgress_C", "PreConstruct");
-
-	Params::WBP_UI_Results_Reward_SkillProgress_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Results_Reward_SkillProgress.WBP_UI_Results_Reward_SkillProgress_C.SequenceEvent__ENTRYPOINTWBP_UI_Results_Reward_SkillProgress
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_Results_Reward_SkillProgress_C::SequenceEvent__ENTRYPOINTWBP_UI_Results_Reward_SkillProgress()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_Reward_SkillProgress_C", "SequenceEvent__ENTRYPOINTWBP_UI_Results_Reward_SkillProgress");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_UI_Results_Reward_SkillProgress.WBP_UI_Results_Reward_SkillProgress_C.SetProgress
+// Function WBP_UI_Results_Reward_SkillProgress.WBP_UI_Results_Reward_SkillProgress_C.AnimateBarsAndText
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_Results_Reward_SkillProgress_C::SetProgress()
+void UWBP_UI_Results_Reward_SkillProgress_C::AnimateBarsAndText()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Results_Reward_SkillProgress_C", "SetProgress");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AnimateBarsAndText", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

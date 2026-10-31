@@ -28,12 +28,12 @@ public:
 	class ABP_VaultDoor_Small_C*                  BP_Int_Door_01_SmallVault_2_ExecuteUbergraph_R_Penthouse_Panic_RefProperty; // 0x03E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__R_Penthouse_Panic_BP_Int_Door_01_SmallVault_2_K2Node_ActorBoundEvent_0_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State);
-	void Close_PanicRoom();
-	void ExecuteUbergraph_R_Penthouse_Panic(int32 EntryPoint);
-	void Open_PanicRoom();
-	void ReceiveBeginPlay();
 	void Unlock_PanicRoom();
+	void ReceiveBeginPlay();
+	void Open_PanicRoom();
+	void ExecuteUbergraph_R_Penthouse_Panic(int32 EntryPoint);
+	void Close_PanicRoom();
+	void BndEvt__R_Penthouse_Panic_BP_Int_Door_01_SmallVault_2_K2Node_ActorBoundEvent_0_SBZGateStateChangedDelegate__DelegateSignature(ESBZGateState OldState, ESBZGateState State);
 
 public:
 	static class UClass* StaticClass()
@@ -49,5 +49,6 @@ public:
 		return GetDefaultObjImpl<AR_Penthouse_Panic_C>();
 	}
 };
+DUMPER7_ASSERTS_AR_Penthouse_Panic_C;
 
 SDK_NAMESPACE_END

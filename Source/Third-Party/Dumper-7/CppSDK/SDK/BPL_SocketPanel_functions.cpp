@@ -12,10 +12,27 @@
 
 #include "BPL_SocketPanel_classes.hpp"
 #include "BPL_SocketPanel_parameters.hpp"
-#include "BPL_SocketPanel_0_parameters.hpp"
 
 
 SDK_NAMESPACE_START
+
+// Function BPL_SocketPanel.BPL_SocketPanel_C.ExecuteUbergraph_BPL_SocketPanel
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void BPL_SocketPanel::ABPL_SocketPanel_C::ExecuteUbergraph_BPL_SocketPanel(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BPL_SocketPanel_C", "ExecuteUbergraph_BPL_SocketPanel", FuncInfo);
+
+	Params::BPL_SocketPanel_C_ExecuteUbergraph_BPL_SocketPanel Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
 
 // Function BPL_SocketPanel.BPL_SocketPanel_C.BndEvt__BPL_SocketPanel_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
@@ -25,35 +42,13 @@ SDK_NAMESPACE_START
 
 void BPL_SocketPanel::ABPL_SocketPanel_C::BndEvt__BPL_SocketPanel_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPL_SocketPanel_C", "BndEvt__BPL_SocketPanel_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BPL_SocketPanel_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature", FnName));
 
 	Params::BPL_SocketPanel_C_BndEvt__BPL_SocketPanel_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature Parms{};
 
 	Parms.Type = Type;
 	Parms.HitContext = std::move(HitContext);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BPL_SocketPanel.BPL_SocketPanel_C.ExecuteUbergraph_BPL_SocketPanel
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void BPL_SocketPanel::ABPL_SocketPanel_C::ExecuteUbergraph_BPL_SocketPanel(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPL_SocketPanel_C", "ExecuteUbergraph_BPL_SocketPanel");
-
-	Params::BPL_SocketPanel_C_ExecuteUbergraph_BPL_SocketPanel Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

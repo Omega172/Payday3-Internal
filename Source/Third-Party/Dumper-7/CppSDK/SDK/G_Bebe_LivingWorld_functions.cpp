@@ -16,17 +16,21 @@
 
 SDK_NAMESPACE_START
 
-// Function G_Bebe_LivingWorld.G_Bebe_LivingWorld_C.ATMsBroken
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Bebe_LivingWorld.G_Bebe_LivingWorld_C.ExecuteUbergraph_G_Bebe_LivingWorld
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Bebe_LivingWorld_C::ATMsBroken()
+void AG_Bebe_LivingWorld_C::ExecuteUbergraph_G_Bebe_LivingWorld(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_Bebe_LivingWorld_C", "ExecuteUbergraph_G_Bebe_LivingWorld", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Bebe_LivingWorld_C", "ATMsBroken");
+	Params::G_Bebe_LivingWorld_C_ExecuteUbergraph_G_Bebe_LivingWorld Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -35,32 +39,22 @@ void AG_Bebe_LivingWorld_C::ATMsBroken()
 
 void AG_Bebe_LivingWorld_C::BlackScreenStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Bebe_LivingWorld_C", "BlackScreenStarted");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BlackScreenStarted", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Bebe_LivingWorld.G_Bebe_LivingWorld_C.ExecuteUbergraph_G_Bebe_LivingWorld
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function G_Bebe_LivingWorld.G_Bebe_LivingWorld_C.ATMsBroken
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Bebe_LivingWorld_C::ExecuteUbergraph_G_Bebe_LivingWorld(int32 EntryPoint)
+void AG_Bebe_LivingWorld_C::ATMsBroken()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ATMsBroken", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Bebe_LivingWorld_C", "ExecuteUbergraph_G_Bebe_LivingWorld");
-
-	Params::G_Bebe_LivingWorld_C_ExecuteUbergraph_G_Bebe_LivingWorld Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

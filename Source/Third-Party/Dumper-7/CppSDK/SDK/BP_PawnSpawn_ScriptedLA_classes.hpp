@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_PawnSpawn_ScriptedLA_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PawnSpawn_ScriptedLA_C;
 
 SDK_NAMESPACE_END

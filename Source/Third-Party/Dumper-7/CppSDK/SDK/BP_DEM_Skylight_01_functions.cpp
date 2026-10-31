@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_DEM_Skylight_01.BP_DEM_Skylight_01_C.ExecuteUbergraph_BP_DEM_Skylight_01
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_DEM_Skylight_01_C::ExecuteUbergraph_BP_DEM_Skylight_01(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_DEM_Skylight_01_C", "ExecuteUbergraph_BP_DEM_Skylight_01", FuncInfo);
+
+	Params::BP_DEM_Skylight_01_C_ExecuteUbergraph_BP_DEM_Skylight_01 Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_DEM_Skylight_01.BP_DEM_Skylight_01_C.BndEvt__BP_BUS_Skylight_01_PropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -26,10 +44,8 @@ SDK_NAMESPACE_START
 
 void ABP_DEM_Skylight_01_C::BndEvt__BP_BUS_Skylight_01_PropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DEM_Skylight_01_C", "BndEvt__BP_BUS_Skylight_01_PropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_BUS_Skylight_01_PropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature", FnName));
 
 	Params::BP_DEM_Skylight_01_C_BndEvt__BP_BUS_Skylight_01_PropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature Parms{};
 
@@ -37,26 +53,6 @@ void ABP_DEM_Skylight_01_C::BndEvt__BP_BUS_Skylight_01_PropDamage_K2Node_Compone
 	Parms.Hits = Hits;
 	Parms.bDoCosmetics = bDoCosmetics;
 	Parms.DamageContext = std::move(DamageContext);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_DEM_Skylight_01.BP_DEM_Skylight_01_C.ExecuteUbergraph_BP_DEM_Skylight_01
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_DEM_Skylight_01_C::ExecuteUbergraph_BP_DEM_Skylight_01(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DEM_Skylight_01_C", "ExecuteUbergraph_BP_DEM_Skylight_01");
-
-	Params::BP_DEM_Skylight_01_C_ExecuteUbergraph_BP_DEM_Skylight_01 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

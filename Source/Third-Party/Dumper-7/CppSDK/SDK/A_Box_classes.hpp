@@ -30,9 +30,9 @@ public:
 	class ASBZAmbientSound*                       SBZAmbientSound_TruckEngine_ExecuteUbergraph_A_Box_RefProperty; // 0x03F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_A_Box(int32 EntryPoint);
-	void HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState);
 	void ReceiveBeginPlay();
+	void HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged);
+	void ExecuteUbergraph_A_Box(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<AA_Box_C>();
 	}
 };
+DUMPER7_ASSERTS_AA_Box_C;
 
 SDK_NAMESPACE_END

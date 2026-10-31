@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Trashcan_03_SmallDestruction_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Trashcan_03_SmallDestruction_C;
 
 SDK_NAMESPACE_END

@@ -16,25 +16,33 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_MovingMotionSensor_Drone.BP_MovingMotionSensor_Drone_C.BP_OnStateChanged
+// Function BP_MovingMotionSensor_Drone.BP_MovingMotionSensor_Drone_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
-// Parameters:
-// ESBZCameraState                         OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZCameraState                         NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MovingMotionSensor_Drone_C::BP_OnStateChanged(ESBZCameraState OldState, ESBZCameraState NewState, bool bDoCosmetics)
+void ABP_MovingMotionSensor_Drone_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MovingMotionSensor_Drone_C", "BP_OnStateChanged");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_MovingMotionSensor_Drone_C_BP_OnStateChanged Parms{};
+
+// Function BP_MovingMotionSensor_Drone.BP_MovingMotionSensor_Drone_C.onHeistsStateChanged
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EPD3HeistState                          OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPD3HeistState                          NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_MovingMotionSensor_Drone_C::onHeistsStateChanged(EPD3HeistState OldState, EPD3HeistState NewState)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"onHeistsStateChanged", FnName));
+
+	Params::BP_MovingMotionSensor_Drone_C_onHeistsStateChanged Parms{};
 
 	Parms.OldState = OldState;
 	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -47,10 +55,8 @@ void ABP_MovingMotionSensor_Drone_C::BP_OnStateChanged(ESBZCameraState OldState,
 
 void ABP_MovingMotionSensor_Drone_C::ExecuteUbergraph_BP_MovingMotionSensor_Drone(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MovingMotionSensor_Drone_C", "ExecuteUbergraph_BP_MovingMotionSensor_Drone");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_MovingMotionSensor_Drone_C", "ExecuteUbergraph_BP_MovingMotionSensor_Drone", FuncInfo);
 
 	Params::BP_MovingMotionSensor_Drone_C_ExecuteUbergraph_BP_MovingMotionSensor_Drone Parms{};
 
@@ -60,39 +66,25 @@ void ABP_MovingMotionSensor_Drone_C::ExecuteUbergraph_BP_MovingMotionSensor_Dron
 }
 
 
-// Function BP_MovingMotionSensor_Drone.BP_MovingMotionSensor_Drone_C.onHeistsStateChanged
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function BP_MovingMotionSensor_Drone.BP_MovingMotionSensor_Drone_C.BP_OnStateChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// EPD3HeistState                          OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPD3HeistState                          NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZCameraState                         OldState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZCameraState                         NewState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_BP_OnStateChanged                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_MovingMotionSensor_Drone_C::onHeistsStateChanged(EPD3HeistState OldState, EPD3HeistState NewState)
+void ABP_MovingMotionSensor_Drone_C::BP_OnStateChanged(ESBZCameraState OldState_BP_OnStateChanged, ESBZCameraState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MovingMotionSensor_Drone_C", "onHeistsStateChanged");
+	Params::BP_MovingMotionSensor_Drone_C_BP_OnStateChanged Parms{};
 
-	Params::BP_MovingMotionSensor_Drone_C_onHeistsStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
+	Parms.OldState_BP_OnStateChanged = OldState_BP_OnStateChanged;
+	Parms.NewState_BP_OnStateChanged = NewState_BP_OnStateChanged;
+	Parms.bDoCosmetics_BP_OnStateChanged = bDoCosmetics_BP_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MovingMotionSensor_Drone.BP_MovingMotionSensor_Drone_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_MovingMotionSensor_Drone_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MovingMotionSensor_Drone_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

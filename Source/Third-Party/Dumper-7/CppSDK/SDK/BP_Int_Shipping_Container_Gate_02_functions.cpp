@@ -20,10 +20,8 @@ SDK_NAMESPACE_START
 
 void ABP_Int_Shipping_Container_Gate_02_C::Set_interaction_enable()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Int_Shipping_Container_Gate_02_C", "Set interaction enable");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set interaction enable", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

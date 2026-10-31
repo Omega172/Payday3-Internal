@@ -26,10 +26,10 @@ public:
 	class FName                                   TargetKey;                                         // 0x0138(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void OnStartedBP(class APawn* Pawn_OnStartedBP);
 	void ExecuteUbergraph_BP_Order_Civilian_CallInvestigator_ReducedProjection(int32 EntryPoint);
-	void OnStartedBP(class APawn* Pawn);
 
-	bool ExecPredicate(const class UObject* Owner) const;
+	bool ExecPredicate(const class UObject* Owner_ExecPredicate) const;
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<UBP_Order_Civilian_CallInvestigator_ReducedProjection_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_Order_Civilian_CallInvestigator_ReducedProjection_C;
 
 SDK_NAMESPACE_END

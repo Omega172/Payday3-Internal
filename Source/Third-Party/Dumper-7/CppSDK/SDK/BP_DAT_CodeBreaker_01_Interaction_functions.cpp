@@ -16,25 +16,27 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_DAT_CodeBreaker_01_Interaction.BP_DAT_CodeBreaker_01_Interaction_C.BndEvt__BP_ElevatorDoor_ControlPanel_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// const class USBZBaseInteractableComponent*InteractableComponent_0                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_DAT_CodeBreaker_01_Interaction.BP_DAT_CodeBreaker_01_Interaction_C.TurnOn
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_DAT_CodeBreaker_01_Interaction_C::BndEvt__BP_ElevatorDoor_ControlPanel_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent_0, bool bInNewState)
+void ABP_DAT_CodeBreaker_01_Interaction_C::TurnOn()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TurnOn", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_CodeBreaker_01_Interaction_C", "BndEvt__BP_ElevatorDoor_ControlPanel_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_DAT_CodeBreaker_01_Interaction_C_BndEvt__BP_ElevatorDoor_ControlPanel_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
 
-	Parms.InteractableComponent_0 = InteractableComponent_0;
-	Parms.bInNewState = bInNewState;
+// Function BP_DAT_CodeBreaker_01_Interaction.BP_DAT_CodeBreaker_01_Interaction_C.TurnOff
+// (Public, BlueprintCallable, BlueprintEvent)
 
-	UObject::ProcessEvent(Func, &Parms);
+void ABP_DAT_CodeBreaker_01_Interaction_C::TurnOff()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TurnOff", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -45,10 +47,8 @@ void ABP_DAT_CodeBreaker_01_Interaction_C::BndEvt__BP_ElevatorDoor_ControlPanel_
 
 void ABP_DAT_CodeBreaker_01_Interaction_C::ExecuteUbergraph_BP_DAT_CodeBreaker_01_Interaction(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_CodeBreaker_01_Interaction_C", "ExecuteUbergraph_BP_DAT_CodeBreaker_01_Interaction");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_DAT_CodeBreaker_01_Interaction_C", "ExecuteUbergraph_BP_DAT_CodeBreaker_01_Interaction", FuncInfo);
 
 	Params::BP_DAT_CodeBreaker_01_Interaction_C_ExecuteUbergraph_BP_DAT_CodeBreaker_01_Interaction Parms{};
 
@@ -58,31 +58,23 @@ void ABP_DAT_CodeBreaker_01_Interaction_C::ExecuteUbergraph_BP_DAT_CodeBreaker_0
 }
 
 
-// Function BP_DAT_CodeBreaker_01_Interaction.BP_DAT_CodeBreaker_01_Interaction_C.TurnOff
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_DAT_CodeBreaker_01_Interaction.BP_DAT_CodeBreaker_01_Interaction_C.BndEvt__BP_ElevatorDoor_ControlPanel_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// const class USBZBaseInteractableComponent*InteractableComponent                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInNewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_DAT_CodeBreaker_01_Interaction_C::TurnOff()
+void ABP_DAT_CodeBreaker_01_Interaction_C::BndEvt__BP_ElevatorDoor_ControlPanel_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ElevatorDoor_ControlPanel_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_CodeBreaker_01_Interaction_C", "TurnOff");
+	Params::BP_DAT_CodeBreaker_01_Interaction_C_BndEvt__BP_ElevatorDoor_ControlPanel_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Parms.InteractableComponent = InteractableComponent;
+	Parms.bInNewState = bInNewState;
 
-
-// Function BP_DAT_CodeBreaker_01_Interaction.BP_DAT_CodeBreaker_01_Interaction_C.TurnOn
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_DAT_CodeBreaker_01_Interaction_C::TurnOn()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DAT_CodeBreaker_01_Interaction_C", "TurnOn");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

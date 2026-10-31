@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AFOR_BPL_Fluorescent_Hanging_6500K_C>();
 	}
 };
+DUMPER7_ASSERTS_AFOR_BPL_Fluorescent_Hanging_6500K_C;
 
 SDK_NAMESPACE_END

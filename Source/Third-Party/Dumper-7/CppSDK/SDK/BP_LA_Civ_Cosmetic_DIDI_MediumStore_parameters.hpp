@@ -17,36 +17,53 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_LA_Civ_Cosmetic_DIDI_MediumStore.BP_LA_Civ_Cosmetic_DIDI_MediumStore_C.BndEvt__BP_LA_Civ_Cosmetic_JewelryStore_SBZLifeAction_K2Node_ComponentBoundEvent_0_SBZLifeActionEventDelegate__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_LA_Civ_Cosmetic_DIDI_MediumStore_C_BndEvt__BP_LA_Civ_Cosmetic_JewelryStore_SBZLifeAction_K2Node_ComponentBoundEvent_0_SBZLifeActionEventDelegate__DelegateSignature final
+// Function BP_LA_Civ_Cosmetic_DIDI_MediumStore.BP_LA_Civ_Cosmetic_DIDI_MediumStore_C.SellerGoBackWaiting
+// 0x0060 (0x0060 - 0x0000)
+struct BP_LA_Civ_Cosmetic_DIDI_MediumStore_C_SellerGoBackWaiting final
 {
 public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZLifeActionRequest                  K2Node_MakeStruct_SBZLifeActionRequest;            // 0x0008(0x0040)(NoDestructor, ContainsInstancedReference)
+	class USBZAIActionData_LifeAction*            CallFunc_CreateActionData_ReturnValue;             // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZAIAction*                           CallFunc_PushAction_ReturnValue;                   // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_LA_Civ_Cosmetic_DIDI_MediumStore_C_SellerGoBackWaiting;
 
-// Function BP_LA_Civ_Cosmetic_DIDI_MediumStore.BP_LA_Civ_Cosmetic_DIDI_MediumStore_C.BndEvt__BP_LA_Civ_Cosmetic_JewelryStore_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature
-// 0x0018 (0x0018 - 0x0000)
-struct BP_LA_Civ_Cosmetic_DIDI_MediumStore_C_BndEvt__BP_LA_Civ_Cosmetic_JewelryStore_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature final
+// Function BP_LA_Civ_Cosmetic_DIDI_MediumStore.BP_LA_Civ_Cosmetic_DIDI_MediumStore_C.IsSellerWaiting
+// 0x0028 (0x0028 - 0x0000)
+struct BP_LA_Civ_Cosmetic_DIDI_MediumStore_C_IsSellerWaiting final
 {
 public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          Waiting;                                           // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZLifeActionSlot*                     WaiterSlot;                                        // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsWaiting;                                         // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZLifeActionState                           CallFunc_GetState_ReturnValue;                     // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_16[0x2];                                       // 0x0016(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZLifeActionManager*                  CallFunc_Get_ReturnValue;                          // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	const class USBZLifeActionSlot*               CallFunc_GetActionSlotForCharacter_ReturnValue;    // 0x0020(0x0008)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_LA_Civ_Cosmetic_DIDI_MediumStore_C_IsSellerWaiting;
 
-// Function BP_LA_Civ_Cosmetic_DIDI_MediumStore.BP_LA_Civ_Cosmetic_DIDI_MediumStore_C.BndEvt__BP_LA_Civ_Cosmetic_JewelryStore_SBZLifeAction_K2Node_ComponentBoundEvent_2_SBZLifeActionStopEventDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct BP_LA_Civ_Cosmetic_DIDI_MediumStore_C_BndEvt__BP_LA_Civ_Cosmetic_JewelryStore_SBZLifeAction_K2Node_ComponentBoundEvent_2_SBZLifeActionStopEventDelegate__DelegateSignature final
+// Function BP_LA_Civ_Cosmetic_DIDI_MediumStore.BP_LA_Civ_Cosmetic_DIDI_MediumStore_C.FindOccupiedBuyInstance
+// 0x0030 (0x0030 - 0x0000)
+struct BP_LA_Civ_Cosmetic_DIDI_MediumStore_C_FindOccupiedBuyInstance final
 {
 public:
-	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	ESBZLifeActionStopReason                      Result;                                            // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionInstance*                 BuyInstance;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                           CallFunc_GetTag_ReturnValue;                       // 0x0008(0x000C)(ConstParm, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZCharacter*                          CallFunc_GetCharacterInAction_ReturnValue;         // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	const class USBZLifeActionSlot*               CallFunc_GetReservedSlotForCharacter_ReturnValue;  // 0x0020(0x0008)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	const class USBZLifeActionInstance*           CallFunc_GetActionForSlot_ReturnValue;             // 0x0028(0x0008)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_LA_Civ_Cosmetic_DIDI_MediumStore_C_FindOccupiedBuyInstance;
 
 // Function BP_LA_Civ_Cosmetic_DIDI_MediumStore.BP_LA_Civ_Cosmetic_DIDI_MediumStore_C.ExecuteUbergraph_BP_LA_Civ_Cosmetic_DIDI_MediumStore
 // 0x0138 (0x0138 - 0x0000)
@@ -90,51 +107,41 @@ public:
 	class USBZAIAction*                           CallFunc_PushAction_ReturnValue_1;                 // 0x00F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FSBZLifeActionRequest                  K2Node_MakeStruct_SBZLifeActionRequest_1;          // 0x00F8(0x0040)(NoDestructor, ContainsInstancedReference)
 };
+DUMPER7_ASSERTS_BP_LA_Civ_Cosmetic_DIDI_MediumStore_C_ExecuteUbergraph_BP_LA_Civ_Cosmetic_DIDI_MediumStore;
 
-// Function BP_LA_Civ_Cosmetic_DIDI_MediumStore.BP_LA_Civ_Cosmetic_DIDI_MediumStore_C.FindOccupiedBuyInstance
-// 0x0030 (0x0030 - 0x0000)
-struct BP_LA_Civ_Cosmetic_DIDI_MediumStore_C_FindOccupiedBuyInstance final
+// Function BP_LA_Civ_Cosmetic_DIDI_MediumStore.BP_LA_Civ_Cosmetic_DIDI_MediumStore_C.BndEvt__BP_LA_Civ_Cosmetic_JewelryStore_SBZLifeAction_K2Node_ComponentBoundEvent_2_SBZLifeActionStopEventDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct BP_LA_Civ_Cosmetic_DIDI_MediumStore_C_BndEvt__BP_LA_Civ_Cosmetic_JewelryStore_SBZLifeAction_K2Node_ComponentBoundEvent_2_SBZLifeActionStopEventDelegate__DelegateSignature final
 {
 public:
-	class USBZLifeActionInstance*                 BuyInstance;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                           CallFunc_GetTag_ReturnValue;                       // 0x0008(0x000C)(ConstParm, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZCharacter*                          CallFunc_GetCharacterInAction_ReturnValue;         // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	const class USBZLifeActionSlot*               CallFunc_GetReservedSlotForCharacter_ReturnValue;  // 0x0020(0x0008)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	const class USBZLifeActionInstance*           CallFunc_GetActionForSlot_ReturnValue;             // 0x0028(0x0008)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	ESBZLifeActionStopReason                      Result;                                            // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_LA_Civ_Cosmetic_DIDI_MediumStore_C_BndEvt__BP_LA_Civ_Cosmetic_JewelryStore_SBZLifeAction_K2Node_ComponentBoundEvent_2_SBZLifeActionStopEventDelegate__DelegateSignature;
 
-// Function BP_LA_Civ_Cosmetic_DIDI_MediumStore.BP_LA_Civ_Cosmetic_DIDI_MediumStore_C.IsSellerWaiting
-// 0x0028 (0x0028 - 0x0000)
-struct BP_LA_Civ_Cosmetic_DIDI_MediumStore_C_IsSellerWaiting final
+// Function BP_LA_Civ_Cosmetic_DIDI_MediumStore.BP_LA_Civ_Cosmetic_DIDI_MediumStore_C.BndEvt__BP_LA_Civ_Cosmetic_JewelryStore_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_LA_Civ_Cosmetic_DIDI_MediumStore_C_BndEvt__BP_LA_Civ_Cosmetic_JewelryStore_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature final
 {
 public:
-	bool                                          Waiting;                                           // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZLifeActionSlot*                     WaiterSlot;                                        // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	bool                                          IsWaiting;                                         // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZLifeActionState                           CallFunc_GetState_ReturnValue;                     // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_16[0x2];                                       // 0x0016(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZLifeActionManager*                  CallFunc_Get_ReturnValue;                          // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	const class USBZLifeActionSlot*               CallFunc_GetActionSlotForCharacter_ReturnValue;    // 0x0020(0x0008)(ConstParm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_LA_Civ_Cosmetic_DIDI_MediumStore_C_BndEvt__BP_LA_Civ_Cosmetic_JewelryStore_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature;
 
-// Function BP_LA_Civ_Cosmetic_DIDI_MediumStore.BP_LA_Civ_Cosmetic_DIDI_MediumStore_C.SellerGoBackWaiting
-// 0x0060 (0x0060 - 0x0000)
-struct BP_LA_Civ_Cosmetic_DIDI_MediumStore_C_SellerGoBackWaiting final
+// Function BP_LA_Civ_Cosmetic_DIDI_MediumStore.BP_LA_Civ_Cosmetic_DIDI_MediumStore_C.BndEvt__BP_LA_Civ_Cosmetic_JewelryStore_SBZLifeAction_K2Node_ComponentBoundEvent_0_SBZLifeActionEventDelegate__DelegateSignature
+// 0x0018 (0x0018 - 0x0000)
+struct BP_LA_Civ_Cosmetic_DIDI_MediumStore_C_BndEvt__BP_LA_Civ_Cosmetic_JewelryStore_SBZLifeAction_K2Node_ComponentBoundEvent_0_SBZLifeActionEventDelegate__DelegateSignature final
 {
 public:
-	uint8                                         CallFunc_MakeLiteralByte_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZLifeActionRequest                  K2Node_MakeStruct_SBZLifeActionRequest;            // 0x0008(0x0040)(NoDestructor, ContainsInstancedReference)
-	class USBZAIActionData_LifeAction*            CallFunc_CreateActionData_ReturnValue;             // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZAIAction*                           CallFunc_PushAction_ReturnValue;                   // 0x0050(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ASBZCharacter*                          Character;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionInstance*                 ActionInstance;                                    // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZLifeActionSlot*                     ActionSlot;                                        // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_LA_Civ_Cosmetic_DIDI_MediumStore_C_BndEvt__BP_LA_Civ_Cosmetic_JewelryStore_SBZLifeAction_K2Node_ComponentBoundEvent_0_SBZLifeActionEventDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

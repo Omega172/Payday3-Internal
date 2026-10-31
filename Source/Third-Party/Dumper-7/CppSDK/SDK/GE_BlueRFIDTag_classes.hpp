@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_BlueRFIDTag_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_BlueRFIDTag_C;
 
 SDK_NAMESPACE_END

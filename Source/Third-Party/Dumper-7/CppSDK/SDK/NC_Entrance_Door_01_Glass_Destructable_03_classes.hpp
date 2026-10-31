@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ANC_Entrance_Door_01_Glass_Destructable_03_C>();
 	}
 };
+DUMPER7_ASSERTS_ANC_Entrance_Door_01_Glass_Destructable_03_C;
 
 SDK_NAMESPACE_END

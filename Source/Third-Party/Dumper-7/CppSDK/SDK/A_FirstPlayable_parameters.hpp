@@ -17,14 +17,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function A_FirstPlayable.A_FirstPlayable_C.BndEvt__A_FirstPlayable_TriggerBox_ES_VO_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct A_FirstPlayable_C_BndEvt__A_FirstPlayable_TriggerBox_ES_VO_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature final
+// Function A_FirstPlayable.A_FirstPlayable_C.HeistStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct A_FirstPlayable_C_HeistStateChanged final
 {
 public:
-	class AActor*                                 OverlappedActor;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                OldHeistState_HeistStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CurrentHeistState_HeistStateChanged;               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_A_FirstPlayable_C_HeistStateChanged;
 
 // Function A_FirstPlayable.A_FirstPlayable_C.ExecuteUbergraph_A_FirstPlayable
 // 0x00F0 (0x00F0 - 0x0000)
@@ -63,15 +64,17 @@ public:
 	TDelegate<void(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo)> Temp_delegate_Variable_6; // 0x00D8(0x0014)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_PostEvent_ReturnValue_6;                  // 0x00EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_A_FirstPlayable_C_ExecuteUbergraph_A_FirstPlayable;
 
-// Function A_FirstPlayable.A_FirstPlayable_C.HeistStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct A_FirstPlayable_C_HeistStateChanged final
+// Function A_FirstPlayable.A_FirstPlayable_C.BndEvt__A_FirstPlayable_TriggerBox_ES_VO_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct A_FirstPlayable_C_BndEvt__A_FirstPlayable_TriggerBox_ES_VO_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature final
 {
 public:
-	EPD3HeistState                                OldHeistState;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CurrentHeistState;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OverlappedActor;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_A_FirstPlayable_C_BndEvt__A_FirstPlayable_TriggerBox_ES_VO_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AM_Cookie_Cover_C>();
 	}
 };
+DUMPER7_ASSERTS_AM_Cookie_Cover_C;
 
 SDK_NAMESPACE_END

@@ -16,27 +16,21 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_PageCycleCounter.WBP_PageCycleCounter_C.SetInactive
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_PageCycleCounter.WBP_PageCycleCounter_C.BndEvt__WBP_PageCycleCount_MouseButton_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZMenuMouseButton*              Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_PageCycleCounter_C::SetInactive()
+void UWBP_PageCycleCounter_C::BndEvt__WBP_PageCycleCount_MouseButton_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature(class USBZMenuMouseButton* Button)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetInactive", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_PageCycleCount_MouseButton_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature", FnName));
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Params::WBP_PageCycleCounter_C_BndEvt__WBP_PageCycleCount_MouseButton_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature Parms{};
 
+	Parms.Button = Button;
 
-// Function WBP_PageCycleCounter.WBP_PageCycleCounter_C.SetActive
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_PageCycleCounter_C::SetActive()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetActive", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -58,21 +52,27 @@ void UWBP_PageCycleCounter_C::ExecuteUbergraph_WBP_PageCycleCounter(int32 EntryP
 }
 
 
-// Function WBP_PageCycleCounter.WBP_PageCycleCounter_C.BndEvt__WBP_PageCycleCount_MouseButton_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuMouseButton*              Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// Function WBP_PageCycleCounter.WBP_PageCycleCounter_C.SetActive
+// (BlueprintCallable, BlueprintEvent)
 
-void UWBP_PageCycleCounter_C::BndEvt__WBP_PageCycleCount_MouseButton_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature(class USBZMenuMouseButton* Button)
+void UWBP_PageCycleCounter_C::SetActive()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_PageCycleCount_MouseButton_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetActive", FnName));
 
-	Params::WBP_PageCycleCounter_C_BndEvt__WBP_PageCycleCount_MouseButton_K2Node_ComponentBoundEvent_1_OnMenuMouseButtonSelected__DelegateSignature Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.Button = Button;
 
-	UObject::ProcessEvent(Func, &Parms);
+// Function WBP_PageCycleCounter.WBP_PageCycleCounter_C.SetInactive
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_PageCycleCounter_C::SetInactive()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetInactive", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

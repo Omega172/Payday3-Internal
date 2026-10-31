@@ -168,15 +168,15 @@ public:
 	TMulticastInlineDelegate<void()>              Shelve_F_Burned;                                   // 0x0800(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__BP_Shelve_master_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__Shelve_F_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void Disable_Interaction();
-	void DisableInteractions();
-	void Enable_Interaction();
-	void ExecuteUbergraph_BP_Shelve_master_F(int32 EntryPoint);
-	void IgniteShelf();
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
 	void UserConstructionScript();
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void IgniteShelf();
+	void ExecuteUbergraph_BP_Shelve_master_F(int32 EntryPoint);
+	void Enable_Interaction();
+	void DisableInteractions();
+	void Disable_Interaction();
+	void BndEvt__Shelve_F_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_Shelve_master_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -192,5 +192,6 @@ public:
 		return GetDefaultObjImpl<ABP_Shelve_master_F_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Shelve_master_F_C;
 
 SDK_NAMESPACE_END

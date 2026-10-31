@@ -46,21 +46,21 @@ public:
 	struct FLinearColor                           ActiveNoColor;                                     // 0x0424(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           InactiveColor;                                     // 0x0434(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_444[0x4];                                      // 0x0444(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(class FText HeistTitle, bool IsHeistActive)> OnHeistSettingUpdated; // 0x0448(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class FText HeistTitle_0, bool IsHeistActive_0)> OnHeistSettingUpdated; // 0x0448(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class FText                                   HeistTitle;                                        // 0x0458(0x0010)(Edit, BlueprintVisible, ExposeOnSpawn)
 	class UAkAudioEvent*                          ButtonHoveredSound;                                // 0x0468(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UAkAudioEvent*                          ClickedSound;                                      // 0x0470(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FSBZServerBrowserHeistLevel            HeistData;                                         // 0x0478(0x00D0)(Edit, BlueprintVisible, ExposeOnSpawn)
 
 public:
-	void UpdateFocusVisual();
-	void UpdateButtonWithoutCallback(bool IsHeistActive);
-	void UpdateButtonVisual();
-	void UpdateButtonExternal(bool IsHeistActive);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void ExecuteUbergraph_WBP_YesNo_LineItem_MenuButton(int32 EntryPoint);
+	void ButtonFocusedChanged(bool bInHasFocus);
 	void ButtonSelected();
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
+	void ExecuteUbergraph_WBP_YesNo_LineItem_MenuButton(int32 EntryPoint);
+	void PreConstruct(bool IsDesignTime);
+	void UpdateButtonExternal(bool IsHeistActive_0);
+	void UpdateButtonVisual();
+	void UpdateButtonWithoutCallback(bool IsHeistActive_0);
+	void UpdateFocusVisual();
 
 public:
 	static class UClass* StaticClass()

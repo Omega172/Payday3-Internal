@@ -16,54 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_DroneSpawner.BP_DroneSpawner_C.ExecuteUbergraph_BP_DroneSpawner
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_DroneSpawner_C::ExecuteUbergraph_BP_DroneSpawner(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DroneSpawner_C", "ExecuteUbergraph_BP_DroneSpawner");
-
-	Params::BP_DroneSpawner_C_ExecuteUbergraph_BP_DroneSpawner Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_DroneSpawner.BP_DroneSpawner_C.OnSelectedTick
-// (Event, Public, BlueprintEvent)
-
-void ABP_DroneSpawner_C::OnSelectedTick()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DroneSpawner_C", "OnSelectedTick");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_DroneSpawner.BP_DroneSpawner_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_DroneSpawner_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DroneSpawner_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_DroneSpawner.BP_DroneSpawner_C.SpawnedPawnDelegate_Event_0
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -72,15 +24,55 @@ void ABP_DroneSpawner_C::ReceiveBeginPlay()
 
 void ABP_DroneSpawner_C::SpawnedPawnDelegate_Event_0(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DroneSpawner_C", "SpawnedPawnDelegate_Event_0");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnedPawnDelegate_Event_0", FnName));
 
 	Params::BP_DroneSpawner_C_SpawnedPawnDelegate_Event_0 Parms{};
 
 	Parms.SpawnedPawn = SpawnedPawn;
 	Parms.Spawnedloot = Spawnedloot;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_DroneSpawner.BP_DroneSpawner_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_DroneSpawner_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_DroneSpawner.BP_DroneSpawner_C.OnSelectedTick
+// (Event, Public, BlueprintEvent)
+
+void ABP_DroneSpawner_C::OnSelectedTick()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSelectedTick", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_DroneSpawner.BP_DroneSpawner_C.ExecuteUbergraph_BP_DroneSpawner
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_DroneSpawner_C::ExecuteUbergraph_BP_DroneSpawner(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_DroneSpawner_C", "ExecuteUbergraph_BP_DroneSpawner", FuncInfo);
+
+	Params::BP_DroneSpawner_C_ExecuteUbergraph_BP_DroneSpawner Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

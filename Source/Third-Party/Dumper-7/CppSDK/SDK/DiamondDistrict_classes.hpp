@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ADiamondDistrict_C>();
 	}
 };
+DUMPER7_ASSERTS_ADiamondDistrict_C;
 
 SDK_NAMESPACE_END

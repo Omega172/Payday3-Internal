@@ -16,21 +16,47 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_container_Double_doors_LeftOnly.BP_container_Double_doors_LeftOnly_C.ExecuteUbergraph_BP_container_Double_doors_LeftOnly
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_container_Double_doors_LeftOnly.BP_container_Double_doors_LeftOnly_C.Open__UpdateFunc
+// (BlueprintEvent)
 
-void ABP_container_Double_doors_LeftOnly_C::ExecuteUbergraph_BP_container_Double_doors_LeftOnly(int32 EntryPoint)
+void ABP_container_Double_doors_LeftOnly_C::Open__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Open__UpdateFunc", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_container_Double_doors_LeftOnly_C", "ExecuteUbergraph_BP_container_Double_doors_LeftOnly");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_container_Double_doors_LeftOnly_C_ExecuteUbergraph_BP_container_Double_doors_LeftOnly Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+// Function BP_container_Double_doors_LeftOnly.BP_container_Double_doors_LeftOnly_C.Open__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_container_Double_doors_LeftOnly_C::Open__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Open__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_container_Double_doors_LeftOnly.BP_container_Double_doors_LeftOnly_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZGateState                           OldState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           NewState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsInitialStateChange_OnStateChanged                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_container_Double_doors_LeftOnly_C::OnStateChanged(ESBZGateState OldState_OnStateChanged, ESBZGateState NewState_OnStateChanged, bool bIsInitialStateChange_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_container_Double_doors_LeftOnly_C_OnStateChanged Parms{};
+
+	Parms.OldState_OnStateChanged = OldState_OnStateChanged;
+	Parms.NewState_OnStateChanged = NewState_OnStateChanged;
+	Parms.bIsInitialStateChange_OnStateChanged = bIsInitialStateChange_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -44,10 +70,8 @@ void ABP_container_Double_doors_LeftOnly_C::ExecuteUbergraph_BP_container_Double
 
 void ABP_container_Double_doors_LeftOnly_C::getDoorSimpleState(ESBZGateState state, EdoorStateSimple* simpleState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_container_Double_doors_LeftOnly_C", "getDoorSimpleState");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"getDoorSimpleState", FnName));
 
 	Params::BP_container_Double_doors_LeftOnly_C_getDoorSimpleState Parms{};
 
@@ -60,55 +84,21 @@ void ABP_container_Double_doors_LeftOnly_C::getDoorSimpleState(ESBZGateState sta
 }
 
 
-// Function BP_container_Double_doors_LeftOnly.BP_container_Double_doors_LeftOnly_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
+// Function BP_container_Double_doors_LeftOnly.BP_container_Double_doors_LeftOnly_C.ExecuteUbergraph_BP_container_Double_doors_LeftOnly
+// (Final, UbergraphFunction)
 // Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsInitialStateChange                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_container_Double_doors_LeftOnly_C::OnStateChanged(ESBZGateState OldState, ESBZGateState NewState, bool bIsInitialStateChange)
+void ABP_container_Double_doors_LeftOnly_C::ExecuteUbergraph_BP_container_Double_doors_LeftOnly(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_container_Double_doors_LeftOnly_C", "ExecuteUbergraph_BP_container_Double_doors_LeftOnly", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_container_Double_doors_LeftOnly_C", "OnStateChanged");
+	Params::BP_container_Double_doors_LeftOnly_C_ExecuteUbergraph_BP_container_Double_doors_LeftOnly Parms{};
 
-	Params::BP_container_Double_doors_LeftOnly_C_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bIsInitialStateChange = bIsInitialStateChange;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_container_Double_doors_LeftOnly.BP_container_Double_doors_LeftOnly_C.Open__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_container_Double_doors_LeftOnly_C::Open__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_container_Double_doors_LeftOnly_C", "Open__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_container_Double_doors_LeftOnly.BP_container_Double_doors_LeftOnly_C.Open__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_container_Double_doors_LeftOnly_C::Open__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_container_Double_doors_LeftOnly_C", "Open__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

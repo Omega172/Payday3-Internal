@@ -19,25 +19,34 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_DepositBox_Single.BP_DepositBox_Single_C.BndEvt__BP_DepositBox_Single_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature
-// 0x0030 (0x0030 - 0x0000)
-struct BP_DepositBox_Single_C_BndEvt__BP_DepositBox_Single_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature final
+// Function BP_DepositBox_Single.BP_DepositBox_Single_C.UserConstructionScript
+// 0x00B0 (0x00B0 - 0x0000)
+struct BP_DepositBox_Single_C_UserConstructionScript final
 {
 public:
-	class UActorComponent*                        PoolComponent;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         Hits;                                              // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZPropDamageContext                  DamageContext;                                     // 0x0010(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0000(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TMap<class USceneComponent*, struct FTransform> K2Node_MakeMap_Map;                              // 0x0060(0x0050)(ContainsInstancedReference)
 };
+DUMPER7_ASSERTS_BP_DepositBox_Single_C_UserConstructionScript;
 
-// Function BP_DepositBox_Single.BP_DepositBox_Single_C.BP_OnMiniGameSuccess
-// 0x0001 (0x0001 - 0x0000)
-struct BP_DepositBox_Single_C_BP_OnMiniGameSuccess final
+// Function BP_DepositBox_Single.BP_DepositBox_Single_C.PopulateSpawnInformationMap
+// 0x0050 (0x0050 - 0x0000)
+struct BP_DepositBox_Single_C_PopulateSpawnInformationMap final
 {
 public:
-	bool                                          bDoCosmetics;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TMap<class USceneComponent*, struct FTransform> InOutSpawnDataMap;                               // 0x0000(0x0050)(Parm, OutParm, ContainsInstancedReference)
 };
+DUMPER7_ASSERTS_BP_DepositBox_Single_C_PopulateSpawnInformationMap;
+
+// Function BP_DepositBox_Single.BP_DepositBox_Single_C.OnActorSpawned
+// 0x0010 (0x0010 - 0x0000)
+struct BP_DepositBox_Single_C_OnActorSpawned final
+{
+public:
+	class AActor*                                 SpawnedActor;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                        AttachParent;                                      // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_DepositBox_Single_C_OnActorSpawned;
 
 // Function BP_DepositBox_Single.BP_DepositBox_Single_C.ExecuteUbergraph_BP_DepositBox_Single
 // 0x0300 (0x0300 - 0x0000)
@@ -80,32 +89,29 @@ public:
 	int32                                         CallFunc_PostAkEvent_ReturnValue_2;                // 0x02F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x02FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_DepositBox_Single_C_ExecuteUbergraph_BP_DepositBox_Single;
 
-// Function BP_DepositBox_Single.BP_DepositBox_Single_C.OnActorSpawned
-// 0x0010 (0x0010 - 0x0000)
-struct BP_DepositBox_Single_C_OnActorSpawned final
+// Function BP_DepositBox_Single.BP_DepositBox_Single_C.BP_OnMiniGameSuccess
+// 0x0001 (0x0001 - 0x0000)
+struct BP_DepositBox_Single_C_BP_OnMiniGameSuccess final
 {
 public:
-	class AActor*                                 SpawnedActor;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                        AttachParent;                                      // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_BP_OnMiniGameSuccess;                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_DepositBox_Single_C_BP_OnMiniGameSuccess;
 
-// Function BP_DepositBox_Single.BP_DepositBox_Single_C.PopulateSpawnInformationMap
-// 0x0050 (0x0050 - 0x0000)
-struct BP_DepositBox_Single_C_PopulateSpawnInformationMap final
+// Function BP_DepositBox_Single.BP_DepositBox_Single_C.BndEvt__BP_DepositBox_Single_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature
+// 0x0030 (0x0030 - 0x0000)
+struct BP_DepositBox_Single_C_BndEvt__BP_DepositBox_Single_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature final
 {
 public:
-	TMap<class USceneComponent*, struct FTransform> InOutSpawnDataMap;                               // 0x0000(0x0050)(Parm, OutParm, ContainsInstancedReference)
+	class UActorComponent*                        PoolComponent;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         Hits;                                              // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZPropDamageContext                  DamageContext;                                     // 0x0010(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-
-// Function BP_DepositBox_Single.BP_DepositBox_Single_C.UserConstructionScript
-// 0x00B0 (0x00B0 - 0x0000)
-struct BP_DepositBox_Single_C_UserConstructionScript final
-{
-public:
-	struct FTransform                             CallFunc_K2_GetComponentToWorld_ReturnValue;       // 0x0000(0x0060)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TMap<class USceneComponent*, struct FTransform> K2Node_MakeMap_Map;                              // 0x0060(0x0050)(ContainsInstancedReference)
-};
+DUMPER7_ASSERTS_BP_DepositBox_Single_C_BndEvt__BP_DepositBox_Single_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

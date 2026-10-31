@@ -15,6 +15,13 @@
 
 SDK_NAMESPACE_START
 
+// ScriptStruct ABP_AICivilianLinkedAnimation.ABP_AICivilianLinkedAnimation_C.AnimBlueprintGeneratedMutableData
+// 0x0000 (0x0001 - 0x0001)
+struct ABP_AICivilianLinkedAnimation::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
+{
+};
+DUMPER7_ASSERTS_ABP_AICivilianLinkedAnimation__FAnimBlueprintGeneratedMutableData;
+
 // ScriptStruct ABP_AICivilianLinkedAnimation.ABP_AICivilianLinkedAnimation_C.AnimBlueprintGeneratedConstantData
 // 0x064F (0x0650 - 0x0001)
 struct ABP_AICivilianLinkedAnimation::FAnimBlueprintGeneratedConstantData final : public FAnimBlueprintConstantData
@@ -70,11 +77,6 @@ public:
 	struct FAnimNodeExposedValueHandler_PropertyAccess AnimGraphNode_SaveCachedPose;                 // 0x05E0(0x0038)()
 	struct FAnimNodeExposedValueHandler_PropertyAccess AnimGraphNode_Root;                           // 0x0618(0x0038)()
 };
-
-// ScriptStruct ABP_AICivilianLinkedAnimation.ABP_AICivilianLinkedAnimation_C.AnimBlueprintGeneratedMutableData
-// 0x0000 (0x0001 - 0x0001)
-struct ABP_AICivilianLinkedAnimation::FAnimBlueprintGeneratedMutableData final : public FAnimBlueprintMutableData
-{
-};
+DUMPER7_ASSERTS_ABP_AICivilianLinkedAnimation__FAnimBlueprintGeneratedConstantData;
 
 SDK_NAMESPACE_END

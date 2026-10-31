@@ -16,107 +16,163 @@
 
 SDK_NAMESPACE_START
 
-// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.BlackScreenStarted
-// (Event, Public, BlueprintEvent)
+// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.TruckStreetGone
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_SnGFO_Navlinks_C::BlackScreenStarted()
+void AG_SnGFO_Navlinks_C::TruckStreetGone()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Navlinks_C", "BlackScreenStarted");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TruckStreetGone", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume10_K2Node_ActorBoundEvent_9_SBZFilterActorDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.TruckSideAllyGone
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_SnGFO_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume10_K2Node_ActorBoundEvent_9_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+void AG_SnGFO_Navlinks_C::TruckSideAllyGone()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TruckSideAllyGone", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Navlinks_C", "BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume10_K2Node_ActorBoundEvent_9_SBZFilterActorDynamicDelegate__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::G_SnGFO_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume10_K2Node_ActorBoundEvent_9_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
 
-	Parms.Identifier = Identifier;
-	Parms.Actor = Actor;
-	Parms.CurrentTotalActors = CurrentTotalActors;
+// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.TruckLoadingAreaGone
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Navlinks_C::TruckLoadingAreaGone()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TruckLoadingAreaGone", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.TruckIsInAlly
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Navlinks_C::TruckIsInAlly()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TruckIsInAlly", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.SpawnSideStreet
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Navlinks_C::SpawnSideStreet()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnSideStreet", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.SpawnSewer
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Navlinks_C::SpawnSewer()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnSewer", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.SpawnGarage
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Navlinks_C::SpawnGarage()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnGarage", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.SpawnCrossing
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_SnGFO_Navlinks_C::SpawnCrossing()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnCrossing", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.OnPreplanningAssetsTagsApplied
+// (Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTagContainer&     PreplanningTagContainer_OnPreplanningAssetsTagsApplied (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void AG_SnGFO_Navlinks_C::OnPreplanningAssetsTagsApplied(const struct FGameplayTagContainer& PreplanningTagContainer_OnPreplanningAssetsTagsApplied)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPreplanningAssetsTagsApplied", FnName));
+
+	Params::G_SnGFO_Navlinks_C_OnPreplanningAssetsTagsApplied Parms{};
+
+	Parms.PreplanningTagContainer_OnPreplanningAssetsTagsApplied = std::move(PreplanningTagContainer_OnPreplanningAssetsTagsApplied);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume11_K2Node_ActorBoundEvent_10_SBZFilterActorDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.GarageOpened
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_SnGFO_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume11_K2Node_ActorBoundEvent_10_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+void AG_SnGFO_Navlinks_C::GarageOpened()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GarageOpened", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Navlinks_C", "BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume11_K2Node_ActorBoundEvent_10_SBZFilterActorDynamicDelegate__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::G_SnGFO_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume11_K2Node_ActorBoundEvent_10_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
 
-	Parms.Identifier = Identifier;
-	Parms.Actor = Actor;
-	Parms.CurrentTotalActors = CurrentTotalActors;
+// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.ExecuteUbergraph_G_SnGFO_Navlinks
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_SnGFO_Navlinks_C::ExecuteUbergraph_G_SnGFO_Navlinks(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_SnGFO_Navlinks_C", "ExecuteUbergraph_G_SnGFO_Navlinks", FuncInfo);
+
+	Params::G_SnGFO_Navlinks_C_ExecuteUbergraph_G_SnGFO_Navlinks Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume12_K2Node_ActorBoundEvent_11_SBZFilterActorDynamicDelegate__DelegateSignature
+// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume9_K2Node_ActorBoundEvent_8_SBZFilterActorDynamicDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_SnGFO_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume12_K2Node_ActorBoundEvent_11_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+void AG_SnGFO_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume9_K2Node_ActorBoundEvent_8_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume9_K2Node_ActorBoundEvent_8_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Navlinks_C", "BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume12_K2Node_ActorBoundEvent_11_SBZFilterActorDynamicDelegate__DelegateSignature");
-
-	Params::G_SnGFO_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume12_K2Node_ActorBoundEvent_11_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Identifier = Identifier;
-	Parms.Actor = Actor;
-	Parms.CurrentTotalActors = CurrentTotalActors;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume13_K2Node_ActorBoundEvent_12_SBZFilterActorDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_SnGFO_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume13_K2Node_ActorBoundEvent_12_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Navlinks_C", "BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume13_K2Node_ActorBoundEvent_12_SBZFilterActorDynamicDelegate__DelegateSignature");
-
-	Params::G_SnGFO_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume13_K2Node_ActorBoundEvent_12_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
+	Params::G_SnGFO_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume9_K2Node_ActorBoundEvent_8_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
 
 	Parms.Identifier = Identifier;
 	Parms.Actor = Actor;
@@ -135,10 +191,8 @@ void AG_SnGFO_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume13_K2N
 
 void AG_SnGFO_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume14_K2Node_ActorBoundEvent_13_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Navlinks_C", "BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume14_K2Node_ActorBoundEvent_13_SBZFilterActorDynamicDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume14_K2Node_ActorBoundEvent_13_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
 
 	Params::G_SnGFO_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume14_K2Node_ActorBoundEvent_13_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
 
@@ -150,21 +204,19 @@ void AG_SnGFO_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume14_K2N
 }
 
 
-// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume9_K2Node_ActorBoundEvent_8_SBZFilterActorDynamicDelegate__DelegateSignature
+// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume13_K2Node_ActorBoundEvent_12_SBZFilterActorDynamicDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_SnGFO_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume9_K2Node_ActorBoundEvent_8_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+void AG_SnGFO_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume13_K2Node_ActorBoundEvent_12_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume13_K2Node_ActorBoundEvent_12_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Navlinks_C", "BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume9_K2Node_ActorBoundEvent_8_SBZFilterActorDynamicDelegate__DelegateSignature");
-
-	Params::G_SnGFO_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume9_K2Node_ActorBoundEvent_8_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
+	Params::G_SnGFO_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume13_K2Node_ActorBoundEvent_12_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
 
 	Parms.Identifier = Identifier;
 	Parms.Actor = Actor;
@@ -174,167 +226,79 @@ void AG_SnGFO_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume9_K2No
 }
 
 
-// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.ExecuteUbergraph_G_SnGFO_Navlinks
-// (Final, UbergraphFunction, HasDefaults)
+// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume12_K2Node_ActorBoundEvent_11_SBZFilterActorDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_SnGFO_Navlinks_C::ExecuteUbergraph_G_SnGFO_Navlinks(int32 EntryPoint)
+void AG_SnGFO_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume12_K2Node_ActorBoundEvent_11_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume12_K2Node_ActorBoundEvent_11_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Navlinks_C", "ExecuteUbergraph_G_SnGFO_Navlinks");
+	Params::G_SnGFO_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume12_K2Node_ActorBoundEvent_11_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
 
-	Params::G_SnGFO_Navlinks_C_ExecuteUbergraph_G_SnGFO_Navlinks Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Identifier = Identifier;
+	Parms.Actor = Actor;
+	Parms.CurrentTotalActors = CurrentTotalActors;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.GarageOpened
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Navlinks_C::GarageOpened()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Navlinks_C", "GarageOpened");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.OnPreplanningAssetsTagsApplied
-// (Event, Public, HasOutParams, BlueprintEvent)
+// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume11_K2Node_ActorBoundEvent_10_SBZFilterActorDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// const struct FGameplayTagContainer&     PreplanningTagContainer                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_SnGFO_Navlinks_C::OnPreplanningAssetsTagsApplied(const struct FGameplayTagContainer& PreplanningTagContainer)
+void AG_SnGFO_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume11_K2Node_ActorBoundEvent_10_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume11_K2Node_ActorBoundEvent_10_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Navlinks_C", "OnPreplanningAssetsTagsApplied");
+	Params::G_SnGFO_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume11_K2Node_ActorBoundEvent_10_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
 
-	Params::G_SnGFO_Navlinks_C_OnPreplanningAssetsTagsApplied Parms{};
-
-	Parms.PreplanningTagContainer = std::move(PreplanningTagContainer);
+	Parms.Identifier = Identifier;
+	Parms.Actor = Actor;
+	Parms.CurrentTotalActors = CurrentTotalActors;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.SpawnCrossing
-// (BlueprintCallable, BlueprintEvent)
+// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume10_K2Node_ActorBoundEvent_9_SBZFilterActorDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_SnGFO_Navlinks_C::SpawnCrossing()
+void AG_SnGFO_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume10_K2Node_ActorBoundEvent_9_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume10_K2Node_ActorBoundEvent_9_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Navlinks_C", "SpawnCrossing");
+	Params::G_SnGFO_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume10_K2Node_ActorBoundEvent_9_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.Identifier = Identifier;
+	Parms.Actor = Actor;
+	Parms.CurrentTotalActors = CurrentTotalActors;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.SpawnGarage
-// (BlueprintCallable, BlueprintEvent)
+// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.BlackScreenStarted
+// (Event, Public, BlueprintEvent)
 
-void AG_SnGFO_Navlinks_C::SpawnGarage()
+void AG_SnGFO_Navlinks_C::BlackScreenStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Navlinks_C", "SpawnGarage");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.SpawnSewer
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Navlinks_C::SpawnSewer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Navlinks_C", "SpawnSewer");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.SpawnSideStreet
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Navlinks_C::SpawnSideStreet()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Navlinks_C", "SpawnSideStreet");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.TruckIsInAlly
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Navlinks_C::TruckIsInAlly()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Navlinks_C", "TruckIsInAlly");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.TruckLoadingAreaGone
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Navlinks_C::TruckLoadingAreaGone()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Navlinks_C", "TruckLoadingAreaGone");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.TruckSideAllyGone
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Navlinks_C::TruckSideAllyGone()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Navlinks_C", "TruckSideAllyGone");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_SnGFO_Navlinks.G_SnGFO_Navlinks_C.TruckStreetGone
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_SnGFO_Navlinks_C::TruckStreetGone()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_SnGFO_Navlinks_C", "TruckStreetGone");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BlackScreenStarted", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -16,6 +16,18 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_MethMeshCode_01.BP_MethMeshCode_01_C.onAllMeshesAdded
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_MethMeshCode_01_C::onAllMeshesAdded()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"onAllMeshesAdded", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function BP_MethMeshCode_01.BP_MethMeshCode_01_C.ExecuteUbergraph_BP_MethMeshCode_01
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -23,30 +35,14 @@ SDK_NAMESPACE_START
 
 void ABP_MethMeshCode_01_C::ExecuteUbergraph_BP_MethMeshCode_01(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MethMeshCode_01_C", "ExecuteUbergraph_BP_MethMeshCode_01");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_MethMeshCode_01_C", "ExecuteUbergraph_BP_MethMeshCode_01", FuncInfo);
 
 	Params::BP_MethMeshCode_01_C_ExecuteUbergraph_BP_MethMeshCode_01 Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_MethMeshCode_01.BP_MethMeshCode_01_C.onAllMeshesAdded
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_MethMeshCode_01_C::onAllMeshesAdded()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_MethMeshCode_01_C", "onAllMeshesAdded");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

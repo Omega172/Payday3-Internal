@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_RFIDTagReaderBlue_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_RFIDTagReaderBlue_C;
 
 SDK_NAMESPACE_END

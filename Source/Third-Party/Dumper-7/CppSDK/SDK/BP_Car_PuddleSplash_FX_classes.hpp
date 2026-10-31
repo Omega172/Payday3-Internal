@@ -27,8 +27,8 @@ public:
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x0340(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void ReceiveActorBeginOverlap(class AActor* OtherActor_ReceiveActorBeginOverlap);
 	void ExecuteUbergraph_BP_Car_PuddleSplash_FX(int32 EntryPoint);
-	void ReceiveActorBeginOverlap(class AActor* OtherActor);
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<ABP_Car_PuddleSplash_FX_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Car_PuddleSplash_FX_C;
 
 SDK_NAMESPACE_END

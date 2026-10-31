@@ -17,56 +17,51 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.UpdateControlReferences
-// 0x0150 (0x0150 - 0x0000)
-struct WBP_CrimebondCollectionsGridScreen_C_UpdateControlReferences final
+// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.BndEvt__WBP_CrimebondBundleGridScreen_BundleTabs_LocalNavbar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_CrimebondCollectionsGridScreen_C_BndEvt__WBP_CrimebondBundleGridScreen_BundleTabs_LocalNavbar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature final
 {
 public:
-	ESBZBundleSecondaryAction                     Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZBundleItemDecorator*                CallFunc_GetSelectedDeco_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0010(0x0010)()
-	ESBZBundleSecondaryAction                     CallFunc_GetSecondaryAction_ReturnValue;           // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x0028(0x0010)()
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x0038(0x0038)()
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_1;     // 0x0070(0x0038)()
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_2;     // 0x00A8(0x0038)()
-	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x00E0(0x0010)(ReferenceParm)
-	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array_1;                          // 0x00F0(0x0010)(ReferenceParm)
-	TDelegate<void(class FName ActionName)>       K2Node_CreateDelegate_OutputDelegate;              // 0x0100(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSBZButtonControlReference>     K2Node_Select_Default;                             // 0x0118(0x0010)(ReferenceParm)
-	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x0128(0x0028)()
+	int32                                         NewIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CrimebondCollectionsGridScreen_C_UpdateControlReferences;
+DUMPER7_ASSERTS_WBP_CrimebondCollectionsGridScreen_C_BndEvt__WBP_CrimebondBundleGridScreen_BundleTabs_LocalNavbar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature;
 
-// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.UpdateAction
+// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.BndEvt__WBP_CrimebondCollectionsGridScreen_PurchaseCrimebond_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_CrimebondCollectionsGridScreen_C_UpdateAction final
+struct WBP_CrimebondCollectionsGridScreen_C_BndEvt__WBP_CrimebondCollectionsGridScreen_PurchaseCrimebond_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	class USBZBundleItemDecorator*                InDecorator;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CrimebondCollectionsGridScreen_C_UpdateAction;
+DUMPER7_ASSERTS_WBP_CrimebondCollectionsGridScreen_C_BndEvt__WBP_CrimebondCollectionsGridScreen_PurchaseCrimebond_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature;
 
-// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.OnGainedStackFocused
-// 0x000C (0x000C - 0x0000)
-struct WBP_CrimebondCollectionsGridScreen_C_OnGainedStackFocused final
+// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.BP_OnBuildTabs
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_CrimebondCollectionsGridScreen_C_BP_OnBuildTabs final
 {
 public:
-	class FName                                   PreviousValue_OnGainedStackFocused;                // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FName>                           BundleNames;                                       // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class FName                                   FocusedBundle;                                     // 0x0010(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CrimebondCollectionsGridScreen_C_OnGainedStackFocused;
+DUMPER7_ASSERTS_WBP_CrimebondCollectionsGridScreen_C_BP_OnBuildTabs;
 
-// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.OnControlReferencedPressed
-// 0x000C (0x000C - 0x0000)
-struct WBP_CrimebondCollectionsGridScreen_C_OnControlReferencedPressed final
+// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.BP_OnBundleApplied
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CrimebondCollectionsGridScreen_C_BP_OnBundleApplied final
 {
 public:
-	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class USBZItemBundleData*               InBundleData;                                      // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CrimebondCollectionsGridScreen_C_OnControlReferencedPressed;
+DUMPER7_ASSERTS_WBP_CrimebondCollectionsGridScreen_C_BP_OnBundleApplied;
+
+// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.BP_OnDecoSelected
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CrimebondCollectionsGridScreen_C_BP_OnDecoSelected final
+{
+public:
+	class USBZBundleItemDecorator*                Deco;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CrimebondCollectionsGridScreen_C_BP_OnDecoSelected;
 
 // Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.ExecuteUbergraph_WBP_CrimebondCollectionsGridScreen
 // 0x0230 (0x0230 - 0x0000)
@@ -165,51 +160,56 @@ public:
 };
 DUMPER7_ASSERTS_WBP_CrimebondCollectionsGridScreen_C_ExecuteUbergraph_WBP_CrimebondCollectionsGridScreen;
 
-// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.BP_OnDecoSelected
+// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.OnControlReferencedPressed
+// 0x000C (0x000C - 0x0000)
+struct WBP_CrimebondCollectionsGridScreen_C_OnControlReferencedPressed final
+{
+public:
+	class FName                                   ActionName;                                        // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CrimebondCollectionsGridScreen_C_OnControlReferencedPressed;
+
+// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.OnGainedStackFocused
+// 0x000C (0x000C - 0x0000)
+struct WBP_CrimebondCollectionsGridScreen_C_OnGainedStackFocused final
+{
+public:
+	class FName                                   PreviousValue;                                     // 0x0000(0x000C)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CrimebondCollectionsGridScreen_C_OnGainedStackFocused;
+
+// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.UpdateAction
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_CrimebondCollectionsGridScreen_C_BP_OnDecoSelected final
+struct WBP_CrimebondCollectionsGridScreen_C_UpdateAction final
 {
 public:
-	class USBZBundleItemDecorator*                Deco_BP_OnDecoSelected;                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZBundleItemDecorator*                InDecorator;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CrimebondCollectionsGridScreen_C_BP_OnDecoSelected;
+DUMPER7_ASSERTS_WBP_CrimebondCollectionsGridScreen_C_UpdateAction;
 
-// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.BP_OnBundleApplied
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CrimebondCollectionsGridScreen_C_BP_OnBundleApplied final
+// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.UpdateControlReferences
+// 0x0150 (0x0150 - 0x0000)
+struct WBP_CrimebondCollectionsGridScreen_C_UpdateControlReferences final
 {
 public:
-	const class USBZItemBundleData*               InBundleData_BP_OnBundleApplied;                   // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	ESBZBundleSecondaryAction                     Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZBundleItemDecorator*                CallFunc_GetSelectedDeco_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0010(0x0010)()
+	ESBZBundleSecondaryAction                     CallFunc_GetSecondaryAction_ReturnValue;           // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x0028(0x0010)()
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x0038(0x0038)()
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_1;     // 0x0070(0x0038)()
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_2;     // 0x00A8(0x0038)()
+	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x00E0(0x0010)(ReferenceParm)
+	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array_1;                          // 0x00F0(0x0010)(ReferenceParm)
+	TDelegate<void(class FName ActionName)>       K2Node_CreateDelegate_OutputDelegate;              // 0x0100(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_114[0x4];                                      // 0x0114(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSBZButtonControlReference>     K2Node_Select_Default;                             // 0x0118(0x0010)(ReferenceParm)
+	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x0128(0x0028)()
 };
-DUMPER7_ASSERTS_WBP_CrimebondCollectionsGridScreen_C_BP_OnBundleApplied;
-
-// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.BP_OnBuildTabs
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_CrimebondCollectionsGridScreen_C_BP_OnBuildTabs final
-{
-public:
-	TArray<class FName>                           BundleNames_BP_OnBuildTabs;                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	class FName                                   FocusedBundle_BP_OnBuildTabs;                      // 0x0010(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CrimebondCollectionsGridScreen_C_BP_OnBuildTabs;
-
-// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.BndEvt__WBP_CrimebondCollectionsGridScreen_PurchaseCrimebond_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CrimebondCollectionsGridScreen_C_BndEvt__WBP_CrimebondCollectionsGridScreen_PurchaseCrimebond_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature final
-{
-public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CrimebondCollectionsGridScreen_C_BndEvt__WBP_CrimebondCollectionsGridScreen_PurchaseCrimebond_Button_K2Node_ComponentBoundEvent_3_OnMenuButtonSelected__DelegateSignature;
-
-// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.BndEvt__WBP_CrimebondBundleGridScreen_BundleTabs_LocalNavbar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_CrimebondCollectionsGridScreen_C_BndEvt__WBP_CrimebondBundleGridScreen_BundleTabs_LocalNavbar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature final
-{
-public:
-	int32                                         NewIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CrimebondCollectionsGridScreen_C_BndEvt__WBP_CrimebondBundleGridScreen_BundleTabs_LocalNavbar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature;
+DUMPER7_ASSERTS_WBP_CrimebondCollectionsGridScreen_C_UpdateControlReferences;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -31,13 +31,13 @@ public:
 	TMulticastInlineDelegate<void()>              Event_SleepCanister_Placed;                        // 0x03A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__BP_SleepingGasCanister_Location_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_SleepingGasCanister_Location(int32 EntryPoint);
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void Set_Interaction_OFF();
-	void Set_Interaction_ON();
-	void setMeshVIsibilityAndCollision(class UPrimitiveComponent* Target, bool visible);
 	void UserConstructionScript();
+	void setMeshVIsibilityAndCollision(class UPrimitiveComponent* Target, bool visible);
+	void Set_Interaction_ON();
+	void Set_Interaction_OFF();
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_SleepingGasCanister_Location(int32 EntryPoint);
+	void BndEvt__BP_SleepingGasCanister_Location_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -53,5 +53,6 @@ public:
 		return GetDefaultObjImpl<ABP_SleepingGasCanister_Location_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SleepingGasCanister_Location_C;
 
 SDK_NAMESPACE_END

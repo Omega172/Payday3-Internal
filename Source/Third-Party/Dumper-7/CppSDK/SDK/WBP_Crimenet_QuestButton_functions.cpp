@@ -16,45 +16,93 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_Crimenet_QuestButton.WBP_Crimenet_QuestButton_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_Crimenet_QuestButton.WBP_Crimenet_QuestButton_C.BndEvt__WBP_Crimenet_QuestButton_ActionButton_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_Crimenet_QuestButton_C::OnInitialized()
+void UWBP_Crimenet_QuestButton_C::BndEvt__WBP_Crimenet_QuestButton_ActionButton_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_Crimenet_QuestButton_ActionButton_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Crimenet_QuestButton.WBP_Crimenet_QuestButton_C.InitializeQuest
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FSBZUIQuestData&           InQuest                                                (BlueprintVisible, BlueprintReadOnly, Parm)
+// Function WBP_Crimenet_QuestButton.WBP_Crimenet_QuestButton_C.BndEvt__WBP_Crimenet_QuestButton_ActionButton_K2Node_ComponentBoundEvent_3_SBZOnActionChanged__DelegateSignature
+// (BlueprintEvent)
 
-void UWBP_Crimenet_QuestButton_C::InitializeQuest(const struct FSBZUIQuestData& InQuest)
+void UWBP_Crimenet_QuestButton_C::BndEvt__WBP_Crimenet_QuestButton_ActionButton_K2Node_ComponentBoundEvent_3_SBZOnActionChanged__DelegateSignature()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeQuest", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_Crimenet_QuestButton_ActionButton_K2Node_ComponentBoundEvent_3_SBZOnActionChanged__DelegateSignature", FnName));
 
-	Params::WBP_Crimenet_QuestButton_C_InitializeQuest Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.InQuest = std::move(InQuest);
+
+// Function WBP_Crimenet_QuestButton.WBP_Crimenet_QuestButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Crimenet_QuestButton_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+
+	Params::WBP_Crimenet_QuestButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Crimenet_QuestButton.WBP_Crimenet_QuestButton_C.InitializeButton
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function WBP_Crimenet_QuestButton.WBP_Crimenet_QuestButton_C.ButtonSelected
+// (Event, Protected, BlueprintEvent)
 
-void UWBP_Crimenet_QuestButton_C::InitializeButton()
+void UWBP_Crimenet_QuestButton_C::ButtonSelected()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeButton", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonSelected", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_Crimenet_QuestButton.WBP_Crimenet_QuestButton_C.EnableInput
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    InEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Crimenet_QuestButton_C::EnableInput(bool InEnable)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EnableInput", FnName));
+
+	Params::WBP_Crimenet_QuestButton_C_EnableInput Parms{};
+
+	Parms.InEnable = InEnable;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_Crimenet_QuestButton.WBP_Crimenet_QuestButton_C.ExecuteUbergraph_WBP_Crimenet_QuestButton
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_Crimenet_QuestButton_C::ExecuteUbergraph_WBP_Crimenet_QuestButton(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_Crimenet_QuestButton_C", "ExecuteUbergraph_WBP_Crimenet_QuestButton", FuncInfo);
+
+	Params::WBP_Crimenet_QuestButton_C_ExecuteUbergraph_WBP_Crimenet_QuestButton Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -80,91 +128,43 @@ void UWBP_Crimenet_QuestButton_C::GetChallengeDescriptionText(const struct FSBZU
 }
 
 
-// Function WBP_Crimenet_QuestButton.WBP_Crimenet_QuestButton_C.ExecuteUbergraph_WBP_Crimenet_QuestButton
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function WBP_Crimenet_QuestButton.WBP_Crimenet_QuestButton_C.InitializeButton
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void UWBP_Crimenet_QuestButton_C::ExecuteUbergraph_WBP_Crimenet_QuestButton(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_Crimenet_QuestButton_C", "ExecuteUbergraph_WBP_Crimenet_QuestButton", FuncInfo);
-
-	Params::WBP_Crimenet_QuestButton_C_ExecuteUbergraph_WBP_Crimenet_QuestButton Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Crimenet_QuestButton.WBP_Crimenet_QuestButton_C.EnableInput
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    InEnable                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_Crimenet_QuestButton_C::EnableInput(bool InEnable)
+void UWBP_Crimenet_QuestButton_C::InitializeButton()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EnableInput", FnName));
-
-	Params::WBP_Crimenet_QuestButton_C_EnableInput Parms{};
-
-	Parms.InEnable = InEnable;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_Crimenet_QuestButton.WBP_Crimenet_QuestButton_C.ButtonSelected
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_Crimenet_QuestButton_C::ButtonSelected()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonSelected", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeButton", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_Crimenet_QuestButton.WBP_Crimenet_QuestButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_Crimenet_QuestButton.WBP_Crimenet_QuestButton_C.InitializeQuest
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                                    bInHasFocus_ButtonFocusedChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZUIQuestData&           InQuest                                                (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_Crimenet_QuestButton_C::ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged)
+void UWBP_Crimenet_QuestButton_C::InitializeQuest(const struct FSBZUIQuestData& InQuest)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"InitializeQuest", FnName));
 
-	Params::WBP_Crimenet_QuestButton_C_ButtonFocusedChanged Parms{};
+	Params::WBP_Crimenet_QuestButton_C_InitializeQuest Parms{};
 
-	Parms.bInHasFocus_ButtonFocusedChanged = bInHasFocus_ButtonFocusedChanged;
+	Parms.InQuest = std::move(InQuest);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_Crimenet_QuestButton.WBP_Crimenet_QuestButton_C.BndEvt__WBP_Crimenet_QuestButton_ActionButton_K2Node_ComponentBoundEvent_3_SBZOnActionChanged__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_Crimenet_QuestButton.WBP_Crimenet_QuestButton_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_Crimenet_QuestButton_C::BndEvt__WBP_Crimenet_QuestButton_ActionButton_K2Node_ComponentBoundEvent_3_SBZOnActionChanged__DelegateSignature()
+void UWBP_Crimenet_QuestButton_C::OnInitialized()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_Crimenet_QuestButton_ActionButton_K2Node_ComponentBoundEvent_3_SBZOnActionChanged__DelegateSignature", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_Crimenet_QuestButton.WBP_Crimenet_QuestButton_C.BndEvt__WBP_Crimenet_QuestButton_ActionButton_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_Crimenet_QuestButton_C::BndEvt__WBP_Crimenet_QuestButton_ActionButton_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_Crimenet_QuestButton_ActionButton_K2Node_ComponentBoundEvent_2_OnButtonClicked__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

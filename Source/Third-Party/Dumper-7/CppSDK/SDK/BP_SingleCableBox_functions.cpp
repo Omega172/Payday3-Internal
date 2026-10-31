@@ -16,135 +16,133 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_SingleCableBox.BP_SingleCableBox_C.BndEvt__Interactable_K2Node_ComponentBoundEvent_10_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_SingleCableBox.BP_SingleCableBox_C.WrongWireCut
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_SingleCableBox_C::BndEvt__Interactable_K2Node_ComponentBoundEvent_10_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_SingleCableBox_C::WrongWireCut()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"WrongWireCut", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SingleCableBox_C", "BndEvt__Interactable_K2Node_ComponentBoundEvent_10_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_SingleCableBox_C_BndEvt__Interactable_K2Node_ComponentBoundEvent_10_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_SingleCableBox.BP_SingleCableBox_C.BndEvt__SBZInteractable_Cable_1_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SingleCableBox_C::BndEvt__SBZInteractable_Cable_1_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SingleCableBox_C", "BndEvt__SBZInteractable_Cable_1_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_SingleCableBox_C_BndEvt__SBZInteractable_Cable_1_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SingleCableBox.BP_SingleCableBox_C.BndEvt__SBZInteractable_Cable_2_K2Node_ComponentBoundEvent_7_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SingleCableBox_C::BndEvt__SBZInteractable_Cable_2_K2Node_ComponentBoundEvent_7_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SingleCableBox_C", "BndEvt__SBZInteractable_Cable_2_K2Node_ComponentBoundEvent_7_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_SingleCableBox_C_BndEvt__SBZInteractable_Cable_2_K2Node_ComponentBoundEvent_7_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SingleCableBox.BP_SingleCableBox_C.BndEvt__SBZInteractable_Cable_3_K2Node_ComponentBoundEvent_8_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SingleCableBox_C::BndEvt__SBZInteractable_Cable_3_K2Node_ComponentBoundEvent_8_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SingleCableBox_C", "BndEvt__SBZInteractable_Cable_3_K2Node_ComponentBoundEvent_8_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_SingleCableBox_C_BndEvt__SBZInteractable_Cable_3_K2Node_ComponentBoundEvent_8_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SingleCableBox.BP_SingleCableBox_C.BndEvt__SBZInteractable_Cable_4_K2Node_ComponentBoundEvent_9_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SingleCableBox_C::BndEvt__SBZInteractable_Cable_4_K2Node_ComponentBoundEvent_9_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SingleCableBox_C", "BndEvt__SBZInteractable_Cable_4_K2Node_ComponentBoundEvent_9_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_SingleCableBox_C_BndEvt__SBZInteractable_Cable_4_K2Node_ComponentBoundEvent_9_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SingleCableBox.BP_SingleCableBox_C.ClientGrayOut
+// Function BP_SingleCableBox.BP_SingleCableBox_C.Wrong
 // (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
 
-void ABP_SingleCableBox_C::ClientGrayOut()
+void ABP_SingleCableBox_C::Wrong()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Wrong", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SingleCableBox_C", "ClientGrayOut");
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SingleCableBox.BP_SingleCableBox_C.SetCorrectColor
+// (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
+
+void ABP_SingleCableBox_C::SetCorrectColor()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetCorrectColor", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SingleCableBox.BP_SingleCableBox_C.RigthWireCut
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_SingleCableBox_C::RigthWireCut()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RigthWireCut", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SingleCableBox.BP_SingleCableBox_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_SingleCableBox_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SingleCableBox.BP_SingleCableBox_C.Randomize
+// (Net, NetServer, BlueprintCallable, BlueprintEvent)
+
+void ABP_SingleCableBox_C::Randomize()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Randomize", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SingleCableBox.BP_SingleCableBox_C.OpenDoor__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_SingleCableBox_C::OpenDoor__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OpenDoor__UpdateFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SingleCableBox.BP_SingleCableBox_C.OpenDoor__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_SingleCableBox_C::OpenDoor__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OpenDoor__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SingleCableBox.BP_SingleCableBox_C.OnRep_Text
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_SingleCableBox_C::OnRep_Text()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRep_Text", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SingleCableBox.BP_SingleCableBox_C.OnRep_RandomInt
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_SingleCableBox_C::OnRep_RandomInt()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRep_RandomInt", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SingleCableBox.BP_SingleCableBox_C.NewFunction_0
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_SingleCableBox_C::NewFunction_0()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"NewFunction_0", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -157,10 +155,8 @@ void ABP_SingleCableBox_C::ClientGrayOut()
 
 void ABP_SingleCableBox_C::ExecuteUbergraph_BP_SingleCableBox(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SingleCableBox_C", "ExecuteUbergraph_BP_SingleCableBox");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_SingleCableBox_C", "ExecuteUbergraph_BP_SingleCableBox", FuncInfo);
 
 	Params::BP_SingleCableBox_C_ExecuteUbergraph_BP_SingleCableBox Parms{};
 
@@ -170,157 +166,125 @@ void ABP_SingleCableBox_C::ExecuteUbergraph_BP_SingleCableBox(int32 EntryPoint)
 }
 
 
-// Function BP_SingleCableBox.BP_SingleCableBox_C.NewFunction_0
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_SingleCableBox_C::NewFunction_0()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SingleCableBox_C", "NewFunction_0");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SingleCableBox.BP_SingleCableBox_C.OnRep_RandomInt
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_SingleCableBox_C::OnRep_RandomInt()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SingleCableBox_C", "OnRep_RandomInt");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SingleCableBox.BP_SingleCableBox_C.OnRep_Text
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_SingleCableBox_C::OnRep_Text()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SingleCableBox_C", "OnRep_Text");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SingleCableBox.BP_SingleCableBox_C.OpenDoor__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_SingleCableBox_C::OpenDoor__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SingleCableBox_C", "OpenDoor__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SingleCableBox.BP_SingleCableBox_C.OpenDoor__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_SingleCableBox_C::OpenDoor__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SingleCableBox_C", "OpenDoor__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SingleCableBox.BP_SingleCableBox_C.Randomize
-// (Net, NetServer, BlueprintCallable, BlueprintEvent)
-
-void ABP_SingleCableBox_C::Randomize()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SingleCableBox_C", "Randomize");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SingleCableBox.BP_SingleCableBox_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_SingleCableBox_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SingleCableBox_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SingleCableBox.BP_SingleCableBox_C.RigthWireCut
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_SingleCableBox_C::RigthWireCut()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SingleCableBox_C", "RigthWireCut");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SingleCableBox.BP_SingleCableBox_C.SetCorrectColor
+// Function BP_SingleCableBox.BP_SingleCableBox_C.ClientGrayOut
 // (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
 
-void ABP_SingleCableBox_C::SetCorrectColor()
+void ABP_SingleCableBox_C::ClientGrayOut()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SingleCableBox_C", "SetCorrectColor");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ClientGrayOut", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_SingleCableBox.BP_SingleCableBox_C.Wrong
-// (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
+// Function BP_SingleCableBox.BP_SingleCableBox_C.BndEvt__SBZInteractable_Cable_4_K2Node_ComponentBoundEvent_9_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SingleCableBox_C::Wrong()
+void ABP_SingleCableBox_C::BndEvt__SBZInteractable_Cable_4_K2Node_ComponentBoundEvent_9_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__SBZInteractable_Cable_4_K2Node_ComponentBoundEvent_9_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SingleCableBox_C", "Wrong");
+	Params::BP_SingleCableBox_C_BndEvt__SBZInteractable_Cable_4_K2Node_ComponentBoundEvent_9_SBZOnInteraction__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_SingleCableBox.BP_SingleCableBox_C.WrongWireCut
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_SingleCableBox.BP_SingleCableBox_C.BndEvt__SBZInteractable_Cable_3_K2Node_ComponentBoundEvent_8_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SingleCableBox_C::WrongWireCut()
+void ABP_SingleCableBox_C::BndEvt__SBZInteractable_Cable_3_K2Node_ComponentBoundEvent_8_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__SBZInteractable_Cable_3_K2Node_ComponentBoundEvent_8_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SingleCableBox_C", "WrongWireCut");
+	Params::BP_SingleCableBox_C_BndEvt__SBZInteractable_Cable_3_K2Node_ComponentBoundEvent_8_SBZOnInteraction__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SingleCableBox.BP_SingleCableBox_C.BndEvt__SBZInteractable_Cable_2_K2Node_ComponentBoundEvent_7_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SingleCableBox_C::BndEvt__SBZInteractable_Cable_2_K2Node_ComponentBoundEvent_7_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__SBZInteractable_Cable_2_K2Node_ComponentBoundEvent_7_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_SingleCableBox_C_BndEvt__SBZInteractable_Cable_2_K2Node_ComponentBoundEvent_7_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SingleCableBox.BP_SingleCableBox_C.BndEvt__SBZInteractable_Cable_1_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SingleCableBox_C::BndEvt__SBZInteractable_Cable_1_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__SBZInteractable_Cable_1_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_SingleCableBox_C_BndEvt__SBZInteractable_Cable_1_K2Node_ComponentBoundEvent_6_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SingleCableBox.BP_SingleCableBox_C.BndEvt__Interactable_K2Node_ComponentBoundEvent_10_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SingleCableBox_C::BndEvt__Interactable_K2Node_ComponentBoundEvent_10_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__Interactable_K2Node_ComponentBoundEvent_10_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_SingleCableBox_C_BndEvt__Interactable_K2Node_ComponentBoundEvent_10_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

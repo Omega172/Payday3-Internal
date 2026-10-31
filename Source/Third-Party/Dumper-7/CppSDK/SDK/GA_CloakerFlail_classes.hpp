@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGA_CloakerFlail_C>();
 	}
 };
+DUMPER7_ASSERTS_UGA_CloakerFlail_C;
 
 SDK_NAMESPACE_END

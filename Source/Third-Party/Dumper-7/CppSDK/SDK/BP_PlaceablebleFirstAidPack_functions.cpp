@@ -16,45 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_PlaceablebleFirstAidPack.BP_PlaceablebleFirstAidPack_C.ExecuteUbergraph_BP_PlaceablebleFirstAidPack
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_PlaceablebleFirstAidPack_C::ExecuteUbergraph_BP_PlaceablebleFirstAidPack(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlaceablebleFirstAidPack_C", "ExecuteUbergraph_BP_PlaceablebleFirstAidPack");
-
-	Params::BP_PlaceablebleFirstAidPack_C_ExecuteUbergraph_BP_PlaceablebleFirstAidPack Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_PlaceablebleFirstAidPack.BP_PlaceablebleFirstAidPack_C.OnChargesChanged
+// Function BP_PlaceablebleFirstAidPack.BP_PlaceablebleFirstAidPack_C.ReceiveBeginPlay
 // (Event, Protected, BlueprintEvent)
-// Parameters:
-// float                                   ChargesChangeTo                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PlaceablebleFirstAidPack_C::OnChargesChanged(float ChargesChangeTo, bool bDoCosmetics)
+void ABP_PlaceablebleFirstAidPack_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlaceablebleFirstAidPack_C", "OnChargesChanged");
-
-	Params::BP_PlaceablebleFirstAidPack_C_OnChargesChanged Parms{};
-
-	Parms.ChargesChangeTo = ChargesChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -63,26 +33,48 @@ void ABP_PlaceablebleFirstAidPack_C::OnChargesChanged(float ChargesChangeTo, boo
 
 void ABP_PlaceablebleFirstAidPack_C::OnThrown()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlaceablebleFirstAidPack_C", "OnThrown");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnThrown", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_PlaceablebleFirstAidPack.BP_PlaceablebleFirstAidPack_C.ReceiveBeginPlay
+// Function BP_PlaceablebleFirstAidPack.BP_PlaceablebleFirstAidPack_C.OnChargesChanged
 // (Event, Protected, BlueprintEvent)
+// Parameters:
+// float                                   ChargesChangeTo_OnChargesChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnChargesChanged                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_PlaceablebleFirstAidPack_C::ReceiveBeginPlay()
+void ABP_PlaceablebleFirstAidPack_C::OnChargesChanged(float ChargesChangeTo_OnChargesChanged, bool bDoCosmetics_OnChargesChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnChargesChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_PlaceablebleFirstAidPack_C", "ReceiveBeginPlay");
+	Params::BP_PlaceablebleFirstAidPack_C_OnChargesChanged Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.ChargesChangeTo_OnChargesChanged = ChargesChangeTo_OnChargesChanged;
+	Parms.bDoCosmetics_OnChargesChanged = bDoCosmetics_OnChargesChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_PlaceablebleFirstAidPack.BP_PlaceablebleFirstAidPack_C.ExecuteUbergraph_BP_PlaceablebleFirstAidPack
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_PlaceablebleFirstAidPack_C::ExecuteUbergraph_BP_PlaceablebleFirstAidPack(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_PlaceablebleFirstAidPack_C", "ExecuteUbergraph_BP_PlaceablebleFirstAidPack", FuncInfo);
+
+	Params::BP_PlaceablebleFirstAidPack_C_ExecuteUbergraph_BP_PlaceablebleFirstAidPack Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

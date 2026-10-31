@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGA_AI_Slide_C>();
 	}
 };
+DUMPER7_ASSERTS_UGA_AI_Slide_C;
 
 SDK_NAMESPACE_END

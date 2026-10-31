@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_TrialShop_MainMenuButton.WBP_TrialShop_MainMenuButton_C.ButtonFocusedChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bInHasFocus                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_TrialShop_MainMenuButton_C::ButtonFocusedChanged(bool bInHasFocus)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
+
+	Params::WBP_TrialShop_MainMenuButton_C_ButtonFocusedChanged Parms{};
+
+	Parms.bInHasFocus = bInHasFocus;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_TrialShop_MainMenuButton.WBP_TrialShop_MainMenuButton_C.ExecuteUbergraph_WBP_TrialShop_MainMenuButton
 // (Final, UbergraphFunction)
 // Parameters:
@@ -29,24 +47,6 @@ void UWBP_TrialShop_MainMenuButton_C::ExecuteUbergraph_WBP_TrialShop_MainMenuBut
 	Params::WBP_TrialShop_MainMenuButton_C_ExecuteUbergraph_WBP_TrialShop_MainMenuButton Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_TrialShop_MainMenuButton.WBP_TrialShop_MainMenuButton_C.ButtonFocusedChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bInHasFocus_ButtonFocusedChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_TrialShop_MainMenuButton_C::ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ButtonFocusedChanged", FnName));
-
-	Params::WBP_TrialShop_MainMenuButton_C_ButtonFocusedChanged Parms{};
-
-	Parms.bInHasFocus_ButtonFocusedChanged = bInHasFocus_ButtonFocusedChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

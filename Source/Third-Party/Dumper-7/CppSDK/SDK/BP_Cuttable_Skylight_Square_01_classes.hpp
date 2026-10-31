@@ -31,15 +31,15 @@ public:
 	bool                                          HideCuttableComponents;                            // 0x0410(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_Cuttable_Glass_Pane_BoxComponent_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
-	void BndEvt__BP_Cuttable_Glass_Pane_BoxComponent_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
-	void ExecuteUbergraph_BP_Cuttable_Skylight_Square_01(int32 EntryPoint);
-	class USBZCuttableComponent* GetCuttableComponent();
-	class USBZCuttableSplineComponent* GetCuttableSplineComponent();
-	void GetMaterialBillboardComponent();
-	class UStaticMeshComponent* GetMeltingMesh();
-	void PoliceOpenSkylights();
 	void UserConstructionScript();
+	void PoliceOpenSkylights();
+	class UStaticMeshComponent* GetMeltingMesh();
+	void GetMaterialBillboardComponent();
+	class USBZCuttableSplineComponent* GetCuttableSplineComponent();
+	class USBZCuttableComponent* GetCuttableComponent();
+	void ExecuteUbergraph_BP_Cuttable_Skylight_Square_01(int32 EntryPoint);
+	void BndEvt__BP_Cuttable_Glass_Pane_BoxComponent_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+	void BndEvt__BP_Cuttable_Glass_Pane_BoxComponent_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const struct FHitResult& SweepResult);
 
 public:
 	static class UClass* StaticClass()
@@ -55,5 +55,6 @@ public:
 		return GetDefaultObjImpl<ABP_Cuttable_Skylight_Square_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Cuttable_Skylight_Square_01_C;
 
 SDK_NAMESPACE_END

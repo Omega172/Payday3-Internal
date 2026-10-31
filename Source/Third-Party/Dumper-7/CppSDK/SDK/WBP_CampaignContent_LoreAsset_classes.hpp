@@ -31,10 +31,10 @@ public:
 	class UWBP_ItemDescriptionHeader_INvert_C*    WBP_ItemDescriptionHeader_INvert;                  // 0x0320(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void SetEntryState(ESBZCampaignEntryState NewState);
-	void SetCampaignData(const class USBZCampaignBaseEntryData* Entry);
-	ESBZCampaignEntryState GetEntryState();
 	void ExecuteUbergraph_WBP_CampaignContent_LoreAsset(int32 EntryPoint);
+	ESBZCampaignEntryState GetEntryState();
+	void SetCampaignData(const class USBZCampaignBaseEntryData* Entry);
+	void SetEntryState(ESBZCampaignEntryState NewState);
 
 public:
 	static class UClass* StaticClass()

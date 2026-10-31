@@ -15,29 +15,25 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_STO_InstantLoot_HockeyStatue.BP_STO_InstantLoot_HockeyStatue_C.Set_Interaction_Disabled
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_STO_InstantLoot_HockeyStatue_C::Set_Interaction_Disabled()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_InstantLoot_HockeyStatue_C", "Set_Interaction_Disabled");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_STO_InstantLoot_HockeyStatue.BP_STO_InstantLoot_HockeyStatue_C.Set_Interaction_Enabled
 // (Public, BlueprintCallable, BlueprintEvent)
 
 void ABP_STO_InstantLoot_HockeyStatue_C::Set_Interaction_Enabled()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set_Interaction_Enabled", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_STO_InstantLoot_HockeyStatue_C", "Set_Interaction_Enabled");
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_STO_InstantLoot_HockeyStatue.BP_STO_InstantLoot_HockeyStatue_C.Set_Interaction_Disabled
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_STO_InstantLoot_HockeyStatue_C::Set_Interaction_Disabled()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set_Interaction_Disabled", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

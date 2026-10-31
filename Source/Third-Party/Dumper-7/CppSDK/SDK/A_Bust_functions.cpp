@@ -16,6 +16,18 @@
 
 SDK_NAMESPACE_START
 
+// Function A_Bust.A_Bust_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AA_Bust_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function A_Bust.A_Bust_C.ExecuteUbergraph_A_Bust
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,30 +35,14 @@ SDK_NAMESPACE_START
 
 void AA_Bust_C::ExecuteUbergraph_A_Bust(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Bust_C", "ExecuteUbergraph_A_Bust");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "A_Bust_C", "ExecuteUbergraph_A_Bust", FuncInfo);
 
 	Params::A_Bust_C_ExecuteUbergraph_A_Bust Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function A_Bust.A_Bust_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AA_Bust_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_Bust_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

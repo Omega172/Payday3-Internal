@@ -49,8 +49,8 @@ public:
 	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x0D28(0x0030)()
 
 public:
-	void AnimGraph(struct FPoseLink* AnimGraph_0);
-	void FullBodyAction(const struct FPoseLink& InPose, struct FPoseLink* FullBodyAction_0);
+	void FullBodyAction(const struct FPoseLink& InPose, struct FPoseLink* FullBodyAction);
+	void AnimGraph(struct FPoseLink* AnimGraph);
 
 public:
 	static class UClass* StaticClass()
@@ -66,5 +66,6 @@ public:
 		return GetDefaultObjImpl<UABP_AICivilianLinkedAnimation_C>();
 	}
 };
+DUMPER7_ASSERTS_UABP_AICivilianLinkedAnimation_C;
 
 SDK_NAMESPACE_END

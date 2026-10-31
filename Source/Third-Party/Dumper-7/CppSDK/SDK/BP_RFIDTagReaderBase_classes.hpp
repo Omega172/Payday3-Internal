@@ -33,14 +33,14 @@ public:
 	class UMaterialInterface*                     material;                                          // 0x0408(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_KeycardReaderBase_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent_0, bool bInNewState);
-	void BP_OnStateChanged(ESBZModuleActorState NewState, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_RFIDTagReaderBase(int32 EntryPoint);
-	void ReceiveBeginPlay();
-	void SetPrimitiveAndVisability(class UPrimitiveComponent* StaticMesh_0, double Value);
-	void Timeline_0__FinishedFunc();
-	void Timeline_0__UpdateFunc();
 	void UserConstructionScript();
+	void Timeline_0__UpdateFunc();
+	void Timeline_0__FinishedFunc();
+	void SetPrimitiveAndVisability(class UPrimitiveComponent* StaticMesh_0, double Value);
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_RFIDTagReaderBase(int32 EntryPoint);
+	void BP_OnStateChanged(ESBZModuleActorState NewState, bool bDoCosmetics);
+	void BndEvt__BP_KeycardReaderBase_InteractableComponent_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent_0, bool bInNewState);
 
 public:
 	static class UClass* StaticClass()
@@ -56,5 +56,6 @@ public:
 		return GetDefaultObjImpl<ABP_RFIDTagReaderBase_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_RFIDTagReaderBase_C;
 
 SDK_NAMESPACE_END

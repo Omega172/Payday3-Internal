@@ -27,9 +27,9 @@ public:
 	class ASBZDestroyGroup*                       SBZDestroyGroup_EastYardContainerLights_ExecuteUbergraph_L_Box_Lighting_RefProperty; // 0x03E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_L_Box_Lighting(int32 EntryPoint);
-	void RemoveWarehouseContainerLights();
 	void RemoveYardContainerLights();
+	void RemoveWarehouseContainerLights();
+	void ExecuteUbergraph_L_Box_Lighting(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<AL_Box_Lighting_C>();
 	}
 };
+DUMPER7_ASSERTS_AL_Box_Lighting_C;
 
 SDK_NAMESPACE_END

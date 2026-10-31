@@ -16,25 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Throwable_FragGrenade_Cluster.BP_Throwable_FragGrenade_Cluster_C.BndEvt__BP_Throwable_FragGrenade_Cluster_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FHitResult&                ImpactResult                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// const struct FVector&                   ImpactVelocity                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Throwable_FragGrenade_Cluster.BP_Throwable_FragGrenade_Cluster_C.OnThrow
+// (Event, Protected, BlueprintEvent)
 
-void ABP_Throwable_FragGrenade_Cluster_C::BndEvt__BP_Throwable_FragGrenade_Cluster_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity)
+void ABP_Throwable_FragGrenade_Cluster_C::OnThrow()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnThrow", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_FragGrenade_Cluster_C", "BndEvt__BP_Throwable_FragGrenade_Cluster_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature");
-
-	Params::BP_Throwable_FragGrenade_Cluster_C_BndEvt__BP_Throwable_FragGrenade_Cluster_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature Parms{};
-
-	Parms.ImpactResult = std::move(ImpactResult);
-	Parms.ImpactVelocity = std::move(ImpactVelocity);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -45,10 +35,8 @@ void ABP_Throwable_FragGrenade_Cluster_C::BndEvt__BP_Throwable_FragGrenade_Clust
 
 void ABP_Throwable_FragGrenade_Cluster_C::ExecuteUbergraph_BP_Throwable_FragGrenade_Cluster(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_FragGrenade_Cluster_C", "ExecuteUbergraph_BP_Throwable_FragGrenade_Cluster");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Throwable_FragGrenade_Cluster_C", "ExecuteUbergraph_BP_Throwable_FragGrenade_Cluster", FuncInfo);
 
 	Params::BP_Throwable_FragGrenade_Cluster_C_ExecuteUbergraph_BP_Throwable_FragGrenade_Cluster Parms{};
 
@@ -58,17 +46,23 @@ void ABP_Throwable_FragGrenade_Cluster_C::ExecuteUbergraph_BP_Throwable_FragGren
 }
 
 
-// Function BP_Throwable_FragGrenade_Cluster.BP_Throwable_FragGrenade_Cluster_C.OnThrow
-// (Event, Protected, BlueprintEvent)
+// Function BP_Throwable_FragGrenade_Cluster.BP_Throwable_FragGrenade_Cluster_C.BndEvt__BP_Throwable_FragGrenade_Cluster_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FHitResult&                ImpactResult                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FVector&                   ImpactVelocity                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Throwable_FragGrenade_Cluster_C::OnThrow()
+void ABP_Throwable_FragGrenade_Cluster_C::BndEvt__BP_Throwable_FragGrenade_Cluster_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Throwable_FragGrenade_Cluster_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_FragGrenade_Cluster_C", "OnThrow");
+	Params::BP_Throwable_FragGrenade_Cluster_C_BndEvt__BP_Throwable_FragGrenade_Cluster_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.ImpactResult = std::move(ImpactResult);
+	Parms.ImpactVelocity = std::move(ImpactVelocity);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

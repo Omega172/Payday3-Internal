@@ -17,6 +17,33 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_CampaignContent_LoreAsset_TextLog.WBP_CampaignContent_LoreAsset_TextLog_C.SetEntryState
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CampaignContent_LoreAsset_TextLog_C_SetEntryState final
+{
+public:
+	ESBZCampaignEntryState                        NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CampaignContent_LoreAsset_TextLog_C_SetEntryState;
+
+// Function WBP_CampaignContent_LoreAsset_TextLog.WBP_CampaignContent_LoreAsset_TextLog_C.SetCampaignData
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignContent_LoreAsset_TextLog_C_SetCampaignData final
+{
+public:
+	const class USBZCampaignBaseEntryData*        Entry;                                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CampaignContent_LoreAsset_TextLog_C_SetCampaignData;
+
+// Function WBP_CampaignContent_LoreAsset_TextLog.WBP_CampaignContent_LoreAsset_TextLog_C.GetEntryState
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CampaignContent_LoreAsset_TextLog_C_GetEntryState final
+{
+public:
+	ESBZCampaignEntryState                        ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CampaignContent_LoreAsset_TextLog_C_GetEntryState;
+
 // Function WBP_CampaignContent_LoreAsset_TextLog.WBP_CampaignContent_LoreAsset_TextLog_C.ExecuteUbergraph_WBP_CampaignContent_LoreAsset_TextLog
 // 0x0168 (0x0168 - 0x0000)
 struct WBP_CampaignContent_LoreAsset_TextLog_C_ExecuteUbergraph_WBP_CampaignContent_LoreAsset_TextLog final
@@ -59,30 +86,7 @@ public:
 	uint8                                         Pad_15A[0x6];                                      // 0x015A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0160(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function WBP_CampaignContent_LoreAsset_TextLog.WBP_CampaignContent_LoreAsset_TextLog_C.GetEntryState
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CampaignContent_LoreAsset_TextLog_C_GetEntryState final
-{
-public:
-	ESBZCampaignEntryState                        ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WBP_CampaignContent_LoreAsset_TextLog.WBP_CampaignContent_LoreAsset_TextLog_C.SetCampaignData
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignContent_LoreAsset_TextLog_C_SetCampaignData final
-{
-public:
-	const class USBZCampaignBaseEntryData*        Entry;                                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function WBP_CampaignContent_LoreAsset_TextLog.WBP_CampaignContent_LoreAsset_TextLog_C.SetEntryState
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CampaignContent_LoreAsset_TextLog_C_SetEntryState final
-{
-public:
-	ESBZCampaignEntryState                        NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_WBP_CampaignContent_LoreAsset_TextLog_C_ExecuteUbergraph_WBP_CampaignContent_LoreAsset_TextLog;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

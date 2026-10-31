@@ -17,6 +17,16 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function A_JewelryStore.A_JewelryStore_C.HeistStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct A_JewelryStore_C_HeistStateChanged final
+{
+public:
+	EPD3HeistState                                OldHeistState_HeistStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CurrentHeistState_HeistStateChanged;               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_A_JewelryStore_C_HeistStateChanged;
+
 // Function A_JewelryStore.A_JewelryStore_C.ExecuteUbergraph_A_JewelryStore
 // 0x0374 (0x0374 - 0x0000)
 struct A_JewelryStore_C_ExecuteUbergraph_A_JewelryStore final
@@ -107,15 +117,7 @@ public:
 	int32                                         CallFunc_PostEvent_ReturnValue_34;                 // 0x036C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_PostEvent_ReturnValue_35;                 // 0x0370(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function A_JewelryStore.A_JewelryStore_C.HeistStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct A_JewelryStore_C_HeistStateChanged final
-{
-public:
-	EPD3HeistState                                OldHeistState;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CurrentHeistState;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_A_JewelryStore_C_ExecuteUbergraph_A_JewelryStore;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

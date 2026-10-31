@@ -16,27 +16,27 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_SmallJewelryDisplayCase_Hanging.BP_SmallJewelryDisplayCase_Hanging_C.BP_OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// ESBZDisplayCaseState                    OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZDisplayCaseState                    NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_SmallJewelryDisplayCase_Hanging.BP_SmallJewelryDisplayCase_Hanging_C.OpenSidewaysTimeline__UpdateFunc
+// (BlueprintEvent)
 
-void ABP_SmallJewelryDisplayCase_Hanging_C::BP_OnStateChanged(ESBZDisplayCaseState OldState, ESBZDisplayCaseState NewState, bool bDoCosmetics)
+void ABP_SmallJewelryDisplayCase_Hanging_C::OpenSidewaysTimeline__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OpenSidewaysTimeline__UpdateFunc", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SmallJewelryDisplayCase_Hanging_C", "BP_OnStateChanged");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_SmallJewelryDisplayCase_Hanging_C_BP_OnStateChanged Parms{};
 
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
+// Function BP_SmallJewelryDisplayCase_Hanging.BP_SmallJewelryDisplayCase_Hanging_C.OpenSidewaysTimeline__FinishedFunc
+// (BlueprintEvent)
 
-	UObject::ProcessEvent(Func, &Parms);
+void ABP_SmallJewelryDisplayCase_Hanging_C::OpenSidewaysTimeline__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OpenSidewaysTimeline__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -47,10 +47,8 @@ void ABP_SmallJewelryDisplayCase_Hanging_C::BP_OnStateChanged(ESBZDisplayCaseSta
 
 void ABP_SmallJewelryDisplayCase_Hanging_C::ExecuteUbergraph_BP_SmallJewelryDisplayCase_Hanging(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SmallJewelryDisplayCase_Hanging_C", "ExecuteUbergraph_BP_SmallJewelryDisplayCase_Hanging");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_SmallJewelryDisplayCase_Hanging_C", "ExecuteUbergraph_BP_SmallJewelryDisplayCase_Hanging", FuncInfo);
 
 	Params::BP_SmallJewelryDisplayCase_Hanging_C_ExecuteUbergraph_BP_SmallJewelryDisplayCase_Hanging Parms{};
 
@@ -60,31 +58,25 @@ void ABP_SmallJewelryDisplayCase_Hanging_C::ExecuteUbergraph_BP_SmallJewelryDisp
 }
 
 
-// Function BP_SmallJewelryDisplayCase_Hanging.BP_SmallJewelryDisplayCase_Hanging_C.OpenSidewaysTimeline__FinishedFunc
-// (BlueprintEvent)
+// Function BP_SmallJewelryDisplayCase_Hanging.BP_SmallJewelryDisplayCase_Hanging_C.BP_OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZDisplayCaseState                    OldState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZDisplayCaseState                    NewState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_BP_OnStateChanged                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SmallJewelryDisplayCase_Hanging_C::OpenSidewaysTimeline__FinishedFunc()
+void ABP_SmallJewelryDisplayCase_Hanging_C::BP_OnStateChanged(ESBZDisplayCaseState OldState_BP_OnStateChanged, ESBZDisplayCaseState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SmallJewelryDisplayCase_Hanging_C", "OpenSidewaysTimeline__FinishedFunc");
+	Params::BP_SmallJewelryDisplayCase_Hanging_C_BP_OnStateChanged Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Parms.OldState_BP_OnStateChanged = OldState_BP_OnStateChanged;
+	Parms.NewState_BP_OnStateChanged = NewState_BP_OnStateChanged;
+	Parms.bDoCosmetics_BP_OnStateChanged = bDoCosmetics_BP_OnStateChanged;
 
-
-// Function BP_SmallJewelryDisplayCase_Hanging.BP_SmallJewelryDisplayCase_Hanging_C.OpenSidewaysTimeline__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_SmallJewelryDisplayCase_Hanging_C::OpenSidewaysTimeline__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SmallJewelryDisplayCase_Hanging_C", "OpenSidewaysTimeline__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

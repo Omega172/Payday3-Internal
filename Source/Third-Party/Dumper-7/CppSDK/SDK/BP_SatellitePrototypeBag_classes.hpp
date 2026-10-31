@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_SatellitePrototypeBag_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SatellitePrototypeBag_C;
 
 SDK_NAMESPACE_END

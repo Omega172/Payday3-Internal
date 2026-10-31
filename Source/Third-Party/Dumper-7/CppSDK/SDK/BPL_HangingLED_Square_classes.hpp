@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABPL_HangingLED_Square_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_HangingLED_Square_C;
 
 SDK_NAMESPACE_END

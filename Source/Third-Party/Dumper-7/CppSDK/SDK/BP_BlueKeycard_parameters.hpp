@@ -14,21 +14,23 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_BlueKeycard.BP_BlueKeycard_C.GetSensorComponent
-// 0x0008 (0x0008 - 0x0000)
-struct BP_BlueKeycard_C_GetSensorComponent final
-{
-public:
-	class USBZSensorComponent*                    ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_BlueKeycard.BP_BlueKeycard_C.GetSensorOutlineComponent
 // 0x0008 (0x0008 - 0x0000)
 struct BP_BlueKeycard_C_GetSensorOutlineComponent final
 {
 public:
-	class USBZOutlineComponent*                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZOutlineComponent*                   ReturnValue_GetSensorOutlineComponent;             // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_BlueKeycard_C_GetSensorOutlineComponent;
+
+// Function BP_BlueKeycard.BP_BlueKeycard_C.GetSensorComponent
+// 0x0008 (0x0008 - 0x0000)
+struct BP_BlueKeycard_C_GetSensorComponent final
+{
+public:
+	class USBZSensorComponent*                    ReturnValue_GetSensorComponent;                    // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_BlueKeycard_C_GetSensorComponent;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_PivotStaticChassis_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PivotStaticChassis_C;
 
 SDK_NAMESPACE_END

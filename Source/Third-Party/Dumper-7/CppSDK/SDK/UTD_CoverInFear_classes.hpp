@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UUTD_CoverInFear_C>();
 	}
 };
+DUMPER7_ASSERTS_UUTD_CoverInFear_C;
 
 SDK_NAMESPACE_END

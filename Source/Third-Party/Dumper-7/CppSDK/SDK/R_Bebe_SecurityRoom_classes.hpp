@@ -32,12 +32,12 @@ public:
 	class ASBZDestroyGroup*                       SBZDestroyGroup_Ammo_ExecuteUbergraph_R_Bebe_SecurityRoom_RefProperty; // 0x03F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BranchBank_Bottom_Bkey();
-	void BranchBank_Kitchen_Bkey();
-	void BranchBank_Stairs_Bkey();
-	void ExecuteUbergraph_R_Bebe_SecurityRoom(int32 EntryPoint);
-	void OnRandomSublevelPlaced();
 	void RandomizedRoomTest_RemoteEvent1();
+	void OnRandomSublevelPlaced();
+	void ExecuteUbergraph_R_Bebe_SecurityRoom(int32 EntryPoint);
+	void BranchBank_Stairs_Bkey();
+	void BranchBank_Kitchen_Bkey();
+	void BranchBank_Bottom_Bkey();
 
 public:
 	static class UClass* StaticClass()
@@ -53,5 +53,6 @@ public:
 		return GetDefaultObjImpl<AR_Bebe_SecurityRoom_C>();
 	}
 };
+DUMPER7_ASSERTS_AR_Bebe_SecurityRoom_C;
 
 SDK_NAMESPACE_END

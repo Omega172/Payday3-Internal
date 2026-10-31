@@ -40,17 +40,17 @@ public:
 	TMulticastInlineDelegate<void()>              Wheelramp_is_removed;                              // 0x03E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__BP_WheelRamp_interactable_SBZInteractable_location_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_WheelRamp_interactable_SBZInteractable_location_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_WheelRamp_interactable_SBZInteractable_pickup_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_WheelRamp_interactable_SBZInteractable_pickup_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void Disable_interaction();
-	void Disable_interaction_location();
-	void Enable_Interaction();
-	void Enable_interaction_location();
-	void ExecuteUbergraph_BP_WheelRamp_interactable(int32 EntryPoint);
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
 	void UserConstructionScript();
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_WheelRamp_interactable(int32 EntryPoint);
+	void Enable_interaction_location();
+	void Enable_Interaction();
+	void Disable_interaction_location();
+	void Disable_interaction();
+	void BndEvt__BP_WheelRamp_interactable_SBZInteractable_pickup_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_WheelRamp_interactable_SBZInteractable_pickup_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_WheelRamp_interactable_SBZInteractable_location_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_WheelRamp_interactable_SBZInteractable_location_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -66,5 +66,6 @@ public:
 		return GetDefaultObjImpl<ABP_WheelRamp_interactable_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_WheelRamp_interactable_C;
 
 SDK_NAMESPACE_END

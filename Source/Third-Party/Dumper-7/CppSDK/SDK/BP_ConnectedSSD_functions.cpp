@@ -16,47 +16,47 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ConnectedSSD.BP_ConnectedSSD_C.BndEvt__BP_ConnectedSSD_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ConnectedSSD.BP_ConnectedSSD_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_ConnectedSSD_C::BndEvt__BP_ConnectedSSD_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_ConnectedSSD_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ConnectedSSD_C", "BndEvt__BP_ConnectedSSD_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_ConnectedSSD_C_BndEvt__BP_ConnectedSSD_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
 
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+// Function BP_ConnectedSSD.BP_ConnectedSSD_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bStateToChangeTo_OnStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ConnectedSSD_C::OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_ConnectedSSD_C_OnStateChanged Parms{};
+
+	Parms.bStateToChangeTo_OnStateChanged = bStateToChangeTo_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_ConnectedSSD.BP_ConnectedSSD_C.ExecuteUbergraph_BP_ConnectedSSD
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ConnectedSSD.BP_ConnectedSSD_C.GrabSSD
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_ConnectedSSD_C::ExecuteUbergraph_BP_ConnectedSSD(int32 EntryPoint)
+void ABP_ConnectedSSD_C::GrabSSD()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GrabSSD", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ConnectedSSD_C", "ExecuteUbergraph_BP_ConnectedSSD");
-
-	Params::BP_ConnectedSSD_C_ExecuteUbergraph_BP_ConnectedSSD Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -67,10 +67,8 @@ void ABP_ConnectedSSD_C::ExecuteUbergraph_BP_ConnectedSSD(int32 EntryPoint)
 
 void ABP_ConnectedSSD_C::GetState(bool* State)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ConnectedSSD_C", "GetState");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetState", FnName));
 
 	Params::BP_ConnectedSSD_C_GetState Parms{};
 
@@ -81,53 +79,43 @@ void ABP_ConnectedSSD_C::GetState(bool* State)
 }
 
 
-// Function BP_ConnectedSSD.BP_ConnectedSSD_C.GrabSSD
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_ConnectedSSD_C::GrabSSD()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ConnectedSSD_C", "GrabSSD");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ConnectedSSD.BP_ConnectedSSD_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
+// Function BP_ConnectedSSD.BP_ConnectedSSD_C.ExecuteUbergraph_BP_ConnectedSSD
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ConnectedSSD_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
+void ABP_ConnectedSSD_C::ExecuteUbergraph_BP_ConnectedSSD(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ConnectedSSD_C", "ExecuteUbergraph_BP_ConnectedSSD", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ConnectedSSD_C", "OnStateChanged");
+	Params::BP_ConnectedSSD_C_ExecuteUbergraph_BP_ConnectedSSD Parms{};
 
-	Params::BP_ConnectedSSD_C_OnStateChanged Parms{};
-
-	Parms.bStateToChangeTo = bStateToChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_ConnectedSSD.BP_ConnectedSSD_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_ConnectedSSD.BP_ConnectedSSD_C.BndEvt__BP_ConnectedSSD_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ConnectedSSD_C::UserConstructionScript()
+void ABP_ConnectedSSD_C::BndEvt__BP_ConnectedSSD_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ConnectedSSD_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ConnectedSSD_C", "UserConstructionScript");
+	Params::BP_ConnectedSSD_C_BndEvt__BP_ConnectedSSD_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

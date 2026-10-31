@@ -18,21 +18,29 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_Thunder.BP_Thunder_C.BeginOverlap
+// Function BP_Thunder.BP_Thunder_C.UserConstructionScript
 // 0x0008 (0x0008 - 0x0000)
-struct BP_Thunder_C_BeginOverlap final
+struct BP_Thunder_C_UserConstructionScript final
 {
 public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	double                                        K2Node_VariableSet_Default_Intensity_ImplicitCast; // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Thunder_C_UserConstructionScript;
 
-// Function BP_Thunder.BP_Thunder_C.EndOverlap
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Thunder_C_EndOverlap final
+// Function BP_Thunder.BP_Thunder_C.GetControlledPawnLocation
+// 0x0050 (0x0050 - 0x0000)
+struct BP_Thunder_C_GetControlledPawnLocation final
 {
 public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  ControlledPawnReference;                           // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                ControlledPawnLocation;                            // 0x0008(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Thunder_C_GetControlledPawnLocation;
 
 // Function BP_Thunder.BP_Thunder_C.ExecuteUbergraph_BP_Thunder
 // 0x1000 (0x1000 - 0x0000)
@@ -80,28 +88,25 @@ public:
 	float                                         K2Node_MakeStruct_AutoExposureBias_ImplicitCast;   // 0x0FF4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_MakeStruct_AutoExposureBias_ImplicitCast_1; // 0x0FF8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Thunder_C_ExecuteUbergraph_BP_Thunder;
 
-// Function BP_Thunder.BP_Thunder_C.GetControlledPawnLocation
-// 0x0050 (0x0050 - 0x0000)
-struct BP_Thunder_C_GetControlledPawnLocation final
-{
-public:
-	class APawn*                                  ControlledPawnReference;                           // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                ControlledPawnLocation;                            // 0x0008(0x0018)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class APawn*                                  CallFunc_K2_GetPawn_ReturnValue;                   // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0038(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_Thunder.BP_Thunder_C.UserConstructionScript
+// Function BP_Thunder.BP_Thunder_C.EndOverlap
 // 0x0008 (0x0008 - 0x0000)
-struct BP_Thunder_C_UserConstructionScript final
+struct BP_Thunder_C_EndOverlap final
 {
 public:
-	double                                        K2Node_VariableSet_Default_Intensity_ImplicitCast; // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Thunder_C_EndOverlap;
+
+// Function BP_Thunder.BP_Thunder_C.BeginOverlap
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Thunder_C_BeginOverlap final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Thunder_C_BeginOverlap;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

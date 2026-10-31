@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ABP_BaggableTeddyMoo_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BaggableTeddyMoo_C;
 
 SDK_NAMESPACE_END

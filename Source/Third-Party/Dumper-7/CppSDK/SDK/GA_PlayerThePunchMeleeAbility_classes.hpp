@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGA_PlayerThePunchMeleeAbility_C>();
 	}
 };
+DUMPER7_ASSERTS_UGA_PlayerThePunchMeleeAbility_C;
 
 SDK_NAMESPACE_END

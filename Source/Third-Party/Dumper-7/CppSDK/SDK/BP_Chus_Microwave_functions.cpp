@@ -16,45 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Chus_Microwave.BP_Chus_Microwave_C.ExecuteUbergraph_BP_Chus_Microwave
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Chus_Microwave.BP_Chus_Microwave_C.StopSparks
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_Chus_Microwave_C::ExecuteUbergraph_BP_Chus_Microwave(int32 EntryPoint)
+void ABP_Chus_Microwave_C::StopSparks()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"StopSparks", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Chus_Microwave_C", "ExecuteUbergraph_BP_Chus_Microwave");
-
-	Params::BP_Chus_Microwave_C_ExecuteUbergraph_BP_Chus_Microwave Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Chus_Microwave.BP_Chus_Microwave_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Chus_Microwave_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Chus_Microwave_C", "OnStateChanged");
-
-	Params::BP_Chus_Microwave_C_OnStateChanged Parms{};
-
-	Parms.bStateToChangeTo = bStateToChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -63,26 +33,48 @@ void ABP_Chus_Microwave_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmeti
 
 void ABP_Chus_Microwave_C::Sparkle_Sparkle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Chus_Microwave_C", "Sparkle Sparkle");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Sparkle Sparkle", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Chus_Microwave.BP_Chus_Microwave_C.StopSparks
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_Chus_Microwave.BP_Chus_Microwave_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bStateToChangeTo_OnStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Chus_Microwave_C::StopSparks()
+void ABP_Chus_Microwave_C::OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Chus_Microwave_C", "StopSparks");
+	Params::BP_Chus_Microwave_C_OnStateChanged Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.bStateToChangeTo_OnStateChanged = bStateToChangeTo_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Chus_Microwave.BP_Chus_Microwave_C.ExecuteUbergraph_BP_Chus_Microwave
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Chus_Microwave_C::ExecuteUbergraph_BP_Chus_Microwave(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Chus_Microwave_C", "ExecuteUbergraph_BP_Chus_Microwave", FuncInfo);
+
+	Params::BP_Chus_Microwave_C_ExecuteUbergraph_BP_Chus_Microwave Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

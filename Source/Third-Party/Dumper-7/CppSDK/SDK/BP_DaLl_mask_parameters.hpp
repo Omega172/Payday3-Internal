@@ -14,6 +14,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_DaLl_mask.BP_DaLl_mask_C.UserConstructionScript
+// 0x0008 (0x0008 - 0x0000)
+struct BP_DaLl_mask_C_UserConstructionScript final
+{
+public:
+	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_DaLl_mask_C_UserConstructionScript;
+
 // Function BP_DaLl_mask.BP_DaLl_mask_C.ExecuteUbergraph_BP_DaLl_mask
 // 0x0038 (0x0038 - 0x0000)
 struct BP_DaLl_mask_C_ExecuteUbergraph_BP_DaLl_mask final
@@ -30,14 +39,7 @@ public:
 	float                                         CallFunc_SetPlayRate_NewRate_ImplicitCast_1;       // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Delay_Duration_ImplicitCast;              // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_DaLl_mask.BP_DaLl_mask_C.UserConstructionScript
-// 0x0008 (0x0008 - 0x0000)
-struct BP_DaLl_mask_C_UserConstructionScript final
-{
-public:
-	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_DaLl_mask_C_ExecuteUbergraph_BP_DaLl_mask;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

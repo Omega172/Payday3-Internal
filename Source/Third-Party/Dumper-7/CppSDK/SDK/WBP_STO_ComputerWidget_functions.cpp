@@ -16,221 +16,55 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.Active
+// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.UpdateUnlockDisplayText
 // (BlueprintCallable, BlueprintEvent)
-
-void UWBP_STO_ComputerWidget_C::Active()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ComputerWidget_C", "Active");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.Code
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_STO_ComputerWidget_C::Code()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ComputerWidget_C", "Code");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.Done
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_STO_ComputerWidget_C::Done()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ComputerWidget_C", "Done");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.Email
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_STO_ComputerWidget_C::Email()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ComputerWidget_C", "Email");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.ExecuteUbergraph_WBP_STO_ComputerWidget
-// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZHackableDisplayText&   NewDisplayText                                         (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_STO_ComputerWidget_C::ExecuteUbergraph_WBP_STO_ComputerWidget(int32 EntryPoint)
+void UWBP_STO_ComputerWidget_C::UpdateUnlockDisplayText(const struct FSBZHackableDisplayText& NewDisplayText)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateUnlockDisplayText", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ComputerWidget_C", "ExecuteUbergraph_WBP_STO_ComputerWidget");
+	Params::WBP_STO_ComputerWidget_C_UpdateUnlockDisplayText Parms{};
 
-	Params::WBP_STO_ComputerWidget_C_ExecuteUbergraph_WBP_STO_ComputerWidget Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.NewDisplayText = std::move(NewDisplayText);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.Failed
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_STO_ComputerWidget_C::Failed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ComputerWidget_C", "Failed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.Interupted
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_STO_ComputerWidget_C::Interupted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ComputerWidget_C", "Interupted");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.Names
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_STO_ComputerWidget_C::Names()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ComputerWidget_C", "Names");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.NotActive
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_STO_ComputerWidget_C::NotActive()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ComputerWidget_C", "NotActive");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.Progressing
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_STO_ComputerWidget_C::Progressing()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ComputerWidget_C", "Progressing");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.Unlocked
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_STO_ComputerWidget_C::Unlocked()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ComputerWidget_C", "Unlocked");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.UpdateEmailDisplayText
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FSBZHackableDisplayText&   DisplayText                                            (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_STO_ComputerWidget_C::UpdateEmailDisplayText(const struct FSBZHackableDisplayText& DisplayText)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ComputerWidget_C", "UpdateEmailDisplayText");
-
-	Params::WBP_STO_ComputerWidget_C_UpdateEmailDisplayText Parms{};
-
-	Parms.DisplayText = std::move(DisplayText);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.updateHackingProgress
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   progress                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_STO_ComputerWidget_C::updateHackingProgress(int32 progress)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ComputerWidget_C", "updateHackingProgress");
-
-	Params::WBP_STO_ComputerWidget_C_updateHackingProgress Parms{};
-
-	Parms.progress = progress;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.updateHackingTimerProcessName
+// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.UpdateSuccessText
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_STO_ComputerWidget_C::updateHackingTimerProcessName(const class FText& InText)
+void UWBP_STO_ComputerWidget_C::UpdateSuccessText(const class FText& InText)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateSuccessText", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ComputerWidget_C", "updateHackingTimerProcessName");
-
-	Params::WBP_STO_ComputerWidget_C_updateHackingTimerProcessName Parms{};
+	Params::WBP_STO_ComputerWidget_C_UpdateSuccessText Parms{};
 
 	Parms.InText = std::move(InText);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.updateKeypadPossibleCodes
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const TArray<int32>&                    codes                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_STO_ComputerWidget_C::updateKeypadPossibleCodes(const TArray<int32>& codes)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"updateKeypadPossibleCodes", FnName));
+
+	Params::WBP_STO_ComputerWidget_C_updateKeypadPossibleCodes Parms{};
+
+	Parms.codes = std::move(codes);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -245,10 +79,8 @@ void UWBP_STO_ComputerWidget_C::updateHackingTimerProcessName(const class FText&
 
 void UWBP_STO_ComputerWidget_C::updateInformation(const class FText& main, const class FText& secondary, const class FText& additional)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ComputerWidget_C", "updateInformation");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"updateInformation", FnName));
 
 	Params::WBP_STO_ComputerWidget_C_updateInformation Parms{};
 
@@ -260,39 +92,17 @@ void UWBP_STO_ComputerWidget_C::updateInformation(const class FText& main, const
 }
 
 
-// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.updateKeypadPossibleCodes
-// (HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const TArray<int32>&                    codes                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UWBP_STO_ComputerWidget_C::updateKeypadPossibleCodes(const TArray<int32>& codes)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ComputerWidget_C", "updateKeypadPossibleCodes");
-
-	Params::WBP_STO_ComputerWidget_C_updateKeypadPossibleCodes Parms{};
-
-	Parms.codes = std::move(codes);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.UpdateSuccessText
+// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.updateHackingTimerProcessName
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
 // const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_STO_ComputerWidget_C::UpdateSuccessText(const class FText& InText)
+void UWBP_STO_ComputerWidget_C::updateHackingTimerProcessName(const class FText& InText)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"updateHackingTimerProcessName", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ComputerWidget_C", "UpdateSuccessText");
-
-	Params::WBP_STO_ComputerWidget_C_UpdateSuccessText Parms{};
+	Params::WBP_STO_ComputerWidget_C_updateHackingTimerProcessName Parms{};
 
 	Parms.InText = std::move(InText);
 
@@ -300,23 +110,177 @@ void UWBP_STO_ComputerWidget_C::UpdateSuccessText(const class FText& InText)
 }
 
 
-// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.UpdateUnlockDisplayText
+// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.updateHackingProgress
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FSBZHackableDisplayText&   NewDisplayText                                         (BlueprintVisible, BlueprintReadOnly, Parm)
+// int32                                   progress                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_STO_ComputerWidget_C::UpdateUnlockDisplayText(const struct FSBZHackableDisplayText& NewDisplayText)
+void UWBP_STO_ComputerWidget_C::updateHackingProgress(int32 progress)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"updateHackingProgress", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ComputerWidget_C", "UpdateUnlockDisplayText");
+	Params::WBP_STO_ComputerWidget_C_updateHackingProgress Parms{};
 
-	Params::WBP_STO_ComputerWidget_C_UpdateUnlockDisplayText Parms{};
-
-	Parms.NewDisplayText = std::move(NewDisplayText);
+	Parms.progress = progress;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.UpdateEmailDisplayText
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FSBZHackableDisplayText&   DisplayText                                            (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_STO_ComputerWidget_C::UpdateEmailDisplayText(const struct FSBZHackableDisplayText& DisplayText)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateEmailDisplayText", FnName));
+
+	Params::WBP_STO_ComputerWidget_C_UpdateEmailDisplayText Parms{};
+
+	Parms.DisplayText = std::move(DisplayText);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.Unlocked
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_STO_ComputerWidget_C::Unlocked()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Unlocked", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.Progressing
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_STO_ComputerWidget_C::Progressing()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Progressing", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.NotActive
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_STO_ComputerWidget_C::NotActive()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"NotActive", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.Names
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_STO_ComputerWidget_C::Names()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Names", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.Interupted
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_STO_ComputerWidget_C::Interupted()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Interupted", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.Failed
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_STO_ComputerWidget_C::Failed()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Failed", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.ExecuteUbergraph_WBP_STO_ComputerWidget
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_STO_ComputerWidget_C::ExecuteUbergraph_WBP_STO_ComputerWidget(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_STO_ComputerWidget_C", "ExecuteUbergraph_WBP_STO_ComputerWidget", FuncInfo);
+
+	Params::WBP_STO_ComputerWidget_C_ExecuteUbergraph_WBP_STO_ComputerWidget Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.Email
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_STO_ComputerWidget_C::Email()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Email", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.Done
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_STO_ComputerWidget_C::Done()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Done", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.Code
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_STO_ComputerWidget_C::Code()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Code", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_STO_ComputerWidget.WBP_STO_ComputerWidget_C.Active
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_STO_ComputerWidget_C::Active()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Active", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

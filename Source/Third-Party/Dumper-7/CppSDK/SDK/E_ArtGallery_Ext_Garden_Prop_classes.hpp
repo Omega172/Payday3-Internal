@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AE_ArtGallery_Ext_Garden_Prop_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_ArtGallery_Ext_Garden_Prop_C;
 
 SDK_NAMESPACE_END

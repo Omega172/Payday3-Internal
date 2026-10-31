@@ -14,50 +14,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function R_Sky_CigarRoom_01.R_Sky_CigarRoom_01_C.BndEvt__R_Sky_CigarRoom_01_BP_RedKeycard1_K2Node_ActorBoundEvent_0_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_Sky_CigarRoom_01_C_BndEvt__R_Sky_CigarRoom_01_BP_RedKeycard1_K2Node_ActorBoundEvent_0_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_Sky_CigarRoom_01.R_Sky_CigarRoom_01_C.BndEvt__R_Sky_CigarRoom_01_BP_RedKeycard2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_Sky_CigarRoom_01_C_BndEvt__R_Sky_CigarRoom_01_BP_RedKeycard2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_Sky_CigarRoom_01.R_Sky_CigarRoom_01_C.BndEvt__R_Sky_CigarRoom_01_BP_RedKeycard3_K2Node_ActorBoundEvent_2_SBZActorOnInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_Sky_CigarRoom_01_C_BndEvt__R_Sky_CigarRoom_01_BP_RedKeycard3_K2Node_ActorBoundEvent_2_SBZActorOnInteraction__DelegateSignature final
-{
-public:
-	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_Sky_CigarRoom_01.R_Sky_CigarRoom_01_C.BndEvt__R_Sky_CigarRoom_01_SBZDestroyGroup_1_K2Node_ActorBoundEvent_4_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct R_Sky_CigarRoom_01_C_BndEvt__R_Sky_CigarRoom_01_SBZDestroyGroup_1_K2Node_ActorBoundEvent_4_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
-{
-public:
-	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-};
-
-// Function R_Sky_CigarRoom_01.R_Sky_CigarRoom_01_C.BndEvt__R_Sky_CigarRoom_01_SBZPlayerTriggerVolume_PlayerInsideCigarRoom_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct R_Sky_CigarRoom_01_C_BndEvt__R_Sky_CigarRoom_01_SBZPlayerTriggerVolume_PlayerInsideCigarRoom_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function R_Sky_CigarRoom_01.R_Sky_CigarRoom_01_C.ExecuteUbergraph_R_Sky_CigarRoom_01
 // 0x0088 (0x0088 - 0x0000)
 struct R_Sky_CigarRoom_01_C_ExecuteUbergraph_R_Sky_CigarRoom_01 final
@@ -80,6 +36,56 @@ public:
 	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors;            // 0x0070(0x0010)(ReferenceParm)
 	class APawn*                                  K2Node_ActorBoundEvent_Pawn;                       // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_R_Sky_CigarRoom_01_C_ExecuteUbergraph_R_Sky_CigarRoom_01;
+
+// Function R_Sky_CigarRoom_01.R_Sky_CigarRoom_01_C.BndEvt__R_Sky_CigarRoom_01_SBZPlayerTriggerVolume_PlayerInsideCigarRoom_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct R_Sky_CigarRoom_01_C_BndEvt__R_Sky_CigarRoom_01_SBZPlayerTriggerVolume_PlayerInsideCigarRoom_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_Sky_CigarRoom_01_C_BndEvt__R_Sky_CigarRoom_01_SBZPlayerTriggerVolume_PlayerInsideCigarRoom_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function R_Sky_CigarRoom_01.R_Sky_CigarRoom_01_C.BndEvt__R_Sky_CigarRoom_01_SBZDestroyGroup_1_K2Node_ActorBoundEvent_4_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct R_Sky_CigarRoom_01_C_BndEvt__R_Sky_CigarRoom_01_SBZDestroyGroup_1_K2Node_ActorBoundEvent_4_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature final
+{
+public:
+	TArray<class AActor*>                         KeptActors;                                        // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	TArray<class AActor*>                         DestroyedActors;                                   // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+DUMPER7_ASSERTS_R_Sky_CigarRoom_01_C_BndEvt__R_Sky_CigarRoom_01_SBZDestroyGroup_1_K2Node_ActorBoundEvent_4_SBZOnDestroyActorsDoneDynamicDelegate__DelegateSignature;
+
+// Function R_Sky_CigarRoom_01.R_Sky_CigarRoom_01_C.BndEvt__R_Sky_CigarRoom_01_BP_RedKeycard3_K2Node_ActorBoundEvent_2_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_Sky_CigarRoom_01_C_BndEvt__R_Sky_CigarRoom_01_BP_RedKeycard3_K2Node_ActorBoundEvent_2_SBZActorOnInteraction__DelegateSignature final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_Sky_CigarRoom_01_C_BndEvt__R_Sky_CigarRoom_01_BP_RedKeycard3_K2Node_ActorBoundEvent_2_SBZActorOnInteraction__DelegateSignature;
+
+// Function R_Sky_CigarRoom_01.R_Sky_CigarRoom_01_C.BndEvt__R_Sky_CigarRoom_01_BP_RedKeycard2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_Sky_CigarRoom_01_C_BndEvt__R_Sky_CigarRoom_01_BP_RedKeycard2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_Sky_CigarRoom_01_C_BndEvt__R_Sky_CigarRoom_01_BP_RedKeycard2_K2Node_ActorBoundEvent_1_SBZActorOnInteraction__DelegateSignature;
+
+// Function R_Sky_CigarRoom_01.R_Sky_CigarRoom_01_C.BndEvt__R_Sky_CigarRoom_01_BP_RedKeycard1_K2Node_ActorBoundEvent_0_SBZActorOnInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_Sky_CigarRoom_01_C_BndEvt__R_Sky_CigarRoom_01_BP_RedKeycard1_K2Node_ActorBoundEvent_0_SBZActorOnInteraction__DelegateSignature final
+{
+public:
+	class ASBZInteractionActor*                   Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_Sky_CigarRoom_01_C_BndEvt__R_Sky_CigarRoom_01_BP_RedKeycard1_K2Node_ActorBoundEvent_0_SBZActorOnInteraction__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

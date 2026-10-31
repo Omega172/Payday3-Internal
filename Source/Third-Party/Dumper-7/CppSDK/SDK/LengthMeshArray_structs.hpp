@@ -22,5 +22,6 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UStaticMesh*>                    MeshArray_6_E1AB9BA240A09BD6F335A7BB99FA9FD4;      // 0x0008(0x0010)(Edit, BlueprintVisible)
 };
+DUMPER7_ASSERTS_FLengthMeshArray;
 
 SDK_NAMESPACE_END

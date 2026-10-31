@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UBP_Feedback_OVK_M606_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_Feedback_OVK_M606_C;
 
 SDK_NAMESPACE_END

@@ -40,23 +40,23 @@ public:
 	struct FTimerHandle                           toggleTimer;                                       // 0x0568(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable1_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
-	void BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable1_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable2_K2Node_ComponentBoundEvent_1_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
-	void BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable2_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable3_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
-	void BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable3_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void BP_EnabledChanged(bool bEnabled, bool bDoCosmetics);
-	void BP_OnExplosion(bool bDoCosmetics);
-	void ExecuteUbergraph_BP_DAT_C4Explosive_01_Location(int32 EntryPoint);
-	void HandleInteractionStateChanged(bool bNewState, class UStaticMeshComponent* StaticMesh);
-	void onAllChargesPlaced();
-	void onExplosivePlaced(class UActorComponent* interactor);
-	void onServerOnChargesChanged(int32 NewCount);
-	void ReceiveBeginPlay();
-	void setExplosivesVisibility(bool visible);
-	void toggleLight();
 	void UserConstructionScript();
+	void toggleLight();
+	void setExplosivesVisibility(bool visible);
+	void ReceiveBeginPlay();
+	void onServerOnChargesChanged(int32 NewCount);
+	void onExplosivePlaced(class UActorComponent* interactor);
+	void onAllChargesPlaced();
+	void HandleInteractionStateChanged(bool bNewState, class UStaticMeshComponent* StaticMesh);
+	void ExecuteUbergraph_BP_DAT_C4Explosive_01_Location(int32 EntryPoint);
+	void BP_OnExplosion(bool bDoCosmetics_BP_OnExplosion);
+	void BP_EnabledChanged(bool bEnabled_BP_EnabledChanged, bool bDoCosmetics_BP_EnabledChanged);
+	void BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable3_K2Node_ComponentBoundEvent_3_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable3_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
+	void BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable2_K2Node_ComponentBoundEvent_5_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable2_K2Node_ComponentBoundEvent_1_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
+	void BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable1_K2Node_ComponentBoundEvent_4_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_TestExplodingWall_SBZExplosiveInteractable1_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
 
 public:
 	static class UClass* StaticClass()
@@ -72,5 +72,6 @@ public:
 		return GetDefaultObjImpl<ABP_DAT_C4Explosive_01_Location_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DAT_C4Explosive_01_Location_C;
 
 SDK_NAMESPACE_END

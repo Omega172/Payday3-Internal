@@ -17,6 +17,303 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function component_screen.component_screen_C.setup
+// 0x00D8 (0x00D8 - 0x0000)
+struct component_screen_C_setup final
+{
+public:
+	class UStaticMeshComponent*                   meshes;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZCosmeticDestructionComponent*       SBZCosmeticDestruction;                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                CallFunc_Conv_LinearColorToVector_ReturnValue;     // 0x0010(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TDelegate<void(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)> K2Node_CreateDelegate_OutputDelegate; // 0x0028(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Conv_BoolToDouble_ReturnValue;            // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_BoolToDouble_ReturnValue_1;          // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_BoolToDouble_ReturnValue_2;          // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue_1;           // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue_2;           // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_BoolToDouble_ReturnValue_3;          // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Conv_IntToDouble_ReturnValue_3;           // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_1; // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_2; // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_3; // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_4; // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_5; // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_6; // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_7; // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_8; // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_9; // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_10; // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_11; // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_12; // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_13; // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_14; // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_15; // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_16; // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_17; // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_18; // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_19; // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_20; // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_21; // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_component_screen_C_setup;
+
+// Function component_screen.component_screen_C.setSwap_period
+// 0x0008 (0x0008 - 0x0000)
+struct component_screen_C_setSwap_period final
+{
+public:
+	double                                        Swap_period;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_component_screen_C_setSwap_period;
+
+// Function component_screen.component_screen_C.setSwap_offest_by_position
+// 0x0001 (0x0001 - 0x0000)
+struct component_screen_C_setSwap_offest_by_position final
+{
+public:
+	bool                                          swap_offest_by_position;                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_component_screen_C_setSwap_offest_by_position;
+
+// Function component_screen.component_screen_C.setSub_texture_part_used_start_range
+// 0x0004 (0x0004 - 0x0000)
+struct component_screen_C_setSub_texture_part_used_start_range final
+{
+public:
+	int32                                         sub_texture_part_used_start_range;                 // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_component_screen_C_setSub_texture_part_used_start_range;
+
+// Function component_screen.component_screen_C.setSub_texture_part_used_end_range
+// 0x0004 (0x0004 - 0x0000)
+struct component_screen_C_setSub_texture_part_used_end_range final
+{
+public:
+	int32                                         sub_texture_part_used_end_range;                   // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_component_screen_C_setSub_texture_part_used_end_range;
+
+// Function component_screen.component_screen_C.setSpecularity
+// 0x0008 (0x0008 - 0x0000)
+struct component_screen_C_setSpecularity final
+{
+public:
+	double                                        Specularity;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_component_screen_C_setSpecularity;
+
+// Function component_screen.component_screen_C.setSource_bink_media_player
+// 0x0008 (0x0008 - 0x0000)
+struct component_screen_C_setSource_bink_media_player final
+{
+public:
+	class UBinkMediaPlayer*                       source_bink_media_player;                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_component_screen_C_setSource_bink_media_player;
+
+// Function component_screen.component_screen_C.setSide_Attenuation
+// 0x0008 (0x0008 - 0x0000)
+struct component_screen_C_setSide_Attenuation final
+{
+public:
+	double                                        Side_Attenuation;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_component_screen_C_setSide_Attenuation;
+
+// Function component_screen.component_screen_C.setScreenPlaysMovie
+// 0x0001 (0x0001 - 0x0000)
+struct component_screen_C_setScreenPlaysMovie final
+{
+public:
+	bool                                          Screens_plays_movie;                               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_component_screen_C_setScreenPlaysMovie;
+
+// Function component_screen.component_screen_C.H)
+// 0x0008 (0x0008 - 0x0000)
+struct component_screen_C_H__0 final
+{
+public:
+	double                                        H_;                                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_component_screen_C_H__0;
+
+// Function component_screen.component_screen_C.setRoughness_Multiplier
+// 0x0008 (0x0008 - 0x0000)
+struct component_screen_C_setRoughness_Multiplier final
+{
+public:
+	double                                        Roughness_Multiplier;                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_component_screen_C_setRoughness_Multiplier;
+
+// Function component_screen.component_screen_C.setResolution
+// 0x0004 (0x0004 - 0x0000)
+struct component_screen_C_setResolution final
+{
+public:
+	int32                                         resolution;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_component_screen_C_setResolution;
+
+// Function component_screen.component_screen_C.setPixel_type
+// 0x0004 (0x0004 - 0x0000)
+struct component_screen_C_setPixel_type final
+{
+public:
+	int32                                         Pixel_type;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_component_screen_C_setPixel_type;
+
+// Function component_screen.component_screen_C.setNumber of  vertical slides in the texture
+// 0x0008 (0x0008 - 0x0000)
+struct component_screen_C_setNumber_of__vertical_slides_in_the_texture final
+{
+public:
+	double                                        Number_of__vertical_slides_in_the_texture;         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_component_screen_C_setNumber_of__vertical_slides_in_the_texture;
+
+// Function component_screen.component_screen_C.setNumber of  horizontal slides in the texture
+// 0x0008 (0x0008 - 0x0000)
+struct component_screen_C_setNumber_of__horizontal_slides_in_the_texture final
+{
+public:
+	double                                        Number_of__horizontal_slides_in_the_texture;       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_component_screen_C_setNumber_of__horizontal_slides_in_the_texture;
+
+// Function component_screen.component_screen_C.setMode_RGB
+// 0x0001 (0x0001 - 0x0000)
+struct component_screen_C_setMode_RGB final
+{
+public:
+	bool                                          Mode_RGB;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_component_screen_C_setMode_RGB;
+
+// Function component_screen.component_screen_C.setLight_Spread
+// 0x0008 (0x0008 - 0x0000)
+struct component_screen_C_setLight_Spread final
+{
+public:
+	double                                        Light_Spread;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_component_screen_C_setLight_Spread;
+
+// Function component_screen.component_screen_C.setLight_Reach
+// 0x0008 (0x0008 - 0x0000)
+struct component_screen_C_setLight_Reach final
+{
+public:
+	double                                        Light_Reach;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_component_screen_C_setLight_Reach;
+
+// Function component_screen.component_screen_C.setLight_Intensity
+// 0x0008 (0x0008 - 0x0000)
+struct component_screen_C_setLight_Intensity final
+{
+public:
+	double                                        Light_Intensity;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_component_screen_C_setLight_Intensity;
+
+// Function component_screen.component_screen_C.setLight_Angle
+// 0x0008 (0x0008 - 0x0000)
+struct component_screen_C_setLight_Angle final
+{
+public:
+	double                                        Light_Angle;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_component_screen_C_setLight_Angle;
+
+// Function component_screen.component_screen_C.setIs_OFF
+// 0x0001 (0x0001 - 0x0000)
+struct component_screen_C_setIs_OFF final
+{
+public:
+	bool                                          Is_OFF;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_component_screen_C_setIs_OFF;
+
+// Function component_screen.component_screen_C.setIs_Fully_destructable
+// 0x0001 (0x0001 - 0x0000)
+struct component_screen_C_setIs_Fully_destructable final
+{
+public:
+	bool                                          Is_Fully_destructable;                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_component_screen_C_setIs_Fully_destructable;
+
+// Function component_screen.component_screen_C.setIntensity_screen
+// 0x0008 (0x0008 - 0x0000)
+struct component_screen_C_setIntensity_screen final
+{
+public:
+	double                                        intensity_screen;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_component_screen_C_setIntensity_screen;
+
+// Function component_screen.component_screen_C.setDiffuse_color
+// 0x0010 (0x0010 - 0x0000)
+struct component_screen_C_setDiffuse_color final
+{
+public:
+	struct FLinearColor                           Diffuse_color;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_component_screen_C_setDiffuse_color;
+
+// Function component_screen.component_screen_C.setDamageState
+// 0x0020 (0x0020 - 0x0000)
+struct component_screen_C_setDamageState final
+{
+public:
+	int32                                         damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_GetRealTimeSeconds_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetCustomPrimitiveDataFloat_Value_ImplicitCast_1; // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetCustomPrimitiveDataFloat_Value_ImplicitCast_2; // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_component_screen_C_setDamageState;
+
+// Function component_screen.component_screen_C.setBanding_visibility
+// 0x0008 (0x0008 - 0x0000)
+struct component_screen_C_setBanding_visibility final
+{
+public:
+	double                                        banding_visibility;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_component_screen_C_setBanding_visibility;
+
+// Function component_screen.component_screen_C.setBanding_refresh_rate
+// 0x0008 (0x0008 - 0x0000)
+struct component_screen_C_setBanding_refresh_rate final
+{
+public:
+	double                                        banding_refresh_rate;                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_component_screen_C_setBanding_refresh_rate;
+
+// Function component_screen.component_screen_C.onDestructionHit
+// 0x0070 (0x0070 - 0x0000)
+struct component_screen_C_onDestructionHit final
+{
+public:
+	ESBZCosmeticDestructionType                   Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZCosmeticDestructionContext         HitContext;                                        // 0x0008(0x0060)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Min_ReturnValue;                          // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_component_screen_C_onDestructionHit;
+
 // Function component_screen.component_screen_C.ExecuteUbergraph_component_screen
 // 0x0160 (0x0160 - 0x0000)
 struct component_screen_C_ExecuteUbergraph_component_screen final
@@ -85,275 +382,7 @@ public:
 	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_20; // 0x0158(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_21; // 0x015C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function component_screen.component_screen_C.onDestructionHit
-// 0x0070 (0x0070 - 0x0000)
-struct component_screen_C_onDestructionHit final
-{
-public:
-	ESBZCosmeticDestructionType                   Type;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZCosmeticDestructionContext         HitContext;                                        // 0x0008(0x0060)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Min_ReturnValue;                          // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function component_screen.component_screen_C.setBanding_refresh_rate
-// 0x0008 (0x0008 - 0x0000)
-struct component_screen_C_setBanding_refresh_rate final
-{
-public:
-	double                                        banding_refresh_rate_0;                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function component_screen.component_screen_C.setBanding_visibility
-// 0x0008 (0x0008 - 0x0000)
-struct component_screen_C_setBanding_visibility final
-{
-public:
-	double                                        banding_visibility_0;                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function component_screen.component_screen_C.setDamageState
-// 0x0020 (0x0020 - 0x0000)
-struct component_screen_C_setDamageState final
-{
-public:
-	int32                                         damage;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_GetRealTimeSeconds_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetCustomPrimitiveDataFloat_Value_ImplicitCast_1; // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetCustomPrimitiveDataFloat_Value_ImplicitCast_2; // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function component_screen.component_screen_C.setDiffuse_color
-// 0x0010 (0x0010 - 0x0000)
-struct component_screen_C_setDiffuse_color final
-{
-public:
-	struct FLinearColor                           Diffuse_color_0;                                   // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function component_screen.component_screen_C.setIntensity_screen
-// 0x0008 (0x0008 - 0x0000)
-struct component_screen_C_setIntensity_screen final
-{
-public:
-	double                                        intensity_screen_0;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function component_screen.component_screen_C.setIs_Fully_destructable
-// 0x0001 (0x0001 - 0x0000)
-struct component_screen_C_setIs_Fully_destructable final
-{
-public:
-	bool                                          Is_Fully_destructable_0;                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function component_screen.component_screen_C.setIs_OFF
-// 0x0001 (0x0001 - 0x0000)
-struct component_screen_C_setIs_OFF final
-{
-public:
-	bool                                          Is_OFF_0;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function component_screen.component_screen_C.setLight_Angle
-// 0x0008 (0x0008 - 0x0000)
-struct component_screen_C_setLight_Angle final
-{
-public:
-	double                                        Light_Angle_0;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function component_screen.component_screen_C.setLight_Intensity
-// 0x0008 (0x0008 - 0x0000)
-struct component_screen_C_setLight_Intensity final
-{
-public:
-	double                                        Light_Intensity_0;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function component_screen.component_screen_C.setLight_Reach
-// 0x0008 (0x0008 - 0x0000)
-struct component_screen_C_setLight_Reach final
-{
-public:
-	double                                        Light_Reach_0;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function component_screen.component_screen_C.setLight_Spread
-// 0x0008 (0x0008 - 0x0000)
-struct component_screen_C_setLight_Spread final
-{
-public:
-	double                                        Light_Spread_0;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function component_screen.component_screen_C.setMode_RGB
-// 0x0001 (0x0001 - 0x0000)
-struct component_screen_C_setMode_RGB final
-{
-public:
-	bool                                          Mode_RGB_0;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function component_screen.component_screen_C.setNumber of  horizontal slides in the texture
-// 0x0008 (0x0008 - 0x0000)
-struct component_screen_C_setNumber_of__horizontal_slides_in_the_texture final
-{
-public:
-	double                                        Number_of__horizontal_slides_in_the_texture_0;     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function component_screen.component_screen_C.setNumber of  vertical slides in the texture
-// 0x0008 (0x0008 - 0x0000)
-struct component_screen_C_setNumber_of__vertical_slides_in_the_texture final
-{
-public:
-	double                                        Number_of__vertical_slides_in_the_texture_0;       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function component_screen.component_screen_C.setPixel_type
-// 0x0004 (0x0004 - 0x0000)
-struct component_screen_C_setPixel_type final
-{
-public:
-	int32                                         Pixel_type_0;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function component_screen.component_screen_C.setResolution
-// 0x0004 (0x0004 - 0x0000)
-struct component_screen_C_setResolution final
-{
-public:
-	int32                                         resolution_0;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function component_screen.component_screen_C.setRoughness_Multiplier
-// 0x0008 (0x0008 - 0x0000)
-struct component_screen_C_setRoughness_Multiplier final
-{
-public:
-	double                                        Roughness_Multiplier_0;                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function component_screen.component_screen_C.H)
-// 0x0008 (0x0008 - 0x0000)
-struct component_screen_C_H__0 final
-{
-public:
-	double                                        Param_H__0;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function component_screen.component_screen_C.setScreenPlaysMovie
-// 0x0001 (0x0001 - 0x0000)
-struct component_screen_C_setScreenPlaysMovie final
-{
-public:
-	bool                                          Screens_plays_movie_0;                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function component_screen.component_screen_C.setSide_Attenuation
-// 0x0008 (0x0008 - 0x0000)
-struct component_screen_C_setSide_Attenuation final
-{
-public:
-	double                                        Side_Attenuation_0;                                // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function component_screen.component_screen_C.setSource_bink_media_player
-// 0x0008 (0x0008 - 0x0000)
-struct component_screen_C_setSource_bink_media_player final
-{
-public:
-	class UBinkMediaPlayer*                       source_bink_media_player_0;                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function component_screen.component_screen_C.setSpecularity
-// 0x0008 (0x0008 - 0x0000)
-struct component_screen_C_setSpecularity final
-{
-public:
-	double                                        Specularity_0;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function component_screen.component_screen_C.setSub_texture_part_used_end_range
-// 0x0004 (0x0004 - 0x0000)
-struct component_screen_C_setSub_texture_part_used_end_range final
-{
-public:
-	int32                                         sub_texture_part_used_end_range_0;                 // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function component_screen.component_screen_C.setSub_texture_part_used_start_range
-// 0x0004 (0x0004 - 0x0000)
-struct component_screen_C_setSub_texture_part_used_start_range final
-{
-public:
-	int32                                         sub_texture_part_used_start_range_0;               // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function component_screen.component_screen_C.setSwap_offest_by_position
-// 0x0001 (0x0001 - 0x0000)
-struct component_screen_C_setSwap_offest_by_position final
-{
-public:
-	bool                                          swap_offest_by_position_0;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function component_screen.component_screen_C.setSwap_period
-// 0x0008 (0x0008 - 0x0000)
-struct component_screen_C_setSwap_period final
-{
-public:
-	double                                        Swap_period_0;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function component_screen.component_screen_C.setup
-// 0x00D8 (0x00D8 - 0x0000)
-struct component_screen_C_setup final
-{
-public:
-	class UStaticMeshComponent*                   meshes_0;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZCosmeticDestructionComponent*       SBZCosmeticDestruction_0;                          // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                CallFunc_Conv_LinearColorToVector_ReturnValue;     // 0x0010(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)> K2Node_CreateDelegate_OutputDelegate; // 0x0028(0x0014)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D[0x3];                                       // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Conv_BoolToDouble_ReturnValue;            // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Conv_BoolToDouble_ReturnValue_1;          // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Conv_BoolToDouble_ReturnValue_2;          // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue;             // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue_1;           // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue_2;           // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Conv_BoolToDouble_ReturnValue_3;          // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Conv_IntToDouble_ReturnValue_3;           // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_1; // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_2; // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_3; // 0x008C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_4; // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_5; // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_6; // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_7; // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_8; // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_9; // 0x00A4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_10; // 0x00A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_11; // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_12; // 0x00B0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_13; // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_14; // 0x00B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_15; // 0x00BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_16; // 0x00C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_17; // 0x00C4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_18; // 0x00C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_19; // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_20; // 0x00D0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetDefaultCustomPrimitiveDataFloat_Value_ImplicitCast_21; // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_component_screen_C_ExecuteUbergraph_component_screen;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

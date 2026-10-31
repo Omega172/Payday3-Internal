@@ -16,25 +16,45 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ReplicatedBinaryActorMovableBarrier.BP_ReplicatedBinaryActorMovableBarrier_C.BndEvt__BP_ReplicatedBinaryActorAIHousing_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// Function BP_ReplicatedBinaryActorMovableBarrier.BP_ReplicatedBinaryActorMovableBarrier_C.z__UpdateFunc
 // (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ReplicatedBinaryActorMovableBarrier_C::BndEvt__BP_ReplicatedBinaryActorAIHousing_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_ReplicatedBinaryActorMovableBarrier_C::z__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"z__UpdateFunc", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActorMovableBarrier_C", "BndEvt__BP_ReplicatedBinaryActorAIHousing_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_ReplicatedBinaryActorMovableBarrier_C_BndEvt__BP_ReplicatedBinaryActorAIHousing_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
 
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+// Function BP_ReplicatedBinaryActorMovableBarrier.BP_ReplicatedBinaryActorMovableBarrier_C.z__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_ReplicatedBinaryActorMovableBarrier_C::z__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"z__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ReplicatedBinaryActorMovableBarrier.BP_ReplicatedBinaryActorMovableBarrier_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bStateToChangeTo_OnStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ReplicatedBinaryActorMovableBarrier_C::OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_ReplicatedBinaryActorMovableBarrier_C_OnStateChanged Parms{};
+
+	Parms.bStateToChangeTo_OnStateChanged = bStateToChangeTo_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -47,10 +67,8 @@ void ABP_ReplicatedBinaryActorMovableBarrier_C::BndEvt__BP_ReplicatedBinaryActor
 
 void ABP_ReplicatedBinaryActorMovableBarrier_C::ExecuteUbergraph_BP_ReplicatedBinaryActorMovableBarrier(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActorMovableBarrier_C", "ExecuteUbergraph_BP_ReplicatedBinaryActorMovableBarrier");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ReplicatedBinaryActorMovableBarrier_C", "ExecuteUbergraph_BP_ReplicatedBinaryActorMovableBarrier", FuncInfo);
 
 	Params::BP_ReplicatedBinaryActorMovableBarrier_C_ExecuteUbergraph_BP_ReplicatedBinaryActorMovableBarrier Parms{};
 
@@ -60,53 +78,25 @@ void ABP_ReplicatedBinaryActorMovableBarrier_C::ExecuteUbergraph_BP_ReplicatedBi
 }
 
 
-// Function BP_ReplicatedBinaryActorMovableBarrier.BP_ReplicatedBinaryActorMovableBarrier_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
+// Function BP_ReplicatedBinaryActorMovableBarrier.BP_ReplicatedBinaryActorMovableBarrier_C.BndEvt__BP_ReplicatedBinaryActorAIHousing_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ReplicatedBinaryActorMovableBarrier_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
+void ABP_ReplicatedBinaryActorMovableBarrier_C::BndEvt__BP_ReplicatedBinaryActorAIHousing_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ReplicatedBinaryActorAIHousing_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActorMovableBarrier_C", "OnStateChanged");
+	Params::BP_ReplicatedBinaryActorMovableBarrier_C_BndEvt__BP_ReplicatedBinaryActorAIHousing_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
 
-	Params::BP_ReplicatedBinaryActorMovableBarrier_C_OnStateChanged Parms{};
-
-	Parms.bStateToChangeTo = bStateToChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ReplicatedBinaryActorMovableBarrier.BP_ReplicatedBinaryActorMovableBarrier_C.z__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_ReplicatedBinaryActorMovableBarrier_C::z__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActorMovableBarrier_C", "z__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ReplicatedBinaryActorMovableBarrier.BP_ReplicatedBinaryActorMovableBarrier_C.z__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_ReplicatedBinaryActorMovableBarrier_C::z__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedBinaryActorMovableBarrier_C", "z__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

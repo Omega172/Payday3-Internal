@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABust_C>();
 	}
 };
+DUMPER7_ASSERTS_ABust_C;
 
 SDK_NAMESPACE_END

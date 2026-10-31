@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_MD_DEC_Pothole_A_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_MD_DEC_Pothole_A_C;
 
 SDK_NAMESPACE_END

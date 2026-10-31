@@ -17,7 +17,7 @@ SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Order_ScriptedLifeAction.BP_Order_ScriptedLifeAction_C
 // 0x0000 (0x0230 - 0x0230)
-class UBP_Order_ScriptedLifeAction_C final : public USBZAIOrder_LifeAction
+class UBP_Order_ScriptedLifeAction_C : public USBZAIOrder_LifeAction
 {
 public:
 	static class UClass* StaticClass()

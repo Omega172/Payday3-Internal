@@ -29,13 +29,13 @@ public:
 	class ABP_LA_Civ_Cosmetic_PhoneLean_C*        BP_LA_Civ_Cosmetic_PhoneLean2_2_ExecuteUbergraph_G_ONE_LivingWorld_RefProperty; // 0x03F8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined167_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
-	void BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined169_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
-	void BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined171_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
-	void BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined_LifeAction15_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
-	void BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined_LifeAction43_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
+	void PushLiveAction(class AActor* SpecificActionComponentOwner, class UObject* Owner, int32 MixedSeed);
 	void ExecuteUbergraph_G_ONE_LivingWorld(int32 EntryPoint);
-	void PushLiveAction(class AActor* SpecificActionComponentOwner, class UObject* Owner_0, int32 MixedSeed);
+	void BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined_LifeAction43_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
+	void BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined_LifeAction15_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
+	void BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined171_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
+	void BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined169_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
+	void BndEvt__G_ONE_LivingWorld_SBZPawnSpawnPredefined167_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
 
 public:
 	static class UClass* StaticClass()
@@ -51,5 +51,6 @@ public:
 		return GetDefaultObjImpl<AG_ONE_LivingWorld_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_ONE_LivingWorld_C;
 
 SDK_NAMESPACE_END

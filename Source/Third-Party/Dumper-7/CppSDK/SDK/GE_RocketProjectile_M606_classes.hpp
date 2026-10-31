@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_RocketProjectile_M606_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_RocketProjectile_M606_C;
 
 SDK_NAMESPACE_END

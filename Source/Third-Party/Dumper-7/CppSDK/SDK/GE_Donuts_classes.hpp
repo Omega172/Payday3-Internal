@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_Donuts_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_Donuts_C;
 
 SDK_NAMESPACE_END

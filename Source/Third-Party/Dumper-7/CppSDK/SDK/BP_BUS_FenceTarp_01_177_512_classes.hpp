@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_BUS_FenceTarp_01_177_512_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BUS_FenceTarp_01_177_512_C;
 
 SDK_NAMESPACE_END

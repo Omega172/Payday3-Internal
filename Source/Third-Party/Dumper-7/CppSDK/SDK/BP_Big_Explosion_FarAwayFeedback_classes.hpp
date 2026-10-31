@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UBP_Big_Explosion_FarAwayFeedback_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_Big_Explosion_FarAwayFeedback_C;
 
 SDK_NAMESPACE_END

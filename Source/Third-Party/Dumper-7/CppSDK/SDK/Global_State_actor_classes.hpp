@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<AGlobal_State_actor_C>();
 	}
 };
+DUMPER7_ASSERTS_AGlobal_State_actor_C;
 
 SDK_NAMESPACE_END

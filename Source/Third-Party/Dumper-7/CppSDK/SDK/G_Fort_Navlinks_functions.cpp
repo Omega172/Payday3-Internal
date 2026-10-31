@@ -16,77 +16,181 @@
 
 SDK_NAMESPACE_START
 
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BlackScreenStarted
-// (Event, Public, BlueprintEvent)
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.TruckStreetGone
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Fort_Navlinks_C::BlackScreenStarted()
+void AG_Fort_Navlinks_C::TruckStreetGone()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "BlackScreenStarted");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TruckStreetGone", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_BP_ZiplineBag2_K2Node_ActorBoundEvent_15_SBZBagPickedUp__DelegateSignature
-// (BlueprintEvent)
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.TruckSideAllyGone
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_BP_ZiplineBag2_K2Node_ActorBoundEvent_15_SBZBagPickedUp__DelegateSignature()
+void AG_Fort_Navlinks_C::TruckSideAllyGone()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "BndEvt__G_Fort_Navlinks_BP_ZiplineBag2_K2Node_ActorBoundEvent_15_SBZBagPickedUp__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TruckSideAllyGone", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_BP_ZiplineBag3_K2Node_ActorBoundEvent_14_SBZBagPickedUp__DelegateSignature
-// (BlueprintEvent)
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.TruckLoadingAreaGone
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_BP_ZiplineBag3_K2Node_ActorBoundEvent_14_SBZBagPickedUp__DelegateSignature()
+void AG_Fort_Navlinks_C::TruckLoadingAreaGone()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "BndEvt__G_Fort_Navlinks_BP_ZiplineBag3_K2Node_ActorBoundEvent_14_SBZBagPickedUp__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TruckLoadingAreaGone", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_BP_ZiplineBag4_K2Node_ActorBoundEvent_16_SBZBagPickedUp__DelegateSignature
-// (BlueprintEvent)
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.TruckIsInAlly
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_BP_ZiplineBag4_K2Node_ActorBoundEvent_16_SBZBagPickedUp__DelegateSignature()
+void AG_Fort_Navlinks_C::TruckIsInAlly()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "BndEvt__G_Fort_Navlinks_BP_ZiplineBag4_K2Node_ActorBoundEvent_16_SBZBagPickedUp__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"TruckIsInAlly", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline3_K2Node_ActorBoundEvent_25_SBZBagEnteredDelegate__DelegateSignature
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.SpawnSideStreet
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_Navlinks_C::SpawnSideStreet()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnSideStreet", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.SpawnSewer
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_Navlinks_C::SpawnSewer()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnSewer", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.SpawnGarage
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_Navlinks_C::SpawnGarage()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnGarage", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.SpawnCrossing
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_Navlinks_C::SpawnCrossing()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SpawnCrossing", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.OnPreplanningAssetsTagsApplied
+// (Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FGameplayTagContainer&     PreplanningTagContainer_OnPreplanningAssetsTagsApplied (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void AG_Fort_Navlinks_C::OnPreplanningAssetsTagsApplied(const struct FGameplayTagContainer& PreplanningTagContainer_OnPreplanningAssetsTagsApplied)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPreplanningAssetsTagsApplied", FnName));
+
+	Params::G_Fort_Navlinks_C_OnPreplanningAssetsTagsApplied Parms{};
+
+	Parms.PreplanningTagContainer_OnPreplanningAssetsTagsApplied = std::move(PreplanningTagContainer_OnPreplanningAssetsTagsApplied);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.OnPlayersCarryBagChanged
+// (Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FSBZPlayersCarryBagChangedEvent&Data_OnPlayersCarryBagChanged                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+
+void AG_Fort_Navlinks_C::OnPlayersCarryBagChanged(const struct FSBZPlayersCarryBagChangedEvent& Data_OnPlayersCarryBagChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPlayersCarryBagChanged", FnName));
+
+	Params::G_Fort_Navlinks_C_OnPlayersCarryBagChanged Parms{};
+
+	Parms.Data_OnPlayersCarryBagChanged = std::move(Data_OnPlayersCarryBagChanged);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.GarageOpened
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Fort_Navlinks_C::GarageOpened()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GarageOpened", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.ExecuteUbergraph_G_Fort_Navlinks
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Fort_Navlinks_C::ExecuteUbergraph_G_Fort_Navlinks(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_Fort_Navlinks_C", "ExecuteUbergraph_G_Fort_Navlinks", FuncInfo);
+
+	Params::G_Fort_Navlinks_C_ExecuteUbergraph_G_Fort_Navlinks Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline3_K2Node_ActorBoundEvent_25_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
+void AG_Fort_Navlinks_C::BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline3_K2Node_ActorBoundEvent_25_SBZBagEnteredDelegate__DelegateSignature");
-
-	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline3_K2Node_ActorBoundEvent_25_SBZBagEnteredDelegate__DelegateSignature Parms{};
+	Params::G_Fort_Navlinks_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature Parms{};
 
 	Parms.Volume = Volume;
 	Parms.Bag = Bag;
@@ -96,21 +200,19 @@ void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline3_K2
 }
 
 
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline4_K2Node_ActorBoundEvent_26_SBZBagEnteredDelegate__DelegateSignature
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline4_K2Node_ActorBoundEvent_26_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
+void AG_Fort_Navlinks_C::BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline4_K2Node_ActorBoundEvent_26_SBZBagEnteredDelegate__DelegateSignature");
-
-	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline4_K2Node_ActorBoundEvent_26_SBZBagEnteredDelegate__DelegateSignature Parms{};
+	Params::G_Fort_Navlinks_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature Parms{};
 
 	Parms.Volume = Volume;
 	Parms.Bag = Bag;
@@ -120,333 +222,31 @@ void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline4_K2
 }
 
 
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline5_K2Node_ActorBoundEvent_16_SBZBagEnteredDelegate__DelegateSignature
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_ScriptTemplate_Scripting_BP_ZiplineBag1_K2Node_ActorBoundEvent_6_SBZBagPickedUp__DelegateSignature
 // (BlueprintEvent)
-// Parameters:
-// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline5_K2Node_ActorBoundEvent_16_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
+void AG_Fort_Navlinks_C::BndEvt__G_ScriptTemplate_Scripting_BP_ZiplineBag1_K2Node_ActorBoundEvent_6_SBZBagPickedUp__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_ScriptTemplate_Scripting_BP_ZiplineBag1_K2Node_ActorBoundEvent_6_SBZBagPickedUp__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline5_K2Node_ActorBoundEvent_16_SBZBagEnteredDelegate__DelegateSignature");
-
-	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline5_K2Node_ActorBoundEvent_16_SBZBagEnteredDelegate__DelegateSignature Parms{};
-
-	Parms.Volume = Volume;
-	Parms.Bag = Bag;
-	Parms.Handle = std::move(Handle);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline6_K2Node_ActorBoundEvent_17_SBZBagEnteredDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline6_K2Node_ActorBoundEvent_17_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline6_K2Node_ActorBoundEvent_17_SBZBagEnteredDelegate__DelegateSignature");
-
-	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline6_K2Node_ActorBoundEvent_17_SBZBagEnteredDelegate__DelegateSignature Parms{};
-
-	Parms.Volume = Volume;
-	Parms.Bag = Bag;
-	Parms.Handle = std::move(Handle);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume10_K2Node_ActorBoundEvent_9_SBZFilterActorDynamicDelegate__DelegateSignature
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume_1_K2Node_ActorBoundEvent_0_SBZFilterActorDynamicDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume10_K2Node_ActorBoundEvent_9_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume_1_K2Node_ActorBoundEvent_0_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume_1_K2Node_ActorBoundEvent_0_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume10_K2Node_ActorBoundEvent_9_SBZFilterActorDynamicDelegate__DelegateSignature");
-
-	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume10_K2Node_ActorBoundEvent_9_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Identifier = Identifier;
-	Parms.Actor = Actor;
-	Parms.CurrentTotalActors = CurrentTotalActors;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume11_K2Node_ActorBoundEvent_10_SBZFilterActorDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume11_K2Node_ActorBoundEvent_10_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume11_K2Node_ActorBoundEvent_10_SBZFilterActorDynamicDelegate__DelegateSignature");
-
-	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume11_K2Node_ActorBoundEvent_10_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Identifier = Identifier;
-	Parms.Actor = Actor;
-	Parms.CurrentTotalActors = CurrentTotalActors;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume12_K2Node_ActorBoundEvent_11_SBZFilterActorDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume12_K2Node_ActorBoundEvent_11_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume12_K2Node_ActorBoundEvent_11_SBZFilterActorDynamicDelegate__DelegateSignature");
-
-	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume12_K2Node_ActorBoundEvent_11_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Identifier = Identifier;
-	Parms.Actor = Actor;
-	Parms.CurrentTotalActors = CurrentTotalActors;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume13_K2Node_ActorBoundEvent_12_SBZFilterActorDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume13_K2Node_ActorBoundEvent_12_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume13_K2Node_ActorBoundEvent_12_SBZFilterActorDynamicDelegate__DelegateSignature");
-
-	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume13_K2Node_ActorBoundEvent_12_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Identifier = Identifier;
-	Parms.Actor = Actor;
-	Parms.CurrentTotalActors = CurrentTotalActors;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume14_K2Node_ActorBoundEvent_13_SBZFilterActorDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume14_K2Node_ActorBoundEvent_13_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume14_K2Node_ActorBoundEvent_13_SBZFilterActorDynamicDelegate__DelegateSignature");
-
-	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume14_K2Node_ActorBoundEvent_13_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Identifier = Identifier;
-	Parms.Actor = Actor;
-	Parms.CurrentTotalActors = CurrentTotalActors;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume2_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume2_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume2_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature");
-
-	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume2_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Identifier = Identifier;
-	Parms.Actor = Actor;
-	Parms.CurrentTotalActors = CurrentTotalActors;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume3_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume3_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume3_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature");
-
-	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume3_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Identifier = Identifier;
-	Parms.Actor = Actor;
-	Parms.CurrentTotalActors = CurrentTotalActors;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume4_K2Node_ActorBoundEvent_3_SBZFilterActorDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume4_K2Node_ActorBoundEvent_3_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume4_K2Node_ActorBoundEvent_3_SBZFilterActorDynamicDelegate__DelegateSignature");
-
-	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume4_K2Node_ActorBoundEvent_3_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Identifier = Identifier;
-	Parms.Actor = Actor;
-	Parms.CurrentTotalActors = CurrentTotalActors;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume5_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume5_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume5_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature");
-
-	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume5_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Identifier = Identifier;
-	Parms.Actor = Actor;
-	Parms.CurrentTotalActors = CurrentTotalActors;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume6_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume6_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume6_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature");
-
-	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume6_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Identifier = Identifier;
-	Parms.Actor = Actor;
-	Parms.CurrentTotalActors = CurrentTotalActors;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume7_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume7_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume7_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature");
-
-	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume7_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Identifier = Identifier;
-	Parms.Actor = Actor;
-	Parms.CurrentTotalActors = CurrentTotalActors;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume8_K2Node_ActorBoundEvent_7_SBZFilterActorDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume8_K2Node_ActorBoundEvent_7_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume8_K2Node_ActorBoundEvent_7_SBZFilterActorDynamicDelegate__DelegateSignature");
-
-	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume8_K2Node_ActorBoundEvent_7_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
+	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume_1_K2Node_ActorBoundEvent_0_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
 
 	Parms.Identifier = Identifier;
 	Parms.Actor = Actor;
@@ -465,10 +265,8 @@ void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume8_K2Nod
 
 void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume9_K2Node_ActorBoundEvent_8_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume9_K2Node_ActorBoundEvent_8_SBZFilterActorDynamicDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume9_K2Node_ActorBoundEvent_8_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
 
 	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume9_K2Node_ActorBoundEvent_8_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
 
@@ -480,21 +278,19 @@ void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume9_K2Nod
 }
 
 
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume_1_K2Node_ActorBoundEvent_0_SBZFilterActorDynamicDelegate__DelegateSignature
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume8_K2Node_ActorBoundEvent_7_SBZFilterActorDynamicDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume_1_K2Node_ActorBoundEvent_0_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume8_K2Node_ActorBoundEvent_7_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume8_K2Node_ActorBoundEvent_7_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume_1_K2Node_ActorBoundEvent_0_SBZFilterActorDynamicDelegate__DelegateSignature");
-
-	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume_1_K2Node_ActorBoundEvent_0_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
+	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume8_K2Node_ActorBoundEvent_7_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
 
 	Parms.Identifier = Identifier;
 	Parms.Actor = Actor;
@@ -504,35 +300,261 @@ void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume_1_K2No
 }
 
 
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_ScriptTemplate_Scripting_BP_ZiplineBag1_K2Node_ActorBoundEvent_6_SBZBagPickedUp__DelegateSignature
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume7_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature
 // (BlueprintEvent)
+// Parameters:
+// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Fort_Navlinks_C::BndEvt__G_ScriptTemplate_Scripting_BP_ZiplineBag1_K2Node_ActorBoundEvent_6_SBZBagPickedUp__DelegateSignature()
+void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume7_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume7_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "BndEvt__G_ScriptTemplate_Scripting_BP_ZiplineBag1_K2Node_ActorBoundEvent_6_SBZBagPickedUp__DelegateSignature");
+	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume7_K2Node_ActorBoundEvent_6_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.Identifier = Identifier;
+	Parms.Actor = Actor;
+	Parms.CurrentTotalActors = CurrentTotalActors;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume6_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume6_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume6_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume6_K2Node_ActorBoundEvent_5_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Identifier = Identifier;
+	Parms.Actor = Actor;
+	Parms.CurrentTotalActors = CurrentTotalActors;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume5_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume5_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume5_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume5_K2Node_ActorBoundEvent_4_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Identifier = Identifier;
+	Parms.Actor = Actor;
+	Parms.CurrentTotalActors = CurrentTotalActors;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume4_K2Node_ActorBoundEvent_3_SBZFilterActorDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume4_K2Node_ActorBoundEvent_3_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume4_K2Node_ActorBoundEvent_3_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume4_K2Node_ActorBoundEvent_3_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Identifier = Identifier;
+	Parms.Actor = Actor;
+	Parms.CurrentTotalActors = CurrentTotalActors;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume3_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume3_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume3_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume3_K2Node_ActorBoundEvent_2_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Identifier = Identifier;
+	Parms.Actor = Actor;
+	Parms.CurrentTotalActors = CurrentTotalActors;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume2_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume2_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume2_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume2_K2Node_ActorBoundEvent_1_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Identifier = Identifier;
+	Parms.Actor = Actor;
+	Parms.CurrentTotalActors = CurrentTotalActors;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume14_K2Node_ActorBoundEvent_13_SBZFilterActorDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume14_K2Node_ActorBoundEvent_13_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume14_K2Node_ActorBoundEvent_13_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume14_K2Node_ActorBoundEvent_13_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Identifier = Identifier;
+	Parms.Actor = Actor;
+	Parms.CurrentTotalActors = CurrentTotalActors;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume13_K2Node_ActorBoundEvent_12_SBZFilterActorDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume13_K2Node_ActorBoundEvent_12_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume13_K2Node_ActorBoundEvent_12_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume13_K2Node_ActorBoundEvent_12_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Identifier = Identifier;
+	Parms.Actor = Actor;
+	Parms.CurrentTotalActors = CurrentTotalActors;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume12_K2Node_ActorBoundEvent_11_SBZFilterActorDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume12_K2Node_ActorBoundEvent_11_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume12_K2Node_ActorBoundEvent_11_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume12_K2Node_ActorBoundEvent_11_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Identifier = Identifier;
+	Parms.Actor = Actor;
+	Parms.CurrentTotalActors = CurrentTotalActors;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume11_K2Node_ActorBoundEvent_10_SBZFilterActorDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume11_K2Node_ActorBoundEvent_10_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume11_K2Node_ActorBoundEvent_10_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume11_K2Node_ActorBoundEvent_10_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Identifier = Identifier;
+	Parms.Actor = Actor;
+	Parms.CurrentTotalActors = CurrentTotalActors;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume10_K2Node_ActorBoundEvent_9_SBZFilterActorDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class FName                             Identifier                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           Actor                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   CurrentTotalActors                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume10_K2Node_ActorBoundEvent_9_SBZFilterActorDynamicDelegate__DelegateSignature(class FName Identifier, class AActor* Actor, int32 CurrentTotalActors)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume10_K2Node_ActorBoundEvent_9_SBZFilterActorDynamicDelegate__DelegateSignature", FnName));
+
+	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZFilteredTriggerVolume10_K2Node_ActorBoundEvent_9_SBZFilterActorDynamicDelegate__DelegateSignature Parms{};
+
+	Parms.Identifier = Identifier;
+	Parms.Actor = Actor;
+	Parms.CurrentTotalActors = CurrentTotalActors;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline6_K2Node_ActorBoundEvent_17_SBZBagEnteredDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void AG_Fort_Navlinks_C::BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
+void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline6_K2Node_ActorBoundEvent_17_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline6_K2Node_ActorBoundEvent_17_SBZBagEnteredDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature");
-
-	Params::G_Fort_Navlinks_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline1_K2Node_ActorBoundEvent_7_SBZBagEnteredDelegate__DelegateSignature Parms{};
+	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline6_K2Node_ActorBoundEvent_17_SBZBagEnteredDelegate__DelegateSignature Parms{};
 
 	Parms.Volume = Volume;
 	Parms.Bag = Bag;
@@ -542,21 +564,19 @@ void AG_Fort_Navlinks_C::BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_
 }
 
 
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline5_K2Node_ActorBoundEvent_16_SBZBagEnteredDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void AG_Fort_Navlinks_C::BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
+void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline5_K2Node_ActorBoundEvent_16_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline5_K2Node_ActorBoundEvent_16_SBZBagEnteredDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature");
-
-	Params::G_Fort_Navlinks_C_BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_Zipline2_K2Node_ActorBoundEvent_8_SBZBagEnteredDelegate__DelegateSignature Parms{};
+	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline5_K2Node_ActorBoundEvent_16_SBZBagEnteredDelegate__DelegateSignature Parms{};
 
 	Parms.Volume = Volume;
 	Parms.Bag = Bag;
@@ -566,187 +586,93 @@ void AG_Fort_Navlinks_C::BndEvt__G_ScriptTemplate_Scripting_SBZBagTriggerVolume_
 }
 
 
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.ExecuteUbergraph_G_Fort_Navlinks
-// (Final, UbergraphFunction, HasDefaults)
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline4_K2Node_ActorBoundEvent_26_SBZBagEnteredDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void AG_Fort_Navlinks_C::ExecuteUbergraph_G_Fort_Navlinks(int32 EntryPoint)
+void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline4_K2Node_ActorBoundEvent_26_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline4_K2Node_ActorBoundEvent_26_SBZBagEnteredDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "ExecuteUbergraph_G_Fort_Navlinks");
+	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline4_K2Node_ActorBoundEvent_26_SBZBagEnteredDelegate__DelegateSignature Parms{};
 
-	Params::G_Fort_Navlinks_C_ExecuteUbergraph_G_Fort_Navlinks Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Volume = Volume;
+	Parms.Bag = Bag;
+	Parms.Handle = std::move(Handle);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.GarageOpened
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_Navlinks_C::GarageOpened()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "GarageOpened");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.OnPlayersCarryBagChanged
-// (Event, Public, HasOutParams, BlueprintEvent)
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline3_K2Node_ActorBoundEvent_25_SBZBagEnteredDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// const struct FSBZPlayersCarryBagChangedEvent&Data                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// class ASBZBagTriggerVolume*             Volume                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class ASBZBagItem*                      Bag                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZBagHandle&             Handle                                                 (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void AG_Fort_Navlinks_C::OnPlayersCarryBagChanged(const struct FSBZPlayersCarryBagChangedEvent& Data)
+void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline3_K2Node_ActorBoundEvent_25_SBZBagEnteredDelegate__DelegateSignature(class ASBZBagTriggerVolume* Volume, class ASBZBagItem* Bag, const struct FSBZBagHandle& Handle)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline3_K2Node_ActorBoundEvent_25_SBZBagEnteredDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "OnPlayersCarryBagChanged");
+	Params::G_Fort_Navlinks_C_BndEvt__G_Fort_Navlinks_SBZBagTriggerVolume_Zipline3_K2Node_ActorBoundEvent_25_SBZBagEnteredDelegate__DelegateSignature Parms{};
 
-	Params::G_Fort_Navlinks_C_OnPlayersCarryBagChanged Parms{};
-
-	Parms.Data = std::move(Data);
+	Parms.Volume = Volume;
+	Parms.Bag = Bag;
+	Parms.Handle = std::move(Handle);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.OnPreplanningAssetsTagsApplied
-// (Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FGameplayTagContainer&     PreplanningTagContainer                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_BP_ZiplineBag4_K2Node_ActorBoundEvent_16_SBZBagPickedUp__DelegateSignature
+// (BlueprintEvent)
 
-void AG_Fort_Navlinks_C::OnPreplanningAssetsTagsApplied(const struct FGameplayTagContainer& PreplanningTagContainer)
+void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_BP_ZiplineBag4_K2Node_ActorBoundEvent_16_SBZBagPickedUp__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "OnPreplanningAssetsTagsApplied");
-
-	Params::G_Fort_Navlinks_C_OnPreplanningAssetsTagsApplied Parms{};
-
-	Parms.PreplanningTagContainer = std::move(PreplanningTagContainer);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.SpawnCrossing
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_Navlinks_C::SpawnCrossing()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "SpawnCrossing");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Navlinks_BP_ZiplineBag4_K2Node_ActorBoundEvent_16_SBZBagPickedUp__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.SpawnGarage
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_BP_ZiplineBag3_K2Node_ActorBoundEvent_14_SBZBagPickedUp__DelegateSignature
+// (BlueprintEvent)
 
-void AG_Fort_Navlinks_C::SpawnGarage()
+void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_BP_ZiplineBag3_K2Node_ActorBoundEvent_14_SBZBagPickedUp__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "SpawnGarage");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Navlinks_BP_ZiplineBag3_K2Node_ActorBoundEvent_14_SBZBagPickedUp__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.SpawnSewer
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BndEvt__G_Fort_Navlinks_BP_ZiplineBag2_K2Node_ActorBoundEvent_15_SBZBagPickedUp__DelegateSignature
+// (BlueprintEvent)
 
-void AG_Fort_Navlinks_C::SpawnSewer()
+void AG_Fort_Navlinks_C::BndEvt__G_Fort_Navlinks_BP_ZiplineBag2_K2Node_ActorBoundEvent_15_SBZBagPickedUp__DelegateSignature()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "SpawnSewer");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Fort_Navlinks_BP_ZiplineBag2_K2Node_ActorBoundEvent_15_SBZBagPickedUp__DelegateSignature", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.SpawnSideStreet
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Fort_Navlinks.G_Fort_Navlinks_C.BlackScreenStarted
+// (Event, Public, BlueprintEvent)
 
-void AG_Fort_Navlinks_C::SpawnSideStreet()
+void AG_Fort_Navlinks_C::BlackScreenStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "SpawnSideStreet");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.TruckIsInAlly
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_Navlinks_C::TruckIsInAlly()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "TruckIsInAlly");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.TruckLoadingAreaGone
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_Navlinks_C::TruckLoadingAreaGone()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "TruckLoadingAreaGone");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.TruckSideAllyGone
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_Navlinks_C::TruckSideAllyGone()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "TruckSideAllyGone");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Fort_Navlinks.G_Fort_Navlinks_C.TruckStreetGone
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Fort_Navlinks_C::TruckStreetGone()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Fort_Navlinks_C", "TruckStreetGone");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BlackScreenStarted", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

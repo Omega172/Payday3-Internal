@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_BackItemCleaned_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BackItemCleaned_C;
 
 SDK_NAMESPACE_END

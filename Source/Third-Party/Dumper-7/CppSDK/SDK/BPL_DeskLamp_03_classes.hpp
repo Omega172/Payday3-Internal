@@ -40,5 +40,6 @@ public:
 		return GetDefaultObjImpl<ABPL_DeskLamp_03_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_DeskLamp_03_C;
 
 SDK_NAMESPACE_END

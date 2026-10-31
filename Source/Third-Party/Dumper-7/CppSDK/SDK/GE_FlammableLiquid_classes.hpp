@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_FlammableLiquid_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_FlammableLiquid_C;
 
 SDK_NAMESPACE_END

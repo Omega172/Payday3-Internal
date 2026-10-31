@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UDT_SentryGun_Explosion_C>();
 	}
 };
+DUMPER7_ASSERTS_UDT_SentryGun_Explosion_C;
 
 SDK_NAMESPACE_END

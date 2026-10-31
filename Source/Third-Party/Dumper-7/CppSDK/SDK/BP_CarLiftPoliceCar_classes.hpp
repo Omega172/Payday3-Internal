@@ -57,12 +57,12 @@ public:
 	class ABP_CarLiftPoliceCarLeftDoor_C*         LeftDoor;                                          // 0x0460(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_CarKeys_01_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
-	void BndEvt__BP_CarLiftPoliceCar_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_CarLiftPoliceCar(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
-	void SetInteraction(bool State);
 	void UserConstructionScript();
+	void SetInteraction(bool State);
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_CarLiftPoliceCar(int32 EntryPoint);
+	void BndEvt__BP_CarLiftPoliceCar_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_CarKeys_01_SBZInteractable_K2Node_ComponentBoundEvent_4_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
 
 public:
 	static class UClass* StaticClass()
@@ -78,5 +78,6 @@ public:
 		return GetDefaultObjImpl<ABP_CarLiftPoliceCar_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CarLiftPoliceCar_C;
 
 SDK_NAMESPACE_END

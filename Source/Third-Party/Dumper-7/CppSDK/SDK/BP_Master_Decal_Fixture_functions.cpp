@@ -16,57 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Master_Decal_Fixture.BP_Master_Decal_Fixture_C.<<PrevMaterial
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_Master_Decal_Fixture.BP_Master_Decal_Fixture_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Master_Decal_Fixture_C::__PrevMaterial()
+void ABP_Master_Decal_Fixture_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Master_Decal_Fixture_C", "<<PrevMaterial");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Master_Decal_Fixture.BP_Master_Decal_Fixture_C.<<PrevMesh
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_Master_Decal_Fixture_C::__PrevMesh()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Master_Decal_Fixture_C", "<<PrevMesh");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Master_Decal_Fixture.BP_Master_Decal_Fixture_C.Build
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_Master_Decal_Fixture_C::Build()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Master_Decal_Fixture_C", "Build");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Master_Decal_Fixture.BP_Master_Decal_Fixture_C.NextMaterial>>
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_Master_Decal_Fixture_C::NextMaterial__()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Master_Decal_Fixture_C", "NextMaterial>>");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -77,24 +33,56 @@ void ABP_Master_Decal_Fixture_C::NextMaterial__()
 
 void ABP_Master_Decal_Fixture_C::NextMesh__()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Master_Decal_Fixture_C", "NextMesh>>");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"NextMesh>>", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Master_Decal_Fixture.BP_Master_Decal_Fixture_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_Master_Decal_Fixture.BP_Master_Decal_Fixture_C.NextMaterial>>
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Master_Decal_Fixture_C::UserConstructionScript()
+void ABP_Master_Decal_Fixture_C::NextMaterial__()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"NextMaterial>>", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Master_Decal_Fixture_C", "UserConstructionScript");
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Master_Decal_Fixture.BP_Master_Decal_Fixture_C.Build
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_Master_Decal_Fixture_C::Build()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Build", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Master_Decal_Fixture.BP_Master_Decal_Fixture_C.<<PrevMesh
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_Master_Decal_Fixture_C::__PrevMesh()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"<<PrevMesh", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Master_Decal_Fixture.BP_Master_Decal_Fixture_C.<<PrevMaterial
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_Master_Decal_Fixture_C::__PrevMaterial()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"<<PrevMaterial", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

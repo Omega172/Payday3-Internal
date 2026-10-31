@@ -11,25 +11,40 @@
 #include "Basic.hpp"
 
 #include "Starbreeze_structs.hpp"
+#include "BPS_GlassHit_VFXData_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
-#include "BPS_GlassHit_VFXData_structs.hpp"
 
 
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_Cuttable_destructable_Skylight_Rectangular_01.BP_Cuttable_destructable_Skylight_Rectangular_01_C.BndEvt__BP_Cuttable_destructable_Skylight_Square_01_SBZPropDamage_K2Node_ComponentBoundEvent_2_SBZPropDamageHitsSignature__DelegateSignature
-// 0x0030 (0x0030 - 0x0000)
-struct BP_Cuttable_destructable_Skylight_Rectangular_01_C_BndEvt__BP_Cuttable_destructable_Skylight_Square_01_SBZPropDamage_K2Node_ComponentBoundEvent_2_SBZPropDamageHitsSignature__DelegateSignature final
+// Function BP_Cuttable_destructable_Skylight_Rectangular_01.BP_Cuttable_destructable_Skylight_Rectangular_01_C.GetMeltingMesh
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Cuttable_destructable_Skylight_Rectangular_01_C_GetMeltingMesh final
 {
 public:
-	class UActorComponent*                        PoolComponent;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         Hits;                                              // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZPropDamageContext                  DamageContext;                                     // 0x0010(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+	class UStaticMeshComponent*                   ReturnValue_GetMeltingMesh;                        // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Cuttable_destructable_Skylight_Rectangular_01_C_GetMeltingMesh;
+
+// Function BP_Cuttable_destructable_Skylight_Rectangular_01.BP_Cuttable_destructable_Skylight_Rectangular_01_C.GetCuttableSplineComponent
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Cuttable_destructable_Skylight_Rectangular_01_C_GetCuttableSplineComponent final
+{
+public:
+	class USBZCuttableSplineComponent*            ReturnValue_GetCuttableSplineComponent;            // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Cuttable_destructable_Skylight_Rectangular_01_C_GetCuttableSplineComponent;
+
+// Function BP_Cuttable_destructable_Skylight_Rectangular_01.BP_Cuttable_destructable_Skylight_Rectangular_01_C.GetCuttableComponent
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Cuttable_destructable_Skylight_Rectangular_01_C_GetCuttableComponent final
+{
+public:
+	class USBZCuttableComponent*                  ReturnValue_GetCuttableComponent;                  // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Cuttable_destructable_Skylight_Rectangular_01_C_GetCuttableComponent;
 
 // Function BP_Cuttable_destructable_Skylight_Rectangular_01.BP_Cuttable_destructable_Skylight_Rectangular_01_C.ExecuteUbergraph_BP_Cuttable_destructable_Skylight_Rectangular_01
 // 0x0220 (0x0220 - 0x0000)
@@ -52,30 +67,20 @@ public:
 	struct FBPS_GlassHit_VFXData                  K2Node_MakeStruct_BPS_GlassHit_VFXData;            // 0x01D8(0x0038)(NoDestructor, ContainsInstancedReference, HasGetValueTypeHash)
 	TArray<struct FBPS_GlassHit_VFXData>          K2Node_MakeArray_Array;                            // 0x0210(0x0010)(ReferenceParm, ContainsInstancedReference)
 };
+DUMPER7_ASSERTS_BP_Cuttable_destructable_Skylight_Rectangular_01_C_ExecuteUbergraph_BP_Cuttable_destructable_Skylight_Rectangular_01;
 
-// Function BP_Cuttable_destructable_Skylight_Rectangular_01.BP_Cuttable_destructable_Skylight_Rectangular_01_C.GetCuttableComponent
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Cuttable_destructable_Skylight_Rectangular_01_C_GetCuttableComponent final
+// Function BP_Cuttable_destructable_Skylight_Rectangular_01.BP_Cuttable_destructable_Skylight_Rectangular_01_C.BndEvt__BP_Cuttable_destructable_Skylight_Square_01_SBZPropDamage_K2Node_ComponentBoundEvent_2_SBZPropDamageHitsSignature__DelegateSignature
+// 0x0030 (0x0030 - 0x0000)
+struct BP_Cuttable_destructable_Skylight_Rectangular_01_C_BndEvt__BP_Cuttable_destructable_Skylight_Square_01_SBZPropDamage_K2Node_ComponentBoundEvent_2_SBZPropDamageHitsSignature__DelegateSignature final
 {
 public:
-	class USBZCuttableComponent*                  ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UActorComponent*                        PoolComponent;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         Hits;                                              // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZPropDamageContext                  DamageContext;                                     // 0x0010(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-
-// Function BP_Cuttable_destructable_Skylight_Rectangular_01.BP_Cuttable_destructable_Skylight_Rectangular_01_C.GetCuttableSplineComponent
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Cuttable_destructable_Skylight_Rectangular_01_C_GetCuttableSplineComponent final
-{
-public:
-	class USBZCuttableSplineComponent*            ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_Cuttable_destructable_Skylight_Rectangular_01.BP_Cuttable_destructable_Skylight_Rectangular_01_C.GetMeltingMesh
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Cuttable_destructable_Skylight_Rectangular_01_C_GetMeltingMesh final
-{
-public:
-	class UStaticMeshComponent*                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_Cuttable_destructable_Skylight_Rectangular_01_C_BndEvt__BP_Cuttable_destructable_Skylight_Square_01_SBZPropDamage_K2Node_ComponentBoundEvent_2_SBZPropDamageHitsSignature__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

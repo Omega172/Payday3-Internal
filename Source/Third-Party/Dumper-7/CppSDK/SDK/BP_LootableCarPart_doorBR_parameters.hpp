@@ -14,6 +14,17 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_LootableCarPart_doorBR.BP_LootableCarPart_doorBR_C.OnStateChanged
+// 0x000C (0x000C - 0x0000)
+struct BP_LootableCarPart_doorBR_C_OnStateChanged final
+{
+public:
+	int32                                         OldState_OnStateChanged;                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         NewState_OnStateChanged;                           // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_LootableCarPart_doorBR_C_OnStateChanged;
+
 // Function BP_LootableCarPart_doorBR.BP_LootableCarPart_doorBR_C.ExecuteUbergraph_BP_LootableCarPart_doorBR
 // 0x0010 (0x0010 - 0x0000)
 struct BP_LootableCarPart_doorBR_C_ExecuteUbergraph_BP_LootableCarPart_doorBR final
@@ -25,16 +36,7 @@ public:
 	bool                                          K2Node_Event_bDoCosmetics;                         // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_LootableCarPart_doorBR.BP_LootableCarPart_doorBR_C.OnStateChanged
-// 0x000C (0x000C - 0x0000)
-struct BP_LootableCarPart_doorBR_C_OnStateChanged final
-{
-public:
-	int32                                         OldState;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         NewState;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_LootableCarPart_doorBR_C_ExecuteUbergraph_BP_LootableCarPart_doorBR;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

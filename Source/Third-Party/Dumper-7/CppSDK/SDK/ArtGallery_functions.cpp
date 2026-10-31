@@ -16,6 +16,18 @@
 
 SDK_NAMESPACE_START
 
+// Function ArtGallery.ArtGallery_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AArtGallery_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function ArtGallery.ArtGallery_C.ExecuteUbergraph_ArtGallery
 // (Final, UbergraphFunction)
 // Parameters:
@@ -23,30 +35,14 @@ SDK_NAMESPACE_START
 
 void AArtGallery_C::ExecuteUbergraph_ArtGallery(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ArtGallery_C", "ExecuteUbergraph_ArtGallery");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "ArtGallery_C", "ExecuteUbergraph_ArtGallery", FuncInfo);
 
 	Params::ArtGallery_C_ExecuteUbergraph_ArtGallery Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function ArtGallery.ArtGallery_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AArtGallery_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ArtGallery_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

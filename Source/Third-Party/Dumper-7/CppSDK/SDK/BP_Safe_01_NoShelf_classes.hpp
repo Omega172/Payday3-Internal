@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Safe_01_NoShelf.BP_Safe_01_NoShelf_C
-// 0x0000 (0x03D0 - 0x03D0)
+// 0x0000 (0x03D8 - 0x03D8)
 class ABP_Safe_01_NoShelf_C final : public ABP_Safe_01_C
 {
 public:
@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Safe_01_NoShelf_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Safe_01_NoShelf_C;
 
 SDK_NAMESPACE_END

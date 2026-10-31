@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_JewelryBag_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_JewelryBag_C;
 
 SDK_NAMESPACE_END

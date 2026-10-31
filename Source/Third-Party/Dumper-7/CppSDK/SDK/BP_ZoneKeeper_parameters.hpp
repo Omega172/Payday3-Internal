@@ -16,16 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_ZoneKeeper.BP_ZoneKeeper_C.CustomEvent_3
-// 0x0010 (0x0010 - 0x0000)
-struct BP_ZoneKeeper_C_CustomEvent_3 final
-{
-public:
-	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         Overlapping;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Secured;                                           // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_ZoneKeeper.BP_ZoneKeeper_C.ExecuteUbergraph_BP_ZoneKeeper
 // 0x00F0 (0x00F0 - 0x0000)
 struct BP_ZoneKeeper_C_ExecuteUbergraph_BP_ZoneKeeper final
@@ -55,6 +45,18 @@ public:
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x00E0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class ABP_Authenticator_C*                    CallFunc_FinishSpawningActor_ReturnValue;          // 0x00E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ZoneKeeper_C_ExecuteUbergraph_BP_ZoneKeeper;
+
+// Function BP_ZoneKeeper.BP_ZoneKeeper_C.CustomEvent_3
+// 0x0010 (0x0010 - 0x0000)
+struct BP_ZoneKeeper_C_CustomEvent_3 final
+{
+public:
+	class ASBZBagTriggerVolume*                   Volume;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         Overlapping;                                       // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Secured;                                           // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ZoneKeeper_C_CustomEvent_3;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

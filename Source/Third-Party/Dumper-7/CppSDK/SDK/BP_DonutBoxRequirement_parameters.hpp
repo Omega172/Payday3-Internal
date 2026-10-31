@@ -21,13 +21,13 @@ SDK_PARAM_NAMESPACE_START
 struct BP_DonutBoxRequirement_C_BP_CheckRequirement final
 {
 public:
-	const class USBZInteractorComponent*          Interactor;                                        // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FSBZInteractReqData                    OutData;                                           // 0x0008(0x0040)(Parm, OutParm)
-	bool                                          bIsSignalRequired;                                 // 0x0048(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bInIsScreenInteract;                               // 0x0049(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsCasing;                                         // 0x004A(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsEncumbered;                                     // 0x004B(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          ReturnValue;                                       // 0x004C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class USBZInteractorComponent*          Interactor_BP_CheckRequirement;                    // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FSBZInteractReqData                    OutData_BP_CheckRequirement;                       // 0x0008(0x0040)(Parm, OutParm)
+	bool                                          bIsSignalRequired_BP_CheckRequirement;             // 0x0048(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInIsScreenInteract_BP_CheckRequirement;           // 0x0049(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsCasing_BP_CheckRequirement;                     // 0x004A(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEncumbered_BP_CheckRequirement;                 // 0x004B(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          ReturnValue_BP_CheckRequirement;                   // 0x004C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4D[0x3];                                       // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FText>                           K2Node_MakeArray_Array;                            // 0x0050(0x0010)(ReferenceParm)
 	TArray<class FText>                           K2Node_MakeArray_Array_1;                          // 0x0060(0x0010)(ReferenceParm)
@@ -51,6 +51,7 @@ public:
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x01CA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x01CB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_DonutBoxRequirement_C_BP_CheckRequirement;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -16,73 +16,31 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_CosmeticSyringe.BP_CosmeticSyringe_C.ExecuteUbergraph_BP_CosmeticSyringe
-// (Final, UbergraphFunction)
+// Function BP_CosmeticSyringe.BP_CosmeticSyringe_C.ReceiveTick
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   DeltaSeconds_ReceiveTick                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_CosmeticSyringe_C::ExecuteUbergraph_BP_CosmeticSyringe(int32 EntryPoint)
+void ABP_CosmeticSyringe_C::ReceiveTick(float DeltaSeconds_ReceiveTick)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveTick", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CosmeticSyringe_C", "ExecuteUbergraph_BP_CosmeticSyringe");
+	Params::BP_CosmeticSyringe_C_ReceiveTick Parms{};
 
-	Params::BP_CosmeticSyringe_C_ExecuteUbergraph_BP_CosmeticSyringe Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.DeltaSeconds_ReceiveTick = DeltaSeconds_ReceiveTick;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_CosmeticSyringe.BP_CosmeticSyringe_C.GetAnimation
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Duration                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UAnimSequence**                   Animation                                              (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function BP_CosmeticSyringe.BP_CosmeticSyringe_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_CosmeticSyringe_C::GetAnimation(double Duration, class UAnimSequence** Animation)
+void ABP_CosmeticSyringe_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CosmeticSyringe_C", "GetAnimation");
-
-	Params::BP_CosmeticSyringe_C_GetAnimation Parms{};
-
-	Parms.Duration = Duration;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Animation != nullptr)
-		*Animation = Parms.Animation;
-}
-
-
-// Function BP_CosmeticSyringe.BP_CosmeticSyringe_C.OnPooled
-// (Event, Public, BlueprintEvent)
-
-void ABP_CosmeticSyringe_C::OnPooled()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CosmeticSyringe_C", "OnPooled");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_CosmeticSyringe.BP_CosmeticSyringe_C.OnUnpooled
-// (Event, Public, BlueprintEvent)
-
-void ABP_CosmeticSyringe_C::OnUnpooled()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CosmeticSyringe_C", "OnUnpooled");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -95,10 +53,8 @@ void ABP_CosmeticSyringe_C::OnUnpooled()
 
 void ABP_CosmeticSyringe_C::PlayAnimation(class UAnimSequence* Animation)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CosmeticSyringe_C", "PlayAnimation");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PlayAnimation", FnName));
 
 	Params::BP_CosmeticSyringe_C_PlayAnimation Parms{};
 
@@ -108,35 +64,65 @@ void ABP_CosmeticSyringe_C::PlayAnimation(class UAnimSequence* Animation)
 }
 
 
-// Function BP_CosmeticSyringe.BP_CosmeticSyringe_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_CosmeticSyringe.BP_CosmeticSyringe_C.OnUnpooled
+// (Event, Public, BlueprintEvent)
 
-void ABP_CosmeticSyringe_C::ReceiveBeginPlay()
+void ABP_CosmeticSyringe_C::OnUnpooled()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CosmeticSyringe_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnUnpooled", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_CosmeticSyringe.BP_CosmeticSyringe_C.ReceiveTick
+// Function BP_CosmeticSyringe.BP_CosmeticSyringe_C.OnPooled
 // (Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   DeltaSeconds                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_CosmeticSyringe_C::ReceiveTick(float DeltaSeconds)
+void ABP_CosmeticSyringe_C::OnPooled()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnPooled", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CosmeticSyringe_C", "ReceiveTick");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_CosmeticSyringe_C_ReceiveTick Parms{};
 
-	Parms.DeltaSeconds = DeltaSeconds;
+// Function BP_CosmeticSyringe.BP_CosmeticSyringe_C.GetAnimation
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Duration                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAnimSequence**                   Animation                                              (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_CosmeticSyringe_C::GetAnimation(double Duration, class UAnimSequence** Animation)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetAnimation", FnName));
+
+	Params::BP_CosmeticSyringe_C_GetAnimation Parms{};
+
+	Parms.Duration = Duration;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Animation != nullptr)
+		*Animation = Parms.Animation;
+}
+
+
+// Function BP_CosmeticSyringe.BP_CosmeticSyringe_C.ExecuteUbergraph_BP_CosmeticSyringe
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_CosmeticSyringe_C::ExecuteUbergraph_BP_CosmeticSyringe(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_CosmeticSyringe_C", "ExecuteUbergraph_BP_CosmeticSyringe", FuncInfo);
+
+	Params::BP_CosmeticSyringe_C_ExecuteUbergraph_BP_CosmeticSyringe Parms{};
+
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

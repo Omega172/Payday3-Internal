@@ -16,25 +16,27 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_CosmeticLapTopWithScreen.BP_CosmeticLapTopWithScreen_C.BndEvt__bp_screen_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// ESBZCosmeticDestructionType             Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZCosmeticDestructionContext&HitContext                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// Function BP_CosmeticLapTopWithScreen.BP_CosmeticLapTopWithScreen_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_CosmeticLapTopWithScreen_C::BndEvt__bp_screen_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)
+void ABP_CosmeticLapTopWithScreen_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CosmeticLapTopWithScreen_C", "BndEvt__bp_screen_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_CosmeticLapTopWithScreen_C_BndEvt__bp_screen_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature Parms{};
 
-	Parms.Type = Type;
-	Parms.HitContext = std::move(HitContext);
+// Function BP_CosmeticLapTopWithScreen.BP_CosmeticLapTopWithScreen_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-	UObject::ProcessEvent(Func, &Parms);
+void ABP_CosmeticLapTopWithScreen_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -45,10 +47,8 @@ void ABP_CosmeticLapTopWithScreen_C::BndEvt__bp_screen_SBZCosmeticDestruction_K2
 
 void ABP_CosmeticLapTopWithScreen_C::ExecuteUbergraph_BP_CosmeticLapTopWithScreen(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CosmeticLapTopWithScreen_C", "ExecuteUbergraph_BP_CosmeticLapTopWithScreen");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_CosmeticLapTopWithScreen_C", "ExecuteUbergraph_BP_CosmeticLapTopWithScreen", FuncInfo);
 
 	Params::BP_CosmeticLapTopWithScreen_C_ExecuteUbergraph_BP_CosmeticLapTopWithScreen Parms{};
 
@@ -58,31 +58,23 @@ void ABP_CosmeticLapTopWithScreen_C::ExecuteUbergraph_BP_CosmeticLapTopWithScree
 }
 
 
-// Function BP_CosmeticLapTopWithScreen.BP_CosmeticLapTopWithScreen_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function BP_CosmeticLapTopWithScreen.BP_CosmeticLapTopWithScreen_C.BndEvt__bp_screen_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// ESBZCosmeticDestructionType             Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZCosmeticDestructionContext&HitContext                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 
-void ABP_CosmeticLapTopWithScreen_C::ReceiveBeginPlay()
+void ABP_CosmeticLapTopWithScreen_C::BndEvt__bp_screen_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__bp_screen_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CosmeticLapTopWithScreen_C", "ReceiveBeginPlay");
+	Params::BP_CosmeticLapTopWithScreen_C_BndEvt__bp_screen_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Parms.Type = Type;
+	Parms.HitContext = std::move(HitContext);
 
-
-// Function BP_CosmeticLapTopWithScreen.BP_CosmeticLapTopWithScreen_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_CosmeticLapTopWithScreen_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_CosmeticLapTopWithScreen_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

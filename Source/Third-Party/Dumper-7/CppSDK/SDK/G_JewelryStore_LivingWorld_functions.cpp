@@ -16,20 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function G_JewelryStore_LivingWorld.G_JewelryStore_LivingWorld_C.ActionPhaseStarted
-// (Event, Public, BlueprintEvent)
-
-void AG_JewelryStore_LivingWorld_C::ActionPhaseStarted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_JewelryStore_LivingWorld_C", "ActionPhaseStarted");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function G_JewelryStore_LivingWorld.G_JewelryStore_LivingWorld_C.ExecuteUbergraph_G_JewelryStore_LivingWorld
 // (Final, UbergraphFunction)
 // Parameters:
@@ -37,16 +23,26 @@ void AG_JewelryStore_LivingWorld_C::ActionPhaseStarted()
 
 void AG_JewelryStore_LivingWorld_C::ExecuteUbergraph_G_JewelryStore_LivingWorld(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_JewelryStore_LivingWorld_C", "ExecuteUbergraph_G_JewelryStore_LivingWorld");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_JewelryStore_LivingWorld_C", "ExecuteUbergraph_G_JewelryStore_LivingWorld", FuncInfo);
 
 	Params::G_JewelryStore_LivingWorld_C_ExecuteUbergraph_G_JewelryStore_LivingWorld Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_JewelryStore_LivingWorld.G_JewelryStore_LivingWorld_C.ActionPhaseStarted
+// (Event, Public, BlueprintEvent)
+
+void AG_JewelryStore_LivingWorld_C::ActionPhaseStarted()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActionPhaseStarted", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

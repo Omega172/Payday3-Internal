@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGA_Request_Overskill_Operator_C>();
 	}
 };
+DUMPER7_ASSERTS_UGA_Request_Overskill_Operator_C;
 
 SDK_NAMESPACE_END

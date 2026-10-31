@@ -10,28 +10,28 @@
 
 #include "Basic.hpp"
 
-#include "CH_BaseCop_classes.hpp"
 #include "Engine_structs.hpp"
+#include "CH_BaseCop_classes.hpp"
 
 
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CH_SWAT_SHIELD.CH_SWAT_SHIELD_C
-// 0x0040 (0x2200 - 0x21C0)
+// 0x0040 (0x2290 - 0x2250)
 class ACH_SWAT_SHIELD_C final : public ACH_BaseCop_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x21C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UNiagaraComponent*                      Niagara;                                           // 0x21C8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USBZAIShieldSpecialComponent*           SBZAIShieldSpecial;                                // 0x21D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USBZRandomNoiseComponent*               SBZRandomNoise;                                    // 0x21D8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   ShieldVisor;                                       // 0x21E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USBZAIShield*                           SBZAIShield;                                       // 0x21E8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Helmet;                                            // 0x21F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x2250(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UNiagaraComponent*                      Niagara;                                           // 0x2258(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZAIShieldSpecialComponent*           SBZAIShieldSpecial;                                // 0x2260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZRandomNoiseComponent*               SBZRandomNoise;                                    // 0x2268(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   ShieldVisor;                                       // 0x2270(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZAIShield*                           SBZAIShield;                                       // 0x2278(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Helmet;                                            // 0x2280(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void ReceiveActorBeginOverlap(class AActor* OtherActor_ReceiveActorBeginOverlap);
 	void ExecuteUbergraph_CH_SWAT_SHIELD(int32 EntryPoint);
-	void ReceiveActorBeginOverlap(class AActor* OtherActor);
 
 public:
 	static class UClass* StaticClass()
@@ -47,5 +47,6 @@ public:
 		return GetDefaultObjImpl<ACH_SWAT_SHIELD_C>();
 	}
 };
+DUMPER7_ASSERTS_ACH_SWAT_SHIELD_C;
 
 SDK_NAMESPACE_END

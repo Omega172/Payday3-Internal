@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AInteriorWindow_01_breakable_C>();
 	}
 };
+DUMPER7_ASSERTS_AInteriorWindow_01_breakable_C;
 
 SDK_NAMESPACE_END

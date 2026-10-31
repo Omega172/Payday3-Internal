@@ -16,20 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function HUD_Prototype_Target_Dot.HUD_Prototype_Target_Dot_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UHUD_Prototype_Target_Dot_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HUD_Prototype_Target_Dot_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function HUD_Prototype_Target_Dot.HUD_Prototype_Target_Dot_C.ExecuteUbergraph_HUD_Prototype_Target_Dot
 // (Final, UbergraphFunction)
 // Parameters:
@@ -37,16 +23,26 @@ void UHUD_Prototype_Target_Dot_C::Construct()
 
 void UHUD_Prototype_Target_Dot_C::ExecuteUbergraph_HUD_Prototype_Target_Dot(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HUD_Prototype_Target_Dot_C", "ExecuteUbergraph_HUD_Prototype_Target_Dot");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "HUD_Prototype_Target_Dot_C", "ExecuteUbergraph_HUD_Prototype_Target_Dot", FuncInfo);
 
 	Params::HUD_Prototype_Target_Dot_C_ExecuteUbergraph_HUD_Prototype_Target_Dot Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function HUD_Prototype_Target_Dot.HUD_Prototype_Target_Dot_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UHUD_Prototype_Target_Dot_C::Construct()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

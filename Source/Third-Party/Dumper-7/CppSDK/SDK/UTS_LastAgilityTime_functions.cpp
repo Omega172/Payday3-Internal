@@ -19,14 +19,12 @@ SDK_NAMESPACE_START
 // Function UTS_LastAgilityTime.UTS_LastAgilityTime_C.CalcScoreBP
 // (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, Const)
 // Parameters:
-// float                                   ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   ReturnValue_CalcScoreBP                                (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 float UUTS_LastAgilityTime_C::CalcScoreBP() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("UTS_LastAgilityTime_C", "CalcScoreBP");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CalcScoreBP", FnName));
 
 	Params::UTS_LastAgilityTime_C_CalcScoreBP Parms{};
 

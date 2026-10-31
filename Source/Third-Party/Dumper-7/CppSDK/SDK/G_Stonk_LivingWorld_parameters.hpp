@@ -17,177 +17,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner20_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner20_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner24_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner24_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner28_K2Node_ActorBoundEvent_11_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner28_K2Node_ActorBoundEvent_11_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner29_22_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner29_22_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner30_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner30_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner32_K2Node_ActorBoundEvent_17_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner32_K2Node_ActorBoundEvent_17_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner33_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner33_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner34_K2Node_ActorBoundEvent_18_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner34_K2Node_ActorBoundEvent_18_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_0_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_0_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_13_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_13_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_1_K2Node_ActorBoundEvent_14_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_1_K2Node_ActorBoundEvent_14_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_2_K2Node_ActorBoundEvent_15_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_2_K2Node_ActorBoundEvent_15_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_3_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_3_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_4_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_4_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_5_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_5_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_6_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_6_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_7_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_7_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_8_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_8_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_9_K2Node_ActorBoundEvent_7_SBZSpawnRequestCompletedDelegate__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_9_K2Node_ActorBoundEvent_7_SBZSpawnRequestCompletedDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.ExecuteUbergraph_G_Stonk_LivingWorld
 // 0x0C70 (0x0C70 - 0x0000)
 struct G_Stonk_LivingWorld_C_ExecuteUbergraph_G_Stonk_LivingWorld final
@@ -393,6 +222,197 @@ public:
 	bool                                          K2Node_SwitchInteger_CmpSuccess_6;                 // 0x0C68(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchInteger_CmpSuccess_7;                 // 0x0C69(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_G_Stonk_LivingWorld_C_ExecuteUbergraph_G_Stonk_LivingWorld;
+
+// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_9_K2Node_ActorBoundEvent_7_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_9_K2Node_ActorBoundEvent_7_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_9_K2Node_ActorBoundEvent_7_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_8_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_8_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_8_K2Node_ActorBoundEvent_4_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_7_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_7_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_7_K2Node_ActorBoundEvent_1_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_6_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_6_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_6_K2Node_ActorBoundEvent_2_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_5_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_5_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_5_K2Node_ActorBoundEvent_5_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_4_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_4_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_4_K2Node_ActorBoundEvent_9_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_3_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_3_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_3_K2Node_ActorBoundEvent_6_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_2_K2Node_ActorBoundEvent_15_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_2_K2Node_ActorBoundEvent_15_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_2_K2Node_ActorBoundEvent_15_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_1_K2Node_ActorBoundEvent_14_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_1_K2Node_ActorBoundEvent_14_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_1_K2Node_ActorBoundEvent_14_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_13_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_13_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_13_K2Node_ActorBoundEvent_0_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_0_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_0_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner_C_0_K2Node_ActorBoundEvent_3_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner34_K2Node_ActorBoundEvent_18_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner34_K2Node_ActorBoundEvent_18_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner34_K2Node_ActorBoundEvent_18_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner33_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner33_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner33_K2Node_ActorBoundEvent_8_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner32_K2Node_ActorBoundEvent_17_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner32_K2Node_ActorBoundEvent_17_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner32_K2Node_ActorBoundEvent_17_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner30_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner30_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner30_K2Node_ActorBoundEvent_19_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner29_22_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner29_22_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner29_22_K2Node_ActorBoundEvent_20_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner28_K2Node_ActorBoundEvent_11_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner28_K2Node_ActorBoundEvent_11_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner28_K2Node_ActorBoundEvent_11_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner24_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner24_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner24_K2Node_ActorBoundEvent_10_SBZSpawnRequestCompletedDelegate__DelegateSignature;
+
+// Function G_Stonk_LivingWorld.G_Stonk_LivingWorld_C.BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner20_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner20_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_G_Stonk_LivingWorld_C_BndEvt__G_Stonk_LivingWorld_BP_ScriptedLifeActionSpawner20_K2Node_ActorBoundEvent_12_SBZSpawnRequestCompletedDelegate__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

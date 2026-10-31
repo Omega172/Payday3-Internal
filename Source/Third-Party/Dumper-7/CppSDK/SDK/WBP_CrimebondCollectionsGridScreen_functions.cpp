@@ -16,153 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.UpdateControlReferences
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_CrimebondCollectionsGridScreen_C::UpdateControlReferences()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateControlReferences", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.UpdateAction
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.BndEvt__WBP_CrimebondBundleGridScreen_BundleTabs_LocalNavbar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// class USBZBundleItemDecorator*          InDecorator                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CrimebondCollectionsGridScreen_C::UpdateAction(class USBZBundleItemDecorator* InDecorator)
+void UWBP_CrimebondCollectionsGridScreen_C::BndEvt__WBP_CrimebondBundleGridScreen_BundleTabs_LocalNavbar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature(int32 NewIndex)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateAction", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CrimebondBundleGridScreen_BundleTabs_LocalNavbar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature", FnName));
 
-	Params::WBP_CrimebondCollectionsGridScreen_C_UpdateAction Parms{};
+	Params::WBP_CrimebondCollectionsGridScreen_C_BndEvt__WBP_CrimebondBundleGridScreen_BundleTabs_LocalNavbar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature Parms{};
 
-	Parms.InDecorator = InDecorator;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.OnLostStackFocused
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_CrimebondCollectionsGridScreen_C::OnLostStackFocused()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.OnGainedStackFocused
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const class FName&                      PreviousValue_OnGainedStackFocused                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CrimebondCollectionsGridScreen_C::OnGainedStackFocused(const class FName& PreviousValue_OnGainedStackFocused)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
-
-	Params::WBP_CrimebondCollectionsGridScreen_C_OnGainedStackFocused Parms{};
-
-	Parms.PreviousValue_OnGainedStackFocused = PreviousValue_OnGainedStackFocused;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.OnControlReferencedPressed
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CrimebondCollectionsGridScreen_C::OnControlReferencedPressed(class FName ActionName)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnControlReferencedPressed", FnName));
-
-	Params::WBP_CrimebondCollectionsGridScreen_C_OnControlReferencedPressed Parms{};
-
-	Parms.ActionName = ActionName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.ExecuteUbergraph_WBP_CrimebondCollectionsGridScreen
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CrimebondCollectionsGridScreen_C::ExecuteUbergraph_WBP_CrimebondCollectionsGridScreen(int32 EntryPoint)
-{
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_CrimebondCollectionsGridScreen_C", "ExecuteUbergraph_WBP_CrimebondCollectionsGridScreen", FuncInfo);
-
-	Params::WBP_CrimebondCollectionsGridScreen_C_ExecuteUbergraph_WBP_CrimebondCollectionsGridScreen Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.BP_OnDecoSelected
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class USBZBundleItemDecorator*          Deco_BP_OnDecoSelected                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CrimebondCollectionsGridScreen_C::BP_OnDecoSelected(class USBZBundleItemDecorator* Deco_BP_OnDecoSelected)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnDecoSelected", FnName));
-
-	Params::WBP_CrimebondCollectionsGridScreen_C_BP_OnDecoSelected Parms{};
-
-	Parms.Deco_BP_OnDecoSelected = Deco_BP_OnDecoSelected;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.BP_OnBundleApplied
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// const class USBZItemBundleData*         InBundleData_BP_OnBundleApplied                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CrimebondCollectionsGridScreen_C::BP_OnBundleApplied(const class USBZItemBundleData* InBundleData_BP_OnBundleApplied)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnBundleApplied", FnName));
-
-	Params::WBP_CrimebondCollectionsGridScreen_C_BP_OnBundleApplied Parms{};
-
-	Parms.InBundleData_BP_OnBundleApplied = InBundleData_BP_OnBundleApplied;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.BP_OnBuildTabs
-// (Event, Protected, HasOutParams, BlueprintEvent)
-// Parameters:
-// const TArray<class FName>&              BundleNames_BP_OnBuildTabs                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// class FName                             FocusedBundle_BP_OnBuildTabs                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CrimebondCollectionsGridScreen_C::BP_OnBuildTabs(const TArray<class FName>& BundleNames_BP_OnBuildTabs, class FName FocusedBundle_BP_OnBuildTabs)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnBuildTabs", FnName));
-
-	Params::WBP_CrimebondCollectionsGridScreen_C_BP_OnBuildTabs Parms{};
-
-	Parms.BundleNames_BP_OnBuildTabs = std::move(BundleNames_BP_OnBuildTabs);
-	Parms.FocusedBundle_BP_OnBuildTabs = FocusedBundle_BP_OnBuildTabs;
+	Parms.NewIndex = NewIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -186,21 +52,155 @@ void UWBP_CrimebondCollectionsGridScreen_C::BndEvt__WBP_CrimebondCollectionsGrid
 }
 
 
-// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.BndEvt__WBP_CrimebondBundleGridScreen_BundleTabs_LocalNavbar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.BP_OnBuildTabs
+// (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const TArray<class FName>&              BundleNames                                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// class FName                             FocusedBundle                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CrimebondCollectionsGridScreen_C::BndEvt__WBP_CrimebondBundleGridScreen_BundleTabs_LocalNavbar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature(int32 NewIndex)
+void UWBP_CrimebondCollectionsGridScreen_C::BP_OnBuildTabs(const TArray<class FName>& BundleNames, class FName FocusedBundle)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_CrimebondBundleGridScreen_BundleTabs_LocalNavbar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnBuildTabs", FnName));
 
-	Params::WBP_CrimebondCollectionsGridScreen_C_BndEvt__WBP_CrimebondBundleGridScreen_BundleTabs_LocalNavbar_K2Node_ComponentBoundEvent_1_OnIndexChanged__DelegateSignature Parms{};
+	Params::WBP_CrimebondCollectionsGridScreen_C_BP_OnBuildTabs Parms{};
 
-	Parms.NewIndex = NewIndex;
+	Parms.BundleNames = std::move(BundleNames);
+	Parms.FocusedBundle = FocusedBundle;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.BP_OnBundleApplied
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// const class USBZItemBundleData*         InBundleData                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CrimebondCollectionsGridScreen_C::BP_OnBundleApplied(const class USBZItemBundleData* InBundleData)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnBundleApplied", FnName));
+
+	Params::WBP_CrimebondCollectionsGridScreen_C_BP_OnBundleApplied Parms{};
+
+	Parms.InBundleData = InBundleData;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.BP_OnDecoSelected
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class USBZBundleItemDecorator*          Deco                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CrimebondCollectionsGridScreen_C::BP_OnDecoSelected(class USBZBundleItemDecorator* Deco)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnDecoSelected", FnName));
+
+	Params::WBP_CrimebondCollectionsGridScreen_C_BP_OnDecoSelected Parms{};
+
+	Parms.Deco = Deco;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.ExecuteUbergraph_WBP_CrimebondCollectionsGridScreen
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CrimebondCollectionsGridScreen_C::ExecuteUbergraph_WBP_CrimebondCollectionsGridScreen(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_CrimebondCollectionsGridScreen_C", "ExecuteUbergraph_WBP_CrimebondCollectionsGridScreen", FuncInfo);
+
+	Params::WBP_CrimebondCollectionsGridScreen_C_ExecuteUbergraph_WBP_CrimebondCollectionsGridScreen Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.OnControlReferencedPressed
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             ActionName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CrimebondCollectionsGridScreen_C::OnControlReferencedPressed(class FName ActionName)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnControlReferencedPressed", FnName));
+
+	Params::WBP_CrimebondCollectionsGridScreen_C_OnControlReferencedPressed Parms{};
+
+	Parms.ActionName = ActionName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.OnGainedStackFocused
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FName&                      PreviousValue                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CrimebondCollectionsGridScreen_C::OnGainedStackFocused(const class FName& PreviousValue)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnGainedStackFocused", FnName));
+
+	Params::WBP_CrimebondCollectionsGridScreen_C_OnGainedStackFocused Parms{};
+
+	Parms.PreviousValue = PreviousValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.OnLostStackFocused
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_CrimebondCollectionsGridScreen_C::OnLostStackFocused()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLostStackFocused", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.UpdateAction
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZBundleItemDecorator*          InDecorator                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CrimebondCollectionsGridScreen_C::UpdateAction(class USBZBundleItemDecorator* InDecorator)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateAction", FnName));
+
+	Params::WBP_CrimebondCollectionsGridScreen_C_UpdateAction Parms{};
+
+	Parms.InDecorator = InDecorator;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CrimebondCollectionsGridScreen.WBP_CrimebondCollectionsGridScreen_C.UpdateControlReferences
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UWBP_CrimebondCollectionsGridScreen_C::UpdateControlReferences()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UpdateControlReferences", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

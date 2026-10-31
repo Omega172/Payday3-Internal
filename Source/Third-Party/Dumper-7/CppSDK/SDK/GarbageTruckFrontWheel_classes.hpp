@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGarbageTruckFrontWheel_C>();
 	}
 };
+DUMPER7_ASSERTS_UGarbageTruckFrontWheel_C;
 
 SDK_NAMESPACE_END

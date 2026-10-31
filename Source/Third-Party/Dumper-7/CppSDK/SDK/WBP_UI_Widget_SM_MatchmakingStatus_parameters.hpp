@@ -19,182 +19,25 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_UI_Widget_SM_MatchmakingStatus.WBP_UI_Widget_SM_MatchmakingStatus_C.UpdateTimer
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_UI_Widget_SM_MatchmakingStatus_C_UpdateTimer final
+// Function WBP_UI_Widget_SM_MatchmakingStatus.WBP_UI_Widget_SM_MatchmakingStatus_C.BndEvt__WBP_UI_Widget_SM_MatchmakingStatus_BPW_UI_MatchMakingCancel_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_Widget_SM_MatchmakingStatus_C_BndEvt__WBP_UI_Widget_SM_MatchmakingStatus_BPW_UI_MatchMakingCancel_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	class USBZOnlineSession*                      CallFunc_GetSBZOnline_ReturnValue;                 // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_GetTimerRemainingNonPausableTimeByHandle_ReturnValue; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_FCeil_ReturnValue;                        // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_FormatIntToTimerText_ReturnValue;         // 0x0010(0x0010)()
-	double                                        CallFunc_FCeil_A_ImplicitCast;                     // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Widget_SM_MatchmakingStatus_C_UpdateTimer;
+DUMPER7_ASSERTS_WBP_UI_Widget_SM_MatchmakingStatus_C_BndEvt__WBP_UI_Widget_SM_MatchmakingStatus_BPW_UI_MatchMakingCancel_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature;
 
-// Function WBP_UI_Widget_SM_MatchmakingStatus.WBP_UI_Widget_SM_MatchmakingStatus_C.UpdateLobbyHeader
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Widget_SM_MatchmakingStatus_C_UpdateLobbyHeader final
+// Function WBP_UI_Widget_SM_MatchmakingStatus.WBP_UI_Widget_SM_MatchmakingStatus_C.DisplayNotifications
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Widget_SM_MatchmakingStatus_C_DisplayNotifications final
 {
 public:
-	bool                                          CallFunc_IsSoloGameEnabled_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_SM_MatchmakingStatus_C_UpdateLobbyHeader;
-
-// Function WBP_UI_Widget_SM_MatchmakingStatus.WBP_UI_Widget_SM_MatchmakingStatus_C.UpdateHoldValue
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_UI_Widget_SM_MatchmakingStatus_C_UpdateHoldValue final
-{
-public:
-	class USBZGameStateMachine*                   CallFunc_GetGameStateMachine_ReturnValue;          // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue;    // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        CallFunc_GreaterEqual_DoubleDouble_A_ImplicitCast; // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_SM_MatchmakingStatus_C_UpdateHoldValue;
-
-// Function WBP_UI_Widget_SM_MatchmakingStatus.WBP_UI_Widget_SM_MatchmakingStatus_C.Tick
-// 0x003C (0x003C - 0x0000)
-struct WBP_UI_Widget_SM_MatchmakingStatus_C_Tick final
-{
-public:
-	struct FGeometry                              MyGeometry_Tick;                                   // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	float                                         InDeltaTime_Tick;                                  // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_SM_MatchmakingStatus_C_Tick;
-
-// Function WBP_UI_Widget_SM_MatchmakingStatus.WBP_UI_Widget_SM_MatchmakingStatus_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Widget_SM_MatchmakingStatus_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_SM_MatchmakingStatus_C_PreConstruct;
-
-// Function WBP_UI_Widget_SM_MatchmakingStatus.WBP_UI_Widget_SM_MatchmakingStatus_C.OnUIStackChanged
-// 0x001C (0x001C - 0x0000)
-struct WBP_UI_Widget_SM_MatchmakingStatus_C_OnUIStackChanged final
-{
-public:
-	struct FSBZUIStackChangedEvent                StackEvent;                                        // 0x0000(0x001C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_SM_MatchmakingStatus_C_OnUIStackChanged;
-
-// Function WBP_UI_Widget_SM_MatchmakingStatus.WBP_UI_Widget_SM_MatchmakingStatus_C.OnLocalClientReady_Event_0
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Widget_SM_MatchmakingStatus_C_OnLocalClientReady_Event_0 final
-{
-public:
-	ESBZOnlineCode                                ErrorCode;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_SM_MatchmakingStatus_C_OnLocalClientReady_Event_0;
-
-// Function WBP_UI_Widget_SM_MatchmakingStatus.WBP_UI_Widget_SM_MatchmakingStatus_C.OnLobbyEvent
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_UI_Widget_SM_MatchmakingStatus_C_OnLobbyEvent final
-{
-public:
-	ESBZOnlineCode                                ErrorCode;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_SM_MatchmakingStatus_C_OnLobbyEvent;
-
-// Function WBP_UI_Widget_SM_MatchmakingStatus.WBP_UI_Widget_SM_MatchmakingStatus_C.OnAsyncLoadingProgress
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_UI_Widget_SM_MatchmakingStatus_C_OnAsyncLoadingProgress final
-{
-public:
-	struct FSBZAsyncLoadingProgress               Progress_OnAsyncLoadingProgress;                   // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_SM_MatchmakingStatus_C_OnAsyncLoadingProgress;
-
-// Function WBP_UI_Widget_SM_MatchmakingStatus.WBP_UI_Widget_SM_MatchmakingStatus_C.InitalizeMatch found
-// 0x0068 (0x0068 - 0x0000)
-struct WBP_UI_Widget_SM_MatchmakingStatus_C_InitalizeMatch_found final
-{
-public:
-	class FText                                   CallFunc_GetMatchJoiningText_Output_Text;          // 0x0000(0x0010)()
-	class FText                                   CallFunc_GetMatchJoiningText_OutDifficultyText;    // 0x0010(0x0010)()
-	class USBZGameStateMachine*                   CallFunc_GetGameStateMachine_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZOnlineMatchmakingParams            CallFunc_GetMatchMakingParameters_ReturnValue;     // 0x0028(0x0040)()
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_SM_MatchmakingStatus_C_InitalizeMatch_found;
-
-// Function WBP_UI_Widget_SM_MatchmakingStatus.WBP_UI_Widget_SM_MatchmakingStatus_C.InitalizeLookingForMatch
-// 0x0230 (0x0230 - 0x0000)
-struct WBP_UI_Widget_SM_MatchmakingStatus_C_InitalizeLookingForMatch final
-{
-public:
-	bool                                          CallFunc_IsPartyHost_ReturnValue;                  // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bShowNotification;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZPartyManager*                       CallFunc_GetPartyManager_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetPartyPlayersNumber_ReturnValue;        // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_17[0x1];                                       // 0x0017(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	const class USBZUIData*                       CallFunc_GetUIData_ReturnValue;                    // 0x0020(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   Temp_text_Variable;                                // 0x0028(0x0010)()
-	bool                                          Temp_bool_Variable_1;                              // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZGameStateMachine*                   CallFunc_GetGameStateMachine_ReturnValue;          // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZOnlineMatchmakingParams            CallFunc_GetMatchMakingParameters_ReturnValue;     // 0x0048(0x0040)()
-	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSoftObjectPath                        CallFunc_GetPathNameFromLevelIdx_ReturnValue;      // 0x0090(0x0028)(ZeroConstructor, HasGetValueTypeHash)
-	class UPD3HeistDataAsset*                     CallFunc_GetHeistDataFromLevelPath_ReturnValue;    // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetDifficultyText_OutDifficultyText;      // 0x00C0(0x0010)()
-	bool                                          CallFunc_GetDifficultyText_bHasText;               // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D2[0x6];                                       // 0x00D2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00D8(0x0048)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0120(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0130(0x0010)()
-	class FText                                   K2Node_Select_Default;                             // 0x0140(0x0010)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0150(0x0048)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0198(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x01A8(0x0010)()
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x01B8(0x0048)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_2;                          // 0x0200(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue_2;                     // 0x0210(0x0010)()
-	class FText                                   K2Node_Select_Default_1;                           // 0x0220(0x0010)()
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_UI_Widget_SM_MatchmakingStatus_C_InitalizeLookingForMatch;
-
-// Function WBP_UI_Widget_SM_MatchmakingStatus.WBP_UI_Widget_SM_MatchmakingStatus_C.GetMatchJoiningText
-// 0x0158 (0x0158 - 0x0000)
-struct WBP_UI_Widget_SM_MatchmakingStatus_C_GetMatchJoiningText final
-{
-public:
-	class FText                                   Output_Text;                                       // 0x0000(0x0010)(Parm, OutParm)
-	class FText                                   OutDifficultyText;                                 // 0x0010(0x0010)(Parm, OutParm)
-	bool                                          Temp_bool_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0028(0x0010)(ReferenceParm)
-	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZMissionInfo                        CallFunc_GetBeaconMissionInfo_OutInfo;             // 0x0040(0x0008)(NoDestructor)
-	const class USBZUIData*                       CallFunc_GetUIData_ReturnValue;                    // 0x0048(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSoftObjectPath                        CallFunc_GetPathNameFromLevelIdx_ReturnValue;      // 0x0050(0x0028)(ZeroConstructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPD3HeistDataAsset*                     CallFunc_GetHeistDataFromLevelPath_ReturnValue;    // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_GetDifficultyText_OutDifficultyText;      // 0x0088(0x0010)()
-	bool                                          CallFunc_GetDifficultyText_bHasText;               // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_9A[0x6];                                       // 0x009A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00A0(0x0048)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x00E8(0x0010)(ReferenceParm)
-	class FString                                 CallFunc_BreakSoftObjectPath_PathString;           // 0x00F8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0108(0x0010)()
-	class FString                                 CallFunc_GetBaseFilename_ReturnValue;              // 0x0118(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0128(0x0010)()
-	class FText                                   K2Node_Select_Default;                             // 0x0138(0x0010)()
-	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0148(0x0010)()
-};
-DUMPER7_ASSERTS_WBP_UI_Widget_SM_MatchmakingStatus_C_GetMatchJoiningText;
+DUMPER7_ASSERTS_WBP_UI_Widget_SM_MatchmakingStatus_C_DisplayNotifications;
 
 // Function WBP_UI_Widget_SM_MatchmakingStatus.WBP_UI_Widget_SM_MatchmakingStatus_C.ExecuteUbergraph_WBP_UI_Widget_SM_MatchmakingStatus
 // 0x01C8 (0x01C8 - 0x0000)
@@ -254,25 +97,182 @@ public:
 };
 DUMPER7_ASSERTS_WBP_UI_Widget_SM_MatchmakingStatus_C_ExecuteUbergraph_WBP_UI_Widget_SM_MatchmakingStatus;
 
-// Function WBP_UI_Widget_SM_MatchmakingStatus.WBP_UI_Widget_SM_MatchmakingStatus_C.DisplayNotifications
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_UI_Widget_SM_MatchmakingStatus_C_DisplayNotifications final
+// Function WBP_UI_Widget_SM_MatchmakingStatus.WBP_UI_Widget_SM_MatchmakingStatus_C.GetMatchJoiningText
+// 0x0158 (0x0158 - 0x0000)
+struct WBP_UI_Widget_SM_MatchmakingStatus_C_GetMatchJoiningText final
 {
 public:
-	bool                                          bShowNotification;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Output_Text;                                       // 0x0000(0x0010)(Parm, OutParm)
+	class FText                                   OutDifficultyText;                                 // 0x0010(0x0010)(Parm, OutParm)
+	bool                                          Temp_bool_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0028(0x0010)(ReferenceParm)
+	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZMissionInfo                        CallFunc_GetBeaconMissionInfo_OutInfo;             // 0x0040(0x0008)(NoDestructor)
+	const class USBZUIData*                       CallFunc_GetUIData_ReturnValue;                    // 0x0048(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSoftObjectPath                        CallFunc_GetPathNameFromLevelIdx_ReturnValue;      // 0x0050(0x0028)(ZeroConstructor, HasGetValueTypeHash)
+	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_79[0x7];                                       // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPD3HeistDataAsset*                     CallFunc_GetHeistDataFromLevelPath_ReturnValue;    // 0x0080(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetDifficultyText_OutDifficultyText;      // 0x0088(0x0010)()
+	bool                                          CallFunc_GetDifficultyText_bHasText;               // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0099(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9A[0x6];                                       // 0x009A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00A0(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x00E8(0x0010)(ReferenceParm)
+	class FString                                 CallFunc_BreakSoftObjectPath_PathString;           // 0x00F8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0108(0x0010)()
+	class FString                                 CallFunc_GetBaseFilename_ReturnValue;              // 0x0118(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0128(0x0010)()
+	class FText                                   K2Node_Select_Default;                             // 0x0138(0x0010)()
+	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x0148(0x0010)()
 };
-DUMPER7_ASSERTS_WBP_UI_Widget_SM_MatchmakingStatus_C_DisplayNotifications;
+DUMPER7_ASSERTS_WBP_UI_Widget_SM_MatchmakingStatus_C_GetMatchJoiningText;
 
-// Function WBP_UI_Widget_SM_MatchmakingStatus.WBP_UI_Widget_SM_MatchmakingStatus_C.BndEvt__WBP_UI_Widget_SM_MatchmakingStatus_BPW_UI_MatchMakingCancel_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_UI_Widget_SM_MatchmakingStatus_C_BndEvt__WBP_UI_Widget_SM_MatchmakingStatus_BPW_UI_MatchMakingCancel_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature final
+// Function WBP_UI_Widget_SM_MatchmakingStatus.WBP_UI_Widget_SM_MatchmakingStatus_C.InitalizeLookingForMatch
+// 0x0230 (0x0230 - 0x0000)
+struct WBP_UI_Widget_SM_MatchmakingStatus_C_InitalizeLookingForMatch final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsPartyHost_ReturnValue;                  // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZPartyManager*                       CallFunc_GetPartyManager_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetPartyPlayersNumber_ReturnValue;        // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_17[0x1];                                       // 0x0017(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	const class USBZUIData*                       CallFunc_GetUIData_ReturnValue;                    // 0x0020(0x0008)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Temp_text_Variable;                                // 0x0028(0x0010)()
+	bool                                          Temp_bool_Variable_1;                              // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZGameStateMachine*                   CallFunc_GetGameStateMachine_ReturnValue;          // 0x0040(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZOnlineMatchmakingParams            CallFunc_GetMatchMakingParameters_ReturnValue;     // 0x0048(0x0040)()
+	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSoftObjectPath                        CallFunc_GetPathNameFromLevelIdx_ReturnValue;      // 0x0090(0x0028)(ZeroConstructor, HasGetValueTypeHash)
+	class UPD3HeistDataAsset*                     CallFunc_GetHeistDataFromLevelPath_ReturnValue;    // 0x00B8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_GetDifficultyText_OutDifficultyText;      // 0x00C0(0x0010)()
+	bool                                          CallFunc_GetDifficultyText_bHasText;               // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D2[0x6];                                       // 0x00D2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x00D8(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0120(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0130(0x0010)()
+	class FText                                   K2Node_Select_Default;                             // 0x0140(0x0010)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_1;            // 0x0150(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0198(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x01A8(0x0010)()
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_2;            // 0x01B8(0x0048)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_2;                          // 0x0200(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue_2;                     // 0x0210(0x0010)()
+	class FText                                   K2Node_Select_Default_1;                           // 0x0220(0x0010)()
 };
-DUMPER7_ASSERTS_WBP_UI_Widget_SM_MatchmakingStatus_C_BndEvt__WBP_UI_Widget_SM_MatchmakingStatus_BPW_UI_MatchMakingCancel_K2Node_ComponentBoundEvent_2_OnMenuButtonSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_UI_Widget_SM_MatchmakingStatus_C_InitalizeLookingForMatch;
+
+// Function WBP_UI_Widget_SM_MatchmakingStatus.WBP_UI_Widget_SM_MatchmakingStatus_C.InitalizeMatch found
+// 0x0068 (0x0068 - 0x0000)
+struct WBP_UI_Widget_SM_MatchmakingStatus_C_InitalizeMatch_found final
+{
+public:
+	class FText                                   CallFunc_GetMatchJoiningText_Output_Text;          // 0x0000(0x0010)()
+	class FText                                   CallFunc_GetMatchJoiningText_OutDifficultyText;    // 0x0010(0x0010)()
+	class USBZGameStateMachine*                   CallFunc_GetGameStateMachine_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZOnlineMatchmakingParams            CallFunc_GetMatchMakingParameters_ReturnValue;     // 0x0028(0x0040)()
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_SM_MatchmakingStatus_C_InitalizeMatch_found;
+
+// Function WBP_UI_Widget_SM_MatchmakingStatus.WBP_UI_Widget_SM_MatchmakingStatus_C.OnAsyncLoadingProgress
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_UI_Widget_SM_MatchmakingStatus_C_OnAsyncLoadingProgress final
+{
+public:
+	struct FSBZAsyncLoadingProgress               Progress;                                          // 0x0000(0x0004)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_SM_MatchmakingStatus_C_OnAsyncLoadingProgress;
+
+// Function WBP_UI_Widget_SM_MatchmakingStatus.WBP_UI_Widget_SM_MatchmakingStatus_C.OnLobbyEvent
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Widget_SM_MatchmakingStatus_C_OnLobbyEvent final
+{
+public:
+	ESBZOnlineCode                                ErrorCode;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_SM_MatchmakingStatus_C_OnLobbyEvent;
+
+// Function WBP_UI_Widget_SM_MatchmakingStatus.WBP_UI_Widget_SM_MatchmakingStatus_C.OnLocalClientReady_Event_0
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Widget_SM_MatchmakingStatus_C_OnLocalClientReady_Event_0 final
+{
+public:
+	ESBZOnlineCode                                ErrorCode;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_SM_MatchmakingStatus_C_OnLocalClientReady_Event_0;
+
+// Function WBP_UI_Widget_SM_MatchmakingStatus.WBP_UI_Widget_SM_MatchmakingStatus_C.OnUIStackChanged
+// 0x001C (0x001C - 0x0000)
+struct WBP_UI_Widget_SM_MatchmakingStatus_C_OnUIStackChanged final
+{
+public:
+	struct FSBZUIStackChangedEvent                StackEvent;                                        // 0x0000(0x001C)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_SM_MatchmakingStatus_C_OnUIStackChanged;
+
+// Function WBP_UI_Widget_SM_MatchmakingStatus.WBP_UI_Widget_SM_MatchmakingStatus_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Widget_SM_MatchmakingStatus_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_SM_MatchmakingStatus_C_PreConstruct;
+
+// Function WBP_UI_Widget_SM_MatchmakingStatus.WBP_UI_Widget_SM_MatchmakingStatus_C.Tick
+// 0x003C (0x003C - 0x0000)
+struct WBP_UI_Widget_SM_MatchmakingStatus_C_Tick final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_SM_MatchmakingStatus_C_Tick;
+
+// Function WBP_UI_Widget_SM_MatchmakingStatus.WBP_UI_Widget_SM_MatchmakingStatus_C.UpdateHoldValue
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_UI_Widget_SM_MatchmakingStatus_C_UpdateHoldValue final
+{
+public:
+	class USBZGameStateMachine*                   CallFunc_GetGameStateMachine_ReturnValue;          // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GreaterEqual_DoubleDouble_ReturnValue;    // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Add_DoubleDouble_ReturnValue;             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_Add_DoubleDouble_A_ImplicitCast;          // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        CallFunc_GreaterEqual_DoubleDouble_A_ImplicitCast; // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_SM_MatchmakingStatus_C_UpdateHoldValue;
+
+// Function WBP_UI_Widget_SM_MatchmakingStatus.WBP_UI_Widget_SM_MatchmakingStatus_C.UpdateLobbyHeader
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_Widget_SM_MatchmakingStatus_C_UpdateLobbyHeader final
+{
+public:
+	bool                                          CallFunc_IsSoloGameEnabled_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_SM_MatchmakingStatus_C_UpdateLobbyHeader;
+
+// Function WBP_UI_Widget_SM_MatchmakingStatus.WBP_UI_Widget_SM_MatchmakingStatus_C.UpdateTimer
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_UI_Widget_SM_MatchmakingStatus_C_UpdateTimer final
+{
+public:
+	class USBZOnlineSession*                      CallFunc_GetSBZOnline_ReturnValue;                 // 0x0000(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_GetTimerRemainingNonPausableTimeByHandle_ReturnValue; // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_FCeil_ReturnValue;                        // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_FormatIntToTimerText_ReturnValue;         // 0x0010(0x0010)()
+	double                                        CallFunc_FCeil_A_ImplicitCast;                     // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_UI_Widget_SM_MatchmakingStatus_C_UpdateTimer;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

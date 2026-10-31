@@ -42,10 +42,10 @@ public:
 	double                                        offset;                                            // 0x03B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_targetSheet_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void clearTargets();
-	void ExecuteUbergraph_BP_targetSheet(int32 EntryPoint);
 	void UserConstructionScript();
+	void ExecuteUbergraph_BP_targetSheet(int32 EntryPoint);
+	void clearTargets();
+	void BndEvt__BP_targetSheet_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -61,5 +61,6 @@ public:
 		return GetDefaultObjImpl<ABP_targetSheet_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_targetSheet_C;
 
 SDK_NAMESPACE_END

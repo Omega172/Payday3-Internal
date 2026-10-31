@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<AONE_BPL_Spot_Warm_C>();
 	}
 };
+DUMPER7_ASSERTS_AONE_BPL_Spot_Warm_C;
 
 SDK_NAMESPACE_END

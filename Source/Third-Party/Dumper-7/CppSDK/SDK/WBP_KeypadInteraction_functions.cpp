@@ -16,26 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_KeypadInteraction.WBP_KeypadInteraction_C.SetBackgroundColor
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESBZModuleActorState                    CurrentState                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_KeypadInteraction_C::SetBackgroundColor(ESBZModuleActorState CurrentState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_KeypadInteraction_C", "SetBackgroundColor");
-
-	Params::WBP_KeypadInteraction_C_SetBackgroundColor Parms{};
-
-	Parms.CurrentState = CurrentState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_KeypadInteraction.WBP_KeypadInteraction_C.SetCodeText
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -43,14 +23,30 @@ void UWBP_KeypadInteraction_C::SetBackgroundColor(ESBZModuleActorState CurrentSt
 
 void UWBP_KeypadInteraction_C::SetCodeText(const class FText& InText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_KeypadInteraction_C", "SetCodeText");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetCodeText", FnName));
 
 	Params::WBP_KeypadInteraction_C_SetCodeText Parms{};
 
 	Parms.InText = std::move(InText);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_KeypadInteraction.WBP_KeypadInteraction_C.SetBackgroundColor
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESBZModuleActorState                    CurrentState                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_KeypadInteraction_C::SetBackgroundColor(ESBZModuleActorState CurrentState)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetBackgroundColor", FnName));
+
+	Params::WBP_KeypadInteraction_C_SetBackgroundColor Parms{};
+
+	Parms.CurrentState = CurrentState;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

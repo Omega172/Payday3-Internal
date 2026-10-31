@@ -40,5 +40,6 @@ public:
 		return GetDefaultObjImpl<BPL_SpotEmbedded_Warm_0::ABPL_SpotEmbedded_Warm_C>();
 	}
 };
+DUMPER7_ASSERTS_BPL_SpotEmbedded_Warm_0__ABPL_SpotEmbedded_Warm_C;
 
 SDK_NAMESPACE_END

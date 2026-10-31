@@ -26,9 +26,9 @@ public:
 	TArray<class UStaticMeshComponent*>           StaticMeshArray;                                   // 0x03A8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
-	void BP_SetCode(class UWidgetComponent* Widget, const TArray<int32>& CodeArrayToShow);
-	void ExecuteUbergraph_BP_DigitPassword_Parent(int32 EntryPoint);
 	void UserConstructionScript();
+	void ExecuteUbergraph_BP_DigitPassword_Parent(int32 EntryPoint);
+	void BP_SetCode(class UWidgetComponent* Widget, const TArray<int32>& CodeArrayToShow);
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<ABP_DigitPassword_Parent_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DigitPassword_Parent_C;
 
 SDK_NAMESPACE_END

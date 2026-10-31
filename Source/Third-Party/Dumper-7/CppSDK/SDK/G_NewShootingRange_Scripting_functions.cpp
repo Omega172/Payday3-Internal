@@ -16,20 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function G_NewShootingRange_Scripting.G_NewShootingRange_Scripting_C.BlackScreenStarted
-// (Event, Public, BlueprintEvent)
-
-void AG_NewShootingRange_Scripting_C::BlackScreenStarted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NewShootingRange_Scripting_C", "BlackScreenStarted");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function G_NewShootingRange_Scripting.G_NewShootingRange_Scripting_C.ExecuteUbergraph_G_NewShootingRange_Scripting
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -37,16 +23,26 @@ void AG_NewShootingRange_Scripting_C::BlackScreenStarted()
 
 void AG_NewShootingRange_Scripting_C::ExecuteUbergraph_G_NewShootingRange_Scripting(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_NewShootingRange_Scripting_C", "ExecuteUbergraph_G_NewShootingRange_Scripting");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_NewShootingRange_Scripting_C", "ExecuteUbergraph_G_NewShootingRange_Scripting", FuncInfo);
 
 	Params::G_NewShootingRange_Scripting_C_ExecuteUbergraph_G_NewShootingRange_Scripting Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_NewShootingRange_Scripting.G_NewShootingRange_Scripting_C.BlackScreenStarted
+// (Event, Public, BlueprintEvent)
+
+void AG_NewShootingRange_Scripting_C::BlackScreenStarted()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BlackScreenStarted", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

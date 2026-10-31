@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_TeddyMooBagSecured_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_TeddyMooBagSecured_C;
 
 SDK_NAMESPACE_END

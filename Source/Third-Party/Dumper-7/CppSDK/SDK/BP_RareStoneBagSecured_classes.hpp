@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_RareStoneBagSecured_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_RareStoneBagSecured_C;
 
 SDK_NAMESPACE_END

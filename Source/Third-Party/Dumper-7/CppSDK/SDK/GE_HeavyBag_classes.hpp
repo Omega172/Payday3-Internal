@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_HeavyBag_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_HeavyBag_C;
 
 SDK_NAMESPACE_END

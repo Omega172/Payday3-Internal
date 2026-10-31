@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UBP_SquadOrder_TacticalRescue_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_SquadOrder_TacticalRescue_C;
 
 SDK_NAMESPACE_END

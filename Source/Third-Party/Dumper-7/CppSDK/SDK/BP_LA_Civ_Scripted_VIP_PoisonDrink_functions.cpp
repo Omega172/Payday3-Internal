@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_LA_Civ_Scripted_VIP_PoisonDrink.BP_LA_Civ_Scripted_VIP_PoisonDrink_C.ExecuteUbergraph_BP_LA_Civ_Scripted_VIP_PoisonDrink
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_LA_Civ_Scripted_VIP_PoisonDrink_C::ExecuteUbergraph_BP_LA_Civ_Scripted_VIP_PoisonDrink(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_LA_Civ_Scripted_VIP_PoisonDrink_C", "ExecuteUbergraph_BP_LA_Civ_Scripted_VIP_PoisonDrink", FuncInfo);
+
+	Params::BP_LA_Civ_Scripted_VIP_PoisonDrink_C_ExecuteUbergraph_BP_LA_Civ_Scripted_VIP_PoisonDrink Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_LA_Civ_Scripted_VIP_PoisonDrink.BP_LA_Civ_Scripted_VIP_PoisonDrink_C.BndEvt__BP_LA_Civ_Scripted_VIP_PoisonDrink_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionStopEventDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -26,10 +44,8 @@ SDK_NAMESPACE_START
 
 void ABP_LA_Civ_Scripted_VIP_PoisonDrink_C::BndEvt__BP_LA_Civ_Scripted_VIP_PoisonDrink_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionStopEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot, ESBZLifeActionStopReason Result)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_Civ_Scripted_VIP_PoisonDrink_C", "BndEvt__BP_LA_Civ_Scripted_VIP_PoisonDrink_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionStopEventDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_LA_Civ_Scripted_VIP_PoisonDrink_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionStopEventDelegate__DelegateSignature", FnName));
 
 	Params::BP_LA_Civ_Scripted_VIP_PoisonDrink_C_BndEvt__BP_LA_Civ_Scripted_VIP_PoisonDrink_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionStopEventDelegate__DelegateSignature Parms{};
 
@@ -37,26 +53,6 @@ void ABP_LA_Civ_Scripted_VIP_PoisonDrink_C::BndEvt__BP_LA_Civ_Scripted_VIP_Poiso
 	Parms.ActionInstance = ActionInstance;
 	Parms.ActionSlot = ActionSlot;
 	Parms.Result = Result;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_LA_Civ_Scripted_VIP_PoisonDrink.BP_LA_Civ_Scripted_VIP_PoisonDrink_C.ExecuteUbergraph_BP_LA_Civ_Scripted_VIP_PoisonDrink
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_LA_Civ_Scripted_VIP_PoisonDrink_C::ExecuteUbergraph_BP_LA_Civ_Scripted_VIP_PoisonDrink(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_LA_Civ_Scripted_VIP_PoisonDrink_C", "ExecuteUbergraph_BP_LA_Civ_Scripted_VIP_PoisonDrink");
-
-	Params::BP_LA_Civ_Scripted_VIP_PoisonDrink_C_ExecuteUbergraph_BP_LA_Civ_Scripted_VIP_PoisonDrink Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

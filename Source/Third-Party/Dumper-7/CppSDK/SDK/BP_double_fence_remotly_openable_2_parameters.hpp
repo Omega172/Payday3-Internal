@@ -14,14 +14,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_double_fence_remotly_openable_2.BP_double_fence_remotly_openable_2_C.Close_remotly
-// 0x0001 (0x0001 - 0x0000)
-struct BP_double_fence_remotly_openable_2_C_Close_remotly final
-{
-public:
-	bool                                          CallFunc_SetState_ReturnValue;                     // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_double_fence_remotly_openable_2.BP_double_fence_remotly_openable_2_C.Open_remotly
 // 0x0001 (0x0001 - 0x0000)
 struct BP_double_fence_remotly_openable_2_C_Open_remotly final
@@ -29,6 +21,16 @@ struct BP_double_fence_remotly_openable_2_C_Open_remotly final
 public:
 	bool                                          CallFunc_SetState_ReturnValue;                     // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_double_fence_remotly_openable_2_C_Open_remotly;
+
+// Function BP_double_fence_remotly_openable_2.BP_double_fence_remotly_openable_2_C.Close_remotly
+// 0x0001 (0x0001 - 0x0000)
+struct BP_double_fence_remotly_openable_2_C_Close_remotly final
+{
+public:
+	bool                                          CallFunc_SetState_ReturnValue;                     // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_double_fence_remotly_openable_2_C_Close_remotly;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -17,23 +17,23 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_PaPo_Mask.BP_PaPo_Mask_C
-// 0x0028 (0x03F0 - 0x03C8)
+// 0x0028 (0x0400 - 0x03D8)
 class ABP_PaPo_Mask_C final : public ASBZMask
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UNiagaraComponent*                      Niagara;                                           // 0x03D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	ETimelineDirection                            Timeline__Direction_926AB80141B39243609D1E96589FECDE; // 0x03D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D9[0x7];                                      // 0x03D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UTimelineComponent*                     Timeline;                                          // 0x03E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               DynMat;                                            // 0x03E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03D8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UNiagaraComponent*                      Niagara;                                           // 0x03E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	ETimelineDirection                            Timeline__Direction_926AB80141B39243609D1E96589FECDE; // 0x03E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3E9[0x7];                                      // 0x03E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UTimelineComponent*                     Timeline;                                          // 0x03F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*               DynMat;                                            // 0x03F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_PaPo_Mask(int32 EntryPoint);
-	void ReceiveBeginPlay();
-	void Timeline__FinishedFunc();
-	void Timeline__UpdateFunc();
 	void UserConstructionScript();
+	void Timeline__UpdateFunc();
+	void Timeline__FinishedFunc();
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_PaPo_Mask(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -49,5 +49,6 @@ public:
 		return GetDefaultObjImpl<ABP_PaPo_Mask_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PaPo_Mask_C;
 
 SDK_NAMESPACE_END

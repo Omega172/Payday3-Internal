@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_Fear_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_Fear_C;
 
 SDK_NAMESPACE_END

@@ -18,16 +18,16 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_MicroCamera.BP_MicroCamera_C
-// 0x0010 (0x0880 - 0x0870)
+// 0x0010 (0x0890 - 0x0880)
 class ABP_MicroCamera_C final : public ASBZMicroCamera
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0870(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UBoxComponent*                          Interactable_Collision;                            // 0x0878(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0880(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UBoxComponent*                          Interactable_Collision;                            // 0x0888(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_MicroCamera(int32 EntryPoint);
 	void OnActivated();
+	void ExecuteUbergraph_BP_MicroCamera(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -43,5 +43,6 @@ public:
 		return GetDefaultObjImpl<ABP_MicroCamera_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_MicroCamera_C;
 
 SDK_NAMESPACE_END

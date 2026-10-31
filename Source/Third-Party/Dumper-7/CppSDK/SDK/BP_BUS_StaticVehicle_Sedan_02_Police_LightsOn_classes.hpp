@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_BUS_StaticVehicle_Sedan_02_Police_LightsOn_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BUS_StaticVehicle_Sedan_02_Police_LightsOn_C;
 
 SDK_NAMESPACE_END

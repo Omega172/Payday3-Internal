@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "CoreUObject_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -51,10 +51,10 @@ public:
 	double                                        TargetDistance;                                    // 0x0418(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_SimpleTrain(int32 EntryPoint);
-	void ReceiveBeginPlay();
-	void Timeline_0__FinishedFunc();
 	void Timeline_0__UpdateFunc();
+	void Timeline_0__FinishedFunc();
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_SimpleTrain(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -70,5 +70,6 @@ public:
 		return GetDefaultObjImpl<ABP_SimpleTrain_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_SimpleTrain_C;
 
 SDK_NAMESPACE_END

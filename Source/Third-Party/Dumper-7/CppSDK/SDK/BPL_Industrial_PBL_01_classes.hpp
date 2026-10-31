@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<BPL_Industrial_PBL_01::ABPL_Industrial_PBL_01_C>();
 	}
 };
+DUMPER7_ASSERTS_BPL_Industrial_PBL_01__ABPL_Industrial_PBL_01_C;
 
 SDK_NAMESPACE_END

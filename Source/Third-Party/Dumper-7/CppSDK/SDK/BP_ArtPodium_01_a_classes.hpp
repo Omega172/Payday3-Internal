@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_ArtPodium_01_a_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ArtPodium_01_a_C;
 
 SDK_NAMESPACE_END

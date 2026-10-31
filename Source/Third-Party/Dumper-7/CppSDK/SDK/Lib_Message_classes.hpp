@@ -20,9 +20,9 @@ SDK_NAMESPACE_START
 class ULib_Message_C final : public UBlueprintFunctionLibrary
 {
 public:
-	void GMessage_Error(const class FString& B, class UObject* __WorldContext);
-	void GMessage_Success(const class FString& B, class UObject* __WorldContext);
 	void GMessage_Warning(const class FString& InString, class UObject* __WorldContext);
+	void GMessage_Success(const class FString& B, class UObject* __WorldContext);
+	void GMessage_Error(const class FString& B, class UObject* __WorldContext);
 
 public:
 	static class UClass* StaticClass()
@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ULib_Message_C>();
 	}
 };
+DUMPER7_ASSERTS_ULib_Message_C;
 
 SDK_NAMESPACE_END

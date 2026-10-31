@@ -16,25 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ThrowableKnife.BP_ThrowableKnife_C.BndEvt__BP_ThrowableKnife_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// const struct FHitResult&                ImpactResult                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// const struct FVector&                   ImpactVelocity                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ThrowableKnife.BP_ThrowableKnife_C.OnThrow
+// (Event, Protected, BlueprintEvent)
 
-void ABP_ThrowableKnife_C::BndEvt__BP_ThrowableKnife_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity)
+void ABP_ThrowableKnife_C::OnThrow()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnThrow", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ThrowableKnife_C", "BndEvt__BP_ThrowableKnife_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature");
-
-	Params::BP_ThrowableKnife_C_BndEvt__BP_ThrowableKnife_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature Parms{};
-
-	Parms.ImpactResult = std::move(ImpactResult);
-	Parms.ImpactVelocity = std::move(ImpactVelocity);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -45,10 +35,8 @@ void ABP_ThrowableKnife_C::BndEvt__BP_ThrowableKnife_ProjectileMovementComponent
 
 void ABP_ThrowableKnife_C::ExecuteUbergraph_BP_ThrowableKnife(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ThrowableKnife_C", "ExecuteUbergraph_BP_ThrowableKnife");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ThrowableKnife_C", "ExecuteUbergraph_BP_ThrowableKnife", FuncInfo);
 
 	Params::BP_ThrowableKnife_C_ExecuteUbergraph_BP_ThrowableKnife Parms{};
 
@@ -58,17 +46,23 @@ void ABP_ThrowableKnife_C::ExecuteUbergraph_BP_ThrowableKnife(int32 EntryPoint)
 }
 
 
-// Function BP_ThrowableKnife.BP_ThrowableKnife_C.OnThrow
-// (Event, Protected, BlueprintEvent)
+// Function BP_ThrowableKnife.BP_ThrowableKnife_C.BndEvt__BP_ThrowableKnife_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FHitResult&                ImpactResult                                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// const struct FVector&                   ImpactVelocity                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ThrowableKnife_C::OnThrow()
+void ABP_ThrowableKnife_C::BndEvt__BP_ThrowableKnife_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature(const struct FHitResult& ImpactResult, const struct FVector& ImpactVelocity)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_ThrowableKnife_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ThrowableKnife_C", "OnThrow");
+	Params::BP_ThrowableKnife_C_BndEvt__BP_ThrowableKnife_ProjectileMovementComponent_K2Node_ComponentBoundEvent_0_OnProjectileBounceDelegate__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.ImpactResult = std::move(ImpactResult);
+	Parms.ImpactVelocity = std::move(ImpactVelocity);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

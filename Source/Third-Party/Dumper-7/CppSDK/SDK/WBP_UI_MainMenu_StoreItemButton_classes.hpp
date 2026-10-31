@@ -72,24 +72,24 @@ public:
 	bool                                          IsMaskOfTheWeek;                                   // 0x0689(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetWeaponType(ESBZItemCategory InItemCategory);
-	void SetPrice(int64 Price, ESBZCurrencyCode Currency, int64 DiscountedPrice, int32 DiscountedAmount, int32 DiscountedPercentage);
-	void SetFocused();
-	void SetDisabledFocused();
-	void SetDisabled();
-	void SetDefault();
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnTransactionProgressChanged(bool bInIsTransactionInProgress);
-	void OnTransactionInProgress(bool bIsTransactionInProgress);
-	void OnPlayerStoreItemDataIntialized();
-	void OnInitialized();
-	void OnFocusChanged(bool bIsFocused);
-	void OnDisabledChanged(bool bInDisabled);
-	void InitializeItemData(class USBZInventoryBaseData* InItemData);
-	void ExecuteUbergraph_WBP_UI_MainMenu_StoreItemButton(int32 EntryPoint);
+	void ButtonDisabledChanged(bool bInIsDisabled);
+	void ButtonFocusedChanged(bool bInHasFocus);
 	void DisabledButtonSelected();
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
-	void ButtonDisabledChanged(bool bInIsDisabled_ButtonDisabledChanged);
+	void ExecuteUbergraph_WBP_UI_MainMenu_StoreItemButton(int32 EntryPoint);
+	void InitializeItemData(class USBZInventoryBaseData* InItemData);
+	void OnDisabledChanged(bool bInDisabled);
+	void OnFocusChanged(bool bIsFocused);
+	void OnInitialized();
+	void OnPlayerStoreItemDataIntialized();
+	void OnTransactionInProgress(bool bIsTransactionInProgress);
+	void OnTransactionProgressChanged(bool bInIsTransactionInProgress);
+	void PreConstruct(bool IsDesignTime);
+	void SetDefault();
+	void SetDisabled();
+	void SetDisabledFocused();
+	void SetFocused();
+	void SetPrice(int64 Price, ESBZCurrencyCode Currency, int64 DiscountedPrice, int32 DiscountedAmount, int32 DiscountedPercentage);
+	void SetWeaponType(ESBZItemCategory InItemCategory);
 
 public:
 	static class UClass* StaticClass()

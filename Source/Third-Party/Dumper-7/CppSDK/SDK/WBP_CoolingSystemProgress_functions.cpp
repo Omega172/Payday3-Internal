@@ -16,21 +16,37 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_CoolingSystemProgress.WBP_CoolingSystemProgress_C.ExecuteUbergraph_WBP_CoolingSystemProgress
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_CoolingSystemProgress.WBP_CoolingSystemProgress_C.Progress
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Percentage                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CoolingSystemProgress_C::ExecuteUbergraph_WBP_CoolingSystemProgress(int32 EntryPoint)
+void UWBP_CoolingSystemProgress_C::Progress(double Percentage)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Progress", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CoolingSystemProgress_C", "ExecuteUbergraph_WBP_CoolingSystemProgress");
+	Params::WBP_CoolingSystemProgress_C_Progress Parms{};
 
-	Params::WBP_CoolingSystemProgress_C_ExecuteUbergraph_WBP_CoolingSystemProgress Parms{};
+	Parms.Percentage = Percentage;
 
-	Parms.EntryPoint = EntryPoint;
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CoolingSystemProgress.WBP_CoolingSystemProgress_C.HideAllWidgetsButOne
+// (Private, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWidget*                          WidgetToShow                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CoolingSystemProgress_C::HideAllWidgetsButOne(class UWidget* WidgetToShow)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HideAllWidgetsButOne", FnName));
+
+	Params::WBP_CoolingSystemProgress_C_HideAllWidgetsButOne Parms{};
+
+	Parms.WidgetToShow = WidgetToShow;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -43,10 +59,8 @@ void UWBP_CoolingSystemProgress_C::ExecuteUbergraph_WBP_CoolingSystemProgress(in
 
 float UWBP_CoolingSystemProgress_C::GetPercent()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CoolingSystemProgress_C", "GetPercent");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetPercent", FnName));
 
 	Params::WBP_CoolingSystemProgress_C_GetPercent Parms{};
 
@@ -56,41 +70,19 @@ float UWBP_CoolingSystemProgress_C::GetPercent()
 }
 
 
-// Function WBP_CoolingSystemProgress.WBP_CoolingSystemProgress_C.HideAllWidgetsButOne
-// (Private, BlueprintCallable, BlueprintEvent)
+// Function WBP_CoolingSystemProgress.WBP_CoolingSystemProgress_C.ExecuteUbergraph_WBP_CoolingSystemProgress
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// class UWidget*                          WidgetToShow                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CoolingSystemProgress_C::HideAllWidgetsButOne(class UWidget* WidgetToShow)
+void UWBP_CoolingSystemProgress_C::ExecuteUbergraph_WBP_CoolingSystemProgress(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_CoolingSystemProgress_C", "ExecuteUbergraph_WBP_CoolingSystemProgress", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CoolingSystemProgress_C", "HideAllWidgetsButOne");
+	Params::WBP_CoolingSystemProgress_C_ExecuteUbergraph_WBP_CoolingSystemProgress Parms{};
 
-	Params::WBP_CoolingSystemProgress_C_HideAllWidgetsButOne Parms{};
-
-	Parms.WidgetToShow = WidgetToShow;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CoolingSystemProgress.WBP_CoolingSystemProgress_C.Progress
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Percentage_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CoolingSystemProgress_C::Progress(double Percentage_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_CoolingSystemProgress_C", "Progress");
-
-	Params::WBP_CoolingSystemProgress_C_Progress Parms{};
-
-	Parms.Percentage_0 = Percentage_0;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

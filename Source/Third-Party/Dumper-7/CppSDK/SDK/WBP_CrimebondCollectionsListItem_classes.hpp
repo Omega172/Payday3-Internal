@@ -41,14 +41,14 @@ public:
 	bool                                          bIsVendor;                                         // 0x0370(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UpdateVisualState(bool Selected);
-	void OnListItemObjectSet(class UObject* ListItemObject);
-	void OnListItemEquippedChanged(bool bIsEquipped);
-	void ExecuteUbergraph_WBP_CrimebondCollectionsListItem(int32 EntryPoint);
-	void BundlePackDataSet(class USBZBundlePackData* InBundlePackData);
-	void BP_OnItemSelectionChanged(bool bIsSelected);
-	void BP_OnItemExpansionChanged(bool bIsExpanded);
 	void BP_OnEntryReleased();
+	void BP_OnItemExpansionChanged(bool bIsExpanded);
+	void BP_OnItemSelectionChanged(bool bIsSelected);
+	void BundlePackDataSet(class USBZBundlePackData* InBundlePackData);
+	void ExecuteUbergraph_WBP_CrimebondCollectionsListItem(int32 EntryPoint);
+	void OnListItemEquippedChanged(bool bIsEquipped);
+	void OnListItemObjectSet(class UObject* ListItemObject);
+	void UpdateVisualState(bool Selected_0);
 
 public:
 	static class UClass* StaticClass()

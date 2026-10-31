@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_BarCounter_01_Can_SmallDestruction.BP_BarCounter_01_Can_SmallDestruction_C.ExecuteUbergraph_BP_BarCounter_01_Can_SmallDestruction
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_BarCounter_01_Can_SmallDestruction_C::ExecuteUbergraph_BP_BarCounter_01_Can_SmallDestruction(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_BarCounter_01_Can_SmallDestruction_C", "ExecuteUbergraph_BP_BarCounter_01_Can_SmallDestruction", FuncInfo);
+
+	Params::BP_BarCounter_01_Can_SmallDestruction_C_ExecuteUbergraph_BP_BarCounter_01_Can_SmallDestruction Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_BarCounter_01_Can_SmallDestruction.BP_BarCounter_01_Can_SmallDestruction_C.BndEvt__BP_BarCounter_01_Can_SmallDestruction_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature
 // (HasOutParams, BlueprintEvent)
 // Parameters:
@@ -24,35 +42,13 @@ SDK_NAMESPACE_START
 
 void ABP_BarCounter_01_Can_SmallDestruction_C::BndEvt__BP_BarCounter_01_Can_SmallDestruction_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BarCounter_01_Can_SmallDestruction_C", "BndEvt__BP_BarCounter_01_Can_SmallDestruction_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_BarCounter_01_Can_SmallDestruction_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature", FnName));
 
 	Params::BP_BarCounter_01_Can_SmallDestruction_C_BndEvt__BP_BarCounter_01_Can_SmallDestruction_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature Parms{};
 
 	Parms.Type = Type;
 	Parms.HitContext = std::move(HitContext);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_BarCounter_01_Can_SmallDestruction.BP_BarCounter_01_Can_SmallDestruction_C.ExecuteUbergraph_BP_BarCounter_01_Can_SmallDestruction
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_BarCounter_01_Can_SmallDestruction_C::ExecuteUbergraph_BP_BarCounter_01_Can_SmallDestruction(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_BarCounter_01_Can_SmallDestruction_C", "ExecuteUbergraph_BP_BarCounter_01_Can_SmallDestruction");
-
-	Params::BP_BarCounter_01_Can_SmallDestruction_C_ExecuteUbergraph_BP_BarCounter_01_Can_SmallDestruction Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

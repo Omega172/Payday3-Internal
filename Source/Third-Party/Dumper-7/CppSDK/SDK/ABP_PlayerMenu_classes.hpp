@@ -11,16 +11,16 @@
 #include "Basic.hpp"
 
 #include "AnimGraphRuntime_structs.hpp"
+#include "ABP_PlayerMenu_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Starbreeze_classes.hpp"
-#include "ABP_PlayerMenu_structs.hpp"
 
 
 SDK_NAMESPACE_START
 
 // AnimBlueprintGeneratedClass ABP_PlayerMenu.ABP_PlayerMenu_C
 // 0x1140 (0x1610 - 0x04D0)
-class UABP_PlayerMenu_C final : public USBZMainMenuPlayerAnimation
+class UABP_PlayerMenu_C : public USBZMainMenuPlayerAnimation
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x04D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)

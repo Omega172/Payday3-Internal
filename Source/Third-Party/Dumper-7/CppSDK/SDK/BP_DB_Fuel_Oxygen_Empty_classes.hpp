@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_DB_Fuel_Oxygen_Empty_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DB_Fuel_Oxygen_Empty_C;
 
 SDK_NAMESPACE_END

@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABPL_SkyBounceWindow_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_SkyBounceWindow_C;
 
 SDK_NAMESPACE_END

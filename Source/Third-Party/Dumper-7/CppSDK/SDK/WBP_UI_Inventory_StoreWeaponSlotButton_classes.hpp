@@ -40,18 +40,18 @@ public:
 	bool                                          HasText;                                           // 0x05A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UpdateHighlights(bool IsFocused);
-	void SetPrice(int64 Price, ESBZCurrencyCode Currency);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnTransactionProgressChanged(bool bInIsTransactionInProgress);
-	void OnTransactionInProgress(bool bIsTransactionInProgress);
-	void OnPlayerStoreItemDataIntialized();
-	void OnInitialized();
-	void OnHover(bool bIsHovered);
-	void InitializeItemData(class USBZInventoryBaseData* InItemData);
-	void GetColorByCurrency(ESBZCurrencyCode Currency, struct FLinearColor* CurrencyColor);
+	void ButtonFocusedChanged(bool bInHasFocus);
 	void ExecuteUbergraph_WBP_UI_Inventory_StoreWeaponSlotButton(int32 EntryPoint);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
+	void GetColorByCurrency(ESBZCurrencyCode Currency, struct FLinearColor* CurrencyColor);
+	void InitializeItemData(class USBZInventoryBaseData* InItemData);
+	void OnHover(bool bIsHovered);
+	void OnInitialized();
+	void OnPlayerStoreItemDataIntialized();
+	void OnTransactionInProgress(bool bIsTransactionInProgress);
+	void OnTransactionProgressChanged(bool bInIsTransactionInProgress);
+	void PreConstruct(bool IsDesignTime);
+	void SetPrice(int64 Price, ESBZCurrencyCode Currency);
+	void UpdateHighlights(bool IsFocused);
 
 public:
 	static class UClass* StaticClass()

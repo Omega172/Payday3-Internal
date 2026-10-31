@@ -16,11 +16,11 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CH_Grenadier.CH_Grenadier_C
-// 0x0010 (0x21D0 - 0x21C0)
+// 0x0010 (0x2260 - 0x2250)
 class ACH_Grenadier_C final : public ACH_BaseCop_C
 {
 public:
-	class USBZAIGrenadeBelt*                      SBZAIGrenadeBelt;                                  // 0x21C0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USBZAIGrenadeBelt*                      SBZAIGrenadeBelt;                                  // 0x2250(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ACH_Grenadier_C>();
 	}
 };
+DUMPER7_ASSERTS_ACH_Grenadier_C;
 
 SDK_NAMESPACE_END

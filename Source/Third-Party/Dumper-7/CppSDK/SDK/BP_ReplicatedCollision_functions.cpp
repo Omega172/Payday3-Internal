@@ -16,45 +16,27 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ReplicatedCollision.BP_ReplicatedCollision_C.ExecuteUbergraph_BP_ReplicatedCollision
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ReplicatedCollision.BP_ReplicatedCollision_C.Timeline_0__UpdateFunc
+// (BlueprintEvent)
 
-void ABP_ReplicatedCollision_C::ExecuteUbergraph_BP_ReplicatedCollision(int32 EntryPoint)
+void ABP_ReplicatedCollision_C::Timeline_0__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__UpdateFunc", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedCollision_C", "ExecuteUbergraph_BP_ReplicatedCollision");
-
-	Params::BP_ReplicatedCollision_C_ExecuteUbergraph_BP_ReplicatedCollision Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ReplicatedCollision.BP_ReplicatedCollision_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bStateToChangeTo                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ReplicatedCollision.BP_ReplicatedCollision_C.Timeline_0__FinishedFunc
+// (BlueprintEvent)
 
-void ABP_ReplicatedCollision_C::OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics)
+void ABP_ReplicatedCollision_C::Timeline_0__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__FinishedFunc", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedCollision_C", "OnStateChanged");
-
-	Params::BP_ReplicatedCollision_C_OnStateChanged Parms{};
-
-	Parms.bStateToChangeTo = bStateToChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -66,10 +48,8 @@ void ABP_ReplicatedCollision_C::OnStateChanged(bool bStateToChangeTo, bool bDoCo
 
 void ABP_ReplicatedCollision_C::ReactToCloset(bool bActorsInCloset, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedCollision_C", "ReactToCloset");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReactToCloset", FnName));
 
 	Params::BP_ReplicatedCollision_C_ReactToCloset Parms{};
 
@@ -80,31 +60,41 @@ void ABP_ReplicatedCollision_C::ReactToCloset(bool bActorsInCloset, bool bDoCosm
 }
 
 
-// Function BP_ReplicatedCollision.BP_ReplicatedCollision_C.Timeline_0__FinishedFunc
-// (BlueprintEvent)
+// Function BP_ReplicatedCollision.BP_ReplicatedCollision_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bStateToChangeTo_OnStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ReplicatedCollision_C::Timeline_0__FinishedFunc()
+void ABP_ReplicatedCollision_C::OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedCollision_C", "Timeline_0__FinishedFunc");
+	Params::BP_ReplicatedCollision_C_OnStateChanged Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.bStateToChangeTo_OnStateChanged = bStateToChangeTo_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_ReplicatedCollision.BP_ReplicatedCollision_C.Timeline_0__UpdateFunc
-// (BlueprintEvent)
+// Function BP_ReplicatedCollision.BP_ReplicatedCollision_C.ExecuteUbergraph_BP_ReplicatedCollision
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_ReplicatedCollision_C::Timeline_0__UpdateFunc()
+void ABP_ReplicatedCollision_C::ExecuteUbergraph_BP_ReplicatedCollision(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ReplicatedCollision_C", "ExecuteUbergraph_BP_ReplicatedCollision", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ReplicatedCollision_C", "Timeline_0__UpdateFunc");
+	Params::BP_ReplicatedCollision_C_ExecuteUbergraph_BP_ReplicatedCollision Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

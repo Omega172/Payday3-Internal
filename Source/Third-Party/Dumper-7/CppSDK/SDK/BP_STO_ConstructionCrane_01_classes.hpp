@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
 #include "AkAudio_structs.hpp"
@@ -65,18 +65,18 @@ public:
 	int32                                         localMarkerID;                                     // 0x051C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_STO_ConstructionCrane_01_SBZIntState_K2Node_ComponentBoundEvent_0_SBZIntStateChangedSignature__DelegateSignature(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void BP_OnStateChanged(ESBZTimerState NewState, ESBZTimerState OldState, bool bDoCosmetics);
-	void ExecuteUbergraph_BP_STO_ConstructionCrane_01(int32 EntryPoint);
-	class FText GetMarkerText();
-	void nextState();
-	void ReceiveBeginPlay();
-	void ReceiveTick(float DeltaSeconds);
-	void setCranePosition(bool useEase, int32 position, double delta);
-	void setMarker(const class USBZMarkerDataAsset* MarkerDataAsset);
-	void timerDone();
-	void updateNavigation(bool canNavigate);
 	void UserConstructionScript();
+	void updateNavigation(bool canNavigate);
+	void timerDone();
+	void setMarker(const class USBZMarkerDataAsset* MarkerDataAsset);
+	void setCranePosition(bool useEase, int32 position, double delta);
+	void ReceiveTick(float DeltaSeconds);
+	void ReceiveBeginPlay();
+	void nextState();
+	class FText GetMarkerText();
+	void ExecuteUbergraph_BP_STO_ConstructionCrane_01(int32 EntryPoint);
+	void BP_OnStateChanged(ESBZTimerState NewState, ESBZTimerState OldState, bool bDoCosmetics);
+	void BndEvt__BP_STO_ConstructionCrane_01_SBZIntState_K2Node_ComponentBoundEvent_0_SBZIntStateChangedSignature__DelegateSignature(int32 OldState, int32 NewState, bool bDoCosmetics);
 
 public:
 	static class UClass* StaticClass()
@@ -92,5 +92,6 @@ public:
 		return GetDefaultObjImpl<ABP_STO_ConstructionCrane_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_STO_ConstructionCrane_01_C;
 
 SDK_NAMESPACE_END

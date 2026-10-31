@@ -19,16 +19,18 @@ SDK_PARAM_NAMESPACE_START
 struct BP_IW_BRE_CUT_OPE_NAV_ATT_ArtGallery_C_GetTraversalDestructibleMeshComponent final
 {
 public:
-	class UStaticMeshComponent*                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   ReturnValue_GetTraversalDestructibleMeshComponent; // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_IW_BRE_CUT_OPE_NAV_ATT_ArtGallery_C_GetTraversalDestructibleMeshComponent;
 
 // Function BP_IW_BRE_CUT_OPE_NAV_ATT_ArtGallery.BP_IW_BRE_CUT_OPE_NAV_ATT_ArtGallery_C.GetPropDamageComponent
 // 0x0008 (0x0008 - 0x0000)
 struct BP_IW_BRE_CUT_OPE_NAV_ATT_ArtGallery_C_GetPropDamageComponent final
 {
 public:
-	class USBZPropDamageComponent*                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZPropDamageComponent*                ReturnValue_GetPropDamageComponent;                // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_IW_BRE_CUT_OPE_NAV_ATT_ArtGallery_C_GetPropDamageComponent;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

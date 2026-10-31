@@ -18,19 +18,19 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_ShockGrenade.BP_ShockGrenade_C
-// 0x0030 (0x8FF0 - 0x8FC0)
+// 0x0030 (0x0850 - 0x0820)
 class ABP_ShockGrenade_C final : public ASBZShockGrenade
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x8FC0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UNiagaraComponent*                      FX_GrenadeTrail;                                   // 0x8FC8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UStaticMeshComponent*                   Lever;                                             // 0x8FD0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                OwnerVelocity;                                     // 0x8FD8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0820(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UNiagaraComponent*                      FX_GrenadeTrail;                                   // 0x0828(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Lever;                                             // 0x0830(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                OwnerVelocity;                                     // 0x0838(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_ShockGrenade(int32 EntryPoint);
-	void OnArmed();
 	void OnThrow();
+	void OnArmed();
+	void ExecuteUbergraph_BP_ShockGrenade(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -46,5 +46,6 @@ public:
 		return GetDefaultObjImpl<ABP_ShockGrenade_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ShockGrenade_C;
 
 SDK_NAMESPACE_END

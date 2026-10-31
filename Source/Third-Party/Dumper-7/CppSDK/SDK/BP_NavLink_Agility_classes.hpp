@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_NavLink_Agility_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_NavLink_Agility_C;
 
 SDK_NAMESPACE_END

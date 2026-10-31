@@ -17,40 +17,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function R_NightClub_ServerRoom.R_NightClub_ServerRoom_C.AddTrackedPawnEyescanner
-// 0x0008 (0x0008 - 0x0000)
-struct R_NightClub_ServerRoom_C_AddTrackedPawnEyescanner final
-{
-public:
-	class ASBZAICharacter*                        NPC;                                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_NightClub_ServerRoom.R_NightClub_ServerRoom_C.BndEvt__R_NightClub_ServerRoom_BP_EyeScanner_2_K2Node_ActorBoundEvent_4_SBZOnEyeScannerStateChanged__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct R_NightClub_ServerRoom_C_BndEvt__R_NightClub_ServerRoom_BP_EyeScanner_2_K2Node_ActorBoundEvent_4_SBZOnEyeScannerStateChanged__DelegateSignature final
-{
-public:
-	ESBZEyeScannerState                           Oldstate;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZEyeScannerState                           NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_NightClub_ServerRoom.R_NightClub_ServerRoom_C.BndEvt__R_NightClub_ServerRoom_BP_InteractableStaticMeshDoor_2_K2Node_ActorBoundEvent_1_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct R_NightClub_ServerRoom_C_BndEvt__R_NightClub_ServerRoom_BP_InteractableStaticMeshDoor_2_K2Node_ActorBoundEvent_1_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_NightClub_ServerRoom.R_NightClub_ServerRoom_C.BndEvt__R_NightClub_ServerRoom_SBZPlayerTriggerVolume_PlayerFoundServerRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct R_NightClub_ServerRoom_C_BndEvt__R_NightClub_ServerRoom_SBZPlayerTriggerVolume_PlayerFoundServerRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature final
-{
-public:
-	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function R_NightClub_ServerRoom.R_NightClub_ServerRoom_C.ExecuteUbergraph_R_NightClub_ServerRoom
 // 0x0238 (0x0238 - 0x0000)
 struct R_NightClub_ServerRoom_C_ExecuteUbergraph_R_NightClub_ServerRoom final
@@ -128,6 +94,45 @@ public:
 	ESBZEyeScannerState                           K2Node_ActorBoundEvent_NewState;                   // 0x0231(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0232(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_R_NightClub_ServerRoom_C_ExecuteUbergraph_R_NightClub_ServerRoom;
+
+// Function R_NightClub_ServerRoom.R_NightClub_ServerRoom_C.BndEvt__R_NightClub_ServerRoom_SBZPlayerTriggerVolume_PlayerFoundServerRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct R_NightClub_ServerRoom_C_BndEvt__R_NightClub_ServerRoom_SBZPlayerTriggerVolume_PlayerFoundServerRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature final
+{
+public:
+	class APawn*                                  Pawn;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_NightClub_ServerRoom_C_BndEvt__R_NightClub_ServerRoom_SBZPlayerTriggerVolume_PlayerFoundServerRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature;
+
+// Function R_NightClub_ServerRoom.R_NightClub_ServerRoom_C.BndEvt__R_NightClub_ServerRoom_BP_InteractableStaticMeshDoor_2_K2Node_ActorBoundEvent_1_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct R_NightClub_ServerRoom_C_BndEvt__R_NightClub_ServerRoom_BP_InteractableStaticMeshDoor_2_K2Node_ActorBoundEvent_1_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_NightClub_ServerRoom_C_BndEvt__R_NightClub_ServerRoom_BP_InteractableStaticMeshDoor_2_K2Node_ActorBoundEvent_1_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function R_NightClub_ServerRoom.R_NightClub_ServerRoom_C.BndEvt__R_NightClub_ServerRoom_BP_EyeScanner_2_K2Node_ActorBoundEvent_4_SBZOnEyeScannerStateChanged__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct R_NightClub_ServerRoom_C_BndEvt__R_NightClub_ServerRoom_BP_EyeScanner_2_K2Node_ActorBoundEvent_4_SBZOnEyeScannerStateChanged__DelegateSignature final
+{
+public:
+	ESBZEyeScannerState                           Oldstate;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZEyeScannerState                           NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_NightClub_ServerRoom_C_BndEvt__R_NightClub_ServerRoom_BP_EyeScanner_2_K2Node_ActorBoundEvent_4_SBZOnEyeScannerStateChanged__DelegateSignature;
+
+// Function R_NightClub_ServerRoom.R_NightClub_ServerRoom_C.AddTrackedPawnEyescanner
+// 0x0008 (0x0008 - 0x0000)
+struct R_NightClub_ServerRoom_C_AddTrackedPawnEyescanner final
+{
+public:
+	class ASBZAICharacter*                        NPC;                                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_NightClub_ServerRoom_C_AddTrackedPawnEyescanner;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

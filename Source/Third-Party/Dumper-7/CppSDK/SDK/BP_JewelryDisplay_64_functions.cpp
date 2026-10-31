@@ -16,47 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_JewelryDisplay_64.BP_JewelryDisplay_64_C.BP_OnGlassBroken
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_JewelryDisplay_64.BP_JewelryDisplay_64_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_JewelryDisplay_64_C::BP_OnGlassBroken(bool bDoCosmetics)
+void ABP_JewelryDisplay_64_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_JewelryDisplay_64_C", "BP_OnGlassBroken");
-
-	Params::BP_JewelryDisplay_64_C_BP_OnGlassBroken Parms{};
-
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_JewelryDisplay_64.BP_JewelryDisplay_64_C.BP_OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// ESBZDisplayCaseState                    OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZDisplayCaseState                    NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_JewelryDisplay_64_C::BP_OnStateChanged(ESBZDisplayCaseState OldState, ESBZDisplayCaseState NewState, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_JewelryDisplay_64_C", "BP_OnStateChanged");
-
-	Params::BP_JewelryDisplay_64_C_BP_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -67,10 +35,8 @@ void ABP_JewelryDisplay_64_C::BP_OnStateChanged(ESBZDisplayCaseState OldState, E
 
 void ABP_JewelryDisplay_64_C::ExecuteUbergraph_BP_JewelryDisplay_64(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_JewelryDisplay_64_C", "ExecuteUbergraph_BP_JewelryDisplay_64");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_JewelryDisplay_64_C", "ExecuteUbergraph_BP_JewelryDisplay_64", FuncInfo);
 
 	Params::BP_JewelryDisplay_64_C_ExecuteUbergraph_BP_JewelryDisplay_64 Parms{};
 
@@ -80,17 +46,43 @@ void ABP_JewelryDisplay_64_C::ExecuteUbergraph_BP_JewelryDisplay_64(int32 EntryP
 }
 
 
-// Function BP_JewelryDisplay_64.BP_JewelryDisplay_64_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_JewelryDisplay_64.BP_JewelryDisplay_64_C.BP_OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZDisplayCaseState                    OldState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZDisplayCaseState                    NewState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_BP_OnStateChanged                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_JewelryDisplay_64_C::UserConstructionScript()
+void ABP_JewelryDisplay_64_C::BP_OnStateChanged(ESBZDisplayCaseState OldState_BP_OnStateChanged, ESBZDisplayCaseState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_JewelryDisplay_64_C", "UserConstructionScript");
+	Params::BP_JewelryDisplay_64_C_BP_OnStateChanged Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.OldState_BP_OnStateChanged = OldState_BP_OnStateChanged;
+	Parms.NewState_BP_OnStateChanged = NewState_BP_OnStateChanged;
+	Parms.bDoCosmetics_BP_OnStateChanged = bDoCosmetics_BP_OnStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_JewelryDisplay_64.BP_JewelryDisplay_64_C.BP_OnGlassBroken
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bDoCosmetics_BP_OnGlassBroken                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_JewelryDisplay_64_C::BP_OnGlassBroken(bool bDoCosmetics_BP_OnGlassBroken)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnGlassBroken", FnName));
+
+	Params::BP_JewelryDisplay_64_C_BP_OnGlassBroken Parms{};
+
+	Parms.bDoCosmetics_BP_OnGlassBroken = bDoCosmetics_BP_OnGlassBroken;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

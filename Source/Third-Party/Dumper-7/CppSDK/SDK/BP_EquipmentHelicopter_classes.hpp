@@ -16,7 +16,7 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_EquipmentHelicopter.BP_EquipmentHelicopter_C
-// 0x0000 (0x0850 - 0x0850)
+// 0x0000 (0x09A0 - 0x09A0)
 class ABP_EquipmentHelicopter_C final : public ABP_EscapeHelicopter_C
 {
 public:
@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_EquipmentHelicopter_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_EquipmentHelicopter_C;
 
 SDK_NAMESPACE_END

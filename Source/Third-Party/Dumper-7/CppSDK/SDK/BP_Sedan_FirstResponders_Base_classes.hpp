@@ -10,38 +10,38 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_WheeledVehicle_Base_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Sedan_FirstResponders_Base.BP_Sedan_FirstResponders_Base_C
-// 0x0070 (0x09A0 - 0x0930)
+// 0x0070 (0x0AA0 - 0x0A30)
 class ABP_Sedan_FirstResponders_Base_C final : public ABP_WheeledVehicle_Base_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0928(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class USBZVehicleSpawnComponent*              SBZVehicleSpawn;                                   // 0x0930(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   Spawner_R;                                         // 0x0938(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   Spawner_L;                                         // 0x0940(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   CoverPointRF;                                      // 0x0948(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   CoverPointRB;                                      // 0x0950(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   CoverPointLF;                                      // 0x0958(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   CoverPointLB;                                      // 0x0960(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   CoverPointBR;                                      // 0x0968(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   CoverPointBL;                                      // 0x0970(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   CoverPointFR;                                      // 0x0978(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UChildActorComponent*                   CoverPointFL;                                      // 0x0980(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	TArray<class APawn*>                          SpawnedPawns;                                      // 0x0988(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A28(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class USBZVehicleSpawnComponent*              SBZVehicleSpawn;                                   // 0x0A30(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   Spawner_R;                                         // 0x0A38(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   Spawner_L;                                         // 0x0A40(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   CoverPointRF;                                      // 0x0A48(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   CoverPointRB;                                      // 0x0A50(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   CoverPointLF;                                      // 0x0A58(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   CoverPointLB;                                      // 0x0A60(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   CoverPointBR;                                      // 0x0A68(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   CoverPointBL;                                      // 0x0A70(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   CoverPointFR;                                      // 0x0A78(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UChildActorComponent*                   CoverPointFL;                                      // 0x0A80(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	TArray<class APawn*>                          SpawnedPawns;                                      // 0x0A88(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, DisableEditOnInstance)
 
 public:
-	void BndEvt__BP_Sedan_FirstResponders_Base_SplineFollowingComponent_K2Node_ComponentBoundEvent_0_SBZVehicleOnStarted__DelegateSignature();
-	void CustomEvent_1(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
-	void CustomEvent_2(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
-	void ExecuteUbergraph_BP_Sedan_FirstResponders_Base(int32 EntryPoint);
-	void On_End_Of_Spline(class ASBZWheeledVehicle* Vehicle, class ASBZSpline* Spline);
 	void ReceiveBeginPlay();
+	void On_End_Of_Spline(class ASBZWheeledVehicle* Vehicle, class ASBZSpline* Spline);
+	void ExecuteUbergraph_BP_Sedan_FirstResponders_Base(int32 EntryPoint);
+	void CustomEvent_2(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
+	void CustomEvent_1(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
+	void BndEvt__BP_Sedan_FirstResponders_Base_SplineFollowingComponent_K2Node_ComponentBoundEvent_0_SBZVehicleOnStarted__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()
@@ -57,5 +57,6 @@ public:
 		return GetDefaultObjImpl<ABP_Sedan_FirstResponders_Base_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Sedan_FirstResponders_Base_C;
 
 SDK_NAMESPACE_END

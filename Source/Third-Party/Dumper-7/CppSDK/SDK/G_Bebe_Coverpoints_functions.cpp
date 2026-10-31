@@ -16,15 +16,31 @@
 
 SDK_NAMESPACE_START
 
-// Function G_Bebe_Coverpoints.G_Bebe_Coverpoints_C.BranchBank_Kitchen
+// Function G_Bebe_Coverpoints.G_Bebe_Coverpoints_C.ExecuteUbergraph_G_Bebe_Coverpoints
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Bebe_Coverpoints_C::ExecuteUbergraph_G_Bebe_Coverpoints(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_Bebe_Coverpoints_C", "ExecuteUbergraph_G_Bebe_Coverpoints", FuncInfo);
+
+	Params::G_Bebe_Coverpoints_C_ExecuteUbergraph_G_Bebe_Coverpoints Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_Bebe_Coverpoints.G_Bebe_Coverpoints_C.BranchBank_Stairs
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Bebe_Coverpoints_C::BranchBank_Kitchen()
+void AG_Bebe_Coverpoints_C::BranchBank_Stairs()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Bebe_Coverpoints_C", "BranchBank_Kitchen");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BranchBank_Stairs", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -35,46 +51,22 @@ void AG_Bebe_Coverpoints_C::BranchBank_Kitchen()
 
 void AG_Bebe_Coverpoints_C::BranchBank_Roof()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Bebe_Coverpoints_C", "BranchBank_Roof");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BranchBank_Roof", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Bebe_Coverpoints.G_Bebe_Coverpoints_C.BranchBank_Stairs
+// Function G_Bebe_Coverpoints.G_Bebe_Coverpoints_C.BranchBank_Kitchen
 // (BlueprintCallable, BlueprintEvent)
 
-void AG_Bebe_Coverpoints_C::BranchBank_Stairs()
+void AG_Bebe_Coverpoints_C::BranchBank_Kitchen()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Bebe_Coverpoints_C", "BranchBank_Stairs");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BranchBank_Kitchen", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Bebe_Coverpoints.G_Bebe_Coverpoints_C.ExecuteUbergraph_G_Bebe_Coverpoints
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AG_Bebe_Coverpoints_C::ExecuteUbergraph_G_Bebe_Coverpoints(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Bebe_Coverpoints_C", "ExecuteUbergraph_G_Bebe_Coverpoints");
-
-	Params::G_Bebe_Coverpoints_C_ExecuteUbergraph_G_Bebe_Coverpoints Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 

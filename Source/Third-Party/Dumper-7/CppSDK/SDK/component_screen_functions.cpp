@@ -16,97 +16,435 @@
 
 SDK_NAMESPACE_START
 
-// Function component_screen.component_screen_C.ExecuteUbergraph_component_screen
-// (Final, UbergraphFunction)
+// Function component_screen.component_screen_C.setup
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UStaticMeshComponent*             meshes                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZCosmeticDestructionComponent* SBZCosmeticDestruction                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void Ucomponent_screen_C::ExecuteUbergraph_component_screen(int32 EntryPoint)
+void Ucomponent_screen_C::setup(class UStaticMeshComponent* meshes, class USBZCosmeticDestructionComponent* SBZCosmeticDestruction)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setup", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("component_screen_C", "ExecuteUbergraph_component_screen");
+	Params::component_screen_C_setup Parms{};
 
-	Params::component_screen_C_ExecuteUbergraph_component_screen Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.meshes = meshes;
+	Parms.SBZCosmeticDestruction = SBZCosmeticDestruction;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function component_screen.component_screen_C.onDestructionHit
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESBZCosmeticDestructionType             Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZCosmeticDestructionContext&HitContext                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
-
-void Ucomponent_screen_C::onDestructionHit(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("component_screen_C", "onDestructionHit");
-
-	Params::component_screen_C_onDestructionHit Parms{};
-
-	Parms.Type = Type;
-	Parms.HitContext = std::move(HitContext);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function component_screen.component_screen_C.ReceiveBeginPlay
-// (Event, Public, BlueprintEvent)
-
-void Ucomponent_screen_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("component_screen_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function component_screen.component_screen_C.setBanding_refresh_rate
+// Function component_screen.component_screen_C.setSwap_period
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  banding_refresh_rate_0                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Swap_period                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void Ucomponent_screen_C::setBanding_refresh_rate(double banding_refresh_rate_0)
+void Ucomponent_screen_C::setSwap_period(double Swap_period)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setSwap_period", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("component_screen_C", "setBanding_refresh_rate");
+	Params::component_screen_C_setSwap_period Parms{};
 
-	Params::component_screen_C_setBanding_refresh_rate Parms{};
-
-	Parms.banding_refresh_rate_0 = banding_refresh_rate_0;
+	Parms.Swap_period = Swap_period;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function component_screen.component_screen_C.setBanding_visibility
+// Function component_screen.component_screen_C.setSwap_offest_by_position
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  banding_visibility_0                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    swap_offest_by_position                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void Ucomponent_screen_C::setBanding_visibility(double banding_visibility_0)
+void Ucomponent_screen_C::setSwap_offest_by_position(bool swap_offest_by_position)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setSwap_offest_by_position", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("component_screen_C", "setBanding_visibility");
+	Params::component_screen_C_setSwap_offest_by_position Parms{};
 
-	Params::component_screen_C_setBanding_visibility Parms{};
+	Parms.swap_offest_by_position = swap_offest_by_position;
 
-	Parms.banding_visibility_0 = banding_visibility_0;
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function component_screen.component_screen_C.setSub_texture_part_used_start_range
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   sub_texture_part_used_start_range                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Ucomponent_screen_C::setSub_texture_part_used_start_range(int32 sub_texture_part_used_start_range)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setSub_texture_part_used_start_range", FnName));
+
+	Params::component_screen_C_setSub_texture_part_used_start_range Parms{};
+
+	Parms.sub_texture_part_used_start_range = sub_texture_part_used_start_range;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function component_screen.component_screen_C.setSub_texture_part_used_end_range
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   sub_texture_part_used_end_range                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Ucomponent_screen_C::setSub_texture_part_used_end_range(int32 sub_texture_part_used_end_range)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setSub_texture_part_used_end_range", FnName));
+
+	Params::component_screen_C_setSub_texture_part_used_end_range Parms{};
+
+	Parms.sub_texture_part_used_end_range = sub_texture_part_used_end_range;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function component_screen.component_screen_C.setSpecularity
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Specularity                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Ucomponent_screen_C::setSpecularity(double Specularity)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setSpecularity", FnName));
+
+	Params::component_screen_C_setSpecularity Parms{};
+
+	Parms.Specularity = Specularity;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function component_screen.component_screen_C.setSource_bink_media_player
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UBinkMediaPlayer*                 source_bink_media_player                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void Ucomponent_screen_C::setSource_bink_media_player(class UBinkMediaPlayer* source_bink_media_player)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setSource_bink_media_player", FnName));
+
+	Params::component_screen_C_setSource_bink_media_player Parms{};
+
+	Parms.source_bink_media_player = source_bink_media_player;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function component_screen.component_screen_C.setSide_Attenuation
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Side_Attenuation                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Ucomponent_screen_C::setSide_Attenuation(double Side_Attenuation)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setSide_Attenuation", FnName));
+
+	Params::component_screen_C_setSide_Attenuation Parms{};
+
+	Parms.Side_Attenuation = Side_Attenuation;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function component_screen.component_screen_C.setScreenPlaysMovie
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Screens_plays_movie                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Ucomponent_screen_C::setScreenPlaysMovie(bool Screens_plays_movie)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setScreenPlaysMovie", FnName));
+
+	Params::component_screen_C_setScreenPlaysMovie Parms{};
+
+	Parms.Screens_plays_movie = Screens_plays_movie;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function component_screen.component_screen_C.H)
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  H_                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Ucomponent_screen_C::H__0(double H_)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"H)", FnName));
+
+	Params::component_screen_C_H__0 Parms{};
+
+	Parms.H_ = H_;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function component_screen.component_screen_C.setRoughness_Multiplier
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Roughness_Multiplier                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Ucomponent_screen_C::setRoughness_Multiplier(double Roughness_Multiplier)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setRoughness_Multiplier", FnName));
+
+	Params::component_screen_C_setRoughness_Multiplier Parms{};
+
+	Parms.Roughness_Multiplier = Roughness_Multiplier;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function component_screen.component_screen_C.setResolution
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   resolution                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Ucomponent_screen_C::setResolution(int32 resolution)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setResolution", FnName));
+
+	Params::component_screen_C_setResolution Parms{};
+
+	Parms.resolution = resolution;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function component_screen.component_screen_C.setPixel_type
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Pixel_type                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Ucomponent_screen_C::setPixel_type(int32 Pixel_type)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setPixel_type", FnName));
+
+	Params::component_screen_C_setPixel_type Parms{};
+
+	Parms.Pixel_type = Pixel_type;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function component_screen.component_screen_C.setNumber of  vertical slides in the texture
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Number_of__vertical_slides_in_the_texture              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Ucomponent_screen_C::setNumber_of__vertical_slides_in_the_texture(double Number_of__vertical_slides_in_the_texture)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setNumber of  vertical slides in the texture", FnName));
+
+	Params::component_screen_C_setNumber_of__vertical_slides_in_the_texture Parms{};
+
+	Parms.Number_of__vertical_slides_in_the_texture = Number_of__vertical_slides_in_the_texture;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function component_screen.component_screen_C.setNumber of  horizontal slides in the texture
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Number_of__horizontal_slides_in_the_texture            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Ucomponent_screen_C::setNumber_of__horizontal_slides_in_the_texture(double Number_of__horizontal_slides_in_the_texture)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setNumber of  horizontal slides in the texture", FnName));
+
+	Params::component_screen_C_setNumber_of__horizontal_slides_in_the_texture Parms{};
+
+	Parms.Number_of__horizontal_slides_in_the_texture = Number_of__horizontal_slides_in_the_texture;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function component_screen.component_screen_C.setMode_RGB
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Mode_RGB                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Ucomponent_screen_C::setMode_RGB(bool Mode_RGB)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setMode_RGB", FnName));
+
+	Params::component_screen_C_setMode_RGB Parms{};
+
+	Parms.Mode_RGB = Mode_RGB;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function component_screen.component_screen_C.setLight_Spread
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Light_Spread                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Ucomponent_screen_C::setLight_Spread(double Light_Spread)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setLight_Spread", FnName));
+
+	Params::component_screen_C_setLight_Spread Parms{};
+
+	Parms.Light_Spread = Light_Spread;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function component_screen.component_screen_C.setLight_Reach
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Light_Reach                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Ucomponent_screen_C::setLight_Reach(double Light_Reach)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setLight_Reach", FnName));
+
+	Params::component_screen_C_setLight_Reach Parms{};
+
+	Parms.Light_Reach = Light_Reach;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function component_screen.component_screen_C.setLight_Intensity
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Light_Intensity                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Ucomponent_screen_C::setLight_Intensity(double Light_Intensity)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setLight_Intensity", FnName));
+
+	Params::component_screen_C_setLight_Intensity Parms{};
+
+	Parms.Light_Intensity = Light_Intensity;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function component_screen.component_screen_C.setLight_Angle
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  Light_Angle                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Ucomponent_screen_C::setLight_Angle(double Light_Angle)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setLight_Angle", FnName));
+
+	Params::component_screen_C_setLight_Angle Parms{};
+
+	Parms.Light_Angle = Light_Angle;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function component_screen.component_screen_C.setIs_OFF
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Is_OFF                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Ucomponent_screen_C::setIs_OFF(bool Is_OFF)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setIs_OFF", FnName));
+
+	Params::component_screen_C_setIs_OFF Parms{};
+
+	Parms.Is_OFF = Is_OFF;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function component_screen.component_screen_C.setIs_Fully_destructable
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Is_Fully_destructable                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Ucomponent_screen_C::setIs_Fully_destructable(bool Is_Fully_destructable)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setIs_Fully_destructable", FnName));
+
+	Params::component_screen_C_setIs_Fully_destructable Parms{};
+
+	Parms.Is_Fully_destructable = Is_Fully_destructable;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function component_screen.component_screen_C.setIntensity_screen
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  intensity_screen                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Ucomponent_screen_C::setIntensity_screen(double intensity_screen)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setIntensity_screen", FnName));
+
+	Params::component_screen_C_setIntensity_screen Parms{};
+
+	Parms.intensity_screen = intensity_screen;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function component_screen.component_screen_C.setDiffuse_color
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FLinearColor&              Diffuse_color                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void Ucomponent_screen_C::setDiffuse_color(const struct FLinearColor& Diffuse_color)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setDiffuse_color", FnName));
+
+	Params::component_screen_C_setDiffuse_color Parms{};
+
+	Parms.Diffuse_color = std::move(Diffuse_color);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -119,10 +457,8 @@ void Ucomponent_screen_C::setBanding_visibility(double banding_visibility_0)
 
 void Ucomponent_screen_C::setDamageState(int32 damage)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("component_screen_C", "setDamageState");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setDamageState", FnName));
 
 	Params::component_screen_C_setDamageState Parms{};
 
@@ -132,483 +468,87 @@ void Ucomponent_screen_C::setDamageState(int32 damage)
 }
 
 
-// Function component_screen.component_screen_C.setDiffuse_color
+// Function component_screen.component_screen_C.setBanding_visibility
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FLinearColor&              Diffuse_color_0                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  banding_visibility                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void Ucomponent_screen_C::setDiffuse_color(const struct FLinearColor& Diffuse_color_0)
+void Ucomponent_screen_C::setBanding_visibility(double banding_visibility)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setBanding_visibility", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("component_screen_C", "setDiffuse_color");
+	Params::component_screen_C_setBanding_visibility Parms{};
 
-	Params::component_screen_C_setDiffuse_color Parms{};
-
-	Parms.Diffuse_color_0 = std::move(Diffuse_color_0);
+	Parms.banding_visibility = banding_visibility;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function component_screen.component_screen_C.setIntensity_screen
+// Function component_screen.component_screen_C.setBanding_refresh_rate
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// double                                  intensity_screen_0                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  banding_refresh_rate                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void Ucomponent_screen_C::setIntensity_screen(double intensity_screen_0)
+void Ucomponent_screen_C::setBanding_refresh_rate(double banding_refresh_rate)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setBanding_refresh_rate", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("component_screen_C", "setIntensity_screen");
+	Params::component_screen_C_setBanding_refresh_rate Parms{};
 
-	Params::component_screen_C_setIntensity_screen Parms{};
-
-	Parms.intensity_screen_0 = intensity_screen_0;
+	Parms.banding_refresh_rate = banding_refresh_rate;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function component_screen.component_screen_C.setIs_Fully_destructable
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Is_Fully_destructable_0                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function component_screen.component_screen_C.ReceiveBeginPlay
+// (Event, Public, BlueprintEvent)
 
-void Ucomponent_screen_C::setIs_Fully_destructable(bool Is_Fully_destructable_0)
+void Ucomponent_screen_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("component_screen_C", "setIs_Fully_destructable");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::component_screen_C_setIs_Fully_destructable Parms{};
 
-	Parms.Is_Fully_destructable_0 = Is_Fully_destructable_0;
+// Function component_screen.component_screen_C.onDestructionHit
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESBZCosmeticDestructionType             Type                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZCosmeticDestructionContext&HitContext                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+
+void Ucomponent_screen_C::onDestructionHit(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"onDestructionHit", FnName));
+
+	Params::component_screen_C_onDestructionHit Parms{};
+
+	Parms.Type = Type;
+	Parms.HitContext = std::move(HitContext);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function component_screen.component_screen_C.setIs_OFF
-// (BlueprintCallable, BlueprintEvent)
+// Function component_screen.component_screen_C.ExecuteUbergraph_component_screen
+// (Final, UbergraphFunction)
 // Parameters:
-// bool                                    Is_OFF_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void Ucomponent_screen_C::setIs_OFF(bool Is_OFF_0)
+void Ucomponent_screen_C::ExecuteUbergraph_component_screen(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "component_screen_C", "ExecuteUbergraph_component_screen", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("component_screen_C", "setIs_OFF");
+	Params::component_screen_C_ExecuteUbergraph_component_screen Parms{};
 
-	Params::component_screen_C_setIs_OFF Parms{};
-
-	Parms.Is_OFF_0 = Is_OFF_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function component_screen.component_screen_C.setLight_Angle
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Light_Angle_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Ucomponent_screen_C::setLight_Angle(double Light_Angle_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("component_screen_C", "setLight_Angle");
-
-	Params::component_screen_C_setLight_Angle Parms{};
-
-	Parms.Light_Angle_0 = Light_Angle_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function component_screen.component_screen_C.setLight_Intensity
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Light_Intensity_0                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Ucomponent_screen_C::setLight_Intensity(double Light_Intensity_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("component_screen_C", "setLight_Intensity");
-
-	Params::component_screen_C_setLight_Intensity Parms{};
-
-	Parms.Light_Intensity_0 = Light_Intensity_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function component_screen.component_screen_C.setLight_Reach
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Light_Reach_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Ucomponent_screen_C::setLight_Reach(double Light_Reach_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("component_screen_C", "setLight_Reach");
-
-	Params::component_screen_C_setLight_Reach Parms{};
-
-	Parms.Light_Reach_0 = Light_Reach_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function component_screen.component_screen_C.setLight_Spread
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Light_Spread_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Ucomponent_screen_C::setLight_Spread(double Light_Spread_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("component_screen_C", "setLight_Spread");
-
-	Params::component_screen_C_setLight_Spread Parms{};
-
-	Parms.Light_Spread_0 = Light_Spread_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function component_screen.component_screen_C.setMode_RGB
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Mode_RGB_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Ucomponent_screen_C::setMode_RGB(bool Mode_RGB_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("component_screen_C", "setMode_RGB");
-
-	Params::component_screen_C_setMode_RGB Parms{};
-
-	Parms.Mode_RGB_0 = Mode_RGB_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function component_screen.component_screen_C.setNumber of  horizontal slides in the texture
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Number_of__horizontal_slides_in_the_texture_0          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Ucomponent_screen_C::setNumber_of__horizontal_slides_in_the_texture(double Number_of__horizontal_slides_in_the_texture_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("component_screen_C", "setNumber of  horizontal slides in the texture");
-
-	Params::component_screen_C_setNumber_of__horizontal_slides_in_the_texture Parms{};
-
-	Parms.Number_of__horizontal_slides_in_the_texture_0 = Number_of__horizontal_slides_in_the_texture_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function component_screen.component_screen_C.setNumber of  vertical slides in the texture
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Number_of__vertical_slides_in_the_texture_0            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Ucomponent_screen_C::setNumber_of__vertical_slides_in_the_texture(double Number_of__vertical_slides_in_the_texture_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("component_screen_C", "setNumber of  vertical slides in the texture");
-
-	Params::component_screen_C_setNumber_of__vertical_slides_in_the_texture Parms{};
-
-	Parms.Number_of__vertical_slides_in_the_texture_0 = Number_of__vertical_slides_in_the_texture_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function component_screen.component_screen_C.setPixel_type
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Pixel_type_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Ucomponent_screen_C::setPixel_type(int32 Pixel_type_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("component_screen_C", "setPixel_type");
-
-	Params::component_screen_C_setPixel_type Parms{};
-
-	Parms.Pixel_type_0 = Pixel_type_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function component_screen.component_screen_C.setResolution
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   resolution_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Ucomponent_screen_C::setResolution(int32 resolution_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("component_screen_C", "setResolution");
-
-	Params::component_screen_C_setResolution Parms{};
-
-	Parms.resolution_0 = resolution_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function component_screen.component_screen_C.setRoughness_Multiplier
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Roughness_Multiplier_0                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Ucomponent_screen_C::setRoughness_Multiplier(double Roughness_Multiplier_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("component_screen_C", "setRoughness_Multiplier");
-
-	Params::component_screen_C_setRoughness_Multiplier Parms{};
-
-	Parms.Roughness_Multiplier_0 = Roughness_Multiplier_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function component_screen.component_screen_C.H)
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Param_H__0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Ucomponent_screen_C::H__0(double Param_H__0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("component_screen_C", "H)");
-
-	Params::component_screen_C_H__0 Parms{};
-
-	Parms.Param_H__0 = Param_H__0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function component_screen.component_screen_C.setScreenPlaysMovie
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Screens_plays_movie_0                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Ucomponent_screen_C::setScreenPlaysMovie(bool Screens_plays_movie_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("component_screen_C", "setScreenPlaysMovie");
-
-	Params::component_screen_C_setScreenPlaysMovie Parms{};
-
-	Parms.Screens_plays_movie_0 = Screens_plays_movie_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function component_screen.component_screen_C.setSide_Attenuation
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Side_Attenuation_0                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Ucomponent_screen_C::setSide_Attenuation(double Side_Attenuation_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("component_screen_C", "setSide_Attenuation");
-
-	Params::component_screen_C_setSide_Attenuation Parms{};
-
-	Parms.Side_Attenuation_0 = Side_Attenuation_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function component_screen.component_screen_C.setSource_bink_media_player
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UBinkMediaPlayer*                 source_bink_media_player_0                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void Ucomponent_screen_C::setSource_bink_media_player(class UBinkMediaPlayer* source_bink_media_player_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("component_screen_C", "setSource_bink_media_player");
-
-	Params::component_screen_C_setSource_bink_media_player Parms{};
-
-	Parms.source_bink_media_player_0 = source_bink_media_player_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function component_screen.component_screen_C.setSpecularity
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Specularity_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Ucomponent_screen_C::setSpecularity(double Specularity_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("component_screen_C", "setSpecularity");
-
-	Params::component_screen_C_setSpecularity Parms{};
-
-	Parms.Specularity_0 = Specularity_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function component_screen.component_screen_C.setSub_texture_part_used_end_range
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   sub_texture_part_used_end_range_0                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Ucomponent_screen_C::setSub_texture_part_used_end_range(int32 sub_texture_part_used_end_range_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("component_screen_C", "setSub_texture_part_used_end_range");
-
-	Params::component_screen_C_setSub_texture_part_used_end_range Parms{};
-
-	Parms.sub_texture_part_used_end_range_0 = sub_texture_part_used_end_range_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function component_screen.component_screen_C.setSub_texture_part_used_start_range
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   sub_texture_part_used_start_range_0                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Ucomponent_screen_C::setSub_texture_part_used_start_range(int32 sub_texture_part_used_start_range_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("component_screen_C", "setSub_texture_part_used_start_range");
-
-	Params::component_screen_C_setSub_texture_part_used_start_range Parms{};
-
-	Parms.sub_texture_part_used_start_range_0 = sub_texture_part_used_start_range_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function component_screen.component_screen_C.setSwap_offest_by_position
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    swap_offest_by_position_0                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Ucomponent_screen_C::setSwap_offest_by_position(bool swap_offest_by_position_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("component_screen_C", "setSwap_offest_by_position");
-
-	Params::component_screen_C_setSwap_offest_by_position Parms{};
-
-	Parms.swap_offest_by_position_0 = swap_offest_by_position_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function component_screen.component_screen_C.setSwap_period
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  Swap_period_0                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void Ucomponent_screen_C::setSwap_period(double Swap_period_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("component_screen_C", "setSwap_period");
-
-	Params::component_screen_C_setSwap_period Parms{};
-
-	Parms.Swap_period_0 = Swap_period_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function component_screen.component_screen_C.setup
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UStaticMeshComponent*             meshes_0                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZCosmeticDestructionComponent* SBZCosmeticDestruction_0                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-void Ucomponent_screen_C::setup(class UStaticMeshComponent* meshes_0, class USBZCosmeticDestructionComponent* SBZCosmeticDestruction_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("component_screen_C", "setup");
-
-	Params::component_screen_C_setup Parms{};
-
-	Parms.meshes_0 = meshes_0;
-	Parms.SBZCosmeticDestruction_0 = SBZCosmeticDestruction_0;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -20,10 +20,8 @@ SDK_NAMESPACE_START
 
 void ABP_InteractableJewelry_LowValue_C::OnRep_RenderOutlines()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InteractableJewelry_LowValue_C", "OnRep_RenderOutlines");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRep_RenderOutlines", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

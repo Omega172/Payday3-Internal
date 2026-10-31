@@ -16,47 +16,76 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Wardrobe_Door_Lockpickable_1.BP_Wardrobe_Door_Lockpickable_1_C.BndEvt__BP_Wardrobe_Door_Lockpickable_1_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
-// Parameters:
-// class UActorComponent*                  PoolComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   Hits                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZPropDamageContext&     DamageContext                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// Function BP_Wardrobe_Door_Lockpickable_1.BP_Wardrobe_Door_Lockpickable_1_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_Wardrobe_Door_Lockpickable_1_C::BndEvt__BP_Wardrobe_Door_Lockpickable_1_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
+void ABP_Wardrobe_Door_Lockpickable_1_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Wardrobe_Door_Lockpickable_1_C", "BndEvt__BP_Wardrobe_Door_Lockpickable_1_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature");
-
-	Params::BP_Wardrobe_Door_Lockpickable_1_C_BndEvt__BP_Wardrobe_Door_Lockpickable_1_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature Parms{};
-
-	Parms.PoolComponent = PoolComponent;
-	Parms.Hits = Hits;
-	Parms.bDoCosmetics = bDoCosmetics;
-	Parms.DamageContext = std::move(DamageContext);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Wardrobe_Door_Lockpickable_1.BP_Wardrobe_Door_Lockpickable_1_C.BP_OnMiniGameSuccess
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Wardrobe_Door_Lockpickable_1.BP_Wardrobe_Door_Lockpickable_1_C.Timeline_0__UpdateFunc
+// (BlueprintEvent)
 
-void ABP_Wardrobe_Door_Lockpickable_1_C::BP_OnMiniGameSuccess(bool bDoCosmetics)
+void ABP_Wardrobe_Door_Lockpickable_1_C::Timeline_0__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__UpdateFunc", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Wardrobe_Door_Lockpickable_1_C", "BP_OnMiniGameSuccess");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_Wardrobe_Door_Lockpickable_1_C_BP_OnMiniGameSuccess Parms{};
 
-	Parms.bDoCosmetics = bDoCosmetics;
+// Function BP_Wardrobe_Door_Lockpickable_1.BP_Wardrobe_Door_Lockpickable_1_C.Timeline_0__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_Wardrobe_Door_Lockpickable_1_C::Timeline_0__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Wardrobe_Door_Lockpickable_1.BP_Wardrobe_Door_Lockpickable_1_C.PopulateSpawnInformationMap
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TMap<class USceneComponent*, struct FTransform>*InOutSpawnDataMap                                      (Parm, OutParm, ContainsInstancedReference)
+
+void ABP_Wardrobe_Door_Lockpickable_1_C::PopulateSpawnInformationMap(TMap<class USceneComponent*, struct FTransform>* InOutSpawnDataMap)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"PopulateSpawnInformationMap", FnName));
+
+	Params::BP_Wardrobe_Door_Lockpickable_1_C_PopulateSpawnInformationMap Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (InOutSpawnDataMap != nullptr)
+		*InOutSpawnDataMap = std::move(Parms.InOutSpawnDataMap);
+}
+
+
+// Function BP_Wardrobe_Door_Lockpickable_1.BP_Wardrobe_Door_Lockpickable_1_C.OnActorSpawned
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AActor*                           SpawnedActor                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USceneComponent*                  AttachParent                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Wardrobe_Door_Lockpickable_1_C::OnActorSpawned(class AActor* SpawnedActor, class USceneComponent* AttachParent)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnActorSpawned", FnName));
+
+	Params::BP_Wardrobe_Door_Lockpickable_1_C_OnActorSpawned Parms{};
+
+	Parms.SpawnedActor = SpawnedActor;
+	Parms.AttachParent = AttachParent;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -69,10 +98,8 @@ void ABP_Wardrobe_Door_Lockpickable_1_C::BP_OnMiniGameSuccess(bool bDoCosmetics)
 
 void ABP_Wardrobe_Door_Lockpickable_1_C::ExecuteUbergraph_BP_Wardrobe_Door_Lockpickable_1(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Wardrobe_Door_Lockpickable_1_C", "ExecuteUbergraph_BP_Wardrobe_Door_Lockpickable_1");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Wardrobe_Door_Lockpickable_1_C", "ExecuteUbergraph_BP_Wardrobe_Door_Lockpickable_1", FuncInfo);
 
 	Params::BP_Wardrobe_Door_Lockpickable_1_C_ExecuteUbergraph_BP_Wardrobe_Door_Lockpickable_1 Parms{};
 
@@ -82,88 +109,45 @@ void ABP_Wardrobe_Door_Lockpickable_1_C::ExecuteUbergraph_BP_Wardrobe_Door_Lockp
 }
 
 
-// Function BP_Wardrobe_Door_Lockpickable_1.BP_Wardrobe_Door_Lockpickable_1_C.OnActorSpawned
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_Wardrobe_Door_Lockpickable_1.BP_Wardrobe_Door_Lockpickable_1_C.BP_OnMiniGameSuccess
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// class AActor*                           SpawnedActor                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USceneComponent*                  AttachParent                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_BP_OnMiniGameSuccess                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Wardrobe_Door_Lockpickable_1_C::OnActorSpawned(class AActor* SpawnedActor, class USceneComponent* AttachParent)
+void ABP_Wardrobe_Door_Lockpickable_1_C::BP_OnMiniGameSuccess(bool bDoCosmetics_BP_OnMiniGameSuccess)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnMiniGameSuccess", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Wardrobe_Door_Lockpickable_1_C", "OnActorSpawned");
+	Params::BP_Wardrobe_Door_Lockpickable_1_C_BP_OnMiniGameSuccess Parms{};
 
-	Params::BP_Wardrobe_Door_Lockpickable_1_C_OnActorSpawned Parms{};
-
-	Parms.SpawnedActor = SpawnedActor;
-	Parms.AttachParent = AttachParent;
+	Parms.bDoCosmetics_BP_OnMiniGameSuccess = bDoCosmetics_BP_OnMiniGameSuccess;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_Wardrobe_Door_Lockpickable_1.BP_Wardrobe_Door_Lockpickable_1_C.PopulateSpawnInformationMap
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function BP_Wardrobe_Door_Lockpickable_1.BP_Wardrobe_Door_Lockpickable_1_C.BndEvt__BP_Wardrobe_Door_Lockpickable_1_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
 // Parameters:
-// TMap<class USceneComponent*, struct FTransform>*InOutSpawnDataMap                                      (Parm, OutParm, ContainsInstancedReference)
+// class UActorComponent*                  PoolComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   Hits                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZPropDamageContext&     DamageContext                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 
-void ABP_Wardrobe_Door_Lockpickable_1_C::PopulateSpawnInformationMap(TMap<class USceneComponent*, struct FTransform>* InOutSpawnDataMap)
+void ABP_Wardrobe_Door_Lockpickable_1_C::BndEvt__BP_Wardrobe_Door_Lockpickable_1_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Wardrobe_Door_Lockpickable_1_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Wardrobe_Door_Lockpickable_1_C", "PopulateSpawnInformationMap");
+	Params::BP_Wardrobe_Door_Lockpickable_1_C_BndEvt__BP_Wardrobe_Door_Lockpickable_1_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature Parms{};
 
-	Params::BP_Wardrobe_Door_Lockpickable_1_C_PopulateSpawnInformationMap Parms{};
+	Parms.PoolComponent = PoolComponent;
+	Parms.Hits = Hits;
+	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.DamageContext = std::move(DamageContext);
 
 	UObject::ProcessEvent(Func, &Parms);
-
-	if (InOutSpawnDataMap != nullptr)
-		*InOutSpawnDataMap = std::move(Parms.InOutSpawnDataMap);
-}
-
-
-// Function BP_Wardrobe_Door_Lockpickable_1.BP_Wardrobe_Door_Lockpickable_1_C.Timeline_0__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_Wardrobe_Door_Lockpickable_1_C::Timeline_0__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Wardrobe_Door_Lockpickable_1_C", "Timeline_0__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Wardrobe_Door_Lockpickable_1.BP_Wardrobe_Door_Lockpickable_1_C.Timeline_0__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_Wardrobe_Door_Lockpickable_1_C::Timeline_0__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Wardrobe_Door_Lockpickable_1_C", "Timeline_0__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Wardrobe_Door_Lockpickable_1.BP_Wardrobe_Door_Lockpickable_1_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_Wardrobe_Door_Lockpickable_1_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Wardrobe_Door_Lockpickable_1_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

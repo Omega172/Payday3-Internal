@@ -16,6 +16,16 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_SwatVan_Spawner.BP_SwatVan_Spawner_C.PawnSpawned
+// 0x0010 (0x0010 - 0x0000)
+struct BP_SwatVan_Spawner_C_PawnSpawned final
+{
+public:
+	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SwatVan_Spawner_C_PawnSpawned;
+
 // Function BP_SwatVan_Spawner.BP_SwatVan_Spawner_C.ExecuteUbergraph_BP_SwatVan_Spawner
 // 0x0088 (0x0088 - 0x0000)
 struct BP_SwatVan_Spawner_C_ExecuteUbergraph_BP_SwatVan_Spawner final
@@ -46,15 +56,7 @@ public:
 	class ASBZPawnSpawnPredefined*                K2Node_DynamicCast_AsSBZPawn_Spawn_Predefined_5;   // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_5;                     // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_SwatVan_Spawner.BP_SwatVan_Spawner_C.PawnSpawned
-// 0x0010 (0x0010 - 0x0000)
-struct BP_SwatVan_Spawner_C_PawnSpawned final
-{
-public:
-	class APawn*                                  SpawnedPawn;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZCarriedStaticInteractionActor*      Spawnedloot;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_SwatVan_Spawner_C_ExecuteUbergraph_BP_SwatVan_Spawner;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

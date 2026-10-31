@@ -24,8 +24,8 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteUbergraph_A_Bust(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_A_Bust(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -41,5 +41,6 @@ public:
 		return GetDefaultObjImpl<AA_Bust_C>();
 	}
 };
+DUMPER7_ASSERTS_AA_Bust_C;
 
 SDK_NAMESPACE_END

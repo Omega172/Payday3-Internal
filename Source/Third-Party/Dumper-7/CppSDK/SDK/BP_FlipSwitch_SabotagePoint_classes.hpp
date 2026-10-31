@@ -26,12 +26,12 @@ public:
 	class UStaticMeshComponent*                   Mesh;                                              // 0x0448(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_ElevatorDoor_ControlPanel_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent_0, bool bInNewState);
-	void BndEvt__BP_FlipSwitch_SabotagePoint_initial_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_FlipSwitch_SabotagePoint(int32 EntryPoint);
-	void PlayTurnOff();
-	void PlayTurnOn();
 	void UserConstructionScript();
+	void PlayTurnOn();
+	void PlayTurnOff();
+	void ExecuteUbergraph_BP_FlipSwitch_SabotagePoint(int32 EntryPoint);
+	void BndEvt__BP_FlipSwitch_SabotagePoint_initial_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
+	void BndEvt__BP_ElevatorDoor_ControlPanel_InteractableComponent_K2Node_ComponentBoundEvent_2_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
 
 public:
 	static class UClass* StaticClass()
@@ -47,5 +47,6 @@ public:
 		return GetDefaultObjImpl<ABP_FlipSwitch_SabotagePoint_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_FlipSwitch_SabotagePoint_C;
 
 SDK_NAMESPACE_END

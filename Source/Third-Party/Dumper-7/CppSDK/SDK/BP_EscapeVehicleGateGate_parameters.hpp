@@ -16,6 +16,16 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_EscapeVehicleGateGate.BP_EscapeVehicleGateGate_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_EscapeVehicleGateGate_C_OnStateChanged final
+{
+public:
+	bool                                          bStateToChangeTo_OnStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_EscapeVehicleGateGate_C_OnStateChanged;
+
 // Function BP_EscapeVehicleGateGate.BP_EscapeVehicleGateGate_C.ExecuteUbergraph_BP_EscapeVehicleGateGate
 // 0x0040 (0x0040 - 0x0000)
 struct BP_EscapeVehicleGateGate_C_ExecuteUbergraph_BP_EscapeVehicleGateGate final
@@ -32,15 +42,7 @@ public:
 	bool                                          K2Node_Event_bDoCosmetics;                         // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_SetActorRotation_ReturnValue_3;        // 0x003D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_EscapeVehicleGateGate.BP_EscapeVehicleGateGate_C.OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_EscapeVehicleGateGate_C_OnStateChanged final
-{
-public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_EscapeVehicleGateGate_C_ExecuteUbergraph_BP_EscapeVehicleGateGate;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "WBP_ComputerBase_classes.hpp"
 #include "Engine_structs.hpp"
+#include "WBP_ComputerBase_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -36,25 +36,25 @@ public:
 	class UWBP_StonkComplete_C*                   WBP_StonkComplete;                                 // 0x0358(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Active();
-	void Code();
-	void Done();
-	void Email();
-	void ExecuteUbergraph_WBP_StonkBase(int32 EntryPoint);
-	void Failed();
-	void HideAllWidgetsButOne(class UWidget* WidgetToShow);
-	void Interupted();
-	void Names();
-	void NotActive();
-	void Progressing();
+	void UpdateUnlockDisplayText(const struct FSBZHackableDisplayText& NewDisplayText_UpdateUnlockDisplayText);
+	void UpdateSuccessText(const class FText& InText_UpdateSuccessText);
+	void updateKeypadPossibleCodes(const TArray<int32>& codes_updateKeypadPossibleCodes);
+	void updateInformation(const class FText& main_updateInformation, const class FText& secondary_updateInformation, const class FText& additional_updateInformation);
+	void updateHackingTimerProcessName(const class FText& InText_updateHackingTimerProcessName);
+	void updateHackingProgress(int32 progress_updateHackingProgress);
+	void UpdateEmailDisplayText(const struct FSBZHackableDisplayText& DisplayText_UpdateEmailDisplayText);
 	void Unlocked();
-	void UpdateEmailDisplayText(const struct FSBZHackableDisplayText& DisplayText);
-	void updateHackingProgress(int32 progress);
-	void updateHackingTimerProcessName(const class FText& InText);
-	void updateInformation(const class FText& main, const class FText& secondary, const class FText& additional);
-	void updateKeypadPossibleCodes(const TArray<int32>& codes);
-	void UpdateSuccessText(const class FText& InText);
-	void UpdateUnlockDisplayText(const struct FSBZHackableDisplayText& NewDisplayText);
+	void Progressing();
+	void NotActive();
+	void Names();
+	void Interupted();
+	void HideAllWidgetsButOne(class UWidget* WidgetToShow);
+	void Failed();
+	void ExecuteUbergraph_WBP_StonkBase(int32 EntryPoint);
+	void Email();
+	void Done();
+	void Code();
+	void Active();
 
 public:
 	static class UClass* StaticClass()
@@ -70,5 +70,6 @@ public:
 		return GetDefaultObjImpl<UWBP_StonkBase_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_StonkBase_C;
 
 SDK_NAMESPACE_END

@@ -16,49 +16,25 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Container_Objective.BP_Container_Objective_C.ExecuteUbergraph_BP_Container_Objective
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Container_Objective.BP_Container_Objective_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_Container_Objective_C::ExecuteUbergraph_BP_Container_Objective(int32 EntryPoint)
+void ABP_Container_Objective_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Container_Objective_C", "ExecuteUbergraph_BP_Container_Objective");
-
-	Params::BP_Container_Objective_C_ExecuteUbergraph_BP_Container_Objective Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Container_Objective.BP_Container_Objective_C.Set Doors Open
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_Container_Objective_C::Set_Doors_Open()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Container_Objective_C", "Set Doors Open");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Container_Objective.BP_Container_Objective_C.SetAsLootContainer
+// Function BP_Container_Objective.BP_Container_Objective_C.SetIsTraversable
 // (BlueprintCallable, BlueprintEvent)
 
-void ABP_Container_Objective_C::SetAsLootContainer()
+void ABP_Container_Objective_C::SetIsTraversable()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Container_Objective_C", "SetAsLootContainer");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetIsTraversable", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -72,10 +48,8 @@ void ABP_Container_Objective_C::SetAsLootContainer()
 
 void ABP_Container_Objective_C::setBinaryState(bool state, bool doCosmetics)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Container_Objective_C", "setBinaryState");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setBinaryState", FnName));
 
 	Params::BP_Container_Objective_C_setBinaryState Parms{};
 
@@ -86,31 +60,45 @@ void ABP_Container_Objective_C::setBinaryState(bool state, bool doCosmetics)
 }
 
 
-// Function BP_Container_Objective.BP_Container_Objective_C.SetIsTraversable
+// Function BP_Container_Objective.BP_Container_Objective_C.SetAsLootContainer
 // (BlueprintCallable, BlueprintEvent)
 
-void ABP_Container_Objective_C::SetIsTraversable()
+void ABP_Container_Objective_C::SetAsLootContainer()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Container_Objective_C", "SetIsTraversable");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetAsLootContainer", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_Container_Objective.BP_Container_Objective_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_Container_Objective.BP_Container_Objective_C.Set Doors Open
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_Container_Objective_C::UserConstructionScript()
+void ABP_Container_Objective_C::Set_Doors_Open()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Container_Objective_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Set Doors Open", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Container_Objective.BP_Container_Objective_C.ExecuteUbergraph_BP_Container_Objective
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Container_Objective_C::ExecuteUbergraph_BP_Container_Objective(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Container_Objective_C", "ExecuteUbergraph_BP_Container_Objective", FuncInfo);
+
+	Params::BP_Container_Objective_C_ExecuteUbergraph_BP_Container_Objective Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

@@ -16,51 +16,93 @@
 
 SDK_NAMESPACE_START
 
-// Function LA_WinchUpFromHelicopter.LA_WinchUpFromHelicopter_C.BndEvt__LA_WinchUp_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature
-// (BlueprintEvent)
+// Function LA_WinchUpFromHelicopter.LA_WinchUpFromHelicopter_C.OnHelicopterArrived
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class USBZLifeActionInstance*           ActionInstance                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class ASBZAerialVehicle*                Helicopter                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ALA_WinchUpFromHelicopter_C::BndEvt__LA_WinchUp_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot)
+void ALA_WinchUpFromHelicopter_C::OnHelicopterArrived(class ASBZAerialVehicle* Helicopter)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnHelicopterArrived", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("LA_WinchUpFromHelicopter_C", "BndEvt__LA_WinchUp_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature");
+	Params::LA_WinchUpFromHelicopter_C_OnHelicopterArrived Parms{};
 
-	Params::LA_WinchUpFromHelicopter_C_BndEvt__LA_WinchUp_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature Parms{};
-
-	Parms.Character = Character;
-	Parms.ActionInstance = ActionInstance;
-	Parms.ActionSlot = ActionSlot;
+	Parms.Helicopter = Helicopter;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function LA_WinchUpFromHelicopter.LA_WinchUpFromHelicopter_C.BndEvt__LA_WinchUp_SBZLifeAction_K2Node_ComponentBoundEvent_2_SBZLifeActionStopEventDelegate__DelegateSignature
+// Function LA_WinchUpFromHelicopter.LA_WinchUpFromHelicopter_C.HandleCableAttachment
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Active                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayTag&              EventTag                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+
+void ALA_WinchUpFromHelicopter_C::HandleCableAttachment(bool Active, class ASBZCharacter* Character, const struct FGameplayTag& EventTag)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HandleCableAttachment", FnName));
+
+	Params::LA_WinchUpFromHelicopter_C_HandleCableAttachment Parms{};
+
+	Parms.Active = Active;
+	Parms.Character = Character;
+	Parms.EventTag = std::move(EventTag);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function LA_WinchUpFromHelicopter.LA_WinchUpFromHelicopter_C.ExecuteUbergraph_LA_WinchUpFromHelicopter
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ALA_WinchUpFromHelicopter_C::ExecuteUbergraph_LA_WinchUpFromHelicopter(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "LA_WinchUpFromHelicopter_C", "ExecuteUbergraph_LA_WinchUpFromHelicopter", FuncInfo);
+
+	Params::LA_WinchUpFromHelicopter_C_ExecuteUbergraph_LA_WinchUpFromHelicopter Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function LA_WinchUpFromHelicopter.LA_WinchUpFromHelicopter_C.CheckForExit
+// (BlueprintCallable, BlueprintEvent)
+
+void ALA_WinchUpFromHelicopter_C::CheckForExit()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"CheckForExit", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function LA_WinchUpFromHelicopter.LA_WinchUpFromHelicopter_C.BndEvt__LA_WinchUpFromHelicopter_SBZLifeAction_K2Node_ComponentBoundEvent_4_SBZLifeActionEventDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class USBZLifeActionInstance*           ActionInstance                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// ESBZLifeActionStopReason                Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ALA_WinchUpFromHelicopter_C::BndEvt__LA_WinchUp_SBZLifeAction_K2Node_ComponentBoundEvent_2_SBZLifeActionStopEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot, ESBZLifeActionStopReason Result)
+void ALA_WinchUpFromHelicopter_C::BndEvt__LA_WinchUpFromHelicopter_SBZLifeAction_K2Node_ComponentBoundEvent_4_SBZLifeActionEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__LA_WinchUpFromHelicopter_SBZLifeAction_K2Node_ComponentBoundEvent_4_SBZLifeActionEventDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("LA_WinchUpFromHelicopter_C", "BndEvt__LA_WinchUp_SBZLifeAction_K2Node_ComponentBoundEvent_2_SBZLifeActionStopEventDelegate__DelegateSignature");
-
-	Params::LA_WinchUpFromHelicopter_C_BndEvt__LA_WinchUp_SBZLifeAction_K2Node_ComponentBoundEvent_2_SBZLifeActionStopEventDelegate__DelegateSignature Parms{};
+	Params::LA_WinchUpFromHelicopter_C_BndEvt__LA_WinchUpFromHelicopter_SBZLifeAction_K2Node_ComponentBoundEvent_4_SBZLifeActionEventDelegate__DelegateSignature Parms{};
 
 	Parms.Character = Character;
 	Parms.ActionInstance = ActionInstance;
 	Parms.ActionSlot = ActionSlot;
-	Parms.Result = Result;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -76,10 +118,8 @@ void ALA_WinchUpFromHelicopter_C::BndEvt__LA_WinchUp_SBZLifeAction_K2Node_Compon
 
 void ALA_WinchUpFromHelicopter_C::BndEvt__LA_WinchUp_SBZLifeActionSlot_K2Node_ComponentBoundEvent_0_SBZLifeActionTagEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionSlot* ActionSlot, const struct FGameplayTag& Tag, bool bActive)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LA_WinchUpFromHelicopter_C", "BndEvt__LA_WinchUp_SBZLifeActionSlot_K2Node_ComponentBoundEvent_0_SBZLifeActionTagEventDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__LA_WinchUp_SBZLifeActionSlot_K2Node_ComponentBoundEvent_0_SBZLifeActionTagEventDelegate__DelegateSignature", FnName));
 
 	Params::LA_WinchUpFromHelicopter_C_BndEvt__LA_WinchUp_SBZLifeActionSlot_K2Node_ComponentBoundEvent_0_SBZLifeActionTagEventDelegate__DelegateSignature Parms{};
 
@@ -92,103 +132,47 @@ void ALA_WinchUpFromHelicopter_C::BndEvt__LA_WinchUp_SBZLifeActionSlot_K2Node_Co
 }
 
 
-// Function LA_WinchUpFromHelicopter.LA_WinchUpFromHelicopter_C.BndEvt__LA_WinchUpFromHelicopter_SBZLifeAction_K2Node_ComponentBoundEvent_4_SBZLifeActionEventDelegate__DelegateSignature
+// Function LA_WinchUpFromHelicopter.LA_WinchUpFromHelicopter_C.BndEvt__LA_WinchUp_SBZLifeAction_K2Node_ComponentBoundEvent_2_SBZLifeActionStopEventDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class USBZLifeActionInstance*           ActionInstance                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// ESBZLifeActionStopReason                Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ALA_WinchUpFromHelicopter_C::BndEvt__LA_WinchUp_SBZLifeAction_K2Node_ComponentBoundEvent_2_SBZLifeActionStopEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot, ESBZLifeActionStopReason Result)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__LA_WinchUp_SBZLifeAction_K2Node_ComponentBoundEvent_2_SBZLifeActionStopEventDelegate__DelegateSignature", FnName));
+
+	Params::LA_WinchUpFromHelicopter_C_BndEvt__LA_WinchUp_SBZLifeAction_K2Node_ComponentBoundEvent_2_SBZLifeActionStopEventDelegate__DelegateSignature Parms{};
+
+	Parms.Character = Character;
+	Parms.ActionInstance = ActionInstance;
+	Parms.ActionSlot = ActionSlot;
+	Parms.Result = Result;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function LA_WinchUpFromHelicopter.LA_WinchUpFromHelicopter_C.BndEvt__LA_WinchUp_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class USBZLifeActionInstance*           ActionInstance                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 // class USBZLifeActionSlot*               ActionSlot                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
-void ALA_WinchUpFromHelicopter_C::BndEvt__LA_WinchUpFromHelicopter_SBZLifeAction_K2Node_ComponentBoundEvent_4_SBZLifeActionEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot)
+void ALA_WinchUpFromHelicopter_C::BndEvt__LA_WinchUp_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature(class ASBZCharacter* Character, class USBZLifeActionInstance* ActionInstance, class USBZLifeActionSlot* ActionSlot)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__LA_WinchUp_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("LA_WinchUpFromHelicopter_C", "BndEvt__LA_WinchUpFromHelicopter_SBZLifeAction_K2Node_ComponentBoundEvent_4_SBZLifeActionEventDelegate__DelegateSignature");
-
-	Params::LA_WinchUpFromHelicopter_C_BndEvt__LA_WinchUpFromHelicopter_SBZLifeAction_K2Node_ComponentBoundEvent_4_SBZLifeActionEventDelegate__DelegateSignature Parms{};
+	Params::LA_WinchUpFromHelicopter_C_BndEvt__LA_WinchUp_SBZLifeAction_K2Node_ComponentBoundEvent_1_SBZLifeActionEventDelegate__DelegateSignature Parms{};
 
 	Parms.Character = Character;
 	Parms.ActionInstance = ActionInstance;
 	Parms.ActionSlot = ActionSlot;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function LA_WinchUpFromHelicopter.LA_WinchUpFromHelicopter_C.CheckForExit
-// (BlueprintCallable, BlueprintEvent)
-
-void ALA_WinchUpFromHelicopter_C::CheckForExit()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LA_WinchUpFromHelicopter_C", "CheckForExit");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function LA_WinchUpFromHelicopter.LA_WinchUpFromHelicopter_C.ExecuteUbergraph_LA_WinchUpFromHelicopter
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ALA_WinchUpFromHelicopter_C::ExecuteUbergraph_LA_WinchUpFromHelicopter(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LA_WinchUpFromHelicopter_C", "ExecuteUbergraph_LA_WinchUpFromHelicopter");
-
-	Params::LA_WinchUpFromHelicopter_C_ExecuteUbergraph_LA_WinchUpFromHelicopter Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function LA_WinchUpFromHelicopter.LA_WinchUpFromHelicopter_C.HandleCableAttachment
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Active                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class ASBZCharacter*                    Character                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayTag&              EventTag                                               (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
-
-void ALA_WinchUpFromHelicopter_C::HandleCableAttachment(bool Active, class ASBZCharacter* Character, const struct FGameplayTag& EventTag)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LA_WinchUpFromHelicopter_C", "HandleCableAttachment");
-
-	Params::LA_WinchUpFromHelicopter_C_HandleCableAttachment Parms{};
-
-	Parms.Active = Active;
-	Parms.Character = Character;
-	Parms.EventTag = std::move(EventTag);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function LA_WinchUpFromHelicopter.LA_WinchUpFromHelicopter_C.OnHelicopterArrived
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class ASBZAerialVehicle*                Helicopter_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ALA_WinchUpFromHelicopter_C::OnHelicopterArrived(class ASBZAerialVehicle* Helicopter_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("LA_WinchUpFromHelicopter_C", "OnHelicopterArrived");
-
-	Params::LA_WinchUpFromHelicopter_C_OnHelicopterArrived Parms{};
-
-	Parms.Helicopter_0 = Helicopter_0;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

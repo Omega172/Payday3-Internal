@@ -45,23 +45,23 @@ public:
 	class UAkAudioEvent*                          ClickLockedSound;                                  // 0x0488(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetMaterialProperties();
-	void SetBWEffect(bool bHasSubFocus);
-	void SetButtonLocked();
-	void ResetDisabledState();
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnLoaded_2AEE3D384A6280472CCD6BB641BB60CC(class UObject* Loaded);
-	void OnHeistDataInitialized();
-	void OnFocusedChanged(bool bIsFocused);
-	void OnFocusChanged(bool bIsFocused_OnFocusChanged);
-	void OnDisabledChanged(bool InDisabled);
-	void ExecuteUbergraph_WBP_ServerBrowser_StoryButton(int32 EntryPoint);
-	void DisabledButtonSelected();
-	void Construct();
+	void ButtonDisabledChanged(bool bInIsDisabled);
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
 	void ButtonSelected();
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
-	void ButtonDisabledChanged(bool bInIsDisabled_ButtonDisabledChanged);
+	void Construct();
+	void DisabledButtonSelected();
+	void ExecuteUbergraph_WBP_ServerBrowser_StoryButton(int32 EntryPoint);
+	void OnDisabledChanged(bool InDisabled);
+	void OnFocusChanged(bool bIsFocused);
+	void OnFocusedChanged(bool bIsFocused);
+	void OnHeistDataInitialized();
+	void OnLoaded_2AEE3D384A6280472CCD6BB641BB60CC(class UObject* Loaded);
+	void PreConstruct(bool IsDesignTime);
+	void ResetDisabledState();
+	void SetButtonLocked();
+	void SetBWEffect(bool bHasSubFocus);
+	void SetMaterialProperties();
 
 public:
 	static class UClass* StaticClass()

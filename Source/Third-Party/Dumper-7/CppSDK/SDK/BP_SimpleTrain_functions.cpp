@@ -16,35 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_SimpleTrain.BP_SimpleTrain_C.ExecuteUbergraph_BP_SimpleTrain
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_SimpleTrain.BP_SimpleTrain_C.Timeline_0__UpdateFunc
+// (BlueprintEvent)
 
-void ABP_SimpleTrain_C::ExecuteUbergraph_BP_SimpleTrain(int32 EntryPoint)
+void ABP_SimpleTrain_C::Timeline_0__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SimpleTrain_C", "ExecuteUbergraph_BP_SimpleTrain");
-
-	Params::BP_SimpleTrain_C_ExecuteUbergraph_BP_SimpleTrain Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SimpleTrain.BP_SimpleTrain_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_SimpleTrain_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SimpleTrain_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__UpdateFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -55,26 +33,40 @@ void ABP_SimpleTrain_C::ReceiveBeginPlay()
 
 void ABP_SimpleTrain_C::Timeline_0__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SimpleTrain_C", "Timeline_0__FinishedFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Timeline_0__FinishedFunc", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_SimpleTrain.BP_SimpleTrain_C.Timeline_0__UpdateFunc
-// (BlueprintEvent)
+// Function BP_SimpleTrain.BP_SimpleTrain_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_SimpleTrain_C::Timeline_0__UpdateFunc()
+void ABP_SimpleTrain_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SimpleTrain_C", "Timeline_0__UpdateFunc");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SimpleTrain.BP_SimpleTrain_C.ExecuteUbergraph_BP_SimpleTrain
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SimpleTrain_C::ExecuteUbergraph_BP_SimpleTrain(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_SimpleTrain_C", "ExecuteUbergraph_BP_SimpleTrain", FuncInfo);
+
+	Params::BP_SimpleTrain_C_ExecuteUbergraph_BP_SimpleTrain Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

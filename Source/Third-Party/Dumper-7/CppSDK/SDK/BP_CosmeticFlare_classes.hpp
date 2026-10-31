@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_CosmeticFlare_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CosmeticFlare_C;
 
 SDK_NAMESPACE_END

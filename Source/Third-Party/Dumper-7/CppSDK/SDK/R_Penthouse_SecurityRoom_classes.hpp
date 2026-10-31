@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<AR_Penthouse_SecurityRoom_C>();
 	}
 };
+DUMPER7_ASSERTS_AR_Penthouse_SecurityRoom_C;
 
 SDK_NAMESPACE_END

@@ -24,8 +24,8 @@ public:
 	class UStaticMeshComponent*                   DoorTarp_A;                                        // 0x0760(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Close_remotly();
 	void Open_remotly();
+	void Close_remotly();
 
 public:
 	static class UClass* StaticClass()
@@ -41,5 +41,6 @@ public:
 		return GetDefaultObjImpl<ABP_double_fence_remotly_openable_2_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_double_fence_remotly_openable_2_C;
 
 SDK_NAMESPACE_END

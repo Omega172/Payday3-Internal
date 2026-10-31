@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ABP_BUS_Garage_Door_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BUS_Garage_Door_01_C;
 
 SDK_NAMESPACE_END

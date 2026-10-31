@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_FenceMetal_01_Door_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_FenceMetal_01_Door_C;
 
 SDK_NAMESPACE_END

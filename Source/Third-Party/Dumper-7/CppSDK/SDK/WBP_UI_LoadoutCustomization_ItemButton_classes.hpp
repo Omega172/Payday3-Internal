@@ -41,18 +41,18 @@ public:
 	bool                                          HasText;                                           // 0x0448(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetItemVisuals(class USBZInventoryBaseData* InInventoryData);
-	void RefreshVisuals();
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnSelection();
-	void OnNone();
-	void OnItemDataInitialized();
-	void OnInitialized();
-	void OnHover(bool bIsHovered);
-	void OnFocused(bool bIsFocused);
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
 	void ExecuteUbergraph_WBP_UI_LoadoutCustomization_ItemButton(int32 EntryPoint);
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
+	void OnFocused(bool bIsFocused);
+	void OnHover(bool bIsHovered);
+	void OnInitialized();
+	void OnItemDataInitialized();
+	void OnNone();
+	void OnSelection();
+	void PreConstruct(bool IsDesignTime);
+	void RefreshVisuals();
+	void SetItemVisuals(class USBZInventoryBaseData* InInventoryData);
 
 public:
 	static class UClass* StaticClass()

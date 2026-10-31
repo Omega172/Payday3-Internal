@@ -16,79 +16,199 @@
 
 SDK_NAMESPACE_START
 
-// Function G_Chus_RobberVO.G_Chus_RobberVO_C.BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Forward1_K2Node_ActorBoundEvent_4_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function G_Chus_RobberVO.G_Chus_RobberVO_C.RobberVO_EscortDone
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Chus_RobberVO_C::BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Forward1_K2Node_ActorBoundEvent_4_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Chus_RobberVO_C::RobberVO_EscortDone()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RobberVO_EscortDone", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_RobberVO_C", "BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Forward1_K2Node_ActorBoundEvent_4_SBZPawnDynamicDelegate__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::G_Chus_RobberVO_C_BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Forward1_K2Node_ActorBoundEvent_4_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
-	Parms.Pawn = Pawn;
+// Function G_Chus_RobberVO.G_Chus_RobberVO_C.RobberVO_Escort2WP6
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Chus_RobberVO_C::RobberVO_Escort2WP6()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RobberVO_Escort2WP6", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Chus_RobberVO.G_Chus_RobberVO_C.RobberVO_Escort2WP3
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Chus_RobberVO_C::RobberVO_Escort2WP3()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RobberVO_Escort2WP3", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Chus_RobberVO.G_Chus_RobberVO_C.RobberVO_Escort2WP12
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Chus_RobberVO_C::RobberVO_Escort2WP12()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RobberVO_Escort2WP12", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Chus_RobberVO.G_Chus_RobberVO_C.RobberVO_Escort2WP11
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Chus_RobberVO_C::RobberVO_Escort2WP11()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RobberVO_Escort2WP11", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Chus_RobberVO.G_Chus_RobberVO_C.RobberVO_DeactivateStar
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Chus_RobberVO_C::RobberVO_DeactivateStar()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RobberVO_DeactivateStar", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Chus_RobberVO.G_Chus_RobberVO_C.RobberVO_CompletedHackbox
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Chus_RobberVO_C::RobberVO_CompletedHackbox()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RobberVO_CompletedHackbox", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Chus_RobberVO.G_Chus_RobberVO_C.RobberVO_ActivateVent1
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Chus_RobberVO_C::RobberVO_ActivateVent1()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RobberVO_ActivateVent1", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Chus_RobberVO.G_Chus_RobberVO_C.RobberVO_ActivateMetalDetector
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Chus_RobberVO_C::RobberVO_ActivateMetalDetector()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RobberVO_ActivateMetalDetector", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Chus_RobberVO.G_Chus_RobberVO_C.RobberVO_ActivateHackbox
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Chus_RobberVO_C::RobberVO_ActivateHackbox()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RobberVO_ActivateHackbox", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Chus_RobberVO.G_Chus_RobberVO_C.HeistStateChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EPD3HeistState                          OldHeistState_HeistStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPD3HeistState                          CurrentHeistState_HeistStateChanged                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AG_Chus_RobberVO_C::HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HeistStateChanged", FnName));
+
+	Params::G_Chus_RobberVO_C_HeistStateChanged Parms{};
+
+	Parms.OldHeistState_HeistStateChanged = OldHeistState_HeistStateChanged;
+	Parms.CurrentHeistState_HeistStateChanged = CurrentHeistState_HeistStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Chus_RobberVO.G_Chus_RobberVO_C.BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Right1_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
+// Function G_Chus_RobberVO.G_Chus_RobberVO_C.ExecuteUbergraph_G_Chus_RobberVO
+// (Final, UbergraphFunction)
 // Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AG_Chus_RobberVO_C::BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Right1_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Chus_RobberVO_C::ExecuteUbergraph_G_Chus_RobberVO(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_Chus_RobberVO_C", "ExecuteUbergraph_G_Chus_RobberVO", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_RobberVO_C", "BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Right1_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature");
+	Params::G_Chus_RobberVO_C_ExecuteUbergraph_G_Chus_RobberVO Parms{};
 
-	Params::G_Chus_RobberVO_C_BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Right1_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Chus_RobberVO.G_Chus_RobberVO_C.BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Upstairs1_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// Function G_Chus_RobberVO.G_Chus_RobberVO_C.EscortIsPath2
+// (BlueprintCallable, BlueprintEvent)
 
-void AG_Chus_RobberVO_C::BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Upstairs1_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Chus_RobberVO_C::EscortIsPath2()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EscortIsPath2", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_RobberVO_C", "BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Upstairs1_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Chus_RobberVO_C_BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Upstairs1_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature Parms{};
-
-	Parms.Pawn = Pawn;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function G_Chus_RobberVO.G_Chus_RobberVO_C.BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume6_2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
+// Function G_Chus_RobberVO.G_Chus_RobberVO_C.EscortIsPath1
+// (BlueprintCallable, BlueprintEvent)
+
+void AG_Chus_RobberVO_C::EscortIsPath1()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EscortIsPath1", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function G_Chus_RobberVO.G_Chus_RobberVO_C.BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume8_2_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Chus_RobberVO_C::BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume6_2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Chus_RobberVO_C::BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume8_2_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume8_2_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_RobberVO_C", "BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume6_2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Chus_RobberVO_C_BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume6_2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+	Params::G_Chus_RobberVO_C_BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume8_2_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
 	Parms.Pawn = Pawn;
 
@@ -103,10 +223,8 @@ void AG_Chus_RobberVO_C::BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume6_2_K2Nod
 
 void AG_Chus_RobberVO_C::BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume7_5_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_RobberVO_C", "BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume7_5_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume7_5_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
 	Params::G_Chus_RobberVO_C_BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume7_5_K2Node_ActorBoundEvent_1_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
@@ -116,19 +234,17 @@ void AG_Chus_RobberVO_C::BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume7_5_K2Nod
 }
 
 
-// Function G_Chus_RobberVO.G_Chus_RobberVO_C.BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume8_2_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature
+// Function G_Chus_RobberVO.G_Chus_RobberVO_C.BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume6_2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
 // class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Chus_RobberVO_C::BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume8_2_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AG_Chus_RobberVO_C::BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume6_2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume6_2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_RobberVO_C", "BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume8_2_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature");
-
-	Params::G_Chus_RobberVO_C_BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume8_2_K2Node_ActorBoundEvent_2_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+	Params::G_Chus_RobberVO_C_BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume6_2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
 	Parms.Pawn = Pawn;
 
@@ -136,213 +252,57 @@ void AG_Chus_RobberVO_C::BndEvt__G_Chus_RobberVO_SBZPlayerTriggerVolume8_2_K2Nod
 }
 
 
-// Function G_Chus_RobberVO.G_Chus_RobberVO_C.EscortIsPath1
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Chus_RobberVO_C::EscortIsPath1()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_RobberVO_C", "EscortIsPath1");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Chus_RobberVO.G_Chus_RobberVO_C.EscortIsPath2
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Chus_RobberVO_C::EscortIsPath2()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_RobberVO_C", "EscortIsPath2");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Chus_RobberVO.G_Chus_RobberVO_C.ExecuteUbergraph_G_Chus_RobberVO
-// (Final, UbergraphFunction)
+// Function G_Chus_RobberVO.G_Chus_RobberVO_C.BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Upstairs1_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Chus_RobberVO_C::ExecuteUbergraph_G_Chus_RobberVO(int32 EntryPoint)
+void AG_Chus_RobberVO_C::BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Upstairs1_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Upstairs1_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_RobberVO_C", "ExecuteUbergraph_G_Chus_RobberVO");
+	Params::G_Chus_RobberVO_C_BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Upstairs1_K2Node_ActorBoundEvent_5_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
-	Params::G_Chus_RobberVO_C_ExecuteUbergraph_G_Chus_RobberVO Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.Pawn = Pawn;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Chus_RobberVO.G_Chus_RobberVO_C.HeistStateChanged
-// (Event, Public, BlueprintEvent)
+// Function G_Chus_RobberVO.G_Chus_RobberVO_C.BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Right1_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// EPD3HeistState                          OldHeistState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPD3HeistState                          CurrentHeistState                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Chus_RobberVO_C::HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState)
+void AG_Chus_RobberVO_C::BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Right1_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Right1_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_RobberVO_C", "HeistStateChanged");
+	Params::G_Chus_RobberVO_C_BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Right1_K2Node_ActorBoundEvent_3_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
-	Params::G_Chus_RobberVO_C_HeistStateChanged Parms{};
-
-	Parms.OldHeistState = OldHeistState;
-	Parms.CurrentHeistState = CurrentHeistState;
+	Parms.Pawn = Pawn;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function G_Chus_RobberVO.G_Chus_RobberVO_C.RobberVO_ActivateHackbox
-// (BlueprintCallable, BlueprintEvent)
+// Function G_Chus_RobberVO.G_Chus_RobberVO_C.BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Forward1_K2Node_ActorBoundEvent_4_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AG_Chus_RobberVO_C::RobberVO_ActivateHackbox()
+void AG_Chus_RobberVO_C::BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Forward1_K2Node_ActorBoundEvent_4_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Forward1_K2Node_ActorBoundEvent_4_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_RobberVO_C", "RobberVO_ActivateHackbox");
+	Params::G_Chus_RobberVO_C_BndEvt__G_Chus_RobberVO_SBZPlayerLookAtTriggeredVoice_Forward1_K2Node_ActorBoundEvent_4_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Parms.Pawn = Pawn;
 
-
-// Function G_Chus_RobberVO.G_Chus_RobberVO_C.RobberVO_ActivateMetalDetector
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Chus_RobberVO_C::RobberVO_ActivateMetalDetector()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_RobberVO_C", "RobberVO_ActivateMetalDetector");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Chus_RobberVO.G_Chus_RobberVO_C.RobberVO_ActivateVent1
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Chus_RobberVO_C::RobberVO_ActivateVent1()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_RobberVO_C", "RobberVO_ActivateVent1");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Chus_RobberVO.G_Chus_RobberVO_C.RobberVO_CompletedHackbox
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Chus_RobberVO_C::RobberVO_CompletedHackbox()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_RobberVO_C", "RobberVO_CompletedHackbox");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Chus_RobberVO.G_Chus_RobberVO_C.RobberVO_DeactivateStar
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Chus_RobberVO_C::RobberVO_DeactivateStar()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_RobberVO_C", "RobberVO_DeactivateStar");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Chus_RobberVO.G_Chus_RobberVO_C.RobberVO_Escort2WP11
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Chus_RobberVO_C::RobberVO_Escort2WP11()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_RobberVO_C", "RobberVO_Escort2WP11");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Chus_RobberVO.G_Chus_RobberVO_C.RobberVO_Escort2WP12
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Chus_RobberVO_C::RobberVO_Escort2WP12()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_RobberVO_C", "RobberVO_Escort2WP12");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Chus_RobberVO.G_Chus_RobberVO_C.RobberVO_Escort2WP3
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Chus_RobberVO_C::RobberVO_Escort2WP3()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_RobberVO_C", "RobberVO_Escort2WP3");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Chus_RobberVO.G_Chus_RobberVO_C.RobberVO_Escort2WP6
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Chus_RobberVO_C::RobberVO_Escort2WP6()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_RobberVO_C", "RobberVO_Escort2WP6");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function G_Chus_RobberVO.G_Chus_RobberVO_C.RobberVO_EscortDone
-// (BlueprintCallable, BlueprintEvent)
-
-void AG_Chus_RobberVO_C::RobberVO_EscortDone()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_Chus_RobberVO_C", "RobberVO_EscortDone");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

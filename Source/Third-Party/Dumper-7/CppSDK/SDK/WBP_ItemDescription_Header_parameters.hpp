@@ -14,24 +14,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_ItemDescription_Header.WBP_ItemDescription_Header_C.SetText
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_ItemDescription_Header_C_SetText final
-{
-public:
-	class FText                                   Text;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_ItemDescription_Header_C_SetText;
-
-// Function WBP_ItemDescription_Header.WBP_ItemDescription_Header_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_ItemDescription_Header_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ItemDescription_Header_C_PreConstruct;
-
 // Function WBP_ItemDescription_Header.WBP_ItemDescription_Header_C.ExecuteUbergraph_WBP_ItemDescription_Header
 // 0x0020 (0x0020 - 0x0000)
 struct WBP_ItemDescription_Header_C_ExecuteUbergraph_WBP_ItemDescription_Header final
@@ -43,6 +25,24 @@ public:
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 DUMPER7_ASSERTS_WBP_ItemDescription_Header_C_ExecuteUbergraph_WBP_ItemDescription_Header;
+
+// Function WBP_ItemDescription_Header.WBP_ItemDescription_Header_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_ItemDescription_Header_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ItemDescription_Header_C_PreConstruct;
+
+// Function WBP_ItemDescription_Header.WBP_ItemDescription_Header_C.SetText
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_ItemDescription_Header_C_SetText final
+{
+public:
+	class FText                                   Text;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_ItemDescription_Header_C_SetText;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

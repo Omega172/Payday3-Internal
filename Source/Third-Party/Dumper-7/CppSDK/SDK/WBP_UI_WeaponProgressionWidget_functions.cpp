@@ -16,30 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_WeaponProgressionWidget.WBP_UI_WeaponProgressionWidget_C.OnNewWeaponData
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_WeaponProgressionWidget_C::OnNewWeaponData()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnNewWeaponData", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_WeaponProgressionWidget.WBP_UI_WeaponProgressionWidget_C.OnDataEmpty
-// (Event, Protected, BlueprintEvent)
-
-void UWBP_UI_WeaponProgressionWidget_C::OnDataEmpty()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnDataEmpty", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_UI_WeaponProgressionWidget.WBP_UI_WeaponProgressionWidget_C.ExecuteUbergraph_WBP_UI_WeaponProgressionWidget
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -55,6 +31,30 @@ void UWBP_UI_WeaponProgressionWidget_C::ExecuteUbergraph_WBP_UI_WeaponProgressio
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_WeaponProgressionWidget.WBP_UI_WeaponProgressionWidget_C.OnDataEmpty
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_WeaponProgressionWidget_C::OnDataEmpty()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnDataEmpty", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_WeaponProgressionWidget.WBP_UI_WeaponProgressionWidget_C.OnNewWeaponData
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_UI_WeaponProgressionWidget_C::OnNewWeaponData()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnNewWeaponData", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

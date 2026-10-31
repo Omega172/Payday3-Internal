@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UNine9Boxes_CameraShake_Shot2_C>();
 	}
 };
+DUMPER7_ASSERTS_UNine9Boxes_CameraShake_Shot2_C;
 
 SDK_NAMESPACE_END

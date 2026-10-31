@@ -16,21 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function C_Dema_Outro.C_Dema_Outro_C.ExecuteUbergraph_C_Dema_Outro
-// (Final, UbergraphFunction, HasDefaults)
+// Function C_Dema_Outro.C_Dema_Outro_C.OutroSequenceStarted
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const int32                             OutroVariation_OutroSequenceStarted                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AC_Dema_Outro_C::ExecuteUbergraph_C_Dema_Outro(int32 EntryPoint)
+void AC_Dema_Outro_C::OutroSequenceStarted(const int32 OutroVariation_OutroSequenceStarted)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OutroSequenceStarted", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_Dema_Outro_C", "ExecuteUbergraph_C_Dema_Outro");
+	Params::C_Dema_Outro_C_OutroSequenceStarted Parms{};
 
-	Params::C_Dema_Outro_C_ExecuteUbergraph_C_Dema_Outro Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.OutroVariation_OutroSequenceStarted = OutroVariation_OutroSequenceStarted;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -41,30 +39,26 @@ void AC_Dema_Outro_C::ExecuteUbergraph_C_Dema_Outro(int32 EntryPoint)
 
 void AC_Dema_Outro_C::OnOutroFinished()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_Dema_Outro_C", "OnOutroFinished");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnOutroFinished", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function C_Dema_Outro.C_Dema_Outro_C.OutroSequenceStarted
-// (Event, Public, BlueprintEvent)
+// Function C_Dema_Outro.C_Dema_Outro_C.ExecuteUbergraph_C_Dema_Outro
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// const int32                             OutroVariation                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AC_Dema_Outro_C::OutroSequenceStarted(const int32 OutroVariation)
+void AC_Dema_Outro_C::ExecuteUbergraph_C_Dema_Outro(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "C_Dema_Outro_C", "ExecuteUbergraph_C_Dema_Outro", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_Dema_Outro_C", "OutroSequenceStarted");
+	Params::C_Dema_Outro_C_ExecuteUbergraph_C_Dema_Outro Parms{};
 
-	Params::C_Dema_Outro_C_OutroSequenceStarted Parms{};
-
-	Parms.OutroVariation = OutroVariation;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

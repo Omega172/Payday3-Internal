@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABP_VantagePoint_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_VantagePoint_C;
 
 SDK_NAMESPACE_END

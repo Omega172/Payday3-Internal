@@ -16,37 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function CH_SecurityGuard_LongerOutline.CH_SecurityGuard_LongerOutline_C.BP_OnHeistStateChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// EPD3HeistState                          OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPD3HeistState                          NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function CH_SecurityGuard_LongerOutline.CH_SecurityGuard_LongerOutline_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ACH_SecurityGuard_LongerOutline_C::BP_OnHeistStateChanged(EPD3HeistState OldState, EPD3HeistState NewState)
+void ACH_SecurityGuard_LongerOutline_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CH_SecurityGuard_LongerOutline_C", "BP_OnHeistStateChanged");
-
-	Params::CH_SecurityGuard_LongerOutline_C_BP_OnHeistStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function CH_SecurityGuard_LongerOutline.CH_SecurityGuard_LongerOutline_C.BP_OnKill
-// (Event, Public, BlueprintEvent)
-
-void ACH_SecurityGuard_LongerOutline_C::BP_OnKill()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CH_SecurityGuard_LongerOutline_C", "BP_OnKill");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -59,10 +35,8 @@ void ACH_SecurityGuard_LongerOutline_C::BP_OnKill()
 
 void ACH_SecurityGuard_LongerOutline_C::ExecuteUbergraph_CH_SecurityGuard_LongerOutline(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CH_SecurityGuard_LongerOutline_C", "ExecuteUbergraph_CH_SecurityGuard_LongerOutline");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "CH_SecurityGuard_LongerOutline_C", "ExecuteUbergraph_CH_SecurityGuard_LongerOutline", FuncInfo);
 
 	Params::CH_SecurityGuard_LongerOutline_C_ExecuteUbergraph_CH_SecurityGuard_LongerOutline Parms{};
 
@@ -72,17 +46,35 @@ void ACH_SecurityGuard_LongerOutline_C::ExecuteUbergraph_CH_SecurityGuard_Longer
 }
 
 
-// Function CH_SecurityGuard_LongerOutline.CH_SecurityGuard_LongerOutline_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function CH_SecurityGuard_LongerOutline.CH_SecurityGuard_LongerOutline_C.BP_OnKill
+// (Event, Public, BlueprintEvent)
 
-void ACH_SecurityGuard_LongerOutline_C::ReceiveBeginPlay()
+void ACH_SecurityGuard_LongerOutline_C::BP_OnKill()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CH_SecurityGuard_LongerOutline_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnKill", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function CH_SecurityGuard_LongerOutline.CH_SecurityGuard_LongerOutline_C.BP_OnHeistStateChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EPD3HeistState                          OldState_BP_OnHeistStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPD3HeistState                          NewState_BP_OnHeistStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACH_SecurityGuard_LongerOutline_C::BP_OnHeistStateChanged(EPD3HeistState OldState_BP_OnHeistStateChanged, EPD3HeistState NewState_BP_OnHeistStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnHeistStateChanged", FnName));
+
+	Params::CH_SecurityGuard_LongerOutline_C_BP_OnHeistStateChanged Parms{};
+
+	Parms.OldState_BP_OnHeistStateChanged = OldState_BP_OnHeistStateChanged;
+	Parms.NewState_BP_OnHeistStateChanged = NewState_BP_OnHeistStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

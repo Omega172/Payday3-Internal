@@ -16,17 +16,65 @@
 
 SDK_NAMESPACE_START
 
-// Function A_FirstPlayable.A_FirstPlayable_C.AUDIO_Alarms_Triggered
-// (BlueprintCallable, BlueprintEvent)
+// Function A_FirstPlayable.A_FirstPlayable_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void AA_FirstPlayable_C::AUDIO_Alarms_Triggered()
+void AA_FirstPlayable_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_FirstPlayable_C", "AUDIO_Alarms_Triggered");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function A_FirstPlayable.A_FirstPlayable_C.HeistStateChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EPD3HeistState                          OldHeistState_HeistStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPD3HeistState                          CurrentHeistState_HeistStateChanged                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AA_FirstPlayable_C::HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HeistStateChanged", FnName));
+
+	Params::A_FirstPlayable_C_HeistStateChanged Parms{};
+
+	Parms.OldHeistState_HeistStateChanged = OldHeistState_HeistStateChanged;
+	Parms.CurrentHeistState_HeistStateChanged = CurrentHeistState_HeistStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function A_FirstPlayable.A_FirstPlayable_C.Eye_Scan_Complete
+// (BlueprintCallable, BlueprintEvent)
+
+void AA_FirstPlayable_C::Eye_Scan_Complete()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Eye_Scan_Complete", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function A_FirstPlayable.A_FirstPlayable_C.ExecuteUbergraph_A_FirstPlayable
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AA_FirstPlayable_C::ExecuteUbergraph_A_FirstPlayable(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "A_FirstPlayable_C", "ExecuteUbergraph_A_FirstPlayable", FuncInfo);
+
+	Params::A_FirstPlayable_C_ExecuteUbergraph_A_FirstPlayable Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -38,10 +86,8 @@ void AA_FirstPlayable_C::AUDIO_Alarms_Triggered()
 
 void AA_FirstPlayable_C::BndEvt__A_FirstPlayable_TriggerBox_ES_VO_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_FirstPlayable_C", "BndEvt__A_FirstPlayable_TriggerBox_ES_VO_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__A_FirstPlayable_TriggerBox_ES_VO_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature", FnName));
 
 	Params::A_FirstPlayable_C_BndEvt__A_FirstPlayable_TriggerBox_ES_VO_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature Parms{};
 
@@ -52,71 +98,13 @@ void AA_FirstPlayable_C::BndEvt__A_FirstPlayable_TriggerBox_ES_VO_K2Node_ActorBo
 }
 
 
-// Function A_FirstPlayable.A_FirstPlayable_C.ExecuteUbergraph_A_FirstPlayable
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AA_FirstPlayable_C::ExecuteUbergraph_A_FirstPlayable(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_FirstPlayable_C", "ExecuteUbergraph_A_FirstPlayable");
-
-	Params::A_FirstPlayable_C_ExecuteUbergraph_A_FirstPlayable Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function A_FirstPlayable.A_FirstPlayable_C.Eye_Scan_Complete
+// Function A_FirstPlayable.A_FirstPlayable_C.AUDIO_Alarms_Triggered
 // (BlueprintCallable, BlueprintEvent)
 
-void AA_FirstPlayable_C::Eye_Scan_Complete()
+void AA_FirstPlayable_C::AUDIO_Alarms_Triggered()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_FirstPlayable_C", "Eye_Scan_Complete");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function A_FirstPlayable.A_FirstPlayable_C.HeistStateChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// EPD3HeistState                          OldHeistState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPD3HeistState                          CurrentHeistState                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AA_FirstPlayable_C::HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_FirstPlayable_C", "HeistStateChanged");
-
-	Params::A_FirstPlayable_C_HeistStateChanged Parms{};
-
-	Parms.OldHeistState = OldHeistState;
-	Parms.CurrentHeistState = CurrentHeistState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function A_FirstPlayable.A_FirstPlayable_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AA_FirstPlayable_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_FirstPlayable_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"AUDIO_Alarms_Triggered", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

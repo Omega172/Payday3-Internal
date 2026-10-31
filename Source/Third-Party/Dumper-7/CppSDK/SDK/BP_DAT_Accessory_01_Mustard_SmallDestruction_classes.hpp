@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_DAT_Accessory_01_Mustard_SmallDestruction_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DAT_Accessory_01_Mustard_SmallDestruction_C;
 
 SDK_NAMESPACE_END

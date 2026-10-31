@@ -21,9 +21,10 @@ SDK_PARAM_NAMESPACE_START
 struct BP_TubeLight_C_SetStateFunction final
 {
 public:
-	Enum_LampStages                               States_0;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	Enum_LampStages                               States;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_TubeLight_C_SetStateFunction;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

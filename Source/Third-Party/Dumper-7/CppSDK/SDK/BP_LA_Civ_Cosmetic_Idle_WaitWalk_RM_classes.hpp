@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABP_LA_Civ_Cosmetic_Idle_WaitWalk_RM_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LA_Civ_Cosmetic_Idle_WaitWalk_RM_C;
 
 SDK_NAMESPACE_END

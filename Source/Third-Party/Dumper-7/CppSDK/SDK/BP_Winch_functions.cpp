@@ -16,23 +16,137 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Winch.BP_Winch_C.addMarkerToComponent
+// Function BP_Winch.BP_Winch_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void ABP_Winch_C::UserConstructionScript()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Winch.BP_Winch_C.SetHookInteractionEnabled
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bInEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Winch_C::SetHookInteractionEnabled(bool bInEnabled)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetHookInteractionEnabled", FnName));
+
+	Params::BP_Winch_C_SetHookInteractionEnabled Parms{};
+
+	Parms.bInEnabled = bInEnabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Winch.BP_Winch_C.setCableAndHookVisibilityState
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USceneComponent*                  Component                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// const class USBZMarkerDataAsset*        MarkerDataAsset                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   state                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Winch_C::addMarkerToComponent(class USceneComponent* Component, const class USBZMarkerDataAsset* MarkerDataAsset)
+void ABP_Winch_C::setCableAndHookVisibilityState(int32 state)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setCableAndHookVisibilityState", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Winch_C", "addMarkerToComponent");
+	Params::BP_Winch_C_setCableAndHookVisibilityState Parms{};
 
-	Params::BP_Winch_C_addMarkerToComponent Parms{};
+	Parms.state = state;
 
-	Parms.Component = Component;
-	Parms.MarkerDataAsset = MarkerDataAsset;
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Winch.BP_Winch_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_Winch_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Winch.BP_Winch_C.ExecuteUbergraph_BP_Winch
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Winch_C::ExecuteUbergraph_BP_Winch(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Winch_C", "ExecuteUbergraph_BP_Winch", FuncInfo);
+
+	Params::BP_Winch_C_ExecuteUbergraph_BP_Winch Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Winch.BP_Winch_C.checkProgressionEvents
+// (Private, BlueprintCallable, BlueprintEvent)
+
+void ABP_Winch_C::checkProgressionEvents()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"checkProgressionEvents", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Winch.BP_Winch_C.cableTension__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_Winch_C::cableTension__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"cableTension__UpdateFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Winch.BP_Winch_C.cableTension__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_Winch_C::cableTension__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"cableTension__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Winch.BP_Winch_C.BP_OnWinchStateChanged
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZWinchState                          OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZWinchState                          NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Winch_C::BP_OnWinchStateChanged(ESBZWinchState OldState, ESBZWinchState NewState, bool bDoCosmetics)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnWinchStateChanged", FnName));
+
+	Params::BP_Winch_C_BP_OnWinchStateChanged Parms{};
+
+	Parms.OldState = OldState;
+	Parms.NewState = NewState;
+	Parms.bDoCosmetics = bDoCosmetics;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -47,10 +161,8 @@ void ABP_Winch_C::addMarkerToComponent(class USceneComponent* Component, const c
 
 void ABP_Winch_C::BP_OnStateChanged(ESBZBreachingEquipmentState OldState, ESBZBreachingEquipmentState NewState, bool bDoCosmetics)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Winch_C", "BP_OnStateChanged");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnStateChanged", FnName));
 
 	Params::BP_Winch_C_BP_OnStateChanged Parms{};
 
@@ -62,157 +174,23 @@ void ABP_Winch_C::BP_OnStateChanged(ESBZBreachingEquipmentState OldState, ESBZBr
 }
 
 
-// Function BP_Winch.BP_Winch_C.BP_OnWinchStateChanged
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
-// Parameters:
-// ESBZWinchState                          OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZWinchState                          NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Winch_C::BP_OnWinchStateChanged(ESBZWinchState OldState, ESBZWinchState NewState, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Winch_C", "BP_OnWinchStateChanged");
-
-	Params::BP_Winch_C_BP_OnWinchStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Winch.BP_Winch_C.cableTension__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_Winch_C::cableTension__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Winch_C", "cableTension__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Winch.BP_Winch_C.cableTension__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_Winch_C::cableTension__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Winch_C", "cableTension__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Winch.BP_Winch_C.checkProgressionEvents
-// (Private, BlueprintCallable, BlueprintEvent)
-
-void ABP_Winch_C::checkProgressionEvents()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Winch_C", "checkProgressionEvents");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Winch.BP_Winch_C.ExecuteUbergraph_BP_Winch
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Winch_C::ExecuteUbergraph_BP_Winch(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Winch_C", "ExecuteUbergraph_BP_Winch");
-
-	Params::BP_Winch_C_ExecuteUbergraph_BP_Winch Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Winch.BP_Winch_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Winch_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Winch_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_Winch.BP_Winch_C.setCableAndHookVisibilityState
+// Function BP_Winch.BP_Winch_C.addMarkerToComponent
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   state                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USceneComponent*                  Component                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// const class USBZMarkerDataAsset*        MarkerDataAsset                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Winch_C::setCableAndHookVisibilityState(int32 state)
+void ABP_Winch_C::addMarkerToComponent(class USceneComponent* Component, const class USBZMarkerDataAsset* MarkerDataAsset)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"addMarkerToComponent", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Winch_C", "setCableAndHookVisibilityState");
+	Params::BP_Winch_C_addMarkerToComponent Parms{};
 
-	Params::BP_Winch_C_setCableAndHookVisibilityState Parms{};
-
-	Parms.state = state;
+	Parms.Component = Component;
+	Parms.MarkerDataAsset = MarkerDataAsset;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Winch.BP_Winch_C.SetHookInteractionEnabled
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bInEnabled                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Winch_C::SetHookInteractionEnabled(bool bInEnabled)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Winch_C", "SetHookInteractionEnabled");
-
-	Params::BP_Winch_C_SetHookInteractionEnabled Parms{};
-
-	Parms.bInEnabled = bInEnabled;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Winch.BP_Winch_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_Winch_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Winch_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

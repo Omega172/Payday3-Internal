@@ -16,17 +16,35 @@
 
 SDK_NAMESPACE_START
 
-// Function A_ArtGallery.A_ArtGallery_C.ActionPhaseStarted
-// (Event, Public, BlueprintEvent)
+// Function A_ArtGallery.A_ArtGallery_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void AA_ArtGallery_C::ActionPhaseStarted()
+void AA_ArtGallery_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_ArtGallery_C", "ActionPhaseStarted");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function A_ArtGallery.A_ArtGallery_C.HeistStateChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EPD3HeistState                          OldHeistState_HeistStateChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPD3HeistState                          CurrentHeistState_HeistStateChanged                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AA_ArtGallery_C::HeistStateChanged(EPD3HeistState OldHeistState_HeistStateChanged, EPD3HeistState CurrentHeistState_HeistStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HeistStateChanged", FnName));
+
+	Params::A_ArtGallery_C_HeistStateChanged Parms{};
+
+	Parms.OldHeistState_HeistStateChanged = OldHeistState_HeistStateChanged;
+	Parms.CurrentHeistState_HeistStateChanged = CurrentHeistState_HeistStateChanged;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
@@ -37,10 +55,8 @@ void AA_ArtGallery_C::ActionPhaseStarted()
 
 void AA_ArtGallery_C::ExecuteUbergraph_A_ArtGallery(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_ArtGallery_C", "ExecuteUbergraph_A_ArtGallery");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "A_ArtGallery_C", "ExecuteUbergraph_A_ArtGallery", FuncInfo);
 
 	Params::A_ArtGallery_C_ExecuteUbergraph_A_ArtGallery Parms{};
 
@@ -50,37 +66,13 @@ void AA_ArtGallery_C::ExecuteUbergraph_A_ArtGallery(int32 EntryPoint)
 }
 
 
-// Function A_ArtGallery.A_ArtGallery_C.HeistStateChanged
+// Function A_ArtGallery.A_ArtGallery_C.ActionPhaseStarted
 // (Event, Public, BlueprintEvent)
-// Parameters:
-// EPD3HeistState                          OldHeistState                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPD3HeistState                          CurrentHeistState                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AA_ArtGallery_C::HeistStateChanged(EPD3HeistState OldHeistState, EPD3HeistState CurrentHeistState)
+void AA_ArtGallery_C::ActionPhaseStarted()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_ArtGallery_C", "HeistStateChanged");
-
-	Params::A_ArtGallery_C_HeistStateChanged Parms{};
-
-	Parms.OldHeistState = OldHeistState;
-	Parms.CurrentHeistState = CurrentHeistState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function A_ArtGallery.A_ArtGallery_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AA_ArtGallery_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("A_ArtGallery_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ActionPhaseStarted", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }

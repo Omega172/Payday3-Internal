@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ABUST_BPL_Fluorescent_Wall_02_C>();
 	}
 };
+DUMPER7_ASSERTS_ABUST_BPL_Fluorescent_Wall_02_C;
 
 SDK_NAMESPACE_END

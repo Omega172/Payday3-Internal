@@ -112,6 +112,7 @@ public:
 	float                                         CallFunc_SetIndirectLightingIntensity_NewIntensity_ImplicitCast_8; // 0x0A84(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetIntensity_NewIntensity_ImplicitCast_8; // 0x0A88(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_PF_Int_FI_Restaurant_01_HungryBob_C_UserConstructionScript;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

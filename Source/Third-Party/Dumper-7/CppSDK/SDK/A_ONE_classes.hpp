@@ -35,8 +35,8 @@ public:
 	class ASBZAmbientSound*                       SBZAmbientSound_Birds_ExecuteUbergraph_A_ONE_RefProperty; // 0x0418(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_A_ONE(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_A_ONE(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -52,5 +52,6 @@ public:
 		return GetDefaultObjImpl<AA_ONE_C>();
 	}
 };
+DUMPER7_ASSERTS_AA_ONE_C;
 
 SDK_NAMESPACE_END

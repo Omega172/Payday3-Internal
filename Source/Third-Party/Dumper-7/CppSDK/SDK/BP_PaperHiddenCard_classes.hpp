@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_PaperHiddenCard_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PaperHiddenCard_C;
 
 SDK_NAMESPACE_END

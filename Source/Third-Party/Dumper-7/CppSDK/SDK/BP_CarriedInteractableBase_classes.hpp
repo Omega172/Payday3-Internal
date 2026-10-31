@@ -29,10 +29,10 @@ public:
 	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0398(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_CarriedInteractableBase_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_CarriedInteractableBase(int32 EntryPoint);
-	class USBZSensorComponent* GetSensorComponent();
 	class USBZOutlineComponent* GetSensorOutlineComponent();
+	class USBZSensorComponent* GetSensorComponent();
+	void ExecuteUbergraph_BP_CarriedInteractableBase(int32 EntryPoint);
+	void BndEvt__BP_CarriedInteractableBase_Interactable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<ABP_CarriedInteractableBase_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CarriedInteractableBase_C;
 
 SDK_NAMESPACE_END

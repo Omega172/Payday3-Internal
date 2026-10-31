@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ABP_FragGrenade_Preview_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_FragGrenade_Preview_C;
 
 SDK_NAMESPACE_END

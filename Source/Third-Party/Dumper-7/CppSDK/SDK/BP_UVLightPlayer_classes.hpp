@@ -25,8 +25,8 @@ public:
 	class ABP_KeyPad_C*                           KeyPad;                                            // 0x0348(0x0008)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnTemplate, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
+	void ReceiveTick(float DeltaSeconds_ReceiveTick);
 	void ExecuteUbergraph_BP_UVLightPlayer(int32 EntryPoint);
-	void ReceiveTick(float DeltaSeconds);
 
 public:
 	static class UClass* StaticClass()
@@ -42,5 +42,6 @@ public:
 		return GetDefaultObjImpl<ABP_UVLightPlayer_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_UVLightPlayer_C;
 
 SDK_NAMESPACE_END

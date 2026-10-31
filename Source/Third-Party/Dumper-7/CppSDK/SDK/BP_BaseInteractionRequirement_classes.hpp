@@ -42,5 +42,6 @@ public:
 		return GetDefaultObjImpl<UBP_BaseInteractionRequirement_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_BaseInteractionRequirement_C;
 
 SDK_NAMESPACE_END

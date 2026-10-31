@@ -26,6 +26,7 @@ public:
 	double                                        CallFunc_Divide_DoubleDouble_B_ImplicitCast;       // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_PlayAnimation_PlaybackSpeed_ImplicitCast; // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_HUD_Prototype_Target_Dot_C_ExecuteUbergraph_HUD_Prototype_Target_Dot;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

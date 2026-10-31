@@ -35,8 +35,8 @@ public:
 	class UTextBlock*                             CodeText;                                          // 0x0348(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void SetBackgroundColor(ESBZModuleActorState CurrentState);
 	void SetCodeText(const class FText& InText);
+	void SetBackgroundColor(ESBZModuleActorState CurrentState);
 
 public:
 	static class UClass* StaticClass()
@@ -52,5 +52,6 @@ public:
 		return GetDefaultObjImpl<UWBP_KeypadInteraction_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_KeypadInteraction_C;
 
 SDK_NAMESPACE_END

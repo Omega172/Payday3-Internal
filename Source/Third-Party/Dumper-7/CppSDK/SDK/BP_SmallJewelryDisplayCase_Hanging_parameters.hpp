@@ -18,16 +18,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_SmallJewelryDisplayCase_Hanging.BP_SmallJewelryDisplayCase_Hanging_C.BP_OnStateChanged
-// 0x0003 (0x0003 - 0x0000)
-struct BP_SmallJewelryDisplayCase_Hanging_C_BP_OnStateChanged final
-{
-public:
-	ESBZDisplayCaseState                          OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZDisplayCaseState                          NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_SmallJewelryDisplayCase_Hanging.BP_SmallJewelryDisplayCase_Hanging_C.ExecuteUbergraph_BP_SmallJewelryDisplayCase_Hanging
 // 0x0270 (0x0270 - 0x0000)
 struct BP_SmallJewelryDisplayCase_Hanging_C_ExecuteUbergraph_BP_SmallJewelryDisplayCase_Hanging final
@@ -51,6 +41,18 @@ public:
 	struct FRotator                               CallFunc_MakeRotator_ReturnValue;                  // 0x0150(0x0018)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult;    // 0x0168(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
+DUMPER7_ASSERTS_BP_SmallJewelryDisplayCase_Hanging_C_ExecuteUbergraph_BP_SmallJewelryDisplayCase_Hanging;
+
+// Function BP_SmallJewelryDisplayCase_Hanging.BP_SmallJewelryDisplayCase_Hanging_C.BP_OnStateChanged
+// 0x0003 (0x0003 - 0x0000)
+struct BP_SmallJewelryDisplayCase_Hanging_C_BP_OnStateChanged final
+{
+public:
+	ESBZDisplayCaseState                          OldState_BP_OnStateChanged;                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZDisplayCaseState                          NewState_BP_OnStateChanged;                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_BP_OnStateChanged;                    // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_SmallJewelryDisplayCase_Hanging_C_BP_OnStateChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

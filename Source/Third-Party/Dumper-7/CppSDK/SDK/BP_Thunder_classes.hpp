@@ -34,13 +34,13 @@ public:
 	int32                                         LightTriggerCounter;                               // 0x0378(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BeginOverlap(class APawn* Pawn);
-	void EndOverlap(class APawn* Pawn);
-	void ExecuteUbergraph_BP_Thunder(int32 EntryPoint);
-	void GetControlledPawnLocation(class APawn** ControlledPawnReference, struct FVector* ControlledPawnLocation);
-	void ReceiveBeginPlay();
-	void Thunder();
 	void UserConstructionScript();
+	void Thunder();
+	void ReceiveBeginPlay();
+	void GetControlledPawnLocation(class APawn** ControlledPawnReference, struct FVector* ControlledPawnLocation);
+	void ExecuteUbergraph_BP_Thunder(int32 EntryPoint);
+	void EndOverlap(class APawn* Pawn);
+	void BeginOverlap(class APawn* Pawn);
 
 public:
 	static class UClass* StaticClass()
@@ -56,5 +56,6 @@ public:
 		return GetDefaultObjImpl<ABP_Thunder_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Thunder_C;
 
 SDK_NAMESPACE_END

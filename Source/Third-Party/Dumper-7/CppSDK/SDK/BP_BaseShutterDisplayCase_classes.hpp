@@ -26,10 +26,10 @@ public:
 	class UStaticMeshComponent*                   Shutter;                                           // 0x04F8(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BP_OnGlassBroken(bool bDoCosmetics);
-	void BP_OnStateChanged(ESBZDisplayCaseState OldState, ESBZDisplayCaseState NewState, bool bDoCosmetics);
-	void EnableShutter(bool bInEnable);
 	void ExecuteUbergraph_BP_BaseShutterDisplayCase(int32 EntryPoint);
+	void EnableShutter(bool bInEnable);
+	void BP_OnStateChanged(ESBZDisplayCaseState OldState, ESBZDisplayCaseState NewState, bool bDoCosmetics);
+	void BP_OnGlassBroken(bool bDoCosmetics);
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<ABP_BaseShutterDisplayCase_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_BaseShutterDisplayCase_C;
 
 SDK_NAMESPACE_END

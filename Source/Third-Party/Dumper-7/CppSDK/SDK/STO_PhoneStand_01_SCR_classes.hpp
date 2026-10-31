@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ASTO_PhoneStand_01_SCR_C>();
 	}
 };
+DUMPER7_ASSERTS_ASTO_PhoneStand_01_SCR_C;
 
 SDK_NAMESPACE_END

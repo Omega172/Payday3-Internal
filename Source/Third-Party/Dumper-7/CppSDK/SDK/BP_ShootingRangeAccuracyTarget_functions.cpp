@@ -16,129 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_ShootingRangeAccuracyTarget.BP_ShootingRangeAccuracyTarget_C.ExecuteUbergraph_BP_ShootingRangeAccuracyTarget
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_ShootingRangeAccuracyTarget.BP_ShootingRangeAccuracyTarget_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_ShootingRangeAccuracyTarget_C::ExecuteUbergraph_BP_ShootingRangeAccuracyTarget(int32 EntryPoint)
+void ABP_ShootingRangeAccuracyTarget_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeAccuracyTarget_C", "ExecuteUbergraph_BP_ShootingRangeAccuracyTarget");
-
-	Params::BP_ShootingRangeAccuracyTarget_C_ExecuteUbergraph_BP_ShootingRangeAccuracyTarget Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ShootingRangeAccuracyTarget.BP_ShootingRangeAccuracyTarget_C.KnockDownTarget__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_ShootingRangeAccuracyTarget_C::KnockDownTarget__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeAccuracyTarget_C", "KnockDownTarget__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ShootingRangeAccuracyTarget.BP_ShootingRangeAccuracyTarget_C.KnockDownTarget__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_ShootingRangeAccuracyTarget_C::KnockDownTarget__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeAccuracyTarget_C", "KnockDownTarget__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ShootingRangeAccuracyTarget.BP_ShootingRangeAccuracyTarget_C.RaiseTarget__FinishedFunc
-// (BlueprintEvent)
-
-void ABP_ShootingRangeAccuracyTarget_C::RaiseTarget__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeAccuracyTarget_C", "RaiseTarget__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ShootingRangeAccuracyTarget.BP_ShootingRangeAccuracyTarget_C.RaiseTarget__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_ShootingRangeAccuracyTarget_C::RaiseTarget__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeAccuracyTarget_C", "RaiseTarget__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_ShootingRangeAccuracyTarget.BP_ShootingRangeAccuracyTarget_C.ReceivePointDamage
-// (Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const class UDamageType*                DamageType                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FVector&                   HitLocation                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FVector&                   HitNormal                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*              HitComponent                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class FName                             BoneName                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FVector&                   ShotFromDirection                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AController*                      InstigatedBy                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           DamageCauser                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// const struct FHitResult&                HitInfo                                                (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-
-void ABP_ShootingRangeAccuracyTarget_C::ReceivePointDamage(float Damage, const class UDamageType* DamageType, const struct FVector& HitLocation, const struct FVector& HitNormal, class UPrimitiveComponent* HitComponent, class FName BoneName, const struct FVector& ShotFromDirection, class AController* InstigatedBy, class AActor* DamageCauser, const struct FHitResult& HitInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeAccuracyTarget_C", "ReceivePointDamage");
-
-	Params::BP_ShootingRangeAccuracyTarget_C_ReceivePointDamage Parms{};
-
-	Parms.Damage = Damage;
-	Parms.DamageType = DamageType;
-	Parms.HitLocation = std::move(HitLocation);
-	Parms.HitNormal = std::move(HitNormal);
-	Parms.HitComponent = HitComponent;
-	Parms.BoneName = BoneName;
-	Parms.ShotFromDirection = std::move(ShotFromDirection);
-	Parms.InstigatedBy = InstigatedBy;
-	Parms.DamageCauser = DamageCauser;
-	Parms.HitInfo = std::move(HitInfo);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_ShootingRangeAccuracyTarget.BP_ShootingRangeAccuracyTarget_C.SERVER_AddScore
-// (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
-
-void ABP_ShootingRangeAccuracyTarget_C::SERVER_AddScore()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeAccuracyTarget_C", "SERVER_AddScore");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -149,26 +33,124 @@ void ABP_ShootingRangeAccuracyTarget_C::SERVER_AddScore()
 
 void ABP_ShootingRangeAccuracyTarget_C::SERVER_EnableOutline()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeAccuracyTarget_C", "SERVER_EnableOutline");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SERVER_EnableOutline", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_ShootingRangeAccuracyTarget.BP_ShootingRangeAccuracyTarget_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_ShootingRangeAccuracyTarget.BP_ShootingRangeAccuracyTarget_C.SERVER_AddScore
+// (Net, NetReliable, NetServer, BlueprintCallable, BlueprintEvent)
 
-void ABP_ShootingRangeAccuracyTarget_C::UserConstructionScript()
+void ABP_ShootingRangeAccuracyTarget_C::SERVER_AddScore()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ShootingRangeAccuracyTarget_C", "UserConstructionScript");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SERVER_AddScore", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ShootingRangeAccuracyTarget.BP_ShootingRangeAccuracyTarget_C.ReceivePointDamage
+// (Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// float                                   Damage_ReceivePointDamage                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class UDamageType*                DamageType_ReceivePointDamage                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   HitLocation_ReceivePointDamage                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   HitNormal_ReceivePointDamage                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*              HitComponent_ReceivePointDamage                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class FName                             BoneName_ReceivePointDamage                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FVector&                   ShotFromDirection_ReceivePointDamage                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AController*                      InstigatedBy_ReceivePointDamage                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           DamageCauser_ReceivePointDamage                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const struct FHitResult&                HitInfo_ReceivePointDamage                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+
+void ABP_ShootingRangeAccuracyTarget_C::ReceivePointDamage(float Damage_ReceivePointDamage, const class UDamageType* DamageType_ReceivePointDamage, const struct FVector& HitLocation_ReceivePointDamage, const struct FVector& HitNormal_ReceivePointDamage, class UPrimitiveComponent* HitComponent_ReceivePointDamage, class FName BoneName_ReceivePointDamage, const struct FVector& ShotFromDirection_ReceivePointDamage, class AController* InstigatedBy_ReceivePointDamage, class AActor* DamageCauser_ReceivePointDamage, const struct FHitResult& HitInfo_ReceivePointDamage)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceivePointDamage", FnName));
+
+	Params::BP_ShootingRangeAccuracyTarget_C_ReceivePointDamage Parms{};
+
+	Parms.Damage_ReceivePointDamage = Damage_ReceivePointDamage;
+	Parms.DamageType_ReceivePointDamage = DamageType_ReceivePointDamage;
+	Parms.HitLocation_ReceivePointDamage = std::move(HitLocation_ReceivePointDamage);
+	Parms.HitNormal_ReceivePointDamage = std::move(HitNormal_ReceivePointDamage);
+	Parms.HitComponent_ReceivePointDamage = HitComponent_ReceivePointDamage;
+	Parms.BoneName_ReceivePointDamage = BoneName_ReceivePointDamage;
+	Parms.ShotFromDirection_ReceivePointDamage = std::move(ShotFromDirection_ReceivePointDamage);
+	Parms.InstigatedBy_ReceivePointDamage = InstigatedBy_ReceivePointDamage;
+	Parms.DamageCauser_ReceivePointDamage = DamageCauser_ReceivePointDamage;
+	Parms.HitInfo_ReceivePointDamage = std::move(HitInfo_ReceivePointDamage);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_ShootingRangeAccuracyTarget.BP_ShootingRangeAccuracyTarget_C.RaiseTarget__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_ShootingRangeAccuracyTarget_C::RaiseTarget__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RaiseTarget__UpdateFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ShootingRangeAccuracyTarget.BP_ShootingRangeAccuracyTarget_C.RaiseTarget__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_ShootingRangeAccuracyTarget_C::RaiseTarget__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RaiseTarget__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ShootingRangeAccuracyTarget.BP_ShootingRangeAccuracyTarget_C.KnockDownTarget__UpdateFunc
+// (BlueprintEvent)
+
+void ABP_ShootingRangeAccuracyTarget_C::KnockDownTarget__UpdateFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"KnockDownTarget__UpdateFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ShootingRangeAccuracyTarget.BP_ShootingRangeAccuracyTarget_C.KnockDownTarget__FinishedFunc
+// (BlueprintEvent)
+
+void ABP_ShootingRangeAccuracyTarget_C::KnockDownTarget__FinishedFunc()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"KnockDownTarget__FinishedFunc", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_ShootingRangeAccuracyTarget.BP_ShootingRangeAccuracyTarget_C.ExecuteUbergraph_BP_ShootingRangeAccuracyTarget
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_ShootingRangeAccuracyTarget_C::ExecuteUbergraph_BP_ShootingRangeAccuracyTarget(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_ShootingRangeAccuracyTarget_C", "ExecuteUbergraph_BP_ShootingRangeAccuracyTarget", FuncInfo);
+
+	Params::BP_ShootingRangeAccuracyTarget_C_ExecuteUbergraph_BP_ShootingRangeAccuracyTarget Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

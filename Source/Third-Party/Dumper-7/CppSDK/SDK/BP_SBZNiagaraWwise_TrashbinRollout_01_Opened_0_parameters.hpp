@@ -14,14 +14,5 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_SBZNiagaraWwise_TrashbinRollout_01_Opened.BP_SBZNiagaraWwise_TrashbinRollout_01_Opened_C.ExecuteUbergraph_BP_SBZNiagaraWwise_TrashbinRollout_01_Opened
-// 0x0008 (0x0008 - 0x0000)
-struct BP_SBZNiagaraWwise_TrashbinRollout_01_Opened_C_ExecuteUbergraph_BP_SBZNiagaraWwise_TrashbinRollout_01_Opened final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

@@ -16,23 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Lock_DisplayCase.BP_Lock_DisplayCase_C.BP_OnMiniGameSuccess
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_Lock_DisplayCase.BP_Lock_DisplayCase_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_Lock_DisplayCase_C::BP_OnMiniGameSuccess(bool bDoCosmetics)
+void ABP_Lock_DisplayCase_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Lock_DisplayCase_C", "BP_OnMiniGameSuccess");
-
-	Params::BP_Lock_DisplayCase_C_BP_OnMiniGameSuccess Parms{};
-
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -43,10 +35,8 @@ void ABP_Lock_DisplayCase_C::BP_OnMiniGameSuccess(bool bDoCosmetics)
 
 void ABP_Lock_DisplayCase_C::ExecuteUbergraph_BP_Lock_DisplayCase(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Lock_DisplayCase_C", "ExecuteUbergraph_BP_Lock_DisplayCase");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Lock_DisplayCase_C", "ExecuteUbergraph_BP_Lock_DisplayCase", FuncInfo);
 
 	Params::BP_Lock_DisplayCase_C_ExecuteUbergraph_BP_Lock_DisplayCase Parms{};
 
@@ -56,17 +46,21 @@ void ABP_Lock_DisplayCase_C::ExecuteUbergraph_BP_Lock_DisplayCase(int32 EntryPoi
 }
 
 
-// Function BP_Lock_DisplayCase.BP_Lock_DisplayCase_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function BP_Lock_DisplayCase.BP_Lock_DisplayCase_C.BP_OnMiniGameSuccess
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                                    bDoCosmetics_BP_OnMiniGameSuccess                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Lock_DisplayCase_C::UserConstructionScript()
+void ABP_Lock_DisplayCase_C::BP_OnMiniGameSuccess(bool bDoCosmetics_BP_OnMiniGameSuccess)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnMiniGameSuccess", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Lock_DisplayCase_C", "UserConstructionScript");
+	Params::BP_Lock_DisplayCase_C_BP_OnMiniGameSuccess Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.bDoCosmetics_BP_OnMiniGameSuccess = bDoCosmetics_BP_OnMiniGameSuccess;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

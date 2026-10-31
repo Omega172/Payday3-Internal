@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "BP_BaseValuableBag_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 SDK_NAMESPACE_START
@@ -27,9 +27,9 @@ public:
 	class USBZOutlineComponent*                   SBZOutline;                                        // 0x0460(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_MoneyBagDyed(int32 EntryPoint);
-	void OnActorHit_Event(class AActor* SelfActor, class AActor* OtherActor, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
 	void ReceiveBeginPlay();
+	void OnActorHit_Event(class AActor* SelfActor, class AActor* OtherActor, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
+	void ExecuteUbergraph_BP_MoneyBagDyed(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<ABP_MoneyBagDyed_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_MoneyBagDyed_C;
 
 SDK_NAMESPACE_END

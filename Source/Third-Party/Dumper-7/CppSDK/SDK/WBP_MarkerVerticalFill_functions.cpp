@@ -16,21 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_MarkerVerticalFill.WBP_MarkerVerticalFill_C.BP_OnDataSet
-// (Event, Protected, BlueprintEvent)
+// Function WBP_MarkerVerticalFill.WBP_MarkerVerticalFill_C.ExecuteUbergraph_WBP_MarkerVerticalFill
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// const class USBZMarkerDataAsset*        InMarkerAsset                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MarkerVerticalFill_C::BP_OnDataSet(const class USBZMarkerDataAsset* InMarkerAsset)
+void UWBP_MarkerVerticalFill_C::ExecuteUbergraph_WBP_MarkerVerticalFill(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_MarkerVerticalFill_C", "ExecuteUbergraph_WBP_MarkerVerticalFill", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MarkerVerticalFill_C", "BP_OnDataSet");
+	Params::WBP_MarkerVerticalFill_C_ExecuteUbergraph_WBP_MarkerVerticalFill Parms{};
 
-	Params::WBP_MarkerVerticalFill_C_BP_OnDataSet Parms{};
-
-	Parms.InMarkerAsset = InMarkerAsset;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -39,38 +37,34 @@ void UWBP_MarkerVerticalFill_C::BP_OnDataSet(const class USBZMarkerDataAsset* In
 // Function WBP_MarkerVerticalFill.WBP_MarkerVerticalFill_C.BP_OnProgressChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// float                                   NewProgress                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   NewProgress_BP_OnProgressChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MarkerVerticalFill_C::BP_OnProgressChanged(float NewProgress)
+void UWBP_MarkerVerticalFill_C::BP_OnProgressChanged(float NewProgress_BP_OnProgressChanged)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MarkerVerticalFill_C", "BP_OnProgressChanged");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnProgressChanged", FnName));
 
 	Params::WBP_MarkerVerticalFill_C_BP_OnProgressChanged Parms{};
 
-	Parms.NewProgress = NewProgress;
+	Parms.NewProgress_BP_OnProgressChanged = NewProgress_BP_OnProgressChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_MarkerVerticalFill.WBP_MarkerVerticalFill_C.ExecuteUbergraph_WBP_MarkerVerticalFill
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_MarkerVerticalFill.WBP_MarkerVerticalFill_C.BP_OnDataSet
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZMarkerDataAsset*        InMarkerAsset_BP_OnDataSet                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_MarkerVerticalFill_C::ExecuteUbergraph_WBP_MarkerVerticalFill(int32 EntryPoint)
+void UWBP_MarkerVerticalFill_C::BP_OnDataSet(const class USBZMarkerDataAsset* InMarkerAsset_BP_OnDataSet)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnDataSet", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_MarkerVerticalFill_C", "ExecuteUbergraph_WBP_MarkerVerticalFill");
+	Params::WBP_MarkerVerticalFill_C_BP_OnDataSet Parms{};
 
-	Params::WBP_MarkerVerticalFill_C_ExecuteUbergraph_WBP_MarkerVerticalFill Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.InMarkerAsset_BP_OnDataSet = InMarkerAsset_BP_OnDataSet;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

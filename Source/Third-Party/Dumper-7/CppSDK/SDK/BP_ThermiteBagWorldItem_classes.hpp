@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_ThermiteBagWorldItem_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ThermiteBagWorldItem_C;
 
 SDK_NAMESPACE_END

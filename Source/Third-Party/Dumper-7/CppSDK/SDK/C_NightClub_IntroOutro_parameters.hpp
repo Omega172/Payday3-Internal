@@ -14,6 +14,15 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function C_NightClub_IntroOutro.C_NightClub_IntroOutro_C.IntroSequenceChanged
+// 0x0001 (0x0001 - 0x0000)
+struct C_NightClub_IntroOutro_C_IntroSequenceChanged final
+{
+public:
+	bool                                          bIsStarted_IntroSequenceChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_C_NightClub_IntroOutro_C_IntroSequenceChanged;
+
 // Function C_NightClub_IntroOutro.C_NightClub_IntroOutro_C.ExecuteUbergraph_C_NightClub_IntroOutro
 // 0x0028 (0x0028 - 0x0000)
 struct C_NightClub_IntroOutro_C_ExecuteUbergraph_C_NightClub_IntroOutro final
@@ -24,14 +33,7 @@ public:
 	class ULevelSequencePlayer*                   CallFunc_GetSequencePlayer_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bIsStarted;                           // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function C_NightClub_IntroOutro.C_NightClub_IntroOutro_C.IntroSequenceChanged
-// 0x0001 (0x0001 - 0x0000)
-struct C_NightClub_IntroOutro_C_IntroSequenceChanged final
-{
-public:
-	bool                                          bIsStarted;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_C_NightClub_IntroOutro_C_ExecuteUbergraph_C_NightClub_IntroOutro;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

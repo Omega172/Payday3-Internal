@@ -16,47 +16,23 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_IGL_BRE_NAV_ATT_2HITS.BP_IGL_BRE_NAV_ATT_2HITS_C.BndEvt__BP_BreachableWindow_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature
-// (HasOutParams, BlueprintEvent)
+// Function BP_IGL_BRE_NAV_ATT_2HITS.BP_IGL_BRE_NAV_ATT_2HITS_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// class UActorComponent*                  PoolComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// int32                                   Hits                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FSBZPropDamageContext&     DamageContext                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsInitialStateChange                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_IGL_BRE_NAV_ATT_2HITS_C::BndEvt__BP_BreachableWindow_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
+void ABP_IGL_BRE_NAV_ATT_2HITS_C::OnStateChanged(ESBZGateState OldState, ESBZGateState NewState, bool bIsInitialStateChange)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_IGL_BRE_NAV_ATT_2HITS_C", "BndEvt__BP_BreachableWindow_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature");
+	Params::BP_IGL_BRE_NAV_ATT_2HITS_C_OnStateChanged Parms{};
 
-	Params::BP_IGL_BRE_NAV_ATT_2HITS_C_BndEvt__BP_BreachableWindow_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature Parms{};
-
-	Parms.PoolComponent = PoolComponent;
-	Parms.Hits = Hits;
-	Parms.bDoCosmetics = bDoCosmetics;
-	Parms.DamageContext = std::move(DamageContext);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_IGL_BRE_NAV_ATT_2HITS.BP_IGL_BRE_NAV_ATT_2HITS_C.ExecuteUbergraph_BP_IGL_BRE_NAV_ATT_2HITS
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_IGL_BRE_NAV_ATT_2HITS_C::ExecuteUbergraph_BP_IGL_BRE_NAV_ATT_2HITS(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_IGL_BRE_NAV_ATT_2HITS_C", "ExecuteUbergraph_BP_IGL_BRE_NAV_ATT_2HITS");
-
-	Params::BP_IGL_BRE_NAV_ATT_2HITS_C_ExecuteUbergraph_BP_IGL_BRE_NAV_ATT_2HITS Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.OldState = OldState;
+	Parms.NewState = NewState;
+	Parms.bIsInitialStateChange = bIsInitialStateChange;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -69,10 +45,8 @@ void ABP_IGL_BRE_NAV_ATT_2HITS_C::ExecuteUbergraph_BP_IGL_BRE_NAV_ATT_2HITS(int3
 
 class UStaticMeshComponent* ABP_IGL_BRE_NAV_ATT_2HITS_C::GetTraversalDestructibleMeshComponent()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_IGL_BRE_NAV_ATT_2HITS_C", "GetTraversalDestructibleMeshComponent");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetTraversalDestructibleMeshComponent", FnName));
 
 	Params::BP_IGL_BRE_NAV_ATT_2HITS_C_GetTraversalDestructibleMeshComponent Parms{};
 
@@ -82,25 +56,43 @@ class UStaticMeshComponent* ABP_IGL_BRE_NAV_ATT_2HITS_C::GetTraversalDestructibl
 }
 
 
-// Function BP_IGL_BRE_NAV_ATT_2HITS.BP_IGL_BRE_NAV_ATT_2HITS_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
+// Function BP_IGL_BRE_NAV_ATT_2HITS.BP_IGL_BRE_NAV_ATT_2HITS_C.ExecuteUbergraph_BP_IGL_BRE_NAV_ATT_2HITS
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsInitialStateChange                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_IGL_BRE_NAV_ATT_2HITS_C::OnStateChanged(ESBZGateState OldState, ESBZGateState NewState, bool bIsInitialStateChange)
+void ABP_IGL_BRE_NAV_ATT_2HITS_C::ExecuteUbergraph_BP_IGL_BRE_NAV_ATT_2HITS(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_IGL_BRE_NAV_ATT_2HITS_C", "ExecuteUbergraph_BP_IGL_BRE_NAV_ATT_2HITS", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_IGL_BRE_NAV_ATT_2HITS_C", "OnStateChanged");
+	Params::BP_IGL_BRE_NAV_ATT_2HITS_C_ExecuteUbergraph_BP_IGL_BRE_NAV_ATT_2HITS Parms{};
 
-	Params::BP_IGL_BRE_NAV_ATT_2HITS_C_OnStateChanged Parms{};
+	Parms.EntryPoint = EntryPoint;
 
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bIsInitialStateChange = bIsInitialStateChange;
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_IGL_BRE_NAV_ATT_2HITS.BP_IGL_BRE_NAV_ATT_2HITS_C.BndEvt__BP_BreachableWindow_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// class UActorComponent*                  PoolComponent                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// int32                                   Hits                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FSBZPropDamageContext&     DamageContext                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+
+void ABP_IGL_BRE_NAV_ATT_2HITS_C::BndEvt__BP_BreachableWindow_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature(class UActorComponent* PoolComponent, int32 Hits, bool bDoCosmetics, const struct FSBZPropDamageContext& DamageContext)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_BreachableWindow_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature", FnName));
+
+	Params::BP_IGL_BRE_NAV_ATT_2HITS_C_BndEvt__BP_BreachableWindow_SBZPropDamage_K2Node_ComponentBoundEvent_0_SBZPropDamageHitsSignature__DelegateSignature Parms{};
+
+	Parms.PoolComponent = PoolComponent;
+	Parms.Hits = Hits;
+	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.DamageContext = std::move(DamageContext);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -113,10 +105,8 @@ void ABP_IGL_BRE_NAV_ATT_2HITS_C::OnStateChanged(ESBZGateState OldState, ESBZGat
 
 class USBZPropDamageComponent* ABP_IGL_BRE_NAV_ATT_2HITS_C::GetPropDamageComponent() const
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_IGL_BRE_NAV_ATT_2HITS_C", "GetPropDamageComponent");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetPropDamageComponent", FnName));
 
 	Params::BP_IGL_BRE_NAV_ATT_2HITS_C_GetPropDamageComponent Parms{};
 

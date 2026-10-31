@@ -21,6 +21,7 @@ struct A_Bust_C_ExecuteUbergraph_A_Bust final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_A_Bust_C_ExecuteUbergraph_A_Bust;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

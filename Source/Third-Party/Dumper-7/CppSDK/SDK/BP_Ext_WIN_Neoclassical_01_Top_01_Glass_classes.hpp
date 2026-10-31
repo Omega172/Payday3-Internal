@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_Ext_WIN_Neoclassical_01_Top_01_Glass_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Ext_WIN_Neoclassical_01_Top_01_Glass_C;
 
 SDK_NAMESPACE_END

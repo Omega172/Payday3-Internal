@@ -16,28 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_HackingMinigameActor_DisplayCase.BP_HackingMinigameActor_DisplayCase_C.BP_OnEnabledStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_HackingMinigameActor_DisplayCase_C_BP_OnEnabledStateChanged final
-{
-public:
-	bool                                          bEnabled;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_HackingMinigameActor_DisplayCase.BP_HackingMinigameActor_DisplayCase_C.ExecuteUbergraph_BP_HackingMinigameActor_DisplayCase
-// 0x0018 (0x0018 - 0x0000)
-struct BP_HackingMinigameActor_DisplayCase_C_ExecuteUbergraph_BP_HackingMinigameActor_DisplayCase final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bEnabled;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bDoCosmetics;                         // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        CallFunc_Conv_BoolToDouble_ReturnValue;            // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_SetCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_HackingMinigameActor_DisplayCase.BP_HackingMinigameActor_DisplayCase_C.UserConstructionScript
 // 0x0050 (0x0050 - 0x0000)
 struct BP_HackingMinigameActor_DisplayCase_C_UserConstructionScript final
@@ -53,6 +31,31 @@ public:
 	double                                        CallFunc_MakeVector4_Z_ImplicitCast;               // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_MakeVector4_W_ImplicitCast;               // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_HackingMinigameActor_DisplayCase_C_UserConstructionScript;
+
+// Function BP_HackingMinigameActor_DisplayCase.BP_HackingMinigameActor_DisplayCase_C.ExecuteUbergraph_BP_HackingMinigameActor_DisplayCase
+// 0x0018 (0x0018 - 0x0000)
+struct BP_HackingMinigameActor_DisplayCase_C_ExecuteUbergraph_BP_HackingMinigameActor_DisplayCase final
+{
+public:
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bEnabled;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bDoCosmetics;                         // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        CallFunc_Conv_BoolToDouble_ReturnValue;            // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_SetCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_HackingMinigameActor_DisplayCase_C_ExecuteUbergraph_BP_HackingMinigameActor_DisplayCase;
+
+// Function BP_HackingMinigameActor_DisplayCase.BP_HackingMinigameActor_DisplayCase_C.BP_OnEnabledStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_HackingMinigameActor_DisplayCase_C_BP_OnEnabledStateChanged final
+{
+public:
+	bool                                          bEnabled_BP_OnEnabledStateChanged;                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_BP_OnEnabledStateChanged;             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_HackingMinigameActor_DisplayCase_C_BP_OnEnabledStateChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

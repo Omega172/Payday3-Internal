@@ -16,11 +16,11 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CH_SecurityGuard_Lead.CH_SecurityGuard_Lead_C
-// 0x0010 (0x2220 - 0x2210)
+// 0x0010 (0x22B0 - 0x22A0)
 class ACH_SecurityGuard_Lead_C final : public ACH_SecurityGuard_C
 {
 public:
-	class UStaticMeshComponent*                   Hat;                                               // 0x2210(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   Hat;                                               // 0x22A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -36,5 +36,6 @@ public:
 		return GetDefaultObjImpl<ACH_SecurityGuard_Lead_C>();
 	}
 };
+DUMPER7_ASSERTS_ACH_SecurityGuard_Lead_C;
 
 SDK_NAMESPACE_END

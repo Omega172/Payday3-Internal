@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "Enum_DumpsterStages_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Starbreeze_classes.hpp"
 
 
@@ -42,12 +42,12 @@ public:
 	TMulticastInlineDelegate<void(bool opened)>   onOpened;                                          // 0x03F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void BndEvt__BP_Dumpster_01_Open_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
-	void ExecuteUbergraph_BP_Dumpster_01_Open(int32 EntryPoint);
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void setInteraction(bool bEnabled);
-	void SetStateFunction(Enum_DumpsterStages State_0);
 	void UserConstructionScript();
+	void SetStateFunction(Enum_DumpsterStages State);
+	void setInteraction(bool bEnabled);
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
+	void ExecuteUbergraph_BP_Dumpster_01_Open(int32 EntryPoint);
+	void BndEvt__BP_Dumpster_01_Open_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor);
 
 public:
 	static class UClass* StaticClass()
@@ -63,5 +63,6 @@ public:
 		return GetDefaultObjImpl<ABP_Dumpster_01_Open_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Dumpster_01_Open_C;
 
 SDK_NAMESPACE_END

@@ -61,18 +61,18 @@ public:
 	struct FSBZStoreBaseItem                      StoreData;                                         // 0x04A0(0x0150)(Edit, BlueprintVisible, Transient, ExposeOnSpawn)
 
 public:
-	void UpdateAssetCount(bool bIsDesignTime);
-	void SetCurrent(bool IsCurrent);
-	void SetAsCurrent();
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnLoaded_DF5A03CE4F55139645004384AEF3E7B8(class UObject* Loaded);
-	void OnInitialized();
-	void OnFocusChanged(bool InFocus);
-	void ExecuteUbergraph_WBP_UI_Cosmetic_Item(int32 EntryPoint);
-	void ButtonSelected();
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
 	void AddAssetCount(int32 Count);
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
+	void ButtonSelected();
+	void ExecuteUbergraph_WBP_UI_Cosmetic_Item(int32 EntryPoint);
+	void OnFocusChanged(bool InFocus);
+	void OnInitialized();
+	void OnLoaded_DF5A03CE4F55139645004384AEF3E7B8(class UObject* Loaded);
+	void PreConstruct(bool IsDesignTime);
+	void SetAsCurrent();
+	void SetCurrent(bool IsCurrent);
+	void UpdateAssetCount(bool bIsDesignTime);
 
 public:
 	static class UClass* StaticClass()

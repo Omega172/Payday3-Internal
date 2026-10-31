@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_PaperRoll_01_Kitchen_B_SmallDestruction_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PaperRoll_01_Kitchen_B_SmallDestruction_C;
 
 SDK_NAMESPACE_END

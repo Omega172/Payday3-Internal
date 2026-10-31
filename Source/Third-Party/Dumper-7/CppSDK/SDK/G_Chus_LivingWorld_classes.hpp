@@ -35,9 +35,9 @@ public:
 	class ASBZPawnSpawnPredefined*                SBZPawnSpawnPredefined1_Clerk2_ExecuteUbergraph_G_Chus_LivingWorld_RefProperty; // 0x0428(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ActionPhaseStarted();
-	void ExecuteUbergraph_G_Chus_LivingWorld(int32 EntryPoint);
 	void Randomize_CivsClerks();
+	void ExecuteUbergraph_G_Chus_LivingWorld(int32 EntryPoint);
+	void ActionPhaseStarted();
 
 public:
 	static class UClass* StaticClass()
@@ -53,5 +53,6 @@ public:
 		return GetDefaultObjImpl<AG_Chus_LivingWorld_C>();
 	}
 };
+DUMPER7_ASSERTS_AG_Chus_LivingWorld_C;
 
 SDK_NAMESPACE_END

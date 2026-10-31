@@ -16,25 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_Inventory_ItemDescription_StatModule.WBP_UI_Inventory_ItemDescription_StatModule_C.SetStat
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// double                                  BaseValue                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// double                                  Addition                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const class FText&                      StatName                                               (BlueprintVisible, BlueprintReadOnly, Parm)
+// Function WBP_UI_Inventory_ItemDescription_StatModule.WBP_UI_Inventory_ItemDescription_StatModule_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 
-void UWBP_UI_Inventory_ItemDescription_StatModule_C::SetStat(double BaseValue, double Addition, const class FText& StatName)
+void UWBP_UI_Inventory_ItemDescription_StatModule_C::Construct()
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetStat", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
 
-	Params::WBP_UI_Inventory_ItemDescription_StatModule_C_SetStat Parms{};
-
-	Parms.BaseValue = BaseValue;
-	Parms.Addition = Addition;
-	Parms.StatName = std::move(StatName);
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -56,15 +46,25 @@ void UWBP_UI_Inventory_ItemDescription_StatModule_C::ExecuteUbergraph_WBP_UI_Inv
 }
 
 
-// Function WBP_UI_Inventory_ItemDescription_StatModule.WBP_UI_Inventory_ItemDescription_StatModule_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Function WBP_UI_Inventory_ItemDescription_StatModule.WBP_UI_Inventory_ItemDescription_StatModule_C.SetStat
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// double                                  BaseValue                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// double                                  Addition                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      StatName                                               (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_UI_Inventory_ItemDescription_StatModule_C::Construct()
+void UWBP_UI_Inventory_ItemDescription_StatModule_C::SetStat(double BaseValue, double Addition, const class FText& StatName)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetStat", FnName));
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::WBP_UI_Inventory_ItemDescription_StatModule_C_SetStat Parms{};
+
+	Parms.BaseValue = BaseValue;
+	Parms.Addition = Addition;
+	Parms.StatName = std::move(StatName);
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

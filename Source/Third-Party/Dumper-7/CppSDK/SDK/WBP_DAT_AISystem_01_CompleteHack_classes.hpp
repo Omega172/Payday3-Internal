@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<UWBP_DAT_AISystem_01_CompleteHack_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_DAT_AISystem_01_CompleteHack_C;
 
 SDK_NAMESPACE_END

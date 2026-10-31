@@ -16,26 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_DonutPickup.BP_DonutPickup_C.GetSensorComponent
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZSensorComponent*              ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-
-class USBZSensorComponent* ABP_DonutPickup_C::GetSensorComponent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DonutPickup_C", "GetSensorComponent");
-
-	Params::BP_DonutPickup_C_GetSensorComponent Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
 // Function BP_DonutPickup.BP_DonutPickup_C.GetSensorOutlineComponent
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -43,12 +23,28 @@ class USBZSensorComponent* ABP_DonutPickup_C::GetSensorComponent()
 
 class USBZOutlineComponent* ABP_DonutPickup_C::GetSensorOutlineComponent()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_DonutPickup_C", "GetSensorOutlineComponent");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetSensorOutlineComponent", FnName));
 
 	Params::BP_DonutPickup_C_GetSensorOutlineComponent Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function BP_DonutPickup.BP_DonutPickup_C.GetSensorComponent
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class USBZSensorComponent*              ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+
+class USBZSensorComponent* ABP_DonutPickup_C::GetSensorComponent()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetSensorComponent", FnName));
+
+	Params::BP_DonutPickup_C_GetSensorComponent Parms{};
 
 	UObject::ProcessEvent(Func, &Parms);
 

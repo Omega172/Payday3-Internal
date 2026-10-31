@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<ABP_CeilingFan_01_Rotation_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CeilingFan_01_Rotation_C;
 
 SDK_NAMESPACE_END

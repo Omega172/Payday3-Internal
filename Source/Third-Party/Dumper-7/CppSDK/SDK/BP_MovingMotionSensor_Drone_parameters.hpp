@@ -17,15 +17,16 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_MovingMotionSensor_Drone.BP_MovingMotionSensor_Drone_C.BP_OnStateChanged
+// Function BP_MovingMotionSensor_Drone.BP_MovingMotionSensor_Drone_C.onHeistsStateChanged
 // 0x0003 (0x0003 - 0x0000)
-struct BP_MovingMotionSensor_Drone_C_BP_OnStateChanged final
+struct BP_MovingMotionSensor_Drone_C_onHeistsStateChanged final
 {
 public:
-	ESBZCameraState                               OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZCameraState                               NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_MovingMotionSensor_Drone_C_onHeistsStateChanged;
 
 // Function BP_MovingMotionSensor_Drone.BP_MovingMotionSensor_Drone_C.ExecuteUbergraph_BP_MovingMotionSensor_Drone
 // 0x0100 (0x0100 - 0x0000)
@@ -58,16 +59,18 @@ public:
 	uint8                                         Pad_FB[0x1];                                       // 0x00FB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SetScalarParameterValueOnMaterials_ParameterValue_ImplicitCast; // 0x00FC(0x0004)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_MovingMotionSensor_Drone_C_ExecuteUbergraph_BP_MovingMotionSensor_Drone;
 
-// Function BP_MovingMotionSensor_Drone.BP_MovingMotionSensor_Drone_C.onHeistsStateChanged
+// Function BP_MovingMotionSensor_Drone.BP_MovingMotionSensor_Drone_C.BP_OnStateChanged
 // 0x0003 (0x0003 - 0x0000)
-struct BP_MovingMotionSensor_Drone_C_onHeistsStateChanged final
+struct BP_MovingMotionSensor_Drone_C_BP_OnStateChanged final
 {
 public:
-	EPD3HeistState                                OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZCameraState                               OldState_BP_OnStateChanged;                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZCameraState                               NewState_BP_OnStateChanged;                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_BP_OnStateChanged;                    // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_MovingMotionSensor_Drone_C_BP_OnStateChanged;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

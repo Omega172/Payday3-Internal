@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ABPL_FancyLamp_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_FancyLamp_C;
 
 SDK_NAMESPACE_END

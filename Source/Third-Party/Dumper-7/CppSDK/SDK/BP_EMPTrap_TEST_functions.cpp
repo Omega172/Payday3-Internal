@@ -16,41 +16,68 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_EMPTrap_TEST.BP_EMPTrap_TEST_C.BndEvt__BP_EMPTrap_TEST_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_EMPTrap_TEST.BP_EMPTrap_TEST_C.SetOffEmp
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_EMPTrap_TEST_C::BndEvt__BP_EMPTrap_TEST_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_EMPTrap_TEST_C::SetOffEmp()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetOffEmp", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EMPTrap_TEST_C", "BndEvt__BP_EMPTrap_TEST_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_EMPTrap_TEST_C_BndEvt__BP_EMPTrap_TEST_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
 
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+// Function BP_EMPTrap_TEST.BP_EMPTrap_TEST_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_EMPTrap_TEST_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_EMPTrap_TEST.BP_EMPTrap_TEST_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// int32                                   OldState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_EMPTrap_TEST_C::OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_EMPTrap_TEST_C_OnStateChanged Parms{};
+
+	Parms.OldState_OnStateChanged = OldState_OnStateChanged;
+	Parms.NewState_OnStateChanged = NewState_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_EMPTrap_TEST.BP_EMPTrap_TEST_C.EnableVisibility
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_EMPTrap_TEST.BP_EMPTrap_TEST_C.GetState
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32*                                  State                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_EMPTrap_TEST_C::EnableVisibility()
+void ABP_EMPTrap_TEST_C::GetState(int32* State)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetState", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EMPTrap_TEST_C", "EnableVisibility");
+	Params::BP_EMPTrap_TEST_C_GetState Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (State != nullptr)
+		*State = Parms.State;
 }
 
 
@@ -61,10 +88,8 @@ void ABP_EMPTrap_TEST_C::EnableVisibility()
 
 void ABP_EMPTrap_TEST_C::ExecuteUbergraph_BP_EMPTrap_TEST(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EMPTrap_TEST_C", "ExecuteUbergraph_BP_EMPTrap_TEST");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_EMPTrap_TEST_C", "ExecuteUbergraph_BP_EMPTrap_TEST", FuncInfo);
 
 	Params::BP_EMPTrap_TEST_C_ExecuteUbergraph_BP_EMPTrap_TEST Parms{};
 
@@ -74,76 +99,37 @@ void ABP_EMPTrap_TEST_C::ExecuteUbergraph_BP_EMPTrap_TEST(int32 EntryPoint)
 }
 
 
-// Function BP_EMPTrap_TEST.BP_EMPTrap_TEST_C.GetState
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32*                                  State_0                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_EMPTrap_TEST_C::GetState(int32* State_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EMPTrap_TEST_C", "GetState");
-
-	Params::BP_EMPTrap_TEST_C_GetState Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (State_0 != nullptr)
-		*State_0 = Parms.State_0;
-}
-
-
-// Function BP_EMPTrap_TEST.BP_EMPTrap_TEST_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_EMPTrap_TEST_C::OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EMPTrap_TEST_C", "OnStateChanged");
-
-	Params::BP_EMPTrap_TEST_C_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_EMPTrap_TEST.BP_EMPTrap_TEST_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_EMPTrap_TEST_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EMPTrap_TEST_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_EMPTrap_TEST.BP_EMPTrap_TEST_C.SetOffEmp
+// Function BP_EMPTrap_TEST.BP_EMPTrap_TEST_C.EnableVisibility
 // (Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_EMPTrap_TEST_C::SetOffEmp()
+void ABP_EMPTrap_TEST_C::EnableVisibility()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_EMPTrap_TEST_C", "SetOffEmp");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"EnableVisibility", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_EMPTrap_TEST.BP_EMPTrap_TEST_C.BndEvt__BP_EMPTrap_TEST_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_EMPTrap_TEST_C::BndEvt__BP_EMPTrap_TEST_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_EMPTrap_TEST_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature", FnName));
+
+	Params::BP_EMPTrap_TEST_C_BndEvt__BP_EMPTrap_TEST_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
+
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

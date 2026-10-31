@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_USBStick_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_USBStick_C;
 
 SDK_NAMESPACE_END

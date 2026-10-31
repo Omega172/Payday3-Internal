@@ -40,5 +40,6 @@ public:
 		return GetDefaultObjImpl<ABPL_BridgeLight_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_BridgeLight_C;
 
 SDK_NAMESPACE_END

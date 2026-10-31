@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "WBP_DynamicSign_Base_classes.hpp"
 #include "Engine_structs.hpp"
 #include "UMG_structs.hpp"
+#include "WBP_DynamicSign_Base_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -27,9 +27,9 @@ public:
 	class UTextBlock*                             secondaryTextBlock;                                // 0x0328(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_DynamicSign_Interior_01(int32 EntryPoint);
-	void PreConstruct(bool IsDesignTime);
 	void setText(const class FText& primary, const class FText& secondary);
+	void PreConstruct(bool IsDesignTime_PreConstruct);
+	void ExecuteUbergraph_WBP_DynamicSign_Interior_01(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<UWBP_DynamicSign_Interior_01_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_DynamicSign_Interior_01_C;
 
 SDK_NAMESPACE_END

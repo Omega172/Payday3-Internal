@@ -30,11 +30,11 @@ public:
 	bool                                          bUseTitleOnly;                                     // 0x0338(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetCompanyNameAndDescription(const class FText& InSecurityCompanyName);
-	void OnSecurityCompanyAssetStartedLoad();
-	void OnSecurityCompanyAssetLoaded();
-	void OnEmptySet();
 	void ExecuteUbergraph_WBP_ServerBrowser_SecurityCompanyDisplay(int32 EntryPoint);
+	void OnEmptySet();
+	void OnSecurityCompanyAssetLoaded();
+	void OnSecurityCompanyAssetStartedLoad();
+	void SetCompanyNameAndDescription(const class FText& InSecurityCompanyName);
 
 public:
 	static class UClass* StaticClass()

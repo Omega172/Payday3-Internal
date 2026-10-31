@@ -16,27 +16,15 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_InteractableServer.BP_InteractableServer_C.BndEvt__BP_InteractableServer_Interactable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZBaseInteractableComponent*    Interactable_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_InteractableServer.BP_InteractableServer_C.OnRep_RenderOutlines
+// (BlueprintCallable, BlueprintEvent)
 
-void ABP_InteractableServer_C::BndEvt__BP_InteractableServer_Interactable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable_0, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_InteractableServer_C::OnRep_RenderOutlines()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRep_RenderOutlines", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InteractableServer_C", "BndEvt__BP_InteractableServer_Interactable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature");
-
-	Params::BP_InteractableServer_C_BndEvt__BP_InteractableServer_Interactable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable_0 = Interactable_0;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
@@ -47,10 +35,8 @@ void ABP_InteractableServer_C::BndEvt__BP_InteractableServer_Interactable_K2Node
 
 void ABP_InteractableServer_C::ExecuteUbergraph_BP_InteractableServer(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InteractableServer_C", "ExecuteUbergraph_BP_InteractableServer");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_InteractableServer_C", "ExecuteUbergraph_BP_InteractableServer", FuncInfo);
 
 	Params::BP_InteractableServer_C_ExecuteUbergraph_BP_InteractableServer Parms{};
 
@@ -60,17 +46,25 @@ void ABP_InteractableServer_C::ExecuteUbergraph_BP_InteractableServer(int32 Entr
 }
 
 
-// Function BP_InteractableServer.BP_InteractableServer_C.OnRep_RenderOutlines
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_InteractableServer.BP_InteractableServer_C.BndEvt__BP_InteractableServer_Interactable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_InteractableServer_C::OnRep_RenderOutlines()
+void ABP_InteractableServer_C::BndEvt__BP_InteractableServer_Interactable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_InteractableServer_Interactable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_InteractableServer_C", "OnRep_RenderOutlines");
+	Params::BP_InteractableServer_C_BndEvt__BP_InteractableServer_Interactable_K2Node_ComponentBoundEvent_2_SBZOnInteraction__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

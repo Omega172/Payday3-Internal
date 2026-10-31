@@ -16,12 +16,12 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass BP_Forklift_01.BP_Forklift_01_C
-// 0x0010 (0x0930 - 0x0920)
+// 0x0010 (0x0A30 - 0x0A20)
 class ABP_Forklift_01_C final : public ASBZWheeledVehicle
 {
 public:
-	uint8                                         Pad_918[0x8];                                      // 0x0918(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	class UStaticMeshComponent*                   Crate_01_120_NoStrip;                              // 0x0920(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_A18[0x8];                                      // 0x0A18(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	class UStaticMeshComponent*                   Crate_01_120_NoStrip;                              // 0x0A20(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
 	static class UClass* StaticClass()
@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_Forklift_01_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Forklift_01_C;
 
 SDK_NAMESPACE_END

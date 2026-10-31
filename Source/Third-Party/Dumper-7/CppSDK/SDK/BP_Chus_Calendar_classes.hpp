@@ -38,10 +38,10 @@ public:
 	TArray<class FText>                           FlavorTexts;                                       // 0x03E8(0x0010)(Edit, BlueprintVisible)
 
 public:
-	void BndEvt__BP_Chus_Clipboard_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
+	void SetStateInt(int32 State);
+	void OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged);
 	void ExecuteUbergraph_BP_Chus_Calendar(int32 EntryPoint);
-	void OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics);
-	void SetStateInt(int32 State_0);
+	void BndEvt__BP_Chus_Clipboard_SBZInteractable_K2Node_ComponentBoundEvent_0_SBZOnInteractableStateChangedDelegate__DelegateSignature(const class USBZBaseInteractableComponent* InteractableComponent, bool bInNewState);
 
 public:
 	static class UClass* StaticClass()
@@ -57,5 +57,6 @@ public:
 		return GetDefaultObjImpl<ABP_Chus_Calendar_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Chus_Calendar_C;
 
 SDK_NAMESPACE_END

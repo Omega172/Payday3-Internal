@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_LA_Scripted_PanicButton_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_LA_Scripted_PanicButton_C;
 
 SDK_NAMESPACE_END

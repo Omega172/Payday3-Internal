@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_CutingModule_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_CutingModule_C;
 
 SDK_NAMESPACE_END

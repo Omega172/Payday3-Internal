@@ -16,6 +16,24 @@
 
 SDK_NAMESPACE_START
 
+// Function WBP_KeypadUVLightPossibleCode.WBP_KeypadUVLightPossibleCode_C.SetText
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_KeypadUVLightPossibleCode_C::SetText(int32 Value)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetText", FnName));
+
+	Params::WBP_KeypadUVLightPossibleCode_C_SetText Parms{};
+
+	Parms.Value = Value;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_KeypadUVLightPossibleCode.WBP_KeypadUVLightPossibleCode_C.SetKeypad
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -25,36 +43,14 @@ SDK_NAMESPACE_START
 
 void UWBP_KeypadUVLightPossibleCode_C::SetKeypad(int32 TrueCode, int32 RandomCode, bool ShowTrueCode)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_KeypadUVLightPossibleCode_C", "SetKeypad");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetKeypad", FnName));
 
 	Params::WBP_KeypadUVLightPossibleCode_C_SetKeypad Parms{};
 
 	Parms.TrueCode = TrueCode;
 	Parms.RandomCode = RandomCode;
 	Parms.ShowTrueCode = ShowTrueCode;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_KeypadUVLightPossibleCode.WBP_KeypadUVLightPossibleCode_C.SetText
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Value                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_KeypadUVLightPossibleCode_C::SetText(int32 Value)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_KeypadUVLightPossibleCode_C", "SetText");
-
-	Params::WBP_KeypadUVLightPossibleCode_C_SetText Parms{};
-
-	Parms.Value = Value;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

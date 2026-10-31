@@ -16,43 +16,47 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_container_Double_doorsBase.BP_container_Double_doorsBase_C.BndEvt__BP_container_Double_doors_SBZAcousticPortalConnector_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature
+// Function BP_container_Double_doorsBase.BP_container_Double_doorsBase_C.Open__UpdateFunc
 // (BlueprintEvent)
-// Parameters:
-// class UActorComponent*                  Component                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bReset                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_container_Double_doorsBase_C::BndEvt__BP_container_Double_doors_SBZAcousticPortalConnector_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature(class UActorComponent* Component, bool bReset)
+void ABP_container_Double_doorsBase_C::Open__UpdateFunc()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Open__UpdateFunc", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_container_Double_doorsBase_C", "BndEvt__BP_container_Double_doors_SBZAcousticPortalConnector_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature");
-
-	Params::BP_container_Double_doorsBase_C_BndEvt__BP_container_Double_doors_SBZAcousticPortalConnector_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature Parms{};
-
-	Parms.Component = Component;
-	Parms.bReset = bReset;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_container_Double_doorsBase.BP_container_Double_doorsBase_C.ExecuteUbergraph_BP_container_Double_doorsBase
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_container_Double_doorsBase.BP_container_Double_doorsBase_C.Open__FinishedFunc
+// (BlueprintEvent)
 
-void ABP_container_Double_doorsBase_C::ExecuteUbergraph_BP_container_Double_doorsBase(int32 EntryPoint)
+void ABP_container_Double_doorsBase_C::Open__FinishedFunc()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Open__FinishedFunc", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_container_Double_doorsBase_C", "ExecuteUbergraph_BP_container_Double_doorsBase");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_container_Double_doorsBase_C_ExecuteUbergraph_BP_container_Double_doorsBase Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+// Function BP_container_Double_doorsBase.BP_container_Double_doorsBase_C.OnStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZGateState                           NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsInitialStateChange                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_container_Double_doorsBase_C::OnStateChanged(ESBZGateState OldState, ESBZGateState NewState, bool bIsInitialStateChange)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
+
+	Params::BP_container_Double_doorsBase_C_OnStateChanged Parms{};
+
+	Parms.OldState = OldState;
+	Parms.NewState = NewState;
+	Parms.bIsInitialStateChange = bIsInitialStateChange;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -66,10 +70,8 @@ void ABP_container_Double_doorsBase_C::ExecuteUbergraph_BP_container_Double_door
 
 void ABP_container_Double_doorsBase_C::getDoorSimpleState(ESBZGateState state, EdoorStateSimple* simpleState)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_container_Double_doorsBase_C", "getDoorSimpleState");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"getDoorSimpleState", FnName));
 
 	Params::BP_container_Double_doorsBase_C_getDoorSimpleState Parms{};
 
@@ -82,55 +84,41 @@ void ABP_container_Double_doorsBase_C::getDoorSimpleState(ESBZGateState state, E
 }
 
 
-// Function BP_container_Double_doorsBase.BP_container_Double_doorsBase_C.OnStateChanged
-// (Event, Protected, BlueprintEvent)
+// Function BP_container_Double_doorsBase.BP_container_Double_doorsBase_C.ExecuteUbergraph_BP_container_Double_doorsBase
+// (Final, UbergraphFunction)
 // Parameters:
-// ESBZGateState                           OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZGateState                           NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsInitialStateChange                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_container_Double_doorsBase_C::OnStateChanged(ESBZGateState OldState, ESBZGateState NewState, bool bIsInitialStateChange)
+void ABP_container_Double_doorsBase_C::ExecuteUbergraph_BP_container_Double_doorsBase(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_container_Double_doorsBase_C", "ExecuteUbergraph_BP_container_Double_doorsBase", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_container_Double_doorsBase_C", "OnStateChanged");
+	Params::BP_container_Double_doorsBase_C_ExecuteUbergraph_BP_container_Double_doorsBase Parms{};
 
-	Params::BP_container_Double_doorsBase_C_OnStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bIsInitialStateChange = bIsInitialStateChange;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_container_Double_doorsBase.BP_container_Double_doorsBase_C.Open__FinishedFunc
+// Function BP_container_Double_doorsBase.BP_container_Double_doorsBase_C.BndEvt__BP_container_Double_doors_SBZAcousticPortalConnector_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature
 // (BlueprintEvent)
+// Parameters:
+// class UActorComponent*                  Component                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bReset                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_container_Double_doorsBase_C::Open__FinishedFunc()
+void ABP_container_Double_doorsBase_C::BndEvt__BP_container_Double_doors_SBZAcousticPortalConnector_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature(class UActorComponent* Component, bool bReset)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_container_Double_doors_SBZAcousticPortalConnector_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_container_Double_doorsBase_C", "Open__FinishedFunc");
+	Params::BP_container_Double_doorsBase_C_BndEvt__BP_container_Double_doors_SBZAcousticPortalConnector_K2Node_ComponentBoundEvent_0_ActorComponentActivatedSignature__DelegateSignature Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Parms.Component = Component;
+	Parms.bReset = bReset;
 
-
-// Function BP_container_Double_doorsBase.BP_container_Double_doorsBase_C.Open__UpdateFunc
-// (BlueprintEvent)
-
-void ABP_container_Double_doorsBase_C::Open__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_container_Double_doorsBase_C", "Open__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

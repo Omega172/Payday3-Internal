@@ -16,55 +16,31 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_STO_ControlScreenWidget.WBP_STO_ControlScreenWidget_C.ExecuteUbergraph_WBP_STO_ControlScreenWidget
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_STO_ControlScreenWidget_C::ExecuteUbergraph_WBP_STO_ControlScreenWidget(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ControlScreenWidget_C", "ExecuteUbergraph_WBP_STO_ControlScreenWidget");
-
-	Params::WBP_STO_ControlScreenWidget_C_ExecuteUbergraph_WBP_STO_ControlScreenWidget Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_STO_ControlScreenWidget.WBP_STO_ControlScreenWidget_C.setActive
+// Function WBP_STO_ControlScreenWidget.WBP_STO_ControlScreenWidget_C.setIdle
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_STO_ControlScreenWidget_C::setActive()
+void UWBP_STO_ControlScreenWidget_C::setIdle()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ControlScreenWidget_C", "setActive");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setIdle", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function WBP_STO_ControlScreenWidget.WBP_STO_ControlScreenWidget_C.setBackgroundColor
+// Function WBP_STO_ControlScreenWidget.WBP_STO_ControlScreenWidget_C.setCodeText
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// ESBZModuleActorState                    state                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_STO_ControlScreenWidget_C::setBackgroundColor(ESBZModuleActorState state)
+void UWBP_STO_ControlScreenWidget_C::setCodeText(const class FText& InText)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setCodeText", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ControlScreenWidget_C", "setBackgroundColor");
+	Params::WBP_STO_ControlScreenWidget_C_setCodeText Parms{};
 
-	Params::WBP_STO_ControlScreenWidget_C_setBackgroundColor Parms{};
-
-	Parms.state = state;
+	Parms.InText = std::move(InText);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -77,10 +53,8 @@ void UWBP_STO_ControlScreenWidget_C::setBackgroundColor(ESBZModuleActorState sta
 
 void UWBP_STO_ControlScreenWidget_C::setCircuitBreakerText(const class FText& InText)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ControlScreenWidget_C", "setCircuitBreakerText");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setCircuitBreakerText", FnName));
 
 	Params::WBP_STO_ControlScreenWidget_C_setCircuitBreakerText Parms{};
 
@@ -90,37 +64,51 @@ void UWBP_STO_ControlScreenWidget_C::setCircuitBreakerText(const class FText& In
 }
 
 
-// Function WBP_STO_ControlScreenWidget.WBP_STO_ControlScreenWidget_C.setCodeText
+// Function WBP_STO_ControlScreenWidget.WBP_STO_ControlScreenWidget_C.setBackgroundColor
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
+// ESBZModuleActorState                    state                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_STO_ControlScreenWidget_C::setCodeText(const class FText& InText)
+void UWBP_STO_ControlScreenWidget_C::setBackgroundColor(ESBZModuleActorState state)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setBackgroundColor", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ControlScreenWidget_C", "setCodeText");
+	Params::WBP_STO_ControlScreenWidget_C_setBackgroundColor Parms{};
 
-	Params::WBP_STO_ControlScreenWidget_C_setCodeText Parms{};
-
-	Parms.InText = std::move(InText);
+	Parms.state = state;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_STO_ControlScreenWidget.WBP_STO_ControlScreenWidget_C.setIdle
+// Function WBP_STO_ControlScreenWidget.WBP_STO_ControlScreenWidget_C.setActive
 // (BlueprintCallable, BlueprintEvent)
 
-void UWBP_STO_ControlScreenWidget_C::setIdle()
+void UWBP_STO_ControlScreenWidget_C::setActive()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_STO_ControlScreenWidget_C", "setIdle");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setActive", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_STO_ControlScreenWidget.WBP_STO_ControlScreenWidget_C.ExecuteUbergraph_WBP_STO_ControlScreenWidget
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_STO_ControlScreenWidget_C::ExecuteUbergraph_WBP_STO_ControlScreenWidget(int32 EntryPoint)
+{
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_STO_ControlScreenWidget_C", "ExecuteUbergraph_WBP_STO_ControlScreenWidget", FuncInfo);
+
+	Params::WBP_STO_ControlScreenWidget_C_ExecuteUbergraph_WBP_STO_ControlScreenWidget Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

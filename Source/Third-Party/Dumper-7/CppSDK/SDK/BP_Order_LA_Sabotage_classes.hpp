@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UBP_Order_LA_Sabotage_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_Order_LA_Sabotage_C;
 
 SDK_NAMESPACE_END

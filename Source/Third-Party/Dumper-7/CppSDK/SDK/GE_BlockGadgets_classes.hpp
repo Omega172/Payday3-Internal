@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UGE_BlockGadgets_C>();
 	}
 };
+DUMPER7_ASSERTS_UGE_BlockGadgets_C;
 
 SDK_NAMESPACE_END

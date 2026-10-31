@@ -26,8 +26,8 @@ public:
 	class USBZCosmeticDestructionComponent*       SBZCosmeticDestruction;                            // 0x0360(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__BP_PlantPot_01_SmallDestruction_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 	void ExecuteUbergraph_BPCactusPot_01_B_SmallDestruction(int32 EntryPoint);
+	void BndEvt__BP_PlantPot_01_SmallDestruction_SBZCosmeticDestruction_K2Node_ComponentBoundEvent_0_SBZCosmeticDestructionComponenteSignature__DelegateSignature(ESBZCosmeticDestructionType Type, const struct FSBZCosmeticDestructionContext& HitContext);
 
 public:
 	static class UClass* StaticClass()
@@ -43,5 +43,6 @@ public:
 		return GetDefaultObjImpl<ABPCactusPot_01_B_SmallDestruction_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPCactusPot_01_B_SmallDestruction_C;
 
 SDK_NAMESPACE_END

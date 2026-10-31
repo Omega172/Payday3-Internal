@@ -22,5 +22,6 @@ public:
 	class FText                                   Body_6_ED8CEF384DA1137A24E36285D4B8E764;           // 0x0010(0x0010)(Edit, BlueprintVisible)
 	class FText                                   Greetings_10_214437BC4E50314B1CBA50BD855232C2;     // 0x0020(0x0010)(Edit, BlueprintVisible)
 };
+DUMPER7_ASSERTS_FS_EmailStructure;
 
 SDK_NAMESPACE_END

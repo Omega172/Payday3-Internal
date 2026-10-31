@@ -16,20 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function G_FirstPlayable_LivingWorld.G_FirstPlayable_LivingWorld_C.BlackScreenStarted
-// (Event, Public, BlueprintEvent)
-
-void AG_FirstPlayable_LivingWorld_C::BlackScreenStarted()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_FirstPlayable_LivingWorld_C", "BlackScreenStarted");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function G_FirstPlayable_LivingWorld.G_FirstPlayable_LivingWorld_C.ExecuteUbergraph_G_FirstPlayable_LivingWorld
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -37,16 +23,26 @@ void AG_FirstPlayable_LivingWorld_C::BlackScreenStarted()
 
 void AG_FirstPlayable_LivingWorld_C::ExecuteUbergraph_G_FirstPlayable_LivingWorld(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("G_FirstPlayable_LivingWorld_C", "ExecuteUbergraph_G_FirstPlayable_LivingWorld");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "G_FirstPlayable_LivingWorld_C", "ExecuteUbergraph_G_FirstPlayable_LivingWorld", FuncInfo);
 
 	Params::G_FirstPlayable_LivingWorld_C_ExecuteUbergraph_G_FirstPlayable_LivingWorld Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function G_FirstPlayable_LivingWorld.G_FirstPlayable_LivingWorld_C.BlackScreenStarted
+// (Event, Public, BlueprintEvent)
+
+void AG_FirstPlayable_LivingWorld_C::BlackScreenStarted()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BlackScreenStarted", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

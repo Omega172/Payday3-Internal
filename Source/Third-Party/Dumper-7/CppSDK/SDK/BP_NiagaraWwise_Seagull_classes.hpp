@@ -24,10 +24,10 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0378(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteUbergraph_BP_NiagaraWwise_Seagull(int32 EntryPoint);
-	void ReceiveBeginPlay();
+	void ReceiveEndPlay(EEndPlayReason EndPlayReason_ReceiveEndPlay);
 	void ReceiveDestroyed();
-	void ReceiveEndPlay(EEndPlayReason EndPlayReason);
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_BP_NiagaraWwise_Seagull(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -43,5 +43,6 @@ public:
 		return GetDefaultObjImpl<ABP_NiagaraWwise_Seagull_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_NiagaraWwise_Seagull_C;
 
 SDK_NAMESPACE_END

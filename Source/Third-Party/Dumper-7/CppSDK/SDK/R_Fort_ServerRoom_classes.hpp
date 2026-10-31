@@ -29,13 +29,13 @@ public:
 	class ABP_FOR_USBDrive_C*                     BP_FOR_USBDrive_2_ExecuteUbergraph_R_Fort_ServerRoom_RefProperty; // 0x03F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__R_Fort_ServerRoom_BP_FOR_USBDrive_2_K2Node_ActorBoundEvent_3_onObjectPlaced__DelegateSignature();
-	void BndEvt__R_Fort_ServerRoom_BP_FOR_USBDrive_2_K2Node_ActorBoundEvent_4_onObjectPickedUp__DelegateSignature();
-	void BndEvt__R_Fort_ServerRoom_SBZPlayerTriggerVolume_PlayerInsideServerRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
-	void ExecuteUbergraph_R_Fort_ServerRoom(int32 EntryPoint);
-	void R_ServerRoom_ActivateObj();
-	void R_ServerRoom_ActivateTakeUSB();
 	void R_ServerRoom_DeactivateObj();
+	void R_ServerRoom_ActivateTakeUSB();
+	void R_ServerRoom_ActivateObj();
+	void ExecuteUbergraph_R_Fort_ServerRoom(int32 EntryPoint);
+	void BndEvt__R_Fort_ServerRoom_SBZPlayerTriggerVolume_PlayerInsideServerRoom_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn);
+	void BndEvt__R_Fort_ServerRoom_BP_FOR_USBDrive_2_K2Node_ActorBoundEvent_4_onObjectPickedUp__DelegateSignature();
+	void BndEvt__R_Fort_ServerRoom_BP_FOR_USBDrive_2_K2Node_ActorBoundEvent_3_onObjectPlaced__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()
@@ -51,5 +51,6 @@ public:
 		return GetDefaultObjImpl<AR_Fort_ServerRoom_C>();
 	}
 };
+DUMPER7_ASSERTS_AR_Fort_ServerRoom_C;
 
 SDK_NAMESPACE_END

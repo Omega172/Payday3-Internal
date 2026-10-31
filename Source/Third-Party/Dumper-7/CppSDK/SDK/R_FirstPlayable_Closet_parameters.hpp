@@ -16,69 +16,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.BndEvt__BP_LanceFuelTank1_K2Node_ActorBoundEvent_1_OnAckCompleteInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_FirstPlayable_Closet_C_BndEvt__BP_LanceFuelTank1_K2Node_ActorBoundEvent_1_OnAckCompleteInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.BndEvt__BP_LanceFuelTank2_K2Node_ActorBoundEvent_2_OnAckCompleteInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_FirstPlayable_Closet_C_BndEvt__BP_LanceFuelTank2_K2Node_ActorBoundEvent_2_OnAckCompleteInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.BndEvt__BP_LanceFuelTank3_K2Node_ActorBoundEvent_3_OnAckCompleteInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_FirstPlayable_Closet_C_BndEvt__BP_LanceFuelTank3_K2Node_ActorBoundEvent_3_OnAckCompleteInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.BndEvt__BP_LanceFuelTank4_K2Node_ActorBoundEvent_4_OnAckCompleteInteraction__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_FirstPlayable_Closet_C_BndEvt__BP_LanceFuelTank4_K2Node_ActorBoundEvent_4_OnAckCompleteInteraction__DelegateSignature final
-{
-public:
-	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.BndEvt__R_FirstPlayable_Closet_BP_Locker_02_2_K2Node_ActorBoundEvent_0_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct R_FirstPlayable_Closet_C_BndEvt__R_FirstPlayable_Closet_BP_Locker_02_2_K2Node_ActorBoundEvent_0_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.BndEvt__R_FirstPlayable_Closet_BP_Locker_3_K2Node_ActorBoundEvent_6_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct R_FirstPlayable_Closet_C_BndEvt__R_FirstPlayable_Closet_BP_Locker_3_K2Node_ActorBoundEvent_6_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.BndEvt__R_FirstPlayable_Closet_BP_Locker_5_K2Node_ActorBoundEvent_7_SBZGateStateChangedDelegate__DelegateSignature
-// 0x0002 (0x0002 - 0x0000)
-struct R_FirstPlayable_Closet_C_BndEvt__R_FirstPlayable_Closet_BP_Locker_5_K2Node_ActorBoundEvent_7_SBZGateStateChangedDelegate__DelegateSignature final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.ExecuteUbergraph_R_FirstPlayable_Closet
 // 0x00D0 (0x00D0 - 0x0000)
 struct R_FirstPlayable_Closet_C_ExecuteUbergraph_R_FirstPlayable_Closet final
@@ -122,6 +59,77 @@ public:
 	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_1;               // 0x00B0(0x0010)(ReferenceParm)
 	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_1;          // 0x00C0(0x0010)(ReferenceParm)
 };
+DUMPER7_ASSERTS_R_FirstPlayable_Closet_C_ExecuteUbergraph_R_FirstPlayable_Closet;
+
+// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.BndEvt__R_FirstPlayable_Closet_BP_Locker_5_K2Node_ActorBoundEvent_7_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct R_FirstPlayable_Closet_C_BndEvt__R_FirstPlayable_Closet_BP_Locker_5_K2Node_ActorBoundEvent_7_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_FirstPlayable_Closet_C_BndEvt__R_FirstPlayable_Closet_BP_Locker_5_K2Node_ActorBoundEvent_7_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.BndEvt__R_FirstPlayable_Closet_BP_Locker_3_K2Node_ActorBoundEvent_6_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct R_FirstPlayable_Closet_C_BndEvt__R_FirstPlayable_Closet_BP_Locker_3_K2Node_ActorBoundEvent_6_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_FirstPlayable_Closet_C_BndEvt__R_FirstPlayable_Closet_BP_Locker_3_K2Node_ActorBoundEvent_6_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.BndEvt__R_FirstPlayable_Closet_BP_Locker_02_2_K2Node_ActorBoundEvent_0_SBZGateStateChangedDelegate__DelegateSignature
+// 0x0002 (0x0002 - 0x0000)
+struct R_FirstPlayable_Closet_C_BndEvt__R_FirstPlayable_Closet_BP_Locker_02_2_K2Node_ActorBoundEvent_0_SBZGateStateChangedDelegate__DelegateSignature final
+{
+public:
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 State;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_FirstPlayable_Closet_C_BndEvt__R_FirstPlayable_Closet_BP_Locker_02_2_K2Node_ActorBoundEvent_0_SBZGateStateChangedDelegate__DelegateSignature;
+
+// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.BndEvt__BP_LanceFuelTank4_K2Node_ActorBoundEvent_4_OnAckCompleteInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_FirstPlayable_Closet_C_BndEvt__BP_LanceFuelTank4_K2Node_ActorBoundEvent_4_OnAckCompleteInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_FirstPlayable_Closet_C_BndEvt__BP_LanceFuelTank4_K2Node_ActorBoundEvent_4_OnAckCompleteInteraction__DelegateSignature;
+
+// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.BndEvt__BP_LanceFuelTank3_K2Node_ActorBoundEvent_3_OnAckCompleteInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_FirstPlayable_Closet_C_BndEvt__BP_LanceFuelTank3_K2Node_ActorBoundEvent_3_OnAckCompleteInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_FirstPlayable_Closet_C_BndEvt__BP_LanceFuelTank3_K2Node_ActorBoundEvent_3_OnAckCompleteInteraction__DelegateSignature;
+
+// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.BndEvt__BP_LanceFuelTank2_K2Node_ActorBoundEvent_2_OnAckCompleteInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_FirstPlayable_Closet_C_BndEvt__BP_LanceFuelTank2_K2Node_ActorBoundEvent_2_OnAckCompleteInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_FirstPlayable_Closet_C_BndEvt__BP_LanceFuelTank2_K2Node_ActorBoundEvent_2_OnAckCompleteInteraction__DelegateSignature;
+
+// Function R_FirstPlayable_Closet.R_FirstPlayable_Closet_C.BndEvt__BP_LanceFuelTank1_K2Node_ActorBoundEvent_1_OnAckCompleteInteraction__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_FirstPlayable_Closet_C_BndEvt__BP_LanceFuelTank1_K2Node_ActorBoundEvent_1_OnAckCompleteInteraction__DelegateSignature final
+{
+public:
+	class USBZBaseInteractableComponent*          Interactable;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class USBZInteractorComponent*                Interactor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_FirstPlayable_Closet_C_BndEvt__BP_LanceFuelTank1_K2Node_ActorBoundEvent_1_OnAckCompleteInteraction__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

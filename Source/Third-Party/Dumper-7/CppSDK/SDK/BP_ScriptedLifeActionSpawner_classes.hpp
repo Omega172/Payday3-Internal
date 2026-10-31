@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_ScriptedLifeActionSpawner_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ScriptedLifeActionSpawner_C;
 
 SDK_NAMESPACE_END

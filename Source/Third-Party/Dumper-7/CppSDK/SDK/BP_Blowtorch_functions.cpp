@@ -16,25 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Blowtorch.BP_Blowtorch_C.BndEvt__BP_Blowtorch_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
-// (BlueprintEvent)
+// Function BP_Blowtorch.BP_Blowtorch_C.setInteraction
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bEnabled                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Blowtorch_C::BndEvt__BP_Blowtorch_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
+void ABP_Blowtorch_C::setInteraction(bool bEnabled)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"setInteraction", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Blowtorch_C", "BndEvt__BP_Blowtorch_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature");
+	Params::BP_Blowtorch_C_setInteraction Parms{};
 
-	Params::BP_Blowtorch_C_BndEvt__BP_Blowtorch_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
-
-	Parms.Interactable = Interactable;
-	Parms.Interactor = Interactor;
-	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
+	Parms.bEnabled = bEnabled;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -47,10 +41,8 @@ void ABP_Blowtorch_C::BndEvt__BP_Blowtorch_SBZInteractable_K2Node_ComponentBound
 
 void ABP_Blowtorch_C::ExecuteUbergraph_BP_Blowtorch(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Blowtorch_C", "ExecuteUbergraph_BP_Blowtorch");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Blowtorch_C", "ExecuteUbergraph_BP_Blowtorch", FuncInfo);
 
 	Params::BP_Blowtorch_C_ExecuteUbergraph_BP_Blowtorch Parms{};
 
@@ -60,21 +52,23 @@ void ABP_Blowtorch_C::ExecuteUbergraph_BP_Blowtorch(int32 EntryPoint)
 }
 
 
-// Function BP_Blowtorch.BP_Blowtorch_C.setInteraction
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_Blowtorch.BP_Blowtorch_C.BndEvt__BP_Blowtorch_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// bool                                    bEnabled                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USBZBaseInteractableComponent*    Interactable                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class USBZInteractorComponent*          Interactor                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsLocallyControlledInteractor                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_Blowtorch_C::setInteraction(bool bEnabled)
+void ABP_Blowtorch_C::BndEvt__BP_Blowtorch_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature(class USBZBaseInteractableComponent* Interactable, class USBZInteractorComponent* Interactor, bool bIsLocallyControlledInteractor)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__BP_Blowtorch_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Blowtorch_C", "setInteraction");
+	Params::BP_Blowtorch_C_BndEvt__BP_Blowtorch_SBZInteractable_K2Node_ComponentBoundEvent_1_SBZOnInteraction__DelegateSignature Parms{};
 
-	Params::BP_Blowtorch_C_setInteraction Parms{};
-
-	Parms.bEnabled = bEnabled;
+	Parms.Interactable = Interactable;
+	Parms.Interactor = Interactor;
+	Parms.bIsLocallyControlledInteractor = bIsLocallyControlledInteractor;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

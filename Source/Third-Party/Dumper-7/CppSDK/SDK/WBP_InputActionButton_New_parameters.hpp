@@ -18,37 +18,23 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_InputActionButton_New.WBP_InputActionButton_New_C.SetActionEnabled
-// 0x0006 (0x0006 - 0x0000)
-struct WBP_InputActionButton_New_C_SetActionEnabled final
-{
-public:
-	bool                                          bIsEnabled;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_InputActionButton_New_C_SetActionEnabled;
-
-// Function WBP_InputActionButton_New.WBP_InputActionButton_New_C.Set Text
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_InputActionButton_New_C_Set_Text final
-{
-public:
-	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-DUMPER7_ASSERTS_WBP_InputActionButton_New_C_Set_Text;
-
-// Function WBP_InputActionButton_New.WBP_InputActionButton_New_C.PreConstruct
+// Function WBP_InputActionButton_New.WBP_InputActionButton_New_C.ButtonFocusedChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_InputActionButton_New_C_PreConstruct final
+struct WBP_InputActionButton_New_C_ButtonFocusedChanged final
 {
 public:
-	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_InputActionButton_New_C_PreConstruct;
+DUMPER7_ASSERTS_WBP_InputActionButton_New_C_ButtonFocusedChanged;
+
+// Function WBP_InputActionButton_New.WBP_InputActionButton_New_C.ButtonHoveredChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_InputActionButton_New_C_ButtonHoveredChanged final
+{
+public:
+	bool                                          bInIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InputActionButton_New_C_ButtonHoveredChanged;
 
 // Function WBP_InputActionButton_New.WBP_InputActionButton_New_C.ExecuteUbergraph_WBP_InputActionButton_New
 // 0x00A0 (0x00A0 - 0x0000)
@@ -92,23 +78,37 @@ public:
 };
 DUMPER7_ASSERTS_WBP_InputActionButton_New_C_ExecuteUbergraph_WBP_InputActionButton_New;
 
-// Function WBP_InputActionButton_New.WBP_InputActionButton_New_C.ButtonHoveredChanged
+// Function WBP_InputActionButton_New.WBP_InputActionButton_New_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_InputActionButton_New_C_ButtonHoveredChanged final
+struct WBP_InputActionButton_New_C_PreConstruct final
 {
 public:
-	bool                                          bInIsHovered_ButtonHoveredChanged;                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_InputActionButton_New_C_ButtonHoveredChanged;
+DUMPER7_ASSERTS_WBP_InputActionButton_New_C_PreConstruct;
 
-// Function WBP_InputActionButton_New.WBP_InputActionButton_New_C.ButtonFocusedChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_InputActionButton_New_C_ButtonFocusedChanged final
+// Function WBP_InputActionButton_New.WBP_InputActionButton_New_C.Set Text
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_InputActionButton_New_C_Set_Text final
 {
 public:
-	bool                                          bInHasFocus_ButtonFocusedChanged;                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   InText;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-DUMPER7_ASSERTS_WBP_InputActionButton_New_C_ButtonFocusedChanged;
+DUMPER7_ASSERTS_WBP_InputActionButton_New_C_Set_Text;
+
+// Function WBP_InputActionButton_New.WBP_InputActionButton_New_C.SetActionEnabled
+// 0x0006 (0x0006 - 0x0000)
+struct WBP_InputActionButton_New_C_SetActionEnabled final
+{
+public:
+	bool                                          bIsEnabled_0;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_InputActionButton_New_C_SetActionEnabled;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

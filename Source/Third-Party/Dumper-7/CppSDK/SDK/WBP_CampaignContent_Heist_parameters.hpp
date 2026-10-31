@@ -18,82 +18,52 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_CampaignContent_Heist.WBP_CampaignContent_Heist_C.SetEntryState
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CampaignContent_Heist_C_SetEntryState final
-{
-public:
-	ESBZCampaignEntryState                        NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CampaignContent_Heist_C_SetEntryState;
-
-// Function WBP_CampaignContent_Heist.WBP_CampaignContent_Heist_C.SetCampaignData
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignContent_Heist_C_SetCampaignData final
-{
-public:
-	const class USBZCampaignBaseEntryData*        Entry;                                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CampaignContent_Heist_C_SetCampaignData;
-
-// Function WBP_CampaignContent_Heist.WBP_CampaignContent_Heist_C.OptionSelected_Event
+// Function WBP_CampaignContent_Heist.WBP_CampaignContent_Heist_C.BndEvt__WBP_CampaignContent_Heist_Selector_Difficulty_K2Node_ComponentBoundEvent_1_OptionSelected__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)
-struct WBP_CampaignContent_Heist_C_OptionSelected_Event final
+struct WBP_CampaignContent_Heist_C_BndEvt__WBP_CampaignContent_Heist_Selector_Difficulty_K2Node_ComponentBoundEvent_1_OptionSelected__DelegateSignature final
 {
 public:
 	int32                                         SelectionIndex;                                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CampaignContent_Heist_C_OptionSelected_Event;
+DUMPER7_ASSERTS_WBP_CampaignContent_Heist_C_BndEvt__WBP_CampaignContent_Heist_Selector_Difficulty_K2Node_ComponentBoundEvent_1_OptionSelected__DelegateSignature;
 
-// Function WBP_CampaignContent_Heist.WBP_CampaignContent_Heist_C.OnLoaded_D955675E4028E52F9C85458F3BCD1B38
+// Function WBP_CampaignContent_Heist.WBP_CampaignContent_Heist_C.BndEvt__WBP_CampaignContent_Heist_Selector_Lobby_K2Node_ComponentBoundEvent_2_OptionSelected__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_CampaignContent_Heist_C_BndEvt__WBP_CampaignContent_Heist_Selector_Lobby_K2Node_ComponentBoundEvent_2_OptionSelected__DelegateSignature final
+{
+public:
+	int32                                         SelectionIndex;                                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CampaignContent_Heist_C_BndEvt__WBP_CampaignContent_Heist_Selector_Lobby_K2Node_ComponentBoundEvent_2_OptionSelected__DelegateSignature;
+
+// Function WBP_CampaignContent_Heist.WBP_CampaignContent_Heist_C.BndEvt__WBP_CampaignContent_Heist_WBP_InputActionButton_New_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignContent_Heist_C_OnLoaded_D955675E4028E52F9C85458F3BCD1B38 final
+struct WBP_CampaignContent_Heist_C_BndEvt__WBP_CampaignContent_Heist_WBP_InputActionButton_New_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature final
 {
 public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CampaignContent_Heist_C_OnLoaded_D955675E4028E52F9C85458F3BCD1B38;
+DUMPER7_ASSERTS_WBP_CampaignContent_Heist_C_BndEvt__WBP_CampaignContent_Heist_WBP_InputActionButton_New_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature;
 
-// Function WBP_CampaignContent_Heist.WBP_CampaignContent_Heist_C.OnLoaded_D55E807F4C78E9C3ADC767B18A532C82
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignContent_Heist_C_OnLoaded_D55E807F4C78E9C3ADC767B18A532C82 final
+// Function WBP_CampaignContent_Heist.WBP_CampaignContent_Heist_C.CanStartLobby
+// 0x0028 (0x0028 - 0x0000)
+struct WBP_CampaignContent_Heist_C_CanStartLobby final
 {
 public:
-	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZGameStateMachine*                   CallFunc_GetGameStateMachine_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsMatchmakingInProgress_ReturnValue;      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsPartyHost_ReturnValue;                  // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_13[0x5];                                       // 0x0013(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZPartyManager*                       CallFunc_GetPartyManager_ReturnValue;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetPartyPlayersNumber_ReturnValue;        // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CampaignContent_Heist_C_OnLoaded_D55E807F4C78E9C3ADC767B18A532C82;
-
-// Function WBP_CampaignContent_Heist.WBP_CampaignContent_Heist_C.GetModifiers
-// 0x0110 (0x0110 - 0x0000)
-struct WBP_CampaignContent_Heist_C_GetModifiers final
-{
-public:
-	class UPD3HeistDataAsset*                     HeistData;                                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	struct FSBZDifficultyConfiguration            DifficultyConfig;                                  // 0x0008(0x0060)(Parm, OutParm)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZGameRecordsManager*                 CallFunc_Get_ReturnValue;                          // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FSBZDifficultyConfiguration>    CallFunc_GetDifficultyConfiguration_ReturnValue;   // 0x0080(0x0010)(ReferenceParm)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZDifficultyConfiguration            CallFunc_Array_Get_Item;                           // 0x0098(0x0060)()
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPD3HeistDataAsset*                     CallFunc_GetHeistDataFromLevelShortName_ReturnValue; // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CampaignContent_Heist_C_GetModifiers;
-
-// Function WBP_CampaignContent_Heist.WBP_CampaignContent_Heist_C.GetEntryState
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_CampaignContent_Heist_C_GetEntryState final
-{
-public:
-	ESBZCampaignEntryState                        ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_CampaignContent_Heist_C_GetEntryState;
+DUMPER7_ASSERTS_WBP_CampaignContent_Heist_C_CanStartLobby;
 
 // Function WBP_CampaignContent_Heist.WBP_CampaignContent_Heist_C.ExecuteUbergraph_WBP_CampaignContent_Heist
 // 0x0350 (0x0350 - 0x0000)
@@ -238,52 +208,82 @@ public:
 };
 DUMPER7_ASSERTS_WBP_CampaignContent_Heist_C_ExecuteUbergraph_WBP_CampaignContent_Heist;
 
-// Function WBP_CampaignContent_Heist.WBP_CampaignContent_Heist_C.CanStartLobby
-// 0x0028 (0x0028 - 0x0000)
-struct WBP_CampaignContent_Heist_C_CanStartLobby final
+// Function WBP_CampaignContent_Heist.WBP_CampaignContent_Heist_C.GetEntryState
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CampaignContent_Heist_C_GetEntryState final
 {
 public:
-	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZGameStateMachine*                   CallFunc_GetGameStateMachine_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsMatchmakingInProgress_ReturnValue;      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsPartyHost_ReturnValue;                  // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_13[0x5];                                       // 0x0013(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZPartyManager*                       CallFunc_GetPartyManager_ReturnValue;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_GetPartyPlayersNumber_ReturnValue;        // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZCampaignEntryState                        ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CampaignContent_Heist_C_CanStartLobby;
+DUMPER7_ASSERTS_WBP_CampaignContent_Heist_C_GetEntryState;
 
-// Function WBP_CampaignContent_Heist.WBP_CampaignContent_Heist_C.BndEvt__WBP_CampaignContent_Heist_WBP_InputActionButton_New_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature
+// Function WBP_CampaignContent_Heist.WBP_CampaignContent_Heist_C.GetModifiers
+// 0x0110 (0x0110 - 0x0000)
+struct WBP_CampaignContent_Heist_C_GetModifiers final
+{
+public:
+	class UPD3HeistDataAsset*                     HeistData_0;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FSBZDifficultyConfiguration            DifficultyConfig;                                  // 0x0008(0x0060)(Parm, OutParm)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZGameRecordsManager*                 CallFunc_Get_ReturnValue;                          // 0x0078(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FSBZDifficultyConfiguration>    CallFunc_GetDifficultyConfiguration_ReturnValue;   // 0x0080(0x0010)(ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0090(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZDifficultyConfiguration            CallFunc_Array_Get_Item;                           // 0x0098(0x0060)()
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPD3HeistDataAsset*                     CallFunc_GetHeistDataFromLevelShortName_ReturnValue; // 0x0100(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CampaignContent_Heist_C_GetModifiers;
+
+// Function WBP_CampaignContent_Heist.WBP_CampaignContent_Heist_C.OnLoaded_D55E807F4C78E9C3ADC767B18A532C82
 // 0x0008 (0x0008 - 0x0000)
-struct WBP_CampaignContent_Heist_C_BndEvt__WBP_CampaignContent_Heist_WBP_InputActionButton_New_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature final
+struct WBP_CampaignContent_Heist_C_OnLoaded_D55E807F4C78E9C3ADC767B18A532C82 final
 {
 public:
-	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CampaignContent_Heist_C_BndEvt__WBP_CampaignContent_Heist_WBP_InputActionButton_New_K2Node_ComponentBoundEvent_0_OnMenuButtonSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_CampaignContent_Heist_C_OnLoaded_D55E807F4C78E9C3ADC767B18A532C82;
 
-// Function WBP_CampaignContent_Heist.WBP_CampaignContent_Heist_C.BndEvt__WBP_CampaignContent_Heist_Selector_Lobby_K2Node_ComponentBoundEvent_2_OptionSelected__DelegateSignature
+// Function WBP_CampaignContent_Heist.WBP_CampaignContent_Heist_C.OnLoaded_D955675E4028E52F9C85458F3BCD1B38
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignContent_Heist_C_OnLoaded_D955675E4028E52F9C85458F3BCD1B38 final
+{
+public:
+	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CampaignContent_Heist_C_OnLoaded_D955675E4028E52F9C85458F3BCD1B38;
+
+// Function WBP_CampaignContent_Heist.WBP_CampaignContent_Heist_C.OptionSelected_Event
 // 0x0004 (0x0004 - 0x0000)
-struct WBP_CampaignContent_Heist_C_BndEvt__WBP_CampaignContent_Heist_Selector_Lobby_K2Node_ComponentBoundEvent_2_OptionSelected__DelegateSignature final
+struct WBP_CampaignContent_Heist_C_OptionSelected_Event final
 {
 public:
 	int32                                         SelectionIndex;                                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CampaignContent_Heist_C_BndEvt__WBP_CampaignContent_Heist_Selector_Lobby_K2Node_ComponentBoundEvent_2_OptionSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_CampaignContent_Heist_C_OptionSelected_Event;
 
-// Function WBP_CampaignContent_Heist.WBP_CampaignContent_Heist_C.BndEvt__WBP_CampaignContent_Heist_Selector_Difficulty_K2Node_ComponentBoundEvent_1_OptionSelected__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_CampaignContent_Heist_C_BndEvt__WBP_CampaignContent_Heist_Selector_Difficulty_K2Node_ComponentBoundEvent_1_OptionSelected__DelegateSignature final
+// Function WBP_CampaignContent_Heist.WBP_CampaignContent_Heist_C.SetCampaignData
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_CampaignContent_Heist_C_SetCampaignData final
 {
 public:
-	int32                                         SelectionIndex;                                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class USBZCampaignBaseEntryData*        Entry;                                             // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_CampaignContent_Heist_C_BndEvt__WBP_CampaignContent_Heist_Selector_Difficulty_K2Node_ComponentBoundEvent_1_OptionSelected__DelegateSignature;
+DUMPER7_ASSERTS_WBP_CampaignContent_Heist_C_SetCampaignData;
+
+// Function WBP_CampaignContent_Heist.WBP_CampaignContent_Heist_C.SetEntryState
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_CampaignContent_Heist_C_SetEntryState final
+{
+public:
+	ESBZCampaignEntryState                        NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_CampaignContent_Heist_C_SetEntryState;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

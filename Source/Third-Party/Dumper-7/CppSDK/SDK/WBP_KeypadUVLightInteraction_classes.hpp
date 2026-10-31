@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "UMG_classes.hpp"
 #include "E_CodeGuessedStatus_structs.hpp"
+#include "UMG_classes.hpp"
 
 
 SDK_NAMESPACE_START
@@ -38,10 +38,10 @@ public:
 	class ABP_KeyPad_C*                           Keypad;                                            // 0x0358(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_WBP_KeypadUVLightInteraction(int32 EntryPoint);
-	class FText Get_CodeText_Text_0();
+	void SetKeypad(class ABP_KeyPad_C* Keypad);
 	struct FLinearColor GetBrushColor_0();
-	void SetKeypad(class ABP_KeyPad_C* Keypad_0);
+	class FText Get_CodeText_Text_0();
+	void ExecuteUbergraph_WBP_KeypadUVLightInteraction(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -57,5 +57,6 @@ public:
 		return GetDefaultObjImpl<UWBP_KeypadUVLightInteraction_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_KeypadUVLightInteraction_C;
 
 SDK_NAMESPACE_END

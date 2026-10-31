@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_AudioTrigger_Lavatory_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_AudioTrigger_Lavatory_C;
 
 SDK_NAMESPACE_END

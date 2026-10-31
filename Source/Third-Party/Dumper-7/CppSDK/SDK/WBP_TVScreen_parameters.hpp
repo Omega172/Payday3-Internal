@@ -14,6 +14,24 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function WBP_TVScreen.WBP_TVScreen_C.SetTextSecondDay
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_TVScreen_C_SetTextSecondDay final
+{
+public:
+	class FText                                   Text;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_TVScreen_C_SetTextSecondDay;
+
+// Function WBP_TVScreen.WBP_TVScreen_C.SetTextFirstDay
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_TVScreen_C_SetTextFirstDay final
+{
+public:
+	class FText                                   Text;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+DUMPER7_ASSERTS_WBP_TVScreen_C_SetTextFirstDay;
+
 // Function WBP_TVScreen.WBP_TVScreen_C.ExecuteUbergraph_WBP_TVScreen
 // 0x0028 (0x0028 - 0x0000)
 struct WBP_TVScreen_C_ExecuteUbergraph_WBP_TVScreen final
@@ -24,22 +42,7 @@ public:
 	class FText                                   K2Node_CustomEvent_Text_1;                         // 0x0008(0x0010)()
 	class FText                                   K2Node_CustomEvent_Text;                           // 0x0018(0x0010)()
 };
-
-// Function WBP_TVScreen.WBP_TVScreen_C.SetTextFirstDay
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_TVScreen_C_SetTextFirstDay final
-{
-public:
-	class FText                                   Text;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-
-// Function WBP_TVScreen.WBP_TVScreen_C.SetTextSecondDay
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_TVScreen_C_SetTextSecondDay final
-{
-public:
-	class FText                                   Text;                                              // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
+DUMPER7_ASSERTS_WBP_TVScreen_C_ExecuteUbergraph_WBP_TVScreen;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

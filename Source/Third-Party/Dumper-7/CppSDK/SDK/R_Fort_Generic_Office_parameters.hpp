@@ -14,78 +14,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function R_Fort_Generic_Office.R_Fort_Generic_Office_C.BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_03_2_K2Node_ActorBoundEvent_11_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_Fort_Generic_Office_C_BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_03_2_K2Node_ActorBoundEvent_11_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_Fort_Generic_Office.R_Fort_Generic_Office_C.BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_2_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_Fort_Generic_Office_C_BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_2_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_Fort_Generic_Office.R_Fort_Generic_Office_C.BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_3_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_Fort_Generic_Office_C_BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_3_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_Fort_Generic_Office.R_Fort_Generic_Office_C.BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_4_K2Node_ActorBoundEvent_12_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_Fort_Generic_Office_C_BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_4_K2Node_ActorBoundEvent_12_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_Fort_Generic_Office.R_Fort_Generic_Office_C.BndEvt__R_Fort_Generic_Office_BP_InstantLoot_Money_03_0_K2Node_ActorBoundEvent_18_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_Fort_Generic_Office_C_BndEvt__R_Fort_Generic_Office_BP_InstantLoot_Money_03_0_K2Node_ActorBoundEvent_18_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_Fort_Generic_Office.R_Fort_Generic_Office_C.BndEvt__R_Fort_Generic_Office_BP_InstantLoot_Money_6_K2Node_ActorBoundEvent_16_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_Fort_Generic_Office_C_BndEvt__R_Fort_Generic_Office_BP_InstantLoot_Money_6_K2Node_ActorBoundEvent_16_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_Fort_Generic_Office.R_Fort_Generic_Office_C.BndEvt__R_Fort_Generic_Office_BP_InstantLoot_Money_7_K2Node_ActorBoundEvent_17_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_Fort_Generic_Office_C_BndEvt__R_Fort_Generic_Office_BP_InstantLoot_Money_7_K2Node_ActorBoundEvent_17_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function R_Fort_Generic_Office.R_Fort_Generic_Office_C.BndEvt__R_Fort_Generic_Office_BP_InstantLoot_Money_8_K2Node_ActorBoundEvent_19_SBZLootedSignature__DelegateSignature
-// 0x0010 (0x0010 - 0x0000)
-struct R_Fort_Generic_Office_C_BndEvt__R_Fort_Generic_Office_BP_InstantLoot_Money_8_K2Node_ActorBoundEvent_19_SBZLootedSignature__DelegateSignature final
-{
-public:
-	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function R_Fort_Generic_Office.R_Fort_Generic_Office_C.ExecuteUbergraph_R_Fort_Generic_Office
 // 0x0148 (0x0148 - 0x0000)
 struct R_Fort_Generic_Office_C_ExecuteUbergraph_R_Fort_Generic_Office final
@@ -128,6 +56,87 @@ public:
 	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_4;               // 0x0128(0x0010)(ReferenceParm)
 	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_4;          // 0x0138(0x0010)(ReferenceParm)
 };
+DUMPER7_ASSERTS_R_Fort_Generic_Office_C_ExecuteUbergraph_R_Fort_Generic_Office;
+
+// Function R_Fort_Generic_Office.R_Fort_Generic_Office_C.BndEvt__R_Fort_Generic_Office_BP_InstantLoot_Money_8_K2Node_ActorBoundEvent_19_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_Fort_Generic_Office_C_BndEvt__R_Fort_Generic_Office_BP_InstantLoot_Money_8_K2Node_ActorBoundEvent_19_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_Fort_Generic_Office_C_BndEvt__R_Fort_Generic_Office_BP_InstantLoot_Money_8_K2Node_ActorBoundEvent_19_SBZLootedSignature__DelegateSignature;
+
+// Function R_Fort_Generic_Office.R_Fort_Generic_Office_C.BndEvt__R_Fort_Generic_Office_BP_InstantLoot_Money_7_K2Node_ActorBoundEvent_17_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_Fort_Generic_Office_C_BndEvt__R_Fort_Generic_Office_BP_InstantLoot_Money_7_K2Node_ActorBoundEvent_17_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_Fort_Generic_Office_C_BndEvt__R_Fort_Generic_Office_BP_InstantLoot_Money_7_K2Node_ActorBoundEvent_17_SBZLootedSignature__DelegateSignature;
+
+// Function R_Fort_Generic_Office.R_Fort_Generic_Office_C.BndEvt__R_Fort_Generic_Office_BP_InstantLoot_Money_6_K2Node_ActorBoundEvent_16_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_Fort_Generic_Office_C_BndEvt__R_Fort_Generic_Office_BP_InstantLoot_Money_6_K2Node_ActorBoundEvent_16_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_Fort_Generic_Office_C_BndEvt__R_Fort_Generic_Office_BP_InstantLoot_Money_6_K2Node_ActorBoundEvent_16_SBZLootedSignature__DelegateSignature;
+
+// Function R_Fort_Generic_Office.R_Fort_Generic_Office_C.BndEvt__R_Fort_Generic_Office_BP_InstantLoot_Money_03_0_K2Node_ActorBoundEvent_18_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_Fort_Generic_Office_C_BndEvt__R_Fort_Generic_Office_BP_InstantLoot_Money_03_0_K2Node_ActorBoundEvent_18_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_Fort_Generic_Office_C_BndEvt__R_Fort_Generic_Office_BP_InstantLoot_Money_03_0_K2Node_ActorBoundEvent_18_SBZLootedSignature__DelegateSignature;
+
+// Function R_Fort_Generic_Office.R_Fort_Generic_Office_C.BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_4_K2Node_ActorBoundEvent_12_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_Fort_Generic_Office_C_BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_4_K2Node_ActorBoundEvent_12_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_Fort_Generic_Office_C_BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_4_K2Node_ActorBoundEvent_12_SBZLootedSignature__DelegateSignature;
+
+// Function R_Fort_Generic_Office.R_Fort_Generic_Office_C.BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_3_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_Fort_Generic_Office_C_BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_3_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_Fort_Generic_Office_C_BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_3_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature;
+
+// Function R_Fort_Generic_Office.R_Fort_Generic_Office_C.BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_2_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_Fort_Generic_Office_C_BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_2_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_Fort_Generic_Office_C_BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_2_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature;
+
+// Function R_Fort_Generic_Office.R_Fort_Generic_Office_C.BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_03_2_K2Node_ActorBoundEvent_11_SBZLootedSignature__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct R_Fort_Generic_Office_C_BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_03_2_K2Node_ActorBoundEvent_11_SBZLootedSignature__DelegateSignature final
+{
+public:
+	class ASBZInstantLoot*                        InstantLoot;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class ASBZPlayerCharacter*                    TakenByPlayer;                                     // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_R_Fort_Generic_Office_C_BndEvt__R_Fort_ChiefPolice_Office_BP_InstantLoot_Money_03_2_K2Node_ActorBoundEvent_11_SBZLootedSignature__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

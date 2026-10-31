@@ -16,6 +16,16 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function A_Sky.A_Sky_C.HeistStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct A_Sky_C_HeistStateChanged final
+{
+public:
+	EPD3HeistState                                OldHeistState_HeistStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EPD3HeistState                                CurrentHeistState_HeistStateChanged;               // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_A_Sky_C_HeistStateChanged;
+
 // Function A_Sky.A_Sky_C.ExecuteUbergraph_A_Sky
 // 0x0008 (0x0008 - 0x0000)
 struct A_Sky_C_ExecuteUbergraph_A_Sky final
@@ -26,15 +36,7 @@ public:
 	EPD3HeistState                                K2Node_Event_CurrentHeistState;                    // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function A_Sky.A_Sky_C.HeistStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct A_Sky_C_HeistStateChanged final
-{
-public:
-	EPD3HeistState                                OldHeistState;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EPD3HeistState                                CurrentHeistState;                                 // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_A_Sky_C_ExecuteUbergraph_A_Sky;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

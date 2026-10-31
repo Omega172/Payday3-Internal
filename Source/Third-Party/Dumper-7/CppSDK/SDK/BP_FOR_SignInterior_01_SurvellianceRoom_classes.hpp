@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_FOR_SignInterior_01_SurvellianceRoom_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_FOR_SignInterior_01_SurvellianceRoom_C;
 
 SDK_NAMESPACE_END

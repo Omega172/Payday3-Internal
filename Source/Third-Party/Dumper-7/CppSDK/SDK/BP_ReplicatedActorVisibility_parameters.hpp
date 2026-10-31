@@ -14,6 +14,35 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
+// Function BP_ReplicatedActorVisibility.BP_ReplicatedActorVisibility_C.UserConstructionScript
+// 0x0020 (0x0020 - 0x0000)
+struct BP_ReplicatedActorVisibility_C_UserConstructionScript final
+{
+public:
+	class FString                                 CallFunc_GetDisplayName_ReturnValue;               // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0010(0x0010)()
+};
+DUMPER7_ASSERTS_BP_ReplicatedActorVisibility_C_UserConstructionScript;
+
+// Function BP_ReplicatedActorVisibility.BP_ReplicatedActorVisibility_C.setActorVisibility
+// 0x0001 (0x0001 - 0x0000)
+struct BP_ReplicatedActorVisibility_C_setActorVisibility final
+{
+public:
+	bool                                          visible;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ReplicatedActorVisibility_C_setActorVisibility;
+
+// Function BP_ReplicatedActorVisibility.BP_ReplicatedActorVisibility_C.OnStateChanged
+// 0x0002 (0x0002 - 0x0000)
+struct BP_ReplicatedActorVisibility_C_OnStateChanged final
+{
+public:
+	bool                                          bStateToChangeTo_OnStateChanged;                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics_OnStateChanged;                       // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_ReplicatedActorVisibility_C_OnStateChanged;
+
 // Function BP_ReplicatedActorVisibility.BP_ReplicatedActorVisibility_C.ExecuteUbergraph_BP_ReplicatedActorVisibility
 // 0x0030 (0x0030 - 0x0000)
 struct BP_ReplicatedActorVisibility_C_ExecuteUbergraph_BP_ReplicatedActorVisibility final
@@ -34,32 +63,7 @@ public:
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x002B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-
-// Function BP_ReplicatedActorVisibility.BP_ReplicatedActorVisibility_C.OnStateChanged
-// 0x0002 (0x0002 - 0x0000)
-struct BP_ReplicatedActorVisibility_C_OnStateChanged final
-{
-public:
-	bool                                          bStateToChangeTo;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_ReplicatedActorVisibility.BP_ReplicatedActorVisibility_C.setActorVisibility
-// 0x0001 (0x0001 - 0x0000)
-struct BP_ReplicatedActorVisibility_C_setActorVisibility final
-{
-public:
-	bool                                          visible;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_ReplicatedActorVisibility.BP_ReplicatedActorVisibility_C.UserConstructionScript
-// 0x0020 (0x0020 - 0x0000)
-struct BP_ReplicatedActorVisibility_C_UserConstructionScript final
-{
-public:
-	class FString                                 CallFunc_GetDisplayName_ReturnValue;               // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0010(0x0010)()
-};
+DUMPER7_ASSERTS_BP_ReplicatedActorVisibility_C_ExecuteUbergraph_BP_ReplicatedActorVisibility;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

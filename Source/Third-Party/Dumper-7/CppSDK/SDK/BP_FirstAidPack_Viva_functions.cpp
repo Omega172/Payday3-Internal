@@ -16,43 +16,57 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_FirstAidPack_Viva.BP_FirstAidPack_Viva_C.addOneChargeMesh
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FVector&                   Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    outline                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_FirstAidPack_Viva.BP_FirstAidPack_Viva_C.UserConstructionScript
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 
-void ABP_FirstAidPack_Viva_C::addOneChargeMesh(const struct FVector& Location, bool outline)
+void ABP_FirstAidPack_Viva_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FirstAidPack_Viva_C", "addOneChargeMesh");
-
-	Params::BP_FirstAidPack_Viva_C_addOneChargeMesh Parms{};
-
-	Parms.Location = std::move(Location);
-	Parms.outline = outline;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_FirstAidPack_Viva.BP_FirstAidPack_Viva_C.createChargeMeshes
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    outline                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_FirstAidPack_Viva.BP_FirstAidPack_Viva_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_FirstAidPack_Viva_C::createChargeMeshes(bool outline)
+void ABP_FirstAidPack_Viva_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FirstAidPack_Viva_C", "createChargeMeshes");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_FirstAidPack_Viva_C_createChargeMeshes Parms{};
 
-	Parms.outline = outline;
+// Function BP_FirstAidPack_Viva.BP_FirstAidPack_Viva_C.OnThrown
+// (Event, Protected, BlueprintEvent)
+
+void ABP_FirstAidPack_Viva_C::OnThrown()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnThrown", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_FirstAidPack_Viva.BP_FirstAidPack_Viva_C.OnChargesChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// float                                   ChargesChangeTo_OnChargesChanged                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnChargesChanged                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_FirstAidPack_Viva_C::OnChargesChanged(float ChargesChangeTo_OnChargesChanged, bool bDoCosmetics_OnChargesChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnChargesChanged", FnName));
+
+	Params::BP_FirstAidPack_Viva_C_OnChargesChanged Parms{};
+
+	Parms.ChargesChangeTo_OnChargesChanged = ChargesChangeTo_OnChargesChanged;
+	Parms.bDoCosmetics_OnChargesChanged = bDoCosmetics_OnChargesChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -65,10 +79,8 @@ void ABP_FirstAidPack_Viva_C::createChargeMeshes(bool outline)
 
 void ABP_FirstAidPack_Viva_C::ExecuteUbergraph_BP_FirstAidPack_Viva(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FirstAidPack_Viva_C", "ExecuteUbergraph_BP_FirstAidPack_Viva");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_FirstAidPack_Viva_C", "ExecuteUbergraph_BP_FirstAidPack_Viva", FuncInfo);
 
 	Params::BP_FirstAidPack_Viva_C_ExecuteUbergraph_BP_FirstAidPack_Viva Parms{};
 
@@ -78,67 +90,41 @@ void ABP_FirstAidPack_Viva_C::ExecuteUbergraph_BP_FirstAidPack_Viva(int32 EntryP
 }
 
 
-// Function BP_FirstAidPack_Viva.BP_FirstAidPack_Viva_C.OnChargesChanged
-// (Event, Protected, BlueprintEvent)
+// Function BP_FirstAidPack_Viva.BP_FirstAidPack_Viva_C.createChargeMeshes
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                                   ChargesChangeTo                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    outline                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_FirstAidPack_Viva_C::OnChargesChanged(float ChargesChangeTo, bool bDoCosmetics)
+void ABP_FirstAidPack_Viva_C::createChargeMeshes(bool outline)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"createChargeMeshes", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FirstAidPack_Viva_C", "OnChargesChanged");
+	Params::BP_FirstAidPack_Viva_C_createChargeMeshes Parms{};
 
-	Params::BP_FirstAidPack_Viva_C_OnChargesChanged Parms{};
-
-	Parms.ChargesChangeTo = ChargesChangeTo;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.outline = outline;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_FirstAidPack_Viva.BP_FirstAidPack_Viva_C.OnThrown
-// (Event, Protected, BlueprintEvent)
+// Function BP_FirstAidPack_Viva.BP_FirstAidPack_Viva_C.addOneChargeMesh
+// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FVector&                   Location                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    outline                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_FirstAidPack_Viva_C::OnThrown()
+void ABP_FirstAidPack_Viva_C::addOneChargeMesh(const struct FVector& Location, bool outline)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"addOneChargeMesh", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FirstAidPack_Viva_C", "OnThrown");
+	Params::BP_FirstAidPack_Viva_C_addOneChargeMesh Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Parms.Location = std::move(Location);
+	Parms.outline = outline;
 
-
-// Function BP_FirstAidPack_Viva.BP_FirstAidPack_Viva_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_FirstAidPack_Viva_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FirstAidPack_Viva_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_FirstAidPack_Viva.BP_FirstAidPack_Viva_C.UserConstructionScript
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_FirstAidPack_Viva_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_FirstAidPack_Viva_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

@@ -27,8 +27,8 @@ public:
 	class UStaticMeshComponent*                   StaticMesh_1;                                      // 0x0370(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void OnStateChanged(bool bStateToChangeTo_OnStateChanged, bool bDoCosmetics_OnStateChanged);
 	void ExecuteUbergraph_BP_ZiplineMountAG(int32 EntryPoint);
-	void OnStateChanged(bool bStateToChangeTo, bool bDoCosmetics);
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<ABP_ZiplineMountAG_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ZiplineMountAG_C;
 
 SDK_NAMESPACE_END

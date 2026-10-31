@@ -28,8 +28,8 @@ public:
 	class FName                                   MoveToLocationBBKeyName;                           // 0x00C8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void ReceiveExecute(class AActor* OwnerActor_ReceiveExecute);
 	void ExecuteUbergraph_BTTask_Escort_ReserveLifeAction(int32 EntryPoint);
-	void ReceiveExecute(class AActor* OwnerActor);
 
 public:
 	static class UClass* StaticClass()
@@ -45,5 +45,6 @@ public:
 		return GetDefaultObjImpl<UBTTask_Escort_ReserveLifeAction_C>();
 	}
 };
+DUMPER7_ASSERTS_UBTTask_Escort_ReserveLifeAction_C;
 
 SDK_NAMESPACE_END

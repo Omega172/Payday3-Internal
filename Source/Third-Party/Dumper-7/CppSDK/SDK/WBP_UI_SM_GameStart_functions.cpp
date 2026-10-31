@@ -16,97 +16,21 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_UI_SM_GameStart.WBP_UI_SM_GameStart_C.ShowMainMenuFunction
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_SM_GameStart_C::ShowMainMenuFunction()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ShowMainMenuFunction", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SM_GameStart.WBP_UI_SM_GameStart_C.RemoveBackgroundBlur
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_SM_GameStart_C::RemoveBackgroundBlur()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RemoveBackgroundBlur", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SM_GameStart.WBP_UI_SM_GameStart_C.OnStackChanged
-// (BlueprintCallable, BlueprintEvent)
+// Function WBP_UI_SM_GameStart.WBP_UI_SM_GameStart_C.BndEvt__WBP_UI_SM_GameStart_Widget_FullscreenVideo_K2Node_ComponentBoundEvent_0_SBZFullscreenVideoActiveChangedDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// const struct FSBZUIStackChangedEvent&   StackEvent                                             (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+// class USBZFullscreenVideoWidget*        InWidget                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// bool                                    bInIsActive                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SM_GameStart_C::OnStackChanged(const struct FSBZUIStackChangedEvent& StackEvent)
+void UWBP_UI_SM_GameStart_C::BndEvt__WBP_UI_SM_GameStart_Widget_FullscreenVideo_K2Node_ComponentBoundEvent_0_SBZFullscreenVideoActiveChangedDelegate__DelegateSignature(class USBZFullscreenVideoWidget* InWidget, bool bInIsActive)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStackChanged", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_GameStart_Widget_FullscreenVideo_K2Node_ComponentBoundEvent_0_SBZFullscreenVideoActiveChangedDelegate__DelegateSignature", FnName));
 
-	Params::WBP_UI_SM_GameStart_C_OnStackChanged Parms{};
+	Params::WBP_UI_SM_GameStart_C_BndEvt__WBP_UI_SM_GameStart_Widget_FullscreenVideo_K2Node_ComponentBoundEvent_0_SBZFullscreenVideoActiveChangedDelegate__DelegateSignature Parms{};
 
-	Parms.StackEvent = std::move(StackEvent);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_SM_GameStart.WBP_UI_SM_GameStart_C.OnLobbyEntered
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_SM_GameStart_C::OnLobbyEntered()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLobbyEntered", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SM_GameStart.WBP_UI_SM_GameStart_C.OnLeftLobby
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_SM_GameStart_C::OnLeftLobby()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLeftLobby", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SM_GameStart.WBP_UI_SM_GameStart_C.OnInitialized
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_UI_SM_GameStart_C::OnInitialized()
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_SM_GameStart.WBP_UI_SM_GameStart_C.OnControlReferencesVisibilityChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ESlateVisibility                        InVisibility                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_SM_GameStart_C::OnControlReferencesVisibilityChanged(ESlateVisibility InVisibility)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnControlReferencesVisibilityChanged", FnName));
-
-	Params::WBP_UI_SM_GameStart_C_OnControlReferencesVisibilityChanged Parms{};
-
-	Parms.InVisibility = InVisibility;
+	Parms.InWidget = InWidget;
+	Parms.bInIsActive = bInIsActive;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -130,23 +54,99 @@ void UWBP_UI_SM_GameStart_C::ExecuteUbergraph_WBP_UI_SM_GameStart(int32 EntryPoi
 }
 
 
-// Function WBP_UI_SM_GameStart.WBP_UI_SM_GameStart_C.BndEvt__WBP_UI_SM_GameStart_Widget_FullscreenVideo_K2Node_ComponentBoundEvent_0_SBZFullscreenVideoActiveChangedDelegate__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_UI_SM_GameStart.WBP_UI_SM_GameStart_C.OnControlReferencesVisibilityChanged
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class USBZFullscreenVideoWidget*        InWidget                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-// bool                                    bInIsActive                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESlateVisibility                        InVisibility                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_SM_GameStart_C::BndEvt__WBP_UI_SM_GameStart_Widget_FullscreenVideo_K2Node_ComponentBoundEvent_0_SBZFullscreenVideoActiveChangedDelegate__DelegateSignature(class USBZFullscreenVideoWidget* InWidget, bool bInIsActive)
+void UWBP_UI_SM_GameStart_C::OnControlReferencesVisibilityChanged(ESlateVisibility InVisibility)
 {
 	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__WBP_UI_SM_GameStart_Widget_FullscreenVideo_K2Node_ComponentBoundEvent_0_SBZFullscreenVideoActiveChangedDelegate__DelegateSignature", FnName));
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnControlReferencesVisibilityChanged", FnName));
 
-	Params::WBP_UI_SM_GameStart_C_BndEvt__WBP_UI_SM_GameStart_Widget_FullscreenVideo_K2Node_ComponentBoundEvent_0_SBZFullscreenVideoActiveChangedDelegate__DelegateSignature Parms{};
+	Params::WBP_UI_SM_GameStart_C_OnControlReferencesVisibilityChanged Parms{};
 
-	Parms.InWidget = InWidget;
-	Parms.bInIsActive = bInIsActive;
+	Parms.InVisibility = InVisibility;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_SM_GameStart.WBP_UI_SM_GameStart_C.OnInitialized
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_UI_SM_GameStart_C::OnInitialized()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnInitialized", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_SM_GameStart.WBP_UI_SM_GameStart_C.OnLeftLobby
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_SM_GameStart_C::OnLeftLobby()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLeftLobby", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_SM_GameStart.WBP_UI_SM_GameStart_C.OnLobbyEntered
+// (BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_SM_GameStart_C::OnLobbyEntered()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnLobbyEntered", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_SM_GameStart.WBP_UI_SM_GameStart_C.OnStackChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FSBZUIStackChangedEvent&   StackEvent                                             (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void UWBP_UI_SM_GameStart_C::OnStackChanged(const struct FSBZUIStackChangedEvent& StackEvent)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStackChanged", FnName));
+
+	Params::WBP_UI_SM_GameStart_C_OnStackChanged Parms{};
+
+	Parms.StackEvent = std::move(StackEvent);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_SM_GameStart.WBP_UI_SM_GameStart_C.RemoveBackgroundBlur
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_SM_GameStart_C::RemoveBackgroundBlur()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"RemoveBackgroundBlur", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_SM_GameStart.WBP_UI_SM_GameStart_C.ShowMainMenuFunction
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_SM_GameStart_C::ShowMainMenuFunction()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ShowMainMenuFunction", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

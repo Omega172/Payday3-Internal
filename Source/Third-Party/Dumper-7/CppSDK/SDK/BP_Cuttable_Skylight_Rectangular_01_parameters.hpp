@@ -11,37 +11,39 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Starbreeze_structs.hpp"
+#include "CoreUObject_structs.hpp"
 
 
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_Cuttable_Skylight_Rectangular_01.BP_Cuttable_Skylight_Rectangular_01_C.BndEvt__BP_Cuttable_Glass_Pane_BoxComponent_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
-// 0x0128 (0x0128 - 0x0000)
-struct BP_Cuttable_Skylight_Rectangular_01_C_BndEvt__BP_Cuttable_Glass_Pane_BoxComponent_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature final
+// Function BP_Cuttable_Skylight_Rectangular_01.BP_Cuttable_Skylight_Rectangular_01_C.GetMeltingMesh
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Cuttable_Skylight_Rectangular_01_C_GetMeltingMesh final
 {
 public:
-	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FHitResult                             SweepResult;                                       // 0x0020(0x0108)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	class UStaticMeshComponent*                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Cuttable_Skylight_Rectangular_01_C_GetMeltingMesh;
 
-// Function BP_Cuttable_Skylight_Rectangular_01.BP_Cuttable_Skylight_Rectangular_01_C.BndEvt__BP_Cuttable_Glass_Pane_BoxComponent_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature
-// 0x0020 (0x0020 - 0x0000)
-struct BP_Cuttable_Skylight_Rectangular_01_C_BndEvt__BP_Cuttable_Glass_Pane_BoxComponent_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature final
+// Function BP_Cuttable_Skylight_Rectangular_01.BP_Cuttable_Skylight_Rectangular_01_C.GetCuttableSplineComponent
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Cuttable_Skylight_Rectangular_01_C_GetCuttableSplineComponent final
 {
 public:
-	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZCuttableSplineComponent*            ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Cuttable_Skylight_Rectangular_01_C_GetCuttableSplineComponent;
+
+// Function BP_Cuttable_Skylight_Rectangular_01.BP_Cuttable_Skylight_Rectangular_01_C.GetCuttableComponent
+// 0x0008 (0x0008 - 0x0000)
+struct BP_Cuttable_Skylight_Rectangular_01_C_GetCuttableComponent final
+{
+public:
+	class USBZCuttableComponent*                  ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_Cuttable_Skylight_Rectangular_01_C_GetCuttableComponent;
 
 // Function BP_Cuttable_Skylight_Rectangular_01.BP_Cuttable_Skylight_Rectangular_01_C.ExecuteUbergraph_BP_Cuttable_Skylight_Rectangular_01
 // 0x0270 (0x0270 - 0x0000)
@@ -67,30 +69,34 @@ public:
 	uint8                                         Pad_166[0x2];                                      // 0x0166(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             CallFunc_K2_SetRelativeRotation_SweepHitResult;    // 0x0168(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
+DUMPER7_ASSERTS_BP_Cuttable_Skylight_Rectangular_01_C_ExecuteUbergraph_BP_Cuttable_Skylight_Rectangular_01;
 
-// Function BP_Cuttable_Skylight_Rectangular_01.BP_Cuttable_Skylight_Rectangular_01_C.GetCuttableComponent
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Cuttable_Skylight_Rectangular_01_C_GetCuttableComponent final
+// Function BP_Cuttable_Skylight_Rectangular_01.BP_Cuttable_Skylight_Rectangular_01_C.BndEvt__BP_Cuttable_Glass_Pane_BoxComponent_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature
+// 0x0020 (0x0020 - 0x0000)
+struct BP_Cuttable_Skylight_Rectangular_01_C_BndEvt__BP_Cuttable_Glass_Pane_BoxComponent_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature final
 {
 public:
-	class USBZCuttableComponent*                  ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_Cuttable_Skylight_Rectangular_01_C_BndEvt__BP_Cuttable_Glass_Pane_BoxComponent_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature;
 
-// Function BP_Cuttable_Skylight_Rectangular_01.BP_Cuttable_Skylight_Rectangular_01_C.GetCuttableSplineComponent
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Cuttable_Skylight_Rectangular_01_C_GetCuttableSplineComponent final
+// Function BP_Cuttable_Skylight_Rectangular_01.BP_Cuttable_Skylight_Rectangular_01_C.BndEvt__BP_Cuttable_Glass_Pane_BoxComponent_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature
+// 0x0128 (0x0128 - 0x0000)
+struct BP_Cuttable_Skylight_Rectangular_01_C_BndEvt__BP_Cuttable_Glass_Pane_BoxComponent_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature final
 {
 public:
-	class USBZCuttableSplineComponent*            ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OverlappedComponent;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class AActor*                                 OtherActor;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bFromSweep;                                        // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FHitResult                             SweepResult;                                       // 0x0020(0x0108)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-
-// Function BP_Cuttable_Skylight_Rectangular_01.BP_Cuttable_Skylight_Rectangular_01_C.GetMeltingMesh
-// 0x0008 (0x0008 - 0x0000)
-struct BP_Cuttable_Skylight_Rectangular_01_C_GetMeltingMesh final
-{
-public:
-	class UStaticMeshComponent*                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_Cuttable_Skylight_Rectangular_01_C_BndEvt__BP_Cuttable_Glass_Pane_BoxComponent_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

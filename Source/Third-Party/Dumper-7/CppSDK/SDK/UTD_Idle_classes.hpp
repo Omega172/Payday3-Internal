@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UUTD_Idle_C>();
 	}
 };
+DUMPER7_ASSERTS_UUTD_Idle_C;
 
 SDK_NAMESPACE_END

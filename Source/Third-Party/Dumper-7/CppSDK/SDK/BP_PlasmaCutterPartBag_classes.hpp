@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_PlasmaCutterPartBag_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_PlasmaCutterPartBag_C;
 
 SDK_NAMESPACE_END

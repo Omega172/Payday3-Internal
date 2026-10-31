@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UUTD_TaserAttack_C>();
 	}
 };
+DUMPER7_ASSERTS_UUTD_TaserAttack_C;
 
 SDK_NAMESPACE_END

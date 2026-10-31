@@ -26,6 +26,7 @@ public:
 	float                                         CallFunc_Delay_Duration_ImplicitCast_1;            // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Delay_Duration_ImplicitCast_2;            // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_VFX_Nighclub_Trigger_C_ExecuteUbergraph_BP_VFX_Nighclub_Trigger;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

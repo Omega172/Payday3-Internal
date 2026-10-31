@@ -34,19 +34,19 @@ public:
 	class UMaterialInstanceDynamic*               DynamicMaterials;                                  // 0x0428(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void OnLoaded_652D1BEC4F78339E65381AB1B712EDE5(class UObject* Loaded);
-	void OnHoverChanged(bool bIsHovered);
-	void OnHeistDataInitialized();
-	void OnFocusedChanged(bool bIsFocused);
-	void OnFocusChanged(bool bIsFocused_OnFocusChanged);
-	void OnDisabledChanged(bool InDisabled);
-	void InitializeButtonVisuals();
-	void ExecuteUbergraph_WBP_UI_CrimeNetHeistButton(int32 EntryPoint);
-	void DisabledButtonSelected();
+	void ButtonDisabledChanged(bool bInIsDisabled);
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void ButtonHoveredChanged(bool bInIsHovered);
 	void Construct();
-	void ButtonHoveredChanged(bool bInIsHovered_ButtonHoveredChanged);
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
-	void ButtonDisabledChanged(bool bInIsDisabled_ButtonDisabledChanged);
+	void DisabledButtonSelected();
+	void ExecuteUbergraph_WBP_UI_CrimeNetHeistButton(int32 EntryPoint);
+	void InitializeButtonVisuals();
+	void OnDisabledChanged(bool InDisabled);
+	void OnFocusChanged(bool bIsFocused);
+	void OnFocusedChanged(bool bIsFocused);
+	void OnHeistDataInitialized();
+	void OnHoverChanged(bool bIsHovered);
+	void OnLoaded_652D1BEC4F78339E65381AB1B712EDE5(class UObject* Loaded);
 
 public:
 	static class UClass* StaticClass()

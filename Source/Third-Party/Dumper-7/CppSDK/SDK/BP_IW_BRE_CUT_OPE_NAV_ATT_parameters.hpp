@@ -11,25 +11,60 @@
 #include "Basic.hpp"
 
 #include "Starbreeze_structs.hpp"
+#include "BPS_GlassHit_VFXData_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
-#include "BPS_GlassHit_VFXData_structs.hpp"
 
 
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_IW_BRE_CUT_OPE_NAV_ATT.BP_IW_BRE_CUT_OPE_NAV_ATT_C.BndEvt__SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature
-// 0x0030 (0x0030 - 0x0000)
-struct BP_IW_BRE_CUT_OPE_NAV_ATT_C_BndEvt__SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature final
+// Function BP_IW_BRE_CUT_OPE_NAV_ATT.BP_IW_BRE_CUT_OPE_NAV_ATT_C.OnStateChanged
+// 0x0003 (0x0003 - 0x0000)
+struct BP_IW_BRE_CUT_OPE_NAV_ATT_C_OnStateChanged final
 {
 public:
-	class UActorComponent*                        PoolComponent;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	int32                                         Hits;                                              // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bDoCosmetics;                                      // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZPropDamageContext                  DamageContext;                                     // 0x0010(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGateState                                 NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsInitialStateChange;                             // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_IW_BRE_CUT_OPE_NAV_ATT_C_OnStateChanged;
+
+// Function BP_IW_BRE_CUT_OPE_NAV_ATT.BP_IW_BRE_CUT_OPE_NAV_ATT_C.GetNiagaraComponent
+// 0x0008 (0x0008 - 0x0000)
+struct BP_IW_BRE_CUT_OPE_NAV_ATT_C_GetNiagaraComponent final
+{
+public:
+	class UNiagaraComponent*                      ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_IW_BRE_CUT_OPE_NAV_ATT_C_GetNiagaraComponent;
+
+// Function BP_IW_BRE_CUT_OPE_NAV_ATT.BP_IW_BRE_CUT_OPE_NAV_ATT_C.GetMeltingMesh
+// 0x0008 (0x0008 - 0x0000)
+struct BP_IW_BRE_CUT_OPE_NAV_ATT_C_GetMeltingMesh final
+{
+public:
+	class UStaticMeshComponent*                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_IW_BRE_CUT_OPE_NAV_ATT_C_GetMeltingMesh;
+
+// Function BP_IW_BRE_CUT_OPE_NAV_ATT.BP_IW_BRE_CUT_OPE_NAV_ATT_C.GetCuttableSplineComponent
+// 0x0008 (0x0008 - 0x0000)
+struct BP_IW_BRE_CUT_OPE_NAV_ATT_C_GetCuttableSplineComponent final
+{
+public:
+	class USBZCuttableSplineComponent*            ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_IW_BRE_CUT_OPE_NAV_ATT_C_GetCuttableSplineComponent;
+
+// Function BP_IW_BRE_CUT_OPE_NAV_ATT.BP_IW_BRE_CUT_OPE_NAV_ATT_C.GetCuttableComponent
+// 0x0008 (0x0008 - 0x0000)
+struct BP_IW_BRE_CUT_OPE_NAV_ATT_C_GetCuttableComponent final
+{
+public:
+	class USBZCuttableComponent*                  ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_IW_BRE_CUT_OPE_NAV_ATT_C_GetCuttableComponent;
 
 // Function BP_IW_BRE_CUT_OPE_NAV_ATT.BP_IW_BRE_CUT_OPE_NAV_ATT_C.ExecuteUbergraph_BP_IW_BRE_CUT_OPE_NAV_ATT
 // 0x02C0 (0x02C0 - 0x0000)
@@ -85,48 +120,20 @@ public:
 	float                                         CallFunc_SetNewTime_NewTime_ImplicitCast;          // 0x02B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetCustomPrimitiveDataFloat_Value_ImplicitCast; // 0x02BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_IW_BRE_CUT_OPE_NAV_ATT_C_ExecuteUbergraph_BP_IW_BRE_CUT_OPE_NAV_ATT;
 
-// Function BP_IW_BRE_CUT_OPE_NAV_ATT.BP_IW_BRE_CUT_OPE_NAV_ATT_C.GetCuttableComponent
-// 0x0008 (0x0008 - 0x0000)
-struct BP_IW_BRE_CUT_OPE_NAV_ATT_C_GetCuttableComponent final
+// Function BP_IW_BRE_CUT_OPE_NAV_ATT.BP_IW_BRE_CUT_OPE_NAV_ATT_C.BndEvt__SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature
+// 0x0030 (0x0030 - 0x0000)
+struct BP_IW_BRE_CUT_OPE_NAV_ATT_C_BndEvt__SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature final
 {
 public:
-	class USBZCuttableComponent*                  ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UActorComponent*                        PoolComponent;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	int32                                         Hits;                                              // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bDoCosmetics;                                      // 0x000C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZPropDamageContext                  DamageContext;                                     // 0x0010(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-
-// Function BP_IW_BRE_CUT_OPE_NAV_ATT.BP_IW_BRE_CUT_OPE_NAV_ATT_C.GetCuttableSplineComponent
-// 0x0008 (0x0008 - 0x0000)
-struct BP_IW_BRE_CUT_OPE_NAV_ATT_C_GetCuttableSplineComponent final
-{
-public:
-	class USBZCuttableSplineComponent*            ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_IW_BRE_CUT_OPE_NAV_ATT.BP_IW_BRE_CUT_OPE_NAV_ATT_C.GetMeltingMesh
-// 0x0008 (0x0008 - 0x0000)
-struct BP_IW_BRE_CUT_OPE_NAV_ATT_C_GetMeltingMesh final
-{
-public:
-	class UStaticMeshComponent*                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_IW_BRE_CUT_OPE_NAV_ATT.BP_IW_BRE_CUT_OPE_NAV_ATT_C.GetNiagaraComponent
-// 0x0008 (0x0008 - 0x0000)
-struct BP_IW_BRE_CUT_OPE_NAV_ATT_C_GetNiagaraComponent final
-{
-public:
-	class UNiagaraComponent*                      ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-
-// Function BP_IW_BRE_CUT_OPE_NAV_ATT.BP_IW_BRE_CUT_OPE_NAV_ATT_C.OnStateChanged
-// 0x0003 (0x0003 - 0x0000)
-struct BP_IW_BRE_CUT_OPE_NAV_ATT_C_OnStateChanged final
-{
-public:
-	ESBZGateState                                 OldState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGateState                                 NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsInitialStateChange;                             // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
+DUMPER7_ASSERTS_BP_IW_BRE_CUT_OPE_NAV_ATT_C_BndEvt__SBZPropDamage_K2Node_ComponentBoundEvent_1_SBZPropDamageHitsSignature__DelegateSignature;
 
 // Function BP_IW_BRE_CUT_OPE_NAV_ATT.BP_IW_BRE_CUT_OPE_NAV_ATT_C.GetPropDamageComponent
 // 0x0008 (0x0008 - 0x0000)
@@ -135,6 +142,7 @@ struct BP_IW_BRE_CUT_OPE_NAV_ATT_C_GetPropDamageComponent final
 public:
 	class USBZPropDamageComponent*                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_IW_BRE_CUT_OPE_NAV_ATT_C_GetPropDamageComponent;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

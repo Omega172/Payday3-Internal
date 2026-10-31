@@ -25,10 +25,10 @@ public:
 	class USplineComponent*                       Spline;                                            // 0x0400(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_BP_DroneSpawner(int32 EntryPoint);
-	void OnSelectedTick();
-	void ReceiveBeginPlay();
 	void SpawnedPawnDelegate_Event_0(class APawn* SpawnedPawn, class ASBZCarriedStaticInteractionActor* Spawnedloot);
+	void ReceiveBeginPlay();
+	void OnSelectedTick();
+	void ExecuteUbergraph_BP_DroneSpawner(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -44,5 +44,6 @@ public:
 		return GetDefaultObjImpl<ABP_DroneSpawner_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DroneSpawner_C;
 
 SDK_NAMESPACE_END

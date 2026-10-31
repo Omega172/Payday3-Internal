@@ -17,16 +17,6 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function BP_PlayerRocketProjectile.BP_PlayerRocketProjectile_C.BP_OnDetonationCosmetics
-// 0x0038 (0x0038 - 0x0000)
-struct BP_PlayerRocketProjectile_C_BP_OnDetonationCosmetics final
-{
-public:
-	class UNiagaraComponent*                      DetonationEffectComponent;                         // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                ExplosionLocation;                                 // 0x0008(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                                ExplosionImpactNormal;                             // 0x0020(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
 // Function BP_PlayerRocketProjectile.BP_PlayerRocketProjectile_C.ExecuteUbergraph_BP_PlayerRocketProjectile
 // 0x0210 (0x0210 - 0x0000)
 struct BP_PlayerRocketProjectile_C_ExecuteUbergraph_BP_PlayerRocketProjectile final
@@ -47,6 +37,18 @@ public:
 	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult;       // 0x0100(0x0108)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_K2_AttachToActor_ReturnValue;             // 0x0208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_PlayerRocketProjectile_C_ExecuteUbergraph_BP_PlayerRocketProjectile;
+
+// Function BP_PlayerRocketProjectile.BP_PlayerRocketProjectile_C.BP_OnDetonationCosmetics
+// 0x0038 (0x0038 - 0x0000)
+struct BP_PlayerRocketProjectile_C_BP_OnDetonationCosmetics final
+{
+public:
+	class UNiagaraComponent*                      DetonationEffectComponent_BP_OnDetonationCosmetics; // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                ExplosionLocation_BP_OnDetonationCosmetics;        // 0x0008(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                                ExplosionImpactNormal_BP_OnDetonationCosmetics;    // 0x0020(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_BP_PlayerRocketProjectile_C_BP_OnDetonationCosmetics;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

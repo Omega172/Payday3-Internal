@@ -16,21 +16,61 @@
 
 SDK_NAMESPACE_START
 
-// Function C_Pharaoh_IntroOutro.C_Pharaoh_IntroOutro_C.BndEvt__C_Pharaoh_IntroOutro_SBZPlayerTriggerVolume2_2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
-// (BlueprintEvent)
+// Function C_Pharaoh_IntroOutro.C_Pharaoh_IntroOutro_C.OutroSequenceStarted
+// (Event, Public, BlueprintEvent)
 // Parameters:
-// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// const int32                             OutroVariation_OutroSequenceStarted                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AC_Pharaoh_IntroOutro_C::BndEvt__C_Pharaoh_IntroOutro_SBZPlayerTriggerVolume2_2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
+void AC_Pharaoh_IntroOutro_C::OutroSequenceStarted(const int32 OutroVariation_OutroSequenceStarted)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OutroSequenceStarted", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_Pharaoh_IntroOutro_C", "BndEvt__C_Pharaoh_IntroOutro_SBZPlayerTriggerVolume2_2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature");
+	Params::C_Pharaoh_IntroOutro_C_OutroSequenceStarted Parms{};
 
-	Params::C_Pharaoh_IntroOutro_C_BndEvt__C_Pharaoh_IntroOutro_SBZPlayerTriggerVolume2_2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature Parms{};
+	Parms.OutroVariation_OutroSequenceStarted = OutroVariation_OutroSequenceStarted;
 
-	Parms.Pawn = Pawn;
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function C_Pharaoh_IntroOutro.C_Pharaoh_IntroOutro_C.OnOutroFinished
+// (BlueprintCallable, BlueprintEvent)
+
+void AC_Pharaoh_IntroOutro_C::OnOutroFinished()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnOutroFinished", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function C_Pharaoh_IntroOutro.C_Pharaoh_IntroOutro_C.OnIntroFinished
+// (BlueprintCallable, BlueprintEvent)
+
+void AC_Pharaoh_IntroOutro_C::OnIntroFinished()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnIntroFinished", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function C_Pharaoh_IntroOutro.C_Pharaoh_IntroOutro_C.IntroSequenceChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    bIsStarted_IntroSequenceChanged                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AC_Pharaoh_IntroOutro_C::IntroSequenceChanged(bool bIsStarted_IntroSequenceChanged)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"IntroSequenceChanged", FnName));
+
+	Params::C_Pharaoh_IntroOutro_C_IntroSequenceChanged Parms{};
+
+	Parms.bIsStarted_IntroSequenceChanged = bIsStarted_IntroSequenceChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -43,10 +83,8 @@ void AC_Pharaoh_IntroOutro_C::BndEvt__C_Pharaoh_IntroOutro_SBZPlayerTriggerVolum
 
 void AC_Pharaoh_IntroOutro_C::ExecuteUbergraph_C_Pharaoh_IntroOutro(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_Pharaoh_IntroOutro_C", "ExecuteUbergraph_C_Pharaoh_IntroOutro");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "C_Pharaoh_IntroOutro_C", "ExecuteUbergraph_C_Pharaoh_IntroOutro", FuncInfo);
 
 	Params::C_Pharaoh_IntroOutro_C_ExecuteUbergraph_C_Pharaoh_IntroOutro Parms{};
 
@@ -56,69 +94,19 @@ void AC_Pharaoh_IntroOutro_C::ExecuteUbergraph_C_Pharaoh_IntroOutro(int32 EntryP
 }
 
 
-// Function C_Pharaoh_IntroOutro.C_Pharaoh_IntroOutro_C.IntroSequenceChanged
-// (Event, Public, BlueprintEvent)
+// Function C_Pharaoh_IntroOutro.C_Pharaoh_IntroOutro_C.BndEvt__C_Pharaoh_IntroOutro_SBZPlayerTriggerVolume2_2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// bool                                    bIsStarted                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class APawn*                            Pawn                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void AC_Pharaoh_IntroOutro_C::IntroSequenceChanged(bool bIsStarted)
+void AC_Pharaoh_IntroOutro_C::BndEvt__C_Pharaoh_IntroOutro_SBZPlayerTriggerVolume2_2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature(class APawn* Pawn)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BndEvt__C_Pharaoh_IntroOutro_SBZPlayerTriggerVolume2_2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_Pharaoh_IntroOutro_C", "IntroSequenceChanged");
+	Params::C_Pharaoh_IntroOutro_C_BndEvt__C_Pharaoh_IntroOutro_SBZPlayerTriggerVolume2_2_K2Node_ActorBoundEvent_0_SBZPawnDynamicDelegate__DelegateSignature Parms{};
 
-	Params::C_Pharaoh_IntroOutro_C_IntroSequenceChanged Parms{};
-
-	Parms.bIsStarted = bIsStarted;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function C_Pharaoh_IntroOutro.C_Pharaoh_IntroOutro_C.OnIntroFinished
-// (BlueprintCallable, BlueprintEvent)
-
-void AC_Pharaoh_IntroOutro_C::OnIntroFinished()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_Pharaoh_IntroOutro_C", "OnIntroFinished");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function C_Pharaoh_IntroOutro.C_Pharaoh_IntroOutro_C.OnOutroFinished
-// (BlueprintCallable, BlueprintEvent)
-
-void AC_Pharaoh_IntroOutro_C::OnOutroFinished()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_Pharaoh_IntroOutro_C", "OnOutroFinished");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function C_Pharaoh_IntroOutro.C_Pharaoh_IntroOutro_C.OutroSequenceStarted
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// const int32                             OutroVariation                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AC_Pharaoh_IntroOutro_C::OutroSequenceStarted(const int32 OutroVariation)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("C_Pharaoh_IntroOutro_C", "OutroSequenceStarted");
-
-	Params::C_Pharaoh_IntroOutro_C_OutroSequenceStarted Parms{};
-
-	Parms.OutroVariation = OutroVariation;
+	Parms.Pawn = Pawn;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

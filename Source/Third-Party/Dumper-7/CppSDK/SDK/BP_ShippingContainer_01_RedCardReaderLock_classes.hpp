@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_ShippingContainer_01_RedCardReaderLock_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ShippingContainer_01_RedCardReaderLock_C;
 
 SDK_NAMESPACE_END

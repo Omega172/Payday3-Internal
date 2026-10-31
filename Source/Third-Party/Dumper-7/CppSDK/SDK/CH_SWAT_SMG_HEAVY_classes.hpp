@@ -17,16 +17,16 @@
 SDK_NAMESPACE_START
 
 // BlueprintGeneratedClass CH_SWAT_SMG_HEAVY.CH_SWAT_SMG_HEAVY_C
-// 0x0010 (0x21E0 - 0x21D0)
+// 0x0010 (0x2270 - 0x2260)
 class ACH_SWAT_SMG_HEAVY_C final : public ACH_BaseCommonSwat_C
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x21C8(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UStaticMeshComponent*                   Helmet;                                            // 0x21D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x2258(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UStaticMeshComponent*                   Helmet;                                            // 0x2260(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_CH_SWAT_SMG_HEAVY(int32 EntryPoint);
 	void ReceiveBeginPlay();
+	void ExecuteUbergraph_CH_SWAT_SMG_HEAVY(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -42,5 +42,6 @@ public:
 		return GetDefaultObjImpl<ACH_SWAT_SMG_HEAVY_C>();
 	}
 };
+DUMPER7_ASSERTS_ACH_SWAT_SMG_HEAVY_C;
 
 SDK_NAMESPACE_END

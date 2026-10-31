@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UBP_Laser_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_Laser_C;
 
 SDK_NAMESPACE_END

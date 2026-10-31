@@ -31,8 +31,8 @@ public:
 	class AStaticMeshActor*                       F2_Exhibition_E5_Platform_4_ExecuteUbergraph_E_ArtGallery_Int_F2_E5_Prop_RefProperty; // 0x0408(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void DisableFloorVisualsE5();
 	void ExecuteUbergraph_E_ArtGallery_Int_F2_E5_Prop(int32 EntryPoint);
+	void DisableFloorVisualsE5();
 
 public:
 	static class UClass* StaticClass()
@@ -48,5 +48,6 @@ public:
 		return GetDefaultObjImpl<AE_ArtGallery_Int_F2_E5_Prop_C>();
 	}
 };
+DUMPER7_ASSERTS_AE_ArtGallery_Int_F2_E5_Prop_C;
 
 SDK_NAMESPACE_END

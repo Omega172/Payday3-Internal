@@ -18,46 +18,23 @@
 SDK_NAMESPACE_START
 SDK_PARAM_NAMESPACE_START
 
-// Function WBP_ServerBrowser_FilterButton.WBP_ServerBrowser_FilterButton_C.SpinIcon
-// 0x0010 (0x0010 - 0x0000)
-struct WBP_ServerBrowser_FilterButton_C_SpinIcon final
-{
-public:
-	bool                                          bEnable;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        Speed;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ServerBrowser_FilterButton_C_SpinIcon;
-
-// Function WBP_ServerBrowser_FilterButton.WBP_ServerBrowser_FilterButton_C.ShowNumber
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_ServerBrowser_FilterButton_C_ShowNumber final
-{
-public:
-	int32                                         InNumber;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0010)()
-};
-DUMPER7_ASSERTS_WBP_ServerBrowser_FilterButton_C_ShowNumber;
-
-// Function WBP_ServerBrowser_FilterButton.WBP_ServerBrowser_FilterButton_C.SetIcon
-// 0x0018 (0x0018 - 0x0000)
-struct WBP_ServerBrowser_FilterButton_C_SetIcon final
-{
-public:
-	class UPaperSprite*                           Icon;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class ISlateTextureAtlasInterface> CallFunc_SetBrushFromAtlasInterface_AtlasRegion_CastInput; // 0x0008(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
-};
-DUMPER7_ASSERTS_WBP_ServerBrowser_FilterButton_C_SetIcon;
-
-// Function WBP_ServerBrowser_FilterButton.WBP_ServerBrowser_FilterButton_C.PreConstruct
+// Function WBP_ServerBrowser_FilterButton.WBP_ServerBrowser_FilterButton_C.ButtonDisabledChanged
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_ServerBrowser_FilterButton_C_PreConstruct final
+struct WBP_ServerBrowser_FilterButton_C_ButtonDisabledChanged final
 {
 public:
-	bool                                          IsDesignTime_PreConstruct;                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bInIsDisabled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ServerBrowser_FilterButton_C_PreConstruct;
+DUMPER7_ASSERTS_WBP_ServerBrowser_FilterButton_C_ButtonDisabledChanged;
+
+// Function WBP_ServerBrowser_FilterButton.WBP_ServerBrowser_FilterButton_C.ButtonFocusedChanged
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_ServerBrowser_FilterButton_C_ButtonFocusedChanged final
+{
+public:
+	bool                                          bInHasFocus;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ServerBrowser_FilterButton_C_ButtonFocusedChanged;
 
 // Function WBP_ServerBrowser_FilterButton.WBP_ServerBrowser_FilterButton_C.ExecuteUbergraph_WBP_ServerBrowser_FilterButton
 // 0x0108 (0x0108 - 0x0000)
@@ -110,23 +87,46 @@ public:
 };
 DUMPER7_ASSERTS_WBP_ServerBrowser_FilterButton_C_ExecuteUbergraph_WBP_ServerBrowser_FilterButton;
 
-// Function WBP_ServerBrowser_FilterButton.WBP_ServerBrowser_FilterButton_C.ButtonFocusedChanged
+// Function WBP_ServerBrowser_FilterButton.WBP_ServerBrowser_FilterButton_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
-struct WBP_ServerBrowser_FilterButton_C_ButtonFocusedChanged final
+struct WBP_ServerBrowser_FilterButton_C_PreConstruct final
 {
 public:
-	bool                                          bInHasFocus_ButtonFocusedChanged;                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ServerBrowser_FilterButton_C_ButtonFocusedChanged;
+DUMPER7_ASSERTS_WBP_ServerBrowser_FilterButton_C_PreConstruct;
 
-// Function WBP_ServerBrowser_FilterButton.WBP_ServerBrowser_FilterButton_C.ButtonDisabledChanged
-// 0x0001 (0x0001 - 0x0000)
-struct WBP_ServerBrowser_FilterButton_C_ButtonDisabledChanged final
+// Function WBP_ServerBrowser_FilterButton.WBP_ServerBrowser_FilterButton_C.SetIcon
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_ServerBrowser_FilterButton_C_SetIcon final
 {
 public:
-	bool                                          bInIsDisabled_ButtonDisabledChanged;               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UPaperSprite*                           Icon;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	TScriptInterface<class ISlateTextureAtlasInterface> CallFunc_SetBrushFromAtlasInterface_AtlasRegion_CastInput; // 0x0008(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 };
-DUMPER7_ASSERTS_WBP_ServerBrowser_FilterButton_C_ButtonDisabledChanged;
+DUMPER7_ASSERTS_WBP_ServerBrowser_FilterButton_C_SetIcon;
+
+// Function WBP_ServerBrowser_FilterButton.WBP_ServerBrowser_FilterButton_C.ShowNumber
+// 0x0018 (0x0018 - 0x0000)
+struct WBP_ServerBrowser_FilterButton_C_ShowNumber final
+{
+public:
+	int32                                         InNumber;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0008(0x0010)()
+};
+DUMPER7_ASSERTS_WBP_ServerBrowser_FilterButton_C_ShowNumber;
+
+// Function WBP_ServerBrowser_FilterButton.WBP_ServerBrowser_FilterButton_C.SpinIcon
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_ServerBrowser_FilterButton_C_SpinIcon final
+{
+public:
+	bool                                          bEnable;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        Speed;                                             // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+DUMPER7_ASSERTS_WBP_ServerBrowser_FilterButton_C_SpinIcon;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

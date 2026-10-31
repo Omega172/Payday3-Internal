@@ -16,37 +16,13 @@
 
 SDK_NAMESPACE_START
 
-// Function CH_SecurityGuard.CH_SecurityGuard_C.BP_OnHeistStateChanged
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// EPD3HeistState                          OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPD3HeistState                          NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function CH_SecurityGuard.CH_SecurityGuard_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ACH_SecurityGuard_C::BP_OnHeistStateChanged(EPD3HeistState OldState, EPD3HeistState NewState)
+void ACH_SecurityGuard_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CH_SecurityGuard_C", "BP_OnHeistStateChanged");
-
-	Params::CH_SecurityGuard_C_BP_OnHeistStateChanged Parms{};
-
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function CH_SecurityGuard.CH_SecurityGuard_C.BP_OnKill
-// (Event, Public, BlueprintEvent)
-
-void ACH_SecurityGuard_C::BP_OnKill()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CH_SecurityGuard_C", "BP_OnKill");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -59,10 +35,8 @@ void ACH_SecurityGuard_C::BP_OnKill()
 
 void ACH_SecurityGuard_C::ExecuteUbergraph_CH_SecurityGuard(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CH_SecurityGuard_C", "ExecuteUbergraph_CH_SecurityGuard");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "CH_SecurityGuard_C", "ExecuteUbergraph_CH_SecurityGuard", FuncInfo);
 
 	Params::CH_SecurityGuard_C_ExecuteUbergraph_CH_SecurityGuard Parms{};
 
@@ -72,17 +46,35 @@ void ACH_SecurityGuard_C::ExecuteUbergraph_CH_SecurityGuard(int32 EntryPoint)
 }
 
 
-// Function CH_SecurityGuard.CH_SecurityGuard_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function CH_SecurityGuard.CH_SecurityGuard_C.BP_OnKill
+// (Event, Public, BlueprintEvent)
 
-void ACH_SecurityGuard_C::ReceiveBeginPlay()
+void ACH_SecurityGuard_C::BP_OnKill()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("CH_SecurityGuard_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnKill", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function CH_SecurityGuard.CH_SecurityGuard_C.BP_OnHeistStateChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// EPD3HeistState                          OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPD3HeistState                          NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ACH_SecurityGuard_C::BP_OnHeistStateChanged(EPD3HeistState OldState, EPD3HeistState NewState)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnHeistStateChanged", FnName));
+
+	Params::CH_SecurityGuard_C_BP_OnHeistStateChanged Parms{};
+
+	Parms.OldState = OldState;
+	Parms.NewState = NewState;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

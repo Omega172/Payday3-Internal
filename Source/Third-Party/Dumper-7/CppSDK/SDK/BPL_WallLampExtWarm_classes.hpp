@@ -39,5 +39,6 @@ public:
 		return GetDefaultObjImpl<ABPL_WallLampExtWarm_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_WallLampExtWarm_C;
 
 SDK_NAMESPACE_END

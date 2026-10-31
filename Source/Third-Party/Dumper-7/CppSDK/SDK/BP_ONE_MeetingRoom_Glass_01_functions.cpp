@@ -19,14 +19,12 @@ SDK_NAMESPACE_START
 // Function BP_ONE_MeetingRoom_Glass_01.BP_ONE_MeetingRoom_Glass_01_C.GetTraversalDestructibleMeshComponent
 // (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UStaticMeshComponent*             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+// class UStaticMeshComponent*             ReturnValue_GetTraversalDestructibleMeshComponent      (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 
 class UStaticMeshComponent* ABP_ONE_MeetingRoom_Glass_01_C::GetTraversalDestructibleMeshComponent()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_ONE_MeetingRoom_Glass_01_C", "GetTraversalDestructibleMeshComponent");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"GetTraversalDestructibleMeshComponent", FnName));
 
 	Params::BP_ONE_MeetingRoom_Glass_01_C_GetTraversalDestructibleMeshComponent Parms{};
 

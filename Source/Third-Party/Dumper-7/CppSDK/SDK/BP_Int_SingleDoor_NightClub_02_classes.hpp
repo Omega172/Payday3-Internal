@@ -24,8 +24,8 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_BP_Int_SingleDoor_NightClub_02_C;   // 0x0780(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void ExecuteUbergraph_BP_Int_SingleDoor_NightClub_02(int32 EntryPoint);
 	void ReactToCloset(bool bActorsInCloset, bool bDoCosmetics);
+	void ExecuteUbergraph_BP_Int_SingleDoor_NightClub_02(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
@@ -41,5 +41,6 @@ public:
 		return GetDefaultObjImpl<ABP_Int_SingleDoor_NightClub_02_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_Int_SingleDoor_NightClub_02_C;
 
 SDK_NAMESPACE_END

@@ -16,99 +16,127 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_SecurityCamera.BP_SecurityCamera_C.BP_OnCameraColorStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// ESBZCameraColorState                    NewCameraColorState                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_SecurityCamera.BP_SecurityCamera_C.UserConstructionScript
+// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_SecurityCamera_C::BP_OnCameraColorStateChanged(ESBZCameraColorState NewCameraColorState)
+void ABP_SecurityCamera_C::UserConstructionScript()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SecurityCamera_C", "BP_OnCameraColorStateChanged");
-
-	Params::BP_SecurityCamera_C_BP_OnCameraColorStateChanged Parms{};
-
-	Parms.NewCameraColorState = NewCameraColorState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SecurityCamera.BP_SecurityCamera_C.BP_OnCameraDetectionChanged
-// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                                    bIsDetecting                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void ABP_SecurityCamera_C::BP_OnCameraDetectionChanged(bool bIsDetecting)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SecurityCamera_C", "BP_OnCameraDetectionChanged");
-
-	Params::BP_SecurityCamera_C_BP_OnCameraDetectionChanged Parms{};
-
-	Parms.bIsDetecting = bIsDetecting;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_SecurityCamera.BP_SecurityCamera_C.BP_OnIndestructibleCamera
-// (Event, Protected, BlueprintEvent)
-
-void ABP_SecurityCamera_C::BP_OnIndestructibleCamera()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SecurityCamera_C", "BP_OnIndestructibleCamera");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"UserConstructionScript", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_SecurityCamera.BP_SecurityCamera_C.BP_OnStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// ESBZCameraState                         OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESBZCameraState                         NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_SecurityCamera.BP_SecurityCamera_C.updateLaserConeBounds
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
-void ABP_SecurityCamera_C::BP_OnStateChanged(ESBZCameraState OldState, ESBZCameraState NewState, bool bDoCosmetics)
+void ABP_SecurityCamera_C::updateLaserConeBounds()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"updateLaserConeBounds", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SecurityCamera_C", "BP_OnStateChanged");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_SecurityCamera_C_BP_OnStateChanged Parms{};
 
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
+// Function BP_SecurityCamera.BP_SecurityCamera_C.Update Detection Pattern Visuals
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_SecurityCamera_C::Update_Detection_Pattern_Visuals()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Update Detection Pattern Visuals", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SecurityCamera.BP_SecurityCamera_C.Update Detection Pattern
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ABP_SecurityCamera_C::Update_Detection_Pattern()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Update Detection Pattern", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SecurityCamera.BP_SecurityCamera_C.SetCameraColours
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FLinearColor&              Target_Colour                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SecurityCamera_C::SetCameraColours(const struct FLinearColor& Target_Colour)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetCameraColours", FnName));
+
+	Params::BP_SecurityCamera_C_SetCameraColours Parms{};
+
+	Parms.Target_Colour = std::move(Target_Colour);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_SecurityCamera.BP_SecurityCamera_C.ExecuteUbergraph_BP_SecurityCamera
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function BP_SecurityCamera.BP_SecurityCamera_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void ABP_SecurityCamera_C::ExecuteUbergraph_BP_SecurityCamera(int32 EntryPoint)
+void ABP_SecurityCamera_C::ReceiveBeginPlay()
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SecurityCamera_C", "ExecuteUbergraph_BP_SecurityCamera");
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Params::BP_SecurityCamera_C_ExecuteUbergraph_BP_SecurityCamera Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+// Function BP_SecurityCamera.BP_SecurityCamera_C.OnSecurityCameraVisionConeChanged
+// (BlueprintCallable, BlueprintEvent)
+
+void ABP_SecurityCamera_C::OnSecurityCameraVisionConeChanged()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnSecurityCameraVisionConeChanged", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_SecurityCamera.BP_SecurityCamera_C.OnRuntimeStateApplied
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZRuntimeState                        AppliedState_OnRuntimeStateApplied                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SecurityCamera_C::OnRuntimeStateApplied(ESBZRuntimeState AppliedState_OnRuntimeStateApplied)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnRuntimeStateApplied", FnName));
+
+	Params::BP_SecurityCamera_C_OnRuntimeStateApplied Parms{};
+
+	Parms.AppliedState_OnRuntimeStateApplied = AppliedState_OnRuntimeStateApplied;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_SecurityCamera.BP_SecurityCamera_C.HighlightHackable_1
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bInHighlight                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ABP_SecurityCamera_C::HighlightHackable_1(bool bInHighlight)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"HighlightHackable_1", FnName));
+
+	Params::BP_SecurityCamera_C_HighlightHackable_1 Parms{};
+
+	Parms.bInHighlight = bInHighlight;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -123,10 +151,8 @@ void ABP_SecurityCamera_C::ExecuteUbergraph_BP_SecurityCamera(int32 EntryPoint)
 
 void ABP_SecurityCamera_C::getBoundsFromLocations(TArray<struct FVector>& locations, struct FVector* origin, struct FVector* extends)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SecurityCamera_C", "getBoundsFromLocations");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"getBoundsFromLocations", FnName));
 
 	Params::BP_SecurityCamera_C_getBoundsFromLocations Parms{};
 
@@ -144,147 +170,91 @@ void ABP_SecurityCamera_C::getBoundsFromLocations(TArray<struct FVector>& locati
 }
 
 
-// Function BP_SecurityCamera.BP_SecurityCamera_C.HighlightHackable_1
-// (BlueprintCallable, BlueprintEvent)
+// Function BP_SecurityCamera.BP_SecurityCamera_C.ExecuteUbergraph_BP_SecurityCamera
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// bool                                    bInHighlight                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SecurityCamera_C::HighlightHackable_1(bool bInHighlight)
+void ABP_SecurityCamera_C::ExecuteUbergraph_BP_SecurityCamera(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_SecurityCamera_C", "ExecuteUbergraph_BP_SecurityCamera", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SecurityCamera_C", "HighlightHackable_1");
+	Params::BP_SecurityCamera_C_ExecuteUbergraph_BP_SecurityCamera Parms{};
 
-	Params::BP_SecurityCamera_C_HighlightHackable_1 Parms{};
-
-	Parms.bInHighlight = bInHighlight;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_SecurityCamera.BP_SecurityCamera_C.OnRuntimeStateApplied
+// Function BP_SecurityCamera.BP_SecurityCamera_C.BP_OnStateChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// ESBZRuntimeState                        AppliedState                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZCameraState                         OldState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESBZCameraState                         NewState_BP_OnStateChanged                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_BP_OnStateChanged                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SecurityCamera_C::OnRuntimeStateApplied(ESBZRuntimeState AppliedState)
+void ABP_SecurityCamera_C::BP_OnStateChanged(ESBZCameraState OldState_BP_OnStateChanged, ESBZCameraState NewState_BP_OnStateChanged, bool bDoCosmetics_BP_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SecurityCamera_C", "OnRuntimeStateApplied");
+	Params::BP_SecurityCamera_C_BP_OnStateChanged Parms{};
 
-	Params::BP_SecurityCamera_C_OnRuntimeStateApplied Parms{};
-
-	Parms.AppliedState = AppliedState;
+	Parms.OldState_BP_OnStateChanged = OldState_BP_OnStateChanged;
+	Parms.NewState_BP_OnStateChanged = NewState_BP_OnStateChanged;
+	Parms.bDoCosmetics_BP_OnStateChanged = bDoCosmetics_BP_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_SecurityCamera.BP_SecurityCamera_C.OnSecurityCameraVisionConeChanged
-// (BlueprintCallable, BlueprintEvent)
-
-void ABP_SecurityCamera_C::OnSecurityCameraVisionConeChanged()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SecurityCamera_C", "OnSecurityCameraVisionConeChanged");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SecurityCamera.BP_SecurityCamera_C.ReceiveBeginPlay
+// Function BP_SecurityCamera.BP_SecurityCamera_C.BP_OnIndestructibleCamera
 // (Event, Protected, BlueprintEvent)
 
-void ABP_SecurityCamera_C::ReceiveBeginPlay()
+void ABP_SecurityCamera_C::BP_OnIndestructibleCamera()
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SecurityCamera_C", "ReceiveBeginPlay");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnIndestructibleCamera", FnName));
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function BP_SecurityCamera.BP_SecurityCamera_C.SetCameraColours
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function BP_SecurityCamera.BP_SecurityCamera_C.BP_OnCameraDetectionChanged
+// (BlueprintCosmetic, Event, Protected, BlueprintEvent)
 // Parameters:
-// const struct FLinearColor&              Target_Colour                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bIsDetecting_BP_OnCameraDetectionChanged               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SecurityCamera_C::SetCameraColours(const struct FLinearColor& Target_Colour)
+void ABP_SecurityCamera_C::BP_OnCameraDetectionChanged(bool bIsDetecting_BP_OnCameraDetectionChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnCameraDetectionChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SecurityCamera_C", "SetCameraColours");
+	Params::BP_SecurityCamera_C_BP_OnCameraDetectionChanged Parms{};
 
-	Params::BP_SecurityCamera_C_SetCameraColours Parms{};
-
-	Parms.Target_Colour = std::move(Target_Colour);
+	Parms.bIsDetecting_BP_OnCameraDetectionChanged = bIsDetecting_BP_OnCameraDetectionChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BP_SecurityCamera.BP_SecurityCamera_C.Update Detection Pattern
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BP_SecurityCamera.BP_SecurityCamera_C.BP_OnCameraColorStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// ESBZCameraColorState                    NewCameraColorState_BP_OnCameraColorStateChanged       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ABP_SecurityCamera_C::Update_Detection_Pattern()
+void ABP_SecurityCamera_C::BP_OnCameraColorStateChanged(ESBZCameraColorState NewCameraColorState_BP_OnCameraColorStateChanged)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnCameraColorStateChanged", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SecurityCamera_C", "Update Detection Pattern");
+	Params::BP_SecurityCamera_C_BP_OnCameraColorStateChanged Parms{};
 
-	UObject::ProcessEvent(Func, nullptr);
-}
+	Parms.NewCameraColorState_BP_OnCameraColorStateChanged = NewCameraColorState_BP_OnCameraColorStateChanged;
 
-
-// Function BP_SecurityCamera.BP_SecurityCamera_C.Update Detection Pattern Visuals
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ABP_SecurityCamera_C::Update_Detection_Pattern_Visuals()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SecurityCamera_C", "Update Detection Pattern Visuals");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SecurityCamera.BP_SecurityCamera_C.updateLaserConeBounds
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_SecurityCamera_C::updateLaserConeBounds()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SecurityCamera_C", "updateLaserConeBounds");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function BP_SecurityCamera.BP_SecurityCamera_C.UserConstructionScript
-// (Event, Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void ABP_SecurityCamera_C::UserConstructionScript()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_SecurityCamera_C", "UserConstructionScript");
-
-	UObject::ProcessEvent(Func, nullptr);
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 

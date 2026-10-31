@@ -19,8 +19,9 @@ SDK_PARAM_NAMESPACE_START
 struct BP_ONE_MeetingRoom_Glass_01_C_GetTraversalDestructibleMeshComponent final
 {
 public:
-	class UStaticMeshComponent*                   ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
+	class UStaticMeshComponent*                   ReturnValue_GetTraversalDestructibleMeshComponent; // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
+DUMPER7_ASSERTS_BP_ONE_MeetingRoom_Glass_01_C_GetTraversalDestructibleMeshComponent;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

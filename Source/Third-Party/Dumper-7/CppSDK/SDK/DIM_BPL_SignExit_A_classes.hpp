@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ADIM_BPL_SignExit_A_C>();
 	}
 };
+DUMPER7_ASSERTS_ADIM_BPL_SignExit_A_C;
 
 SDK_NAMESPACE_END

@@ -32,8 +32,8 @@ public:
 	class UOverlay*                               Overlay_Border_1;                                  // 0x0330(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
-	void Construct();
 	void ExecuteUbergraph_WBP_PoliceComputerNonActive(int32 EntryPoint);
+	void Construct();
 
 public:
 	static class UClass* StaticClass()
@@ -49,5 +49,6 @@ public:
 		return GetDefaultObjImpl<UWBP_PoliceComputerNonActive_C>();
 	}
 };
+DUMPER7_ASSERTS_UWBP_PoliceComputerNonActive_C;
 
 SDK_NAMESPACE_END

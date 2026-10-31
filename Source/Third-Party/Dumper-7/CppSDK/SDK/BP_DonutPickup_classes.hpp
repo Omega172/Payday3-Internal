@@ -25,8 +25,8 @@ public:
 	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0360(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 public:
-	class USBZSensorComponent* GetSensorComponent();
 	class USBZOutlineComponent* GetSensorOutlineComponent();
+	class USBZSensorComponent* GetSensorComponent();
 
 public:
 	static class UClass* StaticClass()
@@ -42,5 +42,6 @@ public:
 		return GetDefaultObjImpl<ABP_DonutPickup_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_DonutPickup_C;
 
 SDK_NAMESPACE_END

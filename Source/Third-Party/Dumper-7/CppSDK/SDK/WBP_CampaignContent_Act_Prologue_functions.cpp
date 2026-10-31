@@ -16,37 +16,19 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_CampaignContent_Act_Prologue.WBP_CampaignContent_Act_Prologue_C.SetEntryState
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function WBP_CampaignContent_Act_Prologue.WBP_CampaignContent_Act_Prologue_C.ExecuteUbergraph_WBP_CampaignContent_Act_Prologue
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
-// ESBZCampaignEntryState                  NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CampaignContent_Act_Prologue_C::SetEntryState(ESBZCampaignEntryState NewState)
+void UWBP_CampaignContent_Act_Prologue_C::ExecuteUbergraph_WBP_CampaignContent_Act_Prologue(int32 EntryPoint)
 {
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetEntryState", FnName));
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_CampaignContent_Act_Prologue_C", "ExecuteUbergraph_WBP_CampaignContent_Act_Prologue", FuncInfo);
 
-	Params::WBP_CampaignContent_Act_Prologue_C_SetEntryState Parms{};
+	Params::WBP_CampaignContent_Act_Prologue_C_ExecuteUbergraph_WBP_CampaignContent_Act_Prologue Parms{};
 
-	Parms.NewState = NewState;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_CampaignContent_Act_Prologue.WBP_CampaignContent_Act_Prologue_C.SetCampaignData
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class USBZCampaignBaseEntryData*  Entry                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_CampaignContent_Act_Prologue_C::SetCampaignData(const class USBZCampaignBaseEntryData* Entry)
-{
-	static class FName FnName;
-	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetCampaignData", FnName));
-
-	Params::WBP_CampaignContent_Act_Prologue_C_SetCampaignData Parms{};
-
-	Parms.Entry = Entry;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -70,19 +52,37 @@ ESBZCampaignEntryState UWBP_CampaignContent_Act_Prologue_C::GetEntryState()
 }
 
 
-// Function WBP_CampaignContent_Act_Prologue.WBP_CampaignContent_Act_Prologue_C.ExecuteUbergraph_WBP_CampaignContent_Act_Prologue
-// (Final, UbergraphFunction, HasDefaults)
+// Function WBP_CampaignContent_Act_Prologue.WBP_CampaignContent_Act_Prologue_C.SetCampaignData
+// (Event, Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZCampaignBaseEntryData*  Entry                                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_CampaignContent_Act_Prologue_C::ExecuteUbergraph_WBP_CampaignContent_Act_Prologue(int32 EntryPoint)
+void UWBP_CampaignContent_Act_Prologue_C::SetCampaignData(const class USBZCampaignBaseEntryData* Entry)
 {
-	static ReloadableFuncInfo FuncInfo;
-	class UFunction* Func = GetStaticFunction(Class, "WBP_CampaignContent_Act_Prologue_C", "ExecuteUbergraph_WBP_CampaignContent_Act_Prologue", FuncInfo);
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetCampaignData", FnName));
 
-	Params::WBP_CampaignContent_Act_Prologue_C_ExecuteUbergraph_WBP_CampaignContent_Act_Prologue Parms{};
+	Params::WBP_CampaignContent_Act_Prologue_C_SetCampaignData Parms{};
 
-	Parms.EntryPoint = EntryPoint;
+	Parms.Entry = Entry;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_CampaignContent_Act_Prologue.WBP_CampaignContent_Act_Prologue_C.SetEntryState
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ESBZCampaignEntryState                  NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_CampaignContent_Act_Prologue_C::SetEntryState(ESBZCampaignEntryState NewState)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetEntryState", FnName));
+
+	Params::WBP_CampaignContent_Act_Prologue_C_SetEntryState Parms{};
+
+	Parms.NewState = NewState;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

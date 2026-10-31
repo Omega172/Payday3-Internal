@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<UBP_KillingHumanShieldFeedback_C>();
 	}
 };
+DUMPER7_ASSERTS_UBP_KillingHumanShieldFeedback_C;
 
 SDK_NAMESPACE_END

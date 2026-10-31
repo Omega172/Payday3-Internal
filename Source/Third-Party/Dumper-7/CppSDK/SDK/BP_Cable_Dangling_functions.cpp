@@ -16,6 +16,42 @@
 
 SDK_NAMESPACE_START
 
+// Function BP_Cable_Dangling.BP_Cable_Dangling_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ABP_Cable_Dangling_C::ReceiveBeginPlay()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveBeginPlay", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function BP_Cable_Dangling.BP_Cable_Dangling_C.ReceiveAnyDamage
+// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
+// Parameters:
+// float                                   Damage_ReceiveAnyDamage                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class UDamageType*                DamageType_ReceiveAnyDamage                            (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AController*                      InstigatedBy_ReceiveAnyDamage                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class AActor*                           DamageCauser_ReceiveAnyDamage                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+
+void ABP_Cable_Dangling_C::ReceiveAnyDamage(float Damage_ReceiveAnyDamage, const class UDamageType* DamageType_ReceiveAnyDamage, class AController* InstigatedBy_ReceiveAnyDamage, class AActor* DamageCauser_ReceiveAnyDamage)
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"ReceiveAnyDamage", FnName));
+
+	Params::BP_Cable_Dangling_C_ReceiveAnyDamage Parms{};
+
+	Parms.Damage_ReceiveAnyDamage = Damage_ReceiveAnyDamage;
+	Parms.DamageType_ReceiveAnyDamage = DamageType_ReceiveAnyDamage;
+	Parms.InstigatedBy_ReceiveAnyDamage = InstigatedBy_ReceiveAnyDamage;
+	Parms.DamageCauser_ReceiveAnyDamage = DamageCauser_ReceiveAnyDamage;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function BP_Cable_Dangling.BP_Cable_Dangling_C.ExecuteUbergraph_BP_Cable_Dangling
 // (Final, UbergraphFunction, HasDefaults)
 // Parameters:
@@ -23,56 +59,14 @@ SDK_NAMESPACE_START
 
 void ABP_Cable_Dangling_C::ExecuteUbergraph_BP_Cable_Dangling(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Cable_Dangling_C", "ExecuteUbergraph_BP_Cable_Dangling");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Cable_Dangling_C", "ExecuteUbergraph_BP_Cable_Dangling", FuncInfo);
 
 	Params::BP_Cable_Dangling_C_ExecuteUbergraph_BP_Cable_Dangling Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Cable_Dangling.BP_Cable_Dangling_C.ReceiveAnyDamage
-// (BlueprintAuthorityOnly, Event, Public, BlueprintEvent)
-// Parameters:
-// float                                   Damage                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const class UDamageType*                DamageType                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AController*                      InstigatedBy                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-// class AActor*                           DamageCauser                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-
-void ABP_Cable_Dangling_C::ReceiveAnyDamage(float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, class AActor* DamageCauser)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Cable_Dangling_C", "ReceiveAnyDamage");
-
-	Params::BP_Cable_Dangling_C_ReceiveAnyDamage Parms{};
-
-	Parms.Damage = Damage;
-	Parms.DamageType = DamageType;
-	Parms.InstigatedBy = InstigatedBy;
-	Parms.DamageCauser = DamageCauser;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function BP_Cable_Dangling.BP_Cable_Dangling_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Cable_Dangling_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Cable_Dangling_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 

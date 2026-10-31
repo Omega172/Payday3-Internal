@@ -12,26 +12,24 @@
 
 #include "BPL_Industrial_PBL_03_1_classes.hpp"
 #include "BPL_Industrial_PBL_03_1_parameters.hpp"
-#include "BPL_Industrial_PBL_03_0_parameters.hpp"
+#include "BPL_Industrial_PBL_03_parameters.hpp"
 
 
 SDK_NAMESPACE_START
 
-// Function BPL_Industrial_PBL_03.BPL_Industrial_PBL_03_C.ExecuteUbergraph_BPL_Industrial_PBL_03
-// (Final, UbergraphFunction)
+// Function BPL_Industrial_PBL_03.BPL_Industrial_PBL_03_C.SetStateFunction
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Enum_LampStages                         State                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void BPL_Industrial_PBL_03_1::ABPL_Industrial_PBL_03_C::ExecuteUbergraph_BPL_Industrial_PBL_03(int32 EntryPoint)
+void BPL_Industrial_PBL_03_1::ABPL_Industrial_PBL_03_C::SetStateFunction(Enum_LampStages State)
 {
-	static class UFunction* Func = nullptr;
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"SetStateFunction", FnName));
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPL_Industrial_PBL_03_C", "ExecuteUbergraph_BPL_Industrial_PBL_03");
+	Params::BPL_Industrial_PBL_03_C_SetStateFunction Parms{};
 
-	Params::BPL_Industrial_PBL_03_C_ExecuteUbergraph_BPL_Industrial_PBL_03 Parms{};
-
-	Parms.EntryPoint = EntryPoint;
+	Parms.State = State;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -40,42 +38,38 @@ void BPL_Industrial_PBL_03_1::ABPL_Industrial_PBL_03_C::ExecuteUbergraph_BPL_Ind
 // Function BPL_Industrial_PBL_03.BPL_Industrial_PBL_03_C.OnStateChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                                   OldState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                                   NewState                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bDoCosmetics                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   OldState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewState_OnStateChanged                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bDoCosmetics_OnStateChanged                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void BPL_Industrial_PBL_03_1::ABPL_Industrial_PBL_03_C::OnStateChanged(int32 OldState, int32 NewState, bool bDoCosmetics)
+void BPL_Industrial_PBL_03_1::ABPL_Industrial_PBL_03_C::OnStateChanged(int32 OldState_OnStateChanged, int32 NewState_OnStateChanged, bool bDoCosmetics_OnStateChanged)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPL_Industrial_PBL_03_C", "OnStateChanged");
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"OnStateChanged", FnName));
 
 	Params::BPL_Industrial_PBL_03_C_OnStateChanged Parms{};
 
-	Parms.OldState = OldState;
-	Parms.NewState = NewState;
-	Parms.bDoCosmetics = bDoCosmetics;
+	Parms.OldState_OnStateChanged = OldState_OnStateChanged;
+	Parms.NewState_OnStateChanged = NewState_OnStateChanged;
+	Parms.bDoCosmetics_OnStateChanged = bDoCosmetics_OnStateChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function BPL_Industrial_PBL_03.BPL_Industrial_PBL_03_C.SetStateFunction
-// (Public, BlueprintCallable, BlueprintEvent)
+// Function BPL_Industrial_PBL_03.BPL_Industrial_PBL_03_C.ExecuteUbergraph_BPL_Industrial_PBL_03
+// (Final, UbergraphFunction)
 // Parameters:
-// Enum_LampStages                         State_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void BPL_Industrial_PBL_03_1::ABPL_Industrial_PBL_03_C::SetStateFunction(Enum_LampStages State_0)
+void BPL_Industrial_PBL_03_1::ABPL_Industrial_PBL_03_C::ExecuteUbergraph_BPL_Industrial_PBL_03(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BPL_Industrial_PBL_03_C", "ExecuteUbergraph_BPL_Industrial_PBL_03", FuncInfo);
 
-	if (Func == nullptr)
-		Func = Class->GetFunction("BPL_Industrial_PBL_03_C", "SetStateFunction");
+	Params::BPL_Industrial_PBL_03_C_ExecuteUbergraph_BPL_Industrial_PBL_03 Parms{};
 
-	Params::BPL_Industrial_PBL_03_C_SetStateFunction Parms{};
-
-	Parms.State_0 = State_0;
+	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

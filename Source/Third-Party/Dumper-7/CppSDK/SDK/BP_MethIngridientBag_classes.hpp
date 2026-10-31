@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABP_MethIngridientBag_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_MethIngridientBag_C;
 
 SDK_NAMESPACE_END

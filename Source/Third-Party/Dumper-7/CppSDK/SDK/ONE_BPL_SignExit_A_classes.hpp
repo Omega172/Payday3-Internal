@@ -38,5 +38,6 @@ public:
 		return GetDefaultObjImpl<ONE_BPL_SignExit_A::AONE_BPL_SignExit_A_C>();
 	}
 };
+DUMPER7_ASSERTS_ONE_BPL_SignExit_A__AONE_BPL_SignExit_A_C;
 
 SDK_NAMESPACE_END

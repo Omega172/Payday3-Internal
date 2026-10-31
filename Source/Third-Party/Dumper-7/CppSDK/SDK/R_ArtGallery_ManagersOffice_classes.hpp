@@ -46,27 +46,27 @@ public:
 	class ABP_Safe_01_C*                          BP_Safe_2_ExecuteUbergraph_R_ArtGallery_ManagersOffice_RefProperty; // 0x0460(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void BndEvt__R_ArtGallery_ManagersOffice_BP_HiddenHatch_2_K2Node_ActorBoundEvent_3_HatchOpened__DelegateSignature();
-	void BndEvt__R_ArtGallery_ManagersOffice_BP_HiddenPainting_2_K2Node_ActorBoundEvent_6_PaintingMoved__DelegateSignature();
-	void BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_02_2_K2Node_ActorBoundEvent_10_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer);
-	void BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_03_2_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer);
-	void BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_04_2_K2Node_ActorBoundEvent_11_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer);
-	void BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_5_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer);
-	void BndEvt__R_ArtGallery_ManagersOffice_BP_One_Step_Animated_Button_2_K2Node_ActorBoundEvent_5_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
-	void BndEvt__R_ArtGallery_ManagersOffice_BP_QRPhone_2_K2Node_ActorBoundEvent_4_OnInteractedComplete__DelegateSignature();
-	void BndEvt__R_ArtGallery_ManagersOffice_BP_Safe_2_K2Node_ActorBoundEvent_1_SBZOnMinigameDoneDelegate__DelegateSignature();
-	void BndEvt__R_ArtGallery_ManagersOffice_BP_USBDrive_2_K2Node_ActorBoundEvent_2_USB_Taken__DelegateSignature();
-	void BndEvt__R_ArtGallery_ManagersOffice_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor);
-	void ExecuteUbergraph_R_ArtGallery_ManagersOffice(int32 EntryPoint);
-	void Find_USB();
-	void Int(int32 Int_0);
-	void Loop();
-	void ReceiveBeginPlay();
-	void RemoteAlarm();
-	void RemoteDeploy();
-	void RemoteDestroy();
-	void RobberVoUSB();
 	void SetUmaObjectiveActive();
+	void RobberVoUSB();
+	void RemoteDestroy();
+	void RemoteDeploy();
+	void RemoteAlarm();
+	void ReceiveBeginPlay();
+	void Loop();
+	void Int(int32 Int);
+	void Find_USB();
+	void ExecuteUbergraph_R_ArtGallery_ManagersOffice(int32 EntryPoint);
+	void BndEvt__R_ArtGallery_ManagersOffice_SBZPlayerTriggerVolume_1_K2Node_ActorBoundEvent_0_ActorBeginOverlapSignature__DelegateSignature(class AActor* OverlappedActor, class AActor* OtherActor);
+	void BndEvt__R_ArtGallery_ManagersOffice_BP_USBDrive_2_K2Node_ActorBoundEvent_2_USB_Taken__DelegateSignature();
+	void BndEvt__R_ArtGallery_ManagersOffice_BP_Safe_2_K2Node_ActorBoundEvent_1_SBZOnMinigameDoneDelegate__DelegateSignature();
+	void BndEvt__R_ArtGallery_ManagersOffice_BP_QRPhone_2_K2Node_ActorBoundEvent_4_OnInteractedComplete__DelegateSignature();
+	void BndEvt__R_ArtGallery_ManagersOffice_BP_One_Step_Animated_Button_2_K2Node_ActorBoundEvent_5_SBZActorOnInteraction__DelegateSignature(class ASBZInteractionActor* Interactable, class USBZInteractorComponent* Interactor);
+	void BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_5_K2Node_ActorBoundEvent_9_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer);
+	void BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_04_2_K2Node_ActorBoundEvent_11_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer);
+	void BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_03_2_K2Node_ActorBoundEvent_8_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer);
+	void BndEvt__R_ArtGallery_ManagersOffice_BP_InstantLoot_Money_02_2_K2Node_ActorBoundEvent_10_SBZLootedSignature__DelegateSignature(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer);
+	void BndEvt__R_ArtGallery_ManagersOffice_BP_HiddenPainting_2_K2Node_ActorBoundEvent_6_PaintingMoved__DelegateSignature();
+	void BndEvt__R_ArtGallery_ManagersOffice_BP_HiddenHatch_2_K2Node_ActorBoundEvent_3_HatchOpened__DelegateSignature();
 
 public:
 	static class UClass* StaticClass()
@@ -82,5 +82,6 @@ public:
 		return GetDefaultObjImpl<AR_ArtGallery_ManagersOffice_C>();
 	}
 };
+DUMPER7_ASSERTS_AR_ArtGallery_ManagersOffice_C;
 
 SDK_NAMESPACE_END

@@ -16,20 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function BP_Throwable_SpringGrenade.BP_Throwable_SpringGrenade_C.BP_OnJump
-// (Event, Protected, BlueprintEvent)
-
-void ABP_Throwable_SpringGrenade_C::BP_OnJump()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_SpringGrenade_C", "BP_OnJump");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function BP_Throwable_SpringGrenade.BP_Throwable_SpringGrenade_C.ExecuteUbergraph_BP_Throwable_SpringGrenade
 // (Final, UbergraphFunction)
 // Parameters:
@@ -37,16 +23,26 @@ void ABP_Throwable_SpringGrenade_C::BP_OnJump()
 
 void ABP_Throwable_SpringGrenade_C::ExecuteUbergraph_BP_Throwable_SpringGrenade(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("BP_Throwable_SpringGrenade_C", "ExecuteUbergraph_BP_Throwable_SpringGrenade");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "BP_Throwable_SpringGrenade_C", "ExecuteUbergraph_BP_Throwable_SpringGrenade", FuncInfo);
 
 	Params::BP_Throwable_SpringGrenade_C_ExecuteUbergraph_BP_Throwable_SpringGrenade Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function BP_Throwable_SpringGrenade.BP_Throwable_SpringGrenade_C.BP_OnJump
+// (Event, Protected, BlueprintEvent)
+
+void ABP_Throwable_SpringGrenade_C::BP_OnJump()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"BP_OnJump", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

@@ -33,5 +33,6 @@ public:
 		return GetDefaultObjImpl<ABP_ConstructionVest_01_D_C>();
 	}
 };
+DUMPER7_ASSERTS_ABP_ConstructionVest_01_D_C;
 
 SDK_NAMESPACE_END

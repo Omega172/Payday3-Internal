@@ -28,12 +28,12 @@ public:
 	class FText                                   StatName;                                          // 0x0308(0x0010)(Edit, BlueprintVisible)
 
 public:
-	void SetValue(int32 Value);
-	void SetSpeedPenalty(ESBZArmorSpeedPenalty SpeedPenalty);
-	void SetPlateRegen(double PlateRegen);
-	void SetAmmoCapacity(double AmmoCap);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
 	void ExecuteUbergraph_WBP_ArmorChunk_StatLine(int32 EntryPoint);
+	void PreConstruct(bool IsDesignTime);
+	void SetAmmoCapacity(double AmmoCap);
+	void SetPlateRegen(double PlateRegen);
+	void SetSpeedPenalty(ESBZArmorSpeedPenalty SpeedPenalty);
+	void SetValue(int32 Value);
 
 public:
 	static class UClass* StaticClass()

@@ -37,5 +37,6 @@ public:
 		return GetDefaultObjImpl<ABPL_AreationLight_C>();
 	}
 };
+DUMPER7_ASSERTS_ABPL_AreationLight_C;
 
 SDK_NAMESPACE_END

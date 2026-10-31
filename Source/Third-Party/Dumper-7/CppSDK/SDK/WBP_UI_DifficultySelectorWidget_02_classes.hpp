@@ -40,19 +40,19 @@ public:
 	bool                                          bIsConstructed;                                    // 0x0412(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UpdateDifficultyVisuals(ESBZDifficulty InDifficulty);
-	void SetFocusVisuals(bool InIsFocused);
-	void PreConstruct(bool IsDesignTime_PreConstruct);
-	void OnSelectionOptionChanged(int32 InCurrentIndex_OnSelectionOptionChanged, bool bOverrideReadOnly_OnSelectionOptionChanged);
-	void OnSelectedRight();
-	void OnSelectedLeft();
-	void OnInitialized();
-	void GetDifficulty(ESBZDifficulty* NewParam);
-	void ExecuteUbergraph_WBP_UI_DifficultySelectorWidget_02(int32 EntryPoint);
-	void Construct();
-	void ButtonFocusedChanged(bool bInHasFocus_ButtonFocusedChanged);
-	void BndEvt__WBP_UI_Menus_Options_Selector_Button_Right_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
 	void BndEvt__WBP_UI_Menus_Options_Selector_Button_Left_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature();
+	void BndEvt__WBP_UI_Menus_Options_Selector_Button_Right_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
+	void ButtonFocusedChanged(bool bInHasFocus);
+	void Construct();
+	void ExecuteUbergraph_WBP_UI_DifficultySelectorWidget_02(int32 EntryPoint);
+	void GetDifficulty(ESBZDifficulty* NewParam);
+	void OnInitialized();
+	void OnSelectedLeft();
+	void OnSelectedRight();
+	void OnSelectionOptionChanged(int32 InCurrentIndex, bool bOverrideReadOnly);
+	void PreConstruct(bool IsDesignTime);
+	void SetFocusVisuals(bool InIsFocused);
+	void UpdateDifficultyVisuals(ESBZDifficulty InDifficulty);
 
 public:
 	static class UClass* StaticClass()

@@ -16,20 +16,6 @@
 
 SDK_NAMESPACE_START
 
-// Function WBP_BUS_Whiteboard_01.WBP_BUS_Whiteboard_01_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UWBP_BUS_Whiteboard_01_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BUS_Whiteboard_01_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_BUS_Whiteboard_01.WBP_BUS_Whiteboard_01_C.ExecuteUbergraph_WBP_BUS_Whiteboard_01
 // (Final, UbergraphFunction)
 // Parameters:
@@ -37,16 +23,26 @@ void UWBP_BUS_Whiteboard_01_C::Construct()
 
 void UWBP_BUS_Whiteboard_01_C::ExecuteUbergraph_WBP_BUS_Whiteboard_01(int32 EntryPoint)
 {
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_BUS_Whiteboard_01_C", "ExecuteUbergraph_WBP_BUS_Whiteboard_01");
+	static ReloadableFuncInfo FuncInfo;
+	class UFunction* Func = GetStaticFunction(Class, "WBP_BUS_Whiteboard_01_C", "ExecuteUbergraph_WBP_BUS_Whiteboard_01", FuncInfo);
 
 	Params::WBP_BUS_Whiteboard_01_C_ExecuteUbergraph_WBP_BUS_Whiteboard_01 Parms{};
 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_BUS_Whiteboard_01.WBP_BUS_Whiteboard_01_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UWBP_BUS_Whiteboard_01_C::Construct()
+{
+	static class FName FnName;
+	class UFunction* Func = InSDKUtils::FindFunctionChecked(this, GetStaticName(L"Construct", FnName));
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 

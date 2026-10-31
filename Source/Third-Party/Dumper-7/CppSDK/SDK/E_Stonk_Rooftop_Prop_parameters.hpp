@@ -80,6 +80,7 @@ public:
 	TArray<class AActor*>                         CallFunc_DestroyActors_KeptActors_20;              // 0x02A0(0x0010)(ReferenceParm)
 	TArray<class AActor*>                         CallFunc_DestroyActors_DestroyedActors_20;         // 0x02B0(0x0010)(ReferenceParm)
 };
+DUMPER7_ASSERTS_E_Stonk_Rooftop_Prop_C_ExecuteUbergraph_E_Stonk_Rooftop_Prop;
 
 SDK_PARAM_NAMESPACE_END
 SDK_NAMESPACE_END

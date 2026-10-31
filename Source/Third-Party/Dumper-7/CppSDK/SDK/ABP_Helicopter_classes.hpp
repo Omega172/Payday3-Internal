@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
 
@@ -38,11 +38,11 @@ public:
 	double                                        Tail_Rotor_Speed;                                  // 0x1040(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void AnimGraph(struct FPoseLink* AnimGraph_0);
-	void BlueprintUpdateAnimation(float DeltaTimeX);
-	void ExecuteUbergraph_ABP_Helicopter(int32 EntryPoint);
-	void SetDoorState(ESBZAerialVehicleDoor Door, bool bIsOpen);
 	void UpdateRotorYaw(double Current_Yaw, double Speed, double Delta_Time, double* New_Yaw);
+	void SetDoorState(ESBZAerialVehicleDoor Door, bool bIsOpen);
+	void ExecuteUbergraph_ABP_Helicopter(int32 EntryPoint);
+	void BlueprintUpdateAnimation(float DeltaTimeX_BlueprintUpdateAnimation);
+	void AnimGraph(struct FPoseLink* AnimGraph);
 
 public:
 	static class UClass* StaticClass()
@@ -58,5 +58,6 @@ public:
 		return GetDefaultObjImpl<UABP_Helicopter_C>();
 	}
 };
+DUMPER7_ASSERTS_UABP_Helicopter_C;
 
 SDK_NAMESPACE_END
